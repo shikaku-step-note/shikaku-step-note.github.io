@@ -16,6 +16,9 @@ interface Entry {
   url: string;
   keywords: string[];
   order?: number;
+  archived?: boolean;
+  assessmentKind?: string;
+  assessmentVersion?: string;
 }
 const $ = <T extends Element = HTMLElement>(s: string) => document.querySelector<T>(s);
 const $$ = <T extends Element = HTMLElement>(s: string) => Array.from(document.querySelectorAll<T>(s));
@@ -150,8 +153,10 @@ if ($('[data-search-form]')) {
       const data = await catalog;
       if (version !== searchVersion) return;
       const tokens = query.split(' ');
-      const matches = data.filter((e) =>
-        tokens.every((t) => normalize([e.title, e.description, ...e.keywords].join(' ')).includes(t)),
+      const matches = data.filter(
+        (e) =>
+          !e.archived &&
+          tokens.every((t) => normalize([e.title, e.description, ...e.keywords].join(' ')).includes(t)),
       );
       status.textContent = `「${input.value.trim()}」の検索結果：${matches.length}件`;
       for (const entry of matches) results.append(entryLink(entry));
@@ -234,7 +239,8 @@ function renderProgress() {
     b.textContent = done ? '学習済み（もう一度学習する）' : '学習済みにする';
     b.setAttribute('aria-pressed', String(done));
   });
-  const lessons = entries.filter((e) => e.kind === 'レッスン');
+  const allLessons = entries.filter((e) => e.kind === 'レッスン');
+  const lessons = allLessons.filter((e) => !e.archived);
   $$('[data-course-progress]').forEach((el) => {
     const course = lessons.filter((e) => e.qualification === el.dataset.courseProgress);
     const done = course.filter((e) => data.records[e.id]?.status === 'completed').length;
@@ -278,7 +284,7 @@ function renderProgress() {
   });
   const bookmarks = $('[data-bookmark-list]');
   if (bookmarks) {
-    const saved = lessons.filter((e) => data.records[e.id]?.bookmarked);
+    const saved = allLessons.filter((e) => data.records[e.id]?.bookmarked);
     if (saved.length) {
       bookmarks.replaceChildren(...saved.map((e) => entryLink(e, 'ブックマーク')));
     } else {
@@ -288,7 +294,7 @@ function renderProgress() {
   }
   const history = $('[data-history-list]');
   if (history) {
-    const studied = lessons
+    const studied = allLessons
       .filter((e) => data.records[e.id])
       .sort((a, b) => Date.parse(data.records[b.id]!.updatedAt) - Date.parse(data.records[a.id]!.updatedAt));
     if (studied.length)
@@ -301,12 +307,36 @@ function renderProgress() {
           const quiz = row.attempts
             ? `・練習${row.attempts}回・最新${row.lastCorrect ? '正解' : '要復習'}`
             : '';
-          return entryLink(e, `${labels[row.status]}・${stamp}${quiz}`);
+          return entryLink(e, `${e.archived ? '旧サンプル・' : ''}${labels[row.status]}・${stamp}${quiz}`);
         }),
       );
     else
       history.innerHTML =
         '<p class="muted">学習を始めると、レッスンの状態と最新の練習結果がここに表示されます。</p>';
+  }
+  const assessmentHistory = $('[data-assessment-history]');
+  if (assessmentHistory) {
+    const assessmentEntries = entries.filter((e) => e.assessmentKind);
+    const practiced = assessmentEntries.filter((e) => data.assessments[e.id]?.length);
+    assessmentHistory.replaceChildren();
+    if (!practiced.length)
+      assessmentHistory.innerHTML =
+        '<p class="muted">理解度チェック・用語・復習・模擬試験の結果が、レッスンの完了数とは別に表示されます。</p>';
+    for (const e of practiced) {
+      const rows = data.assessments[e.id]!;
+      const current = rows.filter((r) => r.version === e.assessmentVersion);
+      const done = current.filter((r) => r.finishedAt !== null);
+      const active = current.find((r) => !r.finishedAt);
+      const info = done.length
+        ? `最新 ${done[0]!.score}/${done[0]!.total}問正解・最高 ${Math.max(...done.map((r) => r.score ?? 0))}/${done[0]!.total}問正解・要復習 ${done[0]!.missed.length}問`
+        : 'この版の完了記録はありません';
+      assessmentHistory.append(
+        entryLink(
+          e,
+          `${e.kind}・${e.assessmentVersion}・${info}${active ? '・途中から再開できます' : ''}・保存履歴${rows.length}回`,
+        ),
+      );
+    }
   }
 }
 function rowFor(data: StudyData, id: string): StudyRecord {
@@ -343,6 +373,10 @@ async function confirmAction(description: string) {
 async function start() {
   await Promise.all([storage.init(), catalog.catch(() => [])]);
   renderProgress();
+  if ($('[data-assessment]')) {
+    const { setupAssessment } = await import('./assessment-ui');
+    setupAssessment(storage, renderProgress);
+  }
   $$<HTMLButtonElement>('[data-bookmark]').forEach((button) =>
     button.addEventListener(
       'click',
@@ -432,12 +466,12 @@ async function start() {
         info.textContent = '';
         return;
       }
-      if (file.size > 2 * 1024 * 1024)
-        throw new Error('ファイルが大きすぎます。2MB以下のバックアップを選んでください。');
+      if (file.size > 20 * 1024 * 1024)
+        throw new Error('ファイルが大きすぎます。20MB以下のバックアップを選んでください。');
       const next = validateData(JSON.parse(await file.text()));
       if (version !== importVersion) return;
       imported = next;
-      info.textContent = `${Object.keys(imported.records).length}件の記録を確認しました。読み込み方法を選んでください。`;
+      info.textContent = `${Object.keys(imported.records).length}件のレッスン記録と${Object.values(imported.assessments).reduce((n, rows) => n + rows.length, 0)}回のテスト記録を確認しました。読み込み方法を選んでください。`;
       button.disabled = false;
     } catch (e) {
       if (version !== importVersion) return;
@@ -467,8 +501,10 @@ async function start() {
           const merged = mergeData(data, next);
           data.records = merged.records;
           data.lastLesson = merged.lastLesson;
+          data.assessments = merged.assessments;
         });
       renderProgress();
+      window.dispatchEvent(new Event('study-data-replaced'));
       notify(
         storage.mode === 'memory'
           ? '一時的に読み込みました。永続保存できていないため、バックアップを保管してください。'
@@ -489,6 +525,7 @@ async function start() {
     try {
       await storage.replace(emptyData());
       renderProgress();
+      window.dispatchEvent(new Event('study-data-replaced'));
       notify('この端末の記録をリセットしました。');
     } catch (e) {
       notify(e instanceof Error ? e.message : 'リセットできませんでした。');

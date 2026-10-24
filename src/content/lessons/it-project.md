@@ -6,6 +6,7 @@ description: 期限のある取り組みと日常業務の違いを、予約シ�
 order: 2
 minutes: 5
 sample: true
+archived: true
 updated: '2026-10-24'
 keywords: [マネジメント, プロジェクト, 品質, 納期]
 question: プロジェクトの例に最も近いものは？

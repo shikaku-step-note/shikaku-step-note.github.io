@@ -15,10 +15,12 @@ export interface Qualification {
   officialName: string;
   reviewed: string;
   scope: string;
+  status: 'course' | 'sample';
 }
 export const qualifications: Qualification[] = [
   {
     id: 'it-passport',
+    status: 'course',
     name: 'ITパスポート',
     shortName: 'ITパスポート',
     category: 'IT・情報',
@@ -26,7 +28,7 @@ export const qualifications: Qualification[] = [
     icon: 'computer',
     intro: 'ITの「なんとなく」を、わかるに変える。',
     description:
-      '仕事や暮らしで使うITの基礎を、身近な例から整理します。企業活動、ITの管理、技術の考え方をつなげて学ぶ入門コースです。',
+      '現行シラバスVer.6.5の3分野・23分類を、解説、理解度チェック、用語・復習テスト、100問の模擬試験で学びます。',
     audience: [
       'ITの用語を基礎から理解したい方',
       '仕事でITを使う機会が増えた方',
@@ -38,12 +40,13 @@ export const qualifications: Qualification[] = [
     groups: ['企業とITの関係を知る', '仕事を進める仕組みを知る', '技術と安全の基本を知る'],
     official: 'https://www.ipa.go.jp/shiken/kubun/ip.html',
     officialName: 'IPA：ITパスポート試験',
-    reviewed: '2026-10-24',
+    reviewed: '2026-10-25',
     scope:
-      '試験の学習領域はストラテジ系、マネジメント系、テクノロジ系に分かれています。このサイトでは、企業活動・プロジェクト・情報セキュリティの入口を扱います。試験範囲全体を網羅するものではありません。',
+      '現行シラバスVer.6.5の63項目に対応した基礎コースです。公式の級分けはなく、ストラテジ・マネジメント・テクノロジの3分野を順に学びます。用語例の全件解説や出題予測を保証するものではありません。',
   },
   {
     id: 'boki-3',
+    status: 'sample',
     name: '日商簿記3級',
     shortName: '簿記3級',
     category: '会計・ビジネス',
@@ -65,6 +68,7 @@ export const qualifications: Qualification[] = [
   },
   {
     id: 'fp-3',
+    status: 'sample',
     name: 'FP3級',
     shortName: 'FP3級',
     category: 'お金・暮らし',
@@ -90,3 +94,6 @@ export const qualifications: Qualification[] = [
   },
 ];
 export const qualificationById = (id: string) => qualifications.find((q) => q.id === id)!;
+export const availabilityText = qualifications
+  .map((q) => `${q.name}（${q.status === 'course' ? '基礎コース' : '入門サンプル'}）`)
+  .join('、');

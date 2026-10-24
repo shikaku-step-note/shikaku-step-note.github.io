@@ -1,0 +1,202 @@
+---
+import { units, fieldNames, ipSource, ipAssessments } from '../data/it-passport';
+import type { CollectionEntry } from 'astro:content';
+import { href } from '../lib/site';
+import Icon from './Icon.astro';
+import Share from './Share.astro';
+interface Props {
+  lessons: CollectionEntry<'lessons'>[];
+}
+const { lessons } = Astro.props;
+const total = lessons.reduce((n, l) => n + l.data.minutes, 0);
+const assessments = ipAssessments(lessons);
+---
+
+<div class="container course-grid page-section">
+  <div>
+    <section class="course-section">
+      <h2>仕事と暮らしのITを、3分野から理解する</h2>
+      <p>
+        初めてITを学ぶ方に向けて、企業活動からシステムの管理、技術と安全まで順に学びます。ITパスポートの中に1級・2級などの公式な級分けはありません。このページの「ユニット」「学習ステップ」は当サイトの学習上の区切りです。
+      </p>
+      <div class="course-facts">
+        <div>
+          <strong>{lessons.length}</strong>
+          <span>レッスン</span>
+        </div>
+        <div>
+          <strong>{units.length}</strong>
+          <span>公式の中分類</span>
+        </div>
+        <div>
+          <strong>100問</strong>
+          <span>120分の模擬試験</span>
+        </div>
+      </div>
+      <div class="notice compact">
+        <strong>適用範囲：現行シラバス Ver.6.5</strong>
+        <p>
+          2026年10月25日にIPAの現行資料を確認しました。2027年度の新試験制度への移行が予定され、シラバス案も公開されています。このコースは現行のVer.6.5に対応し、将来の案への対応をうたうものではありません。受験時は必ず公式の適用範囲を再確認してください。
+        </p>
+        <a href={ipSource('changes').url}>IPA：制度見直しの案内</a>
+      </div>
+      <p>
+        現行の63項目すべてに対応先を用意しています。すべての用語例・応用パターンを網羅する百科事典ではありません。
+        <a href={href('qualifications/it-passport/coverage/')}>対応表・出典・教材の制約</a>
+        を確認し、公式の公開問題でも学習を補ってください。合格や得点を保証しません。
+      </p>
+    </section>
+    <section class="course-section" id="schedule">
+      <h2>無理なく進める学習プラン</h2>
+      <p>
+        1日30分・週5日を目安に、まず12〜14週間の枠を確保し、理解度に応じて延ばしましょう。これは当サイトの提案で、公式の必要学習時間ではありません。本文・例題の目安合計は
+        {total}分（約{Math.round(total / 60)}時間）です。テスト、復習、公開問題に取り組む時間は別に必要です。
+      </p>
+      <ol class="study-timeline">
+        <li>
+          <strong>1〜4週：企業とITのつながり</strong>
+          <p>ストラテジ系の各ユニットを読み、用語と事例を結び付けます。</p>
+        </li>
+        <li>
+          <strong>5〜6週：開発と運用の進め方</strong>
+          <p>マネジメント系を学び、工程・役割・管理の違いを確認します。</p>
+        </li>
+        <li>
+          <strong>7〜11週：技術と安全の基礎</strong>
+          <p>テクノロジ系を学び、計算は紙で途中式も確認します。</p>
+        </li>
+        <li>
+          <strong>12〜14週：復習と本番時間での演習</strong>
+          <p>用語の総復習、3分野の総復習、120分模試の順に取り組み、間違えた分野へ戻ります。</p>
+        </li>
+      </ol>
+      <a class="button secondary" href={href('downloads/it-passport-curriculum.txt')} download>
+        学習ツリー・スケジュールをTXTで保存
+      </a>
+    </section>
+    <section class="course-section" id="steps">
+      <div class="section-heading">
+        <h2>学習ステップ</h2>
+        <span class="tag" data-course-progress="it-passport">
+          未学習
+        </span>
+      </div>
+      <p>
+        各レッスンの本文と3問の理解度チェック、ユニットごとの用語テスト・総合確認へ進みます。学習済みの数とテストの得点は別の記録です。
+      </p>
+      {(['strategy', 'management', 'technology'] as const).map((field, i) => (
+        <section class="curriculum-field" id={`field-${field}`}>
+          <h3>
+            {i + 1}．{fieldNames[field]}
+          </h3>
+          {units
+            .filter((u) => u.field === field)
+            .map((u, j) => (
+              <details class="curriculum-unit" open={j === 0}>
+                <summary>
+                  <span>ユニット{u.id}</span> {u.name}
+                  <small>{lessons.filter((l) => l.data.unit === u.id).length}レッスン</small>
+                </summary>
+                <ol class="lesson-list">
+                  {lessons
+                    .filter((l) => l.data.unit === u.id)
+                    .map((l) => (
+                      <li class="lesson-row">
+                        <span class="lesson-number">{l.data.order}</span>
+                        <div class="lesson-row-body">
+                          <h4>
+                            <a
+                              data-lesson-title={l.data.stableId}
+                              href={href(`qualifications/it-passport/${l.data.stableId}/`)}
+                            >
+                              {l.data.title}
+                            </a>
+                          </h4>
+                          <p class="lesson-meta">
+                            {l.data.minutes}分の目安・<span data-status-label={l.data.stableId}>未学習</span>
+                          </p>
+                        </div>
+                        <button
+                          class="star-button"
+                          type="button"
+                          data-bookmark={l.data.stableId}
+                          aria-pressed="false"
+                          aria-label={`${l.data.title}をブックマーク`}
+                        >
+                          <Icon name="star" />
+                        </button>
+                      </li>
+                    ))}
+                </ol>
+                <div class="unit-assessments">
+                  <a href={href(`qualifications/it-passport/tests/ip-unit-${u.id}-glossary/`)}>
+                    用語確認テスト
+                  </a>
+                  <a href={href(`qualifications/it-passport/tests/ip-unit-${u.id}-review/`)}>
+                    ユニット総合確認
+                  </a>
+                </div>
+              </details>
+            ))}
+        </section>
+      ))}
+    </section>
+    <section class="course-section" id="exams">
+      <h2>総復習と模擬試験</h2>
+      <p>ユニットの復習問題を再度まとめて解く総復習と、新しい独自問題100問の模試を用意しています。</p>
+      <div class="assessment-links">
+        {assessments
+          .filter((a) => !a.unit && a.kind !== 'lesson')
+          .map((a) => (
+            <a class="assessment-link" href={href(`qualifications/it-passport/tests/${a.id}/`)}>
+              <strong>{a.title}</strong>
+              <span>
+                {a.questions.length}問・{a.minutes ? `${a.minutes}分／時間なしも選択可` : '時間制限なし'}
+              </span>
+            </a>
+          ))}
+      </div>
+      <p>
+        <a href={href('qualifications/it-passport/tests/')}>用語・復習テストをすべて見る</a>
+      </p>
+    </section>
+    <section class="course-section">
+      <h2>学習を終えたら</h2>
+      <p>
+        間違えた理由を自分の言葉で説明し、関連するレッスンを読み直しましょう。IPAの公開問題で形式に慣れ、公式シラバスの用語例も確認してください。模試は全問各1点の練習で、IRTによる公式評価点や合否の再現ではありません。
+      </p>
+      <p>
+        旧ITパスポートの入門サンプルとその記録は保管しています。新しい{lessons.length}
+        レッスンは別の識別子を使い、旧サンプルの完了を引き継ぎません。
+      </p>
+    </section>
+    <Share
+      title="ITパスポートの無料基礎コース"
+      url={new URL(href('qualifications/it-passport/'), Astro.site).href}
+    />
+  </div>
+  <aside class="course-sidebar">
+    <nav class="sidebar-box" aria-label="ITパスポートのコース案内">
+      <h2>このコースの案内</h2>
+      <a href="#schedule">学習プラン・TXT</a>
+      <a href="#field-strategy">ストラテジ系</a>
+      <a href="#field-management">マネジメント系</a>
+      <a href="#field-technology">テクノロジ系</a>
+      <a href="#exams">総復習・模擬試験</a>
+      <a href={href('qualifications/it-passport/coverage/')}>対応表と公式出典</a>
+    </nav>
+    <section class="sidebar-box">
+      <h2>試験の基本</h2>
+      <p>
+        CBT方式・四肢択一100問・120分。総合評価点600/1,000以上、かつ3分野すべての評価点が各300/1,000以上が公式の基準です。正答率との単純な換算はできません。
+      </p>
+      <a href={ipSource('requirements').url}>IPA 試験要綱Ver.5.6</a>
+      <p class="muted">確認日：2026-10-25</p>
+    </section>
+    <section class="sidebar-box">
+      <h2>始める前に</h2>
+      <p>特別なIT経験は不要です。四則計算を使います。計算問題は紙とペンを用意すると考え方を整理できます。</p>
+      <a href={href('guide/')}>保存・使い方のガイド</a>
+    </section>
+  </aside>
+</div>

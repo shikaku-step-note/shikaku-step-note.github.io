@@ -1,0 +1,108 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import { units, syllabusItems, ipSources, fieldNames } from '../../../data/it-passport';
+import { href } from '../../../lib/site';
+const lessons = (await getCollection('lessons', (l) => !!l.data.unit)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<Layout
+  title="ITパスポート シラバスVer.6.5の対応表・公式出典"
+  description="現行ITパスポートシラバスの63項目と無料教材の対応、公式資料の版・確認日、教材の範囲、2027年度の制度見直しとの区別を説明します。"
+  breadcrumbs={[
+    { name: 'ITパスポート', path: 'qualifications/it-passport/' },
+    { name: '対応表・出典', path: 'qualifications/it-passport/coverage/' },
+  ]}
+>
+  <article class="container page-section prose wide-prose">
+    <h1>シラバス対応表と公式出典</h1>
+    <p>
+      この基礎コースは現行のITパスポート試験シラバスVer.6.5を対象にしています。ITパスポート内の公式な級分けはなく、3分野・23中分類を学習上のユニットとして整理しています。
+    </p>
+    <h2>範囲と制約</h2>
+    <p>
+      63の番号付き項目すべてに本文と理解度チェックの対応先があります。ただし、対応先があることは公式資料に列挙された全用語例を個別に詳説していることを意味しません。基礎の概念と代表的な適用・計算を学ぶ教材です。公開問題や公式シラバスの用語例も確認してください。
+    </p>
+    <p>
+      問題・解説・図表は当サイトの独自作成です。専門資格を持つ監修者が承認した教材とは表示していません。AIの作成支援を使用し、構成、答え、計算、出典との整合を点検しています。難易度の統計的な校正や本試験との得点の等化は実施していません。
+    </p>
+    <p>
+      2027年度への制度移行とシラバス案が公表されていますが、当コースでは案を現行の適用範囲として扱っていません。確定版と適用開始の案内に応じて更新が必要です。問題や法令の更新が自動で反映される仕組みはありません。
+    </p>
+    <h2>学習ステージと時間</h2>
+    <p>
+      本文→理解度チェック→ユニットの用語・総合確認→用語の総復習→3分野の総復習→模試の順を推奨します。所要時間と12〜14週間の計画は当サイトの提案です。公式の必要学習時間ではありません。
+    </p>
+    <p>
+      <a href={href('downloads/it-passport-curriculum.txt')} download>
+        全ツリー・順序・目標・目安・出典をTXTで保存
+      </a>
+    </p>
+    <h2>公式資料の確認記録</h2>
+    <ul>
+      {ipSources.map((s) => (
+        <li>
+          <a href={s.url}>{s.title}</a>
+          <p>
+            {s.version}／実際の確認日：<time datetime={s.verified}>{s.verified}</time>
+          </p>
+        </li>
+      ))}
+    </ul>
+    <h2>63項目の対応表</h2>
+    <p>
+      項目名はIPA資料の識別のために示しています。本文は独自の解説です。一部のレッスンは隣接する分類の内容も横断して扱います。
+    </p>
+    {(['strategy', 'management', 'technology'] as const).map((field) => (
+      <section>
+        <h3>{fieldNames[field]}</h3>
+        {units
+          .filter((u) => u.field === field)
+          .map((u) => (
+            <section>
+              <h4>
+                {u.id}．{u.name}
+              </h4>
+              <table>
+                <caption>{u.name}：項目と対応レッスン</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">公式項目</th>
+                    <th scope="col">対応レッスン</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {u.syllabus.map((n) => (
+                    <tr>
+                      <th scope="row">
+                        {n}．{syllabusItems[n - 1]}
+                      </th>
+                      <td>
+                        {lessons
+                          .filter((l) => l.data.syllabus.includes(n))
+                          .map((l) => (
+                            <p>
+                              <a href={href(`qualifications/it-passport/${l.data.stableId}/`)}>
+                                {l.data.title}
+                              </a>
+                            </p>
+                          ))}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </section>
+          ))}
+      </section>
+    ))}
+    <h2>更新・訂正</h2>
+    <p>
+      教材の確認日は2026-10-25です。法令はこの日を基準に基本原則を確認しています。個別の法的・会計上の判断を提供するものではありません。
+      <a href={href('editorial/')}>編集方針</a>と<a href={href('contact/')}>訂正の連絡方法</a>をご覧ください。
+    </p>
+    <a href={href('qualifications/it-passport/')}>コースへ戻る</a>
+  </article>
+</Layout>

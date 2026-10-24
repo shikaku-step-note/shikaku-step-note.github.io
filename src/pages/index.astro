@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import QualificationCard from '../components/QualificationCard.astro';
-import { qualifications } from '../data/qualifications';
+import { qualifications, availabilityText } from '../data/qualifications';
 import { href } from '../lib/site';
 ---
 
@@ -120,9 +120,7 @@ import { href } from '../lib/site';
         <QualificationCard q={q} />
       ))}
     </div>
-    <p class="sample-caption">
-      現在は3資格の入門サンプルを公開しています。試験範囲を網羅する講座ではありません。
-    </p>
+    <p class="sample-caption">公開中：{availabilityText}。各コースの適用範囲と公式資料もご確認ください。</p>
   </section>
   <section class="learning-section">
     <div class="container learning-grid">
@@ -199,7 +197,8 @@ import { href } from '../lib/site';
       <details>
         <summary>このサイトだけで試験範囲を学べますか？</summary>
         <p>
-          現在は入門サンプルです。試験範囲を網羅していません。基礎の理解や学び始めのきっかけとして利用し、最新の公式資料とあわせて学習してください。
+          コースごとに範囲が異なります。{availabilityText}
+          を公開しています。ITパスポートは現行シラバスの63項目に対応する基礎教材です。全用語例の解説や合格を保証するものではありません。公式資料とあわせて学習してください。
         </p>
       </details>
     </div>

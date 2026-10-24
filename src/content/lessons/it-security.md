@@ -6,6 +6,7 @@ description: 機密性・完全性・可用性を、学校の名簿や予約サ�
 order: 3
 minutes: 6
 sample: true
+archived: true
 updated: '2026-10-24'
 keywords: [テクノロジ, セキュリティ, 機密性, 完全性, 可用性]
 question: 予約データが無断で書き換えられないようにする対策は、主にどの性質を守る？

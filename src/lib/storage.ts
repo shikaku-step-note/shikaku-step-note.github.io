@@ -1,3 +1,4 @@
+import type { AssessmentAttempt, AssessmentKind, Field } from './assessment';
 export type Status = 'not-started' | 'studying' | 'completed';
 export interface StudyRecord {
   status: Status;
@@ -8,17 +9,19 @@ export interface StudyRecord {
 }
 export interface StudyData {
   app: 'shikaku-step-note';
-  version: 2;
+  version: 3;
   savedAt: string;
   lastLesson: string | null;
   records: Record<string, StudyRecord>;
+  assessments: Record<string, AssessmentAttempt[]>;
 }
 export const emptyData = (): StudyData => ({
   app: 'shikaku-step-note',
-  version: 2,
+  version: 3,
   savedAt: new Date().toISOString(),
   lastLesson: null,
   records: {},
+  assessments: {},
 });
 const isObject = (v: unknown): v is Record<string, unknown> =>
   typeof v === 'object' && v !== null && !Array.isArray(v);
@@ -30,7 +33,7 @@ export function validateData(value: unknown): StudyData {
   if (
     !isObject(value) ||
     value.app !== 'shikaku-step-note' ||
-    ![1, 2].includes(value.version as number) ||
+    ![1, 2, 3].includes(value.version as number) ||
     !isObject(value.records) ||
     !validDate(value.savedAt)
   )
@@ -65,6 +68,105 @@ export function validateData(value: unknown): StudyData {
     };
   }
   if (result.lastLesson && !result.records[result.lastLesson]) result.lastLesson = null;
+  if (value.version === 3) {
+    if (!isObject(value.assessments) || Object.keys(value.assessments).length > 1000)
+      throw new Error('テスト記録の形式が正しくありません。');
+    let attempts = 0;
+    for (const [id, rows] of Object.entries(value.assessments)) {
+      if (!validId(id) || !Array.isArray(rows) || rows.length > 100)
+        throw new Error('テストの件数が不正です。');
+      const ids = new Set<string>();
+      result.assessments[id] = rows.map((row) => {
+        attempts++;
+        if (
+          attempts > 5000 ||
+          !isObject(row) ||
+          !validId(row.id) ||
+          ids.has(row.id) ||
+          row.assessmentId !== id ||
+          !validId(row.version) ||
+          !['lesson', 'glossary', 'review', 'mock'].includes(row.kind as string) ||
+          !['timed', 'practice'].includes(row.mode as string) ||
+          !validDate(row.startedAt) ||
+          !validDate(row.updatedAt) ||
+          !(row.deadline === null || validDate(row.deadline)) ||
+          !(row.finishedAt === null || validDate(row.finishedAt)) ||
+          !Number.isInteger(row.total) ||
+          Number(row.total) < 1 ||
+          Number(row.total) > 500 ||
+          !Number.isInteger(row.cursor) ||
+          Number(row.cursor) < 0 ||
+          Number(row.cursor) >= Number(row.total) ||
+          !(
+            row.score === null ||
+            (Number.isInteger(row.score) && Number(row.score) >= 0 && Number(row.score) <= Number(row.total))
+          ) ||
+          !isObject(row.answers) ||
+          Object.keys(row.answers).length > Number(row.total) ||
+          !Array.isArray(row.flags) ||
+          row.flags.length > Number(row.total) ||
+          !row.flags.every(validId) ||
+          !Array.isArray(row.missed) ||
+          row.missed.length > Number(row.total) ||
+          !row.missed.every(validId) ||
+          !isObject(row.fields)
+        )
+          throw new Error('テストの解答・日時・得点の形式が正しくありません。');
+        ids.add(row.id);
+        if (
+          (row.finishedAt === null) !== (row.score === null) ||
+          Date.parse(row.updatedAt) < Date.parse(row.startedAt) ||
+          (row.deadline !== null && Date.parse(row.deadline as string) <= Date.parse(row.startedAt))
+        )
+          throw new Error('テストの状態に矛盾があります。');
+        const answers: Record<string, number> = {};
+        for (const [qid, answer] of Object.entries(row.answers)) {
+          if (!validId(qid) || !Number.isInteger(answer) || Number(answer) < 0 || Number(answer) > 9)
+            throw new Error('テストの選択肢が正しくありません。');
+          answers[qid] = Number(answer);
+        }
+        const fields = {} as AssessmentAttempt['fields'];
+        for (const name of ['strategy', 'management', 'technology'] as Field[]) {
+          const field = row.fields[name];
+          if (
+            !isObject(field) ||
+            !Number.isInteger(field.total) ||
+            !Number.isInteger(field.correct) ||
+            Number(field.total) < 0 ||
+            Number(field.total) > Number(row.total) ||
+            Number(field.correct) < 0 ||
+            Number(field.correct) > Number(field.total)
+          )
+            throw new Error('分野別の記録が正しくありません。');
+          fields[name] = { correct: Number(field.correct), total: Number(field.total) };
+        }
+        if (
+          row.finishedAt !== null &&
+          (Object.values(fields).reduce((n, f) => n + f.total, 0) !== row.total ||
+            Object.values(fields).reduce((n, f) => n + f.correct, 0) !== row.score)
+        )
+          throw new Error('テストの合計と分野別の記録が一致しません。');
+        return {
+          id: row.id,
+          assessmentId: id,
+          version: row.version as string,
+          kind: row.kind as AssessmentKind,
+          mode: row.mode as 'timed' | 'practice',
+          startedAt: row.startedAt,
+          updatedAt: row.updatedAt,
+          deadline: row.deadline as string | null,
+          finishedAt: row.finishedAt as string | null,
+          answers,
+          flags: [...new Set(row.flags as string[])],
+          cursor: Number(row.cursor),
+          total: Number(row.total),
+          score: row.score as number | null,
+          missed: [...new Set(row.missed as string[])],
+          fields,
+        };
+      });
+    }
+  }
   return result;
 }
 export function mergeData(current: StudyData, incoming: StudyData): StudyData {
@@ -73,6 +175,16 @@ export function mergeData(current: StudyData, incoming: StudyData): StudyData {
   for (const [id, row] of Object.entries(other.records))
     if (!result.records[id] || Date.parse(row.updatedAt) > Date.parse(result.records[id]!.updatedAt))
       result.records[id] = { ...row };
+  for (const [id, rows] of Object.entries(other.assessments)) {
+    const byId = new Map((result.assessments[id] ?? []).map((a) => [a.id, a]));
+    for (const row of rows) {
+      const existing = byId.get(row.id);
+      if (!existing || Date.parse(row.updatedAt) > Date.parse(existing.updatedAt)) byId.set(row.id, row);
+    }
+    result.assessments[id] = [...byId.values()]
+      .sort((a, b) => Date.parse(b.startedAt) - Date.parse(a.startedAt))
+      .slice(0, 100);
+  }
   if (Date.parse(other.savedAt) > Date.parse(current.savedAt)) result.lastLesson = other.lastLesson;
   result.savedAt = new Date().toISOString();
   return result;
@@ -197,6 +309,7 @@ export class StudyStorage {
             this.mode = 'localstorage';
           } catch {
             this.mode = 'memory';
+            this.data = clean;
             throw new Error(
               '記録を保存できませんでした。バックアップを書き出し、ブラウザの保存設定や空き容量を確認してください。',
             );
@@ -207,6 +320,7 @@ export class StudyStorage {
           localStorage.setItem(KEY, JSON.stringify(clean));
         } catch {
           this.mode = 'memory';
+          this.data = clean;
           throw new Error('記録を保存できませんでした。バックアップを書き出してください。');
         }
       }
@@ -221,6 +335,7 @@ export class StudyStorage {
     return this.update((d) => {
       d.records = clean.records;
       d.lastLesson = clean.lastLesson;
+      d.assessments = clean.assessments;
     });
   }
   close() {

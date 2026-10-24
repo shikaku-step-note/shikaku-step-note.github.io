@@ -1,0 +1,141 @@
+---
+import type { Assessment } from '../lib/assessment';
+import { href } from '../lib/site';
+interface Props {
+  assessment: Assessment;
+}
+const { assessment: a } = Astro.props;
+---
+
+<section class="assessment" data-assessment aria-labelledby="assessment-heading">
+  <h2 id="assessment-heading">{a.title}</h2>
+  <p>{a.questions.length}問・何度でも解き直せます。レッスンの学習済み状態とは別に記録します。</p>
+  {a.kind === 'mock' && (
+    <div class="notice compact">
+      <strong>本試験の評価点とは異なります</strong>
+      <p>
+        本試験は100問・120分・四肢択一です。出題分野の目安に合わせ、ストラテジ35問、マネジメント20問、テクノロジ45問を出題します。本試験は100問中92問を評価対象としIRTで評価点を算出します。この模試は全100問を各1点で採点する独自の練習です。600点・分野別300点の公式基準へ換算したり、合否を判定したりしません。難易度や非採点問題も再現していません。
+      </p>
+    </div>
+  )}
+  <div class="assessment-start" data-assessment-start>
+    <fieldset>
+      <legend>取り組み方</legend>
+      {a.minutes ? (
+        <>
+          <label class="quiz-option">
+            <input type="radio" name="assessment-mode" value="timed" checked />
+            時間を計って挑戦（{a.minutes}分・開始後は一時停止なし）
+          </label>
+          <label class="quiz-option">
+            <input type="radio" name="assessment-mode" value="practice" />
+            時間制限なしで練習
+          </label>
+        </>
+      ) : (
+        <p>時間制限なし。途中の解答もこのブラウザに保存します。</p>
+      )}
+    </fieldset>
+    {a.minutes && (
+      <p>
+        制限時間はページを閉じている間も進みます。再訪時に期限を過ぎていれば、その時点までに保存された解答で終了します。
+      </p>
+    )}
+    <p data-assessment-restore role="status"></p>
+    <button type="button" class="button primary" data-assessment-begin disabled>
+      準備中…
+    </button>
+    <p class="muted">問題の版：{a.version}。各テストの記録は直近100回まで保持します。</p>
+  </div>
+  <div data-assessment-active hidden>
+    <div class="exam-toolbar">
+      <strong data-question-position></strong>
+      <span data-exam-timer role="timer" aria-live="off"></span>
+      <span data-exam-save role="status">
+        この端末に保存
+      </span>
+    </div>
+    <p data-exam-announcement role="status" class="sr-only"></p>
+    <p data-exam-count></p>
+    <details class="question-map">
+      <summary>問題一覧・未解答・見直し</summary>
+      <p>✓ 解答済み・★ 見直し。印のない問題は未解答です。</p>
+      <nav aria-label="問題を選ぶ" data-question-map></nav>
+    </details>
+  </div>
+  <div class="assessment-questions" data-assessment-questions hidden>
+    {a.questions.map((q, i) => (
+      <fieldset class="assessment-question" data-question={q.id} data-question-index={i}>
+        <legend tabindex="-1">
+          問{i + 1}　{q.prompt}
+        </legend>
+        {q.options.map((o, j) => (
+          <label class="quiz-option">
+            <input type="radio" name={q.id} value={j} disabled />
+            <span>{o}</span>
+          </label>
+        ))}
+      </fieldset>
+    ))}
+  </div>
+  <div data-assessment-controls hidden>
+    <div class="exam-actions">
+      <label class="flag-control">
+        <input type="checkbox" data-review-flag />
+        あとで見直す
+      </label>
+      <button class="button secondary" type="button" data-answer-clear>
+        この問の解答を消す
+      </button>
+    </div>
+    <div class="exam-actions">
+      <button class="button secondary" type="button" data-question-prev>
+        前の問題
+      </button>
+      <button class="button primary" type="button" data-question-next>
+        次の問題
+      </button>
+      <button class="button secondary" type="button" data-assessment-submit>
+        解答を提出する
+      </button>
+    </div>
+  </div>
+  <div class="assessment-results" data-assessment-results hidden tabindex="-1"></div>
+  <section class="assessment-history">
+    <h3>このテストの記録</h3>
+    <div data-current-assessment-history>
+      <p>まだ記録はありません。</p>
+    </div>
+  </section>
+  <p class="saved-note muted">
+    解答はこの端末のブラウザだけに保存します。<a href={href('progress/#backup')}>バックアップと復元</a>
+    。レッスンを読んだだけではテストの得点は付きません。
+  </p>
+  <noscript>
+    <style is:inline>
+      .assessment-questions[hidden] {
+        display: block !important;
+      }
+    </style>
+    <p>本文と問題は読めます。解答・採点・記録にはJavaScriptが必要です。</p>
+  </noscript>
+  <dialog data-assessment-dialog aria-labelledby="assessment-confirm-title">
+    <form method="dialog">
+      <h3 id="assessment-confirm-title">解答を提出しますか？</h3>
+      <p data-assessment-confirm-text></p>
+      <div class="button-row">
+        <button class="button secondary" value="cancel" autofocus>
+          続けて解く
+        </button>
+        <button class="button primary" value="submit">
+          提出して終了
+        </button>
+      </div>
+    </form>
+  </dialog>
+  <script
+    type="application/json"
+    data-assessment-json
+    set:html={JSON.stringify(a).replace(/</g, '\\u003c')}
+  />
+</section>

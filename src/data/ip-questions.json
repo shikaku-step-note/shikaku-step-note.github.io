@@ -1,0 +1,2139 @@
+{
+  "ip-organization": {
+    "lesson": [
+      {
+        "prompt": "FAQ導入後の平均回答時間を測り、目標と比較する段階は？",
+        "options": ["Act", "Plan", "Do", "Check"],
+        "answer": 3,
+        "explanation": "実績と目標を比較して効果を評価するのはCheckです。Planは計画、Doは実行、Actは改善です。",
+        "id": "ip-organization-q-1",
+        "lesson": "ip-organization",
+        "field": "strategy"
+      },
+      {
+        "prompt": "BCPとして最も適切な内容は？",
+        "options": [
+          "製品の配色ルール",
+          "非常時に別拠点で重要業務を再開する手順",
+          "社員旅行の日程",
+          "個人の画面設定"
+        ],
+        "answer": 1,
+        "explanation": "BCPは重要業務の継続・復旧を対象にします。データだけでなく拠点、人員、連絡も考えます。",
+        "id": "ip-organization-q-2",
+        "lesson": "ip-organization",
+        "field": "strategy"
+      },
+      {
+        "prompt": "製品群ごとに販売と開発の責任をまとめたい。適する組織は？",
+        "options": ["すべての権限をなくす組織", "営業機能だけの組織", "非公式な個人の集まり", "事業部制"],
+        "answer": 3,
+        "explanation": "事業部制は製品や地域などの事業単位に機能をまとめます。機能別は専門機能ごとの区分です。",
+        "id": "ip-organization-q-3",
+        "lesson": "ip-organization",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "専門研修を社外教室で受講する育成方法は？",
+        "options": ["OJT", "BCP", "Off-JT", "CSR"],
+        "answer": 2,
+        "explanation": "実務を離れて行う研修はOff-JTです。",
+        "id": "ip-organization-review-1",
+        "lesson": "ip-organization",
+        "field": "strategy"
+      },
+      {
+        "prompt": "新製品の判断で顧客・従業員・地域の影響も調べる理由は？",
+        "options": [
+          "売上の記録を不要にするため",
+          "法令を無視するため",
+          "責任者をなくすため",
+          "利害関係者への責任があるため"
+        ],
+        "answer": 3,
+        "explanation": "企業活動は複数のステークホルダに影響を与えます。",
+        "id": "ip-organization-review-2",
+        "lesson": "ip-organization",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-analysis": {
+    "lesson": [
+      {
+        "prompt": "原因別の不良件数を多い順に把握したい。適切な図は？",
+        "options": ["ER図", "画面遷移図", "組織図", "パレート図"],
+        "answer": 3,
+        "explanation": "パレート図は重点的に改善すべき原因を探すのに適します。",
+        "id": "ip-analysis-q-1",
+        "lesson": "ip-analysis",
+        "field": "strategy"
+      },
+      {
+        "prompt": "50件、30件、20件の苦情で上位2項目の累積割合は？",
+        "options": ["80%", "30%", "50%", "70%"],
+        "answer": 0,
+        "explanation": "合計100件のうち50+30=80件なので80%です。",
+        "id": "ip-analysis-q-2",
+        "lesson": "ip-analysis",
+        "field": "strategy"
+      },
+      {
+        "prompt": "相関が高い二つの数量について正しい判断は？",
+        "options": [
+          "一方が必ず原因である",
+          "第三の要因や収集条件も確認する",
+          "調査は一切不要である",
+          "回帰式は将来も必ず正しい"
+        ],
+        "answer": 1,
+        "explanation": "相関だけで因果は断定できません。交絡や測定の偏りも検討します。",
+        "id": "ip-analysis-q-3",
+        "lesson": "ip-analysis",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "体重と運動時間の関係を点の分布で見たい。使う図は？",
+        "options": ["状態遷移図", "散布図", "組織図", "WBS"],
+        "answer": 1,
+        "explanation": "二つの数量の関係を見るには散布図が適します。",
+        "id": "ip-analysis-review-1",
+        "lesson": "ip-analysis",
+        "field": "strategy"
+      },
+      {
+        "prompt": "回答者が特定部署だけのアンケートを全社員の意見と扱う問題は？",
+        "options": ["圧縮率の低下", "主キー重複", "標本の偏り", "暗号鍵の不足"],
+        "answer": 2,
+        "explanation": "対象の選び方が母集団を代表していない可能性があります。",
+        "id": "ip-analysis-review-2",
+        "lesson": "ip-analysis",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-finance": {
+    "lesson": [
+      {
+        "prompt": "固定費8万円、単価1,000円、単位変動費600円。損益分岐点販売量は？",
+        "options": ["200個", "400個", "80個", "133個"],
+        "answer": 0,
+        "explanation": "1個の限界利益400円で固定費8万円を回収するので、80,000÷400=200個です。",
+        "id": "ip-finance-q-1",
+        "lesson": "ip-finance",
+        "field": "strategy"
+      },
+      {
+        "prompt": "ある時点の財産と資金の調達源を見る書類は？",
+        "options": ["工程表", "損益計算書", "貸借対照表", "議事録"],
+        "answer": 2,
+        "explanation": "貸借対照表は時点の状態です。損益計算書は期間の成績です。",
+        "id": "ip-finance-q-2",
+        "lesson": "ip-finance",
+        "field": "strategy"
+      },
+      {
+        "prompt": "売上高50万円、変動費30万円、固定費15万円の利益は？",
+        "options": ["5万円", "15万円", "20万円", "35万円"],
+        "answer": 0,
+        "explanation": "50−30−15=5万円です。変動費だけを引いた20万円は限界利益です。",
+        "id": "ip-finance-q-3",
+        "lesson": "ip-finance",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "固定費12万円、変動費率60%。損益分岐点売上高は？",
+        "options": ["72万円", "7万2千円", "20万円", "30万円"],
+        "answer": 3,
+        "explanation": "120,000÷(1−0.6)=300,000円です。",
+        "id": "ip-finance-review-1",
+        "lesson": "ip-finance",
+        "field": "strategy"
+      },
+      {
+        "prompt": "掛売上が発生して入金は翌月。正しい理解は？",
+        "options": [
+          "売上と入金は常に同時",
+          "利益と現金の増減は一致しないことがある",
+          "利益は存在しない",
+          "負債が必ずゼロになる"
+        ],
+        "answer": 1,
+        "explanation": "発生主義による収益と現金の受払いは時期がずれる場合があります。",
+        "id": "ip-finance-review-2",
+        "lesson": "ip-finance",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-rights": {
+    "lesson": [
+      {
+        "prompt": "新しいサービス名の識別表示を守る中心的な権利は？",
+        "options": ["データの圧縮権", "商標権", "著作権だけ", "物理的な所有権だけ"],
+        "answer": 1,
+        "explanation": "サービスの出所を示す名称やマークには商標権が関係します。",
+        "id": "ip-rights-q-1",
+        "lesson": "ip-rights",
+        "field": "strategy"
+      },
+      {
+        "prompt": "無料で入手したソフトウェアの再配布について適切なのは？",
+        "options": ["無料なら必ず自由", "利用許諾条件を確認する", "出典を消せば自由", "社内ならすべて無条件"],
+        "answer": 1,
+        "explanation": "価格と再配布の許諾は別です。無料やOSSでも条件を確認します。",
+        "id": "ip-rights-q-2",
+        "lesson": "ip-rights",
+        "field": "strategy"
+      },
+      {
+        "prompt": "ネットで公開された写真について正しいのは？",
+        "options": [
+          "出典を書けば必ず商用利用できる",
+          "許諾条件や利用の法的根拠を確認する",
+          "小さくすれば権利はない",
+          "著作権は消える"
+        ],
+        "answer": 1,
+        "explanation": "公開は権利放棄を意味しません。引用の要件も単なる出典表示だけでは足りません。",
+        "id": "ip-rights-q-3",
+        "lesson": "ip-rights",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "技術的な発明を登録して保護する制度は？",
+        "options": ["商標", "特許", "PDCA", "SLA"],
+        "answer": 1,
+        "explanation": "技術的な発明を対象とするのが特許です。",
+        "id": "ip-rights-review-1",
+        "lesson": "ip-rights",
+        "field": "strategy"
+      },
+      {
+        "prompt": "ソフトを購入した企業が確認すべきことは？",
+        "options": ["配色だけ", "製作者の趣味", "社名の文字数", "許諾された端末数と利用方法"],
+        "answer": 3,
+        "explanation": "購入したライセンスの条件と実際の利用を一致させます。",
+        "id": "ip-rights-review-2",
+        "lesson": "ip-rights",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-law-ethics": {
+    "lesson": [
+      {
+        "prompt": "民間事業者が顧客の個人データを別会社へ提供する場合は？",
+        "options": [
+          "同じ地域なら自由",
+          "すべて無条件で可能",
+          "原則の同意要件と例外・委託等を確認する",
+          "氏名があれば必ず禁止"
+        ],
+        "answer": 2,
+        "explanation": "原則と例外を区別し、第三者提供かどうか、利用目的や安全管理も確認します。",
+        "id": "ip-law-ethics-q-1",
+        "lesson": "ip-law-ethics",
+        "field": "strategy"
+      },
+      {
+        "prompt": "請負契約の実態を点検する際に重要なのは？",
+        "options": [
+          "契約書の紙の色",
+          "注文者が受託側の労働者へ直接指揮命令していないか",
+          "オフィスの階数",
+          "会議の曜日"
+        ],
+        "answer": 1,
+        "explanation": "名称だけでなく指揮命令などの実態が重要です。",
+        "id": "ip-law-ethics-q-2",
+        "lesson": "ip-law-ethics",
+        "field": "strategy"
+      },
+      {
+        "prompt": "他人のIDで権限のないシステムへ入る行為について適切なのは？",
+        "options": [
+          "退職者のIDなら自由",
+          "不正アクセス等に該当し得るため行わない",
+          "夜間なら自由",
+          "確認目的なら常に許される"
+        ],
+        "answer": 1,
+        "explanation": "他人の識別符号の不正使用などは規制対象になります。",
+        "id": "ip-law-ethics-q-3",
+        "lesson": "ip-law-ethics",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "取適法という名称が現行シラバスに反映された版は？",
+        "options": ["Ver.6.5", "存在しない", "このサイト独自の法律", "期限のない契約の名称"],
+        "answer": 0,
+        "explanation": "IPAのVer.6.5改訂注記と公正取引委員会の案内で確認できます。",
+        "id": "ip-law-ethics-review-1",
+        "lesson": "ip-law-ethics",
+        "field": "strategy"
+      },
+      {
+        "prompt": "社内で個人情報を使うなら目的は不要、という判断は？",
+        "options": [
+          "利用目的の制限も確認する必要がある",
+          "暗号化すれば必ず正しい",
+          "社員なら無条件に正しい",
+          "正しい"
+        ],
+        "answer": 0,
+        "explanation": "同一事業者内であっても目的外利用等の問題は別に確認します。",
+        "id": "ip-law-ethics-review-2",
+        "lesson": "ip-law-ethics",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-standards": {
+    "lesson": [
+      {
+        "prompt": "市場で普及した結果、事実上の標準となったものは？",
+        "options": ["主キー", "暗号鍵", "デファクトスタンダード", "減価償却"],
+        "answer": 2,
+        "explanation": "公的機関が定めたかどうかではなく、市場での普及による標準です。",
+        "id": "ip-standards-q-1",
+        "lesson": "ip-standards",
+        "field": "strategy"
+      },
+      {
+        "prompt": "CSVを交換する際に合わせるべきものは？",
+        "options": ["送信する曜日だけ", "担当者の趣味", "文字コードや列の意味・単位", "パソコンの色だけ"],
+        "answer": 2,
+        "explanation": "形式の名称だけでなく、データをどう解釈するかの合意が必要です。",
+        "id": "ip-standards-q-2",
+        "lesson": "ip-standards",
+        "field": "strategy"
+      },
+      {
+        "prompt": "ISMS認証について正しい理解は？",
+        "options": [
+          "事故ゼロの保証",
+          "すべてのソフトの認可",
+          "対象範囲の管理の仕組みに関する認証",
+          "暗号を不要にする認証"
+        ],
+        "answer": 2,
+        "explanation": "情報セキュリティの管理の仕組みと対象範囲に関係し、無事故を保証しません。",
+        "id": "ip-standards-q-3",
+        "lesson": "ip-standards",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "地域に合わせて日付や言語表示を調整する作業は？",
+        "options": ["正規化", "地域化", "冗長化", "仮想化"],
+        "answer": 1,
+        "explanation": "地域化はL10Nとも呼ばれます。",
+        "id": "ip-standards-review-1",
+        "lesson": "ip-standards",
+        "field": "strategy"
+      },
+      {
+        "prompt": "将来の乗換えを難しくする独自仕様への依存は？",
+        "options": ["可用性", "ロックイン", "損益分岐点", "標本化"],
+        "answer": 1,
+        "explanation": "ベンダーロックインでは移行性や費用も考えます。",
+        "id": "ip-standards-review-2",
+        "lesson": "ip-standards",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-strategy": {
+    "lesson": [
+      {
+        "prompt": "競合企業の新規参入はSWOTのどこに分類するのが適切か？",
+        "options": ["内部の弱み", "外部の脅威", "内部の資産", "内部の強み"],
+        "answer": 1,
+        "explanation": "競合の参入は外部環境の不利な要因なので脅威です。",
+        "id": "ip-strategy-q-1",
+        "lesson": "ip-strategy",
+        "field": "strategy"
+      },
+      {
+        "prompt": "月間の予約完了数を最終目標としたとき、入力離脱率は主に？",
+        "options": ["固定費", "主キー", "KPI", "著作権"],
+        "answer": 2,
+        "explanation": "目標達成までの過程を測る指標としてKPIにできます。",
+        "id": "ip-strategy-q-2",
+        "lesson": "ip-strategy",
+        "field": "strategy"
+      },
+      {
+        "prompt": "PPMで金のなる木に当たる組合せは？",
+        "options": ["両方とも低", "成長率高・占有率低", "成長率低・占有率高", "成長率高・占有率高"],
+        "answer": 2,
+        "explanation": "市場成長率が低く相対的占有率が高い事業を指します。",
+        "id": "ip-strategy-q-3",
+        "lesson": "ip-strategy",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "PEST分析が主に調べる対象は？",
+        "options": ["暗号方式", "社内給与だけ", "外部のマクロ環境", "配列の添字"],
+        "answer": 2,
+        "explanation": "政治・経済・社会・技術という外部環境を調べます。",
+        "id": "ip-strategy-review-1",
+        "lesson": "ip-strategy",
+        "field": "strategy"
+      },
+      {
+        "prompt": "指標の数字だけ改善し予約完了が減った。見直すべきことは？",
+        "options": ["バックアップの拡張子", "指標と目的のつながり", "キーボード配列だけ", "税率の暗記だけ"],
+        "answer": 1,
+        "explanation": "KPIがKGIに貢献しているか、逆効果を生んでいないか確認します。",
+        "id": "ip-strategy-review-2",
+        "lesson": "ip-strategy",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-marketing": {
+    "lesson": [
+      {
+        "prompt": "4Pに含まれるものは？",
+        "options": ["価格", "主キー", "公開鍵", "プロセッサ"],
+        "answer": 0,
+        "explanation": "4PはProduct、Price、Place、Promotionです。",
+        "id": "ip-marketing-q-1",
+        "lesson": "ip-marketing",
+        "field": "strategy"
+      },
+      {
+        "prompt": "調達から配送までの在庫と納期を全体で見直す仕組みは？",
+        "options": ["SCM", "OS", "DNS", "CRM"],
+        "answer": 0,
+        "explanation": "SCMは供給網全体を管理します。CRMは顧客との関係に着目します。",
+        "id": "ip-marketing-q-2",
+        "lesson": "ip-marketing",
+        "field": "strategy"
+      },
+      {
+        "prompt": "A/Bテストで比較の妥当性を高めるには？",
+        "options": [
+          "好みで結果を選ぶ",
+          "サンプルを常に1件にする",
+          "Aだけ繁忙期に測る",
+          "条件の割当てと比較期間を整える"
+        ],
+        "answer": 3,
+        "explanation": "条件の偏りや時期の差が結果を左右しないようにします。",
+        "id": "ip-marketing-q-3",
+        "lesson": "ip-marketing",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "顧客の最終購入時点・頻度・金額を使う分析は？",
+        "options": ["PERT", "RAID", "正規化", "RFM分析"],
+        "answer": 3,
+        "explanation": "Recency、Frequency、Monetaryに着目します。",
+        "id": "ip-marketing-review-1",
+        "lesson": "ip-marketing",
+        "field": "strategy"
+      },
+      {
+        "prompt": "会計と販売で別々の数字が食い違う。統合的な管理に関係するのは？",
+        "options": ["SMTP", "CPU", "ERP", "JPEG"],
+        "answer": 2,
+        "explanation": "ERPは基幹業務の情報を統合的に扱います。",
+        "id": "ip-marketing-review-2",
+        "lesson": "ip-marketing",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-tech-business": {
+    "lesson": [
+      {
+        "prompt": "限定的なデータで新技術の実現可能性を調べる取組は？",
+        "options": ["減価償却", "PoC", "決算", "負荷分散"],
+        "answer": 1,
+        "explanation": "PoCは実現可能性等の検証です。本番導入までのすべてを保証しません。",
+        "id": "ip-tech-business-q-1",
+        "lesson": "ip-tech-business",
+        "field": "strategy"
+      },
+      {
+        "prompt": "ロードマップの役割は？",
+        "options": [
+          "技術と製品などの計画を時間軸で関連付ける",
+          "暗号を解除する",
+          "すべての不確実性を消す",
+          "個人情報を公開する"
+        ],
+        "answer": 0,
+        "explanation": "技術の開発・導入時期と事業の関係を可視化します。",
+        "id": "ip-tech-business-q-2",
+        "lesson": "ip-tech-business",
+        "field": "strategy"
+      },
+      {
+        "prompt": "RPAの導入で必要な配慮は？",
+        "options": [
+          "例外処理と権限・監視を設計する",
+          "担当者を一切置かない",
+          "入力の正しさを確認しない",
+          "誤処理は起きないと仮定する"
+        ],
+        "answer": 0,
+        "explanation": "自動化は誤りも反復できるため、管理と復旧手順が重要です。",
+        "id": "ip-tech-business-q-3",
+        "lesson": "ip-tech-business",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "外部研究機関との共同開発に代表される考え方は？",
+        "options": ["オープンイノベーション", "完全な内製限定", "パリティ", "ページング"],
+        "answer": 0,
+        "explanation": "外部の知識・技術も活用します。",
+        "id": "ip-tech-business-review-1",
+        "lesson": "ip-tech-business",
+        "field": "strategy"
+      },
+      {
+        "prompt": "POSから主に得られる情報は？",
+        "options": ["CPU命令だけ", "秘密鍵そのもの", "通信経路すべて", "販売時点の商品・数量"],
+        "answer": 3,
+        "explanation": "販売時点の情報を在庫管理や販売分析につなげます。",
+        "id": "ip-tech-business-review-2",
+        "lesson": "ip-tech-business",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-engineering-iot": {
+    "lesson": [
+      {
+        "prompt": "設計図の作成を支援するものは？",
+        "options": ["CRM", "DNS", "CAM", "CAD"],
+        "answer": 3,
+        "explanation": "CADは設計、CAMは製造支援です。",
+        "id": "ip-engineering-iot-q-1",
+        "lesson": "ip-engineering-iot",
+        "field": "strategy"
+      },
+      {
+        "prompt": "温度を検出する装置は？",
+        "options": ["主キー", "アクチュエータ", "センサ", "ルータ"],
+        "answer": 2,
+        "explanation": "センサは計測・検出、アクチュエータは動作に変換します。",
+        "id": "ip-engineering-iot-q-2",
+        "lesson": "ip-engineering-iot",
+        "field": "strategy"
+      },
+      {
+        "prompt": "通信断でも危険な温度上昇に対応するには？",
+        "options": [
+          "クラウドの返答を無期限に待つ",
+          "現地の安全制御と警報を用意する",
+          "認証をなくす",
+          "ログを必ず消す"
+        ],
+        "answer": 1,
+        "explanation": "物理設備では通信停止時の安全も重要です。",
+        "id": "ip-engineering-iot-q-3",
+        "lesson": "ip-engineering-iot",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "部品の構成と必要数を表すものは？",
+        "options": ["KGI", "BOM", "SLA", "HTTP"],
+        "answer": 1,
+        "explanation": "BOMは部品表です。",
+        "id": "ip-engineering-iot-review-1",
+        "lesson": "ip-engineering-iot",
+        "field": "strategy"
+      },
+      {
+        "prompt": "計測機器の近くで処理する利点として適切なのは？",
+        "options": [
+          "遅延や送信量を抑えられる場合がある",
+          "安全対策が必ず不要になる",
+          "電力は必ずゼロ",
+          "モデルは絶対に正しい"
+        ],
+        "answer": 0,
+        "explanation": "エッジ処理は構成上の選択で、安全や精度の検討は別に必要です。",
+        "id": "ip-engineering-iot-review-2",
+        "lesson": "ip-engineering-iot",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-ecommerce": {
+    "lesson": [
+      {
+        "prompt": "広告費3万円で100件の成果。CPAは？",
+        "options": ["3,000円", "30,000円", "30円", "300円"],
+        "answer": 3,
+        "explanation": "30,000÷100=300円です。",
+        "id": "ip-ecommerce-q-1",
+        "lesson": "ip-ecommerce",
+        "field": "strategy"
+      },
+      {
+        "prompt": "個人同士が商品を売買する形態は？",
+        "options": ["CAD", "BtoB", "BtoC", "CtoC"],
+        "answer": 3,
+        "explanation": "Consumer to Consumer、消費者間取引です。",
+        "id": "ip-ecommerce-q-2",
+        "lesson": "ip-ecommerce",
+        "field": "strategy"
+      },
+      {
+        "prompt": "訪問200件、購入10件と定義したときCVRは？",
+        "options": ["0.5%", "2%", "5%", "20%"],
+        "answer": 2,
+        "explanation": "10÷200×100=5%です。",
+        "id": "ip-ecommerce-q-3",
+        "lesson": "ip-ecommerce",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "少数ずつ売れる多数の商品群が全体で大きな売上になる見方は？",
+        "options": ["ガントチャート", "ロングテール", "フェールセーフ", "正規化"],
+        "answer": 1,
+        "explanation": "売れ筋だけでなく裾野の広い商品群に着目します。",
+        "id": "ip-ecommerce-review-1",
+        "lesson": "ip-ecommerce",
+        "field": "strategy"
+      },
+      {
+        "prompt": "表示2万回、クリック400回のCTRは？",
+        "options": ["0.02%", "0.2%", "2%", "20%"],
+        "answer": 2,
+        "explanation": "400÷20,000×100=2%です。",
+        "id": "ip-ecommerce-review-2",
+        "lesson": "ip-ecommerce",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-system-strategy": {
+    "lesson": [
+      {
+        "prompt": "既存の不要な承認も含め業務を抜本的に再設計する取組は？",
+        "options": ["著作権登録", "BPR", "JPEG", "MTBF"],
+        "answer": 1,
+        "explanation": "BPRは業務自体の抜本的な見直しです。",
+        "id": "ip-system-strategy-q-1",
+        "lesson": "ip-system-strategy",
+        "field": "strategy"
+      },
+      {
+        "prompt": "クラウドのメールアプリを利用する形態は？",
+        "options": ["IaaSだけ", "SaaS", "RAID", "LAN"],
+        "answer": 1,
+        "explanation": "完成したアプリケーション機能の提供はSaaSです。",
+        "id": "ip-system-strategy-q-2",
+        "lesson": "ip-system-strategy",
+        "field": "strategy"
+      },
+      {
+        "prompt": "TCOに含めて比較するのが適切なのは？",
+        "options": ["運用・保守・移行等を含む費用", "広告の表示回数だけ", "画面の数だけ", "購入費だけ"],
+        "answer": 0,
+        "explanation": "初期費用だけでは利用期間全体の負担を比較できません。",
+        "id": "ip-system-strategy-q-3",
+        "lesson": "ip-system-strategy",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "改革後に目指す業務の姿を何というか？",
+        "options": ["To-Be", "As-Is", "FIFO", "WAV"],
+        "answer": 0,
+        "explanation": "As-Isが現状、To-Beが目標の姿です。",
+        "id": "ip-system-strategy-review-1",
+        "lesson": "ip-system-strategy",
+        "field": "strategy"
+      },
+      {
+        "prompt": "クラウド利用時の責任について正しいのは？",
+        "options": ["すべて提供者だけの責任", "認証は不要", "契約の確認は不要", "利用者側の設定責任等も残る"],
+        "answer": 3,
+        "explanation": "サービス形態と契約に応じて責任分担を確認します。",
+        "id": "ip-system-strategy-review-2",
+        "lesson": "ip-system-strategy",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-procurement": {
+    "lesson": [
+      {
+        "prompt": "検索結果を2秒以内に表示するという条件は主に？",
+        "options": ["著作権", "組織図", "性能の非機能要件", "商品分類だけ"],
+        "answer": 2,
+        "explanation": "処理内容ではなく性能に関する品質条件です。",
+        "id": "ip-procurement-q-1",
+        "lesson": "ip-procurement",
+        "field": "strategy"
+      },
+      {
+        "prompt": "具体的な提案を求めるため要件を示して出す文書は？",
+        "options": ["QR", "RFI", "RFP", "B/S"],
+        "answer": 2,
+        "explanation": "RFPは提案依頼、RFIは情報提供依頼です。",
+        "id": "ip-procurement-q-2",
+        "lesson": "ip-procurement",
+        "field": "strategy"
+      },
+      {
+        "prompt": "受入条件を明確にする主な理由は？",
+        "options": [
+          "完成の判断基準を合意するため",
+          "試験を一切しないため",
+          "責任を全て曖昧にするため",
+          "データを消すため"
+        ],
+        "answer": 0,
+        "explanation": "成果物が合意した条件を満たすか判断できるようにします。",
+        "id": "ip-procurement-q-3",
+        "lesson": "ip-procurement",
+        "field": "strategy"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "選択肢の情報収集を先に依頼する文書は？",
+        "options": ["HTML", "RFI", "RFPだけ", "SQL"],
+        "answer": 1,
+        "explanation": "RFIで市場情報などを集められます。",
+        "id": "ip-procurement-review-1",
+        "lesson": "ip-procurement",
+        "field": "strategy"
+      },
+      {
+        "prompt": "調達候補を評価するとき適切なのは？",
+        "options": [
+          "初期価格以外の運用・移行も比較する",
+          "ロゴの大きさだけ比較する",
+          "契約を読まない",
+          "受入条件を作らない"
+        ],
+        "answer": 0,
+        "explanation": "総費用と要件への適合、運用支援等を比較します。",
+        "id": "ip-procurement-review-2",
+        "lesson": "ip-procurement",
+        "field": "strategy"
+      }
+    ]
+  },
+  "ip-development": {
+    "lesson": [
+      {
+        "prompt": "18〜65が有効な入力で境界確認に適する組合せは？",
+        "options": ["17・18・65・66", "20・30だけ", "0だけ", "30だけ"],
+        "answer": 0,
+        "explanation": "境界の直前・境界そのものを確かめます。",
+        "id": "ip-development-q-1",
+        "lesson": "ip-development",
+        "field": "management"
+      },
+      {
+        "prompt": "変更後に無関係に見える既存機能も調べるテストは？",
+        "options": ["棚卸し", "損益計算", "回帰テスト", "RFI"],
+        "answer": 2,
+        "explanation": "修正が既存機能を壊していないか確認します。",
+        "id": "ip-development-q-2",
+        "lesson": "ip-development",
+        "field": "management"
+      },
+      {
+        "prompt": "移行計画に必要なものは？",
+        "options": ["テストの省略", "失敗時の切戻し条件", "新画面の色だけ", "旧データの即時消去だけ"],
+        "answer": 1,
+        "explanation": "バックアップと復旧・切戻しを事前に計画します。",
+        "id": "ip-development-q-3",
+        "lesson": "ip-development",
+        "field": "management"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "部品間の接続やデータ受渡しを調べるテストは？",
+        "options": ["著作権調査", "管理図", "結合テスト", "単体テストだけ"],
+        "answer": 2,
+        "explanation": "結合テストは部品間の連携を対象とします。",
+        "id": "ip-development-review-1",
+        "lesson": "ip-development",
+        "field": "management"
+      },
+      {
+        "prompt": "内部の分岐や命令の実行に着目するテストは？",
+        "options": ["RFP", "ブラックボックス", "ホワイトボックス", "顧客アンケート"],
+        "answer": 2,
+        "explanation": "内部構造を利用してテストを設計します。",
+        "id": "ip-development-review-2",
+        "lesson": "ip-development",
+        "field": "management"
+      }
+    ]
+  },
+  "ip-agile": {
+    "lesson": [
+      {
+        "prompt": "アジャイルについて適切な説明は？",
+        "options": [
+          "計画を一切しない",
+          "短い周期で成果を確認し計画を見直す",
+          "品質を確認しない",
+          "利用者との対話を避ける"
+        ],
+        "answer": 1,
+        "explanation": "短いフィードバック周期が特徴です。計画や品質管理を不要にしません。",
+        "id": "ip-agile-q-1",
+        "lesson": "ip-agile",
+        "field": "management"
+      },
+      {
+        "prompt": "働き方の改善を振り返る場は？",
+        "options": ["B/S", "DNS", "棚卸し", "レトロスペクティブ"],
+        "answer": 3,
+        "explanation": "成果の確認と、チームの進め方の振り返りを区別します。",
+        "id": "ip-agile-q-2",
+        "lesson": "ip-agile",
+        "field": "management"
+      },
+      {
+        "prompt": "CIで自動テストが成功した。適切な判断は？",
+        "options": [
+          "権限を全員に公開する",
+          "すべての欠陥がないと断定する",
+          "運用監視はもう不要",
+          "設定や公開手順・監視も管理する"
+        ],
+        "answer": 3,
+        "explanation": "自動テストは品質管理の一部で、運用上の管理は引き続き必要です。",
+        "id": "ip-agile-q-3",
+        "lesson": "ip-agile",
+        "field": "management"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "試作品を使って要件の認識を合わせる進め方は？",
+        "options": ["パケット交換", "減価償却", "インデックス作成", "プロトタイピング"],
+        "answer": 3,
+        "explanation": "動く試作品等で利用者と確認します。",
+        "id": "ip-agile-review-1",
+        "lesson": "ip-agile",
+        "field": "management"
+      },
+      {
+        "prompt": "バックログの優先順位を価値の観点で管理する責任を持つ役割は？",
+        "options": ["取引先の全員", "OS", "プロダクトオーナー", "DNSサーバ"],
+        "answer": 2,
+        "explanation": "スクラムでのプロダクトオーナーの役割です。",
+        "id": "ip-agile-review-2",
+        "lesson": "ip-agile",
+        "field": "management"
+      }
+    ]
+  },
+  "ip-project": {
+    "lesson": [
+      {
+        "prompt": "A2日→B4日とC3日を並行→D2日。最短期間は？",
+        "options": ["8日", "9日", "11日", "7日"],
+        "answer": 0,
+        "explanation": "A+B+D=8日が最長の経路です。並行部分を単純合計しません。",
+        "id": "ip-project-q-1",
+        "lesson": "ip-project",
+        "field": "management"
+      },
+      {
+        "prompt": "上記計画でCだけを1日短縮した場合の全体期間は？",
+        "options": ["8日", "9日", "6日", "7日"],
+        "answer": 0,
+        "explanation": "Bの経路が8日のままなので全体期間も変わりません。",
+        "id": "ip-project-q-2",
+        "lesson": "ip-project",
+        "field": "management"
+      },
+      {
+        "prompt": "新機能の追加依頼を受けた。適切な対応は？",
+        "options": ["既存計画を見ない", "影響評価と承認を行う", "無記録で必ず即時追加", "品質確認を全て省く"],
+        "answer": 1,
+        "explanation": "変更は他の制約へ影響するため、関係者で評価し合意します。",
+        "id": "ip-project-q-3",
+        "lesson": "ip-project",
+        "field": "management"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "WBSを作る主な目的は？",
+        "options": [
+          "税金を自動計算する",
+          "画面を圧縮する",
+          "作業や成果物を分解し管理可能にする",
+          "通信を暗号化する"
+        ],
+        "answer": 2,
+        "explanation": "担当や見積り、進捗管理につなげます。",
+        "id": "ip-project-review-1",
+        "lesson": "ip-project",
+        "field": "management"
+      },
+      {
+        "prompt": "出来高EV=80、実コストAC=100のとき、同じ単位でのコスト効率EV/ACは？",
+        "options": ["180", "0.8", "1.2", "20"],
+        "answer": 1,
+        "explanation": "80÷100=0.8です。投入したコストに対する出来高を見ます。",
+        "id": "ip-project-review-2",
+        "lesson": "ip-project",
+        "field": "management"
+      }
+    ]
+  },
+  "ip-services": {
+    "lesson": [
+      {
+        "prompt": "停止したサービスを早く復旧させることを優先する管理は？",
+        "options": ["財務会計", "商標管理", "問題管理だけ", "インシデント管理"],
+        "answer": 3,
+        "explanation": "根本原因の調査・再発防止を中心とする問題管理と区別します。",
+        "id": "ip-services-q-1",
+        "lesson": "ip-services",
+        "field": "management"
+      },
+      {
+        "prompt": "SLAとして適切なのは？",
+        "options": [
+          "機器の写真だけ",
+          "サービス水準を条件とともに合意する",
+          "全障害が絶対に起きない宣言",
+          "利用者の暗証番号一覧"
+        ],
+        "answer": 1,
+        "explanation": "測定条件や提供範囲などを明確にした合意が必要です。",
+        "id": "ip-services-q-2",
+        "lesson": "ip-services",
+        "field": "management"
+      },
+      {
+        "prompt": "バックアップ運用について適切なのは？",
+        "options": [
+          "復元手順も試す",
+          "取得したら永久に確認しない",
+          "原本と同時に全て消す",
+          "誰でも持ち出せる場所に置く"
+        ],
+        "answer": 0,
+        "explanation": "復元できるか、所要時間や権限も含めて確認します。",
+        "id": "ip-services-q-3",
+        "lesson": "ip-services",
+        "field": "management"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "障害の原因を取り除き再発を防ぐ管理は？",
+        "options": ["CAD", "問題管理", "CTR", "STP"],
+        "answer": 1,
+        "explanation": "早期復旧と原因への対処を分けて考えます。",
+        "id": "ip-services-review-1",
+        "lesson": "ip-services",
+        "field": "management"
+      },
+      {
+        "prompt": "UPSの役割は？",
+        "options": [
+          "停電時に一定時間電源を供給する",
+          "無期限に電力を作る",
+          "全データを暗号化する",
+          "入退室を記録する"
+        ],
+        "answer": 0,
+        "explanation": "電源の一時的な継続や安全な停止を支援します。",
+        "id": "ip-services-review-2",
+        "lesson": "ip-services",
+        "field": "management"
+      }
+    ]
+  },
+  "ip-audit": {
+    "lesson": [
+      {
+        "prompt": "監査人の姿勢として適切なのは？",
+        "options": [
+          "自分の担当だけ必ず問題なしとする",
+          "記録を作り替える",
+          "改善を永久に禁止する",
+          "証拠に基づき独立性と客観性を保つ"
+        ],
+        "answer": 3,
+        "explanation": "自己の利害に左右されず、十分な証拠から評価します。",
+        "id": "ip-audit-q-1",
+        "lesson": "ip-audit",
+        "field": "management"
+      },
+      {
+        "prompt": "職務分離の例は？",
+        "options": [
+          "ログをなくす",
+          "承認を全て廃止する",
+          "口座変更と支払承認を別担当にする",
+          "全員に無制限権限を与える"
+        ],
+        "answer": 2,
+        "explanation": "権限を分け照合や牽制を働かせます。",
+        "id": "ip-audit-q-2",
+        "lesson": "ip-audit",
+        "field": "management"
+      },
+      {
+        "prompt": "内部統制について正しいのは？",
+        "options": [
+          "ITとは無関係",
+          "あれば不正は絶対にない",
+          "共謀などにより機能しない限界もある",
+          "書類だけが対象"
+        ],
+        "answer": 2,
+        "explanation": "合理的な保証を目指す仕組みで、絶対的な保証ではありません。",
+        "id": "ip-audit-q-3",
+        "lesson": "ip-audit",
+        "field": "management"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "監査の指摘に対して改善を実行する主な責任者は？",
+        "options": ["匿名の利用者だけ", "DNS管理者だけ", "被監査側の管理者等", "必ず監査人だけ"],
+        "answer": 2,
+        "explanation": "監査人は評価や助言、フォローアップを行い、改善は対象組織の責任で実施します。",
+        "id": "ip-audit-review-1",
+        "lesson": "ip-audit",
+        "field": "management"
+      },
+      {
+        "prompt": "開発・変更・運用の共通基盤を対象とする統制は？",
+        "options": ["画像圧縮", "IT全般統制", "広告配信", "商品企画"],
+        "answer": 1,
+        "explanation": "個別の業務処理統制と区別します。",
+        "id": "ip-audit-review-2",
+        "lesson": "ip-audit",
+        "field": "management"
+      }
+    ]
+  },
+  "ip-binary": {
+    "lesson": [
+      {
+        "prompt": "2進数1011を10進数で表すと？",
+        "options": ["13", "9", "10", "11"],
+        "answer": 3,
+        "explanation": "8+2+1=11です。",
+        "id": "ip-binary-q-1",
+        "lesson": "ip-binary",
+        "field": "technology"
+      },
+      {
+        "prompt": "符号なし8ビットで表せる最大整数は？",
+        "options": ["8", "128", "255", "256"],
+        "answer": 2,
+        "explanation": "256通りで0を含むため最大値は255です。",
+        "id": "ip-binary-q-2",
+        "lesson": "ip-binary",
+        "field": "technology"
+      },
+      {
+        "prompt": "A=1、B=1のときA XOR Bは？",
+        "options": ["1", "2", "未定義", "0"],
+        "answer": 3,
+        "explanation": "XORは一方だけ真のとき真なので、両方真なら0です。",
+        "id": "ip-binary-q-3",
+        "lesson": "ip-binary",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "会員A40人、B30人、重複10人。和集合の人数は？",
+        "options": ["50", "60", "70", "80"],
+        "answer": 1,
+        "explanation": "40+30−10=60人です。",
+        "id": "ip-binary-review-1",
+        "lesson": "ip-binary",
+        "field": "technology"
+      },
+      {
+        "prompt": "4ビットで表せる状態数は？",
+        "options": ["8", "16", "32", "4"],
+        "answer": 1,
+        "explanation": "2の4乗=16通りです。",
+        "id": "ip-binary-review-2",
+        "lesson": "ip-binary",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-statistics": {
+    "lesson": [
+      {
+        "prompt": "1、2、2、3、12の中央値は？",
+        "options": ["3", "4", "12", "2"],
+        "answer": 3,
+        "explanation": "並べた中央の3番目は2です。",
+        "id": "ip-statistics-q-1",
+        "lesson": "ip-statistics",
+        "field": "technology"
+      },
+      {
+        "prompt": "独立なコイン2回で両方表の確率は？",
+        "options": ["1/4", "1", "1/2", "1/3"],
+        "answer": 0,
+        "explanation": "1/2×1/2=1/4です。",
+        "id": "ip-statistics-q-2",
+        "lesson": "ip-statistics",
+        "field": "technology"
+      },
+      {
+        "prompt": "100円の利益が確率0.3、0円が0.7。期待利益は？",
+        "options": ["100円", "0円", "30円", "70円"],
+        "answer": 2,
+        "explanation": "100×0.3+0×0.7=30円です。",
+        "id": "ip-statistics-q-3",
+        "lesson": "ip-statistics",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "平均だけでは見えない散らばりを示す指標は？",
+        "options": ["CTR", "SLA", "標準偏差", "主キー"],
+        "answer": 2,
+        "explanation": "代表値と散らばりを合わせて確認します。",
+        "id": "ip-statistics-review-1",
+        "lesson": "ip-statistics",
+        "field": "technology"
+      },
+      {
+        "prompt": "欠損値を無条件に0と扱うと？",
+        "options": [
+          "標本数が無限になる",
+          "結果に偏りを与える場合がある",
+          "必ず正確になる",
+          "分母が不要になる"
+        ],
+        "answer": 1,
+        "explanation": "未回答と数値ゼロは意味が異なる場合があります。",
+        "id": "ip-statistics-review-2",
+        "lesson": "ip-statistics",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-ai-data": {
+    "lesson": [
+      {
+        "prompt": "正解ラベル付きの過去例から不良品を分類する学習は？",
+        "options": ["暗号化", "教師あり学習", "教師なし学習だけ", "量子化"],
+        "answer": 1,
+        "explanation": "入力と正解の組から分類等を学習します。",
+        "id": "ip-ai-data-q-1",
+        "lesson": "ip-ai-data",
+        "field": "technology"
+      },
+      {
+        "prompt": "未知のデータへの性能を調べるとき必要なのは？",
+        "options": [
+          "学習データだけで測る",
+          "学習に使っていない適切な評価データを用いる",
+          "結果が良い例だけ選ぶ",
+          "正解を入力へ混ぜる"
+        ],
+        "answer": 1,
+        "explanation": "学習と評価を適切に分離します。",
+        "id": "ip-ai-data-q-2",
+        "lesson": "ip-ai-data",
+        "field": "technology"
+      },
+      {
+        "prompt": "生成AIが示した法令の条文を使う前にすべきことは？",
+        "options": [
+          "一次資料で内容と適用時点を確認する",
+          "出典がなくても断定する",
+          "個人情報を全て入力する",
+          "文章が自然なら確認しない"
+        ],
+        "answer": 0,
+        "explanation": "生成AIはもっともらしい誤りも出すため、公式資料で検証します。",
+        "id": "ip-ai-data-q-3",
+        "lesson": "ip-ai-data",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "訓練成績は高いが未知データで低下する状態は？",
+        "options": ["過学習", "標準化", "正規化", "サブネット化"],
+        "answer": 0,
+        "explanation": "訓練データ固有のパターンへ合わせ過ぎている可能性があります。",
+        "id": "ip-ai-data-review-1",
+        "lesson": "ip-ai-data",
+        "field": "technology"
+      },
+      {
+        "prompt": "RAGについて適切なのは？",
+        "options": [
+          "必ず事実だけになる",
+          "機密管理は不要",
+          "学習結果を全て消す仕組み",
+          "検索を組み合わせても確認は必要"
+        ],
+        "answer": 3,
+        "explanation": "資料の質、検索結果、生成過程などに誤りが残り得ます。",
+        "id": "ip-ai-data-review-2",
+        "lesson": "ip-ai-data",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-algorithms": {
+    "lesson": [
+      {
+        "prompt": "s=0から3、1、4を順に加えると最終値は？",
+        "options": ["4", "7", "8", "12"],
+        "answer": 2,
+        "explanation": "0+3+1+4=8です。",
+        "id": "ip-algorithms-q-1",
+        "lesson": "ip-algorithms",
+        "field": "technology"
+      },
+      {
+        "prompt": "二分探索の前提として必要なのは？",
+        "options": [
+          "文字列である",
+          "常に1件である",
+          "暗号化されている",
+          "データが探索条件に沿って整列されている"
+        ],
+        "answer": 3,
+        "explanation": "大小関係等で半分に絞るため、対応した整列が必要です。",
+        "id": "ip-algorithms-q-2",
+        "lesson": "ip-algorithms",
+        "field": "technology"
+      },
+      {
+        "prompt": "A、B、Cの順にスタックへ入れた。最初に取り出すのは？",
+        "options": ["C", "常に空", "A", "B"],
+        "answer": 0,
+        "explanation": "スタックは後入れ先出しなのでCです。キューならAです。",
+        "id": "ip-algorithms-q-3",
+        "lesson": "ip-algorithms",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "受付順に処理する待ち行列に適する構造は？",
+        "options": ["スタックだけ", "秘密鍵", "浮動小数点", "キュー"],
+        "answer": 3,
+        "explanation": "FIFOで先に入ったものから処理します。",
+        "id": "ip-algorithms-review-1",
+        "lesson": "ip-algorithms",
+        "field": "technology"
+      },
+      {
+        "prompt": "反復処理で最初に確認すべき組合せは？",
+        "options": ["利用規約の長さだけ", "CPUの製造年だけ", "初期値・継続条件・更新", "画面色だけ"],
+        "answer": 2,
+        "explanation": "これらが不適切だと誤答や無限ループの原因になります。",
+        "id": "ip-algorithms-review-2",
+        "lesson": "ip-algorithms",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-languages": {
+    "lesson": [
+      {
+        "prompt": "Web文書の見出しやリンクの構造を表すものは？",
+        "options": ["HTML", "CPU", "SMTP", "CSS"],
+        "answer": 0,
+        "explanation": "HTMLは構造、CSSは表示の指定です。",
+        "id": "ip-languages-q-1",
+        "lesson": "ip-languages",
+        "field": "technology"
+      },
+      {
+        "prompt": "キーと値等でデータを交換する形式は？",
+        "options": ["WBS", "PPM", "JSON", "UPS"],
+        "answer": 2,
+        "explanation": "JSONは構造化データの表現形式です。",
+        "id": "ip-languages-q-2",
+        "lesson": "ip-languages",
+        "field": "technology"
+      },
+      {
+        "prompt": "内部の状態を直接変更させず決めた操作を通じて扱う設計は？",
+        "options": ["減価償却", "カプセル化", "非可逆圧縮", "サブネット化"],
+        "answer": 1,
+        "explanation": "カプセル化により内部の変更の影響を抑えやすくします。",
+        "id": "ip-languages-q-3",
+        "lesson": "ip-languages",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "画面幅に応じて余白や文字サイズを調整するため主に使うのは？",
+        "options": ["RFI", "ACID", "CSS", "SMTP"],
+        "answer": 2,
+        "explanation": "CSSは表示を指定します。",
+        "id": "ip-languages-review-1",
+        "lesson": "ip-languages",
+        "field": "technology"
+      },
+      {
+        "prompt": "クラスから作られた具体的な実体は？",
+        "options": ["中央値", "インスタンス", "パリティ", "スループット"],
+        "answer": 1,
+        "explanation": "クラスの共通定義に対する具体的なオブジェクトです。",
+        "id": "ip-languages-review-2",
+        "lesson": "ip-languages",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-computer": {
+    "lesson": [
+      {
+        "prompt": "クロック2GHz、1命令4周期とする。1命令の時間は？",
+        "options": ["2ns", "4秒", "8秒", "0.5ns"],
+        "answer": 0,
+        "explanation": "4÷(2×10の9乗)=2×10の−9乗秒、2nsです。",
+        "id": "ip-computer-q-1",
+        "lesson": "ip-computer",
+        "field": "technology"
+      },
+      {
+        "prompt": "電源を切ると内容が失われる性質は？",
+        "options": ["完全性", "匿名性", "揮発性", "相互運用性"],
+        "answer": 2,
+        "explanation": "一般的な主記憶のRAMは揮発性です。",
+        "id": "ip-computer-q-2",
+        "lesson": "ip-computer",
+        "field": "technology"
+      },
+      {
+        "prompt": "クロック周波数だけで性能を断定できない理由は？",
+        "options": [
+          "コア数は常に無意味",
+          "命令当たり周期数やメモリ等も影響する",
+          "周波数は必ず容量を表す",
+          "CPUは処理しない"
+        ],
+        "answer": 1,
+        "explanation": "処理の種類や構成も含めて評価します。",
+        "id": "ip-computer-q-3",
+        "lesson": "ip-computer",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "長期保存を主に担う装置は？",
+        "options": ["レジスタだけ", "入力ボタン", "補助記憶", "演算器だけ"],
+        "answer": 2,
+        "explanation": "SSDやHDDが例です。",
+        "id": "ip-computer-review-1",
+        "lesson": "ip-computer",
+        "field": "technology"
+      },
+      {
+        "prompt": "同じUSBコネクタなら速度と給電能力は必ず同じか？",
+        "options": [
+          "給電は常にできない",
+          "いいえ。対応する仕様を確認する",
+          "はい。形状だけで確定",
+          "速度は存在しない"
+        ],
+        "answer": 1,
+        "explanation": "形状と対応仕様を分けて確認します。",
+        "id": "ip-computer-review-2",
+        "lesson": "ip-computer",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-architecture": {
+    "lesson": [
+      {
+        "prompt": "MTBF99時間、MTTR1時間の稼働率は？",
+        "options": ["50%", "99%", "100%", "1%"],
+        "answer": 1,
+        "explanation": "99÷(99+1)=0.99です。",
+        "id": "ip-architecture-q-1",
+        "lesson": "ip-architecture",
+        "field": "technology"
+      },
+      {
+        "prompt": "稼働率0.9の独立した2台で一方動けばよい。全体稼働率は？",
+        "options": ["0.99", "1.8", "0.81", "0.9"],
+        "answer": 0,
+        "explanation": "1−(1−0.9)の2乗=0.99です。",
+        "id": "ip-architecture-q-2",
+        "lesson": "ip-architecture",
+        "field": "technology"
+      },
+      {
+        "prompt": "RAIDについて正しいのは？",
+        "options": [
+          "暗号鍵が不要になる",
+          "どの方式も必ずバックアップになる",
+          "誤削除への備えとして別途バックアップも必要",
+          "RAID0は必ず二重保存"
+        ],
+        "answer": 2,
+        "explanation": "複数ディスクでの構成と別時点・別媒体へのバックアップは目的が異なります。",
+        "id": "ip-architecture-q-3",
+        "lesson": "ip-architecture",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "2台が両方必要な独立直列構成で各稼働率0.9。全体は？",
+        "options": ["1", "1.8", "0.81", "0.99"],
+        "answer": 2,
+        "explanation": "0.9×0.9=0.81です。",
+        "id": "ip-architecture-review-1",
+        "lesson": "ip-architecture",
+        "field": "technology"
+      },
+      {
+        "prompt": "単位時間当たりの処理件数は？",
+        "options": ["MTTR", "スループット", "主キー", "RFI"],
+        "answer": 1,
+        "explanation": "応答までの時間とは別の性能指標です。",
+        "id": "ip-architecture-review-2",
+        "lesson": "ip-architecture",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-os-files": {
+    "lesson": [
+      {
+        "prompt": "OSの主な役割は？",
+        "options": ["資源管理と実行環境の提供", "広告費の決定だけ", "商標の登録", "会社の監査だけ"],
+        "answer": 0,
+        "explanation": "CPUやメモリ、ファイル、入出力等を管理します。",
+        "id": "ip-os-files-q-1",
+        "lesson": "ip-os-files",
+        "field": "technology"
+      },
+      {
+        "prompt": "拡張子が画像の名前なら安全か？",
+        "options": ["名前だけでは安全性を判断できない", "必ずウイルス", "暗号化済みと断定できる", "必ず安全"],
+        "answer": 0,
+        "explanation": "実際の内容、入手元、検査等も確認します。",
+        "id": "ip-os-files-q-2",
+        "lesson": "ip-os-files",
+        "field": "technology"
+      },
+      {
+        "prompt": "主記憶の不足でページ入替えが増えたとき起こり得るのは？",
+        "options": [
+          "データが必ず消える",
+          "暗号が必ず解除される",
+          "処理性能の低下",
+          "CPU周波数が必ず倍になる"
+        ],
+        "answer": 2,
+        "explanation": "補助記憶へのアクセス等が増え、速度低下の原因になります。",
+        "id": "ip-os-files-q-3",
+        "lesson": "ip-os-files",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "現在の場所を基準に指定する経路は？",
+        "options": ["絶対パスだけ", "公開鍵", "MACアドレス", "相対パス"],
+        "answer": 3,
+        "explanation": "絶対パスは基点から、相対パスは現在地から表します。",
+        "id": "ip-os-files-review-1",
+        "lesson": "ip-os-files",
+        "field": "technology"
+      },
+      {
+        "prompt": "参照専用の利用者へ付けるのに適する権限は？",
+        "options": ["全削除権限", "他人のID", "必要な読取り権限", "管理者権限すべて"],
+        "answer": 2,
+        "explanation": "必要最小限の権限で運用します。",
+        "id": "ip-os-files-review-2",
+        "lesson": "ip-os-files",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-office-oss": {
+    "lesson": [
+      {
+        "prompt": "コピーしても税率セルを固定したいとき使うのは？",
+        "options": ["絶対参照", "相対参照だけ", "パリティ", "暗号化"],
+        "answer": 0,
+        "explanation": "行・列を固定してコピーによるずれを防ぎます。",
+        "id": "ip-office-oss-q-1",
+        "lesson": "ip-office-oss",
+        "field": "technology"
+      },
+      {
+        "prompt": "部門別・月別に集計の切り口を変えるのに役立つ機能は？",
+        "options": ["画面保護フィルム", "SMTP", "機械語", "ピボットテーブル"],
+        "answer": 3,
+        "explanation": "分類軸を変えて集計できます。",
+        "id": "ip-office-oss-q-2",
+        "lesson": "ip-office-oss",
+        "field": "technology"
+      },
+      {
+        "prompt": "OSSについて正しいのは？",
+        "options": [
+          "必ず脆弱性がない",
+          "運用費は必ずゼロ",
+          "著作権は存在しない",
+          "ライセンス条件と保守状況を確認する"
+        ],
+        "answer": 3,
+        "explanation": "利用の自由にも条件があり、保守や安全管理は必要です。",
+        "id": "ip-office-oss-q-3",
+        "lesson": "ip-office-oss",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "条件が真か偽かで結果を選ぶ表計算関数は？",
+        "options": ["SUMだけ", "COUNTだけ", "AVERAGEだけ", "IF"],
+        "answer": 3,
+        "explanation": "IFは条件分岐に使います。",
+        "id": "ip-office-oss-review-1",
+        "lesson": "ip-office-oss",
+        "field": "technology"
+      },
+      {
+        "prompt": "不明な添付表計算ファイルがマクロ実行を求めた。適切なのは？",
+        "options": [
+          "管理者権限で即実行",
+          "警告を全て無効にする",
+          "入手元や必要性を確認し不用意に実行しない",
+          "必ず許可する"
+        ],
+        "answer": 2,
+        "explanation": "マクロは処理を実行するため、不正な動作のリスクがあります。",
+        "id": "ip-office-oss-review-2",
+        "lesson": "ip-office-oss",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-hardware": {
+    "lesson": [
+      {
+        "prompt": "紙の文字画像を文字データへ変換する技術は？",
+        "options": ["OCR", "CPU", "SLA", "RFP"],
+        "answer": 0,
+        "explanation": "OCRは文字認識です。認識誤りの確認も必要です。",
+        "id": "ip-hardware-q-1",
+        "lesson": "ip-hardware",
+        "field": "technology"
+      },
+      {
+        "prompt": "倉庫の携帯端末選定で適切な観点は？",
+        "options": ["CPUの数字だけ", "色の流行だけ", "故障時対応を無視する", "防塵性・電池・読取り機能等"],
+        "answer": 3,
+        "explanation": "実際の利用環境と運用に合う機能を評価します。",
+        "id": "ip-hardware-q-2",
+        "lesson": "ip-hardware",
+        "field": "technology"
+      },
+      {
+        "prompt": "機器廃棄時に必要なのは？",
+        "options": [
+          "電源を切るだけで十分",
+          "誰にでも渡す",
+          "保存データを適切に消去する",
+          "ファイル名だけ変える"
+        ],
+        "answer": 2,
+        "explanation": "削除や初期化だけで十分かも含め、媒体に適した手順を確認します。",
+        "id": "ip-hardware-q-3",
+        "lesson": "ip-hardware",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "電波でタグを識別する技術は？",
+        "options": ["OCRだけ", "HTML", "SWOT", "RFID"],
+        "answer": 3,
+        "explanation": "RFIDは電波による識別です。",
+        "id": "ip-hardware-review-1",
+        "lesson": "ip-hardware",
+        "field": "technology"
+      },
+      {
+        "prompt": "機器の総費用を判断する際に必要なものは？",
+        "options": ["箱の大きさだけ", "導入後は測らない", "消耗品・保守・電力等も考える", "本体価格だけ"],
+        "answer": 2,
+        "explanation": "導入から運用・廃棄までを考えます。",
+        "id": "ip-hardware-review-2",
+        "lesson": "ip-hardware",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-design": {
+    "lesson": [
+      {
+        "prompt": "エラーを赤色だけで示す設計の改善は？",
+        "options": ["説明文や記号も添える", "さらに薄い赤にするだけ", "読み上げを禁止する", "入力欄を隠す"],
+        "answer": 0,
+        "explanation": "色が分からなくても内容と修正方法が伝わるようにします。",
+        "id": "ip-design-q-1",
+        "lesson": "ip-design",
+        "field": "technology"
+      },
+      {
+        "prompt": "取り消せない削除操作で適切なのは？",
+        "options": [
+          "ボタン名を空欄にする",
+          "押した瞬間に無説明で全消去",
+          "警告を他ページにだけ置く",
+          "対象と影響を示し確認・キャンセルを用意する"
+        ],
+        "answer": 3,
+        "explanation": "重大な誤操作を防ぎます。",
+        "id": "ip-design-q-2",
+        "lesson": "ip-design",
+        "field": "technology"
+      },
+      {
+        "prompt": "UIとUXの関係として適切なのは？",
+        "options": ["UXは色だけ", "UIは法律だけ", "UIは接点、UXは利用を通じた体験", "両方CPUの種類"],
+        "answer": 2,
+        "explanation": "UIはUXに影響する要素の一つです。",
+        "id": "ip-design-q-3",
+        "lesson": "ip-design",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "実際の利用者に作業してもらい問題を観察する方法は？",
+        "options": ["RAID", "量子化", "DNS", "ユーザテスト"],
+        "answer": 3,
+        "explanation": "設計者の好みだけでなく利用行動を確かめます。",
+        "id": "ip-design-review-1",
+        "lesson": "ip-design",
+        "field": "technology"
+      },
+      {
+        "prompt": "キーボードだけでも操作できるようにする主な目的は？",
+        "options": [
+          "売上を必ず倍にする",
+          "暗号をなくす",
+          "多様な操作方法でアクセスできるようにする",
+          "画像を圧縮する"
+        ],
+        "answer": 2,
+        "explanation": "マウスを使わない利用者にも機能を届けます。",
+        "id": "ip-design-review-2",
+        "lesson": "ip-design",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-media": {
+    "lesson": [
+      {
+        "prompt": "100×100画素、24ビット/画素、非圧縮の容量は？",
+        "options": ["240,000バイト", "300バイト", "10,000バイト", "30,000バイト"],
+        "answer": 3,
+        "explanation": "100×100×24÷8=30,000バイトです。",
+        "id": "ip-media-q-1",
+        "lesson": "ip-media",
+        "field": "technology"
+      },
+      {
+        "prompt": "元データを完全に復元する必要がある場合に適するのは？",
+        "options": ["画面撮影だけ", "可逆圧縮", "常に非可逆圧縮", "情報の削除"],
+        "answer": 1,
+        "explanation": "可逆圧縮は元のビット列を復元できます。",
+        "id": "ip-media-q-2",
+        "lesson": "ip-media",
+        "field": "technology"
+      },
+      {
+        "prompt": "現実の風景に案内情報を重ねる表現は？",
+        "options": ["AR", "BPR", "WBS", "RFP"],
+        "answer": 0,
+        "explanation": "ARは拡張現実です。",
+        "id": "ip-media-q-3",
+        "lesson": "ip-media",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "8,000Hz、16ビット、モノラル10秒の非圧縮容量は？",
+        "options": ["1,280,000バイト", "16,000バイト", "80,000バイト", "160,000バイト"],
+        "answer": 3,
+        "explanation": "8,000×16×10÷8=160,000バイトです。",
+        "id": "ip-media-review-1",
+        "lesson": "ip-media",
+        "field": "technology"
+      },
+      {
+        "prompt": "標本化周波数とは？",
+        "options": ["1秒当たりの標本数", "画像の横幅だけ", "暗号鍵の長さ", "一つの画素の色数だけ"],
+        "answer": 0,
+        "explanation": "Hzは毎秒の回数です。",
+        "id": "ip-media-review-2",
+        "lesson": "ip-media",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-database": {
+    "lesson": [
+      {
+        "prompt": "主キーについて正しいのは？",
+        "options": ["必ず氏名である", "重複してよい", "NULLが必須", "各行を一意に識別する"],
+        "answer": 3,
+        "explanation": "主キーは重複・NULLを許さず、複数列の場合もあります。",
+        "id": "ip-database-q-1",
+        "lesson": "ip-database",
+        "field": "technology"
+      },
+      {
+        "prompt": "注文表の顧客IDが顧客表を参照する関係は？",
+        "options": ["外部キー", "CPU", "標本", "キャッシュ"],
+        "answer": 0,
+        "explanation": "表間の参照関係を表します。",
+        "id": "ip-database-q-2",
+        "lesson": "ip-database",
+        "field": "technology"
+      },
+      {
+        "prompt": "検索用インデックスについて正しいのは？",
+        "options": [
+          "必ず容量ゼロ",
+          "すべての処理を必ず速くする",
+          "データを自動的に匿名化する",
+          "更新や容量の負担もある"
+        ],
+        "answer": 3,
+        "explanation": "検索の利点と更新・領域のコストを比較します。",
+        "id": "ip-database-q-3",
+        "lesson": "ip-database",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "顧客住所を重複保存し一部だけ変更した場合に起こり得るのは？",
+        "options": ["更新の不整合", "必ず完全な正規化", "CPUの故障", "暗号の強化"],
+        "answer": 0,
+        "explanation": "同じ事実の重複が更新異常につながります。",
+        "id": "ip-database-review-1",
+        "lesson": "ip-database",
+        "field": "technology"
+      },
+      {
+        "prompt": "実体同士の関連を設計時に表す図は？",
+        "options": ["パレート図", "管理図だけ", "ガントチャート", "ER図"],
+        "answer": 3,
+        "explanation": "ER図は実体と関連を表します。",
+        "id": "ip-database-review-2",
+        "lesson": "ip-database",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-sql-transactions": {
+    "lesson": [
+      {
+        "prompt": "グループ化した合計への条件に使う句は？",
+        "options": ["WHEREだけ", "HAVING", "FROMだけ", "ORDER BYだけ"],
+        "answer": 1,
+        "explanation": "WHEREは行の条件、HAVINGはグループの条件です。",
+        "id": "ip-sql-transactions-q-1",
+        "lesson": "ip-sql-transactions",
+        "field": "technology"
+      },
+      {
+        "prompt": "振替の片側だけを残さない性質は？",
+        "options": ["表示解像度", "広告到達率", "圧縮率", "原子性"],
+        "answer": 3,
+        "explanation": "トランザクション全体を成功か取消しかで扱います。",
+        "id": "ip-sql-transactions-q-2",
+        "lesson": "ip-sql-transactions",
+        "field": "technology"
+      },
+      {
+        "prompt": "更新を確定する操作は？",
+        "options": ["SELECTだけ", "NOT", "ROLLBACK", "COMMIT"],
+        "answer": 3,
+        "explanation": "COMMITが確定、ROLLBACKが取消しです。",
+        "id": "ip-sql-transactions-q-3",
+        "lesson": "ip-sql-transactions",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "値がNULLかを調べる条件として適切なのは？",
+        "options": ["必ず = 0", "必ず = 空文字", "COUNTだけ", "IS NULL"],
+        "answer": 3,
+        "explanation": "NULLを数値0や空文字と同一視しません。",
+        "id": "ip-sql-transactions-review-1",
+        "lesson": "ip-sql-transactions",
+        "field": "technology"
+      },
+      {
+        "prompt": "AがBの資源を待ち、BがAの資源を待つ状態は？",
+        "options": ["主キー", "標準化", "デッドロック", "負荷分散"],
+        "answer": 2,
+        "explanation": "相互待ち等によって進行できなくなる状態です。",
+        "id": "ip-sql-transactions-review-2",
+        "lesson": "ip-sql-transactions",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-network": {
+    "lesson": [
+      {
+        "prompt": "10MBを10Mbpsで送る理想時間は？ M=10の6乗、付加情報なし。",
+        "options": ["1秒", "8秒", "10秒", "80秒"],
+        "answer": 1,
+        "explanation": "バイトをビットへ直し10×8÷10=8秒です。",
+        "id": "ip-network-q-1",
+        "lesson": "ip-network",
+        "field": "technology"
+      },
+      {
+        "prompt": "異なるネットワーク間で転送する装置は？",
+        "options": ["プリンタ", "スキャナ", "キーボード", "ルータ"],
+        "answer": 3,
+        "explanation": "ルータがネットワーク間の経路に従って転送します。",
+        "id": "ip-network-q-2",
+        "lesson": "ip-network",
+        "field": "technology"
+      },
+      {
+        "prompt": "同じSSIDの接続先について正しいのは？",
+        "options": ["暗号は不要", "接続先確認は禁止", "名前だけで正規と断定できない", "必ず同一の安全な機器"],
+        "answer": 2,
+        "explanation": "偽アクセスポイント等が同名を使う場合もあります。",
+        "id": "ip-network-q-3",
+        "lesson": "ip-network",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "上記10MBを実効8Mbpsで送ると？",
+        "options": ["8秒", "10秒", "80秒", "1.25秒"],
+        "answer": 1,
+        "explanation": "80Mビット÷8Mbps=10秒です。",
+        "id": "ip-network-review-1",
+        "lesson": "ip-network",
+        "field": "technology"
+      },
+      {
+        "prompt": "LANを論理的に分ける仕組みは？",
+        "options": ["MRP", "PPM", "VLAN", "OCR"],
+        "answer": 2,
+        "explanation": "物理配線だけに依存せず論理的に分離します。",
+        "id": "ip-network-review-2",
+        "lesson": "ip-network",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-protocols": {
+    "lesson": [
+      {
+        "prompt": "ドメイン名からIPアドレス等を調べる仕組みは？",
+        "options": ["CAD", "DHCP", "DNS", "SMTP"],
+        "answer": 2,
+        "explanation": "DNSは名前解決に関係し、DHCPは設定の配布です。",
+        "id": "ip-protocols-q-1",
+        "lesson": "ip-protocols",
+        "field": "technology"
+      },
+      {
+        "prompt": "IPv6アドレスの長さは？",
+        "options": ["8ビット", "32ビット", "64ビット", "128ビット"],
+        "answer": 3,
+        "explanation": "IPv6は128ビット、IPv4は32ビットです。",
+        "id": "ip-protocols-q-2",
+        "lesson": "ip-protocols",
+        "field": "technology"
+      },
+      {
+        "prompt": "HTTPSについて適切な理解は？",
+        "options": [
+          "通信保護とサイト内容の信頼性は区別する",
+          "パスワードの使い回しが安全になる",
+          "マルウェアが存在できない",
+          "接続先が必ず善良な事業者"
+        ],
+        "answer": 0,
+        "explanation": "通信の保護は詐欺サイト等の不存在を保証しません。",
+        "id": "ip-protocols-q-3",
+        "lesson": "ip-protocols",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "IPアドレス等の設定を自動配布する仕組みは？",
+        "options": ["DHCP", "DNS", "HTML", "JPEG"],
+        "answer": 0,
+        "explanation": "端末へネットワーク設定を配布します。",
+        "id": "ip-protocols-review-1",
+        "lesson": "ip-protocols",
+        "field": "technology"
+      },
+      {
+        "prompt": "メール転送に関係するプロトコルは？",
+        "options": ["HTTPだけ", "CSS", "USB", "SMTP"],
+        "answer": 3,
+        "explanation": "受信・参照のPOPやIMAPと区別します。",
+        "id": "ip-protocols-review-2",
+        "lesson": "ip-protocols",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-security-risk": {
+    "lesson": [
+      {
+        "prompt": "許可なく試験の点数を書き換える行為で主に損なわれるのは？",
+        "options": ["完全性", "機密性だけ", "画素数", "互換性だけ"],
+        "answer": 0,
+        "explanation": "正確さや改ざん防止に関係する完全性です。",
+        "id": "ip-security-risk-q-1",
+        "lesson": "ip-security-risk",
+        "field": "technology"
+      },
+      {
+        "prompt": "脅威と脆弱性の区別として適切なのは？",
+        "options": [
+          "両方とも利益",
+          "脆弱性は必ず攻撃者の名前",
+          "脅威は主キー",
+          "脅威は危険要因、脆弱性は弱点"
+        ],
+        "answer": 3,
+        "explanation": "両者と資産への影響を結び付けてリスクを評価します。",
+        "id": "ip-security-risk-q-2",
+        "lesson": "ip-security-risk",
+        "field": "technology"
+      },
+      {
+        "prompt": "誤送信に気付いた場合の適切な最初の行動は？",
+        "options": [
+          "誰にも知らせない",
+          "SNSへ顧客データを公開する",
+          "証拠を全て削除する",
+          "定めた窓口へ速やかに報告する"
+        ],
+        "answer": 3,
+        "explanation": "組織の対応手順に沿い、拡大防止と調査等を進めます。",
+        "id": "ip-security-risk-q-3",
+        "lesson": "ip-security-risk",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "必要時に予約サービスが使えない。主に損なわれた性質は？",
+        "options": ["色再現性", "移植性だけ", "市場成長率", "可用性"],
+        "answer": 3,
+        "explanation": "サービスを必要なときに利用できる性質です。",
+        "id": "ip-security-risk-review-1",
+        "lesson": "ip-security-risk",
+        "field": "technology"
+      },
+      {
+        "prompt": "ISMSの説明として適切なのは？",
+        "options": [
+          "無事故の保証書",
+          "暗号鍵そのもの",
+          "継続的にセキュリティを管理・改善する仕組み",
+          "一つのウイルス対策ソフトの名称"
+        ],
+        "answer": 2,
+        "explanation": "技術だけでなく組織の管理も含みます。",
+        "id": "ip-security-risk-review-2",
+        "lesson": "ip-security-risk",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-security-controls": {
+    "lesson": [
+      {
+        "prompt": "パスワードと暗証番号の組合せについて適切なのは？",
+        "options": [
+          "必ず最強の多要素認証",
+          "異なる二要素とは限らない",
+          "必ず生体認証になる",
+          "所持要素だけである"
+        ],
+        "answer": 1,
+        "explanation": "両方とも知識要素です。種類の異なる要素を組み合わせます。",
+        "id": "ip-security-controls-q-1",
+        "lesson": "ip-security-controls",
+        "field": "technology"
+      },
+      {
+        "prompt": "SQLインジェクション対策として適切なのは？",
+        "options": [
+          "入力をSQLへ無条件で連結",
+          "パラメータ化したSQL処理を使う",
+          "ログをなくす",
+          "認証を廃止する"
+        ],
+        "answer": 1,
+        "explanation": "SQLの構造と入力値を分けて扱います。",
+        "id": "ip-security-controls-q-2",
+        "lesson": "ip-security-controls",
+        "field": "technology"
+      },
+      {
+        "prompt": "多層防御について適切なのは？",
+        "options": [
+          "予防・検知・復旧等を重ねる",
+          "バックアップを不要とする",
+          "権限を全員に拡大する",
+          "一製品だけで全攻撃を防ぐと断定する"
+        ],
+        "answer": 0,
+        "explanation": "異なる対策を組み合わせ、単一対策の限界を補います。",
+        "id": "ip-security-controls-q-3",
+        "lesson": "ip-security-controls",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "主にWebアプリへの攻撃を対象とする防御は？",
+        "options": ["WAF", "CAD", "MRP", "OCR"],
+        "answer": 0,
+        "explanation": "通信制御のファイアウォール等と目的の違いを整理します。",
+        "id": "ip-security-controls-review-1",
+        "lesson": "ip-security-controls",
+        "field": "technology"
+      },
+      {
+        "prompt": "退職者のアカウントを残すことへの対応は？",
+        "options": ["全員へ共有する", "パスワードを公開する", "ログを削除する", "適切に停止し権限を見直す"],
+        "answer": 3,
+        "explanation": "アカウントのライフサイクル管理と最小権限が必要です。",
+        "id": "ip-security-controls-review-2",
+        "lesson": "ip-security-controls",
+        "field": "technology"
+      }
+    ]
+  },
+  "ip-cryptography": {
+    "lesson": [
+      {
+        "prompt": "受信者だけが読めるよう公開鍵暗号で送る。暗号化に使うのは？",
+        "options": ["誰でもよい秘密鍵", "送信者のIDだけ", "送信者の秘密鍵", "受信者の公開鍵"],
+        "answer": 3,
+        "explanation": "受信者の公開鍵で暗号化し、受信者の秘密鍵で復号します。",
+        "id": "ip-cryptography-q-1",
+        "lesson": "ip-cryptography",
+        "field": "technology"
+      },
+      {
+        "prompt": "電子署名の検証に使うのは？",
+        "options": ["文書のファイル名", "署名者に対応する公開鍵", "受信者のパスワード", "全員共通の暗証番号"],
+        "answer": 1,
+        "explanation": "署名者の秘密鍵による署名を対応する公開鍵で検証します。",
+        "id": "ip-cryptography-q-2",
+        "lesson": "ip-cryptography",
+        "field": "technology"
+      },
+      {
+        "prompt": "ハッシュについて適切なのは？",
+        "options": [
+          "原文へ復号するための暗号と同じ",
+          "改ざん検出等へ利用できる",
+          "必ず情報を小さくして完全復元する",
+          "鍵の管理を全て不要にする"
+        ],
+        "answer": 1,
+        "explanation": "原文を復元する用途ではなく、入力の変化の検出等に使います。",
+        "id": "ip-cryptography-q-3",
+        "lesson": "ip-cryptography",
+        "field": "technology"
+      }
+    ],
+    "review": [
+      {
+        "prompt": "公開鍵と主体の対応を示す証明書を発行するのは？",
+        "options": ["表計算ソフトだけ", "認証局", "ルータだけ", "WBS"],
+        "answer": 1,
+        "explanation": "認証局はPKIの構成要素です。",
+        "id": "ip-cryptography-review-1",
+        "lesson": "ip-cryptography",
+        "field": "technology"
+      },
+      {
+        "prompt": "秘密鍵の取扱いとして適切なのは？",
+        "options": [
+          "厳重に管理し漏えい時の対応を定める",
+          "署名時にSNSへ公開する",
+          "全利用者へ配る",
+          "バックアップには必ず平文公開する"
+        ],
+        "answer": 0,
+        "explanation": "方式の強さに加え鍵の管理が必要です。",
+        "id": "ip-cryptography-review-2",
+        "lesson": "ip-cryptography",
+        "field": "technology"
+      }
+    ]
+  }
+}

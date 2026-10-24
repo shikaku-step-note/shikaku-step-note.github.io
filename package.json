@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node --import tsx scripts/export-ip-curriculum.mjs && astro build",
     "preview": "astro preview",
     "check": "astro check",
     "verify": "node scripts/verify.mjs",
-    "test:storage": "node --import tsx --test tests/storage.test.ts"
+    "test:storage": "node --import tsx --test tests/storage.test.ts tests/assessment.test.ts",
+    "curriculum": "node --import tsx scripts/export-ip-curriculum.mjs"
   },
   "packageManager": "pnpm@11.25.0",
   "engines": {
@@ -28,6 +29,7 @@
     "prettier-plugin-astro": "^1.1.2",
     "sharp": "^0.35.5",
     "tsx": "4.23.15",
-    "typescript": "^6.0.0"
+    "typescript": "^6.0.0",
+    "yaml": "2.9.1"
   }
 }

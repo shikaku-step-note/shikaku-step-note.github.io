@@ -64,5 +64,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `Verified ${htmlFiles.length} HTML pages, ${listed.length} sitemap URLs, ${internalLinks} local references, JSON-LD, unique titles and ${lessons.length} sample lessons.`,
+  `Verified ${htmlFiles.length} HTML pages, ${listed.length} sitemap URLs, ${internalLinks} local references, JSON-LD, unique titles, ${lessons.filter((l) => !l.sample).length} published lessons and ${lessons.filter((l) => l.sample).length} noindex samples.`,
 );

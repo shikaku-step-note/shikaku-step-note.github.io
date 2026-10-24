@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import { href } from '../lib/site';
+import { availabilityText } from '../data/qualifications';
 export async function getStaticPaths() {
   return (await getCollection('pages')).map((page) => ({ params: { info: page.id }, props: { page } }));
 }
@@ -23,6 +24,13 @@ const pages = await getCollection('pages');
     <div class="info-layout">
       <article class="prose">
         <Content />
+        {['about', 'faq', 'editorial', 'guide'].includes(page.id) && (
+          <aside class="notice compact">
+            <h2>現在の公開コース</h2>
+            <p>{availabilityText}。</p>
+            <a href={href('qualifications/')}>各コースの範囲と学習ステップを見る</a>
+          </aside>
+        )}
       </article>
       <nav class="info-nav" aria-label="サイトのご案内">
         <h2>サイトのご案内</h2>

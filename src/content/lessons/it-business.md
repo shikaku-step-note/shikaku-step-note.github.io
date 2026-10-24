@@ -6,6 +6,7 @@ description: 小さなカフェの例で、ITが業務を支える役割と、�
 order: 1
 minutes: 6
 sample: true
+archived: true
 updated: '2026-10-24'
 keywords: [経営, ストラテジ, IT, データ]
 question: カフェの売れ残りを減らすために、最初に行うこととして適切なのは？

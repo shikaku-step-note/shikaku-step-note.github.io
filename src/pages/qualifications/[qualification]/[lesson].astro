@@ -3,6 +3,8 @@ import { getCollection, render } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
 import Share from '../../../components/Share.astro';
+import Assessment from '../../../components/Assessment.astro';
+import { ipAssessments, ipSource, units } from '../../../data/it-passport';
 import { qualificationById } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -14,20 +16,38 @@ export async function getStaticPaths() {
 const { lesson } = Astro.props;
 const d = lesson.data;
 const q = qualificationById(d.qualification);
-const siblings = (await getCollection('lessons', (l) => l.data.qualification === q.id)).sort(
-  (a, b) => a.data.order - b.data.order,
-);
+const allLessons = await getCollection('lessons');
+const siblings = allLessons
+  .filter((l) => l.data.qualification === q.id && (d.archived ? l.data.archived : !l.data.archived))
+  .sort((a, b) => a.data.order - b.data.order);
 const index = siblings.findIndex((l) => l.data.stableId === d.stableId);
 const prev = siblings[index - 1];
 const next = siblings[index + 1];
 const { Content, headings } = await render(lesson);
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const assessment = d.unit ? ipAssessments(allLessons).find((a) => a.id === `${d.stableId}-check`) : undefined;
+const unit = units.find((u) => u.id === d.unit);
 ---
 
 <Layout
   title={`${d.title}｜${q.name}`}
   description={d.description}
   noindex={d.sample}
+  schema={
+    !d.sample
+      ? {
+          '@type': 'LearningResource',
+          name: d.title,
+          description: d.description,
+          inLanguage: 'ja',
+          isAccessibleForFree: true,
+          learningResourceType: 'レッスン',
+          teaches: d.objectives,
+          dateModified: d.updated,
+          url: canonical,
+        }
+      : undefined
+  }
   breadcrumbs={[
     { name: '資格一覧', path: 'qualifications/' },
     { name: q.name, path: `qualifications/${q.id}/` },
@@ -51,7 +71,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
         </div>
         <h1>{d.title}</h1>
         <p class="lead">{d.description}</p>
-        <p class="sample-caption">入門サンプル教材・独自の解説と練習問題</p>
+        <p class="sample-caption">
+          {d.archived
+            ? '旧サンプル教材（記録を保管）'
+            : d.sample
+              ? '入門サンプル教材・独自の解説と練習問題'
+              : `シラバスVer.6.5・ユニット${d.unit} ${unit?.name}・独自教材`}
+        </p>
         <div class="lesson-toolbar">
           <button class="button secondary" data-start={d.stableId} type="button">
             学習を始める
@@ -65,12 +91,34 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
           </span>
         </div>
       </header>
-      <div class="notice compact">
-        <p>
-          この教材は学習機能を体験するためのサンプルです。試験範囲を網羅していません。
-          {q.id === 'fp-3' ? '個別の投資・税務・保険の助言を目的としません。' : ''}
-        </p>
-      </div>
+      {d.sample && (
+        <div class="notice compact">
+          <p>
+            この教材は学習機能を体験するためのサンプルです。試験範囲を網羅していません。
+            {q.id === 'fp-3' ? '個別の投資・税務・保険の助言を目的としません。' : ''}
+          </p>
+          {d.archived && (
+            <p>
+              現行コースは新しいレッスンとして公開しました。この記録は新コースの完了数へ加算されません。
+              <a href={href('qualifications/it-passport/')}>現行コースへ</a>
+            </p>
+          )}
+        </div>
+      )}
+      {d.objectives.length > 0 && (
+        <section class="lesson-objectives">
+          <h2>このレッスンの目標</h2>
+          <ul>
+            {d.objectives.map((o) => (
+              <li>{o}</li>
+            ))}
+          </ul>
+          <p class="muted">前提：{d.prerequisite}</p>
+          <p class="muted">
+            公式シラバス対応項目：{d.syllabus.join('、')}。表示時間は当サイトの学習目安です。
+          </p>
+        </section>
+      )}
       <nav class="toc mobile-toc" aria-label="このレッスンの目次">
         <h2>このレッスンの目次</h2>
         <ol>
@@ -89,29 +137,59 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       <div class="prose lesson-content">
         <Content />
       </div>
-      <section class="quiz" id="practice" data-quiz={d.stableId} data-answer={d.answer}>
-        <p class="eyebrow">理解をたしかめる</p>
-        <h2>練習問題</h2>
-        <form>
-          <fieldset>
-            <legend>{d.question}</legend>
-            {d.options.map((o, i) => (
-              <label class="quiz-option">
-                <input type="radio" name="answer" value={i} required />
-                <span>{o}</span>
-              </label>
+      {d.glossary.length > 0 && (
+        <section class="prose lesson-glossary">
+          <h2>このレッスンの用語</h2>
+          <dl>
+            {d.glossary.map((g) => (
+              <>
+                <dt>
+                  <strong>{g.term}</strong>
+                </dt>
+                <dd>{g.definition}</dd>
+              </>
             ))}
-          </fieldset>
-          <button class="button primary" type="submit">
-            答えを確認する
-          </button>
-          <div class="quiz-feedback" role="status" tabindex="-1" hidden>
-            <strong data-quiz-result></strong>
-            <p>{d.explanation}</p>
-            <p class="muted">何度でも解き直せます。学習済みへの変更は、下のボタンで行えます。</p>
-          </div>
-        </form>
-      </section>
+          </dl>
+          <p>
+            <a href={href(`qualifications/it-passport/tests/ip-unit-${d.unit}-glossary/`)}>
+              このユニットの用語テストへ
+            </a>
+            ・
+            <a href={href(`qualifications/it-passport/tests/ip-unit-${d.unit}-review/`)}>
+              ユニット総合確認へ
+            </a>
+          </p>
+        </section>
+      )}
+      {assessment ? (
+        <div id="practice">
+          <Assessment assessment={assessment} />
+        </div>
+      ) : (
+        <section class="quiz" id="practice" data-quiz={d.stableId} data-answer={d.answer}>
+          <p class="eyebrow">理解をたしかめる</p>
+          <h2>練習問題</h2>
+          <form>
+            <fieldset>
+              <legend>{d.question}</legend>
+              {d.options!.map((o, i) => (
+                <label class="quiz-option">
+                  <input type="radio" name="answer" value={i} required />
+                  <span>{o}</span>
+                </label>
+              ))}
+            </fieldset>
+            <button class="button primary" type="submit">
+              答えを確認する
+            </button>
+            <div class="quiz-feedback" role="status" tabindex="-1" hidden>
+              <strong data-quiz-result></strong>
+              <p>{d.explanation}</p>
+              <p class="muted">何度でも解き直せます。学習済みへの変更は、下のボタンで行えます。</p>
+            </div>
+          </form>
+        </section>
+      )}
       <section class="lesson-complete">
         <div>
           <h2>ここまで、おつかれさまでした。</h2>
@@ -151,16 +229,26 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       <section class="source-note">
         <h2>出典・教材について</h2>
         <p>
-          文章・例題は当サイトが作成した入門用サンプルです。公式問題の転載ではありません。資格概要の参照先：
+          文章・例題・図表は当サイトが作成した{d.sample ? '入門用サンプル' : '独自教材'}
+          です。公式問題の転載ではありません。資格概要の参照先：
           <a href={q.official} target="_blank" rel="noopener noreferrer">
             {q.officialName}（新しいタブ）
           </a>
           。
         </p>
         <p>
-          教材更新日：<time datetime={d.updated}>2026年10月24日</time>。
-          <a href={href('editorial/')}>編集方針</a>・<a href={href('contact/')}>訂正の連絡方法</a>
+          教材更新日：<time datetime={d.updated}>{d.updated}</time>。<a href={href('editorial/')}>編集方針</a>
+          ・<a href={href('contact/')}>訂正の連絡方法</a>
         </p>
+        {d.unit && (
+          <p>
+            範囲確認：<a href={ipSource('syllabus').url}>IPA シラバスVer.6.5</a>（確認日{' '}
+            {ipSource('syllabus').verified}
+            ）。全用語例の暗記や出題の予測を保証する教材ではありません。
+            <a href={href('qualifications/it-passport/coverage/')}>対応表と出典一覧</a>
+            で範囲と制約を確認できます。
+          </p>
+        )}
       </section>
       <Share title={`${d.title}｜${q.name}`} url={canonical} />
     </article>

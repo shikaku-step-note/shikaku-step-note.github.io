@@ -1,12 +1,12 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import QualificationCard from '../../components/QualificationCard.astro';
-import { qualifications } from '../../data/qualifications';
+import { qualifications, availabilityText } from '../../data/qualifications';
 ---
 
 <Layout
   title="資格一覧・学習コース"
-  description="IT・会計・暮らしのお金から、興味のある資格を見つける。ITパスポート、日商簿記3級、FP3級の学習ステップと入門サンプルを紹介します。"
+  description={`公開中の学習コース：${availabilityText}。分野と公開範囲を比べて、無料・登録不要で学び始められます。`}
   breadcrumbs={[{ name: '資格一覧', path: 'qualifications/' }]}
 >
   <section class="container page-section">
@@ -23,14 +23,14 @@ import { qualifications } from '../../data/qualifications';
       <button class="filter active" type="button" data-filter="all" aria-pressed="true">
         すべて
       </button>
-      {qualifications.map((q) => (
-        <button class="filter" type="button" data-filter={q.category} aria-pressed="false">
-          {q.category}
+      {[...new Set(qualifications.map((q) => q.category))].map((category) => (
+        <button class="filter" type="button" data-filter={category} aria-pressed="false">
+          {category}
         </button>
       ))}
     </div>
     <p class="sr-only" data-filter-count role="status">
-      3件の資格
+      {qualifications.length}件の資格
     </p>
     <div class="qualification-grid">
       {qualifications.map((q) => (
@@ -42,7 +42,8 @@ import { qualifications } from '../../data/qualifications';
     <aside class="notice">
       <strong>公開内容について</strong>
       <p>
-        各資格は3つの入門レッスンを備えたサンプルです。受験日・費用・最新の出題範囲などは、各コースに掲載した公式サイトでご確認ください。学習時間の表示は目安です。
+        {availabilityText}
+        を公開しています。受験日・費用・最新の出題範囲などは、各コースに掲載した公式サイトでご確認ください。学習時間の表示は当サイトの目安です。
       </p>
     </aside>
   </section>

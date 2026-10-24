@@ -3,20 +3,21 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
 import Share from '../../../components/Share.astro';
+import IpCourse from '../../../components/IpCourse.astro';
 import { qualifications } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export function getStaticPaths() {
   return qualifications.map((q) => ({ params: { qualification: q.id }, props: { q } }));
 }
 const { q } = Astro.props;
-const lessons = (await getCollection('lessons', (l) => l.data.qualification === q.id)).sort(
-  (a, b) => a.data.order - b.data.order,
-);
+const lessons = (
+  await getCollection('lessons', (l) => l.data.qualification === q.id && !l.data.archived)
+).sort((a, b) => a.data.order - b.data.order);
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <Layout
-  title={`${q.name}の無料入門・学習ステップ`}
+  title={`${q.name}の無料${q.status === 'course' ? '基礎コース・用語テスト・模試' : '入門・学習ステップ'}`}
   description={q.description}
   breadcrumbs={[
     { name: '資格一覧', path: 'qualifications/' },
@@ -46,98 +47,102 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       </div>
     </div>
   </section>
-  <div class="container course-grid page-section">
-    <div>
-      <section class="course-section">
-        <h2>このコースで学べること</h2>
-        <p>{q.outcome}</p>
-        <p>{q.scope}</p>
-        <div class="notice compact">
-          <strong>入門サンプル</strong>
-          <p>
-            試験範囲の一部を、独自の例と練習問題で紹介しています。公式教材・過去問題ではありません。合格や得点を保証するものではありません。
-          </p>
-        </div>
-      </section>
-      <section class="course-section" id="steps">
-        <div class="section-heading">
-          <h2>学習ステップ</h2>
-          <span class="tag" data-course-progress={q.id}>
-            未学習
-          </span>
-        </div>
-        <p>上から順番に読むのがおすすめです。星をつけると、マイ学習から振り返れます。</p>
-        <ol class="lesson-list">
-          {lessons.map((l, i) => (
-            <li class="lesson-row" data-lesson-row={l.data.stableId}>
-              <span class="lesson-number">{String(i + 1).padStart(2, '0')}</span>
-              <div class="lesson-row-body">
-                <span class="muted">{q.groups[i]}</span>
-                <h3>
-                  <a href={href(`qualifications/${q.id}/${l.data.stableId}/`)}>{l.data.title}</a>
-                </h3>
-                <div class="lesson-meta">
-                  <span>
-                    <Icon name="clock" size={14} />
-                    {l.data.minutes}分の目安
-                  </span>
-                  <span data-status-label={l.data.stableId}>未学習</span>
+  {q.status === 'course' ? (
+    <IpCourse lessons={lessons} />
+  ) : (
+    <div class="container course-grid page-section">
+      <div>
+        <section class="course-section">
+          <h2>このコースで学べること</h2>
+          <p>{q.outcome}</p>
+          <p>{q.scope}</p>
+          <div class="notice compact">
+            <strong>入門サンプル</strong>
+            <p>
+              試験範囲の一部を、独自の例と練習問題で紹介しています。公式教材・過去問題ではありません。合格や得点を保証するものではありません。
+            </p>
+          </div>
+        </section>
+        <section class="course-section" id="steps">
+          <div class="section-heading">
+            <h2>学習ステップ</h2>
+            <span class="tag" data-course-progress={q.id}>
+              未学習
+            </span>
+          </div>
+          <p>上から順番に読むのがおすすめです。星をつけると、マイ学習から振り返れます。</p>
+          <ol class="lesson-list">
+            {lessons.map((l, i) => (
+              <li class="lesson-row" data-lesson-row={l.data.stableId}>
+                <span class="lesson-number">{String(i + 1).padStart(2, '0')}</span>
+                <div class="lesson-row-body">
+                  <span class="muted">{q.groups[i]}</span>
+                  <h3>
+                    <a href={href(`qualifications/${q.id}/${l.data.stableId}/`)}>{l.data.title}</a>
+                  </h3>
+                  <div class="lesson-meta">
+                    <span>
+                      <Icon name="clock" size={14} />
+                      {l.data.minutes}分の目安
+                    </span>
+                    <span data-status-label={l.data.stableId}>未学習</span>
+                  </div>
                 </div>
-              </div>
-              <button
-                class="star-button"
-                data-bookmark={l.data.stableId}
-                aria-pressed="false"
-                aria-label={`${l.data.title}をブックマーク`}
-                type="button"
-              >
-                <Icon name="star" size={21} />
-              </button>
-              <a
-                class="lesson-open"
-                href={href(`qualifications/${q.id}/${l.data.stableId}/`)}
-                aria-label={`${l.data.title}を読む`}
-              >
-                <Icon name="chevron" size={19} />
-              </a>
-            </li>
-          ))}
-        </ol>
-      </section>
-      <section class="course-section">
-        <h2>始める前に</h2>
-        <p>{q.prerequisite}</p>
-        <h2>次の学習につなげる</h2>
-        <p>
-          3レッスンを終えたら、練習問題の解説を読み直してみましょう。公式の出題範囲を確認し、このサンプルで扱っていない分野も学ぶ計画を立ててください。
-        </p>
-      </section>
-      <Share title={q.name} url={canonical} />
+                <button
+                  class="star-button"
+                  data-bookmark={l.data.stableId}
+                  aria-pressed="false"
+                  aria-label={`${l.data.title}をブックマーク`}
+                  type="button"
+                >
+                  <Icon name="star" size={21} />
+                </button>
+                <a
+                  class="lesson-open"
+                  href={href(`qualifications/${q.id}/${l.data.stableId}/`)}
+                  aria-label={`${l.data.title}を読む`}
+                >
+                  <Icon name="chevron" size={19} />
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
+        <section class="course-section">
+          <h2>始める前に</h2>
+          <p>{q.prerequisite}</p>
+          <h2>次の学習につなげる</h2>
+          <p>
+            3レッスンを終えたら、練習問題の解説を読み直してみましょう。公式の出題範囲を確認し、このサンプルで扱っていない分野も学ぶ計画を立ててください。
+          </p>
+        </section>
+        <Share title={q.name} url={canonical} />
+      </div>
+      <aside class="course-sidebar">
+        <div class="sidebar-box">
+          <h2>こんな方におすすめ</h2>
+          <ul class="check-list">
+            {q.audience.map((a) => (
+              <li>
+                <Icon name="check" size={17} />
+                {a}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="sidebar-box">
+          <h2>公式情報・出典</h2>
+          <p>受験に関する最新情報は主催者の案内をご確認ください。</p>
+          <a href={q.official} target="_blank" rel="noopener noreferrer">
+            {q.officialName}
+            <span class="sr-only">（新しいタブ）</span> ↗
+          </a>
+          <p class="muted">
+            概要の参照先確認：<time datetime={q.reviewed}>2026年10月24日</time>
+          </p>
+          <a href={href('editorial/')}>教材の編集方針</a>
+        </div>
+      </aside>
     </div>
-    <aside class="course-sidebar">
-      <div class="sidebar-box">
-        <h2>こんな方におすすめ</h2>
-        <ul class="check-list">
-          {q.audience.map((a) => (
-            <li>
-              <Icon name="check" size={17} />
-              {a}
-            </li>
-          ))}
-        </ul>
-      </div>
-      <div class="sidebar-box">
-        <h2>公式情報・出典</h2>
-        <p>受験に関する最新情報は主催者の案内をご確認ください。</p>
-        <a href={q.official} target="_blank" rel="noopener noreferrer">
-          {q.officialName}
-          <span class="sr-only">（新しいタブ）</span> ↗
-        </a>
-        <p class="muted">
-          概要の参照先確認：<time datetime={q.reviewed}>2026年10月24日</time>
-        </p>
-        <a href={href('editorial/')}>教材の編集方針</a>
-      </div>
-    </aside>
-  </div>
+  )}
 </Layout>

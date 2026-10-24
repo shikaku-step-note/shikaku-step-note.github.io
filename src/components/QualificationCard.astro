@@ -7,7 +7,8 @@ interface Props {
   q: Qualification;
 }
 const { q } = Astro.props;
-const count = (await getCollection('lessons', (l) => l.data.qualification === q.id)).length;
+const count = (await getCollection('lessons', (l) => l.data.qualification === q.id && !l.data.archived))
+  .length;
 ---
 
 <article class={`qualification-card ${q.color}`}>
@@ -23,7 +24,9 @@ const count = (await getCollection('lessons', (l) => l.data.qualification === q.
   <p class="card-intro">{q.intro}</p>
   <p>{q.description}</p>
   <div class="card-meta">
-    <span>入門サンプル・{count}レッスン</span>
+    <span>
+      {q.status === 'course' ? '基礎コース' : '入門サンプル'}・{count}レッスン
+    </span>
     <span data-course-progress={q.id}>未学習</span>
   </div>
   <a class="card-link" href={href(`qualifications/${q.id}/`)}>

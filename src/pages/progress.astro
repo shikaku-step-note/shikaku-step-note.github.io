@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import { qualifications } from '../data/qualifications';
 import { href } from '../lib/site';
+import { getCollection } from 'astro:content';
+const lessons = await getCollection('lessons', (l) => !l.data.archived);
 ---
 
 <Layout
@@ -59,12 +61,22 @@ import { href } from '../lib/site';
                 <h3>
                   <a href={href(`qualifications/${q.id}/`)}>{q.name}</a>
                 </h3>
-                <span data-course-progress={q.id}>0 / 3 レッスン</span>
+                <span data-course-progress={q.id}>
+                  0 / {lessons.filter((l) => l.data.qualification === q.id).length} レッスン
+                </span>
               </div>
-              <progress data-course-bar={q.id} max="3" value="0" aria-label={`${q.name}の学習済みレッスン数`}>
-                0 / 3
+              <progress
+                data-course-bar={q.id}
+                max={lessons.filter((l) => l.data.qualification === q.id).length}
+                value="0"
+                aria-label={`${q.name}の学習済みレッスン数`}
+              >
+                0 / {lessons.filter((l) => l.data.qualification === q.id).length}
               </progress>
-              <p class="muted">入門サンプルの進み具合です。試験範囲の習得率ではありません。</p>
+              <p class="muted">
+                {q.status === 'course' ? '公開中の基礎コース' : '入門サンプル'}
+                の完了数です。試験範囲の習得率や合格可能性ではありません。
+              </p>
             </article>
           ))}
         </div>
@@ -81,6 +93,12 @@ import { href } from '../lib/site';
         </div>
       </section>
     </div>
+    <section class="history-section">
+      <h2>理解度チェック・用語・復習・模試の記録</h2>
+      <div data-assessment-history>
+        <p class="muted">テストの結果を読み込んでいます…</p>
+      </div>
+    </section>
     <section class="history-section">
       <h2>学習の記録</h2>
       <div data-history-list>
@@ -101,7 +119,7 @@ import { href } from '../lib/site';
           バックアップを書き出す
         </button>
         <label class="file-label" for="import-file">
-          バックアップファイルを選ぶ（JSON・最大2MB）
+          バックアップファイルを選ぶ（JSON・最大20MB）
         </label>
         <input type="file" id="import-file" accept=".json,application/json" />
         <p id="import-info" role="status"></p>
@@ -117,7 +135,7 @@ import { href } from '../lib/site';
           </label>
         </fieldset>
         <p class="muted">
-          統合ではレッスンごとに更新日時が新しい記録を優先します。バックアップには学習状態と練習結果が含まれます。
+          統合ではレッスンとテストの各回ごとに更新日時が新しい記録を優先します。バックアップには途中の解答・期限・得点も含まれます。各テストは直近100回まで保持します。
         </p>
         <button class="button secondary" id="import-progress" type="button" disabled>
           選んだ記録を読み込む

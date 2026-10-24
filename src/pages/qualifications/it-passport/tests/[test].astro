@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../../layouts/Layout.astro';
+import Assessment from '../../../../components/Assessment.astro';
+import Share from '../../../../components/Share.astro';
+import { ipAssessments, units } from '../../../../data/it-passport';
+import { href } from '../../../../lib/site';
+export async function getStaticPaths() {
+  return ipAssessments(await getCollection('lessons'))
+    .filter((a) => a.kind !== 'lesson')
+    .map((a) => ({ params: { test: a.id }, props: { assessment: a } }));
+}
+const { assessment: a } = Astro.props;
+const unit = units.find((u) => u.id === a.unit);
+---
+
+<Layout
+  title={a.title}
+  description={`${a.questions.length}問の独自問題でITパスポートを復習。解説とレッスンへのリンク付き。解答・得点・途中の状態をこのブラウザに保存します。`}
+  noindex
+  breadcrumbs={[
+    { name: 'ITパスポート', path: 'qualifications/it-passport/' },
+    { name: '用語・復習・模擬試験', path: 'qualifications/it-passport/tests/' },
+    { name: a.title, path: `qualifications/it-passport/tests/${a.id}/` },
+  ]}
+>
+  <article class="container assessment-page page-section">
+    <header class="page-heading">
+      <p class="eyebrow">現行シラバスVer.6.5・独自の練習問題</p>
+      <h1>{a.title}</h1>
+      <p>
+        {unit ? `ユニット${unit.id} ${unit.name}を振り返ります。` : '3分野の学習を振り返ります。'}
+        公式問題の転載ではありません。
+      </p>
+    </header>
+    <Assessment assessment={a} />
+    <nav class="lesson-pagination" aria-label="学習へ戻る">
+      <a href={href(`qualifications/it-passport/${unit ? '#steps' : '#exams'}`)}>コースの学習ステップへ</a>
+      <a href={href('qualifications/it-passport/tests/')}>テスト一覧へ</a>
+      <a href={href('progress/')}>マイ学習へ</a>
+    </nav>
+    <Share title={a.title} url={new URL(Astro.url.pathname, Astro.site).href} />
+  </article>
+</Layout>

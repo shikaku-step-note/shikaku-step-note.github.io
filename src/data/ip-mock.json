@@ -1,0 +1,1012 @@
+[
+  {
+    "field": "strategy",
+    "lesson": "ip-organization",
+    "prompt": "ある会社は営業と開発を製品群ごとにまとめ、製品ごとの損益責任を明確にした。この編成に最も近いものは？",
+    "options": ["組織を持たない形", "機能別組織", "事業部制組織", "すべてを外注する形"],
+    "answer": 2,
+    "explanation": "製品や地域などの事業単位へ機能と責任をまとめるのが事業部制です。",
+    "id": "ip-mock-01-q-1"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-organization",
+    "prompt": "店舗の待ち時間短縮について、改善手順を標準化して次の計画へ反映した。PDCAのどの段階か？",
+    "options": ["Do", "Check", "Act", "Plan"],
+    "answer": 2,
+    "explanation": "評価結果を受けて手順を改善し次へつなげるのがActです。",
+    "id": "ip-mock-01-q-2"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-organization",
+    "prompt": "停電時の受注継続を目的に、代替拠点・優先業務・連絡手順を定めた。中心となる計画は？",
+    "options": ["販売促進計画だけ", "人事評価表", "ソースコード一覧", "BCP"],
+    "answer": 3,
+    "explanation": "重要業務を中断時にも継続・復旧するための事業継続計画です。",
+    "id": "ip-mock-01-q-3"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-analysis",
+    "prompt": "不良件数は工程Aが60件、Bが25件、Cが15件だった。件数ベースで上位2工程の累積比率は？",
+    "options": ["75%", "85%", "100%", "60%"],
+    "answer": 1,
+    "explanation": "合計100件中60+25=85件なので85%です。",
+    "id": "ip-mock-01-q-4"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-analysis",
+    "prompt": "広告費と売上に正の相関があった。最も適切な次の対応は？",
+    "options": [
+      "広告費が売上の唯一の原因と断定",
+      "季節や対象顧客などの影響も検討",
+      "相関があるのでデータを捨てる",
+      "全期間で同じ効果と保証"
+    ],
+    "answer": 1,
+    "explanation": "第三の要因やデータ収集条件を確認し、相関と因果を区別します。",
+    "id": "ip-mock-01-q-5"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-finance",
+    "prompt": "単価2,000円、単位変動費1,200円、固定費240,000円。条件一定のとき損益分岐点販売量は？",
+    "options": ["200個", "300個", "400個", "120個"],
+    "answer": 1,
+    "explanation": "限界利益は800円、240,000÷800=300個です。",
+    "id": "ip-mock-01-q-6"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-finance",
+    "prompt": "月の売上80万円、変動費48万円、固定費20万円。利益はいくらか？",
+    "options": ["12万円", "20万円", "32万円", "60万円"],
+    "answer": 0,
+    "explanation": "80−48−20=12万円です。32万円は限界利益です。",
+    "id": "ip-mock-01-q-7"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-finance",
+    "prompt": "期末時点の資産が900万円、負債が350万円だった。純資産は？",
+    "options": ["900万円", "1,250万円", "350万円", "550万円"],
+    "answer": 3,
+    "explanation": "資産=負債+純資産なので900−350=550万円です。",
+    "id": "ip-mock-01-q-8"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-finance",
+    "prompt": "設備代金は購入時に支払ったが、費用は使用期間へ配分する。この処理は？",
+    "options": ["価格差別", "損益分岐点分析", "減価償却", "在庫の自動発注"],
+    "answer": 2,
+    "explanation": "減価償却では取得原価を使用期間に配分します。支出と費用の時期がずれます。",
+    "id": "ip-mock-01-q-9"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-rights",
+    "prompt": "新しく考案した商品の名称とマークを識別表示として保護したい。中心となる制度は？",
+    "options": ["情報圧縮", "商標", "主キー", "特性要因図"],
+    "answer": 1,
+    "explanation": "商品・サービスを識別する標識は商標の対象です。",
+    "id": "ip-mock-01-q-10"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-rights",
+    "prompt": "画像サイトに「無料」と書かれていた。教材へ組み込む前の対応として適切なのは？",
+    "options": [
+      "無料なら無条件で再配布",
+      "利用・改変・再配布の条件と表示義務を確認",
+      "小さくすれば条件は不要",
+      "出典だけ書けば必ず自由"
+    ],
+    "answer": 1,
+    "explanation": "無料という価格表示と利用許諾の範囲は別です。",
+    "id": "ip-mock-01-q-11"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-law-ethics",
+    "prompt": "請負先の作業者へ発注企業が日々直接指示している。確認すべき論点は？",
+    "options": [
+      "画面の解像度だけ",
+      "IPアドレスの長さだけ",
+      "商品名の商標だけ",
+      "契約名ではなく指揮命令等の実態"
+    ],
+    "answer": 3,
+    "explanation": "請負と派遣は実態も踏まえて区別し、偽装請負等の問題を確認します。",
+    "id": "ip-mock-01-q-12"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-law-ethics",
+    "prompt": "民間企業が顧客データを新目的で別会社へ渡す計画を立てた。適切な対応は？",
+    "options": [
+      "グループ会社なら常に自由",
+      "利用目的・同意・第三者提供の該当性等を確認",
+      "データを圧縮すれば自由",
+      "担当者の判断だけで公開"
+    ],
+    "answer": 1,
+    "explanation": "原則と例外、委託等の取扱いを含め、実際の提供内容を確認します。",
+    "id": "ip-mock-01-q-13"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-law-ethics",
+    "prompt": "Ver.6.5の法務の学習で、旧称だけを覚えるのではなく確認するべき現行の名称は？",
+    "options": ["SNS共有許可法", "中小受託取引適正化法", "計算機速度法", "データ圧縮基本法"],
+    "answer": 1,
+    "explanation": "IPAの改訂注記には下請法から中小受託取引適正化法への用語変更が示されています。",
+    "id": "ip-mock-01-q-14"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-standards",
+    "prompt": "多くの利用者が採用し、市場で事実上の標準となった仕様を何というか？",
+    "options": ["法定の独占価格", "暗号鍵", "単体テスト", "デファクトスタンダード"],
+    "answer": 3,
+    "explanation": "普及を通じて事実上の標準になったものです。公的標準の成立とは区別します。",
+    "id": "ip-mock-01-q-15"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-standards",
+    "prompt": "取引先とCSVを交換したが金額が100倍になった。再発防止に直接役立つ合意は？",
+    "options": ["担当者の座席", "端末の壁紙", "列の意味・通貨・単位・形式の定義", "ファイル名の長さだけ"],
+    "answer": 2,
+    "explanation": "相互運用には構文だけでなく意味と単位の共有が必要です。",
+    "id": "ip-mock-01-q-16"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-strategy",
+    "prompt": "自社が保有する熟練技術者をSWOTで評価する場合、最も近い位置付けは？",
+    "options": ["外部の脅威", "市場成長率", "内部の強み", "外部の機会"],
+    "answer": 2,
+    "explanation": "自社内部の有利な資源は強みです。",
+    "id": "ip-mock-01-q-17"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-strategy",
+    "prompt": "新規会員数を最終目標に、登録画面の離脱率を監視する。後者の位置付けは？",
+    "options": ["主記憶", "会計上の負債", "KPI", "特許"],
+    "answer": 2,
+    "explanation": "目標へ至る過程を測る重要な指標です。",
+    "id": "ip-mock-01-q-18"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-strategy",
+    "prompt": "PPMで市場成長率も相対的市場占有率も高い事業は？",
+    "options": ["花形", "金のなる木", "負け犬", "必ず撤退対象"],
+    "answer": 0,
+    "explanation": "高成長・高占有率の事業を花形と位置付けます。",
+    "id": "ip-mock-01-q-19"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-marketing",
+    "prompt": "顧客を用途別に分け、そのうち在宅勤務者を対象に選んだ。STPのどの活動に当たるか？",
+    "options": ["量子化", "会計監査", "負荷分散", "ターゲティング"],
+    "answer": 3,
+    "explanation": "市場を分けた後に対象市場を選ぶのがターゲティングです。",
+    "id": "ip-mock-01-q-20"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-marketing",
+    "prompt": "営業、会計、生産で別々に管理していた基幹データを統合したい。適する仕組みは？",
+    "options": ["DNS", "WAF", "OCR", "ERP"],
+    "answer": 3,
+    "explanation": "ERPは基幹業務の情報を統合的に扱います。",
+    "id": "ip-mock-01-q-21"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-marketing",
+    "prompt": "顧客の購入履歴と問い合わせ履歴を共有し継続支援に使う取組は？",
+    "options": ["CRM", "CAM", "RAID", "UDP"],
+    "answer": 0,
+    "explanation": "CRMは顧客との継続的な関係の管理に関係します。",
+    "id": "ip-mock-01-q-22"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-tech-business",
+    "prompt": "新しい検査技術を少数の画像で検証した。次に本番導入を判断する姿勢として適切なのは？",
+    "options": [
+      "全環境での成功が保証されたとする",
+      "照明変化や保守・誤判定時の運用も検討",
+      "利用者確認を不要とする",
+      "費用は永久に発生しないとする"
+    ],
+    "answer": 1,
+    "explanation": "PoCの結果と本番運用に必要な条件を分けて評価します。",
+    "id": "ip-mock-01-q-23"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-tech-business",
+    "prompt": "技術開発の時期を製品投入計画と関連付けて可視化するものは？",
+    "options": ["アクセスログだけ", "請求書だけ", "真理値表", "技術ロードマップ"],
+    "answer": 3,
+    "explanation": "市場・製品・技術等の関係を時間軸で整理します。",
+    "id": "ip-mock-01-q-24"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-engineering-iot",
+    "prompt": "製品を構成する部品表と在庫、生産計画から調達量を求める方法は？",
+    "options": ["MRP", "CRM", "SMTP", "TLS"],
+    "answer": 0,
+    "explanation": "MRPは資材所要量計画です。",
+    "id": "ip-mock-01-q-25"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-engineering-iot",
+    "prompt": "温室で温度を読み、基準を超えたら換気装置を動かす。温度を読む側は？",
+    "options": ["主キー", "センサ", "アクチュエータ", "認証局"],
+    "answer": 1,
+    "explanation": "センサが状態を測定し、アクチュエータ等が動作へ変換します。",
+    "id": "ip-mock-01-q-26"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-engineering-iot",
+    "prompt": "通信が遅い工場で、機器の近くに処理を置いて判断の遅延を抑える構成は？",
+    "options": ["損益分岐点分析", "RFI", "エッジコンピューティング", "文字コード変換だけ"],
+    "answer": 2,
+    "explanation": "データ発生場所の近くで処理する構成です。",
+    "id": "ip-mock-01-q-27"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-ecommerce",
+    "prompt": "広告表示50,000回、クリック1,000回。CTRは？",
+    "options": ["0.2%", "2%", "5%", "20%"],
+    "answer": 1,
+    "explanation": "1,000÷50,000×100=2%です。",
+    "id": "ip-mock-01-q-28"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-ecommerce",
+    "prompt": "広告費72,000円、成果120件。CPAは？",
+    "options": ["60円", "600円", "6,000円", "8,640円"],
+    "answer": 1,
+    "explanation": "72,000÷120=600円です。",
+    "id": "ip-mock-01-q-29"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-ecommerce",
+    "prompt": "毎月一定の料金でサービスを継続利用する方式は？",
+    "options": ["パケット交換", "第3正規形", "職務分離", "サブスクリプション"],
+    "answer": 3,
+    "explanation": "定期的な支払いによる利用方式です。解約等の条件も確認します。",
+    "id": "ip-mock-01-q-30"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-system-strategy",
+    "prompt": "紙の申請を電子化しても承認待ちが減らない。次に必要な検討は？",
+    "options": [
+      "利用者の意見を禁止",
+      "業務プロセスと承認の必要性の見直し",
+      "画面の色を増やすだけ",
+      "既存手順を永久固定"
+    ],
+    "answer": 1,
+    "explanation": "業務のAs-Isを調べTo-Beを設計します。電子化だけでは課題が残る場合があります。",
+    "id": "ip-mock-01-q-31"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-system-strategy",
+    "prompt": "完成した会計アプリをインターネット経由で利用するサービス形態は？",
+    "options": ["IaaSだけ", "LAN", "RAID1", "SaaS"],
+    "answer": 3,
+    "explanation": "アプリケーション機能のサービス提供はSaaSです。",
+    "id": "ip-mock-01-q-32"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-system-strategy",
+    "prompt": "二つのシステムの比較で初期費用が安い方を採用する前に必要なのは？",
+    "options": [
+      "広告の色だけの比較",
+      "利用者を調べないこと",
+      "契約を読まないこと",
+      "運用・保守・移行費等のTCO比較"
+    ],
+    "answer": 3,
+    "explanation": "導入後も含む総費用と効果で判断します。",
+    "id": "ip-mock-01-q-33"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-procurement",
+    "prompt": "市場にどんな製品や技術があるか調べるため提供企業へ出す情報依頼は？",
+    "options": ["BCP", "RFI", "RFPだけ", "SQL"],
+    "answer": 1,
+    "explanation": "RFIは情報提供依頼、RFPは具体的な提案依頼です。",
+    "id": "ip-mock-01-q-34"
+  },
+  {
+    "field": "strategy",
+    "lesson": "ip-procurement",
+    "prompt": "「同時利用200人でも95%の検索要求が2秒以内」という要件の中心は？",
+    "options": ["商標の登録", "画面の装飾だけ", "性能の非機能要件", "売上仕訳"],
+    "answer": 2,
+    "explanation": "処理内容ではなく性能条件で、測定対象と条件も具体化しています。",
+    "id": "ip-mock-01-q-35"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-development",
+    "prompt": "登録可能な数量は1〜99。境界値分析に適するテスト値は？",
+    "options": ["50だけ", "1だけ", "10・20・30", "0・1・99・100"],
+    "answer": 3,
+    "explanation": "有効範囲の境界とその外側を確かめます。",
+    "id": "ip-mock-01-q-36"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-development",
+    "prompt": "会員登録機能と通知機能の受渡しを検証するテストは？",
+    "options": ["結合テスト", "単体テストだけ", "マーケティング調査", "財務監査だけ"],
+    "answer": 0,
+    "explanation": "複数部品の連携を対象にするのが結合テストです。",
+    "id": "ip-mock-01-q-37"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-development",
+    "prompt": "修正後、以前動いていた購入処理にも不具合がないか調べた。これは？",
+    "options": ["暗号化", "要員採用", "RFI", "回帰テスト"],
+    "answer": 3,
+    "explanation": "変更による既存機能への影響を確かめます。",
+    "id": "ip-mock-01-q-38"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-development",
+    "prompt": "旧システムからの移行時、重大な問題が出た場合に備えて決めることは？",
+    "options": ["確認を一切しない", "契約名だけ変える", "切戻しの条件と手順", "旧データを必ず先に全消去"],
+    "answer": 2,
+    "explanation": "復旧可能性と移行中止・切戻しの判断を事前に用意します。",
+    "id": "ip-mock-01-q-39"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-agile",
+    "prompt": "要件の不確実性が高いサービスで、短い周期に動く成果を示して意見を取り込む進め方は？",
+    "options": ["アジャイル", "一切の計画をしない方式", "単なる機器交換", "固定資産管理"],
+    "answer": 0,
+    "explanation": "短い反復とフィードバックを重ねます。計画や品質管理は必要です。",
+    "id": "ip-mock-01-q-40"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-agile",
+    "prompt": "チームがスプリントの進め方を振り返り、次回の改善を決める場は？",
+    "options": ["DNS問合せ", "特許審査", "レトロスペクティブ", "在庫棚卸し"],
+    "answer": 2,
+    "explanation": "成果物のレビューと、働き方の改善の振り返りを区別します。",
+    "id": "ip-mock-01-q-41"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-agile",
+    "prompt": "変更を頻繁に統合し、自動ビルドとテストで問題を早く見つける取組は？",
+    "options": ["OCR", "RFID", "CI", "SRI"],
+    "answer": 2,
+    "explanation": "継続的インテグレーションです。",
+    "id": "ip-mock-01-q-42"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-project",
+    "prompt": "A3日後にB5日とC2日を並行し、両方の完了後D1日を実施する。最短期間は？",
+    "options": ["6日", "8日", "9日", "11日"],
+    "answer": 2,
+    "explanation": "経路A-B-Dは9日、A-C-Dは6日なので9日です。",
+    "id": "ip-mock-01-q-43"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-project",
+    "prompt": "上記の計画でCを1日短縮しても全体期間はどうなるか？",
+    "options": ["8日になる", "9日のまま", "10日になる", "必ず半分になる"],
+    "answer": 1,
+    "explanation": "クリティカルパスA-B-Dの所要時間が変わらないためです。",
+    "id": "ip-mock-01-q-44"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-project",
+    "prompt": "EV=120万円、AC=150万円と定義された。コスト効率指数EV/ACは？",
+    "options": ["0.8", "1.25", "30", "270"],
+    "answer": 0,
+    "explanation": "120÷150=0.8です。実コストに対する出来高を示します。",
+    "id": "ip-mock-01-q-45"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-project",
+    "prompt": "追加機能で納期が延びる可能性がある。プロジェクト管理として適切なのは？",
+    "options": [
+      "記録せず即追加する",
+      "担当者が全制約を無視する",
+      "既存テストを全削除する",
+      "影響を評価し承認を得る"
+    ],
+    "answer": 3,
+    "explanation": "範囲・納期・費用・品質等への影響を確認して合意します。",
+    "id": "ip-mock-01-q-46"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-project",
+    "prompt": "成果物を作業へ分解し、担当と見積りを割り当てる際に用いるものは？",
+    "options": ["WBS", "B/Sだけ", "SSL証明書", "JPEG"],
+    "answer": 0,
+    "explanation": "WBSは作業や成果物の階層的な分解です。",
+    "id": "ip-mock-01-q-47"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-services",
+    "prompt": "問い合わせシステムが停止した。根本原因の究明より先に代替手順で業務再開を優先する管理は？",
+    "options": ["商標管理", "会計処理", "マーケティング", "インシデント管理"],
+    "answer": 3,
+    "explanation": "サービスを早期に復旧させることを優先します。",
+    "id": "ip-mock-01-q-48"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-services",
+    "prompt": "同じ停止を繰り返さないよう根本原因を調べる活動は？",
+    "options": ["問題管理", "広告配信", "減価償却", "画素補間"],
+    "answer": 0,
+    "explanation": "インシデントの原因を扱い再発を防ぎます。",
+    "id": "ip-mock-01-q-49"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-services",
+    "prompt": "サービス水準を合意する文書に必要な内容は？",
+    "options": [
+      "関係のない画像だけ",
+      "測定条件、対象時間、対応範囲等",
+      "提供者の趣味だけ",
+      "無条件の永久無停止宣言だけ"
+    ],
+    "answer": 1,
+    "explanation": "SLAは測定・評価できる形で水準や条件を合意します。",
+    "id": "ip-mock-01-q-50"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-services",
+    "prompt": "短時間の停電時に安全な停止へつなげる設備は？",
+    "options": ["NAT", "KPI", "UPS", "OCR"],
+    "answer": 2,
+    "explanation": "無停電電源装置で一定時間の電力供給を支援します。",
+    "id": "ip-mock-01-q-51"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-audit",
+    "prompt": "監査人が担当した設計を自ら無批判に評価した。主な問題は？",
+    "options": [
+      "通信速度だけが低下する",
+      "圧縮率が変わる",
+      "主キーが必ず重複する",
+      "独立性・客観性が損なわれる"
+    ],
+    "answer": 3,
+    "explanation": "自己評価の利害を避け、客観的な証拠に基づく評価が必要です。",
+    "id": "ip-mock-01-q-52"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-audit",
+    "prompt": "口座変更、支払承認、送金実行を一人が無制限に行っている。適切な改善は？",
+    "options": ["共有IDの全面利用", "承認の全廃", "職務分離と照合", "ログの廃止"],
+    "answer": 2,
+    "explanation": "権限と担当を分け、記録を照合することで不正や誤りを抑えます。",
+    "id": "ip-mock-01-q-53"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-audit",
+    "prompt": "監査の指摘事項を報告した後、対応状況を確かめる活動は？",
+    "options": ["パケット交換", "相対参照", "フォローアップ", "量子化"],
+    "answer": 2,
+    "explanation": "改善が実施されたか等を確認します。",
+    "id": "ip-mock-01-q-54"
+  },
+  {
+    "field": "management",
+    "lesson": "ip-audit",
+    "prompt": "内部統制の限界として適切なのは？",
+    "options": [
+      "必ず全不正を防ぐ",
+      "ITには適用できない",
+      "承認記録は一切不要",
+      "共謀や判断ミス等により機能しない場合がある"
+    ],
+    "answer": 3,
+    "explanation": "内部統制は絶対的な保証ではありません。",
+    "id": "ip-mock-01-q-55"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-binary",
+    "prompt": "2進数11010を10進数へ変換した値は？",
+    "options": ["28", "18", "24", "26"],
+    "answer": 3,
+    "explanation": "16+8+2=26です。",
+    "id": "ip-mock-01-q-56"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-binary",
+    "prompt": "符号なし6ビット整数で表せる最大値は？",
+    "options": ["6", "32", "63", "64"],
+    "answer": 2,
+    "explanation": "2の6乗=64通りで0を含むため最大は63です。",
+    "id": "ip-mock-01-q-57"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-binary",
+    "prompt": "A=0、B=1のとき、NOT(A OR B)は？",
+    "options": ["計算不能", "0", "1", "2"],
+    "answer": 1,
+    "explanation": "ORは1、その否定は0です。",
+    "id": "ip-mock-01-q-58"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-statistics",
+    "prompt": "2、3、3、4、18という5件のデータの平均値と中央値の組合せは？",
+    "options": ["平均6・中央値3", "平均6・中央値6", "平均30・中央値3", "平均3・中央値6"],
+    "answer": 0,
+    "explanation": "合計30÷5=6、並べた中央は3です。",
+    "id": "ip-mock-01-q-59"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-statistics",
+    "prompt": "利益500円が確率0.2、利益0円が0.8のとき期待利益は？",
+    "options": ["400円", "500円", "100円", "200円"],
+    "answer": 2,
+    "explanation": "500×0.2+0×0.8=100円です。毎回100円になる意味ではありません。",
+    "id": "ip-mock-01-q-60"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-ai-data",
+    "prompt": "不正取引を見つけるモデルで、学習に使ったデータだけで評価した。主な懸念は？",
+    "options": [
+      "データが自動で匿名化する",
+      "未知データへの性能を過大評価する",
+      "必ず過小評価になる",
+      "すべての偏りが消える"
+    ],
+    "answer": 1,
+    "explanation": "学習に使っていない適切な評価データで汎化性能を確認します。",
+    "id": "ip-mock-01-q-61"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-ai-data",
+    "prompt": "正解ラベルなしの顧客データを似た集団へ分けたい。代表的な方法は？",
+    "options": ["パリティ付加", "COMMIT", "クラスタリング", "電子署名"],
+    "answer": 2,
+    "explanation": "教師なし学習でデータの構造を探る方法です。",
+    "id": "ip-mock-01-q-62"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-ai-data",
+    "prompt": "生成AIが示した参考文献が実在するか未確認だった。公開前の対応は？",
+    "options": [
+      "一次資料の実在と内容を確認する",
+      "自然な文章ならそのまま公開",
+      "出典の確認を禁止",
+      "架空の著者名を追加"
+    ],
+    "answer": 0,
+    "explanation": "ハルシネーションに備え、資料と主張の対応を確かめます。",
+    "id": "ip-mock-01-q-63"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-ai-data",
+    "prompt": "実際の陽性20件のうち16件を見つけた。再現率は？",
+    "options": ["125%", "20%", "64%", "80%"],
+    "answer": 3,
+    "explanation": "実際の陽性に対し見つけた割合なので16÷20=80%です。",
+    "id": "ip-mock-01-q-64"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-algorithms",
+    "prompt": "s=1として、配列[2,3,4]の要素を順に掛ける。最後のsは？",
+    "options": ["48", "9", "10", "24"],
+    "answer": 3,
+    "explanation": "1×2×3×4=24です。",
+    "id": "ip-mock-01-q-65"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-algorithms",
+    "prompt": "A、B、Cの順にキューへ入れた。最初に取り出す要素は？",
+    "options": ["C", "順序は必ず逆", "A", "B"],
+    "answer": 2,
+    "explanation": "キューは先入れ先出しです。",
+    "id": "ip-mock-01-q-66"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-algorithms",
+    "prompt": "二分探索を使う前に満たすべき条件は？",
+    "options": ["すべて文字である", "要素数が必ず10", "CPUが二つある", "比較に使う順序で整列されている"],
+    "answer": 3,
+    "explanation": "大小関係等で探索範囲を半分へ絞るため整列が前提です。",
+    "id": "ip-mock-01-q-67"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-languages",
+    "prompt": "データ形式JSONの役割として適切なのは？",
+    "options": [
+      "構造化したデータの表現・交換",
+      "必ずプログラムを自動実行",
+      "CPUクロックの生成",
+      "電源の供給"
+    ],
+    "answer": 0,
+    "explanation": "JSONはデータを表す形式です。",
+    "id": "ip-mock-01-q-68"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-languages",
+    "prompt": "クラスに定めた性質を持つ具体的な実体は？",
+    "options": ["セグメント分析", "主キー制約", "インスタンス", "ネットマスク"],
+    "answer": 2,
+    "explanation": "クラスと具体的なオブジェクトを区別します。",
+    "id": "ip-mock-01-q-69"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-computer",
+    "prompt": "クロック4GHz、1命令8周期と単純化すると、1命令の時間は？",
+    "options": ["32ns", "0.5ns", "2ns", "8ns"],
+    "answer": 2,
+    "explanation": "8÷(4×10の9乗)=2×10の−9乗秒です。",
+    "id": "ip-mock-01-q-70"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-computer",
+    "prompt": "CPUと主記憶の速度差を補うため頻繁なデータを置く記憶領域は？",
+    "options": ["光学マウス", "会計台帳", "キャッシュ", "プリンタ"],
+    "answer": 2,
+    "explanation": "小容量でも高速なキャッシュを利用します。",
+    "id": "ip-mock-01-q-71"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-computer",
+    "prompt": "SSDと一般的なHDDの比較で適切なのは？",
+    "options": [
+      "SSDは半導体記憶を使う",
+      "SSDは必ず回転磁気円盤を使う",
+      "HDDは主にCPU命令を解釈する",
+      "両方RAMと必ず同じ揮発性"
+    ],
+    "answer": 0,
+    "explanation": "SSDはフラッシュメモリ等、HDDは磁気ディスクを用います。",
+    "id": "ip-mock-01-q-72"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-architecture",
+    "prompt": "MTBF=198時間、MTTR=2時間の稼働率は？",
+    "options": ["90%", "98%", "99%", "100%"],
+    "answer": 2,
+    "explanation": "198÷(198+2)=0.99です。",
+    "id": "ip-mock-01-q-73"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-architecture",
+    "prompt": "独立した装置2台が両方動く必要がある。各稼働率0.95のとき全体は？",
+    "options": ["1.90", "0.9025", "0.95", "0.9975"],
+    "answer": 1,
+    "explanation": "直列構成なので0.95×0.95=0.9025です。",
+    "id": "ip-mock-01-q-74"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-architecture",
+    "prompt": "各稼働率0.95の独立した2台で、どちらか一方動けばよい。全体稼働率は？",
+    "options": ["0.9975", "1", "0.9025", "0.95"],
+    "answer": 0,
+    "explanation": "1−0.05×0.05=0.9975です。独立性と動作条件が前提です。",
+    "id": "ip-mock-01-q-75"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-architecture",
+    "prompt": "1秒間に処理する予約件数という指標は？",
+    "options": ["スループット", "レスポンスタイム", "MTTR", "画素数"],
+    "answer": 0,
+    "explanation": "単位時間当たりの処理量です。",
+    "id": "ip-mock-01-q-76"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-os-files",
+    "prompt": "あるプログラムが機器を利用するため、OSに対応した制御ソフトが必要になった。このソフトは？",
+    "options": ["デバイスドライバ", "ERP", "NDA", "BOM"],
+    "answer": 0,
+    "explanation": "周辺機器を制御するためのソフトウェアです。",
+    "id": "ip-mock-01-q-77"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-os-files",
+    "prompt": "仮想記憶を使えば物理的な主記憶容量は無制限になる、という説明は？",
+    "options": [
+      "誤り。入替え等による性能の制約もある",
+      "正しい。物理装置も無限になる",
+      "正しい。補助記憶は不要",
+      "常にCPUが不要になる"
+    ],
+    "answer": 0,
+    "explanation": "論理的な空間と実際の物理資源を区別します。",
+    "id": "ip-mock-01-q-78"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-office-oss",
+    "prompt": "単価B2と数量C2を掛ける式B2*C2を1行下へ相対参照でコピーした。式は？",
+    "options": ["B2*C2", "B3*C3", "B1*C1", "C2*D2"],
+    "answer": 1,
+    "explanation": "行方向へ1行移動するので両参照の行が1増えます。",
+    "id": "ip-mock-01-q-79"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-office-oss",
+    "prompt": "OSSを採用する際に適切な確認事項は？",
+    "options": [
+      "ライセンス、脆弱性、更新・保守体制",
+      "無料なら一切の確認不要",
+      "改変時は必ず著作権表示を削除",
+      "全OSSは同一条件と決める"
+    ],
+    "answer": 0,
+    "explanation": "OSSのライセンスは複数あり、安全管理や保守も必要です。",
+    "id": "ip-mock-01-q-80"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-hardware",
+    "prompt": "紙の申込書を画像から文字データに変える技術は？",
+    "options": ["TCP", "SLA", "OCR", "MRP"],
+    "answer": 2,
+    "explanation": "光学文字認識です。認識結果は確認します。",
+    "id": "ip-mock-01-q-81"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-design",
+    "prompt": "利用者がボタンを押したが保存できたか分からない。改善として適切なのは？",
+    "options": [
+      "保存状態と失敗時の対処を文字でも示す",
+      "ボタンを隠すだけ",
+      "赤緑の色だけで知らせる",
+      "操作を禁止する"
+    ],
+    "answer": 0,
+    "explanation": "操作結果のフィードバックを分かりやすく伝えます。",
+    "id": "ip-mock-01-q-82"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-design",
+    "prompt": "アイコンだけの削除ボタンを読み上げでも理解できるようにするには？",
+    "options": [
+      "文字を画像に置き換えるだけ",
+      "操作の対象と内容が分かるラベルを付ける",
+      "空の説明にする",
+      "キーボード操作をなくす"
+    ],
+    "answer": 1,
+    "explanation": "見た目だけに依存せず機能を示す名前を提供します。",
+    "id": "ip-mock-01-q-83"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-media",
+    "prompt": "200×150画素、1画素24ビットの非圧縮画像。ヘッダ等を無視した容量は？",
+    "options": ["60,000バイト", "90,000バイト", "720,000バイト", "30,000バイト"],
+    "answer": 1,
+    "explanation": "200×150×24÷8=90,000バイトです。",
+    "id": "ip-mock-01-q-84"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-media",
+    "prompt": "16,000Hz、8ビット、モノラル5秒の非圧縮音声容量は？",
+    "options": ["80,000バイト", "640,000バイト", "10,000バイト", "40,000バイト"],
+    "answer": 0,
+    "explanation": "16,000×8×1×5÷8=80,000バイトです。",
+    "id": "ip-mock-01-q-85"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-media",
+    "prompt": "圧縮前のデータへ完全に戻す必要がある。選ぶ性質は？",
+    "options": ["可逆圧縮", "非可逆圧縮で必ず復元", "データの切捨て", "画面解像度の低下だけ"],
+    "answer": 0,
+    "explanation": "可逆圧縮は元のデータを完全に復元できます。",
+    "id": "ip-mock-01-q-86"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-database",
+    "prompt": "会員表で各人を識別する主キーの条件は？",
+    "options": ["列を持たない", "重複とNULLを許さない", "必ず氏名を使う", "全行同じ値"],
+    "answer": 1,
+    "explanation": "一意に識別するための条件です。複数列の組合せも可能です。",
+    "id": "ip-mock-01-q-87"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-database",
+    "prompt": "同じ顧客住所が多数の注文行に重複し、変更漏れが生じた。設計で検討するものは？",
+    "options": ["依存関係に基づく正規化", "画像の非可逆圧縮", "CPUクロック向上だけ", "SSL更新だけ"],
+    "answer": 0,
+    "explanation": "同じ事実の重複に伴う更新異常を抑えます。履歴として別の意味を持つデータは区別します。",
+    "id": "ip-mock-01-q-88"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-sql-transactions",
+    "prompt": "データを区分別にまとめて合計する際、グループ化に使うSQL句は？",
+    "options": ["ORDER BYだけ", "FROMだけ", "IS NULLだけ", "GROUP BY"],
+    "answer": 3,
+    "explanation": "GROUP BYでグループ化し、SUM等の集計を行います。",
+    "id": "ip-mock-01-q-89"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-sql-transactions",
+    "prompt": "送金元を減額した直後に障害が起きた。送金先への加算と一体で取り消す性質は？",
+    "options": ["相互運用性", "市場成長性", "揮発性", "原子性"],
+    "answer": 3,
+    "explanation": "一連の更新を全部成功か全部取消しかで扱います。",
+    "id": "ip-mock-01-q-90"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-sql-transactions",
+    "prompt": "処理PがQのロック解放を待ち、QがPのロック解放を待っている。状態は？",
+    "options": ["標本抽出", "デッドロック", "コミット完了", "可逆圧縮"],
+    "answer": 1,
+    "explanation": "相互待ちなどで進行できなくなるデッドロックです。",
+    "id": "ip-mock-01-q-91"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-network",
+    "prompt": "30MBを実効20Mbpsで送る。M=10の6乗、付加情報は無視する。時間は？",
+    "options": ["24秒", "1.5秒", "6秒", "12秒"],
+    "answer": 3,
+    "explanation": "30×8÷20=12秒です。",
+    "id": "ip-mock-01-q-92"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-network",
+    "prompt": "LAN内のフレーム転送を主に担う装置は？",
+    "options": ["UPS", "ディスプレイ", "スイッチ", "スキャナ"],
+    "answer": 2,
+    "explanation": "スイッチとネットワーク間をつなぐルータを区別します。",
+    "id": "ip-mock-01-q-93"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-protocols",
+    "prompt": "ネットワークへ参加した端末にIPアドレス等を自動配布する仕組みは？",
+    "options": ["DNS", "DHCP", "SMTP", "HTML"],
+    "answer": 1,
+    "explanation": "DHCPは設定情報の配布、DNSは名前等の解決です。",
+    "id": "ip-mock-01-q-94"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-protocols",
+    "prompt": "Webの名前から接続先アドレス等を調べる処理は？",
+    "options": ["COMMIT", "量子化", "職務分離", "DNSによる名前解決"],
+    "answer": 3,
+    "explanation": "DNSでドメイン名に対応するレコードを参照します。",
+    "id": "ip-mock-01-q-95"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-security-risk",
+    "prompt": "権限のない人に顧客名簿が漏れた。主に損なわれた性質は？",
+    "options": ["機密性", "可用性だけ", "解像度", "移植性"],
+    "answer": 0,
+    "explanation": "認められた者だけが情報を使える性質が損なわれました。",
+    "id": "ip-mock-01-q-96"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-security-controls",
+    "prompt": "パスワードに加えて、所持する端末の認証器を利用する。これは何を組み合わせているか？",
+    "options": ["知識と所持の要素", "知識要素だけを二つ", "生体要素だけを二つ", "認証を行わない方式"],
+    "answer": 0,
+    "explanation": "異なる種類の認証要素を使う多要素認証の例です。",
+    "id": "ip-mock-01-q-97"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-security-controls",
+    "prompt": "検索条件をSQL文字列へそのまま連結していた。改善の中心は？",
+    "options": [
+      "引用符を増やすだけで無条件安全",
+      "全ログを削除",
+      "管理者権限で全要求を実行",
+      "パラメータ化して値と構造を分ける"
+    ],
+    "answer": 3,
+    "explanation": "SQLインジェクションを防ぐ基本としてパラメータ化等を用います。",
+    "id": "ip-mock-01-q-98"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-security-controls",
+    "prompt": "一つの対策製品で侵入を完全に防げると考える代わりに必要なのは？",
+    "options": [
+      "全員の権限を最大化",
+      "予防・検知・復旧を組み合わせる",
+      "バックアップを全て廃止",
+      "更新を永久停止"
+    ],
+    "answer": 1,
+    "explanation": "単一対策の限界を補う多層的な設計が必要です。",
+    "id": "ip-mock-01-q-99"
+  },
+  {
+    "field": "technology",
+    "lesson": "ip-cryptography",
+    "prompt": "文書を受信者だけが読めるよう公開鍵暗号で送る。暗号化と復号の鍵の組合せは？",
+    "options": [
+      "受信者の公開鍵・受信者の秘密鍵",
+      "送信者の公開鍵・受信者の公開鍵",
+      "送信者の秘密鍵・受信者の秘密鍵",
+      "全員の共通ID・送信者の公開鍵"
+    ],
+    "answer": 0,
+    "explanation": "暗号化の目的では受信者の鍵対を使います。電子署名とは区別します。",
+    "id": "ip-mock-01-q-100"
+  }
+]

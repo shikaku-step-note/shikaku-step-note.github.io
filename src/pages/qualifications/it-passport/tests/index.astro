@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../../layouts/Layout.astro';
+import { ipAssessments, units, fieldNames } from '../../../../data/it-passport';
+import { href } from '../../../../lib/site';
+const tests = ipAssessments(await getCollection('lessons')).filter((a) => a.kind !== 'lesson');
+---
+
+<Layout
+  title="ITパスポートの用語・復習テストと120分模試"
+  description="23ユニットの用語確認と総合確認、用語の総復習、3分野の復習、100問・120分の独自模擬試験。無料・登録不要でブラウザに結果を記録します。"
+  breadcrumbs={[
+    { name: 'ITパスポート', path: 'qualifications/it-passport/' },
+    { name: '用語・復習・模擬試験', path: 'qualifications/it-passport/tests/' },
+  ]}
+>
+  <section class="container page-section">
+    <div class="page-heading">
+      <h1>ITパスポートの用語・復習・模擬試験</h1>
+      <p>読むだけで終わらず、説明できるか、使えるかを確かめましょう。</p>
+    </div>
+    <div class="prose">
+      <h2>取り組む順番</h2>
+      <p>
+        各レッスンの3問を解き、ユニットの用語テストと総合確認へ進みます。その後、用語の総復習・3分野の総復習・100問模試に取り組みます。総復習はユニットの問題を再利用し、模試100問は別の独自問題です。用語テストは説明から語を選ぶ形式で、応用力の確認には総合確認も併用してください。
+      </p>
+      <p>
+        結果はレッスンの完了と別に保存します。間違えた内容から本文へ戻れます。模試の採点は全問各1点で、本試験のIRT評価点や合否に換算できません。
+      </p>
+    </div>
+    <div class="assessment-links">
+      {tests
+        .filter((a) => !a.unit)
+        .map((a) => (
+          <a class="assessment-link" href={href(`qualifications/it-passport/tests/${a.id}/`)}>
+            <strong>{a.title}</strong>
+            <span>{a.questions.length}問</span>
+          </a>
+        ))}
+    </div>
+    {(['strategy', 'management', 'technology'] as const).map((field) => (
+      <section class="course-section">
+        <h2>{fieldNames[field]}</h2>
+        <ul class="test-directory">
+          {units
+            .filter((u) => u.field === field)
+            .map((u) => (
+              <li>
+                <h3>
+                  ユニット{u.id} {u.name}
+                </h3>
+                {tests
+                  .filter((a) => a.unit === u.id)
+                  .map((a) => (
+                    <a href={href(`qualifications/it-passport/tests/${a.id}/`)}>
+                      {a.kind === 'glossary' ? '用語確認' : '総合確認'}（{a.questions.length}問）
+                    </a>
+                  ))}
+              </li>
+            ))}
+        </ul>
+      </section>
+    ))}
+    <a href={href('qualifications/it-passport/')}>学習コースへ戻る</a>
+  </section>
+</Layout>

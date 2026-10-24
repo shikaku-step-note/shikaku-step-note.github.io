@@ -13,14 +13,20 @@ const lessons = defineCollection({
       order: z.number().int().positive(),
       minutes: z.number().positive(),
       sample: z.boolean().default(true),
+      archived: z.boolean().default(false),
+      unit: z.number().int().min(1).max(23).optional(),
+      syllabus: z.array(z.number().int().min(1).max(63)).default([]),
+      objectives: z.array(z.string()).default([]),
+      prerequisite: z.string().optional(),
+      glossary: z.array(z.object({ term: z.string(), definition: z.string() })).default([]),
       updated: z.string(),
       keywords: z.array(z.string()),
-      question: z.string(),
-      options: z.array(z.string()).min(2),
-      answer: z.number().int().nonnegative(),
-      explanation: z.string(),
+      question: z.string().optional(),
+      options: z.array(z.string()).min(2).optional(),
+      answer: z.number().int().nonnegative().optional(),
+      explanation: z.string().optional(),
     })
-    .refine((d) => d.answer < d.options.length, {
+    .refine((d) => d.answer === undefined || (!!d.options && d.answer < d.options.length), {
       message: 'answer must refer to an option',
       path: ['answer'],
     })
