@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import QualificationCard from '../../components/QualificationCard.astro';
+import { qualifications } from '../../data/qualifications';
+---
+
+<Layout
+  title="資格一覧・学習コース"
+  description="IT・会計・暮らしのお金から、興味のある資格を見つける。ITパスポート、日商簿記3級、FP3級の学習ステップと入門サンプルを紹介します。"
+  breadcrumbs={[{ name: '資格一覧', path: 'qualifications/' }]}
+>
+  <section class="container page-section">
+    <div class="page-heading">
+      <p class="eyebrow">自分の「学びたい」を見つける</p>
+      <h1>資格一覧</h1>
+      <p>
+        初めての分野も、ひとつずつ。
+        <br />
+        資格の特徴と学習ステップを見比べて、最初の一歩を選びましょう。
+      </p>
+    </div>
+    <div class="filter-row" role="group" aria-label="分野で絞り込む">
+      <button class="filter active" type="button" data-filter="all" aria-pressed="true">
+        すべて
+      </button>
+      {qualifications.map((q) => (
+        <button class="filter" type="button" data-filter={q.category} aria-pressed="false">
+          {q.category}
+        </button>
+      ))}
+    </div>
+    <p class="sr-only" data-filter-count role="status">
+      3件の資格
+    </p>
+    <div class="qualification-grid">
+      {qualifications.map((q) => (
+        <div data-category={q.category}>
+          <QualificationCard q={q} />
+        </div>
+      ))}
+    </div>
+    <aside class="notice">
+      <strong>公開内容について</strong>
+      <p>
+        各資格は3つの入門レッスンを備えたサンプルです。受験日・費用・最新の出題範囲などは、各コースに掲載した公式サイトでご確認ください。学習時間の表示は目安です。
+      </p>
+    </aside>
+  </section>
+</Layout>

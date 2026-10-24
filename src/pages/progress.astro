@@ -1,0 +1,154 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+import { qualifications } from '../data/qualifications';
+import { href } from '../lib/site';
+---
+
+<Layout
+  title="マイ学習・ブックマーク"
+  description="この端末に保存した学習の進み具合やブックマークを確認し、続きから学べます。記録のバックアップや復元もこちらから。"
+  noindex
+  breadcrumbs={[{ name: 'マイ学習', path: 'progress/' }]}
+>
+  <section class="container page-section" data-dashboard>
+    <div class="page-heading">
+      <p class="eyebrow">小さな一歩を、見えるかたちに</p>
+      <h1>マイ学習</h1>
+      <p>あなたのペースで、続きから。</p>
+    </div>
+    <div class="storage-banner">
+      <Icon name="shield" size={22} />
+      <div>
+        <strong data-storage-label>この端末に保存</strong>
+        <p data-storage-message>
+          記録はこのブラウザに保存されます。端末間の自動同期はありません。定期的にバックアップを書き出しましょう。
+        </p>
+      </div>
+    </div>
+    <div class="progress-summary">
+      <div>
+        <strong data-total-completed>0</strong>
+        <span>学習済みレッスン</span>
+      </div>
+      <div>
+        <strong data-total-started>0</strong>
+        <span>学習中のレッスン</span>
+      </div>
+      <div>
+        <strong data-total-bookmarks>0</strong>
+        <span>ブックマーク</span>
+      </div>
+    </div>
+    <section class="resume-strip" data-home-resume hidden>
+      <div>
+        <h2>前回の続きから</h2>
+        <p data-resume-title></p>
+      </div>
+      <a class="button primary" data-resume-link href={href('qualifications/')}>
+        学習を再開 <Icon name="arrow" size={18} />
+      </a>
+    </section>
+    <div class="dashboard-grid">
+      <section>
+        <h2>資格ごとの進み具合</h2>
+        <div class="course-progress-list">
+          {qualifications.map((q) => (
+            <article class="progress-course">
+              <div class="section-heading">
+                <h3>
+                  <a href={href(`qualifications/${q.id}/`)}>{q.name}</a>
+                </h3>
+                <span data-course-progress={q.id}>0 / 3 レッスン</span>
+              </div>
+              <progress data-course-bar={q.id} max="3" value="0" aria-label={`${q.name}の学習済みレッスン数`}>
+                0 / 3
+              </progress>
+              <p class="muted">入門サンプルの進み具合です。試験範囲の習得率ではありません。</p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section>
+        <h2>星をつけたレッスン</h2>
+        <div data-bookmark-list>
+          <div class="empty-state">
+            <Icon name="star" size={30} />
+            <h3>復習したいところを、ここに。</h3>
+            <p>レッスンの星ボタンを押すと、あとからすぐに読み返せます。</p>
+            <a href={href('qualifications/')}>学びたい資格を選ぶ</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="history-section">
+      <h2>学習の記録</h2>
+      <div data-history-list>
+        <p class="muted">学習を始めると、レッスンの状態と最新の練習結果がここに表示されます。</p>
+      </div>
+    </section>
+    <section class="backup-section" id="backup">
+      <div>
+        <p class="eyebrow">大切な記録を手元に</p>
+        <h2>バックアップと復元</h2>
+        <p>
+          ブラウザのデータを削除すると、記録が消える場合があります。バックアップファイルを書き出すと、同じサイトを開いた別の端末でも読み込めます。
+        </p>
+      </div>
+      <div class="backup-actions">
+        <button class="button primary" id="export-progress" type="button">
+          <Icon name="download" size={18} />
+          バックアップを書き出す
+        </button>
+        <label class="file-label" for="import-file">
+          バックアップファイルを選ぶ（JSON・最大2MB）
+        </label>
+        <input type="file" id="import-file" accept=".json,application/json" />
+        <p id="import-info" role="status"></p>
+        <fieldset class="import-mode">
+          <legend>読み込み方法</legend>
+          <label>
+            <input type="radio" name="import-mode" value="merge" checked />
+            今の記録と統合する
+          </label>
+          <label>
+            <input type="radio" name="import-mode" value="replace" />
+            今の記録を置き換える
+          </label>
+        </fieldset>
+        <p class="muted">
+          統合ではレッスンごとに更新日時が新しい記録を優先します。バックアップには学習状態と練習結果が含まれます。
+        </p>
+        <button class="button secondary" id="import-progress" type="button" disabled>
+          選んだ記録を読み込む
+        </button>
+      </div>
+    </section>
+    <section class="reset-section">
+      <div>
+        <h2>この端末の記録をリセット</h2>
+        <p>学習状態・星・練習結果がすべて消えます。先にバックアップを書き出してください。</p>
+      </div>
+      <button class="button danger" id="reset-progress" type="button">
+        記録をリセット
+      </button>
+    </section>
+    <noscript>
+      <p>学習記録を表示するにはJavaScriptを有効にしてください。教材の本文はJavaScriptなしでも読めます。</p>
+    </noscript>
+  </section>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title">
+    <form method="dialog">
+      <h2 id="confirm-title">記録を変更しますか？</h2>
+      <p id="confirm-description"></p>
+      <div class="button-row">
+        <button class="button secondary" value="cancel" autofocus>
+          キャンセル
+        </button>
+        <button class="button danger" value="confirm">
+          変更する
+        </button>
+      </div>
+    </form>
+  </dialog>
+</Layout>

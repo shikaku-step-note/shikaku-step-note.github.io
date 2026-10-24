@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { href } from '../lib/site';
+---
+
+<Layout
+  title="教材を検索"
+  description="資格名やキーワードから、学びたいレッスンを探せます。"
+  noindex
+  breadcrumbs={[{ name: '検索', path: 'search/' }]}
+>
+  <section class="container narrow page-section">
+    <div class="page-heading">
+      <h1>学びたいことを探す</h1>
+      <p>資格名や、気になるキーワードで検索できます。</p>
+    </div>
+    <form class="search-form" role="search" data-search-form>
+      <label for="search-input">資格・レッスンのキーワード</label>
+      <div>
+        <input
+          id="search-input"
+          type="search"
+          name="q"
+          autocomplete="off"
+          placeholder="例：簿記、セキュリティ、仕訳"
+          maxlength="100"
+        />
+        <button class="button primary" type="submit">
+          検索
+        </button>
+      </div>
+    </form>
+    <div class="search-suggestions">
+      <span>気になるキーワード：</span>
+      {['ITパスポート', '簿記', 'FP', '仕訳', 'セキュリティ'].map((t) => (
+        <button class="filter" data-search-term={t} type="button">
+          {t}
+        </button>
+      ))}
+    </div>
+    <p data-search-status role="status" aria-live="polite">
+      キーワードを入力すると、資格とレッスンを検索できます。
+    </p>
+    <div data-search-results class="search-results"></div>
+    <noscript>
+      <p>
+        検索機能にはJavaScriptが必要です。<a href={href('qualifications/')}>資格一覧</a>
+        から教材を探すこともできます。
+      </p>
+    </noscript>
+  </section>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { href } from '../lib/site';
+---
+
+<Layout
+  title="ページが見つかりません"
+  description="お探しのページは見つかりませんでした。資格一覧や検索から教材を探してください。"
+  noindex
+>
+  <section class="container narrow page-section error-page">
+    <span class="error-code">404</span>
+    <h1>
+      この道の先に、ページが
+      <br />
+      見つかりませんでした。
+    </h1>
+    <p>
+      URLが変わったか、まだ公開されていないページかもしれません。
+      <br />
+      資格一覧や検索から、学びたいことを探してみてください。
+    </p>
+    <div class="button-row">
+      <a class="button primary" href={href('qualifications/')}>
+        資格一覧を見る
+      </a>
+      <a class="button secondary" href={href('search/')}>
+        教材を検索する
+      </a>
+    </div>
+  </section>
+</Layout>

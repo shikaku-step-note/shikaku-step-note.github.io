@@ -1,0 +1,22 @@
+name: 教材・サイトの訂正
+description: 教材の誤り、リンク切れ、表示・機能の問題をお知らせください。
+body:
+  - type: markdown
+    attributes:
+      value: 公開される窓口です。氏名・連絡先・学習記録のバックアップなどの個人情報は投稿しないでください。
+  - type: input
+    id: url
+    attributes:
+      label: 該当ページのURL
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 内容・再現手順
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: 参照先・修正案（任意）

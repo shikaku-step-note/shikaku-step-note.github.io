@@ -1,0 +1,196 @@
+---
+import { href, siteName } from '../lib/site';
+import { qualifications } from '../data/qualifications';
+import Icon from '../components/Icon.astro';
+import '../styles/global.css';
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+  breadcrumbs?: { name: string; path: string }[];
+  schema?: Record<string, unknown>;
+}
+const { title, description, noindex = false, breadcrumbs = [], schema } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const fullTitle = title === siteName ? `${siteName} | 無料で学べる資格学習サイト` : `${title} | ${siteName}`;
+const root = new URL(href(''), Astro.site).href;
+const imageUrl = new URL(href('og-default.png'), Astro.site).href;
+const graph: Record<string, unknown>[] = [
+  {
+    '@type': 'WebSite',
+    '@id': `${root}#website`,
+    name: siteName,
+    url: root,
+    inLanguage: 'ja',
+    description: '無料で学べる資格学習サイト。入門から一歩ずつ学べる、資格ステップノート。',
+  },
+  {
+    '@type': 'WebPage',
+    '@id': canonical,
+    url: canonical,
+    name: fullTitle,
+    description,
+    inLanguage: 'ja',
+    isPartOf: { '@id': `${root}#website` },
+  },
+];
+if (breadcrumbs.length)
+  graph.push({
+    '@type': 'BreadcrumbList',
+    itemListElement: [{ name: 'ホーム', path: '' }, ...breadcrumbs].map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: b.name,
+      item: new URL(href(b.path), Astro.site).href,
+    })),
+  });
+if (schema) graph.push(schema);
+const verification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'} />
+    <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#173c59" />
+    <link rel="icon" type="image/png" sizes="32x32" href={href('favicon-32.png')} />
+    <link rel="icon" href={href('favicon.ico')} sizes="any" />
+    <link rel="apple-touch-icon" sizes="180x180" href={href('apple-touch-icon.png')} />
+    <link rel="manifest" href={href('site.webmanifest')} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="資格ステップノート — 無料で学べる資格学習サイト" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {verification && <meta name="google-site-verification" content={verification} />}
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(
+        /</g,
+        '\\u003c',
+      )}
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      本文へスキップ
+    </a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href={href('')} aria-label="資格ステップノート ホーム">
+          <img src={href('logo.png')} width="44" height="44" alt="" />
+          <span>
+            資格ステップノート<small>無料で学べる資格学習サイト</small>
+          </span>
+        </a>
+        <button
+          class="menu-button"
+          aria-label="メニュー"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          type="button"
+        >
+          <Icon name="menu" /> <span>メニュー</span>
+        </button>
+        <nav id="main-nav" class="main-nav" aria-label="メインナビゲーション">
+          <details class="qualification-menu">
+            <summary>
+              資格を選ぶ <span aria-hidden="true">⌄</span>
+            </summary>
+            <div class="dropdown">
+              {qualifications.map((q) => (
+                <a href={href(`qualifications/${q.id}/`)}>
+                  {q.name}
+                  <small>{q.category}</small>
+                </a>
+              ))}
+              <a href={href('qualifications/')}>資格一覧を見る</a>
+            </div>
+          </details>
+          <a href={href('guide/')} aria-current={Astro.url.pathname === href('guide/') ? 'page' : undefined}>
+            使い方
+          </a>
+          <a class="nav-search" href={href('search/')}>
+            <Icon name="search" size={18} />
+            検索
+          </a>
+          <a class="nav-progress" href={href('progress/')}>
+            <Icon name="chart" size={18} />
+            マイ学習
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      {breadcrumbs.length > 0 && (
+        <nav class="breadcrumbs container" aria-label="パンくずリスト">
+          <ol>
+            <li>
+              <a href={href('')}>ホーム</a>
+            </li>
+            {breadcrumbs.map((b, i) => (
+              <li>
+                {i === breadcrumbs.length - 1 ? (
+                  <span aria-current="page">{b.name}</span>
+                ) : (
+                  <a href={href(b.path)}>{b.name}</a>
+                )}
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href={href('')}>
+            <img src={href('logo.png')} width="42" height="42" alt="" />
+            <span>資格ステップノート</span>
+          </a>
+          <p>
+            今日のひとつが、明日の自信に。
+            <br />
+            自分のペースで、一歩ずつ。
+          </p>
+        </div>
+        <div>
+          <strong>学習する</strong>
+          <a href={href('qualifications/')}>資格一覧</a>
+          <a href={href('progress/')}>マイ学習・ブックマーク</a>
+          <a href={href('guide/')}>使い方・データの保存</a>
+          <a href={href('faq/')}>よくある質問</a>
+        </div>
+        <div>
+          <strong>このサイトについて</strong>
+          <a href={href('about/')}>サイトについて</a>
+          <a href={href('editorial/')}>編集方針・出典</a>
+          <a href={href('contact/')}>お問い合わせ・訂正</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <small>© {new Date().getFullYear()} 資格ステップノート</small>
+        <div>
+          <a href={href('privacy/')}>プライバシーポリシー</a>
+          <a href={href('terms/')}>利用規約・免責事項</a>
+        </div>
+      </div>
+    </footer>
+    <p class="toast" id="toast" role="status" aria-live="polite"></p>
+    <script>
+      import '../scripts/app';
+    </script>
+  </body>
+</html>

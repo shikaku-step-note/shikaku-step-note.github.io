@@ -1,0 +1,32 @@
+---
+import type { Qualification } from '../data/qualifications';
+import { href } from '../lib/site';
+import Icon from './Icon.astro';
+import { getCollection } from 'astro:content';
+interface Props {
+  q: Qualification;
+}
+const { q } = Astro.props;
+const count = (await getCollection('lessons', (l) => l.data.qualification === q.id)).length;
+---
+
+<article class={`qualification-card ${q.color}`}>
+  <div class="card-top">
+    <span class="subject-icon">
+      <Icon name={q.icon} size={28} />
+    </span>
+    <span class="tag">{q.category}</span>
+  </div>
+  <h3>
+    <a href={href(`qualifications/${q.id}/`)}>{q.name}</a>
+  </h3>
+  <p class="card-intro">{q.intro}</p>
+  <p>{q.description}</p>
+  <div class="card-meta">
+    <span>入門サンプル・{count}レッスン</span>
+    <span data-course-progress={q.id}>未学習</span>
+  </div>
+  <a class="card-link" href={href(`qualifications/${q.id}/`)}>
+    学習ステップを見る <Icon name="arrow" size={19} />
+  </a>
+</article>

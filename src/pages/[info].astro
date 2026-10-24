@@ -1,0 +1,37 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { href } from '../lib/site';
+export async function getStaticPaths() {
+  return (await getCollection('pages')).map((page) => ({ params: { info: page.id }, props: { page } }));
+}
+const { page } = Astro.props;
+const { Content } = await render(page);
+const pages = await getCollection('pages');
+---
+
+<Layout
+  title={page.data.title}
+  description={page.data.description}
+  breadcrumbs={[{ name: page.data.title, path: `${page.id}/` }]}
+>
+  <section class="container page-section">
+    <header class="page-heading">
+      <h1>{page.data.title}</h1>
+      <p>{page.data.description}</p>
+    </header>
+    <div class="info-layout">
+      <article class="prose">
+        <Content />
+      </article>
+      <nav class="info-nav" aria-label="サイトのご案内">
+        <h2>サイトのご案内</h2>
+        {pages.map((p) => (
+          <a href={href(`${p.id}/`)} aria-current={p.id === page.id ? 'page' : undefined}>
+            {p.data.title}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,46 @@
+---
+import Icon from './Icon.astro';
+interface Props {
+  title: string;
+  url: string;
+}
+const { title, url } = Astro.props;
+const text = `${title} | 資格ステップノート`;
+---
+
+<aside class="share-panel" aria-label="このページを共有">
+  <strong>学びのきっかけをシェア</strong>
+  <div class="share-actions">
+    <a
+      href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Xで共有（新しいタブ）"
+    >
+      X
+    </a>
+    <a
+      href={`https://www.threads.net/intent/post?text=${encodeURIComponent(`${text}\n${url}`)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Threadsで共有（新しいタブ）"
+    >
+      Threads
+    </a>
+    <a
+      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Facebookで共有（新しいタブ）"
+    >
+      Facebook
+    </a>
+    <button type="button" data-copy={url}>
+      リンクをコピー
+    </button>
+    <button type="button" data-native-share data-title={text} data-url={url} hidden>
+      <Icon name="share" size={16} />
+      共有
+    </button>
+  </div>
+</aside>

@@ -1,0 +1,190 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import Icon from '../../../components/Icon.astro';
+import Share from '../../../components/Share.astro';
+import { qualificationById } from '../../../data/qualifications';
+import { href } from '../../../lib/site';
+export async function getStaticPaths() {
+  return (await getCollection('lessons')).map((lesson) => ({
+    params: { qualification: lesson.data.qualification, lesson: lesson.data.stableId },
+    props: { lesson },
+  }));
+}
+const { lesson } = Astro.props;
+const d = lesson.data;
+const q = qualificationById(d.qualification);
+const siblings = (await getCollection('lessons', (l) => l.data.qualification === q.id)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const index = siblings.findIndex((l) => l.data.stableId === d.stableId);
+const prev = siblings[index - 1];
+const next = siblings[index + 1];
+const { Content, headings } = await render(lesson);
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<Layout
+  title={`${d.title}｜${q.name}`}
+  description={d.description}
+  noindex={d.sample}
+  breadcrumbs={[
+    { name: '資格一覧', path: 'qualifications/' },
+    { name: q.name, path: `qualifications/${q.id}/` },
+    { name: d.title, path: `qualifications/${q.id}/${d.stableId}/` },
+  ]}
+>
+  <div class="container lesson-layout page-section">
+    <article data-current-lesson={d.stableId}>
+      <header class="lesson-header">
+        <div class="lesson-kicker">
+          <a class="tag" href={href(`qualifications/${q.id}/`)}>
+            {q.name}
+          </a>
+          <span>
+            STEP {d.order} / {siblings.length}
+          </span>
+          <span>
+            <Icon name="clock" size={15} />
+            {d.minutes}分
+          </span>
+        </div>
+        <h1>{d.title}</h1>
+        <p class="lead">{d.description}</p>
+        <p class="sample-caption">入門サンプル教材・独自の解説と練習問題</p>
+        <div class="lesson-toolbar">
+          <button class="button secondary" data-start={d.stableId} type="button">
+            学習を始める
+          </button>
+          <button class="bookmark-text" data-bookmark={d.stableId} aria-pressed="false" type="button">
+            <Icon name="star" size={19} />
+            <span>あとで復習</span>
+          </button>
+          <span class="status-pill" data-status-label={d.stableId}>
+            未学習
+          </span>
+        </div>
+      </header>
+      <div class="notice compact">
+        <p>
+          この教材は学習機能を体験するためのサンプルです。試験範囲を網羅していません。
+          {q.id === 'fp-3' ? '個別の投資・税務・保険の助言を目的としません。' : ''}
+        </p>
+      </div>
+      <nav class="toc mobile-toc" aria-label="このレッスンの目次">
+        <h2>このレッスンの目次</h2>
+        <ol>
+          {headings
+            .filter((h) => h.depth === 2)
+            .map((h) => (
+              <li>
+                <a href={`#${h.slug}`}>{h.text}</a>
+              </li>
+            ))}
+          <li>
+            <a href="#practice">理解をたしかめる</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="prose lesson-content">
+        <Content />
+      </div>
+      <section class="quiz" id="practice" data-quiz={d.stableId} data-answer={d.answer}>
+        <p class="eyebrow">理解をたしかめる</p>
+        <h2>練習問題</h2>
+        <form>
+          <fieldset>
+            <legend>{d.question}</legend>
+            {d.options.map((o, i) => (
+              <label class="quiz-option">
+                <input type="radio" name="answer" value={i} required />
+                <span>{o}</span>
+              </label>
+            ))}
+          </fieldset>
+          <button class="button primary" type="submit">
+            答えを確認する
+          </button>
+          <div class="quiz-feedback" role="status" tabindex="-1" hidden>
+            <strong data-quiz-result></strong>
+            <p>{d.explanation}</p>
+            <p class="muted">何度でも解き直せます。学習済みへの変更は、下のボタンで行えます。</p>
+          </div>
+        </form>
+      </section>
+      <section class="lesson-complete">
+        <div>
+          <h2>ここまで、おつかれさまでした。</h2>
+          <p>理解できたら記録して、次の一歩へ。</p>
+        </div>
+        <button class="button primary" data-complete={d.stableId} type="button">
+          <Icon name="check" size={19} />
+          学習済みにする
+        </button>
+      </section>
+      <p class="muted saved-note">
+        学習記録はこの端末のブラウザに保存されます。<a href={href('guide/')}>保存とバックアップについて</a>
+      </p>
+      <nav class="lesson-pagination" aria-label="前後のレッスン">
+        {prev ? (
+          <a href={href(`qualifications/${q.id}/${prev.data.stableId}/`)}>
+            <small>前のレッスン</small>
+            {prev.data.title}
+          </a>
+        ) : (
+          <a href={href(`qualifications/${q.id}/`)}>
+            <small>コースに戻る</small>
+            {q.name}の学習ステップ
+          </a>
+        )}
+        {next ? (
+          <a href={href(`qualifications/${q.id}/${next.data.stableId}/`)}>
+            <small>次のレッスン</small>
+            {next.data.title}
+          </a>
+        ) : (
+          <a href={href('progress/')}>
+            <small>学びを振り返る</small>マイ学習を見る
+          </a>
+        )}
+      </nav>
+      <section class="source-note">
+        <h2>出典・教材について</h2>
+        <p>
+          文章・例題は当サイトが作成した入門用サンプルです。公式問題の転載ではありません。資格概要の参照先：
+          <a href={q.official} target="_blank" rel="noopener noreferrer">
+            {q.officialName}（新しいタブ）
+          </a>
+          。
+        </p>
+        <p>
+          教材更新日：<time datetime={d.updated}>2026年10月24日</time>。
+          <a href={href('editorial/')}>編集方針</a>・<a href={href('contact/')}>訂正の連絡方法</a>
+        </p>
+      </section>
+      <Share title={`${d.title}｜${q.name}`} url={canonical} />
+    </article>
+    <aside class="lesson-sidebar">
+      <nav class="toc" aria-label="レッスンの目次">
+        <h2>このレッスンの目次</h2>
+        <ol>
+          {headings
+            .filter((h) => h.depth === 2)
+            .map((h) => (
+              <li>
+                <a href={`#${h.slug}`}>{h.text}</a>
+              </li>
+            ))}
+          <li>
+            <a href="#practice">理解をたしかめる</a>
+          </li>
+        </ol>
+      </nav>
+      <div class="sidebar-box">
+        <h2>{q.name}</h2>
+        <p data-course-progress={q.id}>未学習</p>
+        <a href={href(`qualifications/${q.id}/`)}>学習ステップに戻る</a>
+      </div>
+    </aside>
+  </div>
+</Layout>
