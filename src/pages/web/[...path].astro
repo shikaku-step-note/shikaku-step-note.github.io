@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import { qualifications } from '../../data/qualifications';
+import { ipAssessments } from '../../data/it-passport';
+import { publicPages, href } from '../../lib/site';
+export async function getStaticPaths() {
+  if (import.meta.env.BASE_URL !== '/') return [];
+  const lessons = await getCollection('lessons');
+  const paths = [
+    ...publicPages,
+    'progress/',
+    'search/',
+    ...qualifications.map((q) => `qualifications/${q.id}/`),
+    ...lessons.map((l) => `qualifications/${l.data.qualification}/${l.data.stableId}/`),
+    'qualifications/it-passport/coverage/',
+    'qualifications/it-passport/tests/',
+    ...ipAssessments(lessons)
+      .filter((a) => a.kind !== 'lesson')
+      .map((a) => `qualifications/it-passport/tests/${a.id}/`),
+  ];
+  return paths.map((path) => ({
+    params: { path: path.replace(/\/$/, '') || undefined },
+    props: { target: href(path) },
+  }));
+}
+const { target } = Astro.props;
+const canonical = new URL(target, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>移転のお知らせ：{target}｜資格ステップノート</title>
+    <meta
+      name="description"
+      content="資格ステップノートのページは新しいアドレスへ移動しました。リンクから教材を開けます。"
+    />
+    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href={canonical} />
+    <meta http-equiv="refresh" content={`0;url=${canonical}`} />
+    <script is:inline define:vars={{ target }}>
+      location.replace(target + location.search + location.hash);
+    </script>
+  </head>
+  <body>
+    <main>
+      <h1>ページのアドレスが変わりました</h1>
+      <p>資格ステップノートはルートアドレスへ移転しました。</p>
+      <p>
+        <a href={target}>新しいページを開く</a>
+      </p>
+    </main>
+  </body>
+</html>

@@ -5,7 +5,7 @@ description: 教材の誤りや表示の問題は、公開のGitHub Issuesでお
 
 ## 公開の連絡窓口
 
-教材の誤り、説明不足、リンク切れ、表示や機能の問題は、管理用リポジトリの[GitHub Issues一覧](https://github.com/shikaku-step-note/web/issues)で受け付けます。[新しいIssueを作成する](https://github.com/shikaku-step-note/web/issues/new/choose)にはGitHubへのログインが必要です。教材の閲覧や学習にはログインは必要ありません。
+教材の誤り、説明不足、リンク切れ、表示や機能の問題は、管理用リポジトリの[GitHub Issues一覧](https://github.com/shikaku-step-note/shikaku-step-note.github.io/issues)で受け付けます。[新しいIssueを作成する](https://github.com/shikaku-step-note/shikaku-step-note.github.io/issues/new/choose)にはGitHubへのログインが必要です。教材の閲覧や学習にはログインは必要ありません。
 
 この窓口の投稿は公開されます。非公開の問い合わせフォームやメール窓口は、現在設置していません。個人情報を伴う相談は受け付けられません。
 

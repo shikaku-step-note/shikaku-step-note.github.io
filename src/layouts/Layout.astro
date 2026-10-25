@@ -2,8 +2,10 @@
 import { href, siteName } from '../lib/site';
 import { qualifications } from '../data/qualifications';
 import Icon from '../components/Icon.astro';
+import ThemeControl from '../components/ThemeControl.astro';
 import '../styles/global.css';
 import '../styles/assessments.css';
+import '../styles/theme.css';
 interface Props {
   title: string;
   description: string;
@@ -58,7 +60,22 @@ const verification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
     <meta name="description" content={description} />
     <meta name="robots" content={noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'} />
     <link rel="canonical" href={canonical} />
-    <meta name="theme-color" content="#173c59" />
+    <meta name="theme-color" content="#ffffff" />
+    <script is:inline>
+      // Apply before paint; unavailable browser storage must not prevent rendering.
+      (() => {
+        let saved = null;
+        try {
+          saved = localStorage.getItem('shikaku-step-note:theme');
+        } catch {}
+        const dark =
+          saved === 'dark' || (saved !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        document
+          .querySelector('meta[name="theme-color"]')
+          .setAttribute('content', dark ? '#101a24' : '#ffffff');
+      })();
+    </script>
     <link rel="icon" type="image/png" sizes="32x32" href={href('favicon-32.png')} />
     <link rel="icon" href={href('favicon.ico')} sizes="any" />
     <link rel="apple-touch-icon" sizes="180x180" href={href('apple-touch-icon.png')} />
@@ -95,6 +112,7 @@ const verification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
             資格ステップノート<small>無料で学べる資格学習サイト</small>
           </span>
         </a>
+        <ThemeControl />
         <button
           class="menu-button"
           aria-label="メニュー"
@@ -191,6 +209,7 @@ const verification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
     </footer>
     <p class="toast" id="toast" role="status" aria-live="polite"></p>
     <script>
+      import '../scripts/theme';
       import '../scripts/app';
     </script>
   </body>

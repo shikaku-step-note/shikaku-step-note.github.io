@@ -1,0 +1,37 @@
+---
+import Icon from './Icon.astro';
+---
+
+<details class="theme-menu" data-theme-menu>
+  <summary aria-label="表示モードを選ぶ" title="表示モードを選ぶ">
+    <span class="theme-moon">
+      <Icon name="moon" size={21} />
+    </span>
+    <span class="theme-sun">
+      <Icon name="sun" size={21} />
+    </span>
+  </summary>
+  <div class="theme-options">
+    <fieldset>
+      <legend>表示モード</legend>
+      <label>
+        <input type="radio" name="theme" value="system" checked />
+        端末に合わせる
+      </label>
+      <label>
+        <input type="radio" name="theme" value="light" />
+        ライト
+      </label>
+      <label>
+        <input type="radio" name="theme" value="dark" />
+        ダーク
+      </label>
+    </fieldset>
+    <p data-theme-save role="status">
+      設定はこのブラウザに保存します。
+    </p>
+    <noscript>
+      <p>手動で切り替えるにはJavaScriptを有効にしてください。端末の配色設定には自動で合わせます。</p>
+    </noscript>
+  </div>
+</details>

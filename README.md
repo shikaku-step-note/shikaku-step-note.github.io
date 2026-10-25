@@ -16,7 +16,13 @@ pnpm verify
 pnpm preview
 ```
 
-既定の公開先は `https://shikaku-step-note.github.io/web/` です。開発時も `/web/` を開いてください。`astro.config.mjs` の `SITE_URL` / `BASE_PATH` で変更できます。`.env.example` に設定例があります。実行環境の変数として指定してください。
+既定の公開先は `https://shikaku-step-note.github.io/`、リポジトリは `shikaku-step-note/shikaku-step-note.github.io` です。開発時も `/` を開いてください。`astro.config.mjs` の `SITE_URL` / `BASE_PATH` で変更できます。`.env.example` に設定例があります。実行環境の変数として指定してください。
+
+## 表示モードと旧URL
+
+ヘッダーから端末連動・ライト・ダークを選べます。`src/scripts/theme.ts`と先行適用スクリプト、`src/styles/theme.css`が表示を管理します。明示した設定はlocalStorageの`shikaku-step-note:theme`へ保存し、学習記録と分離します。保存制限時も画面の切替えは可能です。
+
+旧`/web/`のHTMLページには`src/pages/web/[...path].astro`でnoindexの移転ページを生成し、対応するルートのcanonicalへ移動します。クエリとフラグメントを保ち、任意の外部URLへの転送は行いません。GitHub Pagesにはサーバー側の301設定機能がないため、即時meta refreshとJavaScript、手動リンクを使います。同じオリジンのIndexedDBと既存キーを維持するため、学習データの移し替えは不要です。
 
 ## 資格を追加する
 
@@ -82,8 +88,8 @@ explanation: 正解の理由と考え方。
 
 - Search Consoleで公開URLのURLプレフィックスプロパティを追加します。
 - HTMLタグによる所有権確認では、リポジトリ変数 `PUBLIC_GOOGLE_SITE_VERIFICATION` にトークン部分を設定し、再デプロイします。
-- 公開された `/web/sitemap.xml` をSearch Consoleから送信します。
-- `/web/robots.txt` はプロジェクト配下にあるため、オリジン全体のrobots制御には使われません。将来ルート公開するときは生成済みのrobots.txtが有効になります。他のリポジトリやオリジンルートは勝手に変更しません。
+- 公開された `/sitemap.xml` をSearch Consoleから送信します。以前の`/web/`プロパティを使用していた場合はルートのURLプレフィックスも追加します。
+- `/robots.txt`はルート配信され、ルートのサイトマップを案内します。旧URLの移転ページをサイトマップへ含めません。
 - 個人の進捗、内部検索、404、サンプル教材、テスト実行ページはnoindexです。完成したIT本文・コース・テスト案内・対応表はサイトマップへ含めます。
 - JSON-LDはWebSite、WebPage、BreadcrumbList、正式レッスンのLearningResourceを使用します。実在しない運営者や監修者は記載しません。特別なランキングやリッチリザルトの保証は行いません。
 

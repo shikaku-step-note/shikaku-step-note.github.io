@@ -25,6 +25,6 @@ ITパスポートは、現行シラバスVer.6.5の63項目に対応する基礎
 
 ## サイトの管理と独立性
 
-このサイトは、[shikaku-step-note/web](https://github.com/shikaku-step-note/web)で管理しています。試験主催者の公式サイトではなく、主催団体からの推薦・監修・提携を表示するものでもありません。
+このサイトは、[shikaku-step-note.github.io](https://github.com/shikaku-step-note/shikaku-step-note.github.io)で管理しています。試験主催者の公式サイトではなく、主催団体からの推薦・監修・提携を表示するものでもありません。
 
 教材の作り方は「編集方針・出典」、公開の訂正連絡は「お問い合わせ・訂正」をご確認ください。

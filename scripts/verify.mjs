@@ -2,7 +2,7 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 const root = resolve('dist');
 const origin = process.env.SITE_URL || 'https://shikaku-step-note.github.io';
-const base = (process.env.BASE_PATH || '/web/').replace(/\/$/, '');
+const base = (process.env.BASE_PATH || '/').replace(/\/$/, '');
 const walk = (d) =>
   readdirSync(d).flatMap((n) => {
     const p = join(d, n);
@@ -27,8 +27,17 @@ for (const file of htmlFiles) {
   if ((html.match(/<h1(?:\s|>)/g) || []).length !== 1) fail(file, 'expected exactly one h1');
   const canonical = html.match(/rel="canonical" href="([^"]+)"/)?.[1];
   if (!canonical?.startsWith(`${origin}${base}/`)) fail(file, 'incorrect canonical');
-  if (noindex && listed.includes(canonical)) fail(file, 'noindex URL included in sitemap');
+  const ownUrl = `${origin}${base}/${file
+    .slice(root.length + 1)
+    .replaceAll('\\', '/')
+    .replace(/index\.html$/, '')}`;
+  if (noindex && listed.includes(ownUrl)) fail(file, 'noindex URL included in sitemap');
   if (!noindex && !listed.includes(canonical)) fail(file, 'indexable URL absent from sitemap');
+  if (!base && ownUrl.startsWith(`${origin}/web/`)) {
+    const target = ownUrl.replace(`${origin}/web/`, `${origin}/`);
+    if (!noindex || canonical !== target || !html.includes(`0;url=${target}`))
+      fail(file, 'legacy page must redirect to its root canonical and remain noindex');
+  }
   for (const m of html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/gs)) {
     try {
       const data = JSON.parse(m[1]);

@@ -30,12 +30,12 @@ jobs:
       - run: pnpm build
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://shikaku-step-note.github.io' }}
-          BASE_PATH: ${{ vars.BASE_PATH || '/web/' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/' }}
           PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ vars.PUBLIC_GOOGLE_SITE_VERIFICATION }}
       - run: pnpm verify
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://shikaku-step-note.github.io' }}
-          BASE_PATH: ${{ vars.BASE_PATH || '/web/' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/' }}
       - uses: actions/configure-pages@v5
         with:
           enablement: true
