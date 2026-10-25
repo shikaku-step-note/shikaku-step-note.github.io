@@ -1,12 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { href } from '../../lib/site';
 import QualificationCard from '../../components/QualificationCard.astro';
 import { qualifications, availabilityText } from '../../data/qualifications';
 ---
 
 <Layout
   title="資格一覧・学習コース"
-  description={`公開中の学習コース：${availabilityText}。分野と公開範囲を比べて、無料・登録不要で学び始められます。`}
+  description="ITパスポート、日商簿記初級・原価計算初級・3級・2級・1級、FP3級の教材を公開。分野と公開範囲を比べて、無料・登録不要で学び始められます。"
   breadcrumbs={[{ name: '資格一覧', path: 'qualifications/' }]}
 >
   <section class="container page-section">
@@ -19,6 +20,10 @@ import { qualifications, availabilityText } from '../../data/qualifications';
         資格の特徴と学習ステップを見比べて、最初の一歩を選びましょう。
       </p>
     </div>
+    <p class="notice compact">
+      <a href={href('qualifications/boki/')}>日商簿記の級・区分の違いと選び方</a>
+      。ユニットはサイト独自の学習段階で、公式の級とは異なります。
+    </p>
     <div class="filter-row" role="group" aria-label="分野で絞り込む">
       <button class="filter active" type="button" data-filter="all" aria-pressed="true">
         すべて

@@ -1,0 +1,1860 @@
+{
+  "bb-foundation": [
+    {
+      "prompt": "資産700,000円、負債260,000円の純資産はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["440000"],
+      "explanation": "700,000−260,000＝440,000円。資産全額ではなく、返済義務を除いた額を求めます。",
+      "id": "bb-foundation-q1",
+      "lesson": "bb-foundation",
+      "field": "basics"
+    },
+    {
+      "prompt": "銀行から借りた現金の分類として正しいものはどれですか。",
+      "options": [
+        "売上という収益になる",
+        "現金という資産と借入金という負債が増える",
+        "費用だけが増える",
+        "資本金だけが増える"
+      ],
+      "answer": 1,
+      "explanation": "借入れでは現金と返済義務が同時に増えます。売上を得たわけではなく、費用の発生や出資とも区別します。",
+      "id": "bb-foundation-q2",
+      "lesson": "bb-foundation",
+      "field": "basics"
+    },
+    {
+      "prompt": "収益180,000円、費用135,000円の利益はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["45000"],
+      "explanation": "利益＝180,000−135,000＝45,000円。資産や負債の総額を代入する式ではありません。",
+      "id": "bb-foundation-q3",
+      "lesson": "bb-foundation",
+      "field": "basics"
+    },
+    {
+      "prompt": "売掛金を現金で回収したときの説明として正しいものはどれですか。",
+      "options": [
+        "同額の売上をもう一度計上する",
+        "現金が増えて売掛金が減る",
+        "負債だけが増える",
+        "回収額の全額が当月の利益になる"
+      ],
+      "answer": 1,
+      "explanation": "回収は資産同士の入れ替わりです。売上を二重に数えず、回収だけで負債や利益が増えるとは考えません。",
+      "id": "bb-foundation-q4",
+      "lesson": "bb-foundation",
+      "field": "basics"
+    }
+  ],
+  "bb-journal": [
+    {
+      "prompt": "現金で備品40,000円を買い、資産に計上します。借方はどれですか。",
+      "options": ["現金40,000", "備品40,000", "売上40,000", "借入金40,000"],
+      "answer": 1,
+      "explanation": "借方は増えた資産の備品です。現金は減るので貸方へ置き、売上や借入金はこの取引では使いません。",
+      "id": "bb-journal-q1",
+      "lesson": "bb-journal",
+      "field": "basics"
+    },
+    {
+      "prompt": "仕入60,000円のうち現金15,000円を払い、残りは掛けです。買掛金はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["45000"],
+      "explanation": "60,000−15,000＝45,000円。借方仕入60,000に対し、貸方現金15,000と買掛金45,000を記録します。",
+      "id": "bb-journal-q2",
+      "lesson": "bb-journal",
+      "field": "basics"
+    },
+    {
+      "prompt": "貸借が一致した仕訳について正しい説明はどれですか。",
+      "options": [
+        "勘定科目も必ず正しい",
+        "左右の合計は等しいが、科目の誤りは別に確認する",
+        "取引の証ひょうは不要になる",
+        "資産だけが動いた取引とは限らないので記録を省く"
+      ],
+      "answer": 1,
+      "explanation": "貸借の一致で確認できるのは金額の合計です。科目や取引の根拠まで自動的に正しくなるわけではなく、記録の省略もできません。",
+      "id": "bb-journal-q3",
+      "lesson": "bb-journal",
+      "field": "basics"
+    },
+    {
+      "prompt": "現金勘定の借方合計180,000円、貸方合計67,000円です。残高はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["113000"],
+      "explanation": "現金は資産なので、借方の増加から貸方の減少を引きます。180,000−67,000＝113,000円です。",
+      "id": "bb-journal-q4",
+      "lesson": "bb-journal",
+      "field": "basics"
+    }
+  ],
+  "bb-transactions": [
+    {
+      "prompt": "商品を掛けで販売したとき、借方に記録する科目はどれですか。",
+      "options": ["売掛金", "買掛金", "前受金", "支払利息"],
+      "answer": 0,
+      "explanation": "売掛金は商品代金を後で受け取る権利です。買掛金は支払義務、前受金は引渡し前の受取り、支払利息は借入れ等の費用です。",
+      "id": "bb-transactions-q1",
+      "lesson": "bb-transactions",
+      "field": "basics"
+    },
+    {
+      "prompt": "借入元金30,000円と利息900円を預金から払います。減らす借入金はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["30000"],
+      "explanation": "借入金が減るのは元金30,000円です。900円は支払利息とし、普通預金の減少合計は30,900円です。",
+      "id": "bb-transactions-q2",
+      "lesson": "bb-transactions",
+      "field": "basics"
+    },
+    {
+      "prompt": "備品購入代金を後日支払う場合の貸方科目はどれですか。",
+      "options": ["買掛金", "未払金", "未収入金", "前払金"],
+      "answer": 1,
+      "explanation": "備品という商品以外の購入代金は未払金です。買掛金は通常の商品仕入、未収入金は受取権利、前払金は引渡し前の支払いです。",
+      "id": "bb-transactions-q3",
+      "lesson": "bb-transactions",
+      "field": "basics"
+    },
+    {
+      "prompt": "税抜価格20,000円、問題で指定された税額2,000円の商品を現金で買います。現金はいくら減りますか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["22000"],
+      "explanation": "現金の支払額は税抜額と税額の合計22,000円です。税抜方式でも実際の支払額から税額を除くわけではありません。",
+      "id": "bb-transactions-q4",
+      "lesson": "bb-transactions",
+      "field": "basics"
+    }
+  ],
+  "bb-monthly": [
+    {
+      "prompt": "月初現金80,000円、入金120,000円、出金95,000円です。月末残高はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["105000"],
+      "explanation": "80,000＋120,000−95,000＝105,000円。純増加額25,000円と月末残高を区別します。",
+      "id": "bb-monthly-q1",
+      "lesson": "bb-monthly",
+      "field": "basics"
+    },
+    {
+      "prompt": "月初売掛金20,000円、掛け売上90,000円、月末売掛金35,000円です。返品等はありません。回収額はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["75000"],
+      "explanation": "20,000＋90,000−35,000＝75,000円です。売掛金残高を増減の関係から逆算します。",
+      "id": "bb-monthly-q2",
+      "lesson": "bb-monthly",
+      "field": "basics"
+    },
+    {
+      "prompt": "残高試算表に記載するものはどれですか。",
+      "options": ["各勘定の借方・貸方の差額", "証ひょうの枚数だけ", "現金の入金だけ", "当月売上の全取引文"],
+      "answer": 0,
+      "explanation": "残高試算表は各勘定の残高を一覧にします。枚数、入金だけ、個々の文章はその役割に当たりません。",
+      "id": "bb-monthly-q3",
+      "lesson": "bb-monthly",
+      "field": "basics"
+    },
+    {
+      "prompt": "収益220,000円、費用188,000円です。利益はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["32000"],
+      "explanation": "220,000−188,000＝32,000円です。借入金や出資を収益に含めず、指定された期間の収益と費用を使います。",
+      "id": "bb-monthly-q4",
+      "lesson": "bb-monthly",
+      "field": "basics"
+    }
+  ],
+  "cb-classify": [
+    {
+      "prompt": "工場全体の照明費で、製品別の使用量が測れません。分類として適切なのはどれですか。",
+      "options": ["直接材料費", "間接経費", "直接労務費", "売上"],
+      "answer": 1,
+      "explanation": "製造のための電力等は経費で、製品別に直接把握できないので間接経費です。材料、労働力、収益のいずれでもありません。",
+      "id": "cb-classify-q1",
+      "lesson": "cb-classify",
+      "field": "cost"
+    },
+    {
+      "prompt": "材料を90,000円購入し、当月に55,000円分消費しました。当月の材料消費額はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["55000"],
+      "explanation": "当月の消費額は55,000円です。購入額90,000円との差35,000円は、ほかの条件がなければ在庫に残ります。",
+      "id": "cb-classify-q2",
+      "lesson": "cb-classify",
+      "field": "cost"
+    },
+    {
+      "prompt": "原価の分類について正しい説明はどれですか。",
+      "options": [
+        "材料費は常に直接費である",
+        "直接・間接は製品などの対象との結び付きで判断する",
+        "販売広告費は必ず工場の製造原価に入れる",
+        "支払った額だけで原価を決める"
+      ],
+      "answer": 1,
+      "explanation": "直接・間接は対象との関係による分類です。間接材料費もあり、販売費や購入・消費・販売の時点も区別します。",
+      "id": "cb-classify-q3",
+      "lesson": "cb-classify",
+      "field": "cost"
+    },
+    {
+      "prompt": "製品Aの直接材料費24,000円、直接労務費16,000円です。Aに直課する合計はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["40000"],
+      "explanation": "24,000＋16,000＝40,000円。共通費の配賦は別に計算し、直接費を二度集計しないようにします。",
+      "id": "cb-classify-q4",
+      "lesson": "cb-classify",
+      "field": "cost"
+    }
+  ],
+  "cb-allocate": [
+    {
+      "prompt": "共通費48,000円、総作業時間80時間です。1時間当たりの配賦率はいくらですか。単位は円／時間です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["600"],
+      "explanation": "48,000÷80＝600円／時間。掛ける対象が時間なので、配賦率も時間当たりで求めます。",
+      "id": "cb-allocate-q1",
+      "lesson": "cb-allocate",
+      "field": "cost"
+    },
+    {
+      "prompt": "配賦率600円／時間、Aの作業時間25時間です。Aへの配賦額はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["15000"],
+      "explanation": "600×25＝15,000円。全体時間で再度割らず、対象Aの基準量を掛けます。",
+      "id": "cb-allocate-q2",
+      "lesson": "cb-allocate",
+      "field": "cost"
+    },
+    {
+      "prompt": "配賦後の確認として適切なのはどれですか。",
+      "options": [
+        "各製品の配賦額合計がもとの共通費と一致するか確認する",
+        "すべての製品へ同じ額を配る",
+        "必ず売価を分母にする",
+        "直接費もすべて再配賦する"
+      ],
+      "answer": 0,
+      "explanation": "指定された基準を使ったうえで総額の一致を確かめます。均等配分や売価基準を勝手に採用したり、直課済み費用を二重に配ったりしません。",
+      "id": "cb-allocate-q3",
+      "lesson": "cb-allocate",
+      "field": "cost"
+    },
+    {
+      "prompt": "Aの直接費70,000円、配賦額15,000円、完成数10個で仕掛品はありません。単位原価はいくらですか。単位は円／個です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["8500"],
+      "explanation": "（70,000＋15,000）÷10＝8,500円／個。総額85,000円と1個当たりを区別します。",
+      "id": "cb-allocate-q4",
+      "lesson": "cb-allocate",
+      "field": "cost"
+    }
+  ],
+  "cb-inventory": [
+    {
+      "prompt": "月初仕掛品20,000円、当月製造費用180,000円、月末仕掛品30,000円です。完成品原価はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["170000"],
+      "explanation": "20,000＋180,000−30,000＝170,000円。月末の未完成分は完成品原価へ含めません。",
+      "id": "cb-inventory-q1",
+      "lesson": "cb-inventory",
+      "field": "cost"
+    },
+    {
+      "prompt": "月初製品15,000円、当月完成品原価170,000円、月末製品25,000円です。売上原価はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["160000"],
+      "explanation": "15,000＋170,000−25,000＝160,000円。完成した額だけでなく製品在庫の増減も反映します。",
+      "id": "cb-inventory-q2",
+      "lesson": "cb-inventory",
+      "field": "cost"
+    },
+    {
+      "prompt": "売上高300,000円、売上原価160,000円、販売管理費60,000円です。営業利益はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["80000"],
+      "explanation": "売上総利益は140,000円、営業利益は140,000−60,000＝80,000円です。二つの利益を区別します。",
+      "id": "cb-inventory-q3",
+      "lesson": "cb-inventory",
+      "field": "cost"
+    },
+    {
+      "prompt": "月末に完成していないものの原価は、どれに残りますか。",
+      "options": ["仕掛品", "売上", "販売費", "現金"],
+      "answer": 0,
+      "explanation": "未完成の原価は仕掛品に残ります。完成・販売の段階へ進む前なので、売上や販売費とは区別し、現金残高を示すものでもありません。",
+      "id": "cb-inventory-q4",
+      "lesson": "cb-inventory",
+      "field": "cost"
+    }
+  ],
+  "cb-cvp": [
+    {
+      "prompt": "単価2,000円、単位変動費1,200円、固定費160,000円です。損益分岐点販売量は何個ですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200"],
+      "explanation": "1個当たり貢献利益は800円。160,000÷800＝200個です。固定費を単価だけで割ると変動費を回収できません。",
+      "id": "cb-cvp-q1",
+      "lesson": "cb-cvp",
+      "field": "cost"
+    },
+    {
+      "prompt": "同じ条件で利益80,000円を得るには何個売る必要がありますか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["300"],
+      "explanation": "（160,000＋80,000）÷800＝300個。損益分岐点の200個に、目標利益を得る100個を加えた結果です。",
+      "id": "cb-cvp-q2",
+      "lesson": "cb-cvp",
+      "field": "cost"
+    },
+    {
+      "prompt": "予算単価1,000円、数量200個、実際単価950円、数量220個です。（実際数量−予算数量）×予算単価による数量差異はいくらですか。増加を正、減少を負とし、単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["20000"],
+      "explanation": "（220−200）×1,000＝20,000円。価格差異−11,000円と合わせると売上高差額9,000円になります。",
+      "id": "cb-cvp-q3",
+      "lesson": "cb-cvp",
+      "field": "cost"
+    },
+    {
+      "prompt": "変動費率60%、固定費80,000円の損益分岐点売上高を求める式はどれですか。",
+      "options": ["80,000÷0.6", "80,000÷0.4", "80,000×0.6", "80,000−0.6"],
+      "answer": 1,
+      "explanation": "貢献利益率は1−0.6＝0.4なので、固定費を0.4で割ります。変動費率で割ったり、額と率を直接差し引いたりしません。",
+      "id": "cb-cvp-q4",
+      "lesson": "cb-cvp",
+      "field": "cost"
+    }
+  ],
+  "b3-cash": [
+    {
+      "prompt": "帳簿の現金が70,000円、実際有高が68,500円です。原因不明の不足額はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["1500"],
+      "explanation": "70,000−68,500＝1,500円。借方現金過不足、貸方現金で不足を記録します。",
+      "id": "b3-cash-q1",
+      "lesson": "b3-cash",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当店振出しの小切手で支払うとき、通常減少させる科目はどれですか。",
+      "options": ["現金", "当座預金", "売掛金", "資本金"],
+      "answer": 1,
+      "explanation": "自店で振り出した小切手による支払いは当座預金の減少です。他人振出しの小切手を受け取る場合の現金と区別します。",
+      "id": "b3-cash-q2",
+      "lesson": "b3-cash",
+      "field": "commercial"
+    },
+    {
+      "prompt": "定額10,000円の小口現金から合計6,500円を使いました。使用額と同額を補給した後の残高はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["10000"],
+      "explanation": "使用後3,500円に6,500円を補給して10,000円へ戻ります。補給額6,500円を残高と取り違えないようにします。",
+      "id": "b3-cash-q3",
+      "lesson": "b3-cash",
+      "field": "commercial"
+    },
+    {
+      "prompt": "現金不足のうち通信費の記帳漏れが判明しました。既に不足を記録している場合の貸方はどれですか。",
+      "options": ["現金", "売上", "現金過不足", "雑益"],
+      "answer": 2,
+      "explanation": "貸方は現金過不足です。最初の不足計上で現金を減らしているため、もう一度現金を減らしません。通信費を借方へ振り替えます。",
+      "id": "b3-cash-q4",
+      "lesson": "b3-cash",
+      "field": "commercial"
+    }
+  ],
+  "b3-inventory": [
+    {
+      "prompt": "月初10個×100円、追加仕入10個×120円の後、12個販売しました。先入先出法の払出原価はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["1240"],
+      "explanation": "10×100＋2×120＝1,240円。販売価格ではなく、先に受け入れた原価から使います。",
+      "id": "b3-inventory-q1",
+      "lesson": "b3-inventory",
+      "field": "commercial"
+    },
+    {
+      "prompt": "同じ条件を移動平均法で計算します。12個の払出原価はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["1320"],
+      "explanation": "受入れ後の平均単価は2,200÷20＝110円。12×110＝1,320円です。",
+      "id": "b3-inventory-q2",
+      "lesson": "b3-inventory",
+      "field": "commercial"
+    },
+    {
+      "prompt": "商品有高帳で追う金額はどれですか。",
+      "options": ["販売価格だけ", "商品の原価", "売掛金の得意先別残高だけ", "借入金利息"],
+      "answer": 1,
+      "explanation": "商品有高帳は商品の数量・原価の受払いと残高を管理します。販売価格、売掛金、借入金利息を管理する帳簿とは役割が違います。",
+      "id": "b3-inventory-q3",
+      "lesson": "b3-inventory",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首商品20,000円、純仕入高150,000円、期末商品35,000円です。売上原価はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["135000"],
+      "explanation": "20,000＋150,000−35,000＝135,000円。売れずに残る期末商品は当期の売上原価から除きます。",
+      "id": "b3-inventory-q4",
+      "lesson": "b3-inventory",
+      "field": "commercial"
+    }
+  ],
+  "b3-credit": [
+    {
+      "prompt": "クレジット販売80,000円、手数料率2%、販売時に手数料計上です。手数料控除後のクレジット売掛金はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["78400"],
+      "explanation": "手数料は80,000×2%＝1,600円。クレジット売掛金は78,400円、売上は80,000円です。",
+      "id": "b3-credit-q1",
+      "lesson": "b3-credit",
+      "field": "commercial"
+    },
+    {
+      "prompt": "商品を受け取る前に払った手付金の科目はどれですか。",
+      "options": ["前払金", "買掛金", "未払金", "前受金"],
+      "answer": 0,
+      "explanation": "先払いした資産は前払金です。買掛金・未払金は支払義務、前受金は受け取る側の負債です。",
+      "id": "b3-credit-q2",
+      "lesson": "b3-credit",
+      "field": "commercial"
+    },
+    {
+      "prompt": "仮払金25,000円のうち交通費が21,000円で、差額を現金で返してもらいました。返金額はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["4000"],
+      "explanation": "25,000−21,000＝4,000円。精算で仮払金25,000円を全額取り崩し、費用と現金に分けます。",
+      "id": "b3-credit-q3",
+      "lesson": "b3-credit",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売掛金を電子記録債権に切り替えたときの貸方はどれですか。",
+      "options": ["売上", "現金", "売掛金", "仕入"],
+      "answer": 2,
+      "explanation": "貸方売掛金で従来の債権を減らし、借方電子記録債権で新たな形を記録します。売上の二重計上や現金回収ではありません。",
+      "id": "b3-credit-q4",
+      "lesson": "b3-credit",
+      "field": "commercial"
+    },
+    {
+      "id": "b3-credit-q5",
+      "lesson": "b3-credit",
+      "field": "commercial",
+      "prompt": "火災による備品帳簿価額60,000円を未決算へ振替済み。保険金50,000円が確定。火災損失はいくらですか。",
+      "input": "number",
+      "accepted": ["10000"],
+      "options": [],
+      "answer": 0,
+      "explanation": "未決算60,000円のうち、未収入金50,000円へ振り替え、差10,000円を火災損失とする条件です。"
+    }
+  ],
+  "b3-assets": [
+    {
+      "prompt": "備品本体180,000円、取得に伴う引取運賃20,000円です。取得原価はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200000"],
+      "explanation": "180,000＋20,000＝200,000円。問題で取得に伴う付随費用と示された額を加えます。",
+      "id": "b3-assets-q1",
+      "lesson": "b3-assets",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価240,000円、残存価額0円、耐用年数4年、当期6か月使用です。定額法の当期償却費はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["30000"],
+      "explanation": "240,000÷4×6÷12＝30,000円。1年分60,000円と6か月分を区別します。",
+      "id": "b3-assets-q2",
+      "lesson": "b3-assets",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売却時の帳簿価額90,000円、売却代金105,000円です。売却益はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["15000"],
+      "explanation": "105,000−90,000＝15,000円の利益です。取得原価や当期償却額ではなく売却時点の帳簿価額と比べます。",
+      "id": "b3-assets-q3",
+      "lesson": "b3-assets",
+      "field": "commercial"
+    },
+    {
+      "prompt": "間接法の減価償却について正しいものはどれですか。",
+      "options": [
+        "毎期、同額の現金を支払う仕訳である",
+        "当期費用と累計額を区別して記録する",
+        "土地にも必ず同じ耐用年数を使う",
+        "累計額を毎期すべて当期費用にする"
+      ],
+      "answer": 1,
+      "explanation": "間接法では当期費用と累計額を分けます。現金支払、土地の償却、累計額の再費用化とは異なります。",
+      "id": "b3-assets-q4",
+      "lesson": "b3-assets",
+      "field": "commercial"
+    }
+  ],
+  "b3-accrual": [
+    {
+      "prompt": "12か月分の保険料96,000円のうち翌期に対応するのは3か月です。前払額はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["24000"],
+      "explanation": "96,000×3÷12＝24,000円。翌期分を資産に振り替え、当期費用を減らします。",
+      "id": "b3-accrual-q1",
+      "lesson": "b3-accrual",
+      "field": "commercial"
+    },
+    {
+      "prompt": "借入金400,000円、年利率3%、当期の未払利息2か月分を求めます。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["2000"],
+      "explanation": "400,000×0.03×2÷12＝2,000円。元金ではなく当期発生の利息を費用・負債へ加えます。",
+      "id": "b3-accrual-q2",
+      "lesson": "b3-accrual",
+      "field": "commercial"
+    },
+    {
+      "prompt": "先に受け取った家賃の翌期分はどれですか。",
+      "options": ["未収利息", "前払費用", "前受家賃", "売掛金"],
+      "answer": 2,
+      "explanation": "翌期分の受取家賃を前受家賃という負債へ振り替えます。未収や前払い、商品の掛け販売とは異なります。",
+      "id": "b3-accrual-q3",
+      "lesson": "b3-accrual",
+      "field": "commercial"
+    },
+    {
+      "prompt": "未収利息を計上する仕訳の貸方はどれですか。",
+      "options": ["受取利息", "支払利息", "現金", "前受家賃"],
+      "answer": 0,
+      "explanation": "借方未収利息、貸方受取利息です。当期の収益を追加し、未受取の権利を資産にします。支払いや現金の入金を記録する処理ではありません。",
+      "id": "b3-accrual-q4",
+      "lesson": "b3-accrual",
+      "field": "commercial"
+    }
+  ],
+  "b3-adjustments": [
+    {
+      "prompt": "期末売掛金200,000円に3%の貸倒れを見積もります。貸倒引当金が貸方に1,500円残っています。追加繰入額はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["4500"],
+      "explanation": "必要残高6,000円から既存残高1,500円を引き、4,500円を追加します。6,000円全額を繰り入れると過大になります。",
+      "id": "b3-adjustments-q1",
+      "lesson": "b3-adjustments",
+      "field": "commercial"
+    },
+    {
+      "prompt": "仮受消費税45,000円、仮払消費税32,000円、ほかに調整はありません。未払消費税はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["13000"],
+      "explanation": "45,000−32,000＝13,000円。仮受・仮払を両方取り崩した後の差額を残します。",
+      "id": "b3-adjustments-q2",
+      "lesson": "b3-adjustments",
+      "field": "commercial"
+    },
+    {
+      "prompt": "配当の決議で通常取り崩す勘定はどれですか。",
+      "options": ["仕入", "繰越利益剰余金", "売掛金", "減価償却費"],
+      "answer": 1,
+      "explanation": "配当は利益剰余金の処分です。商品の原価、債権、固定資産の費用配分とは区別し、当期費用としません。",
+      "id": "b3-adjustments-q3",
+      "lesson": "b3-adjustments",
+      "field": "commercial"
+    },
+    {
+      "prompt": "前期以前発生の売掛金1,200円が貸倒れました。使用できる貸倒引当金は800円です。不足分の貸倒損失はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["400"],
+      "explanation": "1,200−800＝400円。引当金800円と損失400円の合計で、売掛金1,200円を取り崩します。",
+      "id": "b3-adjustments-q4",
+      "lesson": "b3-adjustments",
+      "field": "commercial"
+    }
+  ],
+  "b3-books": [
+    {
+      "prompt": "A社の売掛金は月初20,000円、掛け売上40,000円、回収35,000円です。月末残高はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["25000"],
+      "explanation": "20,000＋40,000−35,000＝25,000円。相手先別の合計が総勘定元帳と一致するかも確認します。",
+      "id": "b3-books-q1",
+      "lesson": "b3-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "通信費8,000円を誤って消耗品費として記帳しました。現金の記録は正しい場合、訂正仕訳の貸方はどれですか。",
+      "options": ["現金8,000", "消耗品費8,000", "通信費8,000", "売上8,000"],
+      "answer": 1,
+      "explanation": "借方通信費・貸方消耗品費です。現金を再度動かすと支払を二重に記録します。",
+      "id": "b3-books-q2",
+      "lesson": "b3-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "現金売上12,000円を21,000円と記録しました。訂正で売上をいくら減らしますか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["9000"],
+      "explanation": "過大計上は21,000−12,000＝9,000円。借方売上・貸方現金で差額を取り消します。",
+      "id": "b3-books-q3",
+      "lesson": "b3-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "商品有高帳で管理する内容として適切なのはどれですか。",
+      "options": [
+        "得意先別の売掛金だけ",
+        "商品の数量・原価の受払い",
+        "株主別の配当だけ",
+        "現金売上の販売価格だけ"
+      ],
+      "answer": 1,
+      "explanation": "商品有高帳では商品の数量と原価を追います。得意先元帳、株主に関する資料、売上記録とは目的が異なります。",
+      "id": "b3-books-q4",
+      "lesson": "b3-books",
+      "field": "commercial"
+    }
+  ],
+  "b3-statements": [
+    {
+      "prompt": "保険料24,000円のうち翌期分6,000円を繰り延べます。当期の保険料はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["18000"],
+      "explanation": "24,000−6,000＝18,000円。翌期分6,000円は前払保険料という資産へ移します。",
+      "id": "b3-statements-q1",
+      "lesson": "b3-statements",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売上200,000円、売上原価120,000円、ほかの費用48,000円です。当期純利益はいくらですか。単位は円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["32000"],
+      "explanation": "200,000−120,000−48,000＝32,000円。費用をすべて差し引きます。",
+      "id": "b3-statements-q2",
+      "lesson": "b3-statements",
+      "field": "commercial"
+    },
+    {
+      "prompt": "精算表で当期純利益を記入する組合せはどれですか。",
+      "options": [
+        "損益計算書欄は借方、貸借対照表欄は貸方",
+        "両方借方",
+        "両方貸方",
+        "損益計算書欄は貸方、貸借対照表欄は借方"
+      ],
+      "answer": 0,
+      "explanation": "利益がある場合、損益計算書欄の借方と貸借対照表欄の貸方へ記入して左右を合わせます。損失なら逆です。",
+      "id": "b3-statements-q3",
+      "lesson": "b3-statements",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期純利益を損益勘定から振り替える際の貸方はどれですか。",
+      "options": ["売上", "仕入", "繰越利益剰余金", "現金"],
+      "answer": 2,
+      "explanation": "借方損益・貸方繰越利益剰余金です。締切で現金が増えるわけではなく、利益を純資産へ移します。",
+      "id": "b3-statements-q4",
+      "lesson": "b3-statements",
+      "field": "commercial"
+    }
+  ],
+  "b2-sales": [
+    {
+      "prompt": "帳簿数量100個、実地数量96個、原価1個500円。棚卸減耗損はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["2000"],
+      "explanation": "数量の不足は4個。4×500＝2,000円です。単価の低下と分けます。",
+      "id": "b2-sales-q1",
+      "lesson": "b2-sales",
+      "field": "commercial"
+    },
+    {
+      "prompt": "実地96個、原価500円、正味売却価額470円。商品評価損はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["2880"],
+      "explanation": "実在する96個×（500−470）＝2,880円です。",
+      "id": "b2-sales-q2",
+      "lesson": "b2-sales",
+      "field": "commercial"
+    },
+    {
+      "prompt": "商品の発送時にはまだ支配が移転せず、検収時に移転する契約です。収益を認識する時点は？",
+      "options": ["発送時", "契約時", "検収時", "入金時"],
+      "answer": 2,
+      "explanation": "契約条件に照らして支配が移転する検収時に認識します。発送や入金だけでは決めません。",
+      "id": "b2-sales-q3",
+      "lesson": "b2-sales",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首商品20,000円、当期純仕入180,000円、期末帳簿棚卸30,000円。棚卸減耗・評価損はなく、売上原価はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["170000"],
+      "explanation": "20,000＋180,000−30,000＝170,000円です。",
+      "id": "b2-sales-q4",
+      "lesson": "b2-sales",
+      "field": "commercial"
+    }
+  ],
+  "b2-finance": [
+    {
+      "prompt": "売買目的株式の帳簿価額100,000円、期末時価108,000円。評価益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["8000"],
+      "explanation": "売買目的は期末時価との差を当期損益へ計上します。108,000−100,000＝8,000円です。",
+      "id": "b2-finance-q1",
+      "lesson": "b2-finance",
+      "field": "commercial"
+    },
+    {
+      "prompt": "額面100,000円の債券を98,000円で期首取得。残存4年、差額は金利調整、定額法。1年分の償却額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["500"],
+      "explanation": "（100,000−98,000）÷4＝500円です。取得原価へ加算します。",
+      "id": "b2-finance-q2",
+      "lesson": "b2-finance",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売掛金1,000ドルを1ドル140円で記帳し、決算相場145円で換算します。為替差益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["5000"],
+      "explanation": "円換算の資産が140,000円から145,000円へ増えるため5,000円の利益です。",
+      "id": "b2-finance-q3",
+      "lesson": "b2-finance",
+      "field": "commercial"
+    },
+    {
+      "prompt": "未取付小切手だけが預金差額の原因です。企業側の帳簿への対応は？",
+      "options": [
+        "支払を二重に記帳する",
+        "通常は仕訳を追加せず調整表で説明する",
+        "必ず受取利息とする",
+        "売掛金を取り消す"
+      ],
+      "answer": 1,
+      "explanation": "既に振出時に記帳済みです。銀行側で未処理の時間差なら追加仕訳は不要です。",
+      "id": "b2-finance-q4",
+      "lesson": "b2-finance",
+      "field": "commercial"
+    }
+  ],
+  "b2-assets": [
+    {
+      "prompt": "機械500,000円、据付費20,000円。取得原価はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["520000"],
+      "explanation": "使用可能な状態にする据付費を含め、500,000＋20,000＝520,000円です。",
+      "id": "b2-assets-q1",
+      "lesson": "b2-assets",
+      "field": "commercial"
+    },
+    {
+      "prompt": "所有権移転外ファイナンス・リース資産300,000円、期間5年、残存価額ゼロ、定額法。年額償却はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["60000"],
+      "explanation": "リース期間を耐用年数として300,000÷5＝60,000円です。",
+      "id": "b2-assets-q2",
+      "lesson": "b2-assets",
+      "field": "commercial"
+    },
+    {
+      "prompt": "将来の収益獲得・費用削減が確実と認められる自社利用ソフトウェアの制作費の扱いとして適切なのは？",
+      "options": [
+        "常に全額を売上とする",
+        "資産計上の要件を確認して無形固定資産とする",
+        "必ず土地とする",
+        "支払日から無条件に20年で償却する"
+      ],
+      "answer": 1,
+      "explanation": "自社利用ソフトウェアは将来の収益獲得・費用削減の確実性などを確認します。何でも資産化できるわけではありません。",
+      "id": "b2-assets-q3",
+      "lesson": "b2-assets",
+      "field": "commercial"
+    },
+    {
+      "prompt": "機械の帳簿価額200,000円。資本的支出30,000円と当期の修繕費10,000円を支払いました。資産へ加算する額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["30000"],
+      "explanation": "価値等を高める30,000円を資産へ加算し、通常の維持費10,000円とは分けます。",
+      "id": "b2-assets-q4",
+      "lesson": "b2-assets",
+      "field": "commercial"
+    }
+  ],
+  "b2-equity-tax": [
+    {
+      "prompt": "株式発行の払込額1,000,000円。問題が半額を資本金とすると指定しています。資本準備金はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["500000"],
+      "explanation": "払込額の半額500,000円を資本金、残り500,000円を資本準備金とします。",
+      "id": "b2-equity-tax-q1",
+      "lesson": "b2-equity-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "賞与見積額120,000円、対象期間6か月のうち当期4か月。均等に勤務し、既存引当金ゼロです。繰入額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["80000"],
+      "explanation": "120,000×4/6＝80,000円です。支払う期ではなく当期の勤務対応額を考えます。",
+      "id": "b2-equity-tax-q2",
+      "lesson": "b2-equity-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "貸倒引当金の税務上の損金不算入額20,000円が将来解消し、全額回収可能、税率30%です。繰延税金資産はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["6000"],
+      "explanation": "将来減算一時差異20,000×30%＝6,000円です。",
+      "id": "b2-equity-tax-q3",
+      "lesson": "b2-equity-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "交際費などで将来も損金にならない永久差異への税効果について適切なのは？",
+      "options": [
+        "すべて繰延税金資産にする",
+        "一時差異と同じく必ず翌期に戻す",
+        "その差額に税効果を認識しない",
+        "売掛金として計上する"
+      ],
+      "answer": 2,
+      "explanation": "将来の解消を伴わない永久差異は、一時差異と区別します。",
+      "id": "b2-equity-tax-q4",
+      "lesson": "b2-equity-tax",
+      "field": "commercial"
+    }
+  ],
+  "b2-branch": [
+    {
+      "prompt": "本店が支店へ現金50,000円を送金しました。本店の借方は？",
+      "options": ["本店", "支店", "売上", "受取利息"],
+      "answer": 1,
+      "explanation": "本店では支店に対する勘定を増やします。支店側の本店勘定と対応します。",
+      "id": "b2-branch-q1",
+      "lesson": "b2-branch",
+      "field": "commercial"
+    },
+    {
+      "prompt": "本店の支店勘定借方残高100,000円。支店が記帳した送金20,000円を本店が未記帳です。本店の修正後支店勘定残高は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["80000"],
+      "explanation": "本店は現金預金20,000円／支店20,000円を追加し、支店勘定を80,000円へ減らします。",
+      "id": "b2-branch-q2",
+      "lesson": "b2-branch",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期末内部商品が本店原価100,000円の20%増しで支店帳簿に120,000円あります。未実現の内部利益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["20000"],
+      "explanation": "内部価格120,000−企業全体の原価100,000＝20,000円です。",
+      "id": "b2-branch-q3",
+      "lesson": "b2-branch",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売上500,000円、売上原価300,000円、販管費100,000円、営業外収益5,000円、営業外費用8,000円。経常利益は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["97000"],
+      "explanation": "営業利益100,000円に5,000円を加え8,000円を引き、97,000円です。",
+      "id": "b2-branch-q4",
+      "lesson": "b2-branch",
+      "field": "commercial"
+    }
+  ],
+  "b2-consolidation": [
+    {
+      "prompt": "子会社取得時純資産1,000,000円の80%を900,000円で取得。評価差額はありません。のれんはいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["100000"],
+      "explanation": "投資900,000−取得純資産持分1,000,000×80%＝100,000円です。",
+      "id": "b2-consolidation-q1",
+      "lesson": "b2-consolidation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得時純資産1,000,000円、親会社持分80%。非支配株主持分はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200000"],
+      "explanation": "1,000,000×20%＝200,000円です。",
+      "id": "b2-consolidation-q2",
+      "lesson": "b2-consolidation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "子会社の当期純利益100,000円、期首から親会社80%保有。追加修正なし。非支配株主に帰属する利益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["20000"],
+      "explanation": "100,000×20%＝20,000円です。",
+      "id": "b2-consolidation-q3",
+      "lesson": "b2-consolidation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "親会社が原価80,000円の商品を子会社へ100,000円で販売。半分が子会社の期末在庫に残る。未実現利益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["10000"],
+      "explanation": "内部利益20,000円×残存割合50%＝10,000円です。",
+      "id": "b2-consolidation-q4",
+      "lesson": "b2-consolidation",
+      "field": "commercial"
+    }
+  ],
+  "b2-costflow": [
+    {
+      "prompt": "材料の期首20,000円、当月購入100,000円、期末30,000円。消費額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["90000"],
+      "explanation": "20,000＋100,000−30,000＝90,000円です。購入額と消費額を分けます。",
+      "id": "b2-costflow-q1",
+      "lesson": "b2-costflow",
+      "field": "industrial"
+    },
+    {
+      "prompt": "当月支払賃金200,000円、前月未払30,000円、当月未払40,000円。当月発生賃金はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["210000"],
+      "explanation": "200,000−30,000＋40,000＝210,000円です。",
+      "id": "b2-costflow-q2",
+      "lesson": "b2-costflow",
+      "field": "industrial"
+    },
+    {
+      "prompt": "予定製造間接費600,000円、予定直接作業時間3,000時間。1時間当たり予定配賦率はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200"],
+      "explanation": "600,000÷3,000＝200円/時間です。",
+      "id": "b2-costflow-q3",
+      "lesson": "b2-costflow",
+      "field": "industrial"
+    },
+    {
+      "prompt": "予定配賦率200円/時間、実際直接作業時間450時間。仕掛品へ配賦する額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["90000"],
+      "explanation": "200×450＝90,000円です。実際発生額そのものとは限りません。",
+      "id": "b2-costflow-q4",
+      "lesson": "b2-costflow",
+      "field": "industrial"
+    }
+  ],
+  "b2-job-department": [
+    {
+      "prompt": "指図書Aの直接材料30,000円、直接労務20,000円、直接作業40時間、予定配賦率300円/時間。製造原価はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["62000"],
+      "explanation": "30,000＋20,000＋40×300＝62,000円です。",
+      "id": "b2-job-department-q1",
+      "lesson": "b2-job-department",
+      "field": "industrial"
+    },
+    {
+      "prompt": "補助部門費60,000円を直接配賦法で製造部門A:B＝2:1に配賦します。Aの配賦額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["40000"],
+      "explanation": "60,000×2/3＝40,000円です。補助部門相互の用役は考慮しません。",
+      "id": "b2-job-department-q2",
+      "lesson": "b2-job-department",
+      "field": "industrial"
+    },
+    {
+      "prompt": "完成したが未販売の指図書の原価の行き先は？",
+      "options": ["売上", "製品", "普通預金", "資本金"],
+      "answer": 1,
+      "explanation": "仕掛品から製品へ移ります。販売時に売上原価へ振り替えます。",
+      "id": "b2-job-department-q3",
+      "lesson": "b2-job-department",
+      "field": "industrial"
+    },
+    {
+      "prompt": "製造部門Aの配賦後部門費100,000円、予定配賦基準500時間。部門配賦率はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200"],
+      "explanation": "100,000÷500＝200円/時間です。",
+      "id": "b2-job-department-q4",
+      "lesson": "b2-job-department",
+      "field": "industrial"
+    }
+  ],
+  "b2-process": [
+    {
+      "prompt": "完成800個、月末仕掛200個で加工進捗50%、月初仕掛なし。加工費の完成品換算量は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["900"],
+      "explanation": "800＋200×50%＝900個相当です。",
+      "id": "b2-process-q1",
+      "lesson": "b2-process",
+      "field": "industrial"
+    },
+    {
+      "prompt": "前問と同じ数量で加工費180,000円。換算量1個当たり加工費はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200"],
+      "explanation": "180,000÷900＝200円です。",
+      "id": "b2-process-q2",
+      "lesson": "b2-process",
+      "field": "industrial"
+    },
+    {
+      "prompt": "材料は始点投入、完成800個、月末仕掛200個、材料費100,000円。月末仕掛品の材料費はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["20000"],
+      "explanation": "材料は全量投入済みなので200/(800＋200)×100,000＝20,000円です。",
+      "id": "b2-process-q3",
+      "lesson": "b2-process",
+      "field": "industrial"
+    },
+    {
+      "prompt": "平均法と先入先出法について正しい説明は？",
+      "options": [
+        "月初仕掛品があるときも常に同じ計算になる",
+        "平均法は月初と当月の原価を合わせる",
+        "先入先出法は月末仕掛品を先に完成させる",
+        "材料の投入時点は無関係である"
+      ],
+      "answer": 1,
+      "explanation": "平均法は原価を合算します。先入先出法は月初分と当月作業を区別し、計算結果が異なる場合があります。",
+      "id": "b2-process-q4",
+      "lesson": "b2-process",
+      "field": "industrial"
+    }
+  ],
+  "b2-standard-cvp": [
+    {
+      "prompt": "標準材料価格100円/kg、実際110円/kg、実際消費50kg。価格差異の不利額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["500"],
+      "explanation": "（110−100）×50＝500円の不利差異です。",
+      "id": "b2-standard-cvp-q1",
+      "lesson": "b2-standard-cvp",
+      "field": "industrial"
+    },
+    {
+      "prompt": "実際生産に対する標準材料量45kg、実際量50kg、標準価格100円/kg。数量差異の不利額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["500"],
+      "explanation": "（50−45）×100＝500円です。",
+      "id": "b2-standard-cvp-q2",
+      "lesson": "b2-standard-cvp",
+      "field": "industrial"
+    },
+    {
+      "prompt": "単価1,000円、単位変動費600円、固定費120,000円。損益分岐点販売数量は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["300"],
+      "explanation": "1個の限界利益400円。120,000÷400＝300個です。",
+      "id": "b2-standard-cvp-q3",
+      "lesson": "b2-standard-cvp",
+      "field": "industrial"
+    },
+    {
+      "prompt": "期首在庫なし、期末在庫に含む固定製造原価20,000円。直接原価計算の利益50,000円なら全部原価計算の利益は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["70000"],
+      "explanation": "直接原価で当期費用にした固定費20,000円が全部原価では在庫に残るため、50,000＋20,000＝70,000円です。",
+      "id": "b2-standard-cvp-q4",
+      "lesson": "b2-standard-cvp",
+      "field": "industrial"
+    }
+  ],
+  "b1-financial": [
+    {
+      "prompt": "期首債券帳簿価額98,000円、実効利子率3%、当期受取利息2,000円。利息法による期末帳簿価額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["98940"],
+      "explanation": "実効利息2,940円−現金利息2,000円＝償却940円。98,000＋940＝98,940円です。",
+      "id": "b1-financial-q1",
+      "lesson": "b1-financial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首社債帳簿価額980,000円、実効利子率3%、支払利息20,000円。期末帳簿価額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["989400"],
+      "explanation": "社債利息29,400円と現金支払20,000円の差9,400円を負債に加算します。",
+      "id": "b1-financial-q2",
+      "lesson": "b1-financial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "デリバティブ評価益を繰り延べるために必要な考え方は？",
+      "options": [
+        "名称にヘッジと書けば足りる",
+        "ヘッジ会計の要件と有効性等を確認する",
+        "常に現金入金まで何も記録しない",
+        "すべて資本金にする"
+      ],
+      "answer": 1,
+      "explanation": "単なる目的の宣言ではなく、対象・手段・リスク管理方針・要件を確認します。",
+      "id": "b1-financial-q3",
+      "lesson": "b1-financial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "その他有価証券の評価差益20,000円、全部純資産直入法、税率30%。税効果後の評価差額金は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["14000"],
+      "explanation": "20,000−20,000×30%＝14,000円です。",
+      "id": "b1-financial-q4",
+      "lesson": "b1-financial",
+      "field": "commercial"
+    }
+  ],
+  "b1-revenue": [
+    {
+      "prompt": "機器単独価格120,000円、保守単独価格30,000円、契約総額135,000円。独立販売価格比で機器へ配分する額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["108000"],
+      "explanation": "135,000×120,000/150,000＝108,000円です。",
+      "id": "b1-revenue-q1",
+      "lesson": "b1-revenue",
+      "field": "accounting"
+    },
+    {
+      "prompt": "前問の保守配分額27,000円を12か月均等提供し、当期3か月経過。保守収益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["6750"],
+      "explanation": "27,000×3/12＝6,750円です。",
+      "id": "b1-revenue-q2",
+      "lesson": "b1-revenue",
+      "field": "accounting"
+    },
+    {
+      "prompt": "一定期間の認識要件を満たし、総原価見積800,000円、発生原価200,000円、契約価格1,000,000円。原価比例で当期累計収益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["250000"],
+      "explanation": "進捗25%なので収益は250,000円です。見積原価の前提を確認します。",
+      "id": "b1-revenue-q3",
+      "lesson": "b1-revenue",
+      "field": "accounting"
+    },
+    {
+      "prompt": "財の移転前に対価を受け取った場合にまず検討するものは？",
+      "options": ["契約負債", "売上原価", "配当金", "減損損失"],
+      "answer": 0,
+      "explanation": "未履行の約束に対応する受領額は、収益と即断せず契約負債等を検討します。",
+      "id": "b1-revenue-q4",
+      "lesson": "b1-revenue",
+      "field": "accounting"
+    }
+  ],
+  "b1-asset-risk": [
+    {
+      "prompt": "減損認識が必要と判定済み。帳簿1,000,000円、正味売却価額600,000円、使用価値700,000円。減損損失は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["300000"],
+      "explanation": "回収可能価額は高い方の700,000円。1,000,000−700,000＝300,000円です。",
+      "id": "b1-asset-risk-q1",
+      "lesson": "b1-asset-risk",
+      "field": "commercial"
+    },
+    {
+      "prompt": "一年後に除去支出105,000円、割引率5%、合理的見積可能。取得時に認識する除去債務はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["100000"],
+      "explanation": "105,000÷1.05＝100,000円です。",
+      "id": "b1-asset-risk-q2",
+      "lesson": "b1-asset-risk",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首除去債務100,000円、割引率5%。一年の時の経過による調整額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["5000"],
+      "explanation": "100,000×5%＝5,000円です。",
+      "id": "b1-asset-risk-q3",
+      "lesson": "b1-asset-risk",
+      "field": "commercial"
+    },
+    {
+      "prompt": "日本基準の減損の基礎的な順序は？",
+      "options": [
+        "常に時価だけで即時に切り下げる",
+        "兆候、認識の判定、損失の測定を区別する",
+        "利益が出ていればすべて判定不要",
+        "減損額を必ず翌年全額戻す"
+      ],
+      "answer": 1,
+      "explanation": "割引前将来キャッシュフローによる認識判定と、回収可能価額による測定を分けます。",
+      "id": "b1-asset-risk-q4",
+      "lesson": "b1-asset-risk",
+      "field": "commercial"
+    }
+  ],
+  "b1-retirement-tax": [
+    {
+      "prompt": "勤務費用50,000円、利息費用20,000円、期待運用収益12,000円、他の償却なし。退職給付費用はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["58000"],
+      "explanation": "50,000＋20,000−12,000＝58,000円です。掛金支出そのものとは異なります。",
+      "id": "b1-retirement-tax-q1",
+      "lesson": "b1-retirement-tax",
+      "field": "accounting"
+    },
+    {
+      "prompt": "退職給付債務1,000,000円、年金資産600,000円、未認識項目なし。差引負債はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["400000"],
+      "explanation": "債務から年金資産を引き400,000円です。",
+      "id": "b1-retirement-tax-q2",
+      "lesson": "b1-retirement-tax",
+      "field": "accounting"
+    },
+    {
+      "prompt": "期末の将来減算一時差異100,000円が全額回収可能。税率30%、期首繰延税金資産20,000円。損益対応の当期追加計上額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["10000"],
+      "explanation": "期末必要額30,000円−期首20,000円＝10,000円です。",
+      "id": "b1-retirement-tax-q3",
+      "lesson": "b1-retirement-tax",
+      "field": "accounting"
+    },
+    {
+      "prompt": "繰延税金資産の回収可能性が低下した場合に必要な対応は？",
+      "options": [
+        "計上済みだから放置する",
+        "将来課税所得等を再評価して必要なら減額する",
+        "必ず現金を増やす",
+        "税率を自由に引き上げる"
+      ],
+      "answer": 1,
+      "explanation": "毎期の回収可能性を見直します。将来の負担軽減が見込めない部分を残すことはできません。",
+      "id": "b1-retirement-tax-q4",
+      "lesson": "b1-retirement-tax",
+      "field": "accounting"
+    }
+  ],
+  "b1-equity-combination": [
+    {
+      "prompt": "自己株式を100,000円で取得し、後日120,000円で処分。処分差額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["20000"],
+      "explanation": "処分対価120,000−帳簿価額100,000＝20,000円。通常の売上益ではなく純資産取引として区分します。",
+      "id": "b1-equity-combination-q1",
+      "lesson": "b1-equity-combination",
+      "field": "commercial"
+    },
+    {
+      "prompt": "株式報酬の付与日公正評価額合計90,000円、対象勤務3年、見積変更なし。一年分費用はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["30000"],
+      "explanation": "対象勤務期間へ90,000÷3＝30,000円を配分する単純例です。",
+      "id": "b1-equity-combination-q2",
+      "lesson": "b1-equity-combination",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得対価1,200,000円、受入資産時価1,800,000円、引受負債時価700,000円。他の調整なし。のれんは？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["100000"],
+      "explanation": "識別可能純資産1,100,000円と対価1,200,000円との差100,000円です。",
+      "id": "b1-equity-combination-q3",
+      "lesson": "b1-equity-combination",
+      "field": "commercial"
+    },
+    {
+      "prompt": "負ののれんが生じたように見える場合に最初にすることは？",
+      "options": [
+        "無条件で繰延資産にする",
+        "資産・負債の識別と測定等を再点検する",
+        "必ず資本金をゼロにする",
+        "売上を二倍にする"
+      ],
+      "answer": 1,
+      "explanation": "測定や識別を再確認したうえで、残る差額の処理を基準に従って検討します。",
+      "id": "b1-equity-combination-q4",
+      "lesson": "b1-equity-combination",
+      "field": "commercial"
+    }
+  ],
+  "b1-consolidation": [
+    {
+      "prompt": "関連会社へ30%出資、投資先当期利益100,000円。他の調整なし。持分法による投資利益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["30000"],
+      "explanation": "100,000×30%＝30,000円です。投資勘定を増やす基本例です。",
+      "id": "b1-consolidation-q1",
+      "lesson": "b1-consolidation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "前問の投資先が40,000円を配当。30%持分に対応する投資簿価減少額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["12000"],
+      "explanation": "40,000×30%＝12,000円です。持分法では利益を既に反映しているので受取配当と区別します。",
+      "id": "b1-consolidation-q2",
+      "lesson": "b1-consolidation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "支配継続の追加取得対価150,000円、減少する非支配株主持分120,000円。資本剰余金を減らす差額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["30000"],
+      "explanation": "支配継続下では追加ののれんとせず、差額30,000円を資本剰余金へ反映する基本例です。",
+      "id": "b1-consolidation-q3",
+      "lesson": "b1-consolidation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "親会社への販売に含まれる子会社利益20,000円が全額期末在庫に残る。子会社の非支配割合20%。非支配持分に関係する利益修正額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["4000"],
+      "explanation": "アップストリームの未実現利益20,000円×20%＝4,000円です。税効果等はない条件です。",
+      "id": "b1-consolidation-q4",
+      "lesson": "b1-consolidation",
+      "field": "commercial"
+    }
+  ],
+  "b1-reporting": [
+    {
+      "prompt": "税引前利益100,000円、減価償却20,000円、売掛金増加10,000円、買掛金増加5,000円。他の調整なし。間接法の営業CF小計は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["115000"],
+      "explanation": "100,000＋20,000−10,000＋5,000＝115,000円です。税金支払等の後の最終額とは区別します。",
+      "id": "b1-reporting-q1",
+      "lesson": "b1-reporting",
+      "field": "accounting"
+    },
+    {
+      "prompt": "設備売却で帳簿50,000円、売却額60,000円。投資CFへの収入額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["60000"],
+      "explanation": "売却益10,000円ではなく実際の受取額60,000円です。",
+      "id": "b1-reporting-q2",
+      "lesson": "b1-reporting",
+      "field": "accounting"
+    },
+    {
+      "prompt": "期中税引前利益200,000円、合理的な見積実効税率28%、この方法を適用する指定です。税金費用はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["56000"],
+      "explanation": "200,000×28%＝56,000円です。法定税率や納付税額そのものと同じとは限りません。",
+      "id": "b1-reporting-q3",
+      "lesson": "b1-reporting",
+      "field": "accounting"
+    },
+    {
+      "prompt": "期中累計利益が第1期中100,000円、第2期中累計240,000円の場合、第2期中単独利益は？",
+      "options": ["340,000円", "240,000円", "140,000円", "100,000円"],
+      "answer": 2,
+      "explanation": "累計から前の累計を引き、240,000−100,000＝140,000円です。",
+      "id": "b1-reporting-q4",
+      "lesson": "b1-reporting",
+      "field": "accounting"
+    }
+  ],
+  "b1-principles": [
+    {
+      "prompt": "新たな情報で機械の残存耐用年数を見直した場合の基本的な区分は？",
+      "options": ["会計上の見積りの変更", "必ず過去の誤謬", "株式発行", "資産の売却"],
+      "answer": 0,
+      "explanation": "新情報による合理的な見積りの見直しと、過去の利用可能情報の誤用を区別します。",
+      "id": "b1-principles-q1",
+      "lesson": "b1-principles",
+      "field": "accounting"
+    },
+    {
+      "prompt": "過去に利用可能だった請求書を見落とし費用を計上しなかった重要な誤りの訂正は？",
+      "options": [
+        "見積り変更なので放置",
+        "原則として修正再表示を検討",
+        "すべて資本金へ加算",
+        "翌期売上を増やす"
+      ],
+      "answer": 1,
+      "explanation": "過去の誤謬として、重要性や基準の条件を踏まえて訂正します。",
+      "id": "b1-principles-q2",
+      "lesson": "b1-principles",
+      "field": "accounting"
+    },
+    {
+      "prompt": "機械の変更時帳簿価額120,000円、残存価額ゼロ、新しい残存期間3年、定額法。変更後一年の償却費は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["40000"],
+      "explanation": "120,000÷3＝40,000円。新しい見積りに基づいて将来へ配分する例です。",
+      "id": "b1-principles-q3",
+      "lesson": "b1-principles",
+      "field": "accounting"
+    },
+    {
+      "prompt": "会計方針の継続性について適切なのは？",
+      "options": [
+        "どんな理由でも変更は禁止",
+        "正当な理由や基準改正等を踏まえ、変更時の取扱いと開示を確認する",
+        "利益を増やすため毎年自由に変える",
+        "同業他社の数字に合わせる"
+      ],
+      "answer": 1,
+      "explanation": "継続性は比較可能性と関係しますが、正当な変更まで否定するものではありません。",
+      "id": "b1-principles-q4",
+      "lesson": "b1-principles",
+      "field": "accounting"
+    }
+  ],
+  "b1-departments": [
+    {
+      "prompt": "X一次費用80,000円、Y一次費用30,000円。X＝80,000＋0.4Y、Y＝30,000＋0.2X。Xの相互配賦総額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["100000"],
+      "explanation": "X＝92,000＋0.08Xより0.92X＝92,000。X＝100,000円です。Y＝50,000円を代入して照合します。",
+      "id": "b1-departments-q1",
+      "lesson": "b1-departments",
+      "field": "industrial"
+    },
+    {
+      "prompt": "Xの総額100,000円の80%、Yの総額50,000円の60%を製造部門へ配賦します。合計はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["110000"],
+      "explanation": "80,000＋30,000＝110,000円で、一次費用80,000＋30,000円と一致します。内部用役を二重に加えません。",
+      "id": "b1-departments-q2",
+      "lesson": "b1-departments",
+      "field": "industrial"
+    },
+    {
+      "prompt": "階梯式配賦法で最初に配賦を終えた補助部門について適切なのは？",
+      "options": [
+        "後の部門から常に費用を戻す",
+        "通常は後の配賦で用役費を戻さない",
+        "必ず製造原価から除外",
+        "全部を売上に振り替える"
+      ],
+      "answer": 1,
+      "explanation": "順位に従い配賦を進め、配賦済み部門へ戻さない点が相互配賦と違います。",
+      "id": "b1-departments-q3",
+      "lesson": "b1-departments",
+      "field": "industrial"
+    },
+    {
+      "prompt": "固定補助部門費120,000円を能力比A:B＝2:1で配賦します。Aはいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["80000"],
+      "explanation": "120,000×2/3＝80,000円です。固定費を実際利用量へ無条件に比例させない条件です。",
+      "id": "b1-departments-q4",
+      "lesson": "b1-departments",
+      "field": "industrial"
+    }
+  ],
+  "b1-process": [
+    {
+      "prompt": "分離点までの結合原価300,000円。分離点売価はA400,000円、B200,000円。売価比でAへ配賦する額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200000"],
+      "explanation": "300,000×400,000/600,000＝200,000円です。",
+      "id": "b1-process-q1",
+      "lesson": "b1-process",
+      "field": "industrial"
+    },
+    {
+      "prompt": "製品Aの最終売価500,000円、分離後追加加工費100,000円。正味実現可能価額の基礎額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["400000"],
+      "explanation": "500,000−100,000＝400,000円です。他の控除費用はない条件です。",
+      "id": "b1-process-q2",
+      "lesson": "b1-process",
+      "field": "industrial"
+    },
+    {
+      "prompt": "工程原価200,000円、副産物評価額10,000円を控除する指定です。主産物へ負担させる額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["190000"],
+      "explanation": "200,000−10,000＝190,000円です。評価方法や控除先は指示に従います。",
+      "id": "b1-process-q3",
+      "lesson": "b1-process",
+      "field": "industrial"
+    },
+    {
+      "prompt": "正常仕損が終点で発生し月末仕掛品がその点を通過していない場合の基本的な負担先は？",
+      "options": ["完成品側", "必ず月末仕掛品だけ", "売上高", "資本金"],
+      "answer": 0,
+      "explanation": "発生点と通過の有無を確認します。終点に未到達の仕掛品へ無条件に同じ負担をさせません。",
+      "id": "b1-process-q4",
+      "lesson": "b1-process",
+      "field": "industrial"
+    }
+  ],
+  "b1-standard": [
+    {
+      "prompt": "標準材料A60%・100円、B40%・200円。実際総投入100kg、実際A50kg・B50kg。標準配合100kgの原価はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["14000"],
+      "explanation": "A60×100＋B40×200＝14,000円です。",
+      "id": "b1-standard-q1",
+      "lesson": "b1-standard",
+      "field": "industrial"
+    },
+    {
+      "prompt": "前問で実際配合を標準価格で評価した額は15,000円です。配合差異の不利額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["1000"],
+      "explanation": "実際配合15,000−標準配合14,000＝1,000円不利です。",
+      "id": "b1-standard-q2",
+      "lesson": "b1-standard",
+      "field": "industrial"
+    },
+    {
+      "prompt": "固定費予算100,000円、基準操業度1,000時間、実際900時間。固定費率による操業度差異の不利額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["10000"],
+      "explanation": "固定費率100円/時間×不足100時間＝10,000円です。",
+      "id": "b1-standard-q3",
+      "lesson": "b1-standard",
+      "field": "industrial"
+    },
+    {
+      "prompt": "実際時間900、標準時間850、変動費率50円/時間。変動費部分の能率差異の不利額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["2500"],
+      "explanation": "（900−850）×50＝2,500円です。固定費部分を含む方式かどうかは問題の指定で区分します。",
+      "id": "b1-standard-q4",
+      "lesson": "b1-standard",
+      "field": "industrial"
+    }
+  ],
+  "b1-cvp-model": [
+    {
+      "prompt": "活動量100時間で原価50,000円、300時間で90,000円。高低点法の変動費率はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["200"],
+      "explanation": "（90,000−50,000）÷（300−100）＝200円/時間です。",
+      "id": "b1-cvp-model-q1",
+      "lesson": "b1-cvp-model",
+      "field": "cost"
+    },
+    {
+      "prompt": "前問で固定費はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["30000"],
+      "explanation": "50,000−100×200＝30,000円です。",
+      "id": "b1-cvp-model-q2",
+      "lesson": "b1-cvp-model",
+      "field": "cost"
+    },
+    {
+      "prompt": "Aの限界利益400円、B200円、販売比A:B＝1:1、固定費90,000円。合計損益分岐点数量は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["300"],
+      "explanation": "平均限界利益300円で90,000÷300＝300個です。A150、B150の組合せです。",
+      "id": "b1-cvp-model-q3",
+      "lesson": "b1-cvp-model",
+      "field": "cost"
+    },
+    {
+      "prompt": "機械時間が制約で、Aの限界利益400円・所要2時間、B300円・所要1時間です。単純な優先順位は？",
+      "options": ["A", "B", "どちらも売上単価だけで決める", "固定費を割り振った利益だけで決める"],
+      "answer": 1,
+      "explanation": "制約一時間当たりはA200円、B300円です。需要上限等を別途確認します。",
+      "id": "b1-cvp-model-q4",
+      "lesson": "b1-cvp-model",
+      "field": "cost"
+    }
+  ],
+  "b1-decisions": [
+    {
+      "prompt": "余剰能力の特別注文で売上80,000円、追加変動費50,000円、追加固定費10,000円。他の影響なし。差額利益は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["20000"],
+      "explanation": "80,000−50,000−10,000＝20,000円です。既存共通固定費は変わらない条件です。",
+      "id": "b1-decisions-q1",
+      "lesson": "b1-decisions",
+      "field": "cost"
+    },
+    {
+      "prompt": "内製回避可能原価70,000円、外注価格80,000円。内製をやめて得る別用途の限界利益20,000円。外注による利益改善はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["10000"],
+      "explanation": "回避70,000＋別用途20,000−外注80,000＝10,000円です。",
+      "id": "b1-decisions-q2",
+      "lesson": "b1-decisions",
+      "field": "cost"
+    },
+    {
+      "prompt": "初期投資100,000円、一年後回収121,000円、割引率10%、他の収支なし。NPVはいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["10000"],
+      "explanation": "121,000÷1.1−100,000＝10,000円です。",
+      "id": "b1-decisions-q3",
+      "lesson": "b1-decisions",
+      "field": "cost"
+    },
+    {
+      "prompt": "初期投資100,000円、毎年の純現金流入25,000円、単純回収期間法。回収期間は何年ですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["4"],
+      "explanation": "100,000÷25,000＝4年です。時間価値や回収後収支を反映しない限界があります。",
+      "id": "b1-decisions-q4",
+      "lesson": "b1-decisions",
+      "field": "cost"
+    }
+  ],
+  "b1-strategic": [
+    {
+      "prompt": "段取活動費120,000円、総段取回数60回。A製品20回。Aへの活動原価配賦額は？",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["40000"],
+      "explanation": "1回2,000円×20回＝40,000円です。",
+      "id": "b1-strategic-q1",
+      "lesson": "b1-strategic",
+      "field": "cost"
+    },
+    {
+      "prompt": "目標販売価格10,000円、目標利益2,000円。許容原価はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["8000"],
+      "explanation": "10,000−2,000＝8,000円です。現状見積原価から出発する額と区別します。",
+      "id": "b1-strategic-q2",
+      "lesson": "b1-strategic",
+      "field": "cost"
+    },
+    {
+      "prompt": "部門利益150,000円、投下資本1,000,000円。ROIは何%ですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["15"],
+      "explanation": "150,000÷1,000,000×100＝15%です。",
+      "id": "b1-strategic-q3",
+      "lesson": "b1-strategic",
+      "field": "cost"
+    },
+    {
+      "prompt": "部門利益150,000円、投下資本1,000,000円、要求利益率10%。残余利益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": ["50000"],
+      "explanation": "150,000−1,000,000×10%＝50,000円です。",
+      "id": "b1-strategic-q4",
+      "lesson": "b1-strategic",
+      "field": "cost"
+    }
+  ]
+}

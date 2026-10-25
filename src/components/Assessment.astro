@@ -10,7 +10,12 @@ const { assessment: a } = Astro.props;
 <section class="assessment" data-assessment aria-labelledby="assessment-heading">
   <h2 id="assessment-heading">{a.title}</h2>
   <p>{a.questions.length}問・何度でも解き直せます。レッスンの学習済み状態とは別に記録します。</p>
-  {a.kind === 'mock' && (
+  {a.instructions && (
+    <div class="notice compact">
+      <p style="white-space:pre-line">{a.instructions}</p>
+    </div>
+  )}
+  {a.kind === 'mock' && a.qualification === 'it-passport' && (
     <div class="notice compact">
       <strong>本試験の評価点とは異なります</strong>
       <p>
@@ -67,14 +72,33 @@ const { assessment: a } = Astro.props;
     {a.questions.map((q, i) => (
       <fieldset class="assessment-question" data-question={q.id} data-question-index={i}>
         <legend tabindex="-1">
-          問{i + 1}　{q.prompt}
+          問{i + 1}　{q.group && <span>{q.group}： </span>}
+          {q.prompt}
         </legend>
-        {q.options.map((o, j) => (
-          <label class="quiz-option">
-            <input type="radio" name={q.id} value={j} disabled />
-            <span>{o}</span>
+        {q.input ? (
+          <label class="written-answer">
+            解答（{q.input === 'number' ? '金額・数値' : '勘定科目・用語'}）
+            <input
+              type="text"
+              name={q.id}
+              data-written-answer
+              inputmode={q.input === 'number' ? 'decimal' : 'text'}
+              maxlength="80"
+              autocomplete="off"
+              disabled
+            />
+            <small>
+              数値は半角・全角とカンマに対応。問題文の単位で入力してください。負の数には「-」を使います。
+            </small>
           </label>
-        ))}
+        ) : (
+          q.options.map((o, j) => (
+            <label class="quiz-option">
+              <input type="radio" name={q.id} value={j} disabled />
+              <span>{o}</span>
+            </label>
+          ))
+        )}
       </fieldset>
     ))}
   </div>

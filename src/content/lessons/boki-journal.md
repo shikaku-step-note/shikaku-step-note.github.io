@@ -6,6 +6,7 @@ description: 現金で備品を購入する例から、借方・貸方と仕訳�
 order: 2
 minutes: 7
 sample: true
+archived: true
 updated: '2026-10-24'
 keywords: [仕訳, 借方, 貸方, 備品, 現金]
 question: 備品3万円を現金で購入した。基本的な仕訳として正しいものは？

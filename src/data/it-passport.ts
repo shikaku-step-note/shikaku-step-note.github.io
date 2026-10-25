@@ -165,10 +165,18 @@ export const ipSource = (id: string) => ipSources.find((s) => s.id === id)!;
 export const questionBank = bank as Record<string, { lesson: Question[]; review: Question[] }>;
 export const mockQuestions = mock as Question[];
 type LessonLike = {
-  data: { stableId: string; title: string; unit?: number; glossary: { term: string; definition: string }[] };
+  data: {
+    stableId: string;
+    title: string;
+    qualification?: string;
+    unit?: number;
+    glossary: { term: string; definition: string }[];
+  };
 };
 export function ipAssessments(lessons: LessonLike[]): Assessment[] {
-  const active = lessons.filter((l) => !!l.data.unit).sort((a, b) => (a.data.unit ?? 0) - (b.data.unit ?? 0));
+  const active = lessons
+    .filter((l) => !!l.data.unit && l.data.qualification === 'it-passport')
+    .sort((a, b) => (a.data.unit ?? 0) - (b.data.unit ?? 0));
   const lessonTitles = Object.fromEntries(active.map((l) => [l.data.stableId, l.data.title]));
   const make = (
     id: string,

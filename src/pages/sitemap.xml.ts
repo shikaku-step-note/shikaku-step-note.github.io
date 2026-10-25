@@ -1,4 +1,5 @@
 import { getCollection } from 'astro:content';
+import { bokiCourses } from '../data/bookkeeping';
 import { qualifications } from '../data/qualifications';
 import { publicPages, href } from '../lib/site';
 import type { APIContext } from 'astro';
@@ -8,6 +9,7 @@ export async function GET({ site }: APIContext) {
     ...publicPages,
     ...qualifications.map((q) => `qualifications/${q.id}/`),
     ...lessons.map((l) => `qualifications/${l.data.qualification}/${l.data.stableId}/`),
+    ...bokiCourses.flatMap((c) => [`qualifications/${c.id}/tests/`, `qualifications/${c.id}/coverage/`]),
     'qualifications/it-passport/tests/',
     'qualifications/it-passport/coverage/',
   ];

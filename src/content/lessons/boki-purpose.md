@@ -6,6 +6,7 @@ description: お店の財産ともうけを分けて考え、簿記と財務諸�
 order: 1
 minutes: 6
 sample: true
+archived: true
 updated: '2026-10-24'
 keywords: [簿記, 会計, 資産, 負債, 純資産]
 question: 借入れによって現金が増えたとき、同時に増えるものは？

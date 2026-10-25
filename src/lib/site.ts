@@ -4,6 +4,7 @@ export const href = (path = '') => `${base}/${path.replace(/^\//, '')}`;
 export const publicPages = [
   '',
   'qualifications/',
+  'qualifications/boki/',
   'guide/',
   'about/',
   'editorial/',

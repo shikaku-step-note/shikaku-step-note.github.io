@@ -1,0 +1,135 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import { bokiCoverage } from '../../../data/boki-coverage';
+import { bokiCourses, bokiSources } from '../../../data/bookkeeping';
+import { href } from '../../../lib/site';
+export function getStaticPaths() {
+  return bokiCourses.map((c) => ({ params: { qualification: c.id }, props: { course: c } }));
+}
+const { course } = Astro.props;
+const lessons = (
+  await getCollection('lessons', (l) => l.data.qualification === course.id && !l.data.archived)
+).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Layout
+  title={`${course.name}の対応表・公式資料・教材の制約`}
+  description={`${course.name}の教材と参照した公式範囲の関係、例題・理解度チェック、適用年度、採点の制約を確認できます。`}
+  breadcrumbs={[
+    { name: '資格一覧', path: 'qualifications/' },
+    { name: course.name, path: `qualifications/${course.id}/` },
+    { name: '対応表・出典', path: `qualifications/${course.id}/coverage/` },
+  ]}
+>
+  <article class="container prose wide-prose page-section">
+    <h1>{course.name}の対応表と出典</h1>
+    <p>
+      適用範囲：2026年度。資料確認日：2026年10月25日。公式の区分と、このサイトで付けたユニット番号・レッスン番号を分けて記載します。
+    </p>
+    <h2>公式の範囲との対応と未収録項目</h2>
+    <p>
+      以下は公式区分表の項目をまとめた対応表です。「概説」や「未収録」は十分な計算演習がない項目です。本教材だけで全範囲の試験対策が完了するとは表示しません。下位級の内容は学習上の前提として、対応するコースへ戻って確認してください。
+    </p>
+    <div
+      class="coverage-table"
+      tabindex="0"
+      role="region"
+      aria-label="公式範囲と教材の対応表。横にスクロールできます"
+    >
+      <table>
+        <caption>2026年度の公式範囲との対応（商業＝商業簿記・会計学、工業＝工業簿記・原価計算）</caption>
+        <thead>
+          <tr>
+            <th scope="col">公式項目</th>
+            <th scope="col">レッスン</th>
+            <th scope="col">扱い</th>
+            <th scope="col">制約・残る課題</th>
+          </tr>
+        </thead>
+        <tbody>
+          {bokiCoverage[course.id]!.map((row) => (
+            <tr>
+              <th scope="row">{row.official}</th>
+              <td>
+                {row.lessons.length
+                  ? row.lessons.map((id) => (
+                      <p>
+                        <a href={href(`qualifications/${course.id}/${id}/`)}>
+                          {lessons.find((l) => l.data.stableId === id)?.data.title ?? id}
+                        </a>
+                      </p>
+                    ))
+                  : '独立レッスンなし'}
+              </td>
+              <td>{row.depth}</td>
+              <td>{row.note}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <h2>説明・例題・練習の対応</h2>
+    <p>
+      次の表は公開した各レッスンの学習目標です。独自の例題と理解度チェックは対応するページに掲載します。表に項目があることだけで、公式範囲のすべての派生問題を解説したと判断するものではありません。
+    </p>
+    <table>
+      <caption>公開教材の対応表（番号はサイト内の学習順）</caption>
+      <thead>
+        <tr>
+          <th scope="col">順序</th>
+          <th scope="col">レッスン</th>
+          <th scope="col">説明する内容</th>
+          <th scope="col">練習</th>
+        </tr>
+      </thead>
+      <tbody>
+        {lessons.map((l) => (
+          <tr>
+            <td>{l.data.order}</td>
+            <td>
+              <a href={href(`qualifications/${course.id}/${l.data.stableId}/`)}>{l.data.title}</a>
+            </td>
+            <td>{l.data.objectives.join('／')}</td>
+            <td>本文例題・理解度チェック・用語確認</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <h2>使う前に確認してほしいこと</h2>
+    <p>
+      本教材は独自の解説です。公式教材、専門家の監修済み教材、試験問題の転載ではありません。用語の短い説明だけで済ませず、本文の条件と計算過程を読み、公式の範囲と照らして不足する練習を補ってください。
+    </p>
+    <p>
+      総復習は理解度チェックを再利用します。模試の小問数・資料・配点は当サイトが独自に設定します。公表されない採点箇所、部分点、難易度の調整は再現できません。記入形式は数値・用語入力と選択を組み合わせ、公式の用紙やCBT画面を複製しません。
+    </p>
+    {course.id === 'boki-1' && (
+      <p>
+        1級の高度な複合論点は、基礎例だけで十分な習熟を保証できません。会計基準の適用条件、複数期の連結修正、複雑な意思決定問題などは、公式の区分表と会計基準を読み、追加の総合問題で確認する必要があります。模試は前半・後半を別々に保存し、公式の採点や合否を再現しません。
+      </p>
+    )}
+    <h2>2027年度の変更を区別する</h2>
+    <p>
+      2027年度適用の確定版は公表済みです。本サイトの現行コースへ将来の変更を混ぜず、改訂する場合は教材・問題の版を更新します。3級の45・25・30点の配点は2027年4月以降の案内であり、2026年度の演習へそのまま読み替えません。1級の期中財務諸表に関する基準は2026年度から出題対象となる旨の追記にも注意します。
+    </p>
+    <h2>公式資料と確認記録</h2>
+    <p>
+      PDFだけでなく適用年度の案内と改定説明も併読します。現行案内の商業簿記PDFには旧年のファイル名・表記が残るため、ファイル名だけで適用年度を判断しません。
+    </p>
+    <ul>
+      {bokiSources.map((s) => (
+        <li>
+          <a href={s.url}>{s.title}</a>
+          <p>{s.version}。確認：2026年10月25日。</p>
+        </li>
+      ))}
+    </ul>
+    <p>
+      <a href={href(`downloads/${course.id}-curriculum.txt`)} download>
+        学習ツリー・スケジュールTXT
+      </a>{' '}
+      ・ <a href={href(`qualifications/${course.id}/`)}>コースへ戻る</a> ・{' '}
+      <a href={href('contact/')}>訂正の連絡方法</a>
+    </p>
+  </article>
+</Layout>

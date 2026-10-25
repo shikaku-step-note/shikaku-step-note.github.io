@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node --import tsx scripts/export-ip-curriculum.mjs && astro build",
+    "build": "node --import tsx scripts/export-ip-curriculum.mjs && node --import tsx scripts/export-boki-curriculum.mjs && astro build",
     "preview": "astro preview",
     "check": "astro check",
     "verify": "node scripts/verify.mjs",
-    "test:storage": "node --import tsx --test tests/storage.test.ts tests/assessment.test.ts",
-    "curriculum": "node --import tsx scripts/export-ip-curriculum.mjs"
+    "test:storage": "node --import tsx --test tests/storage.test.ts tests/assessment.test.ts tests/bookkeeping.test.ts",
+    "curriculum": "node --import tsx scripts/export-ip-curriculum.mjs && node --import tsx scripts/export-boki-curriculum.mjs"
   },
   "packageManager": "pnpm@11.25.0",
   "engines": {

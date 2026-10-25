@@ -4,7 +4,9 @@ import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
 import Share from '../../../components/Share.astro';
 import Assessment from '../../../components/Assessment.astro';
-import { ipAssessments, ipSource, units } from '../../../data/it-passport';
+import { ipSource, units } from '../../../data/it-passport';
+import { allAssessments } from '../../../data/assessments';
+import { bokiCourse } from '../../../data/bookkeeping';
 import { qualificationById } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -25,7 +27,10 @@ const prev = siblings[index - 1];
 const next = siblings[index + 1];
 const { Content, headings } = await render(lesson);
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const assessment = d.unit ? ipAssessments(allLessons).find((a) => a.id === `${d.stableId}-check`) : undefined;
+const assessment = d.unit
+  ? allAssessments(allLessons).find((a) => a.id === `${d.stableId}-check`)
+  : undefined;
+const boki = bokiCourse(q.id);
 const unit = units.find((u) => u.id === d.unit);
 ---
 
@@ -76,7 +81,7 @@ const unit = units.find((u) => u.id === d.unit);
             ? '旧サンプル教材（記録を保管）'
             : d.sample
               ? '入門サンプル教材・独自の解説と練習問題'
-              : `シラバスVer.6.5・ユニット${d.unit} ${unit?.name}・独自教材`}
+              : (d.scopeLabel ?? `シラバスVer.6.5・ユニット${d.unit} ${unit?.name}・独自教材`)}
         </p>
         <div class="lesson-toolbar">
           <button class="button secondary" data-start={d.stableId} type="button">
@@ -100,7 +105,7 @@ const unit = units.find((u) => u.id === d.unit);
           {d.archived && (
             <p>
               現行コースは新しいレッスンとして公開しました。この記録は新コースの完了数へ加算されません。
-              <a href={href('qualifications/it-passport/')}>現行コースへ</a>
+              <a href={href(`qualifications/${q.id}/`)}>現行コースへ</a>
             </p>
           )}
         </div>
@@ -115,7 +120,8 @@ const unit = units.find((u) => u.id === d.unit);
           </ul>
           <p class="muted">前提：{d.prerequisite}</p>
           <p class="muted">
-            公式シラバス対応項目：{d.syllabus.join('、')}。表示時間は当サイトの学習目安です。
+            {boki ? '教材内の対応番号（公式の番号ではありません）' : '公式シラバス対応項目'}：
+            {d.syllabus.join('、')}。表示時間は当サイトの学習目安です。
           </p>
         </section>
       )}
@@ -151,11 +157,11 @@ const unit = units.find((u) => u.id === d.unit);
             ))}
           </dl>
           <p>
-            <a href={href(`qualifications/it-passport/tests/ip-unit-${d.unit}-glossary/`)}>
+            <a href={href(`qualifications/${q.id}/tests/${boki ? q.id : 'ip'}-unit-${d.unit}-glossary/`)}>
               このユニットの用語テストへ
             </a>
             ・
-            <a href={href(`qualifications/it-passport/tests/ip-unit-${d.unit}-review/`)}>
+            <a href={href(`qualifications/${q.id}/tests/${boki ? q.id : 'ip'}-unit-${d.unit}-review/`)}>
               ユニット総合確認へ
             </a>
           </p>
@@ -240,7 +246,14 @@ const unit = units.find((u) => u.id === d.unit);
           教材更新日：<time datetime={d.updated}>{d.updated}</time>。<a href={href('editorial/')}>編集方針</a>
           ・<a href={href('contact/')}>訂正の連絡方法</a>
         </p>
-        {d.unit && (
+        {boki && (
+          <p>
+            範囲・公式資料の確認日：2026年10月25日。
+            <a href={href(`qualifications/${q.id}/coverage/`)}>対応表と出典一覧</a>
+            をご確認ください。金額は独自の学習例です。
+          </p>
+        )}
+        {d.unit && !boki && (
           <p>
             範囲確認：<a href={ipSource('syllabus').url}>IPA シラバスVer.6.5</a>（確認日{' '}
             {ipSource('syllabus').verified}

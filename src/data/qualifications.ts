@@ -1,3 +1,4 @@
+import { bokiCourses, bokiReviewed } from './bookkeeping';
 export interface Qualification {
   id: string;
   name: string;
@@ -18,6 +19,28 @@ export interface Qualification {
   status: 'course' | 'sample';
 }
 export const qualifications: Qualification[] = [
+  ...bokiCourses
+    .filter((c) => c.id !== 'boki-3')
+    .map((c) => ({
+      id: c.id,
+      status: 'course' as const,
+      name: c.name,
+      shortName: c.name.replace('日商', ''),
+      category: '会計・ビジネス',
+      color: 'blue',
+      icon: 'book',
+      intro: '取引と数字の意味を、例題から一つずつ。',
+      description: `${c.name}を独自の解説・例題・理解度チェック・用語確認で学びます。適用範囲と教材の制約は対応表で確認できます。`,
+      audience: ['取引の理由を理解しながら学びたい方', '例題を紙と電卓で確かめたい方'],
+      outcome: '仕訳・計算の手順を説明し、条件に合う処理を選ぶ練習をします。',
+      prerequisite: c.prerequisite,
+      groups: c.groups,
+      official: 'https://www.kentei.ne.jp/bookkeeping',
+      officialName: '日本商工会議所：簿記',
+      reviewed: bokiReviewed,
+      scope:
+        '2026年度適用範囲を参照した独自教材です。公式の問題・採点・難易度を再現するものではありません。対応表で説明・練習の到達範囲をご確認ください。',
+    })),
   {
     id: 'it-passport',
     status: 'course',
@@ -46,7 +69,7 @@ export const qualifications: Qualification[] = [
   },
   {
     id: 'boki-3',
-    status: 'sample',
+    status: 'course',
     name: '日商簿記3級',
     shortName: '簿記3級',
     category: '会計・ビジネス',
@@ -54,17 +77,17 @@ export const qualifications: Qualification[] = [
     icon: 'book',
     intro: 'お金の動きを、読める力に。',
     description:
-      '取引を記録するルールを、日常の小さなお店の例で学びます。資産や負債の意味をつかみ、仕訳から決算の入口まで順番に進めます。',
+      '2026年度の商業簿記を、取引の記録から決算まで順番に学びます。用語確認と総合演習で、処理の理由も確かめます。',
     audience: ['簿記を初めて学ぶ方', '経理や会計の基礎を知りたい方', '事業のお金の流れを理解したい方'],
     outcome: '基本的な取引を左右に分けて記録し、貸借対照表と損益計算書の役割を説明できるようになります。',
     prerequisite:
       '特別な会計知識は不要です。四則計算を使います。紙とペンがあると、仕訳の練習がしやすくなります。',
-    groups: ['簿記の全体像をつかむ', '取引を仕訳にする', '決算の入口を知る'],
+    groups: ['取引を仕訳にする', '帳簿と決算をつなぐ'],
     official: 'https://www.kentei.ne.jp/bookkeeping/class3',
     officialName: '日本商工会議所：簿記3級',
-    reviewed: '2026-10-24',
+    reviewed: bokiReviewed,
     scope:
-      '日商簿記3級は商業簿記の基礎を学ぶ検定です。このサイトのサンプルは、簿記の目的・基本的な仕訳・決算の考え方に絞っています。最新の出題区分や受験案内は主催者の案内で確認してください。',
+      '2026年度適用の商業簿記を対象とする独自の基礎コースです。旧サンプルは別に保管し、現行レッスンの完了数に加えません。対応表で扱う範囲と制約をご確認ください。',
   },
   {
     id: 'fp-3',
@@ -93,6 +116,8 @@ export const qualifications: Qualification[] = [
       'FP技能検定の学習は、生活設計、保険、金融、税、不動産、相続などの領域に広がります。このサンプルは最初の三つの考え方を紹介するもので、制度の詳細や試験範囲全体は扱っていません。',
   },
 ];
+const displayOrder = ['it-passport', 'boki-beginner', 'cost-beginner', 'boki-3', 'boki-2', 'boki-1', 'fp-3'];
+qualifications.sort((a, b) => displayOrder.indexOf(a.id) - displayOrder.indexOf(b.id));
 export const qualificationById = (id: string) => qualifications.find((q) => q.id === id)!;
 export const availabilityText = qualifications
   .map((q) => `${q.name}（${q.status === 'course' ? '基礎コース' : '入門サンプル'}）`)

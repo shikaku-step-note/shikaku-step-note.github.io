@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../../layouts/Layout.astro';
+import Assessment from '../../../../components/Assessment.astro';
+import Share from '../../../../components/Share.astro';
+import { bokiAssessments } from '../../../../data/bookkeeping';
+import { qualificationById } from '../../../../data/qualifications';
+import { href } from '../../../../lib/site';
+export async function getStaticPaths() {
+  return bokiAssessments(await getCollection('lessons'))
+    .filter((a) => a.kind !== 'lesson')
+    .map((a) => ({ params: { qualification: a.qualification, assessment: a.id }, props: { assessment: a } }));
+}
+const { assessment: a } = Astro.props;
+const q = qualificationById(a.qualification);
+---
+
+<Layout
+  title={`${a.title}｜資格ステップノートの独自練習`}
+  description={`${a.title}に取り組み、解答と結果をこの端末に保存できます。公式問題や公式採点を再現するものではありません。`}
+  noindex
+  breadcrumbs={[
+    { name: '資格一覧', path: 'qualifications/' },
+    { name: q.name, path: `qualifications/${q.id}/` },
+    { name: 'テスト一覧', path: `qualifications/${q.id}/tests/` },
+    { name: a.title, path: `qualifications/${q.id}/tests/${a.id}/` },
+  ]}
+>
+  <article class="container page-section assessment-page">
+    <h1>{a.title}</h1>
+    <p>
+      紙と電卓を用意し、問題文の単位・条件・期間を確かめて解答してください。未解答のまま提出することもできます。
+    </p>
+    <Assessment assessment={a} />
+    <p>
+      <a href={href(`qualifications/${q.id}/tests/`)}>テスト一覧に戻る</a> ・{' '}
+      <a href={href(`qualifications/${q.id}/`)}>学習ステップに戻る</a> ・{' '}
+      <a href={href(`qualifications/${q.id}/coverage/`)}>公式資料・採点の制約</a>
+    </p>
+    <Share title={a.title} url={new URL(Astro.url.pathname, Astro.site).href} />
+  </article>
+</Layout>

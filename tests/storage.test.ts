@@ -55,7 +55,7 @@ test('rejects hostile or invalid backup data', () => {
 });
 test('known v1 data migrates without relying on titles or URLs', () => {
   const old = { ...emptyData(), version: 1 };
-  assert.equal(validateData(old).version, 3);
+  assert.equal(validateData(old).version, 4);
 });
 test('concurrent changes are serialized without losing records', async () => {
   const s = new StudyStorage();

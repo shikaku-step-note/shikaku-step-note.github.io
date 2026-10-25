@@ -368,3 +368,76 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+.grade-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 2rem;
+}
+.grade-selector a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.grade-selector a[aria-current='page'] {
+  background: var(--mint);
+  border-color: var(--teal);
+  font-weight: 700;
+}
+.written-answer {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.2rem 0;
+}
+.written-answer input {
+  width: min(100%, 28rem);
+  min-height: 48px;
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--muted);
+  border-radius: 8px;
+  font: inherit;
+  background: var(--surface);
+  color: var(--ink);
+}
+.written-answer small {
+  color: var(--muted);
+  line-height: 1.7;
+}
+.coverage-table {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 1.5rem 0;
+}
+.coverage-table table {
+  min-width: 650px;
+  margin: 0;
+}
+.coverage-table p {
+  margin: 0 0 0.6rem;
+}
+.qualification-menu .dropdown {
+  max-height: 70vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.curriculum-unit h3 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+@media (max-width: 600px) {
+  .grade-selector {
+    gap: 0.5rem;
+  }
+  .grade-selector a {
+    flex: 1 1 125px;
+    font-size: 0.85rem;
+  }
+  .written-answer input {
+    font-size: 16px;
+  }
+}

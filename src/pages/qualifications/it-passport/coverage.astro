@@ -3,9 +3,9 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import { units, syllabusItems, ipSources, fieldNames } from '../../../data/it-passport';
 import { href } from '../../../lib/site';
-const lessons = (await getCollection('lessons', (l) => !!l.data.unit)).sort(
-  (a, b) => a.data.order - b.data.order,
-);
+const lessons = (
+  await getCollection('lessons', (l) => l.data.qualification === 'it-passport' && !!l.data.unit)
+).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Layout

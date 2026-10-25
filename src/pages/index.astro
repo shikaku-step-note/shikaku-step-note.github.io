@@ -8,7 +8,7 @@ import { href } from '../lib/site';
 
 <Layout
   title="資格ステップノート"
-  description="資格の学びを、ひとつずつ。ITパスポート・日商簿記3級・FP3級の入門を無料で学べる資格学習サイト。登録不要で、学習の進み具合をこの端末に保存できます。"
+  description="資格の学びを、ひとつずつ。ITパスポート、日商簿記の各級、FP3級の入門を無料で学べる資格学習サイト。登録不要で、学習の進み具合をこの端末に保存できます。"
 >
   <section class="hero">
     <div class="container hero-grid">
@@ -114,6 +114,10 @@ import { href } from '../lib/site';
       仕事に役立つ知識も、暮らしに身近な知識も。
       <br />
       まずは気になる資格の、最初のレッスンへ。
+    </p>
+    <p class="notice compact">
+      簿記を学びたい方へ：
+      <a href={href('qualifications/boki/')}>簿記初級・原価計算初級・3級・2級・1級の違いと学習順を見る</a>
     </p>
     <div class="qualification-grid">
       {qualifications.map((q) => (

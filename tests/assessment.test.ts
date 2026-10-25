@@ -86,9 +86,9 @@ test('mock scoring keeps field totals separate and does not manufacture an IRT s
   for (const q of mock.questions) attempt.answers[q.id] = q.answer;
   const result = gradeAttempt(mock, attempt);
   assert.equal(result.score, 100);
-  assert.equal(result.fields.strategy.correct, 35);
-  assert.equal(result.fields.management.correct, 20);
-  assert.equal(result.fields.technology.correct, 45);
+  assert.equal(result.fields.strategy!.correct, 35);
+  assert.equal(result.fields.management!.correct, 20);
+  assert.equal(result.fields.technology!.correct, 45);
   assert.equal(result.missed.length, 0);
   const blank = gradeAttempt(mock, newAttempt(mock, 'practice'));
   assert.equal(blank.score, 0);
@@ -121,7 +121,7 @@ test('v1 and v2 backups preserve legacy completion without creating new course c
       },
     };
     const data = validateData(old);
-    assert.equal(data.version, 3);
+    assert.equal(data.version, 4);
     assert.equal(data.records['it-business']!.status, 'completed');
     assert.equal(data.records['ip-organization'], undefined);
     assert.deepEqual(data.assessments, {});
@@ -164,7 +164,7 @@ test('invalid assessment backups are rejected including malformed answers and in
     assert.throws(() => validateData(data), JSON.stringify(change));
   }
   const scored = gradeAttempt(mock, a);
-  scored.fields.strategy.correct = 1;
+  scored.fields.strategy!.correct = 1;
   const data = emptyData();
   data.assessments[mock.id] = [scored];
   assert.throws(() => validateData(data));

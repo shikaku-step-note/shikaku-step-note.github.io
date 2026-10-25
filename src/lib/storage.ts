@@ -1,4 +1,4 @@
-import type { AssessmentAttempt, AssessmentKind, Field } from './assessment';
+import type { AssessmentAttempt, AssessmentKind } from './assessment';
 export type Status = 'not-started' | 'studying' | 'completed';
 export interface StudyRecord {
   status: Status;
@@ -9,7 +9,7 @@ export interface StudyRecord {
 }
 export interface StudyData {
   app: 'shikaku-step-note';
-  version: 3;
+  version: 4;
   savedAt: string;
   lastLesson: string | null;
   records: Record<string, StudyRecord>;
@@ -17,7 +17,7 @@ export interface StudyData {
 }
 export const emptyData = (): StudyData => ({
   app: 'shikaku-step-note',
-  version: 3,
+  version: 4,
   savedAt: new Date().toISOString(),
   lastLesson: null,
   records: {},
@@ -33,7 +33,7 @@ export function validateData(value: unknown): StudyData {
   if (
     !isObject(value) ||
     value.app !== 'shikaku-step-note' ||
-    ![1, 2, 3].includes(value.version as number) ||
+    ![1, 2, 3, 4].includes(value.version as number) ||
     !isObject(value.records) ||
     !validDate(value.savedAt)
   )
@@ -68,7 +68,7 @@ export function validateData(value: unknown): StudyData {
     };
   }
   if (result.lastLesson && !result.records[result.lastLesson]) result.lastLesson = null;
-  if (value.version === 3) {
+  if (value.version === 3 || value.version === 4) {
     if (!isObject(value.assessments) || Object.keys(value.assessments).length > 1000)
       throw new Error('テスト記録の形式が正しくありません。');
     let attempts = 0;
@@ -119,14 +119,29 @@ export function validateData(value: unknown): StudyData {
           (row.deadline !== null && Date.parse(row.deadline as string) <= Date.parse(row.startedAt))
         )
           throw new Error('テストの状態に矛盾があります。');
-        const answers: Record<string, number> = {};
+        const answers: AssessmentAttempt['answers'] = {};
         for (const [qid, answer] of Object.entries(row.answers)) {
-          if (!validId(qid) || !Number.isInteger(answer) || Number(answer) < 0 || Number(answer) > 9)
+          if (
+            !validId(qid) ||
+            !(
+              (typeof answer === 'number' && Number.isInteger(answer) && answer >= 0 && answer <= 9) ||
+              (value.version === 4 && typeof answer === 'string' && answer.length <= 80)
+            )
+          )
             throw new Error('テストの選択肢が正しくありません。');
-          answers[qid] = Number(answer);
+          answers[qid] = answer as number | string;
         }
         const fields = {} as AssessmentAttempt['fields'];
-        for (const name of ['strategy', 'management', 'technology'] as Field[]) {
+        const fieldNames = Object.keys(row.fields);
+        if (
+          !fieldNames.length ||
+          fieldNames.length > 16 ||
+          !fieldNames.every(validId) ||
+          (value.version === 3 &&
+            !['strategy', 'management', 'technology'].every((f) => fieldNames.includes(f)))
+        )
+          throw new Error('分野の識別子が正しくありません。');
+        for (const name of fieldNames) {
           const field = row.fields[name];
           if (
             !isObject(field) ||

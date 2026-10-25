@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 import { qualifications } from '../data/qualifications';
 import { href } from '../lib/site';
-import { ipAssessments } from '../data/it-passport';
+import { allAssessments } from '../data/assessments';
 export async function GET() {
   const lessons = await getCollection('lessons');
   return new Response(
@@ -27,11 +27,11 @@ export async function GET() {
         url: href(`qualifications/${l.data.qualification}/${l.data.stableId}/`),
         keywords: [...l.data.keywords, qualifications.find((q) => q.id === l.data.qualification)!.name],
       })),
-      ...ipAssessments(lessons).map((a) => ({
+      ...allAssessments(lessons).map((a) => ({
         id: a.id,
         title: a.title,
         description: `${a.questions.length}問の${a.kind === 'glossary' ? '用語' : a.kind === 'mock' ? '模擬試験' : a.kind === 'lesson' ? '理解度チェック' : '復習'}。解答と結果はこのブラウザに保存します。`,
-        qualification: 'it-passport',
+        qualification: a.qualification,
         kind:
           a.kind === 'glossary'
             ? '用語テスト'
@@ -44,9 +44,13 @@ export async function GET() {
         assessmentVersion: a.version,
         url:
           a.kind === 'lesson'
-            ? href(`qualifications/it-passport/${a.questions[0]!.lesson}/#practice`)
-            : href(`qualifications/it-passport/tests/${a.id}/`),
-        keywords: ['ITパスポート', a.kind === 'mock' ? '模試' : 'テスト', a.title],
+            ? href(`qualifications/${a.qualification}/${a.questions[0]!.lesson}/#practice`)
+            : href(`qualifications/${a.qualification}/tests/${a.id}/`),
+        keywords: [
+          qualifications.find((q) => q.id === a.qualification)!.name,
+          a.kind === 'mock' ? '模試' : 'テスト',
+          a.title,
+        ],
       })),
     ]),
     { headers: { 'Content-Type': 'application/json; charset=utf-8' } },

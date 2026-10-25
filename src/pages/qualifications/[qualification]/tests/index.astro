@@ -1,0 +1,50 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../../layouts/Layout.astro';
+import { bokiCourses, bokiAssessments } from '../../../../data/bookkeeping';
+import { href } from '../../../../lib/site';
+export function getStaticPaths() {
+  return bokiCourses.map((course) => ({ params: { qualification: course.id }, props: { course } }));
+}
+const { course } = Astro.props;
+const tests = bokiAssessments(await getCollection('lessons')).filter(
+  (a) => a.qualification === course.id && a.kind !== 'lesson',
+);
+---
+
+<Layout
+  title={`${course.name}の用語・総復習・模擬試験`}
+  description={`${course.name}の用語確認、ユニット総合確認、総復習、独自模試を選べます。解答と結果はブラウザに保存します。`}
+  breadcrumbs={[
+    { name: '資格一覧', path: 'qualifications/' },
+    { name: course.name, path: `qualifications/${course.id}/` },
+    { name: 'テスト一覧', path: `qualifications/${course.id}/tests/` },
+  ]}
+>
+  <article class="container prose wide-prose page-section">
+    <h1>{course.name}のテストを選ぶ</h1>
+    <p>
+      用語の確認から応用へ進み、最後に時間を計って演習します。レッスンの学習済み状態と、テストの得点は別の記録です。
+    </p>
+    <p>
+      用語問題は本文の定義から生成します。ユニット確認と総復習はレッスンの問題を再利用し、模試には別の独自問題を使います。何度でも解き直せますが、同じ問題の点数が上がっただけで範囲全体を習得したとは判断しません。
+    </p>
+    <ul class="test-directory">
+      {tests.map((a) => (
+        <li>
+          <h2>
+            <a href={href(`qualifications/${a.qualification}/tests/${a.id}/`)}>{a.title}</a>
+          </h2>
+          <p>
+            {a.questions.length}小問{a.minutes ? `・時間あり${a.minutes}分／時間制限なし` : '・時間制限なし'}
+          </p>
+        </li>
+      ))}
+    </ul>
+    <p>
+      端末の時計変更による影響は防げません。時間ありの演習では閉じている間も時間が進みます。
+      <a href={href('guide/')}>記録と使い方</a> ・{' '}
+      <a href={href(`qualifications/${course.id}/coverage/`)}>公式資料と制約</a>
+    </p>
+  </article>
+</Layout>

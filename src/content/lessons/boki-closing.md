@@ -6,6 +6,7 @@ description: 収益と費用、利益の関係を確認し、決算整理が必�
 order: 3
 minutes: 5
 sample: true
+archived: true
 updated: '2026-10-24'
 keywords: [決算, 収益, 費用, 利益, 損益計算書]
 question: 収益が12万円、費用が8万円のとき、この例の利益はいくら？

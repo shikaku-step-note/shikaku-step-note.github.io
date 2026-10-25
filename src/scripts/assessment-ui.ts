@@ -1,5 +1,8 @@
 import {
   gradeAttempt,
+  isCorrect,
+  practicePoints,
+  fieldPoints,
   newAttempt,
   remainingSeconds,
   compatibleAttempt,
@@ -13,6 +16,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
   const root = document.querySelector<HTMLElement>('[data-assessment]');
   if (!root) return;
   const a = JSON.parse(root.querySelector('[data-assessment-json]')!.textContent!) as Assessment;
+  const fieldNames: Record<string, string> = a.fieldNames ?? names;
   const el = <T extends HTMLElement = HTMLElement>(s: string) => root.querySelector<T>(s)!;
   const questions = Array.from(root.querySelectorAll<HTMLElement>('[data-question]'));
   const begin = el<HTMLButtonElement>('[data-assessment-begin]');
@@ -132,7 +136,9 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       field.hidden = i !== attempt!.cursor;
       field.querySelectorAll<HTMLInputElement>('input').forEach((input) => {
         input.disabled = false;
-        input.checked = attempt!.answers[field.dataset.question!] === Number(input.value);
+        if (input.hasAttribute('data-written-answer'))
+          input.value = String(attempt!.answers[field.dataset.question!] ?? '');
+        else input.checked = attempt!.answers[field.dataset.question!] === Number(input.value);
       });
     });
     el('[data-question-position]').textContent = `問${attempt.cursor + 1} / ${a.questions.length}`;
@@ -189,20 +195,71 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
         'exam-score',
       ),
     );
-    if (a.kind === 'mock')
+    if (a.kind === 'mock' && a.qualification === 'it-passport')
       result.append(text('p', '全問各1点の練習得点です。IRT評価点や公式の合否には換算できません。'));
+    if (a.qualification !== 'it-passport') {
+      const totalPoints = a.questions.reduce((n, q) => n + (q.points ?? 1), 0);
+      result.append(
+        text(
+          'p',
+          `独自練習得点：${practicePoints(a, attempt)} / ${totalPoints}点。公式採点や本試験の合否を保証するものではありません。`,
+        ),
+      );
+    }
     const dl = document.createElement('dl');
     dl.className = 'field-scores';
-    for (const key of Object.keys(names) as (keyof typeof names)[]) {
+    for (const key of Object.keys(fieldNames)) {
       const f = attempt.fields[key];
-      if (f.total) {
+      if (f?.total) {
         dl.append(
-          text('dt', names[key]),
+          text('dt', fieldNames[key]!),
           text('dd', `${f.correct}/${f.total}問正解（${Math.round((f.correct / f.total) * 100)}%）`),
         );
       }
     }
     result.append(dl);
+    if (a.kind === 'mock' && a.qualification !== 'it-passport') {
+      const points = fieldPoints(a, attempt);
+      const list = document.createElement('ul');
+      for (const [key, f] of Object.entries(points))
+        list.append(text('li', `${fieldNames[key] ?? key}：${f.score} / ${f.total}点（独自配点）`));
+      result.append(list);
+      if (a.companion) {
+        const otherDefinition = {
+          ...a,
+          id: a.companion.id,
+          version: a.companion.version,
+          questions: a.companion.questions,
+        };
+        const other = (storage.data.assessments[a.companion.id] ?? []).find(
+          (r) => r.finishedAt && compatibleAttempt(otherDefinition, r),
+        );
+        result.append(text('h3', '前半・後半の振り返り'));
+        if (other) {
+          const combined = { ...points, ...fieldPoints(a.companion, other) };
+          const total = Object.values(combined).reduce((n, f) => n + f.score, 0);
+          result.append(
+            text(
+              'p',
+              `今回と、もう一方の直近完了回の合計：${total} / 100点。連続した一回の受験記録ではありません。`,
+            ),
+          );
+          const ul = document.createElement('ul');
+          for (const [key, f] of Object.entries(combined))
+            ul.append(text('li', `${fieldNames[key] ?? key}：${f.score} / ${f.total}点`));
+          result.append(
+            ul,
+            text(
+              'p',
+              '公式の基準は合計70%以上かつ各科目40%以上です。独自配点の練習結果から公式の合否は判定しません。得点が偏った科目を復習してください。',
+            ),
+          );
+        } else
+          result.append(
+            text('p', 'もう一方の模試の現行版を完了すると、両方の直近結果をここで確認できます。'),
+          );
+      }
+    }
     const missedLessons = [
       ...new Set(a.questions.filter((q) => attempt!.missed.includes(q.id)).map((q) => q.lesson)),
     ];
@@ -212,7 +269,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       for (const id of missedLessons) {
         const li = document.createElement('li');
         const link = document.createElement('a');
-        link.href = href(`qualifications/it-passport/${id}/`);
+        link.href = href(`qualifications/${a.qualification}/${id}/`);
         link.textContent = a.lessonTitles?.[id] ?? '関連レッスンで復習する';
         li.append(link);
         ul.append(li);
@@ -223,22 +280,29 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     a.questions.forEach((q, i) => {
       const details = document.createElement('details');
       details.className = 'answer-explanation';
-      const correct = attempt!.answers[q.id] === q.answer;
+      const correct = isCorrect(q, attempt!.answers[q.id]);
       details.append(text('summary', `問${i + 1} ${correct ? '正解' : '要復習'}：${q.prompt}`));
       details.append(
         text(
           'p',
-          `あなたの解答：${attempt!.answers[q.id] === undefined ? '未解答' : (q.options[attempt!.answers[q.id]!] ?? '不明な選択肢')}`,
+          `あなたの解答：${attempt!.answers[q.id] === undefined ? '未解答' : q.input ? String(attempt!.answers[q.id]) : (q.options[Number(attempt!.answers[q.id])] ?? '不明な選択肢')}`,
         ),
-        text('p', `正解：${q.options[q.answer]}`),
+        text('p', `正解：${q.input ? q.accepted?.[0] : q.options[q.answer]}`),
         text('p', q.explanation),
       );
       const link = document.createElement('a');
-      link.href = href(`qualifications/it-passport/${q.lesson}/`);
+      link.href = href(`qualifications/${a.qualification}/${q.lesson}/`);
       link.textContent = 'この内容をレッスンで復習する';
       details.append(link);
       result.append(details);
     });
+    if (a.nextAssessment) {
+      const next = document.createElement('a');
+      next.href = href(`qualifications/${a.qualification}/tests/${a.nextAssessment}/`);
+      next.className = 'button secondary';
+      next.textContent = '後半の模試へ（休憩後に開始）';
+      result.append(next);
+    }
     const retry = text('button', 'もう一度取り組む', 'button primary') as HTMLButtonElement;
     retry.type = 'button';
     retry.addEventListener('click', () => {
@@ -285,13 +349,16 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     ending = false;
   }
   root.querySelectorAll<HTMLInputElement>('[data-question] input').forEach((input) =>
-    input.addEventListener('change', () => {
+    input.addEventListener(input.hasAttribute('data-written-answer') ? 'input' : 'change', () => {
       if (!attempt || attempt.finishedAt) return;
       if (remainingSeconds(attempt) === 0) {
         void finish(true);
         return;
       }
-      attempt.answers[input.name] = Number(input.value);
+      if (input.hasAttribute('data-written-answer')) {
+        if (input.value.trim()) attempt.answers[input.name] = input.value;
+        else delete attempt.answers[input.name];
+      } else attempt.answers[input.name] = Number(input.value);
       save();
       renderActive();
     }),

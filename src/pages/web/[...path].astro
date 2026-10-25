@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { qualifications } from '../../data/qualifications';
-import { ipAssessments } from '../../data/it-passport';
+import { allAssessments } from '../../data/assessments';
 import { publicPages, href } from '../../lib/site';
 export async function getStaticPaths() {
   if (import.meta.env.BASE_URL !== '/') return [];
@@ -14,9 +14,9 @@ export async function getStaticPaths() {
     ...lessons.map((l) => `qualifications/${l.data.qualification}/${l.data.stableId}/`),
     'qualifications/it-passport/coverage/',
     'qualifications/it-passport/tests/',
-    ...ipAssessments(lessons)
+    ...allAssessments(lessons)
       .filter((a) => a.kind !== 'lesson')
-      .map((a) => `qualifications/it-passport/tests/${a.id}/`),
+      .map((a) => `qualifications/${a.qualification}/tests/${a.id}/`),
   ];
   return paths.map((path) => ({
     params: { path: path.replace(/\/$/, '') || undefined },

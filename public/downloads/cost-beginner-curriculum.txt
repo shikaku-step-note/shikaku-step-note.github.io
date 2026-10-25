@@ -1,0 +1,148 @@
+日商原価計算初級 学習ツリー・スケジュール
+適用：2026年度の範囲を参照。2027年度は別途改訂。
+資料確認日：2026-10-25
+前提：割合と四則計算を使います。簿記初級の受験は必須ではありません。原価と支出の違いから学べます。
+公式の級とサイト内のユニット・レッスンは異なります。
+1日30分を週5日、4週間を目安にします。原価分類、配賦、在庫と損益、CVP・差異分析の順に進み、最後の週に用語の総復習と40分の演習を置きます。
+
+学習ツリー
+日商原価計算初級
+  ユニット1 原価の分類と集計
+    1. [cb-classify] 原価を目的・費目・製品との関係で分類する（学習目安35分）
+      科目：原価計算
+      目標：何を作るために、何を使ったかを考える／材料費・労務費・経費に分ける／直接費と間接費は、対象との結び付きで決まる
+      前提：この級のコース案内で前提知識を確認してください。例題では問題文の条件と単位を使います。
+      次：cb-allocate
+      理解度チェック：[cb-classify-check]
+      用語：材料費・労務費・直接費・間接費
+    2. [cb-allocate] 間接費を配賦し、製品ごとの原価を求める（学習目安35分）
+      科目：原価計算
+      目標：共通費を分ける基準を選ぶ／配賦率と配賦額を順に計算する／直接費と配賦額を足して製品原価を出す
+      前提：前のレッスンを読んでから進みます。忘れた用語は本文と用語欄で確かめてください。
+      次：cb-inventory
+      理解度チェック：[cb-allocate-check]
+      用語：配賦・配賦率・直課・製造原価
+    用語確認：[cost-beginner-unit-1-glossary]
+    総合確認：[cost-beginner-unit-1-review]
+    復習：翌日・1週間後に例題を見ずに解く。
+  ユニット2 利益計画と製品別の損益
+    3. [cb-inventory] 仕掛品・製品・売上原価と製品別の損益（学習目安35分）
+      科目：原価計算
+      目標：製造した原価と、売れた原価を分ける／例題：完成品原価を求める／完成した製品から売上原価へ進む
+      前提：前のレッスンを読んでから進みます。忘れた用語は本文と用語欄で確かめてください。
+      次：cb-cvp
+      理解度チェック：[cb-inventory-check]
+      用語：仕掛品・製品・売上原価・売上総利益
+    4. [cb-cvp] 損益分岐点と売上高の差異を計算する（学習目安35分）
+      科目：原価計算
+      目標：売れる量が変わると、利益はどう変わるか／損益分岐点販売量を求める／目標利益を得る販売量を考える
+      前提：前のレッスンを読んでから進みます。忘れた用語は本文と用語欄で確かめてください。
+      次：cost-beginner-review-all
+      理解度チェック：[cb-cvp-check]
+      用語：変動費・固定費・貢献利益・損益分岐点
+    用語確認：[cost-beginner-unit-2-glossary]
+    総合確認：[cost-beginner-unit-2-review]
+    復習：翌日・1週間後に例題を見ずに解く。
+
+総復習・模試
+  [cb-allocate-check] 間接費を配賦し、製品ごとの原価を求める：理解度チェック／4小問
+  [cost-beginner-terms-all] 日商原価計算初級 用語総復習／16小問
+  [cost-beginner-review-all] 日商原価計算初級 総復習／16小問
+  [cost-beginner-mock] 日商原価計算初級 基礎形式模試／15小問／40分
+
+公式範囲と教材の対応
+原価計算初級：原価の概念と分類 → cb-classify／説明・分類例・チェック
+  制約：支出、原価、費用の違いも確認します。
+原価計算初級：直課・配賦、製品別原価 → cb-allocate／数値例・チェック
+  制約：一つの配賦基準を使う基本例です。
+原価計算初級：仕掛品・製品・損益計算 → cb-inventory／増減表と計算例
+  制約：月初・月末を区別します。
+原価計算初級：CVP・売上高差異 → cb-cvp／分岐点・目標利益・価格数量差異
+  制約：仮定を固定した単純例です。
+
+範囲・制約
+各レッスンの目標、例題、理解度チェックの対応をWebの対応表で確認してください。
+用語テストは本文の定義、総復習はレッスン問題を再利用。模試は別の独自問題です。
+公式の採点箇所・部分点・難易度を再現せず、合否や範囲全体の習熟を保証しません。
+学習目安は読む・解く・解説確認を含む独自の見積りです。
+旧サンプルの完了記録は保管し、新コースの完了とは分けます。
+
+公式資料
+ASBJ：収益認識に関する会計基準／第29号。現行検索の改正日と2026年度試験適用を区別
+https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=13
+確認日：2026-10-25
+ASBJ：金融商品に関する会計基準／第10号。将来適用の改正を例題へ自動反映しない
+https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=109
+確認日：2026-10-25
+ASBJ：税効果会計に係る会計基準／一時差異と期間配分の説明を参照
+https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=84
+確認日：2026-10-25
+ASBJ：リース取引に関する従来の会計基準／第13号。2026年度教材の借手区分に参照。第34号と区別
+https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=36
+確認日：2026-10-25
+ASBJ：退職給付に関する適用指針／年金資産・期待運用収益等の基本関係を参照
+https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=125
+確認日：2026-10-25
+ASBJ：企業結合に関する会計基準／第21号。取得と純資産の配分等を参照
+https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=123
+確認日：2026-10-25
+ASBJ：会計上の変更及び誤謬の訂正等の基準／第24号。変更と誤謬の区分に参照
+https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=39
+確認日：2026-10-25
+ASBJ：固定資産の減損適用指針／認識判定・回収可能価額の基本を参照
+https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_14_20241101.pdf
+確認日：2026-10-25
+ASBJ：資産除去債務の解説／現在価値・資産計上・時の経過の基本を参照
+https://www.asb-j.jp/jp/wp-content/uploads/sites/4/manual_21_manual.pdf
+確認日：2026-10-25
+ASBJ：期中財務諸表基準の比較資料／第37号・2025年公表資料。2026年1月の改正案内も併読
+https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_03.pdf
+確認日：2026-10-25
+ASBJ：第37号の2026年1月改正／2026年1月9日・期中基準の改正
+https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kouhatsujisyou20260109_06.pdf
+確認日：2026-10-25
+金融庁：キャッシュ・フロー計算書等の作成基準／資金範囲・活動区分・表示の原則を参照
+https://www.fsa.go.jp/p_mof/singikai/kaikei/tosin/1a909b2.htm
+確認日：2026-10-25
+日本商工会議所：2026年度適用範囲（2022年度版）と変更の注意／2026年度・2026年4月1日現在の法令等
+https://www.kentei.ne.jp/bookkeeping/35697-2/2022-2026
+確認日：2026-10-25
+商業簿記・会計学 出題区分表（現行ページから案内されるPDF）／掲載ファイル名は2021。現行案内・改定説明と併読
+https://www.kentei.ne.jp/wp/wp-content/uploads/2021/03/2021_shokai1-3.pdf
+確認日：2026-10-25
+工業簿記・原価計算 出題区分表／2022年4月1日施行、2026年度も適用
+https://www.kentei.ne.jp/wp/wp-content/uploads/2021/12/2022_kogen.pdf
+確認日：2026-10-25
+簿記初級 出題範囲・内容／2026年度も変更なし
+https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf
+確認日：2026-10-25
+原価計算初級 出題範囲・内容／2026年度も変更なし
+https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30genkashokyu.pdf
+確認日：2026-10-25
+1級：試験科目・注意事項／前半90分・後半90分、合計70%以上かつ各科目40%以上
+https://www.kentei.ne.jp/bookkeeping/class1/exam
+確認日：2026-10-25
+2級：試験科目・注意事項／90分・5題以内・70%以上
+https://www.kentei.ne.jp/bookkeeping/class2/exam
+確認日：2026-10-25
+3級：試験科目・注意事項／60分・3題以内・70%以上
+https://www.kentei.ne.jp/bookkeeping/class3/exam
+確認日：2026-10-25
+簿記初級：趣旨・内容／40分・100点満点の70点以上
+https://www.kentei.ne.jp/bookkeeping/class-s/effect
+確認日：2026-10-25
+原価計算初級：趣旨・内容／40分・100点満点の70点以上
+https://www.kentei.ne.jp/bookkeeping/ca/effect
+確認日：2026-10-25
+2・3級ネット試験Q&A（勘定科目選択・数値入力）／実施方式・解答形式の説明
+https://www.kentei.ne.jp/net-qa
+確認日：2026-10-25
+公式サンプル案内・著作権の注意／問題の転載は行わず、形式の確認に参照
+https://www.kentei.ne.jp/bookkeeping/sample
+確認日：2026-10-25
+2027年度適用区分表の確定のお知らせ／2027年4月1日以降。現行版とは区別
+https://www.kentei.ne.jp/51147
+確認日：2026-10-25
+2027年度以降の3級配点変更／2027年4月以降は45・25・30点。現行の教材へ混在させない
+https://www.kentei.ne.jp/51504
+確認日：2026-10-25

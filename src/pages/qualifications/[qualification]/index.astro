@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
 import Share from '../../../components/Share.astro';
+import BookkeepingCourse from '../../../components/BookkeepingCourse.astro';
+import { bokiCourse } from '../../../data/bookkeeping';
 import IpCourse from '../../../components/IpCourse.astro';
 import { qualifications } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
@@ -47,7 +49,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       </div>
     </div>
   </section>
-  {q.status === 'course' ? (
+  {bokiCourse(q.id) ? (
+    <BookkeepingCourse q={q} lessons={lessons} />
+  ) : q.status === 'course' ? (
     <IpCourse lessons={lessons} />
   ) : (
     <div class="container course-grid page-section">
