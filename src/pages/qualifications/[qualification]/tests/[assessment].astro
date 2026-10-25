@@ -3,12 +3,12 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../../layouts/Layout.astro';
 import Assessment from '../../../../components/Assessment.astro';
 import Share from '../../../../components/Share.astro';
-import { bokiAssessments } from '../../../../data/bookkeeping';
+import { allAssessments } from '../../../../data/assessments';
 import { qualificationById } from '../../../../data/qualifications';
 import { href } from '../../../../lib/site';
 export async function getStaticPaths() {
-  return bokiAssessments(await getCollection('lessons'))
-    .filter((a) => a.kind !== 'lesson')
+  return allAssessments(await getCollection('lessons'))
+    .filter((a) => a.kind !== 'lesson' && a.qualification !== 'it-passport')
     .map((a) => ({ params: { qualification: a.qualification, assessment: a.id }, props: { assessment: a } }));
 }
 const { assessment: a } = Astro.props;
@@ -29,7 +29,10 @@ const q = qualificationById(a.qualification);
   <article class="container page-section assessment-page">
     <h1>{a.title}</h1>
     <p>
-      紙と電卓を用意し、問題文の単位・条件・期間を確かめて解答してください。未解答のまま提出することもできます。
+      {q.id === 'takken'
+        ? '紙とペンを用意し、法令基準日・当事者・例外を確かめてください。本番形式の模試では電卓を使わず取り組みます。'
+        : '紙と電卓を用意し、問題文の単位・条件・期間を確かめて解答してください。'}
+      未解答のまま提出することもできます。
     </p>
     <Assessment assessment={a} />
     <p>

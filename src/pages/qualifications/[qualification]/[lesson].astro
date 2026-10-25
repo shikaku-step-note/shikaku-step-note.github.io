@@ -7,6 +7,7 @@ import Assessment from '../../../components/Assessment.astro';
 import { ipSource, units } from '../../../data/it-passport';
 import { allAssessments } from '../../../data/assessments';
 import { bokiCourse } from '../../../data/bookkeeping';
+import { takkenOutline, takkenSources } from '../../../data/takken';
 import { qualificationById } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -31,6 +32,11 @@ const assessment = d.unit
   ? allAssessments(allLessons).find((a) => a.id === `${d.stableId}-check`)
   : undefined;
 const boki = bokiCourse(q.id);
+const takken = q.id === 'takken';
+const testPrefix = q.id === 'it-passport' ? 'ip' : q.id;
+const courseSources = takken
+  ? takkenSources.filter((s) => takkenOutline.find((r) => r.id === d.stableId)?.sources.includes(s.id))
+  : [];
 const unit = units.find((u) => u.id === d.unit);
 ---
 
@@ -120,8 +126,12 @@ const unit = units.find((u) => u.id === d.unit);
           </ul>
           <p class="muted">前提：{d.prerequisite}</p>
           <p class="muted">
-            {boki ? '教材内の対応番号（公式の番号ではありません）' : '公式シラバス対応項目'}：
-            {d.syllabus.join('、')}。表示時間は当サイトの学習目安です。
+            {takken
+              ? '公式の出題範囲の号番号（学習ユニットとは別）'
+              : boki
+                ? '教材内の対応番号（公式の番号ではありません）'
+                : '公式シラバス対応項目'}
+            ：{d.syllabus.join('、')}。表示時間は当サイトの学習目安です。
           </p>
         </section>
       )}
@@ -157,11 +167,11 @@ const unit = units.find((u) => u.id === d.unit);
             ))}
           </dl>
           <p>
-            <a href={href(`qualifications/${q.id}/tests/${boki ? q.id : 'ip'}-unit-${d.unit}-glossary/`)}>
+            <a href={href(`qualifications/${q.id}/tests/${testPrefix}-unit-${d.unit}-glossary/`)}>
               このユニットの用語テストへ
             </a>
             ・
-            <a href={href(`qualifications/${q.id}/tests/${boki ? q.id : 'ip'}-unit-${d.unit}-review/`)}>
+            <a href={href(`qualifications/${q.id}/tests/${testPrefix}-unit-${d.unit}-review/`)}>
               ユニット総合確認へ
             </a>
           </p>
@@ -253,7 +263,22 @@ const unit = units.find((u) => u.id === d.unit);
             をご確認ください。金額は独自の学習例です。
           </p>
         )}
-        {d.unit && !boki && (
+        {takken && (
+          <div>
+            <p>
+              法令基準日：2026年4月1日。資料確認日：2026年10月25日。個別取引・税務・建築の助言ではありません。
+            </p>
+            <ul>
+              {courseSources.map((s) => (
+                <li>
+                  <a href={s.url}>{s.title}</a>：{s.version}（確認日：{s.verified}）
+                </li>
+              ))}
+            </ul>
+            <a href={href('qualifications/takken/coverage/')}>全分野の対応表・公式資料・追加学習の範囲</a>
+          </div>
+        )}
+        {d.unit && q.id === 'it-passport' && (
           <p>
             範囲確認：<a href={ipSource('syllabus').url}>IPA シラバスVer.6.5</a>（確認日{' '}
             {ipSource('syllabus').verified}

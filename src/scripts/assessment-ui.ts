@@ -197,6 +197,13 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     );
     if (a.kind === 'mock' && a.qualification === 'it-passport')
       result.append(text('p', '全問各1点の練習得点です。IRT評価点や公式の合否には換算できません。'));
+    if (a.kind === 'mock' && a.qualification === 'takken')
+      result.append(
+        text(
+          'p',
+          '各問1点の練習得点です。2026年度の合格基準は教材確認日（2026年10月25日）時点で未公表です。公式の難易度を再現せず、合否の判定は行いません。一般形式と5問免除形式は45問を共有します。',
+        ),
+      );
     if (a.qualification !== 'it-passport') {
       const totalPoints = a.questions.reduce((n, q) => n + (q.points ?? 1), 0);
       result.append(
@@ -218,7 +225,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       }
     }
     result.append(dl);
-    if (a.kind === 'mock' && a.qualification !== 'it-passport') {
+    if (a.kind === 'mock' && a.qualification !== 'it-passport' && a.qualification !== 'takken') {
       const points = fieldPoints(a, attempt);
       const list = document.createElement('ul');
       for (const [key, f] of Object.entries(points))

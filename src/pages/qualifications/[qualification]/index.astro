@@ -6,6 +6,7 @@ import Share from '../../../components/Share.astro';
 import BookkeepingCourse from '../../../components/BookkeepingCourse.astro';
 import { bokiCourse } from '../../../data/bookkeeping';
 import IpCourse from '../../../components/IpCourse.astro';
+import TakkenCourse from '../../../components/TakkenCourse.astro';
 import { qualifications } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export function getStaticPaths() {
@@ -49,7 +50,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       </div>
     </div>
   </section>
-  {bokiCourse(q.id) ? (
+  {q.id === 'takken' ? (
+    <TakkenCourse lessons={lessons} />
+  ) : bokiCourse(q.id) ? (
     <BookkeepingCourse q={q} lessons={lessons} />
   ) : q.status === 'course' ? (
     <IpCourse lessons={lessons} />

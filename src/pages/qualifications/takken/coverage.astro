@@ -1,0 +1,150 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import { takkenOutline, takkenDomains, takkenSources, takkenLimitations } from '../../../data/takken';
+import { takkenCoverageNotes } from '../../../data/takken-coverage';
+import { href } from '../../../lib/site';
+const lessons = (await getCollection('lessons', (l) => l.data.qualification === 'takken')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<Layout
+  title="宅建士の公式範囲との対応表・出典・追加学習"
+  description="2026年度宅建試験の七つの公式分野と34レッスン、例題、理解度チェックの対応を示します。参照版、法令基準日、概説・追加学習が必要な項目も確認できます。"
+  breadcrumbs={[
+    { name: '資格一覧', path: 'qualifications/' },
+    { name: '宅建士', path: 'qualifications/takken/' },
+    { name: '対応表・出典', path: 'qualifications/takken/coverage/' },
+  ]}
+>
+  <article class="container prose wide-prose page-section">
+    <h1>宅建士の対応表と公式資料</h1>
+    <p>
+      対象：2026年度宅地建物取引士資格試験。法令基準日：2026年4月1日。資料確認日：2026年10月25日。2027年度の未公表情報を、現行の適用範囲と混同しません。
+    </p>
+    <p>{takkenLimitations}</p>
+    <p>
+      公式の級はありません。一般受験と登録講習修了者の一部免除を区別し、サイト内の八ユニットは独自の学習順序として表示します。
+    </p>
+    <p>
+      <a href={href('downloads/takken-curriculum.txt')} download>
+        学習ツリー・スケジュールTXTを保存する
+      </a>
+    </p>
+    <h2>七つの公式分野との対応</h2>
+    <p>
+      番号は公式案内・施行規則の出題範囲の号番号です。順序は学習しやすいよう組み替えています。大きな分野に対応していることは、その中の全判例や全手続を詳説したことを意味しません。
+    </p>
+    <dl>
+      {Object.entries(takkenDomains).map(([key, name]) => (
+        <>
+          <dt>
+            第{key}号　{name}
+          </dt>
+          <dd>
+            {takkenOutline
+              .filter((r) => String(r.domain) === key)
+              .map((r) => (
+                <p>
+                  <a href={href(`qualifications/takken/${r.id}/`)}>{r.title}</a>
+                </p>
+              ))}
+            {['1', '5'].includes(key) && (
+              <p>公式の一部免除対象分野。免除資格の取得は法定講習等の条件を満たす必要があります。</p>
+            )}
+          </dd>
+        </>
+      ))}
+    </dl>
+    <h2>各レッスンで説明・適用・練習する範囲</h2>
+    <p>
+      各ページには制度の説明、条件を明示した独自例、条件を変えた比較例、4問の理解度チェックがあります。用語は各3語を確認し、ユニットの用語テストに反映します。以下に扱う下位論点と、概説又は追加学習が必要な事項を示します。
+    </p>
+    <div
+      class="coverage-table"
+      tabindex="0"
+      role="region"
+      aria-label="各レッスンの対応表。横にスクロールできます"
+    >
+      <table>
+        <caption>公開教材の到達範囲（公式の網羅認定ではありません）</caption>
+        <thead>
+          <tr>
+            <th scope="col">順序・教材</th>
+            <th scope="col">説明と適用の目標</th>
+            <th scope="col">練習</th>
+            <th scope="col">扱う論点・追加学習</th>
+          </tr>
+        </thead>
+        <tbody>
+          {lessons.map((l) => (
+            <tr>
+              <th scope="row">
+                <a href={href(`qualifications/takken/${l.data.stableId}/`)}>
+                  {l.data.order}. {l.data.title}
+                </a>
+                <p>公式第{l.data.syllabus.join('・')}号</p>
+              </th>
+              <td>
+                <ul>
+                  {l.data.objectives.map((o) => (
+                    <li>{o}</li>
+                  ))}
+                </ul>
+              </td>
+              <td>
+                <p>本文の独自例・比較例</p>
+                <p>理解度4問・用語3語</p>
+                <a href={href(`qualifications/takken/tests/takken-unit-${l.data.unit}-review/`)}>
+                  ユニット確認
+                </a>
+              </td>
+              <td>{takkenCoverageNotes[l.data.stableId]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <h2>問題と採点の制約</h2>
+    <p>
+      理解度チェック136問と模試50問は当サイトの独自問題です。用語確認は本文の定義から生成し、ユニット確認と総復習は理解度チェックを再利用します。一般形式の模試は50問・120分、免除形式は45問・110分で、両形式は45問を共有します。
+    </p>
+    <p>
+      各問1点、誤答・未解答は0点として練習得点を表示します。分野配分は公開問題を参照した学習用構成で、権利14・制限8・税2・価格1・宅建業法20・需給3・土地建物2問です。将来の配分や公式の難易度を保証しません。2026年度の合格基準は確認日現在未公表のため、予想基準や合否判定は表示しません。
+    </p>
+    <p>
+      時間ありモードは開始時の期限を保存します。閉じた間も進み、期限後に再訪すると保存済み解答で終了します。端末時計の変更やブラウザデータ消去による影響は防げません。時間制限なしでも練習できます。
+    </p>
+    <h2>公式資料・版・確認日</h2>
+    <p>
+      e-Govの法令本文は、APIの時点指定で2026年4月1日版を取得し、関連条文を確認しています。リンクは取得した施行版を示します。法令全条文の逐条解説や専門家による適法性保証を行った記録ではありません。資料の公表日・施行日と、当サイトの確認日は区別します。
+    </p>
+    <ul>
+      {takkenSources.map((s) => (
+        <li>
+          <p>
+            <a href={s.url}>{s.title}</a>
+            <br />
+            {s.version}
+            <br />
+            確認日：<time datetime={s.verified}>{s.verified}</time>
+          </p>
+        </li>
+      ))}
+    </ul>
+    <h2>教材の編集と改訂</h2>
+    <p>
+      文章・表・例題は当サイトで作成し、公式問題や教材の図版は転載していません。日本語の構成・用語・助詞・表記と、条件・数値・正答の整合を確認しました。AIを執筆・実装の補助に使用しており、日本語母語話者や法律専門家による監修を受けたという表示は行いません。
+    </p>
+    <p>
+      法改正や誤りが判明した場合は、関連レッスン、問題の版、出典、対応表、TXTを一緒に更新します。
+      <a href={href('editorial/')}>編集方針</a>と<a href={href('contact/')}>訂正の連絡方法</a>
+      もご確認ください。
+    </p>
+    <p>
+      <a href={href('qualifications/takken/')}>学習ツリーへ戻る</a> ・{' '}
+      <a href={href('qualifications/takken/tests/')}>テスト一覧</a>
+    </p>
+  </article>
+</Layout>

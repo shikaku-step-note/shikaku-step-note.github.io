@@ -205,6 +205,7 @@ main:focus {
   gap: 30px;
 }
 .brand {
+  max-width: 100%;
   display: inline-flex;
   gap: 10px;
   align-items: center;
@@ -213,7 +214,11 @@ main:focus {
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 0.025em;
-  white-space: nowrap;
+  white-space: normal;
+}
+.brand > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .brand small {
   display: block;
@@ -1065,6 +1070,9 @@ details:not(.qualification-menu) > p {
   display: grid;
   grid-template-columns: minmax(0, 760px) 260px;
   gap: 75px;
+}
+.lesson-layout > article {
+  min-width: 0;
 }
 .lesson-header {
   border-bottom: 1px solid var(--line);

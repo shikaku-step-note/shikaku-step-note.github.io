@@ -1,13 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../../../layouts/Layout.astro';
-import { bokiCourses, bokiAssessments } from '../../../../data/bookkeeping';
+import { bokiCourses } from '../../../../data/bookkeeping';
+import { allAssessments } from '../../../../data/assessments';
 import { href } from '../../../../lib/site';
 export function getStaticPaths() {
-  return bokiCourses.map((course) => ({ params: { qualification: course.id }, props: { course } }));
+  return [...bokiCourses, { id: 'takken', name: '宅建士' }].map((course) => ({
+    params: { qualification: course.id },
+    props: { course },
+  }));
 }
 const { course } = Astro.props;
-const tests = bokiAssessments(await getCollection('lessons')).filter(
+const tests = allAssessments(await getCollection('lessons')).filter(
   (a) => a.qualification === course.id && a.kind !== 'lesson',
 );
 ---
@@ -29,6 +33,14 @@ const tests = bokiAssessments(await getCollection('lessons')).filter(
     <p>
       用語問題は本文の定義から生成します。ユニット確認と総復習はレッスンの問題を再利用し、模試には別の独自問題を使います。何度でも解き直せますが、同じ問題の点数が上がっただけで範囲全体を習得したとは判断しません。
     </p>
+    {course.id === 'takken' && (
+      <div class="notice compact">
+        <p>
+          一般形式は50問・120分、5問免除形式は45問・110分です。後者は一般形式の45問を共有し、別セットではありません。各問1点の練習得点を表示し、当年度の合否は判定しません。公式の免除を得るための講習ではありません。
+        </p>
+        <a href={href('qualifications/takken/coverage/')}>適用法令と追加学習が必要な範囲</a>
+      </div>
+    )}
     <ul class="test-directory">
       {tests.map((a) => (
         <li>

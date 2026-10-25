@@ -24,6 +24,7 @@ const $ = <T extends Element = HTMLElement>(s: string) => document.querySelector
 const $$ = <T extends Element = HTMLElement>(s: string) => Array.from(document.querySelectorAll<T>(s));
 let toastTimer: ReturnType<typeof setTimeout>;
 $$<HTMLTableElement>('.prose table').forEach((table) => {
+  if (table.closest('.table-scroll')) return;
   const wrapper = document.createElement('div');
   wrapper.className = 'table-scroll';
   wrapper.tabIndex = 0;

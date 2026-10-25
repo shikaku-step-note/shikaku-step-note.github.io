@@ -1,0 +1,187 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import {
+  takkenAssessments,
+  takkenUnits,
+  takkenSchedule,
+  takkenLimitations,
+  takkenDomains,
+} from '../data/takken';
+import { href } from '../lib/site';
+import Icon from './Icon.astro';
+import Share from './Share.astro';
+interface Props {
+  lessons: CollectionEntry<'lessons'>[];
+}
+const { lessons } = Astro.props;
+const tests = takkenAssessments(lessons).filter((a) => a.kind !== 'lesson');
+---
+
+<div class="container page-section">
+  <div class="course-grid">
+    <div>
+      <section class="course-section">
+        <h2>人物と条件を整理して、法律を使う練習へ</h2>
+        <p>
+          住宅の売買や賃貸を例に、契約の成立、権利の変動、取引業者の義務、土地の使い方を学びます。条文の数字だけでなく、誰を保護し、どの条件で結論が変わるかを確かめるコースです。法律の予備知識は不要です。
+        </p>
+        <div class="notice compact">
+          <strong>2026年度・2026年4月1日施行法令を参照</strong>
+          <p>
+            公式の級分けはありません。以下の八つのユニットは、学習順序のために当サイトが作った区分です。登録講習修了者の一部免除は受験方式の違いであり、このサイトの修了で取得できません。
+          </p>
+          <p>{takkenLimitations}</p>
+        </div>
+        <div class="assessment-links">
+          <a href={href('qualifications/takken/coverage/')}>七つの公式分野との対応・出典・追加学習</a>
+          <a href={href('downloads/takken-curriculum.txt')} download>
+            学習ツリーとスケジュールをTXTで保存
+          </a>
+          <a href={href('qualifications/takken/tests/')}>用語確認・総復習・模試を選ぶ</a>
+        </div>
+      </section>
+      <section class="course-section" aria-labelledby="takken-exam-format">
+        <h2 id="takken-exam-format">受験方式を確認する</h2>
+        <div class="assessment-links">
+          <a class="assessment-link" href={href('qualifications/takken/tests/takken-mock-general/')}>
+            <strong>一般受験形式</strong>
+            <span>50問・120分・四肢択一</span>
+            <span>初めて学ぶ方は全分野を順に学びます。</span>
+          </a>
+          <a class="assessment-link" href={href('qualifications/takken/tests/takken-mock-exempt/')}>
+            <strong>登録講習修了者の5問免除形式</strong>
+            <span>45問・110分・四肢択一</span>
+            <span>法定の免除資格を持つ方の形式です。</span>
+          </a>
+        </div>
+        <p>
+          試験の時間と問題数は公式案内を確認しています。模試の問題は当サイト独自で、各問1点の練習得点です。2026年度の合格基準は資料確認日（2026年10月25日）時点で未公表のため、合否は判定しません。二形式の模試は45問を共有します。
+        </p>
+      </section>
+      <section class="course-section" id="schedule">
+        <h2>1日35〜45分、週5日の学習案</h2>
+        <p>
+          16週間の進め方を提案します。各ページの時間は、読む・例題を手で確かめる・問題を解く・解説を読む目安です。残りの日は休息や復習に使い、翌日と1週間後に以前の例を説明し直します。公式の必要学習時間ではなく、合格までの時間を保証する計画でもありません。
+        </p>
+        <ol class="takken-schedule">
+          {takkenSchedule.map(([week, plan]) => (
+            <li>
+              <strong>{week}</strong>
+              <p>{plan}</p>
+            </li>
+          ))}
+        </ol>
+        <p>
+          通常学習とは別に、模試の120分又は110分を確保します。翌日に解説と元のレッスンへ戻り、誤答を生んだ条件を書き直してください。復習に時間がかかる場合は週数を延ばします。
+        </p>
+      </section>
+      <section class="course-section" id="steps">
+        <div class="section-heading">
+          <h2>34レッスンの学習ツリー</h2>
+          <span class="tag" data-course-progress="takken">
+            未学習
+          </span>
+        </div>
+        <p>
+          順に読むと前提知識がつながります。学習済みの印、ブックマーク、テストの得点は別々に保存します。ユニット7・8は公式の一部免除に関係する分野です。必要に応じて復習に利用できます。
+        </p>
+        {takkenUnits.map((name, i) => (
+          <details class="curriculum-unit" open>
+            <summary>
+              ユニット{i + 1}　{name}
+            </summary>
+            <ol class="lesson-list">
+              {lessons
+                .filter((l) => l.data.unit === i + 1)
+                .map((l) => (
+                  <li class="lesson-row" data-lesson-row={l.data.stableId}>
+                    <span class="lesson-number">{String(l.data.order).padStart(2, '0')}</span>
+                    <div class="lesson-row-body">
+                      <h3>
+                        <a href={href(`qualifications/takken/${l.data.stableId}/`)}>{l.data.title}</a>
+                      </h3>
+                      <div class="lesson-meta">
+                        <span>{l.data.minutes}分の目安</span>
+                        <span>{takkenDomains[l.data.subject!]}</span>
+                        <span data-status-label={l.data.stableId}>未学習</span>
+                      </div>
+                    </div>
+                    <button
+                      class="star-button"
+                      type="button"
+                      data-bookmark={l.data.stableId}
+                      aria-pressed="false"
+                      aria-label={`${l.data.title}をブックマーク`}
+                    >
+                      <Icon name="star" size={21} />
+                    </button>
+                  </li>
+                ))}
+            </ol>
+            <div class="unit-assessments">
+              <a href={href(`qualifications/takken/tests/takken-unit-${i + 1}-glossary/`)}>用語確認</a>
+              <a href={href(`qualifications/takken/tests/takken-unit-${i + 1}-review/`)}>ユニット総合確認</a>
+            </div>
+          </details>
+        ))}
+      </section>
+      <section class="course-section" id="exams">
+        <h2>全分野の復習から模試へ</h2>
+        <p>
+          用語確認は本文の定義、ユニット確認と総復習はレッスンの問題を再利用します。模試は別の独自問題です。得点だけでなく、条件を変えた場合にも理由を説明できるか確かめましょう。
+        </p>
+        <div class="assessment-links">
+          {tests
+            .filter((a) => a.id.endsWith('-all') || a.kind === 'mock')
+            .map((a) => (
+              <a class="assessment-link" href={href(`qualifications/takken/tests/${a.id}/`)}>
+                <strong>{a.title}</strong>
+                <span>
+                  {a.questions.length}問{a.minutes ? `・${a.minutes}分／時間制限なし` : ''}
+                </span>
+              </a>
+            ))}
+        </div>
+      </section>
+      <section class="course-section">
+        <h2>学び終えたら、公式資料と公開問題で補う</h2>
+        <p>
+          誤答した条文の条件や数値を確認し、対応表の概説項目を追加学習します。公式公開問題は出題形式の確認に利用できますが、古い年度は法改正との違いを確かめてください。登録や実務の手続は主催者・自治体等の案内を使います。
+        </p>
+        <a href="https://www.retio.or.jp/exam/">不動産適正取引推進機構の宅建試験案内</a>
+      </section>
+      <Share title="宅建士の無料学習コース" url={new URL(href('qualifications/takken/'), Astro.site).href} />
+    </div>
+    <aside class="course-sidebar">
+      <div class="sidebar-box">
+        <h2>コースの読み方</h2>
+        <ul>
+          <li>人物と時系列を書く</li>
+          <li>原則と例外を分ける</li>
+          <li>例題の条件を変えて説明する</li>
+          <li>翌日と1週間後に復習する</li>
+        </ul>
+        <a href={href('qualifications/takken/coverage/')}>出典と学習範囲</a>
+        <p>公式資料確認日：2026年10月25日</p>
+      </div>
+      <div class="sidebar-box">
+        <h2>この端末に保存</h2>
+        <p>
+          記録は今のブラウザに残ります。端末間で自動同期せず、ブラウザデータの削除で失われることがあります。定期的にバックアップを書き出してください。
+        </p>
+        <a href={href('progress/#backup')}>マイ学習・バックアップ</a>
+      </div>
+    </aside>
+  </div>
+</div>
+<style>
+  .takken-schedule {
+    padding-left: 1.4rem;
+  }
+  .takken-schedule li {
+    padding-block: 0.3rem;
+  }
+  .takken-schedule p {
+    margin-block: 0.2rem 0.8rem;
+  }
+</style>

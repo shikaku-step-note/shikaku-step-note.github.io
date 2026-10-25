@@ -19,6 +19,41 @@ export interface Qualification {
   status: 'course' | 'sample';
 }
 export const qualifications: Qualification[] = [
+  {
+    id: 'takken',
+    status: 'course',
+    name: '宅地建物取引士（宅建士）',
+    shortName: '宅建士',
+    category: '不動産・法律',
+    color: 'teal',
+    icon: 'book',
+    intro: '取引の条件を読み、法律の理由をたどる。',
+    description:
+      '2026年度の公式範囲を参照した34レッスン。民法・宅建業法・法令上の制限・税などを、事例と理解度チェックで学びます。一般・5問免除形式の模試にも取り組めます。',
+    audience: [
+      '不動産や法律を初めて学ぶ方',
+      '条文の条件を事例に当てはめたい方',
+      '学習の順序と復習記録を整理したい方',
+    ],
+    outcome: '登場人物、法令の適用時点、取引条件を分け、主要な制度を具体例で説明する練習をします。',
+    prerequisite:
+      '法律の予備知識は不要です。割合と四則計算を使います。紙とペンで人物関係や時系列を書いて進めます。',
+    groups: [
+      '契約と意思表示の基本',
+      '権利の変動と生活に関わる契約',
+      '宅建業の免許と取引のルール',
+      '都市計画と建築の制限',
+      '土地利用・造成と行政手続',
+      '税金と価格の考え方',
+      '住宅の需給・広告・統計',
+      '土地と建物の性質',
+    ],
+    official: 'https://www.retio.or.jp/exam/exam_detail/',
+    officialName: '不動産適正取引推進機構：宅建試験の概要',
+    reviewed: '2026-10-25',
+    scope:
+      '2026年度・2026年4月1日施行法令を参照。公式の級分けはなく、一般と登録講習修了者の一部免除という受験方式があります。学習ユニットは当サイト独自です。主要論点を扱い、全判例・例外の網羅は保証しません。',
+  },
   ...bokiCourses
     .filter((c) => c.id !== 'boki-3')
     .map((c) => ({
@@ -116,7 +151,16 @@ export const qualifications: Qualification[] = [
       'FP技能検定の学習は、生活設計、保険、金融、税、不動産、相続などの領域に広がります。このサンプルは最初の三つの考え方を紹介するもので、制度の詳細や試験範囲全体は扱っていません。',
   },
 ];
-const displayOrder = ['it-passport', 'boki-beginner', 'cost-beginner', 'boki-3', 'boki-2', 'boki-1', 'fp-3'];
+const displayOrder = [
+  'it-passport',
+  'takken',
+  'boki-beginner',
+  'cost-beginner',
+  'boki-3',
+  'boki-2',
+  'boki-1',
+  'fp-3',
+];
 qualifications.sort((a, b) => displayOrder.indexOf(a.id) - displayOrder.indexOf(b.id));
 export const qualificationById = (id: string) => qualifications.find((q) => q.id === id)!;
 export const availabilityText = qualifications
