@@ -121,7 +121,7 @@ test('v1 and v2 backups preserve legacy completion without creating new course c
       },
     };
     const data = validateData(old);
-    assert.equal(data.version, 4);
+    assert.equal(data.version, 5);
     assert.equal(data.records['it-business']!.status, 'completed');
     assert.equal(data.records['ip-organization'], undefined);
     assert.deepEqual(data.assessments, {});

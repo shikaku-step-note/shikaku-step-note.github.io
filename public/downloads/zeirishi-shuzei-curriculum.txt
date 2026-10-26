@@ -1,0 +1,151 @@
+税理士 酒税法 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：酒税法（税法）
+酒税法と関係法令。酒類の分類、免許、課税数量、税率、移出と申告。
+前提：容量の単位換算と割合。酒類の製法について予備知識は不要。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shuzei/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-shuzei-class] 酒類の定義・四分類・品目の判定／40分
+      目標：アルコール分の定義を説明する／製法と性状で品目を判定する／税率分類と名称を分ける
+      前提：容量の単位換算と割合。酒類の製法について予備知識は不要。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-class-check] 4問：zr-shuzei-class-q1、zr-shuzei-class-q2、zr-shuzei-class-q3、zr-shuzei-class-q4
+      用語：アルコール分・発泡性酒類・品目
+      次：zr-shuzei-license
+      追加学習・制約：全十七品目の詳細要件、原料割合、エキス分と混和の各規定は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-class/
+      技能1 アルコール分の定義を説明する：説明・例題→自力演習兼評価 zr-shuzei-class-q1
+      技能2 製法と性状で品目を判定する：説明・例題→自力演習兼評価 zr-shuzei-class-q2、zr-shuzei-class-q4
+      技能3 税率分類と名称を分ける：説明・例題→自力演習兼評価 zr-shuzei-class-q3、zr-shuzei-class-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-shuzei-license] 製造免許・販売業免許と移出課税／40分
+      目標：製造と販売の免許を区別する／製造場からの移出を追う／みなし移出の意味を説明する
+      前提：前のレッスン「酒類の定義・四分類・品目の判定」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-license-check] 4問：zr-shuzei-license-q1、zr-shuzei-license-q2、zr-shuzei-license-q3、zr-shuzei-license-q4
+      用語：移出・製造免許・みなし移出
+      次：zr-shuzei-amount
+      追加学習・制約：最低製造数量、試験製造、販売免許の全区分、法定免許要件は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-license/
+      技能1 製造と販売の免許を区別する：説明・例題→自力演習兼評価 zr-shuzei-license-q1
+      技能2 製造場からの移出を追う：説明・例題→自力演習兼評価 zr-shuzei-license-q2、zr-shuzei-license-q4
+      技能3 みなし移出の意味を説明する：説明・例題→自力演習兼評価 zr-shuzei-license-q3、zr-shuzei-license-q4
+    3. [zr-shuzei-amount] 数量換算・アルコール分・酒税額／45分
+      目標：リットルとキロリットルを換算する／税率適用の日付を確認する／段階税率の増額を計算する
+      前提：前のレッスン「製造免許・販売業免許と移出課税」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-amount-check] 4問：zr-shuzei-amount-q1、zr-shuzei-amount-q2、zr-shuzei-amount-q3、zr-shuzei-amount-q4
+      用語：課税数量・従量税・加算税率
+      次：zr-shuzei-return
+      追加学習・制約：全品目の税率表、測定方法、税率改正の経過措置を追加確認。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-amount/
+      技能1 リットルとキロリットルを換算する：説明・例題→自力演習兼評価 zr-shuzei-amount-q1、zr-shuzei-amount-q3
+      技能2 税率適用の日付を確認する：説明・例題→自力演習兼評価 zr-shuzei-amount-q2
+      技能3 段階税率の増額を計算する：説明・例題→自力演習兼評価 zr-shuzei-amount-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-shuzei-return] 未納税移出・輸出免税・戻入れと申告／40分
+      目標：未納税移出と輸出免税の目的・要件を分ける／戻入れの控除を計算する／帳簿と申告のつながりを追う
+      前提：前のレッスン「数量換算・アルコール分・酒税額」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-return-check] 4問：zr-shuzei-return-q1、zr-shuzei-return-q2、zr-shuzei-return-q3、zr-shuzei-return-q4
+      用語：未納税移出・戻入れ・輸出免税
+      次：zeirishi-unit-7-review
+      追加学習・制約：全ての承認手続、担保、酒税軽減制度と控除限度の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-return/
+      技能1 未納税移出と輸出免税の目的・要件を分ける：説明・例題→自力演習兼評価 zr-shuzei-return-q1
+      技能2 戻入れの控除を計算する：説明・例題→自力演習兼評価 zr-shuzei-return-q2、zr-shuzei-return-q4
+      技能3 帳簿と申告のつながりを追う：説明・例題→自力演習兼評価 zr-shuzei-return-q3、zr-shuzei-return-q4
+  [zeirishi-unit-7-glossary] 酒税法：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-7-glossary/
+  [zeirishi-unit-7-review] 酒税法：総復習／16小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-7-review/
+  [zeirishi-shuzei-mock] 酒税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shuzei-mock/
+  2026年8月本試験の大問配点：30・70点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[liquor-law] e-Gov：酒税法
+  2026年4月3日現在施行版：328AC0000000006_20250628_507AC0000000045
+  https://laws.e-gov.go.jp/law/328AC0000000006_20250628_507AC0000000045
+  確認日：2026-10-25
+[special-law] e-Gov：租税特別措置法
+  2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+  確認日：2026-10-25
+[points-07] 国税庁：第76回 酒税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/07.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[liquor-rates] 国税庁：酒税率一覧表
+  2023年10月1日〜2026年9月30日の表。例の移出日をこの期間内に限定
+  https://www.nta.go.jp/taxes/sake/shiori-gaikyo/shiori/2024/pdf/0001.pdf
+  確認日：2026-10-25
+[liquor-transition] 国税庁：2026年10月の酒税率変更等の手引き
+  税率とその他の発泡性酒類の度数上限。既施行の経過措置
+  https://www.nta.go.jp/taxes/sake/pdf/0023008-027.pdf
+  確認日：2026-10-26
+[liquor-training] 国税庁税務大学校：間接税法・酒税法
+  令和8年度版・2026年1月1日現在。4月3日法令と併読
+  https://www.nta.go.jp/about/organization/ntc/kohon/kansetu/pdf/all.pdf
+  確認日：2026-10-26
+[liquor-mof] 財務省：酒税に関する資料
+  税率の概観。度数の注記は法令・国税庁専用資料を優先
+  https://www.mof.go.jp/tax_policy/summary/consumption/d08.htm
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

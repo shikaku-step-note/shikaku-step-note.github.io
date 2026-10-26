@@ -1,0 +1,143 @@
+税理士 事業税 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：事業税（税法）
+地方税法の事業税と総則・関係法令。法人と個人、外形標準課税を含む。
+前提：法人の所得計算と個人の事業所得の基本。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jigyo/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-jigyo-corporate] 法人事業税の所得割・収入割／40分
+      目標：事業と課税標準の区分を選ぶ／法人税所得から差を調整する／所得割の段階計算を行う
+      前提：法人の所得計算と個人の事業所得の基本。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-corporate-check] 4問：zr-jigyo-corporate-q1、zr-jigyo-corporate-q2、zr-jigyo-corporate-q3、zr-jigyo-corporate-q4
+      用語：所得割・収入割・事業年度
+      次：zr-jigyo-external
+      追加学習・制約：電気供給・ガス供給・保険等の収入金額計算、軽減税率の適用除外は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-corporate/
+      技能1 事業と課税標準の区分を選ぶ：説明・例題→自力演習兼評価 zr-jigyo-corporate-q1、zr-jigyo-corporate-q4
+      技能2 法人税所得から差を調整する：説明・例題→自力演習兼評価 zr-jigyo-corporate-q2
+      技能3 所得割の段階計算を行う：説明・例題→自力演習兼評価 zr-jigyo-corporate-q3
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-jigyo-external] 外形標準課税の付加価値割・資本割／40分
+      目標：対象法人の判定を整理する／収益配分額を計算する／単年度損益と付加価値額を結ぶ
+      前提：前のレッスン「法人事業税の所得割・収入割」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-external-check] 4問：zr-jigyo-external-q1、zr-jigyo-external-q2、zr-jigyo-external-q3、zr-jigyo-external-q4
+      用語：付加価値割・収益配分額・資本割
+      次：zr-jigyo-individual
+      追加学習・制約：雇用安定控除、資本割特則、減資・子法人等への2025・2026年拡大の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-external/
+      技能1 対象法人の判定を整理する：説明・例題→自力演習兼評価 zr-jigyo-external-q1
+      技能2 収益配分額を計算する：説明・例題→自力演習兼評価 zr-jigyo-external-q2
+      技能3 単年度損益と付加価値額を結ぶ：説明・例題→自力演習兼評価 zr-jigyo-external-q3、zr-jigyo-external-q4
+    3. [zr-jigyo-individual] 個人事業税の業種・控除・税額／45分
+      目標：法定業種と所得税の区分を分ける／青色控除との差を調整する／事業主控除と月割を計算する
+      前提：前のレッスン「外形標準課税の付加価値割・資本割」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-individual-check] 4問：zr-jigyo-individual-q1、zr-jigyo-individual-q2、zr-jigyo-individual-q3、zr-jigyo-individual-q4
+      用語：法定業種・事業主控除・青色申告特別控除
+      次：zr-jigyo-return
+      追加学習・制約：業種の全区分、社会保険診療、損失繰越し、事業廃止の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-individual/
+      技能1 法定業種と所得税の区分を分ける：説明・例題→自力演習兼評価 zr-jigyo-individual-q1
+      技能2 青色控除との差を調整する：説明・例題→自力演習兼評価 zr-jigyo-individual-q2
+      技能3 事業主控除と月割を計算する：説明・例題→自力演習兼評価 zr-jigyo-individual-q3、zr-jigyo-individual-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-jigyo-return] 分割・特別法人事業税・申告／40分
+      目標：従業者等による分割を計算する／特別法人事業税と地方税を分ける／申告年度と税率表を対応させる
+      前提：前のレッスン「個人事業税の業種・控除・税額」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-return-check] 4問：zr-jigyo-return-q1、zr-jigyo-return-q2、zr-jigyo-return-q3、zr-jigyo-return-q4
+      用語：特別法人事業税・基準法人所得割額・分割法人
+      次：zeirishi-unit-10-review
+      追加学習・制約：業種別の分割、特別法人事業税の全率、中間申告と更正・修正の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-return/
+      技能1 従業者等による分割を計算する：説明・例題→自力演習兼評価 zr-jigyo-return-q1
+      技能2 特別法人事業税と地方税を分ける：説明・例題→自力演習兼評価 zr-jigyo-return-q2、zr-jigyo-return-q4
+      技能3 申告年度と税率表を対応させる：説明・例題→自力演習兼評価 zr-jigyo-return-q3
+  [zeirishi-unit-10-glossary] 事業税：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-10-glossary/
+  [zeirishi-unit-10-review] 事業税：総復習／16小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-10-review/
+  [zeirishi-jigyo-mock] 事業税：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-jigyo-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[local-law] e-Gov：地方税法
+  2026年4月3日現在施行版：325AC0000000226_20260401_508AC0000000002
+  https://laws.e-gov.go.jp/law/325AC0000000226_20260401_508AC0000000002
+  確認日：2026-10-25
+[points-10] 国税庁：第76回 事業税 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/10.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[local-corporate] 東京都主税局：法人事業税・法人都民税
+  開始年度・標準税率と超過課税。都の特例は全国一律としない
+  https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji
+  確認日：2026-10-26
+[local-individual] 東京都主税局：個人事業税
+  青色控除の戻しと290万円の事業主控除等
+  https://www.tax.metro.tokyo.lg.jp/kazei/kojin_ji.html
+  確認日：2026-10-26
+[local-special] 東京都主税局：特別法人事業税
+  基準法人所得割額等を基にする国税
+  https://www.tax.metro.tokyo.lg.jp/kazei/work/tokubetsu_houjin
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

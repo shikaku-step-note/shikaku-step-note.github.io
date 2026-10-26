@@ -1,0 +1,1933 @@
+{
+  "reviewed": "2026-10-26",
+  "lawAsOf": "2026-04-03",
+  "version": "zeirishi-2026-v1",
+  "subjects": [
+    {
+      "id": "boki",
+      "name": "簿記論",
+      "unit": 1,
+      "category": "会計学",
+      "scope": "複式簿記・記帳計算・帳簿組織・商業簿記・工業簿記。原価計算は公式範囲から除外。",
+      "prerequisite": "日商簿記3級程度の仕訳と決算整理。未学習ならサイト内の簿記3級へ。",
+      "majorPoints": [25, 25, 50],
+      "sourceIds": [
+        "accounting-principles",
+        "companies-law",
+        "asbj-finance",
+        "asbj-inventory",
+        "company-calculations",
+        "lease-current",
+        "lease-new",
+        "foreign-currency"
+      ],
+      "pointSource": "points-01"
+    },
+    {
+      "id": "zaimu",
+      "name": "財務諸表論",
+      "unit": 2,
+      "category": "会計学",
+      "scope": "会計原理・会計基準・会社法の計算規定・会社計算規則・財務諸表規則等。特定事業会社の特例を除く。",
+      "prerequisite": "簿記の基本に加え、資産・負債・純資産・収益・費用の関係。",
+      "majorPoints": [25, 25, 50],
+      "sourceIds": [
+        "asbj-framework",
+        "accounting-principles",
+        "asbj-revenue",
+        "asbj-inventory",
+        "asbj-finance",
+        "impairment",
+        "retirement",
+        "asbj-tax",
+        "tax-effects-guide",
+        "stock-options",
+        "combinations",
+        "consolidation",
+        "treasury-stock",
+        "companies-law",
+        "company-calculations",
+        "financial-regulations",
+        "consolidated-regulations",
+        "cash-flows"
+      ],
+      "pointSource": "points-02"
+    },
+    {
+      "id": "shotoku",
+      "name": "所得税法",
+      "unit": 3,
+      "category": "税法",
+      "scope": "所得税法と関係法令。所得区分・所得計算・控除・税額・申告を関連付ける。",
+      "prerequisite": "割合と四則計算。収入と必要経費の区別。",
+      "majorPoints": [50, 50],
+      "sourceIds": [
+        "income-law",
+        "special-law",
+        "general-law",
+        "points-03",
+        "income-revenue",
+        "income-blue",
+        "income-salary",
+        "income-retirement",
+        "income-transfer",
+        "income-temporary",
+        "income-deductions",
+        "income-loss",
+        "income-rate",
+        "income-refund"
+      ],
+      "pointSource": "points-03"
+    },
+    {
+      "id": "hojin",
+      "name": "法人税法",
+      "unit": 4,
+      "category": "税法",
+      "scope": "法人税法と関係法令。会計利益と所得の調整、税額、申告を扱う。",
+      "prerequisite": "簿記3級程度の決算と損益計算書。",
+      "majorPoints": [50, 50],
+      "sourceIds": [
+        "corporate-law",
+        "special-law",
+        "general-law",
+        "points-04",
+        "officer-pay",
+        "entertainment",
+        "donations",
+        "corporate-dividend",
+        "corporate-loss",
+        "defense-tax",
+        "corporate-rate"
+      ],
+      "pointSource": "points-04"
+    },
+    {
+      "id": "sozoku",
+      "name": "相続税法",
+      "unit": 5,
+      "category": "税法",
+      "scope": "相続税・贈与税と関係法令。民法上の相続関係と財産評価を区別する。",
+      "prerequisite": "割合と四則計算。相続人と財産の関係を図にできること。",
+      "majorPoints": [50, 50],
+      "sourceIds": [
+        "inheritance-law",
+        "special-law",
+        "inheritance-total",
+        "points-05",
+        "inheritance-heirs",
+        "inheritance-insurance",
+        "inheritance-road",
+        "inheritance-multiple",
+        "inheritance-landlord",
+        "inheritance-land",
+        "inheritance-gift-add",
+        "inheritance-settlement",
+        "gift-annual"
+      ],
+      "pointSource": "points-05"
+    },
+    {
+      "id": "shohi",
+      "name": "消費税法",
+      "unit": 6,
+      "category": "税法",
+      "scope": "消費税法と関係法令。納税義務、取引区分、課税標準、税額控除、申告。",
+      "prerequisite": "税抜・税込の換算と売上・仕入れの区別。",
+      "majorPoints": [50, 50],
+      "sourceIds": [
+        "consumption-law",
+        "special-law",
+        "consumption-duty",
+        "points-06",
+        "consumption-ratio",
+        "consumption-output",
+        "consumption-2026",
+        "consumption-input",
+        "consumption-two",
+        "consumption-simple"
+      ],
+      "pointSource": "points-06"
+    },
+    {
+      "id": "shuzei",
+      "name": "酒税法",
+      "unit": 7,
+      "category": "税法",
+      "scope": "酒税法と関係法令。酒類の分類、免許、課税数量、税率、移出と申告。",
+      "prerequisite": "容量の単位換算と割合。酒類の製法について予備知識は不要。",
+      "majorPoints": [30, 70],
+      "sourceIds": [
+        "liquor-law",
+        "special-law",
+        "liquor-rates",
+        "points-07",
+        "liquor-transition",
+        "liquor-training",
+        "liquor-mof"
+      ],
+      "pointSource": "points-07"
+    },
+    {
+      "id": "kokuzei",
+      "name": "国税徴収法",
+      "unit": 8,
+      "category": "税法",
+      "scope": "国税徴収法と関係法令。徴収の優先関係、滞納処分、第二次納税義務、猶予等。",
+      "prerequisite": "人物と日付を表に整理すること。民法の担保の初歩は本文で補う。",
+      "majorPoints": [40, 60],
+      "sourceIds": [
+        "collection-law",
+        "general-law",
+        "points-08",
+        "collection-training",
+        "collection-second",
+        "collection-delay",
+        "collection-relief",
+        "collection-appeal"
+      ],
+      "pointSource": "points-08"
+    },
+    {
+      "id": "jumin",
+      "name": "住民税",
+      "unit": 9,
+      "category": "税法",
+      "scope": "地方税法の道府県民税・市町村民税と総則・関係法令。個人と法人を含む。",
+      "prerequisite": "所得税法の所得区分と所得控除の基礎。",
+      "majorPoints": [50, 50],
+      "sourceIds": [
+        "local-law",
+        "points-09",
+        "resident-calculation",
+        "local-corporate",
+        "resident-collection",
+        "resident-retirement"
+      ],
+      "pointSource": "points-09"
+    },
+    {
+      "id": "jigyo",
+      "name": "事業税",
+      "unit": 10,
+      "category": "税法",
+      "scope": "地方税法の事業税と総則・関係法令。法人と個人、外形標準課税を含む。",
+      "prerequisite": "法人の所得計算と個人の事業所得の基本。",
+      "majorPoints": [50, 50],
+      "sourceIds": ["local-law", "points-10", "local-corporate", "local-individual", "local-special"],
+      "pointSource": "points-10"
+    },
+    {
+      "id": "kotei",
+      "name": "固定資産税",
+      "unit": 11,
+      "category": "税法",
+      "scope": "地方税法の固定資産税と総則・関係法令。土地・家屋・償却資産を区別する。",
+      "prerequisite": "割合計算。取得価額・評価額・課税標準の違いを本文で確認する。",
+      "majorPoints": [50, 50],
+      "sourceIds": [
+        "local-law",
+        "points-11",
+        "property-overview",
+        "property-land",
+        "property-new",
+        "property-future",
+        "property-assets",
+        "property-threshold-future"
+      ],
+      "pointSource": "points-11"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "zr-boki-flow",
+      "subject": "boki",
+      "unit": 1,
+      "order": 1,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "取引から試算表・決算整理へ",
+      "objectives": [
+        "仕訳と転記のつながりを説明する",
+        "前払と未払を期間へ配分する",
+        "整理前残高から利益を修正する"
+      ],
+      "glossary": [
+        {
+          "term": "転記",
+          "definition": "仕訳を勘定口座へ書き移す手続"
+        },
+        {
+          "term": "試算表",
+          "definition": "各勘定の残高や合計を集め貸借を確かめる表"
+        },
+        {
+          "term": "決算整理",
+          "definition": "期末の状態と期間損益を示すための修正"
+        }
+      ],
+      "sources": ["accounting-principles", "companies-law"],
+      "additionalStudy": "複合仕訳・伝票会計と多桁の総合問題は追加演習が必要。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-boki-cash",
+      "subject": "boki",
+      "unit": 1,
+      "order": 2,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "現金・預金・債権を残高から確かめる",
+      "objectives": ["現金過不足の原因を分類する", "銀行勘定の調整を行う", "貸倒見積額と繰入額を区別する"],
+      "glossary": [
+        {
+          "term": "現金過不足",
+          "definition": "帳簿の現金残高と実際有高の差を仮に処理する勘定"
+        },
+        {
+          "term": "銀行勘定調整",
+          "definition": "当社帳簿と銀行残高の差異の原因を照合する手続"
+        },
+        {
+          "term": "貸倒引当金",
+          "definition": "将来の貸倒見積りに備えて債権から控除する評価勘定"
+        }
+      ],
+      "sources": ["asbj-finance"],
+      "additionalStudy": "債権区分ごとの割引計算や担保の評価は概説にとどまる。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-boki-inventory",
+      "subject": "boki",
+      "unit": 1,
+      "order": 3,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "棚卸資産の数量・単価・評価損",
+      "objectives": ["売上原価の流れを説明する", "移動平均で払出単価を計算する", "棚卸減耗と評価損を分ける"],
+      "glossary": [
+        {
+          "term": "売上原価",
+          "definition": "販売した商品・製品等に対応する原価"
+        },
+        {
+          "term": "正味売却価額",
+          "definition": "売価から見積追加製造原価と見積販売直接経費を控除した額"
+        },
+        {
+          "term": "棚卸減耗",
+          "definition": "帳簿数量に対する実際数量の不足"
+        }
+      ],
+      "sources": ["asbj-inventory", "accounting-principles"],
+      "additionalStudy": "売価還元法、特殊商品売買、製造業の高度な棚卸評価は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-boki-fixed",
+      "subject": "boki",
+      "unit": 1,
+      "order": 4,
+      "position": 4,
+      "stage": "事例と計算で確かめる",
+      "title": "固定資産の取得・償却・売却",
+      "objectives": ["取得原価と費用を分ける", "定額法と月割を計算する", "売却時の帳簿価額から損益を求める"],
+      "glossary": [
+        {
+          "term": "取得原価",
+          "definition": "購入代価又は製造原価と、取得に直接必要な付随費用等を含む資産取得の額"
+        },
+        {
+          "term": "減価償却",
+          "definition": "取得原価から残存価額を差し引いた金額を、使用期間にわたって費用に配分する手続"
+        },
+        {
+          "term": "帳簿価額",
+          "definition": "取得原価等から減価償却累計額等を控除した残額"
+        }
+      ],
+      "sources": ["company-calculations", "accounting-principles", "lease-current", "lease-new"],
+      "additionalStudy": "圧縮記帳、資産除去債務、減損、ソフトウェア各論は別途演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-boki-finance",
+      "subject": "boki",
+      "unit": 1,
+      "order": 5,
+      "position": 5,
+      "stage": "事例と計算で確かめる",
+      "title": "有価証券・社債・外貨の測定",
+      "objectives": ["有価証券の保有目的を分ける", "社債の償却原価を計算する", "外貨の換算差額を求める"],
+      "glossary": [
+        {
+          "term": "償却原価法",
+          "definition": "取得差額を利息等へ配分し帳簿価額を修正する方法"
+        },
+        {
+          "term": "為替差損益",
+          "definition": "外国通貨の換算や決済による差額"
+        },
+        {
+          "term": "売買目的有価証券",
+          "definition": "時価変動による利益を目的に保有する有価証券"
+        }
+      ],
+      "sources": ["asbj-finance", "foreign-currency"],
+      "additionalStudy": "実効利子率、ヘッジ会計、外貨建の高度な取引は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-boki-branches",
+      "subject": "boki",
+      "unit": 1,
+      "order": 6,
+      "position": 6,
+      "stage": "手続と総合復習へ",
+      "title": "本支店・帳簿組織と工業簿記の流れ",
+      "objectives": ["内部取引を合算から消去する", "未達取引を補正する", "製造原価の勘定連絡を追う"],
+      "glossary": [
+        {
+          "term": "未達取引",
+          "definition": "一方が記帳し相手方がまだ記帳していない内部取引"
+        },
+        {
+          "term": "内部利益",
+          "definition": "企業内部の振替価格に含まれる利益"
+        },
+        {
+          "term": "仕掛品",
+          "definition": "製造途中の未完成品として原価を集計する棚卸資産"
+        }
+      ],
+      "sources": ["accounting-principles", "foreign-currency"],
+      "additionalStudy": "帳簿組織の全形式、在外支店、利息法、直接法キャッシュ・フロー計算書、キャッシュ・フロー見積法、セール・アンド・リースバック等は追加学習・演習が必要。原価計算自体は公式の除外範囲と区別。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-zaimu-concepts",
+      "subject": "zaimu",
+      "unit": 2,
+      "order": 7,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "財務会計の目的と利益の意味",
+      "objectives": [
+        "投資意思決定との関係を説明する",
+        "現金収支と期間損益を区別する",
+        "比較可能性と内的整合性を考える"
+      ],
+      "glossary": [
+        {
+          "term": "発生主義",
+          "definition": "現金収支だけでなく経済事象の発生に基づき認識する考え方"
+        },
+        {
+          "term": "比較可能性",
+          "definition": "企業間や期間の比較に必要な共通性と相違の識別"
+        },
+        {
+          "term": "純利益",
+          "definition": "概念フレームワークで、リスクから解放された投資の成果として説明される利益"
+        }
+      ],
+      "sources": ["asbj-framework", "accounting-principles"],
+      "additionalStudy": "概念フレームワーク全項目と学説の比較は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-zaimu-revenue",
+      "subject": "zaimu",
+      "unit": 2,
+      "order": 8,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "収益認識を履行義務から考える",
+      "objectives": ["契約と履行義務を整理する", "取引価格を配分する", "一時点と一定期間の認識を比較する"],
+      "glossary": [
+        {
+          "term": "履行義務",
+          "definition": "別個の財・サービス、その束又は一定の一連の財・サービスを顧客へ移転する約束"
+        },
+        {
+          "term": "独立販売価格",
+          "definition": "財又はサービスを単独で販売する価格"
+        },
+        {
+          "term": "契約負債",
+          "definition": "対価を受領済み又は受領期限が到来した顧客に対し、財・サービスを移転する義務"
+        }
+      ],
+      "sources": ["asbj-revenue"],
+      "additionalStudy": "変動対価、本人代理人、返品、進捗度と契約変更の詳細は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-zaimu-assets",
+      "subject": "zaimu",
+      "unit": 2,
+      "order": 9,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "資産評価と減損を二段階で判断する",
+      "objectives": [
+        "取得原価と時価の使い分けを説明する",
+        "減損の認識を判定する",
+        "回収可能価額と損失を求める"
+      ],
+      "glossary": [
+        {
+          "term": "減損の兆候",
+          "definition": "資産又は資産グループに減損が生じている可能性を示す事象"
+        },
+        {
+          "term": "回収可能価額",
+          "definition": "正味売却価額と使用価値のいずれか高い額"
+        },
+        {
+          "term": "使用価値",
+          "definition": "資産又は資産グループの継続使用と使用後の処分から生じる将来キャッシュ・フローの現在価値"
+        }
+      ],
+      "sources": ["asbj-inventory", "asbj-finance", "impairment"],
+      "additionalStudy": "資産グルーピング、共用資産、のれん、金融資産の評価は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-zaimu-liabilities",
+      "subject": "zaimu",
+      "unit": 2,
+      "order": 10,
+      "position": 4,
+      "stage": "事例と計算で確かめる",
+      "title": "引当金・退職給付・税効果の理由",
+      "objectives": ["引当金の要件を説明する", "退職給付の負債を整理する", "一時差異の税効果を計算する"],
+      "glossary": [
+        {
+          "term": "引当金",
+          "definition": "当期以前の事象に起因し、発生可能性が高く合理的に見積もれる将来の特定費用・損失について当期負担額を計上するもの"
+        },
+        {
+          "term": "一時差異",
+          "definition": "会計と税務の資産負債の金額の差で将来解消するもの"
+        },
+        {
+          "term": "繰延税金資産",
+          "definition": "将来の税負担を減らす効果を表す資産"
+        }
+      ],
+      "sources": ["accounting-principles", "retirement", "asbj-tax", "tax-effects-guide"],
+      "additionalStudy": "回収可能性、数理計算上の差異、資産除去債務は概説後の追加演習が必要。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-zaimu-equity",
+      "subject": "zaimu",
+      "unit": 2,
+      "order": 11,
+      "position": 5,
+      "stage": "事例と計算で確かめる",
+      "title": "純資産・株式報酬・企業結合と連結",
+      "objectives": ["資本取引と損益取引を分ける", "自己株式の表示を説明する", "投資と資本の相殺を計算する"],
+      "glossary": [
+        {
+          "term": "自己株式",
+          "definition": "会社が保有する自社の株式"
+        },
+        {
+          "term": "非支配株主持分",
+          "definition": "子会社の資本のうち親会社に帰属しない部分"
+        },
+        {
+          "term": "のれん",
+          "definition": "取得原価が、識別可能な資産と負債の差額の取得持分等を上回る額"
+        }
+      ],
+      "sources": ["stock-options", "combinations", "consolidation", "treasury-stock"],
+      "additionalStudy": "株式報酬の評価、段階取得、税効果込みの企業結合、連結修正は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-zaimu-statements",
+      "subject": "zaimu",
+      "unit": 2,
+      "order": 12,
+      "position": 6,
+      "stage": "手続と総合復習へ",
+      "title": "財務諸表・キャッシュフロー・注記を読む",
+      "objectives": ["表示区分を取引の性質から選ぶ", "間接法の調整を計算する", "注記が補う情報を説明する"],
+      "glossary": [
+        {
+          "term": "営業活動",
+          "definition": "通常の営業取引と、投資・財務活動以外の取引等に係るキャッシュ・フローの区分"
+        },
+        {
+          "term": "現金同等物",
+          "definition": "容易に換金でき価値変動リスクが僅少な短期投資"
+        },
+        {
+          "term": "注記",
+          "definition": "財務諸表本表の理解に必要な補足情報"
+        }
+      ],
+      "sources": [
+        "companies-law",
+        "company-calculations",
+        "financial-regulations",
+        "consolidated-regulations",
+        "cash-flows"
+      ],
+      "additionalStudy": "財務諸表規則の全様式、連結CF、期中報告、新リース基準の詳細は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-shotoku-scope",
+      "subject": "shotoku",
+      "unit": 3,
+      "order": 13,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "納税義務と十種類の所得区分",
+      "objectives": ["人と所得の範囲を分ける", "収入の性質から区分を選ぶ", "非課税と控除を区別する"],
+      "glossary": [
+        {
+          "term": "居住者",
+          "definition": "国内に住所又は現在まで引き続き一年以上居所を有する個人"
+        },
+        {
+          "term": "必要経費",
+          "definition": "収入を得るための費用等として所得計算上認められる額"
+        },
+        {
+          "term": "非課税所得",
+          "definition": "法令により所得税を課さない所得"
+        }
+      ],
+      "sources": ["income-law", "special-law", "general-law", "points-03", "income-revenue"],
+      "additionalStudy": "非永住者、非居住者、国外所得、各非課税規定の詳細は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shotoku-business",
+      "subject": "shotoku",
+      "unit": 3,
+      "order": 14,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "事業所得の収入・必要経費・青色申告",
+      "objectives": ["売上を期間へ帰属させる", "家事関連費を区分する", "棚卸と償却で所得を計算する"],
+      "glossary": [
+        {
+          "term": "総収入金額",
+          "definition": "その年の収入すべき金額を基礎とする所得計算の出発額"
+        },
+        {
+          "term": "家事費",
+          "definition": "個人生活のための支出"
+        },
+        {
+          "term": "青色申告",
+          "definition": "承認を受け帳簿等の要件に従って申告する制度"
+        }
+      ],
+      "sources": ["income-law", "special-law", "general-law", "points-03", "income-revenue", "income-blue"],
+      "additionalStudy": "貸倒れ、事業専従者、資産損失、青色特典の個別条件は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shotoku-salary",
+      "subject": "shotoku",
+      "unit": 3,
+      "order": 15,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "給与・退職所得を別の計算で求める",
+      "objectives": [
+        "給与所得控除と所得控除を分ける",
+        "退職所得の基本式を計算する",
+        "二分の一課税の例外を識別する"
+      ],
+      "glossary": [
+        {
+          "term": "給与所得控除",
+          "definition": "給与収入から給与所得を計算する際の控除"
+        },
+        {
+          "term": "退職所得控除",
+          "definition": "勤続年数等に応じた退職所得の控除"
+        },
+        {
+          "term": "分離課税",
+          "definition": "一定の所得を他の所得と区分して課税する方式"
+        }
+      ],
+      "sources": [
+        "income-law",
+        "special-law",
+        "general-law",
+        "points-03",
+        "income-salary",
+        "income-retirement"
+      ],
+      "additionalStudy": "給与所得控除の改正年、特定役員・短期退職・複数退職金の詳細は追加確認。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-shotoku-capital",
+      "subject": "shotoku",
+      "unit": 3,
+      "order": 16,
+      "position": 4,
+      "stage": "事例と計算で確かめる",
+      "title": "譲渡・一時・雑所得と特別控除",
+      "objectives": ["取得費と譲渡費用を分ける", "総合と分離の譲渡を区別する", "一時所得の算入額を求める"],
+      "glossary": [
+        {
+          "term": "取得費",
+          "definition": "譲渡した資産の取得等に要した額"
+        },
+        {
+          "term": "譲渡費用",
+          "definition": "資産を譲渡するため直接要した費用"
+        },
+        {
+          "term": "一時所得",
+          "definition": "営利目的の継続的行為によらず、労務・役務・資産譲渡の対価でもない一時の所得で法定のもの"
+        }
+      ],
+      "sources": [
+        "income-law",
+        "special-law",
+        "general-law",
+        "points-03",
+        "income-transfer",
+        "income-temporary"
+      ],
+      "additionalStudy": "土地建物・株式・先物等の各特例、損失制限、長短判定は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shotoku-deductions",
+      "subject": "shotoku",
+      "unit": 3,
+      "order": 17,
+      "position": 5,
+      "stage": "事例と計算で確かめる",
+      "title": "損益通算と所得控除を順序で整理する",
+      "objectives": [
+        "通算できる損失を識別する",
+        "繰越しと当年通算を分ける",
+        "所得控除後の課税所得を計算する"
+      ],
+      "glossary": [
+        {
+          "term": "損益通算",
+          "definition": "一定の所得の損失を他の所得から控除する計算"
+        },
+        {
+          "term": "所得控除",
+          "definition": "各種所得の計算後、総所得金額等から差し引いて課税所得を求める一定の控除"
+        },
+        {
+          "term": "税額控除",
+          "definition": "算出した税額から直接差し引く控除"
+        }
+      ],
+      "sources": [
+        "income-law",
+        "special-law",
+        "general-law",
+        "points-03",
+        "income-deductions",
+        "income-loss"
+      ],
+      "additionalStudy": "通算の順序、生活に通常必要でない資産、各人的控除と基礎控除の施行関係は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shotoku-return",
+      "subject": "shotoku",
+      "unit": 3,
+      "order": 18,
+      "position": 6,
+      "stage": "手続と総合復習へ",
+      "title": "累進税率・源泉徴収・申告の仕組み",
+      "objectives": ["超過累進税率を計算する", "源泉徴収と確定税額を精算する", "申告種類と期限を区別する"],
+      "glossary": [
+        {
+          "term": "源泉徴収",
+          "definition": "支払者が支払時に所得税等を徴収して納付する仕組み"
+        },
+        {
+          "term": "確定申告",
+          "definition": "年間所得と税額を確定して申告する手続"
+        },
+        {
+          "term": "復興特別所得税",
+          "definition": "基準所得税額に一定率を乗じて課す付加的な所得税"
+        }
+      ],
+      "sources": ["income-law", "special-law", "general-law", "points-03", "income-rate", "income-refund"],
+      "additionalStudy": "準確定申告、申告不要、外国税額控除、改正控除、各特別措置の詳細は追加演習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-hojin-adjustment",
+      "subject": "hojin",
+      "unit": 4,
+      "order": 19,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "会計利益から所得へ・別表四の考え方",
+      "objectives": ["益金損金と収益費用を分ける", "加算と減算を選ぶ", "留保と社外流出を整理する"],
+      "glossary": [
+        {
+          "term": "益金",
+          "definition": "法人所得計算における収益等の金額"
+        },
+        {
+          "term": "損金",
+          "definition": "法人所得計算における原価費用損失等の金額"
+        },
+        {
+          "term": "留保",
+          "definition": "税務調整が法人内部の資産負債等に関係して残る区分"
+        }
+      ],
+      "sources": ["corporate-law", "special-law", "general-law", "points-04"],
+      "additionalStudy": "別表五との完全連動、組織再編、収益計上時期の特例は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-hojin-assets",
+      "subject": "hojin",
+      "unit": 4,
+      "order": 20,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "棚卸・減価償却・貸倒れの税務調整",
+      "objectives": [
+        "損金経理と限度額の関係を説明する",
+        "償却超過と認容を追う",
+        "評価損と貸倒れの条件を分ける"
+      ],
+      "glossary": [
+        {
+          "term": "損金経理",
+          "definition": "確定決算において費用又は損失として経理すること"
+        },
+        {
+          "term": "償却限度額",
+          "definition": "税務上その期に損金算入できる償却の上限"
+        },
+        {
+          "term": "認容",
+          "definition": "過去の加算額等を後の期に減算する処理"
+        }
+      ],
+      "sources": ["corporate-law", "special-law", "general-law", "points-04"],
+      "additionalStudy": "償却方法・耐用年数表、少額資産、貸倒引当金の対象法人等は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-hojin-compensation",
+      "subject": "hojin",
+      "unit": 4,
+      "order": 21,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "役員給与・交際費・寄附金を区分する",
+      "objectives": ["役員給与の類型を識別する", "交際費と寄附金を分ける", "限度超過を所得へ加算する"],
+      "glossary": [
+        {
+          "term": "定期同額給与",
+          "definition": "一か月以下の一定期間ごとに同額を支給する等の法定要件を満たす役員給与"
+        },
+        {
+          "term": "交際費等",
+          "definition": "接待等のための支出で法令に該当するもの"
+        },
+        {
+          "term": "寄附金",
+          "definition": "金銭その他の資産や経済的利益の贈与等の法定範囲"
+        }
+      ],
+      "sources": [
+        "corporate-law",
+        "special-law",
+        "general-law",
+        "points-04",
+        "officer-pay",
+        "entertainment",
+        "donations"
+      ],
+      "additionalStudy": "事前確定届出給与、業績連動給与、飲食費除外と各限度額の詳細は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-hojin-distributions",
+      "subject": "hojin",
+      "unit": 4,
+      "order": 22,
+      "position": 4,
+      "stage": "事例と計算で確かめる",
+      "title": "受取配当・資本取引とグループの関係",
+      "objectives": [
+        "配当の二重課税調整を説明する",
+        "保有区分から不算入を求める",
+        "損益取引と資本取引を区別する"
+      ],
+      "glossary": [
+        {
+          "term": "益金不算入",
+          "definition": "収入等のうち所得計算上の益金へ算入しない制度"
+        },
+        {
+          "term": "完全子法人株式等",
+          "definition": "原則として配当等の計算期間を通じ完全支配関係がある等の法定要件を満たす株式等"
+        },
+        {
+          "term": "資本等取引",
+          "definition": "資本金等の額の増減を生じる取引や、利益・剰余金・残余財産の分配等の法定取引"
+        }
+      ],
+      "sources": ["corporate-law", "special-law", "general-law", "points-04", "corporate-dividend"],
+      "additionalStudy": "負債利子控除、保有期間、みなし配当、グループ通算と組織再編は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-hojin-losses",
+      "subject": "hojin",
+      "unit": 4,
+      "order": 23,
+      "position": 5,
+      "stage": "事例と計算で確かめる",
+      "title": "欠損金・繰越控除・引継ぎの条件",
+      "objectives": ["欠損と会計赤字を分ける", "繰越残高を年度別に管理する", "所得限度と控除順を計算する"],
+      "glossary": [
+        {
+          "term": "欠損金額",
+          "definition": "各事業年度の損金が益金を超える額等の法定額"
+        },
+        {
+          "term": "繰越控除",
+          "definition": "過去の一定額を後の年度等の所得から控除する制度"
+        },
+        {
+          "term": "繰戻し還付",
+          "definition": "一定の欠損を前期等へ戻して税の還付を求める制度"
+        }
+      ],
+      "sources": ["corporate-law", "special-law", "general-law", "points-04", "corporate-loss"],
+      "additionalStudy": "中小法人等の要件、適用期限、支配関係変更と再編の制限は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-hojin-return",
+      "subject": "hojin",
+      "unit": 4,
+      "order": 24,
+      "position": 6,
+      "stage": "手続と総合復習へ",
+      "title": "法人税額・申告と防衛特別法人税",
+      "objectives": ["所得と税額控除を区別する", "中間納付を精算する", "防衛特別法人税の基本を計算する"],
+      "glossary": [
+        {
+          "term": "基準法人税額",
+          "definition": "防衛特別法人税の基礎となる一定の調整後の法人税額"
+        },
+        {
+          "term": "中間申告",
+          "definition": "事業年度の途中で一定の税額を申告する制度"
+        },
+        {
+          "term": "地方法人税",
+          "definition": "法人税額等を課税標準とする国税"
+        }
+      ],
+      "sources": [
+        "corporate-law",
+        "special-law",
+        "general-law",
+        "points-04",
+        "defense-tax",
+        "corporate-rate"
+      ],
+      "additionalStudy": "通算法人、外国税額控除、税額控除の調整、短期事業年度の各特例は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-sozoku-scope",
+      "subject": "sozoku",
+      "unit": 5,
+      "order": 25,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "相続人・納税義務・課税財産",
+      "objectives": ["法定相続人を確定する", "本来財産とみなし財産を分ける", "債務と葬式費用を判定する"],
+      "glossary": [
+        {
+          "term": "法定相続人",
+          "definition": "民法の規定に基づいて相続する地位を持つ者"
+        },
+        {
+          "term": "みなし相続財産",
+          "definition": "相続等とみなして相続税を課す一定の財産"
+        },
+        {
+          "term": "債務控除",
+          "definition": "一定の債務等を財産価額から差し引く計算"
+        }
+      ],
+      "sources": [
+        "inheritance-law",
+        "special-law",
+        "inheritance-total",
+        "points-05",
+        "inheritance-heirs",
+        "inheritance-insurance"
+      ],
+      "additionalStudy": "養子の人数制限、制限納税義務、相続放棄・欠格・代襲の複合例は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-sozoku-valuation",
+      "subject": "sozoku",
+      "unit": 5,
+      "order": 26,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "路線価・建物・預金の評価",
+      "objectives": [
+        "相続時点の評価を説明する",
+        "路線価方式の基本を計算する",
+        "所有と利用関係の補正を区別する"
+      ],
+      "glossary": [
+        {
+          "term": "路線価",
+          "definition": "道路に面する標準的宅地の一平方メートル当たりの評価額"
+        },
+        {
+          "term": "倍率方式",
+          "definition": "固定資産税評価額等へ評価倍率を乗じる方法"
+        },
+        {
+          "term": "貸家建付地",
+          "definition": "所有する貸家の敷地として利用する宅地"
+        }
+      ],
+      "sources": [
+        "inheritance-law",
+        "special-law",
+        "inheritance-total",
+        "points-05",
+        "inheritance-road",
+        "inheritance-multiple",
+        "inheritance-landlord"
+      ],
+      "additionalStudy": "不整形地、無道路地、借地権、非上場株式、各評価通達の詳細は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-sozoku-reliefs",
+      "subject": "sozoku",
+      "unit": 5,
+      "order": 27,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "生命保険の非課税と小規模宅地等",
+      "objectives": [
+        "非課税限度額の人数を数える",
+        "取得者ごとの適用を分ける",
+        "限度面積と減額割合を計算する"
+      ],
+      "glossary": [
+        {
+          "term": "小規模宅地等の特例",
+          "definition": "一定の宅地等の評価額を面積や利用等の条件に応じ減額する制度"
+        },
+        {
+          "term": "特定居住用宅地等",
+          "definition": "被相続人等の居住用で法定要件を満たす宅地等"
+        },
+        {
+          "term": "非課税限度額",
+          "definition": "一定の財産について税を課さない上限額"
+        }
+      ],
+      "sources": [
+        "inheritance-law",
+        "special-law",
+        "inheritance-total",
+        "points-05",
+        "inheritance-land",
+        "inheritance-insurance"
+      ],
+      "additionalStudy": "同居・家なき子等の要件、事業用宅地、面積併用の調整は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-sozoku-total",
+      "subject": "sozoku",
+      "unit": 5,
+      "order": 28,
+      "position": 4,
+      "stage": "事例と計算で確かめる",
+      "title": "相続税の総額から各人の税額へ",
+      "objectives": ["基礎控除を求める", "法定相続分で総額を計算する", "実取得割合と配偶者軽減を分ける"],
+      "glossary": [
+        {
+          "term": "課税遺産総額",
+          "definition": "課税価格の合計から遺産の基礎控除を引いた額"
+        },
+        {
+          "term": "相続税の総額",
+          "definition": "課税遺産総額を法定相続分で配分して計算した税額の合計"
+        },
+        {
+          "term": "配偶者の税額軽減",
+          "definition": "配偶者の取得額等に応じ相続税額を軽減する制度"
+        }
+      ],
+      "sources": ["inheritance-law", "special-law", "inheritance-total", "points-05"],
+      "additionalStudy": "二割加算、未成年者等の控除、相次相続控除、端数処理の全連動は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-sozoku-gifts",
+      "subject": "sozoku",
+      "unit": 5,
+      "order": 29,
+      "position": 5,
+      "stage": "手続と総合復習へ",
+      "title": "暦年贈与・相続時精算課税・申告",
+      "objectives": [
+        "二つの贈与課税方式を比較する",
+        "基礎控除と特別控除を分ける",
+        "相続への加算時期を確認する"
+      ],
+      "glossary": [
+        {
+          "term": "暦年課税",
+          "definition": "一年間の贈与を基礎に贈与税を計算する方式"
+        },
+        {
+          "term": "相続時精算課税",
+          "definition": "贈与者ごとに選び、贈与税と相続税を通じて精算する制度。2024年以後の年基礎控除部分は相続時に加算しない"
+        },
+        {
+          "term": "贈与財産の加算",
+          "definition": "一定期間内等の贈与額を相続税の課税価格へ加える計算"
+        }
+      ],
+      "sources": [
+        "inheritance-law",
+        "special-law",
+        "inheritance-total",
+        "points-05",
+        "inheritance-gift-add",
+        "inheritance-settlement",
+        "gift-annual"
+      ],
+      "additionalStudy": "七年加算への経過措置、住宅取得資金、事業承継、延納物納の詳細は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shohi-scope",
+      "subject": "shohi",
+      "unit": 6,
+      "order": 30,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "課税・非課税・免税・対象外を見分ける",
+      "objectives": ["国内取引の要件を確認する", "非課税と輸出免税を分ける", "仕入控除との関係を説明する"],
+      "glossary": [
+        {
+          "term": "課税資産の譲渡等",
+          "definition": "資産の譲渡等のうち、法定の非課税とされるものを除いたもの"
+        },
+        {
+          "term": "輸出免税",
+          "definition": "輸出取引等について消費税を免除する制度"
+        },
+        {
+          "term": "非課税取引",
+          "definition": "土地の譲渡等の法定の非課税とされた取引"
+        }
+      ],
+      "sources": ["consumption-law", "special-law", "consumption-duty", "points-06", "consumption-ratio"],
+      "additionalStudy": "国外取引、電子サービス、リバースチャージ、輸入取引は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shohi-liability",
+      "subject": "shohi",
+      "unit": 6,
+      "order": 31,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "基準期間・特定期間・登録の納税義務",
+      "objectives": ["基準期間を時系列で特定する", "一千万円判定と例外を分ける", "新設法人と登録を検討する"],
+      "glossary": [
+        {
+          "term": "基準期間",
+          "definition": "原則として個人の前々年又は法人の前々事業年度"
+        },
+        {
+          "term": "特定期間",
+          "definition": "前年の前半等の納税義務判定に用いる期間"
+        },
+        {
+          "term": "適格請求書発行事業者",
+          "definition": "登録により適格請求書を交付できる事業者"
+        }
+      ],
+      "sources": ["consumption-law", "special-law", "consumption-duty", "points-06"],
+      "additionalStudy": "短期事業年度、特定新規設立法人、高額資産と相続承継の例外は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shohi-output",
+      "subject": "shohi",
+      "unit": 6,
+      "order": 32,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "課税標準・税率・売上税額",
+      "objectives": ["標準と軽減税率を分ける", "税込から対価と税額を分ける", "国税と地方消費税を区別する"],
+      "glossary": [
+        {
+          "term": "軽減税率",
+          "definition": "一定の飲食料品等に適用する税率"
+        },
+        {
+          "term": "課税標準",
+          "definition": "税額計算の基礎となる対価等の金額"
+        },
+        {
+          "term": "地方消費税",
+          "definition": "消費税額等を基礎として課される地方税"
+        }
+      ],
+      "sources": ["consumption-law", "special-law", "consumption-duty", "points-06", "consumption-output"],
+      "additionalStudy": "返還等、貸倒れ、外貨、輸入課税標準、端数処理の申告別計算は追加演習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-shohi-input",
+      "subject": "shohi",
+      "unit": 6,
+      "order": 33,
+      "position": 4,
+      "stage": "事例と計算で確かめる",
+      "title": "仕入税額控除とインボイスの条件",
+      "objectives": [
+        "帳簿と請求書の保存を説明する",
+        "課税売上割合を計算する",
+        "免税事業者からの仕入れを判定する"
+      ],
+      "glossary": [
+        {
+          "term": "仕入税額控除",
+          "definition": "売上に係る税額から一定の仕入税額を控除する仕組み"
+        },
+        {
+          "term": "課税売上割合",
+          "definition": "国内取引の税抜対価等を基礎とする割合で、輸出免税売上を分子・分母へ、非課税売上を原則分母のみへ含めるもの"
+        },
+        {
+          "term": "個別対応方式",
+          "definition": "仕入れを用途別に分けて控除額を計算する方式"
+        }
+      ],
+      "sources": [
+        "consumption-law",
+        "special-law",
+        "consumption-duty",
+        "points-06",
+        "consumption-2026",
+        "consumption-input",
+        "consumption-ratio"
+      ],
+      "additionalStudy": "保存例外、居住用賃貸建物、調整対象固定資産、2026年以後の経過措置は追加確認。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shohi-methods",
+      "subject": "shohi",
+      "unit": 6,
+      "order": 34,
+      "position": 5,
+      "stage": "手続と総合復習へ",
+      "title": "簡易課税・二割特例・申告の比較",
+      "objectives": [
+        "本則とみなし控除を比較する",
+        "事業区分から控除を計算する",
+        "適用期間と選択手続を分ける"
+      ],
+      "glossary": [
+        {
+          "term": "みなし仕入率",
+          "definition": "簡易課税で売上税額へ乗じる事業区分別の率"
+        },
+        {
+          "term": "簡易課税",
+          "definition": "一定の中小事業者についてみなし仕入率を用いる制度"
+        },
+        {
+          "term": "二割特例",
+          "definition": "一定の登録事業者が売上税額の二割を納付額とする特例"
+        }
+      ],
+      "sources": [
+        "consumption-law",
+        "special-law",
+        "consumption-duty",
+        "points-06",
+        "consumption-two",
+        "consumption-2026",
+        "consumption-simple"
+      ],
+      "additionalStudy": "複数事業の特例、課税期間短縮、届出期限、三割特例等の将来適用は追加確認。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shuzei-class",
+      "subject": "shuzei",
+      "unit": 7,
+      "order": 35,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "酒類の定義・四分類・品目の判定",
+      "objectives": ["アルコール分の定義を説明する", "製法と性状で品目を判定する", "税率分類と名称を分ける"],
+      "glossary": [
+        {
+          "term": "アルコール分",
+          "definition": "温度十五度における容量百分率で示すアルコールの割合"
+        },
+        {
+          "term": "発泡性酒類",
+          "definition": "四分類の一つで、ビール・発泡酒・その他の発泡性酒類を含む区分"
+        },
+        {
+          "term": "品目",
+          "definition": "酒税法に定める清酒やビール等の酒類の区分"
+        }
+      ],
+      "sources": [
+        "liquor-law",
+        "special-law",
+        "liquor-rates",
+        "points-07",
+        "liquor-transition",
+        "liquor-training",
+        "liquor-mof"
+      ],
+      "additionalStudy": "全十七品目の詳細要件、原料割合、エキス分と混和の各規定は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shuzei-license",
+      "subject": "shuzei",
+      "unit": 7,
+      "order": 36,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "製造免許・販売業免許と移出課税",
+      "objectives": ["製造と販売の免許を区別する", "製造場からの移出を追う", "みなし移出の意味を説明する"],
+      "glossary": [
+        {
+          "term": "移出",
+          "definition": "酒類を製造場等から出すこと"
+        },
+        {
+          "term": "製造免許",
+          "definition": "品目や製造場等について酒類を製造するための免許"
+        },
+        {
+          "term": "みなし移出",
+          "definition": "消費等の一定の行為を移出とみなす規定"
+        }
+      ],
+      "sources": [
+        "liquor-law",
+        "special-law",
+        "liquor-rates",
+        "points-07",
+        "liquor-transition",
+        "liquor-training",
+        "liquor-mof"
+      ],
+      "additionalStudy": "最低製造数量、試験製造、販売免許の全区分、法定免許要件は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-shuzei-amount",
+      "subject": "shuzei",
+      "unit": 7,
+      "order": 37,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "数量換算・アルコール分・酒税額",
+      "objectives": [
+        "リットルとキロリットルを換算する",
+        "税率適用の日付を確認する",
+        "段階税率の増額を計算する"
+      ],
+      "glossary": [
+        {
+          "term": "課税数量",
+          "definition": "税額計算の対象となる酒類の数量"
+        },
+        {
+          "term": "従量税",
+          "definition": "数量を基準として計算する税"
+        },
+        {
+          "term": "加算税率",
+          "definition": "一定のアルコール分超過等に応じ追加する税率"
+        }
+      ],
+      "sources": [
+        "liquor-law",
+        "special-law",
+        "liquor-rates",
+        "points-07",
+        "liquor-transition",
+        "liquor-training",
+        "liquor-mof"
+      ],
+      "additionalStudy": "全品目の税率表、測定方法、税率改正の経過措置を追加確認。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-shuzei-return",
+      "subject": "shuzei",
+      "unit": 7,
+      "order": 38,
+      "position": 4,
+      "stage": "手続と総合復習へ",
+      "title": "未納税移出・輸出免税・戻入れと申告",
+      "objectives": [
+        "未納税移出と輸出免税の目的・要件を分ける",
+        "戻入れの控除を計算する",
+        "帳簿と申告のつながりを追う"
+      ],
+      "glossary": [
+        {
+          "term": "未納税移出",
+          "definition": "所定の目的・手続によりその移出の酒税を免除し、後の段階へ課税をつなぐ制度"
+        },
+        {
+          "term": "戻入れ",
+          "definition": "移出した酒類を製造場へ戻すこと"
+        },
+        {
+          "term": "輸出免税",
+          "definition": "輸出する酒類等について法定手続により税を免除する制度"
+        }
+      ],
+      "sources": [
+        "liquor-law",
+        "special-law",
+        "liquor-rates",
+        "points-07",
+        "liquor-transition",
+        "liquor-training",
+        "liquor-mof"
+      ],
+      "additionalStudy": "全ての承認手続、担保、酒税軽減制度と控除限度の詳細は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-kokuzei-priority",
+      "subject": "kokuzei",
+      "unit": 8,
+      "order": 39,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "成立・確定・法定納期限等と優先関係",
+      "objectives": ["税の成立と確定を区別する", "法定納期限等を時系列に置く", "抵当権との優先を判断する"],
+      "glossary": [
+        {
+          "term": "法定納期限等",
+          "definition": "原則は法定納期限とし、修正申告等では申告日・通知書発出日等の特則もある、担保権等との優先関係の基準日"
+        },
+        {
+          "term": "国税優先の原則",
+          "definition": "国税を他の公課や債権に優先して徴収する基本原則"
+        },
+        {
+          "term": "納期限",
+          "definition": "税を納付すべき期限"
+        }
+      ],
+      "sources": ["collection-law", "general-law", "points-08", "collection-training"],
+      "additionalStudy": "法定納期限等の各特則、交付要求先着手と税相互の優先は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-kokuzei-seizure",
+      "subject": "kokuzei",
+      "unit": 8,
+      "order": 40,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "督促・差押え・債権の取立て",
+      "objectives": ["督促後の手続を説明する", "差押禁止と超過を判定する", "債権差押えの効果を整理する"],
+      "glossary": [
+        {
+          "term": "督促",
+          "definition": "滞納された税の納付を求める法定手続"
+        },
+        {
+          "term": "第三債務者",
+          "definition": "差押対象の債権について、滞納者に支払等の義務を負う相手方"
+        },
+        {
+          "term": "差押禁止財産",
+          "definition": "生活保障等のため差押えを禁止又は制限する財産"
+        }
+      ],
+      "sources": ["collection-law", "general-law", "points-08", "collection-training"],
+      "additionalStudy": "給与等の具体的禁止額、財産種別ごとの差押手続、無剰余の例外は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-kokuzei-sale",
+      "subject": "kokuzei",
+      "unit": 8,
+      "order": 41,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "換価・配当と第二次納税義務",
+      "objectives": [
+        "換価代金を順位に従って配当する",
+        "本来の納税義務と第二次を分ける",
+        "追及可能額を計算する"
+      ],
+      "glossary": [
+        {
+          "term": "換価",
+          "definition": "差し押さえた財産を金銭に換える手続"
+        },
+        {
+          "term": "配当",
+          "definition": "換価代金等を国税や関係債権へ分配する手続"
+        },
+        {
+          "term": "第二次納税義務",
+          "definition": "主たる納税者の徴収不足等について、法定要件を満たす者が補充的に負担する義務"
+        }
+      ],
+      "sources": ["collection-law", "general-law", "points-08", "collection-training", "collection-second"],
+      "additionalStudy": "公売全手続、各第二次納税義務の成立要件と限度、担保権複合事例は追加演習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-kokuzei-relief",
+      "subject": "kokuzei",
+      "unit": 8,
+      "order": 42,
+      "position": 4,
+      "stage": "手続と総合復習へ",
+      "title": "猶予・滞納処分の停止・不服申立て",
+      "objectives": [
+        "納税の猶予と換価の猶予を分ける",
+        "執行停止の理由と効果を整理する",
+        "救済手続の申立先を確認する"
+      ],
+      "glossary": [
+        {
+          "term": "換価の猶予",
+          "definition": "事業継続・生活維持への支障等の法定理由により、差押財産の売却等を待つ制度"
+        },
+        {
+          "term": "滞納処分の停止",
+          "definition": "無財産、生活の著しい窮迫、所在と財産がともに不明等の法定理由により執行を停止する制度"
+        },
+        {
+          "term": "審査請求",
+          "definition": "国税の処分等について、原則として国税不服審判所長へ取消し・変更等を求める手続"
+        }
+      ],
+      "sources": [
+        "collection-law",
+        "general-law",
+        "points-08",
+        "collection-training",
+        "collection-delay",
+        "collection-relief",
+        "collection-appeal"
+      ],
+      "additionalStudy": "担保免除、期間延長、消滅の例外、審査請求期間の全起算例は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-jumin-individual",
+      "subject": "jumin",
+      "unit": 9,
+      "order": 43,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "個人住民税の住所・年度・所得",
+      "objectives": ["一月一日の住所地を確認する", "所得の年と課税年度を分ける", "所得割と均等割を区別する"],
+      "glossary": [
+        {
+          "term": "賦課期日",
+          "definition": "課税の基準となる日"
+        },
+        {
+          "term": "所得割",
+          "definition": "所得を課税標準として計算する住民税の部分"
+        },
+        {
+          "term": "均等割",
+          "definition": "所得額に比例せず法定条件等により課す部分"
+        }
+      ],
+      "sources": ["local-law", "points-09", "resident-calculation"],
+      "additionalStudy": "非課税限度額、未成年者等、事務所家屋敷課税の詳細は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-jumin-adjustments",
+      "subject": "jumin",
+      "unit": 9,
+      "order": 44,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "所得控除・調整控除・税額控除",
+      "objectives": ["所得税との差を識別する", "課税所得を計算する", "所得控除と税額控除の段階を整理する"],
+      "glossary": [
+        {
+          "term": "調整控除",
+          "definition": "所得税と住民税の人的控除差等を調整する税額控除"
+        },
+        {
+          "term": "所得控除",
+          "definition": "各種所得の計算後、総所得金額等から差し引いて課税所得を求める一定の控除"
+        },
+        {
+          "term": "寄附金税額控除",
+          "definition": "一定の寄附について住民税額を控除する制度"
+        }
+      ],
+      "sources": ["local-law", "points-09", "resident-calculation"],
+      "additionalStudy": "調整控除の全区分、ふるさと納税限度、配当控除、分離課税は追加演習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-jumin-corporate",
+      "subject": "jumin",
+      "unit": 9,
+      "order": 45,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "法人住民税の均等割・法人税割・分割",
+      "objectives": ["法人税割の基礎を整理する", "所在地別の分割を計算する", "均等割の区分を確認する"],
+      "glossary": [
+        {
+          "term": "法人税割",
+          "definition": "法人税額等を課税標準とする法人住民税の部分"
+        },
+        {
+          "term": "分割基準",
+          "definition": "複数団体へ課税標準等を配分する基準"
+        },
+        {
+          "term": "資本金等の額",
+          "definition": "法人税法上の額を基礎とし、住民税では無償増減資等の法定調整も行う資本の額"
+        }
+      ],
+      "sources": ["local-law", "points-09", "local-corporate"],
+      "additionalStudy": "超過税率、均等割の全区分、通算法人と税額控除の詳細は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-jumin-collection",
+      "subject": "jumin",
+      "unit": 9,
+      "order": 46,
+      "position": 4,
+      "stage": "手続と総合復習へ",
+      "title": "普通徴収・特別徴収と退職所得",
+      "objectives": [
+        "給与の特別徴収を時系列で説明する",
+        "退職所得の現年分離を計算する",
+        "申告と自治体間の関係を整理する"
+      ],
+      "glossary": [
+        {
+          "term": "普通徴収",
+          "definition": "納税通知等により納税者が納付する徴収方法"
+        },
+        {
+          "term": "特別徴収",
+          "definition": "支払者等が徴収して納入する方法"
+        },
+        {
+          "term": "現年分離課税",
+          "definition": "退職所得を他の所得から分け、その年の住民税として課税する方式"
+        }
+      ],
+      "sources": [
+        "local-law",
+        "points-09",
+        "resident-calculation",
+        "resident-collection",
+        "resident-retirement"
+      ],
+      "additionalStudy": "年金の特別徴収、退職金の各例外、期限・変更届の詳細は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-jigyo-corporate",
+      "subject": "jigyo",
+      "unit": 10,
+      "order": 47,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "法人事業税の所得割・収入割",
+      "objectives": ["事業と課税標準の区分を選ぶ", "法人税所得から差を調整する", "所得割の段階計算を行う"],
+      "glossary": [
+        {
+          "term": "所得割",
+          "definition": "所得を課税標準とする法人事業税の部分"
+        },
+        {
+          "term": "収入割",
+          "definition": "一定事業の収入金額を課税標準とする部分"
+        },
+        {
+          "term": "事業年度",
+          "definition": "法人の損益等を区切る会計期間"
+        }
+      ],
+      "sources": ["local-law", "points-10", "local-corporate"],
+      "additionalStudy": "電気供給・ガス供給・保険等の収入金額計算、軽減税率の適用除外は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-jigyo-external",
+      "subject": "jigyo",
+      "unit": 10,
+      "order": 48,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "外形標準課税の付加価値割・資本割",
+      "objectives": ["対象法人の判定を整理する", "収益配分額を計算する", "単年度損益と付加価値額を結ぶ"],
+      "glossary": [
+        {
+          "term": "付加価値割",
+          "definition": "付加価値額を課税標準とする部分"
+        },
+        {
+          "term": "収益配分額",
+          "definition": "報酬給与額、純支払利子及び純支払賃借料を合計する法定額"
+        },
+        {
+          "term": "資本割",
+          "definition": "資本金等の額などを課税標準とする部分"
+        }
+      ],
+      "sources": ["local-law", "points-10", "local-corporate"],
+      "additionalStudy": "雇用安定控除、資本割特則、減資・子法人等への2025・2026年拡大の詳細は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-jigyo-individual",
+      "subject": "jigyo",
+      "unit": 10,
+      "order": 49,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "個人事業税の業種・控除・税額",
+      "objectives": [
+        "法定業種と所得税の区分を分ける",
+        "青色控除との差を調整する",
+        "事業主控除と月割を計算する"
+      ],
+      "glossary": [
+        {
+          "term": "法定業種",
+          "definition": "地方税法で事業税の対象とする事業の種類"
+        },
+        {
+          "term": "事業主控除",
+          "definition": "個人事業税の所得計算で差し引く一定額"
+        },
+        {
+          "term": "青色申告特別控除",
+          "definition": "青色申告の法定要件に応じ、不動産・事業・山林所得の計算段階で差し引く控除。個人事業税には適用しない"
+        }
+      ],
+      "sources": ["local-law", "points-10", "local-individual"],
+      "additionalStudy": "業種の全区分、社会保険診療、損失繰越し、事業廃止の詳細は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-jigyo-return",
+      "subject": "jigyo",
+      "unit": 10,
+      "order": 50,
+      "position": 4,
+      "stage": "手続と総合復習へ",
+      "title": "分割・特別法人事業税・申告",
+      "objectives": [
+        "従業者等による分割を計算する",
+        "特別法人事業税と地方税を分ける",
+        "申告年度と税率表を対応させる"
+      ],
+      "glossary": [
+        {
+          "term": "特別法人事業税",
+          "definition": "基準法人所得割額又は基準法人収入割額を課税標準とする国税"
+        },
+        {
+          "term": "基準法人所得割額",
+          "definition": "標準税率を用いる等の法定方法で計算する所得割額"
+        },
+        {
+          "term": "分割法人",
+          "definition": "複数の都道府県に事務所等を有する法人"
+        }
+      ],
+      "sources": ["local-law", "points-10", "local-corporate", "local-special"],
+      "additionalStudy": "業種別の分割、特別法人事業税の全率、中間申告と更正・修正の詳細は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-kotei-scope",
+      "subject": "kotei",
+      "unit": 11,
+      "order": 51,
+      "position": 1,
+      "stage": "基礎をつかむ",
+      "title": "土地・家屋・償却資産と一月一日",
+      "objectives": [
+        "固定資産の課税客体を分ける",
+        "賦課期日と所有者を確認する",
+        "取得価額・評価額・課税標準額を区別する"
+      ],
+      "glossary": [
+        {
+          "term": "固定資産",
+          "definition": "地方税法上の土地家屋及び償却資産"
+        },
+        {
+          "term": "課税台帳",
+          "definition": "固定資産の価格等を登録する台帳"
+        },
+        {
+          "term": "評価替え",
+          "definition": "土地・家屋の価格を原則三年ごとの基準年度に見直すこと"
+        }
+      ],
+      "sources": ["local-law", "points-11", "property-overview"],
+      "additionalStudy": "みなし所有者、区分所有家屋、非課税資産と特例資産の全規定は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-kotei-land",
+      "subject": "kotei",
+      "unit": 11,
+      "order": 52,
+      "position": 2,
+      "stage": "事例と計算で確かめる",
+      "title": "宅地評価・住宅用地・負担調整",
+      "objectives": [
+        "小規模住宅用地の面積を判定する",
+        "課税標準の特例を計算する",
+        "評価額と税額の変化を分ける"
+      ],
+      "glossary": [
+        {
+          "term": "小規模住宅用地",
+          "definition": "住宅一戸につき二百平方メートルまでの一定の住宅用地"
+        },
+        {
+          "term": "負担水準",
+          "definition": "前年度課税標準額等を当年度の本則課税標準額で割った割合。住宅用地では評価額へ特例率を乗じた額等を分母とする"
+        },
+        {
+          "term": "負担調整措置",
+          "definition": "課税標準の変動等を調整する制度"
+        }
+      ],
+      "sources": ["local-law", "points-11", "property-overview", "property-land"],
+      "additionalStudy": "商業地・農地等の負担調整、住宅戸数、空家勧告等の全条件は追加学習。",
+      "minutes": 40
+    },
+    {
+      "id": "zr-kotei-building",
+      "subject": "kotei",
+      "unit": 11,
+      "order": 53,
+      "position": 3,
+      "stage": "事例と計算で確かめる",
+      "title": "家屋の評価・新築住宅の税額軽減",
+      "objectives": [
+        "再建築価格と経年減点を説明する",
+        "課税標準と税額軽減を分ける",
+        "軽減対象の床面積を計算する"
+      ],
+      "glossary": [
+        {
+          "term": "再建築価格",
+          "definition": "評価時点で同じ家屋を同じ場所へ新築するとした場合に必要な建築費"
+        },
+        {
+          "term": "経年減点補正率",
+          "definition": "経過年数による減価等を反映する率"
+        },
+        {
+          "term": "新築住宅の減額",
+          "definition": "一定の新築住宅について税額を軽減する制度"
+        }
+      ],
+      "sources": ["local-law", "points-11", "property-overview", "property-new", "property-future"],
+      "additionalStudy": "長期優良住宅、耐震等改修、区分所有補正、床面積と年数要件は追加学習。",
+      "minutes": 45
+    },
+    {
+      "id": "zr-kotei-depreciable",
+      "subject": "kotei",
+      "unit": 11,
+      "order": 54,
+      "position": 4,
+      "stage": "手続と総合復習へ",
+      "title": "償却資産の評価・免税点・申告",
+      "objectives": [
+        "税務簿価と評価額を区別する",
+        "初年度と翌年度の評価を計算する",
+        "資産種類ごとの免税点を確認する"
+      ],
+      "glossary": [
+        {
+          "term": "償却資産",
+          "definition": "土地・家屋以外の事業に使える一定の減価償却資産。無形資産や自動車税等の対象車両等を除く"
+        },
+        {
+          "term": "減価残存率",
+          "definition": "償却資産の取得時期・耐用年数に応じ、取得価額又は前年度評価額に乗じる評価用の率"
+        },
+        {
+          "term": "免税点",
+          "definition": "課税標準等が一定額未満のとき原則課税しない基準"
+        }
+      ],
+      "sources": [
+        "local-law",
+        "points-11",
+        "property-overview",
+        "property-assets",
+        "property-threshold-future"
+      ],
+      "additionalStudy": "増加償却、短縮耐用年数、課税標準特例、大規模償却資産は追加学習。",
+      "minutes": 40
+    }
+  ]
+}

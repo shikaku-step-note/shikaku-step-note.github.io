@@ -5,10 +5,12 @@ import { bokiCourses } from '../../../../data/bookkeeping';
 import { allAssessments } from '../../../../data/assessments';
 import { href } from '../../../../lib/site';
 export function getStaticPaths() {
-  return [...bokiCourses, { id: 'takken', name: '宅建士' }].map((course) => ({
-    params: { qualification: course.id },
-    props: { course },
-  }));
+  return [...bokiCourses, { id: 'takken', name: '宅建士' }, { id: 'zeirishi', name: '税理士' }].map(
+    (course) => ({
+      params: { qualification: course.id },
+      props: { course },
+    }),
+  );
 }
 const { course } = Astro.props;
 const tests = allAssessments(await getCollection('lessons')).filter(
@@ -39,6 +41,14 @@ const tests = allAssessments(await getCollection('lessons')).filter(
           一般形式は50問・120分、5問免除形式は45問・110分です。後者は一般形式の45問を共有し、別セットではありません。各問1点の練習得点を表示し、当年度の合否は判定しません。公式の免除を得るための講習ではありません。
         </p>
         <a href={href('qualifications/takken/coverage/')}>適用法令と追加学習が必要な範囲</a>
+      </div>
+    )}
+    {course.id === 'zeirishi' && (
+      <div class="notice compact">
+        <p>
+          11科目のテストを用意しています。通常は会計学2科目と税法3科目を選ぶ制度で、全てを受験する必要はありません。各模試は120分の独自基礎演習です。大問配点を参照しますが、資料量・難易度・小問数は公式と異なります。記述は独自基準で自己確認し、公式の合否は判定しません。
+        </p>
+        <a href={href('qualifications/zeirishi/#subjects')}>科目別の教材と学習順へ</a>
       </div>
     )}
     <ul class="test-directory">

@@ -8,10 +8,13 @@ export interface Question {
   explanation: string;
   lesson: string;
   field: Field;
-  input?: 'number' | 'text';
+  input?: 'number' | 'text' | 'essay';
   accepted?: string[];
   points?: number;
   group?: string;
+  modelAnswer?: string;
+  rubric?: { criterion: string; points: number }[];
+  objectives?: number[];
 }
 export interface Assessment {
   id: string;
@@ -45,6 +48,7 @@ export interface AssessmentAttempt {
   score: number | null;
   missed: string[];
   fields: Record<Field, { correct: number; total: number }>;
+  manual?: Record<string, { max: number; score: number | null }>;
 }
 export function newAttempt(
   assessment: Assessment,
@@ -74,6 +78,15 @@ export function newAttempt(
     fields: Object.fromEntries(
       [...new Set(assessment.questions.map((q) => q.field))].map((f) => [f, { correct: 0, total: 0 }]),
     ),
+    ...(assessment.questions.some((q) => q.input === 'essay')
+      ? {
+          manual: Object.fromEntries(
+            assessment.questions
+              .filter((q) => q.input === 'essay')
+              .map((q) => [q.id, { max: q.points ?? 1, score: null }]),
+          ),
+        }
+      : {}),
   };
 }
 export const remainingSeconds = (attempt: AssessmentAttempt, now = Date.now()) =>
@@ -92,12 +105,16 @@ export function compatibleAttempt(assessment: Assessment, attempt: AssessmentAtt
       return (
         !!q &&
         (q.input
-          ? typeof value === 'string' && value.length <= 80
+          ? typeof value === 'string' && value.length <= (q.input === 'essay' ? 4000 : 80)
           : typeof value === 'number' && Number.isInteger(value) && value >= 0 && value < q.options.length)
       );
     }) &&
     attempt.flags.every((id) => byId.has(id)) &&
-    attempt.missed.every((id) => byId.has(id))
+    attempt.missed.every((id) => byId.has(id)) &&
+    assessment.questions
+      .filter((q) => q.input === 'essay')
+      .every((q) => attempt.manual?.[q.id]?.max === (q.points ?? 1)) &&
+    Object.keys(attempt.manual ?? {}).every((id) => byId.get(id)?.input === 'essay')
   );
 }
 export function gradeAttempt(
@@ -115,13 +132,17 @@ export function gradeAttempt(
   for (const q of assessment.questions) {
     const field = result.fields[q.field]!;
     field.total++;
-    if (isCorrect(q, result.answers[q.id])) {
+    if (
+      q.input === 'essay'
+        ? result.manual?.[q.id]?.score === (q.points ?? 1)
+        : isCorrect(q, result.answers[q.id])
+    ) {
       result.score++;
       field.correct++;
     } else result.missed.push(q.id);
   }
-  result.finishedAt = new Date(now).toISOString();
-  result.updatedAt = result.finishedAt;
+  result.finishedAt ??= new Date(now).toISOString();
+  result.updatedAt = new Date(now).toISOString();
   return result;
 }
 export function normalizeAnswer(value: string) {
@@ -131,6 +152,7 @@ export function normalizeAnswer(value: string) {
     .replace(/[−ー]/g, '-');
 }
 export function isCorrect(q: Question, value: number | string | undefined): boolean {
+  if (q.input === 'essay') return false;
   if (!q.input) return value === q.answer;
   if (typeof value !== 'string' || !value.trim()) return false;
   const actual = normalizeAnswer(value);
@@ -147,14 +169,31 @@ export function isCorrect(q: Question, value: number | string | undefined): bool
   });
 }
 export function practicePoints(a: Assessment, attempt: AssessmentAttempt) {
-  return a.questions.reduce((n, q) => n + (isCorrect(q, attempt.answers[q.id]) ? (q.points ?? 1) : 0), 0);
+  return a.questions.reduce(
+    (n, q) =>
+      n +
+      (q.input === 'essay'
+        ? (attempt.manual?.[q.id]?.score ?? 0)
+        : isCorrect(q, attempt.answers[q.id])
+          ? (q.points ?? 1)
+          : 0),
+    0,
+  );
 }
 export function fieldPoints(a: Pick<Assessment, 'questions'>, attempt: AssessmentAttempt) {
   const fields: Record<string, { score: number; total: number }> = {};
   for (const q of a.questions) {
     const f = (fields[q.field] ??= { score: 0, total: 0 });
     f.total += q.points ?? 1;
-    if (isCorrect(q, attempt.answers[q.id])) f.score += q.points ?? 1;
+    if (q.input === 'essay') f.score += attempt.manual?.[q.id]?.score ?? 0;
+    else if (isCorrect(q, attempt.answers[q.id])) f.score += q.points ?? 1;
   }
   return fields;
+}
+export function attemptSummary(attempt: AssessmentAttempt) {
+  const manual = Object.values(attempt.manual ?? {});
+  if (!manual.length) return `${attempt.score}/${attempt.total}問正解`;
+  const full = manual.filter((m) => m.score === m.max).length;
+  const reviewed = manual.filter((m) => m.score !== null).length;
+  return `自動採点 ${Number(attempt.score ?? 0) - full}/${attempt.total - manual.length}問正解・記述 ${reviewed}/${manual.length}問を自己確認`;
 }

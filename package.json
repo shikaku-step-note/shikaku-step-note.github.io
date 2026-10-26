@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node --import tsx scripts/export-ip-curriculum.mjs && node --import tsx scripts/export-boki-curriculum.mjs && node --import tsx scripts/export-takken-curriculum.mjs && astro build",
+    "build": "node --import tsx scripts/export-ip-curriculum.mjs && node --import tsx scripts/export-boki-curriculum.mjs && node --import tsx scripts/export-takken-curriculum.mjs && node --import tsx scripts/export-zeirishi-curriculum.mjs && astro build",
     "preview": "astro preview",
     "check": "astro check",
     "verify": "node scripts/verify.mjs",
-    "test:storage": "node --import tsx --test tests/storage.test.ts tests/assessment.test.ts tests/bookkeeping.test.ts tests/takken.test.ts",
-    "curriculum": "node --import tsx scripts/export-ip-curriculum.mjs && node --import tsx scripts/export-boki-curriculum.mjs && node --import tsx scripts/export-takken-curriculum.mjs"
+    "test:storage": "node --import tsx --test tests/storage.test.ts tests/assessment.test.ts tests/bookkeeping.test.ts tests/takken.test.ts tests/written-assessment.test.ts tests/zeirishi.test.ts",
+    "curriculum": "node --import tsx scripts/export-ip-curriculum.mjs && node --import tsx scripts/export-boki-curriculum.mjs && node --import tsx scripts/export-takken-curriculum.mjs && node --import tsx scripts/export-zeirishi-curriculum.mjs"
   },
   "packageManager": "pnpm@11.25.0",
   "engines": {

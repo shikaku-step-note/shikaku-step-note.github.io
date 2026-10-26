@@ -75,7 +75,20 @@ const { assessment: a } = Astro.props;
           問{i + 1}　{q.group && <span>{q.group}： </span>}
           {q.prompt}
         </legend>
-        {q.input ? (
+        {q.input === 'essay' ? (
+          <label class="written-answer">
+            記述解答（4,000字まで・提出後に解答例と照合）
+            <textarea
+              name={q.id}
+              data-written-answer
+              rows="8"
+              maxlength="4000"
+              autocomplete="off"
+              disabled
+            ></textarea>
+            <small>文章を自動判定しません。提出後に独自の確認基準を読み、自己確認点を記録できます。</small>
+          </label>
+        ) : q.input ? (
           <label class="written-answer">
             解答（{q.input === 'number' ? '金額・数値' : '勘定科目・用語'}）
             <input

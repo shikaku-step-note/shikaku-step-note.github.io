@@ -7,6 +7,7 @@ import BookkeepingCourse from '../../../components/BookkeepingCourse.astro';
 import { bokiCourse } from '../../../data/bookkeeping';
 import IpCourse from '../../../components/IpCourse.astro';
 import TakkenCourse from '../../../components/TakkenCourse.astro';
+import ZeirishiCourse from '../../../components/ZeirishiCourse.astro';
 import { qualifications } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export function getStaticPaths() {
@@ -40,17 +41,21 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
         <div class="button-row">
           <a
             class="button primary"
-            data-course-start={q.id}
-            href={href(`qualifications/${q.id}/${lessons[0]!.data.stableId}/`)}
+            data-course-start={q.id === 'zeirishi' ? undefined : q.id}
+            href={
+              q.id === 'zeirishi' ? '#subjects' : href(`qualifications/${q.id}/${lessons[0]!.data.stableId}/`)
+            }
           >
-            最初のレッスンを読む <Icon name="arrow" size={18} />
+            {q.id === 'zeirishi' ? '科目を選ぶ' : '最初のレッスンを読む'} <Icon name="arrow" size={18} />
           </a>
           <span class="muted">登録不要・全{lessons.length}レッスン</span>
         </div>
       </div>
     </div>
   </section>
-  {q.id === 'takken' ? (
+  {q.id === 'zeirishi' ? (
+    <ZeirishiCourse />
+  ) : q.id === 'takken' ? (
     <TakkenCourse lessons={lessons} />
   ) : bokiCourse(q.id) ? (
     <BookkeepingCourse q={q} lessons={lessons} />

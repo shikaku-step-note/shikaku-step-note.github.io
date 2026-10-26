@@ -1,4 +1,5 @@
 import { bokiCourses, bokiReviewed } from './bookkeeping';
+import { zeirishiSubjects, zeirishiReviewed, zeirishiOutline } from './zeirishi';
 export interface Qualification {
   id: string;
   name: string;
@@ -19,6 +20,31 @@ export interface Qualification {
   status: 'course' | 'sample';
 }
 export const qualifications: Qualification[] = [
+  {
+    id: 'zeirishi',
+    status: 'course',
+    name: '税理士',
+    shortName: '税理士',
+    category: '会計・税務',
+    color: 'teal',
+    icon: 'book',
+    intro: '会計と税の仕組みを、一科目ずつ学ぶ。',
+    description: `簿記論・財務諸表論と9つの税法科目を、${zeirishiOutline.length}レッスンの基礎教材で学べます。科目別の用語確認・総復習・120分の独自基礎模試に取り組み、記録をブラウザに保存します。`,
+    audience: [
+      '税理士試験の科目と学ぶ順序を確認したい方',
+      '会計・税の計算を理由から理解したい方',
+      '数値と記述の復習を記録したい方',
+    ],
+    outcome:
+      '資料の条件を整理し、主要な計算を手順付きで説明する練習をします。記述は解答例と独自基準で自己確認します。',
+    prerequisite: '会計学の学習は簿記の基本から。税法の公式受験資格と、このサイトの学習条件は別です。',
+    groups: zeirishiSubjects.map((s) => s.name),
+    official: 'https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/zeirishi.htm',
+    officialName: '国税庁：税理士試験',
+    reviewed: zeirishiReviewed,
+    scope:
+      '2026年度第76回の公式範囲と、2026年4月3日現在施行法令を参照する独自の基礎教材。公式の級分けはありません。11科目すべてを受験する制度ではなく、通常は会計2科目と税法3科目を選びます。全範囲・難易度・公式採点を再現しません。',
+  },
   {
     id: 'takken',
     status: 'course',

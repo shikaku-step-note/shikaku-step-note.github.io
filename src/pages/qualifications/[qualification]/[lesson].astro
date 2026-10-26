@@ -8,6 +8,7 @@ import { ipSource, units } from '../../../data/it-passport';
 import { allAssessments } from '../../../data/assessments';
 import { bokiCourse } from '../../../data/bookkeeping';
 import { takkenOutline, takkenSources } from '../../../data/takken';
+import { zeirishiOutline, zeirishiSources, zeirishiSubject } from '../../../data/zeirishi';
 import { qualificationById } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -20,8 +21,16 @@ const { lesson } = Astro.props;
 const d = lesson.data;
 const q = qualificationById(d.qualification);
 const allLessons = await getCollection('lessons');
+const tax = q.id === 'zeirishi';
+const subject = tax ? zeirishiSubject(d.subject!) : undefined;
+const coursePath = subject ? `qualifications/zeirishi/subjects/${subject.id}/` : `qualifications/${q.id}/`;
 const siblings = allLessons
-  .filter((l) => l.data.qualification === q.id && (d.archived ? l.data.archived : !l.data.archived))
+  .filter(
+    (l) =>
+      l.data.qualification === q.id &&
+      (d.archived ? l.data.archived : !l.data.archived) &&
+      (!tax || l.data.subject === d.subject),
+  )
   .sort((a, b) => a.data.order - b.data.order);
 const index = siblings.findIndex((l) => l.data.stableId === d.stableId);
 const prev = siblings[index - 1];
@@ -36,7 +45,9 @@ const takken = q.id === 'takken';
 const testPrefix = q.id === 'it-passport' ? 'ip' : q.id;
 const courseSources = takken
   ? takkenSources.filter((s) => takkenOutline.find((r) => r.id === d.stableId)?.sources.includes(s.id))
-  : [];
+  : tax
+    ? zeirishiSources.filter((s) => zeirishiOutline.find((r) => r.id === d.stableId)?.sources.includes(s.id))
+    : [];
 const unit = units.find((u) => u.id === d.unit);
 ---
 
@@ -62,6 +73,7 @@ const unit = units.find((u) => u.id === d.unit);
   breadcrumbs={[
     { name: '資格一覧', path: 'qualifications/' },
     { name: q.name, path: `qualifications/${q.id}/` },
+    ...(subject ? [{ name: subject.name, path: coursePath }] : []),
     { name: d.title, path: `qualifications/${q.id}/${d.stableId}/` },
   ]}
 >
@@ -73,7 +85,7 @@ const unit = units.find((u) => u.id === d.unit);
             {q.name}
           </a>
           <span>
-            STEP {d.order} / {siblings.length}
+            {subject ? `${subject.name}・` : ''}STEP {index + 1} / {siblings.length}
           </span>
           <span>
             <Icon name="clock" size={15} />
@@ -126,12 +138,15 @@ const unit = units.find((u) => u.id === d.unit);
           </ul>
           <p class="muted">前提：{d.prerequisite}</p>
           <p class="muted">
-            {takken
-              ? '公式の出題範囲の号番号（学習ユニットとは別）'
-              : boki
-                ? '教材内の対応番号（公式の番号ではありません）'
-                : '公式シラバス対応項目'}
-            ：{d.syllabus.join('、')}。表示時間は当サイトの学習目安です。
+            {tax
+              ? `${subject?.name}の基礎技能（公式の項目番号ではありません）`
+              : takken
+                ? '公式の出題範囲の号番号（学習ユニットとは別）'
+                : boki
+                  ? '教材内の対応番号（公式の番号ではありません）'
+                  : '公式シラバス対応項目'}
+            {d.syllabus.length ? `：${d.syllabus.join('、')}` : ''}
+            。表示時間は、読む・例題・問題と解説の確認を含む当サイトの学習目安です。
           </p>
         </section>
       )}
@@ -168,11 +183,11 @@ const unit = units.find((u) => u.id === d.unit);
           </dl>
           <p>
             <a href={href(`qualifications/${q.id}/tests/${testPrefix}-unit-${d.unit}-glossary/`)}>
-              このユニットの用語テストへ
+              {tax ? 'この科目の用語テストへ' : 'このユニットの用語テストへ'}
             </a>
             ・
             <a href={href(`qualifications/${q.id}/tests/${testPrefix}-unit-${d.unit}-review/`)}>
-              ユニット総合確認へ
+              {tax ? '科目総復習へ' : 'ユニット総合確認へ'}
             </a>
           </p>
         </section>
@@ -226,9 +241,9 @@ const unit = units.find((u) => u.id === d.unit);
             {prev.data.title}
           </a>
         ) : (
-          <a href={href(`qualifications/${q.id}/`)}>
+          <a href={href(coursePath)}>
             <small>コースに戻る</small>
-            {q.name}の学習ステップ
+            {subject?.name ?? q.name}の学習ステップ
           </a>
         )}
         {next ? (
@@ -237,8 +252,13 @@ const unit = units.find((u) => u.id === d.unit);
             {next.data.title}
           </a>
         ) : (
-          <a href={href('progress/')}>
-            <small>学びを振り返る</small>マイ学習を見る
+          <a
+            href={
+              tax ? href(`qualifications/zeirishi/tests/zeirishi-unit-${d.unit}-review/`) : href('progress/')
+            }
+          >
+            <small>学びを振り返る</small>
+            {tax ? 'この科目の総復習へ' : 'マイ学習を見る'}
           </a>
         )}
       </nav>
@@ -263,10 +283,12 @@ const unit = units.find((u) => u.id === d.unit);
             をご確認ください。金額は独自の学習例です。
           </p>
         )}
-        {takken && (
+        {(takken || tax) && (
           <div>
             <p>
-              法令基準日：2026年4月1日。資料確認日：2026年10月25日。個別取引・税務・建築の助言ではありません。
+              {tax
+                ? '第76回の法令基準日：2026年4月3日。対象年分・事業年度・例の仮定を確認してください。個別の税務・会計の助言ではありません。'
+                : '法令基準日：2026年4月1日。資料確認日：2026年10月25日。個別取引・税務・建築の助言ではありません。'}
             </p>
             <ul>
               {courseSources.map((s) => (
@@ -275,7 +297,7 @@ const unit = units.find((u) => u.id === d.unit);
                 </li>
               ))}
             </ul>
-            <a href={href('qualifications/takken/coverage/')}>全分野の対応表・公式資料・追加学習の範囲</a>
+            <a href={href(`qualifications/${q.id}/coverage/`)}>全分野の対応表・公式資料・追加学習の範囲</a>
           </div>
         )}
         {d.unit && q.id === 'it-passport' && (
@@ -307,9 +329,11 @@ const unit = units.find((u) => u.id === d.unit);
         </ol>
       </nav>
       <div class="sidebar-box">
-        <h2>{q.name}</h2>
-        <p data-course-progress={q.id}>未学習</p>
-        <a href={href(`qualifications/${q.id}/`)}>学習ステップに戻る</a>
+        <h2>{subject?.name ?? q.name}</h2>
+        <p data-course-progress={q.id} data-course-subject={subject?.id}>
+          未学習
+        </p>
+        <a href={href(coursePath)}>学習ステップに戻る</a>
       </div>
     </aside>
   </div>

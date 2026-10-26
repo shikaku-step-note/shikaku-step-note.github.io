@@ -1,0 +1,1257 @@
+税理士 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：簿記論（会計学）
+複式簿記・記帳計算・帳簿組織・商業簿記・工業簿記。原価計算は公式範囲から除外。
+前提：日商簿記3級程度の仕訳と決算整理。未学習ならサイト内の簿記3級へ。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-boki-flow] 取引から試算表・決算整理へ／40分
+      目標：仕訳と転記のつながりを説明する／前払と未払を期間へ配分する／整理前残高から利益を修正する
+      前提：日商簿記3級程度の仕訳と決算整理。未学習ならサイト内の簿記3級へ。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-flow-check] 4問：zr-boki-flow-q1、zr-boki-flow-q2、zr-boki-flow-q3、zr-boki-flow-q4
+      用語：転記・試算表・決算整理
+      次：zr-boki-cash
+      追加学習・制約：複合仕訳・伝票会計と多桁の総合問題は追加演習が必要。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-flow/
+      技能1 仕訳と転記のつながりを説明する：説明・例題→自力演習兼評価 zr-boki-flow-q1
+      技能2 前払と未払を期間へ配分する：説明・例題→自力演習兼評価 zr-boki-flow-q2、zr-boki-flow-q3、zr-boki-flow-q4
+      技能3 整理前残高から利益を修正する：説明・例題→自力演習兼評価 zr-boki-flow-q3
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-boki-cash] 現金・預金・債権を残高から確かめる／40分
+      目標：現金過不足の原因を分類する／銀行勘定の調整を行う／貸倒見積額と繰入額を区別する
+      前提：前のレッスン「取引から試算表・決算整理へ」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-cash-check] 4問：zr-boki-cash-q1、zr-boki-cash-q2、zr-boki-cash-q3、zr-boki-cash-q4
+      用語：現金過不足・銀行勘定調整・貸倒引当金
+      次：zr-boki-inventory
+      追加学習・制約：債権区分ごとの割引計算や担保の評価は概説にとどまる。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-cash/
+      技能1 現金過不足の原因を分類する：説明・例題→自力演習兼評価 zr-boki-cash-q1
+      技能2 銀行勘定の調整を行う：説明・例題→自力演習兼評価 zr-boki-cash-q2
+      技能3 貸倒見積額と繰入額を区別する：説明・例題→自力演習兼評価 zr-boki-cash-q3、zr-boki-cash-q4
+    3. [zr-boki-inventory] 棚卸資産の数量・単価・評価損／45分
+      目標：売上原価の流れを説明する／移動平均で払出単価を計算する／棚卸減耗と評価損を分ける
+      前提：前のレッスン「現金・預金・債権を残高から確かめる」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-inventory-check] 4問：zr-boki-inventory-q1、zr-boki-inventory-q2、zr-boki-inventory-q3、zr-boki-inventory-q4
+      用語：売上原価・正味売却価額・棚卸減耗
+      次：zr-boki-fixed
+      追加学習・制約：売価還元法、特殊商品売買、製造業の高度な棚卸評価は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-inventory/
+      技能1 売上原価の流れを説明する：説明・例題→自力演習兼評価 zr-boki-inventory-q1、zr-boki-inventory-q2
+      技能2 移動平均で払出単価を計算する：説明・例題→自力演習兼評価 zr-boki-inventory-q3
+      技能3 棚卸減耗と評価損を分ける：説明・例題→自力演習兼評価 zr-boki-inventory-q4
+    4. [zr-boki-fixed] 固定資産の取得・償却・売却／40分
+      目標：取得原価と費用を分ける／定額法と月割を計算する／売却時の帳簿価額から損益を求める
+      前提：前のレッスン「棚卸資産の数量・単価・評価損」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-fixed-check] 4問：zr-boki-fixed-q1、zr-boki-fixed-q2、zr-boki-fixed-q3、zr-boki-fixed-q4
+      用語：取得原価・減価償却・帳簿価額
+      次：zr-boki-finance
+      追加学習・制約：圧縮記帳、資産除去債務、減損、ソフトウェア各論は別途演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-fixed/
+      技能1 取得原価と費用を分ける：説明・例題→自力演習兼評価 zr-boki-fixed-q1
+      技能2 定額法と月割を計算する：説明・例題→自力演習兼評価 zr-boki-fixed-q2、zr-boki-fixed-q3
+      技能3 売却時の帳簿価額から損益を求める：説明・例題→自力演習兼評価 zr-boki-fixed-q4
+    5. [zr-boki-finance] 有価証券・社債・外貨の測定／40分
+      目標：有価証券の保有目的を分ける／社債の償却原価を計算する／外貨の換算差額を求める
+      前提：前のレッスン「固定資産の取得・償却・売却」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-finance-check] 4問：zr-boki-finance-q1、zr-boki-finance-q2、zr-boki-finance-q3、zr-boki-finance-q4
+      用語：償却原価法・為替差損益・売買目的有価証券
+      次：zr-boki-branches
+      追加学習・制約：実効利子率、ヘッジ会計、外貨建の高度な取引は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-finance/
+      技能1 有価証券の保有目的を分ける：説明・例題→自力演習兼評価 zr-boki-finance-q1
+      技能2 社債の償却原価を計算する：説明・例題→自力演習兼評価 zr-boki-finance-q2
+      技能3 外貨の換算差額を求める：説明・例題→自力演習兼評価 zr-boki-finance-q3、zr-boki-finance-q4
+  学習段階：手続と総合復習へ（独自区分）
+    6. [zr-boki-branches] 本支店・帳簿組織と工業簿記の流れ／45分
+      目標：内部取引を合算から消去する／未達取引を補正する／製造原価の勘定連絡を追う
+      前提：前のレッスン「有価証券・社債・外貨の測定」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-branches-check] 4問：zr-boki-branches-q1、zr-boki-branches-q2、zr-boki-branches-q3、zr-boki-branches-q4
+      用語：未達取引・内部利益・仕掛品
+      次：zeirishi-unit-1-review
+      追加学習・制約：帳簿組織の全形式、在外支店、利息法、直接法キャッシュ・フロー計算書、キャッシュ・フロー見積法、セール・アンド・リースバック等は追加学習・演習が必要。原価計算自体は公式の除外範囲と区別。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-branches/
+      技能1 内部取引を合算から消去する：説明・例題→自力演習兼評価 zr-boki-branches-q1、zr-boki-branches-q3
+      技能2 未達取引を補正する：説明・例題→自力演習兼評価 zr-boki-branches-q2
+      技能3 製造原価の勘定連絡を追う：説明・例題→自力演習兼評価 zr-boki-branches-q4
+  [zeirishi-unit-1-glossary] 簿記論：累積用語確認／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-1-glossary/
+  [zeirishi-unit-1-review] 簿記論：総復習／24小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-1-review/
+  [zeirishi-boki-mock] 簿記論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-boki-mock/
+  2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
+
+科目：財務諸表論（会計学）
+会計原理・会計基準・会社法の計算規定・会社計算規則・財務諸表規則等。特定事業会社の特例を除く。
+前提：簿記の基本に加え、資産・負債・純資産・収益・費用の関係。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-zaimu-concepts] 財務会計の目的と利益の意味／40分
+      目標：投資意思決定との関係を説明する／現金収支と期間損益を区別する／比較可能性と内的整合性を考える
+      前提：簿記の基本に加え、資産・負債・純資産・収益・費用の関係。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-zaimu-concepts-check] 4問：zr-zaimu-concepts-q1、zr-zaimu-concepts-q2、zr-zaimu-concepts-q3、zr-zaimu-concepts-q4
+      用語：発生主義・比較可能性・純利益
+      次：zr-zaimu-revenue
+      追加学習・制約：概念フレームワーク全項目と学説の比較は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-concepts/
+      技能1 投資意思決定との関係を説明する：説明・例題→自力演習兼評価 zr-zaimu-concepts-q1
+      技能2 現金収支と期間損益を区別する：説明・例題→自力演習兼評価 zr-zaimu-concepts-q2、zr-zaimu-concepts-q3
+      技能3 比較可能性と内的整合性を考える：説明・例題→自力演習兼評価 zr-zaimu-concepts-q1、zr-zaimu-concepts-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-zaimu-revenue] 収益認識を履行義務から考える／40分
+      目標：契約と履行義務を整理する／取引価格を配分する／一時点と一定期間の認識を比較する
+      前提：前のレッスン「財務会計の目的と利益の意味」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-zaimu-revenue-check] 4問：zr-zaimu-revenue-q1、zr-zaimu-revenue-q2、zr-zaimu-revenue-q3、zr-zaimu-revenue-q4
+      用語：履行義務・独立販売価格・契約負債
+      次：zr-zaimu-assets
+      追加学習・制約：変動対価、本人代理人、返品、進捗度と契約変更の詳細は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-revenue/
+      技能1 契約と履行義務を整理する：説明・例題→自力演習兼評価 zr-zaimu-revenue-q1、zr-zaimu-revenue-q4
+      技能2 取引価格を配分する：説明・例題→自力演習兼評価 zr-zaimu-revenue-q2、zr-zaimu-revenue-q4
+      技能3 一時点と一定期間の認識を比較する：説明・例題→自力演習兼評価 zr-zaimu-revenue-q3、zr-zaimu-revenue-q4
+    3. [zr-zaimu-assets] 資産評価と減損を二段階で判断する／45分
+      目標：取得原価と時価の使い分けを説明する／減損の認識を判定する／回収可能価額と損失を求める
+      前提：前のレッスン「収益認識を履行義務から考える」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-zaimu-assets-check] 4問：zr-zaimu-assets-q1、zr-zaimu-assets-q2、zr-zaimu-assets-q3、zr-zaimu-assets-q4
+      用語：減損の兆候・回収可能価額・使用価値
+      次：zr-zaimu-liabilities
+      追加学習・制約：資産グルーピング、共用資産、のれん、金融資産の評価は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-assets/
+      技能1 取得原価と時価の使い分けを説明する：説明・例題→自力演習兼評価 zr-zaimu-assets-q1
+      技能2 減損の認識を判定する：説明・例題→自力演習兼評価 zr-zaimu-assets-q2、zr-zaimu-assets-q3、zr-zaimu-assets-q4
+      技能3 回収可能価額と損失を求める：説明・例題→自力演習兼評価 zr-zaimu-assets-q2、zr-zaimu-assets-q4
+    4. [zr-zaimu-liabilities] 引当金・退職給付・税効果の理由／40分
+      目標：引当金の要件を説明する／退職給付の負債を整理する／一時差異の税効果を計算する
+      前提：前のレッスン「資産評価と減損を二段階で判断する」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-zaimu-liabilities-check] 4問：zr-zaimu-liabilities-q1、zr-zaimu-liabilities-q2、zr-zaimu-liabilities-q3、zr-zaimu-liabilities-q4
+      用語：引当金・一時差異・繰延税金資産
+      次：zr-zaimu-equity
+      追加学習・制約：回収可能性、数理計算上の差異、資産除去債務は概説後の追加演習が必要。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-liabilities/
+      技能1 引当金の要件を説明する：説明・例題→自力演習兼評価 zr-zaimu-liabilities-q1
+      技能2 退職給付の負債を整理する：説明・例題→自力演習兼評価 zr-zaimu-liabilities-q2
+      技能3 一時差異の税効果を計算する：説明・例題→自力演習兼評価 zr-zaimu-liabilities-q3、zr-zaimu-liabilities-q4
+    5. [zr-zaimu-equity] 純資産・株式報酬・企業結合と連結／40分
+      目標：資本取引と損益取引を分ける／自己株式の表示を説明する／投資と資本の相殺を計算する
+      前提：前のレッスン「引当金・退職給付・税効果の理由」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-zaimu-equity-check] 4問：zr-zaimu-equity-q1、zr-zaimu-equity-q2、zr-zaimu-equity-q3、zr-zaimu-equity-q4
+      用語：自己株式・非支配株主持分・のれん
+      次：zr-zaimu-statements
+      追加学習・制約：株式報酬の評価、段階取得、税効果込みの企業結合、連結修正は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-equity/
+      技能1 資本取引と損益取引を分ける：説明・例題→自力演習兼評価 zr-zaimu-equity-q1、zr-zaimu-equity-q2、zr-zaimu-equity-q4
+      技能2 自己株式の表示を説明する：説明・例題→自力演習兼評価 zr-zaimu-equity-q1
+      技能3 投資と資本の相殺を計算する：説明・例題→自力演習兼評価 zr-zaimu-equity-q3
+  学習段階：手続と総合復習へ（独自区分）
+    6. [zr-zaimu-statements] 財務諸表・キャッシュフロー・注記を読む／45分
+      目標：表示区分を取引の性質から選ぶ／間接法の調整を計算する／注記が補う情報を説明する
+      前提：前のレッスン「純資産・株式報酬・企業結合と連結」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-zaimu-statements-check] 4問：zr-zaimu-statements-q1、zr-zaimu-statements-q2、zr-zaimu-statements-q3、zr-zaimu-statements-q4
+      用語：営業活動・現金同等物・注記
+      次：zeirishi-unit-2-review
+      追加学習・制約：財務諸表規則の全様式、連結CF、期中報告、新リース基準の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-statements/
+      技能1 表示区分を取引の性質から選ぶ：説明・例題→自力演習兼評価 zr-zaimu-statements-q1、zr-zaimu-statements-q3
+      技能2 間接法の調整を計算する：説明・例題→自力演習兼評価 zr-zaimu-statements-q2
+      技能3 注記が補う情報を説明する：説明・例題→自力演習兼評価 zr-zaimu-statements-q4
+  [zeirishi-unit-2-glossary] 財務諸表論：累積用語確認／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-2-glossary/
+  [zeirishi-unit-2-review] 財務諸表論：総復習／24小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-2-review/
+  [zeirishi-zaimu-mock] 財務諸表論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-zaimu-mock/
+  2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
+
+科目：所得税法（税法）
+所得税法と関係法令。所得区分・所得計算・控除・税額・申告を関連付ける。
+前提：割合と四則計算。収入と必要経費の区別。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-shotoku-scope] 納税義務と十種類の所得区分／40分
+      目標：人と所得の範囲を分ける／収入の性質から区分を選ぶ／非課税と控除を区別する
+      前提：割合と四則計算。収入と必要経費の区別。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shotoku-scope-check] 4問：zr-shotoku-scope-q1、zr-shotoku-scope-q2、zr-shotoku-scope-q3、zr-shotoku-scope-q4
+      用語：居住者・必要経費・非課税所得
+      次：zr-shotoku-business
+      追加学習・制約：非永住者、非居住者、国外所得、各非課税規定の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-scope/
+      技能1 人と所得の範囲を分ける：説明・例題→自力演習兼評価 zr-shotoku-scope-q1
+      技能2 収入の性質から区分を選ぶ：説明・例題→自力演習兼評価 zr-shotoku-scope-q2、zr-shotoku-scope-q3
+      技能3 非課税と控除を区別する：説明・例題→自力演習兼評価 zr-shotoku-scope-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-shotoku-business] 事業所得の収入・必要経費・青色申告／40分
+      目標：売上を期間へ帰属させる／家事関連費を区分する／棚卸と償却で所得を計算する
+      前提：前のレッスン「納税義務と十種類の所得区分」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shotoku-business-check] 4問：zr-shotoku-business-q1、zr-shotoku-business-q2、zr-shotoku-business-q3、zr-shotoku-business-q4
+      用語：総収入金額・家事費・青色申告
+      次：zr-shotoku-salary
+      追加学習・制約：貸倒れ、事業専従者、資産損失、青色特典の個別条件は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-business/
+      技能1 売上を期間へ帰属させる：説明・例題→自力演習兼評価 zr-shotoku-business-q1
+      技能2 家事関連費を区分する：説明・例題→自力演習兼評価 zr-shotoku-business-q3
+      技能3 棚卸と償却で所得を計算する：説明・例題→自力演習兼評価 zr-shotoku-business-q2、zr-shotoku-business-q4
+    3. [zr-shotoku-salary] 給与・退職所得を別の計算で求める／45分
+      目標：給与所得控除と所得控除を分ける／退職所得の基本式を計算する／二分の一課税の例外を識別する
+      前提：前のレッスン「事業所得の収入・必要経費・青色申告」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shotoku-salary-check] 4問：zr-shotoku-salary-q1、zr-shotoku-salary-q2、zr-shotoku-salary-q3、zr-shotoku-salary-q4
+      用語：給与所得控除・退職所得控除・分離課税
+      次：zr-shotoku-capital
+      追加学習・制約：給与所得控除の改正年、特定役員・短期退職・複数退職金の詳細は追加確認。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-salary/
+      技能1 給与所得控除と所得控除を分ける：説明・例題→自力演習兼評価 zr-shotoku-salary-q1、zr-shotoku-salary-q2
+      技能2 退職所得の基本式を計算する：説明・例題→自力演習兼評価 zr-shotoku-salary-q3
+      技能3 二分の一課税の例外を識別する：説明・例題→自力演習兼評価 zr-shotoku-salary-q4
+    4. [zr-shotoku-capital] 譲渡・一時・雑所得と特別控除／40分
+      目標：取得費と譲渡費用を分ける／総合と分離の譲渡を区別する／一時所得の算入額を求める
+      前提：前のレッスン「給与・退職所得を別の計算で求める」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shotoku-capital-check] 4問：zr-shotoku-capital-q1、zr-shotoku-capital-q2、zr-shotoku-capital-q3、zr-shotoku-capital-q4
+      用語：取得費・譲渡費用・一時所得
+      次：zr-shotoku-deductions
+      追加学習・制約：土地建物・株式・先物等の各特例、損失制限、長短判定は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-capital/
+      技能1 取得費と譲渡費用を分ける：説明・例題→自力演習兼評価 zr-shotoku-capital-q2
+      技能2 総合と分離の譲渡を区別する：説明・例題→自力演習兼評価 zr-shotoku-capital-q1
+      技能3 一時所得の算入額を求める：説明・例題→自力演習兼評価 zr-shotoku-capital-q3
+    5. [zr-shotoku-deductions] 損益通算と所得控除を順序で整理する／40分
+      目標：通算できる損失を識別する／繰越しと当年通算を分ける／所得控除後の課税所得を計算する
+      前提：前のレッスン「譲渡・一時・雑所得と特別控除」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shotoku-deductions-check] 4問：zr-shotoku-deductions-q1、zr-shotoku-deductions-q2、zr-shotoku-deductions-q3、zr-shotoku-deductions-q4
+      用語：損益通算・所得控除・税額控除
+      次：zr-shotoku-return
+      追加学習・制約：通算の順序、生活に通常必要でない資産、各人的控除と基礎控除の施行関係は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-deductions/
+      技能1 通算できる損失を識別する：説明・例題→自力演習兼評価 zr-shotoku-deductions-q1、zr-shotoku-deductions-q2
+      技能2 繰越しと当年通算を分ける：説明・例題→自力演習兼評価 zr-shotoku-deductions-q4
+      技能3 所得控除後の課税所得を計算する：説明・例題→自力演習兼評価 zr-shotoku-deductions-q2、zr-shotoku-deductions-q3
+  学習段階：手続と総合復習へ（独自区分）
+    6. [zr-shotoku-return] 累進税率・源泉徴収・申告の仕組み／45分
+      目標：超過累進税率を計算する／源泉徴収と確定税額を精算する／申告種類と期限を区別する
+      前提：前のレッスン「損益通算と所得控除を順序で整理する」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shotoku-return-check] 5問：zr-shotoku-return-q1、zr-shotoku-return-q2、zr-shotoku-return-q3、zr-shotoku-return-q4、zr-shotoku-return-q5
+      用語：源泉徴収・確定申告・復興特別所得税
+      次：zeirishi-unit-3-review
+      追加学習・制約：準確定申告、申告不要、外国税額控除、改正控除、各特別措置の詳細は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-return/
+      技能1 超過累進税率を計算する：説明・例題→自力演習兼評価 zr-shotoku-return-q1、zr-shotoku-return-q2
+      技能2 源泉徴収と確定税額を精算する：説明・例題→自力演習兼評価 zr-shotoku-return-q4
+      技能3 申告種類と期限を区別する：説明・例題→自力演習兼評価 zr-shotoku-return-q5
+  [zeirishi-unit-3-glossary] 所得税法：累積用語確認／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-3-glossary/
+  [zeirishi-unit-3-review] 所得税法：総復習／25小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-3-review/
+  [zeirishi-shotoku-mock] 所得税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shotoku-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+科目：法人税法（税法）
+法人税法と関係法令。会計利益と所得の調整、税額、申告を扱う。
+前提：簿記3級程度の決算と損益計算書。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-hojin-adjustment] 会計利益から所得へ・別表四の考え方／40分
+      目標：益金損金と収益費用を分ける／加算と減算を選ぶ／留保と社外流出を整理する
+      前提：簿記3級程度の決算と損益計算書。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-adjustment-check] 4問：zr-hojin-adjustment-q1、zr-hojin-adjustment-q2、zr-hojin-adjustment-q3、zr-hojin-adjustment-q4
+      用語：益金・損金・留保
+      次：zr-hojin-assets
+      追加学習・制約：別表五との完全連動、組織再編、収益計上時期の特例は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-adjustment/
+      技能1 益金損金と収益費用を分ける：説明・例題→自力演習兼評価 zr-hojin-adjustment-q1、zr-hojin-adjustment-q4
+      技能2 加算と減算を選ぶ：説明・例題→自力演習兼評価 zr-hojin-adjustment-q1、zr-hojin-adjustment-q2
+      技能3 留保と社外流出を整理する：説明・例題→自力演習兼評価 zr-hojin-adjustment-q3、zr-hojin-adjustment-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-hojin-assets] 棚卸・減価償却・貸倒れの税務調整／40分
+      目標：損金経理と限度額の関係を説明する／償却超過と認容を追う／評価損と貸倒れの条件を分ける
+      前提：前のレッスン「会計利益から所得へ・別表四の考え方」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-assets-check] 4問：zr-hojin-assets-q1、zr-hojin-assets-q2、zr-hojin-assets-q3、zr-hojin-assets-q4
+      用語：損金経理・償却限度額・認容
+      次：zr-hojin-compensation
+      追加学習・制約：償却方法・耐用年数表、少額資産、貸倒引当金の対象法人等は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-assets/
+      技能1 損金経理と限度額の関係を説明する：説明・例題→自力演習兼評価 zr-hojin-assets-q1
+      技能2 償却超過と認容を追う：説明・例題→自力演習兼評価 zr-hojin-assets-q2、zr-hojin-assets-q3
+      技能3 評価損と貸倒れの条件を分ける：説明・例題→自力演習兼評価 zr-hojin-assets-q4
+    3. [zr-hojin-compensation] 役員給与・交際費・寄附金を区分する／45分
+      目標：役員給与の類型を識別する／交際費と寄附金を分ける／限度超過を所得へ加算する
+      前提：前のレッスン「棚卸・減価償却・貸倒れの税務調整」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-compensation-check] 4問：zr-hojin-compensation-q1、zr-hojin-compensation-q2、zr-hojin-compensation-q3、zr-hojin-compensation-q4
+      用語：定期同額給与・交際費等・寄附金
+      次：zr-hojin-distributions
+      追加学習・制約：事前確定届出給与、業績連動給与、飲食費除外と各限度額の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-compensation/
+      技能1 役員給与の類型を識別する：説明・例題→自力演習兼評価 zr-hojin-compensation-q1
+      技能2 交際費と寄附金を分ける：説明・例題→自力演習兼評価 zr-hojin-compensation-q2、zr-hojin-compensation-q3、zr-hojin-compensation-q4
+      技能3 限度超過を所得へ加算する：説明・例題→自力演習兼評価 zr-hojin-compensation-q2、zr-hojin-compensation-q3
+    4. [zr-hojin-distributions] 受取配当・資本取引とグループの関係／40分
+      目標：配当の二重課税調整を説明する／保有区分から不算入を求める／損益取引と資本取引を区別する
+      前提：前のレッスン「役員給与・交際費・寄附金を区分する」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-distributions-check] 4問：zr-hojin-distributions-q1、zr-hojin-distributions-q2、zr-hojin-distributions-q3、zr-hojin-distributions-q4
+      用語：益金不算入・完全子法人株式等・資本等取引
+      次：zr-hojin-losses
+      追加学習・制約：負債利子控除、保有期間、みなし配当、グループ通算と組織再編は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-distributions/
+      技能1 配当の二重課税調整を説明する：説明・例題→自力演習兼評価 zr-hojin-distributions-q1
+      技能2 保有区分から不算入を求める：説明・例題→自力演習兼評価 zr-hojin-distributions-q2、zr-hojin-distributions-q3
+      技能3 損益取引と資本取引を区別する：説明・例題→自力演習兼評価 zr-hojin-distributions-q4
+    5. [zr-hojin-losses] 欠損金・繰越控除・引継ぎの条件／40分
+      目標：欠損と会計赤字を分ける／繰越残高を年度別に管理する／所得限度と控除順を計算する
+      前提：前のレッスン「受取配当・資本取引とグループの関係」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-losses-check] 4問：zr-hojin-losses-q1、zr-hojin-losses-q2、zr-hojin-losses-q3、zr-hojin-losses-q4
+      用語：欠損金額・繰越控除・繰戻し還付
+      次：zr-hojin-return
+      追加学習・制約：中小法人等の要件、適用期限、支配関係変更と再編の制限は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-losses/
+      技能1 欠損と会計赤字を分ける：説明・例題→自力演習兼評価 zr-hojin-losses-q1
+      技能2 繰越残高を年度別に管理する：説明・例題→自力演習兼評価 zr-hojin-losses-q3、zr-hojin-losses-q4
+      技能3 所得限度と控除順を計算する：説明・例題→自力演習兼評価 zr-hojin-losses-q2、zr-hojin-losses-q3、zr-hojin-losses-q4
+  学習段階：手続と総合復習へ（独自区分）
+    6. [zr-hojin-return] 法人税額・申告と防衛特別法人税／45分
+      目標：所得と税額控除を区別する／中間納付を精算する／防衛特別法人税の基本を計算する
+      前提：前のレッスン「欠損金・繰越控除・引継ぎの条件」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-return-check] 5問：zr-hojin-return-q1、zr-hojin-return-q2、zr-hojin-return-q3、zr-hojin-return-q4、zr-hojin-return-q5
+      用語：基準法人税額・中間申告・地方法人税
+      次：zeirishi-unit-4-review
+      追加学習・制約：通算法人、外国税額控除、税額控除の調整、短期事業年度の各特例は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-return/
+      技能1 所得と税額控除を区別する：説明・例題→自力演習兼評価 zr-hojin-return-q5
+      技能2 中間納付を精算する：説明・例題→自力演習兼評価 zr-hojin-return-q2
+      技能3 防衛特別法人税の基本を計算する：説明・例題→自力演習兼評価 zr-hojin-return-q3、zr-hojin-return-q4
+  [zeirishi-unit-4-glossary] 法人税法：累積用語確認／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-4-glossary/
+  [zeirishi-unit-4-review] 法人税法：総復習／25小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-4-review/
+  [zeirishi-hojin-mock] 法人税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-hojin-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+科目：相続税法（税法）
+相続税・贈与税と関係法令。民法上の相続関係と財産評価を区別する。
+前提：割合と四則計算。相続人と財産の関係を図にできること。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/sozoku/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-sozoku-scope] 相続人・納税義務・課税財産／40分
+      目標：法定相続人を確定する／本来財産とみなし財産を分ける／債務と葬式費用を判定する
+      前提：割合と四則計算。相続人と財産の関係を図にできること。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-scope-check] 4問：zr-sozoku-scope-q1、zr-sozoku-scope-q2、zr-sozoku-scope-q3、zr-sozoku-scope-q4
+      用語：法定相続人・みなし相続財産・債務控除
+      次：zr-sozoku-valuation
+      追加学習・制約：養子の人数制限、制限納税義務、相続放棄・欠格・代襲の複合例は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-scope/
+      技能1 法定相続人を確定する：説明・例題→自力演習兼評価 zr-sozoku-scope-q1
+      技能2 本来財産とみなし財産を分ける：説明・例題→自力演習兼評価 zr-sozoku-scope-q2、zr-sozoku-scope-q3
+      技能3 債務と葬式費用を判定する：説明・例題→自力演習兼評価 zr-sozoku-scope-q3、zr-sozoku-scope-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-sozoku-valuation] 路線価・建物・預金の評価／40分
+      目標：相続時点の評価を説明する／路線価方式の基本を計算する／所有と利用関係の補正を区別する
+      前提：前のレッスン「相続人・納税義務・課税財産」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-valuation-check] 5問：zr-sozoku-valuation-q1、zr-sozoku-valuation-q2、zr-sozoku-valuation-q3、zr-sozoku-valuation-q4、zr-sozoku-valuation-q5
+      用語：路線価・倍率方式・貸家建付地
+      次：zr-sozoku-reliefs
+      追加学習・制約：不整形地、無道路地、借地権、非上場株式、各評価通達の詳細は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-valuation/
+      技能1 相続時点の評価を説明する：説明・例題→自力演習兼評価 zr-sozoku-valuation-q1、zr-sozoku-valuation-q3
+      技能2 路線価方式の基本を計算する：説明・例題→自力演習兼評価 zr-sozoku-valuation-q2
+      技能3 所有と利用関係の補正を区別する：説明・例題→自力演習兼評価 zr-sozoku-valuation-q5
+    3. [zr-sozoku-reliefs] 生命保険の非課税と小規模宅地等／45分
+      目標：非課税限度額の人数を数える／取得者ごとの適用を分ける／限度面積と減額割合を計算する
+      前提：前のレッスン「路線価・建物・預金の評価」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-reliefs-check] 4問：zr-sozoku-reliefs-q1、zr-sozoku-reliefs-q2、zr-sozoku-reliefs-q3、zr-sozoku-reliefs-q4
+      用語：小規模宅地等の特例・特定居住用宅地等・非課税限度額
+      次：zr-sozoku-total
+      追加学習・制約：同居・家なき子等の要件、事業用宅地、面積併用の調整は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-reliefs/
+      技能1 非課税限度額の人数を数える：説明・例題→自力演習兼評価 zr-sozoku-reliefs-q1
+      技能2 取得者ごとの適用を分ける：説明・例題→自力演習兼評価 zr-sozoku-reliefs-q2
+      技能3 限度面積と減額割合を計算する：説明・例題→自力演習兼評価 zr-sozoku-reliefs-q3、zr-sozoku-reliefs-q4
+    4. [zr-sozoku-total] 相続税の総額から各人の税額へ／40分
+      目標：基礎控除を求める／法定相続分で総額を計算する／実取得割合と配偶者軽減を分ける
+      前提：前のレッスン「生命保険の非課税と小規模宅地等」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-total-check] 4問：zr-sozoku-total-q1、zr-sozoku-total-q2、zr-sozoku-total-q3、zr-sozoku-total-q4
+      用語：課税遺産総額・相続税の総額・配偶者の税額軽減
+      次：zr-sozoku-gifts
+      追加学習・制約：二割加算、未成年者等の控除、相次相続控除、端数処理の全連動は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-total/
+      技能1 基礎控除を求める：説明・例題→自力演習兼評価 zr-sozoku-total-q1
+      技能2 法定相続分で総額を計算する：説明・例題→自力演習兼評価 zr-sozoku-total-q2、zr-sozoku-total-q4
+      技能3 実取得割合と配偶者軽減を分ける：説明・例題→自力演習兼評価 zr-sozoku-total-q3、zr-sozoku-total-q4
+  学習段階：手続と総合復習へ（独自区分）
+    5. [zr-sozoku-gifts] 暦年贈与・相続時精算課税・申告／40分
+      目標：二つの贈与課税方式を比較する／基礎控除と特別控除を分ける／相続への加算時期を確認する
+      前提：前のレッスン「相続税の総額から各人の税額へ」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-gifts-check] 4問：zr-sozoku-gifts-q1、zr-sozoku-gifts-q2、zr-sozoku-gifts-q3、zr-sozoku-gifts-q4
+      用語：暦年課税・相続時精算課税・贈与財産の加算
+      次：zeirishi-unit-5-review
+      追加学習・制約：七年加算への経過措置、住宅取得資金、事業承継、延納物納の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-gifts/
+      技能1 二つの贈与課税方式を比較する：説明・例題→自力演習兼評価 zr-sozoku-gifts-q1、zr-sozoku-gifts-q4
+      技能2 基礎控除と特別控除を分ける：説明・例題→自力演習兼評価 zr-sozoku-gifts-q1、zr-sozoku-gifts-q2
+      技能3 相続への加算時期を確認する：説明・例題→自力演習兼評価 zr-sozoku-gifts-q3、zr-sozoku-gifts-q4
+  [zeirishi-unit-5-glossary] 相続税法：累積用語確認／15小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-5-glossary/
+  [zeirishi-unit-5-review] 相続税法：総復習／21小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-5-review/
+  [zeirishi-sozoku-mock] 相続税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-sozoku-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+科目：消費税法（税法）
+消費税法と関係法令。納税義務、取引区分、課税標準、税額控除、申告。
+前提：税抜・税込の換算と売上・仕入れの区別。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shohi/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-shohi-scope] 課税・非課税・免税・対象外を見分ける／40分
+      目標：国内取引の要件を確認する／非課税と輸出免税を分ける／仕入控除との関係を説明する
+      前提：税抜・税込の換算と売上・仕入れの区別。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-scope-check] 4問：zr-shohi-scope-q1、zr-shohi-scope-q2、zr-shohi-scope-q3、zr-shohi-scope-q4
+      用語：課税資産の譲渡等・輸出免税・非課税取引
+      次：zr-shohi-liability
+      追加学習・制約：国外取引、電子サービス、リバースチャージ、輸入取引は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-scope/
+      技能1 国内取引の要件を確認する：説明・例題→自力演習兼評価 zr-shohi-scope-q1、zr-shohi-scope-q4
+      技能2 非課税と輸出免税を分ける：説明・例題→自力演習兼評価 zr-shohi-scope-q2、zr-shohi-scope-q3
+      技能3 仕入控除との関係を説明する：説明・例題→自力演習兼評価 zr-shohi-scope-q2
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-shohi-liability] 基準期間・特定期間・登録の納税義務／40分
+      目標：基準期間を時系列で特定する／一千万円判定と例外を分ける／新設法人と登録を検討する
+      前提：前のレッスン「課税・非課税・免税・対象外を見分ける」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-liability-check] 4問：zr-shohi-liability-q1、zr-shohi-liability-q2、zr-shohi-liability-q3、zr-shohi-liability-q4
+      用語：基準期間・特定期間・適格請求書発行事業者
+      次：zr-shohi-output
+      追加学習・制約：短期事業年度、特定新規設立法人、高額資産と相続承継の例外は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-liability/
+      技能1 基準期間を時系列で特定する：説明・例題→自力演習兼評価 zr-shohi-liability-q1
+      技能2 一千万円判定と例外を分ける：説明・例題→自力演習兼評価 zr-shohi-liability-q2、zr-shohi-liability-q3
+      技能3 新設法人と登録を検討する：説明・例題→自力演習兼評価 zr-shohi-liability-q3、zr-shohi-liability-q4
+    3. [zr-shohi-output] 課税標準・税率・売上税額／45分
+      目標：標準と軽減税率を分ける／税込から対価と税額を分ける／国税と地方消費税を区別する
+      前提：前のレッスン「基準期間・特定期間・登録の納税義務」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-output-check] 4問：zr-shohi-output-q1、zr-shohi-output-q2、zr-shohi-output-q3、zr-shohi-output-q4
+      用語：軽減税率・課税標準・地方消費税
+      次：zr-shohi-input
+      追加学習・制約：返還等、貸倒れ、外貨、輸入課税標準、端数処理の申告別計算は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-output/
+      技能1 標準と軽減税率を分ける：説明・例題→自力演習兼評価 zr-shohi-output-q1
+      技能2 税込から対価と税額を分ける：説明・例題→自力演習兼評価 zr-shohi-output-q2、zr-shohi-output-q4
+      技能3 国税と地方消費税を区別する：説明・例題→自力演習兼評価 zr-shohi-output-q3、zr-shohi-output-q4
+    4. [zr-shohi-input] 仕入税額控除とインボイスの条件／40分
+      目標：帳簿と請求書の保存を説明する／課税売上割合を計算する／免税事業者からの仕入れを判定する
+      前提：前のレッスン「課税標準・税率・売上税額」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-input-check] 4問：zr-shohi-input-q1、zr-shohi-input-q2、zr-shohi-input-q3、zr-shohi-input-q4
+      用語：仕入税額控除・課税売上割合・個別対応方式
+      次：zr-shohi-methods
+      追加学習・制約：保存例外、居住用賃貸建物、調整対象固定資産、2026年以後の経過措置は追加確認。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-input/
+      技能1 帳簿と請求書の保存を説明する：説明・例題→自力演習兼評価 zr-shohi-input-q1、zr-shohi-input-q4
+      技能2 課税売上割合を計算する：説明・例題→自力演習兼評価 zr-shohi-input-q2
+      技能3 免税事業者からの仕入れを判定する：説明・例題→自力演習兼評価 zr-shohi-input-q4
+  学習段階：手続と総合復習へ（独自区分）
+    5. [zr-shohi-methods] 簡易課税・二割特例・申告の比較／40分
+      目標：本則とみなし控除を比較する／事業区分から控除を計算する／適用期間と選択手続を分ける
+      前提：前のレッスン「仕入税額控除とインボイスの条件」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-methods-check] 4問：zr-shohi-methods-q1、zr-shohi-methods-q2、zr-shohi-methods-q3、zr-shohi-methods-q4
+      用語：みなし仕入率・簡易課税・二割特例
+      次：zeirishi-unit-6-review
+      追加学習・制約：複数事業の特例、課税期間短縮、届出期限、三割特例等の将来適用は追加確認。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-methods/
+      技能1 本則とみなし控除を比較する：説明・例題→自力演習兼評価 zr-shohi-methods-q1
+      技能2 事業区分から控除を計算する：説明・例題→自力演習兼評価 zr-shohi-methods-q2、zr-shohi-methods-q3
+      技能3 適用期間と選択手続を分ける：説明・例題→自力演習兼評価 zr-shohi-methods-q4
+  [zeirishi-unit-6-glossary] 消費税法：累積用語確認／15小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-6-glossary/
+  [zeirishi-unit-6-review] 消費税法：総復習／20小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-6-review/
+  [zeirishi-shohi-mock] 消費税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shohi-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+科目：酒税法（税法）
+酒税法と関係法令。酒類の分類、免許、課税数量、税率、移出と申告。
+前提：容量の単位換算と割合。酒類の製法について予備知識は不要。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shuzei/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-shuzei-class] 酒類の定義・四分類・品目の判定／40分
+      目標：アルコール分の定義を説明する／製法と性状で品目を判定する／税率分類と名称を分ける
+      前提：容量の単位換算と割合。酒類の製法について予備知識は不要。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-class-check] 4問：zr-shuzei-class-q1、zr-shuzei-class-q2、zr-shuzei-class-q3、zr-shuzei-class-q4
+      用語：アルコール分・発泡性酒類・品目
+      次：zr-shuzei-license
+      追加学習・制約：全十七品目の詳細要件、原料割合、エキス分と混和の各規定は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-class/
+      技能1 アルコール分の定義を説明する：説明・例題→自力演習兼評価 zr-shuzei-class-q1
+      技能2 製法と性状で品目を判定する：説明・例題→自力演習兼評価 zr-shuzei-class-q2、zr-shuzei-class-q4
+      技能3 税率分類と名称を分ける：説明・例題→自力演習兼評価 zr-shuzei-class-q3、zr-shuzei-class-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-shuzei-license] 製造免許・販売業免許と移出課税／40分
+      目標：製造と販売の免許を区別する／製造場からの移出を追う／みなし移出の意味を説明する
+      前提：前のレッスン「酒類の定義・四分類・品目の判定」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-license-check] 4問：zr-shuzei-license-q1、zr-shuzei-license-q2、zr-shuzei-license-q3、zr-shuzei-license-q4
+      用語：移出・製造免許・みなし移出
+      次：zr-shuzei-amount
+      追加学習・制約：最低製造数量、試験製造、販売免許の全区分、法定免許要件は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-license/
+      技能1 製造と販売の免許を区別する：説明・例題→自力演習兼評価 zr-shuzei-license-q1
+      技能2 製造場からの移出を追う：説明・例題→自力演習兼評価 zr-shuzei-license-q2、zr-shuzei-license-q4
+      技能3 みなし移出の意味を説明する：説明・例題→自力演習兼評価 zr-shuzei-license-q3、zr-shuzei-license-q4
+    3. [zr-shuzei-amount] 数量換算・アルコール分・酒税額／45分
+      目標：リットルとキロリットルを換算する／税率適用の日付を確認する／段階税率の増額を計算する
+      前提：前のレッスン「製造免許・販売業免許と移出課税」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-amount-check] 4問：zr-shuzei-amount-q1、zr-shuzei-amount-q2、zr-shuzei-amount-q3、zr-shuzei-amount-q4
+      用語：課税数量・従量税・加算税率
+      次：zr-shuzei-return
+      追加学習・制約：全品目の税率表、測定方法、税率改正の経過措置を追加確認。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-amount/
+      技能1 リットルとキロリットルを換算する：説明・例題→自力演習兼評価 zr-shuzei-amount-q1、zr-shuzei-amount-q3
+      技能2 税率適用の日付を確認する：説明・例題→自力演習兼評価 zr-shuzei-amount-q2
+      技能3 段階税率の増額を計算する：説明・例題→自力演習兼評価 zr-shuzei-amount-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-shuzei-return] 未納税移出・輸出免税・戻入れと申告／40分
+      目標：未納税移出と輸出免税の目的・要件を分ける／戻入れの控除を計算する／帳簿と申告のつながりを追う
+      前提：前のレッスン「数量換算・アルコール分・酒税額」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shuzei-return-check] 4問：zr-shuzei-return-q1、zr-shuzei-return-q2、zr-shuzei-return-q3、zr-shuzei-return-q4
+      用語：未納税移出・戻入れ・輸出免税
+      次：zeirishi-unit-7-review
+      追加学習・制約：全ての承認手続、担保、酒税軽減制度と控除限度の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-return/
+      技能1 未納税移出と輸出免税の目的・要件を分ける：説明・例題→自力演習兼評価 zr-shuzei-return-q1
+      技能2 戻入れの控除を計算する：説明・例題→自力演習兼評価 zr-shuzei-return-q2、zr-shuzei-return-q4
+      技能3 帳簿と申告のつながりを追う：説明・例題→自力演習兼評価 zr-shuzei-return-q3、zr-shuzei-return-q4
+  [zeirishi-unit-7-glossary] 酒税法：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-7-glossary/
+  [zeirishi-unit-7-review] 酒税法：総復習／16小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-7-review/
+  [zeirishi-shuzei-mock] 酒税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shuzei-mock/
+  2026年8月本試験の大問配点：30・70点。将来の固定配分ではありません。
+
+科目：国税徴収法（税法）
+国税徴収法と関係法令。徴収の優先関係、滞納処分、第二次納税義務、猶予等。
+前提：人物と日付を表に整理すること。民法の担保の初歩は本文で補う。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-kokuzei-priority] 成立・確定・法定納期限等と優先関係／40分
+      目標：税の成立と確定を区別する／法定納期限等を時系列に置く／抵当権との優先を判断する
+      前提：人物と日付を表に整理すること。民法の担保の初歩は本文で補う。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-priority-check] 5問：zr-kokuzei-priority-q1、zr-kokuzei-priority-q2、zr-kokuzei-priority-q3、zr-kokuzei-priority-q4、zr-kokuzei-priority-q5
+      用語：法定納期限等・国税優先の原則・納期限
+      次：zr-kokuzei-seizure
+      追加学習・制約：法定納期限等の各特則、交付要求先着手と税相互の優先は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-priority/
+      技能1 税の成立と確定を区別する：説明・例題→自力演習兼評価 zr-kokuzei-priority-q1
+      技能2 法定納期限等を時系列に置く：説明・例題→自力演習兼評価 zr-kokuzei-priority-q2、zr-kokuzei-priority-q4
+      技能3 抵当権との優先を判断する：説明・例題→自力演習兼評価 zr-kokuzei-priority-q2、zr-kokuzei-priority-q4、zr-kokuzei-priority-q5
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-kokuzei-seizure] 督促・差押え・債権の取立て／40分
+      目標：督促後の手続を説明する／差押禁止と超過を判定する／債権差押えの効果を整理する
+      前提：前のレッスン「成立・確定・法定納期限等と優先関係」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-seizure-check] 5問：zr-kokuzei-seizure-q1、zr-kokuzei-seizure-q2、zr-kokuzei-seizure-q3、zr-kokuzei-seizure-q4、zr-kokuzei-seizure-q5
+      用語：督促・第三債務者・差押禁止財産
+      次：zr-kokuzei-sale
+      追加学習・制約：給与等の具体的禁止額、財産種別ごとの差押手続、無剰余の例外は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-seizure/
+      技能1 督促後の手続を説明する：説明・例題→自力演習兼評価 zr-kokuzei-seizure-q1
+      技能2 差押禁止と超過を判定する：説明・例題→自力演習兼評価 zr-kokuzei-seizure-q5
+      技能3 債権差押えの効果を整理する：説明・例題→自力演習兼評価 zr-kokuzei-seizure-q3、zr-kokuzei-seizure-q4
+    3. [zr-kokuzei-sale] 換価・配当と第二次納税義務／45分
+      目標：換価代金を順位に従って配当する／本来の納税義務と第二次を分ける／追及可能額を計算する
+      前提：前のレッスン「督促・差押え・債権の取立て」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-sale-check] 4問：zr-kokuzei-sale-q1、zr-kokuzei-sale-q2、zr-kokuzei-sale-q3、zr-kokuzei-sale-q4
+      用語：換価・配当・第二次納税義務
+      次：zr-kokuzei-relief
+      追加学習・制約：公売全手続、各第二次納税義務の成立要件と限度、担保権複合事例は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-sale/
+      技能1 換価代金を順位に従って配当する：説明・例題→自力演習兼評価 zr-kokuzei-sale-q1
+      技能2 本来の納税義務と第二次を分ける：説明・例題→自力演習兼評価 zr-kokuzei-sale-q2、zr-kokuzei-sale-q4
+      技能3 追及可能額を計算する：説明・例題→自力演習兼評価 zr-kokuzei-sale-q3、zr-kokuzei-sale-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-kokuzei-relief] 猶予・滞納処分の停止・不服申立て／40分
+      目標：納税の猶予と換価の猶予を分ける／執行停止の理由と効果を整理する／救済手続の申立先を確認する
+      前提：前のレッスン「換価・配当と第二次納税義務」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-relief-check] 4問：zr-kokuzei-relief-q1、zr-kokuzei-relief-q2、zr-kokuzei-relief-q3、zr-kokuzei-relief-q4
+      用語：換価の猶予・滞納処分の停止・審査請求
+      次：zeirishi-unit-8-review
+      追加学習・制約：担保免除、期間延長、消滅の例外、審査請求期間の全起算例は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-relief/
+      技能1 納税の猶予と換価の猶予を分ける：説明・例題→自力演習兼評価 zr-kokuzei-relief-q1
+      技能2 執行停止の理由と効果を整理する：説明・例題→自力演習兼評価 zr-kokuzei-relief-q3
+      技能3 救済手続の申立先を確認する：説明・例題→自力演習兼評価 zr-kokuzei-relief-q4
+  [zeirishi-unit-8-glossary] 国税徴収法：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-8-glossary/
+  [zeirishi-unit-8-review] 国税徴収法：総復習／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-8-review/
+  [zeirishi-kokuzei-mock] 国税徴収法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-kokuzei-mock/
+  2026年8月本試験の大問配点：40・60点。将来の固定配分ではありません。
+
+科目：住民税（税法）
+地方税法の道府県民税・市町村民税と総則・関係法令。個人と法人を含む。
+前提：所得税法の所得区分と所得控除の基礎。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jumin/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-jumin-individual] 個人住民税の住所・年度・所得／40分
+      目標：一月一日の住所地を確認する／所得の年と課税年度を分ける／所得割と均等割を区別する
+      前提：所得税法の所得区分と所得控除の基礎。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-individual-check] 4問：zr-jumin-individual-q1、zr-jumin-individual-q2、zr-jumin-individual-q3、zr-jumin-individual-q4
+      用語：賦課期日・所得割・均等割
+      次：zr-jumin-adjustments
+      追加学習・制約：非課税限度額、未成年者等、事務所家屋敷課税の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-individual/
+      技能1 一月一日の住所地を確認する：説明・例題→自力演習兼評価 zr-jumin-individual-q1
+      技能2 所得の年と課税年度を分ける：説明・例題→自力演習兼評価 zr-jumin-individual-q2
+      技能3 所得割と均等割を区別する：説明・例題→自力演習兼評価 zr-jumin-individual-q3、zr-jumin-individual-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-jumin-adjustments] 所得控除・調整控除・税額控除／40分
+      目標：所得税との差を識別する／課税所得を計算する／所得控除と税額控除の段階を整理する
+      前提：前のレッスン「個人住民税の住所・年度・所得」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-adjustments-check] 4問：zr-jumin-adjustments-q1、zr-jumin-adjustments-q2、zr-jumin-adjustments-q3、zr-jumin-adjustments-q4
+      用語：調整控除・所得控除・寄附金税額控除
+      次：zr-jumin-corporate
+      追加学習・制約：調整控除の全区分、ふるさと納税限度、配当控除、分離課税は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-adjustments/
+      技能1 所得税との差を識別する：説明・例題→自力演習兼評価 zr-jumin-adjustments-q1
+      技能2 課税所得を計算する：説明・例題→自力演習兼評価 zr-jumin-adjustments-q2
+      技能3 所得控除と税額控除の段階を整理する：説明・例題→自力演習兼評価 zr-jumin-adjustments-q3、zr-jumin-adjustments-q4
+    3. [zr-jumin-corporate] 法人住民税の均等割・法人税割・分割／45分
+      目標：法人税割の基礎を整理する／所在地別の分割を計算する／均等割の区分を確認する
+      前提：前のレッスン「所得控除・調整控除・税額控除」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-corporate-check] 4問：zr-jumin-corporate-q1、zr-jumin-corporate-q2、zr-jumin-corporate-q3、zr-jumin-corporate-q4
+      用語：法人税割・分割基準・資本金等の額
+      次：zr-jumin-collection
+      追加学習・制約：超過税率、均等割の全区分、通算法人と税額控除の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-corporate/
+      技能1 法人税割の基礎を整理する：説明・例題→自力演習兼評価 zr-jumin-corporate-q1
+      技能2 所在地別の分割を計算する：説明・例題→自力演習兼評価 zr-jumin-corporate-q2、zr-jumin-corporate-q4
+      技能3 均等割の区分を確認する：説明・例題→自力演習兼評価 zr-jumin-corporate-q3、zr-jumin-corporate-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-jumin-collection] 普通徴収・特別徴収と退職所得／40分
+      目標：給与の特別徴収を時系列で説明する／退職所得の現年分離を計算する／申告と自治体間の関係を整理する
+      前提：前のレッスン「法人住民税の均等割・法人税割・分割」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-collection-check] 4問：zr-jumin-collection-q1、zr-jumin-collection-q2、zr-jumin-collection-q3、zr-jumin-collection-q4
+      用語：普通徴収・特別徴収・現年分離課税
+      次：zeirishi-unit-9-review
+      追加学習・制約：年金の特別徴収、退職金の各例外、期限・変更届の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-collection/
+      技能1 給与の特別徴収を時系列で説明する：説明・例題→自力演習兼評価 zr-jumin-collection-q1、zr-jumin-collection-q4
+      技能2 退職所得の現年分離を計算する：説明・例題→自力演習兼評価 zr-jumin-collection-q2
+      技能3 申告と自治体間の関係を整理する：説明・例題→自力演習兼評価 zr-jumin-collection-q3、zr-jumin-collection-q4
+  [zeirishi-unit-9-glossary] 住民税：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-9-glossary/
+  [zeirishi-unit-9-review] 住民税：総復習／16小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-9-review/
+  [zeirishi-jumin-mock] 住民税：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-jumin-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+科目：事業税（税法）
+地方税法の事業税と総則・関係法令。法人と個人、外形標準課税を含む。
+前提：法人の所得計算と個人の事業所得の基本。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jigyo/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-jigyo-corporate] 法人事業税の所得割・収入割／40分
+      目標：事業と課税標準の区分を選ぶ／法人税所得から差を調整する／所得割の段階計算を行う
+      前提：法人の所得計算と個人の事業所得の基本。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-corporate-check] 4問：zr-jigyo-corporate-q1、zr-jigyo-corporate-q2、zr-jigyo-corporate-q3、zr-jigyo-corporate-q4
+      用語：所得割・収入割・事業年度
+      次：zr-jigyo-external
+      追加学習・制約：電気供給・ガス供給・保険等の収入金額計算、軽減税率の適用除外は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-corporate/
+      技能1 事業と課税標準の区分を選ぶ：説明・例題→自力演習兼評価 zr-jigyo-corporate-q1、zr-jigyo-corporate-q4
+      技能2 法人税所得から差を調整する：説明・例題→自力演習兼評価 zr-jigyo-corporate-q2
+      技能3 所得割の段階計算を行う：説明・例題→自力演習兼評価 zr-jigyo-corporate-q3
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-jigyo-external] 外形標準課税の付加価値割・資本割／40分
+      目標：対象法人の判定を整理する／収益配分額を計算する／単年度損益と付加価値額を結ぶ
+      前提：前のレッスン「法人事業税の所得割・収入割」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-external-check] 4問：zr-jigyo-external-q1、zr-jigyo-external-q2、zr-jigyo-external-q3、zr-jigyo-external-q4
+      用語：付加価値割・収益配分額・資本割
+      次：zr-jigyo-individual
+      追加学習・制約：雇用安定控除、資本割特則、減資・子法人等への2025・2026年拡大の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-external/
+      技能1 対象法人の判定を整理する：説明・例題→自力演習兼評価 zr-jigyo-external-q1
+      技能2 収益配分額を計算する：説明・例題→自力演習兼評価 zr-jigyo-external-q2
+      技能3 単年度損益と付加価値額を結ぶ：説明・例題→自力演習兼評価 zr-jigyo-external-q3、zr-jigyo-external-q4
+    3. [zr-jigyo-individual] 個人事業税の業種・控除・税額／45分
+      目標：法定業種と所得税の区分を分ける／青色控除との差を調整する／事業主控除と月割を計算する
+      前提：前のレッスン「外形標準課税の付加価値割・資本割」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-individual-check] 4問：zr-jigyo-individual-q1、zr-jigyo-individual-q2、zr-jigyo-individual-q3、zr-jigyo-individual-q4
+      用語：法定業種・事業主控除・青色申告特別控除
+      次：zr-jigyo-return
+      追加学習・制約：業種の全区分、社会保険診療、損失繰越し、事業廃止の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-individual/
+      技能1 法定業種と所得税の区分を分ける：説明・例題→自力演習兼評価 zr-jigyo-individual-q1
+      技能2 青色控除との差を調整する：説明・例題→自力演習兼評価 zr-jigyo-individual-q2
+      技能3 事業主控除と月割を計算する：説明・例題→自力演習兼評価 zr-jigyo-individual-q3、zr-jigyo-individual-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-jigyo-return] 分割・特別法人事業税・申告／40分
+      目標：従業者等による分割を計算する／特別法人事業税と地方税を分ける／申告年度と税率表を対応させる
+      前提：前のレッスン「個人事業税の業種・控除・税額」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jigyo-return-check] 4問：zr-jigyo-return-q1、zr-jigyo-return-q2、zr-jigyo-return-q3、zr-jigyo-return-q4
+      用語：特別法人事業税・基準法人所得割額・分割法人
+      次：zeirishi-unit-10-review
+      追加学習・制約：業種別の分割、特別法人事業税の全率、中間申告と更正・修正の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-return/
+      技能1 従業者等による分割を計算する：説明・例題→自力演習兼評価 zr-jigyo-return-q1
+      技能2 特別法人事業税と地方税を分ける：説明・例題→自力演習兼評価 zr-jigyo-return-q2、zr-jigyo-return-q4
+      技能3 申告年度と税率表を対応させる：説明・例題→自力演習兼評価 zr-jigyo-return-q3
+  [zeirishi-unit-10-glossary] 事業税：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-10-glossary/
+  [zeirishi-unit-10-review] 事業税：総復習／16小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-10-review/
+  [zeirishi-jigyo-mock] 事業税：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-jigyo-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+科目：固定資産税（税法）
+地方税法の固定資産税と総則・関係法令。土地・家屋・償却資産を区別する。
+前提：割合計算。取得価額・評価額・課税標準の違いを本文で確認する。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kotei/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-kotei-scope] 土地・家屋・償却資産と一月一日／40分
+      目標：固定資産の課税客体を分ける／賦課期日と所有者を確認する／取得価額・評価額・課税標準額を区別する
+      前提：割合計算。取得価額・評価額・課税標準の違いを本文で確認する。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kotei-scope-check] 4問：zr-kotei-scope-q1、zr-kotei-scope-q2、zr-kotei-scope-q3、zr-kotei-scope-q4
+      用語：固定資産・課税台帳・評価替え
+      次：zr-kotei-land
+      追加学習・制約：みなし所有者、区分所有家屋、非課税資産と特例資産の全規定は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-scope/
+      技能1 固定資産の課税客体を分ける：説明・例題→自力演習兼評価 zr-kotei-scope-q1
+      技能2 賦課期日と所有者を確認する：説明・例題→自力演習兼評価 zr-kotei-scope-q2
+      技能3 取得価額・評価額・課税標準額を区別する：説明・例題→自力演習兼評価 zr-kotei-scope-q3、zr-kotei-scope-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-kotei-land] 宅地評価・住宅用地・負担調整／40分
+      目標：小規模住宅用地の面積を判定する／課税標準の特例を計算する／評価額と税額の変化を分ける
+      前提：前のレッスン「土地・家屋・償却資産と一月一日」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kotei-land-check] 4問：zr-kotei-land-q1、zr-kotei-land-q2、zr-kotei-land-q3、zr-kotei-land-q4
+      用語：小規模住宅用地・負担水準・負担調整措置
+      次：zr-kotei-building
+      追加学習・制約：商業地・農地等の負担調整、住宅戸数、空家勧告等の全条件は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-land/
+      技能1 小規模住宅用地の面積を判定する：説明・例題→自力演習兼評価 zr-kotei-land-q1
+      技能2 課税標準の特例を計算する：説明・例題→自力演習兼評価 zr-kotei-land-q2、zr-kotei-land-q3
+      技能3 評価額と税額の変化を分ける：説明・例題→自力演習兼評価 zr-kotei-land-q4
+    3. [zr-kotei-building] 家屋の評価・新築住宅の税額軽減／45分
+      目標：再建築価格と経年減点を説明する／課税標準と税額軽減を分ける／軽減対象の床面積を計算する
+      前提：前のレッスン「宅地評価・住宅用地・負担調整」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kotei-building-check] 4問：zr-kotei-building-q1、zr-kotei-building-q2、zr-kotei-building-q3、zr-kotei-building-q4
+      用語：再建築価格・経年減点補正率・新築住宅の減額
+      次：zr-kotei-depreciable
+      追加学習・制約：長期優良住宅、耐震等改修、区分所有補正、床面積と年数要件は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-building/
+      技能1 再建築価格と経年減点を説明する：説明・例題→自力演習兼評価 zr-kotei-building-q1
+      技能2 課税標準と税額軽減を分ける：説明・例題→自力演習兼評価 zr-kotei-building-q2、zr-kotei-building-q4
+      技能3 軽減対象の床面積を計算する：説明・例題→自力演習兼評価 zr-kotei-building-q3、zr-kotei-building-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-kotei-depreciable] 償却資産の評価・免税点・申告／40分
+      目標：税務簿価と評価額を区別する／初年度と翌年度の評価を計算する／資産種類ごとの免税点を確認する
+      前提：前のレッスン「家屋の評価・新築住宅の税額軽減」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kotei-depreciable-check] 4問：zr-kotei-depreciable-q1、zr-kotei-depreciable-q2、zr-kotei-depreciable-q3、zr-kotei-depreciable-q4
+      用語：償却資産・減価残存率・免税点
+      次：zeirishi-unit-11-review
+      追加学習・制約：増加償却、短縮耐用年数、課税標準特例、大規模償却資産は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-depreciable/
+      技能1 税務簿価と評価額を区別する：説明・例題→自力演習兼評価 zr-kotei-depreciable-q1
+      技能2 初年度と翌年度の評価を計算する：説明・例題→自力演習兼評価 zr-kotei-depreciable-q2、zr-kotei-depreciable-q3
+      技能3 資産種類ごとの免税点を確認する：説明・例題→自力演習兼評価 zr-kotei-depreciable-q4
+  [zeirishi-unit-11-glossary] 固定資産税：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-11-glossary/
+  [zeirishi-unit-11-review] 固定資産税：総復習／16小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-11-review/
+  [zeirishi-kotei-mock] 固定資産税：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-kotei-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[income-law] e-Gov：所得税法
+  2026年4月3日現在施行版：340AC0000000033_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012
+  確認日：2026-10-25
+[corporate-law] e-Gov：法人税法
+  2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+  確認日：2026-10-25
+[inheritance-law] e-Gov：相続税法
+  2026年4月3日現在施行版：325AC0000000073_20260401_506AC0000000008
+  https://laws.e-gov.go.jp/law/325AC0000000073_20260401_506AC0000000008
+  確認日：2026-10-25
+[consumption-law] e-Gov：消費税法
+  2026年4月3日現在施行版：363AC0000000108_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/363AC0000000108_20260401_508AC0000000012
+  確認日：2026-10-25
+[liquor-law] e-Gov：酒税法
+  2026年4月3日現在施行版：328AC0000000006_20250628_507AC0000000045
+  https://laws.e-gov.go.jp/law/328AC0000000006_20250628_507AC0000000045
+  確認日：2026-10-25
+[collection-law] e-Gov：国税徴収法
+  2026年4月3日現在施行版：334AC0000000147_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012
+  確認日：2026-10-25
+[general-law] e-Gov：国税通則法
+  2026年4月3日現在施行版：337AC0000000066_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+  確認日：2026-10-25
+[local-law] e-Gov：地方税法
+  2026年4月3日現在施行版：325AC0000000226_20260401_508AC0000000002
+  https://laws.e-gov.go.jp/law/325AC0000000226_20260401_508AC0000000002
+  確認日：2026-10-25
+[special-law] e-Gov：租税特別措置法
+  2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+  確認日：2026-10-25
+[companies-law] e-Gov：会社法
+  2026年4月3日現在施行版：417AC0000000086_20251001_505AC0000000053
+  https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053
+  確認日：2026-10-25
+[points-01] 国税庁：第76回 簿記論 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/01.pdf
+  確認日：2026-10-25
+[points-02] 国税庁：第76回 財務諸表論 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/02.pdf
+  確認日：2026-10-25
+[points-03] 国税庁：第76回 所得税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/03.pdf
+  確認日：2026-10-25
+[points-04] 国税庁：第76回 法人税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/04.pdf
+  確認日：2026-10-25
+[points-05] 国税庁：第76回 相続税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/05.pdf
+  確認日：2026-10-25
+[points-06] 国税庁：第76回 消費税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/06.pdf
+  確認日：2026-10-25
+[points-07] 国税庁：第76回 酒税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/07.pdf
+  確認日：2026-10-25
+[points-08] 国税庁：第76回 国税徴収法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/08.pdf
+  確認日：2026-10-25
+[points-09] 国税庁：第76回 住民税 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/09.pdf
+  確認日：2026-10-25
+[points-10] 国税庁：第76回 事業税 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/10.pdf
+  確認日：2026-10-25
+[points-11] 国税庁：第76回 固定資産税 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/11.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[asbj-framework] ASBJ：討議資料・財務会計の概念フレームワーク
+  2006年12月。会計基準そのものと区別
+  https://www.asb-j.jp/jp/misc/begriff/2006-1228.html
+  確認日：2026-10-25
+[asbj-finance] ASBJ：金融商品に関する会計基準 第10号
+  2019年7月4日版。2026年6月・10月改正は基準日後のため別扱い
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+  確認日：2026-10-25
+[asbj-inventory] ASBJ：棚卸資産の評価に関する会計基準 第9号
+  2025年10月16日修正反映版
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_16.pdf
+  確認日：2026-10-25
+[asbj-revenue] ASBJ：収益認識に関する会計基準 第29号
+  2024年9月13日版
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf
+  確認日：2026-10-25
+[asbj-tax] ASBJ：税効果会計に係る会計基準
+  一時差異と回収可能性の基本
+  https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=84
+  確認日：2026-10-25
+[income-rate] 国税庁：所得税の税率
+  課税所得と超過累進税率。適用年は例で明示
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm
+  確認日：2026-10-25
+[income-deductions] 国税庁：基礎控除
+  年分と施行日が異なる。2026年12月施行額を4月3日現在施行と混同しない
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm
+  確認日：2026-10-25
+[income-loss] 国税庁：損益通算
+  通算対象と除外条件
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2250.htm
+  確認日：2026-10-25
+[corporate-rate] 国税庁：法人税の税率
+  開始事業年度と法人区分を明示
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm
+  確認日：2026-10-25
+[defense-tax] 国税庁：防衛特別法人税の創設
+  2026年4月1日以後開始事業年度。一定の基準額から年500万円控除、4%
+  https://www.nta.go.jp/publication/pamph/pdf/0025004-109_1.pdf
+  確認日：2026-10-25
+[inheritance-total] 国税庁：相続税の計算
+  総額方式と各人の税額
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4152.htm
+  確認日：2026-10-25
+[inheritance-land] 国税庁：小規模宅地等の特例
+  取得者・用途・継続・申告等の要件を併読
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm
+  確認日：2026-10-25
+[consumption-duty] 国税庁：納税義務の免除
+  基準期間・特定期間・登録等の例外
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6501.htm
+  確認日：2026-10-25
+[consumption-two] 国税庁：二割特例の概要
+  対象期間の日の属する課税期間と適用要件を区別
+  https://www.nta.go.jp/publication/pamph/shohi/kaisei/202304/01.htm
+  確認日：2026-10-25
+[consumption-2026] 国税庁：令和8年度税制改正・インボイス経過措置等
+  公表改正・施行日・取引適用日を分ける。将来適用を現行の例へ混ぜない
+  https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice-review/index.htm
+  確認日：2026-10-26
+[liquor-rates] 国税庁：酒税率一覧表
+  2023年10月1日〜2026年9月30日の表。例の移出日をこの期間内に限定
+  https://www.nta.go.jp/taxes/sake/shiori-gaikyo/shiori/2024/pdf/0001.pdf
+  確認日：2026-10-25
+[accounting-principles] 企業会計原則・企業会計原則注解
+  1982年4月20日最終改正。後の個別基準との関係も確認
+  https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+  確認日：2026-10-25
+[company-calculations] e-Gov：会社計算規則
+  2026年4月3日現在施行版
+  https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014
+  確認日：2026-10-25
+[financial-regulations] e-Gov：財務諸表等規則
+  2026年4月3日現在施行版
+  https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028
+  確認日：2026-10-25
+[consolidated-regulations] e-Gov：連結財務諸表規則
+  2026年4月3日現在施行版
+  https://laws.e-gov.go.jp/law/351M50000040028_20260331_508M60000002028
+  確認日：2026-10-25
+[foreign-currency] ASBJ：外貨建取引等会計処理基準
+  1999年10月22日最終改訂
+  https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=80
+  確認日：2026-10-25
+[impairment] 金融庁：固定資産の減損に係る会計基準
+  2002年8月9日。認識と測定を区別
+  https://www.fsa.go.jp/news/newsj/14/singi/f-20020809-1/f-20020809c.pdf
+  確認日：2026-10-25
+[tax-effects-guide] ASBJ：税効果会計に係る会計基準の適用指針 第28号
+  2025年10月16日修正反映版
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_24.pdf
+  確認日：2026-10-25
+[retirement] ASBJ：退職給付に関する会計基準 第26号
+  2016年12月16日版。個別と連結の差に注意
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/taikyu-5_1.pdf
+  確認日：2026-10-25
+[stock-options] ASBJ：ストック・オプション等に関する会計基準 第8号
+  2022年7月1日修正版
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/stockop_s2_20220701.pdf
+  確認日：2026-10-25
+[combinations] ASBJ：企業結合に関する会計基準 第21号
+  2026年1月9日修正反映版
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kouhatsujisyou20260109_12.pdf
+  確認日：2026-10-25
+[consolidation] ASBJ：連結財務諸表に関する会計基準 第22号
+  2013年9月13日改正・2014年11月18日訂正
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/spe-tanki_1-1.pdf
+  確認日：2026-10-25
+[cash-flows] ASBJ：連結キャッシュ・フロー計算書等の作成基準
+  1998年3月13日
+  https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=85
+  確認日：2026-10-25
+[lease-current] ASBJ：リース取引に関する会計基準 第13号
+  第34号の原則適用前の取扱い
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/Lease_55.pdf
+  確認日：2026-10-25
+[lease-new] ASBJ：リースに関する会計基準 第34号
+  2024年9月13日公表。原則2027年4月1日以後開始年度、早期適用2025年4月1日以後開始年度
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_02.pdf
+  確認日：2026-10-25
+[treasury-stock] ASBJ：自己株式及び準備金の額の減少等に関する会計基準 第1号
+  2025年10月16日修正反映版・7〜9項
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_13.pdf
+  確認日：2026-10-25
+[income-salary] 国税庁：給与所得控除
+  2025年分の欄を使用。2026年12月施行部分を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm
+  確認日：2026-10-26
+[income-retirement] 国税庁：退職金を受け取ったとき
+  一般・短期・特定役員の手当を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1420.htm
+  確認日：2026-10-26
+[income-transfer] 国税庁：譲渡所得の計算のしかた・総合課税
+  所有期間と50万円控除、二分の一算入
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3152.htm
+  確認日：2026-10-26
+[income-temporary] 国税庁：一時所得
+  直接の支出・特別控除・総所得への算入
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1490.htm
+  確認日：2026-10-26
+[income-revenue] 国税庁：収入金額とその計算
+  収入すべき時期・家事消費等
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2200.htm
+  確認日：2026-10-26
+[income-refund] 国税庁：還付申告
+  通常申告と還付申告の期間を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2030.htm
+  確認日：2026-10-26
+[income-blue] 国税庁：青色申告特別控除
+  65万円・55万円・10万円の要件を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2072.htm
+  確認日：2026-10-26
+[officer-pay] 国税庁：役員に対する給与
+  2017年4月1日以後支給決議分・定期同額等
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm
+  確認日：2026-10-26
+[entertainment] 国税庁：交際費等の範囲と損金不算入額の計算
+  法人規模・期間・飲食費除外条件を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm
+  確認日：2026-10-26
+[donations] 国税庁：寄附金の範囲と損金不算入額の計算
+  寄附先の区分と限度額
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5281.htm
+  確認日：2026-10-26
+[corporate-loss] 国税庁：青色申告書を提出した事業年度の欠損金の繰越控除
+  発生年度・対象法人・申告・控除限度
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5762.htm
+  確認日：2026-10-26
+[corporate-dividend] 財務省：受取配当等の益金不算入制度
+  割合の概念説明。適用条件は4月3日施行版法人税法23条と併読
+  https://www.mof.go.jp/tax_policy/summary/corporation/c02_1.pdf
+  確認日：2026-10-26
+[inheritance-heirs] 国税庁：相続人の範囲と法定相続分
+  民法上の順位と法定相続分
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4132.htm
+  確認日：2026-10-26
+[inheritance-insurance] 国税庁：相続税の課税対象になる死亡保険金
+  非課税枠・放棄・相続人以外の受取り
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4114.htm
+  確認日：2026-10-26
+[inheritance-road] 国税庁：路線価方式による宅地の評価
+  評価の基本。例の価額・率は独自の与件
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4604.htm
+  確認日：2026-10-26
+[inheritance-multiple] 国税庁：倍率方式による土地の評価
+  評価倍率の方法
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4606.htm
+  確認日：2026-10-26
+[inheritance-landlord] 国税庁：貸家建付地の評価
+  自用地価額と権利割合・賃貸割合
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4614.htm
+  確認日：2026-10-26
+[inheritance-gift-add] 国税庁：相続開始前に贈与があった場合の相続税
+  2026年・2027〜2030年・2031年以後の経過措置
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4161.htm
+  確認日：2026-10-26
+[inheritance-settlement] 国税庁：相続時精算課税の選択
+  2024年以後の年110万円基礎控除と累計2500万円
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4103.htm
+  確認日：2026-10-26
+[gift-annual] 国税庁：贈与税の計算と税率・暦年課税
+  課税価格と基礎控除後の額を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/zoyo/4408.htm
+  確認日：2026-10-26
+[consumption-output] 国税庁：消費税及び地方消費税の税率
+  本文は2025年の10％・8％を使用。将来の改正記載を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm
+  確認日：2026-10-26
+[consumption-input] 国税庁：仕入控除税額の計算方法
+  5億円・95％と個別対応・一括比例
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6401.htm
+  確認日：2026-10-26
+[consumption-ratio] 国税庁：課税売上割合の計算方法
+  国内対価・輸出免税・非課税の区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6405.htm
+  確認日：2026-10-26
+[consumption-simple] 国税庁：簡易課税制度
+  基本の六区分。後の施行・適用の追記と区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6505.htm
+  確認日：2026-10-26
+[liquor-transition] 国税庁：2026年10月の酒税率変更等の手引き
+  税率とその他の発泡性酒類の度数上限。既施行の経過措置
+  https://www.nta.go.jp/taxes/sake/pdf/0023008-027.pdf
+  確認日：2026-10-26
+[liquor-training] 国税庁税務大学校：間接税法・酒税法
+  令和8年度版・2026年1月1日現在。4月3日法令と併読
+  https://www.nta.go.jp/about/organization/ntc/kohon/kansetu/pdf/all.pdf
+  確認日：2026-10-26
+[liquor-mof] 財務省：酒税に関する資料
+  税率の概観。度数の注記は法令・国税庁専用資料を優先
+  https://www.mof.go.jp/tax_policy/summary/consumption/d08.htm
+  確認日：2026-10-26
+[collection-training] 国税庁税務大学校：国税徴収法
+  公式の学習用解説。法令基準日の条文と併読
+  https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf
+  確認日：2026-10-26
+[collection-delay] 国税庁：延滞税について
+  2026年の2.8％・9.1％と期間・端数等
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9205.htm
+  確認日：2026-10-26
+[collection-relief] 国税庁：猶予の申請の手引
+  2026年4月1日現在法令等
+  https://www.nta.go.jp/publication/pamph/sonota/yuyo-tebiki/index.htm
+  確認日：2026-10-26
+[collection-appeal] 国税不服審判所：不服申立てと国税の徴収
+  執行停止の原則と換価禁止・例外を区別
+  https://www.kfs.go.jp/service/MP/01/0803000000.html
+  確認日：2026-10-26
+[collection-second] 国税不服審判所：債務免除と第二次納税義務の事例
+  事例の個別結論を全件へ一般化しない
+  https://www.kfs.go.jp/service/JP/106/07/index.html
+  確認日：2026-10-26
+[resident-calculation] 札幌市：2026年度個人住民税の税額計算
+  控除・人的控除差5万円。指定都市の配分は非指定都市の例と区別
+  https://www.city.sapporo.jp/citytax/documents/r8keisan.pdf
+  確認日：2026-10-26
+[resident-collection] 横浜市：個人住民税の納税方法
+  2026年4月1日更新。普通・給与特別徴収
+  https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/kojin-shiminzei-kenminzei/kojin-shiminzei-shosai/shinkokunouzei.html
+  確認日：2026-10-26
+[resident-retirement] 横浜市：退職所得の課税の特例
+  退職所得の6％・4％。通常の指定都市の配分と区別
+  https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/kojin-shiminzei-kenminzei/kojin-shiminzei-shosai/tokurei.html
+  確認日：2026-10-26
+[local-corporate] 東京都主税局：法人事業税・法人都民税
+  開始年度・標準税率と超過課税。都の特例は全国一律としない
+  https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji
+  確認日：2026-10-26
+[local-individual] 東京都主税局：個人事業税
+  青色控除の戻しと290万円の事業主控除等
+  https://www.tax.metro.tokyo.lg.jp/kazei/kojin_ji.html
+  確認日：2026-10-26
+[local-special] 東京都主税局：特別法人事業税
+  基準法人所得割額等を基にする国税
+  https://www.tax.metro.tokyo.lg.jp/kazei/work/tokubetsu_houjin
+  確認日：2026-10-26
+[property-overview] 横浜市：固定資産税・都市計画税
+  賦課期日・所有者・課税標準と税額
+  https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/koteishisan-toshikeikakuzei/koteishisan-toshikeikakuzei-shosai/kotei.html
+  確認日：2026-10-26
+[property-land] 横浜市：2026年度固定資産税・土地の計算
+  2026年4月1日更新。住宅用地と非住宅用地の負担調整
+  https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/koteishisan-toshikeikakuzei/koteishisan-toshikeikakuzei-shosai/tochishikumi.html
+  確認日：2026-10-26
+[property-assets] 横浜市：2026年度償却資産申告の手引
+  2026年度。評価率・5％下限・150万円の免税点
+  https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/jigyosya/tebiki/shou-tebiki.files/tebiki2026.pdf
+  確認日：2026-10-26
+[property-new] 総務省：新築住宅等の床面積要件改正概要
+  2026年4月1日施行。原則40〜240㎡
+  https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000312091
+  確認日：2026-10-26
+[property-future] 総務省：新築住宅等の将来の立地要件改正
+  2029年4月1日施行の部分を4月3日施行済みと混同しない
+  https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000312101
+  確認日：2026-10-26
+[property-threshold-future] 尼崎市：2026年市税条例改正・2027年免税点
+  家屋30万円・償却180万円は2027年4月施行。本文の2026年度と分離
+  https://www.city.amagasaki.hyogo.jp/kurashi/zei/028kakokaisei/1043594.html
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

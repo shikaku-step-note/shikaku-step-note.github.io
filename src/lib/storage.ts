@@ -9,7 +9,7 @@ export interface StudyRecord {
 }
 export interface StudyData {
   app: 'shikaku-step-note';
-  version: 4;
+  version: 5;
   savedAt: string;
   lastLesson: string | null;
   records: Record<string, StudyRecord>;
@@ -17,7 +17,7 @@ export interface StudyData {
 }
 export const emptyData = (): StudyData => ({
   app: 'shikaku-step-note',
-  version: 4,
+  version: 5,
   savedAt: new Date().toISOString(),
   lastLesson: null,
   records: {},
@@ -33,7 +33,7 @@ export function validateData(value: unknown): StudyData {
   if (
     !isObject(value) ||
     value.app !== 'shikaku-step-note' ||
-    ![1, 2, 3, 4].includes(value.version as number) ||
+    ![1, 2, 3, 4, 5].includes(value.version as number) ||
     !isObject(value.records) ||
     !validDate(value.savedAt)
   )
@@ -68,7 +68,7 @@ export function validateData(value: unknown): StudyData {
     };
   }
   if (result.lastLesson && !result.records[result.lastLesson]) result.lastLesson = null;
-  if (value.version === 3 || value.version === 4) {
+  if (value.version === 3 || value.version === 4 || value.version === 5) {
     if (!isObject(value.assessments) || Object.keys(value.assessments).length > 1000)
       throw new Error('テスト記録の形式が正しくありません。');
     let attempts = 0;
@@ -125,7 +125,9 @@ export function validateData(value: unknown): StudyData {
             !validId(qid) ||
             !(
               (typeof answer === 'number' && Number.isInteger(answer) && answer >= 0 && answer <= 9) ||
-              (value.version === 4 && typeof answer === 'string' && answer.length <= 80)
+              ([4, 5].includes(Number(value.version)) &&
+                typeof answer === 'string' &&
+                answer.length <= (value.version === 5 ? 4000 : 80))
             )
           )
             throw new Error('テストの選択肢が正しくありません。');
@@ -161,6 +163,33 @@ export function validateData(value: unknown): StudyData {
             Object.values(fields).reduce((n, f) => n + f.correct, 0) !== row.score)
         )
           throw new Error('テストの合計と分野別の記録が一致しません。');
+        let manual: AssessmentAttempt['manual'];
+        if (row.manual !== undefined) {
+          if (
+            value.version !== 5 ||
+            !isObject(row.manual) ||
+            Object.keys(row.manual).length > Number(row.total)
+          )
+            throw new Error('記述問題の自己確認記録が不正です。');
+          manual = {};
+          for (const [qid, mark] of Object.entries(row.manual)) {
+            if (
+              !validId(qid) ||
+              !isObject(mark) ||
+              !Number.isInteger(mark.max) ||
+              Number(mark.max) < 1 ||
+              Number(mark.max) > 100 ||
+              !(
+                mark.score === null ||
+                (Number.isInteger(mark.score) &&
+                  Number(mark.score) >= 0 &&
+                  Number(mark.score) <= Number(mark.max))
+              )
+            )
+              throw new Error('記述問題の自己確認点が範囲外です。');
+            manual[qid] = { max: Number(mark.max), score: mark.score === null ? null : Number(mark.score) };
+          }
+        }
         return {
           id: row.id,
           assessmentId: id,
@@ -178,6 +207,7 @@ export function validateData(value: unknown): StudyData {
           score: row.score as number | null,
           missed: [...new Set(row.missed as string[])],
           fields,
+          ...(manual ? { manual } : {}),
         };
       });
     }

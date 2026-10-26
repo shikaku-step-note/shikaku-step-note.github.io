@@ -1,0 +1,737 @@
+[
+  {
+    "id": "income-law",
+    "title": "e-Gov：所得税法",
+    "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+    "version": "2026年4月3日現在施行版：340AC0000000033_20260401_508AC0000000012",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "corporate-law",
+    "title": "e-Gov：法人税法",
+    "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+    "version": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "inheritance-law",
+    "title": "e-Gov：相続税法",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000073_20260401_506AC0000000008",
+    "version": "2026年4月3日現在施行版：325AC0000000073_20260401_506AC0000000008",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "consumption-law",
+    "title": "e-Gov：消費税法",
+    "url": "https://laws.e-gov.go.jp/law/363AC0000000108_20260401_508AC0000000012",
+    "version": "2026年4月3日現在施行版：363AC0000000108_20260401_508AC0000000012",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "liquor-law",
+    "title": "e-Gov：酒税法",
+    "url": "https://laws.e-gov.go.jp/law/328AC0000000006_20250628_507AC0000000045",
+    "version": "2026年4月3日現在施行版：328AC0000000006_20250628_507AC0000000045",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "collection-law",
+    "title": "e-Gov：国税徴収法",
+    "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+    "version": "2026年4月3日現在施行版：334AC0000000147_20260401_508AC0000000012",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "general-law",
+    "title": "e-Gov：国税通則法",
+    "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+    "version": "2026年4月3日現在施行版：337AC0000000066_20260401_508AC0000000012",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "local-law",
+    "title": "e-Gov：地方税法",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000226_20260401_508AC0000000002",
+    "version": "2026年4月3日現在施行版：325AC0000000226_20260401_508AC0000000002",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "special-law",
+    "title": "e-Gov：租税特別措置法",
+    "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+    "version": "2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "companies-law",
+    "title": "e-Gov：会社法",
+    "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+    "version": "2026年4月3日現在施行版：417AC0000000086_20251001_505AC0000000053",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-01",
+    "title": "国税庁：第76回 簿記論 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/01.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-02",
+    "title": "国税庁：第76回 財務諸表論 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/02.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-03",
+    "title": "国税庁：第76回 所得税法 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/03.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-04",
+    "title": "国税庁：第76回 法人税法 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/04.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-05",
+    "title": "国税庁：第76回 相続税法 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/05.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-06",
+    "title": "国税庁：第76回 消費税法 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/06.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-07",
+    "title": "国税庁：第76回 酒税法 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/07.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-08",
+    "title": "国税庁：第76回 国税徴収法 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/08.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-09",
+    "title": "国税庁：第76回 住民税 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/09.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-10",
+    "title": "国税庁：第76回 事業税 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/10.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "points-11",
+    "title": "国税庁：第76回 固定資産税 出題のポイント",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/11.pdf",
+    "version": "2026年8月本試験の実績。翌年の固定仕様ではない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-overview",
+    "title": "国税庁：税理士試験の概要",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm",
+    "version": "科目合格制・会計2科目と税法3科目・公式60%基準",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-scope",
+    "title": "国税庁：試験日程・試験科目と出題範囲",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm",
+    "version": "第76回・全11科目各120分",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-selection",
+    "title": "国税庁：試験科目の選択について",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm",
+    "version": "選択組合せと免除申請科目の扱い",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-eligibility",
+    "title": "国税庁：受験資格の概要",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm",
+    "version": "会計学と税法の受験資格を区別",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-notice",
+    "title": "国税庁：令和8年度第76回税理士試験公告",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm",
+    "version": "法令基準日2026年4月3日現在施行",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-guide",
+    "title": "国税庁：第76回受験案内",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/pdf/76_01.pdf",
+    "version": "2026年度",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-papers",
+    "title": "国税庁：第76回問題・答案用紙・正誤表",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm",
+    "version": "2026年8月本試験。転載せず形式を確認",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-corrections",
+    "title": "国税庁：第76回の問題の誤りについて",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf",
+    "version": "2026年8月21日。所得税法・住民税",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "exam-retest",
+    "title": "国税庁：第76回再試験公告",
+    "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm",
+    "version": "熊本対象。2026年11月予定、確認日時点で未実施",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "asbj-framework",
+    "title": "ASBJ：討議資料・財務会計の概念フレームワーク",
+    "url": "https://www.asb-j.jp/jp/misc/begriff/2006-1228.html",
+    "version": "2006年12月。会計基準そのものと区別",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "asbj-finance",
+    "title": "ASBJ：金融商品に関する会計基準 第10号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+    "version": "2019年7月4日版。2026年6月・10月改正は基準日後のため別扱い",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "asbj-inventory",
+    "title": "ASBJ：棚卸資産の評価に関する会計基準 第9号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_16.pdf",
+    "version": "2025年10月16日修正反映版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "asbj-revenue",
+    "title": "ASBJ：収益認識に関する会計基準 第29号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
+    "version": "2024年9月13日版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "asbj-tax",
+    "title": "ASBJ：税効果会計に係る会計基準",
+    "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=84",
+    "version": "一時差異と回収可能性の基本",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "income-rate",
+    "title": "国税庁：所得税の税率",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm",
+    "version": "課税所得と超過累進税率。適用年は例で明示",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "income-deductions",
+    "title": "国税庁：基礎控除",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm",
+    "version": "年分と施行日が異なる。2026年12月施行額を4月3日現在施行と混同しない",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "income-loss",
+    "title": "国税庁：損益通算",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2250.htm",
+    "version": "通算対象と除外条件",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "corporate-rate",
+    "title": "国税庁：法人税の税率",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm",
+    "version": "開始事業年度と法人区分を明示",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "defense-tax",
+    "title": "国税庁：防衛特別法人税の創設",
+    "url": "https://www.nta.go.jp/publication/pamph/pdf/0025004-109_1.pdf",
+    "version": "2026年4月1日以後開始事業年度。一定の基準額から年500万円控除、4%",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "inheritance-total",
+    "title": "国税庁：相続税の計算",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4152.htm",
+    "version": "総額方式と各人の税額",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "inheritance-land",
+    "title": "国税庁：小規模宅地等の特例",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm",
+    "version": "取得者・用途・継続・申告等の要件を併読",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "consumption-duty",
+    "title": "国税庁：納税義務の免除",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6501.htm",
+    "version": "基準期間・特定期間・登録等の例外",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "consumption-two",
+    "title": "国税庁：二割特例の概要",
+    "url": "https://www.nta.go.jp/publication/pamph/shohi/kaisei/202304/01.htm",
+    "version": "対象期間の日の属する課税期間と適用要件を区別",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "consumption-2026",
+    "title": "国税庁：令和8年度税制改正・インボイス経過措置等",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice-review/index.htm",
+    "version": "公表改正・施行日・取引適用日を分ける。将来適用を現行の例へ混ぜない",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "liquor-rates",
+    "title": "国税庁：酒税率一覧表",
+    "url": "https://www.nta.go.jp/taxes/sake/shiori-gaikyo/shiori/2024/pdf/0001.pdf",
+    "version": "2023年10月1日〜2026年9月30日の表。例の移出日をこの期間内に限定",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "accounting-principles",
+    "title": "企業会計原則・企業会計原則注解",
+    "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+    "version": "1982年4月20日最終改正。後の個別基準との関係も確認",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "company-calculations",
+    "title": "e-Gov：会社計算規則",
+    "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+    "version": "2026年4月3日現在施行版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "financial-regulations",
+    "title": "e-Gov：財務諸表等規則",
+    "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+    "version": "2026年4月3日現在施行版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "consolidated-regulations",
+    "title": "e-Gov：連結財務諸表規則",
+    "url": "https://laws.e-gov.go.jp/law/351M50000040028_20260331_508M60000002028",
+    "version": "2026年4月3日現在施行版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "foreign-currency",
+    "title": "ASBJ：外貨建取引等会計処理基準",
+    "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=80",
+    "version": "1999年10月22日最終改訂",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "impairment",
+    "title": "金融庁：固定資産の減損に係る会計基準",
+    "url": "https://www.fsa.go.jp/news/newsj/14/singi/f-20020809-1/f-20020809c.pdf",
+    "version": "2002年8月9日。認識と測定を区別",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "tax-effects-guide",
+    "title": "ASBJ：税効果会計に係る会計基準の適用指針 第28号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_24.pdf",
+    "version": "2025年10月16日修正反映版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "retirement",
+    "title": "ASBJ：退職給付に関する会計基準 第26号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/taikyu-5_1.pdf",
+    "version": "2016年12月16日版。個別と連結の差に注意",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "stock-options",
+    "title": "ASBJ：ストック・オプション等に関する会計基準 第8号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/stockop_s2_20220701.pdf",
+    "version": "2022年7月1日修正版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "combinations",
+    "title": "ASBJ：企業結合に関する会計基準 第21号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kouhatsujisyou20260109_12.pdf",
+    "version": "2026年1月9日修正反映版",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "consolidation",
+    "title": "ASBJ：連結財務諸表に関する会計基準 第22号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/spe-tanki_1-1.pdf",
+    "version": "2013年9月13日改正・2014年11月18日訂正",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "cash-flows",
+    "title": "ASBJ：連結キャッシュ・フロー計算書等の作成基準",
+    "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=85",
+    "version": "1998年3月13日",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "lease-current",
+    "title": "ASBJ：リース取引に関する会計基準 第13号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/Lease_55.pdf",
+    "version": "第34号の原則適用前の取扱い",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "lease-new",
+    "title": "ASBJ：リースに関する会計基準 第34号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_02.pdf",
+    "version": "2024年9月13日公表。原則2027年4月1日以後開始年度、早期適用2025年4月1日以後開始年度",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "treasury-stock",
+    "title": "ASBJ：自己株式及び準備金の額の減少等に関する会計基準 第1号",
+    "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_13.pdf",
+    "version": "2025年10月16日修正反映版・7〜9項",
+    "verified": "2026-10-25"
+  },
+  {
+    "id": "income-salary",
+    "title": "国税庁：給与所得控除",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm",
+    "version": "2025年分の欄を使用。2026年12月施行部分を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "income-retirement",
+    "title": "国税庁：退職金を受け取ったとき",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1420.htm",
+    "version": "一般・短期・特定役員の手当を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "income-transfer",
+    "title": "国税庁：譲渡所得の計算のしかた・総合課税",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3152.htm",
+    "version": "所有期間と50万円控除、二分の一算入",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "income-temporary",
+    "title": "国税庁：一時所得",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1490.htm",
+    "version": "直接の支出・特別控除・総所得への算入",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "income-revenue",
+    "title": "国税庁：収入金額とその計算",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2200.htm",
+    "version": "収入すべき時期・家事消費等",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "income-refund",
+    "title": "国税庁：還付申告",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2030.htm",
+    "version": "通常申告と還付申告の期間を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "income-blue",
+    "title": "国税庁：青色申告特別控除",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2072.htm",
+    "version": "65万円・55万円・10万円の要件を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "officer-pay",
+    "title": "国税庁：役員に対する給与",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm",
+    "version": "2017年4月1日以後支給決議分・定期同額等",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "entertainment",
+    "title": "国税庁：交際費等の範囲と損金不算入額の計算",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
+    "version": "法人規模・期間・飲食費除外条件を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "donations",
+    "title": "国税庁：寄附金の範囲と損金不算入額の計算",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5281.htm",
+    "version": "寄附先の区分と限度額",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "corporate-loss",
+    "title": "国税庁：青色申告書を提出した事業年度の欠損金の繰越控除",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5762.htm",
+    "version": "発生年度・対象法人・申告・控除限度",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "corporate-dividend",
+    "title": "財務省：受取配当等の益金不算入制度",
+    "url": "https://www.mof.go.jp/tax_policy/summary/corporation/c02_1.pdf",
+    "version": "割合の概念説明。適用条件は4月3日施行版法人税法23条と併読",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "inheritance-heirs",
+    "title": "国税庁：相続人の範囲と法定相続分",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4132.htm",
+    "version": "民法上の順位と法定相続分",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "inheritance-insurance",
+    "title": "国税庁：相続税の課税対象になる死亡保険金",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4114.htm",
+    "version": "非課税枠・放棄・相続人以外の受取り",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "inheritance-road",
+    "title": "国税庁：路線価方式による宅地の評価",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4604.htm",
+    "version": "評価の基本。例の価額・率は独自の与件",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "inheritance-multiple",
+    "title": "国税庁：倍率方式による土地の評価",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4606.htm",
+    "version": "評価倍率の方法",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "inheritance-landlord",
+    "title": "国税庁：貸家建付地の評価",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4614.htm",
+    "version": "自用地価額と権利割合・賃貸割合",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "inheritance-gift-add",
+    "title": "国税庁：相続開始前に贈与があった場合の相続税",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4161.htm",
+    "version": "2026年・2027〜2030年・2031年以後の経過措置",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "inheritance-settlement",
+    "title": "国税庁：相続時精算課税の選択",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4103.htm",
+    "version": "2024年以後の年110万円基礎控除と累計2500万円",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "gift-annual",
+    "title": "国税庁：贈与税の計算と税率・暦年課税",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/zoyo/4408.htm",
+    "version": "課税価格と基礎控除後の額を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "consumption-output",
+    "title": "国税庁：消費税及び地方消費税の税率",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm",
+    "version": "本文は2025年の10％・8％を使用。将来の改正記載を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "consumption-input",
+    "title": "国税庁：仕入控除税額の計算方法",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6401.htm",
+    "version": "5億円・95％と個別対応・一括比例",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "consumption-ratio",
+    "title": "国税庁：課税売上割合の計算方法",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6405.htm",
+    "version": "国内対価・輸出免税・非課税の区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "consumption-simple",
+    "title": "国税庁：簡易課税制度",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6505.htm",
+    "version": "基本の六区分。後の施行・適用の追記と区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "liquor-transition",
+    "title": "国税庁：2026年10月の酒税率変更等の手引き",
+    "url": "https://www.nta.go.jp/taxes/sake/pdf/0023008-027.pdf",
+    "version": "税率とその他の発泡性酒類の度数上限。既施行の経過措置",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "liquor-training",
+    "title": "国税庁税務大学校：間接税法・酒税法",
+    "url": "https://www.nta.go.jp/about/organization/ntc/kohon/kansetu/pdf/all.pdf",
+    "version": "令和8年度版・2026年1月1日現在。4月3日法令と併読",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "liquor-mof",
+    "title": "財務省：酒税に関する資料",
+    "url": "https://www.mof.go.jp/tax_policy/summary/consumption/d08.htm",
+    "version": "税率の概観。度数の注記は法令・国税庁専用資料を優先",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "collection-training",
+    "title": "国税庁税務大学校：国税徴収法",
+    "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf",
+    "version": "公式の学習用解説。法令基準日の条文と併読",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "collection-delay",
+    "title": "国税庁：延滞税について",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9205.htm",
+    "version": "2026年の2.8％・9.1％と期間・端数等",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "collection-relief",
+    "title": "国税庁：猶予の申請の手引",
+    "url": "https://www.nta.go.jp/publication/pamph/sonota/yuyo-tebiki/index.htm",
+    "version": "2026年4月1日現在法令等",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "collection-appeal",
+    "title": "国税不服審判所：不服申立てと国税の徴収",
+    "url": "https://www.kfs.go.jp/service/MP/01/0803000000.html",
+    "version": "執行停止の原則と換価禁止・例外を区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "collection-second",
+    "title": "国税不服審判所：債務免除と第二次納税義務の事例",
+    "url": "https://www.kfs.go.jp/service/JP/106/07/index.html",
+    "version": "事例の個別結論を全件へ一般化しない",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "resident-calculation",
+    "title": "札幌市：2026年度個人住民税の税額計算",
+    "url": "https://www.city.sapporo.jp/citytax/documents/r8keisan.pdf",
+    "version": "控除・人的控除差5万円。指定都市の配分は非指定都市の例と区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "resident-collection",
+    "title": "横浜市：個人住民税の納税方法",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/kojin-shiminzei-kenminzei/kojin-shiminzei-shosai/shinkokunouzei.html",
+    "version": "2026年4月1日更新。普通・給与特別徴収",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "resident-retirement",
+    "title": "横浜市：退職所得の課税の特例",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/kojin-shiminzei-kenminzei/kojin-shiminzei-shosai/tokurei.html",
+    "version": "退職所得の6％・4％。通常の指定都市の配分と区別",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "local-corporate",
+    "title": "東京都主税局：法人事業税・法人都民税",
+    "url": "https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji",
+    "version": "開始年度・標準税率と超過課税。都の特例は全国一律としない",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "local-individual",
+    "title": "東京都主税局：個人事業税",
+    "url": "https://www.tax.metro.tokyo.lg.jp/kazei/kojin_ji.html",
+    "version": "青色控除の戻しと290万円の事業主控除等",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "local-special",
+    "title": "東京都主税局：特別法人事業税",
+    "url": "https://www.tax.metro.tokyo.lg.jp/kazei/work/tokubetsu_houjin",
+    "version": "基準法人所得割額等を基にする国税",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "property-overview",
+    "title": "横浜市：固定資産税・都市計画税",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/koteishisan-toshikeikakuzei/koteishisan-toshikeikakuzei-shosai/kotei.html",
+    "version": "賦課期日・所有者・課税標準と税額",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "property-land",
+    "title": "横浜市：2026年度固定資産税・土地の計算",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/koteishisan-toshikeikakuzei/koteishisan-toshikeikakuzei-shosai/tochishikumi.html",
+    "version": "2026年4月1日更新。住宅用地と非住宅用地の負担調整",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "property-assets",
+    "title": "横浜市：2026年度償却資産申告の手引",
+    "url": "https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/jigyosya/tebiki/shou-tebiki.files/tebiki2026.pdf",
+    "version": "2026年度。評価率・5％下限・150万円の免税点",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "property-new",
+    "title": "総務省：新築住宅等の床面積要件改正概要",
+    "url": "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000312091",
+    "version": "2026年4月1日施行。原則40〜240㎡",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "property-future",
+    "title": "総務省：新築住宅等の将来の立地要件改正",
+    "url": "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000312101",
+    "version": "2029年4月1日施行の部分を4月3日施行済みと混同しない",
+    "verified": "2026-10-26"
+  },
+  {
+    "id": "property-threshold-future",
+    "title": "尼崎市：2026年市税条例改正・2027年免税点",
+    "url": "https://www.city.amagasaki.hyogo.jp/kurashi/zei/028kakokaisei/1043594.html",
+    "version": "家屋30万円・償却180万円は2027年4月施行。本文の2026年度と分離",
+    "verified": "2026-10-26"
+  }
+]

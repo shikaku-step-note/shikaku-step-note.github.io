@@ -6,6 +6,7 @@ import {
   newAttempt,
   remainingSeconds,
   compatibleAttempt,
+  attemptSummary,
   type Assessment,
   type AssessmentAttempt,
 } from '../lib/assessment';
@@ -17,6 +18,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
   if (!root) return;
   const a = JSON.parse(root.querySelector('[data-assessment-json]')!.textContent!) as Assessment;
   const fieldNames: Record<string, string> = a.fieldNames ?? names;
+  const hasEssay = a.questions.some((q) => q.input === 'essay');
   const el = <T extends HTMLElement = HTMLElement>(s: string) => root.querySelector<T>(s)!;
   const questions = Array.from(root.querySelectorAll<HTMLElement>('[data-question]'));
   const begin = el<HTMLButtonElement>('[data-assessment-begin]');
@@ -24,6 +26,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
   let interval: ReturnType<typeof setInterval> | undefined;
   let generation = 0;
   let ending = false;
+  let pendingSaves = 0;
   const rows = () => storage.data.assessments[a.id] ?? [];
   const currentRows = () => rows().filter((r) => compatibleAttempt(a, r));
   const text = (tag: string, value: string, className?: string) => {
@@ -37,13 +40,26 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     box.replaceChildren();
     const completed = currentRows().filter((r) => r.finishedAt !== null);
     if (completed.length) {
-      const best = Math.max(...completed.map((r) => r.score ?? 0));
-      box.append(
-        text(
-          'p',
-          `最新 ${completed[0]!.score} / ${a.questions.length}問正解・最高 ${best} / ${a.questions.length}問正解`,
-        ),
-      );
+      if (hasEssay) {
+        const fullyReviewed = completed.filter((r) =>
+          Object.values(r.manual ?? {}).every((m) => m.score !== null),
+        );
+        const maximum = a.questions.reduce((n, q) => n + (q.points ?? 1), 0);
+        box.append(
+          text(
+            'p',
+            `最新：${attemptSummary(completed[0]!)}。独自練習得点 ${practicePoints(a, completed[0]!)} / ${maximum}点（未確認は加点なし）。${fullyReviewed.length ? `自己確認済みの最高 ${Math.max(...fullyReviewed.map((r) => practicePoints(a, r)))}点。` : '記述の自己確認を終えると、その回を最高得点の比較に含めます。'}`,
+          ),
+        );
+      } else {
+        const best = Math.max(...completed.map((r) => r.score ?? 0));
+        box.append(
+          text(
+            'p',
+            `最新 ${completed[0]!.score} / ${a.questions.length}問正解・最高 ${best} / ${a.questions.length}問正解`,
+          ),
+        );
+      }
     }
     for (const r of rows().slice(0, 10)) {
       const line = document.createElement('div');
@@ -54,7 +70,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       line.append(
         text(
           'span',
-          `${date}・${r.mode === 'timed' ? '時間あり' : '時間なし'}・${r.version}・${r.finishedAt ? `${r.score}/${r.total}問正解` : '途中'}`,
+          `${date}・${r.mode === 'timed' ? '時間あり' : '時間なし'}・${r.version}・${r.finishedAt ? attemptSummary(r) : '途中'}`,
         ),
       );
       if (r.finishedAt && compatibleAttempt(a, r)) {
@@ -84,6 +100,9 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       );
   }
   async function persist(snapshot: AssessmentAttempt) {
+    pendingSaves++;
+    el('[data-exam-save]').textContent = '保存中…';
+    let failure: string | null = null;
     try {
       await storage.update((data) => {
         const all = data.assessments[a.id] ?? [];
@@ -92,13 +111,16 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
         else all[index] = snapshot;
         data.assessments[a.id] = all.slice(0, 100);
       });
-      el('[data-exam-save]').textContent =
-        storage.mode === 'memory' ? '一時記録・永続保存できません' : 'この端末に保存しました';
       updated();
       history();
     } catch (e) {
-      el('[data-exam-save]').textContent = e instanceof Error ? e.message : '保存できませんでした。';
+      failure = e instanceof Error ? e.message : '保存できませんでした。';
       updated();
+    } finally {
+      pendingSaves--;
+      if (!pendingSaves)
+        el('[data-exam-save]').textContent =
+          failure ?? (storage.mode === 'memory' ? '一時記録・永続保存できません' : 'この端末に保存しました');
     }
   }
   function save() {
@@ -125,7 +147,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       else void finish(true);
     }
   }
-  function renderActive(focus = false) {
+  function renderActive(focus = false, syncInputs = true) {
     if (!attempt) return;
     el('[data-assessment-start]').hidden = true;
     el('[data-assessment-active]').hidden = false;
@@ -134,12 +156,15 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     el('[data-assessment-results]').hidden = true;
     questions.forEach((field, i) => {
       field.hidden = i !== attempt!.cursor;
-      field.querySelectorAll<HTMLInputElement>('input').forEach((input) => {
-        input.disabled = false;
-        if (input.hasAttribute('data-written-answer'))
-          input.value = String(attempt!.answers[field.dataset.question!] ?? '');
-        else input.checked = attempt!.answers[field.dataset.question!] === Number(input.value);
-      });
+      if (syncInputs)
+        field.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input, textarea').forEach((input) => {
+          input.disabled = false;
+          if (input.hasAttribute('data-written-answer'))
+            input.value = String(attempt!.answers[field.dataset.question!] ?? '');
+          else
+            (input as HTMLInputElement).checked =
+              attempt!.answers[field.dataset.question!] === Number(input.value);
+        });
     });
     el('[data-question-position]').textContent = `問${attempt.cursor + 1} / ${a.questions.length}`;
     el('[data-exam-count]').textContent =
@@ -191,10 +216,19 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       text('h3', '今回の結果'),
       text(
         'p',
-        `${attempt.score} / ${attempt.total}問正解（正答率${Math.round((attempt.score / attempt.total) * 100)}%）`,
+        hasEssay
+          ? attemptSummary(attempt)
+          : `${attempt.score} / ${attempt.total}問正解（正答率${Math.round((attempt.score / attempt.total) * 100)}%）`,
         'exam-score',
       ),
     );
+    if (a.qualification === 'zeirishi')
+      result.append(
+        text(
+          'p',
+          '本試験は記述式で、詳細な公式採点基準を確認できていません。この教材の配点・数値照合・記述の自己確認は独自の練習です。公式の60％基準へ換算した合否判定はしません。未確認の記述は得点に加えていません。',
+        ),
+      );
     if (a.kind === 'mock' && a.qualification === 'it-passport')
       result.append(text('p', '全問各1点の練習得点です。IRT評価点や公式の合否には換算できません。'));
     if (a.kind === 'mock' && a.qualification === 'takken')
@@ -217,7 +251,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     dl.className = 'field-scores';
     for (const key of Object.keys(fieldNames)) {
       const f = attempt.fields[key];
-      if (f?.total) {
+      if (f?.total && !hasEssay) {
         dl.append(
           text('dt', fieldNames[key]!),
           text('dd', `${f.correct}/${f.total}問正解（${Math.round((f.correct / f.total) * 100)}%）`),
@@ -225,7 +259,12 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       }
     }
     result.append(dl);
-    if (a.kind === 'mock' && a.qualification !== 'it-passport' && a.qualification !== 'takken') {
+    if (
+      a.kind === 'mock' &&
+      a.qualification !== 'it-passport' &&
+      a.qualification !== 'takken' &&
+      a.qualification !== 'zeirishi'
+    ) {
       const points = fieldPoints(a, attempt);
       const list = document.createElement('ul');
       for (const [key, f] of Object.entries(points))
@@ -288,15 +327,57 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       const details = document.createElement('details');
       details.className = 'answer-explanation';
       const correct = isCorrect(q, attempt!.answers[q.id]);
-      details.append(text('summary', `問${i + 1} ${correct ? '正解' : '要復習'}：${q.prompt}`));
+      details.dataset.explanationId = q.id;
+      details.append(
+        text(
+          'summary',
+          `問${i + 1} ${q.input === 'essay' ? '記述・自己確認' : correct ? '正解' : '要復習'}：${q.prompt}`,
+        ),
+      );
       details.append(
         text(
           'p',
           `あなたの解答：${attempt!.answers[q.id] === undefined ? '未解答' : q.input ? String(attempt!.answers[q.id]) : (q.options[Number(attempt!.answers[q.id])] ?? '不明な選択肢')}`,
         ),
-        text('p', `正解：${q.input ? q.accepted?.[0] : q.options[q.answer]}`),
+        text(
+          'p',
+          q.input === 'essay'
+            ? `解答例：${q.modelAnswer}`
+            : `正解：${q.input ? q.accepted?.[0] : q.options[q.answer]}`,
+        ),
         text('p', q.explanation),
       );
+      if (q.input === 'essay') {
+        const criteria = document.createElement('ul');
+        for (const r of q.rubric ?? []) criteria.append(text('li', `${r.criterion}（独自${r.points}点）`));
+        details.append(criteria);
+        const label = text('label', `自己確認点（0〜${q.points ?? 1}点。空欄は未確認）`, 'written-answer');
+        const mark = document.createElement('input');
+        mark.type = 'number';
+        mark.min = '0';
+        mark.max = String(q.points ?? 1);
+        mark.step = '1';
+        mark.dataset.selfScore = q.id;
+        const current = attempt!.manual?.[q.id]?.score;
+        mark.value = current === null || current === undefined ? '' : String(current);
+        mark.addEventListener('change', () => {
+          if (!attempt?.finishedAt || !mark.reportValidity()) return;
+          const value = mark.value === '' ? null : Number(mark.value);
+          attempt.manual![q.id]!.score = value;
+          attempt = gradeAttempt(a, attempt);
+          const openIds = Array.from(result.querySelectorAll<HTMLDetailsElement>('details[open]')).map(
+            (d) => d.dataset.explanationId,
+          );
+          save();
+          showResults(false);
+          result.querySelectorAll<HTMLDetailsElement>('details').forEach((d) => {
+            d.open = openIds.includes(d.dataset.explanationId);
+          });
+          result.querySelector<HTMLInputElement>(`[data-self-score="${q.id}"]`)?.focus();
+        });
+        label.append(mark);
+        details.append(label);
+      }
       const link = document.createElement('a');
       link.href = href(`qualifications/${a.qualification}/${q.lesson}/`);
       link.textContent = 'この内容をレッスンで復習する';
@@ -355,21 +436,25 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     showResults();
     ending = false;
   }
-  root.querySelectorAll<HTMLInputElement>('[data-question] input').forEach((input) =>
-    input.addEventListener(input.hasAttribute('data-written-answer') ? 'input' : 'change', () => {
-      if (!attempt || attempt.finishedAt) return;
-      if (remainingSeconds(attempt) === 0) {
-        void finish(true);
-        return;
-      }
-      if (input.hasAttribute('data-written-answer')) {
-        if (input.value.trim()) attempt.answers[input.name] = input.value;
-        else delete attempt.answers[input.name];
-      } else attempt.answers[input.name] = Number(input.value);
-      save();
-      renderActive();
-    }),
-  );
+  root
+    .querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(
+      '[data-question] input, [data-question] textarea',
+    )
+    .forEach((input) =>
+      input.addEventListener(input.hasAttribute('data-written-answer') ? 'input' : 'change', () => {
+        if (!attempt || attempt.finishedAt) return;
+        if (remainingSeconds(attempt) === 0) {
+          void finish(true);
+          return;
+        }
+        if (input.hasAttribute('data-written-answer')) {
+          if (input.value.trim()) attempt.answers[input.name] = input.value;
+          else delete attempt.answers[input.name];
+        } else attempt.answers[input.name] = Number(input.value);
+        save();
+        renderActive(false, false);
+      }),
+    );
   el('[data-question-prev]').addEventListener('click', () => move(Math.max(0, attempt!.cursor - 1)));
   el('[data-question-next]').addEventListener('click', () =>
     move(Math.min(a.questions.length - 1, attempt!.cursor + 1)),

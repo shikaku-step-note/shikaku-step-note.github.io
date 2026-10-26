@@ -1,0 +1,205 @@
+---
+import { zeirishiSubjects, zeirishiOutline, zeirishiLimitations, zeirishiReviewed } from '../data/zeirishi';
+import { href } from '../lib/site';
+import Share from './Share.astro';
+---
+
+<div class="container page-section">
+  <section class="course-section">
+    <h2>11科目から、学ぶ科目を選ぶ</h2>
+    <p>
+      会計と税の仕組みを、数字の意味と適用条件から学びます。公式の級分けはありません。下の「基礎・例題・手続」は当サイトの学習段階であり、公式の級や合格資格ではありません。
+    </p>
+    <div class="notice compact">
+      <strong>2026年度第76回・法令基準は2026年4月3日現在施行</strong>
+      <p>
+        通常の試験によるルートは、必須の会計学2科目と、選択する税法3科目の合計5科目です。11科目を全て受験する制度ではありません。科目合格制で、一科目ずつの受験もできます。会計学と税法では受験資格の扱いも異なります。
+      </p>
+      <p>{zeirishiLimitations}</p>
+    </div>
+    <div class="assessment-links">
+      <a href={href('qualifications/zeirishi/coverage/')}>公式範囲との対応・出典・追加学習</a>
+      <a href={href('downloads/zeirishi-curriculum.txt')} download>
+        全科目の学習ツリー・学習案をTXTで保存
+      </a>
+      <a href={href('qualifications/zeirishi/tests/')}>科目別の用語・総復習・模試</a>
+    </div>
+  </section>
+  <section class="course-section" id="subjects" aria-labelledby="zr-subject-heading">
+    <h2 id="zr-subject-heading">科目の入口と、このブラウザの学習状況</h2>
+    <p>
+      受験する科目のページから順に学びます。学習済みの印とテストの得点は別の記録です。全教材を読み終えることが、受験科目の選択条件ではありません。
+    </p>
+    {['会計学', '税法'].map((category) => (
+      <section>
+        <h3>{category === '会計学' ? '会計学：2科目が必須' : '税法：9科目から3科目を選択'}</h3>
+        <div class="zr-subject-grid">
+          {zeirishiSubjects
+            .filter((s) => s.category === category)
+            .map((s) => {
+              const lessons = zeirishiOutline.filter((r) => r.subject === s.id);
+              return (
+                <article class="sidebar-box zr-subject-card">
+                  <p class="eyebrow">
+                    {s.category === '会計学'
+                      ? '必須科目'
+                      : ['shotoku', 'hojin'].includes(s.id)
+                        ? '少なくとも一方を選択'
+                        : '選択科目'}
+                  </p>
+                  <h4>
+                    <a href={href(`qualifications/zeirishi/subjects/${s.id}/`)}>{s.name}</a>
+                  </h4>
+                  <p>{s.scope}</p>
+                  <p class="muted">{lessons.length}レッスン・用語確認・総復習・120分模試</p>
+                  <p data-course-progress="zeirishi" data-course-subject={s.id}>
+                    記録を読み込んでいます
+                  </p>
+                  <progress
+                    data-course-bar="zeirishi"
+                    data-course-subject={s.id}
+                    max={lessons.length}
+                    value="0"
+                    aria-label={`${s.name}のレッスン完了数`}
+                  >
+                    0 / {lessons.length}
+                  </progress>
+                  <a class="button secondary" href={href(`qualifications/zeirishi/subjects/${s.id}/`)}>
+                    学習順と教材を見る
+                  </a>
+                </article>
+              );
+            })}
+        </div>
+      </section>
+    ))}
+  </section>
+  <section class="course-section" id="selection">
+    <h2>通常の5科目の組合せを確かめる</h2>
+    <p>
+      所得税法・法人税法の少なくとも一方が必要です。消費税法と酒税法、住民税と事業税は、それぞれ一方のみ選べます。下の確認は免除のない通常ルートの学習補助です。受験資格・免除・申込の可否を判定するものではありません。
+    </p>
+    <form data-subject-selection>
+      <fieldset class="zr-selection">
+        <legend>組合せを確認する科目</legend>
+        {zeirishiSubjects.map((s) => (
+          <label>
+            <input type="checkbox" value={s.id} name="subject" /> <span>{s.name}</span>
+          </label>
+        ))}
+      </fieldset>
+      <button type="submit" class="button primary">
+        組合せを確認する
+      </button>
+      <div data-selection-result role="status" class="notice compact" hidden></div>
+    </form>
+    <noscript>
+      <p>組合せ確認にはJavaScriptを使います。上記の選択条件と国税庁の案内でも確認できます。</p>
+    </noscript>
+    <p>
+      <a href="https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm">国税庁：試験科目の選択</a> ・{' '}
+      <a href="https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm">公式受験資格</a>
+    </p>
+  </section>
+  <section class="course-section" id="schedule">
+    <h2>一科目ずつ、1日35〜45分から</h2>
+    <p>
+      週5日を目安に、本文を読む、例題を手で解く、理解度チェックと解説を確認する時間を取ります。翌日と1週間後に同じ仕組みを説明し直します。以下は一科目の基礎を巡る8週間の独自案で、試験合格までの必要時間ではありません。初学者は前提の簿記や所得税等を補い、理解に応じて期間を延ばしてください。
+    </p>
+    <ol>
+      <li>1週目：科目の公式範囲と前提を確認し、最初のレッスンの例を解く。</li>
+      <li>2〜4週目：各レッスンを複数日に分け、条件を変えた例と理解度チェックに取り組む。</li>
+      <li>5〜6週目：残るレッスンを学び、用語確認と科目総復習で戻る場所を見つける。</li>
+      <li>7週目：対応表の追加学習を確認し、公式の公表問題で資料量と記述形式に触れる。</li>
+      <li>8週目：別枠で120分の独自基礎模試。翌日は解説・記述の自己確認と解き直しに充てる。</li>
+    </ol>
+    <p>
+      記述の自己確認点は独自基準です。公式の詳細な採点基準や模範解答は確認できておらず、公式の60％基準へ換算した合否判定は行いません。2026年8月の公表問題を参照し、11月の熊本再試験の未公表問題とは区別しています。
+    </p>
+    <p>
+      記録は現在のブラウザに保存します。端末間で自動同期せず、ブラウザデータを削除すると失われることがあります。
+      <a href={href('progress/#backup')}>定期的にバックアップを書き出す</a>ことをおすすめします。
+    </p>
+    <p class="muted">資料・教材確認日：{zeirishiReviewed}。公式の教材や個別の税務助言ではありません。</p>
+  </section>
+  <Share
+    title="税理士の科目別無料基礎学習｜資格ステップノート"
+    url={new URL(href('qualifications/zeirishi/'), Astro.site).href}
+  />
+</div>
+<script>
+  import { checkSubjectCombination } from '../lib/subject-selection';
+  const form = document.querySelector<HTMLFormElement>('[data-subject-selection]');
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const selected = Array.from(form.querySelectorAll<HTMLInputElement>('input:checked')).map(
+      (el) => el.value,
+    );
+    const result = checkSubjectCombination(selected);
+    const box = form.querySelector<HTMLElement>('[data-selection-result]')!;
+    box.replaceChildren();
+    box.hidden = false;
+    const p = document.createElement('p');
+    p.textContent = result.valid
+      ? '通常の5科目の組合せ条件を満たしています。受験資格や免除・申込条件は公式案内で別に確認してください。'
+      : 'この組合せを見直してください。';
+    box.append(p);
+    if (result.issues.length) {
+      const list = document.createElement('ul');
+      for (const issue of result.issues) {
+        const li = document.createElement('li');
+        li.textContent = issue;
+        list.append(li);
+      }
+      box.append(list);
+    }
+  });
+</script>
+<style>
+  .zr-subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+    gap: 1rem;
+    margin: 1rem 0 2rem;
+  }
+  .zr-subject-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    margin: 0;
+    min-width: 0;
+  }
+  .zr-subject-card h4 {
+    font-size: 1.35rem;
+    margin: 0;
+  }
+  .zr-subject-card p {
+    margin: 0;
+  }
+  .zr-subject-card .button {
+    margin-top: auto;
+  }
+  .zr-subject-card progress {
+    width: 100%;
+  }
+  .zr-selection {
+    border: 1px solid var(--line);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .zr-selection label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 44px;
+    cursor: pointer;
+  }
+  .zr-selection input {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--teal);
+  }
+</style>

@@ -1,0 +1,183 @@
+税理士 簿記論 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：簿記論（会計学）
+複式簿記・記帳計算・帳簿組織・商業簿記・工業簿記。原価計算は公式範囲から除外。
+前提：日商簿記3級程度の仕訳と決算整理。未学習ならサイト内の簿記3級へ。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-boki-flow] 取引から試算表・決算整理へ／40分
+      目標：仕訳と転記のつながりを説明する／前払と未払を期間へ配分する／整理前残高から利益を修正する
+      前提：日商簿記3級程度の仕訳と決算整理。未学習ならサイト内の簿記3級へ。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-flow-check] 4問：zr-boki-flow-q1、zr-boki-flow-q2、zr-boki-flow-q3、zr-boki-flow-q4
+      用語：転記・試算表・決算整理
+      次：zr-boki-cash
+      追加学習・制約：複合仕訳・伝票会計と多桁の総合問題は追加演習が必要。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-flow/
+      技能1 仕訳と転記のつながりを説明する：説明・例題→自力演習兼評価 zr-boki-flow-q1
+      技能2 前払と未払を期間へ配分する：説明・例題→自力演習兼評価 zr-boki-flow-q2、zr-boki-flow-q3、zr-boki-flow-q4
+      技能3 整理前残高から利益を修正する：説明・例題→自力演習兼評価 zr-boki-flow-q3
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-boki-cash] 現金・預金・債権を残高から確かめる／40分
+      目標：現金過不足の原因を分類する／銀行勘定の調整を行う／貸倒見積額と繰入額を区別する
+      前提：前のレッスン「取引から試算表・決算整理へ」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-cash-check] 4問：zr-boki-cash-q1、zr-boki-cash-q2、zr-boki-cash-q3、zr-boki-cash-q4
+      用語：現金過不足・銀行勘定調整・貸倒引当金
+      次：zr-boki-inventory
+      追加学習・制約：債権区分ごとの割引計算や担保の評価は概説にとどまる。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-cash/
+      技能1 現金過不足の原因を分類する：説明・例題→自力演習兼評価 zr-boki-cash-q1
+      技能2 銀行勘定の調整を行う：説明・例題→自力演習兼評価 zr-boki-cash-q2
+      技能3 貸倒見積額と繰入額を区別する：説明・例題→自力演習兼評価 zr-boki-cash-q3、zr-boki-cash-q4
+    3. [zr-boki-inventory] 棚卸資産の数量・単価・評価損／45分
+      目標：売上原価の流れを説明する／移動平均で払出単価を計算する／棚卸減耗と評価損を分ける
+      前提：前のレッスン「現金・預金・債権を残高から確かめる」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-inventory-check] 4問：zr-boki-inventory-q1、zr-boki-inventory-q2、zr-boki-inventory-q3、zr-boki-inventory-q4
+      用語：売上原価・正味売却価額・棚卸減耗
+      次：zr-boki-fixed
+      追加学習・制約：売価還元法、特殊商品売買、製造業の高度な棚卸評価は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-inventory/
+      技能1 売上原価の流れを説明する：説明・例題→自力演習兼評価 zr-boki-inventory-q1、zr-boki-inventory-q2
+      技能2 移動平均で払出単価を計算する：説明・例題→自力演習兼評価 zr-boki-inventory-q3
+      技能3 棚卸減耗と評価損を分ける：説明・例題→自力演習兼評価 zr-boki-inventory-q4
+    4. [zr-boki-fixed] 固定資産の取得・償却・売却／40分
+      目標：取得原価と費用を分ける／定額法と月割を計算する／売却時の帳簿価額から損益を求める
+      前提：前のレッスン「棚卸資産の数量・単価・評価損」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-fixed-check] 4問：zr-boki-fixed-q1、zr-boki-fixed-q2、zr-boki-fixed-q3、zr-boki-fixed-q4
+      用語：取得原価・減価償却・帳簿価額
+      次：zr-boki-finance
+      追加学習・制約：圧縮記帳、資産除去債務、減損、ソフトウェア各論は別途演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-fixed/
+      技能1 取得原価と費用を分ける：説明・例題→自力演習兼評価 zr-boki-fixed-q1
+      技能2 定額法と月割を計算する：説明・例題→自力演習兼評価 zr-boki-fixed-q2、zr-boki-fixed-q3
+      技能3 売却時の帳簿価額から損益を求める：説明・例題→自力演習兼評価 zr-boki-fixed-q4
+    5. [zr-boki-finance] 有価証券・社債・外貨の測定／40分
+      目標：有価証券の保有目的を分ける／社債の償却原価を計算する／外貨の換算差額を求める
+      前提：前のレッスン「固定資産の取得・償却・売却」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-finance-check] 4問：zr-boki-finance-q1、zr-boki-finance-q2、zr-boki-finance-q3、zr-boki-finance-q4
+      用語：償却原価法・為替差損益・売買目的有価証券
+      次：zr-boki-branches
+      追加学習・制約：実効利子率、ヘッジ会計、外貨建の高度な取引は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-finance/
+      技能1 有価証券の保有目的を分ける：説明・例題→自力演習兼評価 zr-boki-finance-q1
+      技能2 社債の償却原価を計算する：説明・例題→自力演習兼評価 zr-boki-finance-q2
+      技能3 外貨の換算差額を求める：説明・例題→自力演習兼評価 zr-boki-finance-q3、zr-boki-finance-q4
+  学習段階：手続と総合復習へ（独自区分）
+    6. [zr-boki-branches] 本支店・帳簿組織と工業簿記の流れ／45分
+      目標：内部取引を合算から消去する／未達取引を補正する／製造原価の勘定連絡を追う
+      前提：前のレッスン「有価証券・社債・外貨の測定」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-boki-branches-check] 4問：zr-boki-branches-q1、zr-boki-branches-q2、zr-boki-branches-q3、zr-boki-branches-q4
+      用語：未達取引・内部利益・仕掛品
+      次：zeirishi-unit-1-review
+      追加学習・制約：帳簿組織の全形式、在外支店、利息法、直接法キャッシュ・フロー計算書、キャッシュ・フロー見積法、セール・アンド・リースバック等は追加学習・演習が必要。原価計算自体は公式の除外範囲と区別。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-branches/
+      技能1 内部取引を合算から消去する：説明・例題→自力演習兼評価 zr-boki-branches-q1、zr-boki-branches-q3
+      技能2 未達取引を補正する：説明・例題→自力演習兼評価 zr-boki-branches-q2
+      技能3 製造原価の勘定連絡を追う：説明・例題→自力演習兼評価 zr-boki-branches-q4
+  [zeirishi-unit-1-glossary] 簿記論：累積用語確認／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-1-glossary/
+  [zeirishi-unit-1-review] 簿記論：総復習／24小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-1-review/
+  [zeirishi-boki-mock] 簿記論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-boki-mock/
+  2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[companies-law] e-Gov：会社法
+  2026年4月3日現在施行版：417AC0000000086_20251001_505AC0000000053
+  https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053
+  確認日：2026-10-25
+[points-01] 国税庁：第76回 簿記論 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/01.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[asbj-finance] ASBJ：金融商品に関する会計基準 第10号
+  2019年7月4日版。2026年6月・10月改正は基準日後のため別扱い
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+  確認日：2026-10-25
+[asbj-inventory] ASBJ：棚卸資産の評価に関する会計基準 第9号
+  2025年10月16日修正反映版
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_16.pdf
+  確認日：2026-10-25
+[accounting-principles] 企業会計原則・企業会計原則注解
+  1982年4月20日最終改正。後の個別基準との関係も確認
+  https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+  確認日：2026-10-25
+[company-calculations] e-Gov：会社計算規則
+  2026年4月3日現在施行版
+  https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014
+  確認日：2026-10-25
+[foreign-currency] ASBJ：外貨建取引等会計処理基準
+  1999年10月22日最終改訂
+  https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=80
+  確認日：2026-10-25
+[lease-current] ASBJ：リース取引に関する会計基準 第13号
+  第34号の原則適用前の取扱い
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/Lease_55.pdf
+  確認日：2026-10-25
+[lease-new] ASBJ：リースに関する会計基準 第34号
+  2024年9月13日公表。原則2027年4月1日以後開始年度、早期適用2025年4月1日以後開始年度
+  https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_02.pdf
+  確認日：2026-10-25
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

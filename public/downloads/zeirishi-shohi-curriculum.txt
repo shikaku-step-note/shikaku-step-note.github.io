@@ -1,0 +1,175 @@
+税理士 消費税法 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：消費税法（税法）
+消費税法と関係法令。納税義務、取引区分、課税標準、税額控除、申告。
+前提：税抜・税込の換算と売上・仕入れの区別。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shohi/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-shohi-scope] 課税・非課税・免税・対象外を見分ける／40分
+      目標：国内取引の要件を確認する／非課税と輸出免税を分ける／仕入控除との関係を説明する
+      前提：税抜・税込の換算と売上・仕入れの区別。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-scope-check] 4問：zr-shohi-scope-q1、zr-shohi-scope-q2、zr-shohi-scope-q3、zr-shohi-scope-q4
+      用語：課税資産の譲渡等・輸出免税・非課税取引
+      次：zr-shohi-liability
+      追加学習・制約：国外取引、電子サービス、リバースチャージ、輸入取引は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-scope/
+      技能1 国内取引の要件を確認する：説明・例題→自力演習兼評価 zr-shohi-scope-q1、zr-shohi-scope-q4
+      技能2 非課税と輸出免税を分ける：説明・例題→自力演習兼評価 zr-shohi-scope-q2、zr-shohi-scope-q3
+      技能3 仕入控除との関係を説明する：説明・例題→自力演習兼評価 zr-shohi-scope-q2
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-shohi-liability] 基準期間・特定期間・登録の納税義務／40分
+      目標：基準期間を時系列で特定する／一千万円判定と例外を分ける／新設法人と登録を検討する
+      前提：前のレッスン「課税・非課税・免税・対象外を見分ける」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-liability-check] 4問：zr-shohi-liability-q1、zr-shohi-liability-q2、zr-shohi-liability-q3、zr-shohi-liability-q4
+      用語：基準期間・特定期間・適格請求書発行事業者
+      次：zr-shohi-output
+      追加学習・制約：短期事業年度、特定新規設立法人、高額資産と相続承継の例外は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-liability/
+      技能1 基準期間を時系列で特定する：説明・例題→自力演習兼評価 zr-shohi-liability-q1
+      技能2 一千万円判定と例外を分ける：説明・例題→自力演習兼評価 zr-shohi-liability-q2、zr-shohi-liability-q3
+      技能3 新設法人と登録を検討する：説明・例題→自力演習兼評価 zr-shohi-liability-q3、zr-shohi-liability-q4
+    3. [zr-shohi-output] 課税標準・税率・売上税額／45分
+      目標：標準と軽減税率を分ける／税込から対価と税額を分ける／国税と地方消費税を区別する
+      前提：前のレッスン「基準期間・特定期間・登録の納税義務」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-output-check] 4問：zr-shohi-output-q1、zr-shohi-output-q2、zr-shohi-output-q3、zr-shohi-output-q4
+      用語：軽減税率・課税標準・地方消費税
+      次：zr-shohi-input
+      追加学習・制約：返還等、貸倒れ、外貨、輸入課税標準、端数処理の申告別計算は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-output/
+      技能1 標準と軽減税率を分ける：説明・例題→自力演習兼評価 zr-shohi-output-q1
+      技能2 税込から対価と税額を分ける：説明・例題→自力演習兼評価 zr-shohi-output-q2、zr-shohi-output-q4
+      技能3 国税と地方消費税を区別する：説明・例題→自力演習兼評価 zr-shohi-output-q3、zr-shohi-output-q4
+    4. [zr-shohi-input] 仕入税額控除とインボイスの条件／40分
+      目標：帳簿と請求書の保存を説明する／課税売上割合を計算する／免税事業者からの仕入れを判定する
+      前提：前のレッスン「課税標準・税率・売上税額」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-input-check] 4問：zr-shohi-input-q1、zr-shohi-input-q2、zr-shohi-input-q3、zr-shohi-input-q4
+      用語：仕入税額控除・課税売上割合・個別対応方式
+      次：zr-shohi-methods
+      追加学習・制約：保存例外、居住用賃貸建物、調整対象固定資産、2026年以後の経過措置は追加確認。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-input/
+      技能1 帳簿と請求書の保存を説明する：説明・例題→自力演習兼評価 zr-shohi-input-q1、zr-shohi-input-q4
+      技能2 課税売上割合を計算する：説明・例題→自力演習兼評価 zr-shohi-input-q2
+      技能3 免税事業者からの仕入れを判定する：説明・例題→自力演習兼評価 zr-shohi-input-q4
+  学習段階：手続と総合復習へ（独自区分）
+    5. [zr-shohi-methods] 簡易課税・二割特例・申告の比較／40分
+      目標：本則とみなし控除を比較する／事業区分から控除を計算する／適用期間と選択手続を分ける
+      前提：前のレッスン「仕入税額控除とインボイスの条件」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-shohi-methods-check] 4問：zr-shohi-methods-q1、zr-shohi-methods-q2、zr-shohi-methods-q3、zr-shohi-methods-q4
+      用語：みなし仕入率・簡易課税・二割特例
+      次：zeirishi-unit-6-review
+      追加学習・制約：複数事業の特例、課税期間短縮、届出期限、三割特例等の将来適用は追加確認。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-methods/
+      技能1 本則とみなし控除を比較する：説明・例題→自力演習兼評価 zr-shohi-methods-q1
+      技能2 事業区分から控除を計算する：説明・例題→自力演習兼評価 zr-shohi-methods-q2、zr-shohi-methods-q3
+      技能3 適用期間と選択手続を分ける：説明・例題→自力演習兼評価 zr-shohi-methods-q4
+  [zeirishi-unit-6-glossary] 消費税法：累積用語確認／15小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-6-glossary/
+  [zeirishi-unit-6-review] 消費税法：総復習／20小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-6-review/
+  [zeirishi-shohi-mock] 消費税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shohi-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[consumption-law] e-Gov：消費税法
+  2026年4月3日現在施行版：363AC0000000108_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/363AC0000000108_20260401_508AC0000000012
+  確認日：2026-10-25
+[special-law] e-Gov：租税特別措置法
+  2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+  確認日：2026-10-25
+[points-06] 国税庁：第76回 消費税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/06.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[consumption-duty] 国税庁：納税義務の免除
+  基準期間・特定期間・登録等の例外
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6501.htm
+  確認日：2026-10-25
+[consumption-two] 国税庁：二割特例の概要
+  対象期間の日の属する課税期間と適用要件を区別
+  https://www.nta.go.jp/publication/pamph/shohi/kaisei/202304/01.htm
+  確認日：2026-10-25
+[consumption-2026] 国税庁：令和8年度税制改正・インボイス経過措置等
+  公表改正・施行日・取引適用日を分ける。将来適用を現行の例へ混ぜない
+  https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/invoice-review/index.htm
+  確認日：2026-10-26
+[consumption-output] 国税庁：消費税及び地方消費税の税率
+  本文は2025年の10％・8％を使用。将来の改正記載を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6303.htm
+  確認日：2026-10-26
+[consumption-input] 国税庁：仕入控除税額の計算方法
+  5億円・95％と個別対応・一括比例
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6401.htm
+  確認日：2026-10-26
+[consumption-ratio] 国税庁：課税売上割合の計算方法
+  国内対価・輸出免税・非課税の区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6405.htm
+  確認日：2026-10-26
+[consumption-simple] 国税庁：簡易課税制度
+  基本の六区分。後の施行・適用の追記と区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6505.htm
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

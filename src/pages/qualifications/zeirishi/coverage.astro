@@ -1,0 +1,177 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import {
+  zeirishiSubjects,
+  zeirishiOutline,
+  zeirishiSources,
+  zeirishiReviewed,
+  zeirishiLimitations,
+} from '../../../data/zeirishi';
+import bank from '../../../data/zeirishi-questions.json';
+import type { Question } from '../../../lib/assessment';
+import { href } from '../../../lib/site';
+const questions = bank as Record<string, Question[]>;
+---
+
+<Layout
+  title="税理士教材の範囲対応表・公式出典・追加学習"
+  description="税理士11科目の公式範囲と基礎レッスンの技能、説明・例題・理解度チェックの対応を確認できます。未収録・演習不足、法令基準日、公式資料も明示しています。"
+  breadcrumbs={[
+    { name: '資格一覧', path: 'qualifications/' },
+    { name: '税理士', path: 'qualifications/zeirishi/' },
+    { name: '対応表・出典', path: 'qualifications/zeirishi/coverage/' },
+  ]}
+>
+  <article class="container prose wide-prose page-section">
+    <h1>税理士教材の範囲・出典と、追加学習</h1>
+    <p>
+      確認日：{zeirishiReviewed}
+      。第76回（2026年度）の出題範囲と公表問題を参照しています。税理士試験には公式の級分けはありません。会計学2科目と税法9科目の教材を用意し、学習段階は独自に設定しています。
+    </p>
+    <div class="notice compact">
+      <p>{zeirishiLimitations}</p>
+      <p>
+        下の技能は教材内の到達目標です。公式の細目番号ではなく、見出しを対応させただけで全範囲を詳説したという意味でもありません。「追加学習」を含めた計画が必要です。
+      </p>
+    </div>
+    <h2>公式情報の基準と、独自教材の範囲</h2>
+    <ul>
+      <li>
+        第76回の法令基準：2026年4月3日現在施行。公布済みでも未施行の改正は区別します。施行済みの附則が将来の取引日を指定する酒税の経過措置等も確認しています。
+      </li>
+      <li>
+        各科目120分。2026年8月の公表問題の大問配点を独自基礎模試で参照します。将来の固定出題配分や、公式と同じ小問数・資料量・難易度を保証するものではありません。
+      </li>
+      <li>
+        公式の合格基準は各科目60％ですが、詳細な模範解答・採点基準を確認できていません。独自の自動照合・記述自己確認点を公式の点数や合否へ換算しません。
+      </li>
+      <li>
+        熊本対象の2026年11月再試験は資料確認日時点で未実施です。8月本試験の問題・出題ポイントと混同していません。所得税法・住民税の公式訂正資料も確認しています。
+      </li>
+      <li>
+        本文・例題・問題・解説・表は当サイトが作成したものです。公表試験問題の転載ではありません。学習時間は読む、例題、理解度チェックと解説、復習を含む独自の目安です。
+      </li>
+    </ul>
+    <h2>説明・例題・自力演習・確認の対応</h2>
+    <p>
+      本文には各技能の説明と基本例・条件比較があります。下の自力演習と確認は同じ理解度チェックを指し、別セットとして二重に数えていません。科目総復習もレッスンの問題を再利用します。用語テストは定義の確認であり、応用技能の代わりではありません。模試は別の独自問題です。
+    </p>
+    {zeirishiSubjects.map((s) => (
+      <section id={s.id}>
+        <h3>
+          <a href={href(`qualifications/zeirishi/subjects/${s.id}/`)}>{s.name}</a>
+        </h3>
+        <p>公式範囲の概観：{s.scope}</p>
+        {zeirishiOutline
+          .filter((r) => r.subject === s.id)
+          .map((r) => (
+            <section>
+              <h4>
+                <a href={href(`qualifications/zeirishi/${r.id}/`)}>
+                  {r.position}. {r.title}
+                </a>
+              </h4>
+              <div class="table-scroll" role="region" tabindex="0" aria-label={`${r.title}の技能対応表`}>
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">基礎技能</th>
+                      <th scope="col">説明・例題</th>
+                      <th scope="col">自力演習・確認</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {r.objectives.map((objective, index) => {
+                      const covered = (questions[r.id] ?? []).filter((q) =>
+                        q.objectives?.includes(index + 1),
+                      );
+                      return (
+                        <tr>
+                          <th scope="row">{objective}</th>
+                          <td>
+                            <a href={href(`qualifications/zeirishi/${r.id}/`)}>
+                              本文の仕組み・基本例・条件比較
+                            </a>
+                          </td>
+                          <td>
+                            {covered.length
+                              ? covered.map((q) => (
+                                  <a
+                                    class="question-ref"
+                                    href={href(`qualifications/zeirishi/${r.id}/#practice`)}
+                                  >
+                                    {q.id}（{q.input === 'essay' ? '記述・自己確認' : '自動照合'}）
+                                  </a>
+                                ))
+                              : '問題との対応を準備中'}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                <strong>追加学習・演習の制約：</strong>
+                {r.additionalStudy}
+              </p>
+              <p class="muted">
+                レッスンID：{r.id}。資料：
+                {r.sources.map((id) => {
+                  const source = zeirishiSources.find((v) => v.id === id)!;
+                  return (
+                    <a class="question-ref" href={source.url}>
+                      {source.title}
+                    </a>
+                  );
+                })}
+              </p>
+            </section>
+          ))}
+        <p>
+          <a href={href(`downloads/zeirishi-${s.id}-curriculum.txt`)} download>
+            {s.name}の学習ツリー・学習案・追加学習（TXT）
+          </a>
+        </p>
+      </section>
+    ))}
+    <h2>出典台帳：版・適用日・確認日</h2>
+    <p>
+      現在の解説ページには基準日後の改正が追記されることがあります。法令の基準日版と各注記を併読してください。数値例は独立に計算し、後の制度を例題の対象年へ混ぜないようにしています。実務上の判断は最新の公式資料で確認してください。
+    </p>
+    <ol>
+      {zeirishiSources.map((s) => (
+        <li id={`source-${s.id}`}>
+          <a href={s.url}>{s.title}</a>
+          <br />
+          {s.version}／確認日：{s.verified}
+        </li>
+      ))}
+    </ol>
+    <h2>編集・訂正について</h2>
+    <p>
+      AI支援を用いて作成し、公式資料の照合、計算の再確認、日本語の文脈確認と校正を行っています。税理士又は日本語の専門家による監修済みとは表示していません。誤りや改正の見落としが残る可能性があるため、
+      <a href={href('contact/')}>訂正の連絡方法</a>も用意しています。
+    </p>
+    <p>
+      <a href={href('downloads/zeirishi-curriculum.txt')} download>
+        全科目のTXTを保存
+      </a>{' '}
+      ・ <a href={href('qualifications/zeirishi/')}>税理士の科目選択へ</a> ・{' '}
+      <a href={href('editorial/')}>サイトの編集方針</a>
+    </p>
+  </article>
+</Layout>
+<style>
+  .question-ref {
+    display: inline-block;
+    margin-right: 0.6rem;
+  }
+  h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+  }
+  table {
+    min-width: 38rem;
+  }
+</style>

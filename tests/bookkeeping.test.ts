@@ -142,7 +142,7 @@ test('v3 IP history migrates alongside v4 written bookkeeping answers without co
     attempts: 1,
   };
   const migrated = validateData({ ...old, version: 3 });
-  assert.equal(migrated.version, 4);
+  assert.equal(migrated.version, 5);
   assert.equal(migrated.records['b3-cash'], undefined);
   assert.equal(migrated.records['boki-purpose']!.status, 'completed');
   assert.deepEqual(migrated.assessments[ip.id], [oldAttempt]);
@@ -156,7 +156,7 @@ test('v3 IP history migrates alongside v4 written bookkeeping answers without co
   assert.equal(roundtrip.assessments[mock.id]![0]!.answers[mock.questions[0]!.id], '４００');
   assert.equal(remainingSeconds(roundtrip.assessments[mock.id]![0]!, Date.parse('2026-10-25T02:00:00Z')), 0);
   assert.ok(roundtrip.records['boki-purpose']);
-  for (const bad of ['x'.repeat(81), {}, true]) {
+  for (const bad of ['x'.repeat(4001), {}, true]) {
     const invalid = structuredClone(incoming);
     invalid.assessments[mock.id]![0]!.answers[mock.questions[0]!.id] = bad as string;
     assert.throws(() => validateData(invalid));

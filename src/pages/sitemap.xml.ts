@@ -1,11 +1,13 @@
 import { getCollection } from 'astro:content';
 import { qualifications } from '../data/qualifications';
+import { zeirishiSubjects } from '../data/zeirishi';
 import { publicPages, href } from '../lib/site';
 import type { APIContext } from 'astro';
 export async function GET({ site }: APIContext) {
   const lessons = await getCollection('lessons', (l) => !l.data.sample);
   const paths = [
     ...publicPages,
+    ...zeirishiSubjects.map((s) => `qualifications/zeirishi/subjects/${s.id}/`),
     ...qualifications.map((q) => `qualifications/${q.id}/`),
     ...lessons.map((l) => `qualifications/${l.data.qualification}/${l.data.stableId}/`),
     ...qualifications

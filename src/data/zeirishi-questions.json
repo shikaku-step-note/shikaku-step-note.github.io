@@ -1,0 +1,3503 @@
+{
+  "zr-boki-flow": [
+    {
+      "prompt": "取引を仕訳した後、勘定口座へ転記する目的として適切なものはどれですか。",
+      "options": [
+        "すべての支払を当期費用にする",
+        "貸借の合計が合えば誤りがないと確定する",
+        "取引を勘定別に集計し、残高と試算表へつなぐ",
+        "現金を必ず同額だけ増やす"
+      ],
+      "answer": 2,
+      "explanation": "転記は勘定別の集計です。現金が動かない取引もあり、前払等は期間へ配分します。貸借一致でも科目誤りや両側の記帳漏れは残り得ます。",
+      "objectives": [1],
+      "id": "zr-boki-flow-q1",
+      "lesson": "zr-boki-flow",
+      "field": "boki"
+    },
+    {
+      "prompt": "12月決算。10月1日に一年分家賃240,000円を全額費用計上しました。均等な月額で当期3か月分とする場合、期末の前払家賃はいくらですか。円で入力してください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["180000"],
+      "explanation": "月額20,000円、翌期9か月分は180,000円です。当期費用60,000円と合計240,000円へ照合します。未使用9か月分を資産へ振り替えます。",
+      "objectives": [2],
+      "id": "zr-boki-flow-q2",
+      "lesson": "zr-boki-flow",
+      "field": "boki"
+    },
+    {
+      "prompt": "上の家賃を全額費用に含む整理前利益200,000円に、前払への振替180,000円と当期未払給料30,000円だけを反映します。整理後利益を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["350000"],
+      "explanation": "200,000＋180,000－30,000＝350,000円です。前払の振替は費用を減らすため利益を増やし、未払給料は当期費用を増やして利益を減らします。",
+      "objectives": [2, 3],
+      "id": "zr-boki-flow-q3",
+      "lesson": "zr-boki-flow",
+      "field": "boki"
+    },
+    {
+      "prompt": "一年分家賃240,000円を7月1日に支払った別例です。12月末まで6か月を費用とする場合、当期の家賃費用を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["120000"],
+      "explanation": "240,000÷12×6＝120,000円です。入金・出金の年だけで全額を処理せず、利用した期間へ対応させます。",
+      "objectives": [2],
+      "id": "zr-boki-flow-q4",
+      "lesson": "zr-boki-flow",
+      "field": "boki"
+    }
+  ],
+  "zr-boki-cash": [
+    {
+      "prompt": "帳簿現金50,000円に対して現物48,000円でした。差額は未処理の事業用交通費と判明しています。適切な処理はどれですか。",
+      "options": [
+        "現金を2,000円増やす",
+        "原因が分かっても必ず雑損失にする",
+        "売上を2,000円増やす",
+        "交通費2,000円を計上し、現金を2,000円減らす"
+      ],
+      "answer": 3,
+      "explanation": "不足原因の交通費を費用にし、現金を現物へ合わせます。増額すると差が広がり、原因判明後の科目は交通費です。売上を増やす根拠はありません。",
+      "objectives": [1],
+      "id": "zr-boki-cash-q1",
+      "lesson": "zr-boki-cash",
+      "field": "boki"
+    },
+    {
+      "prompt": "銀行残高800,000円には未取付小切手100,000円が含まれ、会社残高710,000円には手数料10,000円が未記録です。他の差異なし。調整後の預金残高を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["700000"],
+      "explanation": "銀行側800,000－100,000＝700,000円、会社側710,000－10,000＝700,000円で一致します。未取付小切手を会社側で再度減らしません。",
+      "objectives": [2],
+      "id": "zr-boki-cash-q2",
+      "lesson": "zr-boki-cash",
+      "field": "boki"
+    },
+    {
+      "prompt": "対象債権800,000円の必要引当率3％、調整前の貸倒引当金9,000円、差額補充法とします。当期繰入額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["15000"],
+      "explanation": "必要残高24,000円－既存9,000円＝繰入15,000円です。24,000円は期末残高であり追加費用ではありません。",
+      "objectives": [3],
+      "id": "zr-boki-cash-q3",
+      "lesson": "zr-boki-cash",
+      "field": "boki"
+    },
+    {
+      "prompt": "同じ必要残高24,000円に対し既存引当金が29,000円の別例です。差額補充法で戻し入れる額を正の円額で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["5000"],
+      "explanation": "29,000－24,000＝5,000円を戻します。引当金の必要残高と調整前残高の差を確認し、繰入と戻入の向きを選びます。",
+      "objectives": [3],
+      "id": "zr-boki-cash-q4",
+      "lesson": "zr-boki-cash",
+      "field": "boki"
+    }
+  ],
+  "zr-boki-inventory": [
+    {
+      "prompt": "期末に売れていない通常の商品原価は、基本的にどう扱いますか。",
+      "options": [
+        "棚卸資産として残し、販売分の原価と分ける",
+        "購入年の売上原価へ必ず全額入れる",
+        "販売予定価格を必ず当期売上にする",
+        "仕入代金を未払なら在庫を記録しない"
+      ],
+      "answer": 0,
+      "explanation": "未販売分の原価を資産に残します。購入と販売は別時点です。将来の販売予定だけで売上は認識せず、支払前でも取得した商品の記録は必要です。",
+      "objectives": [1],
+      "id": "zr-boki-inventory-q1",
+      "lesson": "zr-boki-inventory",
+      "field": "boki"
+    },
+    {
+      "prompt": "期首商品200万円、仕入500万円、期末商品100万円。他の調整なし。売上原価を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["600"],
+      "explanation": "200＋500－100＝600万円です。期首と当期仕入が販売可能な原価で、残った期末分を除きます。",
+      "objectives": [1],
+      "id": "zr-boki-inventory-q2",
+      "lesson": "zr-boki-inventory",
+      "field": "boki"
+    },
+    {
+      "prompt": "商品8個を一個150円で保有し、12個を一個200円で仕入れました。移動平均法で、その直後に5個払い出した原価を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["900"],
+      "explanation": "原価合計1,200＋2,400＝3,600円、数量20個、平均180円です。払出5個×180＝900円となります。単価の単純平均175円では数量差を反映できません。",
+      "objectives": [2],
+      "id": "zr-boki-inventory-q3",
+      "lesson": "zr-boki-inventory",
+      "field": "boki"
+    },
+    {
+      "prompt": "帳簿50個、実際48個、原価一個1,000円、正味売却価額一個900円。他の調整なし。実際数量に対応する棚卸評価損を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["4800"],
+      "explanation": "48×（1,000－900）＝4,800円です。数量不足2個の減耗2,000円とは分け、存在しない2個へ評価損を重ねません。",
+      "objectives": [3],
+      "id": "zr-boki-inventory-q4",
+      "lesson": "zr-boki-inventory",
+      "field": "boki"
+    }
+  ],
+  "zr-boki-fixed": [
+    {
+      "prompt": "長期間使う機械の取得に直接必要な据付費は、通常どのように検討しますか。",
+      "options": [
+        "売却時だけ初めて帳簿へ入れる",
+        "機械の取得原価へ含める",
+        "すべての機械で必ず当期の雑損失にする",
+        "現金払いなら取得原価に入れない"
+      ],
+      "answer": 1,
+      "explanation": "必要な付随費用を含めて取得原価を検討します。支払方法は資産・費用区分の決定理由ではなく、売却まで記録を遅らせるものでもありません。",
+      "objectives": [1],
+      "id": "zr-boki-fixed-q1",
+      "lesson": "zr-boki-fixed",
+      "field": "boki"
+    },
+    {
+      "prompt": "取得原価160万円、残存価額10万円、耐用年数5年の指定条件で定額法。年間償却額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["30"],
+      "explanation": "（160－10）÷5＝30万円です。残存価額は費用配分する対象から除きます。取得原価全額を5で割った32万円ではありません。",
+      "objectives": [2],
+      "id": "zr-boki-fixed-q2",
+      "lesson": "zr-boki-fixed",
+      "field": "boki"
+    },
+    {
+      "prompt": "上の機械は当期に6か月使用し、月割りする条件です。当期償却費を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["15"],
+      "explanation": "年30万円×6/12＝15万円です。月割りの期間は事業供用日と決算日から確認します。",
+      "objectives": [2],
+      "id": "zr-boki-fixed-q3",
+      "lesson": "zr-boki-fixed",
+      "field": "boki"
+    },
+    {
+      "prompt": "別の資産の取得原価200万円、期首減価償却累計額120万円、売却までの当期償却6万円。売却代金80万円、他の費用なし。売却益を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["6"],
+      "explanation": "売却時簿価は200－120－6＝74万円、売却益は80－74＝6万円です。当期の売却までの償却を先に反映します。",
+      "objectives": [3],
+      "id": "zr-boki-fixed-q4",
+      "lesson": "zr-boki-fixed",
+      "field": "boki"
+    }
+  ],
+  "zr-boki-finance": [
+    {
+      "prompt": "日々の時価変動による利益を得る目的で保有する株式について、区分と期末の基本処理の組合せはどれですか。",
+      "options": [
+        "売買目的有価証券・時価差額を当期損益へ反映",
+        "保有目的にかかわらず全株式を取得原価のままにする",
+        "保有目的にかかわらず全株式の差額を純資産へ直入する",
+        "株式の時価上昇を株主からの出資とする"
+      ],
+      "answer": 0,
+      "explanation": "時価変動による利益を目的に保有するという条件から、売買目的を識別します。その差額は当期損益へ反映します。全株式へ同じ評価を使う二つの選択肢は保有目的の違いを無視し、時価上昇は出資取引ではありません。",
+      "objectives": [1],
+      "id": "zr-boki-finance-q1",
+      "lesson": "zr-boki-finance",
+      "field": "boki"
+    },
+    {
+      "prompt": "社債の額面100万円、発行価額97万円、期間3年。償却原価の差額を定額で配分する指定です。一年後の社債帳簿価額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["980000"],
+      "explanation": "差額30,000円÷3＝10,000円を当期配分し、970,000＋10,000＝980,000円です。額面へ段階的に近づく関係を確認します。",
+      "objectives": [2],
+      "id": "zr-boki-finance-q2",
+      "lesson": "zr-boki-finance",
+      "field": "boki"
+    },
+    {
+      "prompt": "外貨建売掛金2,000米ドルを1ドル150円で記録し、期末148円で換算する条件です。期末の為替差損を正の円額で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["4000"],
+      "explanation": "記録300,000円、期末296,000円なので差損4,000円です。外貨数量は同じでも、円換算の資産額が減ります。",
+      "objectives": [3],
+      "id": "zr-boki-finance-q3",
+      "lesson": "zr-boki-finance",
+      "field": "boki"
+    },
+    {
+      "prompt": "同じ2,000米ドルを期末148円で換算した翌期に、151円で決済しました。決済時の為替差益を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["6000"],
+      "explanation": "受取302,000円－繰越296,000円＝6,000円です。決済時は期末換算後の簿価と比べ、当初150円との総差額だけを翌期へ入れません。",
+      "objectives": [3],
+      "id": "zr-boki-finance-q4",
+      "lesson": "zr-boki-finance",
+      "field": "boki"
+    }
+  ],
+  "zr-boki-branches": [
+    {
+      "prompt": "本店と支店の内部売上・仕入れを合算して外部向けの成果を示すとき、必要な基本処理はどれですか。",
+      "options": [
+        "内部売上も外部売上として二重に残す",
+        "本店だけの現金を集計して終える",
+        "内部債権だけ残し対応債務を消す",
+        "内部の売上・仕入れを消去し、未実現の内部利益も検討する"
+      ],
+      "answer": 3,
+      "explanation": "同一企業内部の重複を取り除きます。外部との成果を二重計上せず、支店の財産等も含め、内部勘定は対応させて消去します。",
+      "objectives": [1],
+      "id": "zr-boki-branches-q1",
+      "lesson": "zr-boki-branches",
+      "field": "boki"
+    },
+    {
+      "prompt": "本店の支店勘定借方残高30万円、支店の本店勘定貸方残高25万円。本店からの送金5万円だけが支店未記帳です。補正後の支店側本店勘定の貸方残高を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["30"],
+      "explanation": "支店で現金等5万円／本店5万円を補正し、25＋5＝30万円です。未達の原因を反映してから内部勘定を照合します。",
+      "objectives": [2],
+      "id": "zr-boki-branches-q2",
+      "lesson": "zr-boki-branches",
+      "field": "boki"
+    },
+    {
+      "prompt": "本店原価10万円の商品を支店へ12万円で振り替え、支店期末在庫に振替価額3.6万円が残ります。他の条件なし。含まれる内部利益を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["6000"],
+      "explanation": "利益率は振替価額基準で2/12です。36,000×2/12＝6,000円。原価への上乗せ率20％を36,000円へ直接掛けると過大です。",
+      "objectives": [1],
+      "id": "zr-boki-branches-q3",
+      "lesson": "zr-boki-branches",
+      "field": "boki"
+    },
+    {
+      "prompt": "直接材料5万円、直接労務3万円、製造間接費2万円、期首仕掛品1.5万円、期末仕掛品2.5万円。他の調整なし。完成品製造原価を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["90000"],
+      "explanation": "50,000＋30,000＋20,000＋15,000－25,000＝90,000円です。製造途中で残る期末仕掛品を除き、完成品へ振り替える原価を求めます。原価計算の全範囲を問う例ではありません。",
+      "objectives": [3],
+      "id": "zr-boki-branches-q4",
+      "lesson": "zr-boki-branches",
+      "field": "boki"
+    }
+  ],
+  "zr-zaimu-concepts": [
+    {
+      "prompt": "外部の投資者が会社を判断するための情報として、財務会計の説明に合うものはどれですか。",
+      "options": [
+        "財政状態や経営成績等を一定の方法で示す",
+        "経営者に都合のよい現金収入だけを示す",
+        "将来の株価上昇を保証する",
+        "会社間の事情の違いをすべて消して同額にする"
+      ],
+      "answer": 0,
+      "explanation": "判断に役立つ状態・成果等を示します。現金だけでは期間成果を捉えられず、株価を保証する情報でもありません。比較可能性は事情の違いも識別できることに関わります。",
+      "objectives": [1, 3],
+      "id": "zr-zaimu-concepts-q1",
+      "lesson": "zr-zaimu-concepts",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "売上8万円、売上原価3万円、給料1万円、減価償却費0.5万円、税金等なし。売上の回収は6万円でした。利益を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["35000"],
+      "explanation": "80,000－30,000－10,000－5,000＝35,000円です。回収6万円ではなく認識した売上8万円を使い、非現金費用の償却も反映します。",
+      "objectives": [2],
+      "id": "zr-zaimu-concepts-q2",
+      "lesson": "zr-zaimu-concepts",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "上の例で売掛金2万円を翌月回収しました。他の取引なし。その回収だけによる翌月利益の増加額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["0"],
+      "explanation": "売掛金から現金への振替で、売上は前月に認識済みです。回収時に再度収益へ入れると同じ成果を二重計上します。",
+      "objectives": [2],
+      "id": "zr-zaimu-concepts-q3",
+      "lesson": "zr-zaimu-concepts",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "比較可能性と内的整合性の違いを、会計方針の継続、正当な変更と開示、体系内の関係に触れて説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "比較可能性は同じ会社の期間や会社間で共通点・相違点を識別できることに関わります。継続した方針は比較を助けますが、正当な変更と開示もあります。内的整合性は、資産・負債・利益等の意味と個別の基準等が体系内で矛盾しない関係に関わります。",
+      "rubric": [
+        {
+          "criterion": "比較の対象と相違の識別を述べる",
+          "points": 1
+        },
+        {
+          "criterion": "継続と正当な変更を区別する",
+          "points": 1
+        },
+        {
+          "criterion": "体系内の矛盾のない関係を説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例と各条件を照合し、基準ごとに自己確認してください。表現の一致だけではなく理由が説明できているかを確認します。",
+      "objectives": [3],
+      "id": "zr-zaimu-concepts-q4",
+      "lesson": "zr-zaimu-concepts",
+      "field": "zaimu"
+    }
+  ],
+  "zr-zaimu-revenue": [
+    {
+      "prompt": "契約に機器とサービスの二つの名前があるとき、履行義務の数はどう判断しますか。",
+      "options": [
+        "請求書一枚なら必ず一つにする",
+        "別個の財・サービスとして識別する条件を検討する",
+        "名称が二つなら必ず二つにする",
+        "入金回数と必ず同じ数にする"
+      ],
+      "answer": 1,
+      "explanation": "顧客が便益を得られるか、契約内で区分して識別できるか等を確認します。名称、入金回数、請求書枚数だけでは履行義務を決められません。",
+      "objectives": [1],
+      "id": "zr-zaimu-revenue-q1",
+      "lesson": "zr-zaimu-revenue",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "別個の機器と保守の独立販売価格は8万円と2万円、契約価格9万円。比率配分する条件です。機器への配分額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["72000"],
+      "explanation": "90,000×80,000/100,000＝72,000円です。残18,000円が保守へ対応し、合計90,000円へ戻ります。",
+      "objectives": [2],
+      "id": "zr-zaimu-revenue-q2",
+      "lesson": "zr-zaimu-revenue",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "上の保守18,000円を6か月均等に提供し、2か月分を充足しました。期間にわたる認識の条件を満たす場合、保守の累計収益を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["6000"],
+      "explanation": "18,000÷6×2＝6,000円です。契約全額を入金したかどうかではなく、サービスの充足に対応します。",
+      "objectives": [3],
+      "id": "zr-zaimu-revenue-q3",
+      "lesson": "zr-zaimu-revenue",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "同じ契約で機器の支配を移転済み、保守は上の2か月まで提供、契約価格9万円を全額前受けしたとします。累計収益と契約負債を、理由とともに説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "機器収益72,000円と保守収益6,000円で累計78,000円です。未提供の4か月分12,000円は契約負債です。機器は支配移転時、保守は充足に応じて認識するため、一括入金日だけで90,000円すべてを収益としません。",
+      "rubric": [
+        {
+          "criterion": "機器72,000円を移転と対応させる",
+          "points": 1
+        },
+        {
+          "criterion": "保守6,000円を期間と対応させる",
+          "points": 1
+        },
+        {
+          "criterion": "契約負債12,000円と未提供義務を説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例と各条件を照合し、基準ごとに自己確認してください。表現の一致だけではなく理由が説明できているかを確認します。",
+      "objectives": [1, 2, 3],
+      "id": "zr-zaimu-revenue-q4",
+      "lesson": "zr-zaimu-revenue",
+      "field": "zaimu"
+    }
+  ],
+  "zr-zaimu-assets": [
+    {
+      "prompt": "通常の販売目的の棚卸資産、売買目的有価証券、事業用固定資産の期末評価の基本を適切に説明したものはどれですか。",
+      "options": [
+        "どの資産も購入時の額を必ず固定する",
+        "棚卸は収益性低下、売買目的は時価損益、事業用固定資産は減損の手順等を検討する",
+        "どの資産も時価と取得額の差を直ちに損益にする",
+        "経営者の希望額で資産価額を増やす"
+      ],
+      "answer": 1,
+      "explanation": "資産の種類と保有目的に応じて評価の仕組みが異なります。棚卸は収益性低下、売買目的は時価評価差額の損益、事業用固定資産は減損の認識・測定等を検討します。全てを取得額へ固定、全てを時価損益、希望額で増額という方法はいずれも個別基準を無視しています。",
+      "objectives": [1],
+      "id": "zr-zaimu-assets-q1",
+      "lesson": "zr-zaimu-assets",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "兆候あり、帳簿価額800万円、割引前将来CF700万円、正味売却価額500万円、使用価値550万円。他の特則なし。減損損失を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["250"],
+      "explanation": "割引前700＜帳簿800で認識。回収可能価額は500と550の高い550万円、損失は800－550＝250万円です。700との差100万円ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-zaimu-assets-q2",
+      "lesson": "zr-zaimu-assets",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "上の例で割引前CFだけが900万円へ増えた別条件です。基本的認識判定で計上する減損損失を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["0"],
+      "explanation": "900万円は帳簿800万円を下回らないため、この基本形で減損を認識しません。測定用の550万円だけを先に比較しないことを確認します。",
+      "objectives": [2],
+      "id": "zr-zaimu-assets-q3",
+      "lesson": "zr-zaimu-assets",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "減損の認識判定に使う割引前CFと、測定に使う回収可能価額の役割を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "認識では帳簿価額を割引前将来CFが下回るかを確認します。損失を認識するときは、正味売却価額と使用価値の高い回収可能価額まで簿価を切り下げます。使用価値は継続使用・処分からのCFの現在価値であり、認識判定の割引前額と異なります。",
+      "rubric": [
+        {
+          "criterion": "認識の比較対象を示す",
+          "points": 1
+        },
+        {
+          "criterion": "回収可能価額は二つの高い方と示す",
+          "points": 1
+        },
+        {
+          "criterion": "認識と測定の目的・金額を分ける",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例と各条件を照合し、基準ごとに自己確認してください。表現の一致だけではなく理由が説明できているかを確認します。",
+      "objectives": [2, 3],
+      "id": "zr-zaimu-assets-q4",
+      "lesson": "zr-zaimu-assets",
+      "field": "zaimu"
+    }
+  ],
+  "zr-zaimu-liabilities": [
+    {
+      "prompt": "当期販売に対応する製品保証費用の引当を検討する条件として適切なものはどれですか。",
+      "options": [
+        "将来の支出計画があれば全て引当てる",
+        "現金を支払った日だけ費用にする",
+        "経営者が利益を減らしたい額を自由に決める",
+        "過去の事象に起因し、発生可能性が高く合理的に見積もれる"
+      ],
+      "answer": 3,
+      "explanation": "将来の特定費用・損失について当期以前の原因、可能性、合理的見積り等を確認します。計画や利益調整の希望だけでは足りず、支払前でも当期負担を検討します。",
+      "objectives": [1],
+      "id": "zr-zaimu-liabilities-q1",
+      "lesson": "zr-zaimu-liabilities",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "退職給付債務1,200万円、年金資産850万円、未認識項目等なし。差額を負債とする指定条件で負債額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["350"],
+      "explanation": "1,200－850＝350万円です。債務と年金資産を区別します。個別・連結における未認識項目等の差がある場合へ、この単純式を無条件に使いません。",
+      "objectives": [2],
+      "id": "zr-zaimu-liabilities-q2",
+      "lesson": "zr-zaimu-liabilities",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "税引前当期純利益200万円、将来減算となる税務加算30万円、税率30％、回収可能性あり、他調整なし。繰延税金資産を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["9"],
+      "explanation": "一時差異30×30％＝9万円です。当期税額は230×30％＝69万円、税効果後負担は60万円という対応も確認できます。",
+      "objectives": [3],
+      "id": "zr-zaimu-liabilities-q3",
+      "lesson": "zr-zaimu-liabilities",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "会計費用と税務損金が違うとき、永久差異と将来減算一時差異について税効果の扱いを説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "将来も損金とならない永久差異は後に解消しないため、その差だけで繰延税金資産を認識しません。将来減算一時差異は後の損金算入等につながりますが、繰延税金資産は回収可能性等の条件を確認して認識します。",
+      "rubric": [
+        {
+          "criterion": "永久差異は後に解消しないと示す",
+          "points": 1
+        },
+        {
+          "criterion": "将来減算の解消を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "回収可能性を条件として示す",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例と各条件を照合し、基準ごとに自己確認してください。表現の一致だけではなく理由が説明できているかを確認します。",
+      "objectives": [3],
+      "id": "zr-zaimu-liabilities-q4",
+      "lesson": "zr-zaimu-liabilities",
+      "field": "zaimu"
+    }
+  ],
+  "zr-zaimu-equity": [
+    {
+      "prompt": "自己株式の貸借対照表表示として適切なものはどれですか。",
+      "options": [
+        "株主資本の末尾で一括して控除する",
+        "売買目的有価証券として資産へ加える",
+        "通常の売上原価へ入れる",
+        "自社株を持てば必ず現金と同額の利益にする"
+      ],
+      "answer": 0,
+      "explanation": "自己株式は株主資本の控除です。他社株式の投資、営業費用、利益計上とは異なる取引として扱います。",
+      "objectives": [1, 2],
+      "id": "zr-zaimu-equity-q1",
+      "lesson": "zr-zaimu-equity",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "期首純資産800万円、純利益150万円、配当40万円、増資200万円、その他変動なし。期末純資産を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["1110"],
+      "explanation": "800＋150－40＋200＝1,110万円です。増資は純資産を増やしますが純利益へ加えず、配当は資本取引として区別します。",
+      "objectives": [1],
+      "id": "zr-zaimu-equity-q2",
+      "lesson": "zr-zaimu-equity",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "取得時子会社純資産2,000万円、親会社持分80％、株式取得原価1,800万円、評価差額・税効果等なし。この基本形ののれんを万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["200"],
+      "explanation": "親会社持分は2,000×80％＝1,600万円。取得原価1,800との差200万円がのれんです。非支配株主持分400万円を親会社持分へ含めません。",
+      "objectives": [3],
+      "id": "zr-zaimu-equity-q3",
+      "lesson": "zr-zaimu-equity",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "自己株式を100万円で取得し110万円で処分した基本例について、処分差益の区分と、他社株式の売却益との違いを説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "処分差益10万円はその他資本剰余金へ計上します。自社の持分に関する株主との資本取引として、他社株式投資の売却損益とは区別します。自己株式の簿価100万円を消し、受取現金110万円との差を資本へ示します。",
+      "rubric": [
+        {
+          "criterion": "差益10万円を示す",
+          "points": 1
+        },
+        {
+          "criterion": "その他資本剰余金と示す",
+          "points": 1
+        },
+        {
+          "criterion": "株主との資本取引という理由を説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例と各条件を照合し、基準ごとに自己確認してください。表現の一致だけではなく理由が説明できているかを確認します。",
+      "objectives": [1],
+      "id": "zr-zaimu-equity-q4",
+      "lesson": "zr-zaimu-equity",
+      "field": "zaimu"
+    }
+  ],
+  "zr-zaimu-statements": [
+    {
+      "prompt": "設備を取得し代金を現金で支払った通常の取引のCF区分はどれですか。",
+      "options": ["支出なら全て資金範囲内の移動", "投資活動", "必ず営業活動", "必ず財務活動"],
+      "answer": 1,
+      "explanation": "事業用設備の取得支出は通常投資活動です。商品の通常取引は営業、借入れ等は財務という違いがあり、現金同等物間の振替とも異なります。",
+      "objectives": [1],
+      "id": "zr-zaimu-statements-q1",
+      "lesson": "zr-zaimu-statements",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "税引前利益80万円、償却10万円、売掛金増加15万円、棚卸減少5万円、買掛増加8万円。他のCF調整なし。間接法の営業CFを万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["88"],
+      "explanation": "80＋10－15＋5＋8＝88万円です。非現金費用を戻し、未回収の増加を減らし、棚卸・買掛の動きを調整します。",
+      "objectives": [2],
+      "id": "zr-zaimu-statements-q2",
+      "lesson": "zr-zaimu-statements",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "通常の商品売上回収80万円、設備取得支出100万円、借入収入40万円、借入元本返済10万円、増資収入20万円。他の取引なし。財務活動の純キャッシュ・フローを万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["50"],
+      "explanation": "財務活動は借入40－元本返済10＋増資20＝50万円です。商品回収は営業、設備取得は投資なので、この財務の計算へ混ぜません。",
+      "objectives": [1],
+      "id": "zr-zaimu-statements-q3",
+      "lesson": "zr-zaimu-statements",
+      "field": "zaimu"
+    },
+    {
+      "prompt": "財務諸表の数字を読むとき、注記で会計方針や重要な見積りを確認する理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "同じ金額でも、測定方法や見積りの前提が違えば比較や将来の判断が変わります。注記により適用した方針、前提、不確実性等を確認し、本表だけでは分からない条件を補います。数字が一致するだけで方針や見積りの内容が同じとは限りません。",
+      "rubric": [
+        {
+          "criterion": "方針・見積りの情報を挙げる",
+          "points": 1
+        },
+        {
+          "criterion": "比較又は判断への影響を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "本表を補う役割を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例と各条件を照合し、基準ごとに自己確認してください。表現の一致だけではなく理由が説明できているかを確認します。",
+      "objectives": [3],
+      "id": "zr-zaimu-statements-q4",
+      "lesson": "zr-zaimu-statements",
+      "field": "zaimu"
+    }
+  ],
+  "zr-shotoku-scope": [
+    {
+      "prompt": "国内に生活の本拠があり、住所を有する外国籍の個人について、所得税法の基本区分はどう確認しますか。",
+      "options": [
+        "国内の銀行口座があるだけで必ず居住者にする",
+        "収入が少ない人は必ず非居住者にする",
+        "国籍だけでなく住所等の条件から居住者を判定する",
+        "外国籍なら必ず非居住者にする"
+      ],
+      "answer": 2,
+      "explanation": "居住者は国内の住所又は引き続き一年以上の居所等から判定します。国籍、口座の有無、収入の大小だけではこの区分を決められません。非永住者等の特則は別に確認します。",
+      "objectives": [1],
+      "id": "zr-shotoku-scope-q1",
+      "lesson": "zr-shotoku-scope",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "所有する建物を貸して受け取る家賃について、通常最初に検討する所得区分はどれですか。",
+      "options": [
+        "給与所得",
+        "建物を貸すだけで必ず譲渡所得",
+        "家賃を一年分まとめて受ければ必ず一時所得",
+        "不動産所得"
+      ],
+      "answer": 3,
+      "explanation": "貸付けの対価は通常不動産所得を検討します。雇用の給与ではなく、所有権を売る譲渡とも異なります。受取回数だけで一時所得へ変わりません。",
+      "objectives": [2],
+      "id": "zr-shotoku-scope-q2",
+      "lesson": "zr-shotoku-scope",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年の小売業売上300万円、認められる必要経費180万円、借入金入金50万円。青色特別控除その他調整なし。事業所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["120"],
+      "explanation": "300－180＝120万円です。借入50万円は返済義務を伴う資金調達で、商品の売上へ加えません。",
+      "objectives": [2],
+      "id": "zr-shotoku-scope-q3",
+      "lesson": "zr-shotoku-scope",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "非課税所得と所得控除は、計算のどの段階で区別するかを説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "非課税所得は法令の対象や限度等を確認して所得税を課さない所得として区分します。所得控除は、各所得の計算等の後、基礎控除や社会保険料控除等を総所得金額等から差し引いて課税所得を求める段階の制度です。非課税収入を売上へ入れて控除で相殺する仕組みとは区別します。",
+      "rubric": [
+        {
+          "criterion": "非課税の法定対象・条件を示す",
+          "points": 1
+        },
+        {
+          "criterion": "所得控除は所得計算後と示す",
+          "points": 1
+        },
+        {
+          "criterion": "控除する相手が総所得金額等であると説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-shotoku-scope-q4",
+      "lesson": "zr-shotoku-scope",
+      "field": "shotoku"
+    }
+  ],
+  "zr-shotoku-business": [
+    {
+      "prompt": "通常の商品販売で引渡時に収入を認識する条件です。2025年12月に引渡し、2026年1月に代金回収した売上はどう扱いますか。",
+      "options": [
+        "必ず2026年売上にする",
+        "両年に全額計上する",
+        "未入金なので売上は永久に計上しない",
+        "2025年の収入すべき金額として計上する"
+      ],
+      "answer": 3,
+      "explanation": "指定の引渡条件に従い2025年へ帰属します。回収だけで一年ずらしたり、両年で重複計上したりしません。現金主義特例等はこの例で適用しません。",
+      "objectives": [1],
+      "id": "zr-shotoku-business-q1",
+      "lesson": "zr-shotoku-business",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年の期首商品30万円、仕入250万円、期末商品60万円。他の調整なし。売上原価を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["220"],
+      "explanation": "30＋250－60＝220万円です。期末に残る原価を当年の販売分から除きます。",
+      "objectives": [3],
+      "id": "zr-shotoku-business-q2",
+      "lesson": "zr-shotoku-business",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "自宅兼事務所の年間家賃120万円のうち、合理的な資料で事業使用分60％を明確に区分できる条件です。この家賃の必要経費を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["720000"],
+      "explanation": "1,200,000×60％＝720,000円です。残480,000円はこの例の家事部分として除きます。支払口座が事業用という理由だけで全額を経費にはしません。",
+      "objectives": [2],
+      "id": "zr-shotoku-business-q3",
+      "lesson": "zr-shotoku-business",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "売上500万円、上で計算した売上原価220万円、その他の認められる経費100万円。65万円の青色特別控除の全要件を満たし、他の対象所得等なし。控除後事業所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["115"],
+      "explanation": "控除前は500－220－100＝180万円、青色控除後は115万円です。65万円を経費としても重ねて引く二重控除をしません。",
+      "objectives": [3],
+      "id": "zr-shotoku-business-q4",
+      "lesson": "zr-shotoku-business",
+      "field": "shotoku"
+    }
+  ],
+  "zr-shotoku-salary": [
+    {
+      "prompt": "給与所得控除と基礎控除の位置付けとして適切なものはどれですか。",
+      "options": [
+        "給与所得控除で給与所得を求め、その後に所得控除を検討する",
+        "二つとも税額から直接引く",
+        "基礎控除を勤務先一社ごとに重ねる",
+        "給与所得控除の後に生活費全額を自由に引く"
+      ],
+      "answer": 0,
+      "explanation": "給与収入から給与所得を求める段階と、所得控除の段階を区別します。税額控除ではなく、勤務先ごとに基礎控除を増やす制度でもありません。生活費全額を追加経費にはできません。",
+      "objectives": [1],
+      "id": "zr-shotoku-salary-q1",
+      "lesson": "zr-shotoku-salary",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年の給与収入900万円、給与所得控除195万円、所得金額調整控除なし。給与所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["705"],
+      "explanation": "900－195＝705万円です。給与所得控除の上限を反映した額で、基礎控除等をまだ引く前の段階です。",
+      "objectives": [1],
+      "id": "zr-shotoku-salary-q2",
+      "lesson": "zr-shotoku-salary",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "一般退職手当1,500万円、控除計算上の勤続20年、過去の退職金等の調整なし。退職所得を万円で答えてください。 障害退職による控除加算はないものとします。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["350"],
+      "explanation": "控除40×20＝800万円、（1,500－800）×1/2＝350万円です。一般退職手当という条件を確認して二分の一を使います。",
+      "objectives": [2],
+      "id": "zr-shotoku-salary-q3",
+      "lesson": "zr-shotoku-salary",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "退職所得控除後の残額が400万円である場合、短期退職手当等と特定役員退職手当等では基本計算がどう違うか、金額と理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "短期退職手当等は300万円部分を半分の150万円とし、超える100万円を全額加えるので250万円です。特定役員退職手当等は二分の一計算を適用せず400万円です。二つの区分の要件を確定してから式を選びます。",
+      "rubric": [
+        {
+          "criterion": "短期の250万円を計算する",
+          "points": 1
+        },
+        {
+          "criterion": "特定役員の400万円を示す",
+          "points": 1
+        },
+        {
+          "criterion": "300万円超過部分の扱いと区分の違いを説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-shotoku-salary-q4",
+      "lesson": "zr-shotoku-salary",
+      "field": "shotoku"
+    }
+  ],
+  "zr-shotoku-capital": [
+    {
+      "prompt": "総合課税の譲渡所得の50万円控除を使う前に、必要な判断はどれですか。",
+      "options": [
+        "保有期間が長ければ取得費を必ず0円にする",
+        "資産の種類から総合課税か土地建物等の分離課税かを分ける",
+        "どんな土地売却も必ず同じ50万円控除にする",
+        "売却代金をすべて給与にする"
+      ],
+      "answer": 1,
+      "explanation": "資産と課税方式を先に確認します。土地建物等の分離課税へ総合課税の控除を流用せず、給与への区分変更や取得費0円にも根拠がありません。",
+      "objectives": [2],
+      "id": "zr-shotoku-capital-q1",
+      "lesson": "zr-shotoku-capital",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年、非課税でない総合課税の短期譲渡。譲渡価額160万円、調整済み取得費90万円、直接の譲渡費用10万円、他の譲渡なし。50万円控除を使える条件で譲渡所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["10"],
+      "explanation": "160－90－10－50＝10万円です。取得費と直接の譲渡費用を分けて引き、利益の範囲で特別控除を使います。",
+      "objectives": [1],
+      "id": "zr-shotoku-capital-q2",
+      "lesson": "zr-shotoku-capital",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年の一時所得対象収入200万円、直接対応して認められる支出100万円、他の一時所得なし。特別控除後、総所得へ算入する額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["25"],
+      "explanation": "一時所得は200－100－50＝50万円、その二分の一25万円が算入額です。収入200万円を最初に半分にはしません。",
+      "objectives": [3],
+      "id": "zr-shotoku-capital-q3",
+      "lesson": "zr-shotoku-capital",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "同年の総合課税の短期譲渡益20万円、長期譲渡益90万円（ともに特別控除前）、他の特例・損失なし。特別控除の配分と合計算入額を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "50万円控除を先に短期20万円へ充て、残る30万円を長期へ充てます。短期0円、長期60万円となり、長期の二分の一30万円が算入額です。短期・長期へ別々に50万円ずつ引きません。",
+      "rubric": [
+        {
+          "criterion": "短期へ20万円を先に配分する",
+          "points": 1
+        },
+        {
+          "criterion": "長期へ残30万円、控除後60万円と示す",
+          "points": 1
+        },
+        {
+          "criterion": "算入30万円と二分の一の順を説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [],
+      "id": "zr-shotoku-capital-q4",
+      "lesson": "zr-shotoku-capital",
+      "field": "shotoku"
+    }
+  ],
+  "zr-shotoku-deductions": [
+    {
+      "prompt": "給与所得との損益通算を、他の制限がない基本条件で検討できる損失はどれですか。",
+      "options": [
+        "一時所得の特別控除が余った額",
+        "生活費が収入を超えた額",
+        "事業所得の損失",
+        "通常の業務に係る雑所得の損失なら必ず可能"
+      ],
+      "answer": 2,
+      "explanation": "一定の事業所得の損失は通算を検討します。雑所得の損失は同じ扱いではなく、未使用の特別控除や生活費の不足を給与から引く制度でもありません。各除外・特則は別に確認します。",
+      "objectives": [1],
+      "id": "zr-shotoku-deductions-q1",
+      "lesson": "zr-shotoku-deductions",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年の給与所得500万円、全額通算できる事業損失100万円、他所得なし。所得控除合計150万円と指定した場合の課税所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["250"],
+      "explanation": "当年通算後400万円から所得控除150万円を引き250万円です。給与収入でなく給与所得が与えられています。",
+      "objectives": [1, 3],
+      "id": "zr-shotoku-deductions-q2",
+      "lesson": "zr-shotoku-deductions",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年分、居住者、合計所得金額・総所得金額とも300万円。適用基礎控除88万円、社会保険料控除40万円、他控除等なし。課税所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["172"],
+      "explanation": "300－88－40＝172万円です。この例は2025年分で、2026年12月施行の新額へ置き換えません。",
+      "objectives": [3],
+      "id": "zr-shotoku-deductions-q3",
+      "lesson": "zr-shotoku-deductions",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "当年の損益通算と純損失の繰越控除を、対象となる年と要件の観点から説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "損益通算は当年の一定の所得損失を当年の他所得から引く計算です。純損失の繰越しは、青色申告等の所定の要件を満たす損失を後の年の所得へ持ち越して控除する制度です。余った赤字を手続なしに必ず翌年へ引き継ぐものではなく、発生年・申告継続等を確認します。",
+      "rubric": [
+        {
+          "criterion": "当年内の調整を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "後の年への控除を区別する",
+          "points": 1
+        },
+        {
+          "criterion": "青色申告等の法定要件を確認すると示す",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2],
+      "id": "zr-shotoku-deductions-q4",
+      "lesson": "zr-shotoku-deductions",
+      "field": "shotoku"
+    }
+  ],
+  "zr-shotoku-return": [
+    {
+      "prompt": "課税所得が195万円を超え10％の区分へ入ったとき、超過累進税率の基本はどれですか。",
+      "options": [
+        "過去の低い区分の部分も必ず全て10％へ変える",
+        "全収入へ最も高い45％を掛ける",
+        "給与所得控除額へ税率を掛ける",
+        "低い区分の部分を残し、超過部分へ次の税率を使う"
+      ],
+      "answer": 3,
+      "explanation": "区分ごとに率を使い、速算控除で同じ結果を表します。収入や給与所得控除へ直接税率を掛ける計算ではありません。",
+      "objectives": [1],
+      "id": "zr-shotoku-return-q1",
+      "lesson": "zr-shotoku-return",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年分の課税所得400万円。税率20％、速算控除427,500円を適用し、税額控除前の所得税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["372500"],
+      "explanation": "4,000,000×20％－427,500＝372,500円です。速算控除は所得控除ではなく、累進税率の差を調整する額です。",
+      "objectives": [1],
+      "id": "zr-shotoku-return-q2",
+      "lesson": "zr-shotoku-return",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "上の税額から所定の税額控除20,000円を全額差し引いた352,500円が基準所得税額となる条件です。復興特別所得税2.1％、1円未満切捨ての額を円で答えてください。 基準所得税額の計算で控除しない外国税額控除等はありません。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["7402"],
+      "explanation": "352,500×0.021＝7,402.5円なので7,402円です。所得400万円へ2.1％を掛けるものではありません。",
+      "objectives": [],
+      "id": "zr-shotoku-return-q3",
+      "lesson": "zr-shotoku-return",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "2025年分の所得税と復興特別所得税の合計359,902円、源泉徴収済み400,000円、他の調整なし。この例の還付額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["40098"],
+      "explanation": "400,000－359,902＝40,098円です。年間税額より源泉徴収が多いので、納付不足でなく還付の方向です。",
+      "objectives": [2],
+      "id": "zr-shotoku-return-q4",
+      "lesson": "zr-shotoku-return",
+      "field": "shotoku"
+    },
+    {
+      "prompt": "通常の確定申告と還付申告の原則的な期間の説明で適切なものはどれですか。",
+      "options": [
+        "還付申告も必ず翌年3月15日を過ぎたら一切できない",
+        "通常の期限はすべての税と全救済手続に共通である",
+        "源泉徴収されていれば全ての人の申告が必ず不要になる",
+        "通常は翌年2月16日〜3月15日、還付申告は翌年1月1日から5年間等を確認する"
+      ],
+      "answer": 3,
+      "explanation": "手続ごとに期間と条件があります。還付申告を通常の期間へ固定せず、更正の請求等も別に確認します。源泉徴収だけで全員の年間精算や申告義務がなくなるわけではありません。休日等の期限の扱いも確認します。",
+      "objectives": [3],
+      "id": "zr-shotoku-return-q5",
+      "lesson": "zr-shotoku-return",
+      "field": "shotoku"
+    }
+  ],
+  "zr-hojin-adjustment": [
+    {
+      "prompt": "会計費用に含めた罰金10万円が全額損金不算入。税引前利益から所得を求める調整は？",
+      "options": [
+        "10万円を加算する",
+        "10万円を減算する",
+        "税額から10万円を控除する",
+        "会計費用があるので調整しない"
+      ],
+      "answer": 0,
+      "explanation": "費用で利益を減らしているため、損金にならない10万円を戻します。減算は逆方向、税額控除は別段階、無調整では所得が過少です。",
+      "objectives": [1, 2],
+      "id": "zr-hojin-adjustment-q1",
+      "lesson": "zr-hojin-adjustment",
+      "field": "hojin"
+    },
+    {
+      "prompt": "税引前利益800万円（税金費用なし）。損金不算入30万円、受取配当の益金不算入15万円、過年度償却超過の当期認容5万円。ほかの調整なし。所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["810"],
+      "explanation": "800＋30－15－5＝810万円。配当の収益総額ではなく、指定された不算入額を引きます。",
+      "objectives": [2],
+      "id": "zr-hojin-adjustment-q2",
+      "lesson": "zr-hojin-adjustment",
+      "field": "hojin"
+    },
+    {
+      "prompt": "償却超過の期首残高50万円、当期発生20万円、当期認容15万円。期末の留保残高を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["55"],
+      "explanation": "50＋20－15＝55万円。当期純加算5万円と期末残高55万円を区別します。",
+      "objectives": [3],
+      "id": "zr-hojin-adjustment-q3",
+      "lesson": "zr-hojin-adjustment",
+      "field": "hojin"
+    },
+    {
+      "prompt": "償却超過の留保と、罰金の社外流出について、現金を払ったかどうかだけで区分できない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "償却超過は税務簿価と会計簿価等の差が内部に残り、後の認容を管理する。罰金の損金不算入はこのような内部の差として残らず、社外流出として区分する。現金支出の有無だけでなく、税務上の差の性質を確認する。",
+      "rubric": [
+        {
+          "criterion": "償却超過が内部の差として残ること",
+          "points": 1
+        },
+        {
+          "criterion": "罰金の区分との違い",
+          "points": 1
+        },
+        {
+          "criterion": "現金支出だけを判断基準にしないこと",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [1, 3],
+      "id": "zr-hojin-adjustment-q4",
+      "lesson": "zr-hojin-adjustment",
+      "field": "hojin"
+    }
+  ],
+  "zr-hojin-assets": [
+    {
+      "prompt": "通常の減価償却で過年度超過なし。損金経理40万円、限度60万円の場合の基本的な損金額は？",
+      "options": ["0万円", "40万円", "60万円", "20万円"],
+      "answer": 1,
+      "explanation": "限度は自動で使い切る額ではなく、原則として損金経理が必要です。60万円は未経理分を含め、20万円は不足額、0万円は経理済み分を無視します。",
+      "objectives": [1],
+      "id": "zr-hojin-assets-q1",
+      "lesson": "zr-hojin-assets",
+      "field": "hojin"
+    },
+    {
+      "prompt": "損金経理90万円、償却限度65万円、過年度超過なし。所得への加算額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["25"],
+      "explanation": "90－65＝25万円が当期の償却超過です。限度65万円を加算するのではありません。",
+      "objectives": [2],
+      "id": "zr-hojin-assets-q2",
+      "lesson": "zr-hojin-assets",
+      "field": "hojin"
+    },
+    {
+      "prompt": "翌期、前期超過25万円、当期損金経理45万円、限度60万円。ほかの制限なく不足の範囲で認容。認容後の超過残高を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["10"],
+      "explanation": "不足60－45＝15万円を認容。25－15＝10万円が残ります。過年度超過の全額25万円は使えません。",
+      "objectives": [2],
+      "id": "zr-hojin-assets-q3",
+      "lesson": "zr-hojin-assets",
+      "field": "hojin"
+    },
+    {
+      "prompt": "価格が下がった棚卸資産と、回収が遅れた売掛金について、直ちに税務上全額損失としない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "棚卸資産は認められる評価方法や評価損の法定事由を確認する。売掛金は法的切捨てや事実上の回収不能等の要件、担保・保証などを調べる。単なる値下がりや一度の支払遅延だけで全額の損金算入を決めない。",
+      "rubric": [
+        {
+          "criterion": "棚卸資産の評価損の条件",
+          "points": 1
+        },
+        {
+          "criterion": "債権の回収不能等の事実確認",
+          "points": 1
+        },
+        {
+          "criterion": "単なる価格変動・支払遅延との区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-hojin-assets-q4",
+      "lesson": "zr-hojin-assets",
+      "field": "hojin"
+    }
+  ],
+  "zr-hojin-compensation": [
+    {
+      "prompt": "通常の改定等の問題がなく、一月以下の一定期間ごとに同額を支給し、ほかの法定要件も満たす役員給与。該当する基本類型は？",
+      "options": [
+        "定期同額給与",
+        "事前確定届出給与という類型に必ず限定される",
+        "所定の業績連動給与に必ず限定される",
+        "役員給与なので類型を問わず全額不算入"
+      ],
+      "answer": 0,
+      "explanation": "定期的に同額を支給する条件から定期同額給与を識別します。他の類型へ必ず限定する根拠はなく、全役員給与が一律不算入でもありません。",
+      "objectives": [1],
+      "id": "zr-hojin-compensation-q1",
+      "lesson": "zr-hojin-compensation",
+      "field": "hojin"
+    },
+    {
+      "prompt": "会計費用の接待等総額1,000万円。要件を満たし交際費等の範囲から除外する額200万円。残りに適用する損金算入限度を計算練習上600万円と指定。加算額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["200"],
+      "explanation": "対象1,000－200＝800万円、800－600＝200万円。600万円は本問の指定額で、一般の法定定額限度を示しません。",
+      "objectives": [2, 3],
+      "id": "zr-hojin-compensation-q2",
+      "lesson": "zr-hojin-compensation",
+      "field": "hojin"
+    },
+    {
+      "prompt": "寄附金費用120万円のうち全額損金となる区分40万円、一般寄附金80万円。一般寄附金限度30万円、ほかの制限なし。不算入額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["50"],
+      "explanation": "損金40＋30＝70万円、不算入120－70＝50万円。全体に一般枠30万円だけを適用しません。",
+      "objectives": [2, 3],
+      "id": "zr-hojin-compensation-q3",
+      "lesson": "zr-hojin-compensation",
+      "field": "hojin"
+    },
+    {
+      "prompt": "社外の取引先との飲食費が一人1万円以下だった。交際費等の除外を検討するために、金額以外に何を確認しますか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "適用時期、相手との関係、専ら役員・従業員等への接待に当たらないか、人数や目的・実態、必要な記録と保存、経理方式等を確認する。金額の条件だけでは除外は決まらない。",
+      "rubric": [
+        {
+          "criterion": "相手・目的と社内接待等の区別",
+          "points": 1
+        },
+        {
+          "criterion": "人数や必要な記録・保存",
+          "points": 1
+        },
+        {
+          "criterion": "適用時期や経理方式等も確認すること",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2],
+      "id": "zr-hojin-compensation-q4",
+      "lesson": "zr-hojin-compensation",
+      "field": "hojin"
+    }
+  ],
+  "zr-hojin-distributions": [
+    {
+      "prompt": "国内の受取配当等を益金不算入とする基本的な趣旨は？",
+      "options": [
+        "受け取った現金が存在しないものにする",
+        "すべての配当を会計収益から削除する",
+        "株主からの出資を営業収益へ変える",
+        "法人段階で課税された利益の重複課税を調整する"
+      ],
+      "answer": 3,
+      "explanation": "税務上の所得から法定額を除く制度です。現金や会計収益を消す処理ではなく、出資の分類とも別です。",
+      "objectives": [1],
+      "id": "zr-hojin-distributions-q1",
+      "lesson": "zr-hojin-distributions",
+      "field": "hojin"
+    },
+    {
+      "prompt": "全額が非支配目的株式等の対象となる国内配当200万円を収益計上。不算入割合20％、ほかの調整なし。利益から減算する額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["40"],
+      "explanation": "200×20％＝40万円。残る160万円と減算額を取り違えないでください。",
+      "objectives": [2],
+      "id": "zr-hojin-distributions-q2",
+      "lesson": "zr-hojin-distributions",
+      "field": "hojin"
+    },
+    {
+      "prompt": "関連法人株式等の対象配当150万円。法定計算後の負債利子控除額を6万円と指定。益金不算入額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["144"],
+      "explanation": "150－6＝144万円。控除額は本問で確定して与えた額です。任意の借入利息全額を引くものではありません。",
+      "objectives": [2],
+      "id": "zr-hojin-distributions-q3",
+      "lesson": "zr-hojin-distributions",
+      "field": "hojin"
+    },
+    {
+      "prompt": "自社への出資300万円と、他社からの対象配当300万円では、税務調整の出発点がどう違いますか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "通常の出資は資本等取引として会計利益に入っていないため、入金を理由に益金加算せず、さらに利益から減算もしない。受取配当は会計収益に含まれるので、法定の保有区分等に基づく不算入額を減算する。",
+      "rubric": [
+        {
+          "criterion": "出資が通常会計利益へ入らないこと",
+          "points": 1
+        },
+        {
+          "criterion": "配当が収益に含まれること",
+          "points": 1
+        },
+        {
+          "criterion": "配当の法定区分による減算と出資の二重減算を区別すること",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-hojin-distributions-q4",
+      "lesson": "zr-hojin-distributions",
+      "field": "hojin"
+    }
+  ],
+  "zr-hojin-losses": [
+    {
+      "prompt": "会計上の損失80万円、損金不算入加算100万円のみ。税務上の結果は？",
+      "options": ["所得20万円", "欠損80万円", "欠損180万円", "所得100万円"],
+      "answer": 0,
+      "explanation": "－80＋100＝20万円。会計損失をそのまま税務欠損とせず、符号と出発点を確認します。",
+      "objectives": [1],
+      "id": "zr-hojin-losses-q1",
+      "lesson": "zr-hojin-losses",
+      "field": "hojin"
+    },
+    {
+      "prompt": "控除前所得800万円、利用可能な欠損600万円。所得50％の控除限度を適用、ほかの制限なし。控除後所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["400"],
+      "explanation": "限度800×50％＝400万円。残高600万円のうち400万円を使い、所得400万円、欠損残200万円です。",
+      "objectives": [3],
+      "id": "zr-hojin-losses-q2",
+      "lesson": "zr-hojin-losses",
+      "field": "hojin"
+    },
+    {
+      "prompt": "古い年度の欠損250万円、新しい年度300万円があり、いずれも利用可能。当期控除額350万円を古い順に使う。新しい年度の残額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["200"],
+      "explanation": "古い250万円を使い、新しい分から100万円使用。300－100＝200万円が残ります。",
+      "objectives": [2, 3],
+      "id": "zr-hojin-losses-q3",
+      "lesson": "zr-hojin-losses",
+      "field": "hojin"
+    },
+    {
+      "prompt": "欠損金の期首残高400万円、期間切れ50万円、当期控除150万円。期末残高と当期所得から引く額を区別して説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "期末残高は400－50－150＝200万円。当期の所得から引くのは控除した150万円であり、期間切れ50万円は当期控除にならない。年度別に失効と使用を区分する。",
+      "rubric": [
+        {
+          "criterion": "期末残高200万円",
+          "points": 1
+        },
+        {
+          "criterion": "当期控除150万円",
+          "points": 1
+        },
+        {
+          "criterion": "期間切れと使用の区分",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-hojin-losses-q4",
+      "lesson": "zr-hojin-losses",
+      "field": "hojin"
+    }
+  ],
+  "zr-hojin-return": [
+    {
+      "prompt": "12か月年度、軽減税率の全条件を満たし年800万円以下15％、超過23.2％を使う指定。所得1,200万円の算出法人税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["2128000"],
+      "explanation": "800万円×15％＋400万円×23.2％＝120万円＋92.8万円＝2,128,000円。特例の適用条件は本問で満たすものとしています。",
+      "objectives": [],
+      "id": "zr-hojin-return-q1",
+      "lesson": "zr-hojin-return",
+      "field": "hojin"
+    },
+    {
+      "prompt": "算出税額2,128,000円、全額使える税額控除128,000円、中間納付700,000円、他の調整なし。差引納付額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["1300000"],
+      "explanation": "2,128,000－128,000－700,000＝1,300,000円。中間納付を所得から引きません。",
+      "objectives": [2],
+      "id": "zr-hojin-return-q2",
+      "lesson": "zr-hojin-return",
+      "field": "hojin"
+    },
+    {
+      "prompt": "2026年4月1日開始の12か月年度、通算法人でない。防衛特別法人税の基準法人税額900万円、基礎控除500万円、税率4％、税額控除等なし。税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["160000"],
+      "explanation": "（900－500）万円×4％＝160,000円。所得900万円を課税標準とした例ではありません。",
+      "objectives": [3],
+      "id": "zr-hojin-return-q3",
+      "lesson": "zr-hojin-return",
+      "field": "hojin"
+    },
+    {
+      "prompt": "防衛特別法人税の基準法人税額が基礎控除以下なら、申告と中間申告について何を確認すべきですか。 また基準法人税額と今回の差引納付額の違いを説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "税額がゼロでも申告が必要となる。適用は2026年4月1日以後開始年度で、中間申告の適用開始は2027年4月1日以後開始年度と区別する。基準法人税額は今回の追加納付額とは異なる。",
+      "rubric": [
+        {
+          "criterion": "税額ゼロでも申告が必要となること",
+          "points": 1
+        },
+        {
+          "criterion": "本体と中間申告の開始年度の区別",
+          "points": 1
+        },
+        {
+          "criterion": "基準法人税額と差引納付額の区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-hojin-return-q4",
+      "lesson": "zr-hojin-return",
+      "field": "hojin"
+    },
+    {
+      "prompt": "所得控除と税額控除の違いについて適切なのは？",
+      "options": [
+        "所得控除は税率を掛ける前の所得を減らし、税額控除は算出した税額から所定額を引く",
+        "税額控除は所得を同額だけ減らす",
+        "どちらも中間納付の別名である",
+        "所得控除は税率を掛けた後の税額から必ず同額を引く"
+      ],
+      "answer": 0,
+      "explanation": "計算段階を区別します。所得・税額・中間納付は異なり、同額の控除でも税額への影響は一致しません。",
+      "objectives": [1],
+      "id": "zr-hojin-return-q5",
+      "lesson": "zr-hojin-return",
+      "field": "hojin"
+    }
+  ],
+  "zr-sozoku-scope": [
+    {
+      "prompt": "被相続人の配偶者と子二人が法定相続人。友人も遺贈を受けた。基礎控除計算上の法定相続人の数は？（放棄・養子等の特別な事情なし）",
+      "options": ["2人", "1人", "3人", "4人"],
+      "answer": 2,
+      "explanation": "配偶者と子二人の3人です。受遺者の友人を加えず、配偶者や子を除外もしません。",
+      "objectives": [1],
+      "id": "zr-sozoku-scope-q1",
+      "lesson": "zr-sozoku-scope",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "被相続人の死亡により取得し、被相続人が保険料を全額負担した死亡保険金の課税検討として適切なのは？",
+      "options": [
+        "遺産分割の対象でなければ必ず課税対象外",
+        "保険金は金額を問わず全額非課税",
+        "必ず被相続人の債務として控除する",
+        "受取人の固有の権利でも、みなし相続財産を検討する"
+      ],
+      "answer": 3,
+      "explanation": "民法上の取得原因と相続税上の扱いは別です。対象外・全額非課税・債務という一律の扱いはできません。",
+      "objectives": [2],
+      "id": "zr-sozoku-scope-q2",
+      "lesson": "zr-sozoku-scope",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "本来財産7,000万円、課税算入するみなし財産500万円、控除要件を満たす債務800万円、葬式費用200万円、ほかの調整なし。基礎控除前の課税価格を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["6500"],
+      "explanation": "7,000＋500－800－200＝6,500万円。みなし財産を足し、適格な債務等を引きます。",
+      "objectives": [2, 3],
+      "id": "zr-sozoku-scope-q3",
+      "lesson": "zr-sozoku-scope",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "保証債務が資料にあるとき、借入元本と同じように直ちに全額控除しない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "相続開始時に現存し確実と認められる債務等の条件を確認する必要がある。保証債務は主債務者や求償可能性等の事情が関わり、額面だけで確実な負担と決めない。",
+      "rubric": [
+        {
+          "criterion": "相続開始時の債務であることの確認",
+          "points": 1
+        },
+        {
+          "criterion": "確実性等の要件",
+          "points": 1
+        },
+        {
+          "criterion": "保証債務の額面だけで判断しないこと",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-sozoku-scope-q4",
+      "lesson": "zr-sozoku-scope",
+      "field": "sozoku"
+    }
+  ],
+  "zr-sozoku-valuation": [
+    {
+      "prompt": "相続税の財産評価で最初にそろえるべき基本的な情報は？",
+      "options": [
+        "購入時の価格だけ",
+        "売却予定年の予想価格だけ",
+        "相続人が希望する金額だけ",
+        "財産の種類・評価時点・適用する評価方法"
+      ],
+      "answer": 3,
+      "explanation": "相続開始時の評価を法定の方法等で検討します。購入価格、将来予想、希望額だけでは評価できません。",
+      "objectives": [1],
+      "id": "zr-sozoku-valuation-q1",
+      "lesson": "zr-sozoku-valuation",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "自用宅地。路線価1㎡当たり20万円、200㎡、奥行価格補正率0.9のみを適用、ほかの補正・特例なし。評価額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["3600"],
+      "explanation": "20×200×0.9＝3,600万円。0.1は減額部分であり、評価に掛ける補正率ではありません。",
+      "objectives": [2],
+      "id": "zr-sozoku-valuation-q2",
+      "lesson": "zr-sozoku-valuation",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "自用家屋の固定資産税評価額800万円。相続税評価は同額とする基本条件、貸家等の調整なし。相続税評価額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["800"],
+      "explanation": "自用家屋の基本例では固定資産税評価額800万円を使います。取得価額や土地の路線価を代入しません。",
+      "objectives": [1],
+      "id": "zr-sozoku-valuation-q3",
+      "lesson": "zr-sozoku-valuation",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "路線価の奥行補正と小規模宅地等の特例は、どの段階の違いがありますか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "奥行補正は土地の評価額を求める段階で行う。小規模宅地等は評価した宅地等の課税価格を法定の条件と限度内で減額する別制度であり、一方を使っただけで他方が一律に排除されるわけではない。",
+      "rubric": [
+        {
+          "criterion": "評価段階の補正",
+          "points": 1
+        },
+        {
+          "criterion": "課税価格の特例という違い",
+          "points": 1
+        },
+        {
+          "criterion": "双方の条件を別に確認すること",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [],
+      "id": "zr-sozoku-valuation-q4",
+      "lesson": "zr-sozoku-valuation",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "土地の所有・利用関係に基づく評価の検討として適切なのは？",
+      "options": [
+        "自用地、借地権、貸家建付地等の権利・利用関係を確認する",
+        "土地はすべて自用地と同じ条件で評価する",
+        "他人の土地を借りる権利は常に所有権そのものと同じ",
+        "建物を賃貸しても土地の利用関係は一切確認しない"
+      ],
+      "answer": 0,
+      "explanation": "所有権と他人の土地を使う権利、貸家の敷地等を区別します。すべて自用、借地権と所有権の同一視、賃貸関係の無視では補正等を判断できません。",
+      "objectives": [3],
+      "id": "zr-sozoku-valuation-q5",
+      "lesson": "zr-sozoku-valuation",
+      "field": "sozoku"
+    }
+  ],
+  "zr-sozoku-reliefs": [
+    {
+      "prompt": "死亡保険金の非課税限度。法定相続人3人、500万円×人数の基本条件。全体の限度額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["1500"],
+      "explanation": "500×3＝1,500万円。受取人一人ずつにこの全額を与える制度ではありません。",
+      "objectives": [1],
+      "id": "zr-sozoku-reliefs-q1",
+      "lesson": "zr-sozoku-reliefs",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "法定相続人3人のうち、相続人二人が対象死亡保険金を各1,200万円取得。非課税限度総額1,500万円を取得保険金の割合で按分し、ほかの調整なし。一人の課税算入額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["450"],
+      "explanation": "非課税は1,500×1,200÷2,400＝750万円。一人の算入額は1,200－750＝450万円です。",
+      "objectives": [2],
+      "id": "zr-sozoku-reliefs-q2",
+      "lesson": "zr-sozoku-reliefs",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "特定居住用宅地等の全要件を満たす自宅土地200㎡、評価6,000万円。ほかの選択宅地等なし、全体へ80％減額を使える。減額後の算入額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["1200"],
+      "explanation": "6,000×（1－80％）＝1,200万円。4,800万円は減額する部分です。",
+      "objectives": [3],
+      "id": "zr-sozoku-reliefs-q3",
+      "lesson": "zr-sozoku-reliefs",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "同じ特例で土地400㎡、評価1億2,000万円が面積に均等対応。330㎡限度・80％減額、ほかの選択宅地なし。減額額と算入額を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "対象評価額は12,000×330÷400＝9,900万円。減額額は9,900×80％＝7,920万円、土地全体の算入額は12,000－7,920＝4,080万円。超過70㎡まで減額しない。",
+      "rubric": [
+        {
+          "criterion": "330㎡分9,900万円",
+          "points": 1
+        },
+        {
+          "criterion": "減額7,920万円",
+          "points": 1
+        },
+        {
+          "criterion": "算入4,080万円と面積超過の扱い",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-sozoku-reliefs-q4",
+      "lesson": "zr-sozoku-reliefs",
+      "field": "sozoku"
+    }
+  ],
+  "zr-sozoku-total": [
+    {
+      "prompt": "法定相続人は配偶者と子二人。基礎控除3,000万円＋600万円×人数の条件。基礎控除額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["4800"],
+      "explanation": "3,000＋600×3＝4,800万円です。",
+      "objectives": [1],
+      "id": "zr-sozoku-total-q1",
+      "lesson": "zr-sozoku-total",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "課税価格合計8,000万円、基礎控除4,800万円、配偶者と子二人。法定相続分に応ずる課税取得金額は配偶者1,600万円、子各800万円。1,600万円には15％－50万円、800万円には10％を使う。相続税総額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["350"],
+      "explanation": "配偶者1,600×15％－50＝190万円、子各80万円。190＋80＋80＝350万円です。",
+      "objectives": [2],
+      "id": "zr-sozoku-total-q2",
+      "lesson": "zr-sozoku-total",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "相続税総額350万円。各人の課税価格割合は配偶者1/2、子各1/4。加算・控除前の子一人の配分税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["875000"],
+      "explanation": "350万円×1/4＝87.5万円＝875,000円。配偶者軽減を全員の総額から先に差し引きません。",
+      "objectives": [3],
+      "id": "zr-sozoku-total-q3",
+      "lesson": "zr-sozoku-total",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "相続税総額を法定相続分で計算した後、配偶者の税額軽減を検討する順序を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "総額を各人の課税価格の実取得割合で配分し、その配偶者に配分された税額について実取得額と法定限度・申告等の条件から軽減を計算する。総額そのものを最初からゼロにしたり、他の相続人にも同じ軽減を配るものではない。",
+      "rubric": [
+        {
+          "criterion": "実取得割合での配分",
+          "points": 1
+        },
+        {
+          "criterion": "配偶者の実取得と法定条件を確認",
+          "points": 1
+        },
+        {
+          "criterion": "総額・他の相続人の税額との区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-sozoku-total-q4",
+      "lesson": "zr-sozoku-total",
+      "field": "sozoku"
+    }
+  ],
+  "zr-sozoku-gifts": [
+    {
+      "prompt": "2025年、暦年課税で父200万円と母100万円を受贈。ほかの贈与・特例なし。年110万円控除後190万円へ10％を使う条件。税額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["19"],
+      "explanation": "（200＋100－110）×10％＝19万円。贈与者ごとに110万円を重ねません。",
+      "objectives": [1, 2],
+      "id": "zr-sozoku-gifts-q1",
+      "lesson": "zr-sozoku-gifts",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "2025年、相続時精算課税の全選択・申告要件を満たす一人の特定贈与者から3,210万円受贈。年基礎110万円、未使用特別控除2,500万円、残額税率20％。税額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["120"],
+      "explanation": "（3,210－110－2,500）×20％＝120万円。二つの控除を別の期間で管理します。",
+      "objectives": [2],
+      "id": "zr-sozoku-gifts-q2",
+      "lesson": "zr-sozoku-gifts",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "前問の贈与について、2024年以後の基礎控除後額を贈与時価額で相続へ加算する原則を適用。災害等の例外なし。加算の基礎額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["3100"],
+      "explanation": "3,210－110＝3,100万円。2,500万円特別控除部分も加算対象に含めます。",
+      "objectives": [3],
+      "id": "zr-sozoku-gifts-q3",
+      "lesson": "zr-sozoku-gifts",
+      "field": "sozoku"
+    },
+    {
+      "prompt": "2028年8月1日相続開始。相続財産も取得する子が被相続人から2024年6月60万円、2025年6月80万円、2026年1月80万円の暦年贈与を受けた。他の贈与・特例なし。加算額を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "経過措置の対象期間内で、3年超の60＋80＝140万円から総額100万円を控除して40万円。3年以内の80万円は全額対象で、合計120万円。各年の110万円以下でも加算に関係する。",
+      "rubric": [
+        {
+          "criterion": "3年超部分140万円の区分",
+          "points": 1
+        },
+        {
+          "criterion": "延長部分の総額100万円控除で40万円",
+          "points": 1
+        },
+        {
+          "criterion": "3年以内80万円との合計120万円",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [1, 3],
+      "id": "zr-sozoku-gifts-q4",
+      "lesson": "zr-sozoku-gifts",
+      "field": "sozoku"
+    }
+  ],
+  "zr-shohi-scope": [
+    {
+      "prompt": "国内の商品販売を事業として対価を得て行う非課税規定に該当しない商品の通常取引の基本分類は？",
+      "options": ["必ず非課税取引", "必ず対象外取引", "売主の規模だけで取引自体が輸出免税になる", "課税取引"],
+      "answer": 3,
+      "explanation": "国内・事業・対価・資産の譲渡等の要件を検討します。納税義務の免除と取引の非課税・輸出免税は別です。",
+      "objectives": [1],
+      "id": "zr-shohi-scope-q1",
+      "lesson": "zr-shohi-scope",
+      "field": "shohi"
+    },
+    {
+      "prompt": "非課税売上と輸出免税売上の違いとして適切なのは？",
+      "options": [
+        "輸出免税は課税資産の譲渡等に含まれ、所定の証明等を確認する",
+        "どちらも課税売上割合の分子から必ず除く",
+        "どちらも仕入控除と無関係",
+        "輸出なら書類の要件は一切ない"
+      ],
+      "answer": 0,
+      "explanation": "輸出免税と非課税は仕入控除等の扱いが違います。輸出を分子から除く、控除と無関係、証明不要という説明は適切ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-shohi-scope-q2",
+      "lesson": "zr-shohi-scope",
+      "field": "shohi"
+    },
+    {
+      "prompt": "税抜の国内課税売上600万円、輸出免税300万円、非課税の土地売上100万円のみ。特殊な分母調整なし。課税売上割合を％の数値で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["90"],
+      "explanation": "（600＋300）÷（600＋300＋100）×100＝90％。輸出免税は分子にも含みます。",
+      "objectives": [2],
+      "id": "zr-shohi-scope-q3",
+      "lesson": "zr-shohi-scope",
+      "field": "shohi"
+    },
+    {
+      "prompt": "給与の受取りと、事業で行う商品販売を、請求書の有無だけで分類できない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "事業として対価を得て行う資産の譲渡等かを実質で確認する。給与は雇用に基づく労務の対価で、通常の商品販売と同じ課税売上にしない。請求書という名称の書類だけで取引の性質は変わらない。",
+      "rubric": [
+        {
+          "criterion": "国内取引等の要件による分類",
+          "points": 1
+        },
+        {
+          "criterion": "給与と事業の売上の区別",
+          "points": 1
+        },
+        {
+          "criterion": "書類の名称だけでは決まらないこと",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [1],
+      "id": "zr-shohi-scope-q4",
+      "lesson": "zr-shohi-scope",
+      "field": "shohi"
+    }
+  ],
+  "zr-shohi-liability": [
+    {
+      "prompt": "2026年分を判定する通常の個人事業者。基準期間は原則どの年？",
+      "options": ["2024年", "2025年", "2026年", "2027年"],
+      "answer": 0,
+      "explanation": "個人は原則前々年です。前年の前半は特定期間の検討、当年は対象期間、翌年は未来です。",
+      "objectives": [1],
+      "id": "zr-shohi-liability-q1",
+      "lesson": "zr-shohi-liability",
+      "field": "shohi"
+    },
+    {
+      "prompt": "基準期間は免税事業者で、課税対象商品の売上1,045万円。ほかの調整なし。基準期間の課税売上高の扱いは？",
+      "options": [
+        "当年売上だけに置き換える",
+        "1,045万円として検討する",
+        "110分の100で950万円へ必ず割り戻す",
+        "免税なので0円とする"
+      ],
+      "answer": 1,
+      "explanation": "免税期間の売上を課税事業者と同じ前提で税抜きにしません。0円や当年への置換えも誤りです。",
+      "objectives": [2],
+      "id": "zr-shohi-liability-q2",
+      "lesson": "zr-shohi-liability",
+      "field": "shohi"
+    },
+    {
+      "prompt": "基準期間売上800万円でも、当期全期間に有効なインボイス登録がある事業者の基本的な扱いは？",
+      "options": [
+        "登録は取引先の依頼だけで自動成立する",
+        "登録したら必ず二割特例を使える",
+        "売上高だけで納税義務の免除を決めない",
+        "1,000万円以下なら登録中も必ず免税"
+      ],
+      "answer": 2,
+      "explanation": "登録の有効日と納税義務を確認します。免税の一律適用、自動登録、二割特例の無条件適用はいずれも不適切です。",
+      "objectives": [2, 3],
+      "id": "zr-shohi-liability-q3",
+      "lesson": "zr-shohi-liability",
+      "field": "shohi"
+    },
+    {
+      "prompt": "設立直後の法人で基準期間がないとき、二年間必ず免税とはいえない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "期首資本金等1,000万円以上の新設法人等の特則、大規模な他の者との支配関係等がある特定新規設立法人、登録や課税選択等を確認する。基準期間がない事実だけでは結論は出ない。",
+      "rubric": [
+        {
+          "criterion": "資本金等の特則",
+          "points": 1
+        },
+        {
+          "criterion": "支配関係等の特則",
+          "points": 1
+        },
+        {
+          "criterion": "登録・選択等を含め原則だけで終えないこと",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-shohi-liability-q4",
+      "lesson": "zr-shohi-liability",
+      "field": "shohi"
+    }
+  ],
+  "zr-shohi-output": [
+    {
+      "prompt": "軽減税率の取扱いとして適切なのは？",
+      "options": [
+        "購入者の年齢だけで8％か10％か決まる",
+        "対象となる飲食料品等と、対象外の酒類・外食等を区分する",
+        "食品と呼ばれるものは酒類も常に8％",
+        "すべてのサービスが8％"
+      ],
+      "answer": 1,
+      "explanation": "対象品目と提供形態等を確認します。酒類や外食等を一律に含めず、サービス全体や年齢だけで判断しません。",
+      "objectives": [1],
+      "id": "zr-shohi-output-q1",
+      "lesson": "zr-shohi-output",
+      "field": "shohi"
+    },
+    {
+      "prompt": "標準税率10％の税込売上220万円。割戻しの単純例で、税抜対価を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["200"],
+      "explanation": "220÷1.10＝200万円。税込額の10％を引く計算ではありません。",
+      "objectives": [2],
+      "id": "zr-shohi-output-q2",
+      "lesson": "zr-shohi-output",
+      "field": "shohi"
+    },
+    {
+      "prompt": "前問の税抜200万円について、国税税率7.8％、ほかの調整・端数なし。国税売上税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["156000"],
+      "explanation": "2,000,000×7.8％＝156,000円。地方を含む20万円とは区別します。",
+      "objectives": [3],
+      "id": "zr-shohi-output-q3",
+      "lesson": "zr-shohi-output",
+      "field": "shohi"
+    },
+    {
+      "prompt": "軽減税率8％の税込売上108万円。国税相当6.24％と地方相当1.76％、端数なし。国税売上税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["62400"],
+      "explanation": "税抜100万円×6.24％＝62,400円。総額80,000円や地方17,600円ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-shohi-output-q4",
+      "lesson": "zr-shohi-output",
+      "field": "shohi"
+    }
+  ],
+  "zr-shohi-input": [
+    {
+      "prompt": "適格請求書を保存した支払について、適切な説明は？",
+      "options": [
+        "すべて事業用なら用途を問わず必ず全額控除",
+        "請求書だけあれば帳簿は常に不要",
+        "課税仕入れ等の実質、帳簿等、用途等の制限も確認する",
+        "請求書があれば給与も必ず控除できる"
+      ],
+      "answer": 2,
+      "explanation": "書類保存だけで全条件が満たされるわけではありません。給与の性質、用途による制限、帳簿等の要件を別に確認します。",
+      "objectives": [1],
+      "id": "zr-shohi-input-q1",
+      "lesson": "zr-shohi-input",
+      "field": "shohi"
+    },
+    {
+      "prompt": "税抜課税売上800万円、非課税売上200万円のみ、特殊な分母調整なし。課税売上割合を％で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["80"],
+      "explanation": "800÷（800＋200）×100＝80％です。",
+      "objectives": [2],
+      "id": "zr-shohi-input-q2",
+      "lesson": "zr-shohi-input",
+      "field": "shohi"
+    },
+    {
+      "prompt": "個別対応方式。控除要件を満たす国税額は課税専用10万円、非課税専用3万円、共通5万円。課税売上割合80％、全額控除の特則等なし。控除額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["14"],
+      "explanation": "10＋5×80％＝14万円。非課税専用3万円は含めず、課税専用10万円に割合を掛けません。",
+      "objectives": [],
+      "id": "zr-shohi-input-q3",
+      "lesson": "zr-shohi-input",
+      "field": "shohi"
+    },
+    {
+      "prompt": "免税事業者等からの仕入れに経過措置を検討するとき、割合の数字以外に何を記録しますか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "取引日、対象となる仕入れと相手、帳簿・書類の保存要件、適用する法令の施行日と対象期間を記録する。第76回の基準日とその後の施行改正を混ぜずに検討する。",
+      "rubric": [
+        {
+          "criterion": "取引日と対象の確認",
+          "points": 1
+        },
+        {
+          "criterion": "保存要件の確認",
+          "points": 1
+        },
+        {
+          "criterion": "基準日・施行日・対象期間の区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [1, 3],
+      "id": "zr-shohi-input-q4",
+      "lesson": "zr-shohi-input",
+      "field": "shohi"
+    }
+  ],
+  "zr-shohi-methods": [
+    {
+      "prompt": "本則課税と簡易課税の仕入控除の違いは？",
+      "options": [
+        "両方とも支払総額をそのまま控除する",
+        "簡易は仕入先が好きな率を指定する",
+        "本則では仕入税額を一切控除しない",
+        "本則は実際の控除可能な仕入税額等、簡易は売上税額と事業区分別のみなし仕入率を基礎にする"
+      ],
+      "answer": 3,
+      "explanation": "控除の基礎が異なります。支払総額や任意の率ではなく、各制度の条件で計算します。",
+      "objectives": [1],
+      "id": "zr-shohi-methods-q1",
+      "lesson": "zr-shohi-methods",
+      "field": "shohi"
+    },
+    {
+      "prompt": "2025年、簡易課税の全条件を満たす第二種のみの事業。国税売上税額78万円、みなし仕入率80％、別調整なし。差引国税額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["15.6"],
+      "explanation": "78－78×80％＝15.6万円。62.4万円は控除側です。地方を含む合計20万円とは区別します。",
+      "objectives": [2],
+      "id": "zr-shohi-methods-q2",
+      "lesson": "zr-shohi-methods",
+      "field": "shohi"
+    },
+    {
+      "prompt": "区分別原則計算。第一種の国税売上税額39万円（90％）、第五種39万円（50％）、他の特則・調整なし。みなし仕入控除額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["54.6"],
+      "explanation": "39×90％＋39×50％＝35.1＋19.5＝54.6万円です。",
+      "objectives": [2],
+      "id": "zr-shohi-methods-q3",
+      "lesson": "zr-shohi-methods",
+      "field": "shohi"
+    },
+    {
+      "prompt": "2026年4月1日～2027年3月31日の課税期間は、二割特例の対象になり得ますか。ほかの要件は満たすものとし、期間の理由と手続を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "2026年9月30日が属する課税期間なので、ほかの全要件を満たせば対象になり得る。9月30日までの取引だけで計算を打ち切る意味ではない。事前届出ではなく申告書への適用付記等を確認する。",
+      "rubric": [
+        {
+          "criterion": "9月30日を含む課税期間という判断",
+          "points": 1
+        },
+        {
+          "criterion": "取引を9月末で打ち切らないこと",
+          "points": 1
+        },
+        {
+          "criterion": "簡易課税の選択届出と異なる手続",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-shohi-methods-q4",
+      "lesson": "zr-shohi-methods",
+      "field": "shohi"
+    }
+  ],
+  "zr-shuzei-class": [
+    {
+      "prompt": "法定の測定条件でアルコール分6度の飲料500mL。エチルアルコール相当容量をmLで答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["30"],
+      "explanation": "500×6/100＝30mL。酒税額を必ずこの純アルコール量から求めるという意味ではありません。",
+      "objectives": [1],
+      "id": "zr-shuzei-class-q1",
+      "lesson": "zr-shuzei-class",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "米・米こうじ・水を発酵させてこし、ほかの清酒の法定要件も満たすと確定した酒類の品目は？",
+      "options": ["原料が米なので分類不能", "清酒", "必ず単式蒸留焼酎", "必ずビール"],
+      "answer": 1,
+      "explanation": "工程とほかの要件も満たす条件から清酒です。蒸留や麦芽の条件へ置き換えず、原料だけで判断しているわけでもありません。",
+      "objectives": [2],
+      "id": "zr-shuzei-class-q2",
+      "lesson": "zr-shuzei-class",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "17品目と四つの税率分類の関係について適切なのは？",
+      "options": [
+        "市販の商品名だけで税率が必ず決まる",
+        "同じ原料なら製法が違っても品目は必ず同じ",
+        "品目と税率上の分類は同じ一覧ではなく、発泡性等も確認する",
+        "その他の発泡性酒類を第18品目として追加する"
+      ],
+      "answer": 2,
+      "explanation": "品目と税率分類を区別します。品目追加、商品名だけの判断、製法を無視する扱いはいずれも適切ではありません。",
+      "objectives": [3],
+      "id": "zr-shuzei-class-q3",
+      "lesson": "zr-shuzei-class",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "法定分母に入る原料計200kg、麦芽120kg。比率と、それだけでビール該当性を断定できない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "麦芽比率は120/200＝60％。ほかの使用原料、工程等の法定要件も確認する必要があり、比率だけで品目を断定しない。",
+      "rubric": [
+        {
+          "criterion": "分母200kgを使うこと",
+          "points": 1
+        },
+        {
+          "criterion": "比率60％",
+          "points": 1
+        },
+        {
+          "criterion": "ほかの定義要件も必要なこと",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-shuzei-class-q4",
+      "lesson": "zr-shuzei-class",
+      "field": "shuzei"
+    }
+  ],
+  "zr-shuzei-license": [
+    {
+      "prompt": "製造免許と販売業免許の理解として適切なのは？",
+      "options": [
+        "どちらも税率を自由に選ぶ許可である",
+        "製造と販売の行為、場所、品目や範囲等の条件を分けて確認する",
+        "一つの免許でどの場所でも全品目を必ず扱える",
+        "販売免許があれば製造条件を確認しなくてよい"
+      ],
+      "answer": 1,
+      "explanation": "行為と免許の範囲は異なります。場所等の無制限な拡張、製造条件の省略、税率の選択はできません。",
+      "objectives": [1],
+      "id": "zr-shuzei-license-q1",
+      "lesson": "zr-shuzei-license",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "九月に製造し、十月に通常の課税移出をした。税率の時点を検討する基本的な着眼点は？",
+      "options": [
+        "代金入金日だけで必ず決める",
+        "請求書の印刷日だけで必ず決める",
+        "移出等の課税時点と適用日を確認する",
+        "製造月だけで必ず九月の率を使う"
+      ],
+      "answer": 2,
+      "explanation": "製造、移出、請求、回収は別の日になり得ます。適用する課税時点を確認します。",
+      "objectives": [2],
+      "id": "zr-shuzei-license-q2",
+      "lesson": "zr-shuzei-license",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "法定のみなし移出に該当すると確定した数量50Lと、通常の課税移出450L。別の非課税・特例等なし。課税数量の合計をLで答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["500"],
+      "explanation": "50＋450＝500L。実際の場外搬出がないだけで、法定のみなし移出50Lを落としません。",
+      "objectives": [3],
+      "id": "zr-shuzei-license-q3",
+      "lesson": "zr-shuzei-license",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "みなし移出と未納税移出は、なぜ同じものとして集計できませんか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "みなし移出は法定の事実を移出として扱う制度。未納税移出は所定の申告・書類等の条件の下でその移出に係る酒税を免除する制度で、流通段階の課税をつなぐ趣旨を留保と説明するものであり、要件・効果が違う。実際の数量と法定手続を別に確認する。",
+      "rubric": [
+        {
+          "criterion": "みなし移出の法定の擬制",
+          "points": 1
+        },
+        {
+          "criterion": "未納税移出の法的な酒税免除と課税をつなぐ趣旨",
+          "points": 1
+        },
+        {
+          "criterion": "異なる要件と手続を確認すること",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-shuzei-license-q4",
+      "lesson": "zr-shuzei-license",
+      "field": "shuzei"
+    }
+  ],
+  "zr-shuzei-amount": [
+    {
+      "prompt": "350mL入り4,000本。総数量をkLで答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["1.4"],
+      "explanation": "350×4,000＝1,400,000mL＝1,400L＝1.4kL。単位を段階ごとに換算します。",
+      "objectives": [1],
+      "id": "zr-shuzei-amount-q1",
+      "lesson": "zr-shuzei-amount",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "2026年九月に製造し十月に移出、通常移出の税率を確認する。適切な方法は？",
+      "options": [
+        "九月の製造日だけで必ず決める",
+        "商品名だけで決める",
+        "いつでも最も低い過去年の税率を選ぶ",
+        "品目・度数等に加え、移出日とその日へ適用する経過規定を確認する"
+      ],
+      "answer": 3,
+      "explanation": "課税時点と経過規定を確認します。製造日だけ、名称だけ、任意の過去税率では判断できません。",
+      "objectives": [2],
+      "id": "zr-shuzei-amount-q2",
+      "lesson": "zr-shuzei-amount",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "課税数量1.4kL、適用税率を本問では1kL当たり155,000円と確定、別調整・端数なし。税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["217000"],
+      "explanation": "1.4×155,000＝217,000円。1,400LへkL当たり税率を掛けないようにします。",
+      "objectives": [1],
+      "id": "zr-shuzei-amount-q3",
+      "lesson": "zr-shuzei-amount",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "独自の率表演習：基準20度で200,000円/kL、20度超一度ごとに10,000円/kL加算と指定。22度、数量2kL、度数端数なし。税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["440000"],
+      "explanation": "税率200,000＋（22－20）×10,000＝220,000円/kL、2kLで440,000円。本問の指定率表であり一般の全品目に共通する税率ではありません。",
+      "objectives": [3],
+      "id": "zr-shuzei-amount-q4",
+      "lesson": "zr-shuzei-amount",
+      "field": "shuzei"
+    }
+  ],
+  "zr-shuzei-return": [
+    {
+      "prompt": "未納税移出と輸出免税について適切なのは？",
+      "options": [
+        "どちらも移出数量を帳簿へ記録しない",
+        "どちらも後の手続を一切要しない",
+        "どちらも戻入れの売価控除である",
+        "移出時の酒税を免除して課税をつなぐ未納税移出と、輸出免税をそれぞれの条件で確認する"
+      ],
+      "answer": 3,
+      "explanation": "未納税移出も法的にはその移出に係る酒税の免除です。所定の申告・移入事実の書類等を確認し、輸出免税や戻入れと区別します。帳簿や手続を省略したり、売価で一括処理しません。",
+      "objectives": [1],
+      "id": "zr-shuzei-return-q1",
+      "lesson": "zr-shuzei-return",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "当月の移出税額90万円、控除要件を満たす戻入れ税額12万円、ほかの調整なし。差引税額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["78"],
+      "explanation": "90－12＝78万円。返品商品の売価ではなく、法定の控除対象税額です。",
+      "objectives": [2],
+      "id": "zr-shuzei-return-q2",
+      "lesson": "zr-shuzei-return",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "通常の六月の課税移出。休日等の例外なし。基本となる申告と納付の月は？",
+      "options": ["申告八月末、納付七月末", "申告は七月末、納付は八月末", "両方六月末", "両方七月末"],
+      "answer": 1,
+      "explanation": "原則の翌月末申告、翌々月末納付を区別します。同月扱いや順序の逆転は誤りです。",
+      "objectives": [3],
+      "id": "zr-shuzei-return-q3",
+      "lesson": "zr-shuzei-return",
+      "field": "shuzei"
+    },
+    {
+      "prompt": "税率改正を挟んで課税済みの酒類が戻った場合、当月移出数量との差だけで処理しない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "戻入れ等の控除要件、元の課税済み酒類と税額の対応、記帳・書類を確認する。改正前後の税率が違う場合、数量の単純相殺では正しい税額を再現できない。",
+      "rubric": [
+        {
+          "criterion": "元の課税済み酒類との対応",
+          "points": 1
+        },
+        {
+          "criterion": "法定の控除要件と記録",
+          "points": 1
+        },
+        {
+          "criterion": "数量差だけでは税額を再現できない理由",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-shuzei-return-q4",
+      "lesson": "zr-shuzei-return",
+      "field": "shuzei"
+    }
+  ],
+  "zr-kokuzei-priority": [
+    {
+      "prompt": "税の成立と確定の関係として適切なのは？",
+      "options": [
+        "納税義務が成立することと、納付すべき額が具体的に確定することを区別する",
+        "成立したら必ず同日に全額納付済みになる",
+        "督促がなければ税の成立はあり得ない",
+        "差押えが税額を初めて確定する唯一の方法である"
+      ],
+      "answer": 0,
+      "explanation": "成立・確定・納付・督促・差押えは別の段階です。同一視すると時系列を誤ります。",
+      "objectives": [1],
+      "id": "zr-kokuzei-priority-q1",
+      "lesson": "zr-kokuzei-priority",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "国税と抵当権の優先関係を検討する基本的な方法は？",
+      "options": [
+        "実際の納付日だけで決める",
+        "法定納期限等と登記等の日付を、適用規定に沿って比べる",
+        "国税の額が大きければ常に優先",
+        "国が先に差し押さえたら必ず全担保に優先"
+      ],
+      "answer": 1,
+      "explanation": "法定の比較時点と例外を確認します。金額、差押えの順だけ、実際の納付日だけでは判断できません。",
+      "objectives": [2, 3],
+      "id": "zr-kokuzei-priority-q2",
+      "lesson": "zr-kokuzei-priority",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "換価代金300万円。最優先の処分費20万円、国税に優先する抵当債権200万円、国税150万円のみ。国税への配当額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["80"],
+      "explanation": "300－20－200＝80万円。国税150万円の全額を配当する原資はありません。",
+      "objectives": [],
+      "id": "zr-kokuzei-priority-q3",
+      "lesson": "zr-kokuzei-priority",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "抵当権と国税の問題で、法定納期限等を督促状の日付へ置き換えてはいけない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "法定納期限等は優先関係の比較に用いる法定の時点で、督促という徴収手続の日とは役割が違う。税の種類や申告等に応じる定義を確認し、登記等と比較する。",
+      "rubric": [
+        {
+          "criterion": "二つの日付の役割の違い",
+          "points": 1
+        },
+        {
+          "criterion": "法定納期限等の規定を確認",
+          "points": 1
+        },
+        {
+          "criterion": "適切な公示日等との比較",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-kokuzei-priority-q4",
+      "lesson": "zr-kokuzei-priority",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "抵当権の登記日3月1日、比較する国税の法定納期限等4月1日。法定納期限等以前に設定登記された抵当権を優先する基本規定が適用され、例外なし。優先するのは？",
+      "options": [
+        "抵当権により担保される債権",
+        "国税が金額を問わず常に優先",
+        "後に差し押さえた方が必ず優先",
+        "登記日と法定納期限等は無関係"
+      ],
+      "answer": 0,
+      "explanation": "指定の基本規定では3月1日の設定登記が4月1日より前なので担保債権が優先します。国税の一律優先や差押順だけで判断しません。",
+      "objectives": [3],
+      "id": "zr-kokuzei-priority-q5",
+      "lesson": "zr-kokuzei-priority",
+      "field": "kokuzei"
+    }
+  ],
+  "zr-kokuzei-seizure": [
+    {
+      "prompt": "通常の督促後の期間判定で、基本となるのは？",
+      "options": [
+        "家族が同居していれば家族財産も当然に対象とする",
+        "督促状を発した日からの法定期間を確認する",
+        "必ず受取日だけを起点にする",
+        "税額があれば手続を常に省略できる"
+      ],
+      "answer": 1,
+      "explanation": "発した日と受取日を区別し、要件と例外を確認します。手続や財産の帰属は省略できません。",
+      "objectives": [1],
+      "id": "zr-kokuzei-seizure-q1",
+      "lesson": "zr-kokuzei-seizure",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "換価見込600万円、処分費20万円、国税に優先する債権400万円。ほかの優先負担なし。国税へ回り得る剰余を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["180"],
+      "explanation": "600－20－400＝180万円。法定の無剰余等の判断には例外や見込額の認定も確認します。",
+      "objectives": [],
+      "id": "zr-kokuzei-seizure-q2",
+      "lesson": "zr-kokuzei-seizure",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "AのBに対する売掛金を差し押さえる場合、Bは何に当たる？",
+      "options": ["国税の本来の納税者に必ず変わる", "Aの全財産の所有者", "国税不服審判所長", "第三債務者"],
+      "answer": 3,
+      "explanation": "BはAへ支払義務を負う第三債務者です。差押対象はAの債権であり、Bが当然にAの税の本来納税者になるわけではありません。",
+      "objectives": [3],
+      "id": "zr-kokuzei-seizure-q3",
+      "lesson": "zr-kokuzei-seizure",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "滞納税等120万円、差押売掛金100万円のうち現実の取立て40万円のみを充当。他の費用等なし。税等の残額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["80"],
+      "explanation": "120－40＝80万円。差押えた額面100万円全額を、回収済みとみなして差し引きません。",
+      "objectives": [3],
+      "id": "zr-kokuzei-seizure-q4",
+      "lesson": "zr-kokuzei-seizure",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "対象国税は取立てにより全額徴収済み。ほかに対象となる滞納税等はない。同じ税のためさらに預金を重ねて差し押さえる判断は？",
+      "options": [
+        "徴収に必要な範囲を超えるため行わない",
+        "完納後も必ず無制限に差し押さえる",
+        "同居家族の財産なら代わりに全額差し押さえる",
+        "税額がゼロでも差押額は変わらない"
+      ],
+      "answer": 0,
+      "explanation": "必要な徴収範囲と財産の帰属を確認します。完納後に同じ税のための余分な差押えを続ける理由はありません。",
+      "objectives": [2],
+      "id": "zr-kokuzei-seizure-q5",
+      "lesson": "zr-kokuzei-seizure",
+      "field": "kokuzei"
+    }
+  ],
+  "zr-kokuzei-sale": [
+    {
+      "prompt": "換価代金500万円。順序は処分費20万円、優先債権300万円、対象国税250万円。ほかの債権なし。対象国税への配当を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["180"],
+      "explanation": "500－20－300＝180万円。250万円のうち70万円が未充足です。",
+      "objectives": [1],
+      "id": "zr-kokuzei-sale-q1",
+      "lesson": "zr-kokuzei-sale",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "配当不足があったときの第二次納税義務の基本的な扱いは？",
+      "options": [
+        "不足分は必ず同居家族へ全額請求できる",
+        "取引先は全員自動的に同額を負う",
+        "本来の納税義務と常に同一で条件がない",
+        "第三者について個別の法定要件と追及限度を確認する"
+      ],
+      "answer": 3,
+      "explanation": "不足だけで義務は自動発生しません。家族・取引先という関係だけでも決まらず、本来の義務と区別します。",
+      "objectives": [2],
+      "id": "zr-kokuzei-sale-q2",
+      "lesson": "zr-kokuzei-sale",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "第二次納税義務の全要件を満たし、徴収不足500万円、法定の利益等による追及限度300万円。他の制限なし。追及上限を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["300"],
+      "explanation": "不足額と法定限度を比べ、小さい300万円。要件判断は本問で満たすと指定しています。",
+      "objectives": [3],
+      "id": "zr-kokuzei-sale-q3",
+      "lesson": "zr-kokuzei-sale",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "利益の法定限度300万円でも徴収不足が200万円の場合、300万円全額を追及しない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "徴収不足を補うための義務であり、不足200万円と法定限度300万円の範囲で判断する。本問の上限は200万円で、利益額が大きいだけで不足を超えて徴収しない。",
+      "rubric": [
+        {
+          "criterion": "徴収不足を補う性質",
+          "points": 1
+        },
+        {
+          "criterion": "不足と法定限度の比較",
+          "points": 1
+        },
+        {
+          "criterion": "上限200万円",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-kokuzei-sale-q4",
+      "lesson": "zr-kokuzei-sale",
+      "field": "kokuzei"
+    }
+  ],
+  "zr-kokuzei-relief": [
+    {
+      "prompt": "災害等に基づく納税の猶予と、一時納付で事業継続等が困難となる場合の換価の猶予の区別は？",
+      "options": [
+        "納税の猶予は国税通則法、換価の猶予は国税徴収法の要件・効果を確認する",
+        "どちらも相談だけで本税がすべて消滅する",
+        "換価の猶予だけが所得税の所得控除である",
+        "どちらも同じ申請書の提出だけで必ず無期限になる"
+      ],
+      "answer": 0,
+      "explanation": "二つの根拠と事情・条件を分けます。自動免除、所得控除、無期限の自動認可ではありません。",
+      "objectives": [1],
+      "id": "zr-kokuzei-relief-q1",
+      "lesson": "zr-kokuzei-relief",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "猶予対象の本税120万円。計画どおり月10万円を六回、追加20万円を納付。本税だけを計算し他の充当なし。残額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["40"],
+      "explanation": "120－10×6－20＝40万円。猶予は対象税を直ちに免除するものではありません。",
+      "objectives": [],
+      "id": "zr-kokuzei-relief-q2",
+      "lesson": "zr-kokuzei-relief",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "滞納処分の停止の基本的な理由に当たるものは？",
+      "options": [
+        "納期限前に税が成立しただけ",
+        "執行できる財産がない等の法定の徴収困難な状態",
+        "納税者が口頭で停止と宣言した",
+        "税額が少し不満である"
+      ],
+      "answer": 1,
+      "explanation": "無財産や生活の著しい窮迫等の法定理由を確認します。自己宣言、不満、成立だけでは停止の理由になりません。",
+      "objectives": [2],
+      "id": "zr-kokuzei-relief-q3",
+      "lesson": "zr-kokuzei-relief",
+      "field": "kokuzei"
+    },
+    {
+      "prompt": "国税の処分に不服がある場合の通常の申立先と、徴収への影響を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "通常は処分庁への再調査の請求又は国税不服審判所長への審査請求等を検討する。申立てだけで徴収全体が自動停止するわけではない。一方、差押財産の換価には決定・裁決までの原則的禁止があり、例外や取立て・配当との違いも確認する。",
+      "rubric": [
+        {
+          "criterion": "再調査・審査請求の申立先",
+          "points": 1
+        },
+        {
+          "criterion": "徴収全体は自動停止しないこと",
+          "points": 1
+        },
+        {
+          "criterion": "換価の原則的禁止と例外等の区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-kokuzei-relief-q4",
+      "lesson": "zr-kokuzei-relief",
+      "field": "kokuzei"
+    }
+  ],
+  "zr-jumin-individual": [
+    {
+      "prompt": "2026年1月1日甲市に住所があり五月に乙市へ転居。通常の2026年度個人住民税の住所地の基準は？",
+      "options": ["甲市", "必ず乙市", "六月の給与支払者の所在地だけ", "二市へ所得を転居月で必ず月割りする"],
+      "answer": 0,
+      "explanation": "通常は一月一日の住所地で判断します。転居後の市や勤務先所在地、単純な月割りへ置き換えません。",
+      "objectives": [1],
+      "id": "zr-jumin-individual-q1",
+      "lesson": "zr-jumin-individual",
+      "field": "jumin"
+    },
+    {
+      "prompt": "2026年度の通常の個人住民税の所得割で基本的に対象とする所得は？",
+      "options": ["生涯所得の累計", "2025年分の所得", "2026年六月だけの所得", "2027年分の見込所得"],
+      "answer": 1,
+      "explanation": "前年所得を年度の税へ対応させます。徴収月の所得や将来所得、生涯累計ではありません。",
+      "objectives": [2],
+      "id": "zr-jumin-individual-q2",
+      "lesson": "zr-jumin-individual",
+      "field": "jumin"
+    },
+    {
+      "prompt": "通常の所得割の単純な算出例。課税所得200万円、非指定都市の市6％・県4％、控除等は別途で本問では引かない。市県の算出所得割合計を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["200000"],
+      "explanation": "2,000,000×（6％＋4％）＝200,000円。均等割等を含む最終税額ではありません。",
+      "objectives": [3],
+      "id": "zr-jumin-individual-q3",
+      "lesson": "zr-jumin-individual",
+      "field": "jumin"
+    },
+    {
+      "prompt": "所得割と均等割、併せて徴収される森林環境税の性質を区別してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "所得割は所得を基礎とする住民税、均等割は所得額に比例せず課税対象者へ所定の一定額を課す住民税で、非課税等の条件を確認する。森林環境税は併せて徴収される国税である。所得割ゼロだけで全負担ゼロとは限らない。",
+      "rubric": [
+        {
+          "criterion": "所得割の基礎",
+          "points": 1
+        },
+        {
+          "criterion": "均等割が所得に比例せず所定の一定額を課す性質と非課税等の条件",
+          "points": 1
+        },
+        {
+          "criterion": "森林環境税が国税であること",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-jumin-individual-q4",
+      "lesson": "zr-jumin-individual",
+      "field": "jumin"
+    }
+  ],
+  "zr-jumin-adjustments": [
+    {
+      "prompt": "2025年所得に対する2026年度住民税。基礎控除43万円の基本条件で、調整控除上の基礎控除差は5万円と指定。適切な扱いは？",
+      "options": [
+        "控除は名前が同じなら所得税の額をすべて転記する",
+        "実際の所得税基礎控除との差ではなく、指定された制度上の5万円を使う",
+        "所得税88万円との差45万円を必ず使う",
+        "43万円全額を税額から引く"
+      ],
+      "answer": 1,
+      "explanation": "住民税の所得控除と調整控除の差額は別です。実際の差、税額との混同、所得税からの一律転記はいずれも誤りです。",
+      "objectives": [1],
+      "id": "zr-jumin-adjustments-q1",
+      "lesson": "zr-jumin-adjustments",
+      "field": "jumin"
+    },
+    {
+      "prompt": "前年総所得300万円、社会保険料控除60万円、住民税基礎控除43万円、ほかの所得控除・調整なし。課税所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["197"],
+      "explanation": "300－60－43＝197万円。所得税の基礎控除額へ置き換えません。",
+      "objectives": [2],
+      "id": "zr-jumin-adjustments-q2",
+      "lesson": "zr-jumin-adjustments",
+      "field": "jumin"
+    },
+    {
+      "prompt": "課税所得197万円、算出所得割合計197,000円。人的控除差5万円と課税所得の小さい方×5％を調整控除とする基本条件、ほかの税額控除なし。控除後所得割を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["194500"],
+      "explanation": "調整控除50,000×5％＝2,500円、197,000－2,500＝194,500円。所得から2,500円を引く計算ではありません。",
+      "objectives": [3],
+      "id": "zr-jumin-adjustments-q3",
+      "lesson": "zr-jumin-adjustments",
+      "field": "jumin"
+    },
+    {
+      "prompt": "住宅関係や寄附の控除が資料にあるとき、金額を無条件に合算せず何を確認しますか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "各制度の適用要件、所得や時期、控除限度、適用順序を確認する。寄附額や借入残高そのものが控除額ではなく、法定計算を経た額を税額から差し引く。",
+      "rubric": [
+        {
+          "criterion": "各制度の要件・時期",
+          "points": 1
+        },
+        {
+          "criterion": "限度と適用順序",
+          "points": 1
+        },
+        {
+          "criterion": "支出額等と税額控除額の区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-jumin-adjustments-q4",
+      "lesson": "zr-jumin-adjustments",
+      "field": "jumin"
+    }
+  ],
+  "zr-jumin-corporate": [
+    {
+      "prompt": "法人税割の課税標準として適切な考え方は？",
+      "options": [
+        "今回の中間納付差引後の納付額だけを使う",
+        "資本金の額だけが唯一の基礎になる",
+        "所定の調整をした法人税額等を基礎にする",
+        "法人の所得へ必ず同じ率を掛ける"
+      ],
+      "answer": 2,
+      "explanation": "法人税額等を基礎とし、所得・差引納付額・資本額とは区別します。均等割の区分とも別です。",
+      "objectives": [1],
+      "id": "zr-jumin-corporate-q1",
+      "lesson": "zr-jumin-corporate",
+      "field": "jumin"
+    },
+    {
+      "prompt": "分割対象法人税額1,000万円、従業者は甲市60人、乙市40人。所定の分割条件を満たし補正なし。甲市の分割課税標準を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["600"],
+      "explanation": "1,000×60/（60＋40）＝600万円です。",
+      "objectives": [2],
+      "id": "zr-jumin-corporate-q2",
+      "lesson": "zr-jumin-corporate",
+      "field": "jumin"
+    },
+    {
+      "prompt": "小資本の法人で、法定区分による年の市均等割を甲市12万円・乙市5万円と確定して与える。適切なのは？",
+      "options": [
+        "各市の区分と月数等を確認し、その額を法人税割と別に計算する",
+        "12万円を従業者割合で二市へ必ず分ける",
+        "所得が赤字なら必ずどちらもゼロ",
+        "法人税割の率を均等割額へさらに掛ける"
+      ],
+      "answer": 0,
+      "explanation": "均等割は各市の法定区分等で計算します。法人税割の分割比率や率を流用せず、赤字だけでゼロとも決まりません。",
+      "objectives": [3],
+      "id": "zr-jumin-corporate-q3",
+      "lesson": "zr-jumin-corporate",
+      "field": "jumin"
+    },
+    {
+      "prompt": "年度途中の事務所開設があるとき、年間の従業者数と均等割額をそのまま写さない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "法人税割の分割には従業者数の補正等を確認し、均等割には事務所を有した月数等の計算を確認する。二つの計算は目的が異なり、単純に同じ割合へ統一しない。",
+      "rubric": [
+        {
+          "criterion": "分割の従業者補正等",
+          "points": 1
+        },
+        {
+          "criterion": "均等割の月数等",
+          "points": 1
+        },
+        {
+          "criterion": "二つの算定の区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2, 3],
+      "id": "zr-jumin-corporate-q4",
+      "lesson": "zr-jumin-corporate",
+      "field": "jumin"
+    }
+  ],
+  "zr-jumin-collection": [
+    {
+      "prompt": "通常の給与特別徴収の期間は？",
+      "options": [
+        "必ず一月から十二月",
+        "必ず四月の一回だけ",
+        "給与支払日とは無関係に十年分を一括",
+        "六月から翌年五月"
+      ],
+      "answer": 3,
+      "explanation": "通常は六月から翌年五月に徴収します。所得対象年と徴収期間のずれを確認します。",
+      "objectives": [1],
+      "id": "zr-jumin-collection-q1",
+      "lesson": "zr-jumin-collection",
+      "field": "jumin"
+    },
+    {
+      "prompt": "法定計算後の退職所得200万円。退職所得住民税は市6％・県4％を使い、控除等なし、端数なし。市税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["120000"],
+      "explanation": "2,000,000×市6％＝120,000円。県分80,000円とは分けます。指定都市の通常所得に使う8％を退職所得へ流用しません。",
+      "objectives": [2],
+      "id": "zr-jumin-collection-q2",
+      "lesson": "zr-jumin-collection",
+      "field": "jumin"
+    },
+    {
+      "prompt": "所得税の確定申告や給与支払報告等と、住民税申告の関係は？",
+      "options": [
+        "住民税申告は勤務先の所在地だけで決まる",
+        "情報が自治体へ伝わる仕組みと、住民税独自に申告を要する場合を確認する",
+        "所得税申告の要否と住民税申告の要否は常に完全一致する",
+        "自治体へ所得情報は一切伝わらない"
+      ],
+      "answer": 1,
+      "explanation": "所得税で申告不要でも住民税の申告を検討する場面等があります。完全一致、情報連携なし、勤務先だけという説明は不正確です。",
+      "objectives": [3],
+      "id": "zr-jumin-collection-q3",
+      "lesson": "zr-jumin-collection",
+      "field": "jumin"
+    },
+    {
+      "prompt": "退職して給与特別徴収が終わると、その年度の残額は消えますか。確認する手続とともに説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "残額は退職しただけでは消えない。異動時期、特別徴収の継続、一括徴収又は普通徴収への切替え等の条件と届出を確認する。前年所得に対する年度の税と、現在の給与の状態を区別する。",
+      "rubric": [
+        {
+          "criterion": "残額は自動消滅しない",
+          "points": 1
+        },
+        {
+          "criterion": "異動時期と徴収方法・手続",
+          "points": 1
+        },
+        {
+          "criterion": "所得年と徴収年度の区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [1, 3],
+      "id": "zr-jumin-collection-q4",
+      "lesson": "zr-jumin-collection",
+      "field": "jumin"
+    }
+  ],
+  "zr-jigyo-corporate": [
+    {
+      "prompt": "通常の物品卸売業の普通法人。外形標準課税の対象外で、収入金額課税等の特殊業種にも該当しない条件。法人事業税の基本の課税標準は？",
+      "options": ["所得", "常に売上総額のみ", "必ず保険料収入", "資本割だけで所得割はない"],
+      "answer": 0,
+      "explanation": "通常の対象外法人の本問では所得割を検討します。収入割の特殊業種や外形標準課税の別の条件を持ち込みません。",
+      "objectives": [1],
+      "id": "zr-jigyo-corporate-q1",
+      "lesson": "zr-jigyo-corporate",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "法人税所得800万円。規定確認後の事業税独自の加算30万円、減算10万円のみ。事業税所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["820"],
+      "explanation": "800＋30－10＝820万円。会計利益へ戻って重ねて調整しません。",
+      "objectives": [2],
+      "id": "zr-jigyo-corporate-q2",
+      "lesson": "zr-jigyo-corporate",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "12か月、通常所得課税、軽減税率の全条件を満たす。所得600万円、400万円以下3.5％・超過800万円以下5.3％、標準税率で他調整なし。所得割を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["246000"],
+      "explanation": "400万円×3.5％＋200万円×5.3％＝140,000＋106,000＝246,000円です。",
+      "objectives": [3],
+      "id": "zr-jigyo-corporate-q3",
+      "lesson": "zr-jigyo-corporate",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "収入割の課税標準として法定調整後の収入金額2億円、税率を本問では1％と指定。ほかの税区分は求めない。税額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["200"],
+      "explanation": "20,000万円×1％＝200万円。費用を引いた利益へ税率を掛けるものではありません。指定率は全業種共通の率ではありません。",
+      "objectives": [1],
+      "id": "zr-jigyo-corporate-q4",
+      "lesson": "zr-jigyo-corporate",
+      "field": "jigyo"
+    }
+  ],
+  "zr-jigyo-external": [
+    {
+      "prompt": "2026年4月開始年度、期末資本金2億円の通常の普通法人。外形標準課税から除かれる法人・事業等には該当しない。基本的な対象判定は？",
+      "options": [
+        "資本金1億円超の基本基準で対象となる",
+        "利益が赤字なら対象外となる",
+        "資本金2億円でも一律に対象外",
+        "従業者数だけで判定し資本金は無関係"
+      ],
+      "answer": 0,
+      "explanation": "本問は基本の資本金基準を満たします。赤字や従業者だけを理由に対象外としません。小資本法人の拡大要件は別に確認します。",
+      "objectives": [1],
+      "id": "zr-jigyo-external-q1",
+      "lesson": "zr-jigyo-external",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "法定集計後の報酬給与額4,000万円、純支払利子500万円、純支払賃借料2,500万円。収益配分額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["7000"],
+      "explanation": "4,000＋500＋2,500＝7,000万円。売上や法人税額はここに加えません。",
+      "objectives": [2],
+      "id": "zr-jigyo-external-q2",
+      "lesson": "zr-jigyo-external",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "前問の収益配分額7,000万円、単年度損益1,000万円、雇用安定控除等の適用なし。付加価値額を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["8000"],
+      "explanation": "7,000＋1,000＝8,000万円。給与等4,000万円は収益配分額の70％を超えない設定です。",
+      "objectives": [3],
+      "id": "zr-jigyo-external-q3",
+      "lesson": "zr-jigyo-external",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "収益配分額8,000万円、単年度損失500万円、他控除等なし。所得割の所得もない場合、事業税全体が必ずゼロにならない理由を説明してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "付加価値額の基本額は8,000－500＝7,500万円であり、付加価値割や資本割が残る場合がある。所得割、付加価値割、資本割は別の課税標準で計算する。",
+      "rubric": [
+        {
+          "criterion": "付加価値額7,500万円",
+          "points": 1
+        },
+        {
+          "criterion": "損失の符号を反映",
+          "points": 1
+        },
+        {
+          "criterion": "所得割と他の二部分の区別",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-jigyo-external-q4",
+      "lesson": "zr-jigyo-external",
+      "field": "jigyo"
+    }
+  ],
+  "zr-jigyo-individual": [
+    {
+      "prompt": "個人事業税の対象を検討する方法として適切なのは？",
+      "options": [
+        "職業の通称だけで必ず決める",
+        "全業種に同じ税率しかない",
+        "契約や実際の業務を法定業種の範囲へ対応させる",
+        "所得税で事業所得なら必ず全く同じ対象・控除になる"
+      ],
+      "answer": 2,
+      "explanation": "法定業種、契約、特則を確認します。所得税との完全一致、通称のみ、単一税率という扱いは適切ではありません。",
+      "objectives": [1],
+      "id": "zr-jigyo-individual-q1",
+      "lesson": "zr-jigyo-individual",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "所得税の青色申告特別控除後所得435万円、使った青色控除65万円。ほかの差なし。事業主控除前の事業税用所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["500"],
+      "explanation": "435＋65＝500万円。事業税に青色申告特別控除はないため戻します。",
+      "objectives": [2],
+      "id": "zr-jigyo-individual-q2",
+      "lesson": "zr-jigyo-individual",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "一年間の調整後所得500万円、繰越損失等なし、事業主控除290万円、税率5％。個人事業税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["105000"],
+      "explanation": "（500－290）万円×5％＝105,000円です。",
+      "objectives": [3],
+      "id": "zr-jigyo-individual-q3",
+      "lesson": "zr-jigyo-individual",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "法定計算上の事業期間6か月、調整後所得250万円、損失控除等なし。事業主控除は年290万円の6/12、税率5％。税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["52500"],
+      "explanation": "控除145万円、課税標準250－145＝105万円、5％で52,500円。所得を年換算しません。",
+      "objectives": [3],
+      "id": "zr-jigyo-individual-q4",
+      "lesson": "zr-jigyo-individual",
+      "field": "jigyo"
+    }
+  ],
+  "zr-jigyo-return": [
+    {
+      "prompt": "非製造業の所定の分割。所得1,000万円の半分を通年各一事務所で1:1、半分を従業者甲30人・乙70人で配分、補正・端数なし。甲県の分割所得を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["400"],
+      "explanation": "事務所部分250万円＋従業者部分150万円＝400万円。従業者だけの300万円ではありません。",
+      "objectives": [1],
+      "id": "zr-jigyo-return-q1",
+      "lesson": "zr-jigyo-return",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "特別法人事業税の基準法人所得割額100,000円。通常の外形標準課税区分で260％を適用する条件、ほかの調整なし。税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["260000"],
+      "explanation": "100,000×2.6＝260,000円。付加価値割や資本割を含む総事業税に掛けるのではありません。",
+      "objectives": [2],
+      "id": "zr-jigyo-return-q2",
+      "lesson": "zr-jigyo-return",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "税率表を年度へ対応させるときの基本は？",
+      "options": [
+        "所得税の暦年だけで全法人を区分する",
+        "事業年度の始期・終期と、改正の開始年度等の条件を確認する",
+        "決算月だけを見て常に同じ表を使う",
+        "最も低い過去年度を自由に選ぶ"
+      ],
+      "answer": 1,
+      "explanation": "適用が開始年度によるか等を読みます。決算月だけ、任意の過去年、所得税の暦年だけでは対応しません。",
+      "objectives": [3],
+      "id": "zr-jigyo-return-q3",
+      "lesson": "zr-jigyo-return",
+      "field": "jigyo"
+    },
+    {
+      "prompt": "地方税の法人事業税520,000円、国税の特別法人事業税182,000円が確定。既納付は各200,000円と70,000円。追加納付を税目別に説明してください。 合計額も示してください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "事業税は520,000－200,000＝320,000円、特別法人事業税は182,000－70,000＝112,000円。合計432,000円で、二つの税を別々に精算する。",
+      "rubric": [
+        {
+          "criterion": "事業税320,000円",
+          "points": 1
+        },
+        {
+          "criterion": "特別法人事業税112,000円",
+          "points": 1
+        },
+        {
+          "criterion": "合計432,000円と別税目の管理",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [2],
+      "id": "zr-jigyo-return-q4",
+      "lesson": "zr-jigyo-return",
+      "field": "jigyo"
+    }
+  ],
+  "zr-kotei-scope": [
+    {
+      "prompt": "固定資産税の課税客体を整理する基本的な三分類は？",
+      "options": [
+        "土地・家屋・償却資産",
+        "給与・配当・退職金",
+        "国税・地方税・社会保険料",
+        "現金・売掛金・買掛金"
+      ],
+      "answer": 0,
+      "explanation": "固定資産税は土地、家屋、償却資産を区分します。他の選択肢は所得や負担、運転資金等の分類です。",
+      "objectives": [1],
+      "id": "zr-kotei-scope-q1",
+      "lesson": "zr-kotei-scope",
+      "field": "kotei"
+    },
+    {
+      "prompt": "一月一日に甲が所有し二月に乙へ売却。通常の所有者課税で特例なし。市町村へのその年度の納税義務の基準となるのは？",
+      "options": [
+        "毎月二人へ必ず等分する",
+        "一月一日の所有者である甲",
+        "契約上の税相当額精算だけで必ず乙へ交替する",
+        "十二月末の所有者だけ"
+      ],
+      "answer": 1,
+      "explanation": "賦課期日の所有者等を確認します。当事者の精算、年末所有、単純月割りへ置き換えません。",
+      "objectives": [2],
+      "id": "zr-kotei-scope-q2",
+      "lesson": "zr-kotei-scope",
+      "field": "kotei"
+    },
+    {
+      "prompt": "特例等を経た課税標準額400万円、標準税率1.4％、税額軽減等なし。固定資産税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["56000"],
+      "explanation": "4,000,000×1.4％＝56,000円。取得価額や調整前評価額を使いません。",
+      "objectives": [3],
+      "id": "zr-kotei-scope-q3",
+      "lesson": "zr-kotei-scope",
+      "field": "kotei"
+    },
+    {
+      "prompt": "土地の取得価額3,000万円、評価額2,000万円、特例等適用後の課税標準400万円は、何が違いますか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "取得価額は取得のための価額、評価額は固定資産評価の基準等により求めた価格、課税標準は特例等を反映し税率を適用する基礎。税率は本問では400万円に掛ける。",
+      "rubric": [
+        {
+          "criterion": "取得価額と評価額の区別",
+          "points": 1
+        },
+        {
+          "criterion": "特例等を反映した課税標準",
+          "points": 1
+        },
+        {
+          "criterion": "税率を掛ける基礎400万円",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-kotei-scope-q4",
+      "lesson": "zr-kotei-scope",
+      "field": "kotei"
+    }
+  ],
+  "zr-kotei-land": [
+    {
+      "prompt": "一戸の対象住宅の敷地300㎡。住宅用地の全条件を満たす。小規模住宅用地の基本限度200㎡を使う区分は？",
+      "options": [
+        "床面積100㎡なら土地も100㎡だけが必ず対象",
+        "200㎡が小規模、100㎡が一般住宅用地",
+        "300㎡すべてが小規模",
+        "100㎡が小規模、200㎡が必ず対象外"
+      ],
+      "answer": 1,
+      "explanation": "一戸当たりの限度と住宅用地の条件を対応させます。全体の一律区分や床面積との単純置換えはできません。",
+      "objectives": [1],
+      "id": "zr-kotei-land-q1",
+      "lesson": "zr-kotei-land",
+      "field": "kotei"
+    },
+    {
+      "prompt": "前問の土地評価1,800万円は面積へ均一に対応。小規模200㎡は1/6、一般100㎡は1/3。負担調整前の本則課税標準を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["400"],
+      "explanation": "200㎡分1,200万円÷6＝200万円、100㎡分600万円÷3＝200万円、合計400万円です。",
+      "objectives": [2],
+      "id": "zr-kotei-land-q2",
+      "lesson": "zr-kotei-land",
+      "field": "kotei"
+    },
+    {
+      "prompt": "住宅用地の本則課税標準400万円、前年度330万円。所定の負担調整は前年度＋本則の5％で上下限に該当せず。他調整なし。当年度課税標準を万円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["350"],
+      "explanation": "330＋400×5％＝350万円。評価額そのものの変更ではありません。",
+      "objectives": [2],
+      "id": "zr-kotei-land-q3",
+      "lesson": "zr-kotei-land",
+      "field": "kotei"
+    },
+    {
+      "prompt": "土地の評価額が据え置かれたのに税額が増えることがあるのはなぜですか。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "前年度課税標準が本則へ達していない場合など、負担調整で実際の課税標準が増えることがある。評価額と課税標準は別の数字なので、税額増加だけで評価額上昇と判断しない。",
+      "rubric": [
+        {
+          "criterion": "評価額と課税標準の区別",
+          "points": 1
+        },
+        {
+          "criterion": "負担調整による変化",
+          "points": 1
+        },
+        {
+          "criterion": "税額だけで価格変化を断定しないこと",
+          "points": 1
+        }
+      ],
+      "explanation": "解答例の条件と理由を照合し、独自の基準で自己確認してください。公式の採点や合否の判定ではありません。",
+      "objectives": [3],
+      "id": "zr-kotei-land-q4",
+      "lesson": "zr-kotei-land",
+      "field": "kotei"
+    }
+  ],
+  "zr-kotei-building": [
+    {
+      "prompt": "家屋評価の基本的な考え方は？",
+      "options": [
+        "土地の路線価を床面積へ掛けるだけ",
+        "会計の帳簿価額と必ず完全一致する",
+        "再建築価格等を基礎に経年減点等を反映する",
+        "購入価格だけを毎年必ず固定する"
+      ],
+      "answer": 2,
+      "explanation": "再建築価格と経年等を確認します。購入額、土地の評価方法、会計簿価と一律に同じではありません。",
+      "objectives": [1],
+      "id": "zr-kotei-building-q1",
+      "lesson": "zr-kotei-building",
+      "field": "kotei"
+    },
+    {
+      "prompt": "新築住宅の税額減額は、評価額の計算とどう違う？",
+      "options": [
+        "評価額を必ずゼロにする",
+        "取得価額から補助金として現金を必ず返す",
+        "土地の課税標準だけを減らす",
+        "所定の床面積等に対応する税額を軽減する別段階である"
+      ],
+      "answer": 3,
+      "explanation": "税額段階の軽減です。評価額ゼロ、現金補助、土地だけの制度へ置き換えません。",
+      "objectives": [2],
+      "id": "zr-kotei-building-q2",
+      "lesson": "zr-kotei-building",
+      "field": "kotei"
+    },
+    {
+      "prompt": "一般住宅150㎡。適用時期・地域・用途等の全要件を満たし120㎡分の税額を1/2減額。減額前168,000円は面積へ均等対応。減額額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["67200"],
+      "explanation": "168,000×120/150×1/2＝67,200円。全体を二分の一にしません。",
+      "objectives": [3],
+      "id": "zr-kotei-building-q3",
+      "lesson": "zr-kotei-building",
+      "field": "kotei"
+    },
+    {
+      "prompt": "前問の減額後の家屋税額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["100800"],
+      "explanation": "168,000－67,200＝100,800円。減額額と残る税額を区別します。",
+      "objectives": [2, 3],
+      "id": "zr-kotei-building-q4",
+      "lesson": "zr-kotei-building",
+      "field": "kotei"
+    }
+  ],
+  "zr-kotei-depreciable": [
+    {
+      "prompt": "償却資産の評価と会計上の償却について適切なのは？",
+      "options": [
+        "会計簿価を必ずそのまま転記する",
+        "法人税で全額損金なら必ず申告不要",
+        "すべての資産が購入翌年に必ずゼロになる",
+        "評価方法や最低限度等が異なり、会計償却済みでも評価ゼロとは限らない"
+      ],
+      "answer": 3,
+      "explanation": "地方税の評価を独自に確認します。会計・法人税との自動一致や申告不要、即ゼロ化はできません。",
+      "objectives": [1],
+      "id": "zr-kotei-depreciable-q1",
+      "lesson": "zr-kotei-depreciable",
+      "field": "kotei"
+    },
+    {
+      "prompt": "取得価額1,000万円、耐用年数15年の指定係数。初年度残存率0.929、他補正なし。初年度評価額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["9290000"],
+      "explanation": "10,000,000×0.929＝9,290,000円です。",
+      "objectives": [2],
+      "id": "zr-kotei-depreciable-q2",
+      "lesson": "zr-kotei-depreciable",
+      "field": "kotei"
+    },
+    {
+      "prompt": "前問の翌年度は前年度評価額9,290,000円×0.858、端数なし、下限等に未到達。評価額を円で答えてください。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": ["7970820"],
+      "explanation": "9,290,000×0.858＝7,970,820円。翌年度も取得価額へ初年度率を掛け直すのではありません。",
+      "objectives": [2],
+      "id": "zr-kotei-depreciable-q3",
+      "lesson": "zr-kotei-depreciable",
+      "field": "kotei"
+    },
+    {
+      "prompt": "2026年度、通常の償却資産の課税標準合計140万円、免税点150万円を適用する条件。適切なのは？",
+      "options": [
+        "土地と家屋もすべて合算して150万円で判定する",
+        "2027年度以後の新しい額へ年度を問わず置き換える",
+        "本例は免税点未満だが申告の要否は別に確認する",
+        "一台ごとに150万円以上かだけを判定する"
+      ],
+      "answer": 2,
+      "explanation": "同一市町村内の対象資産の所定の集計で判定し、種類別の免税点と申告を分けます。将来年度の額も混ぜません。",
+      "objectives": [3],
+      "id": "zr-kotei-depreciable-q4",
+      "lesson": "zr-kotei-depreciable",
+      "field": "kotei"
+    }
+  ]
+}

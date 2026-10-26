@@ -1,0 +1,147 @@
+税理士 住民税 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：住民税（税法）
+地方税法の道府県民税・市町村民税と総則・関係法令。個人と法人を含む。
+前提：所得税法の所得区分と所得控除の基礎。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jumin/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-jumin-individual] 個人住民税の住所・年度・所得／40分
+      目標：一月一日の住所地を確認する／所得の年と課税年度を分ける／所得割と均等割を区別する
+      前提：所得税法の所得区分と所得控除の基礎。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-individual-check] 4問：zr-jumin-individual-q1、zr-jumin-individual-q2、zr-jumin-individual-q3、zr-jumin-individual-q4
+      用語：賦課期日・所得割・均等割
+      次：zr-jumin-adjustments
+      追加学習・制約：非課税限度額、未成年者等、事務所家屋敷課税の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-individual/
+      技能1 一月一日の住所地を確認する：説明・例題→自力演習兼評価 zr-jumin-individual-q1
+      技能2 所得の年と課税年度を分ける：説明・例題→自力演習兼評価 zr-jumin-individual-q2
+      技能3 所得割と均等割を区別する：説明・例題→自力演習兼評価 zr-jumin-individual-q3、zr-jumin-individual-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-jumin-adjustments] 所得控除・調整控除・税額控除／40分
+      目標：所得税との差を識別する／課税所得を計算する／所得控除と税額控除の段階を整理する
+      前提：前のレッスン「個人住民税の住所・年度・所得」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-adjustments-check] 4問：zr-jumin-adjustments-q1、zr-jumin-adjustments-q2、zr-jumin-adjustments-q3、zr-jumin-adjustments-q4
+      用語：調整控除・所得控除・寄附金税額控除
+      次：zr-jumin-corporate
+      追加学習・制約：調整控除の全区分、ふるさと納税限度、配当控除、分離課税は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-adjustments/
+      技能1 所得税との差を識別する：説明・例題→自力演習兼評価 zr-jumin-adjustments-q1
+      技能2 課税所得を計算する：説明・例題→自力演習兼評価 zr-jumin-adjustments-q2
+      技能3 所得控除と税額控除の段階を整理する：説明・例題→自力演習兼評価 zr-jumin-adjustments-q3、zr-jumin-adjustments-q4
+    3. [zr-jumin-corporate] 法人住民税の均等割・法人税割・分割／45分
+      目標：法人税割の基礎を整理する／所在地別の分割を計算する／均等割の区分を確認する
+      前提：前のレッスン「所得控除・調整控除・税額控除」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-corporate-check] 4問：zr-jumin-corporate-q1、zr-jumin-corporate-q2、zr-jumin-corporate-q3、zr-jumin-corporate-q4
+      用語：法人税割・分割基準・資本金等の額
+      次：zr-jumin-collection
+      追加学習・制約：超過税率、均等割の全区分、通算法人と税額控除の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-corporate/
+      技能1 法人税割の基礎を整理する：説明・例題→自力演習兼評価 zr-jumin-corporate-q1
+      技能2 所在地別の分割を計算する：説明・例題→自力演習兼評価 zr-jumin-corporate-q2、zr-jumin-corporate-q4
+      技能3 均等割の区分を確認する：説明・例題→自力演習兼評価 zr-jumin-corporate-q3、zr-jumin-corporate-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-jumin-collection] 普通徴収・特別徴収と退職所得／40分
+      目標：給与の特別徴収を時系列で説明する／退職所得の現年分離を計算する／申告と自治体間の関係を整理する
+      前提：前のレッスン「法人住民税の均等割・法人税割・分割」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-jumin-collection-check] 4問：zr-jumin-collection-q1、zr-jumin-collection-q2、zr-jumin-collection-q3、zr-jumin-collection-q4
+      用語：普通徴収・特別徴収・現年分離課税
+      次：zeirishi-unit-9-review
+      追加学習・制約：年金の特別徴収、退職金の各例外、期限・変更届の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-collection/
+      技能1 給与の特別徴収を時系列で説明する：説明・例題→自力演習兼評価 zr-jumin-collection-q1、zr-jumin-collection-q4
+      技能2 退職所得の現年分離を計算する：説明・例題→自力演習兼評価 zr-jumin-collection-q2
+      技能3 申告と自治体間の関係を整理する：説明・例題→自力演習兼評価 zr-jumin-collection-q3、zr-jumin-collection-q4
+  [zeirishi-unit-9-glossary] 住民税：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-9-glossary/
+  [zeirishi-unit-9-review] 住民税：総復習／16小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-9-review/
+  [zeirishi-jumin-mock] 住民税：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-jumin-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[local-law] e-Gov：地方税法
+  2026年4月3日現在施行版：325AC0000000226_20260401_508AC0000000002
+  https://laws.e-gov.go.jp/law/325AC0000000226_20260401_508AC0000000002
+  確認日：2026-10-25
+[points-09] 国税庁：第76回 住民税 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/09.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[resident-calculation] 札幌市：2026年度個人住民税の税額計算
+  控除・人的控除差5万円。指定都市の配分は非指定都市の例と区別
+  https://www.city.sapporo.jp/citytax/documents/r8keisan.pdf
+  確認日：2026-10-26
+[resident-collection] 横浜市：個人住民税の納税方法
+  2026年4月1日更新。普通・給与特別徴収
+  https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/kojin-shiminzei-kenminzei/kojin-shiminzei-shosai/shinkokunouzei.html
+  確認日：2026-10-26
+[resident-retirement] 横浜市：退職所得の課税の特例
+  退職所得の6％・4％。通常の指定都市の配分と区別
+  https://www.city.yokohama.lg.jp/kurashi/koseki-zei-hoken/zeikin/y-shizei/kojin-shiminzei-kenminzei/kojin-shiminzei-shosai/tokurei.html
+  確認日：2026-10-26
+[local-corporate] 東京都主税局：法人事業税・法人都民税
+  開始年度・標準税率と超過課税。都の特例は全国一律としない
+  https://www.tax.metro.tokyo.lg.jp/kazei/work/houjinji
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

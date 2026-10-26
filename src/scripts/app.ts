@@ -7,6 +7,7 @@ import {
   type StudyRecord,
 } from '../lib/storage';
 import { href } from '../lib/site';
+import { attemptSummary } from '../lib/assessment';
 interface Entry {
   id: string;
   title: string;
@@ -17,6 +18,7 @@ interface Entry {
   keywords: string[];
   order?: number;
   archived?: boolean;
+  subject?: string;
   assessmentKind?: string;
   assessmentVersion?: string;
 }
@@ -243,12 +245,20 @@ function renderProgress() {
   const allLessons = entries.filter((e) => e.kind === 'レッスン');
   const lessons = allLessons.filter((e) => !e.archived);
   $$('[data-course-progress]').forEach((el) => {
-    const course = lessons.filter((e) => e.qualification === el.dataset.courseProgress);
+    const course = lessons.filter(
+      (e) =>
+        e.qualification === el.dataset.courseProgress &&
+        (!el.dataset.courseSubject || e.subject === el.dataset.courseSubject),
+    );
     const done = course.filter((e) => data.records[e.id]?.status === 'completed').length;
     el.textContent = `${done} / ${course.length} レッスン学習済み`;
   });
   $$<HTMLProgressElement>('[data-course-bar]').forEach((bar) => {
-    const course = lessons.filter((e) => e.qualification === bar.dataset.courseBar);
+    const course = lessons.filter(
+      (e) =>
+        e.qualification === bar.dataset.courseBar &&
+        (!bar.dataset.courseSubject || e.subject === bar.dataset.courseSubject),
+    );
     const done = course.filter((e) => data.records[e.id]?.status === 'completed').length;
     bar.max = course.length;
     bar.value = done;
@@ -274,7 +284,11 @@ function renderProgress() {
   });
   $$<HTMLAnchorElement>('[data-course-start]').forEach((a) => {
     const course = lessons
-      .filter((e) => e.qualification === a.dataset.courseStart)
+      .filter(
+        (e) =>
+          e.qualification === a.dataset.courseStart &&
+          (!a.dataset.courseSubject || e.subject === a.dataset.courseSubject),
+      )
       .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
     const last = course.find((e) => e.id === data.lastLesson);
     const next =
@@ -329,7 +343,9 @@ function renderProgress() {
       const done = current.filter((r) => r.finishedAt !== null);
       const active = current.find((r) => !r.finishedAt);
       const info = done.length
-        ? `最新 ${done[0]!.score}/${done[0]!.total}問正解・最高 ${Math.max(...done.map((r) => r.score ?? 0))}/${done[0]!.total}問正解・要復習 ${done[0]!.missed.length}問`
+        ? done[0]!.manual
+          ? `最新 ${attemptSummary(done[0]!)}・自己確認点は各テストの結果で確認できます`
+          : `最新 ${done[0]!.score}/${done[0]!.total}問正解・最高 ${Math.max(...done.map((r) => r.score ?? 0))}/${done[0]!.total}問正解・要復習 ${done[0]!.missed.length}問`
         : 'この版の完了記録はありません';
       assessmentHistory.append(
         entryLink(

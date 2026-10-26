@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { href } from '../lib/site';
+import { qualifications } from '../data/qualifications';
 ---
 
 <Layout
@@ -32,11 +33,13 @@ import { href } from '../lib/site';
     </form>
     <div class="search-suggestions">
       <span>気になるキーワード：</span>
-      {['ITパスポート', '宅建士', '簿記', 'FP', '仕訳', 'セキュリティ'].map((t) => (
-        <button class="filter" data-search-term={t} type="button">
-          {t}
-        </button>
-      ))}
+      {[...new Set([...qualifications.map((q) => q.shortName), '簿記', 'FP', '仕訳', 'セキュリティ'])].map(
+        (t) => (
+          <button class="filter" data-search-term={t} type="button">
+            {t}
+          </button>
+        ),
+      )}
     </div>
     <p data-search-status role="status" aria-live="polite">
       キーワードを入力すると、資格とレッスンを検索できます。

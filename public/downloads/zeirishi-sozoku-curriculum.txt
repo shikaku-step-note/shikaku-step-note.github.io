@@ -1,0 +1,187 @@
+税理士 相続税法 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：相続税法（税法）
+相続税・贈与税と関係法令。民法上の相続関係と財産評価を区別する。
+前提：割合と四則計算。相続人と財産の関係を図にできること。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/sozoku/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-sozoku-scope] 相続人・納税義務・課税財産／40分
+      目標：法定相続人を確定する／本来財産とみなし財産を分ける／債務と葬式費用を判定する
+      前提：割合と四則計算。相続人と財産の関係を図にできること。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-scope-check] 4問：zr-sozoku-scope-q1、zr-sozoku-scope-q2、zr-sozoku-scope-q3、zr-sozoku-scope-q4
+      用語：法定相続人・みなし相続財産・債務控除
+      次：zr-sozoku-valuation
+      追加学習・制約：養子の人数制限、制限納税義務、相続放棄・欠格・代襲の複合例は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-scope/
+      技能1 法定相続人を確定する：説明・例題→自力演習兼評価 zr-sozoku-scope-q1
+      技能2 本来財産とみなし財産を分ける：説明・例題→自力演習兼評価 zr-sozoku-scope-q2、zr-sozoku-scope-q3
+      技能3 債務と葬式費用を判定する：説明・例題→自力演習兼評価 zr-sozoku-scope-q3、zr-sozoku-scope-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-sozoku-valuation] 路線価・建物・預金の評価／40分
+      目標：相続時点の評価を説明する／路線価方式の基本を計算する／所有と利用関係の補正を区別する
+      前提：前のレッスン「相続人・納税義務・課税財産」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-valuation-check] 5問：zr-sozoku-valuation-q1、zr-sozoku-valuation-q2、zr-sozoku-valuation-q3、zr-sozoku-valuation-q4、zr-sozoku-valuation-q5
+      用語：路線価・倍率方式・貸家建付地
+      次：zr-sozoku-reliefs
+      追加学習・制約：不整形地、無道路地、借地権、非上場株式、各評価通達の詳細は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-valuation/
+      技能1 相続時点の評価を説明する：説明・例題→自力演習兼評価 zr-sozoku-valuation-q1、zr-sozoku-valuation-q3
+      技能2 路線価方式の基本を計算する：説明・例題→自力演習兼評価 zr-sozoku-valuation-q2
+      技能3 所有と利用関係の補正を区別する：説明・例題→自力演習兼評価 zr-sozoku-valuation-q5
+    3. [zr-sozoku-reliefs] 生命保険の非課税と小規模宅地等／45分
+      目標：非課税限度額の人数を数える／取得者ごとの適用を分ける／限度面積と減額割合を計算する
+      前提：前のレッスン「路線価・建物・預金の評価」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-reliefs-check] 4問：zr-sozoku-reliefs-q1、zr-sozoku-reliefs-q2、zr-sozoku-reliefs-q3、zr-sozoku-reliefs-q4
+      用語：小規模宅地等の特例・特定居住用宅地等・非課税限度額
+      次：zr-sozoku-total
+      追加学習・制約：同居・家なき子等の要件、事業用宅地、面積併用の調整は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-reliefs/
+      技能1 非課税限度額の人数を数える：説明・例題→自力演習兼評価 zr-sozoku-reliefs-q1
+      技能2 取得者ごとの適用を分ける：説明・例題→自力演習兼評価 zr-sozoku-reliefs-q2
+      技能3 限度面積と減額割合を計算する：説明・例題→自力演習兼評価 zr-sozoku-reliefs-q3、zr-sozoku-reliefs-q4
+    4. [zr-sozoku-total] 相続税の総額から各人の税額へ／40分
+      目標：基礎控除を求める／法定相続分で総額を計算する／実取得割合と配偶者軽減を分ける
+      前提：前のレッスン「生命保険の非課税と小規模宅地等」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-total-check] 4問：zr-sozoku-total-q1、zr-sozoku-total-q2、zr-sozoku-total-q3、zr-sozoku-total-q4
+      用語：課税遺産総額・相続税の総額・配偶者の税額軽減
+      次：zr-sozoku-gifts
+      追加学習・制約：二割加算、未成年者等の控除、相次相続控除、端数処理の全連動は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-total/
+      技能1 基礎控除を求める：説明・例題→自力演習兼評価 zr-sozoku-total-q1
+      技能2 法定相続分で総額を計算する：説明・例題→自力演習兼評価 zr-sozoku-total-q2、zr-sozoku-total-q4
+      技能3 実取得割合と配偶者軽減を分ける：説明・例題→自力演習兼評価 zr-sozoku-total-q3、zr-sozoku-total-q4
+  学習段階：手続と総合復習へ（独自区分）
+    5. [zr-sozoku-gifts] 暦年贈与・相続時精算課税・申告／40分
+      目標：二つの贈与課税方式を比較する／基礎控除と特別控除を分ける／相続への加算時期を確認する
+      前提：前のレッスン「相続税の総額から各人の税額へ」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-sozoku-gifts-check] 4問：zr-sozoku-gifts-q1、zr-sozoku-gifts-q2、zr-sozoku-gifts-q3、zr-sozoku-gifts-q4
+      用語：暦年課税・相続時精算課税・贈与財産の加算
+      次：zeirishi-unit-5-review
+      追加学習・制約：七年加算への経過措置、住宅取得資金、事業承継、延納物納の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-gifts/
+      技能1 二つの贈与課税方式を比較する：説明・例題→自力演習兼評価 zr-sozoku-gifts-q1、zr-sozoku-gifts-q4
+      技能2 基礎控除と特別控除を分ける：説明・例題→自力演習兼評価 zr-sozoku-gifts-q1、zr-sozoku-gifts-q2
+      技能3 相続への加算時期を確認する：説明・例題→自力演習兼評価 zr-sozoku-gifts-q3、zr-sozoku-gifts-q4
+  [zeirishi-unit-5-glossary] 相続税法：累積用語確認／15小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-5-glossary/
+  [zeirishi-unit-5-review] 相続税法：総復習／21小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-5-review/
+  [zeirishi-sozoku-mock] 相続税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-sozoku-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[inheritance-law] e-Gov：相続税法
+  2026年4月3日現在施行版：325AC0000000073_20260401_506AC0000000008
+  https://laws.e-gov.go.jp/law/325AC0000000073_20260401_506AC0000000008
+  確認日：2026-10-25
+[special-law] e-Gov：租税特別措置法
+  2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+  確認日：2026-10-25
+[points-05] 国税庁：第76回 相続税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/05.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[inheritance-total] 国税庁：相続税の計算
+  総額方式と各人の税額
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4152.htm
+  確認日：2026-10-25
+[inheritance-land] 国税庁：小規模宅地等の特例
+  取得者・用途・継続・申告等の要件を併読
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4124.htm
+  確認日：2026-10-25
+[inheritance-heirs] 国税庁：相続人の範囲と法定相続分
+  民法上の順位と法定相続分
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4132.htm
+  確認日：2026-10-26
+[inheritance-insurance] 国税庁：相続税の課税対象になる死亡保険金
+  非課税枠・放棄・相続人以外の受取り
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4114.htm
+  確認日：2026-10-26
+[inheritance-road] 国税庁：路線価方式による宅地の評価
+  評価の基本。例の価額・率は独自の与件
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4604.htm
+  確認日：2026-10-26
+[inheritance-multiple] 国税庁：倍率方式による土地の評価
+  評価倍率の方法
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4606.htm
+  確認日：2026-10-26
+[inheritance-landlord] 国税庁：貸家建付地の評価
+  自用地価額と権利割合・賃貸割合
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hyoka/4614.htm
+  確認日：2026-10-26
+[inheritance-gift-add] 国税庁：相続開始前に贈与があった場合の相続税
+  2026年・2027〜2030年・2031年以後の経過措置
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4161.htm
+  確認日：2026-10-26
+[inheritance-settlement] 国税庁：相続時精算課税の選択
+  2024年以後の年110万円基礎控除と累計2500万円
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/sozoku/4103.htm
+  確認日：2026-10-26
+[gift-annual] 国税庁：贈与税の計算と税率・暦年課税
+  課税価格と基礎控除後の額を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/zoyo/4408.htm
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

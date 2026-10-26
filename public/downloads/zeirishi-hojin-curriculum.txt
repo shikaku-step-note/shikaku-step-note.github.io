@@ -1,0 +1,191 @@
+税理士 法人税法 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：法人税法（税法）
+法人税法と関係法令。会計利益と所得の調整、税額、申告を扱う。
+前提：簿記3級程度の決算と損益計算書。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-hojin-adjustment] 会計利益から所得へ・別表四の考え方／40分
+      目標：益金損金と収益費用を分ける／加算と減算を選ぶ／留保と社外流出を整理する
+      前提：簿記3級程度の決算と損益計算書。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-adjustment-check] 4問：zr-hojin-adjustment-q1、zr-hojin-adjustment-q2、zr-hojin-adjustment-q3、zr-hojin-adjustment-q4
+      用語：益金・損金・留保
+      次：zr-hojin-assets
+      追加学習・制約：別表五との完全連動、組織再編、収益計上時期の特例は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-adjustment/
+      技能1 益金損金と収益費用を分ける：説明・例題→自力演習兼評価 zr-hojin-adjustment-q1、zr-hojin-adjustment-q4
+      技能2 加算と減算を選ぶ：説明・例題→自力演習兼評価 zr-hojin-adjustment-q1、zr-hojin-adjustment-q2
+      技能3 留保と社外流出を整理する：説明・例題→自力演習兼評価 zr-hojin-adjustment-q3、zr-hojin-adjustment-q4
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-hojin-assets] 棚卸・減価償却・貸倒れの税務調整／40分
+      目標：損金経理と限度額の関係を説明する／償却超過と認容を追う／評価損と貸倒れの条件を分ける
+      前提：前のレッスン「会計利益から所得へ・別表四の考え方」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-assets-check] 4問：zr-hojin-assets-q1、zr-hojin-assets-q2、zr-hojin-assets-q3、zr-hojin-assets-q4
+      用語：損金経理・償却限度額・認容
+      次：zr-hojin-compensation
+      追加学習・制約：償却方法・耐用年数表、少額資産、貸倒引当金の対象法人等は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-assets/
+      技能1 損金経理と限度額の関係を説明する：説明・例題→自力演習兼評価 zr-hojin-assets-q1
+      技能2 償却超過と認容を追う：説明・例題→自力演習兼評価 zr-hojin-assets-q2、zr-hojin-assets-q3
+      技能3 評価損と貸倒れの条件を分ける：説明・例題→自力演習兼評価 zr-hojin-assets-q4
+    3. [zr-hojin-compensation] 役員給与・交際費・寄附金を区分する／45分
+      目標：役員給与の類型を識別する／交際費と寄附金を分ける／限度超過を所得へ加算する
+      前提：前のレッスン「棚卸・減価償却・貸倒れの税務調整」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-compensation-check] 4問：zr-hojin-compensation-q1、zr-hojin-compensation-q2、zr-hojin-compensation-q3、zr-hojin-compensation-q4
+      用語：定期同額給与・交際費等・寄附金
+      次：zr-hojin-distributions
+      追加学習・制約：事前確定届出給与、業績連動給与、飲食費除外と各限度額の詳細は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-compensation/
+      技能1 役員給与の類型を識別する：説明・例題→自力演習兼評価 zr-hojin-compensation-q1
+      技能2 交際費と寄附金を分ける：説明・例題→自力演習兼評価 zr-hojin-compensation-q2、zr-hojin-compensation-q3、zr-hojin-compensation-q4
+      技能3 限度超過を所得へ加算する：説明・例題→自力演習兼評価 zr-hojin-compensation-q2、zr-hojin-compensation-q3
+    4. [zr-hojin-distributions] 受取配当・資本取引とグループの関係／40分
+      目標：配当の二重課税調整を説明する／保有区分から不算入を求める／損益取引と資本取引を区別する
+      前提：前のレッスン「役員給与・交際費・寄附金を区分する」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-distributions-check] 4問：zr-hojin-distributions-q1、zr-hojin-distributions-q2、zr-hojin-distributions-q3、zr-hojin-distributions-q4
+      用語：益金不算入・完全子法人株式等・資本等取引
+      次：zr-hojin-losses
+      追加学習・制約：負債利子控除、保有期間、みなし配当、グループ通算と組織再編は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-distributions/
+      技能1 配当の二重課税調整を説明する：説明・例題→自力演習兼評価 zr-hojin-distributions-q1
+      技能2 保有区分から不算入を求める：説明・例題→自力演習兼評価 zr-hojin-distributions-q2、zr-hojin-distributions-q3
+      技能3 損益取引と資本取引を区別する：説明・例題→自力演習兼評価 zr-hojin-distributions-q4
+    5. [zr-hojin-losses] 欠損金・繰越控除・引継ぎの条件／40分
+      目標：欠損と会計赤字を分ける／繰越残高を年度別に管理する／所得限度と控除順を計算する
+      前提：前のレッスン「受取配当・資本取引とグループの関係」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-losses-check] 4問：zr-hojin-losses-q1、zr-hojin-losses-q2、zr-hojin-losses-q3、zr-hojin-losses-q4
+      用語：欠損金額・繰越控除・繰戻し還付
+      次：zr-hojin-return
+      追加学習・制約：中小法人等の要件、適用期限、支配関係変更と再編の制限は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-losses/
+      技能1 欠損と会計赤字を分ける：説明・例題→自力演習兼評価 zr-hojin-losses-q1
+      技能2 繰越残高を年度別に管理する：説明・例題→自力演習兼評価 zr-hojin-losses-q3、zr-hojin-losses-q4
+      技能3 所得限度と控除順を計算する：説明・例題→自力演習兼評価 zr-hojin-losses-q2、zr-hojin-losses-q3、zr-hojin-losses-q4
+  学習段階：手続と総合復習へ（独自区分）
+    6. [zr-hojin-return] 法人税額・申告と防衛特別法人税／45分
+      目標：所得と税額控除を区別する／中間納付を精算する／防衛特別法人税の基本を計算する
+      前提：前のレッスン「欠損金・繰越控除・引継ぎの条件」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-hojin-return-check] 5問：zr-hojin-return-q1、zr-hojin-return-q2、zr-hojin-return-q3、zr-hojin-return-q4、zr-hojin-return-q5
+      用語：基準法人税額・中間申告・地方法人税
+      次：zeirishi-unit-4-review
+      追加学習・制約：通算法人、外国税額控除、税額控除の調整、短期事業年度の各特例は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-return/
+      技能1 所得と税額控除を区別する：説明・例題→自力演習兼評価 zr-hojin-return-q5
+      技能2 中間納付を精算する：説明・例題→自力演習兼評価 zr-hojin-return-q2
+      技能3 防衛特別法人税の基本を計算する：説明・例題→自力演習兼評価 zr-hojin-return-q3、zr-hojin-return-q4
+  [zeirishi-unit-4-glossary] 法人税法：累積用語確認／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-4-glossary/
+  [zeirishi-unit-4-review] 法人税法：総復習／25小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-4-review/
+  [zeirishi-hojin-mock] 法人税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-hojin-mock/
+  2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[corporate-law] e-Gov：法人税法
+  2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+  確認日：2026-10-25
+[general-law] e-Gov：国税通則法
+  2026年4月3日現在施行版：337AC0000000066_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+  確認日：2026-10-25
+[special-law] e-Gov：租税特別措置法
+  2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+  確認日：2026-10-25
+[points-04] 国税庁：第76回 法人税法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/04.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[corporate-rate] 国税庁：法人税の税率
+  開始事業年度と法人区分を明示
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm
+  確認日：2026-10-25
+[defense-tax] 国税庁：防衛特別法人税の創設
+  2026年4月1日以後開始事業年度。一定の基準額から年500万円控除、4%
+  https://www.nta.go.jp/publication/pamph/pdf/0025004-109_1.pdf
+  確認日：2026-10-25
+[officer-pay] 国税庁：役員に対する給与
+  2017年4月1日以後支給決議分・定期同額等
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm
+  確認日：2026-10-26
+[entertainment] 国税庁：交際費等の範囲と損金不算入額の計算
+  法人規模・期間・飲食費除外条件を区別
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm
+  確認日：2026-10-26
+[donations] 国税庁：寄附金の範囲と損金不算入額の計算
+  寄附先の区分と限度額
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5281.htm
+  確認日：2026-10-26
+[corporate-loss] 国税庁：青色申告書を提出した事業年度の欠損金の繰越控除
+  発生年度・対象法人・申告・控除限度
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5762.htm
+  確認日：2026-10-26
+[corporate-dividend] 財務省：受取配当等の益金不算入制度
+  割合の概念説明。適用条件は4月3日施行版法人税法23条と併読
+  https://www.mof.go.jp/tax_policy/summary/corporation/c02_1.pdf
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup

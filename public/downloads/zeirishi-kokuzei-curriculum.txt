@@ -1,0 +1,155 @@
+税理士 国税徴収法 学習ツリー・学習案
+版：zeirishi-2026-v1／教材確認：2026-10-26
+公式の級分けなし。2026年度第76回の公式範囲・2026年4月3日現在施行法令を参照。
+11科目は会計学2と税法9。通常の試験ルートは会計2と選択税法3の計5科目。全11科目の受験は不要。
+所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
+免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
+
+11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+
+推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
+1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
+5〜6週目：残る本文・用語確認・科目総復習。翌日と1週間後に説明し直す。
+7週目：追加学習を確認し公式公表問題で形式・資料量を確認。
+8週目：別枠120分の模試。翌日：記述の自己確認、解説と関連レッスンで復習。
+8週間は基礎を巡る独自案で、公式の学習時間や合格までの準備期間ではありません。前提・理解度に応じ延長。
+
+科目：国税徴収法（税法）
+国税徴収法と関係法令。徴収の優先関係、滞納処分、第二次納税義務、猶予等。
+前提：人物と日付を表に整理すること。民法の担保の初歩は本文で補う。
+https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
+  学習段階：基礎をつかむ（独自区分）
+    1. [zr-kokuzei-priority] 成立・確定・法定納期限等と優先関係／40分
+      目標：税の成立と確定を区別する／法定納期限等を時系列に置く／抵当権との優先を判断する
+      前提：人物と日付を表に整理すること。民法の担保の初歩は本文で補う。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-priority-check] 5問：zr-kokuzei-priority-q1、zr-kokuzei-priority-q2、zr-kokuzei-priority-q3、zr-kokuzei-priority-q4、zr-kokuzei-priority-q5
+      用語：法定納期限等・国税優先の原則・納期限
+      次：zr-kokuzei-seizure
+      追加学習・制約：法定納期限等の各特則、交付要求先着手と税相互の優先は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-priority/
+      技能1 税の成立と確定を区別する：説明・例題→自力演習兼評価 zr-kokuzei-priority-q1
+      技能2 法定納期限等を時系列に置く：説明・例題→自力演習兼評価 zr-kokuzei-priority-q2、zr-kokuzei-priority-q4
+      技能3 抵当権との優先を判断する：説明・例題→自力演習兼評価 zr-kokuzei-priority-q2、zr-kokuzei-priority-q4、zr-kokuzei-priority-q5
+  学習段階：事例と計算で確かめる（独自区分）
+    2. [zr-kokuzei-seizure] 督促・差押え・債権の取立て／40分
+      目標：督促後の手続を説明する／差押禁止と超過を判定する／債権差押えの効果を整理する
+      前提：前のレッスン「成立・確定・法定納期限等と優先関係」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-seizure-check] 5問：zr-kokuzei-seizure-q1、zr-kokuzei-seizure-q2、zr-kokuzei-seizure-q3、zr-kokuzei-seizure-q4、zr-kokuzei-seizure-q5
+      用語：督促・第三債務者・差押禁止財産
+      次：zr-kokuzei-sale
+      追加学習・制約：給与等の具体的禁止額、財産種別ごとの差押手続、無剰余の例外は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-seizure/
+      技能1 督促後の手続を説明する：説明・例題→自力演習兼評価 zr-kokuzei-seizure-q1
+      技能2 差押禁止と超過を判定する：説明・例題→自力演習兼評価 zr-kokuzei-seizure-q5
+      技能3 債権差押えの効果を整理する：説明・例題→自力演習兼評価 zr-kokuzei-seizure-q3、zr-kokuzei-seizure-q4
+    3. [zr-kokuzei-sale] 換価・配当と第二次納税義務／45分
+      目標：換価代金を順位に従って配当する／本来の納税義務と第二次を分ける／追及可能額を計算する
+      前提：前のレッスン「督促・差押え・債権の取立て」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-sale-check] 4問：zr-kokuzei-sale-q1、zr-kokuzei-sale-q2、zr-kokuzei-sale-q3、zr-kokuzei-sale-q4
+      用語：換価・配当・第二次納税義務
+      次：zr-kokuzei-relief
+      追加学習・制約：公売全手続、各第二次納税義務の成立要件と限度、担保権複合事例は追加演習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-sale/
+      技能1 換価代金を順位に従って配当する：説明・例題→自力演習兼評価 zr-kokuzei-sale-q1
+      技能2 本来の納税義務と第二次を分ける：説明・例題→自力演習兼評価 zr-kokuzei-sale-q2、zr-kokuzei-sale-q4
+      技能3 追及可能額を計算する：説明・例題→自力演習兼評価 zr-kokuzei-sale-q3、zr-kokuzei-sale-q4
+  学習段階：手続と総合復習へ（独自区分）
+    4. [zr-kokuzei-relief] 猶予・滞納処分の停止・不服申立て／40分
+      目標：納税の猶予と換価の猶予を分ける／執行停止の理由と効果を整理する／救済手続の申立先を確認する
+      前提：前のレッスン「換価・配当と第二次納税義務」の内容。
+      本文：仕組みの説明・基本例・条件を変えた比較
+      理解度チェック [zr-kokuzei-relief-check] 4問：zr-kokuzei-relief-q1、zr-kokuzei-relief-q2、zr-kokuzei-relief-q3、zr-kokuzei-relief-q4
+      用語：換価の猶予・滞納処分の停止・審査請求
+      次：zeirishi-unit-8-review
+      追加学習・制約：担保免除、期間延長、消滅の例外、審査請求期間の全起算例は追加学習。
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-relief/
+      技能1 納税の猶予と換価の猶予を分ける：説明・例題→自力演習兼評価 zr-kokuzei-relief-q1
+      技能2 執行停止の理由と効果を整理する：説明・例題→自力演習兼評価 zr-kokuzei-relief-q3
+      技能3 救済手続の申立先を確認する：説明・例題→自力演習兼評価 zr-kokuzei-relief-q4
+  [zeirishi-unit-8-glossary] 国税徴収法：累積用語確認／12小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-8-glossary/
+  [zeirishi-unit-8-review] 国税徴収法：総復習／18小問
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-8-review/
+  [zeirishi-kokuzei-mock] 国税徴収法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
+    https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-kokuzei-mock/
+  2026年8月本試験の大問配点：40・60点。将来の固定配分ではありません。
+
+用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
+数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
+記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。
+制限時間は閉じている間も進みます。端末時計の操作の影響は防げません。
+
+詳細な対応表：https://shikaku-step-note.github.io/qualifications/zeirishi/coverage/
+
+公式参照資料・適用版・確認日
+[collection-law] e-Gov：国税徴収法
+  2026年4月3日現在施行版：334AC0000000147_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012
+  確認日：2026-10-25
+[general-law] e-Gov：国税通則法
+  2026年4月3日現在施行版：337AC0000000066_20260401_508AC0000000012
+  https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+  確認日：2026-10-25
+[points-08] 国税庁：第76回 国税徴収法 出題のポイント
+  2026年8月本試験の実績。翌年の固定仕様ではない
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/08.pdf
+  確認日：2026-10-25
+[exam-overview] 国税庁：税理士試験の概要
+  科目合格制・会計2科目と税法3科目・公式60%基準
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/gaiyo/gaiyou.htm
+  確認日：2026-10-25
+[exam-scope] 国税庁：試験日程・試験科目と出題範囲
+  第76回・全11科目各120分
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa01.htm
+  確認日：2026-10-25
+[exam-selection] 国税庁：試験科目の選択について
+  選択組合せと免除申請科目の扱い
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/qa/qa02.htm
+  確認日：2026-10-25
+[exam-eligibility] 国税庁：受験資格の概要
+  会計学と税法の受験資格を区別
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikaku/shikaku.htm
+  確認日：2026-10-25
+[exam-notice] 国税庁：令和8年度第76回税理士試験公告
+  法令基準日2026年4月3日現在施行
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76.htm
+  確認日：2026-10-25
+[exam-papers] 国税庁：第76回問題・答案用紙・正誤表
+  2026年8月本試験。転載せず形式を確認
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/touanyoushi.htm
+  確認日：2026-10-25
+[exam-corrections] 国税庁：第76回の問題の誤りについて
+  2026年8月21日。所得税法・住民税
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/0026008-050.pdf
+  確認日：2026-10-25
+[exam-retest] 国税庁：第76回再試験公告
+  熊本対象。2026年11月予定、確認日時点で未実施
+  https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/kokoku/76_02.htm
+  確認日：2026-10-25
+[collection-training] 国税庁税務大学校：国税徴収法
+  公式の学習用解説。法令基準日の条文と併読
+  https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf
+  確認日：2026-10-26
+[collection-delay] 国税庁：延滞税について
+  2026年の2.8％・9.1％と期間・端数等
+  https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9205.htm
+  確認日：2026-10-26
+[collection-relief] 国税庁：猶予の申請の手引
+  2026年4月1日現在法令等
+  https://www.nta.go.jp/publication/pamph/sonota/yuyo-tebiki/index.htm
+  確認日：2026-10-26
+[collection-appeal] 国税不服審判所：不服申立てと国税の徴収
+  執行停止の原則と換価禁止・例外を区別
+  https://www.kfs.go.jp/service/MP/01/0803000000.html
+  確認日：2026-10-26
+[collection-second] 国税不服審判所：債務免除と第二次納税義務の事例
+  事例の個別結論を全件へ一般化しない
+  https://www.kfs.go.jp/service/JP/106/07/index.html
+  確認日：2026-10-26
+
+記録は現在のブラウザに保存。端末間では自動同期せず、ブラウザデータ削除等で消える場合があります。
+定期的なバックアップ：https://shikaku-step-note.github.io/progress/#backup
