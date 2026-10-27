@@ -16,10 +16,26 @@ let internalLinks = 0;
 const fail = (path, message) => failures.push(`${path.replace(root, '')}: ${message}`);
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
 const listed = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
+if (new Set(listed).size !== listed.length) fail('sitemap.xml', 'duplicate canonical URLs');
+const humanSitemapPath = join(root, 'sitemap', 'index.html');
+if (!existsSync(humanSitemapPath)) {
+  fail('sitemap/', 'missing HTML sitemap');
+} else {
+  const humanSitemap = readFileSync(humanSitemapPath, 'utf8');
+  const humanLinks = [...humanSitemap.matchAll(/<a\b[^>]*\bdata-sitemap-entry\b[^>]*>/g)]
+    .map(([tag]) => tag.match(/\bhref="([^"]+)"/)?.[1])
+    .filter(Boolean)
+    .map((url) => new URL(url, `${origin}${base}/`).href);
+  const humanSet = new Set(humanLinks);
+  if (humanSet.size !== humanLinks.length) fail('sitemap/', 'duplicate catalog entries');
+  for (const url of listed) if (!humanSet.has(url)) fail('sitemap/', `XML URL missing from HTML catalog: ${url}`);
+  for (const url of humanSet) if (!listed.includes(url)) fail('sitemap/', `unexpected catalog entry: ${url}`);
+}
 for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
   const title = html.match(/<title>(.*?)<\/title>/s)?.[1];
   const noindex = /name="robots" content="noindex,follow"/.test(html);
+  if (!noindex && !html.includes(`href="${base}/sitemap/"`)) fail(file, 'missing HTML sitemap navigation');
   if (!title || titles.has(title)) fail(file, 'missing or duplicate title');
   titles.add(title);
   if (!/<html lang="ja"/.test(html)) fail(file, 'missing Japanese language');

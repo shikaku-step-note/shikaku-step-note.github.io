@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { qualifications } from '../data/qualifications';
+import { href } from '../lib/site';
+import { getSitemapEntries } from '../lib/sitemap';
+
+const entries = await getSitemapEntries();
+const sitePages = entries.filter((entry) => entry.kind === 'site');
+const courses = qualifications.map((qualification) => ({
+  ...qualification,
+  pages: entries.filter((entry) => entry.qualification === qualification.id),
+}));
+---
+
+<Layout title="サイトマップ・学習ページ一覧" description="資格ステップノートの公開ページ一覧。資格・科目ごとに学習案内、レッスン、用語・復習テスト、教材の対応範囲、使い方などを探せます。"
+  breadcrumbs={[{ name: 'サイトマップ', path: 'sitemap/' }]}
+>
+  <article class="container page-section sitemap-page">
+    <header class="page-heading">
+      <p class="eyebrow">学びたいページを探す</p>
+      <h1>サイトマップ</h1>
+      <p class="lead">資格や科目ごとに、公開中の学習ページをまとめています。学びたい内容を探すときにご利用ください。</p>
+      <p>教材の公開範囲は資格ごとに異なります。各資格の案内と対応表をご確認ください。演習は、それぞれの「用語・復習テストと模擬試験」から選べます。</p>
+    </header>
+
+    <nav aria-label="サイトマップの目次" class="sitemap-jump">
+      <ul>
+        <li><a href="#site-pages">サイトの案内</a></li>
+        {courses.map((course) => <li><a href={`#course-${course.id}`}>{course.name}</a></li>)}
+        <li><a href="#learning-tools">学習に使う機能</a></li>
+      </ul>
+    </nav>
+
+    <section id="site-pages" class="course-section" aria-labelledby="site-pages-title">
+      <h2 id="site-pages-title">サイトの案内</h2>
+      <ul class="sitemap-list columns">
+        {sitePages.map((entry) => <li><a data-sitemap-entry href={href(entry.path)}>{entry.title}</a></li>)}
+      </ul>
+    </section>
+
+    {courses.map((course) => (
+      <section id={`course-${course.id}`} class="course-section" aria-labelledby={`course-title-${course.id}`}>
+        <h2 id={`course-title-${course.id}`}><a data-sitemap-entry href={href(`qualifications/${course.id}/`)}>{course.name}</a></h2>
+        {course.pages.some((entry) => entry.kind === 'tests' || entry.kind === 'coverage') && <ul class="sitemap-list sitemap-shortcuts">
+          {course.pages.filter((entry) => entry.kind === 'tests' || entry.kind === 'coverage').map((entry) => (
+            <li><a data-sitemap-entry href={href(entry.path)}>{entry.title}</a></li>
+          ))}
+        </ul>}
+        {course.id === 'zeirishi' ? course.pages.filter((entry) => entry.kind === 'subject').map((subject) => (
+          <section class="sitemap-subject" aria-labelledby={`subject-title-${subject.subject}`}>
+            <h3 id={`subject-title-${subject.subject}`}><a data-sitemap-entry href={href(subject.path)}>{subject.title}</a></h3>
+            {course.pages.some((entry) => entry.kind === 'unit' && entry.subject === subject.subject) && (
+              <>
+                <h4>詳しく学ぶ単元</h4>
+                <ul class="sitemap-list">
+                  {course.pages.filter((entry) => entry.kind === 'unit' && entry.subject === subject.subject).map((entry) => <li><a data-sitemap-entry href={href(entry.path)}>{entry.title}</a></li>)}
+                </ul>
+              </>
+            )}
+            <h4>レッスン一覧</h4>
+            <ul class="sitemap-list columns">
+              {course.pages.filter((entry) => entry.kind === 'lesson' && entry.subject === subject.subject).map((entry) => <li><a data-sitemap-entry href={href(entry.path)}>{entry.title}</a></li>)}
+            </ul>
+          </section>
+        )) : (
+          <ul class="sitemap-list columns">
+            {course.pages.filter((entry) => entry.kind === 'lesson').map((entry) => <li><a data-sitemap-entry href={href(entry.path)}>{entry.title}</a></li>)}
+          </ul>
+        )}
+        {!course.pages.some((entry) => entry.kind === 'lesson') && <p class="muted">公開内容と学習の進め方は、資格の案内ページでご確認ください。</p>}
+      </section>
+    ))}
+
+    <section id="learning-tools" class="course-section" aria-labelledby="learning-tools-title">
+      <h2 id="learning-tools-title">学習に使う機能</h2>
+      <ul class="sitemap-list">
+        <li><a href={href('search/')}>サイト内検索</a>：資格やレッスンをキーワードで探します。</li>
+        <li><a href={href('progress/')}>マイ学習・ブックマーク</a>：このブラウザの記録の確認、続きからの学習、バックアップの保存・復元ができます。</li>
+      </ul>
+    </section>
+    <p class="muted"><a href={href('sitemap.xml')}>検索エンジン向けのXMLサイトマップ</a></p>
+  </article>
+</Layout>
+
+<style>
+  .sitemap-page { max-width: 1100px; }
+  .sitemap-page :is(section, h2, h3) { scroll-margin-top: 7rem; }
+  .sitemap-jump ul { display: flex; flex-wrap: wrap; gap: 8px 22px; padding-left: 1.25rem; }
+  .sitemap-jump a, .sitemap-list a { display: inline-block; padding-block: 9px; overflow-wrap: anywhere; }
+  .sitemap-list a { display: block; }
+  .sitemap-list { padding-left: 1.5rem; margin-block: 0.5rem 1.5rem; }
+  .sitemap-list li { padding-right: 1rem; line-height: 1.8; min-width: 0; }
+  .sitemap-subject { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+  .sitemap-subject h4 { margin: 1.25rem 0 0.25rem; }
+  .sitemap-shortcuts { display: flex; flex-wrap: wrap; column-gap: 2rem; }
+  @media (min-width: 720px) { .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2rem; } }
+</style>
