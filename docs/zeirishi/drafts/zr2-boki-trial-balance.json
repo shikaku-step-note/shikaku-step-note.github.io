@@ -1,0 +1,319 @@
+{
+  "id": "zr2-boki-trial-balance",
+  "subject": "boki",
+  "title": "合計と残高の試算表を作り、誤謬を調べる",
+  "stage": "基礎",
+  "moduleId": "boki-records",
+  "minutes": 110,
+  "objectives": [
+    "合計・残高・合計残高試算表と集計段階を区別する",
+    "元帳合計と残高を算定し全勘定の貸借を照合する",
+    "不一致と訂正の影響を両側で計算し、仕訳と転記の誤りを分ける",
+    "貸借一致の限界と未知額を確定する条件を説明する"
+  ],
+  "prerequisites": [
+    "zr2-boki-journals-ledgers"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "sourceCandidates": [
+    {
+      "id": "ac2-bookkeeping-official",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+      "location": "令和5年分手引き6(11)（印刷14頁）試算表の作成と不一致の調査、6(12)（印刷15頁）。Q6等の個人税務向け差額調整を本講の会社簿記へ移用しない"
+    },
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "合計試算表",
+      "definition": "指定段階の各勘定の借方記入合計と貸方記入合計を一覧にした表"
+    },
+    {
+      "term": "残高試算表",
+      "definition": "各勘定の借方貸方の差額を残高の側へ記載した表"
+    },
+    {
+      "term": "合計残高試算表",
+      "definition": "各勘定の借方貸方合計と借方貸方残高を一表にした試算表"
+    },
+    {
+      "term": "整理前試算表",
+      "definition": "決算整理仕訳を反映する前の段階の試算表"
+    },
+    {
+      "term": "整理後試算表",
+      "definition": "決算整理仕訳を反映した段階の試算表"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-trial-balance-ex1",
+      "section": "例題1：同じ元帳から合計表と残高表を作る",
+      "result": {
+        "openingBoth": 1400000,
+        "currentBoth": 800000,
+        "totalBoth": 2200000,
+        "balanceBoth": 1670000
+      }
+    },
+    {
+      "id": "zr2-boki-trial-balance-ex2",
+      "section": "例題2：片側の金額誤りと左右反対の転記",
+      "result": {
+        "debit": 1231000,
+        "credit": 1231000
+      }
+    },
+    {
+      "id": "zr2-boki-trial-balance-ex3",
+      "section": "例題3：貸借一致では見つからない誤り",
+      "result": {
+        "apCorrectionDebit": 80000,
+        "salaryCorrectionCredit": 80000
+      }
+    },
+    {
+      "id": "zr2-boki-trial-balance-ex4",
+      "section": "例題4：残高試算表から未知の売上を求める",
+      "result": {
+        "sales": 480000,
+        "profit": 250000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-trial-balance-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "当座預金勘定の指定段階の借方合計690,000円、貸方合計250,000円。残高試算表の借方へ記載する額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "690,000−250,000＝440,000円の借方残高です。合計試算表なら両側を記載しますが、残高表は差額だけです。合計940,000円を残高にしません。",
+      "input": "number",
+      "accepted": [
+        "440000"
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "借入金の貸方合計380,000円、借方合計140,000円。他の調整はない。残高試算表の貸方へ記載する額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "380,000−140,000＝240,000円の貸方残高。返済等の借方記入を差し引いて、残る義務を表示します。両側の合計520,000円ではありません。",
+      "input": "number",
+      "accepted": [
+        "240000"
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "期首試算表の借方貸方合計はそれぞれ850,000円。当期仕訳の借方貸方合計はそれぞれ560,000円。転記は正しい。期首繰越を含み締切記入を含まない合計試算表の借方合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "850,000＋560,000＝1,410,000円です。当期記入だけなら560,000円ですが、今回は期首を含みます。貸方合計も同額です。",
+      "input": "number",
+      "accepted": [
+        "1410000"
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "3勘定の借方/貸方合計は、現金400,000/150,000円、当座預金350,000/60,000円、買掛金50,000/190,000円。この3勘定から生じる借方残高の合計を円単位で求めてください。他勘定の残高は求めない。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "現金250,000円と当座預金290,000円が借方残高、買掛金140,000円は貸方です。借方残高合計250,000＋290,000＝540,000円。3勘定だけなので左右合計一致を要求する資料ではありません。",
+      "input": "number",
+      "accepted": [
+        "540000"
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "正しい仕訳では売掛金回収12,000円を貸方へ転記するが、売掛金の借方へ12,000円と転記した。現金側は正しい。訂正の影響を選んでください。",
+      "options": [
+        "借方合計12,000円減、貸方合計12,000円増",
+        "貸方合計24,000円だけ増",
+        "借方合計12,000円だけ減",
+        "現金借方を12,000円追加"
+      ],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "売掛金の誤った借方12,000円を除き、正しい貸方12,000円を加えます。不一致は24,000円改善します。現金は正しく追加記入しません。差額片側だけや金額を倍にした仕訳は元の転記へ対応しません。"
+    },
+    {
+      "id": "zr2-boki-trial-balance-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "当期費用40,000円を、正しくは給料であるのに地代家賃として記録し、相手現金は正しい。ほかに誤りはない。正しい説明を選んでください。",
+      "options": [
+        "貸借が必ず40,000円不一致",
+        "費用合計は同じだが科目内訳は誤る",
+        "現金が40,000円過大",
+        "正規の簿記では内訳の訂正は不要"
+      ],
+      "answer": 1,
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "同じ当期費用同士の誤分類なので試算表の貸借と費用合計は変わりませんが、費用内訳は誤ります。利益まで必ず40,000円過少になるわけではなく、合計一致だけでは分類を確認できません。"
+    },
+    {
+      "id": "zr2-boki-trial-balance-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "合計試算表の借方1,965,000円、貸方1,920,000円。仕訳帳は正しいが、家賃75,000円支払の現金貸方を30,000円と転記していた。他に誤りはない。転記訂正後の貸方合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "貸方不足は75,000−30,000＝45,000円。1,920,000＋45,000＝1,965,000円で借方と一致します。家賃借方は正しいため追加しません。",
+      "input": "number",
+      "accepted": [
+        "1965000"
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "買掛金60,000円の現金支払を、仕訳帳で給料60,000／現金60,000と誤記し、そのまま転記した。正しい訂正仕訳を選んでください。",
+      "options": [
+        "買掛金60,000／現金60,000を追加",
+        "給料60,000／買掛金60,000",
+        "現金60,000／売上60,000",
+        "買掛金60,000／給料60,000"
+      ],
+      "answer": 3,
+      "objectives": [
+        3
+      ],
+      "explanation": "誤った給料を貸方で取り消し、買掛金の減少を借方へ記録します。現金はすでに正しく減っているので重ねません。正しい支払仕訳全体の追加、給料増加、架空収益の候補は誤りです。"
+    },
+    {
+      "id": "zr2-boki-trial-balance-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "残高試算表の借方は現金250,000円・売掛金350,000円・備品800,000円・費用310,000円。貸方は買掛金160,000円・借入金250,000円・資本金900,000円・未知の売上のみ。他に勘定も誤謬もない。売上を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2,
+        4
+      ],
+      "explanation": "借方合計1,710,000円、貸方既知額1,310,000円より売上400,000円です。利益は400,000−310,000＝90,000円。資産1,400,000＝負債410,000＋資本金900,000＋利益90,000でも検算できます。",
+      "input": "number",
+      "accepted": [
+        "400000"
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "残高試算表で売上と借入金の二つだけが不明、他の額は既知である。貸借一致の関係だけで両方を個別に確定できるか説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "explanation": "同じ貸方に二つの未知額があり、合計しか決まらない場合を問います。独立した別資料が要るという条件を説明してください。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "貸借一致だけで分かるのは売上と借入金の合計であり、両方を個別確定できない。売上に関する請求資料、借入金の入出金、利益額など独立した条件が必要となる。",
+      "rubric": [
+        {
+          "criterion": "二つの未知額の合計だけが分かると説明",
+          "points": 1
+        },
+        {
+          "criterion": "独立した追加資料の例を示す",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "提供済み役務の現金売上30,000円を、仕訳帳と元帳の両方で全く記録していなかった。他の記録は正しい。正しい説明を選んでください。",
+      "options": [
+        "借方だけ30,000円不足",
+        "貸方だけ30,000円不足",
+        "貸借は一致し得るが現金と売上が各30,000円過少",
+        "貸借一致なら記帳不要と判断する"
+      ],
+      "answer": 2,
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "借方現金と貸方売上が同額落ちるので試算表は一致しても双方30,000円過少です。記録がない取引は証憑との照合で発見します。貸借差額の有無だけでは足りません。"
+    },
+    {
+      "id": "zr2-boki-trial-balance-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-trial-balance",
+      "prompt": "整理前試算表は貸借一致しているが、当期に発生済みの給与25,000円が未払で未記帳と判明した。貸借一致を理由に無視できるか、利益への影響と必要仕訳を説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        3,
+        4
+      ],
+      "explanation": "整理前の一致は決算整理完了の意味ではありません。当期費用と未払負債を同額追加しても一致は保たれます。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "無視できない。借方・給料25,000円／貸方・未払費用25,000円を記録する。当期費用が増えるため、未計上のままの利益は25,000円過大であり、整理後は25,000円減少する。",
+      "rubric": [
+        {
+          "criterion": "整理前の一致だけで整理不要としない",
+          "points": 1
+        },
+        {
+          "criterion": "給料と未払費用の25,000円仕訳を示す",
+          "points": 1
+        },
+        {
+          "criterion": "利益の過大と整理後減少の方向を説明",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

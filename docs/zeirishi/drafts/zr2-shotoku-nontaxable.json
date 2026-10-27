@@ -1,0 +1,433 @@
+{
+  "id": "zr2-shotoku-nontaxable",
+  "subject": "shotoku",
+  "title": "補償・贈与・生活用動産の非課税を判断する",
+  "stage": "標準",
+  "moduleId": "zr2-shotoku-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "損害賠償金等の性質から課税を判定する",
+    "相続贈与と所得税の境界を説明する"
+  ],
+  "objectiveIds": [
+    "zr2-shotoku-nontaxable-o01",
+    "zr2-shotoku-nontaxable-o02"
+  ],
+  "prerequisites": [
+    "zr2-shotoku-attribution"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "location": "9条1項9・17・18号、34条、36条、51条、73条。凍結版9条該当号本文を読了",
+      "applicableVersion": "2026-04-03施行版"
+    },
+    {
+      "id": "income-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093",
+      "location": "25条、30条全号、94条。4月3日指定API取得JSONのMainProvision本文を読了",
+      "applicableVersion": "2026-04-03指定APIの2026-04-01施行版"
+    },
+    {
+      "id": "income-damages",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1700.htm",
+      "location": "身体傷害、棚卸資産、仮店舗家賃、廃車補償、医療費補填。凍結法令30/94条と照合",
+      "applicableVersion": "現行補助解説。施行済み凍結法令を優先"
+    },
+    {
+      "id": "income-suspension-pay",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1905.htm",
+      "location": "労基法26条休業手当と76条等の休業補償。補助解説",
+      "applicableVersion": "令和8年4月1日現在法令等と表示。独立した関係労働法の確認はpending"
+    }
+  ],
+  "sourceUncertainties": [
+    "非課税の全類型はこの単独本文だけで完了しない。通勤旅費/学資等は後続の給与等の教材で要件と実演を追加する",
+    "見舞金の相当性、補償内容、資産損失/経費の可否は各例題に明示した仮定。実際の合意書の内訳判定を自動化しない",
+    "労基法休業手当等は国税庁の解説で確認したが、関係労働法の凍結本文の独立レビューはpending。模範解答/部分点は独自基準"
+  ],
+  "glossary": [
+    {
+      "term": "非課税所得",
+      "definition": "法律の規定によって所得税を課さない所得。控除計算で所得がゼロになることとは区別する"
+    },
+    {
+      "term": "補填金",
+      "definition": "損害や支出等を埋め合わせる金額。何を補うかで収入計上や控除対象額の調整が変わる"
+    },
+    {
+      "term": "資産損失",
+      "definition": "資産の損壊・滅失等による損失。必要経費への算入では補填額や対象資産等の規定を確かめる"
+    },
+    {
+      "term": "生活用動産",
+      "definition": "家具・衣服等の生活に通常必要な動産。所定の高額貴金属・書画等は譲渡の非課税対象から除かれる"
+    },
+    {
+      "term": "特別控除",
+      "definition": "各所得等の規定により計算上差し引く金額。収入自体を非課税とする規定とは区別する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-shotoku-nontaxable-e1",
+      "section": "例題1：身体の損害と医療費の補填",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "nontaxableReceipts": 1000000,
+        "medicalBeforeThreshold": 500000,
+        "alternativeMedical": 200000
+      }
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-e2",
+      "section": "例題2：一つの事故の補償を三つに分ける",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "businessRevenue": 2100000,
+        "expenses": 1800000,
+        "vehicleAssetLoss": 0,
+        "netIncomeIncrease": 300000
+      }
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-e3",
+      "section": "例題3：相続した建物の賃料と、二種類の贈与",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "rentalIncome": 1500000,
+        "temporaryRevenue": 400000,
+        "temporaryIncome": 0,
+        "personalGiftNonIncomeTaxable": 800000
+      }
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-e4",
+      "section": "例題4：家具と貴金属を同じ日に売った場合",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "taxableTransferGainBeforeSpecialDeduction": 90000,
+        "furnitureExempt": true
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-shotoku-nontaxable-q1",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "個人事業主が、交通事故の負傷により仕事ができなかった期間の収益について、加害者から損害賠償金を受けた。身体の傷害に基因する補償で、経費の補填等を含まないと確定している。適切な扱いを選んでください。",
+      "options": [
+        "事業主なので必ず全額事業収入",
+        "心身の損害に基因する所定の補償として非課税",
+        "半分だけ一時所得の収入",
+        "源泉徴収がなければ贈与税だけの対象"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "傷害のため働けなかったことによる給与・収益の補償も、施行令30条1号の対象に含まれます。店舗の休止に対する営業補償等とは、身体傷害に基因するという条件を分けて読みます。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q2",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "店舗の事故で、商品損失の補償180万円と、経費に算入される臨時倉庫賃料の補填45万円を受けた。商品の損失140万円と倉庫賃料45万円は、この年に適正に必要経費へ反映される。他の項目はない。これらの項目による事業所得の増加額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "400000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "収入は180＋45＝225万円、経費は140＋45＝185万円なので増加は40万円です。商品の補償は収入に代わる性質、倉庫賃料の補填は必要経費の補填として扱います。商品損失が帳簿へ反映済みなら二重経費計上をしません。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q3",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "全て業務用の機械が第三者の突発的事故で滅失した。資産損失計算上の損失額75万円、当該機械の損害に対する非課税の賠償金90万円で、他の補填・費用補填・残存物はない。必要経費へ算入する資産損失を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "0"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "損失75万円は補償90万円で全額補填され、必要経費として残る資産損失はゼロです。負の15万円を経費にするものではありません。本問の所定の非課税賠償金は、超過15万円も課税収入へ変えません。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q4",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "事故治療の対象医療費は42万円、その治療費を補填する賠償金は50万円。別の疾病の対象医療費18万円もある。他の補填はない。所得に応じる足切り・上限を適用する前の、医療費控除計算へ渡す対象医療費合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "180000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "事故分は42万円全額が補填されてゼロです。超過8万円を別疾病の18万円から引かないため、合計18万円が残ります。これは足切り等の前の対象額で、最終的な所得控除額を求めたものではありません。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q5",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "個人からの現金贈与と、雇用・事業との関係がない法人からの単発の無償贈与を受けた。法人の贈与は一時所得と確定している。所得税の説明として適切なものはどれですか。",
+      "options": [
+        "両方とも個人受取なので所得税の贈与非課税に入る",
+        "個人の贈与は所定の非課税、法人の贈与は一時所得の収入へ入れて計算する",
+        "個人の贈与は所得税の基礎控除110万円を使って判定する",
+        "法人の贈与は金額を問わず非課税"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "所得税法9条1項17号の贈与は個人からの取得が対象です。法人からの本問の贈与は一時所得の計算へ入れます。贈与税の年110万円を所得税の課税範囲の判定に流用しません。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q6",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "勤務先が、勤務の対価として従業員個人の債務12万円を負担した。非課税手当等の特例には該当せず、勤務に関連する経済的利益と確定している。説明として適切なものはどれですか。",
+      "options": [
+        "現金を受け取っていないので所得は生じない",
+        "法人の負担なので常に一時所得",
+        "勤務に係る経済的利益として給与所得の収入等の規定を確認する",
+        "個人への贈与なので必ず所得税非課税"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "現金の受領がなくても経済的利益が収入となる場合があります。本問は勤務の対価で、非課税の特例もないため、給与所得としての取扱いを確認します。法人からの利益を全て一時所得とする処理も適切ではありません。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q7",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "相続による取得が所得税非課税となる賃貸建物を得た。その後に本人へ帰属する2025年分の賃料収入360万円、適正な必要経費125万円がある。死亡前の未収賃料や他の特例はない。不動産所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "2350000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "相続による建物取得と、取得後の賃貸所得を分けます。不動産所得は360−125＝235万円です。相続財産から生じたという理由で、その後の賃料まで非課税にはしません。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q8",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "いずれも生活に通常必要な動産であると確定した中古家具1点を50万円、貴金属の装身具1個を30万円で売った。転売事業等ではなく、売却価額がそれぞれの価額とする。生活用動産の譲渡の非課税について適切なものはどれですか。",
+      "options": [
+        "家具だけ課税対象で装身具は非課税",
+        "両方とも30万円以上なので対象外",
+        "家具は所定の生活用動産で、装身具もちょうど30万円で超えないため、この条件では双方が非課税対象",
+        "装身具は貴金属なら価額を問わず対象外"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "30万円を超えるものを除く規定は所定の貴金属・書画等が対象です。家具へ一律に当てはめず、装身具のちょうど30万円を超過側に入れないようにします。本問は生活に通常必要な動産という前提も明示しています。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q9",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "『一時所得に該当する法人の贈与は、他の一時所得がなく特別控除で所得ゼロになった。だからその贈与は、個人からの贈与と同じ所得税法9条の非課税所得である』という説明を訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "法人からの贈与は、本問では一時所得の収入へ入れたうえで、必要な支出・特別控除等の計算を行い所得がゼロとなった。個人からの所定の贈与は9条1項17号により所得税を課さない。最終的に税額が生じない場合でも、対象収入への算入と非課税の根拠は異なる。",
+      "rubric": [
+        {
+          "criterion": "法人贈与は本問の一時所得収入へ算入すると説明",
+          "points": 2
+        },
+        {
+          "criterion": "個人贈与は9条の所定の非課税と区別",
+          "points": 2
+        },
+        {
+          "criterion": "控除後ゼロと非課税を同一視しない",
+          "points": 1
+        }
+      ],
+      "explanation": "ゼロという結果だけで制度を同一視すると、他の一時所得がある場合の特別控除の配分や申告計算を誤ります。計算に入るか、入れた後にいくら残るかを分けて説明します。"
+    },
+    {
+      "id": "zr2-shotoku-nontaxable-q10",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "prompt": "店舗事故で『見舞金等200万円』の一括入金があり、帳簿には商品損失、店舗修理、事業主の治療費が混在する。入金額とこの名称だけで全額非課税とする解答をどう見直すべきか、必要資料と判定・調整の順序を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "合意書や保険の算定明細等で何を補償する金額かを分け、商品の損害や収益に代わる部分、必要経費の補填、身体傷害、固定資産の損害等を判定する。商品等の収入に代わる部分や経費補填は収入の規定を確認し、所定の非課税補償は関連する資産損失や医療費の対象額から補填を調整する。既に経費へ反映した損失の二重計上も確認する。資料が足りないため200万円全額の区分は断定しない。",
+      "rubric": [
+        {
+          "criterion": "合意書/算定書等で補償対象別の内訳を確認",
+          "points": 2
+        },
+        {
+          "criterion": "収入代替/経費補填と所定の身体・資産補償等を区分",
+          "points": 2
+        },
+        {
+          "criterion": "資産損失/医療費の調整または二重経費の防止を説明",
+          "points": 1
+        },
+        {
+          "criterion": "資料不足から全額非課税を断定しない",
+          "points": 1
+        }
+      ],
+      "explanation": "見舞金という名称や振込本数だけで結論を出しません。本問は損害の内訳も金額も確定していないため、数値の計算より前に必要な事実を特定する力を問います。"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "旅費・通勤・学資・現物利益",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-nontaxable-employment-benefits",
+          "title": "旅費・通勤・学資・現物利益の非課税条件",
+          "objectiveIds": [
+            "zr2-shotoku-nontaxable-employment-benefits-o01",
+            "zr2-shotoku-nontaxable-employment-benefits-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-salary",
+          "title": "給与・現物給与・給与所得表",
+          "objectiveIds": [
+            "zr2-shotoku-salary-o01",
+            "zr2-shotoku-salary-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "社会保障・子育て・災害給付",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-nontaxable-social-grants",
+          "title": "社会保障・子育て・災害等給付の根拠",
+          "objectiveIds": [
+            "zr2-shotoku-nontaxable-social-grants-o01",
+            "zr2-shotoku-nontaxable-social-grants-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "医療控除の足切り・選択・上限",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-deductions-medical",
+          "title": "医療費・セルフメディケーション",
+          "objectiveIds": [
+            "zr2-shotoku-deductions-medical-o01",
+            "zr2-shotoku-deductions-medical-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "補償の内訳・時期・支払側の賠償・廃業",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-damages-business-integrated",
+          "title": "補償の内訳・収入時期・経費と控除の総合",
+          "objectiveIds": [
+            "zr2-shotoku-damages-business-integrated-o01",
+            "zr2-shotoku-damages-business-integrated-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-business-costs",
+          "title": "必要経費・債務確定・租税公課",
+          "objectiveIds": [
+            "zr2-shotoku-business-costs-o01",
+            "zr2-shotoku-business-costs-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-death-closure",
+          "title": "死亡・廃業・準確定と訂正",
+          "objectiveIds": [
+            "zr2-shotoku-death-closure-o01",
+            "zr2-shotoku-death-closure-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "譲渡所得と生命保険等",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-transfer-general",
+          "title": "総合譲渡・長短・取得費承継",
+          "objectiveIds": [
+            "zr2-shotoku-transfer-general-o01",
+            "zr2-shotoku-transfer-general-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-temporary-insurance",
+          "title": "一時所得・生命保険・年金受給権",
+          "objectiveIds": [
+            "zr2-shotoku-temporary-insurance-o01",
+            "zr2-shotoku-temporary-insurance-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ]
+}

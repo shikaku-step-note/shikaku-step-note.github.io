@@ -1,0 +1,525 @@
+{
+  "id": "zr2-shotoku-income-map",
+  "subject": "shotoku",
+  "title": "収入原因から十所得と課税方式を選ぶ",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-shotoku-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "収入原因から十所得へ区分する",
+    "課税方式と所得区分の関係を説明する"
+  ],
+  "objectiveIds": [
+    "zr2-shotoku-income-map-o01",
+    "zr2-shotoku-income-map-o02"
+  ],
+  "prerequisites": [
+    "zr2-shotoku-nontaxable"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "location": "21〜24条、26〜28条、30条、32〜35条。23/24/26/27/28/30/32/33/34/35のMainProvision本文を読了",
+      "applicableVersion": "2026-04-03施行版"
+    },
+    {
+      "id": "special-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "location": "3条1項、8の4第1〜2項、8の5第1〜2項、37の12の2第1〜2項の凍結本文を読了。土地株式等の個別特例は後続へ",
+      "applicableVersion": "2026-04-03施行版"
+    },
+    {
+      "id": "income-finance-2025-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/pdf/Q/Q1.pdf",
+      "location": "VII上場株式等の配当等の課税関係、総合/申告分離/不要、通算と配当控除",
+      "applicableVersion": "2025年分"
+    },
+    {
+      "id": "income-forest",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1480.htm",
+      "location": "山林5年、土地部分、山林所得の計算。凍結32/33条と照合",
+      "applicableVersion": "現行補助解説。2026-04-03施行法を優先"
+    }
+  ],
+  "sourceUncertainties": [
+    "事業と業務雑所得の詳細判定・保存帳簿・営利性の実演は後続教材へ。ここでは300万円等の単独数値で断定しない",
+    "分離課税の全例外・特定金融商品・大口判定・みなし配当・各繰越の申告要件は後続の各単元で扱い、本文だけで範囲完了としない",
+    "申告不要と源泉分離、所得区分と税額計算を区別する基礎。実際の最有利申告方式や申告義務の結論は追加条件が必要"
+  ],
+  "glossary": [
+    {
+      "term": "所得区分",
+      "definition": "収入原因等に応じ、所得税法が所得を利子・配当等の十種類へ分類すること"
+    },
+    {
+      "term": "総合課税",
+      "definition": "対象の所得を所定の計算で合計し、所得控除等を経て税額を求める課税方式"
+    },
+    {
+      "term": "申告分離課税",
+      "definition": "他の所得と分けた計算系列で、申告により税額を計算する課税方式"
+    },
+    {
+      "term": "源泉分離課税",
+      "definition": "原則として所定の源泉徴収で課税関係を完結させる課税方式"
+    },
+    {
+      "term": "一時所得",
+      "definition": "他の所定所得に当たらず、継続的営利行為以外の一時の所得で、役務・資産譲渡の対価等を除く所得"
+    },
+    {
+      "term": "雑所得",
+      "definition": "他の九所得のいずれにも該当しない所得。公的年金等とその他等を区分して計算する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-shotoku-income-map-e1",
+      "section": "例題1：事業主の三つの売却を振り分ける",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "goods": "事業収入",
+        "equipment": "総合譲渡の対象",
+        "land": "土地の申告分離譲渡の対象"
+      }
+    },
+    {
+      "id": "zr2-shotoku-income-map-e2",
+      "section": "例題2：原稿料と懸賞賞金の控除を分ける",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "miscIncome": 120000,
+        "temporaryIncome": 150000,
+        "temporaryIncluded": 75000,
+        "twoItemsIncluded": 195000
+      }
+    },
+    {
+      "id": "zr2-shotoku-income-map-e3",
+      "section": "例題3：山林を土地付きで売った場合",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "forestryIncome": 2500000,
+        "land": "別の土地譲渡所得"
+      }
+    },
+    {
+      "id": "zr2-shotoku-income-map-e4",
+      "section": "例題4：同じ利息と、上場配当の選択",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "bankInterest": "利子/通常源泉分離",
+        "nonbusinessLoan": "雑所得",
+        "remainingListedLoss": 150000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-shotoku-income-map-q1",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "個人が自己の撮影機材を一時的に他人へ貸し、対価を得た。船舶・航空機や不動産ではなく、事業所得にも給与等にも該当しないと確定している。資産自体の譲渡はない。所得区分を選んでください。",
+      "options": [
+        "不動産所得",
+        "譲渡所得",
+        "雑所得",
+        "退職所得"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "所得税法の不動産所得の貸付対象には不動産等・船舶・航空機があり、あらゆる資産貸付けを含むわけではありません。本問は事業等にも当たらず、機材の貸付対価として他の九所得へ該当しない雑所得を検討します。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q2",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "知人の依頼で荷物を運ぶ役務を行い、一度だけ謝礼を得た。給与・事業等には当たらず、役務の対価としての性質があると確定している。『一回なので一時所得』という解答を訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "一時所得は単に一回の収入というだけではなく、役務の対価としての性質を持たない等の要件が必要である。本問は役務の対価で一時所得から外れ、給与・事業等にも該当しない条件なので雑所得として検討する。",
+      "rubric": [
+        {
+          "criterion": "回数だけで決めないと説明",
+          "points": 1
+        },
+        {
+          "criterion": "役務対価を一時所得から除く条件を適用",
+          "points": 2
+        },
+        {
+          "criterion": "本問の残余区分として雑所得",
+          "points": 1
+        }
+      ],
+      "explanation": "一時所得の50万円特別控除を使う前に所得区分を確定します。謝礼という呼び方より、何に対する支払かが決め手です。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q3",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "取得後ちょうど5年で山林の立木を売った。事業には該当せず、収入85万円、必要経費35万円。他の所得・特例はない。山林所得の50万円特別控除を用いず計算する、この項目の雑所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "500000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "取得後5年以内は山林所得から除外されます。本問は事業でない条件なので雑所得85−35＝50万円です。山林所得の特別控除を適用してゼロにすることはできません。土地部分を含む売却なら別途土地も区分します。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q4",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "通常の退職によって一時に受ける所定の退職手当と、その後に受ける公的年金等の年金について、所得区分の対応を選んでください。退職手当等のみなし規定等により別の扱いとなる例外はない。",
+      "options": [
+        "両方とも一時所得",
+        "退職手当は退職所得、年金は公的年金等に係る雑所得",
+        "退職手当は給与所得、年金は配当所得",
+        "両方とも利子所得"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "一時に支払われたという形だけで一時所得としません。退職に基因する所定の手当には退職所得、公的年金等には雑所得の計算規定があります。年金形式の支払すべてが公的年金等と同じ規定になるわけでもありません。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q5",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "不動産販売業者が販売商品として保有する建物を売った。棚卸資産の売却であると確定している。所得区分の説明を選んでください。",
+      "options": [
+        "建物なので必ず譲渡所得",
+        "建物なので必ず不動産所得",
+        "販売事業の収入として事業所得の計算へ入れる",
+        "購入者が個人なら一時所得"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "棚卸資産の売却は譲渡所得から除かれ、本問では販売事業の収入です。不動産所得の貸付けとも異なります。資産名だけでなく、保有目的と売却の性質を確認します。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q6",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "『配当所得は所得区分が一つなので、上場か非上場か、大口株主かどうかに関係なく課税方式も一つである』という説明を訂正してください。具体的な税率計算は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "所得区分と課税方式を分けて判定する。配当所得でも、所定の上場株式配当には総合課税・申告分離・申告不要等の選択がある一方、大口株主等や非上場等では同じ選択ができない場合がある。商品と受取人、配当の種類等を確かめて適用できる方式を選ぶ。",
+      "rubric": [
+        {
+          "criterion": "所得区分と方式を分ける",
+          "points": 2
+        },
+        {
+          "criterion": "上場配当の複数方式の例示",
+          "points": 1
+        },
+        {
+          "criterion": "大口/非上場等の条件による違いを説明",
+          "points": 1
+        },
+        {
+          "criterion": "方式を条件から選ぶと結論",
+          "points": 1
+        }
+      ],
+      "explanation": "方式を総合から分離へ変えても、配当という所得区分が雑所得等へ変わるわけではありません。非上場の少額配当等にも個別の例外があるため、全てを一律に断定しないようにします。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q7",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "所定の一般内国法人の上場配当所得60万円を申告分離で申告し、通算対象となる上場株式等の譲渡損失25万円を控除する。大口株主等でなく、必要な申告その他の要件は満たし、他の損失や負債利子はない。通算後の配当所得の金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "350000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "申告分離の対象配当から損失25万円を控除するので60−25＝35万円です。総合課税を選んだ同じ配当へ、この上場株式損失を同様に控除することはできません。ここでは税額そのものを計算していません。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q8",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "給与から毎月所得税が源泉徴収されているため、その給与は源泉分離課税であり、年間所得の計算へ一切入らないという解答がある。源泉徴収と課税方式の違いを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "源泉徴収は支払者が支払時に徴収する仕組みであり、それがあるだけで源泉分離課税になるとは限らない。給与は給与所得の年間計算を行い、年末調整や必要な確定申告で年間税額と徴収額を精算する。預金利子等の原則として源泉徴収で完結する方式とは区別する。",
+      "rubric": [
+        {
+          "criterion": "徴収の仕組みと方式を区別",
+          "points": 2
+        },
+        {
+          "criterion": "給与の年間計算/精算を説明",
+          "points": 1
+        },
+        {
+          "criterion": "原則完結する源泉分離との違いを示す",
+          "points": 1
+        }
+      ],
+      "explanation": "源泉徴収税額は通常、給与所得から控除する経費でもありません。所得の計算と税額の精算の段階を分けます。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q9",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "分離課税の所得を得た人について、他の所得控除等との関係を確認する姿勢として適切なものはどれですか。",
+      "options": [
+        "分離なら人的控除の所得要件にも一切影響しない",
+        "税額計算を分けることと、各控除の合計所得等の判定に含むかを分け、各規定を確認する",
+        "分離所得は常に非課税所得と同じ",
+        "本人の希望で他の所得区分へ変更する"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "分離課税でも控除の所得要件等に関わる場合があります。申告不要の選択や損失の前後なども含め、規定が用いる所得指標を確認します。分離という言葉だけで切り離さないようにします。"
+    },
+    {
+      "id": "zr2-shotoku-income-map-q10",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "prompt": "同一年に、一時所得に該当する二つの懸賞賞金30万円・50万円があり、その収入に直接要した支出はそれぞれ4万円・6万円。他の一時所得はない。別に必要経費控除後の雑所得12万円がある。損失等はないとして、これらの項目から総所得金額へ算入する合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "220000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "一時所得は二つを同年分として合計し、30＋50−4−6−50＝20万円。総所得への算入は20×1/2＝10万円です。雑所得12万円を加え22万円となります。一時所得の特別控除50万円を各賞金に一回ずつ使うことはできません。"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "事業と業務雑所得の実態判定",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-business-misc-boundary",
+          "title": "事業・業務雑所得の実態と記帳条件",
+          "objectiveIds": [
+            "zr2-shotoku-business-misc-boundary-o01",
+            "zr2-shotoku-business-misc-boundary-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "金融商品・配当・損失・方式選択",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-interest",
+          "title": "利子所得・公社債・投資信託",
+          "objectiveIds": [
+            "zr2-shotoku-interest-o01",
+            "zr2-shotoku-interest-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-dividends",
+          "title": "配当所得・申告方式・配当控除",
+          "objectiveIds": [
+            "zr2-shotoku-dividends-o01",
+            "zr2-shotoku-dividends-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-share-disposals",
+          "title": "株式等の取得費・譲渡・口座",
+          "objectiveIds": [
+            "zr2-shotoku-share-disposals-o01",
+            "zr2-shotoku-share-disposals-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-finance-losses",
+          "title": "株式・配当・先物の通算繰越",
+          "objectiveIds": [
+            "zr2-shotoku-finance-losses-o01",
+            "zr2-shotoku-finance-losses-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "給与・退職・山林・各所得の計算",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-salary",
+          "title": "給与・現物給与・給与所得表",
+          "objectiveIds": [
+            "zr2-shotoku-salary-o01",
+            "zr2-shotoku-salary-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-salary-adjustments",
+          "title": "所得金額調整・特定支出・年金併存",
+          "objectiveIds": [
+            "zr2-shotoku-salary-adjustments-o01",
+            "zr2-shotoku-salary-adjustments-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-retirement-types",
+          "title": "一般・短期・特定役員退職",
+          "objectiveIds": [
+            "zr2-shotoku-retirement-types-o01",
+            "zr2-shotoku-retirement-types-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-retirement-multiple",
+          "title": "複数退職金・DC一時金の重複",
+          "objectiveIds": [
+            "zr2-shotoku-retirement-multiple-o01",
+            "zr2-shotoku-retirement-multiple-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-forestry",
+          "title": "山林所得・概算経費・五分五乗",
+          "objectiveIds": [
+            "zr2-shotoku-forestry-o01",
+            "zr2-shotoku-forestry-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-misc-pension-crypto",
+          "title": "雑所得・公的年金・暗号資産",
+          "objectiveIds": [
+            "zr2-shotoku-misc-pension-crypto-o01",
+            "zr2-shotoku-misc-pension-crypto-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "資産別譲渡と所得計算への統合",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-transfer-general",
+          "title": "総合譲渡・長短・取得費承継",
+          "objectiveIds": [
+            "zr2-shotoku-transfer-general-o01",
+            "zr2-shotoku-transfer-general-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-transfer-estate",
+          "title": "土地建物の分離課税・費用",
+          "objectiveIds": [
+            "zr2-shotoku-transfer-estate-o01",
+            "zr2-shotoku-transfer-estate-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-loss-order",
+          "title": "損益通算の順序と1/2計算",
+          "objectiveIds": [
+            "zr2-shotoku-loss-order-o01",
+            "zr2-shotoku-loss-order-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-tax-allocation",
+          "title": "所得控除配分・累進/分離・復興税",
+          "objectiveIds": [
+            "zr2-shotoku-tax-allocation-o01",
+            "zr2-shotoku-tax-allocation-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "源泉・申告不要・各手続",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-withholding",
+          "title": "源泉徴収・給与賞与・年末調整",
+          "objectiveIds": [
+            "zr2-shotoku-withholding-o01",
+            "zr2-shotoku-withholding-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-filing-prepayment",
+          "title": "確定/不要/還付・予定納税",
+          "objectiveIds": [
+            "zr2-shotoku-filing-prepayment-o01",
+            "zr2-shotoku-filing-prepayment-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ]
+}

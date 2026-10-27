@@ -36,6 +36,7 @@ export async function GET() {
         archived: l.data.archived,
         order: l.data.order,
         subject: l.data.subject,
+        unit: l.data.unit,
         url: href(`qualifications/${l.data.qualification}/${l.data.stableId}/`),
         keywords: [...l.data.keywords, qualifications.find((q) => q.id === l.data.qualification)!.name],
       })),

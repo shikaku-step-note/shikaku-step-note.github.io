@@ -1,0 +1,382 @@
+{
+  "id": "zr2-shotoku-taxpayer",
+  "subject": "shotoku",
+  "title": "納税義務者・課税単位・納税地を確定する",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-shotoku-unit-scope",
+  "minutes": 75,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "人の区分と課税単位を決める",
+    "納税地と成立・確定の時点を説明する"
+  ],
+  "objectiveIds": [
+    "zr2-shotoku-taxpayer-o01",
+    "zr2-shotoku-taxpayer-o02"
+  ],
+  "prerequisites": [
+    "zr-shotoku-scope"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "location": "2条1項3〜5号、5条、7条、15〜16条、21条。既存取得JSONのMainProvisionを確認",
+      "applicableVersion": "2026-04-03施行版"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "location": "15条1項・2項1/2号・3項2号、16条、21条",
+      "applicableVersion": "2026-04-03施行版"
+    },
+    {
+      "id": "income-tax-place",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2029.htm",
+      "location": "主な納税地、納税地の特例、変更後の申告書による変更。法令本文と照合",
+      "applicableVersion": "現行ページの補助解説。4月3日基準の法令を優先"
+    }
+  ],
+  "sourceUncertainties": [
+    "居住区分の詳細は次レッスン。国際条約・外国法人・死亡時の成立特則の網羅をこの本文だけで完了扱いにしない",
+    "例題3は復興特別所得税・年末調整等を明示的に除外した精算の説明用。実申告の完全計算として扱わない"
+  ],
+  "glossary": [
+    {
+      "term": "納税義務者",
+      "definition": "税法の定めにより税を納める義務を負う人や法人等"
+    },
+    {
+      "term": "納税地",
+      "definition": "申告先などを決めるため、住所地等の規定で定める場所"
+    },
+    {
+      "term": "申告納税方式",
+      "definition": "納税者の申告によって納付すべき税額が確定することを原則とする方式"
+    },
+    {
+      "term": "納税義務の成立",
+      "definition": "法律が定める課税の事実が満たされ、抽象的な納税義務が生じること"
+    },
+    {
+      "term": "源泉徴収",
+      "definition": "一定の所得の支払者が支払時に所得税を徴収し、国へ納付する仕組み"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-shotoku-taxpayer-e1",
+      "section": "例題1：家族の収支を人ごとの計算表へ移す",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "aoiIncome": 3300000,
+        "ritsuIncome": 1500000
+      }
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-e2",
+      "section": "例題2：転居・事業場・死亡を区別する",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "livingFilingPlace": "C市の住所地",
+        "deceasedFilingPlace": "死亡時A市"
+      }
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-e3",
+      "section": "例題3：源泉徴収額があっても、年間税額を別に求める",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "payment": 36000,
+        "alternativeRefund": 30000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-shotoku-taxpayer-q1",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "国内に住所のある一人の個人が、屋号Xで物販、屋号Yでデザインを営む。法人設立の事実はない。申告単位の説明として最も適切なものはどれですか。",
+      "options": [
+        "屋号ごとに別人の所得税申告を行う",
+        "同じ個人の所得として集計し、各所得の計算に反映する",
+        "売上が大きい屋号だけを申告する",
+        "二つの屋号があるため法人税だけを申告する"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "屋号はこの個人と別の納税義務者ではありません。同一個人に帰属する所得を集計します。活動ごとの計算資料が必要でも申告者が二人になるわけではなく、少額側の除外や法人化にも根拠がありません。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q2",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "本人の事業収入は960万円、必要経費は620万円。同居する成人した子には、その子だけに帰属する別の事業所得120万円がある。共有・親族間取引の特則、青色申告特別控除等はない。本人の事業所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "3400000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "本人は960−620＝340万円です。子の120万円は子の所得であり、同居だけで本人に加算しません。460万円という答えは、個人単位の課税と家族の生活単位を取り違えています。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q3",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "外国籍の人が日本へ移り、入国時から国内に生活の本拠となる住所を有することが客観的事実から認められた。入国3か月後の判定として正しいものはどれですか。非永住者の判定は別に行います。",
+      "options": [
+        "外国籍なので必ず非居住者",
+        "国内滞在1年までは必ず非居住者",
+        "国内に住所を有するので居住者に該当する",
+        "国内法人から給与が支払われる場合に限り居住者"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "国内に住所を有することと、引き続き1年以上居所を有することは、居住者となる別の条件です。住所が認められた本問に1年の待機期間はありません。外国籍は非永住者判定の要素となりますが、居住者となることを妨げません。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q4",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "2025年末の住所はD市。2026年1月にE市へ生活の本拠を移し、同年3月に2025年分を申告する。納税地の特例・指定はない。原則的な提出先を選んでください。",
+      "options": [
+        "2025年末のD市を所轄する税務署長",
+        "提出時のE市の住所地を所轄する税務署長",
+        "年間売上が最大となった取引先所在地を所轄する税務署長",
+        "D市とE市へ期間を分けて提出"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "提出時の納税地が原則の基準です。本問ではE市の住所地となります。年間所得を転居前後に分けて二つの申告書を出す制度ではありません。通則法の旧納税地への提出の取扱いは、本問が求める原則とは区別します。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q5",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "国内F市に住所、G市に主たる事業場がある。税務署長による指定はない。G市を納税地とする特例を選べるか、原則も示して説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "原則はF市の住所地が納税地である。国内の住所地以外に主たる事業場があるため、所得税法16条2項の特例によりG市を納税地とすることができる。事業場があるだけで自動的に変更されるわけではない。",
+      "rubric": [
+        {
+          "criterion": "原則F市を示す",
+          "points": 1
+        },
+        {
+          "criterion": "住所地以外の主たる事業場という条件に基づき特例選択可とする",
+          "points": 2
+        },
+        {
+          "criterion": "自動変更ではなく選択であると区別する",
+          "points": 1
+        }
+      ],
+      "explanation": "店舗所在地を原則とする答案は住所地の規則が抜けています。変更手続を問われた場合は、変更後の納税地を記載した申告書による変更等も別に説明します。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q6",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "被相続人の死亡時の所得税納税地はH市で、相続人二人はI市とJ市に住む。死亡までの所得について行う申告の納税地を理由とともに答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "H市である。死亡した人の所得税の納税地は、相続人の納税地によらず、その人の死亡当時の納税地とするためである。相続人ごとにI市とJ市へ分けるものではない。",
+      "rubric": [
+        {
+          "criterion": "H市という結論",
+          "points": 1
+        },
+        {
+          "criterion": "死亡した人の死亡当時の納税地を用いる規定を説明",
+          "points": 2
+        },
+        {
+          "criterion": "相続人の住所へ置き換えない",
+          "points": 1
+        }
+      ],
+      "explanation": "申告する人と、その申告が対象とする所得を得た人を分けます。これは相続税そのものの納税地を問う問題ではありません。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q7",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "通常の年間所得税について、2025年12月31日に暦年が終了し、2026年3月5日に適法な確定申告をし、3月12日に申告した納付税額を支払った。原則的な成立・確定・納付の対応を選んでください。死亡・出国等の特則はありません。",
+      "options": [
+        "全て3月12日",
+        "成立12月31日・確定3月5日・納付3月12日",
+        "成立3月5日・確定12月31日・納付3月12日",
+        "成立12月31日・確定3月12日・納付3月5日"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "暦年終了で納税義務が成立し、申告納税方式で申告により税額が確定し、支払で納付を履行します。納付日を税額の確定日とする処理は両者を混同しています。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q8",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "源泉徴収対象の報酬を支払者が4月20日に支払い、適法に源泉徴収し、徴収税額を5月に納付する。支払者の源泉徴収による所得税の納税義務が成立し税額も確定する時を答えてください。",
+      "options": [
+        "4月20日の支払時",
+        "5月の納付時",
+        "受取人の年末",
+        "受取人の翌年の申告時"
+      ],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "源泉徴収による所得税は、対象所得の支払時に成立し、特別の手続を要せず税額が確定します。受取人の年間所得税の成立・精算とは別の義務です。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q9",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "ある人の源泉徴収税額控除前の年間所得税額は312,000円、源泉徴収税額は356,000円、予定納税はない。復興特別所得税・年末調整・端数・申告不要等を考えず直接精算できるとして、還付額を正の円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "44000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "既に徴収された356,000円が年間税額312,000円を44,000円超えるため、差額が還付額です。源泉徴収税額を収入や所得から差し引く計算ではありません。"
+    },
+    {
+      "id": "zr2-shotoku-taxpayer-q10",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "prompt": "ある解答は『外国法人から支払われた代金なので、国内に住所のある個人受取人も外国法人に区分し、外国法人の計算表に記入する』としている。二つの立場を示して誤りを訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "支払者である外国法人と、所得を得る個人を区別する。個人受取人は国内に住所を有するため居住者に該当し、必要に応じ非永住者かも判定して、その個人に帰属する所得を計算する。支払者の法人区分が受取人に移るわけではない。",
+      "rubric": [
+        {
+          "criterion": "支払者と受取人を区別",
+          "points": 1
+        },
+        {
+          "criterion": "国内に住所を有する個人として居住者と判定",
+          "points": 2
+        },
+        {
+          "criterion": "受取人自身の所得計算へ反映すると説明",
+          "points": 1
+        }
+      ],
+      "explanation": "支払場所・所得の源泉・課税方式は後で検討します。支払者の国籍や法人格だけで個人の納税義務者区分を変えることはできません。"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "法人や国外関連の所得税",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-corporate-income-tax",
+          "title": "内外法人と人格なき社団の所得税",
+          "objectiveIds": [
+            "zr2-shotoku-corporate-income-tax-o01",
+            "zr2-shotoku-corporate-income-tax-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-nonresident",
+          "title": "非居住者・国内源泉・条約",
+          "objectiveIds": [
+            "zr2-shotoku-nonresident-o01",
+            "zr2-shotoku-nonresident-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "死亡・出国・申告訂正",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-death-closure",
+          "title": "死亡・廃業・準確定と訂正",
+          "objectiveIds": [
+            "zr2-shotoku-death-closure-o01",
+            "zr2-shotoku-death-closure-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-filing-prepayment",
+          "title": "確定/不要/還付・予定納税",
+          "objectiveIds": [
+            "zr2-shotoku-filing-prepayment-o01",
+            "zr2-shotoku-filing-prepayment-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "居住区分の詳細",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-residence",
+          "title": "居住者・非永住者の課税範囲",
+          "objectiveIds": [
+            "zr2-shotoku-residence-o01",
+            "zr2-shotoku-residence-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-source-payment-timing",
+          "title": "源泉・支払地・年分・出入国の対応",
+          "objectiveIds": [
+            "zr2-shotoku-source-payment-timing-o01",
+            "zr2-shotoku-source-payment-timing-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ]
+}

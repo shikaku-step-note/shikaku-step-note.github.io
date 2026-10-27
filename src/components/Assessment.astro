@@ -1,10 +1,12 @@
 ---
-import type { Assessment } from '../lib/assessment';
+import { assessmentMaterialIssues, type Assessment } from '../lib/assessment';
 import { href } from '../lib/site';
 interface Props {
   assessment: Assessment;
 }
 const { assessment: a } = Astro.props;
+const materialIssues = assessmentMaterialIssues(a);
+if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')}`);
 ---
 
 <section class="assessment" data-assessment aria-labelledby="assessment-heading">
@@ -68,6 +70,39 @@ const { assessment: a } = Astro.props;
       <nav aria-label="問題を選ぶ" data-question-map></nav>
     </details>
   </div>
+  {a.materials?.length && (
+    <section class="assessment-materials" data-assessment-materials hidden aria-labelledby="material-heading">
+      <h3 id="material-heading">問題の共通資料</h3>
+      <p>設問で指定された資料を開いて確認できます。解答中も参照できます。</p>
+      {a.materials.map((material) => (
+        <details class="assessment-material" id={`material-${material.id}`}>
+          <summary>{material.title}</summary>
+          {material.paragraphs.map((paragraph) => (
+            <p>{paragraph}</p>
+          ))}
+          {material.tables?.map((table) => (
+            <div class="table-scroll" role="region" tabindex="0" aria-label={table.caption}>
+              <table>
+                <caption>{table.caption}</caption>
+                <thead>
+                  <tr>
+                    {table.headers.map((header) => (
+                      <th scope="col">{header}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {table.rows.map((row) => (
+                    <tr>{row.map((cell, i) => (i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>))}</tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ))}
+        </details>
+      ))}
+    </section>
+  )}
   <div class="assessment-questions" data-assessment-questions hidden>
     {a.questions.map((q, i) => (
       <fieldset class="assessment-question" data-question={q.id} data-question-index={i}>
@@ -75,6 +110,16 @@ const { assessment: a } = Astro.props;
           問{i + 1}　{q.group && <span>{q.group}： </span>}
           {q.prompt}
         </legend>
+        {q.materialIds?.length && (
+          <p class="question-material-links">
+            参照資料：
+            {q.materialIds.map((id) => (
+              <a href={`#material-${id}`} data-open-material={id}>
+                {a.materials!.find((material) => material.id === id)!.title}
+              </a>
+            ))}
+          </p>
+        )}
         {q.input === 'essay' ? (
           <label class="written-answer">
             記述解答（4,000字まで・提出後に解答例と照合）
@@ -153,6 +198,9 @@ const { assessment: a } = Astro.props;
       .assessment-questions[hidden] {
         display: block !important;
       }
+      .assessment-materials[hidden] {
+        display: block !important;
+      }
     </style>
     <p>本文と問題は読めます。解答・採点・記録にはJavaScriptが必要です。</p>
   </noscript>
@@ -176,3 +224,52 @@ const { assessment: a } = Astro.props;
     set:html={JSON.stringify(a).replace(/</g, '\\u003c')}
   />
 </section>
+<style>
+  .assessment-materials {
+    margin-block: 1.5rem;
+  }
+  .assessment-material {
+    border: 1px solid var(--line);
+    padding: 1rem;
+    margin-block: 0.75rem;
+    scroll-margin-top: 6rem;
+  }
+  .assessment-material summary {
+    cursor: pointer;
+    font-weight: 700;
+    min-height: 2.75rem;
+    display: flex;
+    align-items: center;
+  }
+  .assessment-material p,
+  .assessment-question legend {
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+  }
+  .question-material-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
+  .question-material-links a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  .assessment-material table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 28rem;
+  }
+  .assessment-material caption {
+    text-align: left;
+    font-weight: 700;
+    margin-block: 1rem 0.5rem;
+  }
+  .assessment-material th,
+  .assessment-material td {
+    text-align: left;
+    padding: 0.6rem;
+    border-bottom: 1px solid var(--line);
+  }
+</style>

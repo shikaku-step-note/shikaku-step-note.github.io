@@ -1,0 +1,329 @@
+{
+  "id": "zr2-boki-closing-accounts",
+  "subject": "boki",
+  "title": "損益・残高勘定を締め切り翌期へつなぐ",
+  "stage": "標準",
+  "moduleId": "boki-records",
+  "minutes": 120,
+  "objectives": [
+    "決算整理・損益集計・帳簿締切の段階を区別する",
+    "収益費用を損益へ集め利益損失を繰越利益剰余金へ振り替える",
+    "残高勘定と翌期開始を記録し、総額残高と決算書の純額を照合する",
+    "再振替の有無を指定条件から読み、前期費用と当期費用を区別する"
+  ],
+  "prerequisites": [
+    "zr2-boki-trial-balance"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "sourceCandidates": [
+    {
+      "id": "ac2-bookkeeping-official",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+      "location": "令和5年分手引き6(10)・6(11)(12)。期末損益と繰越の関係を参照するが、個人の元入金振替を株式会社へ移用しない。残高勘定方式は第76回簿記論の要求形式も参照"
+    },
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認"
+    },
+    {
+      "id": "ac2-exam-boki76",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_boki.pdf",
+      "location": "第76回第一問の本店・支店の損益勘定及び残高勘定、第三問の比較締切残高。出題形式・要求技能の一次資料であり公式解答解説ではない。数値と会社設定は本稿へ転載しない"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "決算整理",
+      "definition": "当期損益と期末資産負債等を適切にするために期間配分や評価等を行う手続"
+    },
+    {
+      "term": "損益勘定",
+      "definition": "決算締切で収益費用を集め当期利益損失を確定するための勘定"
+    },
+    {
+      "term": "残高勘定",
+      "definition": "残高勘定を使う締切方式で翌期へ引き継ぐ各勘定残高を集める勘定"
+    },
+    {
+      "term": "再振替",
+      "definition": "前期末の特定の整理仕訳を翌期首に逆仕訳し、当期の通常記帳と合わせて期間損益を整える手続"
+    },
+    {
+      "term": "繰越利益剰余金",
+      "definition": "利益剰余金のうち利益準備金や別途積立金等を除き、当期損益の振替・配当等の変動を反映する勘定"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-closing-accounts-ex1",
+      "section": "例題1：整理前試算表から損益・残高勘定まで",
+      "result": {
+        "preAdjustmentBoth": 2160000,
+        "postAdjustmentBoth": 2250000,
+        "profit": 30000,
+        "retained": 150000,
+        "closingBoth": 1380000,
+        "netAssetsTotal": 1320000
+      }
+    },
+    {
+      "id": "zr2-boki-closing-accounts-ex2",
+      "section": "例題2：損失が出るときの振替方向",
+      "result": {
+        "loss": 60000,
+        "retainedDebit": 30000
+      }
+    },
+    {
+      "id": "zr2-boki-closing-accounts-ex3",
+      "section": "例題3：前期未払給与を再振替する場合",
+      "result": {
+        "currentWages": 56000,
+        "cashPaid": 80000,
+        "accrualAfterPay": 0
+      }
+    },
+    {
+      "id": "zr2-boki-closing-accounts-ex4",
+      "section": "例題4：残高勘定の未知額を総額と純額で検算する",
+      "result": {
+        "cash": 160000,
+        "closingBoth": 860000,
+        "netTotal": 820000,
+        "profitConditional": 20000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-closing-accounts-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "整理後の売上は貸方残高420,000円。これを損益勘定へ振り替える仕訳を選んでください。",
+      "options": [
+        "損益420,000／売上420,000",
+        "売上420,000／損益420,000",
+        "売上420,000／現金420,000",
+        "売掛金420,000／売上420,000"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "売上の貸方残高を借方で0にし、収益を損益の貸方へ集めるため売上／損益です。逆の仕訳は売上を増やし、現金や売掛金を相手にすると返金等の新しい取引になってしまいます。"
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "整理後残高は給料260,000円・地代家賃110,000円・減価償却費30,000円で、他の費用はない。損益勘定の借方へ振り替える費用合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "260,000＋110,000＋30,000＝400,000円。損益400,000／給料260,000・地代家賃110,000・減価償却費30,000とし、元の費用借方残高を消します。",
+      "input": "number",
+      "accepted": [
+        "400000"
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "整理後収益は売上360,000円・受取利息20,000円。費用合計430,000円。他に損益はない。損失額を正の円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "収益380,000円に対し費用430,000円で損失50,000円です。損益勘定の借方に残る50,000円を貸方で消し、繰越利益剰余金を借方で減らします。問われるのは正の損失額です。",
+      "input": "number",
+      "accepted": [
+        "50000"
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "繰越利益剰余金の期首貸方残高70,000円。当期利益90,000円で、配当・評価差額・過年度修正等ほかの変動はない。利益振替後の貸方残高を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "70,000＋90,000＝160,000円です。損益90,000／繰越利益剰余金90,000の振替で増えます。当期利益90,000円と累積残高160,000円を区別します。",
+      "input": "number",
+      "accepted": [
+        "160000"
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "残高勘定を使って締め切る。現金の期末借方残高200,000円を残高勘定へ移す仕訳を選んでください。",
+      "options": [
+        "現金200,000／残高200,000",
+        "損益200,000／現金200,000",
+        "残高200,000／現金200,000",
+        "現金200,000／売上200,000"
+      ],
+      "answer": 2,
+      "objectives": [
+        3
+      ],
+      "explanation": "残高200,000／現金200,000で、現金借方残高を貸方から締め切り、残高勘定の借方へ集めます。翌期開始の逆仕訳や、現金支払を表す費用仕訳と取り違えません。"
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "締切後残高勘定の借方は現金未知・売掛金200,000円・備品700,000円・前払費用30,000円。貸方は借入金300,000円・買掛金140,000円・資本金500,000円・繰越利益剰余金90,000円・減価償却累計額50,000円のみ。現金を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "貸方合計1,080,000円、現金以外の借方930,000円なので現金150,000円。純額資産は150,000＋200,000＋700,000＋30,000−50,000＝1,030,000円で、負債440,000＋純資産590,000と一致します。",
+      "input": "number",
+      "accepted": [
+        "150000"
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "残高勘定を使う方式で翌期開始を行う。前期末売掛金は借方残高80,000円で、開始処理はまだしていない。仕訳を選んでください。",
+      "options": [
+        "売掛金80,000／残高80,000",
+        "残高80,000／売掛金80,000",
+        "売掛金80,000／売上80,000",
+        "現金80,000／売掛金80,000"
+      ],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "売掛金80,000／残高80,000として売掛金の借方へ期首残高を戻します。残高／売掛金は前期締切の方向で、新たな売上や回収を計上する候補も誤りです。"
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "前期末給与35,000円を未払費用計上済みで、当期首に再振替した。当期の支払給与105,000円にはその前期分35,000円が含まれ、支払時は全額給料へ記帳した。他の給与はない。当期費用を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "explanation": "期首の給料貸方35,000円と支払時の借方105,000円を合わせ、当期費用70,000円。未払費用は再振替で消えているので支払時に再び取り消しません。",
+      "input": "number",
+      "accepted": [
+        "70000"
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "前期給与32,000円を未払費用計上済み。当期に前期分32,000円と当期分78,000円の計110,000円を支払う。再振替しない場合の支払仕訳と、再振替する場合との当期費用の関係を説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "explanation": "再振替の有無で費用の帰属期間は変わりません。未払を二重に消す処理や、前期分を再び当期費用にする処理を避けます。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "再振替しない場合は未払費用32,000円・給料78,000円／現金110,000円。再振替する場合は期首に未払費用32,000円／給料32,000円、支払時に給料110,000円／現金110,000円とし、当期費用はどちらも78,000円で一致する。",
+      "rubric": [
+        {
+          "criterion": "再振替なしの支払仕訳と3金額を正しく示す",
+          "points": 2
+        },
+        {
+          "criterion": "再振替ありの2段階を説明",
+          "points": 1
+        },
+        {
+          "criterion": "当期費用78,000円が同じと結ぶ",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "繰越利益剰余金の期首貸方残高20,000円、当期損失50,000円。他の純資産変動はない。損益振替後の状態を選んでください。",
+      "options": [
+        "貸方残高70,000円",
+        "貸方残高30,000円",
+        "残高0円にして差額は借入金",
+        "借方残高30,000円"
+      ],
+      "answer": 3,
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "20,000−50,000＝−30,000円なので借方残高30,000円。負の利益剰余金であり新しい資産ではありません。貸方70,000は損失を加算し、貸方30,000は残高の側を取り違えています。"
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "残高勘定は借方貸方とも1,080,000円。借方はすべて資産の残高で、貸方は減価償却累計額50,000円と負債・純資産の貸方残高のみである。他の控除項目はない。B/Sの資産合計が1,030,000円になる理由と累計額の性質を説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "残高勘定は帳簿残高を相殺前に集め、B/Sは累計額を資産から控除しているためです。累計額を負債として分類しない点も確認します。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "残高勘定では資産原価と貸方の減価償却累計額を別々に集めている。B/Sは資産原価から累計額50,000円を控除するので1,080,000−50,000＝1,030,000円。累計額は資産の控除勘定で負債ではない。",
+      "rubric": [
+        {
+          "criterion": "相殺前帳簿残高と決算書純額を区別",
+          "points": 1
+        },
+        {
+          "criterion": "50,000円控除と1,030,000円を示す",
+          "points": 1
+        },
+        {
+          "criterion": "資産控除勘定であり負債と区別",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-closing-accounts",
+      "prompt": "前期末にある借入金元本200,000円について、給与の未払費用と同じように期首で再振替すべきだと考えた。正しい説明を選んでください。",
+      "options": [
+        "借入金200,000／売上200,000とする",
+        "給料200,000／借入金200,000とする",
+        "元本負債を期首へ引き継ぎ、返済等の事実で処理する",
+        "現金200,000／給料200,000とする"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        4
+      ],
+      "explanation": "経過勘定の特定整理仕訳と通常記帳を対応させる再振替を、すべての負債へ広げてはいけません。元本義務は期首へ引き継ぎ、返済や免除等の事実に応じて減らします。収益費用へ戻す各候補は元本の性質を変えます。"
+    }
+  ]
+}

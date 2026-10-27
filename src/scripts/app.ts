@@ -3,11 +3,13 @@ import {
   emptyData,
   validateData,
   mergeData,
+  STORAGE_LIMITS,
   type StudyData,
   type StudyRecord,
 } from '../lib/storage';
 import { href } from '../lib/site';
 import { attemptSummary } from '../lib/assessment';
+import { selectCourseLessons } from '../lib/course-progress';
 interface Entry {
   id: string;
   title: string;
@@ -19,6 +21,7 @@ interface Entry {
   order?: number;
   archived?: boolean;
   subject?: string;
+  unit?: number;
   assessmentKind?: string;
   assessmentVersion?: string;
 }
@@ -245,19 +248,21 @@ function renderProgress() {
   const allLessons = entries.filter((e) => e.kind === 'レッスン');
   const lessons = allLessons.filter((e) => !e.archived);
   $$('[data-course-progress]').forEach((el) => {
-    const course = lessons.filter(
-      (e) =>
-        e.qualification === el.dataset.courseProgress &&
-        (!el.dataset.courseSubject || e.subject === el.dataset.courseSubject),
+    const course = selectCourseLessons(
+      lessons,
+      el.dataset.courseProgress!,
+      el.dataset.courseSubject,
+      el.dataset.courseUnit === undefined ? undefined : Number(el.dataset.courseUnit),
     );
     const done = course.filter((e) => data.records[e.id]?.status === 'completed').length;
     el.textContent = `${done} / ${course.length} レッスン学習済み`;
   });
   $$<HTMLProgressElement>('[data-course-bar]').forEach((bar) => {
-    const course = lessons.filter(
-      (e) =>
-        e.qualification === bar.dataset.courseBar &&
-        (!bar.dataset.courseSubject || e.subject === bar.dataset.courseSubject),
+    const course = selectCourseLessons(
+      lessons,
+      bar.dataset.courseBar!,
+      bar.dataset.courseSubject,
+      bar.dataset.courseUnit === undefined ? undefined : Number(bar.dataset.courseUnit),
     );
     const done = course.filter((e) => data.records[e.id]?.status === 'completed').length;
     bar.max = course.length;
@@ -283,13 +288,12 @@ function renderProgress() {
     }
   });
   $$<HTMLAnchorElement>('[data-course-start]').forEach((a) => {
-    const course = lessons
-      .filter(
-        (e) =>
-          e.qualification === a.dataset.courseStart &&
-          (!a.dataset.courseSubject || e.subject === a.dataset.courseSubject),
-      )
-      .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+    const course = selectCourseLessons(
+      lessons,
+      a.dataset.courseStart!,
+      a.dataset.courseSubject,
+      a.dataset.courseUnit === undefined ? undefined : Number(a.dataset.courseUnit),
+    ).sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
     const last = course.find((e) => e.id === data.lastLesson);
     const next =
       last && data.records[last.id]?.status !== 'completed'
@@ -483,8 +487,11 @@ async function start() {
         info.textContent = '';
         return;
       }
-      if (file.size > 20 * 1024 * 1024)
-        throw new Error('ファイルが大きすぎます。20MB以下のバックアップを選んでください。');
+      if (file.size > STORAGE_LIMITS.backupBytes)
+        throw new Error(
+          `ファイルが大きすぎます。${STORAGE_LIMITS.backupBytes / (1024 * 1024)}MB以下のバックアップを選んでください。`,
+        );
+      info.textContent = 'バックアップを確認しています。大きなファイルは少し時間がかかります。';
       const next = validateData(JSON.parse(await file.text()));
       if (version !== importVersion) return;
       imported = next;

@@ -1,0 +1,415 @@
+{
+  "id": "zr2-shotoku-residence",
+  "subject": "shotoku",
+  "title": "居住履歴と送金から課税範囲を判定する",
+  "stage": "標準",
+  "moduleId": "zr2-shotoku-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "居住履歴から非永住者を判定する",
+    "国外源泉と送金の課税範囲を計算する"
+  ],
+  "objectiveIds": [
+    "zr2-shotoku-residence-o01",
+    "zr2-shotoku-residence-o02"
+  ],
+  "prerequisites": [
+    "zr2-shotoku-taxpayer"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "location": "2条1項3〜5号、7条、95条、161条。主に2条・7条を凍結版JSONで照合",
+      "applicableVersion": "2026-04-03施行版"
+    },
+    {
+      "id": "income-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093",
+      "location": "14〜15条、17条1〜4項。2026-04-03指定API取得JSONのMainProvision本文を読み、17条4項1〜6号の順序・金額・期間を照合",
+      "applicableVersion": "2026-04-03指定で返った2026-04-01施行版、revision340CO0000000096_20260401_508CO0000000093"
+    },
+    {
+      "id": "income-residence-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/01/01.htm",
+      "location": "2-1〜2-4の3。参照段落の改正記載は2006年等の基準日前",
+      "applicableVersion": "現行掲載を参照。記載改正日と凍結法2条を照合"
+    },
+    {
+      "id": "income-remittance-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/02/01.htm",
+      "location": "7-2〜7-6。参照段落は2017年等の改正記載。所得/支払地/送金の順序",
+      "applicableVersion": "現行掲載。基準日後の改正記載を参照段落で認めず。独立の履歴照合はpending"
+    },
+    {
+      "id": "income-nonresident-2025-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/pdf/060.pdf",
+      "location": "非居住者の手引き・課税所得の範囲、送金の順序",
+      "applicableVersion": "2025年分。2026年4月3日前の適用年の補助資料"
+    }
+  ],
+  "sourceUncertainties": [
+    "国外源泉所得の複数種類の按分・赤字、特定有価証券、租税条約の適用は別途深い演習が必要。本文に対象範囲を明示"
+  ],
+  "glossary": [
+    {
+      "term": "住所",
+      "definition": "個人の生活の本拠。客観的事実に基づいて判断する"
+    },
+    {
+      "term": "居所",
+      "definition": "現実に居住しているが、生活の本拠という程度には至らない場所"
+    },
+    {
+      "term": "非永住者",
+      "definition": "居住者のうち、日本国籍がなく、過去10年以内の国内住所・居所期間の合計が5年以下の個人"
+    },
+    {
+      "term": "国外源泉所得",
+      "definition": "所得税法が国外に源泉を認める所得。非永住者の範囲には政令で定める有価証券譲渡の所得も含む"
+    },
+    {
+      "term": "非国外源泉所得",
+      "definition": "非永住者の課税範囲の計算で、国外源泉所得以外の所得を指す呼び方"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-shotoku-residence-e1",
+      "section": "例題1：年の途中で生活の本拠を移した場合",
+      "objectives": [
+        1,
+        2
+      ],
+      "result": 2600000
+    },
+    {
+      "id": "zr2-shotoku-residence-e2",
+      "section": "例題2：複数の国内居住歴を合計する",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "firstHistory": "4年11か月で非永住者",
+        "alternative": "5年1か月で非永住者以外"
+      }
+    },
+    {
+      "id": "zr2-shotoku-residence-e3",
+      "section": "例題3：海外の預金から送金した場合の順序",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "remittedForeignIncome": 600000,
+        "includedIncome": 6100000,
+        "excluded": 1900000
+      }
+    },
+    {
+      "id": "zr2-shotoku-residence-e4",
+      "section": "例題4：送金額だけを変えて境界を調べる",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "lowRemittanceIncluded": 5500000,
+        "highRemittanceIncluded": 8000000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-shotoku-residence-q1",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "日本国籍を有する人が海外から帰国し、国内に住所を有する。過去10年以内の国内居住期間は合計2年である。日本の所得税法上の区分を選んでください。",
+      "options": [
+        "非永住者",
+        "非永住者以外の居住者",
+        "国内滞在5年までは非居住者",
+        "国外口座があれば外国法人"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "国内に住所を有するので居住者です。日本国籍があるため、5年以下でも非永住者の条件を満たしません。過去の年数だけでは区分は決まりません。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q2",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "国内に住所のある外国籍の個人について、判定日前10年の対象区間を正しく切り出した国内居住期間が、2年8か月と2年4か月であった。入出国日等の調整は済んでいる。非永住者に該当するか、境界を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "合計は5年である。国内に住所を有する居住者で日本国籍がなく、過去10年の期間が5年以下なので非永住者に該当する。ちょうど5年を超過側に入れない。",
+      "rubric": [
+        {
+          "criterion": "期間合計5年",
+          "points": 1
+        },
+        {
+          "criterion": "居住者・日本国籍なしを確認",
+          "points": 1
+        },
+        {
+          "criterion": "5年以下にちょうど5年を含め非永住者と結論",
+          "points": 2
+        }
+      ],
+      "explanation": "『5年以上なら非永住者ではない』とすると等号を誤ります。日付が別なら、過去10年の窓をその日について再計算します。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q3",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "2025年1月10日に入国し、その日から国内に居所を有するが住所はない。入国後1年を経過する日まで住所を持たず、居所が引き続き存続した。基本通達の整理による居住者となる日を選んでください。",
+      "options": [
+        "2025年1月10日",
+        "2025年12月31日",
+        "2026年1月10日",
+        "2026年1月11日"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "居所の期間計算は入国日の翌日から起算し、1年を経過する日まで住所がない本問では、その翌日である2026年1月11日以後に居住者となります。国内に住所を有した場合の判定とは区別します。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q4",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "非居住者が国外にある不動産の貸付けから所得を得た。日本の国内源泉所得に該当せず、条約その他の特例もないことが確定している。賃料が日本の口座へ支払われたときの説明を選んでください。",
+      "options": [
+        "国内口座へ入った全額が国内源泉所得へ変わる",
+        "非永住者と同じ送金判定をする",
+        "国内払という事実だけでは国内源泉所得に変わらず、本問では日本の課税範囲に入らない",
+        "入金額の半分だけ課税される"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "非居住者の課税範囲と、非永住者の国外払・送金のルールを分けます。本問は源泉判定が済んでおり、支払先口座だけで所得の源泉を変更しません。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q5",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "非永住者に、非国外源泉の正の不動産所得420万円（国内払350万円、国外払70万円）と、国外源泉の正の不動産所得200万円（全額国外払）がある。必要な支払地別計算は済み、別途国外から受領した送金は120万円。他の所得・損失・特例はない。課税範囲へ含める不動産所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "4700000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "非国外源泉所得420万円は全額対象。送金120万円のうち、国外払の非国外源泉所得70万円を先に送金したとみなします。残り50万円を国外源泉所得から拾うので420＋50＝470万円です。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q6",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "非永住者の国外源泉の不動産所得について、国内払に対応する正の所得額60万円、国外払に対応する正の所得額140万円と計算済みである。国外からの送金はゼロで、他の所得・損失・特例はない。課税範囲へ含める不動産所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "600000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "国外源泉所得でも国内払60万円は対象です。国外払140万円は送金がなく本問の範囲から外れます。送金がないため全て対象外、とする処理は国内払を見落としています。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q7",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "非永住者は『当年、国外源泉の正の不動産所得を国外で受け取ったが、日本へ送金したのは10年前の貯金だから当年の所得へ影響しない』と述べた。送金判定における検討方法を説明してください。所得の支払地別計算は済み、国外源泉所得が正である場合を考えます。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "送金元を過去の貯金と呼ぶだけで当年の判定から除外しない。当年の国外からの送金受領額と、当年の国外払の非国外源泉所得、国外払の国外源泉所得を確認し、前者を先に送金したとみなした残りについて国外源泉所得の送金部分を判定する。対象額は当年の国外払の国外源泉所得の範囲となる。",
+      "rubric": [
+        {
+          "criterion": "貯金という資金名だけで除外しない",
+          "points": 1
+        },
+        {
+          "criterion": "当年の送金受領額と二つの国外払所得を確認",
+          "points": 1
+        },
+        {
+          "criterion": "非国外源泉所得から先に送金されたとする順序",
+          "points": 2
+        },
+        {
+          "criterion": "国外払の国外源泉所得額を上限とする",
+          "points": 1
+        }
+      ],
+      "explanation": "資金の由来の説明より、法令が定める当年の送金と所得の対応が先です。赤字や複数種類の所得では追加の手順があるため、この正の単純ケースの式だけを広げないでください。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q8",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "送金判定用の金額を作る際の説明として適切なものを選んでください。",
+      "options": [
+        "給与は常に給与所得控除後の金額を使う",
+        "すべて銀行手取額を使う",
+        "所得の種類ごとの特則を確認し、給与・退職は収入金額を使う等の規定に従う",
+        "源泉所得税を控除した額だけで判定する"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "施行令17条は、送金判定用の所得額について給与・退職、山林・譲渡・一時所得などに特則を置いています。課税標準を最後に計算するときの控除と、送金判定の段階の金額を取り違えないようにします。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q9",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "国内住所がある外国籍の人について、以前計算した過去10年の国内期間が4年10か月だった。担当者は、そこへ経過4か月を加えて将来判定日の合計を5年2か月とした。この方法だけでは足りない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "過去10年は判定日ごとに対象区間が動くため、古い国内居住期間の一部が対象外になる可能性がある。将来判定日の10年前同日から前日までを切り出し、その範囲内の各国内住所・居所期間を再集計する。",
+      "rubric": [
+        {
+          "criterion": "過去10年の窓が判定日とともに動くことを説明",
+          "points": 2
+        },
+        {
+          "criterion": "古い期間の除外と対象期間の再集計を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "経過期間に国内居住が続いていても、窓の反対側から過去の期間が外れることがあります。実際の履歴がない本問で最終区分までは断定できません。"
+    },
+    {
+      "id": "zr2-shotoku-residence-q10",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "prompt": "2025年1〜8月は非永住者以外の居住者、9月以後は国内に住所も居所もない非居住者と確定した人がいる。前半の国内源泉所得300万円、国外源泉所得80万円、後半の国内源泉所得60万円、国外源泉所得180万円があり、全て正の同一種類の所得金額として計算済みである。条約・特例・損失はない。日本の課税範囲へ含める金額の合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "4400000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "居住者である前半は300＋80＝380万円。非居住者である後半は国内源泉60万円を拾い、国外源泉180万円を外します。合計380＋60＝440万円です。年末の区分だけで前半の国外源泉80万円を落とさないようにします。"
+    }
+  ],
+  "sourceResolved": [
+    {
+      "topic": "施行令17条の凍結本文",
+      "resolvedOn": "2026-10-27",
+      "evidence": "reference-pages/laws/340CO0000000096.jsonのMainProvision17条全項を読み、4項1〜6号と例題/問の順序・計算額を照合。旧検索URL507CO120から、APIが返した508CO93へ訂正。独立レビュー状態はpendingのまま"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "源泉・支払地・未払・出入国時期",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-source-payment-timing",
+          "title": "源泉・支払地・年分・出入国の対応",
+          "objectiveIds": [
+            "zr2-shotoku-source-payment-timing-o01",
+            "zr2-shotoku-source-payment-timing-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "複数種類と赤字・区分変更時の送金",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-remittance-multiple",
+          "title": "複数所得・支払地配分と送金按分",
+          "objectiveIds": [
+            "zr2-shotoku-remittance-multiple-o01",
+            "zr2-shotoku-remittance-multiple-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-remittance-loss-status",
+          "title": "赤字と年途中の非永住者区分変更",
+          "objectiveIds": [
+            "zr2-shotoku-remittance-loss-status-o01",
+            "zr2-shotoku-remittance-loss-status-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "国外有価証券",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-nonpermanent-securities",
+          "title": "非永住者の有価証券取得履歴と課税範囲",
+          "objectiveIds": [
+            "zr2-shotoku-nonpermanent-securities-o01",
+            "zr2-shotoku-nonpermanent-securities-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "条約と外国税額控除",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-treaty-source",
+          "title": "条約の居住者振分け・国内源泉・届出",
+          "objectiveIds": [
+            "zr2-shotoku-treaty-source-o01",
+            "zr2-shotoku-treaty-source-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-foreign-credit",
+          "title": "外国税額・分配時調整控除",
+          "objectiveIds": [
+            "zr2-shotoku-foreign-credit-o01",
+            "zr2-shotoku-foreign-credit-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ]
+}

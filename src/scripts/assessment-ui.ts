@@ -22,6 +22,13 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
   const el = <T extends HTMLElement = HTMLElement>(s: string) => root.querySelector<T>(s)!;
   const questions = Array.from(root.querySelectorAll<HTMLElement>('[data-question]'));
   const begin = el<HTMLButtonElement>('[data-assessment-begin]');
+  const materials = root.querySelector<HTMLElement>('[data-assessment-materials]');
+  root.querySelectorAll<HTMLAnchorElement>('[data-open-material]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const material = root.querySelector<HTMLDetailsElement>(`#material-${link.dataset.openMaterial}`);
+      if (material) material.open = true;
+    });
+  });
   let attempt: AssessmentAttempt | null = null;
   let interval: ReturnType<typeof setInterval> | undefined;
   let generation = 0;
@@ -154,6 +161,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     el('[data-assessment-controls]').hidden = false;
     el('[data-assessment-questions]').hidden = false;
     el('[data-assessment-results]').hidden = true;
+    if (materials) materials.hidden = false;
     questions.forEach((field, i) => {
       field.hidden = i !== attempt!.cursor;
       if (syncInputs)
@@ -208,6 +216,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     const result = el('[data-assessment-results]');
     result.hidden = false;
     result.replaceChildren();
+    if (materials) materials.hidden = false;
     el('[data-assessment-active]').hidden = true;
     el('[data-assessment-controls]').hidden = true;
     el('[data-assessment-questions]').hidden = true;
@@ -507,6 +516,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
   });
   function initialize() {
     history();
+    if (materials) materials.hidden = true;
     begin.disabled = false;
     el('[data-assessment-start]').hidden = false;
     const active = currentRows().find((r) => !r.finishedAt);

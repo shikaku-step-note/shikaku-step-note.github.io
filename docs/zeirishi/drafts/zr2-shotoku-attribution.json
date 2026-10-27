@@ -1,0 +1,424 @@
+{
+  "id": "zr2-shotoku-attribution",
+  "subject": "shotoku",
+  "title": "真実の権利者・事業主・受益者へ所得を帰属させる",
+  "stage": "標準",
+  "moduleId": "zr2-shotoku-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "名義と実質帰属を分ける",
+    "共有・組合・信託の収益と費用を帰属させる"
+  ],
+  "objectiveIds": [
+    "zr2-shotoku-attribution-o01",
+    "zr2-shotoku-attribution-o02"
+  ],
+  "prerequisites": [
+    "zr2-shotoku-residence"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "location": "12条、13条1〜4項。既存取得JSONのMainProvisionを確認",
+      "applicableVersion": "2026-04-03施行版"
+    },
+    {
+      "id": "income-attribution-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/01.htm",
+      "location": "12-1、12-2、12-5。資産の権利者、事業主、親族間の事業主判定",
+      "applicableVersion": "現行掲載を参照。独立の通達改正履歴照合はpending"
+    },
+    {
+      "id": "income-trust-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/02.htm",
+      "location": "13-1〜13-4。受益者、各年分、収益費用、権利内容。参照段落の記載改正は2007年",
+      "applicableVersion": "現行掲載。基準日以前の改正記載を照合"
+    },
+    {
+      "id": "income-partnership-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/05/16.htm",
+      "location": "36・37共-19、19の2、20、21。参照部分の改正記載は2005/2012年等",
+      "applicableVersion": "現行掲載。基準日前の記載改正を確認"
+    },
+    {
+      "id": "income-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093",
+      "location": "52条4項。複数受益者の権利内容に応じた資産/負債/収益/費用帰属。凍結API本文を読了",
+      "applicableVersion": "2026-04-03指定APIの2026-04-01施行版"
+    }
+  ],
+  "sourceUncertainties": [
+    "計画の組合所得は本文では十分な独立計算に至っていない。組合の実演と独立問題を補うまで第2目標を全範囲完了にしない",
+    "信託の単純割合は各人の権利が資産・負債・収益・費用すべて同じ割合という仮定。権利が分かれる応用は後続へ",
+    "信託設定/受益権移転の譲渡・相続贈与課税、親族対価56/57条の本計算は本例では除外"
+  ],
+  "glossary": [
+    {
+      "term": "実質所得者課税の原則",
+      "definition": "単なる名義人以外の人が資産・事業の収益を享受する場合に、その享受する人へ帰属させる所得税法12条の原則"
+    },
+    {
+      "term": "真実の権利者",
+      "definition": "資産から生ずる収益の帰属判定で、その原因となる資産の権利を実際に有する人"
+    },
+    {
+      "term": "事業主",
+      "definition": "事業を経営していると認められる人。親族間では経営方針の決定への支配的影響力等を調べる"
+    },
+    {
+      "term": "受益者等課税信託",
+      "definition": "所得税法13条により受益者等が信託財産の資産・負債を有するとみなされ、収益・費用も帰属する信託"
+    },
+    {
+      "term": "受託者",
+      "definition": "信託に基づいて財産を管理・処分等する人。受益者等課税信託の所得帰属者とは役割を分けて考える"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-shotoku-attribution-e1",
+      "section": "例題1：家賃の受領だけを子へ任せた場合",
+      "objectives": [
+        1
+      ],
+      "result": 4800000
+    },
+    {
+      "id": "zr2-shotoku-attribution-e2",
+      "section": "例題2：共有家屋の賃料を一人が受領した場合",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "haruIncome": 4200000,
+        "nagiIncome": 2100000
+      }
+    },
+    {
+      "id": "zr2-shotoku-attribution-e3",
+      "section": "例題3：名義を貸した親と実際に経営する子",
+      "objectives": [
+        1
+      ],
+      "result": 3700000
+    },
+    {
+      "id": "zr2-shotoku-attribution-e4",
+      "section": "例題4：分配していない信託の賃貸利益",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "mioIncome": 4800000,
+        "minatoIncome": 3200000,
+        "total": 8000000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-shotoku-attribution-q1",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "賃貸建物の真実の権利者はAであり、権利移転はない。BはAの代理人として賃料を受け取り、修理を手配する。賃料を帰属させる人と根拠として適切なものはどれですか。",
+      "options": [
+        "B。入金した人が必ず所得者になるため",
+        "A。資産の真実の権利者で、Bは管理・受領の代理だから",
+        "AとB。管理に関わった人数で等分するため",
+        "賃借人。賃料を払ったため"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "資産収益の帰属は原因資産の真実の権利者を確認します。受領や管理の代理という本問の条件では、Bへ資産や収益の権利が移りません。管理報酬の有無は賃料の帰属とは別に検討します。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q2",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "Cが過去に購入した賃貸資産を、2025年より前にDへ有効に贈与し、現在の真実の権利者・収益権者はDと確定した。2025年中はCが無報酬で受領を代行した。『最初の取得資金を出したCの所得』という解答を訂正してください。贈与時の課税は問わない。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "2025年の賃料はDへ帰属する。過去にCが取得代金を負担しても、その後の有効な贈与で資産と収益の権利がDへ移っている。Cの受領は代理であり、対象年の真実の権利者Dの所得として計算する。",
+      "rubric": [
+        {
+          "criterion": "Dへの帰属と結論",
+          "points": 1
+        },
+        {
+          "criterion": "取得後の有効な権利移転を反映",
+          "points": 2
+        },
+        {
+          "criterion": "Cの受領代理と所有を区別",
+          "points": 1
+        }
+      ],
+      "explanation": "取得資金の負担は重要な事実ですが、その後の権利移転も調べます。対象年の権利関係を無視して、当初の購入者へ永久に帰属させることはできません。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q3",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "EとFが賃貸建物の収益権を持分と同じ3対2で有する。2025年の収入650万円、全て共通必要経費に当たる費用250万円。個別費用や特例はなく、Eの口座に全額入金している。Fの不動産所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1600000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "Fの収入は650×2/5＝260万円、経費は250×2/5＝100万円で所得160万円です。全体所得400万円の2/5とも一致します。入金先がEでも権利割合に従います。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q4",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "同一生計親族のGとHが店舗で働く。H名義の請求書があるが、仕入・販売価格・資金計画をGが決定し、事業の損益と責任もGに帰属する。Hはその指示で勤務する。事業主の判定と、Hへの支払を検討する順序を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "経営方針の決定に支配的影響力を持ち、損益と責任も帰属するGを事業主と判定する。請求書の名義やHの労働だけで事業収益をHへ移さない。事業収益をGに帰属させたうえで、Hへの支払について親族間の対価や専従者給与等の特則を検討する。",
+      "rubric": [
+        {
+          "criterion": "Gを事業主と判定",
+          "points": 1
+        },
+        {
+          "criterion": "経営方針/損益責任の事実へ対応",
+          "points": 2
+        },
+        {
+          "criterion": "事業主判定と親族への支払の経費処理を別段階とする",
+          "points": 2
+        }
+      ],
+      "explanation": "請求書名義は一つの証拠です。本問の明確な経営実態へ対応させます。Hへの支払の必要経費算入の可否は、事業主判定だけで結論を出さず56・57条等の条件を確認します。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q5",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "資産の真実の権利者が資料から明らかでなく、名義者以外の人の権利を裏付ける情報もない。基本通達12-1に即した扱いとして適切なものはどれですか。",
+      "options": [
+        "任意の家族へ等分する",
+        "名義者を真実の権利者と推定し、必要な追加資料を確認する",
+        "税率が最も低い人へ移す",
+        "収益を得た人が不明なら非課税とする"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "真実の権利者が明らかでない場合には、名義者をその権利者と推定する取扱いです。根拠なく別人へ付け替えることも、帰属が不明というだけで非課税とすることもできません。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q6",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "受益者等課税信託の2025年の賃料収入は1,050万円、必要経費450万円。資産・負債・収益・費用の権利割合はIが3/4、Jが1/4で、他の権利者や特則はない。当年現金分配はゼロ。Iの不動産所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "4500000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "Iへ収入1,050×3/4＝787.5万円、費用450×3/4＝337.5万円が帰属し、所得450万円です。現金分配がゼロでも、信託の収益と費用の帰属を計算します。Jの150万円と合わせて全体所得600万円に一致します。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q7",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "『受託者が財産を管理しているため、どの信託でも受託者個人の賃料収入として課税する』という説明の誤りを、受益者等課税信託とその例外を挙げて訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "管理する受託者と所得の帰属者を区別する。所得税法13条の原則が適用される受益者等課税信託では、現に権利を有する受益者等へ資産・負債と収益・費用が帰属する。集団投資信託・退職年金等信託・法人課税信託はこの原則の対象から除かれるため、信託の種類を先に確認する。受託者の管理報酬があればその報酬は別途検討する。",
+      "rubric": [
+        {
+          "criterion": "受託者の管理と所得帰属を区別",
+          "points": 1
+        },
+        {
+          "criterion": "13条原則による受益者等への収益費用帰属を説明",
+          "points": 2
+        },
+        {
+          "criterion": "原則の対象外となる信託を一つ以上適切に挙げる",
+          "points": 1
+        },
+        {
+          "criterion": "種類判定または報酬との区別を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "『すべて受益者』へ言い換えるだけでも制度区分を落とします。どの信託で、だれがどの権利を現に持つのかを確かめてから計算します。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q8",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "共有の賃貸物件について、各人へ配分した所得の合計は全体所得と一致した。配分の誤りをさらに調べる方法として最も適切なものはどれですか。",
+      "options": [
+        "所得合計が一致すれば持分を確認しない",
+        "収入合計と共通費用合計も別々に元資料へ照合し、各人の権利割合・個別費用の条件を確認する",
+        "入金口座の人へ配分額を全て戻す",
+        "分配現金だけを所得へ置き換える"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "総所得の一致だけでは、各人への配分違いや収入費用の両建て誤りを発見できません。権利割合を確認し、収入と費用も別々に照合します。物件に共通しない費用等があれば、持分の一律配分へ混ぜる前に規則を調べます。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q9",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "同一生計の親子がそれぞれ自由職業を営む。子に係る収支は親の分と区分され、子は親に従属せず独立して仕事を行う。通達12-5の当該条件に合う部分についての説明を選んでください。",
+      "options": [
+        "同一生計なので子の独立した部分も必ず親へ帰属する",
+        "親が家計を支えるなら子の仕事も必ず親のものになる",
+        "条件に対応する子の収支部分は子を事業主とする推定の対象となる",
+        "同一生計なら事業所得を必ず人数で等分する"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "通達は自由職業者等について、収支が区分され、従属して従事すると認められない等の場合の判定を示しています。同一生計や家計負担だけで親へ集約せず、当該事業の事実と条件を確認します。子への対価の扱いをこの判定だけで結論づけない点にも注意します。"
+    },
+    {
+      "id": "zr2-shotoku-attribution-q10",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "prompt": "任意組合等の原則の計算方法について、適切な説明を選んでください。",
+      "options": [
+        "現金が分配された年にだけ認識する",
+        "契約に書けば経済的合理性を問わず自由な所得付替えができる",
+        "合理的な分配割合に応じ、収入・支出・資産・負債等を各組合員の金額として計算する",
+        "すべての組合を匿名組合と同じ雑所得にする"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "任意組合等では分配割合の合理性を確認し、原則として収入・支出・資産・負債等を対応させます。現金分配だけを認識基準とせず、所定の帰属時期や計算方法を確認します。匿名組合の出資者の取扱いとは区分します。"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "親族への対価と専従者",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-family-payments",
+          "title": "生計一親族への対価・専従者",
+          "objectiveIds": [
+            "zr2-shotoku-family-payments-o01",
+            "zr2-shotoku-family-payments-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "任意組合の原則・別の方法・帰属期間",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-partnership-gross",
+          "title": "任意組合の収入・費用・資産負債の配分",
+          "objectiveIds": [
+            "zr2-shotoku-partnership-gross-o01",
+            "zr2-shotoku-partnership-gross-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-partnership-alternative",
+          "title": "組合の帰属期間と別の計算方法",
+          "objectiveIds": [
+            "zr2-shotoku-partnership-alternative-o01",
+            "zr2-shotoku-partnership-alternative-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "匿名組合",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-anonymous-partnership",
+          "title": "匿名組合・共同経営・固定利回り",
+          "objectiveIds": [
+            "zr2-shotoku-anonymous-partnership-o01",
+            "zr2-shotoku-anonymous-partnership-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "信託の権利者・異なる受益権",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-trust-beneficiary-status",
+          "title": "信託の種類・現権利者・みなし受益者",
+          "objectiveIds": [
+            "zr2-shotoku-trust-beneficiary-status-o01",
+            "zr2-shotoku-trust-beneficiary-status-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-shotoku-trust-rights-division",
+          "title": "元本と収益の異なる権利・区分資産",
+          "objectiveIds": [
+            "zr2-shotoku-trust-rights-division-o01",
+            "zr2-shotoku-trust-rights-division-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "信託設定・終了・受益権移転",
+      "plannedLessons": [
+        {
+          "id": "zr2-shotoku-trust-transfers",
+          "title": "信託設定・受益権移転・終了の課税",
+          "objectiveIds": [
+            "zr2-shotoku-trust-transfers-o01",
+            "zr2-shotoku-trust-transfers-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ]
+}

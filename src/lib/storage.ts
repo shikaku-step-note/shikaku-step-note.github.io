@@ -15,6 +15,13 @@ export interface StudyData {
   records: Record<string, StudyRecord>;
   assessments: Record<string, AssessmentAttempt[]>;
 }
+export const STORAGE_LIMITS = Object.freeze({
+  lessonRecords: 2000,
+  assessmentTypes: 2000,
+  totalAttempts: 10000,
+  attemptsPerAssessment: 100,
+  backupBytes: 100 * 1024 * 1024,
+});
 export const emptyData = (): StudyData => ({
   app: 'shikaku-step-note',
   version: 5,
@@ -38,7 +45,8 @@ export function validateData(value: unknown): StudyData {
     !validDate(value.savedAt)
   )
     throw new Error('資格ステップノートの対応するバックアップファイルではありません。');
-  if (Object.keys(value.records).length > 2000) throw new Error('記録の件数が上限を超えています。');
+  if (Object.keys(value.records).length > STORAGE_LIMITS.lessonRecords)
+    throw new Error('記録の件数が上限を超えています。');
   if (value.lastLesson !== undefined && value.lastLesson !== null && !validId(value.lastLesson))
     throw new Error('最後に学習したレッスンの情報が不正です。');
   const result = emptyData();
@@ -69,17 +77,20 @@ export function validateData(value: unknown): StudyData {
   }
   if (result.lastLesson && !result.records[result.lastLesson]) result.lastLesson = null;
   if (value.version === 3 || value.version === 4 || value.version === 5) {
-    if (!isObject(value.assessments) || Object.keys(value.assessments).length > 1000)
+    if (
+      !isObject(value.assessments) ||
+      Object.keys(value.assessments).length > STORAGE_LIMITS.assessmentTypes
+    )
       throw new Error('テスト記録の形式が正しくありません。');
     let attempts = 0;
     for (const [id, rows] of Object.entries(value.assessments)) {
-      if (!validId(id) || !Array.isArray(rows) || rows.length > 100)
+      if (!validId(id) || !Array.isArray(rows) || rows.length > STORAGE_LIMITS.attemptsPerAssessment)
         throw new Error('テストの件数が不正です。');
       const ids = new Set<string>();
       result.assessments[id] = rows.map((row) => {
         attempts++;
         if (
-          attempts > 5000 ||
+          attempts > STORAGE_LIMITS.totalAttempts ||
           !isObject(row) ||
           !validId(row.id) ||
           ids.has(row.id) ||
@@ -228,7 +239,7 @@ export function mergeData(current: StudyData, incoming: StudyData): StudyData {
     }
     result.assessments[id] = [...byId.values()]
       .sort((a, b) => Date.parse(b.startedAt) - Date.parse(a.startedAt))
-      .slice(0, 100);
+      .slice(0, STORAGE_LIMITS.attemptsPerAssessment);
   }
   if (Date.parse(other.savedAt) > Date.parse(current.savedAt)) result.lastLesson = other.lastLesson;
   result.savedAt = new Date().toISOString();

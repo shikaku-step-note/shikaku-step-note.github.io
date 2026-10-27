@@ -1,0 +1,327 @@
+{
+  "id": "zr2-boki-journals-ledgers",
+  "subject": "boki",
+  "title": "仕訳帳から元帳と顧客別残高へつなぐ",
+  "stage": "基礎",
+  "moduleId": "boki-records",
+  "minutes": 100,
+  "objectives": [
+    "仕訳帳・総勘定元帳・補助簿の役割と対応を説明する",
+    "複合仕訳を同じ借方貸方へ転記し期首と当期増減から残高を求める",
+    "顧客別・仕入先別の補助元帳を主要簿と照合する",
+    "合計一致の限界を判断し誤記や未知の記入額を復元する"
+  ],
+  "prerequisites": [
+    "zr2-boki-account-equation"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "sourceCandidates": [
+    {
+      "id": "ac2-bookkeeping-official",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+      "location": "令和5年分手引き5(1)（印刷3頁）、6(2)(3)(9)(10)、6(11)（印刷14頁）。個人税務固有処理は移用しない。5(1)の印刷4頁に借方貸方の表・複合仕訳・元帳の諸口記載を確認"
+    },
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "仕訳帳",
+      "definition": "取引の仕訳を発生順に記録する主要簿"
+    },
+    {
+      "term": "総勘定元帳",
+      "definition": "取引の増減を勘定科目別に記録する主要簿"
+    },
+    {
+      "term": "補助元帳",
+      "definition": "売掛金の顧客別など特定勘定の内訳を記録する帳簿"
+    },
+    {
+      "term": "転記",
+      "definition": "仕訳等を対応する元帳の勘定へ移す作業"
+    },
+    {
+      "term": "諸口",
+      "definition": "相手科目欄で複数の相手科目があることを示す記載"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-journals-ledgers-ex1",
+      "section": "例題1：8件の仕訳から当座預金残高を求める",
+      "result": 900000
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-ex2",
+      "section": "例題2：顧客別残高を総勘定元帳と合わせる",
+      "result": {
+        "a": 150000,
+        "b": 40000,
+        "ar": 190000,
+        "ap": 200000,
+        "assets": 1990000,
+        "profit": 300000
+      }
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-ex3",
+      "section": "例題3：補助元帳の合計が一致しても顧客を取り違える",
+      "result": {
+        "correctA": 220000,
+        "correctB": 30000,
+        "wrongA": 170000,
+        "wrongB": 80000
+      }
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-ex4",
+      "section": "例題4：複合仕訳を各勘定へ漏れなく転記する",
+      "result": {
+        "equipmentDebit": 150000,
+        "bankCredit": 60000,
+        "apCredit": 90000
+      }
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-ex5",
+      "section": "例題5：元帳残高から回収額を復元する",
+      "result": 300000
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-journals-ledgers-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "当座預金の期首借方残高540,000円。当期に売掛金120,000円を預金回収し、買掛金90,000円・給与40,000円・借入元本50,000円を預金支払。他の記入はない。期末借方残高を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "540,000＋120,000−90,000−40,000−50,000＝480,000円。期首は当期入金に重ねません。元本返済は費用でなくても当座預金の貸方記入です。",
+      "input": "number",
+      "accepted": [
+        "480000"
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "期首売掛金はA社130,000円、B社90,000円。当期掛売上はA社70,000円・B社40,000円、回収はA社80,000円・B社60,000円。他の増減はない。顧客残高合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "A社130,000＋70,000−80,000＝120,000円、B社90,000＋40,000−60,000＝70,000円。合計190,000円。主要簿でも220,000＋110,000−140,000＝190,000円です。",
+      "input": "number",
+      "accepted": [
+        "190000"
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "仕訳帳に「当座預金60,000円／売掛金60,000円」と記録した。基本方式で転記する際の正しい説明を選んでください。",
+      "options": [
+        "当座預金貸方・売掛金借方へ各60,000円",
+        "両勘定の借方へ各60,000円",
+        "当座預金借方・売掛金貸方へ各60,000円",
+        "仕訳帳記録済みなので元帳転記は省く"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "当座預金の借方と売掛金の貸方へ各60,000円を転記します。元の仕訳と同じ側です。逆転、双方借方は増減を変え、仕訳帳記録だけで元帳を省くと残高へ反映できません。"
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "備品90,000円を現金30,000円・後払未払金60,000円で購入した。現金勘定へ転記する金額と方向を選んでください。",
+      "options": [
+        "借方90,000円",
+        "貸方90,000円",
+        "借方30,000円",
+        "貸方30,000円"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "支払額30,000円の減少なので貸方30,000円。備品原価90,000円を写すと後払まで支払済みにします。借方記入では現金を増やすことになり、未払金60,000円は別勘定へ転記します。"
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "B社の回収を補助元帳だけでA社回収へ誤記した。仕訳帳と総勘定元帳は正しい。正しい説明を選んでください。",
+      "options": [
+        "合計は一致しても顧客内訳は誤るため補助元帳を訂正する",
+        "主要簿の売掛金を同額減らす追加仕訳を行う",
+        "試算表は必ず不一致になる",
+        "入金されたので両社を減らす"
+      ],
+      "answer": 0,
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "合計回収額は変わらず、合計一致でも顧客内訳が誤ります。主要簿へ回収を追加すると正しい全体残高を崩します。両社を減らす処理も二重減額です。"
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "主要簿の売掛金残高420,000円と顧客残高合計は一致する。A社170,000円、C社90,000円、残りはB社のみ。B社残高を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "420,000−170,000−90,000＝160,000円。170,000＋160,000＋90,000＝420,000円と確認します。未知内訳を主要簿合計から復元する問題です。",
+      "input": "number",
+      "accepted": [
+        "160000"
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "当座預金の期首借方残高500,000円、当期借方合計260,000円、期末借方残高620,000円。締切の次期繰越を含まない当期貸方合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2,
+        4
+      ],
+      "explanation": "500,000＋260,000−貸方＝620,000より140,000円。次期繰越620,000円は当期の出金ではなく締切の差額記入です。",
+      "input": "number",
+      "accepted": [
+        "140000"
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "現金売上50,000円を仕訳帳へ記録し元帳と現金出納帳へ転記後、出納帳の同じ記録を新しい売上としてもう一度仕訳した。誤りを帳簿の役割に触れて説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        4
+      ],
+      "explanation": "複数帳簿に同じ取引を記録しても、別取引が発生する意味ではありません。基本方式での重複仕訳を指摘します。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "元帳は勘定別、現金出納帳は現金取引の内訳を記録し、同じ売上を追っている。再び仕訳すると現金と売上が各50,000円過大になるので、元記録との参照を確認して重複を訂正する。",
+      "rubric": [
+        {
+          "criterion": "主要簿と補助簿が同一取引へ対応することを説明",
+          "points": 1
+        },
+        {
+          "criterion": "現金売上の二重仕訳と各50,000円の過大を指摘",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "顧客から請求額過大の申出があったが、売掛金補助元帳合計は主要簿と一致する。適切な調査を選んでください。",
+      "options": [
+        "合計一致を理由に申出を棄却",
+        "請求書番号と入金明細を顧客別口座へ照合",
+        "全顧客を同率で減額",
+        "差額を直ちに売上加算"
+      ],
+      "answer": 1,
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "顧客の取り違えは合計で相殺されるため請求書番号と入金明細を顧客口座へ対応させます。合計一致で打ち切る、根拠なく全顧客を修正する、売上へ加算する各候補は誤りです。"
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "X社買掛金の期首貸方残高180,000円、当期掛仕入50,000円、当期支払130,000円。他の増減はない。期末残高を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "負債は増加が貸方、減少が借方なので180,000＋50,000−130,000＝100,000円。資産の記入方向と取り違えず、義務の増減として確かめます。",
+      "input": "number",
+      "accepted": [
+        "100000"
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "備品150,000円を当座預金60,000円・未払金90,000円で取得した。備品元帳の相手勘定欄の「諸口」は何を示し、どこで内訳を確認するか説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "諸口は独立勘定や不明額ではありません。複合仕訳の参照箇所を使って内訳を追います。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "相手科目が複数ある記載で、仕訳帳の参照先で当座預金60,000円と未払金90,000円を確認する。諸口という別勘定や残高を作らない。",
+      "rubric": [
+        {
+          "criterion": "複数相手科目を示すと説明",
+          "points": 1
+        },
+        {
+          "criterion": "仕訳帳参照と2金額を示す",
+          "points": 1
+        },
+        {
+          "criterion": "独立勘定ではないと区別",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-journals-ledgers",
+      "prompt": "4仕訳がある。①現金80,000／売上80,000、②当座預金40,000／売掛金40,000、③給料15,000／現金15,000、④備品120,000／当座預金50,000・未払金70,000。期首と締切を除く全元帳への当期借方転記合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "80,000＋40,000＋15,000＋120,000＝255,000円。貸方も80,000＋40,000＋15,000＋50,000＋70,000＝255,000円。複合仕訳④の借方に相手科目の内訳を重ねてはいけません。",
+      "input": "number",
+      "accepted": [
+        "255000"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "id": "zr2-kokuzei-limitations-succession",
+  "subject": "kokuzei",
+  "title": "徴収権の時効・納付義務の承継と充当残高を計算する",
+  "stage": "基礎から標準へ",
+  "moduleId": "kokuzei-foundations",
+  "minutes": 130,
+  "objectives": [
+    "徴収権の時効の基準日・完成猶予・更新・不進行を区分し条件付き年表を計算する",
+    "相続による各人の承継額と取得価額超過による追加責任を計算する",
+    "合併・社団財産承継・分割・連帯義務と第二次義務を法的根拠から区分する",
+    "納付・第三者納付・還付充当と附帯税の扱いを区分し未納残額を検算する"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-demand-acceleration"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "location": "5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "location": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "location": "47・51条等。版固定主法",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "general-training-2026",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf",
+      "location": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる",
+      "version": "2026-01-01法令を基礎"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "時効の完成猶予",
+      "definition": "法定の期間中、時効を完成させない効果"
+    },
+    {
+      "term": "時効の更新",
+      "definition": "それまでの経過期間を引き継がず、新たに時効期間の進行を始める効果"
+    },
+    {
+      "term": "援用",
+      "definition": "時効による利益を受ける意思を主張すること。国税徴収権の時効には不要"
+    },
+    {
+      "term": "充当適状",
+      "definition": "還付金等を納付すべき国税へ充当するのに適する法定の状態"
+    },
+    {
+      "term": "納付義務の承継",
+      "definition": "相続・合併等の法定原因により、従前の者の国税を納める義務を引き継ぐこと"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "limitations-ex1",
+      "section": "例題1：督促の前後で5年を数え直す",
+      "result": {
+        "noInterruptionEnd": "2026-03-15",
+        "afterDemandStart": "2024-09-16",
+        "afterDemandEnd": "2029-09-15"
+      }
+    },
+    {
+      "id": "limitations-ex2",
+      "section": "例題2：配偶者と子2人の承継額・取得価額",
+      "result": {
+        "spouseOwn": 300000,
+        "childrenOwnEach": 150000,
+        "spouseExtraLimit": 200000,
+        "remainingTaxAfterOwnPayments": 150000
+      }
+    },
+    {
+      "id": "limitations-ex3",
+      "section": "例題3：合併と社団財産の一部承継",
+      "result": {
+        "mergerLiability": 500000,
+        "associationPartialLiability": 300000
+      }
+    },
+    {
+      "id": "limitations-ex4",
+      "section": "例題4：本税への充当後に附帯税を計算する",
+      "result": {
+        "principalRemaining": 0,
+        "lateTaxRemaining": 10000,
+        "cashRefund": 0
+      }
+    }
+  ],
+  "scopeNotes": [
+    "5条3項の責任を第二次納税義務の補充性要件へ読み替えない。全体未納額と各人の上限を別に扱う",
+    "時効の特殊起算・不正時不進行・信託承継・分割の全類型・差押手続の終了原因等は応用段階でさらに展開が必要。本講や6草稿の存在だけで単元全範囲完了としない",
+    "57条2項の充当適状時点は本例では適法確定条件。具体的な令の時点判定は別の応用事例を追加する"
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-limitations-succession-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "通常の国税徴収権について、5年の時効が法律上完成し、特別な事情もない。納税者から援用の申出がない場合の説明を選んでください。",
+      "options": [
+        "申出があるまで徴収権は存続する",
+        "援用不要で消滅し、利益を放棄して当然に復活させる扱いにもできない",
+        "税務署の電話があれば常に復活する",
+        "私債権と同じく常に民法145条だけで判断する"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "通則法72条2項は援用不要・利益放棄不可を定めます。1は援用を必要とし、3は根拠なく復活させています。4は民法準用より優先する国税固有の定めを落としています。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "通常の国税の法定納期限は2022年2月28日で、その翌日から進行する。他の完成猶予・更新・不進行等はなく、純粋な5年の時効期間の末日を問う。正しい日を選んでください。",
+      "options": [
+        "2027年2月27日",
+        "2027年2月28日",
+        "2027年3月1日",
+        "5年は必ず1825日なので閏年を調べない"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "2022年3月1日から暦年で5年を数えるため、期間末日は2027年2月28日です。1は一日不足、3は末日を越えています。4は年を固定日数へ置き換えています。申告納付期限の休日特例をこの時効期間の末日へ自動適用しません。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "時効未完成の国税について、2024年8月7日発出の法定督促が適法送達され、73条1項4号の効果がある。他の事由はない。時効の新たな進行を始める日を選んでください。",
+      "options": [
+        "8月7日",
+        "8月16日",
+        "8月17日",
+        "8月18日"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "8月7日を起算日とする10日間の末日は16日、10日を経過した日は17日です。同日まで完成せず、18日から新たな進行を始めます。発出日や経過する日をそのまま再起算日としません。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "一部の国税だけについて適法な納税猶予があり、その期間中は73条4項が適用される。適切な説明を選んでください。",
+      "options": [
+        "すべての税目に必ず新しい5年が与えられる",
+        "猶予対象部分の時効が進行しない効果と、更新による新たな進行を区別する",
+        "猶予中も必ずそのまま時効が進む",
+        "対象部分でなく納税者の財産すべてを基準にする"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "73条4項は対象国税等についてその期間内に進行しない効果を定めています。1は対象範囲と更新を混同し、3は明文に反し、4は税額ごとの効果を財産の区分へ置き換えています。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "被相続人の承継対象国税80万円、相続人は配偶者甲と子乙1人で、指定相続分等はない。甲が5条2項により承継する額だけを円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "400000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "配偶者の相続分1/2を用い、80万円×1/2＝40万円です。実際に受けた財産額や追加責任は別に判断します。取得財産額だけで80万円を配分する問題ではありません。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "相続人甲の5条2項による自己の承継国税は25万円、取得した財産価額は43万円である。5条3項による他の相続人の承継国税についての追加責任の金額上限を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "180000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "取得価額43万円−自己の按分承継額25万円＝18万円が追加責任の上限です。国税全体の残額がこれより少なければ、その満たすべき残額も限度になります。25万円と43万円のどちらかをそのまま追加上限にしません。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "相続国税90万円について、甲・乙・丙の自己承継分は45万円・22.5万円・22.5万円。甲は他の相続人分について追加責任30万円の条件も満たす。甲が自己分45万円、乙が22.5万円を納付した。残る丙分を甲へ求める場合、残額からみた請求額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "225000"
+      ],
+      "objectives": [
+        2,
+        4
+      ],
+      "explanation": "全体の残額は90−45−22.5＝22.5万円です。甲の追加上限30万円より小さいので22.5万円を求める範囲になります。上限30万円をそのまま加えて、国税90万円を超えて重複充足させません。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "合併による存続法人甲が、消滅法人の承継対象国税70万円を承継した。引き継いだ純資産が40万円であることだけから、6条の義務を40万円へ限定してよいか。",
+      "options": [
+        "合併の承継義務は純資産額を当然の上限としない",
+        "すべての承継は必ず純資産額まで",
+        "事業譲渡と合併は法律上まったく同じ",
+        "純資産が少ないと国税は自動的に消える"
+      ],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "6条による合併の承継と、財産価額を限度とする別制度を区別します。2は限度を一般化し、3は法的原因の違いを落とし、4は徴収不能と義務消滅を混同しています。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "通則法7条に当たる社団等の一部承継で、承継時の財産価額100万円のうち法人甲が60万円分を承継した。基礎となる国税50万円、他の調整なし。甲が承継する国税額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "300000"
+      ],
+      "objectives": [
+        3
+      ],
+      "explanation": "50万円×60万円/100万円＝30万円です。財産割合を税額へ乗じます。60万円をそのまま税額としたり、50万円全額を一部承継に無条件で移したりしません。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "同一納税者に還付金18万円、充当対象の本税12万円とその確定済み延滞税8万円がある。充当適状等の条件は満たし、他の調整なし。本税へ先に充当した後に残る延滞税を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "20000"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "まず本税12万円へ充当し、還付金の残り6万円を延滞税8万円へ充当するため、延滞税残額は2万円です。還付金18万円の全額を先に現金で返す処理や、延滞税から先に充当する処理は本問の57条の順序に合いません。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "甲・乙が同じ国税を連帯して納付する義務を負い、甲がその一部を納付した。対外的な未納残額と、甲乙間の最終負担をどのように分けて考えるか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        3,
+        4
+      ],
+      "modelAnswer": "国が満たされた納付額は国税全体の未納残額から減らし、乙から同じ額を重複して徴収しない。一方、甲乙の内部負担や求償は通則法8条が準用する民法442条等と個別税法に従い別に判断する。対外的に全部の請求を受ける範囲と、内部で最終負担する額は同一とは限らない。",
+      "rubric": [
+        {
+          "criterion": "共同の免責と残額減少を示す",
+          "points": 2
+        },
+        {
+          "criterion": "内部負担と求償を別判断とする",
+          "points": 2
+        }
+      ],
+      "explanation": "「甲が払ったので乙には何の権利義務もない」と一般化せず、税額の重複徴収防止と内部求償を分けます。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "更正通知書によって一部の増差税額が確定した。資料に別税目の未納額もあるとき、時効の年表を税額別に作る理由を73条1項の対象範囲から説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        1,
+        4
+      ],
+      "modelAnswer": "73条1項の効果は処分に係る部分の国税に及ぶため、増差分の更正による完成猶予・更新を、対象外の当初額や別税目へ一律に広げられない。税額別に基準日、対象処分、所定期間、再進行、納付残高を記録し、附帯税へ効果が及ぶ場合も73条5・6項等を確認する。",
+      "rubric": [
+        {
+          "criterion": "処分に係る部分という限定を示す",
+          "points": 2
+        },
+        {
+          "criterion": "別税目等へ自動拡張せず税額別年表を示す",
+          "points": 2
+        },
+        {
+          "criterion": "附帯税の別規定を認識する",
+          "points": 1
+        }
+      ],
+      "explanation": "更正という出来事一つで全滞納税額の時効を更新したとする答案を避けます。"
+    },
+    {
+      "id": "zr2-kokuzei-limitations-succession-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "prompt": "還付金の充当通知書が届いた日と、法令上充当に適することとなった日が違う。延滞税計算のための納付時点を判断するときの注意を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        4
+      ],
+      "modelAnswer": "57条2項は政令で定める充当をするのに適することとなった時に、充当額相当の国税の納付があったとみなす。したがって通知到着日だけで納付日を決めず、還付金等の発生原因と対象税額の納付期限等から法定時点を確認する。通知と、みなし納付時点・未納残高を別に記録する。",
+      "rubric": [
+        {
+          "criterion": "57条2項の法定みなし時点を示す",
+          "points": 2
+        },
+        {
+          "criterion": "到着日と区別し令の条件を確認する",
+          "points": 2
+        }
+      ],
+      "explanation": "具体的な充当適状の令の適用を確認せず、単に早い日を選ぶ説明では足りません。"
+    }
+  ],
+  "authorChecks": {
+    "numericChecks": [
+      "例題2：60×1/2=30、60×1/4=15、50-30=20、60-30-15=15万円",
+      "例題3：40×45/60=30万円",
+      "例題4：12-10=2、3-2=1万円",
+      "全数値設問の差引・割合を再計算"
+    ],
+    "dateChecks": [
+      "2021-03-16開始の5年末日は2026-03-15",
+      "督促9/5→経過した9/15→9/16新進行→2029-09-15末日"
+    ],
+    "legalChecks": "主法5〜9の3・41・56・57・72・73条と民法準用条文を読解。引用する期間制限と徴収権時効を区別。独立レビュー未実施",
+    "editorial": "法定の限定・権利者と義務者・元税と附帯税・内部負担を明確化。段落単位の最終校正は未了"
+  }
+}

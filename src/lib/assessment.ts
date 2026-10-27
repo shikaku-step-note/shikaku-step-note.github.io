@@ -1,5 +1,11 @@
 export type Field = string;
 export type AssessmentKind = 'lesson' | 'glossary' | 'review' | 'mock';
+export interface AssessmentMaterial {
+  id: string;
+  title: string;
+  paragraphs: string[];
+  tables?: { caption: string; headers: string[]; rows: string[][] }[];
+}
 export interface Question {
   id: string;
   prompt: string;
@@ -15,6 +21,7 @@ export interface Question {
   modelAnswer?: string;
   rubric?: { criterion: string; points: number }[];
   objectives?: number[];
+  materialIds?: string[];
 }
 export interface Assessment {
   id: string;
@@ -30,6 +37,32 @@ export interface Assessment {
   instructions?: string;
   nextAssessment?: string;
   companion?: { id: string; version: string; questions: Question[] };
+  materials?: AssessmentMaterial[];
+}
+export function assessmentMaterialIssues(a: Pick<Assessment, 'materials' | 'questions'>): string[] {
+  const issues: string[] = [];
+  const ids = new Set<string>();
+  for (const material of a.materials ?? []) {
+    if (!/^[a-z0-9][a-z0-9-]*$/.test(material.id) || ids.has(material.id))
+      issues.push(`Invalid or duplicate material ID: ${material.id}`);
+    ids.add(material.id);
+    if (!material.title.trim() || (!material.paragraphs.some((p) => p.trim()) && !material.tables?.length))
+      issues.push(`Empty material: ${material.id}`);
+    for (const table of material.tables ?? [])
+      if (
+        !table.caption.trim() ||
+        !table.headers.length ||
+        !table.rows.length ||
+        table.rows.some((row) => row.length !== table.headers.length)
+      )
+        issues.push(`Invalid material table: ${material.id}`);
+  }
+  for (const q of a.questions) {
+    if (new Set(q.materialIds ?? []).size !== (q.materialIds ?? []).length)
+      issues.push(`Duplicate material reference: ${q.id}`);
+    for (const id of q.materialIds ?? []) if (!ids.has(id)) issues.push(`Unknown material ${id}: ${q.id}`);
+  }
+  return issues;
 }
 export interface AssessmentAttempt {
   id: string;
