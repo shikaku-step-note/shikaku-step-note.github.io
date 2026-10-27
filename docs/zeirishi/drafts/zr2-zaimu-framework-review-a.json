@@ -1,0 +1,878 @@
+{
+  "version": "zeirishi-2026-v2-draft-framework-1",
+  "qualification": "zeirishi",
+  "unit": 2,
+  "moduleId": "zr2-zaimu-unit-framework",
+  "lawAsOf": "2026-04-03",
+  "id": "zr2-zaimu-framework-review-a",
+  "title": "財務会計の枠組み・累積A：情報と記録を読む",
+  "kind": "review",
+  "minutes": 90,
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "fieldNames": {
+    "zaimu": "財務諸表論"
+  },
+  "lessonTitles": {
+    "zr2-zaimu-purpose-regulation": "財務会計の目的と制度",
+    "zr2-zaimu-qualitative-characteristics": "有用性・信頼性・内的整合性・比較可能性",
+    "zr2-zaimu-elements": "資産・負債・純資産・投資の成果",
+    "zr2-zaimu-general-principles": "企業会計原則と個別基準",
+    "zr2-zaimu-recognition-measurement": "認識・測定と期間損益",
+    "zr2-zaimu-reporting-obligations": "会社の属性と財務情報の作成・監査・開示",
+    "zr2-zaimu-policy-changes": "会計方針・見積りの変更と誤謬",
+    "zr2-zaimu-estimate-disclosure": "会計上の見積りを注記で伝える",
+    "zr2-zaimu-theory-writing": "理由と計算をつなぐ理論答案の作り方"
+  },
+  "sourceCandidates": [
+    {
+      "id": "ac2-framework-pdf",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+      "location": "2006年12月討議資料、前文、第一章1〜21項。財務報告の目的・役割分担・副次的利用。個別基準としての強制力を主張しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "companies-law",
+      "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+      "location": "431条、435〜436条、440条1・3・4項、461条1項。2026年4月3日時点の条文を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "company-calculation",
+      "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+      "location": "59条、126条1項2号、135〜138条。監査意見と承認特則、公告の情報・要旨を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "financial-instruments-law",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000025_20260101_506AC0000000056",
+      "location": "1条、24条、193条、193条の2。2026年4月3日時点。有価証券報告書の対象と例外、作成方法、監査。全ての株式会社へ提出義務を一般化しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-exam-zaimu76",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+      "location": "第76回、第一問問1、印刷B1〜B2（PDF3〜4枚目）。内的整合性の階層・前提・比較が実際に問われる範囲と要求水準を確認。出題文・選択肢を再利用しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-oci",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_18.pdf",
+      "location": "企業会計基準25号、2025年3月11日改正・2025年10月16日修正反映版。1〜16-6項（特に4〜6、8〜9、11、16-2、16-6）を確認。16-2の当面個別不適用を明示。将来の期中制度一般へ拡張しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "company-calculations",
+      "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+      "location": "2026年4月3日基準の会社計算規則74〜76条。資産・負債・純資産の表示区分。細かな認識・測定は各論で扱う",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則・同注解、1982年4月20日最終改正。一般原則一〜七、損益計算書原則一A〜C、注解1・1-2・2・3・4を原文確認。旧文書の個別取引処理を後の基準に優先させない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-revenue",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
+      "location": "企業会計基準29号、2024年9月13日改正、16〜19・32〜42項を実読。例題の契約・期間充足と均等履行は明示与件",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-fairvalue-guide-2021",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/faivalue20210617_02.pdf",
+      "location": "企業会計基準適用指針31号・2021年6月17日版35項(1)(2)を実読。将来額と率の整合、同一リスクの二重計算防止に限定",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ifrs-capital-ed2015",
+      "url": "https://www.ifrs.org/content/dam/ifrs/project/conceptual-framework/exposure-draft/published-documents/ed-conceptual-framework.pdf",
+      "location": "2015年5月公開草案第8章8.1〜8.10、PDF79〜81ページ。資本維持の歴史的比較理論に限定。現行IFRS又は日本基準の適用指示とは主張しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-policy-fixed-2020",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf",
+      "location": "企業会計基準24号・2020年3月31日改正。4〜22-2項、25-2/25-3項、結論の背景48〜68項を実読。2026年10月改正を混在させない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-policy-guide-fixed-2024",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/ikan_20240701_46.pdf",
+      "location": "適用指針24号・2024年7月1日修正反映版、4〜12-2・17〜21項を実読。方法と表示の区分、正当な理由、過去見積りの合理性を確認",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-estimates-fixed-2020",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-estimates20200331_02.pdf",
+      "location": "企業会計基準31号・2020年3月31日公表。本文3〜9項と結論の背景15〜33項を実読。識別のリスク、通常以外の対象、例示と必須事項、個別参照を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "points-02",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/02.pdf",
+      "location": "全2頁、第一問・第二問の出題技能と第三問の横断技能を実読。処理理由を問う実績の確認に限り、問題は転載しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "exam-papers",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+      "location": "注意事項と第一問・第二問の要求形式、第三問の留意事項を実読。2026年4月3日と120分を確認。将来の小問・配点・個別指示へ固定しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "instructions": "財務会計の枠組み9講を履修した後の独立した単元評価です。各問は資料から解き、前問の正答を前提にしません。金額は特記のない限り万円、税効果・消費税・記載のない取引は考慮しません。法令基準は2026年4月3日。適用要件を満たす等の与件を守ってください。点数・時間は本サイト独自の学習上の目安で、公式採点や科目全体の本試験形式模試ではありません。",
+  "independence": "既存141問の抽出や数値だけの置換はしない。資料の構造、問いの動作、組み合わせる判断を変えた原創問題。共通する基礎技能があっても新たな条件を読み直す。",
+  "materials": [],
+  "questions": [
+    {
+      "id": "zr2-zaimu-framework-review-a-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-purpose-regulation",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-purpose-regulation": [
+          1
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-purpose-regulation-f01"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-purpose-regulation",
+          "objective": 1,
+          "objectiveText": "投資判断に必要な情報を、成果と資源・負担の両方から説明する"
+        }
+      ],
+      "prompt": "二社は同規模で、当期利益は各90。会社あおは営業の入金120・営業の支払100、会社みどりは営業の入金40・営業の支払110で、不足資金を借入100で補った。これだけで翌期の優劣は断定しない。利益が同額なら投資判断に必要な情報も同じ、という意見を検討し、追加で調べる事項を二つ、それぞれ目的付きで挙げてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "純入金20と−70の差は90。同額の利益が、同じ回収条件や資金余力まで意味するわけではありません。将来額の確定を要求する問題ではありません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "同じ利益でも営業の現金受払はあお20、みどり−70で異なり、借入は成果そのものではない。利益と現金の差の原因（売掛金の回収・費用の未払等）を調べ、成果の回収状況を把握する。また借入の返済条件と将来必要な支出を調べ、資源と負担を評価する。ほかにも利益の内訳や継続性等、有効な目的付きの二例を認める。",
+      "rubric": [
+        {
+          "criterion": "同額利益でも現金受払・負担等が異なると資料に即して説明",
+          "points": 2
+        },
+        {
+          "criterion": "追加事項一つと調べる目的を対応させる",
+          "points": 1
+        },
+        {
+          "criterion": "異なる追加事項一つとその目的を示す",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-purpose-regulation",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-purpose-regulation": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-purpose-regulation-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-purpose-regulation",
+          "objective": 2,
+          "objectiveText": "作成・利用・監査の役割と、受託責任・利害調整の着眼点を区別する"
+        }
+      ],
+      "prompt": "役員は、株主に業績を説明する資料、銀行の返済条件を判定する資料、監査人が検証する資料を一人の担当者に渡した。「監査人が利益を作って承認し、株主と銀行は同じ目的で使う」との説明について、作成責任と監査の役割、株主への説明と銀行契約の判定の違いを訂正してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "監査意見は利用者の投資成果や返済を保証するものでも、経営者の作成責任を移すものでもありません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "財務情報の作成責任は経営者側にあり、監査人は所定の基準等に照らして検証し意見を表明する役割である。株主への説明には委ねた資源の運用成果等が関わる。銀行は返済や契約で定義した条件への適合を確認するので、その契約の定義・調整も調べる。共通する数値を使っても判断目的は同一にならない。",
+      "rubric": [
+        {
+          "criterion": "経営者側の作成責任と監査人の役割を分ける",
+          "points": 2
+        },
+        {
+          "criterion": "株主への運用成果等の説明を示す",
+          "points": 1
+        },
+        {
+          "criterion": "銀行側の契約条件・定義の確認を示す",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-purpose-regulation",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-purpose-regulation": [
+          3
+        ],
+        "zr2-zaimu-reporting-obligations": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-purpose-regulation-f03",
+        "zr2-zaimu-reporting-obligations-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-purpose-regulation",
+          "objective": 3,
+          "objectiveText": "会社法と金融商品取引法について、書類と手続の適用範囲を与件から判断する"
+        },
+        {
+          "lessonId": "zr2-zaimu-reporting-obligations",
+          "objective": 2,
+          "objectiveText": "帳簿・計算書類・事業報告を区別し、監査・承認・提供・総会の手順と保存起算を対応させる"
+        }
+      ],
+      "prompt": "非上場の株式会社の提出書類一覧に「有価証券報告書の義務なし」と「会社法435条の適用あり」が明示されている。担当者は、会計帳簿だけ保存し、年度の計算書類と事業報告の作成を取りやめる案を出した。この案を評価し、作成する年度計算書類四つと事業報告との関係を示してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "法令の異なる二つの条件を資料が与えています。一方の適用除外をもう一方へ移すことはできません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "金商法の提出義務がないことだけで、適用のある会社法435条の作成義務は消えない。年度の計算書類は貸借対照表・損益計算書・株主資本等変動計算書・個別注記表であり、事業報告はそれらとは別に作成する書類である。帳簿を保存することだけで代えられない。",
+      "rubric": [
+        {
+          "criterion": "金商法提出と会社法作成の適用範囲を分けて案を否定",
+          "points": 1
+        },
+        {
+          "criterion": "四つの計算書類を挙げる",
+          "points": 2
+        },
+        {
+          "criterion": "事業報告は別書類で帳簿のみでは代えられないと説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-purpose-regulation",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-purpose-regulation": [
+          4
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-purpose-regulation-f04"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-purpose-regulation",
+          "objective": 4,
+          "objectiveText": "法令・個別基準・概念フレームワークの位置付けを区別して理由を記述する"
+        }
+      ],
+      "prompt": "社内検討メモは、甲「討議資料の目的に有用と書かれているから適用対象の個別基準の計上条件を省く」、乙「対象法令と個別基準の版・適用条件を確認し、討議資料は背景の説明に用いる」とする。どちらの手順が適切かを選び、討議資料だけで甲の処理を認められない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "討議資料を読む意義を否定する問いではありません。目的の説明と、具体的な規定の適用判断の役割を区別します。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "乙が適切。討議資料は基礎概念を整理し、基準の理解等に役立つが、対象取引の法令・適用される個別基準を無条件に置き換えるものではない。有用性という目的から、具体的な認識条件を省略できるとはいえない。対象版・適用範囲を確認してから処理する。",
+      "rubric": [
+        {
+          "criterion": "乙を選び対象版・条件を確認する順序を示す",
+          "points": 1
+        },
+        {
+          "criterion": "討議資料の位置付けと個別条件を省略できない理由を説明",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-general-principles": [
+          1
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-general-principles-f01"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-general-principles",
+          "objective": 1,
+          "objectiveText": "真実性・正規の簿記・資本損益の区別を取引と帳簿の事実へ当てはめる"
+        }
+      ],
+      "prompt": "社長個人から会社への返済義務がある入金30と、顧客への引渡し済み掛売上50が判明した。双方とも記帳漏れで、他の条件に問題はない。担当者は「同額を借貸へ書くと利益80が増える」とした。二取引の正しい仕訳と利益への影響を示し、取引の性質を確かめる資料を各一例挙げてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "社長からの入金という関係だけで資本取引と決めません。返済義務という明示事実が負債の分類に対応します。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "入金は現金30／借入金30で利益への影響なし。掛売上は売掛金50／売上50で、他の原価等を考慮しない本問では利益が50増える。前者は借用書・返済契約、後者は納品・検収記録等で事実を確かめる。借貸一致だけで負債と成果の分類が正しいとはいえない。",
+      "rubric": [
+        {
+          "criterion": "入金の現金/借入金と利益影響ゼロ",
+          "points": 1
+        },
+        {
+          "criterion": "掛売上の売掛金/売上と利益50増",
+          "points": 1
+        },
+        {
+          "criterion": "各取引の性質を確認できる資料を一例ずつ示す",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-general-principles": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-general-principles-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-general-principles",
+          "objective": 2,
+          "objectiveText": "明瞭性と総額表示から、利益が同じでも情報が異なる理由を説明する"
+        }
+      ],
+      "prompt": "同じ総額表示の規定が適用される二つの事業部について、売上・対応原価・販管費は、東が600・360・90、西が400・160・90。西の担当者は原価と売上を相殺し「売上240・原価0・営業利益150」と表示した。東西の正しい売上総利益と営業利益を求め、西の表示が事業部比較へ与える問題を説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "差額の一致を確認した後で、利用者が失う情報を具体的に示します。本人・代理人の条件が未確定な取引一般に総額を強制する例ではありません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "東は売上総利益240・営業利益150、西も売上総利益240・営業利益150。ただし売上規模と原価構造は異なる。西の案は売上を160、原価を160過少に示し、総額表示に反する。最終利益が等しいことを理由に、取引規模や原価負担の違いを隠してはならない。",
+      "rubric": [
+        {
+          "criterion": "両部の売上総利益各240・営業利益各150",
+          "points": 2
+        },
+        {
+          "criterion": "西の売上/原価各160過少と示す",
+          "points": 1
+        },
+        {
+          "criterion": "同額利益でも規模・原価情報と総額条件が失われると説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-general-principles": [
+          3
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-general-principles-f03"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-general-principles",
+          "objective": 3,
+          "objectiveText": "継続性・保守主義の趣旨と限界を、変更理由・見積り条件から判断する"
+        }
+      ],
+      "prompt": "合理的な証拠から見積負債を42と算定済みである。経営者は、来期利益を良く見せるため今期だけ「保守的に」90へ増やし、来期に戻すと提案した。正しい処理と比べた今期の利益・負債・純資産の差を示し、保守主義と継続性を理由にこの案を認められるか説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "将来の危険への慎重な判断は必要です。本問では適正額を与え、追加の事実がないため、その額を超える任意の準備を認めません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "余分な48を今期費用とするので利益48過少、負債48過大、純資産48過少。慎重さは根拠のない上乗せを認める理由にならない。将来利益を調整するための一時的な操作であり、同じ方法を守る、保守的である等の名称で正当化できない。証拠と適用基準に基づく42に戻って判断する。",
+      "rubric": [
+        {
+          "criterion": "利益/負債/純資産の48の方向を正しく示す",
+          "points": 2
+        },
+        {
+          "criterion": "過度の保守と根拠不足を指摘",
+          "points": 1
+        },
+        {
+          "criterion": "期間利益の操作と正当な変更・継続を区別する",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-general-principles": [
+          4
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-general-principles-f04"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-general-principles",
+          "objective": 4,
+          "objectiveText": "単一性と重要性を、目的別調整・集積額・項目の性質へ当てはめる"
+        }
+      ],
+      "prompt": "同一種類の当期費用の漏れが1件0.2で150件、別の架空売上が8ある。調整前利益は100。担当者は「1件少額で、誤り同士を差し引くと22だから、どちらも問題にしない」と述べた。漏れ総額と両誤り訂正後利益を求め、集積と性質の二点から案を評価してください。法定の割合基準を作る必要はありません。",
+      "options": [],
+      "answer": 0,
+      "explanation": "見かけ上異なる種類の誤りでも、利益を共に過大にしていることがあります。重要性を固定割合の暗記に置き換えません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "費用漏れは0.2×150=30。架空売上8も利益を増やしているので、両者は利益への向きが同じであり、正しい利益100−30−8=62。個々の小額だけで集積30を無視できない。架空売上という性質は単に少額だからと正当化できず、22という差引説明も誤る。",
+      "rubric": [
+        {
+          "criterion": "費用漏れ30と訂正後利益62を計算",
+          "points": 2
+        },
+        {
+          "criterion": "集積額の検討が必要と説明",
+          "points": 1
+        },
+        {
+          "criterion": "架空売上の性質と差引方向の誤りを指摘",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-qualitative-characteristics": [
+          1
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-qualitative-characteristics-f01"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-qualitative-characteristics",
+          "objective": 1,
+          "objectiveText": "有用性・関連性・信頼性と、それを支える特性の関係を説明する"
+        }
+      ],
+      "prompt": "新規製品の重大な返品傾向を含む当期の検査資料があり、第三者が元データから再計算できる。担当者は、未確実な情報は全て削り、前年の確定売上だけ示す案を出した。関連性と信頼性を両立できる改善を一つ示し、両者が衝突する場合にも何を検討するか説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "未確実であることと、根拠がないことは同義ではありません。数字の確定性だけで情報の有用性全体を決めません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "当期検査の範囲・計算方法・仮定と不確実性を示し、将来判断に関わる返品傾向を裏付け付きで伝える改善が考えられる。古い確定値だけでは当期の重要な変化を落とし得る。一方、裏付けが不足する情報なら、関連性だけで足りるとせず、検証資料や測定の限界を調べ、両特性の程度を検討する。",
+      "rubric": [
+        {
+          "criterion": "当期の変化に関する関連性と裏付けのある説明を結ぶ",
+          "points": 2
+        },
+        {
+          "criterion": "両立可能な具体的改善一つ",
+          "points": 1
+        },
+        {
+          "criterion": "衝突時は一方だけで十分とせず根拠・限界等を検討する",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-qualitative-characteristics": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-qualitative-characteristics-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-qualitative-characteristics",
+          "objective": 2,
+          "objectiveText": "見積りの根拠や偏りを、事例の具体的な事実から評価する"
+        }
+      ],
+      "prompt": "分析用の将来回収シナリオは、資料に基づけば60が確率50%、100が30%、160が20%。担当者は希望する目標に合わせ160の確率を50%へ上げ、60を20%へ下げたが、裏付けはない。各加重平均を求め、偏りと検証可能性を確かめるために保存する資料を二つ挙げてください。これは当期収益の計上額を決める問題ではありません。",
+      "options": [],
+      "answer": 0,
+      "explanation": "合計確率はどちらも100%ですが、それだけで合理性は保証されません。計算の正しさと仮定の根拠を別々に確認します。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "資料に基づく平均は60×0.5+100×0.3+160×0.2=92。変更案は60×0.2+100×0.3+160×0.5=122で、30大きい。目標へ合わせる根拠のない確率変更は中立性に問題がある。各シナリオの元データ、確率を定めた根拠・承認履歴、計算表等から有効な二資料を保存する。",
+      "rubric": [
+        {
+          "criterion": "92/122及び差30を求める",
+          "points": 2
+        },
+        {
+          "criterion": "目標に合わせた裏付けのない変更の偏りを説明",
+          "points": 1
+        },
+        {
+          "criterion": "元データと確率根拠等の異なる有効資料二つ",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-qualitative-characteristics": [
+          3
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-qualitative-characteristics-f03"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-qualitative-characteristics",
+          "objective": 3,
+          "objectiveText": "実質の同異を確認し、比較可能性と画一的な処理を区別する"
+        }
+      ],
+      "prompt": "会社甲の「利用料契約」と会社乙の「販売支援契約」は名称が違うが、対象財の支配移転、提供する仕事、対価請求の条件は同じと調査で分かった。会社丙の同名「利用料契約」は支配移転等が異なる。比較可能性から適切なものはどれですか。",
+      "options": [
+        "名称をそろえた丙と甲だけを常に同じ処理にする",
+        "比較のため三社の利益額自体を同額にする",
+        "実質が同じ甲乙と異なる丙を区別し、具体的基準の条件を当てはめる",
+        "比較可能性は名称さえ同じなら満たす"
+      ],
+      "answer": 2,
+      "explanation": "経済的な実質の同異を識別できることが必要です。名称の一致や、金額の画一化そのものを目標にしません。具体的な処理の結論は対象基準まで確認します。",
+      "points": 1
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-qualitative-characteristics": [
+          4
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-qualitative-characteristics-f04"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-qualitative-characteristics",
+          "objective": 4,
+          "objectiveText": "基準体系の内的整合性と、期間を通じた手続の継続を区別する"
+        }
+      ],
+      "prompt": "基準案の審査で、委員甲は「従来の会社が毎期同じ手続を続けているから、新案は体系と整合し有用である」とした。委員乙は、既存基準・会計研究・実務の基本的な考え方と新案の関係を調べる。甲の推論を訂正し、乙の検討でも既存体系からの有用性推定を用いる前提を示してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "同じ処理を長く続けることだけでは、その処理が体系の基本的な考え方と整合するかは分かりません。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "企業の手続を毎期続ける継続性と、基準案が基本的な考え方を含む体系と整合するかという内的整合性は対象が異なる。乙のように基準・実務・研究の知識と経験も確認する。既存体系との整合性から有用性を間接的に推定するには、その体系が有用な情報を生むという合意が前提であり、整合するだけで無条件に有用と確定しない。",
+      "rubric": [
+        {
+          "criterion": "継続性と基準体系の整合性の対象を区別",
+          "points": 2
+        },
+        {
+          "criterion": "既存体系が有用な情報を生むという合意の前提を示す",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-elements",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-elements": [
+          1
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-elements-f01"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-elements",
+          "objective": 1,
+          "objectiveText": "過去の取引・資源の支配・義務から構成要素を検討し、認識や測定と区別する"
+        }
+      ],
+      "prompt": "決算担当者は、①過去の購入で取得し他社に使用させず自社が利用を決める機器、②顧客から預かり当社が使えない機器、③過去に受けた仕事への未払代金、④来年の任意の広告予算、を全て「倉庫にある物か予定支出か」で分類した。資源の支配と現在の義務から①〜④の違いを説明し、構成要素の検討だけで認識額も決まるか述べてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "物の所在地と所有権の名称だけで決めず、過去の事実と支配・義務を確かめます。本問は各機器の具体的な評価額を与えていません。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "①は過去の購入と支配された資源を検討できる。②は保管しているだけで自社が支配する資源とはいえない。③は既に仕事を受けたことから生じる支払義務を検討する。④は将来の任意予算というだけで現在の義務にならない。これらの構成要素の検討に加え、実際に計上する認識条件と額を定める測定を別途確認する。",
+      "rubric": [
+        {
+          "criterion": "①②を支配の違いから説明",
+          "points": 1
+        },
+        {
+          "criterion": "③④を現在の義務の違いから説明",
+          "points": 1
+        },
+        {
+          "criterion": "構成要素の検討と認識・測定を区別",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-elements",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-elements": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-elements-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-elements",
+          "objective": 2,
+          "objectiveText": "資産負債差額と内訳を照合し、残高・期間変動・所有者取引を区別する"
+        }
+      ],
+      "prompt": "学習用の連結資料で期首純資産1,500、期末1,920。期末増資300、配当80、当期OCI50で、他の変動はない。借入200は期末現金にそのまま残る取引である。当期純利益を求め、借入200を純資産増加からもう一度控除しない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "純資産残高の変動から期間成果を出す前に、所有者との取引を外します。負債調達を増資と同じ扱いにしません。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "包括利益は1,920−1,500−300+80=200。当期純利益は200−50=150。借入200は現金と負債を同額増やすので純資産を増やしておらず、差額からさらに控除すると二重の調整になる。",
+      "rubric": [
+        {
+          "criterion": "所有者取引を除いた包括利益200と純利益150",
+          "points": 2
+        },
+        {
+          "criterion": "借入の資産負債同額増と二重控除の問題を説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q15",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-elements",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-elements": [
+          3
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-elements-f03"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-elements",
+          "objective": 3,
+          "objectiveText": "当期純利益・その他の包括利益・組替え・累計残高を複数期間で照合する"
+        }
+      ],
+      "prompt": "連結の投資Xは取得200、前期末240、当期270で売却し、個別基準に従う当期純利益算入額70と与える。投資Yは取得100、前期末80、当期末70で保有継続し、評価変動はOCIと与える。前期の両投資の純利益はゼロで、税効果等はない。当期の両投資合計の純利益・OCI・包括利益・期末OCI累計額を求め、二期間累計の成果を取得額との差で照合してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "当期のOCIと期末のOCI累計額は異なります。XとYの処理は与件によるもので、全ての投資が同じ組替えをするという一般化はしません。",
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "Xの当期発生変動30から純利益への組替70を引くのでOCI−40、包括利益30、累計額ゼロ。Yの当期OCIは−10、期末累計−30。合計は純利益70・OCI−50・包括利益20・期末累計−30。前期OCIは40−20=20、二期包括利益40。回収270と残存価値70の計340から取得300を引く40と一致する。",
+      "rubric": [
+        {
+          "criterion": "Xの組替とOCI−40を説明",
+          "points": 2
+        },
+        {
+          "criterion": "当期合計の純利益70/OCI−50/包括20",
+          "points": 2
+        },
+        {
+          "criterion": "期末累計−30と二期成果40の照合",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-a-q16",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-elements",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-elements": [
+          4
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-elements-f04"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-elements",
+          "objective": 4,
+          "objectiveText": "連結の全体額と親会社株主・非支配株主への帰属額を整合させる"
+        }
+      ],
+      "prompt": "連結当期純利益240のうち親会社株主帰属180。OCIは全体−20、親会社株主への帰属−35である。非支配株主への純利益・OCI・包括利益と、親会社株主に係る包括利益を求め、全体の包括利益との一致を示してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "全体と帰属別、純利益と包括利益という二つの軸を分けて表を作ると、異なる範囲の数値を足す誤りを防げます。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "非支配株主の純利益60、OCI15なので包括利益75。親会社株主の包括利益180−35=145。全体は240−20=220で、145+75=220と一致する。親会社の純利益と全体OCIを混ぜた220を親会社帰属としない。",
+      "rubric": [
+        {
+          "criterion": "非支配の純利益60/OCI15/包括75",
+          "points": 2
+        },
+        {
+          "criterion": "親会社包括145と全体220の照合",
+          "points": 2
+        }
+      ]
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-zaimu-purpose-regulation-f01": [
+      "zr2-zaimu-framework-review-a-q1"
+    ],
+    "zr2-zaimu-purpose-regulation-f02": [
+      "zr2-zaimu-framework-review-a-q2"
+    ],
+    "zr2-zaimu-purpose-regulation-f03": [
+      "zr2-zaimu-framework-review-a-q3"
+    ],
+    "zr2-zaimu-reporting-obligations-f02": [
+      "zr2-zaimu-framework-review-a-q3"
+    ],
+    "zr2-zaimu-purpose-regulation-f04": [
+      "zr2-zaimu-framework-review-a-q4"
+    ],
+    "zr2-zaimu-general-principles-f01": [
+      "zr2-zaimu-framework-review-a-q5"
+    ],
+    "zr2-zaimu-general-principles-f02": [
+      "zr2-zaimu-framework-review-a-q6"
+    ],
+    "zr2-zaimu-general-principles-f03": [
+      "zr2-zaimu-framework-review-a-q7"
+    ],
+    "zr2-zaimu-general-principles-f04": [
+      "zr2-zaimu-framework-review-a-q8"
+    ],
+    "zr2-zaimu-qualitative-characteristics-f01": [
+      "zr2-zaimu-framework-review-a-q9"
+    ],
+    "zr2-zaimu-qualitative-characteristics-f02": [
+      "zr2-zaimu-framework-review-a-q10"
+    ],
+    "zr2-zaimu-qualitative-characteristics-f03": [
+      "zr2-zaimu-framework-review-a-q11"
+    ],
+    "zr2-zaimu-qualitative-characteristics-f04": [
+      "zr2-zaimu-framework-review-a-q12"
+    ],
+    "zr2-zaimu-elements-f01": [
+      "zr2-zaimu-framework-review-a-q13"
+    ],
+    "zr2-zaimu-elements-f02": [
+      "zr2-zaimu-framework-review-a-q14"
+    ],
+    "zr2-zaimu-elements-f03": [
+      "zr2-zaimu-framework-review-a-q15"
+    ],
+    "zr2-zaimu-elements-f04": [
+      "zr2-zaimu-framework-review-a-q16"
+    ]
+  },
+  "totalPoints": 59,
+  "selfReview": {
+    "status": "author-check-in-progress-independent-review-pending",
+    "arithmetic": "別記録に独立算式を保存してから著者確認を閉じる。",
+    "rubricAlignment": "全問で質問の要求と各採点項目を対応させる。",
+    "japanese": "全文の文脈確認と4ツールの結果確認後に著者記録を保存する。"
+  }
+}

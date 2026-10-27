@@ -1,0 +1,426 @@
+{
+  "id": "zr2-zaimu-estimate-disclosure",
+  "subject": "zaimu",
+  "title": "会計上の見積りを注記で伝える",
+  "stage": "標準から応用へ",
+  "moduleId": "zr2-zaimu-unit-framework",
+  "minutes": 130,
+  "prerequisites": [
+    "zr2-zaimu-policy-changes"
+  ],
+  "introductoryAlternative": "zr-zaimu-concepts",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "翌年度の重要な影響のリスクから対象項目を識別し、残高・有利不利・市場価格変動を区別する",
+    "計上額と方法・主要な仮定を、企業固有の事実と計算資料に結び付けて説明する",
+    "仮定を動かした感応度を計算し、単独変更と同時変更の差を説明する",
+    "個別基準による認識測定と注記の識別を分け、当期損失ゼロでも必要な説明を判断する",
+    "別注記・連結の参照と個別額を区別し、必要情報を残して重複を避ける"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "asbj-estimates-fixed-2020",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-estimates20200331_02.pdf",
+      "location": "企業会計基準31号・2020年3月31日公表。本文3〜9項と結論の背景15〜33項を実読。識別のリスク、通常以外の対象、例示と必須事項、個別参照を照合",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "算定法と認識条件は独自例の明示与件であり、貸倒・保証・減損の全認識条件を本講の式から導かない。",
+    "一律の重要性割合、必須感応度、定量的将来損失の予測・保証、実務文書の専門家審査を主張しない。"
+  ],
+  "glossary": [
+    {
+      "term": "会計上の見積り",
+      "definition": "作成時に入手可能な情報を用い、不確実な額を合理的に算定すること"
+    },
+    {
+      "term": "見積りの開示目的",
+      "definition": "翌年度への重要な影響のリスクがある項目の見積内容を利用者が理解できるようにすること"
+    },
+    {
+      "term": "主要な仮定",
+      "definition": "見積額の計算に重要な影響を与える数値の前提や、その状況・判断"
+    },
+    {
+      "term": "感応度",
+      "definition": "他の条件等を明示したうえで、仮定の変化が算定結果へ及ぼす影響を比較する考え方"
+    },
+    {
+      "term": "相互参照",
+      "definition": "必要な情報が既にある注記等の箇所を示し、同じ内容の重複を避けること"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-zaimu-estimate-disclosure-e1",
+      "section": "例題1：残高の大きさだけで選ばない",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-e2",
+      "section": "例題2：修理率の仮定を、額へつなぐ",
+      "objectives": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-e3",
+      "section": "例題3：一つずつ変える場合と、同時に変える場合",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-e4",
+      "section": "例題4：当期に減損損失を計上しなかった設備",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-e5",
+      "section": "例題5：参照先に、個別の額がない",
+      "objectives": [
+        5
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "第31号の対象識別について適切なものはどれですか。",
+      "options": [
+        "翌年度に有利な重要な影響しか想定しない項目も、リスクの検討対象になり得る",
+        "翌年度に不利な損失が確定済みの項目だけを対象にする",
+        "現在の計上額が最大の一項目だけを必ず選ぶ",
+        "全社共通で総資産の5%以上という法定線がある"
+      ],
+      "answer": 0,
+      "explanation": "有利・不利双方の変化を含み、影響の大きさと可能性を総合して判断します。2は確定損失へ狭め、3と4は基準が設けていない一律の線を作っています。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "直近の市場価格による時価評価資産300万円は、市場価格の変動そのものだけが検討対象である。一方、見積負債18万円は翌年度に会社へ重要な影響を及ぼすリスクがある。この二つを、額の大小と会計上の見積りの変動の区別から検討してください。他の開示義務は判断しません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "市場価格そのものの変動は第31号の識別で考慮しない。負債は残高が小さいだけでは除外できず、翌年度への影響の大きさと可能性を会社の状況から検討する。他の基準での開示まで免除されるとはいえない。",
+      "rubric": [
+        {
+          "criterion": "市場価格そのものの変動を識別から除くと示す",
+          "points": 2
+        },
+        {
+          "criterion": "負債は小さいだけで除外せず所与の重要なリスクを検討する",
+          "points": 2
+        }
+      ],
+      "explanation": "第31号の対象からの区分と、財務情報全体に必要な他の開示を混同しません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "担当者は「当期の貸借対照表に計上した資産負債にだけ注記対象が限られ、見積りの結果として計上しなかった負債は絶対に対象にならない」と述べた。通常の対象と、翌年度の重要な影響のリスクがある場合の範囲を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "通常は当期に計上した資産・負債だが、翌年度に重要な影響を及ぼすリスクがある場合、収益費用や見積りの結果として計上しなかった負債等の識別も妨げられない。計上の有無だけを唯一の条件にはしない。",
+      "rubric": [
+        {
+          "criterion": "通常は計上した資産負債と述べる",
+          "points": 1
+        },
+        {
+          "criterion": "所与のリスクがある場合の未計上負債等の範囲を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "この開示範囲から、個別の負債計上条件を新たに作る設問ではありません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "適切と与えられた方法で、対象製品800台、修理率5%、1台当たり費用3,000円により負債を見積もる。他の調整はない。計上額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "120000"
+      ],
+      "explanation": "800×0.05×3,000＝120,000円です。台数・割合・1台の費用という異なる単位をつなぎます。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "新製品に関する見積りでは、旧製品実績をそのまま使わず、直近の検査情報から修理率を調整した。計上額だけと「過去実績に基づく」の一文で説明しようとしている。何が伝わらないかと、追加する企業固有の情報を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "新製品という状況と現在の検査情報に基づく調整判断が伝わらない。対象台数、計算方法、修理率や単価の主要仮定、採用理由と今後変わり得る条件を開示目的に照らして説明する。",
+      "rubric": [
+        {
+          "criterion": "新製品と検査情報の調整が隠れると指摘する",
+          "points": 2
+        },
+        {
+          "criterion": "方法・仮定・根拠・変動条件から具体的情報を挙げる",
+          "points": 2
+        }
+      ],
+      "explanation": "基準の一般文だけでなく、実際の見積りの中身を示す問題です。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "算定方法、主要な仮定、翌年度への影響に関する情報という第8項の例示について適切なものはどれですか。",
+      "options": [
+        "全項目で同じ文章を三行ずつ書けば、それだけで十分である",
+        "開示目的に照らし、企業の状況に役立つ定量・定性情報等を判断する",
+        "仮定の数値さえ書けば、その背景は一切必要ない",
+        "感応度の数値を出せない場合、全ての見積り注記を省略する"
+      ],
+      "answer": 1,
+      "explanation": "例示を形式的なチェック欄とせず、利用者の理解に必要な情報を検討します。残りは定型文・数値一つ・一律省略へ置き換える誤りです。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "対象額1,200万円を固定して、学習用の見積率2%を3.5%へ変える。差額は何万円ですか。式による計上が適切と与え、他の調整はありません。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "18"
+      ],
+      "explanation": "当初24万円、変更後42万円、差18万円です。1,200×(3.5%−2%)でも計算できます。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "見積額は対象額1,600万円×3%＝48万円。対象額2,000万円、率5%へ同時に変えた額と差を求めてください。率だけを変えた差32万円と、対象額だけを変えた差12万円の合計44万円に一致するか、差があれば理由と金額も説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "同時変更は2,000×5%＝100万円で差52万円。単独差の合計44万円より8万円大きい。増加対象額400万円にも率上昇2ポイントが掛かり、400×2%＝8万円の交差部分があるため。",
+      "rubric": [
+        {
+          "criterion": "100万円・差52万円を求める",
+          "points": 2
+        },
+        {
+          "criterion": "単独差との差8万円を求める",
+          "points": 1
+        },
+        {
+          "criterion": "追加対象額にも率変化が掛かると説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "独立した二つの単純差を足すだけで同時変化を表せるとは限りません。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "率を変えた見積額の感応度を示す際に必要な注意はどれですか。",
+      "options": [
+        "対象残高や単価等を固定したか、同時に変えたかを明らかにする",
+        "結果の額だけを示し、条件を省略すれば全社に使える",
+        "感応度の高い方の額を、必ず当期の正式計上額へ変更する",
+        "比較した範囲内に実績が必ず収まると保証する"
+      ],
+      "answer": 0,
+      "explanation": "固定条件や仮定の関係を示して初めて、差額の意味が伝わります。感応度は計上額の決定や将来の保証と同じではありません。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "設備の個別基準による検討は適切に終わり、当期減損損失はゼロと与える。しかし主要受注の更新成否が、翌年度の財務諸表へ重要な影響を与えるリスクがある。注記対象を検討する理由と、認識測定の結論と区別すべき点を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "当期損失がゼロでも、当期の見積りと翌年度の重要な影響のリスクを検討して識別する。受注更新の不確実性、計上額、主要仮定等の説明を検討するのであり、注記対象というだけで当期損失を新たに計上したり翌年度損失を確定したりしない。",
+      "rubric": [
+        {
+          "criterion": "ゼロ損失だけで除外せず翌年度リスクから識別すると示す",
+          "points": 2
+        },
+        {
+          "criterion": "認識測定と開示の判断を区別する",
+          "points": 2
+        }
+      ],
+      "explanation": "認識測定は個別基準、見積りの内容を理解する開示は第31号という対象を分けます。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "翌年度の重要な影響のリスクを識別したことについて、担当者は「翌年度の損失額が既に確定したという意味なので、その予測値を保証する注記にすべきだ」と述べた。リスクの説明と損失の確定・保証を区別して訂正し、採用した仮定やその変動条件について、利用者へ何を説明すべきかも述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "重要な影響のリスクがあることは、損失額の確定や将来実績の保証ではない。採用した仮定と変わり得る条件等を利用者が理解できるように説明し、個別基準での認識測定の判断と分ける。",
+      "rubric": [
+        {
+          "criterion": "リスクと損失額確定・保証を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "仮定と変動条件の説明へ結び付ける",
+          "points": 1
+        }
+      ],
+      "explanation": "不確実性を説明する目的を、確実な将来結果の約束へ置き換えません。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "第31号の説明が定める、識別における将来期間の着眼点はどれですか。",
+      "options": [
+        "翌年度への重要な影響のリスク",
+        "会社設立以降の全年度の損失だけ",
+        "何年先でも考えられる全リスクを同じ重さで列挙すること",
+        "当期の入金額だけ"
+      ],
+      "answer": 0,
+      "explanation": "翌年度への重要な影響のリスクを検討します。長期の全ての事象を無制限に列挙することや、当期の現金額へ置き換えることではありません。",
+      "objectives": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "識別項目の連結計上額930万円、個別計上額650万円である。個別の必要な計上額欄へ連結額を誤って転記した場合の過大額を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "280"
+      ],
+      "explanation": "930−650＝280万円過大です。その他の情報を連結参照する取扱いと、個別の計上額を示すことは別です。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "連結財務諸表を作成する会社の個別注記で、第7項(2)のその他の情報を連結へ参照する。「連結参照だから個別の対象額も不要」とする提案を、参照する情報と個別額の違いから説明してください。参照先の内容について何を確認するかも述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "第7項(2)の情報について連結の記載を参照することと、第7項(1)の個別の対象額を示すことは異なる。連結の額を個別へ代入したり個別額全てを省略したりする根拠にはならない。参照先の内容が必要な理解を満たすかも確認する。",
+      "rubric": [
+        {
+          "criterion": "その他の情報と個別計上額を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "個別額の代入・一律省略を否定する",
+          "points": 1
+        },
+        {
+          "criterion": "参照先に必要情報があるか確認すると示す",
+          "points": 1
+        }
+      ],
+      "explanation": "個別には算出方法の記載でその他の情報に代える取扱いもありますが、個別額を消す取扱いとは異なります。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-estimate-disclosure-q15",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "prompt": "担当者は別注記に「減損会計を適用」とだけ書かれていることを理由に、主要受注の更新リスクや採用仮定も開示済みだと述べた。参照の前提と、必要な情報が不足する場合の対応を説明してください。必要情報を補った別注記を参照する方法と、当該見積りの注記へ直接説明を加える方法のいずれでも構いません。他注記を参照する方法を選ぶ場合は、参照箇所の示し方も述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "参照できるのは必要な内容が実際に別注記に含まれている場合である。基準名だけでは受注更新の不確実性や採用仮定の説明があるとはいえず、開示目的に必要な企業固有情報を補う。補足した別注記を参照するなら読者が箇所を見つけられるように示す。当該見積りの注記へ必要情報を直接加える方法も適切である。",
+      "rubric": [
+        {
+          "criterion": "必要な内容が実際にあることを参照の前提とする",
+          "points": 2
+        },
+        {
+          "criterion": "一般文だけでは不足する情報を具体化する",
+          "points": 1
+        },
+        {
+          "criterion": "必要情報を直接補記する、又は補足した別注記と分かる参照箇所を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "重複を避けることを、必要な説明を省く理由にはしません。",
+      "objectives": [
+        5
+      ]
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "id": "zr2-zaimu-reporting-obligations",
+  "subject": "zaimu",
+  "title": "会社の属性と財務情報の作成・監査・開示",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-zaimu-unit-framework",
+  "minutes": 150,
+  "prerequisites": [
+    "zr2-zaimu-purpose-regulation"
+  ],
+  "introductoryAlternative": "zr-zaimu-concepts",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "公開会社・上場・大会社を区別し、境界額と不足する情報から会社の属性を判断する",
+    "帳簿・計算書類・事業報告を区別し、監査・承認・提供・総会の手順と保存起算を対応させる",
+    "総会の承認を報告へ代える特則について、会計監査人の有無と複数の要件を区別する",
+    "公告の対象書類と条件付きの代替・適用除外を判断し、作成義務と混同しない",
+    "有価証券報告書の対象・原則期間・監査証明を、会社法上の手続と分けて説明する"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "companies-law",
+      "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+      "location": "2条5・6号、432・435〜440条、939条1項。2026年4月3日基準を指定した公式データの施行版を全文照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "company-calculation",
+      "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+      "location": "59条、126条1項2号、135〜138条。監査意見と承認特則、公告の情報・要旨を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "financial-instruments-law",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000025_20260101_506AC0000000056",
+      "location": "24条1項、193条1項、193条の2第1項。内国会社の原則期間、対象と例外、財務書類と監査証明を照合",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "発行者類型ごとの政令上の数値・免除条件、外国会社の特例、様式と注記、期中開示、具体的な休業日調整を本講で網羅したとは扱わない。",
+    "数値・会社機関・例外の有無は独自例の与件。実際の会社の届出や法的判断を代行する教材ではない。"
+  ],
+  "scopeContinuations": [
+    {
+      "lessonId": "zr2-zaimu-disclosure-eligibility-deadlines",
+      "notCompletedHere": "発行者類型別の提出対象・政令数値と免除、外国会社の期間、期限延長と具体的休業日調整"
+    },
+    {
+      "lessonId": "zr2-zaimu-company-statements",
+      "notCompletedHere": "個別計算書類の具体的な様式と各表示項目"
+    },
+    {
+      "lessonId": "zr2-zaimu-financial-notes",
+      "notCompletedHere": "財規・連財規と具体的な注記事項"
+    },
+    {
+      "lessonId": "zr2-zaimu-interim-reporting",
+      "notCompletedHere": "期中報告の対象と具体的な財務情報"
+    },
+    {
+      "lessonId": "zr2-zaimu-subsequent-going-concern",
+      "notCompletedHere": "後発事象と継続企業の具体的な表示・注記"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "公開会社",
+      "definition": "会社法上、発行する全部又は一部の株式について譲渡承認を要する定款の定めを設けていない株式会社。上場と同義ではない"
+    },
+    {
+      "term": "大会社",
+      "definition": "原則として最終事業年度の貸借対照表の資本金5億円以上又は負債合計200億円以上の株式会社。成立後の特則も確認する"
+    },
+    {
+      "term": "計算書類",
+      "definition": "各事業年度の貸借対照表、損益計算書、株主資本等変動計算書、個別注記表"
+    },
+    {
+      "term": "事業報告",
+      "definition": "会社法上作成する、計算書類とは別の報告。定時株主総会では内容を報告する"
+    },
+    {
+      "term": "無限定適正意見",
+      "definition": "本講では会計監査報告の意見区分。これ一つだけで会社法439条の全要件を満たすとはいえない"
+    },
+    {
+      "term": "決算公告",
+      "definition": "会社法440条の条件に従って貸借対照表等を公告する手続。書類の作成や有価証券報告書の提出と区別する"
+    },
+    {
+      "term": "監査証明",
+      "definition": "本講では金商法193条の2等の対象書類に係る監査。会社法上の会計監査人の監査と根拠・条件を区別する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-zaimu-reporting-obligations-e1",
+      "section": "例題1：境界の額と、別の属性を分ける",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-e2",
+      "section": "例題2：会計監査人がいる会社の二つの書類",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-e3",
+      "section": "例題3：無限定適正意見の一つだけで決めない",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-e4",
+      "section": "例題4：提出義務者でも作成は残る",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-e5",
+      "section": "例題5：年度末と総会の順序を分ける",
+      "objectives": [
+        5
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-zaimu-reporting-obligations-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "会社法上の公開会社について正しい説明はどれですか。",
+      "options": [
+        "上場会社であることだけを意味する",
+        "株式の譲渡承認に関する定款の定めから判断し、上場と同義にはしない",
+        "資本金が5億円以上なら必ず公開会社である",
+        "売上が一定以上なら株式の条件を調べなくてよい"
+      ],
+      "answer": 1,
+      "explanation": "公開会社は会社法2条5号の株式の条件による区分です。上場・資本金・売上という別の事実だけで決めません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "最終事業年度の貸借対照表で、P社は資本金4億円・負債200億円、Q社は資本金5億円・負債60億円、R社は資本金4億9,000万円・負債199億9,000万円である。通常の大会社の判定を各社について理由付きで示してください。この表だけで公開会社・上場を判定できるかも述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "Pは負債200億円以上、Qは資本金5億円以上なので大会社。Rは両条件に達しない。条件は以上であり、一方を満たせばよい。株式の譲渡承認条件と上場の情報はなく、公開会社・上場をこの表だけでは判定できない。",
+      "rubric": [
+        {
+          "criterion": "P・Qを各条件から大会社とする",
+          "points": 2
+        },
+        {
+          "criterion": "Rは両条件未達とする",
+          "points": 1
+        },
+        {
+          "criterion": "公開会社・上場の情報不足を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "資本金と負債の両方が基準を超えることは要件ではありません。境界額を除外しないようにします。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "設立直後で最初の定時株主総会前の株式会社の大会社判定で、適切なものはどれですか。",
+      "options": [
+        "最終事業年度がないので永久に大会社にならない",
+        "売上の予算だけで判定する",
+        "成立時の貸借対照表を用いる規定を確認する",
+        "代表者の資産と会社の資本金を合算する"
+      ],
+      "answer": 2,
+      "explanation": "会社法2条6号は成立後最初の定時株主総会までの判定対象を定めています。対象となる貸借対照表を確認し、予算や個人財産へ置き換えません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "会社計算規則59条の各事業年度の計算書類に含まれないものはどれですか。",
+      "options": [
+        "貸借対照表",
+        "損益計算書",
+        "個別注記表",
+        "事業報告"
+      ],
+      "answer": 3,
+      "explanation": "事業報告は会社法上作成する別の書類です。計算書類の残る一つは株主資本等変動計算書です。必要書類であることと計算書類に含まれることを分けます。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "会計帳簿はX1年4月30日に閉鎖し、計算書類はX1年5月20日に作成した。対象書類の作成等に不備はない。帳簿・事業に関する重要資料と、計算書類・その附属明細書の10年保存について、それぞれどの事実から起算するかを説明してください。正確な保存満了日時までは求めません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "帳簿と事業に関する重要資料は帳簿閉鎖の4月30日、計算書類とその附属明細書は計算書類作成の5月20日が起算の事実である。両方を期末や総会の日から一律に数えない。",
+      "rubric": [
+        {
+          "criterion": "帳簿等は閉鎖日と示す",
+          "points": 2
+        },
+        {
+          "criterion": "計算書類等は作成日と示す",
+          "points": 2
+        }
+      ],
+      "explanation": "432条2項と435条4項では対象と起算事実が異なります。期間の長さだけを暗記しないようにします。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "取締役会・監査役会・会計監査人のある会社で、439条の特則は適用しない。計算書類と事業報告について、会計監査人の監査対象の違い、取締役会承認後の株主への提供、定時株主総会での扱いを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "計算書類等は監査役等と会計監査人の監査、事業報告等は監査役等の監査を確認し、事業報告まで会計監査人の監査対象とはしない。取締役会承認を受け、招集通知に際して所定書類・監査報告等を株主へ提供し、総会へ提出又は提供する。原則として計算書類は総会承認、事業報告は内容を報告する。",
+      "rubric": [
+        {
+          "criterion": "両書類の会計監査人の対象の違いを示す",
+          "points": 2
+        },
+        {
+          "criterion": "取締役会承認後の所定書類の株主提供を示す",
+          "points": 1
+        },
+        {
+          "criterion": "総会で計算書類承認・事業報告内容報告を分ける",
+          "points": 2
+        }
+      ],
+      "explanation": "監査済みという言葉だけで、株主への提供や原則の総会承認まで省きません。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "会計監査人設置会社の計算書類を、総会承認ではなく内容報告とする439条の特則の判断として適切なのはどれですか。",
+      "options": [
+        "会計監査人がいる事実だけでよい",
+        "無限定適正意見一つで他の条件を全て満たしたとみなす",
+        "会社計算規則135条の所定の各要件を対象会社・書類について確認する",
+        "事業報告を作らなければ計算書類の承認も不要となる"
+      ],
+      "answer": 2,
+      "explanation": "会計監査人の有無、監査意見、監査役等の報告、みなし監査の有無、取締役会等を条件に応じて確認します。特則は無条件の免除ではありません。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "会計監査人設置会社で取締役会もある。計算書類の会計監査報告に無限定適正意見はあるが、監査役会の監査報告には、その会計監査人の監査の方法又は結果を相当でないとする意見がある。439条・規則135条による報告特則を、この事実だけで適用してよいか、理由を述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "適用してよいとはいえない。規則135条2号は監査役等の監査報告に相当でないとする意見がないことを求めるので、無限定適正意見だけでは必要な条件がそろわない。",
+      "rubric": [
+        {
+          "criterion": "特則を適用できるとしない",
+          "points": 1
+        },
+        {
+          "criterion": "相当でないとする意見が別の要件に関わると説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "無限定適正意見の存在という一条件と、必要な全要件の充足を分けます。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "対象計算書類が439条・規則135条の必要な全要件を満たすと与えられた。担当者は「これで計算書類の作成と、事業報告の内容を総会へ報告する手続も不要だ」と述べる。適用されなくなる手続と、二つの主張の誤りを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "対象の計算書類について438条2項の総会承認を適用せず、その内容を総会へ報告する。計算書類の作成義務をなくすものではなく、事業報告の内容の報告も省かない。",
+      "rubric": [
+        {
+          "criterion": "対象は計算書類の総会承認で内容報告へ代わると示す",
+          "points": 2
+        },
+        {
+          "criterion": "作成は不要にならないと示す",
+          "points": 1
+        },
+        {
+          "criterion": "事業報告の内容報告は省かれないと示す",
+          "points": 1
+        }
+      ],
+      "explanation": "特則がどの条項のどの手続を対象にするかを限定して読みます。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "大会社である株式会社が440条4項その他の除外・代替措置に該当しないと与えられた。440条1項の公告対象はどれですか。",
+      "options": [
+        "貸借対照表だけ",
+        "損益計算書だけ",
+        "貸借対照表と損益計算書",
+        "個別注記表だけ"
+      ],
+      "answer": 2,
+      "explanation": "原則の貸借対照表に加え、大会社では損益計算書も対象です。実際の公告方法・要旨等は適用条件を別に確認します。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "株式会社Sは金商法24条1項により有価証券報告書を提出する義務を負い、会社法440条4項が適用される。担当者の「決算公告が不要だから、計算書類の作成も監査も全て不要だ」という説明を、適用除外の範囲から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "440条4項は同条前3項の公告に関する規定を適用しないという範囲である。435条の計算書類作成や436条等の対象となる監査・承認まで一括して除外するものではなく、それぞれの適用条件を確認する。",
+      "rubric": [
+        {
+          "criterion": "除外は440条前3項と示す",
+          "points": 2
+        },
+        {
+          "criterion": "作成や監査まで当然に消えないと説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "提出と公告の重複を避ける制度と、基礎資料を作成し監査等を受ける制度は別です。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "440条3項の措置を利用できる条件がある株式会社で、担当者は「貸借対照表の好きな一枚を1週間だけ自社サイトに置けば十分だ」と述べた。継続して提供する期間と、必要な情報・方法の条件から、説明の問題点を述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "同項は総会終結の日後5年を経過する日まで、不特定多数の者が継続して提供を受けられる所定の措置を求める。1週間では足りず、会社計算規則136条等の対象情報・注記や電磁的方法の条件も確認する。任意の画像一枚で十分とはいえない。",
+      "rubric": [
+        {
+          "criterion": "5年経過日までの継続という期間を示す",
+          "points": 2
+        },
+        {
+          "criterion": "所定の情報・方法を確認し任意画像で十分としない",
+          "points": 2
+        }
+      ],
+      "explanation": "会社が代替措置を利用できるとの与件を保ち、利用条件とは別に具体的な継続・情報の要件を確かめます。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "有価証券報告書の提出義務に関する判断として適切なものはどれですか。",
+      "options": [
+        "非上場会社はどの条件でも提出義務を負わない",
+        "大会社なら他の条件を調べず必ず提出する",
+        "24条1項の対象証券・発行者・例外等を確認し、非上場という一事実だけでは全てを否定しない",
+        "監査役がいれば自動的に提出義務が消える"
+      ],
+      "answer": 2,
+      "explanation": "上場以外の対象類型もあり、適用除外等の条件もあります。会社法上の規模・機関と、金商法上の対象を同一視しません。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "24条1項の提出義務を負う内国会社の事業年度は9月30日に終了する。延長承認等の例外はなく、休業日等の特別な期限調整はこの問の対象外とする。原則3か月以内の期間の末と、定時株主総会を翌年1月に予定していることだけで提出期限を1月へ変えてよいかを、理由付きで答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "通常の3か月の末は12月31日。原則は事業年度経過後3か月以内であり、総会を1月に予定することだけで期限は変更できない。例外を使うなら所定の条件・承認を別に確認する。",
+      "rubric": [
+        {
+          "criterion": "12月31日と答える",
+          "points": 2
+        },
+        {
+          "criterion": "年度末からの期間と総会の予定を区別する",
+          "points": 2
+        }
+      ],
+      "explanation": "本問は暦上の原則期間を確認する問題で、実際のその年の休業日調整を判定した回答ではありません。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-reporting-obligations-q15",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-reporting-obligations",
+      "prompt": "会社法上の会計監査人の監査を受けた会社が、「同じ会社の数値なので、金商法上の監査証明に係る対象や手続は調べなくてよい」と述べた。193条と193条の2の役割、二つの制度の関係から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "193条等は対象の財務計算書類の用語・様式・作成方法等、193条の2等は所定の対象書類の監査証明に関わる。会社法上の会計監査人の監査と根拠・対象・条件が異なるため、一方を受けた事実だけで他方の全手続が完了したとはいえない。",
+      "rubric": [
+        {
+          "criterion": "作成方法等と監査証明の役割を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "会社法監査の事実だけで金商法の確認を省かないと示す",
+          "points": 2
+        }
+      ],
+      "explanation": "両制度に共通する数値があることと、法的な適用・手続が同じであることを分けます。",
+      "objectives": [
+        5
+      ]
+    }
+  ]
+}

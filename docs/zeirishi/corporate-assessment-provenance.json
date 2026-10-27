@@ -1,0 +1,664 @@
+{
+  "reviewObjectiveCoverage": {
+    "zr2-hojin-entity-scope-o01": [
+      "zr2-hojin-scope-review-q1",
+      "zr2-hojin-scope-review-q5",
+      "zr2-hojin-scope-review-q24"
+    ],
+    "zr2-hojin-entity-scope-o02": [
+      "zr2-hojin-scope-review-q2",
+      "zr2-hojin-scope-review-q5",
+      "zr2-hojin-scope-review-q24"
+    ],
+    "zr2-hojin-period-filing-o01": [
+      "zr2-hojin-scope-review-q3",
+      "zr2-hojin-scope-review-q25"
+    ],
+    "zr2-hojin-period-filing-o02": [
+      "zr2-hojin-scope-review-q4",
+      "zr2-hojin-scope-review-q25"
+    ],
+    "zr2-hojin-income-adjustments-o01": [
+      "zr2-hojin-scope-review-q6",
+      "zr2-hojin-scope-review-q8",
+      "zr2-hojin-scope-review-q9",
+      "zr2-hojin-scope-review-q10",
+      "zr2-hojin-scope-review-q23"
+    ],
+    "zr2-hojin-income-adjustments-o02": [
+      "zr2-hojin-scope-review-q8",
+      "zr2-hojin-scope-review-q9",
+      "zr2-hojin-scope-review-q23"
+    ],
+    "zr2-hojin-schedule-four-five-o01": [
+      "zr2-hojin-scope-review-q7",
+      "zr2-hojin-scope-review-q11",
+      "zr2-hojin-scope-review-q14",
+      "zr2-hojin-scope-review-q15",
+      "zr2-hojin-scope-review-q16"
+    ],
+    "zr2-hojin-schedule-four-five-o02": [
+      "zr2-hojin-scope-review-q12",
+      "zr2-hojin-scope-review-q13",
+      "zr2-hojin-scope-review-q14",
+      "zr2-hojin-scope-review-q15",
+      "zr2-hojin-scope-review-q16"
+    ],
+    "zr2-hojin-relationships-o01": [
+      "zr2-hojin-scope-review-q17",
+      "zr2-hojin-scope-review-q20",
+      "zr2-hojin-scope-review-q21"
+    ],
+    "zr2-hojin-relationships-o02": [
+      "zr2-hojin-scope-review-q18",
+      "zr2-hojin-scope-review-q19",
+      "zr2-hojin-scope-review-q22"
+    ]
+  },
+  "glossaryObjectiveCoverage": {
+    "zr2-hojin-entity-scope-o01": [
+      "zr2-hojin-scope-glossary-q1",
+      "zr2-hojin-scope-glossary-q2",
+      "zr2-hojin-scope-glossary-q3",
+      "zr2-hojin-scope-glossary-q4",
+      "zr2-hojin-scope-glossary-q6"
+    ],
+    "zr2-hojin-entity-scope-o02": [
+      "zr2-hojin-scope-glossary-q5",
+      "zr2-hojin-scope-glossary-q7"
+    ],
+    "zr2-hojin-period-filing-o01": [
+      "zr2-hojin-scope-glossary-q8",
+      "zr2-hojin-scope-glossary-q9"
+    ],
+    "zr2-hojin-period-filing-o02": [
+      "zr2-hojin-scope-glossary-q10",
+      "zr2-hojin-scope-glossary-q11",
+      "zr2-hojin-scope-glossary-q12",
+      "zr2-hojin-scope-glossary-q13"
+    ],
+    "zr2-hojin-income-adjustments-o01": [
+      "zr2-hojin-scope-glossary-q14",
+      "zr2-hojin-scope-glossary-q15",
+      "zr2-hojin-scope-glossary-q16"
+    ],
+    "zr2-hojin-income-adjustments-o02": [
+      "zr2-hojin-scope-glossary-q17",
+      "zr2-hojin-scope-glossary-q18",
+      "zr2-hojin-scope-glossary-q19",
+      "zr2-hojin-scope-glossary-q20"
+    ],
+    "zr2-hojin-schedule-four-five-o01": [
+      "zr2-hojin-scope-glossary-q21",
+      "zr2-hojin-scope-glossary-q22",
+      "zr2-hojin-scope-glossary-q24",
+      "zr2-hojin-scope-glossary-q25"
+    ],
+    "zr2-hojin-schedule-four-five-o02": [
+      "zr2-hojin-scope-glossary-q23",
+      "zr2-hojin-scope-glossary-q26",
+      "zr2-hojin-scope-glossary-q27",
+      "zr2-hojin-scope-glossary-q28"
+    ],
+    "zr2-hojin-relationships-o01": [
+      "zr2-hojin-scope-glossary-q29",
+      "zr2-hojin-scope-glossary-q30",
+      "zr2-hojin-scope-glossary-q31",
+      "zr2-hojin-scope-glossary-q32"
+    ],
+    "zr2-hojin-relationships-o02": [
+      "zr2-hojin-scope-glossary-q33",
+      "zr2-hojin-scope-glossary-q34",
+      "zr2-hojin-scope-glossary-q35"
+    ]
+  },
+  "independence": "レッスン問題の抽出なし。法人分類が期間/期限へ及ぼす影響、前受/未計上/過年度超過の決算、前期一部未納と仮払/充当金、子法人を含む複数大規模保有など異なる資料構造を設計。",
+  "rawMinutesNotAdopted": {
+    "review": 120,
+    "glossary": 45,
+    "reason": "not calibrated"
+  },
+  "objectiveIdPolicy": "著者と計画のo01/o02は実データで一致。1対1で保持し、未教授の詳細技能を増やして数えない",
+  "scopeContinuations": {
+    "zr2-hojin-entity-scope": [
+      {
+        "topic": "一般社団法人の全要件・各業種例外・区分経理",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-nonprofit-qualification",
+            "title": "非営利型二類型の全要件と理事関係",
+            "objectiveIds": [
+              "zr2-hojin-nonprofit-qualification-o01",
+              "zr2-hojin-nonprofit-qualification-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-revenue-business-boundaries",
+            "title": "収益事業34業種と個別・共通除外",
+            "objectiveIds": [
+              "zr2-hojin-revenue-business-boundaries-o01",
+              "zr2-hojin-revenue-business-boundaries-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-nonprofit-segregation",
+            "title": "収益事業の区分経理・共通費・みなし寄附金",
+            "objectiveIds": [
+              "zr2-hojin-nonprofit-segregation-o01",
+              "zr2-hojin-nonprofit-segregation-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-nonprofit-transitions",
+            "title": "法人区分移行・収益事業開始廃止と累積所得",
+            "objectiveIds": [
+              "zr2-hojin-nonprofit-transitions-o01",
+              "zr2-hojin-nonprofit-transitions-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "外国法人・国内源泉・PE",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-foreign-branch",
+            "title": "外国法人・PE・国外支店損益",
+            "objectiveIds": [
+              "zr2-hojin-foreign-branch-o01",
+              "zr2-hojin-foreign-branch-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "法人課税信託・年金・最低課税",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-corporation-tax-trust",
+            "title": "法人課税信託・受託法人・受益者等課税の境界",
+            "objectiveIds": [
+              "zr2-hojin-corporation-tax-trust-o01",
+              "zr2-hojin-corporation-tax-trust-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-pension-funds",
+            "title": "退職年金等積立金課税と適用停止の確認",
+            "objectiveIds": [
+              "zr2-hojin-pension-funds-o01",
+              "zr2-hojin-pension-funds-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-minimum-tax-iir",
+            "title": "国際最低課税の対象とIIR",
+            "objectiveIds": [
+              "zr2-hojin-minimum-tax-iir-o01",
+              "zr2-hojin-minimum-tax-iir-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-minimum-tax-other",
+            "title": "UTPR・国内最低課税・報告",
+            "objectiveIds": [
+              "zr2-hojin-minimum-tax-other-o01",
+              "zr2-hojin-minimum-tax-other-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      }
+    ],
+    "zr2-hojin-period-filing": [
+      {
+        "topic": "通算・加入離脱による事業年度特則",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-group-joining",
+            "title": "通算制度の適用・加入離脱",
+            "objectiveIds": [
+              "zr2-hojin-group-joining-o01",
+              "zr2-hojin-group-joining-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-group-income",
+            "title": "通算の損益通算・欠損・遮断",
+            "objectiveIds": [
+              "zr2-hojin-group-income-o01",
+              "zr2-hojin-group-income-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "解散清算・再編の税務簿価と残余財産申告",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-liquidation",
+            "title": "解散・清算・残余財産・否認規定",
+            "objectiveIds": [
+              "zr2-hojin-liquidation-o01",
+              "zr2-hojin-liquidation-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-reorg-qualified",
+            "title": "合併・分割の適格要件",
+            "objectiveIds": [
+              "zr2-hojin-reorg-qualified-o01",
+              "zr2-hojin-reorg-qualified-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-filing",
+            "title": "確定・中間・期限延長・還付",
+            "objectiveIds": [
+              "zr2-hojin-filing-o01",
+              "zr2-hojin-filing-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "帳簿・電子保存・取消し・みなし承認の詳細",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-corrections",
+            "title": "修正・更正請求・帳簿・附帯税",
+            "objectiveIds": [
+              "zr2-hojin-corrections-o01",
+              "zr2-hojin-corrections-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-loss-carryforward",
+            "title": "青色/災害欠損の繰越と利用限度",
+            "objectiveIds": [
+              "zr2-hojin-loss-carryforward-o01",
+              "zr2-hojin-loss-carryforward-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-filing",
+            "title": "確定・中間・期限延長・還付",
+            "objectiveIds": [
+              "zr2-hojin-filing-o01",
+              "zr2-hojin-filing-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "公益法人等の移行と信託等の期間",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-nonprofit-transitions",
+            "title": "法人区分移行・収益事業開始廃止と累積所得",
+            "objectiveIds": [
+              "zr2-hojin-nonprofit-transitions-o01",
+              "zr2-hojin-nonprofit-transitions-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-corporation-tax-trust",
+            "title": "法人課税信託・受託法人・受益者等課税の境界",
+            "objectiveIds": [
+              "zr2-hojin-corporation-tax-trust-o01",
+              "zr2-hojin-corporation-tax-trust-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      }
+    ],
+    "zr2-hojin-income-adjustments": [
+      {
+        "topic": "留保/流出と複数年の税務残高",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-schedule-four-five",
+            "title": "別表四・五一・五二の連動",
+            "objectiveIds": [
+              "zr2-hojin-schedule-four-five-o01",
+              "zr2-hojin-schedule-four-five-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-integration-domestic",
+            "title": "普通法人の決算と申告の全連動",
+            "objectiveIds": [
+              "zr2-hojin-integration-domestic-o01",
+              "zr2-hojin-integration-domestic-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "収益時期・無償利益・資本取引の個別要件",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-revenue-timing",
+            "title": "販売・役務・請負の収益時期",
+            "objectiveIds": [
+              "zr2-hojin-revenue-timing-o01",
+              "zr2-hojin-revenue-timing-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-deemed-revenue",
+            "title": "無償・低額譲渡と受贈益",
+            "objectiveIds": [
+              "zr2-hojin-deemed-revenue-o01",
+              "zr2-hojin-deemed-revenue-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-capital-refunds",
+            "title": "みなし配当・自己株式・資本払戻",
+            "objectiveIds": [
+              "zr2-hojin-capital-refunds-o01",
+              "zr2-hojin-capital-refunds-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "債務確定・前払い・普通償却と租税公課の例外",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-rent-prepaid",
+            "title": "賃貸借・フリーレント・前払",
+            "objectiveIds": [
+              "zr2-hojin-rent-prepaid-o01",
+              "zr2-hojin-rent-prepaid-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-depreciation",
+            "title": "法定償却方法・供用月数・複数年",
+            "objectiveIds": [
+              "zr2-hojin-depreciation-o01",
+              "zr2-hojin-depreciation-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-taxes-refunds",
+            "title": "租税公課・附帯税・還付・充当金",
+            "objectiveIds": [
+              "zr2-hojin-taxes-refunds-o01",
+              "zr2-hojin-taxes-refunds-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-other-expenses",
+            "title": "その他費用・使途不明・不正支出",
+            "objectiveIds": [
+              "zr2-hojin-other-expenses-o01",
+              "zr2-hojin-other-expenses-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      }
+    ],
+    "zr2-hojin-schedule-four-five": [
+      {
+        "topic": "税目別納付/還付・消却の複合と税額算出",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-taxes-refunds",
+            "title": "租税公課・附帯税・還付・充当金",
+            "objectiveIds": [
+              "zr2-hojin-taxes-refunds-o01",
+              "zr2-hojin-taxes-refunds-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-rates-credit-order",
+            "title": "法人区分・短期税率・所得税額控除",
+            "objectiveIds": [
+              "zr2-hojin-rates-credit-order-o01",
+              "zr2-hojin-rates-credit-order-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-filing",
+            "title": "確定・中間・期限延長・還付",
+            "objectiveIds": [
+              "zr2-hojin-filing-o01",
+              "zr2-hojin-filing-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "資産処分・税効果・複数年総合",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-depreciation",
+            "title": "法定償却方法・供用月数・複数年",
+            "objectiveIds": [
+              "zr2-hojin-depreciation-o01",
+              "zr2-hojin-depreciation-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-bad-debts",
+            "title": "法律上・事実上・形式上の貸倒",
+            "objectiveIds": [
+              "zr2-hojin-bad-debts-o01",
+              "zr2-hojin-bad-debts-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-provision-rollforward",
+            "title": "引当戻入・貸倒・残高の複数年",
+            "objectiveIds": [
+              "zr2-hojin-provision-rollforward-o01",
+              "zr2-hojin-provision-rollforward-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-integration-domestic",
+            "title": "普通法人の決算と申告の全連動",
+            "objectiveIds": [
+              "zr2-hojin-integration-domestic-o01",
+              "zr2-hojin-integration-domestic-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "再編/資本取引/通算の別表特則",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-capital-refunds",
+            "title": "みなし配当・自己株式・資本払戻",
+            "objectiveIds": [
+              "zr2-hojin-capital-refunds-o01",
+              "zr2-hojin-capital-refunds-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-group-tax",
+            "title": "通算税額・控除・税効果額",
+            "objectiveIds": [
+              "zr2-hojin-group-tax-o01",
+              "zr2-hojin-group-tax-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-integration-reorg",
+            "title": "圧縮・資本関係・再編の複数年総合",
+            "objectiveIds": [
+              "zr2-hojin-integration-reorg-o01",
+              "zr2-hojin-integration-reorg-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      }
+    ],
+    "zr2-hojin-relationships": [
+      {
+        "topic": "同族/特定同族・役員・支配期間の個別条件",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-retained-earnings",
+            "title": "特定同族会社の留保金課税",
+            "objectiveIds": [
+              "zr2-hojin-retained-earnings-o01",
+              "zr2-hojin-retained-earnings-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-officer-status",
+            "title": "みなし役員・使用人兼務・特殊関係",
+            "objectiveIds": [
+              "zr2-hojin-officer-status-o01",
+              "zr2-hojin-officer-status-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-loss-control",
+            "title": "支配関係変更と欠損/資産損失制限",
+            "objectiveIds": [
+              "zr2-hojin-loss-control-o01",
+              "zr2-hojin-loss-control-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-reorg-qualified",
+            "title": "合併・分割の適格要件",
+            "objectiveIds": [
+              "zr2-hojin-reorg-qualified-o01",
+              "zr2-hojin-reorg-qualified-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "制度別中小・平均所得の再編/短期/通算調整",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-sme-eligibility-integrated",
+            "title": "制度別中小判定・平均所得・再編通算の特例",
+            "objectiveIds": [
+              "zr2-hojin-sme-eligibility-integrated-o01",
+              "zr2-hojin-sme-eligibility-integrated-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-rates-credit-order",
+            "title": "法人区分・短期税率・所得税額控除",
+            "objectiveIds": [
+              "zr2-hojin-rates-credit-order-o01",
+              "zr2-hojin-rates-credit-order-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-investment-rd",
+            "title": "投資・研究開発・特別償却の選択",
+            "objectiveIds": [
+              "zr2-hojin-investment-rd-o01",
+              "zr2-hojin-investment-rd-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-small-assets",
+            "title": "少額・一括償却・特別償却",
+            "objectiveIds": [
+              "zr2-hojin-small-assets-o01",
+              "zr2-hojin-small-assets-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-wage-credit",
+            "title": "賃上げ促進税制",
+            "objectiveIds": [
+              "zr2-hojin-wage-credit-o01",
+              "zr2-hojin-wage-credit-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      },
+      {
+        "topic": "法人による完全支配の寄附等・通算との違い",
+        "plannedLessons": [
+          {
+            "id": "zr2-hojin-group-donation",
+            "title": "グループ寄附・受贈益・株式簿価",
+            "objectiveIds": [
+              "zr2-hojin-group-donation-o01",
+              "zr2-hojin-group-donation-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-group-transfers",
+            "title": "完全支配法人間の資産譲渡損益",
+            "objectiveIds": [
+              "zr2-hojin-group-transfers-o01",
+              "zr2-hojin-group-transfers-o02"
+            ],
+            "status": "planned-unwritten"
+          },
+          {
+            "id": "zr2-hojin-group-joining",
+            "title": "通算制度の適用・加入離脱",
+            "objectiveIds": [
+              "zr2-hojin-group-joining-o01",
+              "zr2-hojin-group-joining-o02"
+            ],
+            "status": "planned-unwritten"
+          }
+        ]
+      }
+    ]
+  }
+}

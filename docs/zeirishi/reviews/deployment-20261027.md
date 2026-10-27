@@ -10,3 +10,9 @@
 - TXTに実在する単元演習Cの識別子を確認した。未執筆の全科目を完成済みとする表示へ変更していない。
 
 詳細のHTTP応答・meta記録は制作環境の `work/zeirishi-upgrade/checks/published-reviewed-units.json`。これは公開技術チェックであり、GoogleやBingへのインデックス登録を証明するものではない。
+
+## 同日の追加公開
+
+続いてコミット `b5b408aec3cecacc4ae820723a05a0d71be76e05`、[実行40537815118](https://github.com/shikaku-step-note/shikaku-step-note.github.io/actions/runs/40537815118) も成功した。国税徴収法の基礎6講と独立評価を加え、拡充教材は3単元18講となった。保存不能時に現画面から直接バックアップできる回復手段と、複合問題の複数講への復習先も公開した。
+
+[徴収基礎単元](https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-kokuzei-unit-foundations/)、延滞税の代表講、単元記述、科目TXTのHTTP 200を確認した。公開教材のroot canonicalは一致し、記述ランナーはnoindexでサイトマップ外。サイトマップは232 URL。前の2単元と旧`/web/`互換も維持した。詳細は`checks/published-reviewed-units-b5b408a.json`。全科目・本試験相当模試の制作は引き続き未完了である。

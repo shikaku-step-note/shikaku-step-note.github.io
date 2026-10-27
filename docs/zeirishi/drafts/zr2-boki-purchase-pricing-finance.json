@@ -1,0 +1,643 @@
+{
+  "id": "zr2-boki-purchase-pricing-finance",
+  "subject": "boki",
+  "title": "購入後の対価修正・仕入割引・別建て利息をつなぐ",
+  "stage": "応用",
+  "moduleId": "zr2-boki-unit-inventory",
+  "minutes": 140,
+  "durationStatus": "著者暫定、受講者実測前",
+  "prerequisites": [
+    "zr2-boki-sales-purchases",
+    "zr2-boki-interest-present-value",
+    "zr2-boki-accrual-adjustments"
+  ],
+  "objectives": [
+    "購入代価の減額・金融上の仕入割引・売手側の認識条件を区分し、契約と勘定の関係を説明する",
+    "購入後の適切な価格修正を販売済・在庫へ配分し、債務減額と返金債権も使い分ける",
+    "別建て契約利息の所与の元本・利率・期間から発生・未払・翌期決済を記録する",
+    "対価修正・割引・利息の資料から原価・損益・現金・負債を照合し、誤分類や未記帳を訂正する"
+  ],
+  "lawAsOf": "2026-04-03",
+  "accountingStandardsBasis": "日本基準の通常商品、適切な価格修正と所与の金融条件。2024リース連動修正の一律適用やIFRS一般債務の現在価値測定を導入しない。",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "financial-regulations",
+      "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+      "location": "基準日2026-04-03の保存公式API主則79・90・93条。購入原価控除と仕入割引、支払利息の表示。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "fsa-financial-guideline-202603",
+      "url": "https://www.fsa.go.jp/common/law/kaiji/zaiki.pdf",
+      "location": "実読時表紙2026年3月。79印刷27/PDF28頁、90・93印刷28/PDF29頁、72-2。値引/割戻と金融上の割引、売手の金融要素との区分。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-inventory",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_16.pdf",
+      "location": "最終改正2019-07-04、2025-10-16修正反映。6-2・6-3項の購入代価/付随費用と原価配分。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "1982-04-20最終改正。第二一A・C、三C・D・F、四。期間配分と損益分類。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-revenue",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
+      "location": "47〜58・81〜83-3項を実読。変動対価と重要な金融要素は売手の契約から別判断。2024リース連動の適用時期を区分。",
+      "verified": "2026-10-27"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "仕入値引",
+      "definition": "品質不良・量目不足等の理由で商品の購入代価から控除する額。早期支払に対する金融上の仕入割引と区分する"
+    },
+    {
+      "term": "仕入割戻",
+      "definition": "一定期間の取引量等による購入代価の返戻等。本講は対象商品の対価を減らす条件で、仕入値引に準じて原価を修正する"
+    },
+    {
+      "term": "仕入割引",
+      "definition": "支払期日前の支払いに対する買掛金の一部免除等。所与の金融上の収益を、品質等に基づく購入代価の修正と分ける"
+    },
+    {
+      "term": "割引の対象債務",
+      "definition": "契約に従って割引率を掛ける買掛金等の確定額。返品等の処理後残額を用いる指定なら当初請求全額と区分する"
+    },
+    {
+      "term": "販売済み原価の修正",
+      "definition": "購入代価の修正のうち、既に販売して売上原価に含まれる商品の部分を適切に直す処理"
+    },
+    {
+      "term": "残存原価の修正",
+      "definition": "対象購入の価格修正のうち、会社が保有する在庫の取得原価を直す部分。当期損益へ全額移すとは限らない"
+    },
+    {
+      "term": "仕入先への返金債権",
+      "definition": "購入代金支払後の対価減額等により、仕入先から現金返還を受ける権利。存在しない買掛金の減少と区分する"
+    },
+    {
+      "term": "元本",
+      "definition": "本講の利息計算の基礎となる資金供与額。購入商品の対価や利息そのものとの区分を契約で確認する"
+    },
+    {
+      "term": "別建て契約利息",
+      "definition": "購入代価とは区分して資金の使用期間に対して約定された利息。本講は元本・利率・期間と支払利息処理を指定する"
+    },
+    {
+      "term": "未払利息",
+      "definition": "決算までに発生した利息のうち未払いの額として認識する負債。翌期支払総額と当期発生額を分ける"
+    },
+    {
+      "term": "金融上の収益",
+      "definition": "本講では早期決済による債務免除額等を指す。品質・数量による購入代価の減額と区分し、営業外収益へ記録する"
+    },
+    {
+      "term": "利益と現金の照合",
+      "definition": "期首純資産と利益から期末純資産を求め、現金・在庫等の資産と負債の残高と対応させる検算。原価に含まれない金融収益や未払費用も反映する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-purchase-pricing-finance-e1",
+      "section": "例題1：同じ請求額でも、減額の理由で勘定が変わる",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "qualityCostReduction": 15000,
+        "earlyDiscount": 6000,
+        "earlyPaymentCash": 294000,
+        "remainingDebtAfterEarlyPayment": 0
+      }
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-e2",
+      "section": "例題2：当期に確定した数量割戻しを、売上原価と在庫へ反映する",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "rebateTotal": 8000,
+        "soldAllocation": 6400,
+        "inventoryAllocation": 1600,
+        "newUnitCost": 760,
+        "newCostOfSales": 121600,
+        "newInventory": 30400,
+        "newTotalCost": 152000,
+        "wrongProfitOverstatement": 1600
+      }
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-e3",
+      "section": "例題3：返品・値引き後の残額に2％を適用する",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "eligibleDebt": 792000,
+        "discount": 15840,
+        "cash": 776160,
+        "wrongDiscount": 18000,
+        "excessDiscount": 2160,
+        "noDiscountCash": 792000
+      }
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-e4",
+      "section": "例題4：5か月分の未払利息と、翌期の6か月分の支払い",
+      "objectives": [
+        3
+      ],
+      "results": {
+        "currentMonths": 5,
+        "currentInterest": 30000,
+        "nextMonths": 1,
+        "nextInterest": 6000,
+        "totalInterest": 36000,
+        "principal": 1200000,
+        "totalCash": 1236000
+      }
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-e5",
+      "section": "例題5：同じ決済書から、原価・営業利益・金融収益を復元する",
+      "objectives": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "purchasePrice": 882000,
+        "acquisitionCost": 900000,
+        "units": 90,
+        "unitCost": 10000,
+        "costOfSales": 600000,
+        "endingInventory": 300000,
+        "discount": 8820,
+        "supplierCash": 873180,
+        "grossProfit": 300000,
+        "operatingProfit": 280000,
+        "ordinaryProfit": 288820,
+        "endingCash": 1988820,
+        "endingNetAssets": 2288820
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        1
+      ],
+      "prompt": "日本基準の通常の掛仕入れについて、Aは商品の品質に応じる適切な購入代価減額、Bは原価修正を伴わない早期支払いによる金融上の仕入割引である。買手の分類として適切なものを選んでください。",
+      "options": [
+        "AもBも、名称に減額があるので全て金融収益とする",
+        "Aは金融収益、Bは必ず商品原価の減額とする",
+        "Aは対象商品の購入原価を修正し、Bは所与の決済条件による仕入割引を金融上の収益へ分ける",
+        "AもBも、実際の商品数量を必ず減らす"
+      ],
+      "answer": 2,
+      "points": 1,
+      "reviewState": "pending",
+      "explanation": "3が適切。ガイドライン79は品質等による購入代価の控除と早期支払等の仕入割引を区分し、90は仕入割引を金融上の収益へ分類する。1・2は理由と区分を混ぜ、4は数量返品という別の事実を追加している。"
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        1
+      ],
+      "prompt": "買手が、適切な所与の早期決済条件により仕入割引6,000円を計上した。担当者は「買手が営業外収益だから、売手にも必ず同額の営業外費用が生じる。売手の契約は見なくてよい」と説明した。結論と調査方法を評価し、売手について確認する定めの分野を二つ示してください。売手の具体的金額や仕訳の計算は不要です。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "買手の仕入割引という一つの勘定から、売手の営業外費用を必ず作るとは決められない。売手については収益認識基準の契約に基づく取引価格・変動対価と、重要な金融要素の有無・扱いをそれぞれ確認する。契約上の支払条件等の資料を読み、代価の測定と金融要素を区分して判断する。",
+      "explanation": "買手の仕入割引という一つの勘定から、売手の営業外費用を必ず作るとは決められない。売手については収益認識基準の契約に基づく取引価格・変動対価と、重要な金融要素の有無・扱いをそれぞれ確認する。契約上の支払条件等の資料を読み、代価の測定と金融要素を区分して判断する。",
+      "rubric": [
+        {
+          "criterion": "買手勘定だけから売手の表示を必ず同じにしない",
+          "points": 1
+        },
+        {
+          "criterion": "売手の取引価格・変動対価を確認",
+          "points": 1
+        },
+        {
+          "criterion": "重要な金融要素を確認",
+          "points": 1
+        },
+        {
+          "criterion": "契約上の支払条件等の資料を調べると示す",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        1
+      ],
+      "prompt": "買掛金600,000円は適切に計上済みで、原価修正はない。残額全額の期限前決済について1.5％を免除する金融上の仕入割引の条件を満たした。他の控除等はない。仕入先へ支払う現金はいくらですか。円の数値だけを入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 1,
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "591000"
+      ],
+      "explanation": "仕入割引600,000×1.5％＝9,000円、支払600,000−9,000＝591,000円。消滅する買掛金600,000円を現金591,000円と仕入割引9,000円へ分ける。"
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        2
+      ],
+      "prompt": "当期に同一商品100個を1個7,500円で購入し、販売の都度原価を振り替えて70個を販売、30個を保有している。その後、当期のこの購入について全100個を1個500円減額する数量割戻しが適切に確定した。金融上の仕入割引や別の役務等の対価ではなく、買掛金から控除する。過年度修正等は不要とする。割戻しの仕訳、販売済み・残存部分の修正額、修正後の原価・在庫を示してください。全額を金融収益へ入れる案が在庫と当期利益へ及ぼす誤りも説明してください。",
+      "options": [],
+      "answer": 0,
+      "points": 5,
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "割戻し合計50,000円のうち、販売済み70個分35,000円、在庫30個分15,000円である。買掛金50,000／売上原価35,000・商品15,000とする。修正後売上原価は525,000−35,000＝490,000円、在庫は225,000−15,000＝210,000円。合計700,000円は750,000−50,000円と一致する。全額を金融収益へすると、残存原価15,000円の修正がなく、在庫・当期利益を各15,000円過大にする。",
+      "explanation": "割戻し合計50,000円のうち、販売済み70個分35,000円、在庫30個分15,000円である。買掛金50,000／売上原価35,000・商品15,000とする。修正後売上原価は525,000−35,000＝490,000円、在庫は225,000−15,000＝210,000円。合計700,000円は750,000−50,000円と一致する。全額を金融収益へすると、残存原価15,000円の修正がなく、在庫・当期利益を各15,000円過大にする。",
+      "rubric": [
+        {
+          "criterion": "対象合計50,000円と販売済35,000/在庫15,000の配分",
+          "points": 1
+        },
+        {
+          "criterion": "買掛金／売上原価・商品を使う正しい仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "修正後原価490,000円・在庫210,000円",
+          "points": 1
+        },
+        {
+          "criterion": "原価合計700,000円の検算",
+          "points": 1
+        },
+        {
+          "criterion": "誤案の在庫/利益過大各15,000円を説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        2
+      ],
+      "prompt": "同一商品の購入代価修正は、販売済み部分と残存部分へ既に適切に配分して全て記帳済みである。決算資料の期末商品84,000円は修正後の原価と明示されている。担当者は「割戻通知を見たので、期末商品から在庫分の減額をもう一度控除する」と提案した。適切な対応を選んでください。",
+      "options": [
+        "修正後原価かを確認し、処理済みの同じ減額を期末商品へ重ねない",
+        "既に処理済みでも、全ての通知額を必ず再控除する",
+        "通知額を全額、金融上の仕入割引へ追加計上する",
+        "価格修正をした期には、在庫をすべてゼロにする"
+      ],
+      "answer": 0,
+      "points": 1,
+      "reviewState": "pending",
+      "explanation": "1が適切。与件で配分と記帳が終わり、84,000円も修正後原価である。2は同一減額の二重処理、3は価格修正と金融条件の混同、4は保有商品の原価を理由なく消している。"
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        2
+      ],
+      "prompt": "同一商品120個を1個2,500円で購入し、代金300,000円は全て支払済みで買掛金残高0円である。80個を販売し40個が残る。その後、当期購入分すべてについて1個100円の適切な対価減額が確定し、仕入先から12,000円を返金してもらう無条件の権利を得た。金融上の仕入割引ではなく、販売の都度原価を振り替える方法である。過年度修正・他債務との相殺等はない。返金債権を未収入金とする仕訳、修正後の売上原価・在庫を示し、買掛金を12,000円減らす案を評価してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "販売済みの修正8,000円、在庫の修正4,000円であり、未収入金12,000／売上原価8,000・商品4,000とする。売上原価は200,000−8,000＝192,000円、在庫は100,000−4,000＝96,000円。買掛金残高は0円であるため、所与の現金返金の権利を未収入金へ計上する。",
+      "explanation": "販売済みの修正8,000円、在庫の修正4,000円であり、未収入金12,000／売上原価8,000・商品4,000とする。売上原価は200,000−8,000＝192,000円、在庫は100,000−4,000＝96,000円。買掛金残高は0円であるため、所与の現金返金の権利を未収入金へ計上する。",
+      "rubric": [
+        {
+          "criterion": "販売済8,000円・残存4,000円の配分",
+          "points": 1
+        },
+        {
+          "criterion": "未収入金／売上原価・商品12,000円の仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "修正後原価192,000円・在庫96,000円",
+          "points": 1
+        },
+        {
+          "criterion": "買掛金0円と返金債権を区分して案を評価",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        3
+      ],
+      "prompt": "通常商品の購入代価とは区分した元本900,000円に、年利4.8％の別建て契約利息が生じる。契約上は1年12か月の単利月割りで、12月1日から翌年3月31日まで4か月分を決算整理する。利息の記帳・支払いはまだない。営業外の支払利息として処理する指定である。決算で計上する未払利息はいくらですか。円の数値だけを入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 1,
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "14400"
+      ],
+      "explanation": "900,000×4.8％×4/12＝14,400円。利息支払日ではなく、契約上当期に発生した4か月分を支払利息／未払利息とする。指定された月割りを実日数計算へ置き換えない。"
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        3
+      ],
+      "prompt": "通常商品の購入とは区分した資金の元本1,500,000円に、年利8％、1年12か月の単利月割りの契約利息を払う。11月1日に始まり、翌年6月30日に元本と8か月分の利息を全額現金払いする。3月31日決算まで利息は未記帳・未払いで、取得原価へ加算せず支払利息とする指定である。決算の仕訳、支払総額、翌期の支払仕訳を示してください。期首再振替はしない。利息全額を翌期費用にする案による両期の費用の誤りも説明してください。元本の勘定科目は借入金と指定します。",
+      "options": [],
+      "answer": 0,
+      "points": 5,
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "決算まで5か月の利息は1,500,000×8％×5/12＝50,000円で、支払利息50,000／未払利息50,000。全8か月の利息80,000円、元利支払総額1,580,000円。翌期の3か月は30,000円なので、借入金1,500,000・未払利息50,000・支払利息30,000／現金1,580,000とする（元本勘定を借入金と指定）。全80,000円を翌期費用にすると、前期費用50,000円過少、翌期費用50,000円過大となる。",
+      "explanation": "決算まで5か月の利息は1,500,000×8％×5/12＝50,000円で、支払利息50,000／未払利息50,000。全8か月の利息80,000円、元利支払総額1,580,000円。翌期の3か月は30,000円なので、借入金1,500,000・未払利息50,000・支払利息30,000／現金1,580,000とする（元本勘定を借入金と指定）。全80,000円を翌期費用にすると、前期費用50,000円過少、翌期費用50,000円過大となる。",
+      "rubric": [
+        {
+          "criterion": "当期発生50,000円の未払整理仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "全利息80,000円・支払総額1,580,000円",
+          "points": 1
+        },
+        {
+          "criterion": "翌期発生30,000円と前期未払50,000円を区分",
+          "points": 1
+        },
+        {
+          "criterion": "元本を含む正しい支払仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "両期の費用誤差各50,000円と方向を説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        1
+      ],
+      "prompt": "買掛金400,000円について、早期決済なら4,000円免除される条件だったが、会社はその期間を過ぎた。契約どおり通常の期日に400,000円を払い、別の利息・違約金等は発生しない。適切な仕訳はどれですか。",
+      "options": [
+        "買掛金400,000／現金396,000・仕入割引4,000",
+        "買掛金400,000・支払利息4,000／現金404,000",
+        "仕入400,000／現金400,000",
+        "買掛金400,000／現金400,000"
+      ],
+      "answer": 3,
+      "points": 1,
+      "reviewState": "pending",
+      "explanation": "4が適切。所与の債務を通常額で消す。1は満たしていない割引を計上し、2は契約にない追加費用・追加支払いを作り、3は既に記録済みの仕入れを重ねている。"
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        4
+      ],
+      "prompt": "期首は現金800,000円だけを持ち、負債はない。商品80個を1個6,000円で掛け購入し、偶発的品違いで5個・30,000円を返品した。残る商品の購入対価を7,500円減額し、必要な引取費用7,500円を現金支払いした。同じ原価の75個が残り、価格修正は全て適切に当期原価へ帰属する。残る買掛金を早期決済し、2％を金融上の仕入割引として免除された。その後50個を450,000円で現金販売し、適切に売上を認識した。自社の販売活動の配送費7,500円を現金支払いし、別の請求権・他の取引・税等はない。取得原価・単価、売上原価と期末商品、仕入割引と仕入先支払、粗利益・営業利益・経常利益、期末現金を示してください。期末純資産からも利益を検算してください。",
+      "options": [],
+      "answer": 0,
+      "points": 5,
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "購入対価は480,000−30,000−7,500＝442,500円、引取費用を加えた取得原価450,000円、75個で割った単価6,000円となる。売上原価300,000円、在庫150,000円。仕入割引は442,500×2％＝8,850円、支払433,650円。粗利益150,000円、営業利益142,500円、経常利益151,350円。現金は800,000＋450,000−433,650−7,500−7,500＝801,350円。商品150,000円を加えた資産951,350円から期首純資産800,000円を引いても151,350円で一致する。",
+      "explanation": "購入対価は480,000−30,000−7,500＝442,500円、引取費用を加えた取得原価450,000円、75個で割った単価6,000円となる。売上原価300,000円、在庫150,000円。仕入割引は442,500×2％＝8,850円、支払433,650円。粗利益150,000円、営業利益142,500円、経常利益151,350円。現金は800,000＋450,000−433,650−7,500−7,500＝801,350円。商品150,000円を加えた資産951,350円から期首純資産800,000円を引いても151,350円で一致する。",
+      "rubric": [
+        {
+          "criterion": "取得原価450,000円・単価6,000円",
+          "points": 1
+        },
+        {
+          "criterion": "売上原価300,000円・在庫150,000円",
+          "points": 1
+        },
+        {
+          "criterion": "仕入割引8,850円・仕入先支払433,650円",
+          "points": 1
+        },
+        {
+          "criterion": "粗利150,000/営業142,500/経常151,350円を区分",
+          "points": 1
+        },
+        {
+          "criterion": "現金801,350円と期末純資産951,350円からの検算",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        2,
+        4
+      ],
+      "prompt": "当期に商品120個を1個5,000円で掛け購入し、96個を販売、24個を保有している。全購入分について当期の購入対価30,000円の適切な減額が確定した。品質・数量に基づく原価修正である。その修正後の買掛金全額を、1％免除の金融上の仕入割引で現金決済した。他の取得費用等はない。純売上700,000円、自社販売費10,000円で、他の損益等はない。正しい対価修正の配分、売上原価と在庫、仕入割引、粗利益・営業利益・経常利益を示してください。担当者が代価修正30,000円も全額金融収益とし、仕入割引と合算した場合の当期利益・在庫の誤差も求めてください。",
+      "options": [],
+      "answer": 0,
+      "points": 6,
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "購入代価修正30,000円のうち販売済み24,000円、在庫6,000円。売上原価480,000−24,000＝456,000円、在庫120,000−6,000＝114,000円となる。買掛金570,000円の1％は仕入割引5,700円。粗利益244,000円、営業利益234,000円、経常利益239,700円である。誤案では原価480,000円・在庫120,000円を残し、営業利益210,000円に金融収益35,700円を加えて245,700円となる。正しい額より当期利益・在庫が各6,000円過大になる。",
+      "explanation": "購入代価修正30,000円のうち販売済み24,000円、在庫6,000円。売上原価480,000−24,000＝456,000円、在庫120,000−6,000＝114,000円となる。買掛金570,000円の1％は仕入割引5,700円。粗利益244,000円、営業利益234,000円、経常利益239,700円である。誤案では原価480,000円・在庫120,000円を残し、営業利益210,000円に金融収益35,700円を加えて245,700円となる。正しい額より当期利益・在庫が各6,000円過大になる。",
+      "rubric": [
+        {
+          "criterion": "代価修正の販売済24,000円・在庫6,000円の配分",
+          "points": 1
+        },
+        {
+          "criterion": "売上原価456,000円・在庫114,000円",
+          "points": 1
+        },
+        {
+          "criterion": "仕入割引5,700円",
+          "points": 1
+        },
+        {
+          "criterion": "粗利244,000/営業234,000/経常239,700円",
+          "points": 1
+        },
+        {
+          "criterion": "誤案の利益245,700円又は正答との差6,000円を求める",
+          "points": 1
+        },
+        {
+          "criterion": "在庫と利益が各6,000円過大と説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-purchase-pricing-finance",
+      "objectives": [
+        3,
+        4
+      ],
+      "prompt": "決算で二つの誤りが見つかった。①適切に計上済みの買掛金500,000円を早期決済し、金融上の仕入割引10,000円を受け、現金490,000円を支払ったが、買掛金490,000／現金490,000だけを記録した。②商品の購入とは別の資金について、当期発生済みの契約利息6,000円を支払利息・未払利息へ計上する必要があるが、未記帳である。いずれも商品の原価修正や税効果等はない。二つの訂正仕訳を示し、当期経常利益、買掛金と未払利息の残高、負債合計、現金・商品原価への増減を説明してください。",
+      "options": [],
+      "answer": 0,
+      "points": 6,
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "①買掛金10,000／仕入割引10,000で、残っていた買掛金10,000円を消す。現金の支払いは正しく記録済みなので重ねない。②支払利息6,000／未払利息6,000を計上する。利益は10,000−6,000＝4,000円増える。買掛金は10,000円減少して対象残高0円、未払利息は6,000円増加するため、負債合計は4,000円減少。現金・商品原価の増減は各0円である。資産が変わらず負債が4,000円減り、利益による純資産増加4,000円と対応する。",
+      "explanation": "①買掛金10,000／仕入割引10,000で、残っていた買掛金10,000円を消す。現金の支払いは正しく記録済みなので重ねない。②支払利息6,000／未払利息6,000を計上する。利益は10,000−6,000＝4,000円増える。買掛金は10,000円減少して対象残高0円、未払利息は6,000円増加するため、負債合計は4,000円減少。現金・商品原価の増減は各0円である。資産が変わらず負債が4,000円減り、利益による純資産増加4,000円と対応する。",
+      "rubric": [
+        {
+          "criterion": "買掛金／仕入割引10,000円の訂正",
+          "points": 1
+        },
+        {
+          "criterion": "支払利息／未払利息6,000円の整理",
+          "points": 1
+        },
+        {
+          "criterion": "経常利益4,000円増加",
+          "points": 1
+        },
+        {
+          "criterion": "買掛金10,000円減り0/未払利息6,000円増を示す",
+          "points": 1
+        },
+        {
+          "criterion": "負債合計4,000円減少",
+          "points": 1
+        },
+        {
+          "criterion": "現金・原価の変化各0円と理由",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "questionCount": 12,
+  "totalPoints": 40,
+  "draftObjectiveDetails": [
+    {
+      "draftObjective": 1,
+      "canonicalIds": [
+        "zr2-boki-purchase-pricing-finance-o1"
+      ]
+    },
+    {
+      "draftObjective": 2,
+      "canonicalIds": [
+        "zr2-boki-purchase-pricing-finance-o2"
+      ]
+    },
+    {
+      "draftObjective": 3,
+      "canonicalIds": [
+        "zr2-boki-purchase-pricing-finance-o3"
+      ]
+    },
+    {
+      "draftObjective": 4,
+      "canonicalIds": [
+        "zr2-boki-purchase-pricing-finance-o1",
+        "zr2-boki-purchase-pricing-finance-o2",
+        "zr2-boki-purchase-pricing-finance-o3"
+      ]
+    }
+  ],
+  "continuationCoverage": [
+    {
+      "lessonId": "zr2-boki-inventory-cost-flow",
+      "status": "planned or draft; not mastered by this lesson",
+      "plannedObjectiveIds": [
+        "zr2-boki-inventory-cost-flow-o1",
+        "zr2-boki-inventory-cost-flow-o2",
+        "zr2-boki-inventory-cost-flow-o3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-revenue-variable",
+      "status": "planned or draft; not mastered by this lesson"
+    },
+    {
+      "lessonId": "zr2-boki-revenue-allocation",
+      "status": "planned or draft; not mastered by this lesson"
+    },
+    {
+      "lessonId": "zr2-boki-loans-derecognition",
+      "status": "planned or draft; not mastered by this lesson"
+    },
+    {
+      "lessonId": "zr2-boki-fixed-acquisition",
+      "status": "planned or draft; not mastered by this lesson"
+    }
+  ],
+  "scopeNotes": [
+    "購入代価/買掛金は適切に計上済み。各例の価格修正の対象・期間・金融分類が所与であり、通知日だけで帰属期を判断しない。",
+    "別建て利息の処理を指定した普通の取引のみ。長期債務を一律現在価値へ割り引く、金利を一律資産化するという主張ではない。",
+    "売手の取引価格・変動対価・金融要素は別の基準から契約を確認し、本講の買手勘定を反転して決めない。"
+  ],
+  "sourceUncertainties": [
+    "複雑な複数商品/サービス契約の割戻配分、融資への債務変更、資産化する金利、重要な金融要素の認識測定全範囲は後続実在IDの追加教授が必要。",
+    "基準日法令の表示規定を全企業の内部帳簿義務と一般化しない。FSAガイドラインの可変URLは表紙2026年3月の読解であり、将来の取得時は版を照合する。"
+  ],
+  "authorChecks": {
+    "status": "author source and14-case arithmetic/full question review completed; final language recheck pending; independent review pending",
+    "sourceNotes": "work/zeirishi-upgrade/inventory-source-notes.md",
+    "workedExampleCount": 5,
+    "questionCount": 12,
+    "definitionCount": 12,
+    "countBasis": "独立した場面/設問セット。例1の二条件比較を二つの独立例題とは数えない。定義は問題数に加えない。",
+    "calculationCaseCount": 14,
+    "instructionalCharsExcludingHeadingsTablesWhitespaceSources": 4933,
+    "calculationRecord": "work/zeirishi-upgrade/checks/purchase-pricing-finance-author-calculations.json",
+    "japaneseTools": [
+      "lint --reading-load",
+      "outline",
+      "terms",
+      "calques"
+    ],
+    "completionNote": "work/zeirishi-upgrade/purchase-pricing-finance-author-completion.md"
+  }
+}

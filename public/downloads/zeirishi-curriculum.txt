@@ -636,6 +636,118 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-4-review/
   [zeirishi-hojin-mock] 法人税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-hojin-mock/
+
+  詳しく学ぶ単元 [zr2-hojin-unit-scope] 納税主体・事業年度・税務調整
+    法人の区分と課税範囲、事業年度・青色承認、四調整、三表の連動、持株関係へ進む5講。20の独自例題、52の講末問題、25問の独立累積演習と35問の用語テストで確認します。
+    単元確認日：2026-10-27／本文・例題・理解度確認の合計目安540分（独立テストと再復習は別）
+    URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-hojin-unit-scope/
+    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
+    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
+    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
+    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
+    1. [zr2-hojin-entity-scope] 法人の区分・収益事業から課税範囲を決める／100分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr-hojin-adjustment
+      実演：[zr2-hojin-entity-scope-e1] 例題1：同じ海外取引でも、法人の区分は違う／[zr2-hojin-entity-scope-e2] 例題2：理事の境界と、課税対象に入る収支／[zr2-hojin-entity-scope-e3] 例題3：公益目的への使途と、公益目的事業の認定／[zr2-hojin-entity-scope-e4] 例題4：団体の会費と、継続する受託業務
+      理解度チェック [zr2-hojin-entity-scope-check] 10問／版：zeirishi-2026-v2-entity-scope-1
+      次：zr2-hojin-period-filing
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-entity-scope/
+      [zr2-hojin-entity-scope-o01] 普通/公益/人格なき社団/外国を区分する
+        独立練習：zr2-hojin-entity-scope-q1、zr2-hojin-entity-scope-q2、zr2-hojin-entity-scope-q3、zr2-hojin-entity-scope-q4、zr2-hojin-entity-scope-q9、zr2-hojin-entity-scope-q10
+      [zr2-hojin-entity-scope-o02] 収益事業と課税範囲を判定する
+        独立練習：zr2-hojin-entity-scope-q3、zr2-hojin-entity-scope-q4、zr2-hojin-entity-scope-q5、zr2-hojin-entity-scope-q6、zr2-hojin-entity-scope-q7、zr2-hojin-entity-scope-q8、zr2-hojin-entity-scope-q9、zr2-hojin-entity-scope-q10
+      出典 [corporate-law] e-Gov：法人税法：2〜8条、該当別表。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+      出典 [corporate-decree] 法人税法施行令・4月3日指定API取得版：3条の該当要件、5条1項の34業種の範囲と2項。個別除外の全ては本講の検証範囲とせず、後続講へ割り当てる。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094
+      出典 [corporate-rules] 法人税法施行規則・4月3日指定API取得版：2の2第1項の特殊関係理事。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018
+      出典 [corporate-foreign-scope] e-Gov：法人税法：138条1項、141条、4条4項、4の3条を凍結本文で確認。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+    2. [zr2-hojin-period-filing] 事業年度・納税地と青色承認の期限を確定する／100分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-hojin-entity-scope
+      実演：[zr2-hojin-period-filing-e1] 例題1：長い初年度と、期間の定めがない団体／[zr2-hojin-period-filing-e2] 例題2：解散・残余財産・合併の時系列／[zr2-hojin-period-filing-e3] 例題3：初年度が長い会社の申請期限／[zr2-hojin-period-filing-e4] 例題4：短い初年度に申請しなかった場合
+      理解度チェック [zr2-hojin-period-filing-check] 10問／版：zeirishi-2026-v2-period-filing-1
+      次：zr2-hojin-income-adjustments
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-period-filing/
+      [zr2-hojin-period-filing-o01] 設立/解散/再編のみなし事業年度を求める
+        独立練習：zr2-hojin-period-filing-q1、zr2-hojin-period-filing-q2、zr2-hojin-period-filing-q3、zr2-hojin-period-filing-q4、zr2-hojin-period-filing-q5
+      [zr2-hojin-period-filing-o02] 届出/青色承認/帳簿条件を判定する
+        独立練習：zr2-hojin-period-filing-q6、zr2-hojin-period-filing-q7、zr2-hojin-period-filing-q8、zr2-hojin-period-filing-q9、zr2-hojin-period-filing-q10
+      出典 [corporate-period-blue] e-Gov：法人税法：13条全項、14条1項各号と通算特則、16〜20条、121〜128条、148条を凍結本文で確認。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+      出典 [corporate-book-preservation] e-Gov：法人税法施行規則：59条の通常の起算日・7年間保存。電子保存/欠損繰越の追加条件は後続へ。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018
+      出典 [general-deadlines] e-Gov：国税通則法：10条2項の休日等に係る期限の特例。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [corporate-startup-guide] 国税庁 No.5100：新設法人の届出書類：法人設立届と初年度青色承認申請の比較。現行ページの補助解説。凍結法令を優先／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5100.htm
+    3. [zr2-hojin-income-adjustments] 益金・損金と決算処理から申告調整を組み立てる／100分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-hojin-period-filing
+      実演：[zr2-hojin-income-adjustments-e1] 例題1：四つの調整と、税引後利益の出発点／[zr2-hojin-income-adjustments-e2] 例題2：出資、借入れ、贈与、配当を分ける／[zr2-hojin-income-adjustments-e3] 例題3：未払費用、未実施の修繕、翌期の役務／[zr2-hojin-income-adjustments-e4] 例題4：償却限度額の余りと、過年度の超過額
+      理解度チェック [zr2-hojin-income-adjustments-check] 10問／版：zeirishi-2026-v2-income-adjustments-1
+      次：zr2-hojin-schedule-four-five
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-income-adjustments/
+      [zr2-hojin-income-adjustments-o01] 会計処理と税法との差を四調整へ分類する
+        独立練習：zr2-hojin-income-adjustments-q1、zr2-hojin-income-adjustments-q2、zr2-hojin-income-adjustments-q3、zr2-hojin-income-adjustments-q4、zr2-hojin-income-adjustments-q5、zr2-hojin-income-adjustments-q6、zr2-hojin-income-adjustments-q7、zr2-hojin-income-adjustments-q9、zr2-hojin-income-adjustments-q10
+      [zr2-hojin-income-adjustments-o02] 損金経理と申告調整要件を分ける
+        独立練習：zr2-hojin-income-adjustments-q3、zr2-hojin-income-adjustments-q5、zr2-hojin-income-adjustments-q6、zr2-hojin-income-adjustments-q7、zr2-hojin-income-adjustments-q8、zr2-hojin-income-adjustments-q9
+      出典 [corporate-income-rules] e-Gov：法人税法：2条25号、22条全項、22の2全項、26条1項、31条1/4項、38条1/2項を凍結本文で確認。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+      出典 [corporate-schedule4-directions] 国税庁：別表四の記載要領（2025様式）：別表四の当期利益、加算、減算の記載。2025年4月1日以後終了事業年度等分の公表書式/記載要領。対象期間を限定／確認2026-10-27
+        https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/04-ki.pdf
+    4. [zr2-hojin-schedule-four-five] 別表四・五（一）・五（二）を残高まで照合する／120分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-hojin-income-adjustments
+      実演：[zr2-hojin-schedule-four-five-e1] 例題1：二つの年度の償却と、残高の一致／[zr2-hojin-schedule-four-five-e2] 例題2：所得は増えても、五（一）へ残す額は異なる／[zr2-hojin-schedule-four-five-e3] 例題3：前期税金の決済、中間、当期決算を連動する／[zr2-hojin-schedule-four-five-e4] 例題4：中間納付が年間税額を上回った場合
+      理解度チェック [zr2-hojin-schedule-four-five-check] 10問／版：zeirishi-2026-v2-schedule-four-five-1
+      次：zr2-hojin-relationships
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-schedule-four-five/
+      [zr2-hojin-schedule-four-five-o01] 留保/流出と利益積立残高を計算する
+        独立練習：zr2-hojin-schedule-four-five-q1、zr2-hojin-schedule-four-five-q2、zr2-hojin-schedule-four-five-q3、zr2-hojin-schedule-four-five-q5、zr2-hojin-schedule-four-five-q7、zr2-hojin-schedule-four-five-q8、zr2-hojin-schedule-four-five-q9、zr2-hojin-schedule-four-five-q10
+      [zr2-hojin-schedule-four-five-o02] 税金費用/納税充当/中間納付を照合する
+        独立練習：zr2-hojin-schedule-four-five-q3、zr2-hojin-schedule-four-five-q4、zr2-hojin-schedule-four-five-q5、zr2-hojin-schedule-four-five-q6、zr2-hojin-schedule-four-five-q7、zr2-hojin-schedule-four-five-q8、zr2-hojin-schedule-four-five-q10
+      出典 [corporate-depreciation-tax] e-Gov：法人税法：31条1/4項、26/38条。損金経理・償却超過と法人税等の原則。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+      出典 [corporate-form4-notes] 国税庁：別表四の説明（2025様式）：pp1〜3:納付方法/留保/社外流出・仮払と同額減算。全文取得済み。特殊な後半の税効果/通算等を本講の完成範囲とはしない。2025年4月1日以後終了事業年度等分／確認2026-10-27
+        https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-04.pdf
+      出典 [corporate-form51-notes] 国税庁：別表五（一）の説明（2025様式）：全4頁:増減・繰越損益金/充当金/未納法人税/未収還付・仮払の△記載・検算式。2025年4月1日以後終了事業年度等分／確認2026-10-27
+        https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05.pdf
+      出典 [corporate-form52-notes] 国税庁：別表五（二）の説明（2025様式）：全4頁:中間/確定・納付三方法・還付外書・事業税と充当金。2025年4月1日以後終了事業年度等分／確認2026-10-27
+        https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05_2.pdf
+      出典 [corporate-form51] 国税庁：別表五（一）（2025様式）：Ⅰの期首/減/増/翌期首、Ⅱとの区別。2025年4月1日以後終了事業年度等分／確認2026-10-27
+        https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/05(01).pdf
+    5. [zr2-hojin-relationships] 同族・支配・完全支配と中小判定を使い分ける／120分の目安
+      学習段階：応用（独自区分）
+      前提：zr2-hojin-schedule-four-five
+      実演：[zr2-hojin-relationships-e1] 例題1：自己株式と親族を整理する／[zr2-hojin-relationships-e2] 例題2：60％の連鎖と、経済持分36％／[zr2-hojin-relationships-e3] 例題3：100％の連鎖と、5％未満の境界／[zr2-hojin-relationships-e4] 例題4：50％保有と、平均所得15億円の境界
+      理解度チェック [zr2-hojin-relationships-check] 12問／版：zeirishi-2026-v2-relationships-1
+      次：zr2-hojin-scope-review
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-relationships/
+      [zr2-hojin-relationships-o01] 株主親族/議決権関係を判定する
+        独立練習：zr2-hojin-relationships-q1、zr2-hojin-relationships-q2、zr2-hojin-relationships-q3、zr2-hojin-relationships-q4、zr2-hojin-relationships-q5、zr2-hojin-relationships-q6
+      [zr2-hojin-relationships-o02] 制度別の中小法人等の除外を説明する
+        独立練習：zr2-hojin-relationships-q7、zr2-hojin-relationships-q8、zr2-hojin-relationships-q9、zr2-hojin-relationships-q10、zr2-hojin-relationships-q11、zr2-hojin-relationships-q12
+      出典 [corporate-relationship-law] e-Gov：法人税法：2条10号/12の7の5号/12の7の6号、66条2/5項、25の2条の法人による完全支配という要件。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+      出典 [corporate-relationship-decree] e-Gov：法人税法施行令：4条の特殊関係/議決権等、4の2条全項の直接/間接/持株組合等5％未満除外。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094
+      出典 [special-sme-law] e-Gov：租税特別措置法：42の3の2全条、42の4第19項7/8号。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+      出典 [special-sme-decree] e-Gov：租税特別措置法施行令：27条の4第17項。18・19項の追加調整は具体例から除外し、後続の制度別総合講で扱う。2026-04-03現在施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/332CO0000000043_20260401_508CO0000000098
+      出典 [corporate-sme-guidance] 国税庁：中小法人等の判定・軽減税率の説明（2025様式）：全3頁:中小法人、2025年4月以後開始17％、適用除外事業者。2025年4月1日以後終了事業年度等分の公表資料／確認2026-10-27
+        https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-01.pdf
+      出典 [corporate-sme-measures-guidance] 国税庁：中小企業者等の判定の説明（2025様式）：中小企業者の大規模法人/持分判定と制度別条件。2025年4月1日以後終了事業年度等分の公表資料／確認2026-10-27
+        https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-66.pdf
+    [zr2-hojin-scope-review] 法人税の出発点：主体・期間・決算・持株関係の累積演習／25問／版：zeirishi-2026-v2-hojin-scope-review-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-hojin-scope-review/
+    [zr2-hojin-scope-glossary] 法人税の出発点：場面で区別する35の用語／35問／版：zeirishi-2026-v2-hojin-scope-glossary-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-hojin-scope-glossary/
+    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
+
   2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
 
 科目：相続税法（税法）

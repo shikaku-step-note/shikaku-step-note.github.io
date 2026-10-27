@@ -59,8 +59,8 @@
   "sourceUncertainties": [
     "取得・著者読了・計算確認を独立レビュー完了とはしない。全独立審査はpending。",
     "初期段階の一般役務は21の5注3の条件を明示した事例で教授。工事の6か月・20％等の厳密な対象・例外はzr2-hojin-contract-progressで凍結令129条に基づいて教授する。",
-    "進捗からの除外方法は各事例で合理性と採用を明示。除外した支出の損金可否、未成工事原価の具体的配賦は個別の原価・工事講へ割り当てる。",
-    "原価回収の例は収益を計算するもので、回収見込みのない原価や初期段階の原価を自動的に全額費用又は資産とする主張をしない。具体的な費用処理は継続先の原価・工事講で教授する。"
+    "進捗からの除外方法は合理性と採用を明示。具体的な原価対応はzr2-hojin-cost-matching、一般役務初期段階の既履行直接原価の未確認点はzr2-hojin-initial-service-costs、工事特例はzr2-hojin-contract-progressへ割り当てる。",
+    "原価回収例は収益額の教授。費用との具体比較はzr2-hojin-cost-matching。一般初期役務の既履行直接原価を一律に費用又は資産とする直接根拠は未確認で、zr2-hojin-initial-service-costsはsource-research-pending。"
   ],
   "glossary": [
     {
@@ -534,8 +534,9 @@
       "topic": "原価の費用帰属・未成工事等、費用と進捗の具体的な申告差異",
       "plannedIds": [
         "zr2-hojin-cost-matching",
-        "zr2-hojin-accrual-expenses",
-        "zr2-hojin-contract-progress"
+        "zr2-hojin-initial-service-costs",
+        "zr2-hojin-contract-progress",
+        "zr2-hojin-accrual-expenses"
       ]
     },
     {
@@ -546,7 +547,7 @@
       ]
     },
     {
-      "topic": "不動産仲介・運送等の個別時期、ライセンス等の特殊な権利",
+      "topic": "不動産仲介・技術役務・運送の個別時期、ライセンス等の特殊な権利",
       "plannedIds": [
         "zr2-hojin-service-special-timing",
         "zr2-hojin-revenue-agent-financing"

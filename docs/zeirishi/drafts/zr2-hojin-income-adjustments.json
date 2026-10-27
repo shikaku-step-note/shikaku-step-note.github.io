@@ -144,7 +144,7 @@
       "objectives": [
         1
       ],
-      "explanation": "費用を減らした分を戻す損金不算入と、収益に不足する分を足す益金算入です。同じ加算でも帳簿の差の位置を区別し、要求された明細を示します。",
+      "explanation": "費用計上で利益を減らした分を戻す損金不算入と、収益に不足する分を足す益金算入です。同じ加算でも帳簿の差の位置を区別し、要求された明細を示します。",
       "id": "zr2-hojin-income-adjustments-q1",
       "field": "hojin",
       "lesson": "zr2-hojin-income-adjustments"

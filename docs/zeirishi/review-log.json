@@ -5415,6 +5415,602 @@
       "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
       "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-hojin-entity-scope": {
+      "contentHash": "465c0db242f0e09ab2db1b7bfed232d33d1b6363abde63c2821dc04516a280c7",
+      "lessonDataHash": "afc6c2a482fa722c72828863a14e3e2cabed1419e07aef2fb7a9c51bb0243b6f",
+      "objectives": {
+        "zr2-hojin-entity-scope-o01": {
+          "explanation": [
+            "内国・外国の区分と、法人の種類を分ける",
+            "一般社団法人は、非営利型の要件まで読む",
+            "法人格のない団体でも、課税主体になることがある"
+          ],
+          "workedExamples": [
+            "zr2-hojin-entity-scope-e1",
+            "zr2-hojin-entity-scope-e2",
+            "zr2-hojin-entity-scope-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-entity-scope-q1",
+            "zr2-hojin-entity-scope-q2",
+            "zr2-hojin-entity-scope-q3",
+            "zr2-hojin-entity-scope-q4",
+            "zr2-hojin-entity-scope-q9",
+            "zr2-hojin-entity-scope-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q1",
+            "zr2-hojin-scope-review-q5",
+            "zr2-hojin-scope-review-q24"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-law",
+                "locator": "2〜8条、該当別表"
+              },
+              {
+                "id": "corporate-decree",
+                "locator": "3条の該当要件、5条1項の34業種の範囲と2項。個別除外の全ては本講の検証範囲とせず、後続講へ割り当てる"
+              },
+              {
+                "id": "corporate-rules",
+                "locator": "2の2第1項の特殊関係理事"
+              },
+              {
+                "id": "corporate-foreign-scope",
+                "locator": "138条1項、141条、4条4項、4の3条を凍結本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        },
+        "zr2-hojin-entity-scope-o02": {
+          "explanation": [
+            "収益事業は、列挙・継続・事業場・除外を調べる",
+            "課税範囲を決めた後に残る確認"
+          ],
+          "workedExamples": [
+            "zr2-hojin-entity-scope-e1",
+            "zr2-hojin-entity-scope-e2",
+            "zr2-hojin-entity-scope-e3",
+            "zr2-hojin-entity-scope-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-entity-scope-q3",
+            "zr2-hojin-entity-scope-q4",
+            "zr2-hojin-entity-scope-q5",
+            "zr2-hojin-entity-scope-q6",
+            "zr2-hojin-entity-scope-q7",
+            "zr2-hojin-entity-scope-q8",
+            "zr2-hojin-entity-scope-q9",
+            "zr2-hojin-entity-scope-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q2",
+            "zr2-hojin-scope-review-q5",
+            "zr2-hojin-scope-review-q24"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-law",
+                "locator": "2〜8条、該当別表"
+              },
+              {
+                "id": "corporate-decree",
+                "locator": "3条の該当要件、5条1項の34業種の範囲と2項。個別除外の全ては本講の検証範囲とせず、後続講へ割り当てる"
+              },
+              {
+                "id": "corporate-rules",
+                "locator": "2の2第1項の特殊関係理事"
+              },
+              {
+                "id": "corporate-foreign-scope",
+                "locator": "138条1項、141条、4条4項、4の3条を凍結本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/corporate-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/corporate-foundations-browser.md"
+    },
+    "zr2-hojin-period-filing": {
+      "contentHash": "7742b617c7f658e4fb76dbf9ff28c0a32383b5d6f00c497952c75f23dac4160c",
+      "lessonDataHash": "88f6d9aeb7a0f1e5704fe28fe6024c7f78dd02e01dba59eb8225be606ffd5d45",
+      "objectives": {
+        "zr2-hojin-period-filing-o01": {
+          "explanation": [
+            "定款の会計期間は、税務では1年ごとに区切る",
+            "解散の日と、合併の日の前日を使い分ける"
+          ],
+          "workedExamples": [
+            "zr2-hojin-period-filing-e1",
+            "zr2-hojin-period-filing-e2"
+          ],
+          "independentPractice": [
+            "zr2-hojin-period-filing-q1",
+            "zr2-hojin-period-filing-q2",
+            "zr2-hojin-period-filing-q3",
+            "zr2-hojin-period-filing-q4",
+            "zr2-hojin-period-filing-q5"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q3",
+            "zr2-hojin-scope-review-q25"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-period-blue",
+                "locator": "13条全項、14条1項各号と通算特則、16〜20条、121〜128条、148条を凍結本文で確認"
+              },
+              {
+                "id": "corporate-book-preservation",
+                "locator": "59条の通常の起算日・7年間保存。電子保存/欠損繰越の追加条件は後続へ"
+              },
+              {
+                "id": "general-deadlines",
+                "locator": "10条2項の休日等に係る期限の特例"
+              },
+              {
+                "id": "corporate-startup-guide",
+                "locator": "法人設立届と初年度青色承認申請の比較"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        },
+        "zr2-hojin-period-filing-o02": {
+          "explanation": [
+            "納税地と、設立等の届出を確認する",
+            "青色申告は、適用を始めたい年度から逆算する",
+            "承認申請の提出と、帳簿を備える義務は両方必要"
+          ],
+          "workedExamples": [
+            "zr2-hojin-period-filing-e3",
+            "zr2-hojin-period-filing-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-period-filing-q6",
+            "zr2-hojin-period-filing-q7",
+            "zr2-hojin-period-filing-q8",
+            "zr2-hojin-period-filing-q9",
+            "zr2-hojin-period-filing-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q4",
+            "zr2-hojin-scope-review-q25"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-period-blue",
+                "locator": "13条全項、14条1項各号と通算特則、16〜20条、121〜128条、148条を凍結本文で確認"
+              },
+              {
+                "id": "corporate-book-preservation",
+                "locator": "59条の通常の起算日・7年間保存。電子保存/欠損繰越の追加条件は後続へ"
+              },
+              {
+                "id": "general-deadlines",
+                "locator": "10条2項の休日等に係る期限の特例"
+              },
+              {
+                "id": "corporate-startup-guide",
+                "locator": "法人設立届と初年度青色承認申請の比較"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/corporate-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/corporate-foundations-browser.md"
+    },
+    "zr2-hojin-income-adjustments": {
+      "contentHash": "bb0a3e790150754e7fc1f663d6231359d4b2fb02fa274ef904d6a44e7ebc7314",
+      "lessonDataHash": "22917c46ed15209fadac8ed421fc8da03e07ec40ee38a3f142367b676e210c5a",
+      "objectives": {
+        "zr2-hojin-income-adjustments-o01": {
+          "explanation": [
+            "四つの調整は、当期利益への影響で整理する",
+            "益金は入金額、損金は出金額とは一致しない",
+            "資本等取引と、借入取引を混同しない"
+          ],
+          "workedExamples": [
+            "zr2-hojin-income-adjustments-e1",
+            "zr2-hojin-income-adjustments-e2",
+            "zr2-hojin-income-adjustments-e3",
+            "zr2-hojin-income-adjustments-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-income-adjustments-q1",
+            "zr2-hojin-income-adjustments-q2",
+            "zr2-hojin-income-adjustments-q3",
+            "zr2-hojin-income-adjustments-q4",
+            "zr2-hojin-income-adjustments-q5",
+            "zr2-hojin-income-adjustments-q6",
+            "zr2-hojin-income-adjustments-q7",
+            "zr2-hojin-income-adjustments-q9",
+            "zr2-hojin-income-adjustments-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q6",
+            "zr2-hojin-scope-review-q8",
+            "zr2-hojin-scope-review-q9",
+            "zr2-hojin-scope-review-q10",
+            "zr2-hojin-scope-review-q23"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-income-rules",
+                "locator": "2条25号、22条全項、22の2全項、26条1項、31条1/4項、38条1/2項を凍結本文で確認"
+              },
+              {
+                "id": "corporate-schedule4-directions",
+                "locator": "別表四の当期利益、加算、減算の記載"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        },
+        "zr2-hojin-income-adjustments-o02": {
+          "explanation": [
+            "当期の費用か、債務が確定しているかを調べる",
+            "損金経理が必要な項目は、申告だけで増額できない"
+          ],
+          "workedExamples": [
+            "zr2-hojin-income-adjustments-e2",
+            "zr2-hojin-income-adjustments-e3",
+            "zr2-hojin-income-adjustments-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-income-adjustments-q3",
+            "zr2-hojin-income-adjustments-q5",
+            "zr2-hojin-income-adjustments-q6",
+            "zr2-hojin-income-adjustments-q7",
+            "zr2-hojin-income-adjustments-q8",
+            "zr2-hojin-income-adjustments-q9"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q8",
+            "zr2-hojin-scope-review-q9",
+            "zr2-hojin-scope-review-q23"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-income-rules",
+                "locator": "2条25号、22条全項、22の2全項、26条1項、31条1/4項、38条1/2項を凍結本文で確認"
+              },
+              {
+                "id": "corporate-schedule4-directions",
+                "locator": "別表四の当期利益、加算、減算の記載"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/corporate-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/corporate-foundations-browser.md"
+    },
+    "zr2-hojin-schedule-four-five": {
+      "contentHash": "1e246ae31130819aa0590f6a94ad445760a5b36995651d3570cd37be889b7ce8",
+      "lessonDataHash": "2135d0c688e12d73d17e73a1b9f141ef6963ea43d5a842b3b0ee5042eae4522b",
+      "objectives": {
+        "zr2-hojin-schedule-four-five-o01": {
+          "explanation": [
+            "三つの表で、質問されていることが違う",
+            "償却超過額は、資産ごとに前期から引き継ぐ",
+            "社外流出の加算を、償却超過額と同じ残高にしない"
+          ],
+          "workedExamples": [
+            "zr2-hojin-schedule-four-five-e1",
+            "zr2-hojin-schedule-four-five-e2",
+            "zr2-hojin-schedule-four-five-e3",
+            "zr2-hojin-schedule-four-five-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-schedule-four-five-q1",
+            "zr2-hojin-schedule-four-five-q2",
+            "zr2-hojin-schedule-four-five-q3",
+            "zr2-hojin-schedule-four-five-q5",
+            "zr2-hojin-schedule-four-five-q7",
+            "zr2-hojin-schedule-four-five-q8",
+            "zr2-hojin-schedule-four-five-q9",
+            "zr2-hojin-schedule-four-five-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q7",
+            "zr2-hojin-scope-review-q11",
+            "zr2-hojin-scope-review-q14",
+            "zr2-hojin-scope-review-q15",
+            "zr2-hojin-scope-review-q16"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-depreciation-tax",
+                "locator": "31条1/4項、26/38条。損金経理・償却超過と法人税等の原則"
+              },
+              {
+                "id": "corporate-form4-notes",
+                "locator": "pp1〜3:納付方法/留保/社外流出・仮払と同額減算。全文取得済み。特殊な後半の税効果/通算等を本講の完成範囲とはしない"
+              },
+              {
+                "id": "corporate-form51-notes",
+                "locator": "全4頁:増減・繰越損益金/充当金/未納法人税/未収還付・仮払の△記載・検算式"
+              },
+              {
+                "id": "corporate-form52-notes",
+                "locator": "全4頁:中間/確定・納付三方法・還付外書・事業税と充当金"
+              },
+              {
+                "id": "corporate-form51",
+                "locator": "Ⅰの期首/減/増/翌期首、Ⅱとの区別"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        },
+        "zr2-hojin-schedule-four-five-o02": {
+          "explanation": [
+            "納税充当金と、税法上の未納額を分ける",
+            "仮払のまま残した中間税額と、還付を照合する"
+          ],
+          "workedExamples": [
+            "zr2-hojin-schedule-four-five-e3",
+            "zr2-hojin-schedule-four-five-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-schedule-four-five-q3",
+            "zr2-hojin-schedule-four-five-q4",
+            "zr2-hojin-schedule-four-five-q5",
+            "zr2-hojin-schedule-four-five-q6",
+            "zr2-hojin-schedule-four-five-q7",
+            "zr2-hojin-schedule-four-five-q8",
+            "zr2-hojin-schedule-four-five-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q12",
+            "zr2-hojin-scope-review-q13",
+            "zr2-hojin-scope-review-q14",
+            "zr2-hojin-scope-review-q15",
+            "zr2-hojin-scope-review-q16"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-depreciation-tax",
+                "locator": "31条1/4項、26/38条。損金経理・償却超過と法人税等の原則"
+              },
+              {
+                "id": "corporate-form4-notes",
+                "locator": "pp1〜3:納付方法/留保/社外流出・仮払と同額減算。全文取得済み。特殊な後半の税効果/通算等を本講の完成範囲とはしない"
+              },
+              {
+                "id": "corporate-form51-notes",
+                "locator": "全4頁:増減・繰越損益金/充当金/未納法人税/未収還付・仮払の△記載・検算式"
+              },
+              {
+                "id": "corporate-form52-notes",
+                "locator": "全4頁:中間/確定・納付三方法・還付外書・事業税と充当金"
+              },
+              {
+                "id": "corporate-form51",
+                "locator": "Ⅰの期首/減/増/翌期首、Ⅱとの区別"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/corporate-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/corporate-foundations-browser.md"
+    },
+    "zr2-hojin-relationships": {
+      "contentHash": "cd4e48d026b3bfccb0903badf86aee5611ffd5d6463f0e097d9df2b203ae45a3",
+      "lessonDataHash": "564aa1f59514b19ac302b3fce8afbd95f7b7de2c398b786fb1b7e46ff58b5efb",
+      "objectives": {
+        "zr2-hojin-relationships-o01": {
+          "explanation": [
+            "同族会社では、三つ以下の株主グループを調べる",
+            "支配関係は、一の者による50％超からたどる",
+            "完全支配関係は、全部保有と所定の例外を確認する"
+          ],
+          "workedExamples": [
+            "zr2-hojin-relationships-e1",
+            "zr2-hojin-relationships-e2",
+            "zr2-hojin-relationships-e3"
+          ],
+          "independentPractice": [
+            "zr2-hojin-relationships-q1",
+            "zr2-hojin-relationships-q2",
+            "zr2-hojin-relationships-q3",
+            "zr2-hojin-relationships-q4",
+            "zr2-hojin-relationships-q5",
+            "zr2-hojin-relationships-q6"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q17",
+            "zr2-hojin-scope-review-q20",
+            "zr2-hojin-scope-review-q21"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-relationship-law",
+                "locator": "2条10号/12の7の5号/12の7の6号、66条2/5項、25の2条の法人による完全支配という要件"
+              },
+              {
+                "id": "corporate-relationship-decree",
+                "locator": "4条の特殊関係/議決権等、4の2条全項の直接/間接/持株組合等5％未満除外"
+              },
+              {
+                "id": "special-sme-law",
+                "locator": "42の3の2全条、42の4第19項7/8号"
+              },
+              {
+                "id": "special-sme-decree",
+                "locator": "27条の4第17項。18・19項の追加調整は具体例から除外し、後続の制度別総合講で扱う"
+              },
+              {
+                "id": "corporate-sme-guidance",
+                "locator": "全3頁:中小法人、2025年4月以後開始17％、適用除外事業者"
+              },
+              {
+                "id": "corporate-sme-measures-guidance",
+                "locator": "中小企業者の大規模法人/持分判定と制度別条件"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        },
+        "zr2-hojin-relationships-o02": {
+          "explanation": [
+            "中小法人と、中小企業者を別の欄にする",
+            "関係が決まってから、使う規定へ進む"
+          ],
+          "workedExamples": [
+            "zr2-hojin-relationships-e4"
+          ],
+          "independentPractice": [
+            "zr2-hojin-relationships-q7",
+            "zr2-hojin-relationships-q8",
+            "zr2-hojin-relationships-q9",
+            "zr2-hojin-relationships-q10",
+            "zr2-hojin-relationships-q11",
+            "zr2-hojin-relationships-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-hojin-scope-review-q18",
+            "zr2-hojin-scope-review-q19",
+            "zr2-hojin-scope-review-q22"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; full bounded review and closure retained",
+            "sources": [
+              {
+                "id": "corporate-relationship-law",
+                "locator": "2条10号/12の7の5号/12の7の6号、66条2/5項、25の2条の法人による完全支配という要件"
+              },
+              {
+                "id": "corporate-relationship-decree",
+                "locator": "4条の特殊関係/議決権等、4の2条全項の直接/間接/持株組合等5％未満除外"
+              },
+              {
+                "id": "special-sme-law",
+                "locator": "42の3の2全条、42の4第19項7/8号"
+              },
+              {
+                "id": "special-sme-decree",
+                "locator": "27条の4第17項。18・19項の追加調整は具体例から除外し、後続の制度別総合講で扱う"
+              },
+              {
+                "id": "corporate-sme-guidance",
+                "locator": "全3頁:中小法人、2025年4月以後開始17％、適用除外事業者"
+              },
+              {
+                "id": "corporate-sme-measures-guidance",
+                "locator": "中小企業者の大規模法人/持分判定と制度別条件"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author, independent full-text reviewer, integration review",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・年度・用語・設問と採点の対応。income-adjustments-q1の曖昧な表現を修正し独立再確認。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/corporate-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/corporate-foundations-browser.md"
     }
   },
   "assessments": {
@@ -5489,6 +6085,24 @@
       "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "independence": "講末77問を抽出しない26の新事例と、別の12用語事例。用語評価は非用語の累積証拠へ加算しない。",
       "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-hojin-scope-review": {
+      "status": "reviewed",
+      "date": "2026-10-27",
+      "assessmentDataHash": "d2297bb08c3defbad206eab0664c6de086a9e898dd32f47a5781fae1d92cc24f",
+      "reviewRecord": "docs/zeirishi/reviews/corporate-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "independence": "講末52問から抽出しない25の独立課題。35の用語問題は応用評価の証拠へ加算しない。",
+      "browserReviewRecord": "docs/zeirishi/reviews/corporate-foundations-browser.md"
+    },
+    "zr2-hojin-scope-glossary": {
+      "status": "reviewed",
+      "date": "2026-10-27",
+      "assessmentDataHash": "2273c073bb5cc31d9e50c34bc7ffb529e631af930a300cf088397bb533a1c606",
+      "reviewRecord": "docs/zeirishi/reviews/corporate-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "independence": "講末52問から抽出しない25の独立課題。35の用語問題は応用評価の証拠へ加算しない。",
+      "browserReviewRecord": "docs/zeirishi/reviews/corporate-foundations-browser.md"
     }
   },
   "sourceChecks": {}

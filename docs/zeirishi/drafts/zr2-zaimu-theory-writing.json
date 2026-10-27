@@ -1,0 +1,496 @@
+{
+  "id": "zr2-zaimu-theory-writing",
+  "subject": "zaimu",
+  "title": "理由と計算をつなぐ理論答案の作り方",
+  "stage": "標準",
+  "moduleId": "zr2-zaimu-unit-framework",
+  "minutes": 150,
+  "prerequisites": [
+    "zr2-zaimu-estimate-disclosure"
+  ],
+  "introductoryAlternative": "zr-zaimu-concepts",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "設問の対象・要求動作・条件・出力を読み分け、要求の欠落を特定する",
+    "必要な規範と与件の事実を対応させ、分類・処理・理由を一つの答案へつなぐ",
+    "期間・比較方向・項目・単位を明らかにし、数値と因果関係を検算する",
+    "必要条件の不足と不充足、法令基準日と個別基準の適用時期を区別する",
+    "明示された学習用採点項目を実際の記述へ対応させ、誤答原因と再学習を選ぶ"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "points-02",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/02.pdf",
+      "location": "全2頁、第一問・第二問の出題技能と第三問の横断技能を実読。処理理由を問う実績の確認に限り、問題は転載しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "exam-papers",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+      "location": "注意事項と第一問・第二問の要求形式、第三問の留意事項を実読。2026年4月3日と120分を確認。将来の小問・配点・個別指示へ固定しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-policy-fixed-2020",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf",
+      "location": "4・17〜22項と関連する背景。合理的見積りの新情報更新、処理時期、誤謬の修正再表示を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "companies-law",
+      "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+      "location": "439条。総会承認に代わる内容報告の条件を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "company-calculation",
+      "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+      "location": "135条。特則の複数要件と監査役等の意見を照合",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "学習用の構成法・採点基準・11分の練習例は独自提案で、公式の非公表部分点や推奨時間ではない。",
+    "本講は基礎概念の理論答案。減損・税効果等の各論、個別・連結の本格総合問題まで履修したと扱わない。"
+  ],
+  "scopeContinuations": [
+    {
+      "lessonId": "zr2-zaimu-theory-case-comprehensive",
+      "notCompletedHere": "個別会計基準を横断する初見理論と条件変更"
+    },
+    {
+      "lessonId": "zr2-zaimu-individual-statements-comprehensive",
+      "notCompletedHere": "多資料による個別計算書類作成と理由説明"
+    },
+    {
+      "lessonId": "zr2-zaimu-consolidated-statements-comprehensive",
+      "notCompletedHere": "連結の多年度資料を統合する総合答案"
+    },
+    {
+      "lessonId": "zr2-zaimu-time-and-answer-check",
+      "notCompletedHere": "120分全体の時間管理と答案点検"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "要求動作",
+      "definition": "用語を挙げる、計算する、比較する、理由を説明する等、設問が求める答え方"
+    },
+    {
+      "term": "与件",
+      "definition": "問題が示した事実・数値・仮定。書かれていない条件を無断で補わない"
+    },
+    {
+      "term": "比較方向",
+      "definition": "どちらの処理・状態を基準に、何が増減するかという関係"
+    },
+    {
+      "term": "学習用採点項目",
+      "definition": "本サイトが独自に明示する、説明・計算の達成を振り返る基準。公式部分点ではない"
+    },
+    {
+      "term": "再学習",
+      "definition": "誤答原因に合わせて該当教材と練習へ戻り、模範を見ずに再度解くこと"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-zaimu-theory-writing-e1",
+      "section": "例題1：同じ資料から、別の問いに答える",
+      "objectives": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-e2",
+      "section": "例題2：新情報と過去の誤りを分ける",
+      "objectives": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-e3",
+      "section": "例題3：在庫差額の符号と二つの期間",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-e4",
+      "section": "例題4：不足する条件を勝手に補わない",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-e5",
+      "section": "例題5：結論だけがある答案を採点する",
+      "objectives": [
+        5
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-zaimu-theory-writing-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "「二つの相違点を挙げ、それぞれ理由を説明する」設問への対応として適切なのはどれですか。",
+      "options": [
+        "名称を二つだけ並べれば、理由も答えたことになる",
+        "一つの相違だけを長く説明する",
+        "相違点二つと各理由を対応させ、答案で各要求に答えているか点検する",
+        "関連する用語を可能な限り全て書けば、対象は問わない"
+      ],
+      "answer": 2,
+      "explanation": "要求の数と動作の双方を満たす必要があります。名称だけ、長さだけ、用語の多さだけでは理由や二項目の要求を満たしません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "会社Pの利益300万円には一時的売却益210万円が含まれ、会社Qの利益は160万円で同種の一時的要因はない。規模や資本、計画の情報はない。「継続的成果を比較する際の注意を二つ、それぞれ理由付きで」と問われた。Pの利益が140万円大きいとだけ答えた答案について、欠けた要求と、それを補う答案を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "金額差だけでは二つの注意と各理由がない。Pは一時的売却益が大きいため、利益総額だけで継続的な成果を比べにくい。また、規模・資本・計画等の情報がなく、一時的要因を除くP90・Q160という額だけで収益性や将来利益を断定できない。",
+      "rubric": [
+        {
+          "criterion": "二つの注意と理由が欠けていると示す",
+          "points": 1
+        },
+        {
+          "criterion": "一時的要因と継続的成果の関係を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "情報不足と断定できない対象を結び付ける",
+          "points": 2
+        }
+      ],
+      "explanation": "一時的要因を除く観察は、正式利益の修正や将来利益の確定ではありません。",
+      "objectives": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "理由説明の答案の点検として適切なものはどれですか。",
+      "options": [
+        "一般論が長いほど与件へ適用したことになる",
+        "規範の条件、対応する与件の事実、結論のつながりを確認する",
+        "結論だけが合えば理由を問われても他は不要",
+        "必ず全ての答案を同じ三文にする"
+      ],
+      "answer": 1,
+      "explanation": "必要な因果関係を確かめます。文数の固定や一般論の長さは、適用の説明の代わりにはなりません。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "合理的な旧見積りに基づく費用を、新たな回収情報で更新する問題に対し「当期に金額が違ったので、過去の誤謬である」と答えた。情報の時点を使って誤りを指摘し、旧見積りと誤謬を区別するために何を調べるか述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "結果が違っただけでは過去の誤謬ではない。当時入手可能だった資料を適切に使い合理的に見積もったか、その後初めて得た新情報による更新かを区別する。本例の前提なら見積りの変更として扱う。",
+      "rubric": [
+        {
+          "criterion": "結果の違いだけで誤謬としないと説明する",
+          "points": 1
+        },
+        {
+          "criterion": "当時の情報・合理性と後の新情報を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "本例を見積変更とする",
+          "points": 1
+        }
+      ],
+      "explanation": "後知恵を使って、当時は得られなかった情報を既知だったものとして扱いません。",
+      "objectives": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "設備900万円、残存価額ゼロ、当初9年の定額法で3年使用した。当時の見積りは合理的。第4年期首に新情報で残り4年へ変更し、他の評価損等はない。当期の償却費を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "150"
+      ],
+      "explanation": "旧年額100×3＝300万円を配分済みで残額600万円。600÷4＝150万円です。900を新しい残り年数で割らず、過去3年も遡りません。",
+      "objectives": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "前問の設備について「年額は150万円」とだけ書いた答案へ、計算過程と、過去を修正せず当期以降へ反映する理由を加えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "新しい情報による合理的な見積りの更新なので、見積りの変更として過去の費用は修正せず、当期以降へ反映する。旧年額900÷9＝100、3年累計300、変更時残額600、600÷4＝150万円と計算する。",
+      "rubric": [
+        {
+          "criterion": "新情報による見積変更と過去非修正・将来反映をつなぐ",
+          "points": 3
+        },
+        {
+          "criterion": "旧年額・累計・残額・新年額を対応させる",
+          "points": 2
+        }
+      ],
+      "explanation": "数値に分類と理由を付け足し、設問が求めた説明を実際に書きます。",
+      "objectives": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "理論計算の「20万円増える」という答案を点検する際に、優先して明らかにする内容はどれですか。",
+      "options": [
+        "文字数が多いかだけ",
+        "何と比べ、どの期間のどの項目が増えるか",
+        "選択肢の順序だけ",
+        "同じ数字を三回書いたか"
+      ],
+      "answer": 1,
+      "explanation": "比較方向・期間・項目と単位が必要です。費用と利益、期首累積差と当期差の取り違えを防ぎます。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "重要なX1期末在庫の過大計上40万円で、報告X1利益250万円、誤りを引き継いだX2整理前利益170万円となった。X2期末は正しく、他の誤りや税効果等はない。正しい各期利益・二期合計を求め、原価への影響と「合計が同じなので訂正不要」の誤りを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "X1は原価過小・利益過大なので250−40＝210万円。X2は期首在庫過大で原価過大・利益過小なので170＋40＝210万円。合計420万円は報告等の合計と同じだが、期間別情報が誤っており重要な誤謬の修正が必要である。",
+      "rubric": [
+        {
+          "criterion": "X1利益210と原価過小を示す",
+          "points": 2
+        },
+        {
+          "criterion": "X2利益210と原価過大を示す",
+          "points": 2
+        },
+        {
+          "criterion": "合計420と期間別の誤りが残る理由を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "金額だけでなく、原価と利益の逆方向、期末と翌期首のつながりを確認します。",
+      "objectives": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "前問で誤り訂正前のX2利益170万円から、担当者は40万円を引き130万円とした。正しいX2利益に比べた過小額を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "80"
+      ],
+      "explanation": "正しい利益は210万円で、210−130＝80万円過小です。元の40万円過小に加え、誤ってさらに40万円を引いたため差が倍になります。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "会計監査人設置会社の監査報告に無限定適正意見があるとだけ与えられ、「439条の特則の全要件を満たすので総会は報告だけ」とする答案がある。この情報だけで全要件充足を断定できるかを説明し、調べるべき別の所定条件を二つ以上挙げてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "この一事実だけでは全要件の充足を断定できない。規則135条の監査役等の報告に相当でないとする意見がないこと、所定のみなし監査ではないこと、取締役会等の条件を対象会社に応じて確認する。",
+      "rubric": [
+        {
+          "criterion": "一事実で全要件充足を断定しない",
+          "points": 1
+        },
+        {
+          "criterion": "別の所定条件を二つ以上挙げる",
+          "points": 2
+        }
+      ],
+      "explanation": "無限定適正意見を否定するのでなく、それだけでは足りないと説明する問題です。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "同じ会社について、監査役会の監査報告に会計監査人の方法又は結果を相当でないとする意見があることも明示された。「他の情報が不足するので、適用について何も判断できない」という答案を検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "必要条件の一つの不充足が明示されている。規則135条2号に関わる相当でないとの意見があるため、所与の条件では439条の特則を適用できるとはいえない。単なる情報不足と、不充足が分かる場合を区別する。",
+      "rubric": [
+        {
+          "criterion": "必要条件の不充足が明示されると示す",
+          "points": 2
+        },
+        {
+          "criterion": "対象特則を適用できるとしない結論へつなぐ",
+          "points": 2
+        }
+      ],
+      "explanation": "全条件を肯定するための情報がない場合と、必要条件を欠く事実がある場合では、できる判断が異なります。",
+      "objectives": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "指定された過去の試験年度の問題に対し、検索で見つけた後の改正資料を使おうとしている。適切な点検はどれですか。",
+      "options": [
+        "検索順位が一番なら適用できる",
+        "資料公表日が新しければ全て遡って適用する",
+        "問題の指示・法令基準日・基準の適用時期・早期適用・対象決算年度等を確認する",
+        "過去資料なら内容の確認は不要"
+      ],
+      "answer": 2,
+      "explanation": "法令の基準日と個別基準の適用条件を区別します。公表日の新しさだけでは問題への適用根拠になりません。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "学習用の採点基準を「分類と新情報の根拠2点、過去非修正と当期以降反映1点、残額と配分式1点、正しい年額1点」とする。答案は「年額150万円」だけで、額自体は正しい。得点と、加点しなかった要求を示してください。心の中では他も分かっていたという事情は採点しません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "明示された基準では正しい年額の1点。分類と新情報の根拠、過去を修正しない処理時期、変更時残額と配分式は書かれていないので、その4点は加えない。",
+      "rubric": [
+        {
+          "criterion": "得点1点と示す",
+          "points": 1
+        },
+        {
+          "criterion": "記述のない分類根拠・時期・式を区別して挙げる",
+          "points": 3
+        }
+      ],
+      "explanation": "公式採点を再現する問題ではなく、示した学習基準を自分の記述に対応させる練習です。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "見積変更の意味は説明できたが、答案で当期と翌期の要求のうち翌期を書き落とした。模範解答を読んだ後、すぐ満点の記録だけを付けようとしている。主な誤答原因と、理解を確かめる再学習・記録の方法を提案してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "主因は要求の読み落とし又は出力の欠落で、用語知識だけの不足とは限らない。対象期間と要求を整理して両期へ答え直し、別の数値や条件の問題を模範を見ずに解く。読了・模範を見た修正・独力の再試行を区別して記録する。",
+      "rubric": [
+        {
+          "criterion": "要求又は期間の欠落という原因を示す",
+          "points": 1
+        },
+        {
+          "criterion": "要求整理と両期への再回答を提案する",
+          "points": 2
+        },
+        {
+          "criterion": "模範なしの再試行と記録の区別を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "見た直後に再現できることだけで、初見の問題への対応を確認したとは扱いません。",
+      "objectives": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-theory-writing-q15",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-theory-writing",
+      "prompt": "担当者の答案は「重要な影響のリスクを注記したから、翌年度の損失は確定した。とにかく長く書けば理由も満たせる」である。リスクと確定を区別して訂正し、利用者へ説明すべき内容の例、理由答案の点検方法を述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "リスクの識別は損失額の確定や保証ではない。見積りの方法・主要仮定・変わり得る条件等、開示目的に役立つ企業固有情報を説明する。長さではなく、設問の要求に対して規範・事実・結論がつながり、条件を落としていないかを点検する。",
+      "rubric": [
+        {
+          "criterion": "リスクと確定・保証を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "説明すべき企業固有情報を挙げる",
+          "points": 2
+        },
+        {
+          "criterion": "長さでなく要求と因果関係・条件を点検すると示す",
+          "points": 2
+        }
+      ],
+      "explanation": "見積開示講を復習しつつ、正しい用語を使うだけでなく関係を正確に述べる練習です。",
+      "objectives": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  ]
+}

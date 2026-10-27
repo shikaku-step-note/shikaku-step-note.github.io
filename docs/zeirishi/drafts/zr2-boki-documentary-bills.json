@@ -1,0 +1,662 @@
+{
+  "id": "zr2-boki-documentary-bills",
+  "subject": "boki",
+  "title": "為替手形の三つの立場・D/PとD/A・外貨建荷為替",
+  "stage": "応用",
+  "moduleId": "zr2-boki-unit-cash",
+  "minutes": 120,
+  "durationStatus": "著者の暫定目安。受講者実測前",
+  "prerequisites": [
+    "zr2-boki-bills-receivable",
+    "zr2-boki-fx-transactions",
+    "zr2-boki-receivable-transfers"
+  ],
+  "objectives": [
+    "三つの立場・引受け・自己指図と自己宛を読み、元の掛債権債務と国内の基本仕訳を対応させる",
+    "D/P・D/Aの書類引渡条件、取立委託、銀行買取り、現金回収を区分する",
+    "一部取組の額面・手取預金・保証債務・譲渡損益と残る売掛金を計算する",
+    "取組部分と残存部分を分け、発生・買取り・期末・翌期回収の円帳簿と為替差損益をつなぐ"
+  ],
+  "lawAsOf": "2026-04-03",
+  "accountingStandardsBasis": "金融商品実務指針2025-03-11版、外貨建取引等会計処理基準1999-10-22最終改正。法令日・掲載画面更新日・基準適用日を区分。",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "ac2-bills-law",
+      "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+      "location": "1・3・9・12・13・21・25・28・38条、基準日保存版の追加原文読解済み。43・47〜49条の遡求等も参照。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-bills134",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/134-03-kouhyou.pdf",
+      "location": "第3問PDF3頁、為替手形の振出・引受・受取の勘定変化。公式出題意図を実読。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-finance-guide",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+      "location": "2025年3月11日版34・37・43〜45・253項。輸出D/P・D/A手形の銀行買取時の発生消滅、手取・保証、元の負債と二次的責任を区分。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-documentary-jetro",
+      "url": "https://www.jetro.go.jp/world/qa/04A-A10833.html",
+      "location": "I-2、2025年7月更新。D/P支払渡しとD/A引受渡し、銀行の支払確約との区分。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "foreign-currency",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=80",
+      "location": "1999年10月22日最終改正、一1・一2(1)①②・一2(2)・一3。発生、決済、残存外貨建金銭債権の換算。",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "国際私法・相手国手形法・信用状全条件をこの講で検証したとは扱わない。海外例の有効性等は与件とする。",
+    "為替予約・ヘッジ・収益認識の各論は実在する後続計画IDへ残す。",
+    "本講固有技能の累積10問・文脈用語8問を別IDで著者作成した。先行cash core6講の問題と合わせた独立審査・本番統合はpending。"
+  ],
+  "glossary": [
+    {
+      "term": "振出人",
+      "definition": "為替手形で支払人へ支払いを委託して手形を振り出す者。自己指図・自己宛では他の立場を兼ねることがある"
+    },
+    {
+      "term": "支払人・引受人",
+      "definition": "支払人は手形で支払いを委託される者。有効な引受けにより引受人として満期の直接支払義務を負う段階を区分する"
+    },
+    {
+      "term": "受取人",
+      "definition": "手形金の支払いを受ける者。振出人自身を受取人とする自己指図もある"
+    },
+    {
+      "term": "自己指図為替手形",
+      "definition": "振出人自身を受取人として振り出す為替手形。自己を支払人とする自己宛と区分する"
+    },
+    {
+      "term": "自己宛為替手形",
+      "definition": "振出人自身を支払人として振り出す為替手形。役割の重複を確かめて手形債務を記録する"
+    },
+    {
+      "term": "D/P",
+      "definition": "支払いと引き換えに船積書類を渡す条件。名称だけで銀行買取りや支払保証を意味しない"
+    },
+    {
+      "term": "D/A",
+      "definition": "手形の引受けと引き換えに船積書類を渡す条件。引受けと現金支払いを区分する"
+    },
+    {
+      "term": "荷為替手形",
+      "definition": "貿易代金の決済で船積書類を添えて扱う為替手形。書類条件、銀行の取立て・買取り、入金を別の事実として読む"
+    },
+    {
+      "term": "取立委託と買取り",
+      "definition": "取立委託は代金回収の依頼、買取りは銀行が手形を買い取る取引。受領証だけを買取実行や入金の証明にしない"
+    },
+    {
+      "term": "未取組売掛金",
+      "definition": "売掛金の一部だけを銀行へ取り組んだ場合に、その対象外として残る債権。外貨なら残存通貨額と円帳簿を追う"
+    },
+    {
+      "term": "円貨手取額",
+      "definition": "指定の円換算額から所与の割引料等の入金控除を反映した実際の受取額。新たな保証負債の認識額と区分する"
+    },
+    {
+      "term": "残存外貨建金銭債権",
+      "definition": "期末に会社が保有する外貨建ての金銭請求権。消滅済みの取組部分と分けて決算時の換算を行う"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-documentary-bills-e1",
+      "section": "例題1：三社の掛残高を、手形の流れへつなぐ",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "drawerRemainingAR": 120000,
+        "drawerRemainingAP": 0,
+        "bill": 420000,
+        "drawerCashChange": 0
+      }
+    },
+    {
+      "id": "zr2-boki-documentary-bills-e2",
+      "section": "例題2：自己宛で、支払人も自社になる",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "notesPayable": 320000,
+        "originalAPRemaining": 0
+      }
+    },
+    {
+      "id": "zr2-boki-documentary-bills-e3",
+      "section": "例題3：同じ引受署名でも、書類を渡せるかが違う",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "DPPaymentConditionSatisfied": false,
+        "DAAcceptanceConditionSatisfied": true,
+        "exporterCashReceipt": 0,
+        "bankPurchase": false
+      }
+    },
+    {
+      "id": "zr2-boki-documentary-bills-e4",
+      "section": "例題4：円建代金の75％を取り組む",
+      "objectives": [
+        3
+      ],
+      "results": {
+        "faceTransferred": 675000,
+        "cash": 670500,
+        "consideration": 664000,
+        "loss": 11000,
+        "guarantee": 6500,
+        "remainingAR": 225000,
+        "journalEachSide": 681500
+      }
+    },
+    {
+      "id": "zr2-boki-documentary-bills-e5",
+      "section": "例題5：円転・期末換算・翌期回収をつなぐ",
+      "objectives": [
+        3,
+        4
+      ],
+      "results": {
+        "usdTransferred": 8000,
+        "historicTransferred": 1120000,
+        "currentTranslated": 1144000,
+        "transactionFXGain": 24000,
+        "cash": 1138000,
+        "consideration": 1129000,
+        "transferLoss": 15000,
+        "guaranteeJPY": 9000,
+        "remainingUSD": 2000,
+        "remainingHistoricJPY": 280000,
+        "closingAR": 290000,
+        "closingFXGain": 10000,
+        "totalPAndL": 19000,
+        "netAssetsCheck": 1419000,
+        "nextYearCash": 294000,
+        "nextYearFXGain": 4000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-documentary-bills-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "会社北は東への買掛金を持ち、南への売掛金も持つ。北が東を受取人、南を支払人に指定する為替手形を振り出し、南の有効な引受け後に東へ交付した。三つの立場の対応として正しいものはどれですか。",
+      "options": [
+        "北が引受人、東が支払人、南が受取人",
+        "北が振出人、南が支払人・引受人、東が受取人",
+        "東が振出人、北が支払人、南が受取人",
+        "南が振出人、東が引受人、北が受取人"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "北が支払いを委託する振出人、南が引受けにより支払義務を負う者、東が受取人である。1は北を支払う側に変え、3と4は振出し・引受けの事実を入れ替えている。元の掛債権債務もこの対応に従って追う。",
+      "points": 1
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "会社なぎさは、仕入先への買掛金400,000円と得意先への売掛金650,000円を持つ。仕入先を受取人、得意先を支払人とする400,000円の為替手形を振り出し、有効な引受け・交付と元の掛決済の条件を満たした。追加の保証等の計上額は0円。他の増減はない。担当者は「なぎさの振出しだから買掛金400,000／現金400,000」とした。なぎさの仕訳と整理後の掛残高・現金増減を示し、振出人名だけで現金支払と決める誤りを説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "なぎさは買掛金400,000／売掛金400,000とする。買掛金0円、売掛金250,000円、現金増減0円。支払人は得意先で、なぎさの現金による支払ではない。振出人が誰かに加え、誰が引き受け誰へ払うかを読む。",
+      "explanation": "なぎさは買掛金400,000／売掛金400,000とする。買掛金0円、売掛金250,000円、現金増減0円。支払人は得意先で、なぎさの現金による支払ではない。振出人が誰かに加え、誰が引き受け誰へ払うかを読む。",
+      "rubric": [
+        {
+          "criterion": "買掛金／売掛金400,000円の仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "買掛金0・売掛金250,000円",
+          "points": 1
+        },
+        {
+          "criterion": "現金増減0円",
+          "points": 1
+        },
+        {
+          "criterion": "振出人と支払人の違いを理由として説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "手形法3条の自己指図・自己宛について、立場の重なりが正しいものはどれですか。",
+      "options": [
+        "自己指図は振出人と受取人が同じ、自己宛は振出人と支払人が同じ",
+        "自己指図も自己宛も、必ず異なる三人が必要",
+        "自己指図は受取人と銀行が必ず同じ、自己宛は取引が無効",
+        "自己指図は振出人と支払人が同じ、自己宛は振出人と受取人が同じ"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "1が正しい。自己指図は自分を受取人、自己宛は自分を支払人にする。2は三つの立場を人数と混同し、3は銀行の役割と有効性を根拠なく決め、4は二つの名称を逆にしている。",
+      "points": 1
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "有効な為替手形に支払人として会社はるの名が記載されたが、はるはまだ引受けをしていない。手形が有効であるという以外に、原債務の決済を認めた事実も与えられていない。「名前があるので、はるには既に引受人として満期の直接支払義務が生じ、相手への買掛金も必ず消える」とする説明を、引受けと会計上の消滅条件に分けて評価してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "手形法28条の引受人としての直接支払義務は、引受けによって負うものであり、支払人名の記載だけと同じにしない。さらに元の買掛金を消す会計処理は、契約上の履行・消滅等の条件を確認する。引受けも元債務の決済事実も未確認の資料から、両方の結論を作れない。",
+      "explanation": "手形法28条の引受人としての直接支払義務は、引受けによって負うものであり、支払人名の記載だけと同じにしない。さらに元の買掛金を消す会計処理は、契約上の履行・消滅等の条件を確認する。引受けも元債務の決済事実も未確認の資料から、両方の結論を作れない。",
+      "rubric": [
+        {
+          "criterion": "支払人名の記載と引受けを区分",
+          "points": 1
+        },
+        {
+          "criterion": "28条の引受けによる直接支払義務を説明",
+          "points": 1
+        },
+        {
+          "criterion": "元債務の消滅は別の条件確認が必要",
+          "points": 1
+        },
+        {
+          "criterion": "与件不足から断定できないと評価",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "D/A取引で、必要書類が揃い輸入者の有効な引受けが終わったが、支払いは期日後で、銀行の買取りも現金入金もない。契約条件に変更がない場合、適切な説明はどれですか。",
+      "options": [
+        "引受けだけで輸出者の預金が必ず増える",
+        "銀行経由なので銀行が代金の支払いを必ず保証する",
+        "支払い前なのでD/Aでも書類は必ず渡せない",
+        "引受けで書類引渡条件を満たすが、支払い・入金が終わったとはいえない"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "4が適切。D/Aは引受けと書類の交換条件である。1は引受けを現金回収と同視し、2は取立銀行と銀行の別の支払確約を混同し、3はD/Pの条件へ入れ替えている。",
+      "points": 1
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "会社あおばは荷為替手形を銀行へ取立依頼し、銀行の受領証を持つ。買取契約や買取実行はなく、相手の支払いもまだない。担当者は受領証の日に預金／売掛金と記帳し、「指針34項の発生と消滅を同時認識した」と説明した。取立依頼と買取りの違いから評価し、34項による同時認識の事実を確認するための資料も一つ示してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "受領証は取立てのための受託を示すだけで、銀行の買取りや輸出者の入金を示さない。この事実だけで預金を増やし債権を消すのは不適切。34項の対象となる買取りが実行されたか、買取計算書・契約と実行通知等を確認する。管理科目の振替と債権自体の消滅も区分する。",
+      "explanation": "受領証は取立てのための受託を示すだけで、銀行の買取りや輸出者の入金を示さない。この事実だけで預金を増やし債権を消すのは不適切。34項の対象となる買取りが実行されたか、買取計算書・契約と実行通知等を確認する。管理科目の振替と債権自体の消滅も区分する。",
+      "rubric": [
+        {
+          "criterion": "取立依頼と買取りを区分",
+          "points": 1
+        },
+        {
+          "criterion": "預金計上・債権消滅を与件から否定",
+          "points": 1
+        },
+        {
+          "criterion": "34項の買取実行という対象事実",
+          "points": 1
+        },
+        {
+          "criterion": "買取計算書等の確認資料を一つ挙げる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "D/P・D/Aの名称と輸出者の回収について、正しいものを選んでください。",
+      "options": [
+        "D/Pは常に銀行による無条件支払保証付きである",
+        "D/Aは常に現金前払いを意味する",
+        "書類の引渡条件を示す名称であり、それだけで銀行の支払確約や貸倒リスクゼロを意味しない",
+        "D/P・D/Aのどちらでも書類を銀行へ送れば代金の消滅が確定する"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "3が適切。D/Pは支払い、D/Aは引受けと書類の交換を示す。1は別の保証を追加し、2は引受けを前払いへ変え、4は書類送付を資産の消滅と取り違えている。",
+      "points": 1
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "額面と帳簿価額が同じ円建売掛金840,000円の60％を、同質・同条件の部分として荷為替で銀行へ売却した。割引料等3,200円を買取対象額から控除し、他の入金控除はない。新たな保証債務の時価は4,800円で、会社の当日入金から保証料を追加徴収する契約ではない。手取預金額だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "input": "number",
+      "accepted": [
+        "500800"
+      ],
+      "explanation": "買取対象840,000×60％＝504,000円、手取504,000−3,200＝500,800円。保証債務4,800円は新たな負債の認識額であり、所与の入金から追加で差し引く費用支払ではない。譲渡損の計算と現金手取の計算を区分する。",
+      "points": 1
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "同質・同条件の円建売掛金1,200,000円の70％を荷為替で銀行へ売却し、額面比率で帳簿を分ける。帳簿は額面と同じで、買取対象額から割引料等5,500円を控除する。新たな保証債務の時価7,500円、他の対価・費用なし。譲渡損失だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "input": "number",
+      "accepted": [
+        "13000"
+      ],
+      "explanation": "対象840,000円、入金834,500円。譲渡金額834,500−7,500＝827,000円との差13,000円が損失となる。割引料5,500円だけを譲渡損とすると、保証債務7,500円の認識を反映できない。未取組部分の売掛金360,000円は残る。",
+      "points": 1
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "同質・同条件の円建売掛金1,000,000円の50％を荷為替で銀行へ売却した。額面比率で分け、対象部分の帳簿500,000円、手取預金490,000円、新たな保証債務の時価6,000円で、他の対価等はない。担当者は手取490,000円だけを預金へ入れ、元の売掛金1,000,000円を全額消した。正しい仕訳と残る売掛金を示し、全額消去が未取組部分へ及ぼす誤りを説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "譲渡金額490,000−6,000＝484,000円なので損失16,000円。預金490,000・手形売却損16,000／売掛金500,000・保証債務6,000とし、左右506,000円。売掛金500,000円が残る。全額消去は未取組50％まで消し、残る資産を500,000円過少にする。",
+      "explanation": "譲渡金額490,000−6,000＝484,000円なので損失16,000円。預金490,000・手形売却損16,000／売掛金500,000・保証債務6,000とし、左右506,000円。売掛金500,000円が残る。全額消去は未取組50％まで消し、残る資産を500,000円過少にする。",
+      "rubric": [
+        {
+          "criterion": "譲渡金額484,000円と損失16,000円",
+          "points": 1
+        },
+        {
+          "criterion": "預金・売掛金・保証債務の正しい仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "残る売掛金500,000円",
+          "points": 1
+        },
+        {
+          "criterion": "未取組部分まで消す誤りを説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "前月に銀行へ売却し消滅処理済みの荷為替手形600,000円が、今月に輸入者から銀行へ正常決済された。今月直前の保証債務残高は6,000円で、保証義務も全額消滅した。ほかの期間配分・費用等の処理は必要ない。担当者は「決済日なので当社も預金600,000／売掛金600,000」とした。提案を評価し、この時点で必要な保証債務の仕訳を示してください。また、主債務の額面と、会社が認識していた保証債務額の違いも説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "会社は売却時に入金と消滅を処理済みであり、輸入者から銀行への支払いを自社の入金として重ねない。所与の保証消滅では保証債務6,000／保証債務取崩益6,000とする。主債務の額面600,000円と、会社が残していた保証債務6,000円を区分する。",
+      "explanation": "会社は売却時に入金と消滅を処理済みであり、輸入者から銀行への支払いを自社の入金として重ねない。所与の保証消滅では保証債務6,000／保証債務取崩益6,000とする。主債務の額面600,000円と、会社が残していた保証債務6,000円を区分する。",
+      "rubric": [
+        {
+          "criterion": "銀行への決済を会社の入金へ重ねない理由",
+          "points": 2
+        },
+        {
+          "criterion": "保証債務6,000円の取崩仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "額面と認識負債額を区分",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "外貨建売掛金のうち6,000米ドルを荷為替で銀行へ売却した。対象部分の当初記録相場132円、買取日の指定換算相場135円で、期中にほかの換算はない。円貨の割引料4,000円と新たな円建保証債務2,000円は、為替差額と区分する。今回の取組部分に係る為替差益だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "input": "number",
+      "accepted": [
+        "18000"
+      ],
+      "explanation": "6,000×（135−132）＝18,000円の為替差益。割引料・保証債務を含む譲渡損益の純額を答える問題ではない。元の円帳簿792,000円と、買取日の換算額810,000円を対応させる。",
+      "points": 1
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q13",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "輸出代金10,000米ドルのうち7,000米ドルは期中に銀行へ売却し、発生・消滅と入金の記帳を全て終えている。期末に残る売掛金は3,000米ドル、円帳簿423,000円。期末相場137円、ヘッジ等なしである。保証債務5,000円は円建てで、この期末に他の増減を処理する必要はない。期末売掛金、換算仕訳、7,000米ドルを再換算しない理由を示してください。円建保証債務を今回の売掛金換算と分けることも説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "残存3,000×137＝411,000円。423,000−411,000＝12,000円の為替差損なので、為替差損12,000／売掛金12,000とする。7,000米ドルは既に消滅し自社の債権ではないため期末換算しない。円建保証債務5,000円も、米ドル建売掛金の換算額へ混ぜない。",
+      "explanation": "残存3,000×137＝411,000円。423,000−411,000＝12,000円の為替差損なので、為替差損12,000／売掛金12,000とする。7,000米ドルは既に消滅し自社の債権ではないため期末換算しない。円建保証債務5,000円も、米ドル建売掛金の換算額へ混ぜない。",
+      "rubric": [
+        {
+          "criterion": "期末売掛金411,000円",
+          "points": 1
+        },
+        {
+          "criterion": "為替差損12,000円の仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "消滅済み7,000米ドルを対象にしない理由",
+          "points": 1
+        },
+        {
+          "criterion": "外貨建売掛金と円建保証負債を区分",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q14",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "前期に140円で記録した輸出売掛金2,000米ドルを、前期末146円で正しく換算済みである。当期に150円で全額円貨回収し、手数料・ヘッジ等はない。当期の回収仕訳と為替差益を示し、140円からの差額を全て当期利益にする誤りを説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "前期末円帳簿は2,000×146＝292,000円、当期入金300,000円なので、預金300,000／売掛金292,000・為替差益8,000とする。当初140円との差20,000円のうち12,000円は前期末までの換算差益であり、当期に再び計上しない。当期利益は前期末の帳簿から求める。",
+      "explanation": "前期末円帳簿は2,000×146＝292,000円、当期入金300,000円なので、預金300,000／売掛金292,000・為替差益8,000とする。当初140円との差20,000円のうち12,000円は前期末までの換算差益であり、当期に再び計上しない。当期利益は前期末の帳簿から求める。",
+      "rubric": [
+        {
+          "criterion": "前期末円帳簿292,000円と入金300,000円",
+          "points": 1
+        },
+        {
+          "criterion": "当期為替差益8,000円と回収仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "当初との差20,000円を前期12,000・当期8,000円へ区分",
+          "points": 1
+        },
+        {
+          "criterion": "前期認識済み額を当期へ重ねない理由",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills-q15",
+      "field": "boki",
+      "lesson": "zr2-boki-documentary-bills",
+      "prompt": "12,000米ドルの売掛金を138円で正しく計上済みである。同質・同条件の75％を銀行へ売却し、額面比率で帳簿を分ける。買取日の指定相場140円、円貨割引料等7,000円、新たな円建保証債務の時価8,000円、他の対価等なし。期末相場142円で、期末までの保証債務の追加増減・ヘッジ・税効果等はない。手取預金、取組部分の為替差益と譲渡損、残る売掛金と期末換算差益、これらの損益合計を示し、資産から保証債務を引いた額でも検算してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3,
+        4
+      ],
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "取組9,000米ドルの当初帳簿1,242,000円、買取日換算1,260,000円なので為替差益18,000円。手取預金1,253,000円、譲渡金額1,245,000円、譲渡損15,000円。残る3,000米ドルは当初帳簿414,000円から期末426,000円へ換算し、差益12,000円。合計損益は18,000−15,000＋12,000＝15,000円。預金1,253,000＋売掛金426,000−保証債務8,000＝1,671,000円で、当初売掛金1,656,000円＋損益15,000円と一致する。",
+      "explanation": "取組9,000米ドルの当初帳簿1,242,000円、買取日換算1,260,000円なので為替差益18,000円。手取預金1,253,000円、譲渡金額1,245,000円、譲渡損15,000円。残る3,000米ドルは当初帳簿414,000円から期末426,000円へ換算し、差益12,000円。合計損益は18,000−15,000＋12,000＝15,000円。預金1,253,000＋売掛金426,000−保証債務8,000＝1,671,000円で、当初売掛金1,656,000円＋損益15,000円と一致する。",
+      "rubric": [
+        {
+          "criterion": "手取預金1,253,000円",
+          "points": 1
+        },
+        {
+          "criterion": "取組部分為替差益18,000円と譲渡損15,000円",
+          "points": 1
+        },
+        {
+          "criterion": "残る売掛金426,000円と期末差益12,000円",
+          "points": 1
+        },
+        {
+          "criterion": "損益合計15,000円",
+          "points": 1
+        },
+        {
+          "criterion": "資産・負債を用いた1,671,000円の検算",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "questionCount": 15,
+  "totalPoints": 40,
+  "scopeNotes": [
+    "国内例は有効な引受け・交付、掛決済条件を与件として、基本勘定を扱う。追加の保証等が0円であるとの条件を一般化しない。",
+    "海外例の売上は適切に計上済み。船積書類交付だけで売上認識を決めない。",
+    "同質・同条件の一部取組を額面比率で分ける条件であり、残存サービス権等の異種部分の原価配分を代替しない。"
+  ],
+  "continuationCoverage": [
+    {
+      "lessonId": "zr2-boki-fx-transactions",
+      "status": "proposed or draft; not completed by this lesson"
+    },
+    {
+      "lessonId": "zr2-boki-fx-forwards",
+      "status": "proposed or draft; not completed by this lesson"
+    },
+    {
+      "lessonId": "zr2-boki-hedges-derivatives",
+      "status": "proposed or draft; not completed by this lesson"
+    },
+    {
+      "lessonId": "zr2-boki-revenue-allocation",
+      "status": "proposed or draft; not completed by this lesson"
+    },
+    {
+      "lessonId": "zr2-boki-revenue-over-time",
+      "status": "proposed or draft; not completed by this lesson"
+    }
+  ],
+  "draftObjectiveDetails": [
+    {
+      "draftObjective": 1,
+      "canonicalIds": [
+        "zr2-boki-documentary-bills-o1"
+      ]
+    },
+    {
+      "draftObjective": 2,
+      "canonicalIds": [
+        "zr2-boki-documentary-bills-o2"
+      ]
+    },
+    {
+      "draftObjective": 3,
+      "canonicalIds": [
+        "zr2-boki-documentary-bills-o2"
+      ]
+    },
+    {
+      "draftObjective": 4,
+      "canonicalIds": [
+        "zr2-boki-documentary-bills-o3"
+      ]
+    }
+  ],
+  "authorChecks": {
+    "status": "author source, arithmetic, question/rubric and full language pass completed; independent review pending",
+    "sourceNotes": "work/zeirishi-upgrade/documentary-bills-source-notes.md",
+    "definitionCount": 12,
+    "workedExampleCount": 5,
+    "questionCount": 15,
+    "countBasis": "独立した問題セット数。小問数や定義カードを追加問数へ算入しない。",
+    "calculationCases": 13,
+    "calculationRecord": "work/zeirishi-upgrade/checks/documentary-author-calculations.json",
+    "japaneseTools": [
+      "lint --reading-load",
+      "outline",
+      "terms",
+      "calques"
+    ],
+    "japaneseFindings": "初稿を4ツールと全文で確認し、比喩的な関係が崩れるを勘定残高の不対応へ具体化。34項の説明を分割。q11・q13は既存の採点観点を設問へ明示。専門用語と誤答の否定は意味上必要なものを保持。",
+    "reviewBoundary": "以上は著者点検。sourceReview/factualReview/japaneseReview はすべて pending を維持。"
+  },
+  "additionalAssessmentBanks": [
+    "zr2-boki-documentary-review",
+    "zr2-boki-documentary-glossary-assessment"
+  ]
+}

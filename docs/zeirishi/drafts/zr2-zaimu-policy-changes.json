@@ -114,6 +114,21 @@
       "objectives": [
         6
       ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e8",
+      "section": "例題8：取引の事実が変わった三つの場面",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e9",
+      "section": "例題9：方法名が変わっても、資金の範囲が同じ場合",
+      "objectives": [
+        1,
+        3
+      ]
     }
   ],
   "questions": [
@@ -196,7 +211,7 @@
       "id": "zr2-zaimu-policy-changes-q4",
       "field": "zaimu",
       "lesson": "zr2-zaimu-policy-changes",
-      "prompt": "正当な方針変更の遡及適用で、在庫額の新旧差は前期首18万円、前期末35万円。仕入・売上等の他条件は同じで税効果等はない。旧方針の前期利益100万円を、新方針の利益へ直すと何万円ですか。",
+      "prompt": "正当な方針変更の遡及適用で、在庫額の差（新方針の額−旧方針の額）は前期首18万円、前期末35万円。仕入・売上等の他条件は同じで税効果等はない。旧方針の前期利益100万円を、新方針の利益へ直すと何万円ですか。",
       "options": [],
       "answer": 0,
       "input": "number",
@@ -212,7 +227,7 @@
       "id": "zr2-zaimu-policy-changes-q5",
       "field": "zaimu",
       "lesson": "zr2-zaimu-policy-changes",
-      "prompt": "新方針への遡及が可能で、期末在庫の新旧差はX0年12万円、X1年30万円、X2年42万円。旧X1期首利益剰余金360万円、旧X1利益95万円、旧X2利益110万円で、他の差異・所有者取引・税効果はない。比較情報X1の期首利益剰余金、X1利益・期末剰余金、X2利益・期末剰余金を万円単位で求め、期末累積差で検算してください。",
+      "prompt": "新方針への遡及が可能で、期末在庫の差（新方針の額−旧方針の額）はX0年12万円、X1年30万円、X2年42万円。旧X1期首利益剰余金360万円、旧X1利益95万円、旧X2利益110万円で、他の差異・所有者取引・税効果はない。比較情報X1の期首利益剰余金、X1利益・期末剰余金、X2利益・期末剰余金を万円単位で求め、期末累積差で検算してください。",
       "options": [],
       "answer": 0,
       "input": "essay",
@@ -528,6 +543,109 @@
         1,
         6
       ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q19",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "三つの事象は方針変更に該当するか、理由とともに示してください。Aは当初適切に簡便処理していた項目の重要性が増し本来の処理へ移行する。Bは新規事業で消費パターンの異なる新設備に適切な別の償却方法を採用する。Cは支配を得た子会社を連結範囲へ入れる。前提の判断や適用に誤りはありません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "Aは重要性増加による本来処理への移行、Bは新事実に対する処理の採用、Cは連結範囲の変動であり、指針8項で方針変更に該当しない事象として区分する。既存の同一事象に別方針を適用する変更とは区別する。",
+      "rubric": [
+        {
+          "criterion": "Aの分類と重要性増加を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "Bの分類と新事実を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "Cの分類と範囲変動を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "従前に誤りがないという与件を保ちます。既存設備の方法変更と新設備の方法採用も異なります。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q20",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "資金の範囲・認識・測定を変えず、直接法から間接法へ表示を変更する。与件の直接法集計は収入120−支出85、間接法集計は利益40−調整5（万円）。分類と各方法の営業キャッシュ・フローを示してください。これと、資金へ含める対象範囲自体を変更する場合の分類を比較してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "直接・間接とも35万円で、前者は表示方法の変更。対象の資金範囲そのものを変える場合は会計方針の変更として扱う。二つの方法で求めた同一の35を合算しない。",
+      "rubric": [
+        {
+          "criterion": "両方法各35万円を求める",
+          "points": 2
+        },
+        {
+          "criterion": "方法の切替えは表示変更とする",
+          "points": 1
+        },
+        {
+          "criterion": "資金範囲の変更は方針変更とする",
+          "points": 1
+        }
+      ],
+      "explanation": "方法の名前だけでなく、範囲と表示のどちらが変わったかを確認します。",
+      "objectives": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q21",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "担当者は当初から重要性があった項目を、入手可能な資料を見落として少額と誤判定し、不適切な簡便処理をしていた。後に正しい処理へ移す際、「重要性が増しただけなので過去の誤謬の検討は不要」と述べた。当時の事実と指針8項の事象の違いから検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "本例は重要性が後で増したのではなく、当初の資料の見落としと重要性の誤判定がある。従前の適切な判断を前提とする本来処理への移行と同一にせず、過去の誤謬として検討する必要がある。",
+      "rubric": [
+        {
+          "criterion": "当初から重要で誤判定があった事実を示す",
+          "points": 2
+        },
+        {
+          "criterion": "後の重要性増加と区別し誤謬を検討すると示す",
+          "points": 2
+        }
+      ],
+      "explanation": "現在の正しい処理へ移るという結果が同じでも、以前の判断の合理性と情報の使用を確かめます。",
+      "objectives": [
+        1,
+        5
+      ]
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "lessonId": "zr2-zaimu-consolidation-scope",
+      "notCompletedHere": "連結範囲の具体的支配判定と除外・重要性の各分岐"
+    },
+    {
+      "lessonId": "zr2-zaimu-cashflow-scope",
+      "notCompletedHere": "現金同等物の具体的範囲と区分"
+    },
+    {
+      "lessonId": "zr2-zaimu-cashflow-indirect",
+      "notCompletedHere": "営業CFの間接法全調整と残高復元"
+    },
+    {
+      "lessonId": "zr2-zaimu-cashflow-direct-consolidated",
+      "notCompletedHere": "直接法と連結CFの具体的作成"
     }
   ]
 }

@@ -3,14 +3,14 @@
   "scope": {
     "subjects": 11,
     "units": 113,
-    "lessons": 585,
-    "objectives": 1178,
+    "lessons": 588,
+    "objectives": 1187,
     "fullMockBlueprints": 22
   },
-  "implementedLessons": 18,
-  "fullyReviewedLessons": 18,
-  "fullyReviewedObjectives": 37,
-  "fullyReviewedTeachingSkills": 62,
+  "implementedLessons": 23,
+  "fullyReviewedLessons": 23,
+  "fullyReviewedObjectives": 47,
+  "fullyReviewedTeachingSkills": 72,
   "reviewedFullMocks": 0,
   "errors": [],
   "lessons": [
@@ -1055,6 +1055,60 @@
         {
           "id": "zr2-boki-sales-purchases-o2",
           "text": "返品値引割戻運賃と決算残高を結ぶ",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-boki-purchase-pricing-finance",
+      "subject": "boki",
+      "unit": "zr2-boki-unit-inventory",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-boki-purchase-pricing-finance-o1",
+          "text": "購入代価の減額と早期決済等の金融条件を、契約事実と適用基準から区分する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-purchase-pricing-finance-o2",
+          "text": "購入後に確定した対価修正を販売済・在庫へ配分し、原価・利益・債務残高を照合する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-purchase-pricing-finance-o3",
+          "text": "購入代価とは別の契約利息が明示された条件で、発生・未払・決済を複数期で検算する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -6112,6 +6166,74 @@
       "detailedObjectives": []
     },
     {
+      "id": "zr2-zaimu-disclosure-eligibility-deadlines",
+      "subject": "zaimu",
+      "unit": "zr2-zaimu-unit-statements",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-zaimu-disclosure-eligibility-deadlines-o1",
+          "text": "有価証券・発行者の類型と政令等の数値要件を照合し、法24条の提出義務・適用除外・免除等を条件付きで判定する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-zaimu-disclosure-eligibility-deadlines-o2",
+          "text": "内国・外国提出者の年次報告について、基準期間・特例期間と承認/延長条件を区別し、適用条項へ対応させる",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-zaimu-disclosure-eligibility-deadlines-o3",
+          "text": "決算期末・起算と満了・承認等の与件から、国内外の提出期限を実際の日付で求める",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-zaimu-disclosure-eligibility-deadlines-o4",
+          "text": "週末・祝日・年末年始等と別段規定を確認し、休日特例が適用される期限を法令・対象年暦に基づいて調整する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
       "id": "zr2-zaimu-subsequent-going-concern",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-statements",
@@ -9540,201 +9662,346 @@
       "id": "zr2-hojin-entity-scope",
       "subject": "hojin",
       "unit": "zr2-hojin-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-hojin-entity-scope-o01",
           "text": "普通/公益/人格なき社団/外国を区分する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-hojin-entity-scope-o02",
           "text": "収益事業と課税範囲を判定する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-hojin-entity-scope-o01",
+          "text": "普通/公益/人格なき社団/外国を区分する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-hojin-entity-scope-o02",
+          "text": "収益事業と課税範囲を判定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-hojin-period-filing",
       "subject": "hojin",
       "unit": "zr2-hojin-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-hojin-period-filing-o01",
           "text": "設立/解散/再編のみなし事業年度を求める",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-hojin-period-filing-o02",
           "text": "届出/青色承認/帳簿条件を判定する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-hojin-period-filing-o01",
+          "text": "設立/解散/再編のみなし事業年度を求める",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-hojin-period-filing-o02",
+          "text": "届出/青色承認/帳簿条件を判定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-hojin-income-adjustments",
       "subject": "hojin",
       "unit": "zr2-hojin-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-hojin-income-adjustments-o01",
           "text": "会計処理と税法との差を四調整へ分類する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-hojin-income-adjustments-o02",
           "text": "損金経理と申告調整要件を分ける",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-hojin-income-adjustments-o01",
+          "text": "会計処理と税法との差を四調整へ分類する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-hojin-income-adjustments-o02",
+          "text": "損金経理と申告調整要件を分ける",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-hojin-schedule-four-five",
       "subject": "hojin",
       "unit": "zr2-hojin-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-hojin-schedule-four-five-o01",
           "text": "留保/流出と利益積立残高を計算する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-hojin-schedule-four-five-o02",
           "text": "税金費用/納税充当/中間納付を照合する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-hojin-schedule-four-five-o01",
+          "text": "留保/流出と利益積立残高を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-hojin-schedule-four-five-o02",
+          "text": "税金費用/納税充当/中間納付を照合する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-hojin-relationships",
       "subject": "hojin",
       "unit": "zr2-hojin-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-hojin-relationships-o01",
           "text": "株主親族/議決権関係を判定する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-hojin-relationships-o02",
           "text": "制度別の中小法人等の除外を説明する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-hojin-relationships-o01",
+          "text": "株主親族/議決権関係を判定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-hojin-relationships-o02",
+          "text": "制度別の中小法人等の除外を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-hojin-revenue-timing",
@@ -10027,7 +10294,7 @@
       "objectives": [
         {
           "id": "zr2-hojin-returns-transition-o01",
-          "text": "旧制度対象法人と経過年度/対象資産を判定する",
+          "text": "収益認識改正の旧契約と返品調整旧制度の対象/経過年度を区分する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -10082,6 +10349,46 @@
         {
           "id": "zr2-hojin-fixed-asset-revenue-o02",
           "text": "譲渡担保の全条件と条件喪失を区別する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-hojin-compensation-grants",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-revenue",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-compensation-grants-o01",
+          "text": "将来費用補償/経費補填給付/奨励金/損害賠償の収益年度を根拠別に区分する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-compensation-grants-o02",
+          "text": "未確定見積り/確定権利/実収受の原則と容認を損失/保険補填の年度へ連動する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -10761,7 +11068,7 @@
         },
         {
           "id": "zr2-hojin-insurance-o02",
-          "text": "保険積立と満期/解約の調整を求める",
+          "text": "保険積立と満期/解約/損害保険金の収益年度・調整を求める",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -11147,7 +11454,7 @@
       "objectives": [
         {
           "id": "zr2-hojin-other-expenses-o01",
-          "text": "渡航/会費/賠償/不正費用を判定する",
+          "text": "渡航/会費/賠償/不正費用の性質と年度帰属を判定する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -19863,7 +20170,7 @@
       "objectives": [
         {
           "id": "zr2-kokuzei-rights-distribution-o1",
-          "text": "換価に伴う担保・用益・賃料の権利消滅・引受け・継続を区別する",
+          "text": "換価に伴う買受適格・移転許認可と、担保・用益・賃料の権利消滅・引受け・継続を判定する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,

@@ -1,0 +1,1035 @@
+{
+  "id": "zr2-kokuzei-resource-rights-security",
+  "subject": "kokuzei",
+  "title": "立木・鉱業権等の担保と公示",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 300,
+  "objectives": [
+    "登記立木・採掘権・漁業権・採石権・ダム使用権の担保目的・公示の効力・処分制限を資料へ適用する",
+    "取消・放棄・期間満了と実行・補償供託・法定利用関係・売却残余の帰属を判断し国税徴収へ接続する"
+  ],
+  "objectiveIds": [
+    "zr2-kokuzei-resource-rights-security-o1",
+    "zr2-kokuzei-resource-rights-security-o2"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-security-registers",
+    "zr2-kokuzei-other-fund-security",
+    "zr2-kokuzei-special-privileges"
+  ],
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "sourceCandidates": [
+    {
+      "id": "standing-tree-law",
+      "url": "https://laws.e-gov.go.jp/law/142AC0000000022_20050307_416AC0000000124",
+      "version": "142AC0000000022_20050307_416AC0000000124",
+      "location": "全1〜21条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "standing-tree-order",
+      "url": "https://laws.e-gov.go.jp/law/307IO0000000012_19320203_000000000000000",
+      "version": "307IO0000000012_19320203_000000000000000",
+      "location": "全1・2条・別表",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "mining-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000289_20250601_504AC0000000068",
+      "version": "325AC0000000289_20250601_504AC0000000068",
+      "location": "5・6・11〜18・21・40・41・51条〜60条（51条の2/3、53条の2を含む）。本講で使う担保、公示、移転、取消の箇所",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "mining-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000055_20120121_423AC0000000084",
+      "version": "138AC0000000055_20120121_423AC0000000084",
+      "location": "全1〜7条。例題2の4条通知後6か月を単体採掘権57条と比較",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "fishery-rights-law",
+      "url": "https://laws.e-gov.go.jp/law/324AC0000000267_20260401_506AC0000000066",
+      "version": "324AC0000000267_20260401_506AC0000000066",
+      "location": "60・62・68・69・71・72・75〜84・89・92〜96・98・101・117条及び20条2〜4項",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "fishery-registration-order",
+      "url": "https://laws.e-gov.go.jp/law/326CO0000000292_20260401_507CO0000000234",
+      "version": "326CO0000000292_20260401_507CO0000000234",
+      "location": "1〜7・41・44条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "quarry-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000291_20250601_504AC0000000068",
+      "version": "325AC0000000291_20250601_504AC0000000068",
+      "location": "2・4〜32条（枝番号の業者登録詳細は未読）。採石権と業者登録32条を分離",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "dam-use-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000035_20220401_503AC0000000037",
+      "version": "332AC0000000035_20220401_503AC0000000037",
+      "location": "2・15・17〜28条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "dam-registration-order",
+      "url": "https://laws.e-gov.go.jp/law/342CO0000000002_20220401_503CO0000000292",
+      "version": "342CO0000000002_20220401_503CO0000000292",
+      "location": "1〜9・49〜61条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "334AC0000000147_20260401_508AC0000000012",
+      "location": "10・16条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "version": "129AC0000000089_20260401_506AC0000000033",
+      "location": "86・140・143・176・177・192〜194・369・370条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending"
+    },
+    {
+      "id": "dam-legislative-explanation",
+      "url": "https://kokkai.ndl.go.jp/simple/detail?minId=102604149X01019570322",
+      "version": "第26回国会衆議院建設委員会第10号1957-03-22",
+      "location": "政府委員山本三郎による26条の逐条説明：第三者対抗要件の説明。現行法26条及び20条と照合",
+      "verified": "2026-10-27",
+      "verification": "公式会議録の該当説明をオンライン確認。NTA記述との表現差は独立確認事項"
+    },
+    {
+      "id": "collection-68-dam-note",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/01/04/068/01.htm",
+      "version": "2026-10-27閲覧の現行ページ。基準日固定条文と区別",
+      "location": "27の登録による成立という記述。立法説明との表現差を未確認枝として保持",
+      "verified": "2026-10-27",
+      "verification": "当該箇所を公式ページで確認。現行全通達を基準日審査済みとはしない"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "立木法の立木",
+      "definition": "一筆又はその一部の土地の樹木の集団で、立木法の所有権保存登記を受けたもの"
+    },
+    {
+      "term": "施業方法",
+      "definition": "立木法3条の当事者が協定する採取方法。適法な採取かにより分離後の抵当追及が変わる"
+    },
+    {
+      "term": "抵当登記の転写",
+      "definition": "立木保存登記時、土地又は地上権の既存先取・抵当の登記を立木側へ写す18条の所定処理"
+    },
+    {
+      "term": "採掘権",
+      "definition": "鉱業権の種類の一つ。13条所定の抵当目的となり、試掘権と区分する"
+    },
+    {
+      "term": "鉱業原簿の登録の効力",
+      "definition": "鉱業法60条は原則効力要件とし、一般承継や所定の消滅等を除外する"
+    },
+    {
+      "term": "個別漁業権",
+      "definition": "団体漁業権以外の漁業権。所有者が個人か法人かだけの区分ではない"
+    },
+    {
+      "term": "団体漁業権",
+      "definition": "自ら営まない漁協等が免許を受ける所定の区画漁業権及び共同漁業権"
+    },
+    {
+      "term": "入漁権",
+      "definition": "設定により他人の団体漁業権の漁場で所定漁業を営む権利。98条の権利目的制限を確認"
+    },
+    {
+      "term": "免許漁業原簿",
+      "definition": "漁業権や所定担保・入漁権等を登録する原簿。117条の登録は登記に代わる"
+    },
+    {
+      "term": "採石権",
+      "definition": "設定行為により他人の土地で岩石・砂利を採取する物権。業者登録と異なる"
+    },
+    {
+      "term": "ダム使用権",
+      "definition": "多目的ダムの一定量の流水の貯留を一定地域に確保する権利"
+    },
+    {
+      "term": "残金の国庫帰属",
+      "definition": "鉱業法57条5項又は漁業法95条4項の特別競売で、所定費用・債務弁済後の残金を国庫へ帰属させる効果。滞納税の納付処理と同一ではない"
+    },
+    {
+      "term": "補償金・還付金の供託",
+      "definition": "各法が担保権者保護のため支払義務者へ命ずる供託。発生原因・対象権利・承諾例外・供託金への権利行使を分ける"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "resource-rights-ex1",
+      "section": "例題1：適法な採取と、別々の所有者になった後の土地利用",
+      "objectives": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ],
+      "sourceAnchors": [
+        "立木法1〜9・11・17・18・21条",
+        "民192〜194条"
+      ],
+      "result": {
+        "agreedHarvestExcluded": true,
+        "unauthorizedSeparationMayRemainSubject": true,
+        "immediateAcquisitionNotExcluded": true,
+        "landOwnershipCase": "5条の地上権",
+        "superficiesCase": "6条の賃貸借"
+      }
+    },
+    {
+      "id": "resource-rights-ex2",
+      "section": "例題2：通知の日と、特別競売の残金",
+      "objectives": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ],
+      "sourceAnchors": [
+        "鉱業法13・53条の2・55・57〜60条",
+        "鉱業抵当法4条",
+        "民140・143条"
+      ],
+      "result": {
+        "notice": "2026-06-02",
+        "singleRightDeadline": "2026-07-02",
+        "fundDeadline": "2026-12-02",
+        "sale": 5000000,
+        "cost": 100000,
+        "mortgage": 3200000,
+        "treasuryRemainder": 1700000
+      }
+    },
+    {
+      "id": "resource-rights-ex3",
+      "section": "例題3：休業取消しと公益取消しで、次の手段を選ぶ",
+      "objectives": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ],
+      "sourceAnchors": [
+        "漁業法77〜79・89・93〜95・117条",
+        "民140条"
+      ],
+      "result": {
+        "notice": "2026-06-15",
+        "deadline": "2026-07-15",
+        "publicInterestCancellationExcluded": true,
+        "sale": 500000,
+        "cost": 20000,
+        "registeredPrivilegeDebt": 300000,
+        "registeredMortgageDebt": 100000,
+        "treasuryRemainder": 80000
+      }
+    },
+    {
+      "id": "resource-rights-ex4",
+      "section": "例題4：権利消滅後の金銭を、誰に支払うか",
+      "objectives": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ],
+      "sourceAnchors": [
+        "採石法4・12・25条",
+        "特定多目的ダム法22〜28条"
+      ],
+      "result": {
+        "quarryCompensationDeposit": 1200000,
+        "damRefundDeposit": 3600000,
+        "mortgageConsentForDamDivisionApplication": true
+      }
+    }
+  ],
+  "scopeNotes": [
+    "本講の未登録ダム使用権の効力は下記sourceNeedsIndependentCheckに残す。同講IDで出典表現差の検証と適用例を追加するまで公開不可。見出しだけで完了扱いにしない",
+    "差押えの通知・登記登録嘱託と換価・裁判所競合は下記の実在する後続講へ対応。特別競売の残金国庫帰属を、通常の徴収法配当計算に置き換えない",
+    "採石権の補償額及びダム法28条1項の還付額は、適法に算定済みという条件で供託と権利行使を判断する。一般のダム建設投資額の算出を教えた証拠とはしない"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "登録財産の差押送達・効力発生と登記登録嘱託",
+      "plannedLessonIds": [
+        "zr2-kokuzei-registered-assets"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "特殊な買受適格・移転許認可・事業承継及び公売の権利消滅・配当",
+      "plannedLessonIds": [
+        "zr2-kokuzei-rights-distribution"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "裁判所の担保実行、国税交付要求等の競合と徴22条の代位実行",
+      "plannedLessonIds": [
+        "zr2-kokuzei-preservation"
+      ],
+      "status": "planned_not_authored"
+    }
+  ],
+  "sourceNeedsIndependentCheck": [
+    {
+      "issue": "ダム法20・26条、登録令49・52条、1957年政府逐条説明の対抗要件と、NTA68関係27の成立という表現の関係",
+      "lessonId": "zr2-kokuzei-resource-rights-security",
+      "publicationBlock": true,
+      "currentDecision": "有効設定・登録済みの事例を教授。無登録の設定・移転の効力を問う枝は、この同じ講へ根拠対照と適用事例を補うまで未完成として保持"
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "保存登記の対象となる樹木の集団を調べる。Aは天然生で別表の樹種8種、Bは植栽によって生立させた8種の集団である。両者を一律に種類数だけで登記不可とする説明への判断を選んでください。他の保存登記条件は別途確認する。",
+      "options": [
+        "AもBも本数が8本以下ならよい",
+        "Aは原則の7種類を超えるが、Bには植栽集団の種類制限の例外を検討できる",
+        "天然生は全て登録できずBも必ず不可",
+        "8種という情報だけでBの全条件充足まで確定する"
+      ],
+      "answer": 1,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "勅令1条は種類の数を定め、本数の基準ではありません。天然生のAは所与8種では原則を満たさず、Bには植栽例外があります。Bの他の条件まで充足するとする4も過大です。",
+      "sourceAnchors": [
+        "立木法1条",
+        "昭7勅12号1条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "土地に適法な質権が設定されている。所有者は、その土地の樹木を立木法で保存登記すれば質権から自由にできると主張した。正しい判断はどれですか。",
+      "options": [
+        "土地の質権は立木保存登記の可否と無関係",
+        "立木法11条の保存登記制限を確認する",
+        "伐採前なので動産質の引渡しだけで保存登記できる",
+        "樹木の評価額が土地を上回れば制限はない"
+      ],
+      "answer": 1,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "11条は土地又は地上権が質権の目的である場合を制限します。1は明文を落とし、3は動産質と立木登記を混同、4にはそのような価額による例外がありません。",
+      "sourceAnchors": [
+        "立木法11条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "土地の所有権登記と抵当権登記があり、抵当が樹木に及ばないという記録はない。後から、その土地の樹木の立木保存登記を適法に申請する。既存担保の確認として適切なのはどれですか。",
+      "options": [
+        "先に土地抵当があっても立木には絶対に写さない",
+        "抵当権者の名称だけを所有者欄に書けばよい",
+        "18条の所定の転写と共同担保目録の処理を確認する",
+        "保存登記時に被担保債権も全額消滅する"
+      ],
+      "answer": 2,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "18条の転写及び所定の共同担保目録を確認します。1は逆、2は所有と担保の区別を失い、4は担保公示から債権消滅を導いています。17条の承諾等の前提手続も別途必要です。",
+      "sourceAnchors": [
+        "立木法17・18条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "Aは試掘権、Bは鉱業法21条1項により設定された採掘権、Cは40条3項による採掘権を有する。13条に沿うものを選んでください。",
+      "options": [
+        "全て抵当と租鉱権の目的となる",
+        "試掘権だけ抵当の目的となる",
+        "BもCも抵当の目的とはならない",
+        "Bは抵当・租鉱権、Cは抵当の目的となり得るが、Aを同じ担保目的にしない"
+      ],
+      "answer": 3,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "13条は試掘と採掘を区分し、採掘権の設定根拠でもただし書を分けます。1は制限を落とし、2は試掘の扱いが逆、3は採掘権の明文を落としています。",
+      "sourceAnchors": [
+        "鉱業法11〜13・21・40条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "鉱業法60条の登録の効力について、採掘権を相続した者が「登録前なら相続取得も必ず無効で、届出は不要」と説明した。適切なものはどれですか。",
+      "options": [
+        "一般承継は60条の例外であり、51条の3の届出等も別途確認する",
+        "相続だけは当事者間売買へ変換される",
+        "登記に代わる登録なので60条の効力要件は全て無意味",
+        "原簿があれば取得からの届出期限も全てなくなる"
+      ],
+      "answer": 0,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "60条は一般承継を例外にしますが、51条の3の取得から3月以内の届出等をなくしません。2は承継原因の改変、3は59条と60条の役割の混同、4は届出と原簿を代用しています。",
+      "sourceAnchors": [
+        "鉱業法51条の3・59・60条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "漁協が自ら漁業を営まずに免許を受けた所定の区画漁業権X、株式会社の定置漁業権Y、他人の団体漁業権の漁場で営む入漁権Zを比較する。抵当の入口として正しいものはどれですか。",
+      "options": [
+        "Xは団体であるから普通に抵当を設定できる",
+        "Yを個別漁業権として78条の認可等を確認し、X・Zに同じ抵当設定を当てはめない",
+        "Zは登録できるので必ず抵当目的になる",
+        "個別漁業権は個人所有に限るのでYは除外"
+      ],
+      "answer": 1,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "Xは団体漁業権で77条2項の抵当章不適用、Zは98条の目的制限があります。Yは所有者が法人でも個別に当たり得ます。1/3/4はいずれも区分根拠を取り違えています。",
+      "sourceAnchors": [
+        "漁業法60・62・77・78・98条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "有効な個別漁業権の抵当設定契約をしたが、知事認可はない。認可なしでも原簿に記載さえすれば有効になるという説明への判断を選んでください。",
+      "options": [
+        "私法契約があれば行政認可は常に不要",
+        "免許取得と抵当認可は同一なので契約だけで足りる",
+        "78条2項の認可が効力要件であり、登録だけで欠缺を埋めない",
+        "国税の納期限より契約が古ければ認可を省略できる"
+      ],
+      "answer": 2,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "78条2項は認可を受けなければ抵当設定の効力が生じないとします。免許・契約・登録のいずれも、その認可を代用しません。4は徴16条の日付比較の前提となる担保の有効性を落としています。",
+      "sourceAnchors": [
+        "漁業法69・78・117条",
+        "徴16条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "採石業者登録を持つ会社が、他人の土地の採石権を25年間と定めた。第三者へ抵当を主張する資料を業者登録証だけで済ませることも予定している。適切なものはどれですか。",
+      "options": [
+        "業者登録があれば採石権・抵当の対抗も全て済む",
+        "採石権の期間は任意なので25年を維持できる",
+        "採石権は債権なので抵当の目的にはならない",
+        "5条の20年への短縮と、4条の物権及び土地側の登記を確認する"
+      ],
+      "answer": 3,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "5条は20年を超える期間を短縮します。4条は地上権規定を準用する物権で、32条の業者登録はその公示を代用しません。1/2/3はそれぞれ公示・期間・権利性質の誤りです。",
+      "sourceAnchors": [
+        "採石法4・5・32条",
+        "民177・369条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "地上権者甲の登記立木だけに抵当を設定し、その実行で乙が立木を買った。地上権はなお存続し、期間が定まっている。甲は抵当設定後に地上権を一方的に放棄しようとした。この二つの場面について、立木法5条の土地所有者の事例との違い、6条の利用関係と期間、8条の制限を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "立木は土地所有者ではなく地上権者に属するので、土地所有者の立木に関する5条1項の地上権設定みなしをそのまま使わない。6条1項により競売の場合について土地の賃貸借をしたものとみなし、地上権の存続期間内という制限がある。甲は抵当権者の承諾がなければ地上権を放棄できず、土地利用基礎を一方的に失わせる処理は8条に反する。",
+      "rubric": [
+        {
+          "criterion": "所有権と地上権の主体条件を区分",
+          "points": 1
+        },
+        {
+          "criterion": "6条の賃貸借みなし",
+          "points": 1
+        },
+        {
+          "criterion": "地上権存続期間内",
+          "points": 1
+        },
+        {
+          "criterion": "8条の承諾必要",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "立木は土地所有者ではなく地上権者に属するので、土地所有者の立木に関する5条1項の地上権設定みなしをそのまま使わない。6条1項により競売の場合について土地の賃貸借をしたものとみなし、地上権の存続期間内という制限がある。甲は抵当権者の承諾がなければ地上権を放棄できず、土地利用基礎を一方的に失わせる処理は8条に反する。",
+      "sourceAnchors": [
+        "立木法5・6・8条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "担保立木から、協定した施業方法によらず伐採された樹木が第三者へ売られた。抵当権者は「登記立木由来なので、買主の平穏公然な占有取得、善意無過失等を一切調べずに追及できる」と述べた。4条1項と5項の関係、調べるべき買主側の事情を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "協定方法によらない採取では、4条1項により分離後も抵当権を行うことができるのが出発点。ただし5項は民192〜194条の適用を妨げない。買主の取引行為、平穏公然な占有開始、善意無過失等の即時取得の要件や盗品・遺失物等の規律を必要に応じて調べる。登記由来という事実だけで第三者保護を排除する主張は誤り。",
+      "rubric": [
+        {
+          "criterion": "分離後追及の原則",
+          "points": 1
+        },
+        {
+          "criterion": "4条5項の民法適用",
+          "points": 1
+        },
+        {
+          "criterion": "取引・占有・善意無過失等を具体化",
+          "points": 1
+        },
+        {
+          "criterion": "第三者保護の一律排除を訂正",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "協定方法によらない採取では、4条1項により分離後も抵当権を行うことができるのが出発点。ただし5項は民192〜194条の適用を妨げない。買主の取引行為、平穏公然な占有開始、善意無過失等の即時取得の要件や盗品・遺失物等の規律を必要に応じて調べる。登記由来という事実だけで第三者保護を排除する主張は誤り。",
+      "sourceAnchors": [
+        "立木法3・4条",
+        "民192〜194条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "立木法4条1項の分離樹木について、所有者が抵当権者へ、同条4項に従う1か月以上の期間を適法に定めて競売を催告したが、抵当権者は期間内に競売しなかった。所有者は「元の貸金債権と、他の担保財産の抵当も全て消える」と述べた。条文の効果の範囲と、期限前競売の代金の扱いを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "4条4項の効果は、その催告対象の樹木について抵当権を行うことができなくなること。元本債権の全消滅や他の担保財産への効力消滅までを導かない。期限前でも2項による当該樹木の競売は可能だが、その場合の代金は供託する。",
+      "rubric": [
+        {
+          "criterion": "対象樹木への抵当行使不可",
+          "points": 2
+        },
+        {
+          "criterion": "元債権・他担保まで拡張しない",
+          "points": 1
+        },
+        {
+          "criterion": "期限前競売可能と代金供託",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "4条4項の効果は、その催告対象の樹木について抵当権を行うことができなくなること。元本債権の全消滅や他の担保財産への効力消滅までを導かない。期限前でも2項による当該樹木の競売は可能だが、その場合の代金は供託する。",
+      "sourceAnchors": [
+        "立木法4条2〜4項"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "採掘権の55条取消し後、57条の通知が2026年1月13日の日中に到達した。同じ日、別の鉱業財団の抵当権者も鉱業抵当法4条の対象通知を受けた。初日不算入、休日等の延長なしとする。単体と財団の期限をそれぞれ年月日で示し、通知前の取消日を起点にしない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "単体は鉱業法57条2項の到達日から30日で、1月14日から数えて2026年2月12日まで。財団は鉱業抵当法4条の通知を受けた日から6か月で2026年7月13日まで。各条が通知到達又は受領を起点とするので、取消日へ一律に置き換えない。",
+      "rubric": [
+        {
+          "criterion": "単体30日と2月12日",
+          "points": 1
+        },
+        {
+          "criterion": "財団6か月と7月13日",
+          "points": 1
+        },
+        {
+          "criterion": "初日不算入の計算",
+          "points": 1
+        },
+        {
+          "criterion": "各条の通知起点",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "単体は鉱業法57条2項の到達日から30日で、1月14日から数えて2026年2月12日まで。財団は鉱業抵当法4条の通知を受けた日から6か月で2026年7月13日まで。各条が通知到達又は受領を起点とするので、取消日へ一律に置き換えない。",
+      "sourceAnchors": [
+        "鉱業法57条",
+        "鉱業抵当法4条",
+        "民140・143条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "抵当登録済み採掘権が、場合Aは鉱業法53条、場合Bは放棄による消滅登録となった。Aの補償金は80万円と適法に確定し、抵当権者の直接払いの承諾はない。A/Bで57条の特別競売を用いるか、Aの供託額と根拠、供託後の権利行使を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "Aは57条2項ただし書の52〜54条除外に該当し、同条の特別競売保護を用いない。53条の2第7項により国は補償金80万円を供託し、抵当権者は8項により供託金へ権利行使できる。Bは58条が57条を準用するので、通知・30日・競売目的の存続等の条件を確認する。",
+      "rubric": [
+        {
+          "criterion": "Aの除外",
+          "points": 1
+        },
+        {
+          "criterion": "80万円供託と53条の2第7項",
+          "points": 1
+        },
+        {
+          "criterion": "8項の供託金への行使",
+          "points": 1
+        },
+        {
+          "criterion": "Bの58条準用",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "Aは57条2項ただし書の52〜54条除外に該当し、同条の特別競売保護を用いない。53条の2第7項により国は補償金80万円を供託し、抵当権者は8項により供託金へ権利行使できる。Bは58条が57条を準用するので、通知・30日・競売目的の存続等の条件を確認する。",
+      "sourceAnchors": [
+        "鉱業法53・53条の2・57・58条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "鉱業法57条による単体採掘権の特別競売が適法に完結した。売却代金600万円、競売費用12万円、同条で弁済する抵当債務430万円で、他の費用・担保・国税差押え・交付要求の競合はない。残余の額と帰属を答え、元の権利者への交付及びその者の国税納付との関係を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "残余は600−12−430＝158万円。57条5項で国庫に帰属するため、元の権利者へ通常の滞納配当残金として交付しない。国庫に入るというだけで、その者の国税を158万円納付したと当然に消し込むこともできない。残余帰属の規定と税債務の納付手続を区分する。",
+      "rubric": [
+        {
+          "criterion": "計算過程と158万円",
+          "points": 1
+        },
+        {
+          "criterion": "57条5項の国庫帰属",
+          "points": 1
+        },
+        {
+          "criterion": "権利者への通常残金交付を否定",
+          "points": 1
+        },
+        {
+          "criterion": "国税納付消込みとの区分",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "残余は600−12−430＝158万円。57条5項で国庫に帰属するため、元の権利者へ通常の滞納配当残金として交付しない。国庫に入るというだけで、その者の国税を158万円納付したと当然に消し込むこともできない。残余帰属の規定と税債務の納付手続を区分する。",
+      "sourceAnchors": [
+        "鉱業法57条5項"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "個別漁業権の買受けに際し「抵当実行なら買受人の適格性も知事認可も不要」と説明された。別に、入漁権の譲渡では「免許漁業原簿の登録があるから漁業権者の同意は不要」と説明された。両者を条文の条件から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "個別漁業権の抵当実行による移転も79条の知事認可を要し、取得者の所定適格性も確認する。入漁権の譲渡は98条3項の漁業権者の同意を要する。登録はこれらの認可・適格性・同意を代用しない。入漁権自体を個別漁業権の抵当と同一視もしない。",
+      "rubric": [
+        {
+          "criterion": "79条の実行時認可",
+          "points": 1
+        },
+        {
+          "criterion": "取得者適格性",
+          "points": 1
+        },
+        {
+          "criterion": "98条3項の譲渡同意",
+          "points": 1
+        },
+        {
+          "criterion": "登録や権利類型との区別",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "個別漁業権の抵当実行による移転も79条の知事認可を要し、取得者の所定適格性も確認する。入漁権の譲渡は98条3項の漁業権者の同意を要する。登録はこれらの認可・適格性・同意を代用しない。入漁権自体を個別漁業権の抵当と同一視もしない。",
+      "sourceAnchors": [
+        "漁業法79・98・117条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q16",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "漁業権の資料で、Aは93条1項による公益上の取消し、Bは錯誤によりした免許の取消し、Cは75条所定の存続期間の満了と確定した。抵当権者は、全て「95条2項で通知後30日競売できる」と述べた。A/Bの除外、Cの消滅原因を踏まえて訂正し、期間のある権利で先に調べる資料も述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "AとBは95条2項ただし書の明文除外であり、同項の特別競売を利用できない。Cは取消しでなく期間満了なので、取消しを対象とする95条をそのまま延長制度として用いない。75条の漁業権類型、所定省令該当性、漁場計画の短縮期間、免許日・満了日を確認する。",
+      "rubric": [
+        {
+          "criterion": "A公益取消し除外",
+          "points": 1
+        },
+        {
+          "criterion": "B錯誤取消し除外",
+          "points": 1
+        },
+        {
+          "criterion": "C満了と取消しの区別",
+          "points": 1
+        },
+        {
+          "criterion": "75条の期間資料を具体化",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "AとBは95条2項ただし書の明文除外であり、同項の特別競売を利用できない。Cは取消しでなく期間満了なので、取消しを対象とする95条をそのまま延長制度として用いない。75条の漁業権類型、所定省令該当性、漁場計画の短縮期間、免許日・満了日を確認する。",
+      "sourceAnchors": [
+        "漁業法75・93〜95条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q17",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "漁業法95条の適用対象の取消しで、適法に特別競売が行われた。代金160万円、費用4万円、弁済する登録先取債務60万円、登録抵当債務55万円、他の競合なしとする。残金額と帰属を計算し、買受代金納付による取消しの効果を答えてください。また、競売目的の存続と、誰でも自由に操業できるという主張の違いも説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "残金は160−4−60−55＝41万円で、95条4項により国庫へ帰属する。買受人が代金を納付したときは、5項により取消しが効力を生じなかったとみなす。競売目的の範囲の存続と、取消し前後を問わず誰でも自由に操業できるという主張とは区分する。",
+      "rubric": [
+        {
+          "criterion": "計算過程と41万円",
+          "points": 1
+        },
+        {
+          "criterion": "95条4項の国庫帰属",
+          "points": 1
+        },
+        {
+          "criterion": "5項の納付時みなし",
+          "points": 1
+        },
+        {
+          "criterion": "目的限定の存続との区分",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "残金は160−4−60−55＝41万円で、95条4項により国庫へ帰属する。買受人が代金を納付したときは、5項により取消しが効力を生じなかったとみなす。競売目的の範囲の存続と、取消し前後を問わず誰でも自由に操業できるという主張とは区分する。",
+      "sourceAnchors": [
+        "漁業法95条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q18",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "採石法12条の決定申請書の副本交付を受けた土地所有者が、14条の制限期間中に無許可で新たな土地抵当を設定しようとしている。別件では、同決定により第三者の抵当付き権利を消滅させ、補償金70万円を直接払いする予定だが、抵当権者は承諾していない。両件の必要手続と、供託金への権利行使を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "前件では14条1項により経済産業局長の許可なく新権利を設定できない。後件は25条1項の補償金70万円の供託が必要で、承諾がない以上直接払いの例外を使わない。抵当権者は2項により供託金へ権利行使できる。単なる採石業者登録では、これらの処分制限や供託を代用できない。",
+      "rubric": [
+        {
+          "criterion": "14条1項の許可",
+          "points": 1
+        },
+        {
+          "criterion": "70万円供託",
+          "points": 1
+        },
+        {
+          "criterion": "承諾例外不適用",
+          "points": 1
+        },
+        {
+          "criterion": "25条2項の権利行使",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "前件では14条1項により経済産業局長の許可なく新権利を設定できない。後件は25条1項の補償金70万円の供託が必要で、承諾がない以上直接払いの例外を使わない。抵当権者は2項により供託金へ権利行使できる。単なる採石業者登録では、これらの処分制限や供託を代用できない。",
+      "sourceAnchors": [
+        "採石法13・14・25条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q19",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "登録抵当付きダム使用権について、場合Aは権利者が分割の許可申請をしようとし、場合Bは24条取消しにより全部消滅し、28条1項の還付額は適法に240万円と算定済みである。登録抵当権者の同意・直接払い承諾はいずれもない。Aの申請とBの供託額・供託後の権利行使を答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "Aは22条の大臣許可が必要であり、その許可申請には23条により登録抵当権者の同意が必要。Bは28条2項により国が240万円を供託し、抵当権者は3項により供託金へ権利行使できる。還付金が算定済みという条件は、抵当権者の同意や承諾を得たことを意味しない。",
+      "rubric": [
+        {
+          "criterion": "22条の分割許可",
+          "points": 1
+        },
+        {
+          "criterion": "23条の申請前同意",
+          "points": 1
+        },
+        {
+          "criterion": "国が240万円供託",
+          "points": 1
+        },
+        {
+          "criterion": "28条3項の権利行使",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "Aは22条の大臣許可が必要であり、その許可申請には23条により登録抵当権者の同意が必要。Bは28条2項により国が240万円を供託し、抵当権者は3項により供託金へ権利行使できる。還付金が算定済みという条件は、抵当権者の同意や承諾を得たことを意味しない。",
+      "sourceAnchors": [
+        "特定多目的ダム法22・23・24・28条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-resource-rights-security-q20",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "prompt": "以下は互いに独立する納税者A/Bの通常の滞納換価で、法令は2026年4月3日版とする。両者の国税は各150万円、法定納期限等は各2026年3月16日。費用控除後の原資は各190万円。Aの採石権の有効な抵当100万円は3月17日に設定・登記、Bの採掘権の有効な抵当80万円は3月16日に設定・登録され、必要な許可等も完了している。取消し等の特別競売、他の優先者、期間利息等はない。各抵当と国税の順位を判断し、A/Bそれぞれの国税・抵当への配当額と国税残額を計算してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "Aは抵当設定・登記が法定納期限等の後なので、徴10・16条から国税150万円を先に、残り40万円を抵当へ配当し、国税残額0。Bは当日を含む以前の有効設定・登録で抵当80万円が先、残り110万円を国税へ配当し、国税残額40万円。別々の納税者・原資を混ぜず、採石の登記と採掘の登録の条件を満たした前提で日付を比較する。",
+      "rubric": [
+        {
+          "criterion": "Aの後設定と国税先順位",
+          "points": 1
+        },
+        {
+          "criterion": "A税150/抵当40/税残0万円",
+          "points": 1
+        },
+        {
+          "criterion": "Bの当日以前・抵当先順位",
+          "points": 1
+        },
+        {
+          "criterion": "B抵当80/税110/税残40万円",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "explanation": "Aは抵当設定・登記が法定納期限等の後なので、徴10・16条から国税150万円を先に、残り40万円を抵当へ配当し、国税残額0。Bは当日を含む以前の有効設定・登録で抵当80万円が先、残り110万円を国税へ配当し、国税残額40万円。別々の納税者・原資を混ぜず、採石の登記と採掘の登録の条件を満たした前提で日付を比較する。",
+      "sourceAnchors": [
+        "徴10・16条",
+        "採石法4条",
+        "鉱業法13・59・60条"
+      ],
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ]
+    }
+  ],
+  "authorChecks": {
+    "status": "著者の初回全段落・全設問再読と再計算。独立確認pending",
+    "bodyCharactersBeforeSources": 6638,
+    "questionCount": 20,
+    "arithmetic": [
+      "例2 500-10-320=170万円;2026/6/2到達30日→7/2;6か月→12/2",
+      "例3 50-2-30-10=8万円;2026/6/15→7/15",
+      "問12 2026/1/13→2/12(30日);7/13(6か月)",
+      "問14 600-12-430=158万円",
+      "問17 160-4-60-55=41万円",
+      "問20 A190-150=40;B190-80=110;150-110=40万円"
+    ],
+    "legalChecks": "樹木集団の種類制限と植栽例外・保存制限・転写、施業採取と第三者保護、土地利用のみなし、採掘/試掘及び登録効力例外、個別/団体/入漁、認可と登録、取消原因別30日と補償・還付供託、採石業者登録、ダムの申請前同意を区分",
+    "editorial": "必要な否定は誤適用訂正の根拠と結び付けた。各記述の配点は設問で求めた判断・計算・理由に対応",
+    "automatedJapaneseReview": "sudachipyなしのためlint/calques未実行。著者による全文再読及びparagraphs構造点検は独立日本語審査の代用にしない",
+    "paragraphStructureCheck": {
+      "script": "natural-japanese/scripts/paragraphs.py --json",
+      "executedOn": "2026-10-27",
+      "exitCode": 0,
+      "structureItems": 65,
+      "evidenceFile": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\checks\\kokuzei-resource-rights-paragraphs.json",
+      "limitations": "lint/calquesはModuleNotFoundError:sudachipyで終了1。自動校正完了ではない"
+    }
+  }
+}

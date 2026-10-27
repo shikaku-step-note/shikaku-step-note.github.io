@@ -1,0 +1,3108 @@
+{
+  "id": "zr2-kokuzei-unit-priority-review",
+  "subject": "kokuzei",
+  "type": "independent_unit_assessment",
+  "moduleId": "kokuzei-priority",
+  "title": "優先関係単元：権利の有効性・比較日・配当原資をつなぐ",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "targetLessonIds": [
+    "zr2-kokuzei-priority-general",
+    "zr2-kokuzei-statutory-dates",
+    "zr2-kokuzei-pledge-mortgage",
+    "zr2-kokuzei-privileges-liens",
+    "zr2-kokuzei-provisional-security",
+    "zr2-kokuzei-transferred-inherited",
+    "zr2-kokuzei-competing-distribution",
+    "zr2-kokuzei-security-registers",
+    "zr2-kokuzei-special-privileges",
+    "zr2-kokuzei-other-fund-security",
+    "zr2-kokuzei-resource-rights-security"
+  ],
+  "questionCount": 30,
+  "totalPoints": 100,
+  "glossaryQuestionCount": 22,
+  "glossaryTotalPoints": 44,
+  "gradingPolicy": "独自の学習用配点。全適用問題と場面用語を記述入力とし、法的理由・条件・途中計算を要素別ルーブリックで評価。同義の表現を認める。公式の非公表採点基準や合否予測ではない",
+  "durationMinutes": null,
+  "durationStatus": "未試行。本試験120分の独立模試として検証済みとは扱わない",
+  "questions": [
+    {
+      "id": "zr2-kokuzei-priority-review-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-priority-general": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-priority-general-o1"
+      ],
+      "prompt": "裁判所の強制換価で代金300万円を得た。適法な手続費用18万円、国税90万円、無担保売掛債権80万円が参加した。他の租税・権利・差押え等はなく、債権額は確定済み。徴収法8・9条の位置付けを示し、費用・国税・売掛債権への配当と、残金の額を計算してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "9条の強制換価手続費用18万円を先に処理する。残額282万円から、8条の国税一般優先により国税90万円、一般売掛80万円、残金112万円となる。国税優先は一般債権を参加できない債権へ変える規定ではなく、この裁判所手続の参加条件を満たした売掛債権も、税等の後の原資から配当を受ける。",
+      "rubric": [
+        {
+          "criterion": "費用18と9条",
+          "points": 1
+        },
+        {
+          "criterion": "国税90の一般優先と売掛80",
+          "points": 1
+        },
+        {
+          "criterion": "残金112・総額検算",
+          "points": 1
+        }
+      ],
+      "explanation": "9条の強制換価手続費用18万円を先に処理する。残額282万円から、8条の国税一般優先により国税90万円、一般売掛80万円、残金112万円となる。国税優先は一般債権を参加できない債権へ変える規定ではなく、この裁判所手続の参加条件を満たした売掛債権も、税等の後の原資から配当を受ける。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴8・9条"
+      ],
+      "independentCaseDesign": "滞納処分の一般債権不配当と裁判所手続の参加債権を区分し、一般優先の限界を説明する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-priority-general": [
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-priority-general-o2"
+      ],
+      "prompt": "同一財産に国税N80万円と地方税L110万円が適法に参加した。Nが先に差押え、Lは後から交付要求した。費用処理後の原資130万円、他の権利なし。場合Aは両方無担保、場合BはLだけがその財産を担保に徴収できる税で、担保国税等の適用条件は全て満たす。両場合の配当と残税、根拠となる優先関係を答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "Aは差押先着手によりN80、L50万円、L残税60万円。Bは法定の担保優先によりL110、N20万円、N残税60万円。差押先着手だけで担保税への優先を決めず、徴12・14条等の優先原因を分ける。各場合の配当合計は130万円。",
+      "rubric": [
+        {
+          "criterion": "Aの差押先着手",
+          "points": 1
+        },
+        {
+          "criterion": "A80/50とL残60",
+          "points": 1
+        },
+        {
+          "criterion": "Bの担保優先",
+          "points": 1
+        },
+        {
+          "criterion": "B110/20とN残60",
+          "points": 1
+        }
+      ],
+      "explanation": "Aは差押先着手によりN80、L50万円、L残税60万円。Bは法定の担保優先によりL110、N20万円、N残税60万円。差押先着手だけで担保税への優先を決めず、徴12・14条等の優先原因を分ける。各場合の配当合計は130万円。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴12・14条",
+        "地方税法の対応規定"
+      ],
+      "independentCaseDesign": "同じ税相互の関係について担保の有無だけで判断経路が変わる対照"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-priority-general": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-priority-general-o1",
+        "zr2-kokuzei-priority-general-o2"
+      ],
+      "prompt": "滞納処分で酒類を換価したことにより、新たに徴収すべき酒税16万円が適法に生じ、その全額が徴11条の対象と確定している。換価代金100万円、直接滞納処分費4万円、差押えに係る国税65万円、後から適法に参加した国税30万円。他の競合なし。11条の税を単に発生の遅い税として後回しにする答案を訂正し、配当と残税を計算してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "直接費4万円の後、換価によって生じた対象酒税16万円を11条により優先処理する。残り80万円から先着手の差押国税65万円、後続国税15万円となり、後続国税の残額は15万円。酒税の課税原因や額は所与の条件で、古い順の税額表に置き換えない。",
+      "rubric": [
+        {
+          "criterion": "直接費4と11条対象酒税16",
+          "points": 1
+        },
+        {
+          "criterion": "差押65・後続15",
+          "points": 1
+        },
+        {
+          "criterion": "後続残15と理由",
+          "points": 1
+        }
+      ],
+      "explanation": "直接費4万円の後、換価によって生じた対象酒税16万円を11条により優先処理する。残り80万円から先着手の差押国税65万円、後続国税15万円となり、後続国税の残額は15万円。酒税の課税原因や額は所与の条件で、古い順の税額表に置き換えない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴10〜13条"
+      ],
+      "independentCaseDesign": "換価自体で生じる税と元々の差押税を、発生日の並べ替えではなく発生原因から区分する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-statutory-dates": [
+          1
+        ],
+        "zr2-kokuzei-pledge-mortgage": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-statutory-dates-o1",
+        "zr2-kokuzei-pledge-mortgage-o1"
+      ],
+      "prompt": "通常の申告納税方式の国税を三行に分ける。当初額70万円は法定納期限2026年3月16日までの申告で確定。5月12日の修正申告で増差30万円が確定し、7月8日に発した更正通知でさらに20万円増加した。3行とも同じ法定納期限等でよいか。各比較日と、6月1日の有効な抵当設定・登記との先後を答えてください。他の特例なし。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "当初70万円は通常の法定納期限3月16日。修正増差30万円は15条1項1号の修正申告日5月12日。更正増差20万円は所定の更正通知発出日7月8日。6月1日の抵当は当初・修正増差の比較日後で、その両額に対しては後。更正増差については比較日以前で優先条件を満たす。同一税目の合計120万円へ一つの日を付さない。",
+      "rubric": [
+        {
+          "criterion": "当初3/16",
+          "points": 1
+        },
+        {
+          "criterion": "修正5/12",
+          "points": 1
+        },
+        {
+          "criterion": "更正7/8",
+          "points": 1
+        },
+        {
+          "criterion": "抵当と各額の関係",
+          "points": 1
+        }
+      ],
+      "explanation": "当初70万円は通常の法定納期限3月16日。修正増差30万円は15条1項1号の修正申告日5月12日。更正増差20万円は所定の更正通知発出日7月8日。6月1日の抵当は当初・修正増差の比較日後で、その両額に対しては後。更正増差については比較日以前で優先条件を満たす。同一税目の合計120万円へ一つの日を付さない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴15条1項1・2号、16条"
+      ],
+      "independentCaseDesign": "一つの債権額を更正等の発生原因で分解し、担保関係を額ごとに結論化する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-statutory-dates": [
+          2
+        ],
+        "zr2-kokuzei-transferred-inherited": [
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-statutory-dates-o2",
+        "zr2-kokuzei-transferred-inherited-o2"
+      ],
+      "prompt": "被相続人の源泉税は給与支払時に相続前に成立・自動確定していたが、納税告知書の初回発出は死亡後であった。この税を相続人従前の固有財産から徴収するとき、「自動確定が相続前だから比較日は必ず相続日」とする説明を、徴15条1項7号の括弧書条件から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "所定の自動確定国税について、7号の相続前確定という条件を満たすには、括弧書きにより相続日前に納税告知書が発せられていることが必要。本問にはそれがないので、相続日へ変更する特則は用いず、対象源泉税の通常の5号の2の初回告知書発出日を用いる。成立・自動確定と比較日特則の事前告知条件を分ける。",
+      "rubric": [
+        {
+          "criterion": "括弧書きの相続前告知条件",
+          "points": 1
+        },
+        {
+          "criterion": "本問は相続日特則不適用",
+          "points": 1
+        },
+        {
+          "criterion": "5号の2の初回発出日",
+          "points": 1
+        }
+      ],
+      "explanation": "所定の自動確定国税について、7号の相続前確定という条件を満たすには、括弧書きにより相続日前に納税告知書が発せられていることが必要。本問にはそれがないので、相続日へ変更する特則は用いず、対象源泉税の通常の5号の2の初回告知書発出日を用いる。成立・自動確定と比較日特則の事前告知条件を分ける。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴15条1項5号の2・7号"
+      ],
+      "independentCaseDesign": "相続税額の由来だけで基準日を付ける答案の欠落条件を特定する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-pledge-mortgage": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-pledge-mortgage-o1"
+      ],
+      "prompt": "動産質の契約・現実の引渡しは6月28日、第三者対抗要件も同日に適法に具備したが、国税に対して時点を証明する書面の確定日付は7月3日である。国税の法定納期限等は7月1日。全て同年で、他の法定証明はない。この質権が国税に優先するか、実際の設定と徴15条3項の証明上の時点を分けて答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "当事者間の実際の設定・対抗要件は6月28日でも、徴15条3項の所定の証明では確定日付7月3日が基準となる。これは7月1日以前ではなく、この条件では質権の国税優先を認めない。契約日又は占有取得だけを証明上の確定日付に置き換えない。",
+      "rubric": [
+        {
+          "criterion": "実設定と対抗の6/28",
+          "points": 1
+        },
+        {
+          "criterion": "国税への証明上7/3",
+          "points": 1
+        },
+        {
+          "criterion": "7/1以前を満たさず優先否定",
+          "points": 1
+        }
+      ],
+      "explanation": "当事者間の実際の設定・対抗要件は6月28日でも、徴15条3項の所定の証明では確定日付7月3日が基準となる。これは7月1日以前ではなく、この条件では質権の国税優先を認めない。契約日又は占有取得だけを証明上の確定日付に置き換えない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴15条2・3項",
+        "徴令4条"
+      ],
+      "independentCaseDesign": "私法上の設定済みという主張と国税への時点証明の不足を区分する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-pledge-mortgage": [
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-pledge-mortgage-o2"
+      ],
+      "prompt": "法定納期限等以前の適法な普通抵当がある。元本200万円、利息は3年分36万円だが、そのうち民375条の最後2年分は24万円と確定。ほかに同条の許す2年分の範囲に収まる遅延損害金8万円があり、利息と損害金の期間の重複等はない。特別登記なし。優先対象額を計算し、利息3年分を全部加える計算を訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "元本200＋最後2年の利息24＋所定範囲の損害金8＝232万円。36万円を全て加えた244万円とはしない。利息と損害金について最後2年分という範囲を別々の無制限な上限へ広げず、所与の重複なし・適法範囲という条件を使う。",
+      "rubric": [
+        {
+          "criterion": "元本200",
+          "points": 1
+        },
+        {
+          "criterion": "利息24・損害8の条件",
+          "points": 1
+        },
+        {
+          "criterion": "計232と誤計244訂正",
+          "points": 1
+        }
+      ],
+      "explanation": "元本200＋最後2年の利息24＋所定範囲の損害金8＝232万円。36万円を全て加えた244万円とはしない。利息と損害金について最後2年分という範囲を別々の無制限な上限へ広げず、所与の重複なし・適法範囲という条件を使う。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴15条4項・16条",
+        "民375条"
+      ],
+      "independentCaseDesign": "期間別の明細から優先額へ拾う行を選び、優先対象と単なる未払額を区分する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-pledge-mortgage": [
+          2
+        ],
+        "zr2-kokuzei-competing-distribution": [
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-pledge-mortgage-o2",
+        "zr2-kokuzei-competing-distribution-o2"
+      ],
+      "prompt": "未確定根抵当の適法な通知時元本は80万円、その後適法に確定した現存元本は120万円、対象利息等18万円、極度額180万円。根抵当は国税に優先する時点等の条件を満たし、18条ただし書の害される私債権者はない。費用処理後190万円、国税150万円。配当案は「極度180万円を先に払い税10万円」とする。民法の担保範囲、18条の国税優先限度、最終配当と残税を分けて訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "民法上の被担保額は現存元本120＋利息等18＝138万円で極度180万円内。国税への優先限度は通知時元本80＋18＝98万円。98を先に配り、残り92万円を国税へ配当し、国税残額58万円。極度額は債権の実在額でも国税への優先額でもなく、残る元本40万円を税より先にしない。",
+      "rubric": [
+        {
+          "criterion": "民法上138・極度との区分",
+          "points": 1
+        },
+        {
+          "criterion": "国税優先98",
+          "points": 1
+        },
+        {
+          "criterion": "根抵当98・税92",
+          "points": 1
+        },
+        {
+          "criterion": "税残58と元本残40の区分",
+          "points": 1
+        }
+      ],
+      "explanation": "民法上の被担保額は現存元本120＋利息等18＝138万円で極度180万円内。国税への優先限度は通知時元本80＋18＝98万円。98を先に配り、残り92万円を国税へ配当し、国税残額58万円。極度額は債権の実在額でも国税への優先額でもなく、残る元本40万円を税より先にしない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴18条",
+        "民398条の3"
+      ],
+      "independentCaseDesign": "作成済みの配当案の極度額誤用を、民法と国税の二段階で監査する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-pledge-mortgage": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-pledge-mortgage-o1",
+        "zr2-kokuzei-pledge-mortgage-o2"
+      ],
+      "prompt": "通常抵当の原額120万円は国税の比較日前に有効設定・登記され、増額60万円は比較日後に有効に設定・増額登記された。国税100万円、費用処理後原資250万円、利息等・他競合なし。増額部分まで最初の登記日で優先させる答案を訂正し、三つの配当額と未回収増額を計算してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "原額120が先、国税100が次、残り30万円を増額部分へ配る。未回収増額は60−30＝30万円。増額部分60に元の設定日を付けず、その追加の担保設定・公示時点で国税との関係を比較する。",
+      "rubric": [
+        {
+          "criterion": "原額と増額の時点分離",
+          "points": 1
+        },
+        {
+          "criterion": "120/100/30の配当",
+          "points": 1
+        },
+        {
+          "criterion": "増額残30",
+          "points": 1
+        }
+      ],
+      "explanation": "原額120が先、国税100が次、残り30万円を増額部分へ配る。未回収増額は60−30＝30万円。増額部分60に元の設定日を付けず、その追加の担保設定・公示時点で国税との関係を比較する。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴16条"
+      ],
+      "independentCaseDesign": "一つの抵当登記記録内の原額と増額を異なる優先順位の行へ分ける"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-privileges-liens": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-privileges-liens-o1"
+      ],
+      "prompt": "2026年5月分の子の監護費用の定期金が月30万円、対象の子は3人で、施行日・債権の性質等の新先取特権の全条件を満たす。民306条の一般先取の類型名を全て示し、この定期金の1か月の先取対象限度と超過額を計算してください。国税との時間比較や配当はこの問では求めない。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "一般先取は共益の費用、雇用関係、子の監護の費用、葬式の費用、日用品の供給の5類型。所定月額8万円×3人＝24万円を先取対象限度とし、30−24＝6万円はこの月額限度を超える。私法上の先取成立の判断だけで国税優先まで確定しない。",
+      "rubric": [
+        {
+          "criterion": "5類型の列挙",
+          "points": 1
+        },
+        {
+          "criterion": "8×3＝24万円",
+          "points": 1
+        },
+        {
+          "criterion": "超過6万円と評価範囲",
+          "points": 1
+        }
+      ],
+      "explanation": "一般先取は共益の費用、雇用関係、子の監護の費用、葬式の費用、日用品の供給の5類型。所定月額8万円×3人＝24万円を先取対象限度とし、30−24＝6万円はこの月額限度を超える。私法上の先取成立の判断だけで国税優先まで確定しない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "民306・308条の2",
+        "監護費用先取省令1条",
+        "令和6法33号附則3条"
+      ],
+      "independentCaseDesign": "旧4類型の記憶を更新し、限度額と国税優先を別の判断として扱う"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-privileges-liens": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-privileges-liens-o1"
+      ],
+      "prompt": "通常の不動産工事の先取特権について、工事前の適法な予算登記65万円、現存増価60万円、未払工事債権72万円で、民法及び徴19条の他の条件は全て満たす。換価代金150万円、直接費5万円、国税90万円、他の競合なし。優先工事額・税配当・残税を示してください。都市再開発等のみなし工事の事例ではない。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "通常工事の優先額は未払72、予算65、現存増価60の範囲から60万円。費用5の後の145万円から工事60、国税85万円となり、税残5万円。未払額又は予算だけで優先額を決めない。",
+      "rubric": [
+        {
+          "criterion": "通常工事の条件から60万円",
+          "points": 1
+        },
+        {
+          "criterion": "費用後145と工事60/税85",
+          "points": 1
+        },
+        {
+          "criterion": "税残5",
+          "points": 1
+        }
+      ],
+      "explanation": "通常工事の優先額は未払72、予算65、現存増価60の範囲から60万円。費用5の後の145万円から工事60、国税85万円となり、税残5万円。未払額又は予算だけで優先額を決めない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴19条",
+        "民327・338条"
+      ],
+      "independentCaseDesign": "通常工事とみなし工事を明示して切り分け、三つの上限を比較する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-privileges-liens": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-privileges-liens-o1"
+      ],
+      "prompt": "不動産賃貸の先取について、民315条で拾う対象債権は期間選別後40万円と適正に計算済みである。賃貸人は敷金13万円を受け取り、その額をまだ対象債権へ充当していない。民316条を適用した先取対象額を示し、同じ敷金を税側の原資にも加えて二重に計算する案の問題を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "敷金で弁済を受けない残額について先取を有するため、40−13＝27万円。13万円を控除しておきながら、同一の敷金を新たな無負担換価原資として当然に足すと、財産帰属と充当を二重計上する。敷金関係の帰属・精算条件を確認し、この設問の先取対象27万円と原資の算定を区分する。",
+      "rubric": [
+        {
+          "criterion": "316条の残額原則",
+          "points": 1
+        },
+        {
+          "criterion": "27万円",
+          "points": 1
+        },
+        {
+          "criterion": "同一敷金の二重計上の指摘",
+          "points": 1
+        }
+      ],
+      "explanation": "敷金で弁済を受けない残額について先取を有するため、40−13＝27万円。13万円を控除しておきながら、同一の敷金を新たな無負担換価原資として当然に足すと、財産帰属と充当を二重計上する。敷金関係の帰属・精算条件を確認し、この設問の先取対象27万円と原資の算定を区分する。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "民315・316条"
+      ],
+      "independentCaseDesign": "債権の期間選別後の敷金控除と換価原資の計上を会計的に検算する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-privileges-liens": [
+          2
+        ],
+        "zr2-kokuzei-priority-general": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-privileges-liens-o2",
+        "zr2-kokuzei-priority-general-o1"
+      ],
+      "prompt": "直接費5万円を含む換価代金190万円。徴21条の適法な留置債権25万円、国税に優先する抵当90万円、国税80万円がある。留置の成立は抵当・国税の比較日より後だが、適用条件・証明は全て満たす。他の競合なし。順位と配当を求め、国税残額も答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "直接費5、留置25、抵当90、国税70万円の順で合計190万円。税残10万円。21条の留置の条件を満たす場合は、成立が比較日後という理由だけで抵当や国税の後へ落とさない。私法上の占有・留置成立と徴21条の配当上の扱いの両方を確認したという所与条件を使う。",
+      "rubric": [
+        {
+          "criterion": "直接費5",
+          "points": 1
+        },
+        {
+          "criterion": "留置25の優先",
+          "points": 1
+        },
+        {
+          "criterion": "抵当90と国税70",
+          "points": 1
+        },
+        {
+          "criterion": "税残10及び後成立だけで排除しない理由",
+          "points": 1
+        }
+      ],
+      "explanation": "直接費5、留置25、抵当90、国税70万円の順で合計190万円。税残10万円。21条の留置の条件を満たす場合は、成立が比較日後という理由だけで抵当や国税の後へ落とさない。私法上の占有・留置成立と徴21条の配当上の扱いの両方を確認したという所与条件を使う。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴10・21条"
+      ],
+      "independentCaseDesign": "留置の成立日だけで配当順を並べる誤りを、既存抵当と国税の双方に対して訂正する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-provisional-security": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-provisional-security-o1"
+      ],
+      "prompt": "有効な仮登記担保が国税の法定納期限等以前に仮登記されている。徴23条の優先対象は、元本160万円、適法な最後2年分の利息12万円、所定範囲の損害金6万円で、限度の重複なし。代金260万円、直接費10万円、国税120万円。他の競合なし。優先額と配当・残税を計算し、本登記日を比較日とする案を訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "優先担保額160＋12＋6＝178万円。直接費10の後250万円から担保178、国税72万円、税残48万円。23条の対象では仮登記の日で時点を比較するので、後日の本登記だけで国税への優劣を逆転させない。",
+      "rubric": [
+        {
+          "criterion": "優先178万円",
+          "points": 1
+        },
+        {
+          "criterion": "担保178/税72/税残48",
+          "points": 1
+        },
+        {
+          "criterion": "仮登記日の基準",
+          "points": 1
+        }
+      ],
+      "explanation": "優先担保額160＋12＋6＝178万円。直接費10の後250万円から担保178、国税72万円、税残48万円。23条の対象では仮登記の日で時点を比較するので、後日の本登記だけで国税への優劣を逆転させない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴23条",
+        "仮登記担保法13条"
+      ],
+      "independentCaseDesign": "仮登記の時点と元本以外の優先額を一つの監査設問で確認する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-provisional-security": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-provisional-security-o1",
+        "zr2-kokuzei-provisional-security-o2"
+      ],
+      "prompt": "仮登記担保権者の私的実行で清算期間が適法に経過し、清算金120万円が確定した。その清算金について、適法に対抗要件・権利行使条件を満たす後順位抵当70万円と国税80万円があり、抵当が当該税に優先する。担保権者は「自分の土地になったので清算金を払わず全額保持できる」と述べた。支払先の関係と抵当・国税へ回る額、国税残額を答えてください。他の競合なし。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "所有権取得と清算金の支払義務は別で、清算金への所定の権利行使を無視して保持できない。所与の優先関係により120万円から抵当70、国税50万円、税残30万円。仮登記担保法の清算と後順位者等の保護、清算金への国税の徴収を区分する。",
+      "rubric": [
+        {
+          "criterion": "所有権と清算金義務を区分",
+          "points": 1
+        },
+        {
+          "criterion": "抵当70・税50",
+          "points": 1
+        },
+        {
+          "criterion": "税残30及び権利行使条件",
+          "points": 1
+        }
+      ],
+      "explanation": "所有権取得と清算金の支払義務は別で、清算金への所定の権利行使を無視して保持できない。所与の優先関係により120万円から抵当70、国税50万円、税残30万円。仮登記担保法の清算と後順位者等の保護、清算金への国税の徴収を区分する。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "仮登記担保法2〜8条"
+      ],
+      "independentCaseDesign": "国が元の不動産を売る場面ではない私的清算で、徴収原資を清算金として特定する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q16",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-provisional-security": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-provisional-security-o1",
+        "zr2-kokuzei-provisional-security-o2"
+      ],
+      "prompt": "譲渡担保について徴24条の全条件を満たす国税180万円がある。適法な告知書発出は2026年4月3日。当時の債務者財産の回収見込50万円だけを理由に、物的責任を130万円と固定する案が作られた。その後、債務者財産から実際には10万円のみ徴収し、担保財産には残税を十分徴収できる原資がある。特例による早期差押事由はない。通常の差押可能な最初の日と、担保財産からの徴収額を示し、当初不足見込と告知対象額を区分してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "24条3項の発出日から10日を経過した日までの制限を適用し、通常の差押可能な最初の日は4月15日。国税残額は180−10＝170万円で、所定の補充性等を満たすなら担保財産から170万円を徴収する。当初の不足見込130万円を永久の責任限度にしない。告知の対象額と実際に他財産で徴収した額を区分し、同じ180万円を二重に取らない。",
+      "rubric": [
+        {
+          "criterion": "24条3項の期間条件",
+          "points": 1
+        },
+        {
+          "criterion": "4/15",
+          "points": 1
+        },
+        {
+          "criterion": "180−10＝170万円",
+          "points": 1
+        },
+        {
+          "criterion": "不足見込130固定を否定し二重徴収を排除",
+          "points": 1
+        }
+      ],
+      "explanation": "24条3項の発出日から10日を経過した日までの制限を適用し、通常の差押可能な最初の日は4月15日。国税残額は180−10＝170万円で、所定の補充性等を満たすなら担保財産から170万円を徴収する。当初の不足見込130万円を永久の責任限度にしない。告知の対象額と実際に他財産で徴収した額を区分し、同じ180万円を二重に取らない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴24条1・2・3・5項"
+      ],
+      "independentCaseDesign": "告知時の見込額と実際の回収額の差が生じた案件を、日付と残税の両面から監査する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q17",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-provisional-security": [
+          2
+        ],
+        "zr2-kokuzei-special-privileges": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-provisional-security-o2",
+        "zr2-kokuzei-special-privileges-o1"
+      ],
+      "prompt": "時点証明等が必要な二件の回収予定がある。Aは徴令4条の対象先取特権の証明で、対象金銭を2026年3月12日に取り立てる。Bは徴令8条4項の譲渡担保の証明で、同じ3月12日に取り立てる。A/Bとも配当計算書は3月25日に作成される。いずれも期限判定に必要な条件が確定しており、他の証明期限事由はない。A/Bの取立てに係る証明期限を答え、配当計算書の日を両件へ転用する案を訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "Aは令4条3項の配当計算書作成日の前日という枝により、3月24日。Bは令8条4項により取立日の前日3月11日。両者は対象担保と条文が違うため、同じ回収日でも証明期限を統一しない。現行の枝番号は凍結版で確認する。",
+      "rubric": [
+        {
+          "criterion": "Aの対象条と3/24",
+          "points": 1
+        },
+        {
+          "criterion": "Bの対象条と3/11",
+          "points": 1
+        },
+        {
+          "criterion": "担保類型別の期限差",
+          "points": 1
+        }
+      ],
+      "explanation": "Aは令4条3項の配当計算書作成日の前日という枝により、3月24日。Bは令8条4項により取立日の前日3月11日。両者は対象担保と条文が違うため、同じ回収日でも証明期限を統一しない。現行の枝番号は凍結版で確認する。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴令4条3項・8条4項"
+      ],
+      "independentCaseDesign": "先取証明と譲渡担保証明の二つの担当案件の期限表を比較する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q18",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-transferred-inherited": [
+          1
+        ],
+        "zr2-kokuzei-competing-distribution": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-transferred-inherited-o1",
+        "zr2-kokuzei-competing-distribution-o1"
+      ],
+      "prompt": "通常の譲受財産で徴22条の全条件を満たす。費用処理後原資250万円、国税90万円。抵当A70万円は国税の比較日前、抵当B130万円は比較日後かつ譲受前に有効設定・登記され、AがBに先だつ。他の税・権利なし。実際配当と、国税をBより先にした仮定配当、22条徴収額、最終の私債権・税・所有者残金を求めてください。譲受人の第二次義務等はない。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "実際配当はA70、B130、所有者残金50万円。仮定ではA70、国税90、B90となり、Aからの徴収差額0、Bから130−90＝40万円を徴収する。最終A70、B90、国税40、所有者残金50万円で250万円。国税残額は50万円で、譲受人の固有の責任を別に与えていない以上、所有者残金50を自動的に徴収しない。",
+      "rubric": [
+        {
+          "criterion": "実配当70/130/残50",
+          "points": 1
+        },
+        {
+          "criterion": "仮定70/90/90とA維持",
+          "points": 1
+        },
+        {
+          "criterion": "B差40と最終配当",
+          "points": 1
+        },
+        {
+          "criterion": "国税残50・所有者残金との責任区分",
+          "points": 1
+        }
+      ],
+      "explanation": "実際配当はA70、B130、所有者残金50万円。仮定ではA70、国税90、B90となり、Aからの徴収差額0、Bから130−90＝40万円を徴収する。最終A70、B90、国税40、所有者残金50万円で250万円。国税残額は50万円で、譲受人の固有の責任を別に与えていない以上、所有者残金50を自動的に徴収しない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴17・22条"
+      ],
+      "independentCaseDesign": "譲受人へ返る残金と、後設定抵当権者から徴収できる差額を混同しない配当監査"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q19",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-statutory-dates": [
+          1,
+          2
+        ],
+        "zr2-kokuzei-transferred-inherited": [
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-statutory-dates-o1",
+        "zr2-kokuzei-statutory-dates-o2",
+        "zr2-kokuzei-transferred-inherited-o2"
+      ],
+      "prompt": "2026年7月10日に単純承認による相続があった。被相続人の当初国税Xは相続前の通常の期限内申告で確定、通常比較日は3月16日。相続後8月4日の通常修正申告で初めて確定した増差額をZとする。相続人の固有国税Yは相続前に確定済みで通常比較日3月16日。相続財産Pと従前固有財産Qについて、X-P、X-Q、Z-Q、Y-Pの比較日を答えてください。他の特則なし。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "X-Pは3月16日、X-Qは相続前確定の被相続人税と相続人固有財産の関係により7月10日。Z-Qは相続前確定という条件を欠くため相続日へ変えず、修正申告日8月4日。Y-Pは相続人固有税と相続財産の交差関係で7月10日。税の起源・確定時点・徴収財産を個別に並べる。",
+      "rubric": [
+        {
+          "criterion": "X-P3/16",
+          "points": 1
+        },
+        {
+          "criterion": "X-Q7/10",
+          "points": 1
+        },
+        {
+          "criterion": "Z-Q8/4と事前確定条件",
+          "points": 1
+        },
+        {
+          "criterion": "Y-P7/10",
+          "points": 1
+        }
+      ],
+      "explanation": "X-Pは3月16日、X-Qは相続前確定の被相続人税と相続人固有財産の関係により7月10日。Z-Qは相続前確定という条件を欠くため相続日へ変えず、修正申告日8月4日。Y-Pは相続人固有税と相続財産の交差関係で7月10日。税の起源・確定時点・徴収財産を個別に並べる。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴15条1項1・7号"
+      ],
+      "independentCaseDesign": "同じ相続でも、相続後に確定した増差額を第四の行として組み込む"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q20",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-competing-distribution": [
+          1,
+          2
+        ],
+        "zr2-kokuzei-priority-general": [
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-competing-distribution-o1",
+        "zr2-kokuzei-competing-distribution-o2",
+        "zr2-kokuzei-priority-general-o2"
+      ],
+      "prompt": "換価代金420万円、直接費12万円、適法な留置債権18万円。残額に国税N180万円（比較日2026年3月16日）、地方税L110万円（同2月27日）、抵当M200万円（同3月5日有効登記）が競合する。税相互はNの適法な差押先着手が優先。根抵当・他の競合なし。第1換価の私債権と各税の日付順、徴26条の税総額/私債権総額、配当及びL残税を答えてください。続く別財産の換価は費用処理後80万円で、Lの実際の残税と、3月8日有効登記の別の普通抵当R110万円だけが競合する。「Lは第1換価で優先を使ったからRへ劣後させる」という案も訂正し、第2配当と最終L残税を求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "直接費12と留置18の後は390万円。各税の比較日と抵当設定による仮の順はL110、M200、N80で、税総額190、私債権総額200万円。税内部の先着手でN180、L10へ、私債権はM200へ配当する。最終12＋18＋180＋10＋200＝420万円、L残税100万円。単純にNを最初から全部先に置いてMを110へ減らさない。第1でLの税額が計算に用いられても、実充当は10万円だけで残税100万円がある。第2ではLの比較日がR登記前なのでL80、R0万円、最終L残税20万円。優先権を一度使ったという理由で残税を劣後させない。",
+      "rubric": [
+        {
+          "criterion": "費用留置後390と日付順",
+          "points": 1
+        },
+        {
+          "criterion": "税190/私債権200の区分",
+          "points": 1
+        },
+        {
+          "criterion": "N180/L10/M200",
+          "points": 1
+        },
+        {
+          "criterion": "第1L残100と検算、第2L80/R0/最終残20の理由",
+          "points": 1
+        }
+      ],
+      "explanation": "直接費12と留置18の後は390万円。各税の比較日と抵当設定による仮の順はL110、M200、N80で、税総額190、私債権総額200万円。税内部の先着手でN180、L10へ、私債権はM200へ配当する。最終12＋18＋180＋10＋200＝420万円、L残税100万円。単純にNを最初から全部先に置いてMを110へ減らさない。第1でLの税額が計算に用いられても、実充当は10万円だけで残税100万円がある。第2ではLの比較日がR登記前なのでL80、R0万円、最終L残税20万円。優先権を一度使ったという理由で残税を劣後させない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴10・12・16・21・26条",
+        "地方税法対応規定"
+      ],
+      "independentCaseDesign": "二つの換価を連結し、26条の計算上の税総額と、次の換価へ持ち越す実際の残税を区分する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q21",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-competing-distribution": [
+          2
+        ],
+        "zr2-kokuzei-pledge-mortgage": [
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-competing-distribution-o2",
+        "zr2-kokuzei-pledge-mortgage-o2"
+      ],
+      "prompt": "第1順位根抵当Pの元本は、税務署長の所定通知より前に130万円で適法に確定済みで、その後元本の弁済等による増減はない。極度200万円、第2順位普通抵当S80万円、国税160万円、費用処理後原資300万円で、両担保は国税に優先しPはSに先だつ。利息等なし。「通知時の未確定元本額を80万円とみなして徴18条の本文調整をする」との配当案は適切か。通知時債権額の認定と最終配当を答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "元本が通知より前に130万円で確定し、その後の変動もない本問では、18条1項の通知時の債権額も130万円である。未確定であることだけを18条全体の適用条件とせず、架空の通知時額80万円を作って制限しない。所与の優先順にP130、S80、国税90万円で、税残70万円。元本確定の時点を調べる前に本文・ただし書の計算を始めない。",
+      "rubric": [
+        {
+          "criterion": "通知時の実在元本130と18条限度",
+          "points": 1
+        },
+        {
+          "criterion": "架空80で制限しない理由",
+          "points": 1
+        },
+        {
+          "criterion": "P130/S80/税90・残70",
+          "points": 1
+        }
+      ],
+      "explanation": "元本が通知より前に130万円で確定し、その後の変動もない本問では、18条1項の通知時の債権額も130万円である。未確定であることだけを18条全体の適用条件とせず、架空の通知時額80万円を作って制限しない。所与の優先順にP130、S80、国税90万円で、税残70万円。元本確定の時点を調べる前に本文・ただし書の計算を始めない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "徴18条",
+        "民398条の19・20"
+      ],
+      "independentCaseDesign": "通知前の確定資料に反する通知時元本を作った配当案を、事実と18条の原文から棄却する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q22",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-competing-distribution": [
+          1
+        ],
+        "zr2-kokuzei-pledge-mortgage": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-competing-distribution-o1",
+        "zr2-kokuzei-pledge-mortgage-o1"
+      ],
+      "prompt": "抵当権者は、抵当目的不動産の賃料債権へ物上代位しようとしている。抵当登記は国税の比較日前だが、賃借人はその賃料を既に適法に全額払い渡し、対象債権は消滅している。その後初めて当該賃料債権の差押えを申し立てた。払渡し前の権利行使はない。「登記が国税より古いから、その同じ消滅済み債権から当然回収できる」との主張を訂正してください。相殺・詐害・他の請求原因はない。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "優先順位以前に、民304条・372条の物上代位では払渡し又は引渡し前の差押えが必要である。本問では払渡し後で対象債権も消滅しているため、この債権について所定の物上代位行使条件を満たさない。古い抵当登記があることと、既に消滅した債権を同じ方法で徴収原資にできることを混同しない。",
+      "rubric": [
+        {
+          "criterion": "払渡し前差押えの条件",
+          "points": 1
+        },
+        {
+          "criterion": "本問の条件欠缺と債権消滅",
+          "points": 1
+        },
+        {
+          "criterion": "優先比較との判断順序の区分",
+          "points": 1
+        }
+      ],
+      "explanation": "優先順位以前に、民304条・372条の物上代位では払渡し又は引渡し前の差押えが必要である。本問では払渡し後で対象債権も消滅しているため、この債権について所定の物上代位行使条件を満たさない。古い抵当登記があることと、既に消滅した債権を同じ方法で徴収原資にできることを混同しない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "民304・372条",
+        "徴15・16条の比較以前の原資確認"
+      ],
+      "independentCaseDesign": "順位表を作っても行使対象が存在しない場合を、新しい事実経過から見抜く"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q23",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-security-registers",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-security-registers": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-security-registers-o1"
+      ],
+      "prompt": "担保調査の一覧に、Aは所有権登録済み自動車、Bは所有権登録済み航空機、Cは19トンの小型船舶の所有権登録が載っている。A/Bについて所有者が「登録済みなら自由に質権も設定できる」、Cについて係員が「登録という名なら通常船舶の抵当登記まで済んだ」と述べた。個別法の質権制限と船舶公示制度の違いから、それぞれを訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "A/Bは自動車抵当法・航空機抵当法の各質権禁止を確認し、所有権登録を理由に自由な質設定としない。Cの小型船舶の所有権登録は、船舶法の登記制度や商法の通常船舶抵当登記と同一ではなく、その登録だけで通常抵当の成立・公示を満たすとはいえない。対象船の法区分と使える担保制度を確認する。",
+      "rubric": [
+        {
+          "criterion": "自動車の質権禁止",
+          "points": 1
+        },
+        {
+          "criterion": "航空機の質権禁止",
+          "points": 1
+        },
+        {
+          "criterion": "小型所有権登録と通常船抵当を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "A/Bは自動車抵当法・航空機抵当法の各質権禁止を確認し、所有権登録を理由に自由な質設定としない。Cの小型船舶の所有権登録は、船舶法の登記制度や商法の通常船舶抵当登記と同一ではなく、その登録だけで通常抵当の成立・公示を満たすとはいえない。対象船の法区分と使える担保制度を確認する。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "自動車抵当法",
+        "航空機抵当法",
+        "船舶法20条",
+        "小型船舶登録法",
+        "商848条"
+      ],
+      "independentCaseDesign": "帳簿で同じ登録済みとされた三財産について、担保の可否と公示の種類を分ける"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q24",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-security-registers",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-security-registers": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-security-registers-o1",
+        "zr2-kokuzei-security-registers-o2"
+      ],
+      "prompt": "工場財団を組成していない工場の土地だけに、工場抵当法2条の有効な抵当がある。工場供用の自己所有機械は所定の目録等の公示条件を満たしており、この抵当の範囲に入ると確定。土地上の建物には抵当設定なし。必要条件・証明を満たす抵当80万円が国税60万円に優先し、土地及び当該機械の換価費用処理後原資は120万円。他の競合なし。機械・建物を範囲判定し、配当と税残額を計算してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "所与の工場供用機械は2条の効力範囲に入るが、土地の抵当だけで建物まで当然に抵当目的とはしない。工場財団全体の抵当という別制度へ置き換えない。原資120万円から抵当80、国税40万円、税残20万円。建物価額を所与の原資へ無条件に加算しない。",
+      "rubric": [
+        {
+          "criterion": "所与機械への効力と建物の区分",
+          "points": 1
+        },
+        {
+          "criterion": "工場財団との区別・原資範囲",
+          "points": 1
+        },
+        {
+          "criterion": "抵当80/税40/残20",
+          "points": 1
+        }
+      ],
+      "explanation": "所与の工場供用機械は2条の効力範囲に入るが、土地の抵当だけで建物まで当然に抵当目的とはしない。工場財団全体の抵当という別制度へ置き換えない。原資120万円から抵当80、国税40万円、税残20万円。建物価額を所与の原資へ無条件に加算しない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "工場抵当法2・3条",
+        "民370条",
+        "徴16条"
+      ],
+      "independentCaseDesign": "財団を作らない工場抵当の範囲を確定してから、独立した国税優先額の計算へ進む"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q25",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-security-registers",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-security-registers": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-security-registers-o1"
+      ],
+      "prompt": "株式会社が、銀行の通常貸付債務のため「会社総財産に企業担保権を設定した」とする私署契約を示した。自社社債の発行はなく、公正証書も企業担保登記もない。企業担保法上の担保が完成したとして税との配当表へ入れてよいか。担保対象債務、方式、公示の三つの不足を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "企業担保法は株式会社の発行する社債を担保する制度で、通常貸付債務をそのまま自社社債へ読み替えられない。設定契約の公正証書という法定方式を欠き、さらに登記がなければ設定等の効力を生じない。総財産という契約文言だけで有効な企業担保額を配当表へ計上しない。",
+      "rubric": [
+        {
+          "criterion": "自社社債という対象",
+          "points": 1
+        },
+        {
+          "criterion": "公正証書方式",
+          "points": 1
+        },
+        {
+          "criterion": "登記効力と配当への計上否定",
+          "points": 1
+        }
+      ],
+      "explanation": "企業担保法は株式会社の発行する社債を担保する制度で、通常貸付債務をそのまま自社社債へ読み替えられない。設定契約の公正証書という法定方式を欠き、さらに登記がなければ設定等の効力を生じない。総財産という契約文言だけで有効な企業担保額を配当表へ計上しない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "企業担保法1〜3条"
+      ],
+      "independentCaseDesign": "担保の名称だけを借りた通常借入を、対象債務と成立方式から吟味する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q26",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-special-privileges",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-special-privileges": [
+          1,
+          2
+        ],
+        "zr2-kokuzei-security-registers": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-special-privileges-o1",
+        "zr2-kokuzei-special-privileges-o2",
+        "zr2-kokuzei-security-registers-o1"
+      ],
+      "prompt": "銀行が、農業を営む借主へ家畜購入資金を貸した。担保候補はA種豚、B種豚でない肥育用豚である。銀行は「貸付目的が農業なので、両方に同法の貸手先取が成立し、どちらも農業用動産抵当にもできる」と説明した。銀行の取得資格と、抵当対象の二つの範囲から訂正してください。その他の借主・所有関係の条件は満たす。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "農業動産信用法3条と勅令2条では、銀行は所定の抵当権取得者に含まれるが、貸手先取の取得者へ同じに追加されてはいない。この銀行貸付に同法の先取が当然成立するとはしない。勅令1条は種豚を抵当対象に含める一方、同条10号の種豚以外の豚は同法第三章の抵当対象から除く。したがってAは対象候補となるがBを同じに抵当にしない。",
+      "rubric": [
+        {
+          "criterion": "銀行の先取取得資格と抵当取得資格を区分",
+          "points": 1
+        },
+        {
+          "criterion": "A種豚の対象適格",
+          "points": 1
+        },
+        {
+          "criterion": "B非種豚の第三章除外",
+          "points": 1
+        }
+      ],
+      "explanation": "農業動産信用法3条と勅令2条では、銀行は所定の抵当権取得者に含まれるが、貸手先取の取得者へ同じに追加されてはいない。この銀行貸付に同法の先取が当然成立するとはしない。勅令1条は種豚を抵当対象に含める一方、同条10号の種豚以外の豚は同法第三章の抵当対象から除く。したがってAは対象候補となるがBを同じに抵当にしない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "農業動産信用法2・3・12条",
+        "昭8勅307号1・2条"
+      ],
+      "independentCaseDesign": "同じ貸付資料で、貸手先取と約定抵当の取得者・目的範囲が違うことを判定する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q27",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-special-privileges",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-special-privileges": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-special-privileges-o1",
+        "zr2-kokuzei-special-privileges-o2"
+      ],
+      "prompt": "商法の船舶先取の条件を満たす船について、先に発生した救助債権35万円、先に発生した船員雇用債権50万円、その両方より後の適法な救助債権60万円がある。有効な抵当200万円は国税に優先する。費用処理後250万円、国税80万円、他の競合なし。各先取・抵当・国税への配当を順序とともに求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "後の救助60万円が、それ以前に存在した所定船舶先取に優先する。次に先の救助35万円、船員50万円で先取計145万円。残105万円を抵当へ配当し国税0、税残80万円。船員雇用も単純に発生が後なら他の全先取へ優先するという規律にはしない。",
+      "rubric": [
+        {
+          "criterion": "後救助60→先救助35→船員50の順",
+          "points": 1
+        },
+        {
+          "criterion": "先取145・抵当105",
+          "points": 1
+        },
+        {
+          "criterion": "税0/残80と順位理由",
+          "points": 1
+        }
+      ],
+      "explanation": "後の救助60万円が、それ以前に存在した所定船舶先取に優先する。次に先の救助35万円、船員50万円で先取計145万円。残105万円を抵当へ配当し国税0、税残80万円。船員雇用も単純に発生が後なら他の全先取へ優先するという規律にはしない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "商842・843・848条",
+        "徴19条"
+      ],
+      "independentCaseDesign": "船舶先取の類型順位と後発救助の特則を、国税優先の抵当までつないで配当する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q28",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-special-privileges",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-special-privileges": [
+          1,
+          2
+        ],
+        "zr2-kokuzei-privileges-liens": [
+          1
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-special-privileges-o1",
+        "zr2-kokuzei-special-privileges-o2",
+        "zr2-kokuzei-privileges-liens-o1"
+      ],
+      "prompt": "都市再開発法107条の清算金に係る、適法な登記等のあるみなし工事先取がある。未払清算金105万円、登記予算90万円、現存増価150万円で他の条件充足。別件の区分所有建物管理費債権は区分所有法7条の先取を主張するが、徴20条4号の登記条件を満たさず、他の国税優先原因もない。この二つを同じ「共益又は工事だから国税に常に優先」とできるか。各限度又は不足条件を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "前件は107条の予算登記額を超える部分の除外から、105全額でなく90万円の範囲を確認する。所与の増価は十分で、低増価の場合の未確認枝は扱わない。後件は私法7条の先取・共益みなしと国税優先が同一ではなく、徴20条4号の所定登記条件を欠く以上、この根拠の国税優先を認めない。",
+      "rubric": [
+        {
+          "criterion": "前件のみなし工事と予算制限",
+          "points": 1
+        },
+        {
+          "criterion": "90万円・増価十分の条件",
+          "points": 1
+        },
+        {
+          "criterion": "後件の私法先取と徴20条登記不足",
+          "points": 1
+        }
+      ],
+      "explanation": "前件は107条の予算登記額を超える部分の除外から、105全額でなく90万円の範囲を確認する。所与の増価は十分で、低増価の場合の未確認枝は扱わない。後件は私法7条の先取・共益みなしと国税優先が同一ではなく、徴20条4号の所定登記条件を欠く以上、この根拠の国税優先を認めない。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "都市再開発法107条",
+        "区分所有法7条",
+        "徴19・20条"
+      ],
+      "independentCaseDesign": "同じみなしという語でまとめられた二つの個別制度の根拠と限度を比較する"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q29",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-other-fund-security": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-other-fund-security-o1",
+        "zr2-kokuzei-other-fund-security-o2"
+      ],
+      "prompt": "株式会社の三つの事業案件を比較する。Aは鉄道抵当法による財団設定認可前で「一般の工場財団保存登記をしたから鉄道財団も成立済み」とする。Bは道路交通事業抵当法の対象事業単位・事業用自動車を備えるが所定不動産がない。Cは有効な道路財団の抵当実行開始決定後に許可が取り消された案件で、適格な買受人が代金を納付した。A/Bの不足とCの許可・権利義務承継を、制度別に説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "Aは鉄道抵当法2条の2の設定認可を欠き、工場財団の保存登記で代用しない。Bは道路交通事業抵当法5条の不動産及び事業用自動車という条件のうち不動産を欠く。Cは15条の開始後の取消しの特則で納付まで競売目的の範囲の許可存続と取消しがなかったものとのみなしを確認し、18条の代金納付時の権利義務承継へつなぐ。",
+      "rubric": [
+        {
+          "criterion": "A認可と工場保存登記の区分",
+          "points": 1
+        },
+        {
+          "criterion": "B不動産欠如",
+          "points": 1
+        },
+        {
+          "criterion": "C15条の存続・取消みなし",
+          "points": 1
+        },
+        {
+          "criterion": "C18条の代金納付時承継",
+          "points": 1
+        }
+      ],
+      "explanation": "Aは鉄道抵当法2条の2の設定認可を欠き、工場財団の保存登記で代用しない。Bは道路交通事業抵当法5条の不動産及び事業用自動車という条件のうち不動産を欠く。Cは15条の開始後の取消しの特則で納付まで競売目的の範囲の許可存続と取消しがなかったものとのみなしを確認し、18条の代金納付時の権利義務承継へつなぐ。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "鉄道抵当法2条の2",
+        "道路交通事業抵当法5・15・18条"
+      ],
+      "independentCaseDesign": "三事業の内部審査表で、制度を横断して誤用された成立と失効の条件を分ける"
+    },
+    {
+      "id": "zr2-kokuzei-priority-review-q30",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-resource-rights-security": [
+          1,
+          2
+        ]
+      },
+      "objectiveIds": [
+        "zr2-kokuzei-resource-rights-security-o1",
+        "zr2-kokuzei-resource-rights-security-o2"
+      ],
+      "prompt": "三件の消滅案件を処理する。Aは抵当登録付き採掘権が鉱業法53条で取消しとなり、適法算定済み補償80万円、抵当権者の直接払い承諾なし。Bは共同漁業権に通常の抵当を設定したと称する者が、93条1項の公益取消し後に95条の30日競売を求める。Cは抵当登録付きダム使用権の24条取消しに係る28条還付150万円で、登録抵当権者全員が直接払いを適法に承諾済み。他の競合なし。Aの競売又は供託、Bの権利類型と取消原因、Cの法定供託義務を判断してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "Aは57条2項の除外で同条の30日競売保護を使わず、53条の2により国が80万円を供託する。Bの共同漁業権は団体漁業権として77条2項の抵当章不適用であり、個別漁業権の有効な抵当と同視できない。加えて93条1項の公益取消しは95条2項ただし書の除外である。Cは28条2項の抵当権者承諾の例外により、この規定の供託義務はない。承諾なしの普通ケースと区分する。",
+      "rubric": [
+        {
+          "criterion": "Aの57条除外・80万円供託",
+          "points": 1
+        },
+        {
+          "criterion": "Bの共同/団体と抵当章不適用",
+          "points": 1
+        },
+        {
+          "criterion": "Bの公益取消し除外",
+          "points": 1
+        },
+        {
+          "criterion": "Cの全員承諾による供託義務例外",
+          "points": 1
+        }
+      ],
+      "explanation": "Aは57条2項の除外で同条の30日競売保護を使わず、53条の2により国が80万円を供託する。Bの共同漁業権は団体漁業権として77条2項の抵当章不適用であり、個別漁業権の有効な抵当と同視できない。加えて93条1項の公益取消しは95条2項ただし書の除外である。Cは28条2項の抵当権者承諾の例外により、この規定の供託義務はない。承諾なしの普通ケースと区分する。",
+      "grading": "manual-rubric",
+      "sourceAnchors": [
+        "鉱業法53・53条の2・57条",
+        "漁業法60・77・93・95条",
+        "特定多目的ダム法24・28条"
+      ],
+      "independentCaseDesign": "同じ消滅後の担保保護という案件分類から、三つの法的ルートと承諾例外を選ぶ"
+    }
+  ],
+  "glossaryQuestions": [
+    {
+      "id": "zr2-kokuzei-priority-term-1",
+      "term": "一般優先",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "targetLessonIds": [
+        "zr2-kokuzei-priority-general"
+      ],
+      "prompt": "場面：裁判所の換価で、国税と適法な無担保参加債権が競合する。 この場面の「一般優先」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "裁判所の換価で、国税と適法な無担保参加債権が競合する。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "国税の一般優先は民事債権への順位を定める。別法の強制換価費用等の先行と、裁判所での残額からの一般債権配当を区分する。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-2",
+      "term": "担保国税等の優先",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "targetLessonIds": [
+        "zr2-kokuzei-priority-general"
+      ],
+      "prompt": "場面：先着手の無担保租税と、その財産を担保として徴収できる所定租税が競合する。 この場面の「担保国税等の優先」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "先着手の無担保租税と、その財産を担保として徴収できる所定租税が競合する。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "差押先着手だけで決めず、所定の担保優先の条件を先に確認する。単なる納税者の所有財産という意味の担保ではない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-3",
+      "term": "法定納期限等",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "targetLessonIds": [
+        "zr2-kokuzei-statutory-dates"
+      ],
+      "prompt": "場面：同一の所得税額に当初額・修正増差額・更正増差額が含まれる。 この場面の「法定納期限等」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "同一の所得税額に当初額・修正増差額・更正増差額が含まれる。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "徴15条が担保との比較に用いる基準日で、納付書の今回の支払期限だけではない。各額の確定原因と特則から日を選ぶ。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-4",
+      "term": "相続前に確定した国税",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "targetLessonIds": [
+        "zr2-kokuzei-statutory-dates"
+      ],
+      "prompt": "場面：相続前自動確定の源泉税で、最初の納税告知書が死亡後に発出された。 この場面の「相続前に確定した国税」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "相続前自動確定の源泉税で、最初の納税告知書が死亡後に発出された。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "15条1項7号の所定自動確定国税では相続前告知発出という定義条件まで必要。自動確定時点だけを理由に相続日へ変更しない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-5",
+      "term": "時点の証明",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "targetLessonIds": [
+        "zr2-kokuzei-pledge-mortgage"
+      ],
+      "prompt": "場面：現実の動産引渡日は古いが、国税へ提出する書面の確定日付が比較日より後である。 この場面の「時点の証明」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "現実の動産引渡日は古いが、国税へ提出する書面の確定日付が比較日より後である。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "私法上の設定と、徴15条3項等の証明に使う時点を区分する。実際に古いと主張するだけで所定証明を満たすとはしない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-6",
+      "term": "極度額",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "targetLessonIds": [
+        "zr2-kokuzei-pledge-mortgage"
+      ],
+      "prompt": "場面：根抵当の極度額が大きい一方、通知時元本と確定元本がそれより小さい。 この場面の「極度額」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "根抵当の極度額が大きい一方、通知時元本と確定元本がそれより小さい。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "担保範囲の上限であって、実在する債務額や国税へ優先する元本額そのものではない。民法と徴18条の限度を別に計算する。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-7",
+      "term": "子の監護の費用の先取特権",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "targetLessonIds": [
+        "zr2-kokuzei-privileges-liens"
+      ],
+      "prompt": "場面：2026年4月以後の対象定期金と施行前の定期金が同じ未払一覧にある。 この場面の「子の監護の費用の先取特権」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "2026年4月以後の対象定期金と施行前の定期金が同じ未払一覧にある。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "新しい一般先取の対象と時期・月額限度を区分する。一般先取を旧4類型のまま記憶せず、国税優先は別の条件で判定する。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-8",
+      "term": "留置権",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "targetLessonIds": [
+        "zr2-kokuzei-privileges-liens"
+      ],
+      "prompt": "場面：修理者が適法に物を留置し、その物が国税換価の対象になる。 この場面の「留置権」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "修理者が適法に物を留置し、その物が国税換価の対象になる。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "私法上の留置の成立・占有等と徴21条の配当優先を確認する。成立日が遅いという一点で国税後順位にしない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-9",
+      "term": "仮登記担保",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "targetLessonIds": [
+        "zr2-kokuzei-provisional-security"
+      ],
+      "prompt": "場面：担保契約の仮登記後に国税が発生し、後に本登記と私的清算が予定される。 この場面の「仮登記担保」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "担保契約の仮登記後に国税が発生し、後に本登記と私的清算が予定される。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "23条の優先比較と、私的実行の清算期間・清算金保護を区分する。本登記日だけで比較したり清算義務を消したりしない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-10",
+      "term": "譲渡担保の物的納税責任",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "targetLessonIds": [
+        "zr2-kokuzei-provisional-security"
+      ],
+      "prompt": "場面：債務者の他財産が不足する見込で告知した後、実回収額が見込より小さくなった。 この場面の「譲渡担保の物的納税責任」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "債務者の他財産が不足する見込で告知した後、実回収額が見込より小さくなった。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "24条所定の担保財産から徴収する責任を、当初不足見込額で固定しない。告知・補充性・実際の残税・二重徴収を確認する。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-11",
+      "term": "22条の徴収差額",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "targetLessonIds": [
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "prompt": "場面：譲受前の後設定抵当へ実際に配る額と、国税を先にした仮定額が異なる。 この場面の「22条の徴収差額」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "譲受前の後設定抵当へ実際に配る額と、国税を先にした仮定額が異なる。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "実配当と仮定配当の差を所定条件下で徴収する。抵当債権額そのものや譲受人の一般財産への包括責任と同じではない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-12",
+      "term": "交差する財産と税",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "targetLessonIds": [
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "prompt": "場面：相続人の固有税を相続財産から徴収する案と、被相続人税を固有財産から徴収する案がある。 この場面の「交差する財産と税」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "相続人の固有税を相続財産から徴収する案と、被相続人税を固有財産から徴収する案がある。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "15条1項7号の財産と税の出所の組合せを行ごとに確認する。全ての相続後国税の比較日を死亡日に統一しない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-13",
+      "term": "26条の二段階配分",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "targetLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "prompt": "場面：ある租税が抵当に優先するが、税相互では別の租税が先着手している。 この場面の「26条の二段階配分」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "ある租税が抵当に優先するが、税相互では別の租税が先着手している。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "各私債権への優先から税総額と私債権総額を求め、その内部で租税相互・私債権相互の順位を適用する。一つの単純順位表で循環を放置しない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-14",
+      "term": "18条ただし書",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "targetLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "prompt": "場面：未確定根抵当の元本限度を使うと別の私債権者の受取額が変わる。 この場面の「18条ただし書」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "未確定根抵当の元本限度を使うと別の私債権者の受取額が変わる。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "本文を使った場合と使わない場合の受取額を比較し、権利が害されるという条件を判断する。後順位者が存在するだけでは足りない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-15",
+      "term": "企業担保権",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-security-registers",
+      "targetLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "prompt": "場面：会社が普通借入のため総財産担保とだけ書いた私署契約を示す。 この場面の「企業担保権」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "会社が普通借入のため総財産担保とだけ書いた私署契約を示す。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "企業担保法の株式会社の自社社債、公正証書、登記効力の条件を確認する。総財産担保という呼称だけで法定担保の成立を認めない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-16",
+      "term": "工場抵当と工場財団",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-security-registers",
+      "targetLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "prompt": "場面：土地だけの抵当と、工場財団全体の抵当が別案件にある。 この場面の「工場抵当と工場財団」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "土地だけの抵当と、工場財団全体の抵当が別案件にある。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "工場抵当法2条の機械等への範囲と、財団の組成・保存・構成物制限を区分する。土地抵当の効力を建物全体へ当然に広げない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-17",
+      "term": "みなし工事先取",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-special-privileges",
+      "targetLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "prompt": "場面：都市再開発の清算金について予算登記額と未払額が異なる。 この場面の「みなし工事先取」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "都市再開発の清算金について予算登記額と未払額が異なる。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "個別法の工事先取みなし、対象清算金、予算登記等の条件から優先額を決める。清算金の全額を無条件に国税より先にしない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-18",
+      "term": "後発救助の優先",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-special-privileges",
+      "targetLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "prompt": "場面：船の救助債権が、先に存在していた船員等の先取の後に発生した。 この場面の「後発救助の優先」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "船の救助債権が、先に存在していた船員等の先取の後に発生した。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "商843条の後発救助等の特則と通常の類型順位を確認する。全船舶先取を単に発生の新しい順に並べる規律ではない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-19",
+      "term": "財団設定の認可",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "targetLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "prompt": "場面：鉄道会社が一般の工場財団の保存登記を鉄道財団設定の代わりに示す。 この場面の「財団設定の認可」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "鉄道会社が一般の工場財団の保存登記を鉄道財団設定の代わりに示す。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "鉄道抵当法2条の2の設定認可と、他制度の保存登記や抵当登録を区分する。会社設立や財産一覧だけで認可を代用しない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-20",
+      "term": "取消し後の存続みなし",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "targetLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "prompt": "場面：道路財団の抵当実行開始後に許可取消しがあり、買受代金納付を待っている。 この場面の「取消し後の存続みなし」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "道路財団の抵当実行開始後に許可取消しがあり、買受代金納付を待っている。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "道路交通事業抵当法15条の競売目的の存続と納付時のみなしを確認する。通常操業の無期限許可や開始前の通知後6か月と混同しない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-21",
+      "term": "個別漁業権",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "targetLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "prompt": "場面：法人所有の定置漁業権と、自ら営まない漁協の団体漁業権を比較する。 この場面の「個別漁業権」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "法人所有の定置漁業権と、自ら営まない漁協の団体漁業権を比較する。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "個人・法人という所有者属性だけの区分ではない。個別の抵当認可と、団体への抵当章不適用という条件を分ける。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    },
+    {
+      "id": "zr2-kokuzei-priority-term-22",
+      "term": "残金国庫帰属",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-resource-rights-security",
+      "targetLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "prompt": "場面：採掘権取消し後の所定特別競売で費用と抵当債務を弁済して残金が生じた。 この場面の「残金国庫帰属」の意味と、混同しやすい判断との違いを理由付きで説明してください。",
+      "scenario": "採掘権取消し後の所定特別競売で費用と抵当債務を弁済して残金が生じた。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 2,
+      "modelAnswer": "鉱業法57条等の国庫帰属を適用する。通常の滞納配当の権利者への残金交付や、その者の滞納税の納付済み処理と同一視しない。",
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "混同しやすい条件・効果との相違理由を述べる",
+          "points": 1
+        }
+      ],
+      "grading": "manual-rubric",
+      "countsAsIndependentApplication": false
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-kokuzei-priority-general": {
+      "1": [
+        "zr2-kokuzei-priority-review-q1",
+        "zr2-kokuzei-priority-review-q3",
+        "zr2-kokuzei-priority-review-q13"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q2",
+        "zr2-kokuzei-priority-review-q3",
+        "zr2-kokuzei-priority-review-q20"
+      ]
+    },
+    "zr2-kokuzei-statutory-dates": {
+      "1": [
+        "zr2-kokuzei-priority-review-q4",
+        "zr2-kokuzei-priority-review-q19"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q5",
+        "zr2-kokuzei-priority-review-q19"
+      ]
+    },
+    "zr2-kokuzei-pledge-mortgage": {
+      "1": [
+        "zr2-kokuzei-priority-review-q4",
+        "zr2-kokuzei-priority-review-q6",
+        "zr2-kokuzei-priority-review-q9",
+        "zr2-kokuzei-priority-review-q22"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q7",
+        "zr2-kokuzei-priority-review-q8",
+        "zr2-kokuzei-priority-review-q9",
+        "zr2-kokuzei-priority-review-q21"
+      ]
+    },
+    "zr2-kokuzei-privileges-liens": {
+      "1": [
+        "zr2-kokuzei-priority-review-q10",
+        "zr2-kokuzei-priority-review-q11",
+        "zr2-kokuzei-priority-review-q12",
+        "zr2-kokuzei-priority-review-q28"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q13"
+      ]
+    },
+    "zr2-kokuzei-provisional-security": {
+      "1": [
+        "zr2-kokuzei-priority-review-q14",
+        "zr2-kokuzei-priority-review-q15",
+        "zr2-kokuzei-priority-review-q16"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q15",
+        "zr2-kokuzei-priority-review-q16",
+        "zr2-kokuzei-priority-review-q17"
+      ]
+    },
+    "zr2-kokuzei-transferred-inherited": {
+      "1": [
+        "zr2-kokuzei-priority-review-q18"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q5",
+        "zr2-kokuzei-priority-review-q19"
+      ]
+    },
+    "zr2-kokuzei-competing-distribution": {
+      "1": [
+        "zr2-kokuzei-priority-review-q18",
+        "zr2-kokuzei-priority-review-q20",
+        "zr2-kokuzei-priority-review-q22"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q8",
+        "zr2-kokuzei-priority-review-q20",
+        "zr2-kokuzei-priority-review-q21"
+      ]
+    },
+    "zr2-kokuzei-security-registers": {
+      "1": [
+        "zr2-kokuzei-priority-review-q23",
+        "zr2-kokuzei-priority-review-q24",
+        "zr2-kokuzei-priority-review-q25",
+        "zr2-kokuzei-priority-review-q26"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q24"
+      ]
+    },
+    "zr2-kokuzei-special-privileges": {
+      "1": [
+        "zr2-kokuzei-priority-review-q17",
+        "zr2-kokuzei-priority-review-q26",
+        "zr2-kokuzei-priority-review-q27",
+        "zr2-kokuzei-priority-review-q28"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q26",
+        "zr2-kokuzei-priority-review-q27",
+        "zr2-kokuzei-priority-review-q28"
+      ]
+    },
+    "zr2-kokuzei-other-fund-security": {
+      "1": [
+        "zr2-kokuzei-priority-review-q29"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q29"
+      ]
+    },
+    "zr2-kokuzei-resource-rights-security": {
+      "1": [
+        "zr2-kokuzei-priority-review-q30"
+      ],
+      "2": [
+        "zr2-kokuzei-priority-review-q30"
+      ]
+    }
+  },
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "2・8〜14・16・26・129条を版固定公式JSONで独立読解。条文番号12差押/13交付/14担保を確認。136条の費用範囲も読解",
+      "supportingLessonIds": [
+        "zr2-kokuzei-priority-general",
+        "zr2-kokuzei-statutory-dates",
+        "zr2-kokuzei-pledge-mortgage",
+        "zr2-kokuzei-privileges-liens",
+        "zr2-kokuzei-provisional-security",
+        "zr2-kokuzei-transferred-inherited",
+        "zr2-kokuzei-competing-distribution",
+        "zr2-kokuzei-security-registers",
+        "zr2-kokuzei-special-privileges",
+        "zr2-kokuzei-other-fund-security",
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "2・8〜14・16・26・129条を版固定公式JSONで独立読解。条文番号12差押/13交付/14担保を確認。136条の費用範囲も読解",
+        "15条1項全号を版固定公式JSONで読解。15条2〜4、16〜17・22条、24条2項・32条1項・51条・159条3項も関係読解",
+        "15条2〜4項・16〜18・26条の凍結公式JSONを読解",
+        "凍結MainProvision 8・10・19〜21・129条を読解",
+        "凍結15・23〜25・32・90・129条を読解。24条3項の起算文言、32条4項準用、物的責任を対応",
+        "凍結15条1項7〜10号・17・22・23条3項・51・129条を再読",
+        "凍結18・26条全文再読、8〜24・129条の前講該当箇所を対応",
+        "10・15〜18・22条",
+        "19・20・129条",
+        "10・16・22条等",
+        "10・16条"
+      ]
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "39条1〜3項を版固定公式JSONで独立読解",
+      "supportingLessonIds": [
+        "zr2-kokuzei-priority-general",
+        "zr2-kokuzei-statutory-dates",
+        "zr2-kokuzei-provisional-security",
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "reviewLocations": [
+        "39条1〜3項を版固定公式JSONで独立読解",
+        "9条の2〜3・15条3項・35〜36・38条・52条2項を版固定公式JSONで読解",
+        "10条の期間計算",
+        "凍結5・6・8・9条の2・9条の3を再読。基準日特則と責任算定を分離"
+      ]
+    },
+    {
+      "id": "collection-training",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf#page=70",
+      "version": "令和8年度・2026-01-01法令を基礎",
+      "location": "印刷63〜65頁/PDF70〜72頁の8条・先着手・担保・費用、印刷61〜62頁の配当対象・残余を読解。主法を優先",
+      "supportingLessonIds": [
+        "zr2-kokuzei-priority-general"
+      ],
+      "reviewLocations": [
+        "印刷63〜65頁/PDF70〜72頁の8条・先着手・担保・費用、印刷61〜62頁の配当対象・残余を読解。主法を優先"
+      ]
+    },
+    {
+      "id": "inheritance-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000073_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "保存済み公式JSON35条2項：所定事由で提出期限前に更正決定できる特則",
+      "supportingLessonIds": [
+        "zr2-kokuzei-statutory-dates"
+      ],
+      "reviewLocations": [
+        "保存済み公式JSON35条2項：所定事由で提出期限前に更正決定できる特則"
+      ]
+    },
+    {
+      "id": "collection-training",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf#page=73",
+      "version": "令和8年度・2026-01-01法令を基礎",
+      "location": "印刷66頁/PDF73頁の法定納期限・納期限・法定納期限等表。主法との対応を確認",
+      "supportingLessonIds": [
+        "zr2-kokuzei-statutory-dates"
+      ],
+      "reviewLocations": [
+        "印刷66頁/PDF73頁の法定納期限・納期限・法定納期限等表。主法との対応を確認"
+      ]
+    },
+    {
+      "id": "collection-order",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "2026-04-01施行版",
+      "location": "親取得asof固定JSON11条4項を独立読解。第二次義務者の納付期限は発出翌日から1か月経過日",
+      "supportingLessonIds": [
+        "zr2-kokuzei-statutory-dates",
+        "zr2-kokuzei-pledge-mortgage",
+        "zr2-kokuzei-privileges-liens",
+        "zr2-kokuzei-provisional-security",
+        "zr2-kokuzei-transferred-inherited",
+        "zr2-kokuzei-competing-distribution",
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "親取得asof固定JSON11条4項を独立読解。第二次義務者の納付期限は発出翌日から1か月経過日",
+        "親取得asof固定JSON4条の証明方法・期限を読解",
+        "凍結4条の証明と期限、5条の税務署長による増価評価を読解",
+        "凍結6・8・9条。証明取立期限は8条4項。古い通達の3項表記を転記しない",
+        "凍結6条の22条通知及び仮登記準用を読解",
+        "凍結9条全文再読。設定者税対担保権者固有税のみなしを適用",
+        "4・5条"
+      ]
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "version": "2026-04-01施行版",
+      "location": "304・342・344〜352・355〜364・366・369〜375・398条の2〜4・7・19〜20・467条等の該当箇所を凍結JSONで読解",
+      "supportingLessonIds": [
+        "zr2-kokuzei-pledge-mortgage",
+        "zr2-kokuzei-privileges-liens",
+        "zr2-kokuzei-provisional-security",
+        "zr2-kokuzei-competing-distribution",
+        "zr2-kokuzei-security-registers",
+        "zr2-kokuzei-special-privileges",
+        "zr2-kokuzei-other-fund-security",
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "304・342・344〜352・355〜364・366・369〜375・398条の2〜4・7・19〜20・467条等の該当箇所を凍結JSONで読解",
+        "凍結295〜341条の先取・留置関連条及び令和6法33号附則3条を読解。306は5号、315は期間、316は敷金",
+        "140・143条の初日と月計算を凍結JSONで再読",
+        "凍結306・329〜339・373等。332同順位按分、335他財産順序を再読。304/372等は前講読解",
+        "140・143・375・398条の3、準用される担保の基本規律",
+        "329〜335・337〜341条",
+        "140・143条の暦月期間",
+        "86・140・143・176・177・192〜194・369・370条"
+      ]
+    },
+    {
+      "id": "priority-mortgage-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/016/01.htm",
+      "version": "2026-10-27現行ページ、法律と別に扱う",
+      "location": "7〜8の375条・398条の3対応を確認。現在ページ全体を基準日版と主張しない",
+      "supportingLessonIds": [
+        "zr2-kokuzei-pledge-mortgage"
+      ],
+      "reviewLocations": [
+        "7〜8の375条・398条の3対応を確認。現在ページ全体を基準日版と主張しない"
+      ]
+    },
+    {
+      "id": "priority-principal-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/018/01.htm",
+      "version": "2026-10-27現行ページ、法律と別に扱う",
+      "location": "1〜6及び9〜11の元本・通知・相対優先を18条/民398条の3等と照合。後日の企業価値担保権の注等を本講へ取り込まない",
+      "supportingLessonIds": [
+        "zr2-kokuzei-pledge-mortgage"
+      ],
+      "reviewLocations": [
+        "1〜6及び9〜11の元本・通知・相対優先を18条/民398条の3等と照合。後日の企業価値担保権の注等を本講へ取り込まない"
+      ]
+    },
+    {
+      "id": "commercial-law",
+      "url": "https://laws.e-gov.go.jp/law/132AC0000000048_20230401_503AC0000000061",
+      "version": "API asof=2026-04-03の返却版",
+      "location": "31・521・557・562・574・741・756・802・842条を読解。留置の成立条件に利用",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-privileges-liens",
+        "zr2-kokuzei-security-registers",
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "31・521・557・562・574・741・756・802・842条を読解。留置の成立条件に利用",
+        "684・686・687・847〜850条。本講の船舶例は商行為目的",
+        "792・795・801・802・806・842〜848条"
+      ]
+    },
+    {
+      "id": "child-privilege-ordinance",
+      "url": "https://laws.e-gov.go.jp/law/507M60000010056_20260401_000000000000000",
+      "version": "2026-04-01施行",
+      "location": "省令全文。1条の月8万円×子数と2条の別制度、附則施行日を確認",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-privileges-liens"
+      ],
+      "reviewLocations": [
+        "省令全文。1条の月8万円×子数と2条の別制度、附則施行日を確認"
+      ]
+    },
+    {
+      "id": "priority-privilege-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/020/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1の対象外先取の劣後配当不可、4〜8の動産対象・順位、315/316の説明を基準日法と区別して照合",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-privileges-liens"
+      ],
+      "reviewLocations": [
+        "1の対象外先取の劣後配当不可、4〜8の動産対象・順位、315/316の説明を基準日法と区別して照合"
+      ]
+    },
+    {
+      "id": "priority-retention-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/021/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1・5・7〜12以降の留置権の種類、差押えと私法占有、換価限定、証明の解釈補助。ページ全体の基準日版とは主張しない",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-privileges-liens"
+      ],
+      "reviewLocations": [
+        "1・5・7〜12以降の留置権の種類、差押えと私法占有、換価限定、証明の解釈補助。ページ全体の基準日版とは主張しない"
+      ]
+    },
+    {
+      "id": "provisional-registration-law",
+      "url": "https://laws.e-gov.go.jp/law/353AC0000000078_20050401_416AC0000000152",
+      "version": "API asof=2026-04-03返却版",
+      "location": "本文1〜20条全文読解。特に2〜8・13〜14・20条を本文及び問題へ対応",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-provisional-security",
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "reviewLocations": [
+        "本文1〜20条全文読解。特に2〜8・13〜14・20条を本文及び問題へ対応",
+        "13条の抵当みなしによる担保順位等。前講で1〜20条本文読解"
+      ]
+    },
+    {
+      "id": "general-order",
+      "url": "https://laws.e-gov.go.jp/law/337CO0000000135_20260401_507CO0000000126",
+      "version": "2026-04-01施行版",
+      "location": "2条1項7号の証明期限の休日特例除外。本文全体の読解とはしない",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-provisional-security",
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "2条1項7号の証明期限の休日特例除外。本文全体の読解とはしない",
+        "2条1項7号"
+      ]
+    },
+    {
+      "id": "transfer-security-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/04/024/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "2/4の補充性と全額、6の発出後期間、20〜22の告知発出比較日、30〜34の証明期限・集合物等。法令基準日と別に取り扱う",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-provisional-security"
+      ],
+      "reviewLocations": [
+        "2/4の補充性と全額、6の発出後期間、20〜22の告知発出比較日、30〜34の証明期限・集合物等。法令基準日と別に取り扱う"
+      ]
+    },
+    {
+      "id": "transferred-priority-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/022/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1〜8の二時点と配当差額、12〜19の代位実行・通知等。現行解釈を基準日固定法と区別して利用。公式例の数値は再利用しない",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "reviewLocations": [
+        "1〜8の二時点と配当差額、12〜19の代位実行・通知等。現行解釈を基準日固定法と区別して利用。公式例の数値は再利用しない"
+      ]
+    },
+    {
+      "id": "local-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000226_20260401_508AC0000000002",
+      "version": "2026-04-01施行版",
+      "location": "凍結14条の6・7・10・12を独立読解。国税の先着手・抵当・元本限度と対応",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "reviewLocations": [
+        "凍結14条の6・7・10・12を独立読解。国税の先着手・抵当・元本限度と対応"
+      ]
+    },
+    {
+      "id": "competition-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/05/026/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1〜8の特殊な競合・総額の区分・内部配分・反復的優先の解釈。独立数値例を作成",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "reviewLocations": [
+        "1〜8の特殊な競合・総額の区分・内部配分・反復的優先の解釈。独立数値例を作成"
+      ]
+    },
+    {
+      "id": "principal-exception-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/018/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "6の複数通知、9〜11のただし書該当/不該当を読解。後日企業価値担保権注は除く",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "reviewLocations": [
+        "6の複数通知、9〜11のただし書該当/不該当を読解。後日企業価値担保権注は除く"
+      ]
+    },
+    {
+      "id": "transfer-tax-competition-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/04/024/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "20〜22の15条1項6号・令9条・22条併用を凍結各条と対応",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "reviewLocations": [
+        "20〜22の15条1項6号・令9条・22条併用を凍結各条と対応"
+      ]
+    },
+    {
+      "id": "mortgage-subrogation-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/016/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "4・5及び参照される15関係18・19を独立閲覧。物上代位への滞納差押えの先後だけで優劣を決めない",
+      "verified": "2026-10-27",
+      "supportingLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "reviewLocations": [
+        "4・5及び参照される15関係18・19を独立閲覧。物上代位への滞納差押えの先後だけで優劣を決めない"
+      ]
+    },
+    {
+      "id": "automobile-mortgage-law",
+      "url": "https://laws.e-gov.go.jp/law/326AC0000000187_20200401_429AC0000000045",
+      "version": "326AC0000000187_20200401_429AC0000000045",
+      "location": "2〜12・16〜20条",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "2〜12・16〜20条"
+      ]
+    },
+    {
+      "id": "aircraft-mortgage-law",
+      "url": "https://laws.e-gov.go.jp/law/328AC0000000066_20200401_429AC0000000045",
+      "version": "328AC0000000066_20200401_429AC0000000045",
+      "location": "2〜12・19〜23条",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "2〜12・19〜23条"
+      ]
+    },
+    {
+      "id": "construction-mortgage-law",
+      "url": "https://laws.e-gov.go.jp/law/329AC0000000097_20250601_504AC0000000068",
+      "version": "329AC0000000097_20250601_504AC0000000068",
+      "location": "2〜16・21・22・24条の2・25条",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "2〜16・21・22・24条の2・25条"
+      ]
+    },
+    {
+      "id": "construction-mortgage-order",
+      "url": "https://laws.e-gov.go.jp/law/329CO0000000294_20081104_420CO0000000082",
+      "version": "329CO0000000294_20081104_420CO0000000082",
+      "location": "1条・別表13種類区分。表の行結合に注意して対象範囲を読解",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "1条・別表13種類区分。表の行結合に注意して対象範囲を読解"
+      ]
+    },
+    {
+      "id": "ship-registration-order",
+      "url": "https://laws.e-gov.go.jp/law/417CO0000000011_20251001_507CO0000000263",
+      "version": "417CO0000000011_20251001_507CO0000000263",
+      "location": "2〜4条",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "2〜4条"
+      ]
+    },
+    {
+      "id": "small-ship-law",
+      "url": "https://laws.e-gov.go.jp/law/413AC0000000102_20250601_504AC0000000068",
+      "version": "413AC0000000102_20250601_504AC0000000068",
+      "location": "2〜5条",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "2〜5条"
+      ]
+    },
+    {
+      "id": "ship-law",
+      "url": "https://laws.e-gov.go.jp/law/132AC0000000046_20250601_504AC0000000068",
+      "version": "132AC0000000046_20250601_504AC0000000068",
+      "location": "5・20・24条",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "5・20・24条"
+      ]
+    },
+    {
+      "id": "factory-mortgage-law",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000054_20250601_504AC0000000068",
+      "version": "138AC0000000054_20250601_504AC0000000068",
+      "location": "1〜24条。工場抵当と工場財団の違い、構成物の差押制限",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers",
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "1〜24条。工場抵当と工場財団の違い、構成物の差押制限",
+        "1〜24条、41〜42条の6・44条の2/3・45条等の準用元"
+      ]
+    },
+    {
+      "id": "enterprise-security-law",
+      "url": "https://laws.e-gov.go.jp/law/333AC0000000106_20251001_505AC0000000053",
+      "version": "333AC0000000106_20251001_505AC0000000053",
+      "location": "1〜16条。本講は成立・私権相互の関係に限定し実行配当は後続実在講へ",
+      "verified": "2026-10-27",
+      "verification": "基準日API保存版の記載条項を作問者が読解。独立審査はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "reviewLocations": [
+        "1〜16条。本講は成立・私権相互の関係に限定し実行配当は後続実在講へ"
+      ]
+    },
+    {
+      "id": "tree-privilege-law",
+      "url": "https://laws.e-gov.go.jp/law/143AC1000000056_19100416_000000000000000",
+      "version": "143AC1000000056_19100416_000000000000000",
+      "location": "第1・2項の全本文",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "第1・2項の全本文"
+      ]
+    },
+    {
+      "id": "ship-limitation-law",
+      "url": "https://laws.e-gov.go.jp/law/350AC0000000094_20251001_505AC0000000053",
+      "version": "350AC0000000094_20251001_505AC0000000053",
+      "location": "2条の制限債権・人及び物の損害定義、3・33・95条",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "2条の制限債権・人及び物の損害定義、3・33・95条"
+      ]
+    },
+    {
+      "id": "oil-compensation-law",
+      "url": "https://laws.e-gov.go.jp/law/350AC0000000095_20251001_505AC0000000053",
+      "version": "350AC0000000095_20251001_505AC0000000053",
+      "location": "2条14・16・17・22号、38・55条",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "2条14・16・17・22号、38・55条"
+      ]
+    },
+    {
+      "id": "urban-renewal-law",
+      "url": "https://laws.e-gov.go.jp/law/344AC0000000038_20250601_504AC0000000068",
+      "version": "344AC0000000038_20250601_504AC0000000068",
+      "location": "107・118条",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "107・118条"
+      ]
+    },
+    {
+      "id": "mansion-renewal-law",
+      "url": "https://laws.e-gov.go.jp/law/414AC0000000078_20260401_507AC0000000047",
+      "version": "414AC0000000078_20260401_507AC0000000047",
+      "location": "88条。2026-04-01法名・用語改正を確認",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "88条。2026-04-01法名・用語改正を確認"
+      ]
+    },
+    {
+      "id": "condominium-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000069_20260401_507AC0000000047",
+      "version": "337AC0000000069_20260401_507AC0000000047",
+      "location": "7・8条",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "7・8条"
+      ]
+    },
+    {
+      "id": "lease-law",
+      "url": "https://laws.e-gov.go.jp/law/403AC0000000090_20230614_505AC0000000053",
+      "version": "403AC0000000090_20230614_505AC0000000053",
+      "location": "12条。2026-05-21版を混入しない",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "12条。2026-05-21版を混入しない"
+      ]
+    },
+    {
+      "id": "requisition-lease-law",
+      "url": "https://laws.e-gov.go.jp/law/331AC1000000138_20130101_423AC0000000053",
+      "version": "331AC1000000138_20130101_423AC0000000053",
+      "location": "3・4・7条",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "3・4・7条"
+      ]
+    },
+    {
+      "id": "agri-movables-law",
+      "url": "https://laws.e-gov.go.jp/law/308AC0000000030_20250601_504AC0000000068",
+      "version": "308AC0000000030_20250601_504AC0000000068",
+      "location": "1〜16条本文全体",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "1〜16条本文全体"
+      ]
+    },
+    {
+      "id": "agri-movables-order",
+      "url": "https://laws.e-gov.go.jp/law/308IO0000000307_20190325_431CO0000000058",
+      "version": "308IO0000000307_20190325_431CO0000000058",
+      "location": "1〜5条本文全体。1条抵当除外と2条法人の二つの範囲",
+      "verified": "2026-10-27",
+      "verification": "asof=2026-04-03保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "reviewLocations": [
+        "1〜5条本文全体。1条抵当除外と2条法人の二つの範囲"
+      ]
+    },
+    {
+      "id": "railway-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000053_20251001_505AC0000000053",
+      "version": "138AC0000000053_20251001_505AC0000000053",
+      "location": "1〜4・7〜31条及び2条の2・13条の2/3・25条の2・26条の2、69〜71・73・74・76・77条・77条の2等",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "1〜4・7〜31条及び2条の2・13条の2/3・25条の2・26条の2、69〜71・73・74・76・77条・77条の2等"
+      ]
+    },
+    {
+      "id": "tram-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/142AC0000000028_19861204_361AC0000000093",
+      "version": "142AC0000000028_19861204_361AC0000000093",
+      "location": "全1〜4条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "全1〜4条"
+      ]
+    },
+    {
+      "id": "canal-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/202AC1000000016_20050401_416AC0000000084",
+      "version": "202AC1000000016_20050401_416AC0000000084",
+      "location": "1・12〜14条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "1・12〜14条"
+      ]
+    },
+    {
+      "id": "mining-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000055_20120121_423AC0000000084",
+      "version": "138AC0000000055_20120121_423AC0000000084",
+      "location": "全1〜7条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security",
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "全1〜7条",
+        "全1〜7条。例題2の4条通知後6か月を単体採掘権57条と比較"
+      ]
+    },
+    {
+      "id": "mining-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000289_20250601_504AC0000000068",
+      "version": "325AC0000000289_20250601_504AC0000000068",
+      "location": "5・12・13・52〜55・57〜60条、53条の2",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security",
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "5・12・13・52〜55・57〜60条、53条の2",
+        "5・6・11〜18・21・40・41・51条〜60条（51条の2/3、53条の2を含む）。本講で使う担保、公示、移転、取消の箇所"
+      ]
+    },
+    {
+      "id": "fishing-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/214AC0000000009_20201201_430AC0000000095",
+      "version": "214AC0000000009_20201201_430AC0000000095",
+      "location": "全1〜5条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "全1〜5条"
+      ]
+    },
+    {
+      "id": "road-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/327AC0100000204_20250601_504AC0000000068",
+      "version": "327AC0100000204_20250601_504AC0000000068",
+      "location": "全1〜22条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "全1〜22条"
+      ]
+    },
+    {
+      "id": "port-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/326AC0100000161_20250601_504AC0000000068",
+      "version": "326AC0100000161_20250601_504AC0000000068",
+      "location": "2〜4・12・23〜26条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "2〜4・12・23〜26条"
+      ]
+    },
+    {
+      "id": "tourism-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/343AC0000000091_20050307_416AC0000000124",
+      "version": "343AC0000000091_20050307_416AC0000000124",
+      "location": "全1〜12条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "全1〜12条"
+      ]
+    },
+    {
+      "id": "tourism-facility-order",
+      "url": "https://laws.e-gov.go.jp/law/343CO0000000322_19681120_000000000000000",
+      "version": "343CO0000000322_19681120_000000000000000",
+      "location": "8類型の全本文",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-other-fund-security"
+      ],
+      "reviewLocations": [
+        "8類型の全本文"
+      ]
+    },
+    {
+      "id": "standing-tree-law",
+      "url": "https://laws.e-gov.go.jp/law/142AC0000000022_20050307_416AC0000000124",
+      "version": "142AC0000000022_20050307_416AC0000000124",
+      "location": "全1〜21条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "全1〜21条"
+      ]
+    },
+    {
+      "id": "standing-tree-order",
+      "url": "https://laws.e-gov.go.jp/law/307IO0000000012_19320203_000000000000000",
+      "version": "307IO0000000012_19320203_000000000000000",
+      "location": "全1・2条・別表",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "全1・2条・別表"
+      ]
+    },
+    {
+      "id": "fishery-rights-law",
+      "url": "https://laws.e-gov.go.jp/law/324AC0000000267_20260401_506AC0000000066",
+      "version": "324AC0000000267_20260401_506AC0000000066",
+      "location": "60・62・68・69・71・72・75〜84・89・92〜96・98・101・117条及び20条2〜4項",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "60・62・68・69・71・72・75〜84・89・92〜96・98・101・117条及び20条2〜4項"
+      ]
+    },
+    {
+      "id": "fishery-registration-order",
+      "url": "https://laws.e-gov.go.jp/law/326CO0000000292_20260401_507CO0000000234",
+      "version": "326CO0000000292_20260401_507CO0000000234",
+      "location": "1〜7・41・44条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "1〜7・41・44条"
+      ]
+    },
+    {
+      "id": "quarry-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000291_20250601_504AC0000000068",
+      "version": "325AC0000000291_20250601_504AC0000000068",
+      "location": "2・4〜32条（枝番号の業者登録詳細は未読）。採石権と業者登録32条を分離",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "2・4〜32条（枝番号の業者登録詳細は未読）。採石権と業者登録32条を分離"
+      ]
+    },
+    {
+      "id": "dam-use-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000035_20220401_503AC0000000037",
+      "version": "332AC0000000035_20220401_503AC0000000037",
+      "location": "2・15・17〜28条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "2・15・17〜28条"
+      ]
+    },
+    {
+      "id": "dam-registration-order",
+      "url": "https://laws.e-gov.go.jp/law/342CO0000000002_20220401_503CO0000000292",
+      "version": "342CO0000000002_20220401_503CO0000000292",
+      "location": "1〜9・49〜61条",
+      "verified": "2026-10-27",
+      "verification": "2026-04-03指定API保存版の記載箇所を著者読解。独立確認はpending",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "1〜9・49〜61条"
+      ]
+    },
+    {
+      "id": "dam-legislative-explanation",
+      "url": "https://kokkai.ndl.go.jp/simple/detail?minId=102604149X01019570322",
+      "version": "第26回国会衆議院建設委員会第10号1957-03-22",
+      "location": "政府委員山本三郎による26条の逐条説明：第三者対抗要件の説明。現行法26条及び20条と照合",
+      "verified": "2026-10-27",
+      "verification": "公式会議録の該当説明をオンライン確認。NTA記述との表現差は独立確認事項",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "政府委員山本三郎による26条の逐条説明：第三者対抗要件の説明。現行法26条及び20条と照合"
+      ]
+    },
+    {
+      "id": "collection-68-dam-note",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/01/04/068/01.htm",
+      "version": "2026-10-27閲覧の現行ページ。基準日固定条文と区別",
+      "location": "27の登録による成立という記述。立法説明との表現差を未確認枝として保持",
+      "verified": "2026-10-27",
+      "verification": "当該箇所を公式ページで確認。現行全通達を基準日審査済みとはしない",
+      "supportingLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "reviewLocations": [
+        "27の登録による成立という記述。立法説明との表現差を未確認枝として保持"
+      ]
+    }
+  ],
+  "independencePolicy": "講内問題の本文・解答をコピーせず、契約の呼称と法定方式、既払債権、相続後増差、三案件比較、原資帰属等の条件を独立に設計する。数値差替えだけでは独立性を立証したことにしない。用語問題は独立応用評価へ算入しない",
+  "scopeBoundaries": [
+    {
+      "plannedLessonId": "zr2-kokuzei-special-privileges",
+      "notAssessedAsMastered": "みなし工事で現存増価が清算額・予算を下回る枝は出典独立確認前。本評価の通常工事と増価十分のみなし工事から推測しない"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-other-fund-security",
+      "notAssessedAsMastered": "非株式会社鉄道・軌道の別規定、国税比較日をまたぐ財団後加入物の担保設定時点は未確認"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-resource-rights-security",
+      "notAssessedAsMastered": "未登録ダム使用権の効力の根拠表現差。設定・登録済み又は所与額の供託判断の設問で、この未確認枝を完了扱いにしない"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-registered-assets",
+      "notAssessedAsMastered": "個別の差押送達・登記登録嘱託手続の全要件"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-rights-distribution",
+      "notAssessedAsMastered": "公売による特殊買受適格・移転許認可、事業権承継・権利消滅の全手続"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-preservation",
+      "notAssessedAsMastered": "裁判所実行・破産・基金・交付要求等の競合の全手続と代位実行"
+    }
+  ],
+  "authorChecks": {
+    "status": "著者初回全設問・モデル・採点要素再読。独立審査pending",
+    "nonCompletionRule": "22広目標への参照と30事例の存在は、全細目を十分に評価済みという証拠ではない。11講の公開前ブロック・後続講・独立レビュー・累積修正・試行・2本の本試験規模模試は別に残る",
+    "automatedJapaneseReview": "独立日本語審査pending。sudachipyなしのためlint/calques実行不可。構造及び原文の手動確認を機械校正の成功としない",
+    "paragraphStructureCheck": {
+      "script": "paragraphs.py --json",
+      "structureItems": 105,
+      "evidenceFile": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\checks\\kokuzei-priority-review-paragraphs.json",
+      "manualReview": "全30設問・模範・採点要素と22用語場面を著者再読。独立審査ではない"
+    },
+    "promptReuseCheck": {
+      "lessonQuestionCount": 175,
+      "exactDuplicateCount": 0,
+      "maxSimilarity": {
+        "question": "zr2-kokuzei-priority-review-q21",
+        "nearestLessonQuestion": "zr2-kokuzei-competing-distribution-q7",
+        "ratio": 0.497
+      },
+      "limitation": "類似度だけで独立性を判定しない。30事例の条件・要求を講内問題と読み比べて確認した著者記録で、独立評価pending"
+    }
+  }
+}

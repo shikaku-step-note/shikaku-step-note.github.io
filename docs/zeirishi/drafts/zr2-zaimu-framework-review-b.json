@@ -1,0 +1,897 @@
+{
+  "version": "zeirishi-2026-v2-draft-framework-1",
+  "qualification": "zeirishi",
+  "unit": 2,
+  "moduleId": "zr2-zaimu-unit-framework",
+  "lawAsOf": "2026-04-03",
+  "id": "zr2-zaimu-framework-review-b",
+  "title": "財務会計の枠組み・累積B：測定と変更を検討する",
+  "kind": "review",
+  "minutes": 110,
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "fieldNames": {
+    "zaimu": "財務諸表論"
+  },
+  "lessonTitles": {
+    "zr2-zaimu-purpose-regulation": "財務会計の目的と制度",
+    "zr2-zaimu-qualitative-characteristics": "有用性・信頼性・内的整合性・比較可能性",
+    "zr2-zaimu-elements": "資産・負債・純資産・投資の成果",
+    "zr2-zaimu-general-principles": "企業会計原則と個別基準",
+    "zr2-zaimu-recognition-measurement": "認識・測定と期間損益",
+    "zr2-zaimu-reporting-obligations": "会社の属性と財務情報の作成・監査・開示",
+    "zr2-zaimu-policy-changes": "会計方針・見積りの変更と誤謬",
+    "zr2-zaimu-estimate-disclosure": "会計上の見積りを注記で伝える",
+    "zr2-zaimu-theory-writing": "理由と計算をつなぐ理論答案の作り方"
+  },
+  "sourceCandidates": [
+    {
+      "id": "ac2-framework-pdf",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+      "location": "2006年12月討議資料、前文、第一章1〜21項。財務報告の目的・役割分担・副次的利用。個別基準としての強制力を主張しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "companies-law",
+      "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+      "location": "431条、435〜436条、440条1・3・4項、461条1項。2026年4月3日時点の条文を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "company-calculation",
+      "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+      "location": "59条、126条1項2号、135〜138条。監査意見と承認特則、公告の情報・要旨を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "financial-instruments-law",
+      "url": "https://laws.e-gov.go.jp/law/323AC0000000025_20260101_506AC0000000056",
+      "location": "1条、24条、193条、193条の2。2026年4月3日時点。有価証券報告書の対象と例外、作成方法、監査。全ての株式会社へ提出義務を一般化しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-exam-zaimu76",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+      "location": "第76回、第一問問1、印刷B1〜B2（PDF3〜4枚目）。内的整合性の階層・前提・比較が実際に問われる範囲と要求水準を確認。出題文・選択肢を再利用しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-oci",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_18.pdf",
+      "location": "企業会計基準25号、2025年3月11日改正・2025年10月16日修正反映版。1〜16-6項（特に4〜6、8〜9、11、16-2、16-6）を確認。16-2の当面個別不適用を明示。将来の期中制度一般へ拡張しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "company-calculations",
+      "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+      "location": "2026年4月3日基準の会社計算規則74〜76条。資産・負債・純資産の表示区分。細かな認識・測定は各論で扱う",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則・同注解、1982年4月20日最終改正。一般原則一〜七、損益計算書原則一A〜C、注解1・1-2・2・3・4を原文確認。旧文書の個別取引処理を後の基準に優先させない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-revenue",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
+      "location": "企業会計基準29号、2024年9月13日改正、16〜19・32〜42項を実読。例題の契約・期間充足と均等履行は明示与件",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-fairvalue-guide-2021",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/faivalue20210617_02.pdf",
+      "location": "企業会計基準適用指針31号・2021年6月17日版35項(1)(2)を実読。将来額と率の整合、同一リスクの二重計算防止に限定",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ifrs-capital-ed2015",
+      "url": "https://www.ifrs.org/content/dam/ifrs/project/conceptual-framework/exposure-draft/published-documents/ed-conceptual-framework.pdf",
+      "location": "2015年5月公開草案第8章8.1〜8.10、PDF79〜81ページ。資本維持の歴史的比較理論に限定。現行IFRS又は日本基準の適用指示とは主張しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-policy-fixed-2020",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf",
+      "location": "企業会計基準24号・2020年3月31日改正。4〜22-2項、25-2/25-3項、結論の背景48〜68項を実読。2026年10月改正を混在させない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-policy-guide-fixed-2024",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/ikan_20240701_46.pdf",
+      "location": "適用指針24号・2024年7月1日修正反映版、4〜12-2・17〜21項を実読。方法と表示の区分、正当な理由、過去見積りの合理性を確認",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-estimates-fixed-2020",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-estimates20200331_02.pdf",
+      "location": "企業会計基準31号・2020年3月31日公表。本文3〜9項と結論の背景15〜33項を実読。識別のリスク、通常以外の対象、例示と必須事項、個別参照を照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "points-02",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/02.pdf",
+      "location": "全2頁、第一問・第二問の出題技能と第三問の横断技能を実読。処理理由を問う実績の確認に限り、問題は転載しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "exam-papers",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+      "location": "注意事項と第一問・第二問の要求形式、第三問の留意事項を実読。2026年4月3日と120分を確認。将来の小問・配点・個別指示へ固定しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "instructions": "財務会計の枠組み9講を履修した後の独立した単元評価です。各問は資料から解き、前問の正答を前提にしません。金額は特記のない限り万円、税効果・消費税・記載のない取引は考慮しません。法令基準は2026年4月3日。適用要件を満たす等の与件を守ってください。点数・時間は本サイト独自の学習上の目安で、公式採点や科目全体の本試験形式模試ではありません。",
+  "independence": "既存141問の抽出や数値だけの置換はしない。資料の構造、問いの動作、組み合わせる判断を変えた原創問題。共通する基礎技能があっても新たな条件を読み直す。",
+  "materials": [],
+  "questions": [
+    {
+      "id": "zr2-zaimu-framework-review-b-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-recognition-measurement": [
+          1
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-recognition-measurement-f01"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-recognition-measurement",
+          "objective": 1,
+          "objectiveText": "認識と測定、定義と計上条件を分け、未履行・前払・引渡しを仕訳へ表す"
+        }
+      ],
+      "prompt": "期末までに、商品購入契約80を結び20を前払いしたが商品への支配はまだ移っていない。別に翌期だけの保守業務の対価36を顧客から受領した。通常の契約で、特殊な金融商品・損失等はない。「商品80と売上36を計上し、支払20は費用にする」という案を評価し、与えられた入出金の仕訳と、期末に残る資産・負債を示してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "未履行契約の額全て、支払額、受領額を同じ認識単位にまとめません。資産と負債を相殺できるという与件もありません。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "購入側は前払金20／現金20であり、支配移転前の商品80の計上や20の費用化はしない。受注側は現金36／契約負債36で、翌期の履行前の売上とはしない。残る資産は前払金20、負債は契約負債36。入出金の事実と、対象財・役務の認識条件を分ける。",
+      "rubric": [
+        {
+          "criterion": "購入側の仕訳と商品/費用の早期計上を否定",
+          "points": 2
+        },
+        {
+          "criterion": "受注側の仕訳と履行前の売上計上を否定",
+          "points": 2
+        },
+        {
+          "criterion": "期末前払金20/契約負債36を対応させる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-recognition-measurement": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-recognition-measurement-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-recognition-measurement",
+          "objective": 2,
+          "objectiveText": "現金の受払と履行を分け、収益と契約負債の期間帰属を計算する"
+        }
+      ],
+      "prompt": "12月決算の会社は均等な監視業務を行う。契約甲は4月1日開始の12か月分144を開始日に受領、契約乙は10月1日開始の6か月分90を開始日に受領した。いずれも期間にわたる認識条件を満たし月数が適切な指標で、期首にこの二件の残高はない。当期の収益合計と期末契約負債合計を求め、受領総額との一致を示してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "契約の開始月と提供済みの期間が異なります。月数による配分そのものの適切さは本問で与えた条件です。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "甲は9/12履行なので収益108・未履行36。乙は3/6なので収益45・未履行45。収益合計153、契約負債81、合計234は受領144+90と一致する。開始時期の違いを考慮し、二件とも同率を掛けない。",
+      "rubric": [
+        {
+          "criterion": "甲108/36と乙45/45をそれぞれ計算",
+          "points": 2
+        },
+        {
+          "criterion": "収益153/負債81と受領234の照合",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-recognition-measurement": [
+          3
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-recognition-measurement-f03"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-recognition-measurement",
+          "objective": 3,
+          "objectiveText": "費用収益の対応と期末資産の根拠を、売上原価とサービス費用で説明する"
+        }
+      ],
+      "prompt": "商品60個を1個2で現金仕入れし、45個を1個4で掛売りした。減損等は不要。翌期だけの保守サービス24を前払いし、当期に受け終えた広告12は未払いである。他の取引はない。当期利益、期末の商品・前払費用・売掛金・未払費用を求め、支払の有無だけで費用を決められない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "将来も役立つかもしれないという希望だけで広告費を資産へ残すことはしません。前払サービスとの違いは、期末までに受けたかという与件にあります。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "売上180、売上原価90、広告費12なので利益78。商品30、前払費用24、売掛金180、未払費用12が残る。商品代金を払っていても未販売分は資産、保守の前払は未提供の役務への資産であり、広告は未払でも受領済みの当期費用となる。",
+      "rubric": [
+        {
+          "criterion": "売上180/原価90/利益78を求める",
+          "points": 2
+        },
+        {
+          "criterion": "商品30/前払24/売掛180/未払12を求める",
+          "points": 2
+        },
+        {
+          "criterion": "支払と費用の時期を商品/サービスの事実で説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-recognition-measurement": [
+          4
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-recognition-measurement-f04"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-recognition-measurement",
+          "objective": 4,
+          "objectiveText": "未配分原価・入口出口の価格・正味売却額を目的から選び、混合測定を説明する"
+        }
+      ],
+      "prompt": "同じ資産の資料は、当初支出250、これまでの配分80、現在同等の能力を買う価格280、売る場合の対価210、売るための直接費用18である。未配分原価、入口側の現在価格、出口側の価格、費用控除後の売却額を求め、それぞれの問いが違う理由と、担当者が利益目標に合わせ一番大きい額へ統一する案の問題を説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "複数の価格が存在することと、任意に選べることは別です。どの額を本問の帳簿価額とするかの個別規定は与えていません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "未配分原価170、入口価格280、出口価格210、費用控除後192。過去の支出の未配分、現在の取得、売却対価、売却費用控除後では測る目的が異なる。金額の大小や利益目標だけで帳簿価額を選べず、対象活動と適用基準の測定条件を確認する。",
+      "rubric": [
+        {
+          "criterion": "170/280/210/192を問いに対応させる",
+          "points": 2
+        },
+        {
+          "criterion": "測定目的の違いを説明",
+          "points": 1
+        },
+        {
+          "criterion": "一律の最大額ではなく適用条件を確認すると述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "objectives": [
+        5
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-recognition-measurement": [
+          5
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-recognition-measurement-f05"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-recognition-measurement",
+          "objective": 5,
+          "objectiveText": "将来額・期間・更新する率を示して現在価値を計算し、測定目的の差を説明する"
+        }
+      ],
+      "prompt": "同じ測定日から1年後105、2年後110.25を回収する当初予測を年5%で複利割引した額は200だった。予測を1年後126、2年後132.3へ更新した。方式Aは率5%を維持、方式Bは率も20%へ更新する。各現在価値を小数第2位まで求め、Bが元の200を下回る理由と、二つの計算だけでは測定目的の適切さまで決まらない理由を説明してください。各方式の採用可否自体は判定しません。",
+      "options": [],
+      "answer": 0,
+      "explanation": "端数は合計後に小数第3位を四捨五入します。リスクを将来額と率へ重複反映してよいとの指示ではなく、具体的な測定条件は別途確認します。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "Aは126/1.05+132.3/1.05²=120+120=240.00。Bは126/1.2+132.3/1.2²=105+91.875=196.88。将来額が増えても、更新した高い率が割引額を増やすため元の200を下回る。固定する情報と更新する情報は測定目的・規定に依存し、計算ができることだけで市場参加者の価値等と断定できない。",
+      "rubric": [
+        {
+          "criterion": "各年別の割引式とA240.00/B196.88",
+          "points": 3
+        },
+        {
+          "criterion": "将来額増と率上昇が逆向きに働くことを説明",
+          "points": 1
+        },
+        {
+          "criterion": "手法と測定目的・更新情報の選択を区別",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "objectives": [
+        6
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-recognition-measurement": [
+          6
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-recognition-measurement-f06"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-recognition-measurement",
+          "objective": 6,
+          "objectiveText": "所有者取引を除き、名目額・購買力・補充能力の維持による成果の差を求める"
+        }
+      ],
+      "prompt": "資本維持の学習用比較で、期首純資産600、期末950、期末追加払込み200、期末分配50。一般物価は8%上昇した。所有者取引は期末にのみ行い他の変動はない。所有者取引を除く期末額、名目維持による増加、期首購買力を維持する額とそれを超える額を求めてください。別の独立例で、期首商品1単位の取得60、期末売却95、同能力の補充額72なら、名目維持と補充能力維持の成果と差も求め、その差が自動的に日本のOCIになるか述べてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "異なる資本維持の考え方を比較する学習例です。会社法の分配可能額や日本のOCI仕訳を計算する問題ではありません。",
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "所有者取引を除く期末額950−200+50=800、名目増加200。購買力維持額600×1.08=648、超過152で、名目との差48。独立の商品例は名目成果95−60=35、補充能力維持95−72=23、差12。その概念上の差を、日本の個別基準によるOCIへ自動的に対応させることはできない。",
+      "rubric": [
+        {
+          "criterion": "期末額800/名目増加200",
+          "points": 1
+        },
+        {
+          "criterion": "購買力維持648/超過152/差48",
+          "points": 2
+        },
+        {
+          "criterion": "独立例35/23/差12",
+          "points": 2
+        },
+        {
+          "criterion": "OCIとの自動同一視を否定",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-policy-changes": [
+          1
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-policy-changes-f01"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-policy-changes",
+          "objective": 1,
+          "objectiveText": "当時の情報と変更対象から、会計方針・表示方法・見積り・誤謬を区別する"
+        }
+      ],
+      "prompt": "四件を分類し理由を一言ずつ示してください。甲は前期から重要だった支払請求書を見落とした。乙は過去合理的だった回収予測を今期初めて得た資料で更新した。丙は正当な理由で棚卸資産の原価配分方法を認められた別方法へ変更した。丁は従来存在しなかった種類の新設備に、その消費形態に合う方法を初めて採用した。丁は前の設備の方法を変更していない。",
+      "options": [],
+      "answer": 0,
+      "explanation": "結果の額が変わるかだけで分類しません。新しい資産の条件と、既存資産の方法そのものの変更を区別します。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "甲は当時利用可能な資料の見落としによる誤謬。乙は新情報による見積りの変更。丙は認識・測定の原則/手続を変える会計方針の変更。丁は新しい事象に適した方法の初適用であり、従来の方法を変える会計方針の変更に当たらない。",
+      "rubric": [
+        {
+          "criterion": "甲/乙の分類と情報の時点の理由",
+          "points": 2
+        },
+        {
+          "criterion": "丙の方針変更の分類と理由",
+          "points": 1
+        },
+        {
+          "criterion": "丁は新事象への適用で方針変更でないと説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-policy-changes": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-policy-changes-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-policy-changes",
+          "objective": 2,
+          "objectiveText": "方針変更の正当な理由と経過措置を確認し、期首累積差と各期損益を遡及計算する"
+        }
+      ],
+      "prompt": "正当な方針変更の遡及が可能である。新方針−旧方針の在庫差は、比較年X1の期首で部門甲+20・乙−8、X1末で甲+35・乙−10、X2末で甲+32・乙−4。旧X1期首利益剰余金400、X1利益70・配当10、X2利益80・配当20。その他の差異や所有者取引はない。各時点の純差、新方針によるX1期首剰余金、各期利益・期末剰余金を求め、X2末の累積差で検算してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "各部門の差を先に純額化し、期末差の全額をその期の利益へ足す誤りを避けます。税効果の差は本問にありません。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "在庫純差は期首12、X1末25、X2末28。新X1期首剰余金412、X1利益70+(25−12)=83、X1末412+83−10=485。X2利益80+(28−25)=83、X2末485+83−20=548。旧X2末は400+70−10+80−20=520なので差28となり在庫累積差と一致する。",
+      "rubric": [
+        {
+          "criterion": "純差12/25/28と期首412",
+          "points": 2
+        },
+        {
+          "criterion": "各期利益83/83と末485/548",
+          "points": 2
+        },
+        {
+          "criterion": "配当を残高へ反映しX2末差28を照合",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-policy-changes": [
+          3
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-policy-changes-f03"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-policy-changes",
+          "objective": 3,
+          "objectiveText": "表示方法の組替えを行い、段階利益の変化と合計不変を照合する"
+        }
+      ],
+      "prompt": "適切な表示変更として、従来営業外収益に含めた継続事業の収益40を売上へ、従来販管費に含めた費用15を営業外費用へ移す。認識・測定は不変。旧表示は売上900、原価500、販管費250、営業外収益60、営業外費用30である。新しい営業利益と経常利益を計算し、営業利益の増加を全体の利益増加と説明できるか答えてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "移動元の額も減らす必要があります。売上だけ増やしたり、販管費を減らしたまま営業外費用を増やさない処理は組替えではありません。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "新売上940、販管費235、営業外収益20、営業外費用45。営業利益940−500−235=205、経常利益205+20−45=180。旧営業利益150に比べ55増えるが、旧経常利益150+60−30=180から全体は変わらない。区分を移したことによる段階利益の差である。",
+      "rubric": [
+        {
+          "criterion": "新営業205/経常180を正しい移動から計算",
+          "points": 2
+        },
+        {
+          "criterion": "旧営業150との差55と経常不変を説明",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-policy-changes": [
+          4
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-policy-changes-f04"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-policy-changes",
+          "objective": 4,
+          "objectiveText": "合理的な見積りの更新と償却方法の変更について、当期以降の配分を求める"
+        }
+      ],
+      "prompt": "設備甲は残額480・残存価額ゼロ・残り6年だったが、新しい使用情報により残り4年へ更新する。設備乙は正当な理由で償却方法を定率法から定額法へ変更し、変更時帳簿価額330・残存価額30・残り5年である。過去の処理はどちらも適切で、変更は期首。他の損失はない。変更後の各年額と当期末帳簿価額を求め、変更の分類と過去の扱いを比較してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "耐用年数だけの更新と、償却方法そのものの変更は同じ名称ではありませんが、基準24号の所定の扱いにより処理時期が共通します。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "甲は見積りの変更で、480/4=120、末360。乙は会計方針の変更を会計上の見積りの変更と区別することが困難な場合の扱いとなり、(330−30)/5=60、末270。いずれも過去を遡及して直さず当期以降へ反映する。乙を単なる表示変更や、必ず過去全期を再計算する方針変更とはしない。",
+      "rubric": [
+        {
+          "criterion": "甲120/末360と見積変更",
+          "points": 2
+        },
+        {
+          "criterion": "乙60/末270と区別困難な扱い",
+          "points": 2
+        },
+        {
+          "criterion": "両者の当期以降反映・過去非修正",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "objectives": [
+        5
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-policy-changes": [
+          5
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-policy-changes-f05"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-policy-changes",
+          "objective": 5,
+          "objectiveText": "過去の誤謬を修正再表示し、在庫差の翌期への反転と期間利益を照合する"
+        }
+      ],
+      "prompt": "重要な在庫誤謬はX1末が18過大、X2末が7過少、X3末は正しい。各期の報告又は整理前利益はX1=100、X2=120、X3=140。各期首は直前末の誤りをそのまま引き継いだ。X1期首に誤りはない。他の誤り等はない。正しい三期利益と合計を求め、X2には二つの年度の誤りがどう作用するか説明してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "同じ額が単純に翌期反転する一件だけの資料と異なり、次の期末誤りが重なります。期末と期首を別々に置いて計算します。",
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "利益の誤差は期末在庫誤差−期首在庫誤差。X1は+18なので正しい利益82。X2は−7−18=−25なので145。X3は0−(−7)=+7なので133。正しい合計360は報告等100+120+140と一致する。X2は過大な期首が原価を18増やし、過少な期末も原価を7増やすので利益が計25過少になる。",
+      "rubric": [
+        {
+          "criterion": "各期82/145/133を求める",
+          "points": 3
+        },
+        {
+          "criterion": "X2の期首18と期末7の双方の原価/利益への向きを説明",
+          "points": 2
+        },
+        {
+          "criterion": "三期合計360の照合",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "objectives": [
+        6
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-policy-changes": [
+          6
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-policy-changes-f06"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-policy-changes",
+          "objective": 6,
+          "objectiveText": "実務上不可能な場合の分岐と、変更・未適用基準について必要な説明を選ぶ"
+        }
+      ],
+      "prompt": "正当な方針変更で原則的な遡及が実務上不可能と与える。案Aは各比較期への影響を出せないが、実行可能な最も古い期間X2の期首累積差+27は算定できる。案Bは当期首までの累積差自体も合理的な努力で算定できず、X3年7月1日が将来に向かって適用できる最も古い日と与える。各案の開始残高又は開始日と説明すべき理由・方法を示してください。別の未適用基準の影響は未把握だが専ら表示注記だけの基準ではない。「影響ゼロ」と注記してよいかも述べてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "実務上不可能という理由だけで、全てを何もせず放置する扱いにはなりません。誤謬訂正の免除へ一律に転用する問題でもありません。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "AはX2期首の資産負債・純資産へ算定可能な累積差27を反映し、X2から適用する。Bは与件の最も古い日X3年7月1日から将来に向け適用する。各々、実務上不可能な理由、行った処理、適用開始時期を説明する。未適用基準は未把握をゼロと断定せず、名称・概要・予定適用日と把握している影響や評価中である状況等を確認して説明する。",
+      "rubric": [
+        {
+          "criterion": "Aの期首27とX2開始",
+          "points": 1
+        },
+        {
+          "criterion": "BのX3年7月1日からの将来適用",
+          "points": 1
+        },
+        {
+          "criterion": "不可能の理由/処理方法/開始時期の説明",
+          "points": 1
+        },
+        {
+          "criterion": "未把握とゼロを区別し未適用基準の情報を示す",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-estimate-disclosure": [
+          1
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-estimate-disclosure-f01"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-estimate-disclosure",
+          "objective": 1,
+          "objectiveText": "翌年度の重要な影響のリスクから対象項目を識別し、残高・有利不利・市場価格変動を区別する"
+        }
+      ],
+      "prompt": "開示対象の識別資料に四件ある。甲は残高5だが見積りの変化が翌年度へ重要な影響を及ぼすリスクあり。乙は残高900の上場資産で問題は市場価格変動そのものだけ。丙は見積りの結果当期未計上だが、翌年度の重要な影響のリスクあり。丁は翌年度への同リスクなしと判断済み。他の開示基準は問わない。基準31号の識別として適切なものはどれですか。",
+      "options": [
+        "残高の大きい乙だけを必ず対象にする",
+        "甲・丙について検討し、金額順や当期計上の有無だけで除かない",
+        "乙を除いた三件をリスク条件に関係なく必ず同じ注記にする",
+        "当期未計上の丙はどんなリスクでも対象外にする"
+      ],
+      "answer": 1,
+      "explanation": "翌年度の重要な影響のリスクが着眼点です。甲の小額、丙の当期未計上だけで除かず、乙の市場価格変動そのものと会計上の見積りの変動を区別します。丁の別の開示義務を否定した結論ではありません。",
+      "points": 1
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-estimate-disclosure": [
+          2
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-estimate-disclosure-f02"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-estimate-disclosure",
+          "objective": 2,
+          "objectiveText": "計上額と方法・主要な仮定を、企業固有の事実と計算資料に結び付けて説明する"
+        }
+      ],
+      "prompt": "ある負債の見積方法は対象400件×見積発生率3%×1件当たり2で適切と与える。今期は対象500件、率4%へ改めたが、注記案は「負債40、一般に認められた方法」とだけ記す。今期額と前の前提なら得た額を求め、方法と主要仮定の変更について利用者が分かるよう加える企業固有情報を二つ挙げてください。発生率の算定根拠の一例も含めてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "率を変えたこと自体の適否は与件で固定し、注記を通じて計上額の意味を理解できるかを評価します。",
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "今期500×0.04×2=40、前の前提400×0.03×2=24。対象件数の範囲/増加要因、発生率を4%とした根拠（直近調査や製品・契約構成の変化等）など、方法と実際のデータをつなぐ情報を示す。名称と額だけでは、どの仮定がなぜ変わったか分からない。",
+      "rubric": [
+        {
+          "criterion": "今期40/前提24を計算",
+          "points": 1
+        },
+        {
+          "criterion": "対象範囲等の企業固有情報一つ",
+          "points": 1
+        },
+        {
+          "criterion": "率4%の算定根拠を含む異なる企業固有情報一つ",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q15",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-estimate-disclosure": [
+          3
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-estimate-disclosure-f03"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-estimate-disclosure",
+          "objective": 3,
+          "objectiveText": "仮定を動かした感応度を計算し、単独変更と同時変更の差を説明する"
+        }
+      ],
+      "prompt": "学習用見積額は対象額2,400×率5%=120。対象額だけ3,000へ変える場合、率だけ4%へ変える場合、両方同時の場合の各額と120からの差を求めてください。単独の差を足す方法と同時変更の差は一致するか、交差する効果の額と向きも説明してください。方法の適切さは与件で保証され、他の要因はありません。",
+      "options": [],
+      "answer": 0,
+      "explanation": "一つの仮定を動かす比較と、複数の仮定を同時に動かす比較では資料の意味が変わります。将来額が確定したという結果ではありません。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "対象だけ150で+30、率だけ96で−24、同時120で差0。単独差の合計は+6だが同時の差は0。交差効果は(3,000−2,400)×(4%−5%)=−6で、対象増加部分に低い率が掛かるため。最終額が同じでも仮定が不変という意味にはならない。",
+      "rubric": [
+        {
+          "criterion": "三額150/96/120と差+30/−24/0",
+          "points": 2
+        },
+        {
+          "criterion": "単独合計+6と同時0の違い",
+          "points": 1
+        },
+        {
+          "criterion": "交差効果−6とその理由",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "id": "zr2-zaimu-framework-review-b-q16",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-estimate-disclosure",
+      "objectives": [
+        4,
+        5
+      ],
+      "targetObjectives": {
+        "zr2-zaimu-estimate-disclosure": [
+          4,
+          5
+        ]
+      },
+      "fineObjectiveIds": [
+        "zr2-zaimu-estimate-disclosure-f04",
+        "zr2-zaimu-estimate-disclosure-f05"
+      ],
+      "fineTargets": [
+        {
+          "lessonId": "zr2-zaimu-estimate-disclosure",
+          "objective": 4,
+          "objectiveText": "個別基準による認識測定と注記の識別を分け、当期損失ゼロでも必要な説明を判断する"
+        },
+        {
+          "lessonId": "zr2-zaimu-estimate-disclosure",
+          "objective": 5,
+          "objectiveText": "別注記・連結の参照と個別額を区別し、必要情報を残して重複を避ける"
+        }
+      ],
+      "prompt": "設備の個別基準による当期損失はゼロと適正に判定済みだが、翌年度の主要契約更新が見積額へ重要な影響を与えるリスクがある。連結設備残高800、個別残高500。個別注記案は、金額を省き「連結参照。減損基準に従った」とだけ書く。認識測定と注記の判断、個別額、参照内容の三点から問題を示し、直接補足又は参照を使う有効な改善案を一つ述べてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "参照という形式だけで開示目的を満たすとはいえません。直接補足を選んだ答案に、不要な参照先表示を追加採点条件として課しません。",
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "当期損失ゼロでも翌年度の重要なリスクの説明を検討する。個別の計上額500を連結800や省略で置き換えない。参照先の「減損基準に従った」だけでは契約更新の仮定や変化の条件等を理解できない。個別500を示し、必要な企業固有情報を当該注記へ直接補足するか、それを含む別注記/連結注記を参照して所在を明らかにする。",
+      "rubric": [
+        {
+          "criterion": "損失ゼロとリスク注記を分ける",
+          "points": 2
+        },
+        {
+          "criterion": "個別額500を必要とする",
+          "points": 1
+        },
+        {
+          "criterion": "参照内容の不足を具体的に指摘",
+          "points": 1
+        },
+        {
+          "criterion": "直接補足又は必要情報を備えた参照という改善",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-zaimu-recognition-measurement-f01": [
+      "zr2-zaimu-framework-review-b-q1"
+    ],
+    "zr2-zaimu-recognition-measurement-f02": [
+      "zr2-zaimu-framework-review-b-q2"
+    ],
+    "zr2-zaimu-recognition-measurement-f03": [
+      "zr2-zaimu-framework-review-b-q3"
+    ],
+    "zr2-zaimu-recognition-measurement-f04": [
+      "zr2-zaimu-framework-review-b-q4"
+    ],
+    "zr2-zaimu-recognition-measurement-f05": [
+      "zr2-zaimu-framework-review-b-q5"
+    ],
+    "zr2-zaimu-recognition-measurement-f06": [
+      "zr2-zaimu-framework-review-b-q6"
+    ],
+    "zr2-zaimu-policy-changes-f01": [
+      "zr2-zaimu-framework-review-b-q7"
+    ],
+    "zr2-zaimu-policy-changes-f02": [
+      "zr2-zaimu-framework-review-b-q8"
+    ],
+    "zr2-zaimu-policy-changes-f03": [
+      "zr2-zaimu-framework-review-b-q9"
+    ],
+    "zr2-zaimu-policy-changes-f04": [
+      "zr2-zaimu-framework-review-b-q10"
+    ],
+    "zr2-zaimu-policy-changes-f05": [
+      "zr2-zaimu-framework-review-b-q11"
+    ],
+    "zr2-zaimu-policy-changes-f06": [
+      "zr2-zaimu-framework-review-b-q12"
+    ],
+    "zr2-zaimu-estimate-disclosure-f01": [
+      "zr2-zaimu-framework-review-b-q13"
+    ],
+    "zr2-zaimu-estimate-disclosure-f02": [
+      "zr2-zaimu-framework-review-b-q14"
+    ],
+    "zr2-zaimu-estimate-disclosure-f03": [
+      "zr2-zaimu-framework-review-b-q15"
+    ],
+    "zr2-zaimu-estimate-disclosure-f04": [
+      "zr2-zaimu-framework-review-b-q16"
+    ],
+    "zr2-zaimu-estimate-disclosure-f05": [
+      "zr2-zaimu-framework-review-b-q16"
+    ]
+  },
+  "totalPoints": 73,
+  "selfReview": {
+    "status": "author-check-in-progress-independent-review-pending",
+    "arithmetic": "別記録に独立算式を保存してから著者確認を閉じる。",
+    "rubricAlignment": "全問で質問の要求と各採点項目を対応させる。",
+    "japanese": "全文の文脈確認と4ツールの結果確認後に著者記録を保存する。"
+  }
+}
