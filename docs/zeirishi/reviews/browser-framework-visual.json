@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/qualifications/zeirishi/zr2-zaimu-policy-changes/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/framework-light-lesson-mobile.png"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/framework-light-unit-desktop.png"
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/framework-light-case-mobile.png"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/qualifications/zeirishi/zr2-zaimu-policy-changes/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/framework-dark-lesson-mobile.png"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/framework-dark-unit-desktop.png"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/framework-dark-case-mobile.png"
+    }
+  ],
+  "scope": "Actual financial lesson, unit glossary and active shared case; bounded automated A/AA review, not accessibility certification"
+}

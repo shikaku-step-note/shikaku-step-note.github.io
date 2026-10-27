@@ -4,6 +4,7 @@ import Layout from '../../../../layouts/Layout.astro';
 import Icon from '../../../../components/Icon.astro';
 import Share from '../../../../components/Share.astro';
 import TaxExpandedUnits from '../../../../components/TaxExpandedUnits.astro';
+import { zeirishiDeepLessons } from '../../../../data/zeirishi-expanded';
 import {
   zeirishiSubjects,
   zeirishiOutline,
@@ -22,20 +23,23 @@ const lessons = (
     (l) => l.data.qualification === 'zeirishi' && l.data.subject === s.id && !l.data.archived && !l.data.stableId.startsWith('zr2-'),
   )
 ).sort((a, b) => a.data.order - b.data.order);
-const description = `税理士試験「${s.name}」の無料基礎学習。${lessons.length}レッスンを順に学び、例題・用語・総復習・120分の独自基礎模試で確認できます。適用条件と追加学習も示します。`;
+const deepLessons = zeirishiDeepLessons.filter((lesson) => lesson.subject === s.id);
+const description = deepLessons.length
+  ? `税理士試験「${s.name}」の無料教材。詳しく学ぶ${deepLessons.length}講と入門${lessons.length}講から学習順を選べます。解説・例題・計算や記述の演習、用語テストを用意し、全体の未完了範囲も示します。`
+  : `税理士試験「${s.name}」の無料入門教材。${lessons.length}講の解説・例題・用語と復習問題を学べます。本試験に向けて拡充が必要な範囲と、追加学習の計画も示します。`;
 ---
 
 <Layout
-  title={`税理士・${s.name}の無料基礎学習と学習順`}
+  title={`税理士・${s.name}の無料教材と学習順`}
   description={description}
   schema={{
     '@type': 'LearningResource',
-    name: `税理士・${s.name}の基礎学習`,
+    name: `税理士・${s.name}の学習案内`,
     inLanguage: 'ja',
     isAccessibleForFree: true,
     learningResourceType: '科目別学習案内',
-    teaches: rows.flatMap((r) => r.objectives),
-    dateModified: zeirishiReviewed,
+    teaches: [...rows.flatMap((r) => r.objectives), ...deepLessons.flatMap((lesson) => lesson.objectives)],
+    dateModified: [zeirishiReviewed, ...deepLessons.map((lesson) => lesson.reviewed)].sort().at(-1),
   }}
   breadcrumbs={[
     { name: '資格一覧', path: 'qualifications/' },
@@ -48,7 +52,7 @@ const description = `税理士試験「${s.name}」の無料基礎学習。${les
       <p class="eyebrow">
         税理士試験・{s.category}／{s.category === '会計学' ? '必須科目' : '選択科目'}
       </p>
-      <h1>{s.name}の基礎を学ぶ</h1>
+      <h1>{s.name}を学ぶ</h1>
       <p class="lead">{s.scope}</p>
       <p>{description}</p>
       <div class="button-row">
@@ -74,8 +78,7 @@ const description = `税理士試験「${s.name}」の無料基礎学習。${les
             最初に基本の関係を捉え、例題と条件を変えた比較で手順を確認し、最後に手続・総復習へ進みます。各レッスンの時間は、本文を読むだけでなく、手で例題を解き、理解度チェックと解説を確認する独自の目安です。難しい箇所は複数日に分けてください。
           </p>
           <p>
-            この教材は主要な仕組みを扱う基礎課程です。{s.name}
-            の全法令・通達・会計基準・例外や、本試験の資料量と難易度を網羅するものではありません。下記の追加学習と公式資料を併用します。
+            入門課程では主要な仕組みを学び、詳しい学習ユニットでは、条件の判断や計算・記述を練習します。科目全体の教材は拡充中です。公開済みの教材と、まだ学習できない範囲は、<a href={href('qualifications/zeirishi/coverage/')}>対応表と拡充計画</a>で確認できます。
           </p>
           {s.category === '税法' && (
             <p>
@@ -121,7 +124,7 @@ const description = `税理士試験「${s.name}」の無料基礎学習。${les
                           <span data-status-label={l.data.stableId}>未学習</span>
                         </div>
                       </div>
-                      <button
+                      <button disabled aria-busy="true"
                         class="star-button"
                         type="button"
                         data-bookmark={l.data.stableId}

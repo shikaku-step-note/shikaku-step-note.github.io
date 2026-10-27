@@ -1,0 +1,3023 @@
+{
+  "checkedOn": "2026-10-27",
+  "inputs": 26,
+  "successfulToolRuns": 104,
+  "results": [
+    {
+      "input": "zr2-zaimu-purpose-regulation",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 13,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 10,
+          "nominal_ending": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 111,
+        "nominal_ending_count": 0,
+        "nominal_ending_ratio": 0.0,
+        "total_paragraphs": 34,
+        "paragraph_lead_conjunction_count": 1,
+        "paragraph_lead_conjunction_ratio": 0.029411764705882353,
+        "paragraph_sentence_counts": [
+          3,
+          3,
+          3,
+          4,
+          3,
+          4,
+          2,
+          3,
+          4,
+          3,
+          3,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4,
+          3,
+          4,
+          2,
+          4,
+          4,
+          2,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "paragraph_sentence_count_cv": 0.18659743402890072,
+        "rhythm": {
+          "mora_mean": 55.08108108108108,
+          "mora_stdev": 17.726213670254456,
+          "burstiness": -0.5130649001368288,
+          "length_autocorrelation_lag1": -0.10016171320290465
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.2072072072072072
+        },
+        "lexical_diversity": {
+          "ttr": 0.37452615617892343,
+          "mtld": 84.46195970983948,
+          "content_token_count": 1319,
+          "doc_char_count": 4411,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 56,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 34,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 13
+    },
+    {
+      "input": "zr2-zaimu-purpose-regulation",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-purpose-regulation",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-purpose-regulation",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-purpose-regulation-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 8,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 6
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 126,
+        "nominal_ending_count": 5,
+        "nominal_ending_ratio": 0.03968253968253968,
+        "total_paragraphs": 21,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          6,
+          3,
+          4,
+          3,
+          9,
+          14,
+          5,
+          3,
+          3,
+          3,
+          8,
+          5,
+          3,
+          6,
+          3,
+          9,
+          5,
+          2,
+          10,
+          11,
+          11
+        ],
+        "paragraph_sentence_count_cv": 0.5610836076867821,
+        "rhythm": {
+          "mora_mean": 45.93650793650794,
+          "mora_stdev": 17.122688017608382,
+          "burstiness": -0.45693287843164565,
+          "length_autocorrelation_lag1": 0.041111454256405125
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.1984126984126984
+        },
+        "lexical_diversity": {
+          "ttr": 0.3268783888458559,
+          "mtld": 57.44458103934254,
+          "content_token_count": 1291,
+          "doc_char_count": 4060,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 74,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 19,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 8
+    },
+    {
+      "input": "zr2-zaimu-purpose-regulation-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-purpose-regulation-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-purpose-regulation-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 8,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 6
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 108,
+        "nominal_ending_count": 1,
+        "nominal_ending_ratio": 0.009259259259259259,
+        "total_paragraphs": 36,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          2,
+          3,
+          3,
+          3,
+          3,
+          1,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          2,
+          4,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          2,
+          3,
+          4,
+          3,
+          5,
+          3,
+          3,
+          4,
+          3
+        ],
+        "paragraph_sentence_count_cv": 0.23570226039551587,
+        "rhythm": {
+          "mora_mean": 58.78703703703704,
+          "mora_stdev": 25.067335587235288,
+          "burstiness": -0.4021221600558646,
+          "length_autocorrelation_lag1": -0.16970637082351941
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/名詞",
+          "lead_pos_4gram_ratio": 0.12037037037037036
+        },
+        "lexical_diversity": {
+          "ttr": 0.29694323144104806,
+          "mtld": 72.74015261679166,
+          "content_token_count": 1374,
+          "doc_char_count": 4446,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 3,
+          "non_blank_line_count": 58,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 34,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 8
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 2
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 3,
+        "by_category": {
+          "antithesis_repetition": 3
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 123,
+        "nominal_ending_count": 7,
+        "nominal_ending_ratio": 0.056910569105691054,
+        "total_paragraphs": 21,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          5,
+          2,
+          12,
+          5,
+          2,
+          5,
+          3,
+          10,
+          9,
+          5,
+          2,
+          8,
+          9,
+          6,
+          2,
+          7,
+          8,
+          5,
+          2,
+          9,
+          7
+        ],
+        "paragraph_sentence_count_cv": 0.5034089619646412,
+        "rhythm": {
+          "mora_mean": 42.72357723577236,
+          "mora_stdev": 24.057282862952327,
+          "burstiness": -0.27951563285086384,
+          "length_autocorrelation_lag1": 0.13820614444361726
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/名詞",
+          "lead_pos_4gram_ratio": 0.14655172413793102
+        },
+        "lexical_diversity": {
+          "ttr": null,
+          "mtld": null,
+          "content_token_count": 1181,
+          "doc_char_count": 3598,
+          "skipped_too_short": true
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 84,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 14,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 3
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-reporting-obligations-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 17,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 10,
+          "translationese": 1,
+          "antithesis_repetition": 3,
+          "low_specificity": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 107,
+        "nominal_ending_count": 1,
+        "nominal_ending_ratio": 0.009345794392523364,
+        "total_paragraphs": 32,
+        "paragraph_lead_conjunction_count": 3,
+        "paragraph_lead_conjunction_ratio": 0.09375,
+        "paragraph_sentence_counts": [
+          2,
+          4,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          4,
+          3,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          4,
+          2
+        ],
+        "paragraph_sentence_count_cv": 0.17707752636912538,
+        "rhythm": {
+          "mora_mean": 51.71028037383178,
+          "mora_stdev": 16.90545968647733,
+          "burstiness": -0.5072425169030182,
+          "length_autocorrelation_lag1": -0.31094602318888126
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.14953271028037382
+        },
+        "lexical_diversity": {
+          "ttr": 0.3952145214521452,
+          "mtld": 100.17988914884833,
+          "content_token_count": 1212,
+          "doc_char_count": 4019,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 56,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 32,
+          "paragraphs_fired": 1
+        }
+      },
+      "findingsCount": 17
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 7,
+        "by_category": {
+          "low_burstiness": 1,
+          "antithesis_repetition": 6
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 115,
+        "nominal_ending_count": 4,
+        "nominal_ending_ratio": 0.034782608695652174,
+        "total_paragraphs": 21,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          5,
+          3,
+          3,
+          3,
+          10,
+          5,
+          2,
+          4,
+          4,
+          8,
+          6,
+          2,
+          10,
+          3,
+          3,
+          9,
+          5,
+          2,
+          9,
+          9,
+          10
+        ],
+        "paragraph_sentence_count_cv": 0.5305060536580746,
+        "rhythm": {
+          "mora_mean": 45.08695652173913,
+          "mora_stdev": 17.293660671844243,
+          "burstiness": -0.44554377786364346,
+          "length_autocorrelation_lag1": -0.12348827160861545
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.1565217391304348
+        },
+        "lexical_diversity": {
+          "ttr": null,
+          "mtld": null,
+          "content_token_count": 1167,
+          "doc_char_count": 3647,
+          "skipped_too_short": true
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 69,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 19,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 7
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-qualitative-characteristics-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-elements",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 7,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 5
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 108,
+        "nominal_ending_count": 4,
+        "nominal_ending_ratio": 0.037037037037037035,
+        "total_paragraphs": 34,
+        "paragraph_lead_conjunction_count": 1,
+        "paragraph_lead_conjunction_ratio": 0.029411764705882353,
+        "paragraph_sentence_counts": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          1,
+          3,
+          3,
+          4,
+          3,
+          3,
+          4,
+          4,
+          4,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2
+        ],
+        "paragraph_sentence_count_cv": 0.19422386077225032,
+        "rhythm": {
+          "mora_mean": 54.657407407407405,
+          "mora_stdev": 21.41008849992825,
+          "burstiness": -0.4370765530126109,
+          "length_autocorrelation_lag1": -0.1857548884116914
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.14814814814814814
+        },
+        "lexical_diversity": {
+          "ttr": 0.3424336973478939,
+          "mtld": 74.19748528289855,
+          "content_token_count": 1282,
+          "doc_char_count": 4180,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 2,
+          "non_blank_line_count": 48,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 32,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 7
+    },
+    {
+      "input": "zr2-zaimu-elements",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 3
+    },
+    {
+      "input": "zr2-zaimu-elements",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-elements",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-elements-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 1,
+        "by_category": {
+          "low_burstiness": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 128,
+        "nominal_ending_count": 10,
+        "nominal_ending_ratio": 0.078125,
+        "total_paragraphs": 22,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          12,
+          5,
+          3,
+          3,
+          2,
+          4,
+          3,
+          10,
+          3,
+          2,
+          5,
+          2,
+          14,
+          9,
+          3,
+          2,
+          9,
+          9,
+          11,
+          5,
+          3,
+          9
+        ],
+        "paragraph_sentence_count_cv": 0.6360353886577381,
+        "rhythm": {
+          "mora_mean": 44.6875,
+          "mora_stdev": 21.15225682403653,
+          "burstiness": -0.3574624863646415,
+          "length_autocorrelation_lag1": 0.06715691927122704
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.15748031496062992
+        },
+        "lexical_diversity": {
+          "ttr": null,
+          "mtld": null,
+          "content_token_count": 1302,
+          "doc_char_count": 3912,
+          "skipped_too_short": true
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 71,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 17,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-elements-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-elements-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-elements-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-general-principles",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 11,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 8,
+          "forbidden_phrase": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 111,
+        "nominal_ending_count": 1,
+        "nominal_ending_ratio": 0.009009009009009009,
+        "total_paragraphs": 34,
+        "paragraph_lead_conjunction_count": 3,
+        "paragraph_lead_conjunction_ratio": 0.08823529411764706,
+        "paragraph_sentence_counts": [
+          2,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          4,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3,
+          4,
+          3,
+          3
+        ],
+        "paragraph_sentence_count_cv": 0.17117117117117117,
+        "rhythm": {
+          "mora_mean": 51.126126126126124,
+          "mora_stdev": 19.157534267941045,
+          "burstiness": -0.4548509807107831,
+          "length_autocorrelation_lag1": -0.2522194944988944
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.12612612612612611
+        },
+        "lexical_diversity": {
+          "ttr": 0.3746958637469586,
+          "mtld": 80.61664119431174,
+          "content_token_count": 1233,
+          "doc_char_count": 4064,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 60,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 34,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 11
+    },
+    {
+      "input": "zr2-zaimu-general-principles",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-general-principles",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-general-principles",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-general-principles-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 1,
+        "by_category": {
+          "low_burstiness": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 114,
+        "nominal_ending_count": 3,
+        "nominal_ending_ratio": 0.02631578947368421,
+        "total_paragraphs": 21,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          6,
+          2,
+          11,
+          6,
+          3,
+          10,
+          2,
+          2,
+          8,
+          5,
+          2,
+          10,
+          2,
+          3,
+          8,
+          10,
+          5,
+          2,
+          5,
+          3,
+          9
+        ],
+        "paragraph_sentence_count_cv": 0.5813347903782768,
+        "rhythm": {
+          "mora_mean": 43.324561403508774,
+          "mora_stdev": 17.769723716141,
+          "burstiness": -0.41828523956569813,
+          "length_autocorrelation_lag1": -0.03858704468011238
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.15789473684210525
+        },
+        "lexical_diversity": {
+          "ttr": null,
+          "mtld": null,
+          "content_token_count": 1114,
+          "doc_char_count": 3429,
+          "skipped_too_short": true
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 70,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 16,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-general-principles-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-general-principles-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-general-principles-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 15,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 12,
+          "english_syntax_inanimate_subject": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 156,
+        "nominal_ending_count": 1,
+        "nominal_ending_ratio": 0.00641025641025641,
+        "total_paragraphs": 44,
+        "paragraph_lead_conjunction_count": 2,
+        "paragraph_lead_conjunction_ratio": 0.045454545454545456,
+        "paragraph_sentence_counts": [
+          3,
+          3,
+          4,
+          5,
+          4,
+          3,
+          5,
+          4,
+          5,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          2,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3
+        ],
+        "paragraph_sentence_count_cv": 0.20351933162035313,
+        "rhythm": {
+          "mora_mean": 53.916666666666664,
+          "mora_stdev": 18.989861780101254,
+          "burstiness": -0.47906278944644737,
+          "length_autocorrelation_lag1": -0.09437426015837104
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.14102564102564102
+        },
+        "lexical_diversity": {
+          "ttr": 0.31709899417681314,
+          "mtld": 76.355789188095,
+          "content_token_count": 1889,
+          "doc_char_count": 5994,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 4,
+          "non_blank_line_count": 71,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 44,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 15
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 13
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 2,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 154,
+        "nominal_ending_count": 13,
+        "nominal_ending_ratio": 0.08441558441558442,
+        "total_paragraphs": 25,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          6,
+          2,
+          12,
+          10,
+          3,
+          3,
+          10,
+          5,
+          2,
+          4,
+          2,
+          10,
+          9,
+          6,
+          2,
+          2,
+          2,
+          10,
+          9,
+          3,
+          2,
+          9,
+          12,
+          8,
+          11
+        ],
+        "paragraph_sentence_count_cv": 0.5945726307667323,
+        "rhythm": {
+          "mora_mean": 42.98701298701299,
+          "mora_stdev": 18.99452655713486,
+          "burstiness": -0.3870908436017292,
+          "length_autocorrelation_lag1": 0.09342018975690014
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.14285714285714285
+        },
+        "lexical_diversity": {
+          "ttr": 0.2717948717948718,
+          "mtld": 47.359756301780195,
+          "content_token_count": 1560,
+          "doc_char_count": 4521,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 87,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 18,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 2
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 7
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-recognition-measurement-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-policy-changes",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 10,
+        "by_category": {
+          "negation_repetition": 7,
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "english_syntax_inanimate_subject": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 173,
+        "nominal_ending_count": 1,
+        "nominal_ending_ratio": 0.005780346820809248,
+        "total_paragraphs": 53,
+        "paragraph_lead_conjunction_count": 1,
+        "paragraph_lead_conjunction_ratio": 0.018867924528301886,
+        "paragraph_sentence_counts": [
+          3,
+          3,
+          3,
+          4,
+          3,
+          2,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          5,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3,
+          2,
+          4,
+          3,
+          3,
+          3,
+          2,
+          3,
+          6,
+          3,
+          3,
+          3,
+          2,
+          4,
+          5,
+          4,
+          3,
+          4,
+          5,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "paragraph_sentence_count_cv": 0.23916948977545896,
+        "rhythm": {
+          "mora_mean": 55.73988439306358,
+          "mora_stdev": 20.27830852212351,
+          "burstiness": -0.4664880143955051,
+          "length_autocorrelation_lag1": -0.10910836952571022
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.15606936416184972
+        },
+        "lexical_diversity": {
+          "ttr": 0.24783599088838268,
+          "mtld": 57.985499011790786,
+          "content_token_count": 2195,
+          "doc_char_count": 6766,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 2,
+          "non_blank_line_count": 91,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 52,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 10
+    },
+    {
+      "input": "zr2-zaimu-policy-changes",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 8
+    },
+    {
+      "input": "zr2-zaimu-policy-changes",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-policy-changes",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-policy-changes-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 2,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 187,
+        "nominal_ending_count": 20,
+        "nominal_ending_ratio": 0.10695187165775401,
+        "total_paragraphs": 29,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          5,
+          2,
+          11,
+          9,
+          3,
+          2,
+          10,
+          6,
+          2,
+          3,
+          3,
+          10,
+          6,
+          2,
+          4,
+          3,
+          11,
+          11,
+          5,
+          3,
+          10,
+          6,
+          2,
+          9,
+          9,
+          9,
+          12,
+          11,
+          8
+        ],
+        "paragraph_sentence_count_cv": 0.5381177962821083,
+        "rhythm": {
+          "mora_mean": 40.67914438502674,
+          "mora_stdev": 18.430495053878087,
+          "burstiness": -0.37639629580458955,
+          "length_autocorrelation_lag1": 0.13704276587836522
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.16042780748663102
+        },
+        "lexical_diversity": {
+          "ttr": 0.2447513812154696,
+          "mtld": 47.809733110749534,
+          "content_token_count": 1810,
+          "doc_char_count": 5232,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 106,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 21,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 2
+    },
+    {
+      "input": "zr2-zaimu-policy-changes-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-policy-changes-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-policy-changes-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 9,
+        "by_category": {
+          "uniform_paragraph_structure": 1,
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 6
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 103,
+        "nominal_ending_count": 1,
+        "nominal_ending_ratio": 0.009708737864077669,
+        "total_paragraphs": 34,
+        "paragraph_lead_conjunction_count": 2,
+        "paragraph_lead_conjunction_ratio": 0.058823529411764705,
+        "paragraph_sentence_counts": [
+          3,
+          4,
+          3,
+          3,
+          3,
+          2,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "paragraph_sentence_count_cv": 0.14946411959554032,
+        "rhythm": {
+          "mora_mean": 54.650485436893206,
+          "mora_stdev": 18.624396119936673,
+          "burstiness": -0.49165673900156,
+          "length_autocorrelation_lag1": -0.2912213867184594
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.13592233009708737
+        },
+        "lexical_diversity": {
+          "ttr": 0.33145161290322583,
+          "mtld": 84.30819249001067,
+          "content_token_count": 1240,
+          "doc_char_count": 4007,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 2,
+          "non_blank_line_count": 61,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 32,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 9
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 2
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 5,
+        "by_category": {
+          "low_burstiness": 1,
+          "negation_repetition": 4
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 114,
+        "nominal_ending_count": 5,
+        "nominal_ending_ratio": 0.043859649122807015,
+        "total_paragraphs": 22,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          5,
+          2,
+          10,
+          7,
+          3,
+          2,
+          8,
+          5,
+          2,
+          3,
+          2,
+          10,
+          5,
+          2,
+          8,
+          7,
+          5,
+          2,
+          2,
+          2,
+          10,
+          12
+        ],
+        "paragraph_sentence_count_cv": 0.6229923124408668,
+        "rhythm": {
+          "mora_mean": 44.219298245614034,
+          "mora_stdev": 18.881792386266383,
+          "burstiness": -0.4015383189992986,
+          "length_autocorrelation_lag1": 0.06485671657414203
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.14912280701754385
+        },
+        "lexical_diversity": {
+          "ttr": null,
+          "mtld": null,
+          "content_token_count": 1161,
+          "doc_char_count": 3518,
+          "skipped_too_short": true
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 73,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 12,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 5
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 2
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-estimate-disclosure-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-theory-writing",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 11,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 8,
+          "inanimate_subject_morph": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 127,
+        "nominal_ending_count": 1,
+        "nominal_ending_ratio": 0.007874015748031496,
+        "total_paragraphs": 36,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          3,
+          4,
+          4,
+          5,
+          5,
+          3,
+          4,
+          4,
+          3,
+          4,
+          3,
+          5,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          3,
+          3,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4,
+          3,
+          3,
+          4,
+          3,
+          2,
+          4,
+          3,
+          3,
+          3
+        ],
+        "paragraph_sentence_count_cv": 0.1946331825875319,
+        "rhythm": {
+          "mora_mean": 50.69291338582677,
+          "mora_stdev": 21.02061673054945,
+          "burstiness": -0.4137614841596185,
+          "length_autocorrelation_lag1": -0.034175865171321165
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.11811023622047244
+        },
+        "lexical_diversity": {
+          "ttr": 0.3331094694425789,
+          "mtld": 91.09491284532983,
+          "content_token_count": 1489,
+          "doc_char_count": 4676,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 4,
+          "non_blank_line_count": 53,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 36,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 11
+    },
+    {
+      "input": "zr2-zaimu-theory-writing",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 4
+    },
+    {
+      "input": "zr2-zaimu-theory-writing",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-theory-writing",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-theory-writing-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 1,
+        "by_category": {
+          "low_burstiness": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 120,
+        "nominal_ending_count": 5,
+        "nominal_ending_ratio": 0.041666666666666664,
+        "total_paragraphs": 21,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          5,
+          2,
+          11,
+          5,
+          2,
+          9,
+          4,
+          3,
+          6,
+          5,
+          2,
+          10,
+          2,
+          2,
+          7,
+          8,
+          6,
+          2,
+          9,
+          10,
+          10
+        ],
+        "paragraph_sentence_count_cv": 0.5484827557301445,
+        "rhythm": {
+          "mora_mean": 41.333333333333336,
+          "mora_stdev": 20.351221639553295,
+          "burstiness": -0.3401517884501672,
+          "length_autocorrelation_lag1": 0.04535626165154169
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/助詞",
+          "lead_pos_4gram_ratio": 0.14166666666666666
+        },
+        "lexical_diversity": {
+          "ttr": null,
+          "mtld": null,
+          "content_token_count": 1175,
+          "doc_char_count": 3510,
+          "skipped_too_short": true
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 78,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 14,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 1
+    },
+    {
+      "input": "zr2-zaimu-theory-writing-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 3
+    },
+    {
+      "input": "zr2-zaimu-theory-writing-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-theory-writing-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 10,
+        "by_category": {
+          "negation_repetition": 5,
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "repeated_sentence_lead": 3
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 177,
+        "nominal_ending_count": 42,
+        "nominal_ending_ratio": 0.23728813559322035,
+        "total_paragraphs": 70,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          8,
+          2,
+          4,
+          4,
+          2,
+          1,
+          2,
+          4,
+          1,
+          1,
+          3,
+          3,
+          2,
+          1,
+          2,
+          4,
+          1,
+          1,
+          4,
+          4,
+          2,
+          1,
+          3,
+          4,
+          2,
+          1,
+          3,
+          4,
+          2,
+          1,
+          5,
+          4,
+          2,
+          1,
+          3,
+          3,
+          2,
+          1,
+          4,
+          4,
+          2,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          3,
+          1,
+          1,
+          2,
+          5,
+          2,
+          1,
+          4,
+          3,
+          2,
+          1,
+          4,
+          5,
+          2,
+          1,
+          3,
+          4,
+          1,
+          1,
+          4,
+          4,
+          2,
+          1
+        ],
+        "paragraph_sentence_count_cv": 0.562168185157322,
+        "rhythm": {
+          "mora_mean": 50.73446327683616,
+          "mora_stdev": 23.510127613820877,
+          "burstiness": -0.3666844323125121,
+          "length_autocorrelation_lag1": 0.06878774811776477
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/補助記号/名詞/名詞",
+          "lead_pos_4gram_ratio": 0.12
+        },
+        "lexical_diversity": {
+          "ttr": 0.3098450774612694,
+          "mtld": 86.28182327885631,
+          "content_token_count": 2001,
+          "doc_char_count": 6296,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 48,
+          "non_blank_line_count": 136,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 35,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 10
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 4
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 6,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 4
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 197,
+        "nominal_ending_count": 49,
+        "nominal_ending_ratio": 0.24873096446700507,
+        "total_paragraphs": 18,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          13,
+          10,
+          11,
+          9,
+          13,
+          12,
+          12,
+          14,
+          11,
+          13,
+          7,
+          3,
+          9,
+          12,
+          11,
+          14,
+          10,
+          13
+        ],
+        "paragraph_sentence_count_cv": 0.24264808939527147,
+        "rhythm": {
+          "mora_mean": 45.53807106598985,
+          "mora_stdev": 22.087845437619485,
+          "burstiness": -0.3467638864032072,
+          "length_autocorrelation_lag1": 0.0532135542649574
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.18877551020408162
+        },
+        "lexical_diversity": {
+          "ttr": 0.2905899561189664,
+          "mtld": 64.12165589443175,
+          "content_token_count": 2051,
+          "doc_char_count": 6173,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 98,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 17,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 6
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 4
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-a-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 12,
+        "by_category": {
+          "negation_repetition": 6,
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "repeated_sentence_lead": 4
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 208,
+        "nominal_ending_count": 59,
+        "nominal_ending_ratio": 0.28365384615384615,
+        "total_paragraphs": 70,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          8,
+          2,
+          4,
+          4,
+          2,
+          1,
+          4,
+          4,
+          2,
+          1,
+          5,
+          3,
+          2,
+          1,
+          2,
+          3,
+          2,
+          1,
+          5,
+          4,
+          2,
+          1,
+          5,
+          4,
+          2,
+          1,
+          6,
+          4,
+          2,
+          1,
+          5,
+          4,
+          2,
+          1,
+          4,
+          4,
+          2,
+          1,
+          5,
+          4,
+          1,
+          1,
+          6,
+          6,
+          2,
+          1,
+          7,
+          4,
+          2,
+          1,
+          7,
+          1,
+          3,
+          1,
+          4,
+          3,
+          1,
+          1,
+          4,
+          4,
+          2,
+          1,
+          5,
+          4,
+          2,
+          1,
+          6,
+          4,
+          2,
+          1
+        ],
+        "paragraph_sentence_count_cv": 0.6099519818136041,
+        "rhythm": {
+          "mora_mean": 48.74519230769231,
+          "mora_stdev": 22.758292570670772,
+          "burstiness": -0.36343542949310376,
+          "length_autocorrelation_lag1": 0.053371837243265316
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.12135922330097088
+        },
+        "lexical_diversity": {
+          "ttr": 0.2726125368111064,
+          "mtld": 72.13814871572828,
+          "content_token_count": 2377,
+          "doc_char_count": 7001,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 54,
+          "non_blank_line_count": 142,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 35,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 12
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 7
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 9,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "repeated_sentence_lead": 2,
+          "negation_repetition": 5
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 234,
+        "nominal_ending_count": 76,
+        "nominal_ending_ratio": 0.3247863247863248,
+        "total_paragraphs": 18,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          13,
+          12,
+          13,
+          10,
+          14,
+          15,
+          15,
+          14,
+          12,
+          13,
+          17,
+          17,
+          11,
+          3,
+          11,
+          13,
+          15,
+          16
+        ],
+        "paragraph_sentence_count_cv": 0.23916356546381579,
+        "rhythm": {
+          "mora_mean": 44.71367521367522,
+          "mora_stdev": 22.478272152713092,
+          "burstiness": -0.3309236289836277,
+          "length_autocorrelation_lag1": 0.09176596511141703
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/名詞",
+          "lead_pos_4gram_ratio": 0.13675213675213677
+        },
+        "lexical_diversity": {
+          "ttr": 0.25331724969843183,
+          "mtld": 54.653488675279256,
+          "content_token_count": 2487,
+          "doc_char_count": 7006,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 104,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 18,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 9
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 7
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-b-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 19,
+        "by_category": {
+          "negation_repetition": 15,
+          "low_lexical_diversity_ttr": 1,
+          "repeated_sentence_lead": 3
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 236,
+        "nominal_ending_count": 50,
+        "nominal_ending_ratio": 0.211864406779661,
+        "total_paragraphs": 84,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          8,
+          2,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          3,
+          1,
+          4,
+          4,
+          5,
+          2,
+          1,
+          4,
+          3,
+          2,
+          1,
+          4,
+          3,
+          2,
+          1,
+          4,
+          4,
+          2,
+          1,
+          3,
+          3,
+          2,
+          1,
+          5,
+          3,
+          2,
+          1,
+          3,
+          3,
+          1,
+          1,
+          3,
+          4,
+          2,
+          1,
+          5,
+          4,
+          1,
+          1,
+          5,
+          4,
+          2,
+          1,
+          2,
+          6,
+          2,
+          1,
+          2,
+          3,
+          2,
+          1,
+          2,
+          4,
+          2,
+          1,
+          3,
+          4,
+          2,
+          1,
+          2,
+          4,
+          2,
+          1,
+          4,
+          4,
+          2,
+          1,
+          6,
+          4,
+          2,
+          1,
+          10,
+          6,
+          3,
+          1
+        ],
+        "paragraph_sentence_count_cv": 0.5978031216457084,
+        "rhythm": {
+          "mora_mean": 53.139830508474574,
+          "mora_stdev": 29.634810153814527,
+          "burstiness": -0.28396402770937773,
+          "length_autocorrelation_lag1": -0.09745525048579202
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/名詞",
+          "lead_pos_4gram_ratio": 0.1111111111111111
+        },
+        "lexical_diversity": {
+          "ttr": 0.24659448131330772,
+          "mtld": 72.45584366026266,
+          "content_token_count": 2863,
+          "doc_char_count": 8844,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 55,
+          "non_blank_line_count": 161,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 54,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 19
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 8
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 17,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "negation_repetition": 13,
+          "repeated_sentence_lead": 2
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 232,
+        "nominal_ending_count": 61,
+        "nominal_ending_ratio": 0.2629310344827586,
+        "total_paragraphs": 18,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          14,
+          12,
+          11,
+          13,
+          11,
+          12,
+          10,
+          12,
+          12,
+          14,
+          15,
+          10,
+          11,
+          13,
+          11,
+          12,
+          16,
+          23
+        ],
+        "paragraph_sentence_count_cv": 0.22677493858561903,
+        "rhythm": {
+          "mora_mean": 46.33620689655172,
+          "mora_stdev": 23.071644025213274,
+          "burstiness": -0.33518633068702486,
+          "length_autocorrelation_lag1": -0.0458876411605282
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/助詞/名詞/名詞",
+          "lead_pos_4gram_ratio": 0.1645021645021645
+        },
+        "lexical_diversity": {
+          "ttr": 0.25167388735722723,
+          "mtld": 66.89498412139002,
+          "content_token_count": 2539,
+          "doc_char_count": 7344,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 109,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 18,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 17
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 6
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-review-c-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 5,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "repeated_sentence_lead": 3
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 203,
+        "nominal_ending_count": 67,
+        "nominal_ending_ratio": 0.33004926108374383,
+        "total_paragraphs": 130,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          7,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          1,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          3,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        "paragraph_sentence_count_cv": 0.483185696283896,
+        "rhythm": {
+          "mora_mean": 40.50738916256157,
+          "mora_stdev": 21.107132186635848,
+          "burstiness": -0.31486501154452984,
+          "length_autocorrelation_lag1": 0.16881543603328586
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/補助記号/名詞/名詞",
+          "lead_pos_4gram_ratio": 0.2529411764705882
+        },
+        "lexical_diversity": {
+          "ttr": 0.3346501128668172,
+          "mtld": 62.60228729830491,
+          "content_token_count": 1772,
+          "doc_char_count": 6103,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 128,
+          "non_blank_line_count": 291,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 15,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 5
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 13
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment-questions",
+      "tool": "lint",
+      "exitCode": 0,
+      "stats": {
+        "total_findings": 3,
+        "by_category": {
+          "low_burstiness": 1,
+          "low_lexical_diversity_ttr": 1,
+          "repeated_sentence_lead": 1
+        },
+        "genre": "tech",
+        "experimental": false,
+        "total_sentences": 258,
+        "nominal_ending_count": 32,
+        "nominal_ending_ratio": 0.12403100775193798,
+        "total_paragraphs": 64,
+        "paragraph_lead_conjunction_count": 0,
+        "paragraph_lead_conjunction_ratio": 0.0,
+        "paragraph_sentence_counts": [
+          6,
+          2,
+          6,
+          3,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          5,
+          2,
+          6,
+          3,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          7,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          5,
+          3,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          3,
+          6,
+          2,
+          5,
+          2,
+          5,
+          2,
+          6,
+          2,
+          6,
+          2,
+          6,
+          2,
+          7,
+          2,
+          6,
+          2
+        ],
+        "paragraph_sentence_count_cv": 0.48230512342022575,
+        "rhythm": {
+          "mora_mean": 41.25968992248062,
+          "mora_stdev": 13.184675267876559,
+          "burstiness": -0.5156642851182792,
+          "length_autocorrelation_lag1": 0.06287550926185645
+        },
+        "ngram": {
+          "lead_pos_4gram_top": "名詞/名詞/助詞/名詞",
+          "lead_pos_4gram_ratio": 0.20155038759689922
+        },
+        "lexical_diversity": {
+          "ttr": 0.2668032786885246,
+          "mtld": 49.52412419910692,
+          "content_token_count": 2440,
+          "doc_char_count": 7571,
+          "skipped_too_short": false
+        },
+        "structural": {
+          "bold_span_count": 0,
+          "bold_per_1000_chars": 0.0,
+          "bullet_line_count": 0,
+          "non_blank_line_count": 192,
+          "boilerplate_heading_count": 0,
+          "numbered_phase_hit_count": 0,
+          "emoji_symbol_count": 0,
+          "emoji_symbol_per_1000_chars": 0.0
+        },
+        "low_specificity": {
+          "paragraphs_evaluated": 41,
+          "paragraphs_fired": 0
+        }
+      },
+      "findingsCount": 3
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment-questions",
+      "tool": "calques",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 13
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment-questions",
+      "tool": "outline",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    },
+    {
+      "input": "zr2-zaimu-framework-glossary-assessment-questions",
+      "tool": "terms",
+      "exitCode": 0,
+      "stats": {},
+      "findingsCount": 0
+    }
+  ],
+  "interpretation": "Technical terminology and necessary condition/exception distinctions retained; rhythm/lexical warnings alone do not justify deleting teaching. New calendar paragraph manually reviewed separately."
+}

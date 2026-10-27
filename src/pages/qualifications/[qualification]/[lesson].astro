@@ -111,10 +111,10 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
               : (d.scopeLabel ?? `シラバスVer.6.5・ユニット${d.unit} ${unit?.name}・独自教材`)}
         </p>
         <div class="lesson-toolbar">
-          <button class="button secondary" data-start={d.stableId} type="button">
+          <button disabled aria-busy="true" class="button secondary" data-start={d.stableId} type="button">
             学習を始める
           </button>
-          <button class="bookmark-text" data-bookmark={d.stableId} aria-pressed="false" type="button">
+          <button disabled aria-busy="true" class="bookmark-text" data-bookmark={d.stableId} aria-pressed="false" type="button">
             <Icon name="star" size={19} />
             <span>あとで復習</span>
           </button>
@@ -245,7 +245,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
           <h2>ここまで、おつかれさまでした。</h2>
           <p>理解できたら記録して、次の一歩へ。</p>
         </div>
-        <button class="button primary" data-complete={d.stableId} type="button">
+        <button disabled aria-busy="true" class="button primary" data-complete={d.stableId} type="button">
           <Icon name="check" size={19} />
           学習済みにする
         </button>

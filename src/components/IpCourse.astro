@@ -116,7 +116,7 @@ const assessments = ipAssessments(lessons);
                             {l.data.minutes}分の目安・<span data-status-label={l.data.stableId}>未学習</span>
                           </p>
                         </div>
-                        <button
+                        <button disabled aria-busy="true"
                           class="star-button"
                           type="button"
                           data-bookmark={l.data.stableId}

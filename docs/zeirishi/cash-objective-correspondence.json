@@ -1,0 +1,123 @@
+{
+  "mappings": [
+    {
+      "plannedObjective": "zr2-boki-cash-count-o1",
+      "teachingSkills": [
+        "zr2-boki-cash-count-d1"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-cash-count-o2",
+      "teachingSkills": [
+        "zr2-boki-cash-count-d2",
+        "zr2-boki-cash-count-d3",
+        "zr2-boki-cash-count-d4"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-bank-reconciliation-o1",
+      "teachingSkills": [
+        "zr2-boki-bank-reconciliation-d1",
+        "zr2-boki-bank-reconciliation-d2",
+        "zr2-boki-bank-reconciliation-d3"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-bank-reconciliation-o2",
+      "teachingSkills": [
+        "zr2-boki-bank-reconciliation-d1",
+        "zr2-boki-bank-reconciliation-d2",
+        "zr2-boki-bank-reconciliation-d3",
+        "zr2-boki-bank-reconciliation-d4"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-bills-receivable-o1",
+      "teachingSkills": [
+        "zr2-boki-bills-receivable-d1"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-bills-receivable-o2",
+      "teachingSkills": [
+        "zr2-boki-bills-receivable-d2",
+        "zr2-boki-bills-receivable-d3",
+        "zr2-boki-bills-receivable-d4"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-receivable-transfers-o1",
+      "teachingSkills": [
+        "zr2-boki-receivable-transfers-d1"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-receivable-transfers-o2",
+      "teachingSkills": [
+        "zr2-boki-receivable-transfers-d2"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-receivable-transfers-o3",
+      "teachingSkills": [
+        "zr2-boki-receivable-transfers-d3"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-receivable-transfers-o4",
+      "teachingSkills": [
+        "zr2-boki-receivable-transfers-d4"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-documentary-bills-o1",
+      "teachingSkills": [
+        "zr2-boki-documentary-bills-d1",
+        "zr2-boki-documentary-bills-d2"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-documentary-bills-o2",
+      "teachingSkills": [
+        "zr2-boki-documentary-bills-d2",
+        "zr2-boki-documentary-bills-d3"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-documentary-bills-o3",
+      "teachingSkills": [
+        "zr2-boki-documentary-bills-d3",
+        "zr2-boki-documentary-bills-d4"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-credit-loss-measurement-o1",
+      "teachingSkills": [
+        "zr2-boki-credit-loss-measurement-d1"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-credit-loss-measurement-o2",
+      "teachingSkills": [
+        "zr2-boki-credit-loss-measurement-d2",
+        "zr2-boki-credit-loss-measurement-d4",
+        "zr2-boki-credit-loss-measurement-d5"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-bad-debt-dcf-o1",
+      "teachingSkills": [
+        "zr2-boki-bad-debt-dcf-d1"
+      ]
+    },
+    {
+      "plannedObjective": "zr2-boki-bad-debt-dcf-o2",
+      "teachingSkills": [
+        "zr2-boki-bad-debt-dcf-d2",
+        "zr2-boki-bad-debt-dcf-d3",
+        "zr2-boki-bad-debt-dcf-d4"
+      ]
+    }
+  ],
+  "additionalPreparatorySkill": "zr2-boki-credit-loss-measurement-d3 is separately evidenced; not added to a broad rate objective"
+}

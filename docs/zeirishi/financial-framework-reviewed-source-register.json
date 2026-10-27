@@ -1,0 +1,240 @@
+{
+  "checkedOn": "2026-10-27",
+  "basis": "2026-04-03",
+  "lessonSources": {
+    "zr2-zaimu-purpose-regulation": [
+      {
+        "id": "ac2-framework-pdf",
+        "title": "討議資料 財務会計の概念フレームワーク",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+        "locator": "2006年12月討議資料、前文、第一章1〜21項。財務報告の目的・役割分担・副次的利用。個別基準としての強制力を主張しない",
+        "version": "2006年12月討議資料。個別の会計基準としての強制力と区別",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "companies-law",
+        "title": "e-Gov：会社法",
+        "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+        "locator": "431条、435〜436条、440条1・3・4項、461条1項。2026年4月3日時点の条文を照合",
+        "version": "2025年10月1日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "company-calculation",
+        "title": "e-Gov：会社計算規則（基準日固定版）",
+        "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+        "locator": "59条。2026年4月3日指定の法令データで計算書類の範囲と会計帳簿との関係を照合",
+        "version": "2025年3月31日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "financial-instruments-law",
+        "title": "e-Gov：金融商品取引法（基準日固定版）",
+        "url": "https://laws.e-gov.go.jp/law/323AC0000000025_20260101_506AC0000000056",
+        "locator": "1条、24条、193条、193条の2。2026年4月3日時点。有価証券報告書の対象と例外、作成方法、監査。全ての株式会社へ提出義務を一般化しない",
+        "version": "2026年1月1日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-reporting-obligations": [
+      {
+        "id": "companies-law",
+        "title": "e-Gov：会社法",
+        "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+        "locator": "2条5・6号、432・435〜440条、939条1項。2026年4月3日基準を指定した公式データの施行版を全文照合",
+        "version": "2025年10月1日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "company-calculation",
+        "title": "e-Gov：会社計算規則（基準日固定版）",
+        "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+        "locator": "59条、126条1項2号、135〜138条。監査意見と承認特則、公告の情報・要旨を照合",
+        "version": "2025年3月31日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "financial-instruments-law",
+        "title": "e-Gov：金融商品取引法（基準日固定版）",
+        "url": "https://laws.e-gov.go.jp/law/323AC0000000025_20260101_506AC0000000056",
+        "locator": "24条1項、193条1項、193条の2第1項。内国会社の原則期間、対象と例外、財務書類と監査証明を照合",
+        "version": "2026年1月1日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "civil-calendar",
+        "title": "e-Gov：民法（2026年4月1日施行版）",
+        "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+        "locator": "140・143条。暦月と午前0時から始まる期間の計算のみ。休業日・延長・外国会社を除く",
+        "version": "2026年4月1日施行版。2026年4月3日基準の140・143条に限定",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-qualitative-characteristics": [
+      {
+        "id": "ac2-framework-pdf",
+        "title": "討議資料 財務会計の概念フレームワーク",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+        "locator": "2006年12月討議資料、第二章1〜22項。PDF15〜20枚目（印刷8〜13頁）を全文確認。個別処理の計上指示として使わない",
+        "version": "2006年12月討議資料。個別の会計基準としての強制力と区別",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "ac2-exam-zaimu76",
+        "title": "第76回財務諸表論 問題",
+        "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+        "locator": "第76回、第一問問1、印刷B1〜B2（PDF3〜4枚目）。内的整合性の階層・前提・比較が実際に問われる範囲と要求水準を確認。出題文・選択肢を再利用しない",
+        "version": "第76回（2026年）。要求技能・形式の確認に限定し問題を転載しない",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-elements": [
+      {
+        "id": "ac2-framework-pdf",
+        "title": "討議資料 財務会計の概念フレームワーク",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+        "locator": "2006年12月討議資料、第三章序文・1〜25項と脚注、PDF21〜27枚目。資源・義務・純資産・所有者取引・リスクからの解放。旧少数株主用語を現在の表示へ機械的に移さない",
+        "version": "2006年12月討議資料。個別の会計基準としての強制力と区別",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "ac2-oci",
+        "title": "基準25 包括利益",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_18.pdf",
+        "locator": "企業会計基準25号、2025年3月11日改正・2025年10月16日修正反映版。1〜16-6項（特に4〜6、8〜9、11、16-2、16-6）を確認。16-2の当面個別不適用を明示。将来の期中制度一般へ拡張しない",
+        "version": "企業会計基準25号・2025年10月16日修正反映版。個別への当面不適用を区分",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "company-calculations",
+        "title": "e-Gov：会社計算規則（基準日固定版）",
+        "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+        "locator": "2026年4月3日基準の会社計算規則74〜76条。資産・負債・純資産の表示区分。細かな認識・測定は各論で扱う",
+        "version": "2025年3月31日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-general-principles": [
+      {
+        "id": "accounting-principles",
+        "title": "企業会計原則・企業会計原則注解",
+        "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+        "locator": "企業会計原則・同注解、1982年4月20日最終改正。一般原則一〜七、損益計算書原則一A〜C、注解1・1-2・2・3・4を原文確認。旧文書の個別取引処理を後の基準に優先させない",
+        "version": "1982年4月20日最終改正。後の個別基準に優先させない",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "ac2-oci",
+        "title": "基準25 包括利益",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_18.pdf",
+        "locator": "包括利益基準25号・2025年10月16日修正反映版1〜2項。表示の個別規定が異なる取扱いを定める場合の規範関係の参照。認識測定の個別条件を一般原則だけで置き換えない",
+        "version": "企業会計基準25号・2025年10月16日修正反映版。個別への当面不適用を区分",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-recognition-measurement": [
+      {
+        "id": "ac2-framework-pdf",
+        "title": "討議資料 財務会計の概念フレームワーク",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+        "locator": "2006年討議資料第4章1〜58項と脚注。認識・履行、原価・市場価格・現価、複数の測定とリスクからの解放。個別基準の代替として扱わない",
+        "version": "2006年12月討議資料。個別の会計基準としての強制力と区別",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "asbj-revenue",
+        "title": "ASBJ：収益認識に関する会計基準 第29号",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
+        "locator": "企業会計基準29号、2024年9月13日改正、16〜19・32〜42項を実読。例題の契約・期間充足と均等履行は明示与件",
+        "version": "企業会計基準29号・2024年9月13日改正反映版",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "asbj-fairvalue-guide-2021",
+        "title": "時価算定の適用指針31号・35項限定",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/faivalue20210617_02.pdf",
+        "locator": "企業会計基準適用指針31号・2021年6月17日版35項(1)(2)を実読。将来額と率の整合、同一リスクの二重計算防止に限定",
+        "version": "企業会計基準適用指針31号・2021年6月17日版35項(1)(2)のみ",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "ifrs-capital-ed2015",
+        "title": "IASB概念フレームワーク2015公開草案・歴史的資本維持比較",
+        "url": "https://www.ifrs.org/content/dam/ifrs/project/conceptual-framework/exposure-draft/published-documents/ed-conceptual-framework.pdf",
+        "locator": "2015年5月公開草案第8章8.1〜8.10、PDF79〜81ページ。資本維持の歴史的比較理論に限定。現行IFRS又は日本基準の適用指示とは主張しない",
+        "version": "2015年5月の公開草案。歴史的な概念比較の資料であり現行の適用指示ではない",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-policy-changes": [
+      {
+        "id": "asbj-policy-fixed-2020",
+        "title": "企業会計基準24号・2020年改正固定版",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf",
+        "locator": "企業会計基準24号・2020年3月31日改正。4〜22-2項、25-2/25-3項、結論の背景48〜68項を実読。2026年10月改正を混在させない",
+        "version": "企業会計基準24号・2020年3月31日改正。後発2026年改正を混在させない",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "asbj-policy-guide-fixed-2024",
+        "title": "会計上の変更・誤謬訂正の適用指針24号・固定版",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/ikan_20240701_46.pdf",
+        "locator": "適用指針24号・2024年7月1日修正反映版、4〜12-2・17〜21項を実読。方法と表示の区分、正当な理由、過去見積りの合理性を確認",
+        "version": "企業会計基準適用指針24号・2024年7月1日修正反映版",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-estimate-disclosure": [
+      {
+        "id": "asbj-estimates-fixed-2020",
+        "title": "ASBJ会計基準31号・会計上の見積りの開示2020固定版",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-estimates20200331_02.pdf",
+        "locator": "企業会計基準31号・2020年3月31日公表。本文3〜9項と結論の背景15〜33項を実読。識別のリスク、通常以外の対象、例示と必須事項、個別参照を照合",
+        "version": "企業会計基準31号・2020年3月31日公表",
+        "verified": "2026-10-27"
+      }
+    ],
+    "zr2-zaimu-theory-writing": [
+      {
+        "id": "points-02",
+        "title": "国税庁：第76回 財務諸表論 出題のポイント",
+        "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/02.pdf",
+        "locator": "全2頁、第一問・第二問の出題技能と第三問の横断技能を実読。処理理由を問う実績の確認に限り、問題は転載しない",
+        "version": "第76回（2026年）の公式出題のポイント。学習用設問の配点とは別",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "exam-papers",
+        "title": "国税庁：第76回問題・答案用紙・正誤表",
+        "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+        "locator": "注意事項と第一問・第二問の要求形式、第三問の留意事項を実読。2026年4月3日と120分を確認。将来の小問・配点・個別指示へ固定しない",
+        "version": "第76回（2026年）、120分・法令基準日2026年4月3日。要求形式の確認",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "asbj-policy-fixed-2020",
+        "title": "企業会計基準24号・2020年改正固定版",
+        "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf",
+        "locator": "4・17〜22項と関連する背景。合理的見積りの新情報更新、処理時期、誤謬の修正再表示を照合",
+        "version": "企業会計基準24号・2020年3月31日改正。後発2026年改正を混在させない",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "companies-law",
+        "title": "e-Gov：会社法",
+        "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+        "locator": "439条。総会承認に代わる内容報告の条件を照合",
+        "version": "2025年10月1日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      },
+      {
+        "id": "company-calculation",
+        "title": "e-Gov：会社計算規則（基準日固定版）",
+        "url": "https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014",
+        "locator": "135条。特則の複数要件と監査役等の意見を照合",
+        "version": "2025年3月31日施行版を2026年4月3日現在の公式APIで照合",
+        "verified": "2026-10-27"
+      }
+    ]
+  }
+}

@@ -10,15 +10,15 @@
   "provenance": [
     {
       "file": "accounting-plan.json",
-      "sha256": "af12f2da7345014dcea9bf7021f5d72e140c62d5fdfd97dccfd46b0cf8529afb"
+      "sha256": "ba1cdfe2cfd8c1af6a725d97e4ac2097be5a635acc5e66bed8df91875c930ac9"
     },
     {
       "file": "national-tax-plan.json",
-      "sha256": "63ee9208073a0ad35443971648b25e4e0260f05d71f22627178b3ca65641ba99"
+      "sha256": "1cc0fba077283ee8da5d4b11cc82757daeb3ed74d8001bc8872a05395ea17ca5"
     },
     {
       "file": "other-tax-plan.json",
-      "sha256": "1a37a9b866c12e2120da7dafe1862344813a187aec1a6180049bc6eb0ee493bc"
+      "sha256": "d91a6fa0b57960f6ceaad6bee32f6b2202e7d7e37b84458d997e4a10681d8b2e"
     }
   ],
   "sources": [
@@ -1495,18 +1495,36 @@
       "version": "2026年4月3日現在施行版：334AC0000000147_20260401_508AC0000000012",
       "verified": "2026-10-25",
       "auditAccessDate": "2026-10-27",
-      "auditMethod": "existing_official_json_snapshot_read_today"
+      "auditMethod": "existing_official_json_snapshot_read_today",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "334AC0000000147_20260401_508AC0000000012",
+          "location": "141・141の2・142・146の2・147・188・190条、令和5法律3号附則1条3号ハ・24条1/2項。47・62条は既読の後続手続接続のみ",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
     },
     {
       "key": "other-tax:collection-order",
       "id": "collection-order",
       "title": "e-Gov：国税徴収法施行令",
-      "url": "https://laws.e-gov.go.jp/law/334CO0000000329",
-      "version": "2026-04-01施行の令和8年政令97号と、その後5月・2027年の施行を区別",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "334CO0000000329_20260401_508CO0000000097",
       "verified": "2026-10-27",
       "auditAccessDate": "2026-10-27",
-      "auditMethod": "official_search_revision_history",
-      "notes": "4月3日時点の全文固定は未完了"
+      "auditMethod": "official_api_frozen_selected_articles_read",
+      "notes": "API asof=2026-04-03で固定済み。質問検査では51の2を2026-10-27実読。他条の既読箇所は各講の記録に従い、全条精読とはしない。",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "334CO0000000329_20260401_508CO0000000097",
+          "location": "51の2",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
     },
     {
       "key": "other-tax:collection-training",
@@ -1763,7 +1781,16 @@
       "verified": "2026-10-27",
       "auditAccessDate": "2026-10-27",
       "auditMethod": "official_api_frozen_selected_articles_read",
-      "notes": "2条1項7号の徴収令4条3項・8条4項等の休日特例除外を確認。他の各条・附則の精査を済ませたとはしない"
+      "notes": "2条1項7号の徴収令4条3項・8条4項等の休日特例除外を確認。他の各条・附則の精査を済ませたとはしない",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "337CO0000000135_20260401_507CO0000000126",
+          "location": "30の3全1〜3項",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
     },
     {
       "key": "other-tax:general-training-2026",
@@ -2372,6 +2399,152 @@
       "auditAccessDate": "2026-10-27",
       "auditMethod": "official_search_revision_history",
       "notes": "評価基準の4月3日時点の全文と別表の確保を課題として残す"
+    },
+    {
+      "key": "other-tax:collection-rules",
+      "id": "collection-rules",
+      "title": "collection-rules",
+      "url": "https://laws.e-gov.go.jp/law/337M50000040031_20240101_505M60000040018",
+      "version": "337M50000040031_20240101_505M60000040018",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_selected_locations_read_by_author_pending_independent_review",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "337M50000040031_20240101_505M60000040018",
+          "location": "2・3条。別紙12号という指定とAppdxFormatの参照先を確認。様式画像の外形は教授・採点していない",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
+    },
+    {
+      "key": "other-tax:collection-investigation-amendment2023",
+      "id": "collection-investigation-amendment2023",
+      "title": "collection-investigation-amendment2023",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/kaisei/231215/pdf/001.pdf",
+      "version": "2023-12-15改正対照表",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_selected_locations_read_by_author_pending_independent_review",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "2023-12-15改正対照表",
+          "location": "印刷10〜16頁の141・141の2・146の2・147・188関係の改正後欄。全PDF読了ではない",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
+    },
+    {
+      "key": "other-tax:collection-training2026-investigation",
+      "id": "collection-training2026-investigation",
+      "title": "collection-training2026-investigation",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf",
+      "version": "2026年度版・2026-01-01法令通達基準、2026-10-27閲覧",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_selected_locations_read_by_author_pending_independent_review",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "2026年度版・2026-01-01法令通達基準、2026-10-27閲覧",
+          "location": "凡例、印刷11〜14・16頁の質問検査、任意調査、証票、協力要請。全体を4/3版としない",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
+    },
+    {
+      "key": "other-tax:collection-141-guidance",
+      "id": "collection-141-guidance",
+      "title": "collection-141-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/141/01.htm",
+      "version": "2026-10-27現行ページ、2023改正対照表と対応",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_selected_locations_read_by_author_pending_independent_review",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "2026-10-27現行ページ、2023改正対照表と対応",
+          "location": "1〜9。141条の必要性・相手方・提示提出・証票・罰則",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
+    },
+    {
+      "key": "other-tax:collection-141-2-guidance",
+      "id": "collection-141-2-guidance",
+      "title": "collection-141-2-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/141_2/01.htm",
+      "version": "2026-10-27現行ページ、2023改正対照表と対応",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_selected_locations_read_by_author_pending_independent_review",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "2026-10-27現行ページ、2023改正対照表と対応",
+          "location": "1(1)/(2)、2。新規作成物件の占有継続、返還、管理。2の送達詳細の講内適用はしない",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
+    },
+    {
+      "key": "other-tax:collection-146-2-guidance",
+      "id": "collection-146-2-guidance",
+      "title": "collection-146-2-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/146_2/01.htm",
+      "version": "2026-10-27現行ページ、2023改正対照表と対応",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_selected_locations_read_by_author_pending_independent_review",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "2026-10-27現行ページ、2023改正対照表と対応",
+          "location": "1〜3。所在調査・事業者・官公署・電磁的記録",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
+    },
+    {
+      "key": "other-tax:collection-147-guidance",
+      "id": "collection-147-guidance",
+      "title": "collection-147-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/147/01.htm",
+      "version": "2026-10-27現行ページ、2023改正対照表と対応",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_selected_locations_read_by_author_pending_independent_review",
+      "selectedReadEvidence": [
+        {
+          "date": "2026-10-27",
+          "lessonId": "zr2-kokuzei-question-inspection",
+          "version": "2026-10-27現行ページ、2023改正対照表と対応",
+          "location": "1〜4の証票・関係者・請求時提示",
+          "status": "author_read; independent_review_pending"
+        }
+      ]
+    },
+    {
+      "key": "other-tax:criminal-law",
+      "id": "criminal-law",
+      "title": "刑法・公務執行妨害等の基準日確認用",
+      "url": "https://laws.e-gov.go.jp/law/140AC0000000045_20250722_507AC0000000026",
+      "version": "140AC0000000045_20250722_507AC0000000026; asof=2026-04-03",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "frozen_official_primary_selected_article_read",
+      "location": "本文95条1・2項",
+      "localFile": "work/zeirishi-upgrade/reference-pages/collection-investigation/criminal-law-20260403.json",
+      "notes": "95条1・2項を原文実読。職務執行時の暴行/脅迫と所定目的、拘禁刑3年以下又は罰金50万円以下を確認。刑法全体、違法な処分との関係の判例、拘禁刑改正附則の旧行為適用は未確認。取得/選択実読記録はcriminal-law-retrieval-collection.json。"
     }
   ],
   "subjects": [
@@ -2954,6 +3127,88 @@
               "unresolvedScope": []
             },
             {
+              "id": "zr2-boki-receivable-transfers",
+              "title": "電子債権・ファクタリングと消滅認識",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-boki-receivable-transfers-o1",
+                  "text": "電子記録債権の発生譲渡決済を記録する"
+                },
+                {
+                  "id": "zr2-boki-receivable-transfers-o2",
+                  "text": "譲渡と担保借入を支配移転条件で区分する"
+                },
+                {
+                  "id": "zr2-boki-receivable-transfers-o3",
+                  "text": "消滅に伴う保証債務・新たな対価資産を区分して譲渡損益を求める"
+                },
+                {
+                  "id": "zr2-boki-receivable-transfers-o4",
+                  "text": "一部譲渡・留保回収サービス権の原価配分と残存簿価を求め、通常のサービス資産を所与の残高/件数割合で償却する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-boki-bills-receivable"
+              ],
+              "sources": [
+                {
+                  "registryKey": "accounting:asbj-finance",
+                  "id": "asbj-finance",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+                  "anchor": "金融資産の消滅"
+                },
+                {
+                  "registryKey": "accounting:ac2-finance-guide",
+                  "id": "ac2-finance-guide",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+                  "anchor": "支配移転"
+                },
+                {
+                  "registryKey": "accounting:ac2-electronic-claims",
+                  "id": "ac2-electronic-claims",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+                  "anchor": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+                },
+                {
+                  "registryKey": "accounting:ac2-electronic-claims-law",
+                  "id": "ac2-electronic-claims-law",
+                  "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+                  "anchor": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+                },
+                {
+                  "registryKey": "accounting:fsa-factoring-definition",
+                  "id": "fsa-factoring-definition",
+                  "url": "https://www.fsa.go.jp/user/factoring.html",
+                  "anchor": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
+                }
+              ],
+              "exampleRequirements": {
+                "minimum": 3,
+                "cases": [
+                  "電子債権割引",
+                  "償還義務",
+                  "一部譲渡",
+                  "留保サービス資産の通常償却を所与の対象残高/件数割合から仕訳・残高まで照合"
+                ],
+                "requirement": "条件・判断・仕訳又は数表・検算・誤答理由を完備。数値差替えを別例に数えない"
+              },
+              "practiceRequirements": {
+                "freshMinimum": 16,
+                "countBasis": "独立した設問セット数。小欄数・再掲・カードを別計上。総合講は30～60分の大問4形式が初期目安",
+                "formats": [
+                  "条件判定と根拠",
+                  "複数行仕訳・計算過程・数表",
+                  "複数年度・条件変更・誤答比較"
+                ],
+                "coverage": "各objectiveを異なる初見資料で2回以上評価。必要数は網羅性から増設する"
+              },
+              "legalDateIssues": [],
+              "unresolvedScope": [
+                "通常サービス資産の所与割合による償却は例6の継続と新規q17で草稿追加。負債・複雑な配分/見積変更・著しい価値変動はloans-o3に未作成のまま残す。独立審査pending。"
+              ]
+            },
+            {
               "id": "zr2-boki-documentary-bills",
               "title": "為替手形の三者関係・荷為替と外貨取組",
               "stage": "advanced",
@@ -2973,7 +3228,6 @@
               ],
               "prerequisites": [
                 "zr2-boki-bills-receivable",
-                "zr2-boki-fx-transactions",
                 "zr2-boki-receivable-transfers"
               ],
               "sources": [
@@ -3035,89 +3289,12 @@
               },
               "legalDateIssues": [],
               "unresolvedScope": [
-                "本文5例題・15問・12定義、別の累積10問50点・文脈用語8問16点をwork draftsに作成。著者の一次資料・検算・全文日本語点検済み。独立審査と本番統合は未完了。",
+                "本文5例題（原場面の継続2件を含む）・17問52点・12定義、別の累積11問58点・文脈用語8問16点をwork draftsに作成。著者の一次資料・検算・全文日本語点検済み。独立審査と本番統合は未完了。",
                 "本講4詳細技能の累積・用語問題の所有対応はdocumentary-assessment-owner-map.json。cash core6講の既存30問/26問と別ファイル・別IDであり、単元7講全体の独立審査・フル模試完成を示さない。",
-                "相手国法・信用状の全適合条件は与件。外貨建取引基礎・予約/ヘッジ・収益認識の後続実在IDに残す範囲は本講で完了としない。"
+                "相手国法・信用状の全適合条件は与件。外貨建取引基礎・予約/ヘッジ・収益認識の後続実在IDに残す範囲は本講で完了としない。",
+                "2026-10-27前提監査：本講内で指定円/米ドル相場・外貨建売掛金・一部買取り・期末換算・翌期回収・前期末簿価からの当期差額を教授し、詳細4と例5、q12〜15/累積q8〜10等で測る。一般外貨講を前提から外すが、前渡等の判定・相場選択・外国通貨/複数科目・予約/ヘッジの範囲は後続IDの未作成範囲として保持。根拠と対応はdocumentary-prerequisite-review.md。",
+                "国内為替手形の全額裏書を例1の継続、講内q17、累積q11で追加教授/評価。振出人と引受人は原記帳を重ねず、保有者移転・初期保証・対価差額を区分。著者点検中、独立審査pending。"
               ]
-            },
-            {
-              "id": "zr2-boki-receivable-transfers",
-              "title": "電子債権・ファクタリングと消滅認識",
-              "stage": "advanced",
-              "objectives": [
-                {
-                  "id": "zr2-boki-receivable-transfers-o1",
-                  "text": "電子記録債権の発生譲渡決済を記録する"
-                },
-                {
-                  "id": "zr2-boki-receivable-transfers-o2",
-                  "text": "譲渡と担保借入を支配移転条件で区分する"
-                },
-                {
-                  "id": "zr2-boki-receivable-transfers-o3",
-                  "text": "消滅に伴う保証債務・新たな対価資産を区分して譲渡損益を求める"
-                },
-                {
-                  "id": "zr2-boki-receivable-transfers-o4",
-                  "text": "一部譲渡・留保回収サービス権の原価配分と残存帳簿価額を求める"
-                }
-              ],
-              "prerequisites": [
-                "zr2-boki-bills-receivable"
-              ],
-              "sources": [
-                {
-                  "registryKey": "accounting:asbj-finance",
-                  "id": "asbj-finance",
-                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
-                  "anchor": "金融資産の消滅"
-                },
-                {
-                  "registryKey": "accounting:ac2-finance-guide",
-                  "id": "ac2-finance-guide",
-                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
-                  "anchor": "支配移転"
-                },
-                {
-                  "registryKey": "accounting:ac2-electronic-claims",
-                  "id": "ac2-electronic-claims",
-                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
-                  "anchor": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
-                },
-                {
-                  "registryKey": "accounting:ac2-electronic-claims-law",
-                  "id": "ac2-electronic-claims-law",
-                  "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
-                  "anchor": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
-                },
-                {
-                  "registryKey": "accounting:fsa-factoring-definition",
-                  "id": "fsa-factoring-definition",
-                  "url": "https://www.fsa.go.jp/user/factoring.html",
-                  "anchor": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
-                }
-              ],
-              "exampleRequirements": {
-                "minimum": 3,
-                "cases": [
-                  "電子債権割引",
-                  "償還義務",
-                  "一部譲渡"
-                ],
-                "requirement": "条件・判断・仕訳又は数表・検算・誤答理由を完備。数値差替えを別例に数えない"
-              },
-              "practiceRequirements": {
-                "freshMinimum": 16,
-                "countBasis": "独立した設問セット数。小欄数・再掲・カードを別計上。総合講は30～60分の大問4形式が初期目安",
-                "formats": [
-                  "条件判定と根拠",
-                  "複数行仕訳・計算過程・数表",
-                  "複数年度・条件変更・誤答比較"
-                ],
-                "coverage": "各objectiveを異なる初見資料で2回以上評価。必要数は網羅性から増設する"
-              },
-              "legalDateIssues": [],
-              "unresolvedScope": []
             },
             {
               "id": "zr2-boki-credit-loss-measurement",
@@ -3379,6 +3556,12 @@
                   "id": "asbj-revenue",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
                   "anchor": "47〜58項を今回実読。売手の対価/金融要素を買手と区分。全範囲の教授完了とはしない。"
+                },
+                {
+                  "registryKey": "accounting:accounting-principles",
+                  "id": "accounting-principles",
+                  "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+                  "anchor": "第二一A・C、三C・D・F、四。期間配分と損益分類の基本。"
                 }
               ],
               "exampleRequirements": {
@@ -3402,7 +3585,7 @@
               },
               "legalDateIssues": [],
               "unresolvedScope": [
-                "全講work草稿5例題・12問40点・12定義を作成中。著者検算/全文日本語/独立審査/累積評価/本番統合は未完了。",
+                "全講work草稿5例題・12問40点・12定義を作成。著者14計算ケースと全依頼/採点/全文四種ツール・日本語点検は完了。独立審査・累積評価・本番統合は未完了。",
                 "ASBJ収益47〜58とFSAガイドライン79/90/93等を今回実読。売手と買手の処理を同じにせず、別建て利息の処理と価格修正の対象は与件に明示。",
                 "複雑な複数商品/役務の割戻配分、債務の融資への変更、利息資本化、重要金融要素の認識測定全範囲はcontinuationCoverageへ残す。"
               ]
@@ -3419,17 +3602,34 @@
                 {
                   "id": "zr2-boki-inventory-cost-flow-o2",
                   "text": "記帳順序・返品・端数を点検する"
+                },
+                {
+                  "id": "zr2-boki-inventory-cost-flow-o3",
+                  "text": "複数商品の購入代価修正について、所与の単価・配分根拠から商品別と販売済/残存の原価を修正する"
                 }
               ],
               "prerequisites": [
-                "zr2-boki-sales-purchases"
+                "zr2-boki-sales-purchases",
+                "zr2-boki-purchase-pricing-finance"
               ],
               "sources": [
                 {
                   "registryKey": "accounting:asbj-inventory",
                   "id": "asbj-inventory",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_16.pdf",
-                  "anchor": "6-2項"
+                  "anchor": "最終改正2019-07-04、2025-10-16までの修正反映。6-2・6-3印刷4/PDF4頁、34-4印刷14/PDF14頁。2026-10-27再読。"
+                },
+                {
+                  "registryKey": "accounting:fsa-financial-guideline-202603",
+                  "id": "fsa-financial-guideline-202603",
+                  "url": "https://www.fsa.go.jp/common/law/kaiji/zaiki.pdf",
+                  "anchor": "実読時表紙2026年3月、79印刷27/PDF28頁・90印刷28/PDF29頁。"
+                },
+                {
+                  "registryKey": "accounting:financial-regulations",
+                  "id": "financial-regulations",
+                  "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+                  "anchor": "2026-04-03基準日保存版79・90条。"
                 }
               ],
               "exampleRequirements": {
@@ -3437,7 +3637,8 @@
                 "cases": [
                   "複数回売買",
                   "仕入戻し",
-                  "移動平均と総平均"
+                  "移動平均と総平均",
+                  "複数商品の対価修正を、指定された商品別配分根拠と販売済/残存数量から原価へ反映する"
                 ],
                 "requirement": "条件・判断・仕訳又は数表・検算・誤答理由を完備。数値差替えを別例に数えない"
               },
@@ -3452,7 +3653,10 @@
                 "coverage": "各objectiveを異なる初見資料で2回以上評価。必要数は網羅性から増設する"
               },
               "legalDateIssues": [],
-              "unresolvedScope": []
+              "unresolvedScope": [
+                "購入代価/金融講で留保した複数商品への所与配分を本講o3で実際に教授する全講草稿を作成。一般契約の配分基準を任意に作らない。",
+                "6例題・16問60点・16定義。著者19計算ケース、全依頼/採点、全文四種ツールと読解は完了。独立審査・累積評価・本番統合は未完了。"
+              ]
             },
             {
               "id": "zr2-boki-inventory-cutoff",
@@ -3466,6 +3670,10 @@
                 {
                   "id": "zr2-boki-inventory-cutoff-o2",
                   "text": "仕切書遅延と未着仕入を調整する"
+                },
+                {
+                  "id": "zr2-boki-inventory-cutoff-o3",
+                  "text": "国内通常期間の出荷代替処理を適用条件と方針から判断し、早期・遅延の期間帰属誤りを残高と複数期で修正する"
                 }
               ],
               "prerequisites": [
@@ -3476,21 +3684,25 @@
                   "registryKey": "accounting:asbj-revenue",
                   "id": "asbj-revenue",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
-                  "anchor": "支配"
+                  "anchor": "2024-09-13固定35〜40項、印刷9〜10/PDF10〜11頁。2026-10-27実読。"
                 },
                 {
                   "registryKey": "accounting:ac2-revenue-guide",
                   "id": "ac2-revenue-guide",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_26.pdf",
-                  "anchor": "委託・試用等"
+                  "anchor": "2024-09-13固定14、75〜83、98/171、107/107-2/109-4。通常商品とリース連動適用を区分。2026-10-27実読。"
                 }
               ],
               "exampleRequirements": {
-                "minimum": 3,
+                "minimum": 7,
                 "cases": [
-                  "輸送中商品",
-                  "委託先未報告",
-                  "試用承諾"
+                  "社内外の自社品と受託品の範囲照合",
+                  "未着二契約・請求書遅延・翌期の重複防止",
+                  "本人と指定した委託の未報告販売・手数料・残数",
+                  "試用と客観的な形式検収",
+                  "請求済未出荷の四条件と基本の支配判断",
+                  "国内出荷代替と買手取得の区別",
+                  "早期売上の取消し・原価戻し・二期間と残高"
                 ],
                 "requirement": "条件・判断・仕訳又は数表・検算・誤答理由を完備。数値差替えを別例に数えない"
               },
@@ -3505,7 +3717,10 @@
                 "coverage": "各objectiveを異なる初見資料で2回以上評価。必要数は網羅性から増設する"
               },
               "legalDateIssues": [],
-              "unresolvedScope": []
+              "unresolvedScope": [
+                "7例題・16問60点の全講work草稿作成中。著者検算・日本語全読、独立審査、累積評価、本番統合は未完了。",
+                "有償支給104項は具体的な未執筆IDzr2-boki-supplied-materialsへ残す。本人代理・返品見積り・履行義務配分等は既存revenue各IDの教授を別途要する。"
+              ]
             },
             {
               "id": "zr2-boki-inventory-losses",
@@ -3753,6 +3968,70 @@
               },
               "legalDateIssues": [],
               "unresolvedScope": []
+            },
+            {
+              "id": "zr2-boki-supplied-materials",
+              "title": "有償支給品と加工・買戻条件",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-boki-supplied-materials-o1",
+                  "text": "有償支給と通常販売・委託を区分し、買戻義務の有無から支給時の収益と資産消滅を判断する"
+                },
+                {
+                  "id": "zr2-boki-supplied-materials-o2",
+                  "text": "個別財務諸表の代替処理を指定条件で区分し、支給品・加工品の原価と差額を継続照合する"
+                },
+                {
+                  "id": "zr2-boki-supplied-materials-o3",
+                  "text": "支給・加工・期末残高・買戻の複数段階を所与の測定条件で仕訳し、二重売上と二重原価を発見する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-boki-inventory-cutoff",
+                "zr2-boki-revenue-allocation"
+              ],
+              "sources": [
+                {
+                  "registryKey": "accounting:ac2-revenue-guide",
+                  "id": "ac2-revenue-guide",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_26.pdf",
+                  "anchor": "104項印刷24/PDF25頁を2026-10-27実読。具体処理・179〜181背景と69〜74買戻/リース連動の追加検証は執筆時pending。"
+                },
+                {
+                  "registryKey": "accounting:asbj-inventory",
+                  "id": "asbj-inventory",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_16.pdf",
+                  "anchor": "3・6-2。支給品/加工品の取得原価との照合を執筆時に追加確認。"
+                }
+              ],
+              "exampleRequirements": {
+                "minimum": 5,
+                "cases": [
+                  "買戻義務あり/なしの支給比較",
+                  "個別代替を採用する/しない場合の期末照合",
+                  "支給品が未加工又は加工品へ組み込まれた場合",
+                  "加工賃等と製品取得の原価照合",
+                  "誤った総額売上・二重原価の複数期修正"
+                ],
+                "requirement": "追加資料を検証した後、適用条件・仕訳・測定/残高・誤答理由を実際に教授する。"
+              },
+              "practiceRequirements": {
+                "freshMinimum": 16,
+                "countBasis": "独立設問セット。定義・小欄・再掲は別問にしない。",
+                "formats": [
+                  "条件比較",
+                  "複数段階仕訳と期末残高",
+                  "個別代替と総額誤記の診断"
+                ],
+                "coverage": "各実目標の初見資料による複数回評価を要する。"
+              },
+              "legalDateIssues": [],
+              "unresolvedScope": [
+                "実在する未執筆ノード。本文・例題・問題・累積評価・独立審査の完成数へ算入しない。",
+                "104項の基本分岐は実読。具体的原価/差額/加工品処理と買戻リース連動全分岐は未確認で、執筆時に適用版を追加検証する。",
+                "公式税理士過去問の反復出題根拠は未取得。頻出等の評価を主張しない。"
+              ]
             }
           ]
         },
@@ -4656,7 +4935,7 @@
               "objectives": [
                 {
                   "id": "zr2-boki-loans-derecognition-o1",
-                  "text": "割引貸付条件変更の元利を計算する"
+                  "text": "割引貸付・利息組込更改・不規則な元利支払と条件変更について、所与の認識測定条件に従い元本・利息・帳簿残高を計算する"
                 },
                 {
                   "id": "zr2-boki-loans-derecognition-o2",
@@ -4664,7 +4943,11 @@
                 },
                 {
                   "id": "zr2-boki-loans-derecognition-o3",
-                  "text": "回収サービス資産負債と残存部分を区別し、対価・原価配分・残高又は件数に比例した償却を計算する"
+                  "text": "回収サービスの通常収益超過/不足から資産又は負債を区分し、初期配分・残高又は件数比例償却・著しい価値変動を処理する"
+                },
+                {
+                  "id": "zr2-boki-loans-derecognition-o4",
+                  "text": "消滅に伴う保証債務の合理的な損益配分と損失可能性上昇時の引当、保証履行・取得回収権の残高を区分する"
                 }
               ],
               "prerequisites": [
@@ -4682,17 +4965,91 @@
                   "registryKey": "accounting:ac2-finance-guide",
                   "id": "ac2-finance-guide",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
-                  "anchor": "2025年3月11日版・第30〜45項、特に36〜39項。残存部分・新資産負債・回収サービス業務資産負債と償却。初期認識だけを修得してもこの後続目標を達成したとはしない"
+                  "anchor": "2025年3月11日版30〜45（特に36〜39・45）、105・126・130・131・136・137項。今回39/45/119〜125/130〜131/137原文再読。回収サービス資産負債、保証の事後配分、元利区分。複雑な条件変更の個別測定・保証履行後回収権の細条件は執筆時の追加確認を要する。"
                 }
               ],
               "exampleRequirements": {
-                "minimum": 3,
+                "minimum": 8,
                 "cases": [
-                  "担保と売却",
-                  "債務免除",
-                  "利息調整"
+                  "割引貸付と不規則な入金の元利・償却原価を所与の実効利率で照合",
+                  "利息を新手形額面へ組み込んだ更改を、既経過/将来分・現金前受けと比較",
+                  "金銭債務の条件変更・免除・消滅について、指定した認識条件と測定結果を区分",
+                  "通常収益超過の回収サービス資産の原価配分と残高/件数比例償却",
+                  "通常収益不足の回収サービス負債の初期時価・各期償却",
+                  "回収サービス資産の著しい下落又は負債の著しい増加",
+                  "保証債務の合理的期間配分と、損失可能性上昇時の引当を別々に計算",
+                  "保証履行後の既存保証負債・支払額・新たな回収権/評価を与件と一次資料から照合"
                 ],
                 "requirement": "条件・判断・仕訳又は数表・検算・誤答理由を完備。数値差替えを別例に数えない"
+              },
+              "practiceRequirements": {
+                "freshMinimum": 24,
+                "countBasis": "独立した設問セット数。小欄数・再掲・カードを別計上。総合講は30～60分の大問4形式が初期目安",
+                "formats": [
+                  "条件判定と根拠",
+                  "複数行仕訳・計算過程・数表",
+                  "複数年度・条件変更・誤答比較"
+                ],
+                "coverage": "4目標を複数の初見資料で評価。保証の時価更新と合理的配分/損失引当、サービスの資産/負債・償却、額面利息組込/現金前受けを区分。未教授条件を正解条件にしない。"
+              },
+              "legalDateIssues": [],
+              "unresolvedScope": [
+                "回収サービスの残高・件数比例償却、通常収益不足時の負債、証券化等の複合条件を扱う教材と独立問題は未執筆。receivable-transfersの完了で修得済みにしない。",
+                "保証履行時の既存保証債務と取得する回収権の認識・評価を数値例まで扱う。未執筆。",
+                "利息を新手形額面へ組み込んだ更改と複雑な債務条件変更の測定・損益配分。元本同額・利息別途前受けの基礎例とは分ける。未執筆。",
+                "この講の本文・8場面以上の教授・24問以上の独自評価は未作成。初期認識だけを扱ったcash各講から本講o1/o3/o4の修得を推定しない。利息不計上後/直接減額後の回収は新設impaired-claims-recoveryに独立教授先を設けた。"
+              ]
+            },
+            {
+              "id": "zr2-boki-impaired-claims-recovery",
+              "title": "未収利息の不計上後・直接減額後の回収と再開",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-boki-impaired-claims-recovery-o1",
+                  "text": "未収利息の不計上要件と既計上額の当期/前期分を区分し、原則処理・条件付き簡便法の仕訳を作る"
+                },
+                {
+                  "id": "zr2-boki-impaired-claims-recovery-o2",
+                  "text": "不計上後の実際の入金について契約上明確な利息部分と元本部分を判定し、入金後の債権残高を照合する"
+                },
+                {
+                  "id": "zr2-boki-impaired-claims-recovery-o3",
+                  "text": "一般債権への区分・原契約の延滞解消・実質回復、及び契約変更後の例外条件から未収利息の再計上可否を判断する"
+                },
+                {
+                  "id": "zr2-boki-impaired-claims-recovery-o4",
+                  "text": "直接減額時の前期引当金取崩しと不足損失、減額後に残存簿価を超える回収、期末の不要引当と繰入額の表示を処理する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-boki-credit-loss-measurement",
+                "zr2-boki-bad-debt-dcf"
+              ],
+              "sources": [
+                {
+                  "registryKey": "accounting:asbj-finance",
+                  "id": "asbj-finance",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+                  "anchor": "27・28項、注9。債権評価・未収利息。2019固定版。"
+                },
+                {
+                  "registryKey": "accounting:ac2-finance-guide",
+                  "id": "ac2-finance-guide",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+                  "anchor": "2025-03-11固定版119〜125項、印刷38〜39/PDF39〜40頁。2026-10-27原文再読。119不計上・120入金・121再開条件/ただし書・123直接減額・124回収・125表示。"
+                }
+              ],
+              "exampleRequirements": {
+                "minimum": 5,
+                "cases": [
+                  "当期発生分と前期以前分の未収利息を不計上とする原則処理、簡便法適用条件の比較",
+                  "入金のうち契約に基づく利息部分が明確な場合と不明な場合の元本残高",
+                  "形式的な期限延長と原契約の延滞解消、条件変更後の実質回復という再開条件の比較",
+                  "前期引当金で賄える直接減額と不足損失を分け、減額後回収との二期間を照合",
+                  "複数区分の債権について直接減額後の不要引当と当期繰入れ・戻入れの表示を照合"
+                ],
+                "requirement": "判断条件・当期/前期の区分・勘定別残高・損益表示・適用条項・誤答案と検算を示す。正式な税務貸倒要件とは区分。"
               },
               "practiceRequirements": {
                 "freshMinimum": 16,
@@ -4702,14 +5059,13 @@
                   "複数行仕訳・計算過程・数表",
                   "複数年度・条件変更・誤答比較"
                 ],
-                "coverage": "各objectiveを異なる初見資料で2回以上評価。必要数は網羅性から増設する"
+                "coverage": "4目標を異なる契約/入金/回復資料で2回以上評価。形式的回復と実質的回復、当期/前期未収、元本/利息、直接減額/引当を混同する誤答を含む。"
               },
               "legalDateIssues": [],
               "unresolvedScope": [
-                "回収サービスの残高・件数比例償却、通常収益不足時の負債、証券化等の複合条件を扱う教材と独立問題は未執筆。receivable-transfersの完了で修得済みにしない。",
-                "保証履行時の既存保証債務と取得する回収権の認識・評価を数値例まで扱う。未執筆。",
-                "利息を新手形額面へ組み込んだ更改と複雑な債務条件変更の測定・損益配分。元本同額・利息別途前受けの基礎例とは分ける。未執筆。",
-                "指針119〜125：未収利息不計上後の入金充当・再計上要件、直接減額後の回収を独立数値例・適用条件まで扱う。原文確認済み、本文・設問未執筆。"
+                "実在する未作成の追加講。本文・例題・独自問題・累積評価・全文日本語/独立審査は全て未完了。cash7講の完成件数や教授済み詳細目標へ加算しない。",
+                "指針119〜125の要件は今回実読したが、契約文言と表示条件に即した新規数値の教授・評価は未作成。6か月/1年の自動的な一本線を作らない。",
+                "DCFの時間経過に伴う利息相当額と、契約未収利息不計上/実入金を混同しない。税法の貸倒損失要件は別科目の一次法令に戻る。"
               ]
             },
             {
@@ -17222,7 +17578,7 @@
                 {
                   "id": "zr2-hojin-contract-progress-o02",
                   "number": 2,
-                  "text": "初期/価格未確定/期中該当/再編の特例を複数期で計算する"
+                  "text": "初期/価格未確定/期中該当/再編と債権/損失の特例を複数期で計算する"
                 }
               ],
               "prerequisites": [
@@ -17246,6 +17602,14 @@
                   "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
                 },
                 {
+                  "registryKey": "national-tax:corporate-rules",
+                  "id": "corporate-rules",
+                  "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+                  "locator": "法人税法22・22の2・23〜25・61条等、基本通達収益/有価証券/外貨",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。非営利型法人の特殊関係理事は2の2条を確認"
+                },
+                {
                   "registryKey": "national-tax:corporate-tsutatsu",
                   "id": "corporate-tsutatsu",
                   "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/01.htm",
@@ -17256,8 +17620,9 @@
               ],
               "exampleRequirements": [
                 "1年以上10億円と支払条件",
-                "6か月未満/20%未満",
-                "対価未確定と適用開始時の既往分"
+                "6か月未満/20%未満と価格確定日着手",
+                "対価未確定/適用開始時の既往分/適格再編の引継ぎ",
+                "進行未収債権の簿価/所定増減と工事損失引当"
               ],
               "practiceRequirements": {
                 "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
@@ -17273,7 +17638,7 @@
                   },
                   {
                     "objectiveId": "zr2-hojin-contract-progress-o02",
-                    "text": "初期/価格未確定/期中該当/再編の特例を複数期で計算する"
+                    "text": "初期/価格未確定/期中該当/再編と債権/損失の特例を複数期で計算する"
                   }
                 ],
                 "independentFromWorkedExamples": true,
@@ -17925,6 +18290,98 @@
               "unresolvedScope": []
             },
             {
+              "id": "zr2-hojin-construction-tax-accounting",
+              "title": "工事対価の消費税経理と譲渡時期の接続",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-construction-tax-accounting-o01",
+                  "number": 1,
+                  "text": "税込/税抜経理等の原典から10億円判定用対価と境界を根拠付きで確定する"
+                },
+                {
+                  "id": "zr2-hojin-construction-tax-accounting-o02",
+                  "number": 2,
+                  "text": "法人税の強制/任意進行と消費税17条の選択/申告/中断/引渡精算を複数期で対応する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-forex-derivatives"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法22・22の2・23〜25・61条等、基本通達収益/有価証券/外貨",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法22・22の2・23〜25・61条等、基本通達収益/有価証券/外貨",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:corporate-tsutatsu",
+                  "id": "corporate-tsutatsu",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/01.htm",
+                  "locator": "法人税法22・22の2・23〜25・61条等、基本通達収益/有価証券/外貨",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "現行は6月以後更新を含む。4月3日内容は改正前の確認が必要"
+                },
+                {
+                  "registryKey": "national-tax:consumption-law",
+                  "id": "consumption-law",
+                  "url": "https://laws.e-gov.go.jp/law/363AC0000000108_20260401_508AC0000000012",
+                  "locator": "法人税法22・22の2・23〜25・61条等、基本通達収益/有価証券/外貨",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：363AC0000000108_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:consumption-tsutatsu",
+                  "id": "consumption-tsutatsu",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/01.htm",
+                  "locator": "法人税法22・22の2・23〜25・61条等、基本通達収益/有価証券/外貨",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "現行は2026-10-01更新。4月3日内容は改正前の確認が必要"
+                }
+              ],
+              "exampleRequirements": [
+                "税込税抜の閾値付近と経理方式",
+                "法人税で進行し消費税は引渡時となる選択",
+                "進行経理中断と消費税課税期間/引渡時の二重計上防止"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-construction-tax-accounting-o01",
+                    "text": "税込/税抜経理等の原典から10億円判定用対価と境界を根拠付きで確定する"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-construction-tax-accounting-o02",
+                    "text": "法人税の強制/任意進行と消費税17条の選択/申告/中断/引渡精算を複数期で対応する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu"
+              ],
+              "unresolvedScope": []
+            },
+            {
               "id": "zr2-hojin-dividends-holding",
               "title": "国内配当の保有区分・益金不算入",
               "stage": "standard",
@@ -17941,7 +18398,7 @@
                 }
               ],
               "prerequisites": [
-                "zr2-hojin-forex-derivatives"
+                "zr2-hojin-construction-tax-accounting"
               ],
               "sources": [
                 {
@@ -34213,12 +34670,52 @@
                 {
                   "registryKey": "other-tax:collection-order",
                   "id": "collection-order",
-                  "url": "https://laws.e-gov.go.jp/law/334CO0000000329"
+                  "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097"
                 },
                 {
                   "registryKey": "other-tax:collection-training",
                   "id": "collection-training",
                   "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf"
+                },
+                {
+                  "registryKey": "other-tax:general-order",
+                  "id": "general-order",
+                  "url": "https://laws.e-gov.go.jp/law/337CO0000000135_20260401_507CO0000000126"
+                },
+                {
+                  "registryKey": "other-tax:collection-rules",
+                  "id": "collection-rules",
+                  "url": "https://laws.e-gov.go.jp/law/337M50000040031_20240101_505M60000040018"
+                },
+                {
+                  "registryKey": "other-tax:collection-investigation-amendment2023",
+                  "id": "collection-investigation-amendment2023",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/kaisei/231215/pdf/001.pdf"
+                },
+                {
+                  "registryKey": "other-tax:collection-training2026-investigation",
+                  "id": "collection-training2026-investigation",
+                  "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf"
+                },
+                {
+                  "registryKey": "other-tax:collection-141-guidance",
+                  "id": "collection-141-guidance",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/141/01.htm"
+                },
+                {
+                  "registryKey": "other-tax:collection-141-2-guidance",
+                  "id": "collection-141-2-guidance",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/141_2/01.htm"
+                },
+                {
+                  "registryKey": "other-tax:collection-146-2-guidance",
+                  "id": "collection-146-2-guidance",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/146_2/01.htm"
+                },
+                {
+                  "registryKey": "other-tax:collection-147-guidance",
+                  "id": "collection-147-guidance",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/05/06/02/147/01.htm"
                 }
               ],
               "exampleRequirements": [
@@ -37435,6 +37932,10 @@
                 {
                   "case": "通知を欠く交付要求とその取消し",
                   "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "無財産により差押えをしない捜索終了と、第三者捜索後の滞納者通知",
+                  "requiredWorking": "民148条2項・154条、通則法73条及びNTA142関係11と判決原典を確認し、単なる調査着手と更新時点を区別して日付で適用する"
                 }
               ],
               "practiceRequirements": {
@@ -37855,6 +38356,91 @@
               "unresolvedScope": []
             },
             {
+              "id": "zr2-kokuzei-evasion-penalties",
+              "title": "滞納処分免脱・公売虚偽陳述・妨害と行為者別責任",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-kokuzei-evasion-penalties-o1",
+                  "text": "滞納処分免脱の目的・行為・行為者別責任・国外犯の条件を187・190条から判定する"
+                },
+                {
+                  "id": "zr2-kokuzei-evasion-penalties-o2",
+                  "text": "188・189条及び刑法95条と行政の協力要請・捜索・公売の事実を区分し、法定刑と両罰の範囲を示す"
+                }
+              ],
+              "prerequisites": [
+                "zr2-kokuzei-question-inspection",
+                "zr2-kokuzei-search",
+                "zr2-kokuzei-auction-sale"
+              ],
+              "sources": [
+                {
+                  "registryKey": "other-tax:collection-law",
+                  "id": "collection-law",
+                  "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "other-tax:collection-training",
+                  "id": "collection-training",
+                  "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf"
+                },
+                {
+                  "registryKey": "other-tax:criminal-law",
+                  "id": "criminal-law",
+                  "url": "https://laws.e-gov.go.jp/law/140AC0000000045_20250722_507AC0000000026"
+                }
+              ],
+              "exampleRequirements": [
+                {
+                  "case": "納税者の隠匿・虚偽負担と、通常取引だけの事例",
+                  "requiredWorking": "187条の免脱目的と所定行為を事実から当てはめ、滞納・支払能力の問題だけで成立を断定しない"
+                },
+                {
+                  "case": "所持第三者と、事情を知った処分の相手方",
+                  "requiredWorking": "187条1〜3項の主体・目的/認識・法定刑と190条の両罰を対比し、全第三者を同一視しない"
+                },
+                {
+                  "case": "廃棄物による現状改変・価額減損や処分費増大",
+                  "requiredWorking": "財産そのものの損壊、現状改変による価額/費用、免脱目的の各事実を区別して答案化する"
+                },
+                {
+                  "case": "共助徴収と国内滞納処分の国外行為",
+                  "requiredWorking": "187条4・5項の対象、国内滞納処分に係る除外と相手方の扱いを文言に対応させる"
+                },
+                {
+                  "case": "公売の反社会的勢力等に関する陳述、質問拒否、捜索への暴行",
+                  "requiredWorking": "99条の2・109条4項と189条、141/188、刑法95条の根拠と行為を別々に判定し、法定刑・両罰の対象条文を確認する"
+                }
+              ],
+              "practiceRequirements": {
+                "guidedCases": 3,
+                "independentItemPlanningRange": [
+                  15,
+                  25
+                ],
+                "requiredIndependentDesigns": [
+                  "本人/所持第三者/取引相手の事実比較",
+                  "目的と行為・因果事情を別に当てはめる記述",
+                  "国外・公売陳述・暴行脅迫を区別する総合事例",
+                  "法定刑と190条の対象範囲を整理する"
+                ],
+                "formats": [
+                  "case_analysis",
+                  "written_reasoning"
+                ],
+                "countingRule": "同じ結論へ金額だけを差し替える問題は独立設計に数えない"
+              },
+              "legalDateIssues": [
+                "KO-BASELINE",
+                "KO-2026-RATES"
+              ],
+              "unresolvedScope": [
+                "刑法95条と違法な処分との関係を判例原典で検証する（95条1・2項の固定原文は実読済み）",
+                "刑罰の行為時・拘禁刑移行の経過規定を本講で検証する"
+              ]
+            },
+            {
               "id": "zr2-kokuzei-integrated-enforcement",
               "title": "調査から競合配当までの総合事例",
               "stage": "integrated",
@@ -37869,7 +38455,8 @@
                 }
               ],
               "prerequisites": [
-                "zr2-kokuzei-appeals"
+                "zr2-kokuzei-appeals",
+                "zr2-kokuzei-evasion-penalties"
               ],
               "sources": [
                 {
@@ -46875,8 +47462,8 @@
   "totals": {
     "subjects": 11,
     "units": 113,
-    "lessons": 588,
-    "objectives": 1187,
+    "lessons": 592,
+    "objectives": 1201,
     "fullMockBlueprints": 22
   }
 }

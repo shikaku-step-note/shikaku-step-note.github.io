@@ -11,6 +11,7 @@ export function getStaticPaths() {
 const { unit } = Astro.props;
 const subject = zeirishiSubject(unit.subject)!;
 const lessons = unit.lessonIds.map((id) => zeirishiDeepLessons.find((lesson) => lesson.id === id)!);
+const glossary = [...new Map(lessons.flatMap((lesson) => lesson.glossary).map((entry) => [entry.term, entry])).values()];
 const references = [...new Map(lessons.flatMap((lesson) => lesson.references).map((reference) => [reference.url + reference.locator, reference])).values()];
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
@@ -39,10 +40,18 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
               <p>{lesson.description}</p>
               <p class="lesson-meta">{lesson.minutes}分の目安・{lesson.questions.length}問 <span data-status-label={lesson.id}>未学習</span></p>
             </div>
-            <button class="star-button" type="button" data-bookmark={lesson.id} aria-pressed="false" aria-label={`「${lesson.title}」をブックマーク`}><Icon name="star" size={21} /></button>
+            <button disabled aria-busy="true" class="star-button" type="button" data-bookmark={lesson.id} aria-pressed="false" aria-label={`「${lesson.title}」をブックマーク`}><Icon name="star" size={21} /></button>
           </li>
         ))}
       </ol>
+    </section>
+    <section class="course-section prose" aria-labelledby="unit-glossary">
+      <h2 id="unit-glossary">この単元の用語を確認する</h2>
+      <p>各レッスンで扱う{glossary.length}語をまとめています。意味を確かめた後は、下の用語テストで具体的な場面に当てはめてください。ここで読むだけでは、テストの受験記録や学習済みの印は付きません。</p>
+      <details>
+        <summary>用語と意味を開く</summary>
+        <dl>{glossary.map((entry) => <><dt><strong>{entry.term}</strong></dt><dd>{entry.definition}</dd></>)}</dl>
+      </details>
     </section>
     <section class="course-section">
       <h2>用語と総合演習で確かめる</h2>

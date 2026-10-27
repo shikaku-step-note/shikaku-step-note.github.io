@@ -564,5 +564,11 @@ async function start() {
       notify(e instanceof Error ? e.message : 'リセットできませんでした。');
     }
   });
+  // Enable record controls only after storage has loaded and all handlers are bound.
+  $$<HTMLButtonElement>('[data-start], [data-complete], [data-bookmark]').forEach((button) => {
+    button.disabled = false;
+    button.removeAttribute('aria-busy');
+  });
+  document.documentElement.dataset.studyReady = 'true';
 }
 void start();

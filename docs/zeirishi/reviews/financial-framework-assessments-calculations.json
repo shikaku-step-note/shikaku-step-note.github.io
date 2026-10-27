@@ -1,0 +1,1039 @@
+{
+  "reviewer": "tax_transition_review",
+  "checkedOn": "2026-10-27",
+  "sourceFreeze": "2026-04-03",
+  "status": "bounded-independent-checks; raw-statuses-unchanged",
+  "calculationCount": 122,
+  "calculations": [
+    {
+      "question": "a1",
+      "label": "甲の営業現金差",
+      "expression": "120-100",
+      "result": "20",
+      "expected": "20",
+      "pass": true
+    },
+    {
+      "question": "a1",
+      "label": "乙の営業現金差",
+      "expression": "40-110",
+      "result": "-70",
+      "expected": "-70",
+      "pass": true
+    },
+    {
+      "question": "a5",
+      "label": "借入による利益",
+      "expression": "30-30",
+      "result": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "question": "a5",
+      "label": "掛売上の利益影響",
+      "expression": "50",
+      "result": "50",
+      "expected": "50",
+      "pass": true
+    },
+    {
+      "question": "a6",
+      "label": "東売上総利益",
+      "expression": "600-360",
+      "result": "240",
+      "expected": "240",
+      "pass": true
+    },
+    {
+      "question": "a6",
+      "label": "東営業利益",
+      "expression": "600-360-90",
+      "result": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "question": "a6",
+      "label": "西売上総利益",
+      "expression": "400-160",
+      "result": "240",
+      "expected": "240",
+      "pass": true
+    },
+    {
+      "question": "a6",
+      "label": "西営業利益",
+      "expression": "400-160-90",
+      "result": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "question": "a7",
+      "label": "過大費用",
+      "expression": "90-42",
+      "result": "48",
+      "expected": "48",
+      "pass": true
+    },
+    {
+      "question": "a8",
+      "label": "小額誤りの集積",
+      "expression": "0.2*150",
+      "result": "30",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "question": "a8",
+      "label": "正しい利益",
+      "expression": "100-30-8",
+      "result": "62",
+      "expected": "62",
+      "pass": true
+    },
+    {
+      "question": "a10",
+      "label": "当初加重平均",
+      "expression": "60*.5+100*.3+160*.2",
+      "result": "92",
+      "expected": "92",
+      "pass": true
+    },
+    {
+      "question": "a10",
+      "label": "操作後加重平均",
+      "expression": "60*.2+100*.3+160*.5",
+      "result": "122",
+      "expected": "122",
+      "pass": true
+    },
+    {
+      "question": "a10",
+      "label": "差",
+      "expression": "122-92",
+      "result": "30",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "question": "a14",
+      "label": "包括利益",
+      "expression": "1920-1500-300+80",
+      "result": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "question": "a14",
+      "label": "純利益",
+      "expression": "200-50",
+      "result": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "X売却益",
+      "expression": "270-200",
+      "result": "70",
+      "expected": "70",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "X当期価格変動",
+      "expression": "270-240",
+      "result": "30",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "X当期OCI",
+      "expression": "30-70",
+      "result": "-40",
+      "expected": "-40",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "Y当期OCI",
+      "expression": "70-80",
+      "result": "-10",
+      "expected": "-10",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "合計OCI",
+      "expression": "-40-10",
+      "result": "-50",
+      "expected": "-50",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "当期包括",
+      "expression": "70-50",
+      "result": "20",
+      "expected": "20",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "期末累計",
+      "expression": "70-100",
+      "result": "-30",
+      "expected": "-30",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "二期間包括",
+      "expression": "(240-200)+(80-100)+20",
+      "result": "40",
+      "expected": "40",
+      "pass": true
+    },
+    {
+      "question": "a15",
+      "label": "回収資金との照合",
+      "expression": "270+70-200-100",
+      "result": "40",
+      "expected": "40",
+      "pass": true
+    },
+    {
+      "question": "a16",
+      "label": "非支配純利益",
+      "expression": "240-180",
+      "result": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "question": "a16",
+      "label": "非支配OCI",
+      "expression": "-20-(-35)",
+      "result": "15",
+      "expected": "15",
+      "pass": true
+    },
+    {
+      "question": "a16",
+      "label": "非支配包括",
+      "expression": "60+15",
+      "result": "75",
+      "expected": "75",
+      "pass": true
+    },
+    {
+      "question": "a16",
+      "label": "親会社包括",
+      "expression": "180-35",
+      "result": "145",
+      "expected": "145",
+      "pass": true
+    },
+    {
+      "question": "a16",
+      "label": "全体包括",
+      "expression": "240-20",
+      "result": "220",
+      "expected": "220",
+      "pass": true
+    },
+    {
+      "question": "a16",
+      "label": "混ぜた場合の誤額",
+      "expression": "180-20",
+      "result": "160",
+      "expected": "160",
+      "pass": true
+    },
+    {
+      "question": "a17",
+      "label": "年間売上",
+      "expression": "430+40",
+      "result": "470",
+      "expected": "470",
+      "pass": true
+    },
+    {
+      "question": "a17",
+      "label": "架空増額",
+      "expression": "500-470",
+      "result": "30",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "question": "b1",
+      "label": "現金純増（対象範囲の確認）",
+      "expression": "36-20",
+      "result": "16",
+      "expected": "16",
+      "pass": true
+    },
+    {
+      "question": "b2",
+      "label": "甲収益",
+      "expression": "144*9/12",
+      "result": "108",
+      "expected": "108",
+      "pass": true
+    },
+    {
+      "question": "b2",
+      "label": "甲負債",
+      "expression": "144-108",
+      "result": "36",
+      "expected": "36",
+      "pass": true
+    },
+    {
+      "question": "b2",
+      "label": "乙収益",
+      "expression": "90*3/6",
+      "result": "45",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "question": "b2",
+      "label": "乙負債",
+      "expression": "90-45",
+      "result": "45",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "question": "b2",
+      "label": "収益合計",
+      "expression": "108+45",
+      "result": "153",
+      "expected": "153",
+      "pass": true
+    },
+    {
+      "question": "b2",
+      "label": "負債合計",
+      "expression": "36+45",
+      "result": "81",
+      "expected": "81",
+      "pass": true
+    },
+    {
+      "question": "b2",
+      "label": "受領一致",
+      "expression": "153+81",
+      "result": "234",
+      "expected": "234",
+      "pass": true
+    },
+    {
+      "question": "b3",
+      "label": "売上",
+      "expression": "45*4",
+      "result": "180",
+      "expected": "180",
+      "pass": true
+    },
+    {
+      "question": "b3",
+      "label": "売上原価",
+      "expression": "45*2",
+      "result": "90",
+      "expected": "90",
+      "pass": true
+    },
+    {
+      "question": "b3",
+      "label": "期末商品",
+      "expression": "(60-45)*2",
+      "result": "30",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "question": "b3",
+      "label": "利益",
+      "expression": "180-90-12",
+      "result": "78",
+      "expected": "78",
+      "pass": true
+    },
+    {
+      "question": "b4",
+      "label": "未配分原価",
+      "expression": "250-80",
+      "result": "170",
+      "expected": "170",
+      "pass": true
+    },
+    {
+      "question": "b4",
+      "label": "費用控除後売却額",
+      "expression": "210-18",
+      "result": "192",
+      "expected": "192",
+      "pass": true
+    },
+    {
+      "question": "b5",
+      "label": "当初現在価値",
+      "expression": "105/1.05+110.25/1.05^2",
+      "result": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "question": "b5",
+      "label": "A現在価値",
+      "expression": "126/1.05+132.3/1.05^2",
+      "result": "240",
+      "expected": "240",
+      "pass": true
+    },
+    {
+      "question": "b5",
+      "label": "B丸め前",
+      "expression": "126/1.2+132.3/1.2^2",
+      "result": "1575/8",
+      "expected": "196.875",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "所有者取引除外後",
+      "expression": "950-200+50",
+      "result": "800",
+      "expected": "800",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "名目増加",
+      "expression": "800-600",
+      "result": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "購買力維持額",
+      "expression": "600*1.08",
+      "result": "648",
+      "expected": "648",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "購買力超過",
+      "expression": "800-648",
+      "result": "152",
+      "expected": "152",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "貨幣単位差",
+      "expression": "200-152",
+      "result": "48",
+      "expected": "48",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "商品名目成果",
+      "expression": "95-60",
+      "result": "35",
+      "expected": "35",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "商品補充能力成果",
+      "expression": "95-72",
+      "result": "23",
+      "expected": "23",
+      "pass": true
+    },
+    {
+      "question": "b6",
+      "label": "商品維持概念差",
+      "expression": "35-23",
+      "result": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "期首純差",
+      "expression": "20-8",
+      "result": "12",
+      "expected": "12",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "X1末純差",
+      "expression": "35-10",
+      "result": "25",
+      "expected": "25",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "X2末純差",
+      "expression": "32-4",
+      "result": "28",
+      "expected": "28",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "新期首剰余金",
+      "expression": "400+12",
+      "result": "412",
+      "expected": "412",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "X1利益",
+      "expression": "70+25-12",
+      "result": "83",
+      "expected": "83",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "X1末剰余金",
+      "expression": "412+83-10",
+      "result": "485",
+      "expected": "485",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "X2利益",
+      "expression": "80+28-25",
+      "result": "83",
+      "expected": "83",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "X2末剰余金",
+      "expression": "485+83-20",
+      "result": "548",
+      "expected": "548",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "旧X2末剰余金",
+      "expression": "400+70-10+80-20",
+      "result": "520",
+      "expected": "520",
+      "pass": true
+    },
+    {
+      "question": "b8",
+      "label": "末差照合",
+      "expression": "548-520",
+      "result": "28",
+      "expected": "28",
+      "pass": true
+    },
+    {
+      "question": "b9",
+      "label": "旧営業",
+      "expression": "900-500-250",
+      "result": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "question": "b9",
+      "label": "新営業",
+      "expression": "(900+40)-500-(250-15)",
+      "result": "205",
+      "expected": "205",
+      "pass": true
+    },
+    {
+      "question": "b9",
+      "label": "新経常",
+      "expression": "205+(60-40)-(30+15)",
+      "result": "180",
+      "expected": "180",
+      "pass": true
+    },
+    {
+      "question": "b9",
+      "label": "旧経常",
+      "expression": "150+60-30",
+      "result": "180",
+      "expected": "180",
+      "pass": true
+    },
+    {
+      "question": "b9",
+      "label": "段階利益差",
+      "expression": "205-150",
+      "result": "55",
+      "expected": "55",
+      "pass": true
+    },
+    {
+      "question": "b10",
+      "label": "甲年額",
+      "expression": "480/4",
+      "result": "120",
+      "expected": "120",
+      "pass": true
+    },
+    {
+      "question": "b10",
+      "label": "甲末簿価",
+      "expression": "480-120",
+      "result": "360",
+      "expected": "360",
+      "pass": true
+    },
+    {
+      "question": "b10",
+      "label": "乙年額",
+      "expression": "(330-30)/5",
+      "result": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "question": "b10",
+      "label": "乙末簿価",
+      "expression": "330-60",
+      "result": "270",
+      "expected": "270",
+      "pass": true
+    },
+    {
+      "question": "b11",
+      "label": "X1正利益",
+      "expression": "100-(18-0)",
+      "result": "82",
+      "expected": "82",
+      "pass": true
+    },
+    {
+      "question": "b11",
+      "label": "X2正利益",
+      "expression": "120-(-7-18)",
+      "result": "145",
+      "expected": "145",
+      "pass": true
+    },
+    {
+      "question": "b11",
+      "label": "X3正利益",
+      "expression": "140-(0-(-7))",
+      "result": "133",
+      "expected": "133",
+      "pass": true
+    },
+    {
+      "question": "b11",
+      "label": "三期合計",
+      "expression": "82+145+133",
+      "result": "360",
+      "expected": "360",
+      "pass": true
+    },
+    {
+      "question": "b14",
+      "label": "今期見積",
+      "expression": "500*.04*2",
+      "result": "40",
+      "expected": "40",
+      "pass": true
+    },
+    {
+      "question": "b14",
+      "label": "旧前提見積",
+      "expression": "400*.03*2",
+      "result": "24",
+      "expected": "24",
+      "pass": true
+    },
+    {
+      "question": "b15",
+      "label": "元見積",
+      "expression": "2400*.05",
+      "result": "120",
+      "expected": "120",
+      "pass": true
+    },
+    {
+      "question": "b15",
+      "label": "対象のみ変更",
+      "expression": "3000*.05",
+      "result": "150",
+      "expected": "150",
+      "pass": true
+    },
+    {
+      "question": "b15",
+      "label": "率のみ変更",
+      "expression": "2400*.04",
+      "result": "96",
+      "expected": "96",
+      "pass": true
+    },
+    {
+      "question": "b15",
+      "label": "同時変更",
+      "expression": "3000*.04",
+      "result": "120",
+      "expected": "120",
+      "pass": true
+    },
+    {
+      "question": "b15",
+      "label": "単独差合計",
+      "expression": "(150-120)+(96-120)",
+      "result": "6",
+      "expected": "6",
+      "pass": true
+    },
+    {
+      "question": "b15",
+      "label": "交差効果",
+      "expression": "(3000-2400)*(.04-.05)",
+      "result": "-6",
+      "expected": "-6",
+      "pass": true
+    },
+    {
+      "question": "c7",
+      "label": "収益",
+      "expression": "72*2/6",
+      "result": "24",
+      "expected": "24",
+      "pass": true
+    },
+    {
+      "question": "c7",
+      "label": "契約負債",
+      "expression": "72-24",
+      "result": "48",
+      "expected": "48",
+      "pass": true
+    },
+    {
+      "question": "c8",
+      "label": "正利益",
+      "expression": "200-15+10",
+      "result": "195",
+      "expected": "195",
+      "pass": true
+    },
+    {
+      "question": "c8",
+      "label": "純差",
+      "expression": "195-200",
+      "result": "-5",
+      "expected": "-5",
+      "pass": true
+    },
+    {
+      "question": "c10",
+      "label": "自己採点",
+      "expression": "0+0+1",
+      "result": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "現金",
+      "expression": "600+300-240+180-140-30+120",
+      "result": "790",
+      "expected": "790",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "保守収益",
+      "expression": "120*3/12",
+      "result": "30",
+      "expected": "30",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "契約負債",
+      "expression": "120-30",
+      "result": "90",
+      "expected": "90",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "利益",
+      "expression": "260+30-120-24-30-20",
+      "result": "96",
+      "expected": "96",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "売掛金",
+      "expression": "260-180",
+      "result": "80",
+      "expected": "80",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "商品",
+      "expression": "200-120",
+      "result": "80",
+      "expected": "80",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "設備",
+      "expression": "240-24",
+      "result": "216",
+      "expected": "216",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "買掛金",
+      "expression": "200-140",
+      "result": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "資産",
+      "expression": "790+80+80+216",
+      "result": "1166",
+      "expected": "1166",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "負債",
+      "expression": "60+300+20+90",
+      "result": "470",
+      "expected": "470",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "純資産",
+      "expression": "600+96",
+      "result": "696",
+      "expected": "696",
+      "pass": true
+    },
+    {
+      "question": "c11",
+      "label": "貸借一致",
+      "expression": "470+696",
+      "result": "1166",
+      "expected": "1166",
+      "pass": true
+    },
+    {
+      "question": "c12",
+      "label": "銀行必要額",
+      "expression": "300*2",
+      "result": "600",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "question": "c12",
+      "label": "条件余裕",
+      "expression": "696-600",
+      "result": "96",
+      "expected": "96",
+      "pass": true
+    },
+    {
+      "question": "c13",
+      "label": "旧見積",
+      "expression": "1500*.04",
+      "result": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "question": "c13",
+      "label": "対象のみ",
+      "expression": "2000*.04",
+      "result": "80",
+      "expected": "80",
+      "pass": true
+    },
+    {
+      "question": "c13",
+      "label": "率のみ",
+      "expression": "1500*.03",
+      "result": "45",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "question": "c13",
+      "label": "同時",
+      "expression": "2000*.03",
+      "result": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "question": "c13",
+      "label": "単独合計",
+      "expression": "20-15",
+      "result": "5",
+      "expected": "5",
+      "pass": true
+    },
+    {
+      "question": "c13",
+      "label": "交差効果",
+      "expression": "(2000-1500)*(.03-.04)",
+      "result": "-5",
+      "expected": "-5",
+      "pass": true
+    },
+    {
+      "question": "c15",
+      "label": "全体包括",
+      "expression": "1360-1000-200+40",
+      "result": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "question": "c15",
+      "label": "損益OCI照合",
+      "expression": "140+60",
+      "result": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "question": "c15",
+      "label": "親会社包括",
+      "expression": "110+45",
+      "result": "155",
+      "expected": "155",
+      "pass": true
+    },
+    {
+      "question": "c15",
+      "label": "非支配包括",
+      "expression": "30+15",
+      "result": "45",
+      "expected": "45",
+      "pass": true
+    },
+    {
+      "question": "c15",
+      "label": "帰属額照合",
+      "expression": "155+45",
+      "result": "200",
+      "expected": "200",
+      "pass": true
+    },
+    {
+      "question": "c16",
+      "label": "明示基準自己採点",
+      "expression": "0+0+0",
+      "result": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "question": "g12",
+      "label": "期末OCI累計",
+      "expression": "35-12",
+      "result": "23",
+      "expected": "23",
+      "pass": true
+    },
+    {
+      "question": "b5",
+      "label": "B最終丸め",
+      "expression": "ROUND_HALF_UP(196.875,0.01)",
+      "result": "196.88",
+      "expected": "196.88",
+      "pass": true
+    }
+  ],
+  "checkCount": 1213,
+  "passed": 1213,
+  "failures": [],
+  "files": [
+    {
+      "path": "drafts/zr2-zaimu-framework-review-a.md",
+      "sha256": "55964b77d68820b31c3df547ac36f207a9d967bbb03b240072c5ad4087dedab8"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-review-a.json",
+      "sha256": "f274b2e65c8b5ab9a0ced091125a502cc7ce944e036cea87e2182a74192094d7"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-review-b.md",
+      "sha256": "ed5b8614a777b166391bc882f423079a45092d1459664aaf6f4ee595e66d162a"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-review-b.json",
+      "sha256": "4d509625aac99388cd3c04d871c11977a3121b47c560559adfa8643a14cb7f6b"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-review-c.md",
+      "sha256": "7d29b612cc35dd0f0ec4aebd0b289e6513fe50ece0c18be804fb4a9a7c9ea0a7"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-review-c.json",
+      "sha256": "81f48482b64f00905b4b50ddb54078f96b768aba9ed4b697806942c0d84d58d9"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-glossary-assessment.md",
+      "sha256": "2f74d69a6bc8ff25dfa638f669786b9f7ed24ef55331d3f8386ed791506ae1ed"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-glossary-assessment.json",
+      "sha256": "4506101a65037f7590eedad33e2b6d3c1804df3e535d3721807e0299f94d7bb3"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-glossary-reference.md",
+      "sha256": "3b9588d9572e95e1f159c3631f600fb138e647147f1c6086f01ef801391f1628"
+    },
+    {
+      "path": "drafts/zr2-zaimu-framework-glossary-reference.json",
+      "sha256": "d23dd09a3bde6a4af7c5e8c27cf808d6ee3ec8565b57a676b0d1a990fc7102f2"
+    },
+    {
+      "path": "framework-assessment-owner-map.json",
+      "sha256": "edcada134e77a32ab8c4de3ccff320e90e8a1b0af5ccd382478bba755c3079da"
+    }
+  ],
+  "limits": [
+    "Author equation file not used as arithmetic input.",
+    "Structural target matches do not prove skill coverage; see manual findings.",
+    "Not a review of all 141 lesson questions or the whole financial-accounting course."
+  ]
+}

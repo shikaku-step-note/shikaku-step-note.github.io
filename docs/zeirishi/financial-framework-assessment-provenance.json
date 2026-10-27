@@ -1,0 +1,812 @@
+{
+  "owner": {
+    "status": "draft-pending-independent-review",
+    "notCompletionClaim": true,
+    "moduleId": "zr2-zaimu-unit-framework",
+    "fineSkillCount": 43,
+    "lessonQuestionCount": 141,
+    "cumulativeQuestionCount": 52,
+    "glossaryQuestionCount": 32,
+    "referenceEntryCount": 64,
+    "note": "参照定義は設問でない。用語だけの得点から応用達成を認めない。-f番号は原稿の実細目でcanonical広目標への接続は統合担当が別途確認する。",
+    "forms": [
+      {
+        "id": "zr2-zaimu-framework-review-a",
+        "questions": 17,
+        "points": 63,
+        "minutes": 90
+      },
+      {
+        "id": "zr2-zaimu-framework-review-b",
+        "questions": 17,
+        "points": 78,
+        "minutes": 110
+      },
+      {
+        "id": "zr2-zaimu-framework-review-c",
+        "questions": 18,
+        "points": 86,
+        "minutes": 110
+      },
+      {
+        "id": "zr2-zaimu-framework-glossary-assessment",
+        "questions": 32,
+        "points": 32,
+        "minutes": 55
+      }
+    ],
+    "fineObjectives": [
+      {
+        "id": "zr2-zaimu-purpose-regulation-f01",
+        "lessonId": "zr2-zaimu-purpose-regulation",
+        "objective": 1,
+        "objectiveText": "投資判断に必要な情報を、成果と資源・負担の両方から説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q1",
+          "zr2-zaimu-framework-review-c-q12"
+        ],
+        "glossaryQuestionIds": []
+      },
+      {
+        "id": "zr2-zaimu-purpose-regulation-f02",
+        "lessonId": "zr2-zaimu-purpose-regulation",
+        "objective": 2,
+        "objectiveText": "作成・利用・監査の役割と、受託責任・利害調整の着眼点を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q2",
+          "zr2-zaimu-framework-review-c-q12"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q1",
+          "zr2-zaimu-framework-glossary-assessment-q2"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-purpose-regulation-f03",
+        "lessonId": "zr2-zaimu-purpose-regulation",
+        "objective": 3,
+        "objectiveText": "会社法と金融商品取引法について、書類と手続の適用範囲を与件から判断する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q3"
+        ],
+        "glossaryQuestionIds": []
+      },
+      {
+        "id": "zr2-zaimu-purpose-regulation-f04",
+        "lessonId": "zr2-zaimu-purpose-regulation",
+        "objective": 4,
+        "objectiveText": "法令・個別基準・概念フレームワークの位置付けを区別して理由を記述する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q4"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q3"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-qualitative-characteristics-f01",
+        "lessonId": "zr2-zaimu-qualitative-characteristics",
+        "objective": 1,
+        "objectiveText": "有用性・関連性・信頼性と、それを支える特性の関係を説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q9",
+          "zr2-zaimu-framework-review-c-q14"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q4"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-qualitative-characteristics-f02",
+        "lessonId": "zr2-zaimu-qualitative-characteristics",
+        "objective": 2,
+        "objectiveText": "見積りの根拠や偏りを、事例の具体的な事実から評価する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q10",
+          "zr2-zaimu-framework-review-c-q14"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q5",
+          "zr2-zaimu-framework-glossary-assessment-q6"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-qualitative-characteristics-f03",
+        "lessonId": "zr2-zaimu-qualitative-characteristics",
+        "objective": 3,
+        "objectiveText": "実質の同異を確認し、比較可能性と画一的な処理を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q11",
+          "zr2-zaimu-framework-review-a-q17"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q7"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-qualitative-characteristics-f04",
+        "lessonId": "zr2-zaimu-qualitative-characteristics",
+        "objective": 4,
+        "objectiveText": "基準体系の内的整合性と、期間を通じた手続の継続を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q12"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q8"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-elements-f01",
+        "lessonId": "zr2-zaimu-elements",
+        "objective": 1,
+        "objectiveText": "過去の取引・資源の支配・義務から構成要素を検討し、認識や測定と区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q13"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q9",
+          "zr2-zaimu-framework-glossary-assessment-q10"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-elements-f02",
+        "lessonId": "zr2-zaimu-elements",
+        "objective": 2,
+        "objectiveText": "資産負債差額と内訳を照合し、残高・期間変動・所有者取引を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q14",
+          "zr2-zaimu-framework-review-c-q11",
+          "zr2-zaimu-framework-review-c-q15",
+          "zr2-zaimu-framework-review-c-q16"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q11"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-elements-f03",
+        "lessonId": "zr2-zaimu-elements",
+        "objective": 3,
+        "objectiveText": "当期純利益・その他の包括利益・組替え・累計残高を複数期間で照合する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q15",
+          "zr2-zaimu-framework-review-c-q15"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q12",
+          "zr2-zaimu-framework-glossary-assessment-q13"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-elements-f04",
+        "lessonId": "zr2-zaimu-elements",
+        "objective": 4,
+        "objectiveText": "連結の全体額と親会社株主・非支配株主への帰属額を整合させる",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q16",
+          "zr2-zaimu-framework-review-c-q15",
+          "zr2-zaimu-framework-review-c-q16"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q13"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-general-principles-f01",
+        "lessonId": "zr2-zaimu-general-principles",
+        "objective": 1,
+        "objectiveText": "真実性・正規の簿記・資本損益の区別を取引と帳簿の事実へ当てはめる",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q5",
+          "zr2-zaimu-framework-review-a-q17",
+          "zr2-zaimu-framework-review-c-q11"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q14",
+          "zr2-zaimu-framework-glossary-assessment-q15"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-general-principles-f02",
+        "lessonId": "zr2-zaimu-general-principles",
+        "objective": 2,
+        "objectiveText": "明瞭性と総額表示から、利益が同じでも情報が異なる理由を説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q6"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q16"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-general-principles-f03",
+        "lessonId": "zr2-zaimu-general-principles",
+        "objective": 3,
+        "objectiveText": "継続性・保守主義の趣旨と限界を、変更理由・見積り条件から判断する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q7",
+          "zr2-zaimu-framework-review-c-q8",
+          "zr2-zaimu-framework-review-c-q17"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q17"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-general-principles-f04",
+        "lessonId": "zr2-zaimu-general-principles",
+        "objective": 4,
+        "objectiveText": "単一性と重要性を、目的別調整・集積額・項目の性質へ当てはめる",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q8",
+          "zr2-zaimu-framework-review-a-q17",
+          "zr2-zaimu-framework-review-c-q17"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q14",
+          "zr2-zaimu-framework-glossary-assessment-q17"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-recognition-measurement-f01",
+        "lessonId": "zr2-zaimu-recognition-measurement",
+        "objective": 1,
+        "objectiveText": "認識と測定、定義と計上条件を分け、未履行・前払・引渡しを仕訳へ表す",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q1",
+          "zr2-zaimu-framework-review-c-q11"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q18"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-recognition-measurement-f02",
+        "lessonId": "zr2-zaimu-recognition-measurement",
+        "objective": 2,
+        "objectiveText": "現金の受払と履行を分け、収益と契約負債の期間帰属を計算する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q2",
+          "zr2-zaimu-framework-review-c-q7",
+          "zr2-zaimu-framework-review-c-q11"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q19"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-recognition-measurement-f03",
+        "lessonId": "zr2-zaimu-recognition-measurement",
+        "objective": 3,
+        "objectiveText": "費用収益の対応と期末資産の根拠を、売上原価とサービス費用で説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q3",
+          "zr2-zaimu-framework-review-c-q11"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q19"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-recognition-measurement-f04",
+        "lessonId": "zr2-zaimu-recognition-measurement",
+        "objective": 4,
+        "objectiveText": "未配分原価・入口出口の価格・正味売却額を目的から選び、混合測定を説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q4"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q20"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-recognition-measurement-f05",
+        "lessonId": "zr2-zaimu-recognition-measurement",
+        "objective": 5,
+        "objectiveText": "将来額・期間・更新する率を示して現在価値を計算し、測定目的の差を説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q5"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q21"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-recognition-measurement-f06",
+        "lessonId": "zr2-zaimu-recognition-measurement",
+        "objective": 6,
+        "objectiveText": "所有者取引を除き、名目額・購買力・補充能力の維持による成果の差を求める",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q6"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q22"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-reporting-obligations-f01",
+        "lessonId": "zr2-zaimu-reporting-obligations",
+        "objective": 1,
+        "objectiveText": "公開会社・上場・大会社を区別し、境界額と不足する情報から会社の属性を判断する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q1"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q23"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-reporting-obligations-f02",
+        "lessonId": "zr2-zaimu-reporting-obligations",
+        "objective": 2,
+        "objectiveText": "帳簿・計算書類・事業報告を区別し、監査・承認・提供・総会の手順と保存起算を対応させる",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-a-q3",
+          "zr2-zaimu-framework-review-c-q2"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q24"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-reporting-obligations-f03",
+        "lessonId": "zr2-zaimu-reporting-obligations",
+        "objective": 3,
+        "objectiveText": "総会の承認を報告へ代える特則について、会計監査人の有無と複数の要件を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q3"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q25"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-reporting-obligations-f04",
+        "lessonId": "zr2-zaimu-reporting-obligations",
+        "objective": 4,
+        "objectiveText": "公告の対象書類と条件付きの代替・適用除外を判断し、作成義務と混同しない",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q4"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q25"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-reporting-obligations-f05",
+        "lessonId": "zr2-zaimu-reporting-obligations",
+        "objective": 5,
+        "objectiveText": "有価証券報告書の対象・原則期間・監査証明を、会社法上の手続と分けて説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q5"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q24"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-policy-changes-f01",
+        "lessonId": "zr2-zaimu-policy-changes",
+        "objective": 1,
+        "objectiveText": "当時の情報と変更対象から、会計方針・表示方法・見積り・誤謬を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q7",
+          "zr2-zaimu-framework-review-c-q13",
+          "zr2-zaimu-framework-review-c-q17"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q26",
+          "zr2-zaimu-framework-glossary-assessment-q28"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-policy-changes-f02",
+        "lessonId": "zr2-zaimu-policy-changes",
+        "objective": 2,
+        "objectiveText": "方針変更の正当な理由と経過措置を確認し、期首累積差と各期損益を遡及計算する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q8"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q27"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-policy-changes-f03",
+        "lessonId": "zr2-zaimu-policy-changes",
+        "objective": 3,
+        "objectiveText": "表示方法の組替えを行い、段階利益の変化と合計不変を照合する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q9"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q28"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-policy-changes-f04",
+        "lessonId": "zr2-zaimu-policy-changes",
+        "objective": 4,
+        "objectiveText": "合理的な見積りの更新と償却方法の変更について、当期以降の配分を求める",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q10",
+          "zr2-zaimu-framework-review-c-q13"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q26"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-policy-changes-f05",
+        "lessonId": "zr2-zaimu-policy-changes",
+        "objective": 5,
+        "objectiveText": "過去の誤謬を修正再表示し、在庫差の翌期への反転と期間利益を照合する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q11"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q27"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-policy-changes-f06",
+        "lessonId": "zr2-zaimu-policy-changes",
+        "objective": 6,
+        "objectiveText": "実務上不可能な場合の分岐と、変更・未適用基準について必要な説明を選ぶ",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q12",
+          "zr2-zaimu-framework-review-b-q17"
+        ],
+        "glossaryQuestionIds": []
+      },
+      {
+        "id": "zr2-zaimu-estimate-disclosure-f01",
+        "lessonId": "zr2-zaimu-estimate-disclosure",
+        "objective": 1,
+        "objectiveText": "翌年度の重要な影響のリスクから対象項目を識別し、残高・有利不利・市場価格変動を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q13",
+          "zr2-zaimu-framework-review-c-q14"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q29"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-estimate-disclosure-f02",
+        "lessonId": "zr2-zaimu-estimate-disclosure",
+        "objective": 2,
+        "objectiveText": "計上額と方法・主要な仮定を、企業固有の事実と計算資料に結び付けて説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q14",
+          "zr2-zaimu-framework-review-c-q14"
+        ],
+        "glossaryQuestionIds": []
+      },
+      {
+        "id": "zr2-zaimu-estimate-disclosure-f03",
+        "lessonId": "zr2-zaimu-estimate-disclosure",
+        "objective": 3,
+        "objectiveText": "仮定を動かした感応度を計算し、単独変更と同時変更の差を説明する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q15",
+          "zr2-zaimu-framework-review-c-q13"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q30"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-estimate-disclosure-f04",
+        "lessonId": "zr2-zaimu-estimate-disclosure",
+        "objective": 4,
+        "objectiveText": "個別基準による認識測定と注記の識別を分け、当期損失ゼロでも必要な説明を判断する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q16"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q29"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-estimate-disclosure-f05",
+        "lessonId": "zr2-zaimu-estimate-disclosure",
+        "objective": 5,
+        "objectiveText": "別注記・連結の参照と個別額を区別し、必要情報を残して重複を避ける",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-b-q16"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q31"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-theory-writing-f01",
+        "lessonId": "zr2-zaimu-theory-writing",
+        "objective": 1,
+        "objectiveText": "設問の対象・要求動作・条件・出力を読み分け、要求の欠落を特定する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q6",
+          "zr2-zaimu-framework-review-c-q16"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q32"
+        ]
+      },
+      {
+        "id": "zr2-zaimu-theory-writing-f02",
+        "lessonId": "zr2-zaimu-theory-writing",
+        "objective": 2,
+        "objectiveText": "必要な規範と与件の事実を対応させ、分類・処理・理由を一つの答案へつなぐ",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q7",
+          "zr2-zaimu-framework-review-c-q12",
+          "zr2-zaimu-framework-review-c-q16"
+        ],
+        "glossaryQuestionIds": []
+      },
+      {
+        "id": "zr2-zaimu-theory-writing-f03",
+        "lessonId": "zr2-zaimu-theory-writing",
+        "objective": 3,
+        "objectiveText": "期間・比較方向・項目・単位を明らかにし、数値と因果関係を検算する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q8",
+          "zr2-zaimu-framework-review-c-q12",
+          "zr2-zaimu-framework-review-c-q15"
+        ],
+        "glossaryQuestionIds": []
+      },
+      {
+        "id": "zr2-zaimu-theory-writing-f04",
+        "lessonId": "zr2-zaimu-theory-writing",
+        "objective": 4,
+        "objectiveText": "必要条件の不足と不充足、法令基準日と個別基準の適用時期を区別する",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q9",
+          "zr2-zaimu-framework-review-c-q18"
+        ],
+        "glossaryQuestionIds": []
+      },
+      {
+        "id": "zr2-zaimu-theory-writing-f05",
+        "lessonId": "zr2-zaimu-theory-writing",
+        "objective": 5,
+        "objectiveText": "明示された学習用採点項目を実際の記述へ対応させ、誤答原因と再学習を選ぶ",
+        "cumulativeQuestionIds": [
+          "zr2-zaimu-framework-review-c-q10",
+          "zr2-zaimu-framework-review-c-q16"
+        ],
+        "glossaryQuestionIds": [
+          "zr2-zaimu-framework-glossary-assessment-q32"
+        ]
+      }
+    ],
+    "fine4EvidenceNote": "C9は基準日/適用時期の部分証拠、C18は必要条件の証拠不足と明示的不充足を二つの独立事例で比較する追加評価。独立審査pending。"
+  },
+  "counts": {
+    "lessons": 9,
+    "workedExamples": 53,
+    "lessonQuestions": 141,
+    "cumulativeQuestions": 52,
+    "glossaryQuestions": 32
+  },
+  "scopeContinuations": {
+    "status": "draft-scope-mapping-not-completion",
+    "checkedOn": "2026-10-27",
+    "entries": [
+      {
+        "fromLessonId": "zr2-zaimu-purpose-regulation",
+        "topic": "提出対象・期限・公告・監査承認の適用範囲",
+        "plannedIds": [
+          "zr2-zaimu-reporting-obligations"
+        ],
+        "status": "draft-awaiting-unit-assessment-and-integration"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-purpose-regulation",
+        "topic": "具体的な分配可能額と純資産分類",
+        "plannedIds": [
+          "zr2-zaimu-equity-classification",
+          "zr2-boki-capital-issues"
+        ],
+        "status": "planned"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-purpose-regulation",
+        "topic": "連結範囲・単体と連結",
+        "plannedIds": [
+          "zr2-zaimu-consolidation-scope"
+        ],
+        "status": "planned"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-qualitative-characteristics",
+        "topic": "修理等の引当金の認識・測定",
+        "plannedIds": [
+          "zr2-zaimu-liabilities-provisions"
+        ],
+        "status": "planned"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-qualitative-characteristics",
+        "topic": "販売目的の棚卸分類と原価",
+        "plannedIds": [
+          "zr2-zaimu-inventory-recognition"
+        ],
+        "status": "planned"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-qualitative-characteristics",
+        "topic": "収益・費用と資産負債の認識",
+        "plannedIds": [
+          "zr2-zaimu-recognition-measurement"
+        ],
+        "status": "draft-awaiting-unit-assessment-and-integration"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-qualitative-characteristics",
+        "topic": "会計方針変更・遡及適用・比較情報",
+        "plannedIds": [
+          "zr2-zaimu-policy-changes"
+        ],
+        "status": "draft-awaiting-unit-assessment-and-integration"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-qualitative-characteristics",
+        "topic": "見積りの不確実性と注記",
+        "plannedIds": [
+          "zr2-zaimu-estimate-disclosure"
+        ],
+        "status": "draft-awaiting-unit-assessment-and-integration"
+      },
+      {
+        "fromLessonId": "zr2-zaimu-elements",
+        "topic": "資産・負債の各論の認識測定と収益の履行義務",
+        "plannedIds": [
+          "zr2-zaimu-recognition-measurement",
+          "zr2-zaimu-liabilities-provisions",
+          "zr2-zaimu-revenue-contract"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-elements",
+        "topic": "連結OCI・非支配株主持分と個別表示の詳細",
+        "plannedIds": [
+          "zr2-zaimu-comprehensive-income",
+          "zr2-zaimu-capital-consolidation",
+          "zr2-zaimu-equity-classification"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-general-principles",
+        "topic": "各論の重要性・処理方法と個別基準優先の具体的適用",
+        "plannedIds": [
+          "zr2-zaimu-financial-notes",
+          "zr2-zaimu-liabilities-provisions",
+          "zr2-zaimu-inventory-valuation"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-recognition-measurement",
+        "topic": "履行義務・価格配分・代理人等の詳細",
+        "plannedIds": [
+          "zr2-zaimu-revenue-contract",
+          "zr2-zaimu-revenue-price",
+          "zr2-zaimu-revenue-agent-license"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-recognition-measurement",
+        "topic": "棚卸資産・固定資産の具体的な原価配分と評価損",
+        "plannedIds": [
+          "zr2-zaimu-inventory-recognition",
+          "zr2-zaimu-inventory-valuation",
+          "zr2-zaimu-depreciation",
+          "zr2-zaimu-impairment-recognition",
+          "zr2-zaimu-impairment-measurement"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-recognition-measurement",
+        "topic": "債権・金融商品の条件別現在価値と時価",
+        "plannedIds": [
+          "zr2-zaimu-receivable-allowances",
+          "zr2-zaimu-financial-amortization",
+          "zr2-zaimu-fair-value"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-policy-changes",
+        "topic": "原価配分・償却・税効果・1株当たり情報の具体的な再計算",
+        "plannedIds": [
+          "zr2-zaimu-inventory-valuation",
+          "zr2-zaimu-depreciation",
+          "zr2-zaimu-temporary-differences",
+          "zr2-zaimu-earnings-per-share"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-policy-changes",
+        "topic": "連結範囲・資金範囲・直接間接CFの全処理",
+        "plannedIds": [
+          "zr2-zaimu-consolidation-scope",
+          "zr2-zaimu-cashflow-scope",
+          "zr2-zaimu-cashflow-indirect",
+          "zr2-zaimu-cashflow-direct-consolidated"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-estimate-disclosure",
+        "topic": "貸倒・保証・減損等の個別認識条件と測定",
+        "plannedIds": [
+          "zr2-zaimu-receivable-allowances",
+          "zr2-zaimu-liabilities-provisions",
+          "zr2-zaimu-impairment-recognition",
+          "zr2-zaimu-impairment-measurement"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-estimate-disclosure",
+        "topic": "具体的注記事項の全体と相互参照の実務資料",
+        "plannedIds": [
+          "zr2-zaimu-financial-notes"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-reporting-obligations",
+        "topic": "様式・財規連財規・注記・期中・後発事象の具体的事項",
+        "plannedIds": [
+          "zr2-zaimu-company-statements",
+          "zr2-zaimu-financial-notes",
+          "zr2-zaimu-interim-reporting",
+          "zr2-zaimu-subsequent-going-concern"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-theory-writing",
+        "topic": "各論横断の初見答案と多資料・多年度の総合演習",
+        "plannedIds": [
+          "zr2-zaimu-theory-case-comprehensive",
+          "zr2-zaimu-individual-statements-comprehensive",
+          "zr2-zaimu-consolidated-statements-comprehensive",
+          "zr2-zaimu-time-and-answer-check"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      },
+      {
+        "fromLessonId": "zr2-zaimu-reporting-obligations",
+        "topic": "提出対象の数値要件・政令除外・外国会社の期限・承認及び休日条件",
+        "plannedIds": [
+          "zr2-zaimu-disclosure-eligibility-deadlines"
+        ],
+        "status": "planned",
+        "notCountedAsTaughtHere": true
+      }
+    ]
+  },
+  "rawAuthorTimesAdopted": false
+}

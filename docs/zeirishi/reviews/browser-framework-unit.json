@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "checks": [
+    "Expanded financial unit starts at 0/9 independently of legacy records",
+    "All nine lessons listed",
+    "Actual lesson glossary opens with keyboard",
+    "Completion and bookmark restored after reload",
+    "Unit calculation uses nine actual expanded lessons",
+    "Continue advances to reporting obligations",
+    "Written answer and review flag survive reload",
+    "A uses 17 questions and 63-point learning scale",
+    "Cross-topic explanation links to both actual revision lessons",
+    "B uses 17 questions and 78-point learning scale",
+    "Uncalibrated review has no invented exam timer",
+    "Question opens its shared material: framework-startup",
+    "Question opens its shared material: framework-assumptions",
+    "Question opens its shared material: framework-answer-check",
+    "C includes added condition-analysis question with full 86-point scale",
+    "C question count and six-point written review persist separately",
+    "Glossary uses 32 contextual questions and its own scale",
+    "All four assessment histories stay distinct",
+    "Existing bookkeeping completion retained",
+    "Export/import preserves full assessment record: zr2-zaimu-framework-review-a",
+    "Export/import preserves full assessment record: zr2-zaimu-framework-review-b",
+    "Export/import preserves full assessment record: zr2-zaimu-framework-review-c",
+    "Export/import preserves full assessment record: zr2-zaimu-framework-glossary-assessment",
+    "Backup round trip retains new and existing lesson records",
+    "Search discovers new financial lesson",
+    "Subject page discovers expanded financial unit",
+    "TXT includes actual assessments and fine learning skills",
+    "Reviewed lesson indexable; personal assessment runner excluded",
+    "No overflow light/320//qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+    "No overflow light/320//qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+    "No overflow light/320//qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+    "No overflow light/320//qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+    "No overflow light/768//qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+    "No overflow light/768//qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+    "No overflow light/768//qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+    "No overflow light/768//qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+    "No overflow light/1440//qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+    "No overflow light/1440//qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+    "No overflow light/1440//qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+    "No overflow light/1440//qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+    "No overflow dark/320//qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+    "No overflow dark/320//qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+    "No overflow dark/320//qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+    "No overflow dark/320//qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+    "No overflow dark/768//qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+    "No overflow dark/768//qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+    "No overflow dark/768//qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+    "No overflow dark/768//qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+    "No overflow dark/1440//qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+    "No overflow dark/1440//qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+    "No overflow dark/1440//qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+    "No overflow dark/1440//qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/"
+  ],
+  "layouts": [
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/units/zr2-zaimu-unit-framework/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-zaimu-purpose-regulation/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-zaimu-reporting-obligations/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/",
+      "width": 1440,
+      "document": 1440
+    }
+  ],
+  "scope": "Fresh isolated profile; representative question paths, not every answer combination"
+}

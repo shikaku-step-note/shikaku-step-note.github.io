@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/cash-light-mobile.png"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "path": "/qualifications/zeirishi/zr2-boki-bank-reconciliation/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/cash-light-desktop.png"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/cash-dark-mobile.png"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "path": "/qualifications/zeirishi/zr2-boki-bank-reconciliation/",
+      "violations": [],
+      "screenshot": "output/playwright/zeirishi-upgrade/cash-dark-desktop.png"
+    }
+  ],
+  "scope": "Two actual new/shared pages in both themes; native glossary keyboard toggle; automated A/AA checks are bounded, not WCAG certification"
+}

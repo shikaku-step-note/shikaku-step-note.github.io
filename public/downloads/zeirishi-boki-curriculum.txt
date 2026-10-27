@@ -265,6 +265,190 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-records-glossary-assessment/
     この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
 
+
+  詳しく学ぶ単元 [zr2-boki-unit-cash] 現金預金と金銭債権
+    実査・銀行照合から、手形・電子債権・荷為替・貸倒見積り・複数年DCFへ進む7講。42の独自例題、110の講末問題、41の独立累積問題と34の用語問題で確認します。
+    単元確認日：2026-10-27／本文・例題・理解度確認の合計目安875分（独立テストと再復習は別）
+    URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-boki-unit-cash/
+    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
+    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
+    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
+    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
+    1. [zr2-boki-cash-count] 現金実査・過不足・仮払精算と小口現金の決算／100分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-boki-books-vouchers
+      実演：[cash-e1] 例題1：実際有高と、原因調査前の不足を求める／[cash-e2] 例題2：不足から、原因不明の過剰へ変わる／[cash-e3] 例題3：仮払金の精算と返金を結び付ける／[cash-e4] 例題4：小口現金は、報告と補給の時点を分ける／[cash-stamps] 郵券の振替と、現金過不足の整理を重ねない
+      理解度チェック [zr2-boki-cash-count-check] 13問／版：zeirishi-2026-v2-cash-count-1
+      次：zr2-boki-bank-reconciliation
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-cash-count/
+      [zr2-boki-cash-count-d1] 実査物の帰属と性質から、現金勘定の実際有高を求める
+        独立練習：zr2-boki-cash-count-q1、zr2-boki-cash-count-q2、zr2-boki-cash-count-q12、zr2-boki-cash-count-q13
+      [zr2-boki-cash-count-d2] 仮処理の有無と原因の判明を反映し、現金過不足の最終残高を整理する
+        独立練習：zr2-boki-cash-count-q3、zr2-boki-cash-count-q4、zr2-boki-cash-count-q5、zr2-boki-cash-count-q11、zr2-boki-cash-count-q12、zr2-boki-cash-count-q13
+      [zr2-boki-cash-count-d3] 仮払金の精算と、小口現金の報告・補給を異なる日付で仕訳する
+        独立練習：zr2-boki-cash-count-q6、zr2-boki-cash-count-q7、zr2-boki-cash-count-q8、zr2-boki-cash-count-q9
+      [zr2-boki-cash-count-d4] 郵券の購入と未使用分の振替を分け、二重に現金を修正しない
+        独立練習：zr2-boki-cash-count-q10、zr2-boki-cash-count-q13
+      出典 [ac2-bookkeeping-official] 正規の簿記による帳簿組織の例示：2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf
+      出典 [ac2-cash-boki74] 国税庁：第74回簿記論・現金実査等の出題条件：第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf
+      出典 [ac2-petty-boki73] 国税庁：第73回簿記論・小口現金等の出題条件：第73回簿記論・第三問資料2の1、印刷A15（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf
+      出典 [jcci-cash125] 日本商工会議所：第125回3級・現金実査の公式講評：第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf
+      出典 [jcci-cash142] 日本商工会議所：第142回3級・現金分類の公式講評：第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf
+      出典 [jcci-petty150] 日本商工会議所：第150回3級・小口現金の公式講評：第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf
+      出典 [jcci-petty124] 日本商工会議所：第124回3級・定額資金前渡法の公式講評：第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf
+    2. [zr2-boki-bank-reconciliation] 銀行勘定調整表から修正仕訳と貸越残高を求める／90分の目安
+      学習段階：標準問題から応用へ（独自区分）
+      前提：zr2-boki-cash-count
+      実演：[bank-example-1] 例題1：未取付小切手と時間外預入れを含む調整／[bank-undelivered] 未取付小切手と未渡小切手は、交付の事実で分ける／[bank-example-2] 例題2：会社の誤記と銀行の誤記を同時に処理する／[bank-example-3] 例題3：照合後の残高が貸方になる場合／[bank-reverse] 同じ資料を、残高をつなぐ形式へ組み替える
+      理解度チェック [zr2-boki-bank-reconciliation-check] 15問／版：zeirishi-2026-v2-bank-reconciliation-1
+      次：zr2-boki-bills-receivable
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bank-reconciliation/
+      [zr2-boki-bank-reconciliation-d1] 差額原因を帳簿側・銀行側に分け、双方の修正後残高を計算する
+        独立練習：zr2-boki-bank-reconciliation-q1、zr2-boki-bank-reconciliation-q2、zr2-boki-bank-reconciliation-q6、zr2-boki-bank-reconciliation-q7、zr2-boki-bank-reconciliation-q8、zr2-boki-bank-reconciliation-q10、zr2-boki-bank-reconciliation-q12、zr2-boki-bank-reconciliation-q14
+      [zr2-boki-bank-reconciliation-d2] 未取付小切手と未渡小切手を交付の事実から区別し、必要な修正仕訳を示す
+        独立練習：zr2-boki-bank-reconciliation-q5、zr2-boki-bank-reconciliation-q6、zr2-boki-bank-reconciliation-q8、zr2-boki-bank-reconciliation-q11、zr2-boki-bank-reconciliation-q14
+      [zr2-boki-bank-reconciliation-d3] 会社と銀行の誤記を区別し、正しい仕訳との差額から訂正する
+        独立練習：zr2-boki-bank-reconciliation-q3、zr2-boki-bank-reconciliation-q4
+      [zr2-boki-bank-reconciliation-d4] 貸越を負の残高として照合し、当座借越への決算振替を説明する
+        独立練習：zr2-boki-bank-reconciliation-q9、zr2-boki-bank-reconciliation-q13、zr2-boki-bank-reconciliation-q15
+      出典 [ac2-bank-boki74] 第74回簿記論 銀行照合資料：第三問・資料2・2(2)、印刷A16。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf
+      出典 [ac2-bank-zaimu71] 第71回財務諸表論 銀行照合表：第三問・資料2・1(2)、印刷B11。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf
+      出典 [financial-regulations] e-Gov：財務諸表等規則：49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合。2026年3月31日施行版・2026年4月3日現在／確認2026-10-27
+        https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028
+    3. [zr2-boki-bills-receivable] 手形の裏書・割引・不渡り・更改を記録する／150分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-boki-bank-reconciliation、zr2-boki-accrual-adjustments、zr2-boki-interest-present-value
+      実演：[zr2-boki-bills-receivable-ex1] 例題1：売掛金の回収方法が手形に変わった／[zr2-boki-bills-receivable-ex2] 例題2：資金を借りるために手形を振り出した／[zr2-boki-bills-receivable-ex3] 例題3：日割りの割引料と保証債務を含む仕訳／[zr2-boki-bills-receivable-ex4] 例題4：裏書した手形の額面と買掛金が同額だった／[zr2-boki-bills-receivable-ex5] 例題5：裏書済みの手形を支払い、請求権を取得した／[zr2-boki-bills-receivable-ex6] 例題6：延期利息を先に受け取った／[zr2-boki-bills-receivable-ex7] 例題7：重要な金利部分を含む手形を途中で売却した
+      理解度チェック [zr2-boki-bills-receivable-check] 16問／版：zeirishi-2026-v2-bills-receivable-1
+      次：zr2-boki-receivable-transfers
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bills-receivable/
+      [zr2-boki-bills-receivable-d1] 営業上の手形・金融手形・営業外手形を取引原因と当事者の立場から区別する
+        独立練習：zr2-boki-bills-receivable-q1、zr2-boki-bills-receivable-q2、zr2-boki-bills-receivable-q3、zr2-boki-bills-receivable-q15、zr2-boki-bills-receivable-q16
+      [zr2-boki-bills-receivable-d2] 割引・裏書について消滅、日割割引料、譲渡損益、保証債務と決済を記録する
+        独立練習：zr2-boki-bills-receivable-q3、zr2-boki-bills-receivable-q4、zr2-boki-bills-receivable-q5、zr2-boki-bills-receivable-q6、zr2-boki-bills-receivable-q7、zr2-boki-bills-receivable-q13、zr2-boki-bills-receivable-q14、zr2-boki-bills-receivable-q15、zr2-boki-bills-receivable-q16
+      [zr2-boki-bills-receivable-d3] 不渡り前の保有状態と請求可能な費用を確認し、取得又は残存する請求権と回収見込みを区別する
+        独立練習：zr2-boki-bills-receivable-q8、zr2-boki-bills-receivable-q9、zr2-boki-bills-receivable-q10
+      [zr2-boki-bills-receivable-d4] 更改・利息の期間配分・金利を別処理した手形の帳簿価額を追い、補助簿から期末残高を確定する
+        独立練習：zr2-boki-bills-receivable-q11、zr2-boki-bills-receivable-q12、zr2-boki-bills-receivable-q13、zr2-boki-bills-receivable-q14、zr2-boki-bills-receivable-q15
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+      出典 [ac2-bills-law] e-Gov：手形法・基準日固定版：2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。。2023年6月14日施行版を2026年4月3日現在の公式APIで確認／確認2026-10-27
+        https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053
+      出典 [ac2-accounting-principles] 企業会計審議会：企業会計原則・注解（1982年最終改正）：企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。。1982年4月20日最終改正・注解5の期間配分に限定／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+    4. [zr2-boki-receivable-transfers] 電子記録債権・ファクタリングと支配移転を判断する／150分の目安
+      学習段階：発展（独自区分）
+      前提：zr2-boki-bills-receivable、zr2-boki-books-vouchers
+      実演：[zr2-boki-receivable-transfers-ex1] 例題1：発生記録と決済を、両当事者の帳簿で追う／[zr2-boki-receivable-transfers-ex2] 例題2：電子記録債権の割引と保証債務を記録する／[zr2-boki-receivable-transfers-ex3] 例題3：同じ入金380,000円でも、売却と借入れを区別する／[zr2-boki-receivable-transfers-ex4] 例題4：一部譲渡の原価は、額面の割合と一致するとは限らない／[zr2-boki-receivable-transfers-ex5] 例題5：新たに受け取る別の資産と、保証債務を分ける／[zr2-boki-receivable-transfers-ex6] 例題6：留保した回収サービス権は、残存部分として扱う
+      理解度チェック [zr2-boki-receivable-transfers-check] 17問／版：zeirishi-2026-v2-receivable-transfers-1
+      次：zr2-boki-documentary-bills
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-receivable-transfers/
+      [zr2-boki-receivable-transfers-d1] 営業・金融・営業外の性質と電子記録の段階を読み、発生・譲渡・決済を二重計上せず記録する
+        独立練習：zr2-boki-receivable-transfers-q1、zr2-boki-receivable-transfers-q2、zr2-boki-receivable-transfers-q3、zr2-boki-receivable-transfers-q4、zr2-boki-receivable-transfers-q10、zr2-boki-receivable-transfers-q15
+      [zr2-boki-receivable-transfers-d2] 権利行使・喪失・支配移転と三要件から、譲渡による消滅と担保借入れを区別する
+        独立練習：zr2-boki-receivable-transfers-q6、zr2-boki-receivable-transfers-q7、zr2-boki-receivable-transfers-q8、zr2-boki-receivable-transfers-q9、zr2-boki-receivable-transfers-q10、zr2-boki-receivable-transfers-q15
+      [zr2-boki-receivable-transfers-d3] 新たな保証債務や対価資産を含めて譲渡損益と残る義務を計算する
+        独立練習：zr2-boki-receivable-transfers-q5、zr2-boki-receivable-transfers-q6、zr2-boki-receivable-transfers-q7、zr2-boki-receivable-transfers-q8、zr2-boki-receivable-transfers-q13
+      [zr2-boki-receivable-transfers-d4] 一部譲渡・留保サービス権・新規資産を区別して原価を配分し、通常のサービス資産を所与の残高/件数割合で償却する
+        独立練習：zr2-boki-receivable-transfers-q11、zr2-boki-receivable-transfers-q12、zr2-boki-receivable-transfers-q13、zr2-boki-receivable-transfers-q14、zr2-boki-receivable-transfers-q16、zr2-boki-receivable-transfers-q17
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+      出典 [ac2-electronic-claims] 実務対応報告27 電子記録債権の会計処理及び表示（2009年4月9日）：実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない。実務対応報告第27号・2009年4月9日公表、同日以後適用／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf
+      出典 [ac2-electronic-claims-law] 電子記録債権法（2025年10月1日施行版・2026年4月3日現在）：電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存。2025年10月1日施行版を2026年4月3日現在の公式APIで確認／確認2026-10-27
+        https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053
+      出典 [fsa-factoring-definition] 金融庁 ファクタリングの利用に関する注意喚起（冒頭一般定義のみ）：冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない。2026年10月27日閲覧。名称の一般定義に限定／確認2026-10-27
+        https://www.fsa.go.jp/user/factoring.html
+    5. [zr2-boki-documentary-bills] 為替手形の三つの立場・D/PとD/A・外貨建荷為替／120分の目安
+      学習段階：応用（独自区分）
+      前提：zr2-boki-bills-receivable、zr2-boki-receivable-transfers
+      実演：[zr2-boki-documentary-bills-e1] 例題1：三社の掛残高を、手形の流れへつなぐ／[zr2-boki-documentary-bills-e2] 例題2：自己宛で、支払人も自社になる／[zr2-boki-documentary-bills-e3] 例題3：同じ引受署名でも、書類を渡せるかが違う／[zr2-boki-documentary-bills-e4] 例題4：円建代金の75％を取り組む／[zr2-boki-documentary-bills-e5] 例題5：円転・期末換算・翌期回収をつなぐ
+      理解度チェック [zr2-boki-documentary-bills-check] 17問／版：zeirishi-2026-v2-documentary-bills-1
+      次：zr2-boki-credit-loss-measurement
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-documentary-bills/
+      [zr2-boki-documentary-bills-d1] 三つの立場・引受け・自己指図と自己宛を読み、元の掛債権債務と国内の基本仕訳を対応させる
+        独立練習：zr2-boki-documentary-bills-q1、zr2-boki-documentary-bills-q2、zr2-boki-documentary-bills-q3、zr2-boki-documentary-bills-q4、zr2-boki-documentary-bills-q16、zr2-boki-documentary-bills-q17
+      [zr2-boki-documentary-bills-d2] D/P・D/Aの書類引渡条件、取立委託、銀行買取り、現金回収を区分する
+        独立練習：zr2-boki-documentary-bills-q5、zr2-boki-documentary-bills-q6、zr2-boki-documentary-bills-q7、zr2-boki-documentary-bills-q16
+      [zr2-boki-documentary-bills-d3] 一部取組の額面・手取預金・保証債務・譲渡損益と残る売掛金を計算する
+        独立練習：zr2-boki-documentary-bills-q8、zr2-boki-documentary-bills-q9、zr2-boki-documentary-bills-q10、zr2-boki-documentary-bills-q11、zr2-boki-documentary-bills-q15、zr2-boki-documentary-bills-q17
+      [zr2-boki-documentary-bills-d4] 取組部分と残存部分を分け、発生・買取り・期末・翌期回収の円帳簿と為替差損益をつなぐ
+        独立練習：zr2-boki-documentary-bills-q12、zr2-boki-documentary-bills-q13、zr2-boki-documentary-bills-q14、zr2-boki-documentary-bills-q15、zr2-boki-documentary-bills-q16
+      出典 [ac2-bills-law] e-Gov：手形法・基準日固定版：1・3・9・12・13・21・25・28・38条、基準日保存版の追加原文読解済み。43・47〜49条の遡求等も参照。。2023年6月14日施行版を2026年4月3日現在の公式APIで確認／確認2026-10-27
+        https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053
+      出典 [jcci-bills134] 日本商工会議所：第134回3級 出題の意図・講評：第3問PDF3頁、為替手形の振出・引受・受取の勘定変化。公式出題意図を実読。。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/134-03-kouhyou.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版34・37・43〜45・253項。輸出D/P・D/A手形の銀行買取時の発生消滅、手取・保証、元の負債と二次的責任を区分。。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+      出典 [ac2-documentary-jetro] JETRO：輸出決済方法変更に関するQ&A A-A10833：I-2、2025年7月更新。D/P支払渡しとD/A引受渡し、銀行の支払確約との区分。。調査2017年1月、更新2025年7月。書類交換の条件の参照／確認2026-10-27
+        https://www.jetro.go.jp/world/qa/04A-A10833.html
+      出典 [foreign-currency] ASBJ：外貨建取引等会計処理基準：1999年10月22日最終改正、一1・一2(1)①②・一2(2)・一3。発生、決済、残存外貨建金銭債権の換算。。1999年10月22日最終改正の基準本体。画面更新日と区別／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=80
+    6. [zr2-boki-credit-loss-measurement] 債権区分から貸倒見積高と引当金繰入額を計算する／100分の目安
+      学習段階：標準問題から応用へ（独自区分）
+      前提：zr2-boki-receivable-transfers
+      実演：[credit-classification] 補足例題：三社の状態から、区分と方法を選ぶ／[credit-example-1] 例題1：一般債権の必要残高と差額補充／[credit-example-2] 例題2：担保と保証の回収額を控除して、残る危険を測る／[credit-example-3] 例題3：破産更生債権等は、回収できない残りを全額見積もる／[credit-example-4] 例題4：将来の元利金を、回収時期に応じて割り引く／[credit-rate-window] 貸倒実績率の分母と、観察する期間をそろえる／[credit-mixed] 区分別に見積もってから、引当金全体を整える／[credit-unreceived-interest] 補足例題：当期の未収利息を取り消してから、元本を評価する
+      理解度チェック [zr2-boki-credit-loss-measurement-check] 16問／版：zeirishi-2026-v2-credit-loss-measurement-1
+      次：zr2-boki-bad-debt-dcf
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-credit-loss-measurement/
+      [zr2-boki-credit-loss-measurement-d1] 債務者の状態に応じて一般・貸倒懸念・破産更生債権等を区分し、算定方法を選ぶ
+        独立練習：zr2-boki-credit-loss-measurement-q1、zr2-boki-credit-loss-measurement-q5、zr2-boki-credit-loss-measurement-q11、zr2-boki-credit-loss-measurement-q15
+      [zr2-boki-credit-loss-measurement-d2] 実績率又は担保・保証と返済能力の見積りから必要な貸倒引当金残高を求める
+        独立練習：zr2-boki-credit-loss-measurement-q2、zr2-boki-credit-loss-measurement-q4、zr2-boki-credit-loss-measurement-q5、zr2-boki-credit-loss-measurement-q10
+      [zr2-boki-credit-loss-measurement-d3] 将来の元利金を回収時期と指定割引率に応じて割り引き、貸倒見積高を求める
+        独立練習：zr2-boki-credit-loss-measurement-q6、zr2-boki-credit-loss-measurement-q7、zr2-boki-credit-loss-measurement-q8
+      [zr2-boki-credit-loss-measurement-d4] 取崩しを反映した整理前残高から繰入れ・戻入れを求め、未収利息の修正条件を説明する
+        独立練習：zr2-boki-credit-loss-measurement-q3、zr2-boki-credit-loss-measurement-q9、zr2-boki-credit-loss-measurement-q12、zr2-boki-credit-loss-measurement-q16
+      [zr2-boki-credit-loss-measurement-d5] 同じ債権を追跡した実績率を算定し、期間平均と現在の信用リスクを確認する
+        独立練習：zr2-boki-credit-loss-measurement-q13、zr2-boki-credit-loss-measurement-q14、zr2-boki-credit-loss-measurement-q15
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：移管指針9・2025年3月11日版110〜115項、119項。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+    7. [zr2-boki-bad-debt-dcf] 貸倒DCFの回収・時間経過・見積変更を連続して計算する／165分の目安
+      学習段階：発展（独自区分）
+      前提：zr2-boki-credit-loss-measurement、zr2-boki-interest-present-value
+      実演：[zr2-boki-bad-debt-dcf-ex1] 例題1：元本全額を回収できても、延期による引当てが生じる／[zr2-boki-bad-debt-dcf-ex2] 例題2：利率を引き下げた貸付金の3年間／[zr2-boki-bad-debt-dcf-ex3] 例題3：二回に分けて元本を回収する／[zr2-boki-bad-debt-dcf-ex4] 例題4：時間経過の収益と、回収額の減少が同時に生じた／[zr2-boki-bad-debt-dcf-ex5] 例題5：各回収額ごとの丸めと、合計後の丸め／[zr2-boki-bad-debt-dcf-ex6] 例題6：担保からの回収を二度控除しない
+      理解度チェック [zr2-boki-bad-debt-dcf-check] 16問／版：zeirishi-2026-v2-bad-debt-dcf-1
+      次：zr2-boki-cash-core-review-a
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bad-debt-dcf/
+      [zr2-boki-bad-debt-dcf-d1] 評価日・回収日・元利区分と当初の率を確定し、現在価値・期末必要引当・追加繰入を区別する
+        独立練習：zr2-boki-bad-debt-dcf-q1、zr2-boki-bad-debt-dcf-q2、zr2-boki-bad-debt-dcf-q3、zr2-boki-bad-debt-dcf-q4、zr2-boki-bad-debt-dcf-q11、zr2-boki-bad-debt-dcf-q12、zr2-boki-bad-debt-dcf-q13、zr2-boki-bad-debt-dcf-q15
+      [zr2-boki-bad-debt-dcf-d2] 回収見積り不変の場合の時間経過、現金利息と元本回収を複数年度の残高へつなげる
+        独立練習：zr2-boki-bad-debt-dcf-q4、zr2-boki-bad-debt-dcf-q5、zr2-boki-bad-debt-dcf-q6、zr2-boki-bad-debt-dcf-q7、zr2-boki-bad-debt-dcf-q8、zr2-boki-bad-debt-dcf-q12、zr2-boki-bad-debt-dcf-q16
+      [zr2-boki-bad-debt-dcf-d3] 回収額・時期の変更と端数指定を反映し、時間経過の利息と見積変更による損益を分ける
+        独立練習：zr2-boki-bad-debt-dcf-q3、zr2-boki-bad-debt-dcf-q9、zr2-boki-bad-debt-dcf-q10、zr2-boki-bad-debt-dcf-q11、zr2-boki-bad-debt-dcf-q16
+      [zr2-boki-bad-debt-dcf-d4] 原則と許容される表示、財務内容評価法との境界、担保保証の二重計上と未収利息の注意を説明する
+        独立練習：zr2-boki-bad-debt-dcf-q7、zr2-boki-bad-debt-dcf-q13、zr2-boki-bad-debt-dcf-q14
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+    [zr2-boki-cash-core-review-a] 現金預金と金銭債権：基幹6講復習A／15問／版：zeirishi-2026-v2-boki-cash-core-review-a-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-cash-core-review-a/
+    [zr2-boki-cash-core-review-b] 現金預金と金銭債権：基幹6講復習B／15問／版：zeirishi-2026-v2-boki-cash-core-review-b-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-cash-core-review-b/
+    [zr2-boki-documentary-review-c] 現金預金と金銭債権：現金・債権単元の追加演習C：荷為替／11問／版：zeirishi-2026-v2-boki-documentary-review-c-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/
+    [zr2-boki-cash-core-glossary-assessment] 現金・債権の用語を事例で使い分ける26問／26問／版：zeirishi-2026-v2-boki-cash-core-glossary-assessment-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-cash-core-glossary-assessment/
+    [zr2-boki-documentary-glossary-assessment] 荷為替の用語を事例で使い分ける8問／8問／版：zeirishi-2026-v2-boki-documentary-glossary-assessment-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-documentary-glossary-assessment/
+    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
+
   2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
 
 入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。

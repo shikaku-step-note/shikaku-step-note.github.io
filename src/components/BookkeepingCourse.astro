@@ -82,7 +82,7 @@ const tests = bokiAssessments(lessons).filter((a) => a.kind !== 'lesson');
                         <span data-status-label={l.data.stableId}>未学習</span>
                       </div>
                     </div>
-                    <button
+                    <button disabled aria-busy="true"
                       class="star-button"
                       data-bookmark={l.data.stableId}
                       aria-pressed="false"

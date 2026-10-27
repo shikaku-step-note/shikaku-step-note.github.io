@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "Native disabled/busy while catalog and records initialize: [data-start]",
+    "Native disabled/busy while catalog and records initialize: [data-bookmark]",
+    "Native disabled/busy while catalog and records initialize: [data-complete]",
+    "Controls enable only after storage and handlers are ready",
+    "Completion acknowledged as saved survives reload"
+  ],
+  "scope": "Fresh isolated profile, intentionally delayed search catalog; no actual learner records touched"
+}

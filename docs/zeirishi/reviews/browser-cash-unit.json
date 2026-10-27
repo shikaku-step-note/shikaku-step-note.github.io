@@ -1,0 +1,197 @@
+{
+  "status": "passed",
+  "checks": [
+    "Cash unit starts independently at 0/7",
+    "Unit glossary contains actual lesson definitions",
+    "Opening definitions does not create a test result",
+    "Unit teaches transfer prerequisites before documentary bills",
+    "New stable completion survives reload",
+    "New bookmark survives reload",
+    "Continue points to bank reconciliation",
+    "Uncalibrated unit review has no invented time limit",
+    "Discount/guarantee answer and cursor survive reload",
+    "Review flag survives reload",
+    "B retains 15 questions and its 50-point scale",
+    "Numeric result saved under original stable question ID",
+    "C retains all 11 questions and 58-point scale",
+    "Eight-element written self-review survives reload",
+    "Separate glossary history: zr2-boki-cash-core-glossary-assessment",
+    "Separate glossary history: zr2-boki-documentary-glossary-assessment",
+    "Pre-existing lesson completion preserved",
+    "Search discovers documentary bills",
+    "Subject page discovers new unit",
+    "Subject metadata describes actual expanded materials",
+    "TXT includes actual new tests and fine skills",
+    "Reviewed lesson and noindex runner have distinct sitemap handling",
+    "No horizontal overflow light/320//qualifications/zeirishi/units/zr2-boki-unit-cash/",
+    "No horizontal overflow light/320//qualifications/zeirishi/zr2-boki-cash-count/",
+    "No horizontal overflow light/320//qualifications/zeirishi/zr2-boki-documentary-bills/",
+    "No horizontal overflow light/320//qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+    "No horizontal overflow light/768//qualifications/zeirishi/units/zr2-boki-unit-cash/",
+    "No horizontal overflow light/768//qualifications/zeirishi/zr2-boki-cash-count/",
+    "No horizontal overflow light/768//qualifications/zeirishi/zr2-boki-documentary-bills/",
+    "No horizontal overflow light/768//qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+    "No horizontal overflow light/1440//qualifications/zeirishi/units/zr2-boki-unit-cash/",
+    "No horizontal overflow light/1440//qualifications/zeirishi/zr2-boki-cash-count/",
+    "No horizontal overflow light/1440//qualifications/zeirishi/zr2-boki-documentary-bills/",
+    "No horizontal overflow light/1440//qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+    "No horizontal overflow dark/320//qualifications/zeirishi/units/zr2-boki-unit-cash/",
+    "No horizontal overflow dark/320//qualifications/zeirishi/zr2-boki-cash-count/",
+    "No horizontal overflow dark/320//qualifications/zeirishi/zr2-boki-documentary-bills/",
+    "No horizontal overflow dark/320//qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+    "No horizontal overflow dark/768//qualifications/zeirishi/units/zr2-boki-unit-cash/",
+    "No horizontal overflow dark/768//qualifications/zeirishi/zr2-boki-cash-count/",
+    "No horizontal overflow dark/768//qualifications/zeirishi/zr2-boki-documentary-bills/",
+    "No horizontal overflow dark/768//qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+    "No horizontal overflow dark/1440//qualifications/zeirishi/units/zr2-boki-unit-cash/",
+    "No horizontal overflow dark/1440//qualifications/zeirishi/zr2-boki-cash-count/",
+    "No horizontal overflow dark/1440//qualifications/zeirishi/zr2-boki-documentary-bills/",
+    "No horizontal overflow dark/1440//qualifications/zeirishi/tests/zr2-boki-documentary-review-c/"
+  ],
+  "layouts": [
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-boki-cash-count/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-boki-documentary-bills/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-boki-cash-count/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-boki-documentary-bills/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-boki-cash-count/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/zr2-boki-documentary-bills/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "light",
+      "path": "/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-boki-cash-count/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-boki-documentary-bills/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+      "width": 320,
+      "document": 320
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-boki-cash-count/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-boki-documentary-bills/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+      "width": 768,
+      "document": 768
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/units/zr2-boki-unit-cash/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-boki-cash-count/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/zr2-boki-documentary-bills/",
+      "width": 1440,
+      "document": 1440
+    },
+    {
+      "theme": "dark",
+      "path": "/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/",
+      "width": 1440,
+      "document": 1440
+    }
+  ]
+}

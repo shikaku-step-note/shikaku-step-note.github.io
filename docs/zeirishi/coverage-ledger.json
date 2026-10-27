@@ -3,14 +3,14 @@
   "scope": {
     "subjects": 11,
     "units": 113,
-    "lessons": 588,
-    "objectives": 1187,
+    "lessons": 592,
+    "objectives": 1201,
     "fullMockBlueprints": 22
   },
-  "implementedLessons": 23,
-  "fullyReviewedLessons": 23,
-  "fullyReviewedObjectives": 47,
-  "fullyReviewedTeachingSkills": 72,
+  "implementedLessons": 39,
+  "fullyReviewedLessons": 39,
+  "fullyReviewedObjectives": 83,
+  "fullyReviewedTeachingSkills": 144,
   "reviewedFullMocks": 0,
   "errors": [],
   "lessons": [
@@ -711,323 +711,736 @@
       "id": "zr2-boki-cash-count",
       "subject": "boki",
       "unit": "zr2-boki-unit-cash",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-boki-cash-count-o1",
           "text": "実査物の現金該当性と所有を判断する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-cash-count-o2",
           "text": "仮払・郵券・過不足を整理する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-boki-cash-count-d1",
+          "text": "実査物の帰属と性質から、現金勘定の実際有高を求める",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-cash-count-d2",
+          "text": "仮処理の有無と原因の判明を反映し、現金過不足の最終残高を整理する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-cash-count-d3",
+          "text": "仮払金の精算と、小口現金の報告・補給を異なる日付で仕訳する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-cash-count-d4",
+          "text": "郵券の購入と未使用分の振替を分け、二重に現金を修正しない",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-boki-bank-reconciliation",
       "subject": "boki",
       "unit": "zr2-boki-unit-cash",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-boki-bank-reconciliation-o1",
           "text": "未取付未渡未取立未通知と誤記を双方に分類する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-bank-reconciliation-o2",
           "text": "4照合形式・必要仕訳・銀行別借越表示を整える",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-boki-bank-reconciliation-d1",
+          "text": "差額原因を帳簿側・銀行側に分け、双方の修正後残高を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-bank-reconciliation-d2",
+          "text": "未取付小切手と未渡小切手を交付の事実から区別し、必要な修正仕訳を示す",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-bank-reconciliation-d3",
+          "text": "会社と銀行の誤記を区別し、正しい仕訳との差額から訂正する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-bank-reconciliation-d4",
+          "text": "貸越を負の残高として照合し、当座借越への決算振替を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-boki-bills-receivable",
       "subject": "boki",
       "unit": "zr2-boki-unit-cash",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-boki-bills-receivable-o1",
           "text": "営業と金融手形を区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-bills-receivable-o2",
           "text": "裏書割引不渡り更改で資金と債権債務を追跡する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
-    },
-    {
-      "id": "zr2-boki-documentary-bills",
-      "subject": "boki",
-      "unit": "zr2-boki-unit-cash",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
-      "objectives": [
+      "detailedObjectives": [
         {
-          "id": "zr2-boki-documentary-bills-o1",
-          "text": "為替手形の振出人・支払人・受取人の立場と原債権債務を特定し、引受・裏書・取立てを記録する",
+          "id": "zr2-boki-bills-receivable-d1",
+          "text": "営業上の手形・金融手形・営業外手形を取引原因と当事者の立場から区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
-          "id": "zr2-boki-documentary-bills-o2",
-          "text": "荷為替の取組額、銀行手取額、留保する掛代金を区分して、消滅と保証責任を確認する",
+          "id": "zr2-boki-bills-receivable-d2",
+          "text": "割引・裏書について消滅、日割割引料、譲渡損益、保証債務と決済を記録する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
-          "id": "zr2-boki-documentary-bills-o3",
-          "text": "外貨建て荷為替の取組・割引料・円貨入金と残る外貨売掛金の期末換算を統合する",
+          "id": "zr2-boki-bills-receivable-d3",
+          "text": "不渡り前の保有状態と請求可能な費用を確認し、取得又は残存する請求権と回収見込みを区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-bills-receivable-d4",
+          "text": "更改・利息の期間配分・金利を別処理した手形の帳簿価額を追い、補助簿から期末残高を確定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
         }
-      ],
-      "detailedObjectives": []
+      ]
     },
     {
       "id": "zr2-boki-receivable-transfers",
       "subject": "boki",
       "unit": "zr2-boki-unit-cash",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-boki-receivable-transfers-o1",
           "text": "電子記録債権の発生譲渡決済を記録する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-receivable-transfers-o2",
           "text": "譲渡と担保借入を支配移転条件で区分する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-receivable-transfers-o3",
           "text": "消滅に伴う保証債務・新たな対価資産を区分して譲渡損益を求める",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-receivable-transfers-o4",
-          "text": "一部譲渡・留保回収サービス権の原価配分と残存帳簿価額を求める",
+          "text": "一部譲渡・留保回収サービス権の原価配分と残存簿価を求め、通常のサービス資産を所与の残高/件数割合で償却する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-boki-receivable-transfers-d1",
+          "text": "営業・金融・営業外の性質と電子記録の段階を読み、発生・譲渡・決済を二重計上せず記録する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-receivable-transfers-d2",
+          "text": "権利行使・喪失・支配移転と三要件から、譲渡による消滅と担保借入れを区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-receivable-transfers-d3",
+          "text": "新たな保証債務や対価資産を含めて譲渡損益と残る義務を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-receivable-transfers-d4",
+          "text": "一部譲渡・留保サービス権・新規資産を区別して原価を配分し、通常のサービス資産を所与の残高/件数割合で償却する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-documentary-bills",
+      "subject": "boki",
+      "unit": "zr2-boki-unit-cash",
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
+      "objectives": [
+        {
+          "id": "zr2-boki-documentary-bills-o1",
+          "text": "為替手形の振出人・支払人・受取人の立場と原債権債務を特定し、引受・裏書・取立てを記録する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-documentary-bills-o2",
+          "text": "荷為替の取組額、銀行手取額、留保する掛代金を区分して、消滅と保証責任を確認する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-documentary-bills-o3",
+          "text": "外貨建て荷為替の取組・割引料・円貨入金と残る外貨売掛金の期末換算を統合する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ],
+      "detailedObjectives": [
+        {
+          "id": "zr2-boki-documentary-bills-d1",
+          "text": "三つの立場・引受け・自己指図と自己宛を読み、元の掛債権債務と国内の基本仕訳を対応させる",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-documentary-bills-d2",
+          "text": "D/P・D/Aの書類引渡条件、取立委託、銀行買取り、現金回収を区分する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-documentary-bills-d3",
+          "text": "一部取組の額面・手取預金・保証債務・譲渡損益と残る売掛金を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-documentary-bills-d4",
+          "text": "取組部分と残存部分を分け、発生・買取り・期末・翌期回収の円帳簿と為替差損益をつなぐ",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-boki-credit-loss-measurement",
       "subject": "boki",
       "unit": "zr2-boki-unit-cash",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-boki-credit-loss-measurement-o1",
           "text": "一般貸倒懸念破産更生を判定する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-credit-loss-measurement-o2",
           "text": "率の分母期間・担保保証・既存引当を反映して繰入額を求める",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-boki-credit-loss-measurement-d1",
+          "text": "債務者の状態に応じて一般・貸倒懸念・破産更生債権等を区分し、算定方法を選ぶ",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-credit-loss-measurement-d2",
+          "text": "実績率又は担保・保証と返済能力の見積りから必要な貸倒引当金残高を求める",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-credit-loss-measurement-d3",
+          "text": "将来の元利金を回収時期と指定割引率に応じて割り引き、貸倒見積高を求める",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-credit-loss-measurement-d4",
+          "text": "取崩しを反映した整理前残高から繰入れ・戻入れを求め、未収利息の修正条件を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-credit-loss-measurement-d5",
+          "text": "同じ債権を追跡した実績率を算定し、期間平均と現在の信用リスクを確認する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-boki-bad-debt-dcf",
       "subject": "boki",
       "unit": "zr2-boki-unit-cash",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-boki-bad-debt-dcf-o1",
           "text": "当初約定利率と回収見込から必要引当を求める",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-boki-bad-debt-dcf-o2",
           "text": "翌期の割引差額・回収・条件変更を処理する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-boki-bad-debt-dcf-d1",
+          "text": "評価日・回収日・元利区分と当初の率を確定し、現在価値・期末必要引当・追加繰入を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-bad-debt-dcf-d2",
+          "text": "回収見積り不変の場合の時間経過、現金利息と元本回収を複数年度の残高へつなげる",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-bad-debt-dcf-d3",
+          "text": "回収額・時期の変更と端数指定を反映し、時間経過の利息と見積変更による損益を分ける",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-boki-bad-debt-dcf-d4",
+          "text": "原則と許容される表示、財務内容評価法との境界、担保保証の二重計上と未収利息の注意を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-boki-sales-purchases",
@@ -1159,6 +1572,20 @@
             "japaneseReview": false
           },
           "complete": false
+        },
+        {
+          "id": "zr2-boki-inventory-cost-flow-o3",
+          "text": "複数商品の購入代価修正について、所与の単価・配分根拠から商品別と販売済/残存の原価を修正する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
         }
       ],
       "detailedObjectives": []
@@ -1189,6 +1616,20 @@
         {
           "id": "zr2-boki-inventory-cutoff-o2",
           "text": "仕切書遅延と未着仕入を調整する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-inventory-cutoff-o3",
+          "text": "国内通常期間の出荷代替処理を適用条件と方針から判断し、早期・遅延の期間帰属誤りを残高と複数期で修正する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -1389,6 +1830,60 @@
         {
           "id": "zr2-boki-revenue-over-time-o2",
           "text": "見積変更契約変更損失と残高を複数年処理する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-boki-supplied-materials",
+      "subject": "boki",
+      "unit": "zr2-boki-unit-inventory",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-boki-supplied-materials-o1",
+          "text": "有償支給と通常販売・委託を区分し、買戻義務の有無から支給時の収益と資産消滅を判断する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-supplied-materials-o2",
+          "text": "個別財務諸表の代替処理を指定条件で区分し、支給品・加工品の原価と差額を継続照合する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-supplied-materials-o3",
+          "text": "支給・加工・期末残高・買戻の複数段階を所与の測定条件で仕訳し、二重売上と二重原価を発見する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -2094,7 +2589,7 @@
       "objectives": [
         {
           "id": "zr2-boki-loans-derecognition-o1",
-          "text": "割引貸付条件変更の元利を計算する",
+          "text": "割引貸付・利息組込更改・不規則な元利支払と条件変更について、所与の認識測定条件に従い元本・利息・帳簿残高を計算する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -2122,7 +2617,89 @@
         },
         {
           "id": "zr2-boki-loans-derecognition-o3",
-          "text": "回収サービス資産負債と残存部分を区別し、対価・原価配分・残高又は件数に比例した償却を計算する",
+          "text": "回収サービスの通常収益超過/不足から資産又は負債を区分し、初期配分・残高又は件数比例償却・著しい価値変動を処理する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-loans-derecognition-o4",
+          "text": "消滅に伴う保証債務の合理的な損益配分と損失可能性上昇時の引当、保証履行・取得回収権の残高を区分する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-boki-impaired-claims-recovery",
+      "subject": "boki",
+      "unit": "zr2-boki-unit-finance",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-boki-impaired-claims-recovery-o1",
+          "text": "未収利息の不計上要件と既計上額の当期/前期分を区分し、原則処理・条件付き簡便法の仕訳を作る",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-impaired-claims-recovery-o2",
+          "text": "不計上後の実際の入金について契約上明確な利息部分と元本部分を判定し、入金後の債権残高を照合する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-impaired-claims-recovery-o3",
+          "text": "一般債権への区分・原契約の延滞解消・実質回復、及び契約変更後の例外条件から未収利息の再計上可否を判断する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-impaired-claims-recovery-o4",
+          "text": "直接減額時の前期引当金取崩しと不足損失、減額後に残存簿価を超える回収、期末の不要引当と繰入額の表示を処理する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -3381,375 +3958,986 @@
       "id": "zr2-zaimu-purpose-regulation",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-purpose-regulation-o1",
           "text": "投資意思決定受託責任利害調整を説明する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-purpose-regulation-o2",
           "text": "会社法と金商法の書類利用者規範を分ける",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-purpose-regulation-f01",
+          "text": "投資判断に必要な情報を、成果と資源・負担の両方から説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-purpose-regulation-f02",
+          "text": "作成・利用・監査の役割と、受託責任・利害調整の着眼点を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-purpose-regulation-f03",
+          "text": "会社法と金融商品取引法について、書類と手続の適用範囲を与件から判断する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-purpose-regulation-f04",
+          "text": "法令・個別基準・概念フレームワークの位置付けを区別して理由を記述する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-reporting-obligations",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-reporting-obligations-o1",
           "text": "会社の機関設計等の指定条件から、計算書類等の作成・監査・承認・公告の手続と適用範囲を法令参照で判断する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-reporting-obligations-o2",
           "text": "金融商品取引法24条の提出対象・適用除外・期限を、会社や提出書類の条件を指定した資料から判断する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-reporting-obligations-o3",
           "text": "会社法と金商法、単体と連結の書類の構成を照合し、連結範囲の計算と報告義務の判断を区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-reporting-obligations-f01",
+          "text": "公開会社・上場・大会社を区別し、境界額と不足する情報から会社の属性を判断する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-reporting-obligations-f02",
+          "text": "帳簿・計算書類・事業報告を区別し、監査・承認・提供・総会の手順と保存起算を対応させる",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-reporting-obligations-f03",
+          "text": "総会の承認を報告へ代える特則について、会計監査人の有無と複数の要件を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-reporting-obligations-f04",
+          "text": "公告の対象書類と条件付きの代替・適用除外を判断し、作成義務と混同しない",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-reporting-obligations-f05",
+          "text": "有価証券報告書の対象・原則期間・監査証明を、会社法上の手続と分けて説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-qualitative-characteristics",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-qualitative-characteristics-o1",
           "text": "情報特性の関係を説明する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-qualitative-characteristics-o2",
           "text": "比較可能性と画一性を反例に当てはめ区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-qualitative-characteristics-f01",
+          "text": "有用性・関連性・信頼性と、それを支える特性の関係を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-qualitative-characteristics-f02",
+          "text": "見積りの根拠や偏りを、事例の具体的な事実から評価する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-qualitative-characteristics-f03",
+          "text": "実質の同異を確認し、比較可能性と画一的な処理を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-qualitative-characteristics-f04",
+          "text": "基準体系の内的整合性と、期間を通じた手続の継続を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-elements",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-elements-o1",
           "text": "構成要素を資源義務から説明する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-elements-o2",
           "text": "純利益包括利益所有者取引を関係式で区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-elements-f01",
+          "text": "過去の取引・資源の支配・義務から構成要素を検討し、認識や測定と区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-elements-f02",
+          "text": "資産負債差額と内訳を照合し、残高・期間変動・所有者取引を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-elements-f03",
+          "text": "当期純利益・その他の包括利益・組替え・累計残高を複数期間で照合する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-elements-f04",
+          "text": "連結の全体額と親会社株主・非支配株主への帰属額を整合させる",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-general-principles",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-general-principles-o1",
           "text": "一般原則と注解を事例に適用する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-general-principles-o2",
           "text": "重要性継続性保守主義の限界と個別基準の関係を説明する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-general-principles-f01",
+          "text": "真実性・正規の簿記・資本損益の区別を取引と帳簿の事実へ当てはめる",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-general-principles-f02",
+          "text": "明瞭性と総額表示から、利益が同じでも情報が異なる理由を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-general-principles-f03",
+          "text": "継続性・保守主義の趣旨と限界を、変更理由・見積り条件から判断する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-general-principles-f04",
+          "text": "単一性と重要性を、目的別調整・集積額・項目の性質へ当てはめる",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-recognition-measurement",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-recognition-measurement-o1",
           "text": "発生実現対応と資産負債を関連づける",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-recognition-measurement-o2",
           "text": "原価時価現価と資本維持損益の違いを説明する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-recognition-measurement-f01",
+          "text": "認識と測定、定義と計上条件を分け、未履行・前払・引渡しを仕訳へ表す",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-recognition-measurement-f02",
+          "text": "現金の受払と履行を分け、収益と契約負債の期間帰属を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-recognition-measurement-f03",
+          "text": "費用収益の対応と期末資産の根拠を、売上原価とサービス費用で説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-recognition-measurement-f04",
+          "text": "未配分原価・入口出口の価格・正味売却額を目的から選び、混合測定を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-recognition-measurement-f05",
+          "text": "将来額・期間・更新する率を示して現在価値を計算し、測定目的の差を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-recognition-measurement-f06",
+          "text": "所有者取引を除き、名目額・購買力・補充能力の維持による成果の差を求める",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-policy-changes",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-policy-changes-o1",
           "text": "分類と遡及適用等を選ぶ",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-policy-changes-o2",
           "text": "比較情報期首剰余金将来損益への影響を説明計算する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-policy-changes-f01",
+          "text": "当時の情報と変更対象から、会計方針・表示方法・見積り・誤謬を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-policy-changes-f02",
+          "text": "方針変更の正当な理由と経過措置を確認し、期首累積差と各期損益を遡及計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-policy-changes-f03",
+          "text": "表示方法の組替えを行い、段階利益の変化と合計不変を照合する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-policy-changes-f04",
+          "text": "合理的な見積りの更新と償却方法の変更について、当期以降の配分を求める",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-policy-changes-f05",
+          "text": "過去の誤謬を修正再表示し、在庫差の翌期への反転と期間利益を照合する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-policy-changes-f06",
+          "text": "実務上不可能な場合の分岐と、変更・未適用基準について必要な説明を選ぶ",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-estimate-disclosure",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-estimate-disclosure-o1",
           "text": "翌年度の重要な影響リスクから対象を選ぶ",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-estimate-disclosure-o2",
           "text": "計上額方法仮定不確実性の注記を組み立てる",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-estimate-disclosure-f01",
+          "text": "翌年度の重要な影響のリスクから対象項目を識別し、残高・有利不利・市場価格変動を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-estimate-disclosure-f02",
+          "text": "計上額と方法・主要な仮定を、企業固有の事実と計算資料に結び付けて説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-estimate-disclosure-f03",
+          "text": "仮定を動かした感応度を計算し、単独変更と同時変更の差を説明する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-estimate-disclosure-f04",
+          "text": "個別基準による認識測定と注記の識別を分け、当期損失ゼロでも必要な説明を判断する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-estimate-disclosure-f05",
+          "text": "別注記・連結の参照と個別額を区別し、必要情報を残して重複を避ける",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-theory-writing",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-framework",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-zaimu-theory-writing-o1",
           "text": "条件対象時点要求語を抽出する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-zaimu-theory-writing-o2",
           "text": "規範理由事例帰結を設問の要求範囲で結ぶ",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-zaimu-theory-writing-f01",
+          "text": "設問の対象・要求動作・条件・出力を読み分け、要求の欠落を特定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-theory-writing-f02",
+          "text": "必要な規範と与件の事実を対応させ、分類・処理・理由を一つの答案へつなぐ",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-theory-writing-f03",
+          "text": "期間・比較方向・項目・単位を明らかにし、数値と因果関係を検算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-theory-writing-f04",
+          "text": "必要条件の不足と不充足、法令基準日と個別基準の適用時期を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-zaimu-theory-writing-f05",
+          "text": "明示された学習用採点項目を実際の記述へ対応させ、誤答原因と再学習を選ぶ",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-zaimu-cash-presentation",
@@ -10148,7 +11336,7 @@
         },
         {
           "id": "zr2-hojin-contract-progress-o02",
-          "text": "初期/価格未確定/期中該当/再編の特例を複数期で計算する",
+          "text": "初期/価格未確定/期中該当/再編と債権/損失の特例を複数期で計算する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -10509,6 +11697,46 @@
         {
           "id": "zr2-hojin-forex-derivatives-o02",
           "text": "期末評価と繰延損益の要件を計算する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-hojin-construction-tax-accounting",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-revenue",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-construction-tax-accounting-o01",
+          "text": "税込/税抜経理等の原典から10億円判定用対価と境界を根拠付きで確定する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-construction-tax-accounting-o02",
+          "text": "法人税の強制/任意進行と消費税17条の選択/申告/中断/引渡精算を複数期で対応する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -20865,6 +22093,46 @@
         {
           "id": "zr2-kokuzei-additional-tax-selection-o2",
           "text": "累積増差・複数年無申告・反復・不提示等による加重と重加算税への置換額を計算する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-kokuzei-evasion-penalties",
+      "subject": "kokuzei",
+      "unit": "zr2-kokuzei-unit-integrated",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-kokuzei-evasion-penalties-o1",
+          "text": "滞納処分免脱の目的・行為・行為者別責任・国外犯の条件を187・190条から判定する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-kokuzei-evasion-penalties-o2",
+          "text": "188・189条及び刑法95条と行政の協力要請・捜索・公売の事実を区分し、法定刑と両罰の範囲を示す",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,

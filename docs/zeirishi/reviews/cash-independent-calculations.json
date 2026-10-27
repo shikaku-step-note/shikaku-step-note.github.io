@@ -1,0 +1,1979 @@
+{
+  "date": "2026-10-27",
+  "reviewer": "root independent of accounting_source_review authorship for other4 and banks; first3-reviewed subset separately retained",
+  "checks": 488,
+  "questionsStructurallyChecked": 141,
+  "results": [
+    {
+      "check": "bills-receivable example1 receipt",
+      "result": "540000"
+    },
+    {
+      "check": "bills-receivable example1 settlement",
+      "result": "540000"
+    },
+    {
+      "check": "bills-receivable example1 additionalSales",
+      "result": "0"
+    },
+    {
+      "check": "bills-receivable example2 deposit",
+      "result": "1200000"
+    },
+    {
+      "check": "bills-receivable example2 loan",
+      "result": "1200000"
+    },
+    {
+      "check": "bills-receivable example2 tradeNotesPayable",
+      "result": "0"
+    },
+    {
+      "check": "bills-receivable example3 discount",
+      "result": "2959"
+    },
+    {
+      "check": "bills-receivable example3 deposit",
+      "result": "597041"
+    },
+    {
+      "check": "bills-receivable example3 guarantee",
+      "result": "4000"
+    },
+    {
+      "check": "bills-receivable example3 consideration",
+      "result": "593041"
+    },
+    {
+      "check": "bills-receivable example3 loss",
+      "result": "6959"
+    },
+    {
+      "check": "bills-receivable example3 journalBoth",
+      "result": "604000"
+    },
+    {
+      "check": "bills-receivable example4 tradeDebt",
+      "result": "420000"
+    },
+    {
+      "check": "bills-receivable example4 guarantee",
+      "result": "4200"
+    },
+    {
+      "check": "bills-receivable example4 loss",
+      "result": "4200"
+    },
+    {
+      "check": "bills-receivable example4 journalBoth",
+      "result": "424200"
+    },
+    {
+      "check": "bills-receivable example5 claim",
+      "result": "352000"
+    },
+    {
+      "check": "bills-receivable example5 afterCollection",
+      "result": "252000"
+    },
+    {
+      "check": "bills-receivable example6 interestReceived",
+      "result": "4800"
+    },
+    {
+      "check": "bills-receivable example6 interestCurrent",
+      "result": "1600"
+    },
+    {
+      "check": "bills-receivable example6 deferredInterest",
+      "result": "3200"
+    },
+    {
+      "check": "bills-receivable example6 principal",
+      "result": "480000"
+    },
+    {
+      "check": "bills-receivable example7 interest",
+      "result": "50000"
+    },
+    {
+      "check": "bills-receivable example7 book",
+      "result": "550000"
+    },
+    {
+      "check": "bills-receivable example7 consideration",
+      "result": "574000"
+    },
+    {
+      "check": "bills-receivable example7 gain",
+      "result": "24000"
+    },
+    {
+      "check": "bills-receivable example7 journalBoth",
+      "result": "580000"
+    },
+    {
+      "check": "bills-receivable q3 independently calculated accepted answer",
+      "result": "['600000']"
+    },
+    {
+      "check": "bills-receivable q4 independently calculated accepted answer",
+      "result": "['726400']"
+    },
+    {
+      "check": "bills-receivable q5 independently calculated accepted answer",
+      "result": "['13000']"
+    },
+    {
+      "check": "bills-receivable q9 independently calculated accepted answer",
+      "result": "['173000']"
+    },
+    {
+      "check": "bills-receivable q11 independently calculated accepted answer",
+      "result": "['4500']"
+    },
+    {
+      "check": "bills q8 dishonoured claim",
+      "result": "181500"
+    },
+    {
+      "check": "bills q13 effective-interest carrying",
+      "result": "880000.0"
+    },
+    {
+      "check": "bills q13 transfer gain",
+      "result": "32000"
+    },
+    {
+      "check": "bills q16 sale loss",
+      "result": "20000"
+    },
+    {
+      "check": "receivable-transfers example1 reclassified",
+      "result": "900000"
+    },
+    {
+      "check": "receivable-transfers example1 settlement",
+      "result": "900000"
+    },
+    {
+      "check": "receivable-transfers example1 newSales",
+      "result": "0"
+    },
+    {
+      "check": "receivable-transfers example2 cash",
+      "result": "636000"
+    },
+    {
+      "check": "receivable-transfers example2 guarantee",
+      "result": "5000"
+    },
+    {
+      "check": "receivable-transfers example2 consideration",
+      "result": "631000"
+    },
+    {
+      "check": "receivable-transfers example2 loss",
+      "result": "19000"
+    },
+    {
+      "check": "receivable-transfers example2 journalBoth",
+      "result": "655000"
+    },
+    {
+      "check": "receivable-transfers example3 saleAssets",
+      "result": "380000"
+    },
+    {
+      "check": "receivable-transfers example3 saleLoss",
+      "result": "20000"
+    },
+    {
+      "check": "receivable-transfers example3 borrowingAssets",
+      "result": "780000"
+    },
+    {
+      "check": "receivable-transfers example3 borrowingLiability",
+      "result": "380000"
+    },
+    {
+      "check": "receivable-transfers example3 borrowingProfit",
+      "result": "0"
+    },
+    {
+      "check": "receivable-transfers example4 transferredCost",
+      "result": "675000"
+    },
+    {
+      "check": "receivable-transfers example4 retainedBook",
+      "result": "225000"
+    },
+    {
+      "check": "receivable-transfers example4 loss",
+      "result": "75000"
+    },
+    {
+      "check": "receivable-transfers example4 wrongFaceAllocation",
+      "result": "630000"
+    },
+    {
+      "check": "receivable-transfers example5 consideration",
+      "result": "479000"
+    },
+    {
+      "check": "receivable-transfers example5 newSecurity",
+      "result": "12000"
+    },
+    {
+      "check": "receivable-transfers example5 guarantee",
+      "result": "8000"
+    },
+    {
+      "check": "receivable-transfers example5 loss",
+      "result": "21000"
+    },
+    {
+      "check": "receivable-transfers example5 journalBoth",
+      "result": "508000"
+    },
+    {
+      "check": "receivable-transfers example6 transferredCost",
+      "result": "810000"
+    },
+    {
+      "check": "receivable-transfers example6 retainedServiceBook",
+      "result": "90000"
+    },
+    {
+      "check": "receivable-transfers example6 gain",
+      "result": "70000"
+    },
+    {
+      "check": "receivable-transfers example6 journalBoth",
+      "result": "970000"
+    },
+    {
+      "check": "receivable-transfers q2 independently calculated accepted answer",
+      "result": "['340000']"
+    },
+    {
+      "check": "receivable-transfers q5 independently calculated accepted answer",
+      "result": "['26000']"
+    },
+    {
+      "check": "receivable-transfers q7 independently calculated accepted answer",
+      "result": "['20000']"
+    },
+    {
+      "check": "receivable-transfers q11 independently calculated accepted answer",
+      "result": "['100000']"
+    },
+    {
+      "check": "receivable-transfers q12 independently calculated accepted answer",
+      "result": "['280000']"
+    },
+    {
+      "check": "transfer q13 journal both",
+      "result": "730000"
+    },
+    {
+      "check": "transfer q14 retained service cost",
+      "result": "54000"
+    },
+    {
+      "check": "transfer q15 residual composition",
+      "result": "350000"
+    },
+    {
+      "check": "transfer q16 service-route loss",
+      "result": "18000"
+    },
+    {
+      "check": "transfer q16 new-asset-route loss",
+      "result": "20000"
+    },
+    {
+      "check": "bad-debt-dcf example1 initialPV",
+      "result": "1000000"
+    },
+    {
+      "check": "bad-debt-dcf example1 initialAllowance",
+      "result": "210000"
+    },
+    {
+      "check": "bad-debt-dcf example1 year1PV",
+      "result": "1100000"
+    },
+    {
+      "check": "bad-debt-dcf example1 year1Allowance",
+      "result": "110000"
+    },
+    {
+      "check": "bad-debt-dcf example1 year1Interest",
+      "result": "100000"
+    },
+    {
+      "check": "bad-debt-dcf example1 year2Interest",
+      "result": "110000"
+    },
+    {
+      "check": "bad-debt-dcf example1 finalPrincipal",
+      "result": "1210000"
+    },
+    {
+      "check": "bad-debt-dcf example2 initialPV",
+      "result": "1165500"
+    },
+    {
+      "check": "bad-debt-dcf example2 initialAllowance",
+      "result": "165500"
+    },
+    {
+      "check": "bad-debt-dcf example2 year1Interest",
+      "result": "116550"
+    },
+    {
+      "check": "bad-debt-dcf example2 year1CashInterest",
+      "result": "66550"
+    },
+    {
+      "check": "bad-debt-dcf example2 year1Release",
+      "result": "50000"
+    },
+    {
+      "check": "bad-debt-dcf example2 year1Allowance",
+      "result": "115500"
+    },
+    {
+      "check": "bad-debt-dcf example2 year1Net",
+      "result": "1215500"
+    },
+    {
+      "check": "bad-debt-dcf example2 year2Interest",
+      "result": "121550"
+    },
+    {
+      "check": "bad-debt-dcf example2 year2Release",
+      "result": "55000"
+    },
+    {
+      "check": "bad-debt-dcf example2 year3Interest",
+      "result": "127050"
+    },
+    {
+      "check": "bad-debt-dcf example2 year3Release",
+      "result": "60500"
+    },
+    {
+      "check": "bad-debt-dcf example3 initialPV",
+      "result": "1200000"
+    },
+    {
+      "check": "bad-debt-dcf example3 initialAllowance",
+      "result": "186000"
+    },
+    {
+      "check": "bad-debt-dcf example3 year1Interest",
+      "result": "120000"
+    },
+    {
+      "check": "bad-debt-dcf example3 cashPrincipal",
+      "result": "660000"
+    },
+    {
+      "check": "bad-debt-dcf example3 remainingGross",
+      "result": "726000"
+    },
+    {
+      "check": "bad-debt-dcf example3 remainingAllowance",
+      "result": "66000"
+    },
+    {
+      "check": "bad-debt-dcf example3 remainingNet",
+      "result": "660000"
+    },
+    {
+      "check": "bad-debt-dcf example3 year2Interest",
+      "result": "66000"
+    },
+    {
+      "check": "bad-debt-dcf example4 oldYear1Net",
+      "result": "1100000"
+    },
+    {
+      "check": "bad-debt-dcf example4 timeInterest",
+      "result": "100000"
+    },
+    {
+      "check": "bad-debt-dcf example4 beforeRemeasureAllowance",
+      "result": "110000"
+    },
+    {
+      "check": "bad-debt-dcf example4 newPV",
+      "result": "1000000"
+    },
+    {
+      "check": "bad-debt-dcf example4 newAllowance",
+      "result": "210000"
+    },
+    {
+      "check": "bad-debt-dcf example4 additionalExpense",
+      "result": "100000"
+    },
+    {
+      "check": "bad-debt-dcf example4 netProfitEffect",
+      "result": "0"
+    },
+    {
+      "check": "bad-debt-dcf example5 rounded1",
+      "result": "94340"
+    },
+    {
+      "check": "bad-debt-dcf example5 rounded2",
+      "result": "800997"
+    },
+    {
+      "check": "bad-debt-dcf example5 sumPV",
+      "result": "895337"
+    },
+    {
+      "check": "bad-debt-dcf example5 allowance",
+      "result": "104663"
+    },
+    {
+      "check": "bad-debt-dcf example5 alternativeSumPV",
+      "result": "895336"
+    },
+    {
+      "check": "bad-debt-dcf example6 financialContentAllowance",
+      "result": "280000"
+    },
+    {
+      "check": "bad-debt-dcf example6 dcfPV",
+      "result": "700000"
+    },
+    {
+      "check": "bad-debt-dcf example6 dcfAllowance",
+      "result": "300000"
+    },
+    {
+      "check": "bad-debt-dcf q2 independently calculated accepted answer",
+      "result": "['420000']"
+    },
+    {
+      "check": "bad-debt-dcf q3 independently calculated accepted answer",
+      "result": "['320000']"
+    },
+    {
+      "check": "bad-debt-dcf q6 independently calculated accepted answer",
+      "result": "['20000']"
+    },
+    {
+      "check": "bad-debt-dcf q9 independently calculated accepted answer",
+      "result": "['220000']"
+    },
+    {
+      "check": "bad-debt-dcf q11 independently calculated accepted answer",
+      "result": "['73264']"
+    },
+    {
+      "check": "DCF q8 net after principal",
+      "result": "792000"
+    },
+    {
+      "check": "DCF q10 time versus revised loss",
+      "result": "(100000, 100000)"
+    },
+    {
+      "check": "DCF q16 revised allowance",
+      "result": "176000"
+    },
+    {
+      "check": "DCF q16 net PL",
+      "result": "10000"
+    },
+    {
+      "check": "documentary-bills example1 drawerRemainingAR",
+      "result": "120000"
+    },
+    {
+      "check": "documentary-bills example1 drawerRemainingAP",
+      "result": "0"
+    },
+    {
+      "check": "documentary-bills example1 bill",
+      "result": "420000"
+    },
+    {
+      "check": "documentary-bills example1 drawerCashChange",
+      "result": "0"
+    },
+    {
+      "check": "documentary-bills example2 notesPayable",
+      "result": "320000"
+    },
+    {
+      "check": "documentary-bills example2 originalAPRemaining",
+      "result": "0"
+    },
+    {
+      "check": "documentary-bills example3 DPPaymentConditionSatisfied",
+      "result": "False"
+    },
+    {
+      "check": "documentary-bills example3 DAAcceptanceConditionSatisfied",
+      "result": "True"
+    },
+    {
+      "check": "documentary-bills example3 exporterCashReceipt",
+      "result": "0"
+    },
+    {
+      "check": "documentary-bills example3 bankPurchase",
+      "result": "False"
+    },
+    {
+      "check": "documentary-bills example4 faceTransferred",
+      "result": "675000"
+    },
+    {
+      "check": "documentary-bills example4 cash",
+      "result": "670500"
+    },
+    {
+      "check": "documentary-bills example4 consideration",
+      "result": "664000"
+    },
+    {
+      "check": "documentary-bills example4 loss",
+      "result": "11000"
+    },
+    {
+      "check": "documentary-bills example4 guarantee",
+      "result": "6500"
+    },
+    {
+      "check": "documentary-bills example4 remainingAR",
+      "result": "225000"
+    },
+    {
+      "check": "documentary-bills example4 journalEachSide",
+      "result": "681500"
+    },
+    {
+      "check": "documentary-bills example5 usdTransferred",
+      "result": "8000"
+    },
+    {
+      "check": "documentary-bills example5 historicTransferred",
+      "result": "1120000"
+    },
+    {
+      "check": "documentary-bills example5 currentTranslated",
+      "result": "1144000"
+    },
+    {
+      "check": "documentary-bills example5 transactionFXGain",
+      "result": "24000"
+    },
+    {
+      "check": "documentary-bills example5 cash",
+      "result": "1138000"
+    },
+    {
+      "check": "documentary-bills example5 consideration",
+      "result": "1129000"
+    },
+    {
+      "check": "documentary-bills example5 transferLoss",
+      "result": "15000"
+    },
+    {
+      "check": "documentary-bills example5 guaranteeJPY",
+      "result": "9000"
+    },
+    {
+      "check": "documentary-bills example5 remainingUSD",
+      "result": "2000"
+    },
+    {
+      "check": "documentary-bills example5 remainingHistoricJPY",
+      "result": "280000"
+    },
+    {
+      "check": "documentary-bills example5 closingAR",
+      "result": "290000"
+    },
+    {
+      "check": "documentary-bills example5 closingFXGain",
+      "result": "10000"
+    },
+    {
+      "check": "documentary-bills example5 totalPAndL",
+      "result": "19000"
+    },
+    {
+      "check": "documentary-bills example5 netAssetsCheck",
+      "result": "1419000"
+    },
+    {
+      "check": "documentary-bills example5 nextYearCash",
+      "result": "294000"
+    },
+    {
+      "check": "documentary-bills example5 nextYearFXGain",
+      "result": "4000"
+    },
+    {
+      "check": "documentary-bills q8 independently calculated accepted answer",
+      "result": "['500800']"
+    },
+    {
+      "check": "documentary-bills q9 independently calculated accepted answer",
+      "result": "['13000']"
+    },
+    {
+      "check": "documentary-bills q12 independently calculated accepted answer",
+      "result": "['18000']"
+    },
+    {
+      "check": "documentary q15 FX and transfer separate",
+      "result": "15000"
+    },
+    {
+      "check": "documentary q15 closing net",
+      "result": "1671000"
+    },
+    {
+      "check": "cash-core-review q8 independently calculated accepted answer",
+      "result": "['91000']"
+    },
+    {
+      "check": "cash-core-review q12 independently calculated accepted answer",
+      "result": "['9608']"
+    },
+    {
+      "check": "cash-core-review q15 independently calculated accepted answer",
+      "result": "['16000']"
+    },
+    {
+      "check": "cash-core-review q18 independently calculated accepted answer",
+      "result": "['7000']"
+    },
+    {
+      "check": "cash-core-review q22 independently calculated accepted answer",
+      "result": "['600000']"
+    },
+    {
+      "check": "cash-core-review q24 independently calculated accepted answer",
+      "result": "['210000']"
+    },
+    {
+      "check": "cash-core-review q27 independently calculated accepted answer",
+      "result": "['1155000']"
+    },
+    {
+      "check": "core q2 unknown shortage",
+      "result": "4200"
+    },
+    {
+      "check": "core q3 imprest remaining",
+      "result": "48800"
+    },
+    {
+      "check": "core q4 stamps consumption",
+      "result": "21000"
+    },
+    {
+      "check": "core q6 book side",
+      "result": "310000"
+    },
+    {
+      "check": "core q6 bank side",
+      "result": "310000"
+    },
+    {
+      "check": "core q9 supplied data inconsistent",
+      "result": "-20000"
+    },
+    {
+      "check": "core q10 reverse book",
+      "result": "195000"
+    },
+    {
+      "check": "core q10 reverse bank",
+      "result": "216000"
+    },
+    {
+      "check": "core q11 total reclassification",
+      "result": "250000"
+    },
+    {
+      "check": "core q13 remaining recourse",
+      "result": "201500"
+    },
+    {
+      "check": "core q14 prepaid interest",
+      "result": "12000"
+    },
+    {
+      "check": "core q16 outstanding and cash",
+      "result": "390000"
+    },
+    {
+      "check": "core q19 implied residual FV",
+      "result": "360000"
+    },
+    {
+      "check": "core q20 service amortization",
+      "result": "(20000, 60000)"
+    },
+    {
+      "check": "core q21 reverse interest then principal valuation",
+      "result": "370000"
+    },
+    {
+      "check": "core q23 PV",
+      "result": "1000000"
+    },
+    {
+      "check": "core q25 equal period rates",
+      "result": "0.09"
+    },
+    {
+      "check": "core q26 initial PV",
+      "result": "1200000"
+    },
+    {
+      "check": "core q28 net loss",
+      "result": "-50000"
+    },
+    {
+      "check": "core q29 required",
+      "result": "115130"
+    },
+    {
+      "check": "core q29 additional",
+      "result": "15130"
+    },
+    {
+      "check": "core q30 reliable valuation",
+      "result": "250000"
+    },
+    {
+      "check": "documentary-review q5 independently calculated accepted answer",
+      "result": "['10000']"
+    },
+    {
+      "check": "documentary-review q9 independently calculated accepted answer",
+      "result": "['136']"
+    },
+    {
+      "check": "doc review q1 residual",
+      "result": "190000"
+    },
+    {
+      "check": "doc review q6 journal",
+      "result": "(607000, 607000)"
+    },
+    {
+      "check": "doc review q7 available residual",
+      "result": "6000"
+    },
+    {
+      "check": "doc review q8 PL",
+      "result": "-62800"
+    },
+    {
+      "check": "doc review q8 balance",
+      "result": "2049200"
+    },
+    {
+      "check": "doc review q10 PL",
+      "result": "12000"
+    },
+    {
+      "check": "doc review q10 net",
+      "result": "2000000"
+    },
+    {
+      "check": "service worked continuation amortization",
+      "result": "36000"
+    },
+    {
+      "check": "service newq17 remaining",
+      "result": "35000"
+    },
+    {
+      "check": "documentary endorsement worked both sides",
+      "result": "424000"
+    },
+    {
+      "check": "documentary newq17 remainingAP",
+      "result": "80000"
+    },
+    {
+      "check": "documentary newq17 journal balance",
+      "result": "313500"
+    },
+    {
+      "check": "documentary new cumulative11 journal balance",
+      "result": "608000"
+    },
+    {
+      "check": "documentary new16 correct closing claim",
+      "result": "792000"
+    },
+    {
+      "check": "documentary new16 currentFX",
+      "result": "-18000"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q1 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q2 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q3 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q4 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q5 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q6 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q7 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q8 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q9 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q9 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q10 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q10 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q11 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q11 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q12 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q12 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q13 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q13 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q14 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q14 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q15 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q15 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q16 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bills-receivable-q16 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q1 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q2 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q3 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q4 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q5 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q6 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q7 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q8 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q9 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q9 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q10 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q10 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q11 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q11 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q12 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q12 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q13 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q13 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q14 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q14 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q15 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q15 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q16 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q16 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q17 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-receivable-transfers-q17 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q1 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q2 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q3 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q4 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q5 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q6 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q7 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q8 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q9 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q9 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q10 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q10 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q11 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q11 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q12 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q12 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q13 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q13 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q14 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q14 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q15 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q15 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q16 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q16 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q17 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-bills-q17 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q1 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q2 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q3 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q4 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q5 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q6 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q7 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q8 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q9 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q9 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q10 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q10 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q11 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q11 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q12 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q12 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q13 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q13 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q14 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q14 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q15 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q15 rubric sums",
+      "result": "5"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q16 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-bad-debt-dcf-q16 rubric sums",
+      "result": "7"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q1 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q2 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q3 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q4 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q5 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q6 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q7 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q8 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q9 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q9 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q10 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q10 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q11 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q11 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q12 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q12 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q13 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q13 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q14 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q14 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q15 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q15 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q16 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q16 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q17 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q17 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q18 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q18 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q19 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q19 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q20 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q20 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q21 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q21 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q22 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q22 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q23 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q23 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q24 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q24 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q25 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q25 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q26 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q26 rubric sums",
+      "result": "4"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q27 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q27 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q28 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q28 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q29 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q29 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q30 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-review-q30 rubric sums",
+      "result": "3"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q1 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q2 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q3 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q4 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q5 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q6 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q7 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q8 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q9 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q9 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q10 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q10 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q11 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q11 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q12 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q12 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q13 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q13 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q14 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q14 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q15 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q15 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q16 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q16 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q17 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q17 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q18 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q18 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q19 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q19 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q20 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q20 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q21 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q21 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q22 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q22 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q23 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q23 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q24 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q24 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q25 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q25 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q26 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-cash-core-glossary-q26 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q1 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q2 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q3 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q4 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q5 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q6 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q7 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q8 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q9 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q9 unambiguous accepted numeric",
+      "result": "1"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q10 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q10 rubric sums",
+      "result": "6"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q11 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-review-q11 rubric sums",
+      "result": "8"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q1 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q1 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q2 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q2 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q3 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q3 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q4 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q4 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q5 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q5 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q6 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q6 rubric sums",
+      "result": "2"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q7 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q7 choice key in range",
+      "result": "True"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q8 distinct normalized prompt",
+      "result": "False"
+    },
+    {
+      "check": "zr2-boki-documentary-glossary-assessment-q8 rubric sums",
+      "result": "2"
+    }
+  ],
+  "normalizedLFHashes": {
+    "zr2-boki-bills-receivable.json": "16f53d671beeb7caec32b0a112096ea75877f168f2130bf49fd9c2cac33d6a98",
+    "zr2-boki-bills-receivable.md": "d271beafa7f6e3e81d1ab522d77a38666f20944b347613ff3cc59b703d3bb332",
+    "zr2-boki-receivable-transfers.json": "5cb0e2eca25bcf12d19db836202fa5181e7b5e7a8e1f3ccd2a4f2e8b70c909fd",
+    "zr2-boki-receivable-transfers.md": "d530d9e8be72dde12ca046f1b27e8d11824b0367f9739ed71f9771c64e52fd35",
+    "zr2-boki-documentary-bills.json": "b5edaf9a157593a8f6bbc7d3d9621fd0c7a2b2dcff0aec3a3b0c5c6ec90973d4",
+    "zr2-boki-documentary-bills.md": "7a973eb7cdd43e4eab862f7e413c96ce8c41b7d643d8c855cce9f833b72f0be5",
+    "zr2-boki-bad-debt-dcf.json": "2bd4e0463e15481be9b3c0cb232aafa0a2eba1d3a4a1840866bdd1ab6818ccbd",
+    "zr2-boki-bad-debt-dcf.md": "bd729b02e9b567bae188f419569cdc01a552ccbf116dea074466c73fcaa7673b",
+    "zr2-boki-cash-core-review.json": "353edd600970535e31465b588b4f8b8b44bc71e853b2cbe95b9369fddc3f5b79",
+    "zr2-boki-cash-core-review.md": "7f35510defab32e526f9414da80ca3a869e9b0b1b074c89a32ebd68efd127682",
+    "zr2-boki-cash-core-glossary-assessment.json": "453353800c71a58d99156b95ed99ceee69d21965cb621360c339295fcbd1cffb",
+    "zr2-boki-cash-core-glossary-assessment.md": "a03c4cdd1666d88f54c040cd8fdf051381f0286a4b8b02028679b954e367374a",
+    "zr2-boki-documentary-review.json": "0a13a22db3cdb41b37b2db17f34d55f8d3aa54296d9c6f3b8fa65408f03aa4b6",
+    "zr2-boki-documentary-review.md": "779ff77e5db06caad62ecb1f1fb40e12d32577326b8b170073f6d0f9ded66b8f",
+    "zr2-boki-documentary-glossary-assessment.json": "ce1e912242d278de183198ab55258bfc567b45bba2c1dad9590d7b7cb3a9ceca",
+    "zr2-boki-documentary-glossary-assessment.md": "4a74faf60c0955421b88668d9bd9291781117071fe97876be549fcd6e60e5942"
+  },
+  "status": "calculation and structural checks passed; full source and Japanese reading recorded separately; no claim of professional review"
+}

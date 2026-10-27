@@ -1,0 +1,319 @@
+{
+  "checkedOn": "2026-10-27",
+  "basis": "2026-04-03",
+  "sources": [
+    {
+      "id": "ac2-bookkeeping-official",
+      "title": "正規の簿記による帳簿組織の例示",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+      "locator": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-cash-count",
+          "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない"
+        }
+      ]
+    },
+    {
+      "id": "ac2-cash-boki74",
+      "title": "国税庁：第74回簿記論・現金実査等の出題条件",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+      "locator": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-cash-count",
+          "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない"
+        }
+      ]
+    },
+    {
+      "id": "ac2-petty-boki73",
+      "title": "国税庁：第73回簿記論・小口現金等の出題条件",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+      "locator": "第73回簿記論・第三問資料2の1、印刷A15（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-cash-count",
+          "location": "第73回簿記論・第三問資料2の1、印刷A15（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない"
+        }
+      ]
+    },
+    {
+      "id": "jcci-cash125",
+      "title": "日本商工会議所：第125回3級・現金実査の公式講評",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+      "locator": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-cash-count",
+          "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない"
+        }
+      ]
+    },
+    {
+      "id": "jcci-cash142",
+      "title": "日本商工会議所：第142回3級・現金分類の公式講評",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+      "locator": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-cash-count",
+          "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明"
+        }
+      ]
+    },
+    {
+      "id": "jcci-petty150",
+      "title": "日本商工会議所：第150回3級・小口現金の公式講評",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+      "locator": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-cash-count",
+          "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図"
+        }
+      ]
+    },
+    {
+      "id": "jcci-petty124",
+      "title": "日本商工会議所：第124回3級・定額資金前渡法の公式講評",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+      "locator": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-cash-count",
+          "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明"
+        }
+      ]
+    },
+    {
+      "id": "ac2-bank-boki74",
+      "title": "第74回簿記論 銀行照合資料",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+      "locator": "第三問・資料2・2(2)、印刷A16",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-bank-reconciliation",
+          "location": "第三問・資料2・2(2)、印刷A16"
+        }
+      ]
+    },
+    {
+      "id": "ac2-bank-zaimu71",
+      "title": "第71回財務諸表論 銀行照合表",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+      "locator": "第三問・資料2・1(2)、印刷B11",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-bank-reconciliation",
+          "location": "第三問・資料2・1(2)、印刷B11"
+        }
+      ]
+    },
+    {
+      "id": "financial-regulations",
+      "title": "e-Gov：財務諸表等規則",
+      "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+      "locator": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合",
+      "version": "2026年3月31日施行版・2026年4月3日現在",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-bank-reconciliation",
+          "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合"
+        }
+      ]
+    },
+    {
+      "id": "asbj-finance",
+      "title": "企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+      "locator": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。",
+      "version": "2019年7月4日版。2026年4月3日より後の改正を混在させない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-bills-receivable",
+          "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。"
+        },
+        {
+          "lessonId": "zr2-boki-receivable-transfers",
+          "location": "2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない"
+        },
+        {
+          "lessonId": "zr2-boki-credit-loss-measurement",
+          "location": "第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認"
+        },
+        {
+          "lessonId": "zr2-boki-bad-debt-dcf",
+          "location": "2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。"
+        }
+      ]
+    },
+    {
+      "id": "ac2-finance-guide",
+      "title": "企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+      "locator": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。",
+      "version": "移管指針第9号・2025年3月11日版",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-bills-receivable",
+          "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。"
+        },
+        {
+          "lessonId": "zr2-boki-receivable-transfers",
+          "location": "2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理"
+        },
+        {
+          "lessonId": "zr2-boki-documentary-bills",
+          "location": "2025年3月11日版34・37・43〜45・253項。輸出D/P・D/A手形の銀行買取時の発生消滅、手取・保証、元の負債と二次的責任を区分。"
+        },
+        {
+          "lessonId": "zr2-boki-credit-loss-measurement",
+          "location": "移管指針9・2025年3月11日版110〜115項、119項"
+        },
+        {
+          "lessonId": "zr2-boki-bad-debt-dcf",
+          "location": "2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。"
+        }
+      ]
+    },
+    {
+      "id": "ac2-bills-law",
+      "title": "e-Gov：手形法・基準日固定版",
+      "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+      "locator": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。",
+      "version": "2023年6月14日施行版を2026年4月3日現在の公式APIで確認",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-bills-receivable",
+          "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。"
+        },
+        {
+          "lessonId": "zr2-boki-documentary-bills",
+          "location": "1・3・9・12・13・21・25・28・38条、基準日保存版の追加原文読解済み。43・47〜49条の遡求等も参照。"
+        }
+      ]
+    },
+    {
+      "id": "ac2-accounting-principles",
+      "title": "企業会計審議会：企業会計原則・注解（1982年最終改正）",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "locator": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。",
+      "version": "1982年4月20日最終改正・注解5の期間配分に限定",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-bills-receivable",
+          "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。"
+        }
+      ]
+    },
+    {
+      "id": "ac2-electronic-claims",
+      "title": "実務対応報告27 電子記録債権の会計処理及び表示（2009年4月9日）",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+      "locator": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない",
+      "version": "実務対応報告第27号・2009年4月9日公表、同日以後適用",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-receivable-transfers",
+          "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+        }
+      ]
+    },
+    {
+      "id": "ac2-electronic-claims-law",
+      "title": "電子記録債権法（2025年10月1日施行版・2026年4月3日現在）",
+      "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+      "locator": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存",
+      "version": "2025年10月1日施行版を2026年4月3日現在の公式APIで確認",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-receivable-transfers",
+          "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+        }
+      ]
+    },
+    {
+      "id": "fsa-factoring-definition",
+      "title": "金融庁 ファクタリングの利用に関する注意喚起（冒頭一般定義のみ）",
+      "url": "https://www.fsa.go.jp/user/factoring.html",
+      "locator": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない",
+      "version": "2026年10月27日閲覧。名称の一般定義に限定",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-receivable-transfers",
+          "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
+        }
+      ]
+    },
+    {
+      "id": "jcci-bills134",
+      "title": "日本商工会議所：第134回3級 出題の意図・講評",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/134-03-kouhyou.pdf",
+      "locator": "第3問PDF3頁、為替手形の振出・引受・受取の勘定変化。公式出題意図を実読。",
+      "version": "過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-documentary-bills",
+          "location": "第3問PDF3頁、為替手形の振出・引受・受取の勘定変化。公式出題意図を実読。"
+        }
+      ]
+    },
+    {
+      "id": "ac2-documentary-jetro",
+      "title": "JETRO：輸出決済方法変更に関するQ&A A-A10833",
+      "url": "https://www.jetro.go.jp/world/qa/04A-A10833.html",
+      "locator": "I-2、2025年7月更新。D/P支払渡しとD/A引受渡し、銀行の支払確約との区分。",
+      "version": "調査2017年1月、更新2025年7月。書類交換の条件の参照",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-documentary-bills",
+          "location": "I-2、2025年7月更新。D/P支払渡しとD/A引受渡し、銀行の支払確約との区分。"
+        }
+      ]
+    },
+    {
+      "id": "foreign-currency",
+      "title": "ASBJ：外貨建取引等会計処理基準",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=80",
+      "locator": "1999年10月22日最終改正、一1・一2(1)①②・一2(2)・一3。発生、決済、残存外貨建金銭債権の換算。",
+      "version": "1999年10月22日最終改正の基準本体。画面更新日と区別",
+      "verified": "2026-10-27",
+      "locators": [
+        {
+          "lessonId": "zr2-boki-documentary-bills",
+          "location": "1999年10月22日最終改正、一1・一2(1)①②・一2(2)・一3。発生、決済、残存外貨建金銭債権の換算。"
+        }
+      ]
+    }
+  ],
+  "note": "本文と設問の独立照合範囲は別レビュー記録。過去問は技能・形式の参照であり公式解答を転載しない。"
+}

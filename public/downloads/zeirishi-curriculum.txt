@@ -265,6 +265,190 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-records-glossary-assessment/
     この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
 
+
+  詳しく学ぶ単元 [zr2-boki-unit-cash] 現金預金と金銭債権
+    実査・銀行照合から、手形・電子債権・荷為替・貸倒見積り・複数年DCFへ進む7講。42の独自例題、110の講末問題、41の独立累積問題と34の用語問題で確認します。
+    単元確認日：2026-10-27／本文・例題・理解度確認の合計目安875分（独立テストと再復習は別）
+    URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-boki-unit-cash/
+    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
+    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
+    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
+    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
+    1. [zr2-boki-cash-count] 現金実査・過不足・仮払精算と小口現金の決算／100分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-boki-books-vouchers
+      実演：[cash-e1] 例題1：実際有高と、原因調査前の不足を求める／[cash-e2] 例題2：不足から、原因不明の過剰へ変わる／[cash-e3] 例題3：仮払金の精算と返金を結び付ける／[cash-e4] 例題4：小口現金は、報告と補給の時点を分ける／[cash-stamps] 郵券の振替と、現金過不足の整理を重ねない
+      理解度チェック [zr2-boki-cash-count-check] 13問／版：zeirishi-2026-v2-cash-count-1
+      次：zr2-boki-bank-reconciliation
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-cash-count/
+      [zr2-boki-cash-count-d1] 実査物の帰属と性質から、現金勘定の実際有高を求める
+        独立練習：zr2-boki-cash-count-q1、zr2-boki-cash-count-q2、zr2-boki-cash-count-q12、zr2-boki-cash-count-q13
+      [zr2-boki-cash-count-d2] 仮処理の有無と原因の判明を反映し、現金過不足の最終残高を整理する
+        独立練習：zr2-boki-cash-count-q3、zr2-boki-cash-count-q4、zr2-boki-cash-count-q5、zr2-boki-cash-count-q11、zr2-boki-cash-count-q12、zr2-boki-cash-count-q13
+      [zr2-boki-cash-count-d3] 仮払金の精算と、小口現金の報告・補給を異なる日付で仕訳する
+        独立練習：zr2-boki-cash-count-q6、zr2-boki-cash-count-q7、zr2-boki-cash-count-q8、zr2-boki-cash-count-q9
+      [zr2-boki-cash-count-d4] 郵券の購入と未使用分の振替を分け、二重に現金を修正しない
+        独立練習：zr2-boki-cash-count-q10、zr2-boki-cash-count-q13
+      出典 [ac2-bookkeeping-official] 正規の簿記による帳簿組織の例示：2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf
+      出典 [ac2-cash-boki74] 国税庁：第74回簿記論・現金実査等の出題条件：第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf
+      出典 [ac2-petty-boki73] 国税庁：第73回簿記論・小口現金等の出題条件：第73回簿記論・第三問資料2の1、印刷A15（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf
+      出典 [jcci-cash125] 日本商工会議所：第125回3級・現金実査の公式講評：第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf
+      出典 [jcci-cash142] 日本商工会議所：第142回3級・現金分類の公式講評：第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf
+      出典 [jcci-petty150] 日本商工会議所：第150回3級・小口現金の公式講評：第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf
+      出典 [jcci-petty124] 日本商工会議所：第124回3級・定額資金前渡法の公式講評：第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf
+    2. [zr2-boki-bank-reconciliation] 銀行勘定調整表から修正仕訳と貸越残高を求める／90分の目安
+      学習段階：標準問題から応用へ（独自区分）
+      前提：zr2-boki-cash-count
+      実演：[bank-example-1] 例題1：未取付小切手と時間外預入れを含む調整／[bank-undelivered] 未取付小切手と未渡小切手は、交付の事実で分ける／[bank-example-2] 例題2：会社の誤記と銀行の誤記を同時に処理する／[bank-example-3] 例題3：照合後の残高が貸方になる場合／[bank-reverse] 同じ資料を、残高をつなぐ形式へ組み替える
+      理解度チェック [zr2-boki-bank-reconciliation-check] 15問／版：zeirishi-2026-v2-bank-reconciliation-1
+      次：zr2-boki-bills-receivable
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bank-reconciliation/
+      [zr2-boki-bank-reconciliation-d1] 差額原因を帳簿側・銀行側に分け、双方の修正後残高を計算する
+        独立練習：zr2-boki-bank-reconciliation-q1、zr2-boki-bank-reconciliation-q2、zr2-boki-bank-reconciliation-q6、zr2-boki-bank-reconciliation-q7、zr2-boki-bank-reconciliation-q8、zr2-boki-bank-reconciliation-q10、zr2-boki-bank-reconciliation-q12、zr2-boki-bank-reconciliation-q14
+      [zr2-boki-bank-reconciliation-d2] 未取付小切手と未渡小切手を交付の事実から区別し、必要な修正仕訳を示す
+        独立練習：zr2-boki-bank-reconciliation-q5、zr2-boki-bank-reconciliation-q6、zr2-boki-bank-reconciliation-q8、zr2-boki-bank-reconciliation-q11、zr2-boki-bank-reconciliation-q14
+      [zr2-boki-bank-reconciliation-d3] 会社と銀行の誤記を区別し、正しい仕訳との差額から訂正する
+        独立練習：zr2-boki-bank-reconciliation-q3、zr2-boki-bank-reconciliation-q4
+      [zr2-boki-bank-reconciliation-d4] 貸越を負の残高として照合し、当座借越への決算振替を説明する
+        独立練習：zr2-boki-bank-reconciliation-q9、zr2-boki-bank-reconciliation-q13、zr2-boki-bank-reconciliation-q15
+      出典 [ac2-bank-boki74] 第74回簿記論 銀行照合資料：第三問・資料2・2(2)、印刷A16。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf
+      出典 [ac2-bank-zaimu71] 第71回財務諸表論 銀行照合表：第三問・資料2・1(2)、印刷B11。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf
+      出典 [financial-regulations] e-Gov：財務諸表等規則：49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合。2026年3月31日施行版・2026年4月3日現在／確認2026-10-27
+        https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028
+    3. [zr2-boki-bills-receivable] 手形の裏書・割引・不渡り・更改を記録する／150分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-boki-bank-reconciliation、zr2-boki-accrual-adjustments、zr2-boki-interest-present-value
+      実演：[zr2-boki-bills-receivable-ex1] 例題1：売掛金の回収方法が手形に変わった／[zr2-boki-bills-receivable-ex2] 例題2：資金を借りるために手形を振り出した／[zr2-boki-bills-receivable-ex3] 例題3：日割りの割引料と保証債務を含む仕訳／[zr2-boki-bills-receivable-ex4] 例題4：裏書した手形の額面と買掛金が同額だった／[zr2-boki-bills-receivable-ex5] 例題5：裏書済みの手形を支払い、請求権を取得した／[zr2-boki-bills-receivable-ex6] 例題6：延期利息を先に受け取った／[zr2-boki-bills-receivable-ex7] 例題7：重要な金利部分を含む手形を途中で売却した
+      理解度チェック [zr2-boki-bills-receivable-check] 16問／版：zeirishi-2026-v2-bills-receivable-1
+      次：zr2-boki-receivable-transfers
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bills-receivable/
+      [zr2-boki-bills-receivable-d1] 営業上の手形・金融手形・営業外手形を取引原因と当事者の立場から区別する
+        独立練習：zr2-boki-bills-receivable-q1、zr2-boki-bills-receivable-q2、zr2-boki-bills-receivable-q3、zr2-boki-bills-receivable-q15、zr2-boki-bills-receivable-q16
+      [zr2-boki-bills-receivable-d2] 割引・裏書について消滅、日割割引料、譲渡損益、保証債務と決済を記録する
+        独立練習：zr2-boki-bills-receivable-q3、zr2-boki-bills-receivable-q4、zr2-boki-bills-receivable-q5、zr2-boki-bills-receivable-q6、zr2-boki-bills-receivable-q7、zr2-boki-bills-receivable-q13、zr2-boki-bills-receivable-q14、zr2-boki-bills-receivable-q15、zr2-boki-bills-receivable-q16
+      [zr2-boki-bills-receivable-d3] 不渡り前の保有状態と請求可能な費用を確認し、取得又は残存する請求権と回収見込みを区別する
+        独立練習：zr2-boki-bills-receivable-q8、zr2-boki-bills-receivable-q9、zr2-boki-bills-receivable-q10
+      [zr2-boki-bills-receivable-d4] 更改・利息の期間配分・金利を別処理した手形の帳簿価額を追い、補助簿から期末残高を確定する
+        独立練習：zr2-boki-bills-receivable-q11、zr2-boki-bills-receivable-q12、zr2-boki-bills-receivable-q13、zr2-boki-bills-receivable-q14、zr2-boki-bills-receivable-q15
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+      出典 [ac2-bills-law] e-Gov：手形法・基準日固定版：2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。。2023年6月14日施行版を2026年4月3日現在の公式APIで確認／確認2026-10-27
+        https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053
+      出典 [ac2-accounting-principles] 企業会計審議会：企業会計原則・注解（1982年最終改正）：企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。。1982年4月20日最終改正・注解5の期間配分に限定／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+    4. [zr2-boki-receivable-transfers] 電子記録債権・ファクタリングと支配移転を判断する／150分の目安
+      学習段階：発展（独自区分）
+      前提：zr2-boki-bills-receivable、zr2-boki-books-vouchers
+      実演：[zr2-boki-receivable-transfers-ex1] 例題1：発生記録と決済を、両当事者の帳簿で追う／[zr2-boki-receivable-transfers-ex2] 例題2：電子記録債権の割引と保証債務を記録する／[zr2-boki-receivable-transfers-ex3] 例題3：同じ入金380,000円でも、売却と借入れを区別する／[zr2-boki-receivable-transfers-ex4] 例題4：一部譲渡の原価は、額面の割合と一致するとは限らない／[zr2-boki-receivable-transfers-ex5] 例題5：新たに受け取る別の資産と、保証債務を分ける／[zr2-boki-receivable-transfers-ex6] 例題6：留保した回収サービス権は、残存部分として扱う
+      理解度チェック [zr2-boki-receivable-transfers-check] 17問／版：zeirishi-2026-v2-receivable-transfers-1
+      次：zr2-boki-documentary-bills
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-receivable-transfers/
+      [zr2-boki-receivable-transfers-d1] 営業・金融・営業外の性質と電子記録の段階を読み、発生・譲渡・決済を二重計上せず記録する
+        独立練習：zr2-boki-receivable-transfers-q1、zr2-boki-receivable-transfers-q2、zr2-boki-receivable-transfers-q3、zr2-boki-receivable-transfers-q4、zr2-boki-receivable-transfers-q10、zr2-boki-receivable-transfers-q15
+      [zr2-boki-receivable-transfers-d2] 権利行使・喪失・支配移転と三要件から、譲渡による消滅と担保借入れを区別する
+        独立練習：zr2-boki-receivable-transfers-q6、zr2-boki-receivable-transfers-q7、zr2-boki-receivable-transfers-q8、zr2-boki-receivable-transfers-q9、zr2-boki-receivable-transfers-q10、zr2-boki-receivable-transfers-q15
+      [zr2-boki-receivable-transfers-d3] 新たな保証債務や対価資産を含めて譲渡損益と残る義務を計算する
+        独立練習：zr2-boki-receivable-transfers-q5、zr2-boki-receivable-transfers-q6、zr2-boki-receivable-transfers-q7、zr2-boki-receivable-transfers-q8、zr2-boki-receivable-transfers-q13
+      [zr2-boki-receivable-transfers-d4] 一部譲渡・留保サービス権・新規資産を区別して原価を配分し、通常のサービス資産を所与の残高/件数割合で償却する
+        独立練習：zr2-boki-receivable-transfers-q11、zr2-boki-receivable-transfers-q12、zr2-boki-receivable-transfers-q13、zr2-boki-receivable-transfers-q14、zr2-boki-receivable-transfers-q16、zr2-boki-receivable-transfers-q17
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+      出典 [ac2-electronic-claims] 実務対応報告27 電子記録債権の会計処理及び表示（2009年4月9日）：実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない。実務対応報告第27号・2009年4月9日公表、同日以後適用／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf
+      出典 [ac2-electronic-claims-law] 電子記録債権法（2025年10月1日施行版・2026年4月3日現在）：電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存。2025年10月1日施行版を2026年4月3日現在の公式APIで確認／確認2026-10-27
+        https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053
+      出典 [fsa-factoring-definition] 金融庁 ファクタリングの利用に関する注意喚起（冒頭一般定義のみ）：冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない。2026年10月27日閲覧。名称の一般定義に限定／確認2026-10-27
+        https://www.fsa.go.jp/user/factoring.html
+    5. [zr2-boki-documentary-bills] 為替手形の三つの立場・D/PとD/A・外貨建荷為替／120分の目安
+      学習段階：応用（独自区分）
+      前提：zr2-boki-bills-receivable、zr2-boki-receivable-transfers
+      実演：[zr2-boki-documentary-bills-e1] 例題1：三社の掛残高を、手形の流れへつなぐ／[zr2-boki-documentary-bills-e2] 例題2：自己宛で、支払人も自社になる／[zr2-boki-documentary-bills-e3] 例題3：同じ引受署名でも、書類を渡せるかが違う／[zr2-boki-documentary-bills-e4] 例題4：円建代金の75％を取り組む／[zr2-boki-documentary-bills-e5] 例題5：円転・期末換算・翌期回収をつなぐ
+      理解度チェック [zr2-boki-documentary-bills-check] 17問／版：zeirishi-2026-v2-documentary-bills-1
+      次：zr2-boki-credit-loss-measurement
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-documentary-bills/
+      [zr2-boki-documentary-bills-d1] 三つの立場・引受け・自己指図と自己宛を読み、元の掛債権債務と国内の基本仕訳を対応させる
+        独立練習：zr2-boki-documentary-bills-q1、zr2-boki-documentary-bills-q2、zr2-boki-documentary-bills-q3、zr2-boki-documentary-bills-q4、zr2-boki-documentary-bills-q16、zr2-boki-documentary-bills-q17
+      [zr2-boki-documentary-bills-d2] D/P・D/Aの書類引渡条件、取立委託、銀行買取り、現金回収を区分する
+        独立練習：zr2-boki-documentary-bills-q5、zr2-boki-documentary-bills-q6、zr2-boki-documentary-bills-q7、zr2-boki-documentary-bills-q16
+      [zr2-boki-documentary-bills-d3] 一部取組の額面・手取預金・保証債務・譲渡損益と残る売掛金を計算する
+        独立練習：zr2-boki-documentary-bills-q8、zr2-boki-documentary-bills-q9、zr2-boki-documentary-bills-q10、zr2-boki-documentary-bills-q11、zr2-boki-documentary-bills-q15、zr2-boki-documentary-bills-q17
+      [zr2-boki-documentary-bills-d4] 取組部分と残存部分を分け、発生・買取り・期末・翌期回収の円帳簿と為替差損益をつなぐ
+        独立練習：zr2-boki-documentary-bills-q12、zr2-boki-documentary-bills-q13、zr2-boki-documentary-bills-q14、zr2-boki-documentary-bills-q15、zr2-boki-documentary-bills-q16
+      出典 [ac2-bills-law] e-Gov：手形法・基準日固定版：1・3・9・12・13・21・25・28・38条、基準日保存版の追加原文読解済み。43・47〜49条の遡求等も参照。。2023年6月14日施行版を2026年4月3日現在の公式APIで確認／確認2026-10-27
+        https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053
+      出典 [jcci-bills134] 日本商工会議所：第134回3級 出題の意図・講評：第3問PDF3頁、為替手形の振出・引受・受取の勘定変化。公式出題意図を実読。。過去回の公式出題意図・問題。記帳技能を確認し、当時の税制や他の旧処理を移用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/134-03-kouhyou.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版34・37・43〜45・253項。輸出D/P・D/A手形の銀行買取時の発生消滅、手取・保証、元の負債と二次的責任を区分。。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+      出典 [ac2-documentary-jetro] JETRO：輸出決済方法変更に関するQ&A A-A10833：I-2、2025年7月更新。D/P支払渡しとD/A引受渡し、銀行の支払確約との区分。。調査2017年1月、更新2025年7月。書類交換の条件の参照／確認2026-10-27
+        https://www.jetro.go.jp/world/qa/04A-A10833.html
+      出典 [foreign-currency] ASBJ：外貨建取引等会計処理基準：1999年10月22日最終改正、一1・一2(1)①②・一2(2)・一3。発生、決済、残存外貨建金銭債権の換算。。1999年10月22日最終改正の基準本体。画面更新日と区別／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=80
+    6. [zr2-boki-credit-loss-measurement] 債権区分から貸倒見積高と引当金繰入額を計算する／100分の目安
+      学習段階：標準問題から応用へ（独自区分）
+      前提：zr2-boki-receivable-transfers
+      実演：[credit-classification] 補足例題：三社の状態から、区分と方法を選ぶ／[credit-example-1] 例題1：一般債権の必要残高と差額補充／[credit-example-2] 例題2：担保と保証の回収額を控除して、残る危険を測る／[credit-example-3] 例題3：破産更生債権等は、回収できない残りを全額見積もる／[credit-example-4] 例題4：将来の元利金を、回収時期に応じて割り引く／[credit-rate-window] 貸倒実績率の分母と、観察する期間をそろえる／[credit-mixed] 区分別に見積もってから、引当金全体を整える／[credit-unreceived-interest] 補足例題：当期の未収利息を取り消してから、元本を評価する
+      理解度チェック [zr2-boki-credit-loss-measurement-check] 16問／版：zeirishi-2026-v2-credit-loss-measurement-1
+      次：zr2-boki-bad-debt-dcf
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-credit-loss-measurement/
+      [zr2-boki-credit-loss-measurement-d1] 債務者の状態に応じて一般・貸倒懸念・破産更生債権等を区分し、算定方法を選ぶ
+        独立練習：zr2-boki-credit-loss-measurement-q1、zr2-boki-credit-loss-measurement-q5、zr2-boki-credit-loss-measurement-q11、zr2-boki-credit-loss-measurement-q15
+      [zr2-boki-credit-loss-measurement-d2] 実績率又は担保・保証と返済能力の見積りから必要な貸倒引当金残高を求める
+        独立練習：zr2-boki-credit-loss-measurement-q2、zr2-boki-credit-loss-measurement-q4、zr2-boki-credit-loss-measurement-q5、zr2-boki-credit-loss-measurement-q10
+      [zr2-boki-credit-loss-measurement-d3] 将来の元利金を回収時期と指定割引率に応じて割り引き、貸倒見積高を求める
+        独立練習：zr2-boki-credit-loss-measurement-q6、zr2-boki-credit-loss-measurement-q7、zr2-boki-credit-loss-measurement-q8
+      [zr2-boki-credit-loss-measurement-d4] 取崩しを反映した整理前残高から繰入れ・戻入れを求め、未収利息の修正条件を説明する
+        独立練習：zr2-boki-credit-loss-measurement-q3、zr2-boki-credit-loss-measurement-q9、zr2-boki-credit-loss-measurement-q12、zr2-boki-credit-loss-measurement-q16
+      [zr2-boki-credit-loss-measurement-d5] 同じ債権を追跡した実績率を算定し、期間平均と現在の信用リスクを確認する
+        独立練習：zr2-boki-credit-loss-measurement-q13、zr2-boki-credit-loss-measurement-q14、zr2-boki-credit-loss-measurement-q15
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：移管指針9・2025年3月11日版110〜115項、119項。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+    7. [zr2-boki-bad-debt-dcf] 貸倒DCFの回収・時間経過・見積変更を連続して計算する／165分の目安
+      学習段階：発展（独自区分）
+      前提：zr2-boki-credit-loss-measurement、zr2-boki-interest-present-value
+      実演：[zr2-boki-bad-debt-dcf-ex1] 例題1：元本全額を回収できても、延期による引当てが生じる／[zr2-boki-bad-debt-dcf-ex2] 例題2：利率を引き下げた貸付金の3年間／[zr2-boki-bad-debt-dcf-ex3] 例題3：二回に分けて元本を回収する／[zr2-boki-bad-debt-dcf-ex4] 例題4：時間経過の収益と、回収額の減少が同時に生じた／[zr2-boki-bad-debt-dcf-ex5] 例題5：各回収額ごとの丸めと、合計後の丸め／[zr2-boki-bad-debt-dcf-ex6] 例題6：担保からの回収を二度控除しない
+      理解度チェック [zr2-boki-bad-debt-dcf-check] 16問／版：zeirishi-2026-v2-bad-debt-dcf-1
+      次：zr2-boki-cash-core-review-a
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bad-debt-dcf/
+      [zr2-boki-bad-debt-dcf-d1] 評価日・回収日・元利区分と当初の率を確定し、現在価値・期末必要引当・追加繰入を区別する
+        独立練習：zr2-boki-bad-debt-dcf-q1、zr2-boki-bad-debt-dcf-q2、zr2-boki-bad-debt-dcf-q3、zr2-boki-bad-debt-dcf-q4、zr2-boki-bad-debt-dcf-q11、zr2-boki-bad-debt-dcf-q12、zr2-boki-bad-debt-dcf-q13、zr2-boki-bad-debt-dcf-q15
+      [zr2-boki-bad-debt-dcf-d2] 回収見積り不変の場合の時間経過、現金利息と元本回収を複数年度の残高へつなげる
+        独立練習：zr2-boki-bad-debt-dcf-q4、zr2-boki-bad-debt-dcf-q5、zr2-boki-bad-debt-dcf-q6、zr2-boki-bad-debt-dcf-q7、zr2-boki-bad-debt-dcf-q8、zr2-boki-bad-debt-dcf-q12、zr2-boki-bad-debt-dcf-q16
+      [zr2-boki-bad-debt-dcf-d3] 回収額・時期の変更と端数指定を反映し、時間経過の利息と見積変更による損益を分ける
+        独立練習：zr2-boki-bad-debt-dcf-q3、zr2-boki-bad-debt-dcf-q9、zr2-boki-bad-debt-dcf-q10、zr2-boki-bad-debt-dcf-q11、zr2-boki-bad-debt-dcf-q16
+      [zr2-boki-bad-debt-dcf-d4] 原則と許容される表示、財務内容評価法との境界、担保保証の二重計上と未収利息の注意を説明する
+        独立練習：zr2-boki-bad-debt-dcf-q7、zr2-boki-bad-debt-dcf-q13、zr2-boki-bad-debt-dcf-q14
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年7月4日版）：2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。。2019年7月4日版。2026年4月3日より後の改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：金融商品会計に関する実務指針（2025年3月11日版）：2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。。移管指針第9号・2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+    [zr2-boki-cash-core-review-a] 現金預金と金銭債権：基幹6講復習A／15問／版：zeirishi-2026-v2-boki-cash-core-review-a-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-cash-core-review-a/
+    [zr2-boki-cash-core-review-b] 現金預金と金銭債権：基幹6講復習B／15問／版：zeirishi-2026-v2-boki-cash-core-review-b-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-cash-core-review-b/
+    [zr2-boki-documentary-review-c] 現金預金と金銭債権：現金・債権単元の追加演習C：荷為替／11問／版：zeirishi-2026-v2-boki-documentary-review-c-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-documentary-review-c/
+    [zr2-boki-cash-core-glossary-assessment] 現金・債権の用語を事例で使い分ける26問／26問／版：zeirishi-2026-v2-boki-cash-core-glossary-assessment-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-cash-core-glossary-assessment/
+    [zr2-boki-documentary-glossary-assessment] 荷為替の用語を事例で使い分ける8問／8問／版：zeirishi-2026-v2-boki-documentary-glossary-assessment-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-documentary-glossary-assessment/
+    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
+
   2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
 
 科目：財務諸表論（会計学）
@@ -352,6 +536,228 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-2-review/
   [zeirishi-zaimu-mock] 財務諸表論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-zaimu-mock/
+
+  詳しく学ぶ単元 [zr2-zaimu-unit-framework] 財務会計の考え方と制度
+    財務報告の目的・制度から、情報特性、構成要素、認識測定、会計上の変更、見積り注記、理論答案へ進む9講。53の例題、141の講末問題、別の累積52問と用語32問で確認します。
+    単元確認日：2026-10-27／本文・例題・理解度確認の合計目安1270分（独立テストと再復習は別）
+    URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-zaimu-unit-framework/
+    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
+    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
+    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
+    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
+    1. [zr2-zaimu-purpose-regulation] 財務会計の目的と制度／110分の目安
+      学習段階：基礎（独自区分）
+      前提：
+      実演：[zr2-zaimu-purpose-regulation-e1] 例題1：利益の大きさだけで比較しない／[zr2-zaimu-purpose-regulation-e2] 例題2：任された資金の使い方を説明する／[zr2-zaimu-purpose-regulation-e3] 例題3：黒字・現金・契約条件を分ける／[zr2-zaimu-purpose-regulation-e4] 例題4：作成書類と公告を混同しない／[zr2-zaimu-purpose-regulation-e5] 例題5：理論答案の対象を絞る
+      理解度チェック [zr2-zaimu-purpose-regulation-check] 14問／版：zeirishi-2026-v2-purpose-regulation-1
+      次：zr2-zaimu-reporting-obligations
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-purpose-regulation/
+      [zr2-zaimu-purpose-regulation-f01] 投資判断に必要な情報を、成果と資源・負担の両方から説明する
+        独立練習：zr2-zaimu-purpose-regulation-q1、zr2-zaimu-purpose-regulation-q2、zr2-zaimu-purpose-regulation-q3、zr2-zaimu-purpose-regulation-q4、zr2-zaimu-purpose-regulation-q12、zr2-zaimu-purpose-regulation-q14
+      [zr2-zaimu-purpose-regulation-f02] 作成・利用・監査の役割と、受託責任・利害調整の着眼点を区別する
+        独立練習：zr2-zaimu-purpose-regulation-q4、zr2-zaimu-purpose-regulation-q5、zr2-zaimu-purpose-regulation-q6、zr2-zaimu-purpose-regulation-q7、zr2-zaimu-purpose-regulation-q14
+      [zr2-zaimu-purpose-regulation-f03] 会社法と金融商品取引法について、書類と手続の適用範囲を与件から判断する
+        独立練習：zr2-zaimu-purpose-regulation-q7、zr2-zaimu-purpose-regulation-q8、zr2-zaimu-purpose-regulation-q9、zr2-zaimu-purpose-regulation-q10、zr2-zaimu-purpose-regulation-q11
+      [zr2-zaimu-purpose-regulation-f04] 法令・個別基準・概念フレームワークの位置付けを区別して理由を記述する
+        独立練習：zr2-zaimu-purpose-regulation-q3、zr2-zaimu-purpose-regulation-q10、zr2-zaimu-purpose-regulation-q12、zr2-zaimu-purpose-regulation-q13、zr2-zaimu-purpose-regulation-q14
+      出典 [ac2-framework-pdf] 討議資料 財務会計の概念フレームワーク：2006年12月討議資料、前文、第一章1〜21項。財務報告の目的・役割分担・副次的利用。個別基準としての強制力を主張しない。2006年12月討議資料。個別の会計基準としての強制力と区別／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf
+      出典 [companies-law] e-Gov：会社法：431条、435〜436条、440条1・3・4項、461条1項。2026年4月3日時点の条文を照合。2025年10月1日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053
+      出典 [company-calculation] e-Gov：会社計算規則（基準日固定版）：59条。2026年4月3日指定の法令データで計算書類の範囲と会計帳簿との関係を照合。2025年3月31日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014
+      出典 [financial-instruments-law] e-Gov：金融商品取引法（基準日固定版）：1条、24条、193条、193条の2。2026年4月3日時点。有価証券報告書の対象と例外、作成方法、監査。全ての株式会社へ提出義務を一般化しない。2026年1月1日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/323AC0000000025_20260101_506AC0000000056
+    2. [zr2-zaimu-reporting-obligations] 会社の属性と財務情報の作成・監査・開示／150分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-zaimu-purpose-regulation
+      実演：[zr2-zaimu-reporting-obligations-e1] 例題1：境界の額と、別の属性を分ける／[zr2-zaimu-reporting-obligations-e2] 例題2：会計監査人がいる会社の二つの書類／[zr2-zaimu-reporting-obligations-e3] 例題3：無限定適正意見の一つだけで決めない／[zr2-zaimu-reporting-obligations-e4] 例題4：提出義務者でも作成は残る／[zr2-zaimu-reporting-obligations-e5] 例題5：年度末と総会の順序を分ける
+      理解度チェック [zr2-zaimu-reporting-obligations-check] 15問／版：zeirishi-2026-v2-reporting-obligations-1
+      次：zr2-zaimu-qualitative-characteristics
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-reporting-obligations/
+      [zr2-zaimu-reporting-obligations-f01] 公開会社・上場・大会社を区別し、境界額と不足する情報から会社の属性を判断する
+        独立練習：zr2-zaimu-reporting-obligations-q1、zr2-zaimu-reporting-obligations-q2、zr2-zaimu-reporting-obligations-q3
+      [zr2-zaimu-reporting-obligations-f02] 帳簿・計算書類・事業報告を区別し、監査・承認・提供・総会の手順と保存起算を対応させる
+        独立練習：zr2-zaimu-reporting-obligations-q4、zr2-zaimu-reporting-obligations-q5、zr2-zaimu-reporting-obligations-q6
+      [zr2-zaimu-reporting-obligations-f03] 総会の承認を報告へ代える特則について、会計監査人の有無と複数の要件を区別する
+        独立練習：zr2-zaimu-reporting-obligations-q7、zr2-zaimu-reporting-obligations-q8、zr2-zaimu-reporting-obligations-q9
+      [zr2-zaimu-reporting-obligations-f04] 公告の対象書類と条件付きの代替・適用除外を判断し、作成義務と混同しない
+        独立練習：zr2-zaimu-reporting-obligations-q10、zr2-zaimu-reporting-obligations-q11、zr2-zaimu-reporting-obligations-q12
+      [zr2-zaimu-reporting-obligations-f05] 有価証券報告書の対象・原則期間・監査証明を、会社法上の手続と分けて説明する
+        独立練習：zr2-zaimu-reporting-obligations-q13、zr2-zaimu-reporting-obligations-q14、zr2-zaimu-reporting-obligations-q15
+      出典 [companies-law] e-Gov：会社法：2条5・6号、432・435〜440条、939条1項。2026年4月3日基準を指定した公式データの施行版を全文照合。2025年10月1日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053
+      出典 [company-calculation] e-Gov：会社計算規則（基準日固定版）：59条、126条1項2号、135〜138条。監査意見と承認特則、公告の情報・要旨を照合。2025年3月31日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014
+      出典 [financial-instruments-law] e-Gov：金融商品取引法（基準日固定版）：24条1項、193条1項、193条の2第1項。内国会社の原則期間、対象と例外、財務書類と監査証明を照合。2026年1月1日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/323AC0000000025_20260101_506AC0000000056
+      出典 [civil-calendar] e-Gov：民法（2026年4月1日施行版）：140・143条。暦月と午前0時から始まる期間の計算のみ。休業日・延長・外国会社を除く。2026年4月1日施行版。2026年4月3日基準の140・143条に限定／確認2026-10-27
+        https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033
+    3. [zr2-zaimu-qualitative-characteristics] 有用性・信頼性・内的整合性・比較可能性／120分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-zaimu-purpose-regulation
+      実演：[zr2-zaimu-qualitative-characteristics-e1] 例題1：実績値と将来に関わる資料を併せて読む／[zr2-zaimu-qualitative-characteristics-e2] 例題2：都合のよい仮定だけを選ばない／[zr2-zaimu-qualitative-characteristics-e3] 例題3：同じ品名でも、取引の実質を確認する／[zr2-zaimu-qualitative-characteristics-e4] 例題4：数字の変化と測り方の変化を分ける／[zr2-zaimu-qualitative-characteristics-e5] 例題5：内的整合性と、処理の継続を区別する
+      理解度チェック [zr2-zaimu-qualitative-characteristics-check] 14問／版：zeirishi-2026-v2-qualitative-characteristics-1
+      次：zr2-zaimu-elements
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-qualitative-characteristics/
+      [zr2-zaimu-qualitative-characteristics-f01] 有用性・関連性・信頼性と、それを支える特性の関係を説明する
+        独立練習：zr2-zaimu-qualitative-characteristics-q1、zr2-zaimu-qualitative-characteristics-q2、zr2-zaimu-qualitative-characteristics-q3、zr2-zaimu-qualitative-characteristics-q14
+      [zr2-zaimu-qualitative-characteristics-f02] 見積りの根拠や偏りを、事例の具体的な事実から評価する
+        独立練習：zr2-zaimu-qualitative-characteristics-q2、zr2-zaimu-qualitative-characteristics-q3、zr2-zaimu-qualitative-characteristics-q4、zr2-zaimu-qualitative-characteristics-q5、zr2-zaimu-qualitative-characteristics-q6、zr2-zaimu-qualitative-characteristics-q14
+      [zr2-zaimu-qualitative-characteristics-f03] 実質の同異を確認し、比較可能性と画一的な処理を区別する
+        独立練習：zr2-zaimu-qualitative-characteristics-q7、zr2-zaimu-qualitative-characteristics-q8、zr2-zaimu-qualitative-characteristics-q9、zr2-zaimu-qualitative-characteristics-q10
+      [zr2-zaimu-qualitative-characteristics-f04] 基準体系の内的整合性と、期間を通じた手続の継続を区別する
+        独立練習：zr2-zaimu-qualitative-characteristics-q1、zr2-zaimu-qualitative-characteristics-q11、zr2-zaimu-qualitative-characteristics-q12、zr2-zaimu-qualitative-characteristics-q13
+      出典 [ac2-framework-pdf] 討議資料 財務会計の概念フレームワーク：2006年12月討議資料、第二章1〜22項。PDF15〜20枚目（印刷8〜13頁）を全文確認。個別処理の計上指示として使わない。2006年12月討議資料。個別の会計基準としての強制力と区別／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf
+      出典 [ac2-exam-zaimu76] 第76回財務諸表論 問題：第76回、第一問問1、印刷B1〜B2（PDF3〜4枚目）。内的整合性の階層・前提・比較が実際に問われる範囲と要求水準を確認。出題文・選択肢を再利用しない。第76回（2026年）。要求技能・形式の確認に限定し問題を転載しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf
+    4. [zr2-zaimu-elements] 資産・負債・純資産・投資の成果／130分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-zaimu-qualitative-characteristics
+      実演：[zr2-zaimu-elements-e1] 例題1：同じ支払予定でも、事実を読む／[zr2-zaimu-elements-e2] 例題2：差額と内訳を照合する／[zr2-zaimu-elements-e3] 例題3：増資と配当を除いて逆算する／[zr2-zaimu-elements-e4] 例題4：過去の評価額を二重に足さない／[zr2-zaimu-elements-e5] 例題5：二つの利益の範囲をそろえる
+      理解度チェック [zr2-zaimu-elements-check] 15問／版：zeirishi-2026-v2-elements-1
+      次：zr2-zaimu-general-principles
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-elements/
+      [zr2-zaimu-elements-f01] 過去の取引・資源の支配・義務から構成要素を検討し、認識や測定と区別する
+        独立練習：zr2-zaimu-elements-q1、zr2-zaimu-elements-q2、zr2-zaimu-elements-q9、zr2-zaimu-elements-q12、zr2-zaimu-elements-q13、zr2-zaimu-elements-q14、zr2-zaimu-elements-q15
+      [zr2-zaimu-elements-f02] 資産負債差額と内訳を照合し、残高・期間変動・所有者取引を区別する
+        独立練習：zr2-zaimu-elements-q3、zr2-zaimu-elements-q4、zr2-zaimu-elements-q5、zr2-zaimu-elements-q7、zr2-zaimu-elements-q15
+      [zr2-zaimu-elements-f03] 当期純利益・その他の包括利益・組替え・累計残高を複数期間で照合する
+        独立練習：zr2-zaimu-elements-q4、zr2-zaimu-elements-q5、zr2-zaimu-elements-q6、zr2-zaimu-elements-q7、zr2-zaimu-elements-q8、zr2-zaimu-elements-q9、zr2-zaimu-elements-q13、zr2-zaimu-elements-q14、zr2-zaimu-elements-q15
+      [zr2-zaimu-elements-f04] 連結の全体額と親会社株主・非支配株主への帰属額を整合させる
+        独立練習：zr2-zaimu-elements-q10、zr2-zaimu-elements-q11
+      出典 [ac2-framework-pdf] 討議資料 財務会計の概念フレームワーク：2006年12月討議資料、第三章序文・1〜25項と脚注、PDF21〜27枚目。資源・義務・純資産・所有者取引・リスクからの解放。旧少数株主用語を現在の表示へ機械的に移さない。2006年12月討議資料。個別の会計基準としての強制力と区別／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf
+      出典 [ac2-oci] 基準25 包括利益：企業会計基準25号、2025年3月11日改正・2025年10月16日修正反映版。1〜16-6項（特に4〜6、8〜9、11、16-2、16-6）を確認。16-2の当面個別不適用を明示。将来の期中制度一般へ拡張しない。企業会計基準25号・2025年10月16日修正反映版。個別への当面不適用を区分／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_18.pdf
+      出典 [company-calculations] e-Gov：会社計算規則（基準日固定版）：2026年4月3日基準の会社計算規則74〜76条。資産・負債・純資産の表示区分。細かな認識・測定は各論で扱う。2025年3月31日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014
+    5. [zr2-zaimu-general-principles] 企業会計原則と個別基準／120分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-zaimu-elements
+      実演：[zr2-zaimu-general-principles-e1] 例題1：数字の違いを、操作と即断しない／[zr2-zaimu-general-principles-capital] 資金調達と売上を、仕訳へ分ける／[zr2-zaimu-general-principles-e2] 例題2：利益が同じでも、情報は同じか／[zr2-zaimu-general-principles-e3] 例題3：利益を調整する目的だけで変更する／[zr2-zaimu-general-principles-e4] 例題4：慎重という言葉で、見積りを上乗せする／[zr2-zaimu-general-principles-e5] 例題5：調整表を作ることと、別の事実を書くこと／[zr2-zaimu-general-principles-e6] 例題6：小さい額が、合計では大きくなる
+      理解度チェック [zr2-zaimu-general-principles-check] 14問／版：zeirishi-2026-v2-general-principles-1
+      次：zr2-zaimu-recognition-measurement
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-general-principles/
+      [zr2-zaimu-general-principles-f01] 真実性・正規の簿記・資本損益の区別を取引と帳簿の事実へ当てはめる
+        独立練習：zr2-zaimu-general-principles-q1、zr2-zaimu-general-principles-q2、zr2-zaimu-general-principles-q3
+      [zr2-zaimu-general-principles-f02] 明瞭性と総額表示から、利益が同じでも情報が異なる理由を説明する
+        独立練習：zr2-zaimu-general-principles-q4、zr2-zaimu-general-principles-q5、zr2-zaimu-general-principles-q6
+      [zr2-zaimu-general-principles-f03] 継続性・保守主義の趣旨と限界を、変更理由・見積り条件から判断する
+        独立練習：zr2-zaimu-general-principles-q7、zr2-zaimu-general-principles-q8、zr2-zaimu-general-principles-q9、zr2-zaimu-general-principles-q10
+      [zr2-zaimu-general-principles-f04] 単一性と重要性を、目的別調整・集積額・項目の性質へ当てはめる
+        独立練習：zr2-zaimu-general-principles-q11、zr2-zaimu-general-principles-q12、zr2-zaimu-general-principles-q13、zr2-zaimu-general-principles-q14
+      出典 [accounting-principles] 企業会計原則・企業会計原則注解：企業会計原則・同注解、1982年4月20日最終改正。一般原則一〜七、損益計算書原則一A〜C、注解1・1-2・2・3・4を原文確認。旧文書の個別取引処理を後の基準に優先させない。1982年4月20日最終改正。後の個別基準に優先させない／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+      出典 [ac2-oci] 基準25 包括利益：包括利益基準25号・2025年10月16日修正反映版1〜2項。表示の個別規定が異なる取扱いを定める場合の規範関係の参照。認識測定の個別条件を一般原則だけで置き換えない。企業会計基準25号・2025年10月16日修正反映版。個別への当面不適用を区分／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_18.pdf
+    6. [zr2-zaimu-recognition-measurement] 認識・測定と期間損益／180分の目安
+      学習段階：標準から応用へ（独自区分）
+      前提：zr2-zaimu-general-principles、zr2-boki-interest-present-value
+      実演：[zr2-zaimu-recognition-measurement-e1] 例題1：契約・前払・引渡しを追う／[zr2-zaimu-recognition-measurement-e2] 例題2：先に受け取った年間サービス料／[zr2-zaimu-recognition-measurement-e3] 例題3：販売済みの原価と、残った商品／[zr2-zaimu-recognition-measurement-e4] 例題4：四つの数値から、目的に合うものを選ぶ／[zr2-zaimu-recognition-measurement-e5] 例題5：変わったのは回収予測か、割引率か／[zr2-zaimu-recognition-measurement-e6] 例題6：名目額と購買力を比較する／[zr2-zaimu-recognition-measurement-e7] 例題7：同じ商品を補充する額を保つ
+      理解度チェック [zr2-zaimu-recognition-measurement-check] 18問／版：zeirishi-2026-v2-recognition-measurement-1
+      次：zr2-zaimu-policy-changes
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-recognition-measurement/
+      [zr2-zaimu-recognition-measurement-f01] 認識と測定、定義と計上条件を分け、未履行・前払・引渡しを仕訳へ表す
+        独立練習：zr2-zaimu-recognition-measurement-q1、zr2-zaimu-recognition-measurement-q2、zr2-zaimu-recognition-measurement-q3、zr2-zaimu-recognition-measurement-q18
+      [zr2-zaimu-recognition-measurement-f02] 現金の受払と履行を分け、収益と契約負債の期間帰属を計算する
+        独立練習：zr2-zaimu-recognition-measurement-q4、zr2-zaimu-recognition-measurement-q5、zr2-zaimu-recognition-measurement-q6、zr2-zaimu-recognition-measurement-q18
+      [zr2-zaimu-recognition-measurement-f03] 費用収益の対応と期末資産の根拠を、売上原価とサービス費用で説明する
+        独立練習：zr2-zaimu-recognition-measurement-q7、zr2-zaimu-recognition-measurement-q8
+      [zr2-zaimu-recognition-measurement-f04] 未配分原価・入口出口の価格・正味売却額を目的から選び、混合測定を説明する
+        独立練習：zr2-zaimu-recognition-measurement-q9、zr2-zaimu-recognition-measurement-q10、zr2-zaimu-recognition-measurement-q17
+      [zr2-zaimu-recognition-measurement-f05] 将来額・期間・更新する率を示して現在価値を計算し、測定目的の差を説明する
+        独立練習：zr2-zaimu-recognition-measurement-q11、zr2-zaimu-recognition-measurement-q12、zr2-zaimu-recognition-measurement-q13
+      [zr2-zaimu-recognition-measurement-f06] 所有者取引を除き、名目額・購買力・補充能力の維持による成果の差を求める
+        独立練習：zr2-zaimu-recognition-measurement-q14、zr2-zaimu-recognition-measurement-q15、zr2-zaimu-recognition-measurement-q16
+      出典 [ac2-framework-pdf] 討議資料 財務会計の概念フレームワーク：2006年討議資料第4章1〜58項と脚注。認識・履行、原価・市場価格・現価、複数の測定とリスクからの解放。個別基準の代替として扱わない。2006年12月討議資料。個別の会計基準としての強制力と区別／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf
+      出典 [asbj-revenue] ASBJ：収益認識に関する会計基準 第29号：企業会計基準29号、2024年9月13日改正、16〜19・32〜42項を実読。例題の契約・期間充足と均等履行は明示与件。企業会計基準29号・2024年9月13日改正反映版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf
+      出典 [asbj-fairvalue-guide-2021] 時価算定の適用指針31号・35項限定：企業会計基準適用指針31号・2021年6月17日版35項(1)(2)を実読。将来額と率の整合、同一リスクの二重計算防止に限定。企業会計基準適用指針31号・2021年6月17日版35項(1)(2)のみ／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/faivalue20210617_02.pdf
+      出典 [ifrs-capital-ed2015] IASB概念フレームワーク2015公開草案・歴史的資本維持比較：2015年5月公開草案第8章8.1〜8.10、PDF79〜81ページ。資本維持の歴史的比較理論に限定。現行IFRS又は日本基準の適用指示とは主張しない。2015年5月の公開草案。歴史的な概念比較の資料であり現行の適用指示ではない／確認2026-10-27
+        https://www.ifrs.org/content/dam/ifrs/project/conceptual-framework/exposure-draft/published-documents/ed-conceptual-framework.pdf
+    7. [zr2-zaimu-policy-changes] 会計方針・見積りの変更と誤謬／180分の目安
+      学習段階：標準から応用へ（独自区分）
+      前提：zr2-zaimu-recognition-measurement
+      実演：[zr2-zaimu-policy-changes-e1] 例題1：同じ「変更」を四つに分ける／[zr2-zaimu-policy-changes-e2] 例題2：在庫差額の三期をつなぐ／[zr2-zaimu-policy-changes-e3] 例題3：表示先の変更で売上だけを増やさない／[zr2-zaimu-policy-changes-e4] 例題4：耐用年数が短くなったときの配分／[zr2-zaimu-policy-changes-e5] 例題5：方法を変えても、原価を最初から割り直さない／[zr2-zaimu-policy-changes-e6] 例題6：翌期に誤りが自然に消えても、前期は正しくならない／[zr2-zaimu-policy-changes-e7] 例題7：各期の差と累積差を区別する／[zr2-zaimu-policy-changes-e8] 例題8：取引の事実が変わった三つの場面／[zr2-zaimu-policy-changes-e9] 例題9：方法名が変わっても、資金の範囲が同じ場合
+      理解度チェック [zr2-zaimu-policy-changes-check] 21問／版：zeirishi-2026-v2-policy-changes-1
+      次：zr2-zaimu-estimate-disclosure
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-policy-changes/
+      [zr2-zaimu-policy-changes-f01] 当時の情報と変更対象から、会計方針・表示方法・見積り・誤謬を区別する
+        独立練習：zr2-zaimu-policy-changes-q1、zr2-zaimu-policy-changes-q2、zr2-zaimu-policy-changes-q18、zr2-zaimu-policy-changes-q19、zr2-zaimu-policy-changes-q20、zr2-zaimu-policy-changes-q21
+      [zr2-zaimu-policy-changes-f02] 方針変更の正当な理由と経過措置を確認し、期首累積差と各期損益を遡及計算する
+        独立練習：zr2-zaimu-policy-changes-q3、zr2-zaimu-policy-changes-q4、zr2-zaimu-policy-changes-q5、zr2-zaimu-policy-changes-q6
+      [zr2-zaimu-policy-changes-f03] 表示方法の組替えを行い、段階利益の変化と合計不変を照合する
+        独立練習：zr2-zaimu-policy-changes-q7、zr2-zaimu-policy-changes-q8、zr2-zaimu-policy-changes-q9、zr2-zaimu-policy-changes-q20
+      [zr2-zaimu-policy-changes-f04] 合理的な見積りの更新と償却方法の変更について、当期以降の配分を求める
+        独立練習：zr2-zaimu-policy-changes-q10、zr2-zaimu-policy-changes-q11、zr2-zaimu-policy-changes-q12
+      [zr2-zaimu-policy-changes-f05] 過去の誤謬を修正再表示し、在庫差の翌期への反転と期間利益を照合する
+        独立練習：zr2-zaimu-policy-changes-q13、zr2-zaimu-policy-changes-q14、zr2-zaimu-policy-changes-q15、zr2-zaimu-policy-changes-q21
+      [zr2-zaimu-policy-changes-f06] 実務上不可能な場合の分岐と、変更・未適用基準について必要な説明を選ぶ
+        独立練習：zr2-zaimu-policy-changes-q15、zr2-zaimu-policy-changes-q16、zr2-zaimu-policy-changes-q17、zr2-zaimu-policy-changes-q18
+      出典 [asbj-policy-fixed-2020] 企業会計基準24号・2020年改正固定版：企業会計基準24号・2020年3月31日改正。4〜22-2項、25-2/25-3項、結論の背景48〜68項を実読。2026年10月改正を混在させない。企業会計基準24号・2020年3月31日改正。後発2026年改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf
+      出典 [asbj-policy-guide-fixed-2024] 会計上の変更・誤謬訂正の適用指針24号・固定版：適用指針24号・2024年7月1日修正反映版、4〜12-2・17〜21項を実読。方法と表示の区分、正当な理由、過去見積りの合理性を確認。企業会計基準適用指針24号・2024年7月1日修正反映版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/ikan_20240701_46.pdf
+    8. [zr2-zaimu-estimate-disclosure] 会計上の見積りを注記で伝える／130分の目安
+      学習段階：標準から応用へ（独自区分）
+      前提：zr2-zaimu-policy-changes
+      実演：[zr2-zaimu-estimate-disclosure-e1] 例題1：残高の大きさだけで選ばない／[zr2-zaimu-estimate-disclosure-e2] 例題2：修理率の仮定を、額へつなぐ／[zr2-zaimu-estimate-disclosure-e3] 例題3：一つずつ変える場合と、同時に変える場合／[zr2-zaimu-estimate-disclosure-e4] 例題4：当期に減損損失を計上しなかった設備／[zr2-zaimu-estimate-disclosure-e5] 例題5：参照先に、個別の額がない
+      理解度チェック [zr2-zaimu-estimate-disclosure-check] 15問／版：zeirishi-2026-v2-estimate-disclosure-1
+      次：zr2-zaimu-theory-writing
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-estimate-disclosure/
+      [zr2-zaimu-estimate-disclosure-f01] 翌年度の重要な影響のリスクから対象項目を識別し、残高・有利不利・市場価格変動を区別する
+        独立練習：zr2-zaimu-estimate-disclosure-q1、zr2-zaimu-estimate-disclosure-q2、zr2-zaimu-estimate-disclosure-q3、zr2-zaimu-estimate-disclosure-q12
+      [zr2-zaimu-estimate-disclosure-f02] 計上額と方法・主要な仮定を、企業固有の事実と計算資料に結び付けて説明する
+        独立練習：zr2-zaimu-estimate-disclosure-q4、zr2-zaimu-estimate-disclosure-q5、zr2-zaimu-estimate-disclosure-q6
+      [zr2-zaimu-estimate-disclosure-f03] 仮定を動かした感応度を計算し、単独変更と同時変更の差を説明する
+        独立練習：zr2-zaimu-estimate-disclosure-q7、zr2-zaimu-estimate-disclosure-q8、zr2-zaimu-estimate-disclosure-q9
+      [zr2-zaimu-estimate-disclosure-f04] 個別基準による認識測定と注記の識別を分け、当期損失ゼロでも必要な説明を判断する
+        独立練習：zr2-zaimu-estimate-disclosure-q10、zr2-zaimu-estimate-disclosure-q11、zr2-zaimu-estimate-disclosure-q12
+      [zr2-zaimu-estimate-disclosure-f05] 別注記・連結の参照と個別額を区別し、必要情報を残して重複を避ける
+        独立練習：zr2-zaimu-estimate-disclosure-q13、zr2-zaimu-estimate-disclosure-q14、zr2-zaimu-estimate-disclosure-q15
+      出典 [asbj-estimates-fixed-2020] ASBJ会計基準31号・会計上の見積りの開示2020固定版：企業会計基準31号・2020年3月31日公表。本文3〜9項と結論の背景15〜33項を実読。識別のリスク、通常以外の対象、例示と必須事項、個別参照を照合。企業会計基準31号・2020年3月31日公表／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-estimates20200331_02.pdf
+    9. [zr2-zaimu-theory-writing] 理由と計算をつなぐ理論答案の作り方／150分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-zaimu-estimate-disclosure
+      実演：[zr2-zaimu-theory-writing-e1] 例題1：同じ資料から、別の問いに答える／[zr2-zaimu-theory-writing-e2] 例題2：新情報と過去の誤りを分ける／[zr2-zaimu-theory-writing-e3] 例題3：在庫差額の符号と二つの期間／[zr2-zaimu-theory-writing-e4] 例題4：不足する条件を勝手に補わない／[zr2-zaimu-theory-writing-e5] 例題5：結論だけがある答案を採点する
+      理解度チェック [zr2-zaimu-theory-writing-check] 15問／版：zeirishi-2026-v2-theory-writing-1
+      次：zr2-zaimu-framework-review-a
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-theory-writing/
+      [zr2-zaimu-theory-writing-f01] 設問の対象・要求動作・条件・出力を読み分け、要求の欠落を特定する
+        独立練習：zr2-zaimu-theory-writing-q1、zr2-zaimu-theory-writing-q2、zr2-zaimu-theory-writing-q6、zr2-zaimu-theory-writing-q14、zr2-zaimu-theory-writing-q15
+      [zr2-zaimu-theory-writing-f02] 必要な規範と与件の事実を対応させ、分類・処理・理由を一つの答案へつなぐ
+        独立練習：zr2-zaimu-theory-writing-q2、zr2-zaimu-theory-writing-q3、zr2-zaimu-theory-writing-q4、zr2-zaimu-theory-writing-q5、zr2-zaimu-theory-writing-q6、zr2-zaimu-theory-writing-q8、zr2-zaimu-theory-writing-q11、zr2-zaimu-theory-writing-q15
+      [zr2-zaimu-theory-writing-f03] 期間・比較方向・項目・単位を明らかにし、数値と因果関係を検算する
+        独立練習：zr2-zaimu-theory-writing-q5、zr2-zaimu-theory-writing-q6、zr2-zaimu-theory-writing-q7、zr2-zaimu-theory-writing-q8、zr2-zaimu-theory-writing-q9
+      [zr2-zaimu-theory-writing-f04] 必要条件の不足と不充足、法令基準日と個別基準の適用時期を区別する
+        独立練習：zr2-zaimu-theory-writing-q4、zr2-zaimu-theory-writing-q10、zr2-zaimu-theory-writing-q11、zr2-zaimu-theory-writing-q12、zr2-zaimu-theory-writing-q15
+      [zr2-zaimu-theory-writing-f05] 明示された学習用採点項目を実際の記述へ対応させ、誤答原因と再学習を選ぶ
+        独立練習：zr2-zaimu-theory-writing-q13、zr2-zaimu-theory-writing-q14、zr2-zaimu-theory-writing-q15
+      出典 [points-02] 国税庁：第76回 財務諸表論 出題のポイント：全2頁、第一問・第二問の出題技能と第三問の横断技能を実読。処理理由を問う実績の確認に限り、問題は転載しない。第76回（2026年）の公式出題のポイント。学習用設問の配点とは別／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/point2026/pdf/02.pdf
+      出典 [exam-papers] 国税庁：第76回問題・答案用紙・正誤表：注意事項と第一問・第二問の要求形式、第三問の留意事項を実読。2026年4月3日と120分を確認。将来の小問・配点・個別指示へ固定しない。第76回（2026年）、120分・法令基準日2026年4月3日。要求形式の確認／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf
+      出典 [asbj-policy-fixed-2020] 企業会計基準24号・2020年改正固定版：4・17〜22項と関連する背景。合理的見積りの新情報更新、処理時期、誤謬の修正再表示を照合。企業会計基準24号・2020年3月31日改正。後発2026年改正を混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf
+      出典 [companies-law] e-Gov：会社法：439条。総会承認に代わる内容報告の条件を照合。2025年10月1日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053
+      出典 [company-calculation] e-Gov：会社計算規則（基準日固定版）：135条。特則の複数要件と監査役等の意見を照合。2025年3月31日施行版を2026年4月3日現在の公式APIで照合／確認2026-10-27
+        https://laws.e-gov.go.jp/law/418M60000010013_20250331_507M60000010014
+    [zr2-zaimu-framework-review-a] 財務会計の枠組み・累積A：情報と記録を読む／17問／版：zeirishi-2026-v2-framework-review-a-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-zaimu-framework-review-a/
+    [zr2-zaimu-framework-review-b] 財務会計の枠組み・累積B：測定と変更を検討する／17問／版：zeirishi-2026-v2-framework-review-b-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-zaimu-framework-review-b/
+    [zr2-zaimu-framework-review-c] 財務会計の枠組み・累積C：制度と答案の横断演習／18問／版：zeirishi-2026-v2-framework-review-c-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-zaimu-framework-review-c/
+    [zr2-zaimu-framework-glossary-assessment] 財務会計の枠組み：文脈で確かめる用語／32問／版：zeirishi-2026-v2-framework-glossary-assessment-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-zaimu-framework-glossary-assessment/
+    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
+
   2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
 
 科目：所得税法（税法）
