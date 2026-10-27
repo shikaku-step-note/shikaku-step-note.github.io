@@ -83,6 +83,22 @@
       "result": {
         "firstOrdinarySeizureDate": "2026-06-12",
         "unpaid": 250000
+      },
+      "objectives": [
+        1,
+        2
+      ],
+      "draftObjectiveIndexes": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o1"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+        "line": 39,
+        "heading": "例題1：発出日と受領日が違い、一部納付がある"
       }
     },
     {
@@ -91,6 +107,20 @@
       "result": {
         "firstOrdinarySeizureDate": "2026-07-17",
         "saleOrder": "32条4項を別に判定"
+      },
+      "objectives": [
+        3
+      ],
+      "draftObjectiveIndexes": [
+        3
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+        "line": 57,
+        "heading": "例題2：第二次義務者自身の手続を追う"
       }
     },
     {
@@ -99,6 +129,20 @@
       "result": {
         "acceleratedDue": "2026-07-16",
         "seizureAfterNonpayment": "2026-07-17"
+      },
+      "objectives": [
+        4
+      ],
+      "draftObjectiveIndexes": [
+        4
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+        "line": 73,
+        "heading": "例題3：元の納期限を待つと徴収できない"
       }
     },
     {
@@ -106,6 +150,20 @@
       "section": "例題4：督促後に財産隠匿の事実が生じた",
       "result": {
         "immediateSeizureDate": "2026-07-16"
+      },
+      "objectives": [
+        4
+      ],
+      "draftObjectiveIndexes": [
+        4
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+        "line": 87,
+        "heading": "例題4：督促後に財産隠匿の事実が生じた"
       }
     }
   ],
@@ -718,7 +776,9 @@
       ],
       "application": "図の4/27→5/6→5/7を6/1→6/10→6/11へ置換。徴収法47条1項1号が経過した日までに完納しないことを要件とするため普通差押は6/12以後",
       "verification": "2026-10-27に公式PDFの本文と表抽出を読み確認。画像取得はwebスクリーンショットが利用不可だった。根拠法は版固定主法47条。親エージェントによる独立確認待ち"
-    }
+    },
+    "workedExampleObjectiveIndexing": "2026-10-27：例題を実見出し・行へ対応し全24下位技能に少なくとも1場面を索引化。索引は全細目の完全履修の認定ではない。framework-ex4/private-ex5を追加したため両場面は独立再確認待ち",
+    "bodyCharactersAfterReviewCorrections": 4912
   },
   "continuationCoverage": [
     {

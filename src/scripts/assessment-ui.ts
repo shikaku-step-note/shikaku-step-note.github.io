@@ -7,6 +7,7 @@ import {
   remainingSeconds,
   compatibleAttempt,
   attemptSummary,
+  questionRevisionLessons,
   type Assessment,
   type AssessmentAttempt,
 } from '../lib/assessment';
@@ -325,7 +326,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       }
     }
     const missedLessons = [
-      ...new Set(a.questions.filter((q) => attempt!.missed.includes(q.id)).map((q) => q.lesson)),
+      ...new Set(a.questions.filter((q) => attempt!.missed.includes(q.id)).flatMap(questionRevisionLessons)),
     ];
     if (missedLessons.length) {
       result.append(text('h3', '復習したいレッスン'));
@@ -396,17 +397,24 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
         label.append(mark);
         details.append(label);
       }
-      const link = document.createElement('a');
-      link.href = href(`qualifications/${a.qualification}/${q.lesson}/`);
-      link.textContent = 'この内容をレッスンで復習する';
-      details.append(link);
+      const revisionIds = questionRevisionLessons(q);
+      for (const id of revisionIds) {
+        const paragraph = document.createElement('p');
+        const link = document.createElement('a');
+        link.href = href(`qualifications/${a.qualification}/${id}/`);
+        link.textContent = revisionIds.length === 1
+          ? 'この内容をレッスンで復習する'
+          : `${a.lessonTitles?.[id] ?? '関連レッスン'}で復習する`;
+        paragraph.append(link);
+        details.append(paragraph);
+      }
       result.append(details);
     });
     if (a.nextAssessment) {
       const next = document.createElement('a');
       next.href = href(`qualifications/${a.qualification}/tests/${a.nextAssessment}/`);
       next.className = 'button secondary';
-      next.textContent = '後半の模試へ（休憩後に開始）';
+      next.textContent = a.kind === 'mock' ? '後半の模試へ（休憩後に開始）' : '次の演習へ';
       result.append(next);
     }
     const retry = text('button', 'もう一度取り組む', 'button primary') as HTMLButtonElement;

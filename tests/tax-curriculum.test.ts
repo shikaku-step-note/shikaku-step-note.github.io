@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { questionRevisionLessons } from '../src/lib/assessment';
 import {
   expandedTaxIssues,
   expandedTaxAssessments,
@@ -97,4 +98,26 @@ test('unwritten prerequisites, reused questions and inconsistent written rubrics
   assert.ok(issues.some((s) => s.includes('Unimplemented expanded prerequisite')));
   assert.ok(issues.some((s) => s.includes('Incomplete self-review rubric')));
   assert.ok(issues.some((s) => s.includes('Reused independent question')));
+});
+
+test('cumulative skills retain both revision lessons and reject missing or invalid targets', () => {
+  const course = fixture();
+  const second = structuredClone(course.lessons[0]!);
+  second.id = 'zr2-boki-second';
+  second.objectiveIds = ['zr2-boki-second-o1'];
+  second.position = 2;
+  second.questions[0]!.id = 'zr2-boki-second-q1';
+  second.questions[0]!.lesson = second.id;
+  course.lessons.push(second);
+  course.units[0]!.lessonIds.push(second.id);
+  const question = course.lessons[0]!.questions[0]!;
+  question.targetObjectives = { [question.lesson]: [1], [second.id]: [1] };
+  assert.deepEqual(expandedTaxIssues(course), []);
+  assert.deepEqual(questionRevisionLessons(question), [question.lesson, second.id]);
+  question.targetObjectives[second.id] = [2];
+  assert.ok(expandedTaxIssues(course).some((s) => s.includes('Invalid cumulative objective target')));
+  question.targetObjectives = { 'zr2-boki-unwritten': [1] };
+  assert.ok(expandedTaxIssues(course).some((s) => s.includes('Invalid cumulative objective target')));
+  question.targetObjectives = { [question.lesson]: [1, 1] };
+  assert.ok(expandedTaxIssues(course).some((s) => s.includes('Inconsistent primary objective target')));
 });

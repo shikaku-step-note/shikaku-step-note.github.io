@@ -55,7 +55,9 @@ for (const subject of plan.subjects) {
           }),
           cumulativeAssessment: !!evidence?.cumulativeAssessment?.length && evidence.cumulativeAssessment.every((id) => {
             const question = cumulativeQuestions.get(id);
-            if (question?.lesson !== lesson.id || !relevant(question.objectives)) return false;
+            const targets = question?.lesson === lesson.id
+              ? question.objectives : question?.targetObjectives?.[lesson.id];
+            if (!relevant(targets)) return false;
             const assessment = [...assessmentData.values()].find((assessment) => assessment.questions.some((question) => question.id === id));
             const check = reviews.assessments[assessment.id];
             return check?.status === 'reviewed' && check.assessmentDataHash === dataHash(assessment) && existsSync(check.reviewRecord);

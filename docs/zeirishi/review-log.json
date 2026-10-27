@@ -106,7 +106,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md",
       "contentHashNormalization": "UTF-8 with LF line endings"
     },
@@ -226,7 +226,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md",
       "contentHashNormalization": "UTF-8 with LF line endings"
     },
@@ -358,7 +358,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md",
       "contentHashNormalization": "UTF-8 with LF line endings"
     },
@@ -478,7 +478,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md",
       "contentHashNormalization": "UTF-8 with LF line endings"
     },
@@ -603,7 +603,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md",
       "contentHashNormalization": "UTF-8 with LF line endings"
     },
@@ -923,7 +923,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "contentHashNormalization": "UTF-8 with LF line endings",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -1254,7 +1254,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "contentHashNormalization": "UTF-8 with LF line endings",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -1574,7 +1574,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "contentHashNormalization": "UTF-8 with LF line endings",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -1907,7 +1907,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "contentHashNormalization": "UTF-8 with LF line endings",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -2251,7 +2251,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "contentHashNormalization": "UTF-8 with LF line endings",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -2708,7 +2708,7 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "contentHashNormalization": "UTF-8 with LF line endings",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -3110,9 +3110,2311 @@
         }
       },
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "contentHashNormalization": "UTF-8 with LF line endings",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
+    },
+    "zr2-kokuzei-framework": {
+      "contentHash": "7d0bec7978edca6826b309061d3213d10749a412ea883b67fe111f326bfde65f",
+      "lessonDataHash": "50678858117fc8ac8c3473924a9deeee70703ca947daa9a4a352cd5e9c3f4b0d",
+      "objectives": {
+        "zr2-kokuzei-framework-d1": {
+          "explanation": [
+            "徴収する税と、手続の相手を最初に確定する",
+            "課税の判断と、確定した税の徴収を分ける",
+            "国税徴収法の定義で税と徴収金を分類する",
+            "本税・附帯税・滞納処分費を分けて集計する",
+            "納税者・滞納者・第二次納税義務者・第三債務者",
+            "徴収の所轄と、処分を執行する機関",
+            "例題1：源泉所得税の納税者と売掛金の相手",
+            "例題2：転居と徴収の引継ぎを読み分ける",
+            "例題3：国税優先の原則だけで配当額を決めない",
+            "例題4：徴収一覧を分類して集計する",
+            "事例を答案へ整理する手順",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "framework-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-framework-q1",
+            "zr2-kokuzei-framework-q3",
+            "zr2-kokuzei-framework-q4"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q20",
+            "zr2-kokuzei-foundations-review-q26"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "collection-law",
+                "locator": "1〜3条、8・16・32条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "2・43条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "collection-training",
+                "locator": "令和8年度第1章。2026-01-01法令を基礎とする補助教材"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-framework-d2": {
+          "explanation": [
+            "徴収する税と、手続の相手を最初に確定する",
+            "課税の判断と、確定した税の徴収を分ける",
+            "国税徴収法の定義で税と徴収金を分類する",
+            "本税・附帯税・滞納処分費を分けて集計する",
+            "納税者・滞納者・第二次納税義務者・第三債務者",
+            "徴収の所轄と、処分を執行する機関",
+            "例題1：源泉所得税の納税者と売掛金の相手",
+            "例題2：転居と徴収の引継ぎを読み分ける",
+            "例題3：国税優先の原則だけで配当額を決めない",
+            "例題4：徴収一覧を分類して集計する",
+            "事例を答案へ整理する手順",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "framework-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-framework-q2",
+            "zr2-kokuzei-framework-q8",
+            "zr2-kokuzei-framework-q9",
+            "zr2-kokuzei-framework-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q1"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "collection-law",
+                "locator": "1〜3条、8・16・32条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "2・43条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "collection-training",
+                "locator": "令和8年度第1章。2026-01-01法令を基礎とする補助教材"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-framework-d3": {
+          "explanation": [
+            "徴収する税と、手続の相手を最初に確定する",
+            "課税の判断と、確定した税の徴収を分ける",
+            "国税徴収法の定義で税と徴収金を分類する",
+            "本税・附帯税・滞納処分費を分けて集計する",
+            "納税者・滞納者・第二次納税義務者・第三債務者",
+            "徴収の所轄と、処分を執行する機関",
+            "例題1：源泉所得税の納税者と売掛金の相手",
+            "例題2：転居と徴収の引継ぎを読み分ける",
+            "例題3：国税優先の原則だけで配当額を決めない",
+            "例題4：徴収一覧を分類して集計する",
+            "事例を答案へ整理する手順",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "framework-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-framework-q6",
+            "zr2-kokuzei-framework-q7",
+            "zr2-kokuzei-framework-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q2"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "collection-law",
+                "locator": "1〜3条、8・16・32条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "2・43条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "collection-training",
+                "locator": "令和8年度第1章。2026-01-01法令を基礎とする補助教材"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-framework-d4": {
+          "explanation": [
+            "徴収する税と、手続の相手を最初に確定する",
+            "課税の判断と、確定した税の徴収を分ける",
+            "国税徴収法の定義で税と徴収金を分類する",
+            "本税・附帯税・滞納処分費を分けて集計する",
+            "納税者・滞納者・第二次納税義務者・第三債務者",
+            "徴収の所轄と、処分を執行する機関",
+            "例題1：源泉所得税の納税者と売掛金の相手",
+            "例題2：転居と徴収の引継ぎを読み分ける",
+            "例題3：国税優先の原則だけで配当額を決めない",
+            "例題4：徴収一覧を分類して集計する",
+            "事例を答案へ整理する手順",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "framework-ex3"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-framework-q5",
+            "zr2-kokuzei-framework-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q3"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "collection-law",
+                "locator": "1〜3条、8・16・32条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "2・43条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "collection-training",
+                "locator": "令和8年度第1章。2026-01-01法令を基礎とする補助教材"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-framework-o1": {
+          "explanation": [
+            "徴収する税と、手続の相手を最初に確定する",
+            "課税の判断と、確定した税の徴収を分ける",
+            "国税徴収法の定義で税と徴収金を分類する",
+            "本税・附帯税・滞納処分費を分けて集計する",
+            "納税者・滞納者・第二次納税義務者・第三債務者",
+            "徴収の所轄と、処分を執行する機関",
+            "例題1：源泉所得税の納税者と売掛金の相手",
+            "例題2：転居と徴収の引継ぎを読み分ける",
+            "例題3：国税優先の原則だけで配当額を決めない",
+            "例題4：徴収一覧を分類して集計する",
+            "事例を答案へ整理する手順",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "framework-ex4",
+            "framework-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-framework-q1",
+            "zr2-kokuzei-framework-q3",
+            "zr2-kokuzei-framework-q4",
+            "zr2-kokuzei-framework-q6",
+            "zr2-kokuzei-framework-q7",
+            "zr2-kokuzei-framework-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q20",
+            "zr2-kokuzei-foundations-review-q26",
+            "zr2-kokuzei-foundations-review-q2"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "collection-law",
+                "locator": "1〜3条、8・16・32条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "2・43条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "collection-training",
+                "locator": "令和8年度第1章。2026-01-01法令を基礎とする補助教材"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-framework-d1",
+            "zr2-kokuzei-framework-d3"
+          ]
+        },
+        "zr2-kokuzei-framework-o2": {
+          "explanation": [
+            "徴収する税と、手続の相手を最初に確定する",
+            "課税の判断と、確定した税の徴収を分ける",
+            "国税徴収法の定義で税と徴収金を分類する",
+            "本税・附帯税・滞納処分費を分けて集計する",
+            "納税者・滞納者・第二次納税義務者・第三債務者",
+            "徴収の所轄と、処分を執行する機関",
+            "例題1：源泉所得税の納税者と売掛金の相手",
+            "例題2：転居と徴収の引継ぎを読み分ける",
+            "例題3：国税優先の原則だけで配当額を決めない",
+            "例題4：徴収一覧を分類して集計する",
+            "事例を答案へ整理する手順",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "framework-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-framework-q2",
+            "zr2-kokuzei-framework-q8",
+            "zr2-kokuzei-framework-q9",
+            "zr2-kokuzei-framework-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q1"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "collection-law",
+                "locator": "1〜3条、8・16・32条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "2・43条。保存済み公式JSONを2026-10-27に確認"
+              },
+              {
+                "id": "collection-training",
+                "locator": "令和8年度第1章。2026-01-01法令を基礎とする補助教材"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-framework-d2"
+          ]
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-kokuzei-private-law": {
+      "contentHash": "6a1904adf64a506a4f9fd46a9c21d07da888d7e13b8aed37a302674fab04eb63",
+      "lessonDataHash": "24aee6057a4c8ac8f87717226700f685388fdfc39f78c46a926eef2acc76f4e9",
+      "objectives": {
+        "zr2-kokuzei-private-law-d1": {
+          "explanation": [
+            "財産の持ち主と、支払を求められる相手を分ける",
+            "所有権・占有・債権の三つを読み分ける",
+            "権利の移転と、第三者への対抗を区別する",
+            "担保を付けても、所有者や借主が当然に変わるわけではない",
+            "例題1：現金・預金・売掛金と借用機械",
+            "例題2：他人の借金のために土地を担保へ出す",
+            "法人と出資者の財産・責任を分ける",
+            "例題3：有限責任社員の未履行出資",
+            "相続財産と固有財産、単純承認と限定承認",
+            "例題4：相続した財産額をそのまま責任上限にしない",
+            "例題5：売買の効力と、第三者へ対抗する条件",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "private-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-private-law-q1",
+            "zr2-kokuzei-private-law-q2",
+            "zr2-kokuzei-private-law-q4"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q1"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "civil-law",
+                "locator": "176〜178・206・295・303・342・369・373・896・920・922・939条"
+              },
+              {
+                "id": "companies-law",
+                "locator": "104・580・612条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "5条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "15〜24・33・51条。51条の義務区分を確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-private-law-d2": {
+          "explanation": [
+            "財産の持ち主と、支払を求められる相手を分ける",
+            "所有権・占有・債権の三つを読み分ける",
+            "権利の移転と、第三者への対抗を区別する",
+            "担保を付けても、所有者や借主が当然に変わるわけではない",
+            "例題1：現金・預金・売掛金と借用機械",
+            "例題2：他人の借金のために土地を担保へ出す",
+            "法人と出資者の財産・責任を分ける",
+            "例題3：有限責任社員の未履行出資",
+            "相続財産と固有財産、単純承認と限定承認",
+            "例題4：相続した財産額をそのまま責任上限にしない",
+            "例題5：売買の効力と、第三者へ対抗する条件",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "private-ex2",
+            "private-ex5"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-private-law-q3",
+            "zr2-kokuzei-private-law-q5",
+            "zr2-kokuzei-private-law-q6"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q3"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "civil-law",
+                "locator": "176〜178・206・295・303・342・369・373・896・920・922・939条"
+              },
+              {
+                "id": "companies-law",
+                "locator": "104・580・612条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "5条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "15〜24・33・51条。51条の義務区分を確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-private-law-d3": {
+          "explanation": [
+            "財産の持ち主と、支払を求められる相手を分ける",
+            "所有権・占有・債権の三つを読み分ける",
+            "権利の移転と、第三者への対抗を区別する",
+            "担保を付けても、所有者や借主が当然に変わるわけではない",
+            "例題1：現金・預金・売掛金と借用機械",
+            "例題2：他人の借金のために土地を担保へ出す",
+            "法人と出資者の財産・責任を分ける",
+            "例題3：有限責任社員の未履行出資",
+            "相続財産と固有財産、単純承認と限定承認",
+            "例題4：相続した財産額をそのまま責任上限にしない",
+            "例題5：売買の効力と、第三者へ対抗する条件",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "private-ex3"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-private-law-q7",
+            "zr2-kokuzei-private-law-q8",
+            "zr2-kokuzei-private-law-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q4"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "civil-law",
+                "locator": "176〜178・206・295・303・342・369・373・896・920・922・939条"
+              },
+              {
+                "id": "companies-law",
+                "locator": "104・580・612条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "5条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "15〜24・33・51条。51条の義務区分を確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-private-law-d4": {
+          "explanation": [
+            "財産の持ち主と、支払を求められる相手を分ける",
+            "所有権・占有・債権の三つを読み分ける",
+            "権利の移転と、第三者への対抗を区別する",
+            "担保を付けても、所有者や借主が当然に変わるわけではない",
+            "例題1：現金・預金・売掛金と借用機械",
+            "例題2：他人の借金のために土地を担保へ出す",
+            "法人と出資者の財産・責任を分ける",
+            "例題3：有限責任社員の未履行出資",
+            "相続財産と固有財産、単純承認と限定承認",
+            "例題4：相続した財産額をそのまま責任上限にしない",
+            "例題5：売買の効力と、第三者へ対抗する条件",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "private-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-private-law-q9",
+            "zr2-kokuzei-private-law-q10",
+            "zr2-kokuzei-private-law-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q5",
+            "zr2-kokuzei-foundations-review-q16"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "civil-law",
+                "locator": "176〜178・206・295・303・342・369・373・896・920・922・939条"
+              },
+              {
+                "id": "companies-law",
+                "locator": "104・580・612条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "5条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "15〜24・33・51条。51条の義務区分を確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-private-law-o1": {
+          "explanation": [
+            "財産の持ち主と、支払を求められる相手を分ける",
+            "所有権・占有・債権の三つを読み分ける",
+            "権利の移転と、第三者への対抗を区別する",
+            "担保を付けても、所有者や借主が当然に変わるわけではない",
+            "例題1：現金・預金・売掛金と借用機械",
+            "例題2：他人の借金のために土地を担保へ出す",
+            "法人と出資者の財産・責任を分ける",
+            "例題3：有限責任社員の未履行出資",
+            "相続財産と固有財産、単純承認と限定承認",
+            "例題4：相続した財産額をそのまま責任上限にしない",
+            "例題5：売買の効力と、第三者へ対抗する条件",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "private-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-private-law-q1",
+            "zr2-kokuzei-private-law-q2",
+            "zr2-kokuzei-private-law-q4"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q1"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "civil-law",
+                "locator": "176〜178・206・295・303・342・369・373・896・920・922・939条"
+              },
+              {
+                "id": "companies-law",
+                "locator": "104・580・612条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "5条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "15〜24・33・51条。51条の義務区分を確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-private-law-d1"
+          ]
+        },
+        "zr2-kokuzei-private-law-o2": {
+          "explanation": [
+            "財産の持ち主と、支払を求められる相手を分ける",
+            "所有権・占有・債権の三つを読み分ける",
+            "権利の移転と、第三者への対抗を区別する",
+            "担保を付けても、所有者や借主が当然に変わるわけではない",
+            "例題1：現金・預金・売掛金と借用機械",
+            "例題2：他人の借金のために土地を担保へ出す",
+            "法人と出資者の財産・責任を分ける",
+            "例題3：有限責任社員の未履行出資",
+            "相続財産と固有財産、単純承認と限定承認",
+            "例題4：相続した財産額をそのまま責任上限にしない",
+            "例題5：売買の効力と、第三者へ対抗する条件",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "private-ex2",
+            "private-ex5",
+            "private-ex3",
+            "private-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-private-law-q3",
+            "zr2-kokuzei-private-law-q5",
+            "zr2-kokuzei-private-law-q6",
+            "zr2-kokuzei-private-law-q7",
+            "zr2-kokuzei-private-law-q8",
+            "zr2-kokuzei-private-law-q11",
+            "zr2-kokuzei-private-law-q9",
+            "zr2-kokuzei-private-law-q10",
+            "zr2-kokuzei-private-law-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q3",
+            "zr2-kokuzei-foundations-review-q4",
+            "zr2-kokuzei-foundations-review-q5",
+            "zr2-kokuzei-foundations-review-q16"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "civil-law",
+                "locator": "176〜178・206・295・303・342・369・373・896・920・922・939条"
+              },
+              {
+                "id": "companies-law",
+                "locator": "104・580・612条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "general-law",
+                "locator": "5条を保存済み公式JSONで2026-10-27に確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "15〜24・33・51条。51条の義務区分を確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-private-law-d2",
+            "zr2-kokuzei-private-law-d3",
+            "zr2-kokuzei-private-law-d4"
+          ]
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-kokuzei-tax-timeline": {
+      "contentHash": "e8f3057830ba07d3323fa79c5d3efd7fdd639ca898d60014cab8112128d8649b",
+      "lessonDataHash": "d6ba6f7791325cd1b0415c37ed18c2a424c6749fa3575ee56d968163b43302ad",
+      "objectives": {
+        "zr2-kokuzei-tax-timeline-d1": {
+          "explanation": [
+            "成立・確定・納付を一つの日にまとめない",
+            "納税義務の成立は課税の原因となる時点を表す",
+            "確定する方法は三つに分けて読む",
+            "期限内申告・期限後申告・修正申告・更正を区別する",
+            "法定納期限・納期限・法定納期限等を使い分ける",
+            "期間は暦と起算方法から数える",
+            "例題1：年末成立と期限内申告の関係",
+            "例題2：更正通知書の発出日と送達日",
+            "例題3：源泉所得税は告知で初めて確定するのか",
+            "例題4：源泉所得税を告知前に期限後納付した場合",
+            "日付を使った答案を検算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "timeline-ex1",
+            "timeline-ex3"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-tax-timeline-q1",
+            "zr2-kokuzei-tax-timeline-q2",
+            "zr2-kokuzei-tax-timeline-q10",
+            "zr2-kokuzei-tax-timeline-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q6"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "2・10〜12・15〜16・19・24・28・35〜36条。保存済み基準日公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "2条10号・15条1項、特に1号と5号の2。保存済み公式JSONを読解"
+              },
+              {
+                "id": "income-law",
+                "locator": "120・128条の通常申告・納付。保存済み公式JSONで確認"
+              },
+              {
+                "id": "corporate-law",
+                "locator": "74・77条の通常確定申告・納付。保存済み公式JSONで確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-tax-timeline-d2": {
+          "explanation": [
+            "成立・確定・納付を一つの日にまとめない",
+            "納税義務の成立は課税の原因となる時点を表す",
+            "確定する方法は三つに分けて読む",
+            "期限内申告・期限後申告・修正申告・更正を区別する",
+            "法定納期限・納期限・法定納期限等を使い分ける",
+            "期間は暦と起算方法から数える",
+            "例題1：年末成立と期限内申告の関係",
+            "例題2：更正通知書の発出日と送達日",
+            "例題3：源泉所得税は告知で初めて確定するのか",
+            "例題4：源泉所得税を告知前に期限後納付した場合",
+            "日付を使った答案を検算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "timeline-ex1",
+            "timeline-ex2",
+            "timeline-ex3",
+            "timeline-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-tax-timeline-q2",
+            "zr2-kokuzei-tax-timeline-q3",
+            "zr2-kokuzei-tax-timeline-q4",
+            "zr2-kokuzei-tax-timeline-q5",
+            "zr2-kokuzei-tax-timeline-q10",
+            "zr2-kokuzei-tax-timeline-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q7",
+            "zr2-kokuzei-foundations-review-q22"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "2・10〜12・15〜16・19・24・28・35〜36条。保存済み基準日公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "2条10号・15条1項、特に1号と5号の2。保存済み公式JSONを読解"
+              },
+              {
+                "id": "income-law",
+                "locator": "120・128条の通常申告・納付。保存済み公式JSONで確認"
+              },
+              {
+                "id": "corporate-law",
+                "locator": "74・77条の通常確定申告・納付。保存済み公式JSONで確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-tax-timeline-d3": {
+          "explanation": [
+            "成立・確定・納付を一つの日にまとめない",
+            "納税義務の成立は課税の原因となる時点を表す",
+            "確定する方法は三つに分けて読む",
+            "期限内申告・期限後申告・修正申告・更正を区別する",
+            "法定納期限・納期限・法定納期限等を使い分ける",
+            "期間は暦と起算方法から数える",
+            "例題1：年末成立と期限内申告の関係",
+            "例題2：更正通知書の発出日と送達日",
+            "例題3：源泉所得税は告知で初めて確定するのか",
+            "例題4：源泉所得税を告知前に期限後納付した場合",
+            "日付を使った答案を検算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "timeline-ex1",
+            "timeline-ex2",
+            "timeline-ex3",
+            "timeline-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-tax-timeline-q5",
+            "zr2-kokuzei-tax-timeline-q6",
+            "zr2-kokuzei-tax-timeline-q7",
+            "zr2-kokuzei-tax-timeline-q11",
+            "zr2-kokuzei-tax-timeline-q13"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q8"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "2・10〜12・15〜16・19・24・28・35〜36条。保存済み基準日公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "2条10号・15条1項、特に1号と5号の2。保存済み公式JSONを読解"
+              },
+              {
+                "id": "income-law",
+                "locator": "120・128条の通常申告・納付。保存済み公式JSONで確認"
+              },
+              {
+                "id": "corporate-law",
+                "locator": "74・77条の通常確定申告・納付。保存済み公式JSONで確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-tax-timeline-d4": {
+          "explanation": [
+            "成立・確定・納付を一つの日にまとめない",
+            "納税義務の成立は課税の原因となる時点を表す",
+            "確定する方法は三つに分けて読む",
+            "期限内申告・期限後申告・修正申告・更正を区別する",
+            "法定納期限・納期限・法定納期限等を使い分ける",
+            "期間は暦と起算方法から数える",
+            "例題1：年末成立と期限内申告の関係",
+            "例題2：更正通知書の発出日と送達日",
+            "例題3：源泉所得税は告知で初めて確定するのか",
+            "例題4：源泉所得税を告知前に期限後納付した場合",
+            "日付を使った答案を検算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "timeline-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-tax-timeline-q4",
+            "zr2-kokuzei-tax-timeline-q8",
+            "zr2-kokuzei-tax-timeline-q9",
+            "zr2-kokuzei-tax-timeline-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q9",
+            "zr2-kokuzei-foundations-review-q22"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "2・10〜12・15〜16・19・24・28・35〜36条。保存済み基準日公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "2条10号・15条1項、特に1号と5号の2。保存済み公式JSONを読解"
+              },
+              {
+                "id": "income-law",
+                "locator": "120・128条の通常申告・納付。保存済み公式JSONで確認"
+              },
+              {
+                "id": "corporate-law",
+                "locator": "74・77条の通常確定申告・納付。保存済み公式JSONで確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-tax-timeline-o1": {
+          "explanation": [
+            "成立・確定・納付を一つの日にまとめない",
+            "納税義務の成立は課税の原因となる時点を表す",
+            "確定する方法は三つに分けて読む",
+            "期限内申告・期限後申告・修正申告・更正を区別する",
+            "法定納期限・納期限・法定納期限等を使い分ける",
+            "期間は暦と起算方法から数える",
+            "例題1：年末成立と期限内申告の関係",
+            "例題2：更正通知書の発出日と送達日",
+            "例題3：源泉所得税は告知で初めて確定するのか",
+            "例題4：源泉所得税を告知前に期限後納付した場合",
+            "日付を使った答案を検算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "timeline-ex1",
+            "timeline-ex3",
+            "timeline-ex2",
+            "timeline-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-tax-timeline-q1",
+            "zr2-kokuzei-tax-timeline-q2",
+            "zr2-kokuzei-tax-timeline-q10",
+            "zr2-kokuzei-tax-timeline-q12",
+            "zr2-kokuzei-tax-timeline-q3",
+            "zr2-kokuzei-tax-timeline-q4",
+            "zr2-kokuzei-tax-timeline-q5",
+            "zr2-kokuzei-tax-timeline-q11",
+            "zr2-kokuzei-tax-timeline-q6",
+            "zr2-kokuzei-tax-timeline-q7",
+            "zr2-kokuzei-tax-timeline-q13"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q6",
+            "zr2-kokuzei-foundations-review-q7",
+            "zr2-kokuzei-foundations-review-q22",
+            "zr2-kokuzei-foundations-review-q8"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "2・10〜12・15〜16・19・24・28・35〜36条。保存済み基準日公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "2条10号・15条1項、特に1号と5号の2。保存済み公式JSONを読解"
+              },
+              {
+                "id": "income-law",
+                "locator": "120・128条の通常申告・納付。保存済み公式JSONで確認"
+              },
+              {
+                "id": "corporate-law",
+                "locator": "74・77条の通常確定申告・納付。保存済み公式JSONで確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-tax-timeline-d1",
+            "zr2-kokuzei-tax-timeline-d2",
+            "zr2-kokuzei-tax-timeline-d3"
+          ]
+        },
+        "zr2-kokuzei-tax-timeline-o2": {
+          "explanation": [
+            "成立・確定・納付を一つの日にまとめない",
+            "納税義務の成立は課税の原因となる時点を表す",
+            "確定する方法は三つに分けて読む",
+            "期限内申告・期限後申告・修正申告・更正を区別する",
+            "法定納期限・納期限・法定納期限等を使い分ける",
+            "期間は暦と起算方法から数える",
+            "例題1：年末成立と期限内申告の関係",
+            "例題2：更正通知書の発出日と送達日",
+            "例題3：源泉所得税は告知で初めて確定するのか",
+            "例題4：源泉所得税を告知前に期限後納付した場合",
+            "日付を使った答案を検算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "timeline-ex1",
+            "timeline-ex2",
+            "timeline-ex3",
+            "timeline-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-tax-timeline-q2",
+            "zr2-kokuzei-tax-timeline-q3",
+            "zr2-kokuzei-tax-timeline-q4",
+            "zr2-kokuzei-tax-timeline-q5",
+            "zr2-kokuzei-tax-timeline-q10",
+            "zr2-kokuzei-tax-timeline-q11",
+            "zr2-kokuzei-tax-timeline-q6",
+            "zr2-kokuzei-tax-timeline-q7",
+            "zr2-kokuzei-tax-timeline-q13",
+            "zr2-kokuzei-tax-timeline-q8",
+            "zr2-kokuzei-tax-timeline-q9"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q7",
+            "zr2-kokuzei-foundations-review-q22",
+            "zr2-kokuzei-foundations-review-q8",
+            "zr2-kokuzei-foundations-review-q9"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "2・10〜12・15〜16・19・24・28・35〜36条。保存済み基準日公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "2条10号・15条1項、特に1号と5号の2。保存済み公式JSONを読解"
+              },
+              {
+                "id": "income-law",
+                "locator": "120・128条の通常申告・納付。保存済み公式JSONで確認"
+              },
+              {
+                "id": "corporate-law",
+                "locator": "74・77条の通常確定申告・納付。保存済み公式JSONで確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-tax-timeline-d2",
+            "zr2-kokuzei-tax-timeline-d3",
+            "zr2-kokuzei-tax-timeline-d4"
+          ]
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-kokuzei-demand-acceleration": {
+      "contentHash": "9edd8a7548cc1a77dcce5c02927a5ad9b92dbee6e5d930956051645dbb55680a",
+      "lessonDataHash": "9edf63212bcc36247943979d955f947aada280174be7ddbce4b55fdf93b7fff2",
+      "objectives": {
+        "zr2-kokuzei-demand-acceleration-d1": {
+          "explanation": [
+            "通常の督促から差押えへ進む条件を確認する",
+            "督促状を発する場合と、督促を要しない場合",
+            "発出からの日数と、督促を受けたことの両方を調べる",
+            "例題1：発出日と受領日が違い、一部納付がある",
+            "第二次納税義務者には納付通知と納付催告を区分する",
+            "例題2：第二次義務者自身の手続を追う",
+            "繰上請求は、確定した税額の納期限を繰り上げる",
+            "例題3：元の納期限を待つと徴収できない",
+            "繰上差押えは、督促後の待機期間中の例外",
+            "例題4：督促後に財産隠匿の事実が生じた",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "demand-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-demand-acceleration-q1",
+            "zr2-kokuzei-demand-acceleration-q4",
+            "zr2-kokuzei-demand-acceleration-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q10"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "10・12・37〜40条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "32・47条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "印刷8頁（PDF19頁、0-based18）第1章第2節・参考「期間の計算の具体例」表の行2・4。第3章の督促と徴収繰上も参照"
+              },
+              {
+                "id": "collection-training",
+                "locator": "第6章の第二次義務徴収手続。待機と換価制限を主法と照合"
+              },
+              {
+                "id": "demand-50day-decision",
+                "locator": "平成15年7月3日裁決・判断(3)ロ。50日規定の効力"
+              },
+              {
+                "id": "seizure-warning-decision",
+                "locator": "平成13年12月19日裁決・判断(4)。差押予告"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-demand-acceleration-d2": {
+          "explanation": [
+            "通常の督促から差押えへ進む条件を確認する",
+            "督促状を発する場合と、督促を要しない場合",
+            "発出からの日数と、督促を受けたことの両方を調べる",
+            "例題1：発出日と受領日が違い、一部納付がある",
+            "第二次納税義務者には納付通知と納付催告を区分する",
+            "例題2：第二次義務者自身の手続を追う",
+            "繰上請求は、確定した税額の納期限を繰り上げる",
+            "例題3：元の納期限を待つと徴収できない",
+            "繰上差押えは、督促後の待機期間中の例外",
+            "例題4：督促後に財産隠匿の事実が生じた",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "demand-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-demand-acceleration-q2",
+            "zr2-kokuzei-demand-acceleration-q3"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q10",
+            "zr2-kokuzei-foundations-review-q11"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "10・12・37〜40条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "32・47条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "印刷8頁（PDF19頁、0-based18）第1章第2節・参考「期間の計算の具体例」表の行2・4。第3章の督促と徴収繰上も参照"
+              },
+              {
+                "id": "collection-training",
+                "locator": "第6章の第二次義務徴収手続。待機と換価制限を主法と照合"
+              },
+              {
+                "id": "demand-50day-decision",
+                "locator": "平成15年7月3日裁決・判断(3)ロ。50日規定の効力"
+              },
+              {
+                "id": "seizure-warning-decision",
+                "locator": "平成13年12月19日裁決・判断(4)。差押予告"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-demand-acceleration-d3": {
+          "explanation": [
+            "通常の督促から差押えへ進む条件を確認する",
+            "督促状を発する場合と、督促を要しない場合",
+            "発出からの日数と、督促を受けたことの両方を調べる",
+            "例題1：発出日と受領日が違い、一部納付がある",
+            "第二次納税義務者には納付通知と納付催告を区分する",
+            "例題2：第二次義務者自身の手続を追う",
+            "繰上請求は、確定した税額の納期限を繰り上げる",
+            "例題3：元の納期限を待つと徴収できない",
+            "繰上差押えは、督促後の待機期間中の例外",
+            "例題4：督促後に財産隠匿の事実が生じた",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "demand-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-demand-acceleration-q5",
+            "zr2-kokuzei-demand-acceleration-q6",
+            "zr2-kokuzei-demand-acceleration-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q12"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "10・12・37〜40条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "32・47条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "印刷8頁（PDF19頁、0-based18）第1章第2節・参考「期間の計算の具体例」表の行2・4。第3章の督促と徴収繰上も参照"
+              },
+              {
+                "id": "collection-training",
+                "locator": "第6章の第二次義務徴収手続。待機と換価制限を主法と照合"
+              },
+              {
+                "id": "demand-50day-decision",
+                "locator": "平成15年7月3日裁決・判断(3)ロ。50日規定の効力"
+              },
+              {
+                "id": "seizure-warning-decision",
+                "locator": "平成13年12月19日裁決・判断(4)。差押予告"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-demand-acceleration-d4": {
+          "explanation": [
+            "通常の督促から差押えへ進む条件を確認する",
+            "督促状を発する場合と、督促を要しない場合",
+            "発出からの日数と、督促を受けたことの両方を調べる",
+            "例題1：発出日と受領日が違い、一部納付がある",
+            "第二次納税義務者には納付通知と納付催告を区分する",
+            "例題2：第二次義務者自身の手続を追う",
+            "繰上請求は、確定した税額の納期限を繰り上げる",
+            "例題3：元の納期限を待つと徴収できない",
+            "繰上差押えは、督促後の待機期間中の例外",
+            "例題4：督促後に財産隠匿の事実が生じた",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "demand-ex3",
+            "demand-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-demand-acceleration-q7",
+            "zr2-kokuzei-demand-acceleration-q8",
+            "zr2-kokuzei-demand-acceleration-q9",
+            "zr2-kokuzei-demand-acceleration-q10",
+            "zr2-kokuzei-demand-acceleration-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q13",
+            "zr2-kokuzei-foundations-review-q14"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "10・12・37〜40条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "32・47条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "印刷8頁（PDF19頁、0-based18）第1章第2節・参考「期間の計算の具体例」表の行2・4。第3章の督促と徴収繰上も参照"
+              },
+              {
+                "id": "collection-training",
+                "locator": "第6章の第二次義務徴収手続。待機と換価制限を主法と照合"
+              },
+              {
+                "id": "demand-50day-decision",
+                "locator": "平成15年7月3日裁決・判断(3)ロ。50日規定の効力"
+              },
+              {
+                "id": "seizure-warning-decision",
+                "locator": "平成13年12月19日裁決・判断(4)。差押予告"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-demand-acceleration-o1": {
+          "explanation": [
+            "通常の督促から差押えへ進む条件を確認する",
+            "督促状を発する場合と、督促を要しない場合",
+            "発出からの日数と、督促を受けたことの両方を調べる",
+            "例題1：発出日と受領日が違い、一部納付がある",
+            "第二次納税義務者には納付通知と納付催告を区分する",
+            "例題2：第二次義務者自身の手続を追う",
+            "繰上請求は、確定した税額の納期限を繰り上げる",
+            "例題3：元の納期限を待つと徴収できない",
+            "繰上差押えは、督促後の待機期間中の例外",
+            "例題4：督促後に財産隠匿の事実が生じた",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "demand-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-demand-acceleration-q1",
+            "zr2-kokuzei-demand-acceleration-q4",
+            "zr2-kokuzei-demand-acceleration-q11",
+            "zr2-kokuzei-demand-acceleration-q2",
+            "zr2-kokuzei-demand-acceleration-q3"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q10",
+            "zr2-kokuzei-foundations-review-q11"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "10・12・37〜40条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "32・47条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "印刷8頁（PDF19頁、0-based18）第1章第2節・参考「期間の計算の具体例」表の行2・4。第3章の督促と徴収繰上も参照"
+              },
+              {
+                "id": "collection-training",
+                "locator": "第6章の第二次義務徴収手続。待機と換価制限を主法と照合"
+              },
+              {
+                "id": "demand-50day-decision",
+                "locator": "平成15年7月3日裁決・判断(3)ロ。50日規定の効力"
+              },
+              {
+                "id": "seizure-warning-decision",
+                "locator": "平成13年12月19日裁決・判断(4)。差押予告"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-demand-acceleration-d1",
+            "zr2-kokuzei-demand-acceleration-d2"
+          ]
+        },
+        "zr2-kokuzei-demand-acceleration-o2": {
+          "explanation": [
+            "通常の督促から差押えへ進む条件を確認する",
+            "督促状を発する場合と、督促を要しない場合",
+            "発出からの日数と、督促を受けたことの両方を調べる",
+            "例題1：発出日と受領日が違い、一部納付がある",
+            "第二次納税義務者には納付通知と納付催告を区分する",
+            "例題2：第二次義務者自身の手続を追う",
+            "繰上請求は、確定した税額の納期限を繰り上げる",
+            "例題3：元の納期限を待つと徴収できない",
+            "繰上差押えは、督促後の待機期間中の例外",
+            "例題4：督促後に財産隠匿の事実が生じた",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "demand-ex2",
+            "demand-ex3",
+            "demand-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-demand-acceleration-q5",
+            "zr2-kokuzei-demand-acceleration-q6",
+            "zr2-kokuzei-demand-acceleration-q11",
+            "zr2-kokuzei-demand-acceleration-q7",
+            "zr2-kokuzei-demand-acceleration-q8",
+            "zr2-kokuzei-demand-acceleration-q9",
+            "zr2-kokuzei-demand-acceleration-q10",
+            "zr2-kokuzei-demand-acceleration-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q12",
+            "zr2-kokuzei-foundations-review-q13",
+            "zr2-kokuzei-foundations-review-q14"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "10・12・37〜40条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "collection-law",
+                "locator": "32・47条を保存済み公式JSONで確認"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "印刷8頁（PDF19頁、0-based18）第1章第2節・参考「期間の計算の具体例」表の行2・4。第3章の督促と徴収繰上も参照"
+              },
+              {
+                "id": "collection-training",
+                "locator": "第6章の第二次義務徴収手続。待機と換価制限を主法と照合"
+              },
+              {
+                "id": "demand-50day-decision",
+                "locator": "平成15年7月3日裁決・判断(3)ロ。50日規定の効力"
+              },
+              {
+                "id": "seizure-warning-decision",
+                "locator": "平成13年12月19日裁決・判断(4)。差押予告"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-demand-acceleration-d3",
+            "zr2-kokuzei-demand-acceleration-d4"
+          ]
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-kokuzei-limitations-succession": {
+      "contentHash": "689ac761ac012d700f45bf856ae20dc35e7aaed2b247e5f2e20ef763c24cc204",
+      "lessonDataHash": "a9c0c11f95c1a905b730ecfe2543ec174e3dcc829a5cc5a47816808c3f00da0c",
+      "objectives": {
+        "zr2-kokuzei-limitations-succession-d1": {
+          "explanation": [
+            "未納額と、徴収する権利が残る期間を別々に追う",
+            "徴収権の消滅時効は原則5年、援用は不要",
+            "完成猶予・更新・進行しない期間を区別する",
+            "例題1：督促の前後で5年を数え直す",
+            "相続による承継は各相続人の額と追加の責任を分ける",
+            "例題2：配偶者と子2人の承継額・取得価額",
+            "合併・団体財産の承継・会社分割は同じ制度にしない",
+            "例題3：合併と社団財産の一部承継",
+            "連帯納付では対外的な義務と内部負担を区別する",
+            "還付と充当を残高へ反映する",
+            "例題4：本税への充当後に附帯税を計算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "limitations-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-limitations-succession-q1",
+            "zr2-kokuzei-limitations-succession-q2",
+            "zr2-kokuzei-limitations-succession-q3",
+            "zr2-kokuzei-limitations-succession-q4",
+            "zr2-kokuzei-limitations-succession-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q15"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "civil-law",
+                "locator": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "47・51条等。版固定主法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-limitations-succession-d2": {
+          "explanation": [
+            "未納額と、徴収する権利が残る期間を別々に追う",
+            "徴収権の消滅時効は原則5年、援用は不要",
+            "完成猶予・更新・進行しない期間を区別する",
+            "例題1：督促の前後で5年を数え直す",
+            "相続による承継は各相続人の額と追加の責任を分ける",
+            "例題2：配偶者と子2人の承継額・取得価額",
+            "合併・団体財産の承継・会社分割は同じ制度にしない",
+            "例題3：合併と社団財産の一部承継",
+            "連帯納付では対外的な義務と内部負担を区別する",
+            "還付と充当を残高へ反映する",
+            "例題4：本税への充当後に附帯税を計算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "limitations-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-limitations-succession-q5",
+            "zr2-kokuzei-limitations-succession-q6",
+            "zr2-kokuzei-limitations-succession-q7"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q5",
+            "zr2-kokuzei-foundations-review-q16"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "civil-law",
+                "locator": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "47・51条等。版固定主法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-limitations-succession-d3": {
+          "explanation": [
+            "未納額と、徴収する権利が残る期間を別々に追う",
+            "徴収権の消滅時効は原則5年、援用は不要",
+            "完成猶予・更新・進行しない期間を区別する",
+            "例題1：督促の前後で5年を数え直す",
+            "相続による承継は各相続人の額と追加の責任を分ける",
+            "例題2：配偶者と子2人の承継額・取得価額",
+            "合併・団体財産の承継・会社分割は同じ制度にしない",
+            "例題3：合併と社団財産の一部承継",
+            "連帯納付では対外的な義務と内部負担を区別する",
+            "還付と充当を残高へ反映する",
+            "例題4：本税への充当後に附帯税を計算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "limitations-ex3"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-limitations-succession-q8",
+            "zr2-kokuzei-limitations-succession-q9",
+            "zr2-kokuzei-limitations-succession-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q17",
+            "zr2-kokuzei-foundations-review-q18"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "civil-law",
+                "locator": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "47・51条等。版固定主法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-limitations-succession-d4": {
+          "explanation": [
+            "未納額と、徴収する権利が残る期間を別々に追う",
+            "徴収権の消滅時効は原則5年、援用は不要",
+            "完成猶予・更新・進行しない期間を区別する",
+            "例題1：督促の前後で5年を数え直す",
+            "相続による承継は各相続人の額と追加の責任を分ける",
+            "例題2：配偶者と子2人の承継額・取得価額",
+            "合併・団体財産の承継・会社分割は同じ制度にしない",
+            "例題3：合併と社団財産の一部承継",
+            "連帯納付では対外的な義務と内部負担を区別する",
+            "還付と充当を残高へ反映する",
+            "例題4：本税への充当後に附帯税を計算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "limitations-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-limitations-succession-q7",
+            "zr2-kokuzei-limitations-succession-q10",
+            "zr2-kokuzei-limitations-succession-q11",
+            "zr2-kokuzei-limitations-succession-q12",
+            "zr2-kokuzei-limitations-succession-q13"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q11",
+            "zr2-kokuzei-foundations-review-q18",
+            "zr2-kokuzei-foundations-review-q19"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "civil-law",
+                "locator": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "47・51条等。版固定主法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-limitations-succession-o1": {
+          "explanation": [
+            "未納額と、徴収する権利が残る期間を別々に追う",
+            "徴収権の消滅時効は原則5年、援用は不要",
+            "完成猶予・更新・進行しない期間を区別する",
+            "例題1：督促の前後で5年を数え直す",
+            "相続による承継は各相続人の額と追加の責任を分ける",
+            "例題2：配偶者と子2人の承継額・取得価額",
+            "合併・団体財産の承継・会社分割は同じ制度にしない",
+            "例題3：合併と社団財産の一部承継",
+            "連帯納付では対外的な義務と内部負担を区別する",
+            "還付と充当を残高へ反映する",
+            "例題4：本税への充当後に附帯税を計算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "limitations-ex1"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-limitations-succession-q1",
+            "zr2-kokuzei-limitations-succession-q2",
+            "zr2-kokuzei-limitations-succession-q3",
+            "zr2-kokuzei-limitations-succession-q4",
+            "zr2-kokuzei-limitations-succession-q12"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q15"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "civil-law",
+                "locator": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "47・51条等。版固定主法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-limitations-succession-d1"
+          ]
+        },
+        "zr2-kokuzei-limitations-succession-o2": {
+          "explanation": [
+            "未納額と、徴収する権利が残る期間を別々に追う",
+            "徴収権の消滅時効は原則5年、援用は不要",
+            "完成猶予・更新・進行しない期間を区別する",
+            "例題1：督促の前後で5年を数え直す",
+            "相続による承継は各相続人の額と追加の責任を分ける",
+            "例題2：配偶者と子2人の承継額・取得価額",
+            "合併・団体財産の承継・会社分割は同じ制度にしない",
+            "例題3：合併と社団財産の一部承継",
+            "連帯納付では対外的な義務と内部負担を区別する",
+            "還付と充当を残高へ反映する",
+            "例題4：本税への充当後に附帯税を計算する",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "limitations-ex2",
+            "limitations-ex3",
+            "limitations-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-limitations-succession-q5",
+            "zr2-kokuzei-limitations-succession-q6",
+            "zr2-kokuzei-limitations-succession-q7",
+            "zr2-kokuzei-limitations-succession-q8",
+            "zr2-kokuzei-limitations-succession-q9",
+            "zr2-kokuzei-limitations-succession-q11",
+            "zr2-kokuzei-limitations-succession-q10",
+            "zr2-kokuzei-limitations-succession-q12",
+            "zr2-kokuzei-limitations-succession-q13"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q5",
+            "zr2-kokuzei-foundations-review-q16",
+            "zr2-kokuzei-foundations-review-q17",
+            "zr2-kokuzei-foundations-review-q18",
+            "zr2-kokuzei-foundations-review-q11",
+            "zr2-kokuzei-foundations-review-q19"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解"
+              },
+              {
+                "id": "civil-law",
+                "locator": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解"
+              },
+              {
+                "id": "collection-law",
+                "locator": "47・51条等。版固定主法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-limitations-succession-d2",
+            "zr2-kokuzei-limitations-succession-d3",
+            "zr2-kokuzei-limitations-succession-d4"
+          ]
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-kokuzei-late-tax": {
+      "contentHash": "e88398520c209d65831c291df34fa97eb38a43689c0ad1e550f2b35418ccf6b3",
+      "lessonDataHash": "0cf9f7e063169707225e1fdd02edfdb95ae43af914d4970bbbced502378ffef1",
+      "objectives": {
+        "zr2-kokuzei-late-tax-d1": {
+          "explanation": [
+            "納付の遅れと、申告等の義務違反を別々に計算する",
+            "延滞税は基礎税額・期間・割合・端数の順に求める",
+            "法定納期限と、2か月を区切る納期限を区別する",
+            "例題1：二つの割合と本税の端数を処理する",
+            "一部納付があれば、その日までの額と翌日以後の額を分ける",
+            "修正・更正には計算期間から控除する特例がある",
+            "例題2：1年後の修正と暦年の割合変更",
+            "加算税は調査の通知・予知・隠蔽等の事実から選ぶ",
+            "例題3：過少申告加算税の5％加重部分",
+            "例題4：無申告の段階税率と自主申告の場合の違い",
+            "最終税額の端数と最低額も税の種類で違う",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "late-ex1",
+            "late-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-late-tax-q1",
+            "zr2-kokuzei-late-tax-q3",
+            "zr2-kokuzei-late-tax-q15"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q8",
+            "zr2-kokuzei-foundations-review-q21"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "60〜68・118〜119条。版固定JSONの該当条項を読解"
+              },
+              {
+                "id": "special-law",
+                "locator": "94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認"
+              },
+              {
+                "id": "collection-delay",
+                "locator": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例"
+              },
+              {
+                "id": "delay-calculation",
+                "locator": "納期限前後の低率期間、原則計算方法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-late-tax-d2": {
+          "explanation": [
+            "納付の遅れと、申告等の義務違反を別々に計算する",
+            "延滞税は基礎税額・期間・割合・端数の順に求める",
+            "法定納期限と、2か月を区切る納期限を区別する",
+            "例題1：二つの割合と本税の端数を処理する",
+            "一部納付があれば、その日までの額と翌日以後の額を分ける",
+            "修正・更正には計算期間から控除する特例がある",
+            "例題2：1年後の修正と暦年の割合変更",
+            "加算税は調査の通知・予知・隠蔽等の事実から選ぶ",
+            "例題3：過少申告加算税の5％加重部分",
+            "例題4：無申告の段階税率と自主申告の場合の違い",
+            "最終税額の端数と最低額も税の種類で違う",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "late-ex1",
+            "late-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-late-tax-q2",
+            "zr2-kokuzei-late-tax-q3",
+            "zr2-kokuzei-late-tax-q4",
+            "zr2-kokuzei-late-tax-q6",
+            "zr2-kokuzei-late-tax-q12",
+            "zr2-kokuzei-late-tax-q14"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q19",
+            "zr2-kokuzei-foundations-review-q20",
+            "zr2-kokuzei-foundations-review-q21"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "60〜68・118〜119条。版固定JSONの該当条項を読解"
+              },
+              {
+                "id": "special-law",
+                "locator": "94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認"
+              },
+              {
+                "id": "collection-delay",
+                "locator": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例"
+              },
+              {
+                "id": "delay-calculation",
+                "locator": "納期限前後の低率期間、原則計算方法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-late-tax-d3": {
+          "explanation": [
+            "納付の遅れと、申告等の義務違反を別々に計算する",
+            "延滞税は基礎税額・期間・割合・端数の順に求める",
+            "法定納期限と、2か月を区切る納期限を区別する",
+            "例題1：二つの割合と本税の端数を処理する",
+            "一部納付があれば、その日までの額と翌日以後の額を分ける",
+            "修正・更正には計算期間から控除する特例がある",
+            "例題2：1年後の修正と暦年の割合変更",
+            "加算税は調査の通知・予知・隠蔽等の事実から選ぶ",
+            "例題3：過少申告加算税の5％加重部分",
+            "例題4：無申告の段階税率と自主申告の場合の違い",
+            "最終税額の端数と最低額も税の種類で違う",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "late-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-late-tax-q5",
+            "zr2-kokuzei-late-tax-q15"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q22"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "60〜68・118〜119条。版固定JSONの該当条項を読解"
+              },
+              {
+                "id": "special-law",
+                "locator": "94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認"
+              },
+              {
+                "id": "collection-delay",
+                "locator": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例"
+              },
+              {
+                "id": "delay-calculation",
+                "locator": "納期限前後の低率期間、原則計算方法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-late-tax-d4": {
+          "explanation": [
+            "納付の遅れと、申告等の義務違反を別々に計算する",
+            "延滞税は基礎税額・期間・割合・端数の順に求める",
+            "法定納期限と、2か月を区切る納期限を区別する",
+            "例題1：二つの割合と本税の端数を処理する",
+            "一部納付があれば、その日までの額と翌日以後の額を分ける",
+            "修正・更正には計算期間から控除する特例がある",
+            "例題2：1年後の修正と暦年の割合変更",
+            "加算税は調査の通知・予知・隠蔽等の事実から選ぶ",
+            "例題3：過少申告加算税の5％加重部分",
+            "例題4：無申告の段階税率と自主申告の場合の違い",
+            "最終税額の端数と最低額も税の種類で違う",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "late-ex3",
+            "late-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-late-tax-q7",
+            "zr2-kokuzei-late-tax-q8",
+            "zr2-kokuzei-late-tax-q9",
+            "zr2-kokuzei-late-tax-q10",
+            "zr2-kokuzei-late-tax-q11",
+            "zr2-kokuzei-late-tax-q12",
+            "zr2-kokuzei-late-tax-q13",
+            "zr2-kokuzei-late-tax-q14"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q23",
+            "zr2-kokuzei-foundations-review-q24",
+            "zr2-kokuzei-foundations-review-q25"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "60〜68・118〜119条。版固定JSONの該当条項を読解"
+              },
+              {
+                "id": "special-law",
+                "locator": "94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認"
+              },
+              {
+                "id": "collection-delay",
+                "locator": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例"
+              },
+              {
+                "id": "delay-calculation",
+                "locator": "納期限前後の低率期間、原則計算方法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          }
+        },
+        "zr2-kokuzei-late-tax-o1": {
+          "explanation": [
+            "納付の遅れと、申告等の義務違反を別々に計算する",
+            "延滞税は基礎税額・期間・割合・端数の順に求める",
+            "法定納期限と、2か月を区切る納期限を区別する",
+            "例題1：二つの割合と本税の端数を処理する",
+            "一部納付があれば、その日までの額と翌日以後の額を分ける",
+            "修正・更正には計算期間から控除する特例がある",
+            "例題2：1年後の修正と暦年の割合変更",
+            "加算税は調査の通知・予知・隠蔽等の事実から選ぶ",
+            "例題3：過少申告加算税の5％加重部分",
+            "例題4：無申告の段階税率と自主申告の場合の違い",
+            "最終税額の端数と最低額も税の種類で違う",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "late-ex1",
+            "late-ex2"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-late-tax-q1",
+            "zr2-kokuzei-late-tax-q3",
+            "zr2-kokuzei-late-tax-q15",
+            "zr2-kokuzei-late-tax-q2",
+            "zr2-kokuzei-late-tax-q4",
+            "zr2-kokuzei-late-tax-q6",
+            "zr2-kokuzei-late-tax-q12",
+            "zr2-kokuzei-late-tax-q14"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q8",
+            "zr2-kokuzei-foundations-review-q21",
+            "zr2-kokuzei-foundations-review-q19",
+            "zr2-kokuzei-foundations-review-q20"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "60〜68・118〜119条。版固定JSONの該当条項を読解"
+              },
+              {
+                "id": "special-law",
+                "locator": "94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認"
+              },
+              {
+                "id": "collection-delay",
+                "locator": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例"
+              },
+              {
+                "id": "delay-calculation",
+                "locator": "納期限前後の低率期間、原則計算方法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-late-tax-d1",
+            "zr2-kokuzei-late-tax-d2"
+          ]
+        },
+        "zr2-kokuzei-late-tax-o2": {
+          "explanation": [
+            "納付の遅れと、申告等の義務違反を別々に計算する",
+            "延滞税は基礎税額・期間・割合・端数の順に求める",
+            "法定納期限と、2か月を区切る納期限を区別する",
+            "例題1：二つの割合と本税の端数を処理する",
+            "一部納付があれば、その日までの額と翌日以後の額を分ける",
+            "修正・更正には計算期間から控除する特例がある",
+            "例題2：1年後の修正と暦年の割合変更",
+            "加算税は調査の通知・予知・隠蔽等の事実から選ぶ",
+            "例題3：過少申告加算税の5％加重部分",
+            "例題4：無申告の段階税率と自主申告の場合の違い",
+            "最終税額の端数と最低額も税の種類で違う",
+            "根拠資料"
+          ],
+          "workedExamples": [
+            "late-ex2",
+            "late-ex3",
+            "late-ex4"
+          ],
+          "independentPractice": [
+            "zr2-kokuzei-late-tax-q5",
+            "zr2-kokuzei-late-tax-q15",
+            "zr2-kokuzei-late-tax-q7",
+            "zr2-kokuzei-late-tax-q8",
+            "zr2-kokuzei-late-tax-q9",
+            "zr2-kokuzei-late-tax-q10",
+            "zr2-kokuzei-late-tax-q11",
+            "zr2-kokuzei-late-tax-q12",
+            "zr2-kokuzei-late-tax-q13",
+            "zr2-kokuzei-late-tax-q14"
+          ],
+          "cumulativeAssessment": [
+            "zr2-kokuzei-foundations-review-q22",
+            "zr2-kokuzei-foundations-review-q23",
+            "zr2-kokuzei-foundations-review-q24",
+            "zr2-kokuzei-foundations-review-q25"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate source/calculation reviewer; see independent record",
+            "sources": [
+              {
+                "id": "general-law",
+                "locator": "60〜68・118〜119条。版固定JSONの該当条項を読解"
+              },
+              {
+                "id": "special-law",
+                "locator": "94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認"
+              },
+              {
+                "id": "collection-delay",
+                "locator": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例"
+              },
+              {
+                "id": "delay-calculation",
+                "locator": "納期限前後の低率期間、原則計算方法"
+              },
+              {
+                "id": "general-training-2026",
+                "locator": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "AI author and separate full-text reviewer",
+            "method": "natural-japaneseの4ツールと全文の文脈確認、humanizerの定型句確認、proofread-jaの助詞・表記・日付・用語・要求と採点の一致を確認。専門的な条件と否定を保持。"
+          },
+          "detailedObjectiveIds": [
+            "zr2-kokuzei-late-tax-d3",
+            "zr2-kokuzei-late-tax-d4"
+          ]
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
     }
   },
   "assessments": {
@@ -3121,7 +5423,7 @@
       "assessmentDataHash": "b6481f3a4858aeb2584310769c1fb3679f7d0e56d4c2639e3e8e989778cbe27c",
       "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
       "date": "2026-10-27",
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "independence": "独自作問。レッスン問題の抽出はなし。用語テストは適用力の累積評価に数えない。",
       "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
     },
@@ -3130,7 +5432,7 @@
       "assessmentDataHash": "933d65ec25c546fd6fce4fce4087cc97c934495eb3e5864c6f563c56b42a8932",
       "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
       "date": "2026-10-27",
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "independence": "独自作問。レッスン問題の抽出はなし。用語テストは適用力の累積評価に数えない。",
       "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
     },
@@ -3139,7 +5441,7 @@
       "date": "2026-10-27",
       "assessmentDataHash": "7d8b2f3ae70af971ef2805754e7bd7f7ed0a3db0c182ef267938fcebe16858c7",
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "independence": "レッスン問題の抽出なし。A・B・Cと用語評価の問題IDは相互に独立。用語を非用語の累積証拠に算入しない。",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -3148,7 +5450,7 @@
       "date": "2026-10-27",
       "assessmentDataHash": "0fea20a1f2405c317a976aa0d6675a8584d9db1c3e8581fa31dbeeefb5ebae68",
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "independence": "レッスン問題の抽出なし。A・B・Cと用語評価の問題IDは相互に独立。用語を非用語の累積証拠に算入しない。",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -3157,7 +5459,7 @@
       "date": "2026-10-27",
       "assessmentDataHash": "82f8c8555fdcc9ea945baf74b2bb9778e210fb332efbdd1490c7a144e76107e5",
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "independence": "レッスン問題の抽出なし。A・B・Cと用語評価の問題IDは相互に独立。用語を非用語の累積証拠に算入しない。",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
     },
@@ -3166,9 +5468,27 @@
       "date": "2026-10-27",
       "assessmentDataHash": "185933bd4504ae1d98f5dfa74cf2b28bc7846dbffd5db90ff90b110017b69d14",
       "reviewRecord": "docs/zeirishi/reviews/bookkeeping-records-integration.md",
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "independence": "レッスン問題の抽出なし。A・B・Cと用語評価の問題IDは相互に独立。用語を非用語の累積証拠に算入しない。",
       "browserReviewRecord": "docs/zeirishi/reviews/bookkeeping-records-browser.md"
+    },
+    "zr2-kokuzei-unit-foundations-review": {
+      "status": "reviewed",
+      "date": "2026-10-27",
+      "assessmentDataHash": "2e620ec663d506754246fbf1dbc959d4ab0fa0a6528bfac8b9bb2ce51a0beafb",
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "independence": "講末77問を抽出しない26の新事例と、別の12用語事例。用語評価は非用語の累積証拠へ加算しない。",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
+    },
+    "zr2-kokuzei-foundations-glossary": {
+      "status": "reviewed",
+      "date": "2026-10-27",
+      "assessmentDataHash": "0ef0b020328fc439c524aa17afb89d7f5d0111dacdd4bdb679b9229765cda8f8",
+      "reviewRecord": "docs/zeirishi/reviews/collection-foundations-integration.md",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "independence": "講末77問を抽出しない26の新事例と、別の12用語事例。用語評価は非用語の累積証拠へ加算しない。",
+      "browserReviewRecord": "docs/zeirishi/reviews/collection-foundations-browser.md"
     }
   },
   "sourceChecks": {}

@@ -133,6 +133,14 @@ export function expandedTaxIssues(course: ExpandedTaxCurriculum): string[] {
         question.objectives.some((n) => !Number.isInteger(n) || n < 1 || n > owner.objectives.length)
       )
         issues.push(`Question/learning objective mismatch: ${question.id}`);
+      for (const [id, indices] of Object.entries(question.targetObjectives ?? {})) {
+        const target = course.lessons.find((lesson) => lesson.id === id);
+        if (!target || !indices.length || new Set(indices).size !== indices.length ||
+            indices.some((n) => !Number.isInteger(n) || n < 1 || n > target.objectives.length))
+          issues.push(`Invalid cumulative objective target: ${question.id}:${id}`);
+        if (id === question.lesson && JSON.stringify([...indices].sort()) !== JSON.stringify([...(question.objectives ?? [])].sort()))
+          issues.push(`Inconsistent primary objective target: ${question.id}`);
+      }
       if (question.input === 'essay') {
         if (
           !question.modelAnswer?.trim() ||

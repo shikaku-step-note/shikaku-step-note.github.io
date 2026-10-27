@@ -239,7 +239,7 @@
       "plannedLessonIds": [
         "zr2-kokuzei-other-fund-security"
       ],
-      "status": "planned_not_authored"
+      "status": "authored_draft_pending_independent_review"
     },
     {
       "competency": "企業担保及び裁判所競売・破産と国税の手続調整",
@@ -750,6 +750,15 @@
     "legalChecks": "対象と登録・登記の効力、質権禁止範囲、工場法2条と財団13条の単独差押制限、企業担保の社債・効力登記・私権相互を条文へ対応。個別法の利息特別登記の有無を区別した",
     "editorial": "全本文・4例・15問の要求と模範・選択肢別誤理由を著者が再読。採点項目は設問要求へ対応。独立評価は未実施",
     "paragraphReview": "全段落を対象・要件・効果・例外の順と自然な接続の観点で手動再読。文章を短くするための法的条件削除はしていない",
-    "automatedJapaneseReview": "paragraphs補助のみ可。sudachipy未導入でlint/calquesは実行不可。自動処理完了とはしない"
+    "automatedJapaneseReview": "paragraphs補助のみ可。sudachipy未導入でlint/calquesは実行不可。自動処理完了とはしない",
+    "paragraphStructureCheck": {
+      "script": "natural-japanese/scripts/paragraphs.py --json",
+      "executedOn": "2026-10-27",
+      "exitCode": 0,
+      "paragraphCount": 60,
+      "evidenceFile": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\checks\\kokuzei-priority-new3-paragraphs.json",
+      "manualReview": "全段落・設問要求と解説を著者再読。独立審査ではない",
+      "limitations": "sudachipyがなくlint/calquesは未実行"
+    }
   }
 }

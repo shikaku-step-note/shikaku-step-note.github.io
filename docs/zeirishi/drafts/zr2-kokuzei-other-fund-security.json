@@ -1,0 +1,841 @@
+{
+  "id": "zr2-kokuzei-other-fund-security",
+  "subject": "kokuzei",
+  "title": "八つの財団抵当を、設定と実行の条件から判定する",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 300,
+  "objectives": [
+    "鉄道・軌道・運河と工場法準用型の設定・組成・追加加入・公示・個別差押制限を制度別資料へ適用する",
+    "鉱業・漁業・道路等の取消失効と通知・起算・実行期限を判断し国税との優先と徴収対象を確定する"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-security-registers",
+    "zr2-kokuzei-statutory-dates"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "railway-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000053_20251001_505AC0000000053",
+      "version": "138AC0000000053_20251001_505AC0000000053",
+      "location": "1〜4・7〜31条及び2条の2・13条の2/3・25条の2・26条の2、69〜71・73・74・76・77条・77条の2等",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "tram-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/142AC0000000028_19861204_361AC0000000093",
+      "version": "142AC0000000028_19861204_361AC0000000093",
+      "location": "全1〜4条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "canal-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/202AC1000000016_20050401_416AC0000000084",
+      "version": "202AC1000000016_20050401_416AC0000000084",
+      "location": "1・12〜14条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "mining-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000055_20120121_423AC0000000084",
+      "version": "138AC0000000055_20120121_423AC0000000084",
+      "location": "全1〜7条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "mining-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000289_20250601_504AC0000000068",
+      "version": "325AC0000000289_20250601_504AC0000000068",
+      "location": "5・12・13・52〜55・57〜60条、53条の2",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "fishing-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/214AC0000000009_20201201_430AC0000000095",
+      "version": "214AC0000000009_20201201_430AC0000000095",
+      "location": "全1〜5条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "road-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/327AC0100000204_20250601_504AC0000000068",
+      "version": "327AC0100000204_20250601_504AC0000000068",
+      "location": "全1〜22条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "port-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/326AC0100000161_20250601_504AC0000000068",
+      "version": "326AC0100000161_20250601_504AC0000000068",
+      "location": "2〜4・12・23〜26条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "tourism-fund-law",
+      "url": "https://laws.e-gov.go.jp/law/343AC0000000091_20050307_416AC0000000124",
+      "version": "343AC0000000091_20050307_416AC0000000124",
+      "location": "全1〜12条",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "tourism-facility-order",
+      "url": "https://laws.e-gov.go.jp/law/343CO0000000322_19681120_000000000000000",
+      "version": "343CO0000000322_19681120_000000000000000",
+      "location": "8類型の全本文",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "factory-mortgage-law",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000054_20250601_504AC0000000068",
+      "version": "138AC0000000054_20250601_504AC0000000068",
+      "location": "1〜24条、41〜42条の6・44条の2/3・45条等の準用元",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "334AC0000000147_20260401_508AC0000000012",
+      "location": "10・16・22条等",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "version": "129AC0000000089_20260401_506AC0000000033",
+      "location": "140・143条の暦月期間",
+      "verified": "2026-10-27",
+      "verification": "基準日固定API保存版の記載条を著者読解。独立確認pending"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "鉄道財団設定認可",
+      "definition": "鉄道抵当法2条の2の、設定の効力を生じさせる国土交通大臣の認可。抵当設定登録と別"
+    },
+    {
+      "term": "鉄道抵当原簿",
+      "definition": "鉄道財団の抵当等に関する登録を行う国土交通省の原簿。一般の不動産登記簿へ置き換えない"
+    },
+    {
+      "term": "当然加入",
+      "definition": "法所定の財産が設定や取得等によって財団に属する仕組み。対象と既存権利等の除外を確認"
+    },
+    {
+      "term": "事業単位",
+      "definition": "道路交通事業抵当法2条の、所定業務の独立運営と適切規模について国土交通大臣が認定した単位"
+    },
+    {
+      "term": "一般港湾運送事業等",
+      "definition": "港湾運送事業法4条が同法3条1〜4号の許可事業をまとめた区分。検数・鑑定・検量だけの事業者とは別"
+    },
+    {
+      "term": "個別漁業権の財団加入認可",
+      "definition": "漁業財団法2条による知事認可。経営の必要資金のためやむを得ない等の条件を確認"
+    },
+    {
+      "term": "実行目的の存続みなし",
+      "definition": "取消し等の後も法所定期間や手続終了まで、実行目的の範囲で権利等を存続させる規律。原因・期間・除外が各法で異なる"
+    },
+    {
+      "term": "索道",
+      "definition": "観光施設指定令では展望施設やスキー場の対象を限る設備条件。観光客の利用という事実だけで代用しない"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "other-fund-ex1",
+      "section": "例題1：認可、後から取得した車両、税との比較日",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceAnchors": [
+        "鉄道抵当法2条の2・3・4・11・13・15・16条",
+        "徴10・16条"
+      ],
+      "result": {
+        "net": 11800000,
+        "mortgage": 8000000,
+        "tax": 3800000,
+        "taxUnpaid": 1200000
+      }
+    },
+    {
+      "id": "other-fund-ex2",
+      "section": "例題2：同じ6か月でも、鉄道は取消日、鉱業・漁業は通知受領",
+      "objectives": [
+        2
+      ],
+      "sourceAnchors": [
+        "鉄道抵当22条",
+        "鉱業抵当4条",
+        "漁業財団4条",
+        "民140・143条"
+      ],
+      "result": {
+        "railwayEnd": "2026-07-08",
+        "miningEnd": "2026-07-21",
+        "fishingEnd": "2026-07-21"
+      }
+    },
+    {
+      "id": "other-fund-ex3",
+      "section": "例題3：車両や船舶だけの一覧では足りない",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceAnchors": [
+        "道路交通事業抵当2〜7・14・15・18条",
+        "港湾3・4・23〜26条"
+      ],
+      "result": {
+        "roadFreeNewMachineJoins": true,
+        "roadEncumberedNewItemJoins": false,
+        "portGivenMeasuringPermitAndNoRealEstateInsufficient": true
+      }
+    },
+    {
+      "id": "other-fund-ex4",
+      "section": "例題4：スキー場の設備と、特許条件による軌道の引渡し",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceAnchors": [
+        "観光法2〜11条・指定令",
+        "軌道抵当1・3条",
+        "運河1・13・14条"
+      ],
+      "result": {
+        "skiWithoutCableInsufficient": true,
+        "tramMortgageEndsGivenStatutoryCondition": true,
+        "canalRequiresLicenseAndOwnStatutoryComposition": true
+      }
+    }
+  ],
+  "scopeNotes": [
+    "財団と別の立木・採掘権・漁業権・採石権・ダム使用権の担保はresource-rights-securityとして計画へ独立追加。本講の単体採掘権30日という対照だけをその講の完了証拠にはしない",
+    "登録嘱託等の差押執行はregistered-assets、鉄道77条の2等の換価特則の詳細はrights-distribution、裁判所競売・破産・22条代位実行との調整はpreservationの具体的目標・事例へ対応",
+    "本講の未取得別規定・後加入財産の国税時点は下記sourceNeedsIndependentCheckで公開前のブロックとして明示。本講又はpriority単元を完了とはしない"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "個別資源利用権等の担保・公示・取消と残余帰属",
+      "plannedLessonIds": [
+        "zr2-kokuzei-resource-rights-security"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "財団及び登録財産の具体的差押執行",
+      "plannedLessonIds": [
+        "zr2-kokuzei-registered-assets"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "鉄道77条の2等の特殊換価と権利承継・配当",
+      "plannedLessonIds": [
+        "zr2-kokuzei-rights-distribution"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "裁判所手続・破産と国税の調整、代位実行",
+      "plannedLessonIds": [
+        "zr2-kokuzei-preservation"
+      ],
+      "status": "planned_not_authored; expanded_objective_and_cases_exist"
+    }
+  ],
+  "sourceNeedsIndependentCheck": [
+    {
+      "issue": "鉄道抵当26条及び軌道抵当4条が指示する非株式会社の別規定",
+      "lessonId": "zr2-kokuzei-other-fund-security",
+      "publicationBlock": true,
+      "currentDecision": "指示条項を確認したが別規定実体は未取得。株式会社の例を他主体へ無条件に拡張しない。未教授枝として本講に残す"
+    },
+    {
+      "issue": "国税比較日をまたぐ財団後加入財産と担保の設定時点",
+      "lessonId": "zr2-kokuzei-other-fund-security",
+      "publicationBlock": true,
+      "currentDecision": "当然加入という目的範囲と、徴16条の比較時点を混同しない。例題1は加入も比較日前に限定し、跨日枝は本講の公開前に別途検証"
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-other-fund-security-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "株式会社たる鉄道事業者が財団設定を予定する。財団の効力発生と抵当権の第三者対抗を区分した説明はどれですか。",
+      "options": [
+        "工場財団と同じ所有権保存登記だけで設定する",
+        "国土交通大臣の設定認可と、抵当権の得喪等の登録を別に確認する",
+        "抵当証書の私印だけで両方を満たす",
+        "会社設立登記があれば鉄道財団も自動成立"
+      ],
+      "answer": 1,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "鉄道抵当法2条の2と15条を区分します。1は工場財団との混同、3は認可・公示を欠き、4は会社と財団の成立を混同しています。",
+      "sourceAnchors": [
+        "鉄道抵当1・2条の2・15条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "鉄道財団設定認可申請に伴う公告案で、既存権利者等の申出期間を15日とした。8条の基準から適切な判断を選んでください。",
+      "options": [
+        "必ず10日でよい",
+        "1か月を下回れないので、この案は不足",
+        "工場財団の6か月だけを使う",
+        "公告不要なので期間は自由"
+      ],
+      "answer": 1,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "8条の公告期間は1か月を下回れません。1は別の期間、3は他制度の異なる期間、4は公告・申出を省略しています。",
+      "sourceAnchors": [
+        "鉄道抵当7・8条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "鉄道財団に加入済みの車両を、国税係員が単独の動産として差し押さえる計画である。4条の区分として正しいものを選んでください。",
+      "options": [
+        "財団全体への滞納差押例外と構成物の個別差押制限を別に確認する",
+        "財団全体に滞納例外があれば構成物も自由",
+        "会社所有車両なら財団加入を確認不要",
+        "一般の仮差押えも財団全体に常に自由"
+      ],
+      "answer": 0,
+      "points": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "財団全体の滞納処分例外を構成物へ移しません。2は項の範囲を混同、3は財団帰属の調査省略、4は全体の通常差押等の制限を無視しています。",
+      "sourceAnchors": [
+        "鉄道抵当4条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "試掘権だけを有する者が、鉱業抵当法の財団を設定できると主張した。適切な説明はどれですか。",
+      "options": [
+        "採掘権者という1条の条件と試掘権を区分する",
+        "鉱山に関係する権利ならすべて同じ",
+        "試掘権を建設機械登記簿へ登記すればよい",
+        "財団を先に設定すれば採掘権が自動で与えられる"
+      ],
+      "answer": 0,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "鉱業抵当法1条は採掘権者を設定主体とします。2は権利類型、3は公示制度、4は財団設定と鉱業権取得の因果を誤っています。",
+      "sourceAnchors": [
+        "鉱業抵当1〜3条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "個別漁業権と借りた設備の賃借権を漁業財団へ入れる案がある。必要な確認として適切なものを選んでください。",
+      "options": [
+        "漁業権も賃借権も財団目録へ書けば十分",
+        "個別漁業権の知事認可と必要資金融通等、賃借権の貸主承諾を確認する",
+        "漁業関係なら他人所有物も自己所有物へ変わる",
+        "許認可を要する他の権利も財団加入で不要"
+      ],
+      "answer": 1,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "漁業財団法2条の認可・承諾を個別に適用します。1は加入条件の省略、3は所有権との混同、4は法定許認可条件を消しています。",
+      "sourceAnchors": [
+        "漁業財団2条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "観光施設財団を計画する。候補施設のうち、指定令上の設備条件が示されているものを選んでください。他の施設類型には該当しないとする。",
+      "options": [
+        "索道なしの展望施設",
+        "冷凍設備なしのアイススケート場",
+        "水質浄化設備を備えた水泳場",
+        "温泉があればホテル単独で必ず指定施設"
+      ],
+      "answer": 2,
+      "points": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "指定令は水泳場に浄化設備、展望施設に索道、アイススケート場に冷凍設備を要求します。1・2は設備不足、4は温泉利用権が組成候補であることと施設指定を混同しています。",
+      "sourceAnchors": [
+        "観光法2条・指定令"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "同一の700万円債権を二つの鉄道財団A・Bが共同で担保している。両財団の換価価額はA600万円・B400万円で、同時に配当する。費用なし、抵当権は国税の法定納期限等以前に適法な登録済み、他の私債権なし。同じ滞納者の国税500万円があり、両財団の残余から徴収できる。各財団の抵当負担と、合計国税回収額・未納額を求め、担保債権を二重計上しない検算も示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "同時配当なので鉄道抵当法23条の価額比例により、A負担700×600/1000＝420万円、B負担700×400/1000＝280万円とする。残余はA180・B120の合計300万円で、国税回収300、未納200万円である。抵当回収は420＋280＝700、全体は700＋300＝1000万円と一致し、一つの債権を各財団で700ずつ計上しない。",
+      "rubric": [
+        {
+          "criterion": "同時配当の価額比例という根拠",
+          "points": 1
+        },
+        {
+          "criterion": "A420・B280万円",
+          "points": 1
+        },
+        {
+          "criterion": "国税300・未納200万円",
+          "points": 1
+        },
+        {
+          "criterion": "700の単一債権・全原資の検算",
+          "points": 1
+        }
+      ],
+      "explanation": "同時配当なので鉄道抵当法23条の価額比例により、A負担700×600/1000＝420万円、B負担700×400/1000＝280万円とする。残余はA180・B120の合計300万円で、国税回収300、未納200万円である。抵当回収は420＋280＝700、全体は700＋300＝1000万円と一致し、一つの債権を各財団で700ずつ計上しない。",
+      "sourceAnchors": [
+        "鉄道抵当23条",
+        "徴16条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "鉄道財団と道路交通事業財団で、それぞれ許可取消しが2025年10月8日の日中にあった。道路では14条の実行要件、鉄道では22条の要件を満たし、両抵当権者が通知を受け取ったのは10月20日の日中である。競売はまだ開始しておらず、休日延長等なし。各特別実行期間の満了日と起点の違いを示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "鉄道は鉄道抵当法22条の取消しの日から6か月で、初日不算入・暦計算により2026年4月8日までとなる。道路は道路交通事業抵当法14条の通知受領から6か月で、2026年4月20日までとなる。通知日が同じでも鉄道の起点を受領日にずらさず、道路を取消日に早めない。",
+      "rubric": [
+        {
+          "criterion": "鉄道取消日起点",
+          "points": 1
+        },
+        {
+          "criterion": "鉄道4月8日",
+          "points": 1
+        },
+        {
+          "criterion": "道路通知受領起点",
+          "points": 1
+        },
+        {
+          "criterion": "道路4月20日",
+          "points": 1
+        }
+      ],
+      "explanation": "鉄道は鉄道抵当法22条の取消しの日から6か月で、初日不算入・暦計算により2026年4月8日までとなる。道路は道路交通事業抵当法14条の通知受領から6か月で、2026年4月20日までとなる。通知日が同じでも鉄道の起点を受領日にずらさず、道路を取消日に早めない。",
+      "sourceAnchors": [
+        "鉄道抵当22条",
+        "道路交通事業抵当14条",
+        "民140・143条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "採掘権を含む鉱業財団について、場合Aは鉱業法55条の取消し、場合Bは同53条の公共福祉を理由とする取消しとする。鉱業抵当法4条の通知後6か月の特別実行等を両場合へ同じに適用できるか説明し、Bで抵当権者が確認すべき補償・供託の条項も示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "Aは4条所定の通知・実行等の条件を確認する。Bは鉱業法52〜54条取消しの除外に当たり、鉱業抵当法4条の実行・存続みなし等を同じに適用しない。53条取消し等の補償については鉱業法53条の2を確認し、抵当権者の承諾がある場合を除く供託と、供託補償金への抵当行使等を区分する。取消しの名称だけで6か月を選ばない。",
+      "rubric": [
+        {
+          "criterion": "Aの所定条件の確認",
+          "points": 1
+        },
+        {
+          "criterion": "Bの52〜54条除外",
+          "points": 1
+        },
+        {
+          "criterion": "53条の2補償・原則供託",
+          "points": 1
+        },
+        {
+          "criterion": "供託金への権利行使と実行を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "Aは4条所定の通知・実行等の条件を確認する。Bは鉱業法52〜54条取消しの除外に当たり、鉱業抵当法4条の実行・存続みなし等を同じに適用しない。53条取消し等の補償については鉱業法53条の2を確認し、抵当権者の承諾がある場合を除く供託と、供託補償金への抵当行使等を区分する。取消しの名称だけで6か月を選ばない。",
+      "sourceAnchors": [
+        "鉱業抵当4条",
+        "鉱業法53・53条の2・55条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "個別漁業権を含む漁業財団で、その漁業権が、水底電線の敷設等に関して公益上必要であることを理由に適法に取り消された。抵当権者は「通知が届いたので、4条の存続みなしと通知後6か月の実行が必ず使える」と述べた。取消原因・適用除外・その結論を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "漁業財団法4条は原則の通知・6か月実行・存続みなし等を定める一方、漁業調整、船舶の航行等、水底電線敷設その他公益上必要な場合の取消しを特則から除外している。本問はその除外に当たり、通知受領だけで同じ実行・存続みなしを認められない。別の権利・補償等があるかは根拠資料による別判断で、除外を理由に債権自体が当然消滅するともしない。",
+      "rubric": [
+        {
+          "criterion": "本問の公益上の取消原因",
+          "points": 1
+        },
+        {
+          "criterion": "4条の除外規定",
+          "points": 1
+        },
+        {
+          "criterion": "6か月等を無条件適用しない",
+          "points": 1
+        },
+        {
+          "criterion": "抵当等の制度効果と債権消滅を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "漁業財団法4条は原則の通知・6か月実行・存続みなし等を定める一方、漁業調整、船舶の航行等、水底電線敷設その他公益上必要な場合の取消しを特則から除外している。本問はその除外に当たり、通知受領だけで同じ実行・存続みなしを認められない。別の権利・補償等があるかは根拠資料による別判断で、除外を理由に債権自体が当然消滅するともしない。",
+      "sourceAnchors": [
+        "漁業財団4条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "認定済みの一般貨物運送の事業単位がある。場合Aは登録事業用自動車だけで、4条1号の不動産がない。場合Bは不動産と車両等の条件を満たし、適法な道路交通事業財団設定後、同単位のための自社所有機械を取得した。この機械に他人の権利等はない。Aの設定可否とBの加入を判断し、既存第三者権利付き追加物の場合との差も説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "Aは道路交通事業抵当法5条の不動産及び事業用自動車という条件を欠き、認定事業単位と車両だけでは設定できない。Bの所定の自由な所有機械は6条3項による当然加入を判断する。他人の権利や差押え等の目的物であれば同条の除外を確認し、同じように加入させない。設定には6条1項の所有権保存登記も必要で、単位認定との役割を分ける。",
+      "rubric": [
+        {
+          "criterion": "A必須不動産欠如",
+          "points": 1
+        },
+        {
+          "criterion": "Bの6条3項当然加入",
+          "points": 1
+        },
+        {
+          "criterion": "第三者権利等の除外",
+          "points": 1
+        },
+        {
+          "criterion": "単位認定と保存登記の区分",
+          "points": 1
+        }
+      ],
+      "explanation": "Aは道路交通事業抵当法5条の不動産及び事業用自動車という条件を欠き、認定事業単位と車両だけでは設定できない。Bの所定の自由な所有機械は6条3項による当然加入を判断する。他人の権利や差押え等の目的物であれば同条の除外を確認し、同じように加入させない。設定には6条1項の所有権保存登記も必要で、単位認定との役割を分ける。",
+      "sourceAnchors": [
+        "道路交通事業抵当2〜6条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "港湾事業者が、一般港湾運送事業等に当たる許可と、検数事業だけの許可を同じものとして説明している。さらに、財団には船舶・測定器だけを入れ、荷さばき施設・事務所等の所定不動産はない。設定主体と必須財産の二つから訂正し、船舶の高い価額で不足を補えるかも述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "港湾運送事業法4条は3条1〜4号の一般港湾・荷役・はしけ・いかだを一般港湾運送事業等とし、検数等の5〜7号と区分する。23条は前者の許可事業者を設定主体にする。25条の所定不動産がないことも設定制限に当たり、船舶の評価が高くても、法定財産の種類の欠缺は補えない。",
+      "rubric": [
+        {
+          "criterion": "1〜4号と検数等の区分",
+          "points": 1
+        },
+        {
+          "criterion": "23条設定者条件",
+          "points": 1
+        },
+        {
+          "criterion": "25条必須不動産欠如",
+          "points": 1
+        },
+        {
+          "criterion": "価額で種類条件を代用不可",
+          "points": 1
+        }
+      ],
+      "explanation": "港湾運送事業法4条は3条1〜4号の一般港湾・荷役・はしけ・いかだを一般港湾運送事業等とし、検数等の5〜7号と区分する。23条は前者の許可事業者を設定主体にする。25条の所定不動産がないことも設定制限に当たり、船舶の評価が高くても、法定財産の種類の欠缺は補えない。",
+      "sourceAnchors": [
+        "港湾運送3・4・23〜25条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "観光財団の対象となる冷凍設備付きアイススケート場がある。事業者は動物・備品・航空機と温泉利用権を所有するが、土地も法4条4号の土地に関する権利もない。対象施設に当たることだけで財団を設定できるか、必須権原と航空機の事前登録、賃借権加入の場合の承諾を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "指定施設であっても、観光施設財団法6条の土地又は所定の土地に関する権利を欠けば設定できない。動物等の価額は代用にならない。法5条の航空機を加入させるには所定の所有権登録が必要である。物の賃借権を組み入れる場合は4条4号の賃貸人承諾を確認し、他人所有物を自己所有として入れない。",
+      "rubric": [
+        {
+          "criterion": "施設指定と設定条件を分離",
+          "points": 1
+        },
+        {
+          "criterion": "土地又は所定権利の欠如",
+          "points": 1
+        },
+        {
+          "criterion": "航空機の事前登録",
+          "points": 1
+        },
+        {
+          "criterion": "賃借権の承諾と所有物区分",
+          "points": 1
+        }
+      ],
+      "explanation": "指定施設であっても、観光施設財団法6条の土地又は所定の土地に関する権利を欠けば設定できない。動物等の価額は代用にならない。法5条の航空機を加入させるには所定の所有権登録が必要である。物の賃借権を組み入れる場合は4条4号の賃貸人承諾を確認し、他人所有物を自己所有として入れない。",
+      "sourceAnchors": [
+        "観光法2・4〜6条・指定令"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "軌道財団の抵当権が適法に存在する。特許に付された条件によって、財団に属するものを公共団体へ無償で引き渡すべきこととなった。抵当権者は「通常の売買と同じだから、財団の抵当は必ずそのまま追及する」と主張する。特則の条件と効果を示し、通常譲渡との違いを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "軌道抵当法3条の、特許条件により財団所属物を国又は公共団体へ無償で引き渡すべき場合に当たり、財団を目的とする抵当権は消滅する。通常の任意売買による所有者変更と同じに扱わず、特許条件・相手方・無償引渡しという要件を使う。抵当の消滅と被担保債権自体の消滅も混同しない。",
+      "rubric": [
+        {
+          "criterion": "特許条件という発生原因",
+          "points": 1
+        },
+        {
+          "criterion": "公共団体への無償引渡し",
+          "points": 1
+        },
+        {
+          "criterion": "財団抵当消滅",
+          "points": 1
+        },
+        {
+          "criterion": "通常譲渡又は債権消滅との区分",
+          "points": 1
+        }
+      ],
+      "explanation": "軌道抵当法3条の、特許条件により財団所属物を国又は公共団体へ無償で引き渡すべき場合に当たり、財団を目的とする抵当権は消滅する。通常の任意売買による所有者変更と同じに扱わず、特許条件・相手方・無償引渡しという要件を使う。抵当の消滅と被担保債権自体の消滅も混同しない。",
+      "sourceAnchors": [
+        "軌道抵当3条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "一般運送用運河の免許を持つ会社が、運河法14条4号により、他人不動産上の賃借権を財団へ入れようとする。貸主は承諾したが賃借権登記はない。「工場財団と同じ承諾さえあればよい」という説明を訂正し、適用法の準用経路と対象権利の条件を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "運河法13条から軌道抵当法1条を経て鉄道抵当法の準用をたどり、運河の組成財産は14条固有の列挙を確認する。同条4号は所定の地上権、登記した賃借権等を対象とする。本問の未登記賃借権は、貸主承諾という工場財団等の条件だけで代用できない。免許のあることと加入権利の公示条件も別である。",
+      "rubric": [
+        {
+          "criterion": "運河→軌道→鉄道の経路",
+          "points": 1
+        },
+        {
+          "criterion": "14条固有の組成列挙",
+          "points": 1
+        },
+        {
+          "criterion": "賃借権登記を欠く",
+          "points": 1
+        },
+        {
+          "criterion": "承諾・免許で条件代用不可",
+          "points": 1
+        }
+      ],
+      "explanation": "運河法13条から軌道抵当法1条を経て鉄道抵当法の準用をたどり、運河の組成財産は14条固有の列挙を確認する。同条4号は所定の地上権、登記した賃借権等を対象とする。本問の未登記賃借権は、貸主承諾という工場財団等の条件だけで代用できない。免許のあることと加入権利の公示条件も別である。",
+      "sourceAnchors": [
+        "運河1・13・14条",
+        "軌道抵当1条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q16",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "道路交通事業財団の抵当実行競売の開始決定後に、対象事業の許可が取り消された。買受人は代金を納付したが、所定の欠格事由に当たることが判明した。許可は取消し時に直ちに全く消滅し、買受人が承継する余地がないという説明を、15・18条の段階から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "開始決定後の取消しには15条を適用し、買受代金納付まで競売目的の範囲で許可を存続させ、納付時には当該取消しがなかったものとみなす。18条は代金納付時に買受人が許可に基づく権利義務を承継すると定めるが、所定欠格等があれば大臣による取消しの可能性がある。開始前の14条の通知後6か月という経路を無条件に移さない。",
+      "rubric": [
+        {
+          "criterion": "開始後の15条適用",
+          "points": 1
+        },
+        {
+          "criterion": "納付までの存続と取消みなし",
+          "points": 1
+        },
+        {
+          "criterion": "18条納付時の承継",
+          "points": 1
+        },
+        {
+          "criterion": "欠格取消し可能性・別経路区分",
+          "points": 1
+        }
+      ],
+      "explanation": "開始決定後の取消しには15条を適用し、買受代金納付まで競売目的の範囲で許可を存続させ、納付時には当該取消しがなかったものとみなす。18条は代金納付時に買受人が許可に基づく権利義務を承継すると定めるが、所定欠格等があれば大臣による取消しの可能性がある。開始前の14条の通知後6か月という経路を無条件に移さない。",
+      "sourceAnchors": [
+        "道路交通事業抵当14・15・18条"
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-other-fund-security-q17",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-other-fund-security",
+      "prompt": "自治体等の非株式会社による鉄道又は軌道の財団設定案に、株式会社を前提とした本文の認可・登録の説明だけが添付されている。この資料だけで同じ設定が可能と確定できるか、各指示条項と、追加確認すべき範囲を具体的に説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "鉄道抵当法1条の会社の定義を確認したうえで、非株式会社には26条が別の定めを指示する。軌道抵当法4条も非株式会社の場合を別の定めに委ねる。したがって主体が異なることを無視して同じ手続が可能と確定せず、当該主体へ適用される別規定の設定・公示・実行条件を取得して確認する。本講はその別規定自体を未検証なので、確認必要という判断を実体条件の教授完了としない。",
+      "rubric": [
+        {
+          "criterion": "鉄道の会社定義と26条",
+          "points": 1
+        },
+        {
+          "criterion": "軌道4条の指示",
+          "points": 1
+        },
+        {
+          "criterion": "同一適用を断定しない",
+          "points": 1
+        },
+        {
+          "criterion": "設定・公示・実行の別規定確認を特定",
+          "points": 1
+        }
+      ],
+      "explanation": "鉄道抵当法1条の会社の定義を確認したうえで、非株式会社には26条が別の定めを指示する。軌道抵当法4条も非株式会社の場合を別の定めに委ねる。したがって主体が異なることを無視して同じ手続が可能と確定せず、当該主体へ適用される別規定の設定・公示・実行条件を取得して確認する。本講はその別規定自体を未検証なので、確認必要という判断を実体条件の教授完了としない。",
+      "sourceAnchors": [
+        "鉄道抵当1・26条",
+        "軌道抵当4条"
+      ]
+    }
+  ],
+  "authorChecks": {
+    "status": "著者による初回再読・再計算。独立確認pending",
+    "bodyCharactersBeforeSources": 6758,
+    "questionCount": 17,
+    "arithmetic": [
+      "例1:1200-20=1180;1180-800=380;500-380=120万円",
+      "例2:2026/1/8日中取消→7/8、1/21日中受領→7/21",
+      "問7:700*600/1000=420;700*400/1000=280;600-420=180;400-280=120;500-300=200万円",
+      "問8:2025/10/8→2026/4/8、2025/10/20→2026/4/20"
+    ],
+    "legalChecks": "八財団の設定・公示・必須財産・加入と制限を各一次法へ対応。鉄道の一個の物、全体滞納差押例外と構成物制限、認可と抵当登録、鉱業財団と採掘権単体、取消原因の除外、道路開始前後、観光指定設備を区分",
+    "editorial": "全本文4場面17問を著者が再読。法名の略称が道路法・港湾法・軌道法等の別法と紛れないよう本文では正式名を使用。記述配点は問いの要求へ対応",
+    "automatedJapaneseReview": "全段落を手動確認。sudachipyがないため自動lint/calquesは未実行。自動点検又は独立日本語審査の完了としない",
+    "paragraphStructureCheck": {
+      "script": "natural-japanese/scripts/paragraphs.py --json",
+      "executedOn": "2026-10-27",
+      "exitCode": 0,
+      "paragraphCount": 63,
+      "evidenceFile": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\checks\\kokuzei-priority-new3-paragraphs.json",
+      "manualReview": "全段落・設問要求と解説を著者再読。独立審査ではない",
+      "limitations": "sudachipyがなくlint/calquesは未実行"
+    }
+  }
+}

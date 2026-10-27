@@ -1,0 +1,1020 @@
+{
+  "schemaVersion": "kokuzei-objective-map-1",
+  "status": "mapping_proposed_pending_root_normalization",
+  "created": "2026-10-27",
+  "canonicalPlan": "work/zeirishi-upgrade/other-tax-plan.json",
+  "policy": "24下位技能は削除・統合せず、六講の12計画目標へ多対一で対応する。frameworkの優先配当導入1技能だけは自講2目標への実質的対応がないため後続priority-generalへの補助証拠と明示。目標の名称だけで完了認定しない",
+  "lessonCount": 6,
+  "draftSubskillCount": 24,
+  "ownLessonMappedSubskills": 23,
+  "crossLessonSupplementalSubskills": 1,
+  "lessons": [
+    {
+      "lessonId": "zr2-kokuzei-framework",
+      "plannedObjectives": [
+        {
+          "id": "zr2-kokuzei-framework-o1",
+          "index": 1,
+          "text": "国税・地方税・公課と徴収の所轄を区別する"
+        },
+        {
+          "id": "zr2-kokuzei-framework-o2",
+          "index": 2,
+          "text": "本来納税者・第二次納税義務者・第三者の立場を特定する"
+        }
+      ],
+      "draftSubskills": [
+        {
+          "draftObjectiveId": "zr2-kokuzei-framework-subskill-1",
+          "draftObjectiveIndex": 1,
+          "draftObjective": "徴収法上の国税・地方税・公課と本税・附帯税・滞納処分費を具体例で区分する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-framework-o1"
+          ],
+          "plannedObjectives": [
+            "国税・地方税・公課と徴収の所轄を区別する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-framework-q1",
+            "zr2-kokuzei-framework-q3",
+            "zr2-kokuzei-framework-q4"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "framework-ex4",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-framework.md",
+              "line": 86,
+              "heading": "例題4：徴収一覧を分類して集計する"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q20",
+            "zr2-kokuzei-foundations-review-q26"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-framework-subskill-2",
+          "draftObjectiveIndex": 2,
+          "draftObjective": "納税者・滞納者・第二次納税義務者・保証人・第三債務者を事実関係から特定する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-framework-o2"
+          ],
+          "plannedObjectives": [
+            "本来納税者・第二次納税義務者・第三者の立場を特定する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-framework-q2",
+            "zr2-kokuzei-framework-q8",
+            "zr2-kokuzei-framework-q9",
+            "zr2-kokuzei-framework-q11"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "framework-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-framework.md",
+              "line": 62,
+              "heading": "例題1：源泉所得税の納税者と売掛金の相手"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q1"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-framework-subskill-3",
+          "draftObjectiveIndex": 3,
+          "draftObjective": "現在の納税地による原則、税関の例外、適法な徴収引継ぎを区別する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-framework-o1"
+          ],
+          "plannedObjectives": [
+            "国税・地方税・公課と徴収の所轄を区別する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-framework-q6",
+            "zr2-kokuzei-framework-q7",
+            "zr2-kokuzei-framework-q12"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "framework-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-framework.md",
+              "line": 70,
+              "heading": "例題2：転居と徴収の引継ぎを読み分ける"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q2"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-framework-subskill-4",
+          "draftObjectiveIndex": 4,
+          "draftObjective": "国税優先と私法上の権利の調整を説明し、優先が明示された例の配当と残額を計算する",
+          "plannedObjectiveIndexes": [],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-priority-general-o1"
+          ],
+          "plannedObjectives": [
+            "一般優先と強制換価費用・直接滞納処分費を区別する"
+          ],
+          "relationship": "supplemental_prerequisite_evidence_for_later_lesson_not_completion",
+          "questionEvidence": [
+            "zr2-kokuzei-framework-q5",
+            "zr2-kokuzei-framework-q10"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "mappingReason": "枠組み草稿の優先・配当導入は、この講の二つの計画目標そのものには含まれない。国税等の区分や当事者特定へ無理に対応付けず、後続優先講の補助証拠として保持",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "framework-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-framework.md",
+              "line": 78,
+              "heading": "例題3：国税優先の原則だけで配当額を決めない"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q3"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "zr2-kokuzei-private-law",
+      "plannedObjectives": [
+        {
+          "id": "zr2-kokuzei-private-law-o1",
+          "index": 1,
+          "text": "所有権と債権を当事者ごとに区別する"
+        },
+        {
+          "id": "zr2-kokuzei-private-law-o2",
+          "index": 2,
+          "text": "登記・対抗要件・有限無限責任・相続承継を事例へ適用する"
+        }
+      ],
+      "draftSubskills": [
+        {
+          "draftObjectiveId": "zr2-kokuzei-private-law-subskill-1",
+          "draftObjectiveIndex": 1,
+          "draftObjective": "所有権・占有・金銭債権を当事者ごとに区分し、滞納者に帰属する財産を特定する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-private-law-o1"
+          ],
+          "plannedObjectives": [
+            "所有権と債権を当事者ごとに区別する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-private-law-q1",
+            "zr2-kokuzei-private-law-q2",
+            "zr2-kokuzei-private-law-q4"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "private-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+              "line": 46,
+              "heading": "例題1：現金・預金・売掛金と借用機械"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q1"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-private-law-subskill-2",
+          "draftObjectiveIndex": 2,
+          "draftObjective": "権利移転と第三者対抗要件、借主と物上保証人、担保と所有権を区別する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-private-law-o2"
+          ],
+          "plannedObjectives": [
+            "登記・対抗要件・有限無限責任・相続承継を事例へ適用する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-private-law-q3",
+            "zr2-kokuzei-private-law-q5",
+            "zr2-kokuzei-private-law-q6"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "private-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+              "line": 54,
+              "heading": "例題2：他人の借金のために土地を担保へ出す"
+            },
+            {
+              "exampleId": "private-ex5",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+              "line": 94,
+              "heading": "例題5：売買の効力と、第三者へ対抗する条件"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q3"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-private-law-subskill-3",
+          "draftObjectiveIndex": 3,
+          "draftObjective": "法人と出資者を区分し、有限責任社員の未履行出資による責任限度を計算する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-private-law-o2"
+          ],
+          "plannedObjectives": [
+            "登記・対抗要件・有限無限責任・相続承継を事例へ適用する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-private-law-q7",
+            "zr2-kokuzei-private-law-q8",
+            "zr2-kokuzei-private-law-q11"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "private-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+              "line": 70,
+              "heading": "例題3：有限責任社員の未履行出資"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q4"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-private-law-subskill-4",
+          "draftObjectiveIndex": 4,
+          "draftObjective": "相続財産と固有財産、単純承認・限定承認・放棄を区別し国税承継へつなぐ",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-private-law-o2"
+          ],
+          "plannedObjectives": [
+            "登記・対抗要件・有限無限責任・相続承継を事例へ適用する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-private-law-q9",
+            "zr2-kokuzei-private-law-q10",
+            "zr2-kokuzei-private-law-q12"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "private-ex4",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+              "line": 86,
+              "heading": "例題4：相続した財産額をそのまま責任上限にしない"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q5",
+            "zr2-kokuzei-foundations-review-q16"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "zr2-kokuzei-tax-timeline",
+      "plannedObjectives": [
+        {
+          "id": "zr2-kokuzei-tax-timeline-o1",
+          "index": 1,
+          "text": "税目別の成立・確定と納付期限を時系列に置く"
+        },
+        {
+          "id": "zr2-kokuzei-tax-timeline-o2",
+          "index": 2,
+          "text": "修正申告・更正・期限延長で動く日を説明する"
+        }
+      ],
+      "draftSubskills": [
+        {
+          "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-1",
+          "draftObjectiveIndex": 1,
+          "draftObjective": "主要税目の納税義務成立時点と申告・賦課・自動確定を区別する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-tax-timeline-o1"
+          ],
+          "plannedObjectives": [
+            "税目別の成立・確定と納付期限を時系列に置く"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-tax-timeline-q1",
+            "zr2-kokuzei-tax-timeline-q2",
+            "zr2-kokuzei-tax-timeline-q10",
+            "zr2-kokuzei-tax-timeline-q12"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "timeline-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 71,
+              "heading": "例題1：年末成立と期限内申告の関係"
+            },
+            {
+              "exampleId": "timeline-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 87,
+              "heading": "例題3：源泉所得税は告知で初めて確定するのか"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q6"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-2",
+          "draftObjectiveIndex": 2,
+          "draftObjective": "期限内・期限後・修正申告、更正決定、納税告知ごとに確定と納付すべき日を特定する",
+          "plannedObjectiveIndexes": [
+            1,
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-tax-timeline-o1",
+            "zr2-kokuzei-tax-timeline-o2"
+          ],
+          "plannedObjectives": [
+            "税目別の成立・確定と納付期限を時系列に置く",
+            "修正申告・更正・期限延長で動く日を説明する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-tax-timeline-q2",
+            "zr2-kokuzei-tax-timeline-q3",
+            "zr2-kokuzei-tax-timeline-q4",
+            "zr2-kokuzei-tax-timeline-q5",
+            "zr2-kokuzei-tax-timeline-q10",
+            "zr2-kokuzei-tax-timeline-q11"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "timeline-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 71,
+              "heading": "例題1：年末成立と期限内申告の関係"
+            },
+            {
+              "exampleId": "timeline-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 79,
+              "heading": "例題2：更正通知書の発出日と送達日"
+            },
+            {
+              "exampleId": "timeline-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 87,
+              "heading": "例題3：源泉所得税は告知で初めて確定するのか"
+            },
+            {
+              "exampleId": "timeline-ex4",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 95,
+              "heading": "例題4：源泉所得税を告知前に期限後納付した場合"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q7",
+            "zr2-kokuzei-foundations-review-q22"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-3",
+          "draftObjectiveIndex": 3,
+          "draftObjective": "法定納期限・現実の納期限・法定納期限等を税額別に区分する",
+          "plannedObjectiveIndexes": [
+            1,
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-tax-timeline-o1",
+            "zr2-kokuzei-tax-timeline-o2"
+          ],
+          "plannedObjectives": [
+            "税目別の成立・確定と納付期限を時系列に置く",
+            "修正申告・更正・期限延長で動く日を説明する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-tax-timeline-q5",
+            "zr2-kokuzei-tax-timeline-q6",
+            "zr2-kokuzei-tax-timeline-q7",
+            "zr2-kokuzei-tax-timeline-q11",
+            "zr2-kokuzei-tax-timeline-q13"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "timeline-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 71,
+              "heading": "例題1：年末成立と期限内申告の関係"
+            },
+            {
+              "exampleId": "timeline-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 79,
+              "heading": "例題2：更正通知書の発出日と送達日"
+            },
+            {
+              "exampleId": "timeline-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 87,
+              "heading": "例題3：源泉所得税は告知で初めて確定するのか"
+            },
+            {
+              "exampleId": "timeline-ex4",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 95,
+              "heading": "例題4：源泉所得税を告知前に期限後納付した場合"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q8"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-4",
+          "draftObjectiveIndex": 4,
+          "draftObjective": "初日・暦月・休日等の規定と設問条件に従い期間を計算し年表を作る",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-tax-timeline-o2"
+          ],
+          "plannedObjectives": [
+            "修正申告・更正・期限延長で動く日を説明する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-tax-timeline-q4",
+            "zr2-kokuzei-tax-timeline-q8",
+            "zr2-kokuzei-tax-timeline-q9",
+            "zr2-kokuzei-tax-timeline-q11"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "timeline-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+              "line": 79,
+              "heading": "例題2：更正通知書の発出日と送達日"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q9",
+            "zr2-kokuzei-foundations-review-q22"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "zr2-kokuzei-demand-acceleration",
+      "plannedObjectives": [
+        {
+          "id": "zr2-kokuzei-demand-acceleration-o1",
+          "index": 1,
+          "text": "通常差押要件の督促受領と発出後期間を適用する"
+        },
+        {
+          "id": "zr2-kokuzei-demand-acceleration-o2",
+          "index": 2,
+          "text": "第二次納税義務者・保証人と繰上請求の例外を判定する"
+        }
+      ],
+      "draftSubskills": [
+        {
+          "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-1",
+          "draftObjectiveIndex": 1,
+          "draftObjective": "通常の督促の要否・法定形式・50日以内の規定と送達を判断する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-demand-acceleration-o1"
+          ],
+          "plannedObjectives": [
+            "通常差押要件の督促受領と発出後期間を適用する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-demand-acceleration-q1",
+            "zr2-kokuzei-demand-acceleration-q4",
+            "zr2-kokuzei-demand-acceleration-q11"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "demand-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+              "line": 39,
+              "heading": "例題1：発出日と受領日が違い、一部納付がある"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q10"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-2",
+          "draftObjectiveIndex": 2,
+          "draftObjective": "発出日・経過する日・経過した日を区分し、差押えの時期と未納残額を計算する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-demand-acceleration-o1"
+          ],
+          "plannedObjectives": [
+            "通常差押要件の督促受領と発出後期間を適用する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-demand-acceleration-q2",
+            "zr2-kokuzei-demand-acceleration-q3"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "demand-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+              "line": 39,
+              "heading": "例題1：発出日と受領日が違い、一部納付がある"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q10",
+            "zr2-kokuzei-foundations-review-q11"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-3",
+          "draftObjectiveIndex": 3,
+          "draftObjective": "第二次義務者への納付通知・納付催告と差押換価の順序を区別する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-demand-acceleration-o2"
+          ],
+          "plannedObjectives": [
+            "第二次納税義務者・保証人と繰上請求の例外を判定する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-demand-acceleration-q5",
+            "zr2-kokuzei-demand-acceleration-q6",
+            "zr2-kokuzei-demand-acceleration-q11"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "demand-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+              "line": 57,
+              "heading": "例題2：第二次義務者自身の手続を追う"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q12"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-4",
+          "draftObjectiveIndex": 4,
+          "draftObjective": "繰上請求と繰上差押えの事由・対象・時期・効果を事実へ当てはめる",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-demand-acceleration-o2"
+          ],
+          "plannedObjectives": [
+            "第二次納税義務者・保証人と繰上請求の例外を判定する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-demand-acceleration-q7",
+            "zr2-kokuzei-demand-acceleration-q8",
+            "zr2-kokuzei-demand-acceleration-q9",
+            "zr2-kokuzei-demand-acceleration-q10",
+            "zr2-kokuzei-demand-acceleration-q12"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "demand-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+              "line": 73,
+              "heading": "例題3：元の納期限を待つと徴収できない"
+            },
+            {
+              "exampleId": "demand-ex4",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-demand-acceleration.md",
+              "line": 87,
+              "heading": "例題4：督促後に財産隠匿の事実が生じた"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q13",
+            "zr2-kokuzei-foundations-review-q14"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "zr2-kokuzei-limitations-succession",
+      "plannedObjectives": [
+        {
+          "id": "zr2-kokuzei-limitations-succession-o1",
+          "index": 1,
+          "text": "時効の起算・完成猶予・更新を区別する"
+        },
+        {
+          "id": "zr2-kokuzei-limitations-succession-o2",
+          "index": 2,
+          "text": "相続・合併・連帯責任・充当還付の関係を整理する"
+        }
+      ],
+      "draftSubskills": [
+        {
+          "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-1",
+          "draftObjectiveIndex": 1,
+          "draftObjective": "徴収権の時効の基準日・完成猶予・更新・不進行を区分し条件付き年表を計算する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-limitations-succession-o1"
+          ],
+          "plannedObjectives": [
+            "時効の起算・完成猶予・更新を区別する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-limitations-succession-q1",
+            "zr2-kokuzei-limitations-succession-q2",
+            "zr2-kokuzei-limitations-succession-q3",
+            "zr2-kokuzei-limitations-succession-q4",
+            "zr2-kokuzei-limitations-succession-q12"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "limitations-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+              "line": 37,
+              "heading": "例題1：督促の前後で5年を数え直す"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q15"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-2",
+          "draftObjectiveIndex": 2,
+          "draftObjective": "相続による各人の承継額と取得価額超過による追加責任を計算する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-limitations-succession-o2"
+          ],
+          "plannedObjectives": [
+            "相続・合併・連帯責任・充当還付の関係を整理する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-limitations-succession-q5",
+            "zr2-kokuzei-limitations-succession-q6",
+            "zr2-kokuzei-limitations-succession-q7"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "limitations-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+              "line": 53,
+              "heading": "例題2：配偶者と子2人の承継額・取得価額"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q5",
+            "zr2-kokuzei-foundations-review-q16"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-3",
+          "draftObjectiveIndex": 3,
+          "draftObjective": "合併・社団財産承継・分割・連帯義務と第二次義務を法的根拠から区分する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-limitations-succession-o2"
+          ],
+          "plannedObjectives": [
+            "相続・合併・連帯責任・充当還付の関係を整理する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-limitations-succession-q8",
+            "zr2-kokuzei-limitations-succession-q9",
+            "zr2-kokuzei-limitations-succession-q11"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "limitations-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+              "line": 71,
+              "heading": "例題3：合併と社団財産の一部承継"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q17",
+            "zr2-kokuzei-foundations-review-q18"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-4",
+          "draftObjectiveIndex": 4,
+          "draftObjective": "納付・第三者納付・還付充当と附帯税の扱いを区分し未納残額を検算する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-limitations-succession-o2"
+          ],
+          "plannedObjectives": [
+            "相続・合併・連帯責任・充当還付の関係を整理する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-limitations-succession-q7",
+            "zr2-kokuzei-limitations-succession-q10",
+            "zr2-kokuzei-limitations-succession-q11",
+            "zr2-kokuzei-limitations-succession-q12",
+            "zr2-kokuzei-limitations-succession-q13"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "limitations-ex4",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+              "line": 95,
+              "heading": "例題4：本税への充当後に附帯税を計算する"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q11",
+            "zr2-kokuzei-foundations-review-q18",
+            "zr2-kokuzei-foundations-review-q19"
+          ]
+        }
+      ]
+    },
+    {
+      "lessonId": "zr2-kokuzei-late-tax",
+      "plannedObjectives": [
+        {
+          "id": "zr2-kokuzei-late-tax-o1",
+          "index": 1,
+          "text": "延滞税の本税・期間・割合・端数を順に計算する"
+        },
+        {
+          "id": "zr2-kokuzei-late-tax-o2",
+          "index": 2,
+          "text": "附帯税の区分・61条1項の期間控除・基本加算税を判定する"
+        }
+      ],
+      "draftSubskills": [
+        {
+          "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-1",
+          "draftObjectiveIndex": 1,
+          "draftObjective": "法定納期限・現実の納期限・暦年から延滞税の率と区分日を選択する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-late-tax-o1"
+          ],
+          "plannedObjectives": [
+            "延滞税の本税・期間・割合・端数を順に計算する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-late-tax-q1",
+            "zr2-kokuzei-late-tax-q3",
+            "zr2-kokuzei-late-tax-q15"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "late-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+              "line": 30,
+              "heading": "例題1：二つの割合と本税の端数を処理する"
+            },
+            {
+              "exampleId": "late-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+              "line": 54,
+              "heading": "例題2：1年後の修正と暦年の割合変更"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q8",
+            "zr2-kokuzei-foundations-review-q21"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-2",
+          "draftObjectiveIndex": 2,
+          "draftObjective": "本税の計算基礎・日数・一部納付・最低額・端数を段階別に計算する",
+          "plannedObjectiveIndexes": [
+            1
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-late-tax-o1"
+          ],
+          "plannedObjectives": [
+            "延滞税の本税・期間・割合・端数を順に計算する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-late-tax-q2",
+            "zr2-kokuzei-late-tax-q3",
+            "zr2-kokuzei-late-tax-q4",
+            "zr2-kokuzei-late-tax-q6",
+            "zr2-kokuzei-late-tax-q12",
+            "zr2-kokuzei-late-tax-q14"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "late-ex1",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+              "line": 30,
+              "heading": "例題1：二つの割合と本税の端数を処理する"
+            },
+            {
+              "exampleId": "late-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+              "line": 54,
+              "heading": "例題2：1年後の修正と暦年の割合変更"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q19",
+            "zr2-kokuzei-foundations-review-q20",
+            "zr2-kokuzei-foundations-review-q21"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-3",
+          "draftObjectiveIndex": 3,
+          "draftObjective": "61条1項の期間控除と不適用条件を年表へ反映する",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-late-tax-o2"
+          ],
+          "plannedObjectives": [
+            "附帯税の区分・61条1項の期間控除・基本加算税を判定する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-late-tax-q5",
+            "zr2-kokuzei-late-tax-q15"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "late-ex2",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+              "line": 54,
+              "heading": "例題2：1年後の修正と暦年の割合変更"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q22"
+          ]
+        },
+        {
+          "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-4",
+          "draftObjectiveIndex": 4,
+          "draftObjective": "過少申告・無申告・不納付・重加算税の基本分岐を選び、通常例の税額を求める",
+          "plannedObjectiveIndexes": [
+            2
+          ],
+          "plannedObjectiveIds": [
+            "zr2-kokuzei-late-tax-o2"
+          ],
+          "plannedObjectives": [
+            "附帯税の区分・61条1項の期間控除・基本加算税を判定する"
+          ],
+          "relationship": "component_of_broader_planned_objective",
+          "questionEvidence": [
+            "zr2-kokuzei-late-tax-q7",
+            "zr2-kokuzei-late-tax-q8",
+            "zr2-kokuzei-late-tax-q9",
+            "zr2-kokuzei-late-tax-q10",
+            "zr2-kokuzei-late-tax-q11",
+            "zr2-kokuzei-late-tax-q12",
+            "zr2-kokuzei-late-tax-q13",
+            "zr2-kokuzei-late-tax-q14"
+          ],
+          "completionStatus": "evidence_proposed_pending_root_source_objective_checks_not_completion",
+          "mappingReason": "附帯税区分という広い計画目標を、基本加算税の分岐・通常額まで具体化した下位技能。累積・反復・帳簿・混在隠蔽の網羅完了は意味しない",
+          "workedExampleEvidence": [
+            {
+              "exampleId": "late-ex3",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+              "line": 76,
+              "heading": "例題3：過少申告加算税の5％加重部分"
+            },
+            {
+              "exampleId": "late-ex4",
+              "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+              "line": 84,
+              "heading": "例題4：無申告の段階税率と自主申告の場合の違い"
+            }
+          ],
+          "cumulativeQuestionEvidence": [
+            "zr2-kokuzei-foundations-review-q23",
+            "zr2-kokuzei-foundations-review-q24",
+            "zr2-kokuzei-foundations-review-q25"
+          ]
+        }
+      ]
+    }
+  ],
+  "updated": "2026-10-27",
+  "evidenceMap": "work/zeirishi-upgrade/kokuzei-foundations-evidence-map.json",
+  "broadObjectiveGaps": [
+    {
+      "objectiveId": "zr2-kokuzei-framework-subskill-4",
+      "ownerLessonId": "zr2-kokuzei-priority-general",
+      "status": "supplemental_only_successor_not_completed"
+    },
+    {
+      "facet": "独立の免除・猶予減免",
+      "ownerLessonId": "zr2-kokuzei-late-tax-complex",
+      "status": "planned_not_authored",
+      "decision": "late-tax-o2の文言から減免を外し、実際の基本区分・61条期間控除・基本加算税へ修正。63条等の免除は後続講の明示目標・例題に残す"
+    },
+    {
+      "facet": "無限責任社員と退社等の全責任条件",
+      "ownerLessonId": "zr2-kokuzei-secondary-members-liquidators",
+      "status": "planned_not_authored"
+    },
+    {
+      "facet": "限定承認・放棄・包括遺贈等の個別計算と手続",
+      "ownerLessonId": "zr2-kokuzei-succession-inheritance",
+      "status": "planned_not_authored"
+    }
+  ]
+}

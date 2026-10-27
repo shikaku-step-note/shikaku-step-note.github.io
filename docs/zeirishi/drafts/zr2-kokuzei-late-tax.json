@@ -85,6 +85,22 @@
         "lowAmount": 4585,
         "highAmount": 10994,
         "lateTax": 15500
+      },
+      "objectives": [
+        1,
+        2
+      ],
+      "draftObjectiveIndexes": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o1"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+        "line": 30,
+        "heading": "例題1：二つの割合と本税の端数を処理する"
       }
     },
     {
@@ -101,6 +117,25 @@
           767
         ],
         "lateTax": 26400
+      },
+      "objectives": [
+        1,
+        2,
+        3
+      ],
+      "draftObjectiveIndexes": [
+        1,
+        2,
+        3
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o1",
+        "zr2-kokuzei-late-tax-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+        "line": 54,
+        "heading": "例題2：1年後の修正と暦年の割合変更"
       }
     },
     {
@@ -110,6 +145,20 @@
         "basic": 90000,
         "additional": 10000,
         "total": 100000
+      },
+      "objectives": [
+        4
+      ],
+      "draftObjectiveIndexes": [
+        4
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+        "line": 76,
+        "heading": "例題3：過少申告加算税の5％加重部分"
       }
     },
     {
@@ -118,6 +167,20 @@
       "result": {
         "usual": 935000,
         "voluntaryBeforeNotice": 210000
+      },
+      "objectives": [
+        4
+      ],
+      "draftObjectiveIndexes": [
+        4
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-late-tax.md",
+        "line": 84,
+        "heading": "例題4：無申告の段階税率と自主申告の場合の違い"
       }
     }
   ],
@@ -755,7 +818,9 @@
         "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
       }
     ],
-    "toolLimitations": "paragraphs.pyで段落表を生成。lint.py/calques.pyは依存パッケージsudachipyが未導入のため実行できず、機械的合格とは表示せず手動チェックを実施"
+    "toolLimitations": "paragraphs.pyで段落表を生成。lint.py/calques.pyは依存パッケージsudachipyが未導入のため実行できず、機械的合格とは表示せず手動チェックを実施",
+    "workedExampleObjectiveIndexing": "2026-10-27：例題を実見出し・行へ対応し全24下位技能に少なくとも1場面を索引化。索引は全細目の完全履修の認定ではない。framework-ex4/private-ex5を追加したため両場面は独立再確認待ち",
+    "bodyCharactersAfterReviewCorrections": 5166
   },
   "continuationCoverage": [
     {

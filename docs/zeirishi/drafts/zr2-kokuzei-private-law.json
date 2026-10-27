@@ -70,7 +70,21 @@
     {
       "id": "private-ex1",
       "section": "例題1：現金・預金・売掛金と借用機械",
-      "result": 1400000
+      "result": 1400000,
+      "objectives": [
+        1
+      ],
+      "draftObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o1"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+        "line": 46,
+        "heading": "例題1：現金・預金・売掛金と借用機械"
+      }
     },
     {
       "id": "private-ex2",
@@ -78,17 +92,84 @@
       "result": {
         "remainingDebt": 300000,
         "personalGuaranteeByOwner": false
+      },
+      "objectives": [
+        2
+      ],
+      "draftObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+        "line": 54,
+        "heading": "例題2：他人の借金のために土地を担保へ出す"
       }
     },
     {
       "id": "private-ex3",
       "section": "例題3：有限責任社員の未履行出資",
-      "result": 250000
+      "result": 250000,
+      "objectives": [
+        3
+      ],
+      "draftObjectiveIndexes": [
+        3
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+        "line": 70,
+        "heading": "例題3：有限責任社員の未履行出資"
+      }
     },
     {
       "id": "private-ex4",
       "section": "例題4：相続した財産額をそのまま責任上限にしない",
-      "result": 450000
+      "result": 450000,
+      "objectives": [
+        4
+      ],
+      "draftObjectiveIndexes": [
+        4
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+        "line": 86,
+        "heading": "例題4：相続した財産額をそのまま責任上限にしない"
+      }
+    },
+    {
+      "id": "private-ex5",
+      "section": "例題5：売買の効力と、第三者へ対抗する条件",
+      "result": {
+        "saleEffectiveBetweenParties": true,
+        "buyerOpposableToGivenThirdPartyWithoutRegistration": false
+      },
+      "sourceAnchors": [
+        "民法176・177条"
+      ],
+      "objectives": [
+        2
+      ],
+      "draftObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-private-law.md",
+        "line": 94,
+        "heading": "例題5：売買の効力と、第三者へ対抗する条件"
+      }
     }
   ],
   "questions": [
@@ -645,7 +726,9 @@
       "humanizer": "誇張・読者への呼びかけ・型の反復・不要な結びを点検。法的条件の比較は保持",
       "proofreadJa": "助詞・主語・条番号・全角半角・附帯税・差押え/差押し等の表記を確認。独立校正はpending"
     },
-    "teachingCharactersExcludingSourceSection": 4969
+    "teachingCharactersExcludingSourceSection": 4969,
+    "workedExampleObjectiveIndexing": "2026-10-27：例題を実見出し・行へ対応し全24下位技能に少なくとも1場面を索引化。索引は全細目の完全履修の認定ではない。framework-ex4/private-ex5を追加したため両場面は独立再確認待ち",
+    "bodyCharactersAfterReviewCorrections": 5319
   },
   "continuationCoverage": [
     {

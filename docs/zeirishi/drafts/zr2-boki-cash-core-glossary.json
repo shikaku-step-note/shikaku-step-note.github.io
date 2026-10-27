@@ -1,0 +1,652 @@
+{
+  "id": "zr2-boki-cash-core-glossary",
+  "title": "現金・債権の用語参照",
+  "type": "reference-glossary",
+  "definitionCount": 35,
+  "assessmentQuestionCount": 0,
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "entries": [
+    {
+      "id": "zr2-boki-cash-core-term-1",
+      "term": "現金実査",
+      "definition": "現物と証憑の帰属・性質を確認し、現金勘定に含める実際有高を確かめる手続",
+      "lessonId": "zr2-boki-cash-count",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "ac2-bookkeeping-official",
+        "ac2-cash-boki74",
+        "ac2-petty-boki73",
+        "jcci-cash125",
+        "jcci-cash142",
+        "jcci-petty150",
+        "jcci-petty124"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-2",
+      "term": "通貨代用証券",
+      "definition": "直ちに換金できる通常の他人振出小切手等、簿記上の現金に含める証券。自社小切手や未使用郵券を同じ理由で含めない",
+      "lessonId": "zr2-boki-cash-count",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "ac2-bookkeeping-official",
+        "ac2-cash-boki74",
+        "ac2-petty-boki73",
+        "jcci-cash125",
+        "jcci-cash142",
+        "jcci-petty150",
+        "jcci-petty124"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-3",
+      "term": "現金過不足",
+      "definition": "実際有高と帳簿の差を原因調査中に仮に整理する勘定。判明分と決算時の不明残額を区分して振り替える",
+      "lessonId": "zr2-boki-cash-count",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "ac2-bookkeeping-official",
+        "ac2-cash-boki74",
+        "ac2-petty-boki73",
+        "jcci-cash125",
+        "jcci-cash142",
+        "jcci-petty150",
+        "jcci-petty124"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-4",
+      "term": "仮払金",
+      "definition": "支出内容や確定額等が未確定の段階で前渡しした金額を整理する資産。精算で費用等と返金・不足額を確定する",
+      "lessonId": "zr2-boki-cash-count",
+      "objectives": [
+        3
+      ],
+      "sourceRefIds": [
+        "ac2-bookkeeping-official",
+        "ac2-cash-boki74",
+        "ac2-petty-boki73",
+        "jcci-cash125",
+        "jcci-cash142",
+        "jcci-petty150",
+        "jcci-petty124"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-5",
+      "term": "郵券の貯蔵品振替",
+      "definition": "購入時に費用とした郵券の未使用分を、期末に資産へ移す整理。購入時の現金支出の再記帳ではない",
+      "lessonId": "zr2-boki-cash-count",
+      "objectives": [
+        4
+      ],
+      "sourceRefIds": [
+        "ac2-bookkeeping-official",
+        "ac2-cash-boki74",
+        "ac2-petty-boki73",
+        "jcci-cash125",
+        "jcci-cash142",
+        "jcci-petty150",
+        "jcci-petty124"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-6",
+      "term": "定額資金前渡制度",
+      "definition": "小口現金の定額を設け、使用報告に基づいて補給する方法。報告日・補給日・決算日が違う場合は各時点を区分する",
+      "lessonId": "zr2-boki-cash-count",
+      "objectives": [
+        3
+      ],
+      "sourceRefIds": [
+        "ac2-bookkeeping-official",
+        "ac2-cash-boki74",
+        "ac2-petty-boki73",
+        "jcci-cash125",
+        "jcci-cash142",
+        "jcci-petty150",
+        "jcci-petty124"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-7",
+      "term": "未取付小切手",
+      "definition": "支払先へ交付済みで会社は正しく支払記帳したが、銀行では未決済の小切手。会社側の正しい支払を取り消さない",
+      "lessonId": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "ac2-bank-boki74",
+        "ac2-bank-zaimu71",
+        "financial-regulations"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-8",
+      "term": "未渡小切手",
+      "definition": "作成済みでも支払先へ未交付の小切手。先に支払記帳していればその記帳を戻す必要がある",
+      "lessonId": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "ac2-bank-boki74",
+        "ac2-bank-zaimu71",
+        "financial-regulations"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-9",
+      "term": "未取立の入金",
+      "definition": "会社が入金を正しく記帳した一方、銀行側でまだ取立て・加算が終わっていない照合差。差の具体的事実を確認する",
+      "lessonId": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "ac2-bank-boki74",
+        "ac2-bank-zaimu71",
+        "financial-regulations"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-10",
+      "term": "未通知の銀行取引",
+      "definition": "銀行が会社の実際の取引を記帳したが会社はまだ記帳していない差。銀行自体の誤処理とは区別する",
+      "lessonId": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        1,
+        3
+      ],
+      "sourceRefIds": [
+        "ac2-bank-boki74",
+        "ac2-bank-zaimu71",
+        "financial-regulations"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-11",
+      "term": "銀行勘定調整表",
+      "definition": "会社と銀行の残高差を原因別に調整し、修正後残高と会社の必要仕訳を確認する表",
+      "lessonId": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "ac2-bank-boki74",
+        "ac2-bank-zaimu71",
+        "financial-regulations"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-12",
+      "term": "当座借越",
+      "definition": "当座取引の借越契約等に基づく借入れ。照合では負の残高で追い、決算の帳簿振替と負債表示を区分する",
+      "lessonId": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        4
+      ],
+      "sourceRefIds": [
+        "ac2-bank-boki74",
+        "ac2-bank-zaimu71",
+        "financial-regulations"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-13",
+      "term": "営業上の受取手形",
+      "definition": "通常の営業取引から受け取った手形債権。営業外の資産売却や貸付を示す金融手形と発生原因を区分する",
+      "lessonId": "zr2-boki-bills-receivable",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-bills-law",
+        "ac2-accounting-principles"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-14",
+      "term": "営業外受取手形",
+      "definition": "備品売却等の営業外取引から受け取った手形債権を、営業上の受取手形と分ける科目",
+      "lessonId": "zr2-boki-bills-receivable",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-bills-law",
+        "ac2-accounting-principles"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-15",
+      "term": "金融手形",
+      "definition": "商品取引等の決済ではなく資金貸借のために用いる手形。受領した形式だけで貸付金の性質が変わるとは限らない",
+      "lessonId": "zr2-boki-bills-receivable",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-bills-law",
+        "ac2-accounting-principles"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-16",
+      "term": "手形割引",
+      "definition": "満期前の手形を銀行等へ譲渡して資金化する取引。消滅要件と新たな保証債務、割引料を区分して計算する",
+      "lessonId": "zr2-boki-bills-receivable",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-bills-law",
+        "ac2-accounting-principles"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-17",
+      "term": "手形裏書譲渡",
+      "definition": "手形上の権利を裏書により他者へ移す取引。原債務の決済や新たな保証義務、消滅要件を区分する",
+      "lessonId": "zr2-boki-bills-receivable",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-bills-law",
+        "ac2-accounting-principles"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-18",
+      "term": "不渡手形",
+      "definition": "不渡りとなった手形について残存又は取得する請求権を整理する勘定。請求権の範囲と回収可能性は別に判断する",
+      "lessonId": "zr2-boki-bills-receivable",
+      "objectives": [
+        3
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-bills-law",
+        "ac2-accounting-principles"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-19",
+      "term": "手形更改",
+      "definition": "満期延長等に伴い旧手形を新手形へ入れ替える取引。同じ元本を新旧で二重計上せず、利息の条件を別に整理する",
+      "lessonId": "zr2-boki-bills-receivable",
+      "objectives": [
+        4
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-bills-law",
+        "ac2-accounting-principles"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-20",
+      "term": "電子記録債権",
+      "definition": "発生記録を効力要件とする金銭債権。発生・譲渡・支払等の記録の段階と現金決済を区分する",
+      "lessonId": "zr2-boki-receivable-transfers",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-electronic-claims",
+        "ac2-electronic-claims-law",
+        "fsa-factoring-definition"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-21",
+      "term": "金融資産の消滅",
+      "definition": "権利行使・権利喪失又は支配移転等の基準に従い、金融資産を帳簿から除く処理",
+      "lessonId": "zr2-boki-receivable-transfers",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-electronic-claims",
+        "ac2-electronic-claims-law",
+        "fsa-factoring-definition"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-22",
+      "term": "支配移転",
+      "definition": "金融資産の譲渡で、法的保全、譲受人の権利享受、実質的な買戻し権利義務等の要件を通じて判断する消滅の条件",
+      "lessonId": "zr2-boki-receivable-transfers",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-electronic-claims",
+        "ac2-electronic-claims-law",
+        "fsa-factoring-definition"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-23",
+      "term": "譲渡に伴う保証債務",
+      "definition": "金融資産の譲渡で新たに生じる保証義務を負債として認識したもの。主債務の額面と初期認識時価を区分する",
+      "lessonId": "zr2-boki-receivable-transfers",
+      "objectives": [
+        3
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-electronic-claims",
+        "ac2-electronic-claims-law",
+        "fsa-factoring-definition"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-24",
+      "term": "譲渡金額",
+      "definition": "金融資産の消滅損益を求める際、受取金額に新たな資産の時価を加え、新たな負債の時価を差し引いて求める金額。残存部分の原価配分は別に行う",
+      "lessonId": "zr2-boki-receivable-transfers",
+      "objectives": [
+        3
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-electronic-claims",
+        "ac2-electronic-claims-law",
+        "fsa-factoring-definition"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-25",
+      "term": "残存部分の原価配分",
+      "definition": "一部消滅時に譲渡部分と残る部分の相対的な時価で元の帳簿価額を分ける処理。残存部分の時価評価と区分する",
+      "lessonId": "zr2-boki-receivable-transfers",
+      "objectives": [
+        4
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-electronic-claims",
+        "ac2-electronic-claims-law",
+        "fsa-factoring-definition"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-26",
+      "term": "留保した回収サービス権",
+      "definition": "金融資産譲渡後に留保する回収業務に係る権利。通常収益超過等の条件による資産認識を検討し、残存部分として原価配分する",
+      "lessonId": "zr2-boki-receivable-transfers",
+      "objectives": [
+        4
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide",
+        "ac2-electronic-claims",
+        "ac2-electronic-claims-law",
+        "fsa-factoring-definition"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-27",
+      "term": "一般債権",
+      "definition": "経営状態に重大な問題が生じていない債務者への債権で、対象集団の実績率等により貸倒見積りを行う区分",
+      "lessonId": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-28",
+      "term": "貸倒懸念債権",
+      "definition": "経営破綻には至らなくても財政状態等の悪化により、元利金を約定どおり回収できない可能性が高い債権の区分",
+      "lessonId": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-29",
+      "term": "破産更生債権等",
+      "definition": "経営破綻又は実質的経営破綻に陥っている債務者への債権の区分。担保等の回収を除く部分の貸倒見積りを行う",
+      "lessonId": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-30",
+      "term": "貸倒見積高",
+      "definition": "債権区分と回収見込みに応じて見積もった損失額。期末必要引当残高の計算と当期繰入額の算定を区分する",
+      "lessonId": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        2,
+        3
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-31",
+      "term": "貸倒引当金繰入額",
+      "definition": "必要引当残高へ合わせるため、取崩し等を反映した整理前残高との差額として当期に追加する額",
+      "lessonId": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        4
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-32",
+      "term": "貸倒実績率",
+      "definition": "同一の開始債権集団から生じた貸倒額等を対応する債権額で除して求める率。算定期間・平均方法・現在リスクを確認する",
+      "lessonId": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        5
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-33",
+      "term": "貸倒DCF",
+      "definition": "合理的に見積もった将来元利回収を、条件に応じた当初約定率又は取得当初実効率等で割り引き、帳簿との差から貸倒見積高を求める方法",
+      "lessonId": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        1
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-34",
+      "term": "時間経過の利息配分",
+      "definition": "回収予測不変のもとで回収日までの期間短縮により純額が増える効果を収益へ配分する処理。現金受領とは別に追う",
+      "lessonId": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        2
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-term-35",
+      "term": "DCFの見積変更損益",
+      "definition": "旧見積りで時間経過・回収を反映した純額と、新しい回収額・時期を割り引いた純額との差。期首期末引当差だけと区分する",
+      "lessonId": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        3
+      ],
+      "sourceRefIds": [
+        "asbj-finance",
+        "ac2-finance-guide"
+      ]
+    }
+  ],
+  "sourceCandidates": [
+    {
+      "id": "ac2-bookkeeping-official",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+      "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-cash-boki74",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+      "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-petty-boki73",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+      "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-cash125",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+      "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-cash142",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+      "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-petty150",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+      "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-petty124",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+      "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-bank-boki74",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+      "location": "第三問・資料2・2(2)、印刷A16"
+    },
+    {
+      "id": "ac2-bank-zaimu71",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+      "location": "第三問・資料2・1(2)、印刷B11"
+    },
+    {
+      "id": "financial-regulations",
+      "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+      "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合",
+      "verified": "2026-10-27",
+      "evidenceFile": "work/zeirishi-upgrade/reference-pages/financial-regulations-20260403.json"
+    },
+    {
+      "id": "asbj-finance",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+      "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。 / 2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない / 第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認 / 2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-finance-guide",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+      "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。 / 2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理 / 移管指針9・2025年3月11日版110〜115項、119項 / 2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-bills-law",
+      "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+      "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-electronic-claims",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+      "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-electronic-claims-law",
+      "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+      "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "fsa-factoring-definition",
+      "url": "https://www.fsa.go.jp/user/factoring.html",
+      "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "scopeBoundaries": [
+    "計画のcash単元7講のうち、草稿がある基幹6講だけを対象とする。",
+    "zr2-boki-documentary-bills の為替手形三者関係・D/P/D/A・荷為替・外貨取組は未着手であり本演習の合格で修得済みと扱わない。",
+    "税務上の貸倒損金算入、連結・外貨換算、IFRS又は後発の予想信用損失基準を扱わない。",
+    "25の細目に累積問題の証拠を付したが、各目標の全下位技能又は本試験全範囲の修得を証明しない。"
+  ]
+}

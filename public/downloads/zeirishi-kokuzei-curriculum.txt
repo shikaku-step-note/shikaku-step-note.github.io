@@ -75,6 +75,163 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-8-review/
   [zeirishi-kokuzei-mock] 国税徴収法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-kokuzei-mock/
+
+  詳しく学ぶ単元 [zr2-kokuzei-unit-foundations] 徴収と私法の基礎を時系列にする
+    当事者と財産の帰属から、成立・確定・期限、督促、時効・承継、延滞税・基本加算税へ進む6講。25の独自例題、77の末尾問題と、初見資料の記述26問・事例用語12問で段階的に確認します。
+    単元確認日：2026-10-27／本文・例題・理解度確認の合計目安680分（独立テストと再復習は別）
+    URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-kokuzei-unit-foundations/
+    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
+    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
+    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
+    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
+    1. [zr2-kokuzei-framework] 徴収法の目的・税の区分・当事者と執行機関／90分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr-kokuzei-priority
+      実演：[framework-ex1] 例題1：源泉所得税の納税者と売掛金の相手／[framework-ex2] 例題2：転居と徴収の引継ぎを読み分ける／[framework-ex3] 例題3：国税優先の原則だけで配当額を決めない／[framework-ex4] 例題4：徴収一覧を分類して集計する
+      理解度チェック [zr2-kokuzei-framework-check] 12問／版：zeirishi-2026-v2-kokuzei-framework-1
+      次：zr2-kokuzei-private-law
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-framework/
+      [zr2-kokuzei-framework-d1] 徴収法上の国税・地方税・公課と本税・附帯税・滞納処分費を具体例で区分する
+        独立練習：zr2-kokuzei-framework-q1、zr2-kokuzei-framework-q3、zr2-kokuzei-framework-q4
+      [zr2-kokuzei-framework-d2] 納税者・滞納者・第二次納税義務者・保証人・第三債務者を事実関係から特定する
+        独立練習：zr2-kokuzei-framework-q2、zr2-kokuzei-framework-q8、zr2-kokuzei-framework-q9、zr2-kokuzei-framework-q11
+      [zr2-kokuzei-framework-d3] 現在の納税地による原則、税関の例外、適法な徴収引継ぎを区別する
+        独立練習：zr2-kokuzei-framework-q6、zr2-kokuzei-framework-q7、zr2-kokuzei-framework-q12
+      [zr2-kokuzei-framework-d4] 国税優先と私法上の権利の調整を説明し、優先が明示された例の配当と残額を計算する
+        独立練習：zr2-kokuzei-framework-q5、zr2-kokuzei-framework-q10
+      出典 [collection-law] e-Gov：国税徴収法：1〜3条、8・16・32条。保存済み公式JSONを2026-10-27に確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012
+      出典 [general-law] e-Gov：国税通則法：2・43条。保存済み公式JSONを2026-10-27に確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [collection-training] 国税庁・税務大学校：国税徴収法基礎編：令和8年度第1章。2026-01-01法令を基礎とする補助教材。令和8年度／確認2026-10-27
+        https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf
+    2. [zr2-kokuzei-private-law] 財産の帰属・担保・社員責任・相続を読み分ける／100分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-kokuzei-framework
+      実演：[private-ex1] 例題1：現金・預金・売掛金と借用機械／[private-ex2] 例題2：他人の借金のために土地を担保へ出す／[private-ex3] 例題3：有限責任社員の未履行出資／[private-ex4] 例題4：相続した財産額をそのまま責任上限にしない／[private-ex5] 例題5：売買の効力と、第三者へ対抗する条件
+      理解度チェック [zr2-kokuzei-private-law-check] 12問／版：zeirishi-2026-v2-kokuzei-private-law-1
+      次：zr2-kokuzei-tax-timeline
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-private-law/
+      [zr2-kokuzei-private-law-d1] 所有権・占有・金銭債権を当事者ごとに区分し、滞納者に帰属する財産を特定する
+        独立練習：zr2-kokuzei-private-law-q1、zr2-kokuzei-private-law-q2、zr2-kokuzei-private-law-q4
+      [zr2-kokuzei-private-law-d2] 権利移転と第三者対抗要件、借主と物上保証人、担保と所有権を区別する
+        独立練習：zr2-kokuzei-private-law-q3、zr2-kokuzei-private-law-q5、zr2-kokuzei-private-law-q6
+      [zr2-kokuzei-private-law-d3] 法人と出資者を区分し、有限責任社員の未履行出資による責任限度を計算する
+        独立練習：zr2-kokuzei-private-law-q7、zr2-kokuzei-private-law-q8、zr2-kokuzei-private-law-q11
+      [zr2-kokuzei-private-law-d4] 相続財産と固有財産、単純承認・限定承認・放棄を区別し国税承継へつなぐ
+        独立練習：zr2-kokuzei-private-law-q9、zr2-kokuzei-private-law-q10、zr2-kokuzei-private-law-q12
+      出典 [civil-law] e-Gov：民法：176〜178・206・295・303・342・369・373・896・920・922・939条。2026-04-01施行版、asof=2026-04-03／確認2026-10-27
+        https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033
+      出典 [companies-law] e-Gov：会社法：104・580・612条を保存済み公式JSONで2026-10-27に確認。2025-10-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053
+      出典 [general-law] e-Gov：国税通則法：5条を保存済み公式JSONで2026-10-27に確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [collection-law] e-Gov：国税徴収法：15〜24・33・51条。51条の義務区分を確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012
+    3. [zr2-kokuzei-tax-timeline] 成立・確定・納付期限と優先比較日を年表にする／110分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-kokuzei-private-law
+      実演：[timeline-ex1] 例題1：年末成立と期限内申告の関係／[timeline-ex2] 例題2：更正通知書の発出日と送達日／[timeline-ex3] 例題3：源泉所得税は告知で初めて確定するのか／[timeline-ex4] 例題4：源泉所得税を告知前に期限後納付した場合
+      理解度チェック [zr2-kokuzei-tax-timeline-check] 13問／版：zeirishi-2026-v2-kokuzei-tax-timeline-1
+      次：zr2-kokuzei-demand-acceleration
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-tax-timeline/
+      [zr2-kokuzei-tax-timeline-d1] 主要税目の納税義務成立時点と申告・賦課・自動確定を区別する
+        独立練習：zr2-kokuzei-tax-timeline-q1、zr2-kokuzei-tax-timeline-q2、zr2-kokuzei-tax-timeline-q10、zr2-kokuzei-tax-timeline-q12
+      [zr2-kokuzei-tax-timeline-d2] 期限内・期限後・修正申告、更正決定、納税告知ごとに確定と納付すべき日を特定する
+        独立練習：zr2-kokuzei-tax-timeline-q2、zr2-kokuzei-tax-timeline-q3、zr2-kokuzei-tax-timeline-q4、zr2-kokuzei-tax-timeline-q5、zr2-kokuzei-tax-timeline-q10、zr2-kokuzei-tax-timeline-q11
+      [zr2-kokuzei-tax-timeline-d3] 法定納期限・現実の納期限・法定納期限等を税額別に区分する
+        独立練習：zr2-kokuzei-tax-timeline-q5、zr2-kokuzei-tax-timeline-q6、zr2-kokuzei-tax-timeline-q7、zr2-kokuzei-tax-timeline-q11、zr2-kokuzei-tax-timeline-q13
+      [zr2-kokuzei-tax-timeline-d4] 初日・暦月・休日等の規定と設問条件に従い期間を計算し年表を作る
+        独立練習：zr2-kokuzei-tax-timeline-q4、zr2-kokuzei-tax-timeline-q8、zr2-kokuzei-tax-timeline-q9、zr2-kokuzei-tax-timeline-q11
+      出典 [general-law] e-Gov：国税通則法：2・10〜12・15〜16・19・24・28・35〜36条。保存済み基準日公式JSONを2026-10-27に読解。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [collection-law] e-Gov：国税徴収法：2条10号・15条1項、特に1号と5号の2。保存済み公式JSONを読解。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012
+      出典 [income-law] e-Gov：所得税法：120・128条の通常申告・納付。保存済み公式JSONで確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012
+      出典 [corporate-law] e-Gov：法人税法：74・77条の通常確定申告・納付。保存済み公式JSONで確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012
+    4. [zr2-kokuzei-demand-acceleration] 督促・納付催告・繰上請求と繰上差押えを区分する／110分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-kokuzei-tax-timeline
+      実演：[demand-ex1] 例題1：発出日と受領日が違い、一部納付がある／[demand-ex2] 例題2：第二次義務者自身の手続を追う／[demand-ex3] 例題3：元の納期限を待つと徴収できない／[demand-ex4] 例題4：督促後に財産隠匿の事実が生じた
+      理解度チェック [zr2-kokuzei-demand-acceleration-check] 12問／版：zeirishi-2026-v2-kokuzei-demand-acceleration-1
+      次：zr2-kokuzei-limitations-succession
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-demand-acceleration/
+      [zr2-kokuzei-demand-acceleration-d1] 通常の督促の要否・法定形式・50日以内の規定と送達を判断する
+        独立練習：zr2-kokuzei-demand-acceleration-q1、zr2-kokuzei-demand-acceleration-q4、zr2-kokuzei-demand-acceleration-q11
+      [zr2-kokuzei-demand-acceleration-d2] 発出日・経過する日・経過した日を区分し、差押えの時期と未納残額を計算する
+        独立練習：zr2-kokuzei-demand-acceleration-q2、zr2-kokuzei-demand-acceleration-q3
+      [zr2-kokuzei-demand-acceleration-d3] 第二次義務者への納付通知・納付催告と差押換価の順序を区別する
+        独立練習：zr2-kokuzei-demand-acceleration-q5、zr2-kokuzei-demand-acceleration-q6、zr2-kokuzei-demand-acceleration-q11
+      [zr2-kokuzei-demand-acceleration-d4] 繰上請求と繰上差押えの事由・対象・時期・効果を事実へ当てはめる
+        独立練習：zr2-kokuzei-demand-acceleration-q7、zr2-kokuzei-demand-acceleration-q8、zr2-kokuzei-demand-acceleration-q9、zr2-kokuzei-demand-acceleration-q10、zr2-kokuzei-demand-acceleration-q12
+      出典 [general-law] e-Gov：国税通則法：10・12・37〜40条を保存済み公式JSONで確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [collection-law] e-Gov：国税徴収法：32・47条を保存済み公式JSONで確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012
+      出典 [general-training-2026] 国税庁・税務大学校：国税通則法講本：印刷8頁（PDF19頁、0-based18）第1章第2節・参考「期間の計算の具体例」表の行2・4。第3章の督促と徴収繰上も参照。令和8年度・2026-01-01法令を基礎。2026-10-27確認／確認2026-10-27
+        https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf
+      出典 [collection-training] 国税庁・税務大学校：国税徴収法基礎編：第6章の第二次義務徴収手続。待機と換価制限を主法と照合。令和8年度・2026-01-01法令を基礎／確認2026-10-27
+        https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf
+      出典 [demand-50day-decision] 国税不服審判所：平成15年7月3日裁決（督促の50日規定）：平成15年7月3日裁決・判断(3)ロ。50日規定の効力。公表裁決。過去法令の事例として主法と区別／確認2026-10-27
+        https://www.kfs.go.jp/service/JP/66/20/index.html
+      出典 [seizure-warning-decision] 国税不服審判所：平成13年12月19日裁決（差押予告）：平成13年12月19日裁決・判断(4)。差押予告。公表裁決。過去法令の事例として主法と区別／確認2026-10-27
+        https://www.kfs.go.jp/service/JP/62/40/index.html
+    5. [zr2-kokuzei-limitations-succession] 徴収権の時効・納付義務の承継と充当残高を計算する／130分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-kokuzei-demand-acceleration
+      実演：[limitations-ex1] 例題1：督促の前後で5年を数え直す／[limitations-ex2] 例題2：配偶者と子2人の承継額・取得価額／[limitations-ex3] 例題3：合併と社団財産の一部承継／[limitations-ex4] 例題4：本税への充当後に附帯税を計算する
+      理解度チェック [zr2-kokuzei-limitations-succession-check] 13問／版：zeirishi-2026-v2-kokuzei-limitations-succession-1
+      次：zr2-kokuzei-late-tax
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-limitations-succession/
+      [zr2-kokuzei-limitations-succession-d1] 徴収権の時効の基準日・完成猶予・更新・不進行を区分し条件付き年表を計算する
+        独立練習：zr2-kokuzei-limitations-succession-q1、zr2-kokuzei-limitations-succession-q2、zr2-kokuzei-limitations-succession-q3、zr2-kokuzei-limitations-succession-q4、zr2-kokuzei-limitations-succession-q12
+      [zr2-kokuzei-limitations-succession-d2] 相続による各人の承継額と取得価額超過による追加責任を計算する
+        独立練習：zr2-kokuzei-limitations-succession-q5、zr2-kokuzei-limitations-succession-q6、zr2-kokuzei-limitations-succession-q7
+      [zr2-kokuzei-limitations-succession-d3] 合併・社団財産承継・分割・連帯義務と第二次義務を法的根拠から区分する
+        独立練習：zr2-kokuzei-limitations-succession-q8、zr2-kokuzei-limitations-succession-q9、zr2-kokuzei-limitations-succession-q11
+      [zr2-kokuzei-limitations-succession-d4] 納付・第三者納付・還付充当と附帯税の扱いを区分し未納残額を検算する
+        独立練習：zr2-kokuzei-limitations-succession-q7、zr2-kokuzei-limitations-succession-q10、zr2-kokuzei-limitations-succession-q11、zr2-kokuzei-limitations-succession-q12、zr2-kokuzei-limitations-succession-q13
+      出典 [general-law] e-Gov：国税通則法：5〜9条の3・41・56・57・72・73条。保存済み公式JSONを2026-10-27に読解。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [civil-law] e-Gov：民法：145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033
+      出典 [collection-law] e-Gov：国税徴収法：47・51条等。版固定主法。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012
+      出典 [general-training-2026] 国税庁・税務大学校：国税通則法講本：令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる。2026-01-01法令を基礎／確認2026-10-27
+        https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf
+    6. [zr2-kokuzei-late-tax] 延滞税・加算税を日付と行為の条件から計算する／140分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-kokuzei-limitations-succession
+      実演：[late-ex1] 例題1：二つの割合と本税の端数を処理する／[late-ex2] 例題2：1年後の修正と暦年の割合変更／[late-ex3] 例題3：過少申告加算税の5％加重部分／[late-ex4] 例題4：無申告の段階税率と自主申告の場合の違い
+      理解度チェック [zr2-kokuzei-late-tax-check] 15問／版：zeirishi-2026-v2-kokuzei-late-tax-1
+      次：zr2-kokuzei-unit-foundations-review
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-late-tax/
+      [zr2-kokuzei-late-tax-d1] 法定納期限・現実の納期限・暦年から延滞税の率と区分日を選択する
+        独立練習：zr2-kokuzei-late-tax-q1、zr2-kokuzei-late-tax-q3、zr2-kokuzei-late-tax-q15
+      [zr2-kokuzei-late-tax-d2] 本税の計算基礎・日数・一部納付・最低額・端数を段階別に計算する
+        独立練習：zr2-kokuzei-late-tax-q2、zr2-kokuzei-late-tax-q3、zr2-kokuzei-late-tax-q4、zr2-kokuzei-late-tax-q6、zr2-kokuzei-late-tax-q12、zr2-kokuzei-late-tax-q14
+      [zr2-kokuzei-late-tax-d3] 61条1項の期間控除と不適用条件を年表へ反映する
+        独立練習：zr2-kokuzei-late-tax-q5、zr2-kokuzei-late-tax-q15
+      [zr2-kokuzei-late-tax-d4] 過少申告・無申告・不納付・重加算税の基本分岐を選び、通常例の税額を求める
+        独立練習：zr2-kokuzei-late-tax-q7、zr2-kokuzei-late-tax-q8、zr2-kokuzei-late-tax-q9、zr2-kokuzei-late-tax-q10、zr2-kokuzei-late-tax-q11、zr2-kokuzei-late-tax-q12、zr2-kokuzei-late-tax-q13、zr2-kokuzei-late-tax-q14
+      出典 [general-law] e-Gov：国税通則法：60〜68・118〜119条。版固定JSONの該当条項を読解。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [special-law] e-Gov：租税特別措置法：94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認。2026-04-01施行版／確認2026-10-27
+        https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+      出典 [collection-delay] 国税庁 No.9205：延滞税について：2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例。2026-04-01現在法令等、2026-10-27確認／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9205.htm
+      出典 [delay-calculation] 国税庁：延滞税の計算方法：納期限前後の低率期間、原則計算方法。2026-10-27確認、年度別割合は別資料と照合／確認2026-10-27
+        https://www.nta.go.jp/taxes/nozei/entaizei/keisan/entai.htm
+      出典 [general-training-2026] 国税庁・税務大学校：国税通則法講本：令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認。2026-01-01法令を基礎。4月3日版主法と併用／確認2026-10-27
+        https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf#page=66
+    [zr2-kokuzei-unit-foundations-review] 徴収の基礎単元：当事者・日付・承継・附帯税をつないで判断する／26問／版：zeirishi-2026-v2-collection-foundations-review-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-kokuzei-unit-foundations-review/
+    [zr2-kokuzei-foundations-glossary] 徴収の基礎：事例で確認する用語テスト／12問／版：zeirishi-2026-v2-collection-foundations-glossary-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-kokuzei-foundations-glossary/
+    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
+
   2026年8月本試験の大問配点：40・60点。将来の固定配分ではありません。
 
 入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。

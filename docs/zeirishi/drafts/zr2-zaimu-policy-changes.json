@@ -1,0 +1,533 @@
+{
+  "id": "zr2-zaimu-policy-changes",
+  "subject": "zaimu",
+  "title": "会計方針・見積りの変更と誤謬",
+  "stage": "標準から応用へ",
+  "moduleId": "zr2-zaimu-unit-framework",
+  "minutes": 180,
+  "prerequisites": [
+    "zr2-zaimu-recognition-measurement"
+  ],
+  "introductoryAlternative": "zr-zaimu-concepts",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "当時の情報と変更対象から、会計方針・表示方法・見積り・誤謬を区別する",
+    "方針変更の正当な理由と経過措置を確認し、期首累積差と各期損益を遡及計算する",
+    "表示方法の組替えを行い、段階利益の変化と合計不変を照合する",
+    "合理的な見積りの更新と償却方法の変更について、当期以降の配分を求める",
+    "過去の誤謬を修正再表示し、在庫差の翌期への反転と期間利益を照合する",
+    "実務上不可能な場合の分岐と、変更・未適用基準について必要な説明を選ぶ"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "asbj-policy-fixed-2020",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/accounting-policies20200331_02.pdf",
+      "location": "企業会計基準24号・2020年3月31日改正。4〜22-2項、25-2/25-3項、結論の背景48〜68項を実読。2026年10月改正を混在させない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-policy-guide-fixed-2024",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/ikan_20240701_46.pdf",
+      "location": "適用指針24号・2024年7月1日修正反映版、4〜12-2・17〜21項を実読。方法と表示の区分、正当な理由、過去見積りの合理性を確認",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "在庫差額は独自問題の検証済み与件。具体的な原価配分方法の計算、税効果、1株当たり情報、個別新基準の移行規定は実在する後続各論へ引き継ぐ。",
+    "比較情報の修正再表示は既公表書類の訂正報告・税務修正の自動完了を意味しない。後者の制度固有手続は本講で評価しない。"
+  ],
+  "glossary": [
+    {
+      "term": "会計方針",
+      "definition": "財務諸表の作成に採用する会計処理の原則及び手続"
+    },
+    {
+      "term": "表示方法",
+      "definition": "科目分類・配列・報告様式等を含む情報の示し方"
+    },
+    {
+      "term": "会計上の見積りの変更",
+      "definition": "新たに入手可能となった情報に基づく、それまでの見積りの更新"
+    },
+    {
+      "term": "遡及適用",
+      "definition": "新たな会計方針を以前から適用していたかのように行う処理"
+    },
+    {
+      "term": "財務諸表の組替え",
+      "definition": "新しい表示方法へ比較情報を遡って組み替えること"
+    },
+    {
+      "term": "修正再表示",
+      "definition": "過去の誤謬の訂正を財務諸表へ反映すること"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-zaimu-policy-changes-e1",
+      "section": "例題1：同じ「変更」を四つに分ける",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e2",
+      "section": "例題2：在庫差額の三期をつなぐ",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e3",
+      "section": "例題3：表示先の変更で売上だけを増やさない",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e4",
+      "section": "例題4：耐用年数が短くなったときの配分",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e5",
+      "section": "例題5：方法を変えても、原価を最初から割り直さない",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e6",
+      "section": "例題6：翌期に誤りが自然に消えても、前期は正しくならない",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-e7",
+      "section": "例題7：各期の差と累積差を区別する",
+      "objectives": [
+        6
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-zaimu-policy-changes-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "基準24号の用語で、会計上の変更に含まれないものはどれですか。",
+      "options": [
+        "正当な理由による会計方針の変更",
+        "表示方法の変更",
+        "新情報に基づく会計上の見積りの変更",
+        "過去に入手可能な資料の集計誤りの訂正"
+      ],
+      "answer": 3,
+      "explanation": "誤謬の訂正は会計上の変更に含めません。過去に使えた情報の誤用と、新情報による合理的な見積りの更新を分けます。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "重要性のある三つの事象を分類し、それぞれ理由を示してください。Aは前期に入手可能だった仕入請求書を見落としていた。Bは前期の合理的な耐用年数を、その後の新しい使用状況から変更する。Cは認められた棚卸資産の原価配分方法を別の認められた方法へ正当な理由で変える。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "Aは当時の入手可能情報を使わなかった過去の誤謬。Bは新情報による会計上の見積りの変更。Cは採用する処理の原則・手続を変える会計方針の変更。",
+      "rubric": [
+        {
+          "criterion": "Aを誤謬とし当時の情報の見落としを説明する",
+          "points": 2
+        },
+        {
+          "criterion": "Bを見積変更とし合理的な旧見積りと新情報を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "Cを方針変更とし処理の原則手続の変更を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "発見した時期が今年であることだけで、三つを同じ変更にしません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "会社は認められた二つの方針を、当期利益が大きくなる方へ毎年切り替えようとしている。事業や経営環境の変化はなく、変更により会計事象をより適切に表す根拠もない。選べる方法であることと、変更を行う正当な理由を分けて説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "複数の方法が認められることだけでは、毎年の切替えの正当な理由を満たさない。事業等の変化への対応と、より適切な反映という条件を確認すべきで、この利益調整目的だけでは不十分である。",
+      "rubric": [
+        {
+          "criterion": "認められる方法の選択と変更理由を区別する",
+          "points": 1
+        },
+        {
+          "criterion": "環境等の変化への対応・適切な反映の条件を示す",
+          "points": 2
+        },
+        {
+          "criterion": "与件の利益調整だけでは正当化できないとする",
+          "points": 1
+        }
+      ],
+      "explanation": "遡及適用できることも、正当でない変更を許す根拠にはなりません。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "正当な方針変更の遡及適用で、在庫額の新旧差は前期首18万円、前期末35万円。仕入・売上等の他条件は同じで税効果等はない。旧方針の前期利益100万円を、新方針の利益へ直すと何万円ですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "117"
+      ],
+      "explanation": "前期利益への影響は35−18＝17万円。新利益は100＋17＝117万円で、期末の累積差35万円を全額加えません。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "新方針への遡及が可能で、期末在庫の新旧差はX0年12万円、X1年30万円、X2年42万円。旧X1期首利益剰余金360万円、旧X1利益95万円、旧X2利益110万円で、他の差異・所有者取引・税効果はない。比較情報X1の期首利益剰余金、X1利益・期末剰余金、X2利益・期末剰余金を万円単位で求め、期末累積差で検算してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "X1期首372、X1利益95＋30−12＝113、X1期末485。X2利益110＋42−30＝122、X2期末607。旧X1期末455＋差30＝485、旧X2期末565＋差42＝607で一致する。",
+      "rubric": [
+        {
+          "criterion": "X1期首372と利益113を求める",
+          "points": 2
+        },
+        {
+          "criterion": "X1期末485とX2利益122・期末607を求める",
+          "points": 3
+        },
+        {
+          "criterion": "期末累積差の別経路で検算する",
+          "points": 1
+        }
+      ],
+      "explanation": "最も古い比較期首の差12、当期首の累積差30、当期損益差12は異なる時点・意味の数字です。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "新基準に、適用開始時の特定の経過的な取扱いが定められている。適切な順序はどれですか。",
+      "options": [
+        "全基準で必ず経過措置を無視し、全過去期間を一律に遡及する",
+        "対象・適用時点を確認し、その経過的な取扱いに従う",
+        "経過措置は自発的変更にしか使わない",
+        "早期適用なら、基準改正による変更ではなく誤謬として扱う"
+      ],
+      "answer": 1,
+      "explanation": "基準改正の変更は特定の経過措置を先に確認します。経過措置がない場合の原則的な遡及と混同しません。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "認識・測定を変えず、営業外収益のうち45万円を売上へ組み替える。旧表示は売上1,500、原価900、販管費350、営業外収益60、営業外費用20（万円）。新表示の経常利益を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "290"
+      ],
+      "explanation": "新売上1,545−原価900−販管費350＝営業利益295。営業外収益は15へ減り、295＋15−20＝290です。旧250＋60−20＝290と一致します。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "認識・測定を変えない適切な表示変更で、営業外収益から売上へ20万円を移す。担当者は売上だけを20万円増やし、営業外収益は残した。これを組替えといえるか、営業利益と経常利益への正しい影響、提案の誤りを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "売上へ加えた20万円を営業外収益から引く必要がある。正しい組替えでは営業利益は20万円増え、経常利益は変わらない。提案は収益の二重計上で経常利益が20万円過大になる。",
+      "rubric": [
+        {
+          "criterion": "営業外収益からも20万円引くと示す",
+          "points": 1
+        },
+        {
+          "criterion": "営業利益＋20・経常利益不変を示す",
+          "points": 2
+        },
+        {
+          "criterion": "提案の二重計上と経常利益20過大を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "表示区分の変更と、取引を追加することを分けます。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "認識・測定を変えず、より適切な表示にするため財務諸表の科目区分を変更した。原則的な取扱いはどれですか。",
+      "options": [
+        "比較情報も新しい方法で組み替える",
+        "必ず全差額を当期特別利益へ計上する",
+        "会計方針の変更に名称を置き換える",
+        "過去の会計上の見積りの額を必ず再計算する"
+      ],
+      "answer": 0,
+      "explanation": "表示だけの変更なら比較情報の組替えを検討します。処理変更を伴う場合と区別し、実務上不可能な場合の別規定も確認します。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "設備1,200万円を残存価額ゼロ・耐用年数8年の定額法で3年使用した。旧見積りは合理的で、第4年期首の新情報から残り3年へ見直した。減損等はない。第4年の減価償却費を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "250"
+      ],
+      "explanation": "旧年額150×3年＝450万円を配分済み。残額750÷新残存3年＝250万円です。以前の3年間は遡って再計算しません。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "過去に合理的に算定した貸倒見積額を、新たな回収情報で40万円増やす。変更は当期だけへ影響すると与える。担当者は「旧見積りが外れたので、全て前期の誤謬だ」と述べた。分類と処理期間、判断で調べる情報を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "当時合理的だった見積りを新情報で更新するので、所与の条件では見積りの変更として当期へ反映する。結果が違っただけで過去の誤謬にはならない。当時使えた情報と合理性、その後の新しい回収情報を区別して調べる。",
+      "rubric": [
+        {
+          "criterion": "見積変更と分類する",
+          "points": 1
+        },
+        {
+          "criterion": "当期のみへ反映すると示す",
+          "points": 1
+        },
+        {
+          "criterion": "当時の情報・合理性と新情報を分ける",
+          "points": 2
+        }
+      ],
+      "explanation": "当時の資料の見落としがあったという別の与件なら、誤謬の検討になります。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "正当な理由で償却方法を定率法から定額法へ期首に変更する。変更時帳簿価額350万円、残存価額30万円、残存年数4年。別の評価損等はない。変更後年額と当期末帳簿価額を求め、方針という分類と遡及適用の有無を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "年額は(350−30)÷4＝80万円、当期末帳簿価額270万円。償却方法は会計方針だが、その変更は見積変更と区別困難な場合として見積変更と同様に扱い、遡及適用しない。変更の正当な理由の確認は必要である。",
+      "rubric": [
+        {
+          "criterion": "80万円・270万円を求める",
+          "points": 2
+        },
+        {
+          "criterion": "会計方針であることを示す",
+          "points": 1
+        },
+        {
+          "criterion": "見積変更同様・遡及なしと理由を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "未償却額のうち残存価額を除く額を、変更後の残り期間へ配分します。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "前期末在庫を30万円過大に数え、前期利益は200万円と報告した。当期はその在庫を期首へ引き継ぎ、期末在庫は正しい。当期の誤り訂正前利益は180万円。他の誤り等はない。正しい当期利益を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "210"
+      ],
+      "explanation": "誤った期首在庫により当期原価が30万円多く、当期利益は30万円少なくなっています。180＋30＝210万円です。前期の正しい利益は170万円です。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "X1期末在庫30万円の過大計上により、報告X1利益150万円・X2整理前利益90万円となった。X2期末在庫は正しく、他の誤りはない。正しい各期利益と二期間合計を示し、「合計が同じなら前期比較情報は訂正不要」という説明を検討してください。修正再表示すべき重要な誤謬とします。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "X1利益は120万円、X2利益は120万円で、合計240万円。報告等の150＋90も240万円だが、各期利益の配分は違っている。二期合計の一致だけでは期間情報の誤りは解消せず、X1比較情報とX2期首・当期への影響を対応させる。",
+      "rubric": [
+        {
+          "criterion": "120・120・合計240万円を示す",
+          "points": 3
+        },
+        {
+          "criterion": "期間比較が誤っており修正が必要と説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "在庫差が翌期の原価に反転する仕組みを、訂正不要の根拠にしません。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q15",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "誤謬の修正再表示について、第24号の方針変更に関する実務上不可能な場合の規定を、そのまま一律の免除として使えるか。適切なものはどれですか。",
+      "options": [
+        "作業が多いだけで、必ず過去の誤謬を全て無視できる",
+        "過去の情報は常に使えないため、誤謬も必ず将来だけへ反映する",
+        "同じ免除が一律に設けられているとはいえず、誤謬の規定と対応を別に検討する",
+        "誤謬を見積りの変更と呼び直せば、問題は必ず消える"
+      ],
+      "answer": 2,
+      "explanation": "誤謬は過去の情報の誤用等を訂正する問題です。方針変更の遡及が不可能な場合の規定を、名称だけで移用しません。",
+      "objectives": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q16",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "正当な方針変更で、比較年度X1への影響額は合理的な努力でも再構成できず、原則的遡及が実務上不可能と与える。全過去期間へ新方針を適用したX2期首累積差36万円は算定でき、実行可能な最も古い期間はX2年度である。残高の扱いと、説明すべき理由・方法・開始時期を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "X2期首の累積差36万円を反映した残高から新方針を適用する。X1への期別影響を再構成できない理由、X2期首残高に累積差を反映する方法、適用を始めるX2年度を説明する。累積差までゼロや不明と扱わない。",
+      "rubric": [
+        {
+          "criterion": "X2期首36万円反映と将来の適用を示す",
+          "points": 2
+        },
+        {
+          "criterion": "不可能な理由と適用方法・開始時期を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "各期の額が分からない場合と、期首累積差まで分からない場合は別の分岐です。",
+      "objectives": [
+        6
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q17",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "新たに公表された未適用の会計基準について、会社は適用の影響を評価中であり、定量額をまだ把握していない。「数値がないので影響ゼロと書く」という案を評価し、未適用基準の説明で確認すべき情報を挙げてください。専ら表示・注記だけの基準ではないとします。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "未評価の影響をゼロと断定できない。基準の名称・概要、適用予定時期と、影響に関する評価状況等を適用規定に従って説明する。影響を評価中ならその事実を記述し、未把握とゼロを分ける。",
+      "rubric": [
+        {
+          "criterion": "未把握をゼロとしないと説明する",
+          "points": 1
+        },
+        {
+          "criterion": "名称概要・時期・影響評価状況の確認を挙げる",
+          "points": 3
+        }
+      ],
+      "explanation": "定量的な把握がない場合や適用時期を未決定の場合の説明も、適用指針12-2項に従って確認します。",
+      "objectives": [
+        6
+      ]
+    },
+    {
+      "id": "zr2-zaimu-policy-changes-q18",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-policy-changes",
+      "prompt": "過去の見積りを点検する担当者が、当時の資料と、決算後数年たって初めて得た情報を混ぜ、後の結果に合うよう全てを誤謬として直そうとしている。合理的な旧見積りと誤謬の区別、確認すべき時点、過去の方針へ遡及する場合にも後知恵を避ける理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "旧見積りは当時入手可能だった情報に基づく合理性を確認する。後の新情報や結果との差だけで誤謬とはいえない。遡及の見積りでも、対象時点の状況に関する当時利用可能情報と事後の情報を区別し、後の結果を以前から分かっていたかのように使わない。",
+      "rubric": [
+        {
+          "criterion": "当時の入手可能情報と合理性を基準にする",
+          "points": 2
+        },
+        {
+          "criterion": "後の差だけで誤謬としないと説明する",
+          "points": 1
+        },
+        {
+          "criterion": "遡及でも当時と事後の情報を区別すると示す",
+          "points": 2
+        }
+      ],
+      "explanation": "新しい情報を用いる将来の処理と、過去の資料の訂正は、情報の時間軸から分けます。",
+      "objectives": [
+        1,
+        6
+      ]
+    }
+  ]
+}

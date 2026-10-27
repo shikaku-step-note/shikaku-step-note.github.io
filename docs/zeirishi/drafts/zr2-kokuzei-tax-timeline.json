@@ -72,6 +72,25 @@
         "originalDue": "2026-03-16",
         "amendedDue": "2026-05-12",
         "amendedPriorityDate": "2026-05-12"
+      },
+      "objectives": [
+        1,
+        2,
+        3
+      ],
+      "draftObjectiveIndexes": [
+        1,
+        2,
+        3
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o1",
+        "zr2-kokuzei-tax-timeline-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+        "line": 71,
+        "heading": "例題1：年末成立と期限内申告の関係"
       }
     },
     {
@@ -81,6 +100,25 @@
         "due": "2026-07-10",
         "statutoryDue": "2026-06-01",
         "priorityDate": "2026-06-10"
+      },
+      "objectives": [
+        2,
+        3,
+        4
+      ],
+      "draftObjectiveIndexes": [
+        2,
+        3,
+        4
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o1",
+        "zr2-kokuzei-tax-timeline-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+        "line": 79,
+        "heading": "例題2：更正通知書の発出日と送達日"
       }
     },
     {
@@ -91,6 +129,25 @@
         "statutoryDue": "2026-03-10",
         "noticeDue": "2026-05-15",
         "priorityDate": "2026-04-20"
+      },
+      "objectives": [
+        1,
+        2,
+        3
+      ],
+      "draftObjectiveIndexes": [
+        1,
+        2,
+        3
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o1",
+        "zr2-kokuzei-tax-timeline-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+        "line": 87,
+        "heading": "例題3：源泉所得税は告知で初めて確定するのか"
       }
     },
     {
@@ -99,6 +156,23 @@
       "result": {
         "priorityDate": "2026-09-18",
         "unpaidAfterPayment": 0
+      },
+      "objectives": [
+        2,
+        3
+      ],
+      "draftObjectiveIndexes": [
+        2,
+        3
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o1",
+        "zr2-kokuzei-tax-timeline-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-tax-timeline.md",
+        "line": 95,
+        "heading": "例題4：源泉所得税を告知前に期限後納付した場合"
       }
     }
   ],
@@ -765,7 +839,9 @@
       "humanizer": "誇張・読者への呼びかけ・型の反復・不要な結びを点検。法的条件の比較は保持",
       "proofreadJa": "助詞・主語・条番号・全角半角・附帯税・差押え/差押し等の表記を確認。独立校正はpending"
     },
-    "teachingCharactersExcludingSourceSection": 5033
+    "teachingCharactersExcludingSourceSection": 5033,
+    "workedExampleObjectiveIndexing": "2026-10-27：例題を実見出し・行へ対応し全24下位技能に少なくとも1場面を索引化。索引は全細目の完全履修の認定ではない。framework-ex4/private-ex5を追加したため両場面は独立再確認待ち",
+    "bodyCharactersAfterReviewCorrections": 5041
   },
   "continuationCoverage": [
     {

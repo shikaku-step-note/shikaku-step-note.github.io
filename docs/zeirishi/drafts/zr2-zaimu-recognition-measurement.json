@@ -1,0 +1,549 @@
+{
+  "id": "zr2-zaimu-recognition-measurement",
+  "subject": "zaimu",
+  "title": "認識・測定と期間損益",
+  "stage": "標準から応用へ",
+  "moduleId": "zr2-zaimu-unit-framework",
+  "minutes": 180,
+  "prerequisites": [
+    "zr2-zaimu-general-principles",
+    "zr2-boki-interest-present-value"
+  ],
+  "introductoryAlternative": "zr-zaimu-concepts",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "認識と測定、定義と計上条件を分け、未履行・前払・引渡しを仕訳へ表す",
+    "現金の受払と履行を分け、収益と契約負債の期間帰属を計算する",
+    "費用収益の対応と期末資産の根拠を、売上原価とサービス費用で説明する",
+    "未配分原価・入口出口の価格・正味売却額を目的から選び、混合測定を説明する",
+    "将来額・期間・更新する率を示して現在価値を計算し、測定目的の差を説明する",
+    "所有者取引を除き、名目額・購買力・補充能力の維持による成果の差を求める"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "ac2-framework-pdf",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+      "location": "2006年討議資料第4章1〜58項と脚注。認識・履行、原価・市場価格・現価、複数の測定とリスクからの解放。個別基準の代替として扱わない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-revenue",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_12.pdf",
+      "location": "企業会計基準29号、2024年9月13日改正、16〜19・32〜42項を実読。例題の契約・期間充足と均等履行は明示与件",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "asbj-fairvalue-guide-2021",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/faivalue20210617_02.pdf",
+      "location": "企業会計基準適用指針31号・2021年6月17日版35項(1)(2)を実読。将来額と率の整合、同一リスクの二重計算防止に限定",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ifrs-capital-ed2015",
+      "url": "https://www.ifrs.org/content/dam/ifrs/project/conceptual-framework/exposure-draft/published-documents/ed-conceptual-framework.pdf",
+      "location": "2015年5月公開草案第8章8.1〜8.10、PDF79〜81ページ。資本維持の歴史的比較理論に限定。現行IFRS又は日本基準の適用指示とは主張しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "具体的な契約結合・本人代理人・返品・複数履行義務、金融商品認識・消滅、減損の判定と測定は後続の実在各論へ引き継ぐ。",
+    "資本維持の数値例は比較理論であり、日本の個別処理・その他の包括利益に直結させない。現行IFRSの全文への購読アクセスを得たとは扱わない。"
+  ],
+  "glossary": [
+    {
+      "term": "認識",
+      "definition": "項目を財務諸表本体へ取り込むこと。項目・適用条件・時点を確認する"
+    },
+    {
+      "term": "測定",
+      "definition": "認識する項目を貨幣額で表すこと。数値が表す内容も確認する"
+    },
+    {
+      "term": "未配分原価",
+      "definition": "取得原価のうち、定めた方法でまだ費用等へ配分されていない額"
+    },
+    {
+      "term": "契約負債",
+      "definition": "顧客への財・サービスの移転義務のうち、対価を受け取った又は受取期限が到来したもの"
+    },
+    {
+      "term": "現在価値",
+      "definition": "将来の受払額を、その時点と目的に対応する率で現在へ割り引いた額"
+    },
+    {
+      "term": "資本維持",
+      "definition": "成果を求める際、どの資本を保つかを定める比較の考え方"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-zaimu-recognition-measurement-e1",
+      "section": "例題1：契約・前払・引渡しを追う",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-e2",
+      "section": "例題2：先に受け取った年間サービス料",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-e3",
+      "section": "例題3：販売済みの原価と、残った商品",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-e4",
+      "section": "例題4：四つの数値から、目的に合うものを選ぶ",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-e5",
+      "section": "例題5：変わったのは回収予測か、割引率か",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-e6",
+      "section": "例題6：名目額と購買力を比較する",
+      "objectives": [
+        6
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-e7",
+      "section": "例題7：同じ商品を補充する額を保つ",
+      "objectives": [
+        6
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-zaimu-recognition-measurement-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "引渡し済みで売上を認識すべき商品について、数量を10個多く数えて売上を過大計上した。ここで直接誤っている問いはどれですか。",
+      "options": [
+        "収益を測定する金額",
+        "履行による収益の認識時点",
+        "売上代金を回収する時点",
+        "所有者拠出と営業収益の区分"
+      ],
+      "answer": 0,
+      "explanation": "認識すべき項目・時点という前提は正しく、数量を使う測定額を誤っています。2は正しいと与えた履行時点、3は代金回収、4は取引の種類の区分であり、この数量の誤りとは異なります。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "通常の商品の購入契約を120万円で結び、双方未履行だった。後に30万円を前払いし、決算後に商品への支配が移る。特殊な金融商品等はなく、回収可能性にも問題はない。決算日の記録と残る資産を示し、商品全額を既に計上する案と、30万円を当期売上原価にする案を検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "前払金30万円／預金30万円とし、決算日に前払金30万円が残る。通常の未履行売買を契約額だけで商品120万円と買掛金120万円へ機械的に計上しない。商品は決算後の引渡しまで取得しておらず、前払額を当期の売上原価へ置き換えない。",
+      "rubric": [
+        {
+          "criterion": "前払金30万円／預金30万円と期末前払金を示す",
+          "points": 2
+        },
+        {
+          "criterion": "未履行の契約全額を商品・買掛金へ直結させない理由を示す",
+          "points": 1
+        },
+        {
+          "criterion": "前払金を当期売上原価へしない理由を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "契約額、支払済み額、取得した資源を分けます。実際の引渡し時は商品120／前払金30・買掛金90となり、決済額も120と一致します。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "担当者は「資産の定義に関連する将来の便益を予想でき、金額も掛け算できるなら、予想受注売上を直ちに売掛金へ計上してよい」と述べた。定義・認識条件・測定を分けて検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "将来の便益の予想だけで売掛金の認識条件が満たされるわけではない。現在の権利義務、取引の履行、対象基準の計上条件を確認する必要がある。金額を計算できるという測定の問題だけでは、項目と計上時点の問題を解決できない。",
+      "rubric": [
+        {
+          "criterion": "便益の予想と認識条件を区別する",
+          "points": 1
+        },
+        {
+          "criterion": "権利義務・履行・対象基準の確認を示す",
+          "points": 2
+        },
+        {
+          "criterion": "計算可能性だけで認識を決めないと説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "認識と測定が関連することと、同じ問いであることは異なります。独自の一律確率基準を追加する必要もありません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "7月1日に翌年6月30日までの均等な監視サービス料240万円を受領した。契約は期間にわたる収益認識の要件を満たし、経過月数が履行を適切に表す。12月31日の未履行部分の契約負債を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "120"
+      ],
+      "explanation": "7〜12月の6か月が履行済みで、収益240×6÷12＝120万円。残りの6か月が契約負債120万円です。受領額240＝収益120＋契約負債120を確認します。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "10月1日から翌年3月31日までの均等な保守サービス料90万円を前受けした。期間にわたる認識の要件を満たし、月数が適切な進捗指標である。12月31日までに全額を売上とした場合、正しい収益・契約負債と、利益・負債の誤差を万円単位で示してください。他の費用や税効果はありません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "6か月のうち3か月が履行済みなので収益45万円、残る契約負債45万円。全額を売上にすると収益と利益が45万円過大、契約負債が45万円過少となる。",
+      "rubric": [
+        {
+          "criterion": "収益45万円・契約負債45万円を示す",
+          "points": 2
+        },
+        {
+          "criterion": "利益45万円過大・負債45万円過少を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "入金済みでも未履行部分が残ります。期間配分の根拠は与えられた履行条件であり、全契約に月数配分を強制していません。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "請求書の発行日について適切な説明はどれですか。",
+      "options": [
+        "発行日が全ての契約で必ず収益認識日となる",
+        "現金受領日と違うなら、その契約では収益を認識できない",
+        "適用基準と履行の事実を確認し、請求日だけで収益認識日を決めない",
+        "発行前なら、サービスを全て提供済みでも負債しか計上できない"
+      ],
+      "answer": 2,
+      "explanation": "請求日という一つの事実だけでは、履行の状態と認識条件を置き換えられません。1・2・4は特定の日付へ全取引を無条件にそろえる誤りです。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "商品80個を1個3万円で仕入れ、50個を1個5万円で販売した。残品に評価減は不要で、当期に受けた広告サービス20万円は当期費用と与える。他の取引はない。当期利益を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "80"
+      ],
+      "explanation": "売上250−売上原価150−広告費20＝80万円です。期末商品は30×3＝90万円で、仕入240＝原価150＋残品90となります。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "既に受け終えた広告サービス40万円は、与件上当期費用とすべきものである。担当者は「翌年の売上にも役立ちそうなので、利益を平準化するため資産へ残す」と述べた。対応と期末資産の根拠の観点から、処理、利益と期末資産への影響を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "当期費用40万円とする。将来の売上への期待や利益平準化の目的だけでは、与件上の費用を資産へ繰り延べる根拠にならない。資産計上案では当期利益と期末資産が各40万円過大となる。",
+      "rubric": [
+        {
+          "criterion": "当期費用40万円を示す",
+          "points": 1
+        },
+        {
+          "criterion": "期待・平準化だけでは資産の根拠にならないと説明する",
+          "points": 2
+        },
+        {
+          "criterion": "利益と資産が各40万円過大となると示す",
+          "points": 1
+        }
+      ],
+      "explanation": "費用収益の対応という言葉だけで、任意の繰延額を作りません。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "取得原価160万円、配分済み額60万円、現在の同等品の購入額180万円、売却可能額150万円、直接の売却費用12万円の資産がある。未配分原価・入口側の現在価格・出口側の価格・費用控除後売却額を区別して示してください。この資料だけで、帳簿価額を自由に選べるといえるかも説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "未配分原価100万円、入口側180万円、出口側150万円、費用控除後138万円。概念上の比較数値が示されたことだけでは選択適用は認められず、資産の種類・保有目的・個別基準等を確認する。",
+      "rubric": [
+        {
+          "criterion": "100・180・150・138万円を対応させて示す",
+          "points": 4
+        },
+        {
+          "criterion": "対象と個別基準等を確認し自由選択を否定する",
+          "points": 1
+        }
+      ],
+      "explanation": "取得原価の残額は160−60、正味額は150−12です。入口の価格から出口の費用を引くような混合を避けます。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "取得原価の残額と正味売却額が、偶然ともに80万円となった。適切な説明はどれですか。",
+      "options": [
+        "数字が一致したので、両者の測定概念も常に同一である",
+        "金額の一致と、何を表す額かという測定概念の一致は区別する",
+        "どちらかの額を、必ず正しくない数値と判断する",
+        "翌期以降も必ず両者の数値が一致すると推定する"
+      ],
+      "answer": 1,
+      "explanation": "同じ数字に異なる情報内容があり得ます。取得原価の配分残額と、現在の売却額から費用を控除した額は、求める対象が異なります。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "2年後に一括して144万円を回収する学習用資産を、年20%の複利率で割り引く。現在価値を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "100"
+      ],
+      "explanation": "144÷1.2²＝100万円です。144÷1.2は1年分しか割り引いていません。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "同じ測定日から2年後の回収予測が121万円から145.2万円へ増えた。当初率10%を維持する方式Aと、率も25%へ更新する方式Bで、現在価値を万円単位の小数第2位まで求めてください。予測額が増えてもBの評価額が当初の100万円を下回る理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "Aは145.2÷1.1²＝120.00万円、Bは145.2÷1.25²≒92.93万円。Bでは回収予測の増加と同時に割引率も上がり、後者が現在価値を押し下げる。回収予測の変化だけで結論を出せない。",
+      "rubric": [
+        {
+          "criterion": "A120.00万円とB92.93万円を各率・2年で示す",
+          "points": 2
+        },
+        {
+          "criterion": "回収予測と率の両方の変化を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "同じ将来額でも、更新する率が違えば測定額の意味も違います。自由な方式選択を認める設問ではありません。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "担当者が「現在価値を計算したので、市場参加者の視点の価値・自社の使用による価値のどちらを求めたかの説明は不要で、どの負債でも率は毎年更新すべきだ」と述べた。計算手法、測定目的、更新する情報を区別して検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "割引計算だけでは測定目的は決まらない。自社の使用か市場参加者か等の視点、将来額と率に何を反映したかを確認する。負債ごとの基準条件を確かめず、一律に率を更新すべきとはいえない。",
+      "rubric": [
+        {
+          "criterion": "割引手法と測定目的を区別する",
+          "points": 1
+        },
+        {
+          "criterion": "予測と率の視点・反映情報の確認を示す",
+          "points": 2
+        },
+        {
+          "criterion": "個別基準を確認して一律更新を否定する",
+          "points": 1
+        }
+      ],
+      "explanation": "計算式を示すことに加えて、何を計算したかを説明します。",
+      "objectives": [
+        5
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "期首純資産800万円、期末純資産1,090万円、期末に行った追加払込み180万円、期末分配50万円。他の所有者取引はない。所有者取引を除いた名目の増加を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "160"
+      ],
+      "explanation": "1,090−180＋50−800＝160万円です。分配は期末額を減らしたので足し戻します。",
+      "objectives": [
+        6
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q15",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "前問と同じ期首800万円・期末1,090万円・期末払込み180万円・期末分配50万円で、一般物価が10%上がった。所有者取引を除いた期末額を示し、期首資本の購買力を期末単位で維持する比較の維持額と、それを超える額を万円単位で求め、名目の増加160万円との差を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "所有者取引を除いた期末額は1,090−180＋50＝960万円。維持額は800×1.10＝880万円で、これを超える額は80万円。名目の増加160万円との差80万円は、この例の購買力維持に対応する。",
+      "rubric": [
+        {
+          "criterion": "所有者取引除外後960万円を示す",
+          "points": 1
+        },
+        {
+          "criterion": "維持額880万円と成果80万円を示す",
+          "points": 2
+        },
+        {
+          "criterion": "名目との差80万円を購買力維持に対応させる",
+          "points": 1
+        }
+      ],
+      "explanation": "資本維持の比較理論の問題で、日本の財務諸表へこの修正を独自記帳する指示ではありません。",
+      "objectives": [
+        6
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q16",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "期首に1単位70万円の商品だけを持ち、負債のない学習用会社が、その商品を期末に110万円で販売した。同じ能力を保つ代替1単位の期末購入額は85万円。他の費用・所有者取引はない。名目の投下額を保つ増加と補充能力を保つ成果、その差を求めてください。差を日本のその他の包括利益と自動的に同一視できるかも説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "名目では110−70＝40万円、補充能力の維持では110−85＝25万円で、差は15万円。後者ではその15万円を維持に必要な額として分ける。これは比較理論であり、差15万円を日本のその他の包括利益へ自動分類することはできない。",
+      "rubric": [
+        {
+          "criterion": "40万円・25万円・差15万円を求める",
+          "points": 3
+        },
+        {
+          "criterion": "差額の維持上の意味とOCIへ直結させないことを説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "40＝15＋25を検算します。維持概念と、適用基準が指定する認識・表示を分けます。",
+      "objectives": [
+        6
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q17",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "会社の貸借対照表には取得原価を出発点とする項目と、現在の価格で測定する項目がある。「混合は矛盾なので全項目を現在価格へ変えればよい」という案を検討してください。活動や情報の意味と、適用条件の二つの観点から答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "資産負債の活動や有用な情報の意味が異なれば、異なる測定基礎が併存し得る。混合というだけで全項目の価格更新は導けず、各対象の個別基準・保有目的・適用時点・変更条件を確認する必要がある。",
+      "rubric": [
+        {
+          "criterion": "活動や情報の違いから併存を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "個別基準等の適用条件を確認する",
+          "points": 2
+        }
+      ],
+      "explanation": "混合測定を認めることと、利益に合わせて数値を選べることも異なります。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-recognition-measurement-q18",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-recognition-measurement",
+      "prompt": "均等な年間サービス料を前受けしたが、期末までに4か月しか履行していない。「入金で資産が増えたので、全額利益となる」という主張を、認識時点・未履行の義務・期間損益に分けて説明してください。期間にわたる認識条件を満たし、月数が適切な進捗指標とします。金額の指定は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "受領時には預金と未履行サービスに関する契約負債が増える。期末までに履行した4か月分、すなわち年額の3分の1を収益へ振り替え、残り8か月分は契約負債として残す。資産の増加だけで全額を当期利益と判断できない。",
+      "rubric": [
+        {
+          "criterion": "受取時の資産・負債の増加を示す",
+          "points": 1
+        },
+        {
+          "criterion": "4か月分収益・8か月分負債と示す",
+          "points": 2
+        },
+        {
+          "criterion": "入金と全額当期利益を直結させないと説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "認識と期間配分を、貸借対照表・損益計算書の両方へ結び付ける統合問題です。",
+      "objectives": [
+        1,
+        2
+      ]
+    }
+  ]
+}

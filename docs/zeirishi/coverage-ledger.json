@@ -3,14 +3,14 @@
   "scope": {
     "subjects": 11,
     "units": 113,
-    "lessons": 581,
-    "objectives": 1170,
+    "lessons": 585,
+    "objectives": 1178,
     "fullMockBlueprints": 22
   },
-  "implementedLessons": 12,
-  "fullyReviewedLessons": 12,
-  "fullyReviewedObjectives": 25,
-  "fullyReviewedTeachingSkills": 38,
+  "implementedLessons": 18,
+  "fullyReviewedLessons": 18,
+  "fullyReviewedObjectives": 37,
+  "fullyReviewedTeachingSkills": 62,
   "reviewedFullMocks": 0,
   "errors": [],
   "lessons": [
@@ -20,7 +20,7 @@
       "unit": "zr2-boki-unit-records",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -117,7 +117,7 @@
       "unit": "zr2-boki-unit-records",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -214,7 +214,7 @@
       "unit": "zr2-boki-unit-records",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -311,7 +311,7 @@
       "unit": "zr2-boki-unit-records",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -408,7 +408,7 @@
       "unit": "zr2-boki-unit-records",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -505,7 +505,7 @@
       "unit": "zr2-boki-unit-records",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -616,7 +616,7 @@
       "unit": "zr2-boki-unit-records",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded records-unit browser checks; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -6517,7 +6517,7 @@
       "unit": "zr2-shotoku-unit-scope",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -6586,7 +6586,7 @@
       "unit": "zr2-shotoku-unit-scope",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -6655,7 +6655,7 @@
       "unit": "zr2-shotoku-unit-scope",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -6724,7 +6724,7 @@
       "unit": "zr2-shotoku-unit-scope",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -6793,7 +6793,7 @@
       "unit": "zr2-shotoku-unit-scope",
       "present": true,
       "reviewMatchesContent": true,
-      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
       "complete": true,
       "objectives": [
         {
@@ -9921,7 +9921,7 @@
         },
         {
           "id": "zr2-hojin-service-special-timing-o02",
-          "text": "段階確定報酬/支払留保/運送の継続計上を複数期へ帰属させる",
+          "text": "段階確定報酬/支払留保/運送の継続計上と対応原価の例外を複数期へ帰属させる",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -10001,7 +10001,7 @@
         },
         {
           "id": "zr2-hojin-revenue-agent-financing-o02",
-          "text": "商品券の非行使/経過処理と頭金の収益を複数期で計算する",
+          "text": "商品券の非行使収益/見積引換費用の繰戻しと頭金の収益を複数期で計算する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -10337,6 +10337,46 @@
       "detailedObjectives": []
     },
     {
+      "id": "zr2-hojin-land-gravel-costs",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-assets",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-land-gravel-costs-o01",
+          "text": "団地の年度別面積と見積総原価/過年度算入額から分譲原価を計算する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-land-gravel-costs-o02",
+          "text": "公共施設と砂利埋戻義務の取得原価/未払/最終年度/適格再編承継を連動する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
       "id": "zr2-hojin-asset-cost",
       "subject": "hojin",
       "unit": "zr2-hojin-unit-assets",
@@ -10362,6 +10402,86 @@
         {
           "id": "zr2-hojin-asset-cost-o02",
           "text": "改良/修理/除却の税務を計算する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-hojin-temporary-construction-assets",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-assets",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-temporary-construction-assets-o01",
+          "text": "仮設材料の継続適用三方法と全部適用を条件から判定する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-temporary-construction-assets-o02",
+          "text": "木造仮設建物の処分/転用/引渡し残価と金属移動建物の反復部材/組立費を区分計算する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
+      "id": "zr2-hojin-initial-service-costs",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-assets",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-initial-service-costs-o01",
+          "text": "履行済み直接原価と未使用材料/前払役務/期間費用を区分する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-initial-service-costs-o02",
+          "text": "21の5注3の収益不算入と各費用の根拠を個別照合し翌期の解消まで計算する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -18194,241 +18314,583 @@
       "id": "zr2-kokuzei-framework",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-foundations",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-kokuzei-framework-o1",
           "text": "国税・地方税・公課と徴収の所轄を区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-kokuzei-framework-o2",
           "text": "本来納税者・第二次納税義務者・第三者の立場を特定する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-kokuzei-framework-d1",
+          "text": "徴収法上の国税・地方税・公課と本税・附帯税・滞納処分費を具体例で区分する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-framework-d2",
+          "text": "納税者・滞納者・第二次納税義務者・保証人・第三債務者を事実関係から特定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-framework-d3",
+          "text": "現在の納税地による原則、税関の例外、適法な徴収引継ぎを区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-framework-d4",
+          "text": "国税優先と私法上の権利の調整を説明し、優先が明示された例の配当と残額を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-kokuzei-private-law",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-foundations",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-kokuzei-private-law-o1",
           "text": "所有権と債権を当事者ごとに区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-kokuzei-private-law-o2",
           "text": "登記・対抗要件・有限無限責任・相続承継を事例へ適用する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-kokuzei-private-law-d1",
+          "text": "所有権・占有・金銭債権を当事者ごとに区分し、滞納者に帰属する財産を特定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-private-law-d2",
+          "text": "権利移転と第三者対抗要件、借主と物上保証人、担保と所有権を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-private-law-d3",
+          "text": "法人と出資者を区分し、有限責任社員の未履行出資による責任限度を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-private-law-d4",
+          "text": "相続財産と固有財産、単純承認・限定承認・放棄を区別し国税承継へつなぐ",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-kokuzei-tax-timeline",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-foundations",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-kokuzei-tax-timeline-o1",
           "text": "税目別の成立・確定と納付期限を時系列に置く",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-kokuzei-tax-timeline-o2",
           "text": "修正申告・更正・期限延長で動く日を説明する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-kokuzei-tax-timeline-d1",
+          "text": "主要税目の納税義務成立時点と申告・賦課・自動確定を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-tax-timeline-d2",
+          "text": "期限内・期限後・修正申告、更正決定、納税告知ごとに確定と納付すべき日を特定する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-tax-timeline-d3",
+          "text": "法定納期限・現実の納期限・法定納期限等を税額別に区分する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-tax-timeline-d4",
+          "text": "初日・暦月・休日等の規定と設問条件に従い期間を計算し年表を作る",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-kokuzei-demand-acceleration",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-foundations",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-kokuzei-demand-acceleration-o1",
           "text": "通常差押要件の督促受領と発出後期間を適用する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-kokuzei-demand-acceleration-o2",
           "text": "第二次納税義務者・保証人と繰上請求の例外を判定する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-kokuzei-demand-acceleration-d1",
+          "text": "通常の督促の要否・法定形式・50日以内の規定と送達を判断する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-demand-acceleration-d2",
+          "text": "発出日・経過する日・経過した日を区分し、差押えの時期と未納残額を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-demand-acceleration-d3",
+          "text": "第二次義務者への納付通知・納付催告と差押換価の順序を区別する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-demand-acceleration-d4",
+          "text": "繰上請求と繰上差押えの事由・対象・時期・効果を事実へ当てはめる",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-kokuzei-limitations-succession",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-foundations",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-kokuzei-limitations-succession-o1",
           "text": "時効の起算・完成猶予・更新を区別する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-kokuzei-limitations-succession-o2",
           "text": "相続・合併・連帯責任・充当還付の関係を整理する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-kokuzei-limitations-succession-d1",
+          "text": "徴収権の時効の基準日・完成猶予・更新・不進行を区分し条件付き年表を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-limitations-succession-d2",
+          "text": "相続による各人の承継額と取得価額超過による追加責任を計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-limitations-succession-d3",
+          "text": "合併・社団財産承継・分割・連帯義務と第二次義務を法的根拠から区分する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-limitations-succession-d4",
+          "text": "納付・第三者納付・還付充当と附帯税の扱いを区分し未納残額を検算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-kokuzei-late-tax",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-foundations",
-      "present": false,
-      "reviewMatchesContent": false,
-      "browserVerification": "pending",
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-kokuzei-late-tax-o1",
           "text": "延滞税の本税・期間・割合・端数を順に計算する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-kokuzei-late-tax-o2",
-          "text": "附帯税の区別と期間除外・減免を当てはめる",
+          "text": "附帯税の区分・61条1項の期間控除・基本加算税を判定する",
           "checks": {
-            "learningObjectiveMapping": false,
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ],
-      "detailedObjectives": []
+      "detailedObjectives": [
+        {
+          "id": "zr2-kokuzei-late-tax-d1",
+          "text": "法定納期限・現実の納期限・暦年から延滞税の率と区分日を選択する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-late-tax-d2",
+          "text": "本税の計算基礎・日数・一部納付・最低額・端数を段階別に計算する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-late-tax-d3",
+          "text": "61条1項の期間控除と不適用条件を年表へ反映する",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        },
+        {
+          "id": "zr2-kokuzei-late-tax-d4",
+          "text": "過少申告・無申告・不納付・重加算税の基本分岐を選び、通常例の税額を求める",
+          "checks": {
+            "learningObjectiveMapping": true,
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
+          },
+          "complete": true
+        }
+      ]
     },
     {
       "id": "zr2-kokuzei-question-inspection",
@@ -19071,6 +19533,46 @@
       "detailedObjectives": []
     },
     {
+      "id": "zr2-kokuzei-resource-rights-security",
+      "subject": "kokuzei",
+      "unit": "zr2-kokuzei-unit-priority",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-kokuzei-resource-rights-security-o1",
+          "text": "登記立木・採掘権・漁業権・採石権・ダム使用権の担保目的・公示の効力・処分制限を資料へ適用する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-kokuzei-resource-rights-security-o2",
+          "text": "取消・放棄・期間満了と実行・補償供託・法定利用関係・売却残余の帰属を判断し国税徴収へ接続する",
+          "checks": {
+            "learningObjectiveMapping": false,
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ],
+      "detailedObjectives": []
+    },
+    {
       "id": "zr2-kokuzei-special-privileges",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-priority",
@@ -19695,7 +20197,7 @@
         },
         {
           "id": "zr2-kokuzei-preservation-o2",
-          "text": "裁判所の強制執行・仮差押え・破産等との調整及び留置権の取扱いを手続別に判定する",
+          "text": "裁判所の強制執行・仮差押え・破産・責任制限基金等との調整及び留置権の取扱いを手続別に判定する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,
@@ -20001,7 +20503,7 @@
       "objectives": [
         {
           "id": "zr2-kokuzei-late-tax-complex-o1",
-          "text": "60〜64条と措法94条の適用を元資料から選択する",
+          "text": "60〜64条・措法94条及び猶予等の規定から期間控除・免除の適用根拠を元資料で選択する",
           "checks": {
             "learningObjectiveMapping": false,
             "explanation": false,

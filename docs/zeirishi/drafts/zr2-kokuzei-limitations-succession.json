@@ -76,6 +76,20 @@
         "noInterruptionEnd": "2026-03-15",
         "afterDemandStart": "2024-09-16",
         "afterDemandEnd": "2029-09-15"
+      },
+      "objectives": [
+        1
+      ],
+      "draftObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o1"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+        "line": 37,
+        "heading": "例題1：督促の前後で5年を数え直す"
       }
     },
     {
@@ -86,6 +100,20 @@
         "childrenOwnEach": 150000,
         "spouseExtraLimit": 200000,
         "remainingTaxAfterOwnPayments": 150000
+      },
+      "objectives": [
+        2
+      ],
+      "draftObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+        "line": 53,
+        "heading": "例題2：配偶者と子2人の承継額・取得価額"
       }
     },
     {
@@ -94,6 +122,20 @@
       "result": {
         "mergerLiability": 500000,
         "associationPartialLiability": 300000
+      },
+      "objectives": [
+        3
+      ],
+      "draftObjectiveIndexes": [
+        3
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+        "line": 71,
+        "heading": "例題3：合併と社団財産の一部承継"
       }
     },
     {
@@ -103,6 +145,20 @@
         "principalRemaining": 0,
         "lateTaxRemaining": 10000,
         "cashRefund": 0
+      },
+      "objectives": [
+        4
+      ],
+      "draftObjectiveIndexes": [
+        4
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o2"
+      ],
+      "bodySectionReference": {
+        "file": "C:\\Users\\ts174\\Documents\\ChatGPT\\資格ステップノート\\work\\zeirishi-upgrade\\drafts\\zr2-kokuzei-limitations-succession.md",
+        "line": 95,
+        "heading": "例題4：本税への充当後に附帯税を計算する"
       }
     }
   ],
@@ -717,7 +773,9 @@
         "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
       }
     ],
-    "toolLimitations": "paragraphs.pyで段落表を生成。lint.py/calques.pyは依存パッケージsudachipyが未導入のため実行できず、機械的合格とは表示せず手動チェックを実施"
+    "toolLimitations": "paragraphs.pyで段落表を生成。lint.py/calques.pyは依存パッケージsudachipyが未導入のため実行できず、機械的合格とは表示せず手動チェックを実施",
+    "workedExampleObjectiveIndexing": "2026-10-27：例題を実見出し・行へ対応し全24下位技能に少なくとも1場面を索引化。索引は全細目の完全履修の認定ではない。framework-ex4/private-ex5を追加したため両場面は独立再確認待ち",
+    "bodyCharactersAfterReviewCorrections": 5286
   },
   "continuationCoverage": [
     {

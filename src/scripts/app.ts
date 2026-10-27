@@ -196,6 +196,16 @@ if ($('[data-search-form]')) {
 }
 const storage = new StudyStorage();
 const labels = { 'not-started': '未学習', studying: '学習中', completed: '学習済み' };
+function exportProgress() {
+  const blob = new Blob([JSON.stringify(storage.data, null, 2)], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `shikaku-step-note-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+  notify('バックアップのダウンロードを開始しました。');
+}
 function renderStorage() {
   const label = $('[data-storage-label]');
   const message = $('[data-storage-message]');
@@ -210,10 +220,18 @@ function renderStorage() {
       alert.id = 'storage-warning';
       alert.className = 'storage-warning';
       alert.setAttribute('role', 'status');
+      const explanation = document.createElement('p');
+      explanation.textContent =
+        'このブラウザでは記録を保存できません。変更は一時的です。別のページへの移動や再読み込みの前に、ここでバックアップを書き出してください。';
+      const backup = document.createElement('button');
+      backup.type = 'button';
+      backup.className = 'button secondary';
+      backup.dataset.emergencyExport = '';
+      backup.textContent = 'この画面の記録をバックアップ';
+      backup.addEventListener('click', exportProgress);
+      alert.append(explanation, backup);
       $('#main')?.prepend(alert);
     }
-    alert.textContent =
-      'このブラウザでは記録を保存できません。変更は一時的です。マイ学習からバックアップを書き出してください。';
   } else if (storage.mode === 'localstorage') {
     if (label) label.textContent = 'この端末に保存（代替の保存方式）';
     if (message)
@@ -462,16 +480,7 @@ async function start() {
       feedback.focus();
     }),
   );
-  $('#export-progress')?.addEventListener('click', () => {
-    const blob = new Blob([JSON.stringify(storage.data, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `shikaku-step-note-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 2000);
-    notify('バックアップのダウンロードを開始しました。');
-  });
+  $('#export-progress')?.addEventListener('click', exportProgress);
   let imported: StudyData | null = null;
   let importVersion = 0;
   $('#import-file')?.addEventListener('change', async (e) => {

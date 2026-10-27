@@ -21,7 +21,12 @@ export interface Question {
   modelAnswer?: string;
   rubric?: { criterion: string; points: number }[];
   objectives?: number[];
+  // A cumulative question can assess skills taught in more than one lesson.
+  targetObjectives?: Record<string, number[]>;
   materialIds?: string[];
+}
+export function questionRevisionLessons(question: Question): string[] {
+  return [...new Set([question.lesson, ...Object.keys(question.targetObjectives ?? {})])];
 }
 export interface Assessment {
   id: string;
