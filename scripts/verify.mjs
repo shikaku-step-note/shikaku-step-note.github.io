@@ -14,6 +14,10 @@ const failures = [];
 const titles = new Set();
 let internalLinks = 0;
 const fail = (path, message) => failures.push(`${path.replace(root, '')}: ${message}`);
+const adsTxt = join(root, 'ads.txt');
+if (!existsSync(adsTxt) || readFileSync(adsTxt, 'utf8').trim() !== 'google.com, pub-4767048586306805, DIRECT, f08c47fec0942fa0')
+  fail('ads.txt', 'missing or incorrect AdSense authorized seller');
+let advertisingPages = 0;
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
 const listed = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
 if (new Set(listed).size !== listed.length) fail('sitemap.xml', 'duplicate canonical URLs');
@@ -47,6 +51,18 @@ for (const file of htmlFiles) {
     .slice(root.length + 1)
     .replaceAll('\\', '/')
     .replace(/index\.html$/, '')}`;
+  const pagePath = new URL(ownUrl).pathname;
+  const advertisingExpected = !noindex &&
+    (pagePath === `${base}/` || pagePath.startsWith(`${base}/qualifications/`));
+  const adTags = [...html.matchAll(/<script\b[^>]*src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^>]*>/g)];
+  if (adTags.length !== (advertisingExpected ? 1 : 0)) fail(file, 'unexpected or missing AdSense script');
+  if (advertisingExpected && adTags.length === 1) {
+    advertisingPages++;
+    const tag = adTags[0];
+    if (!tag[0].includes('client=ca-pub-4767048586306805"') ||
+        !/\sasync(?:\s|=|>)/.test(tag[0]) || !tag[0].includes('crossorigin="anonymous"') ||
+        tag.index > html.indexOf('</head>')) fail(file, 'incorrect AdSense script attributes or placement');
+  }
   if (noindex && listed.includes(ownUrl)) fail(file, 'noindex URL included in sitemap');
   if (!noindex && !listed.includes(canonical)) fail(file, 'indexable URL absent from sitemap');
   if (!base && ownUrl.startsWith(`${origin}/web/`)) {
@@ -89,5 +105,5 @@ if (failures.length) {
   process.exit(1);
 }
 console.log(
-  `Verified ${htmlFiles.length} HTML pages, ${listed.length} sitemap URLs, ${internalLinks} local references, JSON-LD, unique titles, ${lessons.filter((l) => !l.sample).length} published lessons and ${lessons.filter((l) => l.sample).length} noindex samples.`,
+  `Verified ${htmlFiles.length} HTML pages, ${listed.length} sitemap URLs, ${internalLinks} local references, JSON-LD, unique titles, ${lessons.filter((l) => !l.sample).length} published lessons and ${lessons.filter((l) => l.sample).length} noindex samples; ads.txt and AdSense placement on ${advertisingPages} eligible pages.`,
 );

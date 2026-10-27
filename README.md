@@ -18,6 +18,10 @@ pnpm preview
 
 既定の公開先は `https://shikaku-step-note.github.io/`、リポジトリは `shikaku-step-note/shikaku-step-note.github.io` です。開発時も `/` を開いてください。`astro.config.mjs` の `SITE_URL` / `BASE_PATH` で変更できます。`.env.example` に設定例があります。実行環境の変数として指定してください。
 
+## Google AdSense
+
+Google AdSenseのタグと`public/ads.txt`を導入しています。広告の対象ページ、審査・同意メッセージ・自動広告の設定、公開後の確認方法は[AdSense運用メモ](docs/adsense.md)を参照してください。コードの公開だけでは審査完了や広告表示を確認したことにはなりません。
+
 ## 表示モードと旧URL
 
 ヘッダーから端末連動・ライト・ダークを選べます。`src/scripts/theme.ts`と先行適用スクリプト、`src/styles/theme.css`が表示を管理します。明示した設定はlocalStorageの`shikaku-step-note:theme`へ保存し、学習記録と分離します。保存制限時も画面の切替えは可能です。

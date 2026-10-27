@@ -49,6 +49,11 @@ if (breadcrumbs.length)
   });
 if (schema) graph.push(schema);
 const verification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+// Load only on public course content. Personal records, runners, samples,
+// legacy redirects and supporting/legal pages do not need the advertising tag.
+const showAdSense =
+  !noindex &&
+  (Astro.url.pathname === href('') || Astro.url.pathname.startsWith(href('qualifications/')));
 ---
 
 <!doctype html>
@@ -92,6 +97,14 @@ const verification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
     <meta property="og:image:alt" content="資格ステップノート — 無料で学べる資格学習サイト" />
     <meta name="twitter:card" content="summary_large_image" />
     {verification && <meta name="google-site-verification" content={verification} />}
+    {showAdSense && (
+      <script
+        is:inline
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4767048586306805"
+        crossorigin="anonymous"
+      ></script>
+    )}
     <script
       type="application/ld+json"
       set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(
