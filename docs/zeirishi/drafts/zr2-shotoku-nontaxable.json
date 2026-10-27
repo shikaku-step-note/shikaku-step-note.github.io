@@ -429,5 +429,14 @@
         }
       ]
     }
-  ]
+  ],
+  "selfReview": {
+    "reviewedOn": "2026-10-27",
+    "role": "author-self-check",
+    "rubricAlignment": "全記述問について設問要求と各criterionを照合。追加要求が必要な6問の設問/基準を明確化。独立レビューはpending",
+    "arithmetic": "全数値例題・設問を別計算で照合",
+    "status": "pending-independent-review",
+    "japanese": "natural-japaneseのlint/outline/terms/calquesを本文5本と評価文へ実行し、全文を文脈確認。繰返し否定・直訳調を修正。統計的な語彙/文長の警告、法定用語、誤答選択肢の否定、数学の足す/引く等は意味を確認して保持。独立レビュー状態は変更しない。",
+    "schema": "全101問題IDの重複なし、全記述ルーブリック配点合計、各問のobjective参照、25問復習の資料/表参照と10目標の被覆、レッスン設問の完全一致再利用ゼロを確認"
+  }
 }

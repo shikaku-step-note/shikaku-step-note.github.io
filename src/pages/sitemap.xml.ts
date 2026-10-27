@@ -1,6 +1,7 @@
 import { getCollection } from 'astro:content';
 import { qualifications } from '../data/qualifications';
 import { zeirishiSubjects } from '../data/zeirishi';
+import { zeirishiDeepUnits } from '../data/zeirishi-expanded';
 import { publicPages, href } from '../lib/site';
 import type { APIContext } from 'astro';
 export async function GET({ site }: APIContext) {
@@ -8,6 +9,7 @@ export async function GET({ site }: APIContext) {
   const paths = [
     ...publicPages,
     ...zeirishiSubjects.map((s) => `qualifications/zeirishi/subjects/${s.id}/`),
+    ...zeirishiDeepUnits.map((unit) => `qualifications/zeirishi/units/${unit.id}/`),
     ...qualifications.map((q) => `qualifications/${q.id}/`),
     ...lessons.map((l) => `qualifications/${l.data.qualification}/${l.data.stableId}/`),
     ...qualifications

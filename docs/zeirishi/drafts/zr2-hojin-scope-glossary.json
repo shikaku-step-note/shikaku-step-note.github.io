@@ -1,0 +1,958 @@
+{
+  "version": "zeirishi-2026-v2-draft-hojin-scope-1",
+  "qualification": "zeirishi",
+  "unit": 4,
+  "moduleId": "zr2-hojin-unit-scope",
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "fieldNames": {
+    "hojin": "法人税法"
+  },
+  "lessonTitles": {
+    "zr2-hojin-entity-scope": "法人の区分・収益事業から課税範囲を決める",
+    "zr2-hojin-period-filing": "事業年度・納税地と青色承認の期限を確定する",
+    "zr2-hojin-income-adjustments": "益金・損金と決算処理から申告調整を組み立てる",
+    "zr2-hojin-schedule-four-five": "別表四・五（一）・五（二）を残高まで照合する",
+    "zr2-hojin-relationships": "同族・支配・完全支配と中小判定を使い分ける"
+  },
+  "sourceCandidates": [
+    {
+      "id": "corporate-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2〜8条、該当別表",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "location": "3条の非営利型二類型全項、5条34業種/各除外と2項。MainProvision本文確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-rules",
+      "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+      "location": "2の2第1項の特殊関係理事",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-foreign-scope",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "138条1項、141条、4条4項、4の3条を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-period-blue",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "13条全項、14条1項各号と通算特則、16〜20条、121〜128条、148条を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-book-preservation",
+      "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+      "location": "59条の通常の起算日・7年間保存。電子保存/欠損繰越の追加条件は後続へ",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "general-deadlines",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "location": "10条2項の休日等に係る期限の特例",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-startup-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5100.htm",
+      "location": "法人設立届と初年度青色承認申請の比較",
+      "applicableVersion": "現行ページの補助解説。凍結法令を優先"
+    },
+    {
+      "id": "corporate-income-rules",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2条25号、22条全項、22の2全項、26条1項、31条1/4項、38条1/2項を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-schedule4-directions",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/04-ki.pdf",
+      "location": "別表四の当期利益、加算、減算の記載",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表書式/記載要領。対象期間を限定"
+    },
+    {
+      "id": "corporate-depreciation-tax",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "31条1/4項、26/38条。損金経理・償却超過と法人税等の原則",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-form4-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-04.pdf",
+      "location": "pp1〜3:納付方法/留保/社外流出・仮払と同額減算。全文取得済み。特殊な後半の税効果/通算等を本講の完成範囲とはしない",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form51-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05.pdf",
+      "location": "全4頁:増減・繰越損益金/充当金/未納法人税/未収還付・仮払の△記載・検算式",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form52-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05_2.pdf",
+      "location": "全4頁:中間/確定・納付三方法・還付外書・事業税と充当金",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form51",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/05(01).pdf",
+      "location": "Ⅰの期首/減/増/翌期首、Ⅱとの区別",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-relationship-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2条10号/12の7の5号/12の7の6号、66条2/5項、25の2条の法人による完全支配という要件",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-relationship-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "location": "4条の特殊関係/議決権等、4の2条全項の直接/間接/持株組合等5％未満除外",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "special-sme-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "location": "42の3の2全条、42の4第19項7/8号",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "special-sme-decree",
+      "url": "https://laws.e-gov.go.jp/law/332CO0000000043_20260401_508CO0000000098",
+      "location": "27の4第17〜19項。大規模法人/所有割合/基準年度平均の調整",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-sme-guidance",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-01.pdf",
+      "location": "全3頁:中小法人、2025年4月以後開始17％、適用除外事業者",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表資料"
+    },
+    {
+      "id": "corporate-sme-measures-guidance",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-66.pdf",
+      "location": "中小企業者の大規模法人/持分判定と制度別条件",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表資料"
+    }
+  ],
+  "id": "zr2-hojin-scope-glossary",
+  "title": "法人税の出発点：場面で区別する35の用語",
+  "kind": "glossary",
+  "minutes": 45,
+  "countsAsIndependentApplication": false,
+  "assessmentPurpose": "用語・定義と混同しやすい概念の確認。独立した計算・法的適用の習得証拠とは別に集計する。",
+  "instructions": "場面の中の用語の意味を選び、誤答のどこが違うかを解説で確認してください。2026年4月3日基準。定義確認が中心で、これだけで独立応用や本試験対応が完了したとは扱いません。",
+  "questions": [
+    {
+      "prompt": "株主の国籍と会社の本店の国が異なる資料を読む。 この場面の「内国法人」の意味として適切なものを選んでください。",
+      "options": [
+        "国内に本店または主たる事務所がある法人",
+        "株主の過半数が日本国籍の法人",
+        "国内売上が全売上の過半数の法人",
+        "代表者が日本に住所を持つ全ての法人"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "内国法人は、国内に本店または主たる事務所がある法人。本店等の所在を使います。株主国籍・売上割合・代表者住所のいずれかだけで区分するものではありません。",
+      "id": "zr2-hojin-scope-glossary-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01"
+      ],
+      "term": "内国法人"
+    },
+    {
+      "prompt": "外国会社の日本支店を調べる。 この場面の「外国法人」の意味として適切なものを選んでください。",
+      "options": [
+        "外国資本が一部でも入る内国株式会社",
+        "内国法人以外の法人",
+        "外国で売上を得る全ての内国法人",
+        "外国人の個人事業を法人とみなしたもの"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "外国法人は、内国法人以外の法人。外国資本や外国売上と、法人の内外国区分を分けます。日本支店も、それだけで独立の内国法人になるものではありません。",
+      "id": "zr2-hojin-scope-glossary-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01"
+      ],
+      "term": "外国法人"
+    },
+    {
+      "prompt": "設立形態と法定別表から会社の種類を調べる。 この場面の「普通法人」の意味として適切なものを選んでください。",
+      "options": [
+        "利益を出した全ての公益法人等",
+        "法人でない団体を全て含む一つの法定区分",
+        "公共法人・公益法人等・協同組合等以外の法人",
+        "株式会社だけを含み一般社団法人は一切含まない区分"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "普通法人は、公共法人・公益法人等・協同組合等以外の法人。非営利型でない一般社団法人等も普通法人となり得ます。人格のない社団等は別の区分で範囲を調べます。",
+      "id": "zr2-hojin-scope-glossary-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01"
+      ],
+      "term": "普通法人"
+    },
+    {
+      "prompt": "一般社団法人の定款・役員・実際の行為を調べる。 この場面の「非営利型法人」の意味として適切なものを選んでください。",
+      "options": [
+        "剰余金を出さなかった全ての法人",
+        "法人名に非営利という語がある法人",
+        "会費収入があれば理事関係を問わず該当する法人",
+        "施行令所定の二類型のいずれかの全要件を満たす一般社団法人等"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "非営利型法人は、施行令所定の二類型のいずれかの全要件を満たす一般社団法人等。赤字、法人名、会費という一条件ではなく、定款・残余財産・特別利益・理事関係等の全要件を確認します。",
+      "id": "zr2-hojin-scope-glossary-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01"
+      ],
+      "term": "非営利型法人"
+    },
+    {
+      "prompt": "公益法人等の継続する販売や受託業務を調べる。 この場面の「収益事業」の意味として適切なものを選んでください。",
+      "options": [
+        "政令所定の事業を継続して事業場を設けて行うもの。個別・共通の除外も確認する",
+        "黒字の活動だけを合計したもの",
+        "収入の使途が私的な事業だけ",
+        "会員以外に販売した場合に限られる全ての活動"
+      ],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "収益事業は、政令所定の事業を継続して事業場を設けて行うもの。個別・共通の除外も確認する。列挙業種・継続・事業場・除外から判断します。赤字でも対象となり、使途や会員向けかという一事実では決まりません。",
+      "id": "zr2-hojin-scope-glossary-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o02"
+      ],
+      "term": "収益事業"
+    },
+    {
+      "prompt": "登記のない団体の規約と代表者の記録を調べる。 この場面の「人格のない社団等」の意味として適切なものを選んでください。",
+      "options": [
+        "代表者が屋号を使う個人事業の全て",
+        "法人でない社団または財団で、代表者または管理人の定めがあるもの",
+        "全ての構成員の所得を必ず均等にする制度",
+        "代表者の所得へ全収入を移すための名称"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "人格のない社団等は、法人でない社団または財団で、代表者または管理人の定めがあるもの。代表者等の定めを持つ団体の主体を確認します。屋号と別人の団体を同一視せず、代表者一律課税や均等配分にも置き換えません。",
+      "id": "zr2-hojin-scope-glossary-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01"
+      ],
+      "term": "人格のない社団等"
+    },
+    {
+      "prompt": "外国法人の国内支店と国内源泉所得を調べる。 この場面の「恒久的施設」の意味として適切なものを選んでください。",
+      "options": [
+        "日本の銀行口座を開いた事実そのもの",
+        "日本人の株主が一人いる事実そのもの",
+        "支店等の一定の事業拠点等として、外国法人の所得帰属や課税範囲で確認するもの",
+        "存在しなければ全ての国内源泉所得を免税にする条件"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "恒久的施設は、支店等の一定の事業拠点等として、外国法人の所得帰属や課税範囲で確認するもの。PEと国内口座や株主を区別します。PEがなくても課税対象となる国内源泉所得があります。",
+      "id": "zr2-hojin-scope-glossary-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o02"
+      ],
+      "term": "恒久的施設"
+    },
+    {
+      "prompt": "定款の会計期間と期中の解散を時系列へ書く。 この場面の「事業年度」の意味として適切なものを選んでください。",
+      "options": [
+        "常に1月1日から12月31日までの期間",
+        "税務調査が行われた日から1年間",
+        "法人の現金を使い切るまでの期間",
+        "法人税の所得計算の単位となる期間"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "事業年度は、法人税の所得計算の単位となる期間。定款等、1年超の区分、期中の法定事実を確認します。暦年固定や調査日・現金残高で決める期間ではありません。",
+      "id": "zr2-hojin-scope-glossary-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o01"
+      ],
+      "term": "事業年度"
+    },
+    {
+      "prompt": "年度途中の合併や収益事業開始で期末を調べる。 この場面の「みなし事業年度」の意味として適切なものを選んでください。",
+      "options": [
+        "法定の事実に応じ、通常の会計期間を区切って扱う税務上の期間",
+        "納税者が所得を減らすため自由に選ぶ期間",
+        "会計期間の呼び方を変えただけで区切りを生じない期間",
+        "全ての解散・合併に同じ当日を使う期間"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "みなし事業年度は、法定の事実に応じ、通常の会計期間を区切って扱う税務上の期間。法定の事実ごとに終了日や次期の有無が違います。合併日前日と通常解散当日も使い分けます。",
+      "id": "zr2-hojin-scope-glossary-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o01"
+      ],
+      "term": "みなし事業年度"
+    },
+    {
+      "prompt": "本店移転後の申告先と異動届を確認する。 この場面の「納税地」の意味として適切なものを選んでください。",
+      "options": [
+        "売上が生じた全ての店舗を同時に並べた場所",
+        "法人税の申告先等を決める基準となる場所",
+        "取締役が自由に選ぶ私的な郵便の受取先",
+        "内国法人について常に代表者の住所地"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "納税地は、法人税の申告先等を決める基準となる場所。本店等の原則、外国法人の条件、指定等に従って決まります。売上発生地や代表者自宅だけでは決めません。",
+      "id": "zr2-hojin-scope-glossary-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o02"
+      ],
+      "term": "納税地"
+    },
+    {
+      "prompt": "新設法人が開始年度からの適用を検討する。 この場面の「青色申告の承認」の意味として適切なものを選んでください。",
+      "options": [
+        "法人設立届だけで自動的に得る全ての税の免除",
+        "決算後に申告書の色を選ぶ任意の名称",
+        "法定の申請・帳簿等の条件に基づき青色の申告書を提出するための承認",
+        "毎年度必ず同じ申請をし直す更新手続"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "青色申告の承認は、法定の申請・帳簿等の条件に基づき青色の申告書を提出するための承認。設立届と承認申請は別で、適用開始年度から期限を逆算します。承認が続けば毎年度の新規申請という扱いではありません。",
+      "id": "zr2-hojin-scope-glossary-q11",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o02"
+      ],
+      "term": "青色申告の承認"
+    },
+    {
+      "prompt": "申請後に帳簿の不備等が確認された場面を読む。 この場面の「承認申請の却下」の意味として適切なものを選んでください。",
+      "options": [
+        "既存の承認を必ず申請日に遡って消す全ての処分",
+        "納税者が自ら取りやめる届出",
+        "処分がない所定の日に承認があったとみなす扱い",
+        "申請を認めない処分"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "承認申請の却下は、申請を認めない処分。却下、既存承認の取消し、取りやめ、みなし承認を区別します。いずれも通知の有無だけを同じ意味で扱いません。",
+      "id": "zr2-hojin-scope-glossary-q12",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o02"
+      ],
+      "term": "承認申請の却下"
+    },
+    {
+      "prompt": "既に青色の会社で仮装記録が問題となった。 この場面の「青色申告の承認の取消し」の意味として適切なものを選んでください。",
+      "options": [
+        "法定の事実に基づき既存の承認の効力を失わせる処分",
+        "全ての帳簿不備が生じた瞬間の自動失効",
+        "新規申請を最初から認めない処分だけ",
+        "会社自身が出す通常の取りやめ届だけ"
+      ],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "青色申告の承認の取消しは、法定の事実に基づき既存の承認の効力を失わせる処分。取消しは既存承認についての税務署長の処分です。該当事実、遡及等の規定、通知を確認し、自動失効や取りやめと区別します。",
+      "id": "zr2-hojin-scope-glossary-q13",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o02"
+      ],
+      "term": "青色申告の承認の取消し"
+    },
+    {
+      "prompt": "現金入金と未収売上・出資を分ける。 この場面の「益金」の意味として適切なものを選んでください。",
+      "options": [
+        "法人の銀行口座の全入金額",
+        "法人税の所得計算上、当期へ算入する収益の額",
+        "会計収益と必ず一致する額",
+        "法人の資本金等が増える全ての払込額"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "益金は、法人税の所得計算上、当期へ算入する収益の額。未収でも益金となる収益があり、借入・出資の入金を一律に含めません。会計との差も個別規定から確認します。",
+      "id": "zr2-hojin-scope-glossary-q14",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01"
+      ],
+      "term": "益金"
+    },
+    {
+      "prompt": "費用と資産購入・元本返済を分ける。 この場面の「損金」の意味として適切なものを選んでください。",
+      "options": [
+        "法人が支払った全ての金額",
+        "決算で費用にすれば必ず全額認める金額",
+        "当期所得計算へ算入する原価・費用・損失の額",
+        "株主への利益配当を含む全ての出金額"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "損金は、当期所得計算へ算入する原価・費用・損失の額。現金支払や会計費用だけで判定せず、税法の範囲・時期・別段の定めを確認します。利益の分配や元本返済とは分けます。",
+      "id": "zr2-hojin-scope-glossary-q15",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01"
+      ],
+      "term": "損金"
+    },
+    {
+      "prompt": "当期純利益から所得金額へ橋渡しする表を作る。 この場面の「申告調整」の意味として適切なものを選んでください。",
+      "options": [
+        "決算利益の全額を税額へ直接読み替える作業",
+        "税務調査で必ず増額更正されることだけ",
+        "損金経理が必要な項目も帳簿なしで自由に引く手続",
+        "会計利益と税法上の所得の差を加算・減算で反映する作業"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "申告調整は、会計利益と税法上の所得の差を加算・減算で反映する作業。四つの調整と個別の条件を使います。利益と税額の置換でも、全ての費用の要件を省く手続でもありません。",
+      "id": "zr2-hojin-scope-glossary-q16",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01"
+      ],
+      "term": "申告調整"
+    },
+    {
+      "prompt": "普通償却の損金算入額を求める。 この場面の「損金経理」の意味として適切なものを選んでください。",
+      "options": [
+        "確定した決算で費用または損失として経理すること",
+        "現金を支払ったことだけ",
+        "申告書の減算欄へ記入したことだけ",
+        "償却限度額を計算したことだけ"
+      ],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "損金経理は、確定した決算で費用または損失として経理すること。決算上の費用・損失としての経理を確認します。現金払い、申告書記載、限度計算のいずれかだけで代替しません。",
+      "id": "zr2-hojin-scope-glossary-q17",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o02"
+      ],
+      "term": "損金経理"
+    },
+    {
+      "prompt": "株主払込み、借入、配当を分類する。 この場面の「資本等取引」の意味として適切なものを選んでください。",
+      "options": [
+        "法人の負債が増減する取引の全て",
+        "資本金等の増減を生じる取引と、利益・剰余金・残余財産の分配等",
+        "資本金という科目名を使う取引だけで配当を除くもの",
+        "取締役会が承認した全ての売上取引"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "資本等取引は、資本金等の増減を生じる取引と、利益・剰余金・残余財産の分配等。法定の定義を使います。借入元本は通常損益を生まなくても、同じ理由の資本等取引と一括しません。利益配当も定義に含まれます。",
+      "id": "zr2-hojin-scope-glossary-q18",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o02"
+      ],
+      "term": "資本等取引"
+    },
+    {
+      "prompt": "当期の帳簿償却と過去の超過を比較する。 この場面の「償却限度額」の意味として適切なものを選んでください。",
+      "options": [
+        "必ず当期損金へ入れるべき最低額",
+        "会計償却費に関係なく自動的に減算する額",
+        "税法の方法等から計算する当期償却の上限",
+        "資産の購入時に全額引くための控除額"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "償却限度額は、税法の方法等から計算する当期償却の上限。上限に加え損金経理額等も確認します。限度の余りだけを理由に申告減算することはできません。",
+      "id": "zr2-hojin-scope-glossary-q19",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o02"
+      ],
+      "term": "償却限度額"
+    },
+    {
+      "prompt": "当期加算した償却差額を翌期へ引き継ぐ。 この場面の「償却超過額」の意味として適切なものを選んでください。",
+      "options": [
+        "当期の現金購入代金の全額",
+        "翌期に全額自動減算できる引当額",
+        "他のどの資産の余りにも自由に移せる額",
+        "償却費として損金経理した額のうち、その年度に損金算入されず残る額"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "償却超過額は、償却費として損金経理した額のうち、その年度に損金算入されず残る額。資産別の残高を管理し、翌期の条件・限度等で認容を確認します。残高の存在だけで全額減算したり他資産へ移したりしません。",
+      "id": "zr2-hojin-scope-glossary-q20",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o02"
+      ],
+      "term": "償却超過額"
+    },
+    {
+      "prompt": "当期純利益を出発点として所得を求める。 この場面の「別表四」の意味として適切なものを選んでください。",
+      "options": [
+        "所得金額等と留保・社外流出の調整を記載する明細書",
+        "税金の銀行支払だけを時系列へ並べる表",
+        "利益積立金額の翌期首残高だけの表",
+        "資本金の登記変更だけを記録する表"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "別表四は、所得金額等と留保・社外流出の調整を記載する明細書。四は当期の所得調整です。税金の発生・納付は五（二）、利益積立等の残高は五（一）と対応させます。",
+      "id": "zr2-hojin-scope-glossary-q21",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01"
+      ],
+      "term": "別表四"
+    },
+    {
+      "prompt": "前期末の償却超過や未納税額を当期首へ引き継ぐ。 この場面の「別表五（一）」の意味として適切なものを選んでください。",
+      "options": [
+        "法人税の税率を一律に決める表",
+        "利益積立金額と資本金等の額の期首・増減・翌期首を計算する明細書",
+        "当期所得だけを求め翌期残高を持たない表",
+        "現金納付した税だけを記載する表"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "別表五（一）は、利益積立金額と資本金等の額の期首・増減・翌期首を計算する明細書。Ⅰの利益積立とⅡの資本金等を区分します。所得だけの四や発生・納付の五（二）と役割を分けます。",
+      "id": "zr2-hojin-scope-glossary-q22",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01"
+      ],
+      "term": "別表五（一）"
+    },
+    {
+      "prompt": "前期税、中間税、充当金取崩しと仮払を並べる。 この場面の「別表五（二）」の意味として適切なものを選んでください。",
+      "options": [
+        "銀行支払さえ合えば発生年度を問わない一覧",
+        "全ての税金を損金不算入とするためだけの表",
+        "租税公課の発生・納付・未納等と納税充当金の増減を記録する明細書",
+        "株主の持株割合を計算する表"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "別表五（二）は、租税公課の発生・納付・未納等と納税充当金の増減を記録する明細書。発生年度と納付の三方法を区分します。税目・未納・還付・充当金が四や五（一）へつながります。",
+      "id": "zr2-hojin-scope-glossary-q23",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "term": "別表五（二）"
+    },
+    {
+      "prompt": "償却超過の加算と翌期の認容を追う。 この場面の「留保」の意味として適切なものを選んでください。",
+      "options": [
+        "現金の期末残高そのもの",
+        "現金を払っていない費用の全て",
+        "会社が配当しなかった会計利益だけ",
+        "税務上の利益積立金額の残高へつながる別表四の区分"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "留保は、税務上の利益積立金額の残高へつながる別表四の区分。税務残高へのつながりで確認します。現金の有無や単なる配当未実施と同一ではなく、税金の支払にも所定の留保処理があります。",
+      "id": "zr2-hojin-scope-glossary-q24",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01"
+      ],
+      "term": "留保"
+    },
+    {
+      "prompt": "支出済み交際費や一般寄附金の損金不算入を区分する。 この場面の「社外流出」の意味として適切なものを選んでください。",
+      "options": [
+        "通常その調整自体を翌期認容の否認残高へ残さない別表四の区分",
+        "現金の出金全てを集計する区分",
+        "全て翌期に損金算入を約束する区分",
+        "税務上の資本金等の増加だけを示す区分"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "社外流出は、通常その調整自体を翌期認容の否認残高へ残さない別表四の区分。現金支払全体の意味ではありません。交際費等を償却超過と同じ自動認容残高へ混ぜず、項目ごとの規定を確認します。",
+      "id": "zr2-hojin-scope-glossary-q25",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01"
+      ],
+      "term": "社外流出"
+    },
+    {
+      "prompt": "決算の未払法人税等と支払による取崩しを照合する。 この場面の「納税充当金」の意味として適切なものを選んでください。",
+      "options": [
+        "税法上の未納法人税本税と必ず同額のもの",
+        "費用計上した税金等に対応する会計上の負債の額を管理する項目",
+        "銀行へ実際に納めた税額の累計だけ",
+        "課税所得から必ず損金になる準備金"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "納税充当金は、費用計上した税金等に対応する会計上の負債の額を管理する項目。見込税額等を含むため法定未納本税と区別します。費用計上した充当金は別表四の加算等を検討し、納付額とも混同しません。",
+      "id": "zr2-hojin-scope-glossary-q26",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "term": "納税充当金"
+    },
+    {
+      "prompt": "中間税を支払ったが費用へ振り替えていない。 この場面の「仮払経理」の意味として適切なものを選んでください。",
+      "options": [
+        "支払ったその場で費用へ全額計上する方法",
+        "前期の未払税負債を取り崩す方法",
+        "税金の納付を仮払金等の資産として処理する方法",
+        "税務署が税額を免除する方法"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "仮払経理は、税金の納付を仮払金等の資産として処理する方法。費用処理や充当金取崩しとは別です。損益へ未反映であることから四の調整や五（一）の△記載を照合します。",
+      "id": "zr2-hojin-scope-glossary-q27",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "term": "仮払経理"
+    },
+    {
+      "prompt": "年間税額と既に発生した中間税額を照合する。 この場面の「確定残額」の意味として適切なものを選んでください。",
+      "options": [
+        "年間本税額そのものを常に同額で記す法定用語",
+        "前期から残った未納税額だけ",
+        "中間納付を差し引く前の税率",
+        "年間本税と中間税額の関係から求める追加納付または還付の額という、本講の説明用語"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "確定残額は、年間本税と中間税額の関係から求める追加納付または還付の額という、本講の説明用語。本講で年度全体と精算差額を区別する呼び方です。原書式の確定欄等を確認し、還付なら符号・外書にも注意します。",
+      "id": "zr2-hojin-scope-glossary-q28",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "term": "確定残額"
+    },
+    {
+      "prompt": "関係個人をまとめた上位の株主グループを調べる。 この場面の「同族会社」の意味として適切なものを選んでください。",
+      "options": [
+        "三つ以下の株主等グループの50％超保有等の法定基準に該当する会社",
+        "一人が直接100％持つ会社だけ",
+        "全株主に戸籍上の親族関係が必要な会社",
+        "資本金が1億円以下の全ての会社"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "同族会社は、三つ以下の株主等グループの50％超保有等の法定基準に該当する会社。三グループの条件と、一の者による支配・全部保有、規模要件を分けます。特殊関係には親族以外も含みます。",
+      "id": "zr2-hojin-scope-glossary-q29",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o01"
+      ],
+      "term": "同族会社"
+    },
+    {
+      "prompt": "直接持分と支配する中間法人をたどる。 この場面の「支配関係」の意味として適切なものを選んでください。",
+      "options": [
+        "三グループを常に全て足して判断する関係",
+        "一の者の直接・間接の50％超保有の関係等",
+        "全ての持分割合を掛けて50％を超えた場合だけの関係",
+        "50％ちょうどを必ず含む関係"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "支配関係は、一の者の直接・間接の50％超保有の関係等。一の者の特殊関係個人と所定のみなし保有を確認します。三グループ基準や経済持分の積だけには置き換えません。",
+      "id": "zr2-hojin-scope-glossary-q30",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o01"
+      ],
+      "term": "支配関係"
+    },
+    {
+      "prompt": "共通の親の二子会社や全部保有の連鎖を調べる。 この場面の「完全支配関係」の意味として適切なものを選んでください。",
+      "options": [
+        "一者の持株が50％を超えるだけの関係",
+        "親会社が直接100％という一形態だけ",
+        "一の者の直接・間接の全部保有の関係等",
+        "どの従業員持株でも5％以下なら除く関係"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "完全支配関係は、一の者の直接・間接の全部保有の関係等。間接・共通の全部保有も確認します。所定の株式除外は種類と合計5％未満の条件があり、一般の従業員保有を一律に除きません。",
+      "id": "zr2-hojin-scope-glossary-q31",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o01"
+      ],
+      "term": "完全支配関係"
+    },
+    {
+      "prompt": "持株割合の分母を確認する。 この場面の「自己株式」の意味として適切なものを選んでください。",
+      "options": [
+        "代表者が個人的に保有する自社株",
+        "子会社が持つ親会社以外の全ての株式",
+        "発行済株式から常に除かない議決権株式の名称",
+        "会社が保有する自社の株式"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "自己株式は、会社が保有する自社の株式。法人自身の保有を確認します。割合判定では分母等から除く規定があるため、代表者個人の株式と区別します。",
+      "id": "zr2-hojin-scope-glossary-q32",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o01"
+      ],
+      "term": "自己株式"
+    },
+    {
+      "prompt": "法66条の小資本金法人の除外を確認する。 この場面の「大法人」の意味として適切なものを選んでください。",
+      "options": [
+        "この制度で資本金5億円以上の法人等を含む所定の区分",
+        "資本金5億円超だけで5億円ちょうどを除く全制度共通区分",
+        "資本金1億円超の法人だけを指す措置法の区分と常に同じ",
+        "売上高だけを用いて決まる区分"
+      ],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "大法人は、この制度で資本金5億円以上の法人等を含む所定の区分。以上の境界と条文ごとの範囲を確認します。大規模法人の資本金1億円超等の基準と混同しません。",
+      "id": "zr2-hojin-scope-glossary-q33",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o02"
+      ],
+      "term": "大法人"
+    },
+    {
+      "prompt": "措置法の中小企業者の保有除外を確認する。 この場面の「大規模法人」の意味として適切なものを選んでください。",
+      "options": [
+        "どの制度でも大法人と全く同一の範囲",
+        "資本金1億円超等や所定の大法人の支配下等の法人を含む区分",
+        "自己資本金が小さければ所定の子法人も必ず外れる区分",
+        "従業員がいる法人なら規模を問わず入る区分"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "大規模法人は、資本金1億円超等や所定の大法人の支配下等の法人を含む区分。自己資本金だけでなく資本なし法人の従業員や所定の支配下法人等も確認し、同一/複数保有の除外へつなげます。",
+      "id": "zr2-hojin-scope-glossary-q34",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o02"
+      ],
+      "term": "大規模法人"
+    },
+    {
+      "prompt": "対象年度の前に終了した基準年度の所得と月数を集計する。 この場面の「適用除外事業者」の意味として適切なものを選んでください。",
+      "options": [
+        "当期所得が1,000万円を超える法人だけ",
+        "平均所得ちょうど15億円なら必ず該当する区分",
+        "年換算平均所得15億円超等の法定条件により所定の中小企業向け特例から除かれる法人",
+        "全ての中小企業向け制度と法人税の全軽減を同一条件で扱う名称"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "適用除外事業者は、年換算平均所得15億円超等の法定条件により所定の中小企業向け特例から除かれる法人。基準年度・月数・調整事由・超える境界を確認します。当期所得や他制度の中小判定を一つにまとめません。",
+      "id": "zr2-hojin-scope-glossary-q35",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o02"
+      ],
+      "term": "適用除外事業者"
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-hojin-entity-scope-o01": [
+      "zr2-hojin-scope-glossary-q1",
+      "zr2-hojin-scope-glossary-q2",
+      "zr2-hojin-scope-glossary-q3",
+      "zr2-hojin-scope-glossary-q4",
+      "zr2-hojin-scope-glossary-q6"
+    ],
+    "zr2-hojin-entity-scope-o02": [
+      "zr2-hojin-scope-glossary-q5",
+      "zr2-hojin-scope-glossary-q7"
+    ],
+    "zr2-hojin-period-filing-o01": [
+      "zr2-hojin-scope-glossary-q8",
+      "zr2-hojin-scope-glossary-q9"
+    ],
+    "zr2-hojin-period-filing-o02": [
+      "zr2-hojin-scope-glossary-q10",
+      "zr2-hojin-scope-glossary-q11",
+      "zr2-hojin-scope-glossary-q12",
+      "zr2-hojin-scope-glossary-q13"
+    ],
+    "zr2-hojin-income-adjustments-o01": [
+      "zr2-hojin-scope-glossary-q14",
+      "zr2-hojin-scope-glossary-q15",
+      "zr2-hojin-scope-glossary-q16"
+    ],
+    "zr2-hojin-income-adjustments-o02": [
+      "zr2-hojin-scope-glossary-q17",
+      "zr2-hojin-scope-glossary-q18",
+      "zr2-hojin-scope-glossary-q19",
+      "zr2-hojin-scope-glossary-q20"
+    ],
+    "zr2-hojin-schedule-four-five-o01": [
+      "zr2-hojin-scope-glossary-q21",
+      "zr2-hojin-scope-glossary-q22",
+      "zr2-hojin-scope-glossary-q24",
+      "zr2-hojin-scope-glossary-q25"
+    ],
+    "zr2-hojin-schedule-four-five-o02": [
+      "zr2-hojin-scope-glossary-q23",
+      "zr2-hojin-scope-glossary-q26",
+      "zr2-hojin-scope-glossary-q27",
+      "zr2-hojin-scope-glossary-q28"
+    ],
+    "zr2-hojin-relationships-o01": [
+      "zr2-hojin-scope-glossary-q29",
+      "zr2-hojin-scope-glossary-q30",
+      "zr2-hojin-scope-glossary-q31",
+      "zr2-hojin-scope-glossary-q32"
+    ],
+    "zr2-hojin-relationships-o02": [
+      "zr2-hojin-scope-glossary-q33",
+      "zr2-hojin-scope-glossary-q34",
+      "zr2-hojin-scope-glossary-q35"
+    ]
+  },
+  "selfReview": {
+    "status": "pending-independent-review",
+    "terminology": "全5講の35用語を対応、説明用語は法定名称と区別",
+    "distractors": "近い概念/境界/誤適用により誤答を設計、理由を記載",
+    "arithmetic": "35問の正答位置と解説、全35用語の説明を確認。1/3・50％超・5％未満・15億円超等の法定境界も照合。",
+    "rubricAlignment": "全記述問の数値/理由/資料/検算の要求と各採点基準を照合。要求外の補足に配点しない。",
+    "japanese": "全問と資料を全文確認しlint/outline/terms/calquesを実行。制度条件を指す入口等を具体化。資料参照/定義設問の反復、法的該当の当たる、算術の足す/引く、誤答選択肢中の否定等は文脈に照らして保持。独立レビューはpending。"
+  }
+}

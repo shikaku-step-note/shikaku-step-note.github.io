@@ -1,7 +1,627 @@
 {
   "schemaVersion": 1,
   "notice": "本文・例題・独立演習・累積評価・根拠照合・日本語校閲を個別に確認する。自動検査だけでレビュー済みに変更しない。",
-  "lessons": {},
-  "assessments": {},
+  "lessons": {
+    "zr2-shotoku-taxpayer": {
+      "contentHash": "90529952877bff0273093083742ffc2291581e51043aa02556f0a3933f147d7c",
+      "lessonDataHash": "28de6265fa7d661efe1b17164c8754883c5f1ed0fe4cdb2b6d5645a88714fc1b",
+      "objectives": {
+        "zr2-shotoku-taxpayer-o01": {
+          "explanation": [
+            "最初に、人・期間・申告先を確定する",
+            "個人と法人では、所得税のかかり方が違う",
+            "納税地は、所得が生じた場所とは別に決める",
+            "「成立」「確定」「納付」を時系列に並べる",
+            "総合資料を読み始めるときの記録"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-taxpayer-e1"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-taxpayer-q1",
+            "zr2-shotoku-taxpayer-q2",
+            "zr2-shotoku-taxpayer-q3",
+            "zr2-shotoku-taxpayer-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q1",
+            "zr2-shotoku-scope-review-q5"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "2条1項3〜7号、5条、7条、15〜16条、21条"
+              },
+              {
+                "id": "general-law",
+                "locator": "15条1〜3項、16条、21条"
+              },
+              {
+                "id": "income-tax-place",
+                "locator": "概要・主な納税地・納税地の特例"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        },
+        "zr2-shotoku-taxpayer-o02": {
+          "explanation": [
+            "最初に、人・期間・申告先を確定する",
+            "個人と法人では、所得税のかかり方が違う",
+            "納税地は、所得が生じた場所とは別に決める",
+            "「成立」「確定」「納付」を時系列に並べる",
+            "総合資料を読み始めるときの記録"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-taxpayer-e2",
+            "zr2-shotoku-taxpayer-e3"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-taxpayer-q4",
+            "zr2-shotoku-taxpayer-q5",
+            "zr2-shotoku-taxpayer-q6",
+            "zr2-shotoku-taxpayer-q7",
+            "zr2-shotoku-taxpayer-q8",
+            "zr2-shotoku-taxpayer-q9"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q2",
+            "zr2-shotoku-scope-review-q3",
+            "zr2-shotoku-scope-review-q4"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "2条1項3〜7号、5条、7条、15〜16条、21条"
+              },
+              {
+                "id": "general-law",
+                "locator": "15条1〜3項、16条、21条"
+              },
+              {
+                "id": "income-tax-place",
+                "locator": "概要・主な納税地・納税地の特例"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
+    },
+    "zr2-shotoku-residence": {
+      "contentHash": "4d43e7a48ab76f2d5f58051537368d2ae0ea0bb537878e08a65de7aebb28e640",
+      "lessonDataHash": "f5b7516538e4e252b20097ff6e5bb583ed7e680f7703161a150e78a6c2026ad0",
+      "objectives": {
+        "zr2-shotoku-residence-o01": {
+          "explanation": [
+            "居住区分を決めてから、課税範囲を選ぶ",
+            "住所がある場合と、居所が1年以上ある場合",
+            "非永住者は、居住者の中から判定する",
+            "非永住者の所得を源泉と支払場所で分ける",
+            "所得金額計算へ渡す前に確かめること"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-residence-e1",
+            "zr2-shotoku-residence-e2"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-residence-q1",
+            "zr2-shotoku-residence-q2",
+            "zr2-shotoku-residence-q3",
+            "zr2-shotoku-residence-q9",
+            "zr2-shotoku-residence-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q6",
+            "zr2-shotoku-scope-review-q8",
+            "zr2-shotoku-scope-review-q9"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "2条1項3〜5号、7条。95条1項・4項2号、161条1項7号の関連する源泉の規定も参照"
+              },
+              {
+                "id": "income-decree",
+                "locator": "14〜15条、17条1〜4項。特に4項の計算順序・期間区分"
+              },
+              {
+                "id": "income-residence-circular",
+                "locator": "2-1〜2-4の3。住所・居所・居住履歴の判定と期間計算"
+              },
+              {
+                "id": "income-remittance-circular",
+                "locator": "7-2〜7-6。送金の計算順序、支払地、送金の範囲"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        },
+        "zr2-shotoku-residence-o02": {
+          "explanation": [
+            "居住区分を決めてから、課税範囲を選ぶ",
+            "住所がある場合と、居所が1年以上ある場合",
+            "非永住者は、居住者の中から判定する",
+            "非永住者の所得を源泉と支払場所で分ける",
+            "所得金額計算へ渡す前に確かめること"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-residence-e1",
+            "zr2-shotoku-residence-e3",
+            "zr2-shotoku-residence-e4"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-residence-q4",
+            "zr2-shotoku-residence-q5",
+            "zr2-shotoku-residence-q6",
+            "zr2-shotoku-residence-q7",
+            "zr2-shotoku-residence-q8",
+            "zr2-shotoku-residence-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q7",
+            "zr2-shotoku-scope-review-q8",
+            "zr2-shotoku-scope-review-q10"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "2条1項3〜5号、7条。95条1項・4項2号、161条1項7号の関連する源泉の規定も参照"
+              },
+              {
+                "id": "income-decree",
+                "locator": "14〜15条、17条1〜4項。特に4項の計算順序・期間区分"
+              },
+              {
+                "id": "income-residence-circular",
+                "locator": "2-1〜2-4の3。住所・居所・居住履歴の判定と期間計算"
+              },
+              {
+                "id": "income-remittance-circular",
+                "locator": "7-2〜7-6。送金の計算順序、支払地、送金の範囲"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
+    },
+    "zr2-shotoku-attribution": {
+      "contentHash": "e231e65c3aff7c9796782315273ccad1492bfc407c8de0fe7be6a8da98455390",
+      "lessonDataHash": "3d6b9c9f16a9bb424b12b652aecb85cae2136dd70569f0330e81174d8cac0bb9",
+      "objectives": {
+        "zr2-shotoku-attribution-o01": {
+          "explanation": [
+            "入金した口座から、所得を得た人を調べる",
+            "資産の収益は、その資産の真実の権利者を確かめる",
+            "共有財産は、入金の回数で分けない",
+            "事業では、経営方針を決める人を調べる",
+            "受益者等課税信託は、収益と費用を受益者へ帰属させる",
+            "帰属の判定を、各人の計算へつなぐ"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-attribution-e1",
+            "zr2-shotoku-attribution-e3"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-attribution-q1",
+            "zr2-shotoku-attribution-q2",
+            "zr2-shotoku-attribution-q4",
+            "zr2-shotoku-attribution-q5",
+            "zr2-shotoku-attribution-q9"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q11",
+            "zr2-shotoku-scope-review-q12",
+            "zr2-shotoku-scope-review-q13"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "12条、13条1〜4項"
+              },
+              {
+                "id": "income-attribution-circular",
+                "locator": "12-1、12-2、12-5。資産の権利者・事業主・親族間の事業主判定"
+              },
+              {
+                "id": "income-trust-circular",
+                "locator": "13-1〜13-4。現在の権利・年分・収益費用・権利内容"
+              },
+              {
+                "id": "income-partnership-circular",
+                "locator": "36・37共-19、19の2、20、21。合理的分配割合・計算期間・計算方法・匿名組合との違い"
+              },
+              {
+                "id": "income-decree",
+                "locator": "52条4項。複数の受益者の権利内容に応じた帰属"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        },
+        "zr2-shotoku-attribution-o02": {
+          "explanation": [
+            "入金した口座から、所得を得た人を調べる",
+            "資産の収益は、その資産の真実の権利者を確かめる",
+            "共有財産は、入金の回数で分けない",
+            "事業では、経営方針を決める人を調べる",
+            "受益者等課税信託は、収益と費用を受益者へ帰属させる",
+            "帰属の判定を、各人の計算へつなぐ"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-attribution-e2",
+            "zr2-shotoku-attribution-e4",
+            "zr2-shotoku-attribution-e5"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-attribution-q3",
+            "zr2-shotoku-attribution-q6",
+            "zr2-shotoku-attribution-q7",
+            "zr2-shotoku-attribution-q8",
+            "zr2-shotoku-attribution-q10",
+            "zr2-shotoku-attribution-q11"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q11",
+            "zr2-shotoku-scope-review-q12",
+            "zr2-shotoku-scope-review-q14",
+            "zr2-shotoku-scope-review-q15",
+            "zr2-shotoku-scope-review-q26"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "12条、13条1〜4項"
+              },
+              {
+                "id": "income-attribution-circular",
+                "locator": "12-1、12-2、12-5。資産の権利者・事業主・親族間の事業主判定"
+              },
+              {
+                "id": "income-trust-circular",
+                "locator": "13-1〜13-4。現在の権利・年分・収益費用・権利内容"
+              },
+              {
+                "id": "income-partnership-circular",
+                "locator": "36・37共-19、19の2、20、21。合理的分配割合・計算期間・計算方法・匿名組合との違い"
+              },
+              {
+                "id": "income-decree",
+                "locator": "52条4項。複数の受益者の権利内容に応じた帰属"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
+    },
+    "zr2-shotoku-nontaxable": {
+      "contentHash": "8e5f647e1dadb8572a45968941236b5a4b7fb3958b436a847fe6971653dafbc9",
+      "lessonDataHash": "5affd5f2717921efbcbdc2c29bd836aaf4873ae22796b2f872efb8a0d04c56b1",
+      "objectives": {
+        "zr2-shotoku-nontaxable-o01": {
+          "explanation": [
+            "受取金の名前より、補償するものを確かめる",
+            "非課税所得と、控除後に税額がゼロとなる所得",
+            "心身の損害に基因する賠償金",
+            "事業で受ける賠償金は、商品・固定資産・経費に分ける",
+            "相続・個人からの贈与と、その後に生じた所得",
+            "生活に通常必要な動産の売却"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-nontaxable-e1",
+            "zr2-shotoku-nontaxable-e2",
+            "zr2-shotoku-nontaxable-e4"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-nontaxable-q1",
+            "zr2-shotoku-nontaxable-q2",
+            "zr2-shotoku-nontaxable-q3",
+            "zr2-shotoku-nontaxable-q4",
+            "zr2-shotoku-nontaxable-q6",
+            "zr2-shotoku-nontaxable-q8",
+            "zr2-shotoku-nontaxable-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q16",
+            "zr2-shotoku-scope-review-q17",
+            "zr2-shotoku-scope-review-q18"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "9条1項9・17・18号、34条、36条1項、51条1項、73条1項"
+              },
+              {
+                "id": "income-decree",
+                "locator": "25条、30条、94条。生活用動産・損害賠償金・業務の収入代替等"
+              },
+              {
+                "id": "income-damages",
+                "locator": "非課税となる賠償金等1〜3。身体傷害、商品・固定資産、経費補填、医療費の調整"
+              },
+              {
+                "id": "income-suspension-pay",
+                "locator": "課税関係1・休業手当、2・休業補償"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        },
+        "zr2-shotoku-nontaxable-o02": {
+          "explanation": [
+            "受取金の名前より、補償するものを確かめる",
+            "非課税所得と、控除後に税額がゼロとなる所得",
+            "心身の損害に基因する賠償金",
+            "事業で受ける賠償金は、商品・固定資産・経費に分ける",
+            "相続・個人からの贈与と、その後に生じた所得",
+            "生活に通常必要な動産の売却"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-nontaxable-e3"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-nontaxable-q5",
+            "zr2-shotoku-nontaxable-q6",
+            "zr2-shotoku-nontaxable-q7",
+            "zr2-shotoku-nontaxable-q9"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q19",
+            "zr2-shotoku-scope-review-q20"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "9条1項9・17・18号、34条、36条1項、51条1項、73条1項"
+              },
+              {
+                "id": "income-decree",
+                "locator": "25条、30条、94条。生活用動産・損害賠償金・業務の収入代替等"
+              },
+              {
+                "id": "income-damages",
+                "locator": "非課税となる賠償金等1〜3。身体傷害、商品・固定資産、経費補填、医療費の調整"
+              },
+              {
+                "id": "income-suspension-pay",
+                "locator": "課税関係1・休業手当、2・休業補償"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
+    },
+    "zr2-shotoku-income-map": {
+      "contentHash": "f522969aac68985d666950473e41528594681ea8e225f7b0d338167e9507fee5",
+      "lessonDataHash": "36bfb8ab27323aacc168731d443df71898eaedbd20452e25cc77be2509f157ab",
+      "objectives": {
+        "zr2-shotoku-income-map-o01": {
+          "explanation": [
+            "所得区分と課税方式を二段階で決める",
+            "十所得は、収入が生じた原因で分ける",
+            "一回の入金でも、役務の対価なら一時所得を再検討する",
+            "総合課税・申告分離・源泉分離を区別する",
+            "金融所得は、商品と選択可能な方式を確かめる",
+            "区分した後に、必要な資料を指定する"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-income-map-e1",
+            "zr2-shotoku-income-map-e2",
+            "zr2-shotoku-income-map-e3",
+            "zr2-shotoku-income-map-e4"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-income-map-q1",
+            "zr2-shotoku-income-map-q2",
+            "zr2-shotoku-income-map-q3",
+            "zr2-shotoku-income-map-q4",
+            "zr2-shotoku-income-map-q5",
+            "zr2-shotoku-income-map-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q21",
+            "zr2-shotoku-scope-review-q22",
+            "zr2-shotoku-scope-review-q23",
+            "zr2-shotoku-scope-review-q24"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "21〜23条、24条1項、26〜27条、28条1項、30条1項、32〜35条の関係規定"
+              },
+              {
+                "id": "special-law",
+                "locator": "3条1項、8条の4第1〜2項、8条の5第1〜2項、31〜32条1項、37条の12の2第1〜2項"
+              },
+              {
+                "id": "income-finance-2025-guide",
+                "locator": "印刷45頁（PDF45枚目）VII・上場株式等の配当等の課税関係。40頁の申告単位・変更に関する注意も参照"
+              },
+              {
+                "id": "income-forest",
+                "locator": "概要・計算方法。取得後5年、土地部分の区分、山林所得の特別控除等"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        },
+        "zr2-shotoku-income-map-o02": {
+          "explanation": [
+            "所得区分と課税方式を二段階で決める",
+            "十所得は、収入が生じた原因で分ける",
+            "一回の入金でも、役務の対価なら一時所得を再検討する",
+            "総合課税・申告分離・源泉分離を区別する",
+            "金融所得は、商品と選択可能な方式を確かめる",
+            "区分した後に、必要な資料を指定する"
+          ],
+          "workedExamples": [
+            "zr2-shotoku-income-map-e1",
+            "zr2-shotoku-income-map-e2",
+            "zr2-shotoku-income-map-e3",
+            "zr2-shotoku-income-map-e4"
+          ],
+          "independentPractice": [
+            "zr2-shotoku-income-map-q6",
+            "zr2-shotoku-income-map-q7",
+            "zr2-shotoku-income-map-q8",
+            "zr2-shotoku-income-map-q9",
+            "zr2-shotoku-income-map-q10"
+          ],
+          "cumulativeAssessment": [
+            "zr2-shotoku-scope-review-q24",
+            "zr2-shotoku-scope-review-q25"
+          ],
+          "factualReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root-independent-from-author; AI-assisted",
+            "sources": [
+              {
+                "id": "income-law",
+                "locator": "21〜23条、24条1項、26〜27条、28条1項、30条1項、32〜35条の関係規定"
+              },
+              {
+                "id": "special-law",
+                "locator": "3条1項、8条の4第1〜2項、8条の5第1〜2項、31〜32条1項、37条の12の2第1〜2項"
+              },
+              {
+                "id": "income-finance-2025-guide",
+                "locator": "印刷45頁（PDF45枚目）VII・上場株式等の配当等の課税関係。40頁の申告単位・変更に関する注意も参照"
+              },
+              {
+                "id": "income-forest",
+                "locator": "概要・計算方法。取得後5年、土地部分の区分、山林所得の特別控除等"
+              }
+            ]
+          },
+          "japaneseReview": {
+            "status": "reviewed",
+            "date": "2026-10-27",
+            "role": "root full-text reading plus author edit; AI-assisted",
+            "method": "natural-japaneseの4ツールと文脈確認、humanizerの定型句確認、proofread-jaの表記・助詞・数値・条件確認。専門用語と法的な否定は保持。"
+          }
+        }
+      },
+      "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
+    }
+  },
+  "assessments": {
+    "zr2-shotoku-scope-review": {
+      "status": "reviewed",
+      "assessmentDataHash": "b6481f3a4858aeb2584310769c1fb3679f7d0e56d4c2639e3e8e989778cbe27c",
+      "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
+      "date": "2026-10-27",
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "independence": "独自作問。レッスン問題の抽出はなし。用語テストは適用力の累積評価に数えない。",
+      "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
+    },
+    "zr2-shotoku-scope-glossary": {
+      "status": "reviewed",
+      "assessmentDataHash": "933d65ec25c546fd6fce4fce4087cc97c934495eb3e5864c6f563c56b42a8932",
+      "reviewRecord": "docs/zeirishi/reviews/shotoku-scope-root.md",
+      "date": "2026-10-27",
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "independence": "独自作問。レッスン問題の抽出はなし。用語テストは適用力の累積評価に数えない。",
+      "browserReviewRecord": "docs/zeirishi/reviews/first-unit-browser.md"
+    }
+  },
   "sourceChecks": {}
 }

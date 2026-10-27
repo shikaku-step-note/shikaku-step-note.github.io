@@ -104,7 +104,7 @@
   ],
   "scopeNotes": [
     "例題の休日・納期限・納期特例の有無は明示条件を用いる",
-    "徴収法15条の特殊相続・合併分割・予定納税等は後続の独立講へ接続し、本講の通常例だけで全特則を解説済みとしない",
+    "徴収法15条の特殊相続・合併分割・予定納税等は zr2-kokuzei-statutory-dates へ接続する。通常例だけで全特則を解説済みとしない",
     "2026年4月3日後の法令改正を最新ページから混入しない"
   ],
   "questions": [
@@ -766,5 +766,135 @@
       "proofreadJa": "助詞・主語・条番号・全角半角・附帯税・差押え/差押し等の表記を確認。独立校正はpending"
     },
     "teachingCharactersExcludingSourceSection": 5033
-  }
+  },
+  "continuationCoverage": [
+    {
+      "competency": "予定納税・相続・合併分割等を含む法定納期限等の特則",
+      "plannedLessonIds": [
+        "zr2-kokuzei-statutory-dates"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "送達・公示送達・郵送電子提出の効力と期限",
+      "plannedLessonIds": [
+        "zr2-kokuzei-service-notices"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "特殊起算と時効の不進行",
+      "plannedLessonIds": [
+        "zr2-kokuzei-limitations-special-start"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "修正更正・源泉等の延滞税期間特例",
+      "plannedLessonIds": [
+        "zr2-kokuzei-late-tax",
+        "zr2-kokuzei-late-tax-complex"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    }
+  ],
+  "draftObjectiveDetails": [
+    {
+      "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-1",
+      "draftObjectiveIndex": 1,
+      "draftObjective": "主要税目の納税義務成立時点と申告・賦課・自動確定を区別する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o1"
+      ],
+      "plannedObjectives": [
+        "税目別の成立・確定と納付期限を時系列に置く"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-tax-timeline-q1",
+        "zr2-kokuzei-tax-timeline-q2",
+        "zr2-kokuzei-tax-timeline-q10",
+        "zr2-kokuzei-tax-timeline-q12"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-2",
+      "draftObjectiveIndex": 2,
+      "draftObjective": "期限内・期限後・修正申告、更正決定、納税告知ごとに確定と納付すべき日を特定する",
+      "plannedObjectiveIndexes": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o1",
+        "zr2-kokuzei-tax-timeline-o2"
+      ],
+      "plannedObjectives": [
+        "税目別の成立・確定と納付期限を時系列に置く",
+        "修正申告・更正・期限延長で動く日を説明する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-tax-timeline-q2",
+        "zr2-kokuzei-tax-timeline-q3",
+        "zr2-kokuzei-tax-timeline-q4",
+        "zr2-kokuzei-tax-timeline-q5",
+        "zr2-kokuzei-tax-timeline-q10",
+        "zr2-kokuzei-tax-timeline-q11"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-3",
+      "draftObjectiveIndex": 3,
+      "draftObjective": "法定納期限・現実の納期限・法定納期限等を税額別に区分する",
+      "plannedObjectiveIndexes": [
+        1,
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o1",
+        "zr2-kokuzei-tax-timeline-o2"
+      ],
+      "plannedObjectives": [
+        "税目別の成立・確定と納付期限を時系列に置く",
+        "修正申告・更正・期限延長で動く日を説明する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-tax-timeline-q5",
+        "zr2-kokuzei-tax-timeline-q6",
+        "zr2-kokuzei-tax-timeline-q7",
+        "zr2-kokuzei-tax-timeline-q11",
+        "zr2-kokuzei-tax-timeline-q13"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-tax-timeline-subskill-4",
+      "draftObjectiveIndex": 4,
+      "draftObjective": "初日・暦月・休日等の規定と設問条件に従い期間を計算し年表を作る",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-tax-timeline-o2"
+      ],
+      "plannedObjectives": [
+        "修正申告・更正・期限延長で動く日を説明する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-tax-timeline-q4",
+        "zr2-kokuzei-tax-timeline-q8",
+        "zr2-kokuzei-tax-timeline-q9",
+        "zr2-kokuzei-tax-timeline-q11"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    }
+  ]
 }

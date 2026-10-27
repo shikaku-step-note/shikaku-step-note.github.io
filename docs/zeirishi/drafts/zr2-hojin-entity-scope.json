@@ -1,0 +1,452 @@
+{
+  "id": "zr2-hojin-entity-scope",
+  "subject": "hojin",
+  "title": "法人の区分・収益事業から課税範囲を決める",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-hojin-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "普通/公益/人格なき社団/外国を区分する",
+    "収益事業と課税範囲を判定する"
+  ],
+  "objectiveIds": [
+    "zr2-hojin-entity-scope-o01",
+    "zr2-hojin-entity-scope-o02"
+  ],
+  "prerequisites": [
+    "zr-hojin-adjustment"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "corporate-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2〜8条、該当別表",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "location": "3条の非営利型二類型全項、5条34業種/各除外と2項。MainProvision本文確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-rules",
+      "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+      "location": "2の2第1項の特殊関係理事",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-foreign-scope",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "138条1項、141条、4条4項、4の3条を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    }
+  ],
+  "sourceUncertainties": [
+    "本文は各事業年度の所得の課税範囲を中心とする。区分経理・法人区分変更時の税務簿価・みなし寄附金・個別業種の省令要件は指定した後続教材で実演する。全範囲完了とは扱わない。",
+    "金額は配賦済みである場合や税務上の所得金額として計算済みである場合を明記。租税条約・外国税額控除・国際最低課税・年金積立金課税を通常の所得拾い出しへ混在させない。"
+  ],
+  "glossary": [
+    {
+      "term": "内国法人",
+      "definition": "国内に本店または主たる事務所を有する法人"
+    },
+    {
+      "term": "外国法人",
+      "definition": "内国法人以外の法人"
+    },
+    {
+      "term": "普通法人",
+      "definition": "公共法人・公益法人等・協同組合等以外の法人。人格のない社団等は別区分で扱う"
+    },
+    {
+      "term": "非営利型法人",
+      "definition": "施行令3条の二類型のいずれかの全要件に該当する一般社団法人・一般財団法人"
+    },
+    {
+      "term": "収益事業",
+      "definition": "政令所定の事業を継続して事業場を設けて行うもの。個別の除外も確認する"
+    },
+    {
+      "term": "人格のない社団等",
+      "definition": "法人でない社団または財団で、代表者または管理人の定めのあるもの"
+    },
+    {
+      "term": "恒久的施設",
+      "definition": "支店等の一定の事業拠点等。外国法人の課税範囲ではPE帰属所得と他の国内源泉所得を区分する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-hojin-entity-scope-e1",
+      "section": "例題1：同じ海外取引でも、法人の区分は違う",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "domesticCorporationIncome": 10600000,
+        "foreignPEIncome": 2100000
+      }
+    },
+    {
+      "id": "zr2-hojin-entity-scope-e2",
+      "section": "例題2：理事の境界と、課税対象に入る収支",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "relatedDirectors": 2,
+        "allDirectors": 6,
+        "nonprofitIncome": 1100000,
+        "ordinaryIncome": 1900000
+      }
+    },
+    {
+      "id": "zr2-hojin-entity-scope-e3",
+      "section": "例題3：公益目的への使途と、公益目的事業の認定",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "publicPurposeExcludedIncome": 700000,
+        "taxableRevenueIncome": 1400000
+      }
+    },
+    {
+      "id": "zr2-hojin-entity-scope-e4",
+      "section": "例題4：団体の会費と、継続する受託業務",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "taxableIncome": 500000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "外国資本70％の株式会社Aは、日本に本店、国外に支店を有する。会社Bは外国に本店、日本に支店を有する。内国・外国の区分の組合せを選んでください。受託法人等の特則はない。",
+      "options": [
+        "AもBも外国法人",
+        "Aは内国法人、Bは外国法人",
+        "AもBも内国法人",
+        "Aは外国法人、Bは内国法人"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "区分は本店または主たる事務所で判定します。Aの外国資本比率、Bの日本支店という情報だけで本店の所在を入れ替えません。",
+      "id": "zr2-hojin-entity-scope-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "国内の一般社団法人Cは、理事9人中、理事本人と配偶者・子の計3人が関係理事で、他の理事には特殊関係がない。剰余金不分配の定款条項もある。これだけで非営利性が徹底された非営利型法人と断定できるか、理事割合の結論と不足する二種類の確認を説明してください。共益型は検討しない。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "理事割合は3/9＝1/3で要件を満たす。しかし、解散時の残余財産の帰属先を法定の相手にする定款の定めと、不分配・残余財産の定めに反する行為や特別利益の供与がないことを確認できていないため、非営利型と断定できない。",
+      "rubric": [
+        {
+          "criterion": "本人を含む3/9が1/3以下と判定する",
+          "points": 1
+        },
+        {
+          "criterion": "残余財産の定款による帰属先の確認を挙げる",
+          "points": 1
+        },
+        {
+          "criterion": "反する行為・特別利益の供与の確認を挙げ、現資料だけの断定を避ける",
+          "points": 2
+        }
+      ],
+      "explanation": "理事割合と剰余金条項は要件の一部です。非営利型の認定は、全部の要件の確認がそろって初めてできます。",
+      "id": "zr2-hojin-entity-scope-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "法人税法別表第一の公共法人である地方公共団体Dが、継続的な販売活動で黒字を得た。各事業年度の所得に対する法人税の説明を選んでください。",
+      "options": [
+        "34業種に当たれば公共法人にも通常の法人税がかかる",
+        "黒字を翌年使えばその年だけ免税される",
+        "公共法人は法人税法4条2項により納税義務がない",
+        "販売部門を自動的に別の普通法人とする"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "公共法人の納税義務の規定を先に適用します。公益法人等の収益事業課税を公共法人へそのまま移すことも、部門の独立法人化を仮定することもできません。",
+      "id": "zr2-hojin-entity-scope-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "Eは別表第三の協同組合等、Fは内国公益法人等である。両者とも収益事業以外の活動から正の所得を得た。他の個別特例はない。課税範囲について適切な説明を選んでください。",
+      "options": [
+        "EもFも収益事業以外は一律に対象外",
+        "Eは各事業年度の所得を計算し、Fの非収益事業所得は法6条の対象外",
+        "Eだけは全所得が当然に非課税",
+        "Fは全所得を計算し、Eのみ収益事業課税"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "協同組合等の税率等の特則と、公益法人等の非収益事業所得を課さない規定は別です。区分の名称にある公益性や協同性から範囲を推測しません。",
+      "id": "zr2-hojin-entity-scope-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "内国公益法人等Gは、同じ年度に、除外事由のない継続的な物品販売業の収入720万円・配賦済費用790万円と、除外事由のない不動産貸付業の収入600万円・配賦済費用440万円を有する。一般活動の正味収支は100万円で、収益事業と無関係である。他の調整・特例はない。収益事業全体の所得を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "900000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "販売業は720−790＝△70万円、貸付業は600−440＝160万円。同一主体の同一事業年度の収益事業の所得として△70＋160＝90万円です。赤字の事業だけを収益事業から外す処理や、一般活動100万円の加算はしません。",
+      "id": "zr2-hojin-entity-scope-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "公益財団法人Hの常設の有料音楽教室は法定の公益目的事業に該当する。別の常設売店の菓子販売は該当せず、他の除外もない。両方の剰余金を公益活動へ使う。両活動の収益事業該当性と、使途だけでは同じ扱いにできない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "音楽教授は列挙業種を検討するが、公益財団法人が行う法定の公益目的事業なので施行令5条2項の除外を適用する。菓子販売は物品販売業であり、継続・事業場もあるため収益事業となる。使途が公益目的というだけでは、販売自体が公益目的事業に当たる要件を代替できない。",
+      "rubric": [
+        {
+          "criterion": "音楽教室の公益目的事業による除外を示す",
+          "points": 2
+        },
+        {
+          "criterion": "売店を収益事業とし、列挙・継続・事業場に当てはめる",
+          "points": 2
+        },
+        {
+          "criterion": "剰余金の使途と活動自体の法定区分を分ける",
+          "points": 1
+        }
+      ],
+      "explanation": "資金の支出先と、所得が生じた活動の課税区分を分けます。みなし寄附金等の有無・限度は、別途その要件を満たす場合に計算します。",
+      "id": "zr2-hojin-entity-scope-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "公益法人等Iの製造業には常時8人が従事し、そのうち施行令5条2項2号所定の対象者が4人いる。その事業は対象者の生活の保護に寄与することも確定し、他に問題はない。この除外について正しいものはどれですか。",
+      "options": [
+        "4/8は半数以上なので、当該除外の人数条件を満たす",
+        "半数を超えていないので人数条件を満たさない",
+        "一人でも対象者がいれば、生活保護への寄与を問わず除外される",
+        "製造業は列挙業種なので同項の除外を一切使えない"
+      ],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "条件は半数以上であり、ちょうど半数も含みます。対象者であることと生活の保護への寄与の両方を条件にしています。列挙業種でも共通の除外規定を確認します。",
+      "id": "zr2-hojin-entity-scope-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "外国法人Jは日本に恒久的施設を持たないが、日本国内の建物を継続して貸し付けている。建物賃料は法138条1項5号の国内源泉所得に該当し、条約等の特例はない。適切な説明を選んでください。",
+      "options": [
+        "恒久的施設がないため法人税の対象には一切ならない",
+        "国内建物の貸付けによる国内源泉所得について法人税の課税範囲を検討する",
+        "賃料を外国口座へ受ければ当然に国内源泉所得から外れる",
+        "外国法人は個人と同じ十所得だけで法人税を計算する"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "恒久的施設を有しない外国法人でも、法141条2号により138条1項2〜6号の所得が対象となります。支払口座や個人の所得区分で置き換えることはできません。",
+      "id": "zr2-hojin-entity-scope-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "人格のない社団等Kの入金は会費という名称だが、契約上、会員の帳簿入力業務を反復して提供する対価である。常設事務所があり、収益事業の個別除外はない。正しい検討を選んでください。",
+      "options": [
+        "名称が会費なので課税範囲外と確定する",
+        "会員向けなので34業種を確認する必要がない",
+        "請負業等の該当性を契約・実態から調べ、継続・事業場・除外も確認する",
+        "入金した代表者個人の給与所得とする"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "例題の一般会費は対価性がなく収益事業とも無関係という条件でした。本問は事務処理の対価です。会費という会計上の名称や会員向けであることだけで範囲外にはしません。",
+      "id": "zr2-hojin-entity-scope-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    },
+    {
+      "prompt": "任意団体Lについて、代表者名義の通帳に講座代金が入ったという情報だけがある。法人税の課税範囲を判定するために必要な資料を二種類以上挙げ、主体と活動をどの順で確認するか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "規約・代表者選任記録等から人格のない社団等に当たる主体かを確認する。次に契約・講座内容・開催記録・会場使用資料等から、所定業種への該当、継続・事業場、個別および共通除外を確かめる。その後、収入と費用の区分資料で対象所得を計算する。代表者口座への入金だけでは主体も収益事業も確定できない。",
+      "rubric": [
+        {
+          "criterion": "規約や代表者等の主体判定資料を挙げる",
+          "points": 1
+        },
+        {
+          "criterion": "契約/活動内容/継続・会場等の活動資料を挙げる",
+          "points": 1
+        },
+        {
+          "criterion": "主体→業種・継続・事業場・除外→収支という検討順序を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "設問は資料と順序を問うため、架空の講座種別や金額を補って結論を断定しません。名義、主体、活動、所得の順に不足情報を明らかにします。",
+      "id": "zr2-hojin-entity-scope-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "一般社団法人の全要件・各業種例外・区分経理",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-nonprofit-qualification",
+          "title": "非営利型二類型の全要件と理事関係",
+          "objectiveIds": [
+            "zr2-hojin-nonprofit-qualification-o01",
+            "zr2-hojin-nonprofit-qualification-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-revenue-business-boundaries",
+          "title": "収益事業34業種と個別・共通除外",
+          "objectiveIds": [
+            "zr2-hojin-revenue-business-boundaries-o01",
+            "zr2-hojin-revenue-business-boundaries-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-nonprofit-segregation",
+          "title": "収益事業の区分経理・共通費・みなし寄附金",
+          "objectiveIds": [
+            "zr2-hojin-nonprofit-segregation-o01",
+            "zr2-hojin-nonprofit-segregation-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-nonprofit-transitions",
+          "title": "法人区分移行・収益事業開始廃止と累積所得",
+          "objectiveIds": [
+            "zr2-hojin-nonprofit-transitions-o01",
+            "zr2-hojin-nonprofit-transitions-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "外国法人・国内源泉・PE",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-foreign-branch",
+          "title": "外国法人・PE・国外支店損益",
+          "objectiveIds": [
+            "zr2-hojin-foreign-branch-o01",
+            "zr2-hojin-foreign-branch-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "法人課税信託・年金・最低課税",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-corporation-tax-trust",
+          "title": "法人課税信託・受託法人・受益者等課税の境界",
+          "objectiveIds": [
+            "zr2-hojin-corporation-tax-trust-o01",
+            "zr2-hojin-corporation-tax-trust-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-pension-funds",
+          "title": "退職年金等積立金課税と適用停止の確認",
+          "objectiveIds": [
+            "zr2-hojin-pension-funds-o01",
+            "zr2-hojin-pension-funds-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-minimum-tax-iir",
+          "title": "国際最低課税の対象とIIR",
+          "objectiveIds": [
+            "zr2-hojin-minimum-tax-iir-o01",
+            "zr2-hojin-minimum-tax-iir-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-minimum-tax-other",
+          "title": "UTPR・国内最低課税・報告",
+          "objectiveIds": [
+            "zr2-hojin-minimum-tax-other-o01",
+            "zr2-hojin-minimum-tax-other-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ],
+  "selfReview": {
+    "role": "author-self-check",
+    "status": "pending-independent-review",
+    "reviewedOn": "2026-10-27",
+    "arithmetic": "全例題/設問を数値と年度条件から再計算。税額連動の仮定値は本文/設問で明示し実税率由来と主張しない。",
+    "rubricAlignment": "全記述問の要求（数値/理由/資料/照合）と各採点基準を照合済み。要求外の追加知識へ配点しない。",
+    "japanese": "本文全文を文脈確認しlint/outline/terms/calquesを実行。否定反復・登記簿/株主名簿の用語・資本金/資本金等の額を修正。残る法定条件の否定と統計警告は確認して保持。",
+    "schema": "ID重複・目標参照・配点合計・後続IDの解決を確認。独立レビューはpending。"
+  }
+}

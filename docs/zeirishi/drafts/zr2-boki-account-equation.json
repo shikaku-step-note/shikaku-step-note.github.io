@@ -3,7 +3,7 @@
   "subject": "boki",
   "title": "取引の二面性から仕訳と利益を求める",
   "stage": "基礎",
-  "moduleId": "boki-records",
+  "moduleId": "zr2-boki-unit-records",
   "minutes": 100,
   "objectives": [
     "取引を資産・負債・純資産・収益・費用の増減に分ける",
@@ -61,7 +61,13 @@
         "liabilities": 930000,
         "profit": 180000,
         "equity": 1380000
-      }
+      },
+      "objectives": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "id": "zr2-boki-account-equation-ex2",
@@ -72,7 +78,12 @@
         "liabilities": 400000,
         "equity": 800000,
         "profit": 0
-      }
+      },
+      "objectives": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "id": "zr2-boki-account-equation-ex3",
@@ -81,12 +92,20 @@
         "profit": 320000,
         "cash": 1030000,
         "cashIncrease": 530000
-      }
+      },
+      "objectives": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "id": "zr2-boki-account-equation-ex4",
       "section": "例題4：純資産の変化から利益を逆算する",
-      "result": 250000
+      "result": 250000,
+      "objectives": [
+        4
+      ]
     }
   ],
   "questions": [

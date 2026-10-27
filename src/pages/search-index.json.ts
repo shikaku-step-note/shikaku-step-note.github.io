@@ -2,6 +2,7 @@ import { getCollection } from 'astro:content';
 import { qualifications } from '../data/qualifications';
 import { href } from '../lib/site';
 import { zeirishiSubjects } from '../data/zeirishi';
+import { zeirishiDeepUnits } from '../data/zeirishi-expanded';
 import { allAssessments } from '../data/assessments';
 export async function GET() {
   const lessons = await getCollection('lessons');
@@ -39,6 +40,17 @@ export async function GET() {
         unit: l.data.unit,
         url: href(`qualifications/${l.data.qualification}/${l.data.stableId}/`),
         keywords: [...l.data.keywords, qualifications.find((q) => q.id === l.data.qualification)!.name],
+      })),
+      ...zeirishiDeepUnits.map((unit) => ({
+        id: unit.id,
+        title: unit.title,
+        description: unit.description,
+        qualification: 'zeirishi',
+        subject: unit.subject,
+        unit: unit.number,
+        kind: '学習ユニット',
+        url: href(`qualifications/zeirishi/units/${unit.id}/`),
+        keywords: ['税理士', zeirishiSubjects.find((subject) => subject.id === unit.subject)!.name, unit.title],
       })),
       ...allAssessments(lessons).map((a) => ({
         id: a.id,

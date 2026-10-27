@@ -3,7 +3,7 @@
   "subject": "boki",
   "title": "損益・残高勘定を締め切り翌期へつなぐ",
   "stage": "標準",
-  "moduleId": "boki-records",
+  "moduleId": "zr2-boki-unit-records",
   "minutes": 120,
   "objectives": [
     "決算整理・損益集計・帳簿締切の段階を区別する",
@@ -68,7 +68,12 @@
         "retained": 150000,
         "closingBoth": 1380000,
         "netAssetsTotal": 1320000
-      }
+      },
+      "objectives": [
+        1,
+        2,
+        3
+      ]
     },
     {
       "id": "zr2-boki-closing-accounts-ex2",
@@ -76,7 +81,11 @@
       "result": {
         "loss": 60000,
         "retainedDebit": 30000
-      }
+      },
+      "objectives": [
+        2,
+        3
+      ]
     },
     {
       "id": "zr2-boki-closing-accounts-ex3",
@@ -85,7 +94,10 @@
         "currentWages": 56000,
         "cashPaid": 80000,
         "accrualAfterPay": 0
-      }
+      },
+      "objectives": [
+        4
+      ]
     },
     {
       "id": "zr2-boki-closing-accounts-ex4",
@@ -95,7 +107,10 @@
         "closingBoth": 860000,
         "netTotal": 820000,
         "profitConditional": 20000
-      }
+      },
+      "objectives": [
+        3
+      ]
     }
   ],
   "questions": [

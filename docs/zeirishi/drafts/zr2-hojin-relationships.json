@@ -1,0 +1,525 @@
+{
+  "id": "zr2-hojin-relationships",
+  "subject": "hojin",
+  "title": "同族・支配・完全支配と中小判定を使い分ける",
+  "stage": "応用",
+  "moduleId": "zr2-hojin-unit-scope",
+  "minutes": 120,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "株主親族/議決権関係を判定する",
+    "制度別の中小法人等の除外を説明する"
+  ],
+  "objectiveIds": [
+    "zr2-hojin-relationships-o01",
+    "zr2-hojin-relationships-o02"
+  ],
+  "prerequisites": [
+    "zr2-hojin-schedule-four-five"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "corporate-relationship-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2条10号/12の7の5号/12の7の6号、66条2/5項、25の2条の法人による完全支配という要件",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-relationship-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "location": "4条の特殊関係/議決権等、4の2条全項の直接/間接/持株組合等5％未満除外",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "special-sme-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "location": "42の3の2全条、42の4第19項7/8号",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "special-sme-decree",
+      "url": "https://laws.e-gov.go.jp/law/332CO0000000043_20260401_508CO0000000098",
+      "location": "27の4第17〜19項。大規模法人/所有割合/基準年度平均の調整",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-sme-guidance",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-01.pdf",
+      "location": "全3頁:中小法人、2025年4月以後開始17％、適用除外事業者",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表資料"
+    },
+    {
+      "id": "corporate-sme-measures-guidance",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-66.pdf",
+      "location": "中小企業者の大規模法人/持分判定と制度別条件",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表資料"
+    }
+  ],
+  "sourceUncertainties": [
+    "本講の措置法中小企業者は研究開発税制等に用いる基本判定。投資/賃上げ/少額資産等の制度固有の規模/従業員/期間条件を全て同一にしない。後続に明示した各制度で追加判定する。",
+    "間接保有の例は株式数による原則の関係。議決権/社員基準の複雑な親族法人連鎖、通算完全支配等は対応する後続教材へ進める。",
+    "軽減税率の17％区分は2025年4月1日以後開始年度という適用日を別に確認。基準日後の現行Webの将来数値から採用していない。"
+  ],
+  "glossary": [
+    {
+      "term": "同族会社",
+      "definition": "三つ以下の株主等グループによる50％超の保有等の法定条件に該当する会社"
+    },
+    {
+      "term": "支配関係",
+      "definition": "一の者による直接・間接の50％超保有の関係等。特殊関係個人や所定のみなし保有を確認する"
+    },
+    {
+      "term": "完全支配関係",
+      "definition": "一の者による直接・間接の全部保有の関係等。対象株式の除外と共通支配の範囲も確認する"
+    },
+    {
+      "term": "自己株式",
+      "definition": "会社が保有する自社の株式。持分判定では分母等から除く規定を確認する"
+    },
+    {
+      "term": "大法人",
+      "definition": "軽減税率の除外等で使う資本金5億円以上の法人等の区分。制度により該当条文を確認する"
+    },
+    {
+      "term": "大規模法人",
+      "definition": "措置法の中小企業者判定で使う資本金1億円超の法人等の区分。所定の子法人等を含み、大法人と範囲が違う"
+    },
+    {
+      "term": "適用除外事業者",
+      "definition": "基準年度の平均所得の年換算が15億円を超える等、法定の条件により所定の中小企業向け特例から除かれる法人"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-hojin-relationships-e1",
+      "section": "例題1：自己株式と親族を整理する",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "denominator": 1000,
+        "aGroupShares": 400,
+        "aGroupPercentage": 40,
+        "topThreeGroups": 840,
+        "topThreePercentage": 84,
+        "closelyHeld": true,
+        "aControl": false
+      }
+    },
+    {
+      "id": "zr2-hojin-relationships-e2",
+      "section": "例題2：60％の連鎖と、経済持分36％",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "directShare": 0.6,
+        "economicProduct": 0.36,
+        "indirectControl": true
+      }
+    },
+    {
+      "id": "zr2-hojin-relationships-e3",
+      "section": "例題3：100％の連鎖と、5％未満の境界",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "employeeShare": 0.02,
+        "fullyControlled": true,
+        "exactFivePercentExcluded": false
+      }
+    },
+    {
+      "id": "zr2-hojin-relationships-e4",
+      "section": "例題4：50％保有と、平均所得15億円の境界",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "ordinarySmeEntrance": true,
+        "specialSme": false,
+        "averageIncome": 1500000000,
+        "excludedAtExactBoundary": false,
+        "modifiedAverage": 1510000000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "会社Aの発行済株式2,000株のうち500株は自己株式。個人Pが500株、配偶者Qが300株を持ち、他の株主は特殊関係のない個人である。P・Qグループの保有だけを根拠にした同族会社/支配関係の説明を選んでください。議決権等の別条件はない。",
+      "options": [
+        "800/2,000＝40％なので両方の条件を満たさない",
+        "800/1,500は50％超で、同族会社の持株基準とPを起点とする支配関係を検討できる",
+        "配偶者は常に別人として合計しない",
+        "自己株式もPのものとみなして1,300株にする"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "分母は2,000−500＝1,500株、関係個人を合わせた800株が50％を超えます。同族判定だけでなく、Pと特殊関係個人を合わせる支配関係の定義にも当てはめます。",
+      "id": "zr2-hojin-relationships-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "会社Bの株式等の40％を個人Rとその特殊関係者が保有するが、所定の種類の議決権の60％はこのグループが行使できる。関係法人等を通じた他の株式保有はない。株数の持分だけで同族会社にも該当しないとした解答の見直しとして適切なものはどれですか。",
+      "options": [
+        "議決権等による同族会社の基準も確認する",
+        "株数が40％なら議決権に関係なく同族会社から外れる",
+        "議決権60％なら株式数も法律上必ず60％に変わる",
+        "議決権だけで全株保有の完全支配関係まで当然に認める"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "同族会社には所定の議決権等の判定があります。株数、議決権、全部保有はそれぞれの要件へ当てはめ、一つの割合で置き換えません。",
+      "id": "zr2-hojin-relationships-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "個人Sは会社Cを60％、会社Dを直接15％保有し、CはDを40％保有する。関係者・他の保有経路等はない。SとDの支配関係を、取り込む株式の割合を示して説明してください。単純な経済持分の積との違いも述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "SとCには直接支配関係があるため、SのD直接15％とCのD保有40％を合わせた55％を用いるみなし保有の規定を確認する。55％は50％超で、SとDに支配関係がある。60％×40％＋15％＝39％という経済持分の積で結論を出すものではない。",
+      "rubric": [
+        {
+          "criterion": "CがSの直接支配下とする",
+          "points": 1
+        },
+        {
+          "criterion": "Dの15＋40＝55％を用い支配関係ありとする",
+          "points": 2
+        },
+        {
+          "criterion": "経済持分39％との判定方法の違いを説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "支配する法人の持分を取り込む順序を示します。割合を掛けただけでは、施行令4の2の規定を適用したことになりません。",
+      "id": "zr2-hojin-relationships-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "自己株式控除後1,000株の会社Eで、親法人Tが951株、残る49株は施行令4の2第2項1号の全条件を満たす従業員持株組合の対象株式である。他の対象株式等はない。正しい判定を選んでください。",
+      "options": [
+        "49/1,000＝4.9％なので所定の除外を用いてTの全部保有を判定する",
+        "49/951を計算して5％を超えるため除外不可",
+        "従業員組合が1株でも持てば除外不可",
+        "5％以下なら全ての株主の株式を除いてよい"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "最初の除外割合は自己株式控除後1,000株に対する49株です。5％未満であり、対象株式を除いた951株の全部をTが持ちます。",
+      "id": "zr2-hojin-relationships-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "会社Fは親法人U98％、使用人個人V2％の保有である。Vは第三者から通常の売買で取得し、所定の持株組合保有でも新株予約権等の行使取得でもない。他の経路・特殊関係はない。完全支配判定の説明を選んでください。",
+      "options": [
+        "使用人の株は全て除くため100％扱い",
+        "2％は5％未満なので取得方法を問わず除く",
+        "2％でも除外対象の取得・保有条件を満たさず、この除外で全部保有とはできない",
+        "役職名が使用人ならVをUと同一法人にする"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "割合の小ささだけで除外対象になるわけではありません。例題で条件を満たすとした組合の株式と、本問の通常取得を区別します。",
+      "id": "zr2-hojin-relationships-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "個人Wが会社GとHの全株式を直接保有する。G・Hの完全支配関係を認めた担当者が、法人による完全支配関係を要件とする受贈益特例も当然に適用できると述べた。関係の定義と個別制度を分けて、この断定を訂正してください。特例の金額計算は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "GとHは同じ一の者Wによる全部保有という完全支配関係の範囲を確認できる。しかしWは個人であり、法人による完全支配関係を要件とする制度を、完全支配関係があるというだけで適用できるとは断定できない。個別制度の要件を別に満たす必要がある。",
+      "rubric": [
+        {
+          "criterion": "同じ個人による全部保有の関係を確認する",
+          "points": 1
+        },
+        {
+          "criterion": "法人によるという個別要件とWが個人という事実を分ける",
+          "points": 2
+        }
+      ],
+      "explanation": "関係の定義は入口であり、各制度の適用条件を代替しません。具体的なグループ寄附・受贈益の計算は後続の対応教材で扱います。",
+      "id": "zr2-hojin-relationships-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "会社Iの期末資本金は8,000万円、資本準備金も8,000万円。法人税法66条の他の除外事由には該当しない。入口の資本金基準について正しいものはどれですか。",
+      "options": [
+        "準備金と合計して1億6,000万円なので必ず基準超過",
+        "税務上の資本金等の額だけで必ず判断する",
+        "資本金8,000万円という所定の金額基準を確認し、準備金との合計だけで1億円超としない",
+        "売上が1億円以下であれば資本金を問わない"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "法定の資本金または出資金の額と、別表五（一）の資本金等の額を区別します。各制度の中小判定を一つの貸借対照表の合計で置き換えません。",
+      "id": "zr2-hojin-relationships-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "普通法人Jの期末資本金は3,000万円。資本金ちょうど5億円の普通法人Kが全株式を保有し、他の特則はない。法66条の普通法人の中小軽減の除外について選んでください。",
+      "options": [
+        "Jが1億円以下なので親法人の条件は無関係",
+        "Kは5億円を超えていないので大法人ではない",
+        "5億円以上にはちょうど5億円も含まれ、Kによる完全支配の除外を確認する",
+        "Kが保有するのは50％超なので完全支配にはならない"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "大法人の入口は5億円以上です。Jの自己資本金だけで軽減対象とせず、親法人と全部保有を照合します。",
+      "id": "zr2-hojin-relationships-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "研究開発税制等の基本的な中小企業者判定を行う。会社Lの資本金は2,000万円。いずれも大規模法人と確認済みのMが40％、Nが27％を所有し、残りは独立個人。通算その他の特則はない。正しい説明を選んでください。",
+      "options": [
+        "各社50％未満なので他の基準は不要",
+        "大規模法人の合計67％は3分の2以上であり、複数保有の除外に該当する",
+        "3分の2は70％なので除外に該当しない",
+        "MとNが親族でなければ大規模法人の合計は使えない"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "40＋27＝67％で、2/3＝約66.67％を上回ります。同一大規模法人の1/2以上だけでなく、複数による2/3以上を調べます。",
+      "id": "zr2-hojin-relationships-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "判定年度開始日前3年以内に終了した基準年度が四つあり、各月数12・12・6・12、所得は順に16億・16億・8億・16億円。設立から十分な期間が経過し、調整事由はない。適用除外事業者判定用の年換算平均所得と、15億円超の条件に該当するかを式で説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "所得合計56億円、月数42月なので56÷42×12＝16億円。15億円を超えるため当該条件に該当する。四年度の単純平均56÷4＝14億円では、短期年度の月数の違いを反映できない。",
+      "rubric": [
+        {
+          "criterion": "56億円・42月を集計する",
+          "points": 1
+        },
+        {
+          "criterion": "年換算56/42×12＝16億円を示す",
+          "points": 2
+        },
+        {
+          "criterion": "15億円超に該当とする",
+          "points": 1
+        }
+      ],
+      "explanation": "3年以内に終了した各年度を対象とするため、全て12月の三年度だけになるとは限りません。開始前3年以内という対象範囲と、実際の合計月数を分けます。",
+      "id": "zr2-hojin-relationships-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "法人Oは資本金6億円の大法人の完全支配下にある普通法人で、O自身の資本金は1,000万円である。Oが別会社Pの50％を持つ。措置法の中小企業者判定におけるOの説明を選んでください。両社の他の特則はない。",
+      "options": [
+        "O自身が1億円以下なら必ず大規模法人でない",
+        "所定の大法人の完全支配下の法人も大規模法人の範囲に含まれ、Pの判定に使う",
+        "大法人と大規模法人は全く同じ定義なのでOの親は無視する",
+        "Pの資本金をOの資本金に足して判定する"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "大規模法人には、自己資本金1億円超の入口に加えて、所定の大法人の支配下等の法人も含まれます。小資本金の中間法人を挟んだだけで条件を外せるとはしません。",
+      "id": "zr2-hojin-relationships-q11",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    },
+    {
+      "prompt": "2025年4月1日開始の12か月事業年度で、中小普通法人が措法42の3の2の対象となり、適用除外事業者等でない。当期の所得は年10億円を超える。年800万円以下の軽減部分の税率区分を、当該開始年度以後の規定に照らして選んでください。通算法人ではない。",
+      "options": [
+        "所得にかかわらず常に15％",
+        "所定の17％の区分を確認する",
+        "年800万円以下の部分も全て当然に23.2％",
+        "資本金が少ないので法人税率は0％"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "2025年4月1日以後開始年度では、年10億円超の所得の場合の17％の区分があります。自社の資本金による判定だけで15％と固定しません。",
+      "id": "zr2-hojin-relationships-q12",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "同族/特定同族・役員・支配期間の個別条件",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-retained-earnings",
+          "title": "特定同族会社の留保金課税",
+          "objectiveIds": [
+            "zr2-hojin-retained-earnings-o01",
+            "zr2-hojin-retained-earnings-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-officer-status",
+          "title": "みなし役員・使用人兼務・特殊関係",
+          "objectiveIds": [
+            "zr2-hojin-officer-status-o01",
+            "zr2-hojin-officer-status-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-loss-control",
+          "title": "支配関係変更と欠損/資産損失制限",
+          "objectiveIds": [
+            "zr2-hojin-loss-control-o01",
+            "zr2-hojin-loss-control-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-reorg-qualified",
+          "title": "合併・分割の適格要件",
+          "objectiveIds": [
+            "zr2-hojin-reorg-qualified-o01",
+            "zr2-hojin-reorg-qualified-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "制度別中小・平均所得の再編/短期/通算調整",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-sme-eligibility-integrated",
+          "title": "制度別中小判定・平均所得・再編通算の特例",
+          "objectiveIds": [
+            "zr2-hojin-sme-eligibility-integrated-o01",
+            "zr2-hojin-sme-eligibility-integrated-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-rates-credit-order",
+          "title": "法人区分・短期税率・所得税額控除",
+          "objectiveIds": [
+            "zr2-hojin-rates-credit-order-o01",
+            "zr2-hojin-rates-credit-order-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-investment-rd",
+          "title": "投資・研究開発・特別償却の選択",
+          "objectiveIds": [
+            "zr2-hojin-investment-rd-o01",
+            "zr2-hojin-investment-rd-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-small-assets",
+          "title": "少額・一括償却・特別償却",
+          "objectiveIds": [
+            "zr2-hojin-small-assets-o01",
+            "zr2-hojin-small-assets-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-wage-credit",
+          "title": "賃上げ促進税制",
+          "objectiveIds": [
+            "zr2-hojin-wage-credit-o01",
+            "zr2-hojin-wage-credit-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "法人による完全支配の寄附等・通算との違い",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-group-donation",
+          "title": "グループ寄附・受贈益・株式簿価",
+          "objectiveIds": [
+            "zr2-hojin-group-donation-o01",
+            "zr2-hojin-group-donation-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-group-transfers",
+          "title": "完全支配法人間の資産譲渡損益",
+          "objectiveIds": [
+            "zr2-hojin-group-transfers-o01",
+            "zr2-hojin-group-transfers-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-group-joining",
+          "title": "通算制度の適用・加入離脱",
+          "objectiveIds": [
+            "zr2-hojin-group-joining-o01",
+            "zr2-hojin-group-joining-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ],
+  "selfReview": {
+    "role": "author-self-check",
+    "status": "pending-independent-review",
+    "reviewedOn": "2026-10-27",
+    "arithmetic": "全例題/設問を数値と年度条件から再計算。税額連動の仮定値は本文/設問で明示し実税率由来と主張しない。",
+    "rubricAlignment": "全記述問の要求（数値/理由/資料/照合）と各採点基準を照合済み。要求外の追加知識へ配点しない。",
+    "japanese": "本文全文を文脈確認しlint/outline/terms/calquesを実行。否定反復・登記簿/株主名簿の用語・資本金/資本金等の額を修正。残る法定条件の否定と統計警告は確認して保持。",
+    "schema": "ID重複・目標参照・配点合計・後続IDの解決を確認。独立レビューはpending。"
+  }
+}

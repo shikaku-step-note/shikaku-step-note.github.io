@@ -5,7 +5,7 @@
 所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
 免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
 
-11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。
+11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。
 
 推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
 1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
@@ -273,6 +273,116 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-3-review/
   [zeirishi-shotoku-mock] 所得税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shotoku-mock/
+
+  詳しく学ぶ単元 [zr2-shotoku-unit-scope] 納税義務・所得帰属・所得計算の前提
+    人と課税期間を確定し、権利関係と収入の性質を読み解く5レッスン。居住履歴・送金、共有・組合・信託、非課税と十所得の計算を、例題と独立した累積演習で学びます。
+    単元確認日：2026-10-27／本文・例題・理解度確認の合計目安475分（独立テストと再復習は別）
+    URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-shotoku-unit-scope/
+    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
+    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
+    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
+    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
+    1. [zr2-shotoku-taxpayer] 納税義務者・課税単位・納税地を確定する／75分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr-shotoku-scope
+      実演：[zr2-shotoku-taxpayer-e1] 例題1：家族の収支を人ごとの計算表へ移す／[zr2-shotoku-taxpayer-e2] 例題2：転居・事業場・死亡を区別する／[zr2-shotoku-taxpayer-e3] 例題3：源泉徴収額があっても、年間税額を別に求める
+      理解度チェック [zr2-shotoku-taxpayer-check] 10問／版：zeirishi-2026-v2-taxpayer-1
+      次：zr2-shotoku-residence
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-taxpayer/
+      [zr2-shotoku-taxpayer-o01] 人の区分と課税単位を決める
+        独立練習：zr2-shotoku-taxpayer-q1、zr2-shotoku-taxpayer-q2、zr2-shotoku-taxpayer-q3、zr2-shotoku-taxpayer-q10
+      [zr2-shotoku-taxpayer-o02] 納税地と成立・確定の時点を説明する
+        独立練習：zr2-shotoku-taxpayer-q4、zr2-shotoku-taxpayer-q5、zr2-shotoku-taxpayer-q6、zr2-shotoku-taxpayer-q7、zr2-shotoku-taxpayer-q8、zr2-shotoku-taxpayer-q9
+      出典 [income-law] e-Gov：所得税法：2条1項3〜7号、5条、7条、15〜16条、21条。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012
+      出典 [general-law] e-Gov：国税通則法：15条1〜3項、16条、21条。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012
+      出典 [income-tax-place] 国税庁 No.2029：確定申告書の提出先（納税地）：概要・主な納税地・納税地の特例。2026年4月1日現在法令等の解説。試験基準日施行の法令を優先／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2029.htm
+    2. [zr2-shotoku-residence] 居住履歴と送金から課税範囲を判定する／100分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-shotoku-taxpayer
+      実演：[zr2-shotoku-residence-e1] 例題1：年の途中で生活の本拠を移した場合／[zr2-shotoku-residence-e2] 例題2：複数の国内居住歴を合計する／[zr2-shotoku-residence-e3] 例題3：海外の預金から送金した場合の順序／[zr2-shotoku-residence-e4] 例題4：送金額だけを変えて境界を調べる
+      理解度チェック [zr2-shotoku-residence-check] 10問／版：zeirishi-2026-v2-residence-1
+      次：zr2-shotoku-attribution
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-residence/
+      [zr2-shotoku-residence-o01] 居住履歴から非永住者を判定する
+        独立練習：zr2-shotoku-residence-q1、zr2-shotoku-residence-q2、zr2-shotoku-residence-q3、zr2-shotoku-residence-q9、zr2-shotoku-residence-q10
+      [zr2-shotoku-residence-o02] 国外源泉と送金の課税範囲を計算する
+        独立練習：zr2-shotoku-residence-q4、zr2-shotoku-residence-q5、zr2-shotoku-residence-q6、zr2-shotoku-residence-q7、zr2-shotoku-residence-q8、zr2-shotoku-residence-q10
+      出典 [income-law] e-Gov：所得税法：2条1項3〜5号、7条。95条1項・4項2号、161条1項7号の関連する源泉の規定も参照。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012
+      出典 [income-decree] e-Gov：所得税法施行令：14〜15条、17条1〜4項。特に4項の計算順序・期間区分。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093
+      出典 [income-residence-circular] 国税庁：所得税基本通達・法2条関係：2-1〜2-4の3。住所・居所・居住履歴の判定と期間計算。参照段落の記載改正は2026年4月3日より前。基準日施行の法令本文と照合／確認2026-10-27
+        https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/01/01.htm
+      出典 [income-remittance-circular] 国税庁：所得税基本通達・法7条関係：7-2〜7-6。送金の計算順序、支払地、送金の範囲。参照段落の記載改正は2026年4月3日より前。基準日施行の法令本文と照合／確認2026-10-27
+        https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/02/01.htm
+    3. [zr2-shotoku-attribution] 真実の権利者・事業主・受益者へ所得を帰属させる／100分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-shotoku-residence
+      実演：[zr2-shotoku-attribution-e1] 例題1：家賃の受領だけを子へ任せた場合／[zr2-shotoku-attribution-e2] 例題2：共有家屋の賃料を一人が受領した場合／[zr2-shotoku-attribution-e3] 例題3：名義を貸した親と実際に経営する子／[zr2-shotoku-attribution-e4] 例題5：分配していない信託の賃貸利益／[zr2-shotoku-attribution-e5] 例題4：組合から現金を受け取っていない場合
+      理解度チェック [zr2-shotoku-attribution-check] 11問／版：zeirishi-2026-v2-attribution-1
+      次：zr2-shotoku-nontaxable
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-attribution/
+      [zr2-shotoku-attribution-o01] 名義と実質帰属を分ける
+        独立練習：zr2-shotoku-attribution-q1、zr2-shotoku-attribution-q2、zr2-shotoku-attribution-q4、zr2-shotoku-attribution-q5、zr2-shotoku-attribution-q9
+      [zr2-shotoku-attribution-o02] 共有・組合・信託の収益と費用を帰属させる
+        独立練習：zr2-shotoku-attribution-q3、zr2-shotoku-attribution-q6、zr2-shotoku-attribution-q7、zr2-shotoku-attribution-q8、zr2-shotoku-attribution-q10、zr2-shotoku-attribution-q11
+      出典 [income-law] e-Gov：所得税法：12条、13条1〜4項。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012
+      出典 [income-attribution-circular] 国税庁：所得税基本通達・法12条関係：12-1、12-2、12-5。資産の権利者・事業主・親族間の事業主判定。参照段落の記載改正は2026年4月3日より前。基準日施行の法令本文と照合／確認2026-10-27
+        https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/01.htm
+      出典 [income-trust-circular] 国税庁：所得税基本通達・法13条関係：13-1〜13-4。現在の権利・年分・収益費用・権利内容。参照段落の記載改正は2026年4月3日より前。基準日施行の法令本文と照合／確認2026-10-27
+        https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/02.htm
+      出典 [income-partnership-circular] 国税庁：所得税基本通達・組合の所得計算：36・37共-19、19の2、20、21。合理的分配割合・計算期間・計算方法・匿名組合との違い。参照段落の記載改正は2026年4月3日より前。基準日施行の法令本文と照合／確認2026-10-27
+        https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/05/16.htm
+      出典 [income-decree] e-Gov：所得税法施行令：52条4項。複数の受益者の権利内容に応じた帰属。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093
+    4. [zr2-shotoku-nontaxable] 補償・贈与・生活用動産の非課税を判断する／100分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-shotoku-attribution
+      実演：[zr2-shotoku-nontaxable-e1] 例題1：身体の損害と医療費の補填／[zr2-shotoku-nontaxable-e2] 例題2：一つの事故の補償を三つに分ける／[zr2-shotoku-nontaxable-e3] 例題3：相続した建物の賃料と、二種類の贈与／[zr2-shotoku-nontaxable-e4] 例題4：家具と貴金属を同じ日に売った場合
+      理解度チェック [zr2-shotoku-nontaxable-check] 10問／版：zeirishi-2026-v2-nontaxable-1
+      次：zr2-shotoku-income-map
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-nontaxable/
+      [zr2-shotoku-nontaxable-o01] 損害賠償金等の性質から課税を判定する
+        独立練習：zr2-shotoku-nontaxable-q1、zr2-shotoku-nontaxable-q2、zr2-shotoku-nontaxable-q3、zr2-shotoku-nontaxable-q4、zr2-shotoku-nontaxable-q6、zr2-shotoku-nontaxable-q8、zr2-shotoku-nontaxable-q10
+      [zr2-shotoku-nontaxable-o02] 相続贈与と所得税の境界を説明する
+        独立練習：zr2-shotoku-nontaxable-q5、zr2-shotoku-nontaxable-q6、zr2-shotoku-nontaxable-q7、zr2-shotoku-nontaxable-q9
+      出典 [income-law] e-Gov：所得税法：9条1項9・17・18号、34条、36条1項、51条1項、73条1項。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012
+      出典 [income-decree] e-Gov：所得税法施行令：25条、30条、94条。生活用動産・損害賠償金・業務の収入代替等。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093
+      出典 [income-damages] 国税庁 No.1700：加害者から治療費、慰謝料及び損害賠償金などを受け取ったとき：非課税となる賠償金等1〜3。身体傷害、商品・固定資産、経費補填、医療費の調整。2026年4月1日現在法令等の解説。試験基準日施行の法令を優先／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1700.htm
+      出典 [income-suspension-pay] 国税庁 No.1905：労働基準法の休業手当等の課税関係：課税関係1・休業手当、2・休業補償。2026年4月1日現在法令等の解説。試験基準日施行の法令を優先／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1905.htm
+    5. [zr2-shotoku-income-map] 収入原因から十所得と課税方式を選ぶ／100分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-shotoku-nontaxable
+      実演：[zr2-shotoku-income-map-e1] 例題1：事業主の三つの売却を振り分ける／[zr2-shotoku-income-map-e2] 例題2：原稿料と懸賞賞金の控除を分ける／[zr2-shotoku-income-map-e3] 例題3：山林を土地付きで売った場合／[zr2-shotoku-income-map-e4] 例題4：同じ「利息」と、上場配当の選択
+      理解度チェック [zr2-shotoku-income-map-check] 10問／版：zeirishi-2026-v2-income-map-1
+      次：zr2-shotoku-scope-review
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-income-map/
+      [zr2-shotoku-income-map-o01] 収入原因から十所得へ区分する
+        独立練習：zr2-shotoku-income-map-q1、zr2-shotoku-income-map-q2、zr2-shotoku-income-map-q3、zr2-shotoku-income-map-q4、zr2-shotoku-income-map-q5、zr2-shotoku-income-map-q10
+      [zr2-shotoku-income-map-o02] 課税方式と所得区分の関係を説明する
+        独立練習：zr2-shotoku-income-map-q6、zr2-shotoku-income-map-q7、zr2-shotoku-income-map-q8、zr2-shotoku-income-map-q9、zr2-shotoku-income-map-q10
+      出典 [income-law] e-Gov：所得税法：21〜23条、24条1項、26〜27条、28条1項、30条1項、32〜35条の関係規定。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012
+      出典 [special-law] e-Gov：租税特別措置法：3条1項、8条の4第1〜2項、8条の5第1〜2項、31〜32条1項、37条の12の2第1〜2項。第76回試験・2026年4月3日現在施行版（URLの施行版を参照）／確認2026-10-27
+        https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012
+      出典 [income-finance-2025-guide] 国税庁：令和7年分・株式等の譲渡所得等の申告のしかた：印刷45頁（PDF45枚目）VII・上場株式等の配当等の課税関係。40頁の申告単位・変更に関する注意も参照。2025年分／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/pdf/Q/Q1.pdf
+      出典 [income-forest] 国税庁 No.1480：山林所得：概要・計算方法。取得後5年、土地部分の区分、山林所得の特別控除等。2026年4月1日現在法令等の解説。試験基準日施行の法令を優先／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1480.htm
+    [zr2-shotoku-scope-review] 所得税の出発点：人・期間・権利・収入原因の累積演習／26問／版：zeirishi-2026-v2-shotoku-scope-review-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-shotoku-scope-review/
+    [zr2-shotoku-scope-glossary] 所得税の出発点：場面から用語の意味を確かめる／26問／版：zeirishi-2026-v2-shotoku-scope-glossary-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-shotoku-scope-glossary/
+    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
+
   2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
 
 科目：法人税法（税法）
@@ -827,7 +937,8 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kotei/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-kotei-mock/
   2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
 
-用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。
+入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。
+詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
 模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
 数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
 記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。

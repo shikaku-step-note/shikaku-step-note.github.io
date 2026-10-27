@@ -1,0 +1,740 @@
+{
+  "id": "zr2-kokuzei-pledge-mortgage",
+  "subject": "kokuzei",
+  "title": "質権・抵当権の証明と優先できる債権額を計算する",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 170,
+  "objectives": [
+    "設定と対抗要件を基準日へ対応させる",
+    "利息・遅延損害金・被担保額の優先限度を計算する"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-statutory-dates"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "15条2〜4項・16〜18・26条の凍結公式JSONを読解"
+    },
+    {
+      "id": "collection-order",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "2026-04-01施行版",
+      "location": "親取得asof固定JSON4条の証明方法・期限を読解"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "version": "2026-04-01施行版",
+      "location": "304・342・344〜352・355〜364・366・369〜375・398条の2〜4・7・19〜20・467条等の該当箇所を凍結JSONで読解"
+    },
+    {
+      "id": "priority-mortgage-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/016/01.htm",
+      "version": "2026-10-27現行ページ、法律と別に扱う",
+      "location": "7〜8の375条・398条の3対応を確認。現在ページ全体を基準日版と主張しない"
+    },
+    {
+      "id": "priority-principal-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/018/01.htm",
+      "version": "2026-10-27現行ページ、法律と別に扱う",
+      "location": "1〜6及び9〜11の元本・通知・相対優先を18条/民398条の3等と照合。後日の企業価値担保権の注等を本講へ取り込まない"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "確定日付",
+      "definition": "徴収法15条2・3項の法定書類による証明で、国税との設定時期の認定に用いられる日付"
+    },
+    {
+      "term": "被担保債権",
+      "definition": "その担保権が担保する債権。全債務と担保範囲・優先額を区分する"
+    },
+    {
+      "term": "極度額",
+      "definition": "根抵当権により担保する範囲の金額限度。現存債権額や国税優先額そのものではない"
+    },
+    {
+      "term": "元本確定",
+      "definition": "根抵当が担保する不特定の元本を法定事由等により確定すること。18条の通知時元本限度とは別"
+    },
+    {
+      "term": "物上代位",
+      "definition": "担保目的物の売却・賃貸・滅失等による代替金銭等へ担保権を及ぼす制度。法定の差押え等を確認する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "pledge-ex1",
+      "section": "例題1：実際の引渡日と確定日付が違う",
+      "result": {
+        "actualDelivery": "03-08",
+        "fixedDate": "03-12",
+        "taxBaseline": "03-10",
+        "dateConditionSatisfied": false
+      }
+    },
+    {
+      "id": "pledge-ex2",
+      "section": "例題2：抵当権の利息を最後の2年分に区切る",
+      "result": {
+        "principal": 3000000,
+        "priorityInterest": 360000,
+        "priorityTotal": 3360000,
+        "taxPaid": 400000,
+        "taxUnpaid": 600000
+      }
+    },
+    {
+      "id": "pledge-ex3",
+      "section": "例題3：極度額・通知時元本・確定元本を別にする",
+      "result": {
+        "civilSecuredAmount": 3920000,
+        "priorityPrincipal": 3000000,
+        "interestAndDamage": 520000,
+        "priorityTotal": 3520000,
+        "taxPaid": 480000,
+        "taxUnpaid": 520000,
+        "subordinatedPrincipal": 400000
+      }
+    },
+    {
+      "id": "pledge-ex4",
+      "section": "例題4：原額と増額部分に異なる日を付ける",
+      "result": {
+        "originalPriority": 2000000,
+        "taxPaid": 800000,
+        "increasePaid": 400000,
+        "increaseUnpaid": 600000
+      }
+    }
+  ],
+  "scopeNotes": [
+    "単独税との通常額を計算する。18条1項ただし書・通知時差・物上代位等を含む最終の多者配当は、計画上の competing-distribution の具体的目標・例題へ追加済み",
+    "個別担保法の財団・自動車等の目的財産と公示制度は、計画に追加した security-registers で関連法の固定条文表と具体例により教える。registered-assets は差押手続の教授先であり、個別担保法の履修を兼ねたとは数えない"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "18条の通知時差・但書及び後順位者の権利侵害比較",
+      "plannedLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "status": "planned_not_authored; generator_objective_and_cases_explicitly_updated"
+    },
+    {
+      "competency": "物上代位・賃料と国税債権差押えの最終配当",
+      "plannedLessonIds": [
+        "zr2-kokuzei-competing-distribution",
+        "zr2-kokuzei-claims"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "譲受前担保と譲渡後の22条徴収計算",
+      "plannedLessonIds": [
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "登録財産・財団等の目的と公示及び個別担保法",
+      "plannedLessonIds": [
+        "zr2-kokuzei-security-registers"
+      ],
+      "status": "planned_not_authored; actual_new_plan_lesson_added"
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "借り手が機械を手元で使用し続け、貸し手の代理として占有する約束だけで動産質を設定したという資料がある。質権の成立・対抗の確認として適切なものを選んでください。",
+      "options": [
+        "契約日があれば引渡しは不要",
+        "344・345・352条の引渡し・設定者の代理占有禁止・継続占有を確認する",
+        "抵当権と動産質は同じ成立方法",
+        "占有さえあれば誰の所有物でも自由に質入れできる"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "動産質の法的な引渡しと占有を確認します。1は引渡しの要件、3は担保種類の違いを落とし、4は設定権限・財産帰属を飛ばしています。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "預金債権を質入れした。第三債務者と第三者への対抗を検討するとき、適切な説明を選んでください。",
+      "options": [
+        "契約当事者だけの記載日で常に対抗できる",
+        "364条による467条の通知・承諾、第三者に対する確定日付等を確認する",
+        "預金通帳を持っている者が常に国税より優先",
+        "銀行は第三債務者にならない"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "債権質では債権の債務者への通知・承諾と第三者対抗を区分します。1は法定要件を省き、3は通帳保有のみへの短絡、4は預金債務を負う銀行の地位を誤っています。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "登記等のできない通常の動産質（有価証券ではない）について、法定書類で設定を証明する。実際の引渡し4月2日、契約記載日3月20日、公証人役場の確定日付4月9日、国税基準日4月8日である。ほかの条件を満たす場合、国税との比較日と結論を選んでください。",
+      "options": [
+        "3月20日で国税より先",
+        "4月2日で国税より先",
+        "4月9日を用い、この日付要件では国税より後",
+        "いつでも配当日を用いる"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "15条3項の確定日付4月9日に設定されたものとみなして比較します。1は契約記載、2は実際の引渡しのみ、4は配当日の転用です。民法上の成立日と徴収法上の比較を分けます。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "金銭取立てにより換価する質権の証明について、令4条3項の通常の期限を選んでください。",
+      "options": [
+        "差押えから必ず10日",
+        "配当計算書作成日の前日",
+        "完納後でよい",
+        "税務署への最初の相談日"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "金銭による取立換価では配当計算書作成日の前日です。通常の売却決定日前日との違いを確認します。1・3・4は同項の期限ではありません。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "登記等のできない有価証券質について、15条2項の証明の扱いを選んでください。",
+      "options": [
+        "法定の特別書類への限定が外れるので、設定の証明自体も不要",
+        "設定事実の証明は要るが、有価証券以外の質権に関する同項後段の書類限定とは区分する",
+        "手書きの過去日付だけなら何でも足りる",
+        "国税基準日は一切関係しない"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "有価証券の例外は後段の法定書類限定についてで、前段の証明要件をすべて消すものではありません。1は例外を広げ、3は設定事実の確認を飛ばし、4は優先比較を落とします。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "同一動産に先順位質権P100万円と後順位質権Q80万円がある。Pは15条2項の証明をしなかったため国税100万円に全額劣後し、Qは国税優先の全条件を満たす。15条4項によりPがQへ先順位を主張できない範囲の条件も満たす。代金200万円、費用・他の債権なし。Q、国税の後にPへ残る配当額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "200000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "Q80万円、国税100万円の後、200−80−100＝20万円がPです。私法上Pが古いことだけでQより先に100万円を取ると15条4項を落とします。Pの未充足は80万円で、配当合計80＋100＋20＝200万円です。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "普通抵当権の元本200万円は2023年12月31日が弁済期。未払の2023年分利息12万円、2024年分遅延損害金18万円、2025年分遅延損害金18万円があり、各年末が支払期日で2026年1月に配当する。利率等の公示・請求は適法で、古い定期金の特別登記・18条の別制限等はない。最後2年分を区切った優先債権額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "2360000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "最後2年分の2024・2025年分損害金36万円を元本200万円へ加え、236万円です。古い2023年利息12万円まで加えると通算2年の制限を落とします。利息と損害金を各2年ずつ別枠にしません。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "担保利息の範囲に関する説明を選んでください。",
+      "options": [
+        "すべての質権・抵当権・根抵当権は利息が同じ最後2年だけ",
+        "動産質、不動産質、普通抵当、根抵当を区分して適用規定を選ぶ",
+        "根抵当権では極度額を超えても利息を必ず配当する",
+        "不動産質の原則と特約を読む必要はない"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "346・356〜361・375・398条の3等を担保種類別に確認します。1は一律化、3は極度額の無視、4は不動産質の利息・使用収益の原則と特約を落としています。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "国税より前の適法な根抵当権がある。元本は通知前に既に160万円で確定し、適法な担保範囲の利息10万円・損害金20万円、極度額200万円。他の制限・債権等なし。根抵当権により行使できる合計額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1900000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "160＋10＋20＝190万円で極度200万円以内です。普通抵当の最後2年制限を当然に転用しません。極度額200万円そのものを債権額として先取りするのでもありません。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "一つの根抵当権につき、国税Aの通知受領時元本300万円、国税Bの通知受領時元本250万円、配当時の確定元本280万円。適法に優先範囲に入る利息等は40万円、極度400万円で、18条1項ただし書等は適用されない。各国税と別々に比較した優先額を示し、一つの限度額で済まない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "Aに対しては現元本280万円が通知時300万円以下なので280＋40＝320万円。Bに対しては通知時元本250万円が限度なので250＋40＝290万円となる。それぞれの通知受領時と現存額を対応させる。最終の三者配当は相対優先の調整を別に行い、320万円と290万円を二重に配当しない。",
+      "rubric": [
+        {
+          "criterion": "Aの320万円",
+          "points": 1
+        },
+        {
+          "criterion": "Bの290万円",
+          "points": 1
+        },
+        {
+          "criterion": "税ごとの通知時・現存元本を区分",
+          "points": 1
+        },
+        {
+          "criterion": "最終配当と二重加算を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "優先額を当該国税との関係で作る問題です。複数税との最終配当は後続 competing-distribution が教えます。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "ある国税に優先する担保元本の18条1項限度は通知時300万円だが、その後50万円が元本弁済され、現存元本は250万円となった。利息・他の調整なし。元本優先額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "2500000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "現存しない弁済済み50万円を配当しません。通知時限度300万円と現存元本250万円を比べ、250万円です。通知時額は最低保証額ではありません。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "根抵当権の当初極度額150万円の登記は1月10日、極度額を250万円へ増額する登記は4月5日。国税基準日は3月16日、通知時及び確定時元本220万円、利息・他の制限等なし。国税に優先する古い極度額部分の元本額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1500000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "18条2項により増加した100万円の極度額は4月5日の新設定として比較します。古い枠150万円は基準日前、追加枠は基準日後なので、現元本220万円のうち古い枠の150万円がこの条件で優先します。全250万円を1月10日へ遡らせません。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "他者による滞納処分差押えと根抵当元本確定の関係として、民法398条の20の説明を選んでください。",
+      "options": [
+        "すべての根抵当権は差押通知発出時に直ちに確定",
+        "根抵当権者が差押えを知った時からの2週間経過等、該当する確定事由を調べる",
+        "通知時の元本限度と元本確定は常に同じ制度",
+        "一度どんな理由で確定しても効力消滅の規定はない"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "他者の差押えを知った時から2週間の規定と、根抵当権者自身の申立て等の別事由を区分します。1は時点の一律化、3は徴収法18条との混同、4は民398条の20第2項を無視しています。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "担保建物が滅失して保険金請求権が生じた。担保権の物上代位を検討するとき適切な説明を選んでください。",
+      "options": [
+        "建物の登記だけで必ず直ちに保険金全額を受領できる",
+        "304条等に従い代位対象を確認し、払渡し等前の差押えなどを調べる",
+        "物上代位はどんな担保権でも絶対にない",
+        "国税差押えとの競合は債権額の大きさだけで決める"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "350・372条による304条準用と対象金銭・差押えを確認します。1は物上代位の手続条件を省き、3は制度を否定し、4は相対優先の基準を誤っています。最終配当は競合の各条件を別途照合します。"
+    },
+    {
+      "id": "zr2-kokuzei-pledge-mortgage-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-pledge-mortgage",
+      "prompt": "国税より前に設定された先順位根抵当権について、通知後に元本が増えた。ほかに国税にも優先する後順位抵当権がある。18条1項本文の通知時元本制限を適用すれば常に国税がその分得をする、と結論してよいか。ただし書と後順位者の権利から説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "本文の制限が国税に優先する他の債権者の権利を害する場合は、ただし書により本文の適用を外す検討が必要である。先順位担保の増加部分は国税には劣後しても後順位担保には優先することがあり、国税への配当増加と後順位者の本来受ける額を比較する。後順位者がいるだけで常に例外ともせず、具体的な原資・額で侵害を判断する。",
+      "rubric": [
+        {
+          "criterion": "ただし書の権利侵害要件",
+          "points": 2
+        },
+        {
+          "criterion": "先順位増加分・後順位者・国税の相対関係",
+          "points": 1
+        },
+        {
+          "criterion": "存在だけで決めず原資と額を比較",
+          "points": 1
+        }
+      ],
+      "explanation": "ただし書の複合配当を本問だけで修得済みにはしません。計画上の competing-distribution に実際の比較計算を割り当てています。"
+    }
+  ],
+  "authorChecks": {
+    "numericChecks": [
+      "例2:300×6％×2=36、300+36=336、380-4-336=40、100-40=60万円",
+      "例3:340+28+24=392、300+28+24=352、400-352=48、100-48=52万円",
+      "例4:330-10-200-80=40、100-40=60万円",
+      "問6:200-80-100=20、問7:200+18+18=236、問9:160+10+20=190万円",
+      "問10:A=min(280,300)+40=320、B=min(280,250)+40=290、二重に配当しない",
+      "問11:300-50=250、問12:旧枠150を用い増枠100の時点を分離"
+    ],
+    "legalChecks": "凍結徴収15〜18・令4・民法該当条を読解。利息最後2年と根抵当の極度額、通知時元本と元本確定、証明期限・有価証券例外を区分。複雑な多者配当は実在する後続計画へ拡充",
+    "editorial": "全本文・15問と全解説を作問者が読み直した。法的な対比と否定条件を保持。独立の事実・日本語レビューはpending",
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 12,
+        "line": 23,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 13,
+        "line": 25,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 14,
+        "line": 27,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 15,
+        "line": 29,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 16,
+        "line": 31,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 17,
+        "line": 33,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 18,
+        "line": 35,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 19,
+        "line": 37,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 20,
+        "line": 39,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 21,
+        "line": 41,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 22,
+        "line": 43,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 23,
+        "line": 45,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 24,
+        "line": 47,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 25,
+        "line": 49,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 26,
+        "line": 51,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 27,
+        "line": 53,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 28,
+        "line": 55,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 29,
+        "line": 57,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 30,
+        "line": 59,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 31,
+        "line": 61,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 32,
+        "line": 63,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 33,
+        "line": 65,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 34,
+        "line": 67,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 35,
+        "line": 69,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 36,
+        "line": 71,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 37,
+        "line": 73,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 38,
+        "line": 75,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 39,
+        "line": 77,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 40,
+        "line": 79,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 41,
+        "line": 81,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 42,
+        "line": 83,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 43,
+        "line": 85,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 44,
+        "line": 87,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 45,
+        "line": 89,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 46,
+        "line": 91,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 47,
+        "line": 92,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      },
+      {
+        "paragraph": 48,
+        "line": 93,
+        "finding": "なし",
+        "action": "権利種類・成立・対抗・特別証明・優先額と残高を対応させて作問者が再読"
+      }
+    ]
+  }
+}

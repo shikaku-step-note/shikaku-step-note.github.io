@@ -1,0 +1,438 @@
+{
+  "id": "zr2-hojin-income-adjustments",
+  "subject": "hojin",
+  "title": "益金・損金と決算処理から申告調整を組み立てる",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-hojin-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "会計処理と税法との差を四調整へ分類する",
+    "損金経理と申告調整要件を分ける"
+  ],
+  "objectiveIds": [
+    "zr2-hojin-income-adjustments-o01",
+    "zr2-hojin-income-adjustments-o02"
+  ],
+  "prerequisites": [
+    "zr2-hojin-period-filing"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "corporate-income-rules",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2条25号、22条全項、22の2全項、26条1項、31条1/4項、38条1/2項を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-schedule4-directions",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/04-ki.pdf",
+      "location": "別表四の当期利益、加算、減算の記載",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表書式/記載要領。対象期間を限定"
+    }
+  ],
+  "sourceUncertainties": [
+    "普通償却の例題は税務限度を計算済みで与える。限度自体の方法/取得価額/供用月数と特別償却は後続で独立計算する。",
+    "未計上売上原価の例は当期引渡し・税務原価を確定し、収益近接日等の特例と他の決算修正を除外。帳簿訂正や過年度訂正の全手続を完了したという意味ではない。",
+    "法人税等の非損金/還付非益金は所定の税目・還付の種類を明記。租税公課全体を一律に加減する規則へ広げない。"
+  ],
+  "glossary": [
+    {
+      "term": "益金",
+      "definition": "法人税の所得計算上、当該年度の収益として算入する金額。資本等取引や個別規定等を確認する"
+    },
+    {
+      "term": "損金",
+      "definition": "法人税の所得計算上、当該年度の原価・費用・損失として算入する金額。別段の定めと経理条件等を確認する"
+    },
+    {
+      "term": "申告調整",
+      "definition": "会計の当期利益から税法上の所得へ、加算・減算によって差を反映する作業"
+    },
+    {
+      "term": "損金経理",
+      "definition": "確定した決算において費用または損失として経理すること"
+    },
+    {
+      "term": "資本等取引",
+      "definition": "資本金等の増減を生じる取引と利益・剰余金・残余財産の分配等。単なる借入元本取引とは区別する"
+    },
+    {
+      "term": "償却限度額",
+      "definition": "税法の方法等により計算する当期償却の上限。通常は損金経理額等の条件も満たす範囲で損金となる"
+    },
+    {
+      "term": "償却超過額",
+      "definition": "償却費として損金経理した額のうち、その年度に損金算入されず残る額"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-hojin-income-adjustments-e1",
+      "section": "例題1：四つの調整と、税引後利益の出発点",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "taxAfterProfit": 6000000,
+        "addTax": 1200000,
+        "addSales": 900000,
+        "subtractRefund": 300000,
+        "subtractCost": 400000,
+        "income": 7400000,
+        "taxBeforeProfit": 7200000
+      }
+    },
+    {
+      "id": "zr2-hojin-income-adjustments-e2",
+      "section": "例題2：出資、借入れ、贈与、配当を分ける",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "taxableGift": 450000,
+        "cashInflows": 4650000,
+        "cashOutflows": 380000,
+        "cashNet": 4270000,
+        "incomeIncrease": 450000
+      }
+    },
+    {
+      "id": "zr2-hojin-income-adjustments-e3",
+      "section": "例題3：未払費用、未実施の修繕、翌期の役務",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "addEstimatedRepair": 800000,
+        "addPrepaidService": 600000,
+        "totalAdd": 1400000
+      }
+    },
+    {
+      "id": "zr2-hojin-income-adjustments-e4",
+      "section": "例題4：償却限度額の余りと、過年度の超過額",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "company1Deduction": 400000,
+        "company2Deduction": 600000,
+        "company2Add": 200000,
+        "company3Deduction": 550000,
+        "company3Subtract": 150000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "帳簿で計上済みの費用の一部が税務上は損金にならず、別に当期益金となる未計上の収益があった。調整の方向と種類を選んでください。",
+      "options": [
+        "両方減算で、前者が損金算入・後者が益金不算入",
+        "両方加算で、前者が損金不算入・後者が益金算入",
+        "前者だけ加算し、未計上収益は調整不要",
+        "費用・収益の名称にかかわらず双方を相殺して表示しなければならない"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "費用を減らした分を戻す損金不算入と、収益に不足する分を足す益金算入です。同じ加算でも帳簿の差の位置を区別し、要求された明細を示します。",
+      "id": "zr2-hojin-income-adjustments-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "当期純利益480万円には、損金にならない法人住民税24万円の費用計上と、益金不算入となる法人税還付8万円の収益計上がある。還付加算金等はなく、他の調整はない。所得金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "4960000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "480＋24−8＝496万円です。費用に含まれる住民税は戻し、収益に含まれる益金不算入還付は除きます。現金の納付・入金の有無だけでは符号を決めません。",
+      "id": "zr2-hojin-income-adjustments-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "会社Aは銀行借入100万円を収益にせず負債に計上した。借入元本30万円を返済し負債を減らし、費用にはしていない。両取引について、益金・損金と申告調整の要否を答え、その理由を資本等取引という言葉だけで片付けず説明してください。利息等はない。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "借入100万円は返済義務のある現金と負債の増加で収益ではなく、返済30万円は現金と負債の減少で費用ではない。帳簿でも損益へ入れていないため両取引の申告調整は不要。通常の借入元本の取引は、資本金等の増減や利益の分配等の資本等取引と区別する。",
+      "rubric": [
+        {
+          "criterion": "借入の資産/負債増加と返済の資産/負債減少を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "益金/損金なし・申告調整不要とする",
+          "points": 1
+        },
+        {
+          "criterion": "資本等取引の定義と元本取引を区別する",
+          "points": 1
+        }
+      ],
+      "explanation": "資金が入ったから益金、出たから損金とはしません。帳簿で損益へ入れていない元本を、申告書でもう一度減算すると所得が二重に減ります。",
+      "id": "zr2-hojin-income-adjustments-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "会社Bは当期中の商品の引渡しに係る売上150万円を計上していない。その商品の税務上の原価65万円も費用にせず、期末棚卸資産に残している。引渡し等は当期で確定し、個別特例はない。これら二項目による所得への純加算額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "850000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "売上150万円を益金算入として加算、原価65万円を損金算入として減算し、純加算85万円です。売上だけを足すと原価を落とし、両方を足すと原価の符号が逆になります。",
+      "id": "zr2-hojin-income-adjustments-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "会社Cが期末までに提供を受けた当期の運送サービスについて、対価も契約により確定している。請求書は翌月届き支払も翌月だが、当期費用へ計上済みで、個別の制限はない。適切な説明を選んでください。",
+      "options": [
+        "未払なので必ず当期全額加算",
+        "請求書到着の翌期にしか損金にならない",
+        "当期の費用・債務確定等を満たすので、支払が翌月という理由の加算はしない",
+        "翌月に支払うため当期の損金と翌期の損金へ二度計上できる"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "役務と確定した債務を当期へ対応させます。現金払い・請求書到着だけを判定基準にすると、当期の損金を誤って外します。翌期の支払は未払債務を減らす取引です。",
+      "id": "zr2-hojin-income-adjustments-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "会社Dは来期に実施する予定の修繕費90万円を当期末に見積もり、費用と負債を計上した。契約・施工はなく、債務確定や個別の損金特例の条件も満たさない。当期の説明を選んでください。",
+      "options": [
+        "将来の支出可能性が高いので必ず当期損金",
+        "当期費用90万円を損金不算入として加算する",
+        "負債に計上した時点で税法上の債務確定も必ず満たす",
+        "来期に修繕しなくても、翌期には必ず90万円を減算できる"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "会計上の見積計上と税法上の当期損金は分けます。翌期も、施工や債務確定、帳簿処理等の事実を調べる必要があり、前年の加算だけで自動減算はできません。",
+      "id": "zr2-hojin-income-adjustments-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "会社Eは新株の払込み500万円、銀行借入200万円、返済不要の金銭贈与87万円を受けた。贈与は資本金等の増加に当たらず、受贈益の益金不算入その他の特例はない。これらの取引による益金を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "870000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "出資500万円は資本等取引、借入200万円は負債を伴う受入れで収益ではありません。無償利益87万円が益金です。入金全額787万円を収益としません。",
+      "id": "zr2-hojin-income-adjustments-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "会社Fの当期償却費としての損金経理額はゼロ。過年度の同資産の償却超過額もなく、当期の普通償却の限度額は35万円と計算された。特別償却等はない。正しいものを選んでください。",
+      "options": [
+        "申告書で35万円減算できる",
+        "半分の17万5千円だけ減算できる",
+        "限度額は損金算入の最低額なので35万円が自動算入される",
+        "通常は損金経理額等の条件がないため、限度額があっても35万円を減算できない"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "限度額だけでは損金経理の条件を代替できません。過年度の未算入損金経理額を含める条件も本問にはありません。",
+      "id": "zr2-hojin-income-adjustments-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "会社Gの同一減価償却資産について、当期損金経理額40万円、前期から残る償却超過額25万円、当期償却限度額50万円である。前期超過は適法に損金経理済みで、他の特例はない。当期の税務上の損金、当期利益からの調整、翌期へ残る超過額を求め、当期調整の理由も示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "損金経理額に前期超過を含めた65万円のうち、限度50万円が当期損金となる。当期会計費用40万円との差10万円を減算する。前期超過25万円のうち10万円が認容され、残る15万円を翌期へ繰り越す。",
+      "rubric": [
+        {
+          "criterion": "当期損金50万円",
+          "points": 1
+        },
+        {
+          "criterion": "当期費用との差10万円の減算と理由を示す",
+          "points": 2
+        },
+        {
+          "criterion": "翌期超過額15万円",
+          "points": 1
+        }
+      ],
+      "explanation": "65万円を全額損金にせず、限度50万円と比べます。翌期超過額は40＋25−50＝15万円と照合できます。",
+      "id": "zr2-hojin-income-adjustments-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    },
+    {
+      "prompt": "当期の税引前利益760万円、法人税・地方法人税・法人住民税の費用160万円、税引後当期純利益600万円である。これらの税金はいずれも損金不算入。別に損金不算入となる費用35万円と益金不算入となる収益20万円が当期利益に含まれている。他の調整はない。所得金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "7750000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "税引後から600＋160＋35−20＝775万円。税引前からは760＋35−20＝775万円です。税引前760万円へさらに税費用160万円を足すと二重加算になります。",
+      "id": "zr2-hojin-income-adjustments-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "留保/流出と複数年の税務残高",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-schedule-four-five",
+          "title": "別表四・五一・五二の連動",
+          "objectiveIds": [
+            "zr2-hojin-schedule-four-five-o01",
+            "zr2-hojin-schedule-four-five-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-integration-domestic",
+          "title": "普通法人の決算と申告の全連動",
+          "objectiveIds": [
+            "zr2-hojin-integration-domestic-o01",
+            "zr2-hojin-integration-domestic-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "収益時期・無償利益・資本取引の個別要件",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-revenue-timing",
+          "title": "販売・役務・請負の収益時期",
+          "objectiveIds": [
+            "zr2-hojin-revenue-timing-o01",
+            "zr2-hojin-revenue-timing-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-deemed-revenue",
+          "title": "無償・低額譲渡と受贈益",
+          "objectiveIds": [
+            "zr2-hojin-deemed-revenue-o01",
+            "zr2-hojin-deemed-revenue-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-capital-refunds",
+          "title": "みなし配当・自己株式・資本払戻",
+          "objectiveIds": [
+            "zr2-hojin-capital-refunds-o01",
+            "zr2-hojin-capital-refunds-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "債務確定・前払い・普通償却と租税公課の例外",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-rent-prepaid",
+          "title": "賃貸借・フリーレント・前払",
+          "objectiveIds": [
+            "zr2-hojin-rent-prepaid-o01",
+            "zr2-hojin-rent-prepaid-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-depreciation",
+          "title": "法定償却方法・供用月数・複数年",
+          "objectiveIds": [
+            "zr2-hojin-depreciation-o01",
+            "zr2-hojin-depreciation-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-taxes-refunds",
+          "title": "租税公課・附帯税・還付・充当金",
+          "objectiveIds": [
+            "zr2-hojin-taxes-refunds-o01",
+            "zr2-hojin-taxes-refunds-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-other-expenses",
+          "title": "その他費用・使途不明・不正支出",
+          "objectiveIds": [
+            "zr2-hojin-other-expenses-o01",
+            "zr2-hojin-other-expenses-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ],
+  "selfReview": {
+    "role": "author-self-check",
+    "status": "pending-independent-review",
+    "reviewedOn": "2026-10-27",
+    "arithmetic": "全例題/設問を数値と年度条件から再計算。税額連動の仮定値は本文/設問で明示し実税率由来と主張しない。",
+    "rubricAlignment": "全記述問の要求（数値/理由/資料/照合）と各採点基準を照合済み。要求外の追加知識へ配点しない。",
+    "japanese": "本文全文を文脈確認しlint/outline/terms/calquesを実行。否定反復・登記簿/株主名簿の用語・資本金/資本金等の額を修正。残る法定条件の否定と統計警告は確認して保持。",
+    "schema": "ID重複・目標参照・配点合計・後続IDの解決を確認。独立レビューはpending。"
+  }
+}

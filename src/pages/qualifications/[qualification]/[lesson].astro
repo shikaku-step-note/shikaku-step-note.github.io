@@ -9,6 +9,7 @@ import { allAssessments } from '../../../data/assessments';
 import { bokiCourse } from '../../../data/bookkeeping';
 import { takkenOutline, takkenSources } from '../../../data/takken';
 import { zeirishiOutline, zeirishiSources, zeirishiSubject } from '../../../data/zeirishi';
+import { zeirishiDeepLesson, zeirishiDeepUnit } from '../../../data/zeirishi-expanded';
 import { qualificationById } from '../../../data/qualifications';
 import { href } from '../../../lib/site';
 export async function getStaticPaths() {
@@ -23,13 +24,18 @@ const q = qualificationById(d.qualification);
 const allLessons = await getCollection('lessons');
 const tax = q.id === 'zeirishi';
 const subject = tax ? zeirishiSubject(d.subject!) : undefined;
-const coursePath = subject ? `qualifications/zeirishi/subjects/${subject.id}/` : `qualifications/${q.id}/`;
+const deepLesson = tax ? zeirishiDeepLesson(d.stableId) : undefined;
+const deepUnit = deepLesson ? zeirishiDeepUnit(deepLesson.moduleId) : undefined;
+const coursePath = deepUnit
+  ? `qualifications/zeirishi/units/${deepUnit.id}/`
+  : subject ? `qualifications/zeirishi/subjects/${subject.id}/` : `qualifications/${q.id}/`;
 const siblings = allLessons
   .filter(
     (l) =>
       l.data.qualification === q.id &&
       (d.archived ? l.data.archived : !l.data.archived) &&
-      (!tax || l.data.subject === d.subject),
+      (!tax || l.data.subject === d.subject) &&
+      (!tax || (deepUnit ? l.data.unit === deepUnit.number : !l.data.stableId.startsWith('zr2-'))),
   )
   .sort((a, b) => a.data.order - b.data.order);
 const index = siblings.findIndex((l) => l.data.stableId === d.stableId);
@@ -49,6 +55,8 @@ const courseSources = takken
     ? zeirishiSources.filter((s) => zeirishiOutline.find((r) => r.id === d.stableId)?.sources.includes(s.id))
     : [];
 const unit = units.find((u) => u.id === d.unit);
+const glossaryId = deepUnit?.assessments.find((a) => a.kind === 'glossary')?.id ?? `${testPrefix}-unit-${d.unit}-glossary`;
+const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `${testPrefix}-unit-${d.unit}-review`;
 ---
 
 <Layout
@@ -73,7 +81,8 @@ const unit = units.find((u) => u.id === d.unit);
   breadcrumbs={[
     { name: '資格一覧', path: 'qualifications/' },
     { name: q.name, path: `qualifications/${q.id}/` },
-    ...(subject ? [{ name: subject.name, path: coursePath }] : []),
+    ...(subject ? [{ name: subject.name, path: `qualifications/zeirishi/subjects/${subject.id}/` }] : []),
+    ...(deepUnit ? [{ name: deepUnit.title, path: coursePath }] : []),
     { name: d.title, path: `qualifications/${q.id}/${d.stableId}/` },
   ]}
 >
@@ -139,7 +148,7 @@ const unit = units.find((u) => u.id === d.unit);
           <p class="muted">前提：{d.prerequisite}</p>
           <p class="muted">
             {tax
-              ? `${subject?.name}の基礎技能（公式の項目番号ではありません）`
+              ? `${subject?.name}の学習目標（公式の項目番号ではありません）`
               : takken
                 ? '公式の出題範囲の号番号（学習ユニットとは別）'
                 : boki
@@ -148,6 +157,16 @@ const unit = units.find((u) => u.id === d.unit);
             {d.syllabus.length ? `：${d.syllabus.join('、')}` : ''}
             。表示時間は、読む・例題・問題と解説の確認を含む当サイトの学習目安です。
           </p>
+        </section>
+      )}
+      {deepLesson && (
+        <section class="notice compact" aria-label="このレッスンの前提">
+          <h2>先に確認するレッスン</h2>
+          <ul>{deepLesson.prerequisites.map((id) => {
+            const prerequisite = allLessons.find((entry) => entry.data.stableId === id);
+            return prerequisite && <li><a href={href(`qualifications/zeirishi/${id}/`)}>{prerequisite.data.title}</a></li>;
+          })}</ul>
+          <p>以前の入門ページの学習済み記録と、このレッスンの記録は別に保管します。本文の理解と、理解度チェックの結果も区別して確認してください。</p>
         </section>
       )}
       <nav class="toc mobile-toc" aria-label="このレッスンの目次">
@@ -182,12 +201,12 @@ const unit = units.find((u) => u.id === d.unit);
             ))}
           </dl>
           <p>
-            <a href={href(`qualifications/${q.id}/tests/${testPrefix}-unit-${d.unit}-glossary/`)}>
-              {tax ? 'この科目の用語テストへ' : 'このユニットの用語テストへ'}
+            <a href={href(`qualifications/${q.id}/tests/${glossaryId}/`)}>
+              {tax && !deepUnit ? 'この科目の用語テストへ' : 'このユニットの用語テストへ'}
             </a>
             ・
-            <a href={href(`qualifications/${q.id}/tests/${testPrefix}-unit-${d.unit}-review/`)}>
-              {tax ? '科目総復習へ' : 'ユニット総合確認へ'}
+            <a href={href(`qualifications/${q.id}/tests/${reviewId}/`)}>
+              {tax && !deepUnit ? '科目総復習へ' : 'ユニット総合確認へ'}
             </a>
           </p>
         </section>
@@ -254,11 +273,11 @@ const unit = units.find((u) => u.id === d.unit);
         ) : (
           <a
             href={
-              tax ? href(`qualifications/zeirishi/tests/zeirishi-unit-${d.unit}-review/`) : href('progress/')
+              tax ? href(`qualifications/zeirishi/tests/${reviewId}/`) : href('progress/')
             }
           >
             <small>学びを振り返る</small>
-            {tax ? 'この科目の総復習へ' : 'マイ学習を見る'}
+            {deepUnit ? 'このユニットの総合確認へ' : tax ? 'この科目の総復習へ' : 'マイ学習を見る'}
           </a>
         )}
       </nav>
@@ -291,9 +310,9 @@ const unit = units.find((u) => u.id === d.unit);
                 : '法令基準日：2026年4月1日。資料確認日：2026年10月25日。個別取引・税務・建築の助言ではありません。'}
             </p>
             <ul>
-              {courseSources.map((s) => (
+              {(deepLesson?.references ?? courseSources).map((s) => (
                 <li>
-                  <a href={s.url}>{s.title}</a>：{s.version}（確認日：{s.verified}）
+                  <a href={s.url}>{s.title}</a>：{'locator' in s ? `${s.locator}。` : ''}{s.version}（確認日：{s.verified}）
                 </li>
               ))}
             </ul>
@@ -329,8 +348,8 @@ const unit = units.find((u) => u.id === d.unit);
         </ol>
       </nav>
       <div class="sidebar-box">
-        <h2>{subject?.name ?? q.name}</h2>
-        <p data-course-progress={q.id} data-course-subject={subject?.id}>
+        <h2>{deepUnit?.title ?? subject?.name ?? q.name}</h2>
+        <p data-course-progress={q.id} data-course-subject={subject?.id} data-course-unit={deepUnit?.number}>
           未学習
         </p>
         <a href={href(coursePath)}>学習ステップに戻る</a>

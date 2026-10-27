@@ -26,6 +26,7 @@ const fixture = (): ExpandedTaxCurriculum => ({
       glossary: [{ term: '現金', definition: '検証用の定義' }],
       reviewed: '2026-10-27',
       assessmentVersion: 'fixture-v1',
+      workedExamples: [{ id: 'zr2-boki-fixture-e1', section: '検証用例題', objectives: [1] }],
       references: [
         {
           id: 'fixture',
@@ -63,6 +64,8 @@ const fixture = (): ExpandedTaxCurriculum => ({
       subject: 'boki',
       number: 1001,
       title: '単元',
+      description: '独立した学習目標と練習問題を持つ検証用単元',
+      reviewed: '2026-10-27',
       lessonIds: ['zr2-boki-fixture'],
       assessments: [],
     },

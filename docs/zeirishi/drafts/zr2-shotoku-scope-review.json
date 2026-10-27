@@ -1,0 +1,1028 @@
+{
+  "id": "zr2-shotoku-scope-review",
+  "title": "所得税の出発点：人・期間・権利・収入原因の累積演習",
+  "kind": "review",
+  "version": "zeirishi-2026-v2-draft-shotoku-scope-1",
+  "qualification": "zeirishi",
+  "unit": 3,
+  "moduleId": "zr2-shotoku-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "instructions": "最初の5レッスンを横断する新規の独立問題です。各問は資料から独立して計算し、前問の解答を正しいものと仮定する必要はありません。特記のない個人は非永住者以外の居住者、対象年は2025年です。法令は2026年4月3日現在施行版を参照し、各問の事実・除外条件を優先します。金額は円単位、端数が生じないよう設計しています。記述は独自の部分点基準で自己確認します。この単元演習を税理士試験全体の模試や公式の合否判定として扱いません。",
+  "fieldNames": {
+    "shotoku": "所得税法"
+  },
+  "lessonTitles": {
+    "zr2-shotoku-taxpayer": "納税義務者・課税単位・納税地",
+    "zr2-shotoku-residence": "居住履歴と送金",
+    "zr2-shotoku-attribution": "所得の帰属",
+    "zr2-shotoku-nontaxable": "非課税の判断",
+    "zr2-shotoku-income-map": "十所得と課税方式"
+  },
+  "independence": "レッスン問題を抽出・再利用せず作成。資料の主体、権利の変化、身分期間、補償目的、複数所得の集計等の新たな判断を含む。独立レビューはpending。",
+  "materials": [
+    {
+      "id": "scope-household",
+      "title": "資料A：家計口座と二つの事業主体",
+      "paragraphs": [
+        "陽は国内に住所があり、個人事業の屋号Kを使う。別に株式会社Lも存在し、陽個人とは別法人である。陽の配偶者満は、本人のみが真実の権利者である建物を賃貸している。",
+        "陽の口座には2025年中、屋号Kの事業収入520万円、L社の代金80万円、満の建物賃料100万円が入金した。L社分と満の賃料は陽が単に受領を代行して全額を各権利者へ渡し、報酬・権利移転・共有等はない。",
+        "陽にはX市の住所、Y市の居所、Z市の主たる事業場、W市の従たる事業場がある。税務署長による納税地の指定はない。"
+      ]
+    },
+    {
+      "id": "scope-nonpermanent-period",
+      "title": "資料B：年途中の区分変更と送金",
+      "paragraphs": [
+        "日本国籍を有しない栞は、2025年1月1日〜8月31日は非永住者、9月1日〜12月31日は非永住者以外の居住者に該当すると確定している。租税条約、損失、他の所得、特例はない。",
+        "非永住者期間中に生じた不動産所得は、日本の物件から400万円（国内払300万円・国外払100万円）、国外物件から200万円（国内払20万円・国外払180万円）。必要な支払地別所得計算は適正に済んでいる。この期間内の国外からの送金受領額は70万円。",
+        "9月以後に新たに生じた国外物件の所得は100万円で、全て国外払である。9月以後の送金受領額は300万円。これらの所得の発生時期と区分は確定済みである。"
+      ]
+    },
+    {
+      "id": "scope-ownership-change",
+      "title": "資料C：年途中で実際の共有持分が変わった建物",
+      "paragraphs": [
+        "2025年1〜6月、建物の真実の権利者・収益権者は母の唯のみである。7月1日から、有効な権利移転により唯が3/5、子の灯が2/5を持ち、収益・共通費用も同じ割合に対応する。移転に伴う贈与等の課税は本問では問わない。",
+        "2025年の適正な賃料収入は1,200万円、共通必要経費480万円で、どちらも月ごとに均等発生する。個別費用や親族間特則等はない。家賃は全て、受領を代行する灯の口座に入っている。現金を受領する代理と権利の移転を分けて考える。"
+      ]
+    },
+    {
+      "id": "scope-trust-calendar",
+      "title": "資料D：受益者と信託の計算期間",
+      "paragraphs": [
+        "受益者等課税信託の唯一の現受益者は紺で、資産・負債・収益・費用の権利全てが紺に帰属する。信託は毎年4月から翌年3月までを独自の計算期間とし、現金分配はない。下記金額は適正な各期間の収入・必要経費で、例外はない。"
+      ],
+      "tables": [
+        {
+          "caption": "信託建物の期間別収支（万円）",
+          "headers": [
+            "期間",
+            "賃料収入",
+            "必要経費"
+          ],
+          "rows": [
+            [
+              "2025年1〜3月",
+              "30",
+              "10"
+            ],
+            [
+              "2025年4〜12月",
+              "90",
+              "30"
+            ],
+            [
+              "2026年1〜3月",
+              "60",
+              "10"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-shotoku-scope-review-q1",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        1
+      ],
+      "materialIds": [
+        "scope-household"
+      ],
+      "prompt": "資料Aの入金総額700万円のうち、陽の個人事業収入として集計する額を円単位で求めてください。経費控除前を答えます。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "5200000"
+      ],
+      "explanation": "陽の個人事業は屋号Kの520万円です。L社80万円は別法人、満の賃料100万円は満の権利に帰属し、陽は受領代理です。口座への合計700万円と陽の収入を同一視しません。これは必要経費控除後の所得額ではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q2",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        2
+      ],
+      "materialIds": [
+        "scope-household"
+      ],
+      "prompt": "資料Aで陽が納税地の特例を選ぶ場合、候補とならないものを一つ選んでください。住所地の原則も維持可能とします。",
+      "options": [
+        "X市の住所地",
+        "Y市の居所地",
+        "Z市の主たる事業場所在地",
+        "W市の従たる事業場所在地"
+      ],
+      "answer": 3,
+      "explanation": "住所地Xが原則、所定の選択で居所地Yまたは事業場等の所在地へ変更できます。事業場等が二つ以上なら主たるZを用いるため、従たるWを自由に選ぶことはできません。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q3",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        2
+      ],
+      "prompt": "死亡した人はM市に住所がある一方、生前に主たる事業場のあるQ市を適法に納税地として選択し、死亡時もQ市が納税地だった。相続人は二人で、それぞれN市・P市に住み、P市の相続人が手続を代表する。死亡までの所得の申告について、住所M市・代表者のP市・選択済みのQ市のどこを納税地とするか、理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "Q市である。生前の特例選択により死亡時の納税地はQ市だったため、死亡した人の死亡当時の納税地を用いる規定を適用する。住所地M市へ戻したり、手続代表者のP市へ置き換えたりしない。",
+      "rubric": [
+        {
+          "criterion": "Q市の結論",
+          "points": 1
+        },
+        {
+          "criterion": "有効な選択済みの納税地を死亡当時のものとして用いる",
+          "points": 2
+        },
+        {
+          "criterion": "住所や代表者所在地へ置き換えない",
+          "points": 1
+        }
+      ],
+      "explanation": "死亡時の納税地は、いつも住所地とは限りません。まず生前の有効な特例を反映し、その死亡時の場所を確定してから、相続人の住所によらない特則へつなぎます。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q4",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        2
+      ],
+      "prompt": "会社が2025年12月25日に給与を支払い源泉徴収し、翌年1月にその徴収税額を納付した。従業員は2026年3月に通常の2025年分確定申告をした。会社の源泉徴収義務と従業員の年間所得税の成立・確定を区別する説明を選んでください。死亡・出国等はない。",
+      "options": [
+        "会社も従業員も1月納付日に初めて義務が成立する",
+        "会社の源泉徴収による義務は給与支払時に成立・税額確定し、従業員の通常の年間所得税は暦年終了時に成立して申告等により確定する",
+        "従業員の年間所得税も給与を支払うたびに全額が最終確定する",
+        "会社が源泉徴収したため、従業員の年間所得税の納税義務は成立しない"
+      ],
+      "answer": 1,
+      "explanation": "源泉徴収の支払者の徴収・納付義務と、受取人の年間所得税を分けます。給与支払時、暦年終了時、申告時、納付時が示す手続の段階も異なります。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q5",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        1
+      ],
+      "prompt": "内国法人が通常の国内預金利子を受け、所得税が源泉徴収された。担当者は『所得税は個人だけの税なので銀行が必ず誤った』と述べた。所得税法上の納税義務者の区分に基づいて訂正し、個人の年間所得計算や法人税との区別にも触れてください。法人税額控除の具体計算は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "所得税法は居住者・非居住者だけでなく内国法人・外国法人にも所定の納税義務を定める。内国法人が国内で支払を受ける所定の利子等にも所得税がかかるため、個人でないことだけで銀行の誤りとはいえない。法人の所得に対する法人税の計算や控除との関係は別に調べる。",
+      "rubric": [
+        {
+          "criterion": "法人も所定の所得税納税義務者と説明",
+          "points": 2
+        },
+        {
+          "criterion": "本件国内利子への適用",
+          "points": 1
+        },
+        {
+          "criterion": "個人の年間所得/法人税計算と区別",
+          "points": 1
+        }
+      ],
+      "explanation": "法人の全事業利益を個人と同じ所得税表へ入れるという意味ではありません。納税義務者区分と課税所得の範囲を合わせて確認します。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q6",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        1
+      ],
+      "prompt": "日本国籍を有しない人が国内に住所を有する。過去10年の対象期間内の国内住所・居所期間は2年9か月20日と2年2か月10日で、入出国日の扱いは適正に計算済み。非永住者の5年条件を満たすか、日数の換算を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "日数20＋10＝30日を1か月へ換算する。年数4年、月数11か月に1か月を加え4年12か月＝5年となる。国内に住所を有する居住者で、日本国籍がなく、合計が5年以下なので非永住者の条件を満たす。",
+      "rubric": [
+        {
+          "criterion": "30日を1か月とする換算",
+          "points": 1
+        },
+        {
+          "criterion": "合計5年を算出",
+          "points": 2
+        },
+        {
+          "criterion": "国籍・居住者と5年以下に対応させる",
+          "points": 2
+        }
+      ],
+      "explanation": "ちょうど5年を超過側へ入れません。各期間を最初に概算年数へ切り上げる方法でもありません。判定日ごとに過去10年の区間を切り出す前提です。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q7",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        2
+      ],
+      "materialIds": [
+        "scope-nonpermanent-period"
+      ],
+      "prompt": "資料Bで、栞の非永住者期間中に生じた不動産所得のうち課税範囲へ含める額を円単位で求めてください。9月以後の所得や送金はこの問の対象外です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "4200000"
+      ],
+      "explanation": "非国外源泉所得400万円と国外源泉の国内払20万円を拾います。期間内送金70万円は国外払の非国外源泉所得100万円の範囲内なので、国外源泉の国外払を送金対象へ加える部分はゼロです。合計420万円です。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q8",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        1,
+        2
+      ],
+      "materialIds": [
+        "scope-nonpermanent-period"
+      ],
+      "prompt": "資料Bの全年について、課税範囲へ含める不動産所得の合計を円単位で求めてください。9月以後の送金300万円を、それ以前の送金へ足すかも検討します。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "5200000"
+      ],
+      "explanation": "1〜8月は400＋20＝420万円。17条4項6号の期間区分に従い、9月以後の送金を非永住者期間の70万円へ足しません。9〜12月は非永住者以外の居住者なので、新たな国外所得100万円は送金を問わず対象です。合計520万円となります。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o01",
+        "zr2-shotoku-residence-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q9",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        1
+      ],
+      "prompt": "在留資格の名称が『永住者』である日本国籍を有しない人について、所得税法上の居住者で、過去10年内の国内住所・居所期間が適正な計算で合計3年と確定している。所得税法上の区分について適切な説明を選んでください。",
+      "options": [
+        "在留資格の名称により非永住者には絶対に当たらない",
+        "居住者かどうかは外国口座の有無だけで決める",
+        "在留資格名と所得税法の定義を分け、本問は非永住者に該当する",
+        "5年以下なので居住者ではない"
+      ],
+      "answer": 2,
+      "explanation": "所得税法の非永住者は、居住者で日本国籍がなく、過去10年の国内期間が5年以下という定義です。在留資格名が永住者であることだけで排除しません。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q10",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        2
+      ],
+      "prompt": "2025年を通じて非永住者の人に、日本での勤務に係る国外払の給与収入120万円がある。この給与が非国外源泉所得であることは確定している。給与所得控除後の給与所得は55万円である。他に国外払の国外源泉の正の不動産所得100万円があり、国内払・損失・特例はない。国外からの送金130万円のうち、国外源泉の不動産所得の送金とみなす額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "100000"
+      ],
+      "explanation": "送金判定の給与は収入金額120万円を使います。まず120万円の非国外源泉所得を送金したとみなし、残り130−120＝10万円を不動産所得の送金部分とします。給与所得控除後55万円をここで使うと、130−55＝75万円を拾う誤りになります。2025年分の給与所得控除の最低額65万円を使う給与所得計算と、収入金額120万円を使う送金判定は別です。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q11",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        1,
+        2
+      ],
+      "materialIds": [
+        "scope-ownership-change"
+      ],
+      "prompt": "資料Cで、2025年分の唯の不動産所得を円単位で求めてください。権利移転前後を分けます。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "5760000"
+      ],
+      "explanation": "前半は収入600−経費240＝360万円が唯へ全額帰属。後半も全体所得360万円で、その3/5＝216万円が唯へ帰属します。合計360＋216＝576万円。灯への全額入金は受領代理であり、前後の権利を変更しません。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o01",
+        "zr2-shotoku-attribution-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q12",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        1,
+        2
+      ],
+      "materialIds": [
+        "scope-ownership-change"
+      ],
+      "prompt": "資料Cについて『年末には唯3/5・灯2/5だから、年間収入と費用の全額をその割合で分ける』という処理を訂正してください。灯への帰属額も示します。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "権利が移ったのは7月1日なので、1〜6月は全て唯へ帰属し、7〜12月だけ3/5・2/5で配分する。灯の後半収入600×2/5＝240万円、経費240×2/5＝96万円、所得144万円となる。年末の権利割合を移転前へさかのぼらせない。",
+      "rubric": [
+        {
+          "criterion": "移転前後を分ける根拠",
+          "points": 2
+        },
+        {
+          "criterion": "灯の収入240万円/経費96万円",
+          "points": 1
+        },
+        {
+          "criterion": "所得144万円",
+          "points": 1
+        },
+        {
+          "criterion": "年末割合の遡及を訂正",
+          "points": 1
+        }
+      ],
+      "explanation": "灯の現金受領と真実の権利取得は別の事実です。唯576万円と灯144万円の合計720万円が全体所得にも一致します。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o01",
+        "zr2-shotoku-attribution-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q13",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        1
+      ],
+      "prompt": "同一生計の親子が営業する店で、売上は子名義口座、家賃契約は親名義、店頭業務は両人が担当している。だれが事業主かをまだ確定できない。最も直接的に追加確認すべき情報を選んでください。",
+      "options": [
+        "過去の申告名義だけを確認し、その人を必ず事業主とする",
+        "売上の入金口座の名義だけを確認する",
+        "仕入・価格・採用・資金計画等の経営方針をだれが決定し、損益と責任がだれへ帰属するか",
+        "家計費の負担額だけで直ちに事業主を決める"
+      ],
+      "answer": 2,
+      "explanation": "事業を経営する人の判定に必要な事実を集めます。口座や賃貸名義はいずれも手掛かりですが、この資料だけで労働時間や家計負担等の一項目により断定することはできません。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q14",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        2
+      ],
+      "materialIds": [
+        "scope-trust-calendar"
+      ],
+      "prompt": "資料Dから、2025年分の紺の不動産所得を円単位で求めてください。信託独自の年度と現金分配の有無に注意します。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "800000"
+      ],
+      "explanation": "2025年の収入は30＋90＝120万円、経費は10＋30＝40万円で所得80万円です。翌2026年1〜3月を混ぜて信託の4月始まり年度で集計せず、分配ゼロでも所得をゼロとしません。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q15",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        2
+      ],
+      "prompt": "任意組合契約に損益を99対1で分配すると書かれているが、出資・労務・経営への寄与等の資料がない。担当者は『契約にあるので、合理性を問わず必ずこの割合で全員の所得を決める』とした。必要な確認と、原則の配分対象を説明してください。現金の分配と所得の帰属時期の関係にも触れます。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "出資の状況や事業への寄与等から分配割合の経済的合理性を確認する。契約に記載があるだけでその確認を省略しない。原則の方法では合理的な分配割合に応じ、収入・支出・資産・負債等を各組合員の金額として計算する。現金分配だけで認識を決めず、帰属期間も確認する。",
+      "rubric": [
+        {
+          "criterion": "出資/寄与等による経済的合理性の確認",
+          "points": 2
+        },
+        {
+          "criterion": "原則の収入・支出・資産・負債等の配分",
+          "points": 2
+        },
+        {
+          "criterion": "現金分配と帰属/期間を区別",
+          "points": 1
+        }
+      ],
+      "explanation": "金額を計算する前に必要事実を特定する問題です。99対1を適正とも不適正とも、この資料だけで断定しません。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q16",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1
+      ],
+      "prompt": "事業者が『迷惑料』を受けた。合意内容は、身体の傷害や固定資産の損害ではなく、店舗が使えず営業できなかった期間の売上・収益を補う金額であると確定した。適切な扱いを選んでください。",
+      "options": [
+        "迷惑料という名称なので全額非課税",
+        "営業収益の補償として、事業所得等の収入の規定を適用する",
+        "身体傷害の慰謝料へ必ず読み替える",
+        "必ず個人からの贈与とする"
+      ],
+      "answer": 1,
+      "explanation": "業務の休止等により収益を補償するものは、施行令94条等の収入代替の規定を確認します。身体の負傷のため働けなかった補償とは、原因となる損害が異なります。名称だけで非課税にしません。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q17",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1
+      ],
+      "prompt": "突発的事故で全て業務用の固定資産が失われた。資産損失計算上の損失額80万円に対し、その資産の損害への非課税賠償金20万円を受けた。損失の必要経費算入条件は満たし、他の補填・残存物・経費補填はない。必要経費へ残る資産損失を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "600000"
+      ],
+      "explanation": "損失80万円から補填20万円を控除し、未補填60万円が残ります。受取20万円を非課税にすることと、損失80万円を調整することを対応させます。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q18",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1
+      ],
+      "prompt": "被害者が治療費補填35万円、精神的損害への慰謝料60万円、負傷による就労不能の収益補償40万円を受けた。全て所定の身体傷害に基因する賠償金で、治療費自体は55万円。他の医療費や補填はない。医療費控除の足切り等の前に残る対象医療費を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "200000"
+      ],
+      "explanation": "医療費を補う35万円だけを対応させ、55−35＝20万円です。慰謝料60万円や就労不能補償40万円まで医療費から控除しません。受取賠償金の非課税判定と、医療費控除対象額の調整を分けます。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q19",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        2
+      ],
+      "prompt": "個人から所定の贈与として取得した投資用土地を、後年、利益を得て第三者へ売った。転売事業ではない。『取得時に所得税非課税だったため、その売却益も当然に非課税』という説明を訂正し、次に調べる計算資料を二つ以上挙げてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "個人からの贈与による取得の非課税と、その後の資産譲渡による所得を区別する。投資用土地の売却は土地の譲渡所得の計算へ進み、取得費の承継、譲渡費用、所有期間や適用特例等を確認する。取得時の非課税を売却へ自動的に広げない。",
+      "rubric": [
+        {
+          "criterion": "取得と後の譲渡を別取引とする",
+          "points": 2
+        },
+        {
+          "criterion": "土地の譲渡所得へ進む",
+          "points": 1
+        },
+        {
+          "criterion": "取得費承継/費用/所有期間等の必要資料を二つ以上示す",
+          "points": 2
+        }
+      ],
+      "explanation": "生活用動産等の別の非課税規定がある場合はその条件を調べます。本問の投資用土地を、贈与で取得したという理由だけで非課税にすることはできません。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q20",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        2
+      ],
+      "prompt": "同一年に、個人からの所定の現金贈与100万円と、雇用・事業と無関係な法人A・Bから、それぞれ単発の無償贈与35万円・45万円を受けた。法人の二件は一時所得に該当すると確定し、直接支出・他の一時所得はない。これらの受贈から総所得金額へ算入する額を円単位で求めてください。贈与税計算は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "150000"
+      ],
+      "explanation": "個人の贈与100万円は所定の所得税非課税です。法人の二件は年分を合算し、一時所得35＋45−50＝30万円、総所得への算入は30×1/2＝15万円です。法人ごとに50万円ずつ特別控除する処理や、個人の贈与まで加える処理を区別します。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q21",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        1
+      ],
+      "prompt": "事業ではない個人への貸付けについて、元本返済100万円と利子8万円が一括で振り込まれた。他の所得区分や特例に該当する事情はない。金額と所得区分の対応を選んでください。",
+      "options": [
+        "108万円全額が利子所得",
+        "108万円全額が雑所得",
+        "元本100万円を利子等の所得と分け、利子8万円は非営業用貸金の利子として雑所得の計算へ送る",
+        "利子8万円は必ず非課税"
+      ],
+      "answer": 2,
+      "explanation": "振込総額と所得の原因を区別します。元本返済は貸付金の回収として分け、非営業用貸金の利子は雑所得です。銀行預金等の利子所得と同じ日常語でも法の区分が異なります。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q22",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        1
+      ],
+      "prompt": "個人の受取Aは通常の勤務の対価である給料、Bは自己所有建物の貸付けによる賃料（事業・譲渡には当たらない）、Cは販売事業の棚卸商品代金である。所得区分の組合せを選んでください。",
+      "options": [
+        "A給与・B不動産・C事業",
+        "A一時・B譲渡・C譲渡",
+        "A給与・B利子・C一時",
+        "A雑・B事業・C配当"
+      ],
+      "answer": 0,
+      "explanation": "Aは給与、Bは所定の貸付けによる不動産、Cは事業の商品販売収入です。商品代金を資産売却という言葉だけで譲渡所得へ入れないようにします。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q23",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        1
+      ],
+      "prompt": "本人負担の民間保険契約に基づく年金が、公的年金等には該当せず、他の九所得にも当たらない雑所得と確定した。担当者が、国の老齢年金と同じ公的年金等控除をそのまま適用した。どの計算規定へ戻るべきか説明してください。金額計算は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "雑所得の中でも、公的年金等と公的年金等以外を区分する。本問は公的年金等に当たらない条件なので、公的年金等控除を自動適用せず、公的年金等以外の収入から所定の必要経費を控除する規定等で計算する。",
+      "rubric": [
+        {
+          "criterion": "雑所得内部の公的年金等/その他を区分",
+          "points": 2
+        },
+        {
+          "criterion": "本問へ公的年金等控除を自動適用しない",
+          "points": 1
+        },
+        {
+          "criterion": "収入と対応する必要経費等の規定へ戻る",
+          "points": 1
+        }
+      ],
+      "explanation": "年金という名前だけで同じ控除を使うことはできません。相続等で取得した年金受給権など別の特則がある例では、その条件もさらに確認します。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q24",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        1,
+        2
+      ],
+      "prompt": "2020年3月1日に取得した山林とその土地を2025年3月2日に譲渡した。立木の保有期間は5年を超え、山林所得の対象となる。土地の長短は譲渡年1月1日の所有期間で判断する。転売事業等はない。二つの系列の対応を選んでください。",
+      "options": [
+        "立木も土地も山林所得で処理",
+        "立木は山林所得、土地は1月1日時点で5年以下の短期分離譲渡の系列",
+        "立木も土地も長期総合譲渡",
+        "立木は雑所得、土地は給与所得"
+      ],
+      "answer": 1,
+      "explanation": "立木は実際の取得後5年超で山林所得の対象ですが、土地は2025年1月1日時点で2020年3月1日から5年を経過していないため短期側です。同じ5年でも判定時点と対象資産が異なります。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o01",
+        "zr2-shotoku-income-map-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q25",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        2
+      ],
+      "prompt": "対象要件を満たす上場配当と通算対象の上場株式譲渡損失がある人が『配当を申告分離にすれば通算できるので、全ての人について必ず最有利』と結論づけた。選択肢の違いと、追加確認が必要な条件を二つ以上挙げて説明してください。税率の具体計算は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "申告分離なら所定の損失通算ができる一方、総合課税ではその通算はできず、対象配当の配当控除等の取扱いが異なる。申告不要の選択も別にある。他の所得と税率、配当控除、各控除の所得要件、繰越損失、住民税等を確認して比較し、通算可能という一事実だけで全員に最有利とは決めない。",
+      "rubric": [
+        {
+          "criterion": "申告分離と総合の通算可否を区別",
+          "points": 2
+        },
+        {
+          "criterion": "配当控除または申告不要の違いを示す",
+          "points": 1
+        },
+        {
+          "criterion": "追加比較条件を二つ以上挙げる",
+          "points": 2
+        },
+        {
+          "criterion": "全員に最有利との断定を訂正",
+          "points": 1
+        }
+      ],
+      "explanation": "適用できる方式を確定した後で有利計算を行います。申告分離を選んでも所得区分は配当であり、他の所得指標への影響が全て消えるものではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-review-q26",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        2
+      ],
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o02"
+      ],
+      "prompt": "任意組合の原則の方法を用い、全額が2025年分と確定した事業収入550万円・適正な必要経費620万円を各組合員へ帰属させる。出資・労務等を踏まえ、合理的な損益分配割合はM30％・N70％と確認済みである。現金分配はない。Nの収入・必要経費・損益差額を求め、Nの給与所得から直ちに差し引いてよいか、次に確認する規定も説明してください。現金分配がないことの影響も説明してください。損益通算の結論や税額は求めません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "Nへ収入385万円、必要経費434万円が帰属し、差額は49万円の損失となる。現金分配がなくても当年分の帰属を計算する。Nの他の所得と通算する段階では、組合事業の所得区分、損失の必要経費算入や損益通算の制限等を確認し、この配分計算だけで給与から差し引くとは決めない。",
+      "rubric": [
+        {
+          "criterion": "収入385万円・必要経費434万円",
+          "points": 2
+        },
+        {
+          "criterion": "差額49万円の損失",
+          "points": 1
+        },
+        {
+          "criterion": "無分配でも帰属を計算する",
+          "points": 1
+        },
+        {
+          "criterion": "所得区分と損失/損益通算の制限等を次に確認し、配分だけで給与との通算を断定しない",
+          "points": 2
+        }
+      ],
+      "explanation": "550×70％＝385万円、620×70％＝434万円です。利益が出る例と同じ帰属方法で、損失も対応させます。ただし各組合員への帰属計算と、他の所得との損益通算は別段階です。詳細な組合損失の制限は後続教材で学びます。"
+    }
+  ],
+  "sourceCandidates": [
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "applicableVersion": "2026-04-03施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "12条、13条1〜4項。既存取得JSONのMainProvisionを確認"
+        },
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "21〜24条、26〜28条、30条、32〜35条。23/24/26/27/28/30/32/33/34/35のMainProvision本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "9条1項9・17・18号、34条、36条、51条、73条。凍結版9条該当号本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "2条1項3〜5号、7条、95条、161条。主に2条・7条を凍結版JSONで照合"
+        },
+        {
+          "lesson": "zr2-shotoku-taxpayer",
+          "location": "2条1項3〜5号、5条、7条、15〜16条、21条。既存取得JSONのMainProvisionを確認"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-attribution-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/01.htm",
+      "applicableVersion": "現行掲載を参照。独立の通達改正履歴照合はpending",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "12-1、12-2、12-5。資産の権利者、事業主、親族間の事業主判定"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-trust-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/02.htm",
+      "applicableVersion": "現行掲載。基準日以前の改正記載を照合",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "13-1〜13-4。受益者、各年分、収益費用、権利内容。参照段落の記載改正は2007年"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-partnership-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/05/16.htm",
+      "applicableVersion": "現行掲載。基準日前の記載改正を確認",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "36・37共-19、19の2、20、21。参照部分の改正記載は2005/2012年等"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093",
+      "applicableVersion": "2026-04-03指定APIの2026-04-01施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "52条4項。複数受益者の権利内容に応じた資産/負債/収益/費用帰属。凍結API本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "25条、30条全号、94条。4月3日指定API取得JSONのMainProvision本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "14〜15条、17条1〜4項。2026-04-03指定API取得JSONのMainProvision本文を読み、17条4項1〜6号の順序・金額・期間を照合"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "special-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "applicableVersion": "2026-04-03施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "3条1項、8の4第1〜2項、8の5第1〜2項、37の12の2第1〜2項の凍結本文を読了。土地株式等の個別特例は後続へ"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-finance-2025-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/pdf/Q/Q1.pdf",
+      "applicableVersion": "2025年分",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "VII上場株式等の配当等の課税関係、総合/申告分離/不要、通算と配当控除"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-forest",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1480.htm",
+      "applicableVersion": "現行補助解説。2026-04-03施行法を優先",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "山林5年、土地部分、山林所得の計算。凍結32/33条と照合"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-damages",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1700.htm",
+      "applicableVersion": "現行補助解説。施行済み凍結法令を優先",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "身体傷害、棚卸資産、仮店舗家賃、廃車補償、医療費補填。凍結法令30/94条と照合"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-suspension-pay",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1905.htm",
+      "applicableVersion": "令和8年4月1日現在法令等と表示。独立した関係労働法の確認はpending",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "労基法26条休業手当と76条等の休業補償。補助解説"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-residence-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/01/01.htm",
+      "applicableVersion": "現行掲載を参照。記載改正日と凍結法2条を照合",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "2-1〜2-4の3。参照段落の改正記載は2006年等の基準日前"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-remittance-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/02/01.htm",
+      "applicableVersion": "現行掲載。基準日後の改正記載を参照段落で認めず。独立の履歴照合はpending",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "7-2〜7-6。参照段落は2017年等の改正記載。所得/支払地/送金の順序"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-nonresident-2025-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/pdf/060.pdf",
+      "applicableVersion": "2025年分。2026年4月3日前の適用年の補助資料",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "非居住者の手引き・課税所得の範囲、送金の順序"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "applicableVersion": "2026-04-03施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-taxpayer",
+          "location": "15条1項・2項1/2号・3項2号、16条、21条"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-tax-place",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2029.htm",
+      "applicableVersion": "現行ページの補助解説。4月3日基準の法令を優先",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-taxpayer",
+          "location": "主な納税地、納税地の特例、変更後の申告書による変更。法令本文と照合"
+        }
+      ],
+      "independentReview": "pending"
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-shotoku-attribution-o01": [
+      "zr2-shotoku-scope-review-q11",
+      "zr2-shotoku-scope-review-q12",
+      "zr2-shotoku-scope-review-q13"
+    ],
+    "zr2-shotoku-attribution-o02": [
+      "zr2-shotoku-scope-review-q11",
+      "zr2-shotoku-scope-review-q12",
+      "zr2-shotoku-scope-review-q14",
+      "zr2-shotoku-scope-review-q15",
+      "zr2-shotoku-scope-review-q26"
+    ],
+    "zr2-shotoku-income-map-o01": [
+      "zr2-shotoku-scope-review-q21",
+      "zr2-shotoku-scope-review-q22",
+      "zr2-shotoku-scope-review-q23",
+      "zr2-shotoku-scope-review-q24"
+    ],
+    "zr2-shotoku-income-map-o02": [
+      "zr2-shotoku-scope-review-q24",
+      "zr2-shotoku-scope-review-q25"
+    ],
+    "zr2-shotoku-nontaxable-o01": [
+      "zr2-shotoku-scope-review-q16",
+      "zr2-shotoku-scope-review-q17",
+      "zr2-shotoku-scope-review-q18"
+    ],
+    "zr2-shotoku-nontaxable-o02": [
+      "zr2-shotoku-scope-review-q19",
+      "zr2-shotoku-scope-review-q20"
+    ],
+    "zr2-shotoku-residence-o01": [
+      "zr2-shotoku-scope-review-q6",
+      "zr2-shotoku-scope-review-q8",
+      "zr2-shotoku-scope-review-q9"
+    ],
+    "zr2-shotoku-residence-o02": [
+      "zr2-shotoku-scope-review-q7",
+      "zr2-shotoku-scope-review-q8",
+      "zr2-shotoku-scope-review-q10"
+    ],
+    "zr2-shotoku-taxpayer-o01": [
+      "zr2-shotoku-scope-review-q1",
+      "zr2-shotoku-scope-review-q5"
+    ],
+    "zr2-shotoku-taxpayer-o02": [
+      "zr2-shotoku-scope-review-q2",
+      "zr2-shotoku-scope-review-q3",
+      "zr2-shotoku-scope-review-q4"
+    ]
+  },
+  "selfReview": {
+    "reviewedOn": "2026-10-27",
+    "role": "author-self-check",
+    "rubricAlignment": "全記述問について設問要求と各criterionを照合。追加要求が必要な6問の設問/基準を明確化。独立レビューはpending",
+    "arithmetic": "全数値例題・設問を別計算で照合",
+    "status": "pending-independent-review",
+    "japanese": "natural-japaneseのlint/outline/terms/calquesを本文5本と評価文へ実行し、全文を文脈確認。繰返し否定・直訳調を修正。統計的な語彙/文長の警告、法定用語、誤答選択肢の否定、数学の足す/引く等は意味を確認して保持。独立レビュー状態は変更しない。",
+    "schema": "全101問題IDの重複なし、全記述ルーブリック配点合計、各問のobjective参照、25問復習の資料/表参照と10目標の被覆、レッスン設問の完全一致再利用ゼロを確認"
+  },
+  "reviewCorrections": [
+    {
+      "reviewer": "root",
+      "date": "2026-10-27",
+      "questionId": "zr2-shotoku-scope-review-q10",
+      "issue": "給与所得控除後の与件が2025年分と不整合",
+      "fix": "2025年の収入120万円−給与所得控除65万円＝所得55万円へ訂正。送金対象正解は収入基準で10万円のまま",
+      "source": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm"
+    }
+  ]
+}

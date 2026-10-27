@@ -1,0 +1,740 @@
+{
+  "id": "zr2-kokuzei-priority-general",
+  "subject": "kokuzei",
+  "title": "国税優先・費用・租税相互の順位を財産ごとに計算する",
+  "stage": "標準から応用へ",
+  "moduleId": "kokuzei-priority",
+  "minutes": 140,
+  "objectives": [
+    "一般優先と強制換価費用・直接滞納処分費を区別する",
+    "差押先着手・交付要求先着手・担保国税を適用する"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-release-replacement"
+  ],
+  "prerequisiteAuthoringNote": "親の指定により優先単元を先行執筆するが、調査・差押え単元の前提講は未執筆であり、履修可能・単元完了とは扱わない",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "2・8〜14・16・26・129条を版固定公式JSONで独立読解。条文番号12差押/13交付/14担保を確認。136条の費用範囲も読解"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "39条1〜3項を版固定公式JSONで独立読解"
+    },
+    {
+      "id": "collection-training",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf#page=70",
+      "version": "令和8年度・2026-01-01法令を基礎",
+      "location": "印刷63〜65頁/PDF70〜72頁の8条・先着手・担保・費用、印刷61〜62頁の配当対象・残余を読解。主法を優先"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "差押先着手",
+      "definition": "当該財産への滞納処分差押えに係る租税と交付要求租税を調整する基準"
+    },
+    {
+      "term": "交付要求先着手",
+      "definition": "破産を除く強制換価で交付要求の先後により租税相互を調整する基準"
+    },
+    {
+      "term": "担保を徴した国税",
+      "definition": "適法に徴した当該担保財産の換価代金について14条の優先を検討する国税"
+    },
+    {
+      "term": "直接の滞納処分費",
+      "definition": "その国税滞納処分による換価に係る滞納処分費。納税者の一般営業経費等とは異なる"
+    },
+    {
+      "term": "残余金",
+      "definition": "法定の配当をした後に残り、129条3項により原則滞納者へ交付する金銭"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "priority-ex1",
+      "section": "例題1：直接費と残余金を分ける",
+      "result": {
+        "cost": 100000,
+        "tax": 900000,
+        "returnToDefaulter": 400000,
+        "generalDebtPaid": 0
+      }
+    },
+    {
+      "id": "priority-ex2",
+      "section": "例題2：同じ差押えでも担保の有無で変わる配当",
+      "result": {
+        "noSecurity": {
+          "A": 700000,
+          "B": 420000,
+          "unpaidB": 180000
+        },
+        "withSecurity": {
+          "B": 600000,
+          "A": 520000,
+          "unpaidA": 180000
+        }
+      }
+    },
+    {
+      "id": "priority-ex3",
+      "section": "例題3：裁判所の手続に三つの租税が参加する",
+      "result": {
+        "cost": 200000,
+        "N": 800000,
+        "L": 1000000,
+        "M": 0,
+        "general": 0,
+        "unpaidL": 200000,
+        "unpaidM": 600000
+      }
+    },
+    {
+      "id": "priority-ex4",
+      "section": "例題4：換価起因の酒税を差押税より先に充てる",
+      "result": {
+        "cost": 20000,
+        "newLiquorTax": 120000,
+        "A": 300000,
+        "B": 60000,
+        "unpaidB": 140000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-priority-general-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "先に地方税の滞納処分による差押えがあり、国税がその財産へ交付要求した。他の特別優先等はない。国税の優先を判断する根拠として正しいものを選んでください。",
+      "options": [
+        "8条により常に国税が地方税より先",
+        "12条2項により差押地方税との先着手関係を確認する",
+        "両税の金額が大きい方を先にする",
+        "国税の申告書提出日だけで常に決める"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "国税相互・国税と地方税は先着手等の調整を確認します。8条の公課の定義に地方税をそのまま含めて絶対優先とする1は誤りです。3に金額基準はなく、4は担保私債権等の比較と混同しています。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "国税の滞納処分で土地を換価した。直接の滞納処分費の優先を判断するときの説明を選んでください。",
+      "options": [
+        "納税者の事務所家賃も費用なので常に同順位",
+        "その換価に係る滞納処分費かを確認し、10条の優先を適用する",
+        "別の財産の運搬費もすべて同じ原資から必ず先取り",
+        "費用は常に国税本税を満たした後"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "10条はその滞納処分に係る費用を、その換価代金から先に徴収する規定です。1と3は費用の関連を落とし、4は直接費の優先を逆にしています。個別費目が滞納処分費に当たるかは136条等も確認します。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "国税の滞納処分による換価代金285万円、直接滞納処分費15万円、差押国税100万円。一般の無担保貸付債権230万円は129条1項の配当対象に該当せず、その他の権利・租税もない。滞納者へ交付する残余金を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1700000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "費用15万円、国税100万円を充て、285−15−100＝170万円を滞納者へ交付します。順位を付ける前に129条の配当対象を確認し、一般無担保債権へ自動配当しません。この貸付債権は本手続から満たされていません。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "破産ではない裁判所の強制換価手続へ国税が適法に交付要求した。同手続に係る費用がある。9条について正しい説明を選んでください。",
+      "options": [
+        "国税だから手続費用より必ず先",
+        "国税はその手続費用に次いで徴収する",
+        "費用と国税を常に金額比で比例配分",
+        "国税の交付要求があると費用は消滅"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "9条はその強制換価手続に係る費用の次に国税を徴収すると定めます。1は優先の例外を落とし、3は法定順位を比例配分にし、4は費用の消滅を根拠なく導いています。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "11条・通則法39条による特別優先の対象を選ぶとき、正しい説明を選んでください。",
+      "options": [
+        "通常の事業売上に係る消費税の未納全額が自動で対象",
+        "酒税という税目であれば成立原因を問わずすべて対象",
+        "換価により物品の納税義務が成立する等、所定条項の条件を確認する",
+        "所得税の未納額を消費税等へ名称変更してよい"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "11条は所定条項により徴収する税額と、その原因物品の換価代金に結び付きます。39条の消費税等は消費税を除くため1は誤りです。2は成立原因を落とし、4に名称変更による特別優先はありません。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "課税物品の強制換価について通則法39条を適用しようとしている。同条の事前通知先と、通知後に換価されたときの確定・交付要求に関する効果を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "税務署長は執行機関と納税者へ徴収すべき税額その他必要事項をあらかじめ通知する。その通知後に換価された場合、通知税額に相当する消費税等が決定により確定されたものとみなし、執行機関への通知は交付要求とみなす。個別税法上の物品の納税義務成立等の条件も前提となる。",
+      "rubric": [
+        {
+          "criterion": "執行機関・納税者への事前通知",
+          "points": 2
+        },
+        {
+          "criterion": "決定による確定のみなし",
+          "points": 1
+        },
+        {
+          "criterion": "交付要求のみなし",
+          "points": 1
+        }
+      ],
+      "explanation": "単に売却時に税目名を付ければよいのではなく、39条の対象・通知・換価の順序を確認します。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "土地の換価代金170万円、直接費5万円。差押国税A120万円、交付要求国税B90万円があり、担保国税・その他の権利等はない。Bの期限は古いが12条の先着手関係ではAが先となる。Bの配当額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "450000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "原資は170−5＝165万円。A120万円を満たし、Bは45万円です。Bの期限が古いことだけで、12条の先着手を逆転しません。Bの不足は90−45＝45万円、費用を含む合計5＋120＋45＝170万円です。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "前問と独立の事例で、土地代金170万円、直接費5万円、差押国税A120万円、交付要求国税B90万円である。この土地は適法にBの担保として徴されている。他の権利等はない。Aの配当額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "750000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "費用控除後165万円から14条によりB90万円を先に満たし、Aは75万円です。Aの不足は45万円です。先着手に優先する14条を適用しますが、費用5万円を後回しにはしません。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "国税Bに保証人が付いたという資料だけがある。14条の担保財産優先について適切な判断を選んでください。",
+      "options": [
+        "保証人がいれば納税者の全財産でB優先",
+        "当該財産が適法にBの担保として徴されたかを別に確認する",
+        "保証人の名があれば他の国税は消える",
+        "人的保証と特定財産の担保は常に同じ"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "14条は担保財産とその換価代金についての規定です。人的保証の存在だけで全財産を担保財産とせず、財産と担保対象税額を特定します。1・3・4はいずれも対象と効果を拡張しています。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "破産ではない裁判所の強制換価手続で、地方税が5月10日、国税が5月12日にそれぞれ適法に交付要求した。担保国税等の別段の優先はない。租税相互の順序を選んでください。",
+      "options": [
+        "国税が必ず先",
+        "13条により国税は先の地方税に次ぐ",
+        "交付要求は同順位なので必ず按分",
+        "法定納期限が資料にないので一切判定不能"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "13条は交付要求先着手による調整を定めます。後の国税は先の地方税に次ぎます。1は国税絶対優先、3は先後の無視、4はこの調整と担保私債権の基準日を混同しています。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "ある資料は強制換価手続を「破産手続」と記載している。交付要求の順だけで13条の通常順位表を当てはめる答案について、条文の適用範囲から指摘してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "13条は強制換価手続から破産手続を除いている。したがって、交付要求書の先後だけを用いた同条の通常表では結論を出せない。破産法等の債権区分・配当の規定と交付要求の効果を確認する必要がある。13条の除外を指摘しただけで具体的な破産配当額まで算定済みとはしない。",
+      "rubric": [
+        {
+          "criterion": "13条の破産除外",
+          "points": 2
+        },
+        {
+          "criterion": "通常表の機械適用を否定",
+          "points": 1
+        },
+        {
+          "criterion": "関係法と債権区分の別検討",
+          "points": 1
+        }
+      ],
+      "explanation": "本問は破産配当の全技能を評価する問題ではありません。後続 delivery-participation と rights-distribution で関係法に接続します。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "国税Aにつき財産甲を先に差し押さえたが、別の財産乙には別の差押・担保関係がある。Aの優先範囲の考え方を選んでください。",
+      "options": [
+        "納税者の全財産でAが永久に最優先",
+        "財産ごとに差押え・担保・交付要求対象を確認する",
+        "税務署の名称だけで全財産の順位を固定",
+        "甲の差押えで乙の私有権も消える"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "12・14条の優先は当該財産・換価代金・対象税額に結び付きます。1と3は包括的な機関優先に広げ、4は差押えと権利消滅を取り違えています。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "強制換価により生じ、通則法39条等の条件を満たす酒税11万円がある。代金70万円、直接滞納処分費3万円、従前の差押国税A50万円、交付要求国税B30万円、他の権利等なし。Bの未充足残額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "240000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "直接費3万円、11条の酒税11万円を先に充てると原資56万円です。12条のA50万円、B6万円となり、Bの不足は30−6＝24万円。合計3＋11＋50＋6＝70万円です。酒税をAの後へ回したり二重に控除したりしません。"
+    },
+    {
+      "id": "zr2-kokuzei-priority-general-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-priority-general",
+      "prompt": "租税同士は差押え・交付要求先着手で順位が決まるが、私債権の抵当権は別の基準日で優先が調整される。「本講の租税相互の表に銀行を一行加えれば、どの場合も一列の順位が作れる」という説明の限界を述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "租税相互の先着手と、担保私債権との法定納期限等・設定時期による調整は基準が異なる。相対的な優先が循環する場合には26条の競合調整が必要となり、一列へ単純追加する表だけでは配当を決められない。財産・税額・私債権ごとの条件を整理し、担保の各講と competing-distribution で総額・グループ内順位を計算する。",
+      "rubric": [
+        {
+          "criterion": "二つの優先基準の違い",
+          "points": 2
+        },
+        {
+          "criterion": "循環と26条の必要性",
+          "points": 1
+        },
+        {
+          "criterion": "個別条件と後続計算を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "本講は26条の全計算を教えたことにはしません。先着手だけで私債権まで決めることを防ぐ適用範囲の問題です。"
+    }
+  ],
+  "scopeNotes": [
+    "例題1は129条の配当対象を満たさない一般無担保債権を配当先にしない。司法手続の配当参加と混同しない",
+    "破産配当・交付要求の全手続、私債権の個別権利と循環調整は continuationCoverage の実在する後続講へ接続。導入で触れたことだけを修得と数えない"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "交付要求・参加差押えの全要件と破産を含む執行手続との関係",
+      "plannedLessonIds": [
+        "zr2-kokuzei-delivery-participation"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "配当対象・残余・債権額確認・配当書・異議等",
+      "plannedLessonIds": [
+        "zr2-kokuzei-rights-distribution"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "担保私債権・先取特権・留置権の各要件",
+      "plannedLessonIds": [
+        "zr2-kokuzei-pledge-mortgage",
+        "zr2-kokuzei-privileges-liens",
+        "zr2-kokuzei-provisional-security"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "私債権との循環及び26条の配当総額・内部配分",
+      "plannedLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "status": "planned_not_authored"
+    }
+  ],
+  "authorChecks": {
+    "numericChecks": [
+      "例題1:140-10-90=40万円、一般債権へは配当しない",
+      "例題2:120-8=112、112-70=42、112-60=52万円、各不足18万円",
+      "例題3:200-20=180、180-80=100万円、後続0円",
+      "例題4:50-2-12-30=6、20-6=14万円",
+      "問3:285-15-100=170、問7:170-5-120=45、問8:170-5-90=75、問13:30-(70-3-11-50)=24万円"
+    ],
+    "legalChecks": "凍結徴収8〜14・16・26・129及び通則39を読解。作成途中に一般無担保債権の国税公売配当対象を再点検して修正。全独立レビューpending",
+    "unresolved": "基準日固定の関係法令を使う破産手続全体の執筆は delivery-participation が行う。本講は13条の除外とその理由の入口まで",
+    "editorial": "全本文・全14設問と解説を読み、税目名・費用・当該財産・関係者を明記。法的対比は維持。作問者確認であり独立レビューではない",
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 12,
+        "line": 23,
+        "finding": "なし（129条配当対象の初稿修正後）",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 13,
+        "line": 25,
+        "finding": "なし（129条配当対象の初稿修正後）",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 14,
+        "line": 27,
+        "finding": "なし（129条配当対象の初稿修正後）",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 15,
+        "line": 29,
+        "finding": "なし（129条配当対象の初稿修正後）",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 16,
+        "line": 31,
+        "finding": "なし（129条配当対象の初稿修正後）",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 17,
+        "line": 33,
+        "finding": "なし（129条配当対象の初稿修正後）",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 18,
+        "line": 35,
+        "finding": "なし（129条配当対象の初稿修正後）",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 19,
+        "line": 37,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 20,
+        "line": 39,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 21,
+        "line": 41,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 22,
+        "line": 43,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 23,
+        "line": 45,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 24,
+        "line": 47,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 25,
+        "line": 49,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 26,
+        "line": 51,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 27,
+        "line": 53,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 28,
+        "line": 55,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 29,
+        "line": 57,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 30,
+        "line": 59,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 31,
+        "line": 61,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 32,
+        "line": 63,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 33,
+        "line": 65,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 34,
+        "line": 67,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 35,
+        "line": 69,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 36,
+        "line": 71,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 37,
+        "line": 73,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 38,
+        "line": 75,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 39,
+        "line": 77,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 40,
+        "line": 79,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 41,
+        "line": 81,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 42,
+        "line": 83,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 43,
+        "line": 85,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 44,
+        "line": 87,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 45,
+        "line": 89,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 46,
+        "line": 91,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 47,
+        "line": 93,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 48,
+        "line": 95,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 49,
+        "line": 96,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      },
+      {
+        "paragraph": 50,
+        "line": 97,
+        "finding": "なし",
+        "action": "対象財産・手続・費用・税額・不適用条件と前後関係を作問者が再読"
+      }
+    ]
+  }
+}

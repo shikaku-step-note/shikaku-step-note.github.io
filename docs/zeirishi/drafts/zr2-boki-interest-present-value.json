@@ -1,0 +1,452 @@
+{
+  "id": "zr2-boki-interest-present-value",
+  "subject": "boki",
+  "title": "利息・複利・現在価値を受払時点から計算する",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-boki-unit-records",
+  "minutes": 120,
+  "objectives": [
+    "期間・日数・途中の元本変動に応じた単利の発生額を求める",
+    "複利の将来価値と現在価値を時間軸上で対応させる",
+    "年初年末・不均等な受払額・最終処分額・端数処理を反映して現在価値を計算する",
+    "割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない"
+  ],
+  "prerequisites": [
+    "zr2-boki-account-equation",
+    "zr2-boki-accrual-adjustments"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "sourceCandidates": [
+    {
+      "id": "asbj-finance",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+      "location": "2019年7月4日版、第14・16・26項と注5、第28項(2)②。償却原価の条件と貸倒見積りにおける割引の位置付け。計算練習を全金融商品の評価原則へ一般化しない"
+    },
+    {
+      "id": "ac2-finance-guide",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+      "location": "2025年3月11日版・移管指針9、第115項。当初約定利子率又は取得当初実効利子率の条件"
+    },
+    {
+      "id": "impairment",
+      "url": "https://www.fsa.go.jp/news/newsj/14/singi/f-20020809-1/f-20020809c.pdf",
+      "location": "2002年8月9日意見書・三3(4)(5)、基準二2・3・5。割引前の認識判定と使用価値、リスクと税引前の整合。旧日付を直ちに最新個別適用指針の代わりにはしない"
+    },
+    {
+      "id": "jcci-interest142",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+      "location": "第142回3級 出題の意図・講評、第1問3、PDF1頁。資料で日数が確定できない場合の月割指定を読む趣旨"
+    },
+    {
+      "id": "jcci-bond-interest124",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-02-kouhyou.pdf",
+      "location": "第124回2級 出題の意図・講評、第1問4、PDF1頁。債券を利払日以外に取得するときの端数利息、売買代金との区分、買い手の利息勘定借方記入の説明"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "単利",
+      "definition": "各期間の利息を元本へ組み入れず、対象元本と率と期間で利息を計算する方法"
+    },
+    {
+      "term": "複利",
+      "definition": "生じた利息を元本へ組み入れ、その合計に次の期間の利息が付く条件で計算する方法"
+    },
+    {
+      "term": "現在価値",
+      "definition": "将来の受払額を、対応する率と期間で割り引いて評価日時点へ換算した額"
+    },
+    {
+      "term": "割引係数",
+      "definition": "一年ごとの率rでn年後の額を現在へ戻すときに掛ける1÷(1＋r)のn乗"
+    },
+    {
+      "term": "期末払いの年金現価",
+      "definition": "等しい間隔の各期末に同額を受け払う流れを、各時点から評価日へ割り引いた合計額"
+    },
+    {
+      "term": "表面利率",
+      "definition": "債券等の額面に対して契約上の利払いを計算するための率"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-interest-present-value-ex1",
+      "section": "例題1：日割と、元本の途中返済を計算する",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "dayInterest": 10800,
+        "firstHalf": 40000,
+        "secondHalf": 30000,
+        "annualInterest": 70000
+      }
+    },
+    {
+      "id": "zr2-boki-interest-present-value-ex2",
+      "section": "例題2：二年後の一回払いを現在へ戻す",
+      "objectives": [
+        2,
+        4
+      ],
+      "results": {
+        "present": 1000000,
+        "oneYear": 1100000,
+        "future": 1210000,
+        "simpleFuture": 1200000
+      }
+    },
+    {
+      "id": "zr2-boki-interest-present-value-ex3",
+      "section": "例題3：年末払いと年初払いを比べる",
+      "objectives": [
+        2,
+        3
+      ],
+      "results": {
+        "arrears": 298422,
+        "due": 328264,
+        "roundEachArrears": 298423
+      }
+    },
+    {
+      "id": "zr2-boki-interest-present-value-ex4",
+      "section": "例題4：毎年異なる受取額と、最終処分額を同じ日に集める",
+      "objectives": [
+        3,
+        4
+      ],
+      "results": {
+        "present": 894504,
+        "nominalTotal": 1000000
+      }
+    },
+    {
+      "id": "zr2-boki-interest-present-value-ex5",
+      "section": "例題5：期中取得した債券の経過利息を分ける",
+      "objectives": [
+        1,
+        4
+      ],
+      "results": {
+        "securityCost": 800000,
+        "accruedPaidToSeller": 8000,
+        "cashPaid": 808000,
+        "couponCash": 32000,
+        "currentCouponIncome": 24000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-interest-present-value-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "元本2,400,000円、年利2.5％で5か月間貸し付けた。元本変動なし、月割単利、手数料等なし。この期間の利息を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "25000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "2,400,000×0.025×5÷12＝25,000円。年利息60,000円の5か月分です。元本の返還額はこの収益へ含めません。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "元本1,825,000円、年利2％、利息対象日数73日、一年365日の単利計算と指定されている。元本変動なし。利息を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "7300"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "1,825,000×0.02×73÷365＝7,300円。73÷365＝0.2、年間利息36,500円の0.2年分です。月数への概算置換は指定と異なります。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "1月1日の貸付元本1,200,000円、年利6％。5月1日に元本300,000円が返済され、以後年末まで900,000円のまま。月割単利で当期一年の利息を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "60000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "1,200,000×6％×4÷12＝24,000円、900,000×6％×8÷12＝36,000円、合計60,000円です。初めの元本で一年計算すると72,000円となり、返済済み元本の8か月分12,000円だけ過大です。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "評価日の三年後に1,331,000円を一度受け取り、その間の受取りはない。年10％の一年複利で割り引く現在価値を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1000000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "1,331,000÷1.1³＝1,000,000円。1,000,000×1.1³＝1,331,000円と将来額へ戻して検算します。三年分30％を将来額から引く計算ではありません。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "一年後の年末に121,000円、二年後の年末に242,000円を受け取る。年10％の一年複利で評価日の現在価値を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "310000"
+      ],
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "121,000÷1.1＝110,000円、242,000÷1.1²＝200,000円で、合計310,000円です。合計363,000円を一括して二年分割り引くと最初の受取りを遅らせてしまいます。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "評価日の当日と一年後の二回、121,000円ずつ受け取る。年10％の一年複利の現在価値はどれですか。",
+      "options": [
+        "200,000円",
+        "210,000円",
+        "242,000円",
+        "231,000円"
+      ],
+      "answer": 3,
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "当日は121,000円のまま、一年後は121,000÷1.1＝110,000円で、合計231,000円です。2は一年後・二年後の払いと読んだ額、3は割引なし、1は合計を全て二年後の額と誤読した計算です。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "通常の貸付債権について、2019年版金融商品会計基準の貸倒懸念債権のキャッシュ・フロー見積法を適用する。当初約定利子率6％、決算日の市場利率8％とある。取得した債権ではなく、別の修正条件もない。使う率と判断はどれですか。",
+      "options": [
+        "現在価値なので常に市場利率8％",
+        "発生当初の約定利子率6％",
+        "二つの平均7％",
+        "回収見積額を減らすため自分で10％へ上乗せ"
+      ],
+      "answer": 1,
+      "objectives": [
+        4
+      ],
+      "explanation": "この方法・条件では当初約定利子率6％を使います。1は貸倒見積りの指定条件を市場評価と混同し、3・4は基準にも与件にもない率を作っています。異なる測定目的で使う率を持ち込まないことを確認します。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "一年後・二年後・三年後の各年末に100,001円を受け取る。年10％の一年複利で、途中で丸めず合計後に円未満四捨五入する。現在価値を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "248688"
+      ],
+      "objectives": [
+        3
+      ],
+      "explanation": "100,001÷1.1＋100,001÷1.1²＋100,001÷1.1³＝248,687.68595…円、答え248,688円です。各年を先に丸めると90,910＋82,645＋75,132＝248,687円となりますが、本問の指定とは違います。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "年5％の一年複利で評価する。評価日当日に受け取る200,000円について正しいものはどれですか。",
+      "options": [
+        "一年後と同じく1.05で割る",
+        "二年後と同じく1.05²で割る",
+        "受取時点が評価日なので200,000円のまま",
+        "受取りなので必ず0円とする"
+      ],
+      "answer": 2,
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "当日は経過期間0なので割引係数は1です。1・2は待つ期間を作り、4は受取額そのものを消しています。すでに帳簿へ計上している額を重ねるかという問題とは区別し、この問いは受払流列の評価を尋ねています。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "一年後に受け取る額が不明で、ほかの受払いはない。年10％の一年複利で評価した現在価値が500,000円である。その一年後の受取額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "550000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "500,000×1.1＝550,000円です。将来額を求める方向なので掛けます。550,000÷1.1＝500,000円と逆向きでも確認します。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "年10％の一年複利で、二年後に一回1,210,000円を受け取る案Aと、一年後に600,000円、二年後に610,000円を受け取る案Bを比べる。途中で丸めず合計後円未満四捨五入とし、両案の現在価値と大小の理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "Aは1,210,000÷1.1²＝1,000,000円。Bは600,000÷1.1＋610,000÷1.1²＝1,049,586.776…円で1,049,587円。名目合計は同じだが、Bは600,000円を一年早く受け取るため、正の割引率では現在価値が大きい。",
+      "rubric": [
+        {
+          "criterion": "Aの現在価値1,000,000円を求める",
+          "points": 1
+        },
+        {
+          "criterion": "Bを受取時点ごとに割り引き1,049,587円と求める",
+          "points": 2
+        },
+        {
+          "criterion": "同じ名目合計でもBの一部受取が早いため価値が大きいと説明する",
+          "points": 1
+        }
+      ],
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "Aの二年後600,000円をBの一年後へ早めた部分だけを比べても差49,586.776…円が出ます。単にBの合計額が大きいという理由ではありません。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "固定資産の減損計算資料に、割引前将来キャッシュ・フロー合計900,000円、その現在価値780,000円、帳簿価額850,000円とある。認識判定の比較には割引前の額を用いる条件である。担当者は「現在価値780,000円が帳簿価額を下回るから、認識判定は当然に満たす」とした。比較すべき額と、この結論の問題を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "指定された認識判定では割引前900,000円と帳簿850,000円を比較する。900,000円は850,000円を上回るので、現在価値780,000円だけを理由にこの判定を満たすとはいえない。割引する使用価値の測定と、割引前を使う認識判定を区別する必要がある。",
+      "rubric": [
+        {
+          "criterion": "比較額が割引前900,000円と帳簿850,000円であると示す",
+          "points": 2
+        },
+        {
+          "criterion": "900,000円が850,000円を上回ると判断する",
+          "points": 1
+        },
+        {
+          "criterion": "認識判定と現在価値による測定の段階を区別する",
+          "points": 1
+        }
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "減損の計算全体をこの一問で扱うものではなく、指定された段階に適切な額を使えるかを確認します。測定段階に進む条件や正味売却価額等は別途学びます。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q13",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "額面1,200,000円、年利6％、毎年12月31日に一年分の利払いがある債券を10月1日に額面と同額で取得した。1〜9月の経過利息を売り手に別払いする。月割、税・手数料・金利調整差額なし。経過利息は有価証券利息の借方へ記帳する方式とする。取得時の支払総額と仕訳、12月末に一年分を受け取った後の当期表面利息収益を求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "年間表面利息72,000円、経過利息9か月分54,000円。取得時は有価証券1,200,000円・有価証券利息54,000円／預金1,254,000円。年末受取72,000円を同利息勘定貸方へ記帳すると当期表面利息収益18,000円で、自社保有3か月分と一致する。",
+      "rubric": [
+        {
+          "criterion": "経過利息54,000円と支払総額1,254,000円を求める",
+          "points": 2
+        },
+        {
+          "criterion": "有価証券本体と利息を分けた取得仕訳を示す",
+          "points": 2
+        },
+        {
+          "criterion": "当期の表面利息収益18,000円を求める",
+          "points": 1
+        }
+      ],
+      "objectives": [
+        1,
+        4
+      ],
+      "explanation": "額面・取得原価・経過利息を分けます。端数利息を本体へ加えたまま、利払時の72,000円を全額収益とすれば、この条件では収益が54,000円過大になります。"
+    },
+    {
+      "id": "zr2-boki-interest-present-value-q14",
+      "field": "boki",
+      "lesson": "zr2-boki-interest-present-value",
+      "prompt": "評価日の三年後の年末に1,157,625円を一度支払い、ほかの受払いはない。指定された年5％の一年複利で、この将来支払いの現在価値の大きさを正の円数で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1000000"
+      ],
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "1,157,625÷1.05³＝1,000,000円です。本問は支払額の現在価値の大きさを正額で尋ねています。資金流列を受取正・支払負で表示するときの−1,000,000円とは符号の約束が違います。あらゆる債務の認識額をこの計算で決めるという意味ではありません。"
+    }
+  ],
+  "deferredScope": [
+    {
+      "topic": "満期保有目的債券の償却原価・端数利息・利息配分表",
+      "plannedIds": [
+        "zr2-boki-bonds-effective-interest"
+      ]
+    },
+    {
+      "topic": "社債発行差額と利息配分",
+      "plannedIds": [
+        "zr2-boki-bonds-issue-retire"
+      ]
+    },
+    {
+      "topic": "貸倒見積りの率選択と回収時点の更新",
+      "plannedIds": [
+        "zr2-boki-credit-loss-measurement",
+        "zr2-boki-bad-debt-dcf"
+      ]
+    },
+    {
+      "topic": "減損の認識・測定・資産グループ・リスクの対応",
+      "plannedIds": [
+        "zr2-boki-impairment-groups"
+      ]
+    },
+    {
+      "topic": "リース料の範囲・割引率・年金現価と認識",
+      "plannedIds": [
+        "zr2-boki-lease-finance",
+        "zr2-boki-lease-new-applicability"
+      ]
+    }
+  ]
+}

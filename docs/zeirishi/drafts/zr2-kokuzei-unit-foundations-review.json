@@ -1,0 +1,1613 @@
+{
+  "id": "zr2-kokuzei-unit-foundations-review",
+  "subject": "kokuzei",
+  "type": "independent_unit_assessment",
+  "moduleId": "kokuzei-foundations",
+  "title": "徴収の基礎単元：当事者・日付・承継・附帯税をつないで判断する",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "targetLessonIds": [
+    "zr2-kokuzei-framework",
+    "zr2-kokuzei-private-law",
+    "zr2-kokuzei-tax-timeline",
+    "zr2-kokuzei-demand-acceleration",
+    "zr2-kokuzei-limitations-succession",
+    "zr2-kokuzei-late-tax"
+  ],
+  "questionCount": 25,
+  "totalPoints": 100,
+  "glossaryQuestionCount": 12,
+  "glossaryTotalPoints": 24,
+  "gradingPolicy": "独自の学習用配点。数値入力にも根拠・途中過程の記述を求める。模範解答と実質同義の説明を認める。公式の非公表採点基準、合否判定、時間妥当性の検証済み表示には用いない",
+  "durationMinutes": null,
+  "durationStatus": "未試行。学習用の取り組み時間と本試験120分模試の成立を同一視しない",
+  "questions": [
+    {
+      "id": "zr2-kokuzei-foundations-review-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-framework",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-framework": [
+          1,
+          2
+        ],
+        "zr2-kokuzei-private-law": [
+          1
+        ]
+      },
+      "prompt": "工事会社あおいは従業員給与の源泉所得税を未納にしている。同社には売掛金があり、顧客はまだ代金を払っていない。顧客は給与から税を引かれていない。国税の納付義務者、滞納者、売掛金を差し押さえる場合の第三債務者を特定し、従業員や顧客を未納国税の納税者と取り違えない理由を述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "源泉徴収義務者であるあおいが国へ納付する義務を負い、未納なら滞納者となる。売掛金の債務者である顧客は、その債権差押えの第三債務者である。従業員が給与の支払を受けることや顧客が工事代金を負うことは、顧客・従業員をこの未納源泉税の納付義務者にする理由にならない。売掛金は会社に帰属する債権で、顧客の全財産を会社財産とみなすのでもない。",
+      "rubric": [
+        {
+          "criterion": "会社の源泉納付義務・滞納者を特定",
+          "points": 2
+        },
+        {
+          "criterion": "顧客の第三債務者と従業員の地位を区分",
+          "points": 1
+        },
+        {
+          "criterion": "会社の債権と顧客財産の帰属を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "源泉徴収義務者であるあおいが国へ納付する義務を負い、未納なら滞納者となる。売掛金の債務者である顧客は、その債権差押えの第三債務者である。従業員が給与の支払を受けることや顧客が工事代金を負うことは、顧客・従業員をこの未納源泉税の納付義務者にする理由にならない。売掛金は会社に帰属する債権で、顧客の全財産を会社財産とみなすのでもない。",
+      "sourceAnchors": [
+        "徴収法2条",
+        "通則法15条・源泉徴収所得税の区分"
+      ],
+      "independentCaseDesign": "給与と売掛金が異なる当事者へ向かう関係図を自力で作る"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-framework",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-framework": [
+          3
+        ]
+      },
+      "prompt": "会社の現在の納税地は税務署Aの管轄にある。一方、過去の別税額は適法に税務署Bへ徴収引継ぎされている。また税関長が徴収する輸入国税が別にある。「現在地がAなので、三つともA以外は一切徴収できない」という判断を検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "通則法43条の原則は現在の納税地を所轄する税務署長による徴収である。適法な徴収引継ぎの対象税額はその引継ぎに従い、税関長が徴収する国税の例外も別に扱う。所在地だけで引継ぎや税関の権限を消せないため、税額・徴収機関・引継ぎ対象を別行にする。",
+      "rubric": [
+        {
+          "criterion": "現在の納税地の原則",
+          "points": 1
+        },
+        {
+          "criterion": "引継ぎの対象額を区分",
+          "points": 1
+        },
+        {
+          "criterion": "税関の例外を区分",
+          "points": 1
+        },
+        {
+          "criterion": "税額別の結論・資料を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "通則法43条の原則は現在の納税地を所轄する税務署長による徴収である。適法な徴収引継ぎの対象税額はその引継ぎに従い、税関長が徴収する国税の例外も別に扱う。所在地だけで引継ぎや税関の権限を消せないため、税額・徴収機関・引継ぎ対象を別行にする。",
+      "sourceAnchors": [
+        "通則法43条"
+      ],
+      "independentCaseDesign": "一社の三つの徴収経路を同時に整理する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-framework",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-framework": [
+          4
+        ],
+        "zr2-kokuzei-private-law": [
+          2
+        ]
+      },
+      "prompt": "国税と抵当権が競合する財産の売却代金は180万円である。資料には抵当権者優先の額110万円、続いて国税が満たされること及び費用なしが法定条件として確定している。未納国税は95万円である。契約書に「国税より担保を優先する」とあることだけを順位の根拠にできるか述べ、国税への配当額と残額も示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "契約の一文だけで法定優先を変更するのではなく、国税徴収法の原則と担保権調整により順位を判断する。本問は抵当権110万円優先の法定条件が確定しているため、代金180−110＝70万円を国税へ配当する。未納国税95−70＝25万円が残る。担保の存在は所有権取得と同じ意味でもない。",
+      "rubric": [
+        {
+          "criterion": "法定優先を根拠とし契約だけで決めない",
+          "points": 1
+        },
+        {
+          "criterion": "国税配当70万円",
+          "points": 1
+        },
+        {
+          "criterion": "国税残額25万円",
+          "points": 1
+        },
+        {
+          "criterion": "担保と所有権を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "契約の一文だけで法定優先を変更するのではなく、国税徴収法の原則と担保権調整により順位を判断する。本問は抵当権110万円優先の法定条件が確定しているため、代金180−110＝70万円を国税へ配当する。未納国税95−70＝25万円が残る。担保の存在は所有権取得と同じ意味でもない。",
+      "sourceAnchors": [
+        "徴収法8・16条等",
+        "民法369条"
+      ],
+      "independentCaseDesign": "法定条件と当事者間契約の効力を区分して配当を照合する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-private-law",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-private-law": [
+          3
+        ]
+      },
+      "prompt": "合資会社の有限責任社員みずきは約束した出資120万円を全額履行した。会社の財産価値が後に減り、国税の未納が生じた。個人保証その他の特別な責任原因はない。「出資価値が半減したので、みずきは減少分60万円を会社の債権者へ直接払い直す」といえるか、法人と社員を区分して説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "会社と社員は別の主体であり、投資価値の減少は、約束した出資の未履行と同じではない。有限責任社員の未履行出資に基づく対外責任を検討する際、120万円の全額を履行済みという条件を用いる。市場価値の下落60万円を未履行出資に置き換えて直接責任を作れない。個人保証や徴収法上の個別責任は別の要件で判断する。",
+      "rubric": [
+        {
+          "criterion": "会社と社員を別主体とする",
+          "points": 1
+        },
+        {
+          "criterion": "出資履行済みを確認",
+          "points": 1
+        },
+        {
+          "criterion": "価値下落と未履行出資を区別",
+          "points": 1
+        },
+        {
+          "criterion": "保証・個別法責任を別判断とする",
+          "points": 1
+        }
+      ],
+      "explanation": "会社と社員は別の主体であり、投資価値の減少は、約束した出資の未履行と同じではない。有限責任社員の未履行出資に基づく対外責任を検討する際、120万円の全額を履行済みという条件を用いる。市場価値の下落60万円を未履行出資に置き換えて直接責任を作れない。個人保証や徴収法上の個別責任は別の要件で判断する。",
+      "sourceAnchors": [
+        "会社法576・580条等"
+      ],
+      "independentCaseDesign": "資本価値下落を未払出資と誤認する判断を修正する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-private-law",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-private-law": [
+          4
+        ],
+        "zr2-kokuzei-limitations-succession": [
+          2
+        ]
+      },
+      "prompt": "唯一の相続人すみれは適法に限定承認した。承継対象国税は90万円、相続で得た財産の価額は55万円、固有財産は200万円である。通則法5条1項後段が適用され、他の責任原因や評価争いはない。承継対象税額と納付責任の限度を分け、固有財産が多いことを理由に単純承認と同じ扱いにできるか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "承継対象の国税額は90万円だが、適法な限定承認の場合は相続で得た財産の限度で納付する責めに任ずるため、本問の責任限度は55万円である。固有財産200万円を相続財産へ加えて限度を拡大しない。税額の承継と責任財産・責任限度は別であり、単純承認との違いを保持する。",
+      "rubric": [
+        {
+          "criterion": "承継対象額90万円",
+          "points": 1
+        },
+        {
+          "criterion": "限定承認の責任限度55万円",
+          "points": 2
+        },
+        {
+          "criterion": "固有財産を限度へ加えない理由",
+          "points": 1
+        }
+      ],
+      "explanation": "承継対象の国税額は90万円だが、適法な限定承認の場合は相続で得た財産の限度で納付する責めに任ずるため、本問の責任限度は55万円である。固有財産200万円を相続財産へ加えて限度を拡大しない。税額の承継と責任財産・責任限度は別であり、単純承認との違いを保持する。",
+      "sourceAnchors": [
+        "通則法5条1項",
+        "民法922条"
+      ],
+      "independentCaseDesign": "単純承認の通常例から限定承認へ法的分岐を変える"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-tax-timeline",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-tax-timeline": [
+          1
+        ]
+      },
+      "prompt": "法人ひかりの通常の事業年度は2026年3月31日に終了した。同社は課税資産の売上を3月9日に行い、3月25日に源泉徴収すべき給与を支払った。この三つの通常類型について、法人税・売上に係る消費税・源泉所得税の納税義務成立をすべて3月31日とする表を訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "通常の法人税は事業年度終了時の3月31日に成立する。売上に係る消費税は課税資産の譲渡等の時という通常類型に従い3月9日、源泉所得税は所得支払時の3月25日に成立する。申告日や納付日は別であり、消費税の課税期間末と個々の納税義務の成立を同一にしない。",
+      "rubric": [
+        {
+          "criterion": "法人税3月31日",
+          "points": 1
+        },
+        {
+          "criterion": "消費税3月9日",
+          "points": 1
+        },
+        {
+          "criterion": "源泉税3月25日",
+          "points": 1
+        },
+        {
+          "criterion": "成立と課税期間末・申告を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "通常の法人税は事業年度終了時の3月31日に成立する。売上に係る消費税は課税資産の譲渡等の時という通常類型に従い3月9日、源泉所得税は所得支払時の3月25日に成立する。申告日や納付日は別であり、消費税の課税期間末と個々の納税義務の成立を同一にしない。",
+      "sourceAnchors": [
+        "通則法15条2項"
+      ],
+      "independentCaseDesign": "三税目の取引台帳から成立を横断比較する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-tax-timeline",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-tax-timeline": [
+          2
+        ],
+        "zr2-kokuzei-framework": [
+          1
+        ]
+      },
+      "prompt": "源泉徴収による所得税の支払時・法定納期限は確認済みである。未納が続き、税務署から納税告知書が来た。経理担当者は「告知書が来るまで源泉税は確定しておらず、来て初めて申告納税方式の更正で確定した」と説明した。確定方式と告知の役割を分けて訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "源泉徴収による所得税は支払時の納税義務成立と同時に特別の手続を要せず税額が確定する。未納に対する納税の告知は徴収上の手続であり、申告納税方式の更正による最初の税額確定ではない。告知の指定納期限と当初の法定納期限も別に記録する。",
+      "rubric": [
+        {
+          "criterion": "成立同時の自動確定",
+          "points": 2
+        },
+        {
+          "criterion": "告知の徴収上の役割",
+          "points": 1
+        },
+        {
+          "criterion": "指定期限と法定期限の区分",
+          "points": 1
+        }
+      ],
+      "explanation": "源泉徴収による所得税は支払時の納税義務成立と同時に特別の手続を要せず税額が確定する。未納に対する納税の告知は徴収上の手続であり、申告納税方式の更正による最初の税額確定ではない。告知の指定納期限と当初の法定納期限も別に記録する。",
+      "sourceAnchors": [
+        "通則法15条3項・36条"
+      ],
+      "independentCaseDesign": "担当者の説明文から二つの制度混同を特定する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-tax-timeline",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-tax-timeline": [
+          3
+        ],
+        "zr2-kokuzei-late-tax": [
+          1
+        ]
+      },
+      "prompt": "通常の国税の法定納期限は2026年6月1日。期限内申告の当初額の後、7月16日に増差分を修正申告した。特例はない。増差分について、現実の納付すべき日、法定納期限、担保比較の法定納期限等を三欄に分け、延滞税の開始日を決めるための欄も示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "増差分を納付すべき日は修正申告書を提出した7月16日、法定納期限は6月1日、15条1項1号による法定納期限等は7月16日である。延滞税の原則開始は法定納期限欄から6月2日とし、実際の率・控除期間は別に判断する。7月16日を全用途の法定納期限と呼ばない。",
+      "rubric": [
+        {
+          "criterion": "現実の納付日7月16日",
+          "points": 1
+        },
+        {
+          "criterion": "法定納期限6月1日",
+          "points": 1
+        },
+        {
+          "criterion": "法定納期限等7月16日",
+          "points": 1
+        },
+        {
+          "criterion": "延滞税の原則開始6月2日",
+          "points": 1
+        }
+      ],
+      "explanation": "増差分を納付すべき日は修正申告書を提出した7月16日、法定納期限は6月1日、15条1項1号による法定納期限等は7月16日である。延滞税の原則開始は法定納期限欄から6月2日とし、実際の率・控除期間は別に判断する。7月16日を全用途の法定納期限と呼ばない。",
+      "sourceAnchors": [
+        "通則法35・60条",
+        "徴収法2条10号・15条1項1号"
+      ],
+      "independentCaseDesign": "修正増差額の日付を徴収と附帯税へ接続する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-tax-timeline",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-tax-timeline": [
+          4
+        ]
+      },
+      "prompt": "増差税額の更正通知書を2026年8月31日に発し、9月2日に適法送達した。35条2項2号の通常の納期限を求める。特例はなく、9月30日は休日等ではない。翌日から1か月の起算と、送達の意味を示して答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "発出日の翌日9月1日から暦月で1か月を計算し、9月30日が納期限となる。送達日9月2日から1か月として10月2日等にしない。更正を通知書の送達により行う28条の手続と、35条が発出日の翌日を起算とすることを分ける。",
+      "rubric": [
+        {
+          "criterion": "起算9月1日",
+          "points": 1
+        },
+        {
+          "criterion": "暦月の末日9月30日",
+          "points": 1
+        },
+        {
+          "criterion": "到達日を起算にしない",
+          "points": 1
+        },
+        {
+          "criterion": "28条の手続と35条の期間を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "発出日の翌日9月1日から暦月で1か月を計算し、9月30日が納期限となる。送達日9月2日から1か月として10月2日等にしない。更正を通知書の送達により行う28条の手続と、35条が発出日の翌日を起算とすることを分ける。",
+      "sourceAnchors": [
+        "通則法10・28・35条"
+      ],
+      "independentCaseDesign": "月末発出と月初起算を処分効力・期限へ接続する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-demand-acceleration",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-demand-acceleration": [
+          1,
+          2
+        ]
+      },
+      "prompt": "督促状を発送してから十分な日数が過ぎたが、宛先を誤って返送され、適法な送達は一度もなく、公示送達等もない。納期限後未納というだけで、47条1項1号の通常の差押要件がそろったといえるか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "通常の47条1項1号には督促を受けたことも必要である。発送後の期間だけが過ぎても、適法送達を欠くという本問の条件ではその要件を満たさない。内部の作成・発送と送達を分ける。繰上げ等の別制度の要件があると勝手に補充せず、本問の通常経路について不足を示す。",
+      "rubric": [
+        {
+          "criterion": "督促を受けた要件",
+          "points": 2
+        },
+        {
+          "criterion": "発送と送達を区分",
+          "points": 1
+        },
+        {
+          "criterion": "別制度の事実を補わない",
+          "points": 1
+        }
+      ],
+      "explanation": "通常の47条1項1号には督促を受けたことも必要である。発送後の期間だけが過ぎても、適法送達を欠くという本問の条件ではその要件を満たさない。内部の作成・発送と送達を分ける。繰上げ等の別制度の要件があると勝手に補充せず、本問の通常経路について不足を示す。",
+      "sourceAnchors": [
+        "徴収法47条1項1号",
+        "通則法12条"
+      ],
+      "independentCaseDesign": "時間経過は足りても送達条件がない否定事例"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-demand-acceleration",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-demand-acceleration": [
+          2
+        ],
+        "zr2-kokuzei-limitations-succession": [
+          4
+        ]
+      },
+      "prompt": "2026年1月12日発出の督促状が適法に送達され、通常の時間要件上は1月23日以後に差押えを検討する関係にある。1月22日、対象本税を全額納付した。ほかの対象税・費用はなく、1月23日に残額はゼロである。担当者が「待機期間が終わったので当初額を差し押さえる」とする処理を検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "時間要件だけでなく処分時の未納額を確認する。対象本税は全額納付済みでほかの対象額もないため、当初額の徴収を目的とする差押えへ進めない。督促状に記載された額を残高確認なしで固定しない。全納付を台帳へ反映し、待機期間の経過と国税の消滅を別に処理する。",
+      "rubric": [
+        {
+          "criterion": "時期と未納残額の両方を確認",
+          "points": 1
+        },
+        {
+          "criterion": "全納付・残額ゼロ",
+          "points": 1
+        },
+        {
+          "criterion": "当初額の重複徴収を否定",
+          "points": 1
+        },
+        {
+          "criterion": "納付反映の理由",
+          "points": 1
+        }
+      ],
+      "explanation": "時間要件だけでなく処分時の未納額を確認する。対象本税は全額納付済みでほかの対象額もないため、当初額の徴収を目的とする差押えへ進めない。督促状に記載された額を残高確認なしで固定しない。全納付を台帳へ反映し、待機期間の経過と国税の消滅を別に処理する。",
+      "sourceAnchors": [
+        "徴収法47条1項",
+        "通則法34条等"
+      ],
+      "independentCaseDesign": "待機末日前完納という分岐を扱う"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-demand-acceleration",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-demand-acceleration": [
+          3
+        ]
+      },
+      "prompt": "主たる納税者への督促は済んでいる。第二次納税義務者れんについて適法な納付通知書が送達され、指定期限後も未納だが、れんへの納付催告はなく、例外事由もない。「主たる者に督促済みだから、れんの法定督促も済んだ」としてよいか。また、差押えと換価の順序は同じか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "第二次納税義務者自身について32条2項の納付催告書による督促を要する。主たる者への督促で代わりにはならない。差押えの要件を整えることと、32条4項により原則として主たる者の財産を換価に付した後に第二次義務者財産を換価する制限は別である。著しい価額減少のおそれという例外も、事実があるか別に確認する。",
+      "rubric": [
+        {
+          "criterion": "れん自身の法定催告を要する",
+          "points": 2
+        },
+        {
+          "criterion": "主たる者の督促と区分",
+          "points": 1
+        },
+        {
+          "criterion": "差押えと換価制限を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "第二次納税義務者自身について32条2項の納付催告書による督促を要する。主たる者への督促で代わりにはならない。差押えの要件を整えることと、32条4項により原則として主たる者の財産を換価に付した後に第二次義務者財産を換価する制限は別である。著しい価額減少のおそれという例外も、事実があるか別に確認する。",
+      "sourceAnchors": [
+        "徴収法32条2項・4項・47条3項"
+      ],
+      "independentCaseDesign": "主たる者と第二次義務者の通知記録を比較する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-demand-acceleration",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-demand-acceleration": [
+          4
+        ]
+      },
+      "prompt": "法人つばきが解散したため回収危険がある。ただし、対象国税の納付すべき税額はまだ確定していない。担当者は38条1項の繰上請求書で予測額を直ちに請求しようとした。同項の要件から指摘できる不足と、別制度を検討するときの注意を述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "38条1項の繰上請求は納付すべき税額が確定した国税を対象とするため、未確定の予測額は同項の条件を満たさない。解散・回収危険だけで確定要件を省けない。繰上保全差押え等には別の対象・必要性・手続があり、この事実だけでそちらの全要件も満たしたと決めない。",
+      "rubric": [
+        {
+          "criterion": "税額確定要件を指摘",
+          "points": 2
+        },
+        {
+          "criterion": "解散だけで足りない",
+          "points": 1
+        },
+        {
+          "criterion": "別制度の要件を別途確認",
+          "points": 1
+        }
+      ],
+      "explanation": "38条1項の繰上請求は納付すべき税額が確定した国税を対象とするため、未確定の予測額は同項の条件を満たさない。解散・回収危険だけで確定要件を省けない。繰上保全差押え等には別の対象・必要性・手続があり、この事実だけでそちらの全要件も満たしたと決めない。",
+      "sourceAnchors": [
+        "通則法38条1項・3項"
+      ],
+      "independentCaseDesign": "繰上請求と未確定段階の保全を区別する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-demand-acceleration",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-demand-acceleration": [
+          4
+        ]
+      },
+      "prompt": "確定済み国税の通常の納期限はまだ先で、督促も繰上請求も行われていない。財産隠匿のおそれがあるという理由だけから、47条2項の繰上差押えを直ちに行えるか。同項の手続段階から説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "47条2項は納期限後、督促を受けた滞納者に、通常の所定期間内に38条1項各号の事実が生じた場合の制度である。本問は納期限前かつ督促もないため、この条項の段階要件を満たさない。必要に応じ繰上請求や保全を別の要件で検討するが、単に危険という評価から47条2項へ直結させない。",
+      "rubric": [
+        {
+          "criterion": "納期限後の要件",
+          "points": 1
+        },
+        {
+          "criterion": "督促を受けた要件",
+          "points": 1
+        },
+        {
+          "criterion": "本問の不足を結論に反映",
+          "points": 1
+        },
+        {
+          "criterion": "別制度を別要件で判断",
+          "points": 1
+        }
+      ],
+      "explanation": "47条2項は納期限後、督促を受けた滞納者に、通常の所定期間内に38条1項各号の事実が生じた場合の制度である。本問は納期限前かつ督促もないため、この条項の段階要件を満たさない。必要に応じ繰上請求や保全を別の要件で検討するが、単に危険という評価から47条2項へ直結させない。",
+      "sourceAnchors": [
+        "徴収法47条2項",
+        "通則法38条"
+      ],
+      "independentCaseDesign": "緊急性があっても手続段階が異なる事例"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-limitations-succession": [
+          1
+        ]
+      },
+      "prompt": "通常国税の徴収権は法定納期限2021年4月30日からの5年で消滅し、2026年4月30日の終了まで完成猶予・更新・不進行等は一切ない。税務署が初めて法定督促を5月1日に発した場合、その督促により既に消滅した権利へ新しい5年を与えられるか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "通常の起算で2021年5月1日から5年の末日2026年4月30日に時効が完成している。国税の時効は援用を要せず、翌5月1日の督促で消滅済みの徴収権を当然に復活させられない。73条の効果を検討する際にも、処分時点で権利が残っているかを確認する。",
+      "rubric": [
+        {
+          "criterion": "期間末日と処分の前後関係",
+          "points": 1
+        },
+        {
+          "criterion": "援用不要",
+          "points": 1
+        },
+        {
+          "criterion": "消滅済み権利の当然復活を否定",
+          "points": 1
+        },
+        {
+          "criterion": "更新検討前に存続確認",
+          "points": 1
+        }
+      ],
+      "explanation": "通常の起算で2021年5月1日から5年の末日2026年4月30日に時効が完成している。国税の時効は援用を要せず、翌5月1日の督促で消滅済みの徴収権を当然に復活させられない。73条の効果を検討する際にも、処分時点で権利が残っているかを確認する。",
+      "sourceAnchors": [
+        "通則法72・73条"
+      ],
+      "independentCaseDesign": "完成後の初回督促という時系列逆転を扱う"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q16",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-limitations-succession": [
+          2
+        ],
+        "zr2-kokuzei-private-law": [
+          4
+        ]
+      },
+      "prompt": "被相続人の承継対象国税96万円。指定相続分等がない単純承認の相続人は配偶者あかりと子いおり・さく。協議書は「あかりが全部納税する」とするが、国の同意による別処理等はない。取得価額はあかり40万円、いおり30万円、さく2万円。法定按分額と5条3項の追加責任の金額上限を各人について示し、協議書だけで国への義務を変えられるか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "5条2項の按分はあかり48万円、子各24万円である。5条3項の超過額はあかり0円、いおり6万円、さく0円となる。協議書だけで国への法定承継義務をあかり一人へ移せない。取得価額は按分額を決める割合とは別に、追加責任を判断する欄へ用い、追加履行は全体残額も限度とする。",
+      "rubric": [
+        {
+          "criterion": "按分48・24・24万円",
+          "points": 1
+        },
+        {
+          "criterion": "追加上限0・6・0万円",
+          "points": 1
+        },
+        {
+          "criterion": "協議だけで対国義務を変更しない",
+          "points": 1
+        },
+        {
+          "criterion": "按分と取得価額・残高を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "5条2項の按分はあかり48万円、子各24万円である。5条3項の超過額はあかり0円、いおり6万円、さく0円となる。協議書だけで国への法定承継義務をあかり一人へ移せない。取得価額は按分額を決める割合とは別に、追加責任を判断する欄へ用い、追加履行は全体残額も限度とする。",
+      "sourceAnchors": [
+        "通則法5条2項・3項",
+        "民法900条"
+      ],
+      "independentCaseDesign": "取得額が按分額を上回る子と下回る配偶者を配置し協議書との効力を問う"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q17",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-limitations-succession": [
+          3
+        ]
+      },
+      "prompt": "人格のない社団の財産に属する権利義務の一部を、法人こはくが通則法7条に当たる方法で承継した。全財産価額240万円のうち承継価額90万円、対象国税64万円、他の調整なし。単なる売買とも合併とも区分されている。承継税額を求め、税額へ乗じる割合と法的原因を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "points": 4,
+      "modelAnswer": "7条の一部承継の財産割合90/240を対象国税64万円へ乗じ、24万円となる。承継財産90万円を税額とせず、6条合併の全承継や事業譲受人の第二次義務へ読み替えない。法的な承継原因が先に確定しているという条件を用いる。",
+      "rubric": [
+        {
+          "criterion": "7条の法的原因",
+          "points": 1
+        },
+        {
+          "criterion": "割合90/240",
+          "points": 1
+        },
+        {
+          "criterion": "24万円",
+          "points": 1
+        },
+        {
+          "criterion": "合併・売買・第二次義務と区分",
+          "points": 1
+        }
+      ],
+      "explanation": "7条の一部承継の財産割合90/240を対象国税64万円へ乗じ、24万円となる。承継財産90万円を税額とせず、6条合併の全承継や事業譲受人の第二次義務へ読み替えない。法的な承継原因が先に確定しているという条件を用いる。",
+      "sourceAnchors": [
+        "通則法7条"
+      ],
+      "independentCaseDesign": "組織の法的承継原因を計算前に確定させる",
+      "accepted": [
+        "240000"
+      ],
+      "requiresWorkingForFullCredit": true
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q18",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "objectives": [
+        3,
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-limitations-succession": [
+          3,
+          4
+        ]
+      },
+      "prompt": "甲乙は同一国税100万円を連帯して納付する義務を負う。甲が70万円納付した。国の未納残高と、乙へ同じ70万円を再び国税として請求できるかを説明し、甲乙間の内部負担の結論を出すために必要な別検討も示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "国税の残額は30万円で、既に共同免責の生じた70万円を乙から再徴収しない。乙への対外請求の範囲と、甲乙間の内部負担・求償は別である。内部関係は通則法8条が準用する民法442条等と個別税法上の負担関係を確認し、納付した70万円の全額が当然に乙へ求償できるとまでは決めない。",
+      "rubric": [
+        {
+          "criterion": "国税残額30万円",
+          "points": 1
+        },
+        {
+          "criterion": "70万円の重複徴収を否定",
+          "points": 1
+        },
+        {
+          "criterion": "内部負担・求償を区分",
+          "points": 1
+        },
+        {
+          "criterion": "内部条件なしに全額求償としない",
+          "points": 1
+        }
+      ],
+      "explanation": "国税の残額は30万円で、既に共同免責の生じた70万円を乙から再徴収しない。乙への対外請求の範囲と、甲乙間の内部負担・求償は別である。内部関係は通則法8条が準用する民法442条等と個別税法上の負担関係を確認し、納付した70万円の全額が当然に乙へ求償できるとまでは決めない。",
+      "sourceAnchors": [
+        "通則法8条",
+        "民法442条等"
+      ],
+      "independentCaseDesign": "一人の納付後に国と内部求償の二つの残高を分ける"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q19",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-limitations-succession",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-limitations-succession": [
+          4
+        ],
+        "zr2-kokuzei-late-tax": [
+          2
+        ]
+      },
+      "prompt": "還付金25万円を未納本税18万円とその確定済み延滞税9万円へ充当する。適法な充当適状日は2026年8月4日で、充当通知は8月14日に届いた。他の調整はない。各残額と現金還付額を示し、延滞税計算上、通知到着日だけを納付日としてよいか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "本税18万円を先に満たし、残る還付金7万円を延滞税へ充当するので、本税残額0円、延滞税残額2万円、現金還付0円である。57条2項の条件として所与の8月4日がみなし納付時点であり、到着した8月14日に置き換えない。本問は延滞税9万円を確定済みとしているが、未確定ならみなし時点を用いた再計算も必要となる。",
+      "rubric": [
+        {
+          "criterion": "本税先充当と本税残額0",
+          "points": 1
+        },
+        {
+          "criterion": "延滞税残2万円・現金0",
+          "points": 1
+        },
+        {
+          "criterion": "適状8月4日と到着8月14日を区分",
+          "points": 1
+        },
+        {
+          "criterion": "未確定なら日付により再計算する留保",
+          "points": 1
+        }
+      ],
+      "explanation": "本税18万円を先に満たし、残る還付金7万円を延滞税へ充当するので、本税残額0円、延滞税残額2万円、現金還付0円である。57条2項の条件として所与の8月4日がみなし納付時点であり、到着した8月14日に置き換えない。本問は延滞税9万円を確定済みとしているが、未確定ならみなし時点を用いた再計算も必要となる。",
+      "sourceAnchors": [
+        "通則法57条"
+      ],
+      "independentCaseDesign": "残高計算に通知到着とみなし納付日のずれを組み合わせる"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q20",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "objectives": [
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-late-tax": [
+          2
+        ],
+        "zr2-kokuzei-framework": [
+          1
+        ]
+      },
+      "prompt": "ある未納一覧には本税498,900円、過少申告加算税20,000円、既存の延滞税3,000円が記載されている。今回計算する延滞税はこの本税だけを基礎とする通常例である。118条3項の基礎額を求め、一覧合計額へ利息を付けない理由を述べてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "points": 4,
+      "modelAnswer": "延滞税の基礎となる本税498,900円の1万円未満を切り捨て、490,000円とする。加算税20,000円・既存延滞税3,000円を基礎に加えず、附帯税への複利計算をしない。最終延滞税額の千円最低額・百円端数は、この基礎税額の処理後の別段階である。",
+      "rubric": [
+        {
+          "criterion": "本税のみ抽出",
+          "points": 1
+        },
+        {
+          "criterion": "490,000円",
+          "points": 1
+        },
+        {
+          "criterion": "附帯税へ複利を課さない",
+          "points": 1
+        },
+        {
+          "criterion": "基礎と最終端数を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "延滞税の基礎となる本税498,900円の1万円未満を切り捨て、490,000円とする。加算税20,000円・既存延滞税3,000円を基礎に加えず、附帯税への複利計算をしない。最終延滞税額の千円最低額・百円端数は、この基礎税額の処理後の別段階である。",
+      "sourceAnchors": [
+        "通則法60条2項・118条3項・119条4項"
+      ],
+      "independentCaseDesign": "本税と二種の附帯税が混在する未納一覧から基礎額を抽出する",
+      "accepted": [
+        "490000"
+      ],
+      "requiresWorkingForFullCredit": true
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q21",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "objectives": [
+        1,
+        2
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-late-tax": [
+          1,
+          2
+        ]
+      },
+      "prompt": "通常の期限内申告本税1,234,500円の法定納期限は2025年12月10日、完納日は2026年3月10日。除外・免除・一部納付はない。低率区分は12月11日〜翌2月10日、高率区分は2月11日以後である。年末でも分割し、率・日数・端数を示して延滞税を求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "points": 4,
+      "modelAnswer": "基礎額は1,230,000円。2025年12月11〜31日は21日で2.4％、2026年1月1〜2月10日は41日で2.8％、2月11〜3月10日は28日で9.1％である。各区分の1円未満切捨ては1,698円、3,868円、8,586円となり、合計14,152円から百円未満を切り捨て14,100円となる。低率期間62日・高率28日の合計90日も確認する。",
+      "rubric": [
+        {
+          "criterion": "基礎1,230,000円と年別の区分",
+          "points": 1
+        },
+        {
+          "criterion": "21・41・28日と各率",
+          "points": 1
+        },
+        {
+          "criterion": "各計算1698・3868・8586円",
+          "points": 1
+        },
+        {
+          "criterion": "合計・最終14100円",
+          "points": 1
+        }
+      ],
+      "explanation": "基礎額は1,230,000円。2025年12月11〜31日は21日で2.4％、2026年1月1〜2月10日は41日で2.8％、2月11〜3月10日は28日で9.1％である。各区分の1円未満切捨ては1,698円、3,868円、8,586円となり、合計14,152円から百円未満を切り捨て14,100円となる。低率期間62日・高率28日の合計90日も確認する。",
+      "sourceAnchors": [
+        "通則法60・118・119条",
+        "措法94条",
+        "NTA9205の年別特例割合"
+      ],
+      "independentCaseDesign": "通常期限の2か月区分と年末の割合変更という異なる境界を組み合わせる",
+      "accepted": [
+        "14100"
+      ],
+      "requiresWorkingForFullCredit": true
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q22",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "objectives": [
+        3
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-late-tax": [
+          3
+        ],
+        "zr2-kokuzei-tax-timeline": [
+          2,
+          4
+        ]
+      },
+      "prompt": "法定申告・納期限2024年6月28日の国税に期限内申告があり、2026年7月6日発出・7月8日適法送達の増額更正で増差本税100万円が生じた。通常の納期限は8月6日、納付日は8月20日とする。61条1項1号が適用され、不正・他の除外免除等はない。控除期間、残る期間、率、延滞税を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "points": 4,
+      "modelAnswer": "1年経過日2025年6月28日の翌日6月29日から更正通知書発出日2026年7月6日までを控除する。残る2024年6月29日〜2025年6月28日の365日は2.4％で24,000円、2026年7月7日〜8月20日の45日は納期限前及び翌2か月以内なので2.8％で3,452円。合計27,452円から百円未満切捨てで27,400円。控除終期を到着7月8日とせず、全期間高率にも扱わない。",
+      "rubric": [
+        {
+          "criterion": "控除2025/6/29〜2026/7/6",
+          "points": 1
+        },
+        {
+          "criterion": "365日と45日の残期間・低率根拠",
+          "points": 1
+        },
+        {
+          "criterion": "24000円・3452円",
+          "points": 1
+        },
+        {
+          "criterion": "最終27400円・発出と到達の区分",
+          "points": 1
+        }
+      ],
+      "explanation": "1年経過日2025年6月28日の翌日6月29日から更正通知書発出日2026年7月6日までを控除する。残る2024年6月29日〜2025年6月28日の365日は2.4％で24,000円、2026年7月7日〜8月20日の45日は納期限前及び翌2か月以内なので2.8％で3,452円。合計27,452円から百円未満切捨てで27,400円。控除終期を到着7月8日とせず、全期間高率にも扱わない。",
+      "sourceAnchors": [
+        "通則法35・60・61条1項1号・118・119条",
+        "措法94条"
+      ],
+      "independentCaseDesign": "修正申告ではなく更正発出日を控除終期とし納期限前後を区分する",
+      "accepted": [
+        "27400"
+      ],
+      "requiresWorkingForFullCredit": true
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q23",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-late-tax": [
+          4
+        ]
+      },
+      "prompt": "給与から徴収すべき所得税を納期限後に納付した会社がある。法定納税告知は受けず、告知の予知前の自主納付で67条2項が適用される。正当理由・期限内納付意思等の不適用はない。「確定申告を出していないから無申告加算税15％」という処理の誤りを、税の類型と割合から説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "源泉徴収等による国税の期限不納付は67条の不納付加算税を検討する。告知なし・予知前納付で2項が適用される本問の割合は5％である。通常の確定申告の無申告加算税へ読み替えない。源泉税の成立・自動確定と、後の納付遅延による附帯税を区分する。",
+      "rubric": [
+        {
+          "criterion": "源泉税の不納付加算税",
+          "points": 2
+        },
+        {
+          "criterion": "条件付き5％",
+          "points": 1
+        },
+        {
+          "criterion": "自動確定と申告を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "源泉徴収等による国税の期限不納付は67条の不納付加算税を検討する。告知なし・予知前納付で2項が適用される本問の割合は5％である。通常の確定申告の無申告加算税へ読み替えない。源泉税の成立・自動確定と、後の納付遅延による附帯税を区分する。",
+      "sourceAnchors": [
+        "通則法15条3項・67条"
+      ],
+      "independentCaseDesign": "税の成立方式から対応する加算税を選び直す"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q24",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-late-tax": [
+          4
+        ]
+      },
+      "prompt": "2026年に法定申告期限が到来した通常の法人税について、期限内確定申告による納付税額は60万円で、中間納付額30万円と所得税額控除5万円がある。65条3項2号ロの加算対象はこの二つで、他の調整はない。初回増差130万円を更正予知後に修正し、正当理由・帳簿加重・隠蔽等なし。期限内申告税額の定義から過少申告加算税を求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "points": 4,
+      "modelAnswer": "期限内申告税額は申告納付60万円に中間納付30万円と所得税額控除5万円を加え95万円である。50万円との多い額は95万円。基本130万円×10％＝13万円、超過35万円×5％＝17,500円、計147,500円。納付書の60万円だけを比較額としない。",
+      "rubric": [
+        {
+          "criterion": "定義に従い期限内95万円",
+          "points": 1
+        },
+        {
+          "criterion": "比較95万円・超過35万円",
+          "points": 1
+        },
+        {
+          "criterion": "130000円＋17500円",
+          "points": 1
+        },
+        {
+          "criterion": "最終147500円",
+          "points": 1
+        }
+      ],
+      "explanation": "期限内申告税額は申告納付60万円に中間納付30万円と所得税額控除5万円を加え95万円である。50万円との多い額は95万円。基本130万円×10％＝13万円、超過35万円×5％＝17,500円、計147,500円。納付書の60万円だけを比較額としない。",
+      "sourceAnchors": [
+        "通則法65条1〜3項・118・119条"
+      ],
+      "independentCaseDesign": "比較基準そのものを法人税の申告明細から組み立てる",
+      "accepted": [
+        "147500"
+      ],
+      "requiresWorkingForFullCredit": true
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q25",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "objectives": [
+        4
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-late-tax": [
+          4
+        ]
+      },
+      "prompt": "期限内申告後の調査で計算誤りが見つかった。資料には隠蔽仮装の事実は示されず、担当者は「増差税額があるので必ず重加算税35％を通常の過少申告加算税に上乗せする」と述べた。この説明を、認定すべき事実、税の関係、調査段階の三点から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "増差額や計算誤りだけでは隠蔽仮装を認定できず、68条の具体的な要件事実を確認する。重加算税が該当する部分では通常の過少申告加算税に代えて課す関係であり、同じ部分へ重ねて上乗せしない。通常の過少申告加算税についても調査通知と更正予知の有無、不適用・加重等の条件を確定して判断する。",
+      "rubric": [
+        {
+          "criterion": "隠蔽仮装の事実認定を要する",
+          "points": 2
+        },
+        {
+          "criterion": "同じ部分への置換と上乗せを区分",
+          "points": 1
+        },
+        {
+          "criterion": "通知・予知等を確認",
+          "points": 1
+        }
+      ],
+      "explanation": "増差額や計算誤りだけでは隠蔽仮装を認定できず、68条の具体的な要件事実を確認する。重加算税が該当する部分では通常の過少申告加算税に代えて課す関係であり、同じ部分へ重ねて上乗せしない。通常の過少申告加算税についても調査通知と更正予知の有無、不適用・加重等の条件を確定して判断する。",
+      "sourceAnchors": [
+        "通則法65・68条"
+      ],
+      "independentCaseDesign": "増差額だけから隠蔽と上乗せを推論する答案を批判する"
+    }
+  ],
+  "glossaryQuestions": [
+    {
+      "id": "zr2-kokuzei-foundations-term-1",
+      "term": "納税者・滞納者",
+      "prompt": "次の場面で「納税者・滞納者」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：源泉徴収義務者の会社が国へ未納、給与受領者は従業員。",
+      "scenario": "源泉徴収義務者の会社が国へ未納、給与受領者は従業員",
+      "modelAnswer": "源泉税を国へ納付する会社がこの税の納税者で未納なら滞納者。所得を得た従業員というだけで同じ地位にしない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-framework"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-2",
+      "term": "第三債務者",
+      "prompt": "次の場面で「第三債務者」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：滞納会社が家主へ返還請求できる敷金があり、その返還請求権を差し押さえる。",
+      "scenario": "滞納会社が家主へ返還請求できる敷金があり、その返還請求権を差し押さえる",
+      "modelAnswer": "家主が会社に敷金返還債務を負う第三債務者となる。家主が会社の税を当初から納める義務を負うという意味ではない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-framework",
+        "zr2-kokuzei-private-law"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-3",
+      "term": "所有権・占有",
+      "prompt": "次の場面で「所有権・占有」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：借りた重機を会社が工事場で使用している。",
+      "scenario": "借りた重機を会社が工事場で使用している",
+      "modelAnswer": "会社が重機を占有しても、借りただけなら所有権は貸主にある。置き場所だけで会社所有財産と決めない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-private-law"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-4",
+      "term": "物上保証人",
+      "prompt": "次の場面で「物上保証人」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：他人の借入れの担保として自己の土地へ抵当権を設定した者。",
+      "scenario": "他人の借入れの担保として自己の土地へ抵当権を設定した者",
+      "modelAnswer": "自己財産を担保として提供する者。金銭債務の借主や人的保証人と同じではなく、別の約束なしに一般財産で同じ借入れ全額を払う義務を作らない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-private-law"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-5",
+      "term": "法定納期限・現実の納期限",
+      "prompt": "次の場面で「法定納期限・現実の納期限」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：期限内の税に後日修正申告があり、増差を提出日に納める。",
+      "scenario": "期限内の税に後日修正申告があり、増差を提出日に納める",
+      "modelAnswer": "修正提出日は増差分を現実に納める日だが、定義に従う法定納期限と区別する。延滞税開始へは法定期限の欄を用いる。",
+      "targetLessonIds": [
+        "zr2-kokuzei-tax-timeline",
+        "zr2-kokuzei-late-tax"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-6",
+      "term": "法定納期限等",
+      "prompt": "次の場面で「法定納期限等」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：増差分の申告日と当初の期限が違い、抵当権との優先を比べる。",
+      "scenario": "増差分の申告日と当初の期限が違い、抵当権との優先を比べる",
+      "modelAnswer": "徴収法15条の担保優先比較のための日。単なる法定納期限の言換えではなく、申告・更正等の類型から選ぶ。",
+      "targetLessonIds": [
+        "zr2-kokuzei-tax-timeline",
+        "zr2-kokuzei-framework"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-7",
+      "term": "納付催告書",
+      "prompt": "次の場面で「納付催告書」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：第二次納税義務者が納付通知の指定期限までに払わない。",
+      "scenario": "第二次納税義務者が納付通知の指定期限までに払わない",
+      "modelAnswer": "32条の法定督促に用いる書面。一般の電話催告と区別し、主たる者への督促で自身の手続が済んだとしない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-demand-acceleration"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-8",
+      "term": "繰上請求・繰上差押え",
+      "prompt": "次の場面で「繰上請求・繰上差押え」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：期限前の確定税額を回収する必要がある場面と、期限後督促済みの待機中に不正が生じる場面。",
+      "scenario": "期限前の確定税額を回収する必要がある場面と、期限後督促済みの待機中に不正が生じる場面",
+      "modelAnswer": "前者の納期限繰上げは通則38条1項、後者の待機期間中の差押えは徴収47条2項を区別する。緊急という一語だけで同一にしない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-demand-acceleration"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-9",
+      "term": "完成猶予・更新・不進行",
+      "prompt": "次の場面で「完成猶予・更新・不進行」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：法定処分で所定期間を待って再進行する例と、納税猶予中の例。",
+      "scenario": "法定処分で所定期間を待って再進行する例と、納税猶予中の例",
+      "modelAnswer": "完成させない効果、新たに進行する効果、対象期間に進行しない効果を区分する。すべてを旧来の中断という一語で計算しない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-limitations-succession"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-10",
+      "term": "納付義務の承継",
+      "prompt": "次の場面で「納付義務の承継」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：被相続人に課されるべき国税が死亡後に確定した。",
+      "scenario": "被相続人に課されるべき国税が死亡後に確定した",
+      "modelAnswer": "法定の相続原因で義務を引き継ぐこと。死亡前に確定済みの税だけへ限定せず、納税不足があるときの第二次義務とは別に根拠を探す。",
+      "targetLessonIds": [
+        "zr2-kokuzei-limitations-succession"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-11",
+      "term": "充当適状",
+      "prompt": "次の場面で「充当適状」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：充当通知の到着より前に令所定の充当に適する時が到来した。",
+      "scenario": "充当通知の到着より前に令所定の充当に適する時が到来した",
+      "modelAnswer": "法定の充当に適する状態。57条2項により所定時点に納付をみなすため、通知の到着日だけで日割計算をしない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-limitations-succession",
+        "zr2-kokuzei-late-tax"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-foundations-term-12",
+      "term": "調査通知・更正予知",
+      "prompt": "次の場面で「調査通知・更正予知」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：調査の通知後に修正したが、更正があるべきことを予知する前である。",
+      "scenario": "調査の通知後に修正したが、更正があるべきことを予知する前である",
+      "modelAnswer": "通知の受領と予知は別の事実。65条等の適用割合・不適用条件を判断するため、通知日だけで予知後と認定しない。",
+      "targetLessonIds": [
+        "zr2-kokuzei-late-tax"
+      ],
+      "points": 2,
+      "rubric": [
+        {
+          "criterion": "場面に即して用語を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "別の地位・時点・効果との相違理由を述べる",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-kokuzei-framework": {
+      "1": [
+        "zr2-kokuzei-foundations-review-q1",
+        "zr2-kokuzei-foundations-review-q7",
+        "zr2-kokuzei-foundations-review-q20"
+      ],
+      "2": [
+        "zr2-kokuzei-foundations-review-q1"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q2"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q3"
+      ]
+    },
+    "zr2-kokuzei-private-law": {
+      "1": [
+        "zr2-kokuzei-foundations-review-q1"
+      ],
+      "2": [
+        "zr2-kokuzei-foundations-review-q3"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q4"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q5",
+        "zr2-kokuzei-foundations-review-q16"
+      ]
+    },
+    "zr2-kokuzei-tax-timeline": {
+      "1": [
+        "zr2-kokuzei-foundations-review-q6"
+      ],
+      "2": [
+        "zr2-kokuzei-foundations-review-q7",
+        "zr2-kokuzei-foundations-review-q22"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q8"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q9",
+        "zr2-kokuzei-foundations-review-q22"
+      ]
+    },
+    "zr2-kokuzei-demand-acceleration": {
+      "1": [
+        "zr2-kokuzei-foundations-review-q10"
+      ],
+      "2": [
+        "zr2-kokuzei-foundations-review-q10",
+        "zr2-kokuzei-foundations-review-q11"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q12"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q13",
+        "zr2-kokuzei-foundations-review-q14"
+      ]
+    },
+    "zr2-kokuzei-limitations-succession": {
+      "1": [
+        "zr2-kokuzei-foundations-review-q15"
+      ],
+      "2": [
+        "zr2-kokuzei-foundations-review-q5",
+        "zr2-kokuzei-foundations-review-q16"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q17",
+        "zr2-kokuzei-foundations-review-q18"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q11",
+        "zr2-kokuzei-foundations-review-q18",
+        "zr2-kokuzei-foundations-review-q19"
+      ]
+    },
+    "zr2-kokuzei-late-tax": {
+      "1": [
+        "zr2-kokuzei-foundations-review-q8",
+        "zr2-kokuzei-foundations-review-q21"
+      ],
+      "2": [
+        "zr2-kokuzei-foundations-review-q19",
+        "zr2-kokuzei-foundations-review-q20",
+        "zr2-kokuzei-foundations-review-q21"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q22"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q23",
+        "zr2-kokuzei-foundations-review-q24",
+        "zr2-kokuzei-foundations-review-q25"
+      ]
+    }
+  },
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "location": "47・51条等。版固定主法",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "location": "60〜68・118〜119条。版固定JSONの該当条項を読解",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "collection-training",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf",
+      "location": "第6章の第二次義務徴収手続。待機と換価制限を主法と照合",
+      "version": "令和8年度・2026-01-01法令を基礎"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "location": "145〜148・152・436・437・441〜445条。親取得のasof固定JSONを独立読解",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "companies-law",
+      "url": "https://laws.e-gov.go.jp/law/417AC0000000086_20251001_505AC0000000053",
+      "location": "104・580・612条を保存済み公式JSONで2026-10-27に確認",
+      "version": "2025-10-01施行版"
+    },
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "location": "120・128条の通常申告・納付。保存済み公式JSONで確認",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "corporate-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "74・77条の通常確定申告・納付。保存済み公式JSONで確認",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "general-training-2026",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf",
+      "location": "令和8年度の時効・承継・充当と期間計算。主法及び令への照合を前提に用いる",
+      "version": "2026-01-01法令を基礎"
+    },
+    {
+      "id": "demand-50day-decision",
+      "url": "https://www.kfs.go.jp/service/JP/66/20/index.html",
+      "location": "平成15年7月3日裁決・判断(3)ロ。50日規定の効力",
+      "version": "公表裁決。過去法令の事例として主法と区別"
+    },
+    {
+      "id": "seizure-warning-decision",
+      "url": "https://www.kfs.go.jp/service/JP/62/40/index.html",
+      "location": "平成13年12月19日裁決・判断(4)。差押予告",
+      "version": "公表裁決。過去法令の事例として主法と区別"
+    },
+    {
+      "id": "special-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "location": "94・96条。版固定JSON読解。特例割合と各計算過程の端数処理",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "collection-delay",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9205.htm",
+      "location": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例",
+      "version": "2026-04-01現在法令等、2026-10-27確認"
+    },
+    {
+      "id": "delay-calculation",
+      "url": "https://www.nta.go.jp/taxes/nozei/entaizei/keisan/entai.htm",
+      "location": "納期限前後の低率期間、原則計算方法",
+      "version": "2026-10-27確認、年度別割合は別資料と照合"
+    },
+    {
+      "id": "general-training-2026",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf#page=66",
+      "location": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認",
+      "version": "2026-01-01法令を基礎。4月3日版主法と併用"
+    }
+  ],
+  "independencePolicy": "既存の講末問題本文・解答を再利用しない。条件欠缺、効力日と起算の相違、協議と法定承継、年末と2か月境界等の判断を新しい資料構造で組み合わせる。単なる金額差替えだけを独立事例の証拠としない",
+  "scopeBoundaries": [
+    {
+      "plannedLessonId": "zr2-kokuzei-service-notices",
+      "notAssessedAsMastered": "公示・差置・電子送達及び個別期限延長の全要件"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-limitations-special-start",
+      "notAssessedAsMastered": "特殊起算・不正及び国外転出等の2年不進行の元資料適用"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-limitations-procedures",
+      "notAssessedAsMastered": "差押終了原因・承認・交付要求・連帯者等への全時効効果"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-succession-inheritance",
+      "notAssessedAsMastered": "相続財産法人・包括遺贈・放棄等を含む全類型と51条"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-succession-trust-split",
+      "notAssessedAsMastered": "信託と分割の対象額・例外・責任限度の総合"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-refunds-allocation",
+      "notAssessedAsMastered": "充当適状を令から自力判定する全類型・還付加算金"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-late-tax-complex",
+      "notAssessedAsMastered": "複数納付・減額再増額・源泉及び猶予免除複合"
+    },
+    {
+      "plannedLessonId": "zr2-kokuzei-additional-tax-selection",
+      "notAssessedAsMastered": "累積・反復・帳簿加重と混在隠蔽部分の全分岐"
+    }
+  ],
+  "authorChecks": {
+    "status": "作問者による初回検証。独立レビュー待ち",
+    "arithmetic": [
+      "問17:640000×90/240=240000",
+      "問21:1698+3868+8586=14152→14100",
+      "問22:24000+3452=27452→27400",
+      "問24:600000+300000+50000=950000;1300000×.1+350000×.05=147500"
+    ],
+    "coverage": "六講各4目標の24目標すべてに少なくとも1問を対応。高度な後続8講は修得済みとして数えない",
+    "nonCompletionRule": "本確認セットと六草稿の存在だけで単元又は科目を完了扱いにしない。親の全文確認・根拠照合・独立再計算・修正・試行が必要",
+    "promptReuseCheck": "六草稿の講末77問との完全一致なし。文字列類似度の最大は0.580（問9とtimeline-q4）で、問9は月末発出・月初起算と送達効力を問う新事例。文字列検査は独立性の十分条件ではなく、全25問の判断設計も読み比べた",
+    "editorial": "全25事例・模範解答・採点要素・12場面用語を手動校正。各数値入力にも途中過程を採点する条件を明記。法律上異なる地位・日付・否定条件を保持"
+  }
+}

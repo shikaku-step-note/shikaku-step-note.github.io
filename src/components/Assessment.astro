@@ -81,6 +81,8 @@ if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')
             <p>{paragraph}</p>
           ))}
           {material.tables?.map((table) => (
+            <>
+            <p class="material-table-hint muted">表が画面に収まらない場合は、横にスクロールして全ての列を確認できます。</p>
             <div class="table-scroll" role="region" tabindex="0" aria-label={table.caption}>
               <table>
                 <caption>{table.caption}</caption>
@@ -98,6 +100,7 @@ if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')
                 </tbody>
               </table>
             </div>
+            </>
           ))}
         </details>
       ))}
@@ -260,6 +263,9 @@ if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')
     width: 100%;
     border-collapse: collapse;
     min-width: 28rem;
+  }
+  .material-table-hint {
+    font-size: 0.85rem;
   }
   .assessment-material caption {
     text-align: left;

@@ -10,15 +10,15 @@
   "provenance": [
     {
       "file": "accounting-plan.json",
-      "sha256": "0a1cc38236e11ff784b9cdc58562b37a4a9ac86e79f6d6d75188c2cb023c4768"
+      "sha256": "2811c22bf2264ae5126efc7761783287bdd6d414457616e1bfdbeba26746bd74"
     },
     {
       "file": "national-tax-plan.json",
-      "sha256": "aa3b786846670f54fe187e2a329b94d8fa2ab24a9229ee426c7e63d3f5d17fc8"
+      "sha256": "73168daf92d8f150cf0ab87553129a7a608c9347035b92a110dce28fff79f773"
     },
     {
       "file": "other-tax-plan.json",
-      "sha256": "dbb12dedaeaaedaec52801762d96fcda16a80ceef6c6de1755daf4b1cfb66205"
+      "sha256": "26ff1c42ed2a977357a3f6335af2aa356b6e33732ac1507467d783d5e5dca3fb"
     }
   ],
   "sources": [
@@ -610,6 +610,53 @@
       "verification": "公式本文又は公表一覧を確認。未完了条件はversionに明記"
     },
     {
+      "key": "accounting:ac2-electronic-claims",
+      "id": "ac2-electronic-claims",
+      "title": "実務対応報告27 電子記録債権の会計処理及び表示（2009年4月9日）",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+      "version": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない",
+      "checkedOn": "2026-10-27",
+      "verification": "執筆者が記載の対象箇所を実読。独立出典審査・公開承認はpending。"
+    },
+    {
+      "key": "accounting:ac2-electronic-claims-law",
+      "id": "ac2-electronic-claims-law",
+      "title": "電子記録債権法（2025年10月1日施行版・2026年4月3日現在）",
+      "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+      "version": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存",
+      "checkedOn": "2026-10-27",
+      "verification": "執筆者が記載の対象箇所を実読。独立出典審査・公開承認はpending。"
+    },
+    {
+      "key": "accounting:fsa-factoring-definition",
+      "id": "fsa-factoring-definition",
+      "title": "金融庁 ファクタリングの利用に関する注意喚起（冒頭一般定義のみ）",
+      "url": "https://www.fsa.go.jp/user/factoring.html",
+      "version": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない",
+      "checkedOn": "2026-10-27",
+      "verification": "執筆者が記載の対象箇所を実読。独立出典審査・公開承認はpending。"
+    },
+    {
+      "key": "accounting:ac2-bills-law",
+      "id": "ac2-bills-law",
+      "title": "e-Gov：手形法・基準日固定版",
+      "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+      "version": "2023年6月14日施行版、2026年4月3日現在のAPI応答",
+      "verified": true,
+      "checkedOn": "2026-10-27",
+      "verification": "公式API asof=2026-04-03の応答をreference-pages/bills-law-20260403.jsonに保存。43・47〜49・75・77・78条の原文を抽出実読。手形の法的請求権の根拠で、会計の仕訳・測定はASBJを併用。"
+    },
+    {
+      "key": "accounting:ac2-exam-boki73",
+      "id": "ac2-exam-boki73",
+      "title": "国税庁：第73回簿記論問題",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+      "version": "2023年実施・問題法令基準日2023年4月7日",
+      "verified": true,
+      "checkedOn": "2026-10-27",
+      "verification": "第三問資料2・2(3)・3、印刷A15〜16を実読。過去の出題能力と資料構造を確認し、現行処理根拠の代用にしない。"
+    },
+    {
       "key": "national-tax:consumption-2026",
       "id": "consumption-2026",
       "title": "国税庁：令和8年度税制改正・インボイス経過措置等",
@@ -698,6 +745,14 @@
       "verified": "2026-10-27"
     },
     {
+      "key": "national-tax:corporate-decree",
+      "id": "corporate-decree",
+      "title": "法人税法施行令・4月3日指定API取得版",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "version": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認",
+      "verified": "2026-10-27"
+    },
+    {
       "key": "national-tax:corporate-dividend",
       "id": "corporate-dividend",
       "title": "財務省：受取配当等の益金不算入制度",
@@ -728,6 +783,14 @@
       "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5759.htm",
       "version": "開始事業年度と法人区分を明示",
       "verified": "2026-10-25"
+    },
+    {
+      "key": "national-tax:corporate-rules",
+      "id": "corporate-rules",
+      "title": "法人税法施行規則・4月3日指定API取得版",
+      "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+      "version": "2026-04-03指定で返った4月1日施行版。非営利型法人の特殊関係理事は2の2条を確認",
+      "verified": "2026-10-27"
     },
     {
       "key": "national-tax:corporate-tsutatsu",
@@ -1122,6 +1185,14 @@
       "verified": "2026-10-27"
     },
     {
+      "key": "national-tax:special-decree",
+      "id": "special-decree",
+      "title": "租税特別措置法施行令・4月3日指定API取得版",
+      "url": "https://laws.e-gov.go.jp/law/332CO0000000043_20260401_508CO0000000098",
+      "version": "2026-04-03指定で返った4月1日施行版。27の4条17〜19項の規模/平均所得要件を確認",
+      "verified": "2026-10-27"
+    },
+    {
       "key": "national-tax:special-law",
       "id": "special-law",
       "title": "e-Gov：租税特別措置法",
@@ -1144,6 +1215,50 @@
       "url": "https://www.nta.go.jp/law/tsutatsu/kihon/sisan/hyoka_new/01.htm",
       "version": "現行は2026-05-25改正まで更新。4月3日内容は改正前の確認が必要",
       "verified": "2026-10-27"
+    },
+    {
+      "key": "other-tax:automobile-mortgage-law",
+      "id": "automobile-mortgage-law",
+      "title": "自動車抵当法",
+      "url": "https://laws.e-gov.go.jp/law/326AC0000000187_20200401_429AC0000000045",
+      "version": "公式履歴及び2〜8・17条の対象・登録・物上代位等を閲覧",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_search_excerpt",
+      "notes": "固定JSON取得と残りの準用・質権禁止等の条文精査を制作時に完了する"
+    },
+    {
+      "key": "other-tax:bankruptcy-law",
+      "id": "bankruptcy-law",
+      "title": "破産法・手続調整の関係条候補",
+      "url": "https://laws.e-gov.go.jp/law/416AC0000000075?occasion_date=20260403",
+      "version": "基準日指定の公式URLを開いたが本文取得不可",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_endpoint_open_no_text",
+      "notes": "66条等の凍結本文・附則・国税の扱いを制作前に精査する。現時点で記事検証済みとはしない"
+    },
+    {
+      "key": "other-tax:child-privilege-ordinance",
+      "id": "child-privilege-ordinance",
+      "title": "子の監護費用先取特権の額の算定等に関する省令",
+      "url": "https://laws.e-gov.go.jp/law/507M60000010056_20260401_000000000000000",
+      "version": "2026-04-01施行。1条の月8万円×子数、2条の別制度、附則を全文読解",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_api_frozen_full_text_read",
+      "notes": "民法改正附則3条1項の施行後の各期との対応を確認"
+    },
+    {
+      "key": "other-tax:civil-execution-law",
+      "id": "civil-execution-law",
+      "title": "民事執行法・関係条候補",
+      "url": "https://laws.e-gov.go.jp/law/354AC0000000004?occasion_date=20260403",
+      "version": "基準日指定の公式URLを開いたが本文取得不可",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_endpoint_open_no_text",
+      "notes": "滞納処分との手続調整・留置権等を制作前に凍結版で検証する"
     },
     {
       "key": "other-tax:civil-law",
@@ -1196,6 +1311,17 @@
       "verified": "2026-10-27",
       "auditAccessDate": "2026-10-27",
       "auditMethod": "official_live_page_or_pdf"
+    },
+    {
+      "key": "other-tax:commercial-law",
+      "id": "commercial-law",
+      "title": "商法・基準日固定版",
+      "url": "https://laws.e-gov.go.jp/law/132AC0000000048_20230401_503AC0000000061",
+      "version": "asof=2026-04-03取得。31・521・557・562・574・741・756・802・842条を2026-10-27読解",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_api_frozen_selected_articles_read",
+      "notes": "取得した全文全体を精査済みとはしない"
     },
     {
       "key": "other-tax:companies-law",
@@ -1292,6 +1418,17 @@
       "notes": ""
     },
     {
+      "key": "other-tax:factory-mortgage-law",
+      "id": "factory-mortgage-law",
+      "title": "工場抵当法",
+      "url": "https://laws.e-gov.go.jp/law/138AC0000000054_20250601_504AC0000000068",
+      "version": "公式履歴・2〜4条の機械器具と目録を閲覧",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_search_excerpt",
+      "notes": "工場財団及び他の登録担保法は制作時に固定し、対象・公示・処分制限を対照する"
+    },
+    {
       "key": "other-tax:general-law",
       "id": "general-law",
       "title": "e-Gov：国税通則法",
@@ -1322,6 +1459,17 @@
       "auditAccessDate": "2026-10-27",
       "auditMethod": "official_live_page_or_pdf",
       "notes": ""
+    },
+    {
+      "key": "other-tax:lease-law",
+      "id": "lease-law",
+      "title": "借地借家法・基準日前履歴",
+      "url": "https://laws.e-gov.go.jp/law/403AC0000000090_20230614_505AC0000000053",
+      "version": "基準日前は2023-06-14施行版。2026-05-21版は取り込まない",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_search_revision_history",
+      "notes": "12条の地代先取等を制作時に固定して読解する"
     },
     {
       "key": "other-tax:liquor-law",
@@ -1646,6 +1794,17 @@
       "auditMethod": "existing_official_json_snapshot_read_today"
     },
     {
+      "key": "other-tax:special-privilege-guidance",
+      "id": "special-privilege-guidance",
+      "title": "徴収基本通達19・20条の個別法先取特権",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/019/01.htm",
+      "version": "現行ページは2026-10-27閲覧。立木・船舶・みなし工事の関係法一覧を確認",
+      "verified": "2026-10-27",
+      "auditAccessDate": "2026-10-27",
+      "auditMethod": "official_live_page_or_pdf",
+      "notes": "一覧を基準日版条文の照合済みと数えない。関係法の固定条文表・施行日を制作時に検証する"
+    },
+    {
       "key": "other-tax:trust-law",
       "id": "trust-law",
       "title": "信託法・関係条項",
@@ -1949,6 +2108,10 @@
                 {
                   "id": "zr2-boki-interest-present-value-o2",
                   "text": "端数処理と複数期間のCFを整理し現価を求める"
+                },
+                {
+                  "id": "zr2-boki-interest-present-value-o3",
+                  "text": "測定目的に応じた割引の要否と使用率の条件を確認する"
                 }
               ],
               "prerequisites": [
@@ -2179,7 +2342,9 @@
                 }
               ],
               "prerequisites": [
-                "zr2-boki-bank-reconciliation"
+                "zr2-boki-bank-reconciliation",
+                "zr2-boki-accrual-adjustments",
+                "zr2-boki-interest-present-value"
               ],
               "sources": [
                 {
@@ -2192,7 +2357,13 @@
                   "registryKey": "accounting:ac2-finance-guide",
                   "id": "ac2-finance-guide",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
-                  "anchor": "手形等"
+                  "anchor": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁）。原文実読済み。"
+                },
+                {
+                  "registryKey": "accounting:ac2-bills-law",
+                  "id": "ac2-bills-law",
+                  "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+                  "anchor": "43・47〜49・75・77・78条。請求費用・受戻し・約束手形への準用。"
                 }
               ],
               "exampleRequirements": {
@@ -2218,6 +2389,75 @@
               "unresolvedScope": []
             },
             {
+              "id": "zr2-boki-documentary-bills",
+              "title": "為替手形の三者関係・荷為替と外貨取組",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-boki-documentary-bills-o1",
+                  "text": "為替手形の振出人・支払人・受取人の立場と原債権債務を特定し、引受・裏書・取立てを記録する"
+                },
+                {
+                  "id": "zr2-boki-documentary-bills-o2",
+                  "text": "荷為替の取組額、銀行手取額、留保する掛代金を区分して、消滅と保証責任を確認する"
+                },
+                {
+                  "id": "zr2-boki-documentary-bills-o3",
+                  "text": "外貨建て荷為替の取組・割引料・円貨入金と残る外貨売掛金の期末換算を統合する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-boki-bills-receivable",
+                "zr2-boki-fx-transactions"
+              ],
+              "sources": [
+                {
+                  "registryKey": "accounting:ac2-finance-guide",
+                  "id": "ac2-finance-guide",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+                  "anchor": "2025年3月11日版34項、荷為替手形に係るD/P・D/A等の買い取り。法律上の権利義務と消滅認識を確認する。"
+                },
+                {
+                  "registryKey": "accounting:ac2-bills-law",
+                  "id": "ac2-bills-law",
+                  "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+                  "anchor": "為替手形の発行・引受関係条文は執筆前に追加逐条確認が必要。今回確認した43・47〜49条だけで全取引構造を裏付けた扱いにしない。"
+                },
+                {
+                  "registryKey": "accounting:ac2-exam-boki73",
+                  "id": "ac2-exam-boki73",
+                  "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+                  "anchor": "2023年第73回簿記論・第三問資料2・2(3)・3商品A（印刷A15〜16、PDF17〜18枚目）を実読。荷為替取組80%、割引手取額、円貨入金、残る掛代金と外貨換算。出題能力の確認用で、旧税制の採用根拠にしない。"
+                }
+              ],
+              "exampleRequirements": {
+                "minimum": 3,
+                "cases": [
+                  "国内為替手形三者の帳簿",
+                  "輸出荷為替の取組と未決済代金",
+                  "外貨割引手取額と期末残存債権"
+                ],
+                "requirement": "条件・判断・仕訳又は数表・検算・誤答理由を完備。数値差替えを別例に数えない"
+              },
+              "practiceRequirements": {
+                "freshMinimum": 16,
+                "countBasis": "独立した設問セット数。小欄数・再掲・カードを別計上。総合講は30～60分の大問4形式が初期目安",
+                "formats": [
+                  "条件判定と根拠",
+                  "複数行仕訳・計算過程・数表",
+                  "複数年度・条件変更・誤答比較"
+                ],
+                "coverage": "各objectiveを異なる初見資料で2回以上評価。必要数は網羅性から増設する"
+              },
+              "legalDateIssues": [],
+              "unresolvedScope": [
+                "新規発見の明示的な未着手範囲。本文・例題・設問・独立レビューなし。",
+                "D/PとD/Aの書類引渡条件は制度運営者・銀行等の一次資料で追加検証が必要。",
+                "関連法条全文と外貨換算基準の該当節を追加確認する。",
+                "現在作成中のcash単元演習を終えても、この応用講を修得した扱いにしない。"
+              ]
+            },
+            {
               "id": "zr2-boki-receivable-transfers",
               "title": "電子債権・ファクタリングと消滅認識",
               "stage": "advanced",
@@ -2229,6 +2469,14 @@
                 {
                   "id": "zr2-boki-receivable-transfers-o2",
                   "text": "譲渡と担保借入を支配移転条件で区分する"
+                },
+                {
+                  "id": "zr2-boki-receivable-transfers-o3",
+                  "text": "消滅に伴う保証債務・新たな対価資産を区分して譲渡損益を求める"
+                },
+                {
+                  "id": "zr2-boki-receivable-transfers-o4",
+                  "text": "一部譲渡・留保回収サービス権の原価配分と残存帳簿価額を求める"
                 }
               ],
               "prerequisites": [
@@ -2246,6 +2494,24 @@
                   "id": "ac2-finance-guide",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
                   "anchor": "支配移転"
+                },
+                {
+                  "registryKey": "accounting:ac2-electronic-claims",
+                  "id": "ac2-electronic-claims",
+                  "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+                  "anchor": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+                },
+                {
+                  "registryKey": "accounting:ac2-electronic-claims-law",
+                  "id": "ac2-electronic-claims-law",
+                  "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+                  "anchor": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+                },
+                {
+                  "registryKey": "accounting:fsa-factoring-definition",
+                  "id": "fsa-factoring-definition",
+                  "url": "https://www.fsa.go.jp/user/factoring.html",
+                  "anchor": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
                 }
               ],
               "exampleRequirements": {
@@ -3691,6 +3957,10 @@
                 {
                   "id": "zr2-boki-loans-derecognition-o2",
                   "text": "譲渡自己債務買入債務免除の損益を判定する"
+                },
+                {
+                  "id": "zr2-boki-loans-derecognition-o3",
+                  "text": "回収サービス資産負債と残存部分を区別し、対価・原価配分・残高又は件数に比例した償却を計算する"
                 }
               ],
               "prerequisites": [
@@ -3708,7 +3978,7 @@
                   "registryKey": "accounting:ac2-finance-guide",
                   "id": "ac2-finance-guide",
                   "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
-                  "anchor": "支配移転"
+                  "anchor": "2025年3月11日版・第30〜45項、特に36〜39項。残存部分・新資産負債・回収サービス業務資産負債と償却。初期認識だけを修得してもこの後続目標を達成したとはしない"
                 }
               ],
               "exampleRequirements": {
@@ -3731,7 +4001,11 @@
                 "coverage": "各objectiveを異なる初見資料で2回以上評価。必要数は網羅性から増設する"
               },
               "legalDateIssues": [],
-              "unresolvedScope": []
+              "unresolvedScope": [
+                "回収サービスの残高・件数比例償却、通常収益不足時の負債、証券化等の複合条件を扱う教材と独立問題は未執筆。receivable-transfersの完了で修得済みにしない。",
+                "保証履行時の既存保証債務と取得する回収権の認識・評価を数値例まで扱う。未執筆。",
+                "利息を新手形額面へ組み込んだ更改と複雑な債務条件変更の測定・損益配分。元本同額・利息別途前受けの基礎例とは分ける。未執筆。"
+              ]
             },
             {
               "id": "zr2-boki-fx-transactions",
@@ -5935,7 +6209,7 @@
         },
         {
           "id": "zr2-zaimu-unit-cash-credit",
-          "title": "現金預金と金銭債権",
+          "title": "現金預金・債権・経過勘定",
           "progressUnit": 2002,
           "lessons": [
             {
@@ -6152,6 +6426,65 @@
               },
               "legalDateIssues": [],
               "unresolvedScope": []
+            },
+            {
+              "id": "zr2-zaimu-accrual-presentation",
+              "title": "経過勘定・返金請求権と長短表示",
+              "stage": "standard",
+              "objectives": [
+                {
+                  "id": "zr2-zaimu-accrual-presentation-o1",
+                  "text": "継続的役務の経過勘定と前払金・未払金・確定返金請求権を区別する"
+                },
+                {
+                  "id": "zr2-zaimu-accrual-presentation-o2",
+                  "text": "経過勘定の流動固定分類を適用表示規則と契約条件から説明する"
+                },
+                {
+                  "id": "zr2-zaimu-accrual-presentation-o3",
+                  "text": "解約・決算期変更に伴う期間帰属と期末に残る権利義務を説明する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-zaimu-general-principles",
+                "zr2-boki-accrual-adjustments"
+              ],
+              "sources": [
+                {
+                  "registryKey": "accounting:accounting-principles",
+                  "id": "accounting-principles",
+                  "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+                  "anchor": "注解5・注解16。分類を断定する前に個別表示規則も確認"
+                },
+                {
+                  "registryKey": "accounting:financial-regulations",
+                  "id": "financial-regulations",
+                  "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+                  "anchor": "経過勘定と未収入金の表示・流動固定分類。該当条項の原文逐条確認はpending"
+                }
+              ],
+              "exampleRequirements": {
+                "minimum": 3,
+                "cases": [
+                  "継続役務と確定した解約返金",
+                  "一年を超える未経過部分",
+                  "決算期変更と前受残高"
+                ],
+                "requirement": "条件・判断・理由・表示科目・対案比較を示す"
+              },
+              "practiceRequirements": {
+                "freshMinimum": 12,
+                "formats": [
+                  "契約条件による区分",
+                  "金額と長短表示",
+                  "理論答案"
+                ],
+                "coverage": "三目標それぞれ二つ以上の初見資料"
+              },
+              "legalDateIssues": [],
+              "unresolvedScope": [
+                "該当表示条項の2026年4月3日時点の逐条照合と教材執筆は未着手。今回の簿記基礎講の完了で修得済みにはしない"
+              ]
             }
           ]
         },
@@ -19057,6 +19390,92 @@
               "unresolvedScope": []
             },
             {
+              "id": "zr2-hojin-sme-eligibility-integrated",
+              "title": "制度別中小判定・平均所得・再編通算の特例",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-sme-eligibility-integrated-o01",
+                  "number": 1,
+                  "text": "軽減税率と各措置法の法人規模/除外を制度別に比較する"
+                },
+                {
+                  "id": "zr2-hojin-sme-eligibility-integrated-o02",
+                  "number": 2,
+                  "text": "平均所得の月数/繰戻/再編調整と通算法人要件を計算する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-rates-credit-order"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法66〜70の2/67条、措置法の各税額控除、防衛特別法人税",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法66〜70の2/67条、措置法の各税額控除、防衛特別法人税",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:special-law",
+                  "id": "special-law",
+                  "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+                  "locator": "法人税法66〜70の2/67条、措置法の各税額控除、防衛特別法人税",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:special-decree",
+                  "id": "special-decree",
+                  "url": "https://laws.e-gov.go.jp/law/332CO0000000043_20260401_508CO0000000098",
+                  "locator": "法人税法66〜70の2/67条、措置法の各税額控除、防衛特別法人税",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。27の4条17〜19項の規模/平均所得要件を確認"
+                }
+              ],
+              "exampleRequirements": [
+                "大法人/大規模法人の別判定",
+                "短期基準年度と合併",
+                "資本なし法人と従業員"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-sme-eligibility-integrated-o01",
+                    "text": "軽減税率と各措置法の法人規模/除外を制度別に比較する"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-sme-eligibility-integrated-o02",
+                    "text": "平均所得の月数/繰戻/再編調整と通算法人要件を計算する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu",
+                "corporate-defense",
+                "corporate-assets"
+              ],
+              "unresolvedScope": []
+            },
+            {
               "id": "zr2-hojin-retained-earnings",
               "title": "特定同族会社の留保金課税",
               "stage": "advanced",
@@ -19073,7 +19492,7 @@
                 }
               ],
               "prerequisites": [
-                "zr2-hojin-rates-credit-order"
+                "zr2-hojin-sme-eligibility-integrated"
               ],
               "sources": [
                 {
@@ -20369,6 +20788,472 @@
                   {
                     "objectiveId": "zr2-hojin-theory-answer-o02",
                     "text": "結論の前提と例外/手続を簡潔に記述する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu"
+              ],
+              "unresolvedScope": []
+            }
+          ]
+        },
+        {
+          "id": "zr2-hojin-unit-nonprofit-advanced",
+          "title": "公益法人等・人格のない社団等の応用",
+          "progressUnit": 4016,
+          "lessons": [
+            {
+              "id": "zr2-hojin-nonprofit-qualification",
+              "title": "非営利型二類型の全要件と理事関係",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-nonprofit-qualification-o01",
+                  "number": 1,
+                  "text": "非営利徹底型四要件と共益型七要件を定款/行為から判定する"
+                },
+                {
+                  "id": "zr2-hojin-nonprofit-qualification-o02",
+                  "number": 2,
+                  "text": "理事特殊関係・残余財産・要件喪失の時点を根拠付きで説明する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-entity-scope",
+                "zr2-hojin-income-adjustments"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:corporate-rules",
+                  "id": "corporate-rules",
+                  "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。非営利型法人の特殊関係理事は2の2条を確認"
+                }
+              ],
+              "exampleRequirements": [
+                "役員家系と定款変更",
+                "特別利益と共益事業の複合"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-nonprofit-qualification-o01",
+                    "text": "非営利徹底型四要件と共益型七要件を定款/行為から判定する"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-nonprofit-qualification-o02",
+                    "text": "理事特殊関係・残余財産・要件喪失の時点を根拠付きで説明する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu"
+              ],
+              "unresolvedScope": []
+            },
+            {
+              "id": "zr2-hojin-revenue-business-boundaries",
+              "title": "収益事業34業種と個別・共通除外",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-revenue-business-boundaries-o01",
+                  "number": 1,
+                  "text": "各業種の対象と法令/省令の除外を比較適用する"
+                },
+                {
+                  "id": "zr2-hojin-revenue-business-boundaries-o02",
+                  "number": 2,
+                  "text": "公益目的事業/生活保護事業等の除外と付随行為を判断する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-nonprofit-qualification"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:corporate-rules",
+                  "id": "corporate-rules",
+                  "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。非営利型法人の特殊関係理事は2の2条を確認"
+                }
+              ],
+              "exampleRequirements": [
+                "医療/教授/会報の境界",
+                "委託/席貸/貸付の条件比較"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-revenue-business-boundaries-o01",
+                    "text": "各業種の対象と法令/省令の除外を比較適用する"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-revenue-business-boundaries-o02",
+                    "text": "公益目的事業/生活保護事業等の除外と付随行為を判断する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu"
+              ],
+              "unresolvedScope": []
+            },
+            {
+              "id": "zr2-hojin-nonprofit-segregation",
+              "title": "収益事業の区分経理・共通費・みなし寄附金",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-nonprofit-segregation-o01",
+                  "number": 1,
+                  "text": "部門別資産負債と共通収益費用を合理的に配賦する"
+                },
+                {
+                  "id": "zr2-hojin-nonprofit-segregation-o02",
+                  "number": 2,
+                  "text": "繰入れのみなし寄附金と限度/別表を連動計算する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-revenue-business-boundaries"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:corporate-tsutatsu",
+                  "id": "corporate-tsutatsu",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/01.htm",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "現行は6月以後更新を含む。4月3日内容は改正前の確認が必要"
+                }
+              ],
+              "exampleRequirements": [
+                "複数収益事業と一般会費",
+                "資産供用と公益部門繰入"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-nonprofit-segregation-o01",
+                    "text": "部門別資産負債と共通収益費用を合理的に配賦する"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-nonprofit-segregation-o02",
+                    "text": "繰入れのみなし寄附金と限度/別表を連動計算する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu"
+              ],
+              "unresolvedScope": []
+            },
+            {
+              "id": "zr2-hojin-nonprofit-transitions",
+              "title": "法人区分移行・収益事業開始廃止と累積所得",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-nonprofit-transitions-o01",
+                  "number": 1,
+                  "text": "みなし年度と資産負債受入/税務簿価を求める"
+                },
+                {
+                  "id": "zr2-hojin-nonprofit-transitions-o02",
+                  "number": 2,
+                  "text": "普通法人等への移行と累積所得/公益目的財産残額を判定する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-nonprofit-segregation"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:corporate-tsutatsu",
+                  "id": "corporate-tsutatsu",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/01.htm",
+                  "locator": "法人税法2/3/4/6/64の4等、施行令3/5条、規則の各業種除外",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "現行は6月以後更新を含む。4月3日内容は改正前の確認が必要"
+                }
+              ],
+              "exampleRequirements": [
+                "公益認定/取消と期中移行",
+                "一般部門資産の事業受入"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-nonprofit-transitions-o01",
+                    "text": "みなし年度と資産負債受入/税務簿価を求める"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-nonprofit-transitions-o02",
+                    "text": "普通法人等への移行と累積所得/公益目的財産残額を判定する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu"
+              ],
+              "unresolvedScope": []
+            }
+          ]
+        },
+        {
+          "id": "zr2-hojin-unit-trust-pension",
+          "title": "法人課税信託と退職年金等積立金",
+          "progressUnit": 4017,
+          "lessons": [
+            {
+              "id": "zr2-hojin-corporation-tax-trust",
+              "title": "法人課税信託・受託法人・受益者等課税の境界",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-corporation-tax-trust-o01",
+                  "number": 1,
+                  "text": "法人課税信託の定義と除外/受託法人の内外国を判定する"
+                },
+                {
+                  "id": "zr2-hojin-corporation-tax-trust-o02",
+                  "number": 2,
+                  "text": "固有財産から分離し設定/分割/終了/分配の課税を計算する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-entity-scope",
+                "zr2-hojin-special-entities"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法2/4/4の2/4の3/12/82以下/84以下、措置法の年金積立金適用停止",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法2/4/4の2/4の3/12/82以下/84以下、措置法の年金積立金適用停止",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:special-law",
+                  "id": "special-law",
+                  "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+                  "locator": "法人税法2/4/4の2/4の3/12/82以下/84以下、措置法の年金積立金適用停止",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012"
+                }
+              ],
+              "exampleRequirements": [
+                "個人受託者と二つの信託",
+                "受益者不存在から変更"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-corporation-tax-trust-o01",
+                    "text": "法人課税信託の定義と除外/受託法人の内外国を判定する"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-corporation-tax-trust-o02",
+                    "text": "固有財産から分離し設定/分割/終了/分配の課税を計算する"
+                  }
+                ],
+                "independentFromWorkedExamples": true,
+                "solutions": "適用規定・事実への当てはめ・途中過程・単位/端数・結論・検算。記述は設問内の要求に対応した独自ルーブリック"
+              },
+              "legalDateIssues": [
+                "freeze",
+                "tsutatsu"
+              ],
+              "unresolvedScope": []
+            },
+            {
+              "id": "zr2-hojin-pension-funds",
+              "title": "退職年金等積立金課税と適用停止の確認",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-hojin-pension-funds-o01",
+                  "number": 1,
+                  "text": "納税主体/課税標準/計算期間/申告を確定する"
+                },
+                {
+                  "id": "zr2-hojin-pension-funds-o02",
+                  "number": 2,
+                  "text": "措置法の停止対象期間と制度別除外を年表で検証する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-hojin-corporation-tax-trust"
+              ],
+              "sources": [
+                {
+                  "registryKey": "national-tax:corporate-law",
+                  "id": "corporate-law",
+                  "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+                  "locator": "法人税法2/4/4の2/4の3/12/82以下/84以下、措置法の年金積立金適用停止",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：340AC0000000034_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "national-tax:corporate-decree",
+                  "id": "corporate-decree",
+                  "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+                  "locator": "法人税法2/4/4の2/4の3/12/82以下/84以下、措置法の年金積立金適用停止",
+                  "verification": "2026-10-27",
+                  "applicableVersion": "2026-04-03指定で返った4月1日施行版。3/4/4の2/5条本文を確認"
+                },
+                {
+                  "registryKey": "national-tax:special-law",
+                  "id": "special-law",
+                  "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+                  "locator": "法人税法2/4/4の2/4の3/12/82以下/84以下、措置法の年金積立金適用停止",
+                  "verification": "2026-10-25",
+                  "applicableVersion": "2026年4月3日現在施行版：332AC0000000026_20260401_508AC0000000012"
+                }
+              ],
+              "exampleRequirements": [
+                "期中移管と積立金",
+                "施行版と適用期間の照合"
+              ],
+              "practiceRequirements": {
+                "planningRange": "独立12〜20設計または相当する長文多肢課題を目安に調整",
+                "mix": [
+                  "複数条件と境界の判定",
+                  "複数期/複数人の計算",
+                  "反対事例を含む理由記述"
+                ],
+                "requiredOutputs": [
+                  {
+                    "objectiveId": "zr2-hojin-pension-funds-o01",
+                    "text": "納税主体/課税標準/計算期間/申告を確定する"
+                  },
+                  {
+                    "objectiveId": "zr2-hojin-pension-funds-o02",
+                    "text": "措置法の停止対象期間と制度別除外を年表で検証する"
                   }
                 ],
                 "independentFromWorkedExamples": true,
@@ -32499,7 +33384,7 @@
               "objectives": [
                 {
                   "id": "zr2-kokuzei-privileges-liens-o1",
-                  "text": "保存・工事・不動産賃貸の先取特権を区分する"
+                  "text": "一般・特別先取の対象と成立・公示・時点を区分し、保存・工事・賃貸等の優先額を計算する"
                 },
                 {
                   "id": "zr2-kokuzei-privileges-liens-o2",
@@ -32516,19 +33401,24 @@
                   "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012"
                 },
                 {
-                  "registryKey": "other-tax:general-law",
-                  "id": "general-law",
-                  "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012"
-                },
-                {
                   "registryKey": "other-tax:collection-order",
                   "id": "collection-order",
                   "url": "https://laws.e-gov.go.jp/law/334CO0000000329"
                 },
                 {
-                  "registryKey": "other-tax:collection-training",
-                  "id": "collection-training",
-                  "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf"
+                  "registryKey": "other-tax:civil-law",
+                  "id": "civil-law",
+                  "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033"
+                },
+                {
+                  "registryKey": "other-tax:commercial-law",
+                  "id": "commercial-law",
+                  "url": "https://laws.e-gov.go.jp/law/132AC0000000048_20230401_503AC0000000061"
+                },
+                {
+                  "registryKey": "other-tax:child-privilege-ordinance",
+                  "id": "child-privilege-ordinance",
+                  "url": "https://laws.e-gov.go.jp/law/507M60000010056_20260401_000000000000000"
                 }
               ],
               "exampleRequirements": [
@@ -32543,6 +33433,10 @@
                 {
                   "case": "留置権の成立",
                   "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "2026年4月以後の子の監護定期金と登記一般先取",
+                  "requiredWorking": "施行後各期・省令限度額・登記の有無と20条の時点条件を別々に判定する"
                 }
               ],
               "practiceRequirements": {
@@ -32554,6 +33448,182 @@
                 "requiredIndependentDesigns": [
                   "担保の名称を与えない事例",
                   "抵当権と異なる要件の記述"
+                ],
+                "formats": [
+                  "case_analysis",
+                  "written_reasoning",
+                  "calculation_or_timeline_as_applicable"
+                ],
+                "countingRule": "同じ判断過程の数値差替えは独立問題に数えない。広い目標は多段設問・15～25問以上又は複数レッスンへ分割する"
+              },
+              "legalDateIssues": [
+                "KO-BASELINE",
+                "KO-2026-RATES"
+              ],
+              "unresolvedScope": []
+            },
+            {
+              "id": "zr2-kokuzei-security-registers",
+              "title": "自動車・船舶・財団等の担保目的と公示",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-kokuzei-security-registers-o1",
+                  "text": "自動車・船舶・工場抵当及び財団等の目的・登録登記・目録・質権制限を関連法から選ぶ"
+                },
+                {
+                  "id": "zr2-kokuzei-security-registers-o2",
+                  "text": "担保の及ぶ範囲と公示時点を15〜18条及び差押対象選択へ接続する"
+                }
+              ],
+              "prerequisites": [
+                "zr2-kokuzei-pledge-mortgage",
+                "zr2-kokuzei-registered-assets"
+              ],
+              "sources": [
+                {
+                  "registryKey": "other-tax:collection-law",
+                  "id": "collection-law",
+                  "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "other-tax:civil-law",
+                  "id": "civil-law",
+                  "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033"
+                },
+                {
+                  "registryKey": "other-tax:commercial-law",
+                  "id": "commercial-law",
+                  "url": "https://laws.e-gov.go.jp/law/132AC0000000048_20230401_503AC0000000061"
+                },
+                {
+                  "registryKey": "other-tax:automobile-mortgage-law",
+                  "id": "automobile-mortgage-law",
+                  "url": "https://laws.e-gov.go.jp/law/326AC0000000187_20200401_429AC0000000045"
+                },
+                {
+                  "registryKey": "other-tax:factory-mortgage-law",
+                  "id": "factory-mortgage-law",
+                  "url": "https://laws.e-gov.go.jp/law/138AC0000000054_20250601_504AC0000000068"
+                }
+              ],
+              "exampleRequirements": [
+                {
+                  "case": "登録自動車と未登録車・建設機械",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "船舶抵当と小型船舶",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "工場抵当の機械目録と工場財団",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "航空機・企業担保等の制度別対照",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                }
+              ],
+              "practiceRequirements": {
+                "guidedCases": 2,
+                "independentItemPlanningRange": [
+                  8,
+                  15
+                ],
+                "requiredIndependentDesigns": [
+                  "財産一覧から担保の効力範囲と第三者対抗を判断",
+                  "複数の公示制度を同一の不動産登記として扱う答案を訂正"
+                ],
+                "formats": [
+                  "case_analysis",
+                  "written_reasoning",
+                  "calculation_or_timeline_as_applicable"
+                ],
+                "countingRule": "同じ判断過程の数値差替えは独立問題に数えない。広い目標は多段設問・15～25問以上又は複数レッスンへ分割する"
+              },
+              "legalDateIssues": [
+                "KO-BASELINE",
+                "KO-2026-RATES"
+              ],
+              "unresolvedScope": []
+            },
+            {
+              "id": "zr2-kokuzei-special-privileges",
+              "title": "立木・船舶・みなし工事・借地等の先取特権",
+              "stage": "advanced",
+              "objectives": [
+                {
+                  "id": "zr2-kokuzei-special-privileges-o1",
+                  "text": "19条3〜5号及び20条3号等の個別法の対象債権・財産・公示証明を条文へ当てはめる"
+                },
+                {
+                  "id": "zr2-kokuzei-special-privileges-o2",
+                  "text": "みなし先取・立木・海事・借地・農業動産等を19条又は20条の優先へ対応させる"
+                }
+              ],
+              "prerequisites": [
+                "zr2-kokuzei-privileges-liens"
+              ],
+              "sources": [
+                {
+                  "registryKey": "other-tax:collection-law",
+                  "id": "collection-law",
+                  "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012"
+                },
+                {
+                  "registryKey": "other-tax:collection-order",
+                  "id": "collection-order",
+                  "url": "https://laws.e-gov.go.jp/law/334CO0000000329"
+                },
+                {
+                  "registryKey": "other-tax:civil-law",
+                  "id": "civil-law",
+                  "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033"
+                },
+                {
+                  "registryKey": "other-tax:commercial-law",
+                  "id": "commercial-law",
+                  "url": "https://laws.e-gov.go.jp/law/132AC0000000048_20230401_503AC0000000061"
+                },
+                {
+                  "registryKey": "other-tax:special-privilege-guidance",
+                  "id": "special-privilege-guidance",
+                  "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/019/01.htm"
+                },
+                {
+                  "registryKey": "other-tax:lease-law",
+                  "id": "lease-law",
+                  "url": "https://laws.e-gov.go.jp/law/403AC0000000090_20230614_505AC0000000053"
+                }
+              ],
+              "exampleRequirements": [
+                {
+                  "case": "立木の価格割合地代と定額地代",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "救助積荷と船舶・責任制限等の先取",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "都市再開発等のみなし工事",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "借地上建物と地代先取・農業動産信用",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                }
+              ],
+              "practiceRequirements": {
+                "guidedCases": 2,
+                "independentItemPlanningRange": [
+                  8,
+                  15
+                ],
+                "requiredIndependentDesigns": [
+                  "権利名が同じでも対象財産や成立時点が違う事例",
+                  "個別法の期間・登記・増価限度から国税への優先額を計算"
                 ],
                 "formats": [
                   "case_analysis",
@@ -32727,11 +33797,11 @@
               "objectives": [
                 {
                   "id": "zr2-kokuzei-competing-distribution-o1",
-                  "text": "税相互と私債権の優先を独立に判定する"
+                  "text": "民法上の担保・先取相互の順位、税相互及び各私債権への国税の優先を独立に判定する"
                 },
                 {
                   "id": "zr2-kokuzei-competing-distribution-o2",
-                  "text": "26条の競合調整を用いて配当額と残余を求める"
+                  "text": "26条及び18条の通知時差・1項ただし書の調整を用いて配当額と残余を求める"
                 }
               ],
               "prerequisites": [
@@ -32757,6 +33827,11 @@
                   "registryKey": "other-tax:collection-training",
                   "id": "collection-training",
                   "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf"
+                },
+                {
+                  "registryKey": "other-tax:civil-law",
+                  "id": "civil-law",
+                  "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033"
                 }
               ],
               "exampleRequirements": [
@@ -32771,6 +33846,22 @@
                 {
                   "case": "相対優先の循環",
                   "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "複数通知と根抵当元本限度",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "18条1項ただし書による後順位者保護",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "物上代位・賃料と国税差押えの競合",
+                  "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "一般先取と特別先取、共益費用、動産先取相互、一般先取の他財産先行弁済",
+                  "requiredWorking": "民329〜335条による当事者ごとの関係と徴収法の優先を分け、残高と原資を照合する"
                 }
               ],
               "practiceRequirements": {
@@ -32781,7 +33872,8 @@
                 ],
                 "requiredIndependentDesigns": [
                   "順位を所与にしない多者競合",
-                  "配当総額と換価原資の照合"
+                  "配当総額と換価原資の照合",
+                  "本文適用とただし書適用の配当を比較し権利侵害を判断"
                 ],
                 "formats": [
                   "case_analysis",
@@ -33664,7 +34756,7 @@
                 },
                 {
                   "id": "zr2-kokuzei-preservation-o2",
-                  "text": "裁判所の強制執行・仮差押え等との調整を説明する"
+                  "text": "裁判所の強制執行・仮差押え・破産等との調整及び留置権の取扱いを手続別に判定する"
                 }
               ],
               "prerequisites": [
@@ -33690,6 +34782,26 @@
                   "registryKey": "other-tax:collection-training",
                   "id": "collection-training",
                   "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf"
+                },
+                {
+                  "registryKey": "other-tax:civil-law",
+                  "id": "civil-law",
+                  "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033"
+                },
+                {
+                  "registryKey": "other-tax:commercial-law",
+                  "id": "commercial-law",
+                  "url": "https://laws.e-gov.go.jp/law/132AC0000000048_20230401_503AC0000000061"
+                },
+                {
+                  "registryKey": "other-tax:bankruptcy-law",
+                  "id": "bankruptcy-law",
+                  "url": "https://laws.e-gov.go.jp/law/416AC0000000075?occasion_date=20260403"
+                },
+                {
+                  "registryKey": "other-tax:civil-execution-law",
+                  "id": "civil-execution-law",
+                  "url": "https://laws.e-gov.go.jp/law/354AC0000000004?occasion_date=20260403"
                 }
               ],
               "exampleRequirements": [
@@ -33704,6 +34816,14 @@
                 {
                   "case": "仮差押財産",
                   "requiredWorking": "事実・基準日→適用要件→方法選択→中間過程→結論→照合。法理論は要件・例外・当てはめ・根拠を示す"
+                },
+                {
+                  "case": "民事留置・商事留置のある財産の裁判所競売と滞納処分換価",
+                  "requiredWorking": "21条の適用前提と民事執行側の規律を対照する"
+                },
+                {
+                  "case": "破産財団上の民事留置・商事留置・国税の位置付け",
+                  "requiredWorking": "破産法66条等の効力と租税債権の手続を個別根拠へ対応させる"
                 }
               ],
               "practiceRequirements": {
@@ -43440,9 +44560,9 @@
   ],
   "totals": {
     "subjects": 11,
-    "units": 111,
-    "lessons": 559,
-    "objectives": 1119,
+    "units": 113,
+    "lessons": 570,
+    "objectives": 1147,
     "fullMockBlueprints": 22
   }
 }

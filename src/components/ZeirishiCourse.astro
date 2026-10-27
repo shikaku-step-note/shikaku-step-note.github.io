@@ -1,6 +1,7 @@
 ---
 import { zeirishiSubjects, zeirishiOutline, zeirishiLimitations, zeirishiReviewed } from '../data/zeirishi';
 import { href } from '../lib/site';
+import { zeirishiDeepLessons } from '../data/zeirishi-expanded';
 import Share from './Share.astro';
 ---
 
@@ -51,7 +52,7 @@ import Share from './Share.astro';
                     <a href={href(`qualifications/zeirishi/subjects/${s.id}/`)}>{s.name}</a>
                   </h4>
                   <p>{s.scope}</p>
-                  <p class="muted">{lessons.length}レッスン・用語確認・総復習・120分模試</p>
+                  <p class="muted">入門{lessons.length}レッスン{zeirishiDeepLessons.some((lesson) => lesson.subject === s.id) ? `・詳しい学習${zeirishiDeepLessons.filter((lesson) => lesson.subject === s.id).length}レッスン` : ''}・用語と演習</p>
                   <p data-course-progress="zeirishi" data-course-subject={s.id}>
                     記録を読み込んでいます
                   </p>

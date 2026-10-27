@@ -3,20 +3,21 @@ import sources from './zeirishi-sources.json';
 import bank from './zeirishi-questions.json';
 import mocks from './zeirishi-mock.json';
 import type { Assessment, Question } from '../lib/assessment';
+import { zeirishiDeepAssessments, zeirishiDeepLessons } from './zeirishi-expanded';
 export const zeirishiSubjects = curriculum.subjects;
 export const zeirishiOutline = curriculum.lessons;
+export const zeirishiLearningOutline = [...zeirishiOutline, ...zeirishiDeepLessons];
 export const zeirishiSources = sources;
 export const zeirishiReviewed = curriculum.reviewed;
 export const zeirishiVersion = curriculum.version;
 export const zeirishiLimitations =
-  '11科目の主要な仕組みと代表的な計算を学ぶ独自の基礎教材です。全ての法令・通達・会計基準・特例や、実際の試験の資料量・難易度を網羅したものではありません。各対応表の追加学習を確認し、公式資料と公表問題で学習を補ってください。';
+  '11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。';
 export const zeirishiSubject = (id: string) => zeirishiSubjects.find((s) => s.id === id);
 type Lesson = { data: { stableId: string; qualification: string; archived?: boolean } };
 export function zeirishiAssessments(lessons: Lesson[]): Assessment[] {
   const rows = zeirishiOutline.filter((r) =>
     lessons.some((l) => l.data.qualification === 'zeirishi' && l.data.stableId === r.id && !l.data.archived),
   );
-  if (!rows.length) return [];
   const base = {
     qualification: 'zeirishi',
     version: zeirishiVersion,
@@ -84,6 +85,12 @@ export function zeirishiAssessments(lessons: Lesson[]): Assessment[] {
       instructions: `2026年8月本試験の大問配点（${s.majorPoints.join('・')}点）と各科目120分を参照した独自の基礎演習です。小問数・資料量・難易度・詳細配点は公式と同一ではありません。数値・語句は指定解答と照合し、記述は提出後に独自の確認基準で自己確認します。公式の60%基準へ換算せず合否は判定しません。2026年4月3日現在施行法令を参照し、各問の対象年・事業年度・仮定を優先します。法定の講習や科目免除を与えるものではありません。`,
     });
   }
-  return result;
+  const available = new Set(lessons.filter((l) => !l.data.archived).map((l) => l.data.stableId));
+  return [
+    ...result,
+    ...zeirishiDeepAssessments.filter((assessment) =>
+      assessment.questions.every((question) => available.has(question.lesson)),
+    ),
+  ];
 }
 export { checkSubjectCombination } from '../lib/subject-selection';

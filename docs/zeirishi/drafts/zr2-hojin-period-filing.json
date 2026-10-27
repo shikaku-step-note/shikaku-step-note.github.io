@@ -1,0 +1,470 @@
+{
+  "id": "zr2-hojin-period-filing",
+  "subject": "hojin",
+  "title": "事業年度・納税地と青色承認の期限を確定する",
+  "stage": "標準",
+  "moduleId": "zr2-hojin-unit-scope",
+  "minutes": 100,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "設立/解散/再編のみなし事業年度を求める",
+    "届出/青色承認/帳簿条件を判定する"
+  ],
+  "objectiveIds": [
+    "zr2-hojin-period-filing-o01",
+    "zr2-hojin-period-filing-o02"
+  ],
+  "prerequisites": [
+    "zr2-hojin-entity-scope"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "corporate-period-blue",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "13条全項、14条1項各号と通算特則、16〜20条、121〜128条、148条を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-book-preservation",
+      "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+      "location": "59条の通常の起算日・7年間保存。電子保存/欠損繰越の追加条件は後続へ",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "general-deadlines",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "location": "10条2項の休日等に係る期限の特例",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-startup-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5100.htm",
+      "location": "法人設立届と初年度青色承認申請の比較",
+      "applicableVersion": "現行ページの補助解説。凍結法令を優先"
+    }
+  ],
+  "sourceUncertainties": [
+    "青色取消しの2026年6月以後の事務運営指針を基準日へ流用しない。本文は凍結法123/127条の規定に限り、行政上の行使基準の全文確認をしたとは表示しない。",
+    "通常の規則59条7年保存に加えた欠損金等の条件・保存形式は後続に明示している。通常の7年間だけで全法人の保存義務が尽きるとはしない。",
+    "本文・設問の実際の申請日について休日を条件に織り込み、税務の期末日自体の移動と区別する。"
+  ],
+  "glossary": [
+    {
+      "term": "事業年度",
+      "definition": "法人税の所得計算の単位となる期間。定款等の期間、1年超の区分、みなし事業年度等を確認する"
+    },
+    {
+      "term": "みなし事業年度",
+      "definition": "解散・合併・収益事業開始等の法定事実により、通常の会計期間を区切って定める税務上の期間"
+    },
+    {
+      "term": "納税地",
+      "definition": "法人税の申告先等を決める基準となる場所。内国法人は本店または主たる事務所が原則"
+    },
+    {
+      "term": "青色申告の承認",
+      "definition": "法定の申請と帳簿等の条件に基づいて青色の申告書を提出するための承認"
+    },
+    {
+      "term": "承認申請の却下",
+      "definition": "帳簿不備等の法定の条件に基づき申請を認めない処分"
+    },
+    {
+      "term": "青色申告の承認の取消し",
+      "definition": "既存の承認について法定の事実に基づき効力を失わせる処分。遡及年度や通算特則も確認する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-hojin-period-filing-e1",
+      "section": "例題1：長い初年度と、期間の定めがない団体",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "companyPeriods": [
+          "2025-04-01/2026-03-31",
+          "2026-04-01/2026-09-30"
+        ],
+        "associationPeriod": "2025-11-05/2025-12-31"
+      }
+    },
+    {
+      "id": "zr2-hojin-period-filing-e2",
+      "section": "例題2：解散・残余財産・合併の時系列",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "dissolutionPeriods": [
+          "2025-04-01/2025-08-20",
+          "2025-08-21/2026-01-15"
+        ],
+        "mergerPeriod": "2025-04-01/2025-10-31"
+      }
+    },
+    {
+      "id": "zr2-hojin-period-filing-e3",
+      "section": "例題3：初年度が長い会社の申請期限",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "threeMonthsDate": "2025-07-15",
+        "applicationDeadline": "2025-07-14"
+      }
+    },
+    {
+      "id": "zr2-hojin-period-filing-e4",
+      "section": "例題4：短い初年度に申請しなかった場合",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "firstYearDeadline": "2025-07-30",
+        "nextYearDeadline": "2025-09-09"
+      }
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "内国普通法人Aの設立日は2025年6月1日。定款の最初の会計期間は同日〜2026年8月31日で、期中の特例事実はない。法人税の各事業年度を全て示し、区切る理由も説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "2025年6月1日〜2026年5月31日と、2026年6月1日〜8月31日。会計期間が1年を超えるため開始日以後1年ごとに区分し、最後の1年未満の期間も一事業年度とする。",
+      "rubric": [
+        {
+          "criterion": "最初の1年の期間を正しく示す",
+          "points": 1
+        },
+        {
+          "criterion": "残り3月の期間を正しく示す",
+          "points": 1
+        },
+        {
+          "criterion": "1年超の区分と最後の短期期間の規則を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "18月や15月を一つにまとめたり、各法人を暦年で切ったりしません。設立日の6月1日から区分します。",
+      "id": "zr2-hojin-period-filing-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "法令・定款等に会計期間の定めがない内国普通法人Bが、法13条2項の届出をしない場合の規則を選んでください。人格のない社団等ではない。",
+      "options": [
+        "必ず1月1日〜12月31日になる",
+        "税務署長が会計期間を指定し書面で通知する",
+        "期間が定まるまで法人税法の適用を受けない",
+        "代表取締役の所得税の計算期間を自動的に使う"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "普通法人等の無届出は13条3項の指定によります。人格のない社団等に係る4項の暦年の特則とは区別します。",
+      "id": "zr2-hojin-period-filing-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "内国の人格のない社団等Cは、法令・規約等に会計期間の定めがなく、会計期間の届出もない。2025年12月12日に初めて収益事業を開始した。最初の会計期間を選んでください。",
+      "options": [
+        "2025年1月1日〜12月31日",
+        "2025年12月12日〜2026年12月11日",
+        "2025年12月12日〜12月31日",
+        "2025年1月1日〜12月11日と12月12日〜12月31日"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "13条4項では、新たな収益事業開始の年は開始日から12月31日までです。このケースは14条1項3号の区切りの例外であり、開始前の期間を余分に作りません。",
+      "id": "zr2-hojin-period-filing-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "いずれも4月1日〜翌年3月31日を通常の会計期間とする内国法人D・Eについて、Dは2025年9月16日に通常の解散、Eは同日に合併で消滅した。期首からの事業年度の終了日の正しい組合せを選んでください。通算法人ではない。",
+      "options": [
+        "D9月15日、E9月15日",
+        "D9月16日、E9月16日",
+        "D9月15日、E9月16日",
+        "D9月16日、E9月15日"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "通常の解散は当日、合併による解散は合併日前日です。通常解散の翌日からは次の事業年度が始まりますが、消滅するEの次の事業年度は作りません。",
+      "id": "zr2-hojin-period-filing-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "内国公益法人等Fは4月1日〜翌年3月31日を会計期間とし、2025年10月7日に初めて収益事業を開始した。期中の他の事実はない。開始前後の二つの事業年度を示し、開始前の非収益事業の所得を、この区切りだけで課税所得へ加えてよいかも説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "2025年4月1日〜10月6日と、10月7日〜2026年3月31日。収益事業開始日の前日で区切る。期間が区切られたことと課税範囲は別であり、開始前の非収益事業所得を当然に収益事業所得へ加えることはできない。",
+      "rubric": [
+        {
+          "criterion": "開始前の期末を10月6日とする",
+          "points": 1
+        },
+        {
+          "criterion": "次の年度を10月7日〜翌年3月31日とする",
+          "points": 1
+        },
+        {
+          "criterion": "期間と課税範囲を分け、開始前の非収益事業所得を自動加算しない",
+          "points": 2
+        }
+      ],
+      "explanation": "所得の範囲は前のレッスンの区分に従います。年度の区切りを新たな課税根拠として扱いません。",
+      "id": "zr2-hojin-period-filing-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "2025年2月20日設立の内国普通法人Gは、第1期末が同年3月31日である。初年度からの青色承認申請について、3月を経過する日は5月20日と計算済み。3月30日は日曜、31日は休日でない月曜で、通則法の休日特例を適用する。実際の提出期限を選んでください。",
+      "options": [
+        "3月30日",
+        "3月31日",
+        "5月19日",
+        "5月20日"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "比較すると早い日は3月31日で、その前日の3月30日がまず計算上の期限です。日曜のため翌日の3月31日へ移ります。年度終了日を動かす処理ではありません。",
+      "id": "zr2-hojin-period-filing-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "H社は2025年3月10日設立、第1期末は4月25日、第2期は4月26日〜2026年4月25日である。第1期の承認申請は未提出。第2期から青色申告を始めたい。設立以後3月を経過する日は6月10日、6月9日は休日でないものとして、第2期の申請期限と理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "2025年6月9日。第1期が3月未満なので122条2項4号を使い、設立以後3月を経過した2025年6月10日と第2期末の2026年4月25日を比較する。早い6月10日の前日が期限である。",
+      "rubric": [
+        {
+          "criterion": "短い第1期の翌年度の特例を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "比較する6月10日と翌年4月25日を示す",
+          "points": 1
+        },
+        {
+          "criterion": "期限を2025年6月9日とする",
+          "points": 2
+        }
+      ],
+      "explanation": "第2期開始日の前日である4月25日の原則だけを使うと特例が抜けます。設問が第2期からの承認を求めているため、第1期を遡って青色にする解答にもなりません。",
+      "id": "zr2-hojin-period-filing-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "継続法人Iは2026年4月1日から始まる年度から、新たに青色申告を行いたい。新設・収益事業開始・法人区分変更等の特例はない。3月31日は休日でないとして、承認申請の提出期限を選んでください。",
+      "options": [
+        "2026年3月31日",
+        "2026年6月30日",
+        "2027年3月31日",
+        "確定申告書を提出する日"
+      ],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "原則は適用開始年度の開始日前日です。各事業年度に3月の猶予があるわけではなく、設立届出や確定申告の期限とも別です。",
+      "id": "zr2-hojin-period-filing-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "内国普通法人Jは、2025年中に本店をM市からN市へ移し、法人税の納税地も移った。納税地の指定はない。新しい納税地と、納税地異動の届出を提出する税務署の所轄地を答え、両者を区別してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "新しい納税地は本店のあるN市。法人税法20条の納税地異動の届出は異動前のM市を所轄する税務署長へ提出する。新しい納税地と異動届の提出先は別に確認する。",
+      "rubric": [
+        {
+          "criterion": "納税地をN市とする",
+          "points": 1
+        },
+        {
+          "criterion": "異動届の提出先を異動前M市とする",
+          "points": 2
+        }
+      ],
+      "explanation": "法人税法16条と20条を使い分けます。代表者の自宅や売上最大店の所在地を、根拠なく納税地に加えません。",
+      "id": "zr2-hojin-period-filing-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    },
+    {
+      "prompt": "青色申告の承認を受けたK社の帳簿に、当該年度の取引の一部を仮装した記録がある。申告書の提出期限には間に合った。法127条の規定に沿う説明を選んでください。",
+      "options": [
+        "期限内申告さえあれば仮装記録は取消しに関係しない",
+        "必ず帳簿作成の日に自動的に承認が消滅する",
+        "帳簿に関する法定の事実があれば、税務署長が承認を取り消すことができる規定を検討する",
+        "翌年度の申請書を出せば当該年度の記録義務が免除される"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "帳簿の真実性と期限内申告は別の条件です。取消しの根拠となる事実、処分と通知、遡及する年度を確認します。要件に該当した瞬間に自動取消しと書くことも適切ではありません。",
+      "id": "zr2-hojin-period-filing-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "通算・加入離脱による事業年度特則",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-group-joining",
+          "title": "通算制度の適用・加入離脱",
+          "objectiveIds": [
+            "zr2-hojin-group-joining-o01",
+            "zr2-hojin-group-joining-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-group-income",
+          "title": "通算の損益通算・欠損・遮断",
+          "objectiveIds": [
+            "zr2-hojin-group-income-o01",
+            "zr2-hojin-group-income-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "解散清算・再編の税務簿価と残余財産申告",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-liquidation",
+          "title": "解散・清算・残余財産・否認規定",
+          "objectiveIds": [
+            "zr2-hojin-liquidation-o01",
+            "zr2-hojin-liquidation-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-reorg-qualified",
+          "title": "合併・分割の適格要件",
+          "objectiveIds": [
+            "zr2-hojin-reorg-qualified-o01",
+            "zr2-hojin-reorg-qualified-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-filing",
+          "title": "確定・中間・期限延長・還付",
+          "objectiveIds": [
+            "zr2-hojin-filing-o01",
+            "zr2-hojin-filing-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "帳簿・電子保存・取消し・みなし承認の詳細",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-corrections",
+          "title": "修正・更正請求・帳簿・附帯税",
+          "objectiveIds": [
+            "zr2-hojin-corrections-o01",
+            "zr2-hojin-corrections-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-loss-carryforward",
+          "title": "青色/災害欠損の繰越と利用限度",
+          "objectiveIds": [
+            "zr2-hojin-loss-carryforward-o01",
+            "zr2-hojin-loss-carryforward-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-filing",
+          "title": "確定・中間・期限延長・還付",
+          "objectiveIds": [
+            "zr2-hojin-filing-o01",
+            "zr2-hojin-filing-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "公益法人等の移行と信託等の期間",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-nonprofit-transitions",
+          "title": "法人区分移行・収益事業開始廃止と累積所得",
+          "objectiveIds": [
+            "zr2-hojin-nonprofit-transitions-o01",
+            "zr2-hojin-nonprofit-transitions-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-corporation-tax-trust",
+          "title": "法人課税信託・受託法人・受益者等課税の境界",
+          "objectiveIds": [
+            "zr2-hojin-corporation-tax-trust-o01",
+            "zr2-hojin-corporation-tax-trust-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ],
+  "selfReview": {
+    "role": "author-self-check",
+    "status": "pending-independent-review",
+    "reviewedOn": "2026-10-27",
+    "arithmetic": "全例題/設問を数値と年度条件から再計算。税額連動の仮定値は本文/設問で明示し実税率由来と主張しない。",
+    "rubricAlignment": "全記述問の要求（数値/理由/資料/照合）と各採点基準を照合済み。要求外の追加知識へ配点しない。",
+    "japanese": "本文全文を文脈確認しlint/outline/terms/calquesを実行。否定反復・登記簿/株主名簿の用語・資本金/資本金等の額を修正。残る法定条件の否定と統計警告は確認して保持。",
+    "schema": "ID重複・目標参照・配点合計・後続IDの解決を確認。独立レビューはpending。"
+  }
+}

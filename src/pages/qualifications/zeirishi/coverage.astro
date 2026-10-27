@@ -10,6 +10,8 @@ import {
 import bank from '../../../data/zeirishi-questions.json';
 import type { Question } from '../../../lib/assessment';
 import { href } from '../../../lib/site';
+import { zeirishiDeepLessons, zeirishiDeepUnits } from '../../../data/zeirishi-expanded';
+import reviewLog from '../../../../docs/zeirishi/review-log.json';
 const questions = bank as Record<string, Question[]>;
 ---
 
@@ -34,6 +36,39 @@ const questions = bank as Record<string, Question[]>;
         下の技能は教材内の到達目標です。公式の細目番号ではなく、見出しを対応させただけで全範囲を詳説したという意味でもありません。「追加学習」を含めた計画が必要です。
       </p>
     </div>
+    {zeirishiDeepUnits.length > 0 && (
+      <section>
+        <h2>詳しい学習ユニットの対応と確認</h2>
+        <p>入門課程とは別のレッスンIDで学習します。説明・実演・レッスン末の独立練習・単元の独立した累積評価を対応付けています。入門課程を終えた記録だけで新しい課程を完了にはしません。</p>
+        <p>確認は公式資料と計算の照合、およびAI支援による別の作成・確認工程です。税理士等の専門家による監修や受講者試行を実施したという表示ではありません。単元の確認と、科目全体の完成も区別しています。</p>
+        {zeirishiDeepUnits.map((unit) => (
+          <section>
+            <h3><a href={href(`qualifications/zeirishi/units/${unit.id}/`)}>{zeirishiSubjects.find((subject) => subject.id === unit.subject)!.name}：{unit.title}</a></h3>
+            <p>{unit.description}（単元確認：{unit.reviewed}）</p>
+            {unit.lessonIds.map((id) => {
+              const lesson = zeirishiDeepLessons.find((lesson) => lesson.id === id)!;
+              const record = (reviewLog.lessons as Record<string, { objectives: Record<string, { cumulativeAssessment: string[] }> }>)[id];
+              if (!record) throw new Error(`Missing curriculum review record: ${id}`);
+              return (
+                <details>
+                  <summary>{lesson.title}：実演{lesson.workedExamples.length}件・独立練習{lesson.questions.length}問</summary>
+                  <p><a href={href(`qualifications/zeirishi/${id}/`)}>説明と実演を読む</a>。学習済み状態と、数値の自動照合・記述の自己確認は別に記録します。</p>
+                  <dl>{lesson.objectives.map((objective, index) => (
+                    <><dt>{objective}</dt><dd>
+                      実演：{lesson.workedExamples.filter((example) => example.objectives.includes(index + 1)).map((example) => example.id).join('、')}。<br />
+                      独立練習：{lesson.questions.filter((question) => question.objectives?.includes(index + 1)).map((question) => question.id).join('、')}。<br />
+                      累積評価：{record.objectives[lesson.objectiveIds[index]!]!.cumulativeAssessment.join('、')}。
+                    </dd></>
+                  ))}</dl>
+                  <ul>{lesson.references.map((source) => <li><a href={source.url}>{source.title}</a>：{source.locator}。{source.version}（確認日：{source.verified}）</li>)}</ul>
+                </details>
+              );
+            })}
+            <p>単元の用語確認と総合演習は別に作問しています。用語問題を計算・記述の適用力の証拠には数えません。{unit.assessments.map((assessment) => <a class="question-ref" href={href(`qualifications/zeirishi/tests/${assessment.id}/`)}>{assessment.title}（{assessment.questions.length}問）</a>)}</p>
+          </section>
+        ))}
+      </section>
+    )}
     <h2>公式情報の基準と、独自教材の範囲</h2>
     <ul>
       <li>
@@ -52,7 +87,7 @@ const questions = bank as Record<string, Question[]>;
         本文・例題・問題・解説・表は当サイトが作成したものです。公表試験問題の転載ではありません。学習時間は読む、例題、理解度チェックと解説、復習を含む独自の目安です。
       </li>
     </ul>
-    <h2>説明・例題・自力演習・確認の対応</h2>
+    <h2>入門課程：説明・例題・自力演習・確認の対応</h2>
     <p>
       本文には各技能の説明と基本例・条件比較があります。下の自力演習と確認は同じ理解度チェックを指し、別セットとして二重に数えていません。科目総復習もレッスンの問題を再利用します。用語テストは定義の確認であり、応用技能の代わりではありません。模試は別の独自問題です。
     </p>

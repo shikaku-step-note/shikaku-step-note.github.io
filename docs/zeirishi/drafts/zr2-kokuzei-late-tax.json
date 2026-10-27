@@ -1,0 +1,877 @@
+{
+  "id": "zr2-kokuzei-late-tax",
+  "subject": "kokuzei",
+  "title": "延滞税・加算税を日付と行為の条件から計算する",
+  "stage": "基礎から標準へ",
+  "moduleId": "kokuzei-foundations",
+  "minutes": 140,
+  "objectives": [
+    "法定納期限・現実の納期限・暦年から延滞税の率と区分日を選択する",
+    "本税の計算基礎・日数・一部納付・最低額・端数を段階別に計算する",
+    "61条1項の期間控除と不適用条件を年表へ反映する",
+    "過少申告・無申告・不納付・重加算税の基本分岐を選び、通常例の税額を求める"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-limitations-succession"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "location": "60〜68・118〜119条。版固定JSONの該当条項を読解",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "special-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "location": "94・96条。版固定JSONを読解。96条2項の計算過程1円未満切捨てを確認",
+      "version": "2026-04-01施行版"
+    },
+    {
+      "id": "collection-delay",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9205.htm",
+      "location": "2026年と2022〜2025年の特例割合・本税のみ計算・61条の特例",
+      "version": "2026-04-01現在法令等、2026-10-27確認"
+    },
+    {
+      "id": "delay-calculation",
+      "url": "https://www.nta.go.jp/taxes/nozei/entaizei/keisan/entai.htm",
+      "location": "納期限前後の低率期間、原則計算方法",
+      "version": "2026-10-27確認、年度別割合は別資料と照合"
+    },
+    {
+      "id": "general-training-2026",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf#page=66",
+      "location": "令和8年度・印刷55頁/PDF66頁の設例1-2。各区分1円未満切捨ての注、365日計算の注を2026-10-27に本文で確認",
+      "version": "2026-01-01法令を基礎。4月3日版主法と併用"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "延滞税",
+      "definition": "国税を法定納期限等までに納付しないことに対し、未納本税・法定期間・年割合に応じて生じる附帯税"
+    },
+    {
+      "term": "加算税",
+      "definition": "過少申告・無申告・源泉徴収等の不納付や隠蔽仮装等の条件に応じて課される附帯税"
+    },
+    {
+      "term": "特定修正申告書",
+      "definition": "61条の不正行為と調査による更正予知の条件に当たる修正申告書。通常の修正と期間控除の扱いが異なる"
+    },
+    {
+      "term": "調査通知",
+      "definition": "加算税に関する条文所定の通知。更正・決定の予知と同じ事実とは限らない"
+    },
+    {
+      "term": "重加算税への置換",
+      "definition": "対応する通常の加算税に代えて、隠蔽仮装等の条件により重加算税を課す関係。同じ税額部分へ両方を加えない"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "late-ex1",
+      "section": "例題1：二つの割合と本税の端数を処理する",
+      "result": {
+        "base": 980000,
+        "lowDays": 61,
+        "highDays": 45,
+        "lowAmount": 4585,
+        "highAmount": 10994,
+        "lateTax": 15500
+      }
+    },
+    {
+      "id": "late-ex2",
+      "section": "例題2：1年後の修正と暦年の割合変更",
+      "result": {
+        "excludedDays": 100,
+        "days2025": 212,
+        "days2026First": 153,
+        "days2026After": 10,
+        "amounts": [
+          13939,
+          11736,
+          767
+        ],
+        "lateTax": 26400
+      }
+    },
+    {
+      "id": "late-ex3",
+      "section": "例題3：過少申告加算税の5％加重部分",
+      "result": {
+        "basic": 90000,
+        "additional": 10000,
+        "total": 100000
+      }
+    },
+    {
+      "id": "late-ex4",
+      "section": "例題4：無申告の段階税率と自主申告の場合の違い",
+      "result": {
+        "usual": 935000,
+        "voluntaryBeforeNotice": 210000
+      }
+    }
+  ],
+  "scopeNotes": [
+    "本講の加算税例は調査段階・累積・反復・帳簿・正当理由等を明示した通常例。zr2-kokuzei-additional-tax-selection が元資料からの全分岐を別に教える",
+    "複数納付・減額後増額・源泉61条3項・63条免除及び措法94条2項は zr2-kokuzei-late-tax-complex と zr2-kokuzei-deferral で扱う。本文で触れたことだけを学習完了の証拠にしない"
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-late-tax-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "2026年内の通常の延滞税について、期間除外・猶予免除等がない。納期限まで及び納期限の翌日から2か月を経過する日までと、その翌日以後の特例割合の組合せを選んでください。",
+      "options": [
+        "年2.4％・年8.7％",
+        "年2.8％・年9.1％",
+        "年7.3％・年7.3％",
+        "翌年も必ず年2.8％・年9.1％"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "2026年は低い区分2.8％、高い区分9.1％です。1は2022〜2025年の率、3は本則の一方だけを使っています。4は将来年の率を未確認のまま固定しています。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "延滞税の計算対象となる未納本税が738,900円である。118条3項による計算の基礎となる税額だけを円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "730000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "本税の1万円未満の端数8,900円を切り捨て、730,000円です。課税標準の千円未満切捨てや、最終延滞税額の百円未満切捨てと混同しません。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "通常の期限内申告の本税について法定納期限は2026年4月30日、納付日は7月20日。計算期間除外等はない。低い割合から高い割合に切り替わる最初の日を選んでください。",
+      "options": [
+        "6月29日",
+        "6月30日",
+        "7月1日",
+        "7月20日"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "翌日5月1日から暦月で2か月の期間末日は6月30日です。低い割合は同日まで、高い割合は7月1日からです。1は不足、2は低い区分の末日、4は納付日を切替日と誤認しています。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "2026年の延滞税につき、適法に区分した低い割合2.8％の期間が47日、高い割合9.1％の期間が20日、両区分の本税計算基礎は730,000円である。他の期間・免除等はない。各区分で1円未満を切り捨て、最終税額まで円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "6200"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "低い区分は730,000×0.028×47÷365＝2,632円、高い区分は730,000×0.091×20÷365＝3,640円です。合計6,272円は千円以上なので百円未満を切り捨て、6,200円となります。率を合計したり、区分ごとに百円未満を切り捨てたりしません。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "法定申告期限2025年6月2日の国税に期限内申告があり、2026年9月10日に通常の修正申告をした。61条1項1号の条件を満たし、特定修正等ではない。控除される期間を選んでください。",
+      "options": [
+        "2025年6月3日から2026年6月2日まで",
+        "2026年6月3日から9月10日まで",
+        "2026年9月11日から納付日までの全日",
+        "法定納期限の翌日以後の全期間"
+      ],
+      "answer": 1,
+      "objectives": [
+        3
+      ],
+      "explanation": "法定申告期限から1年経過する日の翌日である2026年6月3日から、修正提出日9月10日までが控除期間です。1は最初の1年、3は提出後、4は全期間免除への取り違えです。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "未納本税60万円のうち20万円を2026年7月10日に納付した。延滞税の対象期間・配分等の条件は既に確認済みで、端数も生じない。計算基礎の切分けとして正しいものを選んでください。",
+      "options": [
+        "全期間を40万円に置き換える",
+        "7月9日まで60万円、7月10日から40万円",
+        "7月10日まで60万円、7月11日から40万円",
+        "全期間を60万円に据え置く"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "一部納付の日までの基礎と翌日以後の残額を分けます。1は納付前も減額し、2は納付日を一日早く減額し、4は納付後も残高を減らしていません。期間・率の切替えとは別に基礎額の切替えを置きます。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "2026年に法定申告期限が到来した国税で、65条3項の期限内申告税額30万円、初回増差税額80万円。更正の予知後の修正で、正当理由・帳簿加重・隠蔽仮装・他の特例なし。過少申告加算税を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "95000"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "基本80万円×10％＝8万円です。比較額は30万円と50万円の多い50万円なので、超過30万円×5％＝1.5万円を加え、95,000円です。80万円全額を15％とする120,000円にはなりません。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "2026年に法定申告期限が到来した国税の期限内申告について、調査通知前かつ更正の予知前に自主修正し、増差税額120万円となった。65条6項の不適用条件を満たし、他の加算原因もない。過少申告加算税を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "0"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "65条6項の条件を満たすため、過少申告加算税は課されません。増差本税や延滞税までゼロとなるわけではありません。5％は調査通知前かつ予知前の自主修正についてのこの不適用と区別します。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "2026年に法定申告期限が到来した国税で期限内申告後、法定の調査通知を受けたが更正の予知前に増差40万円を自主修正した。65条の5％が適用され、加重等はない。過少申告加算税を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "20000"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "40万円×5％＝20,000円です。調査通知後というだけで予知後の10％とせず、予知の有無を区別します。通知前自主修正の不適用条件とも違う事例です。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "法定申告期限2026年6月1日の国税について、決定の予知後に期限後申告し、無申告加算税の計算基礎は650万円。正当理由・不適用・累積・反復・帳簿加重・隠蔽等はない。通常の無申告加算税を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1625000"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "50万円×15％＝75,000円、250万円×20％＝500,000円、350万円×30％＝1,050,000円で計1,625,000円です。段階基礎50＋250＋350＝650万円を照合します。全額30％や旧年度の20％までの表は用いません。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "法定申告期限が2026年に到来した国税を、調査通知前かつ決定の予知前に自主的に期限後申告した。無申告加算税の計算基礎は650万円で66条8項の5％が適用され、不適用・加重等はない。税額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "325000"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "650万円×5％＝325,000円です。通常の15・20・30％の段階表から有利な部分を選ぶのではなく、66条8項が適用される事実に基づきます。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "2026年の源泉徴収による国税770,900円が法定納期限後に納付された。納税告知を受けず告知の予知前の納付で、67条の5％が適用され、正当理由・期限内納付意思等による不適用・加重はない。不納付加算税を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "38500"
+      ],
+      "objectives": [
+        2,
+        4
+      ],
+      "explanation": "計算基礎は1万円未満を切り捨て770,000円。770,000×5％＝38,500円で、最低額以上かつ百円未満端数もありません。確定申告の無申告加算税や、770,900円を基礎とする計算にしません。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "法定申告期限2026年到来の無申告国税について、計算基礎420万円の全額が隠蔽仮装に基づくもので、68条2項の重加算税40％が適用される。反復等の加重・除外部分はない。重加算税額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1680000"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "420万円×40％＝1,680,000円です。同じ基礎部分の無申告加算税に代えて課されるため、通常段階税額をさらに加えません。隠蔽仮装のない部分があれば別途区分する必要があります。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "通常の計算を終えた過少申告加算税が4,500円・5,500円の場合と、延滞税が990円・1,040円の場合について、119条4項による確定金額をそれぞれ理由付きで示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2,
+        4
+      ],
+      "modelAnswer": "加算税4,500円は全額5,000円未満なのでゼロ、5,500円は最低額以上で百円端数もないので5,500円である。延滞税990円は全額1,000円未満なのでゼロ、1,040円は最低額以上なので百円未満の40円を切り捨て1,000円となる。最低額と百円端数を段階別に適用する。",
+      "rubric": [
+        {
+          "criterion": "加算税4,500円→ゼロと5,000円基準",
+          "points": 1
+        },
+        {
+          "criterion": "加算税5,500円→5,500円",
+          "points": 1
+        },
+        {
+          "criterion": "延滞税990円→ゼロと1,000円基準",
+          "points": 1
+        },
+        {
+          "criterion": "延滞税1,040円→1,000円と百円端数",
+          "points": 1
+        }
+      ],
+      "explanation": "加算税と延滞税では最低額が違います。5％刻みの通常の過少申告加算税は基礎税額1万円の端数処理から500円単位となるため、その構造に合う加算税例と、百円端数が生じる延滞税例を分けて示しています。"
+    },
+    {
+      "id": "zr2-kokuzei-late-tax-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-late-tax",
+      "prompt": "期限内申告に係る増差税額の修正が法定申告期限から1年後に行われた。担当者は「提出が遅いので全期間を高い割合とし、1年経過後はすべて免除すればよい」と述べた。納期限と61条の控除期間の二点から問題を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        1,
+        3
+      ],
+      "modelAnswer": "修正申告による納期限は提出日であり、法定納期限翌日からの期間のうち納期限まで及びその翌日から2か月を経過する日までには低い割合を適用する。61条1項の条件を満たせば法定申告期限から1年経過日の翌日から修正提出日までだけを控除する。最初の1年や提出後の全期間を消す規定ではなく、特定修正等の除外条件も確認する。",
+      "rubric": [
+        {
+          "criterion": "現実の納期限と低い割合の区分",
+          "points": 2
+        },
+        {
+          "criterion": "控除期間の始期・終期を示す",
+          "points": 2
+        },
+        {
+          "criterion": "全期間免除ではなく除外条件も確認",
+          "points": 1
+        }
+      ],
+      "explanation": "延滞税は「遅いほど常に高率」という一段階の計算ではありません。期間控除と免除の制度も区別します。"
+    }
+  ],
+  "authorChecks": {
+    "numericChecks": [
+      "例題1：980000×28/1000×61/365→4585、×91/1000×45/365→10994、合計15579→15500円",
+      "例題2：各期間を分数のまま計算→13939/11736/767、合計26442→26400円",
+      "例題3：900000×10％＋200000×5％＝100000円",
+      "例題4：500000×15％＋2500000×20％＋1200000×30％＝935000円",
+      "全数値設問を別計算し、計算基礎・最低額の段階を点検",
+      "最低額の例は通常の過少申告加算税で実際に生じる500円単位の4500/5500円へ修正。百円端数の例は延滞税990/1040円で示す"
+    ],
+    "dateChecks": [
+      "6/2〜8/1=61日、8/2〜9/15=45日、全106日",
+      "2026-06-03〜09-10=100日控除、2025-06-03〜12-31=212日、2026-01-01〜06-02=153日、09-11〜09-20=10日"
+    ],
+    "legalChecks": "凍結主法60〜61・63〜68・118〜119及び措94を独立読解。複合特例の本文完結は主張せず、実在の後続計画へ接続。独立レビュー未実施",
+    "editorial": "自然な日本語・humanizer・校正の観点で全文と全設問を作問者が手動点検。各段落の主語・指示語・日付・端数・類似用語を確認。法的要件の否定は保持。独立の日本語レビューはpending",
+    "roundingSourceProof": {
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tuusoku/pdf/all.pdf#page=66",
+      "edition": "令和8年度",
+      "printedPage": 55,
+      "pdfPage": 66,
+      "locator": "設例1-2・①ないし③の直下の注。印刷56頁/PDF67頁の設例2-2にも同様の注",
+      "shortQuote": "それぞれ１円未満の端数切捨て",
+      "verification": "PDF本文読解（2026-10-27）。算式と注記を確認。主法の最終端数と区別"
+    },
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "1円未満切捨ての法的根拠を明確化",
+        "action": "措法96条2項の特例割合計算へ限定して根拠を明記"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 12,
+        "line": 22,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 13,
+        "line": 24,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 14,
+        "line": 26,
+        "finding": "月数が月名に見える表記",
+        "action": "期間の1月を1か月へ統一"
+      },
+      {
+        "paragraph": 15,
+        "line": 28,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 16,
+        "line": 30,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 17,
+        "line": 32,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 18,
+        "line": 34,
+        "finding": "6月29日等が日付に読める",
+        "action": "6月分29日・7月分31日等へ変更"
+      },
+      {
+        "paragraph": 19,
+        "line": 36,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 20,
+        "line": 38,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 21,
+        "line": 40,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 22,
+        "line": 42,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 23,
+        "line": 44,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 24,
+        "line": 46,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 25,
+        "line": 48,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 26,
+        "line": 50,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 27,
+        "line": 52,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 28,
+        "line": 54,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 29,
+        "line": 56,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 30,
+        "line": 58,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 31,
+        "line": 60,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 32,
+        "line": 62,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 33,
+        "line": 64,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 34,
+        "line": 66,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 35,
+        "line": 68,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 36,
+        "line": 70,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 37,
+        "line": 72,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 38,
+        "line": 74,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 39,
+        "line": 76,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 40,
+        "line": 78,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 41,
+        "line": 80,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 42,
+        "line": 82,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 43,
+        "line": 84,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 44,
+        "line": 86,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 45,
+        "line": 88,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 46,
+        "line": 90,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 47,
+        "line": 92,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 48,
+        "line": 94,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 49,
+        "line": 96,
+        "finding": "加算税の通常計算で生じる金額単位との整合",
+        "action": "500円単位の過少申告加算税4500/5500円を使用。百円端数は延滞税990/1040円の例へ分離"
+      },
+      {
+        "paragraph": 50,
+        "line": 98,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 51,
+        "line": 100,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 52,
+        "line": 102,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 53,
+        "line": 103,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 54,
+        "line": 104,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      }
+    ],
+    "toolLimitations": "paragraphs.pyで段落表を生成。lint.py/calques.pyは依存パッケージsudachipyが未導入のため実行できず、機械的合格とは表示せず手動チェックを実施"
+  },
+  "continuationCoverage": [
+    {
+      "competency": "複数納付・年越し・減額再増額・源泉61条3項・63条免除",
+      "plannedLessonIds": [
+        "zr2-kokuzei-late-tax-complex"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "調査通知・予知・正当理由・累積・反復・帳簿・隠蔽部分",
+      "plannedLessonIds": [
+        "zr2-kokuzei-additional-tax-selection"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "猶予の実体要件・期間・取消しと延滞税への接続",
+      "plannedLessonIds": [
+        "zr2-kokuzei-deferral"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    }
+  ],
+  "draftObjectiveDetails": [
+    {
+      "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-1",
+      "draftObjectiveIndex": 1,
+      "draftObjective": "法定納期限・現実の納期限・暦年から延滞税の率と区分日を選択する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o1"
+      ],
+      "plannedObjectives": [
+        "延滞税の本税・期間・割合・端数を順に計算する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-late-tax-q1",
+        "zr2-kokuzei-late-tax-q3",
+        "zr2-kokuzei-late-tax-q15"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-2",
+      "draftObjectiveIndex": 2,
+      "draftObjective": "本税の計算基礎・日数・一部納付・最低額・端数を段階別に計算する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o1"
+      ],
+      "plannedObjectives": [
+        "延滞税の本税・期間・割合・端数を順に計算する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-late-tax-q2",
+        "zr2-kokuzei-late-tax-q3",
+        "zr2-kokuzei-late-tax-q4",
+        "zr2-kokuzei-late-tax-q6",
+        "zr2-kokuzei-late-tax-q12",
+        "zr2-kokuzei-late-tax-q14"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-3",
+      "draftObjectiveIndex": 3,
+      "draftObjective": "61条1項の期間控除と不適用条件を年表へ反映する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o2"
+      ],
+      "plannedObjectives": [
+        "附帯税の区別と期間除外・減免を当てはめる"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-late-tax-q5",
+        "zr2-kokuzei-late-tax-q15"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-late-tax-subskill-4",
+      "draftObjectiveIndex": 4,
+      "draftObjective": "過少申告・無申告・不納付・重加算税の基本分岐を選び、通常例の税額を求める",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-late-tax-o2"
+      ],
+      "plannedObjectives": [
+        "附帯税の区別と期間除外・減免を当てはめる"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-late-tax-q7",
+        "zr2-kokuzei-late-tax-q8",
+        "zr2-kokuzei-late-tax-q9",
+        "zr2-kokuzei-late-tax-q10",
+        "zr2-kokuzei-late-tax-q11",
+        "zr2-kokuzei-late-tax-q12",
+        "zr2-kokuzei-late-tax-q13",
+        "zr2-kokuzei-late-tax-q14"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review",
+      "mappingReason": "附帯税区分という広い計画目標を、基本加算税の分岐・通常額まで具体化した下位技能。累積・反復・帳簿・混在隠蔽の網羅完了は意味しない"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import Icon from '../../../../components/Icon.astro';
+import Share from '../../../../components/Share.astro';
+import { zeirishiDeepLessons, zeirishiDeepUnits } from '../../../../data/zeirishi-expanded';
+import { zeirishiSubject } from '../../../../data/zeirishi';
+import { href } from '../../../../lib/site';
+export function getStaticPaths() {
+  return zeirishiDeepUnits.map((unit) => ({ params: { unit: unit.id }, props: { unit } }));
+}
+const { unit } = Astro.props;
+const subject = zeirishiSubject(unit.subject)!;
+const lessons = unit.lessonIds.map((id) => zeirishiDeepLessons.find((lesson) => lesson.id === id)!);
+const references = [...new Map(lessons.flatMap((lesson) => lesson.references).map((reference) => [reference.url + reference.locator, reference])).values()];
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+
+<Layout title={`${unit.title}｜税理士・${subject.name}`} description={unit.description}
+  schema={{ '@type': 'LearningResource', name: unit.title, description: unit.description, inLanguage: 'ja', isAccessibleForFree: true, learningResourceType: '学習ユニット', teaches: lessons.flatMap((lesson) => lesson.objectives), dateModified: unit.reviewed, url: canonical }}
+  breadcrumbs={[{ name: '資格一覧', path: 'qualifications/' }, { name: '税理士', path: 'qualifications/zeirishi/' }, { name: subject.name, path: `qualifications/zeirishi/subjects/${subject.id}/` }, { name: unit.title, path: `qualifications/zeirishi/units/${unit.id}/` }]}
+>
+  <article class="container page-section wide-prose">
+    <header class="page-heading">
+      <p class="eyebrow">税理士・{subject.name}／独自の学習単元</p>
+      <h1>{unit.title}</h1>
+      <p class="lead">{unit.description}</p>
+      <p>第76回試験の法令基準日：2026年4月3日。例題の対象年分と前提条件を確認してください。表示時間は当サイトの学習目安です。</p>
+      <p data-course-progress="zeirishi" data-course-subject={subject.id} data-course-unit={unit.number}>記録を読み込んでいます</p>
+      <a class="button primary" data-course-start="zeirishi" data-course-subject={subject.id} data-course-unit={unit.number} href={href(`qualifications/zeirishi/${lessons[0]!.id}/`)}>続きから学ぶ <Icon name="arrow" size={18} /></a>
+    </header>
+    <section class="course-section">
+      <h2>順番に学ぶ</h2>
+      <ol class="lesson-list">
+        {lessons.map((lesson) => (
+          <li class="lesson-row" data-lesson-row={lesson.id}>
+            <span class="lesson-number">{lesson.position}</span>
+            <div class="lesson-row-body">
+              <h3><a href={href(`qualifications/zeirishi/${lesson.id}/`)}>{lesson.title}</a></h3>
+              <p>{lesson.description}</p>
+              <p class="lesson-meta">{lesson.minutes}分の目安・{lesson.questions.length}問 <span data-status-label={lesson.id}>未学習</span></p>
+            </div>
+            <button class="star-button" type="button" data-bookmark={lesson.id} aria-pressed="false" aria-label={`「${lesson.title}」をブックマーク`}><Icon name="star" size={21} /></button>
+          </li>
+        ))}
+      </ol>
+    </section>
+    <section class="course-section">
+      <h2>用語と総合演習で確かめる</h2>
+      <p>学習済みの印と演習の結果は別に保存します。総合確認では、本文やレッスン末とは別の問題で、条件の判断と計算・記述を確かめます。記述は独自の基準による自己確認です。</p>
+      <div class="assessment-links">{unit.assessments.map((assessment) => (
+        <a class="assessment-link" href={href(`qualifications/zeirishi/tests/${assessment.id}/`)}><strong>{assessment.title}</strong><span>{assessment.questions.length}問・{assessment.kind === 'glossary' ? '用語の意味を場面と結びつける' : '新しい資料と条件で総合確認'}</span></a>
+      ))}</div>
+      <p>翌日に根拠を説明し直し、1週間後に誤った問題を解き直します。自己確認できなかった記述や条件は、関連レッスンへ戻って確かめてください。</p>
+    </section>
+    <section class="course-section prose">
+      <h2>適用版と出典</h2>
+      <ul>{references.map((reference) => <li><a href={reference.url}>{reference.title}</a>：{reference.locator}。{reference.version}（確認日：{reference.verified}）</li>)}</ul>
+      <p>単元確認日：<time datetime={unit.reviewed}>{unit.reviewed}</time>。<a href={href('qualifications/zeirishi/coverage/')}>全体の対応表と未完了の範囲</a>・<a href={href('editorial/')}>編集・AI支援の方針</a></p>
+    </section>
+    <p>以前の入門教材の記録は保管され、この単元の完了数には加算されません。記録はこのブラウザに保存され、端末間で自動同期しません。<a href={href('progress/#backup')}>バックアップを保存</a></p>
+    <p><a href={href(`qualifications/zeirishi/subjects/${subject.id}/`)}>{subject.name}の学習順へ戻る</a>・<a href={href(`downloads/zeirishi-${subject.id}-curriculum.txt`)} download>学習ツリー・学習案（TXT）</a></p>
+    <Share title={`${unit.title}｜税理士・${subject.name}`} url={canonical} />
+  </article>
+</Layout>

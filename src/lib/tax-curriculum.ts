@@ -26,6 +26,7 @@ export interface ExpandedTaxLesson {
   references: TaxReference[];
   reviewed: string;
   assessmentVersion: string;
+  workedExamples: { id: string; section: string; objectives: number[] }[];
   questions: Question[];
 }
 export interface ExpandedTaxUnit {
@@ -33,6 +34,8 @@ export interface ExpandedTaxUnit {
   subject: string;
   number: number;
   title: string;
+  description: string;
+  reviewed: string;
   lessonIds: string[];
   assessments: Assessment[];
 }
@@ -54,6 +57,8 @@ export function expandedTaxIssues(course: ExpandedTaxCurriculum): string[] {
   const assessmentIds = new Set<string>();
   const unitNumbers = new Set<number>();
   for (const unit of course.units) {
+    if (!unit.title?.trim() || !unit.description?.trim() || !/^\d{4}-\d{2}-\d{2}$/.test(unit.reviewed))
+      issues.push(`Incomplete unit description or review: ${unit.id}`);
     if (unitNumbers.has(unit.number) || !Number.isInteger(unit.number) || unit.number < 1000)
       issues.push(`Invalid or reused expanded unit number: ${unit.id}`);
     unitNumbers.add(unit.number);
@@ -81,8 +86,12 @@ export function expandedTaxIssues(course: ExpandedTaxCurriculum): string[] {
       new Set(lesson.objectiveIds).size !== lesson.objectiveIds.length
     )
       issues.push(`Invalid objective identifiers: ${lesson.id}`);
-    if (!lesson.assessmentVersion || !lesson.references.length || !lesson.reviewed)
+    if (!lesson.assessmentVersion || !lesson.references.length || !/^\d{4}-\d{2}-\d{2}$/.test(lesson.reviewed))
       issues.push(`Missing assessment version or source review: ${lesson.id}`);
+    if (!lesson.workedExamples?.length || lesson.workedExamples.some((example) =>
+      !example.id || !example.section || !example.objectives.length ||
+      example.objectives.some((n) => !Number.isInteger(n) || n < 1 || n > lesson.objectives.length)))
+      issues.push(`Missing or invalid worked examples: ${lesson.id}`);
     for (const reference of lesson.references) {
       if (
         !reference.title.trim() ||
@@ -97,6 +106,10 @@ export function expandedTaxIssues(course: ExpandedTaxCurriculum): string[] {
   for (const unit of course.units)
     for (const id of unit.lessonIds)
       if (!lessonIds.has(id)) issues.push(`Unimplemented unit member: ${unit.id}:${id}`);
+  for (const unit of course.units)
+    for (const assessment of unit.assessments)
+      if (assessment.unit !== unit.number || assessment.questions.some((question) => !unit.lessonIds.includes(question.lesson)))
+        issues.push(`Assessment/module mismatch: ${unit.id}:${assessment.id}`);
   for (const lesson of course.lessons)
     for (const prerequisite of lesson.prerequisites)
       if (prerequisite.startsWith('zr2-') && !lessonIds.has(prerequisite))

@@ -1,0 +1,835 @@
+{
+  "id": "zr2-kokuzei-statutory-dates",
+  "subject": "kokuzei",
+  "title": "法定納期限等を申告・通知・承継財産から選ぶ",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 170,
+  "objectives": [
+    "期限内申告・修正申告・更正等の比較日を自分で特定する",
+    "承継・保証・第二次納税義務の基準日を選ぶ"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-priority-general"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "15条1項全号を版固定公式JSONで読解。15条2〜4、16〜17・22条、24条2項・32条1項・51条・159条3項も関係読解"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "9条の2〜3・15条3項・35〜36・38条・52条2項を版固定公式JSONで読解"
+    },
+    {
+      "id": "inheritance-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000073_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "保存済み公式JSON35条2項：所定事由で提出期限前に更正決定できる特則"
+    },
+    {
+      "id": "collection-training",
+      "url": "https://www.nta.go.jp/about/organization/ntc/kohon/tyousyu/pdf/all.pdf#page=73",
+      "version": "令和8年度・2026-01-01法令を基礎",
+      "location": "印刷66頁/PDF73頁の法定納期限・納期限・法定納期限等表。主法との対応を確認"
+    },
+    {
+      "id": "collection-order",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "2026-04-01施行版",
+      "location": "親取得asof固定JSON11条4項を独立読解。第二次義務者の納付期限は発出翌日から1か月経過日"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "法定納期限等",
+      "definition": "徴収法15条1項の担保優先調整に用いる日。税額と財産・確定類型により特則を選ぶ"
+    },
+    {
+      "term": "原因国税",
+      "definition": "附帯税等の徴収の基因となった国税。附帯税の比較日を対応させる本税"
+    },
+    {
+      "term": "固有財産",
+      "definition": "相続・合併・分割等で承継した財産と区別する、その者の従前の財産等"
+    },
+    {
+      "term": "事前確定条件",
+      "definition": "承継等の所定特則で、その出来事前の税額確定等を要求する限定。所定自動確定国税は事前の告知書発出を確認"
+    },
+    {
+      "term": "発出日",
+      "definition": "通知書等を発した日。送達日・指定納期限と区分して記録する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "dates-ex1",
+      "section": "例題1：当初額・修正増差・更正増差を三行にする",
+      "result": {
+        "initial": "2026-03-16",
+        "amendment": "2026-05-08",
+        "correction": "2026-06-17",
+        "mortgage": "2026-04-10"
+      }
+    },
+    {
+      "id": "dates-ex2",
+      "section": "例題2：四つの書面から異なる基準日を選ぶ",
+      "result": {
+        "A": "07-09",
+        "B": "07-31",
+        "C": "07-06",
+        "D": "06-18"
+      }
+    },
+    {
+      "id": "dates-ex3",
+      "section": "例題3：相続と合併の財産別比較表",
+      "result": {
+        "inheritedAsset_decedentTax": "2026-03-16",
+        "ownAsset_decedentTax": "2026-04-20",
+        "inheritedAsset_ownTax": "2026-04-20",
+        "ownAsset_ownTax": "2026-03-16",
+        "mergerCross": "06-30"
+      }
+    },
+    {
+      "id": "dates-ex4",
+      "section": "例題4：分割日・判決確定日・納付通知発出日",
+      "result": {
+        "split": "07-01",
+        "invalidityJudgment": "09-10",
+        "secondaryNotice": "10-02"
+      }
+    }
+  ],
+  "scopeNotes": [
+    "本講は15条1項の各号と比較日選択を扱う。質権証明・被担保額、財産別徴収順序、循環配当の全技能は後続講へ接続する",
+    "地価税・再評価税は条文類型の読解として評価する。新たな2026年通常課税を想定せず、実際の旧税額は当時の根拠・存続を確認する"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "15条2〜4項の質権証明・設定認定・被担保額",
+      "plannedLessonIds": [
+        "zr2-kokuzei-pledge-mortgage"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "17・22条と51条による財産別徴収・責任額の統合",
+      "plannedLessonIds": [
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "24条物的責任と保全通知の対象額・手続",
+      "plannedLessonIds": [
+        "zr2-kokuzei-provisional-security",
+        "zr2-kokuzei-preservation"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "分割・信託・無効判決の義務対象額と価額限度",
+      "plannedLessonIds": [
+        "zr2-kokuzei-succession-trust-split"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "各比較日・先着手から作る26条配当",
+      "plannedLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "status": "planned_not_authored"
+    }
+  ],
+  "sourceNeedsIndependentCheck": [
+    {
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/015/01.htm",
+      "locator": "2注、1(5)、6(3)〜(4)、11〜14",
+      "issue": "現行公式通達に、予定第2期×繰上げの早い方、郵送申告の現実提出日、保全額超過部分、相続税等の連帯納付・物納撤回等の追加論点がある。一方、後日追記と旧号引用も混在し、基準日固定の同一取扱いは未取得照合",
+      "currentDraftUse": "制作メモとして保持。本文・15問の解答根拠は凍結主法に限定し、この追加取扱いを確認済みと数えない",
+      "requiredAction": "この statutory-dates 草稿を公開可能とする前に、基準日前の公式改正履歴・講本等と照合し、必要な分岐例題・問題を本講へ追加する。未照合のまま目標全範囲完了としない"
+    }
+  ],
+  "authorChecks": {
+    "dateChecks": [
+      "全例で発出・到達・指定期限・申告を別記し15①各号を照合",
+      "承継等の前確定又は所定告知条件を検証",
+      "例題1:60+20+30=110万円、比較は三税額",
+      "相続例2税額×2財産の全4組合せを検証",
+      "第二次通知10/2の指定期限は令11④により11/2。初稿10/30を修正。基準日自体は10/2で不変"
+    ],
+    "legalChecks": "凍結15①全号13類型と通則15③引用2〜4及び6号を照合。印紙税5号を含めない。現行通達の追加取扱いは未照合リストに保持",
+    "editorial": "全文・全設問を作問者が校正。法的な対象と否定を保持。独立レビューや目標全分岐完了は主張しない",
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 12,
+        "line": 23,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 13,
+        "line": 25,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 14,
+        "line": 27,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 15,
+        "line": 29,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 16,
+        "line": 31,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 17,
+        "line": 33,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 18,
+        "line": 35,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 19,
+        "line": 37,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 20,
+        "line": 39,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 21,
+        "line": 41,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 22,
+        "line": 43,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 23,
+        "line": 45,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 24,
+        "line": 47,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 25,
+        "line": 49,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 26,
+        "line": 51,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 27,
+        "line": 53,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 28,
+        "line": 55,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 29,
+        "line": 57,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 30,
+        "line": 59,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 31,
+        "line": 61,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 32,
+        "line": 63,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 33,
+        "line": 65,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 34,
+        "line": 67,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 35,
+        "line": 69,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 36,
+        "line": 71,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 37,
+        "line": 73,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 38,
+        "line": 75,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 39,
+        "line": 76,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 40,
+        "line": 77,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 41,
+        "line": 78,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 42,
+        "line": 80,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 43,
+        "line": 82,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 44,
+        "line": 84,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 45,
+        "line": 86,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 46,
+        "line": 88,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 47,
+        "line": 90,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 48,
+        "line": 92,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 49,
+        "line": 94,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 50,
+        "line": 96,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 51,
+        "line": 98,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 52,
+        "line": 100,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 53,
+        "line": 102,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 54,
+        "line": 104,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 55,
+        "line": 106,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 56,
+        "line": 108,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 57,
+        "line": 109,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      },
+      {
+        "paragraph": 58,
+        "line": 110,
+        "finding": "なし",
+        "action": "税額・財産由来・前確定・適用号を対応させ、比較日と納期限を区分して再読"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "zr2-kokuzei-statutory-dates-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "通常国税の法定納期限は2026年3月16日。当初額は3月2日期限内申告、増差分は4月24日修正申告、別増差分は6月3日発出・6月8日適法送達の更正による。他の特則なし。三税額の法定納期限等を順に選んでください。",
+      "options": [
+        "3月16日・4月24日・6月3日",
+        "3月2日・4月24日・6月8日",
+        "全部3月16日",
+        "全部6月8日"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "当初額は法定納期限、期限後申告増差は申告日、更正増差は通知書発出日です。2は当初申告日と更正送達日を混用し、3・4は異なる税額を一行へまとめています。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "修正増差本税の法定納期限等は2026年5月12日。その本税だけを原因とする延滞税の額を8月に計算した。担保比較日を選んでください。",
+      "options": [
+        "8月の計算日へ移る",
+        "原因本税に対応する5月12日",
+        "必ず当初年分の年末",
+        "未納額の大きい方の日"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "15条1項本文により附帯税は原因国税の基準日に対応します。1は計算日との混同、3は成立・年末の転用、4は金額による任意選択です。直接費の10条優先とは別の問題です。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "確定済み通常国税の法定納期限は2026年10月30日。法定納期限前に適法な繰上請求をし、発出9月10日、到達9月12日、繰上期限9月18日。他の特則なし。2号の比較日を選んでください。",
+      "options": [
+        "9月10日",
+        "9月12日",
+        "9月18日",
+        "10月30日"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "2号は繰上請求に係る期限9月18日です。1は発出、2は到達、4は通常期限のままです。法定納期限前の繰上請求という要件を確認します。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "通常の予定納税所得税は第1期納期限2026年7月31日、第2期納期限11月30日。期限延長・繰上請求等はない。第2期分の比較日を選んでください。",
+      "options": [
+        "7月31日",
+        "11月30日",
+        "翌年の確定申告日",
+        "税額通知到達日"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "3号は第2期分について第1期分の納期限を用います。2は第2期そのもの、3は確定申告、4は通知日の混同です。延長・繰上げがある場合へ本問の通常条件を広げません。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "相続税法35条2項に基づく適法な更正であると確認済みで、発出7月10日、到達7月13日、通常申告期限はそれより後である。徴収法15条1項4号の日を選んでください。",
+      "options": [
+        "相続開始日",
+        "7月10日",
+        "7月13日",
+        "通常申告期限まで比較日はない"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "4号はこの特則による更正・決定の通知書発出日を用います。1・3は出来事が違い、4は提出期限前にも処分し得る35条2項を落とします。相続税のすべての更正へ一般化しません。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "条文類型の読解問題である。適法に15条1項4号の2の対象となる地価税額で、申告日は法定申告期限より前である。同号の比較日を選んでください。新たな2026年課税を想定するものではない。",
+      "options": [
+        "申告日を常に使う",
+        "法定申告期限",
+        "その年1月1日",
+        "所有者が任意に選ぶ"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "4号の2の括弧書きにより、申告日が法定申告期限前なら同期限となります。1は下限条件を落とし、3は課税時期等との混同、4に根拠はありません。同号は法定申告期限までに納付する額と1号の額を除くため対象確認も必要です。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "条文に残る再評価税の適法な類型を確認する。確定税額を複数納期に分け、最初の納期限9月30日、後の納期限翌3月31日とする。後の納期分へ15条1項5号を適用する比較日を選んでください。",
+      "options": [
+        "9月30日",
+        "翌3月31日",
+        "後の納期分だけ新たに申告したとみなす",
+        "税額計算日"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "5号は最初の納期後の税額に最初の納期限を用います。2は後の期限、3は根拠のない申告みなし、4は計算日の転用です。実際の旧税額では当時の課税根拠・現在までの存続も別途確認します。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "15条1項5号の2が引用する通則法15条3項の列挙に、その税目として含まれないものを選んでください。",
+      "options": [
+        "源泉徴収等による国税",
+        "自動車重量税",
+        "登録免許税",
+        "通常の印紙税"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "引用は通則15条3項2〜4号及び6号で、印紙税の5号は含みません。源泉徴収等・自動車重量税・所定の国際観光旅客税・登録免許税が対応します。自動確定という性質だけで全税目を同じ号に入れません。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "Aは24条2項による物的納税責任の適法な告知で、発出8月6日・到達8月8日。Bは159条3項による保全差押金額の適法な通知で、発出9月4日・到達9月7日。それぞれ通知額に係る国税の比較日を適用号とともに答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "いずれも15条1項6号の対象額であることを確認し、Aは8月6日、Bは9月4日の発出日を用いる。到達日や換価日に替えず、対象でない別の額へ同じ基準日を無条件に広げない。",
+      "rubric": [
+        {
+          "criterion": "Aの6号・8月6日",
+          "points": 2
+        },
+        {
+          "criterion": "Bの6号・9月4日",
+          "points": 2
+        }
+      ],
+      "explanation": "物的責任・保全自体の全要件を成立させる問題ではなく、適法な対象通知額の比較日を選ぶ問題です。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "法定納期限2026年3月16日の甲の通常国税について、当初額は2026年3月10日の期限内申告で確定。5月2日に甲が死亡し乙が単純承認した。同じ国税の増差額は6月5日の通常修正申告で初めて確定した。乙の固有財産Qから徴収する当初額・増差額の比較日を、7号の事前確定条件と1号から説明してください。他の特則なし。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "当初額は相続前確定の被相続人税を相続人固有財産から徴収するため7号の5月2日。増差額は相続前確定の条件を満たさないので死亡日を付けず、1号の修正申告日6月5日とする。税額の由来・確定時点・財産を別行へ記す。",
+      "rubric": [
+        {
+          "criterion": "当初額は7号・5月2日",
+          "points": 2
+        },
+        {
+          "criterion": "増差額は前確定を欠き1号・6月5日",
+          "points": 2
+        }
+      ],
+      "explanation": "相続したから全税額が死亡日となるのではありません。承継義務があるかと財産ごとの担保比較日は別です。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "合併日は2026年4月1日。被合併法人の源泉税は2月の支払時に自動確定し、法定納期限3月10日で納期特例はなく、納税告知書の初回発出は4月25日で合併前の告知はない。この未納税を存続法人の従前固有財産から徴収する場合、8号の条件を自動確定日だけで満たすとしてよいか、比較日とともに説明してください。他の特則なし。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "所定の自動確定国税は、7号括弧書きによる事前確定の定義が合併等にも共通し、合併前の告知書発出を要する。本問はそれがないので8号の4月1日を用いる条件を満たさず、通常の5号の2により告知書発出4月25日となる。",
+      "rubric": [
+        {
+          "criterion": "自動確定と事前告知の条件の区分",
+          "points": 2
+        },
+        {
+          "criterion": "8号不適用・5号の2の4月25日",
+          "points": 2
+        }
+      ],
+      "explanation": "支払時に自動確定した事実だけから、承継特則の前確定条件も必ず満たすとしません。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "Aは2月1日の分割承継財産から承継法人の固有税を徴収し、税額は分割前に確定済み。Bは8月4日の分割無効判決確定で戻った財産から分割法人の固有税を徴収し、税額は判決前に確定済み。通常の申告納税方式で他の特則なし。それぞれ適用号と比較日を答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "Aは10号の承継財産と固有税の組合せで分割日2月1日。Bは9号の判決により属することとなった財産と固有税の組合せで判決確定日8月4日である。Bへ元の分割日を転記せず、財産と出来事を対応させる。",
+      "rubric": [
+        {
+          "criterion": "Aの10号・2月1日",
+          "points": 2
+        },
+        {
+          "criterion": "Bの9号・8月4日",
+          "points": 2
+        }
+      ],
+      "explanation": "分割に伴う連帯義務の額や価額限度は別に検討します。本問は適法な対象財産・税額についての比較日です。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "保証人への通則法52条2項の納付通知書は6月1日発出、6月4日到達、指定期限7月1日。保証人として納付すべき国税につき15条1項11号の比較日を選んでください。",
+      "options": [
+        "主たる税の当初法定納期限",
+        "6月1日",
+        "6月4日",
+        "7月1日"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "11号は保証人への納付通知書発出日6月1日です。1は主たる義務の基準日の転用、3は到達、4は指定期限の混同です。第二次義務者も対応する32条1項の通知書発出日を用います。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "国税の比較日と、比較に用い得ると確認された抵当権設定日が同日である。日付要件と残る判断の説明を選んでください。",
+      "options": [
+        "以前に同日を含まず必ず国税先",
+        "以前に同日を含むが、権利・公示・対象債権等も確認する",
+        "同日ならすべての私債権が無条件に優先",
+        "登記等の条件は一切要らない"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "以前には当日を含みます。ただし権利・財産・被担保債権等の条件は別です。1は以前の意味を誤り、3・4は日付だけで全法的要件を充足したとしています。"
+    },
+    {
+      "id": "zr2-kokuzei-statutory-dates-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-statutory-dates",
+      "prompt": "乙の固有財産Qを整理する。固有国税Tは期限内確定で比較日3月16日。4月1日に相続した甲の国税Xは相続前に通常申告で確定済み。別会社国税Sについて乙の第二次義務が適法に成立し、32条1項通知書発出は4月6日。Q上の抵当権設定は4月5日で比較条件を満たす。T・X・Sの比較日と抵当権との先後を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "Tは原則の3月16日、Xは相続人固有財産と被相続人税の7号により4月1日、Sは11号により4月6日。抵当権4月5日はT・Xの基準日後で、Sの基準日以前となる。同じ義務者の全額を通知日や相続日へまとめない。最終配当には優先額・租税相互・26条等を別に適用する。",
+      "rubric": [
+        {
+          "criterion": "Tの3月16日",
+          "points": 1
+        },
+        {
+          "criterion": "Xの7号・4月1日",
+          "points": 1
+        },
+        {
+          "criterion": "Sの11号・4月6日",
+          "points": 1
+        },
+        {
+          "criterion": "抵当のT/X後・S以前を区分",
+          "points": 1
+        }
+      ],
+      "explanation": "固有税・相続承継・第二次義務という根拠が異なるため、同じ人の同じ財産にも三つの比較日があります。"
+    }
+  ]
+}

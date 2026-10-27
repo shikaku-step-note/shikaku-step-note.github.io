@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../../layouts/Layout.astro';
 import Icon from '../../../../components/Icon.astro';
 import Share from '../../../../components/Share.astro';
+import TaxExpandedUnits from '../../../../components/TaxExpandedUnits.astro';
 import {
   zeirishiSubjects,
   zeirishiOutline,
@@ -18,7 +19,7 @@ const rows = zeirishiOutline.filter((r) => r.subject === s.id);
 const lessons = (
   await getCollection(
     'lessons',
-    (l) => l.data.qualification === 'zeirishi' && l.data.subject === s.id && !l.data.archived,
+    (l) => l.data.qualification === 'zeirishi' && l.data.subject === s.id && !l.data.archived && !l.data.stableId.startsWith('zr2-'),
   )
 ).sort((a, b) => a.data.order - b.data.order);
 const description = `税理士試験「${s.name}」の無料基礎学習。${lessons.length}レッスンを順に学び、例題・用語・総復習・120分の独自基礎模試で確認できます。適用条件と追加学習も示します。`;
@@ -83,14 +84,16 @@ const description = `税理士試験「${s.name}」の無料基礎学習。${les
             </p>
           )}
         </section>
+        <TaxExpandedUnits subject={s.id} />
         <section class="course-section" aria-labelledby="subject-steps">
-          <h2 id="subject-steps">{lessons.length}レッスンの学習ツリー</h2>
-          <p data-course-progress="zeirishi" data-course-subject={s.id}>
+          <h2 id="subject-steps">入門課程：{lessons.length}レッスンの学習ツリー</h2>
+          <p data-course-progress="zeirishi" data-course-subject={s.id} data-course-unit={s.unit}>
             このブラウザの記録を読み込んでいます
           </p>
           <progress
             data-course-bar="zeirishi"
             data-course-subject={s.id}
+            data-course-unit={s.unit}
             max={lessons.length}
             value="0"
             aria-label={`${s.name}の学習済みレッスン数`}

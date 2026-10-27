@@ -9,14 +9,15 @@ import {
   zeirishiLimitations,
   zeirishiAssessments,
 } from '../src/data/zeirishi.ts';
-const lessons = zeirishiOutline.map((r) => ({
+import { zeirishiDeepLessons, zeirishiDeepUnits, zeirishiDeepAssessments } from '../src/data/zeirishi-expanded.ts';
+const lessons = [...zeirishiOutline, ...zeirishiDeepLessons].map((r) => ({
   data: parse(readFileSync(`src/content/lessons/${r.id}.md`, 'utf8').split('---')[1]),
 }));
 const assessments = zeirishiAssessments(lessons);
 const site = (process.env.SITE_URL || 'https://shikaku-step-note.github.io').replace(/\/$/, '') + '/';
 const base = (process.env.BASE_PATH || '/').replace(/^\/+|\/+$/g, '');
 const url = (path) => new URL(`${base ? base + '/' : ''}${path}`, site).href;
-if (assessments.length !== zeirishiOutline.length + zeirishiSubjects.length * 3)
+if (assessments.length !== zeirishiOutline.length + zeirishiSubjects.length * 3 + zeirishiDeepAssessments.length)
   throw Error('Tax curriculum: missing assessment registry');
 for (const r of zeirishiOutline) {
   const a = assessments.find((a) => a.id === r.id + '-check');
@@ -98,13 +99,43 @@ function exportText(selected) {
         `  [${a.id}] ${a.title}／${a.questions.length}小問${a.minutes ? `／${a.minutes}分・時間制限なしも選択可` : ''}`,
         `    ${url(`qualifications/zeirishi/tests/${a.id}/`)}`,
       );
+    for (const unit of zeirishiDeepUnits.filter((unit) => unit.subject === s.id)) {
+      const members = unit.lessonIds.map((id) => zeirishiDeepLessons.find((lesson) => lesson.id === id));
+      const minutes = members.reduce((total, lesson) => total + lesson.minutes, 0);
+      lines.push('', `  詳しく学ぶ単元 [${unit.id}] ${unit.title}`, `    ${unit.description}`,
+        `    単元確認日：${unit.reviewed}／本文・例題・理解度確認の合計目安${minutes}分（独立テストと再復習は別）`,
+        `    URL：${url(`qualifications/zeirishi/units/${unit.id}/`)}`,
+        '    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。',
+        '    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。',
+        '    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。',
+        '    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。');
+      for (const [index, lesson] of members.entries()) {
+        lines.push(`    ${lesson.position}. [${lesson.id}] ${lesson.title}／${lesson.minutes}分の目安`,
+          `      学習段階：${lesson.stage}（独自区分）`,
+          `      前提：${lesson.prerequisites.join('、')}`,
+          `      実演：${lesson.workedExamples.map((example) => `[${example.id}] ${example.section}`).join('／')}`,
+          `      理解度チェック [${lesson.id}-check] ${lesson.questions.length}問／版：${lesson.assessmentVersion}`,
+          `      次：${members[index + 1]?.id ?? unit.assessments.find((assessment) => assessment.kind === 'review').id}`,
+          `      URL：${url(`qualifications/zeirishi/${lesson.id}/`)}`);
+        lesson.objectives.forEach((objective, n) => lines.push(
+          `      [${lesson.objectiveIds[n]}] ${objective}`,
+          `        独立練習：${lesson.questions.filter((question) => question.objectives.includes(n + 1)).map((question) => question.id).join('、')}`));
+        for (const reference of lesson.references)
+          lines.push(`      出典 [${reference.id}] ${reference.title}：${reference.locator}。${reference.version}／確認${reference.verified}`, `        ${reference.url}`);
+      }
+      for (const assessment of unit.assessments)
+        lines.push(`    [${assessment.id}] ${assessment.title}／${assessment.questions.length}問／版：${assessment.version}`,
+          `      ${url(`qualifications/zeirishi/tests/${assessment.id}/`)}`);
+      lines.push('    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。', '');
+    }
     lines.push(
       `  2026年8月本試験の大問配点：${s.majorPoints.join('・')}点。将来の固定配分ではありません。`,
       '',
     );
   }
   lines.push(
-    '用語テストは本文の定義から生成。科目総復習はレッスンの問題を再利用。模試は別の独自問題。',
+    '入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。',
+    '詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。',
     '模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。',
     '数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。',
     '記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。',

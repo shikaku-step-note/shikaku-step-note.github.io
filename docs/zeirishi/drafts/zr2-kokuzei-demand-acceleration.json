@@ -112,7 +112,7 @@
   "scopeNotes": [
     "日付設問は適法な送達・他の禁止や猶予等がないことを明示し、時間要件だけで全差押要件充足と誤解させない",
     "47条の現行通達ページには基準日後の制度追記があるため、本講の根拠は版固定主法及び期間計算表と公表裁決へ限定",
-    "公示送達、保全差押え・繰上保全差押えの詳細は別講で扱う"
+    "公示送達は zr2-kokuzei-service-notices、保全差押え・繰上保全差押えは zr2-kokuzei-preservation が教える。未執筆範囲として計画の分母に残す"
   ],
   "questions": [
     {
@@ -719,5 +719,123 @@
       "application": "図の4/27→5/6→5/7を6/1→6/10→6/11へ置換。徴収法47条1項1号が経過した日までに完納しないことを要件とするため普通差押は6/12以後",
       "verification": "2026-10-27に公式PDFの本文と表抽出を読み確認。画像取得はwebスクリーンショットが利用不可だった。根拠法は版固定主法47条。親エージェントによる独立確認待ち"
     }
-  }
+  },
+  "continuationCoverage": [
+    {
+      "competency": "公示送達・不在時送達等の法定要件と効力日",
+      "plannedLessonIds": [
+        "zr2-kokuzei-service-notices"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "保全差押え・繰上保全差押え",
+      "plannedLessonIds": [
+        "zr2-kokuzei-preservation"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "第二次義務者の責任限度・補充性と徴収換価手続",
+      "plannedLessonIds": [
+        "zr2-kokuzei-secondary-common"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "差押時の財産帰属・禁止等の全要件",
+      "plannedLessonIds": [
+        "zr2-kokuzei-seizure-common",
+        "zr2-kokuzei-prohibited-property"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    }
+  ],
+  "draftObjectiveDetails": [
+    {
+      "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-1",
+      "draftObjectiveIndex": 1,
+      "draftObjective": "通常の督促の要否・法定形式・50日以内の規定と送達を判断する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o1"
+      ],
+      "plannedObjectives": [
+        "通常差押要件の督促受領と発出後期間を適用する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-demand-acceleration-q1",
+        "zr2-kokuzei-demand-acceleration-q4",
+        "zr2-kokuzei-demand-acceleration-q11"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-2",
+      "draftObjectiveIndex": 2,
+      "draftObjective": "発出日・経過する日・経過した日を区分し、差押えの時期と未納残額を計算する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o1"
+      ],
+      "plannedObjectives": [
+        "通常差押要件の督促受領と発出後期間を適用する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-demand-acceleration-q2",
+        "zr2-kokuzei-demand-acceleration-q3"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-3",
+      "draftObjectiveIndex": 3,
+      "draftObjective": "第二次義務者への納付通知・納付催告と差押換価の順序を区別する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o2"
+      ],
+      "plannedObjectives": [
+        "第二次納税義務者・保証人と繰上請求の例外を判定する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-demand-acceleration-q5",
+        "zr2-kokuzei-demand-acceleration-q6",
+        "zr2-kokuzei-demand-acceleration-q11"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-demand-acceleration-subskill-4",
+      "draftObjectiveIndex": 4,
+      "draftObjective": "繰上請求と繰上差押えの事由・対象・時期・効果を事実へ当てはめる",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-demand-acceleration-o2"
+      ],
+      "plannedObjectives": [
+        "第二次納税義務者・保証人と繰上請求の例外を判定する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-demand-acceleration-q7",
+        "zr2-kokuzei-demand-acceleration-q8",
+        "zr2-kokuzei-demand-acceleration-q9",
+        "zr2-kokuzei-demand-acceleration-q10",
+        "zr2-kokuzei-demand-acceleration-q12"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    }
+  ]
 }

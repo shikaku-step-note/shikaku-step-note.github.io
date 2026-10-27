@@ -1,0 +1,996 @@
+{
+  "version": "zeirishi-2026-v2-draft-hojin-scope-1",
+  "qualification": "zeirishi",
+  "unit": 4,
+  "moduleId": "zr2-hojin-unit-scope",
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "fieldNames": {
+    "hojin": "法人税法"
+  },
+  "lessonTitles": {
+    "zr2-hojin-entity-scope": "法人の区分・収益事業から課税範囲を決める",
+    "zr2-hojin-period-filing": "事業年度・納税地と青色承認の期限を確定する",
+    "zr2-hojin-income-adjustments": "益金・損金と決算処理から申告調整を組み立てる",
+    "zr2-hojin-schedule-four-five": "別表四・五（一）・五（二）を残高まで照合する",
+    "zr2-hojin-relationships": "同族・支配・完全支配と中小判定を使い分ける"
+  },
+  "sourceCandidates": [
+    {
+      "id": "corporate-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2〜8条、該当別表",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "location": "3条の非営利型二類型全項、5条34業種/各除外と2項。MainProvision本文確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-rules",
+      "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+      "location": "2の2第1項の特殊関係理事",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-foreign-scope",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "138条1項、141条、4条4項、4の3条を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-period-blue",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "13条全項、14条1項各号と通算特則、16〜20条、121〜128条、148条を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-book-preservation",
+      "url": "https://laws.e-gov.go.jp/law/340M50000040012_20260401_508M60000040018",
+      "location": "59条の通常の起算日・7年間保存。電子保存/欠損繰越の追加条件は後続へ",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "general-deadlines",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "location": "10条2項の休日等に係る期限の特例",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-startup-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5100.htm",
+      "location": "法人設立届と初年度青色承認申請の比較",
+      "applicableVersion": "現行ページの補助解説。凍結法令を優先"
+    },
+    {
+      "id": "corporate-income-rules",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2条25号、22条全項、22の2全項、26条1項、31条1/4項、38条1/2項を凍結本文で確認",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-schedule4-directions",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/04-ki.pdf",
+      "location": "別表四の当期利益、加算、減算の記載",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表書式/記載要領。対象期間を限定"
+    },
+    {
+      "id": "corporate-depreciation-tax",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "31条1/4項、26/38条。損金経理・償却超過と法人税等の原則",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-form4-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-04.pdf",
+      "location": "pp1〜3:納付方法/留保/社外流出・仮払と同額減算。全文取得済み。特殊な後半の税効果/通算等を本講の完成範囲とはしない",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form51-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05.pdf",
+      "location": "全4頁:増減・繰越損益金/充当金/未納法人税/未収還付・仮払の△記載・検算式",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form52-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05_2.pdf",
+      "location": "全4頁:中間/確定・納付三方法・還付外書・事業税と充当金",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form51",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/05(01).pdf",
+      "location": "Ⅰの期首/減/増/翌期首、Ⅱとの区別",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-relationship-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "2条10号/12の7の5号/12の7の6号、66条2/5項、25の2条の法人による完全支配という要件",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-relationship-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "location": "4条の特殊関係/議決権等、4の2条全項の直接/間接/持株組合等5％未満除外",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "special-sme-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "location": "42の3の2全条、42の4第19項7/8号",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "special-sme-decree",
+      "url": "https://laws.e-gov.go.jp/law/332CO0000000043_20260401_508CO0000000098",
+      "location": "27の4第17〜19項。大規模法人/所有割合/基準年度平均の調整",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-sme-guidance",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-01.pdf",
+      "location": "全3頁:中小法人、2025年4月以後開始17％、適用除外事業者",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表資料"
+    },
+    {
+      "id": "corporate-sme-measures-guidance",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/f02-66.pdf",
+      "location": "中小企業者の大規模法人/持分判定と制度別条件",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分の公表資料"
+    }
+  ],
+  "id": "zr2-hojin-scope-review",
+  "title": "法人税の出発点：主体・期間・決算・持株関係の累積演習",
+  "kind": "review",
+  "minutes": 120,
+  "instructions": "最初の5講を横断する新規の独立演習。各問は資料から独立して解き、前問の正解を前提にしません。法令は2026年4月3日基準。特記のない会社は通算法人でない内国普通法人とします。連動用の税額仮定は現実の法定税額の導出と区別します。記述の配点は独自の自己確認用で、公式の採点や全科目の模試ではありません。",
+  "independence": "レッスン問題の抽出なし。法人分類が期間/期限へ及ぼす影響、前受/未計上/過年度超過の決算、前期一部未納と仮払/充当金、子法人を含む複数大規模保有など異なる資料構造を設計。",
+  "materials": [
+    {
+      "id": "hojin-association-start",
+      "title": "資料A：一般社団法人の設立と販売開始",
+      "paragraphs": [
+        "一般社団法人あさひは2025年4月1日に設立され、定款の最初の会計期間は同日〜2026年3月31日。国内に主たる事務所があり、通算法人ではない。年度中の区分変更等はない。",
+        "非営利性が徹底された法人の要件のうち理事割合以外は全て満たす。理事6人のうちA、その配偶者B、Aの子Cの3人が理事で、残りの人には特殊関係がない。共益型等の別類型に該当する事実はない。",
+        "設立後の会費等収入240万円、10月10日に開始した継続的な書籍販売の収入160万円、当期の税務上適正な費用合計250万円。資本等取引・税金・他の益金不算入等はなく、金額は全て当期分である。",
+        "担当者は書籍販売開始から3月を数え、12月1日に初年度からの青色承認申請をすればよいと判断した。休日調整を要する日付はない。"
+      ]
+    },
+    {
+      "id": "hojin-closing-differences",
+      "title": "資料B：決算に混在する年度と調整",
+      "paragraphs": [
+        "内国普通法人しおりの当期純利益は620万円。税金費用を計上する前は760万円で、費用とした納税充当金140万円を差し引いている。税額は連動練習用の仮定値で、ここでの所得から実税率により導出した額ではない。",
+        "当期引渡済みの未計上売上85万円があり、対応する原価35万円も誤って期末商品に残した。別に翌期にだけ提供するサービスの前受60万円を当期収益とした。いずれも年度・金額は確定し、近接日等の特例はない。",
+        "同じ資産の当期償却費としての損金経理額90万円、前期からの未認容超過20万円、当期限度50万円。特別償却・評価損・売却等はない。支出済み交際費の損金不算入額25万円は個別別表で適正に算定済み。",
+        "過去に損金不算入とした普通の法人税の還付12万円を当期収益とした。還付加算金はなく、配当・他の調整もない。"
+      ]
+    },
+    {
+      "id": "hojin-tax-rollforward",
+      "title": "資料C：一部未納・仮払・充当金の決算",
+      "paragraphs": [
+        "内国普通法人ふたばの三表連動を求める。以下の税額は連動用の仮定値で、表示所得に法定税率を掛けて得た額ではない。他税目・配当・税効果・通算・再編・他の調整はない。",
+        "期首繰越利益剰余金800万円、納税充当金90万円（前期法人税70、前期事業税20）。前期法人税は期首未納70万円のうち50万円を充当金から払い、残20万円は未納。前期事業税20万円は当期に申告確定し、全額充当金から払った。",
+        "当期法人税中間30万円は全額仮払で納め、期末にも仮払のまま残る。当期年間法人税90万円で確定残額60万円は未納。決算では法人税90万円と当期の未確定の事業税見込10万円の計100万円を費用と納税充当金へ計上した。",
+        "税金費用計上前の利益500万円で、当期純利益は400万円。仮払金の消却・充当金への振替や雑益振替はない。"
+      ]
+    },
+    {
+      "id": "hojin-ownership-chain",
+      "title": "資料D：小資本金の中間法人と複数大規模法人",
+      "paragraphs": [
+        "対象会社いぶきの資本金は9,000万円。発行済み1,000株、自己株式なしで、法人L400株、法人M300株、個人A200株とその配偶者B100株である。一株一議決権、別契約や他の保有経路はない。",
+        "L自身の資本金は1,000万円だが、資本金6億円の大法人PがLの全株式を持つ。Mの資本金は2億円。P/L/MとA/Bの間、P/LとMの間に他の特殊関係はない。通算法人・投資法人等ではなく、他の特則もない。"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "資料Aの法人税法上の区分として適切なものを選んでください。",
+      "options": [
+        "理事3/6が1/3以下なので公益法人等",
+        "理事割合の条件を満たさず、他類型もないので普通法人",
+        "一般社団法人は全て公共法人",
+        "販売を開始した日以後だけ人格のない社団等"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "関係理事は本人Aと配偶者B・子Cの3人。3/6＝1/2は1/3を超えるため非営利型には該当せず、普通法人です。",
+      "id": "zr2-hojin-scope-review-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01"
+      ],
+      "materialIds": [
+        "hojin-association-start"
+      ]
+    },
+    {
+      "prompt": "資料Aの全ての収支について、各事業年度の所得に入れる金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1500000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "普通法人なので、会費等も示された条件では益金に入り、240＋160−250＝150万円です。一般社団法人という名称や販売開始日だけで会費を対象外にしません。",
+      "id": "zr2-hojin-scope-review-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o02"
+      ],
+      "materialIds": [
+        "hojin-association-start"
+      ]
+    },
+    {
+      "prompt": "資料Aで、書籍販売の開始を理由に事業年度を10月9日で区切る解答を訂正し、初年度の期間と理由を答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "2025年4月1日〜2026年3月31日。普通法人であり、公益法人等や人格のない社団等の新たな収益事業開始の特例を適用しない。定款の期間は1年で他の区切る事実もない。",
+      "rubric": [
+        {
+          "criterion": "開始による区切りの主体条件に当たらない理由",
+          "points": 2
+        },
+        {
+          "criterion": "初年度期間を正しく示す",
+          "points": 1
+        }
+      ],
+      "explanation": "法人区分を確定してから事業年度へ進みます。販売が始まること自体が全ての普通法人の年度を切る条件にはなりません。",
+      "id": "zr2-hojin-scope-review-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o01"
+      ],
+      "materialIds": [
+        "hojin-association-start"
+      ]
+    },
+    {
+      "prompt": "資料Aの初年度からの青色承認申請の期限を示し、担当者の12月1日提出の判断が初年度に間に合うか説明してください。3月経過日は設立日から7月1日、販売開始日から翌年1月10日とします。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "普通法人の設立初年度として2025年7月1日と2026年3月31日を比較し、早い日の前日2025年6月30日が期限。販売開始日を基準にした12月1日の初年度申請は間に合わない。",
+      "rubric": [
+        {
+          "criterion": "設立初年度の比較日を用いる",
+          "points": 1
+        },
+        {
+          "criterion": "2025年6月30日を示す",
+          "points": 1
+        },
+        {
+          "criterion": "12月1日は初年度には遅いとし販売開始基準を退ける",
+          "points": 2
+        }
+      ],
+      "explanation": "法人の分類の誤りが承認期限にも波及する事例です。公益法人等の収益事業開始の期限へ置き換えません。",
+      "id": "zr2-hojin-scope-review-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o02"
+      ],
+      "materialIds": [
+        "hojin-association-start"
+      ]
+    },
+    {
+      "prompt": "資料Aの会費240万円を『一般活動に使うので法人税の対象外』とした答案がある。法人の区分と収入の使途の二点から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "本資料では非営利型に当たらず普通法人なので、公益法人等の非収益事業所得の扱いを使えない。使途が一般活動というだけで益金から外す規定にはならず、所定の例外がない本問では会費も対象とする。",
+      "rubric": [
+        {
+          "criterion": "普通法人である点と法6条の主体の違いを示す",
+          "points": 2
+        },
+        {
+          "criterion": "使途だけで除外せず本問の会費を対象にする",
+          "points": 1
+        }
+      ],
+      "explanation": "区分と契約の性質を確認し、公益法人等の場合の条件を名称だけで持ち込みません。",
+      "id": "zr2-hojin-scope-review-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01",
+        "zr2-hojin-entity-scope-o02"
+      ],
+      "materialIds": [
+        "hojin-association-start"
+      ]
+    },
+    {
+      "prompt": "資料Bの所得金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "8030000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "620＋140＋85−35−60＋40＋25−12＝803万円。償却損金は50万円で、当期費用90万円との差40万円を加算します。",
+      "id": "zr2-hojin-scope-review-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01"
+      ],
+      "materialIds": [
+        "hojin-closing-differences"
+      ]
+    },
+    {
+      "prompt": "資料Bの調整を留保と社外流出に区分した場合の、別表四の留保所得金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "7780000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "総額803万円から、交際費損金不算入の社外流出25万円を除いて778万円。その他の示された調整は本問では留保として追います。",
+      "id": "zr2-hojin-scope-review-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01"
+      ],
+      "materialIds": [
+        "hojin-closing-differences"
+      ]
+    },
+    {
+      "prompt": "資料Bの同じ資産の当期損金、別表四の当期加算、翌期へ残る償却超過を示し、前期超過の全額を当期減算してはいけない理由も説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "損金経理額90＋前期超過20＝110万円のうち限度50万円が当期損金。当期会計費用90との差40万円を加算し、超過は20＋40＝60万円残る。前期超過があっても当期費用が既に限度を上回り、認容の余地がないため20万円全額を減算しない。",
+      "rubric": [
+        {
+          "criterion": "当期損金50万円と加算40万円",
+          "points": 2
+        },
+        {
+          "criterion": "翌期超過60万円",
+          "points": 1
+        },
+        {
+          "criterion": "限度と損金経理額に基づき前期全額減算を退ける",
+          "points": 2
+        }
+      ],
+      "explanation": "前期残高の存在は自動減算の条件ではありません。当期損金と帳簿費用との差を計算し、残高へつなげます。",
+      "id": "zr2-hojin-scope-review-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01",
+        "zr2-hojin-income-adjustments-o02"
+      ],
+      "materialIds": [
+        "hojin-closing-differences"
+      ]
+    },
+    {
+      "prompt": "資料Bの前受60万円について、当期利益からの調整と、入金と収益の年度の違いを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "当期収益にした60万円を益金不算入として減算する。役務の提供は翌期だけで、入金したことだけでは当期の役務提供収益にならない。例外のない本問では役務の年度へ対応させる。",
+      "rubric": [
+        {
+          "criterion": "当期60万円減算",
+          "points": 1
+        },
+        {
+          "criterion": "入金と翌期役務提供を区別する理由",
+          "points": 2
+        }
+      ],
+      "explanation": "預金の入金と、22条の2の役務提供等の基準を分けます。資料は近接日等の別処理を除いています。",
+      "id": "zr2-hojin-scope-review-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01",
+        "zr2-hojin-income-adjustments-o02"
+      ],
+      "materialIds": [
+        "hojin-closing-differences"
+      ]
+    },
+    {
+      "prompt": "資料Bで、税引前利益760万円から始めた担当者が、さらに納税充当金140万円を加算した。他の調整を正しく行ったとして、その二重加算を訂正し、所得への過大影響と正しい所得を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "税引前760万円には税金費用の控除がまだなく、さらに140万円を戻すと所得を140万円過大にする。税引前から760＋85−35−60＋40＋25−12＝803万円が正しい。誤った結果は943万円となる。",
+      "rubric": [
+        {
+          "criterion": "税金未控除の出発点と再加算の理由を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "過大140万円",
+          "points": 1
+        },
+        {
+          "criterion": "正しい所得803万円",
+          "points": 1
+        }
+      ],
+      "explanation": "正式な四の出発点と、問題の便宜的な税引前計算を区別します。同じ事実の別出発点でも所得が一致するかを検算します。",
+      "id": "zr2-hojin-scope-review-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01"
+      ],
+      "materialIds": [
+        "hojin-closing-differences"
+      ]
+    },
+    {
+      "prompt": "資料Bについて正しい残高管理の説明を選んでください。",
+      "options": [
+        "交際費25万円は翌期自動減算のため五（一）へ持つ",
+        "償却超過の残高を資産別に持ち、交際費の社外流出加算を同じ認容残高へ混ぜない",
+        "留保と社外流出は現金支払があったかだけで判定する",
+        "所得803万円が合えば資産別残高は自由に変えられる"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "税務差額の翌期認容と、社外流出の否認は別の管理です。総額の一致だけで残高の正しさは保証されません。",
+      "id": "zr2-hojin-scope-review-q11",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01"
+      ],
+      "materialIds": [
+        "hojin-closing-differences"
+      ]
+    },
+    {
+      "prompt": "資料Cの期末の未納法人税本税を、前期分の残額と当期確定残額を合わせて円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "800000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "前期70−納付50＝20万円、当期確定90−中間30＝60万円、合計80万円です。年間90万円や中間仮払30万円をそのまま未納額にしません。",
+      "id": "zr2-hojin-scope-review-q12",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "materialIds": [
+        "hojin-tax-rollforward"
+      ]
+    },
+    {
+      "prompt": "資料Cの期末納税充当金を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1200000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "期首90−前期法人税納付50−前期事業税納付20＋当期繰入100＝120万円。中間の仮払納付30万円は、充当金を取り崩した条件ではありません。",
+      "id": "zr2-hojin-scope-review-q13",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "materialIds": [
+        "hojin-tax-rollforward"
+      ]
+    },
+    {
+      "prompt": "資料Cの所得金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "4800000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "当期純利益400＋納税充当金100−充当金支出の前期事業税20＝480万円。中間仮払30の加算と同額減算は純額ゼロです。前期法人税を充当金から払った50万円は再加算しません。",
+      "id": "zr2-hojin-scope-review-q14",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01",
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "materialIds": [
+        "hojin-tax-rollforward"
+      ]
+    },
+    {
+      "prompt": "資料Cの五（一）の繰越損益金、納税充当金、未納法人税、仮払法人税の各翌期首残高を符号付きで示し、利益積立金額合計と、期首からの別計算による検算も示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 7,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "繰越損益金1,200万円、納税充当金120万円、未納法人税△80万円、仮払法人税△30万円、合計1,210万円。期首は800＋90−70＝820万円で、820＋留保所得480−当期年間法人税90＝1,210万円とも一致する。",
+      "rubric": [
+        {
+          "criterion": "四残高1200/120/△80/△30を区分",
+          "points": 4
+        },
+        {
+          "criterion": "合計1210万円",
+          "points": 1
+        },
+        {
+          "criterion": "期首820＋留保480−年間税90の検算",
+          "points": 2
+        }
+      ],
+      "explanation": "借入金等の財務残高と税務残高を混ぜず、仮払の△と未納の△を両方確認します。特別増減を除いた条件での検算です。",
+      "id": "zr2-hojin-scope-review-q15",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01",
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "materialIds": [
+        "hojin-tax-rollforward"
+      ]
+    },
+    {
+      "prompt": "資料Cで、期末納税充当金と未納法人税本税の差額40万円を『計算ミス』と断定した担当者に、差を生む二つの与件を挙げ、両額を同額に直すべきか説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "充当金には、仮払のまま残る当期中間法人税30万円を差し引かない年間法人税の見積計上と、未確定の当期事業税見込10万円が含まれる。120−80＝40万円の差にはこれらの与件があり、充当金と税法上の未納法人税を機械的に同額へ変更しない。",
+      "rubric": [
+        {
+          "criterion": "中間仮払30万円が未消却という与件",
+          "points": 1
+        },
+        {
+          "criterion": "事業税見込10万円という与件",
+          "points": 1
+        },
+        {
+          "criterion": "性質の違う残高を同額へ機械修正しない理由",
+          "points": 2
+        }
+      ],
+      "explanation": "充当金と未納法人税の照合は、差をなくす作業とは限りません。会計の処理・税額の発生・仮払を対応させて説明します。",
+      "id": "zr2-hojin-scope-review-q16",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five",
+      "objectiveIds": [
+        "zr2-hojin-schedule-four-five-o01",
+        "zr2-hojin-schedule-four-five-o02"
+      ],
+      "materialIds": [
+        "hojin-tax-rollforward"
+      ]
+    },
+    {
+      "prompt": "資料Dで、対象会社いぶきの同族会社の持株基準と、個人Aを起点とする支配関係をそれぞれ判定し、使うグループと割合を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "L40％、M30％、A/B30％の三グループで100％のため同族会社の持株基準に当たる。Aと配偶者Bの合計は30％で、他の保有経路もないのでAを起点とする50％超の支配関係はない。",
+      "rubric": [
+        {
+          "criterion": "三グループ100％で同族基準該当",
+          "points": 2
+        },
+        {
+          "criterion": "A/B30％でAの支配関係なし",
+          "points": 2
+        }
+      ],
+      "explanation": "三グループを合計する基準と一の者を起点とする基準を分けます。PのL保有をAのグループへ入れる根拠もありません。",
+      "id": "zr2-hojin-scope-review-q17",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o01"
+      ],
+      "materialIds": [
+        "hojin-ownership-chain"
+      ]
+    },
+    {
+      "prompt": "資料DのL自身の資本金1,000万円だけを見て、大規模法人に当たらないとした判断を訂正し、根拠となる親法人の条件を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "Lは資本金6億円の大法人Pによる完全支配下の普通法人である。措置法の大規模法人には所定の大法人の完全支配下等の法人も含まれるため、L自身の小資本金だけで対象から外せない。",
+      "rubric": [
+        {
+          "criterion": "Pの6億円/大法人とL全部保有を示す",
+          "points": 2
+        },
+        {
+          "criterion": "大規模法人の所定子法人の範囲を適用する",
+          "points": 1
+        }
+      ],
+      "explanation": "大法人と大規模法人の二段階の定義を使う事例です。中間法人を挟む保有経路も確認します。",
+      "id": "zr2-hojin-scope-review-q18",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o02"
+      ],
+      "materialIds": [
+        "hojin-ownership-chain"
+      ]
+    },
+    {
+      "prompt": "資料Dの対象会社いぶきについて、法66条の普通法人の軽減税率の法人規模・除外条件と、研究開発税制等の基本的な中小企業者を比較してください。後者では大規模法人の保有合計を示し、他の制度条件は満たすものとします。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "資本金9,000万円で、Pによる完全支配等もないため、示された法66条の軽減税率の法人規模・除外条件の範囲では進められる。一方、LとMは大規模法人で、その保有は40＋30＝70％となり、複数大規模法人による3分の2以上の保有でこの中小企業者から除外される。",
+      "rubric": [
+        {
+          "criterion": "自己資本金と大法人完全支配の有無を分ける",
+          "points": 2
+        },
+        {
+          "criterion": "L/M合計70％を示す",
+          "points": 1
+        },
+        {
+          "criterion": "3分の2以上の除外と中小の制度差を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "法66条の中小判定に進めることは、措置法上の全特例の利用を意味しません。同じ株主名簿から異なる制度の条件を確認します。",
+      "id": "zr2-hojin-scope-review-q19",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o02"
+      ],
+      "materialIds": [
+        "hojin-ownership-chain"
+      ]
+    },
+    {
+      "prompt": "個人Zは法人Y1の60％、Y2の70％を保有し、Y1は対象法人Y3の30％、Y2は25％を持つ。関係者や他の経路はない。ZとY3の支配関係を、直接支配下の法人と取り込む株式の合計で説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 3,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "Y1/Y2はそれぞれZの直接支配下にある。この二社のY3保有30＋25＝55％を用いるみなし保有の規定により、ZとY3にも支配関係がある。",
+      "rubric": [
+        {
+          "criterion": "Y1/Y2をともに直接支配下とする",
+          "points": 1
+        },
+        {
+          "criterion": "30＋25＝55％を示す",
+          "points": 1
+        },
+        {
+          "criterion": "みなし保有により支配関係ありとする",
+          "points": 1
+        }
+      ],
+      "explanation": "途中の二社を合わせて取り込む経路です。Zの経済持分の積を足す計算だけで判定しません。",
+      "id": "zr2-hojin-scope-review-q20",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o01"
+      ]
+    },
+    {
+      "prompt": "対象会社の自己株式控除後の株式のうち、所定の従業員持株組合保有が3％、所定の新株予約権行使による取得保有が2％で、残95％を親法人が持つ。各保有は除外対象の種類の条件を満たし、他の経路はない。5％未満の除外について選んでください。",
+      "options": [
+        "3％と2％は個別に5％未満なので除外できる",
+        "対象種類の合計5％であり、5％未満の条件を満たさない",
+        "親会社が95％持つため必ず全部保有となる",
+        "役員/使用人という名前があれば種類条件を見なくてよい"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "対象株式の合計を使います。各種類を別々に5％判定して除外すると、合計するという条文の条件を適用していません。",
+      "id": "zr2-hojin-scope-review-q21",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o01"
+      ]
+    },
+    {
+      "prompt": "2025年4月1日開始の12か月年度で、所定の中小普通法人の過去基準年度の年換算平均所得はちょうど15億円。当期所得は11億円で、他の適用除外事由や通算はない。平均所得による適用除外の可否と、年800万円以下の軽減部分の15％/17％区分を理由とともに判定してください。税額は求めません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "平均15億円は15億円超でないため、その平均所得の条件で適用除外事業者にはならない。当期所得は年10億円超で、2025年4月1日以後開始年度の所定の17％区分を確認する。",
+      "rubric": [
+        {
+          "criterion": "平均15億円の超える境界を正しく判定する",
+          "points": 2
+        },
+        {
+          "criterion": "当期11億円と適用開始年度により17％とする",
+          "points": 2
+        }
+      ],
+      "explanation": "過去年平均15億円と、当期所得の年10億円という異なる判定を一つにしません。",
+      "id": "zr2-hojin-scope-review-q22",
+      "field": "hojin",
+      "lesson": "zr2-hojin-relationships",
+      "objectiveIds": [
+        "zr2-hojin-relationships-o02"
+      ]
+    },
+    {
+      "prompt": "会社が借入300万円を収益、元本返済50万円を費用に誤計上し、当期利益を純額250万円増やした。利息等はない。この二項目の益金・損金、当期利益からの加減算の明細と純影響を答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "借入元本の受入は益金でなく、返済元本も損金でない。会計収益300万円を除く減算、費用50万円を戻す加算で、当期利益から純額250万円を減らす。",
+      "rubric": [
+        {
+          "criterion": "元本は益金/損金を生まないとする",
+          "points": 1
+        },
+        {
+          "criterion": "減算300・加算50万円を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "純額250万円減算",
+          "points": 1
+        }
+      ],
+      "explanation": "通常の正しい借入仕訳なら調整はありませんが、本問では損益に誤計上したという条件の差を直します。",
+      "id": "zr2-hojin-scope-review-q23",
+      "field": "hojin",
+      "lesson": "zr2-hojin-income-adjustments",
+      "objectiveIds": [
+        "zr2-hojin-income-adjustments-o01",
+        "zr2-hojin-income-adjustments-o02"
+      ]
+    },
+    {
+      "prompt": "外国本店の親法人FにはPEがなく、日本の建物貸付けの国内源泉所得80万円と、日本に帰属しない外国本店の国外所得140万円がある。Fが全額出資した別会社Gは国内本店で、国内所得240万円と国外支店所得60万円を得た。所得額・帰属は計算済みで条約等の調整はない。F/Gごとに課税範囲へ拾う所得を示し、別会社と支店の違いも説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "外国親の出資だけで国内子会社を外国法人へ変えず、国外支店を独立の外国法人として切り離さないことを確認する複合事例です。",
+      "id": "zr2-hojin-scope-review-q24",
+      "field": "hojin",
+      "lesson": "zr2-hojin-entity-scope",
+      "objectiveIds": [
+        "zr2-hojin-entity-scope-o01",
+        "zr2-hojin-entity-scope-o02"
+      ],
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "Fは外国法人で、PEがなくても対象となる国内建物所得80万円を拾い、当該国外所得140万円は含めない。Gは国内本店の内国法人として240＋60＝300万円を拾う。GはFと別の法人であり、Gの国外支店の所得はGの所得として扱う。",
+      "rubric": [
+        {
+          "criterion": "Fの対象80万円",
+          "points": 1
+        },
+        {
+          "criterion": "Gの対象300万円",
+          "points": 1
+        },
+        {
+          "criterion": "別法人F/GとGの国外支店の帰属を区別する",
+          "points": 2
+        }
+      ]
+    },
+    {
+      "prompt": "内国公益財団法人の定款期間は2025年4月1日〜2026年3月31日。2025年10月20日に初めて収益事業を開始し、その開始年度から青色を希望する。他の区切る事実等はなく、開始以後3月経過日は2026年1月20日で、期限の休日調整もない。開始前後の各年度と青色申請期限を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "2025年4月1日〜10月19日、10月20日〜2026年3月31日。青色は開始以後3月経過日2026年1月20日と当該年度末3月31日を比較し、早い日の前日2026年1月19日が申請期限。",
+      "rubric": [
+        {
+          "criterion": "二期間の境界と年度末を正しく示す",
+          "points": 2
+        },
+        {
+          "criterion": "青色の比較日を示す",
+          "points": 1
+        },
+        {
+          "criterion": "2026年1月19日を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "資料Aの普通法人と異なり、こちらは公益法人等の新たな収益事業開始に係る期間/申請の規定を用います。",
+      "id": "zr2-hojin-scope-review-q25",
+      "field": "hojin",
+      "lesson": "zr2-hojin-period-filing",
+      "objectiveIds": [
+        "zr2-hojin-period-filing-o01",
+        "zr2-hojin-period-filing-o02"
+      ]
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-hojin-entity-scope-o01": [
+      "zr2-hojin-scope-review-q1",
+      "zr2-hojin-scope-review-q5",
+      "zr2-hojin-scope-review-q24"
+    ],
+    "zr2-hojin-entity-scope-o02": [
+      "zr2-hojin-scope-review-q2",
+      "zr2-hojin-scope-review-q5",
+      "zr2-hojin-scope-review-q24"
+    ],
+    "zr2-hojin-period-filing-o01": [
+      "zr2-hojin-scope-review-q3",
+      "zr2-hojin-scope-review-q25"
+    ],
+    "zr2-hojin-period-filing-o02": [
+      "zr2-hojin-scope-review-q4",
+      "zr2-hojin-scope-review-q25"
+    ],
+    "zr2-hojin-income-adjustments-o01": [
+      "zr2-hojin-scope-review-q6",
+      "zr2-hojin-scope-review-q8",
+      "zr2-hojin-scope-review-q9",
+      "zr2-hojin-scope-review-q10",
+      "zr2-hojin-scope-review-q23"
+    ],
+    "zr2-hojin-income-adjustments-o02": [
+      "zr2-hojin-scope-review-q8",
+      "zr2-hojin-scope-review-q9",
+      "zr2-hojin-scope-review-q23"
+    ],
+    "zr2-hojin-schedule-four-five-o01": [
+      "zr2-hojin-scope-review-q7",
+      "zr2-hojin-scope-review-q11",
+      "zr2-hojin-scope-review-q14",
+      "zr2-hojin-scope-review-q15",
+      "zr2-hojin-scope-review-q16"
+    ],
+    "zr2-hojin-schedule-four-five-o02": [
+      "zr2-hojin-scope-review-q12",
+      "zr2-hojin-scope-review-q13",
+      "zr2-hojin-scope-review-q14",
+      "zr2-hojin-scope-review-q15",
+      "zr2-hojin-scope-review-q16"
+    ],
+    "zr2-hojin-relationships-o01": [
+      "zr2-hojin-scope-review-q17",
+      "zr2-hojin-scope-review-q20",
+      "zr2-hojin-scope-review-q21"
+    ],
+    "zr2-hojin-relationships-o02": [
+      "zr2-hojin-scope-review-q18",
+      "zr2-hojin-scope-review-q19",
+      "zr2-hojin-scope-review-q22"
+    ]
+  },
+  "selfReview": {
+    "status": "pending-independent-review",
+    "arithmetic": "全25問・資料A〜Dと各計算を別計算で照合。各税額仮定の表示、2025/2026開始年度の17％区分、1/3・50％超・5％未満・15億超を再確認。",
+    "rubricAlignment": "全記述問の数値/理由/資料/検算の要求と各採点基準を照合。要求外の補足に配点しない。",
+    "japanese": "全問と資料を全文確認しlint/outline/terms/calquesを実行。制度条件を指す入口等を具体化。資料参照/定義設問の反復、法的該当の当たる、算術の足す/引く、誤答選択肢中の否定等は文脈に照らして保持。独立レビューはpending。"
+  }
+}

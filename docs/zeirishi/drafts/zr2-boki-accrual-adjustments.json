@@ -1,0 +1,434 @@
+{
+  "id": "zr2-boki-accrual-adjustments",
+  "subject": "boki",
+  "title": "経過勘定を期間配分し、再振替と当期記帳をつなぐ",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-boki-unit-records",
+  "minutes": 120,
+  "objectives": [
+    "役務提供と入出金の時点から四つの経過勘定を区別する",
+    "契約期間・単価変更・決算期変更から当期発生額と期末残高を計算する",
+    "期首再振替の有無に合わせて決済と期末整理を記帳する",
+    "整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する"
+  ],
+  "prerequisites": [
+    "zr2-boki-trial-balance",
+    "zr2-boki-closing-accounts"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "sourceCandidates": [
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則注解5(1)〜(4)、損益計算書原則一A。1982年4月20日最終改正の本文を2026年10月27日確認。個別基準の対象取引は別途確認"
+    },
+    {
+      "id": "jcci-reversal142",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+      "location": "第142回3級 出題の意図・講評、第3問、PDF3頁。前払費用の再振替と合計試算表の出題意図。旧年度の他論点・個人資本処理を株式会社例へ移さない"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "前払費用",
+      "definition": "継続的な役務に対する支払済対価のうち、まだ提供を受けていない期間に対応する資産"
+    },
+    {
+      "term": "前受収益",
+      "definition": "継続的な役務に対する受取済対価のうち、まだ提供していない期間に対応する負債"
+    },
+    {
+      "term": "未払費用",
+      "definition": "継続的な役務の提供を受けて発生した費用のうち、対価が未払いの部分を示す負債"
+    },
+    {
+      "term": "未収収益",
+      "definition": "継続的な役務を提供して発生した収益のうち、対価が未受取りの部分を示す資産"
+    },
+    {
+      "term": "再振替",
+      "definition": "前期末の見越し・繰延べなどの整理仕訳について、翌期首に反対仕訳を行う記帳手続"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-accrual-adjustments-ex1",
+      "section": "例題1：更新額が変わる保険料を二年度で計算する",
+      "objectives": [
+        1,
+        2,
+        3
+      ],
+      "results": {
+        "x1Expense": 60000,
+        "x1Prepaid": 180000,
+        "x2Expense": 255000,
+        "x2Prepaid": 225000
+      }
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-ex2",
+      "section": "例題2：未収利息の再振替と、翌年の入金をつなぐ",
+      "objectives": [
+        1,
+        3
+      ],
+      "results": {
+        "firstAccrued": 36000,
+        "nextCash": 72000,
+        "nextIncome": 72000
+      }
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-ex3",
+      "section": "例題3：決算期変更でも、契約の残存月数を数える",
+      "objectives": [
+        1,
+        2,
+        3
+      ],
+      "results": {
+        "firstIncome": 150000,
+        "firstDeferred": 390000,
+        "nextIncome": 180000,
+        "nextDeferred": 210000
+      }
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-ex4",
+      "section": "例題4：前期未払と当期未払から給与費用を復元する",
+      "objectives": [
+        3,
+        4
+      ],
+      "results": {
+        "expense": 1432000,
+        "nextPaymentCurrentExpense": 76000
+      }
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-ex5",
+      "section": "四区分の修正を、利益と残高の両方で検算する",
+      "objectives": [
+        4
+      ],
+      "results": {
+        "profit": 573000,
+        "assetIncrease": 99000,
+        "liabilityIncrease": 126000,
+        "cashChange": 0
+      }
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-ex6",
+      "section": "例題5：契約を解約したら、未経過期間と返金請求を区別する",
+      "objectives": [
+        1,
+        2,
+        4
+      ],
+      "results": {
+        "refundReceivable": 63000,
+        "currentExpense": 57000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-accrual-adjustments-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "12月31日決算。5月1日に同日から一年分の保険料360,000円を支払い、全額費用計上済み。保障は均等で月割計算し、他の整理はない。期末の前払費用を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "120000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "月額360,000÷12＝30,000円。翌年1〜4月の4か月分120,000円が未経過なので、前払費用120,000円／保険料120,000円です。当期5〜12月8か月の240,000円と合わせて360,000円になります。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "決算日までに継続して受けた通信サービス55,000円が未払い・未記帳である。他の条件はない。決算整理の仕訳はどれですか。",
+      "options": [
+        "前払費用55,000円／通信費55,000円",
+        "通信費55,000円／未払費用55,000円",
+        "未払費用55,000円／通信費55,000円",
+        "通信費55,000円／現金55,000円"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        4
+      ],
+      "explanation": "受けた役務の当期費用と未払負債を追加します。1は支払済みの将来役務の処理、3は当期費用と負債を減らす逆仕訳、4は支払がないのに現金を減らします。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "3月31日決算。前年10月1日に同日から一年分の家賃384,000円を受け取り、全額収益へ記帳済み。均等月割で他の同契約残高はない。3月末の前受収益を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "192000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "月額32,000円で、4〜9月の未提供6か月分192,000円です。受取家賃192,000円／前受収益192,000円とし、当期の10〜3月分192,000円と区別します。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "次のうち、企業会計原則注解5の前払費用と区別するべきものはどれですか。",
+      "options": [
+        "継続契約の翌月分保険料を支払った額",
+        "継続契約の翌月分家賃を支払った額",
+        "翌月納入予定の設備の購入手付金",
+        "継続契約の翌月分保守サービス料を支払った額"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "設備の購入手付金は継続的な役務に対する未経過対価ではなく、前払金等の性質を検討します。他の三つは、示された継続契約の未提供役務に対応するため、この条件では前払費用です。名称が前払いでも契約の内容を調べます。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "当期給与の現金支払合計980,000円には前期末未払28,000円の精算が含まれる。当期末未払は42,000円で、前払その他の変動はない。当期給与費用を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "994000"
+      ],
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "980,000−28,000＋42,000＝994,000円。支払に含まれる前期費用を除き、当期勤務に対する未払を追加します。期首再振替の有無は途中仕訳を変えますが、当期費用の最終額は変えません。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "同一の保険契約群について、期首の前払費用90,000円、当期支払240,000円、期末の前払費用60,000円である。他の変動と未払はない。当期保険料を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "270000"
+      ],
+      "objectives": [
+        2,
+        4
+      ],
+      "explanation": "90,000＋240,000−60,000＝270,000円。期首資産の当期消費を加え、支払額のうち将来分を残します。支払額240,000円そのものを費用とすると前払残高の減少30,000円が反映されません。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "前期末に前払費用70,000円／保険料70,000円と整理した。翌期首に同額を再振替する仕訳はどれですか。",
+      "options": [
+        "保険料70,000円／前払費用70,000円",
+        "前払費用70,000円／現金70,000円",
+        "現金70,000円／保険料70,000円",
+        "前払費用70,000円／保険料70,000円"
+      ],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "前期末整理の反対仕訳なので、保険料の借方と前払費用の貸方です。2・3は期首に存在しない現金決済を作り、4は前期整理を重ねています。再振替後にも期末の未経過額は改めて整理します。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "継続的な貸付利息について、当期現金受取60,000円には前期末未収15,000円を含み、当期末未収は18,000円である。前受・貸倒・元本増減その他の調整はない。当期利息収益を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "63000"
+      ],
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "60,000−15,000＋18,000＝63,000円。受取額から前期に認識済みの未収を除き、当期発生した未受取分を足します。未収資産は15,000円から18,000円へ3,000円増え、収益が入金を3,000円上回ることとも一致します。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "4月1日期首の前受収益240,000円は、4〜11月の均等な賃貸役務8か月分である。決算期変更により当期は4〜9月の6か月、新規受取りその他の変動はない。当期の受取家賃を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "180000"
+      ],
+      "objectives": [
+        2,
+        3
+      ],
+      "explanation": "月額240,000÷8＝30,000円、当期6か月で180,000円です。期末前受収益は10〜11月の60,000円。再振替後の収益240,000円から60,000円を繰り延べても同じです。一年分の収益を置きません。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "前期末の未払給与18,000円を期首に再振替していない。翌期に現金75,000円を支払い、その内訳は前期分18,000円・当期分57,000円と確定した。支払仕訳と、この支払に対応する当期費用を示し、期首再振替をした方法との対応も説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "未払費用18,000円・給料57,000円／現金75,000円。当期費用は57,000円である。期首再振替をした方法なら未払費用18,000円／給料18,000円とし、支払全額を給料75,000円へ記録するため、純額75,000−18,000＝57,000円になる。",
+      "rubric": [
+        {
+          "criterion": "未払費用18,000円と給料57,000円を借方に分ける",
+          "points": 2
+        },
+        {
+          "criterion": "貸方現金75,000円と当期費用57,000円を示す",
+          "points": 1
+        },
+        {
+          "criterion": "再振替と全額費用記帳の純額が57,000円になると説明する",
+          "points": 1
+        }
+      ],
+      "objectives": [
+        3
+      ],
+      "explanation": "両方法の途中仕訳を混ぜず、前期の費用18,000円を当期に再計上しないことを確認します。支払前に再振替していないという条件が借方科目の選択を決めます。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "整理前利益260,000円。費用計上済みの未経過24,000円、当期未払費用18,000円、収益計上済みの未提供30,000円、当期未収収益12,000円があり、まだ同じ整理はない。修正後利益、資産と負債の増加額、現金増減額を求め、整合を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "modelAnswer": "利益は260,000＋24,000−18,000−30,000＋12,000＝248,000円。資産は前払24,000円と未収12,000円の36,000円増、負債は未払18,000円と前受30,000円の48,000円増で、純資産への影響−12,000円が利益減少と一致する。この整理で現金増減は0円。",
+      "rubric": [
+        {
+          "criterion": "利益の符号を区別し248,000円を求める",
+          "points": 2
+        },
+        {
+          "criterion": "資産36,000円増・負債48,000円増を示す",
+          "points": 2
+        },
+        {
+          "criterion": "差額−12,000円と利益減少の一致を示す",
+          "points": 1
+        },
+        {
+          "criterion": "整理による現金増減0円を示す",
+          "points": 1
+        }
+      ],
+      "objectives": [
+        1,
+        4
+      ],
+      "explanation": "四つを全て費用の追加と扱わず、前払・前受は計上済み損益からの除去、未払・未収は損益の追加と判断します。仕訳で各勘定を示す同値の解答でも確認できます。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "未経過保険料20,000円について、本来は前払費用20,000円／保険料20,000円とすべきところ、保険料20,000円／前払費用20,000円と逆に記帳した。他の修正はない。誤仕訳を消すことも含め、最終残高を正しくする追加仕訳はどれですか。",
+      "options": [
+        "前払費用20,000円／保険料20,000円",
+        "保険料40,000円／前払費用40,000円",
+        "現金40,000円／保険料40,000円",
+        "前払費用40,000円／保険料40,000円"
+      ],
+      "answer": 3,
+      "objectives": [
+        4
+      ],
+      "explanation": "逆仕訳の取消し20,000円と正しい整理20,000円を合わせ、前払費用40,000円／保険料40,000円です。1は誤仕訳を消すだけで必要残高に届かず、2は誤りをさらに拡大し、3は現金決済を作ってしまいます。"
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments-q13",
+      "field": "boki",
+      "lesson": "zr2-boki-accrual-adjustments",
+      "prompt": "6月1日に一年分の保険料240,000円を全額費用処理し、9月末で保障を終了して解約した。未経過8か月分160,000円から解約料16,000円を引いた144,000円の返金請求権が通知により確定し、12月末まで未入金。他の整理はない。解約料を保険料に含めるとして、決算の修正仕訳、当期費用、前払費用でなく未収入金を使う理由を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "未収入金144,000円／保険料144,000円。当期費用は240,000−144,000＝96,000円で、4か月分80,000円と解約料16,000円の合計。保障は終了して将来の役務を受ける権利が残らず、確定した返金請求権が残るため未収入金とする。",
+      "rubric": [
+        {
+          "criterion": "未収入金144,000円／保険料144,000円を示す",
+          "points": 2
+        },
+        {
+          "criterion": "当期費用96,000円と内訳を求める",
+          "points": 2
+        },
+        {
+          "criterion": "未経過役務と確定返金請求権の違いを説明する",
+          "points": 1
+        }
+      ],
+      "objectives": [
+        1,
+        2,
+        4
+      ],
+      "explanation": "返金が未入金だからといって現金を増やさず、契約が終了した後の未経過額を機械的に前払費用へ残しません。返金条件は設問で確定した金額を使います。"
+    }
+  ],
+  "deferredScope": [
+    {
+      "topic": "商品・サービス販売の契約資産負債と履行義務",
+      "plannedIds": [
+        "zr2-boki-revenue-allocation",
+        "zr2-boki-revenue-over-time"
+      ]
+    },
+    {
+      "topic": "経過勘定の長短の表示分類",
+      "plannedIds": [
+        "zr2-zaimu-accrual-presentation"
+      ],
+      "status": "今回の作業計画への追加提案。表示条項の逐条確認と本講の執筆は未着手"
+    },
+    {
+      "topic": "利息の日割・複利・現価",
+      "plannedIds": [
+        "zr2-boki-interest-present-value"
+      ]
+    },
+    {
+      "topic": "信用不安の未収利息計上停止",
+      "plannedIds": [
+        "zr2-boki-credit-loss-measurement"
+      ]
+    }
+  ]
+}

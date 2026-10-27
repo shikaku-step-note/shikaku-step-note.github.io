@@ -1,0 +1,494 @@
+{
+  "id": "zr2-hojin-schedule-four-five",
+  "subject": "hojin",
+  "title": "別表四・五（一）・五（二）を残高まで照合する",
+  "stage": "標準",
+  "moduleId": "zr2-hojin-unit-scope",
+  "minutes": 120,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "留保/流出と利益積立残高を計算する",
+    "税金費用/納税充当/中間納付を照合する"
+  ],
+  "objectiveIds": [
+    "zr2-hojin-schedule-four-five-o01",
+    "zr2-hojin-schedule-four-five-o02"
+  ],
+  "prerequisites": [
+    "zr2-hojin-income-adjustments"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "corporate-depreciation-tax",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "31条1/4項、26/38条。損金経理・償却超過と法人税等の原則",
+      "applicableVersion": "2026-04-03現在施行版"
+    },
+    {
+      "id": "corporate-form4-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-04.pdf",
+      "location": "pp1〜3:納付方法/留保/社外流出・仮払と同額減算。全文取得済み。特殊な後半の税効果/通算等を本講の完成範囲とはしない",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form51-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05.pdf",
+      "location": "全4頁:増減・繰越損益金/充当金/未納法人税/未収還付・仮払の△記載・検算式",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form52-notes",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/r01-05_2.pdf",
+      "location": "全4頁:中間/確定・納付三方法・還付外書・事業税と充当金",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    },
+    {
+      "id": "corporate-form51",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/hojin/shinkoku/itiran2025/pdf/05(01).pdf",
+      "location": "Ⅰの期首/減/増/翌期首、Ⅱとの区別",
+      "applicableVersion": "2025年4月1日以後終了事業年度等分"
+    }
+  ],
+  "sourceUncertainties": [
+    "税金の三表連動に集中する例題3/4と設問の税額は、現実の所得×税率から導出した額ではなく、明示した仮定額。実際の法定税額はrates-credit-order等で法人区分/期間/控除から計算する。",
+    "原書式の全欄を再現せず、教学上の抜粋を独自表にしている。再編/税効果/通算/特殊な損失等の調整を含めた公式書式の全機能完了とは扱わない。",
+    "例題3は中間税を支払時から費用処理。期中仮払後に決算振替する別の仕訳と混ぜない。例題4は仮払のまま残る条件を明示。"
+  ],
+  "glossary": [
+    {
+      "term": "別表四",
+      "definition": "当期純利益等から申告調整により所得金額等を計算し、留保・社外流出も区分する明細書"
+    },
+    {
+      "term": "別表五（一）",
+      "definition": "利益積立金額と資本金等の額を項目ごとに期首・当期増減・翌期首へつなぐ明細書"
+    },
+    {
+      "term": "別表五（二）",
+      "definition": "租税公課の発生・納付・未納状況等と納税充当金の増減を管理する明細書"
+    },
+    {
+      "term": "留保",
+      "definition": "別表四の調整等のうち、税務上の利益積立金額の残高へつながる区分。現金の有無だけでは決めない"
+    },
+    {
+      "term": "社外流出",
+      "definition": "別表四の区分の一つ。損金不算入の交際費・寄附金等は通常この区分となり、否認残高を単純に翌期認容しない"
+    },
+    {
+      "term": "納税充当金",
+      "definition": "決算で費用計上した税金等に対応する負債の額を管理する項目。税法上の未納額と区別する"
+    },
+    {
+      "term": "仮払経理",
+      "definition": "税金の納付を費用とせず、仮払金等の資産として処理する方法"
+    },
+    {
+      "term": "確定残額",
+      "definition": "年間の本税額と中間税額の関係から計算する追加納付または還付の額。本講での説明用語"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-hojin-schedule-four-five-e1",
+      "section": "例題1：二つの年度の償却と、残高の一致",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "year1Add": 300000,
+        "year1Excess": 300000,
+        "year2Subtract": 200000,
+        "year2Excess": 100000,
+        "year2BookValue": 3700000,
+        "year2TaxValue": 3800000
+      }
+    },
+    {
+      "id": "zr2-hojin-schedule-four-five-e2",
+      "section": "例題2：所得は増えても、五（一）へ残す額は異なる",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "totalIncome": 1700000,
+        "retainedIncome": 1300000,
+        "outflow": 400000
+      }
+    },
+    {
+      "id": "zr2-hojin-schedule-four-five-e3",
+      "section": "例題3：前期税金の決済、中間、当期決算を連動する",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "assumedTaxAmounts": true,
+        "profit": 4500000,
+        "income": 5700000,
+        "closingReserve": 1100000,
+        "closingCorporateTaxPayable": 900000,
+        "openingTaxEarnings": 10200000,
+        "closingTaxEarnings": 14700000
+      }
+    },
+    {
+      "id": "zr2-hojin-schedule-four-five-e4",
+      "section": "例題4：中間納付が年間税額を上回った場合",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "assumedTaxAmounts": true,
+        "prepaid": 800000,
+        "annualTax": 500000,
+        "refund": 300000,
+        "income": 2000000,
+        "taxEarnings": 1500000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "会社Aの資産取得価額は900万円。X1年度の会計償却費200万円・税務限度150万円、X2年度の会計償却費80万円・税務限度120万円で、資産は保有を続ける。他の特例はない。X2年度の損金、当期利益からの調整、翌期超過残高、期末会計価額と税務価額を求め、残高と価額差を照合してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 6,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "X1超過は50万円。X2は80＋50＝130万円を限度120万円と比べ、120万円が損金。当期は40万円を留保減算し、超過残高10万円。会計価額900−200−80＝620万円、税務価額900−150−120＝630万円で、差10万円が残高と一致する。",
+      "rubric": [
+        {
+          "criterion": "当期損金120万円",
+          "points": 1
+        },
+        {
+          "criterion": "当期40万円留保減算",
+          "points": 1
+        },
+        {
+          "criterion": "翌期超過10万円",
+          "points": 1
+        },
+        {
+          "criterion": "会計620・税務630万円を示す",
+          "points": 2
+        },
+        {
+          "criterion": "差額10万円と超過残高を照合する",
+          "points": 1
+        }
+      ],
+      "explanation": "限度全額120万円を減算するのでなく、当期費用80万円との差40万円を減算します。未認容残高は50−40＝10万円です。",
+      "id": "zr2-hojin-schedule-four-five-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "会社Bの当期純利益250万円。償却超過40万円と、支出済み交際費の損金不算入額30万円がある。両金額は個別別表で適正に計算済み。配当・税金・他の調整はこの抜粋の対象外とする。別表四の留保所得金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "2900000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "留保は250＋40＝290万円。交際費30万円は社外流出で、所得総額は320万円です。総額と留保の290万円を取り違えません。",
+      "id": "zr2-hojin-schedule-four-five-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "会社Cは、前期に損金不算入として加算した納税充当金のうち、普通の所得に対する法人税80万円を当期に取り崩して納付した。当期費用への計上はない。この支払だけを理由に別表四で再度80万円を加算するかと、別表五（一）で照合すべき二項目を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "当期利益を減らしていないので、この支払だけで80万円を再加算しない。別表五（一）の納税充当金の減少と未納法人税の消込みを、別表五（二）の充当金による納付80万円へ照合する。",
+      "rubric": [
+        {
+          "criterion": "当期費用なし/前期処理を理由に再加算しない",
+          "points": 2
+        },
+        {
+          "criterion": "充当金減少と未納法人税消込みの二項目を挙げる",
+          "points": 2
+        }
+      ],
+      "explanation": "現金が出たという一事実から、損金不算入の加算や社外流出の区分を決めません。発生と決済を別に追います。",
+      "id": "zr2-hojin-schedule-four-five-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "三表の連動練習用の仮定税額を用いる。会社Dは期首の前期法人税50万円を充当金で全額納付。当期法人税の中間発生60万円を全額納付し、当期の確定欄には追加納付となる40万円が発生して未納である。他の税額はない。当期の年間法人税額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1000000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "当期年間税額は中間60＋確定残額40＝100万円です。前期分50万円は当期の年間税額へ足しません。年末未納額は40万円です。",
+      "id": "zr2-hojin-schedule-four-five-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "当期法人税の中間納付を仮払金のまま決算へ残した。別表四について、使用する記載要領は仮払納付本書も法人税等加算に含め、仮払税金として同額を留保減算する。所得への純影響の説明を選んでください。",
+      "options": [
+        "仮払のため利益を減らしていないので、その納付だけでは純影響ゼロ",
+        "税金の支払は必ず社外流出加算となる",
+        "仮払金は現金で払ったため所得を同額減らす",
+        "法人税等加算のみ記載し、同額減算は不要"
+      ],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "書式の加算と同額減算を両方記載し、純額を照合します。損益を減らしていない仮払納付について、一方だけを計上すると所得が変わります。",
+      "id": "zr2-hojin-schedule-four-five-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "会社Eは前期に費用計上・損金不算入とした納税充当金から、前期事業税45万円を当期に申告して確定し全額納付した。当期の損益には計上しておらず、既に損金算入した額や特例はない。この支払に係る別表四の減算額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "450000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "当期損金となる事業税45万円が当期利益を減らしていないため、納税充当金から支出した事業税等として45万円を減算します。法人税本税の納付と同じ処理にしません。",
+      "id": "zr2-hojin-schedule-four-five-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "三表の連動用の仮定額を用いる。会社Fは中間法人税90万円を仮払のまま残し、当期年間法人税が55万円になった。中間分は全額納付済み、期首残高・他税目・配当・他の調整はゼロ。当期純利益300万円で、還付未収金の会計計上はない。還付額、別表五（一）の仮払・未収還付の符号付き調整額と利益積立合計を求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "還付35万円。五（一）の仮払法人税は増加欄に△90万円、未収還付法人税は増加欄に35万円。繰越損益金300−90＋35＝245万円で、所得300−年間税55＝245万円とも一致する。",
+      "rubric": [
+        {
+          "criterion": "還付35万円",
+          "points": 1
+        },
+        {
+          "criterion": "仮払△90・未収還付＋35万円を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "利益積立合計245万円",
+          "points": 1
+        }
+      ],
+      "explanation": "年間税55と追加納付/還付の確定差額を分けます。仮払90万円全額を還付として計上する処理でも、35万円を未納税額のマイナスのまま重ねる処理でもありません。",
+      "id": "zr2-hojin-schedule-four-five-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "三表の検算練習用の仮定値で、通常の検算式を妨げる再編・通算税効果額等はない。期首利益積立金額2,000万円、当期別表四の留保所得500万円、当期の法人税等の年間発生税額合計150万円（この検算で差し引く額）である。翌期首利益積立金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "23500000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "2,000＋500−150＝2,350万円です。この式は留保所得を使い、社外流出を含む所得総額と取り違えません。特殊な資本/再編等の増減があるときは同じ式へ追加調整が必要です。",
+      "id": "zr2-hojin-schedule-four-five-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "会社Gの前期末の償却超過額は28万円だが、当期首表には18万円とある。前期申告後の更正等の記録はなく、担当者は差10万円を当期の別表四に加算して帳尻を合わせようとしている。なぜその処理を即断できないかと、確認すべき資料を二種類挙げて説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "当期首は原則として前期末を引き継ぐ。差10万円は転記等の誤りの可能性があり、当期に加算する実体的な理由が示されていない。前期の申告書/別表五（一）と、資産別償却明細/税務残高台帳等を突合し、正しい期首と当期の取引を分ける。",
+      "rubric": [
+        {
+          "criterion": "差額だけでは当期加算の根拠にならないとする",
+          "points": 2
+        },
+        {
+          "criterion": "前期申告/別表と資産別明細/台帳の二種類を挙げる",
+          "points": 2
+        }
+      ],
+      "explanation": "当期所得を変えて期首残高の誤りを埋めると、期間の誤りが広がります。前期からの引継ぎと当期の認容・超過を分けます。",
+      "id": "zr2-hojin-schedule-four-five-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    },
+    {
+      "prompt": "別表四と五（一）の転記に関する正しい説明を選んでください。",
+      "options": [
+        "留保減算は、仮払税金を含め例外なく五（一）の減少欄へ正数で移す",
+        "現金を支出した項目は全て社外流出となり、五（一）と無関係",
+        "仮払税金は減算でも五（一）の増加欄へ△記載するなど、項目ごとの記載要領を確認する",
+        "五（一）の合計が合えば、各資産の期首残高を変えてよい"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "通常の増減の対応だけでなく、仮払・未納・還付等の欄の性質と符号を確認します。合計一致だけで個々の残高の誤りが解消することもありません。",
+      "id": "zr2-hojin-schedule-four-five-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-schedule-four-five"
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "税目別納付/還付・消却の複合と税額算出",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-taxes-refunds",
+          "title": "租税公課・附帯税・還付・充当金",
+          "objectiveIds": [
+            "zr2-hojin-taxes-refunds-o01",
+            "zr2-hojin-taxes-refunds-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-rates-credit-order",
+          "title": "法人区分・短期税率・所得税額控除",
+          "objectiveIds": [
+            "zr2-hojin-rates-credit-order-o01",
+            "zr2-hojin-rates-credit-order-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-filing",
+          "title": "確定・中間・期限延長・還付",
+          "objectiveIds": [
+            "zr2-hojin-filing-o01",
+            "zr2-hojin-filing-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "資産処分・税効果・複数年総合",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-depreciation",
+          "title": "法定償却方法・供用月数・複数年",
+          "objectiveIds": [
+            "zr2-hojin-depreciation-o01",
+            "zr2-hojin-depreciation-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-bad-debts",
+          "title": "法律上・事実上・形式上の貸倒",
+          "objectiveIds": [
+            "zr2-hojin-bad-debts-o01",
+            "zr2-hojin-bad-debts-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-provision-rollforward",
+          "title": "引当戻入・貸倒・残高の複数年",
+          "objectiveIds": [
+            "zr2-hojin-provision-rollforward-o01",
+            "zr2-hojin-provision-rollforward-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-integration-domestic",
+          "title": "普通法人の決算と申告の全連動",
+          "objectiveIds": [
+            "zr2-hojin-integration-domestic-o01",
+            "zr2-hojin-integration-domestic-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    },
+    {
+      "topic": "再編/資本取引/通算の別表特則",
+      "plannedLessons": [
+        {
+          "id": "zr2-hojin-capital-refunds",
+          "title": "みなし配当・自己株式・資本払戻",
+          "objectiveIds": [
+            "zr2-hojin-capital-refunds-o01",
+            "zr2-hojin-capital-refunds-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-group-tax",
+          "title": "通算税額・控除・税効果額",
+          "objectiveIds": [
+            "zr2-hojin-group-tax-o01",
+            "zr2-hojin-group-tax-o02"
+          ],
+          "status": "planned-unwritten"
+        },
+        {
+          "id": "zr2-hojin-integration-reorg",
+          "title": "圧縮・資本関係・再編の複数年総合",
+          "objectiveIds": [
+            "zr2-hojin-integration-reorg-o01",
+            "zr2-hojin-integration-reorg-o02"
+          ],
+          "status": "planned-unwritten"
+        }
+      ]
+    }
+  ],
+  "selfReview": {
+    "role": "author-self-check",
+    "status": "pending-independent-review",
+    "reviewedOn": "2026-10-27",
+    "arithmetic": "全例題/設問を数値と年度条件から再計算。税額連動の仮定値は本文/設問で明示し実税率由来と主張しない。",
+    "rubricAlignment": "全記述問の要求（数値/理由/資料/照合）と各採点基準を照合済み。要求外の追加知識へ配点しない。",
+    "japanese": "本文全文を文脈確認しlint/outline/terms/calquesを実行。否定反復・登記簿/株主名簿の用語・資本金/資本金等の額を修正。残る法定条件の否定と統計警告は確認して保持。",
+    "schema": "ID重複・目標参照・配点合計・後続IDの解決を確認。独立レビューはpending。"
+  }
+}

@@ -23,6 +23,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
   const questions = Array.from(root.querySelectorAll<HTMLElement>('[data-question]'));
   const begin = el<HTMLButtonElement>('[data-assessment-begin]');
   const materials = root.querySelector<HTMLElement>('[data-assessment-materials]');
+  let materialQuestion: string | undefined;
   root.querySelectorAll<HTMLAnchorElement>('[data-open-material]').forEach((link) => {
     link.addEventListener('click', () => {
       const material = root.querySelector<HTMLDetailsElement>(`#material-${link.dataset.openMaterial}`);
@@ -162,6 +163,14 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     el('[data-assessment-questions]').hidden = false;
     el('[data-assessment-results]').hidden = true;
     if (materials) materials.hidden = false;
+    const currentQuestion = a.questions[attempt.cursor]!;
+    if (materialQuestion !== currentQuestion.id) {
+      for (const id of currentQuestion.materialIds ?? []) {
+        const material = materials?.querySelector<HTMLDetailsElement>(`#material-${id}`);
+        if (material) material.open = true;
+      }
+      materialQuestion = currentQuestion.id;
+    }
     questions.forEach((field, i) => {
       field.hidden = i !== attempt!.cursor;
       if (syncInputs)
@@ -495,6 +504,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
             : 'practice',
         );
     generation++;
+    materialQuestion = undefined;
     await persist(structuredClone(attempt));
     renderActive(true);
     interval = setInterval(tick, 1000);
@@ -516,6 +526,7 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
   });
   function initialize() {
     history();
+    materialQuestion = undefined;
     if (materials) materials.hidden = true;
     begin.disabled = false;
     el('[data-assessment-start]').hidden = false;

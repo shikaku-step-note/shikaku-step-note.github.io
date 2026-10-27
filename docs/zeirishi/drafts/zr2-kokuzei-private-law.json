@@ -646,5 +646,115 @@
       "proofreadJa": "助詞・主語・条番号・全角半角・附帯税・差押え/差押し等の表記を確認。独立校正はpending"
     },
     "teachingCharactersExcludingSourceSection": 4969
-  }
+  },
+  "continuationCoverage": [
+    {
+      "competency": "担保権・対抗要件と法定優先の個別適用",
+      "plannedLessonIds": [
+        "zr2-kokuzei-pledge-mortgage",
+        "zr2-kokuzei-privileges-liens",
+        "zr2-kokuzei-provisional-security"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "相続・承継と第二次義務の個別範囲",
+      "plannedLessonIds": [
+        "zr2-kokuzei-succession-inheritance",
+        "zr2-kokuzei-succession-trust-split",
+        "zr2-kokuzei-transferred-inherited",
+        "zr2-kokuzei-secondary-members-liquidators"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    }
+  ],
+  "scopeNotes": [
+    "私法の導入で各担保・承継制度の全法定優先や手続まで教えたとは数えない。continuationCoverage の実在する後続講で個別適用を扱う"
+  ],
+  "draftObjectiveDetails": [
+    {
+      "draftObjectiveId": "zr2-kokuzei-private-law-subskill-1",
+      "draftObjectiveIndex": 1,
+      "draftObjective": "所有権・占有・金銭債権を当事者ごとに区分し、滞納者に帰属する財産を特定する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o1"
+      ],
+      "plannedObjectives": [
+        "所有権と債権を当事者ごとに区別する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-private-law-q1",
+        "zr2-kokuzei-private-law-q2",
+        "zr2-kokuzei-private-law-q4"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-private-law-subskill-2",
+      "draftObjectiveIndex": 2,
+      "draftObjective": "権利移転と第三者対抗要件、借主と物上保証人、担保と所有権を区別する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o2"
+      ],
+      "plannedObjectives": [
+        "登記・対抗要件・有限無限責任・相続承継を事例へ適用する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-private-law-q3",
+        "zr2-kokuzei-private-law-q5",
+        "zr2-kokuzei-private-law-q6"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-private-law-subskill-3",
+      "draftObjectiveIndex": 3,
+      "draftObjective": "法人と出資者を区分し、有限責任社員の未履行出資による責任限度を計算する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o2"
+      ],
+      "plannedObjectives": [
+        "登記・対抗要件・有限無限責任・相続承継を事例へ適用する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-private-law-q7",
+        "zr2-kokuzei-private-law-q8",
+        "zr2-kokuzei-private-law-q11"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-private-law-subskill-4",
+      "draftObjectiveIndex": 4,
+      "draftObjective": "相続財産と固有財産、単純承認・限定承認・放棄を区別し国税承継へつなぐ",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-private-law-o2"
+      ],
+      "plannedObjectives": [
+        "登記・対抗要件・有限無限責任・相続承継を事例へ適用する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-private-law-q9",
+        "zr2-kokuzei-private-law-q10",
+        "zr2-kokuzei-private-law-q12"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    }
+  ]
 }

@@ -1,5 +1,6 @@
 import { bokiCourses, bokiReviewed } from './bookkeeping';
 import { zeirishiSubjects, zeirishiReviewed, zeirishiOutline } from './zeirishi';
+import { zeirishiDeepLessons } from './zeirishi-expanded';
 export interface Qualification {
   id: string;
   name: string;
@@ -29,7 +30,7 @@ export const qualifications: Qualification[] = [
     color: 'teal',
     icon: 'book',
     intro: '会計と税の仕組みを、一科目ずつ学ぶ。',
-    description: `簿記論・財務諸表論と9つの税法科目を、${zeirishiOutline.length}レッスンの基礎教材で学べます。科目別の用語確認・総復習・120分の独自基礎模試に取り組み、記録をブラウザに保存します。`,
+    description: `簿記論・財務諸表論と9つの税法科目の入門${zeirishiOutline.length}レッスン${zeirishiDeepLessons.length ? `と、詳しい学習${zeirishiDeepLessons.length}レッスン` : ''}。例題、計算と記述、用語・総合演習に取り組み、記録をブラウザに保存します。対応範囲は科目ごとに確認できます。`,
     audience: [
       '税理士試験の科目と学ぶ順序を確認したい方',
       '会計・税の計算を理由から理解したい方',

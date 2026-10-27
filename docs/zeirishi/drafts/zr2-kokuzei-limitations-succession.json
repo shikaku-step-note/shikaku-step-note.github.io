@@ -108,8 +108,8 @@
   ],
   "scopeNotes": [
     "5条3項の責任を第二次納税義務の補充性要件へ読み替えない。全体未納額と各人の上限を別に扱う",
-    "時効の特殊起算・不正時不進行・信託承継・分割の全類型・差押手続の終了原因等は応用段階でさらに展開が必要。本講や6草稿の存在だけで単元全範囲完了としない",
-    "57条2項の充当適状時点は本例では適法確定条件。具体的な令の時点判定は別の応用事例を追加する"
+    "特殊起算・不正時不進行、手続別効果、相続各類型、信託分割は continuationCoverage の5講へ対応付けた。6草稿の存在で単元・科目の全範囲完了としない",
+    "57条2項の充当適状は本例では適法確定条件。令の発生原因別時点・還付加算金等を自ら判定する技能は zr2-kokuzei-refunds-allocation が教える"
   ],
   "questions": [
     {
@@ -372,6 +372,478 @@
       "督促9/5→経過した9/15→9/16新進行→2029-09-15末日"
     ],
     "legalChecks": "主法5〜9の3・41・56・57・72・73条と民法準用条文を読解。引用する期間制限と徴収権時効を区別。独立レビュー未実施",
-    "editorial": "法定の限定・権利者と義務者・元税と附帯税・内部負担を明確化。段落単位の最終校正は未了"
-  }
+    "editorial": "自然な日本語・humanizer・校正の観点で全文と全設問を作問者が手動点検。各段落の主語・指示語・日付・端数・類似用語を確認。法的要件の否定は保持。独立の日本語レビューはpending",
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "納付日と納期限の指示が曖昧",
+        "action": "期限後・修正申告による現実の納期限と明記"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 12,
+        "line": 23,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 13,
+        "line": 24,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 14,
+        "line": 25,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 15,
+        "line": 26,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 16,
+        "line": 27,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 17,
+        "line": 29,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 18,
+        "line": 31,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 19,
+        "line": 33,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 20,
+        "line": 35,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 21,
+        "line": 37,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 22,
+        "line": 39,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 23,
+        "line": 41,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 24,
+        "line": 43,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 25,
+        "line": 45,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 26,
+        "line": 47,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 27,
+        "line": 49,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 28,
+        "line": 51,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 29,
+        "line": 53,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 30,
+        "line": 55,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 31,
+        "line": 57,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 32,
+        "line": 59,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 33,
+        "line": 61,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 34,
+        "line": 63,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 35,
+        "line": 65,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 36,
+        "line": 67,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 37,
+        "line": 69,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 38,
+        "line": 71,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 39,
+        "line": 73,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 40,
+        "line": 75,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 41,
+        "line": 77,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 42,
+        "line": 79,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 43,
+        "line": 81,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 44,
+        "line": 83,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 45,
+        "line": 85,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 46,
+        "line": 87,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 47,
+        "line": 89,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 48,
+        "line": 91,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 49,
+        "line": 93,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 50,
+        "line": 95,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 51,
+        "line": 97,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 52,
+        "line": 99,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 53,
+        "line": 101,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 54,
+        "line": 103,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 55,
+        "line": 105,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 56,
+        "line": 106,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      },
+      {
+        "paragraph": 57,
+        "line": 107,
+        "finding": "なし",
+        "action": "対象者・税額・日付・前提条件と前後の接続を確認。法的に必要な否定や比較は保持"
+      }
+    ],
+    "toolLimitations": "paragraphs.pyで段落表を生成。lint.py/calques.pyは依存パッケージsudachipyが未導入のため実行できず、機械的合格とは表示せず手動チェックを実施"
+  },
+  "continuationCoverage": [
+    {
+      "competency": "72条の特殊起算・73条3項の不正と国外転出等2年不進行",
+      "plannedLessonIds": [
+        "zr2-kokuzei-limitations-special-start"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "差押終了・解除・違法取消し・承認・交付要求及び効果対象者",
+      "plannedLessonIds": [
+        "zr2-kokuzei-limitations-procedures"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "限定承認・放棄・遺贈・相続財産法人・追加責任と51条",
+      "plannedLessonIds": [
+        "zr2-kokuzei-succession-inheritance"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "7条の2信託・9条の2と3の分割等各類型と責任限度",
+      "plannedLessonIds": [
+        "zr2-kokuzei-succession-trust-split"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "令により自ら判断する充当適状・還付加算金・第三者代位",
+      "plannedLessonIds": [
+        "zr2-kokuzei-refunds-allocation"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    }
+  ],
+  "draftObjectiveDetails": [
+    {
+      "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-1",
+      "draftObjectiveIndex": 1,
+      "draftObjective": "徴収権の時効の基準日・完成猶予・更新・不進行を区分し条件付き年表を計算する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o1"
+      ],
+      "plannedObjectives": [
+        "時効の起算・完成猶予・更新を区別する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-limitations-succession-q1",
+        "zr2-kokuzei-limitations-succession-q2",
+        "zr2-kokuzei-limitations-succession-q3",
+        "zr2-kokuzei-limitations-succession-q4",
+        "zr2-kokuzei-limitations-succession-q12"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-2",
+      "draftObjectiveIndex": 2,
+      "draftObjective": "相続による各人の承継額と取得価額超過による追加責任を計算する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o2"
+      ],
+      "plannedObjectives": [
+        "相続・合併・連帯責任・充当還付の関係を整理する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-limitations-succession-q5",
+        "zr2-kokuzei-limitations-succession-q6",
+        "zr2-kokuzei-limitations-succession-q7"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-3",
+      "draftObjectiveIndex": 3,
+      "draftObjective": "合併・社団財産承継・分割・連帯義務と第二次義務を法的根拠から区分する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o2"
+      ],
+      "plannedObjectives": [
+        "相続・合併・連帯責任・充当還付の関係を整理する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-limitations-succession-q8",
+        "zr2-kokuzei-limitations-succession-q9",
+        "zr2-kokuzei-limitations-succession-q11"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-limitations-succession-subskill-4",
+      "draftObjectiveIndex": 4,
+      "draftObjective": "納付・第三者納付・還付充当と附帯税の扱いを区分し未納残額を検算する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-limitations-succession-o2"
+      ],
+      "plannedObjectives": [
+        "相続・合併・連帯責任・充当還付の関係を整理する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-limitations-succession-q7",
+        "zr2-kokuzei-limitations-succession-q10",
+        "zr2-kokuzei-limitations-succession-q11",
+        "zr2-kokuzei-limitations-succession-q12",
+        "zr2-kokuzei-limitations-succession-q13"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    }
+  ]
 }

@@ -80,7 +80,7 @@
     }
   ],
   "scopeNotes": [
-    "全差押要件・法定納期限等の詳細・第二次義務の各限度は後続独立講へ接続する。導入だけで範囲を閉じない",
+    "全差押要件は zr2-kokuzei-seizure-common、法定納期限等は zr2-kokuzei-statutory-dates、第二次義務の各限度は zr2-kokuzei-secondary-common 以後の5講へ接続する。概観への言及を適用技能の修得と数えない",
     "元資料と数値は独自。公式の非公表採点基準を用いていない"
   ],
   "questions": [
@@ -655,5 +655,119 @@
       "proofreadJa": "助詞・主語・条番号・全角半角・附帯税・差押え/差押し等の表記を確認。独立校正はpending"
     },
     "teachingCharactersExcludingSourceSection": 4875
-  }
+  },
+  "continuationCoverage": [
+    {
+      "competency": "全差押要件と差押可能範囲",
+      "plannedLessonIds": [
+        "zr2-kokuzei-seizure-common",
+        "zr2-kokuzei-excess-surplus"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "税額別法定納期限等と優先順位",
+      "plannedLessonIds": [
+        "zr2-kokuzei-statutory-dates",
+        "zr2-kokuzei-priority-general"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    },
+    {
+      "competency": "第二次義務の要件・各責任限度",
+      "plannedLessonIds": [
+        "zr2-kokuzei-secondary-common",
+        "zr2-kokuzei-secondary-members-liquidators",
+        "zr2-kokuzei-secondary-companies-joint",
+        "zr2-kokuzei-secondary-business-transfers",
+        "zr2-kokuzei-secondary-fraud-associations"
+      ],
+      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+    }
+  ],
+  "draftObjectiveDetails": [
+    {
+      "draftObjectiveId": "zr2-kokuzei-framework-subskill-1",
+      "draftObjectiveIndex": 1,
+      "draftObjective": "徴収法上の国税・地方税・公課と本税・附帯税・滞納処分費を具体例で区分する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-framework-o1"
+      ],
+      "plannedObjectives": [
+        "国税・地方税・公課と徴収の所轄を区別する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-framework-q1",
+        "zr2-kokuzei-framework-q3",
+        "zr2-kokuzei-framework-q4"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-framework-subskill-2",
+      "draftObjectiveIndex": 2,
+      "draftObjective": "納税者・滞納者・第二次納税義務者・保証人・第三債務者を事実関係から特定する",
+      "plannedObjectiveIndexes": [
+        2
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-framework-o2"
+      ],
+      "plannedObjectives": [
+        "本来納税者・第二次納税義務者・第三者の立場を特定する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-framework-q2",
+        "zr2-kokuzei-framework-q8",
+        "zr2-kokuzei-framework-q9",
+        "zr2-kokuzei-framework-q11"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-framework-subskill-3",
+      "draftObjectiveIndex": 3,
+      "draftObjective": "現在の納税地による原則、税関の例外、適法な徴収引継ぎを区別する",
+      "plannedObjectiveIndexes": [
+        1
+      ],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-framework-o1"
+      ],
+      "plannedObjectives": [
+        "国税・地方税・公課と徴収の所轄を区別する"
+      ],
+      "relationship": "component_of_broader_planned_objective",
+      "questionEvidence": [
+        "zr2-kokuzei-framework-q6",
+        "zr2-kokuzei-framework-q7",
+        "zr2-kokuzei-framework-q12"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review"
+    },
+    {
+      "draftObjectiveId": "zr2-kokuzei-framework-subskill-4",
+      "draftObjectiveIndex": 4,
+      "draftObjective": "国税優先と私法上の権利の調整を説明し、優先が明示された例の配当と残額を計算する",
+      "plannedObjectiveIndexes": [],
+      "plannedObjectiveIds": [
+        "zr2-kokuzei-priority-general-o1"
+      ],
+      "plannedObjectives": [
+        "一般優先と強制換価費用・直接滞納処分費を区別する"
+      ],
+      "relationship": "supplemental_prerequisite_evidence_for_later_lesson_not_completion",
+      "questionEvidence": [
+        "zr2-kokuzei-framework-q5",
+        "zr2-kokuzei-framework-q10"
+      ],
+      "completionStatus": "evidence_proposed_pending_independent_review",
+      "mappingReason": "枠組み草稿の優先・配当導入は、この講の二つの計画目標そのものには含まれない。国税等の区分や当事者特定へ無理に対応付けず、後続優先講の補助証拠として保持"
+    }
+  ]
 }

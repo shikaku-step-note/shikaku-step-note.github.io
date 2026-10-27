@@ -1,0 +1,816 @@
+{
+  "id": "zr2-shotoku-scope-glossary",
+  "title": "所得税の出発点：場面から用語の意味を確かめる",
+  "kind": "glossary",
+  "version": "zeirishi-2026-v2-draft-shotoku-scope-1",
+  "qualification": "zeirishi",
+  "unit": 3,
+  "moduleId": "zr2-shotoku-unit-scope",
+  "minutes": 35,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "countsAsIndependentApplication": false,
+  "assessmentPurpose": "用語を文脈に即して区別する確認。独立計算・法的適用の習得証拠とは別に集計する。",
+  "instructions": "場面の中で使われる用語の意味を選んでください。似た言葉との違いも解説で確認します。2026年4月3日現在施行版を参照した独自の用語確認です。定義確認を中心とするため、これだけで独立した応用問題を修了したとは扱いません。",
+  "fieldNames": {
+    "shotoku": "所得税法"
+  },
+  "questions": [
+    {
+      "id": "zr2-shotoku-scope-glossary-q1",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        1
+      ],
+      "prompt": "個人、法人等の資料を読み、税法によりだれが所得税を納める義務を負うかを整理している。この『義務を負う人や法人等』を示す語はどれですか。",
+      "options": [
+        "納税義務者",
+        "納税地",
+        "税額控除",
+        "税率区分"
+      ],
+      "answer": 0,
+      "explanation": "納税義務者は税法により税を納める義務を負う主体です。納税地は場所、税額控除は税額計算上差し引く制度、税率区分は適用する率の区分を示し、主体の名称とは異なります。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q2",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        2
+      ],
+      "prompt": "申告書をどの税務署長へ提出するかを決めるため、住所地等の規定で基準となる場所を特定した。この制度上の場所の名称を選んでください。",
+      "options": [
+        "所得発生地",
+        "納税地",
+        "本籍地",
+        "取引相手所在地"
+      ],
+      "answer": 1,
+      "explanation": "納税地は申告先等を決める基準となる場所です。所得発生地は取引の発生場所で、納税地と一致するとは限りません。本籍地や取引相手所在地も、それ自体で所得税の納税地となる制度ではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q3",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        2
+      ],
+      "prompt": "納税者が計算して提出する申告によって、納めるべき税額を確定することを原則とする方式の名称を選んでください。",
+      "options": [
+        "総合課税",
+        "源泉分離課税",
+        "申告納税方式",
+        "賦課課税方式"
+      ],
+      "answer": 2,
+      "explanation": "申告納税方式は納税者の申告による税額確定を原則とします。賦課課税方式は原則として行政庁の処分により確定します。総合課税と源泉分離課税は所得の税額計算等の方式に関する区分で、同じ分類軸ではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q4",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        2
+      ],
+      "prompt": "通常の年間所得税について、暦年の終了という法律上の事実により抽象的な税の義務が生じた。この段階の名称を選んでください。",
+      "options": [
+        "納付",
+        "更正",
+        "税額の確定",
+        "納税義務の成立"
+      ],
+      "answer": 3,
+      "explanation": "納税義務の成立は、課税の事実が満たされ抽象的な義務が生じる段階です。税額の確定は納める額が定まる段階、納付は支払、更正は申告税額等を税務署長等が訂正する処分で、区別します。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q5",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-taxpayer",
+      "objectives": [
+        2
+      ],
+      "prompt": "勤務先が給与を支払う際に所得税を差し引き、後に国へ納付する。この徴収の仕組みの名称を選んでください。",
+      "options": [
+        "源泉徴収",
+        "源泉分離課税",
+        "所得控除",
+        "予定納税"
+      ],
+      "answer": 0,
+      "explanation": "源泉徴収は支払者が一定の所得の支払時に税を徴収する仕組みです。源泉分離課税は原則として所定の徴収で課税関係を完結させる方式なので、給与の徴収と同義ではありません。所得控除は総所得金額等から差し引く法定の控除、予定納税は所定の税額を事前に納める制度です。",
+      "objectiveIds": [
+        "zr2-shotoku-taxpayer-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q6",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        1
+      ],
+      "prompt": "家族、職業、住居などの客観的事実から、ある人の生活の本拠が国内にあると認められた。この生活の本拠を示す所得税法上の語を選んでください。",
+      "options": [
+        "勤務先",
+        "住所",
+        "居所",
+        "国籍"
+      ],
+      "answer": 1,
+      "explanation": "住所は生活の本拠です。居所は現実に居住するものの本拠とまではいえない場所です。勤務先や国籍は判定の資料等になることがありますが、住所の定義そのものとは異なります。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q7",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        1
+      ],
+      "prompt": "現実に一定期間暮らしているが、その人の生活の本拠という程度には至らない場所を、住所と区別して呼ぶ語を選んでください。",
+      "options": [
+        "納税義務者",
+        "本籍",
+        "居所",
+        "源泉地"
+      ],
+      "answer": 2,
+      "explanation": "居所は、現実に居住するが生活の本拠にまでは至らない場所です。本籍は戸籍上の所在地、源泉地は所得が生じる場所に関する概念、納税義務者は主体の名称で、居住場所の意味を持ちません。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q8",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        1
+      ],
+      "prompt": "居住者のうち、日本国籍がなく、過去10年以内の国内住所・居所期間の合計が5年以下である個人を示す所得税法上の名称を選んでください。",
+      "options": [
+        "非居住者",
+        "外国法人",
+        "短期居所者",
+        "非永住者"
+      ],
+      "answer": 3,
+      "explanation": "非永住者は居住者の中の区分です。非居住者は居住者以外の個人、外国法人は法人の区分で別の主体です。短期居所者は、この定義に当たる所得税法上の区分名ではありません。在留資格名との区別も必要です。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q9",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        2
+      ],
+      "prompt": "国外不動産の貸付け等について、税法が国外に源泉を認める所得の分類を調べている。この分類名を選んでください。支払口座の場所だけで決める分類ではありません。",
+      "options": [
+        "国外源泉所得",
+        "国外払所得",
+        "非課税所得",
+        "源泉徴収税額"
+      ],
+      "answer": 0,
+      "explanation": "国外源泉所得は、法令が国外に源泉を認める所得です。国外払は支払場所の区分で、源泉の場所と別に記録します。非課税所得は課税しない規定のある所得、源泉徴収税額は徴収された税の額を示します。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q10",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-residence",
+      "objectives": [
+        2
+      ],
+      "prompt": "非永住者の送金判定で、国外源泉所得『以外』の所得をひとまとまりに呼ぶ。通達で使う名称を選んでください。",
+      "options": [
+        "非課税所得",
+        "非国外源泉所得",
+        "源泉分離所得",
+        "国外払所得"
+      ],
+      "answer": 1,
+      "explanation": "非国外源泉所得は国外源泉所得以外の所得です。非課税という意味ではありません。国外払は支払場所で、非国外源泉所得にも国外払があり得ます。源泉分離は課税方式で、この源泉分類とは別です。",
+      "objectiveIds": [
+        "zr2-shotoku-residence-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q11",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        1
+      ],
+      "prompt": "資産や事業の収益について、法律上の帰属者とみられる人が単なる名義人で収益を享受せず、別の人が享受する。その享受する人へ帰属させる所得税法12条の原則名を選んでください。",
+      "options": [
+        "損益通算",
+        "申告不要制度",
+        "実質所得者課税の原則",
+        "源泉徴収"
+      ],
+      "answer": 2,
+      "explanation": "実質所得者課税の原則は収益の帰属者を決める原則です。損益通算は所定所得の損失と他の所得の計算、申告不要は所定所得の申告の取扱い、源泉徴収は徴収の仕組みです。帰属を税率の低い人へ任意に移す制度ではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q12",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        1
+      ],
+      "prompt": "資産収益の帰属を調べるため、収益の原因となる資産について実際の権利を有する人を特定する。この人を通達の表現で選んでください。",
+      "options": [
+        "受領代行者",
+        "家計の支出担当者",
+        "最初の購入者に常に固定される人",
+        "真実の権利者"
+      ],
+      "answer": 3,
+      "explanation": "真実の権利者は原因資産の権利を実際に有する人です。受領代理や家計管理はその役割だけで権利者にはなりません。最初の購入後に有効な権利移転があれば、対象年の権利者も変わり得ます。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q13",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        1
+      ],
+      "prompt": "事業の所得帰属について、事業を経営していると認められる人を調べる。親族間では経営方針の決定への支配的影響力等も確かめる。この人の呼称を選んでください。",
+      "options": [
+        "事業主",
+        "受託者",
+        "納税地",
+        "保証人"
+      ],
+      "answer": 0,
+      "explanation": "事業主は事業を経営していると認められる人です。受託者は信託を管理する役割、保証人は他人の債務を保証する立場、納税地は場所です。店舗で働くことと事業主かどうかは、経営全体の事実で調べます。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q14",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        2
+      ],
+      "prompt": "所得税法13条により、受益者等が信託財産の資産・負債を有するとみなされ、収益・費用もその人に帰属する信託の名称を選んでください。",
+      "options": [
+        "法人課税信託",
+        "受益者等課税信託",
+        "退職年金等信託",
+        "集団投資信託"
+      ],
+      "answer": 1,
+      "explanation": "受益者等課税信託がこの原則の対象です。集団投資信託、退職年金等信託、法人課税信託は同条の原則から除かれる区分で、同じ帰属方法を全てへ適用することはできません。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q15",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-attribution",
+      "objectives": [
+        2
+      ],
+      "prompt": "信託契約に基づき、財産の管理・処分等を担う人を指す用語を選んでください。受益者等課税信託で所得が帰属する人と、役割を分けて確認します。",
+      "options": [
+        "受益者",
+        "納税管理人",
+        "受託者",
+        "組合員"
+      ],
+      "answer": 2,
+      "explanation": "受託者は信託財産を管理・処分等する役割です。受益者は信託上の受益権を持つ人、納税管理人は納税関係手続を担う別の制度上の役割、組合員は組合の構成員です。名称だけで所得帰属を同一視しません。",
+      "objectiveIds": [
+        "zr2-shotoku-attribution-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q16",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1
+      ],
+      "prompt": "所定の心身の損害賠償金について、法律により所得税を課さないと判定した。この所得の呼称を選んでください。",
+      "options": [
+        "所得控除",
+        "特別控除後の所得",
+        "申告分離所得",
+        "非課税所得"
+      ],
+      "answer": 3,
+      "explanation": "非課税所得は法律により所得税を課さない所得です。所得控除や特別控除は計算上差し引く制度で、控除後にゼロになる所得とは理由が異なります。申告分離は課税方式で、課税しないという意味ではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q17",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1
+      ],
+      "prompt": "医療費や仮店舗の家賃等について、その支出や損害を埋め合わせる性質の金額を受けた。何を埋め合わせるかにより取扱いを調べる。この金額を一般に呼ぶ語を選んでください。",
+      "options": [
+        "補填金",
+        "給与所得控除",
+        "納税充当金",
+        "貸付元本"
+      ],
+      "answer": 0,
+      "explanation": "補填金は損害や支出等を埋め合わせる金額です。給与所得控除は給与の所得計算上の控除、納税充当金は税金納付に備える会計上の計上等の用語、貸付元本は貸した本体額で、この補填目的とは区別します。補填金が全て非課税という意味でもありません。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q18",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1
+      ],
+      "prompt": "業務用機械の滅失により生じた損失について、補償額を差し引き、必要経費に算入できる残額を確認している。この元の損失の種類を示す語を選んでください。",
+      "options": [
+        "所得控除",
+        "資産損失",
+        "税額控除",
+        "予定納税"
+      ],
+      "answer": 1,
+      "explanation": "資産損失は資産の損壊・滅失等による損失です。必要経費算入には対象資産や補填等の条件があります。所得控除と税額控除はそれぞれ所得・税額からの法定控除、予定納税は事前の納税で、損失自体の名称ではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q19",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1
+      ],
+      "prompt": "通常の生活で使う家具や衣服等について、所定の譲渡非課税の対象を調べる。こうした資産の呼称を選んでください。高額貴金属等の除外は別に確認します。",
+      "options": [
+        "棚卸資産",
+        "すべての固定資産",
+        "生活用動産",
+        "投資用土地"
+      ],
+      "answer": 2,
+      "explanation": "生活用動産は生活に通常必要な動産です。棚卸資産は商品等で、投資用土地は動産ではありません。固定資産という広い分類だけでは生活用の条件を満たすといえず、品目・価額等の例外も確認します。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q20",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-nontaxable",
+      "objectives": [
+        1,
+        2
+      ],
+      "prompt": "一時所得を計算し、収入から直接支出を引いた残額について、最高50万円を所定の範囲で差し引いた。この差引きの呼称を選んでください。",
+      "options": [
+        "非課税所得",
+        "外国税額控除",
+        "源泉徴収税額",
+        "特別控除"
+      ],
+      "answer": 3,
+      "explanation": "この差引きは一時所得の特別控除です。収入自体が非課税となったものではありません。外国税額控除は所定の外国税の二重課税調整、源泉徴収税額は既に徴収された税で、この所得計算の控除とは別です。",
+      "objectiveIds": [
+        "zr2-shotoku-nontaxable-o01",
+        "zr2-shotoku-nontaxable-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q21",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        1
+      ],
+      "prompt": "受取金が給料、賃料、商品の売上のどれかを調べ、給与・不動産・事業等の十種類へ分類している。この分類の呼称を選んでください。",
+      "options": [
+        "所得区分",
+        "納税地",
+        "申告納税方式",
+        "居住区分"
+      ],
+      "answer": 0,
+      "explanation": "所得区分は所得の原因等に応じた十種類の分類です。居住区分は納税義務者の住所・居所等による区分、納税地は場所、申告納税方式は税額確定方式で、それぞれ別の段階です。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q22",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        2
+      ],
+      "prompt": "対象となる給与・事業等の所得を所定の計算で合計し、所得控除等を経て累進税率等で税額を求める。この課税方式の名称を選んでください。",
+      "options": [
+        "源泉分離課税",
+        "総合課税",
+        "申告分離課税",
+        "非課税"
+      ],
+      "answer": 1,
+      "explanation": "総合課税は所定の所得を合計して計算する方式です。申告分離は他の所得と分けた計算、源泉分離は原則として所定の徴収で完結する方式、非課税は課税しない規定による所得です。総合でも赤字を自由に全て通算できるとは限りません。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q23",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        2
+      ],
+      "prompt": "土地等の譲渡所得について、他の所得と分けた計算系列で申告し税額を計算する。この方式の名称を選んでください。",
+      "options": [
+        "非課税所得",
+        "源泉徴収",
+        "申告分離課税",
+        "総合課税"
+      ],
+      "answer": 2,
+      "explanation": "申告分離課税は他の所得と税額計算を分ける方式です。総合課税とは計算系列が異なります。源泉徴収は徴収の仕組みで、分離の同義語ではありません。非課税とも異なり、人的控除の所得要件等へ影響する場合があります。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q24",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        2
+      ],
+      "prompt": "通常の国内預金利子等について、原則として所定の源泉徴収で課税関係を完結させる方式の名称を選んでください。",
+      "options": [
+        "申告納税方式",
+        "総合課税",
+        "申告分離課税",
+        "源泉分離課税"
+      ],
+      "answer": 3,
+      "explanation": "源泉分離課税は原則として所定の徴収で完結します。申告分離は別の申告計算系列、総合課税は対象所得の合計による計算です。申告納税方式は税額確定の分類で、源泉分離という所得の課税方式と同じ分類軸ではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o02"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q25",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        1
+      ],
+      "prompt": "他の所定所得には該当せず、継続的営利行為以外の一時の利益で、役務や資産譲渡の対価でもない、所定の懸賞賞金等を区分する。この所得区分を選んでください。",
+      "options": [
+        "一時所得",
+        "譲渡所得",
+        "給与所得",
+        "利子所得"
+      ],
+      "answer": 0,
+      "explanation": "これらの要件に当たるのは一時所得です。役務の対価である給与、資産譲渡の所得、所定の金融商品の利子とは原因が異なります。一回の入金という事実だけで一時所得を決めるものではありません。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o01"
+      ]
+    },
+    {
+      "id": "zr2-shotoku-scope-glossary-q26",
+      "field": "shotoku",
+      "lesson": "zr2-shotoku-income-map",
+      "objectives": [
+        1
+      ],
+      "prompt": "公的年金等や非営業用貸金利子等について、ほかの九所得のいずれにも該当しない所得として区分する。この名称を選んでください。",
+      "options": [
+        "配当所得",
+        "雑所得",
+        "山林所得",
+        "事業所得"
+      ],
+      "answer": 1,
+      "explanation": "雑所得は他の九所得に該当しない所得です。配当、山林、事業等はそれぞれ固有の原因・条件を持ちます。雑所得の中でも公的年金等とそれ以外等では計算規定を分ける必要があり、すべて同じ控除とはなりません。",
+      "objectiveIds": [
+        "zr2-shotoku-income-map-o01"
+      ]
+    }
+  ],
+  "sourceCandidates": [
+    {
+      "id": "income-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000033_20260401_508AC0000000012",
+      "applicableVersion": "2026-04-03施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "12条、13条1〜4項。既存取得JSONのMainProvisionを確認"
+        },
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "21〜24条、26〜28条、30条、32〜35条。23/24/26/27/28/30/32/33/34/35のMainProvision本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "9条1項9・17・18号、34条、36条、51条、73条。凍結版9条該当号本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "2条1項3〜5号、7条、95条、161条。主に2条・7条を凍結版JSONで照合"
+        },
+        {
+          "lesson": "zr2-shotoku-taxpayer",
+          "location": "2条1項3〜5号、5条、7条、15〜16条、21条。既存取得JSONのMainProvisionを確認"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-attribution-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/01.htm",
+      "applicableVersion": "現行掲載を参照。独立の通達改正履歴照合はpending",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "12-1、12-2、12-5。資産の権利者、事業主、親族間の事業主判定"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-trust-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/03/02.htm",
+      "applicableVersion": "現行掲載。基準日以前の改正記載を照合",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "13-1〜13-4。受益者、各年分、収益費用、権利内容。参照段落の記載改正は2007年"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-partnership-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/05/16.htm",
+      "applicableVersion": "現行掲載。基準日前の記載改正を確認",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "36・37共-19、19の2、20、21。参照部分の改正記載は2005/2012年等"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000096_20260401_508CO0000000093",
+      "applicableVersion": "2026-04-03指定APIの2026-04-01施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-attribution",
+          "location": "52条4項。複数受益者の権利内容に応じた資産/負債/収益/費用帰属。凍結API本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "25条、30条全号、94条。4月3日指定API取得JSONのMainProvision本文を読了"
+        },
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "14〜15条、17条1〜4項。2026-04-03指定API取得JSONのMainProvision本文を読み、17条4項1〜6号の順序・金額・期間を照合"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "special-law",
+      "url": "https://laws.e-gov.go.jp/law/332AC0000000026_20260401_508AC0000000012",
+      "applicableVersion": "2026-04-03施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "3条1項、8の4第1〜2項、8の5第1〜2項、37の12の2第1〜2項の凍結本文を読了。土地株式等の個別特例は後続へ"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-finance-2025-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/pdf/Q/Q1.pdf",
+      "applicableVersion": "2025年分",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "VII上場株式等の配当等の課税関係、総合/申告分離/不要、通算と配当控除"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-forest",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1480.htm",
+      "applicableVersion": "現行補助解説。2026-04-03施行法を優先",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-income-map",
+          "location": "山林5年、土地部分、山林所得の計算。凍結32/33条と照合"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-damages",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1700.htm",
+      "applicableVersion": "現行補助解説。施行済み凍結法令を優先",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "身体傷害、棚卸資産、仮店舗家賃、廃車補償、医療費補填。凍結法令30/94条と照合"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-suspension-pay",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1905.htm",
+      "applicableVersion": "令和8年4月1日現在法令等と表示。独立した関係労働法の確認はpending",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-nontaxable",
+          "location": "労基法26条休業手当と76条等の休業補償。補助解説"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-residence-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/01/01.htm",
+      "applicableVersion": "現行掲載を参照。記載改正日と凍結法2条を照合",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "2-1〜2-4の3。参照段落の改正記載は2006年等の基準日前"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-remittance-circular",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/02/01.htm",
+      "applicableVersion": "現行掲載。基準日後の改正記載を参照段落で認めず。独立の履歴照合はpending",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "7-2〜7-6。参照段落は2017年等の改正記載。所得/支払地/送金の順序"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-nonresident-2025-guide",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2025/pdf/060.pdf",
+      "applicableVersion": "2025年分。2026年4月3日前の適用年の補助資料",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-residence",
+          "location": "非居住者の手引き・課税所得の範囲、送金の順序"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "applicableVersion": "2026-04-03施行版",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-taxpayer",
+          "location": "15条1項・2項1/2号・3項2号、16条、21条"
+        }
+      ],
+      "independentReview": "pending"
+    },
+    {
+      "id": "income-tax-place",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2029.htm",
+      "applicableVersion": "現行ページの補助解説。4月3日基準の法令を優先",
+      "locations": [
+        {
+          "lesson": "zr2-shotoku-taxpayer",
+          "location": "主な納税地、納税地の特例、変更後の申告書による変更。法令本文と照合"
+        }
+      ],
+      "independentReview": "pending"
+    }
+  ],
+  "lessonTitles": {
+    "zr2-shotoku-taxpayer": "納税義務者・課税単位・納税地",
+    "zr2-shotoku-residence": "居住履歴と送金",
+    "zr2-shotoku-attribution": "所得の帰属",
+    "zr2-shotoku-nontaxable": "非課税の判断",
+    "zr2-shotoku-income-map": "十所得と課税方式"
+  },
+  "objectiveCoverage": {
+    "zr2-shotoku-attribution-o01": [
+      "zr2-shotoku-scope-glossary-q11",
+      "zr2-shotoku-scope-glossary-q12",
+      "zr2-shotoku-scope-glossary-q13"
+    ],
+    "zr2-shotoku-attribution-o02": [
+      "zr2-shotoku-scope-glossary-q14",
+      "zr2-shotoku-scope-glossary-q15"
+    ],
+    "zr2-shotoku-income-map-o01": [
+      "zr2-shotoku-scope-glossary-q21",
+      "zr2-shotoku-scope-glossary-q25",
+      "zr2-shotoku-scope-glossary-q26"
+    ],
+    "zr2-shotoku-income-map-o02": [
+      "zr2-shotoku-scope-glossary-q22",
+      "zr2-shotoku-scope-glossary-q23",
+      "zr2-shotoku-scope-glossary-q24"
+    ],
+    "zr2-shotoku-nontaxable-o01": [
+      "zr2-shotoku-scope-glossary-q16",
+      "zr2-shotoku-scope-glossary-q17",
+      "zr2-shotoku-scope-glossary-q18",
+      "zr2-shotoku-scope-glossary-q19",
+      "zr2-shotoku-scope-glossary-q20"
+    ],
+    "zr2-shotoku-nontaxable-o02": [
+      "zr2-shotoku-scope-glossary-q20"
+    ],
+    "zr2-shotoku-residence-o01": [
+      "zr2-shotoku-scope-glossary-q6",
+      "zr2-shotoku-scope-glossary-q7",
+      "zr2-shotoku-scope-glossary-q8"
+    ],
+    "zr2-shotoku-residence-o02": [
+      "zr2-shotoku-scope-glossary-q9",
+      "zr2-shotoku-scope-glossary-q10"
+    ],
+    "zr2-shotoku-taxpayer-o01": [
+      "zr2-shotoku-scope-glossary-q1"
+    ],
+    "zr2-shotoku-taxpayer-o02": [
+      "zr2-shotoku-scope-glossary-q2",
+      "zr2-shotoku-scope-glossary-q3",
+      "zr2-shotoku-scope-glossary-q4",
+      "zr2-shotoku-scope-glossary-q5"
+    ]
+  },
+  "selfReview": {
+    "reviewedOn": "2026-10-27",
+    "role": "author-self-check",
+    "rubricAlignment": "全記述問について設問要求と各criterionを照合。追加要求が必要な6問の設問/基準を明確化。独立レビューはpending",
+    "arithmetic": "全数値例題・設問を別計算で照合",
+    "status": "pending-independent-review",
+    "japanese": "natural-japaneseのlint/outline/terms/calquesを本文5本と評価文へ実行し、全文を文脈確認。繰返し否定・直訳調を修正。統計的な語彙/文長の警告、法定用語、誤答選択肢の否定、数学の足す/引く等は意味を確認して保持。独立レビュー状態は変更しない。",
+    "schema": "全101問題IDの重複なし、全記述ルーブリック配点合計、各問のobjective参照、25問復習の資料/表参照と10目標の被覆、レッスン設問の完全一致再利用ゼロを確認"
+  }
+}

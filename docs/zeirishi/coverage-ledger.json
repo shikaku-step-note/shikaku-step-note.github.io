@@ -2,14 +2,14 @@
   "status": "in-progress",
   "scope": {
     "subjects": 11,
-    "units": 111,
-    "lessons": 559,
-    "objectives": 1119,
+    "units": 113,
+    "lessons": 570,
+    "objectives": 1147,
     "fullMockBlueprints": 22
   },
-  "implementedLessons": 0,
-  "fullyReviewedLessons": 0,
-  "fullyReviewedObjectives": 0,
+  "implementedLessons": 5,
+  "fullyReviewedLessons": 5,
+  "fullyReviewedObjectives": 10,
   "reviewedFullMocks": 0,
   "errors": [],
   "lessons": [
@@ -19,6 +19,7 @@
       "unit": "zr2-boki-unit-records",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -55,6 +56,7 @@
       "unit": "zr2-boki-unit-records",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -91,6 +93,7 @@
       "unit": "zr2-boki-unit-records",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -127,6 +130,7 @@
       "unit": "zr2-boki-unit-records",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -163,6 +167,7 @@
       "unit": "zr2-boki-unit-records",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -199,6 +204,7 @@
       "unit": "zr2-boki-unit-records",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -226,6 +232,19 @@
             "japaneseReview": false
           },
           "complete": false
+        },
+        {
+          "id": "zr2-boki-interest-present-value-o3",
+          "text": "測定目的に応じた割引の要否と使用率の条件を確認する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
         }
       ]
     },
@@ -235,6 +254,7 @@
       "unit": "zr2-boki-unit-records",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -271,6 +291,7 @@
       "unit": "zr2-boki-unit-cash",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -307,6 +328,7 @@
       "unit": "zr2-boki-unit-cash",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -343,6 +365,7 @@
       "unit": "zr2-boki-unit-cash",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -374,11 +397,62 @@
       ]
     },
     {
+      "id": "zr2-boki-documentary-bills",
+      "subject": "boki",
+      "unit": "zr2-boki-unit-cash",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-boki-documentary-bills-o1",
+          "text": "為替手形の振出人・支払人・受取人の立場と原債権債務を特定し、引受・裏書・取立てを記録する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-documentary-bills-o2",
+          "text": "荷為替の取組額、銀行手取額、留保する掛代金を区分して、消滅と保証責任を確認する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-documentary-bills-o3",
+          "text": "外貨建て荷為替の取組・割引料・円貨入金と残る外貨売掛金の期末換算を統合する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
       "id": "zr2-boki-receivable-transfers",
       "subject": "boki",
       "unit": "zr2-boki-unit-cash",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -406,6 +480,32 @@
             "japaneseReview": false
           },
           "complete": false
+        },
+        {
+          "id": "zr2-boki-receivable-transfers-o3",
+          "text": "消滅に伴う保証債務・新たな対価資産を区分して譲渡損益を求める",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-boki-receivable-transfers-o4",
+          "text": "一部譲渡・留保回収サービス権の原価配分と残存帳簿価額を求める",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
         }
       ]
     },
@@ -415,6 +515,7 @@
       "unit": "zr2-boki-unit-cash",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -451,6 +552,7 @@
       "unit": "zr2-boki-unit-cash",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -487,6 +589,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -523,6 +626,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -559,6 +663,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -595,6 +700,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -631,6 +737,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -667,6 +774,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -703,6 +811,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -739,6 +848,7 @@
       "unit": "zr2-boki-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -775,6 +885,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -811,6 +922,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -847,6 +959,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -883,6 +996,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -919,6 +1033,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -955,6 +1070,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -991,6 +1107,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1027,6 +1144,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1063,6 +1181,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1099,6 +1218,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1135,6 +1255,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1171,6 +1292,7 @@
       "unit": "zr2-boki-unit-fixed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1207,6 +1329,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1243,6 +1366,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1279,6 +1403,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1315,6 +1440,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1351,6 +1477,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1387,6 +1514,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1414,6 +1542,19 @@
             "japaneseReview": false
           },
           "complete": false
+        },
+        {
+          "id": "zr2-boki-loans-derecognition-o3",
+          "text": "回収サービス資産負債と残存部分を区別し、対価・原価配分・残高又は件数に比例した償却を計算する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
         }
       ]
     },
@@ -1423,6 +1564,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1459,6 +1601,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1495,6 +1638,7 @@
       "unit": "zr2-boki-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1531,6 +1675,7 @@
       "unit": "zr2-boki-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1567,6 +1712,7 @@
       "unit": "zr2-boki-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1603,6 +1749,7 @@
       "unit": "zr2-boki-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1639,6 +1786,7 @@
       "unit": "zr2-boki-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1675,6 +1823,7 @@
       "unit": "zr2-boki-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1711,6 +1860,7 @@
       "unit": "zr2-boki-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1747,6 +1897,7 @@
       "unit": "zr2-boki-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1783,6 +1934,7 @@
       "unit": "zr2-boki-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1819,6 +1971,7 @@
       "unit": "zr2-boki-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1855,6 +2008,7 @@
       "unit": "zr2-boki-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1891,6 +2045,7 @@
       "unit": "zr2-boki-unit-branches",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1927,6 +2082,7 @@
       "unit": "zr2-boki-unit-branches",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1963,6 +2119,7 @@
       "unit": "zr2-boki-unit-branches",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -1999,6 +2156,7 @@
       "unit": "zr2-boki-unit-branches",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2035,6 +2193,7 @@
       "unit": "zr2-boki-unit-branches",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2071,6 +2230,7 @@
       "unit": "zr2-boki-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2107,6 +2267,7 @@
       "unit": "zr2-boki-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2143,6 +2304,7 @@
       "unit": "zr2-boki-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2179,6 +2341,7 @@
       "unit": "zr2-boki-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2215,6 +2378,7 @@
       "unit": "zr2-boki-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2251,6 +2415,7 @@
       "unit": "zr2-boki-unit-cashflow",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2287,6 +2452,7 @@
       "unit": "zr2-boki-unit-cashflow",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2323,6 +2489,7 @@
       "unit": "zr2-boki-unit-cashflow",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2359,6 +2526,7 @@
       "unit": "zr2-boki-unit-cashflow",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2395,6 +2563,7 @@
       "unit": "zr2-boki-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2431,6 +2600,7 @@
       "unit": "zr2-boki-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2467,6 +2637,7 @@
       "unit": "zr2-boki-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2503,6 +2674,7 @@
       "unit": "zr2-boki-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2539,6 +2711,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2575,6 +2748,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2611,6 +2785,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2647,6 +2822,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2683,6 +2859,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2719,6 +2896,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2755,6 +2933,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2791,6 +2970,7 @@
       "unit": "zr2-zaimu-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2827,6 +3007,7 @@
       "unit": "zr2-zaimu-unit-cash-credit",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2863,6 +3044,7 @@
       "unit": "zr2-zaimu-unit-cash-credit",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2899,6 +3081,7 @@
       "unit": "zr2-zaimu-unit-cash-credit",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2935,6 +3118,7 @@
       "unit": "zr2-zaimu-unit-cash-credit",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -2966,11 +3150,62 @@
       ]
     },
     {
+      "id": "zr2-zaimu-accrual-presentation",
+      "subject": "zaimu",
+      "unit": "zr2-zaimu-unit-cash-credit",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-zaimu-accrual-presentation-o1",
+          "text": "継続的役務の経過勘定と前払金・未払金・確定返金請求権を区別する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-zaimu-accrual-presentation-o2",
+          "text": "経過勘定の流動固定分類を適用表示規則と契約条件から説明する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-zaimu-accrual-presentation-o3",
+          "text": "解約・決算期変更に伴う期間帰属と期末に残る権利義務を説明する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
       "id": "zr2-zaimu-inventory-recognition",
       "subject": "zaimu",
       "unit": "zr2-zaimu-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3007,6 +3242,7 @@
       "unit": "zr2-zaimu-unit-inventory",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3043,6 +3279,7 @@
       "unit": "zr2-zaimu-unit-tangible",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3079,6 +3316,7 @@
       "unit": "zr2-zaimu-unit-tangible",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3115,6 +3353,7 @@
       "unit": "zr2-zaimu-unit-tangible",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3151,6 +3390,7 @@
       "unit": "zr2-zaimu-unit-tangible",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3187,6 +3427,7 @@
       "unit": "zr2-zaimu-unit-tangible",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3223,6 +3464,7 @@
       "unit": "zr2-zaimu-unit-tangible",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3259,6 +3501,7 @@
       "unit": "zr2-zaimu-unit-tangible",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3295,6 +3538,7 @@
       "unit": "zr2-zaimu-unit-intangibles",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3331,6 +3575,7 @@
       "unit": "zr2-zaimu-unit-intangibles",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3367,6 +3612,7 @@
       "unit": "zr2-zaimu-unit-intangibles",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3403,6 +3649,7 @@
       "unit": "zr2-zaimu-unit-intangibles",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3439,6 +3686,7 @@
       "unit": "zr2-zaimu-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3475,6 +3723,7 @@
       "unit": "zr2-zaimu-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3511,6 +3760,7 @@
       "unit": "zr2-zaimu-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3547,6 +3797,7 @@
       "unit": "zr2-zaimu-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3583,6 +3834,7 @@
       "unit": "zr2-zaimu-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3619,6 +3871,7 @@
       "unit": "zr2-zaimu-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3655,6 +3908,7 @@
       "unit": "zr2-zaimu-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3691,6 +3945,7 @@
       "unit": "zr2-zaimu-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3727,6 +3982,7 @@
       "unit": "zr2-zaimu-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3763,6 +4019,7 @@
       "unit": "zr2-zaimu-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3799,6 +4056,7 @@
       "unit": "zr2-zaimu-unit-financial",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3835,6 +4093,7 @@
       "unit": "zr2-zaimu-unit-financial",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3871,6 +4130,7 @@
       "unit": "zr2-zaimu-unit-financial",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3907,6 +4167,7 @@
       "unit": "zr2-zaimu-unit-financial",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3943,6 +4204,7 @@
       "unit": "zr2-zaimu-unit-financial",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -3979,6 +4241,7 @@
       "unit": "zr2-zaimu-unit-financial",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4015,6 +4278,7 @@
       "unit": "zr2-zaimu-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4051,6 +4315,7 @@
       "unit": "zr2-zaimu-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4087,6 +4352,7 @@
       "unit": "zr2-zaimu-unit-liabilities",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4123,6 +4389,7 @@
       "unit": "zr2-zaimu-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4159,6 +4426,7 @@
       "unit": "zr2-zaimu-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4195,6 +4463,7 @@
       "unit": "zr2-zaimu-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4231,6 +4500,7 @@
       "unit": "zr2-zaimu-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4267,6 +4537,7 @@
       "unit": "zr2-zaimu-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4303,6 +4574,7 @@
       "unit": "zr2-zaimu-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4339,6 +4611,7 @@
       "unit": "zr2-zaimu-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4375,6 +4648,7 @@
       "unit": "zr2-zaimu-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4411,6 +4685,7 @@
       "unit": "zr2-zaimu-unit-equity",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4447,6 +4722,7 @@
       "unit": "zr2-zaimu-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4483,6 +4759,7 @@
       "unit": "zr2-zaimu-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4519,6 +4796,7 @@
       "unit": "zr2-zaimu-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4555,6 +4833,7 @@
       "unit": "zr2-zaimu-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4591,6 +4870,7 @@
       "unit": "zr2-zaimu-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4627,6 +4907,7 @@
       "unit": "zr2-zaimu-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4663,6 +4944,7 @@
       "unit": "zr2-zaimu-unit-consolidation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4699,6 +4981,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4735,6 +5018,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4771,6 +5055,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4807,6 +5092,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4843,6 +5129,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4879,6 +5166,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4915,6 +5203,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4951,6 +5240,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -4987,6 +5277,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5023,6 +5314,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5059,6 +5351,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5095,6 +5388,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5131,6 +5425,7 @@
       "unit": "zr2-zaimu-unit-statements",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5167,6 +5462,7 @@
       "unit": "zr2-zaimu-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5203,6 +5499,7 @@
       "unit": "zr2-zaimu-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5239,6 +5536,7 @@
       "unit": "zr2-zaimu-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5275,6 +5573,7 @@
       "unit": "zr2-zaimu-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5309,35 +5608,36 @@
       "id": "zr2-shotoku-taxpayer",
       "subject": "shotoku",
       "unit": "zr2-shotoku-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-shotoku-taxpayer-o01",
           "text": "人の区分と課税単位を決める",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-shotoku-taxpayer-o02",
           "text": "納税地と成立/確定の時点を説明する",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ]
     },
@@ -5345,35 +5645,36 @@
       "id": "zr2-shotoku-residence",
       "subject": "shotoku",
       "unit": "zr2-shotoku-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-shotoku-residence-o01",
           "text": "居住履歴から非永住者を判定する",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-shotoku-residence-o02",
           "text": "国外源泉と送金の課税範囲を計算する",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ]
     },
@@ -5381,35 +5682,36 @@
       "id": "zr2-shotoku-attribution",
       "subject": "shotoku",
       "unit": "zr2-shotoku-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-shotoku-attribution-o01",
           "text": "名義と実質帰属を分ける",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-shotoku-attribution-o02",
           "text": "共有/組合/信託の収益と費用を帰属させる",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ]
     },
@@ -5417,35 +5719,36 @@
       "id": "zr2-shotoku-nontaxable",
       "subject": "shotoku",
       "unit": "zr2-shotoku-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-shotoku-nontaxable-o01",
           "text": "損害賠償金等の性質から課税を判定する",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-shotoku-nontaxable-o02",
           "text": "相続贈与と所得税の境界を説明する",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ]
     },
@@ -5453,35 +5756,36 @@
       "id": "zr2-shotoku-income-map",
       "subject": "shotoku",
       "unit": "zr2-shotoku-unit-scope",
-      "present": false,
-      "reviewMatchesContent": false,
-      "complete": false,
+      "present": true,
+      "reviewMatchesContent": true,
+      "browserVerification": "bounded first-unit/shared-interface checks; see browser record; not full question-path coverage",
+      "complete": true,
       "objectives": [
         {
           "id": "zr2-shotoku-income-map-o01",
           "text": "収入原因から十所得へ区分する",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         },
         {
           "id": "zr2-shotoku-income-map-o02",
           "text": "課税方式と所得区分の関係を説明する",
           "checks": {
-            "explanation": false,
-            "workedExamples": false,
-            "independentPractice": false,
-            "cumulativeAssessment": false,
-            "factualReview": false,
-            "japaneseReview": false
+            "explanation": true,
+            "workedExamples": true,
+            "independentPractice": true,
+            "cumulativeAssessment": true,
+            "factualReview": true,
+            "japaneseReview": true
           },
-          "complete": false
+          "complete": true
         }
       ]
     },
@@ -5491,6 +5795,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5527,6 +5832,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5563,6 +5869,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5599,6 +5906,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5635,6 +5943,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5671,6 +5980,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5707,6 +6017,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5743,6 +6054,7 @@
       "unit": "zr2-shotoku-unit-business",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5779,6 +6091,7 @@
       "unit": "zr2-shotoku-unit-rental",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5815,6 +6128,7 @@
       "unit": "zr2-shotoku-unit-rental",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5851,6 +6165,7 @@
       "unit": "zr2-shotoku-unit-rental",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5887,6 +6202,7 @@
       "unit": "zr2-shotoku-unit-employment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5923,6 +6239,7 @@
       "unit": "zr2-shotoku-unit-employment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5959,6 +6276,7 @@
       "unit": "zr2-shotoku-unit-employment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -5995,6 +6313,7 @@
       "unit": "zr2-shotoku-unit-employment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6031,6 +6350,7 @@
       "unit": "zr2-shotoku-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6067,6 +6387,7 @@
       "unit": "zr2-shotoku-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6103,6 +6424,7 @@
       "unit": "zr2-shotoku-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6139,6 +6461,7 @@
       "unit": "zr2-shotoku-unit-finance",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6175,6 +6498,7 @@
       "unit": "zr2-shotoku-unit-transfers",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6211,6 +6535,7 @@
       "unit": "zr2-shotoku-unit-transfers",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6247,6 +6572,7 @@
       "unit": "zr2-shotoku-unit-transfers",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6283,6 +6609,7 @@
       "unit": "zr2-shotoku-unit-transfers",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6319,6 +6646,7 @@
       "unit": "zr2-shotoku-unit-transfers",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6355,6 +6683,7 @@
       "unit": "zr2-shotoku-unit-transfers",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6391,6 +6720,7 @@
       "unit": "zr2-shotoku-unit-other-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6427,6 +6757,7 @@
       "unit": "zr2-shotoku-unit-other-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6463,6 +6794,7 @@
       "unit": "zr2-shotoku-unit-other-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6499,6 +6831,7 @@
       "unit": "zr2-shotoku-unit-losses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6535,6 +6868,7 @@
       "unit": "zr2-shotoku-unit-losses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6571,6 +6905,7 @@
       "unit": "zr2-shotoku-unit-losses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6607,6 +6942,7 @@
       "unit": "zr2-shotoku-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6643,6 +6979,7 @@
       "unit": "zr2-shotoku-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6679,6 +7016,7 @@
       "unit": "zr2-shotoku-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6715,6 +7053,7 @@
       "unit": "zr2-shotoku-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6751,6 +7090,7 @@
       "unit": "zr2-shotoku-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6787,6 +7127,7 @@
       "unit": "zr2-shotoku-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6823,6 +7164,7 @@
       "unit": "zr2-shotoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6859,6 +7201,7 @@
       "unit": "zr2-shotoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6895,6 +7238,7 @@
       "unit": "zr2-shotoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6931,6 +7275,7 @@
       "unit": "zr2-shotoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -6967,6 +7312,7 @@
       "unit": "zr2-shotoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7003,6 +7349,7 @@
       "unit": "zr2-shotoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7039,6 +7386,7 @@
       "unit": "zr2-shotoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7075,6 +7423,7 @@
       "unit": "zr2-shotoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7111,6 +7460,7 @@
       "unit": "zr2-shotoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7147,6 +7497,7 @@
       "unit": "zr2-shotoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7183,6 +7534,7 @@
       "unit": "zr2-shotoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7219,6 +7571,7 @@
       "unit": "zr2-shotoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7255,6 +7608,7 @@
       "unit": "zr2-shotoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7291,6 +7645,7 @@
       "unit": "zr2-shotoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7327,6 +7682,7 @@
       "unit": "zr2-shotoku-unit-international-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7363,6 +7719,7 @@
       "unit": "zr2-shotoku-unit-international-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7399,6 +7756,7 @@
       "unit": "zr2-shotoku-unit-international-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7435,6 +7793,7 @@
       "unit": "zr2-shotoku-unit-international-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7471,6 +7830,7 @@
       "unit": "zr2-shotoku-unit-international-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7507,6 +7867,7 @@
       "unit": "zr2-shotoku-unit-international-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7543,6 +7904,7 @@
       "unit": "zr2-shotoku-unit-attribution-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7579,6 +7941,7 @@
       "unit": "zr2-shotoku-unit-attribution-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7615,6 +7978,7 @@
       "unit": "zr2-shotoku-unit-attribution-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7651,6 +8015,7 @@
       "unit": "zr2-shotoku-unit-attribution-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7687,6 +8052,7 @@
       "unit": "zr2-shotoku-unit-attribution-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7723,6 +8089,7 @@
       "unit": "zr2-shotoku-unit-attribution-advanced",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7759,6 +8126,7 @@
       "unit": "zr2-shotoku-unit-scope-exemptions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7795,6 +8163,7 @@
       "unit": "zr2-shotoku-unit-scope-exemptions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7831,6 +8200,7 @@
       "unit": "zr2-shotoku-unit-scope-exemptions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7867,6 +8237,7 @@
       "unit": "zr2-shotoku-unit-scope-exemptions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7903,6 +8274,7 @@
       "unit": "zr2-hojin-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7939,6 +8311,7 @@
       "unit": "zr2-hojin-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -7975,6 +8348,7 @@
       "unit": "zr2-hojin-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8011,6 +8385,7 @@
       "unit": "zr2-hojin-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8047,6 +8422,7 @@
       "unit": "zr2-hojin-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8083,6 +8459,7 @@
       "unit": "zr2-hojin-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8119,6 +8496,7 @@
       "unit": "zr2-hojin-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8155,6 +8533,7 @@
       "unit": "zr2-hojin-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8191,6 +8570,7 @@
       "unit": "zr2-hojin-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8227,6 +8607,7 @@
       "unit": "zr2-hojin-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8263,6 +8644,7 @@
       "unit": "zr2-hojin-unit-revenue",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8299,6 +8681,7 @@
       "unit": "zr2-hojin-unit-assets",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8335,6 +8718,7 @@
       "unit": "zr2-hojin-unit-assets",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8371,6 +8755,7 @@
       "unit": "zr2-hojin-unit-assets",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8407,6 +8792,7 @@
       "unit": "zr2-hojin-unit-assets",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8443,6 +8829,7 @@
       "unit": "zr2-hojin-unit-assets",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8479,6 +8866,7 @@
       "unit": "zr2-hojin-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8515,6 +8903,7 @@
       "unit": "zr2-hojin-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8551,6 +8940,7 @@
       "unit": "zr2-hojin-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8587,6 +8977,7 @@
       "unit": "zr2-hojin-unit-leases",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8623,6 +9014,7 @@
       "unit": "zr2-hojin-unit-payroll",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8659,6 +9051,7 @@
       "unit": "zr2-hojin-unit-payroll",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8695,6 +9088,7 @@
       "unit": "zr2-hojin-unit-payroll",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8731,6 +9125,7 @@
       "unit": "zr2-hojin-unit-payroll",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8767,6 +9162,7 @@
       "unit": "zr2-hojin-unit-expenses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8803,6 +9199,7 @@
       "unit": "zr2-hojin-unit-expenses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8839,6 +9236,7 @@
       "unit": "zr2-hojin-unit-expenses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8875,6 +9273,7 @@
       "unit": "zr2-hojin-unit-expenses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8911,6 +9310,7 @@
       "unit": "zr2-hojin-unit-expenses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8947,6 +9347,7 @@
       "unit": "zr2-hojin-unit-receivables",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -8983,6 +9384,7 @@
       "unit": "zr2-hojin-unit-receivables",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9019,6 +9421,7 @@
       "unit": "zr2-hojin-unit-receivables",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9055,6 +9458,7 @@
       "unit": "zr2-hojin-unit-receivables",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9091,6 +9495,7 @@
       "unit": "zr2-hojin-unit-compression",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9127,6 +9532,7 @@
       "unit": "zr2-hojin-unit-compression",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9163,6 +9569,7 @@
       "unit": "zr2-hojin-unit-compression",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9199,6 +9606,7 @@
       "unit": "zr2-hojin-unit-losses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9235,6 +9643,7 @@
       "unit": "zr2-hojin-unit-losses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9271,6 +9680,7 @@
       "unit": "zr2-hojin-unit-losses",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9307,6 +9717,7 @@
       "unit": "zr2-hojin-unit-groups",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9343,6 +9754,7 @@
       "unit": "zr2-hojin-unit-groups",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9379,6 +9791,7 @@
       "unit": "zr2-hojin-unit-groups",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9415,6 +9828,7 @@
       "unit": "zr2-hojin-unit-groups",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9451,6 +9865,7 @@
       "unit": "zr2-hojin-unit-groups",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9487,6 +9902,7 @@
       "unit": "zr2-hojin-unit-reorganization",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9523,6 +9939,7 @@
       "unit": "zr2-hojin-unit-reorganization",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9559,6 +9976,7 @@
       "unit": "zr2-hojin-unit-reorganization",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9595,6 +10013,7 @@
       "unit": "zr2-hojin-unit-reorganization",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9631,6 +10050,7 @@
       "unit": "zr2-hojin-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9662,11 +10082,49 @@
       ]
     },
     {
+      "id": "zr2-hojin-sme-eligibility-integrated",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-tax",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-sme-eligibility-integrated-o01",
+          "text": "軽減税率と各措置法の法人規模/除外を制度別に比較する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-sme-eligibility-integrated-o02",
+          "text": "平均所得の月数/繰戻/再編調整と通算法人要件を計算する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
       "id": "zr2-hojin-retained-earnings",
       "subject": "hojin",
       "unit": "zr2-hojin-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9703,6 +10161,7 @@
       "unit": "zr2-hojin-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9739,6 +10198,7 @@
       "unit": "zr2-hojin-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9775,6 +10235,7 @@
       "unit": "zr2-hojin-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9811,6 +10272,7 @@
       "unit": "zr2-hojin-unit-international",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9847,6 +10309,7 @@
       "unit": "zr2-hojin-unit-international",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9883,6 +10346,7 @@
       "unit": "zr2-hojin-unit-international",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9919,6 +10383,7 @@
       "unit": "zr2-hojin-unit-international",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9955,6 +10420,7 @@
       "unit": "zr2-hojin-unit-international",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -9991,6 +10457,7 @@
       "unit": "zr2-hojin-unit-international",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10027,6 +10494,7 @@
       "unit": "zr2-hojin-unit-international",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10063,6 +10531,7 @@
       "unit": "zr2-hojin-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10099,6 +10568,7 @@
       "unit": "zr2-hojin-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10135,6 +10605,7 @@
       "unit": "zr2-hojin-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10171,6 +10642,7 @@
       "unit": "zr2-hojin-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10207,6 +10679,7 @@
       "unit": "zr2-hojin-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10243,6 +10716,7 @@
       "unit": "zr2-hojin-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10279,6 +10753,7 @@
       "unit": "zr2-hojin-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10310,11 +10785,234 @@
       ]
     },
     {
+      "id": "zr2-hojin-nonprofit-qualification",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-nonprofit-advanced",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-nonprofit-qualification-o01",
+          "text": "非営利徹底型四要件と共益型七要件を定款/行為から判定する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-nonprofit-qualification-o02",
+          "text": "理事特殊関係・残余財産・要件喪失の時点を根拠付きで説明する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-business-boundaries",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-nonprofit-advanced",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-revenue-business-boundaries-o01",
+          "text": "各業種の対象と法令/省令の除外を比較適用する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-revenue-business-boundaries-o02",
+          "text": "公益目的事業/生活保護事業等の除外と付随行為を判断する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "zr2-hojin-nonprofit-segregation",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-nonprofit-advanced",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-nonprofit-segregation-o01",
+          "text": "部門別資産負債と共通収益費用を合理的に配賦する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-nonprofit-segregation-o02",
+          "text": "繰入れのみなし寄附金と限度/別表を連動計算する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "zr2-hojin-nonprofit-transitions",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-nonprofit-advanced",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-nonprofit-transitions-o01",
+          "text": "みなし年度と資産負債受入/税務簿価を求める",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-nonprofit-transitions-o02",
+          "text": "普通法人等への移行と累積所得/公益目的財産残額を判定する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "zr2-hojin-corporation-tax-trust",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-trust-pension",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-corporation-tax-trust-o01",
+          "text": "法人課税信託の定義と除外/受託法人の内外国を判定する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-corporation-tax-trust-o02",
+          "text": "固有財産から分離し設定/分割/終了/分配の課税を計算する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "zr2-hojin-pension-funds",
+      "subject": "hojin",
+      "unit": "zr2-hojin-unit-trust-pension",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-hojin-pension-funds-o01",
+          "text": "納税主体/課税標準/計算期間/申告を確定する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-hojin-pension-funds-o02",
+          "text": "措置法の停止対象期間と制度別除外を年表で検証する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
       "id": "zr2-sozoku-heirs-order",
       "subject": "sozoku",
       "unit": "zr2-sozoku-unit-civil",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10351,6 +11049,7 @@
       "unit": "zr2-sozoku-unit-civil",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10387,6 +11086,7 @@
       "unit": "zr2-sozoku-unit-civil",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10423,6 +11123,7 @@
       "unit": "zr2-sozoku-unit-civil",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10459,6 +11160,7 @@
       "unit": "zr2-sozoku-unit-civil",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10495,6 +11197,7 @@
       "unit": "zr2-sozoku-unit-deemed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10531,6 +11234,7 @@
       "unit": "zr2-sozoku-unit-deemed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10567,6 +11271,7 @@
       "unit": "zr2-sozoku-unit-deemed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10603,6 +11308,7 @@
       "unit": "zr2-sozoku-unit-deemed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10639,6 +11345,7 @@
       "unit": "zr2-sozoku-unit-deemed",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10675,6 +11382,7 @@
       "unit": "zr2-sozoku-unit-land-basic",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10711,6 +11419,7 @@
       "unit": "zr2-sozoku-unit-land-basic",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10747,6 +11456,7 @@
       "unit": "zr2-sozoku-unit-land-basic",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10783,6 +11493,7 @@
       "unit": "zr2-sozoku-unit-land-basic",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10819,6 +11530,7 @@
       "unit": "zr2-sozoku-unit-land-basic",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10855,6 +11567,7 @@
       "unit": "zr2-sozoku-unit-land-basic",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10891,6 +11604,7 @@
       "unit": "zr2-sozoku-unit-land-basic",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10927,6 +11641,7 @@
       "unit": "zr2-sozoku-unit-land-rights",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10963,6 +11678,7 @@
       "unit": "zr2-sozoku-unit-land-rights",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -10999,6 +11715,7 @@
       "unit": "zr2-sozoku-unit-land-rights",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11035,6 +11752,7 @@
       "unit": "zr2-sozoku-unit-land-rights",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11071,6 +11789,7 @@
       "unit": "zr2-sozoku-unit-land-rights",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11107,6 +11826,7 @@
       "unit": "zr2-sozoku-unit-shares",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11143,6 +11863,7 @@
       "unit": "zr2-sozoku-unit-shares",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11179,6 +11900,7 @@
       "unit": "zr2-sozoku-unit-shares",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11215,6 +11937,7 @@
       "unit": "zr2-sozoku-unit-shares",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11251,6 +11974,7 @@
       "unit": "zr2-sozoku-unit-shares",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11287,6 +12011,7 @@
       "unit": "zr2-sozoku-unit-shares",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11323,6 +12048,7 @@
       "unit": "zr2-sozoku-unit-other-property",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11359,6 +12085,7 @@
       "unit": "zr2-sozoku-unit-other-property",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11395,6 +12122,7 @@
       "unit": "zr2-sozoku-unit-other-property",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11431,6 +12159,7 @@
       "unit": "zr2-sozoku-unit-land-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11467,6 +12196,7 @@
       "unit": "zr2-sozoku-unit-land-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11503,6 +12233,7 @@
       "unit": "zr2-sozoku-unit-land-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11539,6 +12270,7 @@
       "unit": "zr2-sozoku-unit-land-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11575,6 +12307,7 @@
       "unit": "zr2-sozoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11611,6 +12344,7 @@
       "unit": "zr2-sozoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11647,6 +12381,7 @@
       "unit": "zr2-sozoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11683,6 +12418,7 @@
       "unit": "zr2-sozoku-unit-tax",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11719,6 +12455,7 @@
       "unit": "zr2-sozoku-unit-gifts",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11755,6 +12492,7 @@
       "unit": "zr2-sozoku-unit-gifts",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11791,6 +12529,7 @@
       "unit": "zr2-sozoku-unit-gifts",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11827,6 +12566,7 @@
       "unit": "zr2-sozoku-unit-gifts",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11863,6 +12603,7 @@
       "unit": "zr2-sozoku-unit-gifts",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11899,6 +12640,7 @@
       "unit": "zr2-sozoku-unit-gift-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11935,6 +12677,7 @@
       "unit": "zr2-sozoku-unit-gift-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -11971,6 +12714,7 @@
       "unit": "zr2-sozoku-unit-gift-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12007,6 +12751,7 @@
       "unit": "zr2-sozoku-unit-gift-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12043,6 +12788,7 @@
       "unit": "zr2-sozoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12079,6 +12825,7 @@
       "unit": "zr2-sozoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12115,6 +12862,7 @@
       "unit": "zr2-sozoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12151,6 +12899,7 @@
       "unit": "zr2-sozoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12187,6 +12936,7 @@
       "unit": "zr2-sozoku-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12223,6 +12973,7 @@
       "unit": "zr2-sozoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12259,6 +13010,7 @@
       "unit": "zr2-sozoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12295,6 +13047,7 @@
       "unit": "zr2-sozoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12331,6 +13084,7 @@
       "unit": "zr2-sozoku-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12367,6 +13121,7 @@
       "unit": "zr2-shohi-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12403,6 +13158,7 @@
       "unit": "zr2-shohi-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12439,6 +13195,7 @@
       "unit": "zr2-shohi-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12475,6 +13232,7 @@
       "unit": "zr2-shohi-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12511,6 +13269,7 @@
       "unit": "zr2-shohi-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12547,6 +13306,7 @@
       "unit": "zr2-shohi-unit-scope",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12583,6 +13343,7 @@
       "unit": "zr2-shohi-unit-liability",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12619,6 +13380,7 @@
       "unit": "zr2-shohi-unit-liability",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12655,6 +13417,7 @@
       "unit": "zr2-shohi-unit-liability",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12691,6 +13454,7 @@
       "unit": "zr2-shohi-unit-liability",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12727,6 +13491,7 @@
       "unit": "zr2-shohi-unit-liability",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12763,6 +13528,7 @@
       "unit": "zr2-shohi-unit-liability",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12799,6 +13565,7 @@
       "unit": "zr2-shohi-unit-liability",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12835,6 +13602,7 @@
       "unit": "zr2-shohi-unit-output",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12871,6 +13639,7 @@
       "unit": "zr2-shohi-unit-output",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12907,6 +13676,7 @@
       "unit": "zr2-shohi-unit-output",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12943,6 +13713,7 @@
       "unit": "zr2-shohi-unit-output",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -12979,6 +13750,7 @@
       "unit": "zr2-shohi-unit-output",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13015,6 +13787,7 @@
       "unit": "zr2-shohi-unit-output",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13051,6 +13824,7 @@
       "unit": "zr2-shohi-unit-invoice",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13087,6 +13861,7 @@
       "unit": "zr2-shohi-unit-invoice",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13123,6 +13898,7 @@
       "unit": "zr2-shohi-unit-invoice",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13159,6 +13935,7 @@
       "unit": "zr2-shohi-unit-invoice",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13195,6 +13972,7 @@
       "unit": "zr2-shohi-unit-input",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13231,6 +14009,7 @@
       "unit": "zr2-shohi-unit-input",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13267,6 +14046,7 @@
       "unit": "zr2-shohi-unit-input",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13303,6 +14083,7 @@
       "unit": "zr2-shohi-unit-input",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13339,6 +14120,7 @@
       "unit": "zr2-shohi-unit-input",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13375,6 +14157,7 @@
       "unit": "zr2-shohi-unit-asset-adjustment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13411,6 +14194,7 @@
       "unit": "zr2-shohi-unit-asset-adjustment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13447,6 +14231,7 @@
       "unit": "zr2-shohi-unit-asset-adjustment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13483,6 +14268,7 @@
       "unit": "zr2-shohi-unit-asset-adjustment",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13519,6 +14305,7 @@
       "unit": "zr2-shohi-unit-simple",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13555,6 +14342,7 @@
       "unit": "zr2-shohi-unit-simple",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13591,6 +14379,7 @@
       "unit": "zr2-shohi-unit-simple",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13627,6 +14416,7 @@
       "unit": "zr2-shohi-unit-simple",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13663,6 +14453,7 @@
       "unit": "zr2-shohi-unit-imports-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13699,6 +14490,7 @@
       "unit": "zr2-shohi-unit-imports-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13735,6 +14527,7 @@
       "unit": "zr2-shohi-unit-imports-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13771,6 +14564,7 @@
       "unit": "zr2-shohi-unit-imports-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13807,6 +14601,7 @@
       "unit": "zr2-shohi-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13843,6 +14638,7 @@
       "unit": "zr2-shohi-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13879,6 +14675,7 @@
       "unit": "zr2-shohi-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13915,6 +14712,7 @@
       "unit": "zr2-shohi-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13951,6 +14749,7 @@
       "unit": "zr2-shohi-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -13987,6 +14786,7 @@
       "unit": "zr2-shohi-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14023,6 +14823,7 @@
       "unit": "zr2-shohi-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14059,6 +14860,7 @@
       "unit": "zr2-shohi-unit-integration",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14095,6 +14897,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14131,6 +14934,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14167,6 +14971,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14203,6 +15008,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14239,6 +15045,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14275,6 +15082,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14311,6 +15119,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14347,6 +15156,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14383,6 +15193,7 @@
       "unit": "zr2-shuzei-unit-basics",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14419,6 +15230,7 @@
       "unit": "zr2-shuzei-unit-rates",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14455,6 +15267,7 @@
       "unit": "zr2-shuzei-unit-rates",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14491,6 +15304,7 @@
       "unit": "zr2-shuzei-unit-rates",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14527,6 +15341,7 @@
       "unit": "zr2-shuzei-unit-rates",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14563,6 +15378,7 @@
       "unit": "zr2-shuzei-unit-rates",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14599,6 +15415,7 @@
       "unit": "zr2-shuzei-unit-licensing",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14648,6 +15465,7 @@
       "unit": "zr2-shuzei-unit-licensing",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14684,6 +15502,7 @@
       "unit": "zr2-shuzei-unit-licensing",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14720,6 +15539,7 @@
       "unit": "zr2-shuzei-unit-licensing",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14756,6 +15576,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14792,6 +15613,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14828,6 +15650,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14864,6 +15687,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14900,6 +15724,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14936,6 +15761,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -14972,6 +15798,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15008,6 +15835,7 @@
       "unit": "zr2-shuzei-unit-reliefs",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15044,6 +15872,7 @@
       "unit": "zr2-shuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15080,6 +15909,7 @@
       "unit": "zr2-shuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15116,6 +15946,7 @@
       "unit": "zr2-kokuzei-unit-foundations",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15152,6 +15983,7 @@
       "unit": "zr2-kokuzei-unit-foundations",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15188,6 +16020,7 @@
       "unit": "zr2-kokuzei-unit-foundations",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15224,6 +16057,7 @@
       "unit": "zr2-kokuzei-unit-foundations",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15260,6 +16094,7 @@
       "unit": "zr2-kokuzei-unit-foundations",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15296,6 +16131,7 @@
       "unit": "zr2-kokuzei-unit-foundations",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15332,6 +16168,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15368,6 +16205,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15404,6 +16242,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15440,6 +16279,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15476,6 +16316,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15512,6 +16353,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15548,6 +16390,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15584,6 +16427,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15620,6 +16464,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15656,6 +16501,7 @@
       "unit": "zr2-kokuzei-unit-investigation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15692,6 +16538,7 @@
       "unit": "zr2-kokuzei-unit-priority",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15728,6 +16575,7 @@
       "unit": "zr2-kokuzei-unit-priority",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15764,6 +16612,7 @@
       "unit": "zr2-kokuzei-unit-priority",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15800,11 +16649,12 @@
       "unit": "zr2-kokuzei-unit-priority",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
           "id": "zr2-kokuzei-privileges-liens-o1",
-          "text": "保存・工事・不動産賃貸の先取特権を区分する",
+          "text": "一般・特別先取の対象と成立・公示・時点を区分し、保存・工事・賃貸等の優先額を計算する",
           "checks": {
             "explanation": false,
             "workedExamples": false,
@@ -15831,11 +16681,86 @@
       ]
     },
     {
+      "id": "zr2-kokuzei-security-registers",
+      "subject": "kokuzei",
+      "unit": "zr2-kokuzei-unit-priority",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-kokuzei-security-registers-o1",
+          "text": "自動車・船舶・工場抵当及び財団等の目的・登録登記・目録・質権制限を関連法から選ぶ",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-kokuzei-security-registers-o2",
+          "text": "担保の及ぶ範囲と公示時点を15〜18条及び差押対象選択へ接続する",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
+      "id": "zr2-kokuzei-special-privileges",
+      "subject": "kokuzei",
+      "unit": "zr2-kokuzei-unit-priority",
+      "present": false,
+      "reviewMatchesContent": false,
+      "browserVerification": "pending",
+      "complete": false,
+      "objectives": [
+        {
+          "id": "zr2-kokuzei-special-privileges-o1",
+          "text": "19条3〜5号及び20条3号等の個別法の対象債権・財産・公示証明を条文へ当てはめる",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        },
+        {
+          "id": "zr2-kokuzei-special-privileges-o2",
+          "text": "みなし先取・立木・海事・借地・農業動産等を19条又は20条の優先へ対応させる",
+          "checks": {
+            "explanation": false,
+            "workedExamples": false,
+            "independentPractice": false,
+            "cumulativeAssessment": false,
+            "factualReview": false,
+            "japaneseReview": false
+          },
+          "complete": false
+        }
+      ]
+    },
+    {
       "id": "zr2-kokuzei-provisional-security",
       "subject": "kokuzei",
       "unit": "zr2-kokuzei-unit-priority",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15872,6 +16797,7 @@
       "unit": "zr2-kokuzei-unit-priority",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15908,11 +16834,12 @@
       "unit": "zr2-kokuzei-unit-priority",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
           "id": "zr2-kokuzei-competing-distribution-o1",
-          "text": "税相互と私債権の優先を独立に判定する",
+          "text": "民法上の担保・先取相互の順位、税相互及び各私債権への国税の優先を独立に判定する",
           "checks": {
             "explanation": false,
             "workedExamples": false,
@@ -15925,7 +16852,7 @@
         },
         {
           "id": "zr2-kokuzei-competing-distribution-o2",
-          "text": "26条の競合調整を用いて配当額と残余を求める",
+          "text": "26条及び18条の通知時差・1項ただし書の調整を用いて配当額と残余を求める",
           "checks": {
             "explanation": false,
             "workedExamples": false,
@@ -15944,6 +16871,7 @@
       "unit": "zr2-kokuzei-unit-sale",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -15980,6 +16908,7 @@
       "unit": "zr2-kokuzei-unit-sale",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16016,6 +16945,7 @@
       "unit": "zr2-kokuzei-unit-sale",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16052,6 +16982,7 @@
       "unit": "zr2-kokuzei-unit-sale",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16088,6 +17019,7 @@
       "unit": "zr2-kokuzei-unit-secondary",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16124,6 +17056,7 @@
       "unit": "zr2-kokuzei-unit-secondary",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16160,6 +17093,7 @@
       "unit": "zr2-kokuzei-unit-secondary",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16196,6 +17130,7 @@
       "unit": "zr2-kokuzei-unit-secondary",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16232,6 +17167,7 @@
       "unit": "zr2-kokuzei-unit-secondary",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16268,6 +17204,7 @@
       "unit": "zr2-kokuzei-unit-relief",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16304,6 +17241,7 @@
       "unit": "zr2-kokuzei-unit-relief",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16340,6 +17278,7 @@
       "unit": "zr2-kokuzei-unit-relief",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16357,7 +17296,7 @@
         },
         {
           "id": "zr2-kokuzei-preservation-o2",
-          "text": "裁判所の強制執行・仮差押え等との調整を説明する",
+          "text": "裁判所の強制執行・仮差押え・破産等との調整及び留置権の取扱いを手続別に判定する",
           "checks": {
             "explanation": false,
             "workedExamples": false,
@@ -16376,6 +17315,7 @@
       "unit": "zr2-kokuzei-unit-relief",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16412,6 +17352,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16448,6 +17389,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16484,6 +17426,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16520,6 +17463,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16556,6 +17500,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16592,6 +17537,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16628,6 +17574,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16664,6 +17611,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16700,6 +17648,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16736,6 +17685,7 @@
       "unit": "zr2-kokuzei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16772,6 +17722,7 @@
       "unit": "zr2-jumin-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16808,6 +17759,7 @@
       "unit": "zr2-jumin-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16844,6 +17796,7 @@
       "unit": "zr2-jumin-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16880,6 +17833,7 @@
       "unit": "zr2-jumin-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16916,6 +17870,7 @@
       "unit": "zr2-jumin-unit-local-general",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16952,6 +17907,7 @@
       "unit": "zr2-jumin-unit-local-general",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -16988,6 +17944,7 @@
       "unit": "zr2-jumin-unit-local-general",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17024,6 +17981,7 @@
       "unit": "zr2-jumin-unit-local-general",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17060,6 +18018,7 @@
       "unit": "zr2-jumin-unit-local-general",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17096,6 +18055,7 @@
       "unit": "zr2-jumin-unit-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17132,6 +18092,7 @@
       "unit": "zr2-jumin-unit-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17168,6 +18129,7 @@
       "unit": "zr2-jumin-unit-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17204,6 +18166,7 @@
       "unit": "zr2-jumin-unit-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17240,6 +18203,7 @@
       "unit": "zr2-jumin-unit-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17276,6 +18240,7 @@
       "unit": "zr2-jumin-unit-income",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17312,6 +18277,7 @@
       "unit": "zr2-jumin-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17348,6 +18314,7 @@
       "unit": "zr2-jumin-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17384,6 +18351,7 @@
       "unit": "zr2-jumin-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17420,6 +18388,7 @@
       "unit": "zr2-jumin-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17456,6 +18425,7 @@
       "unit": "zr2-jumin-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17492,6 +18462,7 @@
       "unit": "zr2-jumin-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17528,6 +18499,7 @@
       "unit": "zr2-jumin-unit-deductions",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17564,6 +18536,7 @@
       "unit": "zr2-jumin-unit-financial-levies",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17600,6 +18573,7 @@
       "unit": "zr2-jumin-unit-financial-levies",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17636,6 +18610,7 @@
       "unit": "zr2-jumin-unit-financial-levies",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17672,6 +18647,7 @@
       "unit": "zr2-jumin-unit-collection",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17708,6 +18684,7 @@
       "unit": "zr2-jumin-unit-collection",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17744,6 +18721,7 @@
       "unit": "zr2-jumin-unit-collection",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17780,6 +18758,7 @@
       "unit": "zr2-jumin-unit-corporate",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17816,6 +18795,7 @@
       "unit": "zr2-jumin-unit-corporate",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17852,6 +18832,7 @@
       "unit": "zr2-jumin-unit-corporate",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17888,6 +18869,7 @@
       "unit": "zr2-jumin-unit-corporate",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17924,6 +18906,7 @@
       "unit": "zr2-jumin-unit-corporate",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17960,6 +18943,7 @@
       "unit": "zr2-jumin-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -17996,6 +18980,7 @@
       "unit": "zr2-jumin-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18032,6 +19017,7 @@
       "unit": "zr2-jigyo-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18068,6 +19054,7 @@
       "unit": "zr2-jigyo-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18104,6 +19091,7 @@
       "unit": "zr2-jigyo-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18140,6 +19128,7 @@
       "unit": "zr2-jigyo-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18176,6 +19165,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18212,6 +19202,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18248,6 +19239,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18284,6 +19276,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18320,6 +19313,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18356,6 +19350,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18392,6 +19387,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18428,6 +19424,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18464,6 +19461,7 @@
       "unit": "zr2-jigyo-unit-external",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18500,6 +19498,7 @@
       "unit": "zr2-jigyo-unit-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18536,6 +19535,7 @@
       "unit": "zr2-jigyo-unit-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18572,6 +19572,7 @@
       "unit": "zr2-jigyo-unit-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18608,6 +19609,7 @@
       "unit": "zr2-jigyo-unit-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18644,6 +19646,7 @@
       "unit": "zr2-jigyo-unit-special",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18680,6 +19683,7 @@
       "unit": "zr2-jigyo-unit-allocation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18716,6 +19720,7 @@
       "unit": "zr2-jigyo-unit-allocation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18752,6 +19757,7 @@
       "unit": "zr2-jigyo-unit-allocation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18788,6 +19794,7 @@
       "unit": "zr2-jigyo-unit-allocation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18824,6 +19831,7 @@
       "unit": "zr2-jigyo-unit-allocation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18860,6 +19868,7 @@
       "unit": "zr2-jigyo-unit-individual",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18896,6 +19905,7 @@
       "unit": "zr2-jigyo-unit-individual",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18932,6 +19942,7 @@
       "unit": "zr2-jigyo-unit-individual",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -18968,6 +19979,7 @@
       "unit": "zr2-jigyo-unit-individual",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19004,6 +20016,7 @@
       "unit": "zr2-jigyo-unit-individual",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19040,6 +20053,7 @@
       "unit": "zr2-jigyo-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19076,6 +20090,7 @@
       "unit": "zr2-jigyo-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19112,6 +20127,7 @@
       "unit": "zr2-kotei-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19148,6 +20164,7 @@
       "unit": "zr2-kotei-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19184,6 +20201,7 @@
       "unit": "zr2-kotei-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19220,6 +20238,7 @@
       "unit": "zr2-kotei-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19256,6 +20275,7 @@
       "unit": "zr2-kotei-unit-framework",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19292,6 +20312,7 @@
       "unit": "zr2-kotei-unit-land-valuation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19328,6 +20349,7 @@
       "unit": "zr2-kotei-unit-land-valuation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19364,6 +20386,7 @@
       "unit": "zr2-kotei-unit-land-valuation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19400,6 +20423,7 @@
       "unit": "zr2-kotei-unit-land-valuation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19436,6 +20460,7 @@
       "unit": "zr2-kotei-unit-land-valuation",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19472,6 +20497,7 @@
       "unit": "zr2-kotei-unit-land-standard",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19508,6 +20534,7 @@
       "unit": "zr2-kotei-unit-land-standard",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19544,6 +20571,7 @@
       "unit": "zr2-kotei-unit-land-standard",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19580,6 +20608,7 @@
       "unit": "zr2-kotei-unit-land-standard",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19616,6 +20645,7 @@
       "unit": "zr2-kotei-unit-land-standard",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19652,6 +20682,7 @@
       "unit": "zr2-kotei-unit-buildings",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19688,6 +20719,7 @@
       "unit": "zr2-kotei-unit-buildings",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19724,6 +20756,7 @@
       "unit": "zr2-kotei-unit-buildings",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19760,6 +20793,7 @@
       "unit": "zr2-kotei-unit-buildings",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19796,6 +20830,7 @@
       "unit": "zr2-kotei-unit-depreciable",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19832,6 +20867,7 @@
       "unit": "zr2-kotei-unit-depreciable",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19868,6 +20904,7 @@
       "unit": "zr2-kotei-unit-depreciable",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19904,6 +20941,7 @@
       "unit": "zr2-kotei-unit-depreciable",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19940,6 +20978,7 @@
       "unit": "zr2-kotei-unit-depreciable",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -19976,6 +21015,7 @@
       "unit": "zr2-kotei-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -20012,6 +21052,7 @@
       "unit": "zr2-kotei-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -20048,6 +21089,7 @@
       "unit": "zr2-kotei-unit-procedure",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -20084,6 +21126,7 @@
       "unit": "zr2-kotei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {
@@ -20120,6 +21163,7 @@
       "unit": "zr2-kotei-unit-integrated",
       "present": false,
       "reviewMatchesContent": false,
+      "browserVerification": "pending",
       "complete": false,
       "objectives": [
         {

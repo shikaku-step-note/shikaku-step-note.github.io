@@ -1,0 +1,492 @@
+{
+  "id": "zr2-boki-books-vouchers",
+  "subject": "boki",
+  "title": "帳簿組織・伝票から取引を復元し、重複を除く",
+  "stage": "発展",
+  "moduleId": "zr2-boki-unit-records",
+  "minutes": 150,
+  "objectives": [
+    "主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する",
+    "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない",
+    "伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する",
+    "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する"
+  ],
+  "prerequisites": [
+    "zr2-boki-journals-ledgers",
+    "zr2-boki-trial-balance",
+    "zr2-boki-closing-accounts"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "sourceCandidates": [
+    {
+      "id": "ac2-bookkeeping-official",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+      "location": "2023年手引き5(1)・印刷3〜4頁、6(2)(3)(9)(10)(11)。帳簿組織、主要簿と補助簿、転記・試算表。個人税務の科目や税制内容は流用しない"
+    },
+    {
+      "id": "jcci-special124",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-02-kouhyou.pdf",
+      "location": "第124回2級 出題の意図・講評、第2問・PDF2頁。特殊仕訳帳相互間、特殊仕訳帳と普通仕訳帳の複合取引部分の重複。過去の出題者の説明として使い、他の旧年度処理を援用しない"
+    },
+    {
+      "id": "jcci-vouchers143",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/08/143-03-kouhyou.pdf",
+      "location": "第143回3級 出題の意図・講評、第3問PDF2〜3頁と第4問PDF3〜4頁。記帳済み勘定・得意先元帳からの推定、一部現金取引の二方式"
+    },
+    {
+      "id": "jcci-five123",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/123-03-kouhyou.pdf",
+      "location": "第123回3級 出題の意図・講評、第4問PDF2〜3頁。五伝票制、専用売上仕入伝票と一部現金の二方式"
+    },
+    {
+      "id": "jcci-daybook148",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/04/148-03-kouhyou.pdf",
+      "location": "第148回3級 出題の意図・講評、第4問PDF3頁。三伝票から仕訳日計表・一部現金の推定。公式の出題意図であり本講例題の公式解答ではない"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "主要簿",
+      "definition": "取引の仕訳を記録する仕訳帳と、勘定科目別に集計する総勘定元帳"
+    },
+    {
+      "term": "補助簿",
+      "definition": "現金の出納や顧客別債権など、主要簿の内容を取引種類又は明細ごとに補う帳簿"
+    },
+    {
+      "term": "特殊仕訳帳",
+      "definition": "特定種類の取引を記録し、指定された転記規則によって仕訳帳の役割を持たせる帳簿"
+    },
+    {
+      "term": "三伝票制",
+      "definition": "入金・出金・振替の三種類の伝票で取引を起票する方式"
+    },
+    {
+      "term": "五伝票制",
+      "definition": "入金・出金・振替に、商品仕入と売上の専用伝票を加えて取引を起票する方式"
+    },
+    {
+      "term": "仕訳日計表",
+      "definition": "一定日の伝票等を勘定科目の借方・貸方に分けて集計した表"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-boki-books-vouchers-ex1",
+      "section": "例題1：一部現金の売上を、二つの方法で起票する",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "sales": 120000,
+        "cashIncrease": 45000,
+        "receivableIncrease": 75000
+      }
+    },
+    {
+      "id": "zr2-boki-books-vouchers-ex2",
+      "section": "例題2：仕入の起票方法を混ぜると、貸借が合っても誤る",
+      "objectives": [
+        2,
+        4
+      ],
+      "results": {
+        "purchases": 150000,
+        "cashPayment": 60000,
+        "payableIncrease": 90000,
+        "mixedOverstatement": 60000
+      }
+    },
+    {
+      "id": "zr2-boki-books-vouchers-ex3",
+      "section": "例題3：五伝票制では、仕入・売上の専用伝票を使う",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "receivableIncrease": 160000,
+        "payableIncrease": 130000,
+        "cashNetBeforeFreight": 30000,
+        "cashNetAfterFreight": 18000
+      }
+    },
+    {
+      "id": "zr2-boki-books-vouchers-ex4",
+      "section": "例題4：特殊仕訳帳の重複を、取引の対応から除く",
+      "objectives": [
+        1,
+        3
+      ],
+      "results": {
+        "rawJournalSum": 730000,
+        "overlap": 120000,
+        "uniqueJournalSum": 610000,
+        "closingBank": 440000,
+        "closingReceivable": 230000,
+        "closingPayable": 190000,
+        "trialBalance": 860000
+      }
+    },
+    {
+      "id": "zr2-boki-books-vouchers-ex5",
+      "section": "例題5：伝票日計表を、現金の純増と照合する",
+      "objectives": [
+        3
+      ],
+      "results": {
+        "totalDebits": 385000,
+        "totalCredits": 385000,
+        "cashDebit": 130000,
+        "cashCredit": 65000,
+        "cashNet": 65000
+      }
+    },
+    {
+      "id": "zr2-boki-books-vouchers-ex6",
+      "section": "証憑から推定した取引を、未記帳と決め付けない",
+      "objectives": [
+        4
+      ],
+      "results": {
+        "creditSales": 250000,
+        "bankReceipt": 177000,
+        "collection": 180000,
+        "fee": 3000
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-books-vouchers-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "三伝票制で、計上済み売掛金40,000円を現金で回収した。入金伝票に現金以外の相手科目と金額を記す様式で、適切なのはどれですか。",
+      "options": [
+        "売掛金40,000円",
+        "現金40,000円",
+        "売上40,000円",
+        "仮受金40,000円"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "仕訳は現金40,000円／売掛金40,000円で、入金伝票の相手は貸方の売掛金です。2は暗黙の現金側と相手側を混同し、3は売上を二重にし、4は原因が分かっている回収を仮勘定にしています。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "入金・出金伝票の対象資金を現金に限定した三伝票制。買掛金50,000円を当座預金から支払う場合、使う伝票はどれですか。",
+      "options": [
+        "入金伝票",
+        "出金伝票",
+        "振替伝票",
+        "商品売上伝票"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "買掛金50,000円／当座預金50,000円で、指定された現金が動かないため振替伝票です。1・2は現金対象という条件と異なり、4は三伝票にないうえ売上取引でもありません。銀行からの出金を日常語の出金とだけ読まないようにします。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "三伝票制で商品280,000円を売り、現金100,000円、残額掛けとした。現金部分と掛部分に分けて起票する方式で、振替伝票に記す売上額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "180000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "振替伝票は売掛金180,000円／売上180,000円。入金伝票の現金100,000円／売上100,000円と合わせ売上280,000円です。全額掛けとみなす方式とは振替伝票の額が違います。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "三伝票制で売上350,000円のうち現金120,000円、残額掛け。振替伝票は売掛金350,000円／売上350,000円と指定された。組み合わせる入金伝票の相手科目・金額はどれですか。",
+      "options": [
+        "売上120,000円",
+        "売掛金120,000円",
+        "売掛金230,000円",
+        "売上350,000円"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "全額を掛けとみなす方式なので、現金120,000円／売掛金120,000円です。1は売上を二重計上、3は掛残額を現金額と取り違え、4は入金額そのものを過大にします。売掛金純増は350,000−120,000＝230,000円です。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "三伝票制で仕入210,000円、現金支払70,000円、残額掛け。全額を掛けとみなす方式で振替伝票を作成した。出金伝票の相手科目・金額はどれですか。",
+      "options": [
+        "仕入70,000円",
+        "現金70,000円",
+        "買掛金140,000円",
+        "買掛金70,000円"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "出金伝票は買掛金70,000円／現金70,000円です。1は仕入を重ね、2は暗黙の現金側を相手科目にし、3は掛残額と支払額を取り違えています。買掛金借方70,000円と振替伝票の貸方210,000円の差が140,000円です。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "商品300,000円を仕入れ、現金90,000円、残額掛け。担当者は仕入300,000円／買掛金300,000円と、仕入90,000円／現金90,000円を起票した。この誤りによる仕入・買掛金の過大額と、現金を動かさない修正仕訳を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "仕入は390,000円で正額300,000円より90,000円過大、買掛金は300,000円で正額210,000円より90,000円過大。修正は買掛金90,000円／仕入90,000円。現金支払90,000円は正しいので再修正しない。",
+      "rubric": [
+        {
+          "criterion": "仕入・買掛金が各90,000円過大と求める",
+          "points": 2
+        },
+        {
+          "criterion": "買掛金90,000円／仕入90,000円を示す",
+          "points": 2
+        }
+      ],
+      "objectives": [
+        2,
+        4
+      ],
+      "explanation": "全額掛けとみなした後の出金は買掛金を減らします。分割方式の出金伝票を混ぜたため、貸借が合っていても仕入と負債が過大になりました。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "五伝票制で商品売買を全額掛けとみなして専用伝票へ記録する。売上360,000円のうち現金120,000円を受け取り、ほかの決済はない。売上伝票と入金伝票を反映した売掛金の純増額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "240000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "売上伝票で売掛金借方360,000円、入金伝票で売掛金貸方120,000円、純増240,000円です。売上伝票を現金分だけ除いて作る方式を、与件の全額掛け方式へ混ぜません。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "ある日の三伝票には重複なく、入金が現金売上60,000円と売掛金回収90,000円、出金が給料40,000円と買掛金支払50,000円、振替が掛売上120,000円と備品の後払い取得80,000円（未払金）だけある。仕訳日計表の借方合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "440000"
+      ],
+      "objectives": [
+        3
+      ],
+      "explanation": "60,000＋90,000＋40,000＋50,000＋120,000＋80,000＝440,000円。現金借方150,000円、給料40,000円、買掛金50,000円、売掛金120,000円、備品80,000円の合計です。貸方の売上180,000円・売掛金90,000円・現金90,000円・未払金80,000円も440,000円です。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "ある日の現金入金伝票合計150,000円、出金伝票合計90,000円で、他の現金取引はない。仕訳日計表は借方と貸方を総額で示す。現金勘定の借方欄に記す額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "150000"
+      ],
+      "objectives": [
+        3
+      ],
+      "explanation": "借方は入金総額150,000円、貸方は出金総額90,000円です。差引の純増60,000円を借方の総額へ代入しません。元帳の増減合計と残高を区別します。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "特殊仕訳帳の各記録を丸ごと仕訳として合算すると、預金入金260,000円、預金出金180,000円、売上帳320,000円、仕入帳230,000円となる。預金売上110,000円は入金帳と売上帳に、預金仕入70,000円は出金帳と仕入帳に同じ取引が各一回ずつ記録される。他の重複はない。重複を除く独立仕訳の借方合計を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "810000"
+      ],
+      "objectives": [
+        3
+      ],
+      "explanation": "単純合計990,000円から、余分な記録110,000円と70,000円を一度ずつ除き810,000円です。二重記録の両方を除くと取引が消えます。どの帳簿からどの勘定を転記するかを決めても同じ結果になります。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "預金出納帳の期首残高500,000円、当期入金260,000円、出金180,000円。入金には売上帳にも載る売上110,000円、出金には仕入帳にも載る仕入70,000円を含む。出納帳自体に重複はなく、ほかの増減はない。預金の期末残高を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "580000"
+      ],
+      "objectives": [
+        3
+      ],
+      "explanation": "500,000＋260,000−180,000＝580,000円です。110,000円と70,000円は帳簿相互の重複であって、出納帳内の正しい入出金を消す理由になりません。全帳簿からの仕訳合算と、単一勘定の残高計算を区別します。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "売掛金は期首240,000円、期末330,000円。当期の回収185,000円、返品15,000円で、ほかの減少・増加は掛売上だけである。当期掛売上を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "290000"
+      ],
+      "objectives": [
+        4
+      ],
+      "explanation": "330,000−240,000＋185,000＋15,000＝290,000円。期首240,000＋売上290,000−回収185,000−返品15,000＝期末330,000円と確認できます。推定できた額を記帳済み元帳へ再度加える必要はありません。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q13",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "売掛金80,000円の回収は、当社負担手数料2,000円を引いた78,000円が預金へ入った。担当者は預金78,000円／売掛金78,000円だけ記帳済み。追加仕訳として正しいものはどれですか。",
+      "options": [
+        "預金2,000円／売掛金2,000円",
+        "支払手数料80,000円／売掛金80,000円",
+        "支払手数料2,000円／売掛金2,000円",
+        "売掛金2,000円／支払手数料2,000円"
+      ],
+      "answer": 2,
+      "objectives": [
+        4
+      ],
+      "explanation": "手数料費用と残る売掛金の消滅を2,000円ずつ追加します。1は実際に入っていない預金を増やし、2は全回収額を費用にし、4は逆方向です。預金78,000円はすでに正しいため動かしません。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q14",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "異なる請求書番号の同額取引が、同じ日に二件記録されていた。重複判定のためにまず行う確認はどれですか。",
+      "options": [
+        "相手先・請求内容・決済証憑を対応させ、同じ取引を二度記録したか調べる",
+        "同額なので必ず一件削除する",
+        "同日なので必ず両方削除する",
+        "貸借が合えば証憑確認を省く"
+      ],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "explanation": "金額と日付だけで取引の同一性は決まりません。1は請求・決済の実体を照合します。2・3は別取引を落とすおそれがあり、4は貸借一致で内容まで正しいと誤っています。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q15",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "普通仕訳帳に備品100,000円／当座預金30,000円・未払金70,000円がある。同じ当座支払部分が特殊仕訳帳にも備品30,000円／当座預金30,000円として載り、これは同一取引と確認できている。両帳簿を丸ごと仕訳として集計した借方合計130,000円から何円を除くべきか、最終仕訳とともに説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "除くのは同じ当座支払部分30,000円の余分な記録一回分。最終仕訳は備品100,000円／当座預金30,000円・未払金70,000円。100,000円全体を重複として除くと、普通仕訳帳だけにある未払70,000円の取得部分まで失われる。",
+      "rubric": [
+        {
+          "criterion": "除く額30,000円を示す",
+          "points": 1
+        },
+        {
+          "criterion": "正しい最終複合仕訳を示す",
+          "points": 2
+        },
+        {
+          "criterion": "全体100,000円を除くと未払部分まで消えると説明する",
+          "points": 1
+        }
+      ],
+      "objectives": [
+        3,
+        4
+      ],
+      "explanation": "普通仕訳帳と特殊仕訳帳の重複は、取引の一部分で生じる場合があります。総額の一致だけでなく、各勘定の借貸を残したかを確認します。"
+    },
+    {
+      "id": "zr2-boki-books-vouchers-q16",
+      "field": "boki",
+      "lesson": "zr2-boki-books-vouchers",
+      "prompt": "総勘定元帳の売掛金合計と入金仕訳は正しいが、顧客Aへの入金40,000円を顧客Bの補助元帳へ記入していた。正しい修正方針はどれですか。",
+      "options": [
+        "現金40,000円／売掛金40,000円を追加する",
+        "顧客別の誤記を取り消してAへ付け替え、正しい総勘定元帳へ回収仕訳を重ねない",
+        "売上40,000円を追加する",
+        "合計が合うので顧客別誤記を残す"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        4
+      ],
+      "explanation": "総額が正しいため、顧客別明細だけを訂正します。1は現金と回収を二重にし、3は売上を作り、4は顧客の債権残高を誤ったままにします。主要簿と補助簿のどちらが誤っているかを区別します。"
+    }
+  ],
+  "deferredScope": [
+    {
+      "topic": "本支店帳簿の未達・合併と内部利益",
+      "plannedIds": [
+        "zr2-boki-branch-unrecorded",
+        "zr2-boki-branch-internal-profit"
+      ]
+    },
+    {
+      "topic": "在外の帳簿・外貨換算",
+      "plannedIds": [
+        "zr2-boki-foreign-branch"
+      ]
+    },
+    {
+      "topic": "棚卸・商品有高の原価配分と売価からの逆算",
+      "plannedIds": [
+        "zr2-boki-inventory-cost-flow",
+        "zr2-boki-retail-inventory"
+      ]
+    },
+    {
+      "topic": "多数勘定と締切後帳簿の横断推定",
+      "plannedIds": [
+        "zr2-boki-inference-comprehensive"
+      ]
+    },
+    {
+      "topic": "電子帳簿保存法の保存要件・税法の法定保存期間",
+      "plannedIds": [
+        "zr2-hojin-corrections",
+        "zr2-shotoku-blue-records",
+        "zr2-shohi-records-corrections"
+      ],
+      "status": "本会計単元の達成対象外。法人・所得・消費の該当法令の版と対象を各科目担当者が照合する。該当予定IDは現行共通計画で確認"
+    }
+  ]
+}

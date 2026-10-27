@@ -1,0 +1,893 @@
+{
+  "id": "zr2-kokuzei-privileges-liens",
+  "subject": "kokuzei",
+  "title": "先取特権・留置権を成立要件と優先額から判定する",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 210,
+  "objectives": [
+    "一般・特別先取の対象と成立・公示・時点を区分し、保存・工事・賃貸等の優先額を計算する",
+    "留置権の優先と公示・期間等の条件を適用する"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-pledge-mortgage"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "凍結MainProvision 8・10・19〜21・129条を読解",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "collection-order",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "2026-04-01施行版",
+      "location": "凍結4条の証明と期限、5条の税務署長による増価評価を読解",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "version": "2026-04-01施行版",
+      "location": "凍結295〜341条の先取・留置関連条及び令和6法33号附則3条を読解。306は5号、315は期間、316は敷金",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "commercial-law",
+      "url": "https://laws.e-gov.go.jp/law/132AC0000000048_20230401_503AC0000000061",
+      "version": "API asof=2026-04-03の返却版",
+      "location": "31・521・557・562・574・741・756・802・842条を読解。留置の成立条件に利用",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "child-privilege-ordinance",
+      "url": "https://laws.e-gov.go.jp/law/507M60000010056_20260401_000000000000000",
+      "version": "2026-04-01施行",
+      "location": "省令全文。1条の月8万円×子数と2条の別制度、附則施行日を確認",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "priority-privilege-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/020/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1の対象外先取の劣後配当不可、4〜8の動産対象・順位、315/316の説明を基準日法と区別して照合",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "priority-retention-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/021/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1・5・7〜12以降の留置権の種類、差押えと私法占有、換価限定、証明の解釈補助。ページ全体の基準日版とは主張しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "一般の先取特権",
+      "definition": "法律上の原因により債務者の総財産に生じる先取。基準日民306条では5類型"
+    },
+    {
+      "term": "特別の先取特権",
+      "definition": "特定の動産・不動産を目的とする先取。原因名と目的物を分けて確かめる"
+    },
+    {
+      "term": "効力の保存",
+      "definition": "保存完了後直ちにする登記・工事開始前予算登記等、その先取の優先を保つための条件"
+    },
+    {
+      "term": "現存増価額",
+      "definition": "工事によって増加した価格のうち現存するもの。工事先取の額を制限し、滞納換価では税務署長が評価"
+    },
+    {
+      "term": "不動産賃貸の先取特権",
+      "definition": "賃料等につき賃借人の所定の動産を対象とする先取。貸した不動産自体を対象とする意味ではない"
+    },
+    {
+      "term": "敷金",
+      "definition": "民316条の先取額の調整では、その敷金で弁済を受けない部分だけが対象となる"
+    },
+    {
+      "term": "留置権",
+      "definition": "法定の占有・債権等の要件を満たす者が弁済まで物を留置する権利。徴収21条は滞納換価時の優先を定める"
+    },
+    {
+      "term": "商人間の留置権",
+      "definition": "商521条の双方商行為・弁済期・商行為による占有取得・債務者所有物等を要する商事留置"
+    },
+    {
+      "term": "子の監護費用の先取特権",
+      "definition": "民308条の2の定期金のうち省令限度内。施行後に生じた各期を対象とし、国税優先には別に徴収20条を確認"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "privileges-ex1",
+      "section": "例題1：税の比較日より後の工事に優先額がある",
+      "result": {
+        "securedAmount": 900000,
+        "cost": 100000,
+        "taxPaid": 1600000,
+        "surplusToDelinquent": 400000
+      }
+    },
+    {
+      "id": "privileges-ex2",
+      "section": "例題2：期間を区切ってから敷金を控除する",
+      "result": {
+        "article315Amount": 430000,
+        "depositApplied": 120000,
+        "securedAmount": 310000,
+        "taxPaid": 450000,
+        "taxUnpaid": 150000
+      }
+    },
+    {
+      "id": "privileges-ex3",
+      "section": "例題3：子二人の定期金と国税への優先を別々に判定する",
+      "result": {
+        "marchNewPrivilege": 0,
+        "aprilPrivilege": 160000,
+        "taxPaid": 320000,
+        "taxUnpaid": 80000
+      }
+    },
+    {
+      "id": "privileges-ex4",
+      "section": "例題4：後から成立した留置権と既存の抵当権",
+      "result": {
+        "cost": 50000,
+        "retentionPaid": 250000,
+        "mortgagePaid": 900000,
+        "taxPaid": 300000,
+        "taxUnpaid": 500000
+      }
+    }
+  ],
+  "scopeNotes": [
+    "民法の一般・特別先取と留置の中心要件を教える。個別法の立木・船舶・みなし工事・借地等の詳細は実在するspecial-privileges講へ分け、名称列挙だけをその技能の完成と数えない",
+    "裁判所の競売や破産等での詳細な留置権の扱いはpreservationの手続比較で教える。21条を適用しないという限界確認と、別手続の具体的解法は別の証拠で管理する",
+    "一般先取相互、特別先取との関係、複数税の循環を含む最終配当はcompeting-distributionの比較表と独立演習へ接続する"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "立木・海事・みなし工事・借地・農業動産等の個別法条件",
+      "plannedLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "status": "planned_not_authored; actual_plan_lesson_added"
+    },
+    {
+      "competency": "裁判所の競売・破産等と留置権・国税の異なる扱い",
+      "plannedLessonIds": [
+        "zr2-kokuzei-preservation"
+      ],
+      "status": "planned_not_authored; generator_objective_cases_sources_and_depth_explicitly_expanded"
+    },
+    {
+      "competency": "多者競合・一般特別先取相互・複数税との最終配当",
+      "plannedLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "status": "planned_not_authored"
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-privileges-liens-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "2026年の工事先取。工事開始前に登記した予算80万円、未払工事費130万円、税務署長が評価した現存増価額110万円である。その他の成立・効力保存要件を満たす。先取で担保され国税に優先する額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "800000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "実際費用130、登記予算80、現存増価110の各限度を満たす80万円です。未払130万円の全額又は増価110万円を優先額にせず、登記予算を上限にします。工事費の残り50万円が消滅する意味ではありません。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "保存行為の完了後、特段の理由なく長期間放置してから登記し、「直ちに」の登記に当たらないことが確認された不動産保存先取。国税より先に弁済を受けるとの主張について適切なのはどれですか。",
+      "options": [
+        "保存費用なら登記時期に関係なく優先する",
+        "国税の比較日前の保存なら効力保存の不備は補える",
+        "民法337条の効力保存要件を欠き、保存費という名称だけで優先を認められない",
+        "登記の遅れは工事予算額の問題としてだけ扱う"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "徴収19条に比較日の条件がないことと、民法上の効力保存要件がないことは違います。適法に保存された先取の効力が前提です。",
+      "distractorExplanations": {
+        "0": "保存先取にも保存行為完了後直ちにする登記が必要です。",
+        "1": "国税の比較日の前後だけで登記要件を置き換えません。",
+        "3": "保存と工事の登記要件を混同しています。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "動産の保存先取について、Aは国税のための保存であり必要な証明済み、Bは単なる動産売買先取で、第1順位担保との競合等、20条1項1号の優先順位条件はない。他の権利もない。どちらも国税の比較日前に生じた。A・Bを同じように国税優先と扱えない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "Aは19条1項5号に該当する保存先取として国税に優先する。Bは名称と早い成立だけでは19・20条の列挙条件を満たさず、この条件では国税に優先せず、滞納処分の劣後配当にも加われない。私法上の先取の存在と国税との調整を区別する。",
+      "rubric": [
+        {
+          "criterion": "Aを国税のための保存・19条1項5号へ対応",
+          "points": 2
+        },
+        {
+          "criterion": "Bの20条の順位条件がないことと単なる前後比較の不足を指摘",
+          "points": 2
+        },
+        {
+          "criterion": "Bの劣後配当不可まで区別",
+          "points": 1
+        }
+      ],
+      "explanation": "Aは19条1項5号に該当する保存先取として国税に優先する。Bは名称と早い成立だけでは19・20条の列挙条件を満たさず、この条件では国税に優先せず、滞納処分の劣後配当にも加われない。私法上の先取の存在と国税との調整を区別する。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "2026年6月を当期として賃借人の全財産を清算する。毎月賃料6万円の4〜7月分が未払、損害は5月2万円・6月3万円・7月4万円。敷金5万円は315条の先取対象23万円へ全額充当済み。他の充当はない。316条調整後の被担保額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "180000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "前期5月・当期6月・次期7月の賃料18万円、損害は5・6月の5万円で計23万円。4月賃料6万円と7月損害4万円は除き、敷金5万円を差し引いて18万円です。敷金を先取対象外の債務へ振り向ける別の充当条件は与えていません。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "建物賃貸の先取特権（民312・313条2項）の目的物として基本的に確認すべきものはどれですか。第三者所有物への効力等の別問題はないとします。",
+      "options": [
+        "賃貸人が所有する賃貸建物そのもの",
+        "賃借人がその建物に備え付けた賃借人所有の机",
+        "賃借人の全銀行預金",
+        "賃借人が別の場所で所有する土地"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "建物賃貸の先取は、賃借人が建物に備え付けた動産に付くものです。不動産賃貸という原因名から、貸した建物への担保と誤認しないようにします。",
+      "distractorExplanations": {
+        "0": "建物の所有者が賃貸人であるという事実は、賃借人の動産を対象とする先取とは別です。",
+        "2": "一般の先取と違い総財産を一括して対象にはしません。",
+        "3": "この動産特別先取の目的物ではありません。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "2025年の合意により、子二人について各月初日にその月分25万円の監護費用定期金が発生する。2026年3・4月分が未払。308条の2の他の要件は充足する。今回新設された監護費用先取の対象となる額の合計を円で答えてください。ここでは国税との優先は問わない。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "160000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "改正法附則3条1項により施行日以後に生じた4月分が対象です。4月分25万円のうち、月8万円×子二人＝16万円が範囲です。3月分には今回の新設先取を適用しません。合意が2025年であることだけで4月分まで排除せず、25万円全額又は50万円全額へ先取を認めることもしません。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "不動産上の一般先取について、国税との関係を判断する説明として適切なのはどれですか。",
+      "options": [
+        "一般先取は民法336条で未登記でも国税より先になる",
+        "子の監護費用であれば徴収20条の登記・時点条件は省略される",
+        "一般先取の5類型の私法上の順位だけで国税との順位も決まる",
+        "徴収20条1項4号の登記と比較日等の条件を別に判断する"
+      ],
+      "answer": 3,
+      "objectives": [
+        1
+      ],
+      "explanation": "民法上の一般無担保債権者への対抗力と、国税優先の例外は分けます。国税との関係では登記した一般先取という条文上の類型と、法定納期限等以前等の条件を確認します。",
+      "distractorExplanations": {
+        "0": "民336条を国税に対する例外へ直結させています。",
+        "1": "新設監護費用も一般先取の一つであり、国税調整の条件を消しません。",
+        "2": "民329条の一般先取相互の順位と国税の調整は別です。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "民事留置権を主張する者が、他人の物を占有し、その物に関する有益費償還債権を持つ。ただし所有者の請求により裁判所が相当期間の支払猶予を認め、その期限はまだ来ていない。現時点で留置権を行使できるか。物との関連だけで足りるかも説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "行使できない。有益費について裁判所が支払期限を許与し、その期限が来ていない場合は、その債権につき留置権を行使できない。民295条では物に関して生じた債権であることに加えて弁済期の到来も確認する。",
+      "rubric": [
+        {
+          "criterion": "現時点の行使不可を示す",
+          "points": 1
+        },
+        {
+          "criterion": "299条2項の期限許与と295条の弁済期を関連付ける",
+          "points": 2
+        },
+        {
+          "criterion": "関連だけでは不足する理由を述べる",
+          "points": 1
+        }
+      ],
+      "explanation": "行使できない。有益費について裁判所が支払期限を許与し、その期限が来ていない場合は、その債権につき留置権を行使できない。民295条では物に関して生じた債権であることに加えて弁済期の到来も確認する。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "商人A・B間で双方のために商行為となる過去の売買により、AがBへ弁済期到来済みの売掛金を持つ。別の商行為によりB所有物がAの適法な占有に属した。別段の意思表示はない。他の条件に問題はない。商法521条の判断はどれですか。",
+      "options": [
+        "売掛金とその物の個別の関連がないことだけで必ず不成立",
+        "商人間の留置権の要件を満たし得る。民事留置と同じ個別関連だけで排除しない",
+        "B所有物であるかは商人間留置で一切問わない",
+        "商行為による占有取得は不要で、盗取でも成立する"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "521条は、双方の商行為から生じた弁済期の債権と、債務者との商行為により占有に属した債務者所有の物等という条件です。民295条の個別の物との関連をそのまま要求して排除しません。",
+      "distractorExplanations": {
+        "0": "民事留置と商人間留置の要件の相違を落としています。",
+        "2": "521条は債務者所有物又は有価証券を要します。",
+        "3": "適法な占有及び商行為による取得という事実を欠きます。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "適法な留置権の被担保債権18万円、国税に優先する適法な抵当被担保額65万円、国税70万円がある不動産を国税の滞納処分で換価した。留置権の証明等は完了。代金120万円、直接費7万円。他の権利はない。国税へ配当する額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "300000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "直接費7万円を先に徴収して113万円。21条により留置18万円、抵当65万円へ配当し、国税は113−18−65＝30万円です。国税の不足は40万円。7＋18＋65＋30＝120万円と一致します。留置の成立日を比較日だけで劣後にせず、直接費の優先も落としません。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "先取・留置の証明を令4条で行う二つの滞納処分がある。Aは売却決定日が2026年8月20日、Bは金銭取立てで配当計算書作成日が7月16日。休日・災害等の期限延長はない。A・Bの証明期限と、単に配当日前日ではない理由を答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "Aは8月19日、Bは7月15日。令4条3項は通常の換価を売却決定日前日、金銭取立てによる換価を配当計算書作成日前日としている。公売日や現実の配当日を一律の基準にはしない。",
+      "rubric": [
+        {
+          "criterion": "Aの8月19日",
+          "points": 1
+        },
+        {
+          "criterion": "Bの7月15日",
+          "points": 1
+        },
+        {
+          "criterion": "令4条3項の異なる基準日を説明",
+          "points": 2
+        }
+      ],
+      "explanation": "Aは8月19日、Bは7月15日。令4条3項は通常の換価を売却決定日前日、金銭取立てによる換価を配当計算書作成日前日としている。公売日や現実の配当日を一律の基準にはしない。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "一つの修繕料債権18万円を同じ物の留置権と保存先取が担保する。留置の優先で18万円全額の配当を受けた。他の債権はない。正しい処理はどれですか。",
+      "options": [
+        "先取という別名があるのでさらに18万円を配当する",
+        "留置の配当後も修繕料債権額は18万円のままにする",
+        "同じ債権は既に満たされ、先取を理由とする重複配当はしない",
+        "二つの担保があるので各9万円でなければ常に違法となる"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "担保権が複数あっても、元の修繕料債権は一つです。18万円の配当で残高は0になり、別の権利名を使って二重に受け取れません。",
+      "distractorExplanations": {
+        "0": "権利の数と債権額を混同しています。",
+        "1": "配当による債権の満足を反映していません。",
+        "3": "二つの権利へ均等に割る制度ではありません。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "賃貸動産の先取が付いていた動産を債務者が第三取得者へ引き渡した。20条の「先取特権のある財産を譲り受けた」という規定を理由に、当然にその動産への賃貸先取を追及できるとの答案を検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "誤り。動産先取は民333条により第三取得者への引渡し後に行使できない。徴収20条の譲受けの規定は、存続している先取と国税を調整するもので、私法上の追及制限を除くものではない。対象財産への権利の存続を先に確認する。",
+      "rubric": [
+        {
+          "criterion": "民333条の引渡し後の行使制限を指摘",
+          "points": 2
+        },
+        {
+          "criterion": "20条が私法上の制限を消すという誤りを説明",
+          "points": 2
+        }
+      ],
+      "explanation": "誤り。動産先取は民333条により第三取得者への引渡し後に行使できない。徴収20条の譲受けの規定は、存続している先取と国税を調整するもので、私法上の追及制限を除くものではない。対象財産への権利の存続を先に確認する。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "適法な留置権がある不動産について、国税の滞納処分ではなく裁判所の競売が進んでいる。「徴収21条により必ず抵当権より先に配当する」と結論できるか。適用前提と不足する検討を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "その理由だけでは結論できない。21条はその財産を滞納処分で換価した場合の特則であり、裁判所の競売へ当然に移せない。その手続で適用される民法・民事執行法等による留置権の扱いを別に検討する必要がある。国税の交付要求があることだけで換価手続の種類は変わらない。",
+      "rubric": [
+        {
+          "criterion": "滞納処分換価という21条の前提",
+          "points": 2
+        },
+        {
+          "criterion": "裁判所競売の規律の別途検討を指摘",
+          "points": 1
+        },
+        {
+          "criterion": "交付要求と換価主体を区別",
+          "points": 1
+        }
+      ],
+      "explanation": "その理由だけでは結論できない。21条はその財産を滞納処分で換価した場合の特則であり、裁判所の競売へ当然に移せない。その手続で適用される民法・民事執行法等による留置権の扱いを別に検討する必要がある。国税の交付要求があることだけで換価手続の種類は変わらない。"
+    },
+    {
+      "id": "zr2-kokuzei-privileges-liens-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-privileges-liens",
+      "prompt": "「修理代が未払なので、差し押さえた物から修理業者を最優先に払う」とだけ記された徴収案がある。追加確認事項を四つ以上挙げ、先取と留置の二つの法的構成に触れてください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "物の所有者と権利対象、保存に当たる修理の内容、国税等のための保存か、適法な占有と物に関する債権及び弁済期、権利の存続、必要な証明と期限、換価手続の種類、被担保残高、直接費及び他の優先権を確認する。19条の保存先取又は21条の留置の要件を特定せず、修理代の名称だけで最優先にできない。",
+      "rubric": [
+        {
+          "criterion": "先取の構成に即した保存内容・誰のためか等を挙げる",
+          "points": 2
+        },
+        {
+          "criterion": "留置の適法占有・関連・弁済期等を挙げる",
+          "points": 2
+        },
+        {
+          "criterion": "証明・手続・残高・費用等を含め計4項目以上を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "物の所有者と権利対象、保存に当たる修理の内容、国税等のための保存か、適法な占有と物に関する債権及び弁済期、権利の存続、必要な証明と期限、換価手続の種類、被担保残高、直接費及び他の優先権を確認する。19条の保存先取又は21条の留置の要件を特定せず、修理代の名称だけで最優先にできない。"
+    }
+  ],
+  "authorChecks": {
+    "numericChecks": [
+      "例1:min(150,120,90)=90、300-10-90-160=40万円、工事残60万円",
+      "例2:10*3+8+5=43、43-12=31、80-4-31=45、60-45=15万円",
+      "例3:8*2=16、50-2-16=32、40-32=8万円",
+      "例4:150-5-25-90=30、80-30=50万円",
+      "問1:min(130,80,110)=80万円、問4:6*3+2+3-5=18万円、問6:min(25,8*2)=16万円、問10:120-7-18-65=30万円",
+      "問11:2026-08-20の前日19日、2026-07-16の前日15日。双方平日"
+    ],
+    "legalChecks": "凍結民306/308の2、改正附則3、監護省令、315/316、徴19/20/21と令4/5を対応。民338の裁判鑑定を滞納換価へ転用しない。動産の第1順位との競合・保存のための相手、先取の対象外の劣後配当、留置の換価手続限定を別判断にした",
+    "independentReview": "pending; author_reading_does_not_complete_review",
+    "editorial": "本文全段落・15問・選択肢解説又は部分点を作問者が再読。専門用語は対象財産・日付・金額へ結び付けた。独立の日本語レビューはpending",
+    "sourceNeedsIndependentCheck": [
+      "基本通達20・21の現行ページに依拠する解釈補助箇所は、基準日条文との対応に加え、基準日前改正履歴又は当時資料で独立確認が必要。現行ページをそのまま4月3日版とはしない"
+    ],
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 8,
+        "line": 19,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 9,
+        "line": 21,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 10,
+        "line": 23,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 11,
+        "line": 25,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 12,
+        "line": 27,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 13,
+        "line": 29,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 14,
+        "line": 31,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 15,
+        "line": 33,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 16,
+        "line": 35,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 17,
+        "line": 37,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 18,
+        "line": 39,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 19,
+        "line": 41,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 20,
+        "line": 43,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 21,
+        "line": 45,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 22,
+        "line": 47,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 23,
+        "line": 49,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 24,
+        "line": 51,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 25,
+        "line": 53,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 26,
+        "line": 55,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 27,
+        "line": 57,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 28,
+        "line": 59,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 29,
+        "line": 61,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 30,
+        "line": 63,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 31,
+        "line": 65,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 32,
+        "line": 67,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 33,
+        "line": 69,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 34,
+        "line": 71,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 35,
+        "line": 73,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 36,
+        "line": 75,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 37,
+        "line": 77,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 38,
+        "line": 79,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 39,
+        "line": 81,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 40,
+        "line": 83,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 41,
+        "line": 85,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 42,
+        "line": 87,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 43,
+        "line": 89,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 44,
+        "line": 91,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 45,
+        "line": 93,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 46,
+        "line": 95,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 47,
+        "line": 97,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 48,
+        "line": 99,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 49,
+        "line": 101,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 50,
+        "line": 103,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 51,
+        "line": 105,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 52,
+        "line": 107,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 53,
+        "line": 109,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 54,
+        "line": 111,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 55,
+        "line": 113,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 56,
+        "line": 115,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      },
+      {
+        "paragraph": 57,
+        "line": 117,
+        "finding": "なし",
+        "action": "成立・対象物・公示・比較日・金額・手続限定の対応を作問者が再読。独立レビューは別途pending"
+      }
+    ],
+    "structureChecks": {
+      "checkedOn": "2026-10-27",
+      "bodyCharacters": 7165,
+      "uniqueQuestions": 15,
+      "objectiveMapping": "both objectives have body/example/question evidence; generator text matched",
+      "prerequisiteDAG": "170 nodes acyclic, all targets resolve",
+      "math": "all four examples and independent numeric questions re-evaluated",
+      "reviewStatuses": "all pending; publication draft"
+    }
+  }
+}

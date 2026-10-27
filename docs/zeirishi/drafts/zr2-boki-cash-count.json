@@ -23,21 +23,48 @@
     {
       "id": "ac2-bookkeeping-official",
       "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
-      "location": "貸借対照表作成の手引き・現金出納等の記帳。2023年の税制内容は本講に流用しない"
+      "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない",
+      "verified": "2026-10-27"
     },
     {
-      "id": "accounting-principles",
-      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
-      "location": "正規の簿記・期間損益の原則。実査物個別分類の追加一次資料確認が必要"
+      "id": "ac2-cash-boki74",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+      "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない",
+      "verified": "2026-10-27"
     },
     {
-      "id": "bank-check-system",
-      "url": "https://www.zenginkyo.or.jp/article/tag-e/4308/",
-      "location": "小切手と手形の換金・預金の関係。会計仕訳そのものの基準とは区別"
+      "id": "ac2-petty-boki73",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+      "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-cash125",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+      "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-cash142",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+      "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-petty150",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+      "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-petty124",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+      "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明",
+      "verified": "2026-10-27"
     }
   ],
   "sourceUncertainties": [
-    "通貨代用証券・郵券・小口現金の各記帳について、会計の一次資料又は出題者の公式資料の根拠を独立に追加照合する。書いたことで根拠確認済みとしない"
+    "一般公開の税務大学校簿記講本で該当する章・版は未特定。個別分類は実読した国税庁過去問と日本商工会議所の公式出題意図に照合した。出典候補の更新は公開・審査完了を意味しない。"
   ],
   "glossary": [
     {
@@ -125,7 +152,7 @@
       "id": "zr2-boki-cash-count-q1",
       "field": "boki",
       "lesson": "zr2-boki-cash-count",
-      "prompt": "会社の金庫には、会社所有の通貨160,500円、直ちに換金できる他人振出小切手31,500円、支払期日到来済みで換金できる利札8,000円、未使用切手9,600円、支払済み領収書4,800円がある。ほかに社員の私金8,000円が別封筒で保管され、会社への入金取引にはなっていない。会社の現金の実際有高を円単位で求めてください。",
+      "prompt": "金庫内の物は次のとおりである。会社の現金の実際有高を円単位で求めてください。\n・会社所有の通貨160,500円。\n・会社が受領し、直ちに換金できる他人振出小切手31,500円。\n・会社所有で、支払期日が到来し換金できる利札8,000円。\n・未使用切手9,600円、支払済み領収書4,800円。\n・社員の私金8,000円。別封筒で保管され、会社への入金取引にはなっていない。",
       "options": [],
       "answer": 0,
       "input": "number",

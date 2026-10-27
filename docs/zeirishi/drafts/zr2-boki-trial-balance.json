@@ -3,7 +3,7 @@
   "subject": "boki",
   "title": "合計と残高の試算表を作り、誤謬を調べる",
   "stage": "基礎",
-  "moduleId": "boki-records",
+  "moduleId": "zr2-boki-unit-records",
   "minutes": 110,
   "objectives": [
     "合計・残高・合計残高試算表と集計段階を区別する",
@@ -61,7 +61,11 @@
         "currentBoth": 800000,
         "totalBoth": 2200000,
         "balanceBoth": 1670000
-      }
+      },
+      "objectives": [
+        1,
+        2
+      ]
     },
     {
       "id": "zr2-boki-trial-balance-ex2",
@@ -69,7 +73,10 @@
       "result": {
         "debit": 1231000,
         "credit": 1231000
-      }
+      },
+      "objectives": [
+        3
+      ]
     },
     {
       "id": "zr2-boki-trial-balance-ex3",
@@ -77,7 +84,11 @@
       "result": {
         "apCorrectionDebit": 80000,
         "salaryCorrectionCredit": 80000
-      }
+      },
+      "objectives": [
+        3,
+        4
+      ]
     },
     {
       "id": "zr2-boki-trial-balance-ex4",
@@ -85,7 +96,11 @@
       "result": {
         "sales": 480000,
         "profit": 250000
-      }
+      },
+      "objectives": [
+        2,
+        4
+      ]
     }
   ],
   "questions": [
@@ -245,7 +260,7 @@
       "id": "zr2-boki-trial-balance-q10",
       "field": "boki",
       "lesson": "zr2-boki-trial-balance",
-      "prompt": "残高試算表で売上と借入金の二つだけが不明、他の額は既知である。貸借一致の関係だけで両方を個別に確定できるか説明してください。",
+      "prompt": "残高試算表で売上と借入金の二つだけが不明、他の額は既知である。貸借一致の関係だけで両方を個別に確定できるか、その理由とともに説明してください。個別確定のために必要となる独立した追加資料の例も一つ示してください。",
       "options": [],
       "answer": 0,
       "objectives": [
