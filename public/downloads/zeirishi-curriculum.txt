@@ -99,6 +99,172 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-unit-1-review/
   [zeirishi-boki-mock] 簿記論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-boki-mock/
+
+  詳しく学ぶ単元 [zr2-boki-unit-records] 複式簿記と帳簿の基礎
+    取引の二面性から、帳簿・試算表・締切・経過勘定・利息現価・伝票へ進む7レッスン。独自例題と末尾練習に加え、異なる資料の単元演習A・B・Cと事例形式の用語テストで確認します。
+    単元確認日：2026-10-27／本文・例題・理解度確認の合計目安820分（独立テストと再復習は別）
+    URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-boki-unit-records/
+    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
+    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
+    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
+    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
+    1. [zr2-boki-account-equation] 取引の二面性から仕訳と利益を求める／100分の目安
+      学習段階：基礎（独自区分）
+      前提：
+      実演：[zr2-boki-account-equation-ex1] 例題1：出資・借入れと掛売上を区別する／[zr2-boki-account-equation-ex2] 例題2：一つの取得を複数の支払手段で記録する／[zr2-boki-account-equation-ex3] 例題3：利益と現金の増減を両方計算する／[zr2-boki-account-equation-ex4] 例題4：純資産の変化から利益を逆算する
+      理解度チェック [zr2-boki-account-equation-check] 12問／版：zeirishi-2026-v2-account-equation-1
+      次：zr2-boki-journals-ledgers
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-account-equation/
+      [zr2-boki-account-equation-d1] 取引を資産・負債・純資産・収益・費用の増減に分ける
+        独立練習：zr2-boki-account-equation-q1、zr2-boki-account-equation-q2、zr2-boki-account-equation-q5、zr2-boki-account-equation-q6、zr2-boki-account-equation-q9、zr2-boki-account-equation-q10
+      [zr2-boki-account-equation-d2] 複合取引を含む仕訳の借方貸方を決め、一致を確かめる
+        独立練習：zr2-boki-account-equation-q1、zr2-boki-account-equation-q2、zr2-boki-account-equation-q5、zr2-boki-account-equation-q6、zr2-boki-account-equation-q10
+      [zr2-boki-account-equation-d3] 現金の増減と利益を区別し、売掛金・未払・借入元本で説明する
+        独立練習：zr2-boki-account-equation-q4、zr2-boki-account-equation-q5、zr2-boki-account-equation-q6、zr2-boki-account-equation-q8、zr2-boki-account-equation-q11
+      [zr2-boki-account-equation-d4] 出資・配当その他の純資産変動を区別して純資産と利益を照合する
+        独立練習：zr2-boki-account-equation-q3、zr2-boki-account-equation-q7、zr2-boki-account-equation-q12
+      出典 [ac2-bookkeeping-official] 国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き：令和5年分 青色申告者のための貸借対照表作成の手引き、3（印刷2頁）・5(1)（印刷3頁）。個人向けの税務固有処理はこの企業簿記例へ移用しない。5(1)の印刷4頁に借方貸方の表・複合仕訳・元帳の諸口記載を確認。2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf
+      出典 [accounting-principles] 企業会計審議会：企業会計原則・同注解：企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認。1982年4月20日最終改正。対象取引の後の個別基準は別途確認／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+    2. [zr2-boki-journals-ledgers] 仕訳帳から元帳と顧客別残高へつなぐ／100分の目安
+      学習段階：基礎（独自区分）
+      前提：zr2-boki-account-equation
+      実演：[zr2-boki-journals-ledgers-ex1] 例題1：8件の仕訳から当座預金残高を求める／[zr2-boki-journals-ledgers-ex2] 例題2：顧客別残高を総勘定元帳と合わせる／[zr2-boki-journals-ledgers-ex3] 例題3：補助元帳の合計が一致しても顧客を取り違える／[zr2-boki-journals-ledgers-ex4] 例題4：複合仕訳を各勘定へ漏れなく転記する／[zr2-boki-journals-ledgers-ex5] 例題5：元帳残高から回収額を復元する
+      理解度チェック [zr2-boki-journals-ledgers-check] 12問／版：zeirishi-2026-v2-journals-ledgers-1
+      次：zr2-boki-trial-balance
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-journals-ledgers/
+      [zr2-boki-journals-ledgers-d1] 仕訳帳・総勘定元帳・補助簿の役割と対応を説明する
+        独立練習：zr2-boki-journals-ledgers-q3、zr2-boki-journals-ledgers-q8、zr2-boki-journals-ledgers-q11、zr2-boki-journals-ledgers-q12
+      [zr2-boki-journals-ledgers-d2] 複合仕訳を同じ借方貸方へ転記し期首と当期増減から残高を求める
+        独立練習：zr2-boki-journals-ledgers-q1、zr2-boki-journals-ledgers-q3、zr2-boki-journals-ledgers-q4、zr2-boki-journals-ledgers-q7、zr2-boki-journals-ledgers-q10、zr2-boki-journals-ledgers-q11、zr2-boki-journals-ledgers-q12
+      [zr2-boki-journals-ledgers-d3] 顧客別・仕入先別の補助元帳を主要簿と照合する
+        独立練習：zr2-boki-journals-ledgers-q2、zr2-boki-journals-ledgers-q5、zr2-boki-journals-ledgers-q6、zr2-boki-journals-ledgers-q9、zr2-boki-journals-ledgers-q10
+      [zr2-boki-journals-ledgers-d4] 合計一致の限界を判断し誤記や未知の記入額を復元する
+        独立練習：zr2-boki-journals-ledgers-q5、zr2-boki-journals-ledgers-q6、zr2-boki-journals-ledgers-q7、zr2-boki-journals-ledgers-q8、zr2-boki-journals-ledgers-q9
+      出典 [ac2-bookkeeping-official] 国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き：令和5年分手引き5(1)（印刷3頁）、6(2)(3)(9)(10)、6(11)（印刷14頁）。個人税務固有処理は移用しない。5(1)の印刷4頁に借方貸方の表・複合仕訳・元帳の諸口記載を確認。2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf
+      出典 [accounting-principles] 企業会計審議会：企業会計原則・同注解：企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認。1982年4月20日最終改正。対象取引の後の個別基準は別途確認／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+    3. [zr2-boki-trial-balance] 合計と残高の試算表を作り、誤謬を調べる／110分の目安
+      学習段階：基礎（独自区分）
+      前提：zr2-boki-journals-ledgers
+      実演：[zr2-boki-trial-balance-ex1] 例題1：同じ元帳から合計表と残高表を作る／[zr2-boki-trial-balance-ex2] 例題2：片側の金額誤りと左右反対の転記／[zr2-boki-trial-balance-ex3] 例題3：貸借一致では見つからない誤り／[zr2-boki-trial-balance-ex4] 例題4：残高試算表から未知の売上を求める
+      理解度チェック [zr2-boki-trial-balance-check] 12問／版：zeirishi-2026-v2-trial-balance-1
+      次：zr2-boki-closing-accounts
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-trial-balance/
+      [zr2-boki-trial-balance-d1] 合計・残高・合計残高試算表と集計段階を区別する
+        独立練習：zr2-boki-trial-balance-q1、zr2-boki-trial-balance-q2、zr2-boki-trial-balance-q3、zr2-boki-trial-balance-q12
+      [zr2-boki-trial-balance-d2] 元帳合計と残高を算定し全勘定の貸借を照合する
+        独立練習：zr2-boki-trial-balance-q1、zr2-boki-trial-balance-q2、zr2-boki-trial-balance-q3、zr2-boki-trial-balance-q4、zr2-boki-trial-balance-q9
+      [zr2-boki-trial-balance-d3] 不一致と訂正の影響を両側で計算し、仕訳と転記の誤りを分ける
+        独立練習：zr2-boki-trial-balance-q5、zr2-boki-trial-balance-q6、zr2-boki-trial-balance-q7、zr2-boki-trial-balance-q8、zr2-boki-trial-balance-q11、zr2-boki-trial-balance-q12
+      [zr2-boki-trial-balance-d4] 貸借一致の限界と未知額を確定する条件を説明する
+        独立練習：zr2-boki-trial-balance-q6、zr2-boki-trial-balance-q9、zr2-boki-trial-balance-q10、zr2-boki-trial-balance-q11、zr2-boki-trial-balance-q12
+      出典 [ac2-bookkeeping-official] 国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き：令和5年分手引き6(11)（印刷14頁）試算表の作成と不一致の調査、6(12)（印刷15頁）。Q6等の個人税務向け差額調整を本講の会社簿記へ移用しない。2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf
+      出典 [accounting-principles] 企業会計審議会：企業会計原則・同注解：企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認。1982年4月20日最終改正。対象取引の後の個別基準は別途確認／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+    4. [zr2-boki-closing-accounts] 損益・残高勘定を締め切り翌期へつなぐ／120分の目安
+      学習段階：標準（独自区分）
+      前提：zr2-boki-trial-balance
+      実演：[zr2-boki-closing-accounts-ex1] 例題1：整理前試算表から損益・残高勘定まで／[zr2-boki-closing-accounts-ex2] 例題2：損失が出るときの振替方向／[zr2-boki-closing-accounts-ex3] 例題3：前期未払給与を再振替する場合／[zr2-boki-closing-accounts-ex4] 例題4：残高勘定の未知額を総額と純額で検算する
+      理解度チェック [zr2-boki-closing-accounts-check] 12問／版：zeirishi-2026-v2-closing-accounts-1
+      次：zr2-boki-accrual-adjustments
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-closing-accounts/
+      [zr2-boki-closing-accounts-d1] 決算整理・損益集計・帳簿締切の段階を区別する
+        独立練習：zr2-boki-closing-accounts-q1、zr2-boki-closing-accounts-q12
+      [zr2-boki-closing-accounts-d2] 収益費用を損益へ集め利益損失を繰越利益剰余金へ振り替える
+        独立練習：zr2-boki-closing-accounts-q1、zr2-boki-closing-accounts-q2、zr2-boki-closing-accounts-q3、zr2-boki-closing-accounts-q4、zr2-boki-closing-accounts-q10
+      [zr2-boki-closing-accounts-d3] 残高勘定と翌期開始を記録し、総額残高と決算書の純額を照合する
+        独立練習：zr2-boki-closing-accounts-q5、zr2-boki-closing-accounts-q6、zr2-boki-closing-accounts-q7、zr2-boki-closing-accounts-q10、zr2-boki-closing-accounts-q11
+      [zr2-boki-closing-accounts-d4] 再振替の有無を指定条件から読み、前期費用と当期費用を区別する
+        独立練習：zr2-boki-closing-accounts-q8、zr2-boki-closing-accounts-q9、zr2-boki-closing-accounts-q12
+      出典 [ac2-bookkeeping-official] 国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き：令和5年分手引き6(10)・6(11)(12)。期末損益と繰越の関係を参照するが、個人の元入金振替を株式会社へ移用しない。残高勘定方式は第76回簿記論の要求形式も参照。2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf
+      出典 [accounting-principles] 企業会計審議会：企業会計原則・同注解：企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認。1982年4月20日最終改正。対象取引の後の個別基準は別途確認／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+      出典 [ac2-exam-boki76] 国税庁：第76回税理士試験・簿記論問題：第76回第一問の本店・支店の損益勘定及び残高勘定、第三問の比較締切残高。出題形式・要求技能の一次資料であり公式解答解説ではない。数値と会社設定は本稿へ転載しない。第76回（2026年）、120分・2026年4月3日法令基準。技能・形式の確認用／確認2026-10-27
+        https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_boki.pdf
+    5. [zr2-boki-accrual-adjustments] 経過勘定を期間配分し、再振替と当期記帳をつなぐ／120分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-boki-trial-balance、zr2-boki-closing-accounts
+      実演：[zr2-boki-accrual-adjustments-ex1] 例題1：更新額が変わる保険料を二年度で計算する／[zr2-boki-accrual-adjustments-ex2] 例題2：未収利息の再振替と、翌年の入金をつなぐ／[zr2-boki-accrual-adjustments-ex3] 例題3：決算期変更でも、契約の残存月数を数える／[zr2-boki-accrual-adjustments-ex4] 例題4：前期未払と当期未払から給与費用を復元する／[zr2-boki-accrual-adjustments-ex5] 四区分の修正を、利益と残高の両方で検算する／[zr2-boki-accrual-adjustments-ex6] 例題5：契約を解約したら、未経過期間と返金請求を区別する
+      理解度チェック [zr2-boki-accrual-adjustments-check] 13問／版：zeirishi-2026-v2-accrual-adjustments-1
+      次：zr2-boki-interest-present-value
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-accrual-adjustments/
+      [zr2-boki-accrual-adjustments-d1] 役務提供と入出金の時点から四つの経過勘定を区別する
+        独立練習：zr2-boki-accrual-adjustments-q1、zr2-boki-accrual-adjustments-q2、zr2-boki-accrual-adjustments-q3、zr2-boki-accrual-adjustments-q4、zr2-boki-accrual-adjustments-q11、zr2-boki-accrual-adjustments-q13
+      [zr2-boki-accrual-adjustments-d2] 契約期間・単価変更・決算期変更から当期発生額と期末残高を計算する
+        独立練習：zr2-boki-accrual-adjustments-q1、zr2-boki-accrual-adjustments-q3、zr2-boki-accrual-adjustments-q6、zr2-boki-accrual-adjustments-q9、zr2-boki-accrual-adjustments-q13
+      [zr2-boki-accrual-adjustments-d3] 期首再振替の有無に合わせて決済と期末整理を記帳する
+        独立練習：zr2-boki-accrual-adjustments-q5、zr2-boki-accrual-adjustments-q7、zr2-boki-accrual-adjustments-q8、zr2-boki-accrual-adjustments-q9、zr2-boki-accrual-adjustments-q10
+      [zr2-boki-accrual-adjustments-d4] 整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する
+        独立練習：zr2-boki-accrual-adjustments-q2、zr2-boki-accrual-adjustments-q5、zr2-boki-accrual-adjustments-q6、zr2-boki-accrual-adjustments-q8、zr2-boki-accrual-adjustments-q11、zr2-boki-accrual-adjustments-q12、zr2-boki-accrual-adjustments-q13
+      出典 [accounting-principles] 企業会計審議会：企業会計原則・同注解：企業会計原則注解5(1)〜(4)、損益計算書原則一A。1982年4月20日最終改正の本文を2026年10月27日確認。個別基準の対象取引は別途確認。1982年4月20日最終改正。対象取引の後の個別基準は別途確認／確認2026-10-27
+        https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81
+      出典 [jcci-reversal142] 日本商工会議所：第142回3級・出題の意図と講評：第142回3級 出題の意図・講評、第3問、PDF3頁。前払費用の再振替と合計試算表の出題意図。旧年度の他論点・個人資本処理を株式会社例へ移さない。表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf
+    6. [zr2-boki-interest-present-value] 利息・複利・現在価値を受払時点から計算する／120分の目安
+      学習段階：基礎から標準へ（独自区分）
+      前提：zr2-boki-account-equation、zr2-boki-accrual-adjustments
+      実演：[zr2-boki-interest-present-value-ex1] 例題1：日割と、元本の途中返済を計算する／[zr2-boki-interest-present-value-ex2] 例題2：二年後の一回払いを現在へ戻す／[zr2-boki-interest-present-value-ex3] 例題3：年末払いと年初払いを比べる／[zr2-boki-interest-present-value-ex4] 例題4：毎年異なる受取額と、最終処分額を同じ日に集める／[zr2-boki-interest-present-value-ex5] 例題5：期中取得した債券の経過利息を分ける
+      理解度チェック [zr2-boki-interest-present-value-check] 14問／版：zeirishi-2026-v2-interest-present-value-1
+      次：zr2-boki-books-vouchers
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-interest-present-value/
+      [zr2-boki-interest-present-value-d1] 期間・日数・途中の元本変動に応じた単利の発生額を求める
+        独立練習：zr2-boki-interest-present-value-q1、zr2-boki-interest-present-value-q2、zr2-boki-interest-present-value-q3、zr2-boki-interest-present-value-q13
+      [zr2-boki-interest-present-value-d2] 複利の将来価値と現在価値を時間軸上で対応させる
+        独立練習：zr2-boki-interest-present-value-q4、zr2-boki-interest-present-value-q5、zr2-boki-interest-present-value-q6、zr2-boki-interest-present-value-q9、zr2-boki-interest-present-value-q10、zr2-boki-interest-present-value-q11、zr2-boki-interest-present-value-q14
+      [zr2-boki-interest-present-value-d3] 年初年末・不均等な受払額・最終処分額・端数処理を反映して現在価値を計算する
+        独立練習：zr2-boki-interest-present-value-q5、zr2-boki-interest-present-value-q6、zr2-boki-interest-present-value-q8、zr2-boki-interest-present-value-q9、zr2-boki-interest-present-value-q11、zr2-boki-interest-present-value-q14
+      [zr2-boki-interest-present-value-d4] 割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない
+        独立練習：zr2-boki-interest-present-value-q7、zr2-boki-interest-present-value-q12、zr2-boki-interest-present-value-q13
+      出典 [asbj-finance] 企業会計基準委員会：金融商品に関する会計基準（2019年版）：2019年7月4日版、第14・16・26項と注5、第28項(2)②。償却原価の条件と貸倒見積りにおける割引の位置付け。計算練習を全金融商品の評価原則へ一般化しない。2019年7月4日版。後の未適用の改正を基準日へ混在させない／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf
+      出典 [ac2-finance-guide] 企業会計基準委員会：移管指針第9号（2025年3月11日版）：2025年3月11日版・移管指針9、第115項。当初約定利子率又は取得当初実効利子率の条件。2025年3月11日版／確認2026-10-27
+        https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf
+      出典 [impairment] 企業会計審議会：固定資産の減損に係る会計基準・設定意見書：2002年8月9日意見書・三3(4)(5)、基準二2・3・5。割引前の認識判定と使用価値、リスクと税引前の整合。旧日付を直ちに最新個別適用指針の代わりにはしない。2002年8月9日公表。基準日適用の基礎条件を参照／確認2026-10-27
+        https://www.fsa.go.jp/news/newsj/14/singi/f-20020809-1/f-20020809c.pdf
+      出典 [jcci-interest142] 日本商工会議所：第142回3級・利息の出題意図：第142回3級 出題の意図・講評、第1問3、PDF1頁。資料で日数が確定できない場合の月割指定を読む趣旨。表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf
+      出典 [jcci-bond-interest124] 日本商工会議所：第124回2級・端数利息の出題意図：第124回2級 出題の意図・講評、第1問4、PDF1頁。債券を利払日以外に取得するときの端数利息、売買代金との区分、買い手の利息勘定借方記入の説明。表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-02-kouhyou.pdf
+    7. [zr2-boki-books-vouchers] 帳簿組織・伝票から取引を復元し、重複を除く／150分の目安
+      学習段階：発展（独自区分）
+      前提：zr2-boki-journals-ledgers、zr2-boki-trial-balance、zr2-boki-closing-accounts
+      実演：[zr2-boki-books-vouchers-ex1] 例題1：一部現金の売上を、二つの方法で起票する／[zr2-boki-books-vouchers-ex2] 例題2：仕入の起票方法を混ぜると、貸借が合っても誤る／[zr2-boki-books-vouchers-ex3] 例題3：五伝票制では、仕入・売上の専用伝票を使う／[zr2-boki-books-vouchers-ex4] 例題4：特殊仕訳帳の重複を、取引の対応から除く／[zr2-boki-books-vouchers-ex5] 例題5：伝票日計表を、現金の純増と照合する／[zr2-boki-books-vouchers-ex6] 証憑から推定した取引を、未記帳と決め付けない
+      理解度チェック [zr2-boki-books-vouchers-check] 16問／版：zeirishi-2026-v2-books-vouchers-1
+      次：zr2-boki-records-unit-review-a
+      URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-books-vouchers/
+      [zr2-boki-books-vouchers-d1] 主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する
+        独立練習：zr2-boki-books-vouchers-q1、zr2-boki-books-vouchers-q2、zr2-boki-books-vouchers-q7、zr2-boki-books-vouchers-q16
+      [zr2-boki-books-vouchers-d2] 一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない
+        独立練習：zr2-boki-books-vouchers-q2、zr2-boki-books-vouchers-q3、zr2-boki-books-vouchers-q4、zr2-boki-books-vouchers-q5、zr2-boki-books-vouchers-q6、zr2-boki-books-vouchers-q7
+      [zr2-boki-books-vouchers-d3] 伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する
+        独立練習：zr2-boki-books-vouchers-q8、zr2-boki-books-vouchers-q9、zr2-boki-books-vouchers-q10、zr2-boki-books-vouchers-q11、zr2-boki-books-vouchers-q15
+      [zr2-boki-books-vouchers-d4] 証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する
+        独立練習：zr2-boki-books-vouchers-q6、zr2-boki-books-vouchers-q12、zr2-boki-books-vouchers-q13、zr2-boki-books-vouchers-q14、zr2-boki-books-vouchers-q15、zr2-boki-books-vouchers-q16
+      出典 [ac2-bookkeeping-official] 国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き：2023年手引き5(1)・印刷3〜4頁、6(2)(3)(9)(10)(11)。帳簿組織、主要簿と補助簿、転記・試算表。個人税務の科目や税制内容は流用しない。2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない／確認2026-10-27
+        https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf
+      出典 [jcci-special124] 日本商工会議所：第124回2級・特殊仕訳帳の出題意図：第124回2級 出題の意図・講評、第2問・PDF2頁。特殊仕訳帳相互間、特殊仕訳帳と普通仕訳帳の複合取引部分の重複。過去の出題者の説明として使い、他の旧年度処理を援用しない。表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-02-kouhyou.pdf
+      出典 [jcci-vouchers143] 日本商工会議所：第143回3級・推定と伝票の出題意図：第143回3級 出題の意図・講評、第3問PDF2〜3頁と第4問PDF3〜4頁。記帳済み勘定・得意先元帳からの推定、一部現金取引の二方式。表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2016/08/143-03-kouhyou.pdf
+      出典 [jcci-five123] 日本商工会議所：第123回3級・五伝票の出題意図：第123回3級 出題の意図・講評、第4問PDF2〜3頁。五伝票制、専用売上仕入伝票と一部現金の二方式。表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/123-03-kouhyou.pdf
+      出典 [jcci-daybook148] 日本商工会議所：第148回3級・日計表の出題意図：第148回3級 出題の意図・講評、第4問PDF3頁。三伝票から仕訳日計表・一部現金の推定。公式の出題意図であり本講例題の公式解答ではない。表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない／確認2026-10-27
+        https://www.kentei.ne.jp/wp/wp-content/uploads/2018/04/148-03-kouhyou.pdf
+    [zr2-boki-records-unit-review-a] 複式簿記と帳簿：独立単元演習A／12問／版：zeirishi-2026-v2-records-a-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-records-unit-review-a/
+    [zr2-boki-records-unit-review-b] 複式簿記と帳簿：独立単元演習B／12問／版：zeirishi-2026-v2-records-b-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-records-unit-review-b/
+    [zr2-boki-records-unit-review-c] 複式簿記と帳簿：細目補充C／5問／版：zeirishi-2026-v2-records-c-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-records-unit-review-c/
+    [zr2-boki-records-glossary-assessment] 複式簿記と帳簿：事例で確認する用語テスト／24問／版：zeirishi-2026-v2-records-glossary-1
+      https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zr2-boki-records-glossary-assessment/
+    この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
+
   2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
 
 科目：財務諸表論（会計学）

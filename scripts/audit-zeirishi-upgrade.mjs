@@ -4,7 +4,8 @@ import { createHash } from 'node:crypto';
 const read = (path) => JSON.parse(readFileSync(path, 'utf8'));
 const plan = read('docs/zeirishi/upgrade-plan.json');
 const reviews = read('docs/zeirishi/review-log.json');
-const hash = (path) => createHash('sha256').update(readFileSync(path)).digest('hex');
+// Git may normalize line endings on Windows; meaningful source edits still invalidate review.
+const hash = (path) => createHash('sha256').update(readFileSync(path, 'utf8').replace(/\r\n/g, '\n')).digest('hex');
 const dataHash = (data) => createHash('sha256').update(JSON.stringify(data)).digest('hex');
 const implemented = read('src/data/zeirishi-expanded.json');
 const lessonData = new Map(implemented.lessons.map((lesson) => [lesson.id, lesson]));
@@ -29,18 +30,32 @@ for (const subject of plan.subjects) {
       const material = lessonData.get(lesson.id);
       const currentReview = !!log && !!material && log.contentHash === currentHash && log.lessonDataHash === dataHash(material)
         && !!log.reviewRecord && existsSync(log.reviewRecord);
-      const body = present ? readFileSync(path, 'utf8').split('---').slice(2).join('---') : '';
-      const objectives = lesson.objectives.map((objective) => {
+      const body = present ? readFileSync(path, 'utf8').replace(/\r\n/g, '\n').split('---').slice(2).join('---') : '';
+      const checkObjective = (objective) => {
         const evidence = currentReview ? log.objectives?.[objective.id] : undefined;
+        // Broad scope objectives may be decomposed into stable teaching skills.
+        // Every referenced skill must be taught and tested, not just mentioned.
+        const details = material?.objectiveIds ?? [];
+        const fineIds = details.includes(objective.id)
+          ? [objective.id]
+          : evidence?.detailedObjectiveIds ?? [];
+        const indices = fineIds.map((id) => details.indexOf(id) + 1);
+        const relevant = (numbers) => indices.some((index) => numbers?.includes(index));
         const checks = {
+          learningObjectiveMapping: indices.length > 0 && indices.every((index) => index > 0),
           explanation: !!evidence?.explanation?.length && evidence.explanation.every((heading) => body.includes(`## ${heading}`)),
           workedExamples: !!evidence?.workedExamples?.length && evidence.workedExamples.every((id) => {
             const example = material.workedExamples.find((example) => example.id === id);
-            return example && body.includes(`### ${example.section}`);
+            return example && relevant(example.objectives) && body.split('\n').some((line) =>
+              /^#{2,3} /.test(line) && line.replace(/^#{2,3} /, '') === example.section);
           }),
-          independentPractice: !!evidence?.independentPractice?.length && evidence.independentPractice.every((id) => practiceQuestions.get(id)?.lesson === lesson.id),
+          independentPractice: !!evidence?.independentPractice?.length && evidence.independentPractice.every((id) => {
+            const question = practiceQuestions.get(id);
+            return question?.lesson === lesson.id && relevant(question.objectives);
+          }),
           cumulativeAssessment: !!evidence?.cumulativeAssessment?.length && evidence.cumulativeAssessment.every((id) => {
-            if (cumulativeQuestions.get(id)?.lesson !== lesson.id) return false;
+            const question = cumulativeQuestions.get(id);
+            if (question?.lesson !== lesson.id || !relevant(question.objectives)) return false;
             const assessment = [...assessmentData.values()].find((assessment) => assessment.questions.some((question) => question.id === id));
             const check = reviews.assessments[assessment.id];
             return check?.status === 'reviewed' && check.assessmentDataHash === dataHash(assessment) && existsSync(check.reviewRecord);
@@ -54,7 +69,10 @@ for (const subject of plan.subjects) {
           checks,
           complete: Object.values(checks).every(Boolean),
         };
-      });
+      };
+      const objectives = lesson.objectives.map(checkObjective);
+      const detailedObjectives = (material?.objectiveIds ?? []).map((id, index) =>
+        checkObjective({ id, text: material.objectives[index] }));
       const row = {
         id: lesson.id,
         subject: subject.id,
@@ -62,8 +80,9 @@ for (const subject of plan.subjects) {
         present,
         reviewMatchesContent: currentReview,
         browserVerification: log?.browserVerification ?? 'pending',
-        complete: present && objectives.every((o) => o.complete),
+        complete: present && objectives.every((o) => o.complete) && detailedObjectives.every((o) => o.complete),
         objectives,
+        detailedObjectives,
       };
       entries.push(row);
     }
@@ -89,6 +108,7 @@ const summary = {
   implementedLessons: entries.filter((l) => l.present).length,
   fullyReviewedLessons: entries.filter((l) => l.complete).length,
   fullyReviewedObjectives: entries.flatMap((l) => l.objectives).filter((o) => o.complete).length,
+  fullyReviewedTeachingSkills: entries.flatMap((l) => l.detailedObjectives).filter((o) => o.complete).length,
   reviewedFullMocks: mocks.filter((m) => m.complete).length,
   errors,
 };

@@ -1,0 +1,1048 @@
+{
+  "id": "zr2-kokuzei-competing-distribution",
+  "subject": "kokuzei",
+  "title": "循環する優先関係から配当表を完成させる",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 260,
+  "objectives": [
+    "民法上の担保・先取相互の順位、税相互及び各私債権への国税の優先を独立に判定する",
+    "26条及び18条の通知時差・1項ただし書の調整を用いて配当額と残余を求める"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-transferred-inherited"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "凍結18・26条全文再読、8〜24・129条の前講該当箇所を対応",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "local-law",
+      "url": "https://laws.e-gov.go.jp/law/325AC0000000226_20260401_508AC0000000002",
+      "version": "2026-04-01施行版",
+      "location": "凍結14条の6・7・10・12を独立読解。国税の先着手・抵当・元本限度と対応",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "version": "2026-04-01施行版",
+      "location": "凍結306・329〜339・373等。332同順位按分、335他財産順序を再読。304/372等は前講読解",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "collection-order",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "2026-04-01施行版",
+      "location": "凍結9条全文再読。設定者税対担保権者固有税のみなしを適用",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "competition-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/05/026/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1〜8の特殊な競合・総額の区分・内部配分・反復的優先の解釈。独立数値例を作成",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "principal-exception-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/018/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "6の複数通知、9〜11のただし書該当/不該当を読解。後日企業価値担保権注は除く",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "transfer-tax-competition-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/04/024/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "20〜22の15条1項6号・令9条・22条併用を凍結各条と対応",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "mortgage-subrogation-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/016/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "4・5及び参照される15関係18・19を独立閲覧。物上代位への滞納差押えの先後だけで優劣を決めない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "特殊な競合",
+      "definition": "税相互と税対私債権の優先が循環し、一列の順位で処理できない26条の関係"
+    },
+    {
+      "term": "税等に充てる総額",
+      "definition": "26条2号で税対私債権の規定から決める区分額。各税の最終交付額とは別"
+    },
+    {
+      "term": "私債権に充てる総額",
+      "definition": "26条2号で定め、4号により民法等の私債権相互の順位で配る区分額"
+    },
+    {
+      "term": "通知時元本限度",
+      "definition": "国税又は地方税ごとに通知受領時の元本を用いる優先限度。現存額・極度額と別"
+    },
+    {
+      "term": "権利侵害の比較",
+      "definition": "18条本文の適用と私債権相互の調整によって、国税に優先する他の債権者の得るべき配当が減るかを調べること"
+    },
+    {
+      "term": "先着手優先",
+      "definition": "差押え又は交付要求等の法定の先後で税等相互の優先を決めること。全私債権への優先ではない"
+    },
+    {
+      "term": "反復的な優先行使",
+      "definition": "先行手続で総額決定に使われながら未回収の税が、後行手続でも該当する私債権への優先を維持すること"
+    },
+    {
+      "term": "同順位先取の按分",
+      "definition": "民332条により同じ物・同じ順位の先取権者の債権額割合で弁済する方法。26条全体を一律按分する意味ではない"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "competition-ex1",
+      "section": "例題1：税の比較日と先着手が逆向きになる",
+      "result": {
+        "gross": 5000000,
+        "cost": 200000,
+        "retention": 300000,
+        "taxPool": 2000000,
+        "privatePool": 2500000,
+        "N": 1600000,
+        "L": 400000,
+        "mortgage": 2500000
+      }
+    },
+    {
+      "id": "competition-ex2",
+      "section": "例題2：国税通知時350万円、地方税通知時200万円",
+      "result": {
+        "commonPriority": 2000000,
+        "remainingTaxPool": 4000000,
+        "additionalPrivate": 500000,
+        "mortgageFinal": 2500000,
+        "N": 2400000,
+        "L": 1600000
+      }
+    },
+    {
+      "id": "competition-ex3",
+      "section": "例題3：ただし書が働く場合と、働かない場合",
+      "result": {
+        "A_bodyOnly": {
+          "P": 4000000,
+          "S": 500000,
+          "tax": 2000000
+        },
+        "A_final": {
+          "P": 4000000,
+          "S": 1500000,
+          "tax": 1000000
+        },
+        "B_final": {
+          "P": 2700000,
+          "S": 0,
+          "tax": 2300000
+        },
+        "B_exceptionApplies": false
+      }
+    },
+    {
+      "id": "competition-ex4",
+      "section": "例題4：譲渡担保、二つの税、二つの抵当を統合する",
+      "result": {
+        "taxPool": 2500000,
+        "privatePool": 5500000,
+        "before22": {
+          "N": 2500000,
+          "H": 0,
+          "M1": 5000000,
+          "M2": 500000
+        },
+        "hypotheticalM1": 4000000,
+        "additional22": 1000000,
+        "final": {
+          "N": 3500000,
+          "H": 0,
+          "M1": 4000000,
+          "M2": 500000
+        },
+        "N_unpaid": 500000
+      }
+    }
+  ],
+  "scopeNotes": [
+    "本講は中心的な循環・通知時差・ただし書・令9条/22条の統合と、私債権相互・物上代位賃料の比較を教える。個別先取の立木/海事等の成立・公示・証明はspecial-privilegesで教える",
+    "賃料の第三債務者別差押方法・相殺等の個別争点及び不動産公売後の賃料権利はclaims/rights-distributionで資料に即して教える",
+    "同じ総合例を数値変更だけして独立した到達評価の数に足さない。問5・問9では優先の向きと循環の有無を変え、ただし書は該当/不該当の双方を要求した"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "立木・船舶等の個別法先取の成立・公示と優先",
+      "plannedLessonIds": [
+        "zr2-kokuzei-special-privileges"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "賃料債権の第三債務者別差押方法と相殺等の資料判断",
+      "plannedLessonIds": [
+        "zr2-kokuzei-claims"
+      ],
+      "status": "planned_not_authored; actual_generator_cases_sources_explicitly_expanded"
+    },
+    {
+      "competency": "不動産公売後の賃料差押え・譲渡・物上代位と取得者の権利",
+      "plannedLessonIds": [
+        "zr2-kokuzei-rights-distribution"
+      ],
+      "status": "planned_not_authored; actual_generator_cases_sources_explicitly_expanded"
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-competing-distribution-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "適法な優先の判定によりN国税がL地方税に先だち、Lが抵当Mに先だち、MがNに先だつと分かった。次の進め方で適切なのはどれですか。",
+      "options": [
+        "NがLに先なので推移律でNがMにも先だつとする",
+        "どの順位判定も正しくないと決めつけて登記順だけに直す",
+        "26条の特殊な競合を確認し、税等総額と私債権総額を定めた後で各内部へ配る",
+        "全額を三者の債権額で按分する"
+      ],
+      "answer": 2,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "三つの相対優先が循環する場合は、26条の調整で総額を区分します。個別の税対私債権、税相互、私債権相互の根拠を保持します。",
+      "distractorExplanations": {
+        "0": "異なる法律関係の優先を推移的に一列へ変えています。",
+        "1": "適法に生じる特殊な競合を誤り扱いしています。",
+        "3": "26条は一律の債権額按分を定めていません。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "費用処理後の原資260万円。差押国税N80万円の比較日2026年5月29日、交付要求地方税L100万円の比較日2月27日、抵当M150万円の登記日4月10日。Nの先着手が有効で他の優先・限度・競合なし。26条調整後のLへの配当を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "300000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "第2号ではL100、M150、N10万円と置き、税総額110万円、私債権総額150万円。税総額を先着手N80、L30万円へ配分します。M150と合わせ260万円。Lの比較日が早いことだけで100万円を最終配当としません。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "国税の滞納換価代金180万円、直接費10万円、21条適用の適法な留置債権10万円。その後にN国税40万円（比較日3月31日）、L地方税70万円（2月27日）、抵当M90万円（3月10日登記）が競合する。全て2026年、Nの差押先着手は有効でLは交付要求。根抵当や他の限度・競合なし。第1号の処理、両総額、最終配当を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "費用10と留置10を先に配り、原資160万円。古い順にL70、M90、N0と置き、税総額70、私債権総額90。税総額をN40、L30へ、私債権はM90へ配る。最終は費用10・留置10・N40・L30・M90で180万円。",
+      "rubric": [
+        {
+          "criterion": "費用と留置を先に計20処理",
+          "points": 1
+        },
+        {
+          "criterion": "税総額70・私債権総額90",
+          "points": 2
+        },
+        {
+          "criterion": "N40・L30・M90の最終配当",
+          "points": 1
+        },
+        {
+          "criterion": "原資180の照合",
+          "points": 1
+        }
+      ],
+      "explanation": "費用10と留置10を先に配り、原資160万円。古い順にL70、M90、N0と置き、税総額70、私債権総額90。税総額をN40、L30へ、私債権はM90へ配る。最終は費用10・留置10・N40・L30・M90で180万円。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "26条2号の計算で地方税Lに90万円、抵当Mに140万円、国税Nに20万円を仮に置いた。NがLへ先着手優先を持つ。第2号の段階で確定したものはどれですか。",
+      "options": [
+        "Lの最終配当90万円",
+        "Nの最終配当20万円",
+        "各債権者の最終配当すべて",
+        "税等の総額110万円と私債権の総額140万円"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "第2号は両区分の総額を決める段階です。税総額110万円をN・Lへ配るには、第3号の税相互の順位と各税の残額が必要です。",
+      "distractorExplanations": {
+        "0": "第2号の仮のL配分を最終交付と混同しています。",
+        "1": "税内部の優先をまだ適用していません。",
+        "2": "第3・4号の内部配分を省略しています。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "費用処理後原資560万円。両税に先だつ根抵当の極度額400万円、適法な元本確定後の現存元本300万円。未確定時のN差押通知受領時元本180万円、その後のL交付要求通知受領時元本320万円。N国税200万円がL地方税300万円へ先着手優先を持つ。他の私債権・利息・増額登記等なし。この根抵当への最終配当を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "3000000"
+      ],
+      "objectives": [
+        2
+      ],
+      "explanation": "共通して両税に優先する180万円を確保します。残る元本120万円はNに劣後しLに優先するため、残原資380万円をN200、追加元本120、L60と配れます。この関係はN→追加元本→Lで循環しません。根抵当合計300万円、N200、L60で560万円。最小通知額180だけを最終配当とせず、前後を逆にした本文例の循環手順を機械的に当てはめません。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "18条1項本文を用いるか検討する。原資450万円、第1順位根抵当Pは極度400万円、通知時未確定元本50万円、その後適法に確定した現存元本300万円。第2順位普通抵当S100万円、国税120万円。両担保は国税に優先、PはSに優先し、利息等・増額登記・他の競合なし。本文を使った調整結果と、ただし書適用後の最終配当を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "本文だけの仮配分はP50・S100・税120・P追加180万円で、私債権総額330、税120。私法内部ではP300・S30となる。本文を使わなければP300・S100・税50であるため、Sが100から30へ減り権利が害される。ただし書により本文を適用せず、最終P300・S100・税50万円。",
+      "rubric": [
+        {
+          "criterion": "本文による私債権330/税120とP300/S30を示す",
+          "points": 2
+        },
+        {
+          "criterion": "本文なしではS100で権利侵害70を認める",
+          "points": 2
+        },
+        {
+          "criterion": "最終P300/S100/税50と原資450を照合",
+          "points": 1
+        }
+      ],
+      "explanation": "本文だけの仮配分はP50・S100・税120・P追加180万円で、私債権総額330、税120。私法内部ではP300・S30となる。本文を使わなければP300・S100・税50であるため、Sが100から30へ減り権利が害される。ただし書により本文を適用せず、最終P300・S100・税50万円。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "原資400万円、第1順位根抵当Pは極度500万円、通知時未確定元本100万円、適法に確定した現存元本400万円。第2順位普通抵当S80万円、国税200万円。両担保は国税に優先し、PはSに優先。他の条件なし。Sの存在だけで18条ただし書を使えるか。最終配当も答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "使えない。本文による仮配分はP100・S80・税200・P追加20、私債権総額200万円。私法上のP優先によりP200・S0、税200となる。本文を使わなくても原資400をPが全額受けSは0なので、Sの権利は害されていない。最終P200・S0・税200万円。",
+      "rubric": [
+        {
+          "criterion": "本文による総額とP200/S0/税200",
+          "points": 2
+        },
+        {
+          "criterion": "本文なしでもS0という比較",
+          "points": 2
+        },
+        {
+          "criterion": "後順位者の存在だけでは足りないとの結論",
+          "points": 1
+        }
+      ],
+      "explanation": "使えない。本文による仮配分はP100・S80・税200・P追加20、私債権総額200万円。私法上のP優先によりP200・S0、税200となる。本文を使わなくても原資400をPが全額受けSは0なので、Sの権利は害されていない。最終P200・S0・税200万円。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "18条ただし書の権利侵害の判定で、比較すべき説明はどれですか。",
+      "options": [
+        "後順位者の債権額が1円以上なら自動適用",
+        "国税の税率が高ければ自動適用",
+        "通知額が増えていれば後順位者の有無にかかわらず自動適用",
+        "本文適用による私債権相互の調整結果と、本文を適用しない順位による後順位者の配当を比べる"
+      ],
+      "answer": 3,
+      "objectives": [
+        2
+      ],
+      "explanation": "本文の適用が、国税に優先する他の債権者の受けるべき配当を損なうかを調べます。後順位者がもともと配当を受けられなければ、その配当0を直ちに侵害とはしません。",
+      "distractorExplanations": {
+        "0": "他の債権者の存在と権利侵害を混同しています。",
+        "1": "税率を基準にする規定ではありません。",
+        "2": "元本増加という事実のみではただし書の要件は足りません。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "Aの国税N300万円（元の比較日2025年3月16日）。土地に抵当M1元本400万円を同年4月10日登記、12月15日にBへ譲渡担保。Bの固有国税H200万円の比較日は2026年3月16日。Nの24条告知発出4月21日、抵当M2元本150万円の登記5月11日、Hの差押え5月15日、その後Nの適法な交付要求がある。24条及びM1の22条の不足等全条件は充足、他の限度・競合なし。費用処理後原資650万円。26条の循環の有無も判断し、22条まで含む最終配当を求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "M1は両税に優先、M2はN告知日・H比較日後で両税に劣後。税相互は令9条でNがHに先だつので、M1→N→H→M2の順となり、この範囲に循環はない。まずM1が400、N250、H0、M2が0万円でN残税50。22条の仮定では元のN300が先でM1は650−300＝350万円。M1実400との差50万円を残税50の範囲で徴収する。最終N300、H0、M1が350、M2が0で650万円。本文例のようにM2をNに優先させない。",
+      "rubric": [
+        {
+          "criterion": "M1・M2と両税の前後及び令9条から循環なしと判定",
+          "points": 2
+        },
+        {
+          "criterion": "第一次配当M1400/N250/H0/M20",
+          "points": 1
+        },
+        {
+          "criterion": "仮定M1350と22条差額50",
+          "points": 2
+        },
+        {
+          "criterion": "最終N300/M1350/H0/M20、原資650照合",
+          "points": 1
+        }
+      ],
+      "explanation": "M1は両税に優先、M2はN告知日・H比較日後で両税に劣後。税相互は令9条でNがHに先だつので、M1→N→H→M2の順となり、この範囲に循環はない。まずM1が400、N250、H0、M2が0万円でN残税50。22条の仮定では元のN300が先でM1は650−300＝350万円。M1実400との差50万円を残税50の範囲で徴収する。最終N300、H0、M1が350、M2が0で650万円。本文例のようにM2をNに優先させない。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "22条の徴収と24条等の配当を組み合わせる際、担保の確認として正しいのはどれですか。",
+      "options": [
+        "譲渡前からの対象担保かを調べ、譲渡後に設定した抵当まで同じ譲渡の22条へ含めない",
+        "現時点の抵当は設定日を問わずすべて22条の対象とする",
+        "22条の仮定配当にも常に24条告知日だけを用いる",
+        "担保配当から徴収しても国税残高は減らさない"
+      ],
+      "answer": 0,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "22条1項の譲渡と担保設定の前後を確かめ、実際と仮定の配当の差額及び残税を計算します。24条の告知日による対私債権比較と、22条の元の納税者の財産という仮定は区別します。",
+      "distractorExplanations": {
+        "1": "その担保を設定した財産を譲渡したという関係を欠くものまで広げています。",
+        "2": "異なる判断目的の比較日を統一しています。",
+        "3": "国税の重複徴収になります。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "先行の換価で、地方税Lの私債権への優先が26条2号の税総額決定に使われたが、税総額は先着手国税へ配られ、Lは実際の配当を受けなかった。後行換価で同じLと私債権が競合する。「優先権は使用済みでLは劣後する」といえるか。残税の扱いも説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "いえない。Lが実際に配当・充当を受けなければ、その計算上の額だけ税が消えるわけではない。後行手続でも該当する私債権への優先を持つものとして扱い、実際の未納額を基に再び配当を計算する。総額決定に使った額と実際に充当した額を分ける。",
+      "rubric": [
+        {
+          "criterion": "優先権を使い切ったとはしない",
+          "points": 2
+        },
+        {
+          "criterion": "実際の配当・充当により税残高を計算",
+          "points": 2
+        },
+        {
+          "criterion": "計算上の使用と実回収を区別",
+          "points": 1
+        }
+      ],
+      "explanation": "いえない。Lが実際に配当・充当を受けなければ、その計算上の額だけ税が消えるわけではない。後行手続でも該当する私債権への優先を持つものとして扱い、実際の未納額を基に再び配当を計算する。総額決定に使った額と実際に充当した額を分ける。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "26条4号で配る私債権総額が100万円。一般先取の被担保額として子の監護費用60万円、葬式費用50万円、日用品供給30万円があり、全ての成立・期間金額限度・登記・他財産弁済等の条件は充足し、他の私債権はない。2026年4月1日施行民法の順位により、葬式費用へ配る額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "400000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "民306/329条により監護費用が葬式費用に先だち、日用品はその後です。100から監護60を充て、葬式へ40万円、日用品0円。監護費用を欠く旧4分類や債権総額の一律按分は使いません。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "同一の目的物について同一順位の先取特権A20万円、B30万円が競合する。私債権へ配る原資は25万円、他の権利や順位特則なし。民法332条によるAの配当額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "100000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "同順位先取相互は債権額割合で配り、Aは25×20/(20＋30)＝10万円、Bは15万円です。根拠は民332条であり、税を含む循環を何でも按分するという意味ではありません。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "一般先取権者が、先に行われた不動産以外の財産の配当へ加入することを怠った。その配当へ加入すれば20万円を得られた。後に不動産から登記第三者に対して先取を行使する。民335条の財産順序と、この20万円の扱いを説明してください。配当順序逆転等の例外はない。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "一般先取はまず不動産以外から弁済を受け、なお不足する場合に不動産へ進み、不動産では特別担保のないものから先に受ける。先行配当へ加入しなかったことで受けられなかった20万円については、335条3項により登記第三者へ先取を行使できない。単に未回収だから全額を後の担保不動産へ求められるわけではない。",
+      "rubric": [
+        {
+          "criterion": "不動産以外・無特別担保不動産の順序を説明",
+          "points": 2
+        },
+        {
+          "criterion": "配当加入懈怠と登記第三者への20万円行使制限",
+          "points": 2
+        },
+        {
+          "criterion": "例外がないという条件に沿った結論",
+          "points": 1
+        }
+      ],
+      "explanation": "一般先取はまず不動産以外から弁済を受け、なお不足する場合に不動産へ進み、不動産では特別担保のないものから先に受ける。先行配当へ加入しなかったことで受けられなかった20万円については、335条3項により登記第三者へ先取を行使できない。単に未回収だから全額を後の担保不動産へ求められるわけではない。"
+    },
+    {
+      "id": "zr2-kokuzei-competing-distribution-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-competing-distribution",
+      "prompt": "抵当登記は2026年1月16日、国税70万円の法定納期限等は3月16日。国が賃料債権を4月8日差押え、抵当権者は5月11日に払渡し前の適法な物上代位を行使した。優先被担保額95万円、未払対象賃料80万円、費用・既払・相殺・他の競合なし。両者への配当と比較基準を答え、国税の比較日だけが1月9日であった独立の変更条件でも答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "基本条件では抵当登記1月16日が国税比較日3月16日以前なので、抵当権者80万円、国税0円。賃料差押えの4月と物上代位の5月の先後だけで決めない。変更条件では国税比較日1月9日が抵当登記前となるため、国税70万円、抵当10万円。両条件とも払渡し前差押え等の物上代位の行使条件と、被担保額・原資の範囲を別に満たす。",
+      "rubric": [
+        {
+          "criterion": "基本条件の抵当80/国税0",
+          "points": 2
+        },
+        {
+          "criterion": "比較は抵当登記対法定納期限等で、両差押え先後だけではない",
+          "points": 2
+        },
+        {
+          "criterion": "変更条件の国税70/抵当10",
+          "points": 2
+        },
+        {
+          "criterion": "物上代位の行使条件と金額条件を分ける",
+          "points": 1
+        }
+      ],
+      "explanation": "基本条件では抵当登記1月16日が国税比較日3月16日以前なので、抵当権者80万円、国税0円。賃料差押えの4月と物上代位の5月の先後だけで決めない。変更条件では国税比較日1月9日が抵当登記前となるため、国税70万円、抵当10万円。両条件とも払渡し前差押え等の物上代位の行使条件と、被担保額・原資の範囲を別に満たす。"
+    }
+  ],
+  "authorChecks": {
+    "numericChecks": [
+      "例1:500-20-30=450、税130+70=200、M250、最終20+30+160+40+250=500万円",
+      "例2:650-200=450、L400+追加M50、税400→N240/L160、M200+50=250万円",
+      "例3A:私80+150+220=450、P400/S50/税200→本文なしP400/S150/税100万円",
+      "例3B:私150+120=270、P270/S0/税230、本文なしでもS0で侵害なし",
+      "例4:800-500-250=50、税250→N250、M1仮800-400=400、差500-400=100、最終350+400+50=800万円",
+      "問2:税100+10=110→N80/L30、問3:180-10-10=160→税70/私90→N40/L30",
+      "問5:共通180+N200+追加M120+L60=560、根抵当300万円。循環なし",
+      "問6:P300/S30/税120との比較→ただし書P300/S100/税50、問7:私100+80+20=200→P200/S0/税200万円",
+      "問9:循環なしM1400/N250、仮M1650-300=350、22差50→最終N300/M1350万円",
+      "問12:100-60=40、問13:25*20/50=10万円、問15:基本M80/N0、変更N70/M10万円"
+    ],
+    "legalChecks": "凍結26条4段階、18条本文/ただし書、地方税14の6/7/10/12、令9、民332/335等を読解。共通優先部分を分離し、私債権内部再配分と侵害比較を行う。22対象担保の譲渡前後と元税比較日を別に保持",
+    "sourceNeedsIndependentCheck": [
+      "現行通達18/26の特殊な調整、反復的優先、24の22併用、16/15の物上代位への解釈は基準日前資料・改正履歴及び別担当の再計算が必要。凍結法の読解を独立の実務レビューとみなさない",
+      "賃料相殺等には基準日近くの判例変更の有無も含めた原典精査が必要。本講は相殺なし等を条件とし、一般化しない"
+    ],
+    "editorial": "全段落・15問・選択肢解説/記述採点要素を作問者が再読。独立レビューはpending",
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 12,
+        "line": 23,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 13,
+        "line": 25,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 14,
+        "line": 27,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 15,
+        "line": 29,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 16,
+        "line": 31,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 17,
+        "line": 33,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 18,
+        "line": 35,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 19,
+        "line": 37,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 20,
+        "line": 39,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 21,
+        "line": 41,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 22,
+        "line": 43,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 23,
+        "line": 45,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 24,
+        "line": 47,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 25,
+        "line": 49,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 26,
+        "line": 51,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 27,
+        "line": 53,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 28,
+        "line": 55,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 29,
+        "line": 57,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 30,
+        "line": 59,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 31,
+        "line": 61,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 32,
+        "line": 63,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 33,
+        "line": 65,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 34,
+        "line": 67,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 35,
+        "line": 69,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 36,
+        "line": 71,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 37,
+        "line": 73,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 38,
+        "line": 75,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 39,
+        "line": 77,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 40,
+        "line": 79,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 41,
+        "line": 81,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 42,
+        "line": 83,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 43,
+        "line": 85,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 44,
+        "line": 87,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 45,
+        "line": 89,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 46,
+        "line": 91,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 47,
+        "line": 93,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 48,
+        "line": 95,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 49,
+        "line": 97,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 50,
+        "line": 99,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 51,
+        "line": 101,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 52,
+        "line": 103,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 53,
+        "line": 105,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 54,
+        "line": 107,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 55,
+        "line": 109,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 56,
+        "line": 111,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 57,
+        "line": 113,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 58,
+        "line": 115,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 59,
+        "line": 117,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 60,
+        "line": 119,
+        "finding": "なし",
+        "action": "三種類の順位・税私総額・内部配分・例外比較・残高を追って作問者が再読。独立レビューはpending"
+      }
+    ],
+    "independentArithmeticExecution": {
+      "example3_A": {
+        "bodyFinal": [
+          400,
+          50,
+          200
+        ],
+        "baseline": [
+          400,
+          150,
+          100
+        ],
+        "harmed": true,
+        "final": [
+          400,
+          150,
+          100
+        ]
+      },
+      "example3_B": {
+        "bodyFinal": [
+          270,
+          0,
+          230
+        ],
+        "baseline": [
+          500,
+          0,
+          0
+        ],
+        "harmed": false,
+        "final": [
+          270,
+          0,
+          230
+        ]
+      },
+      "question6": {
+        "bodyFinal": [
+          300,
+          30,
+          120
+        ],
+        "baseline": [
+          300,
+          100,
+          50
+        ],
+        "harmed": true,
+        "final": [
+          300,
+          100,
+          50
+        ]
+      },
+      "question7": {
+        "bodyFinal": [
+          200,
+          0,
+          200
+        ],
+        "baseline": [
+          400,
+          0,
+          0
+        ],
+        "harmed": false,
+        "final": [
+          200,
+          0,
+          200
+        ]
+      },
+      "method": "sequential allocation and private-pool reallocation compared; author verification, independent review pending"
+    },
+    "structureChecks": {
+      "checkedOn": "2026-10-27",
+      "bodyCharacters": 6870,
+      "uniqueQuestions": 15,
+      "objectiveMapping": "actual two plan goals matched; both have applied evidence; 1-based refs checked",
+      "allReviewStatuses": "pending",
+      "publication": "draft"
+    }
+  }
+}

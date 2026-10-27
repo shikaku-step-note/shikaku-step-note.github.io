@@ -1,0 +1,1748 @@
+{
+  "id": "zr2-boki-cash-core-review",
+  "subject": "boki",
+  "title": "現金・預金・債権の基幹6講：独立単元演習A・B",
+  "stage": "総合",
+  "moduleId": "zr2-boki-unit-cash",
+  "type": "unit-review",
+  "notFullMock": true,
+  "minutes": 150,
+  "durationStatus": "著者の暫定値。受講者の実測前",
+  "prerequisites": [
+    "zr2-boki-cash-count",
+    "zr2-boki-bank-reconciliation",
+    "zr2-boki-bills-receivable",
+    "zr2-boki-receivable-transfers",
+    "zr2-boki-credit-loss-measurement",
+    "zr2-boki-bad-debt-dcf"
+  ],
+  "targetLessonIds": [
+    "zr2-boki-cash-count",
+    "zr2-boki-bank-reconciliation",
+    "zr2-boki-bills-receivable",
+    "zr2-boki-receivable-transfers",
+    "zr2-boki-credit-loss-measurement",
+    "zr2-boki-bad-debt-dcf"
+  ],
+  "objectives": [
+    "実査・仮処理・未精算と郵券を資料の時点から整理する",
+    "銀行の両側残高と誤記・未交付・借越を照合する",
+    "手形の取引原因・消滅・不渡り・期間利息を区分する",
+    "電子記録と支配移転・新規対価・残存原価を判断する",
+    "信用状態・担保保証・引当残高と繰入れ・実績率を結び付ける",
+    "DCFを複数時点でつなぎ、変更損失と時間経過を区分する"
+  ],
+  "lawAsOf": "2026-04-03",
+  "accountingStandardsBasis": "金融商品会計基準2019-07-04、移管指針9号2025-03-11等。後発2026年改正は自動採用しない",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "questionCount": 30,
+  "totalPoints": 100,
+  "forms": [
+    {
+      "id": "zr2-boki-cash-core-review-a",
+      "title": "基幹6講復習A",
+      "questionIds": [
+        "zr2-boki-cash-core-review-q1",
+        "zr2-boki-cash-core-review-q3",
+        "zr2-boki-cash-core-review-q5",
+        "zr2-boki-cash-core-review-q7",
+        "zr2-boki-cash-core-review-q9",
+        "zr2-boki-cash-core-review-q11",
+        "zr2-boki-cash-core-review-q13",
+        "zr2-boki-cash-core-review-q15",
+        "zr2-boki-cash-core-review-q17",
+        "zr2-boki-cash-core-review-q19",
+        "zr2-boki-cash-core-review-q21",
+        "zr2-boki-cash-core-review-q23",
+        "zr2-boki-cash-core-review-q25",
+        "zr2-boki-cash-core-review-q27",
+        "zr2-boki-cash-core-review-q29"
+      ],
+      "totalPoints": 50,
+      "suggestedMinutes": 75
+    },
+    {
+      "id": "zr2-boki-cash-core-review-b",
+      "title": "基幹6講復習B",
+      "questionIds": [
+        "zr2-boki-cash-core-review-q2",
+        "zr2-boki-cash-core-review-q4",
+        "zr2-boki-cash-core-review-q6",
+        "zr2-boki-cash-core-review-q8",
+        "zr2-boki-cash-core-review-q10",
+        "zr2-boki-cash-core-review-q12",
+        "zr2-boki-cash-core-review-q14",
+        "zr2-boki-cash-core-review-q16",
+        "zr2-boki-cash-core-review-q18",
+        "zr2-boki-cash-core-review-q20",
+        "zr2-boki-cash-core-review-q22",
+        "zr2-boki-cash-core-review-q24",
+        "zr2-boki-cash-core-review-q26",
+        "zr2-boki-cash-core-review-q28",
+        "zr2-boki-cash-core-review-q30"
+      ],
+      "totalPoints": 50,
+      "suggestedMinutes": 75
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-boki-cash-core-review-q1",
+      "field": "boki",
+      "lesson": "zr2-boki-cash-count",
+      "objectives": [
+        1
+      ],
+      "prompt": "金庫の中に会社所有の紙幣硬貨148,000円、直ちに換金できる通常の得意先振出小切手72,000円、未使用郵便切手15,000円、従業員への貸付を示す借用証20,000円、振出処理済みだが未交付の自社小切手30,000円がある。現金勘定の実際有高と、その理由が正しい組合せを選んでください。",
+      "options": [
+        "220,000円。紙幣硬貨と得意先振出小切手を含める",
+        "250,000円。自社小切手も会社が持つので含める",
+        "235,000円。郵券は将来使えるので現金に含める",
+        "240,000円。借用証は返済請求できるので現金に含める"
+      ],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bookkeeping-official",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない"
+        },
+        {
+          "sourceId": "ac2-cash-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない"
+        },
+        {
+          "sourceId": "ac2-petty-boki73",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+          "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない"
+        },
+        {
+          "sourceId": "jcci-cash125",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+          "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない"
+        },
+        {
+          "sourceId": "jcci-cash142",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+          "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明"
+        },
+        {
+          "sourceId": "jcci-petty150",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+          "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図"
+        },
+        {
+          "sourceId": "jcci-petty124",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+          "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明"
+        }
+      ],
+      "reviewState": "pending",
+      "explanation": "148,000＋72,000＝220,000円。自社小切手は自社への資金請求権ではなく、未交付なら必要な帳簿修正を別に検討する。郵券は貯蔵品等、借用証は貸付金の証憑である。保管場所だけを基準にすべてを現金へ含めると、現金と他の資産や帳簿修正が混ざる。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q2",
+      "field": "boki",
+      "lesson": "zr2-boki-cash-count",
+      "objectives": [
+        2
+      ],
+      "prompt": "実査時に現金不足6,300円を「現金過不足6,300／現金6,300」と仮処理した。その後、現金で払った旅費4,600円と、売掛金の現金回収2,500円が両方未記帳と判明した。他の原因は不明のまま決算を迎える。判明分の仕訳と原因不明残額の決算仕訳を示し、現金を再度動かさない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bookkeeping-official",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない"
+        },
+        {
+          "sourceId": "ac2-cash-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない"
+        },
+        {
+          "sourceId": "ac2-petty-boki73",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+          "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない"
+        },
+        {
+          "sourceId": "jcci-cash125",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+          "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない"
+        },
+        {
+          "sourceId": "jcci-cash142",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+          "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明"
+        },
+        {
+          "sourceId": "jcci-petty150",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+          "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図"
+        },
+        {
+          "sourceId": "jcci-petty124",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+          "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "旅費4,600／現金過不足4,600、現金過不足2,500／売掛金2,500。仮処理後の現金過不足は借方6,300−4,600＋2,500＝4,200円である。雑損4,200／現金過不足4,200として終える。実査時に現金勘定を実際有高へ合わせているので、判明分を現金の増減で再記帳すると二重に修正する。回収漏れは不足を減らす向きと決めず、仮勘定の貸借から追う。",
+      "explanation": "旅費4,600／現金過不足4,600、現金過不足2,500／売掛金2,500。仮処理後の現金過不足は借方6,300−4,600＋2,500＝4,200円である。雑損4,200／現金過不足4,200として終える。実査時に現金勘定を実際有高へ合わせているので、判明分を現金の増減で再記帳すると二重に修正する。回収漏れは不足を減らす向きと決めず、仮勘定の貸借から追う。",
+      "rubric": [
+        {
+          "criterion": "判明した旅費と売掛金回収を仮勘定で正しく記録",
+          "points": 1
+        },
+        {
+          "criterion": "残る借方4,200円と雑損への振替",
+          "points": 1
+        },
+        {
+          "criterion": "実査時修正済みの現金を再修正しない理由",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q3",
+      "field": "boki",
+      "lesson": "zr2-boki-cash-count",
+      "objectives": [
+        3
+      ],
+      "prompt": "小口現金の定額は80,000円。3月31日、旅費18,000円、通信費8,400円、雑費4,800円の支払報告が会計係に届いた。いずれも未記帳で、実際の小口現金は48,800円だった。補給は4月2日に当座預金から行った。3月31日と4月2日の仕訳及び3月31日の小口現金残高を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bookkeeping-official",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない"
+        },
+        {
+          "sourceId": "ac2-cash-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない"
+        },
+        {
+          "sourceId": "ac2-petty-boki73",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+          "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない"
+        },
+        {
+          "sourceId": "jcci-cash125",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+          "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない"
+        },
+        {
+          "sourceId": "jcci-cash142",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+          "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明"
+        },
+        {
+          "sourceId": "jcci-petty150",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+          "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図"
+        },
+        {
+          "sourceId": "jcci-petty124",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+          "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "報告額は18,000＋8,400＋4,800＝31,200円。3月31日は旅費18,000・通信費8,400・雑費4,800／小口現金31,200とし、決算残高は80,000−31,200＝48,800円。4月2日に小口現金31,200／当座預金31,200とする。3月31日に未実施の補給まで記録して定額80,000円へ戻さない。",
+      "explanation": "報告額は18,000＋8,400＋4,800＝31,200円。3月31日は旅費18,000・通信費8,400・雑費4,800／小口現金31,200とし、決算残高は80,000−31,200＝48,800円。4月2日に小口現金31,200／当座預金31,200とする。3月31日に未実施の補給まで記録して定額80,000円へ戻さない。",
+      "rubric": [
+        {
+          "criterion": "支払報告31,200円の費用・小口現金の仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "決算残高48,800円",
+          "points": 1
+        },
+        {
+          "criterion": "4月2日に補給だけを別に仕訳",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q4",
+      "field": "boki",
+      "lesson": "zr2-boki-cash-count",
+      "objectives": [
+        4
+      ],
+      "prompt": "期首の未使用郵券5,000円は貯蔵品のままで、当期費用への振替が未処理である。当期購入24,000円は通信費／現金で正しく記帳済み。期末未使用郵券は8,000円である。期首と期末の整理仕訳、当期の通信費、現金勘定を追加修正する必要の有無と理由を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bookkeeping-official",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない"
+        },
+        {
+          "sourceId": "ac2-cash-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない"
+        },
+        {
+          "sourceId": "ac2-petty-boki73",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+          "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない"
+        },
+        {
+          "sourceId": "jcci-cash125",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+          "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない"
+        },
+        {
+          "sourceId": "jcci-cash142",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+          "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明"
+        },
+        {
+          "sourceId": "jcci-petty150",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+          "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図"
+        },
+        {
+          "sourceId": "jcci-petty124",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+          "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "期首分は通信費5,000／貯蔵品5,000、期末分は貯蔵品8,000／通信費8,000。当期通信費は5,000＋24,000−8,000＝21,000円となる。期末貯蔵品は8,000円。現金支出24,000円は購入時に記録済みなので、郵券の費用と資産の配分を変える整理で現金を再び減らさない。",
+      "explanation": "期首分は通信費5,000／貯蔵品5,000、期末分は貯蔵品8,000／通信費8,000。当期通信費は5,000＋24,000−8,000＝21,000円となる。期末貯蔵品は8,000円。現金支出24,000円は購入時に記録済みなので、郵券の費用と資産の配分を変える整理で現金を再び減らさない。",
+      "rubric": [
+        {
+          "criterion": "期首分5,000円の費用振替",
+          "points": 1
+        },
+        {
+          "criterion": "期末分8,000円の貯蔵品振替",
+          "points": 1
+        },
+        {
+          "criterion": "当期通信費21,000円",
+          "points": 1
+        },
+        {
+          "criterion": "購入記帳済みという条件から現金追加修正なしと説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q5",
+      "field": "boki",
+      "lesson": "zr2-boki-cash-count",
+      "objectives": [
+        1,
+        3
+      ],
+      "prompt": "出張時の仮払金45,000円が帳簿に残っている。精算証憑では旅費27,000円、消耗品費8,000円で、残り10,000円は会社へ返金されていたが精算・返金とも未記帳だった。実査の通貨190,000円にはこの返金を含み、現金帳簿は180,000円である。他に差はない。精算仕訳、修正後現金残高、10,000円を原因不明の現金過剰としない理由を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bookkeeping-official",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない"
+        },
+        {
+          "sourceId": "ac2-cash-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない"
+        },
+        {
+          "sourceId": "ac2-petty-boki73",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+          "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない"
+        },
+        {
+          "sourceId": "jcci-cash125",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+          "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない"
+        },
+        {
+          "sourceId": "jcci-cash142",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+          "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明"
+        },
+        {
+          "sourceId": "jcci-petty150",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+          "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図"
+        },
+        {
+          "sourceId": "jcci-petty124",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+          "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "旅費27,000・消耗品費8,000・現金10,000／仮払金45,000。修正後現金は190,000円で実査と一致する。返金という原因が判明しているため、現金過不足から雑益へ落とす差ではない。返金10,000円を通貨190,000円へさらに足して実際有高200,000円にもしない。",
+      "explanation": "旅費27,000・消耗品費8,000・現金10,000／仮払金45,000。修正後現金は190,000円で実査と一致する。返金という原因が判明しているため、現金過不足から雑益へ落とす差ではない。返金10,000円を通貨190,000円へさらに足して実際有高200,000円にもしない。",
+      "rubric": [
+        {
+          "criterion": "仮払45,000円を費用35,000円と返金10,000円で精算",
+          "points": 1
+        },
+        {
+          "criterion": "修正後現金190,000円で実査と一致",
+          "points": 1
+        },
+        {
+          "criterion": "原因判明と実査への返金包含を理由に過剰・二重加算を避ける",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q6",
+      "field": "boki",
+      "lesson": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        1
+      ],
+      "prompt": "会社の当座預金帳簿は350,000円、銀行残高証明は410,000円である。交付済み未取付小切手70,000円、会社入金記帳済みで銀行未取立の入金20,000円がある。銀行手数料5,000円と借入元本の銀行自動引落35,000円は銀行記帳済み・会社未記帳。さらに銀行が別会社の入金50,000円を当社へ誤って加算している。他の差はない。双方の修正後残高と会社の修正仕訳を示し、銀行誤処理に会社仕訳を作るか説明してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bank-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第三問・資料2・2(2)、印刷A16"
+        },
+        {
+          "sourceId": "ac2-bank-zaimu71",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+          "location": "第三問・資料2・1(2)、印刷B11"
+        },
+        {
+          "sourceId": "financial-regulations",
+          "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+          "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "会社側は350,000−5,000−35,000＝310,000円。銀行側は410,000−70,000＋20,000−50,000＝310,000円で一致する。会社は支払手数料5,000／当座預金5,000、借入金35,000／当座預金35,000とする。銀行が誤加算した50,000円は銀行側で訂正される差であり、正しい会社帳簿へ同額の費用や入金仕訳を作らない。",
+      "explanation": "会社側は350,000−5,000−35,000＝310,000円。銀行側は410,000−70,000＋20,000−50,000＝310,000円で一致する。会社は支払手数料5,000／当座預金5,000、借入金35,000／当座預金35,000とする。銀行が誤加算した50,000円は銀行側で訂正される差であり、正しい会社帳簿へ同額の費用や入金仕訳を作らない。",
+      "rubric": [
+        {
+          "criterion": "会社側310,000円",
+          "points": 1
+        },
+        {
+          "criterion": "銀行側310,000円と各符号",
+          "points": 1
+        },
+        {
+          "criterion": "会社の手数料・借入元本の仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "銀行誤処理は会社側に仕訳しないと説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q7",
+      "field": "boki",
+      "lesson": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        2
+      ],
+      "prompt": "会社は仕入先への支払小切手40,000円を作成し、買掛金／当座預金で記帳したが、決算日にも経理係の机に保管し先方へ渡していない。会社帳簿は90,000円、銀行残高は130,000円で、他の差はない。適切な整理を選んでください。",
+      "options": [
+        "交付済み未取付なので会社仕訳なし、会社残高90,000円とする",
+        "未渡なので当座預金40,000／買掛金40,000とし、会社残高130,000円とする",
+        "小切手支払を追加し、会社残高50,000円とする",
+        "当座預金40,000／雑益40,000とし、会社残高130,000円とする"
+      ],
+      "answer": 1,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bank-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第三問・資料2・2(2)、印刷A16"
+        },
+        {
+          "sourceId": "ac2-bank-zaimu71",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+          "location": "第三問・資料2・1(2)、印刷B11"
+        },
+        {
+          "sourceId": "financial-regulations",
+          "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+          "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合"
+        }
+      ],
+      "reviewState": "pending",
+      "explanation": "未交付という事実から未渡小切手であり、先行した支払記帳を戻す。残高は90,000＋40,000＝130,000円、買掛金も復活する。1は交付済みとの取り違え、3は支払の二重記帳、4は負債を復活させず架空利益にする処理である。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q8",
+      "field": "boki",
+      "lesson": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        3
+      ],
+      "prompt": "当座預金の整理前借方残高は145,000円である。買掛金の正しい支払額82,600円を28,600円と誤記した以外に差はない。誤記訂正後の当座預金残高だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bank-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第三問・資料2・2(2)、印刷A16"
+        },
+        {
+          "sourceId": "ac2-bank-zaimu71",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+          "location": "第三問・資料2・1(2)、印刷B11"
+        },
+        {
+          "sourceId": "financial-regulations",
+          "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+          "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "91000"
+      ],
+      "explanation": "支払の過少記帳82,600−28,600＝54,000円を追加減額するので、145,000−54,000＝91,000円。訂正仕訳は買掛金54,000／当座預金54,000。正額82,600円を丸ごともう一度引く処理ではない。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q9",
+      "field": "boki",
+      "lesson": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        4
+      ],
+      "prompt": "次は担当者作成の未検証資料である。A銀行の当座預金は帳簿貸方残高240,000円、銀行の貸越残高230,000円。銀行引落の手数料10,000円が会社未記帳で、担当者は「これを除く照合差はない」と述べている。B銀行の普通預金は380,000円で差がない。負の残高を用いてA銀行が一致するか点検し、不一致ならその額と追加調査の要否を示してください。会社の既知の修正事項だけを反映した手数料仕訳、当座借越への決算振替、銀行間で相殺しない貸借対照表の預金・短期借入金の額も示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bank-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第三問・資料2・2(2)、印刷A16"
+        },
+        {
+          "sourceId": "ac2-bank-zaimu71",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+          "location": "第三問・資料2・1(2)、印刷B11"
+        },
+        {
+          "sourceId": "financial-regulations",
+          "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+          "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "貸越は負の預金残高なので、会社は−240,000−10,000＝−250,000円となるが、銀行は−230,000円であり、提示資料は20,000円一致しない。手数料は支払手数料10,000／当座預金10,000。会社の既知の正しい修正からは当座預金250,000／当座借越250,000と振り替える。既知の帳簿額を用いた表示は預金380,000円、短期借入金250,000円。ただし完全な照合済み残高とはせず、銀行側20,000円等の追加調査が必要である。手数料の符号を逆にして一致を作らない。",
+      "explanation": "貸越は負の預金残高なので、会社は−240,000−10,000＝−250,000円となるが、銀行は−230,000円であり、提示資料は20,000円一致しない。手数料は支払手数料10,000／当座預金10,000。会社の既知の正しい修正からは当座預金250,000／当座借越250,000と振り替える。既知の帳簿額を用いた表示は預金380,000円、短期借入金250,000円。ただし完全な照合済み残高とはせず、銀行側20,000円等の追加調査が必要である。手数料の符号を逆にして一致を作らない。",
+      "rubric": [
+        {
+          "criterion": "負の残高−250,000円と銀行−230,000円の不一致20,000円を指摘",
+          "points": 1
+        },
+        {
+          "criterion": "手数料の仕訳と250,000円の決算振替",
+          "points": 1
+        },
+        {
+          "criterion": "預金380,000円・短期借入金250,000円を別表示",
+          "points": 1
+        },
+        {
+          "criterion": "既知帳簿による仮定と追加調査を明示し架空の調整で一致させない",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q10",
+      "field": "boki",
+      "lesson": "zr2-boki-bank-reconciliation",
+      "objectives": [
+        1,
+        3
+      ],
+      "prompt": "修正後残高は帳簿・銀行とも210,000円になる。会社には当座預金へ入金された売掛金回収86,400円を68,400円とした入金過少記帳と、銀行手数料3,000円の未記帳がある。銀行側には交付済み未取付27,000円、会社記帳済みの未取立入金9,000円、銀行による誤引落12,000円がある。他の差はない。修正前の帳簿・銀行残高を逆算し、会社の訂正仕訳も示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "ac2-bank-boki74",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+          "location": "第三問・資料2・2(2)、印刷A16"
+        },
+        {
+          "sourceId": "ac2-bank-zaimu71",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+          "location": "第三問・資料2・1(2)、印刷B11"
+        },
+        {
+          "sourceId": "financial-regulations",
+          "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+          "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "会社の純修正は＋18,000−3,000＝＋15,000円なので整理前帳簿は195,000円。銀行の純修正は−27,000＋9,000＋12,000＝−6,000円なので修正前銀行残高は216,000円。会社は当座預金18,000／売掛金18,000、支払手数料3,000／当座預金3,000とする。銀行誤引落の12,000円を会社費用へ移さない。",
+      "explanation": "会社の純修正は＋18,000−3,000＝＋15,000円なので整理前帳簿は195,000円。銀行の純修正は−27,000＋9,000＋12,000＝−6,000円なので修正前銀行残高は216,000円。会社は当座預金18,000／売掛金18,000、支払手数料3,000／当座預金3,000とする。銀行誤引落の12,000円を会社費用へ移さない。",
+      "rubric": [
+        {
+          "criterion": "整理前会社195,000円と純修正15,000円",
+          "points": 1
+        },
+        {
+          "criterion": "整理前銀行216,000円と純修正−6,000円",
+          "points": 1
+        },
+        {
+          "criterion": "会社の差額訂正18,000円と手数料3,000円の仕訳",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q11",
+      "field": "boki",
+      "lesson": "zr2-boki-bills-receivable",
+      "objectives": [
+        1
+      ],
+      "prompt": "受取手形250,000円の内訳を調べると、商品販売により受け取った手形120,000円、備品売却による手形80,000円、貸付金50,000円を借用目的の手形受領時に振り替えたものだった。金利の別処理は不要、すべて有効な未決済債権である。取引原因に即して三つの表示科目と額、誤った振替を戻す仕訳、今回の区分訂正による現金増減額を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。"
+        },
+        {
+          "sourceId": "ac2-bills-law",
+          "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+          "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。"
+        },
+        {
+          "sourceId": "ac2-accounting-principles",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "営業上の受取手形120,000円、営業外受取手形80,000円、貸付金50,000円とする。表示用の振替は営業外受取手形80,000・貸付金50,000／受取手形130,000。借用目的で手形を受け取っても貸付金の性質が変わるわけではない。今回は債権間の区分訂正だけで、現金増減0円、合計債権250,000円のままである。",
+      "explanation": "営業上の受取手形120,000円、営業外受取手形80,000円、貸付金50,000円とする。表示用の振替は営業外受取手形80,000・貸付金50,000／受取手形130,000。借用目的で手形を受け取っても貸付金の性質が変わるわけではない。今回は債権間の区分訂正だけで、現金増減0円、合計債権250,000円のままである。",
+      "rubric": [
+        {
+          "criterion": "営業120,000円・営業外80,000円の区分",
+          "points": 1
+        },
+        {
+          "criterion": "金融手形の貸付金50,000円を維持",
+          "points": 1
+        },
+        {
+          "criterion": "振替130,000円の仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "現金0円と債権合計250,000円の検算",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q12",
+      "field": "boki",
+      "lesson": "zr2-boki-bills-receivable",
+      "objectives": [
+        2
+      ],
+      "prompt": "帳簿価額と額面が同じ915,000円の手形を銀行で割り引いた。割引料は年2.4％、指定日数50日、365日基準で計算し1円未満切捨て。消滅要件を満たし、新たな保証債務の時価は6,600円、他の対価や費用はない。割引時に計上する譲渡損失だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。"
+        },
+        {
+          "sourceId": "ac2-bills-law",
+          "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+          "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。"
+        },
+        {
+          "sourceId": "ac2-accounting-principles",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "9608"
+      ],
+      "explanation": "割引料915,000×2.4％×50/365＝3,008円、入金911,992円。保証債務を控除した譲渡金額は905,392円なので損失9,608円。仕訳は預金911,992・手形売却損9,608／受取手形915,000・保証債務6,600で各921,600円。割引料だけを損失にする解答は保証債務を落としている。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q13",
+      "field": "boki",
+      "lesson": "zr2-boki-bills-receivable",
+      "objectives": [
+        3
+      ],
+      "prompt": "既に消滅処理した裏書手形280,000円が不渡りとなった。会社は適法な遡求請求を受けて額面と返還請求できる費用1,500円を支払い、前者へ同額を請求する権利を取得した。保証債務の期首・現在計上額と当初時価は0円とする。全額回収見込みで金利の重要性はなく、その後80,000円を回収した。支払時・回収時の仕訳と残る不渡手形を示し、受取手形を二重に減らさない理由を述べてください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。"
+        },
+        {
+          "sourceId": "ac2-bills-law",
+          "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+          "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。"
+        },
+        {
+          "sourceId": "ac2-accounting-principles",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "不渡手形281,500／預金281,500、預金80,000／不渡手形80,000。残高は201,500円。裏書時に受取手形は消滅済みなので、今回さらに受取手形280,000円を貸記しない。権利取得額と回収可能性を区別し、本問は請求権・費用・回収見込みが与えられている条件を使う。",
+      "explanation": "不渡手形281,500／預金281,500、預金80,000／不渡手形80,000。残高は201,500円。裏書時に受取手形は消滅済みなので、今回さらに受取手形280,000円を貸記しない。権利取得額と回収可能性を区別し、本問は請求権・費用・回収見込みが与えられている条件を使う。",
+      "rubric": [
+        {
+          "criterion": "請求可能費用込み281,500円の請求権取得を仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "回収仕訳と残高201,500円",
+          "points": 1
+        },
+        {
+          "criterion": "裏書時に消滅済みであることから二重減額を避ける",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q14",
+      "field": "boki",
+      "lesson": "zr2-boki-bills-receivable",
+      "objectives": [
+        4
+      ],
+      "prompt": "12月1日満期の手形600,000円を5か月後の5月1日満期に更改し、5か月分の利息を年6％・月割りで現金前受けした。決算日は12月31日で、利息計算上は1か月が経過したものと指定する。更改による元本額の変更はなく、他の減損要因もない。受領利息、当期受取利息、期末前受利息と元本残高、利息の受領時・決算時の仕訳を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。"
+        },
+        {
+          "sourceId": "ac2-bills-law",
+          "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+          "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。"
+        },
+        {
+          "sourceId": "ac2-accounting-principles",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "利息総額は600,000×6％×5/12＝15,000円。当期分は1か月分3,000円、前受残12,000円、元本600,000円。受領時は現金15,000／前受利息15,000、決算は前受利息3,000／受取利息3,000とする。元本の旧手形と新手形を管理上区別するが、元本を15,000円増やしたり新旧を二重に保有しない。",
+      "explanation": "利息総額は600,000×6％×5/12＝15,000円。当期分は1か月分3,000円、前受残12,000円、元本600,000円。受領時は現金15,000／前受利息15,000、決算は前受利息3,000／受取利息3,000とする。元本の旧手形と新手形を管理上区別するが、元本を15,000円増やしたり新旧を二重に保有しない。",
+      "rubric": [
+        {
+          "criterion": "受領利息15,000円",
+          "points": 1
+        },
+        {
+          "criterion": "当期3,000円・前受12,000円",
+          "points": 1
+        },
+        {
+          "criterion": "受領時と決算時の二段階仕訳",
+          "points": 1
+        },
+        {
+          "criterion": "元本600,000円を維持",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q15",
+      "field": "boki",
+      "lesson": "zr2-boki-bills-receivable",
+      "objectives": [
+        4
+      ],
+      "prompt": "金利部分に重要性がある額面242,000円・2年後一括回収の手形を、当初200,000円で記録し年10％の実効利子率で計算している。1年経過時の利息認識後すぐに入金239,000円で譲渡し、消滅要件を満たした。新たな保証債務は3,000円、他の対価・費用はない。譲渡益だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。"
+        },
+        {
+          "sourceId": "ac2-bills-law",
+          "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+          "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。"
+        },
+        {
+          "sourceId": "ac2-accounting-principles",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "16000"
+      ],
+      "explanation": "1年後帳簿は200,000×1.1＝220,000円。譲渡金額239,000−3,000＝236,000円との差16,000円が利益。額面242,000円と現金239,000円だけで3,000円の損失としない。利息20,000円は既に認識した期間収益であり、譲渡益へ再加算しない。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q16",
+      "field": "boki",
+      "lesson": "zr2-boki-receivable-transfers",
+      "objectives": [
+        1
+      ],
+      "prompt": "売掛金390,000円のうち260,000円について、電子記録債権の発生記録が有効に行われた。別の70,000円は記録の申請だけで決算日にも発生記録がない。発生済み260,000円のうち90,000円が銀行で決済され、決済記録も完了した。初めの売掛金以外の整理前債権はなく、他の取引もない。発生・決済の仕訳、売掛金・電子記録債権・預金増加の期末額を示し、申請分70,000円の扱いも説明してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理"
+        },
+        {
+          "sourceId": "ac2-electronic-claims",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+          "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+        },
+        {
+          "sourceId": "ac2-electronic-claims-law",
+          "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+          "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+        },
+        {
+          "sourceId": "fsa-factoring-definition",
+          "url": "https://www.fsa.go.jp/user/factoring.html",
+          "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "電子記録債権260,000／売掛金260,000、預金90,000／電子記録債権90,000。残る売掛金130,000円、電子記録債権170,000円、預金増加90,000円で、合計390,000円となる。70,000円は発生記録前であり、申請だけを理由に売掛金から追加振替しない。",
+      "explanation": "電子記録債権260,000／売掛金260,000、預金90,000／電子記録債権90,000。残る売掛金130,000円、電子記録債権170,000円、預金増加90,000円で、合計390,000円となる。70,000円は発生記録前であり、申請だけを理由に売掛金から追加振替しない。",
+      "rubric": [
+        {
+          "criterion": "有効な発生260,000円の振替",
+          "points": 1
+        },
+        {
+          "criterion": "決済90,000円と電子記録債権残170,000円",
+          "points": 1
+        },
+        {
+          "criterion": "売掛金130,000円・預金増90,000円と合計検算",
+          "points": 1
+        },
+        {
+          "criterion": "未発生の申請分を追加振替しない理由",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q17",
+      "field": "boki",
+      "lesson": "zr2-boki-receivable-transfers",
+      "objectives": [
+        2
+      ],
+      "prompt": "帳簿価額500,000円の売掛債権を資金調達先へ差し入れ、480,000円の入金を受けた。契約と事実を調べると支配移転の三要件を満たさず、実質も担保付き借入れと確定している。手数料等はない。適切な処理を選んでください。",
+      "options": [
+        "売掛金を全額消し、差額20,000円を損失にする",
+        "売掛金500,000円を残し、入金480,000円と借入金480,000円を記録する",
+        "売掛金を20,000円だけ残し、借入金は記録しない",
+        "売掛金500,000円を残し、入金480,000円を売上にする"
+      ],
+      "answer": 1,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理"
+        },
+        {
+          "sourceId": "ac2-electronic-claims",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+          "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+        },
+        {
+          "sourceId": "ac2-electronic-claims-law",
+          "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+          "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+        },
+        {
+          "sourceId": "fsa-factoring-definition",
+          "url": "https://www.fsa.go.jp/user/factoring.html",
+          "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
+        }
+      ],
+      "reviewState": "pending",
+      "explanation": "消滅要件を満たさない担保借入れなので預金480,000／借入金480,000とし、売掛金500,000円を残す。1は譲渡の消滅と取り違え、3は部分消滅の根拠がなく、4は資金調達を収益にしている。資金の受領だけで元の債権を消さない。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q18",
+      "field": "boki",
+      "lesson": "zr2-boki-receivable-transfers",
+      "objectives": [
+        3
+      ],
+      "prompt": "帳簿価額760,000円の債権を全額譲渡して消滅要件を満たした。受取預金745,000円のほか、新たに受領した異種有価証券の時価18,000円、新たな保証債務の時価7,000円がある。元の債権の残存部分と他の費用はない。譲渡損失を円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理"
+        },
+        {
+          "sourceId": "ac2-electronic-claims",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+          "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+        },
+        {
+          "sourceId": "ac2-electronic-claims-law",
+          "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+          "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+        },
+        {
+          "sourceId": "fsa-factoring-definition",
+          "url": "https://www.fsa.go.jp/user/factoring.html",
+          "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "4000"
+      ],
+      "explanation": "譲渡金額は745,000＋18,000−7,000＝756,000円、損失は4,000円。仕訳の借方は預金745,000・有価証券18,000・損失4,000、貸方は債権760,000・保証債務7,000で各767,000円。新規対価資産は元の債権残存部分への原価配分と区別する。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q19",
+      "field": "boki",
+      "lesson": "zr2-boki-receivable-transfers",
+      "objectives": [
+        4
+      ],
+      "prompt": "帳簿価額1,000,000円の金融資産の一部を譲渡して消滅要件を満たした。譲渡部分の時価840,000円、残存部分の時価360,000円、入金820,000円。新規対価資産・保証債務・追加費用はない。譲渡原価、残存部分の帳簿価額、譲渡損益を求め、時価をそのまま残高にしない理由と原価の検算を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理"
+        },
+        {
+          "sourceId": "ac2-electronic-claims",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+          "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+        },
+        {
+          "sourceId": "ac2-electronic-claims-law",
+          "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+          "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+        },
+        {
+          "sourceId": "fsa-factoring-definition",
+          "url": "https://www.fsa.go.jp/user/factoring.html",
+          "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "時価合計1,200,000円に対する比率で配分する。譲渡原価1,000,000×840,000/1,200,000＝700,000円、残存帳簿300,000円。譲渡益820,000−700,000＝120,000円。700,000＋300,000＝元の原価1,000,000円で一致する。残存部分の時価360,000円は配分比率の資料であり、この消滅時の原価配分だけで帳簿を360,000円へ引き上げない。",
+      "explanation": "時価合計1,200,000円に対する比率で配分する。譲渡原価1,000,000×840,000/1,200,000＝700,000円、残存帳簿300,000円。譲渡益820,000−700,000＝120,000円。700,000＋300,000＝元の原価1,000,000円で一致する。残存部分の時価360,000円は配分比率の資料であり、この消滅時の原価配分だけで帳簿を360,000円へ引き上げない。",
+      "rubric": [
+        {
+          "criterion": "譲渡原価700,000円",
+          "points": 1
+        },
+        {
+          "criterion": "残存原価300,000円",
+          "points": 1
+        },
+        {
+          "criterion": "譲渡益120,000円",
+          "points": 1
+        },
+        {
+          "criterion": "原価合計の検算と時価比率の役割",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q20",
+      "field": "boki",
+      "lesson": "zr2-boki-receivable-transfers",
+      "objectives": [
+        4
+      ],
+      "prompt": "帳簿価額800,000円の債権について資金回収権を譲渡し、回収サービス権を留保した。実務指針39項の資産認識条件を満たし、サービス期間は1年以内、譲渡部分の時価720,000円、残存サービス権の時価80,000円、入金720,000円で、他の対価等はない。後に、サービス権へ配分した原価の25％を対象債権残高に比例して償却する条件を満たした。消滅時の配分と譲渡損益、未収収益で記録するサービス権の償却額・償却後残高を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理"
+        },
+        {
+          "sourceId": "ac2-electronic-claims",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+          "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない"
+        },
+        {
+          "sourceId": "ac2-electronic-claims-law",
+          "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+          "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存"
+        },
+        {
+          "sourceId": "fsa-factoring-definition",
+          "url": "https://www.fsa.go.jp/user/factoring.html",
+          "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "消滅時は譲渡部分720,000円、残存サービス権80,000円へ元の原価800,000円を配分する。入金720,000−譲渡原価720,000＝譲渡損益0円。サービス権を新たに受領した資産として時価80,000円をさらに対価へ足す処理ではない。償却は80,000×25％＝20,000円、未収収益の残高60,000円。通常収益を上回るサービス権の認識条件と指定の償却条件がある例として扱う。",
+      "explanation": "消滅時は譲渡部分720,000円、残存サービス権80,000円へ元の原価800,000円を配分する。入金720,000−譲渡原価720,000＝譲渡損益0円。サービス権を新たに受領した資産として時価80,000円をさらに対価へ足す処理ではない。償却は80,000×25％＝20,000円、未収収益の残高60,000円。通常収益を上回るサービス権の認識条件と指定の償却条件がある例として扱う。",
+      "rubric": [
+        {
+          "criterion": "消滅時の原価配分720,000円・80,000円と損益0",
+          "points": 1
+        },
+        {
+          "criterion": "新規対価資産として二重加算しない区分",
+          "points": 1
+        },
+        {
+          "criterion": "償却20,000円・残高60,000円",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q21",
+      "field": "boki",
+      "lesson": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        1,
+        4
+      ],
+      "prompt": "A社は財政状態に大きな問題がなく、B社は経営悪化により元利金を約定どおり回収できない可能性が高いが経営破綻には至っていない。C社は法的に破綻している。C社向け帳簿500,000円には、利払日を1年以上過ぎ未受領で、回収不能と認められる当期計上の未収利息30,000円が含まれる。利息修正後の債権のうち担保による回収可能額100,000円以外は回収できない。三社の債権区分、C社の利息修正後帳簿と貸倒見積高を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "移管指針9・2025年3月11日版110〜115項、119項"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "Aは一般債権、Bは貸倒懸念債権、Cは破産更生債権等。Cの回収不能未収利息30,000円は収益計上を修正し、対象帳簿を470,000円とする。そのうえで担保回収100,000円を控除し、貸倒見積高370,000円。利息の回収不能を無視して500,000円に引当率だけを掛けたり、担保の存在だけで一般債権へ戻したりしない。",
+      "explanation": "Aは一般債権、Bは貸倒懸念債権、Cは破産更生債権等。Cの回収不能未収利息30,000円は収益計上を修正し、対象帳簿を470,000円とする。そのうえで担保回収100,000円を控除し、貸倒見積高370,000円。利息の回収不能を無視して500,000円に引当率だけを掛けたり、担保の存在だけで一般債権へ戻したりしない。",
+      "rubric": [
+        {
+          "criterion": "三社を状態に応じて正しく区分",
+          "points": 2
+        },
+        {
+          "criterion": "未収利息を修正し対象帳簿470,000円",
+          "points": 1
+        },
+        {
+          "criterion": "担保回収控除後370,000円の見積高",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q22",
+      "field": "boki",
+      "lesson": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        2
+      ],
+      "prompt": "貸倒懸念債権2,400,000円に財務内容評価法を適用する。担保処分による回収見込780,000円、保証の契約上限650,000円に対して履行能力等を検討した実際の保証回収見込420,000円。担保・保証の回収範囲に重複はない。残額の50％が回収不能と見積もられる。期末必要引当金残高だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "移管指針9・2025年3月11日版110〜115項、119項"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "600000"
+      ],
+      "explanation": "（2,400,000−780,000−420,000）×50％＝600,000円。保証の契約上限650,000円を機械的に控除せず、履行見込みを反映した420,000円を用いる。求めたのは期末必要残高であり、整理前引当金が不明なので当期繰入額とは呼ばない。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q23",
+      "field": "boki",
+      "lesson": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        3
+      ],
+      "prompt": "貸倒懸念債権の帳簿1,210,000円について、1年後220,000円、2年後968,000円の元利金回収を合理的に見積もれる。通常貸付金で、当初約定利子率10％を用いる条件が満たされている。現在の市場利率は5％。担保等の回収は提示額に全て含まれ、他の回収はない。現在価値と貸倒見積高を求め、使用する率の根拠も述べてください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "移管指針9・2025年3月11日版110〜115項、119項"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "現在価値は220,000/1.1＋968,000/1.1²＝200,000＋800,000＝1,000,000円。見積高は1,210,000−1,000,000＝210,000円。条件に従い当初約定利子率10％を用い、現在市場5％へ置き換えない。担保等は既に回収額へ含まれ、別に再控除しない。",
+      "explanation": "現在価値は220,000/1.1＋968,000/1.1²＝200,000＋800,000＝1,000,000円。見積高は1,210,000−1,000,000＝210,000円。条件に従い当初約定利子率10％を用い、現在市場5％へ置き換えない。担保等は既に回収額へ含まれ、別に再控除しない。",
+      "rubric": [
+        {
+          "criterion": "各回収時点を用いた現在価値1,000,000円",
+          "points": 1
+        },
+        {
+          "criterion": "貸倒見積高210,000円",
+          "points": 1
+        },
+        {
+          "criterion": "指定の当初率10％と市場率5％を区分",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q24",
+      "field": "boki",
+      "lesson": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        4
+      ],
+      "prompt": "貸倒引当金の期首貸方残高180,000円があり、当期に100,000円の貸倒れを同引当金から適切に取り崩した。このほか整理前までの増減はない。期末必要残高290,000円の場合、差額補充で計上する当期繰入額だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "移管指針9・2025年3月11日版110〜115項、119項"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "210000"
+      ],
+      "explanation": "整理前引当金は180,000−100,000＝80,000円。必要290,000−整理前80,000＝当期繰入210,000円。必要残高290,000円をそのまま費用にする解答も、期首180,000円を未減額のまま差し引く110,000円も誤り。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q25",
+      "field": "boki",
+      "lesson": "zr2-boki-credit-loss-measurement",
+      "objectives": [
+        5
+      ],
+      "prompt": "一般債権の実績率を求める。過去3算定期間について、各期間の開始時点の対象債権を同じ集団として追跡した資料は、①1,000,000円のうち貸倒30,000円、②800,000円のうち16,000円、③1,200,000円のうち48,000円である。各期間の率の単純平均を使う指定で、現在の信用リスクによる追加補正が不要であることも確認済み。現在一般債権2,000,000円に対する率と必要引当残高を求め、貸倒発生時点の別集団へ分母を入れ替えない理由を述べてください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "移管指針9・2025年3月11日版110〜115項、119項"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "各期間率は3％・2％・4％で、単純平均3％。現在残高2,000,000×3％＝60,000円が必要引当残高。同一の開始債権を追跡した分子・分母の関係を保ち、別集団の期末残高や売上高を分母にしない。94,000/3,000,000という加重計算をする指定でもない。実務では平均期間と現在リスクも検討するが、本問は条件を確認済みとしている。",
+      "explanation": "各期間率は3％・2％・4％で、単純平均3％。現在残高2,000,000×3％＝60,000円が必要引当残高。同一の開始債権を追跡した分子・分母の関係を保ち、別集団の期末残高や売上高を分母にしない。94,000/3,000,000という加重計算をする指定でもない。実務では平均期間と現在リスクも検討するが、本問は条件を確認済みとしている。",
+      "rubric": [
+        {
+          "criterion": "期間率3％・2％・4％と単純平均3％",
+          "points": 1
+        },
+        {
+          "criterion": "現在必要残高60,000円",
+          "points": 1
+        },
+        {
+          "criterion": "追跡対象の一致と指定平均方法を説明",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q26",
+      "field": "boki",
+      "lesson": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        1,
+        2
+      ],
+      "prompt": "通常貸付金1,452,000円の条件変更により今後の利息が免除され、元本1,452,000円を2年後に一括回収する合理的見込みである。当初約定利子率10％、市場利率8％で、10％を用いる条件が満たされる。初期の貸倒見積高と、回収予測不変・1年目現金回収なしの場合の1年後純額、必要引当残高、時間経過の利息収益を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 4,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "初期現在価値は1,452,000/1.1²＝1,200,000円、初期引当252,000円。1年後は残り1年なので純額1,320,000円、必要引当132,000円。時間経過の利息収益は1,200,000×10％＝120,000円で、同額だけ引当が減る。現金を受け取ったという意味ではなく、当初の割引が1期間分戻る。",
+      "explanation": "初期現在価値は1,452,000/1.1²＝1,200,000円、初期引当252,000円。1年後は残り1年なので純額1,320,000円、必要引当132,000円。時間経過の利息収益は1,200,000×10％＝120,000円で、同額だけ引当が減る。現金を受け取ったという意味ではなく、当初の割引が1期間分戻る。",
+      "rubric": [
+        {
+          "criterion": "初期現在価値1,200,000円と引当252,000円",
+          "points": 1
+        },
+        {
+          "criterion": "1年後純額1,320,000円",
+          "points": 1
+        },
+        {
+          "criterion": "必要引当132,000円",
+          "points": 1
+        },
+        {
+          "criterion": "時間経過の利息120,000円と現金なしを区分",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q27",
+      "field": "boki",
+      "lesson": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        2
+      ],
+      "prompt": "帳簿元本1,210,000円、残存2年の通常貸付金を、年末ごとに現金利息60,500円を受け取り2年末に元本を回収する条件へ変更した。当初約定利子率10％でDCFを計算し、初期純額は1,105,000円である。予測不変で1年目の利息60,500円を実際に回収した直後の、引当金控除後の純額だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "1155000"
+      ],
+      "explanation": "初期純額1,105,000×10％＝時間経過の利息110,500円。純額は1,105,000＋110,500−60,500＝1,155,000円。残り1年の元利回収1,270,500/1.1でも一致する。現金利息60,500円と収益110,500円を同額と決めず、必要引当は元本1,210,000−純額1,155,000＝55,000円となる。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q28",
+      "field": "boki",
+      "lesson": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        3
+      ],
+      "prompt": "帳簿元本726,000円の債権について、期首純額600,000円、引当126,000円だった。1年目に現金回収はなく、当初率10％による時間経過を反映すると、旧見積りに基づく純額660,000円となる。その時点で回収見込みを変更し、以後1年後の605,000円だけを回収すると合理的に見積もった。期末純額・必要引当、当期の時間経過収益・見積変更損失・両者の純損益を示してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "時間経過収益は600,000×10％＝60,000円。新しい純額は605,000/1.1＝550,000円、必要引当は726,000−550,000＝176,000円。時間経過後の旧純額660,000円から新純額550,000円への減額110,000円が見積変更損失である。純損益は60,000−110,000＝50,000円の損失。期首引当126,000円と期末176,000円の差50,000円だけを、変更損失110,000円と混同しない。",
+      "explanation": "時間経過収益は600,000×10％＝60,000円。新しい純額は605,000/1.1＝550,000円、必要引当は726,000−550,000＝176,000円。時間経過後の旧純額660,000円から新純額550,000円への減額110,000円が見積変更損失である。純損益は60,000−110,000＝50,000円の損失。期首引当126,000円と期末176,000円の差50,000円だけを、変更損失110,000円と混同しない。",
+      "rubric": [
+        {
+          "criterion": "時間経過収益60,000円と旧純額660,000円",
+          "points": 1
+        },
+        {
+          "criterion": "新純額550,000円・必要引当176,000円",
+          "points": 1
+        },
+        {
+          "criterion": "変更損失110,000円と純損失50,000円を区分",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q29",
+      "field": "boki",
+      "lesson": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        3
+      ],
+      "prompt": "貸倒懸念債権の帳簿1,100,000円に対し、1年後110,000円、2年後990,000円を回収する。使用率は当初率6％。各回収額の現在価値をそれぞれ1円単位に四捨五入してから合計する指定である。期末必要引当残高だけを円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "number",
+      "accepted": [
+        "115130"
+      ],
+      "explanation": "110,000/1.06は103,774円、990,000/1.06²は881,096円へそれぞれ四捨五入する。合計984,870円を帳簿1,100,000円から引き、必要引当115,130円。端数処理は本問の指定であり、すべての実務計算が必ずこの単位であるという意味ではない。"
+    },
+    {
+      "id": "zr2-boki-cash-core-review-q30",
+      "field": "boki",
+      "lesson": "zr2-boki-bad-debt-dcf",
+      "objectives": [
+        4
+      ],
+      "prompt": "貸倒懸念債権1,500,000円について、比較用の資料がある。財務内容評価法では担保回収500,000円を除く部分の25％が回収不能。DCFを適切に選択する場合は担保も含めた回収総額1,320,000円を1年後に回収し、当初率10％を用いる条件を満たす。二方法の見積高を示し、DCFで担保500,000円をさらに控除する処理、及び利益が多くなる方法を自由に選ぶという説明の問題を述べてください。",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "sourceAnchors": [
+        {
+          "sourceId": "asbj-finance",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "location": "2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。"
+        },
+        {
+          "sourceId": "ac2-finance-guide",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "location": "2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。"
+        }
+      ],
+      "reviewState": "pending",
+      "input": "essay",
+      "modelAnswer": "財務内容評価法は（1,500,000−500,000）×25％＝250,000円。DCFは1,320,000/1.1＝1,200,000円、見積高300,000円。DCFの回収額には担保を既に含めているので再控除は二重計算となる。二方法は見積りの信頼性、対象債権と採用条件に応じて判断し、当期利益の大小だけで任意に入れ替えない。",
+      "explanation": "財務内容評価法は（1,500,000−500,000）×25％＝250,000円。DCFは1,320,000/1.1＝1,200,000円、見積高300,000円。DCFの回収額には担保を既に含めているので再控除は二重計算となる。二方法は見積りの信頼性、対象債権と採用条件に応じて判断し、当期利益の大小だけで任意に入れ替えない。",
+      "rubric": [
+        {
+          "criterion": "財務内容評価法250,000円・DCF300,000円を計算",
+          "points": 1
+        },
+        {
+          "criterion": "担保回収をDCFで二重控除しない理由",
+          "points": 1
+        },
+        {
+          "criterion": "方法選択は条件によると説明",
+          "points": 1
+        }
+      ]
+    }
+  ],
+  "objectiveCoverage": {
+    "zr2-boki-cash-count": {
+      "1": [
+        "zr2-boki-cash-core-review-q1",
+        "zr2-boki-cash-core-review-q5"
+      ],
+      "2": [
+        "zr2-boki-cash-core-review-q2"
+      ],
+      "3": [
+        "zr2-boki-cash-core-review-q3",
+        "zr2-boki-cash-core-review-q5"
+      ],
+      "4": [
+        "zr2-boki-cash-core-review-q4"
+      ]
+    },
+    "zr2-boki-bank-reconciliation": {
+      "1": [
+        "zr2-boki-cash-core-review-q6",
+        "zr2-boki-cash-core-review-q10"
+      ],
+      "2": [
+        "zr2-boki-cash-core-review-q7"
+      ],
+      "3": [
+        "zr2-boki-cash-core-review-q8",
+        "zr2-boki-cash-core-review-q10"
+      ],
+      "4": [
+        "zr2-boki-cash-core-review-q9"
+      ]
+    },
+    "zr2-boki-bills-receivable": {
+      "1": [
+        "zr2-boki-cash-core-review-q11"
+      ],
+      "2": [
+        "zr2-boki-cash-core-review-q12"
+      ],
+      "3": [
+        "zr2-boki-cash-core-review-q13"
+      ],
+      "4": [
+        "zr2-boki-cash-core-review-q14",
+        "zr2-boki-cash-core-review-q15"
+      ]
+    },
+    "zr2-boki-receivable-transfers": {
+      "1": [
+        "zr2-boki-cash-core-review-q16"
+      ],
+      "2": [
+        "zr2-boki-cash-core-review-q17"
+      ],
+      "3": [
+        "zr2-boki-cash-core-review-q18"
+      ],
+      "4": [
+        "zr2-boki-cash-core-review-q19",
+        "zr2-boki-cash-core-review-q20"
+      ]
+    },
+    "zr2-boki-credit-loss-measurement": {
+      "1": [
+        "zr2-boki-cash-core-review-q21"
+      ],
+      "2": [
+        "zr2-boki-cash-core-review-q22"
+      ],
+      "3": [
+        "zr2-boki-cash-core-review-q23"
+      ],
+      "4": [
+        "zr2-boki-cash-core-review-q21",
+        "zr2-boki-cash-core-review-q24"
+      ],
+      "5": [
+        "zr2-boki-cash-core-review-q25"
+      ]
+    },
+    "zr2-boki-bad-debt-dcf": {
+      "1": [
+        "zr2-boki-cash-core-review-q26"
+      ],
+      "2": [
+        "zr2-boki-cash-core-review-q26",
+        "zr2-boki-cash-core-review-q27"
+      ],
+      "3": [
+        "zr2-boki-cash-core-review-q28",
+        "zr2-boki-cash-core-review-q29"
+      ],
+      "4": [
+        "zr2-boki-cash-core-review-q30"
+      ]
+    }
+  },
+  "sourceCandidates": [
+    {
+      "id": "ac2-bookkeeping-official",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+      "location": "2023年手引き5(1)、6(1)。帳簿組織と現金出納帳の一般的な記録。通貨代用証券・郵券・定額制度の個別分類は下記の出題者一次資料に照合。個人税務の処理は流用しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-cash-boki74",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+      "location": "第74回簿記論・第三問資料2の1(1)〜(2)、印刷A15（PDF17枚目）。現金実査物、郵券の購入時費用・期末貯蔵品振替、仮払精算、原因不明額の損益処理という出題条件。公式模範解答として扱わない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-petty-boki73",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/73/pdf/mondai_boki.pdf",
+      "location": "第73回簿記論・第三問資料2の1、印刷A16（PDF17枚目）と2(5)。定額資金前渡法・補給前残高・補給未処理を区別する公式問題の条件。本講の新作例題の解答根拠そのものという位置付けではない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-cash125",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/125-03-kouhyou.pdf",
+      "location": "第125回3級 出題の意図・講評、第4問、PDF3頁。期限到来利札のみを通貨代用証券とする説明、実査から仮処理と原因判明へ進む処理順序。旧年度の他論点の処理は援用しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-cash142",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+      "location": "第142回3級 出題の意図・講評、第1問5、PDF1〜2頁。紙幣・硬貨・得意先振出小切手の現金分類、郵便切手との区別、現金不足の仮処理を説明",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-petty150",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2019/01/150-03-kouhyou.pdf",
+      "location": "第150回3級 出題の意図・講評、第5問、PDF4頁。定期的な報告補充とは別に決算目的の記録を行い、使用のみを記録する出題意図",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "jcci-petty124",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-03-kouhyou.pdf",
+      "location": "第124回3級 出題の意図・講評、第2問、PDF2頁。定額資金前渡法、会計係・用度係の役割、使用合計と同額の補給を区別する説明",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-bank-boki74",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/74/pdf/mondai_boki.pdf",
+      "location": "第三問・資料2・2(2)、印刷A16"
+    },
+    {
+      "id": "ac2-bank-zaimu71",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/71/pdf/mondai_zaimu.pdf",
+      "location": "第三問・資料2・1(2)、印刷B11"
+    },
+    {
+      "id": "financial-regulations",
+      "url": "https://laws.e-gov.go.jp/law/338M50000040059_20260331_508M60000002028",
+      "location": "49条1項3号。e-Gov API asof=2026-04-03で版と原文を照合",
+      "verified": "2026-10-27",
+      "evidenceFile": "work/zeirishi-upgrade/reference-pages/financial-regulations-20260403.json"
+    },
+    {
+      "id": "asbj-finance",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+      "location": "2019年7月4日版7〜13項。金融資産・金融負債の認識と消滅、新たな資産負債。 / 2019年7月4日版・第7〜13項。印刷6〜7頁（PDF6〜7枚目）。特に8・9の消滅要件、12の時価比率配分、13の新資産負債。2026年10月の後続改正を4月3日基準日へ適用しない / 第27・28項、注9・注10。2019年7月4日改正。2026年10月27日に原文確認 / 2019年7月4日版27・28項、注9。貸倒懸念債権、方法、元利回収CFと当初利率、未収利息。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-finance-guide",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+      "location": "2025年3月11日版26・34・37・45・130・136・137項、設例16全体（印刷141〜143頁、PDF142〜144枚目）を実読。重要な金利部分は130の条件に従い、本講の該当問題は利息法を指定。2026年後続改正を遡及しない。 / 2025年3月11日版・移管指針9、第30〜39項（印刷16〜18頁）、45・136・137項（印刷20・42頁）。残存部分と新資産負債、留保サービス権、保証債務の認識後の処理 / 移管指針9・2025年3月11日版110〜115項、119項 / 2025年3月11日版112〜115・119〜125項（印刷35〜39頁）、設例13全体（印刷138〜139頁、PDF139〜140枚目）を実読。旧見積りの時間経過と新回収見積り、原則受取利息と許容戻入表示を区別。2026年後続改正を遡及適用しない。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-bills-law",
+      "url": "https://laws.e-gov.go.jp/law/307AC0000000020_20230614_505AC0000000053",
+      "location": "2023年6月14日施行版。2026年4月3日現在を公式API asofで取得。43・47〜49・75・77・78条を実読。不渡時の遡求、支払総額・費用請求、約束手形への準用。参照原文はreference-pages/bills-law-20260403.json。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則注解5。最終改正1982年4月20日。利息等の継続役務に係る前受・前払と期間配分。",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-electronic-claims",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/denshikiroku.pdf",
+      "location": "実務対応報告27・2009年4月9日公表、同日以後適用。全5頁、脚注2〜4、設例1〜3。設例の譲渡は金融商品会計基準8・9の消滅要件を満たす前提。貸付金・借入金の発生記録は表示科目を振り替えない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-electronic-claims-law",
+      "url": "https://laws.e-gov.go.jp/law/419AC0000000102_20251001_505AC0000000053",
+      "location": "電子記録債権法15・17条。2026年4月3日現在を公開APIのasofで取得し、当該条項を実読。採用版は2025年10月1日施行、改正法公布2023年6月14日。reference-pages/electronic-claims-20260403.jsonへ原文保存",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "fsa-factoring-definition",
+      "url": "https://www.fsa.go.jp/user/factoring.html",
+      "location": "冒頭のファクタリングの一般定義のみを確認。2026年10月27日閲覧。金融商品会計基準の消滅要件の根拠又は貸金業該当性の判定資料として、この教材では使用しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "scopeBoundaries": [
+    "計画のcash単元7講のうち、草稿がある基幹6講だけを対象とする。",
+    "zr2-boki-documentary-bills の為替手形三者関係・D/P/D/A・荷為替・外貨取組は未着手であり本演習の合格で修得済みと扱わない。",
+    "税務上の貸倒損金算入、連結・外貨換算、IFRS又は後発の予想信用損失基準を扱わない。",
+    "25の細目に累積問題の証拠を付したが、各目標の全下位技能又は本試験全範囲の修得を証明しない。"
+  ],
+  "authorChecks": {
+    "status": "pending independent review",
+    "originality": "講内の設問ID・会社名・資料構成を再使用せず新規作成。公式過去問の問題文・解答は転載していない。",
+    "numericInputPolicy": "数値欄は最終額だけを求める。仕訳・理由・計算過程はessayで配点する。",
+    "evidence": "author calculation ledger and four Japanese tools to be added after recomputation and reading"
+  }
+}

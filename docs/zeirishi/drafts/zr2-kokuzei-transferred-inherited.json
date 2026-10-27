@@ -1,0 +1,907 @@
+{
+  "id": "zr2-kokuzei-transferred-inherited",
+  "subject": "kokuzei",
+  "title": "譲渡・相続・合併後の財産と税を対応させる",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 220,
+  "objectives": [
+    "譲受前担保の優先と財産別徴収を判断する",
+    "相続・合併等で異なる法定納期限等を適用する"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-provisional-security"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "凍結15条1項7〜10号・17・22・23条3項・51・129条を再読",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "凍結5・6・8・9条の2・9条の3を再読。基準日特則と責任算定を分離",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "collection-order",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "2026-04-01施行版",
+      "location": "凍結6条の22条通知及び仮登記準用を読解",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "provisional-registration-law",
+      "url": "https://laws.e-gov.go.jp/law/353AC0000000078_20050401_416AC0000000152",
+      "version": "基準日API返却2005-04-01版",
+      "location": "13条の抵当みなしによる担保順位等。前講で1〜20条本文読解",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "transferred-priority-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/03/022/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "1〜8の二時点と配当差額、12〜19の代位実行・通知等。現行解釈を基準日固定法と区別して利用。公式例の数値は再利用しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "譲受前担保",
+      "definition": "納税者が財産を譲り受ける前に設定されていた質権・抵当権等。17条等による優先を確認"
+    },
+    {
+      "term": "配当金額",
+      "definition": "22条2項1号の、譲渡された財産の換価において担保債権が受けるべき実際の配当額"
+    },
+    {
+      "term": "仮定配当金額",
+      "definition": "譲渡財産をなお譲渡人の財産とみなし、国税交付要求があったと仮定した担保債権の配当額"
+    },
+    {
+      "term": "配当差額",
+      "definition": "実際配当から仮定配当を差し引いた22条の徴収限度。国税残高も超えられない"
+    },
+    {
+      "term": "代位実行",
+      "definition": "22条3項で税務署長が担保権者に代わり担保権を実行すること。23条3項の準用では除外"
+    },
+    {
+      "term": "固有財産",
+      "definition": "相続人・存続法人等が承継以外の原因で元から持つ財産として、承継財産と分ける区分"
+    },
+    {
+      "term": "差押換え",
+      "definition": "51条等の所定条件により差押財産を別の財産へ換えること。相続財産があるだけで無条件に認められない"
+    },
+    {
+      "term": "承継する納付義務",
+      "definition": "相続・合併等により対象国税を納付する責任が移ること。担保との優先順位の比較日とは別に判断"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "transferred-ex1",
+      "section": "例題1：国税の比較日より後の抵当でも、譲受け前なら優先する",
+      "result": {
+        "mortgagePaid": 400000,
+        "taxPaid": 400000,
+        "taxUnpaid": 200000
+      }
+    },
+    {
+      "id": "transferred-ex2",
+      "section": "例題2：担保110万円の配当から、国税40万円を徴収する",
+      "result": {
+        "actualMortgageDistribution": 1100000,
+        "hypotheticalMortgageDistribution": 700000,
+        "taxCollectedUnder22": 400000,
+        "mortgageFinal": 700000,
+        "ownerSurplus": 600000,
+        "taxUnpaid": 600000
+      }
+    },
+    {
+      "id": "transferred-ex3",
+      "section": "例題3：古い抵当と二つの後順位担保を対照する",
+      "result": {
+        "actual": [
+          800000,
+          1000000,
+          800000
+        ],
+        "hypothetical": [
+          800000,
+          400000,
+          0
+        ],
+        "taxFromEach": [
+          0,
+          600000,
+          800000
+        ],
+        "finalPrivate": [
+          800000,
+          400000,
+          0
+        ],
+        "taxCollected": 1400000
+      }
+    },
+    {
+      "id": "transferred-ex4",
+      "section": "例題4：二つの財産と二つの税で、比較日を四つ置く",
+      "result": {
+        "X_P": "2026-03-16",
+        "X_Q": "2026-05-20",
+        "Y_P": "2026-05-20",
+        "Y_Q": "2026-03-16",
+        "independentQTaxPaid": 400000,
+        "independentRemainingX": 200000
+      }
+    }
+  ],
+  "scopeNotes": [
+    "限定承認・放棄・包括遺贈・5条3項追加責任等の税額と責任算定はsuccession-inheritanceで教授。ここでは比較日を適用する前提と51条を扱う",
+    "信託・通常分割・無効判決に係る対象税額・責任限度はsuccession-trust-splitで具体的に算定する",
+    "複数の譲渡人税・譲受人税や26条の循環、令9条との競合はcompeting-distributionで最終配当まで計算",
+    "個別財産の代位実行の関係法及び複数手続の調整はsecurity-registers/preservationで教える"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "相続各承認類型・追加責任と国税額の算定",
+      "plannedLessonIds": [
+        "zr2-kokuzei-succession-inheritance"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "信託・通常分割・無効判決の対象税額と限度",
+      "plannedLessonIds": [
+        "zr2-kokuzei-succession-trust-split"
+      ],
+      "status": "planned_not_authored"
+    },
+    {
+      "competency": "複数税・私債権・22条/26条/令9条の統合配当",
+      "plannedLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "status": "authored_draft_pending_independent_review"
+    },
+    {
+      "competency": "個別担保法に基づく代位実行と複数手続調整",
+      "plannedLessonIds": [
+        "zr2-kokuzei-security-registers",
+        "zr2-kokuzei-preservation"
+      ],
+      "status": "planned_not_authored; actual_generator_cases_sources_explicitly_expanded"
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "乙の国税75万円の比較日は2026年2月16日。丙所有物件に抵当元本55万円が3月5日に適法に登記され、乙が4月10日にその物件を譲り受けた。費用控除後原資90万円、利息・他の権利なし。乙の国税への配当額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "350000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "乙の譲受け前の抵当は17条で保護され、55万円を先に配当します。国税は90−55＝35万円、残税40万円です。乙の税の比較日が抵当登記より早いことだけで17条を排除しません。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "登記できない動産質が付いた物を納税者が譲り受けた。17条の優先の確認について正しい説明はどれですか。",
+      "options": [
+        "譲受け前に保管されていたと口頭で言えば常に足りる",
+        "17条2項の執行機関への事実の証明と15条2項後段・3項の準用を確認する",
+        "17条では有価証券以外も法定書類の条件がすべて免除される",
+        "すべての質権は不動産登記簿だけで確認する"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "17条2項は、登記できない質権について譲受け前に設定されている事実の証明を求め、15条の法定書類・確定日付の規定を準用します。有価証券質の書類例外も、証明自体の免除と混ぜません。",
+      "distractorExplanations": {
+        "0": "法定の証明を省略しています。",
+        "2": "15条2項後段・3項の準用を落としています。",
+        "3": "質権の種類と公示方法の違いを無視しています。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "22条の全要件を満たす一つの抵当権について、譲渡後の費用控除後換価原資260万円、抵当元本180万円、譲渡人の国税140万円とする。抵当登記はその国税の比較日後かつ譲渡前で、他の権利・税・費用なし。この抵当配当から徴収できる国税額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "600000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "実際の抵当配当180万円。譲渡人の財産とみなした仮定では国税140万円を先に置き、抵当の仮定配当は260−140＝120万円です。差額180−120＝60万円が国税140万円以内の限度です。元本180万円を全部又は国税140万円を全部徴収する計算ではありません。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "22条の全要件を満たし、国税130万円の比較日は2026年3月16日、抵当Aは4月1日登記の元本150万円、抵当Bは5月1日登記の元本100万円、譲渡は6月1日である。費用控除後換価原資200万円、他の税・権利なし。各抵当の実際配当・仮定配当・徴収差額と最終交付額を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "実際はA150万円、B50万円。仮定では国税130万円が先で、残り70万円がA、Bは0。差額はA80万円、B50万円で合計130万円。最終は国税130万円、A70万円、B0円、合計200万円。Bの債権100万円を実際配当額として使わず、実際の50万円を出発点にする。",
+      "rubric": [
+        {
+          "criterion": "実際A150・B50を計算",
+          "points": 1
+        },
+        {
+          "criterion": "仮定A70・B0を計算",
+          "points": 1
+        },
+        {
+          "criterion": "差額A80・B50と合計130の上限",
+          "points": 2
+        },
+        {
+          "criterion": "最終国130・A70・B0、原資200の照合",
+          "points": 1
+        }
+      ],
+      "explanation": "実際はA150万円、B50万円。仮定では国税130万円が先で、残り70万円がA、Bは0。差額はA80万円、B50万円で合計130万円。最終は国税130万円、A70万円、B0円、合計200万円。Bの債権100万円を実際配当額として使わず、実際の50万円を出発点にする。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "国税の比較日前に登記された抵当Aと、その後に登記された抵当Bが付いた財産が譲渡された。22条の計算でAは対象外だから、実際配当と仮定配当の両方からAを消してよいか。理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1
+      ],
+      "modelAnswer": "消してはいけない。Aから22条で徴収できないことと、Aの優先配当を確保することは別である。Aの額を実際・仮定の双方の順位計算に残してBへ回る原資を求め、その上でBの差額を計算する。",
+      "rubric": [
+        {
+          "criterion": "消去不可と結論",
+          "points": 1
+        },
+        {
+          "criterion": "Aの徴収対象外と優先額の存在を分ける",
+          "points": 2
+        },
+        {
+          "criterion": "Bの原資及び差額への影響を説明",
+          "points": 1
+        }
+      ],
+      "explanation": "消してはいけない。Aから22条で徴収できないことと、Aの優先配当を確保することは別である。Aの額を実際・仮定の双方の順位計算に残してBへ回る原資を求め、その上でBの差額を計算する。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "22条について、譲渡時と通知時の財産状況に関する確認として適切なのはどれですか。",
+      "options": [
+        "譲渡時に他に十分な財産があったかと、通知発出時の不足認定を分ける",
+        "どちらも買主の資産総額だけで判定する",
+        "譲渡時の状況は一切関係ない",
+        "国税が残っていれば認定は不要になる"
+      ],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "22条1項の二つの不足に関する条件を、時点と対象者を明示して確認します。優先債権や費用を控除した国税に充当できる財産価額も重要です。",
+      "distractorExplanations": {
+        "1": "対象は譲渡人である納税者の財産です。",
+        "2": "他に十分な財産がない場合にした譲渡という条件を落としています。",
+        "3": "未納であることだけでは22条の補充条件を満たしません。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "比較日後に設定されたが登記制度がなく未登記である動産質につき、15条の証明書類は提出された。この質権者の配当から22条で譲渡人国税を徴収できるか。",
+      "options": [
+        "証明があれば登記の条件も満たしたものとなる",
+        "配当額があれば担保の種類は問わない",
+        "22条は登記した質権・抵当権を対象とし、この未登記質には適用しない",
+        "比較日が早ければ国税の全額を質権者の固有預金から徴収する"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "15条による優先の証明と、22条の対象である登記した担保の条件は別です。未登記動産質へ22条を広げません。",
+      "distractorExplanations": {
+        "0": "証明手続と登記を同じ条件としています。",
+        "1": "22条の対象類型を落としています。",
+        "3": "配当金からの徴収を人的な納付義務へ変えています。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "22条の候補となる抵当権について、強制換価手続終了前に被担保債権が全額弁済され、抵当権者が受けるべき配当は0円となった。この抵当権者の配当から22条で徴収できる額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "0"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "配当から徴収する制度なので、受けるべき金額が0円なら徴収原資がありません。滞納国税が残ることだけで、消滅した債権に従前の配当を仮構しません。24条7項の譲渡担保存続擬制とは区別します。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "担保仮登記付き財産が譲渡された場合の23条3項の22条準用について正しいのはどれですか。",
+      "options": [
+        "22条3項の代位実行も必ずそのまま準用される",
+        "差額限度・通知・交付要求等は対応させるが、22条3項は準用から除かれる",
+        "仮登記では配当差額を計算しない",
+        "所有者の一般財産全部から徴収する制度に変わる"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "23条3項は前条（3項を除く）を準用すると明記しています。仮登記担保の配当差額を扱うことと、22条3項の代位実行を認めることを分けます。",
+      "distractorExplanations": {
+        "0": "明文の準用除外を落としています。",
+        "2": "22条1・2項の準用に反します。",
+        "3": "対象配当からの徴収という範囲を失っています。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "2026年6月12日に相続。相続前に確定した通常の申告国税で、被相続人税X、相続人固有税Yとも通常の比較日は3月16日。相続財産Pと相続人従来財産Qがある。X-P、X-Q、Y-P、Y-Qの各法定納期限等を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "X-Pは通常の3月16日、X-Qは相続日6月12日、Y-Pは相続日6月12日、Y-Qは通常の3月16日。15条1項7号は税と財産の出所が交差する所定の関係を調整し、すべてを相続日に変更するものではない。",
+      "rubric": [
+        {
+          "criterion": "X-P、X-Qを正しく区別",
+          "points": 2
+        },
+        {
+          "criterion": "Y-P、Y-Qを正しく区別",
+          "points": 2
+        },
+        {
+          "criterion": "交差する関係だけの特則という理由",
+          "points": 1
+        }
+      ],
+      "explanation": "X-Pは通常の3月16日、X-Qは相続日6月12日、Y-Pは相続日6月12日、Y-Qは通常の3月16日。15条1項7号は税と財産の出所が交差する所定の関係を調整し、すべてを相続日に変更するものではない。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "納期特例のない源泉所得税は2026年2月20日の支払により成立・自動確定し、法定納期限は3月10日で未納。納税者は4月1日に死亡し、最初の納税告知書は4月15日に発せられた。この税を相続人固有財産から徴収する際、15条1項7号により4月1日を比較日とできるか。他の特例はない。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "できない。7号括弧書きの所定の自動確定国税は、相続日前に納税告知書を発したものが条件で、成立・自動確定が相続前というだけでは足りない。この場合は5号の2の最初の納税告知書発出日4月15日を比較日とする。",
+      "rubric": [
+        {
+          "criterion": "相続日を用いないとの結論",
+          "points": 1
+        },
+        {
+          "criterion": "自動確定税の相続前告知という条件を特定",
+          "points": 2
+        },
+        {
+          "criterion": "5号の2の4月15日を選択",
+          "points": 1
+        }
+      ],
+      "explanation": "できない。7号括弧書きの所定の自動確定国税は、相続日前に納税告知書を発したものが条件で、成立・自動確定が相続前というだけでは足りない。この場合は5号の2の最初の納税告知書発出日4月15日を比較日とする。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "相続により承継した国税X70万円だけを徴収する。執行上の事情により先に換価した相続人固有財産Qは原資120万円、Xに優先する抵当80万円があり、残40万円をXへ充当した。その後、相続財産Pの換価からXに充てられる原資40万円が得られた。他の税はない。PからXへ実際に充当できる額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "300000"
+      ],
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "Qから40万円を充当したため、Xの残額は70−40＝30万円です。Pで40万円の原資があっても国税には30万円までを充当し、他の権利や残余を処理します。別々の財産の計算を合算する際に、元の70万円を各回で重ねません。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "A社がB社を2026年7月31日に合併した。A社固有税は合併前に確定済み、通常の比較日は3月16日。B社から承継した土地には4月20日の有効な抵当登記がある。A固有税をこの承継土地から徴収する比較日と抵当との関係、A従来財産から徴収する場合の違いを説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "承継土地とA固有税という交差関係なので15条1項8号の合併日7月31日を用い、4月20日の抵当がこの税に優先する。A固有税をA従来財産から徴収する関係は8号の交差に当たらず、通常の比較日3月16日を用いる。納付義務承継の有無と財産別の比較日を分ける。",
+      "rubric": [
+        {
+          "criterion": "承継土地で7月31日を選ぶ",
+          "points": 2
+        },
+        {
+          "criterion": "抵当優先を示す",
+          "points": 1
+        },
+        {
+          "criterion": "従来財産で通常の比較日との違いを説明",
+          "points": 2
+        }
+      ],
+      "explanation": "承継土地とA固有税という交差関係なので15条1項8号の合併日7月31日を用い、4月20日の抵当がこの税に優先する。A固有税をA従来財産から徴収する関係は8号の交差に当たらず、通常の比較日3月16日を用いる。納付義務承継の有無と財産別の比較日を分ける。"
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "二つの独立事例。Aは6月1日の通常分割で、15条1項10号所定の交差する税・財産と分割前確定の条件を満たす。Bは9月15日に分割無効判決が確定し、同項9号の交差関係と判決確定前の税額確定条件を満たす。用いる日はどれですか。",
+      "options": [
+        "AもBも通常の法定納期限のみ",
+        "A6月1日、B9月15日",
+        "Aは判決日、Bは元の分割日",
+        "AもBも税務署の差押日"
+      ],
+      "answer": 1,
+      "objectives": [
+        2
+      ],
+      "explanation": "10号の通常分割は分割日、9号の無効判決に係る関係は判決確定日です。責任自体の成立・対象税額が別に確認された条件で、異なる特則の比較日を選びます。",
+      "distractorExplanations": {
+        "0": "明示された9・10号の特則を落としています。",
+        "2": "通常分割と無効判決を逆にしています。",
+        "3": "差押先着手の税相互の順位と対担保の法定納期限等を混同しています。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-transferred-inherited-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-transferred-inherited",
+      "prompt": "被相続人の国税につき相続人固有財産が差し押さえられた。相続人が「51条により相続財産が残る限り固有財産差押えは無効」と主張し、代替に抵当権付き相続土地を挙げた。51条1・2項の条件から検討してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "1項は執行に支障がない限りまず相続財産を差し押さえる努力義務で、固有財産への差押えを一律に無効とする規定ではない。2項の差押換え請求では、換価が容易で第三者権利の目的ではない相続財産があり、それで当該税全額を徴収できること等を要する。抵当付き土地を挙げただけではその条件を満たさない。",
+      "rubric": [
+        {
+          "criterion": "1項の努力義務と一律無効でない点",
+          "points": 2
+        },
+        {
+          "criterion": "2項の容易換価・第三者権利なし・全額徴収の条件",
+          "points": 2
+        },
+        {
+          "criterion": "抵当付き代替では要件を満たさないと当てはめる",
+          "points": 1
+        }
+      ],
+      "explanation": "1項は執行に支障がない限りまず相続財産を差し押さえる努力義務で、固有財産への差押えを一律に無効とする規定ではない。2項の差押換え請求では、換価が容易で第三者権利の目的ではない相続財産があり、それで当該税全額を徴収できること等を要する。抵当付き土地を挙げただけではその条件を満たさない。"
+    }
+  ],
+  "authorChecks": {
+    "numericChecks": [
+      "例1:80-40=40、60-40=20万円",
+      "例2:実110、仮170-100=70、徴収110-70=40、最終40+70+60=170万円",
+      "例3:実80/100/80、仮80/40/0、徴収0/60/80=140、最終80+40+140=260万円",
+      "例4独立条件:90-50=40、X60-40=20万円。四行の同時二重配当はしない",
+      "問1:90-55=35万円、問3:180-(260-140)=60万円、問4:実150/50、仮70/0、徴収80/50=130万円",
+      "問8:実配当0→徴収0、問12:70-(120-80)=30万円"
+    ],
+    "legalChecks": "凍結17/22の対象と責任、23条3項の22条3項除外、15条1項7〜10号の財産と税の交差、所定自動確定税の相続前告知条件、51条の努力義務と差押換条件を読解し適用",
+    "sourceNeedsIndependentCheck": [
+      "22条の二時点・換価前不足認定・実行条件等の基本通達解釈について基準日前資料又は改正履歴と別担当による独立確認が必要。17条現行通達ページは2回503で未取得であり、凍結法17条自体を主根拠にした"
+    ],
+    "editorial": "本文全段落・15問・選択肢解説/モデル答案を作問者が再読。独立の日本語/事実/source reviewはpending",
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 12,
+        "line": 23,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 13,
+        "line": 25,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 14,
+        "line": 27,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 15,
+        "line": 29,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 16,
+        "line": 31,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 17,
+        "line": 33,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 18,
+        "line": 35,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 19,
+        "line": 37,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 20,
+        "line": 39,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 21,
+        "line": 41,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 22,
+        "line": 43,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 23,
+        "line": 45,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 24,
+        "line": 47,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 25,
+        "line": 49,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 26,
+        "line": 51,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 27,
+        "line": 53,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 28,
+        "line": 55,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 29,
+        "line": 57,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 30,
+        "line": 63,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 31,
+        "line": 65,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 32,
+        "line": 67,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 33,
+        "line": 69,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 34,
+        "line": 71,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 35,
+        "line": 73,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 36,
+        "line": 75,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 37,
+        "line": 77,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 38,
+        "line": 79,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 39,
+        "line": 81,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 40,
+        "line": 83,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 41,
+        "line": 85,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 42,
+        "line": 87,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 43,
+        "line": 94,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 44,
+        "line": 96,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 45,
+        "line": 98,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 46,
+        "line": 100,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 47,
+        "line": 102,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 48,
+        "line": 104,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 49,
+        "line": 106,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 50,
+        "line": 108,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 51,
+        "line": 110,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 52,
+        "line": 112,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 53,
+        "line": 114,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 54,
+        "line": 116,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 55,
+        "line": 118,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 56,
+        "line": 120,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 57,
+        "line": 122,
+        "finding": "なし",
+        "action": "税の帰属と財産の出所、担保時点、比較日、二つの配当と残税を対応させ作問者が再読。独立レビューはpending"
+      }
+    ],
+    "structureChecks": {
+      "checkedOn": "2026-10-27",
+      "bodyCharacters": 6658,
+      "uniqueQuestions": 15,
+      "objectiveMapping": "actual two planned objectives matched; question references 1-based",
+      "math": "all four worked groups and independent numeric/multi-party written calculations re-evaluated",
+      "status": "all reviews pending; publication draft"
+    }
+  }
+}

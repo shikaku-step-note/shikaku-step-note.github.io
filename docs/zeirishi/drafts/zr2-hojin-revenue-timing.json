@@ -1,0 +1,512 @@
+{
+  "id": "zr2-hojin-revenue-timing",
+  "subject": "hojin",
+  "title": "販売・役務の収益時期と変動対価・返品",
+  "stage": "standard",
+  "moduleId": "zr2-hojin-unit-revenue",
+  "minutes": 160,
+  "lawAsOf": "2026-04-03",
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "objectives": [
+    "法22条の2の原則・近接日・決算と申告記載の条件を区別する",
+    "合理的な引渡し日から期ずれと対応原価・翌期取崩しを計算する",
+    "一時点・一定期間の役務を分け、当期収益を累積進捗から求める",
+    "値引き等の見積りの全要件と翌期の適正な事後変動を適用する",
+    "返品・貸倒れの可能性を収益から除けない扱いを適用し、返品の純調整を二期間で照合する"
+  ],
+  "objectiveIds": [
+    "zr2-hojin-revenue-timing-o01",
+    "zr2-hojin-revenue-timing-o02"
+  ],
+  "prerequisites": [
+    "zr2-hojin-relationships",
+    "zr2-hojin-schedule-four-five"
+  ],
+  "sourceCandidates": [
+    {
+      "id": "corporate-law",
+      "url": "https://laws.e-gov.go.jp/law/340AC0000000034_20260401_508AC0000000012",
+      "location": "asof2026-04-03、22条2〜4項、22条の2全7項をMainProvisionで読了。63条も後続工事特例への振分けのため読了。"
+    },
+    {
+      "id": "corporate-decree",
+      "url": "https://laws.e-gov.go.jp/law/340CO0000000097_20260401_508CO0000000094",
+      "location": "asof2026-04-03、18条の2全4項読了。129条全11項は後続工事講の対象を判定するため読了。"
+    },
+    {
+      "id": "corporate-revenue-general",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_01_01.htm",
+      "location": "2-1-1の10〜16。平成30年課法2-8追加の本文・改正履歴を確認。一般条項のうち令和7年のリース関連追加を2025年の一般販売へ適用しない。"
+    },
+    {
+      "id": "corporate-delivery",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_01_01_2.htm",
+      "location": "2-1-2〜4全体読了。いずれも本ページの当該内容の最終改正表示は平成30年。"
+    },
+    {
+      "id": "corporate-service",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_01_03.htm",
+      "location": "2-1-21の2〜11の本文・各注を読了。21の2・7は令和7年の工事特例範囲整理を含む。21の7の請負・成果報酬委任等の完成原則と、期間充足・期間収益計上の容認を区別。清掃例は21の7本文の対象外を明示。"
+    },
+    {
+      "id": "corporate-revenue-2018-explanation",
+      "url": "https://www.nta.go.jp/law/joho-zeikaishaku/hojin/180530/index.htm",
+      "location": "平成30年5月30日付通達の趣旨説明。2019-01-09訂正があることを確認。古い通達の全体をそのまま現行版とせず、現行掲載の個別改正履歴と凍結法令を併読。"
+    },
+    {
+      "id": "corporate-returns-illustration",
+      "url": "https://www.nta.go.jp/publication/pamph/hojin/kaisei_gaiyo2018/pdf/0605_B.pdf",
+      "location": "ケース3・4、PDF4〜5枚目。返品権販売の税務上の収益・原価と会計との差を確認。8%の旧消費税率・原問題の数値は利用しない。ケース4の経過措置対象外の前提を確認して本稿にも明示。"
+    },
+    {
+      "id": "corporate-fixed-asset-timing",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_01_02.htm",
+      "location": "2-1-14を含む本ページ全文読了。q3では公正妥当な近接日であることを与件とし、固定資産等の全具体条件はzr2-hojin-fixed-asset-revenueへ割当。"
+    },
+    {
+      "id": "corporate-contract-2018-explanation",
+      "url": "https://www.nta.go.jp/law/joho-zeikaishaku/hojin/180530/pdf/%EF%BC%92%EF%BC%A2.pdf",
+      "location": "2-1-21の7の趣旨説明、全3頁・説明1〜8読了。説明4の完成原則・期間計上容認・適正な会計処理からの申告だけによる変更不可を確認。古い法64条参照は2026年凍結法63条・現行通達と併読。"
+    }
+  ],
+  "sourceUncertainties": [
+    "独立レビューは未実施。取得・著者読了を独立審査完了とはしない。",
+    "旧返品調整引当金の経過措置は本講の数値例では対象外。対象法人の条件と残る年度別率はzr2-hojin-returns-transitionで凍結改正法附則を直接確認して教授する。",
+    "翌期の事例も2026-04-03の同じルールを用いる仮定で、将来の改正・試験範囲を予測するものではない。"
+  ],
+  "glossary": [
+    {
+      "term": "引渡しの日",
+      "definition": "商品の性質・契約等に照らして合理的な基準を継続適用して判定する収益計上の基準日"
+    },
+    {
+      "term": "近接する日",
+      "definition": "法22条の2第2項の条件の下で、原則の引渡し・提供日と近接した日として収益年度を定める対象となる日"
+    },
+    {
+      "term": "一定期間にわたり充足される履行義務",
+      "definition": "提供につれて便益を受ける等の所定の要件により、提供の途中に対応する収益を計上する義務"
+    },
+    {
+      "term": "変動対価",
+      "definition": "値引き・値増し・割戻し等で変動する契約対価の部分。税務の見積反映では貸倒れ・買戻しの可能性等を除き所定の全要件を確認する"
+    },
+    {
+      "term": "返金負債",
+      "definition": "本講の返品例では、顧客への返金を見込んで会計上計上した負債。計上しただけで税務上の売上減額が認められるとは限らない"
+    },
+    {
+      "term": "返品資産",
+      "definition": "本講では返品時に回収する商品の権利に対応する会計上の資産。税務で同じ残高をそのまま採るものではない"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-hojin-revenue-timing-e1",
+      "section": "例題1：二つの期ずれを、原価と翌期まで照合する",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "currentBookProfit": 500000,
+        "currentTaxContribution": 700000,
+        "currentAddition": 200000,
+        "nextBookProfit": 900000,
+        "nextTaxContribution": 700000,
+        "nextSubtraction": 200000
+      }
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-e2",
+      "section": "例題2：全額前受けの清掃契約を、提供期間で分ける",
+      "objectives": [
+        3
+      ],
+      "results": {
+        "currentRevenue": 2400000,
+        "subtraction": 1200000
+      }
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-e3",
+      "section": "例題3：割戻しの見込みと、翌期の実際の結果をつなぐ",
+      "objectives": [
+        4
+      ],
+      "results": {
+        "currentRevenue": 3500000,
+        "nextCorrection": 500000,
+        "nextRevenue": 2900000,
+        "combinedRevenue": 6400000
+      }
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-e4",
+      "section": "例題4：返品見込みを除いた当期と、実際に返品された翌期",
+      "objectives": [
+        5
+      ],
+      "results": {
+        "currentBook": 583200,
+        "currentTax": 648000,
+        "currentNetAddition": 64800,
+        "nextBook": 21600,
+        "nextTax": -43200,
+        "nextNetSubtraction": 64800,
+        "combinedProfit": 604800
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-hojin-revenue-timing-q1",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "定型商品の出荷日を引渡しの日とする方法が契約等に照らして合理的で、会社は継続適用してきた。3月30日出荷、4月3日検収、4月末入金で、3月31日決算。担当者は利益を繰り延べるため、この取引だけ4月末の回収時に計上したいという。適切なのはどれですか。",
+      "options": [
+        "この取引だけ回収時へ変更できる",
+        "合理的に継続して用いた出荷日に対応する年度へ計上する",
+        "全商品で検収基準しか認められない",
+        "検収後に請求する契約なら、請求書発行日を必ず用いる"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "与件で合理性と継続適用を満たす出荷日を使うため、3月30日を含む年度です。検収・回収が後でもその事実だけでは変わりません。収益時期を利益目標で取引ごとに動かすことはできません。"
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q2",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "商品120個を1個15,000円、原価9,000円で販売する契約。期末までに90個を出荷し、30個は翌期出荷予定である。出荷日を引渡しとする方法が合理的に継続適用される。担当者は請求書の全120個分を当期売上・当期売上原価へ記録した。他の差異はない。正しい所得に直すための減算額を正の円数で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        2
+      ],
+      "explanation": "未出荷30個の売上450,000円を減らす一方、先に費用とした原価270,000円は当期損金から除きます。差引450,000−270,000＝180,000円の減算です。売上だけ450,000円減らすと原価が過大なまま残ります。",
+      "input": "number",
+      "accepted": [
+        "180000"
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q3",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "資産譲渡の原則の引渡し日は翌期であるが、当期中の契約効力発生日は、その取引について公正妥当な会計処理の基準に従う近接日と認められるものとする。会社は原則の日にも近接日にも対応する収益を確定決算で計上していない。当期の確定申告書に収益の益金算入を記載した。法22条の2第3項による扱いと、申告記載で任意の将来年度を選べるわけではない理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1
+      ],
+      "explanation": "第3項の決算計上と申告記載の条件を確認する問題です。与件の近接日自体の合理性は確定済みであり、別の任意の日を追加しません。",
+      "input": "essay",
+      "modelAnswer": "第1項の日又は第2項の近接日に対応して収益を適切に決算計上していない場合で、近接日が属する年度の申告書に益金算入を記載している。したがって第3項により当期決算で収益計上したものとみなし、第2項を適用する。対象は法が認める近接日の年度で、申告書に書けば自由に将来年度を選べる規定ではない。",
+      "rubric": [
+        {
+          "criterion": "決算未計上と近接日年度の益金算入記載の条件を示す",
+          "points": 2
+        },
+        {
+          "criterion": "当期の決算計上をみなして第2項を適用すると示す",
+          "points": 1
+        },
+        {
+          "criterion": "任意の将来年度選択でない理由を示す",
+          "points": 1
+        }
+      ],
+      "points": 4
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q4",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "清掃契約は10月1日から翌年6月30日まで9か月、総対価5,400,000円。毎月均等に役務を提供し、顧客は提供につれて便益を受け、経過期間が合理的な進捗指標となる。3月31日までに6か月分を提供した。受取済みは2,700,000円だけである。作業遂行への報酬を支払う準委任で、成果完成への報酬ではなく、通達2-1-21の7本文の適用はない。法63条の工事特例も適用しない。当期の役務収益として益金に算入する金額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "5,400,000×6/9＝3,600,000円です。回収額2,700,000円ではなく提供に応じて計算します。残る1,800,000円は翌期の3か月に対応します。",
+      "input": "number",
+      "accepted": [
+        "3600000"
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q5",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "特定の成果物を制作する取引で、別用途に転用できない資産が生じる。しかし完了部分の対価を受ける強制力のある権利はなく、提供につれて相手方が便益を受ける等の他の期間充足要件も満たさない。基本通達2－1－21の4との関係で適切なのはどれですか。",
+      "options": [
+        "転用不能だけで必ず期間充足となる",
+        "契約期間が3か月以上なら請求権は不要となる",
+        "転用不能だけでは足りず、与件では期間充足とは判定できない",
+        "前受金が返還不要なら、他の要件は不要となる"
+      ],
+      "answer": 2,
+      "objectives": [
+        3
+      ],
+      "explanation": "同通達(3)は転用不能と強制力のある対価請求権の両方が必要です。与件は他の類型も満たさないため、転用不能だけで期間充足とはできません。現金受領や契約期間の長さだけでも決まりません。"
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q6",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "法63条の工事特例が適用されない一定期間充足の役務で、通常得べき総対価18,000,000円、当期末の合理的な累積進捗度35％、前期までの収益計上額2,400,000円である。通達2-1-21の2・5に従う期間収益の計上を、会計・申告で継続適用している。価格変更等はない。当期に益金算入する役務収益を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        3
+      ],
+      "explanation": "期末累積18,000,000×35％＝6,300,000円から前期まで2,400,000円を引き、3,900,000円です。累積額をそのまま当期へ重ねません。",
+      "input": "number",
+      "accepted": [
+        "3900000"
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q7",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "契約で客観的な割戻し条件が明らかにされ、会社は実績に基づく合理的な方法を継続して見込額200,000円を算定し、会計の収益から減額した。しかし内容や計算根拠の書類を保存していない。当期には通知も支払もなく、見積りの取扱い以外の減額根拠はない。この見積りの取扱いを適用できるか、不足要件と、会計利益を出発点にする場合の収益に関する申告調整の方向・金額を説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "explanation": "基本通達2－1－1の11の要件は全て確認します。金額を合理的に見積もったことだけで保存要件を省けません。実際の通知・支払等は当期になく、別の減額根拠もない設定です。",
+      "input": "essay",
+      "modelAnswer": "内容及び算定根拠の書類保存要件が欠けるため、示された見積りの取扱いは適用できない。会計で収益から引いた200,000円を税務上の収益へ戻すので、会計利益に200,000円を加算する。",
+      "rubric": [
+        {
+          "criterion": "書類保存要件の不足を示す",
+          "points": 1
+        },
+        {
+          "criterion": "全要件を満たさず見積り減額を適用できないと示す",
+          "points": 1
+        },
+        {
+          "criterion": "200,000円加算と方向・金額を示す",
+          "points": 2
+        }
+      ],
+      "points": 4
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q8",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "契約の総購入数が1,000個以上なら全購入分の単価が12,000円から10,500円へ下がる。当期引渡し400個、期末の合理的な総購入予想1,500個。変動対価の全要件を満たし、必要な収益減額を経理した。貸倒れ・買戻しはなく、まだ引き渡していない商品は売上にしない。当期の益金算入収益を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "explanation": "400×10,500＝4,200,000円です。1,500個は単価の見積判定に使い、未引渡し分を当期収益へ足しません。受領単価12,000円との差600,000円が見込み割戻しです。",
+      "input": "number",
+      "accepted": [
+        "4200000"
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q9",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "前期の引渡し分は総対価6,000,000円から適正な割戻し見込み300,000円を引き、収益5,700,000円とした。前期末後の新事情により、翌期に割戻しが180,000円と確定した。令18条の2の事後変動の条件を満たす。当期の新たな引渡し分とは分け、前期引渡し分について翌期に増額する収益を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        4
+      ],
+      "explanation": "見込み300,000円のうち実際180,000円を超える120,000円が不要となるので、その分を翌期収益へ戻します。前期末の誤りの訂正とは異なる、後発事情の適正な修正という条件です。",
+      "input": "number",
+      "accepted": [
+        "120000"
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q10",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "売上割戻しについて見積りの取扱いを適用しておらず、当期末には通知も支払もない。翌期に金額を通知し、同日に支払った。相手方が享受できない保証金として預かる等の特殊事情はない。基本通達2－1－1の12による減額時期はどれですか。",
+      "options": [
+        "当期、金額不明でも必ず合理的な額を減額する",
+        "翌期の通知・支払に対応する年度で減額する",
+        "通知後5年を経過するまで一律に減額できない",
+        "現金を支払っても永久に減額できない"
+      ],
+      "answer": 1,
+      "objectives": [
+        4
+      ],
+      "explanation": "見積り取扱いを適用しない売上割戻しは、原則として通知又は支払日の年度です。この与件では両方が翌期で、当期の想定だけによる減額はしません。"
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q11",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "旧返品調整引当金の経過措置対象外の法人が、商品250個を1個10,000円、原価6,000円で販売した。会計は20個の返品を見込み、売上を200,000円減らし、原価に対応する返品資産120,000円を計上した。まだ実際の返品はなく、他の差異もない。会計利益から税務の利益寄与額へ直す差引加算額を円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        5
+      ],
+      "explanation": "売上減額200,000円を加算し、会計で原価から除いた120,000円を減算し、差引80,000円加算です。会計利益2,300,000−1,380,000＝920,000円、税務2,500,000−1,500,000＝1,000,000円で一致します。",
+      "input": "number",
+      "accepted": [
+        "80000"
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q12",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "売上先の資金繰りから、契約対価のうち50,000円は回収できない可能性があるため、会計の売上から50,000円を減額した。まだ貸倒れの事実はなく、貸倒損失・引当金等の別の損金規定は適用しない設定である。収益の金額の計算を別の損金規定の問題と区別し、法22条の2第5項との関係と必要な申告調整を説明してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        5
+      ],
+      "explanation": "この問題は収益算定と別の損金規定を分けています。回収可能性が低いことと、税務上の収益額から直接除外できることは異なります。",
+      "input": "essay",
+      "modelAnswer": "対価債権の貸倒れが生ずる可能性は、法22条の2第5項により収益額に織り込まない。会計の売上減額50,000円を税務上戻すため、50,000円加算する。別の貸倒損失等はこの設定では適用せず、収益額の減額と混ぜない。",
+      "rubric": [
+        {
+          "criterion": "第5項により貸倒可能性を収益額へ反映しないと説明する",
+          "points": 2
+        },
+        {
+          "criterion": "50,000円加算と示す",
+          "points": 1
+        },
+        {
+          "criterion": "収益算定と別の損金規定の問題を区別する",
+          "points": 1
+        }
+      ],
+      "points": 4
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q13",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "前期の返品見込みは返金負債120,000円、返品資産72,000円で、前期に税務上その差48,000円を加算済み。旧返品調整引当金の経過措置対象外である。翌期、実際の返品に80,000円を返金し、原価48,000円の商品を在庫に戻した。他の返品権も全て消滅し、原価の価値低下や回収費用はない。会計では不要の返金負債40,000円を収益へ戻し、返品資産の差24,000円を原価にした。翌期の会計利益に対して行う減算額を正の円数で求めてください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        5
+      ],
+      "explanation": "会計の翌期利益影響は40,000−24,000＝16,000円。税務は実際の売上減80,000円と原価減48,000円で32,000円の減益なので、16,000−（−32,000）＝48,000円減算します。前期差異48,000円の取崩しとも一致します。",
+      "input": "number",
+      "accepted": [
+        "48000"
+      ]
+    },
+    {
+      "id": "zr2-hojin-revenue-timing-q14",
+      "field": "hojin",
+      "lesson": "zr2-hojin-revenue-timing",
+      "prompt": "3月31日決算の会社。3月に引渡し済み商品の売価900,000円・原価540,000円があり、未回収である。会社は回収不安だけを理由に売上を50,000円減らして850,000円とし、原価540,000円は全額費用とした。別に4〜6月の清掃代360,000円を3月に前受けし、全額当期売上とした。清掃は翌期に初めて提供する。その他の取引・差異はなく、貸倒損失等の別の損金規定も適用しない。当期の会計利益、税務上の収益・利益寄与額、差引申告調整の方向と金額を求め、それぞれの修正理由を説明し、会計利益から税務上の利益寄与額へ一致することも検算してください。",
+      "options": [],
+      "answer": 0,
+      "objectives": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "explanation": "未回収、貸倒れの見込み、未提供役務の前受けを区別する統合問題です。売上原価540,000円は税務でも当期損金で、修正しません。",
+      "input": "essay",
+      "modelAnswer": "会計利益は850,000＋360,000−540,000＝670,000円。税務収益は引渡し済み商品900,000円だけで、利益寄与額は900,000−540,000＝360,000円。貸倒れの見込みによる収益減額50,000円は加算し、未提供清掃の前受売上360,000円は減算する。差引310,000円減算で、670,000−310,000＝360,000円となる。",
+      "rubric": [
+        {
+          "criterion": "会計利益670,000円を求める",
+          "points": 1
+        },
+        {
+          "criterion": "税務収益900,000円と利益寄与額360,000円を求める",
+          "points": 2
+        },
+        {
+          "criterion": "貸倒見込み50,000円加算と前受360,000円減算を理由付きで示す",
+          "points": 3
+        },
+        {
+          "criterion": "差引310,000円減算と照合を示す",
+          "points": 2
+        }
+      ],
+      "points": 8
+    }
+  ],
+  "scopeContinuations": [
+    {
+      "topic": "期間充足の全要件、請負・成果報酬委任等の完成原則と期間処理、進捗見積不能・初期段階・原価比例からの除外",
+      "plannedIds": [
+        "zr2-hojin-revenue-performance"
+      ]
+    },
+    {
+      "topic": "法63条の工事進行、長期大規模、初期・価格未確定・期中変更・再編",
+      "plannedIds": [
+        "zr2-hojin-contract-progress"
+      ]
+    },
+    {
+      "topic": "契約の結合分割、据付・保証・ポイント、保証金預りの割戻し",
+      "plannedIds": [
+        "zr2-hojin-revenue-units-points"
+      ]
+    },
+    {
+      "topic": "本人代理、割賦・金融要素、商品券・非行使・返金不要頭金",
+      "plannedIds": [
+        "zr2-hojin-revenue-agent-financing"
+      ]
+    },
+    {
+      "topic": "旧返品調整引当金の適用法人・経過年度と率",
+      "plannedIds": [
+        "zr2-hojin-returns-transition"
+      ]
+    },
+    {
+      "topic": "貸倒損失及び引当金の個別適用要件",
+      "plannedIds": [
+        "zr2-hojin-bad-debts",
+        "zr2-hojin-specific-provision",
+        "zr2-hojin-pooled-provision"
+      ]
+    },
+    {
+      "topic": "土地等の固定資産売却、担保譲渡・農地・権利",
+      "plannedIds": [
+        "zr2-hojin-fixed-asset-revenue"
+      ]
+    },
+    {
+      "topic": "無償・低額譲渡と損金不算入費用等",
+      "plannedIds": [
+        "zr2-hojin-deemed-revenue"
+      ]
+    }
+  ],
+  "selfReview": {
+    "status": "author-pass-complete-targeted-contract-scope-correction-independent-review-pending",
+    "independentReview": "pending",
+    "countsAsFullCourseCompletion": false,
+    "record": "checks/hojin-revenue-timing-author-review.md"
+  }
+}

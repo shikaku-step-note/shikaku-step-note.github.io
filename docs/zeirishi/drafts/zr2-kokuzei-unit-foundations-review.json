@@ -18,11 +18,11 @@
     "zr2-kokuzei-limitations-succession",
     "zr2-kokuzei-late-tax"
   ],
-  "questionCount": 25,
+  "questionCount": 26,
   "totalPoints": 100,
   "glossaryQuestionCount": 12,
   "glossaryTotalPoints": 24,
-  "gradingPolicy": "独自の学習用配点。数値入力にも根拠・途中過程の記述を求める。模範解答と実質同義の説明を認める。公式の非公表採点基準、合否判定、時間妥当性の検証済み表示には用いない",
+  "gradingPolicy": "独自の学習用配点。理由・途中計算を採点する問題は記述入力とし、要素別ルーブリックで評価する。模範解答と実質同義の説明を認める。公式の非公表採点基準、合否判定、時間妥当性の検証済み表示には用いない",
   "durationMinutes": null,
   "durationStatus": "未試行。学習用の取り組み時間と本試験120分模試の成立を同一視しない",
   "questions": [
@@ -31,24 +31,22 @@
       "field": "kokuzei",
       "lesson": "zr2-kokuzei-framework",
       "objectives": [
-        1,
         2
       ],
       "targetObjectives": {
         "zr2-kokuzei-framework": [
-          1,
           2
         ],
         "zr2-kokuzei-private-law": [
           1
         ]
       },
-      "prompt": "工事会社あおいは従業員給与の源泉所得税を未納にしている。同社には売掛金があり、顧客はまだ代金を払っていない。顧客は給与から税を引かれていない。国税の納付義務者、滞納者、売掛金を差し押さえる場合の第三債務者を特定し、従業員や顧客を未納国税の納税者と取り違えない理由を述べてください。",
+      "prompt": "工事会社あおいは従業員給与の源泉所得税をその納期限までに納付せず、納期限が経過している。同社には売掛金があり、顧客はまだ代金を払っていない。顧客は給与から税を引かれていない。国税の納付義務者、滞納者、売掛金を差し押さえる場合の第三債務者を特定し、従業員や顧客を未納国税の納税者と取り違えない理由を述べてください。 また、会社の売掛債権と顧客所有の現金の帰属を比較してください。",
       "options": [],
       "answer": 0,
       "input": "essay",
       "points": 4,
-      "modelAnswer": "源泉徴収義務者であるあおいが国へ納付する義務を負い、未納なら滞納者となる。売掛金の債務者である顧客は、その債権差押えの第三債務者である。従業員が給与の支払を受けることや顧客が工事代金を負うことは、顧客・従業員をこの未納源泉税の納付義務者にする理由にならない。売掛金は会社に帰属する債権で、顧客の全財産を会社財産とみなすのでもない。",
+      "modelAnswer": "源泉徴収義務者であるあおいが国へ納付する義務を負い、納期限までに納付しなかったため滞納者となる。売掛金の債務者である顧客は、その債権差押えの第三債務者である。従業員が給与の支払を受けることや顧客が工事代金を負うことは、顧客・従業員をこの未納源泉税の納付義務者にする理由にならない。売掛金は会社に帰属する債権で、顧客の全財産を会社財産とみなすのでもない。",
       "rubric": [
         {
           "criterion": "会社の源泉納付義務・滞納者を特定",
@@ -63,7 +61,7 @@
           "points": 1
         }
       ],
-      "explanation": "源泉徴収義務者であるあおいが国へ納付する義務を負い、未納なら滞納者となる。売掛金の債務者である顧客は、その債権差押えの第三債務者である。従業員が給与の支払を受けることや顧客が工事代金を負うことは、顧客・従業員をこの未納源泉税の納付義務者にする理由にならない。売掛金は会社に帰属する債権で、顧客の全財産を会社財産とみなすのでもない。",
+      "explanation": "源泉徴収義務者であるあおいが国へ納付する義務を負い、納期限までに納付しなかったため滞納者となる。売掛金の債務者である顧客は、その債権差押えの第三債務者である。従業員が給与の支払を受けることや顧客が工事代金を負うことは、顧客・従業員をこの未納源泉税の納付義務者にする理由にならない。売掛金は会社に帰属する債権で、顧客の全財産を会社財産とみなすのでもない。",
       "sourceAnchors": [
         "徴収法2条",
         "通則法15条・源泉徴収所得税の区分"
@@ -127,7 +125,7 @@
           2
         ]
       },
-      "prompt": "国税と抵当権が競合する財産の売却代金は180万円である。資料には抵当権者優先の額110万円、続いて国税が満たされること及び費用なしが法定条件として確定している。未納国税は95万円である。契約書に「国税より担保を優先する」とあることだけを順位の根拠にできるか述べ、国税への配当額と残額も示してください。",
+      "prompt": "国税と抵当権が競合する財産の売却代金は180万円である。資料には抵当権者優先の額110万円、続いて国税が満たされること及び費用なしが法定条件として確定している。未納国税は95万円である。契約書に「国税より担保を優先する」とあることだけを順位の根拠にできるか述べ、国税への配当額と残額も示してください。 併せて、抵当権者が抵当権を持つことと目的財産の所有者であることの違いを説明してください。",
       "options": [],
       "answer": 0,
       "input": "essay",
@@ -294,16 +292,13 @@
       "targetObjectives": {
         "zr2-kokuzei-tax-timeline": [
           2
-        ],
-        "zr2-kokuzei-framework": [
-          1
         ]
       },
       "prompt": "源泉徴収による所得税の支払時・法定納期限は確認済みである。未納が続き、税務署から納税告知書が来た。経理担当者は「告知書が来るまで源泉税は確定しておらず、来て初めて申告納税方式の更正で確定した」と説明した。確定方式と告知の役割を分けて訂正してください。",
       "options": [],
       "answer": 0,
       "input": "essay",
-      "points": 4,
+      "points": 3,
       "modelAnswer": "源泉徴収による所得税は支払時の納税義務成立と同時に特別の手続を要せず税額が確定する。未納に対する納税の告知は徴収上の手続であり、申告納税方式の更正による最初の税額確定ではない。告知の指定納期限と当初の法定納期限も別に記録する。",
       "rubric": [
         {
@@ -312,10 +307,6 @@
         },
         {
           "criterion": "告知の徴収上の役割",
-          "points": 1
-        },
-        {
-          "criterion": "指定期限と法定期限の区分",
           "points": 1
         }
       ],
@@ -722,7 +713,7 @@
       "prompt": "人格のない社団の財産に属する権利義務の一部を、法人こはくが通則法7条に当たる方法で承継した。全財産価額240万円のうち承継価額90万円、対象国税64万円、他の調整なし。単なる売買とも合併とも区分されている。承継税額を求め、税額へ乗じる割合と法的原因を示してください。",
       "options": [],
       "answer": 0,
-      "input": "number",
+      "input": "essay",
       "points": 4,
       "modelAnswer": "7条の一部承継の財産割合90/240を対象国税64万円へ乗じ、24万円となる。承継財産90万円を税額とせず、6条合併の全承継や事業譲受人の第二次義務へ読み替えない。法的な承継原因が先に確定しているという条件を用いる。",
       "rubric": [
@@ -748,10 +739,9 @@
         "通則法7条"
       ],
       "independentCaseDesign": "組織の法的承継原因を計算前に確定させる",
-      "accepted": [
-        "240000"
-      ],
-      "requiresWorkingForFullCredit": true
+      "requiresWorkingForFullCredit": true,
+      "gradingMode": "manual-rubric",
+      "numericResultForReviewerOnly": 240000
     },
     {
       "id": "zr2-kokuzei-foundations-review-q18",
@@ -817,8 +807,8 @@
       "options": [],
       "answer": 0,
       "input": "essay",
-      "points": 4,
-      "modelAnswer": "本税18万円を先に満たし、残る還付金7万円を延滞税へ充当するので、本税残額0円、延滞税残額2万円、現金還付0円である。57条2項の条件として所与の8月4日がみなし納付時点であり、到着した8月14日に置き換えない。本問は延滞税9万円を確定済みとしているが、未確定ならみなし時点を用いた再計算も必要となる。",
+      "points": 3,
+      "modelAnswer": "本税18万円を先に満たし、残る還付金7万円を延滞税へ充当するので、本税残額0円、延滞税残額2万円、現金還付0円である。57条2項の条件として所与の8月4日がみなし納付時点であり、到着した8月14日に置き換えない。",
       "rubric": [
         {
           "criterion": "本税先充当と本税残額0",
@@ -831,13 +821,9 @@
         {
           "criterion": "適状8月4日と到着8月14日を区分",
           "points": 1
-        },
-        {
-          "criterion": "未確定なら日付により再計算する留保",
-          "points": 1
         }
       ],
-      "explanation": "本税18万円を先に満たし、残る還付金7万円を延滞税へ充当するので、本税残額0円、延滞税残額2万円、現金還付0円である。57条2項の条件として所与の8月4日がみなし納付時点であり、到着した8月14日に置き換えない。本問は延滞税9万円を確定済みとしているが、未確定ならみなし時点を用いた再計算も必要となる。",
+      "explanation": "本税18万円を先に満たし、残る還付金7万円を延滞税へ充当するので、本税残額0円、延滞税残額2万円、現金還付0円である。57条2項の条件として所与の8月4日がみなし納付時点であり、到着した8月14日に置き換えない。",
       "sourceAnchors": [
         "通則法57条"
       ],
@@ -861,9 +847,9 @@
       "prompt": "ある未納一覧には本税498,900円、過少申告加算税20,000円、既存の延滞税3,000円が記載されている。今回計算する延滞税はこの本税だけを基礎とする通常例である。118条3項の基礎額を求め、一覧合計額へ利息を付けない理由を述べてください。",
       "options": [],
       "answer": 0,
-      "input": "number",
-      "points": 4,
-      "modelAnswer": "延滞税の基礎となる本税498,900円の1万円未満を切り捨て、490,000円とする。加算税20,000円・既存延滞税3,000円を基礎に加えず、附帯税への複利計算をしない。最終延滞税額の千円最低額・百円端数は、この基礎税額の処理後の別段階である。",
+      "input": "essay",
+      "points": 3,
+      "modelAnswer": "延滞税の基礎となる本税498,900円の1万円未満を切り捨て、490,000円とする。加算税20,000円・既存延滞税3,000円を基礎に加えず、附帯税への複利計算をしない。",
       "rubric": [
         {
           "criterion": "本税のみ抽出",
@@ -876,21 +862,16 @@
         {
           "criterion": "附帯税へ複利を課さない",
           "points": 1
-        },
-        {
-          "criterion": "基礎と最終端数を区分",
-          "points": 1
         }
       ],
-      "explanation": "延滞税の基礎となる本税498,900円の1万円未満を切り捨て、490,000円とする。加算税20,000円・既存延滞税3,000円を基礎に加えず、附帯税への複利計算をしない。最終延滞税額の千円最低額・百円端数は、この基礎税額の処理後の別段階である。",
+      "explanation": "延滞税の基礎となる本税498,900円の1万円未満を切り捨て、490,000円とする。加算税20,000円・既存延滞税3,000円を基礎に加えず、附帯税への複利計算をしない。",
       "sourceAnchors": [
         "通則法60条2項・118条3項・119条4項"
       ],
       "independentCaseDesign": "本税と二種の附帯税が混在する未納一覧から基礎額を抽出する",
-      "accepted": [
-        "490000"
-      ],
-      "requiresWorkingForFullCredit": true
+      "requiresWorkingForFullCredit": true,
+      "gradingMode": "manual-rubric",
+      "numericResultForReviewerOnly": 490000
     },
     {
       "id": "zr2-kokuzei-foundations-review-q21",
@@ -909,7 +890,7 @@
       "prompt": "通常の期限内申告本税1,234,500円の法定納期限は2025年12月10日、完納日は2026年3月10日。除外・免除・一部納付はない。低率区分は12月11日〜翌2月10日、高率区分は2月11日以後である。年末でも分割し、率・日数・端数を示して延滞税を求めてください。",
       "options": [],
       "answer": 0,
-      "input": "number",
+      "input": "essay",
       "points": 4,
       "modelAnswer": "基礎額は1,230,000円。2025年12月11〜31日は21日で2.4％、2026年1月1〜2月10日は41日で2.8％、2月11〜3月10日は28日で9.1％である。各区分の1円未満切捨ては1,698円、3,868円、8,586円となり、合計14,152円から百円未満を切り捨て14,100円となる。低率期間62日・高率28日の合計90日も確認する。",
       "rubric": [
@@ -937,10 +918,9 @@
         "NTA9205の年別特例割合"
       ],
       "independentCaseDesign": "通常期限の2か月区分と年末の割合変更という異なる境界を組み合わせる",
-      "accepted": [
-        "14100"
-      ],
-      "requiresWorkingForFullCredit": true
+      "requiresWorkingForFullCredit": true,
+      "gradingMode": "manual-rubric",
+      "numericResultForReviewerOnly": 14100
     },
     {
       "id": "zr2-kokuzei-foundations-review-q22",
@@ -961,7 +941,7 @@
       "prompt": "法定申告・納期限2024年6月28日の国税に期限内申告があり、2026年7月6日発出・7月8日適法送達の増額更正で増差本税100万円が生じた。通常の納期限は8月6日、納付日は8月20日とする。61条1項1号が適用され、不正・他の除外免除等はない。控除期間、残る期間、率、延滞税を示してください。",
       "options": [],
       "answer": 0,
-      "input": "number",
+      "input": "essay",
       "points": 4,
       "modelAnswer": "1年経過日2025年6月28日の翌日6月29日から更正通知書発出日2026年7月6日までを控除する。残る2024年6月29日〜2025年6月28日の365日は2.4％で24,000円、2026年7月7日〜8月20日の45日は納期限前及び翌2か月以内なので2.8％で3,452円。合計27,452円から百円未満切捨てで27,400円。控除終期を到着7月8日とせず、全期間高率にも扱わない。",
       "rubric": [
@@ -988,10 +968,9 @@
         "措法94条"
       ],
       "independentCaseDesign": "修正申告ではなく更正発出日を控除終期とし納期限前後を区分する",
-      "accepted": [
-        "27400"
-      ],
-      "requiresWorkingForFullCredit": true
+      "requiresWorkingForFullCredit": true,
+      "gradingMode": "manual-rubric",
+      "numericResultForReviewerOnly": 27400
     },
     {
       "id": "zr2-kokuzei-foundations-review-q23",
@@ -1046,7 +1025,7 @@
       "prompt": "2026年に法定申告期限が到来した通常の法人税について、期限内確定申告による納付税額は60万円で、中間納付額30万円と所得税額控除5万円がある。65条3項2号ロの加算対象はこの二つで、他の調整はない。初回増差130万円を更正予知後に修正し、正当理由・帳簿加重・隠蔽等なし。期限内申告税額の定義から過少申告加算税を求めてください。",
       "options": [],
       "answer": 0,
-      "input": "number",
+      "input": "essay",
       "points": 4,
       "modelAnswer": "期限内申告税額は申告納付60万円に中間納付30万円と所得税額控除5万円を加え95万円である。50万円との多い額は95万円。基本130万円×10％＝13万円、超過35万円×5％＝17,500円、計147,500円。納付書の60万円だけを比較額としない。",
       "rubric": [
@@ -1072,10 +1051,9 @@
         "通則法65条1〜3項・118・119条"
       ],
       "independentCaseDesign": "比較基準そのものを法人税の申告明細から組み立てる",
-      "accepted": [
-        "147500"
-      ],
-      "requiresWorkingForFullCredit": true
+      "requiresWorkingForFullCredit": true,
+      "gradingMode": "manual-rubric",
+      "numericResultForReviewerOnly": 147500
     },
     {
       "id": "zr2-kokuzei-foundations-review-q25",
@@ -1114,15 +1092,53 @@
         "通則法65・68条"
       ],
       "independentCaseDesign": "増差額だけから隠蔽と上乗せを推論する答案を批判する"
+    },
+    {
+      "id": "zr2-kokuzei-foundations-review-q26",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-framework",
+      "objectives": [
+        1
+      ],
+      "targetObjectives": {
+        "zr2-kokuzei-framework": [
+          1
+        ]
+      },
+      "prompt": "徴収資料に、A＝法人税の本税18万円、B＝その延滞税5千円、C＝その滞納処分の費用6千円、D＝市の個人住民税所得割4万円、E＝森林環境税1千円に係る徴収金、F＝適用法により滞納処分の例で徴収でき、国税・地方税には属さない社会保険料2万円がある。徴収法2条の区分に従って、各項目を国税・地方税・公課に分類し、A〜Cは本税・附帯税・滞納処分費の違いも示してください。国が課す税ならすべて同法の国税になる、という説明が適切か、Eを使って理由を述べてください。",
+      "input": "essay",
+      "options": [],
+      "answer": 0,
+      "points": 3,
+      "modelAnswer": "Aは徴収法上の国税の本税、Bはその附帯税、Cは滞納処分費で、附帯税ではない。公課の定義における国税にはその滞納処分費を含む。DとEは同法の地方税に区分する。森林環境税は国が課す税でも2条1号の国税から除かれ、同条2号の地方税に係る徴収金へ含められるため、課税主体だけでは分類できない。Fは所与の滞納処分例・除外条件により公課である。",
+      "rubric": [
+        {
+          "criterion": "A本税・B附帯税・C費用を区分し、公課定義では国税に費用を含むと示す",
+          "points": 1
+        },
+        {
+          "criterion": "D及びEを地方税とし、Eについて国の税でも法定分類が異なる理由を示す",
+          "points": 1
+        },
+        {
+          "criterion": "Fを滞納処分例かつ国税・地方税以外という条件から公課とする",
+          "points": 1
+        }
+      ],
+      "sourceAnchors": [
+        "徴収法2条1・2・4・5号"
+      ],
+      "independentCaseDesign": "課税主体と徴収法上の定義が一致しない森林環境税、費用、附帯税、社会保険料を実資料から仕分ける",
+      "explanation": "Aは徴収法上の国税の本税、Bはその附帯税、Cは滞納処分費で、附帯税ではない。公課の定義における国税にはその滞納処分費を含む。DとEは同法の地方税に区分する。森林環境税は国が課す税でも2条1号の国税から除かれ、同条2号の地方税に係る徴収金へ含められるため、課税主体だけでは分類できない。Fは所与の滞納処分例・除外条件により公課である。"
     }
   ],
   "glossaryQuestions": [
     {
       "id": "zr2-kokuzei-foundations-term-1",
       "term": "納税者・滞納者",
-      "prompt": "次の場面で「納税者・滞納者」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：源泉徴収義務者の会社が国へ未納、給与受領者は従業員。",
-      "scenario": "源泉徴収義務者の会社が国へ未納、給与受領者は従業員",
-      "modelAnswer": "源泉税を国へ納付する会社がこの税の納税者で未納なら滞納者。所得を得た従業員というだけで同じ地位にしない。",
+      "prompt": "次の場面で「納税者・滞納者」が何を意味するか、取り違えやすい地位・時点・効果との違いを理由付きで説明してください。場面：源泉徴収義務者の会社が源泉税を納期限までに納付せず、その期限が経過した。給与受領者は従業員。",
+      "scenario": "源泉徴収義務者の会社が源泉税を納期限までに納付せず、その期限が経過した。給与受領者は従業員",
+      "modelAnswer": "源泉税を国へ納付する義務を負う会社が、この税の納税者である。納期限までに納付しなかったため滞納者となる。所得を得た従業員というだけで同じ地位にしない。納期限前の未納だけでは滞納者と判定しない。",
       "targetLessonIds": [
         "zr2-kokuzei-framework"
       ],
@@ -1376,11 +1392,6 @@
   ],
   "objectiveCoverage": {
     "zr2-kokuzei-framework": {
-      "1": [
-        "zr2-kokuzei-foundations-review-q1",
-        "zr2-kokuzei-foundations-review-q7",
-        "zr2-kokuzei-foundations-review-q20"
-      ],
       "2": [
         "zr2-kokuzei-foundations-review-q1"
       ],
@@ -1389,6 +1400,10 @@
       ],
       "4": [
         "zr2-kokuzei-foundations-review-q3"
+      ],
+      "1": [
+        "zr2-kokuzei-foundations-review-q20",
+        "zr2-kokuzei-foundations-review-q26"
       ]
     },
     "zr2-kokuzei-private-law": {
@@ -1406,6 +1421,24 @@
         "zr2-kokuzei-foundations-review-q16"
       ]
     },
+    "zr2-kokuzei-limitations-succession": {
+      "2": [
+        "zr2-kokuzei-foundations-review-q5",
+        "zr2-kokuzei-foundations-review-q16"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q11",
+        "zr2-kokuzei-foundations-review-q18",
+        "zr2-kokuzei-foundations-review-q19"
+      ],
+      "1": [
+        "zr2-kokuzei-foundations-review-q15"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q17",
+        "zr2-kokuzei-foundations-review-q18"
+      ]
+    },
     "zr2-kokuzei-tax-timeline": {
       "1": [
         "zr2-kokuzei-foundations-review-q6"
@@ -1420,40 +1453,6 @@
       "4": [
         "zr2-kokuzei-foundations-review-q9",
         "zr2-kokuzei-foundations-review-q22"
-      ]
-    },
-    "zr2-kokuzei-demand-acceleration": {
-      "1": [
-        "zr2-kokuzei-foundations-review-q10"
-      ],
-      "2": [
-        "zr2-kokuzei-foundations-review-q10",
-        "zr2-kokuzei-foundations-review-q11"
-      ],
-      "3": [
-        "zr2-kokuzei-foundations-review-q12"
-      ],
-      "4": [
-        "zr2-kokuzei-foundations-review-q13",
-        "zr2-kokuzei-foundations-review-q14"
-      ]
-    },
-    "zr2-kokuzei-limitations-succession": {
-      "1": [
-        "zr2-kokuzei-foundations-review-q15"
-      ],
-      "2": [
-        "zr2-kokuzei-foundations-review-q5",
-        "zr2-kokuzei-foundations-review-q16"
-      ],
-      "3": [
-        "zr2-kokuzei-foundations-review-q17",
-        "zr2-kokuzei-foundations-review-q18"
-      ],
-      "4": [
-        "zr2-kokuzei-foundations-review-q11",
-        "zr2-kokuzei-foundations-review-q18",
-        "zr2-kokuzei-foundations-review-q19"
       ]
     },
     "zr2-kokuzei-late-tax": {
@@ -1473,6 +1472,22 @@
         "zr2-kokuzei-foundations-review-q23",
         "zr2-kokuzei-foundations-review-q24",
         "zr2-kokuzei-foundations-review-q25"
+      ]
+    },
+    "zr2-kokuzei-demand-acceleration": {
+      "1": [
+        "zr2-kokuzei-foundations-review-q10"
+      ],
+      "2": [
+        "zr2-kokuzei-foundations-review-q10",
+        "zr2-kokuzei-foundations-review-q11"
+      ],
+      "3": [
+        "zr2-kokuzei-foundations-review-q12"
+      ],
+      "4": [
+        "zr2-kokuzei-foundations-review-q13",
+        "zr2-kokuzei-foundations-review-q14"
       ]
     }
   },
@@ -1605,9 +1620,11 @@
       "問22:24000+3452=27452→27400",
       "問24:600000+300000+50000=950000;1300000×.1+350000×.05=147500"
     ],
-    "coverage": "六講各4目標の24目標すべてに少なくとも1問を対応。高度な後続8講は修得済みとして数えない",
+    "coverage": "六講各4目標の24目標に適用問題を対応。ただしこの対応は全細目を十分に評価した証拠ではなく、独立レビュー継続中。後続8講は修得済みとしない",
     "nonCompletionRule": "本確認セットと六草稿の存在だけで単元又は科目を完了扱いにしない。親の全文確認・根拠照合・独立再計算・修正・試行が必要",
     "promptReuseCheck": "六草稿の講末77問との完全一致なし。文字列類似度の最大は0.580（問9とtimeline-q4）で、問9は月末発出・月初起算と送達効力を問う新事例。文字列検査は独立性の十分条件ではなく、全25問の判断設計も読み比べた",
-    "editorial": "全25事例・模範解答・採点要素・12場面用語を手動校正。各数値入力にも途中過程を採点する条件を明記。法律上異なる地位・日付・否定条件を保持"
+    "editorial": "全26事例・模範解答・採点要素・12場面用語を手動校正。根拠・途中過程を採点する問題を記述入力へ統一。法律上異なる地位・日付・否定条件を保持",
+    "inputRubricConsistency": "2026-10-27：理由と途中計算を採点するq17/20/21/22/24をessayへ変更。ID・各4点・総100点を維持。acceptedを除去し数値のみの自動正誤判定を避ける。審査はpending。",
+    "independentReviewCorrections": "2026-10-27 accounting_source_review指摘によりq1と用語1に納期限経過を明示。レビュー全体は継続中。 設問外採点を修正。q1/3は帰属比較を明示要求。q7/19/20の各不要criterionを削除して各3点とし、新規分類q26を3点追加。q1/7のframework1誤対応を削除し、分類技能をq26で累積評価。"
   }
 }

@@ -1,0 +1,2294 @@
+{
+  "schemaVersion": 1,
+  "status": "proposed-engine-owner-mapping",
+  "checkedOn": "2026-10-27",
+  "rawHistoryPreserved": true,
+  "rawTopicNumbersAreNotFineObjectives": true,
+  "integrationRule": "raw question.lesson・objectivesは保持。採用時だけownerLessonId・ownerObjectiveNumbersへ置換し、元bankIdと原IDをprovenanceへ残す。1〜7の単元topicgroupを単一講の細目番号へ流用しない。",
+  "independentReview": "pending",
+  "banks": [
+    {
+      "bankId": "zr2-boki-records-unit-review",
+      "sourceFile": "work/zeirishi-upgrade/drafts/zr2-boki-records-unit-review.json",
+      "questions": [
+        {
+          "questionId": "zr2-boki-records-unit-review-q1",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "出資・配当その他の純資産変動を区別して純資産と利益を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q2",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            3
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            1,
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d1",
+            "zr2-boki-account-equation-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "取引を資産・負債・純資産・収益・費用の増減に分ける"
+            },
+            {
+              "number": 3,
+              "text": "現金の増減と利益を区別し、売掛金・未払・借入元本で説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q3",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            2
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            1,
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d1",
+            "zr2-boki-account-equation-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "取引を資産・負債・純資産・収益・費用の増減に分ける"
+            },
+            {
+              "number": 2,
+              "text": "複合取引を含む仕訳の借方貸方を決め、一致を確かめる"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q4",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            2
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "現金の増減と利益を区別し、売掛金・未払・借入元本で説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q5",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            2
+          ],
+          "ownerLessonId": "zr2-boki-journals-ledgers",
+          "ownerObjectiveNumbers": [
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-journals-ledgers-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "複合仕訳を同じ借方貸方へ転記し期首と当期増減から残高を求める"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q6",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            2
+          ],
+          "ownerLessonId": "zr2-boki-journals-ledgers",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-journals-ledgers-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "顧客別・仕入先別の補助元帳を主要簿と照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q7",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            2,
+            3
+          ],
+          "ownerLessonId": "zr2-boki-trial-balance",
+          "ownerObjectiveNumbers": [
+            2,
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-trial-balance-d2",
+            "zr2-boki-trial-balance-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "元帳合計と残高を算定し全勘定の貸借を照合する"
+            },
+            {
+              "number": 3,
+              "text": "不一致と訂正の影響を両側で計算し、仕訳と転記の誤りを分ける"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q8",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            3
+          ],
+          "ownerLessonId": "zr2-boki-trial-balance",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-trial-balance-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "貸借一致の限界と未知額を確定する条件を説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q9",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            3,
+            4
+          ],
+          "ownerLessonId": "zr2-boki-trial-balance",
+          "ownerObjectiveNumbers": [
+            2,
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-trial-balance-d2",
+            "zr2-boki-trial-balance-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "元帳合計と残高を算定し全勘定の貸借を照合する"
+            },
+            {
+              "number": 4,
+              "text": "貸借一致の限界と未知額を確定する条件を説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q10",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            4
+          ],
+          "ownerLessonId": "zr2-boki-closing-accounts",
+          "ownerObjectiveNumbers": [
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-closing-accounts-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "収益費用を損益へ集め利益損失を繰越利益剰余金へ振り替える"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q11",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            5
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            2,
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d2",
+            "zr2-boki-accrual-adjustments-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "契約期間・単価変更・決算期変更から当期発生額と期末残高を計算する"
+            },
+            {
+              "number": 4,
+              "text": "整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q12",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            5
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "役務提供と入出金の時点から四つの経過勘定を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q13",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            5
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            2,
+            3,
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d2",
+            "zr2-boki-accrual-adjustments-d3",
+            "zr2-boki-accrual-adjustments-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "契約期間・単価変更・決算期変更から当期発生額と期末残高を計算する"
+            },
+            {
+              "number": 3,
+              "text": "期首再振替の有無に合わせて決済と期末整理を記帳する"
+            },
+            {
+              "number": 4,
+              "text": "整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q14",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            5,
+            6
+          ],
+          "ownerLessonId": "zr2-boki-interest-present-value",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-interest-present-value-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "期間・日数・途中の元本変動に応じた単利の発生額を求める"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q15",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            6
+          ],
+          "ownerLessonId": "zr2-boki-interest-present-value",
+          "ownerObjectiveNumbers": [
+            2,
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-interest-present-value-d2",
+            "zr2-boki-interest-present-value-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "複利の将来価値と現在価値を時間軸上で対応させる"
+            },
+            {
+              "number": 3,
+              "text": "年初年末・不均等な受払額・最終処分額・端数処理を反映して現在価値を計算する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q16",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            6
+          ],
+          "ownerLessonId": "zr2-boki-interest-present-value",
+          "ownerObjectiveNumbers": [
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-interest-present-value-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "複利の将来価値と現在価値を時間軸上で対応させる"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q17",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            6
+          ],
+          "ownerLessonId": "zr2-boki-interest-present-value",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-interest-present-value-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q18",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            3,
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q19",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            2,
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d2",
+            "zr2-boki-books-vouchers-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない"
+            },
+            {
+              "number": 4,
+              "text": "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q20",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            2,
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            1,
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d1",
+            "zr2-boki-books-vouchers-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する"
+            },
+            {
+              "number": 2,
+              "text": "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q21",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            3,
+            5,
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            3,
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d3",
+            "zr2-boki-books-vouchers-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する"
+            },
+            {
+              "number": 4,
+              "text": "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q22",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            2,
+            3,
+            7
+          ],
+          "ownerLessonId": "zr2-boki-trial-balance",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-trial-balance-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "貸借一致の限界と未知額を確定する条件を説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q23",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            4,
+            5,
+            7
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            1,
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d1",
+            "zr2-boki-accrual-adjustments-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "役務提供と入出金の時点から四つの経過勘定を区別する"
+            },
+            {
+              "number": 4,
+              "text": "整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q24",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            1,
+            4
+          ],
+          "ownerLessonId": "zr2-boki-closing-accounts",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-closing-accounts-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "残高勘定と翌期開始を記録し、総額残高と決算書の純額を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q25",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            2,
+            3
+          ],
+          "ownerLessonId": "zr2-boki-journals-ledgers",
+          "ownerObjectiveNumbers": [
+            1,
+            2,
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-journals-ledgers-d1",
+            "zr2-boki-journals-ledgers-d2",
+            "zr2-boki-journals-ledgers-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "仕訳帳・総勘定元帳・補助簿の役割と対応を説明する"
+            },
+            {
+              "number": 2,
+              "text": "複合仕訳を同じ借方貸方へ転記し期首と当期増減から残高を求める"
+            },
+            {
+              "number": 4,
+              "text": "合計一致の限界を判断し誤記や未知の記入額を復元する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q26",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            4,
+            5
+          ],
+          "ownerLessonId": "zr2-boki-closing-accounts",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-closing-accounts-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "決算整理・損益集計・帳簿締切の段階を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q27",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q28",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            3
+          ],
+          "ownerLessonId": "zr2-boki-trial-balance",
+          "ownerObjectiveNumbers": [
+            1,
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-trial-balance-d1",
+            "zr2-boki-trial-balance-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "合計・残高・合計残高試算表と集計段階を区別する"
+            },
+            {
+              "number": 2,
+              "text": "元帳合計と残高を算定し全勘定の貸借を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-unit-review-q29",
+          "rawLessonId": "zr2-boki-records-unit-review",
+          "rawTopicObjectiveNumbers": [
+            4,
+            5
+          ],
+          "ownerLessonId": "zr2-boki-closing-accounts",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-closing-accounts-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "再振替の有無を指定条件から読み、前期費用と当期費用を区別する"
+            }
+          ]
+        }
+      ],
+      "forms": [
+        {
+          "id": "zr2-boki-records-unit-review-a",
+          "title": "独立単元演習A",
+          "questionIds": [
+            "zr2-boki-records-unit-review-q1",
+            "zr2-boki-records-unit-review-q3",
+            "zr2-boki-records-unit-review-q5",
+            "zr2-boki-records-unit-review-q7",
+            "zr2-boki-records-unit-review-q9",
+            "zr2-boki-records-unit-review-q11",
+            "zr2-boki-records-unit-review-q13",
+            "zr2-boki-records-unit-review-q15",
+            "zr2-boki-records-unit-review-q17",
+            "zr2-boki-records-unit-review-q19",
+            "zr2-boki-records-unit-review-q21",
+            "zr2-boki-records-unit-review-q23"
+          ],
+          "suggestedMinutes": 75
+        },
+        {
+          "id": "zr2-boki-records-unit-review-b",
+          "title": "独立単元演習B",
+          "questionIds": [
+            "zr2-boki-records-unit-review-q2",
+            "zr2-boki-records-unit-review-q4",
+            "zr2-boki-records-unit-review-q6",
+            "zr2-boki-records-unit-review-q8",
+            "zr2-boki-records-unit-review-q10",
+            "zr2-boki-records-unit-review-q12",
+            "zr2-boki-records-unit-review-q14",
+            "zr2-boki-records-unit-review-q16",
+            "zr2-boki-records-unit-review-q18",
+            "zr2-boki-records-unit-review-q20",
+            "zr2-boki-records-unit-review-q22",
+            "zr2-boki-records-unit-review-q24"
+          ],
+          "suggestedMinutes": 75
+        },
+        {
+          "id": "zr2-boki-records-unit-review-c",
+          "title": "細目補充C",
+          "questionIds": [
+            "zr2-boki-records-unit-review-q25",
+            "zr2-boki-records-unit-review-q26",
+            "zr2-boki-records-unit-review-q27",
+            "zr2-boki-records-unit-review-q28",
+            "zr2-boki-records-unit-review-q29"
+          ],
+          "suggestedMinutes": 35
+        }
+      ]
+    },
+    {
+      "bankId": "zr2-boki-records-glossary-assessment",
+      "sourceFile": "work/zeirishi-upgrade/drafts/zr2-boki-records-glossary-assessment.json",
+      "questions": [
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q1",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            1
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            1,
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d1",
+            "zr2-boki-account-equation-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "取引を資産・負債・純資産・収益・費用の増減に分ける"
+            },
+            {
+              "number": 3,
+              "text": "現金の増減と利益を区別し、売掛金・未払・借入元本で説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q2",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            1
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "取引を資産・負債・純資産・収益・費用の増減に分ける"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q3",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            1
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "出資・配当その他の純資産変動を区別して純資産と利益を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q4",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            1
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "現金の増減と利益を区別し、売掛金・未払・借入元本で説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q5",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            2
+          ],
+          "ownerLessonId": "zr2-boki-journals-ledgers",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-journals-ledgers-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "仕訳帳・総勘定元帳・補助簿の役割と対応を説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q6",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            2
+          ],
+          "ownerLessonId": "zr2-boki-journals-ledgers",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-journals-ledgers-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "仕訳帳・総勘定元帳・補助簿の役割と対応を説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q7",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            2
+          ],
+          "ownerLessonId": "zr2-boki-journals-ledgers",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-journals-ledgers-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "顧客別・仕入先別の補助元帳を主要簿と照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q8",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            3
+          ],
+          "ownerLessonId": "zr2-boki-trial-balance",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-trial-balance-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "合計・残高・合計残高試算表と集計段階を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q9",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            3
+          ],
+          "ownerLessonId": "zr2-boki-trial-balance",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-trial-balance-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "貸借一致の限界と未知額を確定する条件を説明する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q10",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            4
+          ],
+          "ownerLessonId": "zr2-boki-closing-accounts",
+          "ownerObjectiveNumbers": [
+            1,
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-closing-accounts-d1",
+            "zr2-boki-closing-accounts-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "決算整理・損益集計・帳簿締切の段階を区別する"
+            },
+            {
+              "number": 2,
+              "text": "収益費用を損益へ集め利益損失を繰越利益剰余金へ振り替える"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q11",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            1,
+            4
+          ],
+          "ownerLessonId": "zr2-boki-closing-accounts",
+          "ownerObjectiveNumbers": [
+            3
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-closing-accounts-d3"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 3,
+              "text": "残高勘定と翌期開始を記録し、総額残高と決算書の純額を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q12",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            4
+          ],
+          "ownerLessonId": "zr2-boki-account-equation",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-account-equation-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "出資・配当その他の純資産変動を区別して純資産と利益を照合する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q13",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            5
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "役務提供と入出金の時点から四つの経過勘定を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q14",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            5
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "役務提供と入出金の時点から四つの経過勘定を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q15",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            5
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "役務提供と入出金の時点から四つの経過勘定を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q16",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            5
+          ],
+          "ownerLessonId": "zr2-boki-accrual-adjustments",
+          "ownerObjectiveNumbers": [
+            1
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-accrual-adjustments-d1"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "役務提供と入出金の時点から四つの経過勘定を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q17",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            4,
+            5
+          ],
+          "ownerLessonId": "zr2-boki-closing-accounts",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-closing-accounts-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "再振替の有無を指定条件から読み、前期費用と当期費用を区別する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q18",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            6
+          ],
+          "ownerLessonId": "zr2-boki-interest-present-value",
+          "ownerObjectiveNumbers": [
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-interest-present-value-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "複利の将来価値と現在価値を時間軸上で対応させる"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q19",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            6
+          ],
+          "ownerLessonId": "zr2-boki-interest-present-value",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-interest-present-value-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q20",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            6
+          ],
+          "ownerLessonId": "zr2-boki-interest-present-value",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-interest-present-value-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q21",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 2,
+              "text": "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q22",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            1,
+            2
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d1",
+            "zr2-boki-books-vouchers-d2"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 1,
+              "text": "主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する"
+            },
+            {
+              "number": 2,
+              "text": "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q23",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する"
+            }
+          ]
+        },
+        {
+          "questionId": "zr2-boki-records-glossary-assessment-q24",
+          "rawLessonId": "zr2-boki-records-glossary-assessment",
+          "rawTopicObjectiveNumbers": [
+            2,
+            7
+          ],
+          "ownerLessonId": "zr2-boki-books-vouchers",
+          "ownerObjectiveNumbers": [
+            4
+          ],
+          "proposedFineObjectiveIds": [
+            "zr2-boki-books-vouchers-d4"
+          ],
+          "assessedFineObjectives": [
+            {
+              "number": 4,
+              "text": "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fineObjectiveCoverage": [
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "objectiveNumber": 1,
+      "objectiveText": "取引を資産・負債・純資産・収益・費用の増減に分ける",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q2",
+        "zr2-boki-records-unit-review-q3",
+        "zr2-boki-records-glossary-assessment-q1",
+        "zr2-boki-records-glossary-assessment-q2"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q2",
+        "zr2-boki-records-unit-review-q3"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "objectiveNumber": 2,
+      "objectiveText": "複合取引を含む仕訳の借方貸方を決め、一致を確かめる",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q3"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q3"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "objectiveNumber": 3,
+      "objectiveText": "現金の増減と利益を区別し、売掛金・未払・借入元本で説明する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q2",
+        "zr2-boki-records-unit-review-q4",
+        "zr2-boki-records-glossary-assessment-q1",
+        "zr2-boki-records-glossary-assessment-q4"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q2",
+        "zr2-boki-records-unit-review-q4"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "objectiveNumber": 4,
+      "objectiveText": "出資・配当その他の純資産変動を区別して純資産と利益を照合する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q1",
+        "zr2-boki-records-glossary-assessment-q3",
+        "zr2-boki-records-glossary-assessment-q12"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q1"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectiveNumber": 1,
+      "objectiveText": "仕訳帳・総勘定元帳・補助簿の役割と対応を説明する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q25",
+        "zr2-boki-records-glossary-assessment-q5",
+        "zr2-boki-records-glossary-assessment-q6"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q25"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectiveNumber": 2,
+      "objectiveText": "複合仕訳を同じ借方貸方へ転記し期首と当期増減から残高を求める",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q5",
+        "zr2-boki-records-unit-review-q25"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q5",
+        "zr2-boki-records-unit-review-q25"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectiveNumber": 3,
+      "objectiveText": "顧客別・仕入先別の補助元帳を主要簿と照合する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q6",
+        "zr2-boki-records-glossary-assessment-q7"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q6"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectiveNumber": 4,
+      "objectiveText": "合計一致の限界を判断し誤記や未知の記入額を復元する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q25"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q25"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "objectiveNumber": 1,
+      "objectiveText": "合計・残高・合計残高試算表と集計段階を区別する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q28",
+        "zr2-boki-records-glossary-assessment-q8"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q28"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "objectiveNumber": 2,
+      "objectiveText": "元帳合計と残高を算定し全勘定の貸借を照合する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q7",
+        "zr2-boki-records-unit-review-q9",
+        "zr2-boki-records-unit-review-q28"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q7",
+        "zr2-boki-records-unit-review-q9",
+        "zr2-boki-records-unit-review-q28"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "objectiveNumber": 3,
+      "objectiveText": "不一致と訂正の影響を両側で計算し、仕訳と転記の誤りを分ける",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q7"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q7"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "objectiveNumber": 4,
+      "objectiveText": "貸借一致の限界と未知額を確定する条件を説明する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q8",
+        "zr2-boki-records-unit-review-q9",
+        "zr2-boki-records-unit-review-q22",
+        "zr2-boki-records-glossary-assessment-q9"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q8",
+        "zr2-boki-records-unit-review-q9",
+        "zr2-boki-records-unit-review-q22"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectiveNumber": 1,
+      "objectiveText": "決算整理・損益集計・帳簿締切の段階を区別する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q26",
+        "zr2-boki-records-glossary-assessment-q10"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q26"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectiveNumber": 2,
+      "objectiveText": "収益費用を損益へ集め利益損失を繰越利益剰余金へ振り替える",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q10",
+        "zr2-boki-records-glossary-assessment-q10"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q10"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectiveNumber": 3,
+      "objectiveText": "残高勘定と翌期開始を記録し、総額残高と決算書の純額を照合する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q24",
+        "zr2-boki-records-glossary-assessment-q11"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q24"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectiveNumber": 4,
+      "objectiveText": "再振替の有無を指定条件から読み、前期費用と当期費用を区別する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q29",
+        "zr2-boki-records-glossary-assessment-q17"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q29"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectiveNumber": 1,
+      "objectiveText": "役務提供と入出金の時点から四つの経過勘定を区別する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q12",
+        "zr2-boki-records-unit-review-q23",
+        "zr2-boki-records-glossary-assessment-q13",
+        "zr2-boki-records-glossary-assessment-q14",
+        "zr2-boki-records-glossary-assessment-q15",
+        "zr2-boki-records-glossary-assessment-q16"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q12",
+        "zr2-boki-records-unit-review-q23"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectiveNumber": 2,
+      "objectiveText": "契約期間・単価変更・決算期変更から当期発生額と期末残高を計算する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q11",
+        "zr2-boki-records-unit-review-q13"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q11",
+        "zr2-boki-records-unit-review-q13"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectiveNumber": 3,
+      "objectiveText": "期首再振替の有無に合わせて決済と期末整理を記帳する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q13"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q13"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectiveNumber": 4,
+      "objectiveText": "整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q11",
+        "zr2-boki-records-unit-review-q13",
+        "zr2-boki-records-unit-review-q23"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q11",
+        "zr2-boki-records-unit-review-q13",
+        "zr2-boki-records-unit-review-q23"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectiveNumber": 1,
+      "objectiveText": "期間・日数・途中の元本変動に応じた単利の発生額を求める",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q14"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q14"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectiveNumber": 2,
+      "objectiveText": "複利の将来価値と現在価値を時間軸上で対応させる",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q15",
+        "zr2-boki-records-unit-review-q16",
+        "zr2-boki-records-glossary-assessment-q18"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q15",
+        "zr2-boki-records-unit-review-q16"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectiveNumber": 3,
+      "objectiveText": "年初年末・不均等な受払額・最終処分額・端数処理を反映して現在価値を計算する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q15"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q15"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectiveNumber": 4,
+      "objectiveText": "割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q17",
+        "zr2-boki-records-glossary-assessment-q19",
+        "zr2-boki-records-glossary-assessment-q20"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q17"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectiveNumber": 1,
+      "objectiveText": "主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q20",
+        "zr2-boki-records-glossary-assessment-q22"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q20"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectiveNumber": 2,
+      "objectiveText": "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q19",
+        "zr2-boki-records-unit-review-q20",
+        "zr2-boki-records-glossary-assessment-q21",
+        "zr2-boki-records-glossary-assessment-q22"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q19",
+        "zr2-boki-records-unit-review-q20"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectiveNumber": 3,
+      "objectiveText": "伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q18",
+        "zr2-boki-records-unit-review-q21",
+        "zr2-boki-records-unit-review-q27"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q18",
+        "zr2-boki-records-unit-review-q21",
+        "zr2-boki-records-unit-review-q27"
+      ],
+      "coveredByNonGlossary": true
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectiveNumber": 4,
+      "objectiveText": "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する",
+      "allCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q19",
+        "zr2-boki-records-unit-review-q21",
+        "zr2-boki-records-glossary-assessment-q23",
+        "zr2-boki-records-glossary-assessment-q24"
+      ],
+      "nonGlossaryCumulativeQuestionIds": [
+        "zr2-boki-records-unit-review-q19",
+        "zr2-boki-records-unit-review-q21"
+      ],
+      "coveredByNonGlossary": true
+    }
+  ],
+  "addedQuestionsReason": "元帳未知額復元、決算段階、日計表総額、試算表三形式、再振替の有無と期間費用を非用語問題で明示的に評価。",
+  "limits": [
+    "原A/B24問だけの未評価細目をC5問で補った。A/Bの既存ID・分割を維持し、Cへの割当てを明示。",
+    "細目へ1問対応しただけで全条件の修得と認定しない。例えば日割の実日数推定や利息組入頻度を数値で変える追加累積問題は今後も必要。",
+    "ownerは採点の主な能力を担う一講。複数講を使う問題でも、主題でない計算準備を所有目標へむやみに追加しない。"
+  ],
+  "mappings": [
+    {
+      "questionId": "zr2-boki-records-unit-review-q1",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q2",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        1,
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d1",
+        "zr2-boki-account-equation-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q3",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d1",
+        "zr2-boki-account-equation-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q4",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q5",
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectives": [
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-journals-ledgers-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q6",
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-journals-ledgers-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q7",
+      "lessonId": "zr2-boki-trial-balance",
+      "objectives": [
+        2,
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-trial-balance-d2",
+        "zr2-boki-trial-balance-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q8",
+      "lessonId": "zr2-boki-trial-balance",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-trial-balance-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q9",
+      "lessonId": "zr2-boki-trial-balance",
+      "objectives": [
+        2,
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-trial-balance-d2",
+        "zr2-boki-trial-balance-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q10",
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectives": [
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-closing-accounts-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q11",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        2,
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d2",
+        "zr2-boki-accrual-adjustments-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q12",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q13",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        2,
+        3,
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d2",
+        "zr2-boki-accrual-adjustments-d3",
+        "zr2-boki-accrual-adjustments-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q14",
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-interest-present-value-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q15",
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectives": [
+        2,
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-interest-present-value-d2",
+        "zr2-boki-interest-present-value-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q16",
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectives": [
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-interest-present-value-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q17",
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-interest-present-value-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q18",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q19",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        2,
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d2",
+        "zr2-boki-books-vouchers-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q20",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d1",
+        "zr2-boki-books-vouchers-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q21",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        3,
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d3",
+        "zr2-boki-books-vouchers-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q22",
+      "lessonId": "zr2-boki-trial-balance",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-trial-balance-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q23",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        1,
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d1",
+        "zr2-boki-accrual-adjustments-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q24",
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-closing-accounts-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q25",
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectives": [
+        1,
+        2,
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-journals-ledgers-d1",
+        "zr2-boki-journals-ledgers-d2",
+        "zr2-boki-journals-ledgers-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q26",
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-closing-accounts-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q27",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q28",
+      "lessonId": "zr2-boki-trial-balance",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-trial-balance-d1",
+        "zr2-boki-trial-balance-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-unit-review-q29",
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-unit-review",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-closing-accounts-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q1",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        1,
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d1",
+        "zr2-boki-account-equation-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q2",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q3",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q4",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q5",
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-journals-ledgers-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q6",
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-journals-ledgers-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q7",
+      "lessonId": "zr2-boki-journals-ledgers",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-journals-ledgers-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q8",
+      "lessonId": "zr2-boki-trial-balance",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-trial-balance-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q9",
+      "lessonId": "zr2-boki-trial-balance",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-trial-balance-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q10",
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-closing-accounts-d1",
+        "zr2-boki-closing-accounts-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q11",
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectives": [
+        3
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-closing-accounts-d3"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q12",
+      "lessonId": "zr2-boki-account-equation",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-account-equation-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q13",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q14",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q15",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q16",
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "objectives": [
+        1
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-accrual-adjustments-d1"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q17",
+      "lessonId": "zr2-boki-closing-accounts",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-closing-accounts-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q18",
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectives": [
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-interest-present-value-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q19",
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-interest-present-value-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q20",
+      "lessonId": "zr2-boki-interest-present-value",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-interest-present-value-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q21",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q22",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        1,
+        2
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d1",
+        "zr2-boki-books-vouchers-d2"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q23",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d4"
+      ]
+    },
+    {
+      "questionId": "zr2-boki-records-glossary-assessment-q24",
+      "lessonId": "zr2-boki-books-vouchers",
+      "objectives": [
+        4
+      ],
+      "sourceBankId": "zr2-boki-records-glossary-assessment",
+      "proposedFineObjectiveIds": [
+        "zr2-boki-books-vouchers-d4"
+      ]
+    }
+  ],
+  "uncoveredDetailedSkills": []
+}

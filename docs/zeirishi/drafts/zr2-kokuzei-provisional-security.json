@@ -1,0 +1,914 @@
+{
+  "id": "zr2-kokuzei-provisional-security",
+  "subject": "kokuzei",
+  "title": "仮登記担保と譲渡担保の徴収手続を分けて解く",
+  "stage": "応用",
+  "moduleId": "kokuzei-priority",
+  "minutes": 220,
+  "objectives": [
+    "仮登記担保の優先と譲渡担保権者の責任を区別する",
+    "告知・期限・換価特例の手続を適用する"
+  ],
+  "prerequisites": [
+    "zr2-kokuzei-privileges-liens"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "lawAsOf": "2026-04-03",
+  "authored": "2026-10-27",
+  "sourceCandidates": [
+    {
+      "id": "collection-law",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000147_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "凍結15・23〜25・32・90・129条を読解。24条3項の起算文言、32条4項準用、物的責任を対応",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "collection-order",
+      "url": "https://laws.e-gov.go.jp/law/334CO0000000329_20260401_508CO0000000097",
+      "version": "2026-04-01施行版",
+      "location": "凍結6・8・9条。証明取立期限は8条4項。古い通達の3項表記を転記しない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "provisional-registration-law",
+      "url": "https://laws.e-gov.go.jp/law/353AC0000000078_20050401_416AC0000000152",
+      "version": "API asof=2026-04-03返却版",
+      "location": "本文1〜20条全文読解。特に2〜8・13〜14・20条を本文及び問題へ対応",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "general-law",
+      "url": "https://laws.e-gov.go.jp/law/337AC0000000066_20260401_508AC0000000012",
+      "version": "2026-04-01施行版",
+      "location": "10条の期間計算",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "general-order",
+      "url": "https://laws.e-gov.go.jp/law/337CO0000000135_20260401_507CO0000000126",
+      "version": "2026-04-01施行版",
+      "location": "2条1項7号の証明期限の休日特例除外。本文全体の読解とはしない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "civil-law",
+      "url": "https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033",
+      "version": "2026-04-01施行版",
+      "location": "140・143条の初日と月計算を凍結JSONで再読",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "transfer-security-guidance",
+      "url": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/04/024/01.htm",
+      "version": "2026-10-27現行ページ",
+      "location": "2/4の補充性と全額、6の発出後期間、20〜22の告知発出比較日、30〜34の証明期限・集合物等。法令基準日と別に取り扱う",
+      "verified": "2026-10-27"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "担保のための仮登記",
+      "definition": "金銭債務の担保を目的とする仮登記担保契約に基づく仮登記又は仮登録"
+    },
+    {
+      "term": "根担保仮登記",
+      "definition": "契約時に消滅すべき金銭債務が特定されていないもの。徴収23条4項の滞納処分では効力なし"
+    },
+    {
+      "term": "清算期間",
+      "definition": "仮登記担保法2条の適法な通知の到達から2か月。所有権移転の効力の要件"
+    },
+    {
+      "term": "清算金",
+      "definition": "清算期間経過時の財産価額が債権・立替費用を超える場合の差額"
+    },
+    {
+      "term": "清算金への物上代位",
+      "definition": "後順位担保権等が順位・見積額限度・払渡し前差押え等の要件により清算金へ及ぶこと"
+    },
+    {
+      "term": "譲渡担保財産",
+      "definition": "担保目的の譲渡により担保となっている財産。真正売買と区別する"
+    },
+    {
+      "term": "物的納税責任",
+      "definition": "特定の譲渡担保財産から設定者の国税を徴収される責任。権利者の一般財産による納付義務とは区別"
+    },
+    {
+      "term": "補充性",
+      "definition": "設定者の財産に滞納処分をしてもなお不足すると認められるという徴収の条件"
+    },
+    {
+      "term": "一括換価",
+      "definition": "25条所定の買戻権等の差押権利と譲渡担保財産を合わせて換価すること"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "provisional-ex1",
+      "section": "例題1：仮登記の日と最後2年分の利息等を使う",
+      "result": {
+        "prioritySecured": 2010000,
+        "cost": 100000,
+        "taxPaid": 790000,
+        "taxUnpaid": 410000
+      }
+    },
+    {
+      "id": "provisional-ex2",
+      "section": "例題2：清算金250万円から後順位抵当と国税へ配分する",
+      "result": {
+        "clearancePeriodEnd": "2026-06-10",
+        "clearanceMoney": 2500000,
+        "mortgagePaid": 1800000,
+        "taxPaid": 700000,
+        "taxUnpaid": 400000
+      }
+    },
+    {
+      "id": "provisional-ex3",
+      "section": "例題3：当初の不足120万円を、固定した徴収上限にしない",
+      "result": {
+        "noticeClaim": 2000000,
+        "initialEstimatedDeficiency": 1200000,
+        "ordinaryEarliestSeizure": "2026-06-13",
+        "debtorPropertyTaxPaid": 300000,
+        "securityPropertyTaxPaid": 1700000,
+        "remainingTax": 0
+      }
+    },
+    {
+      "id": "provisional-ex4",
+      "section": "例題4：実際の譲渡日・確定日付・証明期限がずれる",
+      "result": {
+        "actualTransfer": "2026-02-01",
+        "fixedDate": "2026-02-06",
+        "taxBaseline": "2026-02-05",
+        "article24paragraph8Exemption": false,
+        "collectionProofDeadline": "2026-08-09",
+        "holidayExtension": false
+      }
+    }
+  ],
+  "scopeNotes": [
+    "23条3項の譲受前担保及び22条準用の徴収額はtransferred-inheritedで実際に計算する。ここで準用を列挙して理解済みと数えない",
+    "譲渡担保権者自身の税・抵当等との競合、令9条及び22/26条の最終配当はcompeting-distributionで教える",
+    "破産等の別手続と仮登記担保法19条の扱いはpreservationで教授する。仮登記担保法を全文読んだことを全手続の技能完成とは数えない",
+    "集合動産の時点価額及び集合債権の特定を本文・問14で扱う。実際の第三債務者・差押方法はclaimsで資料に即して教える"
+  ],
+  "continuationCoverage": [
+    {
+      "competency": "23条3項の17条/22条準用と譲渡後の徴収額",
+      "plannedLessonIds": [
+        "zr2-kokuzei-transferred-inherited"
+      ],
+      "status": "authored_draft_pending_independent_review"
+    },
+    {
+      "competency": "告知比較日・令9条と22条/26条を含む競合配当",
+      "plannedLessonIds": [
+        "zr2-kokuzei-competing-distribution"
+      ],
+      "status": "authored_draft_pending_independent_review"
+    },
+    {
+      "competency": "破産等の別手続と仮登記担保法19条",
+      "plannedLessonIds": [
+        "zr2-kokuzei-preservation"
+      ],
+      "status": "planned_not_authored; generator_case_source_and_depth_explicitly_expanded"
+    },
+    {
+      "competency": "集合債権の特定・第三債務者別の差押手続",
+      "plannedLessonIds": [
+        "zr2-kokuzei-claims"
+      ],
+      "status": "planned_not_authored; generator_case_and_sources_explicitly_expanded"
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-kokuzei-provisional-security-q1",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "登記簿に所有権移転請求権の仮登記がある。23条の仮登記担保として国税への優先を判定する最初の確認はどれですか。",
+      "options": [
+        "仮登記なら原因に関係なく必ず担保とする",
+        "通常売買による権利保全か、特定の金銭債務を担保する仮登記担保契約かを確認する",
+        "本登記の有無だけを確認し、なければ一律に優先を否定する",
+        "権利者が納税者本人の債権者でなければ一律に対象外とする"
+      ],
+      "answer": 1,
+      "objectives": [
+        1
+      ],
+      "explanation": "仮登記の記載だけで金銭債務担保の機能があるとは限りません。契約の実質、担保される債務と23条の登記要件を先に確認します。納税者が物上保証人となる場合もあります。",
+      "distractorExplanations": {
+        "0": "真正の売買請求権の保全等と担保目的を区別していません。",
+        "2": "23条1項は担保のための仮登記による優先を定めます。",
+        "3": "納税者の財産が第三者の金銭債務を担保している場合を落とします。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q2",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "適法な担保仮登記が国税の比較日前にあり、特定元本150万円を担保する。元本弁済期2024年12月31日、未払2023年利息6万円・2024年利息6万円・2025年遅延損害金9万円があり各年末が支払期日。利率・公示・請求は適法で他の制限はない。2026年の滞納処分換価における優先被担保額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1650000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "最後2年分は2024年利息6万円と2025年損害金9万円で、150＋6＋9＝165万円です。2023年利息6万円を含めて171万円としたり、利息と損害金を別枠の2年にしたりしません。仮登記担保法13条2・3項、徴収129条4項による制限です。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q3",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "契約時に消滅すべき金銭債務が特定されていない根担保仮登記がある。国税の滞納処分での扱いはどれですか。",
+      "options": [
+        "根抵当と同じく極度額なら常に優先する",
+        "契約が早ければ特定の有無を問わない",
+        "徴収23条4項によりその滞納処分では効力を持たない",
+        "告知をすれば根担保が特定債権へ自動的に変わる"
+      ],
+      "answer": 2,
+      "objectives": [
+        1
+      ],
+      "explanation": "23条4項はこの仮登記・仮登録を滞納処分で無効力とします。根抵当の元本限度又は極度額の計算を流用しません。",
+      "distractorExplanations": {
+        "0": "根担保仮登記と根抵当を混同しています。",
+        "1": "債務の特定という条文要件を落としています。",
+        "3": "告知は仮登記担保契約の特定条件を補正する手続ではありません。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q4",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "土地の仮登記担保で、必要な予約完結等の後、適法な清算金見積額の通知が2026年5月14日の日中に債務者へ到達した。期間の特例はない。清算期間の満了日と、6月中に本登記だけをした場合に期間要件が満たされるかを答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "初日を算入せず5月15日から2か月を暦で計算するので、7月14日の末に満了する。本登記を6月に先行しても、2か月を経過しなければ仮登記担保法2条の所有権移転の効力は生じない。到達と登記を別に確認する。",
+      "rubric": [
+        {
+          "criterion": "7月14日末の満了と初日不算入・暦計算",
+          "points": 2
+        },
+        {
+          "criterion": "本登記のみでは法定の期間経過を補えない",
+          "points": 2
+        }
+      ],
+      "explanation": "初日を算入せず5月15日から2か月を暦で計算するので、7月14日の末に満了する。本登記を6月に先行しても、2か月を経過しなければ仮登記担保法2条の所有権移転の効力は生じない。到達と登記を別に確認する。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q5",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "清算期間経過時の土地価額600万円、仮登記担保の債権400万円、債務者負担費用の立替20万円、通知清算金見積180万円。担保仮登記後・国税の比較日前の抵当元本120万円につき、払渡し前に適法な物上代位が行われ、国も清算金請求権を差し押さえた。国税80万円、利息・費用・他の競合なし。国税の受領額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "600000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "清算金は600−400−20＝180万円。23条2項の条件を満たす抵当元本120万円を先に配分し、残る60万円が国税です。国税は20万円不足します。土地価額600万円全部を今回の国税差押対象である清算金と取り違えません。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q6",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "清算金の通知見積は150万円、実際の清算金は180万円。後順位抵当権者の担保債権170万円につき仮登記担保法4条の物上代位を適法に行使する。他の条件・競合に問題はない。この物上代位で受け得る金額の上限を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1500000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "債権170万円又は実際の清算金180万円の全額ではなく、通知に係る清算金見積額150万円が限度です。4条1項の見積額限度及び8条2項の通知の拘束力を確認します。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q7",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "設定者の滞納国税250万円に対し、その財産から充当できる現況の見込額は100万円で、不足すると適法に認定された。比較日後の譲渡担保財産がある。補充性について適切なのはどれですか。",
+      "options": [
+        "告知前に必ず設定者の全財産の換価を終了しなければ不足を認定できない",
+        "現況による不足認定と、差押え後の換価順序の制限を別々に確認する",
+        "他財産が100万円でもあれば不足は一律に否定される",
+        "譲渡担保という名目だけで不足の判断は不要になる"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "不足は現況に基づき認定します。実際の換価をすべて先に終えることを告知の一律の条件とせず、24条3項が準用する32条4項の原則的な換価順序を別に守ります。",
+      "distractorExplanations": {
+        "0": "補充性の認定と換価順序の段階を混同しています。",
+        "2": "250に対し100の見込みなら、それだけで十分とはいえません。",
+        "3": "24条1項の不足という要件を省けません。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q8",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "滞納国税180万円、設定者の他財産からの国税充当見込は70万円。24条の補充性その他の条件をすべて満たし、8項の除外はない。他の納付はない。24条2項で告知することができる国税額を、当初不足額だけに限られない点に注意して円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "1800000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "告知できるのは条件を満たす滞納国税全額の180万円です。不足110万円は補充性の認定の額であり、当然に固定された告知上限ではありません。実際の徴収時は他からの納付等を控除した国税残高を超えられません。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q9",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "24条2項の告知書を2026年6月5日に発し、8日に到達した。完納等はなく、通常の24条3項の差押えを予定する。繰上げ等の例外はない。通常差押えが可能となる最初の日を、発出・起算・経過した日を示して説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "発出日の翌日6月6日から15日までが10日間で、16日が10日を経過した日となる。その日まで未完納であれば通常差押えは17日以降。到達日の8日から数え直さず、47条等の「から起算して」とも同一にしない。",
+      "rubric": [
+        {
+          "criterion": "6月6〜15日の10日間",
+          "points": 1
+        },
+        {
+          "criterion": "6月16日の経過した日まで待つ",
+          "points": 1
+        },
+        {
+          "criterion": "6月17日以降という結論",
+          "points": 1
+        },
+        {
+          "criterion": "発出と到達及び文言差を区別",
+          "points": 1
+        }
+      ],
+      "explanation": "発出日の翌日6月6日から15日までが10日間で、16日が10日を経過した日となる。その日まで未完納であれば通常差押えは17日以降。到達日の8日から数え直さず、47条等の「から起算して」とも同一にしない。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q10",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "国税の元の法定納期限等は2026年3月16日。譲渡担保になったのは4月1日、その財産に別の抵当権が設定登記されたのは4月10日、24条2項の告知書発出は6月1日である。8項の時点による徴収除外と、24条で徴収する国税対抵当権の比較で用いる日を区別してください。他の要件に問題はない。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        1,
+        2
+      ],
+      "modelAnswer": "8項の除外では元の比較日3月16日と譲渡担保化4月1日を比較し、時点条件による除外はない。他方、別抵当との優先では15条1項6号により告知発出6月1日が法定納期限等となり、4月10日登記の抵当がこの国税に優先する。二つの判断で比較日が異なる理由を明記する。",
+      "rubric": [
+        {
+          "criterion": "8項につき3月16日対4月1日から除外なし",
+          "points": 2
+        },
+        {
+          "criterion": "私債権競合につき15条1項6号の6月1日を用いる",
+          "points": 2
+        },
+        {
+          "criterion": "抵当優先を判断し目的の異なる比較を説明",
+          "points": 1
+        }
+      ],
+      "explanation": "8項の除外では元の比較日3月16日と譲渡担保化4月1日を比較し、時点条件による除外はない。他方、別抵当との優先では15条1項6号により告知発出6月1日が法定納期限等となり、4月10日登記の抵当がこの国税に優先する。二つの判断で比較日が異なる理由を明記する。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q11",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "譲渡担保債権の取立日は2026年8月17日、配当計算書作成日は8月28日である。24条8項の設定時点の証明期限を示し、期限当日が日曜日であること及び配当計算書の日付の扱いも説明してください。災害等の個別措置はない。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "証明期限は取立日前日の8月16日。徴収令8条4項により取立日前日であって、配当計算書作成日前日の27日ではない。この期限は通則令2条1項7号の除外対象で、通則法10条2項の休日延長を適用せず、日曜日でも17日へ延ばさない。",
+      "rubric": [
+        {
+          "criterion": "8月16日を示す",
+          "points": 1
+        },
+        {
+          "criterion": "徴収令8条4項の取立基準と配当書基準の区別",
+          "points": 2
+        },
+        {
+          "criterion": "通則令2条1項7号による休日延長の除外",
+          "points": 2
+        }
+      ],
+      "explanation": "証明期限は取立日前日の8月16日。徴収令8条4項により取立日前日であって、配当計算書作成日前日の27日ではない。この期限は通則令2条1項7号の除外対象で、通則法10条2項の休日延長を適用せず、日曜日でも17日へ延ばさない。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q12",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "譲渡担保財産を納税者の財産として誤認して差し押さえていた。24条1項の要件を満たす場合の4項の続行について、適切なのはどれですか。",
+      "options": [
+        "名義が異なる財産なら全件で無条件に続行できる",
+        "続行できても告知・通知は永久に省略できる",
+        "必要な要件を確認して3項の差押えとして続行でき、遅滞なく2項の告知・通知等を行う",
+        "続行するには必ず一度解除して全く新たな差押えをしなければならない"
+      ],
+      "answer": 2,
+      "objectives": [
+        2
+      ],
+      "explanation": "4項の特則による続行は1項の要件等を満たす場合に限ります。遅滞ない告知・通知に加え、対象財産による5項・知れた権利者等に関する6項の通知も確認します。",
+      "distractorExplanations": {
+        "0": "真正な第三者財産等を何でも徴収できる規定ではありません。",
+        "1": "4項後段に反します。",
+        "3": "4項が続行の制度を明示しています。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q13",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "適法な24条2項告知後、担保債権が所定の債務不履行によって消滅し、担保権者が確定的所有を主張した。財産の第三者への再譲渡等はなく、7項の条件を満たす。正しい判断はどれですか。",
+      "options": [
+        "担保という名目がなくなれば必ず徴収できなくなる",
+        "7項により譲渡担保財産として存続するとみなして3項を適用できる",
+        "担保権者の固有の全財産から設定者の税を徴収する",
+        "すべての債権消滅原因を区別せず同じ結論にする"
+      ],
+      "answer": 1,
+      "objectives": [
+        1,
+        2
+      ],
+      "explanation": "24条7項は、所定の時点後の債務不履行等による担保債権の消滅について存続をみなします。物的責任の対象財産が拡張される意味ではありません。",
+      "distractorExplanations": {
+        "0": "7項の存続擬制を落としています。",
+        "2": "特定財産からの物的責任を人的な無限責任に変えています。",
+        "3": "弁済や他の原因、再譲渡と差押えの前後等を分けて検討します。"
+      }
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q14",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "同一性のある集合動産の当初譲渡担保価額40万円は国税の比較日前の設定として適法に証明済み。比較日後の追加入庫によって同じ基準による財産価額が70万円となり、価格上昇その他の変動はない。通達24関係32注2の当初価額超過部分に相当する財産を新たな設定と扱う。今回新たな設定として時点判定する部分の価額を円で答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "300000"
+      ],
+      "objectives": [
+        1
+      ],
+      "explanation": "追加入庫後70−当初40＝30万円です。同一性があるという理由だけで70万円全部を当初時点へ戻さず、補充品だから70万円全部が新しい日とも扱いません。これは設定時点を分ける価額であり、そのまま国税の実徴収額と決まるわけではありません。"
+    },
+    {
+      "id": "zr2-kokuzei-provisional-security-q15",
+      "field": "kokuzei",
+      "lesson": "zr2-kokuzei-provisional-security",
+      "prompt": "買戻しの約束がある財産について、「25条で必ず一括換価できる」とする提案を検討する。24・25条の関係から、確認する登記・権利者・差押えの条件を挙げてください。",
+      "options": [],
+      "answer": 0,
+      "input": "written",
+      "objectives": [
+        2
+      ],
+      "modelAnswer": "25条1項の買戻権の登記等がある譲渡担保財産で、その登記等の権利者が滞納者であることを確認する。その登記等に係る権利の差押えと、24条3項による譲渡担保財産の差押えが対象となる。単なる買戻しの約束だけで、24条による徴収要件や各差押えを省いて一括換価できない。",
+      "rubric": [
+        {
+          "criterion": "所定の買戻権登記等と滞納者たる権利者を示す",
+          "points": 2
+        },
+        {
+          "criterion": "権利と24条3項による財産の各差押えを挙げる",
+          "points": 2
+        },
+        {
+          "criterion": "約束だけでは不足するとの結論",
+          "points": 1
+        }
+      ],
+      "explanation": "25条1項の買戻権の登記等がある譲渡担保財産で、その登記等の権利者が滞納者であることを確認する。その登記等に係る権利の差押えと、24条3項による譲渡担保財産の差押えが対象となる。単なる買戻しの約束だけで、24条による徴収要件や各差押えを省いて一括換価できない。"
+    }
+  ],
+  "sourceProofForTenDays": {
+    "officialUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/chosyu/02/04/024/01.htm",
+    "locator": "第24条関係6",
+    "briefQuote": "発した日の翌日から10日目の翌日まで",
+    "statuteLocator": "凍結24条3項は「発した日から十日を経過した日まで」。47条等の「から起算して」と区別",
+    "case": "2026-06-01発出→06-02〜11の10日間→06-12経過した日まで→06-13以降の通常差押え"
+  },
+  "authorChecks": {
+    "numericChecks": [
+      "例1:180+9+12=201、290-10-201=79、120-79=41万円",
+      "例2:700-440-10=250、250-180=70、110-70=40万円",
+      "例3:200-80=120見込不足、200-30=170残税、180-10=170、30+170=200万円",
+      "例4:02-06は02-05より後、取立08-10の前日08-09。休日延長の除外を確認",
+      "問2:150+6+9=165万円、問5:600-400-20-120=60万円、問6:min(170,150,180)=150万円、問8:告知180万円、問14:70-40=30万円"
+    ],
+    "legalChecks": "凍結23〜25/32/90/129、令6/8/9、仮登記担保法1〜20全文、民140/143、通則令2を読解。24条の初日不算入・経過した日まで、告知額と実徴収残高、主財産先行換価、令8条4項と休日延長除外を分けた",
+    "sourceNeedsIndependentCheck": [
+      "現行基本通達24関係2/4/32/34等の解釈補助について、基準日前履歴又は当時資料で独立確認が必要。特に集合物・将来債権の私法判例による条件を、作者読解だけで独立レビュー済みとしない"
+    ],
+    "editorial": "全本文・15問と全解説/部分点を作問者が再読。独立の事実・日本語・sourceレビューはpending",
+    "paragraphReview": [
+      {
+        "paragraph": 1,
+        "line": 1,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 2,
+        "line": 3,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 3,
+        "line": 5,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 4,
+        "line": 7,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 5,
+        "line": 9,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 6,
+        "line": 11,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 7,
+        "line": 13,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 8,
+        "line": 15,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 9,
+        "line": 17,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 10,
+        "line": 19,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 11,
+        "line": 21,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 12,
+        "line": 23,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 13,
+        "line": 25,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 14,
+        "line": 27,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 15,
+        "line": 29,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 16,
+        "line": 31,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 17,
+        "line": 33,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 18,
+        "line": 35,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 19,
+        "line": 37,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 20,
+        "line": 39,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 21,
+        "line": 41,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 22,
+        "line": 43,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 23,
+        "line": 45,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 24,
+        "line": 47,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 25,
+        "line": 49,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 26,
+        "line": 51,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 27,
+        "line": 53,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 28,
+        "line": 55,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 29,
+        "line": 57,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 30,
+        "line": 59,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 31,
+        "line": 61,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 32,
+        "line": 63,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 33,
+        "line": 65,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 34,
+        "line": 67,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 35,
+        "line": 69,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 36,
+        "line": 71,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 37,
+        "line": 73,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 38,
+        "line": 75,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 39,
+        "line": 77,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 40,
+        "line": 79,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 41,
+        "line": 81,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 42,
+        "line": 83,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 43,
+        "line": 85,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 44,
+        "line": 87,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 45,
+        "line": 89,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 46,
+        "line": 91,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 47,
+        "line": 93,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 48,
+        "line": 95,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 49,
+        "line": 97,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 50,
+        "line": 99,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 51,
+        "line": 101,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 52,
+        "line": 103,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 53,
+        "line": 105,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 54,
+        "line": 107,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 55,
+        "line": 109,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 56,
+        "line": 111,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 57,
+        "line": 113,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      },
+      {
+        "paragraph": 58,
+        "line": 115,
+        "finding": "なし",
+        "action": "契約機能・比較目的・日付・対象財産・残税・換価順序を対応させて作問者が再読。独立レビューはpending"
+      }
+    ],
+    "structureChecks": {
+      "checkedOn": "2026-10-27",
+      "bodyCharacters": 7179,
+      "uniqueQuestions": 15,
+      "questionsByFormat": {
+        "number": 5,
+        "written": 5,
+        "choice": 5
+      },
+      "objectiveMapping": "both actual planned objectives; 1-based question references checked",
+      "prerequisiteDAG": "170 proposed nodes acyclic; dependencies resolve",
+      "dateChecks": "24条発出+12日で普通差押え初日。例4/問11の前日期限は日曜であり通則令除外を適用",
+      "reviewStatus": "source/factual/Japanese pending; publication draft"
+    }
+  }
+}

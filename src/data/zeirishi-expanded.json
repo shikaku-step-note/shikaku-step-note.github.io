@@ -1634,6 +1634,2580 @@
           "explanation": "一時所得は二つを同年分として合計し、30＋50−4−6−50＝20万円。総所得への算入は20×1/2＝10万円です。雑所得12万円を加え22万円となります。一時所得の特別控除50万円を各賞金に一回ずつ使うことはできません。"
         }
       ]
+    },
+    {
+      "id": "zr2-boki-account-equation",
+      "title": "取引の二面性から仕訳と利益を求める",
+      "description": "取引の二面性を資産・負債・純資産から読み、複合仕訳と利益を求めます。現金増減・出資・借入れ・配当を区別し、別の式で検算します。",
+      "subject": "boki",
+      "unit": 1001,
+      "moduleId": "zr2-boki-unit-records",
+      "position": 1,
+      "stage": "基礎",
+      "minutes": 100,
+      "objectives": [
+        "取引を資産・負債・純資産・収益・費用の増減に分ける",
+        "複合取引を含む仕訳の借方貸方を決め、一致を確かめる",
+        "現金の増減と利益を区別し、売掛金・未払・借入元本で説明する",
+        "出資・配当その他の純資産変動を区別して純資産と利益を照合する"
+      ],
+      "objectiveIds": [
+        "zr2-boki-account-equation-d1",
+        "zr2-boki-account-equation-d2",
+        "zr2-boki-account-equation-d3",
+        "zr2-boki-account-equation-d4"
+      ],
+      "prerequisites": [],
+      "glossary": [
+        {
+          "term": "貸借対照表等式",
+          "definition": "ある時点の資産合計が負債と純資産の合計に等しいという関係"
+        },
+        {
+          "term": "純資産",
+          "definition": "資産合計から負債合計を差し引いた残額"
+        },
+        {
+          "term": "借方",
+          "definition": "仕訳や勘定の左側を示す名称"
+        },
+        {
+          "term": "貸方",
+          "definition": "仕訳や勘定の右側を示す名称"
+        },
+        {
+          "term": "複合仕訳",
+          "definition": "一つの取引について借方又は貸方に複数の勘定科目を用いる仕訳"
+        }
+      ],
+      "references": [
+        {
+          "id": "ac2-bookkeeping-official",
+          "title": "国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "locator": "令和5年分 青色申告者のための貸借対照表作成の手引き、3（印刷2頁）・5(1)（印刷3頁）。個人向けの税務固有処理はこの企業簿記例へ移用しない。5(1)の印刷4頁に借方貸方の表・複合仕訳・元帳の諸口記載を確認",
+          "version": "2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "accounting-principles",
+          "title": "企業会計審議会：企業会計原則・同注解",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "locator": "企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認",
+          "version": "1982年4月20日最終改正。対象取引の後の個別基準は別途確認",
+          "verified": "2026-10-27"
+        }
+      ],
+      "reviewed": "2026-10-27",
+      "assessmentVersion": "zeirishi-2026-v2-account-equation-1",
+      "workedExamples": [
+        {
+          "id": "zr2-boki-account-equation-ex1",
+          "section": "例題1：出資・借入れと掛売上を区別する",
+          "objectives": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-ex2",
+          "section": "例題2：一つの取得を複数の支払手段で記録する",
+          "objectives": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-ex3",
+          "section": "例題3：利益と現金の増減を両方計算する",
+          "objectives": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-ex4",
+          "section": "例題4：純資産の変化から利益を逆算する",
+          "objectives": [
+            4
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "zr2-boki-account-equation-q1",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "会社が銀行から現金240,000円を借り入れた。利息・手数料はなく、この時点の変化を選んでください。",
+          "options": [
+            "資産と収益が各240,000円増える",
+            "資産と負債が各240,000円増える",
+            "資産と資本金が各240,000円増える",
+            "資産が240,000円減り負債が240,000円増える"
+          ],
+          "answer": 1,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "現金という資産と借入金という負債が同額増えます。出資ではなく返済義務があり、収益には含めません。借方・現金240,000／貸方・借入金240,000です。他の候補は借入金を収益又は資本金と誤認するか、資産の増加方向を逆にしています。"
+        },
+        {
+          "id": "zr2-boki-account-equation-q2",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "取得価額360,000円の備品を購入し、現金140,000円を支払い、残額は借入金で銀行から売主へ直接決済された。他に手数料等はない。仕訳を選んでください。",
+          "options": [
+            "借方 備品360,000・貸方 現金360,000",
+            "借方 備品360,000と借入金220,000・貸方 現金140,000",
+            "借方 消耗品費360,000・貸方 現金140,000と借入金220,000",
+            "借方 備品360,000・貸方 現金140,000と借入金220,000"
+          ],
+          "answer": 3,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "備品360,000円の増加を借方、現金140,000円の減少と借入金220,000円の増加を貸方へ置きます。借入分が会社現金を経由しない指定なので架空の入金を加えません。取得額の全額費用化、借入方向の逆転、貸借不一致の候補は不適切です。"
+        },
+        {
+          "id": "zr2-boki-account-equation-q3",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "同じ決算日時点で資産合計が1,850,000円、負債合計が760,000円であった。純資産を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            4
+          ],
+          "explanation": "純資産は資産から負債を引いた残額なので1,850,000−760,000＝1,090,000円です。これを現金残高や当期利益と同一視してはいけません。資産の内訳や期中の資本取引は、この残高等式だけでは判明しません。",
+          "input": "number",
+          "accepted": [
+            "1090000"
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-q4",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "当期に役務提供完了による売上280,000円を計上し、うち現金回収は100,000円だった。当期給与は160,000円発生し、支払は120,000円で残りは未払。当期に別途200,000円を借り入れた。他に損益はない。当期利益を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "売上280,000−給与160,000＝120,000円です。売掛金180,000円と給与未払40,000円が残ります。借入元本は収益ではありません。現金増加は100,000−120,000＋200,000＝180,000円で利益と異なります。",
+          "input": "number",
+          "accepted": [
+            "120000"
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-q5",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "前期に売上と売掛金を適切に計上済みの代金90,000円を、当期に現金回収した。今回の仕訳を選んでください。税金等は考慮しない。",
+          "options": [
+            "現金90,000／売掛金90,000",
+            "現金90,000／売上90,000",
+            "現金90,000／借入金90,000",
+            "売掛金90,000／現金90,000"
+          ],
+          "answer": 0,
+          "objectives": [
+            1,
+            2,
+            3
+          ],
+          "explanation": "すでにある売掛金を現金へ替えるため、現金90,000／売掛金90,000です。再び売上にすると二重計上になります。入金を負債とする、売掛金を増やす候補も元の請求権の消滅と逆です。"
+        },
+        {
+          "id": "zr2-boki-account-equation-q6",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "買掛金40,000円の現金支払を、誤って借方・給料40,000円／貸方・現金40,000円と記録した。正しい説明を選んでください。",
+          "options": [
+            "貸借が不一致になるため必ず検出できる",
+            "現金は正しくても利益に影響しない",
+            "貸借は一致するが買掛金と費用が各40,000円過大になる",
+            "現金と買掛金が両方40,000円過少になる"
+          ],
+          "answer": 2,
+          "objectives": [
+            1,
+            2,
+            3
+          ],
+          "explanation": "誤った仕訳も左右40,000円で一致しますが、本来減る買掛金が残り、費用が40,000円多くなります。損益誤りは貸借一致だけでは検出できません。現金は正しく減っているので現金額に差がある候補は不適切です。"
+        },
+        {
+          "id": "zr2-boki-account-equation-q7",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "期首純資産900,000円、期末純資産1,220,000円。当期に出資200,000円を受け、適法な配当50,000円を行った。評価差額・過年度修正等その他の純資産変動はない。当期利益を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            4
+          ],
+          "explanation": "期末−期首は320,000円。この増加に含まれる出資200,000円を除き、配当で減った50,000円を戻します。320,000−200,000＋50,000＝170,000円です。配当を収益にする仕訳ではなく、利益変動を逆算しています。",
+          "input": "number",
+          "accepted": [
+            "170000"
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-q8",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "期首は現金600,000円・資本金600,000円のみ。当期に現金300,000円を借入れ、備品420,000円を現金購入し、提供完了した役務売上250,000円の全額を現金で受け取った。当期費用80,000円を現金で支払った。他の取引はない。期末の現金残高を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "現金は600,000＋300,000−420,000＋250,000−80,000＝650,000円です。利益は250,000−80,000＝170,000円。資産は現金650,000＋備品420,000＝1,070,000円、負債300,000＋純資産770,000とも一致します。備品全額を費用にしません。",
+          "input": "number",
+          "accepted": [
+            "650000"
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-q9",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "株主個人が自己の生活用品を個人の財布から購入した。会社は支払も債務負担もせず、会社へ物品が移転した事実もない。会社の記帳について理由を説明してください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1
+          ],
+          "explanation": "取引主体と会社の資産負債の変動を確認する問題です。株主の行動をすべて会社費用としないことを説明してください。金額が与えられていないことを理由に記帳不能とする答案では、会社との関係を判定できていません。",
+          "input": "essay",
+          "points": 3,
+          "modelAnswer": "会社の資産・負債・純資産又は収益費用を変化させる事実がないため、会社の仕訳は行わない。株主個人と会社の記録を分ける。",
+          "rubric": [
+            {
+              "criterion": "会社と株主個人の記録主体を区別",
+              "points": 1
+            },
+            {
+              "criterion": "会社への資産移転・支払・債務負担がない条件から仕訳不要と説明",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-q10",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "未使用の事務用品70,000円を後払いで購入し、購入時は資産の消耗品勘定で処理すると指定されている。正しい仕訳を選んでください。",
+          "options": [
+            "消耗品費70,000／現金70,000",
+            "未払金70,000／消耗品70,000",
+            "消耗品70,000／売上70,000",
+            "消耗品70,000／未払金70,000"
+          ],
+          "answer": 3,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "指定により借方は資産の消耗品、貸方は購入代金の未払金です。まだ支払っていないため現金は減らしません。費用処理の候補は今回指定と異なり、売上は購入に伴う収益ではありません。"
+        },
+        {
+          "id": "zr2-boki-account-equation-q11",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "現金の増加額が利益を上回ったので、売上の計上漏れが必ずあると判断してよいか。借入れと売掛金回収を例に、理由を説明してください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "現金増加の原因を調べる前に差額を売上へ振り替えてはいけません。利益と現金の不一致は発生主義の通常の結果でもあります。",
+          "input": "essay",
+          "points": 3,
+          "modelAnswer": "必ず計上漏れがあるとはいえない。借入元本の受取りは現金と負債を増やしても収益にはならず、計上済み売掛金の回収は資産間の振替である。入金の性質を確認し、売上の二重計上を避ける。",
+          "rubric": [
+            {
+              "criterion": "現金増加と利益の差だけで売上漏れを断定しない",
+              "points": 1
+            },
+            {
+              "criterion": "借入れを負債増加として説明",
+              "points": 1
+            },
+            {
+              "criterion": "売掛金回収を資産入替えとして説明",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-account-equation-q12",
+          "field": "boki",
+          "lesson": "zr2-boki-account-equation",
+          "prompt": "決算日時点の資産合計2,400,000円、資本金1,000,000円、利益剰余金320,000円、買掛金180,000円である。その他の負債は借入金のみ、その他の純資産項目はない。借入金残高を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            4
+          ],
+          "explanation": "純資産は1,000,000＋320,000＝1,320,000円。負債合計は2,400,000−1,320,000＝1,080,000円です。ここから買掛金180,000円を除き、借入金は900,000円になります。純資産に利益剰余金を含め忘れると借入れを過大に推定します。",
+          "input": "number",
+          "accepted": [
+            "900000"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-journals-ledgers",
+      "title": "仕訳帳から元帳と顧客別残高へつなぐ",
+      "description": "仕訳帳から総勘定元帳・補助元帳へ転記し、期首と増減から残高を復元します。顧客別内訳と主要簿を照合し、未記帳と転記誤りを区別します。",
+      "subject": "boki",
+      "unit": 1001,
+      "moduleId": "zr2-boki-unit-records",
+      "position": 2,
+      "stage": "基礎",
+      "minutes": 100,
+      "objectives": [
+        "仕訳帳・総勘定元帳・補助簿の役割と対応を説明する",
+        "複合仕訳を同じ借方貸方へ転記し期首と当期増減から残高を求める",
+        "顧客別・仕入先別の補助元帳を主要簿と照合する",
+        "合計一致の限界を判断し誤記や未知の記入額を復元する"
+      ],
+      "objectiveIds": [
+        "zr2-boki-journals-ledgers-d1",
+        "zr2-boki-journals-ledgers-d2",
+        "zr2-boki-journals-ledgers-d3",
+        "zr2-boki-journals-ledgers-d4"
+      ],
+      "prerequisites": [
+        "zr2-boki-account-equation"
+      ],
+      "glossary": [
+        {
+          "term": "仕訳帳",
+          "definition": "取引の仕訳を発生順に記録する主要簿"
+        },
+        {
+          "term": "総勘定元帳",
+          "definition": "取引の増減を勘定科目別に記録する主要簿"
+        },
+        {
+          "term": "補助元帳",
+          "definition": "売掛金の顧客別など特定勘定の内訳を記録する帳簿"
+        },
+        {
+          "term": "転記",
+          "definition": "仕訳等を対応する元帳の勘定へ移す作業"
+        },
+        {
+          "term": "諸口",
+          "definition": "相手科目欄で複数の相手科目があることを示す記載"
+        }
+      ],
+      "references": [
+        {
+          "id": "ac2-bookkeeping-official",
+          "title": "国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "locator": "令和5年分手引き5(1)（印刷3頁）、6(2)(3)(9)(10)、6(11)（印刷14頁）。個人税務固有処理は移用しない。5(1)の印刷4頁に借方貸方の表・複合仕訳・元帳の諸口記載を確認",
+          "version": "2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "accounting-principles",
+          "title": "企業会計審議会：企業会計原則・同注解",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "locator": "企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認",
+          "version": "1982年4月20日最終改正。対象取引の後の個別基準は別途確認",
+          "verified": "2026-10-27"
+        }
+      ],
+      "reviewed": "2026-10-27",
+      "assessmentVersion": "zeirishi-2026-v2-journals-ledgers-1",
+      "workedExamples": [
+        {
+          "id": "zr2-boki-journals-ledgers-ex1",
+          "section": "例題1：8件の仕訳から当座預金残高を求める",
+          "objectives": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-ex2",
+          "section": "例題2：顧客別残高を総勘定元帳と合わせる",
+          "objectives": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-ex3",
+          "section": "例題3：補助元帳の合計が一致しても顧客を取り違える",
+          "objectives": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-ex4",
+          "section": "例題4：複合仕訳を各勘定へ漏れなく転記する",
+          "objectives": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-ex5",
+          "section": "例題5：元帳残高から回収額を復元する",
+          "objectives": [
+            2,
+            4
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "zr2-boki-journals-ledgers-q1",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "当座預金の期首借方残高540,000円。当期に売掛金120,000円を預金回収し、買掛金90,000円・給与40,000円・借入元本50,000円を預金支払。他の記入はない。期末借方残高を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2
+          ],
+          "explanation": "540,000＋120,000−90,000−40,000−50,000＝480,000円。期首は当期入金に重ねません。元本返済は費用でなくても当座預金の貸方記入です。",
+          "input": "number",
+          "accepted": [
+            "480000"
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q2",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "期首売掛金はA社130,000円、B社90,000円。当期掛売上はA社70,000円・B社40,000円、回収はA社80,000円・B社60,000円。他の増減はない。顧客残高合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "A社130,000＋70,000−80,000＝120,000円、B社90,000＋40,000−60,000＝70,000円。合計190,000円。主要簿でも220,000＋110,000−140,000＝190,000円です。",
+          "input": "number",
+          "accepted": [
+            "190000"
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q3",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "仕訳帳に「当座預金60,000円／売掛金60,000円」と記録した。基本方式で転記する際の正しい説明を選んでください。",
+          "options": [
+            "当座預金貸方・売掛金借方へ各60,000円",
+            "両勘定の借方へ各60,000円",
+            "当座預金借方・売掛金貸方へ各60,000円",
+            "仕訳帳記録済みなので元帳転記は省く"
+          ],
+          "answer": 2,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "当座預金の借方と売掛金の貸方へ各60,000円を転記します。元の仕訳と同じ側です。逆転、双方借方は増減を変え、仕訳帳記録だけで元帳を省くと残高へ反映できません。"
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q4",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "備品90,000円を現金30,000円・後払未払金60,000円で購入した。現金勘定へ転記する金額と方向を選んでください。",
+          "options": [
+            "借方90,000円",
+            "貸方90,000円",
+            "借方30,000円",
+            "貸方30,000円"
+          ],
+          "answer": 3,
+          "objectives": [
+            2
+          ],
+          "explanation": "支払額30,000円の減少なので貸方30,000円。備品原価90,000円を写すと後払まで支払済みにします。借方記入では現金を増やすことになり、未払金60,000円は別勘定へ転記します。"
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q5",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "B社の回収を補助元帳だけでA社回収へ誤記した。仕訳帳と総勘定元帳は正しい。正しい説明を選んでください。",
+          "options": [
+            "合計は一致しても顧客内訳は誤るため補助元帳を訂正する",
+            "主要簿の売掛金を同額減らす追加仕訳を行う",
+            "試算表は必ず不一致になる",
+            "入金されたので両社を減らす"
+          ],
+          "answer": 0,
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "合計回収額は変わらず、合計一致でも顧客内訳が誤ります。主要簿へ回収を追加すると正しい全体残高を崩します。両社を減らす処理も二重減額です。"
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q6",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "主要簿の売掛金残高420,000円と顧客残高合計は一致する。A社170,000円、C社90,000円、残りはB社のみ。B社残高を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "420,000−170,000−90,000＝160,000円。170,000＋160,000＋90,000＝420,000円と確認します。未知内訳を主要簿合計から復元する問題です。",
+          "input": "number",
+          "accepted": [
+            "160000"
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q7",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "当座預金の期首借方残高500,000円、当期借方合計260,000円、期末借方残高620,000円。締切の次期繰越を含まない当期貸方合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2,
+            4
+          ],
+          "explanation": "500,000＋260,000−貸方＝620,000より140,000円。次期繰越620,000円は当期の出金ではなく締切の差額記入です。",
+          "input": "number",
+          "accepted": [
+            "140000"
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q8",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "現金売上50,000円を仕訳帳へ記録し元帳と現金出納帳へ転記後、出納帳の同じ記録を新しい売上としてもう一度仕訳した。誤りを帳簿の役割に触れて説明してください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1,
+            4
+          ],
+          "explanation": "複数帳簿に同じ取引を記録しても、別取引が発生する意味ではありません。基本方式での重複仕訳を指摘します。",
+          "input": "essay",
+          "points": 3,
+          "modelAnswer": "元帳は勘定別、現金出納帳は現金取引の内訳を記録し、同じ売上を追っている。再び仕訳すると現金と売上が各50,000円過大になるので、元記録との参照を確認して重複を訂正する。",
+          "rubric": [
+            {
+              "criterion": "主要簿と補助簿が同一取引へ対応することを説明",
+              "points": 1
+            },
+            {
+              "criterion": "現金売上の二重仕訳と各50,000円の過大を指摘",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q9",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "顧客から請求額過大の申出があったが、売掛金補助元帳合計は主要簿と一致する。適切な調査を選んでください。",
+          "options": [
+            "合計一致を理由に申出を棄却",
+            "請求書番号と入金明細を顧客別口座へ照合",
+            "全顧客を同率で減額",
+            "差額を直ちに売上加算"
+          ],
+          "answer": 1,
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "顧客の取り違えは合計で相殺されるため請求書番号と入金明細を顧客口座へ対応させます。合計一致で打ち切る、根拠なく全顧客を修正する、売上へ加算する各候補は誤りです。"
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q10",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "X社買掛金の期首貸方残高180,000円、当期掛仕入50,000円、当期支払130,000円。他の増減はない。期末残高を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "負債は増加が貸方、減少が借方なので180,000＋50,000−130,000＝100,000円。資産の記入方向と取り違えず、義務の増減として確かめます。",
+          "input": "number",
+          "accepted": [
+            "100000"
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q11",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "備品150,000円を当座預金60,000円・未払金90,000円で取得した。備品元帳の相手勘定欄の「諸口」が示す意味と、内訳を確認する帳簿を説明し、この取引の相手科目と金額をそれぞれ示してください。「諸口」を独立した勘定として扱うかも述べてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "諸口は独立勘定や不明額ではありません。複合仕訳の参照箇所を使って内訳を追います。",
+          "input": "essay",
+          "points": 3,
+          "modelAnswer": "相手科目が複数ある記載で、仕訳帳の参照先で当座預金60,000円と未払金90,000円を確認する。諸口という別勘定や残高を作らない。",
+          "rubric": [
+            {
+              "criterion": "複数相手科目を示すと説明",
+              "points": 1
+            },
+            {
+              "criterion": "仕訳帳参照と2金額を示す",
+              "points": 1
+            },
+            {
+              "criterion": "独立勘定ではないと区別",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-journals-ledgers-q12",
+          "field": "boki",
+          "lesson": "zr2-boki-journals-ledgers",
+          "prompt": "4仕訳がある。①現金80,000／売上80,000、②当座預金40,000／売掛金40,000、③給料15,000／現金15,000、④備品120,000／当座預金50,000・未払金70,000。期首と締切を除く全元帳への当期借方転記合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "80,000＋40,000＋15,000＋120,000＝255,000円。貸方も80,000＋40,000＋15,000＋50,000＋70,000＝255,000円。複合仕訳④の借方に相手科目の内訳を重ねてはいけません。",
+          "input": "number",
+          "accepted": [
+            "255000"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-trial-balance",
+      "title": "合計と残高の試算表を作り、誤謬を調べる",
+      "description": "合計・残高・合計残高試算表を作り、仕訳と転記の誤りを訂正します。貸借一致では発見できない誤りと、未知額を確定する条件も学びます。",
+      "subject": "boki",
+      "unit": 1001,
+      "moduleId": "zr2-boki-unit-records",
+      "position": 3,
+      "stage": "基礎",
+      "minutes": 110,
+      "objectives": [
+        "合計・残高・合計残高試算表と集計段階を区別する",
+        "元帳合計と残高を算定し全勘定の貸借を照合する",
+        "不一致と訂正の影響を両側で計算し、仕訳と転記の誤りを分ける",
+        "貸借一致の限界と未知額を確定する条件を説明する"
+      ],
+      "objectiveIds": [
+        "zr2-boki-trial-balance-d1",
+        "zr2-boki-trial-balance-d2",
+        "zr2-boki-trial-balance-d3",
+        "zr2-boki-trial-balance-d4"
+      ],
+      "prerequisites": [
+        "zr2-boki-journals-ledgers"
+      ],
+      "glossary": [
+        {
+          "term": "合計試算表",
+          "definition": "指定段階の各勘定の借方記入合計と貸方記入合計を一覧にした表"
+        },
+        {
+          "term": "残高試算表",
+          "definition": "各勘定の借方貸方の差額を残高の側へ記載した表"
+        },
+        {
+          "term": "合計残高試算表",
+          "definition": "各勘定の借方貸方合計と借方貸方残高を一表にした試算表"
+        },
+        {
+          "term": "整理前試算表",
+          "definition": "決算整理仕訳を反映する前の段階の試算表"
+        },
+        {
+          "term": "整理後試算表",
+          "definition": "決算整理仕訳を反映した段階の試算表"
+        }
+      ],
+      "references": [
+        {
+          "id": "ac2-bookkeeping-official",
+          "title": "国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "locator": "令和5年分手引き6(11)（印刷14頁）試算表の作成と不一致の調査、6(12)（印刷15頁）。Q6等の個人税務向け差額調整を本講の会社簿記へ移用しない",
+          "version": "2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "accounting-principles",
+          "title": "企業会計審議会：企業会計原則・同注解",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "locator": "企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認",
+          "version": "1982年4月20日最終改正。対象取引の後の個別基準は別途確認",
+          "verified": "2026-10-27"
+        }
+      ],
+      "reviewed": "2026-10-27",
+      "assessmentVersion": "zeirishi-2026-v2-trial-balance-1",
+      "workedExamples": [
+        {
+          "id": "zr2-boki-trial-balance-ex1",
+          "section": "例題1：同じ元帳から合計表と残高表を作る",
+          "objectives": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-ex2",
+          "section": "例題2：片側の金額誤りと左右反対の転記",
+          "objectives": [
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-ex3",
+          "section": "例題3：貸借一致では見つからない誤り",
+          "objectives": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-ex4",
+          "section": "例題4：残高試算表から未知の売上を求める",
+          "objectives": [
+            2,
+            4
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "zr2-boki-trial-balance-q1",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "当座預金勘定の指定段階の借方合計690,000円、貸方合計250,000円。残高試算表の借方へ記載する額を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "690,000−250,000＝440,000円の借方残高です。合計試算表なら両側を記載しますが、残高表は差額だけです。合計940,000円を残高にしません。",
+          "input": "number",
+          "accepted": [
+            "440000"
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-q2",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "借入金の貸方合計380,000円、借方合計140,000円。他の調整はない。残高試算表の貸方へ記載する額を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "380,000−140,000＝240,000円の貸方残高。返済等の借方記入を差し引いて、残る義務を表示します。両側の合計520,000円ではありません。",
+          "input": "number",
+          "accepted": [
+            "240000"
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-q3",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "期首試算表の借方貸方合計はそれぞれ850,000円。当期仕訳の借方貸方合計はそれぞれ560,000円。転記は正しい。期首繰越を含み締切記入を含まない合計試算表の借方合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "850,000＋560,000＝1,410,000円です。当期記入だけなら560,000円ですが、今回は期首を含みます。貸方合計も同額です。",
+          "input": "number",
+          "accepted": [
+            "1410000"
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-q4",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "3勘定の借方/貸方合計は、現金400,000/150,000円、当座預金350,000/60,000円、買掛金50,000/190,000円。この3勘定から生じる借方残高の合計を円単位で求めてください。他勘定の残高は求めない。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2
+          ],
+          "explanation": "現金250,000円と当座預金290,000円が借方残高、買掛金140,000円は貸方です。借方残高合計250,000＋290,000＝540,000円。3勘定だけなので左右合計一致を要求する資料ではありません。",
+          "input": "number",
+          "accepted": [
+            "540000"
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-q5",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "正しい仕訳では売掛金回収12,000円を貸方へ転記するが、売掛金の借方へ12,000円と転記した。現金側は正しい。訂正の影響を選んでください。",
+          "options": [
+            "借方合計12,000円減、貸方合計12,000円増",
+            "貸方合計24,000円だけ増",
+            "借方合計12,000円だけ減",
+            "現金借方を12,000円追加"
+          ],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "売掛金の誤った借方12,000円を除き、正しい貸方12,000円を加えます。不一致は24,000円改善します。現金は正しく追加記入しません。差額片側だけや金額を倍にした仕訳は元の転記へ対応しません。"
+        },
+        {
+          "id": "zr2-boki-trial-balance-q6",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "当期費用40,000円を、正しくは給料であるのに地代家賃として記録し、相手現金は正しい。ほかに誤りはない。正しい説明を選んでください。",
+          "options": [
+            "貸借が必ず40,000円不一致",
+            "費用合計は同じだが科目内訳は誤る",
+            "現金が40,000円過大",
+            "正規の簿記では内訳の訂正は不要"
+          ],
+          "answer": 1,
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "同じ当期費用同士の誤分類なので試算表の貸借と費用合計は変わりませんが、費用内訳は誤ります。利益まで必ず40,000円過少になるわけではなく、合計一致だけでは分類を確認できません。"
+        },
+        {
+          "id": "zr2-boki-trial-balance-q7",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "合計試算表の借方1,965,000円、貸方1,920,000円。仕訳帳は正しいが、家賃75,000円支払の現金貸方を30,000円と転記していた。他に誤りはない。転記訂正後の貸方合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "貸方不足は75,000−30,000＝45,000円。1,920,000＋45,000＝1,965,000円で借方と一致します。家賃借方は正しいため追加しません。",
+          "input": "number",
+          "accepted": [
+            "1965000"
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-q8",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "買掛金60,000円の現金支払を、仕訳帳で給料60,000／現金60,000と誤記し、そのまま転記した。正しい訂正仕訳を選んでください。",
+          "options": [
+            "買掛金60,000／現金60,000を追加",
+            "給料60,000／買掛金60,000",
+            "現金60,000／売上60,000",
+            "買掛金60,000／給料60,000"
+          ],
+          "answer": 3,
+          "objectives": [
+            3
+          ],
+          "explanation": "誤った給料を貸方で取り消し、買掛金の減少を借方へ記録します。現金はすでに正しく減っているので重ねません。正しい支払仕訳全体の追加、給料増加、架空収益の候補は誤りです。"
+        },
+        {
+          "id": "zr2-boki-trial-balance-q9",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "残高試算表の借方は現金250,000円・売掛金350,000円・備品800,000円・費用310,000円。貸方は買掛金160,000円・借入金250,000円・資本金900,000円・未知の売上のみ。他に勘定も誤謬もない。売上を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2,
+            4
+          ],
+          "explanation": "借方合計1,710,000円、貸方既知額1,310,000円より売上400,000円です。利益は400,000−310,000＝90,000円。資産1,400,000＝負債410,000＋資本金900,000＋利益90,000でも検算できます。",
+          "input": "number",
+          "accepted": [
+            "400000"
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-q10",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "残高試算表で売上と借入金の二つだけが不明、他の額は既知である。貸借一致の関係だけで両方を個別に確定できるか、その理由とともに説明してください。個別確定のために必要となる独立した追加資料の例も一つ示してください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            4
+          ],
+          "explanation": "同じ貸方に二つの未知額があり、合計しか決まらない場合を問います。独立した別資料が要るという条件を説明してください。",
+          "input": "essay",
+          "points": 3,
+          "modelAnswer": "貸借一致だけで分かるのは売上と借入金の合計であり、両方を個別確定できない。売上に関する請求資料、借入金の入出金、利益額など独立した条件が必要となる。",
+          "rubric": [
+            {
+              "criterion": "二つの未知額の合計だけが分かると説明",
+              "points": 1
+            },
+            {
+              "criterion": "独立した追加資料の例を示す",
+              "points": 2
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-trial-balance-q11",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "提供済み役務の現金売上30,000円を、仕訳帳と元帳の両方で全く記録していなかった。他の記録は正しい。正しい説明を選んでください。",
+          "options": [
+            "借方だけ30,000円不足",
+            "貸方だけ30,000円不足",
+            "貸借は一致し得るが現金と売上が各30,000円過少",
+            "貸借一致なら記帳不要と判断する"
+          ],
+          "answer": 2,
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "借方現金と貸方売上が同額落ちるので試算表は一致しても双方30,000円過少です。記録がない取引は証憑との照合で発見します。貸借差額の有無だけでは足りません。"
+        },
+        {
+          "id": "zr2-boki-trial-balance-q12",
+          "field": "boki",
+          "lesson": "zr2-boki-trial-balance",
+          "prompt": "整理前試算表は貸借一致しているが、当期に発生済みの給与25,000円が未払で未記帳と判明した。貸借一致を理由に無視できるか、利益への影響と必要仕訳を説明してください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            1,
+            3,
+            4
+          ],
+          "explanation": "整理前の一致は決算整理完了の意味ではありません。当期費用と未払負債を同額追加しても一致は保たれます。",
+          "input": "essay",
+          "points": 3,
+          "modelAnswer": "無視できない。借方・給料25,000円／貸方・未払費用25,000円を記録する。当期費用が増えるため、未計上のままの利益は25,000円過大であり、整理後は25,000円減少する。",
+          "rubric": [
+            {
+              "criterion": "整理前の一致だけで整理不要としない",
+              "points": 1
+            },
+            {
+              "criterion": "給料と未払費用の25,000円仕訳を示す",
+              "points": 1
+            },
+            {
+              "criterion": "利益の過大と整理後減少の方向を説明",
+              "points": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-closing-accounts",
+      "title": "損益・残高勘定を締め切り翌期へつなぐ",
+      "description": "決算整理から損益集計、利益の振替、帳簿締切、翌期開始まで追います。残高勘定と決算書の純額、再振替の有無を具体的な数表で比較します。",
+      "subject": "boki",
+      "unit": 1001,
+      "moduleId": "zr2-boki-unit-records",
+      "position": 4,
+      "stage": "標準",
+      "minutes": 120,
+      "objectives": [
+        "決算整理・損益集計・帳簿締切の段階を区別する",
+        "収益費用を損益へ集め利益損失を繰越利益剰余金へ振り替える",
+        "残高勘定と翌期開始を記録し、総額残高と決算書の純額を照合する",
+        "再振替の有無を指定条件から読み、前期費用と当期費用を区別する"
+      ],
+      "objectiveIds": [
+        "zr2-boki-closing-accounts-d1",
+        "zr2-boki-closing-accounts-d2",
+        "zr2-boki-closing-accounts-d3",
+        "zr2-boki-closing-accounts-d4"
+      ],
+      "prerequisites": [
+        "zr2-boki-trial-balance"
+      ],
+      "glossary": [
+        {
+          "term": "決算整理",
+          "definition": "当期損益と期末資産負債等を適切にするために期間配分や評価等を行う手続"
+        },
+        {
+          "term": "損益勘定",
+          "definition": "決算締切で収益費用を集め当期利益損失を確定するための勘定"
+        },
+        {
+          "term": "残高勘定",
+          "definition": "残高勘定を使う締切方式で翌期へ引き継ぐ各勘定残高を集める勘定"
+        },
+        {
+          "term": "再振替",
+          "definition": "前期末の特定の整理仕訳を翌期首に逆仕訳し、当期の通常記帳と合わせて期間損益を整える手続"
+        },
+        {
+          "term": "繰越利益剰余金",
+          "definition": "利益剰余金のうち利益準備金や別途積立金等を除き、当期損益の振替・配当等の変動を反映する勘定"
+        }
+      ],
+      "references": [
+        {
+          "id": "ac2-bookkeeping-official",
+          "title": "国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "locator": "令和5年分手引き6(10)・6(11)(12)。期末損益と繰越の関係を参照するが、個人の元入金振替を株式会社へ移用しない。残高勘定方式は第76回簿記論の要求形式も参照",
+          "version": "2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "accounting-principles",
+          "title": "企業会計審議会：企業会計原則・同注解",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "locator": "企業会計原則 一般原則二・三、注解2。1982年最終改正。後の個別基準との関係は各論で確認",
+          "version": "1982年4月20日最終改正。対象取引の後の個別基準は別途確認",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "ac2-exam-boki76",
+          "title": "国税庁：第76回税理士試験・簿記論問題",
+          "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_boki.pdf",
+          "locator": "第76回第一問の本店・支店の損益勘定及び残高勘定、第三問の比較締切残高。出題形式・要求技能の一次資料であり公式解答解説ではない。数値と会社設定は本稿へ転載しない",
+          "version": "第76回（2026年）、120分・2026年4月3日法令基準。技能・形式の確認用",
+          "verified": "2026-10-27"
+        }
+      ],
+      "reviewed": "2026-10-27",
+      "assessmentVersion": "zeirishi-2026-v2-closing-accounts-1",
+      "workedExamples": [
+        {
+          "id": "zr2-boki-closing-accounts-ex1",
+          "section": "例題1：整理前試算表から損益・残高勘定まで",
+          "objectives": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-ex2",
+          "section": "例題2：損失が出るときの振替方向",
+          "objectives": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-ex3",
+          "section": "例題3：前期未払給与を再振替する場合",
+          "objectives": [
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-ex4",
+          "section": "例題4：残高勘定の未知額を総額と純額で検算する",
+          "objectives": [
+            3
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "zr2-boki-closing-accounts-q1",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "整理後の売上は貸方残高420,000円。これを損益勘定へ振り替える仕訳を選んでください。",
+          "options": [
+            "損益420,000／売上420,000",
+            "売上420,000／損益420,000",
+            "売上420,000／現金420,000",
+            "売掛金420,000／売上420,000"
+          ],
+          "answer": 1,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "売上の貸方残高を借方で0にし、収益を損益の貸方へ集めるため売上／損益です。逆の仕訳は売上を増やし、現金や売掛金を相手にすると返金等の新しい取引になってしまいます。"
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q2",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "整理後残高は給料260,000円・地代家賃110,000円・減価償却費30,000円で、他の費用はない。損益勘定の借方へ振り替える費用合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2
+          ],
+          "explanation": "260,000＋110,000＋30,000＝400,000円。損益400,000／給料260,000・地代家賃110,000・減価償却費30,000とし、元の費用借方残高を消します。",
+          "input": "number",
+          "accepted": [
+            "400000"
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q3",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "整理後収益は売上360,000円・受取利息20,000円。費用合計430,000円。他に損益はない。損失額を正の円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2
+          ],
+          "explanation": "収益380,000円に対し費用430,000円で損失50,000円です。損益勘定の借方に残る50,000円を貸方で消し、繰越利益剰余金を借方で減らします。問われるのは正の損失額です。",
+          "input": "number",
+          "accepted": [
+            "50000"
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q4",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "繰越利益剰余金の期首貸方残高70,000円。当期利益90,000円で、配当・評価差額・過年度修正等ほかの変動はない。利益振替後の貸方残高を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            2
+          ],
+          "explanation": "70,000＋90,000＝160,000円です。損益90,000／繰越利益剰余金90,000の振替で増えます。当期利益90,000円と累積残高160,000円を区別します。",
+          "input": "number",
+          "accepted": [
+            "160000"
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q5",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "残高勘定を使って締め切る。現金の期末借方残高200,000円を残高勘定へ移す仕訳を選んでください。",
+          "options": [
+            "現金200,000／残高200,000",
+            "損益200,000／現金200,000",
+            "残高200,000／現金200,000",
+            "現金200,000／売上200,000"
+          ],
+          "answer": 2,
+          "objectives": [
+            3
+          ],
+          "explanation": "残高200,000／現金200,000で、現金借方残高を貸方から締め切り、残高勘定の借方へ集めます。翌期開始の逆仕訳や、現金支払を表す費用仕訳と取り違えません。"
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q6",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "締切後残高勘定の借方は現金未知・売掛金200,000円・備品700,000円・前払費用30,000円。貸方は借入金300,000円・買掛金140,000円・資本金500,000円・繰越利益剰余金90,000円・減価償却累計額50,000円のみ。現金を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "貸方合計1,080,000円、現金以外の借方930,000円なので現金150,000円。純額資産は150,000＋200,000＋700,000＋30,000−50,000＝1,030,000円で、負債440,000＋純資産590,000と一致します。",
+          "input": "number",
+          "accepted": [
+            "150000"
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q7",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "残高勘定を使う方式で翌期開始を行う。前期末売掛金は借方残高80,000円で、開始処理はまだしていない。仕訳を選んでください。",
+          "options": [
+            "売掛金80,000／残高80,000",
+            "残高80,000／売掛金80,000",
+            "売掛金80,000／売上80,000",
+            "現金80,000／売掛金80,000"
+          ],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "売掛金80,000／残高80,000として売掛金の借方へ期首残高を戻します。残高／売掛金は前期締切の方向で、新たな売上や回収を計上する候補も誤りです。"
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q8",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "前期末給与35,000円を未払費用計上済みで、当期首に再振替した。当期の支払給与105,000円にはその前期分35,000円が含まれ、支払時は全額給料へ記帳した。他の給与はない。当期費用を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            4
+          ],
+          "explanation": "期首の給料貸方35,000円と支払時の借方105,000円を合わせ、当期費用70,000円。未払費用は再振替で消えているので支払時に再び取り消しません。",
+          "input": "number",
+          "accepted": [
+            "70000"
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q9",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "前期給与32,000円を未払費用計上済み。当期に前期分32,000円と当期分78,000円の計110,000円を支払う。再振替しない場合の支払仕訳に加え、再振替する場合の期首と支払時の二段階の仕訳をそれぞれ示し、両方法の当期費用を比較してください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            4
+          ],
+          "explanation": "再振替の有無で費用の帰属期間は変わりません。未払を二重に消す処理や、前期分を再び当期費用にする処理を避けます。",
+          "input": "essay",
+          "points": 4,
+          "modelAnswer": "再振替しない場合は未払費用32,000円・給料78,000円／現金110,000円。再振替する場合は期首に未払費用32,000円／給料32,000円、支払時に給料110,000円／現金110,000円とし、当期費用はどちらも78,000円で一致する。",
+          "rubric": [
+            {
+              "criterion": "再振替なしの支払仕訳と3金額を正しく示す",
+              "points": 2
+            },
+            {
+              "criterion": "再振替ありの2段階を説明",
+              "points": 1
+            },
+            {
+              "criterion": "当期費用78,000円が同じと結ぶ",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q10",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "繰越利益剰余金の期首貸方残高20,000円、当期損失50,000円。他の純資産変動はない。損益振替後の状態を選んでください。",
+          "options": [
+            "貸方残高70,000円",
+            "貸方残高30,000円",
+            "残高0円にして差額は借入金",
+            "借方残高30,000円"
+          ],
+          "answer": 3,
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "20,000−50,000＝−30,000円なので借方残高30,000円。負の利益剰余金であり新しい資産ではありません。貸方70,000は損失を加算し、貸方30,000は残高の側を取り違えています。"
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q11",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "残高勘定は借方貸方とも1,080,000円。借方はすべて資産の残高で、貸方は減価償却累計額50,000円と負債・純資産の貸方残高のみである。他の控除項目はない。B/Sの資産合計が1,030,000円になる理由と累計額の性質を説明してください。",
+          "options": [],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "残高勘定は帳簿残高を相殺前に集め、B/Sは累計額を資産から控除しているためです。累計額を負債として分類しない点も確認します。",
+          "input": "essay",
+          "points": 3,
+          "modelAnswer": "残高勘定では資産原価と貸方の減価償却累計額を別々に集めている。B/Sは資産原価から累計額50,000円を控除するので1,080,000−50,000＝1,030,000円。累計額は資産の控除勘定で負債ではない。",
+          "rubric": [
+            {
+              "criterion": "相殺前帳簿残高と決算書純額を区別",
+              "points": 1
+            },
+            {
+              "criterion": "50,000円控除と1,030,000円を示す",
+              "points": 1
+            },
+            {
+              "criterion": "資産控除勘定であり負債と区別",
+              "points": 1
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-closing-accounts-q12",
+          "field": "boki",
+          "lesson": "zr2-boki-closing-accounts",
+          "prompt": "前期末にある借入金元本200,000円について、給与の未払費用と同じように期首で再振替すべきだと考えた。正しい説明を選んでください。",
+          "options": [
+            "借入金200,000／売上200,000とする",
+            "給料200,000／借入金200,000とする",
+            "元本負債を期首へ引き継ぎ、返済等の事実で処理する",
+            "現金200,000／給料200,000とする"
+          ],
+          "answer": 2,
+          "objectives": [
+            1,
+            4
+          ],
+          "explanation": "経過勘定の特定整理仕訳と通常記帳を対応させる再振替を、すべての負債へ広げてはいけません。元本義務は期首へ引き継ぎ、返済や免除等の事実に応じて減らします。収益費用へ戻す各候補は元本の性質を変えます。"
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-accrual-adjustments",
+      "title": "経過勘定を期間配分し、再振替と当期記帳をつなぐ",
+      "description": "役務と決済の日付から四つの経過勘定を判断します。契約変更・解約・期首残高・記帳済み額を反映し、費用収益と資産負債の動きを照合します。",
+      "subject": "boki",
+      "unit": 1001,
+      "moduleId": "zr2-boki-unit-records",
+      "position": 5,
+      "stage": "基礎から標準へ",
+      "minutes": 120,
+      "objectives": [
+        "役務提供と入出金の時点から四つの経過勘定を区別する",
+        "契約期間・単価変更・決算期変更から当期発生額と期末残高を計算する",
+        "期首再振替の有無に合わせて決済と期末整理を記帳する",
+        "整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する"
+      ],
+      "objectiveIds": [
+        "zr2-boki-accrual-adjustments-d1",
+        "zr2-boki-accrual-adjustments-d2",
+        "zr2-boki-accrual-adjustments-d3",
+        "zr2-boki-accrual-adjustments-d4"
+      ],
+      "prerequisites": [
+        "zr2-boki-trial-balance",
+        "zr2-boki-closing-accounts"
+      ],
+      "glossary": [
+        {
+          "term": "前払費用",
+          "definition": "継続的な役務に対する支払済対価のうち、まだ提供を受けていない期間に対応する資産"
+        },
+        {
+          "term": "前受収益",
+          "definition": "継続的な役務に対する受取済対価のうち、まだ提供していない期間に対応する負債"
+        },
+        {
+          "term": "未払費用",
+          "definition": "継続的な役務の提供を受けて発生した費用のうち、対価が未払いの部分を示す負債"
+        },
+        {
+          "term": "未収収益",
+          "definition": "継続的な役務を提供して発生した収益のうち、対価が未受取りの部分を示す資産"
+        },
+        {
+          "term": "再振替",
+          "definition": "前期末の見越し・繰延べなどの整理仕訳について、翌期首に反対仕訳を行う記帳手続"
+        }
+      ],
+      "references": [
+        {
+          "id": "accounting-principles",
+          "title": "企業会計審議会：企業会計原則・同注解",
+          "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+          "locator": "企業会計原則注解5(1)〜(4)、損益計算書原則一A。1982年4月20日最終改正の本文を2026年10月27日確認。個別基準の対象取引は別途確認",
+          "version": "1982年4月20日最終改正。対象取引の後の個別基準は別途確認",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "jcci-reversal142",
+          "title": "日本商工会議所：第142回3級・出題の意図と講評",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+          "locator": "第142回3級 出題の意図・講評、第3問、PDF3頁。前払費用の再振替と合計試算表の出題意図。旧年度の他論点・個人資本処理を株式会社例へ移さない",
+          "version": "表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない",
+          "verified": "2026-10-27"
+        }
+      ],
+      "reviewed": "2026-10-27",
+      "assessmentVersion": "zeirishi-2026-v2-accrual-adjustments-1",
+      "workedExamples": [
+        {
+          "id": "zr2-boki-accrual-adjustments-ex1",
+          "section": "例題1：更新額が変わる保険料を二年度で計算する",
+          "objectives": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-ex2",
+          "section": "例題2：未収利息の再振替と、翌年の入金をつなぐ",
+          "objectives": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-ex3",
+          "section": "例題3：決算期変更でも、契約の残存月数を数える",
+          "objectives": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-ex4",
+          "section": "例題4：前期未払と当期未払から給与費用を復元する",
+          "objectives": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-ex5",
+          "section": "四区分の修正を、利益と残高の両方で検算する",
+          "objectives": [
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-ex6",
+          "section": "例題5：契約を解約したら、未経過期間と返金請求を区別する",
+          "objectives": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "zr2-boki-accrual-adjustments-q1",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "12月31日決算。5月1日に同日から一年分の保険料360,000円を支払い、全額費用計上済み。保障は均等で月割計算し、他の整理はない。期末の前払費用を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "120000"
+          ],
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "月額360,000÷12＝30,000円。翌年1〜4月の4か月分120,000円が未経過なので、前払費用120,000円／保険料120,000円です。当期5〜12月8か月の240,000円と合わせて360,000円になります。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q2",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "決算日までに継続して受けた通信サービス55,000円が未払い・未記帳である。他の条件はない。決算整理の仕訳はどれですか。",
+          "options": [
+            "前払費用55,000円／通信費55,000円",
+            "通信費55,000円／未払費用55,000円",
+            "未払費用55,000円／通信費55,000円",
+            "通信費55,000円／現金55,000円"
+          ],
+          "answer": 1,
+          "objectives": [
+            1,
+            4
+          ],
+          "explanation": "受けた役務の当期費用と未払負債を追加します。1は支払済みの将来役務の処理、3は当期費用と負債を減らす逆仕訳、4は支払がないのに現金を減らします。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q3",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "3月31日決算。前年10月1日に同日から一年分の家賃384,000円を受け取り、全額収益へ記帳済み。均等月割で他の同契約残高はない。3月末の前受収益を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "192000"
+          ],
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "月額32,000円で、4〜9月の未提供6か月分192,000円です。受取家賃192,000円／前受収益192,000円とし、当期の10〜3月分192,000円と区別します。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q4",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "次のうち、企業会計原則注解5の前払費用と区別するべきものはどれですか。",
+          "options": [
+            "継続契約の翌月分保険料を支払った額",
+            "継続契約の翌月分家賃を支払った額",
+            "翌月納入予定の設備の購入手付金",
+            "継続契約の翌月分保守サービス料を支払った額"
+          ],
+          "answer": 2,
+          "objectives": [
+            1
+          ],
+          "explanation": "設備の購入手付金は継続的な役務に対する未経過対価ではなく、前払金等の性質を検討します。他の三つは、示された継続契約の未提供役務に対応するため、この条件では前払費用です。名称が前払いでも契約の内容を調べます。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q5",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "当期給与の現金支払合計980,000円には前期末未払28,000円の精算が含まれる。当期末未払は42,000円で、前払その他の変動はない。当期給与費用を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "994000"
+          ],
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "980,000−28,000＋42,000＝994,000円。支払に含まれる前期費用を除き、当期勤務に対する未払を追加します。期首再振替の有無は途中仕訳を変えますが、当期費用の最終額は変えません。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q6",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "同一の保険契約群について、期首の前払費用90,000円、当期支払240,000円、期末の前払費用60,000円である。他の変動と未払はない。当期保険料を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "270000"
+          ],
+          "objectives": [
+            2,
+            4
+          ],
+          "explanation": "90,000＋240,000−60,000＝270,000円。期首資産の当期消費を加え、支払額のうち将来分を残します。支払額240,000円そのものを費用とすると前払残高の減少30,000円が反映されません。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q7",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "前期末に前払費用70,000円／保険料70,000円と整理した。翌期首に同額を再振替する仕訳はどれですか。",
+          "options": [
+            "保険料70,000円／前払費用70,000円",
+            "前払費用70,000円／現金70,000円",
+            "現金70,000円／保険料70,000円",
+            "前払費用70,000円／保険料70,000円"
+          ],
+          "answer": 0,
+          "objectives": [
+            3
+          ],
+          "explanation": "前期末整理の反対仕訳なので、保険料の借方と前払費用の貸方です。2・3は期首に存在しない現金決済を作り、4は前期整理を重ねています。再振替後にも期末の未経過額は改めて整理します。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q8",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "継続的な貸付利息について、当期現金受取60,000円には前期末未収15,000円を含み、当期末未収は18,000円である。前受・貸倒・元本増減その他の調整はない。当期利息収益を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "63000"
+          ],
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "60,000−15,000＋18,000＝63,000円。受取額から前期に認識済みの未収を除き、当期発生した未受取分を足します。未収資産は15,000円から18,000円へ3,000円増え、収益が入金を3,000円上回ることとも一致します。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q9",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "4月1日期首の前受収益240,000円は、4〜11月の均等な賃貸役務8か月分である。決算期変更により当期は4〜9月の6か月、新規受取りその他の変動はない。当期の受取家賃を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "180000"
+          ],
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "月額240,000÷8＝30,000円、当期6か月で180,000円です。期末前受収益は10〜11月の60,000円。再振替後の収益240,000円から60,000円を繰り延べても同じです。一年分の収益を置きません。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q10",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "前期末の未払給与18,000円を期首に再振替していない。翌期に現金75,000円を支払い、その内訳は前期分18,000円・当期分57,000円と確定した。支払仕訳と、この支払に対応する当期費用を示し、期首再振替をした方法との対応も説明してください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 4,
+          "modelAnswer": "未払費用18,000円・給料57,000円／現金75,000円。当期費用は57,000円である。期首再振替をした方法なら未払費用18,000円／給料18,000円とし、支払全額を給料75,000円へ記録するため、純額75,000−18,000＝57,000円になる。",
+          "rubric": [
+            {
+              "criterion": "未払費用18,000円と給料57,000円を借方に分ける",
+              "points": 2
+            },
+            {
+              "criterion": "貸方現金75,000円と当期費用57,000円を示す",
+              "points": 1
+            },
+            {
+              "criterion": "再振替と全額費用記帳の純額が57,000円になると説明する",
+              "points": 1
+            }
+          ],
+          "objectives": [
+            3
+          ],
+          "explanation": "両方法の途中仕訳を混ぜず、前期の費用18,000円を当期に再計上しないことを確認します。支払前に再振替していないという条件が借方科目の選択を決めます。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q11",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "整理前利益260,000円。費用計上済みの未経過24,000円、当期未払費用18,000円、収益計上済みの未提供30,000円、当期未収収益12,000円があり、まだ同じ整理はない。修正後利益、資産と負債の増加額、現金増減額を求め、整合を示してください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 6,
+          "modelAnswer": "利益は260,000＋24,000−18,000−30,000＋12,000＝248,000円。資産は前払24,000円と未収12,000円の36,000円増、負債は未払18,000円と前受30,000円の48,000円増で、純資産への影響−12,000円が利益減少と一致する。この整理で現金増減は0円。",
+          "rubric": [
+            {
+              "criterion": "利益の符号を区別し248,000円を求める",
+              "points": 2
+            },
+            {
+              "criterion": "資産36,000円増・負債48,000円増を示す",
+              "points": 2
+            },
+            {
+              "criterion": "差額−12,000円と利益減少の一致を示す",
+              "points": 1
+            },
+            {
+              "criterion": "整理による現金増減0円を示す",
+              "points": 1
+            }
+          ],
+          "objectives": [
+            1,
+            4
+          ],
+          "explanation": "四つを全て費用の追加と扱わず、前払・前受は計上済み損益からの除去、未払・未収は損益の追加と判断します。仕訳で各勘定を示す同値の解答でも確認できます。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q12",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "未経過保険料20,000円について、本来は前払費用20,000円／保険料20,000円とすべきところ、保険料20,000円／前払費用20,000円と逆に記帳した。他の修正はない。誤仕訳を消すことも含め、最終残高を正しくする追加仕訳はどれですか。",
+          "options": [
+            "前払費用20,000円／保険料20,000円",
+            "保険料40,000円／前払費用40,000円",
+            "現金40,000円／保険料40,000円",
+            "前払費用40,000円／保険料40,000円"
+          ],
+          "answer": 3,
+          "objectives": [
+            4
+          ],
+          "explanation": "逆仕訳の取消し20,000円と正しい整理20,000円を合わせ、前払費用40,000円／保険料40,000円です。1は誤仕訳を消すだけで必要残高に届かず、2は誤りをさらに拡大し、3は現金決済を作ってしまいます。"
+        },
+        {
+          "id": "zr2-boki-accrual-adjustments-q13",
+          "field": "boki",
+          "lesson": "zr2-boki-accrual-adjustments",
+          "prompt": "6月1日に一年分の保険料240,000円を全額費用処理し、9月末で保障を終了して解約した。未経過8か月分160,000円から解約料16,000円を引いた144,000円の返金請求権が通知により確定し、12月末まで未入金。他の整理はない。解約料を保険料に含めるとして、決算の修正仕訳と、当期費用の合計及び保険の保障期間分・解約料の内訳を示してください。前払費用でなく未収入金を使う理由も説明してください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 5,
+          "modelAnswer": "未収入金144,000円／保険料144,000円。当期費用は240,000−144,000＝96,000円で、4か月分80,000円と解約料16,000円の合計。保障は終了して将来の役務を受ける権利が残らず、確定した返金請求権が残るため未収入金とする。",
+          "rubric": [
+            {
+              "criterion": "未収入金144,000円／保険料144,000円を示す",
+              "points": 2
+            },
+            {
+              "criterion": "当期費用96,000円と内訳を求める",
+              "points": 2
+            },
+            {
+              "criterion": "未経過役務と確定返金請求権の違いを説明する",
+              "points": 1
+            }
+          ],
+          "objectives": [
+            1,
+            2,
+            4
+          ],
+          "explanation": "返金が未入金だからといって現金を増やさず、契約が終了した後の未経過額を機械的に前払費用へ残しません。返金条件は設問で確定した金額を使います。"
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-interest-present-value",
+      "title": "利息・複利・現在価値を受払時点から計算する",
+      "description": "期間・元本変動に応じた利息、複利、現在価値を計算します。受払時点と丸め方を区別し、貸倒見積りや減損で使用する率と判定条件の基礎を学びます。",
+      "subject": "boki",
+      "unit": 1001,
+      "moduleId": "zr2-boki-unit-records",
+      "position": 6,
+      "stage": "基礎から標準へ",
+      "minutes": 120,
+      "objectives": [
+        "期間・日数・途中の元本変動に応じた単利の発生額を求める",
+        "複利の将来価値と現在価値を時間軸上で対応させる",
+        "年初年末・不均等な受払額・最終処分額・端数処理を反映して現在価値を計算する",
+        "割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない"
+      ],
+      "objectiveIds": [
+        "zr2-boki-interest-present-value-d1",
+        "zr2-boki-interest-present-value-d2",
+        "zr2-boki-interest-present-value-d3",
+        "zr2-boki-interest-present-value-d4"
+      ],
+      "prerequisites": [
+        "zr2-boki-account-equation",
+        "zr2-boki-accrual-adjustments"
+      ],
+      "glossary": [
+        {
+          "term": "単利",
+          "definition": "各期間の利息を元本へ組み入れず、対象元本と率と期間で利息を計算する方法"
+        },
+        {
+          "term": "複利",
+          "definition": "生じた利息を元本へ組み入れ、その合計に次の期間の利息が付く条件で計算する方法"
+        },
+        {
+          "term": "現在価値",
+          "definition": "将来の受払額を、対応する率と期間で割り引いて評価日時点へ換算した額"
+        },
+        {
+          "term": "割引係数",
+          "definition": "一年ごとの率rでn年後の額を現在へ戻すときに掛ける1÷(1＋r)のn乗"
+        },
+        {
+          "term": "期末払いの年金現価",
+          "definition": "等しい間隔の各期末に同額を受け払う流れを、各時点から評価日へ割り引いた合計額"
+        },
+        {
+          "term": "表面利率",
+          "definition": "債券等の額面に対して契約上の利払いを計算するための率"
+        }
+      ],
+      "references": [
+        {
+          "id": "asbj-finance",
+          "title": "企業会計基準委員会：金融商品に関する会計基準（2019年版）",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/20190704_05.pdf",
+          "locator": "2019年7月4日版、第14・16・26項と注5、第28項(2)②。償却原価の条件と貸倒見積りにおける割引の位置付け。計算練習を全金融商品の評価原則へ一般化しない",
+          "version": "2019年7月4日版。後の未適用の改正を基準日へ混在させない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "ac2-finance-guide",
+          "title": "企業会計基準委員会：移管指針第9号（2025年3月11日版）",
+          "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/vcfund_20250311_02.pdf",
+          "locator": "2025年3月11日版・移管指針9、第115項。当初約定利子率又は取得当初実効利子率の条件",
+          "version": "2025年3月11日版",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "impairment",
+          "title": "企業会計審議会：固定資産の減損に係る会計基準・設定意見書",
+          "url": "https://www.fsa.go.jp/news/newsj/14/singi/f-20020809-1/f-20020809c.pdf",
+          "locator": "2002年8月9日意見書・三3(4)(5)、基準二2・3・5。割引前の認識判定と使用価値、リスクと税引前の整合。旧日付を直ちに最新個別適用指針の代わりにはしない",
+          "version": "2002年8月9日公表。基準日適用の基礎条件を参照",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "jcci-interest142",
+          "title": "日本商工会議所：第142回3級・利息の出題意図",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/04/142-03-kouhyou.pdf",
+          "locator": "第142回3級 出題の意図・講評、第1問3、PDF1頁。資料で日数が確定できない場合の月割指定を読む趣旨",
+          "version": "表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "jcci-bond-interest124",
+          "title": "日本商工会議所：第124回2級・端数利息の出題意図",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-02-kouhyou.pdf",
+          "locator": "第124回2級 出題の意図・講評、第1問4、PDF1頁。債券を利払日以外に取得するときの端数利息、売買代金との区分、買い手の利息勘定借方記入の説明",
+          "version": "表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない",
+          "verified": "2026-10-27"
+        }
+      ],
+      "reviewed": "2026-10-27",
+      "assessmentVersion": "zeirishi-2026-v2-interest-present-value-1",
+      "workedExamples": [
+        {
+          "id": "zr2-boki-interest-present-value-ex1",
+          "section": "例題1：日割と、元本の途中返済を計算する",
+          "objectives": [
+            1
+          ]
+        },
+        {
+          "id": "zr2-boki-interest-present-value-ex2",
+          "section": "例題2：二年後の一回払いを現在へ戻す",
+          "objectives": [
+            2,
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-interest-present-value-ex3",
+          "section": "例題3：年末払いと年初払いを比べる",
+          "objectives": [
+            2,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-interest-present-value-ex4",
+          "section": "例題4：毎年異なる受取額と、最終処分額を同じ日に集める",
+          "objectives": [
+            3,
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-interest-present-value-ex5",
+          "section": "例題5：期中取得した債券の経過利息を分ける",
+          "objectives": [
+            1,
+            4
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "zr2-boki-interest-present-value-q1",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "元本2,400,000円、年利2.5％で5か月間貸し付けた。元本変動なし、月割単利、手数料等なし。この期間の利息を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "25000"
+          ],
+          "objectives": [
+            1
+          ],
+          "explanation": "2,400,000×0.025×5÷12＝25,000円。年利息60,000円の5か月分です。元本の返還額はこの収益へ含めません。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q2",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "元本1,825,000円、年利2％、利息対象日数73日、一年365日の単利計算と指定されている。元本変動なし。利息を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "7300"
+          ],
+          "objectives": [
+            1
+          ],
+          "explanation": "1,825,000×0.02×73÷365＝7,300円。73÷365＝0.2、年間利息36,500円の0.2年分です。月数への概算置換は指定と異なります。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q3",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "1月1日の貸付元本1,200,000円、年利6％。5月1日に元本300,000円が返済され、以後年末まで900,000円のまま。月割単利で当期一年の利息を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "60000"
+          ],
+          "objectives": [
+            1
+          ],
+          "explanation": "1,200,000×6％×4÷12＝24,000円、900,000×6％×8÷12＝36,000円、合計60,000円です。初めの元本で一年計算すると72,000円となり、返済済み元本の8か月分12,000円だけ過大です。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q4",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "評価日の三年後に1,331,000円を一度受け取り、その間の受取りはない。年10％の一年複利で割り引く現在価値を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "1000000"
+          ],
+          "objectives": [
+            2
+          ],
+          "explanation": "1,331,000÷1.1³＝1,000,000円。1,000,000×1.1³＝1,331,000円と将来額へ戻して検算します。三年分30％を将来額から引く計算ではありません。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q5",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "一年後の年末に121,000円、二年後の年末に242,000円を受け取る。年10％の一年複利で評価日の現在価値を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "310000"
+          ],
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "121,000÷1.1＝110,000円、242,000÷1.1²＝200,000円で、合計310,000円です。合計363,000円を一括して二年分割り引くと最初の受取りを遅らせてしまいます。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q6",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "評価日の当日と一年後の二回、121,000円ずつ受け取る。年10％の一年複利の現在価値はどれですか。",
+          "options": [
+            "200,000円",
+            "210,000円",
+            "242,000円",
+            "231,000円"
+          ],
+          "answer": 3,
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "当日は121,000円のまま、一年後は121,000÷1.1＝110,000円で、合計231,000円です。2は一年後・二年後の払いと読んだ額、3は割引なし、1は合計を全て二年後の額と誤読した計算です。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q7",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "通常の貸付債権について、2019年版金融商品会計基準の貸倒懸念債権のキャッシュ・フロー見積法を適用する。当初約定利子率6％、決算日の市場利率8％とある。取得した債権ではなく、別の修正条件もない。使う率と判断はどれですか。",
+          "options": [
+            "現在価値なので常に市場利率8％",
+            "発生当初の約定利子率6％",
+            "二つの平均7％",
+            "回収見積額を減らすため自分で10％へ上乗せ"
+          ],
+          "answer": 1,
+          "objectives": [
+            4
+          ],
+          "explanation": "この方法・条件では当初約定利子率6％を使います。1は貸倒見積りの指定条件を市場評価と混同し、3・4は基準にも与件にもない率を作っています。異なる測定目的で使う率を持ち込まないことを確認します。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q8",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "一年後・二年後・三年後の各年末に100,001円を受け取る。年10％の一年複利で、途中で丸めず合計後に円未満四捨五入する。現在価値を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "248688"
+          ],
+          "objectives": [
+            3
+          ],
+          "explanation": "100,001÷1.1＋100,001÷1.1²＋100,001÷1.1³＝248,687.68595…円、答え248,688円です。各年を先に丸めると90,910＋82,645＋75,132＝248,687円となりますが、本問の指定とは違います。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q9",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "年5％の一年複利で評価する。評価日当日に受け取る200,000円について正しいものはどれですか。",
+          "options": [
+            "一年後と同じく1.05で割る",
+            "二年後と同じく1.05²で割る",
+            "受取時点が評価日なので200,000円のまま",
+            "受取りなので必ず0円とする"
+          ],
+          "answer": 2,
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "当日は経過期間0なので割引係数は1です。1・2は待つ期間を作り、4は受取額そのものを消しています。すでに帳簿へ計上している額を重ねるかという問題とは区別し、この問いは受払流列の評価を尋ねています。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q10",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "一年後に受け取る額が不明で、ほかの受払いはない。年10％の一年複利で評価した現在価値が500,000円である。その一年後の受取額を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "550000"
+          ],
+          "objectives": [
+            2
+          ],
+          "explanation": "500,000×1.1＝550,000円です。将来額を求める方向なので掛けます。550,000÷1.1＝500,000円と逆向きでも確認します。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q11",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "年10％の一年複利で、二年後に一回1,210,000円を受け取る案Aと、一年後に600,000円、二年後に610,000円を受け取る案Bを比べる。途中で丸めず合計後円未満四捨五入とし、両案の現在価値と大小の理由を説明してください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 4,
+          "modelAnswer": "Aは1,210,000÷1.1²＝1,000,000円。Bは600,000÷1.1＋610,000÷1.1²＝1,049,586.776…円で1,049,587円。名目合計は同じだが、Bは600,000円を一年早く受け取るため、正の割引率では現在価値が大きい。",
+          "rubric": [
+            {
+              "criterion": "Aの現在価値1,000,000円を求める",
+              "points": 1
+            },
+            {
+              "criterion": "Bを受取時点ごとに割り引き1,049,587円と求める",
+              "points": 2
+            },
+            {
+              "criterion": "同じ名目合計でもBの一部受取が早いため価値が大きいと説明する",
+              "points": 1
+            }
+          ],
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "Aの二年後600,000円をBの一年後へ早めた部分だけを比べても差49,586.776…円が出ます。単にBの合計額が大きいという理由ではありません。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q12",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "固定資産の減損計算資料に、割引前将来キャッシュ・フロー合計900,000円、その現在価値780,000円、帳簿価額850,000円とある。認識判定の比較には割引前の額を用いる条件である。担当者は「現在価値780,000円が帳簿価額を下回るから、認識判定は当然に満たす」とした。比較すべき額と、この結論の問題を説明してください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 4,
+          "modelAnswer": "指定された認識判定では割引前900,000円と帳簿850,000円を比較する。900,000円は850,000円を上回るので、現在価値780,000円だけを理由にこの判定を満たすとはいえない。割引する使用価値の測定と、割引前を使う認識判定を区別する必要がある。",
+          "rubric": [
+            {
+              "criterion": "比較額が割引前900,000円と帳簿850,000円であると示す",
+              "points": 2
+            },
+            {
+              "criterion": "900,000円が850,000円を上回ると判断する",
+              "points": 1
+            },
+            {
+              "criterion": "認識判定と現在価値による測定の段階を区別する",
+              "points": 1
+            }
+          ],
+          "objectives": [
+            4
+          ],
+          "explanation": "減損の計算全体をこの一問で扱うものではなく、指定された段階に適切な額を使えるかを確認します。測定段階に進む条件や正味売却価額等は別途学びます。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q13",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "額面1,200,000円、年利6％、毎年12月31日に一年分の利払いがある債券を10月1日に額面と同額で取得した。1〜9月の経過利息を売り手に別払いする。月割、税・手数料・金利調整差額なし。経過利息は有価証券利息の借方へ記帳する方式とする。取得時の支払総額と仕訳、12月末に一年分を受け取った後の当期表面利息収益を求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 5,
+          "modelAnswer": "年間表面利息72,000円、経過利息9か月分54,000円。取得時は有価証券1,200,000円・有価証券利息54,000円／預金1,254,000円。年末受取72,000円を同利息勘定貸方へ記帳すると当期表面利息収益18,000円で、自社保有3か月分と一致する。",
+          "rubric": [
+            {
+              "criterion": "経過利息54,000円と支払総額1,254,000円を求める",
+              "points": 2
+            },
+            {
+              "criterion": "有価証券本体と利息を分けた取得仕訳を示す",
+              "points": 2
+            },
+            {
+              "criterion": "当期の表面利息収益18,000円を求める",
+              "points": 1
+            }
+          ],
+          "objectives": [
+            1,
+            4
+          ],
+          "explanation": "額面・取得原価・経過利息を分けます。端数利息を本体へ加えたまま、利払時の72,000円を全額収益とすれば、この条件では収益が54,000円過大になります。"
+        },
+        {
+          "id": "zr2-boki-interest-present-value-q14",
+          "field": "boki",
+          "lesson": "zr2-boki-interest-present-value",
+          "prompt": "評価日の三年後の年末に1,157,625円を一度支払い、ほかの受払いはない。指定された年5％の一年複利で、この将来支払いの現在価値の大きさを正の円数で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "1000000"
+          ],
+          "objectives": [
+            2,
+            3
+          ],
+          "explanation": "1,157,625÷1.05³＝1,000,000円です。本問は支払額の現在価値の大きさを正額で尋ねています。資金流列を受取正・支払負で表示するときの−1,000,000円とは符号の約束が違います。あらゆる債務の認識額をこの計算で決めるという意味ではありません。"
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-books-vouchers",
+      "title": "帳簿組織・伝票から取引を復元し、重複を除く",
+      "description": "主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の記録をつなぎます。一部現金取引、日計表、重複の除去、証憑からの取引復元を独自問題で練習します。",
+      "subject": "boki",
+      "unit": 1001,
+      "moduleId": "zr2-boki-unit-records",
+      "position": 7,
+      "stage": "発展",
+      "minutes": 150,
+      "objectives": [
+        "主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する",
+        "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない",
+        "伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する",
+        "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する"
+      ],
+      "objectiveIds": [
+        "zr2-boki-books-vouchers-d1",
+        "zr2-boki-books-vouchers-d2",
+        "zr2-boki-books-vouchers-d3",
+        "zr2-boki-books-vouchers-d4"
+      ],
+      "prerequisites": [
+        "zr2-boki-journals-ledgers",
+        "zr2-boki-trial-balance",
+        "zr2-boki-closing-accounts"
+      ],
+      "glossary": [
+        {
+          "term": "主要簿",
+          "definition": "取引の仕訳を記録する仕訳帳と、勘定科目別に集計する総勘定元帳"
+        },
+        {
+          "term": "補助簿",
+          "definition": "現金の出納や顧客別債権など、主要簿の内容を取引種類又は明細ごとに補う帳簿"
+        },
+        {
+          "term": "特殊仕訳帳",
+          "definition": "特定種類の取引を記録し、指定された転記規則によって仕訳帳の役割を持たせる帳簿"
+        },
+        {
+          "term": "三伝票制",
+          "definition": "入金・出金・振替の三種類の伝票で取引を起票する方式"
+        },
+        {
+          "term": "五伝票制",
+          "definition": "入金・出金・振替に、商品仕入と売上の専用伝票を加えて取引を起票する方式"
+        },
+        {
+          "term": "仕訳日計表",
+          "definition": "一定日の伝票等を勘定科目の借方・貸方に分けて集計した表"
+        }
+      ],
+      "references": [
+        {
+          "id": "ac2-bookkeeping-official",
+          "title": "国税庁：令和5年分・青色申告者のための貸借対照表作成の手引き",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/tebiki/2023/pdf/046.pdf",
+          "locator": "2023年手引き5(1)・印刷3〜4頁、6(2)(3)(9)(10)(11)。帳簿組織、主要簿と補助簿、転記・試算表。個人税務の科目や税制内容は流用しない",
+          "version": "2023年分。記帳技能の参照に限定し、個人税務固有の処理は移用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "jcci-special124",
+          "title": "日本商工会議所：第124回2級・特殊仕訳帳の出題意図",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/124-02-kouhyou.pdf",
+          "locator": "第124回2級 出題の意図・講評、第2問・PDF2頁。特殊仕訳帳相互間、特殊仕訳帳と普通仕訳帳の複合取引部分の重複。過去の出題者の説明として使い、他の旧年度処理を援用しない",
+          "version": "表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "jcci-vouchers143",
+          "title": "日本商工会議所：第143回3級・推定と伝票の出題意図",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2016/08/143-03-kouhyou.pdf",
+          "locator": "第143回3級 出題の意図・講評、第3問PDF2〜3頁と第4問PDF3〜4頁。記帳済み勘定・得意先元帳からの推定、一部現金取引の二方式",
+          "version": "表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "jcci-five123",
+          "title": "日本商工会議所：第123回3級・五伝票の出題意図",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/123-03-kouhyou.pdf",
+          "locator": "第123回3級 出題の意図・講評、第4問PDF2〜3頁。五伝票制、専用売上仕入伝票と一部現金の二方式",
+          "version": "表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない",
+          "verified": "2026-10-27"
+        },
+        {
+          "id": "jcci-daybook148",
+          "title": "日本商工会議所：第148回3級・日計表の出題意図",
+          "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/04/148-03-kouhyou.pdf",
+          "locator": "第148回3級 出題の意図・講評、第4問PDF3頁。三伝票から仕訳日計表・一部現金の推定。公式の出題意図であり本講例題の公式解答ではない",
+          "version": "表題の過去回の公式講評。記帳技能の参照に限定し、旧税制・他の旧処理を援用しない",
+          "verified": "2026-10-27"
+        }
+      ],
+      "reviewed": "2026-10-27",
+      "assessmentVersion": "zeirishi-2026-v2-books-vouchers-1",
+      "workedExamples": [
+        {
+          "id": "zr2-boki-books-vouchers-ex1",
+          "section": "例題1：一部現金の売上を、二つの方法で起票する",
+          "objectives": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "zr2-boki-books-vouchers-ex2",
+          "section": "例題2：仕入の起票方法を混ぜると、貸借が合っても誤る",
+          "objectives": [
+            2,
+            4
+          ]
+        },
+        {
+          "id": "zr2-boki-books-vouchers-ex3",
+          "section": "例題3：五伝票制では、仕入・売上の専用伝票を使う",
+          "objectives": [
+            1,
+            2
+          ]
+        },
+        {
+          "id": "zr2-boki-books-vouchers-ex4",
+          "section": "例題4：特殊仕訳帳の重複を、取引の対応から除く",
+          "objectives": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-books-vouchers-ex5",
+          "section": "例題5：伝票日計表を、現金の純増と照合する",
+          "objectives": [
+            3
+          ]
+        },
+        {
+          "id": "zr2-boki-books-vouchers-ex6",
+          "section": "証憑から推定した取引を、未記帳と決め付けない",
+          "objectives": [
+            4
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "zr2-boki-books-vouchers-q1",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "三伝票制で、計上済み売掛金40,000円を現金で回収した。入金伝票に現金以外の相手科目と金額を記す様式で、適切なのはどれですか。",
+          "options": [
+            "売掛金40,000円",
+            "現金40,000円",
+            "売上40,000円",
+            "仮受金40,000円"
+          ],
+          "answer": 0,
+          "objectives": [
+            1
+          ],
+          "explanation": "仕訳は現金40,000円／売掛金40,000円で、入金伝票の相手は貸方の売掛金です。2は暗黙の現金側と相手側を混同し、3は売上を二重にし、4は原因が分かっている回収を仮勘定にしています。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q2",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "入金・出金伝票の対象資金を現金に限定した三伝票制。買掛金50,000円を当座預金から支払う場合、使う伝票はどれですか。",
+          "options": [
+            "入金伝票",
+            "出金伝票",
+            "振替伝票",
+            "商品売上伝票"
+          ],
+          "answer": 2,
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "買掛金50,000円／当座預金50,000円で、指定された現金が動かないため振替伝票です。1・2は現金対象という条件と異なり、4は三伝票にないうえ売上取引でもありません。銀行からの出金を日常語の出金とだけ読まないようにします。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q3",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "三伝票制で商品280,000円を売り、現金100,000円、残額掛けとした。現金部分と掛部分に分けて起票する方式で、振替伝票に記す売上額を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "180000"
+          ],
+          "objectives": [
+            2
+          ],
+          "explanation": "振替伝票は売掛金180,000円／売上180,000円。入金伝票の現金100,000円／売上100,000円と合わせ売上280,000円です。全額掛けとみなす方式とは振替伝票の額が違います。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q4",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "三伝票制で売上350,000円のうち現金120,000円、残額掛け。振替伝票は売掛金350,000円／売上350,000円と指定された。組み合わせる入金伝票の相手科目・金額はどれですか。",
+          "options": [
+            "売上120,000円",
+            "売掛金120,000円",
+            "売掛金230,000円",
+            "売上350,000円"
+          ],
+          "answer": 1,
+          "objectives": [
+            2
+          ],
+          "explanation": "全額を掛けとみなす方式なので、現金120,000円／売掛金120,000円です。1は売上を二重計上、3は掛残額を現金額と取り違え、4は入金額そのものを過大にします。売掛金純増は350,000−120,000＝230,000円です。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q5",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "三伝票制で仕入210,000円、現金支払70,000円、残額掛け。全額を掛けとみなす方式で振替伝票を作成した。出金伝票の相手科目・金額はどれですか。",
+          "options": [
+            "仕入70,000円",
+            "現金70,000円",
+            "買掛金140,000円",
+            "買掛金70,000円"
+          ],
+          "answer": 3,
+          "objectives": [
+            2
+          ],
+          "explanation": "出金伝票は買掛金70,000円／現金70,000円です。1は仕入を重ね、2は暗黙の現金側を相手科目にし、3は掛残額と支払額を取り違えています。買掛金借方70,000円と振替伝票の貸方210,000円の差が140,000円です。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q6",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "商品300,000円を仕入れ、現金90,000円、残額掛け。担当者は仕入300,000円／買掛金300,000円と、仕入90,000円／現金90,000円を起票した。この誤りによる仕入・買掛金の過大額と、現金を動かさない修正仕訳を示してください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 4,
+          "modelAnswer": "仕入は390,000円で正額300,000円より90,000円過大、買掛金は300,000円で正額210,000円より90,000円過大。修正は買掛金90,000円／仕入90,000円。現金支払90,000円は正しいので再修正しない。",
+          "rubric": [
+            {
+              "criterion": "仕入・買掛金が各90,000円過大と求める",
+              "points": 2
+            },
+            {
+              "criterion": "買掛金90,000円／仕入90,000円を示す",
+              "points": 2
+            }
+          ],
+          "objectives": [
+            2,
+            4
+          ],
+          "explanation": "全額掛けとみなした後の出金は買掛金を減らします。分割方式の出金伝票を混ぜたため、貸借が合っていても仕入と負債が過大になりました。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q7",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "五伝票制で商品売買を全額掛けとみなして専用伝票へ記録する。売上360,000円のうち現金120,000円を受け取り、ほかの決済はない。売上伝票と入金伝票を反映した売掛金の純増額を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "240000"
+          ],
+          "objectives": [
+            1,
+            2
+          ],
+          "explanation": "売上伝票で売掛金借方360,000円、入金伝票で売掛金貸方120,000円、純増240,000円です。売上伝票を現金分だけ除いて作る方式を、与件の全額掛け方式へ混ぜません。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q8",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "ある日の三伝票には重複なく、入金が現金売上60,000円と売掛金回収90,000円、出金が給料40,000円と買掛金支払50,000円、振替が掛売上120,000円と備品の後払い取得80,000円（未払金）だけある。仕訳日計表の借方合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "440000"
+          ],
+          "objectives": [
+            3
+          ],
+          "explanation": "60,000＋90,000＋40,000＋50,000＋120,000＋80,000＝440,000円。現金借方150,000円、給料40,000円、買掛金50,000円、売掛金120,000円、備品80,000円の合計です。貸方の売上180,000円・売掛金90,000円・現金90,000円・未払金80,000円も440,000円です。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q9",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "ある日の現金入金伝票合計150,000円、出金伝票合計90,000円で、他の現金取引はない。仕訳日計表は借方と貸方を総額で示す。現金勘定の借方欄に記す額を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "150000"
+          ],
+          "objectives": [
+            3
+          ],
+          "explanation": "借方は入金総額150,000円、貸方は出金総額90,000円です。差引の純増60,000円を借方の総額へ代入しません。元帳の増減合計と残高を区別します。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q10",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "特殊仕訳帳の各記録を丸ごと仕訳として合算すると、預金入金260,000円、預金出金180,000円、売上帳320,000円、仕入帳230,000円となる。預金売上110,000円は入金帳と売上帳に、預金仕入70,000円は出金帳と仕入帳に同じ取引が各一回ずつ記録される。他の重複はない。重複を除く独立仕訳の借方合計を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "810000"
+          ],
+          "objectives": [
+            3
+          ],
+          "explanation": "単純合計990,000円から、余分な記録110,000円と70,000円を一度ずつ除き810,000円です。二重記録の両方を除くと取引が消えます。どの帳簿からどの勘定を転記するかを決めても同じ結果になります。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q11",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "預金出納帳の期首残高500,000円、当期入金260,000円、出金180,000円。入金には売上帳にも載る売上110,000円、出金には仕入帳にも載る仕入70,000円を含む。出納帳自体に重複はなく、ほかの増減はない。預金の期末残高を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "580000"
+          ],
+          "objectives": [
+            3
+          ],
+          "explanation": "500,000＋260,000−180,000＝580,000円です。110,000円と70,000円は帳簿相互の重複であって、出納帳内の正しい入出金を消す理由になりません。全帳簿からの仕訳合算と、単一勘定の残高計算を区別します。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q12",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "売掛金は期首240,000円、期末330,000円。当期の回収185,000円、返品15,000円で、ほかの減少・増加は掛売上だけである。当期掛売上を円単位で求めてください。",
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "accepted": [
+            "290000"
+          ],
+          "objectives": [
+            4
+          ],
+          "explanation": "330,000−240,000＋185,000＋15,000＝290,000円。期首240,000＋売上290,000−回収185,000−返品15,000＝期末330,000円と確認できます。推定できた額を記帳済み元帳へ再度加える必要はありません。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q13",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "売掛金80,000円の回収は、当社負担手数料2,000円を引いた78,000円が預金へ入った。担当者は預金78,000円／売掛金78,000円だけ記帳済み。追加仕訳として正しいものはどれですか。",
+          "options": [
+            "預金2,000円／売掛金2,000円",
+            "支払手数料80,000円／売掛金80,000円",
+            "支払手数料2,000円／売掛金2,000円",
+            "売掛金2,000円／支払手数料2,000円"
+          ],
+          "answer": 2,
+          "objectives": [
+            4
+          ],
+          "explanation": "手数料費用と残る売掛金の消滅を2,000円ずつ追加します。1は実際に入っていない預金を増やし、2は全回収額を費用にし、4は逆方向です。預金78,000円はすでに正しいため動かしません。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q14",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "異なる請求書番号の同額取引が、同じ日に二件記録されていた。重複判定のためにまず行う確認はどれですか。",
+          "options": [
+            "相手先・請求内容・決済証憑を対応させ、同じ取引を二度記録したか調べる",
+            "同額なので必ず一件削除する",
+            "同日なので必ず両方削除する",
+            "貸借が合えば証憑確認を省く"
+          ],
+          "answer": 0,
+          "objectives": [
+            4
+          ],
+          "explanation": "金額と日付だけで取引の同一性は決まりません。1は請求・決済の実体を照合します。2・3は別取引を落とすおそれがあり、4は貸借一致で内容まで正しいと誤っています。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q15",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "普通仕訳帳に備品100,000円／当座預金30,000円・未払金70,000円がある。同じ当座支払部分が特殊仕訳帳にも備品30,000円／当座預金30,000円として載り、これは同一取引と確認できている。両帳簿を丸ごと仕訳として集計した借方合計130,000円から何円を除くべきか、最終仕訳とともに説明してください。備品100,000円全体を除いた場合に、未払部分70,000円の取得記録がどうなるかも比較してください。",
+          "options": [],
+          "answer": 0,
+          "input": "essay",
+          "points": 4,
+          "modelAnswer": "除くのは同じ当座支払部分30,000円の余分な記録一回分。最終仕訳は備品100,000円／当座預金30,000円・未払金70,000円。100,000円全体を重複として除くと、普通仕訳帳だけにある未払70,000円の取得部分まで失われる。",
+          "rubric": [
+            {
+              "criterion": "除く額30,000円を示す",
+              "points": 1
+            },
+            {
+              "criterion": "正しい最終複合仕訳を示す",
+              "points": 2
+            },
+            {
+              "criterion": "全体100,000円を除くと未払部分まで消えると説明する",
+              "points": 1
+            }
+          ],
+          "objectives": [
+            3,
+            4
+          ],
+          "explanation": "普通仕訳帳と特殊仕訳帳の重複は、取引の一部分で生じる場合があります。総額の一致だけでなく、各勘定の借貸を残したかを確認します。"
+        },
+        {
+          "id": "zr2-boki-books-vouchers-q16",
+          "field": "boki",
+          "lesson": "zr2-boki-books-vouchers",
+          "prompt": "総勘定元帳の売掛金合計と入金仕訳は正しいが、顧客Aへの入金40,000円を顧客Bの補助元帳へ記入していた。正しい修正方針はどれですか。",
+          "options": [
+            "現金40,000円／売掛金40,000円を追加する",
+            "顧客別の誤記を取り消してAへ付け替え、正しい総勘定元帳へ回収仕訳を重ねない",
+            "売上40,000円を追加する",
+            "合計が合うので顧客別誤記を残す"
+          ],
+          "answer": 1,
+          "objectives": [
+            1,
+            4
+          ],
+          "explanation": "総額が正しいため、顧客別明細だけを訂正します。1は現金と回収を二重にし、3は売上を作り、4は顧客の債権残高を誤ったままにします。主要簿と補助簿のどちらが誤っているかを区別します。"
+        }
+      ]
     }
   ],
   "units": [
@@ -2939,6 +5513,1309 @@
             }
           ],
           "version": "zeirishi-2026-v2-shotoku-scope-glossary-1"
+        }
+      ]
+    },
+    {
+      "id": "zr2-boki-unit-records",
+      "subject": "boki",
+      "number": 1001,
+      "title": "複式簿記と帳簿の基礎",
+      "description": "取引の二面性から、帳簿・試算表・締切・経過勘定・利息現価・伝票へ進む7レッスン。独自例題と末尾練習に加え、異なる資料の単元演習A・B・Cと事例形式の用語テストで確認します。",
+      "reviewed": "2026-10-27",
+      "lessonIds": [
+        "zr2-boki-account-equation",
+        "zr2-boki-journals-ledgers",
+        "zr2-boki-trial-balance",
+        "zr2-boki-closing-accounts",
+        "zr2-boki-accrual-adjustments",
+        "zr2-boki-interest-present-value",
+        "zr2-boki-books-vouchers"
+      ],
+      "assessments": [
+        {
+          "id": "zr2-boki-records-unit-review-a",
+          "title": "複式簿記と帳簿：独立単元演習A",
+          "kind": "review",
+          "qualification": "zeirishi",
+          "unit": 1001,
+          "version": "zeirishi-2026-v2-records-a-1",
+          "minutes": 75,
+          "fieldNames": {
+            "boki": "簿記論",
+            "zaimu": "財務諸表論",
+            "shotoku": "所得税法",
+            "hojin": "法人税法",
+            "sozoku": "相続税法",
+            "shohi": "消費税法",
+            "shuzei": "酒税法",
+            "kokuzei": "国税徴収法",
+            "jumin": "住民税",
+            "jigyo": "事業税",
+            "kotei": "固定資産税"
+          },
+          "lessonTitles": {
+            "zr2-boki-account-equation": "取引の二面性から仕訳と利益を求める",
+            "zr2-boki-journals-ledgers": "仕訳帳から元帳と顧客別残高へつなぐ",
+            "zr2-boki-trial-balance": "合計と残高の試算表を作り、誤謬を調べる",
+            "zr2-boki-closing-accounts": "損益・残高勘定を締め切り翌期へつなぐ",
+            "zr2-boki-accrual-adjustments": "経過勘定を期間配分し、再振替と当期記帳をつなぐ",
+            "zr2-boki-interest-present-value": "利息・複利・現在価値を受払時点から計算する",
+            "zr2-boki-books-vouchers": "帳簿組織・伝票から取引を復元し、重複を除く"
+          },
+          "instructions": "7講の技能を初見資料で確認する独自の単元演習です。単位は各問の指定に従います。記述は解答例と学習用の部分点基準で自己確認します。時間は独自の学習用目安で、公式試験の構成・難易度・配点を再現する本試験相当模試ではありません。A・B・Cは異なる問題です。",
+          "questions": [
+            {
+              "id": "zr2-boki-records-unit-review-q1",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "ある会社の期首純資産1,400,000円、期末資産2,700,000円、期末負債900,000円。当期の出資払込250,000円、配当50,000円があり、利益以外の純資産変動はこの二つだけである。当期利益を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "200000"
+              ],
+              "objectives": [
+                4
+              ],
+              "explanation": "期末純資産は2,700,000−900,000＝1,800,000円。増加400,000円から出資250,000円を除き、配当50,000円を戻すと利益200,000円です。1,400,000＋250,000＋200,000−50,000＝1,800,000円で一致します。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q3",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "設備720,000円を取得し、代金270,000円は会社の預金から払い、残額450,000円は銀行が貸付金として設備業者へ直接送金した。会社口座へその450,000円の入金はない。税・手数料・償却を考慮せず、仕訳、資産合計と負債合計の増加額、当期利益への影響を示してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 5,
+              "modelAnswer": "備品720,000円／預金270,000円・借入金450,000円。資産合計は720,000−270,000＝450,000円増え、負債も450,000円増える。当期利益への影響は0円。銀行の直接決済を会社預金の入出金として重ねない。",
+              "rubric": [
+                {
+                  "criterion": "正しい複合仕訳を示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "資産合計450,000円増・負債450,000円増を示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "利益への影響0円を示す",
+                  "points": 1
+                }
+              ],
+              "objectives": [
+                1,
+                2
+              ],
+              "explanation": "取得資産720,000円と資産総額の純増450,000円を区別します。貸付元本は収益ではなく、購入代金全額も直ちに費用とはしていません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q5",
+              "field": "boki",
+              "lesson": "zr2-boki-journals-ledgers",
+              "prompt": "預金元帳の期首残高760,000円。当期の正しく記帳済みの取引は次だけである。\n・入金：売掛金回収180,000円、借入220,000円。\n・出金：買掛金支払160,000円、設備購入130,000円、給与90,000円。\n預金の期末残高を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "780000"
+              ],
+              "objectives": [
+                2
+              ],
+              "explanation": "760,000＋180,000＋220,000−160,000−130,000−90,000＝780,000円。入金400,000円、出金380,000円の純増20,000円を期首へ足します。推定・検算のために元帳を読み直しても、同じ仕訳を再転記しません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q7",
+              "field": "boki",
+              "lesson": "zr2-boki-trial-balance",
+              "prompt": "合計試算表の借方合計1,000,000円、貸方978,000円。仕訳帳は正しいが、売掛金回収14,000円を元帳の売掛金借方へ誤転記し、本来の貸方14,000円は未転記。また、別の通信費6,000円の借方転記だけが抜けていた。他の誤りはない。訂正後の左右共通の合計額を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "992000"
+              ],
+              "objectives": [
+                2,
+                3
+              ],
+              "explanation": "借方は1,000,000−14,000＋6,000＝992,000円、貸方は978,000＋14,000＝992,000円です。逆側転記の差28,000円と借方漏れ−6,000円が相殺し、不一致22,000円になっていました。単に差額22,000円を一方へ足すだけでは元帳は直りません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q9",
+              "field": "boki",
+              "lesson": "zr2-boki-trial-balance",
+              "prompt": "決算整理後の残高試算表の借方は現金300,000円・預金400,000円・売掛金200,000円・備品500,000円・前払費用50,000円・費用合計650,000円。貸方は買掛金220,000円・借入金380,000円・資本金800,000円・繰越利益剰余金100,000円と、金額不明の売上だけ。ほかの勘定はない。当期は損失である。損失額を正の円数で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "50000"
+              ],
+              "objectives": [
+                2,
+                4
+              ],
+              "explanation": "借方合計2,100,000円、売上以外の貸方合計1,500,000円から売上600,000円。費用650,000円との差50,000円が損失です。繰越利益剰余金100,000円は当期収益へ含めません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q11",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "3月31日決算。X1年6月1日から一年分の保険料480,000円、X2年6月1日に更新した後の一年分600,000円で、いずれも均等月割。当期はX2年4月1日〜X3年3月31日。期首前払80,000円は再振替せず、使用分の費用振替も未処理で、そのまま資産に残る。当期支払600,000円は全額費用計上。ほかの保険契約や整理はない。期末の必要残高へ合わせる追加仕訳で、前払費用の借方に記す金額を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "20000"
+              ],
+              "objectives": [
+                2,
+                4
+              ],
+              "explanation": "期末未経過分は4〜5月の2か月で100,000円。既存資産80,000円との差20,000円を前払費用20,000円／保険料20,000円とします。当期費用は600,000−20,000＝580,000円で、4〜5月旧契約80,000円と6〜3月新契約500,000円の合計とも一致します。必要残高100,000円をそのまま追加しません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q13",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "期首の前払保険料96,000円を保険料96,000円／前払費用96,000円と再振替済み。当期支払312,000円を全額費用計上し、期末の未経過額は78,000円と確定した。ほかの変動はない。期末整理仕訳、当期費用、期末資産残高を示してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 4,
+              "modelAnswer": "前払費用78,000円／保険料78,000円。当期費用は96,000＋312,000−78,000＝330,000円。期末前払費用78,000円が残る。再振替済みなので期首96,000円を再度費用へ加える仕訳は不要である。",
+              "rubric": [
+                {
+                  "criterion": "期末の正しい振替78,000円を示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "当期費用330,000円を求める",
+                  "points": 1
+                },
+                {
+                  "criterion": "期末資産78,000円を示す",
+                  "points": 1
+                }
+              ],
+              "objectives": [
+                2,
+                3,
+                4
+              ],
+              "explanation": "期首の再振替は整理前費用の一部として計算に含めます。費用を96,000円分二重に加算したり、前払資産を期首と期末の合計174,000円にしたりしません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q15",
+              "field": "boki",
+              "lesson": "zr2-boki-interest-present-value",
+              "prompt": "評価日の一年後に220,000円、二年後に通常受取242,000円と追加の清算受取121,000円を得る。すべて各年末、年10％の一年複利、ほかの受払いなし。現在価値を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "500000"
+              ],
+              "objectives": [
+                2,
+                3
+              ],
+              "explanation": "一年後は220,000÷1.1＝200,000円。二年後の合計363,000円を1.1²で割ると300,000円。合計500,000円です。追加清算額の時点を現在に置かず、同じ二年後の受取りへ加えます。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q17",
+              "field": "boki",
+              "lesson": "zr2-boki-interest-present-value",
+              "prompt": "一年後100,000円、二年後100,000円を受け取る資料に、割引率も適用する会計処理も書かれていない。担当者は「最新の預金金利を自由に使えば、会計上の評価額が一つに決まる」とした。計算に不足する条件と、会計上の評価額を確定できるかを説明してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 4,
+              "modelAnswer": "割引計算に用いる率とその周期、評価の目的・適用する会計基準の条件が不足している。将来額と時点だけでは現在価値は一意にならず、自由に選んだ預金金利で会計上の評価額が確定するとはいえない。まず割引対象となる測定か、どの率を使う条件かを確認する。",
+              "rubric": [
+                {
+                  "criterion": "割引率とその周期が不足すると示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "評価目的・適用基準の条件を確認する必要を示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "将来額と時点だけでは会計上の評価額が一つに決まらないと説明する",
+                  "points": 2
+                }
+              ],
+              "objectives": [
+                4
+              ],
+              "explanation": "率を仮定した試算は可能でも、その仮定を示さず基準上の唯一の評価額とはできません。数値を捏造せず、不足資料を特定する問題です。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q19",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "三伝票制の一部現金仕入で、出金伝票の相手科目が買掛金90,000円、振替伝票には同じ取引の全額仕入と買掛金が記録されている。両伝票による買掛金純増が130,000円と分かっている。仕入総額を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "220000"
+              ],
+              "objectives": [
+                2,
+                4
+              ],
+              "explanation": "出金伝票が買掛金を減らすため、全額掛けとみなす方式です。振替の買掛金貸方額−90,000＝130,000より、仕入総額は220,000円。振替は仕入220,000円／買掛金220,000円です。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q21",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "現金で払った家賃120,000円について、同じ領収書を二枚の伝票へ起票し、各伝票を全額地代家賃／現金として二回転記した。さらに本来この120,000円のうち30,000円は翌期分であるが、未整理。これ以外の誤りはない。重複と前払をともに直すと、整理前利益から利益はいくら増えるか、正の円数で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "150000"
+              ],
+              "objectives": [
+                3,
+                4
+              ],
+              "explanation": "重複取消しの現金120,000円／地代家賃120,000円と、前払費用30,000円／地代家賃30,000円で、利益は計150,000円増えます。正しい当期費用は90,000円。現金の修正120,000円と前払資産30,000円を区別して確認します。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q23",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "整理前利益240,000円。給与40,000円の同一支払を二回記帳した重複一回分が含まれ、現金も二回減らしていた。ほかに次の四項目が未整理である。\n・費用計上済みの翌期家賃60,000円。\n・当期の未払給与20,000円。\n・収益計上済みの未提供家賃30,000円。\n・当期の未収利息10,000円。\n期首の繰越利益剰余金160,000円、当期配当50,000円は記帳済みで、それ以外の同勘定増減はない。修正後利益、締切後の繰越利益剰余金、現金修正額を示してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 6,
+              "modelAnswer": "利益は240,000＋40,000＋60,000−20,000−30,000＋10,000＝300,000円。締切後の繰越利益剰余金は160,000−50,000＋300,000＝410,000円。現金は給与重複取消し40,000円だけ増額修正する。他の四経過勘定の整理で現金は動かない。",
+              "rubric": [
+                {
+                  "criterion": "重複と四経過勘定の符号を反映し利益300,000円を求める",
+                  "points": 3
+                },
+                {
+                  "criterion": "締切後の繰越利益剰余金410,000円を求める",
+                  "points": 2
+                },
+                {
+                  "criterion": "現金修正額40,000円増を示す",
+                  "points": 1
+                }
+              ],
+              "objectives": [
+                1,
+                4
+              ],
+              "explanation": "配当を費用に加え直さず、経過勘定の整理を現金決済にしません。必要なら資産110,000円増と負債50,000円増の差60,000円が利益増60,000円と一致することでも検算できます。"
+            }
+          ],
+          "nextAssessment": "zr2-boki-records-unit-review-b"
+        },
+        {
+          "id": "zr2-boki-records-unit-review-b",
+          "title": "複式簿記と帳簿：独立単元演習B",
+          "kind": "review",
+          "qualification": "zeirishi",
+          "unit": 1001,
+          "version": "zeirishi-2026-v2-records-b-1",
+          "minutes": 75,
+          "fieldNames": {
+            "boki": "簿記論",
+            "zaimu": "財務諸表論",
+            "shotoku": "所得税法",
+            "hojin": "法人税法",
+            "sozoku": "相続税法",
+            "shohi": "消費税法",
+            "shuzei": "酒税法",
+            "kokuzei": "国税徴収法",
+            "jumin": "住民税",
+            "jigyo": "事業税",
+            "kotei": "固定資産税"
+          },
+          "lessonTitles": {
+            "zr2-boki-account-equation": "取引の二面性から仕訳と利益を求める",
+            "zr2-boki-journals-ledgers": "仕訳帳から元帳と顧客別残高へつなぐ",
+            "zr2-boki-trial-balance": "合計と残高の試算表を作り、誤謬を調べる",
+            "zr2-boki-closing-accounts": "損益・残高勘定を締め切り翌期へつなぐ",
+            "zr2-boki-accrual-adjustments": "経過勘定を期間配分し、再振替と当期記帳をつなぐ",
+            "zr2-boki-interest-present-value": "利息・複利・現在価値を受払時点から計算する",
+            "zr2-boki-books-vouchers": "帳簿組織・伝票から取引を復元し、重複を除く"
+          },
+          "instructions": "7講の技能を初見資料で確認する独自の単元演習です。単位は各問の指定に従います。記述は解答例と学習用の部分点基準で自己確認します。時間は独自の学習用目安で、公式試験の構成・難易度・配点を再現する本試験相当模試ではありません。A・B・Cは異なる問題です。",
+          "questions": [
+            {
+              "id": "zr2-boki-records-unit-review-q2",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "会社は銀行への支払総額93,000円を全額支払利息へ記帳した。契約明細は借入元本返済90,000円、当期利息3,000円で、利息は未計上だった。追加修正による正しい影響はどれですか。",
+              "options": [
+                "利益が90,000円減り、借入金が90,000円増える",
+                "利益が93,000円増え、現金が93,000円増える",
+                "借入金が90,000円減り、利益が90,000円増える",
+                "借入金と現金が各3,000円増える"
+              ],
+              "answer": 2,
+              "objectives": [
+                1,
+                3
+              ],
+              "explanation": "借入金90,000円／支払利息90,000円と直します。実際の支払93,000円は正しく記録済みです。1は方向が逆、2は実在しない現金を増やして当期利息まで除き、4は元本と利息を取り違えています。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q4",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "当期に完了した役務の売上540,000円のうち現金受取370,000円、残りは売掛金。費用210,000円のうち現金支払160,000円、残りは未払。さらに借入元本受入280,000円・返済80,000円、期首売掛金90,000円の全額回収がある。これ以外の取引はない。当期利益と現金純増を求め、両者の差を債権・負債から説明してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 5,
+              "modelAnswer": "利益は540,000−210,000＝330,000円。現金純増は370,000−160,000＋280,000−80,000＋90,000＝500,000円。売掛金は期首90,000円から期末170,000円へ80,000円増、未払は50,000円増、借入元本は200,000円増。330,000−80,000＋50,000＋200,000＝500,000円となる。",
+              "rubric": [
+                {
+                  "criterion": "利益330,000円を求める",
+                  "points": 1
+                },
+                {
+                  "criterion": "現金純増500,000円を求める",
+                  "points": 2
+                },
+                {
+                  "criterion": "売掛金増80,000円、未払増50,000円、元本純増200,000円で差を説明する",
+                  "points": 2
+                }
+              ],
+              "objectives": [
+                3
+              ],
+              "explanation": "回収した期首売掛金90,000円を当期売上へ再計上しません。現金の式だけでなく、残高変化を使った検算でも一致するかを確認します。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q6",
+              "field": "boki",
+              "lesson": "zr2-boki-journals-ledgers",
+              "prompt": "得意先元帳の記録は次のとおり。他の顧客・増減はない。\n・A社：期首280,000円、当期掛売160,000円、売上返品40,000円、現金回収190,000円。\n・B社：期首120,000円、掛売80,000円、回収100,000円。\n総勘定元帳と照合する期末の売掛金合計を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "310000"
+              ],
+              "objectives": [
+                3
+              ],
+              "explanation": "A社280,000＋160,000−40,000−190,000＝210,000円、B社120,000＋80,000−100,000＝100,000円、合計310,000円。返品も回収も債権を減らしますが、返品は売上の修正、回収は現金への振替という内容が違います。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q8",
+              "field": "boki",
+              "lesson": "zr2-boki-trial-balance",
+              "prompt": "貸借が一致する試算表について、次のうち内容確認がなお必要な組合せとして正しいものはどれですか。",
+              "options": [
+                "費用の借方だけの漏れは、貸借一致するから必ず検出できない",
+                "同じ借入金返済を仕訳ごと二回記帳した場合と、給与を家賃へ誤分類した場合は、どちらも貸借一致し得る",
+                "貸借一致すれば顧客別残高も正しい",
+                "仕訳ごとの二重記帳は必ず借方だけを増やす"
+              ],
+              "answer": 1,
+              "objectives": [
+                4
+              ],
+              "explanation": "仕訳全体の二重記帳と、同じ借方同士の科目誤りは貸借を保ったまま起きます。1は片側漏れの不一致を無視し、3は補助元帳の顧客誤りを無視し、4は二重記帳の両側への影響を取り違えています。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q10",
+              "field": "boki",
+              "lesson": "zr2-boki-closing-accounts",
+              "prompt": "期首の繰越利益剰余金80,000円。当期配当30,000円は同勘定の借方へ記帳済み。当期収益560,000円と費用610,000円は損益勘定へ振替済みで、ほかの繰越利益剰余金の増減はない。損益勘定を締め切る仕訳と、締切後の繰越利益剰余金の残高を示してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 4,
+              "modelAnswer": "当期損失50,000円なので、繰越利益剰余金50,000円／損益50,000円。締切前の繰越利益剰余金は80,000−30,000＝50,000円、損失50,000円を引くと締切後は0円である。",
+              "rubric": [
+                {
+                  "criterion": "損失50,000円を求める",
+                  "points": 1
+                },
+                {
+                  "criterion": "繰越利益剰余金50,000円／損益50,000円を示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "配当記帳済みを反映し締切後0円と求める",
+                  "points": 1
+                }
+              ],
+              "objectives": [
+                2
+              ],
+              "explanation": "配当は費用610,000円へ加え直しません。損益を締め切る方向は損失なら繰越利益剰余金の借方です。利益の場合と取り違えないようにします。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q12",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "賃貸人は、同じ振込で翌月分家賃60,000円と、退去時に条件に従い返還すべき保証金200,000円を受け取った。家賃は未提供の継続役務の対価で、保証金に当期収益とすべき部分はない。入金260,000円を整理する判断はどれですか。",
+              "options": [
+                "全額当期収益",
+                "全額前受収益",
+                "前受収益200,000円と当期収益60,000円",
+                "家賃部分は前受収益60,000円、保証金はその性質の負債200,000円として分ける"
+              ],
+              "answer": 3,
+              "objectives": [
+                1
+              ],
+              "explanation": "未提供家賃と返還義務のある保証金は負債であっても内容が違います。1は両方を収益とし、2は保証金を役務対価と混同し、3は金額と性質を逆にしています。契約条件のない独自の収益計上を加えません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q14",
+              "field": "boki",
+              "lesson": "zr2-boki-interest-present-value",
+              "prompt": "ある貸付けの期首未収利息4,200円。当期の利息対象元本3,650,000円、年利3％、当期対象47日、一年365日・単利・対象期間内の元本変動なし。当期の利息受取12,000円には期首未収4,200円の回収も含み、これ以外の未収変動・計上停止等はない。期末未収利息を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "6300"
+              ],
+              "objectives": [
+                1
+              ],
+              "explanation": "当期発生利息は3,650,000×3％×47÷365＝14,100円。期末未収は期首4,200＋当期14,100−受取12,000＝6,300円です。日割の発生額14,100円そのものを期末未収へ置かず、前期分回収を含む決済と結び付けます。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q16",
+              "field": "boki",
+              "lesson": "zr2-boki-interest-present-value",
+              "prompt": "正の同じ割引率で、同じ120,000円を三回受け取る。案Aは一年後・二年後・三年後、案Bは当日・一年後・二年後である。他の条件は同じ。正しい比較はどれですか。",
+              "options": [
+                "名目合計が同じなので現在価値も必ず同じ",
+                "遅い案Aの方が現在価値が大きい",
+                "一回ずつ一年早い案Bの方が現在価値が大きい",
+                "当日の受取りも三年分割り引くので比較不能"
+              ],
+              "answer": 2,
+              "objectives": [
+                2
+              ],
+              "explanation": "正の率では早い受取りの現在価値が大きく、全体を一年早めたBが大きくなります。1は時点を無視し、2は割引の方向が逆、4は当日の経過期間0を無視しています。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q18",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "特殊仕訳帳と普通仕訳帳を丸ごと仕訳として加えると借方合計1,400,000円。重複は、預金売上180,000円が二つの帳簿へ一回ずつ載る部分と、預金仕入のある金額が二つの帳簿へ一回ずつ載る部分だけである。同一取引を一度ずつ反映した正しい合計は1,100,000円。重複していた預金仕入額を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "number",
+              "accepted": [
+                "120000"
+              ],
+              "objectives": [
+                3
+              ],
+              "explanation": "余分な一回分は1,400,000−1,100,000＝300,000円。売上の重複180,000円を除くと、仕入の重複は120,000円です。各重複取引の総額を二倍して引くものではありません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q20",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "五伝票制で商品売買を全額掛けとみなす方式。商品売上450,000円のうち現金受取150,000円、商品仕入320,000円のうち現金支払80,000円、ほかに当期店舗家賃40,000円を現金で支払った。必要な五枚の伝票を仕訳の形で示し、現金・売掛金・買掛金の純増減も求めてください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 8,
+              "modelAnswer": "売上伝票：売掛金450,000円／売上450,000円。入金伝票：現金150,000円／売掛金150,000円。仕入伝票：仕入320,000円／買掛金320,000円。出金伝票：買掛金80,000円／現金80,000円。家賃の出金伝票：地代家賃40,000円／現金40,000円。現金は30,000円増、売掛金300,000円増、買掛金240,000円増。",
+              "rubric": [
+                {
+                  "criterion": "売上・入金の二枚を正しく示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "仕入・その出金の二枚を正しく示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "家賃の出金伝票を示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "現金30,000円増・売掛金300,000円増・買掛金240,000円増を求める",
+                  "points": 3
+                }
+              ],
+              "objectives": [
+                1,
+                2
+              ],
+              "explanation": "入金伝票を売上150,000円、仕入支払の出金伝票を仕入80,000円とすると、全額掛けの専用伝票と組み合わさって売買を重ねてしまいます。家賃は商品仕入へ混ぜません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q22",
+              "field": "boki",
+              "lesson": "zr2-boki-trial-balance",
+              "prompt": "残高試算表の二つの借方残高だけが空欄で、他の勘定から二つの合計が250,000円と分かった。資料には二つを分ける証憑・元帳記録がない。適切な対応はどれですか。",
+              "options": [
+                "両方125,000円と断定する",
+                "大きそうな科目へ250,000円を全額置く",
+                "貸借一致する組合せならどれでも正答にする",
+                "個別額は一意に求まらず、それぞれの元帳等の追加資料が必要と判断する"
+              ],
+              "answer": 3,
+              "objectives": [
+                4
+              ],
+              "explanation": "合計だけでは、例えば100,000円と150,000円か125,000円ずつかを決められません。1・2は根拠のない配分、3は実際残高との対応を無視します。不足している個別勘定の資料を特定します。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q24",
+              "field": "boki",
+              "lesson": "zr2-boki-closing-accounts",
+              "prompt": "締切後の残高勘定は、借方と貸方が次のとおりである。\n・借方：現金260,000円、売掛金180,000円、備品400,000円、前払費用40,000円。\n・貸方：買掛金140,000円、借入金220,000円、資本金300,000円、繰越利益剰余金150,000円、減価償却累計額70,000円。\nすべて通常の正残高で、他の控除項目はない。貸借対照表の資産合計・負債合計・純資産合計を求め、資産合計が負債・純資産合計と一致するか検算してください。また期首の繰越利益剰余金120,000円、当期配当20,000円、同勘定のほかの変動なしとして、当期利益を逆算してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "points": 6,
+              "modelAnswer": "残高勘定の借方合計880,000円から減価償却累計額70,000円を控除し、貸借対照表の資産は810,000円。負債は140,000＋220,000＝360,000円。純資産は資本金300,000＋繰越利益剰余金150,000＝450,000円である。810,000＝360,000＋450,000円。当期利益は150,000−120,000＋20,000＝50,000円。",
+              "rubric": [
+                {
+                  "criterion": "残高勘定880,000円から控除して資産810,000円を求める",
+                  "points": 2
+                },
+                {
+                  "criterion": "純資産450,000円と負債360,000円との一致を示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "当期利益50,000円を配当込みで逆算する",
+                  "points": 2
+                }
+              ],
+              "objectives": [
+                3
+              ],
+              "explanation": "締切後の繰越利益剰余金150,000円をそのまま当期利益とはしません。累計額の貸方残高を負債へ分類せず、資産から控除する指定も確認します。"
+            }
+          ],
+          "nextAssessment": "zr2-boki-records-unit-review-c"
+        },
+        {
+          "id": "zr2-boki-records-unit-review-c",
+          "title": "複式簿記と帳簿：細目補充C",
+          "kind": "review",
+          "qualification": "zeirishi",
+          "unit": 1001,
+          "version": "zeirishi-2026-v2-records-c-1",
+          "minutes": 35,
+          "fieldNames": {
+            "boki": "簿記論",
+            "zaimu": "財務諸表論",
+            "shotoku": "所得税法",
+            "hojin": "法人税法",
+            "sozoku": "相続税法",
+            "shohi": "消費税法",
+            "shuzei": "酒税法",
+            "kokuzei": "国税徴収法",
+            "jumin": "住民税",
+            "jigyo": "事業税",
+            "kotei": "固定資産税"
+          },
+          "lessonTitles": {
+            "zr2-boki-account-equation": "取引の二面性から仕訳と利益を求める",
+            "zr2-boki-journals-ledgers": "仕訳帳から元帳と顧客別残高へつなぐ",
+            "zr2-boki-trial-balance": "合計と残高の試算表を作り、誤謬を調べる",
+            "zr2-boki-closing-accounts": "損益・残高勘定を締め切り翌期へつなぐ",
+            "zr2-boki-accrual-adjustments": "経過勘定を期間配分し、再振替と当期記帳をつなぐ",
+            "zr2-boki-interest-present-value": "利息・複利・現在価値を受払時点から計算する",
+            "zr2-boki-books-vouchers": "帳簿組織・伝票から取引を復元し、重複を除く"
+          },
+          "instructions": "7講の技能を初見資料で確認する独自の単元演習です。単位は各問の指定に従います。記述は解答例と学習用の部分点基準で自己確認します。時間は独自の学習用目安で、公式試験の構成・難易度・配点を再現する本試験相当模試ではありません。A・B・Cは異なる問題です。",
+          "questions": [
+            {
+              "id": "zr2-boki-records-unit-review-q25",
+              "field": "boki",
+              "lesson": "zr2-boki-journals-ledgers",
+              "prompt": "売掛金元帳の期首借方残高280,000円、当期掛売上の記入額は不明、返品30,000円と現金回収150,000円が貸方にあり、期末借方残高340,000円となっている。他の記入はない。ただし元の仕訳帳と銀行記録を調べると、回収は実際180,000円で、元の仕訳は正しく、売掛金元帳の貸方だけ30,000円少なく転記されていた。当期掛売上額、訂正後売掛金残高、必要な元帳訂正と仕訳を再計上する必要の有無を示してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                1,
+                2,
+                4
+              ],
+              "input": "essay",
+              "modelAnswer": "掛売上額は340,000−280,000＋30,000＋150,000＝240,000円。訂正後残高は340,000−30,000＝310,000円。売掛金元帳の貸方へ不足30,000円を追記して元の仕訳への参照を残す。仕訳帳は正しいので預金／売掛金の仕訳をもう一度計上しない。",
+              "explanation": "未知の記入額の復元と、判明した転記誤りの訂正を分けます。正しい回収180,000円を使っても280,000＋240,000−30,000−180,000＝310,000円と検算できます。",
+              "points": 6,
+              "rubric": [
+                {
+                  "criterion": "誤記修正前の元帳関係から掛売上240,000円を復元する",
+                  "points": 2
+                },
+                {
+                  "criterion": "正しい売掛金残高310,000円を求める",
+                  "points": 2
+                },
+                {
+                  "criterion": "元帳貸方30,000円を直し、元仕訳の再計上を不要と説明する",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q26",
+              "field": "boki",
+              "lesson": "zr2-boki-closing-accounts",
+              "prompt": "決算で当期の未払給与が未整理である。担当者は整理前の収益費用を既に確定額だと考え、先に損益振替と帳簿締切を行おうとしている。本講の決算手順として適切なのはどれですか。",
+              "options": [
+                "未払給与等の決算整理を反映し、整理後残高を確認して損益集計・利益の振替・帳簿締切へ進む",
+                "先に締め切れば未払給与は翌期費用になるので、そのままにする",
+                "現金支払いがない未払給与は決算整理の対象にしない",
+                "残高勘定へ全収益費用を移してから、未払給与を損益に加える"
+              ],
+              "answer": 0,
+              "objectives": [
+                1
+              ],
+              "explanation": "当期に属する未払給与を整理してから損益を確定します。締切という記帳の順番で費用の帰属期間は変わりません。残高勘定は収益費用を集める損益勘定の代わりではありません。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q27",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "五伝票制で商品売買を全額掛けとして記録する。売上伝票は売掛金620,000円／売上620,000円、入金伝票は現金270,000円／売掛金270,000円。仕入伝票は仕入450,000円／買掛金450,000円、出金伝票は買掛金150,000円／現金150,000円。別の出金伝票に当期家賃50,000円／現金50,000円、別の入金伝票に現金200,000円／借入金200,000円がある。以上6枚だけで、元取引の重複や未記帳はない。伝票日計表の借方総額と貸方総額に共通する金額を円単位で求めてください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                3
+              ],
+              "input": "number",
+              "accepted": [
+                "1740000"
+              ],
+              "explanation": "620,000＋270,000＋450,000＋150,000＋50,000＋200,000＝1,740,000円。各伝票の借方全額と貸方全額をそれぞれ足します。現金の純増270,000円や売掛金純増350,000円は、日計表の借貸総額とは別です。"
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q28",
+              "field": "boki",
+              "lesson": "zr2-boki-trial-balance",
+              "prompt": "期首分を含めて集計済みの元帳は、現金の借方合計430,000円・貸方合計310,000円、買掛金の借方合計180,000円・貸方合計260,000円である。この二勘定について、合計試算表に載せる各借貸合計、残高試算表に載せる金額と側を示してください。合計残高試算表では何を併記するかも説明してください。他の勘定は与えていないので、全勘定の貸借一致はこの問では判定しない。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "objectives": [
+                1,
+                2
+              ],
+              "modelAnswer": "合計試算表は現金が借方430,000円・貸方310,000円、買掛金が借方180,000円・貸方260,000円。残高試算表は現金120,000円を借方、買掛金80,000円を貸方へ記す。合計残高試算表は各勘定の借方合計・貸方合計と、差額である残高を併記する。",
+              "explanation": "合計の列へ差額だけを置くことや、買掛金の貸方残高を借方へ置くことを避けます。二勘定しかないため、ここで示した残高合計が全社の貸借一致を示すわけではありません。",
+              "points": 6,
+              "rubric": [
+                {
+                  "criterion": "二勘定の四つの合計額を正しい借貸へ置く",
+                  "points": 2
+                },
+                {
+                  "criterion": "現金借方120,000円・買掛金貸方80,000円を求める",
+                  "points": 2
+                },
+                {
+                  "criterion": "合計残高試算表で合計と残高を併記すると説明する",
+                  "points": 2
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-unit-review-q29",
+              "field": "boki",
+              "lesson": "zr2-boki-closing-accounts",
+              "prompt": "前期末の未払通信費36,000円がある。当期に44,000円を支払い、明細は前期分36,000円と当期分8,000円であった。当期末には、この支払いとは別の当期通信費12,000円が未払いである。ほかの通信費はない。期首に再振替する方法と、しない方法について、それぞれ必要な期首・支払時・期末の仕訳を示し、当期通信費と期末未払費用を比較してください。再振替しない方法では期首仕訳不要であることも示してください。",
+              "options": [],
+              "answer": 0,
+              "input": "essay",
+              "objectives": [
+                4
+              ],
+              "modelAnswer": "再振替する方法：期首に未払費用36,000円／通信費36,000円。支払時に通信費44,000円／現金44,000円。期末に通信費12,000円／未払費用12,000円。当期費用は−36,000＋44,000＋12,000＝20,000円。再振替しない方法：期首仕訳なし。支払時は未払費用36,000円・通信費8,000円／現金44,000円、期末は通信費12,000円／未払費用12,000円。当期費用は8,000＋12,000＝20,000円。期末未払費用は両方法とも12,000円。",
+              "explanation": "再振替という記帳方法を変えても、前期費用36,000円を当期費用へ重ねません。当期に属する8,000円と12,000円を合わせ、両方法の残高・損益が一致することを確かめます。",
+              "points": 6,
+              "rubric": [
+                {
+                  "criterion": "再振替ありの期首・支払時・期末の三段階を示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "再振替なしの期首仕訳不要と支払時・期末処理を示す",
+                  "points": 2
+                },
+                {
+                  "criterion": "両方法の当期費用20,000円・期末未払12,000円を比較する",
+                  "points": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "zr2-boki-records-glossary-assessment",
+          "title": "複式簿記と帳簿：事例で確認する用語テスト",
+          "kind": "glossary",
+          "qualification": "zeirishi",
+          "unit": 1001,
+          "version": "zeirishi-2026-v2-records-glossary-1",
+          "fieldNames": {
+            "boki": "簿記論",
+            "zaimu": "財務諸表論",
+            "shotoku": "所得税法",
+            "hojin": "法人税法",
+            "sozoku": "相続税法",
+            "shohi": "消費税法",
+            "shuzei": "酒税法",
+            "kokuzei": "国税徴収法",
+            "jumin": "住民税",
+            "jigyo": "事業税",
+            "kotei": "固定資産税"
+          },
+          "lessonTitles": {
+            "zr2-boki-account-equation": "取引の二面性から仕訳と利益を求める",
+            "zr2-boki-journals-ledgers": "仕訳帳から元帳と顧客別残高へつなぐ",
+            "zr2-boki-trial-balance": "合計と残高の試算表を作り、誤謬を調べる",
+            "zr2-boki-closing-accounts": "損益・残高勘定を締め切り翌期へつなぐ",
+            "zr2-boki-accrual-adjustments": "経過勘定を期間配分し、再振替と当期記帳をつなぐ",
+            "zr2-boki-interest-present-value": "利息・複利・現在価値を受払時点から計算する",
+            "zr2-boki-books-vouchers": "帳簿組織・伝票から取引を復元し、重複を除く"
+          },
+          "instructions": "用語の使い分けを短い独自事例で確認します。記述は学習用の基準で自己確認します。用語参照の32項目とは別の24問であり、定義集の項目数を問題数へ加えていません。単元の計算・記述演習や科目の総合演習も別に取り組んでください。",
+          "questions": [
+            {
+              "id": "zr2-boki-records-glossary-assessment-q1",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "銀行からの借入金が入金された。担当者は「現金が増えた取引だから収益」とした。どの用語の区別が必要ですか。",
+              "options": [
+                "資産の増加と収益の発生を区別し、返済義務を負債に記録する",
+                "現金収入はすべて収益なので区別不要",
+                "資産が増えれば必ず純資産も同額増える",
+                "借入金は翌期返済なので当期には記録しない"
+              ],
+              "answer": 0,
+              "objectives": [
+                1,
+                3
+              ],
+              "explanation": "借入れでは預金と負債が増えます。現金収入と収益は同じ概念ではありません。他の案は負債の発生を落とすか、資産増加と利益を直結させています。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q2",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "備品に係る減価償却累計額は貸方残高である。残高の向きだけを見て負債へ入れた。最も適切な説明はどれですか。",
+              "options": [
+                "貸方残高は例外なく返済義務を意味する",
+                "減価償却累計額は当期の現金支払額を示す",
+                "減価償却累計額は当期の減価償却費と必ず同額である",
+                "資産の控除項目なので、資産の帳簿価額を示す際に備品から控除する"
+              ],
+              "answer": 3,
+              "objectives": [
+                1
+              ],
+              "explanation": "貸借の向きだけでは勘定の性質は決まりません。累計額は資産の取得後からの配分の累積で、当期費用や支出額と区別します。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q3",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "株式会社が過年度利益から配当を支払った。従業員給与の支払いと同じ「費用」とする説明を、費用と利益分配の用語を使って訂正してください。配当を費用にすると当期利益がどうなるかも述べてください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                4
+              ],
+              "input": "essay",
+              "modelAnswer": "給与は役務に係る費用になり得る一方、配当は株主への利益分配で純資産の減少として扱う。配当を費用にすると当期利益を過小にする。",
+              "explanation": "資金の流出だけで費用と判定せず、取引の相手と目的を確認します。この問は配当手続の適法性や金額制限を求めていません。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "給与に係る費用と株主への利益分配を区別する",
+                  "points": 2
+                },
+                {
+                  "criterion": "誤って費用にすると当期利益が過小になると示す",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q4",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "当期に販売済みの商品の代金を、翌期に売掛金から回収した。翌期の回収を表す組合せはどれですか。",
+              "options": [
+                "売掛金は現金収入なので負債である",
+                "資産間の振替であり、販売時に計上済みの売上を重ねない",
+                "翌期に現金が入ったので、翌期売上を必ず再計上する",
+                "翌期の回収額はすべて前受収益である"
+              ],
+              "answer": 1,
+              "objectives": [
+                3
+              ],
+              "explanation": "回収時は現金預金が増え売掛金が減ります。売上の時期と入金の時期を分けます。前受収益は既に販売済みの商品代金回収に当てはまりません。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q5",
+              "field": "boki",
+              "lesson": "zr2-boki-journals-ledgers",
+              "prompt": "当座預金元帳の借方に、相手欄「諸口」、金額180,000円という一行がある。内訳の仕訳はまだ見ていない。担当者は同額の「諸口勘定」を独立に作ろうとした。なぜ適切でないか、内訳を調べる資料と、現段階で個別の相手科目を確定できるかを説明してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                1
+              ],
+              "input": "essay",
+              "modelAnswer": "諸口は複数の相手科目を示す記載であり、独立勘定を作らない。元帳の参照先の仕訳帳を確認して、複数の相手科目と金額を追う。この一行だけで個別の売上・売掛金・借入金等へ断定はできない。",
+              "explanation": "元帳の相手欄は参照のための記載です。内訳がないのに、180,000円を別勘定の残高や架空の相手科目へ割り当てません。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "諸口を複数相手の記載とし、独立勘定を否定する",
+                  "points": 1
+                },
+                {
+                  "criterion": "参照先の仕訳帳で内訳を確認すると示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "一行だけでは個別の相手科目を確定できないと示す",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q6",
+              "field": "boki",
+              "lesson": "zr2-boki-journals-ledgers",
+              "prompt": "同じ取引を発生日順に追いたい場合と、預金勘定だけの増減・残高を追いたい場合がある。主要簿の使い分けとして適切なのはどれですか。",
+              "options": [
+                "発生日順は総勘定元帳、預金集計は仕訳帳",
+                "どちらも得意先元帳だけで確認する",
+                "総勘定元帳へ転記したら仕訳帳の記録は消す",
+                "発生日順は仕訳帳、預金勘定ごとの集計は総勘定元帳"
+              ],
+              "answer": 3,
+              "objectives": [
+                1
+              ],
+              "explanation": "仕訳帳と総勘定元帳は同じ取引を異なる軸で記録し、参照関係を残します。得意先元帳は預金を含むすべての取引の主要簿ではありません。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q7",
+              "field": "boki",
+              "lesson": "zr2-boki-journals-ledgers",
+              "prompt": "売掛金の総勘定元帳残高は合っているが、どの得意先が未払いか分からない。直接確認する補助簿はどれですか。",
+              "options": [
+                "固定資産台帳",
+                "現金出納帳の合計額だけ",
+                "得意先別の売掛金元帳",
+                "仕入先別の買掛金元帳"
+              ],
+              "answer": 2,
+              "objectives": [
+                3
+              ],
+              "explanation": "総勘定元帳の総額と得意先別内訳を照合します。買掛金元帳は支払義務、固定資産台帳は資産個別情報の資料で、現金合計だけでは未払得意先を特定できません。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q8",
+              "field": "boki",
+              "lesson": "zr2-boki-trial-balance",
+              "prompt": "預金元帳の当期借方記入合計300,000円、貸方記入合計120,000円。期首残高を含めた集計は今回は求めない。合計試算表で示す当期記入合計と、その差額180,000円の関係を説明し、二つを同じ数字として転記できるか述べてください。 また、この資料だけで180,000円を期末残高とできるか、必要な情報とともに説明してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                1
+              ],
+              "input": "essay",
+              "modelAnswer": "当期記入合計は借方300,000円と貸方120,000円をそれぞれ示す。180,000円は当期記入の差額で、合計額そのものではない。同じ数字として転記できない。期末残高を求めるなら期首残高も必要になる。",
+              "explanation": "合計試算表の借貸合計と残高の計算を区別します。与件は期首を与えていないので、180,000円を当然に期末残高としません。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "借方合計300,000円・貸方合計120,000円を区別する",
+                  "points": 1
+                },
+                {
+                  "criterion": "差額180,000円と合計額を区別し同一転記を否定する",
+                  "points": 1
+                },
+                {
+                  "criterion": "期末残高には期首残高の情報が必要と示す",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q9",
+              "field": "boki",
+              "lesson": "zr2-boki-trial-balance",
+              "prompt": "借入れの仕訳で、貸方を借入金ではなく売上と誤記した。貸借は同額で転記した。試算表が一致したことから言えるのはどれですか。",
+              "options": [
+                "左右の金額一致だけで、科目の正確性は保証されない",
+                "借入金と売上はどちらも貸方なので同じ勘定でよい",
+                "試算表が一致すれば元の証憑を確認する必要はない",
+                "売上の過大計上は必ず貸借不一致を生む"
+              ],
+              "answer": 0,
+              "objectives": [
+                4
+              ],
+              "explanation": "同額の誤科目転記は試算表の一致で発見できない場合があります。他の案は勘定の意味を無視するか、試算表の検出能力を過大に見積もっています。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q10",
+              "field": "boki",
+              "lesson": "zr2-boki-closing-accounts",
+              "prompt": "当期の売上・給料の残高をいったん集め、当期損益を計算する締切勘定はどれですか。",
+              "options": [
+                "残高勘定",
+                "諸口勘定",
+                "資本金勘定",
+                "損益勘定"
+              ],
+              "answer": 3,
+              "objectives": [
+                1,
+                2
+              ],
+              "explanation": "損益勘定に収益・費用を集めます。残高勘定は資産等の繰越に関わり、諸口は独立勘定ではありません。資本金へ全収益費用を直接振り替える処理にもなりません。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q11",
+              "field": "boki",
+              "lesson": "zr2-boki-closing-accounts",
+              "prompt": "締切後の残高勘定に、備品500,000円の借方と減価償却累計額80,000円の貸方がある。残高勘定の記載と貸借対照表の備品帳簿価額の違いを、金額と科目の性質から説明してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                3
+              ],
+              "input": "essay",
+              "modelAnswer": "残高勘定には備品500,000円と累計額80,000円をそれぞれの残高方向で記載する。貸借対照表の正味帳簿価額は500,000−80,000＝420,000円。累計額は負債ではなく備品の控除項目。",
+              "explanation": "貸方にある累計額を買掛金等の負債と合算しません。この問題は別の評価損等がない条件です。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "残高勘定の二つの残高を区別する",
+                  "points": 1
+                },
+                {
+                  "criterion": "正味備品420,000円を計算する",
+                  "points": 1
+                },
+                {
+                  "criterion": "累計額を資産控除と説明する",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q12",
+              "field": "boki",
+              "lesson": "zr2-boki-account-equation",
+              "prompt": "締切後の繰越利益剰余金は、前期からの残高、当期利益、配当等を反映している。この残高を表す適切な説明はどれですか。",
+              "options": [
+                "翌期の売上予算の金額",
+                "一定時点の純資産項目の残高で、当期利益そのものと必ずしも一致しない",
+                "当期利益だけなので配当を考える必要はない",
+                "会社が保有する現金残高の別名"
+              ],
+              "answer": 1,
+              "objectives": [
+                4
+              ],
+              "explanation": "累積した純資産の残高と、一期間の損益を区別します。現金や売上予算とは別の情報です。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q13",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "翌年一年間の保険保障を受けるために支払った保険料と、未完成の機械の購入代金として先払いした金額がある。最も適切な区別はどれですか。",
+              "options": [
+                "継続する役務の未経過分は前払費用、機械代金の前払いは前払金として取引内容を確認する",
+                "どちらも現金支出済みなので必ず当期費用",
+                "どちらも継続役務の前払費用として同じ期間で償却する",
+                "機械代金の前払いは未払費用である"
+              ],
+              "answer": 0,
+              "objectives": [
+                1
+              ],
+              "explanation": "経過勘定の前払費用は継続役務の期間配分に関する用語です。物品代金の前払いを同じ性質としません。他の案は支出と費用の時期又は前払いと未払いを混同しています。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q14",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "従業員が当期末まで働いた給与の未払分と、納品・取得済み備品の未払代金がある。本講の勘定体系に従う区別はどれですか。",
+              "options": [
+                "両方とも未払費用なので資産の取得は記録しない",
+                "給与は未収収益、備品代金は前払費用",
+                "どちらも支払いがないので帳簿に記録しない",
+                "給与の期間対応は未払費用、備品代金は未払金"
+              ],
+              "answer": 3,
+              "objectives": [
+                1
+              ],
+              "explanation": "継続役務の経過分と資産の取得代金を区別します。具体的な補助科目名が違う場合も、この性質の区別を確認します。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q15",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "保険契約を終了し、解約返金額の通知を受け、金額は確定したが未入金である。将来の保障を受ける権利は残らない。前払費用と未収入金のどちらの性質か、未収収益との違いも説明してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                1
+              ],
+              "input": "essay",
+              "modelAnswer": "確定した金銭の返還請求権なので未収入金の性質。将来保障の権利がないので前払費用ではない。継続的な役務を当社が提供したことによる当期の未収収益とも異なる。",
+              "explanation": "未入金という事実だけで未収収益に分類せず、権利が生じた原因を確認します。返金の税務上の処理はこの問の範囲外です。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "確定返金請求権を未収入金とする",
+                  "points": 1
+                },
+                {
+                  "criterion": "前払費用との将来役務の違いを示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "未収収益との発生原因の違いを示す",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q16",
+              "field": "boki",
+              "lesson": "zr2-boki-accrual-adjustments",
+              "prompt": "翌期の半年間にわたり提供する倉庫賃貸の賃料を、当期末までに先に受け取った。まだその半年の役務は提供していない。対応する経過勘定はどれですか。",
+              "options": [
+                "売掛金",
+                "前受収益",
+                "未収収益",
+                "未払費用"
+              ],
+              "answer": 1,
+              "objectives": [
+                1
+              ],
+              "explanation": "継続役務の対価を役務提供前に受け取った部分が前受収益です。未収収益と売掛金は請求権側、未払費用は当社が受けた役務の未払側なので向きが異なります。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q17",
+              "field": "boki",
+              "lesson": "zr2-boki-closing-accounts",
+              "prompt": "前期末に未払費用を計上し、翌期首に再振替した。担当者は「再振替をすると、前期に生じた費用が翌期の費用へ移る」と説明した。再振替と費用の期間帰属の関係を訂正してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                4
+              ],
+              "input": "essay",
+              "modelAnswer": "再振替は前期末整理の逆仕訳を翌期首に行う記帳方法。翌期の支払い等と組み合わせることで、前期分を翌期費用へ重ねず、翌期分だけを翌期の費用に残す。前期の確定した費用帰属を翌期へ移す処理ではない。",
+              "explanation": "再振替する場合としない場合で、適切な処理後の期間損益が一致することを確認します。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "期末整理の逆仕訳という記帳方法を説明する",
+                  "points": 1
+                },
+                {
+                  "criterion": "翌期支払と合わせ前期分を翌期へ重ねないと説明する",
+                  "points": 1
+                },
+                {
+                  "criterion": "前期費用を翌期へ移す説明を否定する",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q18",
+              "field": "boki",
+              "lesson": "zr2-boki-interest-present-value",
+              "prompt": "年率をそのまま一回の複利計算の率に使ったところ、利息を半年ごとに元本へ組み入れるという条件を落としていた。確認する組合せはどれですか。",
+              "options": [
+                "年率だけでよく、組入頻度は無関係",
+                "元本だけでよく、期間は無関係",
+                "利息は常に元本と同じ額にする",
+                "年率の表示方法、半年の期間利率、複利回数"
+              ],
+              "answer": 3,
+              "objectives": [
+                2
+              ],
+              "explanation": "半年複利なら期間に合う率と回数が必要です。実効年率と名目年率のどちらかも確認します。他の案は金利・期間の条件を無視します。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q19",
+              "field": "boki",
+              "lesson": "zr2-boki-interest-present-value",
+              "prompt": "貸倒DCFの問題で、通常の貸付発生時の約定利率5％と、条件緩和後の利率2％が並んでいる。将来回収額の見積りと割引率の関係はどれですか。",
+              "options": [
+                "当初5％で現金回収額を作り、2％で割り引く",
+                "二つの平均3.5％を根拠なく採用する",
+                "緩和後の元利回収額を見積もり、発生当初約定利率5％で割り引く",
+                "緩和後の利率2％を使えば当初の5％は不要"
+              ],
+              "answer": 2,
+              "objectives": [
+                4
+              ],
+              "explanation": "金額を決める条件と測定の率を区別します。購入債権なら取得当初の実効利率を使うなど、債権の発生形態も確認します。他の案は役割を取り違えています。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q20",
+              "field": "boki",
+              "lesson": "zr2-boki-interest-present-value",
+              "prompt": "固定資産の減損について、割引前の将来キャッシュ・フローで行う認識判定と、使用価値を計算する段階がある。「現在価値」という用語を使う段階を区別し、すべての段階を一つの割引計算に置き換えてよいか説明してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                4
+              ],
+              "input": "essay",
+              "modelAnswer": "損失認識の判定では割引前の将来CFを用い、使用価値の算定では将来CFの現在価値を用いる。測定の目的と適用条件が異なるので、両段階を一つの割引計算に置き換えない。",
+              "explanation": "利息・現価講で扱う測定目的の区別を確認する問題です。この問は減損兆候の全要件や回収可能価額全体の計算は求めません。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "認識判定が割引前であると示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "使用価値が現在価値であると示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "目的が違い一律に置換しないと説明する",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q21",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "売上の一部を現金で受け取った取引を、いったん全額掛売上としてから現金回収を記録する方式で伝票にする。入金伝票の相手科目として適切なのはどれですか。",
+              "options": [
+                "売掛金",
+                "売上",
+                "仕入",
+                "前払費用"
+              ],
+              "answer": 0,
+              "objectives": [
+                2
+              ],
+              "explanation": "この方式では売上は全額掛取引の伝票で計上済みで、入金伝票は売掛金の回収です。売上にすると同じ現金部分の売上を重ねます。他の科目は与件の取引原因に合いません。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q22",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "五伝票制で、現金仕入もいったん全額掛けとして記録する方式を採る。同じ商品購入45,000円について、仕入伝票に「仕入45,000円／買掛金45,000円」、出金伝票に「買掛金45,000円／現金45,000円」を記入した。正しい判断はどれですか。",
+              "options": [
+                "両伝票が必要で、買掛金は差引0円となり、仕入と現金支払を一回ずつ記録できる",
+                "同じ45,000円なので出金伝票を削除すればよい",
+                "仕入伝票だけを削除すれば商品取得が正しく記録される",
+                "両方の借方を仕入へ変えても損益は変わらない"
+              ],
+              "answer": 0,
+              "objectives": [
+                1,
+                2
+              ],
+              "explanation": "全額掛け方式では仕入と、買掛金の現金決済を二段階で記録します。出金伝票を削除すると現金支払が欠け、仕入伝票を削除すると商品取得が欠けます。両方の借方を仕入にすると90,000円を仕入計上し、買掛金45,000円も残る誤りになります。"
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q23",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "普通仕訳帳に伝票A14の備品代30,000円の支払い、特殊仕訳帳に伝票B25の消耗品代30,000円の支払いがある。証憑と支払記録を照合すると、別の購入・別の支払いをそれぞれ一回ずつ記録したものと確認できた。担当者は「同額だから重複」として30,000円を除こうとした。除くべき額と、重複という用語がこの二行に当てはまるかを理由とともに説明してください。 取引の同一性を確認する方法も一例示してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                4
+              ],
+              "input": "essay",
+              "modelAnswer": "除く額は0円。同じ30,000円でも、別の購入・別の支払いであり、それぞれ一回だけ記録されているので重複ではない。同一取引の余分な記録を見つけるために、証憑番号・取引内容・支払記録を対応させる。",
+              "explanation": "重複は金額の一致だけで判定しません。この与件で一行を消すと、実在する別取引を欠落させます。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "除く額0円を示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "別の実在取引を各一回記録しているので重複でないと説明する",
+                  "points": 1
+                },
+                {
+                  "criterion": "証憑番号や支払記録等を対照し、取引の同一性を確認する方法を一例示す",
+                  "points": 1
+                }
+              ]
+            },
+            {
+              "id": "zr2-boki-records-glossary-assessment-q24",
+              "field": "boki",
+              "lesson": "zr2-boki-books-vouchers",
+              "prompt": "銀行の入金明細に「取引先から120,000円」とだけ載っている。請求書や契約書はまだ見ていない。この証憑一つで売上・売掛金回収・借入金のどれかを確定できるか、追加で確認する資料の例を一つ以上示して説明してください。",
+              "options": [],
+              "answer": 0,
+              "objectives": [
+                4
+              ],
+              "input": "essay",
+              "modelAnswer": "入金の事実は確認できるが、取引原因まで一意に確定できない。対応する請求書・売掛金元帳・契約書などを確認し、新規販売、既存債権回収、借入れ等のどれかを判断する。",
+              "explanation": "証憑が示す事実の範囲と会計上の分類判断を区別します。入金元の名称だけで収益を断定しません。",
+              "points": 3,
+              "rubric": [
+                {
+                  "criterion": "入金だけでは原因を確定できないと説明する",
+                  "points": 1
+                },
+                {
+                  "criterion": "追加資料の具体例を示す",
+                  "points": 1
+                },
+                {
+                  "criterion": "収益・債権回収・負債発生の分類に結び付ける",
+                  "points": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     }

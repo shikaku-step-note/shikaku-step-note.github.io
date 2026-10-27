@@ -1,0 +1,581 @@
+{
+  "mappings": [
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "draftObjectiveNumber": 1,
+      "draftObjectiveText": "取引を資産・負債・純資産・収益・費用の増減に分ける",
+      "canonicalObjectiveIds": [
+        "zr2-boki-account-equation-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-account-equation-q1",
+        "zr2-boki-account-equation-q2",
+        "zr2-boki-account-equation-q5",
+        "zr2-boki-account-equation-q6",
+        "zr2-boki-account-equation-q9",
+        "zr2-boki-account-equation-q10"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-account-equation-ex1",
+        "zr2-boki-account-equation-ex2",
+        "zr2-boki-account-equation-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "draftObjectiveNumber": 2,
+      "draftObjectiveText": "複合取引を含む仕訳の借方貸方を決め、一致を確かめる",
+      "canonicalObjectiveIds": [
+        "zr2-boki-account-equation-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-account-equation-q1",
+        "zr2-boki-account-equation-q2",
+        "zr2-boki-account-equation-q5",
+        "zr2-boki-account-equation-q6",
+        "zr2-boki-account-equation-q10"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-account-equation-ex1",
+        "zr2-boki-account-equation-ex2",
+        "zr2-boki-account-equation-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "draftObjectiveNumber": 3,
+      "draftObjectiveText": "現金の増減と利益を区別し、売掛金・未払・借入元本で説明する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-account-equation-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-account-equation-q4",
+        "zr2-boki-account-equation-q5",
+        "zr2-boki-account-equation-q6",
+        "zr2-boki-account-equation-q8",
+        "zr2-boki-account-equation-q11"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-account-equation-ex1",
+        "zr2-boki-account-equation-ex2",
+        "zr2-boki-account-equation-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-account-equation",
+      "draftObjectiveNumber": 4,
+      "draftObjectiveText": "出資・配当その他の純資産変動を区別して純資産と利益を照合する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-account-equation-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-account-equation-q3",
+        "zr2-boki-account-equation-q7",
+        "zr2-boki-account-equation-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-account-equation-ex1",
+        "zr2-boki-account-equation-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "draftObjectiveNumber": 1,
+      "draftObjectiveText": "仕訳帳・総勘定元帳・補助簿の役割と対応を説明する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-journals-ledgers-o1",
+        "zr2-boki-journals-ledgers-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-journals-ledgers-q3",
+        "zr2-boki-journals-ledgers-q8",
+        "zr2-boki-journals-ledgers-q11",
+        "zr2-boki-journals-ledgers-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-journals-ledgers-ex1",
+        "zr2-boki-journals-ledgers-ex2",
+        "zr2-boki-journals-ledgers-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "draftObjectiveNumber": 2,
+      "draftObjectiveText": "複合仕訳を同じ借方貸方へ転記し期首と当期増減から残高を求める",
+      "canonicalObjectiveIds": [
+        "zr2-boki-journals-ledgers-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-journals-ledgers-q1",
+        "zr2-boki-journals-ledgers-q3",
+        "zr2-boki-journals-ledgers-q4",
+        "zr2-boki-journals-ledgers-q7",
+        "zr2-boki-journals-ledgers-q10",
+        "zr2-boki-journals-ledgers-q11",
+        "zr2-boki-journals-ledgers-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-journals-ledgers-ex1",
+        "zr2-boki-journals-ledgers-ex4",
+        "zr2-boki-journals-ledgers-ex5"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "draftObjectiveNumber": 3,
+      "draftObjectiveText": "顧客別・仕入先別の補助元帳を主要簿と照合する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-journals-ledgers-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-journals-ledgers-q2",
+        "zr2-boki-journals-ledgers-q5",
+        "zr2-boki-journals-ledgers-q6",
+        "zr2-boki-journals-ledgers-q9",
+        "zr2-boki-journals-ledgers-q10"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-journals-ledgers-ex2",
+        "zr2-boki-journals-ledgers-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-journals-ledgers",
+      "draftObjectiveNumber": 4,
+      "draftObjectiveText": "合計一致の限界を判断し誤記や未知の記入額を復元する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-journals-ledgers-o1",
+        "zr2-boki-journals-ledgers-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-journals-ledgers-q5",
+        "zr2-boki-journals-ledgers-q6",
+        "zr2-boki-journals-ledgers-q7",
+        "zr2-boki-journals-ledgers-q8",
+        "zr2-boki-journals-ledgers-q9"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-journals-ledgers-ex3",
+        "zr2-boki-journals-ledgers-ex5"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "draftObjectiveNumber": 1,
+      "draftObjectiveText": "合計・残高・合計残高試算表と集計段階を区別する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-trial-balance-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-trial-balance-q1",
+        "zr2-boki-trial-balance-q2",
+        "zr2-boki-trial-balance-q3",
+        "zr2-boki-trial-balance-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-trial-balance-ex1"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "draftObjectiveNumber": 2,
+      "draftObjectiveText": "元帳合計と残高を算定し全勘定の貸借を照合する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-trial-balance-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-trial-balance-q1",
+        "zr2-boki-trial-balance-q2",
+        "zr2-boki-trial-balance-q3",
+        "zr2-boki-trial-balance-q4",
+        "zr2-boki-trial-balance-q9"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-trial-balance-ex1",
+        "zr2-boki-trial-balance-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "draftObjectiveNumber": 3,
+      "draftObjectiveText": "不一致と訂正の影響を両側で計算し、仕訳と転記の誤りを分ける",
+      "canonicalObjectiveIds": [
+        "zr2-boki-trial-balance-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-trial-balance-q5",
+        "zr2-boki-trial-balance-q6",
+        "zr2-boki-trial-balance-q7",
+        "zr2-boki-trial-balance-q8",
+        "zr2-boki-trial-balance-q11",
+        "zr2-boki-trial-balance-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-trial-balance-ex2",
+        "zr2-boki-trial-balance-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-trial-balance",
+      "draftObjectiveNumber": 4,
+      "draftObjectiveText": "貸借一致の限界と未知額を確定する条件を説明する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-trial-balance-o1",
+        "zr2-boki-trial-balance-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-trial-balance-q6",
+        "zr2-boki-trial-balance-q9",
+        "zr2-boki-trial-balance-q10",
+        "zr2-boki-trial-balance-q11",
+        "zr2-boki-trial-balance-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-trial-balance-ex3",
+        "zr2-boki-trial-balance-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "draftObjectiveNumber": 1,
+      "draftObjectiveText": "決算整理・損益集計・帳簿締切の段階を区別する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-closing-accounts-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-closing-accounts-q1",
+        "zr2-boki-closing-accounts-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-closing-accounts-ex1"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "draftObjectiveNumber": 2,
+      "draftObjectiveText": "収益費用を損益へ集め利益損失を繰越利益剰余金へ振り替える",
+      "canonicalObjectiveIds": [
+        "zr2-boki-closing-accounts-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-closing-accounts-q1",
+        "zr2-boki-closing-accounts-q2",
+        "zr2-boki-closing-accounts-q3",
+        "zr2-boki-closing-accounts-q4",
+        "zr2-boki-closing-accounts-q10"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-closing-accounts-ex1",
+        "zr2-boki-closing-accounts-ex2"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "draftObjectiveNumber": 3,
+      "draftObjectiveText": "残高勘定と翌期開始を記録し、総額残高と決算書の純額を照合する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-closing-accounts-o1",
+        "zr2-boki-closing-accounts-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-closing-accounts-q5",
+        "zr2-boki-closing-accounts-q6",
+        "zr2-boki-closing-accounts-q7",
+        "zr2-boki-closing-accounts-q10",
+        "zr2-boki-closing-accounts-q11"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-closing-accounts-ex1",
+        "zr2-boki-closing-accounts-ex2",
+        "zr2-boki-closing-accounts-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-closing-accounts",
+      "draftObjectiveNumber": 4,
+      "draftObjectiveText": "再振替の有無を指定条件から読み、前期費用と当期費用を区別する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-closing-accounts-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-closing-accounts-q8",
+        "zr2-boki-closing-accounts-q9",
+        "zr2-boki-closing-accounts-q12"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-closing-accounts-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "draftObjectiveNumber": 1,
+      "draftObjectiveText": "役務提供と入出金の時点から四つの経過勘定を区別する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-accrual-adjustments-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-accrual-adjustments-q1",
+        "zr2-boki-accrual-adjustments-q2",
+        "zr2-boki-accrual-adjustments-q3",
+        "zr2-boki-accrual-adjustments-q4",
+        "zr2-boki-accrual-adjustments-q11",
+        "zr2-boki-accrual-adjustments-q13"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-accrual-adjustments-ex1",
+        "zr2-boki-accrual-adjustments-ex2",
+        "zr2-boki-accrual-adjustments-ex3",
+        "zr2-boki-accrual-adjustments-ex6"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "draftObjectiveNumber": 2,
+      "draftObjectiveText": "契約期間・単価変更・決算期変更から当期発生額と期末残高を計算する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-accrual-adjustments-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-accrual-adjustments-q1",
+        "zr2-boki-accrual-adjustments-q3",
+        "zr2-boki-accrual-adjustments-q6",
+        "zr2-boki-accrual-adjustments-q9",
+        "zr2-boki-accrual-adjustments-q13"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-accrual-adjustments-ex1",
+        "zr2-boki-accrual-adjustments-ex3",
+        "zr2-boki-accrual-adjustments-ex6"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "draftObjectiveNumber": 3,
+      "draftObjectiveText": "期首再振替の有無に合わせて決済と期末整理を記帳する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-accrual-adjustments-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-accrual-adjustments-q5",
+        "zr2-boki-accrual-adjustments-q7",
+        "zr2-boki-accrual-adjustments-q8",
+        "zr2-boki-accrual-adjustments-q9",
+        "zr2-boki-accrual-adjustments-q10"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-accrual-adjustments-ex1",
+        "zr2-boki-accrual-adjustments-ex2",
+        "zr2-boki-accrual-adjustments-ex3",
+        "zr2-boki-accrual-adjustments-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-accrual-adjustments",
+      "draftObjectiveNumber": 4,
+      "draftObjectiveText": "整理前残高との差額を仕訳し、利益・資産負債・現金の影響を照合する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-accrual-adjustments-o1",
+        "zr2-boki-accrual-adjustments-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-accrual-adjustments-q2",
+        "zr2-boki-accrual-adjustments-q5",
+        "zr2-boki-accrual-adjustments-q6",
+        "zr2-boki-accrual-adjustments-q8",
+        "zr2-boki-accrual-adjustments-q11",
+        "zr2-boki-accrual-adjustments-q12",
+        "zr2-boki-accrual-adjustments-q13"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-accrual-adjustments-ex4",
+        "zr2-boki-accrual-adjustments-ex5",
+        "zr2-boki-accrual-adjustments-ex6"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "draftObjectiveNumber": 1,
+      "draftObjectiveText": "期間・日数・途中の元本変動に応じた単利の発生額を求める",
+      "canonicalObjectiveIds": [
+        "zr2-boki-interest-present-value-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-interest-present-value-q1",
+        "zr2-boki-interest-present-value-q2",
+        "zr2-boki-interest-present-value-q3",
+        "zr2-boki-interest-present-value-q13"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-interest-present-value-ex1",
+        "zr2-boki-interest-present-value-ex5"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "draftObjectiveNumber": 2,
+      "draftObjectiveText": "複利の将来価値と現在価値を時間軸上で対応させる",
+      "canonicalObjectiveIds": [
+        "zr2-boki-interest-present-value-o1",
+        "zr2-boki-interest-present-value-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-interest-present-value-q4",
+        "zr2-boki-interest-present-value-q5",
+        "zr2-boki-interest-present-value-q6",
+        "zr2-boki-interest-present-value-q9",
+        "zr2-boki-interest-present-value-q10",
+        "zr2-boki-interest-present-value-q11",
+        "zr2-boki-interest-present-value-q14"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-interest-present-value-ex2",
+        "zr2-boki-interest-present-value-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "draftObjectiveNumber": 3,
+      "draftObjectiveText": "年初年末・不均等な受払額・最終処分額・端数処理を反映して現在価値を計算する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-interest-present-value-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-interest-present-value-q5",
+        "zr2-boki-interest-present-value-q6",
+        "zr2-boki-interest-present-value-q8",
+        "zr2-boki-interest-present-value-q9",
+        "zr2-boki-interest-present-value-q11",
+        "zr2-boki-interest-present-value-q14"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-interest-present-value-ex3",
+        "zr2-boki-interest-present-value-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-interest-present-value",
+      "draftObjectiveNumber": 4,
+      "draftObjectiveText": "割引する目的と適用基準を区別し、表面利率・実効利子率・当初約定利子率等を混同しない",
+      "canonicalObjectiveIds": [
+        "zr2-boki-interest-present-value-o3"
+      ],
+      "relationship": "maintained working-plan objective3 -> draft fine objective4; canonical production consolidation by root remains pending",
+      "questionIds": [
+        "zr2-boki-interest-present-value-q7",
+        "zr2-boki-interest-present-value-q12",
+        "zr2-boki-interest-present-value-q13"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-interest-present-value-ex2",
+        "zr2-boki-interest-present-value-ex4",
+        "zr2-boki-interest-present-value-ex5"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "draftObjectiveNumber": 1,
+      "draftObjectiveText": "主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-books-vouchers-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-books-vouchers-q1",
+        "zr2-boki-books-vouchers-q2",
+        "zr2-boki-books-vouchers-q7",
+        "zr2-boki-books-vouchers-q16"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-books-vouchers-ex1",
+        "zr2-boki-books-vouchers-ex3",
+        "zr2-boki-books-vouchers-ex4"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "draftObjectiveNumber": 2,
+      "draftObjectiveText": "一部現金取引を分割又は全額掛けとみなして起票し、二つの方法を混ぜない",
+      "canonicalObjectiveIds": [
+        "zr2-boki-books-vouchers-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-books-vouchers-q2",
+        "zr2-boki-books-vouchers-q3",
+        "zr2-boki-books-vouchers-q4",
+        "zr2-boki-books-vouchers-q5",
+        "zr2-boki-books-vouchers-q6",
+        "zr2-boki-books-vouchers-q7"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-books-vouchers-ex1",
+        "zr2-boki-books-vouchers-ex2",
+        "zr2-boki-books-vouchers-ex3"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "draftObjectiveNumber": 3,
+      "draftObjectiveText": "伝票日計表の借貸総額と特殊仕訳帳間の重複を整理して元帳へ一度ずつ反映する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-books-vouchers-o1"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-books-vouchers-q8",
+        "zr2-boki-books-vouchers-q9",
+        "zr2-boki-books-vouchers-q10",
+        "zr2-boki-books-vouchers-q11",
+        "zr2-boki-books-vouchers-q15"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-books-vouchers-ex4",
+        "zr2-boki-books-vouchers-ex5"
+      ]
+    },
+    {
+      "lessonId": "zr2-boki-books-vouchers",
+      "draftObjectiveNumber": 4,
+      "draftObjectiveText": "証憑・主要簿・補助簿の残高から未知取引を推定し、未記帳と記帳済みを区別して修正する",
+      "canonicalObjectiveIds": [
+        "zr2-boki-books-vouchers-o2"
+      ],
+      "relationship": "detail/supporting condition",
+      "questionIds": [
+        "zr2-boki-books-vouchers-q6",
+        "zr2-boki-books-vouchers-q12",
+        "zr2-boki-books-vouchers-q13",
+        "zr2-boki-books-vouchers-q14",
+        "zr2-boki-books-vouchers-q15",
+        "zr2-boki-books-vouchers-q16"
+      ],
+      "workedExampleIds": [
+        "zr2-boki-books-vouchers-ex2",
+        "zr2-boki-books-vouchers-ex6"
+      ]
+    }
+  ]
+}

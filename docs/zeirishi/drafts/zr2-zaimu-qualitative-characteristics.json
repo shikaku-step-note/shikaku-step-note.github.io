@@ -1,0 +1,437 @@
+{
+  "id": "zr2-zaimu-qualitative-characteristics",
+  "subject": "zaimu",
+  "title": "有用性・信頼性・内的整合性・比較可能性",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-zaimu-unit-framework",
+  "minutes": 120,
+  "prerequisites": [
+    "zr2-zaimu-purpose-regulation"
+  ],
+  "introductoryAlternative": "zr-zaimu-concepts",
+  "objectives": [
+    "有用性・関連性・信頼性と、それを支える特性の関係を説明する",
+    "見積りの根拠や偏りを、事例の具体的な事実から評価する",
+    "実質の同異を確認し、比較可能性と画一的な処理を区別する",
+    "基準体系の内的整合性と、期間を通じた手続の継続を区別する"
+  ],
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "publication": "draft",
+  "sourceCandidates": [
+    {
+      "id": "ac2-framework-pdf",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/begriff_20061228.pdf",
+      "location": "2006年12月討議資料、第二章1〜22項。PDF15〜20枚目（印刷8〜13頁）を全文確認。個別処理の計上指示として使わない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-exam-zaimu76",
+      "url": "https://www.nta.go.jp/taxes/zeirishi/zeirishishiken/shikenkekka/76/pdf/mondai_zaimu.pdf",
+      "location": "第76回、第一問問1、印刷B1〜B2（PDF3〜4枚目）。内的整合性の階層・前提・比較が実際に問われる範囲と要求水準を確認。出題文・選択肢を再利用しない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "各例は情報特性を検討する独自事例。引当金、収益、資産分類、方針変更の個別処理は各論で別途確認する。",
+    "将来シナリオの確率や修理率は学習用の設定であり、公式の評価率・出題配点ではない。"
+  ],
+  "glossary": [
+    {
+      "term": "意思決定有用性",
+      "definition": "投資家等の判断に有用な情報であるという中心の特性"
+    },
+    {
+      "term": "意思決定との関連性",
+      "definition": "情報が将来成果の予測等の判断に関わり貢献すること"
+    },
+    {
+      "term": "中立性",
+      "definition": "特定の当事者の望む結果へ偏って情報を作らないこと"
+    },
+    {
+      "term": "検証可能性",
+      "definition": "事実や資料を通じて測定や分類の根拠を確かめられること"
+    },
+    {
+      "term": "表現の忠実性",
+      "definition": "事実と会計上の項目の対応が明確であること"
+    },
+    {
+      "term": "内的整合性",
+      "definition": "個別基準と、それを含む会計基準体系の基本的な考え方との整合"
+    },
+    {
+      "term": "比較可能性",
+      "definition": "時系列や企業間で事実の同質性と異質性を読み分けられること"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-e1",
+      "section": "例題1：実績値と将来に関わる資料を併せて読む",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "weighted_sales": 810,
+        "probability_total": 100
+      }
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-e2",
+      "section": "例題2：都合のよい仮定だけを選ばない",
+      "objectives": [
+        1,
+        2
+      ],
+      "results": {
+        "P_cases": 12,
+        "Q_cases": 7,
+        "cost": 76,
+        "biased_cost": 20
+      }
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-e3",
+      "section": "例題3：同じ品名でも、取引の実質を確認する",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-e4",
+      "section": "例題4：数字の変化と測り方の変化を分ける",
+      "objectives": [
+        3
+      ],
+      "results": {
+        "reported_increase": 120,
+        "same_method_increase": 50,
+        "method_effect": 70
+      }
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-e5",
+      "section": "例題5：内的整合性と、処理の継続を区別する",
+      "objectives": [
+        4
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "討議資料の質的特性の整理として適切なものはどれですか。",
+      "options": [
+        "内的整合性は、信頼性の下位特性である中立性と全く同じ意味である",
+        "有用性は関連性と信頼性に支えられ、内的整合性と比較可能性がその基礎的条件となる",
+        "比較可能性だけを満たせば、判断との関連や信頼性は必要ない",
+        "継続している数値であれば、意思決定有用性は常に証明される"
+      ],
+      "answer": 1,
+      "explanation": "個々の特性の名称だけでなく関係を押さえます。内的整合性と比較可能性は一般的制約として整理され、1のように中立性へ置き換えられません。3と4は一つの事情だけで有用性を無条件に決める誤りです。",
+      "objectives": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "翌期売上の分析用シナリオを、500万円40%、800万円40%、1,100万円20%とする。加重平均を万円単位で求めてください。この値を当期収益へ計上する問題ではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "740"
+      ],
+      "explanation": "500×0.4＋800×0.4＋1,100×0.2＝200＋320＋220＝740万円。確率合計は100%です。平均値は結果の保証ではなく、仮定に依存する分析値であり、幅と前提も確認します。",
+      "objectives": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "会社Gが、重要顧客の契約終了を説明せず、過去の売上だけを示した。一方、新規顧客の獲得予測には契約書等の裏付けがなく、担当者の希望だけが使われている。二つの情報の問題を、関連性と信頼性を用いて区別し、追加確認する資料を一例示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "契約終了の事実は将来の成果を考える材料となるため、過去売上だけでは関連する事情が伝わらないおそれがある。希望だけの獲得予測は、その根拠を確かめられず信頼性に問題がある。契約書、商談や受注記録、進捗に対応した根拠等を確認する。",
+      "rubric": [
+        {
+          "criterion": "契約終了の情報と判断との関連を具体的に説明する",
+          "points": 2
+        },
+        {
+          "criterion": "希望だけの予測の信頼性の問題を説明する",
+          "points": 2
+        },
+        {
+          "criterion": "根拠を調べる資料を一例挙げる",
+          "points": 1
+        }
+      ],
+      "explanation": "将来に関係するという理由だけで全ての予測を信頼できるわけではなく、確定した過去数値だけで必要情報が十分になるともいえません。",
+      "objectives": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "実績と異なる見積率を用いる行為のうち、中立性の問題が最も明確なものはどれですか。",
+      "options": [
+        "契約条件が変わったため、証拠を確認して影響を検討した",
+        "製品改良の実績を調べ、見積りの変更理由を文書化した",
+        "利益目標に合う額から逆算し、根拠のない低い率を採用した",
+        "前年の見積りと実績の差を調べ、誤差の原因を検討した"
+      ],
+      "answer": 2,
+      "explanation": "望む利益から見積率を逆算すると、特定の結果へ誘導する偏りが生じます。率が変わったことだけで不適切とはいえず、1・2・4のような条件や資料の確認が必要です。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "製品Rは過去400台中12台、Sは過去250台中10台で対象修理があった。単純分析として各実績率を次期予定R300台・S150台へ当てはめる。1件5万円なら分析用費用は合計何万円ですか。引当金の計上可否・金額そのものは問わない。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "75"
+      ],
+      "explanation": "Rは12÷400＝3%、300×3%＝9件。Sは10÷250＝4%、150×4%＝6件。合計15件×5万円＝75万円。二つの実績率を根拠なく平均して全台数へ使わず、指定した製品別の条件で計算します。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "見積りの最終額は合理的に見えるが、使用した元データと仮定を保存していない。担当者は「合計額が他社に近いので問題ない」と述べた。検証可能性の観点から問題点と改善する資料の残し方を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "他社の結果に近いことだけでは、その会社の事実と仮定から数値を確かめられない。元データ、集計対象、採用した率や期間、変更理由、計算過程を残し、結果へたどれるようにする必要がある。",
+      "rubric": [
+        {
+          "criterion": "他社結果との近さと根拠の検証を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "元データ・仮定・計算又は変更理由をたどれる記録を提案する",
+          "points": 2
+        }
+      ],
+      "explanation": "同じ結果になったという外見だけで信頼性を認めず、その結果を生む事実と手順を点検します。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "同型の機器を、一方は顧客へ販売するため、他方は社内で長期使用するために保有している。比較可能性について適切なものはどれですか。",
+      "options": [
+        "品名が同じなので、保有目的による分類の相違は一切認められない",
+        "実質の違いを明らかにする分類が、利用者の比較を助ける場合がある",
+        "保有目的を口頭で宣言すれば、適用する基準に関係なく自由に処理できる",
+        "会社が違えば、同じ実質の取引でも必ず異なる処理を採用する"
+      ],
+      "answer": 1,
+      "explanation": "比較するためには、利用者が実質の同じ部分と異なる部分を読み分けられる必要があります。1は画一性との混同、3は証拠・個別規定の無視、4は会社が違うというだけで実質も異なるとする誤りです。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "二社が法的に異なる名称の契約を結んでいる。担当者は「名称が違うから必ず異なる会計処理」と述べた。比較可能性の観点から、処理を決める前に確認することと、名称だけでは判断できない理由を説明してください。個別の契約分類の結論を出す必要はありません。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "権利義務、資金が生じる時期や不確実性など、契約の実質と適用する個別規定を確認する。法的な名称が違っても実質が同じ場合があり、名称の違いだけで処理の差を決めると、同じ実質を比較しにくくするおそれがある。",
+      "rubric": [
+        {
+          "criterion": "権利義務等の実質と適用規定の確認を示す",
+          "points": 2
+        },
+        {
+          "criterion": "異なる名称でも同じ実質の場合がある理由を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "利用者による比較への影響を述べる",
+          "points": 1
+        }
+      ],
+      "explanation": "実質優先という語だけで契約条項を読まずに結論を出すのではなく、事実を確認する手順を答えます。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "前期利益620万円、当期報告利益780万円、当期を前期と同じ測定方法にした分析用利益705万円とする。ほかの比較条件は同じ。報告値の増加160万円のうち、当期の測定方法による差額は何万円ですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "75"
+      ],
+      "explanation": "780−705＝75万円です。同じ方法による増加は705−620＝85万円、85＋75＝160万円で照合できます。これだけで変更の適法性や会社全体の業績改善を断定する問題ではありません。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "会計方法を変更した会社が、利用者への説明を省き「同じ欄に前年と今年の金額を並べれば比較可能」と述べた。報告様式と測定方法の二つを区別して説明してください。遡及処理の具体的な仕訳は不要です。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "様式をそろえることは比較の助けになるが、同じ欄の金額でも測定方法が変われば差額の意味が変わる。利用者が期間の変化を理解できるよう、適用する基準に従った変更情報や必要な比較情報を確認する。",
+      "rubric": [
+        {
+          "criterion": "様式が同じでも測定方法の違いが残ることを示す",
+          "points": 2
+        },
+        {
+          "criterion": "変更情報・比較情報と利用者の理解を結ぶ",
+          "points": 2
+        }
+      ],
+      "explanation": "画面上の並びが同じことと、事実の同質性・異質性が読み取れることを分けます。変更処理自体は専用の講で扱います。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "内的整合性を検討する行為として最も適切なものはどれですか。",
+      "options": [
+        "会社が誤った処理を10年間続けたので、その継続年数をもって正しいと判断する",
+        "新取引に関する個別基準案を、基準体系を支える考え方や経験的知識と照らす",
+        "前期と同じ書式を用いたので、全ての情報の有用性が確定したとする",
+        "討議資料の一語に合うので、ほかの基準体系や実務経験は全て無視する"
+      ],
+      "answer": 1,
+      "explanation": "内的整合性は個別基準と体系の関係を扱います。単に手続を続けることや形式をそろえることと同じではなく、参照枠は明文化された一語だけに尽きません。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "「会計手続を毎期変えずに用いれば、その事実だけで基準体系との内的整合性も全て満たす」という主張を訂正してください。二つの観点の対象を明示して答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "毎期同じ手続を使うことは期間を通じた首尾一貫性の観点である。内的整合性は個別基準と基準体系を支える基本的な考え方との整合を扱う。同じ処理を続けても、それが適用基準に反するなら継続の事実だけで正しくはならない。",
+      "rubric": [
+        {
+          "criterion": "手続の期間的な継続を特定する",
+          "points": 1
+        },
+        {
+          "criterion": "個別基準と体系の関係を特定する",
+          "points": 2
+        },
+        {
+          "criterion": "継続だけでは十分でない理由を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "二つの用語の対象を示すと、単なる否定から理由を伴う答案になります。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "既存の体系が有用な情報を生むという合意が大きく揺らいだときにも、「以前の体系に合うので新しい基準案は有用」と結論してよいですか。内的整合性による推定の前提と、見直しの必要性を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "そのように無条件では結論できない。既存体系の有用性への合意が、内的整合性から有用性を間接的に推定する前提となる。環境や考え方が変わって合意が成り立たないなら、基礎概念や体系自体の見直しも検討する。慣行の維持を最終目的にしない。",
+      "rubric": [
+        {
+          "criterion": "推定に必要な既存体系の有用性への合意を示す",
+          "points": 2
+        },
+        {
+          "criterion": "合意が崩れた場合の体系・概念の見直しを示す",
+          "points": 2
+        }
+      ],
+      "explanation": "これは企業が現行の適用基準を一方的に無視できるという意味ではなく、基準体系を評価する際の前提についての説明です。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-qualitative-characteristics-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-qualitative-characteristics",
+      "prompt": "会社Hの分析資料は将来の取引に関係するが、担当者以外は根拠を確認できない。別案は確実な古い数値だけで、今期の重要な変化を含まない。「関連性か信頼性の一方を選べば十分」という意見を、両特性を同時に満たせる場合とトレードオフが生じる場合を区別して評価し、改善の方向を一つ示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "一方だけで有用性を判断せず、関連性と信頼性を併せて検討する必要がある。両者が同時に高まる場合も、見積り等で一方を高めると他方が弱まる場合もある。本例では、重要な変化に関連する情報を、元データや仮定・不確実性を示して確かめられる形にする改善が考えられる。",
+      "rubric": [
+        {
+          "criterion": "両特性の検討が必要と説明する",
+          "points": 2
+        },
+        {
+          "criterion": "同時充足とトレードオフの可能性を区別する",
+          "points": 1
+        },
+        {
+          "criterion": "関連する情報と根拠を結ぶ改善を示す",
+          "points": 2
+        }
+      ],
+      "explanation": "資料の量だけを増やすのではなく、利用目的に関係する内容と、それを信頼できる理由を組み合わせます。",
+      "objectives": [
+        1,
+        2
+      ]
+    }
+  ]
+}

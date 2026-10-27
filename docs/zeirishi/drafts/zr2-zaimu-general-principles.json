@@ -1,0 +1,455 @@
+{
+  "id": "zr2-zaimu-general-principles",
+  "subject": "zaimu",
+  "title": "企業会計原則と個別基準",
+  "stage": "基礎から標準へ",
+  "moduleId": "zr2-zaimu-unit-framework",
+  "minutes": 120,
+  "prerequisites": [
+    "zr2-zaimu-elements"
+  ],
+  "introductoryAlternative": "zr-zaimu-concepts",
+  "objectives": [
+    "真実性・正規の簿記・資本損益の区別を取引と帳簿の事実へ当てはめる",
+    "明瞭性と総額表示から、利益が同じでも情報が異なる理由を説明する",
+    "継続性・保守主義の趣旨と限界を、変更理由・見積り条件から判断する",
+    "単一性と重要性を、目的別調整・集積額・項目の性質へ当てはめる"
+  ],
+  "publication": "draft",
+  "sourceReview": "pending",
+  "factualReview": "pending",
+  "japaneseReview": "pending",
+  "sourceCandidates": [
+    {
+      "id": "accounting-principles",
+      "url": "https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=81",
+      "location": "企業会計原則・同注解、1982年4月20日最終改正。一般原則一〜七、損益計算書原則一A〜C、注解1・1-2・2・3・4を原文確認。旧文書の個別取引処理を後の基準に優先させない",
+      "verified": "2026-10-27"
+    },
+    {
+      "id": "ac2-oci",
+      "url": "https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_18.pdf",
+      "location": "包括利益基準25号・2025年10月16日修正反映版1〜2項。表示の個別規定が異なる取扱いを定める場合の規範関係の参照。認識測定の個別条件を一般原則だけで置き換えない",
+      "verified": "2026-10-27"
+    }
+  ],
+  "sourceUncertainties": [
+    "方法が認められること、引当金80万円が適正であること、税務加減算等は学習用の明示条件。実際の方法選択・税務認否・引当金計算は各論へ引き継ぐ。",
+    "20%等は例題の影響割合であり、法定の重要性基準・試験の採点基準として扱わない。"
+  ],
+  "glossary": [
+    {
+      "term": "正規の簿記",
+      "definition": "正確な会計記録を作成し、取引・証拠・集計を財務報告へ結び付ける考え方"
+    },
+    {
+      "term": "明瞭性",
+      "definition": "利用者が必要な会計事実や区分を理解し、判断を誤らないように表示すること"
+    },
+    {
+      "term": "継続性",
+      "definition": "原則や手続を毎期継続し、正当な理由なく変更しない考え方"
+    },
+    {
+      "term": "保守主義",
+      "definition": "将来の危険へ慎重に対処しつつ、過度に悲観的な処理で報告を歪めない考え方"
+    },
+    {
+      "term": "単一性",
+      "definition": "目的や様式が違う書類でも、信頼できる記録と事実を基礎にする考え方"
+    },
+    {
+      "term": "重要性",
+      "definition": "利用者の判断への影響を考え、乏しい項目の簡便処理等を検討する考え方。金額の集積や性質も確認する"
+    }
+  ],
+  "workedExamples": [
+    {
+      "id": "zr2-zaimu-general-principles-e1",
+      "section": "例題1：数字の違いを、操作と即断しない",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "Aprofit": 180,
+        "Bprofit": 210,
+        "difference": 30
+      }
+    },
+    {
+      "id": "zr2-zaimu-general-principles-capital",
+      "section": "資金調達と売上を、仕訳へ分ける",
+      "objectives": [
+        1
+      ],
+      "results": {
+        "capital": 300,
+        "loan": 200,
+        "sales": 120
+      }
+    },
+    {
+      "id": "zr2-zaimu-general-principles-e2",
+      "section": "例題2：利益が同じでも、情報は同じか",
+      "objectives": [
+        2
+      ],
+      "results": {
+        "grossProfit": 650,
+        "operatingProfit": 450
+      }
+    },
+    {
+      "id": "zr2-zaimu-general-principles-e3",
+      "section": "例題3：利益を調整する目的だけで変更する",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-e4",
+      "section": "例題4：慎重という言葉で、見積りを上乗せする",
+      "objectives": [
+        3
+      ],
+      "results": {
+        "excess": 60
+      }
+    },
+    {
+      "id": "zr2-zaimu-general-principles-e5",
+      "section": "例題5：調整表を作ることと、別の事実を書くこと",
+      "objectives": [
+        4
+      ],
+      "results": {
+        "bookProfit": 500,
+        "adjusted": 560
+      }
+    },
+    {
+      "id": "zr2-zaimu-general-principles-e6",
+      "section": "例題6：小さい額が、合計では大きくなる",
+      "objectives": [
+        4
+      ],
+      "results": {
+        "totalOmission": 160,
+        "percentage": 20
+      }
+    }
+  ],
+  "questions": [
+    {
+      "id": "zr2-zaimu-general-principles-q1",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "適用基準で認められ、各社の条件に適合した二つの処理方法から、異なる利益額が算定された。真実性について適切な評価はどれですか。",
+      "options": [
+        "金額が違うという事実だけで、一方の会社の虚偽が確定する",
+        "認められた方法と適用事実を確認し、根拠のある差と操作を区別する",
+        "方法が複数あるので、全ての会社が利益額を自由に選べる",
+        "両社の利益を平均し、その金額へ書き直せば常に真実になる"
+      ],
+      "answer": 1,
+      "explanation": "会計上必要な方法・見積りによる差と、事実を歪める操作は別です。1は結果だけで判断し、3と4は対象条件や認められた手続を無視しています。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q2",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "実際の買掛金支払70,000円を、給与70,000円／現金70,000円と誤って記帳した。担当者は「借貸一致しているから正規の簿記として問題ない」と述べた。誤りが費用・買掛金に及ぼす影響と、調べる資料を示してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "本来は買掛金70,000円／現金70,000円であり、誤処理では費用が70,000円多く、買掛金も70,000円多く残る。左右一致だけで取引の分類は保証されない。仕入先請求書、支払明細、買掛金元帳等を対応させて確認する。",
+      "rubric": [
+        {
+          "criterion": "費用と買掛金が各70,000円過大と示す",
+          "points": 2
+        },
+        {
+          "criterion": "借貸一致だけでは分類の正しさを示さないと説明する",
+          "points": 1
+        },
+        {
+          "criterion": "取引内容をたどれる資料を一つ以上挙げる",
+          "points": 1
+        }
+      ],
+      "explanation": "帳簿の形が整っていることと、中身が取引に合っていることを分けます。修正が必要なら買掛金／給与で分類を直し、現金を追加で減らしません。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q3",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "会社Hが全額資本金とする払込み800,000円、銀行借入200,000円、掛売上240,000円を記録する。適切な区別はどれですか。",
+      "options": [
+        "売上は資金の動きを合算した1,240,000円である",
+        "払込みと売上はどちらも利益剰余金へ直接記録する",
+        "払込みは資本、借入は負債、掛売上は売掛金と収益へ区分する",
+        "掛売上は現金未収なので資産も収益も必ずゼロにする"
+      ],
+      "answer": 2,
+      "explanation": "資金調達や負債の発生を、営業の成果と混同しません。掛売上は適用する認識条件を満たして記録する取引として与えられています。1・2は資本等と損益の混同、4は現金受取だけへ置き換える誤りです。",
+      "objectives": [
+        1
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q4",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "総額表示をすべき取引について、売上1,400万円、原価560万円、販管費300万円がある。担当者が原価と売上を相殺して売上840万円・原価ゼロとした。正しい売上総利益・営業利益を求め、最終利益が同じでも提案が不適切な理由を説明してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 5,
+      "modelAnswer": "売上総利益1,400−560＝840万円、営業利益840−300＝540万円。提案でも最終利益は540万円だが、売上規模と原価の情報が消え、与件の総額表示にも反する。利益総額だけで表示の適切さは判断できない。",
+      "rubric": [
+        {
+          "criterion": "売上総利益840万円・営業利益540万円を求める",
+          "points": 2
+        },
+        {
+          "criterion": "売上・原価の情報が消えることを示す",
+          "points": 2
+        },
+        {
+          "criterion": "総額表示という与件との不整合を説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "相殺しても変わらない数値と、相殺で失われる数値の両方を確認します。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q5",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "総額表示すべき売上1,200万円と原価300万円を相殺し、差額900万円だけを売上へ表示した。売上の過少表示額を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "300"
+      ],
+      "explanation": "正しい売上1,200−表示900＝300万円です。利益が一致していても、売上と原価の規模は各300万円少なく表示されています。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q6",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "個別の収益認識基準に本人・代理人の判定が定められている取引で、「企業会計原則に総額とあるから、契約条件を読まず全額を当社売上へ入れればよい」という主張を評価してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "一般原則の名称だけで対象取引の個別規定を置き換えることはできない。適用基準と契約上の権利義務を確認し、本人・代理人等の判定に従って収益の範囲を定める必要がある。本講の総額例は総額表示すべきという明示条件に基づく。",
+      "rubric": [
+        {
+          "criterion": "対象の個別基準・契約条件を確認すると示す",
+          "points": 2
+        },
+        {
+          "criterion": "一般的な総額の説明だけで処理を決めない理由を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "具体的な本人・代理人の判定は収益認識の各論で学びます。ここでは一般論を適用範囲の確認なしに広げないことを評価します。",
+      "objectives": [
+        2
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q7",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "二つの選択方法が認められる会計処理について、継続性の趣旨に合うものはどれですか。",
+      "options": [
+        "選択可能なら、利益目標に合わせて毎期自由に交互選択できる",
+        "正当な変更理由等を確かめ、理由のない変更と必要な変更を分ける",
+        "一度使った方法は、基準改正があっても永久に変更できない",
+        "注記さえあれば、正当な理由を検討する必要はない"
+      ],
+      "answer": 1,
+      "explanation": "変更が一切禁止されるわけではありませんが、単に有利な利益額を選ぶための変更は問題です。変更の処理や開示は対象となる基準に従います。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q8",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "会社Iは今年だけ利益を50万円増やす目的で方法を変更し、翌年は戻す予定である。新しい事実や基準適用等の変更理由はない。「選べる方法なので問題ない」という説明に対し、比較と変更理由の観点から答えてください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "方法の選択が認められることだけでは、毎期の都合のよい変更を正当化できない。理由のない方法変更は、利益の変化が事業か測定方法かを読み取りにくくする。正当な理由や適用する変更規定を確認する必要があり、示された利益調整目的だけでは不十分である。",
+      "rubric": [
+        {
+          "criterion": "選択可能性と変更の正当性を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "期間比較への影響を説明する",
+          "points": 1
+        },
+        {
+          "criterion": "利益調整以外の正当な理由等の確認を示す",
+          "points": 1
+        }
+      ],
+      "explanation": "前の講の比較可能性と、一般原則の継続性を関連付ける問題です。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q9",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "適用基準に従って合理的に算定済みの引当金45万円を、追加根拠なく75万円にした。税効果等がなければ、正しい処理に比べた当期利益の過少額を万円単位で求めてください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "30"
+      ],
+      "explanation": "75−45＝30万円を余分に費用化するため、利益は30万円少なくなります。負債は30万円多く、純資産は30万円少なくなります。慎重という名称だけではこの上乗せは正当化できません。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q10",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "担当者は「保守主義なら、合理的な範囲を超えても利益が最小になる見積りがよい」と主張する。慎重な判断の必要性と、その限界の両方から訂正してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "将来の危険には慎重な判断が必要だが、過度に保守的な処理で財政状態や業績を歪めてはならない。適用基準の条件や利用できる証拠に基づく見積りを行い、根拠なく費用や負債を上乗せして利益を最小化することを目的にしない。",
+      "rubric": [
+        {
+          "criterion": "不確実性への慎重な判断の必要性を述べる",
+          "points": 1
+        },
+        {
+          "criterion": "過度な保守で報告を歪めない限界を述べる",
+          "points": 2
+        },
+        {
+          "criterion": "基準条件・証拠の確認へ結ぶ",
+          "points": 1
+        }
+      ],
+      "explanation": "保守主義を過少利益の製造ルールへ置き換えないことを確認します。",
+      "objectives": [
+        3
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q11",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "会計利益630万円に、与件の税務加算90万円・減算25万円を調整した。調整後の額を求め、書類の数値が違うだけで単一性違反になるかを理由とともに説明してください。税務認否は与件どおりとします。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "調整後は630＋90−25＝695万円。信頼できる同じ会計記録から、目的に応じた正当な調整を明示した結果であれば、数値の違いだけで違反とはいえない。共通する事実を変えず、差額の根拠をたどれることが必要である。",
+      "rubric": [
+        {
+          "criterion": "695万円を求める",
+          "points": 1
+        },
+        {
+          "criterion": "制度上の調整と事実の改変を区別する",
+          "points": 2
+        },
+        {
+          "criterion": "差額の根拠がたどれることを説明する",
+          "points": 1
+        }
+      ],
+      "explanation": "同じ名称の利益を目的別に捏造する場合と、異なる計算目的の調整結果を示す場合を分けます。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q12",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "目的別の財務書類と単一性について適切なものはどれですか。",
+      "options": [
+        "銀行用だけ架空売上を足しても、税務帳簿へ反映しなければ問題ない",
+        "書類の枚数を一枚にすれば、どのような記録でも単一性を満たす",
+        "目的別の必要な形式や調整が違っても、信頼できる共通の記録と事実を基礎にする",
+        "形式が違う書類を作ることは、常に禁止される"
+      ],
+      "answer": 2,
+      "explanation": "単一性は枚数や様式の同一性だけを求めるものではありません。融資等の目的に合わせて事実を変える1は、形式差の問題にはできません。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q13",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "当期費用の未計上が1件3,000円で600件ある。適正な処理前の利益は900万円。集計した未計上額はこの利益の何%ですか。数値だけを入力してください。法定の重要性基準を求める問題ではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "20"
+      ],
+      "explanation": "3,000×600＝1,800,000円＝180万円、180÷900×100＝20%です。一件の小額だけで合計影響を無視できるとはいえません。この割合そのものを全社共通の基準にしないようにします。",
+      "objectives": [
+        4
+      ]
+    },
+    {
+      "id": "zr2-zaimu-general-principles-q14",
+      "field": "zaimu",
+      "lesson": "zr2-zaimu-general-principles",
+      "prompt": "問題が「金額の重要性は考慮せず、指定の処理を行う」としている。受講者が自分で1万円未満を省略基準とし、未払費用8,000円を計上しなかった。問題の条件と重要性の考え方から、この解答を評価してください。",
+      "options": [],
+      "answer": 0,
+      "input": "essay",
+      "points": 4,
+      "modelAnswer": "重要性を考慮しないという明示条件に反するため、省略できない。重要性は利用者への影響、項目の集積や性質、対象基準等を考えるもので、任意に1万円という一律基準を作ることではない。この問では指定条件に従って8,000円を処理する。",
+      "rubric": [
+        {
+          "criterion": "明示条件に従って省略できないと示す",
+          "points": 2
+        },
+        {
+          "criterion": "独自の一律基準で置き換えない理由を説明する",
+          "points": 2
+        }
+      ],
+      "explanation": "簡便処理の考え方を知っていても、問題の与件を変更しないことが必要です。",
+      "objectives": [
+        4
+      ]
+    }
+  ]
+}

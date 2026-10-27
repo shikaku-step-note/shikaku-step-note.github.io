@@ -222,7 +222,7 @@
       "id": "zr2-kokuzei-framework-q9",
       "field": "kokuzei",
       "lesson": "zr2-kokuzei-framework",
-      "prompt": "甲社は乙に対し売掛金60万円を持ち、国税40万円を滞納している。乙は国税を滞納していない。「乙に60万円の現金があるので、甲社の財産として乙の現金を差し押さえる」とする説明を、財産の帰属と当事者の立場から訂正してください。",
+      "prompt": "甲社は乙に対し売掛金60万円を持ち、国税40万円を滞納している。乙は国税を滞納していない。「乙に60万円の現金があるので、甲社の財産として乙の現金を差し押さえる」とする説明を、財産の帰属と当事者の立場から訂正してください。 また、この資料だけで60万円全額の取立てを決定できるか、未納額と弁済期等の追加確認の要否も述べてください。",
       "options": [],
       "answer": 0,
       "input": "essay",
@@ -671,7 +671,7 @@
         "zr2-kokuzei-statutory-dates",
         "zr2-kokuzei-priority-general"
       ],
-      "status": "planned_not_authored; not_counted_as_taught_by_this_draft"
+      "status": "authored_draft_pending_independent_review"
     },
     {
       "competency": "第二次義務の要件・各責任限度",
