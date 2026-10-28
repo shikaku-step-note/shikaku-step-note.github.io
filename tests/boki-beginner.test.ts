@@ -27,7 +27,12 @@ test('all current scope is mapped to detailed teaching and independently assesse
   for(const row of rows){
     const id=row.data.stableId;
     assert.equal(row.data.objectives.length,3,id);
-    assert.ok(row.body.replace(/https?:\/\/\S+/g,'').length>=4500,id);
+    // A prose guard, not a claim that character count proves educational completeness.
+    // Ignore CRLF/LF, markup and link text so Windows and Linux measure the same content.
+    const teaching=row.body.split(/###? 公式資料/)[0]!.replace(/\r\n/g,'\n')
+      .replace(/^#{1,6}[^\n]*$/gm,'').replace(/<[^>]*>/g,'')
+      .replace(/\[[^\]]*\]\([^)]*\)/g,'').replace(/\s/g,'');
+    assert.ok(teaching.length>=3500,`${id}: substantive teaching text`);
     for(let i=1;i<=3;i++){
       assert.ok(row.body.includes(`id="objective-${i}"`),`${id}: objective ${i}`);
       assert.ok(row.body.includes(`id="worked-${i}"`),`${id}: worked ${i}`);
