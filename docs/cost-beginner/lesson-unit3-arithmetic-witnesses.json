@@ -1,0 +1,232 @@
+[
+  {
+    "id": "cb2-wip-q01",
+    "formula": "36000+224000-58000",
+    "value": 202000
+  },
+  {
+    "id": "cb2-wip-q03",
+    "formula": "17000+92000+76000+44000-29000",
+    "value": 200000
+  },
+  {
+    "id": "cb2-wip-q05",
+    "formula": "10*900+4*(1700+500)",
+    "value": 17800
+  },
+  {
+    "id": "cb2-wip-q06",
+    "formula": "6000+4000+(3+2)*(2000+400)",
+    "value": 22000
+  },
+  {
+    "id": "cb2-wip-q07",
+    "formula": "27000",
+    "value": 27000
+  },
+  {
+    "id": "cb2-wip-q09",
+    "formula": "246000+54000-42000",
+    "value": 258000
+  },
+  {
+    "id": "cb2-wip-q10",
+    "formula": "35000+185000-198000",
+    "value": 22000
+  },
+  {
+    "id": "cb2-wip-q11",
+    "formula": "210000+32000-218000",
+    "value": 24000
+  },
+  {
+    "id": "cb2-wip-q12",
+    "formula": "28000+186000+214000-36000",
+    "value": 392000
+  },
+  {
+    "id": "cb2-finished-q01",
+    "formula": "26000+184000-38000",
+    "value": 172000
+  },
+  {
+    "id": "cb2-finished-q03",
+    "formula": "18000+193000-31000",
+    "value": 180000
+  },
+  {
+    "id": "cb2-finished-q05",
+    "formula": "315000/450",
+    "value": 700.0
+  },
+  {
+    "id": "cb2-finished-q06",
+    "formula": "(240-192)*(300000/240)",
+    "value": 60000.0
+  },
+  {
+    "id": "cb2-finished-q07",
+    "formula": "140*(216000/180)",
+    "value": 168000.0
+  },
+  {
+    "id": "cb2-finished-q09",
+    "formula": "248000+54000-42000",
+    "value": 260000
+  },
+  {
+    "id": "cb2-finished-q10",
+    "formula": "35+145-152",
+    "value": 28
+  },
+  {
+    "id": "cb2-finished-q11",
+    "formula": "118+22-125",
+    "value": 15
+  },
+  {
+    "id": "cb2-finished-q12",
+    "formula": "24000+286000-40000+18000-32000",
+    "value": 256000
+  },
+  {
+    "id": "cb2-finished-q13",
+    "formula": "25000+15000+340000-35000-45000",
+    "value": 300000
+  },
+  {
+    "id": "cb2-pnl-q03",
+    "formula": "135000+95000+50000",
+    "value": 280000
+  },
+  {
+    "id": "cb2-pnl-q05",
+    "formula": "720000-432000",
+    "value": 288000
+  },
+  {
+    "id": "cb2-pnl-q06",
+    "formula": "580000-348000-52000-68000",
+    "value": 112000
+  },
+  {
+    "id": "cb2-pnl-q07",
+    "formula": "690000-414000-126000",
+    "value": 150000
+  },
+  {
+    "id": "cb2-pnl-q08",
+    "formula": "625000-225000",
+    "value": 400000
+  },
+  {
+    "id": "cb2-pnl-q09",
+    "formula": "196000/560000*100",
+    "value": 35.0
+  },
+  {
+    "id": "cb2-pnl-q10",
+    "formula": "390000-273000-141000",
+    "value": -24000
+  },
+  {
+    "id": "cb2-pnl-q13",
+    "formula": "480000-(15000+265000-25000+30000-45000)-98000",
+    "value": 142000
+  },
+  {
+    "id": "cb2-product-profit-q01",
+    "formula": "63000+35*1400+8000+35*900",
+    "value": 151500
+  },
+  {
+    "id": "cb2-product-profit-q02",
+    "formula": "84000*45/(45+75)",
+    "value": 31500.0
+  },
+  {
+    "id": "cb2-product-profit-q03",
+    "formula": "115000+85000+60000",
+    "value": 260000
+  },
+  {
+    "id": "cb2-product-profit-q05",
+    "formula": "210*1500-210*(225000/250)",
+    "value": 126000.0
+  },
+  {
+    "id": "cb2-product-profit-q06",
+    "formula": "72000-30000*180000/(180000+120000)",
+    "value": 54000.0
+  },
+  {
+    "id": "cb2-product-profit-q07",
+    "formula": "58000-9000-36000/3",
+    "value": 37000.0
+  },
+  {
+    "id": "cb2-product-profit-q08",
+    "formula": "420000-(180000+120000-27000-18000)-65000",
+    "value": 100000
+  },
+  {
+    "id": "cb2-product-profit-q10",
+    "formula": "90000+60000-50000",
+    "value": 100000
+  },
+  {
+    "id": "cb2-product-profit-q11",
+    "formula": "80000-20000-70000",
+    "value": -10000
+  },
+  {
+    "id": "cb2-product-profit-q13",
+    "formula": "Math.abs(154000+126000-98000-112000-14000-56000)",
+    "value": 0
+  },
+  {
+    "id": "cb2-services-q02",
+    "formula": "60*0.5+20*1.5",
+    "value": 60.0
+  },
+  {
+    "id": "cb2-services-q05",
+    "formula": "750+1.25*(1600+600)",
+    "value": 3500.0
+  },
+  {
+    "id": "cb2-services-q06",
+    "formula": "30*7000-30*2500-45000-36000",
+    "value": 54000
+  },
+  {
+    "id": "cb2-services-q07",
+    "formula": "72000*48/(24+48)",
+    "value": 48000.0
+  },
+  {
+    "id": "cb2-services-q08",
+    "formula": "16*(15000-1500-2*(2200+500))",
+    "value": 129600
+  },
+  {
+    "id": "cb2-services-q09",
+    "formula": "74000",
+    "value": 74000
+  },
+  {
+    "id": "cb2-services-q10",
+    "formula": "21000+9000+8*(1500+400)",
+    "value": 45200
+  },
+  {
+    "id": "cb2-services-q12",
+    "formula": "168000-(22000+108000-34000)-42000",
+    "value": 30000
+  },
+  {
+    "id": "cb2-services-q13",
+    "formula": "82000-40000*30/(30+20)",
+    "value": 58000.0
+  }
+]

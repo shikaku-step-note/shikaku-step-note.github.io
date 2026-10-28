@@ -69,7 +69,8 @@ export async function GET() {
         assessmentKind: a.kind,
         subject: a.qualification === 'zeirishi' ? a.questions[0]?.field : undefined,
         assessmentVersion: a.version,
-        archived: a.qualification === 'boki-beginner' && (a.id.startsWith('bb-') || a.id === 'boki-beginner-mock'),
+        archived: (a.qualification === 'boki-beginner' && (a.id.startsWith('bb-') || a.id === 'boki-beginner-mock'))
+          || (a.qualification === 'cost-beginner' && (a.id.startsWith('cb-') || a.id === 'cost-beginner-mock')),
         url:
           a.kind === 'lesson'
             ? href(`qualifications/${a.qualification}/${a.questions[0]!.lesson}/#practice`)

@@ -379,153 +379,430 @@
 ====================
 
 日商原価計算初級 学習ツリー・スケジュール
-適用：2026年度の範囲を参照。2027年度は別途改訂。
-資料確認日：2026-10-25
-前提：割合と四則計算を使います。簿記初級の受験は必須ではありません。原価と支出の違いから学べます。
-公式の級とサイト内のユニット・レッスンは異なります。
-1日30分を週5日、4週間を目安にします。原価分類、配賦、在庫と損益、CVP・差異分析の順に進み、最後の週に用語の総復習と40分の演習を置きます。
+対象：原価計算初級の現行公式範囲の全3領域。簿記初級・簿記1〜3級は別の試験区分。
+範囲：2018年度からの現行版。2026年度と、公表済み2027年度の案内でも変更なし。公式資料確認：2026-10-28
+教材・評価版：cost-2026-v2
+前提：割合と四則計算。会計の専門知識は必要なところで補い、紙と電卓を使います。
 
-学習ツリー
-日商原価計算初級
-  ユニット1 原価の分類と集計
-    1. [cb-classify] 原価を目的・費目・製品との関係で分類する（学習目安35分）
-      科目：原価計算
-      目標：何を作るために、何を使ったかを考える／材料費・労務費・経費に分ける／直接費と間接費は、対象との結び付きで決まる
-      前提：この級のコース案内で前提知識を確認してください。例題では問題文の条件と単位を使います。
-      次：cb-allocate
-      理解度チェック：[cb-classify-check]
-      用語：材料費・労務費・直接費・間接費
-    2. [cb-allocate] 間接費を配賦し、製品ごとの原価を求める（学習目安35分）
-      科目：原価計算
-      目標：共通費を分ける基準を選ぶ／配賦率と配賦額を順に計算する／直接費と配賦額を足して製品原価を出す
-      前提：前のレッスンを読んでから進みます。忘れた用語は本文と用語欄で確かめてください。
-      次：cb-inventory
-      理解度チェック：[cb-allocate-check]
-      用語：配賦・配賦率・直課・製造原価
-    用語確認：[cost-beginner-unit-1-glossary]
-    総合確認：[cost-beginner-unit-1-review]
-    復習：翌日・1週間後に例題を見ずに解く。
-  ユニット2 利益計画と製品別の損益
-    3. [cb-inventory] 仕掛品・製品・売上原価と製品別の損益（学習目安35分）
-      科目：原価計算
-      目標：製造した原価と、売れた原価を分ける／例題：完成品原価を求める／完成した製品から売上原価へ進む
-      前提：前のレッスンを読んでから進みます。忘れた用語は本文と用語欄で確かめてください。
-      次：cb-cvp
-      理解度チェック：[cb-inventory-check]
-      用語：仕掛品・製品・売上原価・売上総利益
-    4. [cb-cvp] 損益分岐点と売上高の差異を計算する（学習目安35分）
-      科目：原価計算
-      目標：売れる量が変わると、利益はどう変わるか／損益分岐点販売量を求める／目標利益を得る販売量を考える
-      前提：前のレッスンを読んでから進みます。忘れた用語は本文と用語欄で確かめてください。
+学習時間の目安（当サイトの見積り。実測や公式の推奨時間ではありません）
+本文・例題・理解度チェック：1640分
+用語確認：147分／ユニット・全体の復習：188分
+翌日と1週間後の復習：330分／模試2回：80分／模試の解き直し：120分
+合計：2505分（約42時間）
+1日30分・週5日：約17週間。苦手な単元の再学習に応じて延長します。
+1日60分・週5日：約9週間。苦手な単元の再学習に応じて延長します。
+1日90分・週5日：約6週間。苦手な単元の再学習に応じて延長します。
+
+学習ツリー（ユニットは当サイトの学習順です）
+  ユニット1 原価の考え方と分類
+    1. [cb2-purpose] 原価は「何のために、何を使ったか」から考える／60分
+      目標：目的・活動・資源の関係から原価の対象を説明する／購入・支払い・消費を区別して資源の消費額を計算する／総原価と単位当たり原価を求め、収益との比較条件を確かめる
+      前提：四則計算を使います。簿記の仕訳や専門用語はまだ覚えていなくても始められます。
+      本文：/qualifications/cost-beginner/cb2-purpose/
+      理解度チェック：[cb2-purpose-check] 12問
+      用語：原価・資源・原価計算対象・消費量・消費単価・総原価・単位当たり原価
+      次：cb2-elements
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    2. [cb2-elements] 材料費・労務費・経費を、使った資源から分類する／60分
+      目標：消費した資源の形態から材料費・労務費・経費を分類する／製造原価と販売費及び一般管理費を活動の目的から区別する／分類表の小計を照合して製造原価と期間の費用を集計する
+      前提：前のレッスンで、原価を資源の消費額として考える方法を確認してください。
+      本文：/qualifications/cost-beginner/cb2-elements/
+      理解度チェック：[cb2-elements-check] 12問
+      用語：材料費・労務費・経費・製造原価・販売費・一般管理費・形態別分類
+      次：cb2-traceability
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    3. [cb2-traceability] 直接費と間接費は「どの対象へ結び付くか」で分ける／65分
+      目標：原価計算対象を指定して直接費と間接費を判断する／材料費・労務費・経費と直接費・間接費を組み合わせる／直課額と配賦額を区別し、製品別集計を総額に照合する
+      前提：材料費・労務費・経費と、製造原価・販売費及び一般管理費の区別を確認してください。
+      本文：/qualifications/cost-beginner/cb2-traceability/
+      理解度チェック：[cb2-traceability-check] 12問
+      用語：直接費・間接費・直課・配賦・直接材料費・間接労務費・製造間接費
+      次：cb2-departments
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    4. [cb2-departments] 部門ごとの原価と利益を、担当する活動へ結び付ける／60分
+      目標：部門・活動・責任者の関係を原価情報の用途として説明する／部門固有の原価と共通原価を区別し部門別に集計する／部門別損益を全社損益へ照合し、比較の条件を説明する
+      前提：直接費・間接費、直課・配賦を確認してください。このレッスンの配賦割合は問題文で指定します。
+      本文：/qualifications/cost-beginner/cb2-departments/
+      理解度チェック：[cb2-departments-check] 12問
+      用語：部門・責任者・部門別原価・部門共通費・部門別損益・予算・実績
+      次：cb2-materials
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    [cost-beginner-unit-1-glossary] 用語確認
+    [cost-beginner-unit-1-review] 独自の総合確認 13問
+    復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
+  ユニット2 消費量と原価を集計する
+    5. [cb2-materials] 材料の受入れ・消費・残高を数量と金額で追う／70分
+      目標：材料の数量のつながりから消費量と月末残高を求める／指定された単価を用いて材料消費額と残存額を計算する／材料消費額を製品別の直接材料費と共通の間接材料費へ集計する
+      前提：購入と消費の違い、直接費と間接費の分類を確認してください。単価と数量の掛け算を使います。
+      本文：/qualifications/cost-beginner/cb2-materials/
+      理解度チェック：[cb2-materials-check] 12問
+      用語：受入数量・払出数量・材料消費額・材料元帳・月初材料・月末材料・消費単価
+      次：cb2-labor-expenses
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    6. [cb2-labor-expenses] 作業時間と使用実績から労務費・経費を集計する／70分
+      目標：時間と時間当たり原価から製造労務費を計算する／製品別作業と共通作業を分け直接労務費・間接労務費へ集計する／当月の製造経費を消費期間と対象の条件から求める
+      前提：材料費・労務費・経費、直接費・間接費の区別を確認してください。時間と分の換算を使います。
+      本文：/qualifications/cost-beginner/cb2-labor-expenses/
+      理解度チェック：[cb2-labor-expenses-check] 12問
+      用語：作業時間・時間当たり原価・直接作業時間・間接作業時間・直接労務費・製造経費・減価償却費
+      次：cb2-allocation
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    7. [cb2-allocation] 共通費の配賦率を求め、製品別負担額を確かめる／75分
+      目標：配賦基準の総量から配賦率を求め単位を説明する／指定基準で製品別間接費を計算し直接費と合算する／基準変更や端数を含む配賦額を総額へ照合する
+      前提：直接費と間接費、労務費・経費の集計を確認してください。割り算と割合を使います。
+      本文：/qualifications/cost-beginner/cb2-allocation/
+      理解度チェック：[cb2-allocation-check] 12問
+      用語：配賦基準・配賦率・基準総量・機械運転時間・製品別配賦額・直接労務費基準・端数調整
+      次：cb2-cost-flow
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    8. [cb2-cost-flow] 材料・仕掛品・製品・売上原価の流れを記録する／80分
+      目標：製造に関する勘定と借方・貸方の基本的な動きを説明する／材料消費・製造原価投入・完成・販売に伴う原価の移動を記録する／仕掛品・製品・売上原価の金額を照合し二重費用化を避ける
+      前提：材料費・労務費・経費と直課・配賦を確認してください。簿記未経験でも読めるよう、借方・貸方から説明します。
+      本文：/qualifications/cost-beginner/cb2-cost-flow/
+      理解度チェック：[cb2-cost-flow-check] 12問
+      用語：勘定・借方・貸方・仕訳・仕掛品・製品・売上原価
+      次：cb2-wip
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    [cost-beginner-unit-2-glossary] 用語確認
+    [cost-beginner-unit-2-review] 独自の総合確認 13問
+    復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
+  ユニット3 在庫と製品・サービス別の利益
+    9. [cb2-wip] 仕掛品の原価を残し、完成した製品の原価を求める／75分
+      目標：仕掛品の月初・当月投入・完成・月末の関係から完成品原価を求める／未完成の製品に直接追跡できる原価と指定配賦額を集めて月末仕掛品を評価する／不明な投入額や残高を逆算し、翌月の引継ぎと二方向の検算を行う
+      前提：材料費・労務費・経費、直課と配賦、材料から仕掛品・製品へ移る原価の流れを確認してください。
+      本文：/qualifications/cost-beginner/cb2-wip/
+      理解度チェック：[cb2-wip-check] 13問
+      用語：仕掛品・月初仕掛品原価・当月製造費用・月末仕掛品原価・当月製品製造原価・原価の保存関係
+      次：cb2-finished
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    10. [cb2-finished] 完成品の数量と原価を、販売分と月末在庫へ分ける／75分
+      目標：月初製品・当月完成原価・月末製品から売上原価を求める／完成数量・販売数量・単位原価を区別して製品在庫を評価する／数量と原価の未知数を逆算し、仕掛品から売上原価まで一貫して検算する
+      前提：前の仕掛品の課で、月初＋当月追加＝完成振替＋月末の関係を復習してください。
+      本文：/qualifications/cost-beginner/cb2-finished/
+      理解度チェック：[cb2-finished-check] 13問
+      用語：月初製品原価・完成数量・販売数量・単位原価・月末製品原価・売上原価・数量の保存関係
+      次：cb2-pnl
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    11. [cb2-pnl] 売上総利益と営業利益を、費用の役割から組み立てる／75分
+      目標：製造原価・売上原価・販売費及び一般管理費を活動と期間から区別する／売上高から売上総利益と営業利益の表を順に完成し、逆算する／利益の額と利益率、営業損失の意味を読み、二重控除や集計漏れを検算する
+      前提：仕掛品・製品の原価計算、材料費・労務費・経費の分類、割合の小数と百分率を確認してください。
+      本文：/qualifications/cost-beginner/cb2-pnl/
+      理解度チェック：[cb2-pnl-check] 13問
+      用語：損益計算書・売上高・売上総利益・販売費及び一般管理費・営業利益・売上総利益率・営業損失
+      次：cb2-product-profit
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    12. [cb2-product-profit] 二つの製品の原価と利益を、一つの資料から計算する／90分
+      目標：二製品の直接費・配賦費から製造原価と単位原価を組み立てる／数量と在庫条件を使い、製品別の売上原価・売上総利益・営業利益を計算する／配賦基準と直接把握できる費用を区別し、全体との一致と利益比較の条件を説明する
+      前提：直課と配賦、仕掛品・製品の原価の流れ、売上総利益と営業利益を求める課を終えてください。
+      本文：/qualifications/cost-beginner/cb2-product-profit/
+      理解度チェック：[cb2-product-profit-check] 13問
+      用語：原価明細・製品別損益・共通販管費・売上高比による配賦・配賦前利益・製品別営業利益・行列の検算
+      次：cb2-services
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    13. [cb2-services] 修理・役務・小売の例で、サービス別の原価と利益を考える／85分
+      目標：顧客・作業・案件など原価を計算する単位を決め、直接費と共通費を整理する／サービス別の作業時間・消費額・配賦条件から原価と利益を計算する／完了と未完了の指定条件や小売の在庫を区別し、サービスの違いに応じた原価の流れを説明する
+      前提：製品別の直課・配賦、数量と原価、売上総利益と営業利益の計算を復習してください。
+      本文：/qualifications/cost-beginner/cb2-services/
+      理解度チェック：[cb2-services-check] 13問
+      用語：サービス別原価・原価計算の単位・直接作業時間・案件別原価・完了した役務の原価・未完了案件の原価・商品売上原価
+      次：cb2-behavior
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    [cost-beginner-unit-3-glossary] 用語確認
+    [cost-beginner-unit-3-review] 独自の総合確認 16問
+    復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
+  ユニット4 利益を計画する
+    14. [cb2-behavior] 数量が変わったときの費用を、変動費と固定費に分けて考える／65分
+      目標：活動量と費用の関係から変動費・固定費を区別する／総額と単位当たりの費用を数量に合わせて計算する／直接・間接の区分との違いと計算の前提を説明する
+      前提：原価の分類と、製品別の損益計算を学んでから進めてください。
+      本文：/qualifications/cost-beginner/cb2-behavior/
+      理解度チェック：[cb2-behavior-check] 14問
+      用語：変動費・固定費・単位変動費・単位固定費・活動量・関連範囲・固変分解
+      次：cb2-contribution
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    15. [cb2-contribution] 一個売るごとの貢献利益から、月の営業利益を組み立てる／70分
+      目標：単位貢献利益と貢献利益総額を計算する／変動販売費を含む費用区分で営業利益を求める／貢献利益率と追加販売による利益の変化を説明する
+      前提：変動費・固定費、売上総利益と営業利益の違いを復習してください。
+      本文：/qualifications/cost-beginner/cb2-contribution/
+      理解度チェック：[cb2-contribution-check] 14問
+      用語：貢献利益・単位貢献利益・貢献利益率・変動費率・営業利益・変動販売費・固定費回収
+      次：cb2-break-even
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    16. [cb2-break-even] 利益がゼロになる販売数量と売上高を、損益の式から求める／75分
+      目標：貢献利益と固定費が等しくなる損益分岐点を求める／数量と売上高の計算を使い分けて結果を検算する／整数制約と貢献利益が正でない場合を区別する
+      前提：単位貢献利益、貢献利益率、営業利益の計算を復習してください。
+      本文：/qualifications/cost-beginner/cb2-break-even/
+      理解度チェック：[cb2-break-even-check] 14問
+      用語：損益分岐点・損益分岐点数量・損益分岐点売上高・黒字・赤字・非赤字数量・切上げ
+      次：cb2-target-profit
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    17. [cb2-target-profit] 目標利益を得る数量・売価・費用を逆算し、計画を検算する／80分
+      目標：目標営業利益を達成する販売数量・売上高を求める／数量を固定したときの必要売価や費用上限を逆算する／切上げた数量と計画の活動範囲を検算する
+      前提：損益分岐点、単位貢献利益、貢献利益率の求め方を復習してください。
+      本文：/qualifications/cost-beginner/cb2-target-profit/
+      理解度チェック：[cb2-target-profit-check] 14問
+      用語：目標営業利益・必要販売数量・目標売上高・必要売価・費用上限・計画条件・達成可能性
+      次：cb2-safety-changes
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    18. [cb2-safety-changes] 販売の余裕と条件変更を、利益の式で比べる／80分
+      目標：実際売上高と損益分岐点の差から販売の余裕を説明する／売価・単位変動費・固定費の変更案を独立に計算する／売上変化と利益変化を区別して条件を照合する
+      前提：損益分岐点と目標利益の計算を復習してください。
+      本文：/qualifications/cost-beginner/cb2-safety-changes/
+      理解度チェック：[cb2-safety-changes-check] 14問
+      用語：安全余裕額・安全余裕率・条件変更・増分利益・追加固定費・感度の比較・販売構成
+      次：cb2-budget
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    [cost-beginner-unit-4-glossary] 用語確認
+    [cost-beginner-unit-4-review] 独自の総合確認 16問
+    復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
+  ユニット5 予算と実績から利益を確かめる
+    19. [cb2-budget] 予算と実績を同じ単位で比べ、売上差額を正しく読む／65分
+      目標：数量と単価から予算売上高・実際売上高を求める／同じ期間・単位の差額と達成率を計算する／売上の差とその原因・利益を区別して説明する
+      前提：数量×単価の売上高計算、割合と百分率を復習してください。
+      本文：/qualifications/cost-beginner/cb2-budget/
+      理解度チェック：[cb2-budget-check] 14問
+      用語：予算売上高・実際売上高・売上高差異・予算達成率・予算差額・対象期間・比較条件
+      次：cb2-sales-variance
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    20. [cb2-sales-variance] 売上高の差を、数量と価格の二つの差異に分ける／85分
+      目標：販売数量差異と販売価格差異を定義に沿って計算する／比較用売上高を使って二つの差異の合計を検算する／基準数量・単価と符号が異なる分析方式を区別する
+      前提：予算・実績売上高と、実際−予算の差額計算を復習してください。
+      本文：/qualifications/cost-beginner/cb2-sales-variance/
+      理解度チェック：[cb2-sales-variance-check] 14問
+      用語：販売数量差異・販売価格差異・比較用売上高・予算単価・実際単価・差異の照合・交差項
+      次：cb2-variance-cases
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    21. [cb2-variance-cases] 複数製品とサービスの売上差異を集め、増減の内容を説明する／85分
+      目標：複数製品の売上差異を製品ごとに分解して合計する／相殺された増減と単位の違いを説明する／サービスや返品条件の明示された売上を分析する
+      前提：販売数量差異を予算単価、販売価格差異を実際数量で求める方法を復習してください。
+      本文：/qualifications/cost-beginner/cb2-variance-cases/
+      理解度チェック：[cb2-variance-cases-check] 14問
+      用語：製品別差異・差異の集計・相殺・平均販売単価・純販売数量・サービス単位・分析方式
+      次：cb2-integration
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    22. [cb2-integration] 製品別損益・在庫・CVP・売上差異を、目的に合わせて使い分ける／95分
+      目標：二製品の直接費・配賦費と在庫から営業利益を計算する／在庫が変わる損益と在庫一定のCVPを区別して計画する／製品別の売上差異を集計し損益計算と照合する
+      前提：直接費・間接費の集計、仕掛品・製品在庫、製品別損益、CVP、売上差異の各課を一通り終えてください。
+      本文：/qualifications/cost-beginner/cb2-integration/
+      理解度チェック：[cb2-integration-check] 14問
+      用語：当月完成品原価・売上原価・配賦額・在庫の増減・損益計算の前提・CVPの前提・総合検算
       次：cost-beginner-review-all
-      理解度チェック：[cb-cvp-check]
-      用語：変動費・固定費・貢献利益・損益分岐点
-    用語確認：[cost-beginner-unit-2-glossary]
-    総合確認：[cost-beginner-unit-2-review]
-    復習：翌日・1週間後に例題を見ずに解く。
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    [cost-beginner-unit-5-glossary] 用語確認
+    [cost-beginner-unit-5-review] 独自の総合確認 14問
+    復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
 
-総復習・模試
-  [cb-allocate-check] 間接費を配賦し、製品ごとの原価を求める：理解度チェック／4小問
-  [cost-beginner-terms-all] 日商原価計算初級 用語総復習／16小問
-  [cost-beginner-review-all] 日商原価計算初級 総復習／16小問
-  [cost-beginner-mock] 日商原価計算初級 基礎形式模試／15小問／40分
+総復習と模試
+  [cost-beginner-terms-all] 用語総復習。ユニットの用語問題を再利用。
+  [cost-beginner-review-all] 分野横断の独自問題 22問
+  [cb2-mock-a] 第1回：選択式37小問・40分・独自100点 → 翌日に解説と関連レッスンで解き直す
+  苦手な単元の総合確認へ戻り、条件の判断と計算を再確認する
+  [cb2-mock-b] 第2回：異なる条件と資料の選択式37小問・40分・独自100点 → 時間配分と誤答を確認
 
-公式範囲と教材の対応
-原価計算初級：原価の概念と分類 → cb-classify／説明・分類例・チェック
-  制約：支出、原価、費用の違いも確認します。
-原価計算初級：直課・配賦、製品別原価 → cb-allocate／数値例・チェック
-  制約：一つの配賦基準を使う基本例です。
-原価計算初級：仕掛品・製品・損益計算 → cb-inventory／増減表と計算例
-  制約：月初・月末を区別します。
-原価計算初級：CVP・売上高差異 → cb-cvp／分岐点・目標利益・価格数量差異
-  制約：仮定を固定した単純例です。
+範囲と練習の対応
+  [CB-C01] 公式1(1) 目的・活動・資源を特定し、何のための消費かを説明する
+    本文：cb2-purpose
+    独立練習：cb2-purpose-q01, cb2-purpose-q02, cb2-purpose-q03, cb2-purpose-q04
+    関連する総合確認：cb2-unit-1-r01
+  [CB-C02] 公式1(1) 購入・支出・消費・売上原価化の時点を区別する
+    本文：cb2-purpose, cb2-cost-flow
+    独立練習：cb2-purpose-q05, cb2-purpose-q06, cb2-purpose-q07, cb2-purpose-q08
+    関連する総合確認：cb2-unit-1-r02
+  [CB-C03] 公式1(1) 数量・単価・時間・賃率から原価額を組み立て単位を検算する
+    本文：cb2-purpose, cb2-materials, cb2-labor-expenses
+    独立練習：cb2-labor-expenses-q01, cb2-labor-expenses-q02, cb2-labor-expenses-q03, cb2-labor-expenses-q04
+    関連する総合確認：cb2-unit-2-r04
+  [CB-C04] 公式1(2) 部門・活動の把握と責任者の管理対象を区別する
+    本文：cb2-departments
+    独立練習：cb2-departments-q01, cb2-departments-q02, cb2-departments-q03, cb2-departments-q04
+    関連する総合確認：cb2-unit-1-r10
+  [CB-C05] 公式1(2) 同じ製品・サービスの収益と原価を対応させる
+    本文：cb2-departments, cb2-pnl
+    独立練習：cb2-departments-q09, cb2-departments-q10, cb2-departments-q11, cb2-departments-q12
+    関連する総合確認：cb2-unit-1-r13
+  [CB-C06] 公式1(3) 資源消費を材料費・労務費・経費へ分類する
+    本文：cb2-elements
+    独立練習：cb2-elements-q01, cb2-elements-q02, cb2-elements-q03, cb2-elements-q04
+    関連する総合確認：cb2-unit-1-r04
+  [CB-C07] 公式1(3) 対象への追跡可能性から直接費・間接費を判断する
+    本文：cb2-traceability
+    独立練習：cb2-traceability-q01, cb2-traceability-q02, cb2-traceability-q03, cb2-traceability-q04
+    関連する総合確認：cb2-unit-1-r07
+  [CB-C08] 公式1(3) 費目と直接・間接の二つの分類軸を組み合わせる
+    本文：cb2-elements, cb2-traceability
+    独立練習：cb2-traceability-q05, cb2-traceability-q06, cb2-traceability-q07, cb2-traceability-q08
+    関連する総合確認：cb2-unit-1-r08
+  [CB-C09] 公式1(4) 製造原価と販売費・一般管理費の目的を区別する
+    本文：cb2-elements, cb2-pnl
+    独立練習：cb2-elements-q05, cb2-elements-q06, cb2-elements-q07, cb2-elements-q08
+    関連する総合確認：cb2-unit-1-r05
+  [CB-C10] 公式1(4) 売上総利益と営業利益の算出範囲を区別する
+    本文：cb2-pnl
+    独立練習：cb2-pnl-q05, cb2-pnl-q06, cb2-pnl-q07, cb2-pnl-q08
+    関連する総合確認：cb2-unit-3-r08
+  [CB-C11] 公式3(1) 材料の月初・受入・消費・月末数量を材料記録から読む
+    本文：cb2-materials
+    独立練習：cb2-materials-q01, cb2-materials-q02, cb2-materials-q03, cb2-materials-q04
+    関連する総合確認：cb2-unit-2-r01
+  [CB-C12] 公式3(1) 指定された消費単価と消費量から直接材料費を計算する
+    本文：cb2-materials
+    独立練習：cb2-materials-q09, cb2-materials-q10, cb2-materials-q11, cb2-materials-q12
+    関連する総合確認：cb2-unit-2-r13
+  [CB-C13] 公式3(1) 作業時間と消費賃率から直接労務費を計算する
+    本文：cb2-labor-expenses
+    独立練習：cb2-labor-expenses-q01, cb2-labor-expenses-q02, cb2-labor-expenses-q03, cb2-labor-expenses-q04
+    関連する総合確認：cb2-unit-2-r04
+  [CB-C14] 公式3(1) 外注加工費・工場電力・減価償却等を条件に従い集計する
+    本文：cb2-labor-expenses
+    独立練習：cb2-labor-expenses-q09, cb2-labor-expenses-q10, cb2-labor-expenses-q11, cb2-labor-expenses-q12, cb2-traceability-q06
+    関連する総合確認：cb2-unit-2-r06, cb2-unit-1-r08
+  [CB-C15] 公式3(1) 直接費を対象へ直課し、共通費との二重集計を防ぐ
+    本文：cb2-traceability, cb2-allocation
+    独立練習：cb2-traceability-q09, cb2-traceability-q10, cb2-traceability-q11, cb2-traceability-q12
+    関連する総合確認：cb2-unit-1-r09
+  [CB-C16] 公式3(1) 指定された配賦基準と対象範囲を読み取る
+    本文：cb2-allocation
+    独立練習：cb2-allocation-q01, cb2-allocation-q02, cb2-allocation-q03, cb2-allocation-q04
+    関連する総合確認：cb2-unit-2-r07
+  [CB-C17] 公式3(1) 間接費総額と基準量合計から配賦率を計算する
+    本文：cb2-allocation
+    独立練習：cb2-allocation-q01, cb2-allocation-q02, cb2-allocation-q03, cb2-allocation-q04
+    関連する総合確認：cb2-unit-2-r07
+  [CB-C18] 公式3(1) 製品別配賦額を計算し配賦総額の一致を検算する
+    本文：cb2-allocation
+    独立練習：cb2-allocation-q09, cb2-allocation-q10, cb2-allocation-q11, cb2-allocation-q12
+    関連する総合確認：cb2-unit-2-r09
+  [CB-C19] 公式3(1) 直課額と配賦額から製品原価・均一条件の単位原価を求める
+    本文：cb2-allocation, cb2-finished
+    独立練習：cb2-allocation-q05, cb2-allocation-q06, cb2-allocation-q07, cb2-allocation-q08
+    関連する総合確認：cb2-unit-2-r08, cb2-unit-3-r05
+  [CB-C20] 公式1(4),3(1) 材料・仕掛品・製品・売上原価の流れを基礎仕訳と結び付ける
+    本文：cb2-cost-flow
+    独立練習：cb2-cost-flow-q05, cb2-cost-flow-q06, cb2-cost-flow-q07, cb2-cost-flow-q08, cb2-cost-flow-q11, cb2-cost-flow-q04
+    関連する総合確認：cb2-unit-2-r11, cb2-unit-2-r10
+  [CB-C21] 公式3(2) 仕掛品の月初＋当月増加＝完成振替＋月末を使う
+    本文：cb2-wip
+    独立練習：cb2-wip-q01, cb2-wip-q02, cb2-wip-q03, cb2-wip-q04
+    関連する総合確認：cb2-unit-3-r01
+  [CB-C22] 公式3(2) 追跡可能な未完成分または与えられた条件から月末仕掛品原価を求める
+    本文：cb2-wip
+    独立練習：cb2-wip-q05, cb2-wip-q06, cb2-wip-q07, cb2-wip-q08
+    関連する総合確認：cb2-unit-3-r02
+  [CB-C23] 公式3(2) 製品の完成・販売・月末在庫の数量を区別する
+    本文：cb2-finished
+    独立練習：cb2-finished-q09, cb2-finished-q10, cb2-finished-q11, cb2-finished-q12, cb2-finished-q13
+    関連する総合確認：cb2-unit-3-r06
+  [CB-C24] 公式3(2) 与えられた均一原価・評価条件で月末製品原価を求める
+    本文：cb2-finished
+    独立練習：cb2-finished-q05, cb2-finished-q06, cb2-finished-q07, cb2-finished-q08
+    関連する総合確認：cb2-unit-3-r05
+  [CB-C25] 公式3(3) 月初製品・完成原価・月末製品から売上原価を求める
+    本文：cb2-finished, cb2-pnl
+    独立練習：cb2-finished-q01, cb2-finished-q02, cb2-finished-q03, cb2-finished-q04
+    関連する総合確認：cb2-unit-3-r04
+  [CB-C26] 公式3(3) 売上原価・販管費から売上総利益・営業利益の表を完成する
+    本文：cb2-pnl
+    独立練習：cb2-pnl-q05, cb2-pnl-q06, cb2-pnl-q07, cb2-pnl-q08
+    関連する総合確認：cb2-unit-3-r08
+  [CB-C27] 公式3(3) 製品別原価・売上・販管費を集計し配賦条件付きの利益を比較する
+    本文：cb2-product-profit
+    独立練習：cb2-product-profit-q05, cb2-product-profit-q06, cb2-product-profit-q07, cb2-product-profit-q08
+    関連する総合確認：cb2-unit-3-r11
+  [CB-C28] 公式3(3) サービス別の売上・直接費・共通費から利益を計算する
+    本文：cb2-services
+    独立練習：cb2-services-q05, cb2-services-q06, cb2-services-q07, cb2-services-q08
+    関連する総合確認：cb2-unit-3-r16
+  [CB-C29] 公式2(1) 活動量と費用総額・単位費用の変化を区別する
+    本文：cb2-behavior
+    独立練習：cb2-behavior-q02, cb2-behavior-q03, cb2-behavior-q04, cb2-behavior-q05, cb2-behavior-q06, cb2-behavior-q07, cb2-behavior-q10, cb2-behavior-q11, cb2-behavior-q13
+    関連する総合確認：cb2-unit-4-r02, cb2-unit-4-r01
+  [CB-C30] 公式2(1) 販売数量と販売単価から売上高を計算する
+    本文：cb2-contribution, cb2-budget
+    独立練習：cb2-budget-q01, cb2-budget-q02, cb2-budget-q07
+    関連する総合確認：cb2-unit-5-r01
+  [CB-C31] 公式2(1) 単位変動費と活動量から変動費総額、各固定費から固定費総額を求める
+    本文：cb2-behavior, cb2-contribution
+    独立練習：cb2-behavior-q02, cb2-behavior-q03, cb2-behavior-q04, cb2-behavior-q05, cb2-behavior-q06, cb2-behavior-q07, cb2-behavior-q10, cb2-behavior-q11, cb2-behavior-q13
+    関連する総合確認：cb2-unit-4-r02
+  [CB-C32] 公式2(1) 売上高−変動費による貢献利益を総額・1単位で求める
+    本文：cb2-contribution
+    独立練習：cb2-contribution-q01, cb2-contribution-q02, cb2-contribution-q09
+    関連する総合確認：cb2-unit-4-r04
+  [CB-C33] 公式2(1) 変動費率・貢献利益率を計算し式の分母へ使い分ける
+    本文：cb2-contribution, cb2-break-even
+    独立練習：cb2-contribution-q06, cb2-contribution-q07, cb2-contribution-q08, cb2-contribution-q12, cb2-contribution-q13
+    関連する総合確認：cb2-unit-4-r16, cb2-unit-4-r08
+  [CB-C34] 公式2(1) 貢献利益−固定費から営業利益を求め、利益式を検算する
+    本文：cb2-contribution
+    独立練習：cb2-contribution-q03, cb2-contribution-q04, cb2-contribution-q05, cb2-contribution-q10, cb2-contribution-q11, cb2-contribution-q14
+    関連する総合確認：cb2-unit-4-r05
+  [CB-C35] 公式2(1) 1単位貢献利益から損益分岐点販売数量を求める
+    本文：cb2-break-even
+    独立練習：cb2-break-even-q01, cb2-break-even-q04, cb2-break-even-q07, cb2-break-even-q12
+    関連する総合確認：cb2-unit-4-r07
+  [CB-C36] 公式2(1) 貢献利益率から損益分岐点売上高を求め、条件変更の影響を説明する
+    本文：cb2-break-even, cb2-safety-changes
+    独立練習：cb2-break-even-q02, cb2-break-even-q03, cb2-break-even-q10, cb2-break-even-q11, cb2-break-even-q14
+    関連する総合確認：cb2-unit-4-r08
+  [CB-C37] 公式2(2) 予算と実績の数量・単価・売上高を同じ期間・範囲で整理する
+    本文：cb2-budget
+    独立練習：cb2-budget-q01, cb2-budget-q02, cb2-budget-q07
+    関連する総合確認：cb2-unit-5-r01
+  [CB-C38] 公式2(2) 指定する分解法で販売価格差異を計算する
+    本文：cb2-sales-variance
+    独立練習：cb2-sales-variance-q01, cb2-sales-variance-q02, cb2-sales-variance-q04, cb2-sales-variance-q05, cb2-sales-variance-q07
+    関連する総合確認：cb2-unit-5-r13
+  [CB-C39] 公式2(2) 指定する分解法で販売数量差異を計算する
+    本文：cb2-sales-variance
+    独立練習：cb2-sales-variance-q01, cb2-sales-variance-q02, cb2-sales-variance-q04, cb2-sales-variance-q05, cb2-sales-variance-q07
+    関連する総合確認：cb2-unit-5-r04
+  [CB-C40] 公式2(2) 価格差異と数量差異の和を総売上高差異へ照合する
+    本文：cb2-sales-variance, cb2-variance-cases
+    独立練習：cb2-sales-variance-q03, cb2-sales-variance-q06, cb2-sales-variance-q08, cb2-sales-variance-q12, cb2-sales-variance-q13
+    関連する総合確認：cb2-unit-5-r05
+  [CB-C41] 公式2(2) 逆向きの価格・数量変化と有利/不利を読み、売上差と利益差を区別する
+    本文：cb2-variance-cases
+    独立練習：cb2-variance-cases-q04, cb2-variance-cases-q08, cb2-variance-cases-q09, cb2-variance-cases-q13, cb2-variance-cases-q14
+    関連する総合確認：cb2-unit-5-r09, cb2-unit-5-r03
+  [CB-C42] 公式1〜3総合 原価分類・直課配賦・在庫・利益・CVP・売上差異を共通資料から必要な順に解く
+    本文：cb2-integration
+    独立練習：cb2-integration-q01, cb2-integration-q02, cb2-integration-q03, cb2-integration-q04, cb2-integration-q05, cb2-integration-q06, cb2-integration-q07, cb2-integration-q08, cb2-integration-q09, cb2-integration-q10, cb2-integration-q11, cb2-integration-q12, cb2-integration-q13, cb2-integration-q14
+    関連する総合確認：cb2-unit-5-r10, cb2-unit-5-r11, cb2-unit-5-r12, cb2-unit-5-r14
 
-範囲・制約
-各レッスンの目標、例題、理解度チェックの対応をWebの対応表で確認してください。
-用語テストは本文の定義、総復習はレッスン問題を再利用。模試は別の独自問題です。
-公式の採点箇所・部分点・難易度を再現せず、合否や範囲全体の習熟を保証しません。
-学習目安は読む・解く・解説確認を含む独自の見積りです。
-旧サンプルの完了記録は保管し、新コースの完了とは分けます。
+確認する範囲と制約
+  個別・総合原価計算の計算形態の違いや標準原価計算は公式範囲外。在庫は資料で与えた金額・明示した未完成分の原価を使う。
+  目標利益と安全余裕はCVPの関係式を使う補助学習で、別の公式必須項目を追加するものではない。
+  模試の37小問と44・24・32点はサンプルの解答箇所・大問構成を参考にした独自設計。固定問題数・小問別配点・部分点や難易度の同一性を主張しない。
+  模試の第2群はCVPと予算実績差異を練習する独自の配分。練習得点を公式の合否へ換算しない。
+  外部専門家による監修と、受験者による難易度・時間の試行は未実施。
 
-公式資料
-ASBJ：収益認識に関する会計基準／第29号。現行検索の改正日と2026年度試験適用を区別
-https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=13
-確認日：2026-10-25
-ASBJ：金融商品に関する会計基準／第10号。将来適用の改正を例題へ自動反映しない
-https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=109
-確認日：2026-10-25
-ASBJ：税効果会計に係る会計基準／一時差異と期間配分の説明を参照
-https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=84
-確認日：2026-10-25
-ASBJ：リース取引に関する従来の会計基準／第13号。2026年度教材の借手区分に参照。第34号と区別
-https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=36
-確認日：2026-10-25
-ASBJ：退職給付に関する適用指針／年金資産・期待運用収益等の基本関係を参照
-https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=125
-確認日：2026-10-25
-ASBJ：企業結合に関する会計基準／第21号。取得と純資産の配分等を参照
-https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=123
-確認日：2026-10-25
-ASBJ：会計上の変更及び誤謬の訂正等の基準／第24号。変更と誤謬の区分に参照
-https://www.asb-j.jp/jp/accounting_standards_system/details.html?topics_id=39
-確認日：2026-10-25
-ASBJ：固定資産の減損適用指針／認識判定・回収可能価額の基本を参照
-https://www.asb-j.jp/jp/wp-content/uploads/sites/4/lease_20240913_14_20241101.pdf
-確認日：2026-10-25
-ASBJ：資産除去債務の解説／現在価値・資産計上・時の経過の基本を参照
-https://www.asb-j.jp/jp/wp-content/uploads/sites/4/manual_21_manual.pdf
-確認日：2026-10-25
-ASBJ：期中財務諸表基準の比較資料／第37号・2025年公表資料。2026年1月の改正案内も併読
-https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kichu_20251016_03.pdf
-確認日：2026-10-25
-ASBJ：第37号の2026年1月改正／2026年1月9日・期中基準の改正
-https://www.asb-j.jp/jp/wp-content/uploads/sites/4/kouhatsujisyou20260109_06.pdf
-確認日：2026-10-25
-金融庁：キャッシュ・フロー計算書等の作成基準／資金範囲・活動区分・表示の原則を参照
-https://www.fsa.go.jp/p_mof/singikai/kaikei/tosin/1a909b2.htm
-確認日：2026-10-25
-日本商工会議所：2026年度適用範囲（2022年度版）と変更の注意／2026年度・2026年4月1日現在の法令等
-https://www.kentei.ne.jp/bookkeeping/35697-2/2022-2026
-確認日：2026-10-25
-商業簿記・会計学 出題区分表（現行ページから案内されるPDF）／掲載ファイル名は2021。現行案内・改定説明と併読
-https://www.kentei.ne.jp/wp/wp-content/uploads/2021/03/2021_shokai1-3.pdf
-確認日：2026-10-25
-工業簿記・原価計算 出題区分表／2022年4月1日施行、2026年度も適用
-https://www.kentei.ne.jp/wp/wp-content/uploads/2021/12/2022_kogen.pdf
-確認日：2026-10-25
-簿記初級 出題範囲・内容／2026年度も変更なし
-https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf
-確認日：2026-10-25
-原価計算初級 出題範囲・内容／2026年度も変更なし
-https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30genkashokyu.pdf
-確認日：2026-10-25
-1級：試験科目・注意事項／前半90分・後半90分、合計70%以上かつ各科目40%以上
-https://www.kentei.ne.jp/bookkeeping/class1/exam
-確認日：2026-10-25
-2級：試験科目・注意事項／90分・5題以内・70%以上
-https://www.kentei.ne.jp/bookkeeping/class2/exam
-確認日：2026-10-25
-3級：試験科目・注意事項／60分・3題以内・70%以上
-https://www.kentei.ne.jp/bookkeeping/class3/exam
-確認日：2026-10-25
-簿記初級：趣旨・内容／40分・100点満点の70点以上
-https://www.kentei.ne.jp/bookkeeping/class-s/effect
-確認日：2026-10-25
-原価計算初級：趣旨・内容／40分・100点満点の70点以上
-https://www.kentei.ne.jp/bookkeeping/ca/effect
-確認日：2026-10-25
-2・3級ネット試験Q&A（勘定科目選択・数値入力）／実施方式・解答形式の説明
-https://www.kentei.ne.jp/net-qa
-確認日：2026-10-25
-公式サンプル案内・著作権の注意／問題の転載は行わず、形式の確認に参照
-https://www.kentei.ne.jp/bookkeeping/sample
-確認日：2026-10-25
-2027年度適用区分表の確定のお知らせ／2027年4月1日以降。現行版とは区別
-https://www.kentei.ne.jp/51147
-確認日：2026-10-25
-2027年度以降の3級配点変更／2027年4月以降は45・25・30点。現行の教材へ混在させない
-https://www.kentei.ne.jp/51504
-確認日：2026-10-25
+公式参照資料と確認日
+  [S01] 原価計算初級 趣旨・内容／現行案内
+    https://www.kentei.ne.jp/bookkeeping/ca/effect
+    確認：2026-10-28
+  [S02] 原価計算初級 出題範囲・内容／2018年度からの範囲・2026年度および2027年度も変更なし
+    https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30genkashokyu.pdf
+    確認：2026-10-28
+  [S03] 原価計算初級 サンプル問題／2018年公開サンプル・現在の固定仕様とは区別
+    https://www.kentei.ne.jp/wp/wp-content/uploads/2018/03/SAMPLE_ca2018.pdf
+    確認：2026-10-28
+  [S04] 日商簿記検定試験（2級・3級・簿記初級・原価計算初級）ネット試験について／現行ネット試験案内
+    https://www.kentei.ne.jp/33013
+    確認：2026-10-28
+  [S05] 原価計算初級 上位級とのつながり／公式の内容・除外説明
+    https://www.kentei.ne.jp/bookkeeping/ca/point_ca
+    確認：2026-10-28
+  [S06] 簿記 出題区分表（2026年度および2027年度確定案内）／2026年度〜2027年度の境界
+    https://www.kentei.ne.jp/bookkeeping/exam-list
+    確認：2026-10-28
+  [S07] 原価計算初級 Q&A／概念・受験条件の補足。古い運用記述は最新案内を優先
+    https://www.kentei.ne.jp/bookkeeping/ca/qa
+    確認：2026-10-28
+  [S08] 原価計算初級 ネット試験（操作体験版）／体験版の注意事項のみ
+    https://www.kentei.ne.jp/bookkeeping/ca/exercise
+    確認：2026-10-28
+  [S09] 原価計算初級 サンプル問題案内／公開サンプルへの公式リンク
+    https://www.kentei.ne.jp/bookkeeping/ca/sample
+    確認：2026-10-28
 
 
 ====================

@@ -3,10 +3,10 @@
   "stableId": "cb-classify",
   "qualification": "cost-beginner",
   "title": "原価を目的・費目・製品との関係で分類する",
-  "description": "原価を目的・費目・製品との関係で分類するを、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
+  "description": "旧版の要点教材です。現在の学習ツリーと過去の記録を確認できます。",
   "order": 1,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 1,
   "syllabus": [
@@ -43,7 +43,8 @@
       "term": "間接費",
       "definition": "複数の製品などに共通して発生し、個別の関係を直接把握しにくい原価"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 

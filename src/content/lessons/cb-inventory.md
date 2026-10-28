@@ -3,10 +3,10 @@
   "stableId": "cb-inventory",
   "qualification": "cost-beginner",
   "title": "仕掛品・製品・売上原価と製品別の損益",
-  "description": "仕掛品・製品・売上原価と製品別の損益を、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
+  "description": "旧版の要点教材です。現在の学習ツリーと過去の記録を確認できます。",
   "order": 3,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 2,
   "syllabus": [
@@ -43,7 +43,8 @@
       "term": "売上総利益",
       "definition": "売上高から売上原価を引いた利益"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 

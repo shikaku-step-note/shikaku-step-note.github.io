@@ -1,4 +1,5 @@
 import beginnerCoverage from './boki-beginner-coverage.json';
+import costCoverage from './cost-beginner-coverage.json';
 export interface CoverageRow {
   official: string;
   lessons: string[];
@@ -13,32 +14,7 @@ const row = (official: string, lessons: string[], depth: string, note: string): 
 });
 export const bokiCoverage: Record<string, CoverageRow[]> = {
   'boki-beginner': beginnerCoverage.map(r => row(r.competency, r.lessons, '詳しい本文・例題・独立練習', '2026年度の範囲。確認方法と模試の制約は専用対応表に記載。')),
-  'cost-beginner': [
-    row(
-      '原価計算初級：原価の概念と分類',
-      ['cb-classify'],
-      '説明・分類例・チェック',
-      '支出、原価、費用の違いも確認します。',
-    ),
-    row(
-      '原価計算初級：直課・配賦、製品別原価',
-      ['cb-allocate'],
-      '数値例・チェック',
-      '一つの配賦基準を使う基本例です。',
-    ),
-    row(
-      '原価計算初級：仕掛品・製品・損益計算',
-      ['cb-inventory'],
-      '増減表と計算例',
-      '月初・月末を区別します。',
-    ),
-    row(
-      '原価計算初級：CVP・売上高差異',
-      ['cb-cvp'],
-      '分岐点・目標利益・価格数量差異',
-      '仮定を固定した単純例です。',
-    ),
-  ],
+  'cost-beginner': costCoverage.map(r=>row(r.competency,r.lessons,'説明・例題・独立練習・総合確認','現行の公式範囲との対応と確認方法は専用の対応表を参照。')),
   'boki-3': [
     row(
       '商業 第一：基本原理・取引・勘定',

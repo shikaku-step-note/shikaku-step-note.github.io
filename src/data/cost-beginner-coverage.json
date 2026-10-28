@@ -1,0 +1,1562 @@
+[
+  {
+    "id": "CB-C01",
+    "officialSection": "1(1)",
+    "competency": "目的・活動・資源を特定し、何のための消費かを説明する",
+    "proposedLessons": [
+      "cb2-purpose"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "同じ消費でも集計対象が異なる二事例を判断する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-purpose#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-purpose#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-purpose-q01",
+      "cb2-purpose-q02",
+      "cb2-purpose-q03",
+      "cb2-purpose-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r01"
+    ],
+    "lessons": [
+      "cb2-purpose"
+    ]
+  },
+  {
+    "id": "CB-C02",
+    "officialSection": "1(1)",
+    "competency": "購入・支出・消費・売上原価化の時点を区別する",
+    "proposedLessons": [
+      "cb2-purpose",
+      "cb2-cost-flow"
+    ],
+    "existingLessons": [
+      "cb-classify",
+      "cb-inventory"
+    ],
+    "gapAction": "split",
+    "representativeIndependentPractice": "購入量と使用量が異なる場合を理由付きで分類する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-purpose#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-purpose#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-purpose-q05",
+      "cb2-purpose-q06",
+      "cb2-purpose-q07",
+      "cb2-purpose-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r02"
+    ],
+    "lessons": [
+      "cb2-purpose",
+      "cb2-cost-flow"
+    ]
+  },
+  {
+    "id": "CB-C03",
+    "officialSection": "1(1)",
+    "competency": "数量・単価・時間・賃率から原価額を組み立て単位を検算する",
+    "proposedLessons": [
+      "cb2-purpose",
+      "cb2-materials",
+      "cb2-labor-expenses"
+    ],
+    "existingLessons": [
+      "cb-allocate"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "円/個と円/時間を混同せず異なる資料の金額を算出する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-labor-expenses#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-labor-expenses#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-labor-expenses-q01",
+      "cb2-labor-expenses-q02",
+      "cb2-labor-expenses-q03",
+      "cb2-labor-expenses-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r04"
+    ],
+    "lessons": [
+      "cb2-purpose",
+      "cb2-materials",
+      "cb2-labor-expenses"
+    ]
+  },
+  {
+    "id": "CB-C04",
+    "officialSection": "1(2)",
+    "competency": "部門・活動の把握と責任者の管理対象を区別する",
+    "proposedLessons": [
+      "cb2-departments"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "add lesson",
+    "representativeIndependentPractice": "発生部門の原価だけで責任者の成果を断定しない判断をする",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-departments#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-departments#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-departments-q01",
+      "cb2-departments-q02",
+      "cb2-departments-q03",
+      "cb2-departments-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r10"
+    ],
+    "lessons": [
+      "cb2-departments"
+    ]
+  },
+  {
+    "id": "CB-C05",
+    "officialSection": "1(2)",
+    "competency": "同じ製品・サービスの収益と原価を対応させる",
+    "proposedLessons": [
+      "cb2-departments",
+      "cb2-pnl"
+    ],
+    "existingLessons": [
+      "cb-classify",
+      "cb-inventory"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "売上と異なる期間・対象の原価を混ぜた表を直す",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-departments#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-departments#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-departments-q09",
+      "cb2-departments-q10",
+      "cb2-departments-q11",
+      "cb2-departments-q12"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r13"
+    ],
+    "lessons": [
+      "cb2-departments",
+      "cb2-pnl"
+    ]
+  },
+  {
+    "id": "CB-C06",
+    "officialSection": "1(3)",
+    "competency": "資源消費を材料費・労務費・経費へ分類する",
+    "proposedLessons": [
+      "cb2-elements"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "工場と本社の具体的な複数費目を理由付きで分類する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-elements#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-elements#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-elements-q01",
+      "cb2-elements-q02",
+      "cb2-elements-q03",
+      "cb2-elements-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r04"
+    ],
+    "lessons": [
+      "cb2-elements"
+    ]
+  },
+  {
+    "id": "CB-C07",
+    "officialSection": "1(3)",
+    "competency": "対象への追跡可能性から直接費・間接費を判断する",
+    "proposedLessons": [
+      "cb2-traceability"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "split",
+    "representativeIndependentPractice": "同じ費目が対象と記録条件により直接/間接となる条件を説明する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-traceability#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-traceability#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-traceability-q01",
+      "cb2-traceability-q02",
+      "cb2-traceability-q03",
+      "cb2-traceability-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r07"
+    ],
+    "lessons": [
+      "cb2-traceability"
+    ]
+  },
+  {
+    "id": "CB-C08",
+    "officialSection": "1(3)",
+    "competency": "費目と直接・間接の二つの分類軸を組み合わせる",
+    "proposedLessons": [
+      "cb2-elements",
+      "cb2-traceability"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "直接材料・間接材料・直接労務・間接労務・直接経費・間接経費を判定する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-traceability#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-traceability#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-traceability-q05",
+      "cb2-traceability-q06",
+      "cb2-traceability-q07",
+      "cb2-traceability-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r08"
+    ],
+    "lessons": [
+      "cb2-elements",
+      "cb2-traceability"
+    ]
+  },
+  {
+    "id": "CB-C09",
+    "officialSection": "1(4)",
+    "competency": "製造原価と販売費・一般管理費の目的を区別する",
+    "proposedLessons": [
+      "cb2-elements",
+      "cb2-pnl"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "同じ家賃/減価償却でも利用目的が異なる場合の処理を説明する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-elements#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-elements#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-elements-q05",
+      "cb2-elements-q06",
+      "cb2-elements-q07",
+      "cb2-elements-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r05"
+    ],
+    "lessons": [
+      "cb2-elements",
+      "cb2-pnl"
+    ]
+  },
+  {
+    "id": "CB-C10",
+    "officialSection": "1(4)",
+    "competency": "売上総利益と営業利益の算出範囲を区別する",
+    "proposedLessons": [
+      "cb2-pnl"
+    ],
+    "existingLessons": [
+      "cb-inventory"
+    ],
+    "gapAction": "split",
+    "representativeIndependentPractice": "利益額・率・費用範囲を表から読み取り検算する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-pnl#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-pnl#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-pnl-q05",
+      "cb2-pnl-q06",
+      "cb2-pnl-q07",
+      "cb2-pnl-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r08"
+    ],
+    "lessons": [
+      "cb2-pnl"
+    ]
+  },
+  {
+    "id": "CB-C11",
+    "officialSection": "3(1)",
+    "competency": "材料の月初・受入・消費・月末数量を材料記録から読む",
+    "proposedLessons": [
+      "cb2-materials"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "add lesson",
+    "representativeIndependentPractice": "材料元帳を用いた数量保存の不足値を求める。評価法の上位論点へ広げない",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-materials#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-materials#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-materials-q01",
+      "cb2-materials-q02",
+      "cb2-materials-q03",
+      "cb2-materials-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r01"
+    ],
+    "lessons": [
+      "cb2-materials"
+    ]
+  },
+  {
+    "id": "CB-C12",
+    "officialSection": "3(1)",
+    "competency": "指定された消費単価と消費量から直接材料費を計算する",
+    "proposedLessons": [
+      "cb2-materials"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "複数製品の投入量と完成数量が異なる資料から直課額を出す",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-materials#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-materials#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-materials-q09",
+      "cb2-materials-q10",
+      "cb2-materials-q11",
+      "cb2-materials-q12"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r13"
+    ],
+    "lessons": [
+      "cb2-materials"
+    ]
+  },
+  {
+    "id": "CB-C13",
+    "officialSection": "3(1)",
+    "competency": "作業時間と消費賃率から直接労務費を計算する",
+    "proposedLessons": [
+      "cb2-labor-expenses"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "add lesson",
+    "representativeIndependentPractice": "作業時間の製品別記録と間接作業の条件を区別する",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-labor-expenses#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-labor-expenses#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-labor-expenses-q01",
+      "cb2-labor-expenses-q02",
+      "cb2-labor-expenses-q03",
+      "cb2-labor-expenses-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r04"
+    ],
+    "lessons": [
+      "cb2-labor-expenses"
+    ]
+  },
+  {
+    "id": "CB-C14",
+    "officialSection": "3(1)",
+    "competency": "外注加工費・工場電力・減価償却等を条件に従い集計する",
+    "proposedLessons": [
+      "cb2-labor-expenses"
+    ],
+    "existingLessons": [
+      "cb-classify"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "直接追跡できる外注費と共通の経費を混ぜず集める",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-labor-expenses#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-labor-expenses#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-labor-expenses-q09",
+      "cb2-labor-expenses-q10",
+      "cb2-labor-expenses-q11",
+      "cb2-labor-expenses-q12",
+      "cb2-traceability-q06"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r06",
+      "cb2-unit-1-r08"
+    ],
+    "lessons": [
+      "cb2-labor-expenses"
+    ]
+  },
+  {
+    "id": "CB-C15",
+    "officialSection": "3(1)",
+    "competency": "直接費を対象へ直課し、共通費との二重集計を防ぐ",
+    "proposedLessons": [
+      "cb2-traceability",
+      "cb2-allocation"
+    ],
+    "existingLessons": [
+      "cb-allocate"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "直接材料/労務/経費と間接費の集計漏れと重複を直す",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-traceability#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-traceability#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-traceability-q09",
+      "cb2-traceability-q10",
+      "cb2-traceability-q11",
+      "cb2-traceability-q12"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-1-r09"
+    ],
+    "lessons": [
+      "cb2-traceability",
+      "cb2-allocation"
+    ]
+  },
+  {
+    "id": "CB-C16",
+    "officialSection": "3(1)",
+    "competency": "指定された配賦基準と対象範囲を読み取る",
+    "proposedLessons": [
+      "cb2-allocation"
+    ],
+    "existingLessons": [
+      "cb-allocate"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "作業時間・機械時間・数量の基準を取り違えない",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-allocation#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-allocation#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-allocation-q01",
+      "cb2-allocation-q02",
+      "cb2-allocation-q03",
+      "cb2-allocation-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r07"
+    ],
+    "lessons": [
+      "cb2-allocation"
+    ]
+  },
+  {
+    "id": "CB-C17",
+    "officialSection": "3(1)",
+    "competency": "間接費総額と基準量合計から配賦率を計算する",
+    "proposedLessons": [
+      "cb2-allocation"
+    ],
+    "existingLessons": [
+      "cb-allocate"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "総額と1基準単位当たりの違いを新しい資料で使う",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-allocation#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-allocation#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-allocation-q01",
+      "cb2-allocation-q02",
+      "cb2-allocation-q03",
+      "cb2-allocation-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r07"
+    ],
+    "lessons": [
+      "cb2-allocation"
+    ]
+  },
+  {
+    "id": "CB-C18",
+    "officialSection": "3(1)",
+    "competency": "製品別配賦額を計算し配賦総額の一致を検算する",
+    "proposedLessons": [
+      "cb2-allocation"
+    ],
+    "existingLessons": [
+      "cb-allocate"
+    ],
+    "gapAction": "add exam-level application",
+    "representativeIndependentPractice": "三対象や基準変更の資料を用い、指定端数処理まで確かめる",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-allocation#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-allocation#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-allocation-q09",
+      "cb2-allocation-q10",
+      "cb2-allocation-q11",
+      "cb2-allocation-q12"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r09"
+    ],
+    "lessons": [
+      "cb2-allocation"
+    ]
+  },
+  {
+    "id": "CB-C19",
+    "officialSection": "3(1)",
+    "competency": "直課額と配賦額から製品原価・均一条件の単位原価を求める",
+    "proposedLessons": [
+      "cb2-allocation",
+      "cb2-finished"
+    ],
+    "existingLessons": [
+      "cb-allocate"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "材料投入個数と完成個数の違いを保って単位原価を求める",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-allocation#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-allocation#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-allocation-q05",
+      "cb2-allocation-q06",
+      "cb2-allocation-q07",
+      "cb2-allocation-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r08",
+      "cb2-unit-3-r05"
+    ],
+    "lessons": [
+      "cb2-allocation",
+      "cb2-finished"
+    ]
+  },
+  {
+    "id": "CB-C20",
+    "officialSection": "1(4),3(1)",
+    "competency": "材料・仕掛品・製品・売上原価の流れを基礎仕訳と結び付ける",
+    "proposedLessons": [
+      "cb2-cost-flow"
+    ],
+    "existingLessons": [],
+    "gapAction": "add prerequisite",
+    "representativeIndependentPractice": "借方/貸方から説明し、販売時の製品原価振替の選択を独力で行う",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-cost-flow#objective-2",
+      "cb2-cost-flow#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-cost-flow#worked-2",
+      "cb2-cost-flow#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-cost-flow-q05",
+      "cb2-cost-flow-q06",
+      "cb2-cost-flow-q07",
+      "cb2-cost-flow-q08",
+      "cb2-cost-flow-q11",
+      "cb2-cost-flow-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-2-r11",
+      "cb2-unit-2-r10"
+    ],
+    "lessons": [
+      "cb2-cost-flow"
+    ]
+  },
+  {
+    "id": "CB-C21",
+    "officialSection": "3(2)",
+    "competency": "仕掛品の月初＋当月増加＝完成振替＋月末を使う",
+    "proposedLessons": [
+      "cb2-wip"
+    ],
+    "existingLessons": [
+      "cb-inventory"
+    ],
+    "gapAction": "split",
+    "representativeIndependentPractice": "未知数が完成額または月末額となる異なる向きの式を扱う",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-wip#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-wip#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-wip-q01",
+      "cb2-wip-q02",
+      "cb2-wip-q03",
+      "cb2-wip-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r01"
+    ],
+    "lessons": [
+      "cb2-wip"
+    ]
+  },
+  {
+    "id": "CB-C22",
+    "officialSection": "3(2)",
+    "competency": "追跡可能な未完成分または与えられた条件から月末仕掛品原価を求める",
+    "proposedLessons": [
+      "cb2-wip"
+    ],
+    "existingLessons": [
+      "cb-inventory"
+    ],
+    "gapAction": "add exam-level application",
+    "representativeIndependentPractice": "材料・労務・配賦費を条件に従い足す。完成度や工程別総合原価計算を使わない",
+    "sourceIds": [
+      "S02",
+      "S05"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-wip#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-wip#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-wip-q05",
+      "cb2-wip-q06",
+      "cb2-wip-q07",
+      "cb2-wip-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r02"
+    ],
+    "lessons": [
+      "cb2-wip"
+    ]
+  },
+  {
+    "id": "CB-C23",
+    "officialSection": "3(2)",
+    "competency": "製品の完成・販売・月末在庫の数量を区別する",
+    "proposedLessons": [
+      "cb2-finished"
+    ],
+    "existingLessons": [
+      "cb-inventory"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "期首在庫あり/なしの異なる生産販売資料で残量を出す",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-finished#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-finished#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-finished-q09",
+      "cb2-finished-q10",
+      "cb2-finished-q11",
+      "cb2-finished-q12",
+      "cb2-finished-q13"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r06"
+    ],
+    "lessons": [
+      "cb2-finished"
+    ]
+  },
+  {
+    "id": "CB-C24",
+    "officialSection": "3(2)",
+    "competency": "与えられた均一原価・評価条件で月末製品原価を求める",
+    "proposedLessons": [
+      "cb2-finished"
+    ],
+    "existingLessons": [
+      "cb-allocate",
+      "cb-inventory"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "原価総額・1個原価・在庫原価を切り替え端数条件を守る",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-finished#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-finished#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-finished-q05",
+      "cb2-finished-q06",
+      "cb2-finished-q07",
+      "cb2-finished-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r05"
+    ],
+    "lessons": [
+      "cb2-finished"
+    ]
+  },
+  {
+    "id": "CB-C25",
+    "officialSection": "3(3)",
+    "competency": "月初製品・完成原価・月末製品から売上原価を求める",
+    "proposedLessons": [
+      "cb2-finished",
+      "cb2-pnl"
+    ],
+    "existingLessons": [
+      "cb-inventory"
+    ],
+    "gapAction": "add exam-level application",
+    "representativeIndependentPractice": "仕掛品と製品の二段階が連動する新しい資料を解く",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-finished#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-finished#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-finished-q01",
+      "cb2-finished-q02",
+      "cb2-finished-q03",
+      "cb2-finished-q04"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r04"
+    ],
+    "lessons": [
+      "cb2-finished",
+      "cb2-pnl"
+    ]
+  },
+  {
+    "id": "CB-C26",
+    "officialSection": "3(3)",
+    "competency": "売上原価・販管費から売上総利益・営業利益の表を完成する",
+    "proposedLessons": [
+      "cb2-pnl"
+    ],
+    "existingLessons": [
+      "cb-inventory"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "二製品表の行と列の合計を照合し欠けた欄を求める",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-pnl#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-pnl#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-pnl-q05",
+      "cb2-pnl-q06",
+      "cb2-pnl-q07",
+      "cb2-pnl-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r08"
+    ],
+    "lessons": [
+      "cb2-pnl"
+    ]
+  },
+  {
+    "id": "CB-C27",
+    "officialSection": "3(3)",
+    "competency": "製品別原価・売上・販管費を集計し配賦条件付きの利益を比較する",
+    "proposedLessons": [
+      "cb2-product-profit"
+    ],
+    "existingLessons": [
+      "cb-inventory"
+    ],
+    "gapAction": "add lesson",
+    "representativeIndependentPractice": "共通販管費の指定基準と配賦前後の意味を説明する",
+    "sourceIds": [
+      "S02",
+      "S05"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-product-profit#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-product-profit#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-product-profit-q05",
+      "cb2-product-profit-q06",
+      "cb2-product-profit-q07",
+      "cb2-product-profit-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r11"
+    ],
+    "lessons": [
+      "cb2-product-profit"
+    ]
+  },
+  {
+    "id": "CB-C28",
+    "officialSection": "3(3)",
+    "competency": "サービス別の売上・直接費・共通費から利益を計算する",
+    "proposedLessons": [
+      "cb2-services"
+    ],
+    "existingLessons": [],
+    "gapAction": "add lesson",
+    "representativeIndependentPractice": "飲食・小売・役務の資料で費用対象を確かめ、製造在庫式を無条件に流用しない",
+    "sourceIds": [
+      "S02",
+      "S05"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-services#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-services#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-services-q05",
+      "cb2-services-q06",
+      "cb2-services-q07",
+      "cb2-services-q08"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-3-r16"
+    ],
+    "lessons": [
+      "cb2-services"
+    ]
+  },
+  {
+    "id": "CB-C29",
+    "officialSection": "2(1)",
+    "competency": "活動量と費用総額・単位費用の変化を区別する",
+    "proposedLessons": [
+      "cb2-behavior"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "split",
+    "representativeIndependentPractice": "一定期間・範囲の仮定の下で変動費総額と単位固定費を判断する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-behavior#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-behavior#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-behavior-q02",
+      "cb2-behavior-q03",
+      "cb2-behavior-q04",
+      "cb2-behavior-q05",
+      "cb2-behavior-q06",
+      "cb2-behavior-q07",
+      "cb2-behavior-q10",
+      "cb2-behavior-q11",
+      "cb2-behavior-q13"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-4-r02",
+      "cb2-unit-4-r01"
+    ],
+    "lessons": [
+      "cb2-behavior"
+    ]
+  },
+  {
+    "id": "CB-C30",
+    "officialSection": "2(1)",
+    "competency": "販売数量と販売単価から売上高を計算する",
+    "proposedLessons": [
+      "cb2-contribution",
+      "cb2-budget"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "客数/回数等の単位でも数量×単価を使い、販売数量と生産数量を混同しない",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-budget#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-budget#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-budget-q01",
+      "cb2-budget-q02",
+      "cb2-budget-q07"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-5-r01"
+    ],
+    "lessons": [
+      "cb2-contribution",
+      "cb2-budget"
+    ]
+  },
+  {
+    "id": "CB-C31",
+    "officialSection": "2(1)",
+    "competency": "単位変動費と活動量から変動費総額、各固定費から固定費総額を求める",
+    "proposedLessons": [
+      "cb2-behavior",
+      "cb2-contribution"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "一店舗の複数費目資料で変動/固定を分けて集計する",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-behavior#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-behavior#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-behavior-q02",
+      "cb2-behavior-q03",
+      "cb2-behavior-q04",
+      "cb2-behavior-q05",
+      "cb2-behavior-q06",
+      "cb2-behavior-q07",
+      "cb2-behavior-q10",
+      "cb2-behavior-q11",
+      "cb2-behavior-q13"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-4-r02"
+    ],
+    "lessons": [
+      "cb2-behavior",
+      "cb2-contribution"
+    ]
+  },
+  {
+    "id": "CB-C32",
+    "officialSection": "2(1)",
+    "competency": "売上高−変動費による貢献利益を総額・1単位で求める",
+    "proposedLessons": [
+      "cb2-contribution"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "総額と単位額を行き来し固定費回収の意味を説明する",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-contribution#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-contribution#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-contribution-q01",
+      "cb2-contribution-q02",
+      "cb2-contribution-q09"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-4-r04"
+    ],
+    "lessons": [
+      "cb2-contribution"
+    ]
+  },
+  {
+    "id": "CB-C33",
+    "officialSection": "2(1)",
+    "competency": "変動費率・貢献利益率を計算し式の分母へ使い分ける",
+    "proposedLessons": [
+      "cb2-contribution",
+      "cb2-break-even"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "百分率と小数、売上高と販売数量の違いを新しい資料で判断する",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-contribution#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-contribution#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-contribution-q06",
+      "cb2-contribution-q07",
+      "cb2-contribution-q08",
+      "cb2-contribution-q12",
+      "cb2-contribution-q13"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-4-r16",
+      "cb2-unit-4-r08"
+    ],
+    "lessons": [
+      "cb2-contribution",
+      "cb2-break-even"
+    ]
+  },
+  {
+    "id": "CB-C34",
+    "officialSection": "2(1)",
+    "competency": "貢献利益−固定費から営業利益を求め、利益式を検算する",
+    "proposedLessons": [
+      "cb2-contribution"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "売上−総費用と貢献利益−固定費の両方で一致を確かめる",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-contribution#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-contribution#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-contribution-q03",
+      "cb2-contribution-q04",
+      "cb2-contribution-q05",
+      "cb2-contribution-q10",
+      "cb2-contribution-q11",
+      "cb2-contribution-q14"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-4-r05"
+    ],
+    "lessons": [
+      "cb2-contribution"
+    ]
+  },
+  {
+    "id": "CB-C35",
+    "officialSection": "2(1)",
+    "competency": "1単位貢献利益から損益分岐点販売数量を求める",
+    "proposedLessons": [
+      "cb2-break-even"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "整数個数が必要な条件では等式解と最低達成数量を区別する",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-break-even#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-break-even#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-break-even-q01",
+      "cb2-break-even-q04",
+      "cb2-break-even-q07",
+      "cb2-break-even-q12"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-4-r07"
+    ],
+    "lessons": [
+      "cb2-break-even"
+    ]
+  },
+  {
+    "id": "CB-C36",
+    "officialSection": "2(1)",
+    "competency": "貢献利益率から損益分岐点売上高を求め、条件変更の影響を説明する",
+    "proposedLessons": [
+      "cb2-break-even",
+      "cb2-safety-changes"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "add exam-level application",
+    "representativeIndependentPractice": "売価・変動費・固定費の変更後に元の率を使わず再計算する",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-break-even#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-break-even#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-break-even-q02",
+      "cb2-break-even-q03",
+      "cb2-break-even-q10",
+      "cb2-break-even-q11",
+      "cb2-break-even-q14"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-4-r08"
+    ],
+    "lessons": [
+      "cb2-break-even",
+      "cb2-safety-changes"
+    ]
+  },
+  {
+    "id": "CB-C37",
+    "officialSection": "2(2)",
+    "competency": "予算と実績の数量・単価・売上高を同じ期間・範囲で整理する",
+    "proposedLessons": [
+      "cb2-budget"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "split",
+    "representativeIndependentPractice": "予算単価と実際単価、数量、総売上を表で区別する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-budget#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-budget#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-budget-q01",
+      "cb2-budget-q02",
+      "cb2-budget-q07"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-5-r01"
+    ],
+    "lessons": [
+      "cb2-budget"
+    ]
+  },
+  {
+    "id": "CB-C38",
+    "officialSection": "2(2)",
+    "competency": "指定する分解法で販売価格差異を計算する",
+    "proposedLessons": [
+      "cb2-sales-variance"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "実際数量×（実際単価−予算単価）という基準と符号を説明する",
+    "sourceIds": [
+      "S02",
+      "S05"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-sales-variance#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-sales-variance#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-sales-variance-q01",
+      "cb2-sales-variance-q02",
+      "cb2-sales-variance-q04",
+      "cb2-sales-variance-q05",
+      "cb2-sales-variance-q07"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-5-r13"
+    ],
+    "lessons": [
+      "cb2-sales-variance"
+    ]
+  },
+  {
+    "id": "CB-C39",
+    "officialSection": "2(2)",
+    "competency": "指定する分解法で販売数量差異を計算する",
+    "proposedLessons": [
+      "cb2-sales-variance"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "deepen",
+    "representativeIndependentPractice": "予算単価×（実際数量−予算数量）という基準を説明する",
+    "sourceIds": [
+      "S02",
+      "S05"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-sales-variance#objective-1"
+    ],
+    "workedExamples": [
+      "cb2-sales-variance#worked-1"
+    ],
+    "independentQuestionIds": [
+      "cb2-sales-variance-q01",
+      "cb2-sales-variance-q02",
+      "cb2-sales-variance-q04",
+      "cb2-sales-variance-q05",
+      "cb2-sales-variance-q07"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-5-r04"
+    ],
+    "lessons": [
+      "cb2-sales-variance"
+    ]
+  },
+  {
+    "id": "CB-C40",
+    "officialSection": "2(2)",
+    "competency": "価格差異と数量差異の和を総売上高差異へ照合する",
+    "proposedLessons": [
+      "cb2-sales-variance",
+      "cb2-variance-cases"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "add exam-level application",
+    "representativeIndependentPractice": "交差する数量と単価を一貫させ、中間売上高の橋渡しで検算する",
+    "sourceIds": [
+      "S02"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-sales-variance#objective-2"
+    ],
+    "workedExamples": [
+      "cb2-sales-variance#worked-2"
+    ],
+    "independentQuestionIds": [
+      "cb2-sales-variance-q03",
+      "cb2-sales-variance-q06",
+      "cb2-sales-variance-q08",
+      "cb2-sales-variance-q12",
+      "cb2-sales-variance-q13"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-5-r05"
+    ],
+    "lessons": [
+      "cb2-sales-variance",
+      "cb2-variance-cases"
+    ]
+  },
+  {
+    "id": "CB-C41",
+    "officialSection": "2(2)",
+    "competency": "逆向きの価格・数量変化と有利/不利を読み、売上差と利益差を区別する",
+    "proposedLessons": [
+      "cb2-variance-cases"
+    ],
+    "existingLessons": [
+      "cb-cvp"
+    ],
+    "gapAction": "add practice",
+    "representativeIndependentPractice": "増収でも利益改善を断定できない場合を費用条件とともに説明する",
+    "sourceIds": [
+      "S02",
+      "S05"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-variance-cases#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-variance-cases#worked-3"
+    ],
+    "independentQuestionIds": [
+      "cb2-variance-cases-q04",
+      "cb2-variance-cases-q08",
+      "cb2-variance-cases-q09",
+      "cb2-variance-cases-q13",
+      "cb2-variance-cases-q14"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-5-r09",
+      "cb2-unit-5-r03"
+    ],
+    "lessons": [
+      "cb2-variance-cases"
+    ]
+  },
+  {
+    "id": "CB-C42",
+    "officialSection": "1〜3総合",
+    "competency": "原価分類・直課配賦・在庫・利益・CVP・売上差異を共通資料から必要な順に解く",
+    "proposedLessons": [
+      "cb2-integration"
+    ],
+    "existingLessons": [],
+    "gapAction": "add exam-level application",
+    "representativeIndependentPractice": "独立した二つの本番時間模試と、段階的な学習用統合資料で結果を検算する",
+    "sourceIds": [
+      "S02",
+      "S03"
+    ],
+    "evidenceStatus": "implemented-and-independently-reviewed",
+    "teachingAnchors": [
+      "cb2-integration#objective-1",
+      "cb2-integration#objective-2",
+      "cb2-integration#objective-3"
+    ],
+    "workedExamples": [
+      "cb2-integration#worked-1",
+      "cb2-integration#worked-2",
+      "cb2-integration#worked-3",
+      "cb2-integration#worked-4"
+    ],
+    "independentQuestionIds": [
+      "cb2-integration-q01",
+      "cb2-integration-q02",
+      "cb2-integration-q03",
+      "cb2-integration-q04",
+      "cb2-integration-q05",
+      "cb2-integration-q06",
+      "cb2-integration-q07",
+      "cb2-integration-q08",
+      "cb2-integration-q09",
+      "cb2-integration-q10",
+      "cb2-integration-q11",
+      "cb2-integration-q12",
+      "cb2-integration-q13",
+      "cb2-integration-q14"
+    ],
+    "unitReviewQuestionIds": [
+      "cb2-unit-5-r10",
+      "cb2-unit-5-r11",
+      "cb2-unit-5-r12",
+      "cb2-unit-5-r14"
+    ],
+    "lessons": [
+      "cb2-integration"
+    ]
+  }
+]

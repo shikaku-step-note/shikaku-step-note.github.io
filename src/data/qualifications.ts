@@ -2,6 +2,7 @@ import { bokiCourses, bokiReviewed } from './bookkeeping';
 import { zeirishiSubjects, zeirishiReviewed, zeirishiOutline } from './zeirishi';
 import { zeirishiDeepLessons } from './zeirishi-expanded';
 import { beginnerReviewed } from './boki-beginner';
+import { costReviewed, costLessonIds } from './cost-beginner';
 export interface Qualification {
   id: string;
   name: string;
@@ -95,18 +96,24 @@ export const qualifications: Qualification[] = [
       intro: '取引と数字の意味を、例題から一つずつ。',
       description: c.id === 'boki-beginner'
         ? '日商簿記初級の2026年度範囲を、24の詳しいレッスンと独自の例題・理解度チェックで学びます。用語・復習テストと40分の総合模試2回を無料で利用できます。'
-        : `${c.name}を独自の解説・例題・理解度チェック・用語確認で学びます。適用範囲と教材の制約は対応表で確認できます。`,
+        : c.id === 'cost-beginner'
+          ? `原価の分類から在庫と利益、CVP・予算実績差異まで、${costLessonIds.length}レッスンの説明と例題で順に学びます。用語・総合確認と、異なる資料を使う40分模試2回を無料で利用できます。`
+          : `${c.name}を独自の解説・例題・理解度チェック・用語確認で学びます。適用範囲と教材の制約は対応表で確認できます。`,
       audience: ['取引の理由を理解しながら学びたい方', '例題を紙と電卓で確かめたい方'],
-      outcome: '仕訳・計算の手順を説明し、条件に合う処理を選ぶ練習をします。',
+      outcome: c.id === 'cost-beginner'
+        ? '原価が利益へつながる流れを説明し、資料の条件に合う計算方法を選ぶ練習をします。'
+        : '仕訳・計算の手順を説明し、条件に合う処理を選ぶ練習をします。',
       prerequisite: c.prerequisite,
       groups: c.groups,
-      official: c.id === 'boki-beginner' ? 'https://www.kentei.ne.jp/bookkeeping/class-s/effect' : 'https://www.kentei.ne.jp/bookkeeping',
+      official: c.id === 'boki-beginner' ? 'https://www.kentei.ne.jp/bookkeeping/class-s/effect' : c.id === 'cost-beginner' ? 'https://www.kentei.ne.jp/bookkeeping/ca/effect' : 'https://www.kentei.ne.jp/bookkeeping',
       officialName: '日本商工会議所：簿記',
-      reviewed: c.id === 'boki-beginner' ? beginnerReviewed : bokiReviewed,
+      reviewed: c.id === 'boki-beginner' ? beginnerReviewed : c.id === 'cost-beginner' ? costReviewed : bokiReviewed,
       scope:
         c.id === 'boki-beginner'
           ? '2026年度の簿記初級を対象に、基本原理、期中取引、月次集計を順に学ぶ試験学習コースです。決算整理は対象外です。2027年4月施行の改定版とは分け、詳しい対応と確認記録を公開しています。難易度校正や専門家監修を経た公式教材ではありません。'
-          : '2026年度適用範囲を参照した独自教材です。公式の問題・採点・難易度を再現するものではありません。対応表で説明・練習の到達範囲をご確認ください。',
+          : c.id === 'cost-beginner'
+            ? '現行の公式範囲に沿って、原価の基礎概念、利益の計画と統制、製品・サービス別の損益計算を学びます。原価の消費と支出の違いから始め、資料を読み、方法を選び、計算とその理由を確かめます。'
+            : '2026年度適用範囲を参照した独自教材です。公式の問題・採点・難易度を再現するものではありません。対応表で説明・練習の到達範囲をご確認ください。',
     })),
   {
     id: 'it-passport',
@@ -195,7 +202,7 @@ const displayOrder = [
 ];
 qualifications.sort((a, b) => displayOrder.indexOf(a.id) - displayOrder.indexOf(b.id));
 export const qualificationById = (id: string) => qualifications.find((q) => q.id === id)!;
-export const qualificationLabel = (q: Qualification) => q.id === 'boki-beginner' ? '詳しい試験学習コース' : q.status === 'course' ? '基礎コース' : '入門サンプル';
+export const qualificationLabel = (q: Qualification) => ['boki-beginner','cost-beginner'].includes(q.id) ? '詳しい試験学習コース' : q.status === 'course' ? '基礎コース' : '入門サンプル';
 export const availabilityText = qualifications
   .map((q) => `${q.name}（${qualificationLabel(q)}）`)
   .join('、');

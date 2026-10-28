@@ -108,7 +108,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
         <p class="lead">{d.description}</p>
         <p class="sample-caption">
           {d.archived
-            ? (q.id === 'boki-beginner' ? '旧版の要点教材（記録を保管）' : '旧サンプル教材（記録を保管）')
+            ? (['boki-beginner', 'cost-beginner'].includes(q.id) ? '旧版の要点教材（記録を保管）' : '旧サンプル教材（記録を保管）')
             : d.sample
               ? '入門サンプル教材・独自の解説と練習問題'
               : (d.scopeLabel ?? `シラバスVer.6.5・ユニット${d.unit} ${unit?.name}・独自教材`)}
@@ -129,7 +129,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
       {d.sample && (
         <div class="notice compact">
           <p>
-            {q.id === 'boki-beginner' && d.archived ? 'このページは拡充前の要点教材です。現行課程は技能ごとに分割した新しいレッスンで学べます。' : 'この教材は学習機能を体験するためのサンプルです。試験範囲を網羅していません。'}
+            {['boki-beginner', 'cost-beginner'].includes(q.id) && d.archived ? 'このページは拡充前の要点教材です。現行課程は技能ごとに分割した新しいレッスンで学べます。' : 'この教材は学習機能を体験するためのサンプルです。試験範囲を網羅していません。'}
             {q.id === 'fp-3' ? '個別の投資・税務・保険の助言を目的としません。' : ''}
           </p>
           {d.archived && (
@@ -286,7 +286,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
       <section class="source-note">
         <h2>出典・教材について</h2>
         <p>
-          文章・例題・図表は当サイトが作成した{q.id === 'boki-beginner' && d.archived ? '旧版の要点教材' : d.sample ? '入門用サンプル' : '独自教材'}
+          文章・例題・図表は当サイトが作成した{['boki-beginner', 'cost-beginner'].includes(q.id) && d.archived ? '旧版の要点教材' : d.sample ? '入門用サンプル' : '独自教材'}
           です。公式問題の転載ではありません。資格概要の参照先：
           <a href={q.official} target="_blank" rel="noopener noreferrer">
             {q.officialName}（新しいタブ）

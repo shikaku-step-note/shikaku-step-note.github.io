@@ -3,10 +3,10 @@
   "stableId": "cb-cvp",
   "qualification": "cost-beginner",
   "title": "損益分岐点と売上高の差異を計算する",
-  "description": "損益分岐点と売上高の差異を計算するを、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
+  "description": "旧版の要点教材です。現在の学習ツリーと過去の記録を確認できます。",
   "order": 4,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 2,
   "syllabus": [
@@ -43,7 +43,8 @@
       "term": "損益分岐点",
       "definition": "売上高と総費用が等しく利益がゼロになる点"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 

@@ -1,0 +1,352 @@
+[
+  {
+    "id": "cb2-unit-1-r02",
+    "expression": "50*350",
+    "expected": "17,500円"
+  },
+  {
+    "id": "cb2-unit-1-r03",
+    "expression": "126000/90",
+    "expected": "1,400円"
+  },
+  {
+    "id": "cb2-unit-1-r06",
+    "expression": "84000+66000+30000",
+    "expected": "180,000円"
+  },
+  {
+    "id": "cb2-unit-1-r09",
+    "expression": "95000+40000*3/4",
+    "expected": "125,000円"
+  },
+  {
+    "id": "cb2-unit-1-r11",
+    "expression": "36000+30000*4/10",
+    "expected": "48,000円"
+  },
+  {
+    "id": "cb2-unit-2-r01",
+    "expression": "45+120-38",
+    "expected": "127"
+  },
+  {
+    "id": "cb2-unit-2-r02",
+    "expression": "(75-52)*600",
+    "expected": "13,800円"
+  },
+  {
+    "id": "cb2-unit-2-r03",
+    "expression": "92000-38000-34000",
+    "expected": "20,000円"
+  },
+  {
+    "id": "cb2-unit-2-r04",
+    "expression": "36*1800",
+    "expected": "64,800円"
+  },
+  {
+    "id": "cb2-unit-2-r05",
+    "expression": "6*2000",
+    "expected": "12,000円"
+  },
+  {
+    "id": "cb2-unit-2-r06",
+    "expression": "72000/6",
+    "expected": "12,000円"
+  },
+  {
+    "id": "cb2-unit-2-r08",
+    "expression": "88000+450*64",
+    "expected": "116,800円"
+  },
+  {
+    "id": "cb2-unit-2-r09",
+    "expression": "60000*2/3-60000/3",
+    "expected": "20,000円"
+  },
+  {
+    "id": "cb2-unit-2-r12",
+    "expression": "16000+90000-82000",
+    "expected": "24,000円"
+  },
+  {
+    "id": "cb2-unit-3-r01",
+    "expression": "28000+192000-35000",
+    "expected": "185,000円"
+  },
+  {
+    "id": "cb2-unit-3-r02",
+    "expression": "14000+8000+2000+6000",
+    "expected": "30,000円"
+  },
+  {
+    "id": "cb2-unit-3-r03",
+    "expression": "146000+22000-18000",
+    "expected": "150,000円"
+  },
+  {
+    "id": "cb2-unit-3-r04",
+    "expression": "44000+216000-38000",
+    "expected": "222,000円"
+  },
+  {
+    "id": "cb2-unit-3-r05",
+    "expression": "(300-240)*150000/300",
+    "expected": "30,000円"
+  },
+  {
+    "id": "cb2-unit-3-r06",
+    "expression": "20+180-35",
+    "expected": "165個"
+  },
+  {
+    "id": "cb2-unit-3-r07",
+    "expression": "190000-40000",
+    "expected": "150,000円"
+  },
+  {
+    "id": "cb2-unit-3-r08",
+    "expression": "480000-305000-92000",
+    "expected": "83,000円"
+  },
+  {
+    "id": "cb2-unit-3-r09",
+    "expression": "150000/500000*100",
+    "expected": "30%"
+  },
+  {
+    "id": "cb2-unit-3-r10",
+    "expression": "150000+60000*80/120",
+    "expected": "190,000円"
+  },
+  {
+    "id": "cb2-unit-3-r11",
+    "expression": "280000-168000-12000-25000",
+    "expected": "75,000円"
+  },
+  {
+    "id": "cb2-unit-3-r14",
+    "expression": "8*2400+1800+2000+3000",
+    "expected": "26,000円"
+  },
+  {
+    "id": "cb2-unit-3-r15",
+    "expression": "120000-30000",
+    "expected": "90,000円"
+  },
+  {
+    "id": "cb2-unit-4-r02",
+    "expression": "320*400+48000",
+    "expected": "176,000円"
+  },
+  {
+    "id": "cb2-unit-4-r04",
+    "expression": "(1250-750)*360",
+    "expected": "180,000円"
+  },
+  {
+    "id": "cb2-unit-4-r05",
+    "expression": "400000-180000-20000-140000",
+    "expected": "60,000円"
+  },
+  {
+    "id": "cb2-unit-4-r06",
+    "expression": "420*35",
+    "expected": "14,700円"
+  },
+  {
+    "id": "cb2-unit-4-r07",
+    "expression": "198000/(1600-1000)",
+    "expected": "330個"
+  },
+  {
+    "id": "cb2-unit-4-r08",
+    "expression": "147000/0.35",
+    "expected": "420,000円"
+  },
+  {
+    "id": "cb2-unit-4-r10",
+    "expression": "(225000+90000)/750",
+    "expected": "420個"
+  },
+  {
+    "id": "cb2-unit-4-r11",
+    "expression": "800+(160000+80000)/400",
+    "expected": "1,400円"
+  },
+  {
+    "id": "cb2-unit-4-r12",
+    "expression": "145",
+    "expected": "145個"
+  },
+  {
+    "id": "cb2-unit-4-r13",
+    "expression": "(600000-450000)/600000*100",
+    "expected": "25%"
+  },
+  {
+    "id": "cb2-unit-4-r14",
+    "expression": "(1000-950)*400",
+    "expected": "20,000円"
+  },
+  {
+    "id": "cb2-unit-5-r01",
+    "expression": "250*1760",
+    "expected": "440,000円"
+  },
+  {
+    "id": "cb2-unit-5-r02",
+    "expression": "456000/480000*100",
+    "expected": "95%"
+  },
+  {
+    "id": "cb2-unit-5-r04",
+    "expression": "(120-100)*3000",
+    "expected": "60,000円"
+  },
+  {
+    "id": "cb2-unit-5-r07",
+    "expression": "42000-18000",
+    "expected": "24,000円"
+  },
+  {
+    "id": "cb2-unit-5-r09",
+    "expression": "(4800-5000)*44",
+    "expected": "−8,800円"
+  },
+  {
+    "id": "cb2-unit-5-r10",
+    "expression": "500000-(40000+20000+300000-30000-50000)-90000",
+    "expected": "130,000円"
+  },
+  {
+    "id": "cb2-unit-5-r12",
+    "expression": "20000-5000-12000+3000",
+    "expected": "6,000円"
+  },
+  {
+    "id": "cb2-unit-4-r16",
+    "expression": "(1500-900)/1500*100",
+    "expected": "40%"
+  },
+  {
+    "id": "cb2-unit-5-r13",
+    "expression": "(3800-4000)*75",
+    "expected": "−15,000円"
+  },
+  {
+    "id": "cb2-unit-1-r13",
+    "expression": "180000-90000-30000",
+    "expected": "60,000円"
+  },
+  {
+    "id": "cb2-unit-2-r13",
+    "expression": "60*500",
+    "expected": "30,000円"
+  },
+  {
+    "id": "cb2-unit-3-r16",
+    "expression": "96000-36000-18000-12000",
+    "expected": "30,000円"
+  },
+  {
+    "id": "cb2-unit-5-r14",
+    "expression": "(210000+90000)/(2400-1200-200)",
+    "expected": "300個"
+  },
+  {
+    "id": "cb2-all-r01",
+    "expression": "(49000+112000+35000)/70",
+    "expected": "2,800円"
+  },
+  {
+    "id": "cb2-all-r02",
+    "expression": "24000+80000",
+    "expected": "104,000円"
+  },
+  {
+    "id": "cb2-all-r04",
+    "expression": "68000+42000",
+    "expected": "110,000円"
+  },
+  {
+    "id": "cb2-all-r05",
+    "expression": "(30+90-20-85)*400",
+    "expected": "6,000円"
+  },
+  {
+    "id": "cb2-all-r06",
+    "expression": "96000/12+5*1600",
+    "expected": "16,000円"
+  },
+  {
+    "id": "cb2-all-r07",
+    "expression": "88000*30/(30+50)",
+    "expected": "33,000円"
+  },
+  {
+    "id": "cb2-all-r09",
+    "expression": "12000+147000-139000",
+    "expected": "20,000円"
+  },
+  {
+    "id": "cb2-all-r10",
+    "expression": "25000+10000+200000-15000-180000",
+    "expected": "40,000円"
+  },
+  {
+    "id": "cb2-all-r11",
+    "expression": "126000+14000",
+    "expected": "140,000円"
+  },
+  {
+    "id": "cb2-all-r12",
+    "expression": "80*1500-80*(80000/100)-12000",
+    "expected": "44,000円"
+  },
+  {
+    "id": "cb2-all-r13",
+    "expression": "5*2000+24000*5/8",
+    "expected": "25,000円"
+  },
+  {
+    "id": "cb2-all-r14",
+    "expression": "450*(260-200)",
+    "expected": "27,000円"
+  },
+  {
+    "id": "cb2-all-r15",
+    "expression": "(2000-1100-100)/2000*100",
+    "expected": "40%"
+  },
+  {
+    "id": "cb2-all-r16",
+    "expression": "157",
+    "expected": "157個"
+  },
+  {
+    "id": "cb2-all-r17",
+    "expression": "1800-(200000+150000)/500",
+    "expected": "1,100円"
+  },
+  {
+    "id": "cb2-all-r18",
+    "expression": "(1200-720-30)*400-120000",
+    "expected": "60,000円"
+  },
+  {
+    "id": "cb2-all-r20",
+    "expression": "(1350-1400)*160",
+    "expected": "−8,000円"
+  },
+  {
+    "id": "cb2-all-r21",
+    "expression": "110*880+48*2050-(100*900+50*2000)",
+    "expected": "5,200円"
+  },
+  {
+    "id": "cb2-all-r22",
+    "expression": "650000-(45000+20000+360000-35000-50000)-105000",
+    "expected": "205,000円"
+  }
+]

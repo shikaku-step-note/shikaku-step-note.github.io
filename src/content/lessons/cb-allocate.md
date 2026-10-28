@@ -3,10 +3,10 @@
   "stableId": "cb-allocate",
   "qualification": "cost-beginner",
   "title": "間接費を配賦し、製品ごとの原価を求める",
-  "description": "間接費を配賦し、製品ごとの原価を求めるを、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
+  "description": "旧版の要点教材です。現在の学習ツリーと過去の記録を確認できます。",
   "order": 2,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 1,
   "syllabus": [
@@ -43,7 +43,8 @@
       "term": "製造原価",
       "definition": "製品の製造に要した原価"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 

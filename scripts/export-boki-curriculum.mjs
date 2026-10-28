@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiCoverage } from '../src/data/boki-coverage.ts';
 import { beginnerCurriculum } from './beginner-curriculum.mjs';
+import { costCurriculum } from './cost-curriculum.mjs';
 import {
   bokiCourses,
   bokiAssessments,
@@ -31,6 +32,10 @@ for (const c of bokiCourses) {
   ];
   if (c.id === 'boki-beginner') {
     writeFileSync(`public/downloads/${c.id}-curriculum.txt`,beginnerCurriculum(rows).join('\n')+'\n');
+    continue;
+  }
+  if (c.id === 'cost-beginner') {
+    writeFileSync(`public/downloads/${c.id}-curriculum.txt`,costCurriculum(rows).join('\n')+'\n');
     continue;
   }
   c.groups.forEach((g, i) => {

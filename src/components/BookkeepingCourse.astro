@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import type { Qualification } from '../data/qualifications';
 import { bokiCourse, bokiCourses, bokiAssessments, bokiFieldNames } from '../data/bookkeeping';
 import { beginnerReviewed, beginnerWorkload } from '../data/boki-beginner';
+import { costReviewed, costWorkload } from '../data/cost-beginner';
 import { href } from '../lib/site';
 import Share from './Share.astro';
 import Icon from './Icon.astro';
@@ -14,7 +15,8 @@ const { q, lessons } = Astro.props;
 const course = bokiCourse(q.id)!;
 const tests = bokiAssessments(lessons).filter((a) => a.kind !== 'lesson');
 const beginner = q.id === 'boki-beginner';
-const workload = beginner ? beginnerWorkload(lessons) : undefined;
+const cost = q.id === 'cost-beginner';
+const workload = beginner ? beginnerWorkload(lessons) : cost ? costWorkload(lessons) : undefined;
 ---
 
 <div class="container page-section">
@@ -32,7 +34,7 @@ const workload = beginner ? beginnerWorkload(lessons) : undefined;
         <h2>例題から、処理の理由まで学ぶ</h2>
         <p>{q.scope}</p>
         <p>{course.prerequisite}</p>
-        <div class="notice compact">
+        {cost ? <p>対象は原価計算初級の現行範囲です。公開されている2027年度の案内でも、原価計算初級の範囲に変更はありません。</p> : <div class="notice compact">
           <strong>2026年度の範囲を参照する独自教材</strong>
           <p>
             公式問題の転載や公認教材ではありません。用語の説明・例題・練習で扱う範囲を対応表に示します。模試の配点と採点は当サイト独自です。
@@ -40,7 +42,7 @@ const workload = beginner ? beginnerWorkload(lessons) : undefined;
           <p>
             2027年4月からの出題区分表は確定済みです。本コースの適用年度と混同せず、受験する年度の公式資料をご確認ください。
           </p>
-        </div>
+        </div>}
         <div class="assessment-links">
           <a href={href(`qualifications/${q.id}/coverage/`)}>対応表・公式資料・教材の制約</a>
           <a href={href(`downloads/${q.id}-curriculum.txt`)} download>
@@ -113,7 +115,7 @@ const workload = beginner ? beginnerWorkload(lessons) : undefined;
       <section class="course-section">
         <h2>総復習と模擬試験</h2>
         <p>
-          {beginner ? 'ユニット総合確認はレッスン末尾とは別の独自問題です。総復習24問は新しい複合問題12問とユニット確認の再利用12問。用語は本文の定義から出題し、用語総復習では同じ問題を再利用します。40分模試2回には別の独自問題と月次の共通資料を使います。' : 'ユニット総合確認と総復習はレッスンの問題を再利用します。用語確認は各レッスンの定義から出題します。模試は別の独自問題です。'}
+          {beginner ? 'ユニット総合確認はレッスン末尾とは別の独自問題です。総復習24問は新しい複合問題12問とユニット確認の再利用12問。用語は本文の定義から出題し、用語総復習では同じ問題を再利用します。40分模試2回には別の独自問題と月次の共通資料を使います。' : cost ? 'ユニットの総合確認と全体の復習は、レッスン末の問題とは別の条件で解きます。用語総復習は各ユニットの用語問題を再利用します。模試は2回とも異なる独自問題で、資料の読み取りから製品・サービス別の利益まで確かめます。' : 'ユニット総合確認と総復習はレッスンの問題を再利用します。用語確認は各レッスンの定義から出題します。模試は別の独自問題です。'}
         </p>
         <div class="assessment-links">
           {tests
@@ -151,7 +153,7 @@ const workload = beginner ? beginnerWorkload(lessons) : undefined;
           当サイトの学習時間と練習得点は独自の目安です。受験申込・試験の実施は主催者の公式案内をご利用ください。
         </p>
         <a href={q.official}>日本商工会議所の案内</a>
-        <p>公式資料の確認：{beginner ? beginnerReviewed : '2026-10-25'}</p>
+        <p>公式資料の確認：{beginner ? beginnerReviewed : cost ? costReviewed : '2026-10-25'}</p>
       </div>
       <div class="sidebar-box">
         <h2>この端末に保存</h2>

@@ -2,6 +2,7 @@ import bank from './boki-questions.json';
 import mockBank from './boki-mock.json';
 import type { Assessment, Question } from '../lib/assessment';
 import { beginnerAssessments, beginnerGroups, beginnerPlan } from './boki-beginner';
+import { costAssessments, costGroups, costPlan } from './cost-beginner';
 export const bokiReviewed = '2026-10-25';
 export const bokiVersion = 'boki-2026-v1';
 export const bokiSources = [
@@ -185,11 +186,11 @@ export const bokiCourses = [
     name: '日商原価計算初級',
     minutes: 40,
     source: 'cost',
-    groups: ['原価の分類と集計', '利益計画と製品別の損益'],
+    groups: costGroups,
     prerequisite:
       '割合と四則計算を使います。簿記初級の受験は必須ではありません。原価と支出の違いから学べます。',
     next: 'boki-2',
-    plan: '1日30分を週5日、4週間を目安にします。原価分類、配賦、在庫と損益、CVP・差異分析の順に進み、最後の週に用語の総復習と40分の演習を置きます。',
+    plan: costPlan,
   },
   {
     id: 'boki-3',
@@ -243,6 +244,10 @@ export function bokiAssessments(lessons: Lesson[]): Assessment[] {
   for (const course of bokiCourses) {
     if (course.id === 'boki-beginner') {
       result.push(...beginnerAssessments(lessons, entries, (mockBank as Record<string, Question[]>)['boki-beginner-mock']!));
+      continue;
+    }
+    if (course.id === 'cost-beginner') {
+      result.push(...costAssessments(lessons, entries, (mockBank as Record<string, Question[]>)['cost-beginner-mock']!));
       continue;
     }
     const rows = lessons

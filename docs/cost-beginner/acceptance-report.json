@@ -1,0 +1,324 @@
+{
+  "qualification": "日商原価計算初級",
+  "reviewedOn": "2026-10-28",
+  "scope": "現行公式3領域。2018年度からの範囲に2026・2027年度の変更なし。公式の区分は原価計算初級一つ。",
+  "before": {
+    "lessons": 4,
+    "lessonQuestions": 16,
+    "shortPracticeItems": 15,
+    "fullMockForms": 0
+  },
+  "after": {
+    "lessons": 22,
+    "units": 5,
+    "workedExamples": 75,
+    "lessonQuestions": 287,
+    "numericLessonInputs": 175,
+    "independentUnitReviewQuestions": 72,
+    "independentCumulativeQuestions": 22,
+    "glossaryTerms": 147,
+    "mockForms": 2,
+    "mockItemsPerForm": 37,
+    "mockTotalItems": 74,
+    "competencies": 42,
+    "archivedLessonsPreserved": 4,
+    "uniqueCurrentScoredQuestionIds": 602
+  },
+  "depth": {
+    "teachingCharactersMin": 3958,
+    "teachingCharactersMax": 5993,
+    "teachingCharactersTotal": 96201,
+    "measurement": "Metadata, source section, headings, HTML markup, links and whitespace excluded. Counts are a depth guard, not educational proof."
+  },
+  "lessonDetails": [
+    {
+      "id": "cb2-purpose",
+      "order": 1,
+      "unit": 1,
+      "minutes": 60,
+      "teachingCharacters": 4685,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 4
+    },
+    {
+      "id": "cb2-elements",
+      "order": 2,
+      "unit": 1,
+      "minutes": 60,
+      "teachingCharacters": 4559,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 4
+    },
+    {
+      "id": "cb2-traceability",
+      "order": 3,
+      "unit": 1,
+      "minutes": 65,
+      "teachingCharacters": 4629,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 4
+    },
+    {
+      "id": "cb2-departments",
+      "order": 4,
+      "unit": 1,
+      "minutes": 60,
+      "teachingCharacters": 4553,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 5
+    },
+    {
+      "id": "cb2-materials",
+      "order": 5,
+      "unit": 2,
+      "minutes": 70,
+      "teachingCharacters": 4558,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 8
+    },
+    {
+      "id": "cb2-labor-expenses",
+      "order": 6,
+      "unit": 2,
+      "minutes": 70,
+      "teachingCharacters": 4605,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 8
+    },
+    {
+      "id": "cb2-allocation",
+      "order": 7,
+      "unit": 2,
+      "minutes": 75,
+      "teachingCharacters": 4504,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 8
+    },
+    {
+      "id": "cb2-cost-flow",
+      "order": 8,
+      "unit": 2,
+      "minutes": 80,
+      "teachingCharacters": 4635,
+      "workedExamples": 4,
+      "lessonQuestions": 12,
+      "numericInputs": 4
+    },
+    {
+      "id": "cb2-wip",
+      "order": 9,
+      "unit": 3,
+      "minutes": 75,
+      "teachingCharacters": 4259,
+      "workedExamples": 3,
+      "lessonQuestions": 13,
+      "numericInputs": 9
+    },
+    {
+      "id": "cb2-finished",
+      "order": 10,
+      "unit": 3,
+      "minutes": 75,
+      "teachingCharacters": 4206,
+      "workedExamples": 3,
+      "lessonQuestions": 13,
+      "numericInputs": 10
+    },
+    {
+      "id": "cb2-pnl",
+      "order": 11,
+      "unit": 3,
+      "minutes": 75,
+      "teachingCharacters": 4194,
+      "workedExamples": 3,
+      "lessonQuestions": 13,
+      "numericInputs": 8
+    },
+    {
+      "id": "cb2-product-profit",
+      "order": 12,
+      "unit": 3,
+      "minutes": 90,
+      "teachingCharacters": 4177,
+      "workedExamples": 3,
+      "lessonQuestions": 13,
+      "numericInputs": 10
+    },
+    {
+      "id": "cb2-services",
+      "order": 13,
+      "unit": 3,
+      "minutes": 85,
+      "teachingCharacters": 4217,
+      "workedExamples": 3,
+      "lessonQuestions": 13,
+      "numericInputs": 9
+    },
+    {
+      "id": "cb2-behavior",
+      "order": 14,
+      "unit": 4,
+      "minutes": 65,
+      "teachingCharacters": 4261,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 8
+    },
+    {
+      "id": "cb2-contribution",
+      "order": 15,
+      "unit": 4,
+      "minutes": 70,
+      "teachingCharacters": 4182,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 9
+    },
+    {
+      "id": "cb2-break-even",
+      "order": 16,
+      "unit": 4,
+      "minutes": 75,
+      "teachingCharacters": 3958,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 9
+    },
+    {
+      "id": "cb2-target-profit",
+      "order": 17,
+      "unit": 4,
+      "minutes": 80,
+      "teachingCharacters": 4109,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 10
+    },
+    {
+      "id": "cb2-safety-changes",
+      "order": 18,
+      "unit": 4,
+      "minutes": 80,
+      "teachingCharacters": 3993,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 11
+    },
+    {
+      "id": "cb2-budget",
+      "order": 19,
+      "unit": 5,
+      "minutes": 65,
+      "teachingCharacters": 3982,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 9
+    },
+    {
+      "id": "cb2-sales-variance",
+      "order": 20,
+      "unit": 5,
+      "minutes": 85,
+      "teachingCharacters": 3965,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 9
+    },
+    {
+      "id": "cb2-variance-cases",
+      "order": 21,
+      "unit": 5,
+      "minutes": 85,
+      "teachingCharacters": 3977,
+      "workedExamples": 3,
+      "lessonQuestions": 14,
+      "numericInputs": 9
+    },
+    {
+      "id": "cb2-integration",
+      "order": 22,
+      "unit": 5,
+      "minutes": 95,
+      "teachingCharacters": 5993,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "numericInputs": 10
+    }
+  ],
+  "reuse": {
+    "unitReview": "72 new IDs and independent conditions, no reuse of lesson-item IDs. Some linked examples assess several steps of one case.",
+    "cumulative": "22 new items, no unit-review IDs reused.",
+    "glossary": "147 unique term questions reused in per-unit tests and cumulative glossary; overlapping terms excluded as competing options. Not 147 independent practical scenarios.",
+    "mocks": "Two distinct original case sets, 37 selected-response fields each. Linked fields use shared materials within a form; same instructional formats are not claimed as 74 independent cases."
+  },
+  "recordTransition": {
+    "backupVersion": 5,
+    "indexedDBSchema": 1,
+    "oldIDs": [
+      "cb-classify",
+      "cb-allocate",
+      "cb-inventory",
+      "cb-cvp"
+    ],
+    "newIDs": "cb2-*",
+    "behavior": "Retain old records/bookmarks/results, never copy their completions into expanded lessons. Legacy CVP item made self-contained under a separate assessment version; old score history retained."
+  },
+  "sources": "source-register.json",
+  "coverage": "../../src/data/cost-beginner-coverage.json",
+  "reviews": [
+    "unit12-editorial.md",
+    "unit3-editorial.md",
+    "unit45-editorial.md",
+    "peer-unit12-mocks.md",
+    "peer-unit3-reviews.md",
+    "peer-unit45.md",
+    "peer-coverage.md",
+    "root-editorial.md"
+  ],
+  "verification": {
+    "status": "local-release-checks-passed",
+    "browser": [
+      "navigation/bookmarks/progress/reload",
+      "backup export/import merge/replace confirmation/invalid JSON",
+      "37-item forms and100 independent points",
+      "absolute deadline/reload/reopen/expiry",
+      "unit glossary and review results",
+      "320/768/1440 light/dark layouts/focus",
+      "bounded axe A/AA scans",
+      "canonical sharing/copy",
+      "complete HTML without JavaScript",
+      "HTML/XML sitemap and TXT tree parity"
+    ],
+    "limitations": [
+      "AI authoring and separate-agent review; no qualified human supervision or learner pilot.",
+      "No statistical calibration of difficulty or expected study times.",
+      "Current official number of small fields, detailed points and partial-credit rules unpublished; own practice score does not predict official pass/fail.",
+      "AdSense account approval, Auto Ads format/exclusion settings and actual ad serving not inspected or changed."
+    ],
+    "typecheck": {
+      "files": 85,
+      "errors": 0,
+      "warnings": 0
+    },
+    "automatedTests": {
+      "passed": 62,
+      "failed": 0
+    },
+    "staticVerification": {
+      "htmlPages": 948,
+      "sitemapUrls": 295,
+      "localReferences": 24912,
+      "publishedLessons": 242,
+      "intentionalNoindexArchivedOrSamples": 17,
+      "adsenseEligiblePages": 287
+    },
+    "deploymentEvidence": "GitHub Pages Actions run for the release commit; published pages are verified after this local acceptance snapshot."
+  }
+}

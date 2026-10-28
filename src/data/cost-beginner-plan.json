@@ -1,0 +1,13 @@
+{
+  "qualification": "cost-beginner",
+  "version": "cost-2026-v2",
+  "reviewed": "2026-10-28",
+  "units": [
+    {"title":"原価の考え方と分類","lessons":["cb2-purpose","cb2-elements","cb2-traceability","cb2-departments"]},
+    {"title":"消費量と原価を集計する","lessons":["cb2-materials","cb2-labor-expenses","cb2-allocation","cb2-cost-flow"]},
+    {"title":"在庫と製品・サービス別の利益","lessons":["cb2-wip","cb2-finished","cb2-pnl","cb2-product-profit","cb2-services"]},
+    {"title":"利益を計画する","lessons":["cb2-behavior","cb2-contribution","cb2-break-even","cb2-target-profit","cb2-safety-changes"]},
+    {"title":"予算と実績から利益を確かめる","lessons":["cb2-budget","cb2-sales-variance","cb2-variance-cases","cb2-integration"]}
+  ],
+  "legacyLessonIds": ["cb-classify","cb-allocate","cb-inventory","cb-cvp"]
+}

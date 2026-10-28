@@ -1,0 +1,422 @@
+[
+  {
+    "id": "cb2-behavior-q02",
+    "formula": "210*650",
+    "value": 136500
+  },
+  {
+    "id": "cb2-behavior-q03",
+    "formula": "280*400+98000",
+    "value": 210000
+  },
+  {
+    "id": "cb2-behavior-q04",
+    "formula": "360+84000/700",
+    "value": 480
+  },
+  {
+    "id": "cb2-behavior-q06",
+    "formula": "18000+400*120",
+    "value": 66000
+  },
+  {
+    "id": "cb2-behavior-q07",
+    "formula": "160*(600-450)",
+    "value": 24000
+  },
+  {
+    "id": "cb2-behavior-q10",
+    "formula": "(150000-114000)/(350-200)",
+    "value": 240
+  },
+  {
+    "id": "cb2-behavior-q11",
+    "formula": "75000",
+    "value": 75000
+  },
+  {
+    "id": "cb2-behavior-q13",
+    "formula": "132000/1100",
+    "value": 120
+  },
+  {
+    "id": "cb2-contribution-q01",
+    "formula": "1300-780",
+    "value": 520
+  },
+  {
+    "id": "cb2-contribution-q02",
+    "formula": "(1800-1050)*320",
+    "value": 240000
+  },
+  {
+    "id": "cb2-contribution-q03",
+    "formula": "286000-198000",
+    "value": 88000
+  },
+  {
+    "id": "cb2-contribution-q04",
+    "formula": "(2200-950-150)*300-220000",
+    "value": 110000
+  },
+  {
+    "id": "cb2-contribution-q06",
+    "formula": "(640000-384000)/640000*100",
+    "value": 40
+  },
+  {
+    "id": "cb2-contribution-q07",
+    "formula": "800000*.65-240000",
+    "value": 280000
+  },
+  {
+    "id": "cb2-contribution-q08",
+    "formula": "420*70",
+    "value": 29400
+  },
+  {
+    "id": "cb2-contribution-q11",
+    "formula": "(1700-1020)*350-272000",
+    "value": -34000
+  },
+  {
+    "id": "cb2-contribution-q13",
+    "formula": "(2800-1680)/2800*100",
+    "value": 40
+  },
+  {
+    "id": "cb2-break-even-q01",
+    "formula": "210000/(1500-900)",
+    "value": 350
+  },
+  {
+    "id": "cb2-break-even-q02",
+    "formula": "270000/.45",
+    "value": 600000
+  },
+  {
+    "id": "cb2-break-even-q03",
+    "formula": "280000/(2000-1200)*2000",
+    "value": 700000
+  },
+  {
+    "id": "cb2-break-even-q05",
+    "formula": "Math.ceil(100200/450)",
+    "value": 223
+  },
+  {
+    "id": "cb2-break-even-q06",
+    "formula": "125000/500+1",
+    "value": 251
+  },
+  {
+    "id": "cb2-break-even-q07",
+    "formula": "(480-500)*640",
+    "value": -12800
+  },
+  {
+    "id": "cb2-break-even-q10",
+    "formula": "180000/.36",
+    "value": 500000
+  },
+  {
+    "id": "cb2-break-even-q12",
+    "formula": "40*750",
+    "value": 30000
+  },
+  {
+    "id": "cb2-break-even-q14",
+    "formula": "150000/(1250-750)*750",
+    "value": 225000
+  },
+  {
+    "id": "cb2-target-profit-q01",
+    "formula": "(240000+120000)/(1600-1000)",
+    "value": 600
+  },
+  {
+    "id": "cb2-target-profit-q02",
+    "formula": "(210000+70000)/.35",
+    "value": 800000
+  },
+  {
+    "id": "cb2-target-profit-q03",
+    "formula": "Math.ceil((160000+40000)/480)",
+    "value": 417
+  },
+  {
+    "id": "cb2-target-profit-q05",
+    "formula": "720+(150000+90000)/500",
+    "value": 1200
+  },
+  {
+    "id": "cb2-target-profit-q06",
+    "formula": "2000-(240000+120000)/400",
+    "value": 1100
+  },
+  {
+    "id": "cb2-target-profit-q07",
+    "formula": "650*600-130000",
+    "value": 260000
+  },
+  {
+    "id": "cb2-target-profit-q09",
+    "formula": "(180000+120000)/(1400-800)*1400",
+    "value": 700000
+  },
+  {
+    "id": "cb2-target-profit-q10",
+    "formula": "1100-(1800-(300000+180000)/600)",
+    "value": 100
+  },
+  {
+    "id": "cb2-target-profit-q12",
+    "formula": "(480000+240000)/(3200*.75)",
+    "value": 300
+  },
+  {
+    "id": "cb2-target-profit-q14",
+    "formula": "105000/350",
+    "value": 300
+  },
+  {
+    "id": "cb2-safety-changes-q01",
+    "formula": "900000-630000",
+    "value": 270000
+  },
+  {
+    "id": "cb2-safety-changes-q02",
+    "formula": "270000/900000*100",
+    "value": 30
+  },
+  {
+    "id": "cb2-safety-changes-q03",
+    "formula": "440000-500000",
+    "value": -60000
+  },
+  {
+    "id": "cb2-safety-changes-q04",
+    "formula": "80000*.45",
+    "value": 36000
+  },
+  {
+    "id": "cb2-safety-changes-q05",
+    "formula": "(1150-700)*560-180000",
+    "value": 72000
+  },
+  {
+    "id": "cb2-safety-changes-q06",
+    "formula": "800*70-36000",
+    "value": 20000
+  },
+  {
+    "id": "cb2-safety-changes-q07",
+    "formula": "45000/750",
+    "value": 60
+  },
+  {
+    "id": "cb2-safety-changes-q10",
+    "formula": "1500*200*.6-90000",
+    "value": 90000
+  },
+  {
+    "id": "cb2-safety-changes-q11",
+    "formula": "(1500-500)*200-90000",
+    "value": 110000
+  },
+  {
+    "id": "cb2-safety-changes-q13",
+    "formula": "(2100-1220)*450-270000",
+    "value": 126000
+  },
+  {
+    "id": "cb2-safety-changes-q14",
+    "formula": "800000*(1-.25)",
+    "value": 600000
+  },
+  {
+    "id": "cb2-budget-q01",
+    "formula": "700*1100",
+    "value": 770000
+  },
+  {
+    "id": "cb2-budget-q02",
+    "formula": "640*1180",
+    "value": 755200
+  },
+  {
+    "id": "cb2-budget-q03",
+    "formula": "798000-840000",
+    "value": -42000
+  },
+  {
+    "id": "cb2-budget-q04",
+    "formula": "798000/840000*100",
+    "value": 95
+  },
+  {
+    "id": "cb2-budget-q06",
+    "formula": "(660000+360000)/(600000+400000)*100",
+    "value": 102
+  },
+  {
+    "id": "cb2-budget-q07",
+    "formula": "90*8*400",
+    "value": 288000
+  },
+  {
+    "id": "cb2-budget-q08",
+    "formula": "(546-520)*1000",
+    "value": 26000
+  },
+  {
+    "id": "cb2-budget-q11",
+    "formula": "780000-250000*3",
+    "value": 30000
+  },
+  {
+    "id": "cb2-budget-q12",
+    "formula": "850*880-900*800",
+    "value": 28000
+  },
+  {
+    "id": "cb2-sales-variance-q01",
+    "formula": "(540-500)*1200",
+    "value": 48000
+  },
+  {
+    "id": "cb2-sales-variance-q02",
+    "formula": "(1250-1200)*540",
+    "value": 27000
+  },
+  {
+    "id": "cb2-sales-variance-q03",
+    "formula": "600*800",
+    "value": 480000
+  },
+  {
+    "id": "cb2-sales-variance-q04",
+    "formula": "(600-650)*800",
+    "value": -40000
+  },
+  {
+    "id": "cb2-sales-variance-q05",
+    "formula": "(850-800)*600",
+    "value": 30000
+  },
+  {
+    "id": "cb2-sales-variance-q07",
+    "formula": "(950-1000)*760",
+    "value": -38000
+  },
+  {
+    "id": "cb2-sales-variance-q08",
+    "formula": "60000-38000",
+    "value": 22000
+  },
+  {
+    "id": "cb2-sales-variance-q11",
+    "formula": "(450-400)*(920-900)",
+    "value": 1000
+  },
+  {
+    "id": "cb2-sales-variance-q12",
+    "formula": "950*700-1000*650",
+    "value": 15000
+  },
+  {
+    "id": "cb2-variance-cases-q01",
+    "formula": "(320-300)*1100",
+    "value": 22000
+  },
+  {
+    "id": "cb2-variance-cases-q02",
+    "formula": "(1050-1100)*320",
+    "value": -16000
+  },
+  {
+    "id": "cb2-variance-cases-q03",
+    "formula": "22000-16000-18000+12000",
+    "value": 0
+  },
+  {
+    "id": "cb2-variance-cases-q04",
+    "formula": "(2900-2500)*100",
+    "value": 40000
+  },
+  {
+    "id": "cb2-variance-cases-q06",
+    "formula": "40*1000+120*2000-80*1000-80*2000",
+    "value": 40000
+  },
+  {
+    "id": "cb2-variance-cases-q08",
+    "formula": "(440-15-400)*800",
+    "value": 20000
+  },
+  {
+    "id": "cb2-variance-cases-q09",
+    "formula": "(780-800)*(440-15)",
+    "value": -8500
+  },
+  {
+    "id": "cb2-variance-cases-q10",
+    "formula": "45000-32000",
+    "value": 13000
+  },
+  {
+    "id": "cb2-variance-cases-q12",
+    "formula": "230*1700-250*1600",
+    "value": -9000
+  },
+  {
+    "id": "cb2-integration-q01",
+    "formula": "150000*240/(240+360)",
+    "value": 60000
+  },
+  {
+    "id": "cb2-integration-q02",
+    "formula": "160000+85000+15000+60000",
+    "value": 320000
+  },
+  {
+    "id": "cb2-integration-q03",
+    "formula": "18000+320000-26000",
+    "value": 312000
+  },
+  {
+    "id": "cb2-integration-q04",
+    "formula": "35000+312000-23000",
+    "value": 324000
+  },
+  {
+    "id": "cb2-integration-q05",
+    "formula": "460000-324000-25000-16000",
+    "value": 95000
+  },
+  {
+    "id": "cb2-integration-q07",
+    "formula": "(180000+120000)/(2400-1000-200)",
+    "value": 250
+  },
+  {
+    "id": "cb2-integration-q08",
+    "formula": "(300000+180000)/(2400-1200)",
+    "value": 400
+  },
+  {
+    "id": "cb2-integration-q10",
+    "formula": "(380-350)*1200+(190-200)*1800",
+    "value": 18000
+  },
+  {
+    "id": "cb2-integration-q11",
+    "formula": "(1150-1200)*380+(1900-1800)*190",
+    "value": 0
+  },
+  {
+    "id": "cb2-integration-q12",
+    "formula": "437000+361000-420000-360000",
+    "value": 18000
+  }
+]

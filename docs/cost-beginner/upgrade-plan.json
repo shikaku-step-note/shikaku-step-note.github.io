@@ -1,0 +1,40 @@
+{
+  "qualification": "cost-beginner",
+  "mode": "UPGRADE",
+  "scope": "原価計算初級の現行公式3領域の全範囲。簿記2級の計算形態・標準原価計算は含めない。",
+  "startedOn": "2026-10-28",
+  "before": {
+    "lessons": 4,
+    "lessonQuestions": 16,
+    "miniMockItems": 15,
+    "independentFullMocks": 0
+  },
+  "planned": {
+    "lessons": 22,
+    "units": 5,
+    "fullMocks": 2,
+    "mockItemsPerForm": 37
+  },
+  "status": "implementation-complete-peer-reviewed-and-locally-verified",
+  "recordTransition": "旧4要点ページのURL・ID・記録を保持。技能を分割した新22レッスンは新ID。バックアップ5・IndexedDB構造1を維持。",
+  "limitations": [
+    "実試験の固定小問数・小問別配点・部分点は非公開。模試は独自練習採点。",
+    "人による専門監修と受験者による難易度・時間の実証は未実施。"
+  ],
+  "after": {
+    "lessons": 22,
+    "units": 5,
+    "workedExamples": 75,
+    "lessonQuestions": 287,
+    "numericLessonInputs": 175,
+    "independentUnitReviewQuestions": 72,
+    "independentCumulativeQuestions": 22,
+    "glossaryTerms": 147,
+    "mockForms": 2,
+    "mockItemsPerForm": 37,
+    "mockTotalItems": 74,
+    "competencies": 42,
+    "archivedLessonsPreserved": 4,
+    "uniqueCurrentScoredQuestionIds": 602
+  }
+}
