@@ -1,3 +1,4 @@
+import beginnerCoverage from './boki-beginner-coverage.json';
 export interface CoverageRow {
   official: string;
   lessons: string[];
@@ -11,32 +12,7 @@ const row = (official: string, lessons: string[], depth: string, note: string): 
   note,
 });
 export const bokiCoverage: Record<string, CoverageRow[]> = {
-  'boki-beginner': [
-    row(
-      '簿記初級：基本原理・取引・勘定・帳簿・証ひょう',
-      ['bb-foundation', 'bb-journal'],
-      '説明・例題・理解度チェック',
-      '正式な級と、教材のユニット番号は別です。',
-    ),
-    row(
-      '簿記初級：現金預金・掛取引・その他債権債務・手形等',
-      ['bb-transactions'],
-      '基本例を集約',
-      '各取引のすべての組合せを扱うものではありません。',
-    ),
-    row(
-      '簿記初級：商品・固定資産・収益費用・税金等',
-      ['bb-transactions'],
-      '基本の仕訳例',
-      '取引内容ごとの反復量は追加する余地があります。',
-    ),
-    row(
-      '簿記初級：月次の集計・残高・損益',
-      ['bb-monthly'],
-      '説明・集計例・チェック',
-      '決算整理中心の3級と区別します。',
-    ),
-  ],
+  'boki-beginner': beginnerCoverage.map(r => row(r.competency, r.lessons, '詳しい本文・例題・独立練習', '2026年度の範囲。確認方法と模試の制約は専用対応表に記載。')),
   'cost-beginner': [
     row(
       '原価計算初級：原価の概念と分類',

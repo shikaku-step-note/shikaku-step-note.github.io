@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import type { Qualification } from '../data/qualifications';
 import { bokiCourse, bokiCourses, bokiAssessments, bokiFieldNames } from '../data/bookkeeping';
+import { beginnerBank, beginnerLegacyIds, beginnerReviewed, beginnerWorkload } from '../data/boki-beginner';
 import { href } from '../lib/site';
 import Share from './Share.astro';
 import Icon from './Icon.astro';
@@ -12,6 +13,8 @@ interface Props {
 const { q, lessons } = Astro.props;
 const course = bokiCourse(q.id)!;
 const tests = bokiAssessments(lessons).filter((a) => a.kind !== 'lesson');
+const beginner = q.id === 'boki-beginner';
+const workload = beginner ? beginnerWorkload(lessons) : undefined;
 ---
 
 <div class="container page-section">
@@ -29,6 +32,11 @@ const tests = bokiAssessments(lessons).filter((a) => a.kind !== 'lesson');
         <h2>例題から、処理の理由まで学ぶ</h2>
         <p>{q.scope}</p>
         <p>{course.prerequisite}</p>
+        {beginner && <div class="notice compact">
+          <strong>要点をまとめた旧版から、技能ごとの詳しい課程へ</strong>
+          <p>旧{beginnerLegacyIds.length}レッスンを分割・拡充し、現行範囲を{lessons.length}レッスンで学びます。理解度チェックは計{Object.values(beginnerBank).reduce((sum,qs)=>sum+qs.length,0)}問です。旧ページの星や完了記録は残し、新課程の完了数には加算しません。</p>
+          <p>公式の区分は「簿記初級」一つです。下の6ユニットは当サイトの学習順で、原価計算初級・簿記3級とは別のコースです。教材・模試は独自作成で、合格や専門家監修を保証するものではありません。</p>
+        </div>}
         <div class="notice compact">
           <strong>2026年度の範囲を参照する独自教材</strong>
           <p>
@@ -49,6 +57,10 @@ const tests = bokiAssessments(lessons).filter((a) => a.kind !== 'lesson');
       <section class="course-section">
         <h2>無理なく進める学習案</h2>
         <p>{course.plan}</p>
+        {workload && <div class="prose">
+          <p>本文・例題・理解度チェックの目安は{workload.lessonMinutes}分、復習・用語・総合確認・模試と解き直しを含む全体は約{Math.ceil(workload.total/60)}時間です。反復量により延びることがあります。</p>
+          <ul>{[30,60,90].map(minutes=><li>1日{minutes}分・週5日なら、約{Math.ceil(workload.total/(minutes*5))}週間。覚え直しが必要な日は次のレッスンを急がず復習に充てます。</li>)}</ul>
+        </div>}
         <p>
           学習期間は公式の必要時間ではありません。理解と解き直しに応じて調整します。各レッスンの翌日と1週間後に、解説を見ずに例題を解き直してください。
         </p>
@@ -106,7 +118,7 @@ const tests = bokiAssessments(lessons).filter((a) => a.kind !== 'lesson');
       <section class="course-section">
         <h2>総復習と模擬試験</h2>
         <p>
-          ユニット総合確認と総復習はレッスンの問題を再利用します。用語確認は各レッスンの定義から出題します。模試は別の独自問題です。
+          {beginner ? 'ユニット総合確認はレッスン末尾とは別の独自問題です。総復習24問は新しい複合問題12問とユニット確認の再利用12問。用語は本文の定義から出題し、用語総復習では同じ問題を再利用します。40分模試2回には別の独自問題と月次の共通資料を使います。' : 'ユニット総合確認と総復習はレッスンの問題を再利用します。用語確認は各レッスンの定義から出題します。模試は別の独自問題です。'}
         </p>
         <div class="assessment-links">
           {tests
@@ -144,7 +156,7 @@ const tests = bokiAssessments(lessons).filter((a) => a.kind !== 'lesson');
           当サイトの学習時間と練習得点は独自の目安です。受験申込・試験の実施は主催者の公式案内をご利用ください。
         </p>
         <a href={q.official}>日本商工会議所の案内</a>
-        <p>公式資料の確認：2026年10月25日</p>
+        <p>公式資料の確認：{beginner ? beginnerReviewed : '2026-10-25'}</p>
       </div>
       <div class="sidebar-box">
         <h2>この端末に保存</h2>

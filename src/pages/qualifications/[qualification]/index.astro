@@ -21,7 +21,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 
 <Layout
-  title={`${q.name}の無料${q.status === 'course' ? '基礎コース・用語テスト・模試' : '入門・学習ステップ'}`}
+  title={`${q.name}の無料${q.id === 'boki-beginner' ? '試験学習コース・詳しい解説と40分模試' : q.status === 'course' ? '基礎コース・用語テスト・模試' : '入門・学習ステップ'}`}
   description={q.description}
   breadcrumbs={[
     { name: '資格一覧', path: 'qualifications/' },

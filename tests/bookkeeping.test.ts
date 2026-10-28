@@ -33,15 +33,15 @@ const lessons = entries.filter(
 const tests = bokiAssessments(entries);
 const mock = tests.find((a) => a.id === 'boki-2-mock')!;
 test('five bookkeeping tracks have substantive lessons, distinct identifiers and honest source coverage', () => {
-  assert.equal(lessons.length, 40);
+  assert.equal(lessons.length, 60);
   assert.deepEqual(
     bokiCourses.map((c) => lessons.filter((l) => l.data.qualification === c.id).length),
-    [4, 4, 8, 10, 14],
+    [24, 4, 8, 10, 14],
   );
   assert.equal(new Set(entries.map((l) => l.data.stableId)).size, entries.length);
   for (const c of bokiCourses) {
     const rows = lessons.filter((l) => l.data.qualification === c.id);
-    assert.deepEqual([...new Set(rows.map((l) => l.data.unit))].sort(), [1, 2]);
+    assert.deepEqual([...new Set(rows.map((l) => l.data.unit))].sort(), c.id === 'boki-beginner' ? [1,2,3,4,5,6] : [1, 2]);
     for (const row of bokiCoverage[c.id]!) {
       assert.ok(row.official);
       assert.ok(row.note);
@@ -53,7 +53,8 @@ test('five bookkeeping tracks have substantive lessons, distinct identifiers and
         l.body.replace(/\s/g, '').length >= (c.id.includes('beginner') ? 1200 : 2400),
         l.data.stableId,
       );
-      assert.equal(l.data.glossary.length, 4);
+      if (c.id === 'boki-beginner') assert.ok(l.data.glossary.length >= 6);
+      else assert.equal(l.data.glossary.length, 4);
       assert.ok(l.body.includes('## '));
     }
   }
@@ -69,7 +70,7 @@ test('all lesson, glossary, review and mock questions are valid and link to thei
     assert.equal(new Set(a.questions.map((q) => q.id)).size, a.questions.length, a.id);
     for (const q of a.questions) {
       assert.ok(
-        lessons.some((l) => l.data.stableId === q.lesson && l.data.qualification === a.qualification),
+        (q.lesson.startsWith('bb-') ? entries : lessons).some((l) => l.data.stableId === q.lesson && l.data.qualification === a.qualification),
         `${a.id}: ${q.lesson}`,
       );
       assert.ok(q.explanation.length > 12);
@@ -84,14 +85,14 @@ test('all lesson, glossary, review and mock questions are valid and link to thei
       }
     }
   }
-  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 40);
-  assert.equal(tests.filter((a) => a.kind === 'glossary').length, 15);
-  assert.equal(tests.filter((a) => a.kind === 'review').length, 15);
+  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 64);
+  assert.equal(tests.filter((a) => a.kind === 'glossary').length, 19);
+  assert.equal(tests.filter((a) => a.kind === 'review').length, 20);
 });
-test('six mocks have correct limits, independent original questions, group structure and weighted points', () => {
+test('seven full mocks have correct limits, independent original questions, group structure and weighted points', () => {
   const mocks = tests.filter((a) => a.kind === 'mock');
-  assert.equal(mocks.length, 6);
-  const times = [40, 40, 60, 90, 90, 90];
+  assert.equal(mocks.length, 7);
+  const times = [40, 40, 40, 60, 90, 90, 90];
   const lessonPrompts = new Set(
     tests.filter((a) => a.kind === 'lesson').flatMap((a) => a.questions.map((q) => q.prompt)),
   );
@@ -204,8 +205,10 @@ test('independent arithmetic checks audit worked answers in the lesson and mock 
 
 test('every numeric answer has an independently calculated reference', () => {
   let count = 0;
-  for (const a of tests.filter((a) => a.kind === 'lesson' || a.kind === 'mock')) {
+  for (const a of tests.filter((a) => a.kind === 'lesson' || a.kind === 'mock' || a.id === 'boki-beginner-mock')) {
     const key = a.kind === 'lesson' ? a.id.replace(/-check$/, '') : a.id;
+    // The expanded beginner course has its own complete question/ledger audit.
+    if (key.startsWith('bb2-')) continue;
     const values = bookkeepingArithmetic[key];
     assert.ok(values, key);
     assert.equal(values.length, a.questions.length, key);

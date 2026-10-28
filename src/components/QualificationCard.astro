@@ -1,5 +1,6 @@
 ---
 import type { Qualification } from '../data/qualifications';
+import { qualificationLabel } from '../data/qualifications';
 import { href } from '../lib/site';
 import Icon from './Icon.astro';
 import { getCollection } from 'astro:content';
@@ -25,7 +26,7 @@ const count = (await getCollection('lessons', (l) => l.data.qualification === q.
   <p>{q.description}</p>
   <div class="card-meta">
     <span>
-      {q.status === 'course' ? '基礎コース' : '入門サンプル'}・{count}レッスン
+      {qualificationLabel(q)}・{count}レッスン
     </span>
     <span data-course-progress={q.id}>未学習</span>
   </div>

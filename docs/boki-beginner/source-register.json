@@ -1,0 +1,44 @@
+{
+  "qualification": "日商簿記初級",
+  "qualificationId": "boki-beginner",
+  "verifiedOn": "2026-10-28",
+  "reviewMethod": "日本商工会議所の公式案内本文、現行・将来PDF、サンプル構造、既存4記事と評価データをAIが照合。外部専門家監修ではない。",
+  "currentApplicability": {
+    "label": "2026年度試験適用範囲（2027年3月31日まで）",
+    "validUntil": "2027-03-31",
+    "sourceIds": ["S01", "S02", "S07"],
+    "note": "公式案内の2022年度版区分表に属する初級PDF。2017年度の施行開始以来、2026年度も変更なし。"
+  },
+  "futureApplicability": {
+    "label": "2027年度確定版・現時点では未施行",
+    "publishedOn": "2026-07-31",
+    "effectiveFrom": "2027-04-01",
+    "sourceIds": ["S07", "S08", "S09", "S10"],
+    "changes": ["紙の手形の項目と受取手形・支払手形を削除", "クレジット売掛金にキャッシュレス決済を含むと明示", "株式会社の設立・増資時の株式発行を資本金の範囲に明示"],
+    "note": "2025-12-25の暫定版ではなく2026-07-31の確定版を参照する。現行の模試に混入させない。"
+  },
+  "examFacts": {
+    "minutes": 40,
+    "maximumScore": 100,
+    "passingScore": 70,
+    "format": "認定会場でのネット試験・選択式",
+    "eligibility": "制限なし",
+    "sourceIds": ["S01", "S04", "S05"],
+    "sampleObserved": {"groups": 3, "groupScores": [30, 40, 30], "conceptItems": 10, "journalTransactions": 10, "finalTask": "合計残高試算表の作成・表からの月次数値読取り", "sourceId": "S03"},
+    "notVerifiedAsFixedActualSpecifications": ["全回に固定された大問・小問数", "全回に固定された大問配点", "小問別の配点", "部分点の基準"],
+    "mockDesign": "40分・100点、サンプルを参考に3群30/40/30で独自作成する。実試験の固定出題構成や得点換算・合否予測を意味しない。最新案内に従い選択式とする。"
+  },
+  "sources": [
+    {"id":"S01","title":"簿記初級 趣旨・内容","url":"https://www.kentei.ne.jp/bookkeeping/class-s/effect","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"現行案内","checked":"程度・能力、受験資格、合格基準100点中70点、40分、認定会場ネット試験。受験料は教材に不用意に複製しない。"},
+    {"id":"S02","title":"簿記初級 出題範囲・内容（現行）","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"2026年度も変更なし","checked":"3ページ全部：基本原理の5項目、期中取引の9項目、月次の集計、使用する全勘定科目。土地売却・毎月見積減価償却・購入時消耗品費・税抜消費税の範囲限定。"},
+    {"id":"S03","title":"簿記初級サンプル問題","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2018/04/s-sample0404.pdf","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"公開サンプル。実試験の固定仕様とは区別","checked":"6ページの構造、3大問の30/40/30点、知識10項目・仕訳10取引・月次表と読取り。設問・選択肢・資料・数値を転載しない。","reuse":"著作権は日本商工会議所。無断転載・無断営利利用禁止。教材と模試は独自作成。"},
+    {"id":"S04","title":"日商簿記検定試験（2級・3級・簿記初級・原価計算初級）ネット試験について","url":"https://www.kentei.ne.jp/33013","publisher":"日本商工会議所","publishedOn":"2026-04-01","verifiedOn":"2026-10-28","applicability":"現行ネット試験案内","checked":"2(2)で初級は選択式40分。紙と電卓、終了、採点基準非公開等。2・3級用の5題/3題規定を初級へ流用しない。"},
+    {"id":"S05","title":"簿記初級 Q&A","url":"https://www.kentei.ne.jp/bookkeeping/class-s/qa","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"現行の初級説明","checked":"自宅受験不可、初級は決算処理を範囲から除外、時間到達で終了、電卓の使用条件。古い操作画面の記述と最新案内を区別。"},
+    {"id":"S06","title":"簿記初級 ネット試験（操作体験版）","url":"https://www.kentei.ne.jp/bookkeeping/class-s/exercise","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"公式体験版の注意書き","checked":"問題数を限定しており、本試験の問題・内容・出題数と異なると明記。体験版を全量の出題数の証拠に使わない。実行形式をインストール・実行していない。"},
+    {"id":"S07","title":"簿記 出題区分表（現行と2027年度確定版の区別）","url":"https://www.kentei.ne.jp/bookkeeping/35697-2","publisher":"日本商工会議所","publishedOn":"2026-07-31","verifiedOn":"2026-10-28","applicability":"2026年度と2027年度の適用境界","checked":"2026年度は2022年度版の区分表、初級内容は変更なし。2027年度は確定版。"},
+    {"id":"S08","title":"簿記検定試験初級 出題範囲・内容（2027年度確定版）","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027shokyu_fixed.pdf","publisher":"日本商工会議所","publishedOn":"2026-07-31","effectiveFrom":"2027-04-01","verifiedOn":"2026-10-28","applicability":"将来適用・現行本編と区別","checked":"3ページ全文：手形削除、キャッシュレス明記、株式会社資本の追加、使用勘定と月次読取りの変更。"},
+    {"id":"S09","title":"簿記初級2027年度版の変更箇所","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027shokyu_track.pdf","publisher":"日本商工会議所","publishedOn":"2026-07-31","effectiveFrom":"2027-04-01","verifiedOn":"2026-10-28","applicability":"将来適用の変更照合","checked":"現行からの変更表示を確定版と照合。取消線を含む抽出テキストを現行文として読み違えない。"},
+    {"id":"S10","title":"紙媒体の手形・小切手等と会計基準適用に伴う区分表改定の説明（確定版）","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027_kaitei_shushi_fixed.pdf","publisher":"日本商工会議所","publishedOn":"2026-07-31","effectiveFrom":"2027-04-01","verifiedOn":"2026-10-28","applicability":"将来改定の趣旨","checked":"改定の適用日と趣旨を確認。上位級のリース等を初級の範囲へ混入させない。"},
+    {"id":"S11","title":"簿記 サンプル問題案内・著作権表示","url":"https://www.kentei.ne.jp/bookkeeping/sample","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"公式サンプルへのリンクと利用条件","checked":"初級サンプルPDFと操作体験版へのリンク、無断転載・無断営利利用禁止。"}
+  ]
+}

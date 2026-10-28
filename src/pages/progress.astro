@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
-import { qualifications } from '../data/qualifications';
+import { qualifications, qualificationLabel } from '../data/qualifications';
 import { href } from '../lib/site';
 import { getCollection } from 'astro:content';
 import { zeirishiSubjects, zeirishiLearningOutline } from '../data/zeirishi';
@@ -77,7 +77,7 @@ const lessons = await getCollection('lessons', (l) => !l.data.archived);
                 0 / {lessons.filter((l) => l.data.qualification === q.id).length}
               </progress>
               <p class="muted">
-                {q.status === 'course' ? '公開中の基礎コース' : '入門サンプル'}
+                {qualificationLabel(q)}
                 の完了数です。試験範囲の習得率や合格可能性ではありません。
               </p>
             </article>

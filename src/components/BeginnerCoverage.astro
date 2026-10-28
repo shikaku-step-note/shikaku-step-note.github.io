@@ -1,0 +1,39 @@
+---
+import { href } from '../lib/site';
+import coverage from '../data/boki-beginner-coverage.json';
+import { beginnerBank, beginnerGroups, beginnerLessonIds, beginnerSources, beginnerReviewed, beginnerReviewBank, beginnerUnitReviewCount } from '../data/boki-beginner';
+interface Props { lessons: { data: { stableId: string; title: string; objectives: string[] } }[] }
+const { lessons } = Astro.props;
+---
+<h1>日商簿記初級の対応範囲・出典・確認記録</h1>
+<p>対象は2026年度の簿記初級（2027年3月31日まで）です。確認日：{beginnerReviewed}。原価計算初級や簿記1〜3級は別区分です。決算整理は本編に含めません。</p>
+<h2>何を学び、どのように確かめるか</h2>
+<p>公式の範囲を、当サイトの監査用に{coverage.length}の能力へ分け、{beginnerGroups.length}ユニット・{beginnerLessonIds.length}レッスンで説明と演習を用意しました。この能力番号と学習ユニットは公式の分類番号ではありません。各記事の目標・例題・理解度チェックを対応させ、月次の総合資料で技能を結び付けます。</p>
+<p>理解度チェックは{Object.values(beginnerBank).reduce((sum,qs)=>sum+qs.length,0)}問です。ユニット総合確認は別作の{beginnerUnitReviewCount}問。総復習{beginnerReviewBank.all?.length}問には新作12問と再利用12問があり、再利用を独立した新作として数えません。用語総復習もユニットの用語問題を再利用します。問題数は保存できる設問項目の数で、異なる解法の種類数ではありません。理解度チェックには本文と同じ数値資料を使って理解を確かめ直す9問を含みます。</p>
+<div class="coverage-table" tabindex="0" role="region" aria-label="能力別の出典と教材の対応。横にスクロールできます">
+  <table>
+    <caption>現行公式範囲と詳しいレッスンの対応（独自の管理番号）</caption>
+    <thead><tr><th scope="col">能力・分野</th><th scope="col">学ぶ記事と例題</th><th scope="col">練習と確認</th><th scope="col">出典</th></tr></thead>
+    <tbody>{coverage.map(row=><tr>
+      <th scope="row">{row.id} {row.competency}<br /><small>{row.officialArea}</small></th>
+      <td>{row.lessons.map(id=><p><a href={href(`qualifications/boki-beginner/${id}/`)}>{lessons.find(l=>l.data.stableId===id)?.data.title ?? id}</a><br />
+        <a href={href(`qualifications/boki-beginner/${id}/#objective-1`)}>本文と学習目標</a> ・ <a href={href(`qualifications/boki-beginner/${id}/#worked-1`)}>手順付き例題</a></p>)}</td>
+      <td>{row.lessons.map(id=><p><a href={href(`qualifications/boki-beginner/${id}/#practice`)}>理解度チェック（{beginnerBank[id]?.length}問）</a><br />単元確認・総復習でも関連技能を練習します。</p>)}</td>
+      <td><a href={`${beginnerSources.find(s=>s.id==='S02')!.url}#page=${row.sourcePage}`}>公式の範囲 PDF {row.sourcePage}ページ</a></td>
+    </tr>)}</tbody>
+  </table>
+</div>
+<h2>40分模試の設計と、再現していないこと</h2>
+<p>第1回と第2回は異なる独自問題各30小問です。基本原理10問・仕訳10問・月次共通資料10問に分け、30・40・30点、40分で取り組みます。公式の40分と100点満点・70点以上という基準、公開サンプルで確認した大問構成を参考にしています。選択式とするのは最新のネット試験案内に合わせたものです。</p>
+<p>全回で固定された大問・小問数、各小問の配点、部分点は公開資料から確認できていません。各小問の独自配点による全か無かの練習採点です。本試験の点数への換算や合否判定は行いません。出題の独立性と数値は確認していますが、実際の受験者による試行、時間・難易度の校正は未実施です。</p>
+<p><a href={href('qualifications/boki-beginner/tests/')}>用語・総合確認・模試を選ぶ</a></p>
+<h2>旧版の記録を保ち、新しく学ぶ内容を分ける</h2>
+<p>拡充前の4レッスンは旧URLのまま保管しています。広い概説を技能ごとに分割したため、新課程には新しい固定IDを使います。旧版の星・完了・解答履歴を消さず、新課程を自動で学習済みにしません。旧版15小問の短縮練習は全量模試に数えません。</p>
+<h2>確認方法と教材の限界</h2>
+<p>公式範囲・勘定科目・適用日との照合、例題と解答の計算確認、日本語の編集、別のAIによる範囲・問題の点検、プログラムとブラウザでの機能確認を行います。具体的な公開範囲は上の対応表と記事本文で確かめられます。AIによる複数回の確認は、資格を持つ外部専門家の監修や受験者による実証と同じではありません。記載の誤りや受験上の不明点は公式情報とも照合してください。</p>
+<p>土地以外の固定資産売却、手形の割引・裏書、年末の決算整理や申告実務など、現行の初級範囲を越える処理を「初級の必須」として出題しません。税額例は問題の明示条件による教育用計算で、個別の税務判断ではありません。</p>
+<h2>2027年度の将来改定を区別する</h2>
+<p>2027年4月1日適用の確定版は公表済みです。紙の手形の項目削除、キャッシュレス決済の明示、株式会社の設立・増資に関する明示を含みます。現行版へ混ぜず、改訂時に本文、問題、対応表、TXT、評価の版を一緒に更新します。2027年度受験では必ずその年度の公式資料を確認してください。</p>
+<h2>公式資料と実際の確認日</h2>
+<ul>{beginnerSources.map(source=><li><a href={source.url}>{source.title}</a><p>{source.applicability}。確認：{source.verifiedOn}。{source.checked}</p></li>)}</ul>
+<p><a href={href('downloads/boki-beginner-curriculum.txt')} download>全学習ツリー・スケジュールTXT</a> ・ <a href={href('qualifications/boki-beginner/')}>コースに戻る</a> ・ <a href={href('contact/')}>訂正の連絡方法</a></p>

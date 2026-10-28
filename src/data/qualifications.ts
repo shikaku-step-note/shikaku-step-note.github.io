@@ -1,6 +1,7 @@
 import { bokiCourses, bokiReviewed } from './bookkeeping';
 import { zeirishiSubjects, zeirishiReviewed, zeirishiOutline } from './zeirishi';
 import { zeirishiDeepLessons } from './zeirishi-expanded';
+import { beginnerReviewed } from './boki-beginner';
 export interface Qualification {
   id: string;
   name: string;
@@ -92,16 +93,20 @@ export const qualifications: Qualification[] = [
       color: 'blue',
       icon: 'book',
       intro: '取引と数字の意味を、例題から一つずつ。',
-      description: `${c.name}を独自の解説・例題・理解度チェック・用語確認で学びます。適用範囲と教材の制約は対応表で確認できます。`,
+      description: c.id === 'boki-beginner'
+        ? '日商簿記初級の2026年度範囲を、24の詳しいレッスンと独自の例題・理解度チェックで学びます。用語・復習テストと40分の総合模試2回を無料で利用できます。'
+        : `${c.name}を独自の解説・例題・理解度チェック・用語確認で学びます。適用範囲と教材の制約は対応表で確認できます。`,
       audience: ['取引の理由を理解しながら学びたい方', '例題を紙と電卓で確かめたい方'],
       outcome: '仕訳・計算の手順を説明し、条件に合う処理を選ぶ練習をします。',
       prerequisite: c.prerequisite,
       groups: c.groups,
-      official: 'https://www.kentei.ne.jp/bookkeeping',
+      official: c.id === 'boki-beginner' ? 'https://www.kentei.ne.jp/bookkeeping/class-s/effect' : 'https://www.kentei.ne.jp/bookkeeping',
       officialName: '日本商工会議所：簿記',
-      reviewed: bokiReviewed,
+      reviewed: c.id === 'boki-beginner' ? beginnerReviewed : bokiReviewed,
       scope:
-        '2026年度適用範囲を参照した独自教材です。公式の問題・採点・難易度を再現するものではありません。対応表で説明・練習の到達範囲をご確認ください。',
+        c.id === 'boki-beginner'
+          ? '2026年度の簿記初級を対象に、基本原理、期中取引、月次集計を順に学ぶ試験学習コースです。決算整理は対象外です。2027年4月施行の改定版とは分け、詳しい対応と確認記録を公開しています。難易度校正や専門家監修を経た公式教材ではありません。'
+          : '2026年度適用範囲を参照した独自教材です。公式の問題・採点・難易度を再現するものではありません。対応表で説明・練習の到達範囲をご確認ください。',
     })),
   {
     id: 'it-passport',
@@ -190,6 +195,7 @@ const displayOrder = [
 ];
 qualifications.sort((a, b) => displayOrder.indexOf(a.id) - displayOrder.indexOf(b.id));
 export const qualificationById = (id: string) => qualifications.find((q) => q.id === id)!;
+export const qualificationLabel = (q: Qualification) => q.id === 'boki-beginner' ? '詳しい試験学習コース' : q.status === 'course' ? '基礎コース' : '入門サンプル';
 export const availabilityText = qualifications
-  .map((q) => `${q.name}（${q.status === 'course' ? '基礎コース' : '入門サンプル'}）`)
+  .map((q) => `${q.name}（${qualificationLabel(q)}）`)
   .join('、');

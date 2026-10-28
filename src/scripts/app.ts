@@ -344,7 +344,7 @@ function renderProgress() {
           const quiz = row.attempts
             ? `・練習${row.attempts}回・最新${row.lastCorrect ? '正解' : '要復習'}`
             : '';
-          return entryLink(e, `${e.archived ? '旧サンプル・' : ''}${labels[row.status]}・${stamp}${quiz}`);
+          return entryLink(e, `${e.archived ? '旧版教材・' : ''}${labels[row.status]}・${stamp}${quiz}`);
         }),
       );
     else

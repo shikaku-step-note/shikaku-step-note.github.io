@@ -1,0 +1,440 @@
+{
+  "qualification": "boki-beginner",
+  "checkedOn": "2026-10-28",
+  "applicability": "2026年度・2027年3月31日まで",
+  "before": {
+    "lessons": 4,
+    "savedLessonQuestions": 16,
+    "glossaryOccurrences": 16,
+    "miniTestItems": 15,
+    "independentFullMocks": 0
+  },
+  "after": {
+    "lessons": 24,
+    "units": 6,
+    "objectives": 72,
+    "officialDerivedCompetencies": 46,
+    "officialUsedAccountEntries": 55,
+    "workedExamples": 81,
+    "savedLessonQuestions": 259,
+    "repeatedTeachingDatasetItems": 9,
+    "unitReviewItems": 86,
+    "cumulativeItems": 24,
+    "cumulativeNewItems": 12,
+    "cumulativeReusedItems": 12,
+    "glossaryUniqueTerms": 157,
+    "glossaryTestTypes": 7,
+    "unitReviewTestTypes": 6,
+    "cumulativeReviewTypes": 1,
+    "independentFullMocks": 2,
+    "mockItems": 60,
+    "legacyArchivedLessons": 4
+  },
+  "countingNotes": [
+    "設問IDと内容条件ごとの項目数です。数値違い・同じ解法の反復を、別の出題設計の種類数と主張しません。",
+    "本文と同じデータの再利用9問は統合演習q01〜06/q10、費用q14/q15。模試は本文・理解度・単元確認と別の独自設問です。",
+    "総復習の12問は単元問題の意図的な再利用。用語総復習も単元の用語問題を再利用。旧版15問は新課程や全量模試に加算しません。"
+  ],
+  "workload": {
+    "lessonMinutes": 1400,
+    "reviewMinutes": 220,
+    "spacedMinutes": 360,
+    "glossaryMinutes": 157,
+    "mockMinutes": 80,
+    "mockReviewMinutes": 120,
+    "total": 2337
+  },
+  "lessons": [
+    {
+      "id": "bb2-business",
+      "title": "店の財産を資産・負債・純資産に分ける",
+      "unit": 1,
+      "minutes": 50,
+      "instructionalCharacters": 4011,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "店の財産と返済義務を資産・負債・純資産に分類する",
+        "貸借対照表の等式から金額を求める",
+        "出資・借入れ・財産の入替えが等式へ与える影響を説明する"
+      ]
+    },
+    {
+      "id": "bb2-profit",
+      "title": "収益・費用から利益を求め、現金の増減と区別する",
+      "unit": 1,
+      "minutes": 55,
+      "instructionalCharacters": 4103,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "収益と費用を分類して利益または損失を求める",
+        "入出金を伴う取引と損益の発生を区別する",
+        "出資・引出しを除いて純資産の増減から損益を求める"
+      ]
+    },
+    {
+      "id": "bb2-transaction",
+      "title": "簿記上の取引を見分け、8要素の動きを読む",
+      "unit": 1,
+      "minutes": 50,
+      "instructionalCharacters": 3946,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "簿記上の取引と、まだ記録しない出来事を区別する",
+        "取引を借方4要素・貸方4要素の組合せに分解する",
+        "複合取引でも借方と貸方の金額が一致する理由を説明する"
+      ]
+    },
+    {
+      "id": "bb2-journal",
+      "title": "仕訳を組み立て、複合取引と誤りを確かめる",
+      "unit": 1,
+      "minutes": 60,
+      "instructionalCharacters": 3933,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "取引内容から勘定科目・増減・借貸を決めて仕訳する",
+        "複合取引の金額を配分して左右の合計を合わせる",
+        "貸借一致と内容の正しさを別々に検査する"
+      ]
+    },
+    {
+      "id": "bb2-ledger",
+      "title": "仕訳帳から総勘定元帳へ転記し、残高を確かめる",
+      "unit": 2,
+      "minutes": 60,
+      "instructionalCharacters": 3906,
+      "workedExamples": 3,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 10,
+      "objectives": [
+        "仕訳帳と総勘定元帳の役割を区別して同じ取引を追う",
+        "仕訳と同じ側へ転記し、勘定の合計と残高を求める",
+        "補助簿の内訳合計と元帳を突き合わせて誤りを調べる"
+      ]
+    },
+    {
+      "id": "bb2-evidence",
+      "title": "証ひょうを読み、3種類の伝票を集計する",
+      "unit": 2,
+      "minutes": 60,
+      "instructionalCharacters": 3929,
+      "workedExamples": 3,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 10,
+      "objectives": [
+        "複数の証ひょうから取引の内容・金額・支払状況を読み取る",
+        "現金の入出金に基づき入金・出金・振替伝票を選ぶ",
+        "複数伝票を科目別に集計し重複と漏れを防ぐ"
+      ]
+    },
+    {
+      "id": "bb2-cash",
+      "title": "現金・小切手・預金を区別して記録する",
+      "unit": 2,
+      "minutes": 60,
+      "instructionalCharacters": 3941,
+      "workedExamples": 3,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 10,
+      "objectives": [
+        "現金と他人振出小切手を、預金や当店振出小切手と区別する",
+        "現金・普通預金・当座預金・定期預金の振替を仕訳する",
+        "複数の入出金から科目別残高を求め、二重計上を見付ける"
+      ]
+    },
+    {
+      "id": "bb2-sales",
+      "title": "三分法で仕入・売上・返品を記録する",
+      "unit": 2,
+      "minutes": 65,
+      "instructionalCharacters": 3943,
+      "workedExamples": 3,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 10,
+      "objectives": [
+        "三分法の各勘定の役割を理解して現金・掛売買を仕訳する",
+        "仕入諸掛と発送費を指定された負担条件から記録する",
+        "返品を元の取引の取消しとして処理し未決済残高を求める"
+      ]
+    },
+    {
+      "id": "bb2-receivables",
+      "title": "売掛金・買掛金の発生と回収・支払い",
+      "unit": 3,
+      "minutes": 55,
+      "instructionalCharacters": 4518,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "商品取引の発生と決済を分けて売掛金・買掛金の仕訳を作れる",
+        "一部決済・返品を含む連続取引の残高を求められる",
+        "相手先別の記録と総勘定元帳を照合して誤りを説明できる"
+      ]
+    },
+    {
+      "id": "bb2-credit",
+      "title": "クレジット売掛金と決済手数料",
+      "unit": 3,
+      "minutes": 55,
+      "instructionalCharacters": 4521,
+      "workedExamples": 3,
+      "glossaryOccurrences": 6,
+      "savedQuestions": 10,
+      "objectives": [
+        "クレジット販売時と入金時の仕訳を作り手数料の認識時点を区別できる",
+        "料率から手数料と入金額を計算し売上総額と照合できる",
+        "複数日の販売と一部入金からクレジット売掛金残高を求められる"
+      ]
+    },
+    {
+      "id": "bb2-prepayments",
+      "title": "前払金・前受金と一部決済",
+      "unit": 3,
+      "minutes": 55,
+      "instructionalCharacters": 4588,
+      "workedExamples": 3,
+      "glossaryOccurrences": 6,
+      "savedQuestions": 10,
+      "objectives": [
+        "商品を受け渡す前の支払い・受取りを前払金・前受金に分類できる",
+        "商品の受渡し時に前払金・前受金を充当し残額を仕訳できる",
+        "複数回の前渡しと一部充当から未充当残高を検算できる"
+      ]
+    },
+    {
+      "id": "bb2-other-claims",
+      "title": "未収入金・未払金と商品取引の区別",
+      "unit": 3,
+      "minutes": 55,
+      "instructionalCharacters": 4537,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "商品代金と商品以外の代金を読み分けて未収入金・未払金を選べる",
+        "土地の売却代金と帳簿価額から売却損益を求め仕訳できる",
+        "一部決済や複数取引を区別して債権・債務残高を検算できる"
+      ]
+    },
+    {
+      "id": "bb2-loans",
+      "title": "貸付金・借入金と元金・利息の区別",
+      "unit": 4,
+      "minutes": 55,
+      "instructionalCharacters": 4502,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "金銭貸借と商品代金を区別し貸付金・借入金の仕訳を作れる",
+        "年利と期間から利息を計算し元金と分けて決済を記録できる",
+        "一部返済と元金残高の変化を反映して残高・利息を検算できる"
+      ]
+    },
+    {
+      "id": "bb2-temporary",
+      "title": "仮払金・仮受金の内容判明と精算",
+      "unit": 4,
+      "minutes": 55,
+      "instructionalCharacters": 4397,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "使途や内容が未確定の支払い・受取りを仮払金・仮受金に分類できる",
+        "内容判明時に仮勘定を適切な費用・債権などへ振り替えられる",
+        "現金の返却や追加払いを伴う精算を計算し残高を照合できる"
+      ]
+    },
+    {
+      "id": "bb2-custody",
+      "title": "立替金・預り金と給与支給の仕訳",
+      "unit": 4,
+      "minutes": 55,
+      "instructionalCharacters": 4360,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "最終負担者や返還先を読み取り立替金・預り金を分類できる",
+        "給与総額と控除額を区別し預金支払額を計算できる",
+        "立替回収・給与控除・預り金納付を通じて残高と費用を照合できる"
+      ]
+    },
+    {
+      "id": "bb2-bills",
+      "title": "受取手形・支払手形と電子記録債権・債務",
+      "unit": 4,
+      "minutes": 55,
+      "instructionalCharacters": 4490,
+      "workedExamples": 3,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 10,
+      "objectives": [
+        "手形を受け取る側と振り出す側を区別して発生時の仕訳を作れる",
+        "掛代金を手形・電子記録へ切り替えた取引と満期決済を仕訳できる",
+        "種類ごとの債権・債務を集計し切替時の二重計上を検算できる"
+      ]
+    },
+    {
+      "id": "bb2-assets",
+      "title": "固定資産の取得額を決め、土地の売却損益を計算する",
+      "unit": 5,
+      "minutes": 55,
+      "instructionalCharacters": 4531,
+      "workedExamples": 4,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 12,
+      "objectives": [
+        "使用目的と付随費用から固定資産の取得額を判断する",
+        "固定資産の現金購入・後払い・支払いを仕訳する",
+        "土地の帳簿価額と売却代金を比較して売却損益を記録する"
+      ]
+    },
+    {
+      "id": "bb2-depreciation",
+      "title": "見積額を毎月計上し、減価償却後の資産を読む",
+      "unit": 5,
+      "minutes": 55,
+      "instructionalCharacters": 4436,
+      "workedExamples": 4,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 12,
+      "objectives": [
+        "固定資産の購入代金と毎月の減価償却費を区別する",
+        "見積額に基づく毎月の減価償却を仕訳する",
+        "取得原価・減価償却累計額・帳簿価額と利益の関係を計算する"
+      ]
+    },
+    {
+      "id": "bb2-capital",
+      "title": "追加元入・引出と事業主の所得税を資本金で記録する",
+      "unit": 5,
+      "minutes": 55,
+      "instructionalCharacters": 4394,
+      "workedExamples": 4,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 12,
+      "objectives": [
+        "追加元入と事業の収益を区別して仕訳する",
+        "引出と事業主個人の所得税を資本金の減少として処理する",
+        "元入・引出の資料から資本金の残高と追加元入額を計算する"
+      ]
+    },
+    {
+      "id": "bb2-expenses",
+      "title": "収益・費用を分類し、消耗品と事業の税金を記録する",
+      "unit": 5,
+      "minutes": 60,
+      "instructionalCharacters": 5918,
+      "workedExamples": 5,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 15,
+      "objectives": [
+        "収益・費用と資産・負債の増減を区別して科目を選ぶ",
+        "消耗品を支払い時に消耗品費で処理する",
+        "固定資産税・印紙税と未払固定資産税の支払いを区別する"
+      ]
+    },
+    {
+      "id": "bb2-vat",
+      "title": "税抜方式で消費税を分け、仮払・仮受残高を読む",
+      "unit": 6,
+      "minutes": 60,
+      "instructionalCharacters": 4484,
+      "workedExamples": 4,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 12,
+      "objectives": [
+        "指定税率から税抜額・消費税額・税込額を計算する",
+        "税抜方式で仕入・売上とそれぞれの返品を仕訳する",
+        "仮受・仮払消費税の残高から指定条件で未払税額を読み取る"
+      ]
+    },
+    {
+      "id": "bb2-trial-balance",
+      "title": "合計・残高・合計残高試算表を作って照合する",
+      "unit": 6,
+      "minutes": 65,
+      "instructionalCharacters": 4333,
+      "workedExamples": 4,
+      "glossaryOccurrences": 7,
+      "savedQuestions": 12,
+      "objectives": [
+        "勘定の借方合計・貸方合計から残高の金額と側を判断する",
+        "三種類の試算表を同じ資料から作成する",
+        "貸借一致で見つかる誤りと見つからない誤りを区別する"
+      ]
+    },
+    {
+      "id": "bb2-monthly",
+      "title": "月次残高から資産・回収額・当月損益を読み取る",
+      "unit": 6,
+      "minutes": 70,
+      "instructionalCharacters": 4543,
+      "workedExamples": 4,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 12,
+      "objectives": [
+        "現金・預金・債権債務の残高と当月の回収・支払額を計算する",
+        "商品残高と原価の指定条件を使って当月損益を求める",
+        "資産総額・負債総額を適切な科目と控除額から読み取る"
+      ]
+    },
+    {
+      "id": "bb2-integration",
+      "title": "月次総合演習で取引・試算表・損益をつなぐ",
+      "unit": 6,
+      "minutes": 80,
+      "instructionalCharacters": 4418,
+      "workedExamples": 4,
+      "glossaryOccurrences": 8,
+      "savedQuestions": 12,
+      "objectives": [
+        "一貫した月初残高と当月取引から月末試算表を作成する",
+        "元入・引出・元本返済と収益費用を分けて月次損益を求める",
+        "誤りの原因を診断し、残高と損益への影響を説明する"
+      ]
+    }
+  ],
+  "acceptance": {
+    "scope": "passed",
+    "teaching": "passed",
+    "progression": "passed",
+    "accuracy": "passed-ai-source-and-calculation-review",
+    "practice": "passed",
+    "fullMocks": "passed-sample-guided-design",
+    "japanese": "passed-ai-editorial-review",
+    "upgradeIntegrity": "passed",
+    "implementation": "passed-final-build-52-tests-and-browser",
+    "deployment": "pending"
+  },
+  "limitations": [
+    "外部専門家の監修なし",
+    "受験者試行・難易度や時間の統計的校正なし",
+    "実試験の固定小問数・小問配点・非公開部分点は未確認。独自練習採点。",
+    "2027年4月以降の改定範囲は本編と別。",
+    "広告の承認・実配信・同意メッセージとエリア除外は管理画面の確認が必要。"
+  ],
+  "sourceRegister": "source-register.json",
+  "coverage": "../../src/data/boki-beginner-coverage.json",
+  "reviews": [
+    "unit12-independent-review.md",
+    "unit34-independent-review.md",
+    "unit56-independent-review.md",
+    "mock-independent-review.md",
+    "review-independent-review.md",
+    "review-additions-independent-review.md",
+    "glossary-independent-review.md",
+    "verification.md"
+  ]
+}

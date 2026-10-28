@@ -6,13 +6,13 @@
   "description": "資産・負債・純資産と、利益のつながりを、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
   "order": 1,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 1,
   "syllabus": [
     1
   ],
-  "scopeLabel": "2026年度適用範囲を参照・独自の解説と例題",
+  "scopeLabel": "旧版の要点教材・記録保管用。現行課程の完了数には加算しません。",
   "subject": "basics",
   "objectives": [
     "店の財産を、持っているものと調達先に分ける",
@@ -43,7 +43,8 @@
       "term": "収益",
       "definition": "売上など、利益を増やす原因となるもの"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 

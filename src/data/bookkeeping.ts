@@ -1,6 +1,7 @@
 import bank from './boki-questions.json';
 import mockBank from './boki-mock.json';
 import type { Assessment, Question } from '../lib/assessment';
+import { beginnerAssessments, beginnerGroups, beginnerPlan } from './boki-beginner';
 export const bokiReviewed = '2026-10-25';
 export const bokiVersion = 'boki-2026-v1';
 export const bokiSources = [
@@ -174,10 +175,10 @@ export const bokiCourses = [
     name: '日商簿記初級',
     minutes: 40,
     source: 'beginner',
-    groups: ['複式簿記の基本', '期中取引と月次集計'],
+    groups: beginnerGroups,
     prerequisite: '前提知識は不要です。電卓と紙を用意し、取引を左右に分ける練習から始めます。',
     next: 'boki-3',
-    plan: '1日30分を週5日、4週間を目安にします。読む日と仕訳を手で書く日を交互にし、週末は同じ取引を翌日もう一度解きます。',
+    plan: beginnerPlan,
   },
   {
     id: 'cost-beginner',
@@ -240,6 +241,10 @@ export function bokiAssessments(lessons: Lesson[]): Assessment[] {
   const result: Assessment[] = [];
   const entries = bank as Record<string, Question[]>;
   for (const course of bokiCourses) {
+    if (course.id === 'boki-beginner') {
+      result.push(...beginnerAssessments(lessons, entries, (mockBank as Record<string, Question[]>)['boki-beginner-mock']!));
+      continue;
+    }
     const rows = lessons
       .filter((l) => l.data.qualification === course.id && !l.data.archived)
       .sort(

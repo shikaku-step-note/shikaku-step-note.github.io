@@ -6,13 +6,13 @@
   "description": "試算表で月次の残高と損益を読み取るを、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
   "order": 4,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 2,
   "syllabus": [
     4
   ],
-  "scopeLabel": "2026年度適用範囲を参照・独自の解説と例題",
+  "scopeLabel": "旧版の要点教材・記録保管用。現行課程の完了数には加算しません。",
   "subject": "basics",
   "objectives": [
     "試算表を作る目的",
@@ -43,7 +43,8 @@
       "term": "補助簿",
       "definition": "特定の取引を詳しく記録する帳簿"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 

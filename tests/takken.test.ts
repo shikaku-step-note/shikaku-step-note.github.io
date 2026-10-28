@@ -51,7 +51,8 @@ test('34 substantive lessons cover the seven official domains, with stable ident
 test('registries remain isolated and every new choice and explanation links to its own lesson', () => {
   assert.equal(assessments.length, 54);
   assert.equal(ipAssessments(lessons).length, 86);
-  assert.equal(bokiAssessments(lessons).length, 76);
+  assert.equal(bokiAssessments(lessons).filter(a=>a.qualification !== 'boki-beginner').length, 65,
+    'the four other bookkeeping tracks are unaffected by the beginner upgrade');
   const all = allAssessments(lessons);
   assert.equal(new Set(all.map((a) => a.id)).size, all.length);
   for (const a of assessments) {

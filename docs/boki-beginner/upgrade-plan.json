@@ -1,0 +1,57 @@
+{
+  "qualification": "boki-beginner",
+  "mode": "UPGRADE",
+  "scope": "2026年度の簿記初級の全範囲。2027年度の将来版、原価計算初級、1〜3級は別区分。",
+  "startedOn": "2026-10-28",
+  "before": {
+    "currentLessons": 4,
+    "lessonQuestions": 16,
+    "glossaryEntries": 16,
+    "legacyMiniMockItems": 15,
+    "independentFullMocks": 0
+  },
+  "planned": {
+    "units": 6,
+    "lessons": 24,
+    "unitReviewItems": 72,
+    "cumulativeNewItems": 12,
+    "cumulativeReusedItems": 12,
+    "independentFullMocks": 2,
+    "itemsPerMock": 30
+  },
+  "learningRecordTransition": "旧4ページと識別子・記録は保管。技能を分割した新24レッスンは新しい固定IDで記録し、旧版完了を継承しない。既存の他資格は変更しない。バックアップ形式5・IndexedDB構造1を維持。",
+  "status": "verified-ready-for-release",
+  "stages": {
+    "sources": "reviewed",
+    "curriculum": "implemented",
+    "lessons": "reviewed",
+    "questions": "reviewed",
+    "mockForms": "reviewed",
+    "independentReview": "reviewed",
+    "japanese": "reviewed",
+    "integration": "implemented",
+    "tests": "passed-final",
+    "deployment": "pending"
+  },
+  "actual": {
+    "lessons": 24,
+    "units": 6,
+    "objectives": 72,
+    "officialDerivedCompetencies": 46,
+    "officialUsedAccountEntries": 55,
+    "workedExamples": 81,
+    "savedLessonQuestions": 259,
+    "repeatedTeachingDatasetItems": 9,
+    "unitReviewItems": 86,
+    "cumulativeItems": 24,
+    "cumulativeNewItems": 12,
+    "cumulativeReusedItems": 12,
+    "glossaryUniqueTerms": 157,
+    "glossaryTestTypes": 7,
+    "unitReviewTestTypes": 6,
+    "cumulativeReviewTypes": 1,
+    "independentFullMocks": 2,
+    "mockItems": 60,
+    "legacyArchivedLessons": 4
+  }
+}

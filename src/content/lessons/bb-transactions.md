@@ -6,13 +6,13 @@
   "description": "商品売買・債権債務・固定資産の期中処理を、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
   "order": 3,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 2,
   "syllabus": [
     3
   ],
-  "scopeLabel": "2026年度適用範囲を参照・独自の解説と例題",
+  "scopeLabel": "旧版の要点教材・記録保管用。現行課程の完了数には加算しません。",
   "subject": "basics",
   "objectives": [
     "商品の販売と代金の回収を分ける",
@@ -43,7 +43,8 @@
       "term": "減価償却",
       "definition": "固定資産の取得原価を使用する期間に配分する処理"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 

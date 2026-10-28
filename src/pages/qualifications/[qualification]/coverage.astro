@@ -4,6 +4,7 @@ import Layout from '../../../layouts/Layout.astro';
 import { bokiCoverage } from '../../../data/boki-coverage';
 import { bokiCourses, bokiSources } from '../../../data/bookkeeping';
 import { href } from '../../../lib/site';
+import BeginnerCoverage from '../../../components/BeginnerCoverage.astro';
 export function getStaticPaths() {
   return bokiCourses.map((c) => ({ params: { qualification: c.id }, props: { course: c } }));
 }
@@ -23,6 +24,7 @@ const lessons = (
   ]}
 >
   <article class="container prose wide-prose page-section">
+    {course.id === 'boki-beginner' ? <BeginnerCoverage lessons={lessons} /> : <>
     <h1>{course.name}の対応表と出典</h1>
     <p>
       適用範囲：2026年度。資料確認日：2026年10月25日。公式の区分と、このサイトで付けたユニット番号・レッスン番号を分けて記載します。
@@ -131,5 +133,6 @@ const lessons = (
       ・ <a href={href(`qualifications/${course.id}/`)}>コースへ戻る</a> ・{' '}
       <a href={href('contact/')}>訂正の連絡方法</a>
     </p>
+    </>}
   </article>
 </Layout>

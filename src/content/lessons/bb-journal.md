@@ -6,13 +6,13 @@
   "description": "取引を借方・貸方に分けて仕訳するを、独自の例題と計算過程から学びます。取引や条件を確かめ、理解度チェックで理由を説明する練習をします。",
   "order": 2,
   "minutes": 35,
-  "sample": false,
+  "sample": true,
   "updated": "2026-10-25",
   "unit": 1,
   "syllabus": [
     2
   ],
-  "scopeLabel": "2026年度適用範囲を参照・独自の解説と例題",
+  "scopeLabel": "旧版の要点教材・記録保管用。現行課程の完了数には加算しません。",
   "subject": "basics",
   "objectives": [
     "左右の意味を決めてから取引を記録する",
@@ -43,7 +43,8 @@
       "term": "総勘定元帳",
       "definition": "勘定科目ごとに取引を集める主要簿"
     }
-  ]
+  ],
+  "archived": true
 }
 ---
 
