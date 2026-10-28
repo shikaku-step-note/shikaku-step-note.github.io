@@ -2,7 +2,7 @@
   "mode": "UPGRADE",
   "scope": "日商簿記3級・商業簿記の現行2026年度全範囲",
   "sourceCommit": "798468b626bf44ce58baa3c54049740faf9c4f47",
-  "status": "implemented-verified-ready-to-publish",
+  "status": "published-and-live-verified",
   "before": {
     "currentLessons": 8,
     "lessonQuestions": 33,
@@ -15,7 +15,7 @@
     "journalEngineThenAssetsReporting": "b3_journal_engine owns engine and13lessons (8unit5+5unit7),39newunitreviews",
     "root": "settlement8+capstones2,rootreviewbanksandcumulative,2fullmocks,evidence,integration,verification,publishing"
   },
-  "next": "Commit the scoped release, push main, verify the existing Pages workflow and public URLs.",
+  "next": "Maintain content and question versions using README; owner checks actual AdSense placement and consent/account settings.",
   "preservation": "Unrelated dirty docs/zeirishi drafts untouched. No archivedcurrentintro merely to avoidintegration. Retain old8 IDs/records, correctoutscopefirelossanddisposal text; scopedversion for changedoldchecks.",
   "rootDrafts": {
     "status": "Completed, independently reviewed and integrated; no outstanding content batch."
@@ -38,5 +38,29 @@
     "separateFutureRows": 4,
     "newNonGlossaryFields": 907,
     "currentNonGlossaryFields": 939
+  },
+  "deployment": {
+    "status": "published-and-live-verified",
+    "sourceCommit": "364536e0aa1489b815809a30d850ba4e099824f6",
+    "workflowRun": 40733338785,
+    "workflowConclusion": "success",
+    "workflowURL": "https://github.com/shikaku-step-note/shikaku-step-note.github.io/actions/runs/40733338785",
+    "verifiedAt": "2026-10-28T17:16:40.326Z",
+    "liveQualification": "https://shikaku-step-note.github.io/qualifications/boki-3/",
+    "liveHTTPChecks": 312,
+    "liveHTTPFailures": [],
+    "liveBrowser": {
+      "status": "passed",
+      "checked": "2026-10-28T17:16:40.326Z",
+      "checks": [
+        "Live nested bank lesson includes final year-end teaching",
+        "Live system dark mode loads",
+        "Live bookmark saves and reloads in fresh test context",
+        "Live journal selection resumes",
+        "Live journal amount resumes",
+        "Live390px assessment fits"
+      ],
+      "scope": "Fresh isolated records deleted on close; all external scripts and advertising requests blocked."
+    }
   }
 }

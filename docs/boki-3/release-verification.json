@@ -305,7 +305,27 @@
     "Search indexing and ranking cannot be established by static technical checks"
   ],
   "deployment": {
-    "status": "pending source commit and existing GitHub Pages workflow",
-    "liveQualification": "https://shikaku-step-note.github.io/qualifications/boki-3/"
+    "status": "published-and-live-verified",
+    "sourceCommit": "364536e0aa1489b815809a30d850ba4e099824f6",
+    "workflowRun": 40733338785,
+    "workflowConclusion": "success",
+    "workflowURL": "https://github.com/shikaku-step-note/shikaku-step-note.github.io/actions/runs/40733338785",
+    "verifiedAt": "2026-10-28T17:16:40.326Z",
+    "liveQualification": "https://shikaku-step-note.github.io/qualifications/boki-3/",
+    "liveHTTPChecks": 312,
+    "liveHTTPFailures": [],
+    "liveBrowser": {
+      "status": "passed",
+      "checked": "2026-10-28T17:16:40.326Z",
+      "checks": [
+        "Live nested bank lesson includes final year-end teaching",
+        "Live system dark mode loads",
+        "Live bookmark saves and reloads in fresh test context",
+        "Live journal selection resumes",
+        "Live journal amount resumes",
+        "Live390px assessment fits"
+      ],
+      "scope": "Fresh isolated records deleted on close; all external scripts and advertising requests blocked."
+    }
   }
 }
