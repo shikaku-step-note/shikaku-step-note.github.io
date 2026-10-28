@@ -3,8 +3,9 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../../layouts/Layout.astro';
 import Icon from '../../../../components/Icon.astro';
 import Share from '../../../../components/Share.astro';
-import TaxExpandedUnits from '../../../../components/TaxExpandedUnits.astro';
+import TaxLearningTree from '../../../../components/TaxLearningTree.astro';
 import { zeirishiDeepLessons } from '../../../../data/zeirishi-expanded';
+import { zeirishiLessonIds, zeirishiLessonOrder } from '../../../../data/zeirishi-learning-path';
 import {
   zeirishiSubjects,
   zeirishiOutline,
@@ -20,13 +21,11 @@ const rows = zeirishiOutline.filter((r) => r.subject === s.id);
 const lessons = (
   await getCollection(
     'lessons',
-    (l) => l.data.qualification === 'zeirishi' && l.data.subject === s.id && !l.data.archived && !l.data.stableId.startsWith('zr2-'),
+    (l) => l.data.qualification === 'zeirishi' && l.data.subject === s.id && !l.data.archived,
   )
-).sort((a, b) => a.data.order - b.data.order);
+).sort((a, b) => zeirishiLessonOrder(a.data.stableId) - zeirishiLessonOrder(b.data.stableId));
 const deepLessons = zeirishiDeepLessons.filter((lesson) => lesson.subject === s.id);
-const description = deepLessons.length
-  ? `税理士試験「${s.name}」の無料教材。詳しく学ぶ${deepLessons.length}講と入門${lessons.length}講から学習順を選べます。解説・例題・計算や記述の演習、用語テストを用意し、全体の未完了範囲も示します。`
-  : `税理士試験「${s.name}」の無料入門教材。${lessons.length}講の解説・例題・用語と復習問題を学べます。本試験に向けて拡充が必要な範囲と、追加学習の計画も示します。`;
+const description = `税理士試験「${s.name}」を無料で学べる${lessons.length}レッスンの学習ツリー。仕組みの説明から例題、計算や記述の演習へ順に進み、用語・復習テストで理解を確かめます。`;
 ---
 
 <Layout
@@ -60,7 +59,7 @@ const description = deepLessons.length
           class="button primary"
           data-course-start="zeirishi"
           data-course-subject={s.id}
-          href={href(`qualifications/zeirishi/${rows[0]!.id}/`)}
+          href={href(`qualifications/zeirishi/${zeirishiLessonIds(s.id)[0]!}/`)}
         >
           この科目の学習を始める <Icon name="arrow" size={18} />
         </a>
@@ -78,7 +77,7 @@ const description = deepLessons.length
             最初に基本の関係を捉え、例題と条件を変えた比較で手順を確認し、最後に手続・総復習へ進みます。各レッスンの時間は、本文を読むだけでなく、手で例題を解き、理解度チェックと解説を確認する独自の目安です。難しい箇所は複数日に分けてください。
           </p>
           <p>
-            入門課程では主要な仕組みを学び、詳しい学習ユニットでは、条件の判断や計算・記述を練習します。科目全体の教材は拡充中です。公開済みの教材と、まだ学習できない範囲は、<a href={href('qualifications/zeirishi/coverage/')}>対応表と拡充計画</a>で確認できます。
+            公開しているレッスンを下の学習ツリーにまとめています。試験範囲との対応や、追加学習が必要な内容は、<a href={href('qualifications/zeirishi/coverage/')}>対応表と公式資料</a>で確認できます。
           </p>
           {s.category === '税法' && (
             <p>
@@ -87,58 +86,7 @@ const description = deepLessons.length
             </p>
           )}
         </section>
-        <TaxExpandedUnits subject={s.id} />
-        <section class="course-section" aria-labelledby="subject-steps">
-          <h2 id="subject-steps">入門課程：{lessons.length}レッスンの学習ツリー</h2>
-          <p data-course-progress="zeirishi" data-course-subject={s.id} data-course-unit={s.unit}>
-            このブラウザの記録を読み込んでいます
-          </p>
-          <progress
-            data-course-bar="zeirishi"
-            data-course-subject={s.id}
-            data-course-unit={s.unit}
-            max={lessons.length}
-            value="0"
-            aria-label={`${s.name}の学習済みレッスン数`}
-          >
-            0 / {lessons.length}
-          </progress>
-          {[...new Set(rows.map((r) => r.stage))].map((stage) => (
-            <section class="curriculum-unit">
-              <h3>{stage}</h3>
-              <ol class="lesson-list">
-                {lessons
-                  .filter((l) => rows.find((r) => r.id === l.data.stableId)?.stage === stage)
-                  .map((l) => (
-                    <li class="lesson-row" data-lesson-row={l.data.stableId}>
-                      <span class="lesson-number">
-                        {rows.find((r) => r.id === l.data.stableId)?.position}
-                      </span>
-                      <div class="lesson-row-body">
-                        <h4>
-                          <a href={href(`qualifications/zeirishi/${l.data.stableId}/`)}>{l.data.title}</a>
-                        </h4>
-                        <p>{l.data.objectives.join('／')}</p>
-                        <div class="lesson-meta">
-                          <span>{l.data.minutes}分の目安</span>
-                          <span data-status-label={l.data.stableId}>未学習</span>
-                        </div>
-                      </div>
-                      <button disabled aria-busy="true"
-                        class="star-button"
-                        type="button"
-                        data-bookmark={l.data.stableId}
-                        aria-pressed="false"
-                        aria-label={`${l.data.title}をブックマーク`}
-                      >
-                        <Icon name="star" size={21} />
-                      </button>
-                    </li>
-                  ))}
-              </ol>
-            </section>
-          ))}
-        </section>
+        <TaxLearningTree subject={s} lessons={lessons} />
         <section class="course-section">
           <h2>用語・科目総復習・模試で振り返る</h2>
           <div class="assessment-links">
@@ -170,7 +118,7 @@ const description = deepLessons.length
           </p>
         </section>
         <section class="course-section">
-          <h2>この基礎課程の後に補うこと</h2>
+          <h2>追加学習の目安</h2>
           <ul>
             {rows.map((r) => (
               <li>
@@ -179,9 +127,9 @@ const description = deepLessons.length
             ))}
           </ul>
           <p>
-            一科目につき8週間を目安に基礎・復習・模試を巡る
+            日々の学習と復習・模試を組み合わせる際は、
             <a href={href('qualifications/zeirishi/#schedule')}>独自の学習案</a>
-            を用意しています。公式の公表問題で資料の読み方と記述形式を確認し、不足する個別論点と総合問題を追加してください。
+            を参考にしてください。各レッスンの時間と理解度に合わせて期間を調整し、公式の公表問題で資料の読み方と記述形式を確認してください。
           </p>
           <a href={href('qualifications/zeirishi/coverage/')}>技能ごとの対応表と制約を見る</a>
         </section>

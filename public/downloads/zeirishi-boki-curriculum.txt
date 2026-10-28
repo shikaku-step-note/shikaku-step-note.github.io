@@ -5,7 +5,7 @@
 所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
 免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
 
-11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。
+科目ごとに公開中の内容と、追加学習が必要な範囲を対応表で確認できます。全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習を網羅した教材ではありません。
 
 推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
 1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
@@ -18,6 +18,55 @@
 複式簿記・記帳計算・帳簿組織・商業簿記・工業簿記。原価計算は公式範囲から除外。
 前提：日商簿記3級程度の仕訳と決算整理。未学習ならサイト内の簿記3級へ。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
+  学習ツリー（Webページと同じ順序）
+    取引から試算表・決算整理へ
+      1. [zr-boki-flow] 取引から試算表・決算整理へ／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-flow/
+      2. [zr2-boki-account-equation] 取引の二面性から仕訳と利益を求める／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-account-equation/
+      3. [zr2-boki-journals-ledgers] 仕訳帳から元帳と顧客別残高へつなぐ／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-journals-ledgers/
+      4. [zr2-boki-trial-balance] 合計と残高の試算表を作り、誤謬を調べる／110分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-trial-balance/
+      5. [zr2-boki-closing-accounts] 損益・残高勘定を締め切り翌期へつなぐ／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-closing-accounts/
+      6. [zr2-boki-accrual-adjustments] 経過勘定を期間配分し、再振替と当期記帳をつなぐ／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-accrual-adjustments/
+      7. [zr2-boki-interest-present-value] 利息・複利・現在価値を受払時点から計算する／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-interest-present-value/
+      8. [zr2-boki-books-vouchers] 帳簿組織・伝票から取引を復元し、重複を除く／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-books-vouchers/
+    現金・預金・債権を残高から確かめる
+      9. [zr-boki-cash] 現金・預金・債権を残高から確かめる／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-cash/
+      10. [zr2-boki-cash-count] 現金実査・過不足・仮払精算と小口現金の決算／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-cash-count/
+      11. [zr2-boki-bank-reconciliation] 銀行勘定調整表から修正仕訳と貸越残高を求める／90分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bank-reconciliation/
+      12. [zr2-boki-bills-receivable] 手形の裏書・割引・不渡り・更改を記録する／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bills-receivable/
+      13. [zr2-boki-receivable-transfers] 電子記録債権・ファクタリングと支配移転を判断する／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-receivable-transfers/
+      14. [zr2-boki-documentary-bills] 為替手形の三つの立場・D/PとD/A・外貨建荷為替／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-documentary-bills/
+      15. [zr2-boki-credit-loss-measurement] 債権区分から貸倒見積高と引当金繰入額を計算する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-credit-loss-measurement/
+      16. [zr2-boki-bad-debt-dcf] 貸倒DCFの回収・時間経過・見積変更を連続して計算する／165分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bad-debt-dcf/
+    棚卸資産の数量・単価・評価損
+      17. [zr-boki-inventory] 棚卸資産の数量・単価・評価損／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-inventory/
+    固定資産の取得・償却・売却
+      18. [zr-boki-fixed] 固定資産の取得・償却・売却／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-fixed/
+    有価証券・社債・外貨の測定
+      19. [zr-boki-finance] 有価証券・社債・外貨の測定／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-finance/
+    本支店・帳簿組織と工業簿記の流れ
+      20. [zr-boki-branches] 本支店・帳簿組織と工業簿記の流れ／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-branches/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-boki-flow] 取引から試算表・決算整理へ／40分
       目標：仕訳と転記のつながりを説明する／前払と未払を期間へ配分する／整理前残高から利益を修正する
@@ -25,7 +74,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-boki-flow-check] 4問：zr-boki-flow-q1、zr-boki-flow-q2、zr-boki-flow-q3、zr-boki-flow-q4
       用語：転記・試算表・決算整理
-      次：zr-boki-cash
+      次：zr2-boki-account-equation
       追加学習・制約：複合仕訳・伝票会計と多桁の総合問題は追加演習が必要。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-flow/
       技能1 仕訳と転記のつながりを説明する：説明・例題→自力演習兼評価 zr-boki-flow-q1
@@ -38,7 +87,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-boki-cash-check] 4問：zr-boki-cash-q1、zr-boki-cash-q2、zr-boki-cash-q3、zr-boki-cash-q4
       用語：現金過不足・銀行勘定調整・貸倒引当金
-      次：zr-boki-inventory
+      次：zr2-boki-cash-count
       追加学習・制約：債権区分ごとの割引計算や担保の評価は概説にとどまる。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-cash/
       技能1 現金過不足の原因を分類する：説明・例題→自力演習兼評価 zr-boki-cash-q1
@@ -100,14 +149,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
   [zeirishi-boki-mock] 簿記論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-boki-mock/
 
-  詳しく学ぶ単元 [zr2-boki-unit-records] 複式簿記と帳簿の基礎
+  単元 [zr2-boki-unit-records] 複式簿記と帳簿の基礎
     取引の二面性から、帳簿・試算表・締切・経過勘定・利息現価・伝票へ進む7レッスン。独自例題と末尾練習に加え、異なる資料の単元演習A・B・Cと事例形式の用語テストで確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安820分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-boki-unit-records/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-boki-account-equation] 取引の二面性から仕訳と利益を求める／100分の目安
       学習段階：基礎（独自区分）
       前提：
@@ -235,7 +283,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       前提：zr2-boki-journals-ledgers、zr2-boki-trial-balance、zr2-boki-closing-accounts
       実演：[zr2-boki-books-vouchers-ex1] 例題1：一部現金の売上を、二つの方法で起票する／[zr2-boki-books-vouchers-ex2] 例題2：仕入の起票方法を混ぜると、貸借が合っても誤る／[zr2-boki-books-vouchers-ex3] 例題3：五伝票制では、仕入・売上の専用伝票を使う／[zr2-boki-books-vouchers-ex4] 例題4：特殊仕訳帳の重複を、取引の対応から除く／[zr2-boki-books-vouchers-ex5] 例題5：伝票日計表を、現金の純増と照合する／[zr2-boki-books-vouchers-ex6] 証憑から推定した取引を、未記帳と決め付けない
       理解度チェック [zr2-boki-books-vouchers-check] 16問／版：zeirishi-2026-v2-books-vouchers-1
-      次：zr2-boki-records-unit-review-a
+      次：zr-boki-cash
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-books-vouchers/
       [zr2-boki-books-vouchers-d1] 主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する
         独立練習：zr2-boki-books-vouchers-q1、zr2-boki-books-vouchers-q2、zr2-boki-books-vouchers-q7、zr2-boki-books-vouchers-q16
@@ -266,14 +314,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
     この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
 
 
-  詳しく学ぶ単元 [zr2-boki-unit-cash] 現金預金と金銭債権
+  単元 [zr2-boki-unit-cash] 現金預金と金銭債権
     実査・銀行照合から、手形・電子債権・荷為替・貸倒見積り・複数年DCFへ進む7講。42の独自例題、110の講末問題、41の独立累積問題と34の用語問題で確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安875分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-boki-unit-cash/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-boki-cash-count] 現金実査・過不足・仮払精算と小口現金の決算／100分の目安
       学習段階：基礎から標準へ（独自区分）
       前提：zr2-boki-books-vouchers
@@ -423,7 +470,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       前提：zr2-boki-credit-loss-measurement、zr2-boki-interest-present-value
       実演：[zr2-boki-bad-debt-dcf-ex1] 例題1：元本全額を回収できても、延期による引当てが生じる／[zr2-boki-bad-debt-dcf-ex2] 例題2：利率を引き下げた貸付金の3年間／[zr2-boki-bad-debt-dcf-ex3] 例題3：二回に分けて元本を回収する／[zr2-boki-bad-debt-dcf-ex4] 例題4：時間経過の収益と、回収額の減少が同時に生じた／[zr2-boki-bad-debt-dcf-ex5] 例題5：各回収額ごとの丸めと、合計後の丸め／[zr2-boki-bad-debt-dcf-ex6] 例題6：担保からの回収を二度控除しない
       理解度チェック [zr2-boki-bad-debt-dcf-check] 16問／版：zeirishi-2026-v2-bad-debt-dcf-1
-      次：zr2-boki-cash-core-review-a
+      次：zr-boki-inventory
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bad-debt-dcf/
       [zr2-boki-bad-debt-dcf-d1] 評価日・回収日・元利区分と当初の率を確定し、現在価値・期末必要引当・追加繰入を区別する
         独立練習：zr2-boki-bad-debt-dcf-q1、zr2-boki-bad-debt-dcf-q2、zr2-boki-bad-debt-dcf-q3、zr2-boki-bad-debt-dcf-q4、zr2-boki-bad-debt-dcf-q11、zr2-boki-bad-debt-dcf-q12、zr2-boki-bad-debt-dcf-q13、zr2-boki-bad-debt-dcf-q15
@@ -451,8 +498,8 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
 
   2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
 
-入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。
-詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
+科目全体の用語は本文の定義から生成、科目総復習はレッスン問題を再利用。基礎模試は別の独自問題。
+単元別の用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
 模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
 数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
 記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。

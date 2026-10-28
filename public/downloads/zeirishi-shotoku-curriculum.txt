@@ -5,7 +5,7 @@
 所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
 免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
 
-11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。
+科目ごとに公開中の内容と、追加学習が必要な範囲を対応表で確認できます。全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習を網羅した教材ではありません。
 
 推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
 1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
@@ -18,6 +18,37 @@
 所得税法と関係法令。所得区分・所得計算・控除・税額・申告を関連付ける。
 前提：割合と四則計算。収入と必要経費の区別。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
+  学習ツリー（Webページと同じ順序）
+    納税義務と十種類の所得区分
+      1. [zr-shotoku-scope] 納税義務と十種類の所得区分／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-scope/
+      2. [zr2-shotoku-taxpayer] 納税義務者・課税単位・納税地を確定する／75分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-taxpayer/
+      3. [zr2-shotoku-residence] 居住履歴と送金から課税範囲を判定する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-residence/
+      4. [zr2-shotoku-attribution] 真実の権利者・事業主・受益者へ所得を帰属させる／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-attribution/
+      5. [zr2-shotoku-nontaxable] 補償・贈与・生活用動産の非課税を判断する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-nontaxable/
+      6. [zr2-shotoku-income-map] 収入原因から十所得と課税方式を選ぶ／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-income-map/
+    事業所得の収入・必要経費・青色申告
+      7. [zr-shotoku-business] 事業所得の収入・必要経費・青色申告／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-business/
+    給与・退職所得を別の計算で求める
+      8. [zr-shotoku-salary] 給与・退職所得を別の計算で求める／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-salary/
+    譲渡・一時・雑所得と特別控除
+      9. [zr-shotoku-capital] 譲渡・一時・雑所得と特別控除／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-capital/
+    損益通算と所得控除を順序で整理する
+      10. [zr-shotoku-deductions] 損益通算と所得控除を順序で整理する／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-deductions/
+    累進税率・源泉徴収・申告の仕組み
+      11. [zr-shotoku-return] 累進税率・源泉徴収・申告の仕組み／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-return/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-shotoku-scope] 納税義務と十種類の所得区分／40分
       目標：人と所得の範囲を分ける／収入の性質から区分を選ぶ／非課税と控除を区別する
@@ -25,7 +56,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-shotoku-scope-check] 4問：zr-shotoku-scope-q1、zr-shotoku-scope-q2、zr-shotoku-scope-q3、zr-shotoku-scope-q4
       用語：居住者・必要経費・非課税所得
-      次：zr-shotoku-business
+      次：zr2-shotoku-taxpayer
       追加学習・制約：非永住者、非居住者、国外所得、各非課税規定の詳細は追加学習。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-scope/
       技能1 人と所得の範囲を分ける：説明・例題→自力演習兼評価 zr-shotoku-scope-q1
@@ -100,14 +131,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
   [zeirishi-shotoku-mock] 所得税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shotoku-mock/
 
-  詳しく学ぶ単元 [zr2-shotoku-unit-scope] 納税義務・所得帰属・所得計算の前提
+  単元 [zr2-shotoku-unit-scope] 納税義務・所得帰属・所得計算の前提
     人と課税期間を確定し、権利関係と収入の性質を読み解く5レッスン。居住履歴・送金、共有・組合・信託、非課税と十所得の計算を、例題と独立した累積演習で学びます。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安475分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-shotoku-unit-scope/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-shotoku-taxpayer] 納税義務者・課税単位・納税地を確定する／75分の目安
       学習段階：基礎から標準へ（独自区分）
       前提：zr-shotoku-scope
@@ -189,7 +219,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
       前提：zr2-shotoku-nontaxable
       実演：[zr2-shotoku-income-map-e1] 例題1：事業主の三つの売却を振り分ける／[zr2-shotoku-income-map-e2] 例題2：原稿料と懸賞賞金の控除を分ける／[zr2-shotoku-income-map-e3] 例題3：山林を土地付きで売った場合／[zr2-shotoku-income-map-e4] 例題4：同じ「利息」と、上場配当の選択
       理解度チェック [zr2-shotoku-income-map-check] 10問／版：zeirishi-2026-v2-income-map-1
-      次：zr2-shotoku-scope-review
+      次：zr-shotoku-business
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-income-map/
       [zr2-shotoku-income-map-o01] 収入原因から十所得へ区分する
         独立練習：zr2-shotoku-income-map-q1、zr2-shotoku-income-map-q2、zr2-shotoku-income-map-q3、zr2-shotoku-income-map-q4、zr2-shotoku-income-map-q5、zr2-shotoku-income-map-q10
@@ -211,8 +241,8 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
 
   2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
 
-入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。
-詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
+科目全体の用語は本文の定義から生成、科目総復習はレッスン問題を再利用。基礎模試は別の独自問題。
+単元別の用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
 模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
 数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
 記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。

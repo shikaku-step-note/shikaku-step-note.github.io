@@ -5,7 +5,7 @@
 所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
 免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
 
-11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。
+科目ごとに公開中の内容と、追加学習が必要な範囲を対応表で確認できます。全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習を網羅した教材ではありません。
 
 推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
 1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
@@ -18,6 +18,55 @@
 複式簿記・記帳計算・帳簿組織・商業簿記・工業簿記。原価計算は公式範囲から除外。
 前提：日商簿記3級程度の仕訳と決算整理。未学習ならサイト内の簿記3級へ。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
+  学習ツリー（Webページと同じ順序）
+    取引から試算表・決算整理へ
+      1. [zr-boki-flow] 取引から試算表・決算整理へ／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-flow/
+      2. [zr2-boki-account-equation] 取引の二面性から仕訳と利益を求める／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-account-equation/
+      3. [zr2-boki-journals-ledgers] 仕訳帳から元帳と顧客別残高へつなぐ／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-journals-ledgers/
+      4. [zr2-boki-trial-balance] 合計と残高の試算表を作り、誤謬を調べる／110分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-trial-balance/
+      5. [zr2-boki-closing-accounts] 損益・残高勘定を締め切り翌期へつなぐ／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-closing-accounts/
+      6. [zr2-boki-accrual-adjustments] 経過勘定を期間配分し、再振替と当期記帳をつなぐ／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-accrual-adjustments/
+      7. [zr2-boki-interest-present-value] 利息・複利・現在価値を受払時点から計算する／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-interest-present-value/
+      8. [zr2-boki-books-vouchers] 帳簿組織・伝票から取引を復元し、重複を除く／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-books-vouchers/
+    現金・預金・債権を残高から確かめる
+      9. [zr-boki-cash] 現金・預金・債権を残高から確かめる／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-cash/
+      10. [zr2-boki-cash-count] 現金実査・過不足・仮払精算と小口現金の決算／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-cash-count/
+      11. [zr2-boki-bank-reconciliation] 銀行勘定調整表から修正仕訳と貸越残高を求める／90分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bank-reconciliation/
+      12. [zr2-boki-bills-receivable] 手形の裏書・割引・不渡り・更改を記録する／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bills-receivable/
+      13. [zr2-boki-receivable-transfers] 電子記録債権・ファクタリングと支配移転を判断する／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-receivable-transfers/
+      14. [zr2-boki-documentary-bills] 為替手形の三つの立場・D/PとD/A・外貨建荷為替／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-documentary-bills/
+      15. [zr2-boki-credit-loss-measurement] 債権区分から貸倒見積高と引当金繰入額を計算する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-credit-loss-measurement/
+      16. [zr2-boki-bad-debt-dcf] 貸倒DCFの回収・時間経過・見積変更を連続して計算する／165分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bad-debt-dcf/
+    棚卸資産の数量・単価・評価損
+      17. [zr-boki-inventory] 棚卸資産の数量・単価・評価損／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-inventory/
+    固定資産の取得・償却・売却
+      18. [zr-boki-fixed] 固定資産の取得・償却・売却／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-fixed/
+    有価証券・社債・外貨の測定
+      19. [zr-boki-finance] 有価証券・社債・外貨の測定／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-finance/
+    本支店・帳簿組織と工業簿記の流れ
+      20. [zr-boki-branches] 本支店・帳簿組織と工業簿記の流れ／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-branches/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-boki-flow] 取引から試算表・決算整理へ／40分
       目標：仕訳と転記のつながりを説明する／前払と未払を期間へ配分する／整理前残高から利益を修正する
@@ -25,7 +74,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-boki-flow-check] 4問：zr-boki-flow-q1、zr-boki-flow-q2、zr-boki-flow-q3、zr-boki-flow-q4
       用語：転記・試算表・決算整理
-      次：zr-boki-cash
+      次：zr2-boki-account-equation
       追加学習・制約：複合仕訳・伝票会計と多桁の総合問題は追加演習が必要。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-flow/
       技能1 仕訳と転記のつながりを説明する：説明・例題→自力演習兼評価 zr-boki-flow-q1
@@ -38,7 +87,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-boki-cash-check] 4問：zr-boki-cash-q1、zr-boki-cash-q2、zr-boki-cash-q3、zr-boki-cash-q4
       用語：現金過不足・銀行勘定調整・貸倒引当金
-      次：zr-boki-inventory
+      次：zr2-boki-cash-count
       追加学習・制約：債権区分ごとの割引計算や担保の評価は概説にとどまる。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-boki-cash/
       技能1 現金過不足の原因を分類する：説明・例題→自力演習兼評価 zr-boki-cash-q1
@@ -100,14 +149,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
   [zeirishi-boki-mock] 簿記論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-boki-mock/
 
-  詳しく学ぶ単元 [zr2-boki-unit-records] 複式簿記と帳簿の基礎
+  単元 [zr2-boki-unit-records] 複式簿記と帳簿の基礎
     取引の二面性から、帳簿・試算表・締切・経過勘定・利息現価・伝票へ進む7レッスン。独自例題と末尾練習に加え、異なる資料の単元演習A・B・Cと事例形式の用語テストで確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安820分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-boki-unit-records/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-boki-account-equation] 取引の二面性から仕訳と利益を求める／100分の目安
       学習段階：基礎（独自区分）
       前提：
@@ -235,7 +283,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       前提：zr2-boki-journals-ledgers、zr2-boki-trial-balance、zr2-boki-closing-accounts
       実演：[zr2-boki-books-vouchers-ex1] 例題1：一部現金の売上を、二つの方法で起票する／[zr2-boki-books-vouchers-ex2] 例題2：仕入の起票方法を混ぜると、貸借が合っても誤る／[zr2-boki-books-vouchers-ex3] 例題3：五伝票制では、仕入・売上の専用伝票を使う／[zr2-boki-books-vouchers-ex4] 例題4：特殊仕訳帳の重複を、取引の対応から除く／[zr2-boki-books-vouchers-ex5] 例題5：伝票日計表を、現金の純増と照合する／[zr2-boki-books-vouchers-ex6] 証憑から推定した取引を、未記帳と決め付けない
       理解度チェック [zr2-boki-books-vouchers-check] 16問／版：zeirishi-2026-v2-books-vouchers-1
-      次：zr2-boki-records-unit-review-a
+      次：zr-boki-cash
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-books-vouchers/
       [zr2-boki-books-vouchers-d1] 主要簿・補助簿・特殊仕訳帳と三伝票・五伝票の役割を区別する
         独立練習：zr2-boki-books-vouchers-q1、zr2-boki-books-vouchers-q2、zr2-boki-books-vouchers-q7、zr2-boki-books-vouchers-q16
@@ -266,14 +314,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
     この単元の完了は、科目全体または本試験範囲の完了を意味しません。後続教材と全体の対応表も確認してください。
 
 
-  詳しく学ぶ単元 [zr2-boki-unit-cash] 現金預金と金銭債権
+  単元 [zr2-boki-unit-cash] 現金預金と金銭債権
     実査・銀行照合から、手形・電子債権・荷為替・貸倒見積り・複数年DCFへ進む7講。42の独自例題、110の講末問題、41の独立累積問題と34の用語問題で確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安875分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-boki-unit-cash/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-boki-cash-count] 現金実査・過不足・仮払精算と小口現金の決算／100分の目安
       学習段階：基礎から標準へ（独自区分）
       前提：zr2-boki-books-vouchers
@@ -423,7 +470,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
       前提：zr2-boki-credit-loss-measurement、zr2-boki-interest-present-value
       実演：[zr2-boki-bad-debt-dcf-ex1] 例題1：元本全額を回収できても、延期による引当てが生じる／[zr2-boki-bad-debt-dcf-ex2] 例題2：利率を引き下げた貸付金の3年間／[zr2-boki-bad-debt-dcf-ex3] 例題3：二回に分けて元本を回収する／[zr2-boki-bad-debt-dcf-ex4] 例題4：時間経過の収益と、回収額の減少が同時に生じた／[zr2-boki-bad-debt-dcf-ex5] 例題5：各回収額ごとの丸めと、合計後の丸め／[zr2-boki-bad-debt-dcf-ex6] 例題6：担保からの回収を二度控除しない
       理解度チェック [zr2-boki-bad-debt-dcf-check] 16問／版：zeirishi-2026-v2-bad-debt-dcf-1
-      次：zr2-boki-cash-core-review-a
+      次：zr-boki-inventory
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-boki-bad-debt-dcf/
       [zr2-boki-bad-debt-dcf-d1] 評価日・回収日・元利区分と当初の率を確定し、現在価値・期末必要引当・追加繰入を区別する
         独立練習：zr2-boki-bad-debt-dcf-q1、zr2-boki-bad-debt-dcf-q2、zr2-boki-bad-debt-dcf-q3、zr2-boki-bad-debt-dcf-q4、zr2-boki-bad-debt-dcf-q11、zr2-boki-bad-debt-dcf-q12、zr2-boki-bad-debt-dcf-q13、zr2-boki-bad-debt-dcf-q15
@@ -455,6 +502,45 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/boki/
 会計原理・会計基準・会社法の計算規定・会社計算規則・財務諸表規則等。特定事業会社の特例を除く。
 前提：簿記の基本に加え、資産・負債・純資産・収益・費用の関係。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
+  学習ツリー（Webページと同じ順序）
+    財務会計の目的と利益の意味
+      1. [zr-zaimu-concepts] 財務会計の目的と利益の意味／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-concepts/
+      2. [zr2-zaimu-purpose-regulation] 財務会計の目的と制度／110分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-purpose-regulation/
+      3. [zr2-zaimu-reporting-obligations] 会社の属性と財務情報の作成・監査・開示／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-reporting-obligations/
+      4. [zr2-zaimu-qualitative-characteristics] 有用性・信頼性・内的整合性・比較可能性／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-qualitative-characteristics/
+      5. [zr2-zaimu-elements] 資産・負債・純資産・投資の成果／130分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-elements/
+      6. [zr2-zaimu-general-principles] 企業会計原則と個別基準／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-general-principles/
+      7. [zr2-zaimu-recognition-measurement] 認識・測定と期間損益／180分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-recognition-measurement/
+      8. [zr2-zaimu-policy-changes] 会計方針・見積りの変更と誤謬／180分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-policy-changes/
+      9. [zr2-zaimu-estimate-disclosure] 会計上の見積りを注記で伝える／130分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-estimate-disclosure/
+      10. [zr2-zaimu-theory-writing] 理由と計算をつなぐ理論答案の作り方／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-theory-writing/
+    収益認識を履行義務から考える
+      11. [zr-zaimu-revenue] 収益認識を履行義務から考える／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-revenue/
+    資産評価と減損を二段階で判断する
+      12. [zr-zaimu-assets] 資産評価と減損を二段階で判断する／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-assets/
+    引当金・退職給付・税効果の理由
+      13. [zr-zaimu-liabilities] 引当金・退職給付・税効果の理由／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-liabilities/
+    純資産・株式報酬・企業結合と連結
+      14. [zr-zaimu-equity] 純資産・株式報酬・企業結合と連結／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-equity/
+    財務諸表・キャッシュフロー・注記を読む
+      15. [zr-zaimu-statements] 財務諸表・キャッシュフロー・注記を読む／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-statements/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-zaimu-concepts] 財務会計の目的と利益の意味／40分
       目標：投資意思決定との関係を説明する／現金収支と期間損益を区別する／比較可能性と内的整合性を考える
@@ -462,7 +548,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-zaimu-concepts-check] 4問：zr-zaimu-concepts-q1、zr-zaimu-concepts-q2、zr-zaimu-concepts-q3、zr-zaimu-concepts-q4
       用語：発生主義・比較可能性・純利益
-      次：zr-zaimu-revenue
+      次：zr2-zaimu-purpose-regulation
       追加学習・制約：概念フレームワーク全項目と学説の比較は追加学習。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-concepts/
       技能1 投資意思決定との関係を説明する：説明・例題→自力演習兼評価 zr-zaimu-concepts-q1
@@ -537,14 +623,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
   [zeirishi-zaimu-mock] 財務諸表論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-zaimu-mock/
 
-  詳しく学ぶ単元 [zr2-zaimu-unit-framework] 財務会計の考え方と制度
+  単元 [zr2-zaimu-unit-framework] 財務会計の考え方と制度
     財務報告の目的・制度から、情報特性、構成要素、認識測定、会計上の変更、見積り注記、理論答案へ進む9講。53の例題、141の講末問題、別の累積52問と用語32問で確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安1270分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-zaimu-unit-framework/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-zaimu-purpose-regulation] 財務会計の目的と制度／110分の目安
       学習段階：基礎（独自区分）
       前提：
@@ -726,7 +811,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
       前提：zr2-zaimu-estimate-disclosure
       実演：[zr2-zaimu-theory-writing-e1] 例題1：同じ資料から、別の問いに答える／[zr2-zaimu-theory-writing-e2] 例題2：新情報と過去の誤りを分ける／[zr2-zaimu-theory-writing-e3] 例題3：在庫差額の符号と二つの期間／[zr2-zaimu-theory-writing-e4] 例題4：不足する条件を勝手に補わない／[zr2-zaimu-theory-writing-e5] 例題5：結論だけがある答案を採点する
       理解度チェック [zr2-zaimu-theory-writing-check] 15問／版：zeirishi-2026-v2-theory-writing-1
-      次：zr2-zaimu-framework-review-a
+      次：zr-zaimu-revenue
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-theory-writing/
       [zr2-zaimu-theory-writing-f01] 設問の対象・要求動作・条件・出力を読み分け、要求の欠落を特定する
         独立練習：zr2-zaimu-theory-writing-q1、zr2-zaimu-theory-writing-q2、zr2-zaimu-theory-writing-q6、zr2-zaimu-theory-writing-q14、zr2-zaimu-theory-writing-q15
@@ -764,6 +849,37 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
 所得税法と関係法令。所得区分・所得計算・控除・税額・申告を関連付ける。
 前提：割合と四則計算。収入と必要経費の区別。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
+  学習ツリー（Webページと同じ順序）
+    納税義務と十種類の所得区分
+      1. [zr-shotoku-scope] 納税義務と十種類の所得区分／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-scope/
+      2. [zr2-shotoku-taxpayer] 納税義務者・課税単位・納税地を確定する／75分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-taxpayer/
+      3. [zr2-shotoku-residence] 居住履歴と送金から課税範囲を判定する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-residence/
+      4. [zr2-shotoku-attribution] 真実の権利者・事業主・受益者へ所得を帰属させる／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-attribution/
+      5. [zr2-shotoku-nontaxable] 補償・贈与・生活用動産の非課税を判断する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-nontaxable/
+      6. [zr2-shotoku-income-map] 収入原因から十所得と課税方式を選ぶ／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-income-map/
+    事業所得の収入・必要経費・青色申告
+      7. [zr-shotoku-business] 事業所得の収入・必要経費・青色申告／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-business/
+    給与・退職所得を別の計算で求める
+      8. [zr-shotoku-salary] 給与・退職所得を別の計算で求める／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-salary/
+    譲渡・一時・雑所得と特別控除
+      9. [zr-shotoku-capital] 譲渡・一時・雑所得と特別控除／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-capital/
+    損益通算と所得控除を順序で整理する
+      10. [zr-shotoku-deductions] 損益通算と所得控除を順序で整理する／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-deductions/
+    累進税率・源泉徴収・申告の仕組み
+      11. [zr-shotoku-return] 累進税率・源泉徴収・申告の仕組み／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-return/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-shotoku-scope] 納税義務と十種類の所得区分／40分
       目標：人と所得の範囲を分ける／収入の性質から区分を選ぶ／非課税と控除を区別する
@@ -771,7 +887,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-shotoku-scope-check] 4問：zr-shotoku-scope-q1、zr-shotoku-scope-q2、zr-shotoku-scope-q3、zr-shotoku-scope-q4
       用語：居住者・必要経費・非課税所得
-      次：zr-shotoku-business
+      次：zr2-shotoku-taxpayer
       追加学習・制約：非永住者、非居住者、国外所得、各非課税規定の詳細は追加学習。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shotoku-scope/
       技能1 人と所得の範囲を分ける：説明・例題→自力演習兼評価 zr-shotoku-scope-q1
@@ -846,14 +962,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
   [zeirishi-shotoku-mock] 所得税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-shotoku-mock/
 
-  詳しく学ぶ単元 [zr2-shotoku-unit-scope] 納税義務・所得帰属・所得計算の前提
+  単元 [zr2-shotoku-unit-scope] 納税義務・所得帰属・所得計算の前提
     人と課税期間を確定し、権利関係と収入の性質を読み解く5レッスン。居住履歴・送金、共有・組合・信託、非課税と十所得の計算を、例題と独立した累積演習で学びます。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安475分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-shotoku-unit-scope/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-shotoku-taxpayer] 納税義務者・課税単位・納税地を確定する／75分の目安
       学習段階：基礎から標準へ（独自区分）
       前提：zr-shotoku-scope
@@ -935,7 +1050,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
       前提：zr2-shotoku-nontaxable
       実演：[zr2-shotoku-income-map-e1] 例題1：事業主の三つの売却を振り分ける／[zr2-shotoku-income-map-e2] 例題2：原稿料と懸賞賞金の控除を分ける／[zr2-shotoku-income-map-e3] 例題3：山林を土地付きで売った場合／[zr2-shotoku-income-map-e4] 例題4：同じ「利息」と、上場配当の選択
       理解度チェック [zr2-shotoku-income-map-check] 10問／版：zeirishi-2026-v2-income-map-1
-      次：zr2-shotoku-scope-review
+      次：zr-shotoku-business
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-shotoku-income-map/
       [zr2-shotoku-income-map-o01] 収入原因から十所得へ区分する
         独立練習：zr2-shotoku-income-map-q1、zr2-shotoku-income-map-q2、zr2-shotoku-income-map-q3、zr2-shotoku-income-map-q4、zr2-shotoku-income-map-q5、zr2-shotoku-income-map-q10
@@ -961,6 +1076,37 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shotoku/
 法人税法と関係法令。会計利益と所得の調整、税額、申告を扱う。
 前提：簿記3級程度の決算と損益計算書。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
+  学習ツリー（Webページと同じ順序）
+    会計利益から所得へ・別表四の考え方
+      1. [zr-hojin-adjustment] 会計利益から所得へ・別表四の考え方／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-adjustment/
+      2. [zr2-hojin-entity-scope] 法人の区分・収益事業から課税範囲を決める／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-entity-scope/
+      3. [zr2-hojin-period-filing] 事業年度・納税地と青色承認の期限を確定する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-period-filing/
+      4. [zr2-hojin-income-adjustments] 益金・損金と決算処理から申告調整を組み立てる／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-income-adjustments/
+      5. [zr2-hojin-schedule-four-five] 別表四・五（一）・五（二）を残高まで照合する／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-schedule-four-five/
+      6. [zr2-hojin-relationships] 同族・支配・完全支配と中小判定を使い分ける／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-relationships/
+    棚卸・減価償却・貸倒れの税務調整
+      7. [zr-hojin-assets] 棚卸・減価償却・貸倒れの税務調整／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-assets/
+    役員給与・交際費・寄附金を区分する
+      8. [zr-hojin-compensation] 役員給与・交際費・寄附金を区分する／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-compensation/
+    受取配当・資本取引とグループの関係
+      9. [zr-hojin-distributions] 受取配当・資本取引とグループの関係／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-distributions/
+    欠損金・繰越控除・引継ぎの条件
+      10. [zr-hojin-losses] 欠損金・繰越控除・引継ぎの条件／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-losses/
+    法人税額・申告と防衛特別法人税
+      11. [zr-hojin-return] 法人税額・申告と防衛特別法人税／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-return/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-hojin-adjustment] 会計利益から所得へ・別表四の考え方／40分
       目標：益金損金と収益費用を分ける／加算と減算を選ぶ／留保と社外流出を整理する
@@ -968,7 +1114,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-hojin-adjustment-check] 4問：zr-hojin-adjustment-q1、zr-hojin-adjustment-q2、zr-hojin-adjustment-q3、zr-hojin-adjustment-q4
       用語：益金・損金・留保
-      次：zr-hojin-assets
+      次：zr2-hojin-entity-scope
       追加学習・制約：別表五との完全連動、組織再編、収益計上時期の特例は追加演習。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-adjustment/
       技能1 益金損金と収益費用を分ける：説明・例題→自力演習兼評価 zr-hojin-adjustment-q1、zr-hojin-adjustment-q4
@@ -1043,14 +1189,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
   [zeirishi-hojin-mock] 法人税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-hojin-mock/
 
-  詳しく学ぶ単元 [zr2-hojin-unit-scope] 納税主体・事業年度・税務調整
+  単元 [zr2-hojin-unit-scope] 納税主体・事業年度・税務調整
     法人の区分と課税範囲、事業年度・青色承認、四調整、三表の連動、持株関係へ進む5講。20の独自例題、52の講末問題、25問の独立累積演習と35問の用語テストで確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安540分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-hojin-unit-scope/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-hojin-entity-scope] 法人の区分・収益事業から課税範囲を決める／100分の目安
       学習段階：基礎から標準へ（独自区分）
       前提：zr-hojin-adjustment
@@ -1130,7 +1275,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
       前提：zr2-hojin-schedule-four-five
       実演：[zr2-hojin-relationships-e1] 例題1：自己株式と親族を整理する／[zr2-hojin-relationships-e2] 例題2：60％の連鎖と、経済持分36％／[zr2-hojin-relationships-e3] 例題3：100％の連鎖と、5％未満の境界／[zr2-hojin-relationships-e4] 例題4：50％保有と、平均所得15億円の境界
       理解度チェック [zr2-hojin-relationships-check] 12問／版：zeirishi-2026-v2-relationships-1
-      次：zr2-hojin-scope-review
+      次：zr-hojin-assets
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-relationships/
       [zr2-hojin-relationships-o01] 株主親族/議決権関係を判定する
         独立練習：zr2-hojin-relationships-q1、zr2-hojin-relationships-q2、zr2-hojin-relationships-q3、zr2-hojin-relationships-q4、zr2-hojin-relationships-q5、zr2-hojin-relationships-q6
@@ -1160,6 +1305,24 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
 相続税・贈与税と関係法令。民法上の相続関係と財産評価を区別する。
 前提：割合と四則計算。相続人と財産の関係を図にできること。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/sozoku/
+  学習ツリー（Webページと同じ順序）
+    相続人・納税義務・課税財産
+      1. [zr-sozoku-scope] 相続人・納税義務・課税財産／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-scope/
+    路線価・建物・預金の評価
+      2. [zr-sozoku-valuation] 路線価・建物・預金の評価／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-valuation/
+    生命保険の非課税と小規模宅地等
+      3. [zr-sozoku-reliefs] 生命保険の非課税と小規模宅地等／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-reliefs/
+    相続税の総額から各人の税額へ
+      4. [zr-sozoku-total] 相続税の総額から各人の税額へ／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-total/
+    暦年贈与・相続時精算課税・申告
+      5. [zr-sozoku-gifts] 暦年贈与・相続時精算課税・申告／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-sozoku-gifts/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-sozoku-scope] 相続人・納税義務・課税財産／40分
       目標：法定相続人を確定する／本来財産とみなし財産を分ける／債務と葬式費用を判定する
@@ -1235,6 +1398,24 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/sozoku/
 消費税法と関係法令。納税義務、取引区分、課税標準、税額控除、申告。
 前提：税抜・税込の換算と売上・仕入れの区別。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shohi/
+  学習ツリー（Webページと同じ順序）
+    課税・非課税・免税・対象外を見分ける
+      1. [zr-shohi-scope] 課税・非課税・免税・対象外を見分ける／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-scope/
+    基準期間・特定期間・登録の納税義務
+      2. [zr-shohi-liability] 基準期間・特定期間・登録の納税義務／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-liability/
+    課税標準・税率・売上税額
+      3. [zr-shohi-output] 課税標準・税率・売上税額／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-output/
+    仕入税額控除とインボイスの条件
+      4. [zr-shohi-input] 仕入税額控除とインボイスの条件／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-input/
+    簡易課税・二割特例・申告の比較
+      5. [zr-shohi-methods] 簡易課税・二割特例・申告の比較／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shohi-methods/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-shohi-scope] 課税・非課税・免税・対象外を見分ける／40分
       目標：国内取引の要件を確認する／非課税と輸出免税を分ける／仕入控除との関係を説明する
@@ -1310,6 +1491,21 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shohi/
 酒税法と関係法令。酒類の分類、免許、課税数量、税率、移出と申告。
 前提：容量の単位換算と割合。酒類の製法について予備知識は不要。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shuzei/
+  学習ツリー（Webページと同じ順序）
+    酒類の定義・四分類・品目の判定
+      1. [zr-shuzei-class] 酒類の定義・四分類・品目の判定／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-class/
+    製造免許・販売業免許と移出課税
+      2. [zr-shuzei-license] 製造免許・販売業免許と移出課税／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-license/
+    数量換算・アルコール分・酒税額
+      3. [zr-shuzei-amount] 数量換算・アルコール分・酒税額／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-amount/
+    未納税移出・輸出免税・戻入れと申告
+      4. [zr-shuzei-return] 未納税移出・輸出免税・戻入れと申告／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-shuzei-return/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-shuzei-class] 酒類の定義・四分類・品目の判定／40分
       目標：アルコール分の定義を説明する／製法と性状で品目を判定する／税率分類と名称を分ける
@@ -1373,6 +1569,33 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/shuzei/
 国税徴収法と関係法令。徴収の優先関係、滞納処分、第二次納税義務、猶予等。
 前提：人物と日付を表に整理すること。民法の担保の初歩は本文で補う。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
+  学習ツリー（Webページと同じ順序）
+    成立・確定・法定納期限等と優先関係
+      1. [zr-kokuzei-priority] 成立・確定・法定納期限等と優先関係／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-priority/
+      2. [zr2-kokuzei-framework] 徴収法の目的・税の区分・当事者と執行機関／90分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-framework/
+      3. [zr2-kokuzei-private-law] 財産の帰属・担保・社員責任・相続を読み分ける／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-private-law/
+      4. [zr2-kokuzei-tax-timeline] 成立・確定・納付期限と優先比較日を年表にする／110分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-tax-timeline/
+      5. [zr2-kokuzei-demand-acceleration] 督促・納付催告・繰上請求と繰上差押えを区分する／110分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-demand-acceleration/
+      6. [zr2-kokuzei-limitations-succession] 徴収権の時効・納付義務の承継と充当残高を計算する／130分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-limitations-succession/
+      7. [zr2-kokuzei-late-tax] 延滞税・加算税を日付と行為の条件から計算する／140分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-late-tax/
+    督促・差押え・債権の取立て
+      8. [zr-kokuzei-seizure] 督促・差押え・債権の取立て／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-seizure/
+    換価・配当と第二次納税義務
+      9. [zr-kokuzei-sale] 換価・配当と第二次納税義務／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-sale/
+    猶予・滞納処分の停止・不服申立て
+      10. [zr-kokuzei-relief] 猶予・滞納処分の停止・不服申立て／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-relief/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-kokuzei-priority] 成立・確定・法定納期限等と優先関係／40分
       目標：税の成立と確定を区別する／法定納期限等を時系列に置く／抵当権との優先を判断する
@@ -1380,7 +1603,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-kokuzei-priority-check] 5問：zr-kokuzei-priority-q1、zr-kokuzei-priority-q2、zr-kokuzei-priority-q3、zr-kokuzei-priority-q4、zr-kokuzei-priority-q5
       用語：法定納期限等・国税優先の原則・納期限
-      次：zr-kokuzei-seizure
+      次：zr2-kokuzei-framework
       追加学習・制約：法定納期限等の各特則、交付要求先着手と税相互の優先は追加演習。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kokuzei-priority/
       技能1 税の成立と確定を区別する：説明・例題→自力演習兼評価 zr-kokuzei-priority-q1
@@ -1431,14 +1654,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
   [zeirishi-kokuzei-mock] 国税徴収法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-kokuzei-mock/
 
-  詳しく学ぶ単元 [zr2-kokuzei-unit-foundations] 徴収と私法の基礎を時系列にする
+  単元 [zr2-kokuzei-unit-foundations] 徴収と私法の基礎を時系列にする
     当事者と財産の帰属から、成立・確定・期限、督促、時効・承継、延滞税・基本加算税へ進む6講。25の独自例題、77の末尾問題と、初見資料の記述26問・事例用語12問で段階的に確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安680分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-kokuzei-unit-foundations/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-kokuzei-framework] 徴収法の目的・税の区分・当事者と執行機関／90分の目安
       学習段階：基礎から標準へ（独自区分）
       前提：zr-kokuzei-priority
@@ -1561,7 +1783,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
       前提：zr2-kokuzei-limitations-succession
       実演：[late-ex1] 例題1：二つの割合と本税の端数を処理する／[late-ex2] 例題2：1年後の修正と暦年の割合変更／[late-ex3] 例題3：過少申告加算税の5％加重部分／[late-ex4] 例題4：無申告の段階税率と自主申告の場合の違い
       理解度チェック [zr2-kokuzei-late-tax-check] 15問／版：zeirishi-2026-v2-kokuzei-late-tax-1
-      次：zr2-kokuzei-unit-foundations-review
+      次：zr-kokuzei-seizure
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-kokuzei-late-tax/
       [zr2-kokuzei-late-tax-d1] 法定納期限・現実の納期限・暦年から延滞税の率と区分日を選択する
         独立練習：zr2-kokuzei-late-tax-q1、zr2-kokuzei-late-tax-q3、zr2-kokuzei-late-tax-q15
@@ -1593,6 +1815,21 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kokuzei/
 地方税法の道府県民税・市町村民税と総則・関係法令。個人と法人を含む。
 前提：所得税法の所得区分と所得控除の基礎。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jumin/
+  学習ツリー（Webページと同じ順序）
+    個人住民税の住所・年度・所得
+      1. [zr-jumin-individual] 個人住民税の住所・年度・所得／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-individual/
+    所得控除・調整控除・税額控除
+      2. [zr-jumin-adjustments] 所得控除・調整控除・税額控除／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-adjustments/
+    法人住民税の均等割・法人税割・分割
+      3. [zr-jumin-corporate] 法人住民税の均等割・法人税割・分割／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-corporate/
+    普通徴収・特別徴収と退職所得
+      4. [zr-jumin-collection] 普通徴収・特別徴収と退職所得／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jumin-collection/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-jumin-individual] 個人住民税の住所・年度・所得／40分
       目標：一月一日の住所地を確認する／所得の年と課税年度を分ける／所得割と均等割を区別する
@@ -1656,6 +1893,21 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jumin/
 地方税法の事業税と総則・関係法令。法人と個人、外形標準課税を含む。
 前提：法人の所得計算と個人の事業所得の基本。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jigyo/
+  学習ツリー（Webページと同じ順序）
+    法人事業税の所得割・収入割
+      1. [zr-jigyo-corporate] 法人事業税の所得割・収入割／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-corporate/
+    外形標準課税の付加価値割・資本割
+      2. [zr-jigyo-external] 外形標準課税の付加価値割・資本割／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-external/
+    個人事業税の業種・控除・税額
+      3. [zr-jigyo-individual] 個人事業税の業種・控除・税額／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-individual/
+    分割・特別法人事業税・申告
+      4. [zr-jigyo-return] 分割・特別法人事業税・申告／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-return/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-jigyo-corporate] 法人事業税の所得割・収入割／40分
       目標：事業と課税標準の区分を選ぶ／法人税所得から差を調整する／所得割の段階計算を行う
@@ -1719,6 +1971,21 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jigyo/
 地方税法の固定資産税と総則・関係法令。土地・家屋・償却資産を区別する。
 前提：割合計算。取得価額・評価額・課税標準の違いを本文で確認する。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kotei/
+  学習ツリー（Webページと同じ順序）
+    土地・家屋・償却資産と一月一日
+      1. [zr-kotei-scope] 土地・家屋・償却資産と一月一日／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-scope/
+    宅地評価・住宅用地・負担調整
+      2. [zr-kotei-land] 宅地評価・住宅用地・負担調整／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-land/
+    家屋の評価・新築住宅の税額軽減
+      3. [zr-kotei-building] 家屋の評価・新築住宅の税額軽減／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-building/
+    償却資産の評価・免税点・申告
+      4. [zr-kotei-depreciable] 償却資産の評価・免税点・申告／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-kotei-depreciable/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-kotei-scope] 土地・家屋・償却資産と一月一日／40分
       目標：固定資産の課税客体を分ける／賦課期日と所有者を確認する／取得価額・評価額・課税標準額を区別する
@@ -1778,8 +2045,8 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/kotei/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-kotei-mock/
   2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
 
-入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。
-詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
+科目全体の用語は本文の定義から生成、科目総復習はレッスン問題を再利用。基礎模試は別の独自問題。
+単元別の用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
 模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
 数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
 記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。

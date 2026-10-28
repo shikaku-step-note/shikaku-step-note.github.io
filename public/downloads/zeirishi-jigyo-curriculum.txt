@@ -5,7 +5,7 @@
 所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
 免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
 
-11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。
+科目ごとに公開中の内容と、追加学習が必要な範囲を対応表で確認できます。全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習を網羅した教材ではありません。
 
 推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
 1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
@@ -18,6 +18,21 @@
 地方税法の事業税と総則・関係法令。法人と個人、外形標準課税を含む。
 前提：法人の所得計算と個人の事業所得の基本。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jigyo/
+  学習ツリー（Webページと同じ順序）
+    法人事業税の所得割・収入割
+      1. [zr-jigyo-corporate] 法人事業税の所得割・収入割／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-corporate/
+    外形標準課税の付加価値割・資本割
+      2. [zr-jigyo-external] 外形標準課税の付加価値割・資本割／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-external/
+    個人事業税の業種・控除・税額
+      3. [zr-jigyo-individual] 個人事業税の業種・控除・税額／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-individual/
+    分割・特別法人事業税・申告
+      4. [zr-jigyo-return] 分割・特別法人事業税・申告／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-jigyo-return/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-jigyo-corporate] 法人事業税の所得割・収入割／40分
       目標：事業と課税標準の区分を選ぶ／法人税所得から差を調整する／所得割の段階計算を行う
@@ -77,8 +92,8 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/jigyo/
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-jigyo-mock/
   2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
 
-入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。
-詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
+科目全体の用語は本文の定義から生成、科目総復習はレッスン問題を再利用。基礎模試は別の独自問題。
+単元別の用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
 模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
 数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
 記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。

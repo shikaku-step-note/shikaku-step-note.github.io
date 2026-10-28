@@ -11,7 +11,7 @@ export const zeirishiSources = sources;
 export const zeirishiReviewed = curriculum.reviewed;
 export const zeirishiVersion = curriculum.version;
 export const zeirishiLimitations =
-  '11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。';
+  '科目ごとに公開中の内容と、追加学習が必要な範囲を対応表で確認できます。全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習を網羅した教材ではありません。';
 export const zeirishiSubject = (id: string) => zeirishiSubjects.find((s) => s.id === id);
 type Lesson = { data: { stableId: string; qualification: string; archived?: boolean } };
 export function zeirishiAssessments(lessons: Lesson[]): Assessment[] {

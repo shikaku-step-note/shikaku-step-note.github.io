@@ -66,7 +66,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
       <ul>{references.map((reference) => <li><a href={reference.url}>{reference.title}</a>：{reference.locator}。{reference.version}（確認日：{reference.verified}）</li>)}</ul>
       <p>単元確認日：<time datetime={unit.reviewed}>{unit.reviewed}</time>。<a href={href('qualifications/zeirishi/coverage/')}>全体の対応表と未完了の範囲</a>・<a href={href('editorial/')}>編集・AI支援の方針</a></p>
     </section>
-    <p>以前の入門教材の記録は保管され、この単元の完了数には加算されません。記録はこのブラウザに保存され、端末間で自動同期しません。<a href={href('progress/#backup')}>バックアップを保存</a></p>
+    <p>記録はこのブラウザに保存され、端末間で自動同期しません。<a href={href('progress/#backup')}>バックアップを保存</a></p>
     <p><a href={href(`qualifications/zeirishi/subjects/${subject.id}/`)}>{subject.name}の学習順へ戻る</a>・<a href={href(`downloads/zeirishi-${subject.id}-curriculum.txt`)} download>学習ツリー・学習案（TXT）</a></p>
     <Share title={`${unit.title}｜税理士・${subject.name}`} url={canonical} />
   </article>

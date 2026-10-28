@@ -10,6 +10,7 @@ import {
   zeirishiAssessments,
 } from '../src/data/zeirishi.ts';
 import { zeirishiDeepLessons, zeirishiDeepUnits, zeirishiDeepAssessments } from '../src/data/zeirishi-expanded.ts';
+import { zeirishiLearningPath, zeirishiLessonIds } from '../src/data/zeirishi-learning-path.ts';
 const lessons = [...zeirishiOutline, ...zeirishiDeepLessons].map((r) => ({
   data: parse(readFileSync(`src/content/lessons/${r.id}.md`, 'utf8').split('---')[1]),
 }));
@@ -67,6 +68,18 @@ function exportText(selected) {
       url(`qualifications/zeirishi/subjects/${s.id}/`),
     );
     const rows = zeirishiOutline.filter((r) => r.subject === s.id);
+    const learningIds = zeirishiLessonIds(s.id);
+    const nextLesson = (id) => learningIds[learningIds.indexOf(id) + 1] ?? `zeirishi-unit-${s.unit}-review`;
+    lines.push('  学習ツリー（Webページと同じ順序）');
+    for (const group of zeirishiLearningPath(s.id)) {
+      lines.push(`    ${group.title}`);
+      for (const id of group.lessonIds) {
+        const lesson = lessons.find((entry) => entry.data.stableId === id).data;
+        lines.push(`      ${learningIds.indexOf(id) + 1}. [${id}] ${lesson.title}／${lesson.minutes}分`,
+          `        ${url(`qualifications/zeirishi/${id}/`)}`);
+      }
+    }
+    lines.push('', '  レッスン・演習の詳細（学習順は上のツリーを参照）');
     let stage = '';
     for (const r of rows) {
       const lesson = lessons.find((l) => l.data.stableId === r.id).data;
@@ -82,7 +95,7 @@ function exportText(selected) {
         `      本文：仕組みの説明・基本例・条件を変えた比較`,
         `      理解度チェック [${a.id}] ${a.questions.length}問：${a.questions.map((q) => q.id).join('、')}`,
         `      用語：${r.glossary.map((g) => g.term).join('・')}`,
-        `      次：${rows.find((n) => n.position === r.position + 1)?.id ?? `zeirishi-unit-${s.unit}-review`}`,
+        `      次：${nextLesson(r.id)}`,
         `      追加学習・制約：${r.additionalStudy}`,
         `      URL：${url(`qualifications/zeirishi/${r.id}/`)}`,
       );
@@ -102,20 +115,19 @@ function exportText(selected) {
     for (const unit of zeirishiDeepUnits.filter((unit) => unit.subject === s.id)) {
       const members = unit.lessonIds.map((id) => zeirishiDeepLessons.find((lesson) => lesson.id === id));
       const minutes = members.reduce((total, lesson) => total + lesson.minutes, 0);
-      lines.push('', `  詳しく学ぶ単元 [${unit.id}] ${unit.title}`, `    ${unit.description}`,
+      lines.push('', `  単元 [${unit.id}] ${unit.title}`, `    ${unit.description}`,
         `    単元確認日：${unit.reviewed}／本文・例題・理解度確認の合計目安${minutes}分（独立テストと再復習は別）`,
         `    URL：${url(`qualifications/zeirishi/units/${unit.id}/`)}`,
         '    進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。',
         '    翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。',
-        '    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。',
-        '    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。');
-      for (const [index, lesson] of members.entries()) {
+        '    単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。');
+      for (const lesson of members) {
         lines.push(`    ${lesson.position}. [${lesson.id}] ${lesson.title}／${lesson.minutes}分の目安`,
           `      学習段階：${lesson.stage}（独自区分）`,
           `      前提：${lesson.prerequisites.join('、')}`,
           `      実演：${lesson.workedExamples.map((example) => `[${example.id}] ${example.section}`).join('／')}`,
           `      理解度チェック [${lesson.id}-check] ${lesson.questions.length}問／版：${lesson.assessmentVersion}`,
-          `      次：${members[index + 1]?.id ?? unit.assessments.find((assessment) => assessment.kind === 'review').id}`,
+          `      次：${nextLesson(lesson.id)}`,
           `      URL：${url(`qualifications/zeirishi/${lesson.id}/`)}`);
         lesson.objectives.forEach((objective, n) => lines.push(
           `      [${lesson.objectiveIds[n]}] ${objective}`,
@@ -134,8 +146,8 @@ function exportText(selected) {
     );
   }
   lines.push(
-    '入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。',
-    '詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。',
+    '科目全体の用語は本文の定義から生成、科目総復習はレッスン問題を再利用。基礎模試は別の独自問題。',
+    '単元別の用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。',
     '模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。',
     '数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。',
     '記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。',

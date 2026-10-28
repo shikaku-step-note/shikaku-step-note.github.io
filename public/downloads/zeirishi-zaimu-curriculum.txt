@@ -5,7 +5,7 @@
 所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
 免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
 
-11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。
+科目ごとに公開中の内容と、追加学習が必要な範囲を対応表で確認できます。全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習を網羅した教材ではありません。
 
 推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
 1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
@@ -18,6 +18,45 @@
 会計原理・会計基準・会社法の計算規定・会社計算規則・財務諸表規則等。特定事業会社の特例を除く。
 前提：簿記の基本に加え、資産・負債・純資産・収益・費用の関係。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
+  学習ツリー（Webページと同じ順序）
+    財務会計の目的と利益の意味
+      1. [zr-zaimu-concepts] 財務会計の目的と利益の意味／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-concepts/
+      2. [zr2-zaimu-purpose-regulation] 財務会計の目的と制度／110分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-purpose-regulation/
+      3. [zr2-zaimu-reporting-obligations] 会社の属性と財務情報の作成・監査・開示／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-reporting-obligations/
+      4. [zr2-zaimu-qualitative-characteristics] 有用性・信頼性・内的整合性・比較可能性／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-qualitative-characteristics/
+      5. [zr2-zaimu-elements] 資産・負債・純資産・投資の成果／130分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-elements/
+      6. [zr2-zaimu-general-principles] 企業会計原則と個別基準／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-general-principles/
+      7. [zr2-zaimu-recognition-measurement] 認識・測定と期間損益／180分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-recognition-measurement/
+      8. [zr2-zaimu-policy-changes] 会計方針・見積りの変更と誤謬／180分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-policy-changes/
+      9. [zr2-zaimu-estimate-disclosure] 会計上の見積りを注記で伝える／130分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-estimate-disclosure/
+      10. [zr2-zaimu-theory-writing] 理由と計算をつなぐ理論答案の作り方／150分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-theory-writing/
+    収益認識を履行義務から考える
+      11. [zr-zaimu-revenue] 収益認識を履行義務から考える／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-revenue/
+    資産評価と減損を二段階で判断する
+      12. [zr-zaimu-assets] 資産評価と減損を二段階で判断する／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-assets/
+    引当金・退職給付・税効果の理由
+      13. [zr-zaimu-liabilities] 引当金・退職給付・税効果の理由／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-liabilities/
+    純資産・株式報酬・企業結合と連結
+      14. [zr-zaimu-equity] 純資産・株式報酬・企業結合と連結／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-equity/
+    財務諸表・キャッシュフロー・注記を読む
+      15. [zr-zaimu-statements] 財務諸表・キャッシュフロー・注記を読む／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-statements/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-zaimu-concepts] 財務会計の目的と利益の意味／40分
       目標：投資意思決定との関係を説明する／現金収支と期間損益を区別する／比較可能性と内的整合性を考える
@@ -25,7 +64,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-zaimu-concepts-check] 4問：zr-zaimu-concepts-q1、zr-zaimu-concepts-q2、zr-zaimu-concepts-q3、zr-zaimu-concepts-q4
       用語：発生主義・比較可能性・純利益
-      次：zr-zaimu-revenue
+      次：zr2-zaimu-purpose-regulation
       追加学習・制約：概念フレームワーク全項目と学説の比較は追加学習。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-zaimu-concepts/
       技能1 投資意思決定との関係を説明する：説明・例題→自力演習兼評価 zr-zaimu-concepts-q1
@@ -100,14 +139,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
   [zeirishi-zaimu-mock] 財務諸表論：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-zaimu-mock/
 
-  詳しく学ぶ単元 [zr2-zaimu-unit-framework] 財務会計の考え方と制度
+  単元 [zr2-zaimu-unit-framework] 財務会計の考え方と制度
     財務報告の目的・制度から、情報特性、構成要素、認識測定、会計上の変更、見積り注記、理論答案へ進む9講。53の例題、141の講末問題、別の累積52問と用語32問で確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安1270分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-zaimu-unit-framework/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-zaimu-purpose-regulation] 財務会計の目的と制度／110分の目安
       学習段階：基礎（独自区分）
       前提：
@@ -289,7 +327,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
       前提：zr2-zaimu-estimate-disclosure
       実演：[zr2-zaimu-theory-writing-e1] 例題1：同じ資料から、別の問いに答える／[zr2-zaimu-theory-writing-e2] 例題2：新情報と過去の誤りを分ける／[zr2-zaimu-theory-writing-e3] 例題3：在庫差額の符号と二つの期間／[zr2-zaimu-theory-writing-e4] 例題4：不足する条件を勝手に補わない／[zr2-zaimu-theory-writing-e5] 例題5：結論だけがある答案を採点する
       理解度チェック [zr2-zaimu-theory-writing-check] 15問／版：zeirishi-2026-v2-theory-writing-1
-      次：zr2-zaimu-framework-review-a
+      次：zr-zaimu-revenue
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-zaimu-theory-writing/
       [zr2-zaimu-theory-writing-f01] 設問の対象・要求動作・条件・出力を読み分け、要求の欠落を特定する
         独立練習：zr2-zaimu-theory-writing-q1、zr2-zaimu-theory-writing-q2、zr2-zaimu-theory-writing-q6、zr2-zaimu-theory-writing-q14、zr2-zaimu-theory-writing-q15
@@ -323,8 +361,8 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/zaimu/
 
   2026年8月本試験の大問配点：25・25・50点。将来の固定配分ではありません。
 
-入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。
-詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
+科目全体の用語は本文の定義から生成、科目総復習はレッスン問題を再利用。基礎模試は別の独自問題。
+単元別の用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
 模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
 数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
 記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。

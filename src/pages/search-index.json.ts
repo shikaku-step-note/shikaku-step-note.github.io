@@ -3,6 +3,7 @@ import { qualifications } from '../data/qualifications';
 import { href } from '../lib/site';
 import { zeirishiSubjects } from '../data/zeirishi';
 import { zeirishiDeepUnits } from '../data/zeirishi-expanded';
+import { zeirishiLessonOrder } from '../data/zeirishi-learning-path';
 import { allAssessments } from '../data/assessments';
 export async function GET() {
   const lessons = await getCollection('lessons');
@@ -35,7 +36,7 @@ export async function GET() {
         kind: 'レッスン',
         sample: l.data.sample,
         archived: l.data.archived,
-        order: l.data.order,
+        order: l.data.qualification === 'zeirishi' ? zeirishiLessonOrder(l.data.stableId) : l.data.order,
         subject: l.data.subject,
         unit: l.data.unit,
         url: href(`qualifications/${l.data.qualification}/${l.data.stableId}/`),

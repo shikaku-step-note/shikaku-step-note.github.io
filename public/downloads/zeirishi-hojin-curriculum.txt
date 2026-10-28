@@ -5,7 +5,7 @@
 所得税法・法人税法の少なくとも一方が必要。消費税法と酒税法、住民税と事業税はそれぞれ一方。
 免除と受験資格は別に公式案内で確認。この教材は公式講座・実務助言ではありません。
 
-11科目の入門課程を保管し、詳しい学習ユニットと独立した総合演習を拡充しています。公開中の単元と未完了の範囲は対応表で区別しています。現時点では全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習が完成した教材ではありません。
+科目ごとに公開中の内容と、追加学習が必要な範囲を対応表で確認できます。全ての法令・通達・会計基準・特例や、本試験相当の全科目の演習を網羅した教材ではありません。
 
 推奨案：一科目ずつ1日35〜45分・週5日。ページの表示時間は読む・例題を手で解く・問題と解説を確認する目安。
 1週目：範囲と前提、最初のレッスン。2〜4週目：例題と条件変更・理解度確認。
@@ -18,6 +18,37 @@
 法人税法と関係法令。会計利益と所得の調整、税額、申告を扱う。
 前提：簿記3級程度の決算と損益計算書。
 https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
+  学習ツリー（Webページと同じ順序）
+    会計利益から所得へ・別表四の考え方
+      1. [zr-hojin-adjustment] 会計利益から所得へ・別表四の考え方／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-adjustment/
+      2. [zr2-hojin-entity-scope] 法人の区分・収益事業から課税範囲を決める／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-entity-scope/
+      3. [zr2-hojin-period-filing] 事業年度・納税地と青色承認の期限を確定する／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-period-filing/
+      4. [zr2-hojin-income-adjustments] 益金・損金と決算処理から申告調整を組み立てる／100分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-income-adjustments/
+      5. [zr2-hojin-schedule-four-five] 別表四・五（一）・五（二）を残高まで照合する／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-schedule-four-five/
+      6. [zr2-hojin-relationships] 同族・支配・完全支配と中小判定を使い分ける／120分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-relationships/
+    棚卸・減価償却・貸倒れの税務調整
+      7. [zr-hojin-assets] 棚卸・減価償却・貸倒れの税務調整／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-assets/
+    役員給与・交際費・寄附金を区分する
+      8. [zr-hojin-compensation] 役員給与・交際費・寄附金を区分する／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-compensation/
+    受取配当・資本取引とグループの関係
+      9. [zr-hojin-distributions] 受取配当・資本取引とグループの関係／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-distributions/
+    欠損金・繰越控除・引継ぎの条件
+      10. [zr-hojin-losses] 欠損金・繰越控除・引継ぎの条件／40分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-losses/
+    法人税額・申告と防衛特別法人税
+      11. [zr-hojin-return] 法人税額・申告と防衛特別法人税／45分
+        https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-return/
+
+  レッスン・演習の詳細（学習順は上のツリーを参照）
   学習段階：基礎をつかむ（独自区分）
     1. [zr-hojin-adjustment] 会計利益から所得へ・別表四の考え方／40分
       目標：益金損金と収益費用を分ける／加算と減算を選ぶ／留保と社外流出を整理する
@@ -25,7 +56,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
       本文：仕組みの説明・基本例・条件を変えた比較
       理解度チェック [zr-hojin-adjustment-check] 4問：zr-hojin-adjustment-q1、zr-hojin-adjustment-q2、zr-hojin-adjustment-q3、zr-hojin-adjustment-q4
       用語：益金・損金・留保
-      次：zr-hojin-assets
+      次：zr2-hojin-entity-scope
       追加学習・制約：別表五との完全連動、組織再編、収益計上時期の特例は追加演習。
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr-hojin-adjustment/
       技能1 益金損金と収益費用を分ける：説明・例題→自力演習兼評価 zr-hojin-adjustment-q1、zr-hojin-adjustment-q4
@@ -100,14 +131,13 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
   [zeirishi-hojin-mock] 法人税法：120分の独自基礎模試／12小問／120分・時間制限なしも選択可
     https://shikaku-step-note.github.io/qualifications/zeirishi/tests/zeirishi-hojin-mock/
 
-  詳しく学ぶ単元 [zr2-hojin-unit-scope] 納税主体・事業年度・税務調整
+  単元 [zr2-hojin-unit-scope] 納税主体・事業年度・税務調整
     法人の区分と課税範囲、事業年度・青色承認、四調整、三表の連動、持株関係へ進む5講。20の独自例題、52の講末問題、25問の独立累積演習と35問の用語テストで確認します。
     単元確認日：2026-10-27／本文・例題・理解度確認の合計目安540分（独立テストと再復習は別）
     URL：https://shikaku-step-note.github.io/qualifications/zeirishi/units/zr2-hojin-unit-scope/
     進め方：一度に一講を終える必要はありません。45分、75分、120分など、自分の時間に分割。
     翌日：前日に学んだ条件と手順を資料なしで説明。1週間後：誤った問題を再演習。
     単元終了時：独立した総合確認。その翌日：根拠と解法を直し、用語の再確認へ。
-    前の入門課程の記録は保管し、この単元の学習済み状態へ自動で継承しません。
     1. [zr2-hojin-entity-scope] 法人の区分・収益事業から課税範囲を決める／100分の目安
       学習段階：基礎から標準へ（独自区分）
       前提：zr-hojin-adjustment
@@ -187,7 +217,7 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
       前提：zr2-hojin-schedule-four-five
       実演：[zr2-hojin-relationships-e1] 例題1：自己株式と親族を整理する／[zr2-hojin-relationships-e2] 例題2：60％の連鎖と、経済持分36％／[zr2-hojin-relationships-e3] 例題3：100％の連鎖と、5％未満の境界／[zr2-hojin-relationships-e4] 例題4：50％保有と、平均所得15億円の境界
       理解度チェック [zr2-hojin-relationships-check] 12問／版：zeirishi-2026-v2-relationships-1
-      次：zr2-hojin-scope-review
+      次：zr-hojin-assets
       URL：https://shikaku-step-note.github.io/qualifications/zeirishi/zr2-hojin-relationships/
       [zr2-hojin-relationships-o01] 株主親族/議決権関係を判定する
         独立練習：zr2-hojin-relationships-q1、zr2-hojin-relationships-q2、zr2-hojin-relationships-q3、zr2-hojin-relationships-q4、zr2-hojin-relationships-q5、zr2-hojin-relationships-q6
@@ -213,8 +243,8 @@ https://shikaku-step-note.github.io/qualifications/zeirishi/subjects/hojin/
 
   2026年8月本試験の大問配点：50・50点。将来の固定配分ではありません。
 
-入門課程の用語は本文の定義から生成、総復習はレッスン問題を再利用。基礎模試は別の独自問題。
-詳しい学習ユニットの用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
+科目全体の用語は本文の定義から生成、科目総復習はレッスン問題を再利用。基礎模試は別の独自問題。
+単元別の用語と総合確認は別に作成した問題。用語の結果を適用力の習得率へ換算しません。
 模試は時間・大問配点を参照しますが、小問数・資料量・難易度・細かな配点は独自です。
 数値等は指定解と照合。記述は解答例と独自基準で自己確認し、公式60%へ換算せず合否を判定しません。
 記述は最大4000字。未確認の記述は未確認として保持。学習済みの印と試験結果は別の記録です。

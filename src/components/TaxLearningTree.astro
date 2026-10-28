@@ -1,0 +1,66 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { zeirishiLearningPath, zeirishiLessonIds } from '../data/zeirishi-learning-path';
+import { href } from '../lib/site';
+import Icon from './Icon.astro';
+
+interface Props {
+  subject: { id: string; name: string };
+  lessons: CollectionEntry<'lessons'>[];
+}
+const { subject, lessons } = Astro.props;
+const groups = zeirishiLearningPath(subject.id);
+const ids = zeirishiLessonIds(subject.id);
+const byId = new Map(lessons.map((lesson) => [lesson.data.stableId, lesson]));
+if (ids.some((id) => !byId.has(id))) throw new Error(`Missing published lesson: ${subject.id}`);
+---
+
+<section class="course-section" aria-labelledby="subject-steps">
+  <div class="section-heading">
+    <h2 id="subject-steps">学習ツリー</h2>
+    <span class="tag">{ids.length}レッスン</span>
+  </div>
+  <p>上から順に、仕組みの説明、例題、条件を変えた演習へ進みます。復習したいレッスンから開くこともできます。</p>
+  <p data-course-progress="zeirishi" data-course-subject={subject.id}>
+    このブラウザの記録を読み込んでいます
+  </p>
+  <progress data-course-bar="zeirishi" data-course-subject={subject.id} max={ids.length}
+    value="0" aria-label={`${subject.name}の学習済みレッスン数`}>0 / {ids.length}</progress>
+  {groups.map((group) => (
+    <section class="curriculum-unit">
+      <h3>{group.title}</h3>
+      <ol class="lesson-list" start={ids.indexOf(group.lessonIds[0]!) + 1}>
+        {group.lessonIds.map((id) => {
+          const lesson = byId.get(id)!;
+          return (
+            <li class="lesson-row" data-lesson-row={id}>
+              <span class="lesson-number">{String(ids.indexOf(id) + 1).padStart(2, '0')}</span>
+              <div class="lesson-row-body">
+                <h4><a href={href(`qualifications/zeirishi/${id}/`)}>{lesson.data.title}</a></h4>
+                <p>{lesson.data.objectives.join('／')}</p>
+                <div class="lesson-meta">
+                  <span>{lesson.data.minutes}分の目安</span>
+                  <span data-status-label={id}>未学習</span>
+                </div>
+              </div>
+              <button disabled aria-busy="true" class="star-button" type="button"
+                data-bookmark={id} aria-pressed="false" aria-label={`${lesson.data.title}をブックマーク`}>
+                <Icon name="star" size={21} />
+              </button>
+            </li>
+          );
+        })}
+      </ol>
+      {group.units.map((unit) => (
+        <div class="unit-assessments" role="group" aria-label={`${unit.title}の復習`}>
+          <a href={href(`qualifications/zeirishi/units/${unit.id}/`)}>{unit.title}のまとめ</a>
+          {unit.assessments.map((assessment) => (
+            <a href={href(`qualifications/zeirishi/tests/${assessment.id}/`)}>
+              {assessment.kind === 'glossary' ? '用語確認' : '単元の総合確認'}
+            </a>
+          ))}
+        </div>
+      ))}
+    </section>
+  ))}
+</section>
