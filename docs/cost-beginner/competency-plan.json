@@ -945,6 +945,6 @@
     "完成品換算量と工程別総合原価計算を初級必須技能とすること"
   ],
   "releaseGate": "42技能それぞれについて実際の本文・例題・独立練習・解説・単元復習を照合する。語句の存在や単なる問題IDの割当てで完了としない。派生練習を足しても公式技能の不足を埋めたことにはならない。",
-  "currentEvidenceSource": "../../../src/data/cost-beginner-coverage.json",
+  "currentEvidenceSource": "../../src/data/cost-beginner-coverage.json",
   "finalReview": "peer-coverage.md"
 }

@@ -15,7 +15,7 @@
     "fullMocks": 2,
     "mockItemsPerForm": 37
   },
-  "status": "implementation-complete-peer-reviewed-and-locally-verified",
+  "status": "implemented-verified-published",
   "recordTransition": "旧4要点ページのURL・ID・記録を保持。技能を分割した新22レッスンは新ID。バックアップ5・IndexedDB構造1を維持。",
   "limitations": [
     "実試験の固定小問数・小問別配点・部分点は非公開。模試は独自練習採点。",
@@ -36,5 +36,6 @@
     "competencies": 42,
     "archivedLessonsPreserved": 4,
     "uniqueCurrentScoredQuestionIds": 602
-  }
+  },
+  "deploymentEvidence": "deployment-verification.json"
 }

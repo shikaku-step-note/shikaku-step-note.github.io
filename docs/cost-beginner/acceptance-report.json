@@ -283,7 +283,7 @@
     "root-editorial.md"
   ],
   "verification": {
-    "status": "local-release-checks-passed",
+    "status": "local-and-live-release-checks-passed",
     "browser": [
       "navigation/bookmarks/progress/reload",
       "backup export/import merge/replace confirmation/invalid JSON",
@@ -319,6 +319,6 @@
       "intentionalNoindexArchivedOrSamples": 17,
       "adsenseEligiblePages": 287
     },
-    "deploymentEvidence": "GitHub Pages Actions run for the release commit; published pages are verified after this local acceptance snapshot."
+    "deploymentEvidence": "deployment-verification.json"
   }
 }
