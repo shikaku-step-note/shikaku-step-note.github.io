@@ -20,7 +20,7 @@
     "itemsPerMock": 30
   },
   "learningRecordTransition": "旧4ページと識別子・記録は保管。技能を分割した新24レッスンは新しい固定IDで記録し、旧版完了を継承しない。既存の他資格は変更しない。バックアップ形式5・IndexedDB構造1を維持。",
-  "status": "verified-ready-for-release",
+  "status": "completed-and-published",
   "stages": {
     "sources": "reviewed",
     "curriculum": "implemented",
@@ -31,7 +31,7 @@
     "japanese": "reviewed",
     "integration": "implemented",
     "tests": "passed-final",
-    "deployment": "pending"
+    "deployment": "verified-live"
   },
   "actual": {
     "lessons": 24,
@@ -53,5 +53,6 @@
     "independentFullMocks": 2,
     "mockItems": 60,
     "legacyArchivedLessons": 4
-  }
+  },
+  "deploymentEvidence": "deployment.json"
 }

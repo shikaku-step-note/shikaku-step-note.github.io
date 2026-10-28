@@ -1,0 +1,36 @@
+{
+  "qualification": "boki-beginner",
+  "publishedImplementationCommit": "7d7594c541eb0a0e0bf805d3e796da3b7cf1e0f2",
+  "workflowRun": "https://github.com/shikaku-step-note/shikaku-step-note.github.io/actions/runs/40616389261",
+  "workflowConclusion": "success",
+  "publicHTTPChecks": {
+    "status": "passed",
+    "checkedAtUTC": "2026-10-28T01:41:46Z",
+    "successfulHTTPResponses": 39,
+    "newDetailedLessons": 24,
+    "sitemapCanonicalURLs": 277,
+    "rootCanonicals": "passed",
+    "indexability": "passed",
+    "oldArchivedLessons": "preserved/noindex",
+    "mockRunners": "noindex/no ads",
+    "adsense": "eligible pages one script; ads.txt correct; actual serving and approval not verified",
+    "curriculumTXT": "all24 stable lesson identifiers present",
+    "htmlSitemap": "all24 new lessons present"
+  },
+  "publicBrowserChecks": {
+    "status": "passed",
+    "checks": [
+      "Live course has24 current lessons",
+      "Direct nested lesson shows final expanded examples",
+      "Live lesson has root canonical",
+      "Live browser completion survives reload",
+      "Live glossary includes final reviewed definitions",
+      "Live mock runner stays noindex",
+      "Live mock runner has no AdSense script",
+      "Live40-minute mock loads30 questions",
+      "Live mobile assessment has no page overflow"
+    ],
+    "records": "isolated temporary profile; no existing visitor records accessed",
+    "ads": "requests blocked; account serving not tested"
+  }
+}

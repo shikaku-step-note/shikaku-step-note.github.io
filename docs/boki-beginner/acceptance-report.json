@@ -416,7 +416,7 @@
     "japanese": "passed-ai-editorial-review",
     "upgradeIntegrity": "passed",
     "implementation": "passed-final-build-52-tests-and-browser",
-    "deployment": "pending"
+    "deployment": "passed-github-pages-and-live-checks"
   },
   "limitations": [
     "外部専門家の監修なし",
@@ -436,5 +436,6 @@
     "review-additions-independent-review.md",
     "glossary-independent-review.md",
     "verification.md"
-  ]
+  ],
+  "deploymentEvidence": "deployment.json"
 }
