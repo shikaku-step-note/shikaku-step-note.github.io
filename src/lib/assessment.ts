@@ -14,7 +14,11 @@ export interface Question {
   explanation: string;
   lesson: string;
   field: Field;
-  input?: 'number' | 'text' | 'essay';
+  input?: 'number' | 'text' | 'essay' | 'journal';
+  /** A normal text keyboard exposes a minus key on devices whose decimal keypad omits it. */
+  signed?: boolean;
+  /** Allowed account choices and a balanced model entry. Stored answers remain JSON strings. */
+  journal?: { accounts: string[]; debits: JournalRow[]; credits: JournalRow[] };
   accepted?: string[];
   points?: number;
   group?: string;
@@ -24,6 +28,112 @@ export interface Question {
   // A cumulative question can assess skills taught in more than one lesson.
   targetObjectives?: Record<string, number[]>;
   materialIds?: string[];
+}
+export interface JournalRow {
+  account: string;
+  amount: number | string;
+}
+export interface JournalEntry {
+  debits: JournalRow[];
+  credits: JournalRow[];
+}
+/** Structural parsing also accepts partial rows so unfinished work can be restored safely. */
+export function parseJournalAnswer(value: unknown): JournalEntry | null {
+  if (typeof value !== 'string' || value.length > 4000) return null;
+  try {
+    const entry = JSON.parse(value);
+    if (
+      !entry ||
+      typeof entry !== 'object' ||
+      Array.isArray(entry) ||
+      Object.keys(entry).some((key) => key !== 'debits' && key !== 'credits')
+    )
+      return null;
+    for (const side of ['debits', 'credits'] as const) {
+      if (!Array.isArray(entry[side]) || entry[side].length > 4) return null;
+      for (const row of entry[side]) {
+        if (
+          !row ||
+          typeof row !== 'object' ||
+          Array.isArray(row) ||
+          Object.keys(row).some((key) => key !== 'account' && key !== 'amount') ||
+          typeof row.account !== 'string' ||
+          row.account.length > 80 ||
+          !['string', 'number'].includes(typeof row.amount) ||
+          String(row.amount).length > 80
+        )
+          return null;
+      }
+    }
+    return entry as JournalEntry;
+  } catch {
+    return null;
+  }
+}
+function journalAmount(value: string | number): string | null {
+  const normalized = String(value).normalize('NFKC').trim();
+  // Permit conventional thousands separators, never exponent notation, signs or units.
+  if (!/^(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/.test(normalized)) return null;
+  const amount = normalized.replaceAll(',', '');
+  if (!Number.isFinite(Number(amount)) || Number(amount) <= 0 || Number(amount) > Number.MAX_SAFE_INTEGER)
+    return null;
+  const [whole, fraction = ''] = amount.split('.');
+  const tail = fraction.replace(/0+$/, '');
+  return `${whole!.replace(/^0+(?=\d)/, '')}${tail ? `.${tail}` : ''}`;
+}
+/** Exact decimal sums avoid binary floating-point errors in compound entries. */
+export function canonicalJournal(value: unknown, accounts: readonly string[]): string | null {
+  const entry = parseJournalAnswer(value);
+  if (!entry) return null;
+  const allowed = new Set(accounts);
+  const prepared: Record<'debits' | 'credits', { account: string; amount: string }[]> = {
+    debits: [],
+    credits: [],
+  };
+  let scale = 0;
+  for (const side of ['debits', 'credits'] as const) {
+    for (const row of entry[side]) {
+      const account = row.account.trim();
+      if (!account && String(row.amount).trim() === '') continue;
+      const amount = journalAmount(row.amount);
+      if (!allowed.has(account) || amount === null) return null;
+      scale = Math.max(scale, amount.split('.')[1]?.length ?? 0);
+      prepared[side].push({ account, amount });
+    }
+    if (!prepared[side].length) return null;
+  }
+  const canonical = {
+    debits: [] as { account: string; amount: string }[],
+    credits: [] as { account: string; amount: string }[],
+  };
+  const totals = { debits: 0n, credits: 0n };
+  for (const side of ['debits', 'credits'] as const) {
+    const sums = new Map<string, bigint>();
+    for (const row of prepared[side]) {
+      const [whole, fraction = ''] = row.amount.split('.');
+      const units = BigInt(`${whole}${fraction.padEnd(scale, '0')}`);
+      sums.set(row.account, (sums.get(row.account) ?? 0n) + units);
+      totals[side] += units;
+    }
+    canonical[side] = [...sums.entries()]
+      .sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0))
+      .map(([account, amount]) => {
+        const digits = amount.toString().padStart(scale + 1, '0');
+        const raw = scale ? `${digits.slice(0, -scale)}.${digits.slice(-scale)}` : digits;
+        return { account, amount: raw.includes('.') ? raw.replace(/0+$/, '').replace(/\.$/, '') : raw };
+      });
+  }
+  return totals.debits === totals.credits ? JSON.stringify(canonical) : null;
+}
+export function journalAnswerText(value: unknown): string {
+  const entry = parseJournalAnswer(value);
+  if (!entry) return '仕訳の形式を確認できません';
+  return (['debits', 'credits'] as const)
+    .map((side) => {
+      const rows = entry[side].filter((row) => row.account.trim() || String(row.amount).trim());
+      return `${side === 'debits' ? '借方' : '貸方'}：${rows.length ? rows.map((row) => `${row.account || '科目未選択'} ${String(row.amount).trim() || '金額未入力'}円`).join('、') : '未入力'}`;
+    })
+    .join(' ／ ');
 }
 export function questionRevisionLessons(question: Question): string[] {
   return [...new Set([question.lesson, ...Object.keys(question.targetObjectives ?? {})])];
@@ -63,6 +173,26 @@ export function assessmentMaterialIssues(a: Pick<Assessment, 'materials' | 'ques
         issues.push(`Invalid material table: ${material.id}`);
   }
   for (const q of a.questions) {
+    if (q.input === 'journal') {
+      const model = q.journal;
+      const accounts = model?.accounts ?? [];
+      const expected = model
+        ? canonicalJournal(JSON.stringify({ debits: model.debits, credits: model.credits }), accounts)
+        : null;
+      if (
+        !model ||
+        accounts.length < 2 ||
+        accounts.length > 100 ||
+        new Set(accounts).size !== accounts.length ||
+        accounts.some((account) => !account.trim() || account.length > 80 || account !== account.trim()) ||
+        !expected ||
+        q.options.length ||
+        q.answer !== 0 ||
+        !q.accepted?.length ||
+        q.accepted.some((answer) => canonicalJournal(answer, accounts) !== expected)
+      )
+        issues.push(`Invalid journal model or accepted answer: ${q.id}`);
+    } else if (q.journal) issues.push(`Journal model on another input type: ${q.id}`);
     if (new Set(q.materialIds ?? []).size !== (q.materialIds ?? []).length)
       issues.push(`Duplicate material reference: ${q.id}`);
     for (const id of q.materialIds ?? []) if (!ids.has(id)) issues.push(`Unknown material ${id}: ${q.id}`);
@@ -143,7 +273,9 @@ export function compatibleAttempt(assessment: Assessment, attempt: AssessmentAtt
       return (
         !!q &&
         (q.input
-          ? typeof value === 'string' && value.length <= (q.input === 'essay' ? 4000 : 80)
+          ? typeof value === 'string' &&
+            value.length <= (q.input === 'essay' || q.input === 'journal' ? 4000 : 80) &&
+            (q.input !== 'journal' || parseJournalAnswer(value) !== null)
           : typeof value === 'number' && Number.isInteger(value) && value >= 0 && value < q.options.length)
       );
     }) &&
@@ -191,6 +323,15 @@ export function normalizeAnswer(value: string) {
 }
 export function isCorrect(q: Question, value: number | string | undefined): boolean {
   if (q.input === 'essay') return false;
+  if (q.input === 'journal') {
+    const actual = canonicalJournal(value, q.journal?.accounts ?? []);
+    if (!actual || !q.journal) return false;
+    const expected = canonicalJournal(
+      JSON.stringify({ debits: q.journal.debits, credits: q.journal.credits }),
+      q.journal.accounts,
+    );
+    return expected !== null && actual === expected;
+  }
   if (!q.input) return value === q.answer;
   if (typeof value !== 'string' || !value.trim()) return false;
   const actual = normalizeAnswer(value);

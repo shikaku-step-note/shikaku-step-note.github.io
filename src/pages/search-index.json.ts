@@ -51,7 +51,11 @@ export async function GET() {
         unit: unit.number,
         kind: '学習ユニット',
         url: href(`qualifications/zeirishi/units/${unit.id}/`),
-        keywords: ['税理士', zeirishiSubjects.find((subject) => subject.id === unit.subject)!.name, unit.title],
+        keywords: [
+          '税理士',
+          zeirishiSubjects.find((subject) => subject.id === unit.subject)!.name,
+          unit.title,
+        ],
       })),
       ...allAssessments(lessons).map((a) => ({
         id: a.id,
@@ -69,8 +73,12 @@ export async function GET() {
         assessmentKind: a.kind,
         subject: a.qualification === 'zeirishi' ? a.questions[0]?.field : undefined,
         assessmentVersion: a.version,
-        archived: (a.qualification === 'boki-beginner' && (a.id.startsWith('bb-') || a.id === 'boki-beginner-mock'))
-          || (a.qualification === 'cost-beginner' && (a.id.startsWith('cb-') || a.id === 'cost-beginner-mock')),
+        archived:
+          (a.qualification === 'boki-beginner' &&
+            (a.id.startsWith('bb-') || a.id === 'boki-beginner-mock')) ||
+          (a.qualification === 'cost-beginner' &&
+            (a.id.startsWith('cb-') || a.id === 'cost-beginner-mock')) ||
+          (a.qualification === 'boki-3' && a.id === 'boki-3-mock'),
         url:
           a.kind === 'lesson'
             ? href(`qualifications/${a.qualification}/${a.questions[0]!.lesson}/#practice`)

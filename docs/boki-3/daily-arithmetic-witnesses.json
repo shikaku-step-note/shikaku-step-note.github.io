@@ -1,0 +1,337 @@
+[
+  {
+    "id": "b3x-cash-q07",
+    "formula": "47000+2650+23000",
+    "value": 72650
+  },
+  {
+    "id": "b3x-cash-q08",
+    "formula": "19000+36000-22700",
+    "value": 32300
+  },
+  {
+    "id": "b3x-cash-q09",
+    "formula": "31500-24000+48500",
+    "value": 56000
+  },
+  {
+    "id": "b3x-cash-q10",
+    "formula": "12000+3000+8000",
+    "value": 23000
+  },
+  {
+    "id": "b3x-cash-q14",
+    "formula": "37000+24000+19000-6400-50000",
+    "value": 23600
+  },
+  {
+    "id": "b3x-cash-shortage-q08",
+    "formula": "93000-86400",
+    "value": 6600
+  },
+  {
+    "id": "b3x-cash-shortage-q09",
+    "formula": "9300-3600-2400",
+    "value": 3300
+  },
+  {
+    "id": "b3x-cash-shortage-q10",
+    "formula": "7800-2300-4100",
+    "value": 1400
+  },
+  {
+    "id": "b3x-cash-shortage-q11",
+    "formula": "4500+1600",
+    "value": 6100
+  },
+  {
+    "id": "b3x-petty-cash-q07",
+    "formula": "28000-2400-3100-4500",
+    "value": 18000
+  },
+  {
+    "id": "b3x-petty-cash-q08",
+    "formula": "32000-21300",
+    "value": 10700
+  },
+  {
+    "id": "b3x-petty-cash-q09",
+    "formula": "900+1400+2100",
+    "value": 4400
+  },
+  {
+    "id": "b3x-petty-cash-q10",
+    "formula": "5600+29000-24000",
+    "value": 10600
+  },
+  {
+    "id": "b3x-petty-cash-q11",
+    "formula": "40000-12800",
+    "value": 27200
+  },
+  {
+    "id": "b3x-bank-q07",
+    "formula": "160000+75000-118000",
+    "value": 117000
+  },
+  {
+    "id": "b3x-bank-q08",
+    "formula": "62000-31000-18000",
+    "value": 13000
+  },
+  {
+    "id": "b3x-bank-q09",
+    "formula": "90000+65000-330",
+    "value": 154670
+  },
+  {
+    "id": "b3x-bank-q10",
+    "formula": "40000-25000",
+    "value": 15000
+  },
+  {
+    "id": "b3x-bank-q14",
+    "formula": "120000+30000-47000",
+    "value": 103000
+  },
+  {
+    "id": "b3x-expenses-q07",
+    "formula": "5600+8200+60000",
+    "value": 73800
+  },
+  {
+    "id": "b3x-expenses-q08",
+    "formula": "50000-28000",
+    "value": 22000
+  },
+  {
+    "id": "b3x-expenses-q09",
+    "formula": "38000+330",
+    "value": 38330
+  },
+  {
+    "id": "b3x-expenses-q10",
+    "formula": "25000-19800",
+    "value": 5200
+  },
+  {
+    "id": "b3x-expenses-q11",
+    "formula": "43000-26000",
+    "value": 17000
+  },
+  {
+    "id": "b3x-payroll-q07",
+    "formula": "295000-9600-36400",
+    "value": 249000
+  },
+  {
+    "id": "b3x-payroll-q08",
+    "formula": "198000+6500+27500",
+    "value": 232000
+  },
+  {
+    "id": "b3x-payroll-q09",
+    "formula": "270000+35000",
+    "value": 305000
+  },
+  {
+    "id": "b3x-payroll-q10",
+    "formula": "11000+18000-15000",
+    "value": 14000
+  },
+  {
+    "id": "b3x-payroll-q11",
+    "formula": "260000-7000-32000-6000",
+    "value": 215000
+  },
+  {
+    "id": "b3x-purchases-q07",
+    "formula": "75*680",
+    "value": 51000
+  },
+  {
+    "id": "b3x-purchases-q08",
+    "formula": "84000-19000",
+    "value": 65000
+  },
+  {
+    "id": "b3x-purchases-q09",
+    "formula": "36000+58000-61000",
+    "value": 33000
+  },
+  {
+    "id": "b3x-purchases-q10",
+    "formula": "21000+39000+62000",
+    "value": 122000
+  },
+  {
+    "id": "b3x-purchases-q11",
+    "formula": "31500/750",
+    "value": 42
+  },
+  {
+    "id": "b3x-sales-q07",
+    "formula": "45*820",
+    "value": 36900
+  },
+  {
+    "id": "b3x-sales-q08",
+    "formula": "84000-51000",
+    "value": 33000
+  },
+  {
+    "id": "b3x-sales-q09",
+    "formula": "52000+89000-76000",
+    "value": 65000
+  },
+  {
+    "id": "b3x-sales-q10",
+    "formula": "27000+73000",
+    "value": 100000
+  },
+  {
+    "id": "b3x-sales-q11",
+    "formula": "110000-18000-32000",
+    "value": 60000
+  },
+  {
+    "id": "b3x-incidental-q07",
+    "formula": "84000+3600",
+    "value": 87600
+  },
+  {
+    "id": "b3x-incidental-q08",
+    "formula": "87600/120",
+    "value": 730
+  },
+  {
+    "id": "b3x-incidental-q09",
+    "formula": "92000-2800",
+    "value": 89200
+  },
+  {
+    "id": "b3x-incidental-q10",
+    "formula": "88000+1900",
+    "value": 89900
+  },
+  {
+    "id": "b3x-incidental-q11",
+    "formula": "66000+2400",
+    "value": 68400
+  },
+  {
+    "id": "b3x-returns-q07",
+    "formula": "12*450",
+    "value": 5400
+  },
+  {
+    "id": "b3x-returns-q08",
+    "formula": "5*1100",
+    "value": 5500
+  },
+  {
+    "id": "b3x-returns-q09",
+    "formula": "93000-8500",
+    "value": 84500
+  },
+  {
+    "id": "b3x-returns-q10",
+    "formula": "41000+86000-5000-73000",
+    "value": 49000
+  },
+  {
+    "id": "b3x-returns-q11",
+    "formula": "70-6-45+3",
+    "value": 22
+  },
+  {
+    "id": "b3x-fifo-q01",
+    "formula": "20*400+5*500",
+    "value": 10500
+  },
+  {
+    "id": "b3x-fifo-q02",
+    "formula": "(30-5)*500",
+    "value": 12500
+  },
+  {
+    "id": "b3x-fifo-q03",
+    "formula": "12*600+18*650+5*700",
+    "value": 22400
+  },
+  {
+    "id": "b3x-fifo-q04",
+    "formula": "20*800+20*750",
+    "value": 31000
+  },
+  {
+    "id": "b3x-fifo-q05",
+    "formula": "(30-4-5)*600",
+    "value": 12600
+  },
+  {
+    "id": "b3x-fifo-q06",
+    "formula": "3*520",
+    "value": 1560
+  },
+  {
+    "id": "b3x-fifo-q07",
+    "formula": "68000-43500",
+    "value": 24500
+  },
+  {
+    "id": "b3x-fifo-q08",
+    "formula": "18+22-28",
+    "value": 12
+  },
+  {
+    "id": "b3x-moving-average-q01",
+    "formula": "(10*400+30*600)/(10+30)",
+    "value": 550
+  },
+  {
+    "id": "b3x-moving-average-q02",
+    "formula": "15*550",
+    "value": 8250
+  },
+  {
+    "id": "b3x-moving-average-q03",
+    "formula": "22000-15*550",
+    "value": 13750
+  },
+  {
+    "id": "b3x-moving-average-q04",
+    "formula": "(13750+25*650)/(25+25)",
+    "value": 600
+  },
+  {
+    "id": "b3x-moving-average-q05",
+    "formula": "(20*600+4*450)/(20+4)",
+    "value": 575
+  },
+  {
+    "id": "b3x-moving-average-q06",
+    "formula": "(18000-6*700)/(30-6)",
+    "value": 575
+  },
+  {
+    "id": "b3x-moving-average-q07",
+    "formula": "Math.round(5200/12)",
+    "value": 433
+  },
+  {
+    "id": "b3x-moving-average-q08",
+    "formula": "5200-5*433",
+    "value": 3035
+  },
+  {
+    "id": "b3x-moving-average-q09",
+    "formula": "((10*300+10*500)-15*400+5*600)/10",
+    "value": 500
+  },
+  {
+    "id": "b3x-moving-average-q10",
+    "formula": "55000-34700",
+    "value": 20300
+  }
+]

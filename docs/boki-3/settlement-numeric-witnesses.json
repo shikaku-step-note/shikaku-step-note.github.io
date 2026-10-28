@@ -1,0 +1,167 @@
+[
+  {
+    "id": "b3x-receivables-q05",
+    "formula": "30000+50000-45000-4000",
+    "value": 31000
+  },
+  {
+    "id": "b3x-receivables-q06",
+    "formula": "40000+60000-55000-5000",
+    "value": 40000
+  },
+  {
+    "id": "b3x-receivables-q09",
+    "formula": "26000+63000-4000-32000",
+    "value": 53000
+  },
+  {
+    "id": "b3x-receivables-q12",
+    "formula": "18000+35000-30000+24000+29000-32000-3000",
+    "value": 41000
+  },
+  {
+    "id": "b3x-card-vouchers-q03",
+    "formula": "84000*(1-0.025)",
+    "value": 81900
+  },
+  {
+    "id": "b3x-card-vouchers-q06",
+    "formula": "65000-63700",
+    "value": 1300
+  },
+  {
+    "id": "b3x-card-vouchers-q09",
+    "formula": "45000+90000-60000",
+    "value": 75000
+  },
+  {
+    "id": "b3x-card-vouchers-q13",
+    "formula": "6000+28000-19000",
+    "value": 15000
+  },
+  {
+    "id": "b3x-bills-q07",
+    "formula": "75000+25000-40000-15000",
+    "value": 45000
+  },
+  {
+    "id": "b3x-bills-q09",
+    "formula": "27000+62000-35000",
+    "value": 54000
+  },
+  {
+    "id": "b3x-bills-q10",
+    "formula": "91000+40000-58000",
+    "value": 73000
+  },
+  {
+    "id": "b3x-bills-q13",
+    "formula": "80000+20000-60000",
+    "value": 40000
+  },
+  {
+    "id": "b3x-electronic-q06",
+    "formula": "95000+46000-60000-30000",
+    "value": 51000
+  },
+  {
+    "id": "b3x-electronic-q09",
+    "formula": "35000+70000-58000",
+    "value": 47000
+  },
+  {
+    "id": "b3x-electronic-q10",
+    "formula": "91000+36000-55000",
+    "value": 72000
+  },
+  {
+    "id": "b3x-electronic-q13",
+    "formula": "140000+60000-25000-95000",
+    "value": 80000
+  },
+  {
+    "id": "b3x-loans-q04",
+    "formula": "100000-40000",
+    "value": 60000
+  },
+  {
+    "id": "b3x-loans-q05",
+    "formula": "300000*0.04*5/12",
+    "value": 5000
+  },
+  {
+    "id": "b3x-loans-q07",
+    "formula": "360000*0.06*2/12+240000*0.06*3/12",
+    "value": 7200
+  },
+  {
+    "id": "b3x-loans-q09",
+    "formula": "6000/(300000*6/12)*100",
+    "value": 4
+  },
+  {
+    "id": "b3x-loans-q12",
+    "formula": "180000*0.04*5/12",
+    "value": 3000
+  },
+  {
+    "id": "b3x-advances-q04",
+    "formula": "8000+12000",
+    "value": 20000
+  },
+  {
+    "id": "b3x-advances-q07",
+    "formula": "98000-28000",
+    "value": 70000
+  },
+  {
+    "id": "b3x-advances-q09",
+    "formula": "45000-17000-8000",
+    "value": 20000
+  },
+  {
+    "id": "b3x-advances-q12",
+    "formula": "15000+22000-25000",
+    "value": 12000
+  },
+  {
+    "id": "b3x-advances-q14",
+    "formula": "20000+16000+10000-24000-8000",
+    "value": 14000
+  },
+  {
+    "id": "b3x-clearing-q08",
+    "formula": "28000-22000-1500",
+    "value": 4500
+  },
+  {
+    "id": "b3x-clearing-q09",
+    "formula": "24000+18000-24000",
+    "value": 18000
+  },
+  {
+    "id": "b3x-clearing-q14",
+    "formula": "9000+4000-5000-3000",
+    "value": 5000
+  },
+  {
+    "id": "b3x-deposits-q03",
+    "formula": "36000",
+    "value": 36000
+  },
+  {
+    "id": "b3x-deposits-q07",
+    "formula": "85000+25000-40000",
+    "value": 70000
+  },
+  {
+    "id": "b3x-deposits-q09",
+    "formula": "72000+21000-53000",
+    "value": 40000
+  },
+  {
+    "id": "b3x-deposits-q12",
+    "formula": "75000-10000-5000",
+    "value": 60000
+  }
+]

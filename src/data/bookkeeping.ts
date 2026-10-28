@@ -3,6 +3,7 @@ import mockBank from './boki-mock.json';
 import type { Assessment, Question } from '../lib/assessment';
 import { beginnerAssessments, beginnerGroups, beginnerPlan } from './boki-beginner';
 import { costAssessments, costGroups, costPlan } from './cost-beginner';
+import { boki3Assessments, boki3Groups, boki3Plan } from './boki3';
 export const bokiReviewed = '2026-10-25';
 export const bokiVersion = 'boki-2026-v1';
 export const bokiSources = [
@@ -197,11 +198,11 @@ export const bokiCourses = [
     name: '日商簿記3級',
     minutes: 60,
     source: 'commercial',
-    groups: ['取引を仕訳にする', '帳簿と決算をつなぐ'],
+    groups: boki3Groups,
     prerequisite:
       '簿記初級相当の用語を確認すると進めやすくなります。受験上の必須条件ではなく、学習順序の提案です。',
     next: 'boki-2',
-    plan: '1日40分を週5日、8〜12週間を目安にします。最初の2週は取引、次の4〜6週は帳簿と決算、残りは総合問題と復習です。60分演習の翌日に、誤った仕訳を理由付きで書き直します。',
+    plan: boki3Plan,
   },
   {
     id: 'boki-2',
@@ -243,11 +244,25 @@ export function bokiAssessments(lessons: Lesson[]): Assessment[] {
   const entries = bank as Record<string, Question[]>;
   for (const course of bokiCourses) {
     if (course.id === 'boki-beginner') {
-      result.push(...beginnerAssessments(lessons, entries, (mockBank as Record<string, Question[]>)['boki-beginner-mock']!));
+      result.push(
+        ...beginnerAssessments(
+          lessons,
+          entries,
+          (mockBank as Record<string, Question[]>)['boki-beginner-mock']!,
+        ),
+      );
       continue;
     }
     if (course.id === 'cost-beginner') {
-      result.push(...costAssessments(lessons, entries, (mockBank as Record<string, Question[]>)['cost-beginner-mock']!));
+      result.push(
+        ...costAssessments(lessons, entries, (mockBank as Record<string, Question[]>)['cost-beginner-mock']!),
+      );
+      continue;
+    }
+    if (course.id === 'boki-3') {
+      result.push(
+        ...boki3Assessments(lessons, entries, (mockBank as Record<string, Question[]>)['boki-3-mock']!),
+      );
       continue;
     }
     const rows = lessons
@@ -350,7 +365,7 @@ export function bokiAssessments(lessons: Lesson[]): Assessment[] {
         kind: 'mock',
         minutes: course.minutes,
         questions,
-        instructions: `紙と電卓を用意してください。各小問の条件は、同じ資料を参照すると明記された場合を除いて独立です。数値は問題文の単位で入力します。\n公式の制限時間を用いますが、小問数・配点・資料量・難易度は独自です。公式問題の転載や本試験と同等の総合問題ではなく、基礎の確認と時間管理の練習に使います。部分点はありません。${course.id === 'boki-3' ? '3大題・40、20、40点を独自に設定しています。' : course.id === 'boki-2' ? '5大題・各20点を独自に設定しています。' : ''}${course.id === 'boki-1' ? '前半は商業簿記・会計学、後半は工業簿記・原価計算です。各科目25点は本教材の配点です。二つの回を別々に保存します。公式は前後半各90分で途中休憩があります。休憩の長さは本教材では設定せず、前半終了後、任意に後半を開始します。' : '公式の合格基準は70%以上ですが、この練習得点で本試験の合否は予測できません。'}`,
+        instructions: `紙と電卓を用意してください。各小問の条件は、同じ資料を参照すると明記された場合を除いて独立です。数値は問題文の単位で入力します。\n公式の制限時間を用いますが、小問数・配点・資料量・難易度は独自です。公式問題の転載や本試験と同等の総合問題ではなく、基礎の確認と時間管理の練習に使います。部分点はありません。${course.id === 'boki-2' ? '5大題・各20点を独自に設定しています。' : ''}${course.id === 'boki-1' ? '前半は商業簿記・会計学、後半は工業簿記・原価計算です。各科目25点は本教材の配点です。二つの回を別々に保存します。公式は前後半各90分で途中休憩があります。休憩の長さは本教材では設定せず、前半終了後、任意に後半を開始します。' : '公式の合格基準は70%以上ですが、この練習得点で本試験の合否は予測できません。'}`,
         ...(id.endsWith('front') ? { nextAssessment: 'boki-1-mock-back' } : {}),
         ...(partnerId
           ? {

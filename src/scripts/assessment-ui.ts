@@ -8,6 +8,8 @@ import {
   compatibleAttempt,
   attemptSummary,
   questionRevisionLessons,
+  parseJournalAnswer,
+  journalAnswerText,
   type Assessment,
   type AssessmentAttempt,
 } from '../lib/assessment';
@@ -174,15 +176,29 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     }
     questions.forEach((field, i) => {
       field.hidden = i !== attempt!.cursor;
-      if (syncInputs)
-        field.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>('input, textarea').forEach((input) => {
-          input.disabled = false;
-          if (input.hasAttribute('data-written-answer'))
-            input.value = String(attempt!.answers[field.dataset.question!] ?? '');
-          else
-            (input as HTMLInputElement).checked =
-              attempt!.answers[field.dataset.question!] === Number(input.value);
-        });
+      if (syncInputs) {
+        const journal = parseJournalAnswer(attempt!.answers[field.dataset.question!]);
+        field
+          .querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+            'input, textarea, select',
+          )
+          .forEach((input) => {
+            input.disabled = false;
+            if (input.hasAttribute('data-journal-account') || input.hasAttribute('data-journal-amount')) {
+              const side = input.closest<HTMLElement>('[data-journal-side]')!.dataset.journalSide as
+                'debits' | 'credits';
+              const row = Number(input.closest<HTMLElement>('[data-journal-row]')!.dataset.journalRow);
+              input.value = String(
+                journal?.[side][row]?.[input.hasAttribute('data-journal-account') ? 'account' : 'amount'] ??
+                  '',
+              );
+            } else if (input.hasAttribute('data-written-answer'))
+              input.value = String(attempt!.answers[field.dataset.question!] ?? '');
+            else
+              (input as HTMLInputElement).checked =
+                attempt!.answers[field.dataset.question!] === Number(input.value);
+          });
+      }
     });
     el('[data-question-position]').textContent = `問${attempt.cursor + 1} / ${a.questions.length}`;
     el('[data-exam-count]').textContent =
@@ -356,13 +372,13 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
       details.append(
         text(
           'p',
-          `あなたの解答：${attempt!.answers[q.id] === undefined ? '未解答' : q.input ? String(attempt!.answers[q.id]) : (q.options[Number(attempt!.answers[q.id])] ?? '不明な選択肢')}`,
+          `あなたの解答：${attempt!.answers[q.id] === undefined ? '未解答' : q.input === 'journal' ? journalAnswerText(attempt!.answers[q.id]) : q.input ? String(attempt!.answers[q.id]) : (q.options[Number(attempt!.answers[q.id])] ?? '不明な選択肢')}`,
         ),
         text(
           'p',
           q.input === 'essay'
             ? `解答例：${q.modelAnswer}`
-            : `正解：${q.input ? q.accepted?.[0] : q.options[q.answer]}`,
+            : `正解：${q.input === 'journal' ? journalAnswerText(JSON.stringify({ debits: q.journal!.debits, credits: q.journal!.credits })) : q.input ? q.accepted?.[0] : q.options[q.answer]}`,
         ),
         text('p', q.explanation),
       );
@@ -402,9 +418,10 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
         const paragraph = document.createElement('p');
         const link = document.createElement('a');
         link.href = href(`qualifications/${a.qualification}/${id}/`);
-        link.textContent = revisionIds.length === 1
-          ? 'この内容をレッスンで復習する'
-          : `${a.lessonTitles?.[id] ?? '関連レッスン'}で復習する`;
+        link.textContent =
+          revisionIds.length === 1
+            ? 'この内容をレッスンで復習する'
+            : `${a.lessonTitles?.[id] ?? '関連レッスン'}で復習する`;
         paragraph.append(link);
         details.append(paragraph);
       }
@@ -463,23 +480,45 @@ export function setupAssessment(storage: StudyStorage, updated: () => void) {
     ending = false;
   }
   root
-    .querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(
-      '[data-question] input, [data-question] textarea',
+    .querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>(
+      '[data-question] input, [data-question] textarea, [data-question] select',
     )
     .forEach((input) =>
-      input.addEventListener(input.hasAttribute('data-written-answer') ? 'input' : 'change', () => {
-        if (!attempt || attempt.finishedAt) return;
-        if (remainingSeconds(attempt) === 0) {
-          void finish(true);
-          return;
-        }
-        if (input.hasAttribute('data-written-answer')) {
-          if (input.value.trim()) attempt.answers[input.name] = input.value;
-          else delete attempt.answers[input.name];
-        } else attempt.answers[input.name] = Number(input.value);
-        save();
-        renderActive(false, false);
-      }),
+      input.addEventListener(
+        input.hasAttribute('data-written-answer') || input.hasAttribute('data-journal-amount')
+          ? 'input'
+          : 'change',
+        () => {
+          if (!attempt || attempt.finishedAt) return;
+          if (remainingSeconds(attempt) === 0) {
+            void finish(true);
+            return;
+          }
+          if (input.hasAttribute('data-journal-account') || input.hasAttribute('data-journal-amount')) {
+            const field = input.closest<HTMLElement>('[data-question]')!;
+            const entry = {
+              debits: [] as { account: string; amount: string }[],
+              credits: [] as { account: string; amount: string }[],
+            };
+            for (const side of ['debits', 'credits'] as const) {
+              entry[side] = Array.from(
+                field.querySelectorAll<HTMLElement>(`[data-journal-side="${side}"] [data-journal-row]`),
+              ).map((row) => ({
+                account: row.querySelector<HTMLSelectElement>('[data-journal-account]')!.value,
+                amount: row.querySelector<HTMLInputElement>('[data-journal-amount]')!.value,
+              }));
+            }
+            if ([...entry.debits, ...entry.credits].some((row) => row.account || row.amount.trim()))
+              attempt.answers[field.dataset.question!] = JSON.stringify(entry);
+            else delete attempt.answers[field.dataset.question!];
+          } else if (input.hasAttribute('data-written-answer')) {
+            if (input.value.trim()) attempt.answers[input.name] = input.value;
+            else delete attempt.answers[input.name];
+          } else attempt.answers[input.name] = Number(input.value);
+          save();
+          renderActive(false, false);
+        },
+      ),
     );
   el('[data-question-prev]').addEventListener('click', () => move(Math.max(0, attempt!.cursor - 1)));
   el('[data-question-next]').addEventListener('click', () =>

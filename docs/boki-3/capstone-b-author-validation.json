@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-28",
+  "status": "author-calculation-pass; parent body/key review passed; separate full-ledger witness verification is parent-owned",
+  "questions": 22,
+  "reviewQuestions": 3,
+  "numericFormulaChecks": 13,
+  "ledgerBalances": true,
+  "statementIdentity": true,
+  "mini": {
+    "cogs": 660000,
+    "pretax": 290000,
+    "taxPayable": 57000,
+    "profit": 215000,
+    "retained": 355000
+  },
+  "totals": {
+    "trialBefore": 5775000,
+    "trialAdjusted": 5869960,
+    "revenue": 3240000,
+    "expenses": 2690960,
+    "profitBeforeTax": 711040,
+    "profit": 549040,
+    "netAssets": 2931040,
+    "liabilities": 1102000,
+    "equity": 1829040,
+    "retainedEnding": 829040
+  }
+}

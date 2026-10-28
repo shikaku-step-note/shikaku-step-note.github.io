@@ -1,0 +1,427 @@
+{
+  "reviewed": "2026-10-28",
+  "closingQuestionsRead": 90,
+  "closingFormats": {
+    "choice": 12,
+    "number": 50,
+    "journal": 28
+  },
+  "retainedQuestionsRead": 32,
+  "numericWitnesses": [
+    {
+      "id": "b3x-closing-inventory-q01",
+      "independentFormula": "48000+372000-63000",
+      "value": 357000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-q02",
+      "independentFormula": "(30+170-45)*500",
+      "value": 77500,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-q03",
+      "independentFormula": "70000+430000-420000",
+      "value": 80000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-q07",
+      "independentFormula": "315000+42000-59000",
+      "value": 298000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-q09",
+      "independentFormula": "64000+480000-18000+27000-92000",
+      "value": 461000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-q10",
+      "independentFormula": "810000-(85000+545000-110000)",
+      "value": 290000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-q12",
+      "independentFormula": "90000+610000-125000",
+      "value": 575000,
+      "matches": true
+    },
+    {
+      "id": "b3x-bad-debt-q04",
+      "independentFormula": "21000-13500",
+      "value": 7500,
+      "matches": true
+    },
+    {
+      "id": "b3x-bad-debt-q05",
+      "independentFormula": "(360000+140000)*.02-6500",
+      "value": 3500.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-bad-debt-q06",
+      "independentFormula": "(420000+80000-30000-10000)*.02-(12000-10000)",
+      "value": 7200.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-bad-debt-q08",
+      "independentFormula": "4000+(9000-4000)",
+      "value": 9000,
+      "matches": true
+    },
+    {
+      "id": "b3x-bad-debt-q10",
+      "independentFormula": "260000+90000-7000",
+      "value": 343000,
+      "matches": true
+    },
+    {
+      "id": "b3x-bad-debt-q12",
+      "independentFormula": "9000-(310000+90000-6000-24000)*.02",
+      "value": 1600.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-q01",
+      "independentFormula": "168000*9/12",
+      "value": 126000.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-q04",
+      "independentFormula": "180000*5/12",
+      "value": 75000.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-q05",
+      "independentFormula": "1500000*.018*4/12",
+      "value": 8999.999999999998,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-q07",
+      "independentFormula": "2400000*.021*4/12",
+      "value": 16800.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-q09",
+      "independentFormula": "462000/6*4",
+      "value": 308000.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-q10",
+      "independentFormula": "156000*6/12+66000*3/6",
+      "value": 111000.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-q11",
+      "independentFormula": "620000-90000+25000",
+      "value": 555000,
+      "matches": true
+    },
+    {
+      "id": "b3x-revenue-accrual-q01",
+      "independentFormula": "300000*3/6",
+      "value": 150000.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-revenue-accrual-q05",
+      "independentFormula": "900000*.028*5/12",
+      "value": 10500.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-revenue-accrual-q07",
+      "independentFormula": "700000*.03*8/12",
+      "value": 14000.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-revenue-accrual-q08",
+      "independentFormula": "9600/(480000*.03)*12",
+      "value": 8.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-revenue-accrual-q11",
+      "independentFormula": "750000-150000+40000",
+      "value": 640000,
+      "matches": true
+    },
+    {
+      "id": "b3x-revenue-accrual-q12",
+      "independentFormula": "420000+300000*3/6",
+      "value": 570000.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-q05",
+      "independentFormula": "33000-9000",
+      "value": 24000,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-q06",
+      "independentFormula": "24000-7500",
+      "value": 16500,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-q07",
+      "independentFormula": "72000+156000-91000",
+      "value": 137000,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-q08",
+      "independentFormula": "100000+540000-120000",
+      "value": 520000,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-q09",
+      "independentFormula": "29000+6000-8000",
+      "value": 27000,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-q10",
+      "independentFormula": "18000+3600-4800",
+      "value": 16800,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q03",
+      "independentFormula": "110*40+85*20",
+      "value": 6100,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q04",
+      "independentFormula": "10000+46000-15000",
+      "value": 41000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q05",
+      "independentFormula": "144000-132000",
+      "value": 12000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q07",
+      "independentFormula": "5000+7000-9500",
+      "value": 2500,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q08",
+      "independentFormula": "180000+110000+10000",
+      "value": 300000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q09",
+      "independentFormula": "(240000-30000)*.02-3000",
+      "value": 1200.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q10",
+      "independentFormula": "9000-6000",
+      "value": 3000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-q11",
+      "independentFormula": "280000+22000",
+      "value": 302000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-r01",
+      "independentFormula": "(40+210-55)*600",
+      "value": 117000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-inventory-r03",
+      "independentFormula": "72000+590000-22000+34000-104000",
+      "value": 570000,
+      "matches": true
+    },
+    {
+      "id": "b3x-bad-debt-r02",
+      "independentFormula": "(390000+110000-25000-7000)*.02-(10000-7000)",
+      "value": 6360.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-r02",
+      "independentFormula": "1800000*.022*6/12",
+      "value": 19800.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-expense-accrual-r03",
+      "independentFormula": "830000-110000+35000",
+      "value": 755000,
+      "matches": true
+    },
+    {
+      "id": "b3x-revenue-accrual-r02",
+      "independentFormula": "1100000*.024*7/12",
+      "value": 15400.0,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-r02",
+      "independentFormula": "37000-11000",
+      "value": 26000,
+      "matches": true
+    },
+    {
+      "id": "b3x-reversal-r03",
+      "independentFormula": "31000+7500-9500",
+      "value": 29000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-r02",
+      "independentFormula": "156000-143000",
+      "value": 13000,
+      "matches": true
+    },
+    {
+      "id": "b3x-closing-adjustments-r03",
+      "independentFormula": "(460000-36000)*.02-6000",
+      "value": 2480.0,
+      "matches": true
+    },
+    {
+      "id": "b3-books-q1",
+      "independentFormula": "20000+40000-35000",
+      "value": 25000,
+      "matches": true
+    },
+    {
+      "id": "b3-books-q3",
+      "independentFormula": "21000-12000",
+      "value": 9000,
+      "matches": true
+    },
+    {
+      "id": "b3-cash-q1",
+      "independentFormula": "70000-68500",
+      "value": 1500,
+      "matches": true
+    },
+    {
+      "id": "b3-cash-q3",
+      "independentFormula": "10000-6500+6500",
+      "value": 10000,
+      "matches": true
+    },
+    {
+      "id": "b3-inventory-q1",
+      "independentFormula": "10*100+2*120",
+      "value": 1240,
+      "matches": true
+    },
+    {
+      "id": "b3-inventory-q2",
+      "independentFormula": "(10*100+10*120)/20*12",
+      "value": 1320.0,
+      "matches": true
+    },
+    {
+      "id": "b3-inventory-q4",
+      "independentFormula": "20000+150000-35000",
+      "value": 135000,
+      "matches": true
+    },
+    {
+      "id": "b3-credit-q1",
+      "independentFormula": "80000*(1-.02)",
+      "value": 78400.0,
+      "matches": true
+    },
+    {
+      "id": "b3-credit-q3",
+      "independentFormula": "25000-21000",
+      "value": 4000,
+      "matches": true
+    },
+    {
+      "id": "b3-assets-q1",
+      "independentFormula": "180000+20000",
+      "value": 200000,
+      "matches": true
+    },
+    {
+      "id": "b3-assets-q2",
+      "independentFormula": "240000/4*6/12",
+      "value": 30000.0,
+      "matches": true
+    },
+    {
+      "id": "b3-assets-q3",
+      "independentFormula": "105000-90000",
+      "value": 15000,
+      "matches": true
+    },
+    {
+      "id": "b3-accrual-q1",
+      "independentFormula": "96000*3/12",
+      "value": 24000.0,
+      "matches": true
+    },
+    {
+      "id": "b3-accrual-q2",
+      "independentFormula": "400000*.03*2/12",
+      "value": 2000.0,
+      "matches": true
+    },
+    {
+      "id": "b3-adjustments-q1",
+      "independentFormula": "200000*.03-1500",
+      "value": 4500.0,
+      "matches": true
+    },
+    {
+      "id": "b3-adjustments-q2",
+      "independentFormula": "45000-32000",
+      "value": 13000,
+      "matches": true
+    },
+    {
+      "id": "b3-adjustments-q4",
+      "independentFormula": "1200-800",
+      "value": 400,
+      "matches": true
+    },
+    {
+      "id": "b3-statements-q1",
+      "independentFormula": "24000-6000",
+      "value": 18000,
+      "matches": true
+    },
+    {
+      "id": "b3-statements-q2",
+      "independentFormula": "200000-120000-48000",
+      "value": 32000,
+      "matches": true
+    }
+  ],
+  "semanticJournalReview": "Every closing journal model read against dates, original recording method, adjusted debt base, reversal instructions and all debit/credit accounts; independent of numerical side equality."
+}

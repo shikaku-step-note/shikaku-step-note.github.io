@@ -1,0 +1,273 @@
+{
+  "verified": "2026-10-28",
+  "scope": "12 independently authored foundation/closing lessons",
+  "tools": "natural-japanese lint/calques/outline/terms plus before-after newfacts; humanizer contextual pass; proofread-ja spelling/grammar/notation pass",
+  "actualToolRuns": 60,
+  "proseEdits": {
+    "journal": {
+      "このように変化の組合せが異なっても": "変化の組合せが異なっても"
+    },
+    "trial-balance": {
+      "残高の合計は355,000円ではなく255,000円です。": "残高の合計は255,000円です。合計試算表の355,000円から100,000円減っています。",
+      "ここでは決算整理ではなく、記帳漏れだった期中取引を反映します。": "ここでは、期末の期間配分等へ進む前に、記帳漏れだった期中取引を反映します。",
+      "残高試算表に仕訳金額をそのまま上乗せするのではなく、その科目の残高が増えるか減るかを判断しました。": "残高試算表では、各仕訳によって科目の残高が増えるか減るかを判断しました。"
+    },
+    "vouchers": {
+      "伝票を暗記したあとに仕訳へ変換するのではなく、一つの仕訳をどの伝票で表すかを考えていきます。": "一つの仕訳をどの伝票で表すかを考えながら、書式の使い方を学んでいきます。"
+    },
+    "reversal": {
+      "資産負債の繰越と費用収益の締切が、同じ図の中で違う役割を持つことを確認しましょう。": "同じ図の中でも、資産負債は残高を繰り越し、費用収益は損益へ振り替えて締め切るという違いを確認しましょう。"
+    }
+  },
+  "retainedFindings": [
+    {
+      "lesson": "b3x-foundations",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.380 (モーラ近似長 平均=53.7, 標準偏差=24.2)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-journal",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.363 (モーラ近似長 平均=53.2, 標準偏差=24.9)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-journal",
+      "line": 122,
+      "category": "nominal_ending",
+      "excerpt": "体言止め0件（全107文、約3944字）",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-corrections",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.334 (モーラ近似長 平均=54.6, 標準偏差=27.3)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-corrections",
+      "line": 5,
+      "category": "low_lexical_diversity_ttr",
+      "excerpt": "TTR=0.290 (内容語 1110 語中 322 種類)",
+      "decision": "retain",
+      "reason": "Controlled terminology (borrow/debit/credit/correction) must not be replaced with synonyms."
+    },
+    {
+      "lesson": "b3x-corrections",
+      "line": 5,
+      "category": "low_lexical_diversity_mtld",
+      "excerpt": "MTLD=39.3",
+      "decision": "retain",
+      "reason": "Controlled terminology (borrow/debit/credit/correction) must not be replaced with synonyms."
+    },
+    {
+      "lesson": "b3x-vouchers",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.317 (モーラ近似長 平均=59.3, 標準偏差=30.8)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-vouchers",
+      "line": 11,
+      "category": "repeated_sentence_lead",
+      "excerpt": "入金伝票には現金が増える取引、出金伝票に",
+      "decision": "retain",
+      "reason": "Controlled terminology (borrow/debit/credit/correction) must not be replaced with synonyms."
+    },
+    {
+      "lesson": "b3x-closing-inventory",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.355 (モーラ近似長 平均=59.7, 標準偏差=28.5)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-bad-debt",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.405 (モーラ近似長 平均=61.8, 標準偏差=26.2)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-bad-debt",
+      "line": 58,
+      "category": "antithesis_repetition",
+      "excerpt": "ではなく、科目と方向を選びます。",
+      "decision": "retain",
+      "reason": "Technical contrasts preserve different accounting effects and concrete wrong-answer checks."
+    },
+    {
+      "lesson": "b3x-bad-debt",
+      "line": 82,
+      "category": "antithesis_repetition",
+      "excerpt": "ではなく、関連する資産から控除する関係を示します。",
+      "decision": "retain",
+      "reason": "Technical contrasts preserve different accounting effects and concrete wrong-answer checks."
+    },
+    {
+      "lesson": "b3x-bad-debt",
+      "line": 108,
+      "category": "antithesis_repetition",
+      "excerpt": "ではなく、指定された対象を列挙します。今回の2%という率は独自例の条件",
+      "decision": "retain",
+      "reason": "Technical contrasts preserve different accounting effects and concrete wrong-answer checks."
+    },
+    {
+      "lesson": "b3x-bad-debt",
+      "line": 125,
+      "category": "nominal_ending",
+      "excerpt": "体言止め0件（全92文、約3707字）",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-expense-accrual",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.313 (モーラ近似長 平均=55.1, 標準偏差=28.8)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-revenue-accrual",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.353 (モーラ近似長 平均=52.8, 標準偏差=25.3)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-reversal",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.348 (モーラ近似長 平均=58.3, 標準偏差=28.2)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    },
+    {
+      "lesson": "b3x-closing-adjustments",
+      "line": 5,
+      "category": "low_burstiness",
+      "excerpt": "burstiness=-0.397 (モーラ近似長 平均=58.9, 標準偏差=25.4)",
+      "decision": "retain",
+      "reason": "Statistical style signal only; explanatory steps and sentence meanings reviewed in context; no artificial rhythm or fragments added."
+    }
+  ],
+  "lessonStatistics": [
+    {
+      "id": "b3x-foundations",
+      "bodyNonWhitespaceCharacters": 4641,
+      "workedExamples": 4,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-journal",
+      "bodyNonWhitespaceCharacters": 4569,
+      "workedExamples": 4,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-ledger",
+      "bodyNonWhitespaceCharacters": 4676,
+      "workedExamples": 4,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-trial-balance",
+      "bodyNonWhitespaceCharacters": 4686,
+      "workedExamples": 4,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-corrections",
+      "bodyNonWhitespaceCharacters": 4556,
+      "workedExamples": 4,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-vouchers",
+      "bodyNonWhitespaceCharacters": 4571,
+      "workedExamples": 4,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-closing-inventory",
+      "bodyNonWhitespaceCharacters": 4583,
+      "workedExamples": 5,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-bad-debt",
+      "bodyNonWhitespaceCharacters": 4555,
+      "workedExamples": 5,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-expense-accrual",
+      "bodyNonWhitespaceCharacters": 4615,
+      "workedExamples": 5,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-revenue-accrual",
+      "bodyNonWhitespaceCharacters": 4609,
+      "workedExamples": 5,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-reversal",
+      "bodyNonWhitespaceCharacters": 4600,
+      "workedExamples": 5,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    },
+    {
+      "id": "b3x-closing-adjustments",
+      "bodyNonWhitespaceCharacters": 4599,
+      "workedExamples": 5,
+      "objectives": 3,
+      "lessonQuestions": 12,
+      "unitReviewQuestions": 3
+    }
+  ],
+  "notClaimed": [
+    "Human authorship",
+    "Qualified human expert review",
+    "Learner calibration",
+    "Exact measured completion times"
+  ],
+  "open": "Independent peer review pending; author checks do not close course release gate."
+}

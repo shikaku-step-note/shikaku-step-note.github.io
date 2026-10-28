@@ -1,0 +1,1798 @@
+{
+  "verified": "2026-10-28",
+  "claim": "Two original practice blueprints;60minutes;45/20/35practiceweights;not official fixed subquestion counts or per-field weights. Independent peer check required.",
+  "numericWitnesses": [
+    {
+      "id": "b3x-mock-a-t01",
+      "formula": "960000*0.03*4/12",
+      "value": 9600
+    },
+    {
+      "id": "b3x-mock-a-t03",
+      "formula": "960000*0.03",
+      "value": 28800
+    },
+    {
+      "id": "b3x-mock-a-t04",
+      "formula": "1080000*0.02*4/12",
+      "value": 7200
+    },
+    {
+      "id": "b3x-mock-a-t05",
+      "formula": "28800+7200-9600",
+      "value": 26400
+    },
+    {
+      "id": "b3x-mock-a-t07",
+      "formula": "1008000/7",
+      "value": 144000
+    },
+    {
+      "id": "b3x-mock-a-t08",
+      "formula": "562500-562500/5*6/12",
+      "value": 506250
+    },
+    {
+      "id": "b3x-mock-a-t09",
+      "formula": "648000/6*8/12",
+      "value": 72000
+    },
+    {
+      "id": "b3x-mock-a-t10",
+      "formula": "462000-(1008000-1008000/7*3-1008000/7*11/12)",
+      "value": 18000
+    },
+    {
+      "id": "b3x-mock-b-t01",
+      "formula": "80*420+(130-80)*460",
+      "value": 56600
+    },
+    {
+      "id": "b3x-mock-b-t02",
+      "formula": "80+100+70-130-90",
+      "value": 30
+    },
+    {
+      "id": "b3x-mock-b-t03",
+      "formula": "(80+100+70-130-90)*500",
+      "value": 15000
+    },
+    {
+      "id": "b3x-mock-b-t04",
+      "formula": "130*700+90*760-(80*420+100*460+70*500-15000)",
+      "value": 59800
+    },
+    {
+      "id": "b3x-mock-b-t05",
+      "formula": "80*420+100*460+70*500-15000",
+      "value": 99600
+    },
+    {
+      "id": "b3x-mock-b-t06",
+      "formula": "54000+42000",
+      "value": 96000
+    },
+    {
+      "id": "b3x-mock-b-t07",
+      "formula": "28000+37000",
+      "value": 65000
+    },
+    {
+      "id": "b3x-mock-b-t08",
+      "formula": "28000+63000",
+      "value": 91000
+    },
+    {
+      "id": "b3x-mock-b-t09",
+      "formula": "96000+91000+37000+26000",
+      "value": 250000
+    },
+    {
+      "id": "b3x-mock-b-t10",
+      "formula": "48000+63000-37000",
+      "value": 74000
+    },
+    {
+      "id": "b3x-mock-a-f01",
+      "formula": "148600-1800-(148600-146300-1800)",
+      "value": 146300
+    },
+    {
+      "id": "b3x-mock-a-f02",
+      "formula": "982400",
+      "value": 982400
+    },
+    {
+      "id": "b3x-mock-a-f03",
+      "formula": "512000-16000",
+      "value": 496000
+    },
+    {
+      "id": "b3x-mock-a-f04",
+      "formula": "(512000-16000+180000)*0.02",
+      "value": 13520
+    },
+    {
+      "id": "b3x-mock-a-f05",
+      "formula": "180000",
+      "value": 180000
+    },
+    {
+      "id": "b3x-mock-a-f06",
+      "formula": "74000",
+      "value": 74000
+    },
+    {
+      "id": "b3x-mock-a-f07",
+      "formula": "840000+72000",
+      "value": 912000
+    },
+    {
+      "id": "b3x-mock-a-f08",
+      "formula": "312000+840000/7+72000/6*5/12",
+      "value": 437000
+    },
+    {
+      "id": "b3x-mock-a-f09",
+      "formula": "1800000",
+      "value": 1800000
+    },
+    {
+      "id": "b3x-mock-a-f10",
+      "formula": "540000+1800000/30",
+      "value": 600000
+    },
+    {
+      "id": "b3x-mock-a-f11",
+      "formula": "96000*9/12",
+      "value": 72000
+    },
+    {
+      "id": "b3x-mock-a-f12",
+      "formula": "314000+48000*1.1",
+      "value": 366800
+    },
+    {
+      "id": "b3x-mock-a-f13",
+      "formula": "780000",
+      "value": 780000
+    },
+    {
+      "id": "b3x-mock-a-f14",
+      "formula": "37000",
+      "value": 37000
+    },
+    {
+      "id": "b3x-mock-a-f15",
+      "formula": "358000-(176000+48000*0.1)",
+      "value": 177200
+    },
+    {
+      "id": "b3x-mock-a-f16",
+      "formula": "236000-61000",
+      "value": 175000
+    },
+    {
+      "id": "b3x-mock-a-f17",
+      "formula": "780000*0.024*6/12",
+      "value": 9360
+    },
+    {
+      "id": "b3x-mock-a-f18",
+      "formula": "311100+(3580000+4000-(1796000+710000+276000+24000+185000+13520+44600+27360+3300+500+12000+236000))",
+      "value": 566820
+    },
+    {
+      "id": "b3x-mock-a-f19",
+      "formula": "62000+1760000+48000-74000",
+      "value": 1796000
+    },
+    {
+      "id": "b3x-mock-a-f20",
+      "formula": "840000/7+72000/6*5/12+1800000/30",
+      "value": 185000
+    },
+    {
+      "id": "b3x-mock-a-f21",
+      "formula": "(512000-16000+180000)*0.02-0",
+      "value": 13520
+    },
+    {
+      "id": "b3x-mock-a-f22",
+      "formula": "96000*3/12",
+      "value": 24000
+    },
+    {
+      "id": "b3x-mock-a-f23",
+      "formula": "3580000+4000-(1796000+710000+276000+24000+185000+13520+44600+27360+3300+500+12000+236000)",
+      "value": 255720
+    },
+    {
+      "id": "b3x-mock-b-f01",
+      "formula": "1495200+36000",
+      "value": 1531200
+    },
+    {
+      "id": "b3x-mock-b-f02",
+      "formula": "201800+1700+(204100-201800-1700)",
+      "value": 204100
+    },
+    {
+      "id": "b3x-mock-b-f03",
+      "formula": "670000-36000-19000*1.1-9000",
+      "value": 604100
+    },
+    {
+      "id": "b3x-mock-b-f04",
+      "formula": "91000+2280000-22000-118000",
+      "value": 2231000
+    },
+    {
+      "id": "b3x-mock-b-f05",
+      "formula": "118000",
+      "value": 118000
+    },
+    {
+      "id": "b3x-mock-b-f06",
+      "formula": "660000+36000",
+      "value": 696000
+    },
+    {
+      "id": "b3x-mock-b-f07",
+      "formula": "275000+660000/5+36000/6*4/12",
+      "value": 409000
+    },
+    {
+      "id": "b3x-mock-b-f08",
+      "formula": "660000/5+36000/6*4/12+1200000/25",
+      "value": 182000
+    },
+    {
+      "id": "b3x-mock-b-f09",
+      "formula": "(670000-36000-19000*1.1-9000+215000)*0.01",
+      "value": 8191
+    },
+    {
+      "id": "b3x-mock-b-f10",
+      "formula": "14800-(670000-36000-19000*1.1-9000+215000)*0.01",
+      "value": 6609
+    },
+    {
+      "id": "b3x-mock-b-f11",
+      "formula": "12000+(54000-36000)-17000",
+      "value": 13000
+    },
+    {
+      "id": "b3x-mock-b-f12",
+      "formula": "17000",
+      "value": 17000
+    },
+    {
+      "id": "b3x-mock-b-f13",
+      "formula": "384000-144000*7/12",
+      "value": 300000
+    },
+    {
+      "id": "b3x-mock-b-f14",
+      "formula": "144000*7/12",
+      "value": 84000
+    },
+    {
+      "id": "b3x-mock-b-f15",
+      "formula": "24000+940000*0.018*7/12",
+      "value": 33870
+    },
+    {
+      "id": "b3x-mock-b-f16",
+      "formula": "940000*0.018*7/12",
+      "value": 9870
+    },
+    {
+      "id": "b3x-mock-b-f17",
+      "formula": "132000*4/6",
+      "value": 88000
+    },
+    {
+      "id": "b3x-mock-b-f18",
+      "formula": "132000*2/6",
+      "value": 44000
+    },
+    {
+      "id": "b3x-mock-b-f19",
+      "formula": "(375000-19000*0.1)-(228000-22000*0.1)",
+      "value": 147300
+    },
+    {
+      "id": "b3x-mock-b-f20",
+      "formula": "180000",
+      "value": 180000
+    },
+    {
+      "id": "b3x-mock-b-f21",
+      "formula": "180000-45000",
+      "value": 135000
+    },
+    {
+      "id": "b3x-mock-b-f22",
+      "formula": "865000+16800",
+      "value": 881800
+    },
+    {
+      "id": "b3x-mock-b-f23",
+      "formula": "(3750000-19000+132000*4/6+1700+600+6609)-(2231000+881800+300000+71100+13000+33870+182000+9000+180000)",
+      "value": -73861
+    }
+  ],
+  "ledgers": {
+    "a": {
+      "beforeTrialTotal": 7748800,
+      "adjustedDebitTotal": 7990980,
+      "adjustedCreditTotal": 7990980,
+      "revenues": 3584000,
+      "expenses": 3328280,
+      "profit": 255720,
+      "adjustmentEntries": [
+        {
+          "debits": {
+            "通信費": 1800,
+            "雑損": 500
+          },
+          "credits": {
+            "現金": 2300
+          }
+        },
+        {
+          "debits": {
+            "仮受金": 37000
+          },
+          "credits": {
+            "前受金": 37000
+          }
+        },
+        {
+          "debits": {
+            "備品": 72000
+          },
+          "credits": {
+            "仮払金": 72000
+          }
+        },
+        {
+          "debits": {
+            "仕入": 48000,
+            "仮払消費税": 4800
+          },
+          "credits": {
+            "買掛金": 52800
+          }
+        },
+        {
+          "debits": {
+            "貸倒引当金": 12700,
+            "貸倒損失": 3300
+          },
+          "credits": {
+            "売掛金": 16000
+          }
+        },
+        {
+          "debits": {
+            "貸倒引当金繰入": 13520
+          },
+          "credits": {
+            "貸倒引当金": 13520
+          }
+        },
+        {
+          "debits": {
+            "仕入": 62000
+          },
+          "credits": {
+            "繰越商品": 62000
+          }
+        },
+        {
+          "debits": {
+            "繰越商品": 74000
+          },
+          "credits": {
+            "仕入": 74000
+          }
+        },
+        {
+          "debits": {
+            "減価償却費": 185000
+          },
+          "credits": {
+            "備品減価償却累計額": 125000,
+            "建物減価償却累計額": 60000
+          }
+        },
+        {
+          "debits": {
+            "前払保険料": 72000
+          },
+          "credits": {
+            "保険料": 72000
+          }
+        },
+        {
+          "debits": {
+            "支払利息": 9360
+          },
+          "credits": {
+            "未払利息": 9360
+          }
+        },
+        {
+          "debits": {
+            "仮受消費税": 358000
+          },
+          "credits": {
+            "仮払消費税": 180800,
+            "未払消費税": 177200
+          }
+        },
+        {
+          "debits": {
+            "法人税等": 236000
+          },
+          "credits": {
+            "仮払法人税等": 61000,
+            "未払法人税等": 175000
+          }
+        }
+      ],
+      "adjustedSignedLedger": {
+        "売掛金": 496000,
+        "建物": 1800000,
+        "借入金": -780000,
+        "保険料": 24000,
+        "通信費": 44600,
+        "建物減価償却累計額": -600000,
+        "仮払金": 0,
+        "備品減価償却累計額": -437000,
+        "租税公課": 12000,
+        "貸倒引当金": -13520,
+        "仮払法人税等": 0,
+        "買掛金": -366800,
+        "受取手形": 180000,
+        "仕入": 1796000,
+        "繰越利益剰余金": -311100,
+        "備品": 912000,
+        "資本金": -1500000,
+        "繰越商品": 74000,
+        "仮受消費税": 0,
+        "普通預金": 982400,
+        "売上": -3580000,
+        "仮受金": 0,
+        "受取利息": -4000,
+        "支払利息": 27360,
+        "給料": 710000,
+        "支払家賃": 276000,
+        "仮払消費税": 0,
+        "現金": 146300,
+        "雑損": 500,
+        "前受金": -37000,
+        "貸倒損失": 3300,
+        "貸倒引当金繰入": 13520,
+        "減価償却費": 185000,
+        "前払保険料": 72000,
+        "未払利息": -9360,
+        "未払消費税": -177200,
+        "法人税等": 236000,
+        "未払法人税等": -175000
+      },
+      "completeEightColumnWorksheet": [
+        {
+          "account": "仕入",
+          "trialDebit": 1760000,
+          "trialCredit": 0,
+          "adjustmentDebits": 110000,
+          "adjustmentCredits": 74000,
+          "profitLossDebit": 1796000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮受消費税",
+          "trialDebit": 0,
+          "trialCredit": 358000,
+          "adjustmentDebits": 358000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮受金",
+          "trialDebit": 0,
+          "trialCredit": 37000,
+          "adjustmentDebits": 37000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮払法人税等",
+          "trialDebit": 61000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 61000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮払消費税",
+          "trialDebit": 176000,
+          "trialCredit": 0,
+          "adjustmentDebits": 4800,
+          "adjustmentCredits": 180800,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮払金",
+          "trialDebit": 72000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 72000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "保険料",
+          "trialDebit": 96000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 72000,
+          "profitLossDebit": 24000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "借入金",
+          "trialDebit": 0,
+          "trialCredit": 780000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 780000
+        },
+        {
+          "account": "備品",
+          "trialDebit": 840000,
+          "trialCredit": 0,
+          "adjustmentDebits": 72000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 912000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "備品減価償却累計額",
+          "trialDebit": 0,
+          "trialCredit": 312000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 125000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 437000
+        },
+        {
+          "account": "前受金",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 37000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 37000
+        },
+        {
+          "account": "前払保険料",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 72000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 72000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "受取利息",
+          "trialDebit": 0,
+          "trialCredit": 4000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 4000,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "受取手形",
+          "trialDebit": 180000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 180000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "売上",
+          "trialDebit": 0,
+          "trialCredit": 3580000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 3580000,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "売掛金",
+          "trialDebit": 512000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 16000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 496000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "建物",
+          "trialDebit": 1800000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 1800000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "建物減価償却累計額",
+          "trialDebit": 0,
+          "trialCredit": 540000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 60000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 600000
+        },
+        {
+          "account": "支払利息",
+          "trialDebit": 18000,
+          "trialCredit": 0,
+          "adjustmentDebits": 9360,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 27360,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "支払家賃",
+          "trialDebit": 276000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 276000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "普通預金",
+          "trialDebit": 982400,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 982400,
+          "balanceCredit": 0
+        },
+        {
+          "account": "未払利息",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 9360,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 9360
+        },
+        {
+          "account": "未払法人税等",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 175000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 175000
+        },
+        {
+          "account": "未払消費税",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 177200,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 177200
+        },
+        {
+          "account": "法人税等",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 236000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 236000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "減価償却費",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 185000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 185000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "現金",
+          "trialDebit": 148600,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 2300,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 146300,
+          "balanceCredit": 0
+        },
+        {
+          "account": "租税公課",
+          "trialDebit": 12000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 12000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "給料",
+          "trialDebit": 710000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 710000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "繰越利益剰余金",
+          "trialDebit": 0,
+          "trialCredit": 311100,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 311100
+        },
+        {
+          "account": "繰越商品",
+          "trialDebit": 62000,
+          "trialCredit": 0,
+          "adjustmentDebits": 74000,
+          "adjustmentCredits": 62000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 74000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "買掛金",
+          "trialDebit": 0,
+          "trialCredit": 314000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 52800,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 366800
+        },
+        {
+          "account": "貸倒引当金",
+          "trialDebit": 0,
+          "trialCredit": 12700,
+          "adjustmentDebits": 12700,
+          "adjustmentCredits": 13520,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 13520
+        },
+        {
+          "account": "貸倒引当金繰入",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 13520,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 13520,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "貸倒損失",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 3300,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 3300,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "資本金",
+          "trialDebit": 0,
+          "trialCredit": 1500000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 1500000
+        },
+        {
+          "account": "通信費",
+          "trialDebit": 42800,
+          "trialCredit": 0,
+          "adjustmentDebits": 1800,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 44600,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "雑損",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 500,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 500,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "当期純利益",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 255720,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 255720
+        }
+      ],
+      "worksheetTotals": {
+        "trialDebit": 7748800,
+        "trialCredit": 7748800,
+        "adjustmentDebits": 1189980,
+        "adjustmentCredits": 1189980,
+        "profitLossDebit": 3584000,
+        "profitLossCredit": 3584000,
+        "balanceDebit": 4662700,
+        "balanceCredit": 4662700
+      },
+      "retainedEarningsAfterClosing": 566820,
+      "sampledFieldsDerivedFromWholeLedger": [
+        {
+          "id": "b3x-mock-a-f01",
+          "derivedAccount": "現金",
+          "value": 146300
+        },
+        {
+          "id": "b3x-mock-a-f02",
+          "derivedAccount": "普通預金",
+          "value": 982400
+        },
+        {
+          "id": "b3x-mock-a-f03",
+          "derivedAccount": "売掛金",
+          "value": 496000
+        },
+        {
+          "id": "b3x-mock-a-f04",
+          "derivedAccount": "貸倒引当金",
+          "value": 13520
+        },
+        {
+          "id": "b3x-mock-a-f05",
+          "derivedAccount": "受取手形",
+          "value": 180000
+        },
+        {
+          "id": "b3x-mock-a-f06",
+          "derivedAccount": "繰越商品",
+          "value": 74000
+        },
+        {
+          "id": "b3x-mock-a-f07",
+          "derivedAccount": "備品",
+          "value": 912000
+        },
+        {
+          "id": "b3x-mock-a-f08",
+          "derivedAccount": "備品減価償却累計額",
+          "value": 437000
+        },
+        {
+          "id": "b3x-mock-a-f09",
+          "derivedAccount": "建物",
+          "value": 1800000
+        },
+        {
+          "id": "b3x-mock-a-f10",
+          "derivedAccount": "建物減価償却累計額",
+          "value": 600000
+        },
+        {
+          "id": "b3x-mock-a-f11",
+          "derivedAccount": "前払保険料",
+          "value": 72000
+        },
+        {
+          "id": "b3x-mock-a-f12",
+          "derivedAccount": "買掛金",
+          "value": 366800
+        },
+        {
+          "id": "b3x-mock-a-f13",
+          "derivedAccount": "借入金",
+          "value": 780000
+        },
+        {
+          "id": "b3x-mock-a-f14",
+          "derivedAccount": "前受金",
+          "value": 37000
+        },
+        {
+          "id": "b3x-mock-a-f15",
+          "derivedAccount": "未払消費税",
+          "value": 177200
+        },
+        {
+          "id": "b3x-mock-a-f16",
+          "derivedAccount": "未払法人税等",
+          "value": 175000
+        },
+        {
+          "id": "b3x-mock-a-f17",
+          "derivedAccount": "未払利息",
+          "value": 9360
+        },
+        {
+          "id": "b3x-mock-a-f18",
+          "derivedAccount": "retained",
+          "value": 566820
+        },
+        {
+          "id": "b3x-mock-a-f19",
+          "derivedAccount": "仕入",
+          "value": 1796000
+        },
+        {
+          "id": "b3x-mock-a-f20",
+          "derivedAccount": "減価償却費",
+          "value": 185000
+        },
+        {
+          "id": "b3x-mock-a-f21",
+          "derivedAccount": "貸倒引当金繰入",
+          "value": 13520
+        },
+        {
+          "id": "b3x-mock-a-f22",
+          "derivedAccount": "保険料",
+          "value": 24000
+        },
+        {
+          "id": "b3x-mock-a-f23",
+          "derivedAccount": "profit",
+          "value": 255720
+        }
+      ]
+    },
+    "b": {
+      "beforeTrialTotal": 8496100,
+      "adjustedDebitTotal": 8571170,
+      "adjustedCreditTotal": 8571170,
+      "revenues": 3827909,
+      "expenses": 3901770,
+      "profit": -73861,
+      "adjustmentEntries": [
+        {
+          "debits": {
+            "普通預金": 36000
+          },
+          "credits": {
+            "売掛金": 36000
+          }
+        },
+        {
+          "debits": {
+            "現金": 2300
+          },
+          "credits": {
+            "受取利息": 1700,
+            "雑益": 600
+          }
+        },
+        {
+          "debits": {
+            "備品": 36000
+          },
+          "credits": {
+            "消耗品費": 36000
+          }
+        },
+        {
+          "debits": {
+            "売上": 19000,
+            "仮受消費税": 1900
+          },
+          "credits": {
+            "売掛金": 20900
+          }
+        },
+        {
+          "debits": {
+            "買掛金": 24200
+          },
+          "credits": {
+            "仕入": 22000,
+            "仮払消費税": 2200
+          }
+        },
+        {
+          "debits": {
+            "貸倒損失": 9000
+          },
+          "credits": {
+            "売掛金": 9000
+          }
+        },
+        {
+          "debits": {
+            "貸倒引当金": 6609
+          },
+          "credits": {
+            "貸倒引当金戻入": 6609
+          }
+        },
+        {
+          "debits": {
+            "仕入": 91000
+          },
+          "credits": {
+            "繰越商品": 91000
+          }
+        },
+        {
+          "debits": {
+            "繰越商品": 118000
+          },
+          "credits": {
+            "仕入": 118000
+          }
+        },
+        {
+          "debits": {
+            "減価償却費": 182000
+          },
+          "credits": {
+            "備品減価償却累計額": 134000,
+            "建物減価償却累計額": 48000
+          }
+        },
+        {
+          "debits": {
+            "貯蔵品": 5000
+          },
+          "credits": {
+            "消耗品費": 5000
+          }
+        },
+        {
+          "debits": {
+            "前払家賃": 84000
+          },
+          "credits": {
+            "支払家賃": 84000
+          }
+        },
+        {
+          "debits": {
+            "支払利息": 9870
+          },
+          "credits": {
+            "未払利息": 9870
+          }
+        },
+        {
+          "debits": {
+            "受取家賃": 44000
+          },
+          "credits": {
+            "前受家賃": 44000
+          }
+        },
+        {
+          "debits": {
+            "給料": 16800
+          },
+          "credits": {
+            "未払給料": 16800
+          }
+        },
+        {
+          "debits": {
+            "仮受消費税": 373100
+          },
+          "credits": {
+            "仮払消費税": 225800,
+            "未払消費税": 147300
+          }
+        },
+        {
+          "debits": {
+            "法人税等": 180000
+          },
+          "credits": {
+            "仮払法人税等": 45000,
+            "未払法人税等": 135000
+          }
+        }
+      ],
+      "adjustedSignedLedger": {
+        "売掛金": 604100,
+        "建物": 1200000,
+        "借入金": -940000,
+        "通信費": 71100,
+        "消耗品費": 13000,
+        "建物減価償却累計額": -384000,
+        "備品減価償却累計額": -409000,
+        "貸倒引当金": -8191,
+        "仮払法人税等": 0,
+        "買掛金": -457800,
+        "仕入": 2231000,
+        "繰越利益剰余金": -291300,
+        "受取家賃": -88000,
+        "備品": 696000,
+        "貯蔵品": 17000,
+        "資本金": -1900000,
+        "繰越商品": 118000,
+        "仮受消費税": 0,
+        "普通預金": 1531200,
+        "売上": -3731000,
+        "電子記録債権": 215000,
+        "支払利息": 33870,
+        "給料": 881800,
+        "支払家賃": 300000,
+        "仮払消費税": 0,
+        "現金": 204100,
+        "受取利息": -1700,
+        "雑益": -600,
+        "貸倒損失": 9000,
+        "貸倒引当金戻入": -6609,
+        "減価償却費": 182000,
+        "前払家賃": 84000,
+        "未払利息": -9870,
+        "前受家賃": -44000,
+        "未払給料": -16800,
+        "未払消費税": -147300,
+        "法人税等": 180000,
+        "未払法人税等": -135000
+      },
+      "completeEightColumnWorksheet": [
+        {
+          "account": "仕入",
+          "trialDebit": 2280000,
+          "trialCredit": 0,
+          "adjustmentDebits": 91000,
+          "adjustmentCredits": 140000,
+          "profitLossDebit": 2231000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮受消費税",
+          "trialDebit": 0,
+          "trialCredit": 375000,
+          "adjustmentDebits": 375000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮払法人税等",
+          "trialDebit": 45000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 45000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "仮払消費税",
+          "trialDebit": 228000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 228000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "借入金",
+          "trialDebit": 0,
+          "trialCredit": 940000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 940000
+        },
+        {
+          "account": "備品",
+          "trialDebit": 660000,
+          "trialCredit": 0,
+          "adjustmentDebits": 36000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 696000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "備品減価償却累計額",
+          "trialDebit": 0,
+          "trialCredit": 275000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 134000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 409000
+        },
+        {
+          "account": "前受家賃",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 44000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 44000
+        },
+        {
+          "account": "前払家賃",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 84000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 84000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "受取利息",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 1700,
+          "profitLossDebit": 0,
+          "profitLossCredit": 1700,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "受取家賃",
+          "trialDebit": 0,
+          "trialCredit": 132000,
+          "adjustmentDebits": 44000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 88000,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "売上",
+          "trialDebit": 0,
+          "trialCredit": 3750000,
+          "adjustmentDebits": 19000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 3731000,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "売掛金",
+          "trialDebit": 670000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 65900,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 604100,
+          "balanceCredit": 0
+        },
+        {
+          "account": "建物",
+          "trialDebit": 1200000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 1200000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "建物減価償却累計額",
+          "trialDebit": 0,
+          "trialCredit": 336000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 48000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 384000
+        },
+        {
+          "account": "支払利息",
+          "trialDebit": 24000,
+          "trialCredit": 0,
+          "adjustmentDebits": 9870,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 33870,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "支払家賃",
+          "trialDebit": 384000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 84000,
+          "profitLossDebit": 300000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "普通預金",
+          "trialDebit": 1495200,
+          "trialCredit": 0,
+          "adjustmentDebits": 36000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 1531200,
+          "balanceCredit": 0
+        },
+        {
+          "account": "未払利息",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 9870,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 9870
+        },
+        {
+          "account": "未払法人税等",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 135000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 135000
+        },
+        {
+          "account": "未払消費税",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 147300,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 147300
+        },
+        {
+          "account": "未払給料",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 16800,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 16800
+        },
+        {
+          "account": "法人税等",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 180000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 180000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "消耗品費",
+          "trialDebit": 54000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 41000,
+          "profitLossDebit": 13000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "減価償却費",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 182000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 182000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "現金",
+          "trialDebit": 201800,
+          "trialCredit": 0,
+          "adjustmentDebits": 2300,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 204100,
+          "balanceCredit": 0
+        },
+        {
+          "account": "給料",
+          "trialDebit": 865000,
+          "trialCredit": 0,
+          "adjustmentDebits": 16800,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 881800,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "繰越利益剰余金",
+          "trialDebit": 0,
+          "trialCredit": 291300,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 291300
+        },
+        {
+          "account": "繰越商品",
+          "trialDebit": 91000,
+          "trialCredit": 0,
+          "adjustmentDebits": 118000,
+          "adjustmentCredits": 91000,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 118000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "貯蔵品",
+          "trialDebit": 12000,
+          "trialCredit": 0,
+          "adjustmentDebits": 5000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 17000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "買掛金",
+          "trialDebit": 0,
+          "trialCredit": 482000,
+          "adjustmentDebits": 24200,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 457800
+        },
+        {
+          "account": "貸倒引当金",
+          "trialDebit": 0,
+          "trialCredit": 14800,
+          "adjustmentDebits": 6609,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 8191
+        },
+        {
+          "account": "貸倒引当金戻入",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 6609,
+          "profitLossDebit": 0,
+          "profitLossCredit": 6609,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "貸倒損失",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 9000,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 9000,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "資本金",
+          "trialDebit": 0,
+          "trialCredit": 1900000,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 1900000
+        },
+        {
+          "account": "通信費",
+          "trialDebit": 71100,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 71100,
+          "profitLossCredit": 0,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "雑益",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 600,
+          "profitLossDebit": 0,
+          "profitLossCredit": 600,
+          "balanceDebit": 0,
+          "balanceCredit": 0
+        },
+        {
+          "account": "電子記録債権",
+          "trialDebit": 215000,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 0,
+          "balanceDebit": 215000,
+          "balanceCredit": 0
+        },
+        {
+          "account": "当期純損失",
+          "trialDebit": 0,
+          "trialCredit": 0,
+          "adjustmentDebits": 0,
+          "adjustmentCredits": 0,
+          "profitLossDebit": 0,
+          "profitLossCredit": 73861,
+          "balanceDebit": 73861,
+          "balanceCredit": 0
+        }
+      ],
+      "worksheetTotals": {
+        "trialDebit": 8496100,
+        "trialCredit": 8496100,
+        "adjustmentDebits": 1238779,
+        "adjustmentCredits": 1238779,
+        "profitLossDebit": 3901770,
+        "profitLossCredit": 3901770,
+        "balanceDebit": 4743261,
+        "balanceCredit": 4743261
+      },
+      "retainedEarningsAfterClosing": 217439,
+      "sampledFieldsDerivedFromWholeLedger": [
+        {
+          "id": "b3x-mock-b-f01",
+          "derivedAccount": "普通預金",
+          "value": 1531200
+        },
+        {
+          "id": "b3x-mock-b-f02",
+          "derivedAccount": "現金",
+          "value": 204100
+        },
+        {
+          "id": "b3x-mock-b-f03",
+          "derivedAccount": "売掛金",
+          "value": 604100
+        },
+        {
+          "id": "b3x-mock-b-f04",
+          "derivedAccount": "仕入",
+          "value": 2231000
+        },
+        {
+          "id": "b3x-mock-b-f05",
+          "derivedAccount": "繰越商品",
+          "value": 118000
+        },
+        {
+          "id": "b3x-mock-b-f06",
+          "derivedAccount": "備品",
+          "value": 696000
+        },
+        {
+          "id": "b3x-mock-b-f07",
+          "derivedAccount": "備品減価償却累計額",
+          "value": 409000
+        },
+        {
+          "id": "b3x-mock-b-f08",
+          "derivedAccount": "減価償却費",
+          "value": 182000
+        },
+        {
+          "id": "b3x-mock-b-f09",
+          "derivedAccount": "貸倒引当金",
+          "value": 8191
+        },
+        {
+          "id": "b3x-mock-b-f10",
+          "derivedAccount": "貸倒引当金戻入",
+          "value": 6609
+        },
+        {
+          "id": "b3x-mock-b-f11",
+          "derivedAccount": "消耗品費",
+          "value": 13000
+        },
+        {
+          "id": "b3x-mock-b-f12",
+          "derivedAccount": "貯蔵品",
+          "value": 17000
+        },
+        {
+          "id": "b3x-mock-b-f13",
+          "derivedAccount": "支払家賃",
+          "value": 300000
+        },
+        {
+          "id": "b3x-mock-b-f14",
+          "derivedAccount": "前払家賃",
+          "value": 84000
+        },
+        {
+          "id": "b3x-mock-b-f15",
+          "derivedAccount": "支払利息",
+          "value": 33870
+        },
+        {
+          "id": "b3x-mock-b-f16",
+          "derivedAccount": "未払利息",
+          "value": 9870
+        },
+        {
+          "id": "b3x-mock-b-f17",
+          "derivedAccount": "受取家賃",
+          "value": 88000
+        },
+        {
+          "id": "b3x-mock-b-f18",
+          "derivedAccount": "前受家賃",
+          "value": 44000
+        },
+        {
+          "id": "b3x-mock-b-f19",
+          "derivedAccount": "未払消費税",
+          "value": 147300
+        },
+        {
+          "id": "b3x-mock-b-f20",
+          "derivedAccount": "法人税等",
+          "value": 180000
+        },
+        {
+          "id": "b3x-mock-b-f21",
+          "derivedAccount": "未払法人税等",
+          "value": 135000
+        },
+        {
+          "id": "b3x-mock-b-f22",
+          "derivedAccount": "給料",
+          "value": 881800
+        },
+        {
+          "id": "b3x-mock-b-f23",
+          "derivedAccount": "profit",
+          "value": -73861
+        }
+      ]
+    }
+  }
+}

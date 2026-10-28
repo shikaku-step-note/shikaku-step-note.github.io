@@ -119,7 +119,7 @@ test('mock inventory and profit vectors reconcile independently in both directio
 test('cost registries are deterministic and preserve other qualification versions',()=>{
   assert.deepEqual(bokiAssessments([...entries].reverse()),bokiAssessments(entries));
   assert.equal(assessments.length,41);
-  assert.ok(bokiAssessments(entries).filter(a=>!['boki-beginner','cost-beginner'].includes(a.qualification)).every(a=>a.version==='boki-2026-v1'));
+  assert.ok(bokiAssessments(entries).filter(a=>!['boki-beginner','cost-beginner','boki-3'].includes(a.qualification)).every(a=>a.version==='boki-2026-v1'));
 });
 
 test('every numeric lesson key retains an independently recalculated regression reference',()=>{

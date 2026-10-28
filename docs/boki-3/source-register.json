@@ -1,0 +1,197 @@
+{
+  "qualification": "boki-3",
+  "verified": "2026-10-28",
+  "authority": "日本商工会議所",
+  "sources": [
+    {
+      "id": "b3-exam",
+      "title": "日商簿記3級：試験科目・注意事項",
+      "url": "https://www.kentei.ne.jp/bookkeeping/class3/exam",
+      "applicability": "current",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "商業簿記、3題以内、60分、70%以上。年度4月1日施行法令。手数料や開催日を教材へ固定しない。"
+    },
+    {
+      "id": "b3-level",
+      "title": "日商簿記3級：求める水準",
+      "url": "https://www.kentei.ne.jp/bookkeeping/class3",
+      "applicability": "current",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "小規模企業の活動に基づく基本商業簿記。工業簿記・2級・1級を同一コースへ含めない。"
+    },
+    {
+      "id": "b3-scope-index",
+      "title": "簿記：出題区分表と適用年度",
+      "url": "https://www.kentei.ne.jp/bookkeeping/exam-list",
+      "applicability": "2026 and 2027 distinctly",
+      "verified": "2026-10-28",
+      "published": "2026-07-31",
+      "notes": "2026年度は2022年度版、2027年度は確定新版。勘定科目表は出題範囲そのものではない。"
+    },
+    {
+      "id": "b3-scope2026",
+      "title": "商業簿記・会計学：2022年度施行、2026年度適用区分表",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2024/12/shogyouboki_kubun.pdf",
+      "applicability": "2026-04-01..2027-03-31",
+      "verified": "2026-10-28",
+      "published": "2021-12-10",
+      "notes": "4ページの3級列を配置を保って確認。2級列の銀行勘定調整表・未決算・棚卸減耗などを3級と誤認しない。"
+    },
+    {
+      "id": "b3-scope2027",
+      "title": "商業簿記・会計学：2027年度適用区分表【確定版】",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027kubunhyo_fixed.pdf",
+      "applicability": "2027-04-01..2028-03-31",
+      "verified": "2026-10-28",
+      "published": "2026-07-31",
+      "notes": "暫定版ではなく2026年7月31日確定版。2026年度の科目や問題へ混在させない。"
+    },
+    {
+      "id": "b3-changes2027",
+      "title": "2027年度区分改定の説明書【確定版】",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027_kaitei_shushi_fixed.pdf",
+      "applicability": "from 2027-04-01",
+      "verified": "2026-10-28",
+      "published": "2026-07-31",
+      "notes": "紙手形・小切手削除、販売時の原価振替、除却廃棄、簡易な定率法。3級はリースのオンバランス処理を要求しない。"
+    },
+    {
+      "id": "b3-points2027",
+      "title": "2027年度以降の日商簿記3級試験問題の配点",
+      "url": "https://www.kentei.ne.jp/51504",
+      "applicability": "from 2027-04-01",
+      "verified": "2026-10-28",
+      "published": "2026-09-25",
+      "notes": "第1問45、第2問25、第3問30、計100、70以上。2027年3月31日までは従来配点。本資料自体は従来の数値を明記していない。"
+    },
+    {
+      "id": "b3-accounts2026",
+      "title": "商業簿記標準・許容勘定科目表：2022年度施行",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2021/12/2022_kamoku.pdf",
+      "applicability": "through 2027-03-31",
+      "verified": "2026-10-28",
+      "published": "2021-12-10",
+      "notes": "標準・許容表は補助資料であり設問指定が優先。勘定科目表掲載だけで出題対象と推定しない。"
+    },
+    {
+      "id": "b3-accounts2027",
+      "title": "商業簿記標準・許容勘定科目表：2027年度確定版",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027kamokuhyo_fixed.pdf",
+      "applicability": "from 2027-04-01",
+      "verified": "2026-10-28",
+      "published": "2026-07-31",
+      "notes": "科目名・許容表記を年度別に確認。2026年度へ先取りして強制しない。"
+    },
+    {
+      "id": "b3-netqa",
+      "title": "2級・3級ネット試験Q&A",
+      "url": "https://www.kentei.ne.jp/kaijyo-qa",
+      "applicability": "current",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "仕訳科目プルダウン、数値・科目名入力、問題間移動、期限で終了。ネット・統一は範囲と水準と合格基準が共通。"
+    },
+    {
+      "id": "b3-samples",
+      "title": "3級サンプル問題一覧",
+      "url": "https://www.kentei.ne.jp/bookkeeping/sample/sample_3",
+      "applicability": "samples published 2024..2026",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "著作権JCCI、無断転載・無断営利利用を禁止。構成の確認に限定し、数値だけ置換する模作を行わない。"
+    },
+    {
+      "id": "b3-sample2026-journal",
+      "title": "第1問サンプル5：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2026/04/3級_第1問_サンプル5_問題.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "15取引。複合仕訳を含み、科目選択と金額を借貸両側へ記入。"
+    },
+    {
+      "id": "b3-sample2026-journal-answer",
+      "title": "第1問サンプル5：答案",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2026/04/3級_第1問_サンプル5_答案.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "15取引、各行借貸4行の記入欄。採点点数の記載はない。"
+    },
+    {
+      "id": "b3-sample2026-accounts",
+      "title": "第2問(1)サンプル5：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2026/04/3級_第2問（1）_サンプル5_問題.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "未払利息と支払利息の勘定記入。2期にまたがる取引、開始記入、決算と翌期開始が必要。"
+    },
+    {
+      "id": "b3-sample2026-assets",
+      "title": "第2問(2)サンプル5：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2026/04/3級_第2問（2）_サンプル5_問題.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "複数資産台帳の欠落額と、仮定した売却日における売却損益。"
+    },
+    {
+      "id": "b3-sample2026-statements",
+      "title": "第3問サンプル5：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2026/04/3級_第3問_サンプル5_問題.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "決算整理前試算表と10調整から貸借対照表・損益計算書。金額を転載せず手続負荷を参照。"
+    },
+    {
+      "id": "b3-sample-inventory",
+      "title": "第2問(2)サンプル1：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2024/04/3級_第2問（2）_サンプル1_問題.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "仕入帳・売上帳から移動平均の商品有高帳、売上・売上総利益。"
+    },
+    {
+      "id": "b3-sample-books",
+      "title": "第2問(2)サンプル2：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2024/04/3級_第2問（2）_サンプル2_問題.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "取引が記録されるすべての補助簿を選択する。1科目の認識だけではない。"
+    },
+    {
+      "id": "b3-sample-subsidiary",
+      "title": "第2問(2)サンプル3：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2024/04/3級_第2問（2）_サンプル3_問題.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "総勘定元帳と相手先別買掛金元帳の空欄・照合。"
+    },
+    {
+      "id": "b3-sample-worksheet",
+      "title": "第3問サンプル2：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2025/03/3Q_3_sample2_question.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "精算表を作成。未処理・仮払精算・過不足・借越・引当・棚卸・償却等を統合。"
+    },
+    {
+      "id": "b3-sample-taxcapital",
+      "title": "第2問(1)サンプル1：問題",
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2025/03/3Q_21_sample1_question.pdf",
+      "applicability": "2026 format reference only",
+      "verified": "2026-10-28",
+      "published": null,
+      "notes": "配当・利益準備金・法人税計上・損益と利益剰余金の勘定記入。"
+    }
+  ],
+  "policy": "Original paraphrases and tasks only; do not reproduce sample text, figures, layouts or answer sheets."
+}

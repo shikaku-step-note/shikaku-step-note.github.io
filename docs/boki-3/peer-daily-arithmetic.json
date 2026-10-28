@@ -1,0 +1,589 @@
+{
+  "reviewed": "2026-10-28",
+  "reviewer": "independent AI agent; not qualification holder or human pilot",
+  "numericQuestions": [
+    {
+      "id": "b3x-cash-q07",
+      "expression": "47000+2650+23000",
+      "expected": 72650
+    },
+    {
+      "id": "b3x-cash-q08",
+      "expression": "19000+36000-22700",
+      "expected": 32300
+    },
+    {
+      "id": "b3x-cash-q09",
+      "expression": "31500-24000+48500",
+      "expected": 56000
+    },
+    {
+      "id": "b3x-cash-q10",
+      "expression": "12000+3000+8000",
+      "expected": 23000
+    },
+    {
+      "id": "b3x-cash-q14",
+      "expression": "37000+24000+19000-6400-50000",
+      "expected": 23600
+    },
+    {
+      "id": "b3x-cash-shortage-q08",
+      "expression": "93000-86400",
+      "expected": 6600
+    },
+    {
+      "id": "b3x-cash-shortage-q09",
+      "expression": "9300-3600-2400",
+      "expected": 3300
+    },
+    {
+      "id": "b3x-cash-shortage-q10",
+      "expression": "7800-2300-4100",
+      "expected": 1400
+    },
+    {
+      "id": "b3x-cash-shortage-q11",
+      "expression": "4500+1600",
+      "expected": 6100
+    },
+    {
+      "id": "b3x-petty-cash-q07",
+      "expression": "28000-2400-3100-4500",
+      "expected": 18000
+    },
+    {
+      "id": "b3x-petty-cash-q08",
+      "expression": "32000-21300",
+      "expected": 10700
+    },
+    {
+      "id": "b3x-petty-cash-q09",
+      "expression": "900+1400+2100",
+      "expected": 4400
+    },
+    {
+      "id": "b3x-petty-cash-q10",
+      "expression": "5600+29000-24000",
+      "expected": 10600
+    },
+    {
+      "id": "b3x-petty-cash-q11",
+      "expression": "40000-12800",
+      "expected": 27200
+    },
+    {
+      "id": "b3x-bank-q07",
+      "expression": "160000+75000-118000",
+      "expected": 117000
+    },
+    {
+      "id": "b3x-bank-q08",
+      "expression": "62000-31000-18000",
+      "expected": 13000
+    },
+    {
+      "id": "b3x-bank-q09",
+      "expression": "90000+65000-330",
+      "expected": 154670
+    },
+    {
+      "id": "b3x-bank-q10",
+      "expression": "40000-25000",
+      "expected": 15000
+    },
+    {
+      "id": "b3x-bank-q14",
+      "expression": "120000+30000-47000",
+      "expected": 103000
+    },
+    {
+      "id": "b3x-expenses-q07",
+      "expression": "5600+8200+60000",
+      "expected": 73800
+    },
+    {
+      "id": "b3x-expenses-q08",
+      "expression": "22000",
+      "expected": 22000
+    },
+    {
+      "id": "b3x-expenses-q09",
+      "expression": "38000+330",
+      "expected": 38330
+    },
+    {
+      "id": "b3x-expenses-q10",
+      "expression": "25000-19800",
+      "expected": 5200
+    },
+    {
+      "id": "b3x-expenses-q11",
+      "expression": "17000",
+      "expected": 17000
+    },
+    {
+      "id": "b3x-payroll-q07",
+      "expression": "295000-9600-36400",
+      "expected": 249000
+    },
+    {
+      "id": "b3x-payroll-q08",
+      "expression": "198000+6500+27500",
+      "expected": 232000
+    },
+    {
+      "id": "b3x-payroll-q09",
+      "expression": "270000+35000",
+      "expected": 305000
+    },
+    {
+      "id": "b3x-payroll-q10",
+      "expression": "11000+18000-15000",
+      "expected": 14000
+    },
+    {
+      "id": "b3x-payroll-q11",
+      "expression": "260000-7000-32000-6000",
+      "expected": 215000
+    },
+    {
+      "id": "b3x-purchases-q07",
+      "expression": "75*680",
+      "expected": 51000
+    },
+    {
+      "id": "b3x-purchases-q08",
+      "expression": "84000-19000",
+      "expected": 65000
+    },
+    {
+      "id": "b3x-purchases-q09",
+      "expression": "36000+58000-61000",
+      "expected": 33000
+    },
+    {
+      "id": "b3x-purchases-q10",
+      "expression": "21000+39000+62000",
+      "expected": 122000
+    },
+    {
+      "id": "b3x-purchases-q11",
+      "expression": "31500/750",
+      "expected": 42.0
+    },
+    {
+      "id": "b3x-sales-q07",
+      "expression": "45*820",
+      "expected": 36900
+    },
+    {
+      "id": "b3x-sales-q08",
+      "expression": "84000-51000",
+      "expected": 33000
+    },
+    {
+      "id": "b3x-sales-q09",
+      "expression": "52000+89000-76000",
+      "expected": 65000
+    },
+    {
+      "id": "b3x-sales-q10",
+      "expression": "27000+73000",
+      "expected": 100000
+    },
+    {
+      "id": "b3x-sales-q11",
+      "expression": "110000-18000-32000",
+      "expected": 60000
+    },
+    {
+      "id": "b3x-incidental-q07",
+      "expression": "84000+3600",
+      "expected": 87600
+    },
+    {
+      "id": "b3x-incidental-q08",
+      "expression": "87600/120",
+      "expected": 730.0
+    },
+    {
+      "id": "b3x-incidental-q09",
+      "expression": "92000-2800",
+      "expected": 89200
+    },
+    {
+      "id": "b3x-incidental-q10",
+      "expression": "88000+1900",
+      "expected": 89900
+    },
+    {
+      "id": "b3x-incidental-q11",
+      "expression": "66000+2400",
+      "expected": 68400
+    },
+    {
+      "id": "b3x-returns-q07",
+      "expression": "12*450",
+      "expected": 5400
+    },
+    {
+      "id": "b3x-returns-q08",
+      "expression": "5*1100",
+      "expected": 5500
+    },
+    {
+      "id": "b3x-returns-q09",
+      "expression": "93000-8500",
+      "expected": 84500
+    },
+    {
+      "id": "b3x-returns-q10",
+      "expression": "41000+86000-5000-73000",
+      "expected": 49000
+    },
+    {
+      "id": "b3x-returns-q11",
+      "expression": "70-6-45+3",
+      "expected": 22
+    },
+    {
+      "id": "b3x-fifo-q01",
+      "expression": "20*400+5*500",
+      "expected": 10500
+    },
+    {
+      "id": "b3x-fifo-q02",
+      "expression": "25*500",
+      "expected": 12500
+    },
+    {
+      "id": "b3x-fifo-q03",
+      "expression": "12*600+18*650+5*700",
+      "expected": 22400
+    },
+    {
+      "id": "b3x-fifo-q04",
+      "expression": "20*800+20*750",
+      "expected": 31000
+    },
+    {
+      "id": "b3x-fifo-q05",
+      "expression": "(30-4-5)*600",
+      "expected": 12600
+    },
+    {
+      "id": "b3x-fifo-q06",
+      "expression": "3*520",
+      "expected": 1560
+    },
+    {
+      "id": "b3x-fifo-q07",
+      "expression": "68000-43500",
+      "expected": 24500
+    },
+    {
+      "id": "b3x-fifo-q08",
+      "expression": "18+22-28",
+      "expected": 12
+    },
+    {
+      "id": "b3x-moving-average-q01",
+      "expression": "(10*400+30*600)/40",
+      "expected": 550.0
+    },
+    {
+      "id": "b3x-moving-average-q02",
+      "expression": "15*550",
+      "expected": 8250
+    },
+    {
+      "id": "b3x-moving-average-q03",
+      "expression": "22000-15*550",
+      "expected": 13750
+    },
+    {
+      "id": "b3x-moving-average-q04",
+      "expression": "(13750+25*650)/50",
+      "expected": 600.0
+    },
+    {
+      "id": "b3x-moving-average-q05",
+      "expression": "(20*600+4*450)/24",
+      "expected": 575.0
+    },
+    {
+      "id": "b3x-moving-average-q06",
+      "expression": "(18000-6*700)/24",
+      "expected": 575.0
+    },
+    {
+      "id": "b3x-moving-average-q07",
+      "expression": "433",
+      "expected": 433
+    },
+    {
+      "id": "b3x-moving-average-q08",
+      "expression": "5200-433*5",
+      "expected": 3035
+    },
+    {
+      "id": "b3x-moving-average-q09",
+      "expression": "(5*400+5*600)/10",
+      "expected": 500.0
+    },
+    {
+      "id": "b3x-moving-average-q10",
+      "expression": "55000-34700",
+      "expected": 20300
+    },
+    {
+      "id": "b3x-cash-review-1",
+      "expression": "28000+1850+14000",
+      "expected": 43850
+    },
+    {
+      "id": "b3x-cash-review-3",
+      "expression": "35000+58000-27600",
+      "expected": 65400
+    },
+    {
+      "id": "b3x-cash-shortage-review-3",
+      "expression": "8600-5200-1100",
+      "expected": 2300
+    },
+    {
+      "id": "b3x-petty-cash-review-3",
+      "expression": "35000-11200+7000",
+      "expected": 30800
+    },
+    {
+      "id": "b3x-bank-review-3",
+      "expression": "84000-28000-330",
+      "expected": 55670
+    },
+    {
+      "id": "b3x-payroll-review-1",
+      "expression": "224000+8500+32500+5000",
+      "expected": 270000
+    },
+    {
+      "id": "b3x-purchases-review-3",
+      "expression": "54000+82000-46000+13000",
+      "expected": 103000
+    },
+    {
+      "id": "b3x-sales-review-3",
+      "expression": "33000+95000-47000",
+      "expected": 81000
+    },
+    {
+      "id": "b3x-incidental-review-3",
+      "expression": "68000-2300",
+      "expected": 65700
+    },
+    {
+      "id": "b3x-returns-review-3",
+      "expression": "39000+71000-9000-64000",
+      "expected": 37000
+    },
+    {
+      "id": "b3x-fifo-review-1",
+      "expression": "16*700+10*800",
+      "expected": 19200
+    },
+    {
+      "id": "b3x-fifo-review-2",
+      "expression": "6*800+10*850",
+      "expected": 13300
+    },
+    {
+      "id": "b3x-moving-average-review-1",
+      "expression": "(15*600+25*680)/40",
+      "expected": 650.0
+    },
+    {
+      "id": "b3x-moving-average-review-2",
+      "expression": "(20*650+20*750)/40",
+      "expected": 700.0
+    },
+    {
+      "id": "b3x-moving-average-review-3",
+      "expression": "(24*700+6*600)/30",
+      "expected": 680.0
+    }
+  ],
+  "bodyChecks": [
+    {
+      "id": "fifo-worked1",
+      "events": [
+        [
+          "in",
+          20,
+          500
+        ],
+        [
+          "in",
+          30,
+          600
+        ],
+        [
+          "out",
+          35,
+          0
+        ]
+      ],
+      "result": {
+        "quantity": 15,
+        "out": 19000,
+        "ending": 9000,
+        "layers": [
+          [
+            15,
+            600
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fifo-worked2",
+      "events": [
+        [
+          "in",
+          10,
+          400
+        ],
+        [
+          "in",
+          20,
+          450
+        ],
+        [
+          "out",
+          18,
+          0
+        ],
+        [
+          "in",
+          25,
+          480
+        ],
+        [
+          "out",
+          22,
+          0
+        ]
+      ],
+      "result": {
+        "quantity": 15,
+        "out": 17800,
+        "ending": 7200,
+        "layers": [
+          [
+            15,
+            480
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fifo-self",
+      "events": [
+        [
+          "in",
+          15,
+          800
+        ],
+        [
+          "in",
+          25,
+          760
+        ],
+        [
+          "out",
+          22,
+          0
+        ],
+        [
+          "in",
+          20,
+          720
+        ],
+        [
+          "out",
+          18,
+          0
+        ]
+      ],
+      "result": {
+        "quantity": 20,
+        "out": 31000,
+        "ending": 14400,
+        "layers": [
+          [
+            20,
+            720
+          ]
+        ]
+      }
+    },
+    {
+      "id": "moving-worked2",
+      "out": 26500,
+      "ending": 10000,
+      "quantity": 20
+    },
+    {
+      "id": "cash-final",
+      "expression": "26000+31000+40000-7500-55000",
+      "expected": 34500
+    },
+    {
+      "id": "cash-shortage-cross",
+      "expression": "6000-4000+1500",
+      "expected": 3500
+    },
+    {
+      "id": "petty-final",
+      "expression": "36000-(1700+4800+2900)",
+      "expected": 26600
+    },
+    {
+      "id": "bank-final",
+      "expression": "-18000+50000-44000",
+      "expected": -12000
+    },
+    {
+      "id": "expenses-final",
+      "expression": "150000-9200-23000-40000+16000",
+      "expected": 93800
+    },
+    {
+      "id": "payroll-final",
+      "expression": "310000-10000-39000",
+      "expected": 261000
+    },
+    {
+      "id": "purchase-final",
+      "expression": "80*900-12000-45000",
+      "expected": 15000
+    },
+    {
+      "id": "sales-final",
+      "expression": "96000-12000-34000-30000",
+      "expected": 20000
+    },
+    {
+      "id": "returns-finalqty",
+      "expression": "50-5-30+2",
+      "expected": 17
+    },
+    {
+      "id": "moving-finalprofit",
+      "expression": "45*1000-(25*660+20*700)",
+      "expected": 14500
+    }
+  ],
+  "allReadQuestions": 205,
+  "journals": 86
+}

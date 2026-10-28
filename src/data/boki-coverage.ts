@@ -1,4 +1,5 @@
 import beginnerCoverage from './boki-beginner-coverage.json';
+import boki3Coverage from './boki3-coverage.json';
 import costCoverage from './cost-beginner-coverage.json';
 export interface CoverageRow {
   official: string;
@@ -13,64 +14,30 @@ const row = (official: string, lessons: string[], depth: string, note: string): 
   note,
 });
 export const bokiCoverage: Record<string, CoverageRow[]> = {
-  'boki-beginner': beginnerCoverage.map(r => row(r.competency, r.lessons, '詳しい本文・例題・独立練習', '2026年度の範囲。確認方法と模試の制約は専用対応表に記載。')),
-  'cost-beginner': costCoverage.map(r=>row(r.competency,r.lessons,'説明・例題・独立練習・総合確認','現行の公式範囲との対応と確認方法は専用の対応表を参照。')),
-  'boki-3': [
+  'boki-beginner': beginnerCoverage.map((r) =>
     row(
-      '商業 第一：基本原理・取引・勘定',
-      ['b3-books', 'b3-statements'],
-      '初級を前提に復習',
-      '仕訳の初学者は簿記初級から進む学習順です。',
+      r.competency,
+      r.lessons,
+      '詳しい本文・例題・独立練習',
+      '2026年度の範囲。確認方法と模試の制約は専用対応表に記載。',
     ),
+  ),
+  'cost-beginner': costCoverage.map((r) =>
     row(
-      '商業 第二1：現金預金・現金過不足・小口現金',
-      ['b3-cash'],
-      '例題と数値チェック',
-      '口座別管理・当座借越も補足します。',
+      r.competency,
+      r.lessons,
+      '説明・例題・独立練習・総合確認',
+      '現行の公式範囲との対応と確認方法は専用の対応表を参照。',
     ),
+  ),
+  'boki-3': boki3Coverage.map((r) =>
     row(
-      '商業 第二3〜6：掛取引・債権債務・手形・電子記録・クレジット',
-      ['b3-credit'],
-      '基本例・仕訳チェック',
-      '複合取引は追加の反復演習が必要です。',
+      r.competency,
+      r.lessons,
+      '説明・例題・独立練習・総合確認',
+      '2026年度の現行範囲。詳しい技能対応と将来改定は専用対応表を参照。',
     ),
-    row(
-      '商業 第二9：商品売買・商品有高帳',
-      ['b3-inventory'],
-      '三分法・先入先出・移動平均',
-      '返品・取得原価の補足例もあります。',
-    ),
-    row(
-      '商業 第二12：有形固定資産',
-      ['b3-assets'],
-      '取得・定額償却・月割・売却',
-      '台帳・廃棄・貯蔵品も説明します。',
-    ),
-    row(
-      '商業 第二7・20〜21：貸倒・収益費用・税金',
-      ['b3-accrual', 'b3-adjustments'],
-      '整理仕訳と計算例',
-      '税務申告や個別の税率判断は扱いません。',
-    ),
-    row(
-      '商業 第三：試算表・精算表・整理・締切・財務諸表',
-      ['b3-books', 'b3-statements'],
-      '作業手順・数値例',
-      '長い資料から一式を作る問題の量は限定的です。',
-    ),
-    row(
-      '商業 第四：株式会社の基本・剰余金配当等',
-      ['b3-adjustments'],
-      '基本例',
-      '3級の範囲と2級の準備金算定を区別します。',
-    ),
-    row(
-      '商業 第二23：未決算（損害保険等）',
-      ['b3-credit'],
-      '未確定から確定・入金の例とチェック',
-      '帳簿価額と確定保険金の単純例です。実契約の査定は扱いません。',
-    ),
-  ],
+  ),
   'boki-2': [
     row(
       '商業 第二1〜6：銀行照合・有価証券・外貨・債権譲渡',

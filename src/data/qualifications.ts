@@ -3,6 +3,7 @@ import { zeirishiSubjects, zeirishiReviewed, zeirishiOutline } from './zeirishi'
 import { zeirishiDeepLessons } from './zeirishi-expanded';
 import { beginnerReviewed } from './boki-beginner';
 import { costReviewed, costLessonIds } from './cost-beginner';
+import { boki3Reviewed, boki3LessonIds, boki3Groups } from './boki3';
 export interface Qualification {
   id: string;
   name: string;
@@ -94,20 +95,28 @@ export const qualifications: Qualification[] = [
       color: 'blue',
       icon: 'book',
       intro: '取引と数字の意味を、例題から一つずつ。',
-      description: c.id === 'boki-beginner'
-        ? '日商簿記初級の2026年度範囲を、24の詳しいレッスンと独自の例題・理解度チェックで学びます。用語・復習テストと40分の総合模試2回を無料で利用できます。'
-        : c.id === 'cost-beginner'
-          ? `原価の分類から在庫と利益、CVP・予算実績差異まで、${costLessonIds.length}レッスンの説明と例題で順に学びます。用語・総合確認と、異なる資料を使う40分模試2回を無料で利用できます。`
-          : `${c.name}を独自の解説・例題・理解度チェック・用語確認で学びます。適用範囲と教材の制約は対応表で確認できます。`,
+      description:
+        c.id === 'boki-beginner'
+          ? '日商簿記初級の2026年度範囲を、24の詳しいレッスンと独自の例題・理解度チェックで学びます。用語・復習テストと40分の総合模試2回を無料で利用できます。'
+          : c.id === 'cost-beginner'
+            ? `原価の分類から在庫と利益、CVP・予算実績差異まで、${costLessonIds.length}レッスンの説明と例題で順に学びます。用語・総合確認と、異なる資料を使う40分模試2回を無料で利用できます。`
+            : `${c.name}を独自の解説・例題・理解度チェック・用語確認で学びます。適用範囲と教材の制約は対応表で確認できます。`,
       audience: ['取引の理由を理解しながら学びたい方', '例題を紙と電卓で確かめたい方'],
-      outcome: c.id === 'cost-beginner'
-        ? '原価が利益へつながる流れを説明し、資料の条件に合う計算方法を選ぶ練習をします。'
-        : '仕訳・計算の手順を説明し、条件に合う処理を選ぶ練習をします。',
+      outcome:
+        c.id === 'cost-beginner'
+          ? '原価が利益へつながる流れを説明し、資料の条件に合う計算方法を選ぶ練習をします。'
+          : '仕訳・計算の手順を説明し、条件に合う処理を選ぶ練習をします。',
       prerequisite: c.prerequisite,
       groups: c.groups,
-      official: c.id === 'boki-beginner' ? 'https://www.kentei.ne.jp/bookkeeping/class-s/effect' : c.id === 'cost-beginner' ? 'https://www.kentei.ne.jp/bookkeeping/ca/effect' : 'https://www.kentei.ne.jp/bookkeeping',
+      official:
+        c.id === 'boki-beginner'
+          ? 'https://www.kentei.ne.jp/bookkeeping/class-s/effect'
+          : c.id === 'cost-beginner'
+            ? 'https://www.kentei.ne.jp/bookkeeping/ca/effect'
+            : 'https://www.kentei.ne.jp/bookkeeping',
       officialName: '日本商工会議所：簿記',
-      reviewed: c.id === 'boki-beginner' ? beginnerReviewed : c.id === 'cost-beginner' ? costReviewed : bokiReviewed,
+      reviewed:
+        c.id === 'boki-beginner' ? beginnerReviewed : c.id === 'cost-beginner' ? costReviewed : bokiReviewed,
       scope:
         c.id === 'boki-beginner'
           ? '2026年度の簿記初級を対象に、基本原理、期中取引、月次集計を順に学ぶ試験学習コースです。決算整理は対象外です。2027年4月施行の改定版とは分け、詳しい対応と確認記録を公開しています。難易度校正や専門家監修を経た公式教材ではありません。'
@@ -150,18 +159,18 @@ export const qualifications: Qualification[] = [
     color: 'blue',
     icon: 'book',
     intro: 'お金の動きを、読める力に。',
-    description:
-      '2026年度の商業簿記を、取引の記録から決算まで順番に学びます。用語確認と総合演習で、処理の理由も確かめます。',
+    description: `2026年度の商業簿記を、${boki3LessonIds.length}レッスンの説明と例題で順に学びます。科目と金額を入力する仕訳、帳簿、決算の練習と、異なる資料を使う60分模試2回に無料で取り組めます。`,
     audience: ['簿記を初めて学ぶ方', '経理や会計の基礎を知りたい方', '事業のお金の流れを理解したい方'],
-    outcome: '基本的な取引を左右に分けて記録し、貸借対照表と損益計算書の役割を説明できるようになります。',
+    outcome:
+      '取引の条件から仕訳を考え、帳簿に転記し、決算整理を経て勘定式の決算書を作る練習をします。金額の根拠と照合方法も確かめます。',
     prerequisite:
       '特別な会計知識は不要です。四則計算を使います。紙とペンがあると、仕訳の練習がしやすくなります。',
-    groups: ['取引を仕訳にする', '帳簿と決算をつなぐ'],
+    groups: boki3Groups,
     official: 'https://www.kentei.ne.jp/bookkeeping/class3',
     officialName: '日本商工会議所：簿記3級',
-    reviewed: bokiReviewed,
+    reviewed: boki3Reviewed,
     scope:
-      '2026年度適用の商業簿記を対象とする独自の基礎コースです。旧サンプルは別に保管し、現行レッスンの完了数に加えません。対応表で扱う範囲と制約をご確認ください。',
+      '2026年度適用の商業簿記を対象に、取引の記録から決算書と帳簿の締切まで学びます。7つのユニットは当サイトの学習順です。公表済みの2027年度改定は別に整理し、現行教材に混在させていません。詳しい対象と公式資料は対応表で確認できます。',
   },
   {
     id: 'fp-3',
@@ -202,7 +211,10 @@ const displayOrder = [
 ];
 qualifications.sort((a, b) => displayOrder.indexOf(a.id) - displayOrder.indexOf(b.id));
 export const qualificationById = (id: string) => qualifications.find((q) => q.id === id)!;
-export const qualificationLabel = (q: Qualification) => ['boki-beginner','cost-beginner'].includes(q.id) ? '詳しい試験学習コース' : q.status === 'course' ? '基礎コース' : '入門サンプル';
-export const availabilityText = qualifications
-  .map((q) => `${q.name}（${qualificationLabel(q)}）`)
-  .join('、');
+export const qualificationLabel = (q: Qualification) =>
+  ['boki-beginner', 'cost-beginner', 'boki-3'].includes(q.id)
+    ? '詳しい試験学習コース'
+    : q.status === 'course'
+      ? '基礎コース'
+      : '入門サンプル';
+export const availabilityText = qualifications.map((q) => `${q.name}（${qualificationLabel(q)}）`).join('、');

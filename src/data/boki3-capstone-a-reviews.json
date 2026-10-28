@@ -1,0 +1,94 @@
+{
+  "unit-7": [
+    {
+      "id": "b3x-case-a-review-1",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "売掛金の整理前残高164,000円に、未記帳回収14,000円がありました。修正後売掛金へ2%の引当金を設定し、既存引当金は貸方1,900円です。引当金追加の仕訳を入力してください。",
+      "explanation": "先に売掛金を150,000円へ直します。必要額3,000円から既存1,900円を引き、1,100円だけ追加します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売掛金",
+          "普通預金",
+          "貸倒引当金",
+          "貸倒引当金繰入",
+          "貸倒損失"
+        ],
+        "debits": [
+          {
+            "account": "貸倒引当金繰入",
+            "amount": 1100
+          }
+        ],
+        "credits": [
+          {
+            "account": "貸倒引当金",
+            "amount": 1100
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貸倒引当金繰入\",\"amount\":1100}],\"credits\":[{\"account\":\"貸倒引当金\",\"amount\":1100}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-case-a-review-2",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "精算表で繰越商品は試算表借方43,000円、修正貸方43,000円、修正借方37,000円です。損益欄へ送る金額ではなく、貸借借方欄へ送る商品残高を円単位で求めてください。",
+      "explanation": "期首残高が消え、期末商品37,000円だけが貸借借方へ残ります。期首と期末を合計しません。",
+      "input": "number",
+      "accepted": [
+        "37000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-case-a-review-3",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "別会社の損益勘定は借方31,500円の残高です。当期損失を利益剰余金へ振り替える仕訳を入力してください。",
+      "explanation": "損失は利益剰余金を減らします。損益の借方残高を貸方で消す方向を確認します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "損益",
+          "現金",
+          "繰越利益剰余金",
+          "資本金"
+        ],
+        "debits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 31500
+          }
+        ],
+        "credits": [
+          {
+            "account": "損益",
+            "amount": 31500
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越利益剰余金\",\"amount\":31500}],\"credits\":[{\"account\":\"損益\",\"amount\":31500}]}"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ]
+}

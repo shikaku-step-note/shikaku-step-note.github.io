@@ -1,0 +1,108 @@
+{
+  "qualification": "boki-3",
+  "version": "boki3-2026-v2",
+  "reviewed": "2026-10-28",
+  "applicability": "2026年度（2027年3月31日まで）。2022年度版区分表、2026年4月1日施行法令等。公表済み2027年度改定は別。",
+  "units": [
+    {
+      "title": "取引を仕訳と帳簿につなぐ",
+      "lessons": [
+        "b3x-foundations",
+        "b3x-journal",
+        "b3x-ledger",
+        "b3x-trial-balance",
+        "b3x-corrections",
+        "b3x-vouchers",
+        "b3-books"
+      ]
+    },
+    {
+      "title": "現金預金と日々の収支",
+      "lessons": [
+        "b3x-cash",
+        "b3x-cash-shortage",
+        "b3x-petty-cash",
+        "b3x-bank",
+        "b3x-expenses",
+        "b3x-payroll",
+        "b3-cash"
+      ]
+    },
+    {
+      "title": "商品売買と在庫の記録",
+      "lessons": [
+        "b3x-purchases",
+        "b3x-sales",
+        "b3x-incidental",
+        "b3x-returns",
+        "b3x-fifo",
+        "b3x-moving-average",
+        "b3-inventory"
+      ]
+    },
+    {
+      "title": "代金決済と債権・債務",
+      "lessons": [
+        "b3x-receivables",
+        "b3x-card-vouchers",
+        "b3x-bills",
+        "b3x-electronic",
+        "b3x-loans",
+        "b3x-advances",
+        "b3x-clearing",
+        "b3x-deposits",
+        "b3-credit"
+      ]
+    },
+    {
+      "title": "固定資産・純資産・税金",
+      "lessons": [
+        "b3x-asset-acquisition",
+        "b3x-depreciation",
+        "b3x-asset-sale",
+        "b3x-supplies",
+        "b3x-capital",
+        "b3x-dividends",
+        "b3x-corporate-tax",
+        "b3x-consumption-tax",
+        "b3-assets"
+      ]
+    },
+    {
+      "title": "決算整理と期間の対応",
+      "lessons": [
+        "b3x-closing-inventory",
+        "b3x-bad-debt",
+        "b3x-expense-accrual",
+        "b3x-revenue-accrual",
+        "b3x-reversal",
+        "b3-accrual",
+        "b3x-closing-adjustments",
+        "b3-adjustments"
+      ]
+    },
+    {
+      "title": "決算書と帳簿の締切・総合演習",
+      "lessons": [
+        "b3x-adjusted-trial",
+        "b3x-worksheet",
+        "b3x-profit-loss",
+        "b3x-balance-sheet",
+        "b3x-closing-books",
+        "b3-statements",
+        "b3x-closing-case-a",
+        "b3x-closing-case-b"
+      ]
+    }
+  ],
+  "retainedLessonIds": [
+    "b3-books",
+    "b3-cash",
+    "b3-inventory",
+    "b3-credit",
+    "b3-assets",
+    "b3-accrual",
+    "b3-adjustments",
+    "b3-statements"
+  ]
+}

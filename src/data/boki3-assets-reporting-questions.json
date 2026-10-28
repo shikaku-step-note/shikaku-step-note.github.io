@@ -1,0 +1,3755 @@
+{
+  "b3x-asset-acquisition": [
+    {
+      "prompt": "営業用の机90,000円を購入し、代金は翌月払いとした。消費税は考えない。仕訳しなさい。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "備品",
+          "未払金",
+          "仕入",
+          "買掛金",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 90000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払金",
+            "amount": 90000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"備品\",\"amount\":90000}],\"credits\":[{\"account\":\"未払金\",\"amount\":90000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "営業に使用する机は備品。商品仕入れ以外の後払いなので未払金を使う。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-asset-acquisition-q01",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "家具店が販売用の机90,000円を掛けで仕入れた。三分法、消費税なし。仕訳しなさい。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "買掛金",
+          "備品",
+          "未払金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 90000
+          }
+        ],
+        "credits": [
+          {
+            "account": "買掛金",
+            "amount": 90000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":90000}],\"credits\":[{\"account\":\"買掛金\",\"amount\":90000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "販売用の商品なので仕入、通常の商品掛け代金は買掛金。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-asset-acquisition-q02",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "営業用車両の本体660,000円、取得に必要な運賃24,000円、据付費6,000円。消費税なし。取得原価はいくらか。",
+      "input": "number",
+      "accepted": [
+        "690000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "660,000＋24,000＋6,000＝690,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-acquisition-q03",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品本体240,000円を未払とし、取得に必要な運賃8,000円は現金払いとした。消費税なし。取得時の仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "備品",
+          "未払金",
+          "現金",
+          "支払運賃",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 248000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払金",
+            "amount": 240000
+          },
+          {
+            "account": "現金",
+            "amount": 8000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"備品\",\"amount\":248000}],\"credits\":[{\"account\":\"未払金\",\"amount\":240000},{\"account\":\"現金\",\"amount\":8000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "取得額248,000円を一つの備品として計上し、決済を未払と現金に分ける。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-acquisition-q04",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "車両本体500,000円、取得に必要な運賃15,000円を全額普通預金から払った。消費税なし。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "車両運搬具",
+          "普通預金",
+          "支払運賃",
+          "備品",
+          "未払金"
+        ],
+        "debits": [
+          {
+            "account": "車両運搬具",
+            "amount": 515000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 515000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"車両運搬具\",\"amount\":515000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":515000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "使用できる状態にする支出を合計し、500,000＋15,000＝515,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-acquisition-q05",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品の手付金60,000円を普通預金から支払った。引渡し前で、手付金は前払金で処理する。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前払金",
+          "普通預金",
+          "備品",
+          "未払金"
+        ],
+        "debits": [
+          {
+            "account": "前払金",
+            "amount": 60000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 60000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前払金\",\"amount\":60000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":60000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "引渡し前の支払いなので、この条件では前払金。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-acquisition-q06",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "本体300,000円の備品が届き、取得運賃9,000円と本体残額240,000円を普通預金から支払った。手付金60,000円は前払金計上済み。消費税なし。引渡し時の仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "備品",
+          "前払金",
+          "普通預金",
+          "支払運賃",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 309000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 60000
+          },
+          {
+            "account": "普通預金",
+            "amount": 249000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"備品\",\"amount\":309000}],\"credits\":[{\"account\":\"前払金\",\"amount\":60000},{\"account\":\"普通預金\",\"amount\":249000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "取得額309,000円。前払金60,000円を消し、今回の支払いは240,000＋9,000＝249,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-acquisition-q07",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得時に未払金へ計上した備品代金180,000円を普通預金から支払った。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未払金",
+          "普通預金",
+          "備品",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "未払金",
+            "amount": 180000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 180000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払金\",\"amount\":180000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":180000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "決済で消すのは未払金。備品の再計上はしない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-acquisition-q08",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品勘定の期首取得原価520,000円、当期取得248,000円と309,000円、売却なし。間接法で償却する。期末の備品勘定残高は。",
+      "input": "number",
+      "accepted": [
+        "1077000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "520,000＋248,000＋309,000＝1,077,000円。間接法の償却は取得原価を直接減らさない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-asset-acquisition-q09",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "固定資産台帳の備品A取得原価420,000円、B280,000円、C165,000円。ほかに備品はない。備品勘定の取得原価合計は。",
+      "input": "number",
+      "accepted": [
+        "865000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "420,000＋280,000＋165,000＝865,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-asset-acquisition-q10",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品本体210,000円と取得に必要な運賃7,000円を支払ったが、備品勘定には210,000円だけ記録した。備品勘定の不足額は。",
+      "input": "number",
+      "accepted": [
+        "7000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "取得額217,000円に対し210,000円なので7,000円不足。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-asset-acquisition-q11",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    },
+    {
+      "prompt": "営業用備品を320,000円で取得し、現金100,000円と未払金220,000円で記録した。その後未払金を80,000円支払った。残る未払金は。",
+      "input": "number",
+      "accepted": [
+        "140000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "220,000−80,000＝140,000円。備品の取得原価320,000円は変わらない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-asset-acquisition-q12",
+      "lesson": "b3x-asset-acquisition",
+      "field": "commercial"
+    }
+  ],
+  "b3x-depreciation": [
+    {
+      "prompt": "備品の取得原価840,000円、残存価額0円、耐用年数7年、定額法。通年使用時の年額は。",
+      "input": "number",
+      "accepted": [
+        "120000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "840,000÷7＝120,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-depreciation-q01",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価550,000円、残存価額50,000円、耐用年数5年、定額法。年額は。",
+      "input": "number",
+      "accepted": [
+        "100000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "（550,000−50,000）÷5＝100,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-depreciation-q02",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "本体450,000円と取得運賃30,000円で備品を取得。残存価額0円、耐用年数8年。定額法の年額は。",
+      "input": "number",
+      "accepted": [
+        "60000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "取得原価480,000÷8＝60,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-depreciation-q03",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品の当期減価償却費48,000円を間接法で記録する。累計額の科目名は減価償却累計額とする。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "減価償却費",
+          "減価償却累計額",
+          "備品",
+          "現金",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "減価償却費",
+            "amount": 48000
+          }
+        ],
+        "credits": [
+          {
+            "account": "減価償却累計額",
+            "amount": 48000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"減価償却費\",\"amount\":48000}],\"credits\":[{\"account\":\"減価償却累計額\",\"amount\":48000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "当期の費用を借方、取得原価を控除する累計額を貸方。現金は使わない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-depreciation-q04",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "4月〜翌年3月の会社。12月1日に360,000円の備品を取得・使用開始。残存価額0円、耐用年数6年、定額法・月割り。当期償却費は。",
+      "input": "number",
+      "accepted": [
+        "20000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "年額60,000円、12月〜3月は4か月。60,000×4÷12＝20,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-depreciation-q05",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "1月〜12月の会社。4月1日に720,000円の車両を取得・使用開始。残存価額0円、耐用年数6年、定額法・月割り。当期償却費は。",
+      "input": "number",
+      "accepted": [
+        "90000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "年額120,000円、4月〜12月は9か月。120,000×9÷12＝90,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-depreciation-q06",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "決算で必要な当期償却費は96,000円。月次で88,000円を計上済み。間接法、累計額科目は減価償却累計額。追加の仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "減価償却費",
+          "減価償却累計額",
+          "備品",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "減価償却費",
+            "amount": 8000
+          }
+        ],
+        "credits": [
+          {
+            "account": "減価償却累計額",
+            "amount": 8000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"減価償却費\",\"amount\":8000}],\"credits\":[{\"account\":\"減価償却累計額\",\"amount\":8000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "96,000−88,000＝8,000円だけ追加する。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-depreciation-q07",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品Aの通年償却費72,000円。Bは10月1日から3月決算まで使用し、年額48,000円を月割りする。他に資産なし。当期費用合計は。",
+      "input": "number",
+      "accepted": [
+        "96000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "A72,000＋B48,000×6÷12＝96,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-depreciation-q08",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価900,000円、期首累計額300,000円、当期償却費150,000円。売却等なし。期末帳簿価額は。",
+      "input": "number",
+      "accepted": [
+        "450000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "累計450,000円、帳簿価額900,000−450,000＝450,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-depreciation-q09",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価640,000円、期末帳簿価額400,000円。期末累計額は。",
+      "input": "number",
+      "accepted": [
+        "240000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "640,000−400,000＝240,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-depreciation-q10",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売却等なし。期首累計額160,000円、期末累計額240,000円。当期償却費は。",
+      "input": "number",
+      "accepted": [
+        "80000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "240,000−160,000＝80,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-depreciation-q11",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価630,000円、残存価額0円、通年償却年額90,000円。定額法の耐用年数は何年か。",
+      "input": "number",
+      "accepted": [
+        "7"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "630,000÷90,000＝7年。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-depreciation-q12",
+      "lesson": "b3x-depreciation",
+      "field": "commercial"
+    }
+  ],
+  "b3x-asset-sale": [
+    {
+      "prompt": "備品の取得原価540,000円、売却時累計額360,000円。代金205,000円で売却した。売却益はいくらか。",
+      "input": "number",
+      "accepted": [
+        "25000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "帳簿価額180,000円。205,000−180,000＝25,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-asset-sale-q01",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価420,000円、売却時累計額250,000円、売却代金150,000円。売却損はいくらか。",
+      "input": "number",
+      "accepted": [
+        "20000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "帳簿価額170,000円、代金との差20,000円が損。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-asset-sale-q02",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価300,000円、売却時累計額180,000円の備品を135,000円で売り、現金で受け取った。当期償却は記録済み。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "減価償却累計額",
+          "備品",
+          "固定資産売却益",
+          "固定資産売却損",
+          "売上"
+        ],
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 135000
+          },
+          {
+            "account": "減価償却累計額",
+            "amount": 180000
+          }
+        ],
+        "credits": [
+          {
+            "account": "備品",
+            "amount": 300000
+          },
+          {
+            "account": "固定資産売却益",
+            "amount": 15000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"現金\",\"amount\":135000},{\"account\":\"減価償却累計額\",\"amount\":180000}],\"credits\":[{\"account\":\"備品\",\"amount\":300000},{\"account\":\"固定資産売却益\",\"amount\":15000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "帳簿価額120,000円、売却益15,000円。原価と累計額を両方外す。",
+      "objectives": [
+        0,
+        1
+      ],
+      "id": "b3x-asset-sale-q03",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価480,000円、残存0円、耐用年数8年の備品を期首から6か月使って売却。定額法・月割りの当期償却費は。",
+      "input": "number",
+      "accepted": [
+        "30000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "480,000÷8×6÷12＝30,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-sale-q04",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価480,000円、期首累計額180,000円の備品を期首から6か月使い、280,000円を普通預金で受け取って売却。残存0、耐用8年、定額・月割り。当期償却30,000円を含め一つの仕訳にしなさい。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "普通預金",
+          "減価償却累計額",
+          "減価償却費",
+          "備品",
+          "固定資産売却益",
+          "固定資産売却損",
+          "売上"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 280000
+          },
+          {
+            "account": "減価償却累計額",
+            "amount": 180000
+          },
+          {
+            "account": "減価償却費",
+            "amount": 30000
+          }
+        ],
+        "credits": [
+          {
+            "account": "備品",
+            "amount": 480000
+          },
+          {
+            "account": "固定資産売却益",
+            "amount": 10000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":280000},{\"account\":\"減価償却累計額\",\"amount\":180000},{\"account\":\"減価償却費\",\"amount\":30000}],\"credits\":[{\"account\":\"備品\",\"amount\":480000},{\"account\":\"固定資産売却益\",\"amount\":10000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "売却時帳簿価額270,000円、益10,000円。一括仕訳の累計額は期首180,000円で当期費用30,000円と分ける。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-sale-q05",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品原価240,000円、売却日まで償却済みの累計額160,000円。代金70,000円は翌月受取。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未収入金",
+          "減価償却累計額",
+          "固定資産売却損",
+          "備品",
+          "売掛金",
+          "売上",
+          "固定資産売却益"
+        ],
+        "debits": [
+          {
+            "account": "未収入金",
+            "amount": 70000
+          },
+          {
+            "account": "減価償却累計額",
+            "amount": 160000
+          },
+          {
+            "account": "固定資産売却損",
+            "amount": 10000
+          }
+        ],
+        "credits": [
+          {
+            "account": "備品",
+            "amount": 240000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未収入金\",\"amount\":70000},{\"account\":\"減価償却累計額\",\"amount\":160000},{\"account\":\"固定資産売却損\",\"amount\":10000}],\"credits\":[{\"account\":\"備品\",\"amount\":240000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "帳簿価額80,000円に対し代金70,000円。未収入金と売却損を借方へ記入する。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-sale-q06",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品売却時に計上した未収入金70,000円が普通預金へ入金された。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "普通預金",
+          "未収入金",
+          "売上",
+          "固定資産売却益"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 70000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未収入金",
+            "amount": 70000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":70000}],\"credits\":[{\"account\":\"未収入金\",\"amount\":70000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "入金は債権の回収。売却損益や売上を再計上しない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-sale-q07",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価720,000円、前期末累計額240,000円。残存0、耐用6年、期首から9か月使って売却、月割り。当期償却後の帳簿価額は。",
+      "input": "number",
+      "accepted": [
+        "390000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "年額120,000、当期90,000。720,000−240,000−90,000＝390,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-asset-sale-q08",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品取得原価合計900,000円から、原価350,000円の資産を売却した。他の増減なし。売却後取得原価残高は。",
+      "input": "number",
+      "accepted": [
+        "550000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "900,000−350,000＝550,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-asset-sale-q09",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売却直前の備品累計額合計420,000円。売却対象の累計額150,000円。他の増減なし。売却後累計額残高は。",
+      "input": "number",
+      "accepted": [
+        "270000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "420,000−150,000＝270,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-asset-sale-q10",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価680,000円、売却時累計額440,000円、売却益35,000円。売却代金は。",
+      "input": "number",
+      "accepted": [
+        "275000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "帳簿価額240,000＋売却益35,000＝275,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-asset-sale-q11",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    },
+    {
+      "prompt": "取得原価560,000円、売却時累計額320,000円、売却損18,000円。売却代金は。",
+      "input": "number",
+      "accepted": [
+        "222000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "帳簿価額240,000−売却損18,000＝222,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-asset-sale-q12",
+      "lesson": "b3x-asset-sale",
+      "field": "commercial"
+    }
+  ],
+  "b3x-supplies": [
+    {
+      "prompt": "期首消耗品7,000円、当期購入49,000円、期末未使用12,000円。当期使用額は。",
+      "input": "number",
+      "accepted": [
+        "44000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "7,000＋49,000−12,000＝44,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-supplies-q01",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首なし。1箱1,200円の用紙を25箱購入し、期末に6箱残る。当期使用額は。",
+      "input": "number",
+      "accepted": [
+        "22800"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "使用19箱×1,200＝22,800円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-supplies-q02",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首9,000円、当期使用42,000円、期末未使用15,000円。購入額は。",
+      "input": "number",
+      "accepted": [
+        "48000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "使用42,000＋期末15,000−期首9,000＝48,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-supplies-q03",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首消耗品なし。当期購入30,000円は全額消耗品費で処理済み。期末未使用8,000円を消耗品へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "消耗品",
+          "消耗品費",
+          "現金",
+          "仕入"
+        ],
+        "debits": [
+          {
+            "account": "消耗品",
+            "amount": 8000
+          }
+        ],
+        "credits": [
+          {
+            "account": "消耗品費",
+            "amount": 8000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"消耗品\",\"amount\":8000}],\"credits\":[{\"account\":\"消耗品費\",\"amount\":8000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "費用のうち未使用部分を資産へ戻す。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-supplies-q04",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首消耗品6,000円、当期購入24,000円はいずれも消耗品勘定にある。期末未使用10,000円。使用分の整理仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "消耗品費",
+          "消耗品",
+          "現金",
+          "貯蔵品"
+        ],
+        "debits": [
+          {
+            "account": "消耗品費",
+            "amount": 20000
+          }
+        ],
+        "credits": [
+          {
+            "account": "消耗品",
+            "amount": 20000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"消耗品費\",\"amount\":20000}],\"credits\":[{\"account\":\"消耗品\",\"amount\":20000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "使用額6,000＋24,000−10,000＝20,000円を費用へ。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-supplies-q05",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期首再振替済みの消耗品費残高は58,000円。期末未使用消耗品14,000円を資産にする。他に調整なし。整理後費用は。",
+      "input": "number",
+      "accepted": [
+        "44000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "58,000−14,000＝44,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-supplies-q06",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前消耗品12,000円、現物による期末未使用17,000円。差額を消耗品費から振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "消耗品",
+          "消耗品費",
+          "現金",
+          "未払金"
+        ],
+        "debits": [
+          {
+            "account": "消耗品",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "消耗品費",
+            "amount": 5000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"消耗品\",\"amount\":5000}],\"credits\":[{\"account\":\"消耗品費\",\"amount\":5000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "目標17,000−既存12,000＝5,000円だけ追加する。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-supplies-q07",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "購入時資産法で、整理前消耗品46,000円、期末未使用19,000円。消耗品費へ振り替える額は。",
+      "input": "number",
+      "accepted": [
+        "27000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "46,000−19,000＝27,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-supplies-q08",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "購入時に通信費へ処理した未使用切手5,400円を、決算で貯蔵品へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貯蔵品",
+          "通信費",
+          "消耗品費",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "貯蔵品",
+            "amount": 5400
+          }
+        ],
+        "credits": [
+          {
+            "account": "通信費",
+            "amount": 5400
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貯蔵品\",\"amount\":5400}],\"credits\":[{\"account\":\"通信費\",\"amount\":5400}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "未使用部分を通信費から取り除く。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-supplies-q09",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "購入時に租税公課へ処理した未使用収入印紙3,000円を、決算で貯蔵品へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貯蔵品",
+          "租税公課",
+          "法人税等",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "貯蔵品",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "租税公課",
+            "amount": 3000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貯蔵品\",\"amount\":3000}],\"credits\":[{\"account\":\"租税公課\",\"amount\":3000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "元の費用である租税公課を減らす。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-supplies-q10",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "通信費処理済みの切手4,200円と、租税公課処理済みの収入印紙6,000円が未使用。決算で貯蔵品へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貯蔵品",
+          "通信費",
+          "租税公課",
+          "消耗品費",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "貯蔵品",
+            "amount": 10200
+          }
+        ],
+        "credits": [
+          {
+            "account": "通信費",
+            "amount": 4200
+          },
+          {
+            "account": "租税公課",
+            "amount": 6000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貯蔵品\",\"amount\":10200}],\"credits\":[{\"account\":\"通信費\",\"amount\":4200},{\"account\":\"租税公課\",\"amount\":6000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "資産は合計10,200円。費用は元の二科目へ分けて減らす。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-supplies-q11",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    },
+    {
+      "prompt": "未使用切手9,000円を通信費から貯蔵品へ振り替える。他の条件一定で、当期利益はいくら増えるか。",
+      "input": "number",
+      "accepted": [
+        "9000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "費用が9,000円減るため利益が同額増える。現金収入は生じない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-supplies-q12",
+      "lesson": "b3x-supplies",
+      "field": "commercial"
+    }
+  ],
+  "b3x-capital": [
+    {
+      "prompt": "設立時に株式180株を一株4,000円で発行し、全額払込みを受けた。払込総額は。",
+      "input": "number",
+      "accepted": [
+        "720000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "180×4,000＝720,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-capital-q01",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "設立にあたり株式100株を一株8,000円で発行し、払込金全額が普通預金へ入金された。全額資本金とする。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "普通預金",
+          "資本金",
+          "売上",
+          "借入金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 800000
+          }
+        ],
+        "credits": [
+          {
+            "account": "資本金",
+            "amount": 800000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":800000}],\"credits\":[{\"account\":\"資本金\",\"amount\":800000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "100×8,000＝800,000円。出資なので売上や借入金を使わない。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-capital-q02",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "全額資本金とする払込額630,000円。一株当たり払込額7,000円。発行株数は何株か。",
+      "input": "number",
+      "accepted": [
+        "90"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "630,000÷7,000＝90株。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-capital-q03",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "新株50株を一株6,000円で発行し、全額普通預金へ入金された。全額資本金とする。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "普通預金",
+          "資本金",
+          "売上",
+          "繰越利益剰余金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 300000
+          }
+        ],
+        "credits": [
+          {
+            "account": "資本金",
+            "amount": 300000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":300000}],\"credits\":[{\"account\":\"資本金\",\"amount\":300000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "増資による払込み300,000円を純資産へ記録する。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-capital-q04",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "同日に、全額資本金とする新株払込み240,000円と銀行借入160,000円が普通預金へ入った。まとめて仕訳しなさい。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "普通預金",
+          "資本金",
+          "借入金",
+          "売上",
+          "繰越利益剰余金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 400000
+          }
+        ],
+        "credits": [
+          {
+            "account": "資本金",
+            "amount": 240000
+          },
+          {
+            "account": "借入金",
+            "amount": 160000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":400000}],\"credits\":[{\"account\":\"資本金\",\"amount\":240000},{\"account\":\"借入金\",\"amount\":160000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "普通預金合計400,000円。出資240,000円と負債160,000円を区別する。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-capital-q05",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "資本金期首800,000円、当期全額資本金の増資250,000円、銀行借入150,000円。他の資本変動なし。期末資本金は。",
+      "input": "number",
+      "accepted": [
+        "1050000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "800,000＋250,000＝1,050,000円。借入は含めない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-capital-q06",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "出資で入った預金600,000円のうち備品200,000円を買い、給料30,000円を払った。ほかの取引なし。資本金600,000円の残高はいくらか。",
+      "input": "number",
+      "accepted": [
+        "600000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "預金を使っても資本金を直接減らさない。資本金は600,000円のまま。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-capital-q07",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "増資の払込120,000円と、既に計上した売掛金80,000円の回収が普通預金へ同時入金された。増資は全額資本金。まとめた仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "普通預金",
+          "資本金",
+          "売掛金",
+          "売上",
+          "借入金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 200000
+          }
+        ],
+        "credits": [
+          {
+            "account": "資本金",
+            "amount": 120000
+          },
+          {
+            "account": "売掛金",
+            "amount": 80000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":200000}],\"credits\":[{\"account\":\"資本金\",\"amount\":120000},{\"account\":\"売掛金\",\"amount\":80000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "入金理由を分ける。売掛金回収は収益の再計上ではない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-capital-q08",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "資本金期首900,000円、期末1,260,000円。増資以外の増減なし。一株4,500円で発行した株数は。",
+      "input": "number",
+      "accepted": [
+        "80"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "増加額360,000÷4,500＝80株。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-capital-q09",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期末資本金1,400,000円、繰越利益剰余金260,000円。他に純資産なし。純資産合計は。",
+      "input": "number",
+      "accepted": [
+        "1660000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "1,400,000＋260,000＝1,660,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-capital-q10",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首繰越利益剰余金110,000円、当期純利益75,000円、配当等なし。締切後残高は。",
+      "input": "number",
+      "accepted": [
+        "185000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "110,000＋75,000＝185,000円。利益を資本金へ足さない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-capital-q11",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期末資産1,980,000円、負債420,000円、資本金1,200,000円。他の純資産は繰越利益剰余金のみ。その金額は。",
+      "input": "number",
+      "accepted": [
+        "360000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "純資産1,560,000−資本金1,200,000＝360,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-capital-q12",
+      "lesson": "b3x-capital",
+      "field": "commercial"
+    }
+  ],
+  "b3x-dividends": [
+    {
+      "prompt": "株主への配当50,000円を決議した。後日支払い、利益準備金積立はない条件。決議仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "繰越利益剰余金",
+          "未払配当金",
+          "資本金",
+          "普通預金",
+          "給料"
+        ],
+        "debits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 50000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払配当金",
+            "amount": 50000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越利益剰余金\",\"amount\":50000}],\"credits\":[{\"account\":\"未払配当金\",\"amount\":50000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "配当は費用でなく利益剰余金の減少。支払前なので未払配当金を使う。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-dividends-q01",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "配当80,000円と、指定された利益準備金8,000円の積立を決議した。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "繰越利益剰余金",
+          "未払配当金",
+          "利益準備金",
+          "普通預金",
+          "資本金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 88000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払配当金",
+            "amount": 80000
+          },
+          {
+            "account": "利益準備金",
+            "amount": 8000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越利益剰余金\",\"amount\":88000}],\"credits\":[{\"account\":\"未払配当金\",\"amount\":80000},{\"account\":\"利益準備金\",\"amount\":8000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "配当と積立の合計88,000円を繰越利益剰余金から移す。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-dividends-q02",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "配当70,000円と利益準備金7,000円の積立を決議。純資産合計はいくら減るか。",
+      "input": "number",
+      "accepted": [
+        "70000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "積立は純資産内の振替。純資産合計の減少は配当70,000円のみ。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-dividends-q03",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "決議済みの未払配当金65,000円を全額普通預金から支払った。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未払配当金",
+          "普通預金",
+          "繰越利益剰余金",
+          "資本金"
+        ],
+        "debits": [
+          {
+            "account": "未払配当金",
+            "amount": 65000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 65000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払配当金\",\"amount\":65000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":65000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "決議で既に減らした繰越利益剰余金は再び減らさない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-dividends-q04",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "未払配当金90,000円のうち55,000円を普通預金から支払った。支払仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未払配当金",
+          "普通預金",
+          "繰越利益剰余金",
+          "未払金"
+        ],
+        "debits": [
+          {
+            "account": "未払配当金",
+            "amount": 55000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 55000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払配当金\",\"amount\":55000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":55000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "実際の支払額55,000円だけ負債を消す。35,000円は残る。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-dividends-q05",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首未払配当金12,000円、当期決議額84,000円、当期支払額76,000円。期末未払配当金は。",
+      "input": "number",
+      "accepted": [
+        "20000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "12,000＋84,000−76,000＝20,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-dividends-q06",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "配当60,000円と利益準備金6,000円を決議した日に、配当の支払いはしていない。普通預金の減少額は。",
+      "input": "number",
+      "accepted": [
+        "0"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "決議で現金支出はないためゼロ。積立でも預金は動かない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-dividends-q07",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首繰越利益剰余金240,000円、配当50,000円、指定積立5,000円、当期純利益90,000円。期末残高は。",
+      "input": "number",
+      "accepted": [
+        "275000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "240,000−50,000−5,000＋90,000＝275,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-dividends-q08",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首利益準備金18,000円、当期の指定積立7,000円。他の変動なし。期末残高は。",
+      "input": "number",
+      "accepted": [
+        "25000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "18,000＋7,000＝25,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-dividends-q09",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首純資産合計1,200,000円、全額資本金の増資200,000円、当期純利益130,000円、配当80,000円、準備金積立8,000円。期末純資産合計は。",
+      "input": "number",
+      "accepted": [
+        "1450000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "1,200,000＋200,000＋130,000−80,000＝1,450,000円。積立は合計を変えない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-dividends-q10",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首繰越利益剰余金160,000円、当期純損失30,000円、配当20,000円、指定積立2,000円。他の変動なし。期末残高は。",
+      "input": "number",
+      "accepted": [
+        "108000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "160,000−30,000−20,000−2,000＝108,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-dividends-q11",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期純利益95,000円を損益勘定から繰越利益剰余金へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "損益",
+          "繰越利益剰余金",
+          "資本金",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "損益",
+            "amount": 95000
+          }
+        ],
+        "credits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 95000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"損益\",\"amount\":95000}],\"credits\":[{\"account\":\"繰越利益剰余金\",\"amount\":95000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "当期利益は繰越利益剰余金を増やす。資本金へ振り替えない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-dividends-q12",
+      "lesson": "b3x-dividends",
+      "field": "commercial"
+    }
+  ],
+  "b3x-corporate-tax": [
+    {
+      "prompt": "当期負担法人税等144,000円、仮払法人税等として記録済みの中間納付54,000円。未払額は。",
+      "input": "number",
+      "accepted": [
+        "90000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "144,000−54,000＝90,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-corporate-tax-q01",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "税引前利益480,000円。設例条件で法人税等はその25％。当期税額は。",
+      "input": "number",
+      "accepted": [
+        "120000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "480,000×25％＝120,000円。実務の税率を示すものではない。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-corporate-tax-q02",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期分法人税等の中間納付42,000円を普通預金から払った。仮払法人税等で処理する条件。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払法人税等",
+          "普通預金",
+          "租税公課",
+          "未払法人税等",
+          "法人税等"
+        ],
+        "debits": [
+          {
+            "account": "仮払法人税等",
+            "amount": 42000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 42000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仮払法人税等\",\"amount\":42000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":42000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "税額確定前の当期中間分を資産の仮払法人税等で記録する。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-corporate-tax-q03",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期負担法人税等108,000円。中間納付38,000円は仮払法人税等に記録済み。決算仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "法人税等",
+          "仮払法人税等",
+          "未払法人税等",
+          "租税公課",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "法人税等",
+            "amount": 108000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払法人税等",
+            "amount": 38000
+          },
+          {
+            "account": "未払法人税等",
+            "amount": 70000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"法人税等\",\"amount\":108000}],\"credits\":[{\"account\":\"仮払法人税等\",\"amount\":38000},{\"account\":\"未払法人税等\",\"amount\":70000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "費用は総額108,000円、仮払38,000円を消し、差額70,000円を負債へ。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-corporate-tax-q04",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "他の整理前利益420,000円。未計上償却30,000円を追加し、翌期分保険料10,000円を費用から除く。整理後税引前利益は。",
+      "input": "number",
+      "accepted": [
+        "400000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "420,000−30,000＋10,000＝400,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-corporate-tax-q05",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "他の整理前利益420,000円。未計上償却30,000円を追加し、翌期分保険料10,000円を費用から除く。設例で整理後税引前利益の30％が法人税等。税額は。",
+      "input": "number",
+      "accepted": [
+        "120000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "整理後利益400,000×30％＝120,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-corporate-tax-q06",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "税引前利益520,000円、設例法人税等156,000円、中間納付60,000円。当期純利益は。",
+      "input": "number",
+      "accepted": [
+        "364000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "520,000−156,000＝364,000円。中間納付は当期税額の内訳であり、さらに控除しない。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-corporate-tax-q07",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期法人税等に対応する仮払18,000円があり、当期税額72,000円が確定した。決算仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "法人税等",
+          "仮払法人税等",
+          "未払法人税等",
+          "普通預金",
+          "租税公課"
+        ],
+        "debits": [
+          {
+            "account": "法人税等",
+            "amount": 72000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払法人税等",
+            "amount": 18000
+          },
+          {
+            "account": "未払法人税等",
+            "amount": 54000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"法人税等\",\"amount\":72000}],\"credits\":[{\"account\":\"仮払法人税等\",\"amount\":18000},{\"account\":\"未払法人税等\",\"amount\":54000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "当期費用72,000円と未払54,000円を分ける。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-corporate-tax-q08",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "前期末に未払法人税等へ計上した64,000円を当期に普通預金から納付した。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未払法人税等",
+          "普通預金",
+          "法人税等",
+          "仮払法人税等"
+        ],
+        "debits": [
+          {
+            "account": "未払法人税等",
+            "amount": 64000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 64000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払法人税等\",\"amount\":64000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":64000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "前期の費用を当期で再計上せず、負債を消す。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-corporate-tax-q09",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首未払法人税等50,000円を全額納付。当期分中間納付32,000円、当期確定税額98,000円。期末未払額は。",
+      "input": "number",
+      "accepted": [
+        "66000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "当期98,000−中間32,000＝66,000円。期首50,000円は納付済み。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-corporate-tax-q10",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期中間納付24,000円を誤って租税公課へ計上した。出金は正しく記録済み。仮払法人税等へ訂正する仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払法人税等",
+          "租税公課",
+          "普通預金",
+          "未払法人税等"
+        ],
+        "debits": [
+          {
+            "account": "仮払法人税等",
+            "amount": 24000
+          }
+        ],
+        "credits": [
+          {
+            "account": "租税公課",
+            "amount": 24000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仮払法人税等\",\"amount\":24000}],\"credits\":[{\"account\":\"租税公課\",\"amount\":24000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "誤った費用を消して仮払資産へ。普通預金は再び減らさない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-corporate-tax-q11",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期首未払税金70,000円、当期法人税等費用150,000円、当期の税金支払総額130,000円。当期税額に中間納付を充当済み、仮払残高ゼロ。期末未払法人税等は。",
+      "input": "number",
+      "accepted": [
+        "90000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "70,000＋150,000−130,000＝90,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-corporate-tax-q12",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial"
+    },
+    {
+      "id": "b3x-corporate-tax-q13",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial",
+      "prompt": "営業用建物の当期分固定資産税32,500円を普通預金から納めました。この税金はまだ費用・負債とも未記帳です。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "当期の固定資産税を初めて記録するので、租税公課の費用と預金の減少を記録します。法人税等の中間納付や消費税負債の決済ではありません。",
+      "objectives": [
+        3
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "法人税等",
+          "仮払法人税等",
+          "租税公課",
+          "普通預金",
+          "未払消費税"
+        ],
+        "debits": [
+          {
+            "account": "租税公課",
+            "amount": 32500
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 32500
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"租税公課\",\"amount\":32500}],\"credits\":[{\"account\":\"普通預金\",\"amount\":32500}]}"
+      ]
+    },
+    {
+      "id": "b3x-corporate-tax-q14",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial",
+      "prompt": "未記帳の当期固定資産税36,000円を現金納付しました。この記帳前の法人税等控除前利益は416,000円で、他の調整はありません。固定資産税を反映した後の法人税等控除前利益はいくらですか。単位は円です。",
+      "explanation": "租税公課として当期費用36,000円を加えるので、416,000−36,000＝380,000円です。出金だけを見て仮払法人税等へ入れると、この費用が抜けます。",
+      "objectives": [
+        3
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "380000"
+      ]
+    },
+    {
+      "id": "b3x-corporate-tax-q15",
+      "lesson": "b3x-corporate-tax",
+      "field": "commercial",
+      "prompt": "税抜方式で決算時に計上済みの未払消費税16,800円を、普通預金から全額納付しました。他の負担は含みません。納付時の仕訳を書いてください。",
+      "explanation": "すでに確定・記帳した負債を減らす納付です。未記帳の当期固定資産税の納付と違い、ここで租税公課を追加しません。",
+      "objectives": [
+        3
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "租税公課",
+          "法人税等",
+          "未払消費税",
+          "仮払法人税等",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "未払消費税",
+            "amount": 16800
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 16800
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払消費税\",\"amount\":16800}],\"credits\":[{\"account\":\"普通預金\",\"amount\":16800}]}"
+      ]
+    }
+  ],
+  "b3x-consumption-tax": [
+    {
+      "prompt": "指定税率10％、税抜方式。税込価格176,000円の税抜本体額は。",
+      "input": "number",
+      "accepted": [
+        "160000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "176,000÷1.10＝160,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-consumption-tax-q01",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "指定税率10％。税抜価格72,000円の税込価格は。",
+      "input": "number",
+      "accepted": [
+        "79200"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "72,000×1.10＝79,200円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-consumption-tax-q02",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "指定税率10％。税込価格99,000円に含まれる税額は。",
+      "input": "number",
+      "accepted": [
+        "9000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "本体90,000円、差額9,000円。税込額に10％を掛けない。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-consumption-tax-q03",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "商品を税抜90,000円で掛け仕入れ。指定税率10％、税抜方式。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "仮払消費税",
+          "買掛金",
+          "仮受消費税",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 90000
+          },
+          {
+            "account": "仮払消費税",
+            "amount": 9000
+          }
+        ],
+        "credits": [
+          {
+            "account": "買掛金",
+            "amount": 99000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":90000},{\"account\":\"仮払消費税\",\"amount\":9000}],\"credits\":[{\"account\":\"買掛金\",\"amount\":99000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "本体90,000、税額9,000、債務総額99,000。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-consumption-tax-q04",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "商品を税込143,000円で掛け販売。指定税率10％、税抜方式。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売掛金",
+          "売上",
+          "仮受消費税",
+          "仮払消費税",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "売掛金",
+            "amount": 143000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 130000
+          },
+          {
+            "account": "仮受消費税",
+            "amount": 13000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売掛金\",\"amount\":143000}],\"credits\":[{\"account\":\"売上\",\"amount\":130000},{\"account\":\"仮受消費税\",\"amount\":13000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "143,000÷1.10＝130,000円。税額13,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-consumption-tax-q05",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "税抜方式、指定10％。掛け販売済み商品のうち税抜12,000円が返品され、掛け代金を減らした。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "仮受消費税",
+          "売掛金",
+          "仮払消費税",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 12000
+          },
+          {
+            "account": "仮受消費税",
+            "amount": 1200
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 13200
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売上\",\"amount\":12000},{\"account\":\"仮受消費税\",\"amount\":1200}],\"credits\":[{\"account\":\"売掛金\",\"amount\":13200}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "売上とその税額を取り消し、税込債権13,200円を減らす。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-consumption-tax-q06",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "税抜方式、指定10％。掛け仕入れ済み商品のうち税抜8,000円を返品し、掛け代金を減らした。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "買掛金",
+          "仕入",
+          "仮払消費税",
+          "仮受消費税",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 8800
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 8000
+          },
+          {
+            "account": "仮払消費税",
+            "amount": 800
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":8800}],\"credits\":[{\"account\":\"仕入\",\"amount\":8000},{\"account\":\"仮払消費税\",\"amount\":800}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "仕入と仮払の取消しを貸方へ、債務の税込減少を借方へ。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-consumption-tax-q07",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品税抜180,000円と取得運賃税抜6,000円を全額普通預金で支払った。両方とも指定税率10％、税抜方式。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "備品",
+          "仮払消費税",
+          "普通預金",
+          "支払運賃",
+          "仮受消費税"
+        ],
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 186000
+          },
+          {
+            "account": "仮払消費税",
+            "amount": 18600
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 204600
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"備品\",\"amount\":186000},{\"account\":\"仮払消費税\",\"amount\":18600}],\"credits\":[{\"account\":\"普通預金\",\"amount\":204600}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "取得原価は本体と運賃の税抜合計186,000円、税額18,600円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-consumption-tax-q08",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "仮受消費税72,000円、仮払消費税44,000円。差額を未払消費税とする単純条件で、他の調整なし。決算仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受消費税",
+          "仮払消費税",
+          "未払消費税",
+          "法人税等",
+          "租税公課"
+        ],
+        "debits": [
+          {
+            "account": "仮受消費税",
+            "amount": 72000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払消費税",
+            "amount": 44000
+          },
+          {
+            "account": "未払消費税",
+            "amount": 28000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仮受消費税\",\"amount\":72000}],\"credits\":[{\"account\":\"仮払消費税\",\"amount\":44000},{\"account\":\"未払消費税\",\"amount\":28000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "両仮勘定を消去し、72,000−44,000＝28,000円の負債を作る。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-consumption-tax-q09",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "仮受残高90,000円、仮払52,000円。未記帳の税抜仕入30,000円あり、指定10％。他調整なし、仮受−仮払で未払とする。未払額は。",
+      "input": "number",
+      "accepted": [
+        "35000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "仮払を3,000円増やして55,000円、90,000−55,000＝35,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-consumption-tax-q10",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "税抜方式・指定10％。税込仕入66,000円を仕入66,000／買掛金66,000と誤記した。買掛金は正しい。税額を区分する訂正仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払消費税",
+          "仕入",
+          "買掛金",
+          "仮受消費税"
+        ],
+        "debits": [
+          {
+            "account": "仮払消費税",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 6000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仮払消費税\",\"amount\":6000}],\"credits\":[{\"account\":\"仕入\",\"amount\":6000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "本体60,000円へ直し、抜けた仮払6,000円を記録。買掛金は動かさない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-consumption-tax-q11",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    },
+    {
+      "prompt": "前期末の未払消費税28,000円を普通預金から納付した。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未払消費税",
+          "普通預金",
+          "租税公課",
+          "仮払消費税"
+        ],
+        "debits": [
+          {
+            "account": "未払消費税",
+            "amount": 28000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 28000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払消費税\",\"amount\":28000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":28000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "既存負債の決済であって、当期費用の追加ではない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-consumption-tax-q12",
+      "lesson": "b3x-consumption-tax",
+      "field": "commercial"
+    }
+  ],
+  "b3x-adjusted-trial": [
+    {
+      "prompt": "整理前保険料36,000円のうち翌期分9,000円を前払保険料へ振り替える。他調整なし。整理後費用は。",
+      "input": "number",
+      "accepted": [
+        "27000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "36,000−9,000＝27,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-adjusted-trial-q01",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前家賃150,000円から翌期分25,000円を除き、当期未払12,000円を加える。整理後費用は。",
+      "input": "number",
+      "accepted": [
+        "137000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "150,000−25,000＋12,000＝137,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-adjusted-trial-q02",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前未払給料4,000円。期末の必要未払額は11,000円。給料へ追加する仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "給料",
+          "未払給料",
+          "現金",
+          "前払給料"
+        ],
+        "debits": [
+          {
+            "account": "給料",
+            "amount": 7000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払給料",
+            "amount": 7000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"給料\",\"amount\":7000}],\"credits\":[{\"account\":\"未払給料\",\"amount\":7000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "既存4,000円を含めて11,000円へするため追加7,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-adjusted-trial-q03",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前繰越商品60,000円、仕入350,000円、期末商品80,000円。三分法で仕入勘定を売上原価へする。整理後仕入は。",
+      "input": "number",
+      "accepted": [
+        "330000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "350,000＋60,000−80,000＝330,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-adjusted-trial-q04",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前累計額75,000円。当期償却45,000円、売却なし。整理後減価償却累計額は。",
+      "input": "number",
+      "accepted": [
+        "120000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "75,000＋45,000＝120,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-adjusted-trial-q05",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理後売掛金250,000円、必要引当額2％、整理前引当金貸方2,000円。追加繰入額は。",
+      "input": "number",
+      "accepted": [
+        "3000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "必要5,000−既存2,000＝3,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-adjusted-trial-q06",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前消耗品費28,000円、期末未使用6,000円、購入時費用処理、期首資産なし。整理後消耗品資産は。",
+      "input": "number",
+      "accepted": [
+        "6000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "未使用分6,000円を資産にする。費用は22,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-adjusted-trial-q07",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前支払利息8,000円。決算で当期未払利息3,500円を追加する。整理後支払利息は。",
+      "input": "number",
+      "accepted": [
+        "11500"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "8,000＋3,500＝11,500円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-adjusted-trial-q08",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理後収益780,000円、整理後費用合計652,000円。法人税等なし。当期純利益は。",
+      "input": "number",
+      "accepted": [
+        "128000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "780,000−652,000＝128,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-adjusted-trial-q09",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理後資産純額960,000円、負債340,000円、資本金500,000円、締切前繰越利益剰余金75,000円。配当等なし。当期純利益は。",
+      "input": "number",
+      "accepted": [
+        "45000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "960,000−340,000−500,000−75,000＝45,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-adjusted-trial-q10",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理で当期未払給料6,000円の借方転記だけ行い、貸方未払給料を転記し忘れた。借方合計は貸方合計よりいくら多いか。",
+      "input": "number",
+      "accepted": [
+        "6000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "片側6,000円の漏れにより差額6,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-adjusted-trial-q11",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    },
+    {
+      "prompt": "間接法指定の当期償却30,000円を、誤って借方減価償却費／貸方備品で処理した。同じ期に誤記を訂正する仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "備品",
+          "減価償却累計額",
+          "減価償却費",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 30000
+          }
+        ],
+        "credits": [
+          {
+            "account": "減価償却累計額",
+            "amount": 30000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"備品\",\"amount\":30000}],\"credits\":[{\"account\":\"減価償却累計額\",\"amount\":30000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "正しい費用計上は残し、誤って減らした備品を戻して累計額へ。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-adjusted-trial-q12",
+      "lesson": "b3x-adjusted-trial",
+      "field": "commercial"
+    }
+  ],
+  "b3x-worksheet": [
+    {
+      "prompt": "精算表の支払保険料は試算借方48,000円、修正貸方12,000円、他なし。損益借方へ置く額は。",
+      "input": "number",
+      "accepted": [
+        "36000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "整理後残高48,000−12,000＝36,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-worksheet-q01",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "給料は試算借方210,000円、修正借方18,000円、他なし。損益借方へ置く額は。",
+      "input": "number",
+      "accepted": [
+        "228000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "210,000＋18,000＝228,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-worksheet-q02",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "繰越商品は試算借方35,000円、修正借方42,000円、修正貸方35,000円。貸借借方へ置く額は。",
+      "input": "number",
+      "accepted": [
+        "42000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "35,000＋42,000−35,000＝42,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-worksheet-q03",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "精算表の仕入は試算借方280,000円、修正借方35,000円、修正貸方42,000円。損益借方へ置く額は。",
+      "input": "number",
+      "accepted": [
+        "273000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "280,000＋35,000−42,000＝273,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-worksheet-q04",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "累計額は試算貸方90,000円、修正貸方45,000円。他なし。貸借貸方へ置く額は。",
+      "input": "number",
+      "accepted": [
+        "135000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "90,000＋45,000＝135,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-worksheet-q05",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "精算表貸借欄借方総額760,000円には売掛金100,000円、備品240,000円等が含まれる。貸方に控除勘定として引当金2,000円、累計額80,000円。控除後の資産合計は。",
+      "input": "number",
+      "accepted": [
+        "678000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "760,000−2,000−80,000＝678,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-worksheet-q06",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "修正仕訳は期首商品40,000円の振替、期末商品55,000円の振替、償却25,000円、前払費用4,000円、未払費用6,000円の五本。各一本の借貸合計はそれぞれ記載額とする。修正借方合計は。",
+      "input": "number",
+      "accepted": [
+        "130000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "40,000＋55,000＋25,000＋4,000＋6,000＝130,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-worksheet-q07",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "損益欄の借方合計512,000円、貸方合計580,000円。差額の利益はいくらか。",
+      "input": "number",
+      "accepted": [
+        "68000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "580,000−512,000＝68,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-worksheet-q08",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "精算表で当期純利益が出た。損益計算書欄の借方・貸方どちらへ差額を記入するか。二文字で。",
+      "input": "text",
+      "accepted": [
+        "借方"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "収益の貸方合計が多いため、少ない借方へ利益を入れる。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-worksheet-q09",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "精算表で当期純損失が出た。貸借対照表欄の借方・貸方どちらへ差額を記入するか。二文字で。",
+      "input": "text",
+      "accepted": [
+        "借方"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "損失による純資産減少に対応し、貸借借方へ記入する。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-worksheet-q10",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "貸借借方へ記入すべき前払費用7,000円を、誤って貸方へ記入した。他の処理は正しい。列差額は正しい場合よりいくら広がるか。",
+      "input": "number",
+      "accepted": [
+        "14000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "正しい借方から7,000減り、誤った貸方へ7,000増えるため14,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-worksheet-q11",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "損益欄は借方630,000円、貸方600,000円。貸借欄は借方870,000円、貸方900,000円。損失を記入した後の貸借欄の両側合計は。",
+      "input": "number",
+      "accepted": [
+        "900000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "損失30,000を貸借借方へ足し、900,000円ずつになる。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-worksheet-q12",
+      "lesson": "b3x-worksheet",
+      "field": "commercial"
+    }
+  ],
+  "b3x-profit-loss": [
+    {
+      "prompt": "売上記録総額760,000円、売上返品18,000円。純売上高は。",
+      "input": "number",
+      "accepted": [
+        "742000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "760,000−18,000＝742,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-profit-loss-q01",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理前期首商品45,000円、仕入総額380,000円、仕入返品8,000円、原価へ含める運賃6,000円、期末商品53,000円。売上原価は。",
+      "input": "number",
+      "accepted": [
+        "370000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "45,000＋380,000−8,000＋6,000−53,000＝370,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-profit-loss-q02",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "仕入勘定で売上原価算定済みの整理後仕入残高は370,000円。期首商品45,000円、期末商品53,000円も資料にある。この資料から表示する売上原価は。",
+      "input": "number",
+      "accepted": [
+        "370000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "整理後仕入残高を使い、期首期末を二重加減しない。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-profit-loss-q03",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "純売上高820,000円、売上原価490,000円。売上総利益は。",
+      "input": "number",
+      "accepted": [
+        "330000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "820,000−490,000＝330,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-profit-loss-q04",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売上原価490,000円、給料130,000円、家賃60,000円、償却35,000円、その他の当期費用25,000円。他の費用なし。損益計算書の費用合計は。",
+      "input": "number",
+      "accepted": [
+        "740000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "490,000＋130,000＋60,000＋35,000＋25,000＝740,000円。すべて当期費用の整理後金額として集計する。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-profit-loss-q05",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理後の収益は売上高820,000円、受取利息2,000円だけ。損益計算書の収益合計は。",
+      "input": "number",
+      "accepted": [
+        "822000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "820,000＋2,000＝822,000円。売上以外の収益も合計する。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-profit-loss-q06",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理後の収益は売上900,000円と受取利息5,000円、費用総額は法人税等を含め842,000円。他の損益なし。当期純利益は。",
+      "input": "number",
+      "accepted": [
+        "63000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "収益905,000−費用842,000＝63,000円。勘定式では費用側へ利益を置き左右905,000円でそろえる。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-profit-loss-q07",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "収益合計940,000円、法人税等を含む費用合計856,000円。当期純利益は。",
+      "input": "number",
+      "accepted": [
+        "84000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "940,000−856,000＝84,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-profit-loss-q08",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "期末商品を本来66,000円のところ56,000円で売上原価計算した。他条件一定、法人税等は固定指定額。利益の過少額は。",
+      "input": "number",
+      "accepted": [
+        "10000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "期末商品が10,000円少なく売上原価が10,000円多いので利益は10,000円過少。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-profit-loss-q09",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売上600,000円、売掛金回収510,000円、売上原価350,000円、他の当期費用180,000円、法人税等14,000円。他なし。当期純利益は。",
+      "input": "number",
+      "accepted": [
+        "56000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "600,000−350,000−180,000−14,000＝56,000円。回収額を加えない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-profit-loss-q10",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品の期末累計額150,000円、当期償却費40,000円。損益計算書へ表示する減価償却費はいくらか。",
+      "input": "number",
+      "accepted": [
+        "40000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "当期費用40,000円を用い、累計額を費用にしない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-profit-loss-q11",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    },
+    {
+      "prompt": "税引前利益の30％を法人税等とする設例。未払費用10,000円の追加を忘れたため、税引前利益を10,000円多くした。当期純利益の過大額は。",
+      "input": "number",
+      "accepted": [
+        "7000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "税額も3,000円多くなるので、税引後の過大額は10,000−3,000＝7,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-profit-loss-q12",
+      "lesson": "b3x-profit-loss",
+      "field": "commercial"
+    }
+  ],
+  "b3x-balance-sheet": [
+    {
+      "prompt": "売掛金240,000円、対応貸倒引当金7,200円。貸借対照表に表示する売掛金純額は。",
+      "input": "number",
+      "accepted": [
+        "232800"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "240,000−7,200＝232,800円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-balance-sheet-q01",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "備品取得原価480,000円、期末累計額210,000円、当期償却費60,000円。貸借対照表の帳簿価額は。",
+      "input": "number",
+      "accepted": [
+        "270000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "期末累計額を引き480,000−210,000＝270,000円。当期費用だけを引かない。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-balance-sheet-q02",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "前受家賃は、貸借対照表の資産・負債・純資産のどの区分か。二文字で。",
+      "input": "text",
+      "accepted": [
+        "負債"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "将来サービスを提供すべき義務として負債へ置く。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-balance-sheet-q03",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "現金120,000円、預金280,000円、売掛金150,000円、対応引当金3,000円、商品80,000円、備品300,000円、累計額120,000円、前払費用9,000円。他資産なし。資産純額合計は。",
+      "input": "number",
+      "accepted": [
+        "816000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "120,000＋280,000＋150,000−3,000＋80,000＋300,000−120,000＋9,000＝816,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-balance-sheet-q04",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "買掛金130,000円、借入金210,000円、未払給料8,000円、前受家賃6,000円、未払税金22,000円。他負債なし。負債合計は。",
+      "input": "number",
+      "accepted": [
+        "376000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "130,000＋210,000＋8,000＋6,000＋22,000＝376,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-balance-sheet-q05",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "資本金500,000円、締切前繰越利益剰余金120,000円、当期収益800,000円、費用710,000円。配当等なし、他純資産なし。決算後純資産合計は。",
+      "input": "number",
+      "accepted": [
+        "710000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "当期利益90,000円。500,000＋120,000＋90,000＝710,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-balance-sheet-q06",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "締切前繰越利益剰余金80,000円、当期純利益55,000円。配当等なし。決算後残高は。",
+      "input": "number",
+      "accepted": [
+        "135000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "80,000＋55,000＝135,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-balance-sheet-q07",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "締切後繰越利益剰余金135,000円に、既に当期純利益55,000円を反映済み。貸借対照表へ表示する繰越利益剰余金は。",
+      "input": "number",
+      "accepted": [
+        "135000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "反映済みなので55,000円を二重加算せず135,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-balance-sheet-q08",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "資産純額1,050,000円、負債380,000円、資本金500,000円、他の純資産は繰越利益剰余金のみ。その期末表示額は。",
+      "input": "number",
+      "accepted": [
+        "170000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "1,050,000−380,000−500,000＝170,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-balance-sheet-q09",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "資産側に表示すべき前払保険料6,000円だけを転記し忘れた。他の表示は正しい。資産合計の不足額は。",
+      "input": "number",
+      "accepted": [
+        "6000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "転記漏れの6,000円だけ資産が不足。利益剰余金を差額で減らさない。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-balance-sheet-q10",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "締切前繰越利益剰余金100,000円、当期純損失28,000円、配当等なし。締切後残高は。",
+      "input": "number",
+      "accepted": [
+        "72000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "100,000−28,000＝72,000円。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-balance-sheet-q11",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    },
+    {
+      "prompt": "精算表貸借借方合計980,000円。貸方には控除勘定として引当金4,000円と累計額160,000円がある。公表用貸借対照表での資産純額は。",
+      "input": "number",
+      "accepted": [
+        "816000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "980,000−4,000−160,000＝816,000円。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-balance-sheet-q12",
+      "lesson": "b3x-balance-sheet",
+      "field": "commercial"
+    }
+  ],
+  "b3x-closing-books": [
+    {
+      "prompt": "決算整理後の売上貸方残高360,000円を損益へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "損益",
+          "現金",
+          "繰越利益剰余金"
+        ],
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 360000
+          }
+        ],
+        "credits": [
+          {
+            "account": "損益",
+            "amount": 360000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売上\",\"amount\":360000}],\"credits\":[{\"account\":\"損益\",\"amount\":360000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "売上の貸方残高を借方で消し、損益の貸方へ収益を集める。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-closing-books-q01",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "決算整理後の給料借方残高96,000円を損益へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "損益",
+          "給料",
+          "現金",
+          "繰越利益剰余金"
+        ],
+        "debits": [
+          {
+            "account": "損益",
+            "amount": 96000
+          }
+        ],
+        "credits": [
+          {
+            "account": "給料",
+            "amount": 96000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"損益\",\"amount\":96000}],\"credits\":[{\"account\":\"給料\",\"amount\":96000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "費用の借方残高を貸方で消し、損益借方へ集める。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-closing-books-q02",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "収益の売上420,000円と受取利息4,000円を一括して損益へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "受取利息",
+          "損益",
+          "普通預金",
+          "繰越利益剰余金"
+        ],
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 420000
+          },
+          {
+            "account": "受取利息",
+            "amount": 4000
+          }
+        ],
+        "credits": [
+          {
+            "account": "損益",
+            "amount": 424000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売上\",\"amount\":420000},{\"account\":\"受取利息\",\"amount\":4000}],\"credits\":[{\"account\":\"損益\",\"amount\":424000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "収益二科目を借方で消し、合計424,000円を損益貸方へ。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-closing-books-q03",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "整理後の費用は仕入220,000円、給料72,000円、支払家賃36,000円のみ。この三科目を損益へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "損益",
+          "仕入",
+          "給料",
+          "支払家賃",
+          "現金",
+          "繰越利益剰余金"
+        ],
+        "debits": [
+          {
+            "account": "損益",
+            "amount": 328000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 220000
+          },
+          {
+            "account": "給料",
+            "amount": 72000
+          },
+          {
+            "account": "支払家賃",
+            "amount": 36000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"損益\",\"amount\":328000}],\"credits\":[{\"account\":\"仕入\",\"amount\":220000},{\"account\":\"給料\",\"amount\":72000},{\"account\":\"支払家賃\",\"amount\":36000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "費用合計328,000円を損益借方へ、各費用を貸方で消す。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-closing-books-q04",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "損益勘定へ集計した収益480,000円、費用422,000円。差額を利益剰余金へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "損益",
+          "繰越利益剰余金",
+          "資本金",
+          "売上"
+        ],
+        "debits": [
+          {
+            "account": "損益",
+            "amount": 58000
+          }
+        ],
+        "credits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 58000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"損益\",\"amount\":58000}],\"credits\":[{\"account\":\"繰越利益剰余金\",\"amount\":58000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "利益58,000円の貸方残高を消し、純資産を増やす。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-closing-books-q05",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "損益勘定へ集計した収益280,000円、費用315,000円。損失を利益剰余金へ振り替える。仕訳は。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "繰越利益剰余金",
+          "損益",
+          "資本金",
+          "給料"
+        ],
+        "debits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 35000
+          }
+        ],
+        "credits": [
+          {
+            "account": "損益",
+            "amount": 35000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越利益剰余金\",\"amount\":35000}],\"credits\":[{\"account\":\"損益\",\"amount\":35000}]}"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "損失35,000円の借方残高を消し、純資産を減らす。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-closing-books-q06",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "締切前繰越利益剰余金85,000円、当期収益390,000円、費用338,000円。他の変動なし。締切後利益剰余金は。",
+      "input": "number",
+      "accepted": [
+        "137000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "利益52,000円を加え85,000＋52,000＝137,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-closing-books-q07",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "締切後試算表の資産借方合計890,000円、控除勘定貸方160,000円、負債合計210,000円、資本金400,000円。他純資産は繰越利益剰余金のみ。その残高は。",
+      "input": "number",
+      "accepted": [
+        "120000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "890,000−160,000−210,000−400,000＝120,000円。",
+      "objectives": [
+        1
+      ],
+      "id": "b3x-closing-books-q08",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "売掛金勘定の当期借方合計720,000円、貸方合計590,000円。次期繰越額は。",
+      "input": "number",
+      "accepted": [
+        "130000"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "借方残高720,000−590,000＝130,000円を貸方へ次期繰越とする。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-closing-books-q09",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "買掛金勘定に貸方残高42,000円がある。当期を締める次期繰越は借方・貸方のどちらへ書くか。二文字で。",
+      "input": "text",
+      "accepted": [
+        "借方"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "貸方残高を反対の借方へ置き、両側をそろえる。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-closing-books-q10",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "前期末に売掛金の借方残高130,000円を繰り越した。翌期の前期繰越は借方・貸方のどちらか。二文字で。",
+      "input": "text",
+      "accepted": [
+        "借方"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "資産の本来の残高側である借方から開始する。",
+      "objectives": [
+        2
+      ],
+      "id": "b3x-closing-books-q11",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "prompt": "当期利益の振替まで終えた後、売上と給料勘定の残高を合計するといくらか。両科目は全額損益へ振替済み。",
+      "input": "number",
+      "accepted": [
+        "0"
+      ],
+      "options": [],
+      "answer": 0,
+      "explanation": "当期収益費用の残高はゼロとなり、翌期へ残高を持ち越さない。",
+      "objectives": [
+        0
+      ],
+      "id": "b3x-closing-books-q12",
+      "lesson": "b3x-closing-books",
+      "field": "commercial"
+    },
+    {
+      "id": "b3x-closing-books-q13",
+      "lesson": "b3x-closing-books",
+      "field": "commercial",
+      "prompt": "当期設立した会社です。現金出資160,000円、商品仕入42,000円（現金17,000円・掛け25,000円）、全商品を63,000円で販売（現金28,000円・掛け35,000円）、給料現金払い14,000円を記帳しました。三分法、期首・期末商品ゼロ、税金や他の取引・整理はありません。収益・費用・利益の締切仕訳も記入した後の、仕訳帳の当期借方合計はいくらですか。単位は円です。",
+      "explanation": "日常取引の片側合計は160,000＋42,000＋63,000＋14,000＝279,000円。利益7,000円、締切は売上63,000円・費用56,000円・利益7,000円の計126,000円なので、当期合計は405,000円です。現金残高157,000円とは別の値です。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "405000"
+      ]
+    },
+    {
+      "id": "b3x-closing-books-q14",
+      "lesson": "b3x-closing-books",
+      "field": "commercial",
+      "prompt": "現金出納帳には当期首の前期繰越132,000円、当期の入金45,000円、出金38,000円があります。他の現金増減はなく、当期帳簿を締めます。翌期の現金出納帳で受入側に記入する前期繰越額はいくらですか。単位は円です。",
+      "explanation": "132,000＋45,000−38,000＝139,000円を翌期へ引き継ぎます。当期には反対の支払側へ次期繰越を置き、翌期の受入側から始めます。入金45,000円だけを繰り越したり、前期の全取引を再記帳したりしません。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "139000"
+      ]
+    }
+  ]
+}

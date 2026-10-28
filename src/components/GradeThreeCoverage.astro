@@ -1,0 +1,107 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import sources from '../../docs/boki-3/source-register.json';
+import coverage from '../data/boki3-coverage.json';
+import { href } from '../lib/site';
+interface Props {
+  lessons: CollectionEntry<'lessons'>[];
+}
+const { lessons } = Astro.props;
+const title = (id: string) => lessons.find((lesson) => lesson.data.stableId === id)?.data.title ?? id;
+---
+
+<h1>日商簿記3級の学習範囲と公式資料</h1>
+<p>
+  対象は商業簿記の3級です。2026年度に適用する2022年度版の出題区分表に基づき、2027年3月31日までの範囲を扱います。公式資料の確認日：
+  <time datetime="2026-10-28">2026年10月28日</time>。
+</p>
+<p>
+  基本原理、日々の取引、帳簿、決算、株式会社の純資産を順に学びます。下表の61項目は公式区分表を学習する技能へ分けたもので、公式の項目数や出題数ではありません。公式の級は「3級」一つで、7ユニットは当サイトの学習順です。
+</p>
+<div
+  class="coverage-table"
+  role="region"
+  tabindex="0"
+  aria-label="日商簿記3級の学習範囲と教材の対応。横にスクロールできます"
+>
+  <table>
+    <caption>現行の公式範囲と、説明・例題・適用練習の対応</caption>
+    <thead>
+      <tr>
+        <th scope="col">公式の区分</th>
+        <th scope="col">学習する技能</th>
+        <th scope="col">説明と例題</th>
+        <th scope="col">練習</th>
+      </tr>
+    </thead>
+    <tbody>
+      {coverage.map((row) => (
+        <tr id={row.id}>
+          <th scope="row">{row.officialSection}</th>
+          <td>
+            {row.competency}
+            <p>{row.requiredSkill}</p>
+          </td>
+          <td>
+            <ul>
+              {row.lessons.map((id) => {
+                const anchor = row.teachingAnchors.find((item) => item.lesson === id)?.anchor;
+                return (
+                  <li>
+                    <a href={href(`qualifications/boki-3/${id}/`) + (anchor ? `#${anchor}` : '')}>
+                      {title(id)}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </td>
+          <td>
+            関連練習 {row.independentQuestionIds.length}解答欄・単元確認 {row.unitReviewQuestionIds.length}問
+            <p>総合問題の行には模試の決算課題を含みます。複数技能を確認する問題は各行に載せています。</p>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+<h2>試験形式と、この教材での練習</h2>
+<p>
+  公式案内は商業簿記・3題以内・60分で、70%以上が合格基準です。ネット試験では勘定科目の選択と数値等の入力を行います。当サイトでも、科目と金額を自分でそろえる仕訳、元帳や商品有高帳の記入、資料が連動する精算表・決算書を練習します。
+</p>
+<p>
+  独自模試は2回分あります。各回60分、仕訳15取引、帳簿等10解答欄、決算総合23解答欄の構成です。45・20・35点の配分と小問別配点は、公開サンプルの課題構成を参考にした当サイト独自の練習用設計です。現行試験の固定配点、部分点、難易度や所要時間の同一性は示しません。仕訳は全科目・全金額が正しい場合に得点する方式で、公式の採点を再現したものではありません。
+</p>
+<p>
+  用語確認は定義の理解、レッスンと単元確認は方法の適用、総合復習と模試は複数の手順をつなぐ練習です。ページの学習済み状態とテスト結果は分けて記録します。練習得点から公式の合否を予測しません。
+</p>
+<h2>上位級と、2027年度の改定を分ける</h2>
+<p>
+  現行3級では、手形の裏書・割引、不渡り等、商品評価損・棚卸減耗、銀行勘定調整表、有価証券、連結会計などを必須項目へ加えません。決算書は勘定式を中心にし、2級の報告式の段階利益区分を必須技能として扱いません。税金や社会保険料は設問で与えた税率・金額・条件を使い、実際の申告や個人別保険料を推測しません。
+</p>
+<p>
+  2027年4月1日以降の確定区分表では、販売のつど行う売上原価振替、固定資産の除却・廃棄、簡易な定率法等が加わり、紙の小切手・手形の処理が削除されます。3級の大問配点は45・25・30点へ変わると公表されています。この改定後の範囲は現行課程・模試へ混在させず、将来版の追加対象として区別しています。2027年度対応済みとは表示しません。
+</p>
+<h2>学習時の使い方と注意</h2>
+<p>
+  例題・問題は当サイトの独自教材です。外部専門家の監修や受験者による難易度・時間の試行を経たという表示はしません。教材の作成方針は
+  <a href={href('editorial/')}>編集方針</a>で説明しています。
+</p>
+<p>
+  例題を読んだ後は、解説を閉じて仕訳と計算を再現し、別条件の問題へ進んでください。誤った科目や期間を特定して復習し、翌日と1週間後にも解き直します。公式の受験案内・改定情報は受験時にも確認してください。
+</p>
+<h2>参照した公式資料</h2>
+<ul>
+  {sources.sources.map((source) => (
+    <li>
+      <a href={source.url}>{source.title}</a>：{source.notes}（確認日：{source.verified}）
+    </li>
+  ))}
+</ul>
+<p>
+  <a href={href('downloads/boki-3-curriculum.txt')} download>
+    学習ツリー・スケジュールTXT
+  </a>{' '}
+  ・ <a href={href('qualifications/boki-3/')}>学習ツリーへ戻る</a> ・{' '}
+  <a href={href('contact/')}>訂正の連絡方法</a>
+</p>

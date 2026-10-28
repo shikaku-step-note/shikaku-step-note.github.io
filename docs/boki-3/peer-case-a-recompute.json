@@ -1,0 +1,677 @@
+{
+  "date": "2026-10-28",
+  "reviewer": "separate AI author; no human expert claim",
+  "basis": "Independently specified original TB, adjustment vectors, worksheet cells, keys and mini-case from the prose premises; author ledger JSON not imported.",
+  "original": {
+    "現金": 90000,
+    "普通預金": 520000,
+    "売掛金": 210000,
+    "繰越商品": 80000,
+    "備品": 600000,
+    "仕入": 540000,
+    "給料": 210000,
+    "支払家賃": 144000,
+    "保険料": 36000,
+    "支払利息": 4000,
+    "広告宣伝費": 27000,
+    "差入保証金": 40000,
+    "買掛金": -190000,
+    "借入金": -300000,
+    "備品減価償却累計額": -120000,
+    "貸倒引当金": -3000,
+    "資本金": -700000,
+    "繰越利益剰余金": -80000,
+    "売上": -1100000,
+    "受取利息": -2000,
+    "前受手数料": -6000
+  },
+  "independentlyAdjusted": {
+    "現金": 90000,
+    "普通預金": 540000,
+    "売掛金": 190000,
+    "繰越商品": 65000,
+    "備品": 600000,
+    "仕入": 555000,
+    "給料": 228000,
+    "支払家賃": 72000,
+    "保険料": 12000,
+    "支払利息": 7000,
+    "広告宣伝費": 27000,
+    "差入保証金": 40000,
+    "買掛金": -190000,
+    "借入金": -300000,
+    "備品減価償却累計額": -210000,
+    "貸倒引当金": -5700,
+    "資本金": -700000,
+    "繰越利益剰余金": -80000,
+    "売上": -1100000,
+    "受取利息": -2000,
+    "前受手数料": -4000,
+    "貸倒引当金繰入": 2700,
+    "減価償却費": 90000,
+    "前払保険料": 24000,
+    "前払家賃": 72000,
+    "未払給料": -18000,
+    "未払利息": -3000,
+    "未収手数料": 15000,
+    "受取手数料": -17000
+  },
+  "adjustmentTotal": 391700,
+  "worksheetRows": 29,
+  "gridChecks": [
+    {
+      "account": "現金",
+      "expected": [
+        90000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        90000,
+        0
+      ]
+    },
+    {
+      "account": "普通預金",
+      "expected": [
+        520000,
+        0,
+        20000,
+        0,
+        0,
+        0,
+        540000,
+        0
+      ]
+    },
+    {
+      "account": "売掛金",
+      "expected": [
+        210000,
+        0,
+        0,
+        20000,
+        0,
+        0,
+        190000,
+        0
+      ]
+    },
+    {
+      "account": "繰越商品",
+      "expected": [
+        80000,
+        0,
+        65000,
+        80000,
+        0,
+        0,
+        65000,
+        0
+      ]
+    },
+    {
+      "account": "備品",
+      "expected": [
+        600000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        600000,
+        0
+      ]
+    },
+    {
+      "account": "仕入",
+      "expected": [
+        540000,
+        0,
+        80000,
+        65000,
+        555000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "給料",
+      "expected": [
+        210000,
+        0,
+        18000,
+        0,
+        228000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "支払家賃",
+      "expected": [
+        144000,
+        0,
+        0,
+        72000,
+        72000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "保険料",
+      "expected": [
+        36000,
+        0,
+        0,
+        24000,
+        12000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "支払利息",
+      "expected": [
+        4000,
+        0,
+        3000,
+        0,
+        7000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "広告宣伝費",
+      "expected": [
+        27000,
+        0,
+        0,
+        0,
+        27000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "差入保証金",
+      "expected": [
+        40000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        40000,
+        0
+      ]
+    },
+    {
+      "account": "買掛金",
+      "expected": [
+        0,
+        190000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        190000
+      ]
+    },
+    {
+      "account": "借入金",
+      "expected": [
+        0,
+        300000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        300000
+      ]
+    },
+    {
+      "account": "備品減価償却累計額",
+      "expected": [
+        0,
+        120000,
+        0,
+        90000,
+        0,
+        0,
+        0,
+        210000
+      ]
+    },
+    {
+      "account": "貸倒引当金",
+      "expected": [
+        0,
+        3000,
+        0,
+        2700,
+        0,
+        0,
+        0,
+        5700
+      ]
+    },
+    {
+      "account": "資本金",
+      "expected": [
+        0,
+        700000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        700000
+      ]
+    },
+    {
+      "account": "繰越利益剰余金",
+      "expected": [
+        0,
+        80000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        80000
+      ]
+    },
+    {
+      "account": "売上",
+      "expected": [
+        0,
+        1100000,
+        0,
+        0,
+        0,
+        1100000,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "受取利息",
+      "expected": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        2000,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "前受手数料",
+      "expected": [
+        0,
+        6000,
+        2000,
+        0,
+        0,
+        0,
+        0,
+        4000
+      ]
+    },
+    {
+      "account": "貸倒引当金繰入",
+      "expected": [
+        0,
+        0,
+        2700,
+        0,
+        2700,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "減価償却費",
+      "expected": [
+        0,
+        0,
+        90000,
+        0,
+        90000,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "account": "前払保険料",
+      "expected": [
+        0,
+        0,
+        24000,
+        0,
+        0,
+        0,
+        24000,
+        0
+      ]
+    },
+    {
+      "account": "前払家賃",
+      "expected": [
+        0,
+        0,
+        72000,
+        0,
+        0,
+        0,
+        72000,
+        0
+      ]
+    },
+    {
+      "account": "未払給料",
+      "expected": [
+        0,
+        0,
+        0,
+        18000,
+        0,
+        0,
+        0,
+        18000
+      ]
+    },
+    {
+      "account": "未払利息",
+      "expected": [
+        0,
+        0,
+        0,
+        3000,
+        0,
+        0,
+        0,
+        3000
+      ]
+    },
+    {
+      "account": "未収手数料",
+      "expected": [
+        0,
+        0,
+        15000,
+        0,
+        0,
+        0,
+        15000,
+        0
+      ]
+    },
+    {
+      "account": "受取手数料",
+      "expected": [
+        0,
+        0,
+        0,
+        17000,
+        0,
+        17000,
+        0,
+        0
+      ]
+    }
+  ],
+  "totals": {
+    "revenue": 1119000,
+    "cost": 993700,
+    "profit": 125300,
+    "totalGross": 1636000,
+    "net": 1420300
+  },
+  "questionChecks": [
+    {
+      "id": "b3x-closing-case-a-q02",
+      "formula": "(210000-20000)*0.03-3000",
+      "value": 2700
+    },
+    {
+      "id": "b3x-closing-case-a-q05",
+      "formula": "400000/5+200000/5*3/12",
+      "value": 90000
+    },
+    {
+      "id": "b3x-closing-case-a-q08",
+      "formula": "540000+80000-65000",
+      "value": 555000
+    },
+    {
+      "id": "b3x-closing-case-a-q09",
+      "formula": "120000+90000",
+      "value": 210000
+    },
+    {
+      "id": "b3x-closing-case-a-q10",
+      "formula": "144000-72000",
+      "value": 72000
+    },
+    {
+      "id": "b3x-closing-case-a-q11",
+      "formula": "300000*.04*3/12",
+      "value": 3000
+    },
+    {
+      "id": "b3x-closing-case-a-q12",
+      "formula": "6000-6000*2/6",
+      "value": 4000
+    },
+    {
+      "id": "b3x-closing-case-a-q14",
+      "formula": "1119000-993700",
+      "value": 125300
+    },
+    {
+      "id": "b3x-closing-case-a-q15",
+      "formula": "90000+540000+190000-5700+65000+600000-210000+40000+24000+72000+15000",
+      "value": 1420300
+    },
+    {
+      "id": "b3x-closing-case-a-q16",
+      "formula": "80000+125300",
+      "value": 205300
+    },
+    {
+      "id": "b3x-closing-case-a-q19",
+      "formula": "6000-3000",
+      "value": 3000
+    },
+    {
+      "id": "b3x-closing-case-a-q20",
+      "formula": "370400-350000",
+      "value": 20400
+    },
+    {
+      "id": "b3x-closing-case-a-q01",
+      "debits": [
+        {
+          "account": "普通預金",
+          "amount": 20000
+        }
+      ],
+      "credits": [
+        {
+          "account": "売掛金",
+          "amount": 20000
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q03",
+      "debits": [
+        {
+          "account": "仕入",
+          "amount": 80000
+        }
+      ],
+      "credits": [
+        {
+          "account": "繰越商品",
+          "amount": 80000
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q04",
+      "debits": [
+        {
+          "account": "繰越商品",
+          "amount": 65000
+        }
+      ],
+      "credits": [
+        {
+          "account": "仕入",
+          "amount": 65000
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q06",
+      "debits": [
+        {
+          "account": "前払保険料",
+          "amount": 24000
+        }
+      ],
+      "credits": [
+        {
+          "account": "保険料",
+          "amount": 24000
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q07",
+      "debits": [
+        {
+          "account": "給料",
+          "amount": 18000
+        }
+      ],
+      "credits": [
+        {
+          "account": "未払給料",
+          "amount": 18000
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q17",
+      "debits": [
+        {
+          "account": "損益",
+          "amount": 125300
+        }
+      ],
+      "credits": [
+        {
+          "account": "繰越利益剰余金",
+          "amount": 125300
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q18",
+      "debits": [
+        {
+          "account": "未払利息",
+          "amount": 3000
+        }
+      ],
+      "credits": [
+        {
+          "account": "支払利息",
+          "amount": 3000
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q21",
+      "debits": [
+        {
+          "account": "繰越利益剰余金",
+          "amount": 20400
+        }
+      ],
+      "credits": [
+        {
+          "account": "損益",
+          "amount": 20400
+        }
+      ]
+    },
+    {
+      "id": "b3x-closing-case-a-q13",
+      "correctOption": "対応する資産から控除して正味額を示す"
+    },
+    {
+      "id": "b3x-case-a-review-1",
+      "debits": [
+        {
+          "account": "貸倒引当金繰入",
+          "amount": 1100
+        }
+      ],
+      "credits": [
+        {
+          "account": "貸倒引当金",
+          "amount": 1100
+        }
+      ]
+    },
+    {
+      "id": "b3x-case-a-review-2",
+      "formula": "43000-43000+37000",
+      "value": 37000
+    },
+    {
+      "id": "b3x-case-a-review-3",
+      "debits": [
+        {
+          "account": "繰越利益剰余金",
+          "amount": 31500
+        }
+      ],
+      "credits": [
+        {
+          "account": "損益",
+          "amount": 31500
+        }
+      ]
+    }
+  ],
+  "mini": {
+    "costs": 370400,
+    "revenue": 350000,
+    "assets": 385600,
+    "liabilities": 175000,
+    "loss": 20400,
+    "equity": 210600
+  },
+  "issue": "Initial-liability front-received fees must not receive the standard ending4,000 reversing entry; reported separately."
+}

@@ -1,0 +1,228 @@
+{
+  "verified": "2026-10-28",
+  "scope": "Independent review of only the new coverage-gap additions; every new stem, model and explanation read.18new assessment fields,14body/continuity arithmetic checks. No unchanged question banks re-certified.",
+  "assessmentWitnesses": [
+    {
+      "id": "b3x-loans-day-q1",
+      "formula": "912500*0.02*60/365",
+      "value": 3000,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-loans-day-q3",
+      "formula": "486000*0.025*73/365",
+      "value": 2430,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-corporate-tax-q14",
+      "formula": "416000-36000",
+      "value": 380000,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-corporate-tax-review-05",
+      "formula": "18000",
+      "value": 18000,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-closing-books-q13",
+      "formula": "160000+42000+63000+14000+63000+(42000+14000)+(63000-42000-14000)",
+      "value": 405000,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-closing-books-q14",
+      "formula": "132000+45000-38000",
+      "value": 139000,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-closing-books-review-04",
+      "formula": "180000+48000+72000+16000+72000+(48000+16000)+(72000-48000-16000)",
+      "value": 460000,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-closing-books-review-05",
+      "formula": "27000+46000-58000-5000",
+      "value": 10000,
+      "result": "matches accepted answer"
+    },
+    {
+      "id": "b3x-bank-closing-q1",
+      "independentDebits": {
+        "当座預金": 37000
+      },
+      "independentCredits": {
+        "当座借越": 37000
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-bank-closing-q2",
+      "independentDebits": {
+        "当座借越": 46000
+      },
+      "independentCredits": {
+        "当座預金": 46000
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-bank-closing-q3",
+      "independentDebits": {
+        "当座預金": 51000
+      },
+      "independentCredits": {
+        "売掛金": 51000
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-bank-closing-review-1",
+      "independentDebits": {
+        "当座預金": 31000
+      },
+      "independentCredits": {
+        "当座借越": 31000
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-bank-closing-review-2",
+      "independentDebits": {
+        "当座預金": 22000
+      },
+      "independentCredits": {
+        "現金": 22000
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-loans-day-q2",
+      "independentDebits": {
+        "借入金": 547500,
+        "支払利息": 2700.0
+      },
+      "independentCredits": {
+        "普通預金": 550200.0
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-u4-day-review-01",
+      "independentDebits": {
+        "借入金": 328500,
+        "支払利息": 1080.0
+      },
+      "independentCredits": {
+        "普通預金": 329580.0
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-corporate-tax-q13",
+      "independentDebits": {
+        "租税公課": 32500
+      },
+      "independentCredits": {
+        "普通預金": 32500
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-corporate-tax-q15",
+      "independentDebits": {
+        "未払消費税": 16800
+      },
+      "independentCredits": {
+        "普通預金": 16800
+      },
+      "result": "all accounts/sides/amounts match"
+    },
+    {
+      "id": "b3x-corporate-tax-review-04",
+      "independentDebits": {
+        "租税公課": 27400
+      },
+      "independentCredits": {
+        "現金": 27400
+      },
+      "result": "all accounts/sides/amounts match"
+    }
+  ],
+  "bodyWitnesses": [
+    {
+      "id": "bank yearend credit balance",
+      "formula": "54000-30000",
+      "value": 24000
+    },
+    {
+      "id": "bank subsequent deposit net asset",
+      "formula": "40000-24000",
+      "value": 16000
+    },
+    {
+      "id": "bank independent q3 ending deposit",
+      "formula": "51000-32000",
+      "value": 19000
+    },
+    {
+      "id": "bank independent review2 remaining overdraft",
+      "formula": "57000-22000",
+      "value": 35000
+    },
+    {
+      "id": "day count excluding borrowing date",
+      "formula": "30+31+29",
+      "value": 90
+    },
+    {
+      "id": "loan worked example daily interest",
+      "formula": "730000*0.05*90/365",
+      "value": 9000
+    },
+    {
+      "id": "loan worked example repayment",
+      "formula": "730000+9000",
+      "value": 739000
+    },
+    {
+      "id": "loan inappropriate 3-month comparison",
+      "formula": "730000*0.05*3/12",
+      "value": 9125
+    },
+    {
+      "id": "fixed tax worked post-payment pretax profit",
+      "formula": "232000-28000",
+      "value": 204000
+    },
+    {
+      "id": "journal worked daily entry total",
+      "formula": "120000+30000+45000+10000",
+      "value": 205000
+    },
+    {
+      "id": "journal worked full entry total",
+      "formula": "120000+30000+45000+10000+45000+40000+5000",
+      "value": 295000
+    },
+    {
+      "id": "worked ending cash",
+      "formula": "120000-12000+20000-10000",
+      "value": 118000
+    },
+    {
+      "id": "worked assets and liabilities-equity",
+      "formula": "118000+25000",
+      "value": 143000
+    },
+    {
+      "id": "worked matching liabilities-equity",
+      "formula": "18000+120000+5000",
+      "value": 143000
+    }
+  ]
+}

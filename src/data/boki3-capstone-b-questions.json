@@ -1,0 +1,634 @@
+{
+  "b3x-closing-case-b": [
+    {
+      "id": "b3x-closing-case-b-q01",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "現金過不足に借方残高3,000円がある。現金は実際額へ調整済みで、通信費2,000円の支払漏れと判明し、残る1,000円は決算まで不明。決算時の振替を一つにまとめる。",
+      "explanation": "通信費の未計上2,000円を費用へ移し、未判明不足1,000円だけを雑損とします。現金は既に減額済みなので再び動かしません。現金過不足はゼロになります。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "通信費",
+          "雑損",
+          "現金過不足",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "通信費",
+            "amount": 2000
+          },
+          {
+            "account": "雑損",
+            "amount": 1000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金過不足",
+            "amount": 3000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"通信費\",\"amount\":2000},{\"account\":\"雑損\",\"amount\":1000}],\"credits\":[{\"account\":\"現金過不足\",\"amount\":3000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q02",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "日向株式会社の普通預金から当期銀行手数料1,000円が引き落とされていたが未記帳だった。消費税は考慮せず修正する。",
+      "explanation": "未記帳の実際の引落しなので預金を1,000円減らし、費用を計上します。既存債務の決済ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "支払手数料",
+          "普通預金",
+          "現金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "支払手数料",
+            "amount": 1000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 1000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"支払手数料\",\"amount\":1000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":1000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q03",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "クレジット売掛金100,000円は手数料控除前で、売上は記帳済み。販売時に手数料2%を計上する条件の処理が漏れていた。未回収である。消費税を考慮せず修正する。",
+      "explanation": "100,000×2%＝2,000円を費用にし、回収する権利を98,000円へ直します。売上は重ねず、預金入金も作りません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "支払手数料",
+          "クレジット売掛金",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "支払手数料",
+            "amount": 2000
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 2000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"支払手数料\",\"amount\":2000}],\"credits\":[{\"account\":\"クレジット売掛金\",\"amount\":2000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q04",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "期首商品200,000円、当期仕入1,200,000円、期末商品原価260,000円。減耗等なし。売上原価はいくらですか。",
+      "explanation": "期首原価と当期購入を合わせた1,400,000円から、期末に売れずに残る260,000円を外し、1,140,000円です。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "1140000"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q05",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "三分法で売上原価を仕入勘定へ集める。期首商品200,000円を仕入へ振り替える仕訳は処理済み。期末商品260,000円の資産への振替だけを仕訳する。",
+      "explanation": "期首分の振替は済んでいるので、期末分だけを仕入から繰越商品へ戻します。仕入から外した額と商品資産へ残す額が同じです。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "繰越商品",
+          "仕入",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "繰越商品",
+            "amount": 260000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 260000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越商品\",\"amount\":260000}],\"credits\":[{\"account\":\"仕入\",\"amount\":260000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q06",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "売掛金300,000円、手数料修正前クレジット売掛金100,000円。後者から手数料2%を減額後、両債権を貸倒見積りの対象とする。対象額はいくらですか。",
+      "explanation": "カード債権は100,000−2,000＝98,000円へ修正済みです。売掛金300,000円を足して398,000円となります。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "398000"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q07",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "貸倒引当金の対象債権は整理後398,000円、見積率2%、既存の引当金は貸方5,000円。差額補充法の仕訳をする。",
+      "explanation": "必要額398,000×2%＝7,960円から現在の貸方残高5,000円を引き、2,960円を追加します。必要額全額を重ねて繰り入れません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貸倒引当金繰入",
+          "貸倒引当金",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "貸倒引当金繰入",
+            "amount": 2960
+          }
+        ],
+        "credits": [
+          {
+            "account": "貸倒引当金",
+            "amount": 2960
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貸倒引当金繰入\",\"amount\":2960}],\"credits\":[{\"account\":\"貸倒引当金\",\"amount\":2960}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q08",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "備品減価償却累計額の期首残高120,000円。備品600,000円、残存価額ゼロ、耐用年数5年で全期使用、当期増減なし。定額法の償却後の累計額は。",
+      "explanation": "当期償却120,000円を既存累計額120,000円へ加え、240,000円です。当期費用だけを答えないようにします。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "240000"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q09",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "備品取得原価600,000円、残存価額ゼロ、耐用年数5年、当期12か月使用で増減なし。定額法・間接法で当期償却を仕訳する。",
+      "explanation": "600,000÷5＝120,000円です。間接法なので備品原価を直接減らさず、累計額を貸方で増やします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "減価償却費",
+          "備品減価償却累計額",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "減価償却費",
+            "amount": 120000
+          }
+        ],
+        "credits": [
+          {
+            "account": "備品減価償却累計額",
+            "amount": 120000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"減価償却費\",\"amount\":120000}],\"credits\":[{\"account\":\"備品減価償却累計額\",\"amount\":120000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q10",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "消耗品を購入時にすべて費用処理し、消耗品費は60,000円である。期末の未使用分12,000円を貯蔵品へ振り替える。期首貯蔵品はない。",
+      "explanation": "購入済みでも未使用の12,000円を費用から外して資産へ残します。当期消耗品費は48,000円となります。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貯蔵品",
+          "消耗品費",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "貯蔵品",
+            "amount": 12000
+          }
+        ],
+        "credits": [
+          {
+            "account": "消耗品費",
+            "amount": 12000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貯蔵品\",\"amount\":12000}],\"credits\":[{\"account\":\"消耗品費\",\"amount\":12000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q11",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "X1年10月1日に同日から1年分の保険料120,000円を払い、全額費用処理した。X1年12月31日決算で月割りとする。翌期へ残る前払保険料は。",
+      "explanation": "翌期1〜9月の9か月分です。月額10,000円×9＝90,000円で、当期の3か月分30,000円と区別します。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "90000"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q12",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "保険料120,000円のうち、決算で翌期9か月分90,000円を資産へ振り替えることが確定した。購入時は全額保険料へ記帳済み。整理仕訳をする。",
+      "explanation": "すでに費用へ入れた翌期分90,000円を取り除き、翌期へ繰り越す資産を増やします。支払済み資金を再び出金しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前払保険料",
+          "保険料",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "前払保険料",
+            "amount": 90000
+          }
+        ],
+        "credits": [
+          {
+            "account": "保険料",
+            "amount": 90000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前払保険料\",\"amount\":90000}],\"credits\":[{\"account\":\"保険料\",\"amount\":90000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q13",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "税抜方式で仮受消費税320,000円、仮払消費税160,000円。ほかの調整不要で、差額を未払消費税とする。未払額は。",
+      "explanation": "仮受額から仮払額を差し引き160,000円です。仮受額全額を未払にしたり、仮払額を費用へ移したりしません。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "160000"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q14",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "仮受消費税320,000円、仮払消費税160,000円を精算する。ほかの調整不要で差額を未払消費税に計上する。",
+      "explanation": "仮受の貸方残高を借方で、仮払の借方残高を貸方で消します。残る納付義務160,000円が未払消費税です。税抜方式のこの精算は損益を変えません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受消費税",
+          "仮払消費税",
+          "未払消費税",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "仮受消費税",
+            "amount": 320000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払消費税",
+            "amount": 160000
+          },
+          {
+            "account": "未払消費税",
+            "amount": 160000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仮受消費税\",\"amount\":320000}],\"credits\":[{\"account\":\"仮払消費税\",\"amount\":160000},{\"account\":\"未払消費税\",\"amount\":160000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q15",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "当期法人税等は162,000円と確定し、仮払法人税等30,000円を充当する。未払法人税等はいくらですか。",
+      "explanation": "総税額162,000円から既払30,000円を引いた132,000円が今後払う額です。当期費用は162,000円全額です。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "132000"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q16",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "当期法人税、住民税及び事業税は162,000円と確定した。仮払法人税等30,000円を充当し、残額は未払い。決算仕訳をする。",
+      "explanation": "費用は確定した総額162,000円です。既払資産30,000円を消し、残額132,000円を負債へ計上します。未払額だけを費用にしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "法人税、住民税及び事業税",
+          "仮払法人税等",
+          "未払法人税等",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "法人税、住民税及び事業税",
+            "amount": 162000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払法人税等",
+            "amount": 30000
+          },
+          {
+            "account": "未払法人税等",
+            "amount": 132000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"法人税、住民税及び事業税\",\"amount\":162000}],\"credits\":[{\"account\":\"仮払法人税等\",\"amount\":30000},{\"account\":\"未払法人税等\",\"amount\":132000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q17",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "売上3,200,000円、受取手数料40,000円、整理後の税金以外の費用合計2,528,960円。当期法人税等162,000円はまだ費用合計に含めていない。税引前利益は。",
+      "explanation": "収益3,240,000円−税金以外の費用2,528,960円＝711,040円です。税引前なので法人税等はここでは差し引きません。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "711040"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q18",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "税引前当期純利益711,040円、当期法人税等162,000円、うち既払30,000円。当期純利益はいくらですか。",
+      "explanation": "費用として差し引くのは総税額162,000円なので、549,040円です。未払額132,000円だけを引くと既払税負担を落とします。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "549040"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q19",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "整理後の資産控除前総額3,179,000円、貸倒引当金7,960円、備品減価償却累計額240,000円。貸借対照表の正味資産合計は。",
+      "explanation": "債権と備品の控除を総資産から引き、2,931,040円です。引当金・累計額を負債へ加算せず、資産の控除として扱います。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "2931040"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q20",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "買掛金250,000円、借入金500,000円、未払金60,000円、未払消費税160,000円、未払法人税等132,000円。他の負債なし。負債合計は。",
+      "explanation": "5種類の残る義務を合わせ1,102,000円です。貸倒引当金や減価償却累計額はこの負債へ含めません。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "1102000"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q21",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "期首繰越利益剰余金280,000円、当期純利益549,040円。配当等の増減なし。期末繰越利益剰余金は。",
+      "explanation": "期首からの累積額に当期利益を加え829,040円です。利益549,040円と期末残高829,040円は異なる額です。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "829040"
+      ]
+    },
+    {
+      "id": "b3x-closing-case-b-q22",
+      "lesson": "b3x-closing-case-b",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "収益と費用を損益へ振り替え済みで、損益に貸方残高549,040円がある。当期利益を繰越利益剰余金へ振り替える。",
+      "explanation": "貸方の利益残高を借方損益で消し、純資産の繰越利益剰余金を貸方で増やします。資産・負債をこの利益振替へ一緒に移しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "損益",
+          "繰越利益剰余金",
+          "現金",
+          "普通預金",
+          "売掛金",
+          "買掛金",
+          "雑費",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "損益",
+            "amount": 549040
+          }
+        ],
+        "credits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 549040
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"損益\",\"amount\":549040}],\"credits\":[{\"account\":\"繰越利益剰余金\",\"amount\":549040}]}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-28",
+  "lessons": 12,
+  "workedExamples": 48,
+  "lessonQuestions": 169,
+  "reviewQuestions": 36,
+  "journalQuestions": 86,
+  "numberQuestions": 82,
+  "multipleChoiceQuestions": 37,
+  "arithmeticWitnesses": 294,
+  "rows": [
+    {
+      "id": "b3x-cash",
+      "bodyCharacters": 4696,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "取引資料から現金勘定へ含めるものと別科目へ分類するものを判断する",
+        "現金の受取り・支払いと自己振出小切手の回収を仕訳する",
+        "現金出納帳の増減と残高を計算し、記録の誤りを説明する"
+      ]
+    },
+    {
+      "id": "b3x-cash-shortage",
+      "bodyCharacters": 4584,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "現金の実際有高と帳簿残高から過不足の借方・貸方を判断する",
+        "原因が判明した現金過不足を正しい勘定へ振り替える",
+        "決算時の未判明残高を雑損・雑益へ振り替え、処理の全体を検算する"
+      ]
+    },
+    {
+      "id": "b3x-petty-cash",
+      "bodyCharacters": 4760,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "定額資金前渡制の設定と小口現金の増減を説明する",
+        "支払報告と補給の時点に合わせて経費・小口現金を仕訳する",
+        "小口現金出納帳の費目別合計、残金、補給額を検算する"
+      ]
+    },
+    {
+      "id": "b3x-bank",
+      "bodyCharacters": 4692,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "小切手の振出しと預金振込みを適切な預金勘定で仕訳する",
+        "指定された当座借越の処理方法に従い、預金部分と借越部分を分ける",
+        "複数の預金口座と当座預金出納帳の増減を追跡する"
+      ]
+    },
+    {
+      "id": "b3x-expenses",
+      "bodyCharacters": 4771,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "日常の支出を内容に合う費用科目へ分類し、資産取得や債務返済と区別する",
+        "現金・預金・未払金による経費取引を仕訳する",
+        "手数料などの収益と、債権の回収による入金を区別して記録する"
+      ]
+    },
+    {
+      "id": "b3x-payroll",
+      "bodyCharacters": 4811,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "給料総額から従業員負担の控除と手取額を区別して計算する",
+        "給料支払いと所得税・社会保険料等の預り金納付を仕訳する",
+        "会社負担の法定福利費と従業員負担分を区別し、立替金相殺を含めて検算する"
+      ]
+    },
+    {
+      "id": "b3x-purchases",
+      "bodyCharacters": 4698,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "販売用商品の購入を三分法で記録し、備品取得や経費支払いと区別する",
+        "現金・掛け・一部即時払いによる仕入れと買掛金決済を仕訳する",
+        "仕入帳と取引先別買掛金残高を集計し、仕入額と支払額の違いを説明する"
+      ]
+    },
+    {
+      "id": "b3x-sales",
+      "bodyCharacters": 4626,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "三分法の商品販売を売価で記録し、販売時の売上と仕入原価を区別する",
+        "現金・掛け・一部即時回収・前受金充当を含む販売と回収を仕訳する",
+        "売上帳と売掛金元帳を照合し、販売額・回収額・利益の関係を説明する"
+      ]
+    },
+    {
+      "id": "b3x-incidental",
+      "bodyCharacters": 4787,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "自社負担の仕入諸掛を商品取得原価へ含め、販売側の発送費と区別する",
+        "自社負担と取引先負担の運賃を、支払者・決済方法に従って仕訳する",
+        "立替金と買掛金・売掛金の相殺を記録し、正味の決済額を検算する"
+      ]
+    },
+    {
+      "id": "b3x-returns",
+      "bodyCharacters": 4592,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "仕入返品を元の仕入価額、売上返品を元の売価で記録する",
+        "未決済と決済済みの返品を区別して、買掛金・売掛金の減額や返金を仕訳する",
+        "返品後の純仕入・純売上と相手別残高を照合し、数量記録との関係を説明する"
+      ]
+    },
+    {
+      "id": "b3x-fifo",
+      "bodyCharacters": 4754,
+      "workedExamples": 4,
+      "lessonQuestions": 14,
+      "reviewQuestions": 3,
+      "objectives": [
+        "先入先出法で受入れ・払出しを原価層へ分け、商品有高帳を作成する",
+        "複数の仕入単価にまたがる払出額と期末商品原価を計算する",
+        "返品の指定条件を反映し、数量・原価・売上総利益を検算する"
+      ]
+    },
+    {
+      "id": "b3x-moving-average",
+      "bodyCharacters": 5013,
+      "workedExamples": 4,
+      "lessonQuestions": 15,
+      "reviewQuestions": 3,
+      "objectives": [
+        "仕入れなどの受入れ時に数量と金額を合計して移動平均単価を求める",
+        "払出時に直前の平均単価を用い、取引順に商品有高帳を更新する",
+        "端数処理と返品条件を明示して計算し、原価配分と売上総利益を検算する"
+      ]
+    }
+  ],
+  "independentPeerReview": "Parent independent review reported three issues: current PDF footer and two review prompt nouns. All corrected in place; see daily-editorial.md and parent review report."
+}

@@ -1,0 +1,4488 @@
+{
+  "qualification": "boki-3",
+  "verified": "2026-10-28",
+  "scopeDecision": "One official grade/category: 日商簿記3級, 商業簿記. Full current2026 scope, plus separately identified confirmed2027 changes; not 2級/1級/工業簿記.",
+  "competencyCountMeaning": "65 editorially decomposed competencies, not an official number of topics or questions.",
+  "evidenceStatus": "61 current2026 competency rows implemented and independently reviewed. Four2027-only entries excluded. Content, calculation, browser and static checks passed before publication; no external expert review or candidate calibration claimed.",
+  "competencies": [
+    {
+      "id": "b3c-01",
+      "officialSection": "第一1",
+      "competency": "資産・負債・純資産と二つの財務諸表",
+      "requiredSkill": "会社と株主を分け、期首期末の状態と期間損益を関連付ける。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "基礎概念"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-foundations-q01",
+        "b3x-foundations-q02",
+        "b3x-foundations-q03",
+        "b3x-foundations-q04",
+        "b3x-foundations-q05",
+        "b3x-foundations-q06",
+        "b3x-foundations-q07",
+        "b3x-foundations-q08",
+        "b3x-foundations-q09",
+        "b3x-foundations-q10",
+        "b3x-foundations-q11",
+        "b3x-foundations-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-foundations-r01",
+        "b3x-foundations-r02",
+        "b3x-foundations-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-02",
+      "officialSection": "第一2",
+      "competency": "簿記上の取引と取引要素",
+      "requiredSkill": "契約・注文だけの場合を区別し、増減を取引要素へ分解する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "取引と仕訳"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-journal",
+          "anchor": "objective-1"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-foundations",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-journal",
+          "anchor": "worked-1"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-foundations-q05",
+        "b3x-foundations-q06",
+        "b3x-foundations-q07",
+        "b3x-foundations-q08",
+        "b3x-journal-q01",
+        "b3x-journal-q02",
+        "b3x-journal-q03",
+        "b3x-journal-q04"
+      ],
+      "reviewQuestionIds": [
+        "b3x-foundations-r02",
+        "b3x-journal-r01"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-03",
+      "officialSection": "第一3",
+      "competency": "勘定の増減と複合仕訳",
+      "requiredSkill": "借貸を自分で組み立て、複数の科目と金額を全部記録して検算する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "取引と仕訳"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-journal",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-journal",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-journal",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-journal",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-journal",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-journal",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-journal-q01",
+        "b3x-journal-q02",
+        "b3x-journal-q03",
+        "b3x-journal-q04",
+        "b3x-journal-q05",
+        "b3x-journal-q06",
+        "b3x-journal-q07",
+        "b3x-journal-q08",
+        "b3x-journal-q09",
+        "b3x-journal-q10",
+        "b3x-journal-q11",
+        "b3x-journal-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-journal-r01",
+        "b3x-journal-r02",
+        "b3x-journal-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-04",
+      "officialSection": "第一4ア",
+      "competency": "仕訳帳から総勘定元帳への転記",
+      "requiredSkill": "日付、摘要、金額を相手科目と対応させ、勘定残高を算定する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "主要簿"
+      ],
+      "legacyEvidence": [
+        "b3-books: explanation only"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-ledger-q01",
+        "b3x-ledger-q02",
+        "b3x-ledger-q03",
+        "b3x-ledger-q04",
+        "b3x-ledger-q05",
+        "b3x-ledger-q06",
+        "b3x-ledger-q07",
+        "b3x-ledger-q08",
+        "b3x-ledger-q09",
+        "b3x-ledger-q10",
+        "b3x-ledger-q11",
+        "b3x-ledger-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-ledger-r01",
+        "b3x-ledger-r02",
+        "b3x-ledger-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-05",
+      "officialSection": "第一4イ",
+      "competency": "補助簿の選択と同時記入",
+      "requiredSkill": "一取引について該当する補助簿をすべて選び、該当なしを判断する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "補助簿の選択"
+      ],
+      "legacyEvidence": [
+        "b3-books: mentions books"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-ledger-q09",
+        "b3x-ledger-q10",
+        "b3x-ledger-q11",
+        "b3x-receivables-q10",
+        "b3x-receivables-q11",
+        "b3x-receivables-q12",
+        "b3x-receivables-q13",
+        "b3x-receivables-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-ledger-r03",
+        "b3x-u4-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-06",
+      "officialSection": "第一5ア",
+      "competency": "証ひょうの読取り",
+      "requiredSkill": "領収書、請求書、送金通知等から発生日・税区分・負担者・取引段階を判断する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "証ひょう"
+      ],
+      "legacyEvidence": [
+        "b3-books: brief"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "worked-2"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-purchases-q09",
+        "b3x-purchases-q10",
+        "b3x-purchases-q11",
+        "b3x-purchases-q13",
+        "b3x-incidental-q01",
+        "b3x-incidental-q02",
+        "b3x-incidental-q03",
+        "b3x-incidental-q05",
+        "b3x-incidental-q07",
+        "b3x-incidental-q08",
+        "b3x-incidental-q11",
+        "b3x-incidental-q12",
+        "b3x-incidental-q13"
+      ],
+      "reviewQuestionIds": [
+        "b3x-purchases-review-3",
+        "b3x-incidental-review-1",
+        "b3x-incidental-review-2"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-07",
+      "officialSection": "第一5イ",
+      "competency": "三伝票制と一部現金取引",
+      "requiredSkill": "入金・出金・振替を作成し、分割法といったん全額掛けとする方法を条件で使い分ける。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "伝票"
+      ],
+      "legacyEvidence": [
+        "b3-books: two explanations"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-vouchers",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-vouchers",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-vouchers",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-vouchers",
+          "anchor": "worked-2"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-vouchers-q01",
+        "b3x-vouchers-q02",
+        "b3x-vouchers-q03",
+        "b3x-vouchers-q04",
+        "b3x-vouchers-q05",
+        "b3x-vouchers-q06",
+        "b3x-vouchers-q07",
+        "b3x-vouchers-q08"
+      ],
+      "reviewQuestionIds": [
+        "b3x-vouchers-r01",
+        "b3x-vouchers-r02"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-08",
+      "officialSection": "第一5ウ",
+      "competency": "伝票集計と仕訳日計表",
+      "requiredSkill": "複数伝票を科目別に集計し、重複を防ぎ総勘定元帳へつなぐ。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "伝票集計"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-vouchers",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-vouchers",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-vouchers",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-vouchers-q09",
+        "b3x-vouchers-q10",
+        "b3x-vouchers-q11",
+        "b3x-vouchers-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-vouchers-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-09",
+      "officialSection": "第二1ア",
+      "competency": "現金の範囲と処理",
+      "requiredSkill": "通貨、他人振出小切手、送金小切手等と切手・収入印紙・自己振出小切手を区別する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "現金"
+      ],
+      "legacyEvidence": [
+        "b3-cash: limited"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-cash",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-cash",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-cash",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-cash",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-cash",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-cash-q01",
+        "b3x-cash-q02",
+        "b3x-cash-q03",
+        "b3x-cash-q04",
+        "b3x-cash-q05",
+        "b3x-cash-q06",
+        "b3x-cash-q07",
+        "b3x-cash-q10",
+        "b3x-cash-q11",
+        "b3x-cash-q13"
+      ],
+      "reviewQuestionIds": [
+        "b3x-cash-review-1",
+        "b3x-cash-review-2"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-10",
+      "officialSection": "第二1イ",
+      "competency": "現金出納帳",
+      "requiredSkill": "収入支出を日付順に記入し、残高・翌月繰越を示す。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "現金出納帳"
+      ],
+      "legacyEvidence": [
+        "b3-books: name only"
+      ],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-cash",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-cash",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-cash-q08",
+        "b3x-cash-q09",
+        "b3x-cash-q12",
+        "b3x-cash-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-cash-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-11",
+      "officialSection": "第二1ウ",
+      "competency": "現金過不足の調査と決算",
+      "requiredSkill": "不足・超過の両方向、原因判明の一部、最後の不明分を処理する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "現金過不足"
+      ],
+      "legacyEvidence": [
+        "b3-cash"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-cash-shortage",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-cash-shortage",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-cash-shortage",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-cash-shortage",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-cash-shortage",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-cash-shortage",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-cash-shortage",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-cash-shortage-q01",
+        "b3x-cash-shortage-q02",
+        "b3x-cash-shortage-q03",
+        "b3x-cash-shortage-q04",
+        "b3x-cash-shortage-q05",
+        "b3x-cash-shortage-q06",
+        "b3x-cash-shortage-q07",
+        "b3x-cash-shortage-q08",
+        "b3x-cash-shortage-q09",
+        "b3x-cash-shortage-q10",
+        "b3x-cash-shortage-q11",
+        "b3x-cash-shortage-q12",
+        "b3x-cash-shortage-q13",
+        "b3x-cash-shortage-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-cash-shortage-review-1",
+        "b3x-cash-shortage-review-2",
+        "b3x-cash-shortage-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-12",
+      "officialSection": "第二1エ",
+      "competency": "複数預金口座と当座借越",
+      "requiredSkill": "口座別振替と期末借越表示、翌期首の振戻しを処理する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "預金"
+      ],
+      "legacyEvidence": [
+        "b3-cash"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-bank",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-bank",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-bank",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-bank",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-bank-q04",
+        "b3x-bank-q05",
+        "b3x-bank-q07",
+        "b3x-bank-q08",
+        "b3x-bank-q09",
+        "b3x-bank-q10",
+        "b3x-bank-q11",
+        "b3x-bank-q13",
+        "b3x-bank-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-bank-review-2",
+        "b3x-bank-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-13",
+      "officialSection": "第二1オ",
+      "competency": "当座預金出納帳",
+      "requiredSkill": "入出金と借越を含めて残高を追い、表示側を判断する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "預金台帳"
+      ],
+      "legacyEvidence": [
+        "b3-books: name only"
+      ],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-bank",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-bank",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-bank-q07",
+        "b3x-bank-q09",
+        "b3x-bank-q13",
+        "b3x-bank-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-bank-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-14",
+      "officialSection": "第二1キク",
+      "competency": "小口現金と定額資金前渡制",
+      "requiredSkill": "前渡・支払報告・補給の時点を分け、出納帳を記入する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "小口現金"
+      ],
+      "legacyEvidence": [
+        "b3-cash"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-petty-cash-q01",
+        "b3x-petty-cash-q02",
+        "b3x-petty-cash-q03",
+        "b3x-petty-cash-q04",
+        "b3x-petty-cash-q05",
+        "b3x-petty-cash-q06",
+        "b3x-petty-cash-q07",
+        "b3x-petty-cash-q08",
+        "b3x-petty-cash-q09",
+        "b3x-petty-cash-q10",
+        "b3x-petty-cash-q11",
+        "b3x-petty-cash-q12",
+        "b3x-petty-cash-q13",
+        "b3x-petty-cash-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-petty-cash-review-1",
+        "b3x-petty-cash-review-2",
+        "b3x-petty-cash-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-15",
+      "officialSection": "第二3アイ",
+      "competency": "掛取引と相手先別元帳",
+      "requiredSkill": "発生・返品・回収支払を記帳し、内訳合計と総勘定元帳を照合する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "掛取引と補助元帳"
+      ],
+      "legacyEvidence": [
+        "b3-books",
+        "b3-credit"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-receivables-q05",
+        "b3x-receivables-q06",
+        "b3x-receivables-q07",
+        "b3x-receivables-q08",
+        "b3x-receivables-q09",
+        "b3x-receivables-q10",
+        "b3x-receivables-q11",
+        "b3x-receivables-q12",
+        "b3x-receivables-q13",
+        "b3x-receivables-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-02",
+        "b3x-u4-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-16",
+      "officialSection": "第二4ア",
+      "competency": "金銭貸借と利息",
+      "requiredSkill": "元本・利率・期間から月割または指定日割を計算し、元利合計を記録する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "貸付借入"
+      ],
+      "legacyEvidence": [
+        "b3-accrual: accrual only"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-loans",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-loans",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-loans",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-loans",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-loans",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-loans",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-loans",
+          "anchor": "worked-5"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-loans-q01",
+        "b3x-loans-q02",
+        "b3x-loans-q03",
+        "b3x-loans-q04",
+        "b3x-loans-q05",
+        "b3x-loans-q06",
+        "b3x-loans-q07",
+        "b3x-loans-q08",
+        "b3x-loans-q09",
+        "b3x-loans-q10",
+        "b3x-loans-q11",
+        "b3x-loans-q12",
+        "b3x-loans-q13",
+        "b3x-loans-q14",
+        "b3x-loans-day-q1",
+        "b3x-loans-day-q2",
+        "b3x-loans-day-q3"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-13",
+        "b3x-u4-review-14",
+        "b3x-u4-review-15",
+        "b3x-u4-day-review-01"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-17",
+      "officialSection": "第二4イ",
+      "competency": "商品以外の代金債権債務",
+      "requiredSkill": "未収入金・未払金を売掛金・買掛金や経過勘定と区別する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "その他債権債務"
+      ],
+      "legacyEvidence": [
+        "b3-credit"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "objective-1"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-receivables",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "worked-1"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-receivables-q01",
+        "b3x-receivables-q02",
+        "b3x-receivables-q03",
+        "b3x-receivables-q04",
+        "b3x-asset-acquisition-q01",
+        "b3x-asset-acquisition-q02"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-01",
+        "b3x-asset-acquisition-review-01"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-18",
+      "officialSection": "第二4ウ",
+      "competency": "前払金・前受金",
+      "requiredSkill": "注文時の手付と引渡し時・残額決済の一連を仕訳する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "前払前受"
+      ],
+      "legacyEvidence": [
+        "b3-credit"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-advances",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-advances",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-advances",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-advances",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-advances",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-advances",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-advances",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-advances-q01",
+        "b3x-advances-q02",
+        "b3x-advances-q03",
+        "b3x-advances-q04",
+        "b3x-advances-q05",
+        "b3x-advances-q06",
+        "b3x-advances-q07",
+        "b3x-advances-q08",
+        "b3x-advances-q09",
+        "b3x-advances-q10",
+        "b3x-advances-q11",
+        "b3x-advances-q12",
+        "b3x-advances-q13",
+        "b3x-advances-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-16",
+        "b3x-u4-review-17",
+        "b3x-u4-review-18"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-19",
+      "officialSection": "第二4オ",
+      "competency": "立替と預り",
+      "requiredSkill": "会社負担と従業員負担を分け、精算・回収・納付で消去する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "立替預り"
+      ],
+      "legacyEvidence": [
+        "b3-credit"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-clearing-q01",
+        "b3x-clearing-q02",
+        "b3x-clearing-q03",
+        "b3x-clearing-q04",
+        "b3x-clearing-q10",
+        "b3x-clearing-q11",
+        "b3x-clearing-q12",
+        "b3x-clearing-q13",
+        "b3x-clearing-q14",
+        "b3x-payroll-q01",
+        "b3x-payroll-q02",
+        "b3x-payroll-q03",
+        "b3x-payroll-q04",
+        "b3x-payroll-q05",
+        "b3x-payroll-q06",
+        "b3x-payroll-q09",
+        "b3x-payroll-q10",
+        "b3x-payroll-q11",
+        "b3x-payroll-q13",
+        "b3x-payroll-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-19",
+        "b3x-u4-review-21",
+        "b3x-payroll-review-2",
+        "b3x-payroll-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-20",
+      "officialSection": "第二4カ",
+      "competency": "仮払金と仮受金",
+      "requiredSkill": "内容判明と差額精算をし、すでに計上した現預金を二重記帳しない。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "仮勘定"
+      ],
+      "legacyEvidence": [
+        "b3-credit"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-clearing",
+          "anchor": "worked-2"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-clearing-q01",
+        "b3x-clearing-q02",
+        "b3x-clearing-q03",
+        "b3x-clearing-q04",
+        "b3x-clearing-q05",
+        "b3x-clearing-q06",
+        "b3x-clearing-q07",
+        "b3x-clearing-q08",
+        "b3x-clearing-q09"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-19",
+        "b3x-u4-review-20"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-21",
+      "officialSection": "第二4キ",
+      "competency": "受取商品券",
+      "requiredSkill": "他社商品券による売上・現金併用・券発行者との精算を記録する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "商品券"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-card-vouchers",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-card-vouchers",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-card-vouchers-q10",
+        "b3x-card-vouchers-q11",
+        "b3x-card-vouchers-q12",
+        "b3x-card-vouchers-q13",
+        "b3x-card-vouchers-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-06"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-22",
+      "officialSection": "第二4ク",
+      "competency": "差入保証金",
+      "requiredSkill": "返還請求権を家賃から分け、指定の返還・控除条件を処理する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "保証金"
+      ],
+      "legacyEvidence": [
+        "b3-credit: paragraph only"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-deposits",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-deposits",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-deposits",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-deposits",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-deposits",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-deposits",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-deposits",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-deposits-q01",
+        "b3x-deposits-q02",
+        "b3x-deposits-q03",
+        "b3x-deposits-q04",
+        "b3x-deposits-q05",
+        "b3x-deposits-q06",
+        "b3x-deposits-q07",
+        "b3x-deposits-q08",
+        "b3x-deposits-q09",
+        "b3x-deposits-q10",
+        "b3x-deposits-q11",
+        "b3x-deposits-q12",
+        "b3x-deposits-q13",
+        "b3x-deposits-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-22",
+        "b3x-u4-review-23",
+        "b3x-u4-review-24"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-23",
+      "officialSection": "第二5アオ",
+      "competency": "約束手形と手形記入帳",
+      "requiredSkill": "受入・振出・期日決済を両者の立場から記録し、受取・支払手形記入帳を埋める。",
+      "applicability": "through 2027-03-31",
+      "sourceIds": [
+        "b3-scope2026"
+      ],
+      "proposedLessonTopics": [
+        "手形と手形台帳"
+      ],
+      "legacyEvidence": [
+        "b3-credit: short"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-bills",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-bills",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-bills",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-bills",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-bills",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-bills",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-bills",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-bills-q01",
+        "b3x-bills-q02",
+        "b3x-bills-q03",
+        "b3x-bills-q04",
+        "b3x-bills-q05",
+        "b3x-bills-q06",
+        "b3x-bills-q07",
+        "b3x-bills-q08",
+        "b3x-bills-q09",
+        "b3x-bills-q10",
+        "b3x-bills-q11",
+        "b3x-bills-q12",
+        "b3x-bills-q13",
+        "b3x-bills-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-07",
+        "b3x-u4-review-08",
+        "b3x-u4-review-09"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-24",
+      "officialSection": "第二5カ",
+      "competency": "手形貸付金と手形借入金",
+      "requiredSkill": "金銭貸借の証拠と商品代金の決済手形を区別し、利息を記録する。",
+      "applicability": "through 2027-03-31",
+      "sourceIds": [
+        "b3-scope2026"
+      ],
+      "proposedLessonTopics": [
+        "手形貸付借入"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-loans",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-loans",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-loans-q10",
+        "b3x-loans-q11",
+        "b3x-loans-q12",
+        "b3x-loans-q13",
+        "b3x-loans-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-15"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-25",
+      "officialSection": "第二5エ／2027第二3エ",
+      "competency": "電子記録債権債務",
+      "requiredSkill": "掛債権債務からの発生と期日決済を記録する。譲渡割引を混在させない。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "電子記録"
+      ],
+      "legacyEvidence": [
+        "b3-credit"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-electronic",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-electronic",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-electronic",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-electronic",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-electronic",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-electronic",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-electronic",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-electronic-q01",
+        "b3x-electronic-q02",
+        "b3x-electronic-q03",
+        "b3x-electronic-q04",
+        "b3x-electronic-q05",
+        "b3x-electronic-q06",
+        "b3x-electronic-q07",
+        "b3x-electronic-q08",
+        "b3x-electronic-q09",
+        "b3x-electronic-q10",
+        "b3x-electronic-q11",
+        "b3x-electronic-q12",
+        "b3x-electronic-q13",
+        "b3x-electronic-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-10",
+        "b3x-u4-review-11",
+        "b3x-u4-review-12"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-26",
+      "officialSection": "第二6ア／2027第二3カ",
+      "competency": "クレジット売掛金と決済手数料",
+      "requiredSkill": "販売時または入金時の手数料計上という設問条件を使い分ける。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "クレジット"
+      ],
+      "legacyEvidence": [
+        "b3-credit"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-card-vouchers",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-card-vouchers",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-card-vouchers",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-card-vouchers",
+          "anchor": "worked-2"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-card-vouchers-q01",
+        "b3x-card-vouchers-q02",
+        "b3x-card-vouchers-q03",
+        "b3x-card-vouchers-q04",
+        "b3x-card-vouchers-q05",
+        "b3x-card-vouchers-q06",
+        "b3x-card-vouchers-q07",
+        "b3x-card-vouchers-q08",
+        "b3x-card-vouchers-q09"
+      ],
+      "reviewQuestionIds": [
+        "b3x-u4-review-04",
+        "b3x-u4-review-05"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-27",
+      "officialSection": "第二7ア／2027第二5ア",
+      "competency": "貸倒見積りと差額補充",
+      "requiredSkill": "修正後の対象債権、必要引当残高、既存残高、繰入戻入を区別する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "貸倒引当"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-bad-debt",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-bad-debt",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-bad-debt",
+          "anchor": "worked-5"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-bad-debt-q05",
+        "b3x-bad-debt-q06",
+        "b3x-bad-debt-q07",
+        "b3x-bad-debt-q08"
+      ],
+      "reviewQuestionIds": [
+        "b3x-bad-debt-r02"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-28",
+      "officialSection": "第二20／2027第二18",
+      "competency": "貸倒発生と償却債権取立益",
+      "requiredSkill": "発生年度・利用できる引当残高・不足額を判断し、後日回収を記録する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "貸倒発生"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-bad-debt",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-bad-debt",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-bad-debt",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-bad-debt",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-bad-debt-q01",
+        "b3x-bad-debt-q02",
+        "b3x-bad-debt-q03",
+        "b3x-bad-debt-q04",
+        "b3x-bad-debt-q09",
+        "b3x-bad-debt-q10",
+        "b3x-bad-debt-q11",
+        "b3x-bad-debt-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-bad-debt-r01",
+        "b3x-bad-debt-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-29",
+      "officialSection": "第二9ア／2027第二7ア",
+      "competency": "三分法による仕入売上",
+      "requiredSkill": "取得諸掛・発送費と負担者、現金掛け併用を含む売買を複合仕訳する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "商品売買"
+      ],
+      "legacyEvidence": [
+        "b3-inventory"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-sales",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-sales",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-sales",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-sales",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-incidental",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-purchases-q01",
+        "b3x-purchases-q02",
+        "b3x-purchases-q03",
+        "b3x-purchases-q04",
+        "b3x-purchases-q05",
+        "b3x-purchases-q06",
+        "b3x-purchases-q07",
+        "b3x-purchases-q08",
+        "b3x-purchases-q12",
+        "b3x-purchases-q14",
+        "b3x-sales-q01",
+        "b3x-sales-q02",
+        "b3x-sales-q03",
+        "b3x-sales-q04",
+        "b3x-sales-q05",
+        "b3x-sales-q06",
+        "b3x-sales-q07",
+        "b3x-sales-q08",
+        "b3x-sales-q11",
+        "b3x-sales-q12",
+        "b3x-sales-q14",
+        "b3x-incidental-q01",
+        "b3x-incidental-q02",
+        "b3x-incidental-q03",
+        "b3x-incidental-q04",
+        "b3x-incidental-q05",
+        "b3x-incidental-q06",
+        "b3x-incidental-q07",
+        "b3x-incidental-q08",
+        "b3x-incidental-q09",
+        "b3x-incidental-q10",
+        "b3x-incidental-q11",
+        "b3x-incidental-q12",
+        "b3x-incidental-q13",
+        "b3x-incidental-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-purchases-review-1",
+        "b3x-purchases-review-2",
+        "b3x-sales-review-1",
+        "b3x-sales-review-2",
+        "b3x-incidental-review-1",
+        "b3x-incidental-review-2",
+        "b3x-incidental-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-30",
+      "officialSection": "第二9エ／2027第二7エ",
+      "competency": "仕入返品・売上返品",
+      "requiredSkill": "元の取引と決済状況を読み、戻すべき科目と金額を決める。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "商品返品"
+      ],
+      "legacyEvidence": [
+        "b3-inventory"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-returns",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-returns",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-returns-q01",
+        "b3x-returns-q02",
+        "b3x-returns-q03",
+        "b3x-returns-q04",
+        "b3x-returns-q05",
+        "b3x-returns-q06",
+        "b3x-returns-q07",
+        "b3x-returns-q08",
+        "b3x-returns-q09",
+        "b3x-returns-q10",
+        "b3x-returns-q11",
+        "b3x-returns-q12",
+        "b3x-returns-q13",
+        "b3x-returns-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-returns-review-1",
+        "b3x-returns-review-2",
+        "b3x-returns-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-31",
+      "officialSection": "第二9カ／2027第二7カ",
+      "competency": "仕入帳と売上帳",
+      "requiredSkill": "原価と売価を分け明細と返品を記録し、純仕入純売上を集計する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "仕入帳売上帳"
+      ],
+      "legacyEvidence": [
+        "b3-books: mentioned"
+      ],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-sales",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-purchases",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-sales",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-sales",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-returns",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-purchases-q09",
+        "b3x-purchases-q10",
+        "b3x-purchases-q11",
+        "b3x-purchases-q13",
+        "b3x-sales-q09",
+        "b3x-sales-q10",
+        "b3x-sales-q13",
+        "b3x-returns-q09",
+        "b3x-returns-q10",
+        "b3x-returns-q11",
+        "b3x-returns-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-purchases-review-3",
+        "b3x-sales-review-3",
+        "b3x-returns-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-32",
+      "officialSection": "第二9キ／2027第二7キ",
+      "competency": "先入先出法の商品有高帳",
+      "requiredSkill": "複数層の払出を時系列で追い、数量・原価・残高の帳簿全体を作る。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "先入先出"
+      ],
+      "legacyEvidence": [
+        "b3-inventory"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-fifo",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-fifo",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-fifo",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-fifo",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-fifo",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-fifo",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-fifo",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-fifo-q01",
+        "b3x-fifo-q02",
+        "b3x-fifo-q03",
+        "b3x-fifo-q04",
+        "b3x-fifo-q05",
+        "b3x-fifo-q06",
+        "b3x-fifo-q07",
+        "b3x-fifo-q08",
+        "b3x-fifo-q09",
+        "b3x-fifo-q10",
+        "b3x-fifo-q11",
+        "b3x-fifo-q12",
+        "b3x-fifo-q13",
+        "b3x-fifo-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-fifo-review-1",
+        "b3x-fifo-review-2",
+        "b3x-fifo-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-33",
+      "officialSection": "第二9キ／2027第二7キ",
+      "competency": "移動平均法の商品有高帳",
+      "requiredSkill": "受入時に更新し払出時は保持する単価を用い、端数処理の指示に従う。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "移動平均"
+      ],
+      "legacyEvidence": [
+        "b3-inventory"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-moving-average",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-moving-average",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-moving-average",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-moving-average",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-moving-average",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-moving-average",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-moving-average",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-moving-average-q01",
+        "b3x-moving-average-q02",
+        "b3x-moving-average-q03",
+        "b3x-moving-average-q04",
+        "b3x-moving-average-q05",
+        "b3x-moving-average-q06",
+        "b3x-moving-average-q07",
+        "b3x-moving-average-q08",
+        "b3x-moving-average-q09",
+        "b3x-moving-average-q10",
+        "b3x-moving-average-q11",
+        "b3x-moving-average-q12",
+        "b3x-moving-average-q13",
+        "b3x-moving-average-q14",
+        "b3x-moving-average-q15"
+      ],
+      "reviewQuestionIds": [
+        "b3x-moving-average-review-1",
+        "b3x-moving-average-review-2",
+        "b3x-moving-average-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-34",
+      "officialSection": "第二12ア／2027第二10ア",
+      "competency": "固定資産の取得",
+      "requiredSkill": "本体・付随費用の取得原価、土地と建物配分、後払いの科目を決める。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "固定資産取得"
+      ],
+      "legacyEvidence": [
+        "b3-assets"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-asset-acquisition-q01",
+        "b3x-asset-acquisition-q02",
+        "b3x-asset-acquisition-q03",
+        "b3x-asset-acquisition-q04",
+        "b3x-asset-acquisition-q05",
+        "b3x-asset-acquisition-q06",
+        "b3x-asset-acquisition-q07",
+        "b3x-asset-acquisition-q08"
+      ],
+      "reviewQuestionIds": [
+        "b3x-asset-acquisition-review-01",
+        "b3x-asset-acquisition-review-02"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-35",
+      "officialSection": "第二12オ／2027第二10オ",
+      "competency": "定額法と間接法",
+      "requiredSkill": "月割・残存価額・耐用年数を読み、費用と累計額を区別して記録する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "減価償却"
+      ],
+      "legacyEvidence": [
+        "b3-assets"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-depreciation",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-depreciation",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-depreciation",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-depreciation",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-depreciation",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-depreciation",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-depreciation-q01",
+        "b3x-depreciation-q02",
+        "b3x-depreciation-q03",
+        "b3x-depreciation-q04",
+        "b3x-depreciation-q05",
+        "b3x-depreciation-q06",
+        "b3x-depreciation-q07",
+        "b3x-depreciation-q08",
+        "b3x-depreciation-q09",
+        "b3x-depreciation-q10",
+        "b3x-depreciation-q11",
+        "b3x-depreciation-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-depreciation-review-01",
+        "b3x-depreciation-review-02",
+        "b3x-depreciation-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-36",
+      "officialSection": "第二12イ／2027第二10イ",
+      "competency": "期中売却",
+      "requiredSkill": "当期償却を先に反映し取得原価・累計額を消去、代金との差で損益を求める。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "固定資産売却"
+      ],
+      "legacyEvidence": [
+        "b3-assets"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-asset-sale-q01",
+        "b3x-asset-sale-q02",
+        "b3x-asset-sale-q03",
+        "b3x-asset-sale-q04",
+        "b3x-asset-sale-q05",
+        "b3x-asset-sale-q06",
+        "b3x-asset-sale-q07",
+        "b3x-asset-sale-q08",
+        "b3x-asset-sale-q09",
+        "b3x-asset-sale-q10",
+        "b3x-asset-sale-q11",
+        "b3x-asset-sale-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-asset-sale-review-01",
+        "b3x-asset-sale-review-02",
+        "b3x-asset-sale-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-37",
+      "officialSection": "第二12ク／2027第二10ク",
+      "competency": "固定資産台帳",
+      "requiredSkill": "資産別の期首残高・取得・償却・売却を時系列で追い欠落額を逆算する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "固定資産台帳"
+      ],
+      "legacyEvidence": [
+        "b3-assets: mention and simple example"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-asset-acquisition",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-asset-sale",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-asset-acquisition-q09",
+        "b3x-asset-acquisition-q10",
+        "b3x-asset-acquisition-q11",
+        "b3x-asset-acquisition-q12",
+        "b3x-asset-sale-q09",
+        "b3x-asset-sale-q10"
+      ],
+      "reviewQuestionIds": [
+        "b3x-asset-acquisition-review-03",
+        "b3x-asset-sale-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-38",
+      "officialSection": "第二20／2027第二18",
+      "competency": "日常の収益と費用",
+      "requiredSkill": "手数料・家賃地代・広告・交通通信・消耗品等を内容から選び期中処理する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "収益費用"
+      ],
+      "legacyEvidence": [
+        "b3-credit",
+        "b3-accrual: scattered"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-expenses",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-expenses",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-expenses",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-expenses",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-expenses",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-expenses",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-expenses",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-expenses-q01",
+        "b3x-expenses-q02",
+        "b3x-expenses-q03",
+        "b3x-expenses-q04",
+        "b3x-expenses-q05",
+        "b3x-expenses-q06",
+        "b3x-expenses-q07",
+        "b3x-expenses-q08",
+        "b3x-expenses-q09",
+        "b3x-expenses-q10",
+        "b3x-expenses-q11",
+        "b3x-expenses-q12",
+        "b3x-expenses-q13",
+        "b3x-expenses-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-expenses-review-1",
+        "b3x-expenses-review-2",
+        "b3x-expenses-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-39",
+      "officialSection": "第二20／2027第二18",
+      "competency": "給与と社会保険",
+      "requiredSkill": "総支給・控除・手取を分け会社負担の法定福利費と預り納付を仕訳する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "給与社会保険"
+      ],
+      "legacyEvidence": [
+        "b3-credit: brief"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-payroll",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-payroll-q01",
+        "b3x-payroll-q02",
+        "b3x-payroll-q03",
+        "b3x-payroll-q04",
+        "b3x-payroll-q05",
+        "b3x-payroll-q06",
+        "b3x-payroll-q07",
+        "b3x-payroll-q08",
+        "b3x-payroll-q09",
+        "b3x-payroll-q10",
+        "b3x-payroll-q11",
+        "b3x-payroll-q12",
+        "b3x-payroll-q13",
+        "b3x-payroll-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-payroll-review-1",
+        "b3x-payroll-review-2",
+        "b3x-payroll-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-40",
+      "officialSection": "第二21ア／2027第二19ア",
+      "competency": "租税公課",
+      "requiredSkill": "固定資産税・収入印紙等を法人税等や消費税仮勘定と区別する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "租税公課"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "objective-4"
+        },
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-corporate-tax-q13",
+        "b3x-corporate-tax-q14",
+        "b3x-corporate-tax-q15",
+        "b3x-supplies-q09",
+        "b3x-supplies-q10",
+        "b3x-supplies-q11",
+        "b3x-supplies-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-corporate-tax-review-04",
+        "b3x-corporate-tax-review-05",
+        "b3x-supplies-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-41",
+      "officialSection": "第二21イ／2027第二19イ",
+      "competency": "法人税等",
+      "requiredSkill": "示された税額や計算条件による当期費用と中間仮払、期末未払、納付を区別する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "法人税等"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-corporate-tax",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-corporate-tax-q01",
+        "b3x-corporate-tax-q02",
+        "b3x-corporate-tax-q03",
+        "b3x-corporate-tax-q04",
+        "b3x-corporate-tax-q05",
+        "b3x-corporate-tax-q06",
+        "b3x-corporate-tax-q07",
+        "b3x-corporate-tax-q08",
+        "b3x-corporate-tax-q09",
+        "b3x-corporate-tax-q10",
+        "b3x-corporate-tax-q11",
+        "b3x-corporate-tax-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-corporate-tax-review-01",
+        "b3x-corporate-tax-review-02",
+        "b3x-corporate-tax-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-42",
+      "officialSection": "第二21ウ／2027第二19ウ",
+      "competency": "税抜方式の消費税",
+      "requiredSkill": "税込金額の分解、指定税率、売買取引、返品、仮受仮払の期末整理を仕訳する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "消費税"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments: settlement only"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-consumption-tax",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-consumption-tax",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-consumption-tax",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-consumption-tax",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-consumption-tax",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-consumption-tax",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-consumption-tax-q01",
+        "b3x-consumption-tax-q02",
+        "b3x-consumption-tax-q03",
+        "b3x-consumption-tax-q04",
+        "b3x-consumption-tax-q05",
+        "b3x-consumption-tax-q06",
+        "b3x-consumption-tax-q07",
+        "b3x-consumption-tax-q08",
+        "b3x-consumption-tax-q09",
+        "b3x-consumption-tax-q10",
+        "b3x-consumption-tax-q11",
+        "b3x-consumption-tax-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-consumption-tax-review-01",
+        "b3x-consumption-tax-review-02",
+        "b3x-consumption-tax-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-43",
+      "officialSection": "第三1",
+      "competency": "三種類の試算表",
+      "requiredSkill": "期間の総勘定元帳から合計・残高・合計残高を自力で作る。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "試算表"
+      ],
+      "legacyEvidence": [
+        "b3-books: small cash example"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-trial-balance",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-trial-balance",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-trial-balance",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-trial-balance",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-trial-balance",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-trial-balance",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-trial-balance",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-trial-balance-q01",
+        "b3x-trial-balance-q02",
+        "b3x-trial-balance-q03",
+        "b3x-trial-balance-q04",
+        "b3x-trial-balance-q05",
+        "b3x-trial-balance-q06",
+        "b3x-trial-balance-q07",
+        "b3x-trial-balance-q08",
+        "b3x-trial-balance-q09",
+        "b3x-trial-balance-q10",
+        "b3x-trial-balance-q11",
+        "b3x-trial-balance-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-trial-balance-r01",
+        "b3x-trial-balance-r02",
+        "b3x-trial-balance-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-44",
+      "officialSection": "第三1の手続",
+      "competency": "未記帳・誤記の修正",
+      "requiredSkill": "本来あるべき残高との差を仕訳し、貸借一致だけでは見つからない誤りを検証する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "訂正仕訳"
+      ],
+      "legacyEvidence": [
+        "b3-books"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-corrections",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-corrections",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-corrections",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-corrections",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-corrections",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-corrections",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-corrections-q01",
+        "b3x-corrections-q02",
+        "b3x-corrections-q03",
+        "b3x-corrections-q04",
+        "b3x-corrections-q05",
+        "b3x-corrections-q06",
+        "b3x-corrections-q07",
+        "b3x-corrections-q08",
+        "b3x-corrections-q09",
+        "b3x-corrections-q10",
+        "b3x-corrections-q11",
+        "b3x-corrections-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-corrections-r01",
+        "b3x-corrections-r02",
+        "b3x-corrections-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-45",
+      "officialSection": "第三2",
+      "competency": "8桁精算表",
+      "requiredSkill": "試算表・修正・損益・貸借の全欄を埋め利益損失の位置を検算する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "精算表"
+      ],
+      "legacyEvidence": [
+        "b3-statements: isolated values only"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-worksheet",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-worksheet",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-worksheet",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-worksheet",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-worksheet",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-worksheet",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-worksheet-q01",
+        "b3x-worksheet-q02",
+        "b3x-worksheet-q03",
+        "b3x-worksheet-q04",
+        "b3x-worksheet-q05",
+        "b3x-worksheet-q06",
+        "b3x-worksheet-q07",
+        "b3x-worksheet-q08",
+        "b3x-worksheet-q09",
+        "b3x-worksheet-q10",
+        "b3x-worksheet-q11",
+        "b3x-worksheet-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-worksheet-review-01",
+        "b3x-worksheet-review-02",
+        "b3x-worksheet-review-03",
+        "b3x-case-a-review-2"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [
+        "b3x-closing-case-a-q08",
+        "b3x-closing-case-a-q09",
+        "b3x-closing-case-a-q10",
+        "b3x-closing-case-a-q11",
+        "b3x-closing-case-a-q12",
+        "b3x-closing-case-a-q13",
+        "b3x-closing-case-a-q14"
+      ],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-46",
+      "officialSection": "第三3",
+      "competency": "当座借越の整理",
+      "requiredSkill": "期末貸方残高を負債へ振替え、翌期開始を指定方式で処理する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "借越整理"
+      ],
+      "legacyEvidence": [
+        "b3-cash"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-bank",
+          "anchor": "objective-4"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-bank",
+          "anchor": "worked-5"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-bank-closing-q1",
+        "b3x-bank-closing-q2",
+        "b3x-bank-closing-q3"
+      ],
+      "reviewQuestionIds": [
+        "b3x-bank-closing-review-1",
+        "b3x-bank-closing-review-2"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-47",
+      "officialSection": "第三3",
+      "competency": "棚卸と売上原価",
+      "requiredSkill": "期首・純仕入・期末をつなぎ仕入勘定または指定原価勘定で整理する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "売上原価整理"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments",
+        "b3-inventory"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-closing-inventory",
+          "anchor": "worked-5"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-closing-inventory-q01",
+        "b3x-closing-inventory-q02",
+        "b3x-closing-inventory-q03",
+        "b3x-closing-inventory-q04",
+        "b3x-closing-inventory-q05",
+        "b3x-closing-inventory-q06",
+        "b3x-closing-inventory-q07",
+        "b3x-closing-inventory-q08",
+        "b3x-closing-inventory-q09",
+        "b3x-closing-inventory-q10",
+        "b3x-closing-inventory-q11",
+        "b3x-closing-inventory-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-closing-inventory-r01",
+        "b3x-closing-inventory-r02",
+        "b3x-closing-inventory-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-48",
+      "officialSection": "第三3",
+      "competency": "貯蔵品の棚卸",
+      "requiredSkill": "購入時費用と資産の二方式、切手印紙等未使用分の整理を行う。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "貯蔵品"
+      ],
+      "legacyEvidence": [
+        "b3-accrual",
+        "b3-adjustments"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-closing-adjustments",
+          "anchor": "objective-1"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-supplies",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-closing-adjustments",
+          "anchor": "worked-1"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-supplies-q01",
+        "b3x-supplies-q02",
+        "b3x-supplies-q03",
+        "b3x-supplies-q04",
+        "b3x-supplies-q05",
+        "b3x-supplies-q06",
+        "b3x-supplies-q07",
+        "b3x-supplies-q08",
+        "b3x-supplies-q09",
+        "b3x-supplies-q10",
+        "b3x-supplies-q11",
+        "b3x-supplies-q12",
+        "b3x-closing-adjustments-q01",
+        "b3x-closing-adjustments-q02",
+        "b3x-closing-adjustments-q03",
+        "b3x-closing-adjustments-q04"
+      ],
+      "reviewQuestionIds": [
+        "b3x-supplies-review-01",
+        "b3x-supplies-review-02",
+        "b3x-supplies-review-03",
+        "b3x-closing-adjustments-r01"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-49",
+      "officialSection": "第三3",
+      "competency": "費用の前払と未払",
+      "requiredSkill": "支払と対応期間を区別し、変更額・異なる支払周期を含め当期分を計算する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "費用経過"
+      ],
+      "legacyEvidence": [
+        "b3-accrual"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-expense-accrual",
+          "anchor": "worked-5"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-expense-accrual-q01",
+        "b3x-expense-accrual-q02",
+        "b3x-expense-accrual-q03",
+        "b3x-expense-accrual-q04",
+        "b3x-expense-accrual-q05",
+        "b3x-expense-accrual-q06",
+        "b3x-expense-accrual-q07",
+        "b3x-expense-accrual-q08",
+        "b3x-expense-accrual-q09",
+        "b3x-expense-accrual-q10",
+        "b3x-expense-accrual-q11",
+        "b3x-expense-accrual-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-expense-accrual-r01",
+        "b3x-expense-accrual-r02",
+        "b3x-expense-accrual-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-50",
+      "officialSection": "第三3",
+      "competency": "収益の前受と未収",
+      "requiredSkill": "入金と発生を区別し、期末負債または資産を残す。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "収益経過"
+      ],
+      "legacyEvidence": [
+        "b3-accrual"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-revenue-accrual",
+          "anchor": "worked-5"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-revenue-accrual-q01",
+        "b3x-revenue-accrual-q02",
+        "b3x-revenue-accrual-q03",
+        "b3x-revenue-accrual-q04",
+        "b3x-revenue-accrual-q05",
+        "b3x-revenue-accrual-q06",
+        "b3x-revenue-accrual-q07",
+        "b3x-revenue-accrual-q08",
+        "b3x-revenue-accrual-q09",
+        "b3x-revenue-accrual-q10",
+        "b3x-revenue-accrual-q11",
+        "b3x-revenue-accrual-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-revenue-accrual-r01",
+        "b3x-revenue-accrual-r02",
+        "b3x-revenue-accrual-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-51",
+      "officialSection": "第三3",
+      "competency": "再振替と翌期精算",
+      "requiredSkill": "前期末・翌期首・現金決済を連続記帳し当期損益への影響を説明する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "再振替"
+      ],
+      "legacyEvidence": [
+        "b3-accrual: two examples"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-reversal",
+          "anchor": "worked-5"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-reversal-q01",
+        "b3x-reversal-q02",
+        "b3x-reversal-q03",
+        "b3x-reversal-q04",
+        "b3x-reversal-q05",
+        "b3x-reversal-q06",
+        "b3x-reversal-q07",
+        "b3x-reversal-q08",
+        "b3x-reversal-q09",
+        "b3x-reversal-q10",
+        "b3x-reversal-q11",
+        "b3x-reversal-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-reversal-r01",
+        "b3x-reversal-r02",
+        "b3x-reversal-r03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-52",
+      "officialSection": "第三3※",
+      "competency": "月次決算の基礎",
+      "requiredSkill": "年次と月次の対象期間を読み分け、指示された月次配分と期末調整を行う。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "月次決算"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-closing-adjustments",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-closing-adjustments",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-closing-adjustments",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-closing-adjustments-q05",
+        "b3x-closing-adjustments-q06",
+        "b3x-closing-adjustments-q07",
+        "b3x-closing-adjustments-q08"
+      ],
+      "reviewQuestionIds": [
+        "b3x-closing-adjustments-r02"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-53",
+      "officialSection": "第三4",
+      "competency": "決算整理後残高試算表",
+      "requiredSkill": "複数の未処理事項と整理を反映し、科目別残高を最後まで作る。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "整理後試算表"
+      ],
+      "legacyEvidence": [
+        "b3-statements: explanation only"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-adjusted-trial",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-adjusted-trial",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-adjusted-trial",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-adjusted-trial",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-adjusted-trial",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-adjusted-trial",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-adjusted-trial-q01",
+        "b3x-adjusted-trial-q02",
+        "b3x-adjusted-trial-q03",
+        "b3x-adjusted-trial-q04",
+        "b3x-adjusted-trial-q05",
+        "b3x-adjusted-trial-q06",
+        "b3x-adjusted-trial-q07",
+        "b3x-adjusted-trial-q08",
+        "b3x-adjusted-trial-q09",
+        "b3x-adjusted-trial-q10",
+        "b3x-adjusted-trial-q11",
+        "b3x-adjusted-trial-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-adjusted-trial-review-01",
+        "b3x-adjusted-trial-review-02",
+        "b3x-adjusted-trial-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-54",
+      "officialSection": "第三5",
+      "competency": "損益勘定への集約",
+      "requiredSkill": "収益・費用を元帳上でゼロにし、損益の差額を算出する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "損益振替"
+      ],
+      "legacyEvidence": [
+        "b3-statements"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-closing-books",
+          "anchor": "objective-1"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-closing-books",
+          "anchor": "worked-1"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-closing-books-q01",
+        "b3x-closing-books-q02",
+        "b3x-closing-books-q03",
+        "b3x-closing-books-q04",
+        "b3x-closing-books-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-closing-books-review-01"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-55",
+      "officialSection": "第三6",
+      "competency": "利益・損失の剰余金振替",
+      "requiredSkill": "損益の差額を利益と損失の両方で純資産へ振替える。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "損益振替"
+      ],
+      "legacyEvidence": [
+        "b3-statements"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-closing-books",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-closing-books",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-closing-books-q05",
+        "b3x-closing-books-q06",
+        "b3x-closing-books-q07",
+        "b3x-closing-books-q08"
+      ],
+      "reviewQuestionIds": [
+        "b3x-closing-books-review-02",
+        "b3x-case-a-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [
+        "b3x-closing-case-a-q15",
+        "b3x-closing-case-a-q16",
+        "b3x-closing-case-a-q17",
+        "b3x-closing-case-a-q18",
+        "b3x-closing-case-a-q19",
+        "b3x-closing-case-a-q20",
+        "b3x-closing-case-a-q21"
+      ],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-56",
+      "officialSection": "第三8",
+      "competency": "帳簿締切と開始記入",
+      "requiredSkill": "主要簿の英米式締切と補助簿締切、前期繰越・次期繰越を記入する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "帳簿締切"
+      ],
+      "legacyEvidence": [
+        "b3-statements: conceptual only"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-closing-books",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-cash",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-closing-books",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-closing-books",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-ledger",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-petty-cash",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-closing-books-q09",
+        "b3x-closing-books-q10",
+        "b3x-closing-books-q11",
+        "b3x-closing-books-q13",
+        "b3x-closing-books-q14",
+        "b3x-ledger-q05",
+        "b3x-ledger-q06",
+        "b3x-ledger-q07",
+        "b3x-ledger-q08",
+        "b3x-cash-q08",
+        "b3x-cash-q09",
+        "b3x-cash-q12",
+        "b3x-cash-q14",
+        "b3x-petty-cash-q07",
+        "b3x-petty-cash-q08",
+        "b3x-petty-cash-q09",
+        "b3x-petty-cash-q11",
+        "b3x-petty-cash-q14"
+      ],
+      "reviewQuestionIds": [
+        "b3x-closing-books-review-03",
+        "b3x-closing-books-review-04",
+        "b3x-closing-books-review-05",
+        "b3x-ledger-r02",
+        "b3x-cash-review-3",
+        "b3x-petty-cash-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-57",
+      "officialSection": "第三9",
+      "competency": "勘定式の貸借対照表と損益計算書",
+      "requiredSkill": "調整後試算表から表示科目・控除項目を判断し両表を完成する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "財務諸表"
+      ],
+      "legacyEvidence": [
+        "b3-statements: simplified fragment"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-profit-loss",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-profit-loss",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-profit-loss",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-balance-sheet",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-balance-sheet",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-balance-sheet",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-profit-loss",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-profit-loss",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-profit-loss",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-balance-sheet",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-balance-sheet",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-balance-sheet",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-profit-loss-q01",
+        "b3x-profit-loss-q02",
+        "b3x-profit-loss-q03",
+        "b3x-profit-loss-q04",
+        "b3x-profit-loss-q05",
+        "b3x-profit-loss-q06",
+        "b3x-profit-loss-q07",
+        "b3x-profit-loss-q08",
+        "b3x-profit-loss-q09",
+        "b3x-profit-loss-q10",
+        "b3x-profit-loss-q11",
+        "b3x-profit-loss-q12",
+        "b3x-balance-sheet-q01",
+        "b3x-balance-sheet-q02",
+        "b3x-balance-sheet-q03",
+        "b3x-balance-sheet-q04",
+        "b3x-balance-sheet-q05",
+        "b3x-balance-sheet-q06",
+        "b3x-balance-sheet-q07",
+        "b3x-balance-sheet-q08",
+        "b3x-balance-sheet-q09",
+        "b3x-balance-sheet-q10",
+        "b3x-balance-sheet-q11",
+        "b3x-balance-sheet-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-profit-loss-review-01",
+        "b3x-profit-loss-review-02",
+        "b3x-profit-loss-review-03",
+        "b3x-balance-sheet-review-01",
+        "b3x-balance-sheet-review-02",
+        "b3x-balance-sheet-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-58",
+      "officialSection": "第三1〜9の統合手続",
+      "competency": "連動する決算総合問題",
+      "requiredSkill": "未処理売買→債権債務→貸倒・税・棚卸・償却→損益→剰余金を整合させる。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "決算総合演習"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "objective-2"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "worked-2"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "worked-4"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-mock-a-f01",
+        "b3x-mock-a-f02",
+        "b3x-mock-a-f03",
+        "b3x-mock-a-f04",
+        "b3x-mock-a-f05",
+        "b3x-mock-a-f06",
+        "b3x-mock-a-f07",
+        "b3x-mock-a-f08",
+        "b3x-mock-a-f09",
+        "b3x-mock-a-f10",
+        "b3x-mock-a-f11",
+        "b3x-mock-a-f12",
+        "b3x-mock-a-f13",
+        "b3x-mock-a-f14",
+        "b3x-mock-a-f15",
+        "b3x-mock-a-f16",
+        "b3x-mock-a-f17",
+        "b3x-mock-a-f18",
+        "b3x-mock-a-f19",
+        "b3x-mock-a-f20",
+        "b3x-mock-a-f21",
+        "b3x-mock-a-f22",
+        "b3x-mock-a-f23",
+        "b3x-mock-b-f01",
+        "b3x-mock-b-f02",
+        "b3x-mock-b-f03",
+        "b3x-mock-b-f04",
+        "b3x-mock-b-f05",
+        "b3x-mock-b-f06",
+        "b3x-mock-b-f07",
+        "b3x-mock-b-f08",
+        "b3x-mock-b-f09",
+        "b3x-mock-b-f10",
+        "b3x-mock-b-f11",
+        "b3x-mock-b-f12",
+        "b3x-mock-b-f13",
+        "b3x-mock-b-f14",
+        "b3x-mock-b-f15",
+        "b3x-mock-b-f16",
+        "b3x-mock-b-f17",
+        "b3x-mock-b-f18",
+        "b3x-mock-b-f19",
+        "b3x-mock-b-f20",
+        "b3x-mock-b-f21",
+        "b3x-mock-b-f22",
+        "b3x-mock-b-f23"
+      ],
+      "reviewQuestionIds": [
+        "b3x-case-a-review-1",
+        "b3x-case-a-review-2",
+        "b3x-case-a-review-3",
+        "b3x-closing-case-b-review-1",
+        "b3x-closing-case-b-review-2",
+        "b3x-closing-case-b-review-3"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [
+        "b3x-closing-case-a-q01",
+        "b3x-closing-case-a-q02",
+        "b3x-closing-case-a-q03",
+        "b3x-closing-case-a-q04",
+        "b3x-closing-case-a-q05",
+        "b3x-closing-case-a-q06",
+        "b3x-closing-case-a-q07",
+        "b3x-closing-case-a-q08",
+        "b3x-closing-case-a-q09",
+        "b3x-closing-case-a-q10",
+        "b3x-closing-case-a-q11",
+        "b3x-closing-case-a-q12",
+        "b3x-closing-case-a-q13",
+        "b3x-closing-case-a-q14",
+        "b3x-closing-case-a-q15",
+        "b3x-closing-case-a-q16",
+        "b3x-closing-case-a-q17",
+        "b3x-closing-case-a-q18",
+        "b3x-closing-case-a-q19",
+        "b3x-closing-case-a-q20",
+        "b3x-closing-case-a-q21",
+        "b3x-closing-case-b-q01",
+        "b3x-closing-case-b-q02",
+        "b3x-closing-case-b-q03",
+        "b3x-closing-case-b-q04",
+        "b3x-closing-case-b-q05",
+        "b3x-closing-case-b-q06",
+        "b3x-closing-case-b-q07",
+        "b3x-closing-case-b-q08",
+        "b3x-closing-case-b-q09",
+        "b3x-closing-case-b-q10",
+        "b3x-closing-case-b-q11",
+        "b3x-closing-case-b-q12",
+        "b3x-closing-case-b-q13",
+        "b3x-closing-case-b-q14",
+        "b3x-closing-case-b-q15",
+        "b3x-closing-case-b-q16",
+        "b3x-closing-case-b-q17",
+        "b3x-closing-case-b-q18",
+        "b3x-closing-case-b-q19",
+        "b3x-closing-case-b-q20",
+        "b3x-closing-case-b-q21",
+        "b3x-closing-case-b-q22"
+      ],
+      "independentPracticeAnchors": [
+        {
+          "lesson": "b3x-closing-case-a",
+          "anchor": "worked-4"
+        },
+        {
+          "lesson": "b3x-closing-case-b",
+          "anchor": "independent-practice"
+        }
+      ]
+    },
+    {
+      "id": "b3c-59",
+      "officialSection": "第四1アイ",
+      "competency": "株式会社の設立と増資",
+      "requiredSkill": "発行払込額全額を資本金とする3級条件で仕訳し収益と区別する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "株式会社"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments: verbal"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-capital",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-capital",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-capital",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-capital",
+          "anchor": "worked-2"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-capital-q01",
+        "b3x-capital-q02",
+        "b3x-capital-q03",
+        "b3x-capital-q04",
+        "b3x-capital-q05",
+        "b3x-capital-q06",
+        "b3x-capital-q07",
+        "b3x-capital-q08"
+      ],
+      "reviewQuestionIds": [
+        "b3x-capital-review-01",
+        "b3x-capital-review-02"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-60",
+      "officialSection": "第四3",
+      "competency": "利益剰余金の内訳",
+      "requiredSkill": "利益準備金と繰越利益剰余金、当期利益と累積利益の違いを計算で確かめる。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "利益剰余金"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments",
+        "b3-statements"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-capital",
+          "anchor": "objective-3"
+        },
+        {
+          "lesson": "b3x-dividends",
+          "anchor": "objective-3"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-capital",
+          "anchor": "worked-3"
+        },
+        {
+          "lesson": "b3x-dividends",
+          "anchor": "worked-3"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-capital-q09",
+        "b3x-capital-q10",
+        "b3x-capital-q11",
+        "b3x-capital-q12",
+        "b3x-dividends-q08",
+        "b3x-dividends-q09",
+        "b3x-dividends-q10",
+        "b3x-dividends-q11",
+        "b3x-dividends-q12"
+      ],
+      "reviewQuestionIds": [
+        "b3x-capital-review-03",
+        "b3x-dividends-review-03"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-61",
+      "officialSection": "第四4ア※",
+      "competency": "配当決議と支払",
+      "requiredSkill": "積立額は提示条件を使い利益剰余金を処分し、未払配当金を決済する。",
+      "applicability": "2026 and 2027",
+      "sourceIds": [
+        "b3-scope2026",
+        "b3-scope2027"
+      ],
+      "proposedLessonTopics": [
+        "配当"
+      ],
+      "legacyEvidence": [
+        "b3-adjustments"
+      ],
+      "baselineStatus": "partial",
+      "releaseStatus": "implemented-and-independently-reviewed",
+      "teachingAnchors": [
+        {
+          "lesson": "b3x-dividends",
+          "anchor": "objective-1"
+        },
+        {
+          "lesson": "b3x-dividends",
+          "anchor": "objective-2"
+        }
+      ],
+      "workedExamples": [
+        {
+          "lesson": "b3x-dividends",
+          "anchor": "worked-1"
+        },
+        {
+          "lesson": "b3x-dividends",
+          "anchor": "worked-2"
+        }
+      ],
+      "independentQuestionIds": [
+        "b3x-dividends-q01",
+        "b3x-dividends-q02",
+        "b3x-dividends-q03",
+        "b3x-dividends-q04",
+        "b3x-dividends-q05",
+        "b3x-dividends-q06",
+        "b3x-dividends-q07"
+      ],
+      "reviewQuestionIds": [
+        "b3x-dividends-review-01",
+        "b3x-dividends-review-02"
+      ],
+      "reviewStatus": "Actual instruction, worked cases and fresh applied practice independently reviewed; all final semantic audit findings closed2026-10-28.",
+      "guidedCheckQuestionIds": [],
+      "independentPracticeAnchors": []
+    },
+    {
+      "id": "b3c-62",
+      "officialSection": "2027第二7イ",
+      "competency": "販売のつど行う売上原価振替",
+      "requiredSkill": "売上と商品原価を2本の仕訳で記録し返品時の原価戻しと在庫・利益を確認する。",
+      "applicability": "from 2027-04-01",
+      "sourceIds": [
+        "b3-scope2027",
+        "b3-changes2027"
+      ],
+      "proposedLessonTopics": [
+        "2027販売時原価"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "future-not-current",
+      "teachingAnchors": [],
+      "workedExamples": [],
+      "independentQuestionIds": [],
+      "reviewQuestionIds": [],
+      "reviewStatus": "Official announcement checked; not current2026 teaching coverage"
+    },
+    {
+      "id": "b3c-63",
+      "officialSection": "2027第二10ウ",
+      "competency": "固定資産の除却・廃棄",
+      "requiredSkill": "償却後帳簿価額の消去と指示された処分費用等を処理し売却と区別する。",
+      "applicability": "from 2027-04-01",
+      "sourceIds": [
+        "b3-scope2027",
+        "b3-changes2027"
+      ],
+      "proposedLessonTopics": [
+        "2027除却廃棄"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "future-not-current",
+      "teachingAnchors": [],
+      "workedExamples": [],
+      "independentQuestionIds": [],
+      "reviewQuestionIds": [],
+      "reviewStatus": "Official announcement checked; not current2026 teaching coverage"
+    },
+    {
+      "id": "b3c-64",
+      "officialSection": "2027第二10オ※",
+      "competency": "簡易な定率法",
+      "requiredSkill": "指定償却率と期首帳簿価額を使い複数年を追う。保証率・改定償却率を持ち込まない。",
+      "applicability": "from 2027-04-01",
+      "sourceIds": [
+        "b3-scope2027",
+        "b3-changes2027"
+      ],
+      "proposedLessonTopics": [
+        "2027定率法"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "future-not-current",
+      "teachingAnchors": [],
+      "workedExamples": [],
+      "independentQuestionIds": [],
+      "reviewQuestionIds": [],
+      "reviewStatus": "Official announcement checked; not current2026 teaching coverage"
+    },
+    {
+      "id": "b3c-65",
+      "officialSection": "2027第二3カ／18",
+      "competency": "キャッシュレスと不動産賃貸借の整理",
+      "requiredSkill": "紙決済削除後も残る当座預金等を識別し、3級は家賃地代を賃貸借処理する。",
+      "applicability": "from 2027-04-01",
+      "sourceIds": [
+        "b3-scope2027",
+        "b3-changes2027",
+        "b3-accounts2027"
+      ],
+      "proposedLessonTopics": [
+        "2027年度差分"
+      ],
+      "legacyEvidence": [],
+      "baselineStatus": "gap",
+      "releaseStatus": "future-not-current",
+      "teachingAnchors": [],
+      "workedExamples": [],
+      "independentQuestionIds": [],
+      "reviewQuestionIds": [],
+      "reviewStatus": "Official announcement checked; not current2026 teaching coverage"
+    }
+  ],
+  "legacyAudit": [
+    {
+      "id": "b3-accrual",
+      "title": "前払・未払・未収・前受を期間で判断する",
+      "bodyNonWhitespaceCharacters": 2604,
+      "questionCount": 4,
+      "questions": [
+        "b3-accrual-q1",
+        "b3-accrual-q2",
+        "b3-accrual-q3",
+        "b3-accrual-q4"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    },
+    {
+      "id": "b3-adjustments",
+      "title": "商品棚卸・貸倒引当金・税金と純資産の整理",
+      "bodyNonWhitespaceCharacters": 2617,
+      "questionCount": 4,
+      "questions": [
+        "b3-adjustments-q1",
+        "b3-adjustments-q2",
+        "b3-adjustments-q3",
+        "b3-adjustments-q4"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    },
+    {
+      "id": "b3-assets",
+      "title": "固定資産の取得・減価償却・売却をつなげる",
+      "bodyNonWhitespaceCharacters": 2648,
+      "questionCount": 4,
+      "questions": [
+        "b3-assets-q1",
+        "b3-assets-q2",
+        "b3-assets-q3",
+        "b3-assets-q4"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    },
+    {
+      "id": "b3-books",
+      "title": "帳簿・訂正仕訳・伝票を使って試算表を作る",
+      "bodyNonWhitespaceCharacters": 2701,
+      "questionCount": 4,
+      "questions": [
+        "b3-books-q1",
+        "b3-books-q2",
+        "b3-books-q3",
+        "b3-books-q4"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    },
+    {
+      "id": "b3-cash",
+      "title": "現金・預金・小口現金と現金過不足",
+      "bodyNonWhitespaceCharacters": 2569,
+      "questionCount": 4,
+      "questions": [
+        "b3-cash-q1",
+        "b3-cash-q2",
+        "b3-cash-q3",
+        "b3-cash-q4"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    },
+    {
+      "id": "b3-credit",
+      "title": "売掛金・手形・前払金などを取引内容で読み分ける",
+      "bodyNonWhitespaceCharacters": 2902,
+      "questionCount": 5,
+      "questions": [
+        "b3-credit-q1",
+        "b3-credit-q2",
+        "b3-credit-q3",
+        "b3-credit-q4",
+        "b3-credit-q5"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    },
+    {
+      "id": "b3-inventory",
+      "title": "三分法・返品と商品有高帳の先入先出法・移動平均法",
+      "bodyNonWhitespaceCharacters": 2579,
+      "questionCount": 4,
+      "questions": [
+        "b3-inventory-q1",
+        "b3-inventory-q2",
+        "b3-inventory-q3",
+        "b3-inventory-q4"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    },
+    {
+      "id": "b3-statements",
+      "title": "精算表から損益計算書・貸借対照表と帳簿の締切へ",
+      "bodyNonWhitespaceCharacters": 2701,
+      "questionCount": 4,
+      "questions": [
+        "b3-statements-q1",
+        "b3-statements-q2",
+        "b3-statements-q3",
+        "b3-statements-q4"
+      ],
+      "status": "partial overview: retain accurate material but do not treat as new-course completion"
+    }
+  ],
+  "legacyMock": {
+    "id": "boki-3-mock",
+    "items": 25,
+    "groups": {
+      "第3題・決算整理と表示（独自40点）": 40,
+      "第2題・帳簿と残高（独自20点）": 20,
+      "第1題・仕訳（独自40点）": 40
+    },
+    "limitation": "Independent short targets, no complete 15-transaction journal or full table production; not sufficient full-exam format."
+  },
+  "outOfScope": [
+    "銀行勘定調整表",
+    "有価証券の売買・期末評価",
+    "手形更改・不渡・裏書・割引",
+    "電子記録債権の譲渡・割引",
+    "棚卸減耗・商品評価損",
+    "総平均法",
+    "役務収益・役務原価を含む2級の収益認識手続",
+    "未決算による火災保険処理",
+    "固定資産の直接法・生産高比例法",
+    "リースのオンバランス処理",
+    "外貨換算",
+    "税効果会計",
+    "本支店・連結",
+    "準備金積立額の会社法上の算定・分配可能額の計算"
+  ],
+  "legacyIssues": [
+    {
+      "id": "b3-credit-q5",
+      "issue": "未決算・火災損失 is outside grade3 in both2026 and2027 detailed columns.",
+      "action": "Remove out-of-scope section from current lesson; retain old assessment version/history separately. Preserve all useful legacy page IDs and completion records without completing new lessons."
+    },
+    {
+      "id": "b3-inventory-q2",
+      "issue": "Prompt relies on preceding sameconditions item.",
+      "action": "Keep archived history; any actively offered revision must state allconditions and change assessmentversion."
+    }
+  ],
+  "mockDesign": {
+    "officialVerified": {
+      "minutes": 60,
+      "majorQuestionsMaximum": 3,
+      "passingPercent": 70,
+      "netAnswerModes": [
+        "account dropdown",
+        "amount input",
+        "account-name input"
+      ],
+      "points2027": [
+        45,
+        25,
+        30
+      ]
+    },
+    "notVerified": [
+      "Fixed current question count for every exam",
+      "Exact current per-blank scoring and partial-credit rules",
+      "Difficulty equivalence or pass prediction",
+      "2027 all subquestion/answerfield counts"
+    ],
+    "recommendation": [
+      "At least two independently designed complete forms for2026, or distinguish2027 forms with official45/25/30 scoring.",
+      "Q1:15 independent full journal transactions with debit/credit accounts and amounts, including compound entries.",
+      "Q2:shared ledger data requiring account entries and balance/closing interpretation; second independent subsidiarybook or inventory/assettable.",
+      "Q3:balanced trialbalance+roughly8–12 interacting adjustments leading to fullworksheet or fullstatements, with explicit originalpracticeweights.",
+      "Do not count multiple answerfields in one transaction as multiple independent scenarios.",
+      "At least one fullworksheet and one financialstatement form across forms; teach adjustedTB separately."
+    ]
+  },
+  "releaseGate": [
+    "All65 competencies have genuine explanation,workedsteps,freshindependentpractice and relevantreview evidence.",
+    "All expected numeric answers and fulljournal transactions independently recomputed.",
+    "2026 and2027 scope labels,grading and relevant questions cannot be confused.",
+    "No historicalcompletion maps automatically to substantially new lessons."
+  ],
+  "legacyAuditRetentionPlan": {
+    "unit2": [
+      "b3-cash"
+    ],
+    "unit3": [
+      "b3-inventory"
+    ],
+    "unit4": [
+      "b3-credit"
+    ],
+    "unit5": [
+      "b3-assets"
+    ],
+    "unit6": [
+      "b3-accrual",
+      "b3-adjustments"
+    ],
+    "unit7": [
+      "b3-books",
+      "b3-statements"
+    ]
+  }
+}

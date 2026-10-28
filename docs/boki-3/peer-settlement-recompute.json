@@ -1,0 +1,1661 @@
+{
+  "date": "2026-10-28",
+  "reviewer": "separate AI teaching author; not qualified human audit",
+  "questionBankSha256": "17ffb708f3276a93903c231d3b0a8f4c130bad8cc28d63cde350857f27ee2c88",
+  "checks": {
+    "number": 33,
+    "journal": 62,
+    "choice": 17,
+    "total": 112
+  },
+  "basis": "Fresh calculations and entry/option expectations specified from the displayed premises; not imported from the author witness bank.",
+  "evidence": [
+    {
+      "id": "b3x-receivables-q05",
+      "kind": "number",
+      "formula": "30000+50000-45000-4000",
+      "value": 31000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q06",
+      "kind": "number",
+      "formula": "40000+60000-55000-5000",
+      "value": 40000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q09",
+      "kind": "number",
+      "formula": "26000+63000-4000-32000",
+      "value": 53000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q12",
+      "kind": "number",
+      "formula": "18000+35000-30000+24000+29000-32000-3000",
+      "value": 41000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q03",
+      "kind": "number",
+      "formula": "84000*(1-0.025)",
+      "value": 81900,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q06",
+      "kind": "number",
+      "formula": "65000-63700",
+      "value": 1300,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q09",
+      "kind": "number",
+      "formula": "45000+90000-60000",
+      "value": 75000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q13",
+      "kind": "number",
+      "formula": "6000+28000-19000",
+      "value": 15000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q07",
+      "kind": "number",
+      "formula": "75000+25000-40000-15000",
+      "value": 45000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q09",
+      "kind": "number",
+      "formula": "27000+62000-35000",
+      "value": 54000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q10",
+      "kind": "number",
+      "formula": "91000+40000-58000",
+      "value": 73000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q13",
+      "kind": "number",
+      "formula": "80000+20000-60000",
+      "value": 40000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q06",
+      "kind": "number",
+      "formula": "95000+46000-60000-30000",
+      "value": 51000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q09",
+      "kind": "number",
+      "formula": "35000+70000-58000",
+      "value": 47000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q10",
+      "kind": "number",
+      "formula": "91000+36000-55000",
+      "value": 72000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q13",
+      "kind": "number",
+      "formula": "140000+60000-25000-95000",
+      "value": 80000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q04",
+      "kind": "number",
+      "formula": "100000-40000",
+      "value": 60000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q05",
+      "kind": "number",
+      "formula": "300000*0.04*5/12",
+      "value": 5000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q07",
+      "kind": "number",
+      "formula": "360000*0.06*2/12+240000*0.06*3/12",
+      "value": 7200,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q09",
+      "kind": "number",
+      "formula": "6000/300000/(6/12)*100",
+      "value": 4,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q12",
+      "kind": "number",
+      "formula": "180000*0.04*5/12",
+      "value": 3000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q04",
+      "kind": "number",
+      "formula": "8000+12000",
+      "value": 20000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q07",
+      "kind": "number",
+      "formula": "98000-28000",
+      "value": 70000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q09",
+      "kind": "number",
+      "formula": "45000-17000-8000",
+      "value": 20000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q12",
+      "kind": "number",
+      "formula": "15000+22000-25000",
+      "value": 12000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q14",
+      "kind": "number",
+      "formula": "20000+16000+10000-24000-8000",
+      "value": 14000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q08",
+      "kind": "number",
+      "formula": "28000-22000-1500",
+      "value": 4500,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q09",
+      "kind": "number",
+      "formula": "24000+18000-24000",
+      "value": 18000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q14",
+      "kind": "number",
+      "formula": "9000+4000-5000-3000",
+      "value": 5000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q03",
+      "kind": "number",
+      "formula": "56000-18000-2000",
+      "value": 36000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q07",
+      "kind": "number",
+      "formula": "85000+25000-40000",
+      "value": 70000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q09",
+      "kind": "number",
+      "formula": "72000+21000-53000",
+      "value": 40000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q12",
+      "kind": "number",
+      "formula": "75000-10000-5000",
+      "value": 60000,
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "売掛金",
+            "amount": 51000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 51000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q02",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 44000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払金",
+            "amount": 44000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q07",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 26800
+          },
+          {
+            "account": "支払手数料",
+            "amount": 200
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 27000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q08",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 5500
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 5500
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 16000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 16000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q13",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 32000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 200
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 32200
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 73500
+          },
+          {
+            "account": "支払手数料",
+            "amount": 1500
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 75000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q04",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 56000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 56000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q05",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 97000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 100000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q07",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 39200
+          },
+          {
+            "account": "支払手数料",
+            "amount": 800
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 40000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q10",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "受取商品券",
+            "amount": 18000
+          },
+          {
+            "account": "現金",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 21000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 23600
+          },
+          {
+            "account": "支払手数料",
+            "amount": 400
+          }
+        ],
+        "credits": [
+          {
+            "account": "受取商品券",
+            "amount": 24000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q12",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "受取商品券",
+            "amount": 8000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 7700
+          },
+          {
+            "account": "現金",
+            "amount": 300
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q14",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 50000
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 49000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 1000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 50000
+          }
+        ],
+        "credits": [
+          {
+            "account": "支払手形",
+            "amount": 50000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q02",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "受取手形",
+            "amount": 60000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 60000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q04",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "受取手形",
+            "amount": 34000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 34000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q05",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 48000
+          }
+        ],
+        "credits": [
+          {
+            "account": "支払手形",
+            "amount": 48000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q06",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 95000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 25000
+          },
+          {
+            "account": "支払手形",
+            "amount": 70000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q08",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "支払手形",
+            "amount": 88000
+          }
+        ],
+        "credits": [
+          {
+            "account": "当座預金",
+            "amount": 88000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 63700
+          },
+          {
+            "account": "支払手数料",
+            "amount": 300
+          }
+        ],
+        "credits": [
+          {
+            "account": "受取手形",
+            "amount": 64000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q14",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 25000
+          }
+        ],
+        "credits": [
+          {
+            "account": "受取手形",
+            "amount": 25000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "電子記録債権",
+            "amount": 42000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 42000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q02",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 73000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債務",
+            "amount": 73000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q04",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "電子記録債権",
+            "amount": 38000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 38000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q05",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 65000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債務",
+            "amount": 65000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q07",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "電子記録債務",
+            "amount": 54000
+          }
+        ],
+        "credits": [
+          {
+            "account": "当座預金",
+            "amount": 54000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q08",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 67000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債権",
+            "amount": 67000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 84600
+          },
+          {
+            "account": "支払手数料",
+            "amount": 400
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債権",
+            "amount": 85000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q14",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 30000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債権",
+            "amount": 30000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "貸付金",
+            "amount": 52000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 52000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q02",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 410000
+          }
+        ],
+        "credits": [
+          {
+            "account": "借入金",
+            "amount": 410000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q06",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 237600
+          },
+          {
+            "account": "支払利息",
+            "amount": 2400
+          }
+        ],
+        "credits": [
+          {
+            "account": "借入金",
+            "amount": 240000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q08",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "借入金",
+            "amount": 420000
+          },
+          {
+            "account": "支払利息",
+            "amount": 8400
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 428400
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q10",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "手形貸付金",
+            "amount": 160000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 160000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 130000
+          }
+        ],
+        "credits": [
+          {
+            "account": "手形借入金",
+            "amount": 130000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q13",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 213150
+          }
+        ],
+        "credits": [
+          {
+            "account": "手形貸付金",
+            "amount": 210000
+          },
+          {
+            "account": "受取利息",
+            "amount": 3150
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "前払金",
+            "amount": 12000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 12000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q02",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 23000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前受金",
+            "amount": 23000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q05",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 72000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 18000
+          },
+          {
+            "account": "買掛金",
+            "amount": 54000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q06",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 20000
+          },
+          {
+            "account": "現金",
+            "amount": 15000
+          },
+          {
+            "account": "売掛金",
+            "amount": 30000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 65000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q08",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 80000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 10000
+          },
+          {
+            "account": "普通預金",
+            "amount": 40000
+          },
+          {
+            "account": "買掛金",
+            "amount": 30000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q10",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 14000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 14000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 19000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 19000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q13",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 18000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 18000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "仮払金",
+            "amount": 18000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 18000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q02",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 29000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮受金",
+            "amount": 29000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q05",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "旅費交通費",
+            "amount": 27000
+          },
+          {
+            "account": "現金",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払金",
+            "amount": 32000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q06",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "旅費交通費",
+            "amount": 19000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払金",
+            "amount": 16000
+          },
+          {
+            "account": "現金",
+            "amount": 3000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q07",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "仮受金",
+            "amount": 45000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 33000
+          },
+          {
+            "account": "前受金",
+            "amount": 12000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q10",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "立替金",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 6000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "立替金",
+            "amount": 6000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q12",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "給料",
+            "amount": 130000
+          }
+        ],
+        "credits": [
+          {
+            "account": "所得税預り金",
+            "amount": 4000
+          },
+          {
+            "account": "社会保険料預り金",
+            "amount": 15000
+          },
+          {
+            "account": "立替金",
+            "amount": 5000
+          },
+          {
+            "account": "普通預金",
+            "amount": 106000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q13",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "所得税預り金",
+            "amount": 4000
+          },
+          {
+            "account": "社会保険料預り金",
+            "amount": 15000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 19000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q01",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "差入保証金",
+            "amount": 50000
+          },
+          {
+            "account": "支払家賃",
+            "amount": 25000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 80000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q04",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "差入保証金",
+            "amount": 48000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 48000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q05",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "差入保証金",
+            "amount": 15000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 15000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q06",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 39000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 39000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q08",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 20000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 20000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q10",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 65000
+          },
+          {
+            "account": "支払家賃",
+            "amount": 12000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 80000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q11",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 70000
+          },
+          {
+            "account": "未払家賃",
+            "amount": 15000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 90000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q13",
+      "kind": "journal",
+      "independentEntry": {
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 40000
+          },
+          {
+            "account": "未払家賃",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 46000
+          }
+        ]
+      },
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q03",
+      "kind": "choice",
+      "independentCorrectOption": "貸付金",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q04",
+      "kind": "choice",
+      "independentCorrectOption": "代金を受け取る権利という資産が増えるため",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q10",
+      "kind": "choice",
+      "independentCorrectOption": "得意先元帳に該当する回収12,000円を記入する",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-receivables-q14",
+      "kind": "choice",
+      "independentCorrectOption": "入金明細の相手先と個別元帳の記録も照合する",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q02",
+      "kind": "choice",
+      "independentCorrectOption": "販売は成立しているが、代金の入金はまだ行われていないため",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-card-vouchers-q08",
+      "kind": "choice",
+      "independentCorrectOption": "預金を増やし、記録済みのクレジット売掛金を同額減らす",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q03",
+      "kind": "choice",
+      "independentCorrectOption": "期日に支払う義務があり、支払手形が増える",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-bills-q12",
+      "kind": "choice",
+      "independentCorrectOption": "残る資産を翌月へ引き継ぐため、勘定を締め切る記入",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q03",
+      "kind": "choice",
+      "independentCorrectOption": "前者は受け取る権利で資産、後者は支払う義務で負債",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-electronic-q12",
+      "kind": "choice",
+      "independentCorrectOption": "発生・決済の明細と、月末に残る各相手先・期日を確認する",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q03",
+      "kind": "choice",
+      "independentCorrectOption": "権利が生じた原因を確認し、売掛金か貸付金かを分ける",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-loans-q14",
+      "kind": "choice",
+      "independentCorrectOption": "商品代金は支払手形、資金借入れは手形借入金",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-advances-q03",
+      "kind": "choice",
+      "independentCorrectOption": "前者は前払金、後者は前払保険料などで、取引の原因を区別する",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q03",
+      "kind": "choice",
+      "independentCorrectOption": "立替金",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-clearing-q04",
+      "kind": "choice",
+      "independentCorrectOption": "実際の会社費用等を後で精算する前渡しと、他者の負担分を払った権利を区別する",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q02",
+      "kind": "choice",
+      "independentCorrectOption": "保証金は資産、当月家賃は利用に対応する費用として区別する",
+      "status": "pass"
+    },
+    {
+      "id": "b3x-deposits-q14",
+      "kind": "choice",
+      "independentCorrectOption": "契約先別明細と返還入金、控除明細を照合する",
+      "status": "pass"
+    }
+  ]
+}

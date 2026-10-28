@@ -1,0 +1,863 @@
+{
+  "unit-1": [
+    {
+      "id": "b3x-foundations-r01",
+      "lesson": "b3x-foundations",
+      "field": "commercial",
+      "prompt": "株主からの追加出資と、銀行からの借入れの違いについて正しいものはどれですか。",
+      "explanation": "会社の預金増加という共通点の外に、株主との持分か返済義務かという違いを読みます。",
+      "objectives": [
+        0
+      ],
+      "options": [
+        "どちらも必ず売上を増やす",
+        "借入れだけは資産を増やさない",
+        "出資だけは必ず費用になる",
+        "出資は純資産、借入れは負債を増やし、どちらもその受取りだけでは売上にしない"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b3x-foundations-r02",
+      "lesson": "b3x-foundations",
+      "field": "commercial",
+      "prompt": "ある日の現金210,000円、普通預金430,000円、備品360,000円、買掛金125,000円、借入金275,000円です。その他の資産負債はありません。純資産を求めてください。 単位は円です。",
+      "explanation": "資産合計1,000,000円から負債400,000円を引くと純資産600,000円です。資産の形が違っても合計します。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "600000"
+      ]
+    },
+    {
+      "id": "b3x-foundations-r03",
+      "lesson": "b3x-foundations",
+      "field": "commercial",
+      "prompt": "期首純資産760,000円、当期収益540,000円、費用470,000円、追加出資80,000円、配当25,000円です。他の純資産変動がないとき、期末純資産はいくらですか。 単位は円です。",
+      "explanation": "当期利益70,000円と株主との出資・配当を分け、760,000＋70,000＋80,000−25,000＝885,000円です。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "885000"
+      ]
+    },
+    {
+      "id": "b3x-journal-r01",
+      "lesson": "b3x-journal",
+      "field": "commercial",
+      "prompt": "商品代金の買掛金38,000円を現金で支払いました。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "支払義務と現金が同額減る取引です。既存の買掛金を借方で消し、仕入れの費用を繰り返しません。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "売掛金",
+          "仕入",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 38000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 38000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":38000}],\"credits\":[{\"account\":\"現金\",\"amount\":38000}]}"
+      ]
+    },
+    {
+      "id": "b3x-journal-r02",
+      "lesson": "b3x-journal",
+      "field": "commercial",
+      "prompt": "社内で使う備品128,000円を買い、現金48,000円と、翌月払い80,000円に分けました。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "商品仕入と社内用資産を区別し、総額128,000円を現金と未払に分けます。貸方合計も128,000円です。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "買掛金",
+          "仕入",
+          "未払金",
+          "備品",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 128000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 48000
+          },
+          {
+            "account": "未払金",
+            "amount": 80000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"備品\",\"amount\":128000}],\"credits\":[{\"account\":\"現金\",\"amount\":48000},{\"account\":\"未払金\",\"amount\":80000}]}"
+      ]
+    },
+    {
+      "id": "b3x-journal-r03",
+      "lesson": "b3x-journal",
+      "field": "commercial",
+      "prompt": "借入元本の返済50,000円を、支払利息50,000／普通預金50,000としていました。貸借一致以外にどこを点検すべきですか。",
+      "explanation": "元本返済は負債減少です。合計が一致しても、分類を誤ると負債と損益がともに違います。",
+      "objectives": [
+        2
+      ],
+      "options": [
+        "本来減る借入金が残り、利息費用が過大になっていること",
+        "預金が減るので必ず正しい",
+        "貸付金を増やせばよい",
+        "借入元本も利息も同じ費用なので区別不要"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b3x-ledger-r01",
+      "lesson": "b3x-ledger",
+      "field": "commercial",
+      "prompt": "普通預金勘定の借方に、摘要「売掛金」、金額57,000円があります。元になった仕訳全体を復元してください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "預金が増え、回収する権利が減る回収取引です。元帳の記入側と相手科目から仕訳へ戻します。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "買掛金",
+          "普通預金",
+          "売掛金",
+          "売上"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 57000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 57000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":57000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":57000}]}"
+      ]
+    },
+    {
+      "id": "b3x-ledger-r02",
+      "lesson": "b3x-ledger",
+      "field": "commercial",
+      "prompt": "買掛金勘定は月初貸方95,000円、当月掛仕入78,000円、返品13,000円、預金支払い104,000円です。月末の貸方残高を求めてください。 単位は円です。",
+      "explanation": "貸方合計173,000円から借方合計117,000円を引き、義務56,000円が残ります。次月繰越は借方へ書きます。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "56000"
+      ]
+    },
+    {
+      "id": "b3x-ledger-r03",
+      "lesson": "b3x-ledger",
+      "field": "commercial",
+      "prompt": "得意先別元帳は東社が月初45,000円・掛売上86,000円・回収74,000円、西社が月初28,000円・掛売上62,000円・回収53,000円・返品6,000円です。全体の売掛金期末残高を求めてください。 単位は円です。",
+      "explanation": "東社57,000円、西社31,000円の合計88,000円です。全体でも73,000＋148,000−127,000−6,000＝88,000円になります。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "88000"
+      ]
+    },
+    {
+      "id": "b3x-trial-balance-r01",
+      "lesson": "b3x-trial-balance",
+      "field": "commercial",
+      "prompt": "備品勘定の借方合計230,000円、貸方合計70,000円です。残高試算表の借方へ載せる金額を求めてください。 単位は円です。",
+      "explanation": "元帳両側の差160,000円が残高です。合計試算表なら両合計を別々に示します。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "160000"
+      ]
+    },
+    {
+      "id": "b3x-trial-balance-r02",
+      "lesson": "b3x-trial-balance",
+      "field": "commercial",
+      "prompt": "元帳合計は現金借方120,000・貸方35,000、売掛金借方70,000・貸方25,000、備品借方65,000・貸方0、給料借方30,000・貸方0、買掛金借方20,000・貸方65,000、資本金貸方100,000、売上貸方80,000です。残高試算表の借方総額はいくらですか。 単位は円です。",
+      "explanation": "現金85,000＋売掛金45,000＋備品65,000＋給料30,000＝225,000円です。貸方45,000＋100,000＋80,000も225,000円で一致します。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "225000"
+      ]
+    },
+    {
+      "id": "b3x-trial-balance-r03",
+      "lesson": "b3x-trial-balance",
+      "field": "commercial",
+      "prompt": "現金売上を借貸とも一度多く二重記帳しました。試算表が一致している場合、適切な判断はどれですか。",
+      "explanation": "仕訳全体の重複は両側を同額増やします。試算表一致の限界を踏まえ、証ひょう番号や取引の実在を点検します。",
+      "objectives": [
+        2
+      ],
+      "options": [
+        "借方だけを自由に減らす",
+        "一致は保たれても現金と売上がともに過大なので、元資料と回数を照合する",
+        "二重記帳は必ず貸借を不一致にする",
+        "一致しているので問題はない"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b3x-corrections-r01",
+      "lesson": "b3x-corrections",
+      "field": "commercial",
+      "prompt": "店舗家賃16,000円の現金払いを、通信費16,000／現金16,000としました。追加の訂正仕訳を書いてください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "現金減少は正しいので動かしません。費用科目を通信費から支払家賃へ移します。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "未払家賃",
+          "支払家賃",
+          "通信費"
+        ],
+        "debits": [
+          {
+            "account": "支払家賃",
+            "amount": 16000
+          }
+        ],
+        "credits": [
+          {
+            "account": "通信費",
+            "amount": 16000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"支払家賃\",\"amount\":16000}],\"credits\":[{\"account\":\"通信費\",\"amount\":16000}]}"
+      ]
+    },
+    {
+      "id": "b3x-corrections-r02",
+      "lesson": "b3x-corrections",
+      "field": "commercial",
+      "prompt": "商品94,000円を販売し、現金24,000円と掛け70,000円に分けたのに、現金49,000／売上49,000と誤記しました。訂正仕訳を書いてください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "現金は25,000円過大、売掛金70,000円不足、売上45,000円不足です。元の誤記に重ねると現金24,000・売掛金70,000／売上94,000になります。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "仕入",
+          "売掛金",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "売掛金",
+            "amount": 70000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 25000
+          },
+          {
+            "account": "売上",
+            "amount": 45000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売掛金\",\"amount\":70000}],\"credits\":[{\"account\":\"現金\",\"amount\":25000},{\"account\":\"売上\",\"amount\":45000}]}"
+      ]
+    },
+    {
+      "id": "b3x-corrections-r03",
+      "lesson": "b3x-corrections",
+      "field": "commercial",
+      "prompt": "現金帳簿残高は93,000円。交通費5,400円の支払を4,500円と記帳し、売掛金23,000円の現金回収を丸ごと漏らしていました。他の差はありません。修正後現金残高はいくらですか。 単位は円です。",
+      "explanation": "不足していた現金減少900円を引き、回収23,000円を加えると115,100円です。差額だけを反映します。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "115100"
+      ]
+    },
+    {
+      "id": "b3x-vouchers-r01",
+      "lesson": "b3x-vouchers",
+      "field": "commercial",
+      "prompt": "普通預金から給料32,000円を支払いました。三伝票制で適切な記録はどれですか。",
+      "explanation": "三伝票制の入出金は現金を対象とします。預金支払は現金を動かさないので振替です。",
+      "objectives": [
+        0
+      ],
+      "options": [
+        "現金がないので帳簿へ記録しない",
+        "振替伝票に給料32,000／普通預金32,000",
+        "入金伝票に普通預金32,000",
+        "出金伝票に給料32,000"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b3x-vouchers-r02",
+      "lesson": "b3x-vouchers",
+      "field": "commercial",
+      "prompt": "商品105,000円を販売し、現金35,000円、掛け70,000円です。取引を分割する方式で、振替伝票に書く仕訳だけを答えてください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "分割方式では掛け部分70,000円だけを振替伝票へ入れます。現金部分は入金伝票に売上35,000円として別に記録します。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "売掛金",
+          "買掛金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "売掛金",
+            "amount": 70000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 70000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売掛金\",\"amount\":70000}],\"credits\":[{\"account\":\"売上\",\"amount\":70000}]}"
+      ]
+    },
+    {
+      "id": "b3x-vouchers-r03",
+      "lesson": "b3x-vouchers",
+      "field": "commercial",
+      "prompt": "入金伝票は売上45,000円と売掛金38,000円、出金伝票は仕入24,000円と通信費7,000円。振替伝票は仕入56,000／買掛金56,000と、支払家賃22,000／普通預金22,000です。日計表全体の借方合計を求めてください。 単位は円です。",
+      "explanation": "現金83,000、仕入80,000、通信費7,000、家賃22,000の計192,000円です。貸方は現金31,000＋売上45,000＋売掛金38,000＋買掛金56,000＋普通預金22,000で同額になります。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "192000"
+      ]
+    }
+  ],
+  "unit-6": [
+    {
+      "id": "b3x-closing-inventory-r01",
+      "lesson": "b3x-closing-inventory",
+      "field": "commercial",
+      "prompt": "期首に単価600円の商品40個、当期は同単価で210個を仕入れ、期末に55個残りました。紛失や返品はありません。売上原価はいくらですか。 単位は円です。",
+      "explanation": "販売数量195個×原価600円＝117,000円です。期末原価33,000円と合わせ150,000円へ戻ります。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "117000"
+      ]
+    },
+    {
+      "id": "b3x-closing-inventory-r02",
+      "lesson": "b3x-closing-inventory",
+      "field": "commercial",
+      "prompt": "三分法で仕入勘定により原価計算を行います。期末商品84,000円を資産へ残す整理仕訳を書いてください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "未販売原価を当期費用から除き、繰越商品として翌期へ持ち越します。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "売上",
+          "売上原価",
+          "繰越商品"
+        ],
+        "debits": [
+          {
+            "account": "繰越商品",
+            "amount": 84000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 84000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越商品\",\"amount\":84000}],\"credits\":[{\"account\":\"仕入\",\"amount\":84000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-inventory-r03",
+      "lesson": "b3x-closing-inventory",
+      "field": "commercial",
+      "prompt": "期首商品72,000円、整理前仕入590,000円、未反映返品22,000円、未記帳仕入34,000円、期末商品104,000円です。棚卸は未記帳商品も含みます。売上原価はいくらですか。 単位は円です。",
+      "explanation": "純仕入602,000円、販売可能原価674,000円から期末104,000円を除き570,000円です。仕入と棚卸の範囲をそろえます。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "570000"
+      ]
+    },
+    {
+      "id": "b3x-bad-debt-r01",
+      "lesson": "b3x-bad-debt",
+      "field": "commercial",
+      "prompt": "前期以前の売掛金23,000円が貸倒れました。使用できる貸倒引当金は14,500円です。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "引当金で14,500円を賄い、不足8,500円を当期損失とします。債権は23,000円全額を消します。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貸倒引当金繰入",
+          "貸倒損失",
+          "売上",
+          "貸倒引当金",
+          "売掛金"
+        ],
+        "debits": [
+          {
+            "account": "貸倒引当金",
+            "amount": 14500
+          },
+          {
+            "account": "貸倒損失",
+            "amount": 8500
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 23000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貸倒引当金\",\"amount\":14500},{\"account\":\"貸倒損失\",\"amount\":8500}],\"credits\":[{\"account\":\"売掛金\",\"amount\":23000}]}"
+      ]
+    },
+    {
+      "id": "b3x-bad-debt-r02",
+      "lesson": "b3x-bad-debt",
+      "field": "commercial",
+      "prompt": "整理前売掛金390,000円、受取手形110,000円、引当金貸方10,000円。売掛金25,000円の未記帳回収と、前期債権7,000円の貸倒れを引当金から処理します。修正後両債権へ2%設定する追加繰入額はいくらですか。 単位は円です。",
+      "explanation": "対象468,000円の2%は9,360円。引当金は使用後3,000円なので、追加は6,360円です。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "6360"
+      ]
+    },
+    {
+      "id": "b3x-bad-debt-r03",
+      "lesson": "b3x-bad-debt",
+      "field": "commercial",
+      "prompt": "前期に貸倒処理済みの売掛金を、当期に現金9,800円回収しました。債権復活の別記帳はありません。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "過去に消した権利からの回収なので、残っていない売掛金を再度減らさず、償却債権取立益とします。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "貸倒損失",
+          "売掛金",
+          "売上",
+          "償却債権取立益"
+        ],
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 9800
+          }
+        ],
+        "credits": [
+          {
+            "account": "償却債権取立益",
+            "amount": 9800
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"現金\",\"amount\":9800}],\"credits\":[{\"account\":\"償却債権取立益\",\"amount\":9800}]}"
+      ]
+    },
+    {
+      "id": "b3x-expense-accrual-r01",
+      "lesson": "b3x-expense-accrual",
+      "field": "commercial",
+      "prompt": "3月末決算。12月1日から一年分192,000円を払い、全額を保険料としました。月割で整理仕訳を書いてください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "月額16,000円、翌期4〜11月8か月分128,000円を資産へ残します。当期4か月分64,000円が費用です。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未払保険料",
+          "普通預金",
+          "前払保険料",
+          "保険料"
+        ],
+        "debits": [
+          {
+            "account": "前払保険料",
+            "amount": 128000
+          }
+        ],
+        "credits": [
+          {
+            "account": "保険料",
+            "amount": 128000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前払保険料\",\"amount\":128000}],\"credits\":[{\"account\":\"保険料\",\"amount\":128000}]}"
+      ]
+    },
+    {
+      "id": "b3x-expense-accrual-r02",
+      "lesson": "b3x-expense-accrual",
+      "field": "commercial",
+      "prompt": "3月末決算。借入金1,800,000円、年利2.2%、借入日は10月1日、利息は一年後払いで未記帳です。月割の当期未払利息はいくらですか。 単位は円です。",
+      "explanation": "10月〜3月6か月分、1,800,000×0.022×6/12＝19,800円です。元本返済とは区別して見越します。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "19800"
+      ]
+    },
+    {
+      "id": "b3x-expense-accrual-r03",
+      "lesson": "b3x-expense-accrual",
+      "field": "commercial",
+      "prompt": "支払家賃整理前は830,000円です。翌期対応の前払110,000円と、当期対応の未記帳未払35,000円があり、他の調整はありません。整理後家賃費用はいくらですか。 単位は円です。",
+      "explanation": "当期外の110,000円を除き、当期未払35,000円を加え、755,000円です。資産と負債は別々に残します。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "755000"
+      ]
+    },
+    {
+      "id": "b3x-revenue-accrual-r01",
+      "lesson": "b3x-revenue-accrual",
+      "field": "commercial",
+      "prompt": "3月末決算。2月から半年分の家賃252,000円を受け取り、全額を受取家賃としています。月割で整理仕訳を書いてください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "月額42,000円、翌期4〜7月4か月分168,000円を収益から負債へ移します。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前受家賃",
+          "受取家賃",
+          "未収家賃",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "受取家賃",
+            "amount": 168000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前受家賃",
+            "amount": 168000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"受取家賃\",\"amount\":168000}],\"credits\":[{\"account\":\"前受家賃\",\"amount\":168000}]}"
+      ]
+    },
+    {
+      "id": "b3x-revenue-accrual-r02",
+      "lesson": "b3x-revenue-accrual",
+      "field": "commercial",
+      "prompt": "貸付金1,100,000円、年利2.4%、期末までの未受取当期期間7か月です。月割で未収利息を求めてください。 単位は円です。",
+      "explanation": "一年分26,400円を7/12へ配分し15,400円を当期収益と回収権へ記録します。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "15400"
+      ]
+    },
+    {
+      "id": "b3x-revenue-accrual-r03",
+      "lesson": "b3x-revenue-accrual",
+      "field": "commercial",
+      "prompt": "商品代金の手付と、継続する家賃の翌期対応分を区別する基準はどれですか。",
+      "explanation": "前受金と前受家賃等の内容を分けます。どちらも負債となる場面がありますが、何の義務かが異なります。",
+      "objectives": [
+        2
+      ],
+      "options": [
+        "商品引渡し前の代金か、継続する役務を期間へ割り当てる処理かを見る",
+        "どちらも入金日だけで必ず売上にする",
+        "入金額が大きいほうだけを負債とする",
+        "前受という文字があればすべて資産へ置く"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b3x-reversal-r01",
+      "lesson": "b3x-reversal",
+      "field": "commercial",
+      "prompt": "前期末に未収利息12,600／受取利息12,600と整理しました。当期首に再振替を行ってください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "期末整理の逆を記録します。前期に発生済みの収益を、後日の当期受取総額から除く働きです。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貸付金",
+          "受取利息",
+          "未収利息",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "受取利息",
+            "amount": 12600
+          }
+        ],
+        "credits": [
+          {
+            "account": "未収利息",
+            "amount": 12600
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"受取利息\",\"amount\":12600}],\"credits\":[{\"account\":\"未収利息\",\"amount\":12600}]}"
+      ]
+    },
+    {
+      "id": "b3x-reversal-r02",
+      "lesson": "b3x-reversal",
+      "field": "commercial",
+      "prompt": "前期末未払利息11,000円を当期首再振替し、当期に一年分利息37,000円を全額費用として支払いました。ほかの利息や期末未払がない場合の当期費用はいくらですか。 単位は円です。",
+      "explanation": "支払の借方37,000円から期首再振替の貸方11,000円を除き、26,000円の当期対応額になります。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "26000"
+      ]
+    },
+    {
+      "id": "b3x-reversal-r03",
+      "lesson": "b3x-reversal",
+      "field": "commercial",
+      "prompt": "支払利息勘定に期首再振替の貸方9,500円、当期支払いの借方31,000円、期末未払整理の借方7,500円があります。損益へ振り替える費用額を求めてください。 単位は円です。",
+      "explanation": "借方合計38,500円から貸方9,500円を差し引き29,000円です。期末に負債へ残る7,500円とは役割が違います。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "29000"
+      ]
+    },
+    {
+      "id": "b3x-closing-adjustments-r01",
+      "lesson": "b3x-closing-adjustments",
+      "field": "commercial",
+      "prompt": "期首貯蔵品6,000円と当期資産記帳の購入52,000円があり、期末未使用16,000円です。使用分を費用へ移す仕訳を書いてください。 消費税は考慮しません。すべての借方・貸方の科目と金額を記入してください。",
+      "explanation": "使える58,000円のうち残る16,000円を除き、42,000円が当期使用額です。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "貯蔵品",
+          "消耗品費",
+          "普通預金",
+          "未払金"
+        ],
+        "debits": [
+          {
+            "account": "消耗品費",
+            "amount": 42000
+          }
+        ],
+        "credits": [
+          {
+            "account": "貯蔵品",
+            "amount": 42000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"消耗品費\",\"amount\":42000}],\"credits\":[{\"account\":\"貯蔵品\",\"amount\":42000}]}"
+      ]
+    },
+    {
+      "id": "b3x-closing-adjustments-r02",
+      "lesson": "b3x-closing-adjustments",
+      "field": "commercial",
+      "prompt": "年間償却費は156,000円、月次に計上済みは143,000円です。ほかに当期償却の記録がない期末追加額を求めてください。 単位は円です。",
+      "explanation": "必要額と計上済みの差13,000円だけを加え、年間費用156,000円へそろえます。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "13000"
+      ]
+    },
+    {
+      "id": "b3x-closing-adjustments-r03",
+      "lesson": "b3x-closing-adjustments",
+      "field": "commercial",
+      "prompt": "売掛金整理前460,000円に対し、回収36,000円が未記帳です。修正後売掛金へ2%引当金を設定し、既存引当金は6,000円です。追加繰入額はいくらですか。 単位は円です。",
+      "explanation": "先に回収を反映して424,000円とし、必要8,480円から既存6,000円を引くと2,480円です。",
+      "objectives": [
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "2480"
+      ]
+    }
+  ]
+}

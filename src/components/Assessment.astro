@@ -82,24 +82,28 @@ if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')
           ))}
           {material.tables?.map((table) => (
             <>
-            <p class="material-table-hint muted">表が画面に収まらない場合は、横にスクロールして全ての列を確認できます。</p>
-            <div class="table-scroll" role="region" tabindex="0" aria-label={table.caption}>
-              <table>
-                <caption>{table.caption}</caption>
-                <thead>
-                  <tr>
-                    {table.headers.map((header) => (
-                      <th scope="col">{header}</th>
+              <p class="material-table-hint muted">
+                表が画面に収まらない場合は、横にスクロールして全ての列を確認できます。
+              </p>
+              <div class="table-scroll" role="region" tabindex="0" aria-label={table.caption}>
+                <table>
+                  <caption>{table.caption}</caption>
+                  <thead>
+                    <tr>
+                      {table.headers.map((header) => (
+                        <th scope="col">{header}</th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {table.rows.map((row) => (
+                      <tr>
+                        {row.map((cell, i) => (i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>))}
+                      </tr>
                     ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {table.rows.map((row) => (
-                    <tr>{row.map((cell, i) => (i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>))}</tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </tbody>
+                </table>
+              </div>
             </>
           ))}
         </details>
@@ -123,7 +127,55 @@ if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')
             ))}
           </p>
         )}
-        {q.input === 'essay' ? (
+        {q.input === 'journal' ? (
+          <div class="journal-answer" data-journal-answer>
+            <p class="journal-hint" id={`${q.id}-journal-hint`}>
+              借方・貸方それぞれ必要な行だけ入力してください。各4行まで使えます。金額は円単位で、全角数字・カンマにも対応しています。科目と金額がそろっていない行や貸借が一致しない解答も途中記録として保存します。
+            </p>
+            <div class="journal-sides">
+              {(['debits', 'credits'] as const).map((side) => (
+                <fieldset
+                  class="journal-side"
+                  data-journal-side={side}
+                  aria-describedby={`${q.id}-journal-hint`}
+                >
+                  <legend>{side === 'debits' ? '借方' : '貸方'}</legend>
+                  {[0, 1, 2, 3].map((row) => (
+                    <div class="journal-row" data-journal-row={row}>
+                      <label>
+                        {row + 1}行目の勘定科目
+                        <select
+                          name={`${q.id}-${side}-${row}-account`}
+                          data-journal-account
+                          autocomplete="off"
+                          disabled
+                        >
+                          <option value="">選択してください</option>
+                          {q.journal!.accounts.map((account) => (
+                            <option value={account}>{account}</option>
+                          ))}
+                        </select>
+                      </label>
+                      <label>
+                        {row + 1}行目の金額（円）
+                        <input
+                          type="text"
+                          name={`${q.id}-${side}-${row}-amount`}
+                          data-journal-amount
+                          inputmode="decimal"
+                          maxlength="80"
+                          autocomplete="off"
+                          spellcheck="false"
+                          disabled
+                        />
+                      </label>
+                    </div>
+                  ))}
+                </fieldset>
+              ))}
+            </div>
+          </div>
+        ) : q.input === 'essay' ? (
           <label class="written-answer">
             記述解答（4,000字まで・提出後に解答例と照合）
             <textarea
@@ -143,7 +195,7 @@ if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')
               type="text"
               name={q.id}
               data-written-answer
-              inputmode={q.input === 'number' ? 'decimal' : 'text'}
+              inputmode={q.input === 'number' && !q.signed ? 'decimal' : 'text'}
               maxlength="80"
               autocomplete="off"
               disabled
@@ -228,6 +280,58 @@ if (materialIssues.length) throw new Error(`${a.id}: ${materialIssues.join('; ')
   />
 </section>
 <style>
+  .journal-hint {
+    font-size: 0.9rem;
+  }
+  .journal-sides {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .journal-side {
+    min-width: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--line);
+  }
+  .journal-side legend {
+    padding-inline: 0.3rem;
+    font-weight: 700;
+  }
+  .journal-row {
+    display: grid;
+    gap: 0.5rem;
+    padding-block: 0.75rem;
+  }
+  .journal-row + .journal-row {
+    border-top: 1px solid var(--line);
+  }
+  .journal-row label {
+    display: grid;
+    gap: 0.25rem;
+    min-width: 0;
+    font-size: 0.9rem;
+  }
+  .journal-row input,
+  .journal-row select {
+    min-width: 0;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem;
+    border: 1px solid var(--line);
+    border-radius: 0.35rem;
+    background-color: var(--surface);
+    color: var(--ink);
+    font: inherit;
+    font-size: 1rem;
+  }
+  .journal-row input {
+    font-variant-numeric: tabular-nums;
+  }
+  @media (max-width: 40rem) {
+    .journal-sides {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
   .assessment-materials {
     margin-block: 1.5rem;
   }

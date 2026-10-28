@@ -3,6 +3,7 @@ import { parse } from 'yaml';
 import { bokiCoverage } from '../src/data/boki-coverage.ts';
 import { beginnerCurriculum } from './beginner-curriculum.mjs';
 import { costCurriculum } from './cost-curriculum.mjs';
+import { boki3Curriculum } from './boki3-curriculum.mjs';
 import {
   bokiCourses,
   bokiAssessments,
@@ -36,6 +37,10 @@ for (const c of bokiCourses) {
   }
   if (c.id === 'cost-beginner') {
     writeFileSync(`public/downloads/${c.id}-curriculum.txt`,costCurriculum(rows).join('\n')+'\n');
+    continue;
+  }
+  if (c.id === 'boki-3') {
+    writeFileSync(`public/downloads/${c.id}-curriculum.txt`,boki3Curriculum(rows,tests.filter(a=>a.qualification===c.id)).join('\n')+'\n');
     continue;
   }
   c.groups.forEach((g, i) => {

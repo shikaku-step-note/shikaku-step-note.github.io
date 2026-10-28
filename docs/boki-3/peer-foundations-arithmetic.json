@@ -1,0 +1,352 @@
+{
+  "reviewed": "2026-10-28",
+  "lessons": [
+    "b3x-foundations",
+    "b3x-journal",
+    "b3x-ledger",
+    "b3x-trial-balance",
+    "b3x-corrections",
+    "b3x-vouchers"
+  ],
+  "questionsRead": 90,
+  "formats": {
+    "choice": 27,
+    "number": 35,
+    "journal": 28
+  },
+  "numericWitnesses": [
+    {
+      "id": "b3x-foundations-q05",
+      "independentFormula": "1240000-370000",
+      "value": 870000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-q06",
+      "independentFormula": "960000-640000",
+      "value": 320000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-q07",
+      "independentFormula": "720000-85000+85000",
+      "value": 720000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-q08",
+      "independentFormula": "450000+150000-150000",
+      "value": 450000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-q09",
+      "independentFormula": "420000-280000",
+      "value": 140000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-q10",
+      "independentFormula": "680000+95000+120000-35000",
+      "value": 860000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-q12",
+      "independentFormula": "530000+300000-340000+60000-15000",
+      "value": 535000,
+      "matches": true
+    },
+    {
+      "id": "b3x-journal-q10",
+      "independentFormula": "83000-31000",
+      "value": 52000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-q01",
+      "independentFormula": "57000+41000+26000",
+      "value": 124000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-q05",
+      "independentFormula": "82000+56000-9000-65000",
+      "value": 64000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-q06",
+      "independentFormula": "143000-58000",
+      "value": 85000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-q08",
+      "independentFormula": "37000+(96000-37000)",
+      "value": 96000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-q09",
+      "independentFormula": "32000+58000-46000+21000+35000-19000-4000",
+      "value": 77000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-q11",
+      "independentFormula": "119000-46000-38000",
+      "value": 35000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-q01",
+      "independentFormula": "186000-74000",
+      "value": 112000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-q02",
+      "independentFormula": "133000-58000",
+      "value": 75000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-q03",
+      "independentFormula": "68000+27000",
+      "value": 95000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-q05",
+      "independentFormula": "90000+40000+50000+15000+10000",
+      "value": 205000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-q06",
+      "independentFormula": "90000-25000+40000-10000+50000+15000",
+      "value": 160000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-q07",
+      "independentFormula": "66000+38000+95000+22000-41000-100000",
+      "value": 80000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-q09",
+      "independentFormula": "9000*2",
+      "value": 18000,
+      "matches": true
+    },
+    {
+      "id": "b3x-corrections-q11",
+      "independentFormula": "86000-(4200-2400)+17000",
+      "value": 101200,
+      "matches": true
+    },
+    {
+      "id": "b3x-vouchers-q08",
+      "independentFormula": "132000-52000",
+      "value": 80000,
+      "matches": true
+    },
+    {
+      "id": "b3x-vouchers-q09",
+      "independentFormula": "31000+24000",
+      "value": 55000,
+      "matches": true
+    },
+    {
+      "id": "b3x-vouchers-q10",
+      "independentFormula": "16000+29000",
+      "value": 45000,
+      "matches": true
+    },
+    {
+      "id": "b3x-vouchers-q11",
+      "independentFormula": "27000+33000+21000+44000+6000+19000",
+      "value": 150000,
+      "matches": true
+    },
+    {
+      "id": "b3x-vouchers-q12",
+      "independentFormula": "64000+72000-39000",
+      "value": 97000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-r02",
+      "independentFormula": "210000+430000+360000-125000-275000",
+      "value": 600000,
+      "matches": true
+    },
+    {
+      "id": "b3x-foundations-r03",
+      "independentFormula": "760000+540000-470000+80000-25000",
+      "value": 885000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-r02",
+      "independentFormula": "95000+78000-13000-104000",
+      "value": 56000,
+      "matches": true
+    },
+    {
+      "id": "b3x-ledger-r03",
+      "independentFormula": "45000+86000-74000+28000+62000-53000-6000",
+      "value": 88000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-r01",
+      "independentFormula": "230000-70000",
+      "value": 160000,
+      "matches": true
+    },
+    {
+      "id": "b3x-trial-balance-r02",
+      "independentFormula": "120000-35000+70000-25000+65000+30000",
+      "value": 225000,
+      "matches": true
+    },
+    {
+      "id": "b3x-corrections-r03",
+      "independentFormula": "93000-(5400-4500)+23000",
+      "value": 115100,
+      "matches": true
+    },
+    {
+      "id": "b3x-vouchers-r03",
+      "independentFormula": "45000+38000+24000+56000+7000+22000",
+      "value": 192000,
+      "matches": true
+    }
+  ],
+  "bodyWitnesses": [
+    {
+      "case": "foundation opening BS",
+      "formula": "500000+200000",
+      "value": 700000,
+      "expected": 700000
+    },
+    {
+      "case": "foundation ending net assets",
+      "formula": "500000+70000+100000-20000",
+      "value": 650000,
+      "expected": 650000
+    },
+    {
+      "case": "foundation profit versus asset and liability changes",
+      "formula": "150000-90000-40000",
+      "value": 20000,
+      "expected": 20000
+    },
+    {
+      "case": "ledger cash total",
+      "formula": "80000+35000+45000-20000-6000",
+      "value": 134000,
+      "expected": 134000
+    },
+    {
+      "case": "ledger AP balance",
+      "formula": "90000+40000-8000-70000",
+      "value": 52000,
+      "expected": 52000
+    },
+    {
+      "case": "ledger subsidiary AR",
+      "formula": "40000+70000-60000+25000+50000-30000-5000",
+      "value": 90000,
+      "expected": 90000
+    },
+    {
+      "case": "ledger self-check AP",
+      "formula": "35000+60000-50000-8000+45000+25000-40000",
+      "value": 67000,
+      "expected": 67000
+    },
+    {
+      "case": "trial totals",
+      "formula": "150000+80000+60000+25000+40000",
+      "value": 355000,
+      "expected": 355000
+    },
+    {
+      "case": "trial balances",
+      "formula": "105000+50000+60000+40000",
+      "value": 255000,
+      "expected": 255000
+    },
+    {
+      "case": "trial modified cash",
+      "formula": "105000+12000-18000-5000",
+      "value": 94000,
+      "expected": 94000
+    },
+    {
+      "case": "trial modified TB",
+      "formula": "94000+38000+60000+45000",
+      "value": 237000,
+      "expected": 237000
+    },
+    {
+      "case": "trial self-check totals",
+      "formula": "100000+50000+80000+15000+20000",
+      "value": 265000,
+      "expected": 265000
+    },
+    {
+      "case": "trial self-check balances",
+      "formula": "60000+30000+80000+20000",
+      "value": 190000,
+      "expected": 190000
+    },
+    {
+      "case": "correction multiple cash",
+      "formula": "120000+(6300-3600)+18000+12000",
+      "value": 152700,
+      "expected": 152700
+    },
+    {
+      "case": "correction compound control",
+      "formula": "67000-41000+50000",
+      "value": 76000,
+      "expected": 76000
+    },
+    {
+      "case": "voucher example3 total",
+      "formula": "65000+50000+4000+20000",
+      "value": 139000,
+      "expected": 139000
+    },
+    {
+      "case": "voucher example3 cash ending",
+      "formula": "70000+65000-22000",
+      "value": 113000,
+      "expected": 113000
+    },
+    {
+      "case": "voucher full-credit gross",
+      "formula": "20000+70000+15000+50000",
+      "value": 155000,
+      "expected": 155000
+    },
+    {
+      "case": "voucher split gross",
+      "formula": "20000+50000+15000+35000",
+      "value": 120000,
+      "expected": 120000
+    },
+    {
+      "case": "voucher self-check total",
+      "formula": "50000+20000+3000+45000+12000",
+      "value": 130000,
+      "expected": 130000
+    }
+  ],
+  "journalReview": "All 28 models read against transaction premises, including accounts, directions, compound residuals and correction differences. This semantic review is separate from mechanical side balance."
+}

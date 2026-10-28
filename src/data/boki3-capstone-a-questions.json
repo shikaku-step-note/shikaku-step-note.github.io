@@ -1,0 +1,509 @@
+{
+  "b3x-closing-case-a": [
+    {
+      "id": "b3x-closing-case-a-q01",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "売掛金20,000円が普通預金へ入金されていましたが未記帳でした。必要な修正仕訳を入力してください。",
+      "explanation": "以前の販売で発生した権利を消し、預金を増やします。入金時に売上を重ねて計上しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "受取利息",
+          "売上",
+          "売掛金",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 20000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 20000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":20000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":20000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q02",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "整理前売掛金210,000円、未記帳回収20,000円です。修正後債権へ3%の貸倒引当金を設定し、既存の引当金貸方残高は3,000円です。追加する繰入額を円単位で求めてください。",
+      "explanation": "回収後190,000円の3%は5,700円。既存3,000円との差2,700円を追加します。整理前残高へ率を掛けないことがポイントです。",
+      "input": "number",
+      "accepted": [
+        "2700"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q03",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "三分法で、期首繰越商品80,000円を売上原価計算のため仕入勘定へ振り替えます。この期首分の仕訳を入力してください。",
+      "explanation": "期首商品の資産残高を仕入へ戻す仕訳です。ここでは仕入勘定で原価を計算する指定なので、売上原価勘定へ直接振り替えません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "売上",
+          "売上原価",
+          "繰越商品",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 80000
+          }
+        ],
+        "credits": [
+          {
+            "account": "繰越商品",
+            "amount": 80000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":80000}],\"credits\":[{\"account\":\"繰越商品\",\"amount\":80000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q04",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "期末商品棚卸高65,000円です。三分法で仕入勘定を使って売上原価を計算するとき、期末分の振替仕訳を入力してください。",
+      "explanation": "期末に残る商品は当期に販売していないため、仕入から外して繰越商品という資産へ戻します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "売上",
+          "売上原価",
+          "繰越商品",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "繰越商品",
+            "amount": 65000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 65000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越商品\",\"amount\":65000}],\"credits\":[{\"account\":\"仕入\",\"amount\":65000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q05",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "備品のうち400,000円は期首から使用、200,000円は10月1日から使用しています。12月末決算、両方とも耐用年数5年・残存価額ゼロ、定額法・月割です。当期償却費合計を円単位で求めてください。",
+      "explanation": "既存分80,000円と新規3か月分10,000円を合計します。累計額を取得原価から引いて年額を計算する方法ではありません。",
+      "input": "number",
+      "accepted": [
+        "90000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q06",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "保険料36,000円は9月1日に払った向こう1年分で全額費用処理済みです。12月末決算で月割計算します。前払保険料を用いる整理仕訳を入力してください。",
+      "explanation": "翌年1〜8月の8か月分36,000×8/12＝24,000円を資産へ移します。既に払った預金を増やす処理ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "保険料",
+          "前払保険料",
+          "受取保険金",
+          "普通預金",
+          "未払保険料"
+        ],
+        "debits": [
+          {
+            "account": "前払保険料",
+            "amount": 24000
+          }
+        ],
+        "credits": [
+          {
+            "account": "保険料",
+            "amount": 24000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前払保険料\",\"amount\":24000}],\"credits\":[{\"account\":\"保険料\",\"amount\":24000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q07",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "当期の給料18,000円が未払・未記帳です。未払給料を用いて決算整理仕訳を入力してください。",
+      "explanation": "当期の勤務への費用を追加し、未払いの義務を記録します。翌期支払でも当期の費用です。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払金",
+          "前払給料",
+          "普通預金",
+          "未払給料",
+          "給料"
+        ],
+        "debits": [
+          {
+            "account": "給料",
+            "amount": 18000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払給料",
+            "amount": 18000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"給料\",\"amount\":18000}],\"credits\":[{\"account\":\"未払給料\",\"amount\":18000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q08",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "仕入勘定は整理前借方540,000円、修正借方80,000円、修正貸方65,000円です。精算表の損益計算書借方欄へ入る金額を円単位で求めてください。",
+      "explanation": "同じ勘定の借方合計から貸方を差し引いた555,000円です。修正だけの差額15,000円を最終欄へ写すのではありません。",
+      "input": "number",
+      "accepted": [
+        "555000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q09",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "備品減価償却累計額は整理前貸方120,000円、当期償却費追加90,000円です。精算表の貸借対照表貸方欄へ入る累計額を円単位で求めてください。",
+      "explanation": "控除勘定の残高は120,000＋90,000＝210,000円です。当期費用90,000円だけと取り違えません。",
+      "input": "number",
+      "accepted": [
+        "210000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q10",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "支払家賃は整理前借方144,000円、修正貸方72,000円です。精算表の損益計算書借方欄へ送る家賃費用を円単位で求めてください。",
+      "explanation": "翌期分72,000円を除き、当期費用72,000円を残します。預金の支払額と費用の額は必ずしも一致しません。",
+      "input": "number",
+      "accepted": [
+        "72000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q11",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "借入金300,000円は10月1日借入、年4%、翌年3月31日利払いです。12月末決算で当期3か月を月割します。未払利息残高はゼロでした。整理後の未払利息を円単位で求めてください。",
+      "explanation": "当期発生3か月分3,000円を貸方の未払利息へ置きます。借入金の元金は減らしません。",
+      "input": "number",
+      "accepted": [
+        "3000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q12",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "管理手数料6,000円は11月1日に向こう6か月分を受け取り、全額前受手数料へ記帳済みです。毎月同額を稼得する条件で12月末決算を行います。整理後の前受手数料を円単位で求めてください。",
+      "explanation": "当期2か月分2,000円を収益へ移し、翌期4か月分4,000円を負債へ残します。",
+      "input": "number",
+      "accepted": [
+        "4000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q13",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "精算表の貸借対照表貸方欄にある貸倒引当金と備品減価償却累計額は、最終的な貸借対照表でどう扱いますか。",
+      "explanation": "これらは資産の控除勘定です。精算表の貸方欄にあるだけで負債になるわけではありません。対応する売掛金や備品から差し引きます。",
+      "options": [
+        "両方とも収益へ振り替える",
+        "貸方残高なので表から削除する",
+        "両方とも借入金と同じ負債へ加える",
+        "対応する資産から控除して正味額を示す"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b3x-closing-case-a-q14",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "精算表の損益欄は収益1,119,000円、費用993,700円です。差額として記入する当期純利益を円単位で求めてください。",
+      "explanation": "収益が費用を超える125,300円を、損益借方と貸借貸方へ置きます。両表の差額がつながります。",
+      "input": "number",
+      "accepted": [
+        "125300"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q15",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "整理後の資産は現金90,000、普通預金540,000、売掛金190,000、貸倒引当金5,700、商品65,000、備品600,000、累計額210,000、差入保証金40,000、前払保険料24,000、前払家賃72,000、未収手数料15,000です。控除後の資産合計を円単位で求めてください。",
+      "explanation": "90,000＋540,000＋190,000−5,700＋65,000＋600,000−210,000＋40,000＋24,000＋72,000＋15,000＝1,420,300円です。貸倒引当金と累計額は対応する資産から引き、控除前合計1,636,000円との差215,700円も確かめます。",
+      "input": "number",
+      "accepted": [
+        "1420300"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q16",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "期首繰越利益剰余金80,000円、当期純利益125,300円です。配当・積立等はありません。利益振替後の繰越利益剰余金を円単位で求めてください。",
+      "explanation": "80,000＋125,300＝205,300円です。利益を資本金へ混ぜず、繰越利益剰余金へ加えます。",
+      "input": "number",
+      "accepted": [
+        "205300"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q17",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "損益勘定は収益・費用の締切り後に貸方125,300円の残高となりました。株式会社の当期利益を振り替える仕訳を入力してください。",
+      "explanation": "損益の貸方残高を借方で消し、純資産の利益剰余金へ振り替えます。現金の入金を意味しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "損益",
+          "普通預金",
+          "繰越利益剰余金",
+          "資本金"
+        ],
+        "debits": [
+          {
+            "account": "損益",
+            "amount": 125300
+          }
+        ],
+        "credits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 125300
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"損益\",\"amount\":125300}],\"credits\":[{\"account\":\"繰越利益剰余金\",\"amount\":125300}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q18",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "前期末に借方支払利息3,000円／貸方未払利息3,000円の整理を行いました。当期首の再振替仕訳を入力してください。",
+      "explanation": "前期末の整理を反対にし、未払利息を消します。期首に支払利息貸方3,000円を置くことで、後の全額支払から当期分を残せます。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "借入金",
+          "前払利息",
+          "支払利息",
+          "普通預金",
+          "未払利息"
+        ],
+        "debits": [
+          {
+            "account": "未払利息",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "支払利息",
+            "amount": 3000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払利息\",\"amount\":3000}],\"credits\":[{\"account\":\"支払利息\",\"amount\":3000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q19",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "期首に支払利息3,000円の貸方残高を再振替で記入し、3月末に利息6,000円を支払って全額費用へ記入しました。この二つによる当期の支払利息純額を円単位で求めてください。",
+      "explanation": "当期借方6,000円と期首貸方3,000円を差し引き3,000円です。前期費用を当期へ再び加算しません。",
+      "input": "number",
+      "accepted": [
+        "3000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q20",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "白樺社は収益350,000円、費用370,400円です。損失額を正の円数で求めてください。",
+      "explanation": "費用が収益を20,400円超えるため純損失です。利益のケースと締切りの方向が逆になります。",
+      "input": "number",
+      "accepted": [
+        "20400"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-closing-case-a-q21",
+      "lesson": "b3x-closing-case-a",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "損益勘定に借方20,400円の残高が残りました。当期純損失を繰越利益剰余金へ振り替える仕訳を入力してください。",
+      "explanation": "損益の借方残高を貸方で消し、繰越利益剰余金を借方で減らします。資本金の払戻しや出金の仕訳ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "損益",
+          "普通預金",
+          "給料",
+          "繰越利益剰余金",
+          "資本金"
+        ],
+        "debits": [
+          {
+            "account": "繰越利益剰余金",
+            "amount": 20400
+          }
+        ],
+        "credits": [
+          {
+            "account": "損益",
+            "amount": 20400
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"繰越利益剰余金\",\"amount\":20400}],\"credits\":[{\"account\":\"損益\",\"amount\":20400}]}"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ]
+}

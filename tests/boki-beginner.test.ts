@@ -149,7 +149,7 @@ test('beginner registration is deterministic and never resets unrelated assessme
   assert.deepEqual(bokiAssessments([...entries].reverse()),bokiAssessments(entries));
   const direct=beginnerAssessments(entries,oldBank as Record<string,Question[]>,oldMocks['boki-beginner-mock'] as Question[]);
   assert.deepEqual(direct,assessments);
-  assert.ok(bokiAssessments(entries).filter(a=>a.qualification!=='boki-beginner'&&a.qualification!=='cost-beginner').every(a=>a.version==='boki-2026-v1'));
+  assert.ok(bokiAssessments(entries).filter(a=>a.qualification!=='boki-beginner'&&a.qualification!=='cost-beginner'&&a.qualification!=='boki-3').every(a=>a.version==='boki-2026-v1'));
 });
 
 test('reviewed glossary questions distinguish overlapping categories and monthly change from ending balance',()=>{

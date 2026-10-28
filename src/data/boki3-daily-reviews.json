@@ -1,0 +1,1220 @@
+{
+  "unit-2": [
+    {
+      "id": "b3x-cash-review-1",
+      "lesson": "b3x-cash",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "金庫に紙幣28,000円、硬貨1,850円、他人振出小切手14,000円、自己振出小切手6,000円、切手900円がある。現金に含める合計額はいくらですか。",
+      "explanation": "紙幣・硬貨・他人振出小切手を加え、28,000＋1,850＋14,000＝43,850円です。自己振出小切手は当座預金を戻す対象、切手は現金の範囲外です。",
+      "input": "number",
+      "accepted": [
+        "43850"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-cash-review-2",
+      "lesson": "b3x-cash",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "売掛金67,000円を他人振出小切手42,000円と自己振出小切手25,000円で回収した。仕訳してください。",
+      "explanation": "他人振出分は現金、自社振出分は当座預金の増加です。貸方売掛金67,000円と借方42,000＋25,000円が一致します。回収は新しい売上ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "当座預金",
+          "売掛金",
+          "普通預金",
+          "買掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 42000
+          },
+          {
+            "account": "当座預金",
+            "amount": 25000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 67000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"現金\",\"amount\":42000},{\"account\":\"当座預金\",\"amount\":25000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":67000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-cash-review-3",
+      "lesson": "b3x-cash",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "現金出納帳の月初残高35,000円、収入合計58,000円、月末残高27,600円。他の増減なし。支出合計はいくらですか。",
+      "explanation": "月初＋収入−月末が支出です。35,000＋58,000−27,600＝65,400円です。残高の減少7,400円分だけ、支出が収入を上回っています。",
+      "input": "number",
+      "accepted": [
+        "65400"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-cash-shortage-review-1",
+      "lesson": "b3x-cash-shortage",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "帳簿現金78,000円、実際有高80,600円。原因不明の差額について未処理である。仕訳してください。",
+      "explanation": "実際が2,600円多いので現金を借方で増やし、現金過不足を貸方へ置きます。不足時と現金の増減が逆になります。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "現金過不足",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 2600
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金過不足",
+            "amount": 2600
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"現金\",\"amount\":2600}],\"credits\":[{\"account\":\"現金過不足\",\"amount\":2600}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-cash-shortage-review-2",
+      "lesson": "b3x-cash-shortage",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "現金不足を現金過不足へ処理済みである。受取手数料の現金受取りを本来3,200円のところ4,100円と記帳していたことが判明した。修正してください。",
+      "explanation": "収益と帳簿現金を900円過大に記録していました。現金は不足発見時に減額済みなので、受取手数料900円を減らし現金過不足の借方残高を900円解消します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "受取手数料",
+          "現金過不足",
+          "現金",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "受取手数料",
+            "amount": 900
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金過不足",
+            "amount": 900
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"受取手数料\",\"amount\":900}],\"credits\":[{\"account\":\"現金過不足\",\"amount\":900}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-cash-shortage-review-3",
+      "lesson": "b3x-cash-shortage",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "現金過不足の貸方残高8,600円について、売掛金回収漏れ5,200円と受取利息記入漏れ1,100円が判明した。残りは決算まで原因不明。雑益へ移す額は。",
+      "explanation": "超過8,600円のうち判明した6,300円を振り替え、未判明2,300円だけを雑益とします。現金は発見時に修正済みです。",
+      "input": "number",
+      "accepted": [
+        "2300"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-petty-cash-review-1",
+      "lesson": "b3x-petty-cash",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "定額資金前渡制で、通常の使用額を補給した後に定額を5,000円増やすため、小切手を追加交付した。増額だけを仕訳してください。",
+      "explanation": "定額増額5,000円はまだ使用していない資金の移動です。小口現金を増やし、当座預金を減らします。経費にはしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "小口現金",
+          "当座預金",
+          "現金",
+          "普通預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "小口現金",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "当座預金",
+            "amount": 5000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"小口現金\",\"amount\":5000}],\"credits\":[{\"account\":\"当座預金\",\"amount\":5000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-petty-cash-review-2",
+      "lesson": "b3x-petty-cash",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "小口現金から通信費1,900円、消耗品費2,600円を払ったとの報告を受けた。会計係は報告時に記帳し、補給は翌日。報告時だけを仕訳してください。",
+      "explanation": "費用合計4,500円を計上し、使用済み小口現金を減らします。当日の補給はまだないため、当座預金や普通預金は動かしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "通信費",
+          "消耗品費",
+          "小口現金",
+          "現金",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "通信費",
+            "amount": 1900
+          },
+          {
+            "account": "消耗品費",
+            "amount": 2600
+          }
+        ],
+        "credits": [
+          {
+            "account": "小口現金",
+            "amount": 4500
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"通信費\",\"amount\":1900},{\"account\":\"消耗品費\",\"amount\":2600}],\"credits\":[{\"account\":\"小口現金\",\"amount\":4500}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-petty-cash-review-3",
+      "lesson": "b3x-petty-cash",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "小口現金定額35,000円。支払報告11,200円を記帳後、当日は7,000円だけ補給した。他の増減なし。当日末の小口現金残高は。",
+      "explanation": "35,000−11,200＋7,000＝30,800円です。未補給4,200円を翌日補給すれば元の定額へ戻ります。",
+      "input": "number",
+      "accepted": [
+        "30800"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bank-review-1",
+      "lesson": "b3x-bank",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "普通預金から買掛金41,000円を払い、自社負担の振込手数料220円も同じ口座から支払った。",
+      "explanation": "既存債務41,000円と新しい費用220円を分け、預金支出41,220円を貸方へ記録します。全額を買掛金へしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "買掛金",
+          "支払手数料",
+          "普通預金",
+          "現金",
+          "当座預金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 41000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 220
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 41220
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":41000},{\"account\":\"支払手数料\",\"amount\":220}],\"credits\":[{\"account\":\"普通預金\",\"amount\":41220}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bank-review-2",
+      "lesson": "b3x-bank",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "二勘定制で当座借越27,000円、当座預金ゼロである。売掛金72,000円がこの口座へ振り込まれた。",
+      "explanation": "入金のうち27,000円は借越の返済で、残り45,000円が当座預金となります。元本返済を利息費用にはしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "当座借越",
+          "当座預金",
+          "売掛金",
+          "現金",
+          "普通預金",
+          "買掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "当座借越",
+            "amount": 27000
+          },
+          {
+            "account": "当座預金",
+            "amount": 45000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 72000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"当座借越\",\"amount\":27000},{\"account\":\"当座預金\",\"amount\":45000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":72000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bank-review-3",
+      "lesson": "b3x-bank",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "普通預金Aが84,000円、Bが76,000円。AからBへ28,000円を移し、手数料330円をAから支払った。A口座の残高はいくらですか。",
+      "explanation": "Aは振替28,000円と手数料330円の合計28,330円減り、55,670円です。Bの入金をAへ加え直しません。",
+      "input": "number",
+      "accepted": [
+        "55670"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-expenses-review-1",
+      "lesson": "b3x-expenses",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "次のうち、借方に費用を新しく計上する取引はどれですか。",
+      "explanation": "当月電話料金は当期サービス利用の通信費です。記帳済み債務の支払いは負債減少、長期使用備品は資産、口座間振替も資産内の移動です。",
+      "options": [
+        "長期使用の事務用備品を取得した",
+        "当月の電話料金を支払った",
+        "普通預金から当座預金へ振り替えた",
+        "以前に未払計上した備品代金を支払った"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b3x-expenses-review-2",
+      "lesson": "b3x-expenses",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "広告掲載料26,000円を未払金へ記帳済みである。普通預金から代金と自社負担振込手数料330円を支払った。",
+      "explanation": "広告の費用は計上済みなので未払金を減らします。今回新しく生じた銀行への費用330円だけを支払手数料へ計上します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "未払金",
+          "支払手数料",
+          "普通預金",
+          "現金",
+          "当座預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "未払金",
+            "amount": 26000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 330
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 26330
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"未払金\",\"amount\":26000},{\"account\":\"支払手数料\",\"amount\":330}],\"credits\":[{\"account\":\"普通預金\",\"amount\":26330}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-expenses-review-3",
+      "lesson": "b3x-expenses",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "受取手数料15,000円と貸付金元本24,000円の返済を、普通預金へ一括で受け取った。手数料は未計上である。",
+      "explanation": "入金39,000円のうち新しい収益は15,000円、元本24,000円は資産の回収です。それぞれの科目を分けます。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "普通預金",
+          "受取手数料",
+          "貸付金",
+          "現金",
+          "当座預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 39000
+          }
+        ],
+        "credits": [
+          {
+            "account": "受取手数料",
+            "amount": 15000
+          },
+          {
+            "account": "貸付金",
+            "amount": 24000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":39000}],\"credits\":[{\"account\":\"受取手数料\",\"amount\":15000},{\"account\":\"貸付金\",\"amount\":24000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-payroll-review-1",
+      "lesson": "b3x-payroll",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "給料手取額224,000円、所得税8,500円、社会保険料32,500円、従業員立替金回収5,000円である。給料総額はいくらですか。",
+      "explanation": "手取額へ控除を戻します。控除は8,500＋32,500＋5,000＝46,000円で、総額270,000円です。立替金回収も手取額から引いているため戻して計算します。",
+      "input": "number",
+      "accepted": [
+        "270000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-payroll-review-2",
+      "lesson": "b3x-payroll",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "給料総額290,000円から所得税9,000円、社会保険料36,000円を控除して普通預金から支払った。預り金を種類別に記録する。",
+      "explanation": "給料は総額290,000円、控除合計45,000円は後日納付すべき負債、手取振込額は245,000円です。貸方合計で総額へ戻ります。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "給料",
+          "所得税預り金",
+          "社会保険料預り金",
+          "普通預金",
+          "現金",
+          "当座預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "給料",
+            "amount": 290000
+          }
+        ],
+        "credits": [
+          {
+            "account": "所得税預り金",
+            "amount": 9000
+          },
+          {
+            "account": "社会保険料預り金",
+            "amount": 36000
+          },
+          {
+            "account": "普通預金",
+            "amount": 245000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"給料\",\"amount\":290000}],\"credits\":[{\"account\":\"所得税預り金\",\"amount\":9000},{\"account\":\"社会保険料預り金\",\"amount\":36000},{\"account\":\"普通預金\",\"amount\":245000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-payroll-review-3",
+      "lesson": "b3x-payroll",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "従業員からの社会保険料預り金31,000円と未計上の会社負担分34,000円を普通預金から納付した。",
+      "explanation": "本人負担31,000円は負債を減らし、会社負担34,000円は法定福利費です。65,000円全部を会社費用にすると本人負担を重複計上します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "社会保険料預り金",
+          "法定福利費",
+          "普通預金",
+          "現金",
+          "当座預金",
+          "買掛金",
+          "売掛金",
+          "仕入",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "社会保険料預り金",
+            "amount": 31000
+          },
+          {
+            "account": "法定福利費",
+            "amount": 34000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 65000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"社会保険料預り金\",\"amount\":31000},{\"account\":\"法定福利費\",\"amount\":34000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":65000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bank-closing-review-1",
+      "lesson": "b3x-bank",
+      "field": "commercial",
+      "objectives": [
+        3
+      ],
+      "prompt": "日常の当座取引を一勘定制で当座預金勘定に記録している。3月31日の整理前残高は、借方合計82,000円、貸方合計113,000円である。貸方残高を当座借越へ振り替える決算整理仕訳を入力してください。",
+      "explanation": "貸方超過は113,000−82,000＝31,000円です。当座預金の借方31,000円で残高をゼロにし、当座借越の貸方31,000円として負債を示します。貸方合計113,000円の全額ではなく、借方との差額を振り替えます。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "当座預金",
+          "当座借越",
+          "売掛金",
+          "買掛金",
+          "普通預金",
+          "現金",
+          "支払利息",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "当座預金",
+            "amount": 31000
+          }
+        ],
+        "credits": [
+          {
+            "account": "当座借越",
+            "amount": 31000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"当座預金\",\"amount\":31000}],\"credits\":[{\"account\":\"当座借越\",\"amount\":31000}]}"
+      ]
+    },
+    {
+      "id": "b3x-bank-closing-review-2",
+      "lesson": "b3x-bank",
+      "field": "commercial",
+      "objectives": [
+        3
+      ],
+      "prompt": "一勘定制で当座預金勘定を使用している。前期末に当座借越へ振り替えた貸方残高57,000円は、翌期首に再振替済みである。その後取引はなく、現金22,000円を当座口座へ預け入れた。この預入れの仕訳を入力してください。利息・手数料はない。",
+      "explanation": "再振替後の当座預金は貸方57,000円です。現金22,000円の預入れを当座預金の借方、現金の貸方へ記録します。借越は57,000−22,000＝35,000円残り、当座預金に貸方残高として現れます。入金額が借越に届かなくても、一勘定制では当座借越勘定を直接借方へ使いません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "当座預金",
+          "当座借越",
+          "売掛金",
+          "買掛金",
+          "普通預金",
+          "現金",
+          "支払利息",
+          "雑益"
+        ],
+        "debits": [
+          {
+            "account": "当座預金",
+            "amount": 22000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 22000
+          }
+        ]
+      },
+      "options": [],
+      "answer": 0,
+      "accepted": [
+        "{\"debits\":[{\"account\":\"当座預金\",\"amount\":22000}],\"credits\":[{\"account\":\"現金\",\"amount\":22000}]}"
+      ]
+    }
+  ],
+  "unit-3": [
+    {
+      "id": "b3x-purchases-review-1",
+      "lesson": "b3x-purchases",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "販売用商品45個を1個960円で受け取り、全額を普通預金から支払った。三分法で仕訳してください。",
+      "explanation": "販売用商品の取得なので仕入です。45×960＝43,200円を記録します。支払方法は普通預金で、予定売価は使いません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "普通預金",
+          "現金",
+          "当座預金",
+          "買掛金",
+          "売掛金",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 43200
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 43200
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":43200}],\"credits\":[{\"account\":\"普通預金\",\"amount\":43200}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-purchases-review-2",
+      "lesson": "b3x-purchases",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "代金78,000円の商品を受け取り、前払金10,000円を充当、現金18,000円を追加で払い、残額を掛けとした。三分法で処理する。",
+      "explanation": "仕入全額78,000円に対し、先払10,000円・現金18,000円・未払50,000円へ分かれます。前払分を費用や売上にせず、資産を減らします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "前払金",
+          "現金",
+          "買掛金",
+          "当座預金",
+          "普通預金",
+          "売掛金",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 78000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 10000
+          },
+          {
+            "account": "現金",
+            "amount": 18000
+          },
+          {
+            "account": "買掛金",
+            "amount": 50000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":78000}],\"credits\":[{\"account\":\"前払金\",\"amount\":10000},{\"account\":\"現金\",\"amount\":18000},{\"account\":\"買掛金\",\"amount\":50000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-purchases-review-3",
+      "lesson": "b3x-purchases",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "買掛金月初46,000円、月末54,000円、当月支払82,000円。返品等なし。別に現金仕入れ13,000円がある。当月仕入全体は。",
+      "explanation": "掛け発生額は54,000＋82,000−46,000＝90,000円です。現金仕入れ13,000円を加え、全体103,000円となります。",
+      "input": "number",
+      "accepted": [
+        "103000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-sales-review-1",
+      "lesson": "b3x-sales",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "原価1個750円の商品24個を1個1,250円で掛け販売した。三分法で販売時の仕訳をする。",
+      "explanation": "売価24×1,250＝30,000円を売上へ計上します。原価18,000円や利益12,000円だけを売上にせず、販売時に仕入を減らしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売掛金",
+          "売上",
+          "現金",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "仕入",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "売掛金",
+            "amount": 30000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 30000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売掛金\",\"amount\":30000}],\"credits\":[{\"account\":\"売上\",\"amount\":30000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-sales-review-2",
+      "lesson": "b3x-sales",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "代金86,000円の商品を引き渡した。記帳済み前受金16,000円を充当し、現金20,000円を受け取り、残りを掛けとした。",
+      "explanation": "前受金の負債16,000円を減らし、現金20,000円と新しい売掛金50,000円を記録します。売上は引渡商品の全額86,000円です。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前受金",
+          "現金",
+          "売掛金",
+          "売上",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "仕入",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 16000
+          },
+          {
+            "account": "現金",
+            "amount": 20000
+          },
+          {
+            "account": "売掛金",
+            "amount": 50000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 86000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前受金\",\"amount\":16000},{\"account\":\"現金\",\"amount\":20000},{\"account\":\"売掛金\",\"amount\":50000}],\"credits\":[{\"account\":\"売上\",\"amount\":86000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-sales-review-3",
+      "lesson": "b3x-sales",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "売掛金月初33,000円、月末47,000円、当月掛け販売95,000円、返品等なし。当月売掛金回収額はいくらですか。",
+      "explanation": "月初33,000＋掛け販売95,000−期末47,000＝81,000円です。売掛金の14,000円増加分だけ、掛け売上より回収が少なくなっています。",
+      "input": "number",
+      "accepted": [
+        "81000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-incidental-review-1",
+      "lesson": "b3x-incidental",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品代金80,000円を掛け仕入れした。自社負担引取運賃3,200円を仕入先が立て替え、商品代金と合わせて請求した。",
+      "explanation": "最終負担が自社の取得付随費用なので仕入原価へ加えます。仕入先に対する未払総額83,200円を買掛金へ記録します。自社の立替債権ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "買掛金",
+          "現金",
+          "当座預金",
+          "普通預金",
+          "売掛金",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 83200
+          }
+        ],
+        "credits": [
+          {
+            "account": "買掛金",
+            "amount": 83200
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":83200}],\"credits\":[{\"account\":\"買掛金\",\"amount\":83200}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-incidental-review-2",
+      "lesson": "b3x-incidental",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "商品52,000円を掛け販売し、得意先負担の発送運賃1,400円を現金で立て替えた。立替金を使う。販売と立替えをまとめて仕訳してください。",
+      "explanation": "販売の売上52,000円と、得意先へ回収する立替金1,400円を分けます。相手負担なので発送費を計上しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売掛金",
+          "立替金",
+          "売上",
+          "現金",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "仕入",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "売掛金",
+            "amount": 52000
+          },
+          {
+            "account": "立替金",
+            "amount": 1400
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 52000
+          },
+          {
+            "account": "現金",
+            "amount": 1400
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売掛金\",\"amount\":52000},{\"account\":\"立替金\",\"amount\":1400}],\"credits\":[{\"account\":\"売上\",\"amount\":52000},{\"account\":\"現金\",\"amount\":1400}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-incidental-review-3",
+      "lesson": "b3x-incidental",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "A社への買掛金68,000円と、同社負担の記帳済み立替金2,300円を約束により相殺する。他の費用等なし。残る支払額は。",
+      "explanation": "債務68,000円から、同じ相手へ請求できる立替金2,300円を引き、65,700円です。相殺で債権も債務も減ります。",
+      "input": "number",
+      "accepted": [
+        "65700"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-returns-review-1",
+      "lesson": "b3x-returns",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "売価1個1,400円、原価900円の商品4個が返品された。未回収の売掛金から差し引く。三分法で仕訳する。",
+      "explanation": "売上と売掛金は元の売価4×1,400＝5,600円で取り消します。商品有高帳へ戻す原価3,600円とは区別します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "売掛金",
+          "現金",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "仕入",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 5600
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 5600
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売上\",\"amount\":5600}],\"credits\":[{\"account\":\"売掛金\",\"amount\":5600}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-returns-review-2",
+      "lesson": "b3x-returns",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "商品代金48,000円は全額現金払い済みだった。品違い商品6,000円分を返品し、直ちに現金返金を受けた。三分法で処理する。",
+      "explanation": "代金支払済みで買掛金は残っていません。現金を6,000円増やし、仕入を同額減らします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "仕入",
+          "当座預金",
+          "普通預金",
+          "買掛金",
+          "売掛金",
+          "売上",
+          "預り金",
+          "雑費"
+        ],
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 6000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"現金\",\"amount\":6000}],\"credits\":[{\"account\":\"仕入\",\"amount\":6000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-returns-review-3",
+      "lesson": "b3x-returns",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "買掛金月初39,000円、掛け仕入れ71,000円、仕入返品9,000円、支払64,000円。返品は未払代金から控除。他の増減なし。月末買掛金は。",
+      "explanation": "39,000＋71,000−9,000−64,000＝37,000円です。返品と支払いは両方とも仕入先への負債を減らします。",
+      "input": "number",
+      "accepted": [
+        "37000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-fifo-review-1",
+      "lesson": "b3x-fifo",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "月初16個・700円、仕入24個・800円の後、先入先出法で26個販売した。払出原価は。",
+      "explanation": "最古16個×700円と次の10個×800円で、11,200＋8,000＝19,200円です。新しい単価を26個全部へ掛けません。",
+      "input": "number",
+      "accepted": [
+        "19200"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-fifo-review-2",
+      "lesson": "b3x-fifo",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初16個・700円、仕入24個・800円、販売26個、次に仕入10個・850円、販売8個。先入先出法で期末商品原価は。",
+      "explanation": "最初の販売後は14個・800円です。次の8個もこの層から払い、6個・800円と10個・850円が残ります。4,800＋8,500＝13,300円です。",
+      "input": "number",
+      "accepted": [
+        "13300"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-fifo-review-3",
+      "lesson": "b3x-fifo",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "先入先出法で当月仕入分の一部を返品した。元の仕入日と単価が特定されている。適切なのは。",
+      "explanation": "仕入返品は元の取得取引を取り消すため、対応する層を減らします。販売払出しの最古順をそのまま使うのではなく、売価や利益も使いません。",
+      "options": [
+        "該当する仕入層を元の取得原価で減らす",
+        "必ず販売価格で減らす",
+        "利益相当額だけ減らす",
+        "必ず月初層から減らす"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b3x-moving-average-review-1",
+      "lesson": "b3x-moving-average",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "残高15個・単価600円へ、25個・単価680円を仕入れた。移動平均単価は。",
+      "explanation": "残高原価9,000円と受入原価17,000円を合わせ26,000円です。数量40個で割り650円となります。",
+      "input": "number",
+      "accepted": [
+        "650"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-moving-average-review-2",
+      "lesson": "b3x-moving-average",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "移動平均法で残高40個・平均650円から20個販売し、その後20個・単価750円を受け入れた。新しい平均単価は。",
+      "explanation": "販売後は20個・13,000円です。仕入15,000円と合わせ40個・28,000円となり、新平均700円です。売却済み分を平均へ戻しません。",
+      "input": "number",
+      "accepted": [
+        "700"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-moving-average-review-3",
+      "lesson": "b3x-moving-average",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "現在在庫24個・平均700円へ、以前に600円の原価で販売した商品6個が戻った。元の払出原価で受け入れ、その都度再平均する。新単価は。",
+      "explanation": "戻入原価は6×600＝3,600円です。既存在庫16,800円と合わせ20,400円を30個で割り、680円となります。戻入前平均や売価を返品単価にしません。",
+      "input": "number",
+      "accepted": [
+        "680"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "b3x-foundations-q05",
+    "formula": "1240000-370000",
+    "value": 870000
+  },
+  {
+    "id": "b3x-foundations-q06",
+    "formula": "960000-640000",
+    "value": 320000
+  },
+  {
+    "id": "b3x-foundations-q07",
+    "formula": "720000-85000+85000",
+    "value": 720000
+  },
+  {
+    "id": "b3x-foundations-q08",
+    "formula": "450000+150000-150000",
+    "value": 450000
+  },
+  {
+    "id": "b3x-foundations-q09",
+    "formula": "420000-280000",
+    "value": 140000
+  },
+  {
+    "id": "b3x-foundations-q10",
+    "formula": "680000+95000+120000-35000",
+    "value": 860000
+  },
+  {
+    "id": "b3x-foundations-q12",
+    "formula": "530000+300000-340000+60000-15000",
+    "value": 535000
+  },
+  {
+    "id": "b3x-journal-q01/debit/普通預金",
+    "formula": "140000",
+    "value": 140000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q01/credit/借入金",
+    "formula": "140000",
+    "value": 140000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q02/debit/現金",
+    "formula": "48000",
+    "value": 48000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q02/credit/売掛金",
+    "formula": "48000",
+    "value": 48000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q03/debit/買掛金",
+    "formula": "29000",
+    "value": 29000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q03/credit/普通預金",
+    "formula": "29000",
+    "value": 29000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q04/debit/通信費",
+    "formula": "6200",
+    "value": 6200,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q04/credit/現金",
+    "formula": "6200",
+    "value": 6200,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q05/debit/仕入",
+    "formula": "88000",
+    "value": 88000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q05/credit/現金",
+    "formula": "28000",
+    "value": 28000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q05/credit/買掛金",
+    "formula": "60000",
+    "value": 60000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q06/debit/現金",
+    "formula": "46000",
+    "value": 46000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q06/debit/売掛金",
+    "formula": "80000",
+    "value": 80000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q06/credit/売上",
+    "formula": "126000",
+    "value": 126000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q07/debit/借入金",
+    "formula": "75000",
+    "value": 75000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q07/debit/支払利息",
+    "formula": "1500",
+    "value": 1500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q07/credit/普通預金",
+    "formula": "76500",
+    "value": 76500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q08/debit/備品",
+    "formula": "92000",
+    "value": 92000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q08/credit/普通預金",
+    "formula": "32000",
+    "value": 32000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q08/credit/未払金",
+    "formula": "60000",
+    "value": 60000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q10",
+    "formula": "83000-31000",
+    "value": 52000
+  },
+  {
+    "id": "b3x-journal-q11/debit/普通預金",
+    "formula": "69300",
+    "value": 69300,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q11/debit/支払手数料",
+    "formula": "700",
+    "value": 700,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-journal-q11/credit/売掛金",
+    "formula": "70000",
+    "value": 70000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-ledger-q01",
+    "formula": "57000+41000+26000",
+    "value": 124000
+  },
+  {
+    "id": "b3x-ledger-q02/debit/買掛金",
+    "formula": "34000",
+    "value": 34000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-ledger-q02/credit/普通預金",
+    "formula": "34000",
+    "value": 34000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-ledger-q05",
+    "formula": "82000+56000-9000-65000",
+    "value": 64000
+  },
+  {
+    "id": "b3x-ledger-q06",
+    "formula": "143000-58000",
+    "value": 85000
+  },
+  {
+    "id": "b3x-ledger-q08",
+    "formula": "37000+(96000-37000)",
+    "value": 96000
+  },
+  {
+    "id": "b3x-ledger-q09",
+    "formula": "32000+58000-46000+21000+35000-19000-4000",
+    "value": 77000
+  },
+  {
+    "id": "b3x-ledger-q11",
+    "formula": "119000-46000-38000",
+    "value": 35000
+  },
+  {
+    "id": "b3x-ledger-q12/debit/借入金",
+    "formula": "54000",
+    "value": 54000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-ledger-q12/debit/支払利息",
+    "formula": "1080",
+    "value": 1080,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-ledger-q12/credit/普通預金",
+    "formula": "55080",
+    "value": 55080,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-trial-balance-q01",
+    "formula": "186000-74000",
+    "value": 112000
+  },
+  {
+    "id": "b3x-trial-balance-q02",
+    "formula": "133000-58000",
+    "value": 75000
+  },
+  {
+    "id": "b3x-trial-balance-q03",
+    "formula": "68000+27000",
+    "value": 95000
+  },
+  {
+    "id": "b3x-trial-balance-q05",
+    "formula": "90000+40000+50000+15000+10000",
+    "value": 205000
+  },
+  {
+    "id": "b3x-trial-balance-q06",
+    "formula": "90000-25000+40000-10000+50000+15000",
+    "value": 160000
+  },
+  {
+    "id": "b3x-trial-balance-q07",
+    "formula": "66000+38000+95000+22000-41000-100000",
+    "value": 80000
+  },
+  {
+    "id": "b3x-trial-balance-q09",
+    "formula": "9000+9000",
+    "value": 18000
+  },
+  {
+    "id": "b3x-corrections-q01/debit/旅費交通費",
+    "formula": "7200",
+    "value": 7200,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q01/credit/通信費",
+    "formula": "7200",
+    "value": 7200,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q02/debit/買掛金",
+    "formula": "42000",
+    "value": 42000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q02/credit/仕入",
+    "formula": "42000",
+    "value": 42000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q03/debit/買掛金",
+    "formula": "74000",
+    "value": 74000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q03/debit/備品",
+    "formula": "74000",
+    "value": 74000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q03/credit/仕入",
+    "formula": "74000",
+    "value": 74000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q03/credit/未払金",
+    "formula": "74000",
+    "value": 74000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q05/debit/売上",
+    "formula": "45000",
+    "value": 45000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q05/credit/現金",
+    "formula": "45000",
+    "value": 45000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q06/debit/給料",
+    "formula": "18000",
+    "value": 18000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q06/credit/現金",
+    "formula": "18000",
+    "value": 18000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q07/debit/買掛金",
+    "formula": "70000",
+    "value": 70000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q07/credit/現金",
+    "formula": "70000",
+    "value": 70000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q08/debit/売掛金",
+    "formula": "70000",
+    "value": 70000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q08/credit/現金",
+    "formula": "70000",
+    "value": 70000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q09/debit/普通預金",
+    "formula": "26000",
+    "value": 26000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q09/credit/売掛金",
+    "formula": "26000",
+    "value": 26000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q10/debit/現金",
+    "formula": "9500",
+    "value": 9500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q10/credit/広告宣伝費",
+    "formula": "9500",
+    "value": 9500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-corrections-q11",
+    "formula": "86000-(4200-2400)+17000",
+    "value": 101200
+  },
+  {
+    "id": "b3x-vouchers-q03/debit/旅費交通費",
+    "formula": "5600",
+    "value": 5600,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-vouchers-q03/credit/現金",
+    "formula": "5600",
+    "value": 5600,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-vouchers-q06/debit/売掛金",
+    "formula": "115000",
+    "value": 115000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-vouchers-q06/credit/売上",
+    "formula": "115000",
+    "value": 115000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-vouchers-q08",
+    "formula": "132000-52000",
+    "value": 80000
+  },
+  {
+    "id": "b3x-vouchers-q09",
+    "formula": "31000+24000",
+    "value": 55000
+  },
+  {
+    "id": "b3x-vouchers-q10",
+    "formula": "16000+29000",
+    "value": 45000
+  },
+  {
+    "id": "b3x-vouchers-q11",
+    "formula": "27000+33000+21000+44000+6000+19000",
+    "value": 150000
+  },
+  {
+    "id": "b3x-vouchers-q12",
+    "formula": "64000+72000-39000",
+    "value": 97000
+  },
+  {
+    "id": "b3x-closing-inventory-q01",
+    "formula": "48000+372000-63000",
+    "value": 357000
+  },
+  {
+    "id": "b3x-closing-inventory-q02",
+    "formula": "(30+170-45)*500",
+    "value": 77500
+  },
+  {
+    "id": "b3x-closing-inventory-q03",
+    "formula": "70000+430000-420000",
+    "value": 80000
+  },
+  {
+    "id": "b3x-closing-inventory-q05/debit/仕入",
+    "formula": "52000",
+    "value": 52000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-inventory-q05/credit/繰越商品",
+    "formula": "52000",
+    "value": 52000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-inventory-q06/debit/繰越商品",
+    "formula": "76000",
+    "value": 76000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-inventory-q06/credit/仕入",
+    "formula": "76000",
+    "value": 76000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-inventory-q07",
+    "formula": "315000+42000-59000",
+    "value": 298000
+  },
+  {
+    "id": "b3x-closing-inventory-q08/debit/売上原価",
+    "formula": "248000",
+    "value": 248000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-inventory-q08/credit/仕入",
+    "formula": "248000",
+    "value": 248000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-inventory-q09",
+    "formula": "64000+480000-18000+27000-92000",
+    "value": 461000
+  },
+  {
+    "id": "b3x-closing-inventory-q10",
+    "formula": "810000-(85000+545000-110000)",
+    "value": 290000
+  },
+  {
+    "id": "b3x-closing-inventory-q12",
+    "formula": "90000+610000-125000",
+    "value": 575000
+  },
+  {
+    "id": "b3x-bad-debt-q01/debit/貸倒引当金",
+    "formula": "15000",
+    "value": 15000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q01/credit/売掛金",
+    "formula": "15000",
+    "value": 15000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q02/debit/貸倒引当金",
+    "formula": "12000",
+    "value": 12000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q02/debit/貸倒損失",
+    "formula": "7000",
+    "value": 7000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q02/credit/売掛金",
+    "formula": "19000",
+    "value": 19000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q03/debit/貸倒損失",
+    "formula": "8500",
+    "value": 8500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q03/credit/売掛金",
+    "formula": "8500",
+    "value": 8500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q04",
+    "formula": "21000-13500",
+    "value": 7500
+  },
+  {
+    "id": "b3x-bad-debt-q05",
+    "formula": "(360000+140000)*0.02-6500",
+    "value": 3500
+  },
+  {
+    "id": "b3x-bad-debt-q06",
+    "formula": "(420000-30000-10000+80000)*0.02-(12000-10000)",
+    "value": 7200
+  },
+  {
+    "id": "b3x-bad-debt-q07/debit/貸倒引当金",
+    "formula": "1700",
+    "value": 1700,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q07/credit/貸倒引当金戻入",
+    "formula": "1700",
+    "value": 1700,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q08",
+    "formula": "4000+(9000-4000)",
+    "value": 9000
+  },
+  {
+    "id": "b3x-bad-debt-q09/debit/普通預金",
+    "formula": "4700",
+    "value": 4700,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q09/credit/償却債権取立益",
+    "formula": "4700",
+    "value": 4700,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-bad-debt-q10",
+    "formula": "260000+90000-7000",
+    "value": 343000
+  },
+  {
+    "id": "b3x-bad-debt-q12",
+    "formula": "9000-(310000-6000-24000+90000)*0.02",
+    "value": 1600
+  },
+  {
+    "id": "b3x-expense-accrual-q01",
+    "formula": "168000*9/12",
+    "value": 126000
+  },
+  {
+    "id": "b3x-expense-accrual-q02/debit/前払保険料",
+    "formula": "48000",
+    "value": 48000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-expense-accrual-q02/credit/保険料",
+    "formula": "48000",
+    "value": 48000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-expense-accrual-q03/debit/保険料",
+    "formula": "60000",
+    "value": 60000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-expense-accrual-q03/credit/前払保険料",
+    "formula": "60000",
+    "value": 60000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-expense-accrual-q04",
+    "formula": "180000*5/12",
+    "value": 75000
+  },
+  {
+    "id": "b3x-expense-accrual-q05",
+    "formula": "1500000*0.018*4/12",
+    "value": 9000
+  },
+  {
+    "id": "b3x-expense-accrual-q06/debit/支払家賃",
+    "formula": "23000",
+    "value": 23000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-expense-accrual-q06/credit/未払家賃",
+    "formula": "23000",
+    "value": 23000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-expense-accrual-q07",
+    "formula": "2400000*0.021*4/12",
+    "value": 16800
+  },
+  {
+    "id": "b3x-expense-accrual-q09",
+    "formula": "462000/6*4",
+    "value": 308000
+  },
+  {
+    "id": "b3x-expense-accrual-q10",
+    "formula": "156000*6/12+66000*3/6",
+    "value": 111000
+  },
+  {
+    "id": "b3x-expense-accrual-q11",
+    "formula": "620000-90000+25000",
+    "value": 555000
+  },
+  {
+    "id": "b3x-revenue-accrual-q01",
+    "formula": "300000*3/6",
+    "value": 150000
+  },
+  {
+    "id": "b3x-revenue-accrual-q02/debit/受取地代",
+    "formula": "140000",
+    "value": 140000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-revenue-accrual-q02/credit/前受地代",
+    "formula": "140000",
+    "value": 140000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-revenue-accrual-q03/debit/前受家賃",
+    "formula": "90000",
+    "value": 90000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-revenue-accrual-q03/credit/受取家賃",
+    "formula": "90000",
+    "value": 90000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-revenue-accrual-q05",
+    "formula": "900000*0.028*5/12",
+    "value": 10500
+  },
+  {
+    "id": "b3x-revenue-accrual-q06/debit/未収利息",
+    "formula": "7200",
+    "value": 7200,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-revenue-accrual-q06/credit/受取利息",
+    "formula": "7200",
+    "value": 7200,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-revenue-accrual-q07",
+    "formula": "700000*0.03*8/12",
+    "value": 14000
+  },
+  {
+    "id": "b3x-revenue-accrual-q08",
+    "formula": "9600/(480000*0.03)*12",
+    "value": 8
+  },
+  {
+    "id": "b3x-revenue-accrual-q11",
+    "formula": "750000-150000+40000",
+    "value": 640000
+  },
+  {
+    "id": "b3x-revenue-accrual-q12",
+    "formula": "420000+300000*3/6",
+    "value": 570000
+  },
+  {
+    "id": "b3x-reversal-q01/debit/保険料",
+    "formula": "84000",
+    "value": 84000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q01/credit/前払保険料",
+    "formula": "84000",
+    "value": 84000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q02/debit/未払利息",
+    "formula": "6400",
+    "value": 6400,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q02/credit/支払利息",
+    "formula": "6400",
+    "value": 6400,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q03/debit/前受家賃",
+    "formula": "132000",
+    "value": 132000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q03/credit/受取家賃",
+    "formula": "132000",
+    "value": 132000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q04/debit/受取利息",
+    "formula": "5500",
+    "value": 5500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q04/credit/未収利息",
+    "formula": "5500",
+    "value": 5500,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-reversal-q05",
+    "formula": "33000-9000",
+    "value": 24000
+  },
+  {
+    "id": "b3x-reversal-q06",
+    "formula": "24000-7500",
+    "value": 16500
+  },
+  {
+    "id": "b3x-reversal-q07",
+    "formula": "72000+156000-91000",
+    "value": 137000
+  },
+  {
+    "id": "b3x-reversal-q08",
+    "formula": "100000+540000-120000",
+    "value": 520000
+  },
+  {
+    "id": "b3x-reversal-q09",
+    "formula": "29000+6000-8000",
+    "value": 27000
+  },
+  {
+    "id": "b3x-reversal-q10",
+    "formula": "18000+3600-4800",
+    "value": 16800
+  },
+  {
+    "id": "b3x-closing-adjustments-q01/debit/貯蔵品",
+    "formula": "14000",
+    "value": 14000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-adjustments-q01/credit/消耗品費",
+    "formula": "14000",
+    "value": 14000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-adjustments-q02/debit/消耗品費",
+    "formula": "33000",
+    "value": 33000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-adjustments-q02/credit/貯蔵品",
+    "formula": "33000",
+    "value": 33000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-adjustments-q03",
+    "formula": "110*40+85*20",
+    "value": 6100
+  },
+  {
+    "id": "b3x-closing-adjustments-q04",
+    "formula": "10000+46000-15000",
+    "value": 41000
+  },
+  {
+    "id": "b3x-closing-adjustments-q05",
+    "formula": "144000-132000",
+    "value": 12000
+  },
+  {
+    "id": "b3x-closing-adjustments-q06/debit/減価償却費",
+    "formula": "9000",
+    "value": 9000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-adjustments-q06/credit/備品減価償却累計額",
+    "formula": "9000",
+    "value": 9000,
+    "kind": "journal-row",
+    "note": "Balanced whole-entry model; independently review transaction reasoning, not merely arithmetic."
+  },
+  {
+    "id": "b3x-closing-adjustments-q07",
+    "formula": "5000+7000-9500",
+    "value": 2500
+  },
+  {
+    "id": "b3x-closing-adjustments-q08",
+    "formula": "180000+110000+10000",
+    "value": 300000
+  },
+  {
+    "id": "b3x-closing-adjustments-q09",
+    "formula": "(240000-30000)*0.02-3000",
+    "value": 1200
+  },
+  {
+    "id": "b3x-closing-adjustments-q10",
+    "formula": "9000-6000",
+    "value": 3000
+  },
+  {
+    "id": "b3x-closing-adjustments-q11",
+    "formula": "280000+22000",
+    "value": 302000
+  }
+]

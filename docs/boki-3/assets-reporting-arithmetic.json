@@ -1,0 +1,1174 @@
+{
+  "date": "2026-10-28",
+  "numericChecks": [
+    {
+      "id": "b3x-asset-acquisition-q03",
+      "expression": "660000+24000+6000",
+      "expected": 690000
+    },
+    {
+      "id": "b3x-asset-acquisition-q09",
+      "expression": "520000+248000+309000",
+      "expected": 1077000
+    },
+    {
+      "id": "b3x-asset-acquisition-q10",
+      "expression": "420000+280000+165000",
+      "expected": 865000
+    },
+    {
+      "id": "b3x-asset-acquisition-q11",
+      "expression": "210000+7000-210000",
+      "expected": 7000
+    },
+    {
+      "id": "b3x-asset-acquisition-q12",
+      "expression": "220000-80000",
+      "expected": 140000
+    },
+    {
+      "id": "b3x-depreciation-q01",
+      "expression": "840000/7",
+      "expected": 120000.0
+    },
+    {
+      "id": "b3x-depreciation-q02",
+      "expression": "(550000-50000)/5",
+      "expected": 100000.0
+    },
+    {
+      "id": "b3x-depreciation-q03",
+      "expression": "(450000+30000)/8",
+      "expected": 60000.0
+    },
+    {
+      "id": "b3x-depreciation-q05",
+      "expression": "360000/6*4/12",
+      "expected": 20000.0
+    },
+    {
+      "id": "b3x-depreciation-q06",
+      "expression": "720000/6*9/12",
+      "expected": 90000.0
+    },
+    {
+      "id": "b3x-depreciation-q08",
+      "expression": "72000+48000*6/12",
+      "expected": 96000.0
+    },
+    {
+      "id": "b3x-depreciation-q09",
+      "expression": "900000-300000-150000",
+      "expected": 450000
+    },
+    {
+      "id": "b3x-depreciation-q10",
+      "expression": "640000-400000",
+      "expected": 240000
+    },
+    {
+      "id": "b3x-depreciation-q11",
+      "expression": "240000-160000",
+      "expected": 80000
+    },
+    {
+      "id": "b3x-depreciation-q12",
+      "expression": "630000/90000",
+      "expected": 7.0
+    },
+    {
+      "id": "b3x-asset-sale-q01",
+      "expression": "205000-(540000-360000)",
+      "expected": 25000
+    },
+    {
+      "id": "b3x-asset-sale-q02",
+      "expression": "420000-250000-150000",
+      "expected": 20000
+    },
+    {
+      "id": "b3x-asset-sale-q04",
+      "expression": "480000/8*6/12",
+      "expected": 30000.0
+    },
+    {
+      "id": "b3x-asset-sale-q08",
+      "expression": "720000-240000-720000/6*9/12",
+      "expected": 390000.0
+    },
+    {
+      "id": "b3x-asset-sale-q09",
+      "expression": "900000-350000",
+      "expected": 550000
+    },
+    {
+      "id": "b3x-asset-sale-q10",
+      "expression": "420000-150000",
+      "expected": 270000
+    },
+    {
+      "id": "b3x-asset-sale-q11",
+      "expression": "680000-440000+35000",
+      "expected": 275000
+    },
+    {
+      "id": "b3x-asset-sale-q12",
+      "expression": "560000-320000-18000",
+      "expected": 222000
+    },
+    {
+      "id": "b3x-supplies-q01",
+      "expression": "7000+49000-12000",
+      "expected": 44000
+    },
+    {
+      "id": "b3x-supplies-q02",
+      "expression": "1200*(25-6)",
+      "expected": 22800
+    },
+    {
+      "id": "b3x-supplies-q03",
+      "expression": "42000+15000-9000",
+      "expected": 48000
+    },
+    {
+      "id": "b3x-supplies-q06",
+      "expression": "58000-14000",
+      "expected": 44000
+    },
+    {
+      "id": "b3x-supplies-q08",
+      "expression": "46000-19000",
+      "expected": 27000
+    },
+    {
+      "id": "b3x-supplies-q12",
+      "expression": "9000",
+      "expected": 9000
+    },
+    {
+      "id": "b3x-capital-q01",
+      "expression": "180*4000",
+      "expected": 720000
+    },
+    {
+      "id": "b3x-capital-q03",
+      "expression": "630000/7000",
+      "expected": 90.0
+    },
+    {
+      "id": "b3x-capital-q06",
+      "expression": "800000+250000",
+      "expected": 1050000
+    },
+    {
+      "id": "b3x-capital-q07",
+      "expression": "600000",
+      "expected": 600000
+    },
+    {
+      "id": "b3x-capital-q09",
+      "expression": "(1260000-900000)/4500",
+      "expected": 80.0
+    },
+    {
+      "id": "b3x-capital-q10",
+      "expression": "1400000+260000",
+      "expected": 1660000
+    },
+    {
+      "id": "b3x-capital-q11",
+      "expression": "110000+75000",
+      "expected": 185000
+    },
+    {
+      "id": "b3x-capital-q12",
+      "expression": "1980000-420000-1200000",
+      "expected": 360000
+    },
+    {
+      "id": "b3x-dividends-q03",
+      "expression": "70000",
+      "expected": 70000
+    },
+    {
+      "id": "b3x-dividends-q06",
+      "expression": "12000+84000-76000",
+      "expected": 20000
+    },
+    {
+      "id": "b3x-dividends-q07",
+      "expression": "0",
+      "expected": 0
+    },
+    {
+      "id": "b3x-dividends-q08",
+      "expression": "240000-50000-5000+90000",
+      "expected": 275000
+    },
+    {
+      "id": "b3x-dividends-q09",
+      "expression": "18000+7000",
+      "expected": 25000
+    },
+    {
+      "id": "b3x-dividends-q10",
+      "expression": "1200000+200000+130000-80000",
+      "expected": 1450000
+    },
+    {
+      "id": "b3x-dividends-q11",
+      "expression": "160000-30000-20000-2000",
+      "expected": 108000
+    },
+    {
+      "id": "b3x-corporate-tax-q01",
+      "expression": "144000-54000",
+      "expected": 90000
+    },
+    {
+      "id": "b3x-corporate-tax-q02",
+      "expression": "480000*.25",
+      "expected": 120000.0
+    },
+    {
+      "id": "b3x-corporate-tax-q05",
+      "expression": "420000-30000+10000",
+      "expected": 400000
+    },
+    {
+      "id": "b3x-corporate-tax-q06",
+      "expression": "(420000-30000+10000)*.30",
+      "expected": 120000.0
+    },
+    {
+      "id": "b3x-corporate-tax-q07",
+      "expression": "520000-156000",
+      "expected": 364000
+    },
+    {
+      "id": "b3x-corporate-tax-q10",
+      "expression": "98000-32000",
+      "expected": 66000
+    },
+    {
+      "id": "b3x-corporate-tax-q12",
+      "expression": "70000+150000-130000",
+      "expected": 90000
+    },
+    {
+      "id": "b3x-corporate-tax-q14",
+      "expression": "416000-36000",
+      "expected": 380000
+    },
+    {
+      "id": "b3x-consumption-tax-q01",
+      "expression": "176000/1.10",
+      "expected": 160000.0
+    },
+    {
+      "id": "b3x-consumption-tax-q02",
+      "expression": "72000*1.10",
+      "expected": 79200.0
+    },
+    {
+      "id": "b3x-consumption-tax-q03",
+      "expression": "99000-99000/1.10",
+      "expected": 9000.0
+    },
+    {
+      "id": "b3x-consumption-tax-q10",
+      "expression": "90000-(52000+30000*.10)",
+      "expected": 35000.0
+    },
+    {
+      "id": "b3x-adjusted-trial-q01",
+      "expression": "36000-9000",
+      "expected": 27000
+    },
+    {
+      "id": "b3x-adjusted-trial-q02",
+      "expression": "150000-25000+12000",
+      "expected": 137000
+    },
+    {
+      "id": "b3x-adjusted-trial-q04",
+      "expression": "350000+60000-80000",
+      "expected": 330000
+    },
+    {
+      "id": "b3x-adjusted-trial-q05",
+      "expression": "75000+45000",
+      "expected": 120000
+    },
+    {
+      "id": "b3x-adjusted-trial-q06",
+      "expression": "250000*.02-2000",
+      "expected": 3000.0
+    },
+    {
+      "id": "b3x-adjusted-trial-q07",
+      "expression": "6000",
+      "expected": 6000
+    },
+    {
+      "id": "b3x-adjusted-trial-q08",
+      "expression": "8000+3500",
+      "expected": 11500
+    },
+    {
+      "id": "b3x-adjusted-trial-q09",
+      "expression": "780000-652000",
+      "expected": 128000
+    },
+    {
+      "id": "b3x-adjusted-trial-q10",
+      "expression": "960000-340000-500000-75000",
+      "expected": 45000
+    },
+    {
+      "id": "b3x-adjusted-trial-q11",
+      "expression": "6000",
+      "expected": 6000
+    },
+    {
+      "id": "b3x-worksheet-q01",
+      "expression": "48000-12000",
+      "expected": 36000
+    },
+    {
+      "id": "b3x-worksheet-q02",
+      "expression": "210000+18000",
+      "expected": 228000
+    },
+    {
+      "id": "b3x-worksheet-q03",
+      "expression": "35000+42000-35000",
+      "expected": 42000
+    },
+    {
+      "id": "b3x-worksheet-q04",
+      "expression": "280000+35000-42000",
+      "expected": 273000
+    },
+    {
+      "id": "b3x-worksheet-q05",
+      "expression": "90000+45000",
+      "expected": 135000
+    },
+    {
+      "id": "b3x-worksheet-q06",
+      "expression": "760000-2000-80000",
+      "expected": 678000
+    },
+    {
+      "id": "b3x-worksheet-q07",
+      "expression": "40000+55000+25000+4000+6000",
+      "expected": 130000
+    },
+    {
+      "id": "b3x-worksheet-q08",
+      "expression": "580000-512000",
+      "expected": 68000
+    },
+    {
+      "id": "b3x-worksheet-q11",
+      "expression": "7000*2",
+      "expected": 14000
+    },
+    {
+      "id": "b3x-worksheet-q12",
+      "expression": "870000+(630000-600000)",
+      "expected": 900000
+    },
+    {
+      "id": "b3x-profit-loss-q01",
+      "expression": "760000-18000",
+      "expected": 742000
+    },
+    {
+      "id": "b3x-profit-loss-q02",
+      "expression": "45000+380000-8000+6000-53000",
+      "expected": 370000
+    },
+    {
+      "id": "b3x-profit-loss-q03",
+      "expression": "370000",
+      "expected": 370000
+    },
+    {
+      "id": "b3x-profit-loss-q04",
+      "expression": "820000-490000",
+      "expected": 330000
+    },
+    {
+      "id": "b3x-profit-loss-q05",
+      "expression": "490000+130000+60000+35000+25000",
+      "expected": 740000
+    },
+    {
+      "id": "b3x-profit-loss-q06",
+      "expression": "820000+2000",
+      "expected": 822000
+    },
+    {
+      "id": "b3x-profit-loss-q07",
+      "expression": "900000+5000-842000",
+      "expected": 63000
+    },
+    {
+      "id": "b3x-profit-loss-q08",
+      "expression": "940000-856000",
+      "expected": 84000
+    },
+    {
+      "id": "b3x-profit-loss-q09",
+      "expression": "66000-56000",
+      "expected": 10000
+    },
+    {
+      "id": "b3x-profit-loss-q10",
+      "expression": "600000-350000-180000-14000",
+      "expected": 56000
+    },
+    {
+      "id": "b3x-profit-loss-q11",
+      "expression": "40000",
+      "expected": 40000
+    },
+    {
+      "id": "b3x-profit-loss-q12",
+      "expression": "10000*(1-.30)",
+      "expected": 7000.0
+    },
+    {
+      "id": "b3x-balance-sheet-q01",
+      "expression": "240000-7200",
+      "expected": 232800
+    },
+    {
+      "id": "b3x-balance-sheet-q02",
+      "expression": "480000-210000",
+      "expected": 270000
+    },
+    {
+      "id": "b3x-balance-sheet-q04",
+      "expression": "120000+280000+150000-3000+80000+300000-120000+9000",
+      "expected": 816000
+    },
+    {
+      "id": "b3x-balance-sheet-q05",
+      "expression": "130000+210000+8000+6000+22000",
+      "expected": 376000
+    },
+    {
+      "id": "b3x-balance-sheet-q06",
+      "expression": "500000+120000+800000-710000",
+      "expected": 710000
+    },
+    {
+      "id": "b3x-balance-sheet-q07",
+      "expression": "80000+55000",
+      "expected": 135000
+    },
+    {
+      "id": "b3x-balance-sheet-q08",
+      "expression": "135000",
+      "expected": 135000
+    },
+    {
+      "id": "b3x-balance-sheet-q09",
+      "expression": "1050000-380000-500000",
+      "expected": 170000
+    },
+    {
+      "id": "b3x-balance-sheet-q10",
+      "expression": "6000",
+      "expected": 6000
+    },
+    {
+      "id": "b3x-balance-sheet-q11",
+      "expression": "100000-28000",
+      "expected": 72000
+    },
+    {
+      "id": "b3x-balance-sheet-q12",
+      "expression": "980000-4000-160000",
+      "expected": 816000
+    },
+    {
+      "id": "b3x-closing-books-q07",
+      "expression": "85000+390000-338000",
+      "expected": 137000
+    },
+    {
+      "id": "b3x-closing-books-q08",
+      "expression": "890000-160000-210000-400000",
+      "expected": 120000
+    },
+    {
+      "id": "b3x-closing-books-q09",
+      "expression": "720000-590000",
+      "expected": 130000
+    },
+    {
+      "id": "b3x-closing-books-q12",
+      "expression": "0",
+      "expected": 0
+    },
+    {
+      "id": "b3x-closing-books-q13",
+      "expression": "160000+42000+63000+14000+63000+42000+14000+(63000-42000-14000)",
+      "expected": 405000
+    },
+    {
+      "id": "b3x-closing-books-q14",
+      "expression": "132000+45000-38000",
+      "expected": 139000
+    },
+    {
+      "id": "b3x-asset-acquisition-review-03",
+      "expression": "950000-780000+120000",
+      "expected": 290000
+    },
+    {
+      "id": "b3x-depreciation-review-01",
+      "expression": "(990000-90000)/9",
+      "expected": 100000.0
+    },
+    {
+      "id": "b3x-depreciation-review-03",
+      "expression": "210000+98000-70000",
+      "expected": 238000
+    },
+    {
+      "id": "b3x-asset-sale-review-01",
+      "expression": "750000-510000-32000",
+      "expected": 208000
+    },
+    {
+      "id": "b3x-asset-sale-review-03",
+      "expression": "1260000-340000-(530000-170000)",
+      "expected": 560000
+    },
+    {
+      "id": "b3x-supplies-review-01",
+      "expression": "55000+17000-13000",
+      "expected": 59000
+    },
+    {
+      "id": "b3x-capital-review-01",
+      "expression": "150*9000",
+      "expected": 1350000
+    },
+    {
+      "id": "b3x-capital-review-03",
+      "expression": "2380000-580000-1500000-210000",
+      "expected": 90000
+    },
+    {
+      "id": "b3x-dividends-review-02",
+      "expression": "25000+110000-105000",
+      "expected": 30000
+    },
+    {
+      "id": "b3x-dividends-review-03",
+      "expression": "1460000+240000+180000-110000",
+      "expected": 1770000
+    },
+    {
+      "id": "b3x-corporate-tax-review-01",
+      "expression": "620000*.25-65000",
+      "expected": 90000.0
+    },
+    {
+      "id": "b3x-corporate-tax-review-03",
+      "expression": "82000+174000-96000",
+      "expected": 160000
+    },
+    {
+      "id": "b3x-consumption-tax-review-01",
+      "expression": "187000-187000/1.10",
+      "expected": 17000.0
+    },
+    {
+      "id": "b3x-corporate-tax-review-05",
+      "expression": "18000",
+      "expected": 18000
+    },
+    {
+      "id": "b3x-adjusted-trial-review-01",
+      "expression": "198000-33000+14000",
+      "expected": 179000
+    },
+    {
+      "id": "b3x-adjusted-trial-review-03",
+      "expression": "1180000-430000-600000-105000",
+      "expected": 45000
+    },
+    {
+      "id": "b3x-worksheet-review-01",
+      "expression": "60000+4000-15000",
+      "expected": 49000
+    },
+    {
+      "id": "b3x-worksheet-review-02",
+      "expression": "180000+420000+260000-5400-168000",
+      "expected": 686600
+    },
+    {
+      "id": "b3x-worksheet-review-03",
+      "expression": "720000",
+      "expected": 720000
+    },
+    {
+      "id": "b3x-profit-loss-review-01",
+      "expression": "72000+610000-16000+14000-94000",
+      "expected": 586000
+    },
+    {
+      "id": "b3x-profit-loss-review-02",
+      "expression": "1100000-650000-300000+4000-9000-15000-39000",
+      "expected": 91000
+    },
+    {
+      "id": "b3x-profit-loss-review-03",
+      "expression": "12000*(1-.25)",
+      "expected": 9000.0
+    },
+    {
+      "id": "b3x-balance-sheet-review-01",
+      "expression": "210000-6300+560000-224000",
+      "expected": 539700
+    },
+    {
+      "id": "b3x-balance-sheet-review-02",
+      "expression": "450000+210000-6300+105000+560000-224000+14000-380000-600000",
+      "expected": 128700
+    },
+    {
+      "id": "b3x-balance-sheet-review-03",
+      "expression": "75000",
+      "expected": 75000
+    },
+    {
+      "id": "b3x-closing-books-review-03",
+      "expression": "620000-515000",
+      "expected": 105000
+    },
+    {
+      "id": "b3x-closing-books-review-04",
+      "expression": "180000+48000+72000+16000+72000+48000+16000+(72000-48000-16000)",
+      "expected": 460000
+    },
+    {
+      "id": "b3x-closing-books-review-05",
+      "expression": "27000+46000-58000-5000",
+      "expected": 10000
+    }
+  ],
+  "journalBalanceChecks": [
+    {
+      "id": "b3x-asset-acquisition-q01",
+      "debit": 90000,
+      "credit": 90000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-q02",
+      "debit": 90000,
+      "credit": 90000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-q04",
+      "debit": 248000,
+      "credit": 248000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-q05",
+      "debit": 515000,
+      "credit": 515000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-q06",
+      "debit": 60000,
+      "credit": 60000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-q07",
+      "debit": 309000,
+      "credit": 309000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-q08",
+      "debit": 180000,
+      "credit": 180000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-depreciation-q04",
+      "debit": 48000,
+      "credit": 48000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-depreciation-q07",
+      "debit": 8000,
+      "credit": 8000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-sale-q03",
+      "debit": 315000,
+      "credit": 315000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-sale-q05",
+      "debit": 490000,
+      "credit": 490000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-sale-q06",
+      "debit": 240000,
+      "credit": 240000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-sale-q07",
+      "debit": 70000,
+      "credit": 70000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-q04",
+      "debit": 8000,
+      "credit": 8000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-q05",
+      "debit": 20000,
+      "credit": 20000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-q07",
+      "debit": 5000,
+      "credit": 5000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-q09",
+      "debit": 5400,
+      "credit": 5400,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-q10",
+      "debit": 3000,
+      "credit": 3000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-q11",
+      "debit": 10200,
+      "credit": 10200,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-capital-q02",
+      "debit": 800000,
+      "credit": 800000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-capital-q04",
+      "debit": 300000,
+      "credit": 300000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-capital-q05",
+      "debit": 400000,
+      "credit": 400000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-capital-q08",
+      "debit": 200000,
+      "credit": 200000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-dividends-q01",
+      "debit": 50000,
+      "credit": 50000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-dividends-q02",
+      "debit": 88000,
+      "credit": 88000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-dividends-q04",
+      "debit": 65000,
+      "credit": 65000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-dividends-q05",
+      "debit": 55000,
+      "credit": 55000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-dividends-q12",
+      "debit": 95000,
+      "credit": 95000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-q03",
+      "debit": 42000,
+      "credit": 42000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-q04",
+      "debit": 108000,
+      "credit": 108000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-q08",
+      "debit": 72000,
+      "credit": 72000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-q09",
+      "debit": 64000,
+      "credit": 64000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-q11",
+      "debit": 24000,
+      "credit": 24000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-q13",
+      "debit": 32500,
+      "credit": 32500,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-q15",
+      "debit": 16800,
+      "credit": 16800,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q04",
+      "debit": 99000,
+      "credit": 99000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q05",
+      "debit": 143000,
+      "credit": 143000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q06",
+      "debit": 13200,
+      "credit": 13200,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q07",
+      "debit": 8800,
+      "credit": 8800,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q08",
+      "debit": 204600,
+      "credit": 204600,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q09",
+      "debit": 72000,
+      "credit": 72000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q11",
+      "debit": 6000,
+      "credit": 6000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-q12",
+      "debit": 28000,
+      "credit": 28000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-adjusted-trial-q03",
+      "debit": 7000,
+      "credit": 7000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-adjusted-trial-q12",
+      "debit": 30000,
+      "credit": 30000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-q01",
+      "debit": 360000,
+      "credit": 360000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-q02",
+      "debit": 96000,
+      "credit": 96000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-q03",
+      "debit": 424000,
+      "credit": 424000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-q04",
+      "debit": 328000,
+      "credit": 328000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-q05",
+      "debit": 58000,
+      "credit": 58000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-q06",
+      "debit": 35000,
+      "credit": 35000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-review-01",
+      "debit": 72000,
+      "credit": 72000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-acquisition-review-02",
+      "debit": 708000,
+      "credit": 708000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-depreciation-review-02",
+      "debit": 78000,
+      "credit": 78000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-asset-sale-review-02",
+      "debit": 420000,
+      "credit": 420000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-review-02",
+      "debit": 29000,
+      "credit": 29000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-supplies-review-03",
+      "debit": 8800,
+      "credit": 8800,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-capital-review-02",
+      "debit": 690000,
+      "credit": 690000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-dividends-review-01",
+      "debit": 121000,
+      "credit": 121000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-review-02",
+      "debit": 162000,
+      "credit": 162000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-review-02",
+      "debit": 19800,
+      "credit": 19800,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-consumption-tax-review-03",
+      "debit": 84000,
+      "credit": 84000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-corporate-tax-review-04",
+      "debit": 27400,
+      "credit": 27400,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-adjusted-trial-review-02",
+      "debit": 4000,
+      "credit": 4000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-review-01",
+      "debit": 478000,
+      "credit": 478000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    },
+    {
+      "id": "b3x-closing-books-review-02",
+      "debit": 38000,
+      "credit": 38000,
+      "method": "separate side totals and stored accepted/model equality; account reasoning requires semantic review"
+    }
+  ],
+  "completeTeachingCases": [
+    {
+      "id": "adjusted-trial-complete",
+      "ledger": {
+        "cash": 380000,
+        "receivable": 120000,
+        "inventory": 90000,
+        "equipment": 240000,
+        "purchases": 380000,
+        "salary": 108000,
+        "rent": 60000,
+        "insurance": 18000,
+        "payable": -100000,
+        "loan": -200000,
+        "capital": -300000,
+        "retained": -54000,
+        "sales": -680000,
+        "accumulated": -108000,
+        "baddebt": 2400,
+        "allowance": -2400,
+        "depreciation": 48000,
+        "prepaid": 6000,
+        "salarypayable": -8000,
+        "interest": 12000,
+        "interestpayable": -12000
+      },
+      "trialTotal": 1464400,
+      "expenses": 628400,
+      "profit": 51600,
+      "assets": 725600,
+      "liabilities": 320000,
+      "equity": 405600
+    },
+    {
+      "id": "worksheet-complete",
+      "ledger": {
+        "cash": 200000,
+        "receivable": 80000,
+        "inventory": 50000,
+        "equipment": 150000,
+        "purchases": 250000,
+        "salary": 75000,
+        "insurance": 9000,
+        "payable": -72000,
+        "loan": -100000,
+        "capital": -200000,
+        "retained": -40000,
+        "sales": -370000,
+        "accumulated": -60000,
+        "depreciation": 30000,
+        "prepaid": 3000,
+        "salarypayable": -5000,
+        "baddebt": 800,
+        "allowance": -800
+      },
+      "trialTotal": 847800,
+      "adjustmentTotal": 128800,
+      "profit": 5200,
+      "worksheetBSDebit": 483000,
+      "worksheetBSCreditBeforeProfit": 477800,
+      "assets": 422200
+    },
+    {
+      "id": "profit-loss-complete",
+      "netSales": 880000,
+      "costOfSales": 500000,
+      "revenues": 895000,
+      "expenses": 825000,
+      "profit": 70000
+    },
+    {
+      "id": "balance-sheet-complete",
+      "assets": 1010600,
+      "liabilities": 420000,
+      "equity": 590600,
+      "profit": 110600
+    },
+    {
+      "id": "closing-books-complete",
+      "beforeTrial": 1086000,
+      "afterTrial": 710000,
+      "profit": 26000,
+      "afterRetained": 86000,
+      "assetNet": 650000
+    },
+    {
+      "id": "closing-books-journal-and-subsidiaries",
+      "normalJournalSide": 205000,
+      "closingJournalSide": 90000,
+      "periodJournalSide": 295000,
+      "cash": 118000,
+      "receivable": 25000,
+      "payable": 18000,
+      "capital": 120000,
+      "retained": 5000,
+      "endingBalanceTotal": 143000
+    },
+    {
+      "id": "current-property-tax-payment",
+      "expense": 28000,
+      "profitBefore": 232000,
+      "profitAfter": 204000,
+      "cashDecrease": 28000
+    }
+  ],
+  "limits": "Expressions are separately written calculation witnesses. Balanced sides do not establish correct accounts. Independent semantic peer review and user calibration are separate."
+}

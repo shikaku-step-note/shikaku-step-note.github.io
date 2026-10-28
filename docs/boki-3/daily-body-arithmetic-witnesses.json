@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "b3x-cash-worked-1-total",
+    "formula": "64000+3800+42000",
+    "value": 109800
+  },
+  {
+    "id": "b3x-cash-worked-1-excluded",
+    "formula": "2400+9000",
+    "value": 11400
+  },
+  {
+    "id": "b3x-cash-worked-3-total",
+    "formula": "65000+25000",
+    "value": 90000
+  },
+  {
+    "id": "b3x-cash-ledger",
+    "formula": "30000+18000-2600-20000",
+    "value": 25400
+  },
+  {
+    "id": "b3x-cash-guided",
+    "formula": "12000+8000+7000-4200",
+    "value": 22800
+  },
+  {
+    "id": "b3x-cash-worked-4-fix",
+    "formula": "36000-26000",
+    "value": 10000
+  },
+  {
+    "id": "b3x-cash-detect-omission",
+    "formula": "18000+47000-32000-29400",
+    "value": 3600
+  },
+  {
+    "id": "b3x-cash-independent",
+    "formula": "26000+31000+40000-7500-55000",
+    "value": 34500
+  },
+  {
+    "id": "b3x-cash-independent-net",
+    "formula": "71000-62500",
+    "value": 8500
+  },
+  {
+    "id": "b3x-cash-shortage-worked-1-short",
+    "formula": "82000-76500",
+    "value": 5500
+  },
+  {
+    "id": "b3x-cash-shortage-worked-1-over",
+    "formula": "48400-46000",
+    "value": 2400
+  },
+  {
+    "id": "b3x-cash-shortage-worked-2-remain",
+    "formula": "5500-3200",
+    "value": 2300
+  },
+  {
+    "id": "b3x-cash-shortage-error-travel",
+    "formula": "7600-6700",
+    "value": 900
+  },
+  {
+    "id": "b3x-cash-shortage-error-fee",
+    "formula": "5400-4500",
+    "value": 900
+  },
+  {
+    "id": "b3x-cash-shortage-worked-3-found",
+    "formula": "4000+1500",
+    "value": 5500
+  },
+  {
+    "id": "b3x-cash-shortage-worked-3-remain",
+    "formula": "6800-4000-1500",
+    "value": 1300
+  },
+  {
+    "id": "b3x-cash-shortage-opposite-found",
+    "formula": "4000+2000",
+    "value": 6000
+  },
+  {
+    "id": "b3x-cash-shortage-guided-short",
+    "formula": "56000-52400",
+    "value": 3600
+  },
+  {
+    "id": "b3x-cash-shortage-guided-remain",
+    "formula": "3600-2100",
+    "value": 1500
+  },
+  {
+    "id": "b3x-cash-shortage-worked-4-remain",
+    "formula": "6000-4000+1500",
+    "value": 3500
+  },
+  {
+    "id": "b3x-cash-shortage-worked-4-net",
+    "formula": "4000+3500-1500",
+    "value": 6000
+  },
+  {
+    "id": "b3x-cash-shortage-independent-error",
+    "formula": "4300-3400",
+    "value": 900
+  },
+  {
+    "id": "b3x-cash-shortage-independent-remain",
+    "formula": "7200-900-5000",
+    "value": 1300
+  },
+  {
+    "id": "b3x-petty-cash-worked-1-remain",
+    "formula": "40000-1200-2800",
+    "value": 36000
+  },
+  {
+    "id": "b3x-petty-cash-worked-2-report",
+    "formula": "2100+3400+1500",
+    "value": 7000
+  },
+  {
+    "id": "b3x-petty-cash-worked-2-remain",
+    "formula": "30000-7000",
+    "value": 23000
+  },
+  {
+    "id": "b3x-petty-cash-worked-3-comms",
+    "formula": "1100+1300",
+    "value": 2400
+  },
+  {
+    "id": "b3x-petty-cash-worked-3-travel",
+    "formula": "2400+900",
+    "value": 3300
+  },
+  {
+    "id": "b3x-petty-cash-worked-3-total",
+    "formula": "2400+3300+3600",
+    "value": 9300
+  },
+  {
+    "id": "b3x-petty-cash-worked-3-remain",
+    "formula": "25000-9300",
+    "value": 15700
+  },
+  {
+    "id": "b3x-petty-cash-guided-topup",
+    "formula": "6500+24000-20000",
+    "value": 10500
+  },
+  {
+    "id": "b3x-petty-cash-worked-4-remain",
+    "formula": "30000-2000-5000+4000",
+    "value": 27000
+  },
+  {
+    "id": "b3x-petty-cash-worked-4-last-topup",
+    "formula": "7000-4000",
+    "value": 3000
+  },
+  {
+    "id": "b3x-petty-cash-report-extra-total",
+    "formula": "800+1500+1200+2600",
+    "value": 6100
+  },
+  {
+    "id": "b3x-petty-cash-independent-total",
+    "formula": "1700+4800+2900",
+    "value": 9400
+  },
+  {
+    "id": "b3x-petty-cash-independent-remain",
+    "formula": "36000-9400",
+    "value": 26600
+  },
+  {
+    "id": "b3x-bank-worked-1-checking",
+    "formula": "180000-72000+50000",
+    "value": 158000
+  },
+  {
+    "id": "b3x-bank-worked-1-ordinary",
+    "formula": "260000+95000-50000",
+    "value": 305000
+  },
+  {
+    "id": "b3x-bank-worked-1-combined",
+    "formula": "440000+95000-72000",
+    "value": 463000
+  },
+  {
+    "id": "b3x-bank-fees",
+    "formula": "60000+330",
+    "value": 60330
+  },
+  {
+    "id": "b3x-bank-worked-2-overdraft",
+    "formula": "65000-40000",
+    "value": 25000
+  },
+  {
+    "id": "b3x-bank-worked-2-deposit",
+    "formula": "70000-25000",
+    "value": 45000
+  },
+  {
+    "id": "b3x-bank-worked-2-partial",
+    "formula": "25000-18000",
+    "value": 7000
+  },
+  {
+    "id": "b3x-bank-worked-3-a",
+    "formula": "120000-45000-220",
+    "value": 74780
+  },
+  {
+    "id": "b3x-bank-worked-3-b",
+    "formula": "80000+45000",
+    "value": 125000
+  },
+  {
+    "id": "b3x-bank-worked-3-total",
+    "formula": "74780+125000",
+    "value": 199780
+  },
+  {
+    "id": "b3x-bank-worked-4-deposits",
+    "formula": "20000+30000",
+    "value": 50000
+  },
+  {
+    "id": "b3x-bank-reverse-payments",
+    "formula": "80000+130000-45000",
+    "value": 165000
+  },
+  {
+    "id": "b3x-bank-reverse-overdraft",
+    "formula": "80000+130000+15000",
+    "value": 225000
+  },
+  {
+    "id": "b3x-bank-independent-deposit",
+    "formula": "50000-18000",
+    "value": 32000
+  },
+  {
+    "id": "b3x-bank-independent-overdraft",
+    "formula": "44000-32000",
+    "value": 12000
+  },
+  {
+    "id": "b3x-expenses-worked-1-outflow",
+    "formula": "8400+72000+45000",
+    "value": 125400
+  },
+  {
+    "id": "b3x-expenses-worked-1-new-expenses",
+    "formula": "8400+72000",
+    "value": 80400
+  },
+  {
+    "id": "b3x-expenses-worked-2-payment",
+    "formula": "18000+330",
+    "value": 18330
+  },
+  {
+    "id": "b3x-expenses-advance-return",
+    "formula": "20000-16500",
+    "value": 3500
+  },
+  {
+    "id": "b3x-expenses-worked-3-receipt",
+    "formula": "18000+32000",
+    "value": 50000
+  },
+  {
+    "id": "b3x-expenses-guided-receipt",
+    "formula": "12000+30000",
+    "value": 42000
+  },
+  {
+    "id": "b3x-expenses-worked-4-expenses",
+    "formula": "7000+8000",
+    "value": 15000
+  },
+  {
+    "id": "b3x-expenses-worked-4-total",
+    "formula": "7000+8000+30000",
+    "value": 45000
+  },
+  {
+    "id": "b3x-expenses-fee-net",
+    "formula": "20000-330",
+    "value": 19670
+  },
+  {
+    "id": "b3x-expenses-independent-expenses",
+    "formula": "9200+23000",
+    "value": 32200
+  },
+  {
+    "id": "b3x-expenses-independent-deposit",
+    "formula": "150000-9200-23000-40000+16000",
+    "value": 93800
+  },
+  {
+    "id": "b3x-expenses-independent-loss",
+    "formula": "32200-16000",
+    "value": 16200
+  },
+  {
+    "id": "b3x-expenses-independent-outflow",
+    "formula": "150000-93800",
+    "value": 56200
+  },
+  {
+    "id": "b3x-payroll-basic-takehome",
+    "formula": "260000-8000-32000",
+    "value": 220000
+  },
+  {
+    "id": "b3x-payroll-worked-1-deduct",
+    "formula": "9000+35000",
+    "value": 44000
+  },
+  {
+    "id": "b3x-payroll-worked-1-takehome",
+    "formula": "280000-44000",
+    "value": 236000
+  },
+  {
+    "id": "b3x-payroll-worked-2-tax-total",
+    "formula": "7500+8200",
+    "value": 15700
+  },
+  {
+    "id": "b3x-payroll-worked-2-partial-remain",
+    "formula": "20000-15700",
+    "value": 4300
+  },
+  {
+    "id": "b3x-payroll-worked-3-total",
+    "formula": "34000+37000",
+    "value": 71000
+  },
+  {
+    "id": "b3x-payroll-advance-takehome",
+    "formula": "240000-6000-28000-4000",
+    "value": 202000
+  },
+  {
+    "id": "b3x-payroll-advance-taxes",
+    "formula": "6000+28000",
+    "value": 34000
+  },
+  {
+    "id": "b3x-payroll-guided-gross",
+    "formula": "215000+7000+31000",
+    "value": 253000
+  },
+  {
+    "id": "b3x-payroll-guided-expenses",
+    "formula": "253000+33000",
+    "value": 286000
+  },
+  {
+    "id": "b3x-payroll-worked-4-gross",
+    "formula": "230000+270000",
+    "value": 500000
+  },
+  {
+    "id": "b3x-payroll-worked-4-tax",
+    "formula": "6000+9000",
+    "value": 15000
+  },
+  {
+    "id": "b3x-payroll-worked-4-insurance",
+    "formula": "28000+33000",
+    "value": 61000
+  },
+  {
+    "id": "b3x-payroll-worked-4-takehome",
+    "formula": "196000+228000",
+    "value": 424000
+  },
+  {
+    "id": "b3x-payroll-worked-4-expenses",
+    "formula": "500000+64000",
+    "value": 564000
+  },
+  {
+    "id": "b3x-payroll-other-advance",
+    "formula": "200000-25000-7000",
+    "value": 168000
+  },
+  {
+    "id": "b3x-payroll-independent-takehome",
+    "formula": "310000-10000-39000",
+    "value": 261000
+  },
+  {
+    "id": "b3x-payroll-independent-insurance",
+    "formula": "39000+42000",
+    "value": 81000
+  },
+  {
+    "id": "b3x-payroll-independent-expenses",
+    "formula": "310000+42000",
+    "value": 352000
+  },
+  {
+    "id": "b3x-payroll-independent-outflow",
+    "formula": "261000+10000+81000",
+    "value": 352000
+  },
+  {
+    "id": "b3x-purchases-worked-1",
+    "formula": "60*240",
+    "value": 14400
+  },
+  {
+    "id": "b3x-purchases-worked-2-total",
+    "formula": "100*850",
+    "value": 85000
+  },
+  {
+    "id": "b3x-purchases-worked-2-payable",
+    "formula": "85000-25000",
+    "value": 60000
+  },
+  {
+    "id": "b3x-purchases-advance",
+    "formula": "30000-5000",
+    "value": 25000
+  },
+  {
+    "id": "b3x-purchases-worked-3-a",
+    "formula": "40000+55000-60000",
+    "value": 35000
+  },
+  {
+    "id": "b3x-purchases-worked-3-b",
+    "formula": "25000+38000-20000",
+    "value": 43000
+  },
+  {
+    "id": "b3x-purchases-worked-3-total",
+    "formula": "65000+93000-80000",
+    "value": 78000
+  },
+  {
+    "id": "b3x-purchases-inverse-qty",
+    "formula": "24000/600",
+    "value": 40
+  },
+  {
+    "id": "b3x-purchases-inverse-price",
+    "formula": "21000/30",
+    "value": 700
+  },
+  {
+    "id": "b3x-purchases-guided-total",
+    "formula": "18000+42000+50000",
+    "value": 110000
+  },
+  {
+    "id": "b3x-purchases-guided-payable",
+    "formula": "42000+50000-20000",
+    "value": 72000
+  },
+  {
+    "id": "b3x-purchases-worked-4-total",
+    "formula": "40*600+30*900",
+    "value": 51000
+  },
+  {
+    "id": "b3x-purchases-worked-4-payable",
+    "formula": "51000-11000",
+    "value": 40000
+  },
+  {
+    "id": "b3x-purchases-ledger-remain",
+    "formula": "17000+29000-31000",
+    "value": 15000
+  },
+  {
+    "id": "b3x-purchases-reverse-credit",
+    "formula": "48000+75000-32000",
+    "value": 91000
+  },
+  {
+    "id": "b3x-purchases-reverse-total",
+    "formula": "91000+14000",
+    "value": 105000
+  },
+  {
+    "id": "b3x-purchases-independent-purchase",
+    "formula": "80*900",
+    "value": 72000
+  },
+  {
+    "id": "b3x-purchases-independent-payable",
+    "formula": "72000-12000-45000",
+    "value": 15000
+  },
+  {
+    "id": "b3x-sales-worked-1-sale",
+    "formula": "40*950",
+    "value": 38000
+  },
+  {
+    "id": "b3x-sales-worked-1-cost",
+    "formula": "40*600",
+    "value": 24000
+  },
+  {
+    "id": "b3x-sales-worked-1-profit",
+    "formula": "38000-24000",
+    "value": 14000
+  },
+  {
+    "id": "b3x-sales-worked-2-receivable",
+    "formula": "120000-45000",
+    "value": 75000
+  },
+  {
+    "id": "b3x-sales-worked-2-double",
+    "formula": "120000+75000",
+    "value": 195000
+  },
+  {
+    "id": "b3x-sales-advance-receivable",
+    "formula": "80000-20000",
+    "value": 60000
+  },
+  {
+    "id": "b3x-sales-worked-3-c",
+    "formula": "30000+70000-62000",
+    "value": 38000
+  },
+  {
+    "id": "b3x-sales-worked-3-d",
+    "formula": "44000+56000-35000",
+    "value": 65000
+  },
+  {
+    "id": "b3x-sales-worked-3-total",
+    "formula": "74000+126000-97000",
+    "value": 103000
+  },
+  {
+    "id": "b3x-sales-worked-3-sales",
+    "formula": "126000+24000",
+    "value": 150000
+  },
+  {
+    "id": "b3x-sales-worked-3-receipts",
+    "formula": "97000+24000",
+    "value": 121000
+  },
+  {
+    "id": "b3x-sales-two-products",
+    "formula": "20*1200+15*800",
+    "value": 36000
+  },
+  {
+    "id": "b3x-sales-worked-4-sale",
+    "formula": "25*1200+18*1500",
+    "value": 57000
+  },
+  {
+    "id": "b3x-sales-worked-4-receivable",
+    "formula": "57000-17000",
+    "value": 40000
+  },
+  {
+    "id": "b3x-sales-ledger",
+    "formula": "20000+48000-39000",
+    "value": 29000
+  },
+  {
+    "id": "b3x-sales-reverse-receipts",
+    "formula": "40000+100000-65000",
+    "value": 75000
+  },
+  {
+    "id": "b3x-sales-inverse-quantity",
+    "formula": "36000/900",
+    "value": 40
+  },
+  {
+    "id": "b3x-sales-inverse-price",
+    "formula": "36000/50",
+    "value": 720
+  },
+  {
+    "id": "b3x-sales-independent-credit",
+    "formula": "96000-12000-34000",
+    "value": 50000
+  },
+  {
+    "id": "b3x-sales-independent-ending",
+    "formula": "50000-30000",
+    "value": 20000
+  },
+  {
+    "id": "b3x-incidental-worked-1-total",
+    "formula": "100*700+3000",
+    "value": 73000
+  },
+  {
+    "id": "b3x-incidental-worked-1-unit",
+    "formula": "73000/100",
+    "value": 730
+  },
+  {
+    "id": "b3x-incidental-sale-combined-debits",
+    "formula": "80000+1500",
+    "value": 81500
+  },
+  {
+    "id": "b3x-incidental-worked-2-netpayment",
+    "formula": "60000-2000",
+    "value": 58000
+  },
+  {
+    "id": "b3x-incidental-worked-3-receipt",
+    "formula": "90000+1800",
+    "value": 91800
+  },
+  {
+    "id": "b3x-incidental-vendor-advanced-total",
+    "formula": "40000+1200",
+    "value": 41200
+  },
+  {
+    "id": "b3x-incidental-worked-4-a-allocation",
+    "formula": "5000*40000/100000",
+    "value": 2000
+  },
+  {
+    "id": "b3x-incidental-worked-4-b-allocation",
+    "formula": "5000*60000/100000",
+    "value": 3000
+  },
+  {
+    "id": "b3x-incidental-worked-4-a-cost",
+    "formula": "40000+2000",
+    "value": 42000
+  },
+  {
+    "id": "b3x-incidental-worked-4-b-cost",
+    "formula": "60000+3000",
+    "value": 63000
+  },
+  {
+    "id": "b3x-incidental-worked-4-total",
+    "formula": "42000+63000",
+    "value": 105000
+  },
+  {
+    "id": "b3x-incidental-sameparty-offset",
+    "formula": "50000-2000",
+    "value": 48000
+  },
+  {
+    "id": "b3x-incidental-remaining-inventory",
+    "formula": "930*30",
+    "value": 27900
+  },
+  {
+    "id": "b3x-incidental-freight-share",
+    "formula": "2400*30/80",
+    "value": 900
+  },
+  {
+    "id": "b3x-incidental-independent-total",
+    "formula": "80*900+2400",
+    "value": 74400
+  },
+  {
+    "id": "b3x-incidental-independent-unit",
+    "formula": "74400/80",
+    "value": 930
+  },
+  {
+    "id": "b3x-incidental-independent-sales",
+    "formula": "50*1400",
+    "value": 70000
+  },
+  {
+    "id": "b3x-incidental-independent-invoice",
+    "formula": "70000+1500",
+    "value": 71500
+  },
+  {
+    "id": "b3x-incidental-independent-cost",
+    "formula": "50*930",
+    "value": 46500
+  },
+  {
+    "id": "b3x-returns-worked-1-purchase",
+    "formula": "80*500",
+    "value": 40000
+  },
+  {
+    "id": "b3x-returns-worked-1-return",
+    "formula": "10*500",
+    "value": 5000
+  },
+  {
+    "id": "b3x-returns-worked-1-net",
+    "formula": "40000-5000",
+    "value": 35000
+  },
+  {
+    "id": "b3x-returns-worked-2-return",
+    "formula": "3*1000",
+    "value": 3000
+  },
+  {
+    "id": "b3x-returns-worked-2-net",
+    "formula": "20000-3000",
+    "value": 17000
+  },
+  {
+    "id": "b3x-returns-worked-2-costreturn",
+    "formula": "3*600",
+    "value": 1800
+  },
+  {
+    "id": "b3x-returns-worked-3-netpurchase",
+    "formula": "65000-7000",
+    "value": 58000
+  },
+  {
+    "id": "b3x-returns-worked-3-payable",
+    "formula": "28000+65000-7000-54000",
+    "value": 32000
+  },
+  {
+    "id": "b3x-returns-guided-receipts",
+    "formula": "25000+80000-6000-39000",
+    "value": 60000
+  },
+  {
+    "id": "b3x-returns-worked-4-ending",
+    "formula": "54000-35000-6000",
+    "value": 13000
+  },
+  {
+    "id": "b3x-returns-inverse-purchasereturn",
+    "formula": "4800/800",
+    "value": 6
+  },
+  {
+    "id": "b3x-returns-inverse-salesreturn",
+    "formula": "4800/1200",
+    "value": 4
+  },
+  {
+    "id": "b3x-returns-payable-netcash",
+    "formula": "12000-3000",
+    "value": 9000
+  },
+  {
+    "id": "b3x-returns-profit-net",
+    "formula": "8*1000-8*600",
+    "value": 3200
+  },
+  {
+    "id": "b3x-returns-independent-netpurchase",
+    "formula": "(50-5)*800",
+    "value": 36000
+  },
+  {
+    "id": "b3x-returns-independent-netsale",
+    "formula": "(30-2)*1200",
+    "value": 33600
+  },
+  {
+    "id": "b3x-returns-independent-qty",
+    "formula": "50-5-30+2",
+    "value": 17
+  },
+  {
+    "id": "b3x-returns-independent-ending",
+    "formula": "17*800",
+    "value": 13600
+  },
+  {
+    "id": "b3x-returns-independent-cogs",
+    "formula": "28*800",
+    "value": 22400
+  },
+  {
+    "id": "b3x-fifo-worked-1-available",
+    "formula": "20*500+30*600",
+    "value": 28000
+  },
+  {
+    "id": "b3x-fifo-worked-1-out",
+    "formula": "20*500+15*600",
+    "value": 19000
+  },
+  {
+    "id": "b3x-fifo-worked-1-ending",
+    "formula": "15*600",
+    "value": 9000
+  },
+  {
+    "id": "b3x-fifo-worked-2-first",
+    "formula": "10*400+8*450",
+    "value": 7600
+  },
+  {
+    "id": "b3x-fifo-worked-2-second",
+    "formula": "12*450+10*480",
+    "value": 10200
+  },
+  {
+    "id": "b3x-fifo-worked-2-ending",
+    "formula": "15*480",
+    "value": 7200
+  },
+  {
+    "id": "b3x-fifo-worked-2-total",
+    "formula": "10*400+20*450+25*480",
+    "value": 25000
+  },
+  {
+    "id": "b3x-fifo-worked-3-out",
+    "formula": "20*500+10*550",
+    "value": 15500
+  },
+  {
+    "id": "b3x-fifo-worked-3-ending",
+    "formula": "3*500+15*550",
+    "value": 9750
+  },
+  {
+    "id": "b3x-fifo-worked-3-netout",
+    "formula": "15500-1500",
+    "value": 14000
+  },
+  {
+    "id": "b3x-fifo-worked-3-available",
+    "formula": "20*500+25*550",
+    "value": 23750
+  },
+  {
+    "id": "b3x-fifo-guided-ending",
+    "formula": "20*600+20*650",
+    "value": 25000
+  },
+  {
+    "id": "b3x-fifo-worked-4-newcost",
+    "formula": "(20*1000+2000)/20",
+    "value": 1100
+  },
+  {
+    "id": "b3x-fifo-worked-4-out",
+    "formula": "10*900+5*1100",
+    "value": 14500
+  },
+  {
+    "id": "b3x-fifo-worked-4-ending",
+    "formula": "13*1100",
+    "value": 14300
+  },
+  {
+    "id": "b3x-fifo-worked-4-available",
+    "formula": "9000+22000-2200",
+    "value": 28800
+  },
+  {
+    "id": "b3x-fifo-worked-4-next",
+    "formula": "10*1100",
+    "value": 11000
+  },
+  {
+    "id": "b3x-fifo-independent-first",
+    "formula": "15*800+7*760",
+    "value": 17320
+  },
+  {
+    "id": "b3x-fifo-independent-second",
+    "formula": "18*760",
+    "value": 13680
+  },
+  {
+    "id": "b3x-fifo-independent-ending",
+    "formula": "20*720",
+    "value": 14400
+  },
+  {
+    "id": "b3x-fifo-independent-out",
+    "formula": "17320+13680",
+    "value": 31000
+  },
+  {
+    "id": "b3x-fifo-independent-profit",
+    "formula": "40*1100-31000",
+    "value": 13000
+  },
+  {
+    "id": "b3x-fifo-independent-total",
+    "formula": "15*800+25*760+20*720",
+    "value": 45400
+  },
+  {
+    "id": "b3x-moving-average-weighted-example",
+    "formula": "(10*500+30*700)/40",
+    "value": 650
+  },
+  {
+    "id": "b3x-moving-average-worked-1",
+    "formula": "(20*400+30*500)/50",
+    "value": 460
+  },
+  {
+    "id": "b3x-moving-average-worked-2-first",
+    "formula": "25*460",
+    "value": 11500
+  },
+  {
+    "id": "b3x-moving-average-worked-2-newaverage",
+    "formula": "(11500+25*540)/50",
+    "value": 500
+  },
+  {
+    "id": "b3x-moving-average-worked-2-second",
+    "formula": "30*500",
+    "value": 15000
+  },
+  {
+    "id": "b3x-moving-average-worked-2-ending",
+    "formula": "20*500",
+    "value": 10000
+  },
+  {
+    "id": "b3x-moving-average-worked-2-total",
+    "formula": "8000+15000+13500",
+    "value": 36500
+  },
+  {
+    "id": "b3x-moving-average-sale-profit",
+    "formula": "25*800-11500",
+    "value": 8500
+  },
+  {
+    "id": "b3x-moving-average-worked-3-rounded",
+    "formula": "Math.round((2000+7*500)/12)",
+    "value": 458
+  },
+  {
+    "id": "b3x-moving-average-worked-3-out",
+    "formula": "3*458",
+    "value": 1374
+  },
+  {
+    "id": "b3x-moving-average-worked-3-ending",
+    "formula": "5500-1374",
+    "value": 4126
+  },
+  {
+    "id": "b3x-moving-average-worked-3-rounddiff",
+    "formula": "4126-9*458",
+    "value": 4
+  },
+  {
+    "id": "b3x-moving-average-return-average",
+    "formula": "(20*600+5*500)/25",
+    "value": 580
+  },
+  {
+    "id": "b3x-moving-average-purchase-return",
+    "formula": "(18000-6*650)/24",
+    "value": 587.5
+  },
+  {
+    "id": "b3x-moving-average-guided-average",
+    "formula": "(2000+5*600)/10",
+    "value": 500
+  },
+  {
+    "id": "b3x-moving-average-worked-4-average",
+    "formula": "(10000+20*600+2000)/40",
+    "value": 600
+  },
+  {
+    "id": "b3x-moving-average-worked-4-out",
+    "formula": "15*600",
+    "value": 9000
+  },
+  {
+    "id": "b3x-moving-average-worked-4-ending",
+    "formula": "24000-9000",
+    "value": 15000
+  },
+  {
+    "id": "b3x-moving-average-worked-4-omitfreight",
+    "formula": "(10000+20*600)/40",
+    "value": 550
+  },
+  {
+    "id": "b3x-moving-average-empty-stock-out",
+    "formula": "12*650",
+    "value": 7800
+  },
+  {
+    "id": "b3x-moving-average-new-stock-total",
+    "formula": "20*720",
+    "value": 14400
+  },
+  {
+    "id": "b3x-moving-average-independent-firstavg",
+    "formula": "(10*600+30*680)/40",
+    "value": 660
+  },
+  {
+    "id": "b3x-moving-average-independent-firstout",
+    "formula": "25*660",
+    "value": 16500
+  },
+  {
+    "id": "b3x-moving-average-independent-secondavg",
+    "formula": "(9900+15*740)/30",
+    "value": 700
+  },
+  {
+    "id": "b3x-moving-average-independent-secondout",
+    "formula": "20*700",
+    "value": 14000
+  },
+  {
+    "id": "b3x-moving-average-independent-ending",
+    "formula": "10*700",
+    "value": 7000
+  },
+  {
+    "id": "b3x-moving-average-independent-out",
+    "formula": "16500+14000",
+    "value": 30500
+  },
+  {
+    "id": "b3x-moving-average-independent-profit",
+    "formula": "45*1000-30500",
+    "value": 14500
+  },
+  {
+    "id": "b3x-moving-average-independent-total",
+    "formula": "6000+20400+11100",
+    "value": 37500
+  }
+]

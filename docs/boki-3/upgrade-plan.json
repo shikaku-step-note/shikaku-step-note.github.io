@@ -1,0 +1,42 @@
+{
+  "mode": "UPGRADE",
+  "scope": "日商簿記3級・商業簿記の現行2026年度全範囲",
+  "sourceCommit": "798468b626bf44ce58baa3c54049740faf9c4f47",
+  "status": "implemented-verified-ready-to-publish",
+  "before": {
+    "currentLessons": 8,
+    "lessonQuestions": 33,
+    "shortMockItems": 25,
+    "fullIndependentForms": 0
+  },
+  "owners": {
+    "scope": "b3_scope_research",
+    "dailyGoods": "b3_transactions_author",
+    "journalEngineThenAssetsReporting": "b3_journal_engine owns engine and13lessons (8unit5+5unit7),39newunitreviews",
+    "root": "settlement8+capstones2,rootreviewbanksandcumulative,2fullmocks,evidence,integration,verification,publishing"
+  },
+  "next": "Commit the scoped release, push main, verify the existing Pages workflow and public URLs.",
+  "preservation": "Unrelated dirty docs/zeirishi drafts untouched. No archivedcurrentintro merely to avoidintegration. Retain old8 IDs/records, correctoutscopefirelossanddisposal text; scopedversion for changedoldchecks.",
+  "rootDrafts": {
+    "status": "Completed, independently reviewed and integrated; no outstanding content batch."
+  },
+  "implemented": {
+    "currentLessons": 55,
+    "newDetailedLessons": 47,
+    "retainedConsolidationPages": 8,
+    "units": 7,
+    "newLessonFields": 635,
+    "guidedCapstoneFields": 43,
+    "independentLessonFields": 592,
+    "retainedLessonFields": 32,
+    "unitReviewItems": 148,
+    "cumulativeItems": 28,
+    "mockForms": 2,
+    "mockFields": 96,
+    "uniqueGlossaryLabels": 299,
+    "currentCompetencyRows": 61,
+    "separateFutureRows": 4,
+    "newNonGlossaryFields": 907,
+    "currentNonGlossaryFields": 939
+  }
+}

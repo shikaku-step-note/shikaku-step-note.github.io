@@ -1,0 +1,686 @@
+{
+  "date": "2026-10-28",
+  "reviewer": "separate AI teaching author; no qualified human or learner-pilot claim",
+  "basis": "Fresh numerical formulas, journal vectors, and correct option text specified from the public question premises; no author witness file imported.",
+  "unitReviewQuestions": 24,
+  "cumulativeQuestions": 28,
+  "numberChecks": 18,
+  "journalChecks": 32,
+  "choiceChecks": 2,
+  "checks": [
+    {
+      "id": "b3x-u4-review-02",
+      "formula": "25000+47000-39000+32000+28000-6000-41000",
+      "value": 46000
+    },
+    {
+      "id": "b3x-u4-review-06",
+      "formula": "57000+200000*(1-.02)-180000",
+      "value": 73000
+    },
+    {
+      "id": "b3x-u4-review-08",
+      "formula": "84000+52000-93000",
+      "value": 43000
+    },
+    {
+      "id": "b3x-u4-review-11",
+      "formula": "47000+66000-58000",
+      "value": 55000
+    },
+    {
+      "id": "b3x-u4-review-14",
+      "formula": "(400000-100000)*.04*6/12",
+      "value": 6000
+    },
+    {
+      "id": "b3x-u4-review-18",
+      "formula": "49000+73000-68000-9000",
+      "value": 45000
+    },
+    {
+      "id": "b3x-u4-review-24",
+      "formula": "70000+20000-10000+45000-45000",
+      "value": 80000
+    },
+    {
+      "id": "b3x-cumulative-02",
+      "formula": "143000+86000+35000-92000-24000",
+      "value": 148000
+    },
+    {
+      "id": "b3x-cumulative-04",
+      "formula": "24000-19000",
+      "value": 5000
+    },
+    {
+      "id": "b3x-cumulative-09",
+      "formula": "(12+18-20)*240",
+      "value": 2400
+    },
+    {
+      "id": "b3x-cumulative-10",
+      "formula": "(10+20-18)*(10*300+20*330)/(10+20)",
+      "value": 3840
+    },
+    {
+      "id": "b3x-cumulative-12",
+      "formula": "61000+340000-18000+9000-73000",
+      "value": 319000
+    },
+    {
+      "id": "b3x-cumulative-17",
+      "formula": "300000-(480000-192000-480000/5*6/12)",
+      "value": 60000
+    },
+    {
+      "id": "b3x-cumulative-21",
+      "formula": "74000+420000-88000",
+      "value": 406000
+    },
+    {
+      "id": "b3x-cumulative-23",
+      "formula": "48000*6/12",
+      "value": 24000
+    },
+    {
+      "id": "b3x-cumulative-25",
+      "formula": "300000+80000-90000-60000-4000",
+      "value": 226000
+    },
+    {
+      "id": "b3x-cumulative-26",
+      "formula": "840000+12000-510000-180000-72000-60000-24000",
+      "value": 6000
+    },
+    {
+      "id": "b3x-cumulative-27",
+      "formula": "980000-340000-500000-108000",
+      "value": 32000
+    },
+    {
+      "id": "b3x-u4-review-01",
+      "debits": [
+        {
+          "account": "現金",
+          "amount": 21000
+        },
+        {
+          "account": "売掛金",
+          "amount": 40000
+        }
+      ],
+      "credits": [
+        {
+          "account": "売上",
+          "amount": 61000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-03",
+      "debits": [
+        {
+          "account": "買掛金",
+          "amount": 39000
+        }
+      ],
+      "credits": [
+        {
+          "account": "仕入",
+          "amount": 39000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-04",
+      "debits": [
+        {
+          "account": "クレジット売掛金",
+          "amount": 89240
+        },
+        {
+          "account": "支払手数料",
+          "amount": 2760
+        }
+      ],
+      "credits": [
+        {
+          "account": "売上",
+          "amount": 92000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-05",
+      "debits": [
+        {
+          "account": "受取商品券",
+          "amount": 10000
+        },
+        {
+          "account": "現金",
+          "amount": 6500
+        }
+      ],
+      "credits": [
+        {
+          "account": "売上",
+          "amount": 16500
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-07",
+      "debits": [
+        {
+          "account": "仕入",
+          "amount": 63000
+        }
+      ],
+      "credits": [
+        {
+          "account": "支払手形",
+          "amount": 63000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-09",
+      "debits": [
+        {
+          "account": "普通預金",
+          "amount": 70600
+        },
+        {
+          "account": "支払手数料",
+          "amount": 400
+        }
+      ],
+      "credits": [
+        {
+          "account": "受取手形",
+          "amount": 71000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-10",
+      "debits": [
+        {
+          "account": "買掛金",
+          "amount": 81000
+        }
+      ],
+      "credits": [
+        {
+          "account": "電子記録債務",
+          "amount": 81000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-13",
+      "debits": [
+        {
+          "account": "手形貸付金",
+          "amount": 120000
+        }
+      ],
+      "credits": [
+        {
+          "account": "普通預金",
+          "amount": 120000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-15",
+      "debits": [
+        {
+          "account": "手形借入金",
+          "amount": 150000
+        },
+        {
+          "account": "支払利息",
+          "amount": 3000
+        }
+      ],
+      "credits": [
+        {
+          "account": "普通預金",
+          "amount": 153000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-16",
+      "debits": [
+        {
+          "account": "前払金",
+          "amount": 18000
+        }
+      ],
+      "credits": [
+        {
+          "account": "普通預金",
+          "amount": 18000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-17",
+      "debits": [
+        {
+          "account": "仕入",
+          "amount": 97000
+        }
+      ],
+      "credits": [
+        {
+          "account": "前払金",
+          "amount": 22000
+        },
+        {
+          "account": "買掛金",
+          "amount": 75000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-19",
+      "debits": [
+        {
+          "account": "従業員立替金",
+          "amount": 8000
+        }
+      ],
+      "credits": [
+        {
+          "account": "普通預金",
+          "amount": 8000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-20",
+      "debits": [
+        {
+          "account": "旅費交通費",
+          "amount": 32400
+        },
+        {
+          "account": "現金",
+          "amount": 2600
+        }
+      ],
+      "credits": [
+        {
+          "account": "仮払金",
+          "amount": 35000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-21",
+      "debits": [
+        {
+          "account": "仮受金",
+          "amount": 29000
+        }
+      ],
+      "credits": [
+        {
+          "account": "売掛金",
+          "amount": 24000
+        },
+        {
+          "account": "前受金",
+          "amount": 5000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-22",
+      "debits": [
+        {
+          "account": "差入保証金",
+          "amount": 78000
+        },
+        {
+          "account": "支払手数料",
+          "amount": 12000
+        }
+      ],
+      "credits": [
+        {
+          "account": "普通預金",
+          "amount": 90000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-23",
+      "debits": [
+        {
+          "account": "普通預金",
+          "amount": 80000
+        },
+        {
+          "account": "修繕費",
+          "amount": 16000
+        }
+      ],
+      "credits": [
+        {
+          "account": "差入保証金",
+          "amount": 96000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-01",
+      "debits": [
+        {
+          "account": "仕入",
+          "amount": 42000
+        }
+      ],
+      "credits": [
+        {
+          "account": "備品",
+          "amount": 42000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-05",
+      "debits": [
+        {
+          "account": "現金過不足",
+          "amount": 1600
+        }
+      ],
+      "credits": [
+        {
+          "account": "受取手数料",
+          "amount": 1100
+        },
+        {
+          "account": "雑益",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-06",
+      "debits": [
+        {
+          "account": "通信費",
+          "amount": 2800
+        },
+        {
+          "account": "旅費交通費",
+          "amount": 4200
+        }
+      ],
+      "credits": [
+        {
+          "account": "当座預金",
+          "amount": 7000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-07",
+      "debits": [
+        {
+          "account": "給料",
+          "amount": 246000
+        }
+      ],
+      "credits": [
+        {
+          "account": "所得税預り金",
+          "amount": 8000
+        },
+        {
+          "account": "社会保険料預り金",
+          "amount": 31000
+        },
+        {
+          "account": "従業員立替金",
+          "amount": 6000
+        },
+        {
+          "account": "普通預金",
+          "amount": 201000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-08",
+      "debits": [
+        {
+          "account": "当座預金",
+          "amount": 60000
+        },
+        {
+          "account": "支払手数料",
+          "amount": 300
+        }
+      ],
+      "credits": [
+        {
+          "account": "普通預金",
+          "amount": 60300
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-11",
+      "debits": [
+        {
+          "account": "仕入",
+          "amount": 50500
+        }
+      ],
+      "credits": [
+        {
+          "account": "買掛金",
+          "amount": 49000
+        },
+        {
+          "account": "現金",
+          "amount": 1500
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-13",
+      "debits": [
+        {
+          "account": "普通預金",
+          "amount": 21000
+        },
+        {
+          "account": "受取手形",
+          "amount": 47000
+        }
+      ],
+      "credits": [
+        {
+          "account": "売掛金",
+          "amount": 68000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-14",
+      "debits": [
+        {
+          "account": "普通預金",
+          "amount": 52920
+        },
+        {
+          "account": "支払手数料",
+          "amount": 1080
+        }
+      ],
+      "credits": [
+        {
+          "account": "クレジット売掛金",
+          "amount": 54000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-15",
+      "debits": [
+        {
+          "account": "前受金",
+          "amount": 28000
+        },
+        {
+          "account": "電子記録債権",
+          "amount": 92000
+        }
+      ],
+      "credits": [
+        {
+          "account": "売上",
+          "amount": 120000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-16",
+      "debits": [
+        {
+          "account": "仮受金",
+          "amount": 37000
+        }
+      ],
+      "credits": [
+        {
+          "account": "売掛金",
+          "amount": 30000
+        },
+        {
+          "account": "受取手数料",
+          "amount": 7000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-18",
+      "debits": [
+        {
+          "account": "普通預金",
+          "amount": 650000
+        }
+      ],
+      "credits": [
+        {
+          "account": "資本金",
+          "amount": 650000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-19",
+      "debits": [
+        {
+          "account": "繰越利益剰余金",
+          "amount": 52800
+        }
+      ],
+      "credits": [
+        {
+          "account": "未払配当金",
+          "amount": 48000
+        },
+        {
+          "account": "利益準備金",
+          "amount": 4800
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-20",
+      "debits": [
+        {
+          "account": "仮受消費税",
+          "amount": 91000
+        }
+      ],
+      "credits": [
+        {
+          "account": "仮払消費税",
+          "amount": 62000
+        },
+        {
+          "account": "未払消費税",
+          "amount": 29000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-22",
+      "debits": [
+        {
+          "account": "貸倒引当金",
+          "amount": 11000
+        },
+        {
+          "account": "貸倒損失",
+          "amount": 7000
+        }
+      ],
+      "credits": [
+        {
+          "account": "売掛金",
+          "amount": 18000
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-24",
+      "debits": [
+        {
+          "account": "普通預金",
+          "amount": 3600
+        }
+      ],
+      "credits": [
+        {
+          "account": "受取利息",
+          "amount": 3600
+        }
+      ]
+    },
+    {
+      "id": "b3x-cumulative-28",
+      "debits": [
+        {
+          "account": "繰越利益剰余金",
+          "amount": 27000
+        }
+      ],
+      "credits": [
+        {
+          "account": "損益",
+          "amount": 27000
+        }
+      ]
+    },
+    {
+      "id": "b3x-u4-review-12",
+      "correctOption": "相手先別明細へ支払済みの記録を反映する"
+    },
+    {
+      "id": "b3x-cumulative-03",
+      "correctOption": "借貸同額の取引が両側とも漏れると、合計は一致したままになり得る"
+    }
+  ]
+}

@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "check": "astro check",
     "verify": "node scripts/verify.mjs",
-    "test:storage": "node --import tsx --test tests/storage.test.ts tests/assessment.test.ts tests/bookkeeping.test.ts tests/boki-beginner.test.ts tests/takken.test.ts tests/written-assessment.test.ts tests/zeirishi.test.ts tests/assessment-materials.test.ts tests/course-progress.test.ts tests/tax-curriculum.test.ts tests/storage-capacity.test.ts tests/cost-beginner.test.ts",
+    "test:storage": "node --import tsx --test tests/storage.test.ts tests/assessment.test.ts tests/bookkeeping.test.ts tests/boki-beginner.test.ts tests/takken.test.ts tests/written-assessment.test.ts tests/zeirishi.test.ts tests/assessment-materials.test.ts tests/course-progress.test.ts tests/tax-curriculum.test.ts tests/storage-capacity.test.ts tests/cost-beginner.test.ts tests/journal-assessment.test.ts tests/boki3.test.ts",
     "curriculum": "node --import tsx scripts/export-ip-curriculum.mjs && node --import tsx scripts/export-boki-curriculum.mjs && node --import tsx scripts/export-takken-curriculum.mjs && node --import tsx scripts/export-zeirishi-curriculum.mjs",
     "audit:zeirishi-upgrade": "node scripts/audit-zeirishi-upgrade.mjs"
   },

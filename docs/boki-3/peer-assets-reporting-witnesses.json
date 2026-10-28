@@ -1,0 +1,1192 @@
+{
+  "verified": "2026-10-28",
+  "snapshot": {
+    "questionBankSha256": "fa69ab516c7cdb8f9ffff842b42658cc51ddefa807ed07bf518229fb2b542c78",
+    "reviewBankSha256": "5585142a7fbc790b3d3fbaa51748195673c3848353d02e3d4a7949cf7dd492aa"
+  },
+  "numericWitnesses": [
+    {
+      "id": "b3x-asset-acquisition-q03",
+      "formula": "660000+24000+6000",
+      "value": 690000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-acquisition-q09",
+      "formula": "520000+248000+309000",
+      "value": 1077000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-acquisition-q10",
+      "formula": "420000+280000+165000",
+      "value": 865000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-acquisition-q11",
+      "formula": "210000+7000-210000",
+      "value": 7000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-acquisition-q12",
+      "formula": "220000-80000",
+      "value": 140000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q01",
+      "formula": "840000/7",
+      "value": 120000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q02",
+      "formula": "(550000-50000)/5",
+      "value": 100000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q03",
+      "formula": "(450000+30000)/8",
+      "value": 60000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q05",
+      "formula": "360000/6*4/12",
+      "value": 20000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q06",
+      "formula": "720000/6*9/12",
+      "value": 90000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q08",
+      "formula": "72000+48000*6/12",
+      "value": 96000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q09",
+      "formula": "900000-300000-150000",
+      "value": 450000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q10",
+      "formula": "640000-400000",
+      "value": 240000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q11",
+      "formula": "240000-160000",
+      "value": 80000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-q12",
+      "formula": "630000/90000",
+      "value": 7.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q01",
+      "formula": "205000-(540000-360000)",
+      "value": 25000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q02",
+      "formula": "420000-250000-150000",
+      "value": 20000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q04",
+      "formula": "480000/8*6/12",
+      "value": 30000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q08",
+      "formula": "720000-240000-720000/6*9/12",
+      "value": 390000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q09",
+      "formula": "900000-350000",
+      "value": 550000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q10",
+      "formula": "420000-150000",
+      "value": 270000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q11",
+      "formula": "680000-440000+35000",
+      "value": 275000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-q12",
+      "formula": "560000-320000-18000",
+      "value": 222000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-supplies-q01",
+      "formula": "7000+49000-12000",
+      "value": 44000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-supplies-q02",
+      "formula": "(25-6)*1200",
+      "value": 22800,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-supplies-q03",
+      "formula": "42000+15000-9000",
+      "value": 48000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-supplies-q06",
+      "formula": "58000-14000",
+      "value": 44000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-supplies-q08",
+      "formula": "46000-19000",
+      "value": 27000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-supplies-q12",
+      "formula": "9000",
+      "value": 9000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q01",
+      "formula": "180*4000",
+      "value": 720000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q03",
+      "formula": "630000/7000",
+      "value": 90.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q06",
+      "formula": "800000+250000",
+      "value": 1050000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q07",
+      "formula": "600000",
+      "value": 600000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q09",
+      "formula": "(1260000-900000)/4500",
+      "value": 80.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q10",
+      "formula": "1400000+260000",
+      "value": 1660000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q11",
+      "formula": "110000+75000",
+      "value": 185000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-q12",
+      "formula": "1980000-420000-1200000",
+      "value": 360000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-q03",
+      "formula": "70000",
+      "value": 70000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-q06",
+      "formula": "12000+84000-76000",
+      "value": 20000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-q07",
+      "formula": "0",
+      "value": 0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-q08",
+      "formula": "240000-50000-5000+90000",
+      "value": 275000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-q09",
+      "formula": "18000+7000",
+      "value": 25000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-q10",
+      "formula": "1200000+200000+130000-80000",
+      "value": 1450000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-q11",
+      "formula": "160000-30000-20000-2000",
+      "value": 108000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-q01",
+      "formula": "144000-54000",
+      "value": 90000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-q02",
+      "formula": "480000*25/100",
+      "value": 120000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-q05",
+      "formula": "420000-30000+10000",
+      "value": 400000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-q06",
+      "formula": "(420000-30000+10000)*30/100",
+      "value": 120000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-q07",
+      "formula": "520000-156000",
+      "value": 364000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-q10",
+      "formula": "98000-32000",
+      "value": 66000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-q12",
+      "formula": "70000+150000-130000",
+      "value": 90000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-consumption-tax-q01",
+      "formula": "176000*100/110",
+      "value": 160000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-consumption-tax-q02",
+      "formula": "72000*110/100",
+      "value": 79200.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-consumption-tax-q03",
+      "formula": "99000-99000*100/110",
+      "value": 9000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-consumption-tax-q10",
+      "formula": "90000-(52000+30000*10/100)",
+      "value": 35000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q01",
+      "formula": "36000-9000",
+      "value": 27000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q02",
+      "formula": "150000-25000+12000",
+      "value": 137000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q04",
+      "formula": "60000+350000-80000",
+      "value": 330000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q05",
+      "formula": "75000+45000",
+      "value": 120000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q06",
+      "formula": "250000*2/100-2000",
+      "value": 3000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q07",
+      "formula": "6000",
+      "value": 6000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q08",
+      "formula": "8000+3500",
+      "value": 11500,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q09",
+      "formula": "780000-652000",
+      "value": 128000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q10",
+      "formula": "960000-340000-500000-75000",
+      "value": 45000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-q11",
+      "formula": "6000",
+      "value": 6000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q01",
+      "formula": "48000-12000",
+      "value": 36000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q02",
+      "formula": "210000+18000",
+      "value": 228000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q03",
+      "formula": "35000+42000-35000",
+      "value": 42000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q04",
+      "formula": "280000+35000-42000",
+      "value": 273000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q05",
+      "formula": "90000+45000",
+      "value": 135000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q06",
+      "formula": "760000-2000-80000",
+      "value": 678000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q07",
+      "formula": "40000+55000+25000+4000+6000",
+      "value": 130000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q08",
+      "formula": "580000-512000",
+      "value": 68000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q11",
+      "formula": "7000*2",
+      "value": 14000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-q12",
+      "formula": "870000+(630000-600000)",
+      "value": 900000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q01",
+      "formula": "760000-18000",
+      "value": 742000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q02",
+      "formula": "45000+380000-8000+6000-53000",
+      "value": 370000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q03",
+      "formula": "370000",
+      "value": 370000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q04",
+      "formula": "820000-490000",
+      "value": 330000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q05",
+      "formula": "490000+130000+60000+35000+25000",
+      "value": 740000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q06",
+      "formula": "820000+2000",
+      "value": 822000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q07",
+      "formula": "900000+5000-842000",
+      "value": 63000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q08",
+      "formula": "940000-856000",
+      "value": 84000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q09",
+      "formula": "66000-56000",
+      "value": 10000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q10",
+      "formula": "600000-350000-180000-14000",
+      "value": 56000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q11",
+      "formula": "40000",
+      "value": 40000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-q12",
+      "formula": "10000*(1-30/100)",
+      "value": 7000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q01",
+      "formula": "240000-7200",
+      "value": 232800,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q02",
+      "formula": "480000-210000",
+      "value": 270000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q04",
+      "formula": "120000+280000+150000-3000+80000+300000-120000+9000",
+      "value": 816000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q05",
+      "formula": "130000+210000+8000+6000+22000",
+      "value": 376000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q06",
+      "formula": "500000+120000+800000-710000",
+      "value": 710000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q07",
+      "formula": "80000+55000",
+      "value": 135000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q08",
+      "formula": "135000",
+      "value": 135000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q09",
+      "formula": "1050000-380000-500000",
+      "value": 170000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q10",
+      "formula": "6000",
+      "value": 6000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q11",
+      "formula": "100000-28000",
+      "value": 72000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-q12",
+      "formula": "980000-4000-160000",
+      "value": 816000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-closing-books-q07",
+      "formula": "85000+390000-338000",
+      "value": 137000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-closing-books-q08",
+      "formula": "890000-160000-210000-400000",
+      "value": 120000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-closing-books-q09",
+      "formula": "720000-590000",
+      "value": 130000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-closing-books-q12",
+      "formula": "0",
+      "value": 0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-acquisition-review-03",
+      "formula": "950000-780000+120000",
+      "value": 290000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-review-01",
+      "formula": "(990000-90000)/9",
+      "value": 100000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-depreciation-review-03",
+      "formula": "210000+98000-70000",
+      "value": 238000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-review-01",
+      "formula": "750000-510000-32000",
+      "value": 208000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-asset-sale-review-03",
+      "formula": "1260000-340000-(530000-170000)",
+      "value": 560000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-supplies-review-01",
+      "formula": "55000+17000-13000",
+      "value": 59000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-review-01",
+      "formula": "150*9000",
+      "value": 1350000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-capital-review-03",
+      "formula": "2380000-580000-1500000-210000",
+      "value": 90000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-review-02",
+      "formula": "25000+110000-105000",
+      "value": 30000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-dividends-review-03",
+      "formula": "1460000+240000+180000-110000",
+      "value": 1770000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-review-01",
+      "formula": "620000*25/100-65000",
+      "value": 90000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-corporate-tax-review-03",
+      "formula": "82000+174000-96000",
+      "value": 160000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-consumption-tax-review-01",
+      "formula": "187000-187000*100/110",
+      "value": 17000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-review-01",
+      "formula": "198000-33000+14000",
+      "value": 179000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-adjusted-trial-review-03",
+      "formula": "1180000-430000-600000-105000",
+      "value": 45000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-review-01",
+      "formula": "60000+4000-15000",
+      "value": 49000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-review-02",
+      "formula": "180000+420000+260000-5400-168000",
+      "value": 686600,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-worksheet-review-03",
+      "formula": "720000",
+      "value": 720000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-review-01",
+      "formula": "72000+610000-16000+14000-94000",
+      "value": 586000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-review-02",
+      "formula": "1100000-650000-300000+4000-9000-15000-39000",
+      "value": 91000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-profit-loss-review-03",
+      "formula": "12000*(1-25/100)",
+      "value": 9000.0,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-review-01",
+      "formula": "210000-6300+560000-224000",
+      "value": 539700,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-review-02",
+      "formula": "450000+210000-6300+105000+560000-224000+14000-380000-600000",
+      "value": 128700,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-balance-sheet-review-03",
+      "formula": "75000",
+      "value": 75000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    },
+    {
+      "id": "b3x-closing-books-review-03",
+      "formula": "620000-515000",
+      "value": 105000,
+      "method": "Independent reviewer reconstruction from stated premises; compared only after calculation."
+    }
+  ],
+  "journalReviews": [
+    {
+      "id": "b3x-asset-acquisition-q01",
+      "debitTotal": 90000.0,
+      "creditTotal": 90000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-q02",
+      "debitTotal": 90000.0,
+      "creditTotal": 90000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-q04",
+      "debitTotal": 248000.0,
+      "creditTotal": 248000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-q05",
+      "debitTotal": 515000.0,
+      "creditTotal": 515000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-q06",
+      "debitTotal": 60000.0,
+      "creditTotal": 60000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-q07",
+      "debitTotal": 309000.0,
+      "creditTotal": 309000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-q08",
+      "debitTotal": 180000.0,
+      "creditTotal": 180000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-depreciation-q04",
+      "debitTotal": 48000.0,
+      "creditTotal": 48000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-depreciation-q07",
+      "debitTotal": 8000.0,
+      "creditTotal": 8000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-sale-q03",
+      "debitTotal": 315000.0,
+      "creditTotal": 315000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-sale-q05",
+      "debitTotal": 490000.0,
+      "creditTotal": 490000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-sale-q06",
+      "debitTotal": 240000.0,
+      "creditTotal": 240000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-sale-q07",
+      "debitTotal": 70000.0,
+      "creditTotal": 70000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-q04",
+      "debitTotal": 8000.0,
+      "creditTotal": 8000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-q05",
+      "debitTotal": 20000.0,
+      "creditTotal": 20000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-q07",
+      "debitTotal": 5000.0,
+      "creditTotal": 5000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-q09",
+      "debitTotal": 5400.0,
+      "creditTotal": 5400.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-q10",
+      "debitTotal": 3000.0,
+      "creditTotal": 3000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-q11",
+      "debitTotal": 10200.0,
+      "creditTotal": 10200.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-capital-q02",
+      "debitTotal": 800000.0,
+      "creditTotal": 800000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-capital-q04",
+      "debitTotal": 300000.0,
+      "creditTotal": 300000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-capital-q05",
+      "debitTotal": 400000.0,
+      "creditTotal": 400000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-capital-q08",
+      "debitTotal": 200000.0,
+      "creditTotal": 200000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-dividends-q01",
+      "debitTotal": 50000.0,
+      "creditTotal": 50000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-dividends-q02",
+      "debitTotal": 88000.0,
+      "creditTotal": 88000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-dividends-q04",
+      "debitTotal": 65000.0,
+      "creditTotal": 65000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-dividends-q05",
+      "debitTotal": 55000.0,
+      "creditTotal": 55000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-dividends-q12",
+      "debitTotal": 95000.0,
+      "creditTotal": 95000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-corporate-tax-q03",
+      "debitTotal": 42000.0,
+      "creditTotal": 42000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-corporate-tax-q04",
+      "debitTotal": 108000.0,
+      "creditTotal": 108000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-corporate-tax-q08",
+      "debitTotal": 72000.0,
+      "creditTotal": 72000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-corporate-tax-q09",
+      "debitTotal": 64000.0,
+      "creditTotal": 64000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-corporate-tax-q11",
+      "debitTotal": 24000.0,
+      "creditTotal": 24000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q04",
+      "debitTotal": 99000.0,
+      "creditTotal": 99000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q05",
+      "debitTotal": 143000.0,
+      "creditTotal": 143000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q06",
+      "debitTotal": 13200.0,
+      "creditTotal": 13200.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q07",
+      "debitTotal": 8800.0,
+      "creditTotal": 8800.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q08",
+      "debitTotal": 204600.0,
+      "creditTotal": 204600.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q09",
+      "debitTotal": 72000.0,
+      "creditTotal": 72000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q11",
+      "debitTotal": 6000.0,
+      "creditTotal": 6000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-q12",
+      "debitTotal": 28000.0,
+      "creditTotal": 28000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-adjusted-trial-q03",
+      "debitTotal": 7000.0,
+      "creditTotal": 7000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-adjusted-trial-q12",
+      "debitTotal": 30000.0,
+      "creditTotal": 30000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-q01",
+      "debitTotal": 360000.0,
+      "creditTotal": 360000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-q02",
+      "debitTotal": 96000.0,
+      "creditTotal": 96000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-q03",
+      "debitTotal": 424000.0,
+      "creditTotal": 424000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-q04",
+      "debitTotal": 328000.0,
+      "creditTotal": 328000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-q05",
+      "debitTotal": 58000.0,
+      "creditTotal": 58000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-q06",
+      "debitTotal": 35000.0,
+      "creditTotal": 35000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-review-01",
+      "debitTotal": 72000.0,
+      "creditTotal": 72000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-acquisition-review-02",
+      "debitTotal": 708000.0,
+      "creditTotal": 708000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-depreciation-review-02",
+      "debitTotal": 78000.0,
+      "creditTotal": 78000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-asset-sale-review-02",
+      "debitTotal": 420000.0,
+      "creditTotal": 420000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-review-02",
+      "debitTotal": 29000.0,
+      "creditTotal": 29000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-supplies-review-03",
+      "debitTotal": 8800.0,
+      "creditTotal": 8800.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-capital-review-02",
+      "debitTotal": 690000.0,
+      "creditTotal": 690000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-dividends-review-01",
+      "debitTotal": 121000.0,
+      "creditTotal": 121000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-corporate-tax-review-02",
+      "debitTotal": 162000.0,
+      "creditTotal": 162000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-review-02",
+      "debitTotal": 19800.0,
+      "creditTotal": 19800.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-consumption-tax-review-03",
+      "debitTotal": 84000.0,
+      "creditTotal": 84000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-adjusted-trial-review-02",
+      "debitTotal": 4000.0,
+      "creditTotal": 4000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-review-01",
+      "debitTotal": 478000.0,
+      "creditTotal": 478000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    },
+    {
+      "id": "b3x-closing-books-review-02",
+      "debitTotal": 38000.0,
+      "creditTotal": 38000.0,
+      "transactionReview": "All accounts/sides/amounts read against stated event; no substantive model mismatch found in this snapshot."
+    }
+  ],
+  "tableReconstructions": {
+    "adjusted-trial": {
+      "beforeDebit": 1394000,
+      "beforeCredit": 1394000,
+      "cogs": 380000,
+      "allowance": 2400.0,
+      "afterDebit": 1464400,
+      "afterCredit": 1464400,
+      "profit": 51600,
+      "netAssets": 725600
+    },
+    "worksheet": {
+      "beforeDebit": 812000,
+      "beforeCredit": 812000,
+      "adjustments": 128800,
+      "expenses": 364800,
+      "profit": 5200,
+      "balanceDebit": 483000,
+      "balanceCreditBeforeProfit": 477800,
+      "netAssets": 422200
+    },
+    "balance-sheet": {
+      "revenue": 900000,
+      "expenses": 789400,
+      "profit": 110600,
+      "netAssets": 1010600,
+      "liabilities": 420000,
+      "equity": 590600
+    },
+    "closing-books": {
+      "revenue": 402000,
+      "expenses": 376000,
+      "profit": 26000,
+      "beforeDebit": 1086000,
+      "beforeCredit": 1086000,
+      "afterDebit": 710000,
+      "afterCredit": 710000,
+      "netAssets": 650000
+    }
+  },
+  "issues": []
+}

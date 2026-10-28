@@ -1,0 +1,3379 @@
+{
+  "b3x-receivables": [
+    {
+      "id": "b3x-receivables-q01",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品51,000円を掛けで販売しました。消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "商品販売が成立し、代金は未回収なので売掛金という資産を増やします。借方売掛金51,000円、貸方売上51,000円です。通常の商品代金なので未収入金とは分け、入金していない現金は使いません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "売上",
+          "売掛金",
+          "未収入金",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "売掛金",
+            "amount": 51000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 51000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売掛金\",\"amount\":51000}],\"credits\":[{\"account\":\"売上\",\"amount\":51000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q02",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "当店で使う備品44,000円を購入し、代金は翌月に払います。付随費用と消費税はありません。仕訳を入力してください。",
+      "explanation": "購入したのは販売用の商品ではなく、自店で使う備品です。借方備品44,000円、貸方未払金44,000円。商品仕入の買掛金へ自動的にまとめず、取引の原因を読み分けます。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "備品",
+          "売掛金",
+          "未払金",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "備品",
+            "amount": 44000
+          }
+        ],
+        "credits": [
+          {
+            "account": "未払金",
+            "amount": 44000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"備品\",\"amount\":44000}],\"credits\":[{\"account\":\"未払金\",\"amount\":44000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q03",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品代金ではなく、取引先へお金20,000円を貸し、翌月に元金の返済を受けます。この権利の勘定はどれですか。",
+      "explanation": "お金そのものの貸付けから生じる権利は貸付金です。売掛金は通常の商品等の掛け代金、買掛金と前受金は負債です。受け取る予定があるというだけで売掛金にはしません。",
+      "options": [
+        "買掛金",
+        "貸付金",
+        "売掛金",
+        "前受金"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b3x-receivables-q04",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品を掛けで売ったとき、売掛金を借方へ記録する理由はどれですか。",
+      "explanation": "売掛金は未回収の権利を表す資産です。掛けなので現金はまだ受け取っていません。将来払う義務とは反対で、資本金の払込みとも別の取引です。",
+      "options": [
+        "商品販売と同時に資本が必ず払い込まれるため",
+        "将来の支払義務という負債が増えるため",
+        "代金を受け取る権利という資産が増えるため",
+        "現金を既に受け取ったため"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b3x-receivables-q05",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初売掛金30,000円、当月掛け売上50,000円、回収45,000円、未回収代金から差し引く売上返品4,000円です。月末売掛金を円単位で求めてください。",
+      "explanation": "月初と発生を加え、回収と返品による減少を引きます。30,000＋50,000−45,000−4,000＝31,000円。販売額だけから回収を引くと月初残高を落とします。",
+      "input": "number",
+      "accepted": [
+        "31000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q06",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初買掛金40,000円、掛け仕入60,000円、支払55,000円、未払代金から差し引く仕入返品5,000円です。月末買掛金はいくらですか。単位は円です。",
+      "explanation": "負債の月末残高は40,000＋60,000−55,000−5,000＝40,000円です。仕入返品は支払義務を減らすため控除します。残高が月初と同額でも、取引がなかったわけではありません。",
+      "input": "number",
+      "accepted": [
+        "40000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q07",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "売掛金27,000円を回収し、当店負担の振込手数料200円を引いた26,800円が普通預金へ入りました。全額精算済みです。仕訳を入力してください。",
+      "explanation": "消える権利は売掛金27,000円全額です。入金26,800円と当店負担の手数料200円に分け、借方合計を27,000円にします。入金だけを売掛金から減らすと精算済みの200円が残ります。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受金",
+          "売上",
+          "売掛金",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 26800
+          },
+          {
+            "account": "支払手数料",
+            "amount": 200
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 27000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":26800},{\"account\":\"支払手数料\",\"amount\":200}],\"credits\":[{\"account\":\"売掛金\",\"amount\":27000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q08",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "掛けで販売した商品のうち5,500円分が返品され、まだ回収していない代金から差し引きました。三分法で、消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "元の売上と未回収の権利を取り消します。借方売上5,500円、貸方売掛金5,500円です。現金で返金した指定ではないため現金は使いません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "売上",
+          "売掛金",
+          "未払金",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 5500
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 5500
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売上\",\"amount\":5500}],\"credits\":[{\"account\":\"売掛金\",\"amount\":5500}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q09",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初売掛金26,000円、掛け売上63,000円、売上返品4,000円、月末残高32,000円です。他の増減はありません。当月回収額を円単位で求めてください。",
+      "explanation": "26,000＋63,000−4,000−回収＝32,000円です。回収は53,000円。元の式へ戻すと月末32,000円となります。月初と返品を除いた単純な売上との差ではありません。",
+      "input": "number",
+      "accepted": [
+        "53000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q10",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "入金12,000円は仕訳帳と総勘定元帳に正しく記録されていますが、得意先元帳だけに転記漏れがありました。適切な訂正はどれですか。",
+      "explanation": "誤っているのは補助元帳への転記です。正しい仕訳を重ねると入金と売掛金減少が二重になります。売上や損失の新しい発生でもありません。",
+      "options": [
+        "得意先元帳に該当する回収12,000円を記入する",
+        "売上12,000円を新しく計上する",
+        "原因を調べず雑損へ振り替える",
+        "普通預金の入金仕訳をもう一度行う"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q11",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "普通預金への売掛金回収16,000円について、仕訳帳から記録が漏れていると判明しました。ほかに処理はしていません。訂正のため必要な仕訳を入力してください。",
+      "explanation": "今回初めて回収の仕訳を記録します。普通預金16,000円を増やし、売掛金16,000円を減らします。補助簿だけの転記漏れと違い、総勘定元帳へ反映する元の仕訳が必要です。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受金",
+          "売上",
+          "売掛金",
+          "普通預金",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 16000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 16000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":16000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":16000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q12",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "得意先甲は月初18,000円、掛け売上35,000円、回収30,000円。乙は月初24,000円、掛け売上29,000円、回収32,000円、返品3,000円です。月末売掛金合計を円単位で求めてください。",
+      "explanation": "甲23,000円、乙18,000円で合計41,000円です。全体でも月初42,000＋売上64,000−回収62,000−返品3,000＝41,000円と一致します。",
+      "input": "number",
+      "accepted": [
+        "41000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q13",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "買掛金32,000円を普通預金から払い、当店負担の振込手数料200円も同時に払いました。口座からの引落額は32,200円です。仕訳を入力してください。",
+      "explanation": "商品代金の義務32,000円を借方買掛金で消し、別の振込手数料200円を費用へ記録します。預金支出合計32,200円と一致します。仕入は既に記録済みなので増やしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "売掛金",
+          "支払手数料",
+          "普通預金",
+          "未払金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 32000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 200
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 32200
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":32000},{\"account\":\"支払手数料\",\"amount\":200}],\"credits\":[{\"account\":\"普通預金\",\"amount\":32200}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-receivables-q14",
+      "lesson": "b3x-receivables",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "売掛金の総勘定元帳残高と得意先元帳合計が一致しました。なお、甲からの回収を乙へ誤記した可能性があります。適切な確認はどれですか。",
+      "explanation": "相手先を誤っても全体の合計は変わらない場合があります。合計の一致と個別記録の正確性は別です。残高の消去や売上の追加ではなく、元の相手先資料へ戻って確認します。",
+      "options": [
+        "合計が同じなので相手先の誤りはないと断定する",
+        "入金明細の相手先と個別元帳の記録も照合する",
+        "相手先名を変えず売上を増やす",
+        "全得意先の売掛金をゼロにする"
+      ],
+      "answer": 1
+    }
+  ],
+  "b3x-card-vouchers": [
+    {
+      "id": "b3x-card-vouchers-q01",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品75,000円をカード販売しました。手数料は2%で販売時に計上し、差引額をクレジット売掛金とします。消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "手数料75,000×2%＝1,500円、債権は73,500円です。二つの借方合計を売上75,000円と対応させます。販売時に入金はなく、差引額だけを売上にもしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "クレジット売掛金",
+          "売上",
+          "売掛金",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 73500
+          },
+          {
+            "account": "支払手数料",
+            "amount": 1500
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 75000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"クレジット売掛金\",\"amount\":73500},{\"account\":\"支払手数料\",\"amount\":1500}],\"credits\":[{\"account\":\"売上\",\"amount\":75000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q02",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "カード会社から後日精算を受けるカード販売について、販売時の現金が増えない理由として適切なのはどれですか。",
+      "explanation": "販売と精算は時点が違います。販売では売上と回収する権利を記録し、現金化は後です。手数料があることは販売がない理由ではなく、借入れとも別の取引です。",
+      "options": [
+        "カード販売では収益が一切発生しないため",
+        "入金の前に必ず借入金を作るため",
+        "手数料があると売上高は必ずゼロになるため",
+        "販売は成立しているが、代金の入金はまだ行われていないため"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b3x-card-vouchers-q03",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "カード売上84,000円、手数料率2.5%、販売時に手数料を計上する条件です。クレジット売掛金の計上額を円単位で求めてください。",
+      "explanation": "手数料2,100円を控除し、84,000−2,100＝81,900円の権利を記録します。売上高84,000円と、差引後の債権81,900円を区別します。",
+      "input": "number",
+      "accepted": [
+        "81900"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q04",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品56,000円をカード販売しました。手数料は回収時に計上する指示です。販売時の仕訳を入力してください。消費税は考慮しません。",
+      "explanation": "販売時は総額の債権56,000円と売上56,000円を記録します。回収時に手数料を計上する条件なので、この段階で未指定の手数料を作ったり、現金を増やしたりしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "クレジット売掛金",
+          "売上",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 56000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 56000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"クレジット売掛金\",\"amount\":56000}],\"credits\":[{\"account\":\"売上\",\"amount\":56000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q05",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "総額100,000円で記録しているクレジット売掛金を精算しました。手数料3,000円を回収時に計上し、97,000円が普通預金へ入りました。仕訳を入力してください。",
+      "explanation": "入金97,000円と費用3,000円で、権利100,000円全額を消します。売上は販売時に記録済みです。差額の費用を省くと債権が3,000円残るため、精算明細と照合します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "クレジット売掛金",
+          "売上",
+          "売掛金",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 97000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 100000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":97000},{\"account\":\"支払手数料\",\"amount\":3000}],\"credits\":[{\"account\":\"クレジット売掛金\",\"amount\":100000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q06",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "手数料控除前のクレジット売掛金65,000円を精算し、63,700円が普通預金へ入りました。差額が全額手数料です。手数料を円単位で求めてください。",
+      "explanation": "65,000−63,700＝1,300円です。債権全額と入金との差を費用に分けます。入金額に推測した率を掛けるのではなく、示された総額との関係を使います。",
+      "input": "number",
+      "accepted": [
+        "1300"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q07",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "手数料控除前で記録したクレジット売掛金のうち、月初分40,000円だけを精算しました。手数料800円を回収時に計上し、普通預金へ39,200円が入ります。当月販売分は別に未回収です。仕訳を入力してください。",
+      "explanation": "精算する月初分40,000円だけを消します。当月分もまとめて減らしたり、入金39,200円だけを権利から減らしたりしません。借方合計40,000円を確かめます。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "クレジット売掛金",
+          "前受金",
+          "売上",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 39200
+          },
+          {
+            "account": "支払手数料",
+            "amount": 800
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 40000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":39200},{\"account\":\"支払手数料\",\"amount\":800}],\"credits\":[{\"account\":\"クレジット売掛金\",\"amount\":40000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q08",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "販売時に手数料を既に計上し、差引額をクレジット売掛金にしました。指定の差引額全額が後日入金された場合、適切な処理はどれですか。",
+      "explanation": "手数料は一度記録済みです。回収では残る権利が預金へ変わります。費用や売上を重ねたり、通常の回収を販売取消しとしたりしません。",
+      "options": [
+        "同じ手数料をもう一度費用にする",
+        "入金額を新たな売上にする",
+        "販売時の売上高をすべて取り消す",
+        "預金を増やし、記録済みのクレジット売掛金を同額減らす"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b3x-card-vouchers-q09",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初クレジット売掛金45,000円、当月カード販売90,000円です。どちらも手数料控除前で記録し、当月精算した債権額は60,000円でした。月末残高はいくらですか。単位は円です。",
+      "explanation": "45,000＋90,000−60,000＝75,000円です。引くのは精算した債権額です。手数料差引後の銀行入金額が別にあっても、債権全額の減少と区別します。",
+      "input": "number",
+      "accepted": [
+        "75000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q10",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "代金21,000円の商品を売り、第三者発行の商品券18,000円分と現金3,000円を受け取りました。手数料・消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "借方は受取商品券18,000円と現金3,000円で、商品代金21,000円と一致します。券はまだ銀行入金ではありません。現金部分を売上から除外しないようにします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "クレジット売掛金",
+          "前受金",
+          "受取商品券",
+          "売上",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "受取商品券",
+            "amount": 18000
+          },
+          {
+            "account": "現金",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 21000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"受取商品券\",\"amount\":18000},{\"account\":\"現金\",\"amount\":3000}],\"credits\":[{\"account\":\"売上\",\"amount\":21000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q11",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "受取商品券24,000円分を精算し、事務手数料400円を差し引いて23,600円が普通預金へ入りました。手数料は未記録です。仕訳を入力してください。",
+      "explanation": "券の権利24,000円を、預金23,600円と費用400円へ分けて消します。販売は券を受け取った時に記録済みで、精算時には新たな売上を計上しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受金",
+          "受取商品券",
+          "売上",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 23600
+          },
+          {
+            "account": "支払手数料",
+            "amount": 400
+          }
+        ],
+        "credits": [
+          {
+            "account": "受取商品券",
+            "amount": 24000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":23600},{\"account\":\"支払手数料\",\"amount\":400}],\"credits\":[{\"account\":\"受取商品券\",\"amount\":24000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q12",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "商品代金7,700円に対し8,000円分の商品券を受け取りました。この制度では釣銭を渡すことが認められており、現金300円を渡しました。仕訳を入力してください。消費税は考慮しません。",
+      "explanation": "券の権利8,000円が増え、売上は商品の代金7,700円、現金は釣銭300円減ります。釣銭は費用ではありません。この問題で明示された制度条件を用い、他の券にも必ず同じ扱いを一般化しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前払金",
+          "受取商品券",
+          "売上",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "受取商品券",
+            "amount": 8000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 7700
+          },
+          {
+            "account": "現金",
+            "amount": 300
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"受取商品券\",\"amount\":8000}],\"credits\":[{\"account\":\"売上\",\"amount\":7700},{\"account\":\"現金\",\"amount\":300}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q13",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初受取商品券6,000円、当月受取28,000円、当月精算した券の額面19,000円です。未精算分はすべて保有しています。月末残高を円単位で求めてください。",
+      "explanation": "6,000＋28,000−19,000＝15,000円です。精算した券の額面で権利を減らします。入金の手数料有無によって、精算した権利の額まで変わるわけではありません。",
+      "input": "number",
+      "accepted": [
+        "15000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-card-vouchers-q14",
+      "lesson": "b3x-card-vouchers",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "商品50,000円のカード販売を、入金前に全額取り消しました。販売時に手数料1,000円を計上しクレジット売掛金49,000円を記録済みです。契約により手数料も全額取り消されます。取消しの仕訳を入力してください。",
+      "explanation": "指定条件では元の販売仕訳を逆にします。売上50,000円を取り消し、未回収権利49,000円と取消対象の費用1,000円を消します。入金前なので現金返金はありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "クレジット売掛金",
+          "売上",
+          "売掛金",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 50000
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 49000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 1000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売上\",\"amount\":50000}],\"credits\":[{\"account\":\"クレジット売掛金\",\"amount\":49000},{\"account\":\"支払手数料\",\"amount\":1000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ],
+  "b3x-bills": [
+    {
+      "id": "b3x-bills-q01",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品50,000円を仕入れ、代金として当店振出しの約束手形を渡しました。消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "商品受取りの仕入と、手形で支払う義務を記録します。振出時に預金から決済したわけではないため、貸方は当座預金でなく支払手形です。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "受取手形",
+          "売上",
+          "当座預金",
+          "支払手形",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 50000
+          }
+        ],
+        "credits": [
+          {
+            "account": "支払手形",
+            "amount": 50000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":50000}],\"credits\":[{\"account\":\"支払手形\",\"amount\":50000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q02",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品60,000円を販売し、代金として先方振出しの約束手形を受け取りました。消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "商品販売により、期日に受け取る権利が手形として生じます。借方受取手形60,000円、貸方売上60,000円です。自店が支払う側ではないので支払手形は使いません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "受取手形",
+          "売上",
+          "売掛金",
+          "支払手形",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "受取手形",
+            "amount": 60000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 60000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"受取手形\",\"amount\":60000}],\"credits\":[{\"account\":\"売上\",\"amount\":60000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q03",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "自店が商品代金の約束手形を振り出して仕入先へ渡しました。自店の立場として適切なのはどれですか。",
+      "explanation": "約束手形の振出人は支払を約束する側です。商品を買った自店には支払手形という負債が増えます。受取人の資産、商品販売の収益とは立場が違います。",
+      "options": [
+        "期日に受け取る権利があり、受取手形が増える",
+        "期日に支払う義務があり、支払手形が増える",
+        "振出しと同時に売上が増える",
+        "振出人は必ず販売側である"
+      ],
+      "answer": 1
+    },
+    {
+      "id": "b3x-bills-q04",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "既存の売掛金56,000円のうち34,000円について、先方振出しの約束手形を受け取りました。この受取りの仕訳を入力してください。",
+      "explanation": "既に商品販売を記録済みの権利を、指定額34,000円だけ振り替えます。売掛金22,000円は残り、売上は増やしません。元の権利と手形を二重に残さないことを確認します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "受取手形",
+          "売上",
+          "売掛金",
+          "支払手形",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "受取手形",
+            "amount": 34000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 34000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"受取手形\",\"amount\":34000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":34000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q05",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "買掛金48,000円の全額について、当店振出しの約束手形を渡しました。仕訳を入力してください。",
+      "explanation": "買掛金という既存の義務を減らし、支払手形へ移します。代金を支払う形が変わっただけなので、仕入や預金の新しい増減はありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "受取手形",
+          "当座預金",
+          "支払手形",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 48000
+          }
+        ],
+        "credits": [
+          {
+            "account": "支払手形",
+            "amount": 48000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":48000}],\"credits\":[{\"account\":\"支払手形\",\"amount\":48000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q06",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "商品95,000円を仕入れ、現金25,000円を払い、残額は当店振出しの約束手形を渡しました。一つの仕訳を入力してください。消費税は考慮しません。",
+      "explanation": "商品総額95,000円を仕入へ記録し、現金25,000円と将来の支払義務70,000円に分けます。二つの貸方合計が95,000円です。小切手の振出しと混同して当座預金を減らしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "受取手形",
+          "当座預金",
+          "支払手形",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 95000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 25000
+          },
+          {
+            "account": "支払手形",
+            "amount": 70000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":95000}],\"credits\":[{\"account\":\"現金\",\"amount\":25000},{\"account\":\"支払手形\",\"amount\":70000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q07",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初売掛金75,000円、当月掛け売上25,000円です。売掛金40,000円を受取手形へ振り替え、別の売掛金15,000円を現金で回収しました。月末売掛金を円単位で求めてください。",
+      "explanation": "75,000＋25,000−40,000−15,000＝45,000円です。手形へ移した40,000円は売掛金から減りますが、まだ未決済なら別の資産として残ります。",
+      "input": "number",
+      "accepted": [
+        "45000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q08",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "期日となった支払手形88,000円が当座預金から引き落とされました。手数料はありません。仕訳を入力してください。",
+      "explanation": "支払義務88,000円を借方支払手形で消し、当座預金を減らします。商品仕入や買掛金の振替は以前の段階で記録済みです。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "受取手形",
+          "当座預金",
+          "支払手形",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "支払手形",
+            "amount": 88000
+          }
+        ],
+        "credits": [
+          {
+            "account": "当座預金",
+            "amount": 88000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"支払手形\",\"amount\":88000}],\"credits\":[{\"account\":\"当座預金\",\"amount\":88000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q09",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初受取手形27,000円、当月受取り62,000円、当月決済35,000円です。他の増減はありません。月末受取手形を円単位で求めてください。",
+      "explanation": "月初27,000円と受取62,000円の合計89,000円から、決済35,000円を除いて54,000円です。未決済の手形明細合計へ照合します。",
+      "input": "number",
+      "accepted": [
+        "54000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q10",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "受取手形は月初58,000円、当月決済40,000円、月末91,000円です。当月は商品代金としての受取り以外に増加がありません。当月受取額を円単位で求めてください。",
+      "explanation": "58,000＋受取り−40,000＝91,000円なので、受取り73,000円です。期首期末の差33,000円だけでは途中の決済を含められません。",
+      "input": "number",
+      "accepted": [
+        "73000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q11",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "受取手形64,000円を期日に回収し、当店負担の取立手数料300円を差し引いて63,700円が普通預金へ入りました。全額決済済みです。仕訳を入力してください。",
+      "explanation": "権利64,000円を、入金63,700円と費用300円へ分けて消します。入金のみで減らすと、決済済みの手形が300円残ってしまいます。売上を再計上する場面ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "受取手形",
+          "売上",
+          "売掛金",
+          "支払手数料",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 63700
+          },
+          {
+            "account": "支払手数料",
+            "amount": 300
+          }
+        ],
+        "credits": [
+          {
+            "account": "受取手形",
+            "amount": 64000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":63700},{\"account\":\"支払手数料\",\"amount\":300}],\"credits\":[{\"account\":\"受取手形\",\"amount\":64000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q12",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "受取手形勘定の月末に「翌月繰越54,000円」を貸方へ記入しました。この記入の意味はどれですか。",
+      "explanation": "翌月繰越は期末に残る資産の残高を次月へ渡す記入です。貸方への記入がすべて取引による資産の消滅とは限りません。入金、負債への振替、新しい売上ではありません。",
+      "options": [
+        "54,000円が銀行へ入金された仕訳",
+        "売上が54,000円増加した記録",
+        "受取手形を負債へ変える仕訳",
+        "残る資産を翌月へ引き継ぐため、勘定を締め切る記入"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b3x-bills-q13",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初売掛金80,000円、受取手形20,000円があります。売掛金45,000円を手形へ振り替え、受取手形60,000円を預金で回収しました。他の取引はありません。月末の売掛金と受取手形の合計はいくらですか。単位は円です。",
+      "explanation": "売掛金35,000円、受取手形5,000円で合計40,000円です。振替は二資産の合計を変えないため、月初合計100,000−回収60,000でも検算できます。",
+      "input": "number",
+      "accepted": [
+        "40000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-bills-q14",
+      "lesson": "b3x-bills",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "未決済の受取手形明細は甲社30,000円、乙社25,000円、丙社40,000円です。本日、乙社分だけが普通預金へ入金されました。手数料はありません。本日の仕訳を入力してください。",
+      "explanation": "決済した乙社分25,000円だけを消します。甲・丙合計70,000円は未決済の資産です。相手先別の明細を使い、他社分も一括して減らさないようにします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "受取手形",
+          "売上",
+          "売掛金",
+          "支払手形",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 25000
+          }
+        ],
+        "credits": [
+          {
+            "account": "受取手形",
+            "amount": 25000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":25000}],\"credits\":[{\"account\":\"受取手形\",\"amount\":25000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ],
+  "b3x-electronic": [
+    {
+      "id": "b3x-electronic-q01",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "既存の売掛金42,000円について、電子記録債権の発生記録に必要な処理を行いました。仕訳を入力してください。",
+      "explanation": "既存の権利を売掛金から電子記録債権へ移します。新しい商品販売や入金ではないため、売上と預金は動きません。資産合計は不変です。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "売掛金",
+          "普通預金",
+          "電子記録債務",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "電子記録債権",
+            "amount": 42000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 42000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"電子記録債権\",\"amount\":42000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":42000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q02",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "買掛金73,000円について、電子記録債務の発生記録に必要な処理を行いました。仕訳を入力してください。",
+      "explanation": "元の買掛金を借方で減らし、電子記録債務を貸方に増やします。負債の形の変更であり、再び商品を仕入れたり預金を支払ったりする場面ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "当座預金",
+          "買掛金",
+          "電子記録債務",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 73000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債務",
+            "amount": 73000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":73000}],\"credits\":[{\"account\":\"電子記録債務\",\"amount\":73000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q03",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "電子記録債権と電子記録債務の分類として適切なのはどれですか。",
+      "explanation": "自社の立場で権利か義務かを確認します。電子記録という管理方法自体は、新しい収益や費用の発生を意味しません。",
+      "options": [
+        "両方とも費用",
+        "電子という名称が付くので両方とも売上",
+        "前者は負債、後者は資産",
+        "前者は受け取る権利で資産、後者は支払う義務で負債"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b3x-electronic-q04",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品38,000円を販売し、代金は販売と同時に電子記録債権としたと明示されています。先に売掛金を記録していません。仕訳を入力してください。消費税は考慮しません。",
+      "explanation": "この時点では販売そのものを記録します。借方電子記録債権38,000円、貸方売上38,000円です。既存売掛金の振替の仕訳を機械的に使わないようにします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "売掛金",
+          "現金",
+          "電子記録債務",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "電子記録債権",
+            "amount": 38000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 38000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"電子記録債権\",\"amount\":38000}],\"credits\":[{\"account\":\"売上\",\"amount\":38000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q05",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "買掛金110,000円のうち65,000円を電子記録債務へ振り替えました。今回の振替の仕訳を入力してください。",
+      "explanation": "指定額65,000円だけを振り替え、買掛金45,000円は残します。実際の支払ではないため預金を減らしません。負債総額は110,000円のままです。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "普通預金",
+          "買掛金",
+          "電子記録債務",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 65000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債務",
+            "amount": 65000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":65000}],\"credits\":[{\"account\":\"電子記録債務\",\"amount\":65000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q06",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初売掛金95,000円、当月掛け売上46,000円です。電子記録債権へ60,000円を振り替え、残る売掛金のうち30,000円を回収しました。月末売掛金を円単位で求めてください。",
+      "explanation": "95,000＋46,000−60,000−30,000＝51,000円です。電子記録債権へ移った額と、実際に回収した額を区別しながら元の売掛金を減らします。",
+      "input": "number",
+      "accepted": [
+        "51000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q07",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "電子記録債務54,000円が期日に当座預金から引き落とされました。手数料はありません。仕訳を入力してください。",
+      "explanation": "決済する電子記録債務54,000円を借方で消します。既に振り替えた買掛金をもう一度減らすと、同じ義務を二重に消してしまいます。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "当座預金",
+          "買掛金",
+          "電子記録債務",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "電子記録債務",
+            "amount": 54000
+          }
+        ],
+        "credits": [
+          {
+            "account": "当座預金",
+            "amount": 54000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"電子記録債務\",\"amount\":54000}],\"credits\":[{\"account\":\"当座預金\",\"amount\":54000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q08",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "電子記録債権67,000円が期日に普通預金へ全額入金されました。手数料はありません。仕訳を入力してください。",
+      "explanation": "入金で預金が増え、未回収の電子記録債権が消えます。販売や売掛金からの振替は以前の段階で処理済みです。貸方に売上を重ねないようにします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "売掛金",
+          "普通預金",
+          "電子記録債務",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 67000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債権",
+            "amount": 67000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":67000}],\"credits\":[{\"account\":\"電子記録債権\",\"amount\":67000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q09",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初電子記録債務35,000円、当月振替70,000円、当月決済58,000円です。他の増減はありません。月末電子記録債務を円単位で求めてください。",
+      "explanation": "35,000＋70,000−58,000＝47,000円です。発生記録で負債が増え、期日の支払で減ります。未決済明細の合計へ照合します。",
+      "input": "number",
+      "accepted": [
+        "47000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q10",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初電子記録債権55,000円、当月決済36,000円、月末残高91,000円です。増加は売掛金からの振替だけです。当月振替額を円単位で求めてください。",
+      "explanation": "55,000＋振替−36,000＝91,000円より72,000円です。月末残高と決済額を合わせ、月初に既にあった権利を除いて逆算します。",
+      "input": "number",
+      "accepted": [
+        "72000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q11",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "電子記録債権85,000円を決済し、当店負担の手数料400円を差し引いて84,600円が普通預金へ入りました。全額精算済みです。仕訳を入力してください。",
+      "explanation": "消える権利85,000円を入金84,600円と費用400円へ分けます。入金額と権利の消滅額が違う理由を明細で説明し、精算済みの残高を残さないようにします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受金",
+          "売上",
+          "売掛金",
+          "支払手数料",
+          "普通預金",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 84600
+          },
+          {
+            "account": "支払手数料",
+            "amount": 400
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債権",
+            "amount": 85000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":84600},{\"account\":\"支払手数料\",\"amount\":400}],\"credits\":[{\"account\":\"電子記録債権\",\"amount\":85000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q12",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "電子記録債権の月初合計と月末合計が同額でした。当月には発生記録と決済がありました。適切な確認はどれですか。",
+      "explanation": "増加と減少が同額なら、合計が変わらなくても内訳は変わります。発生と決済を省略せず、どの権利が残るかを個別資料で照合します。売掛金の残高も別に確認が必要です。",
+      "options": [
+        "発生・決済の明細と、月末に残る各相手先・期日を確認する",
+        "合計が同じなので当月取引は記帳しない",
+        "売掛金も必ず同額とみなす",
+        "同額なので全件決済済みとする"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q13",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初買掛金140,000円、電子記録債務60,000円です。買掛金80,000円を電子記録へ振り替え、買掛金25,000円と電子記録債務95,000円を預金で支払いました。月末の二つの負債合計を円単位で求めてください。",
+      "explanation": "振替は合計負債を変えません。月初200,000−実際支払120,000＝80,000円です。内訳は買掛金35,000円、電子記録債務45,000円で一致します。",
+      "input": "number",
+      "accepted": [
+        "80000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-electronic-q14",
+      "lesson": "b3x-electronic",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "電子記録債権の未決済明細には同じ金額30,000円の甲社分と乙社分があります。本日、甲社分だけが普通預金へ入金されました。手数料はありません。本日の仕訳を入力してください。",
+      "explanation": "甲社分30,000円だけを消し、乙社30,000円を未決済として残します。金額が同じ二件を、一つの入金で両方決済した扱いにしてはいけません。元の明細の相手先も確認します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "売掛金",
+          "普通預金",
+          "電子記録債務",
+          "電子記録債権"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 30000
+          }
+        ],
+        "credits": [
+          {
+            "account": "電子記録債権",
+            "amount": 30000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":30000}],\"credits\":[{\"account\":\"電子記録債権\",\"amount\":30000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ],
+  "b3x-loans": [
+    {
+      "id": "b3x-loans-q01",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "取引先へ現金52,000円を貸し付けました。手形は用いず、利息は後日別に受け取ります。貸付時の仕訳を入力してください。",
+      "explanation": "お金そのものを渡し、その返済を受ける権利を貸付金へ記録します。商品販売ではないため売掛金や売上を使いません。利息を今回計上する指定もありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "借入金",
+          "売上",
+          "売掛金",
+          "現金",
+          "貸付金"
+        ],
+        "debits": [
+          {
+            "account": "貸付金",
+            "amount": 52000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 52000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"貸付金\",\"amount\":52000}],\"credits\":[{\"account\":\"現金\",\"amount\":52000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q02",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "銀行から410,000円を借り、普通預金へ全額が入りました。手数料や利息の天引きはありません。仕訳を入力してください。",
+      "explanation": "預金という資産と元金を返す義務が同額増えます。借入れは販売による収益ではなく、貸す側の資産である貸付金とも違います。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "借入金",
+          "受取利息",
+          "売上",
+          "普通預金",
+          "貸付金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 410000
+          }
+        ],
+        "credits": [
+          {
+            "account": "借入金",
+            "amount": 410000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":410000}],\"credits\":[{\"account\":\"借入金\",\"amount\":410000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q03",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "取引先から代金を受け取る予定があります。取引が「商品を掛け販売」か「資金を貸付け」か分かっていません。最初に必要な確認はどれですか。",
+      "explanation": "どちらも資産ですが、商品代金は売掛金、資金の元金返済を受ける権利は貸付金です。入金日や受取額だけでは原因を区別できません。",
+      "options": [
+        "受取予定額をすべて当日の利益にする",
+        "どちらも必ず売掛金にする",
+        "権利が生じた原因を確認し、売掛金か貸付金かを分ける",
+        "入金日だけで勘定を決める"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b3x-loans-q04",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "借入金100,000円のうち元金40,000円を返し、別に利息900円も払いました。他の元金増減はありません。返済後の借入金を円単位で求めてください。",
+      "explanation": "元金残高を減らすのは40,000円だけなので60,000円です。利息900円は費用であり、同じ借入元金から重ねて差し引きません。",
+      "input": "number",
+      "accepted": [
+        "60000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q05",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "元金300,000円を年利率4%、5か月間借りました。月割り、途中返済なし、端数なしです。利息を円単位で求めてください。",
+      "explanation": "年利息12,000円の5か月分で5,000円です。300,000×0.04×5÷12と計算し、1年分より小さいことを確かめます。",
+      "input": "number",
+      "accepted": [
+        "5000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q06",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "元金240,000円を年利率4%、期間3か月で借り、利息全額を天引きされ残額が普通預金へ入りました。期中は天引き利息を支払利息へ記録する指示です。借入時の仕訳を入力してください。",
+      "explanation": "利息240,000×4%×3÷12＝2,400円、入金237,600円です。返済すべき元金240,000円を貸方へ、入金と費用を借方へ分けます。決算時の期間調整はこの借入時の仕訳と別です。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "借入金",
+          "受取利息",
+          "売上",
+          "支払利息",
+          "普通預金",
+          "貸付金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 237600
+          },
+          {
+            "account": "支払利息",
+            "amount": 2400
+          }
+        ],
+        "credits": [
+          {
+            "account": "借入金",
+            "amount": 240000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":237600},{\"account\":\"支払利息\",\"amount\":2400}],\"credits\":[{\"account\":\"借入金\",\"amount\":240000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q07",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "借入元金360,000円を年利率6%で2か月借りた後、元金120,000円を返済しました。その後3か月は残元金240,000円に同率を適用します。月割りの利息合計を円単位で求めてください。",
+      "explanation": "前半は3,600円、返済後の後半も3,600円で合計7,200円です。返済で利息の対象元金が変わるため、一つの元金で5か月全部を計算しません。",
+      "input": "number",
+      "accepted": [
+        "7200"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q08",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "借入金420,000円を全額返済し、未記録の当期利息8,400円と合わせて普通預金から払いました。仕訳を入力してください。",
+      "explanation": "借入元金420,000円という負債を消し、未記録の利息8,400円を費用へ記録します。預金支払428,400円を、元金と費用へ分けて照合します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "借入金",
+          "支払利息",
+          "支払手形",
+          "普通預金",
+          "貸付金"
+        ],
+        "debits": [
+          {
+            "account": "借入金",
+            "amount": 420000
+          },
+          {
+            "account": "支払利息",
+            "amount": 8400
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 428400
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"借入金\",\"amount\":420000},{\"account\":\"支払利息\",\"amount\":8400}],\"credits\":[{\"account\":\"普通預金\",\"amount\":428400}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q09",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "元金300,000円、期間6か月、月割りの利息6,000円で、途中返済はありません。年利率を%単位の数値で求めてください。例えば3%なら3と入力します。",
+      "explanation": "元金×年利率×6÷12＝6,000円より、年利率は0.04＝4%です。6か月の割合を除いてから年率へ直します。半年の元金比2%をそのまま年利率にしません。",
+      "input": "number",
+      "accepted": [
+        "4"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q10",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "取引先へ160,000円を普通預金から貸し付け、先方振出しの約束手形を受け取りました。利息は後日別に受け取ります。貸付時の仕訳を入力してください。",
+      "explanation": "商品代金ではなく資金の貸付けなので手形貸付金を使います。手形を受け取ったという外形だけで、通常の商品代金の受取手形にしないようにします。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "受取手形",
+          "売上",
+          "手形借入金",
+          "手形貸付金",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "手形貸付金",
+            "amount": 160000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 160000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"手形貸付金\",\"amount\":160000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":160000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q11",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "当店振出しの約束手形を用いて130,000円を借り、普通預金へ全額が入りました。利息等の天引きはありません。仕訳を入力してください。",
+      "explanation": "資金の貸借に手形を用いたので、手形借入金という元金の負債を記録します。商品の掛け代金や、その支払手形とは原因が違います。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "手形借入金",
+          "支払手形",
+          "普通預金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 130000
+          }
+        ],
+        "credits": [
+          {
+            "account": "手形借入金",
+            "amount": 130000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":130000}],\"credits\":[{\"account\":\"手形借入金\",\"amount\":130000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q12",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "手形を用いて貸し付けた元金180,000円、年利率4%、期間5か月です。元利を満期に受け取り、月割り、途中返済なしとします。受取利息を円単位で求めてください。",
+      "explanation": "180,000×0.04×5÷12＝3,000円です。手形を用いても、利息の対象元金・期間を分ける考え方は同じです。元金180,000円自体を収益にはしません。",
+      "input": "number",
+      "accepted": [
+        "3000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q13",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "手形貸付金210,000円について、満期に元金全額と未記録の当期利息3,150円が普通預金へ入りました。仕訳を入力してください。",
+      "explanation": "元金210,000円の権利を消し、利息3,150円を収益へ分けます。入金合計213,150円をすべて売上又はすべて元金の回収として扱いません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "借入金",
+          "受取利息",
+          "受取手形",
+          "売上",
+          "手形貸付金",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 213150
+          }
+        ],
+        "credits": [
+          {
+            "account": "手形貸付金",
+            "amount": 210000
+          },
+          {
+            "account": "受取利息",
+            "amount": 3150
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":213150}],\"credits\":[{\"account\":\"手形貸付金\",\"amount\":210000},{\"account\":\"受取利息\",\"amount\":3150}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-q14",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "約束手形を渡した二つの取引があり、一つは商品代金、もう一つは現金を借りたものです。適切な使い分けはどれですか。",
+      "explanation": "同じ書類でも取引の原因が違います。商品代金の支払義務と、資金の元金返済義務を区別します。借りる側が貸付金や売上を使う処理にもなりません。",
+      "options": [
+        "商品代金は支払手形、資金借入れは手形借入金",
+        "どちらも必ず買掛金",
+        "どちらも必ず受取手形",
+        "商品代金は手形貸付金、借入れは売上"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "b3x-loans-day-q1",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "元金912,500円、年利率2%、対象60日です。1年を365日とする日割計算で、利息を円単位で求めてください。元金の変動はなく、端数処理は不要です。",
+      "explanation": "912,500×0.02×60÷365＝3,000円です。1年分18,250円を365日へ配分すると1日50円、その60日分です。60日を機械的に2か月へ置き換えず、指定された日数を使います。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "3000"
+      ]
+    },
+    {
+      "id": "b3x-loans-day-q2",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "元金547,500円の借入金を全額返済し、年利率4%による45日分の利息も普通預金から払いました。1年は365日の日割計算、利息は今回初めて費用計上し、前払・未払利息はありません。仕訳を入力してください。",
+      "explanation": "利息は547,500×0.04×45÷365＝2,700円です。借入金547,500円と支払利息2,700円を借方、合計550,200円を普通預金の貸方に置きます。既計上の未払利息を消す条件ではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "accepted": [
+        "{\"debits\":[{\"account\":\"借入金\",\"amount\":547500},{\"account\":\"支払利息\",\"amount\":2700}],\"credits\":[{\"account\":\"普通預金\",\"amount\":550200}]}"
+      ],
+      "journal": {
+        "accounts": [
+          "借入金",
+          "支払利息",
+          "普通預金",
+          "貸付金",
+          "受取利息",
+          "未払利息"
+        ],
+        "debits": [
+          {
+            "account": "借入金",
+            "amount": 547500
+          },
+          {
+            "account": "支払利息",
+            "amount": 2700
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 550200
+          }
+        ]
+      }
+    },
+    {
+      "id": "b3x-loans-day-q3",
+      "lesson": "b3x-loans",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "当店は486,000円を年利率2.5%、期間73日で貸し付けました。1年365日の日割計算で、元金は期日まで変わりません。元金と一緒に受け取る利息だけを円単位で求めてください。端数処理は不要です。",
+      "explanation": "486,000×0.025×73÷365＝2,430円です。73÷365＝1/5年なので、1年分12,150円の5分の1とも確かめられます。元金の回収486,000円と、収益になる利息2,430円を分けます。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "accepted": [
+        "2430"
+      ]
+    }
+  ],
+  "b3x-advances": [
+    {
+      "id": "b3x-advances-q01",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品を注文し、受取り前に代金の一部12,000円を現金で払いました。商品はまだ届いていません。手付金は代金へ充当する条件です。仕訳を入力してください。",
+      "explanation": "商品受取り前の代金を前払金という資産へ記録します。まだ仕入を記録する段階ではなく、家賃等の期間費用とも原因が違います。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "前払金",
+          "支払家賃",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "前払金",
+            "amount": 12000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 12000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前払金\",\"amount\":12000}],\"credits\":[{\"account\":\"現金\",\"amount\":12000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q02",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品注文の手付金23,000円が普通預金へ入りました。商品は来月引き渡し、手付金は代金へ充当します。受取時の仕訳を入力してください。",
+      "explanation": "商品引渡し前の受取りなので前受金という負債を記録します。入金だけを理由に売上にせず、資金そのものを借りた借入金とも区別します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "借入金",
+          "前受金",
+          "売上",
+          "売掛金",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 23000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前受金",
+            "amount": 23000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":23000}],\"credits\":[{\"account\":\"前受金\",\"amount\":23000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q03",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品受取り前の手付金と、一年分保険料のうち翌期分の決算整理を比べます。適切な説明はどれですか。",
+      "explanation": "商品代金の前払いと、継続するサービスの期間配分は原因が違います。共通して先払いでも、何の取引のどの時点かによって勘定を使い分けます。",
+      "options": [
+        "名前に前が付けば資産と負債を区別しなくてよい",
+        "先に払った額は何でも買掛金",
+        "前者は前払金、後者は前払保険料などで、取引の原因を区別する",
+        "どちらも当日の売上"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b3x-advances-q04",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "商品受取り前の手付金としてA社へ8,000円、B社へ12,000円を払いました。別に当月費用の保険料6,000円も払っています。これらの支払後の前払金合計を円単位で求めてください。",
+      "explanation": "商品代金の前払い8,000＋12,000＝20,000円です。既に当月費用であると指定された保険料6,000円は、この前払金勘定には加えません。",
+      "input": "number",
+      "accepted": [
+        "20000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q05",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "商品72,000円を受け取り、前払金18,000円を代金へ充当し、残りを掛けとしました。三分法、消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "仕入総額72,000円に対し、既払18,000円の資産を取り崩し、未払54,000円を負債にします。今回の仕入を残額だけにしないことを確認します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "前受金",
+          "前払金",
+          "売上",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 72000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 18000
+          },
+          {
+            "account": "買掛金",
+            "amount": 54000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":72000}],\"credits\":[{\"account\":\"前払金\",\"amount\":18000},{\"account\":\"買掛金\",\"amount\":54000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q06",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "商品65,000円を引き渡し、前受金20,000円を充当しました。当日に現金15,000円を受け取り、残りは掛けです。消費税は考慮しません。一つの仕訳を入力してください。",
+      "explanation": "売上65,000円の内訳は前受済み20,000円、当日現金15,000円、未回収30,000円です。前受金は借方で消し、過去の入金を預金として再び増やしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前受金",
+          "前払金",
+          "売上",
+          "売掛金",
+          "普通預金",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 20000
+          },
+          {
+            "account": "現金",
+            "amount": 15000
+          },
+          {
+            "account": "売掛金",
+            "amount": 30000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 65000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前受金\",\"amount\":20000},{\"account\":\"現金\",\"amount\":15000},{\"account\":\"売掛金\",\"amount\":30000}],\"credits\":[{\"account\":\"売上\",\"amount\":65000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q07",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "商品代金98,000円について、既払手付金28,000円を充当し、残額を普通預金から払って商品を受け取りました。今回の預金支出を円単位で求めてください。",
+      "explanation": "総代金98,000−既払28,000＝70,000円です。98,000円は仕入総額であり、今回すべてを銀行から支払う金額ではありません。",
+      "input": "number",
+      "accepted": [
+        "70000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q08",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "前払金10,000円を充当して商品80,000円を受け取りました。受取時に普通預金から40,000円を払い、残額は掛けです。三分法、消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "貸方の代金部分は10,000＋40,000＋30,000＝80,000円です。既払資産を消す部分と今回の預金支出を分け、未払残額を買掛金へ記録します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "前受金",
+          "前払金",
+          "売上",
+          "普通預金",
+          "現金",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 80000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 10000
+          },
+          {
+            "account": "普通預金",
+            "amount": 40000
+          },
+          {
+            "account": "買掛金",
+            "amount": 30000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":80000}],\"credits\":[{\"account\":\"前払金\",\"amount\":10000},{\"account\":\"普通預金\",\"amount\":40000},{\"account\":\"買掛金\",\"amount\":30000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q09",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "商品45,000円を販売し、前受金17,000円を充当、当日現金8,000円を受け取りました。残りを売掛金とします。売掛金はいくらですか。単位は円です。",
+      "explanation": "売上総額から前受済みと当日受取を除き、45,000−17,000−8,000＝20,000円です。前受金を無視して37,000円を売掛金にすると、二重に回収する権利を作ります。",
+      "input": "number",
+      "accepted": [
+        "20000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q10",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "商品受取り前に記録した前払金14,000円について、注文を取り消し、全額が普通預金へ返りました。違約金等はありません。仕訳を入力してください。",
+      "explanation": "前払いした資産が預金へ戻ります。まだ商品を受け取っていないため仕入を取り消すのではなく、返金を新しい収益にも計上しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "前払金",
+          "売上",
+          "普通預金",
+          "雑収入"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 14000
+          }
+        ],
+        "credits": [
+          {
+            "account": "前払金",
+            "amount": 14000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":14000}],\"credits\":[{\"account\":\"前払金\",\"amount\":14000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q11",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "商品引渡し前の前受金19,000円について、契約を取り消して全額を現金で返しました。違約金等はありません。仕訳を入力してください。",
+      "explanation": "前受金という義務を減らし、現金を支払います。受取時に売上を記録していないため、返金時にも売上を取り消しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前受金",
+          "前払金",
+          "売上",
+          "売掛金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 19000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 19000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前受金\",\"amount\":19000}],\"credits\":[{\"account\":\"現金\",\"amount\":19000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q12",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初前受金15,000円、当月追加受取22,000円です。当月引き渡した商品代金25,000円へ前受金を充当し、残額は次の注文分として残します。月末前受金を円単位で求めてください。",
+      "explanation": "前受金37,000円のうち25,000円を精算したので12,000円残ります。商品引渡し前の残額まで売上に変えず、今後の義務として管理します。",
+      "input": "number",
+      "accepted": [
+        "12000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q13",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "前受金の残高30,000円のうち、今回引き渡した商品代金18,000円へ18,000円だけを充当しました。他の入出金はありません。消費税を考慮せず、今回の仕訳を入力してください。",
+      "explanation": "今回渡した商品18,000円だけを売上へ記録し、同額の前受金を消します。残る12,000円は別の引渡し等に対応する義務として残ります。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前受金",
+          "売上",
+          "売掛金",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 18000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 18000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前受金\",\"amount\":18000}],\"credits\":[{\"account\":\"売上\",\"amount\":18000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-advances-q14",
+      "lesson": "b3x-advances",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初前払金は甲20,000円、乙16,000円です。甲へ追加10,000円を払い、甲の仕入代金に24,000円を充当しました。乙からは取消しにより8,000円が返還されました。月末前払金合計を円単位で求めてください。",
+      "explanation": "甲6,000円、乙8,000円、合計14,000円です。総額でも36,000＋10,000−24,000−8,000＝14,000円。甲への充当に乙の残高を勝手に使わないようにします。",
+      "input": "number",
+      "accepted": [
+        "14000"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ],
+  "b3x-clearing": [
+    {
+      "id": "b3x-clearing-q01",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "従業員へ出張資金18,000円を現金で前渡ししました。実際の費用は帰社後に精算する条件です。仕訳を入力してください。",
+      "explanation": "最終的な費用が未確定の前渡しなので仮払金です。会社の費用の精算用であり、本人が負担すべき額と確定した立替金の取引ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払金",
+          "前受金",
+          "旅費交通費",
+          "現金",
+          "立替金"
+        ],
+        "debits": [
+          {
+            "account": "仮払金",
+            "amount": 18000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 18000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仮払金\",\"amount\":18000}],\"credits\":[{\"account\":\"現金\",\"amount\":18000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q02",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "普通預金へ29,000円が入りましたが、現在は内容が分かりません。一時的に記録する仕訳を入力してください。",
+      "explanation": "入金という資産増加は確定していますが、原因はまだ不明です。貸方を仮受金へ置き、判明後に振り替えます。証拠なしに売上や回収と決めません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受金",
+          "前払金",
+          "売上",
+          "売掛金",
+          "普通預金"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 29000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮受金",
+            "amount": 29000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":29000}],\"credits\":[{\"account\":\"仮受金\",\"amount\":29000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q03",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "会社が払った金額について「従業員本人が負担し、後日本人から回収する」と明示されています。適切な資産勘定はどれですか。",
+      "explanation": "他者の負担分を会社が立て替えたため、回収する権利を立替金へ記録します。仮受金と預り金は負債、支払手数料は会社の費用です。",
+      "options": [
+        "預り金",
+        "仮受金",
+        "支払手数料",
+        "立替金"
+      ],
+      "answer": 3
+    },
+    {
+      "id": "b3x-clearing-q04",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "仮払金と立替金の区別として適切なのはどれですか。",
+      "explanation": "どちらも資産ですが、一時的に未確定の支出を置く理由と、本人等の負担額を回収する理由は違います。勘定を統一すると、費用の確定と立替回収を区別できなくなります。",
+      "options": [
+        "名前が似ているためすべて同じ勘定に統一する",
+        "資産か負債かは考える必要がない",
+        "実際の会社費用等を後で精算する前渡しと、他者の負担分を払った権利を区別する",
+        "お金が戻る可能性があれば必ずどちらも売上にする"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b3x-clearing-q05",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "仮払金32,000円について、旅費交通費27,000円が確定し、残額5,000円が現金で戻りました。精算の仕訳を入力してください。",
+      "explanation": "仮払金全額32,000円を費用27,000円と返金5,000円へ分けます。戻ったのは自社が渡した未使用資金であり、新しい収益ではありません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払金",
+          "前受金",
+          "旅費交通費",
+          "現金",
+          "立替金",
+          "雑収入"
+        ],
+        "debits": [
+          {
+            "account": "旅費交通費",
+            "amount": 27000
+          },
+          {
+            "account": "現金",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払金",
+            "amount": 32000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"旅費交通費\",\"amount\":27000},{\"account\":\"現金\",\"amount\":5000}],\"credits\":[{\"account\":\"仮払金\",\"amount\":32000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q06",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "仮払金16,000円の出張精算で、会社負担の旅費交通費19,000円が確定しました。不足3,000円を現金で従業員へ払います。仕訳を入力してください。",
+      "explanation": "実際の費用19,000円に対し、既渡し16,000円を消し、差額3,000円を追加で払います。仮払金は16,000円しかないため19,000円を減らしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払金",
+          "売上",
+          "旅費交通費",
+          "現金",
+          "立替金",
+          "預り金"
+        ],
+        "debits": [
+          {
+            "account": "旅費交通費",
+            "amount": 19000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仮払金",
+            "amount": 16000
+          },
+          {
+            "account": "現金",
+            "amount": 3000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"旅費交通費\",\"amount\":19000}],\"credits\":[{\"account\":\"仮払金\",\"amount\":16000},{\"account\":\"現金\",\"amount\":3000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q07",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "仮受金45,000円の内容が、売掛金回収33,000円と、来月引渡し商品の手付金12,000円と判明しました。入金は既に記録済みです。振替仕訳を入力してください。",
+      "explanation": "仮受金45,000円を消し、判明した二つの原因へ分けます。入金を再記録せず、先に受けた商品代金12,000円もまだ売上にはしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受金",
+          "前受金",
+          "売上",
+          "売掛金",
+          "普通預金",
+          "現金"
+        ],
+        "debits": [
+          {
+            "account": "仮受金",
+            "amount": 45000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売掛金",
+            "amount": 33000
+          },
+          {
+            "account": "前受金",
+            "amount": 12000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仮受金\",\"amount\":45000}],\"credits\":[{\"account\":\"売掛金\",\"amount\":33000},{\"account\":\"前受金\",\"amount\":12000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q08",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "仮払金28,000円を精算し、旅費交通費22,000円と会社負担通信費1,500円が確定しました。残りは現金で返金です。返金額を円単位で求めてください。",
+      "explanation": "実際の会社費用23,500円を仮払金28,000円から引き、4,500円が戻ります。返金を雑収入にせず、費用と合わせて仮払金を消します。",
+      "input": "number",
+      "accepted": [
+        "4500"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q09",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "A従業員へ仮払金24,000円、B従業員へ18,000円を渡しています。Aの費用23,000円が確定し、差額を返してもらいました。Bは未精算です。精算後の仮払金合計を円単位で求めてください。",
+      "explanation": "Aの仮払金24,000円は、費用23,000円と返金1,000円へ全額精算されます。Bの18,000円だけが残ります。Aの費用だけを控除して19,000円としないようにします。",
+      "input": "number",
+      "accepted": [
+        "18000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q10",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "従業員本人が負担する代金6,000円を、会社が現金で代わりに払いました。後日本人から回収する条件です。支払時の仕訳を入力してください。",
+      "explanation": "会社負担の費用ではなく、本人から回収する権利です。借方立替金6,000円、貸方現金6,000円で記録し、本人回収まで資産として残します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "支払手数料",
+          "現金",
+          "立替金",
+          "給料",
+          "預り金"
+        ],
+        "debits": [
+          {
+            "account": "立替金",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 6000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"立替金\",\"amount\":6000}],\"credits\":[{\"account\":\"現金\",\"amount\":6000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q11",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "以前に記録した従業員立替金6,000円を、本人から全額現金で受け取りました。仕訳を入力してください。",
+      "explanation": "資産が立替金から現金へ戻る取引です。本人から戻った額を新しい収益や給与費用の取消しとして記録しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "現金",
+          "立替金",
+          "給料",
+          "雑収入"
+        ],
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "立替金",
+            "amount": 6000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"現金\",\"amount\":6000}],\"credits\":[{\"account\":\"立替金\",\"amount\":6000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q12",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "給与総額130,000円から、指定の所得税4,000円、従業員負担社会保険料15,000円、既存の従業員立替金5,000円を控除し、残り106,000円を普通預金から払います。仕訳を入力してください。",
+      "explanation": "給与費用130,000円と支払の内訳を対応させます。二つの預り金19,000円は負債増加、立替金5,000円は資産減少です。106,000＋19,000＋5,000＝130,000円で一致します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "所得税預り金",
+          "普通預金",
+          "法定福利費",
+          "現金",
+          "社会保険料預り金",
+          "立替金",
+          "給料"
+        ],
+        "debits": [
+          {
+            "account": "給料",
+            "amount": 130000
+          }
+        ],
+        "credits": [
+          {
+            "account": "所得税預り金",
+            "amount": 4000
+          },
+          {
+            "account": "社会保険料預り金",
+            "amount": 15000
+          },
+          {
+            "account": "立替金",
+            "amount": 5000
+          },
+          {
+            "account": "普通預金",
+            "amount": 106000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"給料\",\"amount\":130000}],\"credits\":[{\"account\":\"所得税預り金\",\"amount\":4000},{\"account\":\"社会保険料預り金\",\"amount\":15000},{\"account\":\"立替金\",\"amount\":5000},{\"account\":\"普通預金\",\"amount\":106000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q13",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "給与から預かった所得税4,000円と従業員負担社会保険料15,000円を、普通預金から指定先へ納付しました。会社負担分は含みません。仕訳を入力してください。",
+      "explanation": "給与時に記録した負債を合計19,000円減らします。会社負担分ではないため、新しい給与費用や法定福利費をこの納付で追加しません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "所得税預り金",
+          "普通預金",
+          "法定福利費",
+          "社会保険料預り金",
+          "立替金",
+          "給料"
+        ],
+        "debits": [
+          {
+            "account": "所得税預り金",
+            "amount": 4000
+          },
+          {
+            "account": "社会保険料預り金",
+            "amount": 15000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 19000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"所得税預り金\",\"amount\":4000},{\"account\":\"社会保険料預り金\",\"amount\":15000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":19000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-clearing-q14",
+      "lesson": "b3x-clearing",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "立替金は月初9,000円、当月本人負担分の追加立替4,000円、本人から現金回収5,000円、給与からの控除回収3,000円でした。月末立替金を円単位で求めてください。",
+      "explanation": "9,000＋4,000−5,000−3,000＝5,000円です。現金回収と給与控除の両方が同じ権利を減らすため、別の方法でも回収額として反映します。",
+      "input": "number",
+      "accepted": [
+        "5000"
+      ],
+      "options": [],
+      "answer": 0
+    }
+  ],
+  "b3x-deposits": [
+    {
+      "id": "b3x-deposits-q01",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "事務所契約で返還対象保証金50,000円、当月家賃25,000円、当期費用とする仲介手数料5,000円を普通預金からまとめて払いました。保証金は差入保証金を使い、消費税は考慮しません。仕訳を入力してください。",
+      "explanation": "支払80,000円を、資産50,000円と費用30,000円へ分けます。契約時の支払でも返還対象と利用の対価は性質が違うため、全額を一つの勘定にしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "前受金",
+          "差入保証金",
+          "支払家賃",
+          "支払手数料",
+          "普通預金",
+          "未払金"
+        ],
+        "debits": [
+          {
+            "account": "差入保証金",
+            "amount": 50000
+          },
+          {
+            "account": "支払家賃",
+            "amount": 25000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 80000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"差入保証金\",\"amount\":50000},{\"account\":\"支払家賃\",\"amount\":25000},{\"account\":\"支払手数料\",\"amount\":5000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":80000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q02",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "全額返還対象と明示された事務所の保証金を差し入れました。当月家賃との違いとして適切なのはどれですか。",
+      "explanation": "この問題の返還条件に基づく資産と、当月の利用対価である費用を分けます。支払日が同じことは統一する理由になりません。返還条件は契約ごとに確認します。",
+      "options": [
+        "保証金を払えば同額の売上が生じる",
+        "同じ日に払えば全額必ず家賃になる",
+        "保証金は資産、当月家賃は利用に対応する費用として区別する",
+        "どの契約も無条件に返還されると一般化できる"
+      ],
+      "answer": 2
+    },
+    {
+      "id": "b3x-deposits-q03",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "事務所を借り、返還対象保証金36,000円、当月家賃18,000円、費用となる手数料2,000円を払いました。他の保証金はありません。この取引後の差入保証金を円単位で求めてください。",
+      "explanation": "返還対象として指定された36,000円だけを資産へ記録します。家賃と手数料20,000円は当期費用という条件なので、保証金残高に加えません。",
+      "input": "number",
+      "accepted": [
+        "36000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q04",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        0
+      ],
+      "prompt": "返還対象の保証金48,000円を普通預金から新たに差し入れました。家賃等の支払は含みません。仕訳を入力してください。",
+      "explanation": "差し入れる側の返還対象資産を48,000円増やし、普通預金を減らします。当店が一時的に預かる負債ではなく、家賃費用とも別です。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "差入保証金",
+          "支払家賃",
+          "支払手数料",
+          "普通預金",
+          "預り金"
+        ],
+        "debits": [
+          {
+            "account": "差入保証金",
+            "amount": 48000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 48000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"差入保証金\",\"amount\":48000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":48000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q05",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "既存契約へ返還対象の保証金15,000円を追加し、普通預金から払いました。費用部分はありません。仕訳を入力してください。",
+      "explanation": "追加した権利15,000円を既存の差入保証金へ加えます。支払を一律に費用へ変えず、契約上の返還対象である条件を使います。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "前受金",
+          "差入保証金",
+          "支払家賃",
+          "普通預金",
+          "未払家賃"
+        ],
+        "debits": [
+          {
+            "account": "差入保証金",
+            "amount": 15000
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 15000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"差入保証金\",\"amount\":15000}],\"credits\":[{\"account\":\"普通預金\",\"amount\":15000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q06",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "契約終了により差入保証金39,000円が全額普通預金へ返還されました。控除や手数料はありません。仕訳を入力してください。",
+      "explanation": "記録していた資産が預金へ変わるだけで、保証金の回収額自体は新しい収益ではありません。差入保証金を貸方で全額消します。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "受取利息",
+          "売上",
+          "差入保証金",
+          "普通預金",
+          "雑収入"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 39000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 39000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":39000}],\"credits\":[{\"account\":\"差入保証金\",\"amount\":39000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q07",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "差入保証金は月初85,000円、当月追加差入れ25,000円、契約終了に伴う精算額40,000円です。精算した契約分は全額消滅しました。月末残高を円単位で求めてください。",
+      "explanation": "85,000＋25,000−40,000＝70,000円です。現金の入金額ではなく、精算により消えた保証金資産の額を減らします。",
+      "input": "number",
+      "accepted": [
+        "70000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q08",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "契約変更により差入保証金の一部20,000円が普通預金へ返還されました。未精算の保証金残額は40,000円です。今回の仕訳を入力してください。控除等はありません。",
+      "explanation": "今回返還された権利20,000円だけを減らし、残る40,000円は資産として引き継ぎます。残額まで消したり、契約内容が明確な返還を仮受金に置いたりしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮受金",
+          "差入保証金",
+          "支払家賃",
+          "普通預金",
+          "雑収入"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 20000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 20000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":20000}],\"credits\":[{\"account\":\"差入保証金\",\"amount\":20000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q09",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        1
+      ],
+      "prompt": "差入保証金は月初53,000円、当月返還21,000円、月末残高72,000円です。ほかの減少はありません。当月追加差入額を円単位で求めてください。",
+      "explanation": "53,000＋追加−21,000＝72,000円なので、追加は40,000円です。月末と返還分の合計から月初資産を除き、元の増減式へ戻して検算します。",
+      "input": "number",
+      "accepted": [
+        "40000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q10",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "差入保証金80,000円を全額精算し、未記録の当期家賃12,000円と未記録清掃費3,000円を控除し、普通預金へ65,000円が戻りました。清掃費は支払手数料を使う指示です。仕訳を入力してください。",
+      "explanation": "資産80,000円を入金65,000円と未記録費用15,000円へ分けます。保証金は全額精算済みなので残しません。家賃は未記録とあるため、存在しない未払家賃は使いません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払金",
+          "差入保証金",
+          "支払家賃",
+          "支払手数料",
+          "普通預金",
+          "未払家賃",
+          "雑損"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 65000
+          },
+          {
+            "account": "支払家賃",
+            "amount": 12000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 3000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 80000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":65000},{\"account\":\"支払家賃\",\"amount\":12000},{\"account\":\"支払手数料\",\"amount\":3000}],\"credits\":[{\"account\":\"差入保証金\",\"amount\":80000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q11",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "差入保証金90,000円を精算し、記録済み未払家賃15,000円と未記録の当期清掃費5,000円を控除、普通預金へ70,000円が戻りました。清掃費は支払手数料です。仕訳を入力してください。",
+      "explanation": "既に費用計上した家賃は未払家賃という負債を消します。清掃費5,000円だけを新たな費用へ記録し、入金と合わせて保証金90,000円を消します。家賃費用を二重にしません。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払金",
+          "売上",
+          "差入保証金",
+          "支払家賃",
+          "支払手数料",
+          "普通預金",
+          "未払家賃"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 70000
+          },
+          {
+            "account": "未払家賃",
+            "amount": 15000
+          },
+          {
+            "account": "支払手数料",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 90000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":70000},{\"account\":\"未払家賃\",\"amount\":15000},{\"account\":\"支払手数料\",\"amount\":5000}],\"credits\":[{\"account\":\"差入保証金\",\"amount\":90000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q12",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "保証金75,000円の全額精算で、家賃10,000円と清掃費5,000円が控除されます。他の控除はありません。普通預金へ返還される額を円単位で求めてください。",
+      "explanation": "75,000−10,000−5,000＝60,000円です。現金化する額と消える保証金75,000円は異なり、控除項目は別勘定へ記録します。",
+      "input": "number",
+      "accepted": [
+        "60000"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q13",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "差入保証金46,000円から、既に費用計上している未払家賃6,000円を控除し、40,000円が普通預金へ返還されました。ほかの費用等はありません。仕訳を入力してください。",
+      "explanation": "借方は入金40,000円と負債減少6,000円です。家賃を新たに費用へ計上する条件ではありません。資産46,000円と未払義務6,000円が両方消えることを確かめます。",
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仮払金",
+          "差入保証金",
+          "支払家賃",
+          "普通預金",
+          "未払家賃",
+          "雑収入"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 40000
+          },
+          {
+            "account": "未払家賃",
+            "amount": 6000
+          }
+        ],
+        "credits": [
+          {
+            "account": "差入保証金",
+            "amount": 46000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":40000},{\"account\":\"未払家賃\",\"amount\":6000}],\"credits\":[{\"account\":\"差入保証金\",\"amount\":46000}]}"
+      ],
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "b3x-deposits-q14",
+      "lesson": "b3x-deposits",
+      "field": "commercial",
+      "objectives": [
+        2
+      ],
+      "prompt": "保証金の元帳残高合計は正しいものの、返還済みの契約を未返還として内訳表に残した疑いがあります。適切な確認はどれですか。",
+      "explanation": "相手先別や契約別の誤りは合計だけでは分からない場合があります。どの契約をいくら精算したかを、入金と控除の資料から確認します。根拠なく資産を費用や売上へ変えません。",
+      "options": [
+        "預金入金の全額を売上へ振り替える",
+        "すべての保証金を費用に変える",
+        "合計が正しければ契約別内訳は不要",
+        "契約先別明細と返還入金、控除明細を照合する"
+      ],
+      "answer": 3
+    }
+  ]
+}

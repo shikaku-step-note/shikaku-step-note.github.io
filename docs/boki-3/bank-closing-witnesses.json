@@ -1,0 +1,52 @@
+[
+  {
+    "id": "worked5-before-transfer",
+    "formula": "30000-54000",
+    "value": -24000
+  },
+  {
+    "id": "worked5-after-transfer-bank",
+    "formula": "30000-54000+24000",
+    "value": 0
+  },
+  {
+    "id": "worked5-after-transfer-overdraft",
+    "formula": "0+24000",
+    "value": 24000
+  },
+  {
+    "id": "worked5-nextyear-overdraft",
+    "formula": "24000-24000",
+    "value": 0
+  },
+  {
+    "id": "worked5-nextyear-bank-before-deposit",
+    "formula": "0-24000",
+    "value": -24000
+  },
+  {
+    "id": "worked5-after-deposit-bank",
+    "formula": "-24000+40000",
+    "value": 16000
+  },
+  {
+    "id": "q1-error-opposite-transfer",
+    "formula": "37000+37000",
+    "value": 74000
+  },
+  {
+    "id": "q3-bank-after-collection",
+    "formula": "-32000+51000",
+    "value": 19000
+  },
+  {
+    "id": "review1-closing-overdraft",
+    "formula": "113000-82000",
+    "value": 31000
+  },
+  {
+    "id": "review2-bank-after-deposit",
+    "formula": "-57000+22000",
+    "value": -35000
+  }
+]
