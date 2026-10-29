@@ -1,6 +1,6 @@
 # AdSense owner checks — 日商簿記3級
 
-The shared layout includes publisher ca-pub-4767048586306805 once on eligible indexable public content. This upgrade adds no manual ad units or tracking of learning records. Assessment runners, progress/search, archived/sample content and redirect pages remain excluded by existing noindex/layout policy.
+The shared layout includes publisher ca-pub-3399213817491318 once on eligible indexable public content. The publisher ID was updated2026-10-29 from the owner's replacement snippet; this checklist's original review was2026-10-28. This upgrade adds no manual ad units or tracking of learning records. Assessment runners, progress/search, archived/sample content and redirect pages remain excluded by existing noindex/layout policy.
 
 Account approval, consent configuration, geographic CMP requirements and actual Auto ads placement are account-level checks, not established by the presence of a script. No ad requests/clicks were made in browser verification.
 

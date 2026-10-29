@@ -2,12 +2,14 @@
 
 確認日：2026年10月28日。サイト：<https://shikaku-step-note.github.io/>。
 
+パブリッシャーID更新：2026年10月29日。提供された新しいスニペットに合わせ、共通タグ・ads.txt・検証条件を変更しました。
+
 ## サイトに実装した内容
 
-- パブリッシャーID：`ca-pub-4767048586306805`。公開用の識別子です。
+- パブリッシャーID：`ca-pub-3399213817491318`。公開用の識別子です。
 - `src/layouts/Layout.astro`で、ホームと`/qualifications/`配下のindexableな公開ページのheadに、提供された非同期スクリプトを一度だけ出力します。今後追加する公開教材にも適用されます。
 - `noindex`のテスト実行ページ、サンプル教材、マイ学習、検索、404、旧`/web/`の移転ページに広告タグを出力しません。規約・プライバシーポリシーなどの案内ページとHTMLサイトマップも対象外です。
-- `public/ads.txt`をルートの<https://shikaku-step-note.github.io/ads.txt>へ公開します。行は`google.com, pub-4767048586306805, DIRECT, f08c47fec0942fa0`です。
+- `public/ads.txt`をルートの<https://shikaku-step-note.github.io/ads.txt>へ公開します。行は`google.com, pub-3399213817491318, DIRECT, f08c47fec0942fa0`です。
 - プライバシーポリシーに広告CookieとGoogleへの通信、設定の変更先を記載し、規約に広告と教材の関係を追記しました。
 - 広告用に学習記録を読み出したり送信したりする処理や、独立したアクセス解析タグ、広告ユニットは追加していません。
 

@@ -15,7 +15,7 @@ const titles = new Set();
 let internalLinks = 0;
 const fail = (path, message) => failures.push(`${path.replace(root, '')}: ${message}`);
 const adsTxt = join(root, 'ads.txt');
-if (!existsSync(adsTxt) || readFileSync(adsTxt, 'utf8').trim() !== 'google.com, pub-4767048586306805, DIRECT, f08c47fec0942fa0')
+if (!existsSync(adsTxt) || readFileSync(adsTxt, 'utf8').trim() !== 'google.com, pub-3399213817491318, DIRECT, f08c47fec0942fa0')
   fail('ads.txt', 'missing or incorrect AdSense authorized seller');
 let advertisingPages = 0;
 const sitemap = readFileSync(join(root, 'sitemap.xml'), 'utf8');
@@ -59,7 +59,7 @@ for (const file of htmlFiles) {
   if (advertisingExpected && adTags.length === 1) {
     advertisingPages++;
     const tag = adTags[0];
-    if (!tag[0].includes('client=ca-pub-4767048586306805"') ||
+    if (!tag[0].includes('client=ca-pub-3399213817491318"') ||
         !/\sasync(?:\s|=|>)/.test(tag[0]) || !tag[0].includes('crossorigin="anonymous"') ||
         tag.index > html.indexOf('</head>')) fail(file, 'incorrect AdSense script attributes or placement');
   }
