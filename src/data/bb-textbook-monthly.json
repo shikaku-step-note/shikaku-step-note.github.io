@@ -1,0 +1,562 @@
+{
+  "bb2-assets": [
+    {
+      "id": "bb2-assets-textbook-1",
+      "lesson": "bb2-assets",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "備品本体110,000円、引渡しまでの運送5,000円、使用開始後の通常修理4,000円を支払いました。備品の取得原価は何円ですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "115000"
+      ],
+      "explanation": "取得までに必要な本体代金と運送代を合計します。110,000＋5,000＝115,000円です。使用開始後の通常の修理は修繕費です。"
+    },
+    {
+      "id": "bb2-assets-textbook-2",
+      "lesson": "bb2-assets",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "備品124,000円のうち現金19,000円を引渡日に支払い、残りは後日払います。引渡日、貸方の未払金はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "105000"
+      ],
+      "explanation": "備品の取得は124,000円。現金19,000円を除いた未決済額124,000−19,000＝105,000円を未払金にします。"
+    },
+    {
+      "id": "bb2-assets-textbook-3",
+      "lesson": "bb2-assets",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "帳簿価額760,000円の土地のうち帳簿価額300,000円の部分を345,000円で売り、代金は後日受け取ります。固定資産売却益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "45000"
+      ],
+      "explanation": "比較するのは売った部分の帳簿価額です。345,000−300,000＝45,000円の利益。借方は未収入金345,000円、貸方は土地300,000円と固定資産売却益45,000円です。"
+    },
+    {
+      "id": "bb2-assets-textbook-4",
+      "lesson": "bb2-assets",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "土地の売却代金を未収入金に記録済みです。後日、代金が普通預金へ入金されたときの貸方はどれですか。",
+      "options": [
+        "売上",
+        "土地",
+        "未収入金",
+        "固定資産売却益"
+      ],
+      "answer": 2,
+      "explanation": "普通預金を借方に、回収した未収入金を貸方に記録します。引渡し時に土地と売却損益を処理済みなので、回収の仕訳には含めません。"
+    }
+  ],
+  "bb2-depreciation": [
+    {
+      "id": "bb2-depreciation-textbook-1",
+      "lesson": "bb2-depreciation",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "備品の代金120,000円を今月支払い、問題の指示に従って今月分の減価償却費2,000円を記録します。今月の減価償却費はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "2000"
+      ],
+      "explanation": "購入代金は備品の取得額です。当月の減価償却費は指定された2,000円だけを費用にします。"
+    },
+    {
+      "id": "bb2-depreciation-textbook-2",
+      "lesson": "bb2-depreciation",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "月次の間接法で減価償却費3,800円を計上します。貸方に使う勘定はどれですか。",
+      "options": [
+        "現金",
+        "減価償却累計額",
+        "備品",
+        "減価償却費"
+      ],
+      "answer": 1,
+      "explanation": "費用が増えるので借方は減価償却費、これまで計上した額を増やすため貸方は減価償却累計額です。備品の取得額と現金は減らしません。"
+    },
+    {
+      "id": "bb2-depreciation-textbook-3",
+      "lesson": "bb2-depreciation",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "取得額280,000円、月初の減価償却累計額39,000円の備品について、当月の減価償却費7,000円を計上します。月末の帳簿価額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "234000"
+      ],
+      "explanation": "月末累計額は39,000＋7,000＝46,000円です。取得額280,000−46,000＝234,000円が月末帳簿価額です。"
+    },
+    {
+      "id": "bb2-depreciation-textbook-4",
+      "lesson": "bb2-depreciation",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "Aの月額6,000円、Bの月額4,500円で、Bは翌月から計上します。今月、A分もまだ記録していません。今月の費用を何円増やしますか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "6000"
+      ],
+      "explanation": "今月の対象はAだけです。Bは翌月からなので今月は含めません。今月の費用と累計額をそれぞれ6,000円増やします。"
+    }
+  ],
+  "bb2-capital": [
+    {
+      "id": "bb2-capital-textbook-1",
+      "lesson": "bb2-capital",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "事業用の普通預金に、事業主から開店資金の追加振込みが入りました。貸方に使う勘定はどれですか。",
+      "options": [
+        "売上",
+        "借入金",
+        "前受金",
+        "資本金"
+      ],
+      "answer": 3,
+      "explanation": "拠出なので資本金が増加します。売上は商品などの対価、借入金は返済義務のある借入れ、前受金は契約の対価を先に受け取ったものです。"
+    },
+    {
+      "id": "bb2-capital-textbook-2",
+      "lesson": "bb2-capital",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "事業用預金から、事業主個人の所得税を支払いました。借方に使う勘定はどれですか。",
+      "options": [
+        "資本金",
+        "租税公課",
+        "未払固定資産税",
+        "給料"
+      ],
+      "answer": 0,
+      "explanation": "事業主個人の負担を事業の資金で支払ったので、簿記初級の扱いでは資本金を減らします。事業用土地の税のような費用とは区別します。"
+    },
+    {
+      "id": "bb2-capital-textbook-3",
+      "lesson": "bb2-capital",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初資本金320,000円、月末資本金363,000円で、当月の個人用引出しは17,000円です。資本金を変動させた取引が引出しと追加元入だけなら、追加元入額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "60000"
+      ],
+      "explanation": "資本金の純増は363,000−320,000＝43,000円。引出し17,000円を戻すと、追加元入額は60,000円です。"
+    },
+    {
+      "id": "bb2-capital-textbook-4",
+      "lesson": "bb2-capital",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初資本金370,000円。事業主から55,000円の追加元入を受け、個人の支払い14,000円を事業用口座から行いました。利益振替前の資本金はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "411000"
+      ],
+      "explanation": "370,000＋55,000−14,000＝411,000円。追加元入で増え、個人の支払いで減ります。"
+    }
+  ],
+  "bb2-expenses": [
+    {
+      "id": "bb2-expenses-textbook-1",
+      "lesson": "bb2-expenses",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "事業口座に8,200円入金されました。顧客から一時的に預かり、後日指定先へ渡すお金です。貸方に記録する科目はどれですか。",
+      "options": [
+        "売上",
+        "受取手数料",
+        "預り金",
+        "受取利息"
+      ],
+      "answer": 2,
+      "explanation": "指定先へ渡す義務があるので負債の預り金です。入金があっても、事業が稼いだ収益には該当しません。"
+    },
+    {
+      "id": "bb2-expenses-textbook-2",
+      "lesson": "bb2-expenses",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "店舗で使う筆記用具を現金で購入しました。簿記初級の支払い時処理として適切な借方はどれですか。",
+      "options": [
+        "備品",
+        "消耗品費",
+        "前払金",
+        "仕入"
+      ],
+      "answer": 1,
+      "explanation": "支払い時に消耗品費を記録します。継続使用する備品、代金の前払い、販売目的の商品仕入れと区別します。"
+    },
+    {
+      "id": "bb2-expenses-textbook-3",
+      "lesson": "bb2-expenses",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "固定資産税45,000円を未払として全額計上し、後日そのうち18,000円を支払いました。支払い直後の未払固定資産税残高はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "27000"
+      ],
+      "explanation": "計上済みの45,000円から実際に納付した18,000円を差し引き、27,000円が残ります。納付した額を新しい費用にはしません。"
+    },
+    {
+      "id": "bb2-expenses-textbook-4",
+      "lesson": "bb2-expenses",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "当月は固定資産税25,000円を未払計上し、前月計上済みの固定資産税12,000円を納付し、当月の業務に使う印紙を2,000円で購入し、その月に使用しました。このうち当月に増える租税公課はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "27000"
+      ],
+      "explanation": "当月の新しい費用は固定資産税25,000円と印紙2,000円の計27,000円です。12,000円の納付は前月に計上した負債を減らします。"
+    }
+  ],
+  "bb2-vat": [
+    {
+      "id": "bb2-vat-textbook-1",
+      "lesson": "bb2-vat",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "税抜方式。消費税率を10％とする設例で、税込額58,300円の税抜額はいくらですか。端数は出ないものとします。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "53000"
+      ],
+      "explanation": "税込額は本体の1.1倍なので58,300÷1.1＝53,000円。税額5,300円を足すと元の税込額に戻ります。"
+    },
+    {
+      "id": "bb2-vat-textbook-2",
+      "lesson": "bb2-vat",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "税抜方式、税率10％。税込22,000円の掛け仕入から税込6,600円を返品しました。返品分の仮払消費税を記録する側と金額はどれですか。",
+      "options": [
+        "借方600円",
+        "貸方600円",
+        "借方660円",
+        "貸方660円"
+      ],
+      "answer": 1,
+      "explanation": "税込6,600円の本体は6,000円、税額は600円です。仕入時に借方へ記録した仮払消費税を減らすので貸方です。"
+    },
+    {
+      "id": "bb2-vat-textbook-3",
+      "lesson": "bb2-vat",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "仮受消費税残高14,200円、仮払消費税残高9,700円です。他の調整を考えない設例で、差額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "4500"
+      ],
+      "explanation": "仮受14,200−仮払9,700＝4,500円です。税込の売掛金や買掛金の残高は、ここでは税額の差引きに加えません。"
+    },
+    {
+      "id": "bb2-vat-textbook-4",
+      "lesson": "bb2-vat",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初の仮受2,800円、仮払1,300円。月中に仮受が5,500円増えた後、売上返品で500円減り、仮払は2,100円増えました。調整なしの設例の月末差額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "4400"
+      ],
+      "explanation": "仮受2,800＋5,500−500＝7,800円、仮払1,300＋2,100＝3,400円。差は4,400円です。月初差1,500円に当月差2,900円を足しても求まります。"
+    }
+  ],
+  "bb2-trial-balance": [
+    {
+      "id": "bb2-trial-balance-textbook-1",
+      "lesson": "bb2-trial-balance",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "ある勘定の借方合計は12,800円、貸方合計は17,300円です。正しい残高はどれですか。",
+      "options": [
+        "借方4,500円",
+        "貸方12,800円",
+        "貸方4,500円",
+        "借方30,100円"
+      ],
+      "answer": 2,
+      "explanation": "残高は左右の差で、大きい側へ書きます。17,300−12,800＝4,500円で貸方残高です。"
+    },
+    {
+      "id": "bb2-trial-balance-textbook-2",
+      "lesson": "bb2-trial-balance",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初の現金30,000円、資本金30,000円。当月は現金売上7,000円と現金仕入9,000円だけです。月初を含む合計試算表の借方合計はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "46000"
+      ],
+      "explanation": "借方は現金30,000＋7,000円と仕入9,000円なので、計46,000円です。現金の貸方9,000円と資本金30,000円、売上7,000円の計46,000円で照合します。"
+    },
+    {
+      "id": "bb2-trial-balance-textbook-3",
+      "lesson": "bb2-trial-balance",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初の現金25,000円、資本金25,000円。当月は現金仕入6,000円と掛売上11,000円だけです。残高試算表の借方残高の合計はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "36000"
+      ],
+      "explanation": "現金19,000円、仕入6,000円、売掛金11,000円で36,000円です。貸方残高も資本金25,000円と売上11,000円で36,000円です。"
+    },
+    {
+      "id": "bb2-trial-balance-textbook-4",
+      "lesson": "bb2-trial-balance",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "3,400円の貸方転記を誤って同じ科目の借方へ書きました。ほかに誤りがなければ、全勘定の借方・貸方合計の差は何円ですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "6800"
+      ],
+      "explanation": "借方が3,400円多く、貸方が3,400円少なくなります。両方の影響を合わせて、借方が6,800円大きくなります。"
+    }
+  ],
+  "bb2-monthly": [
+    {
+      "id": "bb2-monthly-textbook-1",
+      "lesson": "bb2-monthly",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "売掛金の月初47,000円、当月掛売上72,000円、掛売上返品5,000円、月末52,000円です。これ以外の増減が回収だけなら、当月回収額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "62000"
+      ],
+      "explanation": "回収前の額は47,000＋72,000−5,000＝114,000円です。月末52,000円との差62,000円が回収額です。"
+    },
+    {
+      "id": "bb2-monthly-textbook-2",
+      "lesson": "bb2-monthly",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "現金から普通預金へ12,000円を移し、現金で4,000円を受け取り、普通預金から3,000円を支払いました。現金・普通預金を合わせた純増加額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "1000"
+      ],
+      "explanation": "預け入れは現金の減少と普通預金の増加で相殺します。ほかの収入4,000円と支出3,000円の差は＋1,000円です。"
+    },
+    {
+      "id": "bb2-monthly-textbook-3",
+      "lesson": "bb2-monthly",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "月初商品18,000円、当月の仕入38,000円、仕入返品3,000円、月末商品15,000円。売上原価はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "38000"
+      ],
+      "explanation": "正味仕入35,000円を月初商品18,000円に足し、売れずに残った15,000円を引きます。原価は38,000円です。"
+    },
+    {
+      "id": "bb2-monthly-textbook-4",
+      "lesson": "bb2-monthly",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "月末の資産は現金19,000円、普通預金43,000円、売掛金17,000円、備品55,000円だけで、備品の減価償却累計額は9,000円です。資産総額はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "125000"
+      ],
+      "explanation": "19,000＋43,000＋17,000＋55,000−9,000＝125,000円です。減価償却累計額は備品から控除します。"
+    }
+  ],
+  "bb2-integration": [
+    {
+      "id": "bb2-integration-textbook-1",
+      "lesson": "bb2-integration",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "現金で18,000円を売り上げ、通信費4,000円を現金で払い、事業主の個人用に現金3,000円を引き出しました。月初現金12,000円の場合の月末現金はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "23000"
+      ],
+      "explanation": "現金は12,000＋18,000−4,000−3,000＝23,000円です。引出しは利益の費用にはならなくても、現金残高を減らします。"
+    },
+    {
+      "id": "bb2-integration-textbook-2",
+      "lesson": "bb2-integration",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "正味売上80,000円、月初商品12,000円、正味仕入35,000円、月末商品17,000円、その他の当月費用11,000円。別に借入元本10,000円を返済しました。当月利益はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "39000"
+      ],
+      "explanation": "原価12,000＋35,000−17,000＝30,000円、費用総額41,000円、利益39,000円です。元本返済は借入金の減少で、費用に含めません。"
+    },
+    {
+      "id": "bb2-integration-textbook-3",
+      "lesson": "bb2-integration",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "当月に掛売上8,000円を記録し忘れ、売掛金と売上の双方が帳簿にありません。ほかの誤りはない場合、どんな影響がありますか。",
+      "options": [
+        "貸借が不一致となり、売上と売掛金は正しい",
+        "貸借は一致し、売上と売掛金がそれぞれ8,000円過大",
+        "貸借は一致し、売上と売掛金がそれぞれ8,000円過小",
+        "貸借が不一致となり、売上だけが8,000円過小"
+      ],
+      "answer": 2,
+      "explanation": "借方の売掛金と貸方の売上が同額ずつ漏れたため、試算表の貸借は合います。両科目がそれぞれ8,000円少ないので売上明細と照合して見つけます。"
+    },
+    {
+      "id": "bb2-integration-textbook-4",
+      "lesson": "bb2-integration",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "月初純資産96,000円、追加元入18,000円、引出6,000円、当月利益14,000円です。ほかに純資産の増減がない場合、月末純資産はいくらですか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "122000"
+      ],
+      "explanation": "元手の純増12,000円と利益14,000円を月初96,000円に加え、122,000円です。貸借対照表側からは、月末資産の純額から負債を引いて照合できます。"
+    }
+  ]
+}

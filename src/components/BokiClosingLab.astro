@@ -1,0 +1,60 @@
+---
+const accounts = ['現金', '売掛金', '備品', '減価償却累計額', '資本金', '売上', '減価償却費'] as const;
+type Account = (typeof accounts)[number];
+type Event = { label: string; facts: string; debit: Account; credit: Account; amount: number; why: string };
+const events: Event[] = [
+  { label:'1．売上を記録', facts:'商品を12,000円で販売し、代金は翌月受け取ります。この例では消費税と商品の原価は考えません。', debit:'売掛金', credit:'売上', amount:12000, why:'販売によって代金を受け取る権利が生じます。現金はまだ増えませんが、売上はこの時点で記録します。' },
+  { label:'2．以前の売掛金を回収', facts:'前月から残っていた売掛金8,000円を現金で受け取りました。', debit:'現金', credit:'売掛金', amount:8000, why:'すでに記録した売上の回収なので、売上は増えません。受け取る権利が現金に変わります。' },
+  { label:'3．備品を購入', facts:'長く使う備品を24,000円で購入し、現金で支払いました。', debit:'備品', credit:'現金', amount:24000, why:'現金が備品に変わります。例では購入時に全額を費用とせず、使った分を後で費用にします。' },
+  { label:'4．当月分の減価償却', facts:'備品の当月分の見積減価償却額1,000円を記録します。', debit:'減価償却費', credit:'減価償却累計額', amount:1000, why:'当月分の費用が増え、備品の帳簿価額が下がります。この仕訳で現金の支払いはありません。' },
+];
+const opening: Record<Account,number> = { 現金:40000, 売掛金:8000, 備品:0, 減価償却累計額:0, 資本金:-48000, 売上:0, 減価償却費:0 };
+const balance = { ...opening };
+const stages = events.map(event => {
+  balance[event.debit] += event.amount;
+  balance[event.credit] -= event.amount;
+  return { ...event, balances: { ...balance } };
+});
+const yen = (value: number) => value.toLocaleString('ja-JP') + '円';
+---
+<section class="closing-lab" aria-labelledby="closing-lab-title">
+  <h2 id="closing-lab-title">一か月の仕訳から、現金と利益を追う</h2>
+  <p>月初は現金40,000円、売掛金8,000円、資本金48,000円です。取引を一つずつ読み、現金が動くか、利益が動くかを予想してから仕訳と残高を開いてください。</p>
+  {stages.map((stage, index) => {
+    const r = stage.balances;
+    const profit = -r.売上 - r.減価償却費;
+    const assets = r.現金 + r.売掛金 + r.備品 + r.減価償却累計額;
+    return (
+      <section aria-labelledby={'closing-stage-' + index}>
+        <h3 id={'closing-stage-' + index}>{stage.label}</h3>
+        <p>{stage.facts}</p>
+        <details>
+          <summary>仕訳とこの時点の残高を見る</summary>
+          <dl class="closing-entry">
+            <div><dt>借方</dt><dd>{stage.debit} {yen(stage.amount)}</dd></div>
+            <div><dt>貸方</dt><dd>{stage.credit} {yen(stage.amount)}</dd></div>
+          </dl>
+          <p>{stage.why}</p>
+          <dl class="closing-totals">
+            <div><dt>現金</dt><dd>{yen(r.現金)}</dd></div>
+            <div><dt>売掛金</dt><dd>{yen(r.売掛金)}</dd></div>
+            <div><dt>備品の帳簿価額</dt><dd>{yen(r.備品 + r.減価償却累計額)}</dd></div>
+            <div><dt>資産の合計</dt><dd>{yen(assets)}</dd></div>
+            <div><dt>当月の利益</dt><dd>{yen(profit)}</dd></div>
+          </dl>
+        </details>
+      </section>
+    );
+  })}
+  <p><strong>二つの方法で確かめる。</strong> 売上12,000円から減価償却費1,000円を引くと利益は11,000円。負債と資本金の増減がない例なので、月末資産59,000円から月初純資産48,000円を引いても11,000円です。現金は24,000円で、月初より16,000円減っています。商品の原価を含めない練習用の前提です。</p>
+</section>
+
+<style>
+  .closing-lab { margin-block: 2.5rem; }
+  details { border: 1px solid currentColor; border-radius: .6rem; padding: .4rem .8rem; }
+  summary { min-height: 44px; display: list-item; align-content: center; cursor: pointer; }
+  .closing-entry, .closing-totals { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr)); gap: .5rem; }
+  dl div { padding: .55rem; border: 1px solid currentColor; border-radius: .4rem; }
+  dt { font-weight: 700; }
+  dd { margin-inline-start: 0; }
+</style>

@@ -1,0 +1,441 @@
+{
+  "scope": "日商簿記初級 2026年度 期中取引（教材ユニット3・4）",
+  "source": {
+    "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf",
+    "page": "2–3",
+    "verified": "2026-11-12",
+    "officialIndex": "https://www.kentei.ne.jp/bookkeeping/35697-2"
+  },
+  "futureScope": {
+    "effective": "2027-04-01",
+    "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027shokyu_track.pdf",
+    "note": "現行の約束手形と次年度の範囲を混同しない。将来適用のキャッシュレス決済への拡張は現行練習に含めない。"
+  },
+  "entries": [
+    {
+      "lesson": "bb2-receivables",
+      "officialScope": "2(2) 売掛金・買掛金",
+      "instructionAnchor": "textbook-receivables",
+      "workedExample": "取引先別残高を明細から組み直す",
+      "teachingAid": {
+        "type": "連続取引の図と残高照合表",
+        "columns": [
+          "得意先",
+          "期首",
+          "掛売上",
+          "返品",
+          "回収",
+          "残高"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-receivables-practice",
+        "task": "別の月には期首売掛金30,000円、当月掛売上56,000円、返品8,000円、期末売掛金40,000円でした。回収額は何円ですか。",
+        "solution": "期首と増加分から返品と期末を差し引くと、30,000＋56,000−8,000−40,000＝38,000円です。期末を使って回収を逆算し、30,000＋56,000−8,000−38,000＝40,000円と戻して検算できます。"
+      },
+      "assessment": {
+        "id": "bb2-receivables-check",
+        "items": [
+          {
+            "id": "bb2-receivables-textbook-1",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "23,000＋64,000−9,000−51,000＝27,000円です。返品も回収も売掛金を減らします。51,000円は預金の増加で、売上には加えません。"
+          },
+          {
+            "id": "bb2-receivables-textbook-2",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "返品で仕入は46,000−4,000＝42,000円。支払時は買掛金だけを減らすため、未払は42,000−25,000＝17,000円です。"
+          },
+          {
+            "id": "bb2-receivables-textbook-3",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "得意先別合計は64,000円で、元帳との差は6,000円です。資料の範囲と転記を照合して原因を特定します。残高差だけでは売上の漏れか、回収・返品などの記録の誤りかは分かりません。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    },
+    {
+      "lesson": "bb2-credit",
+      "officialScope": "2(2) クレジット売掛金",
+      "instructionAnchor": "textbook-credit",
+      "workedExample": "入金明細を販売日ごとに読み分ける",
+      "teachingAid": {
+        "type": "差引入金の構成図と入金照合表",
+        "columns": [
+          "販売日",
+          "売上",
+          "手数料",
+          "計上した権利",
+          "25日の回収",
+          "25日後の権利"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-credit-practice",
+        "task": "手数料を入金時に費用計上するという条件だけが変わったら、25日後に残るクレジット売掛金は何円ですか。",
+        "solution": "販売時は総額80,000円の権利を計上します。25日は普通預金31,040円と支払手数料960円の合計32,000円で5日分を消し込みます。18日分は費用計上前なので48,000円のままです。手数料の計上日を確かめてから残高を比較します。"
+      },
+      "assessment": {
+        "id": "bb2-credit-check",
+        "items": [
+          {
+            "id": "bb2-credit-textbook-1",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "未回収の55,000円分から手数料2,200円を差し引いた52,800円です。入金分は28,800円を消し込みます。"
+          },
+          {
+            "id": "bb2-credit-textbook-2",
+            "objectiveIndices": [
+              0
+            ],
+            "solution": "預金72,750円と手数料2,250円を借方に置きます。販売日に作った75,000円の権利は全て消えるので、貸方クレジット売掛金は総額です。"
+          },
+          {
+            "id": "bb2-credit-textbook-3",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "売上総額62,000円から手数料3,100円を差し引いて、普通預金は58,900円増えます。クレジット売掛金は総額62,000円を減らします。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    },
+    {
+      "lesson": "bb2-prepayments",
+      "officialScope": "2(3) 前払金・前受金",
+      "instructionAnchor": "textbook-prepayments",
+      "workedExample": "分納と返金が重なる注文を追う",
+      "teachingAid": {
+        "type": "連続取引の図と残高照合表",
+        "columns": [
+          "時点",
+          "前払金残高",
+          "仕入累計",
+          "買掛金残高",
+          "この日の預金増減"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-prepayments-practice",
+        "task": "販売側が30,000円を前受けし、商品45,000円を渡す日に20,000円だけを充当して残額を掛けにしました。売上と前受金残高を求めます。",
+        "solution": "引渡日に売上45,000円を計上し、借方は前受金20,000円と売掛金25,000円です。未充当の前受金は10,000円。受領時の預金はこの日に再記帳しません。"
+      },
+      "assessment": {
+        "id": "bb2-prepayments-check",
+        "items": [
+          {
+            "id": "bb2-prepayments-textbook-1",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "54,000−36,000−8,000＝10,000円です。納品へ充当した額と返金額は、どちらも前払金を減らします。"
+          },
+          {
+            "id": "bb2-prepayments-textbook-2",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "未充当の前受金は24,000−16,000＝8,000円。引渡した商品のうち未回収の分は70,000−16,000＝54,000円です。"
+          },
+          {
+            "id": "bb2-prepayments-textbook-3",
+            "objectiveIndices": [
+              0
+            ],
+            "solution": "商品がまだ届いていないので、買手は引渡しを受ける権利を前払金で記録します。仕入を計上するのは商品を受け取った日です。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    },
+    {
+      "lesson": "bb2-other-claims",
+      "officialScope": "2(3) 未収入金・未払金／2(6) 土地の売却",
+      "instructionAnchor": "textbook-other-claims",
+      "workedExample": "土地の売却と商品売上を同じ明細から分ける",
+      "teachingAid": {
+        "type": "連続取引の図と残高照合表",
+        "columns": [
+          "対象",
+          "代金",
+          "当日回収",
+          "当日未回収",
+          "翌週回収",
+          "翌週残高"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-other-claims-practice",
+        "task": "土地の代金が280,000円で、売却日に50,000円を普通預金で受け取るとします。帳簿価額300,000円は同じです。借方に並ぶ三つの項目は何ですか。",
+        "solution": "普通預金50,000円、未収入金230,000円、固定資産売却損20,000円です。借方合計は300,000円で、貸方 土地300,000円と一致します。売却損は回収した現金額ではなく、代金総額と帳簿価額の差です。"
+      },
+      "assessment": {
+        "id": "bb2-other-claims-check",
+        "items": [
+          {
+            "id": "bb2-other-claims-textbook-1",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "525,000−480,000＝45,000円です。未回収の355,000円も売却代金の一部であり、当日入金だけで損益を求めません。"
+          },
+          {
+            "id": "bb2-other-claims-textbook-2",
+            "objectiveIndices": [
+              0
+            ],
+            "solution": "商品代金は買掛金、販売用ではない備品の代金は未払金です。同じ相手への支払義務でも何の代金かで科目を分けます。"
+          },
+          {
+            "id": "bb2-other-claims-textbook-3",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "備品に対応する未払金44,000円から、備品代の支払21,000円だけを差し引きます。商品代12,000円は買掛金を減らします。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    },
+    {
+      "lesson": "bb2-loans",
+      "officialScope": "2(3) 貸付金・借入金／2(8) 受取利息・支払利息",
+      "instructionAnchor": "textbook-loans",
+      "workedExample": "支払予定表で元金と利息を追う",
+      "teachingAid": {
+        "type": "返済日と利息期間の時間軸、残元金の照合表",
+        "columns": [
+          "支払日",
+          "利息計算の元金",
+          "元金返済",
+          "利息",
+          "支払後の元金"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-loans-practice",
+        "task": "同じ条件で、11月1日の支払総額だけが156,000円だったとします。12月1日の利息はいくらになりますか。",
+        "solution": "11月までの利息は6,000円なので元金返済は150,000円。残元金450,000円に対して1か月分の450,000×0.06÷12＝2,250円です。"
+      },
+      "assessment": {
+        "id": "bb2-loans-check",
+        "items": [
+          {
+            "id": "bb2-loans-textbook-1",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "利息は返済前の480,000×0.05×2÷12＝4,000円です。元金返済120,000円を足すと124,000円になります。"
+          },
+          {
+            "id": "bb2-loans-textbook-2",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "貸付金を減らすのは元金100,000円だけなので、残高は110,000円です。受取利息1,750円は別の収益です。"
+          },
+          {
+            "id": "bb2-loans-textbook-3",
+            "objectiveIndices": [
+              0
+            ],
+            "solution": "商品取引の未回収額は売掛金ですが、今回新たに生じた権利は貸した金銭の元金を回収する権利です。貸付金を借方、減った普通預金を貸方に置きます。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    },
+    {
+      "lesson": "bb2-temporary",
+      "officialScope": "2(3) 仮払金・仮受金",
+      "instructionAnchor": "textbook-temporary",
+      "workedExample": "領収書と返金日が異なる精算を記録する",
+      "teachingAid": {
+        "type": "連続取引の図と残高照合表",
+        "columns": [
+          "時点",
+          "仮払金残高",
+          "費用累計",
+          "当日の返金"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-temporary-practice",
+        "task": "入金の方で、使途不明の普通預金28,000円のうち、18,000円が売掛金の回収と判明しました。残りは未確認です。預金と仮受金はどうなりますか。",
+        "solution": "最初に普通預金28,000円と仮受金28,000円を計上済みです。判明日に借方 仮受金18,000円、貸方 売掛金18,000円を記録し、仮受金10,000円が残ります。預金への振込は最初の日だけです。"
+      },
+      "assessment": {
+        "id": "bb2-temporary-check",
+        "items": [
+          {
+            "id": "bb2-temporary-textbook-1",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "48,000−29,000−4,000−5,000＝10,000円です。費用の確定と実際の返金で仮払金を減らします。"
+          },
+          {
+            "id": "bb2-temporary-textbook-2",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "入金時の分類を直すだけです。仮受金と売掛金を15,000円ずつ減らし、仮受金27,000円を未確認分として残します。"
+          },
+          {
+            "id": "bb2-temporary-textbook-3",
+            "objectiveIndices": [
+              0
+            ],
+            "solution": "入金自体は確定しているので普通預金を増やします。相手や内容が未確認なので、貸方を仮受金として判明を待ちます。商品の代金の前受けと確認できるまでは前受金にしません。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    },
+    {
+      "lesson": "bb2-custody",
+      "officialScope": "2(3) 立替金・預り金／2(9) 所得税の預り",
+      "instructionAnchor": "textbook-custody",
+      "workedExample": "給与明細と納付記録を照合する",
+      "teachingAid": {
+        "type": "連続取引の図と残高照合表",
+        "columns": [
+          "時点",
+          "立替金残高",
+          "預り金残高",
+          "給料累計"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-custody-practice",
+        "task": "前月から預り金1,200円があり、今月5,600円を新たに預かりました。納付額4,200円が記録されているときの預り金残高は何円ですか。",
+        "solution": "前月1,200＋当月5,600−納付4,200＝2,600円。預り金の貸方残高です。ここからは今月の給料費用や手取額は分かりません。"
+      },
+      "assessment": {
+        "id": "bb2-custody-check",
+        "items": [
+          {
+            "id": "bb2-custody-textbook-1",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "198,000−4,500−5,700＝187,800円です。給料の費用は控除前の198,000円です。"
+          },
+          {
+            "id": "bb2-custody-textbook-2",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "900＋4,900−3,700＝2,100円です。納付時は預り金という負債を減らすので、借方は預り金3,700円です。"
+          },
+          {
+            "id": "bb2-custody-textbook-3",
+            "objectiveIndices": [
+              0
+            ],
+            "solution": "店には6,200円を従業員から回収する権利が生じるため、借方は立替金です。店の備品を修繕した場合の費用とは支払いの負担者が違います。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    },
+    {
+      "lesson": "bb2-bills",
+      "officialScope": "2(4) 約束手形と電子記録債権・債務",
+      "instructionAnchor": "textbook-bills",
+      "workedExample": "決済方法の変更を残高の移動として読む",
+      "teachingAid": {
+        "type": "連続取引の図と残高照合表",
+        "columns": [
+          "時点",
+          "売掛金",
+          "受取手形",
+          "電子記録債権",
+          "権利合計"
+        ]
+      },
+      "guidedTransfer": {
+        "anchor": "textbook-bills-practice",
+        "task": "支払う側の買掛金90,000円のうち、60,000円を電子記録債務に振り替え、残り30,000円を直ちに普通預金で支払う場合はどうなりますか。",
+        "solution": "借方 買掛金90,000円、貸方 電子記録債務60,000円、普通預金30,000円です。仕入をもう一度記録しません。支払後に残る義務は電子記録債務60,000円です。"
+      },
+      "assessment": {
+        "id": "bb2-bills-check",
+        "items": [
+          {
+            "id": "bb2-bills-textbook-1",
+            "objectiveIndices": [
+              2
+            ],
+            "solution": "売掛金は95,000−55,000−24,000＝16,000円。受取手形55,000円を足すと71,000円です。電子記録債権は決済済みです。"
+          },
+          {
+            "id": "bb2-bills-textbook-2",
+            "objectiveIndices": [
+              1
+            ],
+            "solution": "買掛金という義務を減らし、電子記録債務という義務を同額増やします。代金は未決済で、仕入は以前に計上済みです。"
+          },
+          {
+            "id": "bb2-bills-textbook-3",
+            "objectiveIndices": [
+              0
+            ],
+            "solution": "自店が振り出した手形は、将来代金を支払う義務なので支払手形です。振出日には預金を減らしません。受取手形は相手が振り出した手形を受け取る側の資産です。"
+          }
+        ]
+      },
+      "review": {
+        "instruction": "著者が本文・条件・数値を照合",
+        "practice": "新しい取引と条件。数値を別計算で再計算",
+        "editorial": "語句・前提・科目名・符号を確認",
+        "rendering": "統合後に確認"
+      }
+    }
+  ]
+}

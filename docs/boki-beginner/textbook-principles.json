@@ -1,0 +1,350 @@
+{
+  "edition": "2026年度適用",
+  "verified": "2026-11-12",
+  "primarySources": [
+    {
+      "url": "https://www.kentei.ne.jp/bookkeeping/exam-list",
+      "usage": "2026年度は従来の範囲を適用、2027年度の確定版を別掲"
+    },
+    {
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf",
+      "usage": "現行の出題範囲・内容 1(1)〜(5)、2(1)、2(5)"
+    },
+    {
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/04/s-sample0404.pdf",
+      "usage": "概念・帳簿・伝票と、選択肢付き仕訳や月次集計の公開例の難度確認。問題は転載していない"
+    },
+    {
+      "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027shokyu_track.pdf",
+      "usage": "2027年4月1日施行の確定した変更箇所。現行と区別して参照"
+    }
+  ],
+  "counts": {
+    "lessons": 8,
+    "visualAids": 8,
+    "newQuestions": 32,
+    "strictNumeric": 12,
+    "journalInputs": 5,
+    "choiceItems": 15
+  },
+  "rows": [
+    {
+      "coverageId": "BB01",
+      "lesson": "bb2-business",
+      "section": "1(1) 基礎概念",
+      "sourcePage": "1",
+      "skill": "店の財産と私費を区別し、出資・借入・備品取得と引出し後に等式を検算する",
+      "anchor": "textbook-business-boundary",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-business-check",
+      "questionIds": [
+        "bb2-business-textbook-boundary",
+        "bb2-business-textbook-residual",
+        "bb2-business-textbook-financing",
+        "bb2-business-textbook-effects"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB02",
+      "lesson": "bb2-profit",
+      "section": "1(1) 基礎概念",
+      "sourcePage": "1",
+      "skill": "掛売りと過去の売掛金回収、借入元金と利息、元入れを分けて損益と純資産を照合する",
+      "anchor": "textbook-profit-reconcile",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-profit-check",
+      "questionIds": [
+        "bb2-profit-textbook-period",
+        "bb2-profit-textbook-cash-period",
+        "bb2-profit-textbook-equity-profit",
+        "bb2-profit-textbook-equity-loss"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB03",
+      "lesson": "bb2-transaction",
+      "section": "1(2) 取引",
+      "sourcePage": "1",
+      "skill": "注文・引渡し・決済の時点を分けて、財産や義務が変化した日を判定する",
+      "anchor": "textbook-transaction-elements",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-transaction-check",
+      "questionIds": [
+        "bb2-transaction-textbook-time"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB04",
+      "lesson": "bb2-transaction",
+      "section": "1(2) 取引",
+      "sourcePage": "1",
+      "skill": "販売の部分決済と元金・利息の返済を、資産・負債・収益・費用の増減に分解する",
+      "anchor": "textbook-transaction-elements",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-transaction-check",
+      "questionIds": [
+        "bb2-transaction-textbook-pair",
+        "bb2-transaction-textbook-repayment",
+        "bb2-transaction-textbook-split"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB05",
+      "lesson": "bb2-journal",
+      "section": "1(3) 勘定",
+      "sourcePage": "1",
+      "skill": "一枚の請求書に並ぶ仕入と備品を分類し、増減と借貸を決める",
+      "anchor": "textbook-journal-diagnose",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-journal-check",
+      "questionIds": [
+        "bb2-journal-textbook-split-purchase",
+        "bb2-journal-textbook-missing-payment",
+        "bb2-journal-textbook-correct-account"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB06",
+      "lesson": "bb2-journal",
+      "section": "1(3) 勘定",
+      "sourcePage": "1",
+      "skill": "貸借が合う誤仕訳を帳簿と資料から発見し、必要な差額を訂正する",
+      "anchor": "textbook-journal-diagnose",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-journal-check",
+      "questionIds": [
+        "bb2-journal-textbook-split-purchase",
+        "bb2-journal-textbook-correct-account",
+        "bb2-journal-textbook-double-record"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB07",
+      "lesson": "bb2-ledger",
+      "section": "1(4) 帳簿",
+      "sourcePage": "1",
+      "skill": "日付順の仕訳帳と科目別の総勘定元帳を使い、入出金後の残高を求める",
+      "anchor": "textbook-ledger-audit",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-ledger-check",
+      "questionIds": [
+        "bb2-ledger-textbook-lookup",
+        "bb2-ledger-textbook-ledger-balance",
+        "bb2-ledger-textbook-control-total"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB08",
+      "lesson": "bb2-ledger",
+      "section": "1(4) 帳簿",
+      "sourcePage": "1",
+      "skill": "総勘定元帳と補助簿の合計が同じでも、相手先の転記が逆なら違いが残ることを確かめる",
+      "anchor": "textbook-ledger-audit",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-ledger-check",
+      "questionIds": [
+        "bb2-ledger-textbook-mispost",
+        "bb2-ledger-textbook-control-total"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB09",
+      "lesson": "bb2-evidence",
+      "section": "1(5) 証ひょうと伝票",
+      "sourcePage": "1",
+      "skill": "請求書・領収書・振込明細を、取引日と何を証明するかで見分ける",
+      "anchor": "textbook-evidence-crosscheck",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-evidence-check",
+      "questionIds": [
+        "bb2-evidence-textbook-document",
+        "bb2-evidence-textbook-discrepancy"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB10",
+      "lesson": "bb2-evidence",
+      "section": "1(5) 証ひょうと伝票",
+      "sourcePage": "1",
+      "skill": "現金の変化に基づいて三伝票を選び、同じ取引の二重計上を除く",
+      "anchor": "textbook-evidence-crosscheck",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-evidence-check",
+      "questionIds": [
+        "bb2-evidence-textbook-bank-slip",
+        "bb2-evidence-textbook-payout",
+        "bb2-evidence-textbook-discrepancy"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB11",
+      "lesson": "bb2-cash",
+      "section": "2(1) 現金預金",
+      "sourcePage": "1–2",
+      "skill": "預金間の振替と取引先との決済を区別し、科目別残高を照合する",
+      "anchor": "textbook-cash-reconcile",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-cash-check",
+      "questionIds": [
+        "bb2-cash-textbook-move-banks",
+        "bb2-cash-textbook-reconcile",
+        "bb2-cash-textbook-omission"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB12",
+      "lesson": "bb2-cash",
+      "section": "2(1) 現金預金",
+      "sourcePage": "1–2",
+      "skill": "受け取った小切手、預入れ、自店振出しを段階別に記録する",
+      "anchor": "textbook-cash-reconcile",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-cash-check",
+      "questionIds": [
+        "bb2-cash-textbook-check-holder",
+        "bb2-cash-textbook-reconcile",
+        "bb2-cash-textbook-omission"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB13",
+      "lesson": "bb2-sales",
+      "section": "2(5) 商品",
+      "sourcePage": "2",
+      "skill": "三分法で商品代、別払い運賃、支払済み額を分け、仕入と債務の残高を求める",
+      "anchor": "textbook-sales-reconcile",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-sales-check",
+      "questionIds": [
+        "bb2-sales-textbook-three-account",
+        "bb2-sales-textbook-freight-cost"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    },
+    {
+      "coverageId": "BB15",
+      "lesson": "bb2-sales",
+      "section": "2(5) 商品",
+      "sourcePage": "2",
+      "skill": "仕入返品・売上返品と回収・支払いを分け、残高と損益に与える影響を確認する",
+      "anchor": "textbook-sales-reconcile",
+      "workedExample": "本文の例題・手順・図・検算",
+      "practiceSolution": "同節の練習と解答、および該当する理解度チェックの解説",
+      "assessment": "bb2-sales-check",
+      "questionIds": [
+        "bb2-sales-textbook-returns",
+        "bb2-sales-textbook-freight-sales"
+      ],
+      "status": {
+        "teaching": "worked-and-illustrated",
+        "application": "fresh-practice-and-solution",
+        "factual": "sources-and-key-recalculation",
+        "language": "author-copyedited"
+      },
+      "limits": "公式の出題頻度や配点の個別推定はしていない。専門家の外部監修と受験者の実測は未実施。"
+    }
+  ]
+}

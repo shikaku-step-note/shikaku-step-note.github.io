@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerWorkload } from '../src/data/boki-beginner';
+import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerWorkload } from '../src/data/boki-beginner';
 import { bokiAssessments } from '../src/data/bookkeeping';
 import { gradeAttempt, newAttempt, practicePoints, remainingSeconds, compatibleAttempt, assessmentMaterialIssues, isCorrect, type Question } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -166,4 +166,36 @@ test('reviewed glossary questions distinguish overlapping categories and monthly
   const change=terms.find(q=>q.options[q.answer]==='資本金の月次増減')!;
   assert.ok(change.prompt.includes('月末残高は月初資本金にこの増減額を加えて'));
   for(const q of terms){assert.equal(new Set(q.options).size,4,q.id);assert.ok(!q.prompt.includes('。。'),q.id);}
+});
+
+test('textbook practice is added to every chapter without changing the mock versions',()=>{
+  const unique = new Set(Object.values(beginnerBank).flat().map(q=>q.id));
+  const prompts = new Set(Object.values(beginnerBank).flat().map(q=>q.prompt));
+  for(const id of beginnerLessonIds){
+    const original = beginnerBank[id]!;
+    const definition = assessments.find(a=>a.id===id+'-check')!;
+    assert.equal(definition.version,beginnerTextbookVersion,id);
+    assert.deepEqual(definition.questions.slice(0,original.length),original,id);
+    assert.ok(definition.questions.length>original.length,id);
+    assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);
+    for(const q of definition.questions.slice(original.length)){
+      assert.equal(q.lesson,id,q.id);
+      assert.ok(!unique.has(q.id)&&!prompts.has(q.prompt),q.id);
+      unique.add(q.id);
+      prompts.add(q.prompt);
+      if(q.input) {
+        assert.ok(q.accepted?.[0],q.id);
+        assert.equal(isCorrect(q,q.accepted![0]!),true,q.id);
+        assert.equal(isCorrect(q,''),false,q.id);
+      } else {
+        assert.equal(new Set(q.options).size,4,q.id);
+        assert.ok(q.options[q.answer],q.id);
+      }
+    }
+  }
+  const lab = assessments.find(a=>a.id==='bb2-integration-check')!;
+  const profit = lab.questions.find(q=>q.id==='bb2-integration-lab-profit')!;
+  assert.equal(Number(profit.accepted?.[0]),(30000-10000+14000+10000-2000)-30000);
+  const split = lab.questions.find(q=>q.id==='bb2-integration-lab-journal')!;
+  assert.deepEqual(split.journal?.debits.map(row=>row.amount),[2000,3500-2000]);
 });

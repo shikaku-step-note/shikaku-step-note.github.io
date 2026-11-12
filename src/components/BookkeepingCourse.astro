@@ -145,6 +145,9 @@ const workload = beginner
       </section>
       <section class="course-section">
         <h2>総復習と模擬試験</h2>
+        {beginner && (
+          <p><a href={href('qualifications/boki-beginner/bb2-integration/#closing-lab-title')}>一か月の仕訳と残高を一つずつ追う</a>。仕訳の借方・貸方を予想し、現金と利益の変化を確かめてから総復習へ進みます。</p>
+        )}
         <p>
           {beginner
             ? 'ユニット総合確認はレッスン末尾とは別の独自問題です。総復習24問は新しい複合問題12問とユニット確認の再利用12問。用語は本文の定義から出題し、用語総復習では同じ問題を再利用します。40分模試2回には別の独自問題と月次の共通資料を使います。'

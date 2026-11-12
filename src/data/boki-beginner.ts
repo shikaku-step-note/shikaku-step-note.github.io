@@ -1,4 +1,8 @@
 import unit12 from './boki-beginner-unit12-questions.json';
+import principlesTextbook from './bb-textbook-principles.json';
+import transactionTextbook from './bb-textbook-transactions.json';
+import monthlyTextbook from './bb-textbook-monthly.json';
+import textbookLab from './bb-textbook-lab.json';
 import unit34 from './boki-beginner-unit34-questions.json';
 import unit56 from './boki-beginner-unit56-questions.json';
 import mocks from './boki-beginner-mocks.json';
@@ -8,7 +12,7 @@ import sources from '../../docs/boki-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
 export const beginnerVersion = 'bb-2026-v2';
-export const beginnerReviewed = '2026-10-28';
+export const beginnerReviewed = '2026-11-12';
 export const beginnerGroups = [
   '財産・損益・複式簿記の原理', '帳簿・証ひょうと日々の売買',
   '代金の受払いと決済の時点', '貸借・一時処理・手形と電子記録',
@@ -25,6 +29,15 @@ export const beginnerLessonIds = [
 export const beginnerLegacyIds = ['bb-foundation', 'bb-journal', 'bb-transactions', 'bb-monthly'];
 export const beginnerSources = sources.sources;
 export const beginnerBank = { ...unit12, ...unit34, ...unit56 } as Record<string, Question[]>;
+export const beginnerTextbookVersion = 'bb-2026-textbook-v1';
+export const beginnerTextbookBank = {
+  ...principlesTextbook, ...transactionTextbook, ...monthlyTextbook,
+} as Record<string, Question[]>;
+export const beginnerLessonQuestions = (id: string) => [
+  ...(beginnerBank[id] ?? []),
+  ...(beginnerTextbookBank[id] ?? []),
+  ...(id === 'bb2-integration' ? (textbookLab as Question[]) : []),
+];
 export const beginnerReviewBank = Object.fromEntries(Object.entries(reviews).map(([key,questions])=>[
   key,[...questions,...((reviewAdditions as Record<string, Question[]>)[key] ?? [])],
 ])) as Record<string, Question[]>;
@@ -61,7 +74,8 @@ export function beginnerAssessments(
     fieldNames: { basics: '簿記初級' }, lessonTitles: Object.fromEntries(allRows.map(l => [l.data.stableId,l.data.title])) };
   const result: Assessment[] = rows.map(l => ({ ...base, id: `${l.data.stableId}-check`,
     title: `${l.data.title}：理解度チェック`, kind: 'lesson', unit: l.data.unit,
-    questions: beginnerBank[l.data.stableId] ?? [],
+    version: beginnerTextbookBank[l.data.stableId]?.length ? beginnerTextbookVersion : beginnerVersion,
+    questions: beginnerLessonQuestions(l.data.stableId),
     instructions: '独自に作成した理解度チェックです。問題ごとの解説で考え方を確かめてください。学習済みの印とは別に結果を保存します。' }));
   const terms = [...new Map(rows.flatMap(l => l.data.glossary.map(g => [g.term,{...g,lesson:l.data.stableId}] as const))).values()];
   // Avoid category/subtype or expense-name/account-name alternatives that also fit a definition.

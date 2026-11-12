@@ -32,9 +32,9 @@ Google AdSenseのタグと`public/ads.txt`を導入しています。広告の�
 
 ### 簿記初級の詳しい課程を更新する場合
 
-`src/content/lessons/bb2-*.md`が本文です。理解度チェックは`src/data/`の`boki-beginner-unit12-questions.json`、`boki-beginner-unit34-questions.json`、`boki-beginner-unit56-questions.json`にあります。`src/data/boki-beginner.ts`が6ユニット、用語・復習・模試の登録、学習時間を管理します。レビュー問題は`boki-beginner-reviews.json`と`boki-beginner-review-additions.json`、独立模試2回は`boki-beginner-mocks.json`です。
+`src/content/lessons/bb2-*.md`が本文です。理解度チェックは`src/data/`の`boki-beginner-unit12-questions.json`、`boki-beginner-unit34-questions.json`、`boki-beginner-unit56-questions.json`にあります。章末の追加問題は `src/data/bb-textbook-*.json` です。 `src/data/boki-beginner.ts`が6ユニット、用語・復習・模試の登録、学習時間を管理します。レビュー問題は`boki-beginner-reviews.json`と`boki-beginner-review-additions.json`、独立模試2回は`boki-beginner-mocks.json`です。
 
-公式範囲を変更する際は`docs/boki-beginner/source-register.json`と`src/data/boki-beginner-coverage.json`の能力・記事アンカー・実際の問題IDを照合し、本文・解答・対応表を一緒に直します。将来版を現行版へ混ぜず、質問や配点を実質変更した場合は初級の`beginnerVersion`を更新してください。他資格の版は変更しません。旧`bb-*`4ページと旧URLの記録は保管し、技能を分割した新`bb2-*`の完了へ移し替えません。
+公式範囲を変更する際は`docs/boki-beginner/source-register.json`と`src/data/boki-beginner-coverage.json`の能力・記事アンカー・実際の問題IDを照合し、本文・解答・対応表を一緒に直します。将来版を現行版へ混ぜず、章末の設問や配点を変更したら該当する章末チェックの版を更新します。模試と復習の版はその評価の実質変更時に更新します。他資格の版は変更しません。旧`bb-*`4ページと旧URLの記録は保管し、技能を分割した新`bb2-*`の完了へ移し替えません。
 
 `pnpm check`、`pnpm test:storage`、`pnpm build`、`pnpm verify`で検証し、ブラウザでも教材・採点・保存・バックアップ・両テーマを確認します。ビルドは本文と共有データからTXTを再生成し、XML/HTMLサイトマップ、検索、カード・進捗の対象も更新します。`docs/boki-beginner/acceptance-report.json`とレビュー記録で項目数・意図的な再利用・未検証事項を確認できます。AdSenseは共通レイアウトを継承し、問題領域の管理画面側確認URLは`docs/boki-beginner/adsense-review.md`にあります。
 

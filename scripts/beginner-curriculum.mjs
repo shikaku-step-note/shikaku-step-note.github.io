@@ -1,4 +1,4 @@
-import { beginnerGroups, beginnerBank, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
+import { beginnerGroups, beginnerLessonQuestions, beginnerTextbookVersion, beginnerVersion, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
 import coverage from '../src/data/boki-beginner-coverage.json' with {type:'json'};
 export function beginnerCurriculum(rows) {
   const workload=beginnerWorkload(rows);
@@ -6,7 +6,7 @@ export function beginnerCurriculum(rows) {
     '日商簿記初級 詳しい学習ツリー・スケジュール',
     '対象：簿記初級の全範囲。原価計算初級・1〜3級は別区分。',
     '適用：2026年度（2027年3月31日まで）。2027年4月施行の確定版とは区別。',
-    `公式資料確認日：${beginnerReviewed}／教材・評価版：bb-2026-v2`,
+    `公式資料確認日：${beginnerReviewed}／章末チェック版：${beginnerTextbookVersion}／模試版：${beginnerVersion}`,
     '標準：仕組みの説明→理由付き例題→独立練習→総合確認→40分模試。独自教材・公式の認定や合格保証はありません。',
     '前提：四則計算、紙と電卓。会計の予備知識は不要。',
     '', '学習時間の見積り（実測値・公式推奨時間ではありません）',
@@ -25,7 +25,7 @@ export function beginnerCurriculum(rows) {
       lines.push(`    ${l.data.order}. [${l.data.stableId}] ${l.data.title}／${l.data.minutes}分`,
         `      目標：${l.data.objectives.join('／')}`,`      前提：${l.data.prerequisite}`,
         `      本文：/qualifications/boki-beginner/${l.data.stableId}/`,
-        `      理解度チェック：[${l.data.stableId}-check] ${beginnerBank[l.data.stableId].length}問`,
+        `      理解度チェック：[${l.data.stableId}-check] ${beginnerLessonQuestions(l.data.stableId).length}問`,
         `      用語：${l.data.glossary.map(g=>g.term).join('・')}`,
         `      次：${next?.data.stableId ?? 'boki-beginner-review-all'}`,
         '      復習：翌日に例題を見ずに解く。1週間後に間違えた問題と理由を再確認。');

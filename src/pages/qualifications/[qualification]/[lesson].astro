@@ -7,6 +7,7 @@ import Assessment from '../../../components/Assessment.astro';
 import IpWorkbench from '../../../components/IpWorkbench.astro';
 import IpControlChart from '../../../components/IpControlChart.astro';
 import IpReferenceExplorer from '../../../components/IpReferenceExplorer.astro';
+import BokiClosingLab from '../../../components/BokiClosingLab.astro';
 import { ipSource, units } from '../../../data/it-passport';
 import { allAssessments } from '../../../data/assessments';
 import { bokiCourse } from '../../../data/bookkeeping';
@@ -191,6 +192,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
       </nav>
       <div class:list={['prose', 'lesson-content', { 'ip-lesson-content': q.id === 'it-passport' }]}>
         <Content />
+        {q.id === 'boki-beginner' && d.stableId === 'bb2-integration' && <BokiClosingLab />}
         {q.id === 'it-passport' && d.stableId === 'ip-analysis' && <IpControlChart />}
         {q.id === 'it-passport' && d.stableId === 'ip-reading-spreadsheets' && <IpReferenceExplorer />}
         {q.id === 'it-passport' && ['ip-finance', 'ip-project', 'ip-binary'].includes(d.stableId) && <IpWorkbench lesson={d.stableId} />}
