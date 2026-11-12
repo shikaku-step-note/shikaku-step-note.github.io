@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
+import ContactForm from '../components/ContactForm.astro';
 import { href } from '../lib/site';
 import { availabilityText } from '../data/qualifications';
 export async function getStaticPaths() {
@@ -23,6 +24,7 @@ const pages = await getCollection('pages');
     </header>
     <div class="info-layout">
       <article class="prose">
+        {page.id === 'contact' && <ContactForm />}
         <Content />
         {['about', 'faq', 'editorial', 'guide'].includes(page.id) && (
           <aside class="notice compact">
