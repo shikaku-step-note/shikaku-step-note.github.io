@@ -83,7 +83,8 @@ explanation: 正解の理由と考え方。
 
 - 本文とメタデータ：`src/content/lessons/ip-*.md`。YAMLフロントマターの`unit`、`syllabus`、`objectives`、`glossary`等を編集します。
 - 1レッスンの理解度チェック3問と総合確認用2問：`src/data/ip-questions.json`。キーはレッスンの固定IDです。
-- 独自模試100問：`src/data/ip-mock.json`。現行の35/20/45問、120分を参考にしています。全問各1点で、IRT評価点・合否は再現しません。
+- 入力式の練習は `src/data/ip-applied.json` と `src/data/ip-applied-review.json`。レッスン・採点方式を変える場合は、既存IDと過去版の記録を保ち、変更した評価だけ版を上げます。
+- 独自模試2回（各100問）：`src/data/ip-mock.json` と `src/data/ip-mock-02.json`。現行の35/20/45問、120分を参考にしています。全問各1点で、IRT評価点・合否は再現しません。
 - 分類・公式資料・問題版・テスト生成：`src/data/it-passport.ts`。用語テストは本文の用語定義から生成し、総復習は各ユニットの問題を再利用します。
 - 出題内容や正解、採点を変更したら`ipVersion`を更新してください。旧版の履歴は残り、新版の得点へ読み替えません。
 - `pnpm curriculum`で`public/downloads/it-passport-curriculum.txt`を再生成します。`pnpm build`でも自動生成します。TXTを手編集せず、元データを修正します。

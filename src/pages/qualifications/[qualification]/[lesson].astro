@@ -4,6 +4,7 @@ import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
 import Share from '../../../components/Share.astro';
 import Assessment from '../../../components/Assessment.astro';
+import IpWorkbench from '../../../components/IpWorkbench.astro';
 import { ipSource, units } from '../../../data/it-passport';
 import { allAssessments } from '../../../data/assessments';
 import { bokiCourse } from '../../../data/bookkeeping';
@@ -188,6 +189,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
       </nav>
       <div class="prose lesson-content">
         <Content />
+        {q.id === 'it-passport' && ['ip-finance', 'ip-project', 'ip-binary'].includes(d.stableId) && <IpWorkbench lesson={d.stableId} />}
       </div>
       {d.glossary.length > 0 && (
         <section class="prose lesson-glossary">

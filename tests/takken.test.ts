@@ -50,7 +50,7 @@ test('34 substantive lessons cover the seven official domains, with stable ident
 });
 test('registries remain isolated and every new choice and explanation links to its own lesson', () => {
   assert.equal(assessments.length, 54);
-  assert.equal(ipAssessments(lessons).length, 86);
+  assert.equal(ipAssessments(lessons).length, 88);
   assert.equal(
     bokiAssessments(lessons).filter(
       (a) => !['boki-beginner', 'cost-beginner', 'boki-3'].includes(a.qualification),

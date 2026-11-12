@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
 import { units, syllabusItems, ipSources, fieldNames } from '../../../data/it-passport';
 import { href } from '../../../lib/site';
+import notes from '../../../data/ip-coverage-notes.json';
 const lessons = (
   await getCollection('lessons', (l) => l.data.qualification === 'it-passport' && !!l.data.unit)
 ).sort((a, b) => a.data.order - b.data.order);
@@ -19,11 +20,11 @@ const lessons = (
   <article class="container page-section prose wide-prose">
     <h1>シラバス対応表と公式出典</h1>
     <p>
-      この基礎コースは現行のITパスポート試験シラバスVer.6.5を対象にしています。ITパスポート内の公式な級分けはなく、3分野・23中分類を学習上のユニットとして整理しています。
+      この学習コースは現行のITパスポート試験シラバスVer.6.5を対象にしています。ITパスポート内の公式な級分けはなく、3分野・23中分類を学習上のユニットとして整理しています。
     </p>
     <h2>範囲と制約</h2>
     <p>
-      63の番号付き項目すべてに本文と理解度チェックの対応先があります。ただし、対応先があることは公式資料に列挙された全用語例を個別に詳説していることを意味しません。基礎の概念と代表的な適用・計算を学ぶ教材です。公開問題や公式シラバスの用語例も確認してください。
+      63の番号付き項目すべてに本文と理解度チェックの対応先があります。ただし、対応先があることは公式資料に列挙された全用語例を個別に詳説していることを意味しません。基礎の概念と代表的な適用・計算を学ぶ教材です。追加で練習したい範囲は、管理図・仮説検定の細目、法務の個別要件、複数資料を一度に読む総合問題などです。IPAの公開問題や公式シラバスの用語例も確認してください。
     </p>
     <p>
       問題・解説・図表は当サイトの独自作成です。専門資格を持つ監修者が承認した教材とは表示していません。AIの作成支援を使用し、構成、答え、計算、出典との整合を点検しています。難易度の統計的な校正や本試験との得点の等化は実施していません。
@@ -33,7 +34,7 @@ const lessons = (
     </p>
     <h2>学習ステージと時間</h2>
     <p>
-      本文→理解度チェック→ユニットの用語・総合確認→用語の総復習→3分野の総復習→模試の順を推奨します。所要時間と12〜14週間の計画は当サイトの提案です。公式の必要学習時間ではありません。
+      本文→理解度チェック→ユニットの用語・総合確認→用語の総復習→3分野の総復習→模試の順を推奨します。所要時間と学習計画は当サイトの提案です。公式の必要学習時間ではありません。
     </p>
     <p>
       <a href={href('downloads/it-passport-curriculum.txt')} download>
@@ -78,6 +79,7 @@ const lessons = (
                     <tr>
                       <th scope="row">
                         {n}．{syllabusItems[n - 1]}
+                        <p>{notes[n - 1]}</p>
                       </th>
                       <td>
                         {lessons
@@ -100,7 +102,7 @@ const lessons = (
     ))}
     <h2>更新・訂正</h2>
     <p>
-      教材の確認日は2026-10-25です。法令はこの日を基準に基本原則を確認しています。個別の法的・会計上の判断を提供するものではありません。
+      出典ごとの確認日は上の一覧をご覧ください。制度や法令の適用は受験時の公式資料をご確認ください。個別の法的・会計上の判断を提供するものではありません。
       <a href={href('editorial/')}>編集方針</a>と<a href={href('contact/')}>訂正の連絡方法</a>をご覧ください。
     </p>
     <a href={href('qualifications/it-passport/')}>コースへ戻る</a>

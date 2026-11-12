@@ -1,0 +1,1087 @@
+{
+  "syllabus": "6.5",
+  "status": "Baseline mapping only; not proof of skill or exam readiness",
+  "rows": [
+    {
+      "id": 1,
+      "title": "経営・組織論",
+      "lessons": [
+        {
+          "id": "ip-organization",
+          "objectives": [
+            "経営資源と組織の役割を説明する",
+            "PDCAとBCPを業務に当てはめる"
+          ],
+          "bodyChars": 773,
+          "assessment": "ip-organization-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 2,
+      "title": "業務分析・データ利活用",
+      "lessons": [
+        {
+          "id": "ip-analysis",
+          "objectives": [
+            "分析の目的に合う図を選ぶ",
+            "相関と因果を区別する"
+          ],
+          "bodyChars": 1019,
+          "assessment": "ip-analysis-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 3,
+      "title": "会計・財務",
+      "lessons": [
+        {
+          "id": "ip-finance",
+          "objectives": [
+            "財務三表の役割を区別する",
+            "利益と損益分岐点を計算する"
+          ],
+          "bodyChars": 1694,
+          "assessment": "ip-finance-check",
+          "items": 5
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 4,
+      "title": "知的財産権",
+      "lessons": [
+        {
+          "id": "ip-rights",
+          "objectives": [
+            "保護対象に合う権利を選ぶ",
+            "利用許諾と著作権を区別する"
+          ],
+          "bodyChars": 1003,
+          "assessment": "ip-rights-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 5,
+      "title": "セキュリティ関連法規",
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "bodyChars": 1032,
+          "assessment": "ip-law-ethics-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 6,
+      "title": "労働関連・取引関連法規",
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "bodyChars": 1032,
+          "assessment": "ip-law-ethics-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 7,
+      "title": "その他の法律・ガイドライン・情報倫理",
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "bodyChars": 1032,
+          "assessment": "ip-law-ethics-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 8,
+      "title": "標準化関連",
+      "lessons": [
+        {
+          "id": "ip-standards",
+          "objectives": [
+            "公的標準と事実上の標準を区別する",
+            "標準化の効果と限界を説明する"
+          ],
+          "bodyChars": 705,
+          "assessment": "ip-standards-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 9,
+      "title": "経営戦略手法",
+      "lessons": [
+        {
+          "id": "ip-strategy",
+          "objectives": [
+            "戦略分析の軸を使い分ける",
+            "KGIとKPIを結び付ける"
+          ],
+          "bodyChars": 654,
+          "assessment": "ip-strategy-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 10,
+      "title": "マーケティング",
+      "lessons": [
+        {
+          "id": "ip-marketing",
+          "objectives": [
+            "STPと4Pを使って施策を整理する",
+            "ERP・SCM・CRMの役割を区別する"
+          ],
+          "bodyChars": 713,
+          "assessment": "ip-marketing-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 11,
+      "title": "ビジネス戦略と目標・評価",
+      "lessons": [
+        {
+          "id": "ip-strategy",
+          "objectives": [
+            "戦略分析の軸を使い分ける",
+            "KGIとKPIを結び付ける"
+          ],
+          "bodyChars": 654,
+          "assessment": "ip-strategy-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 12,
+      "title": "経営管理システム",
+      "lessons": [
+        {
+          "id": "ip-marketing",
+          "objectives": [
+            "STPと4Pを使って施策を整理する",
+            "ERP・SCM・CRMの役割を区別する"
+          ],
+          "bodyChars": 713,
+          "assessment": "ip-marketing-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 13,
+      "title": "技術開発戦略の立案・技術開発計画",
+      "lessons": [
+        {
+          "id": "ip-tech-business",
+          "objectives": [
+            "技術ロードマップと研究開発を説明する",
+            "事業に合うシステムの役割を選ぶ"
+          ],
+          "bodyChars": 682,
+          "assessment": "ip-tech-business-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 14,
+      "title": "ビジネスシステム",
+      "lessons": [
+        {
+          "id": "ip-tech-business",
+          "objectives": [
+            "技術ロードマップと研究開発を説明する",
+            "事業に合うシステムの役割を選ぶ"
+          ],
+          "bodyChars": 682,
+          "assessment": "ip-tech-business-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 15,
+      "title": "エンジニアリングシステム",
+      "lessons": [
+        {
+          "id": "ip-engineering-iot",
+          "objectives": [
+            "設計と生産を支えるシステムを区別する",
+            "IoTの計測・通信・制御を説明する"
+          ],
+          "bodyChars": 688,
+          "assessment": "ip-engineering-iot-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 16,
+      "title": "e-ビジネス",
+      "lessons": [
+        {
+          "id": "ip-ecommerce",
+          "objectives": [
+            "取引の組合せと事業モデルを区別する",
+            "電子商取引の指標を計算する"
+          ],
+          "bodyChars": 726,
+          "assessment": "ip-ecommerce-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 17,
+      "title": "IoTシステム・組込みシステム",
+      "lessons": [
+        {
+          "id": "ip-engineering-iot",
+          "objectives": [
+            "設計と生産を支えるシステムを区別する",
+            "IoTの計測・通信・制御を説明する"
+          ],
+          "bodyChars": 688,
+          "assessment": "ip-engineering-iot-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 18,
+      "title": "情報システム戦略",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "bodyChars": 740,
+          "assessment": "ip-system-strategy-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 19,
+      "title": "業務プロセス",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "bodyChars": 740,
+          "assessment": "ip-system-strategy-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 20,
+      "title": "ソリューションビジネス",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "bodyChars": 740,
+          "assessment": "ip-system-strategy-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 21,
+      "title": "システム活用促進・評価",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "bodyChars": 740,
+          "assessment": "ip-system-strategy-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 22,
+      "title": "システム化計画",
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "bodyChars": 821,
+          "assessment": "ip-procurement-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 23,
+      "title": "要件定義",
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "bodyChars": 821,
+          "assessment": "ip-procurement-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 24,
+      "title": "調達計画・実施",
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "bodyChars": 821,
+          "assessment": "ip-procurement-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 25,
+      "title": "システム開発技術",
+      "lessons": [
+        {
+          "id": "ip-development",
+          "objectives": [
+            "開発工程とテストの目的を区別する",
+            "安全な移行と保守を計画する"
+          ],
+          "bodyChars": 667,
+          "assessment": "ip-development-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 26,
+      "title": "開発プロセス・手法",
+      "lessons": [
+        {
+          "id": "ip-agile",
+          "objectives": [
+            "ウォーターフォールと反復開発を比較する",
+            "アジャイルの役割と継続的な改善を説明する"
+          ],
+          "bodyChars": 726,
+          "assessment": "ip-agile-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 27,
+      "title": "プロジェクトマネジメント",
+      "lessons": [
+        {
+          "id": "ip-project",
+          "objectives": [
+            "WBSとスケジュールを関連付ける",
+            "制約とリスクを踏まえて計画する"
+          ],
+          "bodyChars": 1521,
+          "assessment": "ip-project-check",
+          "items": 5
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 28,
+      "title": "サービスマネジメント",
+      "lessons": [
+        {
+          "id": "ip-services",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "bodyChars": 672,
+          "assessment": "ip-services-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 29,
+      "title": "サービスマネジメントシステム",
+      "lessons": [
+        {
+          "id": "ip-services",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "bodyChars": 672,
+          "assessment": "ip-services-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 30,
+      "title": "ファシリティマネジメント",
+      "lessons": [
+        {
+          "id": "ip-services",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "bodyChars": 672,
+          "assessment": "ip-services-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 31,
+      "title": "システム監査",
+      "lessons": [
+        {
+          "id": "ip-audit",
+          "objectives": [
+            "監査の独立性と証拠を説明する",
+            "内部統制の目的と限界を理解する"
+          ],
+          "bodyChars": 647,
+          "assessment": "ip-audit-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 32,
+      "title": "内部統制",
+      "lessons": [
+        {
+          "id": "ip-audit",
+          "objectives": [
+            "監査の独立性と証拠を説明する",
+            "内部統制の目的と限界を理解する"
+          ],
+          "bodyChars": 647,
+          "assessment": "ip-audit-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 33,
+      "title": "離散数学",
+      "lessons": [
+        {
+          "id": "ip-binary",
+          "objectives": [
+            "位取りと情報量を計算する",
+            "集合・論理演算を具体例で使う"
+          ],
+          "bodyChars": 1764,
+          "assessment": "ip-binary-check",
+          "items": 5
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 34,
+      "title": "応用数学",
+      "lessons": [
+        {
+          "id": "ip-statistics",
+          "objectives": [
+            "代表値と散らばりを説明する",
+            "確率・期待値を計算する"
+          ],
+          "bodyChars": 678,
+          "assessment": "ip-statistics-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 35,
+      "title": "情報に関する理論",
+      "lessons": [
+        {
+          "id": "ip-ai-data",
+          "objectives": [
+            "データとAIの学習・評価を区別する",
+            "生成AIの限界と安全な利用を説明する"
+          ],
+          "bodyChars": 779,
+          "assessment": "ip-ai-data-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 36,
+      "title": "データ構造",
+      "lessons": [
+        {
+          "id": "ip-algorithms",
+          "objectives": [
+            "順次・分岐・反復を追跡する",
+            "探索とデータ構造を使い分ける"
+          ],
+          "bodyChars": 624,
+          "assessment": "ip-algorithms-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 37,
+      "title": "アルゴリズムとプログラミング",
+      "lessons": [
+        {
+          "id": "ip-algorithms",
+          "objectives": [
+            "順次・分岐・反復を追跡する",
+            "探索とデータ構造を使い分ける"
+          ],
+          "bodyChars": 624,
+          "assessment": "ip-algorithms-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 38,
+      "title": "プログラム言語",
+      "lessons": [
+        {
+          "id": "ip-languages",
+          "objectives": [
+            "言語の役割を区別する",
+            "HTML・CSS・JSON等の用途を説明する"
+          ],
+          "bodyChars": 848,
+          "assessment": "ip-languages-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 39,
+      "title": "その他の言語",
+      "lessons": [
+        {
+          "id": "ip-languages",
+          "objectives": [
+            "言語の役割を区別する",
+            "HTML・CSS・JSON等の用途を説明する"
+          ],
+          "bodyChars": 848,
+          "assessment": "ip-languages-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 40,
+      "title": "プロセッサ",
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "bodyChars": 691,
+          "assessment": "ip-computer-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 41,
+      "title": "メモリ",
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "bodyChars": 691,
+          "assessment": "ip-computer-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 42,
+      "title": "入出力デバイス",
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "bodyChars": 691,
+          "assessment": "ip-computer-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 43,
+      "title": "システムの構成",
+      "lessons": [
+        {
+          "id": "ip-architecture",
+          "objectives": [
+            "冗長化と負荷分散を区別する",
+            "稼働率と性能指標を計算する"
+          ],
+          "bodyChars": 735,
+          "assessment": "ip-architecture-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 44,
+      "title": "システムの評価指標",
+      "lessons": [
+        {
+          "id": "ip-architecture",
+          "objectives": [
+            "冗長化と負荷分散を区別する",
+            "稼働率と性能指標を計算する"
+          ],
+          "bodyChars": 735,
+          "assessment": "ip-architecture-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 45,
+      "title": "オペレーティングシステム",
+      "lessons": [
+        {
+          "id": "ip-os-files",
+          "objectives": [
+            "OSの資源管理を説明する",
+            "ファイルの経路と権限を扱う"
+          ],
+          "bodyChars": 689,
+          "assessment": "ip-os-files-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 46,
+      "title": "ファイルシステム",
+      "lessons": [
+        {
+          "id": "ip-os-files",
+          "objectives": [
+            "OSの資源管理を説明する",
+            "ファイルの経路と権限を扱う"
+          ],
+          "bodyChars": 689,
+          "assessment": "ip-os-files-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 47,
+      "title": "オフィスツール",
+      "lessons": [
+        {
+          "id": "ip-office-oss",
+          "objectives": [
+            "表計算の参照と集計を説明する",
+            "OSSの利用条件と保守を確認する"
+          ],
+          "bodyChars": 757,
+          "assessment": "ip-office-oss-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 48,
+      "title": "オープンソースソフトウェア",
+      "lessons": [
+        {
+          "id": "ip-office-oss",
+          "objectives": [
+            "表計算の参照と集計を説明する",
+            "OSSの利用条件と保守を確認する"
+          ],
+          "bodyChars": 757,
+          "assessment": "ip-office-oss-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 49,
+      "title": "ハードウェア（コンピュータ・入出力装置）",
+      "lessons": [
+        {
+          "id": "ip-hardware",
+          "objectives": [
+            "機器の用途と制約を説明する",
+            "接続・保守・環境への配慮を考える"
+          ],
+          "bodyChars": 623,
+          "assessment": "ip-hardware-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 50,
+      "title": "情報デザイン",
+      "lessons": [
+        {
+          "id": "ip-design",
+          "objectives": [
+            "情報の構造と見た目の役割を説明する",
+            "アクセシビリティと誤操作防止を考える"
+          ],
+          "bodyChars": 696,
+          "assessment": "ip-design-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 51,
+      "title": "インタフェース設計",
+      "lessons": [
+        {
+          "id": "ip-design",
+          "objectives": [
+            "情報の構造と見た目の役割を説明する",
+            "アクセシビリティと誤操作防止を考える"
+          ],
+          "bodyChars": 696,
+          "assessment": "ip-design-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 52,
+      "title": "マルチメディア技術",
+      "lessons": [
+        {
+          "id": "ip-media",
+          "objectives": [
+            "デジタル化と容量を計算する",
+            "メディア形式と圧縮の違いを説明する"
+          ],
+          "bodyChars": 731,
+          "assessment": "ip-media-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 53,
+      "title": "マルチメディア応用",
+      "lessons": [
+        {
+          "id": "ip-media",
+          "objectives": [
+            "デジタル化と容量を計算する",
+            "メディア形式と圧縮の違いを説明する"
+          ],
+          "bodyChars": 731,
+          "assessment": "ip-media-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 54,
+      "title": "データベース方式",
+      "lessons": [
+        {
+          "id": "ip-database",
+          "objectives": [
+            "主キーと外部キーの役割を説明する",
+            "重複による更新の不整合を防ぐ"
+          ],
+          "bodyChars": 859,
+          "assessment": "ip-database-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 55,
+      "title": "データベース設計",
+      "lessons": [
+        {
+          "id": "ip-database",
+          "objectives": [
+            "主キーと外部キーの役割を説明する",
+            "重複による更新の不整合を防ぐ"
+          ],
+          "bodyChars": 859,
+          "assessment": "ip-database-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 56,
+      "title": "データ操作",
+      "lessons": [
+        {
+          "id": "ip-sql-transactions",
+          "objectives": [
+            "検索・集計の基本を読む",
+            "同時更新と復旧の必要性を説明する"
+          ],
+          "bodyChars": 751,
+          "assessment": "ip-sql-transactions-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 57,
+      "title": "トランザクション処理",
+      "lessons": [
+        {
+          "id": "ip-sql-transactions",
+          "objectives": [
+            "検索・集計の基本を読む",
+            "同時更新と復旧の必要性を説明する"
+          ],
+          "bodyChars": 751,
+          "assessment": "ip-sql-transactions-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 58,
+      "title": "ネットワーク方式",
+      "lessons": [
+        {
+          "id": "ip-network",
+          "objectives": [
+            "通信機器と接続範囲を区別する",
+            "帯域と転送時間を計算する"
+          ],
+          "bodyChars": 685,
+          "assessment": "ip-network-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 59,
+      "title": "通信プロトコル",
+      "lessons": [
+        {
+          "id": "ip-protocols",
+          "objectives": [
+            "代表的なプロトコルの役割を説明する",
+            "アドレスと名前の関係を理解する"
+          ],
+          "bodyChars": 751,
+          "assessment": "ip-protocols-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 60,
+      "title": "ネットワーク応用",
+      "lessons": [
+        {
+          "id": "ip-protocols",
+          "objectives": [
+            "代表的なプロトコルの役割を説明する",
+            "アドレスと名前の関係を理解する"
+          ],
+          "bodyChars": 751,
+          "assessment": "ip-protocols-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 61,
+      "title": "情報セキュリティ",
+      "lessons": [
+        {
+          "id": "ip-security-risk",
+          "objectives": [
+            "機密性・完全性・可用性を説明する",
+            "リスク対応と事故対応を考える"
+          ],
+          "bodyChars": 657,
+          "assessment": "ip-security-risk-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 62,
+      "title": "情報セキュリティ管理",
+      "lessons": [
+        {
+          "id": "ip-security-risk",
+          "objectives": [
+            "機密性・完全性・可用性を説明する",
+            "リスク対応と事故対応を考える"
+          ],
+          "bodyChars": 657,
+          "assessment": "ip-security-risk-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    },
+    {
+      "id": 63,
+      "title": "情報セキュリティ対策・情報セキュリティ実装技術",
+      "lessons": [
+        {
+          "id": "ip-security-controls",
+          "objectives": [
+            "代表的な攻撃と対策を対応させる",
+            "予防・検知・復旧を組み合わせる"
+          ],
+          "bodyChars": 754,
+          "assessment": "ip-security-controls-check",
+          "items": 3
+        },
+        {
+          "id": "ip-cryptography",
+          "objectives": [
+            "共通鍵と公開鍵を区別する",
+            "署名と証明書の役割を説明する"
+          ],
+          "bodyChars": 692,
+          "assessment": "ip-cryptography-check",
+          "items": 3
+        }
+      ],
+      "semanticReview": "pending"
+    }
+  ]
+}

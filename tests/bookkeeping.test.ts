@@ -71,7 +71,7 @@ test('five bookkeeping tracks have substantive lessons, distinct identifiers and
   assert.ok(
     entries.filter((l) => l.data.stableId.startsWith('boki-')).every((l) => l.data.archived && l.data.sample),
   );
-  assert.equal(ipAssessments(entries).length, 86, 'Bookkeeping must not leak into the IP registry');
+  assert.equal(ipAssessments(entries).length, 88, 'Bookkeeping must not leak into the IP registry');
   assert.equal(new Set(allAssessments(entries).map((a) => a.id)).size, allAssessments(entries).length);
 });
 test('all lesson, glossary, review and mock questions are valid and link to their own course', () => {

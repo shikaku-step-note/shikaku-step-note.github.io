@@ -5,9 +5,9 @@
   'title': 'データベースの設計と正規化',
   'description': '主キーと外部キーの役割を説明する。重複による更新の不整合を防ぐ。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 31,
-  'minutes': 30,
+  'minutes': 45,
   'sample': false,
-  'updated': '2026-10-25',
+  'updated': '2026-11-12',
   'unit': 21,
   'syllabus': [54, 55],
   'objectives': ['主キーと外部キーの役割を説明する', '重複による更新の不整合を防ぐ'],
@@ -51,3 +51,15 @@
 ## まとめ
 
 データが何を表すか、何で識別するか、どの情報に依存するかを順に確認します。
+
+## 注文データから、何を一度だけ保存するか考える
+
+注文の行ごとに顧客名と住所を繰り返すと、引越しのとき一部だけ更新されることがあります。顧客表に顧客IDと現在の住所を保存し、注文表から顧客IDで参照すれば、同じ現在住所を重複して管理せずに済みます。ただし過去の発送先を証跡として残したいなら、注文時の住所は「その注文の情報」として持つ理由があります。何が同じ事実かを考えて分けます。
+
+主キーは行を一意に識別します。名前が同じ顧客がいるなら、顧客名を一意なキーとみなせません。外部キーは他の表の行を参照するために使います。一人が複数注文するなら、注文表の顧客IDは複数行に現れ得ます。顧客表では一意、注文表では重複してよい、という違いです。
+
+注文に複数商品を持たせるなら注文と商品を明細表で結びます。明細番号を注文ごとに付けるなら、注文IDと明細番号を組にして行を識別する方法があります。どの属性がどの対象の事実かを決め、登録・更新・削除のとき何が壊れないかを検討します。
+
+<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="顧客と注文をIDで結ぶ, 顧客表, 顧客ID C07, 注文表, 注文ID O21, 参照, 顧客ID C07"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">顧客表</text><text x="68" y="51">顧客ID C07</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">注文表</text><text x="211" y="51">注文ID O21</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">参照</text><text x="354" y="51">顧客ID C07</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>注文表の顧客IDが顧客表の行を参照します。注文IDは注文自体を識別します。</figcaption></figure>
+
+<details><summary>注文表の顧客IDが重複したら、必ず設計ミス？</summary><p>一人が何度も注文する設計なら重複して構いません。顧客表で一意であることと区別します。</p></details>

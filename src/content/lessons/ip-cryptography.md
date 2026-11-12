@@ -5,9 +5,9 @@
   'title': '暗号・電子署名と証明書',
   'description': '共通鍵と公開鍵を区別する。署名と証明書の役割を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 37,
-  'minutes': 30,
+  'minutes': 45,
   'sample': false,
-  'updated': '2026-10-25',
+  'updated': '2026-11-12',
   'unit': 23,
   'syllabus': [63],
   'objectives': ['共通鍵と公開鍵を区別する', '署名と証明書の役割を説明する'],
@@ -45,3 +45,15 @@
 ## まとめ
 
 誰の鍵を、何の目的で、どちら側が使うかを文章で説明します。暗号方式と鍵の管理は両方が重要です。
+
+## 暗号化と署名では、守る目的が異なる
+
+社外へ資料を送るとき、読める相手を限りたいなら暗号化を考えます。文書の内容が送信者のものか、途中で変わっていないかを確かめたいなら署名を考えます。署名を付けただけで文書の内容が見えなくなるわけではありません。課題が機密性か、真正性や完全性の確認かを分けます。
+
+共通鍵方式では暗号化と復号に共通の秘密を使うため、その鍵をどう共有し管理するかが課題です。公開鍵方式で受取人だけに読めるようにする典型例では、受取人の公開鍵で暗号化し、その受取人の秘密鍵で復号します。一方、電子署名は署名者の秘密鍵で作り、署名者の公開鍵で検証します。鍵の持ち主と処理の向きを図に書くと取り違えにくくなります。
+
+ハッシュは入力から一定長の値を求め、変更の検出などに利用します。暗号文を元に戻す復号のように原文を求める用途ではありません。配布元と同じ場所にある照合値も書き換えられる場合には、値が一致しただけで配布元を確認できません。証明書や信頼できる別経路など、比較対象を信頼できる条件が必要です。
+
+<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="署名と検証の鍵, 署名者, 秘密鍵, 送付, 文書と署名, 検証者, 署名者の公開鍵"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">署名者</text><text x="68" y="51">秘密鍵</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">送付</text><text x="211" y="51">文書と署名</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">検証者</text><text x="354" y="51">署名者の公開鍵</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>署名は相手と改変の確認に使います。文書を秘密にする仕組みとは異なります。</figcaption></figure>
+
+<details><summary>送信者の公開鍵を使えば、受信者だけが文書を読める？</summary><p>受信者だけに読ませる典型的な公開鍵暗号では、受信者の公開鍵で暗号化します。署名の検証に使う鍵と分けます。</p></details>

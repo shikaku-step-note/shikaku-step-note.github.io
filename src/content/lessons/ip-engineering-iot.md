@@ -5,9 +5,9 @@
   'title': '生産・設計とIoTシステム',
   'description': '設計と生産を支えるシステムを区別する。IoTの計測・通信・制御を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 10,
-  'minutes': 25,
+  'minutes': 40,
   'sample': false,
-  'updated': '2026-10-25',
+  'updated': '2026-11-12',
   'unit': 5,
   'syllabus': [15, 17],
   'objectives': ['設計と生産を支えるシステムを区別する', 'IoTの計測・通信・制御を説明する'],
@@ -45,3 +45,15 @@ IoTではセンサが温度や位置などを計測し、通信でデータを�
 ## まとめ
 
 設計・解析・製造の役割と、計測・通信・処理・制御の流れを分けると、略語を業務の場面へ結び付けられます。
+
+## 設計データが現場の制御になるまで
+
+金属部品の形状をCADで作り、負荷をCAEで試算し、加工経路をCAMで決める場合を考えます。形状を描く、物理的な挙動を評価する、機械をどう動かすかを作る、という三つは違う工程です。CAEの結果は材料や拘束条件に依存するので、実物の試験も条件をそろえて比較します。
+
+設備に温度センサーを付けると、値を測って通信し、決めた条件で通知や停止を行えます。危険時の停止は通信が切れても必要です。装置側に停止判断を残し、長期の傾向分析をクラウドに置けば、応答時間と集計能力を分けて設計できます。測定間隔が長いと短い異常を見逃す場合があり、逆に短いと電池や通信量に影響します。どの変化を検出したいかで間隔を決めます。
+
+入力のセンサー、処理、出力のアクチュエータという区別を使うと、故障点を推定できます。表示は上昇しているのに冷却ファンが動かないなら、測定、判定、出力のどこが止まったかをログと実測で切り分けます。
+
+<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="センサーから装置制御まで, 入力, 温度測定, 判定, 装置側, 出力, 冷却・停止"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">入力</text><text x="68" y="51">温度測定</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">判定</text><text x="211" y="51">装置側</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">出力</text><text x="354" y="51">冷却・停止</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>通信断でも必要な停止の判断は、装置側で行えるようにします。</figcaption></figure>
+
+<details><summary>通信断でも危険温度で停止させるには？</summary><p>停止判断を装置側で行える設計にします。クラウドへの送信成功を停止の条件にしません。</p></details>

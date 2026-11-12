@@ -35,14 +35,19 @@ test('current curriculum covers all 63 official items and all 23 units, with val
     assert.equal(questionBank[l.data.stableId]!.lesson.length, 3);
     assert.equal(questionBank[l.data.stableId]!.review.length, 2);
   }
-  assert.equal(assessments.length, 86);
+  assert.equal(assessments.length, 88);
   assert.equal(assessments.filter((a) => a.kind === 'glossary').length, 24);
-  assert.equal(assessments.filter((a) => a.kind === 'review').length, 24);
+  assert.equal(assessments.filter((a) => a.kind === 'review').length, 25);
   const ids = new Set(lessons.map((l) => l.data.stableId));
   for (const a of assessments) {
     assert.ok(a.questions.length);
     assert.equal(new Set(a.questions.map((q) => q.id)).size, a.questions.length);
     for (const q of a.questions) {
+      if (q.input === 'number' || q.input === 'text') {
+        assert.ok(a.kind === 'lesson' || a.id === 'ip-applied-review');
+        assert.ok(q.accepted?.length && q.explanation.length > 8 && ids.has(q.lesson));
+        continue;
+      }
       assert.equal(q.options.length, 4);
       assert.equal(new Set(q.options).size, 4);
       assert.ok(q.options[q.answer]);

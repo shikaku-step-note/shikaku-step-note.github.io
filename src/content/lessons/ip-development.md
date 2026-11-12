@@ -5,9 +5,9 @@
   'title': 'システム開発とテスト・移行',
   'description': '開発工程とテストの目的を区別する。安全な移行と保守を計画する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 14,
-  'minutes': 30,
+  'minutes': 45,
   'sample': false,
-  'updated': '2026-10-25',
+  'updated': '2026-11-12',
   'unit': 8,
   'syllabus': [25],
   'objectives': ['開発工程とテストの目的を区別する', '安全な移行と保守を計画する'],
@@ -42,3 +42,15 @@
 ## まとめ
 
 どの要件をどのテストで確かめるかを結び付けます。納品だけを終点にせず、運用と変更、移行に失敗した場合まで考えましょう。
+
+## 要求から受入まで、同じ条件を追う
+
+図書の予約サービスを作るとします。利用者が予約できることは機能要求で、同時利用者が増えても応答が極端に遅くならないことは非機能要求です。要求の段階で対象と合格条件を決め、設計では画面、データ、機能の受渡しに分けます。実装後にどの試験がどの要求を確かめるかを追えるようにします。
+
+貸出上限を5冊とすると、4、5、6冊の試験で境界の判定を確認できます。判定処理自体は単体テスト、予約から通知へ渡す情報は結合テスト、全体が業務条件を満たすかはシステムテスト、利用部門が引渡しを判断する場面は受入テストです。同じ「予約が成功した」という結果でも、試験の目的が違えば確認する範囲は変わります。
+
+新しい予約ルールを入れるとき、変更箇所だけが動いても取消処理が壊れることがあります。以前正常だった操作も選び直し、変更で劣化していないか回帰テストで確かめます。運用引継ぎでは利用手順と障害時の連絡先、復旧方法を残します。
+
+<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="要求と受入確認, 要求, 予約できる, 実装, 予約処理, 受入, 利用部門で確認"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">要求</text><text x="68" y="51">予約できる</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">実装</text><text x="211" y="51">予約処理</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">受入</text><text x="354" y="51">利用部門で確認</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>承認した要求を、受入時に検証できる条件に落とし込みます。</figcaption></figure>
+
+<details><summary>機能が一つずつ正常なら、連携も正常？</summary><p>機能間のデータ形式や呼出し順は別に確認します。連携を見る試験が結合テストです。</p></details>

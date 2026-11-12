@@ -1,0 +1,1120 @@
+{
+  "ip-finance": [
+    {
+      "id": "ip-finance-apply-1",
+      "lesson": "ip-finance",
+      "field": "strategy",
+      "prompt": "固定費96,000円、1個当たりの販売単価1,100円、変動費700円とします。利益がちょうど0円になる販売数を、個数だけ入力してください。",
+      "accepted": [
+        "240"
+      ],
+      "explanation": "限界利益は1,100−700＝400円です。96,000÷400＝240個で固定費を回収できます。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-finance-apply-2",
+      "lesson": "ip-finance",
+      "field": "strategy",
+      "prompt": "固定費71,000円、単価850円、1個当たり変動費550円です。利益を少なくとも10,000円にするには最低何個売ればよいですか。個数だけ入力してください。",
+      "accepted": [
+        "270"
+      ],
+      "explanation": "1個で300円を回収できます。固定費と目標利益を合わせた81,000円を300円で割ると270個です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-finance-apply-3",
+      "lesson": "ip-finance",
+      "field": "strategy",
+      "prompt": "流動資産が270万円、流動負債が180万円、固定資産が400万円です。流動比率を、％を付けずに数字だけで入力してください。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "150"
+      ],
+      "explanation": "分子は固定資産を含めず、流動資産270万円です。270÷180×100＝150％となります。"
+    }
+  ],
+  "ip-project": [
+    {
+      "id": "ip-project-apply-1",
+      "lesson": "ip-project",
+      "field": "management",
+      "prompt": "Aは4日。A終了後、Bは7日、Cは5日で並行して進めます。両方の終了後にDを3日行います。全体の最短日数を、数字だけ入力してください。",
+      "accepted": [
+        "14"
+      ],
+      "explanation": "合流点まで4＋max(7,5)＝11日。Dを加えると14日です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-project-apply-2",
+      "lesson": "ip-project",
+      "field": "management",
+      "prompt": "ある時点のPVは80万円、EVは64万円、ACは72万円です。費用差異EV−ACを、万円単位の符号付き整数で入力してください。",
+      "accepted": [
+        "-8"
+      ],
+      "explanation": "64−72＝−8万円です。完了した仕事の予算価値に比べ、実際の支出が8万円多くなっています。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "signed": true,
+      "strictNumber": true
+    }
+  ],
+  "ip-binary": [
+    {
+      "id": "ip-binary-apply-1",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "符号なし2進数101101を10進数に変換してください。数字だけ入力してください。",
+      "accepted": [
+        "45"
+      ],
+      "explanation": "値が1になっている桁の重みを足します。32＋8＋4＋1＝45です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-binary-apply-2",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "69種類の状態を区別する固定長コードには、最低何ビット必要ですか。数字だけ入力してください。",
+      "accepted": [
+        "7"
+      ],
+      "explanation": "6ビットは64通りで不足します。7ビットなら128通りなので、最小は7です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-organization": [
+    {
+      "id": "ip-organization-apply-1",
+      "lesson": "ip-organization",
+      "field": "strategy",
+      "prompt": "担当者が自分の専門部署と案件責任者の双方から指示を受ける組織形態を、用語で答えてください。",
+      "accepted": [
+        "マトリックス組織",
+        "マトリクス組織"
+      ],
+      "explanation": "専門部署と案件の二つの指揮系統を持つ点から、マトリックス組織と判断します。",
+      "input": "text",
+      "options": [],
+      "answer": 0
+    },
+    {
+      "id": "ip-organization-apply-2",
+      "lesson": "ip-organization",
+      "field": "strategy",
+      "prompt": "停止時の代替手順を作成した後、年次訓練と連絡網の更新を続ける管理活動を、アルファベット3文字で答えてください。",
+      "accepted": [
+        "BCM",
+        "bcm"
+      ],
+      "explanation": "手順を定めた計画がBCPで、訓練や見直しによって実行可能な状態を維持する管理活動がBCMです。",
+      "input": "text",
+      "options": [],
+      "answer": 0
+    }
+  ],
+  "ip-analysis": [
+    {
+      "id": "ip-analysis-apply-1",
+      "lesson": "ip-analysis",
+      "field": "strategy",
+      "prompt": "全240件のうち上位から90件、54件、42件、残り54件（複数分類の合計）です。上位2分類の累積割合を、％を付けずに数字だけで入力してください。",
+      "accepted": [
+        "60"
+      ],
+      "explanation": "上位二分類の合計は90＋54＝144件。144÷240×100＝60％です。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "strictNumber": true
+    },
+    {
+      "id": "ip-analysis-apply-2",
+      "lesson": "ip-analysis",
+      "field": "strategy",
+      "prompt": "担当者の作業時間は75分です。特注品5件を1件9分で先に処理し、残りを1件4分の標準品に使います。標準品の最大件数を数字だけで入力してください。",
+      "accepted": [
+        "7"
+      ],
+      "explanation": "残りは75−5×9＝30分。30÷4＝7余り2なので、完了できるのは7件です。",
+      "input": "number",
+      "options": [],
+      "answer": 0,
+      "strictNumber": true
+    }
+  ],
+  "ip-rights": [
+    {
+      "id": "ip-rights-apply-1",
+      "lesson": "ip-rights",
+      "field": "strategy",
+      "prompt": "新製品の名前を、指定商品における出所表示として守る権利を答えてください。",
+      "accepted": [
+        "商標権"
+      ],
+      "explanation": "製品名で商品やサービスの出所を区別する目的には商標権を検討します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-rights-apply-2",
+      "lesson": "ip-rights",
+      "field": "strategy",
+      "prompt": "サーバにアクセスする利用者・端末について契約上必要になる場合があるクライアントアクセスライセンスの略称を答えてください。",
+      "accepted": [
+        "CAL",
+        "cal"
+      ],
+      "explanation": "CALはClient Access Licenseです。要否や数え方は製品の契約に従います。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-law-ethics": [
+    {
+      "id": "ip-law-ethics-apply-1",
+      "lesson": "ip-law-ethics",
+      "field": "strategy",
+      "prompt": "委託先が指示された連絡業務の範囲だけで顧客情報を処理します。このような業務の外部への任せ方を本文中の二字で答えてください。",
+      "accepted": [
+        "委託"
+      ],
+      "explanation": "受領側が自社営業に自由に使う場合と、指示された業務を委託される場合は別です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-law-ethics-apply-2",
+      "lesson": "ip-law-ethics",
+      "field": "strategy",
+      "prompt": "顧客や市場の信頼を得るため、経営の監督や説明責任を整える取組を何といいますか。",
+      "accepted": [
+        "コーポレートガバナンス",
+        "コーポレート・ガバナンス"
+      ],
+      "explanation": "経営活動の健全性を確保する仕組みです。単なる法令遵守の呼び名ではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-standards": [
+    {
+      "id": "ip-standards-apply-1",
+      "lesson": "ip-standards",
+      "field": "strategy",
+      "prompt": "1箱に8個入る商品の在庫が7箱です。個単位で受け取る側に送る数量を数字だけで答えてください。",
+      "accepted": [
+        "56"
+      ],
+      "explanation": "箱から個へ変換すると7×8＝56です。データ形式だけでなく単位も合わせます。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-standards-apply-2",
+      "lesson": "ip-standards",
+      "field": "strategy",
+      "prompt": "地域ごとの表示に切り替えられるようあらかじめ設計することを、本文の日本語で答えてください。",
+      "accepted": [
+        "国際化"
+      ],
+      "explanation": "切替可能な仕組みを整えるのが国際化で、特定地域向けに合わせるのが地域化です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-strategy": [
+    {
+      "id": "ip-strategy-apply-1",
+      "lesson": "ip-strategy",
+      "field": "strategy",
+      "prompt": "自社の市場占有率が30％、最大競合が40％です。自社÷最大競合で定義する相対的市場占有率を小数で入力してください。",
+      "accepted": [
+        "0.75"
+      ],
+      "explanation": "30÷40＝0.75です。差の10ポイントではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-strategy-apply-2",
+      "lesson": "ip-strategy",
+      "field": "strategy",
+      "prompt": "最終成果を測る重要目標達成指標の略称を入力してください。",
+      "accepted": [
+        "KGI",
+        "kgi"
+      ],
+      "explanation": "KGIは最終目標の達成度、KPIは過程の重要な指標です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-marketing": [
+    {
+      "id": "ip-marketing-apply-1",
+      "lesson": "ip-marketing",
+      "field": "strategy",
+      "prompt": "案内Aが800人中48件、案内Bが600人中54件です。Bの申込率を％記号なしで入力してください。",
+      "accepted": [
+        "9"
+      ],
+      "explanation": "54÷600×100＝9％。件数の差ではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-marketing-apply-2",
+      "lesson": "ip-marketing",
+      "field": "strategy",
+      "prompt": "顧客の問合せ・購入履歴を使って継続的な関係を管理する仕組みを、英字3文字で答えてください。",
+      "accepted": [
+        "CRM",
+        "crm"
+      ],
+      "explanation": "CRMは顧客関係管理です。在庫の供給網を扱うSCMとは目的が異なります。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-tech-business": [
+    {
+      "id": "ip-tech-business-apply-1",
+      "lesson": "ip-tech-business",
+      "field": "strategy",
+      "prompt": "将来の商品・サービスと、実現に必要な技術の開発時期を時間軸で整理する図を答えてください。",
+      "accepted": [
+        "技術ロードマップ",
+        "ロードマップ"
+      ],
+      "explanation": "目標時期と技術の準備・依存関係を同じ時間軸で考える資料です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-tech-business-apply-2",
+      "lesson": "ip-tech-business",
+      "field": "strategy",
+      "prompt": "年間の削減額が120万円、追加保守費が45万円です。年の純効果を万円単位で入力してください。",
+      "accepted": [
+        "75"
+      ],
+      "explanation": "120−45＝75万円です。技術の性能と事業効果は別に評価します。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-engineering-iot": [
+    {
+      "id": "ip-engineering-iot-apply-1",
+      "lesson": "ip-engineering-iot",
+      "field": "strategy",
+      "prompt": "設計した形状をもとに加工機の工具経路を用意する仕組みを英字3文字で答えてください。",
+      "accepted": [
+        "CAM",
+        "cam"
+      ],
+      "explanation": "CADは設計、CAEは解析、CAMは加工の支援です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-engineering-iot-apply-2",
+      "lesson": "ip-engineering-iot",
+      "field": "strategy",
+      "prompt": "3台の装置がそれぞれ1分に4回測定します。10分間の記録件数を数字だけで入力してください。",
+      "accepted": [
+        "120"
+      ],
+      "explanation": "装置数3×毎分4回×10分＝120件です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-ecommerce": [
+    {
+      "id": "ip-ecommerce-apply-1",
+      "lesson": "ip-ecommerce",
+      "field": "strategy",
+      "prompt": "法人が別の法人に業務用部品をオンラインで販売します。取引分類をBtoCのような表記で答えてください。",
+      "accepted": [
+        "BtoB",
+        "B2B",
+        "btob",
+        "b2b"
+      ],
+      "explanation": "売り手と買い手の双方が法人なので、企業間取引です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-ecommerce-apply-2",
+      "lesson": "ip-ecommerce",
+      "field": "strategy",
+      "prompt": "購入完了36件、訪問600件です。訪問当たり購入率を％を付けずに入力してください。",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "36÷600×100＝6％です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-system-strategy": [
+    {
+      "id": "ip-system-strategy-apply-1",
+      "lesson": "ip-system-strategy",
+      "field": "strategy",
+      "prompt": "業務の流れを根本から見直して再設計する取組を、英字3文字で答えてください。",
+      "accepted": [
+        "BPR",
+        "bpr"
+      ],
+      "explanation": "BPRは業務プロセスを抜本的に再設計する取組です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-system-strategy-apply-2",
+      "lesson": "ip-system-strategy",
+      "field": "strategy",
+      "prompt": "処理時間が平均18分から12分になりました。同じ測定条件での減少時間を分単位で入力してください。",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "18−12＝6分です。比較条件の一致が改善評価の前提です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-procurement": [
+    {
+      "id": "ip-procurement-apply-1",
+      "lesson": "ip-procurement",
+      "field": "strategy",
+      "prompt": "正式な提案依頼の前に、複数社から製品や運用条件の情報を求める文書を英字3文字で答えてください。",
+      "accepted": [
+        "RFI",
+        "rfi"
+      ],
+      "explanation": "RFIは情報提供依頼で、RFPは条件を示して提案を求める文書です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-procurement-apply-2",
+      "lesson": "ip-procurement",
+      "field": "strategy",
+      "prompt": "初期95万円、年保守27万円で4年利用します。他費用がないとき、総額を万円単位で入力してください。",
+      "accepted": [
+        "203"
+      ],
+      "explanation": "95＋27×4＝203万円です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-development": [
+    {
+      "id": "ip-development-apply-1",
+      "lesson": "ip-development",
+      "field": "management",
+      "prompt": "予約処理と通知処理のデータ受渡しを直接確認する試験を答えてください。",
+      "accepted": [
+        "結合テスト",
+        "結合試験"
+      ],
+      "explanation": "個別処理ではなく、つないだ機能の境界を調べます。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-development-apply-2",
+      "lesson": "ip-development",
+      "field": "management",
+      "prompt": "18歳以上だけ登録可能です。境界値の一つとして、登録できない年齢のうち最大のものを整数で答えてください。",
+      "accepted": [
+        "17"
+      ],
+      "explanation": "18歳は許可されます。直前の17歳では拒否される必要があります。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-agile": [
+    {
+      "id": "ip-agile-apply-1",
+      "lesson": "ip-agile",
+      "field": "management",
+      "prompt": "複数人の変更を頻繁に統合し、ビルドとテストを自動で行う考え方を英字2文字で答えてください。",
+      "accepted": [
+        "CI",
+        "ci"
+      ],
+      "explanation": "継続的インテグレーションです。自動で本番公開すること自体を指すわけではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-agile-apply-2",
+      "lesson": "ip-agile",
+      "field": "management",
+      "prompt": "利用者に試してもらい、要求を具体化するための試作物を答えてください。",
+      "accepted": [
+        "プロトタイプ"
+      ],
+      "explanation": "試作物で利用場面を観察し、要求を見直します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-services": [
+    {
+      "id": "ip-services-apply-1",
+      "lesson": "ip-services",
+      "field": "management",
+      "prompt": "対象提供時間20,000分のうち停止が60分です。可用性を％記号を付けずに入力してください。",
+      "accepted": [
+        "99.7"
+      ],
+      "explanation": "（20,000−60）÷20,000×100＝99.7％です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-services-apply-2",
+      "lesson": "ip-services",
+      "field": "management",
+      "prompt": "提供者と利用者がサービス水準を合意する文書を英字3文字で答えてください。",
+      "accepted": [
+        "SLA",
+        "sla"
+      ],
+      "explanation": "SLAでは測定対象や条件をそろえてサービス水準を合意します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-audit": [
+    {
+      "id": "ip-audit-apply-1",
+      "lesson": "ip-audit",
+      "field": "management",
+      "prompt": "申請、承認、支払の権限を一人に集中させない考え方を、本文の用語で答えてください。",
+      "accepted": [
+        "職務分離",
+        "職務の分離"
+      ],
+      "explanation": "職務分離は相互の確認を可能にし、単独での不正や誤りを抑えます。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-audit-apply-2",
+      "lesson": "ip-audit",
+      "field": "management",
+      "prompt": "異常な支払を月末に抽出して調査するのは、予防的統制と発見的統制のどちらですか。用語で答えてください。",
+      "accepted": [
+        "発見的統制",
+        "発見"
+      ],
+      "explanation": "発生後に例外を見つける働きなので発見的統制です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-statistics": [
+    {
+      "id": "ip-statistics-apply-1",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "3、5、6、8、23の中央値を数値で答えてください。",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "順に並べた五つの中央は三番目の6です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-statistics-apply-2",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "赤4枚、青4枚から戻さず2枚引くとき、赤の次に青を引く確率は4/8×4/7です。分数を小数第3位で四捨五入し、小数第2位まで入力してください。",
+      "accepted": [
+        "0.29"
+      ],
+      "explanation": "16÷56＝0.2857…なので、小数第2位までで0.29です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-ai-data": [
+    {
+      "id": "ip-ai-data-apply-1",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "陽性と予測した50件のうち真陽性は30件です。適合率を％記号なしで答えてください。",
+      "accepted": [
+        "60"
+      ],
+      "explanation": "陽性予測のうち正しい割合なので30÷50×100＝60％です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-ai-data-apply-2",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "真陽性24件、実際の陽性40件です。再現率を％記号なしで答えてください。",
+      "accepted": [
+        "60"
+      ],
+      "explanation": "実際の陽性のうち検出した割合なので24÷40×100＝60％です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-algorithms": [
+    {
+      "id": "ip-algorithms-apply-1",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "配列[9,4,2,7,10]から5未満の値だけを合計します。結果を数字で入力してください。",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "条件を満たす要素は4と2です。4＋2＝6。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-algorithms-apply-2",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "A、Bを順に積み、1件取り出し、Cを積んで1件取り出します。スタックの2回目の取出しを英字1文字で入力してください。",
+      "accepted": [
+        "C",
+        "c"
+      ],
+      "explanation": "1回目はB。次に積んだCが最後に入ったため先に出ます。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-languages": [
+    {
+      "id": "ip-languages-apply-1",
+      "lesson": "ip-languages",
+      "field": "technology",
+      "prompt": "HTMLの構造を変えずに画面幅に応じた余白・配置を指定する言語を英字3文字で答えてください。",
+      "accepted": [
+        "CSS",
+        "css"
+      ],
+      "explanation": "CSSは表示の規則を定めます。HTMLで表した構造とは役割を分けられます。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-languages-apply-2",
+      "lesson": "ip-languages",
+      "field": "technology",
+      "prompt": "ソースコードを実行前にまとめて変換する処理系を、本文の用語で答えてください。",
+      "accepted": [
+        "コンパイラ",
+        "コンパイラー"
+      ],
+      "explanation": "典型的なコンパイラは、命令を実行できる形にまとめて変換します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-computer": [
+    {
+      "id": "ip-computer-apply-1",
+      "lesson": "ip-computer",
+      "field": "technology",
+      "prompt": "24億クロックが必要な処理を毎秒30億クロックで実行します。他の待ち時間を無視した秒数を小数で入力してください。",
+      "accepted": [
+        "0.8"
+      ],
+      "explanation": "24÷30＝0.8秒です。周波数は毎秒のクロック数です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-computer-apply-2",
+      "lesson": "ip-computer",
+      "field": "technology",
+      "prompt": "一般的な主記憶が電源断で内容を失う性質を、本文の用語で答えてください。",
+      "accepted": [
+        "揮発性"
+      ],
+      "explanation": "揮発性の記憶は、電源がなくなると保持できません。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-architecture": [
+    {
+      "id": "ip-architecture-apply-1",
+      "lesson": "ip-architecture",
+      "field": "technology",
+      "prompt": "独立した稼働率0.8の2台が両方動くときだけ稼働します。全体の稼働率を小数で入力してください。",
+      "accepted": [
+        "0.64"
+      ],
+      "explanation": "直列条件なので0.8×0.8＝0.64です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-architecture-apply-2",
+      "lesson": "ip-architecture",
+      "field": "technology",
+      "prompt": "MTBFが196時間、MTTRが4時間です。単純モデルの稼働率を％記号なしで入力してください。",
+      "accepted": [
+        "98"
+      ],
+      "explanation": "196÷(196＋4)×100＝98％です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-os-files": [
+    {
+      "id": "ip-os-files-apply-1",
+      "lesson": "ip-os-files",
+      "field": "technology",
+      "prompt": "CPUやメモリなどの資源を管理する基本ソフトの略称を答えてください。",
+      "accepted": [
+        "OS",
+        "os"
+      ],
+      "explanation": "OSはハードウェア資源を管理し、アプリから利用できるようにします。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-os-files-apply-2",
+      "lesson": "ip-os-files",
+      "field": "technology",
+      "prompt": "ファイルを変更できず内容だけを見られる権限を、本文中の二字で入力してください。",
+      "accepted": [
+        "読取",
+        "読み取り"
+      ],
+      "explanation": "読取は内容を見る権限です。書込を別に管理します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-office-oss": [
+    {
+      "id": "ip-office-oss-apply-1",
+      "lesson": "ip-office-oss",
+      "field": "technology",
+      "prompt": "C3を行・列ともに固定するセル参照を記号を含めて入力してください。",
+      "accepted": [
+        "$C$3",
+        "$c$3"
+      ],
+      "explanation": "列Cと行3の前にそれぞれ$を付けます。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-office-oss-apply-2",
+      "lesson": "ip-office-oss",
+      "field": "technology",
+      "prompt": "B2が450、C2が180です。式 =B2-C2 の値を整数で入力してください。",
+      "accepted": [
+        "270"
+      ],
+      "explanation": "450−180＝270です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-hardware": [
+    {
+      "id": "ip-hardware-apply-1",
+      "lesson": "ip-hardware",
+      "field": "technology",
+      "prompt": "スキャン画像から印字文字をテキストへ変換する機能を英字3文字で答えてください。",
+      "accepted": [
+        "OCR",
+        "ocr"
+      ],
+      "explanation": "OCRは文字認識です。塗りつぶした位置を認識するOMRと区別します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-hardware-apply-2",
+      "lesson": "ip-hardware",
+      "field": "technology",
+      "prompt": "横1,800画素の画像を300 dpi相当で出力する場合、幅をインチ単位の数字で答えてください。",
+      "accepted": [
+        "6"
+      ],
+      "explanation": "1,800÷300＝6インチです。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-design": [
+    {
+      "id": "ip-design-apply-1",
+      "lesson": "ip-design",
+      "field": "technology",
+      "prompt": "20人が同じ操作を試し、16人が完了しました。達成率を％記号なしで入力してください。",
+      "accepted": [
+        "80"
+      ],
+      "explanation": "16÷20×100＝80％です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-design-apply-2",
+      "lesson": "ip-design",
+      "field": "technology",
+      "prompt": "利用者が実際の課題を操作し、達成や迷い方を観察する評価を答えてください。",
+      "accepted": [
+        "ユーザビリティテスト",
+        "ユーザビリティ評価"
+      ],
+      "explanation": "実際の利用者が目的を達成しやすいかを観察します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-media": [
+    {
+      "id": "ip-media-apply-1",
+      "lesson": "ip-media",
+      "field": "technology",
+      "prompt": "600×400画素、1画素24ビットの画像の非圧縮画素データ量をバイト単位で入力してください。",
+      "accepted": [
+        "720000"
+      ],
+      "explanation": "600×400×24÷8＝720,000バイトです。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-media-apply-2",
+      "lesson": "ip-media",
+      "field": "technology",
+      "prompt": "毎秒8,000標本、1標本8ビットのモノラル音声5秒分の標本データ量をバイト単位で入力してください。",
+      "accepted": [
+        "40000"
+      ],
+      "explanation": "8,000×8×5÷8＝40,000バイトです。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    }
+  ],
+  "ip-database": [
+    {
+      "id": "ip-database-apply-1",
+      "lesson": "ip-database",
+      "field": "technology",
+      "prompt": "顧客表の顧客IDを参照する注文表の顧客IDは、本文の用語で何と呼びますか。",
+      "accepted": [
+        "外部キー"
+      ],
+      "explanation": "別表の行を参照する外部キーです。注文自体の主キーとは役割が異なります。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-database-apply-2",
+      "lesson": "ip-database",
+      "field": "technology",
+      "prompt": "行を一意に識別するために選んだキーを答えてください。",
+      "accepted": [
+        "主キー"
+      ],
+      "explanation": "主キーは同じ表の行を一意に識別します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-sql-transactions": [
+    {
+      "id": "ip-sql-transactions-apply-1",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "在庫明細が1、4、6、8個です。4より大きい行だけの数量の合計を入力してください。",
+      "accepted": [
+        "14"
+      ],
+      "explanation": "4を含まず、6＋8＝14です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-sql-transactions-apply-2",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "失敗したトランザクションを取り消す操作を答えてください。",
+      "accepted": [
+        "ロールバック",
+        "ROLLBACK",
+        "rollback"
+      ],
+      "explanation": "ロールバックで未確定の変更を取り消します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-network": [
+    {
+      "id": "ip-network-apply-1",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "1 MB＝8 Mbitとし、54 MBを実効18 Mbit/sで送ります。所要秒数を入力してください。",
+      "accepted": [
+        "24"
+      ],
+      "explanation": "54×8÷18＝24秒です。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true
+    },
+    {
+      "id": "ip-network-apply-2",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "異なるIPネットワークへパケットを中継する機器名を答えてください。",
+      "accepted": [
+        "ルータ",
+        "ルーター"
+      ],
+      "explanation": "ネットワーク間で経路を選んで転送する機器です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-protocols": [
+    {
+      "id": "ip-protocols-apply-1",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "ホスト名に対応するIPアドレスなどを調べる仕組みを英字3文字で答えてください。",
+      "accepted": [
+        "DNS",
+        "dns"
+      ],
+      "explanation": "名前解決の仕組みです。DHCPの端末設定配布とは役割が違います。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-protocols-apply-2",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "端末へIPアドレスなどの接続設定を自動配布する仕組みを英字4文字で答えてください。",
+      "accepted": [
+        "DHCP",
+        "dhcp"
+      ],
+      "explanation": "DHCPはネットワーク設定を自動で割り当てます。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-security-risk": [
+    {
+      "id": "ip-security-risk-apply-1",
+      "lesson": "ip-security-risk",
+      "field": "technology",
+      "prompt": "サービス復旧までの時間の目標を英字3文字で入力してください。",
+      "accepted": [
+        "RTO",
+        "rto"
+      ],
+      "explanation": "RTOは復旧までの時間の目標で、RPOは復旧するデータ時点の目標です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-security-risk-apply-2",
+      "lesson": "ip-security-risk",
+      "field": "technology",
+      "prompt": "閲覧はできますが、記載された予約日時が許可なく書き換えられました。直接損なわれた性質は何ですか。",
+      "accepted": [
+        "完全性"
+      ],
+      "explanation": "正しさや改変されていない状態に関する性質が完全性です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-security-controls": [
+    {
+      "id": "ip-security-controls-apply-1",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "本人であることを確認する手続を、本文中の二字で答えてください。",
+      "accepted": [
+        "認証"
+      ],
+      "explanation": "認証は本人確認です。操作権限を判断するのは認可です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-security-controls-apply-2",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "業務に必要な範囲だけ権限を与える原則を答えてください。",
+      "accepted": [
+        "最小権限",
+        "最小権限の原則"
+      ],
+      "explanation": "必要のない操作や情報へのアクセスを許さない考え方です。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ],
+  "ip-cryptography": [
+    {
+      "id": "ip-cryptography-apply-1",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "電子署名を作成するとき、署名者が用いるのは公開鍵と秘密鍵のどちらですか。",
+      "accepted": [
+        "秘密鍵",
+        "署名者の秘密鍵"
+      ],
+      "explanation": "署名者自身の秘密鍵を使って署名し、受領側が対応する公開鍵で検証します。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    },
+    {
+      "id": "ip-cryptography-apply-2",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "入力から一定長の値を作り、データの変更検出などに使う関数を答えてください。",
+      "accepted": [
+        "ハッシュ関数"
+      ],
+      "explanation": "ハッシュ関数は照合値の生成に使い、復号して原文を得るものではありません。",
+      "options": [],
+      "answer": 0,
+      "input": "text"
+    }
+  ]
+}

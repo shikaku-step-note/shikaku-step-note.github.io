@@ -1,0 +1,103 @@
+---
+const { lesson } = Astro.props;
+---
+<section class="ip-workbench" aria-labelledby="ip-workbench-title" data-ip-workbench={lesson}>
+  <h2 id="ip-workbench-title">図で確かめる</h2>
+  {lesson === 'ip-finance' && (
+    <>
+      <p>単価800円、1個当たり変動費500円、固定費60,000円の例です。販売数200個で売上高と総費用が一致します。</p>
+      <div class="bars" role="group" aria-label="売上高と費用の比較">
+        <div><span>売上高</span><div class="track" aria-hidden="true"><span data-bar="sales" style="width:50%"></span></div></div>
+        <div><span>総費用</span><div class="track" aria-hidden="true"><span data-bar="cost" style="width:50%"></span></div></div>
+      </div>
+      <div class="control" data-ip-controls hidden>
+        <label for="ip-quantity">販売数（個）</label>
+        <input id="ip-quantity" type="range" min="0" max="400" step="10" value="200" />
+        <button class="button secondary" type="button" data-reset>200個に戻す</button>
+      </div>
+      <p role="status" data-result>200個：売上高160,000円、総費用160,000円、利益0円（損益分岐点）</p>
+    </>
+  )}
+  {lesson === 'ip-project' && (
+    <>
+      <p>準備Aの終了後、BとCを同時に進められます。確認Dは両方が終わってから始めます。</p>
+      <svg viewBox="0 0 430 168" role="img" aria-labelledby="ip-route-title ip-route-desc">
+        <title id="ip-route-title">作業の依存関係</title>
+        <desc id="ip-route-desc">Aは3日。Aの後にBは5日、Cは4日。両方の後にDは2日。Bを通る経路は10日、Cを通る経路は9日です。</desc>
+        <defs><marker id="ip-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10Z" fill="currentColor"/></marker></defs>
+        <g fill="none" stroke="currentColor" stroke-width="2" marker-end="url(#ip-arrow)">
+          <path d="M100 74L168 44"/><path d="M100 92L168 120"/><path d="M260 44L328 74"/><path d="M260 120L328 92"/>
+        </g>
+        <g fill="none" stroke="currentColor" stroke-width="2"><rect x="10" y="60" width="90" height="48" rx="7"/><rect x="170" y="20" width="90" height="48" rx="7"/><rect x="170" y="96" width="90" height="48" rx="7"/><rect x="330" y="60" width="90" height="48" rx="7"/></g>
+        <g fill="currentColor" text-anchor="middle" font-size="19"><text x="55" y="91">A・3日</text><text x="215" y="51">B・5日</text><text x="215" y="127">C・4日</text><text x="375" y="91">D・2日</text></g>
+      </svg>
+      <details><summary>Bが2日遅れると、完了は何日後？</summary><p>Bの経路は3＋7＋2＝12日、Cの経路は9日です。DはBの完了を待つため、全体の完了も2日遅れて12日後です。</p></details>
+      <details><summary>Cが1日遅れると、完了は何日後？</summary><p>Cの経路は3＋5＋2＝10日になり、Bの経路と同じです。全体は10日で完了しますが、これ以降はどちらの遅れも全体に影響します。</p></details>
+    </>
+  )}
+  {lesson === 'ip-binary' && (
+    <>
+      <p>4桁の2進数を左から 8・4・2・1 の重みに分けます。初期例の 0101 は、4と1を足して10進数の5です。</p>
+      <fieldset data-ip-controls hidden>
+        <legend>1にする桁を選ぶ</legend>
+        <div class="bits">
+          {[8, 4, 2, 1].map((weight) => <label><input type="checkbox" value={weight} checked={weight === 4 || weight === 1} />{weight}の位</label>)}
+        </div>
+        <button class="button secondary" type="button" data-reset>0101に戻す</button>
+      </fieldset>
+      <p role="status" data-result>0101 → 4＋1＝5</p>
+    </>
+  )}
+</section>
+<style>
+  .ip-workbench { margin-block: 2rem; padding: clamp(1rem, 4vw, 1.6rem); border: 1px solid var(--line); border-inline-start: .25rem solid currentColor; border-radius: .75rem; }
+  .ip-workbench h2 { margin-top: 0; }
+  .bars { display: grid; gap: .55rem; margin-block: 1rem; }
+  .bars > div { display: grid; grid-template-columns: 5em minmax(0, 1fr); align-items: center; gap: .5rem; }
+  .track { border: 1px solid currentColor; height: .9rem; border-radius: .25rem; overflow: hidden; }
+  .track span { display: block; height: 100%; background: currentColor; }
+  [data-bar="cost"] { opacity: .65; }
+  [data-ip-controls]:not([hidden]) { display: grid; gap: .7rem; }
+  input[type="range"] { width: 100%; min-height: 44px; }
+  .ip-workbench button { justify-self: start; min-height: 44px; }
+  .ip-workbench svg { display: block; width: 100%; height: auto; }
+  details { padding-block: .5rem; }
+  summary { cursor: pointer; padding-block: .4rem; }
+  fieldset { min-inline-size: 0; border: 0; padding: 0; margin: 0; }
+  .bits { display: flex; flex-wrap: wrap; gap: .5rem; }
+  .bits label { display: flex; gap: .3rem; align-items: center; min-height: 44px; border: 1px solid var(--line); border-radius: .3rem; padding-inline: .45rem; }
+</style>
+<script>
+  const yen = new Intl.NumberFormat('ja-JP');
+  for (const panel of document.querySelectorAll<HTMLElement>('[data-ip-workbench]')) {
+    const controls = panel.querySelector<HTMLElement>('[data-ip-controls]');
+    const result = panel.querySelector<HTMLElement>('[data-result]');
+    if (!controls || !result) continue;
+    const slider = panel.querySelector<HTMLInputElement>('input[type="range"]');
+    const bits = Array.from(panel.querySelectorAll<HTMLInputElement>('input[type="checkbox"]'));
+    const draw = () => {
+      if (slider) {
+        const n = slider.valueAsNumber;
+        const sales = n * 800;
+        const cost = 60000 + n * 500;
+        const profit = sales - cost;
+        for (const [kind, value] of [['sales', sales], ['cost', cost]] as const) {
+          const bar = panel.querySelector<HTMLElement>('[data-bar="' + kind + '"]');
+          if (bar) bar.style.width = value / 3200 + '%';
+        }
+        result.textContent = n + '個：売上高' + yen.format(sales) + '円、総費用' + yen.format(cost) + '円、利益' + yen.format(profit) + '円' + (profit === 0 ? '（損益分岐点）' : '');
+      } else {
+        const selected = bits.filter((bit) => bit.checked).map((bit) => Number(bit.value));
+        const binary = bits.map((bit) => bit.checked ? '1' : '0').join('');
+        result.textContent = binary + ' → ' + (selected.length ? selected.join('＋') + '＝' : '') + selected.reduce((sum, n) => sum + n, 0);
+      }
+    };
+    controls.addEventListener('input', draw);
+    panel.querySelector('[data-reset]')?.addEventListener('click', () => {
+      if (slider) slider.value = '200';
+      for (const bit of bits) bit.checked = bit.defaultChecked;
+      draw();
+    });
+    controls.hidden = false;
+  }
+</script>

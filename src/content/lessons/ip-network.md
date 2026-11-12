@@ -5,9 +5,9 @@
   'title': 'LAN・無線とネットワーク構成',
   'description': '通信機器と接続範囲を区別する。帯域と転送時間を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 33,
-  'minutes': 30,
+  'minutes': 45,
   'sample': false,
-  'updated': '2026-10-25',
+  'updated': '2026-11-12',
   'unit': 22,
   'syllabus': [58],
   'objectives': ['通信機器と接続範囲を区別する', '帯域と転送時間を計算する'],
@@ -42,3 +42,15 @@ LANは建物や組織内などのネットワーク、WANは広域の拠点等�
 ## まとめ
 
 識別子、機器の役割、速度の単位、現実の接続条件を分けて理解します。
+
+## 転送する相手と、経路の範囲を見分ける
+
+同じLAN内で端末からプリンタへ送る場面では、フレームの宛先に応じてレイヤ2スイッチが転送します。別のネットワークへ送るときは、端末はルータなどの既定ゲートウェイへ渡します。MACアドレスで局所的に転送することと、IPアドレスを使ってネットワークをまたぐことを分けて考えます。
+
+同じ無線LANに端末が集中すると、通信の条件がよくても共有資源が混み合います。接続できることと、希望する転送速度が得られることは別です。有線、無線、回線のどこが遅いかを切り分けます。遠隔拠点間の接続では、回線の範囲、通信の保護、停止時の代替を考えます。
+
+転送時間はデータ量を回線の単位にそろえて求めます。30 MBを12 Mbit/sで送るなら、1バイト8ビットとして240÷12＝20秒です。実際には制御情報、再送、混雑によって時間が増え得ます。実効速度が与えられているならそれを使い、最大速度と混同しません。
+
+<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="LAN内とネットワーク間の中継, 端末, 送信元, スイッチ, LAN内, ルータ, 別の網へ"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">端末</text><text x="68" y="51">送信元</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">スイッチ</text><text x="211" y="51">LAN内</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">ルータ</text><text x="354" y="51">別の網へ</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>スイッチはLAN内の転送、ルータは異なるIPネットワークへの中継を担います。</figcaption></figure>
+
+<details><summary>12 Mbit/s の回線で毎秒12 MB送れる？</summary><p>ビットとバイトが違います。余分な通信を無視しても12÷8＝1.5 MB/sです。</p></details>

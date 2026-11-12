@@ -1,0 +1,323 @@
+[
+  {
+    "id": "ip-applied-review-q-1",
+    "lesson": "ip-analysis",
+    "field": "strategy",
+    "prompt": "問い合わせ180件中、上位3分類が72件、36件、27件です。累積割合を％記号なしで入力してください。",
+    "accepted": [
+      "75"
+    ],
+    "explanation": "(72＋36＋27)÷180×100＝75％です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-2",
+    "lesson": "ip-rights",
+    "field": "strategy",
+    "prompt": "製品の名称やロゴを出所表示として保護する権利は何ですか。",
+    "accepted": [
+      "商標権"
+    ],
+    "explanation": "技術的な発明の特許ではなく、商品や役務を識別する標識の権利です。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-3",
+    "lesson": "ip-strategy",
+    "field": "strategy",
+    "prompt": "月間予約完了数の目標が420件、実績が378件です。目標に対する達成率を％記号なしで入力してください。",
+    "accepted": [
+      "90"
+    ],
+    "explanation": "378÷420×100＝90％です。途中経過ではなく結果の比較です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-4",
+    "lesson": "ip-tech-business",
+    "field": "strategy",
+    "prompt": "予定する製品と必要技術の開発・導入時期を、一つの時間軸で整理する資料を答えてください。",
+    "accepted": [
+      "技術ロードマップ",
+      "ロードマップ"
+    ],
+    "explanation": "市場投入と技術準備の前後関係を見えるようにします。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-5",
+    "lesson": "ip-engineering-iot",
+    "field": "strategy",
+    "prompt": "12台の装置が各15秒に1件測定します。3分間の測定件数を入力してください。",
+    "accepted": [
+      "144"
+    ],
+    "explanation": "1台につき180÷15＝12件。12台で144件です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-6",
+    "lesson": "ip-system-strategy",
+    "field": "strategy",
+    "prompt": "同条件で、平均待ち時間が25分から20分に短縮されました。短縮率を％記号なしで入力してください。",
+    "accepted": [
+      "20"
+    ],
+    "explanation": "元の25分に対し5分減少したので、5÷25×100＝20％です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-7",
+    "lesson": "ip-procurement",
+    "field": "strategy",
+    "prompt": "仕様や評価条件を示し、事業者へ具体的な実現方法と見積りの提案を依頼する文書を英字3文字で答えてください。",
+    "accepted": [
+      "RFP",
+      "rfp"
+    ],
+    "explanation": "提案依頼書です。情報収集のRFIと区別します。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-8",
+    "lesson": "ip-development",
+    "field": "management",
+    "prompt": "変更前に使えていた機能が、別の機能の変更で壊れていないかを確認するテストを答えてください。",
+    "accepted": [
+      "回帰テスト",
+      "回帰試験",
+      "リグレッションテスト"
+    ],
+    "explanation": "変更が既存の機能へ悪影響を与えていないかを確認します。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-9",
+    "lesson": "ip-agile",
+    "field": "management",
+    "prompt": "動く画面の試作品を利用者に操作してもらい、必要な機能を調べるときに使う試作物の名称を答えてください。",
+    "accepted": [
+      "プロトタイプ"
+    ],
+    "explanation": "早い段階の試作物で、要求について具体的な意見を得ます。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-10",
+    "lesson": "ip-project",
+    "field": "management",
+    "prompt": "Aを2日実施後、Bを6日、Cを8日で並行します。両方完了した後Dを4日実施します。最短の日数を数字で答えてください。",
+    "accepted": [
+      "14"
+    ],
+    "explanation": "2＋max(6,8)＋4＝14日です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-11",
+    "lesson": "ip-services",
+    "field": "management",
+    "prompt": "対象時間50,000分のうち、対象となる停止が150分でした。可用性を％記号なしで入力してください。",
+    "accepted": [
+      "99.7"
+    ],
+    "explanation": "(50,000−150)÷50,000×100＝99.7％です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-12",
+    "lesson": "ip-audit",
+    "field": "management",
+    "prompt": "異常な承認を月次の照合で事後に発見するのは、予防的統制と発見的統制のどちらですか。",
+    "accepted": [
+      "発見的統制",
+      "発見"
+    ],
+    "explanation": "起きた例外を調査で見つける点が発見的です。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-13",
+    "lesson": "ip-binary",
+    "field": "technology",
+    "prompt": "符号なし2進数11101を10進数に変換してください。数字だけ入力してください。",
+    "accepted": [
+      "29"
+    ],
+    "explanation": "16＋8＋4＋1＝29です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-14",
+    "lesson": "ip-algorithms",
+    "field": "technology",
+    "prompt": "配列[5,6,2,11,8]の偶数だけを順に足すといくつですか。",
+    "accepted": [
+      "16"
+    ],
+    "explanation": "6＋2＋8＝16です。位置ではなく要素の値で判定します。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-15",
+    "lesson": "ip-computer",
+    "field": "technology",
+    "prompt": "1秒に25億クロックの条件で、40億クロックを必要とする処理を実行します。秒数を小数で答えてください。",
+    "accepted": [
+      "1.6"
+    ],
+    "explanation": "40÷25＝1.6秒です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-16",
+    "lesson": "ip-architecture",
+    "field": "technology",
+    "prompt": "独立した2台が各0.8の稼働率で、どちらかが動けばサービスは稼働します。全体の稼働率を小数で入力してください。",
+    "accepted": [
+      "0.96"
+    ],
+    "explanation": "両方停止の確率0.2×0.2＝0.04を1から引きます。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-17",
+    "lesson": "ip-office-oss",
+    "field": "technology",
+    "prompt": "行2だけを固定し、右へコピーすると列Eが変わるセル参照を記号付きで入力してください。",
+    "accepted": [
+      "E$2",
+      "e$2"
+    ],
+    "explanation": "行番号の前だけに$を付けます。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-18",
+    "lesson": "ip-hardware",
+    "field": "technology",
+    "prompt": "決められた場所の塗りつぶしを読み取るマーク読取の略称を英字3文字で答えてください。",
+    "accepted": [
+      "OMR",
+      "omr"
+    ],
+    "explanation": "OMRはマークの位置を調べます。印字文字の認識であるOCRとは別です。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  },
+  {
+    "id": "ip-applied-review-q-19",
+    "lesson": "ip-design",
+    "field": "technology",
+    "prompt": "利用者30人のうち21人が検索課題を終えました。完了率を％記号なしで入力してください。",
+    "accepted": [
+      "70"
+    ],
+    "explanation": "21÷30×100＝70％です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-20",
+    "lesson": "ip-media",
+    "field": "technology",
+    "prompt": "500×300画素、1画素32ビットの非圧縮画素データをバイト単位で入力してください。",
+    "accepted": [
+      "600000"
+    ],
+    "explanation": "500×300×32÷8＝600,000バイトです。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-21",
+    "lesson": "ip-sql-transactions",
+    "field": "technology",
+    "prompt": "数量が3、7、8、0の4行のうち、数量が7以上の行の合計を入力してください。",
+    "accepted": [
+      "15"
+    ],
+    "explanation": "7と8が対象なので15です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-22",
+    "lesson": "ip-network",
+    "field": "technology",
+    "prompt": "1 MB＝8 Mbitとし、48 MBを実効24 Mbit/sで送る秒数を入力してください。",
+    "accepted": [
+      "16"
+    ],
+    "explanation": "48×8÷24＝16秒です。",
+    "input": "number",
+    "options": [],
+    "answer": 0,
+    "strictNumber": true
+  },
+  {
+    "id": "ip-applied-review-q-23",
+    "lesson": "ip-security-risk",
+    "field": "technology",
+    "prompt": "復旧後にデータをどの時点まで戻せるようにするかの目標を英字3文字で答えてください。",
+    "accepted": [
+      "RPO",
+      "rpo"
+    ],
+    "explanation": "RPOは復旧時点の目標。復旧までの時間はRTOです。",
+    "input": "text",
+    "options": [],
+    "answer": 0
+  }
+]

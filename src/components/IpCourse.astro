@@ -30,13 +30,13 @@ const assessments = ipAssessments(lessons);
         </div>
         <div>
           <strong>100問</strong>
-          <span>120分の模擬試験</span>
+          <span>120分の模擬試験（2回分）</span>
         </div>
       </div>
       <div class="notice compact">
         <strong>適用範囲：現行シラバス Ver.6.5</strong>
         <p>
-          2026年10月25日にIPAの現行資料を確認しました。2027年度の新試験制度への移行が予定され、シラバス案も公開されています。このコースは現行のVer.6.5に対応し、将来の案への対応をうたうものではありません。受験時は必ず公式の適用範囲を再確認してください。
+          2026年11月12日にIPAの現行シラバスと試験形式を再確認しました。2027年度の新試験制度への移行が予定され、シラバス案も公開されています。このコースは現行のVer.6.5に対応し、将来の案への対応をうたうものではありません。受験時は必ず公式の適用範囲を再確認してください。
         </p>
         <a href={ipSource('changes').url}>IPA：制度見直しの案内</a>
       </div>
@@ -49,24 +49,24 @@ const assessments = ipAssessments(lessons);
     <section class="course-section" id="schedule">
       <h2>無理なく進める学習プラン</h2>
       <p>
-        1日30分・週5日を目安に、まず12〜14週間の枠を確保し、理解度に応じて延ばしましょう。これは当サイトの提案で、公式の必要学習時間ではありません。本文・例題の目安合計は
+        1日30分・週5日なら、本文・例題と模試だけで約{Math.ceil((total + 240) / 150)}週間です。これに復習・解き直しの期間を加えてください。これは当サイトの提案で、公式の必要学習時間ではありません。本文・例題の目安合計は
         {total}分（約{Math.round(total / 60)}時間）です。テスト、復習、公開問題に取り組む時間は別に必要です。
       </p>
       <ol class="study-timeline">
         <li>
-          <strong>1〜4週：企業とITのつながり</strong>
+          <strong>第1段階：企業とITのつながり</strong>
           <p>ストラテジ系の各ユニットを読み、用語と事例を結び付けます。</p>
         </li>
         <li>
-          <strong>5〜6週：開発と運用の進め方</strong>
+          <strong>第2段階：開発と運用の進め方</strong>
           <p>マネジメント系を学び、工程・役割・管理の違いを確認します。</p>
         </li>
         <li>
-          <strong>7〜11週：技術と安全の基礎</strong>
+          <strong>第3段階：技術と安全の基礎</strong>
           <p>テクノロジ系を学び、計算は紙で途中式も確認します。</p>
         </li>
         <li>
-          <strong>12〜14週：復習と本番時間での演習</strong>
+          <strong>第4段階：復習と本番時間での演習</strong>
           <p>用語の総復習、3分野の総復習、120分模試の順に取り組み、間違えた分野へ戻ります。</p>
         </li>
       </ol>
@@ -82,7 +82,7 @@ const assessments = ipAssessments(lessons);
         </span>
       </div>
       <p>
-        各レッスンの本文と3問の理解度チェック、ユニットごとの用語テスト・総合確認へ進みます。学習済みの数とテストの得点は別の記録です。
+        各レッスンの本文と理解度チェック、ユニットごとの用語テスト・総合確認へ進みます。学習済みの数とテストの得点は別の記録です。
       </p>
       {(['strategy', 'management', 'technology'] as const).map((field, i) => (
         <section class="curriculum-field" id={`field-${field}`}>
@@ -143,7 +143,7 @@ const assessments = ipAssessments(lessons);
     </section>
     <section class="course-section" id="exams">
       <h2>総復習と模擬試験</h2>
-      <p>ユニットの復習問題を再度まとめて解く総復習と、新しい独自問題100問の模試を用意しています。</p>
+      <p>ユニットの復習問題を再度解く総復習、23ユニットの入力式総復習、独立した100問の模試2回を用意しています。</p>
       <div class="assessment-links">
         {assessments
           .filter((a) => !a.unit && a.kind !== 'lesson')
@@ -171,7 +171,7 @@ const assessments = ipAssessments(lessons);
       </p>
     </section>
     <Share
-      title="ITパスポートの無料基礎コース"
+      title="ITパスポートの無料学習コース"
       url={new URL(href('qualifications/it-passport/'), Astro.site).href}
     />
   </div>

@@ -5,9 +5,9 @@
   'title': 'マーケティングと経営管理システム',
   'description': 'STPと4Pを使って施策を整理する。ERP・SCM・CRMの役割を区別する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 8,
-  'minutes': 30,
+  'minutes': 45,
   'sample': false,
-  'updated': '2026-10-25',
+  'updated': '2026-11-12',
   'unit': 3,
   'syllabus': [10, 12],
   'objectives': ['STPと4Pを使って施策を整理する', 'ERP・SCM・CRMの役割を区別する'],
@@ -45,3 +45,15 @@ ERPは会計・販売・生産などの基幹業務情報を統合的に扱い�
 ## まとめ
 
 対象顧客と価値を決め、業務システムで情報をつなぎ、目的に合う指標で確かめます。顧客情報の活用では本人の権利や利用目的にも配慮します。
+
+## 顧客像を施策と測定までつなぐ
+
+駅前の弁当店が「帰宅途中に待たずに買いたい人」に着目します。利用場面で市場を分けるのがセグメンテーション、夕方の通勤者を選ぶのがターゲティング、他店より短い待ち時間を価値として示すのがポジショニングです。4Pでは予約できる商品、価格、駅前受取という流通、注文締切を知らせる販促をそろえます。「待たない」と告知して受取窓口が混雑するなら、施策同士が一致していません。
+
+A案は500人中30人、B案は400人中32人が注文したとします。注文率はAが6％、Bが8％です。件数だけで比べず分母を確認します。B案だけ雨の日に出した場合、差が施策によるとは限りません。同じ期間に来店者をランダムに割り当て、見る指標を事前に決めます。短い期間で差が出ても、対象や季節が変われば同じ効果を保証できません。
+
+売場の相談履歴を使って次の案内を選ぶならCRM、営業担当者の商談段階を管理するならSFA、材料の調達から受取までの在庫・納期を整えるならSCMです。販売と会計を基幹データでつなぐERPと、一部の仕事を改善する仕組みは導入目的が異なります。
+
+<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="弁当店のSTP, 分ける, 利用場面, 選ぶ, 夕方の通勤者, 位置付け, 待たずに受取"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">分ける</text><text x="68" y="51">利用場面</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">選ぶ</text><text x="211" y="51">夕方の通勤者</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">位置付け</text><text x="354" y="51">待たずに受取</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>顧客層を決めた後、その人に何を価値として伝えるかを決めます。</figcaption></figure>
+
+<details><summary>注文が32件と30件なら、率も2ポイント差？</summary><p>分母を確認します。この例は32÷400と30÷500なので、差は2ポイントですが、件数差からは求まりません。</p></details>

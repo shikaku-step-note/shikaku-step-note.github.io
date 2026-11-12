@@ -1,5 +1,8 @@
 import bank from './ip-questions.json';
 import mock from './ip-mock.json';
+import mock02 from './ip-mock-02.json';
+import applied from './ip-applied.json';
+import appliedReview from './ip-applied-review.json';
 import type { Assessment, Field, Question } from '../lib/assessment';
 export const ipVersion = '2026-10-v1';
 export const ipReviewed = '2026-10-25';
@@ -109,21 +112,21 @@ export const ipSources = [
     title: 'IPA：ITパスポート試験 シラバス Ver.6.5',
     url: 'https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf',
     version: '2026年1月版・現行範囲',
-    verified: ipReviewed,
+    verified: '2026-11-12',
   },
   {
     id: 'requirements',
     title: 'IPA：試験要綱 Ver.5.6',
     url: 'https://www.ipa.go.jp/shiken/syllabus/rcu1hd00000141gq-att/youkou_ver5_6.pdf',
     version: '2026年7月掲載・試験方式と評価',
-    verified: ipReviewed,
+    verified: '2026-11-12',
   },
   {
     id: 'overview',
     title: 'IPA：ITパスポート試験の対象者像・試験形式',
     url: 'https://www.ipa.go.jp/shiken/kubun/ip.html',
     version: '現行試験',
-    verified: ipReviewed,
+    verified: '2026-11-12',
   },
   {
     id: 'changes',
@@ -144,24 +147,25 @@ export const ipSources = [
     title: '個人情報保護委員会：個人情報保護法ガイドライン（通則編）',
     url: 'https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/',
     version: '利用目的・第三者提供等の基本原則',
-    verified: ipReviewed,
+    verified: '2026-11-12',
   },
   {
     id: 'trade-law',
     title: '公正取引委員会：取適法',
     url: 'https://www.jftc.go.jp/toriteki/',
     version: '2026年1月施行・現行名称と目的',
-    verified: ipReviewed,
+    verified: '2026-11-12',
   },
   {
     id: 'future-draft',
     title: 'IPA：新試験制度のシラバス案',
     url: 'https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260630.html',
     version: '2027年度向けITパスポート案Ver.0.1。現行の適用版とは区別',
-    verified: ipReviewed,
+    verified: '2026-11-12',
   },
 ];
 export const ipSource = (id: string) => ipSources.find((s) => s.id === id)!;
+const appliedBank = applied as Record<string, Question[]>;
 export const questionBank = bank as Record<string, { lesson: Question[]; review: Question[] }>;
 export const mockQuestions = mock as Question[];
 type LessonLike = {
@@ -201,10 +205,13 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
       `${l.data.stableId}-check`,
       `${l.data.title}：理解度チェック`,
       'lesson',
-      questionBank[l.data.stableId]!.lesson,
+      [...questionBank[l.data.stableId]!.lesson, ...(appliedBank[l.data.stableId] ?? [])],
       l.data.unit,
     ),
   );
+  for (const assessment of result) {
+    if (assessment.questions.some((question) => question.input === 'number' || question.input === 'text')) assessment.version = '2026-11-applied-v1';
+  }
   const glossaries: Question[] = [];
   const reviews: Question[] = [];
   for (const u of units) {
@@ -245,9 +252,11 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
     reviews.push(...review);
   }
   result.push(make('ip-glossary-all', 'ITパスポート：用語の総復習', 'glossary', glossaries));
+  result.push({ ...make('ip-applied-review', 'ITパスポート：23ユニットの入力式総復習', 'review', appliedReview as Question[]), version: '2026-11-applied-review-v1' });
   result.push(make('ip-review-all', 'ITパスポート：3分野の総復習', 'review', reviews));
   result.push(
     make('ip-mock-01', 'ITパスポート：120分・100問の模擬試験', 'mock', mockQuestions, undefined, 120),
+    { ...make('ip-mock-02', 'ITパスポート：120分・100問の模擬試験 第2回', 'mock', mock02 as Question[], undefined, 120), version: '2026-11-mock-02-v1' },
   );
   return result;
 }

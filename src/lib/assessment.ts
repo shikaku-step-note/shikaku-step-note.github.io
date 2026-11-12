@@ -17,6 +17,8 @@ export interface Question {
   input?: 'number' | 'text' | 'essay' | 'journal';
   /** A normal text keyboard exposes a minus key on devices whose decimal keypad omits it. */
   signed?: boolean;
+  /** Match decimal syntax before stripping thousands separators. */
+  strictNumber?: boolean;
   /** Allowed account choices and a balanced model entry. Stored answers remain JSON strings. */
   journal?: { accounts: string[]; debits: JournalRow[]; credits: JournalRow[] };
   accepted?: string[];
@@ -334,6 +336,10 @@ export function isCorrect(q: Question, value: number | string | undefined): bool
   }
   if (!q.input) return value === q.answer;
   if (typeof value !== 'string' || !value.trim()) return false;
+  if (q.input === 'number' && q.strictNumber) {
+    const numeric = value.normalize('NFKC').trim().replace(/−/g, '-');
+    if (!/^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/.test(numeric)) return false;
+  }
   const actual = normalizeAnswer(value);
   return (q.accepted ?? []).some((answer) => {
     const expected = normalizeAnswer(answer);
