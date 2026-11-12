@@ -1,0 +1,2395 @@
+{
+  "source": {
+    "id": "syllabus",
+    "title": "IPA：ITパスポート試験 シラバス Ver.6.5",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+    "version": "2026年1月版・現行範囲",
+    "verified": "2026-11-12"
+  },
+  "interpretation": "Topic and chapter evidence index. Use the accompanying field reviews for subskills, worked tasks and assessment limits. The index alone does not establish exam readiness.",
+  "reports": [
+    "strategy-textbook-evidence.json",
+    "technology-textbook.json",
+    "textbook-management.json",
+    "textbook-management.md",
+    "textbook-release-review.md"
+  ],
+  "counts": {
+    "activeLessons": 40,
+    "officialItems": 63,
+    "units": 23,
+    "newQuestions": 138,
+    "estimatedLessonMinutes": 2955
+  },
+  "items": [
+    {
+      "topic": 1,
+      "title": "経営・組織論",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 1,
+      "lessonIds": [
+        "ip-organization"
+      ]
+    },
+    {
+      "topic": 2,
+      "title": "業務分析・データ利活用",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 1,
+      "lessonIds": [
+        "ip-analysis",
+        "ip-reading-business-data"
+      ]
+    },
+    {
+      "topic": 3,
+      "title": "会計・財務",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 1,
+      "lessonIds": [
+        "ip-finance",
+        "ip-reading-business-data"
+      ]
+    },
+    {
+      "topic": 4,
+      "title": "知的財産権",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 2,
+      "lessonIds": [
+        "ip-rights"
+      ]
+    },
+    {
+      "topic": 5,
+      "title": "セキュリティ関連法規",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 2,
+      "lessonIds": [
+        "ip-law-ethics"
+      ]
+    },
+    {
+      "topic": 6,
+      "title": "労働関連・取引関連法規",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 2,
+      "lessonIds": [
+        "ip-law-ethics"
+      ]
+    },
+    {
+      "topic": 7,
+      "title": "その他の法律・ガイドライン・情報倫理",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 2,
+      "lessonIds": [
+        "ip-law-ethics"
+      ]
+    },
+    {
+      "topic": 8,
+      "title": "標準化関連",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 2,
+      "lessonIds": [
+        "ip-standards"
+      ]
+    },
+    {
+      "topic": 9,
+      "title": "経営戦略手法",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 3,
+      "lessonIds": [
+        "ip-strategy"
+      ]
+    },
+    {
+      "topic": 10,
+      "title": "マーケティング",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 3,
+      "lessonIds": [
+        "ip-marketing"
+      ]
+    },
+    {
+      "topic": 11,
+      "title": "ビジネス戦略と目標・評価",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 3,
+      "lessonIds": [
+        "ip-strategy"
+      ]
+    },
+    {
+      "topic": 12,
+      "title": "経営管理システム",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 3,
+      "lessonIds": [
+        "ip-marketing"
+      ]
+    },
+    {
+      "topic": 13,
+      "title": "技術開発戦略の立案・技術開発計画",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 4,
+      "lessonIds": [
+        "ip-tech-business"
+      ]
+    },
+    {
+      "topic": 14,
+      "title": "ビジネスシステム",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 5,
+      "lessonIds": [
+        "ip-tech-business"
+      ]
+    },
+    {
+      "topic": 15,
+      "title": "エンジニアリングシステム",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 5,
+      "lessonIds": [
+        "ip-engineering-iot"
+      ]
+    },
+    {
+      "topic": 16,
+      "title": "e-ビジネス",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 5,
+      "lessonIds": [
+        "ip-ecommerce"
+      ]
+    },
+    {
+      "topic": 17,
+      "title": "IoTシステム・組込みシステム",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 5,
+      "lessonIds": [
+        "ip-engineering-iot"
+      ]
+    },
+    {
+      "topic": 18,
+      "title": "情報システム戦略",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 6,
+      "lessonIds": [
+        "ip-system-strategy"
+      ]
+    },
+    {
+      "topic": 19,
+      "title": "業務プロセス",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 6,
+      "lessonIds": [
+        "ip-system-strategy"
+      ]
+    },
+    {
+      "topic": 20,
+      "title": "ソリューションビジネス",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 6,
+      "lessonIds": [
+        "ip-system-strategy"
+      ]
+    },
+    {
+      "topic": 21,
+      "title": "システム活用促進・評価",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 6,
+      "lessonIds": [
+        "ip-system-strategy"
+      ]
+    },
+    {
+      "topic": 22,
+      "title": "システム化計画",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 7,
+      "lessonIds": [
+        "ip-procurement"
+      ]
+    },
+    {
+      "topic": 23,
+      "title": "要件定義",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 7,
+      "lessonIds": [
+        "ip-procurement"
+      ]
+    },
+    {
+      "topic": 24,
+      "title": "調達計画・実施",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "strategy",
+      "unit": 7,
+      "lessonIds": [
+        "ip-procurement"
+      ]
+    },
+    {
+      "topic": 25,
+      "title": "システム開発技術",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 8,
+      "lessonIds": [
+        "ip-development"
+      ]
+    },
+    {
+      "topic": 26,
+      "title": "開発プロセス・手法",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 9,
+      "lessonIds": [
+        "ip-agile"
+      ]
+    },
+    {
+      "topic": 27,
+      "title": "プロジェクトマネジメント",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 10,
+      "lessonIds": [
+        "ip-project",
+        "ip-reading-project-plans"
+      ]
+    },
+    {
+      "topic": 28,
+      "title": "サービスマネジメント",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 11,
+      "lessonIds": [
+        "ip-services"
+      ]
+    },
+    {
+      "topic": 29,
+      "title": "サービスマネジメントシステム",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 11,
+      "lessonIds": [
+        "ip-services"
+      ]
+    },
+    {
+      "topic": 30,
+      "title": "ファシリティマネジメント",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 11,
+      "lessonIds": [
+        "ip-services"
+      ]
+    },
+    {
+      "topic": 31,
+      "title": "システム監査",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 12,
+      "lessonIds": [
+        "ip-audit"
+      ]
+    },
+    {
+      "topic": 32,
+      "title": "内部統制",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "management",
+      "unit": 12,
+      "lessonIds": [
+        "ip-audit"
+      ]
+    },
+    {
+      "topic": 33,
+      "title": "離散数学",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 13,
+      "lessonIds": [
+        "ip-binary"
+      ]
+    },
+    {
+      "topic": 34,
+      "title": "応用数学",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 13,
+      "lessonIds": [
+        "ip-statistics"
+      ]
+    },
+    {
+      "topic": 35,
+      "title": "情報に関する理論",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 13,
+      "lessonIds": [
+        "ip-ai-data"
+      ]
+    },
+    {
+      "topic": 36,
+      "title": "データ構造",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 14,
+      "lessonIds": [
+        "ip-algorithms"
+      ]
+    },
+    {
+      "topic": 37,
+      "title": "アルゴリズムとプログラミング",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 14,
+      "lessonIds": [
+        "ip-algorithms"
+      ]
+    },
+    {
+      "topic": 38,
+      "title": "プログラム言語",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 14,
+      "lessonIds": [
+        "ip-languages"
+      ]
+    },
+    {
+      "topic": 39,
+      "title": "その他の言語",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 14,
+      "lessonIds": [
+        "ip-languages"
+      ]
+    },
+    {
+      "topic": 40,
+      "title": "プロセッサ",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 15,
+      "lessonIds": [
+        "ip-computer"
+      ]
+    },
+    {
+      "topic": 41,
+      "title": "メモリ",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 15,
+      "lessonIds": [
+        "ip-computer"
+      ]
+    },
+    {
+      "topic": 42,
+      "title": "入出力デバイス",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 15,
+      "lessonIds": [
+        "ip-computer"
+      ]
+    },
+    {
+      "topic": 43,
+      "title": "システムの構成",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 16,
+      "lessonIds": [
+        "ip-architecture"
+      ]
+    },
+    {
+      "topic": 44,
+      "title": "システムの評価指標",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 16,
+      "lessonIds": [
+        "ip-architecture"
+      ]
+    },
+    {
+      "topic": 45,
+      "title": "オペレーティングシステム",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 17,
+      "lessonIds": [
+        "ip-os-files"
+      ]
+    },
+    {
+      "topic": 46,
+      "title": "ファイルシステム",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 17,
+      "lessonIds": [
+        "ip-os-files"
+      ]
+    },
+    {
+      "topic": 47,
+      "title": "オフィスツール",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 17,
+      "lessonIds": [
+        "ip-office-oss",
+        "ip-reading-spreadsheets"
+      ]
+    },
+    {
+      "topic": 48,
+      "title": "オープンソースソフトウェア",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 17,
+      "lessonIds": [
+        "ip-office-oss"
+      ]
+    },
+    {
+      "topic": 49,
+      "title": "ハードウェア（コンピュータ・入出力装置）",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 18,
+      "lessonIds": [
+        "ip-hardware"
+      ]
+    },
+    {
+      "topic": 50,
+      "title": "情報デザイン",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 19,
+      "lessonIds": [
+        "ip-design"
+      ]
+    },
+    {
+      "topic": 51,
+      "title": "インタフェース設計",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 19,
+      "lessonIds": [
+        "ip-design"
+      ]
+    },
+    {
+      "topic": 52,
+      "title": "マルチメディア技術",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 20,
+      "lessonIds": [
+        "ip-media"
+      ]
+    },
+    {
+      "topic": 53,
+      "title": "マルチメディア応用",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 20,
+      "lessonIds": [
+        "ip-media"
+      ]
+    },
+    {
+      "topic": 54,
+      "title": "データベース方式",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 21,
+      "lessonIds": [
+        "ip-database"
+      ]
+    },
+    {
+      "topic": 55,
+      "title": "データベース設計",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 21,
+      "lessonIds": [
+        "ip-database"
+      ]
+    },
+    {
+      "topic": 56,
+      "title": "データ操作",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 21,
+      "lessonIds": [
+        "ip-sql-transactions"
+      ]
+    },
+    {
+      "topic": 57,
+      "title": "トランザクション処理",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 21,
+      "lessonIds": [
+        "ip-sql-transactions"
+      ]
+    },
+    {
+      "topic": 58,
+      "title": "ネットワーク方式",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 22,
+      "lessonIds": [
+        "ip-network"
+      ]
+    },
+    {
+      "topic": 59,
+      "title": "通信プロトコル",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 22,
+      "lessonIds": [
+        "ip-protocols"
+      ]
+    },
+    {
+      "topic": 60,
+      "title": "ネットワーク応用",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 22,
+      "lessonIds": [
+        "ip-protocols"
+      ]
+    },
+    {
+      "topic": 61,
+      "title": "情報セキュリティ",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 23,
+      "lessonIds": [
+        "ip-security-risk"
+      ]
+    },
+    {
+      "topic": 62,
+      "title": "情報セキュリティ管理",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 23,
+      "lessonIds": [
+        "ip-security-risk"
+      ]
+    },
+    {
+      "topic": 63,
+      "title": "情報セキュリティ対策・情報セキュリティ実装技術",
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "field": "technology",
+      "unit": 23,
+      "lessonIds": [
+        "ip-security-controls",
+        "ip-cryptography"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ip-organization",
+      "order": 1,
+      "unit": 1,
+      "minutes": 90,
+      "syllabus": [
+        1
+      ],
+      "objectives": [
+        "経営資源と組織の役割を説明する",
+        "PDCAとBCPを業務に当てはめる"
+      ],
+      "sections": [
+        "企業は何のために情報を使うのか",
+        "組織と人を動かす仕組み",
+        "改善と事業継続を分けて考える",
+        "例：問い合わせへの回答を早くする",
+        "まとめ",
+        "ケース：出荷の判断を誰に任せるか",
+        "組織図は「誰の専門性か」と「誰が決めるか」で読む",
+        "人材の育成は、身につけたい能力から選ぶ",
+        "改善と継続は、異なる問いに答える",
+        "情報を使った変革か、作業の置換か",
+        "自分で考える",
+        "権限を置く場所で、業務の速さと責任が変わる",
+        "二つの組織図から、決める人を探す",
+        "改善の数字と事業継続の判断を分ける",
+        "短い周期で判断する仕事と、改善結果を検証する仕事",
+        "経営資源を配置し、数字で育成の成果を確かめる",
+        "例題：研修が生産能力に結び付いたか",
+        "責任と意思決定を切り分ける"
+      ],
+      "explicitAnchors": [
+        "depth-organization",
+        "governance-and-ooda",
+        "textbook-organization",
+        "textbook-organization-transfer"
+      ],
+      "assessment": "ip-organization-check",
+      "newQuestions": [
+        "ip-organization-textbook-1",
+        "ip-organization-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-analysis",
+      "order": 2,
+      "unit": 1,
+      "minutes": 105,
+      "syllabus": [
+        2
+      ],
+      "objectives": [
+        "分析の目的に合う図を選ぶ",
+        "相関と因果を区別する"
+      ],
+      "sections": [
+        "問いを決めてからデータを集める",
+        "図は目的に合わせて選ぶ",
+        "例：苦情100件を分類する",
+        "相関をそのまま原因にしない",
+        "まとめ",
+        "ケース：問い合わせの増加をデータから調べる",
+        "集計の前に、データをそろえる",
+        "パレート図で調べる順番を決める",
+        "見せ方と比較条件を疑う",
+        "数理モデルは条件を明示して使う",
+        "原因候補を分け、次に確かめることを決める",
+        "自分で考える",
+        "ばらつき、標本の偏り、改善効果を切り分ける",
+        "管理限界を越えたとき、製品の合否と工程の異常を分ける",
+        "前後比較と比較実験では、答えられる問いが違う",
+        "手で確かめる検定の考え方",
+        "件数の違う工程を比較する",
+        "調査の対象を決め、データの偏りを見つける",
+        "例題：全体の割合を計算する",
+        "割合と工程図を合わせて調べる"
+      ],
+      "explicitAnchors": [
+        "depth-analysis",
+        "hypothesis-experiment",
+        "process-variation-case",
+        "textbook-analysis",
+        "textbook-analysis-transfer"
+      ],
+      "assessment": "ip-analysis-check",
+      "newQuestions": [
+        "ip-analysis-textbook-1",
+        "ip-analysis-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-finance",
+      "order": 3,
+      "unit": 1,
+      "minutes": 105,
+      "syllabus": [
+        3
+      ],
+      "objectives": [
+        "財務三表の役割を区別する",
+        "利益と損益分岐点を計算する"
+      ],
+      "sections": [
+        "財務三表は何を示すのか",
+        "費用を固定費と変動費に分ける",
+        "例：小さな教材店",
+        "投資を比べる指標",
+        "まとめ",
+        "売上が増えても現金が足りないのはなぜか",
+        "先に1個当たりの限界利益を求める",
+        "自分で確かめる",
+        "財務指標で「利益」「資金」「効率」を分けて読む",
+        "消費税とインボイスの役割",
+        "売上と利益、手元資金を一つの事例で追う",
+        "掛売りを入れると利益と現金はいつ動くか",
+        "売上構成が変わると損益分岐点も変わる",
+        "取引から利益、現金、財政状態を順に読む",
+        "例題：初期費用を運用の改善で回収する",
+        "短期の支払に使える資産を確認する"
+      ],
+      "explicitAnchors": [
+        "depth-finance",
+        "textbook-finance",
+        "textbook-finance-transfer"
+      ],
+      "assessment": "ip-finance-check",
+      "newQuestions": [
+        "ip-finance-textbook-1",
+        "ip-finance-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-reading-business-data",
+      "order": 4,
+      "unit": 1,
+      "minutes": 45,
+      "syllabus": [
+        2,
+        3
+      ],
+      "objectives": [
+        "比較すべき母数を自分で決める",
+        "利益の増減を求め、改善案の条件を説明する"
+      ],
+      "sections": [
+        "比較の分母を決める",
+        "改善したときの利益を求める",
+        "集計の内訳が変わった場合を考える",
+        "自分で判断してみる",
+        "解き直すときの確認"
+      ],
+      "explicitAnchors": [],
+      "assessment": "ip-reading-business-data-check",
+      "newQuestions": [
+        "ip-reading-business-data-textbook-rate",
+        "ip-reading-business-data-textbook-weighted",
+        "ip-reading-business-data-textbook-threshold",
+        "ip-reading-business-data-textbook-composition"
+      ]
+    },
+    {
+      "id": "ip-rights",
+      "order": 5,
+      "unit": 2,
+      "minutes": 85,
+      "syllabus": [
+        4
+      ],
+      "objectives": [
+        "保護対象に合う権利を選ぶ",
+        "利用許諾と著作権を区別する"
+      ],
+      "sections": [
+        "アイデアと表現を区別する",
+        "ライセンスは使い方の条件",
+        "例：社内資料へ画像を載せる",
+        "まとめ",
+        "製品公開前に、守るものと借りるものを仕分ける",
+        "画像とコードは利用の段階ごとに確認する",
+        "料金、利用権、秘密管理は別の話",
+        "一つの製品に関わる権利を対象ごとに見分ける",
+        "仕組み、外観、名前、説明文を別々に見る",
+        "社内で買ったソフトを取引先に使わせられるか",
+        "営業秘密と公開された技術を見分ける",
+        "一つの製品から、守りたい対象を取り出す",
+        "例題：自社で買った資料を研修へ転用する",
+        "利用目的から権利と条件を選び直す"
+      ],
+      "explicitAnchors": [
+        "depth-rights",
+        "trade-secret-case",
+        "textbook-rights",
+        "textbook-rights-transfer"
+      ],
+      "assessment": "ip-rights-check",
+      "newQuestions": [
+        "ip-rights-textbook-1",
+        "ip-rights-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-law-ethics",
+      "order": 6,
+      "unit": 2,
+      "minutes": 105,
+      "syllabus": [
+        5,
+        6,
+        7
+      ],
+      "objectives": [
+        "身近な行動と関連する法律を結び付ける",
+        "個人情報の目的と第三者提供を考える"
+      ],
+      "sections": [
+        "安全な利用を支える法律",
+        "個人情報は目的と管理をセットで考える",
+        "雇用と委託の違い",
+        "取引・消費者保護と情報倫理",
+        "例とまとめ",
+        "個人情報を渡す前に、目的と相手の役割を確認する",
+        "雇用・派遣・請負を現場の指示から区別する",
+        "法律の名前から、守ろうとする対象を読む",
+        "誰がどの権限で情報を扱うか、契約名から離れて判断する",
+        "人の属性、アクセス権限、情報の利用目的を順に確認する",
+        "成果の要求と、労働者への作業指示を分ける",
+        "同じWebサービスでも、場面ごとに適用を確認する",
+        "海外の利用者への提供を考えるとき",
+        "公開請求と内部の通報、委託先の処理を区別する",
+        "法令の対象と社内で取る措置を結び付ける",
+        "例題：指示と成果物の確認を分ける",
+        "規制を探す順序を法務メモで練習する",
+        "セキュリティ法規を、行為と関係者から読み分ける"
+      ],
+      "explicitAnchors": [
+        "depth-law-ethics",
+        "legal-scope-cases",
+        "oversight-records-and-disposal",
+        "textbook-law-ethics",
+        "textbook-law-ethics-transfer",
+        "textbook-law-ethics-security"
+      ],
+      "assessment": "ip-law-ethics-check",
+      "newQuestions": [
+        "ip-law-ethics-textbook-1",
+        "ip-law-ethics-textbook-2",
+        "ip-law-ethics-textbook-3",
+        "ip-law-ethics-textbook-4"
+      ]
+    },
+    {
+      "id": "ip-standards",
+      "order": 7,
+      "unit": 2,
+      "minutes": 80,
+      "syllabus": [
+        8
+      ],
+      "objectives": [
+        "公的標準と事実上の標準を区別する",
+        "標準化の効果と限界を説明する"
+      ],
+      "sections": [
+        "標準が必要な理由",
+        "標準の作られ方",
+        "識別と交換のルール",
+        "例：二つの会社で在庫を連携する",
+        "まとめ",
+        "同じCSVなのに連携が失敗する理由",
+        "標準の作り方と、認証の対象を区別する",
+        "国や地域をまたいでも意味が通る設計にする",
+        "接続できる条件を、規格と受入試験に落とし込む",
+        "共通規格があっても、互換性を確認する",
+        "規格の策定と、適合性を評価する活動を区別する",
+        "規格をそろえ、実際につながる条件を確かめる",
+        "例題：基準に適合した証拠を読む",
+        "互換性の試験項目を決める"
+      ],
+      "explicitAnchors": [
+        "depth-standards",
+        "textbook-standards",
+        "textbook-standards-transfer"
+      ],
+      "assessment": "ip-standards-check",
+      "newQuestions": [
+        "ip-standards-textbook-1",
+        "ip-standards-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-strategy",
+      "order": 8,
+      "unit": 3,
+      "minutes": 105,
+      "syllabus": [
+        9,
+        11
+      ],
+      "objectives": [
+        "戦略分析の軸を使い分ける",
+        "KGIとKPIを結び付ける"
+      ],
+      "sections": [
+        "環境と自社を分けて分析する",
+        "事業の成長と資源配分",
+        "目標を測れる形にする",
+        "例：予約サービスを改善する",
+        "まとめ",
+        "成長市場でも投資を決める前に何を見るか",
+        "成長性、資源、目標を別々に評価して投資を選ぶ",
+        "外部の変化を、自社の能力と組み合わせて読む",
+        "成長率とシェアの位置から、資金の使い方を考える",
+        "目標と中間指標を、一つの因果の流れで設計する",
+        "成長の方向を選び、施策の効果を切り分ける",
+        "例題：目標から施策を選ぶ",
+        "二つの施策を資料から選ぶ",
+        "分析手法を資料に合わせて選ぶ",
+        "売上目標と途中の指標を、同じ図で結ぶ"
+      ],
+      "explicitAnchors": [
+        "depth-strategy",
+        "textbook-strategy",
+        "textbook-strategy-transfer",
+        "textbook-strategy-method",
+        "textbook-strategy-kpi-case"
+      ],
+      "assessment": "ip-strategy-check",
+      "newQuestions": [
+        "ip-strategy-textbook-1",
+        "ip-strategy-textbook-2",
+        "ip-strategy-textbook-3",
+        "ip-strategy-textbook-4"
+      ]
+    },
+    {
+      "id": "ip-marketing",
+      "order": 9,
+      "unit": 3,
+      "minutes": 95,
+      "syllabus": [
+        10,
+        12
+      ],
+      "objectives": [
+        "STPと4Pを使って施策を整理する",
+        "ERP・SCM・CRMの役割を区別する"
+      ],
+      "sections": [
+        "顧客を理解し、届け方を決める",
+        "データで関係を継続する",
+        "全社と供給網の情報をつなぐ",
+        "例：欠品の多い店舗",
+        "まとめ",
+        "顧客像を施策と測定までつなぐ",
+        "価格と販促を選び、販売後のデータで確かめる",
+        "商品を買う人の条件が変わると、最適な施策も変わる",
+        "購入回数の多さだけで顧客の次の行動を決めない",
+        "似た症状を、情報を使う範囲から診断する",
+        "販売経路を比較し、顧客の情報を運用に使う",
+        "例題：売れた後のデータをどう使うか",
+        "購入件数と利益の両方を比較する",
+        "仕事の知識を、文書と実践で引き継ぐ"
+      ],
+      "explicitAnchors": [
+        "depth-marketing",
+        "systems-worked-diagnosis",
+        "textbook-marketing",
+        "textbook-marketing-transfer",
+        "textbook-marketing-knowledge"
+      ],
+      "assessment": "ip-marketing-check",
+      "newQuestions": [
+        "ip-marketing-textbook-1",
+        "ip-marketing-textbook-2",
+        "ip-marketing-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-tech-business",
+      "order": 10,
+      "unit": 4,
+      "minutes": 90,
+      "syllabus": [
+        13,
+        14
+      ],
+      "objectives": [
+        "技術ロードマップと研究開発を説明する",
+        "事業に合うシステムの役割を選ぶ"
+      ],
+      "sections": [
+        "技術を事業の目的につなぐ",
+        "新しい技術をどう生かすか",
+        "分野別の業務システム",
+        "例：画像検査の導入",
+        "まとめ",
+        "研究成果を商品化する判断",
+        "実証で確かめることと、事業で成立する条件を分ける",
+        "技術の成熟と、利用者に届ける仕組みを同じ計画に載せる",
+        "自社で開発する範囲と、外部と協力する範囲を決める",
+        "部門ごとに同じ住所を入力する問題を解く",
+        "実験の成功から事業化までの条件を順に確認する",
+        "例題：開発形態を選ぶ",
+        "候補を選ぶため、検証から導入へ条件を引き継ぐ",
+        "社会の事業を支えるシステムの役割を区別する"
+      ],
+      "explicitAnchors": [
+        "depth-tech-business",
+        "public-system-application",
+        "textbook-tech-business",
+        "textbook-tech-business-transfer",
+        "textbook-tech-business-systems"
+      ],
+      "assessment": "ip-tech-business-check",
+      "newQuestions": [
+        "ip-tech-business-textbook-1",
+        "ip-tech-business-textbook-2",
+        "ip-tech-business-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-engineering-iot",
+      "order": 11,
+      "unit": 5,
+      "minutes": 95,
+      "syllabus": [
+        15,
+        17
+      ],
+      "objectives": [
+        "設計と生産を支えるシステムを区別する",
+        "IoTの計測・通信・制御を説明する"
+      ],
+      "sections": [
+        "設計から製造までをつなぐ",
+        "IoTは物と情報を結ぶ",
+        "現実の設備とモデル",
+        "例：温室の温度管理",
+        "まとめ",
+        "設計データが現場の制御になるまで",
+        "設計値と実測値をつなぎ、止まる条件を考える",
+        "設計、製造、検査で扱う情報を見分ける",
+        "IoTの通信が止まっても安全を保つ",
+        "工場が作れる量と、納期に間に合う量を見積もる",
+        "設計、製造、在庫の判断を同じ製品でつなぐ",
+        "例題：部品表から手配量を求める",
+        "異常時に誰がどの装置を動かすか考える"
+      ],
+      "explicitAnchors": [
+        "depth-engineering-iot",
+        "manufacturing-worked-plan",
+        "textbook-engineering-iot",
+        "textbook-engineering-iot-transfer"
+      ],
+      "assessment": "ip-engineering-iot-check",
+      "newQuestions": [
+        "ip-engineering-iot-textbook-1",
+        "ip-engineering-iot-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-ecommerce",
+      "order": 12,
+      "unit": 5,
+      "minutes": 85,
+      "syllabus": [
+        16
+      ],
+      "objectives": [
+        "取引の組合せと事業モデルを区別する",
+        "電子商取引の指標を計算する"
+      ],
+      "sections": [
+        "誰と誰が取引するか",
+        "収益の仕組みを比較する",
+        "広告と購入の指標",
+        "例：広告の効果を確認する",
+        "まとめ",
+        "注文、決済、出荷を分けて記録する",
+        "注文から入金までの状態と責任を追う",
+        "販売の場、支払の受付、商品の引渡しを分ける",
+        "便利な本人確認と、必要以上に集めない設計を両立する",
+        "注文、支払、引渡しの記録を照合する",
+        "例題：注文履歴に現れた例外を扱う",
+        "複数の取引で注文番号と返金をたどる"
+      ],
+      "explicitAnchors": [
+        "depth-ecommerce",
+        "textbook-ecommerce",
+        "textbook-ecommerce-transfer"
+      ],
+      "assessment": "ip-ecommerce-check",
+      "newQuestions": [
+        "ip-ecommerce-textbook-1",
+        "ip-ecommerce-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-system-strategy",
+      "order": 13,
+      "unit": 6,
+      "minutes": 105,
+      "syllabus": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "objectives": [
+        "全体最適と業務改革を説明する",
+        "クラウド等の利用形態を比較する"
+      ],
+      "sections": [
+        "経営とシステムの方向を合わせる",
+        "業務そのものを見直す",
+        "サービスとしてITを使う",
+        "導入後の活用と評価",
+        "例とまとめ",
+        "業務の目的からシステムの役割を決める",
+        "受付から記録までを描き、システム化の価値を測る",
+        "見えている症状から、変えるべき業務を探す",
+        "正本を決めてから、使いやすい接点を追加する",
+        "導入効果を測るとき、使わなかった人も分母に入れる",
+        "事業の目標を測れる業務変更へ落とす",
+        "例題：作業の流れから待ち時間を見つける",
+        "改善前後を同じ期間と単位で比較する",
+        "サービスを選ぶときは管理範囲を比べる",
+        "部門の提案を、共通の目標から比べる"
+      ],
+      "explicitAnchors": [
+        "depth-system-strategy",
+        "adoption-measure-case",
+        "textbook-system-strategy",
+        "textbook-system-strategy-transfer",
+        "textbook-system-strategy-provider",
+        "textbook-system-strategy-choice"
+      ],
+      "assessment": "ip-system-strategy-check",
+      "newQuestions": [
+        "ip-system-strategy-textbook-1",
+        "ip-system-strategy-textbook-2",
+        "ip-system-strategy-textbook-3",
+        "ip-system-strategy-textbook-4"
+      ]
+    },
+    {
+      "id": "ip-procurement",
+      "order": 14,
+      "unit": 7,
+      "minutes": 105,
+      "syllabus": [
+        22,
+        23,
+        24
+      ],
+      "objectives": [
+        "業務要件と非機能要件を整理する",
+        "RFIとRFPを使い分ける"
+      ],
+      "sections": [
+        "実現したいことを先に決める",
+        "要件を具体化する",
+        "調達の流れ",
+        "例：予約システムの要件",
+        "まとめ",
+        "要求を受入条件に変える",
+        "三つの資料を照合し、提案の良し悪しを決める",
+        "現状メモを、測れる要求と制約に変える",
+        "初期費用が安い提案をそのまま採用しない",
+        "総合演習：開館時の混雑対策を、要求書・見積り・試験記録から決める",
+        "導入計画から切替え、受入れ、契約終了まで考える",
+        "例題：要件を試験できる条件に変える",
+        "見積りの対象をそろえて費用を比較する",
+        "調達条件を、比較できる記録と契約へ落とす",
+        "利用者の要求と測定条件をそろえる"
+      ],
+      "explicitAnchors": [
+        "depth-procurement",
+        "procurement-document-case",
+        "textbook-procurement",
+        "textbook-procurement-transfer",
+        "textbook-procurement-contract",
+        "textbook-procurement-requirements"
+      ],
+      "assessment": "ip-procurement-check",
+      "newQuestions": [
+        "ip-procurement-textbook-1",
+        "ip-procurement-textbook-2",
+        "ip-procurement-textbook-3",
+        "ip-procurement-textbook-4"
+      ]
+    },
+    {
+      "id": "ip-development",
+      "order": 15,
+      "unit": 8,
+      "minutes": 60,
+      "syllabus": [
+        25
+      ],
+      "objectives": [
+        "開発工程とテストの目的を区別する",
+        "安全な移行と保守を計画する"
+      ],
+      "sections": [
+        "要件から実装へ進む",
+        "テストごとの役割",
+        "例：入力できる年齢が18〜65の画面",
+        "移行と保守",
+        "要求をテストできる形にする",
+        "「動く」の中身を四つに分ける",
+        "故障の範囲に合わせてテストを選ぶ",
+        "実績を評価して受入れと移行を決める",
+        "規模、工数、期間を分けて見積もる",
+        "自分で解く：現地発券機の連携",
+        "まとめ",
+        "要求から受入まで、同じ条件を追う",
+        "教科書演習：要件、設計、テストを一つの表で照合する",
+        "例題：同じ不具合を異なる視点で調べる",
+        "例題：平均値だけで負荷テストを合格にしない",
+        "運用開始後の変更を保守で扱う",
+        "自分で解く：移行した翌日の食い違い"
+      ],
+      "explicitAnchors": [
+        "depth-development-requirements",
+        "depth-development-quality",
+        "depth-development-test",
+        "depth-development-estimate",
+        "depth-development-practice",
+        "textbook-development",
+        "textbook-development-testing",
+        "textbook-development-load",
+        "textbook-development-maintenance",
+        "textbook-development-migration"
+      ],
+      "assessment": "ip-development-check",
+      "newQuestions": [
+        "ip-development-textbook-boundary",
+        "ip-development-textbook-views",
+        "ip-development-textbook-load",
+        "ip-development-textbook-migration",
+        "ip-development-textbook-estimate",
+        "ip-development-textbook-design",
+        "ip-development-textbook-maintenance"
+      ]
+    },
+    {
+      "id": "ip-agile",
+      "order": 16,
+      "unit": 9,
+      "minutes": 55,
+      "syllabus": [
+        26
+      ],
+      "objectives": [
+        "ウォーターフォールと反復開発を比較する",
+        "アジャイルの役割と継続的な改善を説明する"
+      ],
+      "sections": [
+        "開発の進め方を選ぶ",
+        "スクラムの基本",
+        "開発と運用をつなぐ",
+        "例：予約画面を小さく改善する",
+        "何がまだ分からないかで開発モデルを選ぶ",
+        "同じ仕事を流れと役割の両方から設計する",
+        "スプリントの結果を次の判断に使う",
+        "手順の合意と、組織の改善を見分ける",
+        "レビューの改善を、組織の成熟度で捉える",
+        "自分で解く：二つの不確実性を切り分ける",
+        "まとめ",
+        "短い反復で、完成品ではなく証拠を増やす",
+        "教科書演習：不確実性を読んで、進め方を組み立てる",
+        "一つの要求を三つの見方で表す",
+        "例題：動く画面を見せた後、何を変えるか",
+        "自分で解く：改善対象はモデルか、運用か"
+      ],
+      "explicitAnchors": [
+        "depth-agile-models",
+        "depth-agile-design",
+        "depth-agile-scrum",
+        "depth-agile-process",
+        "depth-agile-maturity",
+        "depth-agile-practice",
+        "textbook-agile",
+        "textbook-agile-modeling",
+        "textbook-agile-scrum",
+        "textbook-agile-mlops"
+      ],
+      "assessment": "ip-agile-check",
+      "newQuestions": [
+        "ip-agile-textbook-choose",
+        "ip-agile-textbook-uml",
+        "ip-agile-textbook-scrum",
+        "ip-agile-textbook-xp",
+        "ip-agile-textbook-model",
+        "ip-agile-textbook-framework"
+      ]
+    },
+    {
+      "id": "ip-project",
+      "order": 17,
+      "unit": 10,
+      "minutes": 65,
+      "syllabus": [
+        27
+      ],
+      "objectives": [
+        "WBSとスケジュールを関連付ける",
+        "制約とリスクを踏まえて計画する"
+      ],
+      "sections": [
+        "プロジェクトの特徴",
+        "依存関係と最短期間",
+        "例：並行作業の期間",
+        "変更とリスクを管理する",
+        "開始前に、何を終えたら成功かを決める",
+        "二つの経路で、何日まで待てるかを計算する",
+        "矢印に日数を書く図も同じ順序で読む",
+        "変更と進捗を、関係者が判断できる形で伝える",
+        "公開後の仕事を引き継ぎ、プロジェクトを終える",
+        "自分で解く：短縮案に効果があるか",
+        "まとめ",
+        "作業表を完成予定日に変える",
+        "合流点では遅い方を待つ",
+        "計画との差を二つの軸で読む",
+        "自分で確かめる",
+        "教科書演習：合流点の締切から作業の余裕を逆算する",
+        "条件変更：作業を短くしても公開が早まらない場合",
+        "自分で解く：何を報告すると判断できるか"
+      ],
+      "explicitAnchors": [
+        "depth-project-plan",
+        "depth-project-network",
+        "depth-project-control",
+        "depth-project-close",
+        "depth-project-practice",
+        "textbook-project",
+        "textbook-project-resources",
+        "textbook-project-report"
+      ],
+      "assessment": "ip-project-check",
+      "newQuestions": [
+        "ip-project-textbook-schedule",
+        "ip-project-textbook-slack",
+        "ip-project-textbook-resource",
+        "ip-project-textbook-risk",
+        "ip-project-textbook-close",
+        "ip-project-textbook-report"
+      ]
+    },
+    {
+      "id": "ip-reading-project-plans",
+      "order": 18,
+      "unit": 10,
+      "minutes": 50,
+      "syllabus": [
+        27
+      ],
+      "objectives": [
+        "前進計算と後退計算を行う",
+        "複数の短縮案を比較し、短縮後の経路を確かめる"
+      ],
+      "sections": [
+        "日数の足し方は作業のつながりで決まる",
+        "最短日数と余裕を求める",
+        "工期を縮めたら最長経路を計算し直す",
+        "短縮費用まで比べる",
+        "新しい条件で解く",
+        "解き直すときの確認"
+      ],
+      "explicitAnchors": [],
+      "assessment": "ip-reading-project-plans-check",
+      "newQuestions": [
+        "ip-reading-project-plans-textbook-join",
+        "ip-reading-project-plans-textbook-slack",
+        "ip-reading-project-plans-textbook-shortening",
+        "ip-reading-project-plans-textbook-budget"
+      ]
+    },
+    {
+      "id": "ip-services",
+      "order": 19,
+      "unit": 11,
+      "minutes": 65,
+      "syllabus": [
+        28,
+        29,
+        30
+      ],
+      "objectives": [
+        "インシデントと問題を区別する",
+        "SLAと継続的改善を説明する"
+      ],
+      "sections": [
+        "サービスを継続して届ける",
+        "障害の復旧と原因の除去",
+        "設備と運用の安全",
+        "例：予約システムが停止した",
+        "SLAの目標と、実測する指標を分ける",
+        "一つのサービスを計画から改善まで追う",
+        "問い合わせから復旧、恒久対応まで担当をつなぐ",
+        "障害の規模から、設備対策と継続策を選ぶ",
+        "自分で解く：合意、復旧、変更を分ける",
+        "まとめ",
+        "停止した窓口を戻す仕事と、再発を減らす仕事",
+        "教科書演習：サービスの申込みから復旧までを記録で追う",
+        "枠組みと合意文書を使い分ける",
+        "例題：月次報告の数値から改善を選ぶ",
+        "例題：停電対策と業務継続を時間軸で見る",
+        "設備の省エネルギー効果を測る",
+        "自分で解く：どの仕組みで何を減らすか"
+      ],
+      "explicitAnchors": [
+        "depth-services-measures",
+        "depth-services-lifecycle",
+        "depth-services-routing",
+        "depth-services-facilities",
+        "depth-services-practice",
+        "textbook-services",
+        "textbook-services-itil",
+        "textbook-services-report",
+        "textbook-services-power",
+        "textbook-services-green",
+        "textbook-services-continuity"
+      ],
+      "assessment": "ip-services-check",
+      "newQuestions": [
+        "ip-services-textbook-sla",
+        "ip-services-textbook-catalog",
+        "ip-services-textbook-change",
+        "ip-services-textbook-desk",
+        "ip-services-textbook-power",
+        "ip-services-textbook-pdca",
+        "ip-services-textbook-itil",
+        "ip-services-textbook-green"
+      ]
+    },
+    {
+      "id": "ip-audit",
+      "order": 20,
+      "unit": 12,
+      "minutes": 55,
+      "syllabus": [
+        31,
+        32
+      ],
+      "objectives": [
+        "監査の独立性と証拠を説明する",
+        "内部統制の目的と限界を理解する"
+      ],
+      "sections": [
+        "第三者の視点から確かめる",
+        "指摘から改善まで",
+        "内部統制は組織の仕組み",
+        "例：支払処理の職務分離",
+        "統制を動かす人と、独立して確かめる人",
+        "記録を組み合わせて、何が言えるかを判断する",
+        "監査で示せる結論と、改善を助言する範囲",
+        "自分で解く：例外が見つかった後に何をするか",
+        "まとめ",
+        "統制は設計と運用の両方を見る",
+        "教科書演習：規程・記録・面談から監査の結論を組み立てる",
+        "例題：例外を見つけた後に何を言えるか",
+        "監査の名称は主な目的から選ぶ",
+        "自分で解く：方針、実行、点検の責任を分ける"
+      ],
+      "explicitAnchors": [
+        "depth-audit-roles",
+        "depth-audit-evidence",
+        "depth-audit-assurance",
+        "depth-audit-practice",
+        "textbook-audit",
+        "textbook-audit-sampling",
+        "textbook-audit-scope",
+        "textbook-audit-governance"
+      ],
+      "assessment": "ip-audit-check",
+      "newQuestions": [
+        "ip-audit-textbook-purpose",
+        "ip-audit-textbook-proof",
+        "ip-audit-textbook-sample",
+        "ip-audit-textbook-follow",
+        "ip-audit-textbook-govern",
+        "ip-audit-textbook-scope"
+      ]
+    },
+    {
+      "id": "ip-binary",
+      "order": 21,
+      "unit": 13,
+      "minutes": 70,
+      "syllabus": [
+        33
+      ],
+      "objectives": [
+        "位取りと情報量を計算する",
+        "集合・論理演算を具体例で使う"
+      ],
+      "sections": [
+        "2進数の位取り",
+        "ビットとバイト",
+        "集合と論理",
+        "例とまとめ",
+        "ビットを読む順番と、表せる範囲",
+        "位の重みで10進数に直す",
+        "真偽を組み合わせる",
+        "自分で確かめる",
+        "固定されたビット幅で計算する",
+        "条件を変更すると、どの行が増えるか",
+        "受信した8桁を数値と条件に読み分ける",
+        "位取りから基数変換を組み立てる",
+        "借り、桁あふれ、符号の違いを別々に判断する",
+        "条件文を集合へ置き換える"
+      ],
+      "explicitAnchors": [
+        "textbook-binary",
+        "binary-textbook-skill-1",
+        "binary-textbook-skill-2",
+        "binary-textbook-skill-3"
+      ],
+      "assessment": "ip-binary-check",
+      "newQuestions": [
+        "ip-binary-textbook-1",
+        "ip-binary-textbook-2",
+        "ip-binary-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-statistics",
+      "order": 22,
+      "unit": 13,
+      "minutes": 75,
+      "syllabus": [
+        34
+      ],
+      "objectives": [
+        "代表値と散らばりを説明する",
+        "確率・期待値を計算する"
+      ],
+      "sections": [
+        "一つの数値だけで判断しない",
+        "例：対応時間を要約する",
+        "確率と期待値",
+        "データから結論へ進むとき",
+        "まとめ",
+        "分布の形と、確率の条件を読む",
+        "抽出のしかたから確率の式を決める",
+        "代表値と分布を別々に読む",
+        "グラフと制約を使って判断する",
+        "推定・検定・回帰が答える問いを分ける",
+        "変化率と合計を単位で確認する",
+        "同じ平均でも、標準偏差を実際に求めて比べる",
+        "仮定の下で珍しさを数え、判断の意味を確認する",
+        "小さな誤差が、比較結果を入れ替えるかを見る",
+        "調査の設計から、数字で言える範囲を決める",
+        "母集団と標本を決めてから選ぶ",
+        "全体の平均を求め直す",
+        "代表値とばらつきをセットで読む",
+        "回帰と最適化で結論の根拠を分ける"
+      ],
+      "explicitAnchors": [
+        "textbook-statistics",
+        "statistics-textbook-skill-1",
+        "statistics-textbook-skill-2",
+        "statistics-textbook-skill-3",
+        "statistics-textbook-skill-4"
+      ],
+      "assessment": "ip-statistics-check",
+      "newQuestions": [
+        "ip-statistics-textbook-1",
+        "ip-statistics-textbook-2",
+        "ip-statistics-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-ai-data",
+      "order": 23,
+      "unit": 13,
+      "minutes": 75,
+      "syllabus": [
+        35
+      ],
+      "objectives": [
+        "データとAIの学習・評価を区別する",
+        "生成AIの限界と安全な利用を説明する"
+      ],
+      "sections": [
+        "情報を表現し、誤りを検出する",
+        "データからモデルを作る",
+        "評価の目的を考える",
+        "生成AIと人の確認",
+        "例とまとめ",
+        "学習、評価、利用を分ける",
+        "連続した測定値をビット列にする",
+        "分類の成績を見逃しと誤警報に分ける",
+        "生成結果と参照元を照合する",
+        "文字の対応表と、推論の前提を確認する",
+        "仕組みを選ぶときは、規則とデータのどちらがそろっているかを見る",
+        "ニューラルネットワークの学習と出力を順に追う",
+        "画像・時系列・生成で、モデルの役割を見分ける",
+        "測定と学習の設計を、誤りの種類から選ぶ",
+        "時間の細かさと値の細かさを決める",
+        "画像の分割単位を決める",
+        "同じ正解率でも導入判断が違う",
+        "推論と生成結果を、前提や出典まで確認する"
+      ],
+      "explicitAnchors": [
+        "textbook-ai-data",
+        "ai-data-textbook-skill-1",
+        "ai-data-textbook-skill-2",
+        "ai-data-textbook-skill-3",
+        "ai-data-textbook-skill-4"
+      ],
+      "assessment": "ip-ai-data-check",
+      "newQuestions": [
+        "ip-ai-data-textbook-1",
+        "ip-ai-data-textbook-2",
+        "ip-ai-data-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-algorithms",
+      "order": 24,
+      "unit": 14,
+      "minutes": 70,
+      "syllabus": [
+        36,
+        37
+      ],
+      "objectives": [
+        "順次・分岐・反復を追跡する",
+        "探索とデータ構造を使い分ける"
+      ],
+      "sections": [
+        "処理を手順にする",
+        "例：合計を求める",
+        "データの持ち方",
+        "探索と整列",
+        "まとめ",
+        "途中の状態を書いて処理を追う",
+        "反復が終わったときの変数の意味を決める",
+        "データが整列しているときだけ探索範囲を半分にする",
+        "整列と併合を途中状態まで追う",
+        "木にしたときの親子と番号の違いを読む",
+        "途中の状態を書いて、処理を最後まで追う",
+        "配列を走査し、途中の値が表す意味を言う",
+        "探索に使う順序を先に確認する",
+        "データの入出順と探索効率を分ける",
+        "同じ値のときの規則まで追う"
+      ],
+      "explicitAnchors": [
+        "textbook-algorithms",
+        "algorithms-textbook-skill-1",
+        "algorithms-textbook-skill-2",
+        "algorithms-textbook-skill-3",
+        "algorithms-textbook-skill-4"
+      ],
+      "assessment": "ip-algorithms-check",
+      "newQuestions": [
+        "ip-algorithms-textbook-1",
+        "ip-algorithms-textbook-2",
+        "ip-algorithms-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-languages",
+      "order": 25,
+      "unit": 14,
+      "minutes": 60,
+      "syllabus": [
+        38,
+        39
+      ],
+      "objectives": [
+        "言語の役割を区別する",
+        "HTML・CSS・JSON等の用途を説明する"
+      ],
+      "sections": [
+        "プログラムの実行まで",
+        "オブジェクト指向と再利用",
+        "Webで役割を分ける",
+        "例：学習サイトの問題画面",
+        "まとめ",
+        "文書の構造、見た目、操作を分ける",
+        "表示・意味・動作をそれぞれ直す",
+        "変換の成功と実行結果を分ける",
+        "文書、データ、処理を役割で分ける",
+        "構文が合うことと業務上正しいことを分ける",
+        "画面を見て役割を判断する",
+        "翻訳の成功から結果の正しさを推測しない"
+      ],
+      "explicitAnchors": [
+        "textbook-languages",
+        "languages-textbook-skill-1",
+        "languages-textbook-skill-2",
+        "languages-textbook-skill-3"
+      ],
+      "assessment": "ip-languages-check",
+      "newQuestions": [
+        "ip-languages-textbook-1",
+        "ip-languages-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-computer",
+      "order": 26,
+      "unit": 15,
+      "minutes": 65,
+      "syllabus": [
+        40,
+        41,
+        42
+      ],
+      "objectives": [
+        "主要装置の役割と記憶階層を説明する",
+        "単純な処理時間を計算する"
+      ],
+      "sections": [
+        "コンピュータの基本要素",
+        "速さは一つの数字だけで決まらない",
+        "記憶装置の階層",
+        "入出力と接続",
+        "まとめ",
+        "命令とデータがどこにあるかを追う",
+        "処理が止まる場所をCPU・メモリ・入出力から探す",
+        "転送速度と端末の性能を切り分ける",
+        "読み込みと計算を分け、時間を使う場所を探す",
+        "1クロックと1命令を混同しない",
+        "時間の内訳から、機器変更後を見積もる",
+        "メモリの階層と保持条件を結び付ける",
+        "インタフェースの単位をそろえてボトルネックを見つける"
+      ],
+      "explicitAnchors": [
+        "textbook-computer",
+        "computer-textbook-skill-1",
+        "computer-textbook-skill-2",
+        "computer-textbook-skill-3",
+        "computer-textbook-skill-4"
+      ],
+      "assessment": "ip-computer-check",
+      "newQuestions": [
+        "ip-computer-textbook-1",
+        "ip-computer-textbook-2",
+        "ip-computer-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-architecture",
+      "order": 27,
+      "unit": 16,
+      "minutes": 70,
+      "syllabus": [
+        43,
+        44
+      ],
+      "objectives": [
+        "冗長化と負荷分散を区別する",
+        "稼働率と性能指標を計算する"
+      ],
+      "sections": [
+        "処理をどこで行うか",
+        "継続と処理能力を支える構成",
+        "稼働率を計算する",
+        "例と性能の見方",
+        "まとめ",
+        "どの部品が止まるとサービスも止まるか",
+        "直列と冗長を、停止条件から見分ける",
+        "速さ・処理量・復旧を別々に測る",
+        "サービスが止まる条件を先に書く",
+        "直列と並列の式を条件から組み立てる",
+        "稼働率を改善する二つの方法を比較する",
+        "仕事を分担する方式と配置を区別する",
+        "処理件数と一件の待ちを分けて測る"
+      ],
+      "explicitAnchors": [
+        "textbook-architecture",
+        "architecture-textbook-skill-1",
+        "architecture-textbook-skill-2",
+        "architecture-textbook-skill-3",
+        "architecture-textbook-skill-4"
+      ],
+      "assessment": "ip-architecture-check",
+      "newQuestions": [
+        "ip-architecture-textbook-1",
+        "ip-architecture-textbook-2",
+        "ip-architecture-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-os-files",
+      "order": 28,
+      "unit": 17,
+      "minutes": 60,
+      "syllabus": [
+        45,
+        46
+      ],
+      "objectives": [
+        "OSの資源管理を説明する",
+        "ファイルの経路と権限を扱う"
+      ],
+      "sections": [
+        "OSは資源を管理する",
+        "主記憶を使う仕組み",
+        "ファイルとディレクトリ",
+        "例：資料の共同利用",
+        "まとめ",
+        "保存、共有、復元を分けて考える",
+        "同じファイル名でも到達先が違う理由",
+        "利用者の権限と資源の不足を切り分ける",
+        "OSが分ける作業場所と、ファイルが置かれる場所",
+        "実行中の処理と保存済みファイルを区別する",
+        "メモリが足りないときの症状をつなげる",
+        "相対パスを一段ずつ移動して確認する",
+        "アクセスできない原因を切り分ける"
+      ],
+      "explicitAnchors": [
+        "textbook-os-files",
+        "os-files-textbook-skill-1",
+        "os-files-textbook-skill-2",
+        "os-files-textbook-skill-3",
+        "os-files-textbook-skill-4"
+      ],
+      "assessment": "ip-os-files-check",
+      "newQuestions": [
+        "ip-os-files-textbook-1",
+        "ip-os-files-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-office-oss",
+      "order": 29,
+      "unit": 17,
+      "minutes": 65,
+      "syllabus": [
+        47,
+        48
+      ],
+      "objectives": [
+        "表計算の参照と集計を説明する",
+        "OSSの利用条件と保守を確認する"
+      ],
+      "sections": [
+        "情報を整理して伝える道具",
+        "表計算の参照",
+        "集計と条件",
+        "OSSを安全に利用する",
+        "例とまとめ",
+        "同じ式をコピーしたときの参照を追う",
+        "コピーした式がどのセルを参照するか予測する",
+        "ソフトウェアを配る条件まで調べる",
+        "表計算のセルを読み、ソフトウェアの使い方を判断する",
+        "参照を移動量で読む",
+        "集計に含める行を明確にする",
+        "図と文書の機能を用途から選ぶ",
+        "ソフトを使う行為と再配布を分ける"
+      ],
+      "explicitAnchors": [
+        "textbook-office-oss",
+        "office-oss-textbook-skill-1",
+        "office-oss-textbook-skill-2",
+        "office-oss-textbook-skill-3",
+        "office-oss-textbook-skill-4"
+      ],
+      "assessment": "ip-office-oss-check",
+      "newQuestions": [
+        "ip-office-oss-textbook-1",
+        "ip-office-oss-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-reading-spreadsheets",
+      "order": 30,
+      "unit": 17,
+      "minutes": 50,
+      "syllabus": [
+        47
+      ],
+      "objectives": [
+        "数式を横・縦にコピーした結果を説明する",
+        "条件付き集計の対象を読み、誤った参照を検算で見つける"
+      ],
+      "sections": [
+        "コピーで何が動くかを一つずつ考える",
+        "縦横に同じ式を配る",
+        "条件の列と合計する列を見分ける",
+        "自分で確かめる",
+        "解き直すときの確認"
+      ],
+      "explicitAnchors": [],
+      "assessment": "ip-reading-spreadsheets-check",
+      "newQuestions": [
+        "ip-reading-spreadsheets-textbook-copy",
+        "ip-reading-spreadsheets-textbook-condition",
+        "ip-reading-spreadsheets-textbook-audit",
+        "ip-reading-spreadsheets-textbook-bottom"
+      ]
+    },
+    {
+      "id": "ip-hardware",
+      "order": 31,
+      "unit": 18,
+      "minutes": 55,
+      "syllabus": [
+        49
+      ],
+      "objectives": [
+        "機器の用途と制約を説明する",
+        "接続・保守・環境への配慮を考える"
+      ],
+      "sections": [
+        "用途によって構成が変わる",
+        "入出力装置を比較する",
+        "導入後の運用も考える",
+        "例：倉庫で使う端末",
+        "まとめ",
+        "入出力機器を、欲しいデータから選ぶ",
+        "機器の形状、信号、役割を順に確認する",
+        "作業用PCに接続された機器を見分ける",
+        "どの向きに情報が動くかを見る",
+        "機器をデータの行き先と現場の条件で選ぶ",
+        "紙から何を読みたいかで装置を選ぶ",
+        "端末の表示と出力の条件を確認する",
+        "同じ形の端子でも機能を確かめる",
+        "保存の容量と耐障害性を区別する"
+      ],
+      "explicitAnchors": [
+        "textbook-hardware",
+        "hardware-textbook-skill-1",
+        "hardware-textbook-skill-2",
+        "hardware-textbook-skill-3",
+        "hardware-textbook-skill-4"
+      ],
+      "assessment": "ip-hardware-check",
+      "newQuestions": [
+        "ip-hardware-textbook-1",
+        "ip-hardware-textbook-2",
+        "ip-hardware-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-design",
+      "order": 32,
+      "unit": 19,
+      "minutes": 60,
+      "syllabus": [
+        50,
+        51
+      ],
+      "objectives": [
+        "情報の構造と見た目の役割を説明する",
+        "アクセシビリティと誤操作防止を考える"
+      ],
+      "sections": [
+        "情報を見つけ、理解し、使えるようにする",
+        "人とシステムの接点",
+        "多様な利用者へ配慮する",
+        "例：記録の削除画面",
+        "まとめ",
+        "誤りの場所と直し方が分かる画面にする",
+        "申込画面を、入力して直せる順に設計する",
+        "同じ情報でも、探したい目的で並べ方を変える",
+        "申込画面を、情報を探す順と誤りを直す順から設計する",
+        "利用者の目的に合う情報の順序を選ぶ",
+        "操作できるかと、使いやすいかを確かめる",
+        "試作品で観察し、原因に合わせて直す",
+        "機器と利用環境を一緒に考える"
+      ],
+      "explicitAnchors": [
+        "textbook-design",
+        "design-textbook-skill-1",
+        "design-textbook-skill-2",
+        "design-textbook-skill-3",
+        "design-textbook-skill-4"
+      ],
+      "assessment": "ip-design-check",
+      "newQuestions": [
+        "ip-design-textbook-1",
+        "ip-design-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-media",
+      "order": 33,
+      "unit": 20,
+      "minutes": 65,
+      "syllabus": [
+        52,
+        53
+      ],
+      "objectives": [
+        "デジタル化と容量を計算する",
+        "メディア形式と圧縮の違いを説明する"
+      ],
+      "sections": [
+        "連続する情報を数値にする",
+        "例：音声と画像の容量",
+        "形式を使い分ける",
+        "圧縮と応用",
+        "まとめ",
+        "単位と圧縮条件をそろえて容量を計算する",
+        "データ量を「1回分 × 回数」で求める",
+        "復元の必要性から形式と圧縮を選ぶ",
+        "画像と音声の量を見積もり、使い道に合う形式を選ぶ",
+        "画像の寸法と色の細かさから計算する",
+        "時間、回数、チャネル数を順に掛ける",
+        "原版を残すか、配信時の小ささを優先するか決める",
+        "見られる人と場面を考えて配信する"
+      ],
+      "explicitAnchors": [
+        "textbook-media",
+        "media-textbook-skill-1",
+        "media-textbook-skill-2",
+        "media-textbook-skill-3",
+        "media-textbook-skill-4"
+      ],
+      "assessment": "ip-media-check",
+      "newQuestions": [
+        "ip-media-textbook-1",
+        "ip-media-textbook-2",
+        "ip-media-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-database",
+      "order": 34,
+      "unit": 21,
+      "minutes": 65,
+      "syllabus": [
+        54,
+        55
+      ],
+      "objectives": [
+        "主キーと外部キーの役割を説明する",
+        "重複による更新の不整合を防ぐ"
+      ],
+      "sections": [
+        "データを共有して管理する",
+        "識別と関連を決める",
+        "例：顧客と注文を分ける",
+        "正規化と検索",
+        "まとめ",
+        "注文データから、何を一度だけ保存するか考える",
+        "注文の行が何を一意に表すか決める",
+        "対応関係を保存する表を決める",
+        "一行が何を表すかを決め、変更しても壊れない表を作る",
+        "一意になる値と、対応を示す値を区別する",
+        "更新で一部だけ古くなる理由を追う",
+        "多対多の対応を一つの欄へ押し込まない",
+        "表を結合する前に行数の変化を予想する"
+      ],
+      "explicitAnchors": [
+        "textbook-database",
+        "database-textbook-skill-1",
+        "database-textbook-skill-2",
+        "database-textbook-skill-3",
+        "database-textbook-skill-4"
+      ],
+      "assessment": "ip-database-check",
+      "newQuestions": [
+        "ip-database-textbook-1",
+        "ip-database-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-sql-transactions",
+      "order": 35,
+      "unit": 21,
+      "minutes": 75,
+      "syllabus": [
+        56,
+        57
+      ],
+      "objectives": [
+        "検索・集計の基本を読む",
+        "同時更新と復旧の必要性を説明する"
+      ],
+      "sections": [
+        "必要なデータを取り出す",
+        "例：在庫数を合計する",
+        "ひとまとまりの処理",
+        "例：口座間の振替",
+        "まとめ",
+        "抽出、集計、更新の境界を追う",
+        "行の絞込みとグループの絞込みを区別する",
+        "一緒に終えるべき処理をひとまとまりにする",
+        "行、グループ、取引のどれを処理しているかを見る",
+        "絞る対象を一段ずつ確かめる",
+        "件数を求めるときに欠けた値を確認する",
+        "変更をひとまとまりとして扱う",
+        "同時実行時に一件ずつの正しさを考える",
+        "集計結果を、小さな表から手で再現する"
+      ],
+      "explicitAnchors": [
+        "textbook-sql-transactions",
+        "sql-transactions-textbook-skill-1",
+        "sql-transactions-textbook-skill-2",
+        "sql-transactions-textbook-skill-3",
+        "sql-transactions-textbook-skill-4",
+        "textbook-sql-join-case"
+      ],
+      "assessment": "ip-sql-transactions-check",
+      "newQuestions": [
+        "ip-sql-transactions-textbook-1",
+        "ip-sql-transactions-textbook-2",
+        "ip-sql-transactions-textbook-3",
+        "ip-sql-transactions-textbook-4",
+        "ip-sql-transactions-textbook-5"
+      ]
+    },
+    {
+      "id": "ip-network",
+      "order": 36,
+      "unit": 22,
+      "minutes": 65,
+      "syllabus": [
+        58
+      ],
+      "objectives": [
+        "通信機器と接続範囲を区別する",
+        "帯域と転送時間を計算する"
+      ],
+      "sections": [
+        "ネットワークの範囲と機器",
+        "有線と無線",
+        "速さを計算する",
+        "運用と分離",
+        "まとめ",
+        "転送する相手と、経路の範囲を見分ける",
+        "端末から外のネットワークまでを区切って調べる",
+        "回線の速度と待ちを分けて見積もる",
+        "IoTの回線を距離・電力・量から選ぶ",
+        "LANを分ける理由と、機器が選ぶ宛先を考える",
+        "配線できない場所で、無線の使い方を選ぶ",
+        "同じネットワークの内側と外側を、通信経路に沿って調べる",
+        "同じLANで届くことと、LANの外へ届くこと",
+        "無線でつながることと、十分な速度で届くこと",
+        "ビット毎秒と遅延を別々に見積もる",
+        "用途の異なる機器を同じ範囲へ置かない",
+        "同じアドレス範囲かどうかを、先頭の共通部分で判断する"
+      ],
+      "explicitAnchors": [
+        "textbook-network",
+        "network-textbook-skill-1",
+        "network-textbook-skill-2",
+        "network-textbook-skill-3",
+        "network-textbook-skill-4",
+        "textbook-network-prefix"
+      ],
+      "assessment": "ip-network-check",
+      "newQuestions": [
+        "ip-network-textbook-1",
+        "ip-network-textbook-2",
+        "ip-network-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-protocols",
+      "order": 37,
+      "unit": 22,
+      "minutes": 65,
+      "syllabus": [
+        59,
+        60
+      ],
+      "objectives": [
+        "代表的なプロトコルの役割を説明する",
+        "アドレスと名前の関係を理解する"
+      ],
+      "sections": [
+        "通信の約束を階層に分ける",
+        "アドレスとネットワーク",
+        "Webとメール",
+        "例：URLを開くまで",
+        "まとめ",
+        "名前を引き、接続し、要求を送る",
+        "ブラウザでページを開くまでの通信を追う",
+        "送るものと優先する性質から方式を選ぶ",
+        "層をたどると、正常な区間を切り分けられる",
+        "移動先の接続と契約の条件を読む",
+        "接続、名前解決、認証を別々の成功条件として読む",
+        "端末の設定と名前の問い合わせを分ける",
+        "転送の性質とアプリの役割を切り分ける",
+        "送るメールと受け取ったメールを分ける",
+        "携帯通信の切替えと契約を区別する"
+      ],
+      "explicitAnchors": [
+        "textbook-protocols",
+        "protocols-textbook-skill-1",
+        "protocols-textbook-skill-2",
+        "protocols-textbook-skill-3",
+        "protocols-textbook-skill-4"
+      ],
+      "assessment": "ip-protocols-check",
+      "newQuestions": [
+        "ip-protocols-textbook-1",
+        "ip-protocols-textbook-2",
+        "ip-protocols-textbook-3"
+      ]
+    },
+    {
+      "id": "ip-security-risk",
+      "order": 38,
+      "unit": 23,
+      "minutes": 65,
+      "syllabus": [
+        61,
+        62
+      ],
+      "objectives": [
+        "機密性・完全性・可用性を説明する",
+        "リスク対応と事故対応を考える"
+      ],
+      "sections": [
+        "守る対象と性質",
+        "脅威と脆弱性を分ける",
+        "組織で継続して管理する",
+        "例：誤送信に気付いたら",
+        "まとめ",
+        "資産、困ること、対策をつなげる",
+        "資産への影響から優先順位を付ける",
+        "対応を選び、残るリスクを引き受ける人を決める",
+        "失うと困るものを決め、対策後に何が残るかを考える",
+        "CIAを被害の違いから理解する",
+        "脅威、弱点、影響を一文ずつ書く",
+        "リスク対応の種類と限界を判断する",
+        "管理を見直す条件を決める"
+      ],
+      "explicitAnchors": [
+        "textbook-security-risk",
+        "security-risk-textbook-skill-1",
+        "security-risk-textbook-skill-2",
+        "security-risk-textbook-skill-3",
+        "security-risk-textbook-skill-4"
+      ],
+      "assessment": "ip-security-risk-check",
+      "newQuestions": [
+        "ip-security-risk-textbook-1",
+        "ip-security-risk-textbook-2"
+      ]
+    },
+    {
+      "id": "ip-security-controls",
+      "order": 39,
+      "unit": 23,
+      "minutes": 70,
+      "syllabus": [
+        63
+      ],
+      "objectives": [
+        "代表的な攻撃と対策を対応させる",
+        "予防・検知・復旧を組み合わせる"
+      ],
+      "sections": [
+        "人を狙う攻撃とマルウェア",
+        "Webと通信への攻撃",
+        "対策を重ねる",
+        "認証と権限",
+        "例とまとめ",
+        "予防、検知、復旧の役割を組み合わせる",
+        "予防・検知・復旧を別々に組み立てる",
+        "確認したい性質に対策を結び付ける",
+        "予防、検知、復旧を、守りたい業務に割り当てる",
+        "認証と認可を順に考える",
+        "異常に気付き、事実を確認する",
+        "復旧の目標を記録時点と時間に分ける",
+        "変更できる場所と復元する場所を分ける",
+        "店舗の端末紛失と通信障害に、違う層の備えを選ぶ"
+      ],
+      "explicitAnchors": [
+        "textbook-security-controls",
+        "security-controls-textbook-skill-1",
+        "security-controls-textbook-skill-2",
+        "security-controls-textbook-skill-3",
+        "security-controls-textbook-skill-4",
+        "textbook-controls-layered"
+      ],
+      "assessment": "ip-security-controls-check",
+      "newQuestions": [
+        "ip-security-controls-textbook-1",
+        "ip-security-controls-textbook-2",
+        "ip-security-controls-textbook-3",
+        "ip-security-controls-textbook-4",
+        "ip-security-controls-textbook-5"
+      ]
+    },
+    {
+      "id": "ip-cryptography",
+      "order": 40,
+      "unit": 23,
+      "minutes": 65,
+      "syllabus": [
+        63
+      ],
+      "objectives": [
+        "共通鍵と公開鍵を区別する",
+        "署名と証明書の役割を説明する"
+      ],
+      "sections": [
+        "暗号は鍵と目的を分けて考える",
+        "ハッシュは復号するための暗号ではない",
+        "電子署名と公開鍵の確認",
+        "例：契約書を安全に送る",
+        "まとめ",
+        "暗号化と署名では、守る目的が異なる",
+        "書類を誰の鍵で扱うか整理する",
+        "検証できる内容と証明書の範囲を確かめる",
+        "秘密にする、改変を確かめる、送信者を確かめる",
+        "共通鍵と公開鍵の使い分け",
+        "ハッシュと署名が示すものを分ける",
+        "証明書は何を結び付けるか",
+        "目的を組み合わせる順序を言葉にする",
+        "本人拒否と他人受入を別々に数える"
+      ],
+      "explicitAnchors": [
+        "textbook-cryptography",
+        "cryptography-textbook-skill-1",
+        "cryptography-textbook-skill-2",
+        "cryptography-textbook-skill-3",
+        "cryptography-textbook-skill-4",
+        "textbook-crypto-biometric"
+      ],
+      "assessment": "ip-cryptography-check",
+      "newQuestions": [
+        "ip-cryptography-textbook-1",
+        "ip-cryptography-textbook-2",
+        "ip-cryptography-textbook-3",
+        "ip-cryptography-textbook-4",
+        "ip-cryptography-textbook-5"
+      ]
+    }
+  ]
+}

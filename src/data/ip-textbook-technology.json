@@ -1,0 +1,838 @@
+{
+  "ip-binary": [
+    {
+      "id": "ip-binary-textbook-1",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "符号なし6ビットの110111に001101を足したとき、下位6ビットを10進数にした値を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "110111は55、001101は13です。数学上の和68から6ビットを超える64の桁を除くと、下位6ビットの値は4です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "4"
+      ]
+    },
+    {
+      "id": "ip-binary-textbook-2",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "ある一覧でAが8件、Bが7件、AとBの両方が3件。AとBのうち一方だけの件数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "Aだけは8−3＝5件、Bだけは7−3＝4件です。和集合12件には両方も含まれます。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "9"
+      ]
+    },
+    {
+      "id": "ip-binary-textbook-3",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "2の補数で表した8ビットのF6（16進数）の値はどれですか。",
+      "options": [
+        "−10",
+        "246",
+        "−9",
+        "10"
+      ],
+      "answer": 0,
+      "explanation": "F6は11110110。符号なしなら246ですが、符号つき8ビットで最上位が1なので246−256＝−10です。"
+    }
+  ],
+  "ip-statistics": [
+    {
+      "id": "ip-statistics-textbook-1",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "A窓口で30人が平均8分、B窓口で70人が平均18分待った。全員の平均待ち時間を分単位で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "延べ待ち時間は30×8＋70×18＝1,500分。100人で割ると15分です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "15"
+      ]
+    },
+    {
+      "id": "ip-statistics-textbook-2",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "6人から同じ役割の係を2人選ぶ方法は何通りですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "順序を付けると6×5＝30通り。同じペアを逆順でも数えているため2で割り15通りです。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "15"
+      ]
+    },
+    {
+      "id": "ip-statistics-textbook-3",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "来客数が多い日は待ち時間も長かった。効果の説明で最も適切なのはどれですか。",
+      "options": [
+        "来客数だけが原因と断定する",
+        "時間帯や担当人数を確認し、条件をそろえた比較を行う",
+        "相関があるなら増員の効果を測る必要はない",
+        "平均待ち時間は計算できない"
+      ],
+      "answer": 1,
+      "explanation": "曜日や担当人数などが両方に関係している可能性があります。比較条件を調べれば因果の判断材料を増やせます。"
+    }
+  ],
+  "ip-ai-data": [
+    {
+      "id": "ip-ai-data-textbook-1",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "毎秒500回、1回16ビットの測定値を3秒保存する。付加情報を除くバイト数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "500×16×3＝24,000ビット。8で割ると3,000バイトです。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "3000"
+      ]
+    },
+    {
+      "id": "ip-ai-data-textbook-2",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "異常50件中40件を検出したが、正常品20件も誤って止めた。再現率を百分率の数値だけで入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "再現率の分母は実際の異常50件です。40÷50×100＝80。停止品60件を分母にするのは適合率です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "80"
+      ]
+    },
+    {
+      "id": "ip-ai-data-textbook-3",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "同一人物を連続撮影した画像で、未見の人に使えるか調べたい。最も直接的な分割方針はどれですか。",
+      "options": [
+        "画素単位で混ぜる",
+        "同じ人物の別画像を学習用・評価用の両方に必ず入れる",
+        "人物単位で分け、評価用の人物が学習に含まれないようにする",
+        "全画像で学習してその同じ画像だけで評価する"
+      ],
+      "answer": 2,
+      "explanation": "知りたいのは人物が変わったときの性能です。同じ人物が両側に入ると背景や顔を覚えた効果で評価が高く見えることがあります。"
+    }
+  ],
+  "ip-algorithms": [
+    {
+      "id": "ip-algorithms-textbook-1",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "初期値s＝0。配列 [8, 3, 10, 2] を順に読み、5以上ならsに値を加え、それ以外ならsから2を引く。最終値を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "8→6→16→14です。小さい値そのものを引くのではなく、規則どおり2を引きます。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "14"
+      ]
+    },
+    {
+      "id": "ip-algorithms-textbook-2",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "昇順の配列 [2, 4, 7, 9, 15, 18, 20] を二分探索し、15を探す。最初に9と比較した直後の候補はどれですか。",
+      "options": [
+        "2、4、7",
+        "9、15",
+        "15、18、20",
+        "配列のすべて"
+      ],
+      "answer": 2,
+      "explanation": "中央9より15が大きく、昇順なので9以下の左側を候補から除けます。"
+    },
+    {
+      "id": "ip-algorithms-textbook-3",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "A、Bの順でスタックに入れ、1個取り出し、Cを入れてもう1個取り出した。取り出した順はどれですか。",
+      "options": [
+        "A、B",
+        "B、C",
+        "C、B",
+        "A、C"
+      ],
+      "answer": 1,
+      "explanation": "最初は最後に入れたB。その次はAの上に追加したCを取り出します。"
+    }
+  ],
+  "ip-languages": [
+    {
+      "id": "ip-languages-textbook-1",
+      "lesson": "ip-languages",
+      "field": "technology",
+      "prompt": "数量欄が数値を要求する受信仕様だが、送信JSONには文字列の「12」が入る。どの点検が必要ですか。",
+      "options": [
+        "文字列でも記号が整っていれば仕様に合う",
+        "表示色の変更だけで解決する",
+        "構文に加え、受信仕様の型と値を確認する",
+        "実行できる機械語へ変換する"
+      ],
+      "answer": 2,
+      "explanation": "構文として表せても、データ型が受け手の仕様と一致するとは限りません。"
+    },
+    {
+      "id": "ip-languages-textbook-2",
+      "lesson": "ip-languages",
+      "field": "technology",
+      "prompt": "「5個以上で送料無料」の処理が6個では成功するが5個で失敗する。どの確認が直接役立ちますか。",
+      "options": [
+        "5個とその前後を入力して比較条件を検証する",
+        "CSSの配色だけを比較する",
+        "コンパイルが通れば完了とする",
+        "XMLの閉じタグだけを見る"
+      ],
+      "answer": 0,
+      "explanation": "5が境界です。4、5、6の期待値と結果を照合すれば、以上と超過の取り違えを検出できます。"
+    }
+  ],
+  "ip-computer": [
+    {
+      "id": "ip-computer-textbook-1",
+      "lesson": "ip-computer",
+      "field": "technology",
+      "prompt": "読込み8秒、計算12秒、保存4秒。計算だけが3倍速くなると全体で何秒かかりますか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "計算12÷3＝4秒なので8＋4＋4＝16秒です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "16"
+      ]
+    },
+    {
+      "id": "ip-computer-textbook-2",
+      "lesson": "ip-computer",
+      "field": "technology",
+      "prompt": "2.5 GHzで1命令に5周期かかると仮定する。1命令の時間をナノ秒単位で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "5÷(2.5×10の9乗)秒＝2×10の−9乗秒です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "2"
+      ]
+    },
+    {
+      "id": "ip-computer-textbook-3",
+      "lesson": "ip-computer",
+      "field": "technology",
+      "prompt": "同じ配列を繰り返し参照する処理でキャッシュの直接の役割はどれですか。",
+      "options": [
+        "電源断後も計算を続ける",
+        "頻出データをCPUの近くに置き主記憶へのアクセスを減らす",
+        "すべてのファイルを恒久保存する",
+        "表示装置の解像度を上げる"
+      ],
+      "answer": 1,
+      "explanation": "キャッシュは高速な一時記憶です。恒久保存や出力画面の仕様とは別の役割です。"
+    }
+  ],
+  "ip-architecture": [
+    {
+      "id": "ip-architecture-textbook-1",
+      "lesson": "ip-architecture",
+      "field": "technology",
+      "prompt": "稼働率0.9の装置2台が両方動く経路Aと、稼働率0.8の装置1台で動く経路Bがある。故障は互いに独立とし、どちらか一方の経路が動けばサービスを使える。全体の稼働率を小数で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "Aの稼働率は0.9×0.9＝0.81。AとBがともに停止する確率は(1−0.81)×(1−0.8)＝0.038。これを1から引くと0.962です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "0.962"
+      ]
+    },
+    {
+      "id": "ip-architecture-textbook-2",
+      "lesson": "ip-architecture",
+      "field": "technology",
+      "prompt": "MTBFが180時間、MTTRが20時間の設備の稼働率を百分率の数値だけで入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "180÷(180＋20)＝0.9、百分率では90です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "90"
+      ]
+    },
+    {
+      "id": "ip-architecture-textbook-3",
+      "lesson": "ip-architecture",
+      "field": "technology",
+      "prompt": "同じ物理機にある二つの仮想サーバを独立故障の冗長構成とみなすとき、何を確認しますか。",
+      "options": [
+        "両方のサーバの名前の長さ",
+        "物理機の故障で同時に停止しないか",
+        "両方の機器の色",
+        "メニューの並び順"
+      ],
+      "answer": 1,
+      "explanation": "仮想環境が分かれていても物理機を共有するなら、単一の故障で両方が止まる可能性があります。"
+    }
+  ],
+  "ip-os-files": [
+    {
+      "id": "ip-os-files-textbook-1",
+      "lesson": "ip-os-files",
+      "field": "technology",
+      "prompt": "作業場所が /shop/log/july のとき、相対パス ../../master/items.csv が指す先はどれですか。",
+      "options": [
+        "/shop/log/master/items.csv",
+        "/shop/master/items.csv",
+        "/master/items.csv",
+        "/shop/log/july/master/items.csv"
+      ],
+      "answer": 1,
+      "explanation": "julyからlogへ、logからshopへ二段上がってからmasterに移ります。"
+    },
+    {
+      "id": "ip-os-files-textbook-2",
+      "lesson": "ip-os-files",
+      "field": "technology",
+      "prompt": "主記憶の空きが足りず補助記憶との入替えが多発している。説明として適切なのはどれですか。",
+      "options": [
+        "補助記憶に空きがある限り速度は同じ",
+        "ドライバの名称が変わるだけ",
+        "補助記憶への待ちが増えて処理が遅くなる場合がある",
+        "すべての仕事が並列になる"
+      ],
+      "answer": 2,
+      "explanation": "補助記憶は主記憶より一般に遅く、入替えが頻繁なら待ちが増えます。"
+    }
+  ],
+  "ip-office-oss": [
+    {
+      "id": "ip-office-oss-textbook-1",
+      "lesson": "ip-office-oss",
+      "field": "technology",
+      "prompt": "セルの式 =$A3*B$2 を右へ1列、下へ2行コピーする。移動後の式はどれですか。",
+      "options": [
+        "=$A5*C$2",
+        "=$B5*C$4",
+        "=$A3*B$2",
+        "=$A5*B$4"
+      ],
+      "answer": 0,
+      "explanation": "列Aと行2は固定。3行目は5、B列はCになります。"
+    },
+    {
+      "id": "ip-office-oss-textbook-2",
+      "lesson": "ip-office-oss",
+      "field": "technology",
+      "prompt": "OSSを改変して顧客へ配布する前に必要な対応はどれですか。",
+      "options": [
+        "無償なら条件を確認しない",
+        "パッケージ名だけ変える",
+        "ライセンスの再配布・表示・ソース提供の条件を確認する",
+        "企業内で使ったことを理由に配布条件を無視する"
+      ],
+      "answer": 2,
+      "explanation": "利用できることと、改変したものを配布する条件は別です。該当ライセンスと依存部品を確認します。"
+    }
+  ],
+  "ip-hardware": [
+    {
+      "id": "ip-hardware-textbook-1",
+      "lesson": "ip-hardware",
+      "field": "technology",
+      "prompt": "紙の契約書の見た目を残し、本文の語で検索したい。適した組合せはどれですか。",
+      "options": [
+        "画像の取込みとOCR",
+        "バーコードの読取りだけ",
+        "プリンタの解像度だけを上げる",
+        "SSDを接続するだけ"
+      ],
+      "answer": 0,
+      "explanation": "画像を保存した上でOCRによる文字データを作ります。読み違いがあり得るため原画像を残します。"
+    },
+    {
+      "id": "ip-hardware-textbook-2",
+      "lesson": "ip-hardware",
+      "field": "technology",
+      "prompt": "一日150件を1件4 MBで20日保管する。10進換算のGB数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "150×4×20＝12,000 MB。1 GB＝1,000 MBとして12 GBです。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "12"
+      ]
+    },
+    {
+      "id": "ip-hardware-textbook-3",
+      "lesson": "ip-hardware",
+      "field": "technology",
+      "prompt": "USB Type-C形状の端子にモニターを接続しても映らない。まず確かめる事項はどれですか。",
+      "options": [
+        "端子の形が同じなので故障と断定する",
+        "PCとケーブルが映像出力に対応し、モニターの入力選択が合っているか",
+        "モニターにSSDを追加する",
+        "PCの保存容量だけを増やす"
+      ],
+      "answer": 1,
+      "explanation": "形状は適合条件の一つです。信号の対応と入力の設定もそろえる必要があります。"
+    }
+  ],
+  "ip-design": [
+    {
+      "id": "ip-design-textbook-1",
+      "lesson": "ip-design",
+      "field": "technology",
+      "prompt": "初めて来た利用者が、駅に近い会場から探せる一覧が必要です。主な整理基準はどれですか。",
+      "options": [
+        "開催時間",
+        "場所",
+        "催し名の五十音順",
+        "担当者の役職"
+      ],
+      "answer": 1,
+      "explanation": "駅からの近さで探すため場所の情報を使います。開催時刻を決めて探す場合は時間が役立ちます。"
+    },
+    {
+      "id": "ip-design-textbook-2",
+      "lesson": "ip-design",
+      "field": "technology",
+      "prompt": "エラーが色でしか分からず、入力値も消える。直接役立つ改善はどれですか。",
+      "options": [
+        "文字で条件を示し、入力値を保持して該当欄を直せるようにする",
+        "色を別の色に変えるだけ",
+        "利用者に初めから入力させる",
+        "すべてのエラーを別画面に隠す"
+      ],
+      "answer": 0,
+      "explanation": "エラー箇所と修正方法が分かり、直せる状態を用意します。"
+    }
+  ],
+  "ip-media": [
+    {
+      "id": "ip-media-textbook-1",
+      "lesson": "ip-media",
+      "field": "technology",
+      "prompt": "640×480画素、1画素24ビットの無圧縮画像1枚のバイト数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "640×480×24÷8＝921,600バイトです。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "921600"
+      ]
+    },
+    {
+      "id": "ip-media-textbook-2",
+      "lesson": "ip-media",
+      "field": "technology",
+      "prompt": "毎秒22,000回、16ビット、1チャネルの無圧縮音声を4秒記録する。バイト数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "22,000×16×1×4÷8＝176,000です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "176000"
+      ]
+    },
+    {
+      "id": "ip-media-textbook-3",
+      "lesson": "ip-media",
+      "field": "technology",
+      "prompt": "図の座標を後から調整し、異なる大きさで輪郭を保ちたい。編集用原版に向くのはどれですか。",
+      "options": [
+        "座標や形を持つベクタ形式",
+        "写真を一度印刷した紙だけ",
+        "解像度を下げた画像のスクリーンショットだけ",
+        "音声形式"
+      ],
+      "answer": 0,
+      "explanation": "ベクタ形式は線や図形の座標を保持するので、拡大や形の修正に対応しやすくなります。"
+    }
+  ],
+  "ip-database": [
+    {
+      "id": "ip-database-textbook-1",
+      "lesson": "ip-database",
+      "field": "technology",
+      "prompt": "一人が同じ年度の同じ講座に一回だけ申込み、翌年度には同じ講座へ再申込みできる。申込を区別する組として適切なのはどれですか。",
+      "options": [
+        "受講者IDだけ",
+        "講座IDと受講者IDだけ",
+        "受講者ID、講座ID、年度",
+        "申込時の料金だけ"
+      ],
+      "answer": 2,
+      "explanation": "年度が異なる申込は別行なので、受講者・講座・年度を合わせて区別します。"
+    },
+    {
+      "id": "ip-database-textbook-2",
+      "lesson": "ip-database",
+      "field": "technology",
+      "prompt": "価格改定後も申込時に合意した金額を表示したい。申込表に残すべき値はどれですか。",
+      "options": [
+        "申込時の料金",
+        "現在価格だけを参照するIDのみ",
+        "講座名を連結した文字列",
+        "最新価格をすべての過去行に上書きする値"
+      ],
+      "answer": 0,
+      "explanation": "申込時の料金は取引が成立した時点の値です。最新の価格とは別に持ちます。"
+    }
+  ],
+  "ip-sql-transactions": [
+    {
+      "id": "ip-sql-transactions-textbook-1",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "店舗別合計が500以上の店舗だけを出力するため、合計を条件とする句はどれですか。",
+      "options": [
+        "ORDER BY",
+        "WHERE（個々の取引を対象にする）",
+        "HAVING",
+        "SELECTだけで条件なし"
+      ],
+      "answer": 2,
+      "explanation": "店舗ごとに集計した後の合計を条件にするのでHAVINGです。"
+    },
+    {
+      "id": "ip-sql-transactions-textbook-2",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "集計対象に数値0、NULL、数値6が一行ずつある。COUNT(金額)の結果を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "0と6は値として存在し、NULLは数えません。COUNT(*)なら3です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "2"
+      ]
+    },
+    {
+      "id": "ip-sql-transactions-textbook-3",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "受講登録と残席更新の途中でエラーが起きた。一方だけを残さない性質はどれですか。",
+      "options": [
+        "耐久性",
+        "原子性",
+        "応答時間",
+        "参照の絶対固定"
+      ],
+      "answer": 1,
+      "explanation": "トランザクション全体を成功または取消しのどちらかにする性質が原子性です。"
+    },
+    {
+      "id": "ip-sql-transactions-textbook-4",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "C店の完了伝票が220円と420円、取消伝票が80円。完了だけの店別合計が600円以上の店を出す。C店の表示額を円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "取消を先に除きます。220＋420＝640円で、600円以上なのでC店を出します。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "640"
+      ]
+    },
+    {
+      "id": "ip-sql-transactions-textbook-5",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "確定した取引がバックアップ取得時刻より後だった。復元で確定分まで反映したいとき、バックアップと合わせて何を確認しますか。",
+      "options": [
+        "更新記録があり、確定済みの変更を反映できるか",
+        "伝票を表示する文字の色",
+        "集計結果の列の順番",
+        "失敗した変更も確定済みとして扱うか"
+      ],
+      "answer": 0,
+      "explanation": "バックアップ以降の確定済みの変更を反映できる記録が必要です。途中で失敗した変更は確定分とは分けます。"
+    }
+  ],
+  "ip-network": [
+    {
+      "id": "ip-network-textbook-1",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "24 MBのファイルを実効48 Mbit/sで送る。通信開始時の待ちは除く。必要な秒数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "24 MB＝192 Mbit。192÷48＝4秒です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "4"
+      ]
+    },
+    {
+      "id": "ip-network-textbook-2",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "複数端末が同じLAN内の機器には接続できるが、他拠点へ一斉につながらない。次に点検する対象はどれですか。",
+      "options": [
+        "各端末の画像の解像度",
+        "各端末のキーボード",
+        "全端末のファイル名",
+        "外部へ出る共通の経路と他拠点の状態"
+      ],
+      "answer": 3,
+      "explanation": "ローカル経路の一部は使えています。影響範囲を踏まえ、共通する外部経路と相手先を確認します。"
+    },
+    {
+      "id": "ip-network-textbook-3",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "192.0.2.25/26 と同じネットワーク範囲に入るアドレスはどれですか。",
+      "options": [
+        "192.0.2.80",
+        "192.0.2.140",
+        "192.0.2.59",
+        "192.0.2.208"
+      ],
+      "answer": 2,
+      "explanation": "/26は残り6ビットなので0〜63の範囲に25と59が含まれます。ほかは範囲が異なります。"
+    }
+  ],
+  "ip-protocols": [
+    {
+      "id": "ip-protocols-textbook-1",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "Webサービス名から接続先の情報を調べる仕組みはどれですか。",
+      "options": [
+        "DHCP",
+        "DNS",
+        "SMTP",
+        "NTP"
+      ],
+      "answer": 1,
+      "explanation": "名前に対応する情報を問い合わせるのはDNSです。DHCPは端末へ設定を渡します。"
+    },
+    {
+      "id": "ip-protocols-textbook-2",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "4 GBまで月1,800円、超過1 GB当たり350円で7 GB使用した。税込などの追加条件はない。料金を円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "超過は3 GBです。1,800＋3×350＝2,850円です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "2850"
+      ]
+    },
+    {
+      "id": "ip-protocols-textbook-3",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "HTTPSで接続先の確認ができても、利用者が発注承認できるかは何で決まりますか。",
+      "options": [
+        "画像の種類",
+        "サービスの認可設定",
+        "DNSの検索順",
+        "通信ケーブルの色"
+      ],
+      "answer": 1,
+      "explanation": "通信相手の確認と、ログインした人に認める操作は別です。サービスの権限を確認します。"
+    }
+  ],
+  "ip-security-risk": [
+    {
+      "id": "ip-security-risk-textbook-1",
+      "lesson": "ip-security-risk",
+      "field": "technology",
+      "prompt": "公開中の価格が許可なく変更され、ページ自体は閲覧できる。まず失われた性質はどれですか。",
+      "options": [
+        "可用性",
+        "完全性",
+        "機密性",
+        "可搬性"
+      ],
+      "answer": 1,
+      "explanation": "正しい価格が保たれていないため完全性の問題です。閲覧はできているので、その事実だけから可用性低下とはいえません。"
+    },
+    {
+      "id": "ip-security-risk-textbook-2",
+      "lesson": "ip-security-risk",
+      "field": "technology",
+      "prompt": "予約には年齢が不要だと分かり、年齢の収集をやめた。年齢を保存することによるリスクへの対応はどれですか。",
+      "options": [
+        "受容",
+        "回避",
+        "保険による移転",
+        "リスクを増やす対応"
+      ],
+      "answer": 1,
+      "explanation": "その情報を扱う活動自体をやめたので、その保管に関するリスクは回避です。"
+    }
+  ],
+  "ip-security-controls": [
+    {
+      "id": "ip-security-controls-textbook-1",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "停止が11:00、戻ったデータが10:48時点、業務再開が11:35。失われうる更新の時間幅を分単位で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "停止時刻11:00と復元された記録10:48の差は12分です。35分は業務再開までの時間です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "12"
+      ]
+    },
+    {
+      "id": "ip-security-controls-textbook-2",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "売上を閲覧するだけの係に、返金を確定する操作を与えない設計に最も関係するのはどれですか。",
+      "options": [
+        "画面の解像度",
+        "認可と最小権限",
+        "ネットワークの帯域",
+        "ログイン名の長さ"
+      ],
+      "answer": 1,
+      "explanation": "ログインできることと操作できることは別です。役割に必要な操作だけを認可します。"
+    },
+    {
+      "id": "ip-security-controls-textbook-3",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "多要素認証の例として適切なのはどれですか。",
+      "options": [
+        "パスワードと暗証番号",
+        "二つの暗証番号",
+        "パスワードと本人が所持する認証器",
+        "同じパスワードを二度入力"
+      ],
+      "answer": 2,
+      "explanation": "知識要素のパスワードと所持要素の認証器を組み合わせます。"
+    },
+    {
+      "id": "ip-security-controls-textbook-4",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "複数店舗の記録を集め、共通する重要操作の発生を照合したい。目的に最も近いものはどれですか。",
+      "options": [
+        "プリンタのDPI設定",
+        "SIEMで複数の記録を集約して確認",
+        "レジ用ディスプレイの色の調整",
+        "端末の筐体を交換するだけ"
+      ],
+      "answer": 1,
+      "explanation": "複数の記録を集め、関連する事象を確認する役割がSIEMです。運用担当者による判断と連絡も必要です。"
+    },
+    {
+      "id": "ip-security-controls-textbook-5",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "通信停止中でもセンサーの異常を現場で知らせたい。適切な設計はどれですか。",
+      "options": [
+        "クラウドの画面だけで判断する",
+        "通信停止時は測定を捨てる",
+        "現場側でもしきい値を判定して通知できるようにする",
+        "保守終了機器に永久接続を許可する"
+      ],
+      "answer": 2,
+      "explanation": "現場側で判断できれば回線が停止しても現場の通知が働きます。通信の復旧後にまとめて記録を送る運用とは別に考えます。"
+    }
+  ],
+  "ip-cryptography": [
+    {
+      "id": "ip-cryptography-textbook-1",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "E社だけが読めるよう公開鍵方式で暗号化した文書を、E社で開く。E社が使う鍵はどれですか。",
+      "options": [
+        "送信者の公開鍵",
+        "送信者の秘密鍵",
+        "E社の公開鍵",
+        "E社の秘密鍵"
+      ],
+      "answer": 3,
+      "explanation": "E社の公開鍵で暗号化したデータは、対応するE社の秘密鍵を使って復号します。"
+    },
+    {
+      "id": "ip-cryptography-textbook-2",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "F社が秘密鍵で作った署名をG社で検証する。使う鍵はどれですか。",
+      "options": [
+        "F社の公開鍵",
+        "G社の公開鍵",
+        "F社の秘密鍵",
+        "G社の秘密鍵"
+      ],
+      "answer": 0,
+      "explanation": "署名した人であるF社の公開鍵を、持ち主が確認できる形で入手して検証します。"
+    },
+    {
+      "id": "ip-cryptography-textbook-3",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "同じハッシュ方式を同じ範囲に適用し、正しい比較元と値が異なる。判断として適切なのはどれですか。",
+      "options": [
+        "データは必ず一致している",
+        "送信者を特定できる",
+        "入力が一致しないため、対象範囲や保存状態を確認する",
+        "ハッシュ値から本文を復号できる"
+      ],
+      "answer": 2,
+      "explanation": "一致する入力なら同じ条件で同じ値になるはずです。値が異なるだけでは原因や送信者は特定できません。"
+    },
+    {
+      "id": "ip-cryptography-textbook-4",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "本人の試行400回のうち8回を拒否した。本人拒否率を百分率の数値だけで入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "本人の拒否8回を本人の試行400回で割り、100を掛けると2％です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "2"
+      ]
+    },
+    {
+      "id": "ip-cryptography-textbook-5",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "証明書に記載された有効期限には達していないが、紐付いた秘密鍵の紛失が確認された。追加で点検することはどれですか。",
+      "options": [
+        "証明書が失効していないか",
+        "利用者画面の配色",
+        "画像の画素数",
+        "利用できる通信速度"
+      ],
+      "answer": 0,
+      "explanation": "有効期限が先でも途中で失効することがあります。失効状況を含む信頼の確認が必要です。"
+    }
+  ]
+}

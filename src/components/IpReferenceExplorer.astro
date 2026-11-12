@@ -1,0 +1,127 @@
+---
+const choices = [
+  { cell: 'C8', formula: '=$B3*C3', result: '120円 × 4個 = 480円', price: 'B3', quantity: 'C3' },
+  { cell: 'D8', formula: '=$B3*D3', result: '120円 × 6個 = 720円', price: 'B3', quantity: 'D3' },
+  { cell: 'C9', formula: '=$B4*C4', result: '80円 × 5個 = 400円', price: 'B4', quantity: 'C4' },
+  { cell: 'D9', formula: '=$B4*D4', result: '80円 × 3個 = 240円', price: 'B4', quantity: 'D4' },
+] as const;
+const data = [
+  ['B3', '120円'],
+  ['C3', '4個'],
+  ['D3', '6個'],
+  ['B4', '80円'],
+  ['C4', '5個'],
+  ['D4', '3個'],
+];
+---
+
+<section data-reference-explorer hidden aria-labelledby="reference-explorer-title">
+  <h2 id="reference-explorer-title">コピー先を変えて、参照先を追う</h2>
+  <p>C8の式を右や下へ写すと、どのセルを読むでしょうか。コピー先を選ぶ前に、動く参照を予想してください。</p>
+  <fieldset>
+    <legend>コピー先</legend>
+    {choices.map((item, index) => (
+      <label>
+        <input
+          type="radio"
+          name="reference-destination"
+          checked={index === 0}
+          data-reference-option
+          data-formula={item.formula}
+          data-result={item.result}
+          data-price={item.price}
+          data-quantity={item.quantity}
+          value={item.cell}
+        />
+        {item.cell}
+      </label>
+    ))}
+  </fieldset>
+  <table>
+    <caption>参照する元の表</caption>
+    <thead>
+      <tr>
+        <th scope="col">行</th>
+        <th scope="col">B 単価</th>
+        <th scope="col">C 月曜</th>
+        <th scope="col">D 火曜</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[3, 4].map((row, i) => (
+        <tr>
+          <th scope="row">{row}</th>
+          {data.slice(i * 3, i * 3 + 3).map(([id, value]) => (
+            <td data-reference-cell={id} data-selected={id === 'B3' || id === 'C3' ? 'true' : undefined}>
+              <span>{value}</span>
+            </td>
+          ))}
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <p role="status">
+    <strong data-reference-formula>
+      {choices[0].cell} の式 {choices[0].formula}
+    </strong>
+    <br />
+    <span data-reference-result>
+      {choices[0].result}（単価 {choices[0].price}、数量 {choices[0].quantity}）
+    </span>
+  </p>
+</section>
+
+<script>
+  for (const root of document.querySelectorAll<HTMLElement>('[data-reference-explorer]')) {
+    const formula = root.querySelector<HTMLElement>('[data-reference-formula]')!;
+    const result = root.querySelector<HTMLElement>('[data-reference-result]')!;
+    const cells = root.querySelectorAll<HTMLElement>('[data-reference-cell]');
+    const show = (option: HTMLInputElement) => {
+      const { formula: expression, result: calculation, price, quantity } = option.dataset;
+      formula.textContent = option.value + ' の式 ' + expression;
+      result.textContent = calculation + '（単価 ' + price + '、数量 ' + quantity + '）';
+      for (const cell of cells) {
+        cell.dataset.selected = String(
+          cell.dataset.referenceCell === price || cell.dataset.referenceCell === quantity,
+        );
+      }
+    };
+    for (const option of root.querySelectorAll<HTMLInputElement>('[data-reference-option]')) {
+      option.addEventListener('change', () => {
+        if (option.checked) show(option);
+      });
+      if (option.checked) show(option);
+    }
+    root.hidden = false;
+  }
+</script>
+
+<style>
+  section {
+    margin-block: 2.5rem;
+  }
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    padding: 0.55rem;
+    border: 1px solid currentColor;
+    border-radius: 0.5rem;
+  }
+  label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    min-height: 44px;
+    padding-inline: 0.35rem;
+    cursor: pointer;
+  }
+  table {
+    width: 100%;
+  }
+  td[data-selected='true'] {
+    outline: 2px solid currentColor;
+    outline-offset: -3px;
+    font-weight: 700;
+  }
+</style>

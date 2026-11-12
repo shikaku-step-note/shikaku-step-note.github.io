@@ -1,4 +1,8 @@
 import bank from './ip-questions.json';
+import strategyTextbook from './ip-textbook-strategy.json';
+import managementTextbook from './ip-textbook-management.json';
+import technologyTextbook from './ip-textbook-technology.json';
+import readingTextbook from './ip-textbook-reading.json';
 import mock from './ip-mock.json';
 import mock02 from './ip-mock-02.json';
 import applied from './ip-applied.json';
@@ -171,6 +175,13 @@ export const ipSources = [
 export const ipSource = (id: string) => ipSources.find((s) => s.id === id)!;
 const appliedBank = applied as Record<string, Question[]>;
 export const ipDepthBank = { ...strategyDepth, ...managementDepth, ...technologyDepth } as Record<string, Question[]>;
+export const ipTextbookBank = {
+  ...strategyTextbook,
+  ...managementTextbook,
+  ...technologyTextbook,
+  ...readingTextbook,
+} as Record<string, Question[]>;
+export const ipTextbookVersion = '2026-11-textbook-v1';
 export const questionBank = bank as Record<string, { lesson: Question[]; review: Question[] }>;
 export const mockQuestions = mock as Question[];
 type LessonLike = {
@@ -210,12 +221,15 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
       `${l.data.stableId}-check`,
       `${l.data.title}：理解度チェック`,
       'lesson',
-      [...(questionBank[l.data.stableId]?.lesson ?? []), ...(appliedBank[l.data.stableId] ?? []), ...(ipDepthBank[l.data.stableId] ?? [])],
+      [...(questionBank[l.data.stableId]?.lesson ?? []), ...(appliedBank[l.data.stableId] ?? []), ...(ipDepthBank[l.data.stableId] ?? []), ...(ipTextbookBank[l.data.stableId] ?? [])],
       l.data.unit,
     ),
   );
   for (const assessment of result) {
-    if (ipDepthBank[assessment.id.slice(0, -'-check'.length)]?.length) {
+    const lessonId = assessment.id.slice(0, -'-check'.length);
+    if (ipTextbookBank[lessonId]?.length) {
+      assessment.version = ipTextbookVersion;
+    } else if (ipDepthBank[lessonId]?.length) {
       assessment.version = '2026-11-depth-v1';
     } else if (assessment.questions.some((question) => question.input === 'number' || question.input === 'text')) {
       assessment.version = '2026-11-applied-v1';

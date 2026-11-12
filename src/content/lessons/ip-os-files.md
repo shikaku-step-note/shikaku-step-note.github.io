@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'OSとファイルシステム',
   'description': 'OSの資源管理を説明する。ファイルの経路と権限を扱う。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 26,
-  'minutes': 40,
+  'order': 28,
+  'minutes': 60,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 17,
@@ -67,3 +67,45 @@ OSの管理対象とファイル操作の意味を理解し、権限と復旧を
 共有フォルダを開けないとき、本人を確認できたか、その本人に読む権限があるか、指定先が存在するかを順に確認します。ログインに成功しても、別部署のファイルを書き換えてよいことにはなりません。OSは利用者、プロセス、メモリ、入出力を管理して、同じ端末で複数のアプリを動かせるようにします。
 
 多くのアプリを開いたとき、OSが補助記憶と主記憶の間でデータを頻繁に移して処理が遅くなる場合があります。仮想記憶により主記憶の容量より大きいアドレス空間を利用できる構成でも、実際に使うデータの移動には時間がかかります。空きディスク容量があるから主記憶と同じ速さで処理できる、とは判断できません。ファイルの拡張子は形式を選ぶ手掛かりですが、名前を .csv に変えるだけで内容の文字コードや形式が変換されるわけでもありません。
+
+<span id="textbook-os-files"></span>
+
+## OSが分ける作業場所と、ファイルが置かれる場所
+
+店舗のPCで、ある利用者は共有フォルダを読めますが書き込めません。別の利用者は一時的に処理が重くなると訴えています。OSが管理する権限、処理、主記憶、保存先を分けて考えます。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="実行、OSが仕事の切替えを管理。記憶、主記憶と仮想記憶を管理。保存、ファイル名から保存先へ。権限、許可された操作だけ実行"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">実行</text><text x="126" y="29" fill="currentColor" font-size="14">OSが仕事の切替えを管理</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">記憶</text><text x="126" y="83" fill="currentColor" font-size="14">主記憶と仮想記憶を管理</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">保存</text><text x="126" y="137" fill="currentColor" font-size="14">ファイル名から保存先へ</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">権限</text><text x="126" y="191" fill="currentColor" font-size="14">許可された操作だけ実行</text></svg><figcaption>OSは資源へのアクセスを調整します。症状に合わせて対象を切り分けます。</figcaption></figure>
+
+<span id="os-files-textbook-skill-1"></span>
+
+### 実行中の処理と保存済みファイルを区別する
+
+アプリを開くと、保存されたプログラムが読み込まれ、実行中の仕事として扱われます。OSは複数の仕事にCPUを順に割り当て、入力や保存の待ち時間も調整します。アプリを切り替えられることは、どの仕事にもCPUを無制限に使わせることではありません。プリンタの種類ごとの操作をOSとアプリから扱えるようにするソフトがデバイスドライバです。
+
+<span id="os-files-textbook-skill-2"></span>
+
+### メモリが足りないときの症状をつなげる
+
+OSはプログラムに仮想的なアドレス空間を用意し、実際の主記憶などと対応させます。主記憶に収まらないデータを補助記憶と入れ替える仕組みを使う場合、頻繁な入替えが続くと処理が遅くなります。ストレージに空きがあるから主記憶の速度で作業できる、という意味ではありません。入替えが多いか、CPUが計算に時間を使っているか、出力装置を待っているかを測って判断します。
+
+<span id="os-files-textbook-skill-3"></span>
+
+### 相対パスを一段ずつ移動して確認する
+
+作業場所が `/shop/report/july` のとき、`../sales.csv` は一段上の `/shop/report` にある `sales.csv` を指します。`../../sales.csv` ならさらに上の `/shop` です。先頭に `/` が付く `/shop/sales.csv` は起点がルートなので、作業場所を変更しても同じ場所を表します。ファイル名が同じでもディレクトリが違えば内容は別です。
+
+<span id="os-files-textbook-skill-4"></span>
+
+### アクセスできない原因を切り分ける
+
+特定の利用者だけ書けず読めるなら、ファイルやフォルダに付与された権限を確認します。誰も書けないなら、権限の変更に加えて、保存先の空きや書込みを止める状態も確認します。ファイルを消してから戻せることと、記憶装置が故障した後に別の場所から復元できることは違います。復元が目的なら、別媒体または別システムにもバックアップを置き、復元手順を試します。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　作業場所が `/library/users/edit`。`../../data/list.csv` はどこですか。相対パスが正しいのに特定の係だけ書けない場合は何を点検しますか。
+
+`edit` と `users` から二段上がると `/library`。そこから `data/list.csv` へ進みます。係に書込み権限があるかを確認し、必要な場合にだけ付与します。
+
+</details>
+
+**復習の目安**　パスをたどり、処理遅延、容量、権限のどれを調べるか判断できます。

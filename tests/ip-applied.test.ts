@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { ipAssessments, questionBank, ipVersion, ipDepthBank } from '../src/data/it-passport';
+import { ipAssessments, questionBank, ipVersion, ipDepthBank, ipTextbookBank, ipTextbookVersion } from '../src/data/it-passport';
 import { isCorrect, assessmentMaterialIssues, compatibleAttempt, newAttempt } from '../src/lib/assessment';
 
 test('all current lesson checks gain input practice without changing legacy mock records', () => {
@@ -120,11 +120,13 @@ test('each upgraded lesson has fresh graded practice and retains the prior quest
   for (const assessment of assessments) {
     const lesson = assessment.id.slice(0, -'-check'.length);
     const added = ipDepthBank[lesson]!;
-    const old = { ...assessment, version: '2026-11-applied-v1', questions: assessment.questions.slice(0, -added.length) };
-    assert.equal(assessment.version, '2026-11-depth-v1');
+    const textbook = ipTextbookBank[lesson]!;
+    assert.ok(textbook?.length, lesson);
+    const old = { ...assessment, version: '2026-11-depth-v1', questions: assessment.questions.slice(0, -textbook.length) };
+    assert.equal(assessment.version, ipTextbookVersion);
     assert.deepEqual(old.questions.slice(0, 3), questionBank[lesson]!.lesson);
     assert.equal(compatibleAttempt(assessment, newAttempt(old, 'practice')), false);
-    for (const question of added) {
+    for (const question of [...added, ...textbook]) {
       assert.equal(question.lesson, lesson);
       assert.ok(!allAddedIds.has(question.id), question.id);
       allAddedIds.add(question.id);

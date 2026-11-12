@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'データ構造とアルゴリズム',
   'description': '順次・分岐・反復を追跡する。探索とデータ構造を使い分ける。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 22,
-  'minutes': 50,
+  'order': 24,
+  'minutes': 70,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 14,
@@ -74,3 +74,45 @@
 ## 木にしたときの親子と番号の違いを読む
 
 フォルダが「資料」の下に「会議」と「契約」、さらに「会議」の下に「議事録」を持つなら、木の根は資料、議事録の親は会議です。同じ段に並ぶ名前を探す場合と、あるフォルダの下をすべて探す場合とでは、たどる範囲が異なります。二分木は各節点が持てる子の数が最大2の木で、全節点に子が2個あることを要求しません。
+
+<span id="textbook-algorithms"></span>
+
+## 途中の状態を書いて、処理を最後まで追う
+
+発送対象を抽出して優先順に並べる処理を考えます。配列や反復の問題では、最終結果を推測するより、どのデータがいつ読まれ、変数がいつ更新されたかを一行ずつ記録する方が確実です。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="初期化、番号の起点・初期値を読む。反復、読む値と条件を記録。更新、実行された代入だけ変更。終了、境界と返す値を再確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">初期化</text><text x="126" y="29" fill="currentColor" font-size="14">番号の起点・初期値を読む</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">反復</text><text x="126" y="83" fill="currentColor" font-size="14">読む値と条件を記録</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">更新</text><text x="126" y="137" fill="currentColor" font-size="14">実行された代入だけ変更</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">終了</text><text x="126" y="191" fill="currentColor" font-size="14">境界と返す値を再確認</text></svg><figcaption>疑似言語の追跡では、条件が真の行と偽の行を分けて書きます。</figcaption></figure>
+
+<span id="algorithms-textbook-skill-1"></span>
+
+### 配列を走査し、途中の値が表す意味を言う
+
+配列は要素を順に並べ、添字で取り出せます。添字を0から始めるか1から始めるかは設問で確認します。次の例は1から始まる配列 [6, 3, 9, 3] を読み、5以上の値だけを合計します。合計を0で始め、6で6、3では6のまま、9で15、最後の3でも15。カウントが別なら6で1、9で2になります。毎回「ここまで見たうち、条件に合うものの合計」と説明できれば、どこかで値を初期化し直した誤りにも気付けます。空の配列なら一度も加えず、結果は0です。
+
+<span id="algorithms-textbook-skill-2"></span>
+
+### 探索に使う順序を先に確認する
+
+二分探索で [3, 6, 9, 12, 15, 18, 21] から15を探します。中央12より大きいので候補を右3個に絞ります。その中央18より小さいので左の15だけが残ります。値の並びが順不同なら「中央より小さい値は左側」と判断できません。また、重複する値があるときに最初の位置が必要なら、一つ一致したところで終了せず、左側にも候補があるか調べる必要があります。
+
+<span id="algorithms-textbook-skill-3"></span>
+
+### データの入出順と探索効率を分ける
+
+順に到着した注文を公平に扱うなら、先に入れたものから取り出すキューを使います。直前の編集から順に取り消すなら、最後に入れた操作から取り出すスタックです。枝分かれするカテゴリは木として表せますが、一般の木の子に値の大小関係があるとは限りません。木の絵を見ただけで二分探索のように候補を捨てられるとは判断しません。
+
+<span id="algorithms-textbook-skill-4"></span>
+
+### 同じ値のときの規則まで追う
+
+日付順の二つの注文一覧を一つにまとめます。一方が [2, 5, 9日]、他方が [3, 5, 6日] なら、両側の先頭だけを比較して小さい方を順に出せます。2、3の次は5日同士です。左を優先するなど同日の規則が必要なら、比較結果が等しい場合を処理に含めます。片方が空になったら、残った側をその順で出します。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　配列 [4, 1, 6, 1, 7] を先頭から読み、値が偶数なら合計に加え、奇数なら今の合計から1を引きます。最終値を求めてください。
+
+0から順に4、3、9、8、7です。7は奇数なので、その値を引くのではなく「1を引く」という規則を使います。
+
+</details>
+
+**復習の目安**　添字、初期値、条件、代入を表に書き、順序が成立するときだけ探索範囲を絞れます。

@@ -79,11 +79,12 @@ explanation: 正解の理由と考え方。
 
 ## ITパスポート教材の編集
 
-現行シラバスVer.6.5の63項目を37レッスンへ対応付けています。公式の級分けはありません。ユニットは公式の23中分類を学習単位にしたものです。2027年度の案を現行適用版と混同しないでください。
+現行シラバスVer.6.5の63項目を40レッスンへ対応付けています。公式の級分けはありません。ユニットは公式の23中分類を学習単位にしたものです。2027年度の案を現行適用版と混同しないでください。
 
 - 本文とメタデータ：`src/content/lessons/ip-*.md`。YAMLフロントマターの`unit`、`syllabus`、`objectives`、`glossary`等を編集します。
 - 1レッスンの理解度チェック3問と総合確認用2問：`src/data/ip-questions.json`。キーはレッスンの固定IDです。
 - 入力式の練習は `src/data/ip-applied.json` と `src/data/ip-applied-review.json`。追加の事例別チェックは分野ごとの `src/data/ip-depth-*.json`。レッスンIDをキーとし、各設問に固有IDを割り当てます。複数の資料を照合する総合演習は `src/data/ip-integrated-cases.ts`。
+- 読解演習の専用設問は `src/data/ip-textbook-reading.json`、各分野の章末演習は `src/data/ip-textbook-*.json`。図・例題・別条件の練習と対応させ、版は理解度チェックの定義で管理します。
 - 独自模試2回（各100問）：`src/data/ip-mock.json` と `src/data/ip-mock-02.json`。現行の35/20/45問、120分を参考にしています。全問各1点で、IRT評価点・合否は再現しません。
 - 分類・公式資料・問題版・テスト生成：`src/data/it-passport.ts`。用語テストは本文の用語定義から生成し、総復習は各ユニットの問題を再利用します。
 - 設問・正解・採点を変更したら `src/data/it-passport.ts` で該当する評価だけ版を更新します。旧版の履歴は残り、新版の得点へ読み替えません。旧版の得点に影響しない解説の改善では版を維持できます。

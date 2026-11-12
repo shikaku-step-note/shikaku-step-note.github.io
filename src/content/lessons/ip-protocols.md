@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'TCP/IP・名前解決とインターネット',
   'description': '代表的なプロトコルの役割を説明する。アドレスと名前の関係を理解する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 34,
-  'minutes': 45,
+  'order': 37,
+  'minutes': 65,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 22,
@@ -80,3 +80,45 @@ OSI基本参照モデルでは、信号を伝える物理層、同じ区間で�
 携帯電話で接続中に電車が移動し、使う基地局が変わっても通信を引き継ぐのがハンドオーバーです。契約している事業者の網の外で、提携先の網を使うのがローミングです。前者は通信を引き継ぐ技術、後者は他の事業者のサービスを使う仕組みに着目します。SIMは契約や加入者に関わる情報を扱い、eSIMでは対応端末にプロファイルを追加できます。電話番号を保ったまま契約先を変えるMNPは別の手続です。MVNOは他社の移動通信網を利用してサービスを提供する事業者、ISPはインターネットへの接続を提供する事業者です。
 
 1か月の転送量が2 GBで、従量制は基本料300円に1 GB当たり200円を加える、定額制は月1,000円とします。同じ品質でほかの料金を無視すれば、2 GBでは従量制700円、4 GBでは従量制1,100円なので定額制のほうが安くなります。パケット通信では情報を小さな単位に分けて伝送しますが、契約の課金単位が必ずパケット数とは限りません。上限超過で速度制限がある場合は、費用の比較と別に利用可能な速度も確認します。
+
+<span id="textbook-protocols"></span>
+
+## 接続、名前解決、認証を別々の成功条件として読む
+
+社内で新しい端末を使い始めます。無線に接続できたこと、サービス名から接続先を調べられたこと、サーバに届いたこと、サービスにログインできたことはそれぞれ別の確認です。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="設定、DHCPなどで端末を設定。名前、DNSで接続先を調べる。通信、接続し相手の証明書を確認。利用、HTTP応答と操作権限を確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">設定</text><text x="126" y="29" fill="currentColor" font-size="14">DHCPなどで端末を設定</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">名前</text><text x="126" y="83" fill="currentColor" font-size="14">DNSで接続先を調べる</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">通信</text><text x="126" y="137" fill="currentColor" font-size="14">接続し相手の証明書を確認</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">利用</text><text x="126" y="191" fill="currentColor" font-size="14">HTTP応答と操作権限を確認</text></svg><figcaption>画面でサービスを開けない場合、どの段階まで成功したかを確かめます。</figcaption></figure>
+
+<span id="protocols-textbook-skill-1"></span>
+
+### 端末の設定と名前の問い合わせを分ける
+
+DHCPは端末にIPアドレスなどの通信設定を渡す仕組みです。DNSは名前に対応する情報を調べる仕組みで、端末自身の設定を割り当てる役割とは異なります。ある端末で通信設定が得られず、別の端末ではサービス名を調べられるなら、新しい端末側の接続・設定を先に確認します。反対に、接続先の住所が分かる場合だけ通信できる状況なら、名前解決の設定やサービスを点検します。
+
+<span id="protocols-textbook-skill-2"></span>
+
+### 転送の性質とアプリの役割を切り分ける
+
+IPは別のネットワークへパケットを届ける役割を担います。TCPは順序や届かなかったデータの再送などを扱います。UDPではそのような配送保証をプロトコル自身は提供せず、用途に応じてアプリが扱います。HTTPは文書の要求と応答などを取り決めるアプリケーション層のプロトコルです。TLSを使うHTTPSでは通信の機密性や相手の確認を支えますが、ログイン後にどの操作が許されるかはサービス側の権限で決まります。
+
+<span id="protocols-textbook-skill-3"></span>
+
+### 送るメールと受け取ったメールを分ける
+
+送信用にはSMTPを使います。受信側でサーバ上のメールと状態を複数端末で共有したいときはIMAPが使われます。POPはサーバからメールを取得する仕組みで、端末の設定によってサーバにコピーを残す場合もあります。端末で時計が大きくずれていると有効期間の確認やログの比較に影響することがあります。NTPは時計を合わせるために使うので、名前解決とは役割が異なります。
+
+<span id="protocols-textbook-skill-4"></span>
+
+### 携帯通信の切替えと契約を区別する
+
+移動中に接続する基地局が変わって通信を続けるのがハンドオーバーです。契約先とは別の通信事業者の網を利用するローミングとは判断の基準が違います。料金の問題では、固定料金に含まれる量、超過分の単価、丸め単位を先に読みます。5 GBまで2,000円、超過分が1 GB当たり400円で、7 GB使うなら2,000＋2×400＝2,800円です。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　社内と自宅で既読・未読を同じ状態に保ちたい。送信に使う仕組みと、受信側で状態を共有する仕組みを答えてください。
+
+送信用はSMTPです。サーバ上のメールや状態を複数端末で共有したい場合はIMAPが適します。
+
+</details>
+
+**復習の目安**　通信の各段階とプロトコルを対応させ、成功した部分と追加で調べる部分を説明できます。

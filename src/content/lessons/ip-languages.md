@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'プログラム言語・Webとデータ表現',
   'description': '言語の役割を区別する。HTML・CSS・JSON等の用途を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 23,
-  'minutes': 40,
+  'order': 25,
+  'minutes': 60,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 14,
@@ -73,3 +73,39 @@ XMLでは `<申込><人数>3</人数></申込>` のように項目名を付け�
 ## 変換の成功と実行結果を分ける
 
 変数名の書き間違いは、プログラムを実行する前に見つかることがあります。割り算の入力が当日0のときだけ処理に失敗するなら、文法が正しくても実行時に初めて現れます。コンパイラは一般にソースを実行前に変換し、インタプリタは実行時にコードを処理します。中間コードや実行時コンパイルを組み合わせる処理系もあります。試験では、検査や変換の時点を読んだ上で、どの入力に対する動作を別に確かめるべきか考えます。
+
+<span id="textbook-languages"></span>
+
+## 文書、データ、処理を役割で分ける
+
+商品の一覧を別の部署へ渡し、利用者にはブラウザで見せます。どこを直すべきかは、変えたいのが情報の意味、見た目、動作、データ交換の約束のどれかで決まります。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="構造、HTMLで見出し・入力を表す。見た目、CSSで読みやすく整える。操作、プログラムで入力を処理。交換、構造化データの仕様を共有"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">構造</text><text x="126" y="29" fill="currentColor" font-size="14">HTMLで見出し・入力を表す</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">見た目</text><text x="126" y="83" fill="currentColor" font-size="14">CSSで読みやすく整える</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">操作</text><text x="126" y="137" fill="currentColor" font-size="14">プログラムで入力を処理</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">交換</text><text x="126" y="191" fill="currentColor" font-size="14">構造化データの仕様を共有</text></svg><figcaption>文書の構造、表示、処理、交換は別々に変更できるようにします。</figcaption></figure>
+
+<span id="languages-textbook-skill-1"></span>
+
+### 構文が合うことと業務上正しいことを分ける
+
+「数量」が数値の3として記録され、名称が文字列なら、受信側は数量を計算に使えます。JSONで数量を文字列の「3」にすれば、データとしては成立しても、受信仕様の数値型と合わない場合があります。XMLの開始・終了タグが対応していても、必須項目がなければ業務上は受理できません。両方の問題を避けるには、構造の規則と型・必須項目・単位の約束を別に確認します。
+
+<span id="languages-textbook-skill-2"></span>
+
+### 画面を見て役割を判断する
+
+申込ページで入力欄の意味が伝わらないなら、ラベルと入力欄の関連をHTMLで示します。文字が読みにくければCSSの色や大きさを調整します。入力条件に違反したときに案内する振る舞いはプログラムで実装します。見た目だけで必須を示すと、色を見分けにくい利用者や読み上げで情報が伝わらないことがあります。文書の意味は視覚表現だけに任せません。
+
+<span id="languages-textbook-skill-3"></span>
+
+### 翻訳の成功から結果の正しさを推測しない
+
+高水準言語で書かれた指示を、実行環境が扱える形に変換する方法の一つがコンパイルです。命令を逐次実行するインタプリタなどもあります。構文や型に関する誤りは変換段階で見つかる場合がありますが、値が0になったときの除算や、割引条件の比較向きを間違えた結果は、実行と検証が必要です。例えば「10個以上」を「10個より多い」と実装すると、11個の試験は通っても10個で誤ります。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　他社から届いたXMLの構造は読めますが、支払額が桁違いです。画面のCSSを修正すればよいでしょうか。
+
+まず送受信の単位を照合します。円を前提とする側が100分の1円の単位を受け取れば100倍と解釈します。表示が正しくても値の意味が一致していないため、データ交換の仕様と変換を確かめます。
+
+</details>
+
+**復習の目安**　画面とデータの問題を分け、構文・実行・業務規則のどこを確認するか説明できます。

@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'システム構成と信頼性・性能',
   'description': '冗長化と負荷分散を区別する。稼働率と性能指標を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 25,
-  'minutes': 50,
+  'order': 27,
+  'minutes': 70,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 16,
@@ -66,3 +66,45 @@ MTBFを198時間、MTTRを2時間と置けば、単純モデルの稼働率は19
 1分に600件処理できても、1件の応答に5秒かかることがあります。600件/分は処理量を表すスループットで、5秒は個々の応答時間です。画面を早く表示したい利用者と、多数の申請を処理したい運用者では見る指標が異なります。負荷の条件をそろえず比較すると、改善した理由を特定できません。
 
 平均故障間隔MTBFが90時間、平均修復時間MTTRが10時間とし、動作と修理を繰り返す単純なモデルなら稼働率は90/(90＋10)＝90％です。故障回数をすぐには減らせなくても、交換手順を整えて修理を5時間に短縮すれば90/95になります。修復時間を分母から引くと、1を超えるなど不自然な結果になることがあります。単位と範囲で検算します。
+
+<span id="textbook-architecture"></span>
+
+## サービスが止まる条件を先に書く
+
+注文を受けるWeb処理が2台あり、どちらか一方で処理できます。後ろに在庫を記録する装置が1台あります。この構成では、Web処理の台数だけを増やしても在庫装置の停止は防げません。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="動作条件、Webのどちらかと在庫。Web、両方停止すると利用不可。在庫、単独停止でも利用不可。検算、全体は在庫単独を超えない"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">動作条件</text><text x="126" y="29" fill="currentColor" font-size="14">Webのどちらかと在庫</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">Web</text><text x="126" y="83" fill="currentColor" font-size="14">両方停止すると利用不可</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">在庫</text><text x="126" y="137" fill="currentColor" font-size="14">単独停止でも利用不可</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">検算</text><text x="126" y="191" fill="currentColor" font-size="14">全体は在庫単独を超えない</text></svg><figcaption>冗長部分と単独部分のうち、どこが止まればサービス全体が止まるかを書きます。</figcaption></figure>
+
+<span id="architecture-textbook-skill-1"></span>
+
+### 直列と並列の式を条件から組み立てる
+
+各Web装置の稼働率を0.9とし、故障は独立で、切替えは確実に行えると仮定します。Web処理は両方停止のときに使えないので、0.1×0.1＝0.01を1から引いて稼働率0.99。在庫装置の稼働率0.95と同時に動く必要があるので、全体は0.99×0.95＝0.9405です。在庫装置単独の0.95を超えないことを検算に使えます。両方が同じ電源や通信経路に依存する場合は、故障が独立という前提を点検します。
+
+<span id="architecture-textbook-skill-2"></span>
+
+### 稼働率を改善する二つの方法を比較する
+
+平均故障間隔MTBFを、故障してから修復する時間を除いた平均稼働時間として90時間、平均修復時間MTTRを10時間と置くと、稼働率は90÷100＝90％。平均修復を5時間に短縮できれば90÷95≒94.7％です。修復10時間のままMTBFを190時間に伸ばせば190÷200＝95％。前者は復旧の手順を改善し、後者は故障を減らす考え方です。応答時間を短くすることは利用者に役立ちますが、それだけでこの稼働率が向上したとはいえません。
+
+<span id="architecture-textbook-skill-3"></span>
+
+### 仕事を分担する方式と配置を区別する
+
+クライアントとサーバの分担では、端末は画面表示、サーバは共有データの管理などを担います。複数台へ仕事を分ける分散処理は負荷を分けやすい一方、データの整合やネットワーク越しの遅延を考える必要があります。仮想化では物理機の資源を分けて複数環境を動かせますが、同じ物理機の停止で複数環境が同時に止まる場合があります。クラウドを使う場合も、必要な可用性や管理の責任分担は構成と契約で決まります。
+
+<span id="architecture-textbook-skill-4"></span>
+
+### 処理件数と一件の待ちを分けて測る
+
+1分間に処理できる件数はスループット、依頼から応答までに一人が待つ時間は応答時間です。100件を並行して処理できる装置でも、最初の応答まで5秒かかることがあります。一人の操作感を改善したいなら個々の応答を、混雑時の滞留を減らしたいなら処理件数と到着件数を比べます。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　独立した稼働率0.8の装置が2台あり、どちらか一台で動きます。この後段に稼働率0.9の単独装置が必要です。全体を求めます。
+
+前段は1−0.2×0.2＝0.96。後段も同時に必要なので0.96×0.9＝0.864です。
+
+</details>
+
+**復習の目安**　要求に合う分担を選び、並列と直列の式を動作条件から導けます。

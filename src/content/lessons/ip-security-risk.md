@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': '情報セキュリティとリスク管理',
   'description': '機密性・完全性・可用性を説明する。リスク対応と事故対応を考える。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 35,
-  'minutes': 45,
+  'order': 38,
+  'minutes': 65,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 23,
@@ -64,3 +64,45 @@
 期限間際の停止に備え、復旧手順の整備で影響を小さくするのは低減です。不要な外部受付自体を取りやめれば回避、保険で一部の損失を補償対象にするのは移転・共有に当たります。ただし、保険をかけても利用者が申込できない時間は消えません。十分小さいと判断した残留リスクを責任者が承認するのが保有です。誰がどの判断を承認するか、次にいつ見直すかを残します。
 
 情報セキュリティ方針を作った後は、現場の手順に落とし、実施記録から効果を確かめ、条件が変われば修正します。たとえば退職者のアカウントは、人事の通知から無効化までの経過時間と漏れを確認します。情報セキュリティマネジメントは対策製品を選ぶだけで完了せず、継続して管理します。
+
+<span id="textbook-security-risk"></span>
+
+## 失うと困るものを決め、対策後に何が残るかを考える
+
+商店が予約表、売上集計、公開チラシを管理しています。公開前の予約表が他人に見えると困ります。公開チラシは誰が見てもよいものの、営業日が勝手に書き換わると業務に影響します。情報の価値と起きる被害を具体的に記録します。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="資産、何を誰が使うか。影響、漏えい・改変・停止を想定。対処、回避・低減・共有・受容。残余、責任者が見直しを判断"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">資産</text><text x="126" y="29" fill="currentColor" font-size="14">何を誰が使うか</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">影響</text><text x="126" y="83" fill="currentColor" font-size="14">漏えい・改変・停止を想定</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">対処</text><text x="126" y="137" fill="currentColor" font-size="14">回避・低減・共有・受容</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">残余</text><text x="126" y="191" fill="currentColor" font-size="14">責任者が見直しを判断</text></svg><figcaption>影響を整理し、対策後のリスクも担当者と点検します。</figcaption></figure>
+
+<span id="security-risk-textbook-skill-1"></span>
+
+### CIAを被害の違いから理解する
+
+予約者の連絡先が許可されていない人に見えたなら機密性が損なわれています。営業日が勝手に変われば完全性の問題です。正しい情報が残っていても、営業中に取り出せなければ可用性が損なわれています。一つの事故が複数に影響することもあります。例えば予約情報が失われ、同時に連絡先が漏れた場合は完全性・可用性・機密性のどこにどんな影響があるかを分けて記録します。
+
+<span id="security-risk-textbook-skill-2"></span>
+
+### 脅威、弱点、影響を一文ずつ書く
+
+売上集計の端末が故障することを脅威とします。同じ端末にしか保存していないことが弱点です。故障すると当日の締め処理ができないことが影響です。別の場所へ定期的にバックアップを取り、復元手順を試せば、故障そのものがなくならなくても影響を減らせます。毎日一回のコピーなら、故障した時点までの当日分が残らない可能性があるので、残る影響を明らかにします。
+
+<span id="security-risk-textbook-skill-3"></span>
+
+### リスク対応の種類と限界を判断する
+
+扱わなくてもよい個人情報の収集をやめれば、その保管に伴うリスクを回避できます。アクセス権の見直しは影響や発生可能性を低減します。契約や保険で一部の損失を分担する方法は共有・移転の一例ですが、利用者への説明責任まで自動でなくなるとは限りません。対策後も残るリスクを担当者が受け入れられるか判断し、期限や点検条件を決めます。
+
+<span id="security-risk-textbook-skill-4"></span>
+
+### 管理を見直す条件を決める
+
+対策は一度選んで終わりではありません。業務や利用するデータが変わったとき、事故があったとき、訓練が失敗したときなどに見直します。例えば半年ごとにアカウントの棚卸しをすると決め、異動時に不要な権限が外れているかを記録します。情報セキュリティ管理の計画、実施、点検、改善がつながるようにします。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　住所の収集をやめても、電話番号は予約の確認に使います。どのリスクを回避でき、どれが残りますか。
+
+住所の保管・漏えいに伴うリスクを避けられます。電話番号の漏えいや記録が使えなくなるリスクは残るため、権限管理や復元手順などを点検します。
+
+</details>
+
+**復習の目安**　業務への影響からリスクの優先順位を付け、対策後に残る影響と担当者を説明できます。

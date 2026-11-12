@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'SQLとトランザクション',
   'description': '検索・集計の基本を読む。同時更新と復旧の必要性を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 32,
-  'minutes': 50,
+  'order': 35,
+  'minutes': 75,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 21,
@@ -72,3 +72,81 @@ HAVING SUM(amount) >= 100;
 残り1席の予約で、空席を1減らしたのに予約者情報の書込みが失敗したとします。そのまま確定すると、誰にも割り当てていないのに満席になります。空席の変更と予約情報の登録を同じトランザクションにし、両方成功したときだけコミットします。途中で失敗すればロールバックします。
 
 同時に2人が残り1席を読み取る場面では、両者がそれぞれ「まだ空きがある」と判断することがあります。トランザクションを開始するだけで、すべての同時処理の競合が解決するとは限りません。更新が競合したときの処理や、データベース側の制約・排他を設計します。バックアップは障害後に復旧するための手段で、実行中の競合を止める機能とは別です。
+
+<span id="textbook-sql-transactions"></span>
+
+## 行、グループ、取引のどれを処理しているかを見る
+
+店舗の売上から、返品を除いた売上合計が多い店舗を抽出します。同じシステムでは在庫を減らして申込みを登録します。前者は集計の順序、後者は変更をまとめる範囲に注意します。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="結合、対応する行を組み合わせる。WHERE、個々の行を先に絞る。GROUP BY、同じ店舗をまとめる。HAVING、合計などで組を絞る"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">結合</text><text x="126" y="29" fill="currentColor" font-size="14">対応する行を組み合わせる</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">WHERE</text><text x="126" y="83" fill="currentColor" font-size="14">個々の行を先に絞る</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">GROUP BY</text><text x="126" y="137" fill="currentColor" font-size="14">同じ店舗をまとめる</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">HAVING</text><text x="126" y="191" fill="currentColor" font-size="14">合計などで組を絞る</text></svg><figcaption>集計前の行条件と、集計後のグループ条件を別に考えます。</figcaption></figure>
+
+<span id="sql-transactions-textbook-skill-1"></span>
+
+### 絞る対象を一段ずつ確かめる
+
+A店に100、200、返品の−70、B店に150と50があるとします。返品の行を `WHERE` に相当する条件で除くと、A店の合計は300、B店は200です。「合計250以上」は各取引を選ぶ条件ではなく、店舗ごとの合計に対する条件なので `HAVING` に相当します。先に取引額250以上で行を絞ると、A店の取引も消えてしまいます。表示順は `ORDER BY` で決め、抽出する条件とは区別します。
+
+<span id="sql-transactions-textbook-skill-2"></span>
+
+### 件数を求めるときに欠けた値を確認する
+
+一つの表に金額100、NULL、0の3行があります。NULLは値が未入力・不明などの状態であり、0という値とは別です。行数を数える `COUNT(*)` は3、値がある金額を数える `COUNT(金額)` は2です。金額平均でNULLを含めない場合、100と0の平均は50。NULLを勝手に0へ変えると集計の意味が変わります。
+
+<span id="sql-transactions-textbook-skill-3"></span>
+
+### 変更をひとまとまりとして扱う
+
+申込を登録し、その人数分の残席を減らすとします。登録した後に残席更新が失敗した場合、登録だけ確定すると申込数と残席が合わなくなります。二つを一つのトランザクションに含め、両方成功したらコミット、途中で失敗したらロールバックします。ACIDでは、このような全体を一つに扱う性質が原子性、他の処理から途中状態を見せない考え方が独立性です。制約を守ることが一貫性、確定後の結果が障害でも保たれることが耐久性です。
+
+<span id="sql-transactions-textbook-skill-4"></span>
+
+### 同時実行時に一件ずつの正しさを考える
+
+残席1を二人が同時に読んでからそれぞれ確定すると、両方が申込済みになるおそれがあります。在庫を確認した処理と減らす処理を適切な条件や排他制御と一体にし、片方だけが確定できるようにします。処理が互いに相手のロック解除を待つとデッドロックとなります。DBMSの検知や再試行手順、データの整合が保たれることを確認します。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　Aに130と返品−20、Bに90と80があります。返品を除き、店ごとの合計150以上を表示する場合、結果を求めてください。
+
+返品の行を除いてAは130、Bは170です。150は店ごとの合計への条件なのでBだけを残します。
+
+</details>
+
+**復習の目安**　絞る段階を分けて結果を予測し、競合や部分失敗が起きても正しい更新条件を説明できます。
+
+<span id="textbook-sql-join-case"></span>
+
+### 集計結果を、小さな表から手で再現する
+
+工房の出荷データから、「東店の完了済み伝票の合計が600円以上か」を確かめます。店舗表にある ID、伝票表にある店舗ID、状態、金額を使います。必要な列だけを出す操作が射影、条件に合う行だけを残す操作が選択です。今回は伝票の店舗IDで店舗表と結合して店名を得ます。
+
+| 伝票 | 店舗ID | 状態 | 金額 |
+| --- | --- | --- | ---: |
+| 01 | E | 完了 | 350 |
+| 02 | E | 取消 | 180 |
+| 03 | E | 完了 | 290 |
+| 04 | W | 完了 | 610 |
+
+店舗表で E は東、W は西です。東の完了伝票だけを先に残すと、01と03の2件です。店ごとの集計は次の形になります。
+
+```sql
+SELECT s.shop_id, s.name, SUM(o.amount) AS total
+FROM shop AS s
+JOIN orders AS o ON s.shop_id = o.shop_id
+WHERE o.status = '完了' AND s.shop_id = 'E'
+GROUP BY s.shop_id, s.name
+HAVING SUM(o.amount) >= 600;
+```
+
+結果は東店、640円です。取消を先に除かずに合計すると820円になります。条件の適用順を確かめるには、各段階に残る行を小さな表に書き出します。
+
+集計と違って更新では確定済みかどうかも大切です。例えば伝票01を取消にした時点で在庫を戻し、伝票と在庫の両方を確定します。途中停止なら変更前に戻し、両方が確定した後の障害なら更新記録などを用いて確定した結果を再現します。バックアップには取得時点の状態しかないので、それ以降の確定分も必要な運用では記録の保存と復元手順を組み合わせます。
+
+<details><summary>別条件で練習する</summary>
+
+**課題**　東店で、完了伝票が240円と330円、取消伝票が700円でした。同じ集計の結果はどうなりますか。
+
+**解答**　取消を除いて570円となり、600円以上という条件を満たしません。東店の結果行は出ません。
+
+</details>

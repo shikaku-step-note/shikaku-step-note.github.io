@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'プロジェクト管理とクリティカルパス',
   'description': 'WBSとスケジュールを関連付ける。制約とリスクを踏まえて計画する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 16,
-  'minutes': 50,
+  'order': 17,
+  'minutes': 65,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 10,
@@ -106,3 +106,51 @@ Cに1日の余裕があるのは、Cが8日後までに終わればDの開始が
 ### 自分で確かめる
 
 Aが2日、その後のBが6日、Cが3日、両方を待つDが1日なら、完了は9日後です。Cだけが2日延びても、A→C→Dは8日で、全体の9日は変わりません。Bの担当者をCへ移す提案があれば、Bの完了が遅れないかも検討します。
+
+<span id="textbook-project"></span>
+
+## 教科書演習：合流点の締切から作業の余裕を逆算する
+
+教材の申込みフォームを公開します。計画の順序を決めるには、「どの作業を同時に進められるか」と「誰がそれを担当できるか」を分けて考えます。依存関係は前者を表し、同じ担当者が二つの仕事を同時にはできない制約は後者です。日程表に着手日を書く前に、まず成果物と責任をWBSで整理し、その作業同士に先行関係を設定します。
+
+| 作業 | 日数 | 開始に必要な作業 |
+|---|---:|---|
+| A：申込み条件を決める | 2 | なし |
+| B：フォームを作る | 5 | A |
+| C：職員用手順を作る | 3 | A |
+| D：通し試験をする | 2 | B、C |
+| E：教材を校正する | 4 | なし |
+| F：公開判定をする | 1 | D、E |
+
+最も早く始められる時刻を左から追います。Aは0日目に開始し2日目に完了。Bは7日目、Cは5日目に完了します。Dは両方がそろう7日目から9日目までです。Eは4日目に完了しますが、FはDも終わる9日目から始まり、10日目に全体完了です。合流で二本の時間を足すと、並行できる期間を重複して数えてしまいます。
+
+今度は10日目を守るための最遅時刻を右から逆算します。Fの最遅開始は9日目。Dは9日目までに終えるので7日目開始、Bは7日目までに終えるので2日目開始です。Cも7日目までに終えれば間に合い、3日かかるので最遅開始は4日目。Cの最早開始2日目との差は2日です。EはFが始まる9日目までに終えればよく、最遅開始は5日目。AがBとCへ分岐する箇所では、両方の条件を守るため、BとCの最遅開始の早い方である2日目までに終える必要があります。
+
+| 作業 | 最早開始 | 最遅開始 | 日程を延ばさず使える余裕 |
+|---|---:|---:|---:|
+| A | 0 | 0 | 0 |
+| B | 2 | 2 | 0 |
+| C | 2 | 4 | 2 |
+| D | 7 | 7 | 0 |
+| E | 0 | 5 | 5 |
+| F | 9 | 9 | 0 |
+
+<figure><svg viewBox="0 0 328 214" width="328" height="214" role="img" aria-label="作業AからFまでのガントチャート。Cは2日、Eは5日の余裕がある。" style="max-width:100%;height:auto"><g fill="currentColor" font-size="12" text-anchor="middle"><text x="39" y="19">0</text><path d="M39 25v150" stroke="currentColor" opacity=".15"/><text x="65" y="19">1</text><path d="M65 25v150" stroke="currentColor" opacity=".15"/><text x="91" y="19">2</text><path d="M91 25v150" stroke="currentColor" opacity=".15"/><text x="117" y="19">3</text><path d="M117 25v150" stroke="currentColor" opacity=".15"/><text x="143" y="19">4</text><path d="M143 25v150" stroke="currentColor" opacity=".15"/><text x="169" y="19">5</text><path d="M169 25v150" stroke="currentColor" opacity=".15"/><text x="195" y="19">6</text><path d="M195 25v150" stroke="currentColor" opacity=".15"/><text x="221" y="19">7</text><path d="M221 25v150" stroke="currentColor" opacity=".15"/><text x="247" y="19">8</text><path d="M247 25v150" stroke="currentColor" opacity=".15"/><text x="273" y="19">9</text><path d="M273 25v150" stroke="currentColor" opacity=".15"/><text x="299" y="19">10</text><path d="M299 25v150" stroke="currentColor" opacity=".15"/><text x="20" y="42">A</text><rect x="39" y="30" width="52" height="16" rx="2" opacity=".72"/><text x="20" y="67">B</text><rect x="91" y="55" width="130" height="16" rx="2" opacity=".72"/><text x="20" y="92">C</text><rect x="91" y="80" width="78" height="16" rx="2" opacity=".72"/><rect x="169" y="80" width="52" height="16" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="20" y="117">D</text><rect x="221" y="105" width="52" height="16" rx="2" opacity=".72"/><text x="20" y="142">E</text><rect x="39" y="130" width="104" height="16" rx="2" opacity=".72"/><rect x="143" y="130" width="130" height="16" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="20" y="167">F</text><rect x="273" y="155" width="26" height="16" rx="2" opacity=".72"/><text x="168" y="201">開始からの日数（点線は作業の余裕）</text></g></svg><figcaption>各行は最早開始で描いています。Cの実線の終端は5日目、点線の終端は7日目。Cを2日ずらしてもDを7日目に開始できます。Eの点線は9日目までです。</figcaption></figure>
+
+<details><summary>合流点の見方を確かめる：Cが2日遅れたら公開日はどうなるか</summary><p>Cは当初の5日目から7日目の完了に変わります。DはもともとBの終了を待って7日目に開始するので、全体の公開日は10日目のままです。次にCをもう1日遅らせるとどうなるか、表で追ってみましょう。</p></details>
+
+<span id="textbook-project-resources"></span>
+
+### 条件変更：作業を短くしても公開が早まらない場合
+
+Bを3日短縮して2日にすると、Bは4日目、Cは5日目に完了します。Dは5日目から7日目、Fは8日目に完了します。Bを3日短くしたのに全体は2日しか短くなりません。合流点を決める経路がB側からC側に移るためです。図や表で「どの経路が待ちを生むか」を短縮案ごとに確認します。
+
+次に同じ人がBとCを担当する条件を加えます。元の5日・3日で分割できないなら、BとCの合計8日がAの後に必要で、両方の完了は10日目、公開は13日目です。依存関係だけから得た10日を、そのまま人員の制約がある計画の納期には使えません。担当変更で並行化できるか、研修・引継ぎの時間がかかるかも進捗報告に含めます。
+
+<span id="textbook-project-report"></span>
+
+### 自分で解く：何を報告すると判断できるか
+
+Cの開始が3日遅れました。他の作業は当初のままで、人員の兼務はありません。いつ公開できる見込みで、責任者には何を示しますか。
+
+**解き方。** Cは5日目開始、8日目完了なので、DはB完了の7日目では開始できません。Dの完了は10日目、公開判定完了は11日目です。Cの余裕2日を超えた1日が全体の遅れです。「Cが3日遅れた」という事実に加えて、予定と見込みの差、原因、他作業への影響、短縮や公開日の変更などの選択肢と、判断が必要な日を伝えます。

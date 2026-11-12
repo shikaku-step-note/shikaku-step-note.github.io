@@ -1,0 +1,532 @@
+{
+  "ip-organization": [
+    {
+      "id": "ip-organization-textbook-1",
+      "lesson": "ip-organization",
+      "field": "strategy",
+      "prompt": "確認担当2人の処理能力は毎時7件と4件で、ピークの到着は毎時12件です。同時に作業でき、両者の処理能力を合計できるとき、1時間当たりの積み残しは何件ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "2人で毎時11件を処理できます。到着12件との差は1件です。担当者が2人という情報だけでは積み残しは求められません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "1"
+      ]
+    },
+    {
+      "id": "ip-organization-textbook-2",
+      "lesson": "ip-organization",
+      "field": "strategy",
+      "prompt": "災害訓練で正担当へ連絡が付かず、受付再開が遅れました。計画を有効にする次の対応はどれですか。",
+      "options": [
+        "実施日だけを変えて計画は変えない",
+        "全業務の優先順位を同じにする",
+        "代行者と連絡順を決めて更新し、同じ条件で再訓練する",
+        "連絡が付かなかった記録を消す"
+      ],
+      "answer": 2,
+      "explanation": "遅れた原因は正担当を代行できなかったことです。代行と連絡順を計画に反映し、訓練で動くか確かめます。"
+    }
+  ],
+  "ip-analysis": [
+    {
+      "id": "ip-analysis-textbook-1",
+      "lesson": "ip-analysis",
+      "field": "strategy",
+      "prompt": "午前は80件中4件、午後は120件中12件で手戻りが発生しました。受付全体の手戻り率を百分率の数値で答えてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "手戻りは16件、受付は200件です。16÷200×100＝8％です。時間帯別の5％と10％を単純平均すると、受付件数の違いが反映されません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "8"
+      ]
+    },
+    {
+      "id": "ip-analysis-textbook-2",
+      "lesson": "ip-analysis",
+      "field": "strategy",
+      "prompt": "改善前は500件中30件、改善後は300件中21件の差戻しです。差戻し率は何ポイント増えましたか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "改善前は6％、改善後は7％です。7－6＝1パーセントポイント増えました。件数だけなら30から21に減っています。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "1"
+      ]
+    }
+  ],
+  "ip-finance": [
+    {
+      "id": "ip-finance-textbook-1",
+      "lesson": "ip-finance",
+      "field": "strategy",
+      "prompt": "導入費84万円の機器で、年間の外注費が30万円減り、年間保守費が9万円増えます。他の費用と割引を無視した単純な回収期間は何年ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "年間の純節約額は30－9＝21万円です。84÷21＝4年です。外注費だけを使うと毎年の保守費を見落とします。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "4"
+      ]
+    },
+    {
+      "id": "ip-finance-textbook-2",
+      "lesson": "ip-finance",
+      "field": "strategy",
+      "prompt": "月初現金60万円、今月の入金予定25万円、今月の支払予定100万円です。他の取引がない場合、不足額は何万円ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "利用できる現金は85万円です。支払100万円との差15万円が不足します。今月の売上高だけでは不足額は求められません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "15"
+      ]
+    }
+  ],
+  "ip-rights": [
+    {
+      "id": "ip-rights-textbook-1",
+      "lesson": "ip-rights",
+      "field": "strategy",
+      "prompt": "新製品の特徴的な外観を保護したい場合、主に検討する権利は何ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "外観のデザインを対象とするため意匠権です。名称を識別表示として保護する場合は商標権、技術上の発明には特許権を検討します。",
+      "input": "text",
+      "accepted": [
+        "意匠権",
+        "意匠"
+      ]
+    },
+    {
+      "id": "ip-rights-textbook-2",
+      "lesson": "ip-rights",
+      "field": "strategy",
+      "prompt": "購入した素材をウェブ広告向けに加工したいとき、まず確かめるべきことはどれですか。",
+      "options": [
+        "加工にかかる時間が短いか",
+        "利用許諾が広告利用と改変を認めているか",
+        "購入額が他の商品より安いか",
+        "元のファイル名が短いか"
+      ],
+      "answer": 1,
+      "explanation": "購入だけでは広告利用や加工の権限は決まりません。契約やライセンスにある利用目的と改変条件を確認します。"
+    }
+  ],
+  "ip-law-ethics": [
+    {
+      "id": "ip-law-ethics-textbook-1",
+      "lesson": "ip-law-ethics",
+      "field": "strategy",
+      "prompt": "顧客住所を配送だけのために預かった会社が、その住所を自社の広告に使いたいと述べています。最初に再確認すべき点はどれですか。",
+      "options": [
+        "配送委託の範囲内の扱いか、相手独自の利用に変わるか",
+        "広告の文字の大きさ",
+        "住所の並び順",
+        "広告の配信曜日"
+      ],
+      "answer": 0,
+      "explanation": "配送に必要な取扱いと、相手が自社広告のために使う場合では目的と立場が異なります。利用目的や第三者提供に当たるかを確認し、必要な手続を判断します。"
+    },
+    {
+      "id": "ip-law-ethics-textbook-2",
+      "lesson": "ip-law-ethics",
+      "field": "strategy",
+      "prompt": "取適法の対象かを調べるとき、発注会社の資本金の記録だけでは判断できません。追加で何を確認しますか。",
+      "options": [
+        "成果物を保存する端末の台数",
+        "担当者の在職年数",
+        "取引の種類、相手方の規模、該当する資本金基準と従業員基準",
+        "利用しているメールアプリの名称"
+      ],
+      "answer": 2,
+      "explanation": "適用は取引内容と当事者の規模で決まります。資本金のほか、該当する従業員基準も確認します。"
+    },
+    {
+      "id": "ip-law-ethics-textbook-3",
+      "lesson": "ip-law-ethics",
+      "field": "strategy",
+      "prompt": "大規模な投稿サービスの運営者が権利侵害の削除申出を受けました。制度を学ぶ上で正しい考え方はどれですか。",
+      "options": [
+        "取適法の資本金基準で削除を判断する",
+        "申出への対応手続と、権利侵害の判断を区別する",
+        "申出を受けた時点で全ての投稿が違法と確定する",
+        "投稿者の同意があれば削除申出の窓口は不要になる"
+      ],
+      "answer": 1,
+      "explanation": "窓口や調査・通知の手続と、投稿による権利侵害を判断することは別です。取適法の規模基準も適用しません。"
+    },
+    {
+      "id": "ip-law-ethics-textbook-4",
+      "lesson": "ip-law-ethics",
+      "field": "strategy",
+      "prompt": "会社が災害時の行政・事業者間の連携の仕組みを確認します。他人の認証情報を無断で使う個別行為の規制とは別に、政策や関係者の責務の枠組みを規定する法令はどれですか。",
+      "options": [
+        "特定電子メール法",
+        "サイバーセキュリティ基本法",
+        "不正アクセス禁止法",
+        "中小受託取引適正化法"
+      ],
+      "answer": 1,
+      "explanation": "サイバーセキュリティ基本法は、政策の枠組みや国などの責務を扱います。他人の認証情報を用いたアクセスなどの規制は、不正アクセス禁止法の要件を個別に確認します。"
+    }
+  ],
+  "ip-standards": [
+    {
+      "id": "ip-standards-textbook-1",
+      "lesson": "ip-standards",
+      "field": "strategy",
+      "prompt": "取引先が同じ配送CSVを取り込めるものの、希望日の空欄を異なる意味で処理します。最初に行うべき対策はどれですか。",
+      "options": [
+        "取引先のパソコンを同じ色にする",
+        "空欄の意味をデータ仕様として合意し、両社で同じ例を取り込んで確かめる",
+        "ファイルの拡張子だけを変える",
+        "全ての空欄を無条件で消す"
+      ],
+      "answer": 1,
+      "explanation": "ファイルは読めているので問題は値の解釈です。空欄をどう処理するかを共通仕様にし、実際の変換結果も確かめます。"
+    },
+    {
+      "id": "ip-standards-textbook-2",
+      "lesson": "ip-standards",
+      "field": "strategy",
+      "prompt": "商品コードは仕様に合っていますが、曲面の包装では読めません。対処の第一歩はどれですか。",
+      "options": [
+        "商品を全て同じ番号にする",
+        "正常な平面ラベルだけを再試験する",
+        "読めない記録を件数から除く",
+        "包装の形状と印刷条件を含む読み取り試験を行う"
+      ],
+      "answer": 3,
+      "explanation": "番号の表現が正しいことと、現場の物理条件で読み取れることは別です。曲面や印刷条件を含む試験で再現し、原因を切り分けます。"
+    }
+  ],
+  "ip-strategy": [
+    {
+      "id": "ip-strategy-textbook-1",
+      "lesson": "ip-strategy",
+      "field": "strategy",
+      "prompt": "従来と同じ商品を、新たな海外市場で初めて販売します。アンゾフの成長マトリクスではどれですか。",
+      "options": [
+        "市場浸透",
+        "多角化",
+        "市場開拓",
+        "製品開発"
+      ],
+      "answer": 2,
+      "explanation": "商品は既存、市場は新規です。変わるのが市場だけなので市場開拓です。"
+    },
+    {
+      "id": "ip-strategy-textbook-2",
+      "lesson": "ip-strategy",
+      "field": "strategy",
+      "prompt": "既存商品を既存の顧客層へさらに販売します。分類名はどれですか。",
+      "options": [
+        "市場浸透",
+        "市場開拓",
+        "製品開発",
+        "多角化"
+      ],
+      "answer": 0,
+      "explanation": "商品も市場も既存です。その組合せで販売を増やす施策は市場浸透です。"
+    },
+    {
+      "id": "ip-strategy-textbook-3",
+      "lesson": "ip-strategy",
+      "field": "strategy",
+      "prompt": "配送の評価をするために、顧客の要望、競合の実績、自社の設備を分けて整理します。用いている手法はどれですか。",
+      "options": [
+        "PPM",
+        "ABC分析",
+        "損益分岐点分析",
+        "3C分析"
+      ],
+      "answer": 3,
+      "explanation": "顧客、競合、自社の三つを整理しているので3C分析です。PPMは事業の市場成長率と相対市場シェアを使って資源配分を考えます。"
+    },
+    {
+      "id": "ip-strategy-textbook-4",
+      "lesson": "ip-strategy",
+      "field": "strategy",
+      "prompt": "問い合わせ160件、見積りへ進む率50％、見積りから契約へ進む率25％です。このモデルで見込む契約数は何件ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "見積りは160×0.50＝80件で、その25％が契約になります。80×0.25＝20件です。契約率の分母は問い合わせ全体ではなく見積り件数です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "20"
+      ]
+    }
+  ],
+  "ip-marketing": [
+    {
+      "id": "ip-marketing-textbook-1",
+      "lesson": "ip-marketing",
+      "field": "strategy",
+      "prompt": "広告費18,000円で30件購入されました。購入1件当たりの広告費は何円ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "広告費÷購入件数で求めます。18,000÷30＝600円です。表示件数やクリック件数では割りません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "600"
+      ]
+    },
+    {
+      "id": "ip-marketing-textbook-2",
+      "lesson": "ip-marketing",
+      "field": "strategy",
+      "prompt": "購入1件の広告費控除前の利益が1,200円、購入20件、広告費8,000円の場合、広告費控除後の利益は何円ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "広告費を引く前は1,200×20＝24,000円です。8,000円を差し引くと16,000円です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "16000"
+      ]
+    },
+    {
+      "id": "ip-marketing-textbook-3",
+      "lesson": "ip-marketing",
+      "field": "strategy",
+      "prompt": "熟練者が音を聞き分ける手掛かりを言葉にして、新人向けの手順書に記載しました。SECIモデルのどの段階ですか。",
+      "options": [
+        "表出化",
+        "共同化",
+        "連結化",
+        "内面化"
+      ],
+      "answer": 0,
+      "explanation": "暗黙の判断を言葉にして形式知へ移したので表出化です。既存の文書とその手順書を組み合わせる場合は連結化です。"
+    }
+  ],
+  "ip-tech-business": [
+    {
+      "id": "ip-tech-business-textbook-1",
+      "lesson": "ip-tech-business",
+      "field": "strategy",
+      "prompt": "店舗画像で分類技術を試したところ全体の正解率は高く、暗い店舗でだけ誤分類が多く出ました。導入判断の前に何を確かめますか。",
+      "options": [
+        "照明条件別の誤りと、訂正・代替運用の可否",
+        "全体平均だけを確認する",
+        "暗い店舗の記録を消して平均を上げる",
+        "分類結果を確認する担当者を減らす"
+      ],
+      "answer": 0,
+      "explanation": "全体平均は条件別の偏りを隠します。実店舗で起きる誤りを条件別に測り、人が訂正できるかも確認します。"
+    },
+    {
+      "id": "ip-tech-business-textbook-2",
+      "lesson": "ip-tech-business",
+      "field": "strategy",
+      "prompt": "発注予測を評価したところ欠品率は下がりましたが、余剰在庫が増えました。比較を続けるとき何をしますか。",
+      "options": [
+        "余剰在庫を集計から外す",
+        "需要が違う店舗の成績をそのまま比較する",
+        "欠品と廃棄・保管費を並べ、従来方式と同条件で評価する",
+        "欠品率だけで即時採用する"
+      ],
+      "answer": 2,
+      "explanation": "欠品だけを見れば在庫を増やす方法も有利になります。費用と廃棄を併記し、同じ前提で比較します。"
+    },
+    {
+      "id": "ip-tech-business-textbook-3",
+      "lesson": "ip-tech-business",
+      "field": "strategy",
+      "prompt": "道路の工事箇所と学校の位置を地図に重ね、工事の影響を受ける通学路を調べます。中心となる技術はどれですか。",
+      "options": [
+        "SFA",
+        "GIS",
+        "CAE",
+        "ERP"
+      ],
+      "answer": 1,
+      "explanation": "場所を持つ複数のデータを地図上で重ねて分析するため、GISです。ERPは基幹業務の統合、SFAは営業支援、CAEは設計の解析に使われます。"
+    }
+  ],
+  "ip-engineering-iot": [
+    {
+      "id": "ip-engineering-iot-textbook-1",
+      "lesson": "ip-engineering-iot",
+      "field": "strategy",
+      "prompt": "製品を30個作り、製品1個に部品を4個使います。部品在庫は35個で、10個を残します。入荷予定はありません。追加手配は何個ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "必要量は30×4＝120個です。在庫35個のうち使用できるのは25個です。120－25＝95個を手配します。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "95"
+      ]
+    },
+    {
+      "id": "ip-engineering-iot-textbook-2",
+      "lesson": "ip-engineering-iot",
+      "field": "strategy",
+      "prompt": "通信が途切れても、制限を超える荷に対してゲートを開けたくありません。判定を置く場所として適切なのはどれですか。",
+      "options": [
+        "通信でしか使えない遠隔の集計サービス",
+        "商品名を印字したラベル",
+        "次の月の報告書だけ",
+        "センサーとゲートに接続された現場の制御装置"
+      ],
+      "answer": 3,
+      "explanation": "通信に依存せず判断できる現場制御が必要です。遠隔集計は記録の分析に使えても、通信断中にゲートを制御できません。"
+    }
+  ],
+  "ip-ecommerce": [
+    {
+      "id": "ip-ecommerce-textbook-1",
+      "lesson": "ip-ecommerce",
+      "field": "strategy",
+      "prompt": "注文2,400円に対し、決済事業者の明細に手数料96円と記録されています。返金その他の控除がないとき、入金額は何円ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "注文額から手数料を引きます。2,400－96＝2,304円です。照合には注文番号と明細も使います。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "2304"
+      ]
+    },
+    {
+      "id": "ip-ecommerce-textbook-2",
+      "lesson": "ip-ecommerce",
+      "field": "strategy",
+      "prompt": "2件の注文額が同額で、一方だけ返金されました。照合の方法として適切なのはどれですか。",
+      "options": [
+        "決済識別番号を元の注文へ対応付け、返金先を確かめる",
+        "同額の注文を両方取り消す",
+        "受付の早い注文を必ず取り消す",
+        "返金を手数料として記録する"
+      ],
+      "answer": 0,
+      "explanation": "同額では識別できません。決済識別番号から元の注文をたどると対象を一つに特定できます。"
+    }
+  ],
+  "ip-system-strategy": [
+    {
+      "id": "ip-system-strategy-textbook-1",
+      "lesson": "ip-system-strategy",
+      "field": "strategy",
+      "prompt": "受付後の待ち時間が90分、実作業が10分です。作業を半分に短縮しても待ち時間が変わらなければ、受付から完了までは何分になりますか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "実作業は5分になりますが、待ち時間は90分です。合計95分です。全体時間を大きく変えたいなら待ちを生む工程も調べます。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "95"
+      ]
+    },
+    {
+      "id": "ip-system-strategy-textbook-2",
+      "lesson": "ip-system-strategy",
+      "field": "strategy",
+      "prompt": "導入前は400件中160件、導入後は300件中120件が有人対応でした。有人対応率はどう変化しましたか。",
+      "options": [
+        "30％まで下がった",
+        "40％のままで変化していない",
+        "10ポイント下がった",
+        "10ポイント上がった"
+      ],
+      "answer": 1,
+      "explanation": "160÷400も120÷300も0.4です。有人件数が減っても割合は変わっていません。"
+    },
+    {
+      "id": "ip-system-strategy-textbook-3",
+      "lesson": "ip-system-strategy",
+      "field": "strategy",
+      "prompt": "自社が所有するサーバを事業者のデータセンターに持ち込み、施設を利用します。代表的な提供形態はどれですか。",
+      "options": [
+        "ハウジング",
+        "SaaS",
+        "社内オンプレミス",
+        "ASPの業務アプリ利用"
+      ],
+      "answer": 0,
+      "explanation": "機器は自社所有で、設置場所や設備を事業者から借りる形態なのでハウジングです。SaaSは業務アプリをサービスとして使います。"
+    },
+    {
+      "id": "ip-system-strategy-textbook-4",
+      "lesson": "ip-system-strategy",
+      "field": "strategy",
+      "prompt": "窓口の申請漏れ20件のうち、16件は二つの受付経路の間で記録が引き継がれなかったためでした。目標に直結する変更はどれですか。",
+      "options": [
+        "経路ごとに別々の台帳を増やす",
+        "両経路に同一の受付台帳を使い、引継ぎ状態を確認できるようにする",
+        "通知を増やし、引継ぎ記録を保存しない",
+        "公開サイトの色だけを変える"
+      ],
+      "answer": 1,
+      "explanation": "最も多い原因は受付経路間の記録の分断です。共通台帳と状態確認で原因に直接対処します。記録を分けたまま通知だけを増やしても引継ぎが完了したか分かりません。"
+    }
+  ],
+  "ip-procurement": [
+    {
+      "id": "ip-procurement-textbook-1",
+      "lesson": "ip-procurement",
+      "field": "strategy",
+      "prompt": "移行前と移行後のデータ件数は同じですが、二重登録と欠落が各1件ずつあるかもしれません。何を確認しますか。",
+      "options": [
+        "識別番号の集合と重複の有無を移行前後で照合する",
+        "件数だけをもう一度数える",
+        "担当者の在席時間を比較する",
+        "データを全て同じ番号に変更する"
+      ],
+      "answer": 0,
+      "explanation": "重複と欠落が同時に起こると件数は変わりません。識別番号ごとの照合で初めて二つの異常を見つけられます。"
+    },
+    {
+      "id": "ip-procurement-textbook-2",
+      "lesson": "ip-procurement",
+      "field": "strategy",
+      "prompt": "初期80万円、年間24万円、終了時の抽出費10万円の提案を3年間利用します。他の費用を無視した合計はいくらですか。単位を万円として数値で答えてください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "80＋24×3＋10＝162万円です。契約終了時に必要な費用も含めます。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "162"
+      ]
+    },
+    {
+      "id": "ip-procurement-textbook-3",
+      "lesson": "ip-procurement",
+      "field": "strategy",
+      "prompt": "ある機器は比較対象より1台当たり5 W少ない電力で動きます。30台を年間2,000時間使用すると、年間消費電力量は何kWh少なくなりますか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "5×30×2,000＝300,000 Whです。1,000で割ると300 kWhです。電力Wと電力量Whの単位を区別します。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "300"
+      ]
+    },
+    {
+      "id": "ip-procurement-textbook-4",
+      "lesson": "ip-procurement",
+      "field": "strategy",
+      "prompt": "要求は「月末に大量データを扱っても迅速に集計できること」です。受入れで検証できる記述はどれですか。",
+      "options": [
+        "開発担当者が使いやすいと感じること",
+        "所定環境で8万件を集計し、開始から結果の出力までを30分以内とする",
+        "画面を早く表示できることを目指す",
+        "迅速に動く高性能なシステムを導入する"
+      ],
+      "answer": 1,
+      "explanation": "対象とする件数、測る区間、環境と合格基準が示されています。他の選択肢は測る対象や条件が決まらず、関係者が同じ方法で判定できません。"
+    }
+  ]
+}

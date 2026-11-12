@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'CPU・メモリ・入出力',
   'description': '主要装置の役割と記憶階層を説明する。単純な処理時間を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 24,
-  'minutes': 45,
+  'order': 26,
+  'minutes': 65,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 15,
@@ -70,3 +70,45 @@ CPUは命令を実行し、主記憶は実行中の命令やデータを保持�
 ## 転送速度と端末の性能を切り分ける
 
 仕様上の最大20 MB/sで、実際には最大の80％の速度で転送できるとします。実効速度は16 MB/sなので、80 MBに5秒かかります。端末のCPUやSSDを替える前に、同じデータを別のケーブルや接続口で比較すると、どの部分で転送の上限が決まるか調べられます。CPUのクロック周波数だけで全体の性能は決まりません。命令当たりの処理、コアを同時利用できるか、メモリや入出力の待ちも関係します。
+
+<span id="textbook-computer"></span>
+
+## 読み込みと計算を分け、時間を使う場所を探す
+
+画像を加工する作業に10秒かかりました。CPUの周波数が2倍の機種なら5秒になるでしょうか。ファイルを読み出す時間と計算する時間を別に測るところから考えます。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="取り込む、入力装置から主記憶へ。計算する、CPUが命令とデータを読む。途中結果、主記憶に展開・キャッシュ。保存する、補助記憶へ書き戻す"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">取り込む</text><text x="126" y="29" fill="currentColor" font-size="14">入力装置から主記憶へ</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">計算する</text><text x="126" y="83" fill="currentColor" font-size="14">CPUが命令とデータを読む</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">途中結果</text><text x="126" y="137" fill="currentColor" font-size="14">主記憶に展開・キャッシュ</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">保存する</text><text x="126" y="191" fill="currentColor" font-size="14">補助記憶へ書き戻す</text></svg><figcaption>処理には計算以外に入出力もあります。どこに時間がかかるかを順に確認します。</figcaption></figure>
+
+<span id="computer-textbook-skill-1"></span>
+
+### 1クロックと1命令を混同しない
+
+2 GHzは1秒当たり20億周期です。仮に1命令で4周期必要なら、1命令の時間は4÷20億秒＝2ナノ秒です。この仮定では1秒当たり5億命令を処理できます。周波数が高いだけでは、同じ仕事を何命令で済ませるか、命令ごとの周期数、主記憶を待つ時間は分かりません。比較するときは同じ仕事と条件で測ります。マルチコアも、処理を分担できる部分だけが並行に進みます。
+
+<span id="computer-textbook-skill-2"></span>
+
+### 時間の内訳から、機器変更後を見積もる
+
+画像の読み込みに6秒、計算に3秒、保存に1秒かかるとします。計算が2倍速くなれば3秒が1.5秒になりますが、残りは同じなので合計8.5秒です。逆に読み込みだけを6秒から2秒にできれば合計6秒です。処理時間の大きい箇所に目を向け、どの改善なら全体に効くかを考えます。
+
+<span id="computer-textbook-skill-3"></span>
+
+### メモリの階層と保持条件を結び付ける
+
+CPUの近くにあるキャッシュは、小容量でも高速です。繰り返し使うデータを保持できれば主記憶へのアクセスを減らせます。主記憶のRAMは、作業中のデータや実行中のプログラムを保持し、通常は電源を切ると内容が消えます。SSDなどの補助記憶は保存用で、電源を切っても記録が残ります。保存せずに終了した編集が失われる理由は、作業状態を補助記憶へ書き出していないからです。
+
+<span id="computer-textbook-skill-4"></span>
+
+### インタフェースの単位をそろえてボトルネックを見つける
+
+USBの理論上の帯域が十分でも、保存先の装置が遅いと全体の速度は装置の上限に近づきます。120 MBを実効30 MB/sの装置に保存するだけで最低4秒です。回線が240 Mbit/sなら、1バイト＝8ビットとして30 MB/s。片方がビット、片方がバイトのまま大小を比べないようにします。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　読込み8秒、計算6秒、書込み2秒。計算を3倍速くし、読込みを半分の時間にしたときの合計を求めます。
+
+読込み4秒、計算2秒、書込み2秒で合計8秒。各工程の変更を個別に適用してから足します。
+
+</details>
+
+**復習の目安**　周波数、メモリ階層、転送単位と処理全体の時間を結び付けて説明できます。

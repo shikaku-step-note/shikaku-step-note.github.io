@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'オフィスツールとOSS',
   'description': '表計算の参照と集計を説明する。OSSの利用条件と保守を確認する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 27,
-  'minutes': 45,
+  'order': 29,
+  'minutes': 65,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 17,
@@ -67,3 +67,45 @@ B列は件数、E1は単価です。C2に `=B2*$E$1` を書き、C3へコピー�
 ## ソフトウェアを配る条件まで調べる
 
 ソースを読めるツールを選ぶ場合、用途に合う機能や動作環境に加え、利用・改変・再配布の条件を確認します。組織内で使うだけか、改変したものを顧客に配るかで確認する行為が変わります。「無料で入手できる」ことだけでは、改変後の再配布を自由にできるとは判断できません。ライセンス本文で著作権表示、同梱すべき文書、改変物や依存物の扱いを確認します。具体的な条件はライセンスごとに異なります。
+
+<span id="textbook-office-oss"></span>
+
+## 表計算のセルを読み、ソフトウェアの使い方を判断する
+
+商品ごとに異なる数量と、全商品で同じ値引率を使う表を作ります。式をコピーするときは、どの値が商品に応じて移動し、どの値が固定されるかを先に整理します。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="行が動く、商品ごとの数量・単価。セルを固定、共通の値引率を絶対参照。範囲を点検、集計対象と例外を照合。配布を点検、ライセンスの条件を確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">行が動く</text><text x="126" y="29" fill="currentColor" font-size="14">商品ごとの数量・単価</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">セルを固定</text><text x="126" y="83" fill="currentColor" font-size="14">共通の値引率を絶対参照</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">範囲を点検</text><text x="126" y="137" fill="currentColor" font-size="14">集計対象と例外を照合</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">配布を点検</text><text x="126" y="191" fill="currentColor" font-size="14">ライセンスの条件を確認</text></svg><figcaption>表計算の検証では、コピー先の式を読む方法と、実際の値で戻し算する方法を使えます。</figcaption></figure>
+
+<span id="office-oss-textbook-skill-1"></span>
+
+### 参照を移動量で読む
+
+B2に数量、C2に単価、F1に共通の値引率があり、D2の式を `=B2*C2*(1-$F$1)` とします。D3へコピーすると、行に固定記号のないB2とC2だけが一つ下へ移り、F1は固定です。D3の数量4、単価500、値引率10％なら4×500×0.9＝1,800円です。`$F1` は列だけ固定、`F$1` は行だけ固定です。右と下の両方へコピーする価格表では、どちらの方向を固定したいかを確かめます。
+
+<span id="office-oss-textbook-skill-2"></span>
+
+### 集計に含める行を明確にする
+
+A2〜A5に商品名、B列に売上、C列に区分があるとします。全売上の合計と、「返品」以外だけの合計では対象が違います。先に区分の条件を決め、空白、入力誤り、返品を別々に扱います。100、200、返品の−50が並ぶ例では、全件なら250、返品を除いた売上なら300。集計の名称も条件に合わせて区別します。丸めは途中で行うと結果が変わる場合があるので、指示された段階で行います。
+
+<span id="office-oss-textbook-skill-3"></span>
+
+### 図と文書の機能を用途から選ぶ
+
+月別の変化を見せるなら横軸を時間にした折れ線、商品ごとの大小を比べるなら棒グラフが向きます。文書では見出しのスタイルを使うと、表示の統一や目次生成に役立ちます。多数の宛先へ同じ文面を個別に作るなら、一覧と文書を結び付ける差し込みが使えます。値の集計、表示方法、文書作成を一つの機能で行う必要はありません。
+
+<span id="office-oss-textbook-skill-4"></span>
+
+### ソフトを使う行為と再配布を分ける
+
+OSSはソースを参照・利用・改変・再配布できる条件がライセンスで定められています。無料で取得できるだけではOSSとは判断できません。社内で実行する場合と、改変したものを顧客へ渡す場合では確認事項が変わります。例えば再配布に著作権表示が必要なら同梱物に残し、ソース提供などの条件がある場合も個別のライセンス本文を確認します。複数の部品を含む場合は部品ごとに確認します。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　式 `=$B4*C$2` を右へ2列、下へ1行コピーします。
+
+列Bは固定なので `$B5`。C列は2列移ってE、2行目は固定なので `E$2`。式は `=$B5*E$2` です。
+
+</details>
+
+**復習の目安**　混合参照と集計条件を読み、再配布の前に必要な条件を確認できます。

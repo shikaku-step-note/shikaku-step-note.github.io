@@ -1,0 +1,499 @@
+{
+  "syllabus": "6.5",
+  "verified": "2026-11-12",
+  "coverage": "Strategy items 1–24. Evidence concerns selected competencies and does not establish independent exam-readiness across every listed term.",
+  "items": [
+    {
+      "number": 1,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=8",
+      "printedPage": "4–5",
+      "skill": "設備投資と業務能力の区別、人的資本、継続計画と訓練",
+      "lesson": "ip-organization",
+      "anchors": [
+        "textbook-organization",
+        "textbook-organization-transfer"
+      ],
+      "practiceIds": [
+        "ip-organization-textbook-1",
+        "ip-organization-textbook-2"
+      ],
+      "assessment": "ip-organization-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "人的資本の指標設計や社会のデジタル化は代表事例で扱う。"
+    },
+    {
+      "number": 2,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=9",
+      "printedPage": "5–7",
+      "skill": "標本の偏り、分母、欠測、工程ごとの記録、率と件数の比較",
+      "lesson": "ip-analysis",
+      "anchors": [
+        "textbook-analysis",
+        "textbook-analysis-transfer"
+      ],
+      "practiceIds": [
+        "ip-analysis-textbook-1",
+        "ip-analysis-textbook-2"
+      ],
+      "assessment": "ip-analysis-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "個別の管理図での限界推定は本章の比較課題と別。"
+    },
+    {
+      "number": 3,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=11",
+      "printedPage": "7–8",
+      "skill": "財務三表、掛取引、回収年数、短期資金不足",
+      "lesson": "ip-finance",
+      "anchors": [
+        "textbook-finance",
+        "textbook-finance-transfer"
+      ],
+      "practiceIds": [
+        "ip-finance-textbook-1",
+        "ip-finance-textbook-2"
+      ],
+      "assessment": "ip-finance-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "税率・特例の個別判断は対象としない。"
+    },
+    {
+      "number": 4,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=13",
+      "printedPage": "9",
+      "skill": "対象別の保護、許諾の範囲、引用、営業秘密の条件",
+      "lesson": "ip-rights",
+      "anchors": [
+        "textbook-rights",
+        "textbook-rights-transfer"
+      ],
+      "practiceIds": [
+        "ip-rights-textbook-1",
+        "ip-rights-textbook-2"
+      ],
+      "assessment": "ip-rights-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "各権利の登録手続や権利制限の全例を検証した範囲ではない。"
+    },
+    {
+      "number": 5,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=14",
+      "printedPage": "10",
+      "skill": "アクセス制御、セキュリティ基本法の枠組み、広告メールの行為規制",
+      "lesson": "ip-law-ethics",
+      "anchors": [
+        "textbook-law-ethics-security"
+      ],
+      "practiceIds": [
+        "ip-law-ethics-textbook-4"
+      ],
+      "assessment": "ip-law-ethics-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "個々の犯罪の構成要件や処罰の細目を扱う演習は残る。"
+    },
+    {
+      "number": 6,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=15",
+      "printedPage": "11",
+      "skill": "指揮命令と契約実態、取適法の取引区分・規模・適用時点",
+      "lesson": "ip-law-ethics",
+      "anchors": [
+        "textbook-law-ethics",
+        "textbook-law-ethics-transfer"
+      ],
+      "practiceIds": [
+        "ip-law-ethics-textbook-2"
+      ],
+      "assessment": "ip-law-ethics-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "細かな閾値と例外は当局資料で照合する方法まで。"
+    },
+    {
+      "number": 7,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=16",
+      "printedPage": "12",
+      "skill": "委託目的と相手の独自利用、情報倫理、投稿サービスの削除申出手続",
+      "lesson": "ip-law-ethics",
+      "anchors": [
+        "textbook-law-ethics",
+        "textbook-law-ethics-transfer"
+      ],
+      "practiceIds": [
+        "ip-law-ethics-textbook-1",
+        "ip-law-ethics-textbook-3"
+      ],
+      "assessment": "ip-law-ethics-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "個別事案における適法性や投稿削除の当否は評価しない。"
+    },
+    {
+      "number": 8,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=17",
+      "printedPage": "13",
+      "skill": "形式と意味の相互運用、規格適合の範囲、商品識別と現場試験",
+      "lesson": "ip-standards",
+      "anchors": [
+        "textbook-standards",
+        "textbook-standards-transfer"
+      ],
+      "practiceIds": [
+        "ip-standards-textbook-1",
+        "ip-standards-textbook-2"
+      ],
+      "assessment": "ip-standards-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "個別識別規格の符号や仕様の実装は対象外。"
+    },
+    {
+      "number": 9,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=18",
+      "printedPage": "14",
+      "skill": "3C・SWOT・VRIO・PPMの目的、成長方向の分類",
+      "lesson": "ip-strategy",
+      "anchors": [
+        "textbook-strategy",
+        "textbook-strategy-method"
+      ],
+      "practiceIds": [
+        "ip-strategy-textbook-1",
+        "ip-strategy-textbook-2",
+        "ip-strategy-textbook-3"
+      ],
+      "assessment": "ip-strategy-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "経営戦略の例示語のすべてに個別演習を用意した範囲ではない。"
+    },
+    {
+      "number": 10,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=18",
+      "printedPage": "14–15",
+      "skill": "複数媒体のCTR・CVR・CPA、利益への寄与",
+      "lesson": "ip-marketing",
+      "anchors": [
+        "textbook-marketing",
+        "textbook-marketing-transfer"
+      ],
+      "practiceIds": [
+        "ip-marketing-textbook-1",
+        "ip-marketing-textbook-2"
+      ],
+      "assessment": "ip-marketing-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "媒体間の重複接触を計測する詳細モデルは対象外。"
+    },
+    {
+      "number": 11,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=19",
+      "printedPage": "15",
+      "skill": "中間指標から成約数を見積もる、施策を変える条件を切り分ける",
+      "lesson": "ip-strategy",
+      "anchors": [
+        "textbook-strategy",
+        "textbook-strategy-transfer",
+        "textbook-strategy-kpi-case"
+      ],
+      "practiceIds": [
+        "ip-strategy-textbook-4"
+      ],
+      "assessment": "ip-strategy-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "同じ条件で比較する試験設計は代表例を扱う。"
+    },
+    {
+      "number": 12,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=20",
+      "printedPage": "16",
+      "skill": "CRM・SFA・ERP・SCMの目的、SECIの知識変換",
+      "lesson": "ip-marketing",
+      "anchors": [
+        "textbook-marketing",
+        "textbook-marketing-knowledge"
+      ],
+      "practiceIds": [
+        "ip-marketing-textbook-3"
+      ],
+      "assessment": "ip-marketing-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "ERPの実装方式ごとの評価は代表例のみ。"
+    },
+    {
+      "number": 13,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=21",
+      "printedPage": "17",
+      "skill": "試作から導入までの節目、共同実証の条件、評価基準の比較",
+      "lesson": "ip-tech-business",
+      "anchors": [
+        "textbook-tech-business",
+        "textbook-tech-business-transfer"
+      ],
+      "practiceIds": [
+        "ip-tech-business-textbook-1",
+        "ip-tech-business-textbook-2"
+      ],
+      "assessment": "ip-tech-business-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "資金調達手法の個別条件は本章で検証していない。"
+    },
+    {
+      "number": 14,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=22",
+      "printedPage": "18–19",
+      "skill": "公共サービス・AIの利用時の説明、代替、誤りへの対応",
+      "lesson": "ip-tech-business",
+      "anchors": [
+        "textbook-tech-business",
+        "textbook-tech-business-transfer",
+        "textbook-tech-business-systems"
+      ],
+      "practiceIds": [
+        "ip-tech-business-textbook-1",
+        "ip-tech-business-textbook-2",
+        "ip-tech-business-textbook-3"
+      ],
+      "assessment": "ip-tech-business-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "公共制度は電子申請、交通情報、地図データの代表例を扱う。"
+    },
+    {
+      "number": 15,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=23",
+      "printedPage": "19",
+      "skill": "CAD・CAE・CAMの引継ぎ、部品表による所要量",
+      "lesson": "ip-engineering-iot",
+      "anchors": [
+        "textbook-engineering-iot"
+      ],
+      "practiceIds": [
+        "ip-engineering-iot-textbook-1"
+      ],
+      "assessment": "ip-engineering-iot-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "設備・物流の用語例は一連の製品例を中心に扱う。"
+    },
+    {
+      "number": 16,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=24",
+      "printedPage": "20",
+      "skill": "取引の形態、注文・決済・入金・返金の照合",
+      "lesson": "ip-ecommerce",
+      "anchors": [
+        "textbook-ecommerce",
+        "textbook-ecommerce-transfer"
+      ],
+      "practiceIds": [
+        "ip-ecommerce-textbook-1",
+        "ip-ecommerce-textbook-2"
+      ],
+      "assessment": "ip-ecommerce-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "金融商品そのものの仕組みは対象外。"
+    },
+    {
+      "number": 17,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=24",
+      "printedPage": "20–21",
+      "skill": "センサー・制御装置・アクチュエーターと遠隔集計",
+      "lesson": "ip-engineering-iot",
+      "anchors": [
+        "textbook-engineering-iot",
+        "textbook-engineering-iot-transfer"
+      ],
+      "practiceIds": [
+        "ip-engineering-iot-textbook-2"
+      ],
+      "assessment": "ip-engineering-iot-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "実機の配線や製造装置の取り扱いは学習用概念図まで。"
+    },
+    {
+      "number": 18,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=26",
+      "printedPage": "22",
+      "skill": "事業目標から情報システム案件を選択する",
+      "lesson": "ip-system-strategy",
+      "anchors": [
+        "textbook-system-strategy",
+        "textbook-system-strategy-choice"
+      ],
+      "practiceIds": [
+        "ip-system-strategy-textbook-4"
+      ],
+      "assessment": "ip-system-strategy-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "原因データで複数案を比較。企業全体の予算配分を最適化する問題は扱わない。"
+    },
+    {
+      "number": 19,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=26",
+      "printedPage": "22–23",
+      "skill": "工程と待ち時間の可視化、業務変更、BYODの留意",
+      "lesson": "ip-system-strategy",
+      "anchors": [
+        "textbook-system-strategy"
+      ],
+      "practiceIds": [
+        "ip-system-strategy-textbook-1"
+      ],
+      "assessment": "ip-system-strategy-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "業務図の自由作図は本文の読み取り例まで。"
+    },
+    {
+      "number": 20,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=27",
+      "printedPage": "23–24",
+      "skill": "SI・クラウド・ハウジング・SaaSの管理範囲",
+      "lesson": "ip-system-strategy",
+      "anchors": [
+        "textbook-system-strategy",
+        "textbook-system-strategy-provider"
+      ],
+      "practiceIds": [
+        "ip-system-strategy-textbook-3"
+      ],
+      "assessment": "ip-system-strategy-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "契約による例外は条件を読む方法まで。"
+    },
+    {
+      "number": 21,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=28",
+      "printedPage": "24",
+      "skill": "導入前後を同じ指標で評価し、利用実態を解釈する",
+      "lesson": "ip-system-strategy",
+      "anchors": [
+        "textbook-system-strategy-transfer",
+        "textbook-system-strategy-provider"
+      ],
+      "practiceIds": [
+        "ip-system-strategy-textbook-2"
+      ],
+      "assessment": "ip-system-strategy-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "長期の費用対効果は調達章の費用演習も参照。"
+    },
+    {
+      "number": 22,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=29",
+      "printedPage": "25",
+      "skill": "移行対象・正本・変換・受入れ・切戻し",
+      "lesson": "ip-procurement",
+      "anchors": [
+        "textbook-procurement"
+      ],
+      "practiceIds": [
+        "ip-procurement-textbook-1"
+      ],
+      "assessment": "ip-procurement-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "複数日にまたがる移行の管理は代表事例まで。"
+    },
+    {
+      "number": 23,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=29",
+      "printedPage": "25",
+      "skill": "業務要件を測定可能な受入れ条件に変え、変更の影響を合意する",
+      "lesson": "ip-procurement",
+      "anchors": [
+        "textbook-procurement",
+        "textbook-procurement-requirements"
+      ],
+      "practiceIds": [
+        "ip-procurement-textbook-4"
+      ],
+      "assessment": "ip-procurement-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "試験で判定可能な条件の選択を評価。自由記述の自動採点は用意していない。"
+    },
+    {
+      "number": 24,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=29",
+      "printedPage": "25",
+      "skill": "TCO、環境条件、AI・データの利用と返却・削除",
+      "lesson": "ip-procurement",
+      "anchors": [
+        "textbook-procurement-transfer",
+        "textbook-procurement-contract"
+      ],
+      "practiceIds": [
+        "ip-procurement-textbook-2",
+        "ip-procurement-textbook-3"
+      ],
+      "assessment": "ip-procurement-check",
+      "explanation": "author-reviewed worked instruction",
+      "independentPractice": "representative fresh task",
+      "factualReview": "author review using linked primary source and independent arithmetic as applicable",
+      "independentEditorialReview": "pending independent review",
+      "limitation": "契約条項の法的判断や公共調達基準の細目は対象外。"
+    }
+  ]
+}

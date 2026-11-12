@@ -1,0 +1,176 @@
+{
+  "ip-reading-business-data": [
+    {
+      "id": "ip-reading-business-data-textbook-rate",
+      "lesson": "ip-reading-business-data",
+      "field": "strategy",
+      "prompt": "北店は300件中12件、南店は500件中15件の再配送があった。北店の再配送率は南店より何パーセントポイント高いか。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "1"
+      ],
+      "explanation": "北店は12÷300＝4％、南店は15÷500＝3％です。差は1パーセントポイントです。件数は南店の方が多くても、同じ注文1件を基準にすると北店の率が高くなります。"
+    },
+    {
+      "id": "ip-reading-business-data-textbook-weighted",
+      "lesson": "ip-reading-business-data",
+      "field": "strategy",
+      "prompt": "北店は150件の注文のうち9件、南店は750件の注文のうち18件が取消しだった。2店の全注文に対する取消率は何％か。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "3"
+      ],
+      "explanation": "取消件数は9＋18＝27件、注文は150＋750＝900件です。27÷900×100＝3です。北店6％、南店2.4％の単純平均4.2％では、注文数の異なる二店を同じ重みで扱ってしまいます。"
+    },
+    {
+      "id": "ip-reading-business-data-textbook-threshold",
+      "lesson": "ip-reading-business-data",
+      "field": "strategy",
+      "prompt": "見直しに月9,000円かかる。1件の再処理を防ぐと1,250円の費用が減る。月の利益を増やすために必要な最低の削減件数は何件か。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "8"
+      ],
+      "explanation": "9,000÷1,250＝7.2です。7件では8,750円で費用に届かず、8件なら10,000円なので、最低8件必要です。"
+    },
+    {
+      "id": "ip-reading-business-data-textbook-composition",
+      "lesson": "ip-reading-business-data",
+      "field": "strategy",
+      "prompt": "標準注文と特殊注文では取違い率が異なる。受付を変更した月に特殊注文の比率も下がり、全体の取違い率が下がった。改善の効果を調べるとき、最初にすることはどれか。",
+      "options": [
+        "全体の取違い率だけから改善の効果を求める",
+        "注文の種類ごとに同じ条件で変更前後を比べる",
+        "変更後の件数だけを見て原因を決める",
+        "異なる月の率をそのまま足す"
+      ],
+      "answer": 1,
+      "explanation": "全体の率には各種類の率と注文構成の両方が反映されます。種類ごとに前後の率を比較すれば、構成が変わったことと各種類の改善を切り分ける出発点になります。"
+    }
+  ],
+  "ip-reading-project-plans": [
+    {
+      "id": "ip-reading-project-plans-textbook-join",
+      "lesson": "ip-reading-project-plans",
+      "field": "management",
+      "prompt": "Aの3日後にB（6日）とC（4日）が並行して進む。Bの後にD（2日）があり、CとDの後にE（3日）がある。最短の完了日数は何日か。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "14"
+      ],
+      "explanation": "Aの後から合流まではB＋D＝8日とC＝4日の大きい方です。3＋8＋3＝14日。全作業の日数を足すと並行部分を二重に数えます。"
+    },
+    {
+      "id": "ip-reading-project-plans-textbook-slack",
+      "lesson": "ip-reading-project-plans",
+      "field": "management",
+      "prompt": "開始からX（4日）とY（7日）が並行して進み、両方が終わるとZ（2日）が始まる。全体を最短で終える場合、Xは開始を何日まで遅らせられるか。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "3"
+      ],
+      "explanation": "Zを時点7で始めるにはXが時点7までに終わる必要があります。Xは4日なので最遅開始は時点3です。最早開始は時点0なので余裕は3日です。"
+    },
+    {
+      "id": "ip-reading-project-plans-textbook-shortening",
+      "lesson": "ip-reading-project-plans",
+      "field": "management",
+      "prompt": "2本の経路が並行し、両方の完了が必要である。当初はPが13日、Qが11日。Pだけを4日短縮すると全体は何日短くなるか。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "2"
+      ],
+      "explanation": "変更後のPは9日、Qは11日です。全体は長い方の11日で終わるので、当初の13日から2日短くなります。短縮した作業の4日がそのまま全体に反映されるわけではありません。"
+    },
+    {
+      "id": "ip-reading-project-plans-textbook-budget",
+      "lesson": "ip-reading-project-plans",
+      "field": "management",
+      "prompt": "Pは12日、Qは11日で並行し、目標は10日以内。Pは1日短縮するごとに2万円、Qは1日ごとに3万円かかる。ほかの制約はない。条件を満たす最小費用は何万円か。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "7"
+      ],
+      "explanation": "Pは2日以上、Qは1日以上短縮しなければなりません。2×2＋1×3＝7万円です。Pだけを短縮してもQが11日のままなので条件を満たしません。"
+    }
+  ],
+  "ip-reading-spreadsheets": [
+    {
+      "id": "ip-reading-spreadsheets-textbook-copy",
+      "lesson": "ip-reading-spreadsheets",
+      "field": "technology",
+      "prompt": "E6に =D$2*$C4 と入力した。G8にコピーすると式はどうなるか。",
+      "options": [
+        "=F$2*$C6",
+        "=F$4*$E6",
+        "=D$2*$C4",
+        "=F$2*$E4"
+      ],
+      "answer": 0,
+      "explanation": "2列右、2行下の移動です。D$2は列が動いてF、行2は固定です。$C4は列Cが固定で行が6になります。したがって =F$2*$C6 です。"
+    },
+    {
+      "id": "ip-reading-spreadsheets-textbook-condition",
+      "lesson": "ip-reading-spreadsheets",
+      "field": "technology",
+      "prompt": "A列が商品番号、B列が状態、C列が数量、D列が売上で、データは2行目から9行目。B列が「確定」の行の数量だけ合計する式はどれか。",
+      "options": [
+        "=SUMIF(C2:C9,\"確定\",B2:B9)",
+        "=SUMIF(B2:B9,\"確定\",D2:D9)",
+        "=SUMIF(B2:B9,\"確定\",C2:C9)",
+        "=SUMIF(B3:B10,\"確定\",C2:C9)"
+      ],
+      "answer": 2,
+      "explanation": "状態のB列を条件と照らし、同じ行の数量C列を合計します。D列を合計すると売上になります。条件範囲だけを1行ずらすと、状態と数量が別の明細になります。"
+    },
+    {
+      "id": "ip-reading-spreadsheets-textbook-audit",
+      "lesson": "ip-reading-spreadsheets",
+      "field": "technology",
+      "prompt": "ある表で売上の全件合計は18,200円、取消は1,600円と2,200円の2件だけで、残りはすべて確定だった。確定分の合計は何円か。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "14400"
+      ],
+      "explanation": "取消額は1,600＋2,200＝3,800円です。全件合計から引くと18,200−3,800＝14,400円です。条件付き合計を別の方法で検算する例です。"
+    },
+    {
+      "id": "ip-reading-spreadsheets-textbook-bottom",
+      "lesson": "ip-reading-spreadsheets",
+      "field": "technology",
+      "prompt": "単価がB列にあり、商品ごとに行が変わる。C8に =$B$3*C3 を入れて下へコピーすると、商品Bでも商品Aの単価が使われた。横にも縦にもコピーできる修正はどれか。",
+      "options": [
+        "=B$3*C3",
+        "=$B3*C3",
+        "=$B$3*$C3",
+        "=$B3*$C$3"
+      ],
+      "answer": 1,
+      "explanation": "単価の参照ではB列を固定し、商品に合わせて行を動かします。数量の参照は列と行の両方が動くので固定しません。修正した式を右端と下端のセルへ写し、手計算と比べます。"
+    }
+  ]
+}

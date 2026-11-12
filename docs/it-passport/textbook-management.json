@@ -1,0 +1,715 @@
+{
+  "syllabus": "IPA Ver.6.5",
+  "sourceReview": "2026-11-12",
+  "field": "management",
+  "competencies": [
+    {
+      "id": "management-25.1.1-1",
+      "syllabusSubsection": "25.1.1",
+      "sourcePage": 27,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=31",
+      "lesson": "ip-development",
+      "section": "depth-development-requirements",
+      "objective": "共同レビューで機能要件と非機能要件、品質特性、測定条件を区別する",
+      "worked": "depth-development-requirements",
+      "assessmentId": "ip-development-check",
+      "practiceIds": [
+        "ip-development-depth-requirements",
+        "ip-development-depth-quality"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-25.1.2-2",
+      "syllabusSubsection": "25.1.2",
+      "sourcePage": 27,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=31",
+      "lesson": "ip-development",
+      "section": "textbook-development",
+      "objective": "システム設計とソフトウェア詳細設計を区別し、要件を部品間の受渡しと例外処理へ落とす",
+      "worked": "textbook-development",
+      "assessmentId": "ip-development-check",
+      "practiceIds": [
+        "ip-development-textbook-design"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-25.1.3-3",
+      "syllabusSubsection": "25.1.3",
+      "sourcePage": 27,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=31",
+      "lesson": "ip-development",
+      "section": "textbook-development-testing",
+      "objective": "単体試験、白箱のテストデータ、コードレビュー、デバッグを目的で区別する",
+      "worked": "textbook-development-testing",
+      "assessmentId": "ip-development-check",
+      "practiceIds": [
+        "ip-development-textbook-views",
+        "ip-development-textbook-boundary"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-25.1.4-4",
+      "syllabusSubsection": "25.1.4",
+      "sourcePage": 27,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=31",
+      "lesson": "ip-development",
+      "section": "textbook-development-load",
+      "objective": "結合・黒箱・性能・負荷・回帰の違いを判断し、試験条件と基準に対して実績を評価する",
+      "worked": "textbook-development-load",
+      "assessmentId": "ip-development-check",
+      "practiceIds": [
+        "ip-development-textbook-load",
+        "ip-development-depth-test-scope"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-25.1.5-5",
+      "syllabusSubsection": "25.1.5",
+      "sourcePage": 28,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=32",
+      "lesson": "ip-development",
+      "section": "textbook-development-migration",
+      "objective": "移行照合、実環境での受入れ・妥当性、教育訓練の判断を分ける",
+      "worked": "textbook-development-migration",
+      "assessmentId": "ip-development-check",
+      "practiceIds": [
+        "ip-development-textbook-migration",
+        "ip-development-depth-validity"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-25.1.6-6",
+      "syllabusSubsection": "25.1.6",
+      "sourcePage": 28,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=32",
+      "lesson": "ip-development",
+      "section": "textbook-development-maintenance",
+      "objective": "運用開始後の修正・変更・改善を保守と捉え、受入れや回帰試験と区別する",
+      "worked": "textbook-development-maintenance",
+      "assessmentId": "ip-development-check",
+      "practiceIds": [
+        "ip-development-textbook-maintenance",
+        "ip-development-depth-acceptance",
+        "ip-development-depth-test-scope"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-25.2-7",
+      "syllabusSubsection": "25.2",
+      "sourcePage": 28,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=32",
+      "lesson": "ip-development",
+      "section": "depth-development-estimate",
+      "objective": "機能ポイント、類推、相対見積りを区別し、規模・生産性から工数と期間を見積もる",
+      "worked": "depth-development-estimate",
+      "assessmentId": "ip-development-check",
+      "practiceIds": [
+        "ip-development-textbook-estimate",
+        "ip-development-depth-estimate"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-26.1-8",
+      "syllabusSubsection": "26.1",
+      "sourcePage": 29,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=33",
+      "lesson": "ip-agile",
+      "section": "textbook-agile-modeling",
+      "objective": "構造化手法、オブジェクト指向、ユースケース、UMLを表現目的で選ぶ",
+      "worked": "textbook-agile-modeling",
+      "assessmentId": "ip-agile-check",
+      "practiceIds": [
+        "ip-agile-textbook-uml"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-26.1-9",
+      "syllabusSubsection": "26.1",
+      "sourcePage": 29,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=33",
+      "lesson": "ip-agile",
+      "section": "textbook-agile-mlops",
+      "objective": "DevOpsとMLOpsの運用範囲を説明し、データ変化に応じて検証・更新・切戻しを選ぶ",
+      "worked": "textbook-agile-mlops",
+      "assessmentId": "ip-agile-check",
+      "practiceIds": [
+        "ip-agile-textbook-model"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-26.2-10",
+      "syllabusSubsection": "26.2",
+      "sourcePage": 29,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=33",
+      "lesson": "ip-agile",
+      "section": "textbook-agile",
+      "objective": "ウォーターフォール、スパイラル、試作、RAD、リバースエンジニアリングを状況から選ぶ",
+      "worked": "textbook-agile",
+      "assessmentId": "ip-agile-check",
+      "practiceIds": [
+        "ip-agile-textbook-choose",
+        "ip-agile-depth-method"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-26.3-11",
+      "syllabusSubsection": "26.3",
+      "sourcePage": 29,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=33",
+      "lesson": "ip-agile",
+      "section": "textbook-agile-scrum",
+      "objective": "利用者の意見をスクラムの役割・成果物・レビューとふりかえりに結び付ける",
+      "worked": "textbook-agile-scrum",
+      "assessmentId": "ip-agile-check",
+      "practiceIds": [
+        "ip-agile-textbook-scrum"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-26.3-12",
+      "syllabusSubsection": "26.3",
+      "sourcePage": 29,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=33",
+      "lesson": "ip-agile",
+      "section": "textbook-agile-scrum",
+      "objective": "XP、テスト駆動開発、ペアプログラミング、リファクタリング、CIを目的で区別する",
+      "worked": "textbook-agile-scrum",
+      "assessmentId": "ip-agile-check",
+      "practiceIds": [
+        "ip-agile-textbook-xp"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-26.4.1-13",
+      "syllabusSubsection": "26.4.1",
+      "sourcePage": 29,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=33",
+      "lesson": "ip-agile",
+      "section": "depth-agile-process",
+      "objective": "SLCPの共通の作業名を使い、移行・保守の分担を合意する",
+      "worked": "depth-agile-process",
+      "assessmentId": "ip-agile-check",
+      "practiceIds": [
+        "ip-agile-textbook-framework"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-26.4.2-14",
+      "syllabusSubsection": "26.4.2",
+      "sourcePage": 29,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=33",
+      "lesson": "ip-agile",
+      "section": "depth-agile-maturity",
+      "objective": "CMMIの段階を観察例に当てはめ、組織の改善と製品の合否を分ける",
+      "worked": "depth-agile-maturity",
+      "assessmentId": "ip-agile-check",
+      "practiceIds": [
+        "ip-agile-textbook-framework",
+        "ip-agile-depth-maturity"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-27.1.1-15",
+      "syllabusSubsection": "27.1.1",
+      "sourcePage": 30,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=34",
+      "lesson": "ip-project",
+      "section": "depth-project-plan",
+      "objective": "期限と固有の成果物を持つ仕事を日常運用と区別する",
+      "worked": "depth-project-plan",
+      "assessmentId": "ip-project-check",
+      "practiceIds": [
+        "ip-project-textbook-close",
+        "ip-project-depth-artifacts"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-27.1.2-16",
+      "syllabusSubsection": "27.1.2",
+      "sourcePage": 30,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=34",
+      "lesson": "ip-project",
+      "section": "depth-project-plan",
+      "objective": "憲章、スコープ、WBS、ガントチャートを立上げから計画までの目的で選ぶ",
+      "worked": "depth-project-plan",
+      "assessmentId": "ip-project-check",
+      "practiceIds": [
+        "ip-project-depth-scope",
+        "ip-project-depth-artifacts"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-27.1.2-17",
+      "syllabusSubsection": "27.1.2",
+      "sourcePage": 30,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=34",
+      "lesson": "ip-project",
+      "section": "textbook-project",
+      "objective": "分岐、合流、逆算、余裕、最短納期を求める",
+      "worked": "textbook-project",
+      "assessmentId": "ip-project-check",
+      "practiceIds": [
+        "ip-project-textbook-schedule",
+        "ip-project-textbook-slack"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-27.1.2-18",
+      "syllabusSubsection": "27.1.2",
+      "sourcePage": 30,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=34",
+      "lesson": "ip-project",
+      "section": "textbook-project-resources",
+      "objective": "経路が切り替わる短縮案と人的資源の制約で工程を再計算する",
+      "worked": "textbook-project-resources",
+      "assessmentId": "ip-project-check",
+      "practiceIds": [
+        "ip-project-textbook-resource",
+        "ip-project-depth-critical-switch"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-27.1.2-19",
+      "syllabusSubsection": "27.1.2",
+      "sourcePage": 30,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=34",
+      "lesson": "ip-project",
+      "section": "textbook-project-report",
+      "objective": "スコープ変更・リスクと進捗を、関係者の判断に必要な情報として整理する",
+      "worked": "textbook-project-report",
+      "assessmentId": "ip-project-check",
+      "practiceIds": [
+        "ip-project-textbook-report",
+        "ip-project-textbook-risk",
+        "ip-project-depth-scope"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-27.1.2-20",
+      "syllabusSubsection": "27.1.2",
+      "sourcePage": 30,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=34",
+      "lesson": "ip-project",
+      "section": "depth-project-close",
+      "objective": "受入れ・残課題・保守の引継ぎで終結を判断する",
+      "worked": "depth-project-close",
+      "assessmentId": "ip-project-check",
+      "practiceIds": [
+        "ip-project-textbook-close"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-28.1-21",
+      "syllabusSubsection": "28.1",
+      "sourcePage": 31,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=35",
+      "lesson": "ip-services",
+      "section": "depth-services-lifecycle",
+      "objective": "利用者の価値を基準に、計画、設計、移行、提供、改善を区別する",
+      "worked": "depth-services-lifecycle",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-depth-lifecycle"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-28.2-22",
+      "syllabusSubsection": "28.2",
+      "sourcePage": 31,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=35",
+      "lesson": "ip-services",
+      "section": "textbook-services-itil",
+      "objective": "ITILをサービス管理の実践を整理する枠組みとして位置付ける",
+      "worked": "textbook-services-itil",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-textbook-itil",
+        "ip-services-textbook-pdca"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-28.3-23",
+      "syllabusSubsection": "28.3",
+      "sourcePage": 31,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=35",
+      "lesson": "ip-services",
+      "section": "textbook-services-report",
+      "objective": "SLA・SLO・SLIの役割、対象時間と除外条件を照合し、達成を判定する",
+      "worked": "textbook-services-report",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-textbook-sla",
+        "ip-services-depth-indicator"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-29.1-24",
+      "syllabusSubsection": "29.1",
+      "sourcePage": 31,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=35",
+      "lesson": "ip-services",
+      "section": "textbook-services",
+      "objective": "構成・変更・リリース・サービス要求・インシデント・問題管理を記録の種類と判断で区別する",
+      "worked": "textbook-services",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-textbook-change",
+        "ip-services-depth-incident",
+        "ip-services-depth-release"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-29.1-25",
+      "syllabusSubsection": "29.1",
+      "sourcePage": 31,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=35",
+      "lesson": "ip-services",
+      "section": "textbook-services-report",
+      "objective": "カタログ、サービス報告、需要管理、PDCAと可用性・継続を運用に使う",
+      "worked": "textbook-services-report",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-textbook-catalog",
+        "ip-services-textbook-pdca",
+        "ip-services-depth-continuity"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-29.2-26",
+      "syllabusSubsection": "29.2",
+      "sourcePage": 32,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=36",
+      "lesson": "ip-services",
+      "section": "textbook-services-report",
+      "objective": "SPOC、FAQ、チャットボット、AIOps、優先度とエスカレーションを使い分ける",
+      "worked": "textbook-services-report",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-textbook-desk"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-30.1-27",
+      "syllabusSubsection": "30.1",
+      "sourcePage": 32,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=36",
+      "lesson": "ip-services",
+      "section": "textbook-services-power",
+      "objective": "停電時のUPSと発電、サージ防護を目的と時間で選ぶ",
+      "worked": "textbook-services-power",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-textbook-power"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-30.2-28",
+      "syllabusSubsection": "30.2",
+      "sourcePage": 32,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=36",
+      "lesson": "ip-services",
+      "section": "textbook-services-green",
+      "objective": "設備最適化とGreen of IT、重大中断への継続策を考える",
+      "worked": "textbook-services-green",
+      "assessmentId": "ip-services-check",
+      "practiceIds": [
+        "ip-services-textbook-green",
+        "ip-services-depth-continuity",
+        "ip-services-textbook-power"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-31.1-29",
+      "syllabusSubsection": "31.1",
+      "sourcePage": 33,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=37",
+      "lesson": "ip-audit",
+      "section": "textbook-audit-scope",
+      "objective": "会計・業務・情報セキュリティ・システム監査を主目的から区別する",
+      "worked": "textbook-audit-scope",
+      "assessmentId": "ip-audit-check",
+      "practiceIds": [
+        "ip-audit-textbook-scope"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-31.2.1-30",
+      "syllabusSubsection": "31.2.1",
+      "sourcePage": 33,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=37",
+      "lesson": "ip-audit",
+      "section": "depth-audit-assurance",
+      "objective": "独立性を保ち、保証と助言を示せる範囲を判断する",
+      "worked": "depth-audit-assurance",
+      "assessmentId": "ip-audit-check",
+      "practiceIds": [
+        "ip-audit-textbook-purpose",
+        "ip-audit-depth-assurance"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-31.2.2-31",
+      "syllabusSubsection": "31.2.2",
+      "sourcePage": 33,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=37",
+      "lesson": "ip-audit",
+      "section": "textbook-audit-sampling",
+      "objective": "リスクに基づく計画、予備調査、本調査、調書、報告、フォローアップを証拠と結ぶ",
+      "worked": "textbook-audit-sampling",
+      "assessmentId": "ip-audit-check",
+      "practiceIds": [
+        "ip-audit-textbook-proof",
+        "ip-audit-textbook-sample",
+        "ip-audit-textbook-follow"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-32.1-32",
+      "syllabusSubsection": "32.1",
+      "sourcePage": 33,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=37",
+      "lesson": "ip-audit",
+      "section": "depth-audit-roles",
+      "objective": "職務分掌、ルール、モニタリング、レピュテーションリスクを事例で説明する",
+      "worked": "textbook-audit-governance",
+      "assessmentId": "ip-audit-check",
+      "practiceIds": [
+        "ip-audit-depth-controls",
+        "ip-audit-depth-reputation"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-32.2-33",
+      "syllabusSubsection": "32.2",
+      "sourcePage": 34,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=38",
+      "lesson": "ip-audit",
+      "section": "textbook-audit-governance",
+      "objective": "取締役会が価値と信頼のためにIT利用の方向を定め、監督する役割を区別する",
+      "worked": "textbook-audit-governance",
+      "assessmentId": "ip-audit-check",
+      "practiceIds": [
+        "ip-audit-textbook-govern"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    },
+    {
+      "id": "management-32.3-34",
+      "syllabusSubsection": "32.3",
+      "sourcePage": 34,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=38",
+      "lesson": "ip-audit",
+      "section": "textbook-audit-governance",
+      "objective": "IT方針に沿うコントロールと経営への報告を運用する",
+      "worked": "textbook-audit-governance",
+      "assessmentId": "ip-audit-check",
+      "practiceIds": [
+        "ip-audit-textbook-govern",
+        "ip-audit-depth-it-response"
+      ],
+      "checks": {
+        "teaching": "author-reviewed against IPA",
+        "practice": "key and solution author-reviewed",
+        "independentReview": "pending integration review",
+        "rendered": "pending final build verification"
+      }
+    }
+  ]
+}

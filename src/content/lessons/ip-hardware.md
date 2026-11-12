@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': 'ハードウェアと用途に合う選択',
   'description': '機器の用途と制約を説明する。接続・保守・環境への配慮を考える。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 28,
-  'minutes': 35,
+  'order': 31,
+  'minutes': 55,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 18,
@@ -68,3 +68,45 @@
 ## どの向きに情報が動くかを見る
 
 キーボードやバーコードリーダは利用者や品物から端末へ情報を入れる機器、ディスプレイやプリンタは端末から利用者へ結果を出す機器です。タッチパネルは画面を出力し、指の位置を入力します。SSDは必要なファイルを読み出し、変更を記録するので補助記憶です。製品名を覚えるより「どの情報を誰から誰へ渡すか」を書くと、複数の役割を持つ機器も判断できます。
+
+<span id="textbook-hardware"></span>
+
+## 機器をデータの行き先と現場の条件で選ぶ
+
+受付の業務には、紙の番号を読み取る、番号札を印刷する、記録を外部に保存するという三つの仕事があります。装置の名前を覚えるだけでなく、情報がどの向きに動き、何が出力されるかを確認します。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="紙→データ、画像・文字・識別番号を区別。画面→紙、文字・用紙・速度を比べる。本体→媒体、容量と保存期間を比べる。接続、形・信号・仕様を別々に確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">紙→データ</text><text x="126" y="29" fill="currentColor" font-size="14">画像・文字・識別番号を区別</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">画面→紙</text><text x="126" y="83" fill="currentColor" font-size="14">文字・用紙・速度を比べる</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">本体→媒体</text><text x="126" y="137" fill="currentColor" font-size="14">容量と保存期間を比べる</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">接続</text><text x="126" y="191" fill="currentColor" font-size="14">形・信号・仕様を別々に確認</text></svg><figcaption>目的のデータを得られるかを先に確かめると、似た見た目の装置を区別できます。</figcaption></figure>
+
+<span id="hardware-textbook-skill-1"></span>
+
+### 紙から何を読みたいかで装置を選ぶ
+
+スキャナは紙の見た目を画像として取り込みます。印刷された文字を検索可能なデータにしたい場合はOCRを使い、似た文字の誤認識を確認します。バーコードリーダーは符号化された識別番号を読みます。バーコードが付いた商品を照合する仕事なら、紙面全体を文字として認識するより、識別コードを読む方が直接的です。ICタグを使う場合は、タグの種類や読取距離、現場の材質なども確認します。
+
+<span id="hardware-textbook-skill-2"></span>
+
+### 端末の表示と出力の条件を確認する
+
+タッチ画面は画像を表示する出力部と、触れた位置を読み取る入力部を兼ねます。複写用紙に圧力で記録する必要があれば、印字方法を検討します。プリンタのdpiは1インチ当たりの点数であり、毎分の印刷枚数ではありません。文字の細かさを知りたい場合と、大量出力にかかる時間を知りたい場合で見る項目が変わります。
+
+<span id="hardware-textbook-skill-3"></span>
+
+### 同じ形の端子でも機能を確かめる
+
+PCと外付け装置をつなぐときは、形状、信号、速度、必要電力を別々に確認します。例えばUSB Type-Cの形が同じでも、映像出力や高速転送を両側が支えるとは限りません。映像が出ないときは、PC側が映像出力に対応しているか、ケーブルが必要な信号を通すか、画面の入力選択が合うかの順で点検します。外見の一致だけでは判定できません。
+
+<span id="hardware-textbook-skill-4"></span>
+
+### 保存の容量と耐障害性を区別する
+
+一日200件を1件2 MBで90日保管するなら、200×2×90＝36,000 MB、10進換算で36 GBが元データの目安です。バックアップや将来の増加分を加えます。単一装置を大容量にしても装置が壊れたときにすべて失う危険は残ります。復元が必要なら別の媒体にも保存し、実際に復元できるかを確認します。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　伝票の画像は保持しつつ、伝票番号で検索したい。読取結果をどう用意しますか。
+
+スキャナで画像を保存し、番号の文字列をOCRで得ます。読み誤りを確認し、元画像と番号を同じ記録に結び付けます。画像を置くだけでは番号で検索できません。
+
+</details>
+
+**復習の目安**　入力・出力・保存の目的を説明し、装置の仕様と接続条件を使って選択できます。

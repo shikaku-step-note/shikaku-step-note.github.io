@@ -1,0 +1,1172 @@
+{
+  "syllabus": "IPA ITパスポート試験シラバス Ver.6.5",
+  "url": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+  "entries": {
+    "ip-binary": {
+      "items": [
+        33
+      ],
+      "pages": "35",
+      "anchor": "textbook-binary",
+      "heading": "受信した8桁を数値と条件に読み分ける",
+      "sections": [
+        "位取りから基数変換を組み立てる",
+        "借り、桁あふれ、符号の違いを別々に判断する",
+        "条件文を集合へ置き換える"
+      ],
+      "practice": [
+        "ip-binary-textbook-1",
+        "ip-binary-textbook-2",
+        "ip-binary-textbook-3"
+      ],
+      "evidence": "桁数・符号・基数を見分け、変換と桁あふれの有無を別々に確認できます。",
+      "assessment": "ip-binary-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "位取りから基数変換を組み立てる",
+          "anchor": "binary-textbook-skill-1",
+          "practice": [
+            "ip-binary-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "借り、桁あふれ、符号の違いを別々に判断する",
+          "anchor": "binary-textbook-skill-2",
+          "practice": [
+            "ip-binary-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "条件文を集合へ置き換える",
+          "anchor": "binary-textbook-skill-3",
+          "practice": [
+            "ip-binary-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        }
+      ]
+    },
+    "ip-statistics": {
+      "items": [
+        34
+      ],
+      "pages": "35–36",
+      "anchor": "textbook-statistics",
+      "heading": "調査の設計から、数字で言える範囲を決める",
+      "sections": [
+        "母集団と標本を決めてから選ぶ",
+        "全体の平均を求め直す",
+        "代表値とばらつきをセットで読む",
+        "回帰と最適化で結論の根拠を分ける"
+      ],
+      "practice": [
+        "ip-statistics-textbook-1",
+        "ip-statistics-textbook-2",
+        "ip-statistics-textbook-3"
+      ],
+      "evidence": "母集団、分母、分布、比較条件を確認し、代表値が表す範囲を説明できます。",
+      "assessment": "ip-statistics-check",
+      "estimatedAdditionalMinutes": 25,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "母集団と標本を決めてから選ぶ",
+          "anchor": "statistics-textbook-skill-1",
+          "practice": [
+            "ip-statistics-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "全体の平均を求め直す",
+          "anchor": "statistics-textbook-skill-2",
+          "practice": [
+            "ip-statistics-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "代表値とばらつきをセットで読む",
+          "anchor": "statistics-textbook-skill-3",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "回帰と最適化で結論の根拠を分ける",
+          "anchor": "statistics-textbook-skill-4",
+          "practice": [
+            "ip-statistics-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        }
+      ]
+    },
+    "ip-ai-data": {
+      "items": [
+        35
+      ],
+      "pages": "36–37",
+      "anchor": "textbook-ai-data",
+      "heading": "測定と学習の設計を、誤りの種類から選ぶ",
+      "sections": [
+        "時間の細かさと値の細かさを決める",
+        "画像の分割単位を決める",
+        "同じ正解率でも導入判断が違う",
+        "推論と生成結果を、前提や出典まで確認する"
+      ],
+      "practice": [
+        "ip-ai-data-textbook-1",
+        "ip-ai-data-textbook-2",
+        "ip-ai-data-textbook-3"
+      ],
+      "evidence": "取得条件、評価用データ、分母の異なる評価指標を組み合わせて、導入の判断材料を説明できます。",
+      "assessment": "ip-ai-data-check",
+      "estimatedAdditionalMinutes": 25,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "時間の細かさと値の細かさを決める",
+          "anchor": "ai-data-textbook-skill-1",
+          "practice": [
+            "ip-ai-data-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "画像の分割単位を決める",
+          "anchor": "ai-data-textbook-skill-2",
+          "practice": [
+            "ip-ai-data-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "同じ正解率でも導入判断が違う",
+          "anchor": "ai-data-textbook-skill-3",
+          "practice": [
+            "ip-ai-data-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "推論と生成結果を、前提や出典まで確認する",
+          "anchor": "ai-data-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-algorithms": {
+      "items": [
+        36,
+        37
+      ],
+      "pages": "38–39",
+      "anchor": "textbook-algorithms",
+      "heading": "途中の状態を書いて、処理を最後まで追う",
+      "sections": [
+        "配列を走査し、途中の値が表す意味を言う",
+        "探索に使う順序を先に確認する",
+        "データの入出順と探索効率を分ける",
+        "同じ値のときの規則まで追う"
+      ],
+      "practice": [
+        "ip-algorithms-textbook-1",
+        "ip-algorithms-textbook-2",
+        "ip-algorithms-textbook-3"
+      ],
+      "evidence": "添字、初期値、条件、代入を表に書き、順序が成立するときだけ探索範囲を絞れます。",
+      "assessment": "ip-algorithms-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "配列を走査し、途中の値が表す意味を言う",
+          "anchor": "algorithms-textbook-skill-1",
+          "practice": [
+            "ip-algorithms-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "探索に使う順序を先に確認する",
+          "anchor": "algorithms-textbook-skill-2",
+          "practice": [
+            "ip-algorithms-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "データの入出順と探索効率を分ける",
+          "anchor": "algorithms-textbook-skill-3",
+          "practice": [
+            "ip-algorithms-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "同じ値のときの規則まで追う",
+          "anchor": "algorithms-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-languages": {
+      "items": [
+        38,
+        39
+      ],
+      "pages": "39",
+      "anchor": "textbook-languages",
+      "heading": "文書、データ、処理を役割で分ける",
+      "sections": [
+        "構文が合うことと業務上正しいことを分ける",
+        "画面を見て役割を判断する",
+        "翻訳の成功から結果の正しさを推測しない"
+      ],
+      "practice": [
+        "ip-languages-textbook-1",
+        "ip-languages-textbook-2"
+      ],
+      "evidence": "画面とデータの問題を分け、構文・実行・業務規則のどこを確認するか説明できます。",
+      "assessment": "ip-languages-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "構文が合うことと業務上正しいことを分ける",
+          "anchor": "languages-textbook-skill-1",
+          "practice": [
+            "ip-languages-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "画面を見て役割を判断する",
+          "anchor": "languages-textbook-skill-2",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "翻訳の成功から結果の正しさを推測しない",
+          "anchor": "languages-textbook-skill-3",
+          "practice": [
+            "ip-languages-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        }
+      ]
+    },
+    "ip-computer": {
+      "items": [
+        40,
+        41,
+        42
+      ],
+      "pages": "40–41",
+      "anchor": "textbook-computer",
+      "heading": "読み込みと計算を分け、時間を使う場所を探す",
+      "sections": [
+        "1クロックと1命令を混同しない",
+        "時間の内訳から、機器変更後を見積もる",
+        "メモリの階層と保持条件を結び付ける",
+        "インタフェースの単位をそろえてボトルネックを見つける"
+      ],
+      "practice": [
+        "ip-computer-textbook-1",
+        "ip-computer-textbook-2",
+        "ip-computer-textbook-3"
+      ],
+      "evidence": "周波数、メモリ階層、転送単位と処理全体の時間を結び付けて説明できます。",
+      "assessment": "ip-computer-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "1クロックと1命令を混同しない",
+          "anchor": "computer-textbook-skill-1",
+          "practice": [
+            "ip-computer-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "時間の内訳から、機器変更後を見積もる",
+          "anchor": "computer-textbook-skill-2",
+          "practice": [
+            "ip-computer-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "メモリの階層と保持条件を結び付ける",
+          "anchor": "computer-textbook-skill-3",
+          "practice": [
+            "ip-computer-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "インタフェースの単位をそろえてボトルネックを見つける",
+          "anchor": "computer-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-architecture": {
+      "items": [
+        43,
+        44
+      ],
+      "pages": "42–43",
+      "anchor": "textbook-architecture",
+      "heading": "サービスが止まる条件を先に書く",
+      "sections": [
+        "直列と並列の式を条件から組み立てる",
+        "稼働率を改善する二つの方法を比較する",
+        "仕事を分担する方式と配置を区別する",
+        "処理件数と一件の待ちを分けて測る"
+      ],
+      "practice": [
+        "ip-architecture-textbook-1",
+        "ip-architecture-textbook-2",
+        "ip-architecture-textbook-3"
+      ],
+      "evidence": "要求に合う分担を選び、並列と直列の式を動作条件から導けます。",
+      "assessment": "ip-architecture-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "直列と並列の式を条件から組み立てる",
+          "anchor": "architecture-textbook-skill-1",
+          "practice": [
+            "ip-architecture-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "稼働率を改善する二つの方法を比較する",
+          "anchor": "architecture-textbook-skill-2",
+          "practice": [
+            "ip-architecture-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "仕事を分担する方式と配置を区別する",
+          "anchor": "architecture-textbook-skill-3",
+          "practice": [
+            "ip-architecture-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "処理件数と一件の待ちを分けて測る",
+          "anchor": "architecture-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-os-files": {
+      "items": [
+        45,
+        46
+      ],
+      "pages": "44–45",
+      "anchor": "textbook-os-files",
+      "heading": "OSが分ける作業場所と、ファイルが置かれる場所",
+      "sections": [
+        "実行中の処理と保存済みファイルを区別する",
+        "メモリが足りないときの症状をつなげる",
+        "相対パスを一段ずつ移動して確認する",
+        "アクセスできない原因を切り分ける"
+      ],
+      "practice": [
+        "ip-os-files-textbook-1",
+        "ip-os-files-textbook-2"
+      ],
+      "evidence": "パスをたどり、処理遅延、容量、権限のどれを調べるか判断できます。",
+      "assessment": "ip-os-files-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "実行中の処理と保存済みファイルを区別する",
+          "anchor": "os-files-textbook-skill-1",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "メモリが足りないときの症状をつなげる",
+          "anchor": "os-files-textbook-skill-2",
+          "practice": [
+            "ip-os-files-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "相対パスを一段ずつ移動して確認する",
+          "anchor": "os-files-textbook-skill-3",
+          "practice": [
+            "ip-os-files-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "アクセスできない原因を切り分ける",
+          "anchor": "os-files-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-office-oss": {
+      "items": [
+        47,
+        48
+      ],
+      "pages": "45–46",
+      "anchor": "textbook-office-oss",
+      "heading": "表計算のセルを読み、ソフトウェアの使い方を判断する",
+      "sections": [
+        "参照を移動量で読む",
+        "集計に含める行を明確にする",
+        "図と文書の機能を用途から選ぶ",
+        "ソフトを使う行為と再配布を分ける"
+      ],
+      "practice": [
+        "ip-office-oss-textbook-1",
+        "ip-office-oss-textbook-2"
+      ],
+      "evidence": "混合参照と集計条件を読み、再配布の前に必要な条件を確認できます。",
+      "assessment": "ip-office-oss-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "参照を移動量で読む",
+          "anchor": "office-oss-textbook-skill-1",
+          "practice": [
+            "ip-office-oss-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "集計に含める行を明確にする",
+          "anchor": "office-oss-textbook-skill-2",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "図と文書の機能を用途から選ぶ",
+          "anchor": "office-oss-textbook-skill-3",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "ソフトを使う行為と再配布を分ける",
+          "anchor": "office-oss-textbook-skill-4",
+          "practice": [
+            "ip-office-oss-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        }
+      ]
+    },
+    "ip-hardware": {
+      "items": [
+        49
+      ],
+      "pages": "47",
+      "anchor": "textbook-hardware",
+      "heading": "機器をデータの行き先と現場の条件で選ぶ",
+      "sections": [
+        "紙から何を読みたいかで装置を選ぶ",
+        "端末の表示と出力の条件を確認する",
+        "同じ形の端子でも機能を確かめる",
+        "保存の容量と耐障害性を区別する"
+      ],
+      "practice": [
+        "ip-hardware-textbook-1",
+        "ip-hardware-textbook-2",
+        "ip-hardware-textbook-3"
+      ],
+      "evidence": "入力・出力・保存の目的を説明し、装置の仕様と接続条件を使って選択できます。",
+      "assessment": "ip-hardware-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "紙から何を読みたいかで装置を選ぶ",
+          "anchor": "hardware-textbook-skill-1",
+          "practice": [
+            "ip-hardware-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "端末の表示と出力の条件を確認する",
+          "anchor": "hardware-textbook-skill-2",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "同じ形の端子でも機能を確かめる",
+          "anchor": "hardware-textbook-skill-3",
+          "practice": [
+            "ip-hardware-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "保存の容量と耐障害性を区別する",
+          "anchor": "hardware-textbook-skill-4",
+          "practice": [
+            "ip-hardware-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        }
+      ]
+    },
+    "ip-design": {
+      "items": [
+        50,
+        51
+      ],
+      "pages": "48–49",
+      "anchor": "textbook-design",
+      "heading": "申込画面を、情報を探す順と誤りを直す順から設計する",
+      "sections": [
+        "利用者の目的に合う情報の順序を選ぶ",
+        "操作できるかと、使いやすいかを確かめる",
+        "試作品で観察し、原因に合わせて直す",
+        "機器と利用環境を一緒に考える"
+      ],
+      "practice": [
+        "ip-design-textbook-1",
+        "ip-design-textbook-2"
+      ],
+      "evidence": "情報の整理、操作、エラー回復、利用者を使った評価を目的別に設計できます。",
+      "assessment": "ip-design-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "利用者の目的に合う情報の順序を選ぶ",
+          "anchor": "design-textbook-skill-1",
+          "practice": [
+            "ip-design-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "操作できるかと、使いやすいかを確かめる",
+          "anchor": "design-textbook-skill-2",
+          "practice": [
+            "ip-design-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "試作品で観察し、原因に合わせて直す",
+          "anchor": "design-textbook-skill-3",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "機器と利用環境を一緒に考える",
+          "anchor": "design-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-media": {
+      "items": [
+        52,
+        53
+      ],
+      "pages": "50–51",
+      "anchor": "textbook-media",
+      "heading": "画像と音声の量を見積もり、使い道に合う形式を選ぶ",
+      "sections": [
+        "画像の寸法と色の細かさから計算する",
+        "時間、回数、チャネル数を順に掛ける",
+        "原版を残すか、配信時の小ささを優先するか決める",
+        "見られる人と場面を考えて配信する"
+      ],
+      "practice": [
+        "ip-media-textbook-1",
+        "ip-media-textbook-2",
+        "ip-media-textbook-3"
+      ],
+      "evidence": "画素、標本、時間、ビット、バイトを対応させ、形式の選択理由を説明できます。",
+      "assessment": "ip-media-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "画像の寸法と色の細かさから計算する",
+          "anchor": "media-textbook-skill-1",
+          "practice": [
+            "ip-media-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "時間、回数、チャネル数を順に掛ける",
+          "anchor": "media-textbook-skill-2",
+          "practice": [
+            "ip-media-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "原版を残すか、配信時の小ささを優先するか決める",
+          "anchor": "media-textbook-skill-3",
+          "practice": [
+            "ip-media-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "見られる人と場面を考えて配信する",
+          "anchor": "media-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-database": {
+      "items": [
+        54,
+        55
+      ],
+      "pages": "52",
+      "anchor": "textbook-database",
+      "heading": "一行が何を表すかを決め、変更しても壊れない表を作る",
+      "sections": [
+        "一意になる値と、対応を示す値を区別する",
+        "更新で一部だけ古くなる理由を追う",
+        "多対多の対応を一つの欄へ押し込まない",
+        "表を結合する前に行数の変化を予想する"
+      ],
+      "practice": [
+        "ip-database-textbook-1",
+        "ip-database-textbook-2"
+      ],
+      "evidence": "主キー・外部キーを一行の意味から選び、多対多、変更履歴、結合で何が起きるか説明できます。",
+      "assessment": "ip-database-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "一意になる値と、対応を示す値を区別する",
+          "anchor": "database-textbook-skill-1",
+          "practice": [
+            "ip-database-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "更新で一部だけ古くなる理由を追う",
+          "anchor": "database-textbook-skill-2",
+          "practice": [
+            "ip-database-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "多対多の対応を一つの欄へ押し込まない",
+          "anchor": "database-textbook-skill-3",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "表を結合する前に行数の変化を予想する",
+          "anchor": "database-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-sql-transactions": {
+      "items": [
+        56,
+        57
+      ],
+      "pages": "53–54",
+      "anchor": "textbook-sql-transactions",
+      "heading": "行、グループ、取引のどれを処理しているかを見る",
+      "sections": [
+        "絞る対象を一段ずつ確かめる",
+        "件数を求めるときに欠けた値を確認する",
+        "変更をひとまとまりとして扱う",
+        "同時実行時に一件ずつの正しさを考える"
+      ],
+      "practice": [
+        "ip-sql-transactions-textbook-1",
+        "ip-sql-transactions-textbook-2",
+        "ip-sql-transactions-textbook-3",
+        "ip-sql-transactions-textbook-4",
+        "ip-sql-transactions-textbook-5"
+      ],
+      "evidence": "絞る段階を分けて結果を予測し、競合や部分失敗が起きても正しい更新条件を説明できます。",
+      "additions": [
+        {
+          "anchor": "textbook-sql-join-case",
+          "heading": "集計結果を、小さな表から手で再現する",
+          "subskills": [
+            "56.1 選択・射影・結合と集約",
+            "57.1–57.2 更新の整合性と復旧"
+          ],
+          "practice": [
+            "ip-sql-transactions-textbook-4",
+            "ip-sql-transactions-textbook-5"
+          ]
+        }
+      ],
+      "assessment": "ip-sql-transactions-check",
+      "estimatedAdditionalMinutes": 25,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "絞る対象を一段ずつ確かめる",
+          "anchor": "sql-transactions-textbook-skill-1",
+          "practice": [
+            "ip-sql-transactions-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "件数を求めるときに欠けた値を確認する",
+          "anchor": "sql-transactions-textbook-skill-2",
+          "practice": [
+            "ip-sql-transactions-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "変更をひとまとまりとして扱う",
+          "anchor": "sql-transactions-textbook-skill-3",
+          "practice": [
+            "ip-sql-transactions-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "同時実行時に一件ずつの正しさを考える",
+          "anchor": "sql-transactions-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-network": {
+      "items": [
+        58
+      ],
+      "pages": "54–55",
+      "anchor": "textbook-network",
+      "heading": "同じネットワークの内側と外側を、通信経路に沿って調べる",
+      "sections": [
+        "同じLANで届くことと、LANの外へ届くこと",
+        "無線でつながることと、十分な速度で届くこと",
+        "ビット毎秒と遅延を別々に見積もる",
+        "用途の異なる機器を同じ範囲へ置かない"
+      ],
+      "practice": [
+        "ip-network-textbook-1",
+        "ip-network-textbook-2",
+        "ip-network-textbook-3"
+      ],
+      "evidence": "LAN内と外部経路の役割を説明し、速度と待ち時間を区別して点検できます。",
+      "additions": [
+        {
+          "anchor": "textbook-network-prefix",
+          "heading": "同じアドレス範囲かどうかを、先頭の共通部分で判断する",
+          "subskills": [
+            "58.2 IPアドレス・サブネットと通信機器の役割"
+          ],
+          "practice": [
+            "ip-network-textbook-3"
+          ]
+        }
+      ],
+      "assessment": "ip-network-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "同じLANで届くことと、LANの外へ届くこと",
+          "anchor": "network-textbook-skill-1",
+          "practice": [
+            "ip-network-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "無線でつながることと、十分な速度で届くこと",
+          "anchor": "network-textbook-skill-2",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "ビット毎秒と遅延を別々に見積もる",
+          "anchor": "network-textbook-skill-3",
+          "practice": [
+            "ip-network-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "用途の異なる機器を同じ範囲へ置かない",
+          "anchor": "network-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-protocols": {
+      "items": [
+        59,
+        60
+      ],
+      "pages": "55–56",
+      "anchor": "textbook-protocols",
+      "heading": "接続、名前解決、認証を別々の成功条件として読む",
+      "sections": [
+        "端末の設定と名前の問い合わせを分ける",
+        "転送の性質とアプリの役割を切り分ける",
+        "送るメールと受け取ったメールを分ける",
+        "携帯通信の切替えと契約を区別する"
+      ],
+      "practice": [
+        "ip-protocols-textbook-1",
+        "ip-protocols-textbook-2",
+        "ip-protocols-textbook-3"
+      ],
+      "evidence": "通信の各段階とプロトコルを対応させ、成功した部分と追加で調べる部分を説明できます。",
+      "assessment": "ip-protocols-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "端末の設定と名前の問い合わせを分ける",
+          "anchor": "protocols-textbook-skill-1",
+          "practice": [
+            "ip-protocols-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "転送の性質とアプリの役割を切り分ける",
+          "anchor": "protocols-textbook-skill-2",
+          "practice": [
+            "ip-protocols-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "送るメールと受け取ったメールを分ける",
+          "anchor": "protocols-textbook-skill-3",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "携帯通信の切替えと契約を区別する",
+          "anchor": "protocols-textbook-skill-4",
+          "practice": [
+            "ip-protocols-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        }
+      ]
+    },
+    "ip-security-risk": {
+      "items": [
+        61,
+        62
+      ],
+      "pages": "57–58",
+      "anchor": "textbook-security-risk",
+      "heading": "失うと困るものを決め、対策後に何が残るかを考える",
+      "sections": [
+        "CIAを被害の違いから理解する",
+        "脅威、弱点、影響を一文ずつ書く",
+        "リスク対応の種類と限界を判断する",
+        "管理を見直す条件を決める"
+      ],
+      "practice": [
+        "ip-security-risk-textbook-1",
+        "ip-security-risk-textbook-2"
+      ],
+      "evidence": "業務への影響からリスクの優先順位を付け、対策後に残る影響と担当者を説明できます。",
+      "assessment": "ip-security-risk-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "CIAを被害の違いから理解する",
+          "anchor": "security-risk-textbook-skill-1",
+          "practice": [
+            "ip-security-risk-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "脅威、弱点、影響を一文ずつ書く",
+          "anchor": "security-risk-textbook-skill-2",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "リスク対応の種類と限界を判断する",
+          "anchor": "security-risk-textbook-skill-3",
+          "practice": [
+            "ip-security-risk-textbook-2"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "管理を見直す条件を決める",
+          "anchor": "security-risk-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-security-controls": {
+      "items": [
+        63
+      ],
+      "pages": "59–62",
+      "anchor": "textbook-security-controls",
+      "heading": "予防、検知、復旧を、守りたい業務に割り当てる",
+      "sections": [
+        "認証と認可を順に考える",
+        "異常に気付き、事実を確認する",
+        "復旧の目標を記録時点と時間に分ける",
+        "変更できる場所と復元する場所を分ける"
+      ],
+      "practice": [
+        "ip-security-controls-textbook-1",
+        "ip-security-controls-textbook-2",
+        "ip-security-controls-textbook-3",
+        "ip-security-controls-textbook-4",
+        "ip-security-controls-textbook-5"
+      ],
+      "evidence": "認証、認可、監視、復元を目的に割り当て、復旧記録からRTOとRPOを区別できます。",
+      "additions": [
+        {
+          "anchor": "textbook-controls-layered",
+          "heading": "店舗の端末紛失と通信障害に、違う層の備えを選ぶ",
+          "subskills": [
+            "63.1 人的・技術的・物理的対策",
+            "63.7 IoTライフサイクル"
+          ],
+          "practice": [
+            "ip-security-controls-textbook-4",
+            "ip-security-controls-textbook-5"
+          ]
+        }
+      ],
+      "assessment": "ip-security-controls-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "認証と認可を順に考える",
+          "anchor": "security-controls-textbook-skill-1",
+          "practice": [
+            "ip-security-controls-textbook-2",
+            "ip-security-controls-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "異常に気付き、事実を確認する",
+          "anchor": "security-controls-textbook-skill-2",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "復旧の目標を記録時点と時間に分ける",
+          "anchor": "security-controls-textbook-skill-3",
+          "practice": [
+            "ip-security-controls-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "変更できる場所と復元する場所を分ける",
+          "anchor": "security-controls-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    },
+    "ip-cryptography": {
+      "items": [
+        63
+      ],
+      "pages": "59–62",
+      "anchor": "textbook-cryptography",
+      "heading": "秘密にする、改変を確かめる、送信者を確かめる",
+      "sections": [
+        "共通鍵と公開鍵の使い分け",
+        "ハッシュと署名が示すものを分ける",
+        "証明書は何を結び付けるか",
+        "目的を組み合わせる順序を言葉にする"
+      ],
+      "practice": [
+        "ip-cryptography-textbook-1",
+        "ip-cryptography-textbook-2",
+        "ip-cryptography-textbook-3",
+        "ip-cryptography-textbook-4",
+        "ip-cryptography-textbook-5"
+      ],
+      "evidence": "暗号化、ハッシュ、署名、証明書の目的を分け、受信者と署名者から鍵を選べます。",
+      "additions": [
+        {
+          "anchor": "textbook-crypto-biometric",
+          "heading": "本人拒否と他人受入を別々に数える",
+          "subskills": [
+            "63.5 生体認証の特徴・FAR・FRR",
+            "63.6 証明書の失効"
+          ],
+          "practice": [
+            "ip-cryptography-textbook-4",
+            "ip-cryptography-textbook-5"
+          ]
+        }
+      ],
+      "assessment": "ip-cryptography-check",
+      "estimatedAdditionalMinutes": 20,
+      "review": {
+        "factual": "source comparison and author review",
+        "practice": "new case with fully explained solution; numeric answers independently recomputed",
+        "rendered": "pending integrated site review"
+      },
+      "competencies": [
+        {
+          "name": "共通鍵と公開鍵の使い分け",
+          "anchor": "cryptography-textbook-skill-1",
+          "practice": [
+            "ip-cryptography-textbook-1"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "ハッシュと署名が示すものを分ける",
+          "anchor": "cryptography-textbook-skill-2",
+          "practice": [
+            "ip-cryptography-textbook-2",
+            "ip-cryptography-textbook-3"
+          ],
+          "work": "worked and separately assessed"
+        },
+        {
+          "name": "証明書は何を結び付けるか",
+          "anchor": "cryptography-textbook-skill-3",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        },
+        {
+          "name": "目的を組み合わせる順序を言葉にする",
+          "anchor": "cryptography-textbook-skill-4",
+          "practice": [],
+          "work": "worked instructional support; no individual new graded task"
+        }
+      ]
+    }
+  },
+  "reviewLimits": [
+    "The 19 chapters add worked and transfer tasks across items 33–63. The register distinguishes new graded evidence from supporting explanations.",
+    "IPA’s illustrative examples were not independently tested term by term. For example, data retention and storage media types, multimedia variants, and security organization program names are not all separately assessed.",
+    "No implementation-level penetration tasks or attack replication exercises were added. The assessment teaches prevention, detection, recovery and trust relationships.",
+    "No human learner calibration or external professional review occurred."
+  ],
+  "freshQuestions": 57,
+  "numericKeysRecomputed": 20
+}

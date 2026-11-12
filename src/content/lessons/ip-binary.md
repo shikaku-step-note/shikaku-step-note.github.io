@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': '2進数・集合と論理演算',
   'description': '位取りと情報量を計算する。集合・論理演算を具体例で使う。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 19,
-  'minutes': 50,
+  'order': 21,
+  'minutes': 70,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 13,
@@ -77,3 +77,39 @@ ANDは両方が真、ORはいずれかが真、NOTは真偽の反転、XORは一
 ## 条件を変更すると、どの行が増えるか
 
 夜間か休日の少なくとも一方に当たる稼働記録を残すなら `夜間 OR 休日` です。夜間かつ休日の行も残ります。「どちらか一方だけ」なら `夜間 XOR 休日` にすると、両方に当たる行が外れます。「休日を除いた夜間」なら `夜間 AND NOT 休日` です。ANDやORの言葉だけで決めず、両方・片方ずつ・どちらでもない行の4通りを書けば、条件の取り違えを確認できます。
+
+<span id="textbook-binary"></span>
+
+## 受信した8桁を数値と条件に読み分ける
+
+倉庫の端末から8桁のビット列 `11100110` が届きました。同じ並びでも、整数を入れた欄と、複数の状態を個別の桁で記録した欄では読み方が変わります。どちらもまず、どの桁にどんな意味が決められているかを確認します。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="仕様、8桁・符号ありかを確認。重み、右端1から順に2倍。計算、符号ありなら先頭だけ負。検算、表現範囲と別の読み方"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">仕様</text><text x="126" y="29" fill="currentColor" font-size="14">8桁・符号ありかを確認</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">重み</text><text x="126" y="83" fill="currentColor" font-size="14">右端1から順に2倍</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">計算</text><text x="126" y="137" fill="currentColor" font-size="14">符号ありなら先頭だけ負</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">検算</text><text x="126" y="191" fill="currentColor" font-size="14">表現範囲と別の読み方</text></svg><figcaption>ビット列の意味は、桁数と数値の表現方式を先に確かめてから求めます。</figcaption></figure>
+
+<span id="binary-textbook-skill-1"></span>
+
+### 位取りから基数変換を組み立てる
+
+10進数の346は3×100＋4×10＋6×1です。2進数も同じ仕組みで、右端から1、2、4、8と重みが2倍になります。45を2進数にするには、45を超えない最大の重み32を選び、残り13から8を選びます。次に4を使い、最後に1を使うので `101101`。32＋8＋4＋1＝45と戻して確かめます。16進数に直すなら右から4桁で区切り、左を0で補って `0010 1101`。前半は2、後半は13なので `2D` です。4桁で16通りだから、16進の一桁に過不足なく対応します。
+
+<span id="binary-textbook-skill-2"></span>
+
+### 借り、桁あふれ、符号の違いを別々に判断する
+
+`10100 − 00111` では下位に0が続くので、16の桁から順に借ります。まず4の桁から借りると、右端は2−1＝1、次の2の桁は1−1＝0となり、4の桁は0になります。4の桁を引くために16の桁から8の桁を経由して借り、4の桁は2−1＝1、8の桁には1が残るので `01101`。20−7＝13と一致します。符号なし5ビットの範囲は0〜31で、31に1を足すと6桁の `100000`。下位5桁の `00000` を得ても、数学上の結果が0になったわけではありません。冒頭の `11100110` は符号なしで128＋64＋32＋4＋2＝230。8ビットの2の補数なら先頭の重みだけ−128となり、−128＋64＋32＋4＋2＝−26です。230から256を引いても確かめられます。
+
+<span id="binary-textbook-skill-3"></span>
+
+### 条件文を集合へ置き換える
+
+冷蔵をA、検品済みをBとします。「冷蔵で未検品」はA AND NOT Bです。「いずれか一方だけ」と書かれていればXORなので、両方に該当する品は除きます。Aの集合が4件、Bが5件、両方が2件なら、和集合は4＋5−2＝7件。単純に足すと共通部分を2回数えます。XORなら片方だけなので、和集合7件から共通部分2件を除いて5件です。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　10進数58を2進数と16進数に直し、符号なし6ビットでこれに7を加算できるか説明してください。
+
+58＝32＋16＋8＋2なので `111010`。4桁で区切ると `0011 1010`、16進数では `3A` です。数学上の和は65、6ビットの上限は63なのでそのままでは保持できません。下位6桁は `000001` ですが、上の桁が失われた結果です。
+
+</details>
+
+**復習の目安**　桁数・符号・基数を見分け、変換と桁あふれの有無を別々に確認できます。

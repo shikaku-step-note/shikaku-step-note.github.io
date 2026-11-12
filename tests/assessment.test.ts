@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { newAttempt, gradeAttempt, remainingSeconds, compatibleAttempt } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData, StudyStorage } from '../src/lib/storage';
-import { ipAssessments, questionBank, units, syllabusItems, mockQuestions } from '../src/data/it-passport';
+import { ipAssessments, questionBank, units, syllabusItems, mockQuestions, ipTextbookVersion } from '../src/data/it-passport';
 import { indexedDB } from 'fake-indexeddb';
 const lessons = readdirSync('src/content/lessons')
   .filter((n) => n.startsWith('ip-') && n.endsWith('.md'))
@@ -22,7 +22,7 @@ test('mismatched question records cannot be reinterpreted or scored', () => {
   assert.throws(() => gradeAttempt(mock, b));
 });
 test('current curriculum covers all 63 official items and all 23 units, with valid original banks', () => {
-  assert.equal(lessons.length, 37);
+  assert.equal(lessons.length, 40);
   assert.equal(syllabusItems.length, 63);
   assert.equal(new Set(lessons.map((l) => l.data.unit)).size, 23);
   assert.deepEqual(
@@ -31,9 +31,12 @@ test('current curriculum covers all 63 official items and all 23 units, with val
   );
   for (const l of lessons) {
     assert.equal(l.data.sample, false);
-    assert.equal(l.data.glossary.length, 4);
-    assert.equal(questionBank[l.data.stableId]!.lesson.length, 3);
-    assert.equal(questionBank[l.data.stableId]!.review.length, 2);
+    const original = questionBank[l.data.stableId];
+    if (original) {
+      assert.equal(l.data.glossary.length, 4);
+      assert.equal(original.lesson.length, 3);
+      assert.equal(original.review.length, 2);
+    }
   }
   assert.equal(assessments.length, lessons.length + 52);
   assert.equal(assessments.filter((a) => a.kind === 'glossary').length, 24);
@@ -192,4 +195,20 @@ test('assessment answers and records survive a real IndexedDB close and reopen',
   assert.equal(reopened.data.assessments[mock.id]![0]!.answers[mock.questions[0]!.id], 3);
   assert.equal(reopened.data.assessments[mock.id]![0]!.deadline, a.deadline);
   reopened.close();
+});
+
+test('the three reading chapters are integrated into the main study sequence', () => {
+  const definitions = [
+    { id: 'ip-reading-business-data', after: 'ip-finance', answers: [12 / 300 * 100 - 15 / 500 * 100, (9 + 18) / (150 + 750) * 100, Math.ceil(9000 / 1250)] },
+    { id: 'ip-reading-project-plans', after: 'ip-project', answers: [3 + Math.max(6 + 2, 4) + 3, 7 - 4, 13 - Math.max(13 - 4, 11), (12 - 10) * 2 + (11 - 10) * 3] },
+    { id: 'ip-reading-spreadsheets', after: 'ip-office-oss', answers: [18200 - 1600 - 2200] },
+  ];
+  for (const { id, after, answers } of definitions) {
+    const lesson = lessons.find((entry) => entry.data.stableId === id)!;
+    assert.equal(lesson.data.order, lessons.find((entry) => entry.data.stableId === after)!.data.order + 1);
+    const practice = assessments.find((assessment) => assessment.id === id + '-check')!;
+    assert.equal(practice.version, ipTextbookVersion);
+    const numeric = practice.questions.filter((question) => question.input === 'number');
+    assert.deepEqual(numeric.map((question) => Number(question.accepted![0])), answers);
+  }
 });

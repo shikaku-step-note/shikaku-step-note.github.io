@@ -4,8 +4,8 @@
   'qualification': 'it-passport',
   'title': '画像・音声・動画と圧縮',
   'description': 'デジタル化と容量を計算する。メディア形式と圧縮の違いを説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 30,
-  'minutes': 45,
+  'order': 33,
+  'minutes': 65,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 20,
@@ -64,3 +64,45 @@
 電子看板に置く地図では、拡大しても線がくっきりすることが大切です。線や形を数値で表すベクタ画像なら拡大時に描き直せます。一方、写真は画素で明暗や色を表すラスター画像が適しています。画像に変換済みの文字を拡大しても元の文字データには戻らないので、案内文は画面上のテキストとして提供すると検索や読み上げにも使えます。
 
 写真を配信する用途では、見た目の変化が許されれば非可逆圧縮で容量を抑えられます。記録値そのものが必要な場合は可逆圧縮を選び、伸長後に元データと一致するか確認します。動画のストリーミングは全体の取得を待たずに再生する方法ですが、途中で必要なデータが届かないと再生が止まります。回線と画質を比較するときは、通信速度と動画が1秒に必要とするデータ量を同じ単位にそろえます。
+
+<span id="textbook-media"></span>
+
+## 画像と音声の量を見積もり、使い道に合う形式を選ぶ
+
+講義を公開するため、静止画の資料と音声を用意します。保管したいのは修正できる原版で、配信するのはスマートフォンで見やすい版です。用途が違えば必要なデータ量と許せる変化も異なります。
+
+<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="個数、画素数または標本数。1個の量、色深度・量子化ビット数。付加要素、チャネル数・時間・枚数。単位、8で割りバイトへ換算"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">個数</text><text x="126" y="29" fill="currentColor" font-size="14">画素数または標本数</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">1個の量</text><text x="126" y="83" fill="currentColor" font-size="14">色深度・量子化ビット数</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">付加要素</text><text x="126" y="137" fill="currentColor" font-size="14">チャネル数・時間・枚数</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">単位</text><text x="126" y="191" fill="currentColor" font-size="14">8で割りバイトへ換算</text></svg><figcaption>無圧縮のデータ量は「個数×1個の情報量」を軸に計算できます。</figcaption></figure>
+
+<span id="media-textbook-skill-1"></span>
+
+### 画像の寸法と色の細かさから計算する
+
+800×600画素の画像は48万画素です。RGBの各成分を8ビットなら1画素24ビットなので、48万×24÷8＝1,440,000バイト。RGBの三成分をすでに足して24ビットとしているので、ここからさらに3倍する必要はありません。画面サイズの幅と高さをともに半分にすると、画素数は4分の1になります。圧縮後の大きさは内容や圧縮設定にも左右されます。
+
+<span id="media-textbook-skill-2"></span>
+
+### 時間、回数、チャネル数を順に掛ける
+
+毎秒48,000回、1回16ビット、2チャネルの音声を10秒録ります。48,000×16×2×10＝15,360,000ビット、8で割り1,920,000バイトです。片側の音だけなら2チャネルの係数は1になります。動画の無圧縮量を考えるときは、1フレームの情報量に毎秒の枚数と時間を掛けます。配信用の圧縮済みデータではビットレートが分かれば、毎秒当たりの量×時間で概算できます。
+
+<span id="media-textbook-skill-3"></span>
+
+### 原版を残すか、配信時の小ささを優先するか決める
+
+あとから図の線を拡大・修正するなら、座標と形で表すベクタ形式の原版が扱いやすい場合があります。写真は画素で表すラスター形式が一般的です。元のビット列を復元する必要があるなら可逆圧縮を選びます。写真などで目立ちにくい変化を許せる場合は非可逆圧縮で配信量を抑えられます。圧縮を重ねると変化が積み重なることがあるため、編集には原版を使います。
+
+<span id="media-textbook-skill-4"></span>
+
+### 見られる人と場面を考えて配信する
+
+動画に字幕と文字起こしを付ければ、音を出せない環境でも内容を追えます。データ量を下げるときは、重要な小さい文字や作業の動きまで読めなくなっていないか確認します。画像の代替説明には図の結論と判断に必要な情報を含めます。
+
+<details><summary>練習問題の解き方を確かめる</summary>
+
+**練習**　1,000×600画素、1画素16ビットの無圧縮画像を4枚保存する。付加情報は無視します。
+
+1枚は600,000画素×16÷8＝1,200,000バイト。4枚で4,800,000バイトです。
+
+</details>
+
+**復習の目安**　画素、標本、時間、ビット、バイトを対応させ、形式の選択理由を説明できます。
