@@ -1,4 +1,7 @@
 import unit12 from './boki-beginner-unit12-questions.json';
+import unit1Foundations from './bb-unit1-foundations.json';
+import unit1Recording from './bb-unit1-recording.json';
+import unit1Case from './bb-unit1-case.json';
 import principlesTextbook from './bb-textbook-principles.json';
 import transactionTextbook from './bb-textbook-transactions.json';
 import monthlyTextbook from './bb-textbook-monthly.json';
@@ -20,7 +23,7 @@ export const beginnerGroups = [
 ];
 export const beginnerLessonIds = [
   'bb2-business', 'bb2-profit', 'bb2-transaction', 'bb2-journal',
-  'bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales',
+  'bb2-foundations-case', 'bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales',
   'bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims',
   'bb2-loans', 'bb2-temporary', 'bb2-custody', 'bb2-bills',
   'bb2-assets', 'bb2-depreciation', 'bb2-capital', 'bb2-expenses',
@@ -33,9 +36,14 @@ export const beginnerTextbookVersion = 'bb-2026-textbook-v1';
 export const beginnerTextbookBank = {
   ...principlesTextbook, ...transactionTextbook, ...monthlyTextbook,
 } as Record<string, Question[]>;
+const beginnerUnit1Bank = { ...unit1Foundations, ...unit1Recording, ...unit1Case } as Record<string, Question[]>;
+export const beginnerUnit1Version = 'bb-2026-unit1-v1';
+export const beginnerLessonVersion = (id: string) =>
+  beginnerUnit1Bank[id]?.length ? beginnerUnit1Version : beginnerTextbookBank[id]?.length ? beginnerTextbookVersion : beginnerVersion;
 export const beginnerLessonQuestions = (id: string) => [
   ...(beginnerBank[id] ?? []),
   ...(beginnerTextbookBank[id] ?? []),
+  ...(beginnerUnit1Bank[id] ?? []),
   ...(id === 'bb2-integration' ? (textbookLab as Question[]) : []),
 ];
 export const beginnerReviewBank = Object.fromEntries(Object.entries(reviews).map(([key,questions])=>[
@@ -45,7 +53,7 @@ export const beginnerUnitReviewCount = Object.entries(beginnerReviewBank)
   .filter(([key])=>key.startsWith('unit-')).reduce((sum,[,questions])=>sum+questions.length,0);
 export const beginnerMockBank = mocks;
 export const beginnerPlan =
-  '全24レッスンを6ユニットで学びます。本文・例題・問題・解説の合計時間に加え、翌日と1週間後の復習、ユニット確認、40分模試2回と各回の解き直しを見込みます。1日30分・週5日、1日60分・週5日などのペース別の期間は下のTXTに総時間から算出しています。時間は当サイトの見積りで、公式の必要時間ではありません。';
+  '財産・損益の基本から、6ユニットで順に学びます。本文・例題・問題・解説の合計時間に加え、翌日と1週間後の復習、ユニット確認、40分模試2回と各回の解き直しを見込みます。1日30分・週5日、1日60分・週5日などのペース別の期間は下のTXTに総時間から算出しています。時間は当サイトの見積りで、公式の必要時間ではありません。';
 export function beginnerWorkload(rows: { data: { minutes: number; glossary: { term: string }[] } }[]) {
   const lessonMinutes = rows.reduce((sum,l)=>sum+l.data.minutes,0);
   const terms = new Set(rows.flatMap(l=>l.data.glossary.map(g=>g.term))).size;
@@ -74,7 +82,7 @@ export function beginnerAssessments(
     fieldNames: { basics: '簿記初級' }, lessonTitles: Object.fromEntries(allRows.map(l => [l.data.stableId,l.data.title])) };
   const result: Assessment[] = rows.map(l => ({ ...base, id: `${l.data.stableId}-check`,
     title: `${l.data.title}：理解度チェック`, kind: 'lesson', unit: l.data.unit,
-    version: beginnerTextbookBank[l.data.stableId]?.length ? beginnerTextbookVersion : beginnerVersion,
+    version: beginnerLessonVersion(l.data.stableId),
     questions: beginnerLessonQuestions(l.data.stableId),
     instructions: '独自に作成した理解度チェックです。問題ごとの解説で考え方を確かめてください。学習済みの印とは別に結果を保存します。' }));
   const terms = [...new Map(rows.flatMap(l => l.data.glossary.map(g => [g.term,{...g,lesson:l.data.stableId}] as const))).values()];

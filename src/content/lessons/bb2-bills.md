@@ -4,7 +4,7 @@
   "qualification": "boki-beginner",
   "title": "受取手形・支払手形と電子記録債権・債務",
   "description": "受取手形・支払手形と電子記録債権・債務を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
-  "order": 16,
+  "order": 17,
   "minutes": 65,
   "sample": false,
   "updated": "2026-10-28",

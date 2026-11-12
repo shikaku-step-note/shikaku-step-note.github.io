@@ -1,4 +1,4 @@
-import { beginnerGroups, beginnerLessonQuestions, beginnerTextbookVersion, beginnerVersion, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
+import { beginnerGroups, beginnerLessonQuestions, beginnerUnit1Version, beginnerTextbookVersion, beginnerVersion, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
 import coverage from '../src/data/boki-beginner-coverage.json' with {type:'json'};
 export function beginnerCurriculum(rows) {
   const workload=beginnerWorkload(rows);
@@ -6,7 +6,7 @@ export function beginnerCurriculum(rows) {
     '日商簿記初級 詳しい学習ツリー・スケジュール',
     '対象：簿記初級の全範囲。原価計算初級・1〜3級は別区分。',
     '適用：2026年度（2027年3月31日まで）。2027年4月施行の確定版とは区別。',
-    `公式資料確認日：${beginnerReviewed}／章末チェック版：${beginnerTextbookVersion}／模試版：${beginnerVersion}`,
+    `公式資料確認日：${beginnerReviewed}／章末チェック版：ユニット1 ${beginnerUnit1Version}／ユニット2以降 ${beginnerTextbookVersion}／模試版：${beginnerVersion}`,
     '標準：仕組みの説明→理由付き例題→独立練習→総合確認→40分模試。独自教材・公式の認定や合格保証はありません。',
     '前提：四則計算、紙と電卓。会計の予備知識は不要。',
     '', '学習時間の見積り（実測値・公式推奨時間ではありません）',
@@ -47,7 +47,7 @@ export function beginnerCurriculum(rows) {
   lines.push('', '確認の方法・制約',
     '  公式資料照合、計算と解答の確認、日本語編集、別AIによる内容確認、機能・保存・移行の確認を区別します。外部専門家監修や受験者による実証ではありません。',
     '  初級では決算整理を扱いません。固定資産売却は土地のみ、償却は月次見積額、消耗品は支払い時費用、消費税は税抜方式が対象です。',
-    '  旧4記事と旧15小問の短縮練習は記録保管用。新24記事・全量模試の完了には数えません。',
+    '  旧4記事と旧15小問の短縮練習は記録保管用。現行レッスン・全量模試の完了には数えません。',
     '', '公式資料と確認日');
   for(const source of beginnerSources) lines.push(`  ${source.id} ${source.title}／${source.applicability}`,`    ${source.url}`,`    確認日：${source.verifiedOn}`);
   return lines;

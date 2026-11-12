@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-expenses","qualification":"boki-beginner","title":"収益・費用を分類し、消耗品と事業の税金を記録する",
   "description":"売上以外の収益、営業に使う費用、消耗品の支払い時処理を学びます。固定資産税・印紙税と個人の所得税を区別し、未払固定資産税の支払いで費用を二重計上しないよう練習します。",
-  "order":20,"minutes":70,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
+  "order":21,"minutes":70,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
   "objectives":["収益・費用と資産・負債の増減を区別して科目を選ぶ","消耗品を支払い時に消耗品費で処理する","固定資産税・印紙税と未払固定資産税の支払いを区別する"],
   "prerequisite":"仕訳の基本、未払金、資本金で処理する事業主個人の支払いを復習してください。",
   "keywords":["収益","費用","消耗品費","租税公課","固定資産税","印紙税","未払固定資産税"],

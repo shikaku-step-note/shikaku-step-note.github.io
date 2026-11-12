@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-capital","qualification":"boki-beginner","title":"追加元入・引出と事業主の所得税を資本金で記録する",
   "description":"事業と事業主個人を分けて、追加元入、生活費の引出、所得税の支払いを処理します。資本金の増減と当月利益を混同せず、月次残高から元入額を逆算する練習をします。",
-  "order":19,"minutes":65,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
+  "order":20,"minutes":65,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
   "objectives":["追加元入と事業の収益を区別して仕訳する","引出と事業主個人の所得税を資本金の減少として処理する","元入・引出の資料から資本金の残高と追加元入額を計算する"],
   "prerequisite":"資産・負債・純資産と、収益・費用の違い、資本金の貸方増加を復習してください。",
   "keywords":["資本金","追加元入","引出","所得税","純資産","事業と個人の区別"],

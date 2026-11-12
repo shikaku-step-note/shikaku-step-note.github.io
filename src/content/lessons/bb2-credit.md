@@ -4,7 +4,7 @@
   "qualification": "boki-beginner",
   "title": "クレジット売掛金と決済手数料",
   "description": "クレジット売掛金と決済手数料を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
-  "order": 10,
+  "order": 11,
   "minutes": 65,
   "sample": false,
   "updated": "2026-10-28",

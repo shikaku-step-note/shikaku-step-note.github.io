@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-depreciation", "qualification":"boki-beginner", "title":"見積額を毎月計上し、減価償却後の資産を読む",
   "description":"減価償却費と減価償却累計額の役割を区別し、毎月の見積額を使って仕訳します。取得原価、累計額、帳簿価額の関係と、現金支出・費用・利益の違いまで練習します。",
-  "order":18,"minutes":65,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
+  "order":19,"minutes":65,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
   "objectives":["固定資産の購入代金と毎月の減価償却費を区別する","見積額に基づく毎月の減価償却を仕訳する","取得原価・減価償却累計額・帳簿価額と利益の関係を計算する"],
   "prerequisite":"固定資産の取得原価、費用の借方記入、資産の増減を復習してください。",
   "keywords":["減価償却費","減価償却累計額","見積額","帳簿価額","月次","間接法"],

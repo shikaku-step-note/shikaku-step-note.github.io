@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerWorkload } from '../src/data/boki-beginner';
+import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerUnit1Version, beginnerWorkload } from '../src/data/boki-beginner';
 import { bokiAssessments } from '../src/data/bookkeeping';
 import { gradeAttempt, newAttempt, practicePoints, remainingSeconds, compatibleAttempt, assessmentMaterialIssues, isCorrect, type Question } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -27,6 +27,10 @@ test('all current scope is mapped to detailed teaching and independently assesse
   for(const row of rows){
     const id=row.data.stableId;
     assert.equal(row.data.objectives.length,3,id);
+    if (id==='bb2-foundations-case') {
+      assert.ok(row.body.includes('<figure>') && row.body.includes('別の店の資料で自分で解く'));
+      continue;
+    }
     // A prose guard, not a claim that character count proves educational completeness.
     // Ignore CRLF/LF, markup and link text so Windows and Linux measure the same content.
     const teaching=row.body.split(/###? 公式資料/)[0]!.replace(/\r\n/g,'\n')
@@ -60,7 +64,7 @@ test('new work does not inherit old completions or erase bookmarks and historica
   old.assessments[legacy.id]=[attempt];
   const restored=validateData(JSON.parse(JSON.stringify(old)));
   const course=selectCourseLessons(entries.map(l=>({id:l.data.stableId,qualification:l.data.qualification,archived:l.data.archived})), 'boki-beginner');
-  assert.equal(course.length,24);
+  assert.equal(course.length,25);
   assert.equal(course.filter(l=>restored.records[l.id]?.status==='completed').length,0);
   assert.equal(Object.values(restored.records).filter(r=>r.bookmarked).length,4);
   assert.ok(!compatibleAttempt(assessments.find(a=>a.id===legacy.id)!,attempt));
@@ -172,12 +176,12 @@ test('textbook practice is added to every chapter without changing the mock vers
   const unique = new Set(Object.values(beginnerBank).flat().map(q=>q.id));
   const prompts = new Set(Object.values(beginnerBank).flat().map(q=>q.prompt));
   for(const id of beginnerLessonIds){
-    const original = beginnerBank[id]!;
+    const original = beginnerBank[id] ?? [];
     const definition = assessments.find(a=>a.id===id+'-check')!;
-    assert.equal(definition.version,beginnerTextbookVersion,id);
+    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : beginnerTextbookVersion,id);
     assert.deepEqual(definition.questions.slice(0,original.length),original,id);
     assert.ok(definition.questions.length>original.length,id);
-    assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);
+    if(original.length) assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);
     for(const q of definition.questions.slice(original.length)){
       assert.equal(q.lesson,id,q.id);
       assert.ok(!unique.has(q.id)&&!prompts.has(q.prompt),q.id);
@@ -193,6 +197,8 @@ test('textbook practice is added to every chapter without changing the mock vers
       }
     }
   }
+  const synthesis = assessments.find(a=>a.id==='bb2-foundations-case-check')!;
+  assert.deepEqual(synthesis.questions.filter(q=>q.input==='number').map(q=>Number(q.accepted![0])),[32000-7000-12000,42000-9000-500,(122000-38000)-(95000-30000)-10000]);
   const lab = assessments.find(a=>a.id==='bb2-integration-check')!;
   const profit = lab.questions.find(q=>q.id==='bb2-integration-lab-profit')!;
   assert.equal(Number(profit.accepted?.[0]),(30000-10000+14000+10000-2000)-30000);

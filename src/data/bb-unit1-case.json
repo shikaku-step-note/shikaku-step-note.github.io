@@ -1,0 +1,112 @@
+{
+  "bb2-foundations-case": [
+    {
+      "id": "bb2-foundations-case-q1",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "貸付けも入金もまだ行わず、来月の借入れについて条件だけを銀行と話し合った。この日に借入金を記録するか。",
+      "answer": 0,
+      "explanation": "相談だけでは資産・負債の増減が発生していません。実際に借入れが実行された日には、入金を資産の増加、借入金を負債の増加として扱います。",
+      "options": [
+        "条件の相談だけなので記録しない",
+        "普通預金が増えたと記録する",
+        "売上を記録する",
+        "資本金を記録する"
+      ]
+    },
+    {
+      "id": "bb2-foundations-case-q2",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "修理を32,000円で完了し、現金7,000円、残額は掛けとした。後日、その掛け代金のうち12,000円が普通預金に入金された。回収後の売掛金残高は何円か。数字を入力してください。",
+      "answer": 0,
+      "explanation": "完了時に売掛金32,000−7,000＝25,000円を記録します。回収で12,000円が減るので残りは13,000円です。回収時に売上を追加しません。",
+      "options": [],
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "13000"
+      ]
+    },
+    {
+      "id": "bb2-foundations-case-q3",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "月の売上は42,000円（うち未回収が18,000円）。当月分の店の家賃9,000円と当月の利息500円を払い、借入元金12,000円も返済した。ほかに収益と費用がない場合、当月の利益は何円か。数字を入力してください。",
+      "answer": 0,
+      "explanation": "売上は回収状況にかかわらず42,000円。家賃9,000円と利息500円だけを費用にし、42,000−9,000−500＝32,500円です。元金の返済は負債を減らします。",
+      "options": [],
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "32500"
+      ]
+    },
+    {
+      "id": "bb2-foundations-case-q4",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "期首資産95,000円・負債30,000円、期末資産122,000円・負債38,000円。期中に追加出資10,000円があり、ほかに純資産を直接増減させる取引はない。利益はいくらか。円単位の数字を入力してください。",
+      "answer": 0,
+      "explanation": "期首純資産は65,000円、期末は84,000円。増加19,000円から追加出資10,000円を除くと利益は9,000円です。",
+      "options": [],
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "9000"
+      ]
+    },
+    {
+      "id": "bb2-foundations-case-q5",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "売掛金9,000円を普通預金で回収した日、普通預金9,000／売上9,000と仕訳した。ほかの記帳は正しい。誤りが残る場合の影響はどれか。",
+      "answer": 2,
+      "explanation": "普通預金の増加は合っています。貸方は売掛金であるべきなので、売掛金を減らし忘れ、売上を余分に記録しています。左右が同額でも内容の誤りは残ります。",
+      "options": [
+        "売掛金が9,000円少なく、利益は正しい",
+        "普通預金が9,000円少なく、売掛金は正しい",
+        "売掛金と利益がそれぞれ9,000円多い",
+        "借入金と利益がそれぞれ9,000円少ない"
+      ]
+    },
+    {
+      "id": "bb2-foundations-case-q6",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "借入元金7,200円と当月の利息480円を普通預金から支払った。科目と金額を入力してください。",
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "accepted": [
+        "{\"debits\":[{\"account\":\"借入金\",\"amount\":7200},{\"account\":\"支払利息\",\"amount\":480}],\"credits\":[{\"account\":\"普通預金\",\"amount\":7680}]}"
+      ],
+      "journal": {
+        "accounts": [
+          "借入金",
+          "支払利息",
+          "普通預金",
+          "現金",
+          "支払家賃"
+        ],
+        "debits": [
+          {
+            "account": "借入金",
+            "amount": 7200
+          },
+          {
+            "account": "支払利息",
+            "amount": 480
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 7680
+          }
+        ]
+      },
+      "explanation": "元金は負債の減少、利息は費用の発生なので、両方が借方です。普通預金は資産の減少なので貸方です。7,200＋480＝7,680円で貸借が一致します。"
+    }
+  ]
+}
