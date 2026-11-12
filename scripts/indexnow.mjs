@@ -5,7 +5,7 @@ import { pathToFileURL } from 'node:url';
 import { setTimeout as delay } from 'node:timers/promises';
 
 const KEY = 'dff33bcce6134baaacf82aa415defc55';
-const ENDPOINT = 'https://api.indexnow.org/indexnow';
+const ENDPOINT = 'https://www.bing.com/indexnow';
 
 function validateUrl(value, origin) {
   const url = new URL(value);
