@@ -52,3 +52,19 @@
 画面やプリンタでは解像度と出力寸法の関係を考えます。例えば横1,200画素の画像を300 dpi相当で印刷するなら横4インチです。画素数は画像の大きさ、dpiは単位長さにいくつ配置するかを表すため、同じ画像でも印刷条件で寸法が変わります。
 
 <details><summary>紙の画像を保存すれば、文字列で検索できる？</summary><p>画像だけでは文字データとは限りません。OCRで読み取り、誤認識も確認します。</p></details>
+
+## 機器の形状、信号、役割を順に確認する
+
+ノートPCから会議室の画面へ資料を出したいとします。画面の信号を受ける端子がHDMIで、PC側の形状がUSB Type-Cでも、単に形を合わせるケーブルでは足りない場合があります。PC側がその端子から映像を出せるか、変換器が必要な信号を扱えるか、画面側で入力先が選ばれているかを順に確認します。同じ外観のType-Cでも、全端子が同じ転送速度や映像出力に対応するとは限りません。仕様書を読むときは「端子形状」「信号や規格」「用途や給電」の欄を混同しないようにします。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="映らない：画面とPCを切り分ける、画面：入力端子と入力選択を確認、PC：端子から映像出力できるか確認、ケーブル：伝える信号と変換を確認"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">映らない：画面とPCを切り分ける</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">画面：入力端子と入力選択を確認</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">PC：端子から映像出力できるか確認</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">ケーブル：伝える信号と変換を確認</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>接続先の形が一致しても、必要な信号が通るかを別に確認します。</figcaption></figure>
+
+## 作業用PCに接続された機器を見分ける
+
+<figure><img src="../../../images/it-passport/workstation-connections.webp" width="960" height="640" loading="lazy" decoding="async" alt="作業用パソコンにキーボードと外付けSSDがUSBで接続され、別のLANケーブルがスイッチへつながっている図"><figcaption>学習用の生成イラスト。キーボードと外付けSSDの線はUSB端子へ、ロック用の爪があるコネクタの線はLAN端子からスイッチへつながっています。実物のケーブルの色は製品ごとに異なります。</figcaption></figure>
+
+図でUSBの線をたどると、一方はキー操作を入力する機器、もう一方はデータを保存する機器に着きます。端子の規格が共通でも、接続先の役割は同じとは限りません。LAN端子の先は別の機器と通信するためのスイッチです。差し込み口の形、線の行き先、やり取りする情報を順に見ると、機器を分類できます。
+
+## どの向きに情報が動くかを見る
+
+キーボードやバーコードリーダは利用者や品物から端末へ情報を入れる機器、ディスプレイやプリンタは端末から利用者へ結果を出す機器です。タッチパネルは画面を出力し、指の位置を入力します。SSDは必要なファイルを読み出し、変更を記録するので補助記憶です。製品名を覚えるより「どの情報を誰から誰へ渡すか」を書くと、複数の役割を持つ機器も判断できます。

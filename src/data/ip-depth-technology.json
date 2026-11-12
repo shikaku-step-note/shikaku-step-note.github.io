@@ -1,0 +1,964 @@
+{
+  "ip-binary": [
+    {
+      "id": "ip-binary-depth-1",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "4ビットの2の補数で1011を10進数にした値を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "重みを −8、4、2、1 と置くと −8＋2＋1＝−5 です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "-5"
+      ]
+    },
+    {
+      "id": "ip-binary-depth-2",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "4ビットの2の補数で0101と0011を足したときの判断はどれですか。",
+      "options": [
+        "数学上の和8が範囲外",
+        "異符号の入力なので範囲内",
+        "8が表せる",
+        "−8が数学上の和になる"
+      ],
+      "answer": 0,
+      "explanation": "5＋3＝8は上限7を超えます。残る1000を−8と読めても、数学上の和8とは異なります。"
+    },
+    {
+      "id": "ip-binary-depth-3",
+      "lesson": "ip-binary",
+      "field": "technology",
+      "prompt": "赤ラベルか冷蔵のうち少なくとも一方の品を抽出し、両方に該当する品も残す演算はどれですか。",
+      "options": [
+        "NOT",
+        "AND",
+        "OR",
+        "XOR"
+      ],
+      "answer": 2,
+      "explanation": "ORは片方と両方の場合が真です。ANDは両方だけ、XORは片方だけ、NOTは条件の否定です。"
+    }
+  ],
+  "ip-statistics": [
+    {
+      "id": "ip-statistics-depth-1",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "正常5件・誤り1件から重複なしで2件を無作為に調べます。誤り1件を引く確率を百分率にして小数第1位まで示してください。％は付けません。",
+      "options": [],
+      "answer": 0,
+      "explanation": "正常を2件引く確率は(5/6)×(4/5)＝2/3です。補集合を取り、(1−2/3)×100＝33.333…％を丸めます。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "33.3"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-2",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "データ2、4、4、6、44の中央値を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "順に並んだ5個の中央の3番目は4です。44は平均を押し上げますが、中央値を変えません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "4"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-3",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "A→Bは2分、B→Cは4分、C→Bは1分、A→Cは8分です。AからCへの最短時間を分で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "A→B→Cは2＋4＝6分です。C→Bは向きが逆なのでB→Cには使えません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "6"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-4",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "予測式が 作業時間＝18＋3×出荷件数 で、作業時間は分です。出荷12件の予測時間を分で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "18＋3×12＝54分です。18は件数によらない項、3は1件増えたときの予測の増加分です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "54"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-5",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "速度が最初の30分は時速30 km、次の30分は時速50 kmです。移動距離をkmで入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "速度の下の長方形の面積を足します。30×0.5＋50×0.5＝40 kmです。30と50を直接足すと時間が反映されません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "40"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-6",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "別の方式との平均時間の差を検定したが、差を検出できませんでした。適切な解釈はどれですか。",
+      "options": [
+        "二つの母平均は必ず完全に同じ",
+        "差を検出できなかった。標本数やばらつきも確認する",
+        "もう一方が必ず優れている",
+        "差が検出できないのは計算不能を意味する"
+      ],
+      "answer": 1,
+      "explanation": "検定で差を検出できなかったという結果だけでは、差が存在しないと証明できません。標本数やばらつきで検出しやすさが変わります。"
+    },
+    {
+      "id": "ip-statistics-depth-7",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "全データが2、2、8、8です。分散の分母を4とした場合の標準偏差を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "平均は5です。各値の平均との差は−3または＋3なので、二乗の平均は9、平方根は3です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "3"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-8",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "平均70点、標準偏差5点のテストで80点でした。偏差値を 50＋10×（得点−平均）÷標準偏差 で求め、数字を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "平均との差は10点、標準偏差の2倍です。50＋10×2＝70になります。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "70"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-9",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "差がないという仮定の下で、4人それぞれの改善・悪化が同確率で独立し、同点はないとします。どちらか一方向に4人全員の結果がそろう確率を百分率で入力してください。％は付けません。",
+      "options": [],
+      "answer": 0,
+      "explanation": "全員改善が(1/2)⁴＝1/16、全員悪化も1/16です。両方向を数えるため合計は2/16＝12.5％です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "12.5"
+      ]
+    },
+    {
+      "id": "ip-statistics-depth-10",
+      "lesson": "ip-statistics",
+      "field": "technology",
+      "prompt": "表示された平均時間は装置Aが3.0秒、Bが2.9秒です。測定のずれがそれぞれ±0.2秒ある場合、適切な判断はどれですか。",
+      "options": [
+        "両方が実際に全く同じ時間だと証明できる",
+        "表示値だけでBは常に速いと言える",
+        "表示値に差があるので誤差の確認は不要",
+        "考えられる範囲が重なるため、追加測定や測定法の確認を行う"
+      ],
+      "answer": 3,
+      "explanation": "Aは2.8〜3.2秒、Bは2.7〜3.1秒の可能性があり、範囲が重なります。表示値だけでは順序を断定できません。"
+    }
+  ],
+  "ip-ai-data": [
+    {
+      "id": "ip-ai-data-depth-1",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "24段階を同じ長さのビット列で表すのに最低何ビット必要ですか。",
+      "options": [],
+      "answer": 0,
+      "explanation": "2⁴＝16では不足し、2⁵＝32なら24段階を区別できます。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "5"
+      ]
+    },
+    {
+      "id": "ip-ai-data-depth-2",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "本当の異常20件中14件を正しく異常と判定し、モデルは計18件を異常と判定した。見逃した異常件数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "本当の異常20件から正しく検出した14件を引きます。18−14＝4件は誤警報です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "6"
+      ]
+    },
+    {
+      "id": "ip-ai-data-depth-3",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "改訂された社内規程を回答時に参照したいとき、最も目的に合う設計はどれですか。",
+      "options": [
+        "初版だけで追加学習する",
+        "承認済みの現行版を回答時に検索し、出典の箇所を示す",
+        "回答を必ず2倍の長さにする",
+        "文書名を隠して根拠を確認しない"
+      ],
+      "answer": 1,
+      "explanation": "回答時に現行資料を参照し、版と原文を確認できれば、根拠を追跡できます。学習や出力長だけでは現行版の参照を保証できません。"
+    },
+    {
+      "id": "ip-ai-data-depth-4",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "上限温度と例外条件が仕様書で完全に決まっている警報を作ります。判定理由を監査で説明する必要があります。最も直接的な方法はどれですか。",
+      "options": [
+        "映像合成モデルを導入する",
+        "過去の警報時刻だけから学習する",
+        "判定規則を条件式にする",
+        "正解のない画像を集める"
+      ],
+      "answer": 2,
+      "explanation": "閾値と例外が決まっているため、規則に落とし込むとどの条件を通ったか追跡できます。"
+    },
+    {
+      "id": "ip-ai-data-depth-5",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "撮影室Aの画像ではほぼ正しく分類できたが、新しい撮影室Bで見逃しが増えました。次に適切なのはどれですか。",
+      "options": [
+        "Bの条件を含む別の評価データで、誤りと照明の影響を調べる",
+        "見逃しをすべて誤警報として数える",
+        "学習時の正解率だけを結果とする",
+        "Aの学習画像だけで再評価"
+      ],
+      "answer": 0,
+      "explanation": "照明の差や特徴量の偏りを疑い、学習に使わないBのデータで条件を変えて検証します。"
+    },
+    {
+      "id": "ip-ai-data-depth-6",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "学習中の誤差逆伝播の役割として正しいものはどれですか。",
+      "options": [
+        "文字列の長さを統一する",
+        "画像を画面に表示する",
+        "入力データの順番だけを並べ替える",
+        "各重みの変化に対して損失がどう変わるかを求める"
+      ],
+      "answer": 3,
+      "explanation": "損失の微分を出力側から逆方向に計算し、重みを調整するための情報を得ます。"
+    },
+    {
+      "id": "ip-ai-data-depth-7",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "写真内の異なる位置に現れる同じ小さな模様を、同じフィルタで捉える仕組みはどれですか。",
+      "options": [
+        "CNNの畳み込み",
+        "RNNの状態の受渡し",
+        "GANの識別器による実物と生成物の判定",
+        "閾値を文章で説明するルール"
+      ],
+      "answer": 0,
+      "explanation": "畳み込みでは同じフィルタを画像の各位置へ適用します。RNNの状態は順序を扱う例です。"
+    },
+    {
+      "id": "ip-ai-data-depth-8",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "すでに学習済みのモデルの重みを、追加の専門分野データで調整する処理はどれですか。",
+      "options": [
+        "出力の表示順を変えるだけ",
+        "プロンプトで回答形式を指定するだけ",
+        "ファインチューニング",
+        "別文書を検索して入力に足すだけ"
+      ],
+      "answer": 2,
+      "explanation": "ファインチューニングは学習によってモデルの重みを調整します。指示や参照資料を入力へ追加するだけでは重みを更新しません。"
+    },
+    {
+      "id": "ip-ai-data-depth-9",
+      "lesson": "ip-ai-data",
+      "field": "technology",
+      "prompt": "GANで、実際の画像と生成された画像を見分ける側の役割はどれですか。",
+      "options": [
+        "文字コード",
+        "識別器",
+        "生成器",
+        "サンプリング周波数"
+      ],
+      "answer": 1,
+      "explanation": "識別器が本物と生成物を判定し、生成器はその評価を手掛かりに実物らしい出力を学びます。"
+    }
+  ],
+  "ip-algorithms": [
+    {
+      "id": "ip-algorithms-depth-1",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "合計を0にし、[11, 3, 15, 8] の値を順に見ます。8以上なら加えるとき、最後の合計を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "11＋15＋8＝34です。8は境界ですが『以上』なので含めます。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "34"
+      ]
+    },
+    {
+      "id": "ip-algorithms-depth-2",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "昇順 [2, 6, 9, 14, 18, 22, 37] で中央14を探索値18と比較した。次の候補はどれですか。",
+      "options": [
+        "全件",
+        "[2, 6, 9]",
+        "[14, 18]",
+        "[18, 22, 37]"
+      ],
+      "answer": 3,
+      "explanation": "14以前の値はすべて14以下です。18を含み得る右側だけを残します。"
+    },
+    {
+      "id": "ip-algorithms-depth-3",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "空のキューにA、Bを順に入れ、1件を取り出してCを入れます。次に取り出すのはどれですか。",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "空"
+      ],
+      "answer": 1,
+      "explanation": "先着のAが既に出ています。残るBの後ろにCを入れたので、次はBです。"
+    },
+    {
+      "id": "ip-algorithms-depth-4",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "[6, 2, 5, 3] に対し、左から隣り合う要素を比較して大きい方を右へ移すバブルソートを1巡だけ行う。並びはどれですか。",
+      "options": [
+        "[2, 6, 5, 3]",
+        "[3, 2, 5, 6]",
+        "[2, 5, 3, 6]",
+        "[2, 3, 5, 6]"
+      ],
+      "answer": 2,
+      "explanation": "6と2、6と5、6と3を順に比較して交換します。1巡で右端の6が確定しますが、左側はまだ整列していません。"
+    },
+    {
+      "id": "ip-algorithms-depth-5",
+      "lesson": "ip-algorithms",
+      "field": "technology",
+      "prompt": "昇順 [1, 5, 7] と [2, 3, 8] を昇順に併合するとき、先頭3件はどれですか。",
+      "options": [
+        "1、2、3",
+        "1、2、5",
+        "2、3、8",
+        "1、5、7"
+      ],
+      "answer": 0,
+      "explanation": "最初に1と2から1、次は5と2から2、その次は5と3から3を選びます。"
+    }
+  ],
+  "ip-languages": [
+    {
+      "id": "ip-languages-depth-1",
+      "lesson": "ip-languages",
+      "field": "technology",
+      "prompt": "注文数の表示位置だけを画面幅で変えたい。主な変更先はどれですか。",
+      "options": [
+        "XMLの終了タグ",
+        "コンパイラの出力先",
+        "SQL",
+        "CSS"
+      ],
+      "answer": 3,
+      "explanation": "表示内容を変えず、幅に応じて配置するのはCSSの仕事です。"
+    },
+    {
+      "id": "ip-languages-depth-2",
+      "lesson": "ip-languages",
+      "field": "technology",
+      "prompt": "XMLが整形式だと分かった時点で確認できるものはどれですか。",
+      "options": [
+        "開始タグと終了タグの対応など構文条件を満たす",
+        "配布元が本物",
+        "注文数は必ず1以上",
+        "各取引先の用語の意味は同じ"
+      ],
+      "answer": 0,
+      "explanation": "整形式が示すのはタグの対応や入れ子などの構文です。値や意味、配布元は別の検証が必要です。"
+    },
+    {
+      "id": "ip-languages-depth-3",
+      "lesson": "ip-languages",
+      "field": "technology",
+      "prompt": "実行前の変換が成功したが、入力0のときにエラーが起こる。次の確認はどれですか。",
+      "options": [
+        "変換に成功したため障害なしとする",
+        "正常入力だけを試す",
+        "入力0を含む境界値で動作を調べる",
+        "配色を変更する"
+      ],
+      "answer": 2,
+      "explanation": "文法が正しくても、ある入力の処理で問題が残ります。境界値で動作を調べます。"
+    }
+  ],
+  "ip-computer": [
+    {
+      "id": "ip-computer-depth-1",
+      "lesson": "ip-computer",
+      "field": "technology",
+      "prompt": "1件の直列処理が読込3 ms・計算8 ms・書出し1 msです。計算だけ倍速にした場合、1件の処理時間をmsで入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "計算8 msが4 msになり、3＋4＋1＝8 msです。入出力は変わりません。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "8"
+      ]
+    },
+    {
+      "id": "ip-computer-depth-2",
+      "lesson": "ip-computer",
+      "field": "technology",
+      "prompt": "CPUが同じデータを繰り返し読みます。主記憶へのアクセス待ちを減らす主な仕組みはどれですか。",
+      "options": [
+        "画像の拡大",
+        "キャッシュ",
+        "プリンタ",
+        "ファイル名の変更"
+      ],
+      "answer": 1,
+      "explanation": "よく使うデータをCPU近くの高速な記憶領域に置くことで、主記憶を待つ回数を減らせます。"
+    }
+  ],
+  "ip-architecture": [
+    {
+      "id": "ip-architecture-depth-1",
+      "lesson": "ip-architecture",
+      "field": "technology",
+      "prompt": "独立した稼働率0.8と0.9の装置があり、どちらか一方が稼働すれば使えます。全体の稼働率を百分率にし、％を付けずに入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "同時停止の確率は(1−0.8)×(1−0.9)＝0.02です。1から引いて0.98、98％です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "98"
+      ]
+    },
+    {
+      "id": "ip-architecture-depth-2",
+      "lesson": "ip-architecture",
+      "field": "technology",
+      "prompt": "負荷は同じで1分当たりの処理件数は増えたものの、申請1件の応答が遅くなりました。どう説明しますか。",
+      "options": [
+        "応答時間が改善した",
+        "稼働率が必ず下がった",
+        "MTTRが必ず短くなった",
+        "スループットは向上し、応答時間は悪化した"
+      ],
+      "answer": 3,
+      "explanation": "処理量と応答時間は別指標です。故障や復旧の条件は示されていません。"
+    }
+  ],
+  "ip-os-files": [
+    {
+      "id": "ip-os-files-depth-1",
+      "lesson": "ip-os-files",
+      "field": "technology",
+      "prompt": "現在位置が /work/q1/docs のとき、../../base/x.txt の到達先はどれですか。",
+      "options": [
+        "/work/q1/docs/base/x.txt",
+        "/work/base/x.txt",
+        "/work/q1/base/x.txt",
+        "/base/x.txt"
+      ],
+      "answer": 1,
+      "explanation": "1つ目の..で /work/q1、2つ目で /work に上がり、base/x.txt を加えます。"
+    },
+    {
+      "id": "ip-os-files-depth-2",
+      "lesson": "ip-os-files",
+      "field": "technology",
+      "prompt": "ログインできた利用者に特定フォルダの書込みが許可されていない。最初に確認する対象はどれですか。",
+      "options": [
+        "時刻表示の配色",
+        "ファイルの拡張子",
+        "アクセス権設定",
+        "画面の解像度"
+      ],
+      "answer": 2,
+      "explanation": "本人確認と操作の許可は別です。この条件では書込みの認可設定を確認します。"
+    }
+  ],
+  "ip-office-oss": [
+    {
+      "id": "ip-office-oss-depth-1",
+      "lesson": "ip-office-oss",
+      "field": "technology",
+      "prompt": "C2の式 =B2*$E$1 をC5へコピーします。結果の式はどれですか。",
+      "options": [
+        "=B5*$E$1",
+        "=$B$2*E5",
+        "=B2*$E$1",
+        "=B5*$E$4"
+      ],
+      "answer": 0,
+      "explanation": "C2からC5へ3行下がるのでB2はB5です。$E$1は列と行を固定しています。"
+    },
+    {
+      "id": "ip-office-oss-depth-2",
+      "lesson": "ip-office-oss",
+      "field": "technology",
+      "prompt": "社内で改変したOSSを顧客にも配る予定です。配布前の確認として適切なのはどれですか。",
+      "options": [
+        "配布後に名称だけ変える",
+        "価格が0円なら追加確認不要",
+        "顧客名が変わればライセンス不要",
+        "使うライセンスと依存物の再配布条件を読む"
+      ],
+      "answer": 3,
+      "explanation": "無料かどうかと再配布時の条件は別です。配布するものに含まれるライセンスと必要な表示・文書などを事前に確認します。"
+    }
+  ],
+  "ip-hardware": [
+    {
+      "id": "ip-hardware-depth-1",
+      "lesson": "ip-hardware",
+      "field": "technology",
+      "prompt": "PCのUSB Type-C端子に変換器をつないでもHDMI画面に映りません。仕様の確認として適切なのはどれですか。",
+      "options": [
+        "PC端子の映像出力対応、変換器の対応信号、画面の入力先を確認する",
+        "OSの日時設定だけを確認する",
+        "Type-Cであることだけを確認する",
+        "SSDの容量だけを確認する"
+      ],
+      "answer": 0,
+      "explanation": "端子が挿さることと映像信号が通ることは別です。送る側・伝える機器・受け取る側を確認します。"
+    },
+    {
+      "id": "ip-hardware-depth-2",
+      "lesson": "ip-hardware",
+      "field": "technology",
+      "prompt": "利用者の指の位置を受け取り、案内画面も表示する装置の役割はどれですか。",
+      "options": [
+        "出力のみ",
+        "補助記憶のみ",
+        "入力と出力",
+        "入力のみ"
+      ],
+      "answer": 2,
+      "explanation": "指の位置は端末への入力、案内の表示は端末から利用者への出力です。"
+    }
+  ],
+  "ip-design": [
+    {
+      "id": "ip-design-depth-1",
+      "lesson": "ip-design",
+      "field": "technology",
+      "prompt": "希望日を必ず1日、必要な支援を複数選べるようにします。適切な組合せはどれですか。",
+      "options": [
+        "希望日も支援もラジオボタン",
+        "希望日はラジオボタン、支援はチェックボックス",
+        "希望日はチェックボックス、支援はラジオボタン",
+        "両方とも色で選択状態だけを表示"
+      ],
+      "answer": 1,
+      "explanation": "1つだけ選ぶ項目にはラジオボタン、複数選べる項目にはチェックボックスが適します。"
+    },
+    {
+      "id": "ip-design-depth-2",
+      "lesson": "ip-design",
+      "field": "technology",
+      "prompt": "利用者が申込を完了できない原因を特定したい。人間中心設計に合う評価はどれですか。",
+      "options": [
+        "開発者だけで配色の好みを投票する",
+        "表示件数だけを測る",
+        "全員に画面上部の説明を覚えてもらう",
+        "実際の利用に近い課題で利用者の操作を観察する"
+      ],
+      "answer": 3,
+      "explanation": "利用者が実際の操作を行うと、どこで迷い、どの方法では完了できないかが分かります。"
+    }
+  ],
+  "ip-media": [
+    {
+      "id": "ip-media-depth-1",
+      "lesson": "ip-media",
+      "field": "technology",
+      "prompt": "非圧縮、毎秒16,000標本、1標本8ビット、2チャネルで4秒です。付加情報を無視したデータ量をバイトで入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "16,000×8×2×4ビットを8で割り、128,000バイトです。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "128000"
+      ]
+    },
+    {
+      "id": "ip-media-depth-2",
+      "lesson": "ip-media",
+      "field": "technology",
+      "prompt": "配信先で観測値を一つずつ元と同じ値に戻せる必要があります。適した方針はどれですか。",
+      "options": [
+        "配信先に数値の推定を任せる",
+        "可逆圧縮を使い、伸長後に原データと照合する",
+        "非可逆で色数を減らす",
+        "観測値を画面の写真だけにする"
+      ],
+      "answer": 1,
+      "explanation": "可逆圧縮は伸長すると元のデータに戻ります。非可逆では値を失う場合があり、同一性の要件に適しません。"
+    }
+  ],
+  "ip-database": [
+    {
+      "id": "ip-database-depth-1",
+      "lesson": "ip-database",
+      "field": "technology",
+      "prompt": "同一注文に複数の明細があり、明細番号は注文ごとに1から付けます。明細を一意に特定する組はどれですか。",
+      "options": [
+        "注文番号だけ",
+        "明細番号だけ",
+        "注文番号と明細番号",
+        "商品名だけ"
+      ],
+      "answer": 2,
+      "explanation": "明細番号は注文間で、注文番号は同一注文内で繰り返します。組み合わせると1明細を特定できます。"
+    },
+    {
+      "id": "ip-database-depth-2",
+      "lesson": "ip-database",
+      "field": "technology",
+      "prompt": "各利用者は複数の講習を受け、講習には複数の利用者が参加できます。再受講を認めない場合、対応関係の表として適切なのはどれですか。",
+      "options": [
+        "利用者IDと講習IDを持つ参加表を設け、両IDの組を一意にする",
+        "講習表から利用者情報を全削除",
+        "利用者名と講師名を文字列で結合",
+        "講習を利用者表の追加列に置く"
+      ],
+      "answer": 0,
+      "explanation": "参加という多対多の関係を1行ずつ保存します。両IDの組を一意にすれば二重登録を抑えられます。"
+    }
+  ],
+  "ip-sql-transactions": [
+    {
+      "id": "ip-sql-transactions-depth-1",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "X店80円、X店30円、Y店70円、Y店60円です。50円以上の行だけで店ごとの合計を出し、合計100円以上の店を求めるとどれですか。",
+      "options": [
+        "XとY",
+        "どちらもない",
+        "Xのみ",
+        "Yのみ"
+      ],
+      "answer": 3,
+      "explanation": "30円の行は先に除きます。Xは80円、Yは70＋60＝130円になり、Yだけが残ります。"
+    },
+    {
+      "id": "ip-sql-transactions-depth-2",
+      "lesson": "ip-sql-transactions",
+      "field": "technology",
+      "prompt": "在庫の減算に成功し、対応する受注登録に失敗しました。両方を同じトランザクションで扱うときの処理はどれですか。",
+      "options": [
+        "減算も含めてロールバック",
+        "画面だけを再読込して完了扱い",
+        "確定済みの他注文も削除",
+        "減算だけコミット"
+      ],
+      "answer": 0,
+      "explanation": "一連の更新がそろって初めて意味を持つため、失敗した単位の変更を取り消します。"
+    }
+  ],
+  "ip-network": [
+    {
+      "id": "ip-network-depth-1",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "36 MBを24 Mbit/sで転送します。単位の倍率を同じとし、付加データや待ちは無視して秒数を入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "36 MB＝288 Mbitです。288÷24＝12秒です。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "12"
+      ]
+    },
+    {
+      "id": "ip-network-depth-2",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "LAN内の接続は成功するが、別ネットワークへの経路を決める必要がある。担当する機器はどれですか。",
+      "options": [
+        "SSD",
+        "ディスプレイ",
+        "ルータ",
+        "マウス"
+      ],
+      "answer": 2,
+      "explanation": "異なるIPネットワークの間はルータが中継します。LAN内の機器をつなぐ役割とは区別します。"
+    },
+    {
+      "id": "ip-network-depth-3",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "低頻度で小さなデータだけを遠くへ送り、電池交換が難しい。優先して比較する通信方式はどれですか。",
+      "options": [
+        "HDMI",
+        "LPWA",
+        "近距離のBLEだけ",
+        "端末の画面共有"
+      ],
+      "answer": 1,
+      "explanation": "長距離と低消費電力を優先し、通信量が小さいためLPWAが候補です。設置場所の電波条件は別に確かめます。"
+    },
+    {
+      "id": "ip-network-depth-4",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "来客用と職員用を、同じスイッチを使いながら論理的に別のLANに分けたい。適切な仕組みはどれですか。",
+      "options": [
+        "文字コード変換",
+        "PDFへの出力",
+        "容量の大きいSSD",
+        "VLAN"
+      ],
+      "answer": 3,
+      "explanation": "VLANは物理機器を共有しながら論理的にLANを分けられます。別LAN間を許可する方針は中継側で別に決めます。"
+    },
+    {
+      "id": "ip-network-depth-5",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "社内の同じLANには届く端末から、別ネットワークの宛先へ送るための既定の中継先は何ですか。",
+      "options": [
+        "SSID",
+        "デフォルトゲートウェイ",
+        "画像圧縮器",
+        "文字コード表"
+      ],
+      "answer": 1,
+      "explanation": "自分と同じネットワークの外へ送るとき、設定された既定の中継先へ渡します。"
+    },
+    {
+      "id": "ip-network-depth-6",
+      "lesson": "ip-network",
+      "field": "technology",
+      "prompt": "メッシュWi-Fiで端末から親しみのあるSSIDが見えるが、実際の転送が遅い。中継装置の配置を評価するときに確認するのはどれですか。",
+      "options": [
+        "SSIDの文字数だけを数える",
+        "キーボードの入力速度を変える",
+        "装置間の通信品質も測る",
+        "端末のファイル拡張子だけを確認する"
+      ],
+      "answer": 2,
+      "explanation": "端末から最寄りの装置まで良好でも、その先の中継区間が遅い場合があります。経路全体を見ます。"
+    }
+  ],
+  "ip-protocols": [
+    {
+      "id": "ip-protocols-depth-1",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "端末には適切なIPアドレスがあり、接続先をIPアドレスで指定すると到達できます。しかし名前で接続先を引けません。最初に切り分ける仕組みはどれですか。",
+      "options": [
+        "DNS",
+        "IMAP",
+        "画面の配色",
+        "SMTP"
+      ],
+      "answer": 0,
+      "explanation": "DNSは名前から接続先の情報を得る仕組みです。端末のIP取得やメールの送受信とは目的が違います。"
+    },
+    {
+      "id": "ip-protocols-depth-2",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "複数端末からメールを読み、既読状態をサーバで共有したい。役割に合う方式はどれですか。",
+      "options": [
+        "DHCP",
+        "SMTPだけ",
+        "DNS",
+        "IMAP"
+      ],
+      "answer": 3,
+      "explanation": "IMAPはサーバ上のメールや状態を参照・同期するために使えます。SMTPは主にメールの受渡しを担います。"
+    },
+    {
+      "id": "ip-protocols-depth-3",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "離れたネットワークの間で、宛先IPに応じてデータを運ぶ働きは、OSIのどの層が担いますか。",
+      "options": [
+        "ネットワーク層",
+        "プレゼンテーション層",
+        "アプリケーション層",
+        "物理層"
+      ],
+      "answer": 0,
+      "explanation": "異なるネットワーク間の宛先指定と経路選択はネットワーク層の働きです。"
+    },
+    {
+      "id": "ip-protocols-depth-4",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "複数機器の時計にずれがあり、記録の前後関係を取り違えています。時計を合わせるためのプロトコルはどれですか。",
+      "options": [
+        "IMAP",
+        "FTP",
+        "NTP",
+        "SMTP"
+      ],
+      "answer": 2,
+      "explanation": "NTPはネットワークを介して時刻を同期します。他の候補はファイル転送やメールの通信です。"
+    },
+    {
+      "id": "ip-protocols-depth-5",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "移動中の端末が基地局Aから基地局Bへつながり直し、通信が引き継がれます。この動作はどれですか。",
+      "options": [
+        "MNP",
+        "ハンドオーバー",
+        "画像の圧縮",
+        "DNS"
+      ],
+      "answer": 1,
+      "explanation": "基地局を切り替えて通信を引き継ぐのがハンドオーバーです。MNPは電話番号を維持した契約先変更です。"
+    },
+    {
+      "id": "ip-protocols-depth-6",
+      "lesson": "ip-protocols",
+      "field": "technology",
+      "prompt": "従量制は基本料400円に1 GB当たり250円を加算、定額制は1,600円です。他の条件は同じとし、4 GB利用時の従量制の料金を円で入力してください。",
+      "options": [],
+      "answer": 0,
+      "explanation": "400＋250×4＝1,400円です。この条件では定額制1,600円より安くなります。",
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "1400"
+      ]
+    }
+  ],
+  "ip-security-risk": [
+    {
+      "id": "ip-security-risk-depth-1",
+      "lesson": "ip-security-risk",
+      "field": "technology",
+      "prompt": "公開中の講座定員が誤って変更され、空席の数が実際と一致しなくなりました。直接損なわれた性質はどれですか。",
+      "options": [
+        "可用性だけ",
+        "機密性だけ",
+        "応答速度",
+        "完全性"
+      ],
+      "answer": 3,
+      "explanation": "内容の正確さや意図しない変更の防止は完全性です。問題には非公開情報の閲覧や利用不能は示されていません。"
+    },
+    {
+      "id": "ip-security-risk-depth-2",
+      "lesson": "ip-security-risk",
+      "field": "technology",
+      "prompt": "障害時の一部の費用を保険で補う計画です。最も近い対応はどれですか。",
+      "options": [
+        "回避",
+        "移転・共有",
+        "障害確率を0にする",
+        "復旧手順だけで低減"
+      ],
+      "answer": 1,
+      "explanation": "費用の一部を保険で分担します。サービス停止や利用者への影響自体がなくなるわけではありません。"
+    }
+  ],
+  "ip-security-controls": [
+    {
+      "id": "ip-security-controls-depth-1",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "操作の記録は残るものの、担当者が業務に不要な全件削除を実行できます。最初に見直すのはどれですか。",
+      "options": [
+        "画面の明るさ",
+        "利用者を追加する",
+        "認可と最小権限",
+        "バックアップの色分け"
+      ],
+      "answer": 2,
+      "explanation": "不要な操作を許しているので、本人確認の後に割り当てる権限を絞ります。操作記録は検知に役立ちますが、権限自体は狭まりません。"
+    },
+    {
+      "id": "ip-security-controls-depth-2",
+      "lesson": "ip-security-controls",
+      "field": "technology",
+      "prompt": "直前1時間分を超えてデータを失わない、という目標は何に当たりますか。",
+      "options": [
+        "RPO",
+        "MTBF",
+        "スループット",
+        "RTO"
+      ],
+      "answer": 0,
+      "explanation": "復旧するデータの時点を示す目標がRPOです。サービスを戻すまでの時間はRTOです。"
+    }
+  ],
+  "ip-cryptography": [
+    {
+      "id": "ip-cryptography-depth-1",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "Aが作った書類について、BがAの署名を検証するのに使う鍵はどれですか。",
+      "options": [
+        "Bの秘密鍵",
+        "Bの公開鍵",
+        "Aの秘密鍵",
+        "Aの公開鍵"
+      ],
+      "answer": 3,
+      "explanation": "署名は署名者Aの秘密鍵で作り、対応するAの公開鍵で検証します。Bの鍵を用いるのはBだけに読ませる暗号化の場面です。"
+    },
+    {
+      "id": "ip-cryptography-depth-2",
+      "lesson": "ip-cryptography",
+      "field": "technology",
+      "prompt": "配布元の確認として、最も確かな手順はどれですか。",
+      "options": [
+        "信頼できる経路で公開鍵を確認し、配布元の署名を検証する",
+        "ファイル名が同じかを見る",
+        "同じ未確認サイトにあるハッシュ値だけと照合する",
+        "ファイルサイズだけを比べる"
+      ],
+      "answer": 0,
+      "explanation": "照合値とファイルを同じ未確認サイトから得ても、両方が置き換わっている可能性を除けません。信頼できる鍵で署名を検証します。"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   'title': 'マーケティングと経営管理システム',
   'description': 'STPと4Pを使って施策を整理する。ERP・SCM・CRMの役割を区別する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 8,
-  'minutes': 45,
+  'minutes': 75,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 3,
@@ -57,3 +57,36 @@ A案は500人中30人、B案は400人中32人が注文したとします。注�
 <figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="弁当店のSTP, 分ける, 利用場面, 選ぶ, 夕方の通勤者, 位置付け, 待たずに受取"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">分ける</text><text x="68" y="51">利用場面</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">選ぶ</text><text x="211" y="51">夕方の通勤者</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">位置付け</text><text x="354" y="51">待たずに受取</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>顧客層を決めた後、その人に何を価値として伝えるかを決めます。</figcaption></figure>
 
 <details><summary>注文が32件と30件なら、率も2ポイント差？</summary><p>分母を確認します。この例は32÷400と30÷500なので、差は2ポイントですが、件数差からは求まりません。</p></details>
+
+<span id="depth-marketing"></span>
+
+## 価格と販促を選び、販売後のデータで確かめる
+
+### 商品を買う人の条件が変わると、最適な施策も変わる
+
+新しい翻訳サービスを売るとします。最初の顧客候補は、料金が高くても当日納品が必要な会社と、急がないが予算が厳しい小規模事業者です。前者に価格を高く設定して始め、後から価格を下げて対象を広げる戦略はスキミングプライシングです。逆に、利用者を早く増やしたい場合に、初めから低い価格で市場へ浸透するのがペネトレーションプライシングです。混雑や需要の変化に応じて料金を上下させるダイナミックプライシングは、初期価格の戦略とは別です。判断時は、いつ、何を理由に、どの方向へ価格を動かしたかを読みます。
+
+当日納品を位置付けに選ぶなら、広告に『当日』と書く前に、注文の締切、受け取れるファイルの種類、仕事を受けられる量をそろえます。リスティング広告は特定の語で検索する人へ届きますが、今必要としていない人へ認知を広げる目的なら、異なる媒体と組み合わせます。広告の表示回数が増えたことは認知施策を評価する材料でも、購入が増えたことまでは示しません。
+
+<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="広告を見る、表示数に対するクリック率。サービスを調べる、訪問に対する成約率。継続して利用する、初回購入に対する再購入率"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">広告を見る</text><text x="200" y="43">表示数に対するクリック率</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">サービスを調べる</text><text x="200" y="106">訪問に対する成約率</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">継続して利用する</text><text x="200" y="169">初回購入に対する再購入率</text></g></svg><figcaption>同じ販売施策でも、どの段階に課題があるかで比較する分母が変わります。</figcaption></figure>
+
+### 購入回数の多さだけで顧客の次の行動を決めない
+
+顧客Aは半年前に最後に購入し、これまで10回、合計8万円を利用しました。顧客Bは昨日初めて利用し、合計2万円です。RFMのRは最後の購入がどれほど最近か、Fは頻度、Mは金額なので、RではB、FとMではAの評価が高くなり得ます。最近離れた常連を呼び戻す施策と、初回利用者に使い方を案内する施策では、対象の選び方が違います。LTVは長い関係の価値を推定する考え方で、累計売上をそのまま将来価値とみなすわけではありません。
+
+受注はあるのに納期が遅れる場合、CRMで相談記録を確認しても、供給網の原因は解消しません。複数の倉庫で同じ在庫を別々に確保しているなら、SCMの観点から総在庫と補充・配送を見直します。営業案件の引継ぎが遅いならSFA、売上・在庫・会計の基幹データが別々ならERP、熟練担当者だけが例外の処理方法を知っているなら知識の共有を考えます。システムを選ぶ前に、情報の利用者と、改善したい判断を特定します。
+
+<span id="systems-worked-diagnosis"></span>
+
+### 似た症状を、情報を使う範囲から診断する
+
+家電の卸売会社で「問い合わせにすぐ答えられない」という声が出ました。具体的に調べると、次の四つの場面があります。システム名を先に選ばず、誰が何を判断するための情報かを読みます。
+
+- 店舗から「先月相談した代替品をもう一度教えてほしい」と連絡が来ます。担当者が変わっても顧客との接点と購入・相談の履歴をたどれるようにするならCRMの用途です。
+- 同じ顧客からの新規案件を、複数の営業担当が別々に提案していました。商談の段階、次の行動、担当者を営業内で管理するならSFAを検討します。
+- 別々の卸拠点が安全のため多めの在庫を持つのに、特定地域で欠品が続きます。調達から配送までの全体で需要と在庫を把握し、補充や拠点間移動を決めるならSCMの視点が必要です。
+- 販売を確定した後で、商品情報と金額を会計側が手で入力しています。販売・在庫・会計で基幹のデータを連携させ、重複入力を減らすならERPの範囲です。
+
+一つの製品に複数の機能が入っていても、問題の答えは製品の分類だけで決まりません。例えばCRMに案件機能が付いていても、「商談の進捗と次の訪問予定を管理する」という問いなら、その機能が支える営業活動に着目します。導入後には、問い合わせ応答の時間、二重提案の件数、供給網の総在庫、会計の転記誤りなど、当初の課題に対応する指標を確かめます。
+
+出題範囲の参照：[IPA ITパスポート試験シラバス Ver.6.5（本文14〜16ページ）](https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf)。

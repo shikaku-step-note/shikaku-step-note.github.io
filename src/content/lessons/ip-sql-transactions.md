@@ -52,3 +52,23 @@ SQLの各句の対象と、更新を一体として扱う理由を説明でき�
 在庫の移動で倉庫Aを減らしてからBを増やす途中に障害が起きると、片方だけ変われば総量がずれます。両更新を一つのトランザクションとし、成功時にコミット、失敗時にロールバックします。他の処理との見え方や、確定後に結果が残ることも別の性質として考えます。
 
 <details><summary>倉庫Aを減らした時点で確定してよい？</summary><p>移動全体が一つの処理なら、AとBの変更を両方成功させてから確定します。</p></details>
+
+## 行の絞込みとグループの絞込みを区別する
+
+売上表にA店120円、A店80円、B店90円、B店20円の4行があり、50円以上の取引だけを対象に店別の合計が100円以上の店を求めます。行を先に絞るとA店120、80、B店90が残ります。店別合計はA店200、B店90。合計100円以上に絞るとA店だけです。20円を残したまま集計すると、B店が110円となり誤って結果に含まれます。
+
+```sql
+SELECT shop, SUM(amount) AS total
+FROM sales
+WHERE amount >= 50
+GROUP BY shop
+HAVING SUM(amount) >= 100;
+```
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="WHERE：金額50円以上の行だけ、GROUP BY：店ごとに分ける、SUM：Aは200円、Bは90円、HAVING：100円以上のAだけ残す"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">WHERE：金額50円以上の行だけ</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">GROUP BY：店ごとに分ける</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">SUM：Aは200円、Bは90円</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">HAVING：100円以上のAだけ残す</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>条件の対象が元の行か、集計後のグループかを確認します。</figcaption></figure>
+
+## 一緒に終えるべき処理をひとまとまりにする
+
+残り1席の予約で、空席を1減らしたのに予約者情報の書込みが失敗したとします。そのまま確定すると、誰にも割り当てていないのに満席になります。空席の変更と予約情報の登録を同じトランザクションにし、両方成功したときだけコミットします。途中で失敗すればロールバックします。
+
+同時に2人が残り1席を読み取る場面では、両者がそれぞれ「まだ空きがある」と判断することがあります。トランザクションを開始するだけで、すべての同時処理の競合が解決するとは限りません。更新が競合したときの処理や、データベース側の制約・排他を設計します。バックアップは障害後に復旧するための手段で、実行中の競合を止める機能とは別です。

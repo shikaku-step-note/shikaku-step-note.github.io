@@ -5,7 +5,7 @@
   'title': '生産・設計とIoTシステム',
   'description': '設計と生産を支えるシステムを区別する。IoTの計測・通信・制御を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 10,
-  'minutes': 40,
+  'minutes': 80,
   'sample': false,
   'updated': '2026-11-12',
   'unit': 5,
@@ -57,3 +57,31 @@ IoTではセンサが温度や位置などを計測し、通信でデータを�
 <figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="センサーから装置制御まで, 入力, 温度測定, 判定, 装置側, 出力, 冷却・停止"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">入力</text><text x="68" y="51">温度測定</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">判定</text><text x="211" y="51">装置側</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">出力</text><text x="354" y="51">冷却・停止</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>通信断でも必要な停止の判断は、装置側で行えるようにします。</figcaption></figure>
 
 <details><summary>通信断でも危険温度で停止させるには？</summary><p>停止判断を装置側で行える設計にします。クラウドへの送信成功を停止の条件にしません。</p></details>
+
+<span id="depth-engineering-iot"></span>
+
+## 設計値と実測値をつなぎ、止まる条件を考える
+
+### 設計、製造、検査で扱う情報を見分ける
+
+部品の穴を右へ2 mm移す設計変更を行います。CADは形状や寸法を設計する道具で、CAMは形状などの情報を使って加工の準備を支援します。CAEでは強度などを計算で検討し、製造前に曲がりやすい箇所を確認できます。どの道具も、入力した材質や荷重条件が違えば、得られる結果の意味が変わります。シミュレーションの値が許容範囲に入った場合でも、製造ばらつきや実物の寸法を測り、想定を確認します。
+
+設計・製造・検査の担当者が同時に変更の影響を確認する進め方がコンカレントエンジニアリングです。穴の位置を変えた直後に製造側が加工治具に干渉すると指摘できれば、量産の直前に設計からやり直すリスクが減ります。変更した設計の版を確認せず、古い加工データで製造しては同じ効果を得られません。設計版、加工データの版、検査条件を対応付けて記録します。
+
+### IoTの通信が止まっても安全を保つ
+
+倉庫の冷蔵庫に温度センサーを設置します。測定値をネットワークで送り、監視画面で長期の変化を分析するのがIoT活用の一例です。現場の組込み装置は、温度が上がったときに冷却を始めるなど、機器の中で特定の機能を担います。センサーは状態を測り、制御装置が条件を判断し、冷却装置などのアクチュエータが物理的な動作をします。端末とサーバの間が途切れたとき、サーバで判断する構成だけでは冷却を始められません。
+
+<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="センサーが温度を測る、現場の制御装置に値を渡す。現場の制御装置が判断、通信断でも冷却を切替える。サーバは記録を受け取る、履歴を分析し担当者へ知らせる"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">センサーが温度を測る</text><text x="200" y="43">現場の制御装置に値を渡す</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">現場の制御装置が判断</text><text x="200" y="106">通信断でも冷却を切替える</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">サーバは記録を受け取る</text><text x="200" y="169">履歴を分析し担当者へ知らせる</text></g></svg><figcaption>現場の制御と遠隔監視を分けると、通信が切れたときに残る機能を判断できます。</figcaption></figure>
+
+現場で安全を確保しながら、ネットワークへ再接続したときに欠けた測定値を補うよう設計できます。例えば冷却を8℃以上で開始し、6℃以下で止めるとします。一つの境界値だけで切り替える場合と異なり、7.9℃と8.1℃を細かく行き来しても頻繁に切り替わりません。なお、センサーが故障し値が読めないケースは通信断と別です。最後に読めた値を信じ続けず、異常表示や安全側の運用を決めておきます。
+
+<span id="manufacturing-worked-plan"></span>
+
+### 工場が作れる量と、納期に間に合う量を見積もる
+
+組立に1個3分、検査に1個5分かかる工程を考えます。二人が別々に担当し、1時間ずっと各工程を動かせると仮定すると、組立は20個、検査は12個を処理できます。長く動かし続けたときの全体の処理量は、速い組立側ではなく、遅い検査側の1時間当たり12個に制約されます。前工程が20個ずつ作り続けると、検査前に未検査品がたまります。作業を改善するときは、どの工程の能力を上げれば全体が速くなるかを先に調べます。
+
+朝に未検査品が一つもない状態から1時間だけ動かすなら、最初の検査を始められるのは最初の組立が終わる3分後です。残り57分では5分の検査を11個まで終えられます。12個は継続運転での能力であり、起動時の最初の1時間の完了数とは条件が違います。検査を別の人も行えるようにする案では、標準手順、計測機器の台数、判定の一致を確かめます。人員を足しても、測定器が一台のままなら同時に二件を処理できない場合があります。
+
+出題範囲の参照：[IPA ITパスポート試験シラバス Ver.6.5（本文19〜21ページ）](https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf)。

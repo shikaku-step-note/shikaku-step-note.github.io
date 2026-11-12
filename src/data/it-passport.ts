@@ -3,6 +3,10 @@ import mock from './ip-mock.json';
 import mock02 from './ip-mock-02.json';
 import applied from './ip-applied.json';
 import appliedReview from './ip-applied-review.json';
+import { ipCaseMaterials, ipCaseQuestions } from './ip-integrated-cases';
+import strategyDepth from './ip-depth-strategy.json';
+import managementDepth from './ip-depth-management.json';
+import technologyDepth from './ip-depth-technology.json';
 import type { Assessment, Field, Question } from '../lib/assessment';
 export const ipVersion = '2026-10-v1';
 export const ipReviewed = '2026-10-25';
@@ -166,6 +170,7 @@ export const ipSources = [
 ];
 export const ipSource = (id: string) => ipSources.find((s) => s.id === id)!;
 const appliedBank = applied as Record<string, Question[]>;
+export const ipDepthBank = { ...strategyDepth, ...managementDepth, ...technologyDepth } as Record<string, Question[]>;
 export const questionBank = bank as Record<string, { lesson: Question[]; review: Question[] }>;
 export const mockQuestions = mock as Question[];
 type LessonLike = {
@@ -205,12 +210,16 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
       `${l.data.stableId}-check`,
       `${l.data.title}：理解度チェック`,
       'lesson',
-      [...questionBank[l.data.stableId]!.lesson, ...(appliedBank[l.data.stableId] ?? [])],
+      [...(questionBank[l.data.stableId]?.lesson ?? []), ...(appliedBank[l.data.stableId] ?? []), ...(ipDepthBank[l.data.stableId] ?? [])],
       l.data.unit,
     ),
   );
   for (const assessment of result) {
-    if (assessment.questions.some((question) => question.input === 'number' || question.input === 'text')) assessment.version = '2026-11-applied-v1';
+    if (ipDepthBank[assessment.id.slice(0, -'-check'.length)]?.length) {
+      assessment.version = '2026-11-depth-v1';
+    } else if (assessment.questions.some((question) => question.input === 'number' || question.input === 'text')) {
+      assessment.version = '2026-11-applied-v1';
+    }
   }
   const glossaries: Question[] = [];
   const reviews: Question[] = [];
@@ -245,7 +254,7 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
         field: u.field,
       };
     });
-    const review = members.flatMap((l) => questionBank[l.data.stableId]!.review);
+    const review = members.flatMap((l) => questionBank[l.data.stableId]?.review ?? []);
     result.push(make(`ip-unit-${u.id}-glossary`, `${u.name}：用語確認テスト`, 'glossary', questions, u.id));
     result.push(make(`ip-unit-${u.id}-review`, `${u.name}：ユニット総合確認`, 'review', review, u.id));
     glossaries.push(...questions);
@@ -254,9 +263,14 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
   result.push(make('ip-glossary-all', 'ITパスポート：用語の総復習', 'glossary', glossaries));
   result.push({ ...make('ip-applied-review', 'ITパスポート：23ユニットの入力式総復習', 'review', appliedReview as Question[]), version: '2026-11-applied-review-v1' });
   result.push(make('ip-review-all', 'ITパスポート：3分野の総復習', 'review', reviews));
+  result.push({
+    ...make('ip-integrated-cases', 'ITパスポート：資料を読む3分野のケース演習', 'review', ipCaseQuestions),
+    materials: ipCaseMaterials,
+    version: '2026-11-cases-v1',
+  });
   result.push(
     make('ip-mock-01', 'ITパスポート：120分・100問の模擬試験', 'mock', mockQuestions, undefined, 120),
-    { ...make('ip-mock-02', 'ITパスポート：120分・100問の模擬試験 第2回', 'mock', mock02 as Question[], undefined, 120), version: '2026-11-mock-02-v1' },
+    { ...make('ip-mock-02', 'ITパスポート：120分・100問の模擬試験 第2回', 'mock', mock02 as Question[], undefined, 120), version: '2026-11-mock-02-v2' },
   );
   return result;
 }

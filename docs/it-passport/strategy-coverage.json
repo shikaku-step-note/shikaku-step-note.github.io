@@ -1,0 +1,475 @@
+{
+  "syllabus": "6.5",
+  "reviewed": "2026-11-12",
+  "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+  "status": "Numbered syllabus evidence; partial remains explicit. This audit does not count every IPA example term as verified.",
+  "rows": [
+    {
+      "number": 1,
+      "page": "4–5",
+      "competency": "組織別の責任、PDCA・OODA、BCP/BCM、研修と監督",
+      "lesson": "ip-organization",
+      "anchor": "depth-organization",
+      "additionalAnchor": "governance-and-ooda",
+      "practiceIds": [
+        "ip-organization-depth-1",
+        "ip-organization-depth-2",
+        "ip-organization-depth-3",
+        "ip-organization-depth-4",
+        "ip-organization-depth-5"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "社会のデジタル化に関する事例と人的資本の評価は補足が可能。"
+    },
+    {
+      "number": 2,
+      "page": "5–7",
+      "competency": "管理図、比較の分母、無作為化、仮説検定の計算",
+      "lesson": "ip-analysis",
+      "anchor": "depth-analysis",
+      "additionalAnchor": "hypothesis-experiment",
+      "practiceIds": [
+        "ip-analysis-depth-1",
+        "ip-analysis-depth-2",
+        "ip-analysis-depth-3",
+        "ip-analysis-depth-4",
+        "ip-analysis-depth-5",
+        "ip-analysis-depth-6"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "標本設計、管理図ごとの限界設定、業務分析図の作図は補足が可能。"
+    },
+    {
+      "number": 3,
+      "page": "7–8",
+      "competency": "掛売りを含む財務三表の読み分け、製品構成と損益分岐点",
+      "lesson": "ip-finance",
+      "anchor": "depth-finance",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-finance-depth-1",
+        "ip-finance-depth-2",
+        "ip-finance-depth-3"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "税の制度ごとの細かな適用事例は補足が可能。"
+    },
+    {
+      "number": 4,
+      "page": "9",
+      "competency": "権利の保護対象、ソフトの許諾範囲、営業秘密の要件",
+      "lesson": "ip-rights",
+      "anchor": "depth-rights",
+      "additionalAnchor": "trade-secret-case",
+      "practiceIds": [
+        "ip-rights-depth-1",
+        "ip-rights-depth-2",
+        "ip-rights-depth-3",
+        "ip-rights-depth-4"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "個々の登録要件、著作権法の権利制限すべて、その他の権利の適用事例は対象を限定。"
+    },
+    {
+      "number": 5,
+      "page": "10",
+      "competency": "認証権限、委託の範囲、個人情報、GDPRの適用",
+      "lesson": "ip-law-ethics",
+      "anchor": "depth-law-ethics",
+      "additionalAnchor": "legal-scope-cases",
+      "practiceIds": [
+        "ip-law-ethics-depth-1",
+        "ip-law-ethics-depth-3",
+        "ip-law-ethics-depth-6"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "基本法の主体別責務、メール・不正指令記録等の個別の適用は補足が可能。"
+    },
+    {
+      "number": 6,
+      "page": "11",
+      "competency": "契約形式と指揮命令、36協定、通信販売と返品特約",
+      "lesson": "ip-law-ethics",
+      "anchor": "depth-law-ethics",
+      "additionalAnchor": "legal-scope-cases",
+      "practiceIds": [
+        "ip-law-ethics-depth-2",
+        "ip-law-ethics-depth-4",
+        "ip-law-ethics-depth-5"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "取引規制ごとの適用規模・対象取引、労働制度の個別例外の演習は残る。"
+    },
+    {
+      "number": 7,
+      "page": "12",
+      "competency": "権利侵害の投稿、通報者保護、行政文書の開示、排出事業者責任",
+      "lesson": "ip-law-ethics",
+      "anchor": "legal-scope-cases",
+      "additionalAnchor": "oversight-records-and-disposal",
+      "practiceIds": [
+        "ip-law-ethics-depth-7",
+        "ip-law-ethics-depth-8"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "環境法の制度別の要件、情報流通プラットフォーム対処法の詳しい手続、企業統治の専用設問は補足が可能。"
+    },
+    {
+      "number": 8,
+      "page": "13",
+      "competency": "データの互換性、標準の成立、認証の対象",
+      "lesson": "ip-standards",
+      "anchor": "depth-standards",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-standards-depth-1",
+        "ip-standards-depth-2",
+        "ip-standards-depth-3"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "個々の標準化機関と具体的な識別規格の演習は補足が可能。"
+    },
+    {
+      "number": 9,
+      "page": "14",
+      "competency": "SWOT・VRIO・PPMによる資源配分",
+      "lesson": "ip-strategy",
+      "anchor": "depth-strategy",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-strategy-depth-1"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "経営戦略用語のすべてを個別評価していない。"
+    },
+    {
+      "number": 10,
+      "page": "14–15",
+      "competency": "STP・4P、Web広告、価格戦略、RFMとLTV",
+      "lesson": "ip-marketing",
+      "anchor": "depth-marketing",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-marketing-depth-1",
+        "ip-marketing-depth-2",
+        "ip-marketing-depth-3"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "各媒体にまたがる広告設計の長いケースは補足が可能。"
+    },
+    {
+      "number": 11,
+      "page": "15",
+      "competency": "アンゾフの成長方向、CSF・KPI・KGI・BSC",
+      "lesson": "ip-strategy",
+      "anchor": "depth-strategy",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-strategy-depth-2",
+        "ip-strategy-depth-3"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "複数施策を同時に実施する場合の効果判定は補足が可能。"
+    },
+    {
+      "number": 12,
+      "page": "16",
+      "competency": "CRM・SFA・SCM・ERP・知識共有を業務から選ぶ",
+      "lesson": "ip-marketing",
+      "anchor": "depth-marketing",
+      "additionalAnchor": "systems-worked-diagnosis",
+      "practiceIds": [
+        "ip-marketing-depth-4",
+        "ip-marketing-depth-5"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "ERPの実装方式と知識の共有に焦点を当てた独立演習は補足が可能。"
+    },
+    {
+      "number": 13,
+      "page": "17",
+      "competency": "技術開発の段階、ロードマップ、共同研究、概念実証",
+      "lesson": "ip-tech-business",
+      "anchor": "depth-tech-business",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-tech-business-depth-1",
+        "ip-tech-business-depth-2"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "開発リスクの資金調達等は補足が可能。"
+    },
+    {
+      "number": 14,
+      "page": "18–19",
+      "competency": "事業別・行政システム、AIとRPA、基礎データの整備",
+      "lesson": "ip-tech-business",
+      "anchor": "depth-tech-business",
+      "additionalAnchor": "public-system-application",
+      "practiceIds": [
+        "ip-tech-business-depth-3",
+        "ip-tech-business-depth-4"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "行政の制度、AIの原則ごとの事例は個別には確認していない。"
+    },
+    {
+      "number": 15,
+      "page": "19",
+      "competency": "CAD・CAM・CAE、コンカレント、工程能力と仕掛品",
+      "lesson": "ip-engineering-iot",
+      "anchor": "depth-engineering-iot",
+      "additionalAnchor": "manufacturing-worked-plan",
+      "practiceIds": [
+        "ip-engineering-iot-depth-1",
+        "ip-engineering-iot-depth-4"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "設備・物流の用語例ごとの応用問題は補足が可能。"
+    },
+    {
+      "number": 16,
+      "page": "20",
+      "competency": "取引当事者、注文と決済の状態、広告指標、本人確認",
+      "lesson": "ip-ecommerce",
+      "anchor": "depth-ecommerce",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-ecommerce-depth-1",
+        "ip-ecommerce-depth-2",
+        "ip-ecommerce-depth-3"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "金融サービスの例、取引監視の個別論点は補足が可能。"
+    },
+    {
+      "number": 17,
+      "page": "20–21",
+      "competency": "センサーと現場制御、ネットワーク、異常時の動作",
+      "lesson": "ip-engineering-iot",
+      "anchor": "depth-engineering-iot",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-engineering-iot-depth-2",
+        "ip-engineering-iot-depth-3"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "機器の視覚的識別、代表的な製品の例は補足が可能。"
+    },
+    {
+      "number": 18,
+      "page": "22",
+      "competency": "SoR・SoE・EA、記録の正本と更新責任",
+      "lesson": "ip-system-strategy",
+      "anchor": "depth-system-strategy",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-system-strategy-depth-3"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "戦略目標から部門ごとの案件を選ぶ長いケースは補足が可能。"
+    },
+    {
+      "number": 19,
+      "page": "22–23",
+      "competency": "BPMN・DFD・E-R図の目的、二重入力、BPR・BPM・RPA",
+      "lesson": "ip-system-strategy",
+      "anchor": "depth-system-strategy",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-system-strategy-depth-1"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "図の作成、グループウェアやBYODの適用例は補足が可能。"
+    },
+    {
+      "number": 20,
+      "page": "23–24",
+      "competency": "SaaSを費用と利用・終了条件から評価",
+      "lesson": "ip-system-strategy",
+      "anchor": "depth-system-strategy",
+      "additionalAnchor": null,
+      "practiceIds": [
+        "ip-system-strategy-depth-2"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "SIなど提供方式別の独立した評価は補足が可能。"
+    },
+    {
+      "number": 21,
+      "page": "24",
+      "competency": "導入後の利用率、作業時間、支援と代替経路",
+      "lesson": "ip-system-strategy",
+      "anchor": "depth-system-strategy",
+      "additionalAnchor": "adoption-measure-case",
+      "practiceIds": [
+        "ip-system-strategy-depth-4"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "調査設計とライフサイクル全体の効果評価は補足が可能。"
+    },
+    {
+      "number": 22,
+      "page": "25",
+      "competency": "システム化計画の対象、体制、費用、リスク",
+      "lesson": "ip-procurement",
+      "anchor": "depth-procurement",
+      "additionalAnchor": "procurement-document-case",
+      "practiceIds": [
+        "ip-procurement-depth-1",
+        "ip-procurement-depth-4"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "移行計画と責任分担の長いケースは補足が可能。"
+    },
+    {
+      "number": 23,
+      "page": "25",
+      "competency": "業務要求、性能条件、例外、受入条件への変換",
+      "lesson": "ip-procurement",
+      "anchor": "depth-procurement",
+      "additionalAnchor": "procurement-document-case",
+      "practiceIds": [
+        "ip-procurement-depth-2",
+        "ip-procurement-depth-5"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "要件変更に応じた合意形成の演習は補足が可能。"
+    },
+    {
+      "number": 24,
+      "page": "25",
+      "competency": "RFI・RFP、複数年費用、必須条件による選定と試験",
+      "lesson": "ip-procurement",
+      "anchor": "depth-procurement",
+      "additionalAnchor": "procurement-document-case",
+      "practiceIds": [
+        "ip-procurement-depth-3",
+        "ip-procurement-depth-4",
+        "ip-procurement-depth-5"
+      ],
+      "teaching": "partial",
+      "workedApplication": "present",
+      "independentPractice": "present",
+      "assessment": "lesson-check",
+      "factualReview": "author review; selected primary sources",
+      "japaneseReview": "author review",
+      "gap": "グリーン調達、データ契約の具体的な選定項目は補足が可能。"
+    }
+  ]
+}

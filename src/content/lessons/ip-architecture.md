@@ -52,3 +52,17 @@ MTBFは平均故障間隔、MTTRは平均修復時間です。稼働率＝MTBF÷
 MTBFを198時間、MTTRを2時間と置けば、単純モデルの稼働率は198÷200＝0.99です。故障間隔が変わらず復旧時間を1時間へ縮めると割合が上がります。性能評価でも、応答時間は一件が終わるまでの時間、スループットは単位時間に処理する量なので、比較の指標を先に決めます。
 
 <details><summary>予備機があれば、共通電源が止まっても動く？</summary><p>両方が同じ電源に依存するなら止まり得ます。冗長化は共通の故障原因も確認します。</p></details>
+
+## 直列と冗長を、停止条件から見分ける
+
+受付サービスは入力用Aと記録用Bがともに動かなければ使えず、稼働率がAは0.98、Bは0.95です。故障が独立すると仮定すれば、両方が動く確率を掛けて0.98×0.95＝0.931、93.1％です。Bを同じ性能の2台で冗長化し、どちらか1台で記録できるなら、Bが止まるのは2台とも止まるときです。B全体の稼働率は1−(1−0.95)²＝0.9975。Aが直列に残るので全体は0.98×0.9975＝0.97755です。Bだけ改善しても、全体がA単体の0.98を超えないことを確認できます。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="受付が使える：Aと記録系Bが稼働、Aの稼働率：0.98、Bは2台のどちらかが動けばよい、全体＝0.98 × (1−0.05²)"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">受付が使える：Aと記録系Bが稼働</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">Aの稼働率：0.98</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">Bは2台のどちらかが動けばよい</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">全体＝0.98 × (1−0.05²)</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>AとBの間は直列、Bの内部は冗長です。同じ電源などの共通原因があれば、独立の仮定を見直します。</figcaption></figure>
+
+<figure><svg viewBox="0 0 360 160" width="360" height="160" style="max-width:100%;height:auto" role="img" aria-label="入力Aの後に記録B1とB2が並列につながり、どちらかの記録装置の稼働で受付が完了する"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M18 80h35m60 0h30V40h33m-33 40v40h33m67-80h42v40h42m-84 40h42V80m34-5 8 5-8 5"/><rect x="53" y="59" width="60" height="42" rx="6"/><rect x="176" y="19" width="67" height="42" rx="6"/><rect x="176" y="99" width="67" height="42" rx="6"/></g><g fill="currentColor" font-size="14" text-anchor="middle"><text x="83" y="86">入力A</text><text x="210" y="46">記録B1</text><text x="210" y="126">記録B2</text></g></svg><figcaption>受付には入力Aが必要です。記録はB1、B2のどちらかが動いていれば続けられます。</figcaption></figure>
+
+## 速さ・処理量・復旧を別々に測る
+
+1分に600件処理できても、1件の応答に5秒かかることがあります。600件/分は処理量を表すスループットで、5秒は個々の応答時間です。画面を早く表示したい利用者と、多数の申請を処理したい運用者では見る指標が異なります。負荷の条件をそろえず比較すると、改善した理由を特定できません。
+
+平均故障間隔MTBFが90時間、平均修復時間MTTRが10時間とし、動作と修理を繰り返す単純なモデルなら稼働率は90/(90＋10)＝90％です。故障回数をすぐには減らせなくても、交換手順を整えて修理を5時間に短縮すれば90/95になります。修復時間を分母から引くと、1を超えるなど不自然な結果になることがあります。単位と範囲で検算します。

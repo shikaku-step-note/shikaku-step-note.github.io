@@ -1,0 +1,2519 @@
+{
+  "syllabus": {
+    "id": "syllabus",
+    "title": "IPA：ITパスポート試験 シラバス Ver.6.5",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+    "version": "2026年1月版・現行範囲",
+    "verified": "2026-11-12"
+  },
+  "explanation": "Item-level cross-reference. Field review records contain the subskill evidence and remaining gaps. A linked lesson and check do not, by themselves, establish complete exam-level coverage.",
+  "fieldReviews": {
+    "strategy": "strategy-coverage.json",
+    "management": "management-depth.json",
+    "technology": "technology-depth.md"
+  },
+  "totals": {
+    "lessons": 37,
+    "units": 23,
+    "officialItems": 63,
+    "addedLessonChecks": 161,
+    "caseQuestions": 12,
+    "mockForms": 2
+  },
+  "items": [
+    {
+      "topic": 1,
+      "title": "経営・組織論",
+      "field": "strategy",
+      "unit": 1,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-organization",
+          "objectives": [
+            "経営資源と組織の役割を説明する",
+            "PDCAとBCPを業務に当てはめる"
+          ],
+          "anchors": [
+            "depth-organization",
+            "governance-and-ooda"
+          ],
+          "teachingSections": [
+            "企業は何のために情報を使うのか",
+            "組織と人を動かす仕組み",
+            "改善と事業継続を分けて考える",
+            "例：問い合わせへの回答を早くする",
+            "まとめ",
+            "ケース：出荷の判断を誰に任せるか",
+            "組織図は「誰の専門性か」と「誰が決めるか」で読む",
+            "人材の育成は、身につけたい能力から選ぶ",
+            "改善と継続は、異なる問いに答える",
+            "情報を使った変革か、作業の置換か",
+            "自分で考える",
+            "権限を置く場所で、業務の速さと責任が変わる",
+            "二つの組織図から、決める人を探す",
+            "改善の数字と事業継続の判断を分ける",
+            "短い周期で判断する仕事と、改善結果を検証する仕事"
+          ],
+          "assessment": "ip-organization-check",
+          "assessedPractice": [
+            "ip-organization-depth-1",
+            "ip-organization-depth-2",
+            "ip-organization-depth-3",
+            "ip-organization-depth-4",
+            "ip-organization-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 2,
+      "title": "業務分析・データ利活用",
+      "field": "strategy",
+      "unit": 1,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-analysis",
+          "objectives": [
+            "分析の目的に合う図を選ぶ",
+            "相関と因果を区別する"
+          ],
+          "anchors": [
+            "depth-analysis",
+            "hypothesis-experiment",
+            "process-variation-case"
+          ],
+          "teachingSections": [
+            "問いを決めてからデータを集める",
+            "図は目的に合わせて選ぶ",
+            "例：苦情100件を分類する",
+            "相関をそのまま原因にしない",
+            "まとめ",
+            "ケース：問い合わせの増加をデータから調べる",
+            "集計の前に、データをそろえる",
+            "パレート図で調べる順番を決める",
+            "見せ方と比較条件を疑う",
+            "数理モデルは条件を明示して使う",
+            "原因候補を分け、次に確かめることを決める",
+            "自分で考える",
+            "ばらつき、標本の偏り、改善効果を切り分ける",
+            "管理限界を越えたとき、製品の合否と工程の異常を分ける",
+            "前後比較と比較実験では、答えられる問いが違う",
+            "手で確かめる検定の考え方",
+            "件数の違う工程を比較する"
+          ],
+          "assessment": "ip-analysis-check",
+          "assessedPractice": [
+            "ip-analysis-depth-1",
+            "ip-analysis-depth-2",
+            "ip-analysis-depth-3",
+            "ip-analysis-depth-4",
+            "ip-analysis-depth-5",
+            "ip-analysis-depth-6"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 3,
+      "title": "会計・財務",
+      "field": "strategy",
+      "unit": 1,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-finance",
+          "objectives": [
+            "財務三表の役割を区別する",
+            "利益と損益分岐点を計算する"
+          ],
+          "anchors": [
+            "depth-finance"
+          ],
+          "teachingSections": [
+            "財務三表は何を示すのか",
+            "費用を固定費と変動費に分ける",
+            "例：小さな教材店",
+            "投資を比べる指標",
+            "まとめ",
+            "売上が増えても現金が足りないのはなぜか",
+            "先に1個当たりの限界利益を求める",
+            "自分で確かめる",
+            "財務指標で「利益」「資金」「効率」を分けて読む",
+            "消費税とインボイスの役割",
+            "売上と利益、手元資金を一つの事例で追う",
+            "掛売りを入れると利益と現金はいつ動くか",
+            "売上構成が変わると損益分岐点も変わる"
+          ],
+          "assessment": "ip-finance-check",
+          "assessedPractice": [
+            "ip-finance-depth-1",
+            "ip-finance-depth-2",
+            "ip-finance-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 4,
+      "title": "知的財産権",
+      "field": "strategy",
+      "unit": 2,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-rights",
+          "objectives": [
+            "保護対象に合う権利を選ぶ",
+            "利用許諾と著作権を区別する"
+          ],
+          "anchors": [
+            "depth-rights",
+            "trade-secret-case"
+          ],
+          "teachingSections": [
+            "アイデアと表現を区別する",
+            "ライセンスは使い方の条件",
+            "例：社内資料へ画像を載せる",
+            "まとめ",
+            "製品公開前に、守るものと借りるものを仕分ける",
+            "画像とコードは利用の段階ごとに確認する",
+            "料金、利用権、秘密管理は別の話",
+            "一つの製品に関わる権利を対象ごとに見分ける",
+            "仕組み、外観、名前、説明文を別々に見る",
+            "社内で買ったソフトを取引先に使わせられるか",
+            "営業秘密と公開された技術を見分ける"
+          ],
+          "assessment": "ip-rights-check",
+          "assessedPractice": [
+            "ip-rights-depth-1",
+            "ip-rights-depth-2",
+            "ip-rights-depth-3",
+            "ip-rights-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 5,
+      "title": "セキュリティ関連法規",
+      "field": "strategy",
+      "unit": 2,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "anchors": [
+            "depth-law-ethics",
+            "legal-scope-cases",
+            "oversight-records-and-disposal"
+          ],
+          "teachingSections": [
+            "安全な利用を支える法律",
+            "個人情報は目的と管理をセットで考える",
+            "雇用と委託の違い",
+            "取引・消費者保護と情報倫理",
+            "例とまとめ",
+            "個人情報を渡す前に、目的と相手の役割を確認する",
+            "雇用・派遣・請負を現場の指示から区別する",
+            "法律の名前から、守ろうとする対象を読む",
+            "誰がどの権限で情報を扱うか、契約名から離れて判断する",
+            "人の属性、アクセス権限、情報の利用目的を順に確認する",
+            "成果の要求と、労働者への作業指示を分ける",
+            "同じWebサービスでも、場面ごとに適用を確認する",
+            "海外の利用者への提供を考えるとき",
+            "公開請求と内部の通報、委託先の処理を区別する"
+          ],
+          "assessment": "ip-law-ethics-check",
+          "assessedPractice": [
+            "ip-law-ethics-depth-1",
+            "ip-law-ethics-depth-2",
+            "ip-law-ethics-depth-3",
+            "ip-law-ethics-depth-4",
+            "ip-law-ethics-depth-5",
+            "ip-law-ethics-depth-6",
+            "ip-law-ethics-depth-7",
+            "ip-law-ethics-depth-8"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 6,
+      "title": "労働関連・取引関連法規",
+      "field": "strategy",
+      "unit": 2,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "anchors": [
+            "depth-law-ethics",
+            "legal-scope-cases",
+            "oversight-records-and-disposal"
+          ],
+          "teachingSections": [
+            "安全な利用を支える法律",
+            "個人情報は目的と管理をセットで考える",
+            "雇用と委託の違い",
+            "取引・消費者保護と情報倫理",
+            "例とまとめ",
+            "個人情報を渡す前に、目的と相手の役割を確認する",
+            "雇用・派遣・請負を現場の指示から区別する",
+            "法律の名前から、守ろうとする対象を読む",
+            "誰がどの権限で情報を扱うか、契約名から離れて判断する",
+            "人の属性、アクセス権限、情報の利用目的を順に確認する",
+            "成果の要求と、労働者への作業指示を分ける",
+            "同じWebサービスでも、場面ごとに適用を確認する",
+            "海外の利用者への提供を考えるとき",
+            "公開請求と内部の通報、委託先の処理を区別する"
+          ],
+          "assessment": "ip-law-ethics-check",
+          "assessedPractice": [
+            "ip-law-ethics-depth-1",
+            "ip-law-ethics-depth-2",
+            "ip-law-ethics-depth-3",
+            "ip-law-ethics-depth-4",
+            "ip-law-ethics-depth-5",
+            "ip-law-ethics-depth-6",
+            "ip-law-ethics-depth-7",
+            "ip-law-ethics-depth-8"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 7,
+      "title": "その他の法律・ガイドライン・情報倫理",
+      "field": "strategy",
+      "unit": 2,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "anchors": [
+            "depth-law-ethics",
+            "legal-scope-cases",
+            "oversight-records-and-disposal"
+          ],
+          "teachingSections": [
+            "安全な利用を支える法律",
+            "個人情報は目的と管理をセットで考える",
+            "雇用と委託の違い",
+            "取引・消費者保護と情報倫理",
+            "例とまとめ",
+            "個人情報を渡す前に、目的と相手の役割を確認する",
+            "雇用・派遣・請負を現場の指示から区別する",
+            "法律の名前から、守ろうとする対象を読む",
+            "誰がどの権限で情報を扱うか、契約名から離れて判断する",
+            "人の属性、アクセス権限、情報の利用目的を順に確認する",
+            "成果の要求と、労働者への作業指示を分ける",
+            "同じWebサービスでも、場面ごとに適用を確認する",
+            "海外の利用者への提供を考えるとき",
+            "公開請求と内部の通報、委託先の処理を区別する"
+          ],
+          "assessment": "ip-law-ethics-check",
+          "assessedPractice": [
+            "ip-law-ethics-depth-1",
+            "ip-law-ethics-depth-2",
+            "ip-law-ethics-depth-3",
+            "ip-law-ethics-depth-4",
+            "ip-law-ethics-depth-5",
+            "ip-law-ethics-depth-6",
+            "ip-law-ethics-depth-7",
+            "ip-law-ethics-depth-8"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 8,
+      "title": "標準化関連",
+      "field": "strategy",
+      "unit": 2,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-standards",
+          "objectives": [
+            "公的標準と事実上の標準を区別する",
+            "標準化の効果と限界を説明する"
+          ],
+          "anchors": [
+            "depth-standards"
+          ],
+          "teachingSections": [
+            "標準が必要な理由",
+            "標準の作られ方",
+            "識別と交換のルール",
+            "例：二つの会社で在庫を連携する",
+            "まとめ",
+            "同じCSVなのに連携が失敗する理由",
+            "標準の作り方と、認証の対象を区別する",
+            "国や地域をまたいでも意味が通る設計にする",
+            "接続できる条件を、規格と受入試験に落とし込む",
+            "共通規格があっても、互換性を確認する",
+            "規格の策定と、適合性を評価する活動を区別する"
+          ],
+          "assessment": "ip-standards-check",
+          "assessedPractice": [
+            "ip-standards-depth-1",
+            "ip-standards-depth-2",
+            "ip-standards-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 9,
+      "title": "経営戦略手法",
+      "field": "strategy",
+      "unit": 3,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-strategy",
+          "objectives": [
+            "戦略分析の軸を使い分ける",
+            "KGIとKPIを結び付ける"
+          ],
+          "anchors": [
+            "depth-strategy"
+          ],
+          "teachingSections": [
+            "環境と自社を分けて分析する",
+            "事業の成長と資源配分",
+            "目標を測れる形にする",
+            "例：予約サービスを改善する",
+            "まとめ",
+            "成長市場でも投資を決める前に何を見るか",
+            "成長性、資源、目標を別々に評価して投資を選ぶ",
+            "外部の変化を、自社の能力と組み合わせて読む",
+            "成長率とシェアの位置から、資金の使い方を考える",
+            "目標と中間指標を、一つの因果の流れで設計する"
+          ],
+          "assessment": "ip-strategy-check",
+          "assessedPractice": [
+            "ip-strategy-depth-1",
+            "ip-strategy-depth-2",
+            "ip-strategy-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 10,
+      "title": "マーケティング",
+      "field": "strategy",
+      "unit": 3,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-marketing",
+          "objectives": [
+            "STPと4Pを使って施策を整理する",
+            "ERP・SCM・CRMの役割を区別する"
+          ],
+          "anchors": [
+            "depth-marketing",
+            "systems-worked-diagnosis"
+          ],
+          "teachingSections": [
+            "顧客を理解し、届け方を決める",
+            "データで関係を継続する",
+            "全社と供給網の情報をつなぐ",
+            "例：欠品の多い店舗",
+            "まとめ",
+            "顧客像を施策と測定までつなぐ",
+            "価格と販促を選び、販売後のデータで確かめる",
+            "商品を買う人の条件が変わると、最適な施策も変わる",
+            "購入回数の多さだけで顧客の次の行動を決めない",
+            "似た症状を、情報を使う範囲から診断する"
+          ],
+          "assessment": "ip-marketing-check",
+          "assessedPractice": [
+            "ip-marketing-depth-1",
+            "ip-marketing-depth-2",
+            "ip-marketing-depth-3",
+            "ip-marketing-depth-4",
+            "ip-marketing-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 11,
+      "title": "ビジネス戦略と目標・評価",
+      "field": "strategy",
+      "unit": 3,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-strategy",
+          "objectives": [
+            "戦略分析の軸を使い分ける",
+            "KGIとKPIを結び付ける"
+          ],
+          "anchors": [
+            "depth-strategy"
+          ],
+          "teachingSections": [
+            "環境と自社を分けて分析する",
+            "事業の成長と資源配分",
+            "目標を測れる形にする",
+            "例：予約サービスを改善する",
+            "まとめ",
+            "成長市場でも投資を決める前に何を見るか",
+            "成長性、資源、目標を別々に評価して投資を選ぶ",
+            "外部の変化を、自社の能力と組み合わせて読む",
+            "成長率とシェアの位置から、資金の使い方を考える",
+            "目標と中間指標を、一つの因果の流れで設計する"
+          ],
+          "assessment": "ip-strategy-check",
+          "assessedPractice": [
+            "ip-strategy-depth-1",
+            "ip-strategy-depth-2",
+            "ip-strategy-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 12,
+      "title": "経営管理システム",
+      "field": "strategy",
+      "unit": 3,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-marketing",
+          "objectives": [
+            "STPと4Pを使って施策を整理する",
+            "ERP・SCM・CRMの役割を区別する"
+          ],
+          "anchors": [
+            "depth-marketing",
+            "systems-worked-diagnosis"
+          ],
+          "teachingSections": [
+            "顧客を理解し、届け方を決める",
+            "データで関係を継続する",
+            "全社と供給網の情報をつなぐ",
+            "例：欠品の多い店舗",
+            "まとめ",
+            "顧客像を施策と測定までつなぐ",
+            "価格と販促を選び、販売後のデータで確かめる",
+            "商品を買う人の条件が変わると、最適な施策も変わる",
+            "購入回数の多さだけで顧客の次の行動を決めない",
+            "似た症状を、情報を使う範囲から診断する"
+          ],
+          "assessment": "ip-marketing-check",
+          "assessedPractice": [
+            "ip-marketing-depth-1",
+            "ip-marketing-depth-2",
+            "ip-marketing-depth-3",
+            "ip-marketing-depth-4",
+            "ip-marketing-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 13,
+      "title": "技術開発戦略の立案・技術開発計画",
+      "field": "strategy",
+      "unit": 4,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-tech-business",
+          "objectives": [
+            "技術ロードマップと研究開発を説明する",
+            "事業に合うシステムの役割を選ぶ"
+          ],
+          "anchors": [
+            "depth-tech-business",
+            "public-system-application"
+          ],
+          "teachingSections": [
+            "技術を事業の目的につなぐ",
+            "新しい技術をどう生かすか",
+            "分野別の業務システム",
+            "例：画像検査の導入",
+            "まとめ",
+            "研究成果を商品化する判断",
+            "実証で確かめることと、事業で成立する条件を分ける",
+            "技術の成熟と、利用者に届ける仕組みを同じ計画に載せる",
+            "自社で開発する範囲と、外部と協力する範囲を決める",
+            "部門ごとに同じ住所を入力する問題を解く"
+          ],
+          "assessment": "ip-tech-business-check",
+          "assessedPractice": [
+            "ip-tech-business-depth-1",
+            "ip-tech-business-depth-2",
+            "ip-tech-business-depth-3",
+            "ip-tech-business-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 14,
+      "title": "ビジネスシステム",
+      "field": "strategy",
+      "unit": 5,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-tech-business",
+          "objectives": [
+            "技術ロードマップと研究開発を説明する",
+            "事業に合うシステムの役割を選ぶ"
+          ],
+          "anchors": [
+            "depth-tech-business",
+            "public-system-application"
+          ],
+          "teachingSections": [
+            "技術を事業の目的につなぐ",
+            "新しい技術をどう生かすか",
+            "分野別の業務システム",
+            "例：画像検査の導入",
+            "まとめ",
+            "研究成果を商品化する判断",
+            "実証で確かめることと、事業で成立する条件を分ける",
+            "技術の成熟と、利用者に届ける仕組みを同じ計画に載せる",
+            "自社で開発する範囲と、外部と協力する範囲を決める",
+            "部門ごとに同じ住所を入力する問題を解く"
+          ],
+          "assessment": "ip-tech-business-check",
+          "assessedPractice": [
+            "ip-tech-business-depth-1",
+            "ip-tech-business-depth-2",
+            "ip-tech-business-depth-3",
+            "ip-tech-business-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 15,
+      "title": "エンジニアリングシステム",
+      "field": "strategy",
+      "unit": 5,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-engineering-iot",
+          "objectives": [
+            "設計と生産を支えるシステムを区別する",
+            "IoTの計測・通信・制御を説明する"
+          ],
+          "anchors": [
+            "depth-engineering-iot",
+            "manufacturing-worked-plan"
+          ],
+          "teachingSections": [
+            "設計から製造までをつなぐ",
+            "IoTは物と情報を結ぶ",
+            "現実の設備とモデル",
+            "例：温室の温度管理",
+            "まとめ",
+            "設計データが現場の制御になるまで",
+            "設計値と実測値をつなぎ、止まる条件を考える",
+            "設計、製造、検査で扱う情報を見分ける",
+            "IoTの通信が止まっても安全を保つ",
+            "工場が作れる量と、納期に間に合う量を見積もる"
+          ],
+          "assessment": "ip-engineering-iot-check",
+          "assessedPractice": [
+            "ip-engineering-iot-depth-1",
+            "ip-engineering-iot-depth-2",
+            "ip-engineering-iot-depth-3",
+            "ip-engineering-iot-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 16,
+      "title": "e-ビジネス",
+      "field": "strategy",
+      "unit": 5,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-ecommerce",
+          "objectives": [
+            "取引の組合せと事業モデルを区別する",
+            "電子商取引の指標を計算する"
+          ],
+          "anchors": [
+            "depth-ecommerce"
+          ],
+          "teachingSections": [
+            "誰と誰が取引するか",
+            "収益の仕組みを比較する",
+            "広告と購入の指標",
+            "例：広告の効果を確認する",
+            "まとめ",
+            "注文、決済、出荷を分けて記録する",
+            "注文から入金までの状態と責任を追う",
+            "販売の場、支払の受付、商品の引渡しを分ける",
+            "便利な本人確認と、必要以上に集めない設計を両立する"
+          ],
+          "assessment": "ip-ecommerce-check",
+          "assessedPractice": [
+            "ip-ecommerce-depth-1",
+            "ip-ecommerce-depth-2",
+            "ip-ecommerce-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 17,
+      "title": "IoTシステム・組込みシステム",
+      "field": "strategy",
+      "unit": 5,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-engineering-iot",
+          "objectives": [
+            "設計と生産を支えるシステムを区別する",
+            "IoTの計測・通信・制御を説明する"
+          ],
+          "anchors": [
+            "depth-engineering-iot",
+            "manufacturing-worked-plan"
+          ],
+          "teachingSections": [
+            "設計から製造までをつなぐ",
+            "IoTは物と情報を結ぶ",
+            "現実の設備とモデル",
+            "例：温室の温度管理",
+            "まとめ",
+            "設計データが現場の制御になるまで",
+            "設計値と実測値をつなぎ、止まる条件を考える",
+            "設計、製造、検査で扱う情報を見分ける",
+            "IoTの通信が止まっても安全を保つ",
+            "工場が作れる量と、納期に間に合う量を見積もる"
+          ],
+          "assessment": "ip-engineering-iot-check",
+          "assessedPractice": [
+            "ip-engineering-iot-depth-1",
+            "ip-engineering-iot-depth-2",
+            "ip-engineering-iot-depth-3",
+            "ip-engineering-iot-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 18,
+      "title": "情報システム戦略",
+      "field": "strategy",
+      "unit": 6,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "anchors": [
+            "depth-system-strategy",
+            "adoption-measure-case"
+          ],
+          "teachingSections": [
+            "経営とシステムの方向を合わせる",
+            "業務そのものを見直す",
+            "サービスとしてITを使う",
+            "導入後の活用と評価",
+            "例とまとめ",
+            "業務の目的からシステムの役割を決める",
+            "受付から記録までを描き、システム化の価値を測る",
+            "見えている症状から、変えるべき業務を探す",
+            "正本を決めてから、使いやすい接点を追加する",
+            "導入効果を測るとき、使わなかった人も分母に入れる"
+          ],
+          "assessment": "ip-system-strategy-check",
+          "assessedPractice": [
+            "ip-system-strategy-depth-1",
+            "ip-system-strategy-depth-2",
+            "ip-system-strategy-depth-3",
+            "ip-system-strategy-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 19,
+      "title": "業務プロセス",
+      "field": "strategy",
+      "unit": 6,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "anchors": [
+            "depth-system-strategy",
+            "adoption-measure-case"
+          ],
+          "teachingSections": [
+            "経営とシステムの方向を合わせる",
+            "業務そのものを見直す",
+            "サービスとしてITを使う",
+            "導入後の活用と評価",
+            "例とまとめ",
+            "業務の目的からシステムの役割を決める",
+            "受付から記録までを描き、システム化の価値を測る",
+            "見えている症状から、変えるべき業務を探す",
+            "正本を決めてから、使いやすい接点を追加する",
+            "導入効果を測るとき、使わなかった人も分母に入れる"
+          ],
+          "assessment": "ip-system-strategy-check",
+          "assessedPractice": [
+            "ip-system-strategy-depth-1",
+            "ip-system-strategy-depth-2",
+            "ip-system-strategy-depth-3",
+            "ip-system-strategy-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 20,
+      "title": "ソリューションビジネス",
+      "field": "strategy",
+      "unit": 6,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "anchors": [
+            "depth-system-strategy",
+            "adoption-measure-case"
+          ],
+          "teachingSections": [
+            "経営とシステムの方向を合わせる",
+            "業務そのものを見直す",
+            "サービスとしてITを使う",
+            "導入後の活用と評価",
+            "例とまとめ",
+            "業務の目的からシステムの役割を決める",
+            "受付から記録までを描き、システム化の価値を測る",
+            "見えている症状から、変えるべき業務を探す",
+            "正本を決めてから、使いやすい接点を追加する",
+            "導入効果を測るとき、使わなかった人も分母に入れる"
+          ],
+          "assessment": "ip-system-strategy-check",
+          "assessedPractice": [
+            "ip-system-strategy-depth-1",
+            "ip-system-strategy-depth-2",
+            "ip-system-strategy-depth-3",
+            "ip-system-strategy-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 21,
+      "title": "システム活用促進・評価",
+      "field": "strategy",
+      "unit": 6,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "anchors": [
+            "depth-system-strategy",
+            "adoption-measure-case"
+          ],
+          "teachingSections": [
+            "経営とシステムの方向を合わせる",
+            "業務そのものを見直す",
+            "サービスとしてITを使う",
+            "導入後の活用と評価",
+            "例とまとめ",
+            "業務の目的からシステムの役割を決める",
+            "受付から記録までを描き、システム化の価値を測る",
+            "見えている症状から、変えるべき業務を探す",
+            "正本を決めてから、使いやすい接点を追加する",
+            "導入効果を測るとき、使わなかった人も分母に入れる"
+          ],
+          "assessment": "ip-system-strategy-check",
+          "assessedPractice": [
+            "ip-system-strategy-depth-1",
+            "ip-system-strategy-depth-2",
+            "ip-system-strategy-depth-3",
+            "ip-system-strategy-depth-4"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 22,
+      "title": "システム化計画",
+      "field": "strategy",
+      "unit": 7,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "anchors": [
+            "depth-procurement",
+            "procurement-document-case"
+          ],
+          "teachingSections": [
+            "実現したいことを先に決める",
+            "要件を具体化する",
+            "調達の流れ",
+            "例：予約システムの要件",
+            "まとめ",
+            "要求を受入条件に変える",
+            "三つの資料を照合し、提案の良し悪しを決める",
+            "現状メモを、測れる要求と制約に変える",
+            "初期費用が安い提案をそのまま採用しない",
+            "総合演習：開館時の混雑対策を、要求書・見積り・試験記録から決める"
+          ],
+          "assessment": "ip-procurement-check",
+          "assessedPractice": [
+            "ip-procurement-depth-1",
+            "ip-procurement-depth-2",
+            "ip-procurement-depth-3",
+            "ip-procurement-depth-4",
+            "ip-procurement-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 23,
+      "title": "要件定義",
+      "field": "strategy",
+      "unit": 7,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "anchors": [
+            "depth-procurement",
+            "procurement-document-case"
+          ],
+          "teachingSections": [
+            "実現したいことを先に決める",
+            "要件を具体化する",
+            "調達の流れ",
+            "例：予約システムの要件",
+            "まとめ",
+            "要求を受入条件に変える",
+            "三つの資料を照合し、提案の良し悪しを決める",
+            "現状メモを、測れる要求と制約に変える",
+            "初期費用が安い提案をそのまま採用しない",
+            "総合演習：開館時の混雑対策を、要求書・見積り・試験記録から決める"
+          ],
+          "assessment": "ip-procurement-check",
+          "assessedPractice": [
+            "ip-procurement-depth-1",
+            "ip-procurement-depth-2",
+            "ip-procurement-depth-3",
+            "ip-procurement-depth-4",
+            "ip-procurement-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 24,
+      "title": "調達計画・実施",
+      "field": "strategy",
+      "unit": 7,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "anchors": [
+            "depth-procurement",
+            "procurement-document-case"
+          ],
+          "teachingSections": [
+            "実現したいことを先に決める",
+            "要件を具体化する",
+            "調達の流れ",
+            "例：予約システムの要件",
+            "まとめ",
+            "要求を受入条件に変える",
+            "三つの資料を照合し、提案の良し悪しを決める",
+            "現状メモを、測れる要求と制約に変える",
+            "初期費用が安い提案をそのまま採用しない",
+            "総合演習：開館時の混雑対策を、要求書・見積り・試験記録から決める"
+          ],
+          "assessment": "ip-procurement-check",
+          "assessedPractice": [
+            "ip-procurement-depth-1",
+            "ip-procurement-depth-2",
+            "ip-procurement-depth-3",
+            "ip-procurement-depth-4",
+            "ip-procurement-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 25,
+      "title": "システム開発技術",
+      "field": "management",
+      "unit": 8,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-development",
+          "objectives": [
+            "開発工程とテストの目的を区別する",
+            "安全な移行と保守を計画する"
+          ],
+          "anchors": [
+            "depth-development-requirements",
+            "depth-development-quality",
+            "depth-development-test",
+            "depth-development-estimate",
+            "depth-development-practice"
+          ],
+          "teachingSections": [
+            "要件から実装へ進む",
+            "テストごとの役割",
+            "例：入力できる年齢が18〜65の画面",
+            "移行と保守",
+            "要求をテストできる形にする",
+            "「動く」の中身を四つに分ける",
+            "故障の範囲に合わせてテストを選ぶ",
+            "実績を評価して受入れと移行を決める",
+            "規模、工数、期間を分けて見積もる",
+            "自分で解く：現地発券機の連携",
+            "まとめ",
+            "要求から受入まで、同じ条件を追う"
+          ],
+          "assessment": "ip-development-check",
+          "assessedPractice": [
+            "ip-development-depth-requirements",
+            "ip-development-depth-test-scope",
+            "ip-development-depth-estimate",
+            "ip-development-depth-acceptance",
+            "ip-development-depth-boundary",
+            "ip-development-depth-load",
+            "ip-development-depth-quality",
+            "ip-development-depth-validity"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 26,
+      "title": "開発プロセス・手法",
+      "field": "management",
+      "unit": 9,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-agile",
+          "objectives": [
+            "ウォーターフォールと反復開発を比較する",
+            "アジャイルの役割と継続的な改善を説明する"
+          ],
+          "anchors": [
+            "depth-agile-models",
+            "depth-agile-design",
+            "depth-agile-scrum",
+            "depth-agile-process",
+            "depth-agile-maturity",
+            "depth-agile-practice"
+          ],
+          "teachingSections": [
+            "開発の進め方を選ぶ",
+            "スクラムの基本",
+            "開発と運用をつなぐ",
+            "例：予約画面を小さく改善する",
+            "何がまだ分からないかで開発モデルを選ぶ",
+            "同じ仕事を流れと役割の両方から設計する",
+            "スプリントの結果を次の判断に使う",
+            "手順の合意と、組織の改善を見分ける",
+            "レビューの改善を、組織の成熟度で捉える",
+            "自分で解く：二つの不確実性を切り分ける",
+            "まとめ",
+            "短い反復で、完成品ではなく証拠を増やす"
+          ],
+          "assessment": "ip-agile-check",
+          "assessedPractice": [
+            "ip-agile-depth-method",
+            "ip-agile-depth-risk",
+            "ip-agile-depth-scrum",
+            "ip-agile-depth-framework",
+            "ip-agile-depth-mlops",
+            "ip-agile-depth-use-case",
+            "ip-agile-depth-process",
+            "ip-agile-depth-maturity"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 27,
+      "title": "プロジェクトマネジメント",
+      "field": "management",
+      "unit": 10,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-project",
+          "objectives": [
+            "WBSとスケジュールを関連付ける",
+            "制約とリスクを踏まえて計画する"
+          ],
+          "anchors": [
+            "depth-project-plan",
+            "depth-project-network",
+            "depth-project-control",
+            "depth-project-close",
+            "depth-project-practice"
+          ],
+          "teachingSections": [
+            "プロジェクトの特徴",
+            "依存関係と最短期間",
+            "例：並行作業の期間",
+            "変更とリスクを管理する",
+            "開始前に、何を終えたら成功かを決める",
+            "二つの経路で、何日まで待てるかを計算する",
+            "矢印に日数を書く図も同じ順序で読む",
+            "変更と進捗を、関係者が判断できる形で伝える",
+            "公開後の仕事を引き継ぎ、プロジェクトを終える",
+            "自分で解く：短縮案に効果があるか",
+            "まとめ",
+            "作業表を完成予定日に変える",
+            "合流点では遅い方を待つ",
+            "計画との差を二つの軸で読む",
+            "自分で確かめる"
+          ],
+          "assessment": "ip-project-check",
+          "assessedPractice": [
+            "ip-project-depth-slack",
+            "ip-project-depth-critical-switch",
+            "ip-project-depth-risk",
+            "ip-project-depth-scope",
+            "ip-project-depth-artifacts",
+            "ip-project-depth-closure"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 28,
+      "title": "サービスマネジメント",
+      "field": "management",
+      "unit": 11,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-services",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "anchors": [
+            "depth-services-measures",
+            "depth-services-lifecycle",
+            "depth-services-routing",
+            "depth-services-facilities",
+            "depth-services-practice"
+          ],
+          "teachingSections": [
+            "サービスを継続して届ける",
+            "障害の復旧と原因の除去",
+            "設備と運用の安全",
+            "例：予約システムが停止した",
+            "SLAの目標と、実測する指標を分ける",
+            "一つのサービスを計画から改善まで追う",
+            "問い合わせから復旧、恒久対応まで担当をつなぐ",
+            "障害の規模から、設備対策と継続策を選ぶ",
+            "自分で解く：合意、復旧、変更を分ける",
+            "まとめ",
+            "停止した窓口を戻す仕事と、再発を減らす仕事"
+          ],
+          "assessment": "ip-services-check",
+          "assessedPractice": [
+            "ip-services-depth-availability",
+            "ip-services-depth-indicator",
+            "ip-services-depth-incident",
+            "ip-services-depth-facilities",
+            "ip-services-depth-release",
+            "ip-services-depth-catalog",
+            "ip-services-depth-continuity",
+            "ip-services-depth-lifecycle"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 29,
+      "title": "サービスマネジメントシステム",
+      "field": "management",
+      "unit": 11,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-services",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "anchors": [
+            "depth-services-measures",
+            "depth-services-lifecycle",
+            "depth-services-routing",
+            "depth-services-facilities",
+            "depth-services-practice"
+          ],
+          "teachingSections": [
+            "サービスを継続して届ける",
+            "障害の復旧と原因の除去",
+            "設備と運用の安全",
+            "例：予約システムが停止した",
+            "SLAの目標と、実測する指標を分ける",
+            "一つのサービスを計画から改善まで追う",
+            "問い合わせから復旧、恒久対応まで担当をつなぐ",
+            "障害の規模から、設備対策と継続策を選ぶ",
+            "自分で解く：合意、復旧、変更を分ける",
+            "まとめ",
+            "停止した窓口を戻す仕事と、再発を減らす仕事"
+          ],
+          "assessment": "ip-services-check",
+          "assessedPractice": [
+            "ip-services-depth-availability",
+            "ip-services-depth-indicator",
+            "ip-services-depth-incident",
+            "ip-services-depth-facilities",
+            "ip-services-depth-release",
+            "ip-services-depth-catalog",
+            "ip-services-depth-continuity",
+            "ip-services-depth-lifecycle"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 30,
+      "title": "ファシリティマネジメント",
+      "field": "management",
+      "unit": 11,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-services",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "anchors": [
+            "depth-services-measures",
+            "depth-services-lifecycle",
+            "depth-services-routing",
+            "depth-services-facilities",
+            "depth-services-practice"
+          ],
+          "teachingSections": [
+            "サービスを継続して届ける",
+            "障害の復旧と原因の除去",
+            "設備と運用の安全",
+            "例：予約システムが停止した",
+            "SLAの目標と、実測する指標を分ける",
+            "一つのサービスを計画から改善まで追う",
+            "問い合わせから復旧、恒久対応まで担当をつなぐ",
+            "障害の規模から、設備対策と継続策を選ぶ",
+            "自分で解く：合意、復旧、変更を分ける",
+            "まとめ",
+            "停止した窓口を戻す仕事と、再発を減らす仕事"
+          ],
+          "assessment": "ip-services-check",
+          "assessedPractice": [
+            "ip-services-depth-availability",
+            "ip-services-depth-indicator",
+            "ip-services-depth-incident",
+            "ip-services-depth-facilities",
+            "ip-services-depth-release",
+            "ip-services-depth-catalog",
+            "ip-services-depth-continuity",
+            "ip-services-depth-lifecycle"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 31,
+      "title": "システム監査",
+      "field": "management",
+      "unit": 12,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-audit",
+          "objectives": [
+            "監査の独立性と証拠を説明する",
+            "内部統制の目的と限界を理解する"
+          ],
+          "anchors": [
+            "depth-audit-roles",
+            "depth-audit-evidence",
+            "depth-audit-assurance",
+            "depth-audit-practice"
+          ],
+          "teachingSections": [
+            "第三者の視点から確かめる",
+            "指摘から改善まで",
+            "内部統制は組織の仕組み",
+            "例：支払処理の職務分離",
+            "統制を動かす人と、独立して確かめる人",
+            "記録を組み合わせて、何が言えるかを判断する",
+            "監査で示せる結論と、改善を助言する範囲",
+            "自分で解く：例外が見つかった後に何をするか",
+            "まとめ",
+            "統制は設計と運用の両方を見る"
+          ],
+          "assessment": "ip-audit-check",
+          "assessedPractice": [
+            "ip-audit-depth-evidence",
+            "ip-audit-depth-independence",
+            "ip-audit-depth-followup",
+            "ip-audit-depth-governance",
+            "ip-audit-depth-controls",
+            "ip-audit-depth-it-response",
+            "ip-audit-depth-assurance",
+            "ip-audit-depth-reputation"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 32,
+      "title": "内部統制",
+      "field": "management",
+      "unit": 12,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-audit",
+          "objectives": [
+            "監査の独立性と証拠を説明する",
+            "内部統制の目的と限界を理解する"
+          ],
+          "anchors": [
+            "depth-audit-roles",
+            "depth-audit-evidence",
+            "depth-audit-assurance",
+            "depth-audit-practice"
+          ],
+          "teachingSections": [
+            "第三者の視点から確かめる",
+            "指摘から改善まで",
+            "内部統制は組織の仕組み",
+            "例：支払処理の職務分離",
+            "統制を動かす人と、独立して確かめる人",
+            "記録を組み合わせて、何が言えるかを判断する",
+            "監査で示せる結論と、改善を助言する範囲",
+            "自分で解く：例外が見つかった後に何をするか",
+            "まとめ",
+            "統制は設計と運用の両方を見る"
+          ],
+          "assessment": "ip-audit-check",
+          "assessedPractice": [
+            "ip-audit-depth-evidence",
+            "ip-audit-depth-independence",
+            "ip-audit-depth-followup",
+            "ip-audit-depth-governance",
+            "ip-audit-depth-controls",
+            "ip-audit-depth-it-response",
+            "ip-audit-depth-assurance",
+            "ip-audit-depth-reputation"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 33,
+      "title": "離散数学",
+      "field": "technology",
+      "unit": 13,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-binary",
+          "objectives": [
+            "位取りと情報量を計算する",
+            "集合・論理演算を具体例で使う"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "2進数の位取り",
+            "ビットとバイト",
+            "集合と論理",
+            "例とまとめ",
+            "ビットを読む順番と、表せる範囲",
+            "位の重みで10進数に直す",
+            "真偽を組み合わせる",
+            "自分で確かめる",
+            "固定されたビット幅で計算する",
+            "条件を変更すると、どの行が増えるか"
+          ],
+          "assessment": "ip-binary-check",
+          "assessedPractice": [
+            "ip-binary-depth-1",
+            "ip-binary-depth-2",
+            "ip-binary-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 34,
+      "title": "応用数学",
+      "field": "technology",
+      "unit": 13,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-statistics",
+          "objectives": [
+            "代表値と散らばりを説明する",
+            "確率・期待値を計算する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "一つの数値だけで判断しない",
+            "例：対応時間を要約する",
+            "確率と期待値",
+            "データから結論へ進むとき",
+            "まとめ",
+            "分布の形と、確率の条件を読む",
+            "抽出のしかたから確率の式を決める",
+            "代表値と分布を別々に読む",
+            "グラフと制約を使って判断する",
+            "推定・検定・回帰が答える問いを分ける",
+            "変化率と合計を単位で確認する",
+            "同じ平均でも、標準偏差を実際に求めて比べる",
+            "仮定の下で珍しさを数え、判断の意味を確認する",
+            "小さな誤差が、比較結果を入れ替えるかを見る"
+          ],
+          "assessment": "ip-statistics-check",
+          "assessedPractice": [
+            "ip-statistics-depth-1",
+            "ip-statistics-depth-2",
+            "ip-statistics-depth-3",
+            "ip-statistics-depth-4",
+            "ip-statistics-depth-5",
+            "ip-statistics-depth-6",
+            "ip-statistics-depth-7",
+            "ip-statistics-depth-8",
+            "ip-statistics-depth-9",
+            "ip-statistics-depth-10"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 35,
+      "title": "情報に関する理論",
+      "field": "technology",
+      "unit": 13,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-ai-data",
+          "objectives": [
+            "データとAIの学習・評価を区別する",
+            "生成AIの限界と安全な利用を説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "情報を表現し、誤りを検出する",
+            "データからモデルを作る",
+            "評価の目的を考える",
+            "生成AIと人の確認",
+            "例とまとめ",
+            "学習、評価、利用を分ける",
+            "連続した測定値をビット列にする",
+            "分類の成績を見逃しと誤警報に分ける",
+            "生成結果と参照元を照合する",
+            "文字の対応表と、推論の前提を確認する",
+            "仕組みを選ぶときは、規則とデータのどちらがそろっているかを見る",
+            "ニューラルネットワークの学習と出力を順に追う",
+            "画像・時系列・生成で、モデルの役割を見分ける"
+          ],
+          "assessment": "ip-ai-data-check",
+          "assessedPractice": [
+            "ip-ai-data-depth-1",
+            "ip-ai-data-depth-2",
+            "ip-ai-data-depth-3",
+            "ip-ai-data-depth-4",
+            "ip-ai-data-depth-5",
+            "ip-ai-data-depth-6",
+            "ip-ai-data-depth-7",
+            "ip-ai-data-depth-8",
+            "ip-ai-data-depth-9"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 36,
+      "title": "データ構造",
+      "field": "technology",
+      "unit": 14,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-algorithms",
+          "objectives": [
+            "順次・分岐・反復を追跡する",
+            "探索とデータ構造を使い分ける"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "処理を手順にする",
+            "例：合計を求める",
+            "データの持ち方",
+            "探索と整列",
+            "まとめ",
+            "途中の状態を書いて処理を追う",
+            "反復が終わったときの変数の意味を決める",
+            "データが整列しているときだけ探索範囲を半分にする",
+            "整列と併合を途中状態まで追う",
+            "木にしたときの親子と番号の違いを読む"
+          ],
+          "assessment": "ip-algorithms-check",
+          "assessedPractice": [
+            "ip-algorithms-depth-1",
+            "ip-algorithms-depth-2",
+            "ip-algorithms-depth-3",
+            "ip-algorithms-depth-4",
+            "ip-algorithms-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 37,
+      "title": "アルゴリズムとプログラミング",
+      "field": "technology",
+      "unit": 14,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-algorithms",
+          "objectives": [
+            "順次・分岐・反復を追跡する",
+            "探索とデータ構造を使い分ける"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "処理を手順にする",
+            "例：合計を求める",
+            "データの持ち方",
+            "探索と整列",
+            "まとめ",
+            "途中の状態を書いて処理を追う",
+            "反復が終わったときの変数の意味を決める",
+            "データが整列しているときだけ探索範囲を半分にする",
+            "整列と併合を途中状態まで追う",
+            "木にしたときの親子と番号の違いを読む"
+          ],
+          "assessment": "ip-algorithms-check",
+          "assessedPractice": [
+            "ip-algorithms-depth-1",
+            "ip-algorithms-depth-2",
+            "ip-algorithms-depth-3",
+            "ip-algorithms-depth-4",
+            "ip-algorithms-depth-5"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 38,
+      "title": "プログラム言語",
+      "field": "technology",
+      "unit": 14,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-languages",
+          "objectives": [
+            "言語の役割を区別する",
+            "HTML・CSS・JSON等の用途を説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "プログラムの実行まで",
+            "オブジェクト指向と再利用",
+            "Webで役割を分ける",
+            "例：学習サイトの問題画面",
+            "まとめ",
+            "文書の構造、見た目、操作を分ける",
+            "表示・意味・動作をそれぞれ直す",
+            "変換の成功と実行結果を分ける"
+          ],
+          "assessment": "ip-languages-check",
+          "assessedPractice": [
+            "ip-languages-depth-1",
+            "ip-languages-depth-2",
+            "ip-languages-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 39,
+      "title": "その他の言語",
+      "field": "technology",
+      "unit": 14,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-languages",
+          "objectives": [
+            "言語の役割を区別する",
+            "HTML・CSS・JSON等の用途を説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "プログラムの実行まで",
+            "オブジェクト指向と再利用",
+            "Webで役割を分ける",
+            "例：学習サイトの問題画面",
+            "まとめ",
+            "文書の構造、見た目、操作を分ける",
+            "表示・意味・動作をそれぞれ直す",
+            "変換の成功と実行結果を分ける"
+          ],
+          "assessment": "ip-languages-check",
+          "assessedPractice": [
+            "ip-languages-depth-1",
+            "ip-languages-depth-2",
+            "ip-languages-depth-3"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 40,
+      "title": "プロセッサ",
+      "field": "technology",
+      "unit": 15,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "コンピュータの基本要素",
+            "速さは一つの数字だけで決まらない",
+            "記憶装置の階層",
+            "入出力と接続",
+            "まとめ",
+            "命令とデータがどこにあるかを追う",
+            "処理が止まる場所をCPU・メモリ・入出力から探す",
+            "転送速度と端末の性能を切り分ける"
+          ],
+          "assessment": "ip-computer-check",
+          "assessedPractice": [
+            "ip-computer-depth-1",
+            "ip-computer-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 41,
+      "title": "メモリ",
+      "field": "technology",
+      "unit": 15,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "コンピュータの基本要素",
+            "速さは一つの数字だけで決まらない",
+            "記憶装置の階層",
+            "入出力と接続",
+            "まとめ",
+            "命令とデータがどこにあるかを追う",
+            "処理が止まる場所をCPU・メモリ・入出力から探す",
+            "転送速度と端末の性能を切り分ける"
+          ],
+          "assessment": "ip-computer-check",
+          "assessedPractice": [
+            "ip-computer-depth-1",
+            "ip-computer-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 42,
+      "title": "入出力デバイス",
+      "field": "technology",
+      "unit": 15,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "コンピュータの基本要素",
+            "速さは一つの数字だけで決まらない",
+            "記憶装置の階層",
+            "入出力と接続",
+            "まとめ",
+            "命令とデータがどこにあるかを追う",
+            "処理が止まる場所をCPU・メモリ・入出力から探す",
+            "転送速度と端末の性能を切り分ける"
+          ],
+          "assessment": "ip-computer-check",
+          "assessedPractice": [
+            "ip-computer-depth-1",
+            "ip-computer-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 43,
+      "title": "システムの構成",
+      "field": "technology",
+      "unit": 16,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-architecture",
+          "objectives": [
+            "冗長化と負荷分散を区別する",
+            "稼働率と性能指標を計算する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "処理をどこで行うか",
+            "継続と処理能力を支える構成",
+            "稼働率を計算する",
+            "例と性能の見方",
+            "まとめ",
+            "どの部品が止まるとサービスも止まるか",
+            "直列と冗長を、停止条件から見分ける",
+            "速さ・処理量・復旧を別々に測る"
+          ],
+          "assessment": "ip-architecture-check",
+          "assessedPractice": [
+            "ip-architecture-depth-1",
+            "ip-architecture-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 44,
+      "title": "システムの評価指標",
+      "field": "technology",
+      "unit": 16,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-architecture",
+          "objectives": [
+            "冗長化と負荷分散を区別する",
+            "稼働率と性能指標を計算する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "処理をどこで行うか",
+            "継続と処理能力を支える構成",
+            "稼働率を計算する",
+            "例と性能の見方",
+            "まとめ",
+            "どの部品が止まるとサービスも止まるか",
+            "直列と冗長を、停止条件から見分ける",
+            "速さ・処理量・復旧を別々に測る"
+          ],
+          "assessment": "ip-architecture-check",
+          "assessedPractice": [
+            "ip-architecture-depth-1",
+            "ip-architecture-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 45,
+      "title": "オペレーティングシステム",
+      "field": "technology",
+      "unit": 17,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-os-files",
+          "objectives": [
+            "OSの資源管理を説明する",
+            "ファイルの経路と権限を扱う"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "OSは資源を管理する",
+            "主記憶を使う仕組み",
+            "ファイルとディレクトリ",
+            "例：資料の共同利用",
+            "まとめ",
+            "保存、共有、復元を分けて考える",
+            "同じファイル名でも到達先が違う理由",
+            "利用者の権限と資源の不足を切り分ける"
+          ],
+          "assessment": "ip-os-files-check",
+          "assessedPractice": [
+            "ip-os-files-depth-1",
+            "ip-os-files-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 46,
+      "title": "ファイルシステム",
+      "field": "technology",
+      "unit": 17,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-os-files",
+          "objectives": [
+            "OSの資源管理を説明する",
+            "ファイルの経路と権限を扱う"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "OSは資源を管理する",
+            "主記憶を使う仕組み",
+            "ファイルとディレクトリ",
+            "例：資料の共同利用",
+            "まとめ",
+            "保存、共有、復元を分けて考える",
+            "同じファイル名でも到達先が違う理由",
+            "利用者の権限と資源の不足を切り分ける"
+          ],
+          "assessment": "ip-os-files-check",
+          "assessedPractice": [
+            "ip-os-files-depth-1",
+            "ip-os-files-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 47,
+      "title": "オフィスツール",
+      "field": "technology",
+      "unit": 17,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-office-oss",
+          "objectives": [
+            "表計算の参照と集計を説明する",
+            "OSSの利用条件と保守を確認する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "情報を整理して伝える道具",
+            "表計算の参照",
+            "集計と条件",
+            "OSSを安全に利用する",
+            "例とまとめ",
+            "同じ式をコピーしたときの参照を追う",
+            "コピーした式がどのセルを参照するか予測する",
+            "ソフトウェアを配る条件まで調べる"
+          ],
+          "assessment": "ip-office-oss-check",
+          "assessedPractice": [
+            "ip-office-oss-depth-1",
+            "ip-office-oss-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 48,
+      "title": "オープンソースソフトウェア",
+      "field": "technology",
+      "unit": 17,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-office-oss",
+          "objectives": [
+            "表計算の参照と集計を説明する",
+            "OSSの利用条件と保守を確認する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "情報を整理して伝える道具",
+            "表計算の参照",
+            "集計と条件",
+            "OSSを安全に利用する",
+            "例とまとめ",
+            "同じ式をコピーしたときの参照を追う",
+            "コピーした式がどのセルを参照するか予測する",
+            "ソフトウェアを配る条件まで調べる"
+          ],
+          "assessment": "ip-office-oss-check",
+          "assessedPractice": [
+            "ip-office-oss-depth-1",
+            "ip-office-oss-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 49,
+      "title": "ハードウェア（コンピュータ・入出力装置）",
+      "field": "technology",
+      "unit": 18,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-hardware",
+          "objectives": [
+            "機器の用途と制約を説明する",
+            "接続・保守・環境への配慮を考える"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "用途によって構成が変わる",
+            "入出力装置を比較する",
+            "導入後の運用も考える",
+            "例：倉庫で使う端末",
+            "まとめ",
+            "入出力機器を、欲しいデータから選ぶ",
+            "機器の形状、信号、役割を順に確認する",
+            "作業用PCに接続された機器を見分ける",
+            "どの向きに情報が動くかを見る"
+          ],
+          "assessment": "ip-hardware-check",
+          "assessedPractice": [
+            "ip-hardware-depth-1",
+            "ip-hardware-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 50,
+      "title": "情報デザイン",
+      "field": "technology",
+      "unit": 19,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-design",
+          "objectives": [
+            "情報の構造と見た目の役割を説明する",
+            "アクセシビリティと誤操作防止を考える"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "情報を見つけ、理解し、使えるようにする",
+            "人とシステムの接点",
+            "多様な利用者へ配慮する",
+            "例：記録の削除画面",
+            "まとめ",
+            "誤りの場所と直し方が分かる画面にする",
+            "申込画面を、入力して直せる順に設計する",
+            "同じ情報でも、探したい目的で並べ方を変える"
+          ],
+          "assessment": "ip-design-check",
+          "assessedPractice": [
+            "ip-design-depth-1",
+            "ip-design-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 51,
+      "title": "インタフェース設計",
+      "field": "technology",
+      "unit": 19,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-design",
+          "objectives": [
+            "情報の構造と見た目の役割を説明する",
+            "アクセシビリティと誤操作防止を考える"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "情報を見つけ、理解し、使えるようにする",
+            "人とシステムの接点",
+            "多様な利用者へ配慮する",
+            "例：記録の削除画面",
+            "まとめ",
+            "誤りの場所と直し方が分かる画面にする",
+            "申込画面を、入力して直せる順に設計する",
+            "同じ情報でも、探したい目的で並べ方を変える"
+          ],
+          "assessment": "ip-design-check",
+          "assessedPractice": [
+            "ip-design-depth-1",
+            "ip-design-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 52,
+      "title": "マルチメディア技術",
+      "field": "technology",
+      "unit": 20,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-media",
+          "objectives": [
+            "デジタル化と容量を計算する",
+            "メディア形式と圧縮の違いを説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "連続する情報を数値にする",
+            "例：音声と画像の容量",
+            "形式を使い分ける",
+            "圧縮と応用",
+            "まとめ",
+            "単位と圧縮条件をそろえて容量を計算する",
+            "データ量を「1回分 × 回数」で求める",
+            "復元の必要性から形式と圧縮を選ぶ"
+          ],
+          "assessment": "ip-media-check",
+          "assessedPractice": [
+            "ip-media-depth-1",
+            "ip-media-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 53,
+      "title": "マルチメディア応用",
+      "field": "technology",
+      "unit": 20,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-media",
+          "objectives": [
+            "デジタル化と容量を計算する",
+            "メディア形式と圧縮の違いを説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "連続する情報を数値にする",
+            "例：音声と画像の容量",
+            "形式を使い分ける",
+            "圧縮と応用",
+            "まとめ",
+            "単位と圧縮条件をそろえて容量を計算する",
+            "データ量を「1回分 × 回数」で求める",
+            "復元の必要性から形式と圧縮を選ぶ"
+          ],
+          "assessment": "ip-media-check",
+          "assessedPractice": [
+            "ip-media-depth-1",
+            "ip-media-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 54,
+      "title": "データベース方式",
+      "field": "technology",
+      "unit": 21,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-database",
+          "objectives": [
+            "主キーと外部キーの役割を説明する",
+            "重複による更新の不整合を防ぐ"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "データを共有して管理する",
+            "識別と関連を決める",
+            "例：顧客と注文を分ける",
+            "正規化と検索",
+            "まとめ",
+            "注文データから、何を一度だけ保存するか考える",
+            "注文の行が何を一意に表すか決める",
+            "対応関係を保存する表を決める"
+          ],
+          "assessment": "ip-database-check",
+          "assessedPractice": [
+            "ip-database-depth-1",
+            "ip-database-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 55,
+      "title": "データベース設計",
+      "field": "technology",
+      "unit": 21,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-database",
+          "objectives": [
+            "主キーと外部キーの役割を説明する",
+            "重複による更新の不整合を防ぐ"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "データを共有して管理する",
+            "識別と関連を決める",
+            "例：顧客と注文を分ける",
+            "正規化と検索",
+            "まとめ",
+            "注文データから、何を一度だけ保存するか考える",
+            "注文の行が何を一意に表すか決める",
+            "対応関係を保存する表を決める"
+          ],
+          "assessment": "ip-database-check",
+          "assessedPractice": [
+            "ip-database-depth-1",
+            "ip-database-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 56,
+      "title": "データ操作",
+      "field": "technology",
+      "unit": 21,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-sql-transactions",
+          "objectives": [
+            "検索・集計の基本を読む",
+            "同時更新と復旧の必要性を説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "必要なデータを取り出す",
+            "例：在庫数を合計する",
+            "ひとまとまりの処理",
+            "例：口座間の振替",
+            "まとめ",
+            "抽出、集計、更新の境界を追う",
+            "行の絞込みとグループの絞込みを区別する",
+            "一緒に終えるべき処理をひとまとまりにする"
+          ],
+          "assessment": "ip-sql-transactions-check",
+          "assessedPractice": [
+            "ip-sql-transactions-depth-1",
+            "ip-sql-transactions-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 57,
+      "title": "トランザクション処理",
+      "field": "technology",
+      "unit": 21,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-sql-transactions",
+          "objectives": [
+            "検索・集計の基本を読む",
+            "同時更新と復旧の必要性を説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "必要なデータを取り出す",
+            "例：在庫数を合計する",
+            "ひとまとまりの処理",
+            "例：口座間の振替",
+            "まとめ",
+            "抽出、集計、更新の境界を追う",
+            "行の絞込みとグループの絞込みを区別する",
+            "一緒に終えるべき処理をひとまとまりにする"
+          ],
+          "assessment": "ip-sql-transactions-check",
+          "assessedPractice": [
+            "ip-sql-transactions-depth-1",
+            "ip-sql-transactions-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 58,
+      "title": "ネットワーク方式",
+      "field": "technology",
+      "unit": 22,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-network",
+          "objectives": [
+            "通信機器と接続範囲を区別する",
+            "帯域と転送時間を計算する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "ネットワークの範囲と機器",
+            "有線と無線",
+            "速さを計算する",
+            "運用と分離",
+            "まとめ",
+            "転送する相手と、経路の範囲を見分ける",
+            "端末から外のネットワークまでを区切って調べる",
+            "回線の速度と待ちを分けて見積もる",
+            "IoTの回線を距離・電力・量から選ぶ",
+            "LANを分ける理由と、機器が選ぶ宛先を考える",
+            "配線できない場所で、無線の使い方を選ぶ"
+          ],
+          "assessment": "ip-network-check",
+          "assessedPractice": [
+            "ip-network-depth-1",
+            "ip-network-depth-2",
+            "ip-network-depth-3",
+            "ip-network-depth-4",
+            "ip-network-depth-5",
+            "ip-network-depth-6"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 59,
+      "title": "通信プロトコル",
+      "field": "technology",
+      "unit": 22,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-protocols",
+          "objectives": [
+            "代表的なプロトコルの役割を説明する",
+            "アドレスと名前の関係を理解する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "通信の約束を階層に分ける",
+            "アドレスとネットワーク",
+            "Webとメール",
+            "例：URLを開くまで",
+            "まとめ",
+            "名前を引き、接続し、要求を送る",
+            "ブラウザでページを開くまでの通信を追う",
+            "送るものと優先する性質から方式を選ぶ",
+            "層をたどると、正常な区間を切り分けられる",
+            "移動先の接続と契約の条件を読む"
+          ],
+          "assessment": "ip-protocols-check",
+          "assessedPractice": [
+            "ip-protocols-depth-1",
+            "ip-protocols-depth-2",
+            "ip-protocols-depth-3",
+            "ip-protocols-depth-4",
+            "ip-protocols-depth-5",
+            "ip-protocols-depth-6"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 60,
+      "title": "ネットワーク応用",
+      "field": "technology",
+      "unit": 22,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-protocols",
+          "objectives": [
+            "代表的なプロトコルの役割を説明する",
+            "アドレスと名前の関係を理解する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "通信の約束を階層に分ける",
+            "アドレスとネットワーク",
+            "Webとメール",
+            "例：URLを開くまで",
+            "まとめ",
+            "名前を引き、接続し、要求を送る",
+            "ブラウザでページを開くまでの通信を追う",
+            "送るものと優先する性質から方式を選ぶ",
+            "層をたどると、正常な区間を切り分けられる",
+            "移動先の接続と契約の条件を読む"
+          ],
+          "assessment": "ip-protocols-check",
+          "assessedPractice": [
+            "ip-protocols-depth-1",
+            "ip-protocols-depth-2",
+            "ip-protocols-depth-3",
+            "ip-protocols-depth-4",
+            "ip-protocols-depth-5",
+            "ip-protocols-depth-6"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 61,
+      "title": "情報セキュリティ",
+      "field": "technology",
+      "unit": 23,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-security-risk",
+          "objectives": [
+            "機密性・完全性・可用性を説明する",
+            "リスク対応と事故対応を考える"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "守る対象と性質",
+            "脅威と脆弱性を分ける",
+            "組織で継続して管理する",
+            "例：誤送信に気付いたら",
+            "まとめ",
+            "資産、困ること、対策をつなげる",
+            "資産への影響から優先順位を付ける",
+            "対応を選び、残るリスクを引き受ける人を決める"
+          ],
+          "assessment": "ip-security-risk-check",
+          "assessedPractice": [
+            "ip-security-risk-depth-1",
+            "ip-security-risk-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 62,
+      "title": "情報セキュリティ管理",
+      "field": "technology",
+      "unit": 23,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-security-risk",
+          "objectives": [
+            "機密性・完全性・可用性を説明する",
+            "リスク対応と事故対応を考える"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "守る対象と性質",
+            "脅威と脆弱性を分ける",
+            "組織で継続して管理する",
+            "例：誤送信に気付いたら",
+            "まとめ",
+            "資産、困ること、対策をつなげる",
+            "資産への影響から優先順位を付ける",
+            "対応を選び、残るリスクを引き受ける人を決める"
+          ],
+          "assessment": "ip-security-risk-check",
+          "assessedPractice": [
+            "ip-security-risk-depth-1",
+            "ip-security-risk-depth-2"
+          ]
+        }
+      ]
+    },
+    {
+      "topic": 63,
+      "title": "情報セキュリティ対策・情報セキュリティ実装技術",
+      "field": "technology",
+      "unit": 23,
+      "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+      "coverageStatus": "representative instruction and practice; consult field review for subskills",
+      "lessons": [
+        {
+          "id": "ip-security-controls",
+          "objectives": [
+            "代表的な攻撃と対策を対応させる",
+            "予防・検知・復旧を組み合わせる"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "人を狙う攻撃とマルウェア",
+            "Webと通信への攻撃",
+            "対策を重ねる",
+            "認証と権限",
+            "例とまとめ",
+            "予防、検知、復旧の役割を組み合わせる",
+            "予防・検知・復旧を別々に組み立てる",
+            "確認したい性質に対策を結び付ける"
+          ],
+          "assessment": "ip-security-controls-check",
+          "assessedPractice": [
+            "ip-security-controls-depth-1",
+            "ip-security-controls-depth-2"
+          ]
+        },
+        {
+          "id": "ip-cryptography",
+          "objectives": [
+            "共通鍵と公開鍵を区別する",
+            "署名と証明書の役割を説明する"
+          ],
+          "anchors": [],
+          "teachingSections": [
+            "暗号は鍵と目的を分けて考える",
+            "ハッシュは復号するための暗号ではない",
+            "電子署名と公開鍵の確認",
+            "例：契約書を安全に送る",
+            "まとめ",
+            "暗号化と署名では、守る目的が異なる",
+            "書類を誰の鍵で扱うか整理する",
+            "検証できる内容と証明書の範囲を確かめる"
+          ],
+          "assessment": "ip-cryptography-check",
+          "assessedPractice": [
+            "ip-cryptography-depth-1",
+            "ip-cryptography-depth-2"
+          ]
+        }
+      ]
+    }
+  ]
+}

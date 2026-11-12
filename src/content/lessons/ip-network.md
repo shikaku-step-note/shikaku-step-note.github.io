@@ -54,3 +54,33 @@ LANは建物や組織内などのネットワーク、WANは広域の拠点等�
 <figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="LAN内とネットワーク間の中継, 端末, 送信元, スイッチ, LAN内, ルータ, 別の網へ"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">端末</text><text x="68" y="51">送信元</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">スイッチ</text><text x="211" y="51">LAN内</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">ルータ</text><text x="354" y="51">別の網へ</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>スイッチはLAN内の転送、ルータは異なるIPネットワークへの中継を担います。</figcaption></figure>
 
 <details><summary>12 Mbit/s の回線で毎秒12 MB送れる？</summary><p>ビットとバイトが違います。余分な通信を無視しても12÷8＝1.5 MB/sです。</p></details>
+
+## 端末から外のネットワークまでを区切って調べる
+
+同じLANのファイル共有には接続でき、社外サイトには接続できないとします。端末からLAN上の相手までの通信はできているため、まず社外との境界や名前解決を調べます。スイッチはLAN内の機器を結び、ルータは異なるIPネットワーク間の経路を受け持ちます。無線LANのアクセスポイントは端末を無線でLANに接続します。家庭用機器ではこれらが一体になっていても、どの働きが必要かは別々に考えます。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="端末 → 無線アクセスポイント、LAN内の通信 → スイッチ、別ネットワークへ → ルータ、相手側のネットワークへ"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">端末 → 無線アクセスポイント</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">LAN内の通信 → スイッチ</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">別ネットワークへ → ルータ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">相手側のネットワークへ</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じLANの通信が通るなら、別ネットワークへ進む段階で何が追加になるかを追います。</figcaption></figure>
+
+## 回線の速度と待ちを分けて見積もる
+
+50 MBのファイルを20 Mbit/sで送ります。MBとMbitを同じ倍率の単位とし、オーバーヘッドを無視すると、50 MBは400 Mbitです。400÷20＝20秒。速度が10 Mbit/sなら40秒です。回線に空きがなかったり、再送があったりすれば、実際にはさらに時間がかかります。小さな要求を何度も往復する操作では、データの大きさより往復の遅延が目立つ場合もあります。通信の改善策を選ぶ前に、まとまったデータの転送が遅いのか、最初の応答が遅いのかを測ります。
+
+## IoTの回線を距離・電力・量から選ぶ
+
+広い農地で電池式の温度センサーから1時間に1回だけ数値を送りたい場合は、通信量が少なく、距離と電池寿命が重要です。候補の一つは低消費電力で長距離の通信を狙うLPWAです。手元の端末と近くの小型センサーを短距離で結ぶならBLEが候補になります。連続映像など大容量データには別の回線が適する場合があります。製品名で決めず、設置場所の電波環境・必要量・電源の交換頻度を比較します。
+
+センサーの生データを毎回クラウドへ送る方式と、近くの装置で異常だけ判定して結果を送る方式を比べます。後者のエッジ処理なら通信量や判断の待ちを減らせますが、現場装置の保守が増えます。通信が切れたときも警報が必要なら、現場で判定する効果があります。
+
+## LANを分ける理由と、機器が選ぶ宛先を考える
+
+同じ事務所で職員の端末と来客の端末を接続します。物理的には同じスイッチにつなぎながら、職員用と来客用を別のLANとして扱うのがVLANの例です。同じVLANの中では、スイッチが接続機器のMACアドレスを手掛かりに転送先を選びます。別VLANへ通信させるには、ネットワーク間を中継できる機器を通し、何を通すか決めます。VLANで論理的に分けただけで、すべての機器間のアクセス方針が自動的に決まるわけではありません。
+
+端末が別ネットワークへの通信を直接渡せないとき、既定の中継先として設定するのがデフォルトゲートウェイです。職員の端末が職員用の共有装置に接続できる一方で、社外への通信ができない場合、端末のゲートウェイ設定や中継先での通信可否を切り分けます。来客が職員用共有装置を利用できないのは、この事務所の方針どおりであれば故障ではありません。先に期待される範囲を確かめます。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="職員PC：同じ職員用LANへ接続、同一LAN内はスイッチが転送、社外宛ては既定の中継先へ、ルータが別ネットワークへ転送"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">職員PC：同じ職員用LANへ接続</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">同一LAN内はスイッチが転送</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">社外宛ては既定の中継先へ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">ルータが別ネットワークへ転送</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じLANと別ネットワークでは、経路に必要な働きが異なります。</figcaption></figure>
+
+## 配線できない場所で、無線の使い方を選ぶ
+
+会議室だけ電波が弱いとき、主装置の近くから届く電波をただ増幅する案と、適切な場所へ別のアクセスポイントを置く案では、利用者の位置と装置間の通信経路を見ます。メッシュWi-Fiは複数の装置を連携させて範囲を広げますが、装置間の通信が弱ければ端末から見える電波だけ強くても速度が出ません。アクセスポイント間を有線にできるなら、その通信を無線端末と取り合わずに済む場合があります。Wi-Fi Directは対応する機器同士を直接無線でつなぐ用途、Wi-Fiの世代は対応規格や利用できる周波数などの違いを見る手掛かりです。SSIDは無線ネットワークの識別名で、同じ名前が表示されるだけで運営者の真正性を保証しません。
+
+広域の移動体通信では基地局が端末と無線通信します。Wi-Fiだけが使える端末を外出先でインターネットへつなぐなら、携帯電話の回線を共有するテザリングが候補です。電池の持ち時間、共有するデータ量、契約上の上限を一緒に見ます。

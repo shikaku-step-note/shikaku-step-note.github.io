@@ -58,3 +58,15 @@ USB、HDMI、Bluetoothなどは接続の用途や仕様が異なります。コ�
 画面へ画像を送る処理や多数の同種演算ではGPUの並列性が役立つ場合があります。全ての作業が並列化できるわけではありません。高速な記憶と大容量の記憶を組み合わせるのも、全てを同じ方式にすればよいのではなく、速度、容量、費用、保持の条件が異なるからです。
 
 <details><summary>周波数が2倍なら実行時間は必ず半分？</summary><p>命令数、1命令当たりのクロック数、待ち時間も影響します。同じ前提かを見ます。</p></details>
+
+## 処理が止まる場所をCPU・メモリ・入出力から探す
+
+写真100枚の処理で、画像1枚をSSDから読むのに4 ms、CPUで変換するのに6 ms、結果を書き出すのに2 msかかるとします。3工程を重ねず1枚ずつ終えるなら1枚12 ms、100枚で1,200 msです。CPUだけを倍速にしても6 msが3 msになるだけで、全体は900 msです。速くできる部分と変わらない部分を分けてから、全体の改善を見積もります。工程を重ねて進める機械なら、問題の条件が変わるため同じ足し算をそのまま使えません。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="SSDから読込：4 ms、主記憶上の画像をCPUで変換：6 ms、SSDへ書出し：2 ms、直列の合計：1枚12 ms"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">SSDから読込：4 ms</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">主記憶上の画像をCPUで変換：6 ms</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">SSDへ書出し：2 ms</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">直列の合計：1枚12 ms</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>CPUを変更しても入出力時間はそのままです。合計を作る工程を先に書き出します。</figcaption></figure>
+
+CPUは命令を実行し、主記憶は実行中の命令やデータを保持します。キャッシュは頻繁に使うデータをCPUの近くに置く小さく速い領域です。同じデータを繰り返し読む場面では、主記憶へ毎回アクセスするより待ちを減らせます。逆に、長いデータを一度ずつ読むだけなら、同じキャッシュ領域を再利用しにくくなります。計算中だけ保持する主記憶と、電源を切った後も残すSSDなどの補助記憶は、性能と役割を別々に見ます。
+
+## 転送速度と端末の性能を切り分ける
+
+仕様上の最大20 MB/sで、実際には最大の80％の速度で転送できるとします。実効速度は16 MB/sなので、80 MBに5秒かかります。端末のCPUやSSDを替える前に、同じデータを別のケーブルや接続口で比較すると、どの部分で転送の上限が決まるか調べられます。CPUのクロック周波数だけで全体の性能は決まりません。命令当たりの処理、コアを同時利用できるか、メモリや入出力の待ちも関係します。

@@ -55,3 +55,15 @@ OSの管理対象とファイル操作の意味を理解し、権限と復旧を
 同じディスクの別フォルダにコピーすれば誤削除の一部には備えられますが、ディスク故障には一緒に失われます。別媒体や別の場所に復元できる複製を置き、実際に復元できるかを試します。同期は変更を伝える仕組みなので、誤削除まで同期される構成では世代管理などを別に考えます。
 
 <details><summary>ファイル名を .pdf に変えればPDFに変換される？</summary><p>名前だけ変わり、内部形式は変わりません。変換には対応した処理が必要です。</p></details>
+
+## 同じファイル名でも到達先が違う理由
+
+フォルダ `/study/week1` にいるとき、`../data/a.csv` は「親の `/study` に上がってから `data/a.csv` へ」を表します。到達先は `/study/data/a.csv` です。現在位置を `/study/week1/notes` に変えて同じ相対パスを使うと、今度は `/study/week1/data/a.csv` を参照します。パスの先頭から所在が決まる絶対パスなら現在位置に影響されません。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="現在位置：/study/week1、.. で親へ：/study、data へ移動：/study/data、a.csv を開く：/study/data/a.csv"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">現在位置：/study/week1</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">.. で親へ：/study</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">data へ移動：/study/data</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">a.csv を開く：/study/data/a.csv</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>相対パスは現在位置とセットで読みます。別の場所で実行する場合は到達先を引き直します。</figcaption></figure>
+
+## 利用者の権限と資源の不足を切り分ける
+
+共有フォルダを開けないとき、本人を確認できたか、その本人に読む権限があるか、指定先が存在するかを順に確認します。ログインに成功しても、別部署のファイルを書き換えてよいことにはなりません。OSは利用者、プロセス、メモリ、入出力を管理して、同じ端末で複数のアプリを動かせるようにします。
+
+多くのアプリを開いたとき、OSが補助記憶と主記憶の間でデータを頻繁に移して処理が遅くなる場合があります。仮想記憶により主記憶の容量より大きいアドレス空間を利用できる構成でも、実際に使うデータの移動には時間がかかります。空きディスク容量があるから主記憶と同じ速さで処理できる、とは判断できません。ファイルの拡張子は形式を選ぶ手掛かりですが、名前を .csv に変えるだけで内容の文字コードや形式が変換されるわけでもありません。

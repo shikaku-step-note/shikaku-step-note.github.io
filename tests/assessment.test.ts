@@ -35,9 +35,9 @@ test('current curriculum covers all 63 official items and all 23 units, with val
     assert.equal(questionBank[l.data.stableId]!.lesson.length, 3);
     assert.equal(questionBank[l.data.stableId]!.review.length, 2);
   }
-  assert.equal(assessments.length, 88);
+  assert.equal(assessments.length, lessons.length + 52);
   assert.equal(assessments.filter((a) => a.kind === 'glossary').length, 24);
-  assert.equal(assessments.filter((a) => a.kind === 'review').length, 25);
+  assert.equal(assessments.filter((a) => a.kind === 'review').length, 26);
   const ids = new Set(lessons.map((l) => l.data.stableId));
   for (const a of assessments) {
     assert.ok(a.questions.length);
@@ -76,7 +76,7 @@ test('original question arithmetic matches independent reference calculations', 
     ['MTBF=198', `${(198 / (198 + 2)) * 100}%`],
     ['各稼働率0.95の独立', `${Number((1 - (1 - 0.95) ** 2).toFixed(4))}`],
     ['200×150画素', `${(200 * 150 * 24) / 8}`],
-    ['16,000Hz', `${(16000 * 8 * 5) / 8}`],
+    ['16,000 Hz', `${(16000 * 8 * 5) / 8}`],
     ['30MBを実効', `${(30 * 8) / 20}秒`],
   ];
   for (const [snippet, expected] of checks) {

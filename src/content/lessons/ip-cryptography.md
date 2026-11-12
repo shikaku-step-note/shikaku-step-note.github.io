@@ -57,3 +57,15 @@
 <figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="署名と検証の鍵, 署名者, 秘密鍵, 送付, 文書と署名, 検証者, 署名者の公開鍵"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">署名者</text><text x="68" y="51">秘密鍵</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">送付</text><text x="211" y="51">文書と署名</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">検証者</text><text x="354" y="51">署名者の公開鍵</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>署名は相手と改変の確認に使います。文書を秘密にする仕組みとは異なります。</figcaption></figure>
 
 <details><summary>送信者の公開鍵を使えば、受信者だけが文書を読める？</summary><p>受信者だけに読ませる典型的な公開鍵暗号では、受信者の公開鍵で暗号化します。署名の検証に使う鍵と分けます。</p></details>
+
+## 書類を誰の鍵で扱うか整理する
+
+送信者Aが見積書を作り、受取人Bだけに読ませ、BがAの作成を確認できるようにします。典型的な公開鍵暗号で機密性を確保するときはBの公開鍵を使い、復号にはBの秘密鍵を使います。署名を作るのはAの秘密鍵、署名を確かめるのはAの公開鍵です。暗号化では「読める人を限るので受取人」、署名では「誰の作成か確かめるので送信者」と、目的から鍵の持ち主を決めます。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="機密性：受取人Bの公開鍵で暗号化、受取人Bの秘密鍵で復号、真正性の確認：送信者Aの秘密鍵で署名、送信者Aの公開鍵で署名を検証"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">機密性：受取人Bの公開鍵で暗号化</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">受取人Bの秘密鍵で復号</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">真正性の確認：送信者Aの秘密鍵で署名</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">送信者Aの公開鍵で署名を検証</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>暗号化と署名は別の目的を満たします。図の上下は役割の対応であり、処理の実行順を規定するものではありません。</figcaption></figure>
+
+## 検証できる内容と証明書の範囲を確かめる
+
+同じ名前の配布サイトが2つあり、ファイルとそのハッシュ値がどちらのサイトにも載っているとします。あるサイトで配るファイルがそのサイトのハッシュ値と一致しても、公式の配布元とは断定できません。比較の基準も同じ場所にあるからです。信頼できる経路で照合値を入手するか、信頼できる公開鍵で署名を検証します。
+
+証明書を使う場合も、期限、対象名、信頼できる発行元への連鎖、利用目的などを確かめます。署名が正しくても証明書が期限切れなら、新しい接続先をその証明書だけで信頼する判断はできません。また、TLSで通信が保護されていることと、Webサイトに書かれた説明が正しいことは別です。鍵や証明書から確かめられる事実を、業務内容の確認まで広げて解釈しないようにします。

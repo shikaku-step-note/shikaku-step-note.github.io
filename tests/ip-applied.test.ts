@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { ipAssessments, questionBank, ipVersion } from '../src/data/it-passport';
-import { isCorrect } from '../src/lib/assessment';
+import { ipAssessments, questionBank, ipVersion, ipDepthBank } from '../src/data/it-passport';
+import { isCorrect, assessmentMaterialIssues, compatibleAttempt, newAttempt } from '../src/lib/assessment';
 
 test('all current lesson checks gain input practice without changing legacy mock records', () => {
   const fixtures = Object.keys(questionBank).map((stableId) => ({
@@ -11,7 +11,7 @@ test('all current lesson checks gain input practice without changing legacy mock
   const expanded = tests.filter((a) => a.kind === 'lesson' && a.version !== ipVersion);
   assert.deepEqual(expanded.map((a) => a.id).sort(), Object.keys(questionBank).map((id) => id + '-check').sort());
   for (const a of expanded) {
-    const questions = a.questions.filter((q) => q.input === 'number' || q.input === 'text');
+    const questions = a.questions.filter((q) => q.id.includes('-apply-') && (q.input === 'number' || q.input === 'text'));
     assert.equal(questions.length, a.id === 'ip-finance-check' ? 3 : 2);
     for (const q of questions) {
       assert.equal(isCorrect(q, q.accepted![0]), true);
@@ -23,7 +23,7 @@ test('all current lesson checks gain input practice without changing legacy mock
   assert.equal(isCorrect(finance, '\uFF12\uFF14\uFF10'), true);
   assert.equal(isCorrect(finance, '2,4,0'), false);
   assert.equal(isCorrect(finance, '2 40'), false);
-  const project = expanded.find((a) => a.id === 'ip-project-check')!.questions.at(-1)!;
+  const project = expanded.find((a) => a.id === 'ip-project-check')!.questions.find((q) => q.id === 'ip-project-apply-2')!;
   assert.equal(isCorrect(project, '\u22128'), true);
   assert.equal(isCorrect(project, '8'), false);
   const mock = tests.find((a) => a.id === 'ip-mock-01')!;
@@ -84,5 +84,50 @@ test('fresh cumulative review spans the units and uses validated inputs', () => 
     assert.equal(question.input, 'number');
     assert.ok(isCorrect(question, String(key)), question.id);
     assert.ok(!isCorrect(question, String(key + 1)), question.id);
+  }
+});
+
+test('cross-field scenarios link fresh questions to their documents and score independently', () => {
+  const cases = ipAssessments([]).find((a) => a.id === 'ip-integrated-cases')!;
+  assert.deepEqual(assessmentMaterialIssues(cases), []);
+  assert.equal(cases.materials?.length, 5);
+  assert.equal(cases.questions.length, 12);
+  assert.equal(new Set(cases.questions.map((q) => q.prompt)).size, 12);
+  assert.deepEqual(new Set(cases.questions.map((q) => q.field)), new Set(['strategy', 'management', 'technology']));
+  for (const [index, expected] of [
+    [1, (2 + Math.max(4, 6) + 3) + '\u65e5'],
+    [4, (48000 + 12 * (9000 + 2400 * .75 * 4)).toLocaleString('en-US') + '\u5186'],
+  ] as const) {
+    const q = cases.questions[index]!;
+    assert.equal(q.options[q.answer], expected);
+  }
+  assert.equal(cases.questions[5]!.answer, (80 <= 90 && 20 > 15) ? 1 : -1);
+  assert.equal(cases.questions[7]!.answer, [6 / 30, 5 / 20, 3 / 10].indexOf(.3));
+  assert.ok(cases.questions.slice(10).every((question) => question.materialIds?.length === 2));
+  const comparison = cases.questions[11]!;
+  const difference = (48000 + 12 * (9000 + 2400 * .75 * 4)) - (72000 + 12 * 13000);
+  assert.ok(comparison.options[comparison.answer]!.includes(difference.toLocaleString('en-US')));
+});
+
+test('each upgraded lesson has fresh graded practice and retains the prior question IDs', () => {
+  const lessonIds = Object.keys(questionBank).sort();
+  assert.deepEqual(Object.keys(ipDepthBank).sort(), lessonIds);
+  const fixtures = lessonIds.map((stableId) => ({
+    data: { stableId, title: stableId, qualification: 'it-passport', unit: 1, glossary: [] },
+  }));
+  const assessments = ipAssessments(fixtures).filter((a) => a.kind === 'lesson');
+  const allAddedIds = new Set<string>();
+  for (const assessment of assessments) {
+    const lesson = assessment.id.slice(0, -'-check'.length);
+    const added = ipDepthBank[lesson]!;
+    const old = { ...assessment, version: '2026-11-applied-v1', questions: assessment.questions.slice(0, -added.length) };
+    assert.equal(assessment.version, '2026-11-depth-v1');
+    assert.deepEqual(old.questions.slice(0, 3), questionBank[lesson]!.lesson);
+    assert.equal(compatibleAttempt(assessment, newAttempt(old, 'practice')), false);
+    for (const question of added) {
+      assert.equal(question.lesson, lesson);
+      assert.ok(!allAddedIds.has(question.id), question.id);
+      allAddedIds.add(question.id);
+    }
   }
 });

@@ -1,0 +1,120 @@
+---
+const examples = [
+  {
+    title: '記録A：範囲内に散らばる',
+    values: [100, 104, 98, 103, 97, 101, 99, 102],
+    explanation:
+      'どの点も90〜110の範囲にあり、図の期間には明らかな片寄りも見えません。この図からは、まず通常のばらつきとして経過を見ます。',
+  },
+  {
+    title: '記録B：管理限界を超える',
+    values: [99, 103, 97, 101, 113, 104, 100, 98],
+    explanation:
+      '第5回の113が上方管理限界の110を超えています。第5回の前後で機械、材料、作業手順、測定方法のどれが変わったかを確認します。点だけを消すと原因を調べられません。',
+  },
+  {
+    title: '記録C：管理限界内でも傾向が続く',
+    values: [92, 94, 96, 98, 100, 102, 104, 106],
+    explanation:
+      'すべて90〜110の範囲内ですが、8回連続で値が上がっています。偶然の散らばりだけで説明できるかを考え、温度や工具の摩耗など時間とともに変わる条件を調べます。実務では組織の判定ルールに従います。',
+  },
+];
+const x = (i: number) => 64 + i * 37;
+const y = (value: number) => 140 - (value - 88) * 4;
+---
+
+<section aria-labelledby="ip-control-chart-heading" class="chart-practice">
+  <h2 id="ip-control-chart-heading">管理図で異常の兆候を探す</h2>
+  <p>
+    製品を作るたびに同じ特性値を記録した例です。中心線を100、工程の過去のデータから求めた上下の管理限界を90と110とします。点の位置と時間順の並びを見て、調べるべき変化があるかを判断します。
+  </p>
+  <p>
+    管理限界は工程がいつもの状態かを見分ける線です。顧客が製品に求める許容範囲とは別です。例えば顧客の仕様が95〜105なら、108は管理限界内でも仕様から外れます。
+  </p>
+  {examples.map((example, i) => (
+    <details open={i === 0}>
+      <summary>{example.title}</summary>
+      <figure>
+        <svg viewBox="0 0 380 178" role="img" aria-label={example.title + 'の管理図。測定値は図の下に記載。'}>
+          {[90, 100, 110].map((limit) => (
+            <g>
+              <line
+                x1="54"
+                x2="338"
+                y1={y(limit)}
+                y2={y(limit)}
+                class:list={['chart-line', { limit: limit !== 100 }]}
+              />
+              <text x="42" y={y(limit) + 4} text-anchor="end">
+                {limit}
+              </text>
+            </g>
+          ))}
+          <polyline points={example.values.map((v, j) => x(j) + ',' + y(v)).join(' ')} class="chart-values" />
+          {example.values.map((v, j) => (
+            <g>
+              <circle cx={x(j)} cy={y(v)} r="4" class:list={{ outside: v < 90 || v > 110 }} />
+              <text x={x(j)} y="161" text-anchor="middle">
+                {j + 1}
+              </text>
+            </g>
+          ))}
+          <text x="348" y="161">
+            回
+          </text>
+        </svg>
+        <figcaption>
+          測定値（第1回から順に）{example.values.join('、')}。破線は上下の管理限界です。
+        </figcaption>
+      </figure>
+      <details>
+        <summary>自分の判断と解説を比べる</summary>
+        <p>{example.explanation}</p>
+      </details>
+    </details>
+  ))}
+</section>
+
+<style>
+  .chart-practice {
+    margin-block: 2.5rem;
+  }
+  .chart-practice details {
+    margin-block: 0.75rem;
+  }
+  .chart-practice summary {
+    padding-block: 0.45rem;
+    cursor: pointer;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    max-width: 32rem;
+    height: auto;
+  }
+  text {
+    fill: currentColor;
+    font-size: 13px;
+  }
+  .chart-line {
+    stroke: currentColor;
+    opacity: 0.58;
+  }
+  .limit {
+    stroke-dasharray: 5 4;
+  }
+  .chart-values {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+  }
+  circle {
+    fill: currentColor;
+  }
+  .outside {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    r: 7px;
+  }
+</style>

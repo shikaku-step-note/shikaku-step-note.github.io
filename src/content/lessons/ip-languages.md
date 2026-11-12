@@ -61,3 +61,15 @@
 XMLの要素で情報を構造化する場合と、SQLでデータベースの条件を指定して操作する場合とでは役割が違います。機能をライブラリやAPIで再利用する際は、入力、出力、エラー時の条件を確認してから呼び出します。
 
 <details><summary>見出しが太字なら読み上げでも見出しになる？</summary><p>見た目だけでは構造は伝わりません。意味に合う見出し要素を使います。</p></details>
+
+## 表示・意味・動作をそれぞれ直す
+
+申込ページで、見出しが普通の文章に見え、人数に0を入れても確認に進めるとします。見出しやラベルの意味はHTMLの要素で表現し、見出しの大きさや配置はCSSで決めます。入力値に応じてその場で案内を切り替えるのはJavaScriptの典型的な仕事です。申込をサーバに送るサービスなら、ブラウザでの案内に加えて、受け付け側でも人数を検証します。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="HTML：項目の意味と文書構造、CSS：配置、配色、文字サイズ、JavaScript：入力に応じた案内、受け付け側：業務規則を再検証"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">HTML：項目の意味と文書構造</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">CSS：配置、配色、文字サイズ</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">JavaScript：入力に応じた案内</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">受け付け側：業務規則を再検証</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じ入力欄でも、意味・見た目・反応・受付の要件はそれぞれ変更先が異なります。</figcaption></figure>
+
+XMLでは `<申込><人数>3</人数></申込>` のように項目名を付けたデータを受け渡せます。開始タグと終了タグが対応し、内側を閉じてから外側を閉じていれば、構造を読み取れます。それだけで人数が1以上であることは確認できません。件数の検索や行の更新を扱うSQL、画面を表すHTML、取引先にデータを渡すXMLは、どの段階で何をするかを分けて考えます。
+
+## 変換の成功と実行結果を分ける
+
+変数名の書き間違いは、プログラムを実行する前に見つかることがあります。割り算の入力が当日0のときだけ処理に失敗するなら、文法が正しくても実行時に初めて現れます。コンパイラは一般にソースを実行前に変換し、インタプリタは実行時にコードを処理します。中間コードや実行時コンパイルを組み合わせる処理系もあります。試験では、検査や変換の時点を読んだ上で、どの入力に対する動作を別に確かめるべきか考えます。

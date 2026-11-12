@@ -63,3 +63,15 @@
 <figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="顧客と注文をIDで結ぶ, 顧客表, 顧客ID C07, 注文表, 注文ID O21, 参照, 顧客ID C07"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">顧客表</text><text x="68" y="51">顧客ID C07</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">注文表</text><text x="211" y="51">注文ID O21</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">参照</text><text x="354" y="51">顧客ID C07</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>注文表の顧客IDが顧客表の行を参照します。注文IDは注文自体を識別します。</figcaption></figure>
 
 <details><summary>注文表の顧客IDが重複したら、必ず設計ミス？</summary><p>一人が何度も注文する設計なら重複して構いません。顧客表で一意であることと区別します。</p></details>
+
+## 注文の行が何を一意に表すか決める
+
+注文番号O17で2種類の商品を買うとします。明細表に注文番号O17が2行出るので、注文番号だけでは明細を特定できません。1注文内で一意な明細番号を付ければ、（注文番号、明細番号）の組で1行を特定できます。明細番号1は別の注文にも出せます。どの列の組が一意かは、表名だけでなく1行が表す事実から決まります。
+
+注文表には注文番号・顧客番号・注文日を置き、明細表には注文番号・明細番号・商品番号・数量を置きます。顧客名を全明細に繰り返すと、改名時に更新漏れが起こります。顧客表に顧客番号と現行の顧客名をまとめ、注文から顧客番号で参照します。ただし法的・業務的に注文時の宛名を保存する要件があるなら、現行顧客名とは違う事実として注文時の宛名を保存します。正規化の目的は同じ事実の不整合を減らすことで、過去と現在を同じ値にすることではありません。
+
+<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="明細：(注文番号, 明細番号)、注文番号で注文表を参照、注文表：注文番号 → 顧客番号、顧客番号で顧客表の1行を参照"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">明細：(注文番号, 明細番号)</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">注文番号で注文表を参照</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">注文表：注文番号 → 顧客番号</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">顧客番号で顧客表の1行を参照</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>明細から顧客情報までの道を追うと、どの番号が一意で、どの番号が参照に使われるか分かります。</figcaption></figure>
+
+## 対応関係を保存する表を決める
+
+1人が複数の講座に申し込み、1講座には複数の人が参加できます。受講者表に講座を横に並べると、増えるたびに欄を足すことになります。受講者表、講座表に加え、参加を表す申込表に受講者IDと講座IDを置けば、参加が増えるたびに行を追加できます。両IDの組を一意にする設計なら、同じ人が同じ講座に二重申込することも防げます。再受講が可能なら、開催回IDなどをキーの検討に加えます。
