@@ -1,16 +1,23 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { qualifications } from '../../data/qualifications';
 import { href } from '../../lib/site';
 
-const guides = (await getCollection('studyGuides')).sort((a, b) => b.data.published.localeCompare(a.data.published));
+const guides = (await getCollection('studyGuides')).sort((a, b) => b.data.published.localeCompare(a.data.published) || a.id.localeCompare(b.id));
 ---
-<Layout title="資格試験の勉強ガイド" description="資格試験の勉強を進めるための無料ガイド。模試や過去問の復習方法と、次に取り組むレッスン・練習を紹介します。"
+<Layout title="資格試験の勉強ガイド" description="資格試験の変更点、受験時期に合わせた勉強法、模試や過去問の復習を解説する無料の記事一覧です。"
   breadcrumbs={[{ name: '勉強ガイド', path: 'study-guides/' }]}>
   <section class="container page-section prose">
     <h1>勉強ガイド</h1>
     <ul>
-      {guides.map((guide) => <li><a href={href(`study-guides/${guide.id}/`)}>{guide.data.title}</a><p>{guide.data.description}</p></li>)}
+      {guides.map((guide) => (
+        <li>
+          <small class="muted">{qualifications.find(({ id }) => id === guide.data.qualification)?.name}</small>
+          <h2><a href={href(`study-guides/${guide.id}/`)}>{guide.data.title}</a></h2>
+          <p>{guide.data.description}</p>
+        </li>
+      ))}
     </ul>
   </section>
 </Layout>

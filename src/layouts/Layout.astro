@@ -12,12 +12,16 @@ interface Props {
   noindex?: boolean;
   breadcrumbs?: { name: string; path: string }[];
   schema?: Record<string, unknown>;
+  socialImage?: { path: string; alt: string; width: number; height: number };
+  socialType?: 'website' | 'article';
 }
-const { title, description, noindex = false, breadcrumbs = [], schema } = Astro.props;
+const { title, description, noindex = false, breadcrumbs = [], schema, socialType = 'website',
+  socialImage = { path: 'og-default.png', alt: '資格ステップノート — 無料で学べる資格学習サイト', width: 1200, height: 630 },
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const fullTitle = title === siteName ? `${siteName} | 無料で学べる資格学習サイト` : `${title} | ${siteName}`;
 const root = new URL(href(''), Astro.site).href;
-const imageUrl = new URL(href('og-default.png'), Astro.site).href;
+const imageUrl = new URL(href(socialImage.path), Astro.site).href;
 const graph: Record<string, unknown>[] = [
   {
     '@type': 'WebSite',
@@ -85,16 +89,16 @@ const showAdSense =
     <link rel="icon" href={href('favicon.ico')} sizes="any" />
     <link rel="apple-touch-icon" sizes="180x180" href={href('apple-touch-icon.png')} />
     <link rel="manifest" href={href('site.webmanifest')} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={socialType} />
     <meta property="og:locale" content="ja_JP" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={siteName} />
     <meta property="og:image" content={imageUrl} />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="資格ステップノート — 無料で学べる資格学習サイト" />
+    <meta property="og:image:width" content={String(socialImage.width)} />
+    <meta property="og:image:height" content={String(socialImage.height)} />
+    <meta property="og:image:alt" content={socialImage.alt} />
     <meta name="twitter:card" content="summary_large_image" />
     {verification && <meta name="google-site-verification" content={verification} />}
     {showAdSense && (
@@ -151,6 +155,11 @@ const showAdSense =
               <a href={href('qualifications/')}>資格一覧を見る</a>
             </div>
           </details>
+          <a href={href('study-guides/')}
+            aria-current={Astro.url.pathname === href('study-guides/') ? 'page'
+              : Astro.url.pathname.startsWith(href('study-guides/')) ? 'location' : undefined}>
+            勉強ガイド
+          </a>
           <a href={href('guide/')} aria-current={Astro.url.pathname === href('guide/') ? 'page' : undefined}>
             使い方
           </a>

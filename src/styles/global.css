@@ -244,7 +244,8 @@ main:focus {
   align-items: center;
   gap: 7px;
 }
-.main-nav > a:hover {
+.main-nav > a:hover,
+.main-nav > a[aria-current] {
   color: var(--teal);
 }
 .nav-progress {

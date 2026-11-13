@@ -49,6 +49,12 @@ const studyGuides = defineCollection({
     qualification: z.string().refine((id) => qualifications.some((q) => q.id === id)),
     published: z.iso.date(),
     keywords: z.array(z.string()),
+    cover: z.object({
+      path: z.string(),
+      alt: z.string().min(1),
+      width: z.number().int().positive(),
+      height: z.number().int().positive(),
+    }).optional(),
   }),
 });
 export const collections = { lessons, pages, studyGuides };

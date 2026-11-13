@@ -1,22 +1,41 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import { href } from '../../lib/site';
 
 export async function getStaticPaths() {
   return (await getCollection('studyGuides')).map((guide) => ({ params: { guide: guide.id }, props: { guide } }));
 }
 const { guide } = Astro.props;
 const { Content } = await render(guide);
-const { title, description, published } = guide.data;
+const { title, description, published, cover } = guide.data;
+const coverUrl = cover && new URL(href(cover.path), Astro.site).href;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
-<Layout title={title} description={description}
+<Layout title={title} description={description} socialType="article" socialImage={cover}
   breadcrumbs={[{ name: '勉強ガイド', path: 'study-guides/' }, { name: title, path: `study-guides/${guide.id}/` }]}
   schema={{ '@type': 'Article', headline: title, description, datePublished: published, inLanguage: 'ja',
-    mainEntityOfPage: { '@id': canonical } }}>
+    ...(coverUrl && { image: coverUrl }), mainEntityOfPage: { '@id': canonical } }}>
   <article class="container page-section prose">
     <h1>{title}</h1>
     <p class="muted">公開 <time datetime={published}>{published}</time></p>
+    {cover && (
+      <figure class="guide-cover">
+        <img src={href(cover.path)} alt={cover.alt} width={cover.width} height={cover.height} decoding="async" />
+      </figure>
+    )}
     <Content />
   </article>
 </Layout>
+
+<style>
+  .guide-cover {
+    margin: 1.5rem 0;
+  }
+  .guide-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+  }
+</style>
