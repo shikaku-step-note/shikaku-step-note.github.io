@@ -5,6 +5,7 @@ export const publicPageLinks = [
   { path: '', title: 'ホーム' },
   { path: 'qualifications/', title: '資格一覧・学習コース' },
   { path: 'qualifications/boki/', title: '日商簿記の級・区分の選び方' },
+  { path: 'study-guides/', title: '資格試験の勉強ガイド' },
   { path: 'guide/', title: '使い方・データの保存' },
   { path: 'about/', title: '資格ステップノートについて' },
   { path: 'editorial/', title: '編集方針・出典' },

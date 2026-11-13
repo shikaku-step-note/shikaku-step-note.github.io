@@ -41,4 +41,14 @@ const pages = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/pages' }),
   schema: z.object({ title: z.string(), description: z.string() }),
 });
-export const collections = { lessons, pages };
+const studyGuides = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/study-guides' }),
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    qualification: z.string().refine((id) => qualifications.some((q) => q.id === id)),
+    published: z.iso.date(),
+    keywords: z.array(z.string()),
+  }),
+});
+export const collections = { lessons, pages, studyGuides };

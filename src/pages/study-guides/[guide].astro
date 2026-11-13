@@ -1,0 +1,22 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  return (await getCollection('studyGuides')).map((guide) => ({ params: { guide: guide.id }, props: { guide } }));
+}
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+const { title, description, published } = guide.data;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+<Layout title={title} description={description}
+  breadcrumbs={[{ name: '勉強ガイド', path: 'study-guides/' }, { name: title, path: `study-guides/${guide.id}/` }]}
+  schema={{ '@type': 'Article', headline: title, description, datePublished: published, inLanguage: 'ja',
+    mainEntityOfPage: { '@id': canonical } }}>
+  <article class="container page-section prose">
+    <h1>{title}</h1>
+    <p class="muted">公開 <time datetime={published}>{published}</time></p>
+    <Content />
+  </article>
+</Layout>

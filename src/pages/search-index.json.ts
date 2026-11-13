@@ -18,6 +18,15 @@ export async function GET() {
         url: href(`qualifications/${q.id}/`),
         keywords: [q.category, q.shortName],
       })),
+      ...(await getCollection('studyGuides')).map(({ id, data }) => ({
+        id: 'study-guide-' + id,
+        title: data.title,
+        description: data.description,
+        qualification: data.qualification,
+        kind: '勉強ガイド',
+        url: href('study-guides/' + id + '/'),
+        keywords: data.keywords,
+      })),
       ...zeirishiSubjects.map((s) => ({
         id: `zeirishi-subject-${s.id}`,
         title: `税理士・${s.name}`,

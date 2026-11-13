@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import { href } from '../../lib/site';
+
+const guides = (await getCollection('studyGuides')).sort((a, b) => b.data.published.localeCompare(a.data.published));
+---
+<Layout title="資格試験の勉強ガイド" description="資格試験の勉強を進めるための無料ガイド。模試や過去問の復習方法と、次に取り組むレッスン・練習を紹介します。"
+  breadcrumbs={[{ name: '勉強ガイド', path: 'study-guides/' }]}>
+  <section class="container page-section prose">
+    <h1>勉強ガイド</h1>
+    <ul>
+      {guides.map((guide) => <li><a href={href(`study-guides/${guide.id}/`)}>{guide.data.title}</a><p>{guide.data.description}</p></li>)}
+    </ul>
+  </section>
+</Layout>

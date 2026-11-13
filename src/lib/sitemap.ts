@@ -17,6 +17,9 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   const lessons = (await getCollection('lessons', (lesson) => !lesson.data.sample && !lesson.data.archived))
     .sort((a, b) => a.data.order - b.data.order || a.data.stableId.localeCompare(b.data.stableId));
   const entries: SitemapEntry[] = [
+    ...(await getCollection('studyGuides')).map(({ id, data }) => ({
+      path: 'study-guides/' + id + '/', title: data.title, kind: 'site' as const,
+    })),
     ...publicPageLinks.map((page) => ({ ...page, kind: 'site' as const })),
     ...qualifications.map((qualification) => ({
       path: `qualifications/${qualification.id}/`, title: qualification.name,
