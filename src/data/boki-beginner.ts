@@ -3,6 +3,7 @@ import unit2Sales from './bb-unit2-sales.json';
 import unit2Trade from './bb-unit2-trade-case.json';
 import unit2Depth from './bb-unit2-depth.json';
 import unit3Depth from './bb-unit3-depth.json';
+import laterDepth from './bb-units456-depth.json';
 import unit1Foundations from './bb-unit1-foundations.json';
 import unit1Recording from './bb-unit1-recording.json';
 import unit1Case from './bb-unit1-case.json';
@@ -47,6 +48,10 @@ export const beginnerUnit2Version = 'bb-2026-unit2-v2';
 export const beginnerUnit3Version = 'bb-2026-unit3-v1';
 const beginnerUnit3Lessons = unit3Depth.lessons as Record<string, Question[]>;
 const beginnerUnit3Review = unit3Depth.review as Question[];
+export const beginnerLaterVersion = 'bb-2026-units456-v1';
+const beginnerLaterLessons = laterDepth.lessons as Record<string, Question[]>;
+const laterUnits: Record<string, { review: Question[]; materials: NonNullable<Assessment['materials']> }> =
+  laterDepth.units as Record<string, { review: Question[]; materials: NonNullable<Assessment['materials']> }>;
 const beginnerUnit1DepthReview = unit1Depth.review.map((question): Question => ({
   ...question,
   input: question.input as Question['input'],
@@ -60,7 +65,7 @@ const beginnerUnit2DepthReview = unit2Depth.review.map((question): Question => (
 }));
 const beginnerUnit2Bank = { ...unit2Sales, ...unit2Trade.lessons } as Record<string, Question[]>;
 export const beginnerLessonVersion = (id: string) =>
-  beginnerUnit3Lessons[id]?.length ? beginnerUnit3Version : beginnerUnit2DepthLessons[id]?.length ? beginnerUnit2Version : beginnerUnit1Bank[id]?.length ? beginnerUnit1Version : beginnerTextbookBank[id]?.length ? beginnerTextbookVersion : beginnerVersion;
+  beginnerLaterLessons[id]?.length ? beginnerLaterVersion : beginnerUnit3Lessons[id]?.length ? beginnerUnit3Version : beginnerUnit2DepthLessons[id]?.length ? beginnerUnit2Version : beginnerUnit1Bank[id]?.length ? beginnerUnit1Version : beginnerTextbookBank[id]?.length ? beginnerTextbookVersion : beginnerVersion;
 export const beginnerLessonQuestions = (id: string) => [
   ...(beginnerBank[id] ?? []),
   ...(beginnerTextbookBank[id] ?? []),
@@ -69,6 +74,7 @@ export const beginnerLessonQuestions = (id: string) => [
   ...(beginnerUnit2Bank[id] ?? []),
   ...(beginnerUnit2DepthLessons[id] ?? []),
   ...(beginnerUnit3Lessons[id] ?? []),
+  ...(beginnerLaterLessons[id] ?? []),
   ...(id === 'bb2-integration' ? (textbookLab as Question[]) : []),
 ];
 export const beginnerReviewBank = Object.fromEntries(Object.entries(reviews).map(([key,questions])=>[
@@ -142,10 +148,11 @@ export function beginnerAssessments(
     result.push({ ...base,id:`boki-beginner-unit-${unit}-glossary`,title:`簿記初級・ユニット${unit} 用語確認`,kind:'glossary',unit,
       questions:termQuestions.filter((_,n)=>unitTerms.has(terms[n]!.term)),
       instructions:'本文の用語定義から作る確認問題です。同じ用語は重複を除き、各用語の説明を解説で比較できます。応用力はユニット確認で別に確かめます。' });
-    result.push({ ...base,id:`boki-beginner-unit-${unit}-review`,title:`簿記初級・${group} 総合確認`,kind:'review',unit, version: unit === 1 ? beginnerUnit1Version : unit === 2 ? beginnerUnit2Version : unit === 3 ? beginnerUnit3Version : beginnerVersion,
+    result.push({ ...base,id:`boki-beginner-unit-${unit}-review`,title:`簿記初級・${group} 総合確認`,kind:'review',unit, version: unit === 1 ? beginnerUnit1Version : unit === 2 ? beginnerUnit2Version : unit === 3 ? beginnerUnit3Version : laterUnits[unit] ? beginnerLaterVersion : beginnerVersion,
       ...(unit === 1 && { materials: unit1Depth.materials }),
       ...(unit === 2 && { materials: [...unit2Trade.materials, ...unit2Depth.materials] }),
       ...(unit === 3 && { materials: unit3Depth.materials }),
+      ...(laterUnits[unit] && { materials: laterUnits[unit]?.materials }),
       questions:beginnerReviewBank[`unit-${unit}`] ?? [],
       instructions:'レッスン末尾とは別に作成した独自問題です。資料の条件と処理の理由を確認し、解説から関連レッスンへ戻ってください。' });
   }

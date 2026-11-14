@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerUnit1Version, beginnerUnit2Version, beginnerUnit3Version, beginnerWorkload } from '../src/data/boki-beginner';
+import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerUnit1Version, beginnerUnit2Version, beginnerUnit3Version, beginnerLaterVersion, beginnerWorkload } from '../src/data/boki-beginner';
 import { bokiAssessments } from '../src/data/bookkeeping';
 import { gradeAttempt, newAttempt, practicePoints, remainingSeconds, compatibleAttempt, assessmentMaterialIssues, isCorrect, type Question } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -188,7 +188,7 @@ test('textbook practice is added to every chapter without changing the mock vers
   for(const id of beginnerLessonIds){
     const original = beginnerBank[id] ?? [];
     const definition = assessments.find(a=>a.id===id+'-check')!;
-    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : ['bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims'].includes(id) ? beginnerUnit3Version : beginnerTextbookVersion,id);
+    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : ['bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims'].includes(id) ? beginnerUnit3Version : beginnerLaterVersion,id);
     assert.deepEqual(definition.questions.slice(0,original.length),original,id);
     assert.ok(definition.questions.length>original.length,id);
     if(original.length) assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);

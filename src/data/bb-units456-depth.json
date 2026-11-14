@@ -1,0 +1,782 @@
+{
+  "lessons": {
+    "bb2-loans": [
+      {
+        "id": "bb-full-loans",
+        "lesson": "bb2-loans",
+        "field": "basics",
+        "prompt": "借入金の月初残高は85,000円。当月に追加で24,000円を借り、元金32,000円と利息900円を払った。月末の借入金残高を求めてください。",
+        "explanation": "残高を動かすのは元金です。85,000＋24,000−32,000＝77,000円。利息900円は支払利息に記録します。",
+        "objectives": [
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "77000"
+        ]
+      }
+    ],
+    "bb2-temporary": [
+      {
+        "id": "bb-full-temporary",
+        "lesson": "bb2-temporary",
+        "field": "basics",
+        "prompt": "旅費として現金で渡した仮払金18,000円を精算した。旅費は21,500円で、不足分を現金で支払った。仕訳を入力してください。",
+        "explanation": "旅費交通費21,500円を借方に記録します。そのうち18,000円は支払済みの仮払金で、今回現金が減るのは差額3,500円です。",
+        "objectives": [
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "旅費交通費",
+            "仮払金",
+            "現金",
+            "普通預金",
+            "借入金",
+            "買掛金",
+            "支払手数料"
+          ],
+          "debits": [
+            {
+              "account": "旅費交通費",
+              "amount": 21500
+            }
+          ],
+          "credits": [
+            {
+              "account": "仮払金",
+              "amount": 18000
+            },
+            {
+              "account": "現金",
+              "amount": 3500
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"旅費交通費\",\"amount\":21500}],\"credits\":[{\"account\":\"仮払金\",\"amount\":18000},{\"account\":\"現金\",\"amount\":3500}]}"
+        ]
+      }
+    ],
+    "bb2-custody": [
+      {
+        "id": "bb-full-custody",
+        "lesson": "bb2-custody",
+        "field": "basics",
+        "prompt": "給与総額180,000円から所得税4,000円を預かり、事前に立て替えた本人負担分6,000円も差し引いた。残額を普通預金で支払った。仕訳を入力してください。",
+        "explanation": "給与は総額180,000円。税は預り金で、立て替えた6,000円は回収により立替金を減らします。差引振込額は170,000円です。",
+        "objectives": [
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "給料",
+            "預り金",
+            "立替金",
+            "普通預金",
+            "現金",
+            "借入金",
+            "買掛金",
+            "支払手数料"
+          ],
+          "debits": [
+            {
+              "account": "給料",
+              "amount": 180000
+            }
+          ],
+          "credits": [
+            {
+              "account": "預り金",
+              "amount": 4000
+            },
+            {
+              "account": "立替金",
+              "amount": 6000
+            },
+            {
+              "account": "普通預金",
+              "amount": 170000
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"給料\",\"amount\":180000}],\"credits\":[{\"account\":\"預り金\",\"amount\":4000},{\"account\":\"立替金\",\"amount\":6000},{\"account\":\"普通預金\",\"amount\":170000}]}"
+        ]
+      }
+    ],
+    "bb2-bills": [
+      {
+        "id": "bb-full-bills",
+        "lesson": "bb2-bills",
+        "field": "basics",
+        "prompt": "既に記録した買掛金36,000円のうち25,000円を電子記録債務に切り替え、同時に残りを普通預金で支払った。仕訳を入力してください。",
+        "explanation": "買掛金は全額減ります。一方で電子記録債務25,000円が発生し、普通預金は残額11,000円減ります。仕入は既に記録済みです。",
+        "objectives": [
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "買掛金",
+            "電子記録債務",
+            "普通預金",
+            "現金",
+            "借入金",
+            "支払手数料"
+          ],
+          "debits": [
+            {
+              "account": "買掛金",
+              "amount": 36000
+            }
+          ],
+          "credits": [
+            {
+              "account": "電子記録債務",
+              "amount": 25000
+            },
+            {
+              "account": "普通預金",
+              "amount": 11000
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"買掛金\",\"amount\":36000}],\"credits\":[{\"account\":\"電子記録債務\",\"amount\":25000},{\"account\":\"普通預金\",\"amount\":11000}]}"
+        ]
+      }
+    ],
+    "bb2-assets": [
+      {
+        "id": "bb-full-assets",
+        "lesson": "bb2-assets",
+        "field": "basics",
+        "prompt": "営業用の備品に本体96,000円、購入に直接要した運賃4,200円、設置費9,800円を支払った。備品の取得原価は何円か。",
+        "explanation": "商品仕入れと区別し、備品を取得して使用できる状態にするために直接かかった金額を加えます。96,000＋4,200＋9,800＝110,000円です。",
+        "objectives": [
+          0
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "110000"
+        ]
+      }
+    ],
+    "bb2-depreciation": [
+      {
+        "id": "bb-full-depreciation",
+        "lesson": "bb2-depreciation",
+        "field": "basics",
+        "prompt": "取得原価250,000円、月初の減価償却累計額75,000円。問題で指定された当月分の見積減価償却費は5,400円。月末の帳簿価額を求めてください。",
+        "explanation": "取得原価は250,000円のままです。累計額を75,000＋5,400＝80,400円とし、差し引いた169,600円が帳簿価額です。",
+        "objectives": [
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "169600"
+        ]
+      }
+    ],
+    "bb2-capital": [
+      {
+        "id": "bb-full-capital",
+        "lesson": "bb2-capital",
+        "field": "basics",
+        "prompt": "個人商店が月初から月末までに、店主から元入れ55,000円を受け、店主の私用現金16,000円と店主個人の所得税9,500円を支出した。いずれも資本金で処理する場合、資本金の純増額を求めてください。",
+        "explanation": "元入れが資本金を増やし、私用支出と個人の所得税は資本金を減らします。55,000−16,000−9,500＝29,500円です。",
+        "objectives": [
+          0,
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "29500"
+        ]
+      }
+    ],
+    "bb2-expenses": [
+      {
+        "id": "bb-full-expenses",
+        "lesson": "bb2-expenses",
+        "field": "basics",
+        "prompt": "事業所の固定資産税28,000円を当月の費用として計上し、当月中にそのうち9,000円を納付した。月初の未払残高は0円。固定資産税の月末未払残高を求めてください。",
+        "explanation": "費用計上時に28,000円の債務が生じ、納付で9,000円減っています。残りは19,000円です。納付額を再び費用に加えません。",
+        "objectives": [
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "19000"
+        ]
+      }
+    ],
+    "bb2-vat": [
+      {
+        "id": "bb-full-vat",
+        "lesson": "bb2-vat",
+        "field": "basics",
+        "prompt": "税抜方式。月初の仮払消費税・仮受消費税は0円。当月の税抜売上120,000円、税抜仕入76,000円。税率はいずれも10％で他の取引はない。この教材の設例における差引額を求めてください。",
+        "explanation": "仮受12,000円から仮払7,600円を引くため、差引額は4,400円です。資金の決済時点とは分けて読みます。",
+        "objectives": [
+          0,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "4400"
+        ]
+      }
+    ],
+    "bb2-trial-balance": [
+      {
+        "id": "bb-full-trial",
+        "lesson": "bb2-trial-balance",
+        "field": "basics",
+        "prompt": "現金勘定の借方合計98,000円、貸方合計62,000円。残高試算表の借方欄に記載する金額を求めてください。",
+        "explanation": "残高試算表の金額は左右の差です。借方が大きいので、98,000−62,000＝36,000円を借方残高に記入します。",
+        "objectives": [
+          0
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "36000"
+        ]
+      }
+    ],
+    "bb2-monthly": [
+      {
+        "id": "bb-full-monthly",
+        "lesson": "bb2-monthly",
+        "field": "basics",
+        "prompt": "月初現金43,000円、当月の現金受取18,000円、支払29,000円。月中に普通預金でも売掛金15,000円を回収している。月末の現金残高は何円か。",
+        "explanation": "預金で受け取った15,000円は現金に入りません。現金だけを集計し、43,000＋18,000−29,000＝32,000円です。",
+        "objectives": [
+          0
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "32000"
+        ]
+      }
+    ],
+    "bb2-integration": [
+      {
+        "id": "bb-full-integration",
+        "lesson": "bb2-integration",
+        "field": "basics",
+        "prompt": "売上96,000円、問題で指定された売上原価53,000円、当月の費用のうち売上原価以外は27,500円。借入元金の返済10,000円と店主の引出3,000円もある。利益を求めてください。",
+        "explanation": "売上から売上原価とその他の費用を引き、96,000−53,000−27,500＝15,500円。元金返済と引出しは費用に含めません。",
+        "objectives": [
+          1
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "15500"
+        ]
+      }
+    ]
+  },
+  "units": {
+    "4": {
+      "materials": [
+        {
+          "id": "bb-full-u4-docs",
+          "title": "若草店の借入れと一時勘定",
+          "paragraphs": [
+            "月初借入金60,000円、既存の買掛金25,000円。他の対象勘定の月初残高は0円です。税や手形に関する追加費用は考えません。"
+          ],
+          "tables": [
+            {
+              "caption": "若草店の借入れと一時勘定",
+              "headers": [
+                "日付",
+                "記録"
+              ],
+              "rows": [
+                [
+                  "3日",
+                  "普通預金に40,000円を借り入れた。"
+                ],
+                [
+                  "7日",
+                  "出張前に現金12,000円を仮払いした。"
+                ],
+                [
+                  "10日",
+                  "確定旅費9,500円。残りは従業員が現金で返した。"
+                ],
+                [
+                  "15日",
+                  "給与150,000円から本人の所得税3,000円を預かり、残りを普通預金で支払った。"
+                ],
+                [
+                  "18日",
+                  "既存の買掛金25,000円を電子記録債務に切り替えた。"
+                ],
+                [
+                  "26日",
+                  "借入元金17,000円と利息600円を普通預金から支払った。"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "review": [
+        {
+          "id": "bb-full-review-u4-loan",
+          "lesson": "bb2-loans",
+          "field": "basics",
+          "prompt": "共通資料から月末の借入金を求めてください。",
+          "explanation": "月初60,000円に追加借入40,000円を加え、元金返済17,000円を引きます。利息は債務の返済額に含めません。",
+          "objectives": [
+            2
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "83000"
+          ],
+          "materialIds": [
+            "bb-full-u4-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u4-travel",
+          "lesson": "bb2-temporary",
+          "field": "basics",
+          "prompt": "共通資料の10日の仕訳を入力してください。",
+          "explanation": "旅費交通費9,500円を計上し、現金の返却2,500円も借方へ。仮払金12,000円を貸方で消します。",
+          "objectives": [
+            1,
+            2
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "journal",
+          "journal": {
+            "accounts": [
+              "旅費交通費",
+              "現金",
+              "仮払金",
+              "普通預金",
+              "借入金",
+              "買掛金",
+              "支払手数料"
+            ],
+            "debits": [
+              {
+                "account": "旅費交通費",
+                "amount": 9500
+              },
+              {
+                "account": "現金",
+                "amount": 2500
+              }
+            ],
+            "credits": [
+              {
+                "account": "仮払金",
+                "amount": 12000
+              }
+            ]
+          },
+          "accepted": [
+            "{\"debits\":[{\"account\":\"旅費交通費\",\"amount\":9500},{\"account\":\"現金\",\"amount\":2500}],\"credits\":[{\"account\":\"仮払金\",\"amount\":12000}]}"
+          ],
+          "materialIds": [
+            "bb-full-u4-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u4-withholding",
+          "lesson": "bb2-custody",
+          "field": "basics",
+          "prompt": "共通資料の15日に普通預金から支払った額を求めてください。",
+          "explanation": "給料総額150,000円から預かった所得税3,000円を引き、147,000円を振り込みます。預り金3,000円は後日納めるまで残ります。",
+          "objectives": [
+            1
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "147000"
+          ],
+          "materialIds": [
+            "bb-full-u4-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u4-electronic",
+          "lesson": "bb2-bills",
+          "field": "basics",
+          "prompt": "共通資料の18日の仕訳を入力してください。",
+          "explanation": "支払いの約束を電子記録債務へ切り替えます。買掛金25,000円が減り、同額の電子記録債務が増えます。",
+          "objectives": [
+            1
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "journal",
+          "journal": {
+            "accounts": [
+              "買掛金",
+              "電子記録債務",
+              "現金",
+              "普通預金",
+              "借入金",
+              "支払手数料"
+            ],
+            "debits": [
+              {
+                "account": "買掛金",
+                "amount": 25000
+              }
+            ],
+            "credits": [
+              {
+                "account": "電子記録債務",
+                "amount": 25000
+              }
+            ]
+          },
+          "accepted": [
+            "{\"debits\":[{\"account\":\"買掛金\",\"amount\":25000}],\"credits\":[{\"account\":\"電子記録債務\",\"amount\":25000}]}"
+          ],
+          "materialIds": [
+            "bb-full-u4-docs"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "materials": [
+        {
+          "id": "bb-full-u5-docs",
+          "title": "朝風店の固定資産・資本金・費用",
+          "paragraphs": [
+            "個人商店。月初資本金200,000円と帳簿価額80,000円の土地があります。記載額は円、消費税は扱いません。個人所得税と私用支出は資本金で処理します。"
+          ],
+          "tables": [
+            {
+              "caption": "朝風店の固定資産・資本金・費用",
+              "headers": [
+                "日付",
+                "記録"
+              ],
+              "rows": [
+                [
+                  "1日",
+                  "店主が普通預金に30,000円を元入れ。"
+                ],
+                [
+                  "3日",
+                  "備品の本体95,000円と使用に必要な設置費5,000円を普通預金で支払。"
+                ],
+                [
+                  "8日",
+                  "帳簿価額80,000円の土地を91,000円で引き渡し、代金は後日受取。"
+                ],
+                [
+                  "13日",
+                  "事業の固定資産税14,000円の通知を受け、当月の費用に計上。"
+                ],
+                [
+                  "17日",
+                  "固定資産税のうち6,000円を普通預金で納付。"
+                ],
+                [
+                  "19日",
+                  "店主個人の所得税4,000円を普通預金から支払。"
+                ],
+                [
+                  "月末",
+                  "備品の当月見積減価償却費2,500円を間接法で記録。"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "review": [
+        {
+          "id": "bb-full-review-u5-land",
+          "lesson": "bb2-assets",
+          "field": "basics",
+          "prompt": "共通資料の土地売却益を求めてください。",
+          "explanation": "売却代金91,000円から帳簿価額80,000円を引きます。利益11,000円は引渡日に記録し、未入金なので代金は未収入金です。",
+          "objectives": [
+            2
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "11000"
+          ],
+          "materialIds": [
+            "bb-full-u5-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u5-book",
+          "lesson": "bb2-depreciation",
+          "field": "basics",
+          "prompt": "共通資料から月末の備品の帳簿価額を求めてください。",
+          "explanation": "直接かかった設置費を含む取得原価は100,000円。累計額2,500円を差し引き97,500円です。",
+          "objectives": [
+            0,
+            2
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "97500"
+          ],
+          "materialIds": [
+            "bb-full-u5-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u5-capital",
+          "lesson": "bb2-capital",
+          "field": "basics",
+          "prompt": "共通資料から当月の資本金の純増額を求めてください。",
+          "explanation": "店主の元入れ30,000円で増え、個人所得税4,000円で減ります。純増は26,000円。事業の固定資産税や売却益を資本金勘定の直接の増減に加えません。",
+          "objectives": [
+            0,
+            1,
+            2
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "26000"
+          ],
+          "materialIds": [
+            "bb-full-u5-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u5-tax",
+          "lesson": "bb2-expenses",
+          "field": "basics",
+          "prompt": "共通資料から期首未払なしとして当月末の未払固定資産税を求めてください。",
+          "explanation": "当月に計上した14,000円のうち、6,000円は納付済みです。納付は未払額を減らしますので残り8,000円です。",
+          "objectives": [
+            2
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "8000"
+          ],
+          "materialIds": [
+            "bb-full-u5-docs"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "materials": [
+        {
+          "id": "bb-full-u6-docs",
+          "title": "緑店の月次集計",
+          "paragraphs": [
+            "税抜方式・税率10％。月初は現金32,000円、普通預金80,000円、売掛金20,000円、買掛金12,000円。仮払・仮受消費税の月初残高は0円。資料にない取引はありません。 月初の繰越商品50,000円、資本金170,000円。月初の資産・負債はここに挙げたものだけです。"
+          ],
+          "tables": [
+            {
+              "caption": "緑店の月次集計",
+              "headers": [
+                "日付",
+                "記録"
+              ],
+              "rows": [
+                [
+                  "3日",
+                  "税抜40,000円の商品を掛けで販売。"
+                ],
+                [
+                  "8日",
+                  "税抜22,000円の商品を掛けで仕入れ。"
+                ],
+                [
+                  "15日",
+                  "前月の売掛金から12,000円を普通預金で回収。"
+                ],
+                [
+                  "20日",
+                  "前月の買掛金のうち8,000円を普通預金で支払。"
+                ],
+                [
+                  "25日",
+                  "当月の家賃を現金7,000円で支払（この設例では消費税を考えない）。"
+                ],
+                [
+                  "月末資料",
+                  "当月の売上原価は31,000円。家賃以外の費用はないものとする。"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "review": [
+        {
+          "id": "bb-full-review-u6-tax",
+          "lesson": "bb2-vat",
+          "field": "basics",
+          "prompt": "共通資料で、仮受消費税から仮払消費税を引いた額を求めてください。",
+          "explanation": "仮受は40,000×10％＝4,000円。仮払は22,000×10％＝2,200円。差額1,800円です。前月の債権・債務を決済しても当月に税を計上しません。",
+          "objectives": [
+            0,
+            2
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "1800"
+          ],
+          "materialIds": [
+            "bb-full-u6-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u6-ar",
+          "lesson": "bb2-trial-balance",
+          "field": "basics",
+          "prompt": "共通資料から、売掛金の月末借方残高を求めてください。",
+          "explanation": "売掛金に加えるのは税込販売額44,000円。月初20,000円に加え、回収12,000円を引いて52,000円です。",
+          "objectives": [
+            0
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "52000"
+          ],
+          "materialIds": [
+            "bb-full-u6-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u6-bank",
+          "lesson": "bb2-monthly",
+          "field": "basics",
+          "prompt": "共通資料から月末の普通預金を求めてください。",
+          "explanation": "普通預金の増減は15日の回収12,000円と20日の支払8,000円だけです。80,000＋12,000−8,000＝84,000円。現金で払った家賃は別です。",
+          "objectives": [
+            0
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "84000"
+          ],
+          "materialIds": [
+            "bb-full-u6-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u6-profit",
+          "lesson": "bb2-integration",
+          "field": "basics",
+          "prompt": "共通資料から当月の利益を求めてください。",
+          "explanation": "税抜売上40,000円から指定の売上原価31,000円と家賃7,000円を引きます。利益は2,000円で、当月の預金増加や請求額とは区別します。",
+          "objectives": [
+            1
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "2000"
+          ],
+          "materialIds": [
+            "bb-full-u6-docs"
+          ]
+        },
+        {
+          "id": "bb-full-review-u6-totals",
+          "lesson": "bb2-trial-balance",
+          "field": "basics",
+          "prompt": "共通資料の月初残高と当月の仕訳を合計試算表に記入します。借方合計と貸方合計はそれぞれ何円ですか。両側の共通額を数字で入力してください。売上原価の月末資料は損益計算用で、ここでは追加の仕訳を行いません。",
+          "explanation": "月初残高の借方は32,000＋80,000＋20,000＋50,000＝182,000円、貸方は12,000＋170,000＝182,000円です。当月の各仕訳は借貸それぞれ44,000＋24,200＋12,000＋8,000＋7,000＝95,200円。月初と当月を合わせ、両側が277,200円で一致します。",
+          "objectives": [
+            1
+          ],
+          "options": [],
+          "answer": 0,
+          "input": "number",
+          "strictNumber": true,
+          "accepted": [
+            "277200"
+          ],
+          "materialIds": [
+            "bb-full-u6-docs"
+          ]
+        }
+      ]
+    }
+  }
+}

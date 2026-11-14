@@ -2906,6 +2906,10 @@
       {
         "lesson": "bb2-loans",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-loans",
+        "anchor": "unit4-loans-transfer"
       }
     ],
     "explanationStatus": "complete",
@@ -2986,6 +2990,13 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb-full-loans",
+        "assessment": "bb2-loans-check",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "assessments": [
@@ -3023,6 +3034,13 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb-full-review-u4-loan",
+        "assessment": "boki-beginner-unit-4-review",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -3040,7 +3058,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -3427,6 +3445,10 @@
       {
         "lesson": "bb2-custody",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-custody",
+        "anchor": "unit4-custody-transfer"
       }
     ],
     "explanationStatus": "complete",
@@ -3506,6 +3528,14 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-custody",
+        "assessment": "bb2-custody-check",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -3530,6 +3560,13 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb-full-review-u4-withholding",
+        "assessment": "boki-beginner-unit-4-review",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "mockQuestions": [
@@ -3551,7 +3588,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -3591,6 +3628,10 @@
       {
         "lesson": "bb2-temporary",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-temporary",
+        "anchor": "unit4-temporary-transfer"
       }
     ],
     "explanationStatus": "complete",
@@ -3669,6 +3710,14 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-temporary",
+        "assessment": "bb2-temporary-check",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -3700,6 +3749,14 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-review-u4-travel",
+        "assessment": "boki-beginner-unit-4-review",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -3725,7 +3782,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -3761,6 +3818,10 @@
       {
         "lesson": "bb2-bills",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-bills",
+        "anchor": "unit4-bills-transfer"
       }
     ],
     "explanationStatus": "complete",
@@ -3869,7 +3930,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -3905,6 +3966,10 @@
       {
         "lesson": "bb2-bills",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-bills",
+        "anchor": "unit4-bills-transfer"
       }
     ],
     "explanationStatus": "complete",
@@ -3970,6 +4035,14 @@
           1,
           2
         ]
+      },
+      {
+        "id": "bb-full-bills",
+        "assessment": "bb2-bills-check",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -3987,6 +4060,13 @@
         "objectiveIndices": [
           1,
           2
+        ]
+      },
+      {
+        "id": "bb-full-review-u4-electronic",
+        "assessment": "boki-beginner-unit-4-review",
+        "objectiveIndices": [
+          1
         ]
       }
     ],
@@ -4013,7 +4093,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -4049,6 +4129,10 @@
       {
         "lesson": "bb2-assets",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-assets",
+        "anchor": "unit5-assets-method"
       }
     ],
     "explanationStatus": "complete",
@@ -4105,6 +4189,13 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-assets",
+        "assessment": "bb2-assets-check",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "assessments": [
@@ -4140,7 +4231,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -4172,6 +4263,10 @@
       {
         "lesson": "bb2-assets",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-assets",
+        "anchor": "unit5-assets-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -4230,6 +4325,13 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb-full-review-u5-land",
+        "assessment": "boki-beginner-unit-5-review",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -4255,7 +4357,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -4295,6 +4397,10 @@
       {
         "lesson": "bb2-depreciation",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-depreciation",
+        "anchor": "unit5-depreciation-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -4386,6 +4492,13 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb-full-depreciation",
+        "assessment": "bb2-depreciation-check",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "assessments": [
@@ -4417,6 +4530,14 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-review-u5-book",
+        "assessment": "boki-beginner-unit-5-review",
+        "objectiveIndices": [
+          0,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -4442,7 +4563,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -4482,6 +4603,10 @@
       {
         "lesson": "bb2-capital",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-capital",
+        "anchor": "unit5-capital-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -4573,6 +4698,15 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-capital",
+        "assessment": "bb2-capital-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -4595,6 +4729,15 @@
         "assessment": "boki-beginner-unit-5-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb-full-review-u5-capital",
+        "assessment": "boki-beginner-unit-5-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
         ]
       }
     ],
@@ -4621,7 +4764,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -4657,6 +4800,10 @@
       {
         "lesson": "bb2-expenses",
         "anchor": "worked-5"
+      },
+      {
+        "lesson": "bb2-expenses",
+        "anchor": "unit5-expenses-method"
       }
     ],
     "explanationStatus": "complete",
@@ -4766,7 +4913,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -4806,6 +4953,10 @@
       {
         "lesson": "bb2-expenses",
         "anchor": "worked-5"
+      },
+      {
+        "lesson": "bb2-expenses",
+        "anchor": "unit5-expenses-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -4950,7 +5101,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -4982,6 +5133,10 @@
       {
         "lesson": "bb2-capital",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-capital",
+        "anchor": "unit5-capital-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -5017,6 +5172,15 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-capital",
+        "assessment": "bb2-capital-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -5025,6 +5189,15 @@
         "assessment": "boki-beginner-unit-5-review",
         "objectiveIndices": [
           1
+        ]
+      },
+      {
+        "id": "bb-full-review-u5-capital",
+        "assessment": "boki-beginner-unit-5-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
         ]
       }
     ],
@@ -5051,7 +5224,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -5083,6 +5256,10 @@
       {
         "lesson": "bb2-expenses",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-expenses",
+        "anchor": "unit5-expenses-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -5104,6 +5281,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-expenses",
+        "assessment": "bb2-expenses-check",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "assessments": [
@@ -5113,6 +5297,13 @@
         "objectiveIndices": [
           0,
           1,
+          2
+        ]
+      },
+      {
+        "id": "bb-full-review-u5-tax",
+        "assessment": "boki-beginner-unit-5-review",
+        "objectiveIndices": [
           2
         ]
       }
@@ -5136,7 +5327,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -5172,6 +5363,10 @@
       {
         "lesson": "bb2-expenses",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-expenses",
+        "anchor": "unit5-expenses-method"
       }
     ],
     "explanationStatus": "complete",
@@ -5295,7 +5490,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -5335,6 +5530,10 @@
       {
         "lesson": "bb2-vat",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-vat",
+        "anchor": "unit6-vat-refunds"
       }
     ],
     "explanationStatus": "complete",
@@ -5426,6 +5625,14 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-vat",
+        "assessment": "bb2-vat-check",
+        "objectiveIndices": [
+          0,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -5455,6 +5662,14 @@
         "assessment": "boki-beginner-unit-6-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb-full-review-u6-tax",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          0,
+          2
         ]
       }
     ],
@@ -5489,7 +5704,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -5525,6 +5740,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trial-balance",
+        "anchor": "unit6-trial-balance-reconcile"
       }
     ],
     "explanationStatus": "complete",
@@ -5611,6 +5830,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-review-u6-totals",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "mockQuestions": [
@@ -5628,7 +5854,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -5664,6 +5890,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trial-balance",
+        "anchor": "unit6-trial-balance-reconcile"
       }
     ],
     "explanationStatus": "complete",
@@ -5727,6 +5957,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-trial",
+        "assessment": "bb2-trial-balance-check",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "assessments": [
@@ -5750,6 +5987,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-review-u6-ar",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "mockQuestions": [
@@ -5767,7 +6011,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -5799,6 +6043,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trial-balance",
+        "anchor": "unit6-trial-balance-reconcile"
       }
     ],
     "explanationStatus": "complete",
@@ -5843,6 +6091,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-review-u6-totals",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "mockQuestions": [
@@ -5860,7 +6115,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -5892,6 +6147,10 @@
       {
         "lesson": "bb2-monthly",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-monthly",
+        "anchor": "unit6-monthly-bank"
       }
     ],
     "explanationStatus": "complete",
@@ -5930,6 +6189,13 @@
       },
       {
         "id": "bb2-monthly-q05",
+        "assessment": "bb2-monthly-check",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb-full-monthly",
         "assessment": "bb2-monthly-check",
         "objectiveIndices": [
           0
@@ -5984,7 +6250,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6016,6 +6282,10 @@
       {
         "lesson": "bb2-monthly",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-monthly",
+        "anchor": "unit6-monthly-bank"
       }
     ],
     "explanationStatus": "complete",
@@ -6067,6 +6337,13 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-review-u6-bank",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "mockQuestions": [
@@ -6108,7 +6385,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6270,6 +6547,10 @@
       {
         "lesson": "bb2-monthly",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-monthly",
+        "anchor": "unit6-monthly-bank"
       }
     ],
     "explanationStatus": "complete",
@@ -6348,7 +6629,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6503,6 +6784,10 @@
       {
         "lesson": "bb2-monthly",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-monthly",
+        "anchor": "unit6-monthly-bank"
       }
     ],
     "explanationStatus": "complete",
@@ -6588,7 +6873,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6624,6 +6909,10 @@
       {
         "lesson": "bb2-capital",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-capital",
+        "anchor": "unit5-capital-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -6687,6 +6976,15 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb-full-capital",
+        "assessment": "bb2-capital-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -6702,6 +7000,15 @@
         "assessment": "boki-beginner-unit-5-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb-full-review-u5-capital",
+        "assessment": "boki-beginner-unit-5-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
         ]
       }
     ],
@@ -6728,7 +7035,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6760,6 +7067,10 @@
       {
         "lesson": "bb2-vat",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-vat",
+        "anchor": "unit6-vat-refunds"
       }
     ],
     "explanationStatus": "complete",
@@ -6788,6 +7099,14 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb-full-vat",
+        "assessment": "bb2-vat-check",
+        "objectiveIndices": [
+          0,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -6795,6 +7114,14 @@
         "id": "bb2-u6-review-02",
         "assessment": "boki-beginner-unit-6-review",
         "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb-full-review-u6-tax",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          0,
           2
         ]
       }
@@ -6830,7 +7157,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6862,6 +7189,10 @@
       {
         "lesson": "bb2-integration",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-integration",
+        "anchor": "unit6-integration-wrong-account"
       }
     ],
     "explanationStatus": "complete",
@@ -6897,6 +7228,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-full-integration",
+        "assessment": "bb2-integration-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -6913,6 +7251,13 @@
         "objectiveIndices": [
           1,
           2
+        ]
+      },
+      {
+        "id": "bb-full-review-u6-profit",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          1
         ]
       }
     ],
@@ -6935,7 +7280,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6967,6 +7312,10 @@
       {
         "lesson": "bb2-integration",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-integration",
+        "anchor": "unit6-integration-wrong-account"
       }
     ],
     "explanationStatus": "complete",
@@ -7033,7 +7382,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   }
 ]
