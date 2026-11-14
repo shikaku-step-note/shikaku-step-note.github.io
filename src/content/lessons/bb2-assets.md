@@ -3,7 +3,7 @@
   "stableId": "bb2-assets", "qualification": "boki-beginner",
   "title": "固定資産の取得額を決め、土地の売却損益を計算する",
   "description": "商品と固定資産を用途で区別し、購入代金と付随費用から取得額を計算します。現金購入、後払い、土地の売却を仕訳と残高の両方で確かめます。",
-  "order": 18, "minutes": 65, "sample": false, "unit": 5, "subject": "basics", "syllabus": [2],
+  "order": 20, "minutes": 65, "sample": false, "unit": 5, "subject": "basics", "syllabus": [2],
   "scopeLabel": "2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）", "updated": "2026-11-12",
   "objectives": ["使用目的と付随費用から固定資産の取得額を判断する", "固定資産の現金購入・後払い・支払いを仕訳する", "土地の帳簿価額と売却代金を比較して売却損益を記録する"],
   "prerequisite": "資産の増減、未払金と買掛金の区別、未収入金の使い方を復習してください。",

@@ -4,7 +4,7 @@
   "qualification": "boki-beginner",
   "title": "未収入金・未払金と商品取引の区別",
   "description": "未収入金・未払金と商品取引の区別を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
-  "order": 13,
+  "order": 15,
   "minutes": 65,
   "sample": false,
   "updated": "2026-10-28",

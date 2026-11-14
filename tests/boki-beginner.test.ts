@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerUnit1Version, beginnerWorkload } from '../src/data/boki-beginner';
+import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerUnit1Version, beginnerUnit2Version, beginnerWorkload } from '../src/data/boki-beginner';
 import { bokiAssessments } from '../src/data/bookkeeping';
 import { gradeAttempt, newAttempt, practicePoints, remainingSeconds, compatibleAttempt, assessmentMaterialIssues, isCorrect, type Question } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -29,6 +29,16 @@ test('all current scope is mapped to detailed teaching and independently assesse
     assert.equal(row.data.objectives.length,3,id);
     if (id==='bb2-foundations-case') {
       assert.ok(row.body.includes('<figure>') && row.body.includes('別の店の資料で自分で解く'));
+      continue;
+    }
+    if (id === 'bb2-sales-returns' || id === 'bb2-trade-case') {
+      assert.ok(row.body.includes('<figure>'), id);
+      const check = assessments.find(a => a.id === id + '-check')!;
+      const review = assessments.find(a => a.id === 'boki-beginner-unit-2-review')!;
+      for (let i = 0; i < row.data.objectives.length; i++) {
+        assert.ok(check.questions.some(q => q.objectives?.includes(i)), id);
+        assert.ok(review.questions.some(q => (q.lesson === id && q.objectives?.includes(i)) || q.targetObjectives?.[id]?.includes(i)), id);
+      }
       continue;
     }
     // A prose guard, not a claim that character count proves educational completeness.
@@ -64,7 +74,7 @@ test('new work does not inherit old completions or erase bookmarks and historica
   old.assessments[legacy.id]=[attempt];
   const restored=validateData(JSON.parse(JSON.stringify(old)));
   const course=selectCourseLessons(entries.map(l=>({id:l.data.stableId,qualification:l.data.qualification,archived:l.data.archived})), 'boki-beginner');
-  assert.equal(course.length,25);
+  assert.equal(course.length,beginnerLessonIds.length);
   assert.equal(course.filter(l=>restored.records[l.id]?.status==='completed').length,0);
   assert.equal(Object.values(restored.records).filter(r=>r.bookmarked).length,4);
   assert.ok(!compatibleAttempt(assessments.find(a=>a.id===legacy.id)!,attempt));
@@ -178,7 +188,7 @@ test('textbook practice is added to every chapter without changing the mock vers
   for(const id of beginnerLessonIds){
     const original = beginnerBank[id] ?? [];
     const definition = assessments.find(a=>a.id===id+'-check')!;
-    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : beginnerTextbookVersion,id);
+    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : beginnerTextbookVersion,id);
     assert.deepEqual(definition.questions.slice(0,original.length),original,id);
     assert.ok(definition.questions.length>original.length,id);
     if(original.length) assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);

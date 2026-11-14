@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-trial-balance","qualification":"boki-beginner","title":"合計・残高・合計残高試算表を作って照合する",
   "description":"勘定の借方・貸方の合計から残高を求め、三種類の試算表へ記入します。一か月の取引から作る一貫した資料で、転記、貸借一致、誤りの発見範囲まで練習します。",
-  "order":23,"minutes":80,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
+  "order": 25,"minutes":80,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
   "objectives":["勘定の借方合計・貸方合計から残高の金額と側を判断する","三種類の試算表を同じ資料から作成する","貸借一致で見つかる誤りと見つからない誤りを区別する"],
   "prerequisite":"仕訳から総勘定元帳への転記と、資産・負債・純資産・収益・費用の勘定記入法則を復習してください。",
   "keywords":["合計試算表","残高試算表","合計残高試算表","貸借平均","借方残高","貸方残高"],

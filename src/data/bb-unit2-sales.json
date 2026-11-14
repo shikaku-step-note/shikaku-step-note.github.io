@@ -1,0 +1,217 @@
+{
+  "bb2-sales": [
+    {
+      "id": "bb2-sales-unit2-purchase-documents",
+      "prompt": "商品78,000円を仕入れ、普通預金から21,000円を支払い、残額を掛けとした。同日に当店負担の引取り運賃3,600円を現金で運送会社へ支払った。運賃を仕入に含め、同日の取引を一つにまとめて仕訳する。消費税は考えない。",
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "仕入",
+          "普通預金",
+          "買掛金",
+          "現金",
+          "発送費",
+          "売上"
+        ],
+        "debits": [
+          {
+            "account": "仕入",
+            "amount": 81600
+          }
+        ],
+        "credits": [
+          {
+            "account": "普通預金",
+            "amount": 21000
+          },
+          {
+            "account": "買掛金",
+            "amount": 57000
+          },
+          {
+            "account": "現金",
+            "amount": 3600
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"仕入\",\"amount\":81600}],\"credits\":[{\"account\":\"普通預金\",\"amount\":21000},{\"account\":\"買掛金\",\"amount\":57000},{\"account\":\"現金\",\"amount\":3600}]}"
+      ],
+      "explanation": "仕入は商品78,000円と当店負担の運賃3,600円で81,600円。掛けは商品代の未払い78,000−21,000＝57,000円だけです。別に現金で払った運賃は貸方現金に記録します。",
+      "objectives": [
+        0,
+        1
+      ],
+      "lesson": "bb2-sales",
+      "field": "basics"
+    },
+    {
+      "id": "bb2-sales-unit2-buyer-freight",
+      "prompt": "掛売上91,000円。別に、契約上は客が負担する送料4,000円を販売店が現金で立て替えた。後日、商品代と立替分を一緒に回収する。送料を立替金として扱うとき、販売日の売上高と発送費はいくらか。",
+      "options": [
+        "売上91,000円・発送費4,000円",
+        "売上87,000円・発送費0円",
+        "売上95,000円・発送費4,000円",
+        "売上91,000円・発送費0円"
+      ],
+      "answer": 3,
+      "explanation": "商品代91,000円だけが売上です。客の負担分を一時的に払い、立替金として扱う条件なので、4,000円は発送費にも売上にも含めません。",
+      "objectives": [
+        1
+      ],
+      "lesson": "bb2-sales",
+      "field": "basics"
+    },
+    {
+      "id": "bb2-sales-unit2-sale-collection",
+      "prompt": "商品93,000円を販売し、その場で18,000円を現金で受け取り、残りを掛けとした。後日、掛代金のうち27,000円を普通預金で回収した。この販売に関する売掛金の残高は何円か。返品はない。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "48000"
+      ],
+      "explanation": "販売時に売掛金を93,000−18,000＝75,000円記録します。後日の回収27,000円で同額を減らすので48,000円が残ります。販売額93,000円は回収日には変わりません。",
+      "objectives": [
+        0
+      ],
+      "lesson": "bb2-sales",
+      "field": "basics"
+    }
+  ],
+  "bb2-sales-returns": [
+    {
+      "id": "bb2-sales-returns-unit2-two-purposes",
+      "prompt": "代金の一部を支払済みの掛仕入につき、12,600円分を返品した。仕入先への買掛金9,100円を全て減額し、残額の現金返金を受けた。返品の仕訳を入力する。消費税は考えない。",
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "買掛金",
+          "現金",
+          "仕入",
+          "売掛金",
+          "売上"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 9100
+          },
+          {
+            "account": "現金",
+            "amount": 3500
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 12600
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":9100},{\"account\":\"現金\",\"amount\":3500}],\"credits\":[{\"account\":\"仕入\",\"amount\":12600}]}"
+      ],
+      "explanation": "仕入の取消額12,600円は全て貸方仕入です。消える支払義務9,100円を借方買掛金、返金12,600−9,100＝3,500円を借方現金に置きます。",
+      "objectives": [
+        0,
+        1
+      ],
+      "lesson": "bb2-sales-returns",
+      "field": "basics"
+    },
+    {
+      "id": "bb2-sales-returns-unit2-cash-refund",
+      "prompt": "商品を全額現金で販売した後、そのうち販売額7,800円分を客が返品し、店が同額を現金で返した。返品日の仕訳を入力する。消費税は考えない。",
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "売上",
+          "現金",
+          "売掛金",
+          "仕入",
+          "買掛金"
+        ],
+        "debits": [
+          {
+            "account": "売上",
+            "amount": 7800
+          }
+        ],
+        "credits": [
+          {
+            "account": "現金",
+            "amount": 7800
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"売上\",\"amount\":7800}],\"credits\":[{\"account\":\"現金\",\"amount\":7800}]}"
+      ],
+      "explanation": "元の仕訳は現金の増加と売上の発生です。返品分の売上を借方で取り消し、現金の減少を貸方に記録します。もともと売掛金を計上していないので売掛金は使いません。",
+      "objectives": [
+        0
+      ],
+      "lesson": "bb2-sales-returns",
+      "field": "basics"
+    },
+    {
+      "id": "bb2-sales-returns-unit2-net-purchases",
+      "prompt": "商品76,000円を掛けで仕入れ、引取り運賃3,200円を当店負担で現金払いして仕入に含めた。後日、商品14,000円分を返品して買掛金を減額し、残代金のうち25,000円を支払った。運賃は返金されない。この取引の差引仕入額は何円か。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "65200"
+      ],
+      "explanation": "商品代76,000円に仕入運賃3,200円を足し、返品の14,000円を引くと65,200円です。支払25,000円は買掛金を減らすので、仕入額からは引きません。買掛金は76,000−14,000−25,000＝37,000円です。",
+      "objectives": [
+        2
+      ],
+      "lesson": "bb2-sales-returns",
+      "field": "basics"
+    },
+    {
+      "id": "bb2-sales-returns-unit2-after-payment",
+      "prompt": "商品を掛けで売り、その掛代金の全額をすでに回収した。後日、販売価格6,500円分が返品され、同日、客へ全額を現金で返した。返品日の仕訳はどれか。",
+      "options": [
+        "売掛金6,500／売上6,500",
+        "売上6,500／売掛金6,500",
+        "売上6,500／現金6,500",
+        "現金6,500／売上6,500"
+      ],
+      "answer": 2,
+      "explanation": "掛けで売った時点では売掛金がありましたが、代金の全額を回収済みです。今回は客へ現金を返すので、借方で売上を取り消し、貸方で現金を減らします。",
+      "objectives": [
+        0
+      ],
+      "lesson": "bb2-sales-returns",
+      "field": "basics"
+    },
+    {
+      "id": "bb2-sales-returns-unit2-residual-refund",
+      "prompt": "掛売上51,000円を記録した後、38,000円を普通預金で回収した。続いて販売価格18,500円分が返品され、売掛金を全額減らし、残る額は客へ現金で返した。現金返金額は何円か。数字だけ入力する。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "5500"
+      ],
+      "explanation": "返品直前の売掛金は51,000−38,000＝13,000円です。返品額18,500円のうち、13,000円で売掛金を取り消し、残りの5,500円を現金で返します。差引売上32,500円は回収38,000円から返金5,500円を引いた額とも一致します。",
+      "objectives": [
+        1
+      ],
+      "lesson": "bb2-sales-returns",
+      "field": "basics"
+    }
+  ]
+}

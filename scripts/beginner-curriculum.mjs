@@ -1,4 +1,4 @@
-import { beginnerGroups, beginnerLessonQuestions, beginnerUnit1Version, beginnerTextbookVersion, beginnerVersion, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
+import { beginnerGroups, beginnerLessonQuestions, beginnerUnit2Version, beginnerLessonVersion, beginnerVersion, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
 import coverage from '../src/data/boki-beginner-coverage.json' with {type:'json'};
 export function beginnerCurriculum(rows) {
   const workload=beginnerWorkload(rows);
@@ -6,7 +6,7 @@ export function beginnerCurriculum(rows) {
     '日商簿記初級 詳しい学習ツリー・スケジュール',
     '対象：簿記初級の全範囲。原価計算初級・1〜3級は別区分。',
     '適用：2026年度（2027年3月31日まで）。2027年4月施行の確定版とは区別。',
-    `公式資料確認日：${beginnerReviewed}／章末チェック版：ユニット1 ${beginnerUnit1Version}／ユニット2以降 ${beginnerTextbookVersion}／模試版：${beginnerVersion}`,
+    `公式資料確認日：${beginnerReviewed}／ユニット2 総合確認版：${beginnerUnit2Version}／模試版：${beginnerVersion}`,
     '標準：仕組みの説明→理由付き例題→独立練習→総合確認→40分模試。独自教材・公式の認定や合格保証はありません。',
     '前提：四則計算、紙と電卓。会計の予備知識は不要。',
     '', '学習時間の見積り（実測値・公式推奨時間ではありません）',
@@ -25,7 +25,7 @@ export function beginnerCurriculum(rows) {
       lines.push(`    ${l.data.order}. [${l.data.stableId}] ${l.data.title}／${l.data.minutes}分`,
         `      目標：${l.data.objectives.join('／')}`,`      前提：${l.data.prerequisite}`,
         `      本文：/qualifications/boki-beginner/${l.data.stableId}/`,
-        `      理解度チェック：[${l.data.stableId}-check] ${beginnerLessonQuestions(l.data.stableId).length}問`,
+        `      理解度チェック：[${l.data.stableId}-check] ${beginnerLessonQuestions(l.data.stableId).length}問（${beginnerLessonVersion(l.data.stableId)}）`,
         `      用語：${l.data.glossary.map(g=>g.term).join('・')}`,
         `      次：${next?.data.stableId ?? 'boki-beginner-review-all'}`,
         '      復習：翌日に例題を見ずに解く。1週間後に間違えた問題と理由を再確認。');
@@ -43,7 +43,7 @@ export function beginnerCurriculum(rows) {
     '  模試はサンプルの大問構成を参考にした独自設計。固定出題数・小問配点・部分点・難易度・合否を公式と同一とは扱いません。',
     '', '公式範囲と説明・例題・練習の対応');
   for(const row of coverage) lines.push(`  ${row.id} ${row.competency}（公式範囲PDF ${row.sourcePage}ページ） → ${row.lessons.join(', ')}`,
-    `    本文・例題：記事内objective-1〜3、worked-1〜3。理解度チェックと関連する単元確認で練習。`);
+    `    本文・例題：${[...row.teaching,...row.workedExamples].map(entry=>entry.lesson+"#"+entry.anchor).join("、")}。理解度チェックと関連する単元確認で練習。`);
   lines.push('', '確認の方法・制約',
     '  公式資料照合、計算と解答の確認、日本語編集、別AIによる内容確認、機能・保存・移行の確認を区別します。外部専門家監修や受験者による実証ではありません。',
     '  初級では決算整理を扱いません。固定資産売却は土地のみ、償却は月次見積額、消耗品は支払い時費用、消費税は税抜方式が対象です。',

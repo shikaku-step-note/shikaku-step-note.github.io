@@ -1,0 +1,43 @@
+{
+  "source": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf",
+  "edition": "2026年度適用",
+  "sourcePage": 2,
+  "verified": "2026-11-14",
+  "entries": [
+    {
+      "lesson": "bb2-sales",
+      "anchor": "unit2-sales-evidence",
+      "scope": "2(5) 三分法。商品代、当店の引取運賃、販売時の発送費の区別",
+      "practice": [
+        "bb2-sales-unit2-purchase-documents",
+        "bb2-sales-unit2-buyer-freight",
+        "bb2-sales-unit2-sale-collection"
+      ],
+      "worked": "納品書と領収書を使う部分決済、運賃・発送費と相手負担の立替"
+    },
+    {
+      "lesson": "bb2-sales-returns",
+      "anchor": "returns-four-patterns",
+      "scope": "2(5) 仕入返品・売上返品、現金と掛けの逆仕訳",
+      "practice": [
+        "bb2-sales-returns-unit2-two-purposes",
+        "bb2-sales-returns-unit2-cash-refund",
+        "bb2-sales-returns-unit2-after-payment"
+      ],
+      "worked": "四通りの図・比較表と判断順"
+    },
+    {
+      "lesson": "bb2-sales-returns",
+      "anchor": "returns-partly-settled",
+      "scope": "2(5) 仕入・売上返品から残高を再計算",
+      "practice": [
+        "bb2-sales-returns-unit2-two-purposes",
+        "bb2-sales-returns-unit2-net-purchases",
+        "bb2-sales-returns-unit2-after-payment",
+        "bb2-sales-returns-unit2-residual-refund"
+      ],
+      "worked": "一部決済後の掛け減額と現金返金、運賃が返金されない場合の検算"
+    }
+  ],
+  "limits": "値引・割引と決算整理は新規レッスンに含めない。公式サンプルと別の独自設例。実試験と同じ難しさを実測したものではない。"
+}

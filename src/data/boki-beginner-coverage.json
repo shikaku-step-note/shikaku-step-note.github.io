@@ -777,12 +777,21 @@
     "before": "journalの現金の転記例",
     "upgradeAction": "一連の複数取引を両帳簿へ転記",
     "lessons": [
-      "bb2-ledger"
+      "bb2-ledger",
+      "bb2-trade-case"
     ],
     "teaching": [
       {
         "lesson": "bb2-ledger",
         "anchor": "objective-1"
+      },
+      {
+        "lesson": "bb2-ledger",
+        "anchor": "unit2-ledger-posting"
+      },
+      {
+        "lesson": "bb2-trade-case",
+        "anchor": "objective-3"
       }
     ],
     "workedExamples": [
@@ -796,6 +805,10 @@
       },
       {
         "lesson": "bb2-ledger",
+        "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trade-case",
         "anchor": "worked-3"
       }
     ],
@@ -825,6 +838,20 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb2-trade-case-q4",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q5",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "assessments": [
@@ -833,6 +860,20 @@
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb-unit2-review-trade-2",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-3",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          2
         ]
       }
     ],
@@ -851,7 +892,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -863,11 +904,20 @@
     "before": "monthlyの相手先別説明",
     "upgradeAction": "補助記録と合計の突合せ例を追加",
     "lessons": [
-      "bb2-ledger"
+      "bb2-ledger",
+      "bb2-trade-case"
     ],
     "teaching": [
       {
         "lesson": "bb2-ledger",
+        "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-ledger",
+        "anchor": "unit2-ledger-posting"
+      },
+      {
+        "lesson": "bb2-trade-case",
         "anchor": "objective-3"
       }
     ],
@@ -882,6 +932,10 @@
       },
       {
         "lesson": "bb2-ledger",
+        "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trade-case",
         "anchor": "worked-3"
       }
     ],
@@ -911,11 +965,39 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-trade-case-q4",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q5",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "assessments": [
       {
         "id": "bb2-u2-review-03",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb-unit2-review-trade-2",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-3",
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           2
@@ -937,7 +1019,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -949,11 +1031,20 @@
     "before": "journalの1段落",
     "upgradeAction": "請求・領収・納品等の独自資料で判断",
     "lessons": [
-      "bb2-evidence"
+      "bb2-evidence",
+      "bb2-trade-case"
     ],
     "teaching": [
       {
         "lesson": "bb2-evidence",
+        "anchor": "objective-1"
+      },
+      {
+        "lesson": "bb2-evidence",
+        "anchor": "unit2-evidence-documents"
+      },
+      {
+        "lesson": "bb2-trade-case",
         "anchor": "objective-1"
       }
     ],
@@ -969,6 +1060,10 @@
       {
         "lesson": "bb2-evidence",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trade-case",
+        "anchor": "worked-1"
       }
     ],
     "explanationStatus": "complete",
@@ -997,6 +1092,27 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb2-trade-case-q1",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q2",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q6",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "assessments": [
@@ -1006,6 +1122,28 @@
         "objectiveIndices": [
           0,
           1
+        ]
+      },
+      {
+        "id": "bb-unit2-review-trade-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-4",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
         ]
       }
     ],
@@ -1028,7 +1166,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -1040,7 +1178,8 @@
     "before": "journalで三種を定義",
     "upgradeAction": "非現金決済、混合取引、二重集計防止を追加",
     "lessons": [
-      "bb2-evidence"
+      "bb2-evidence",
+      "bb2-trade-case"
     ],
     "teaching": [
       {
@@ -1050,6 +1189,14 @@
       {
         "lesson": "bb2-evidence",
         "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-evidence",
+        "anchor": "unit2-evidence-documents"
+      },
+      {
+        "lesson": "bb2-trade-case",
+        "anchor": "objective-2"
       }
     ],
     "workedExamples": [
@@ -1064,6 +1211,10 @@
       {
         "lesson": "bb2-evidence",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trade-case",
+        "anchor": "worked-2"
       }
     ],
     "explanationStatus": "complete",
@@ -1120,6 +1271,36 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-trade-case-q1",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q2",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q3",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q6",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          0,
+          1
+        ]
       }
     ],
     "assessments": [
@@ -1144,6 +1325,28 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb-unit2-review-trade-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          1,
+          2
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-4",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "mockQuestions": [
@@ -1165,19 +1368,20 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
     "id": "BB11",
     "competency": "現金と預貯金の受払・振替",
     "sourceId": "S02",
-    "sourcePage": 2,
+    "sourcePage": 1,
     "officialArea": "期中取引の処理",
     "before": "transactionsに普通預金例",
     "upgradeAction": "現金・当座・普通・定期の区別を独立説明",
     "lessons": [
-      "bb2-cash"
+      "bb2-cash",
+      "bb2-trade-case"
     ],
     "teaching": [
       {
@@ -1190,6 +1394,14 @@
       },
       {
         "lesson": "bb2-cash",
+        "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-cash",
+        "anchor": "textbook-cash-reconcile"
+      },
+      {
+        "lesson": "bb2-trade-case",
         "anchor": "objective-3"
       }
     ],
@@ -1204,6 +1416,10 @@
       },
       {
         "lesson": "bb2-cash",
+        "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trade-case",
         "anchor": "worked-3"
       }
     ],
@@ -1282,6 +1498,20 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-trade-case-q4",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q5",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "assessments": [
@@ -1313,6 +1543,30 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-unit2-review-trade-3",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-2",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -1342,14 +1596,14 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
     "id": "BB12",
     "competency": "小切手と当座預金",
     "sourceId": "S02",
-    "sourcePage": 2,
+    "sourcePage": 1,
     "officialArea": "期中取引の処理",
     "before": "具体例不足",
     "upgradeAction": "他人振出と自己振出を区別した処理を追加",
@@ -1364,6 +1618,10 @@
       {
         "lesson": "bb2-cash",
         "anchor": "objective-2"
+      },
+      {
+        "lesson": "bb2-cash",
+        "anchor": "textbook-cash-reconcile"
       }
     ],
     "workedExamples": [
@@ -1458,6 +1716,30 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb-unit2-review-trade-3",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-2",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -1487,7 +1769,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -1499,7 +1781,8 @@
     "before": "transactionsに掛売買",
     "upgradeAction": "現金・掛・複合決済を反復",
     "lessons": [
-      "bb2-sales"
+      "bb2-sales",
+      "bb2-trade-case"
     ],
     "teaching": [
       {
@@ -1508,6 +1791,14 @@
       },
       {
         "lesson": "bb2-sales",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "bb2-sales",
+        "anchor": "unit2-sales-evidence"
+      },
+      {
+        "lesson": "bb2-trade-case",
         "anchor": "objective-2"
       }
     ],
@@ -1523,6 +1814,10 @@
       {
         "lesson": "bb2-sales",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-trade-case",
+        "anchor": "worked-2"
       }
     ],
     "explanationStatus": "complete",
@@ -1579,6 +1874,27 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-trade-case-q2",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q3",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb2-trade-case-q6",
+        "assessment": "bb2-trade-case-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -1595,6 +1911,22 @@
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           1
+        ]
+      },
+      {
+        "id": "bb-unit2-review-trade-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-4",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
         ]
       }
     ],
@@ -1613,7 +1945,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -1769,12 +2101,21 @@
     "before": "売上返品だけの例",
     "upgradeAction": "仕入返品・決済後の返品を追加",
     "lessons": [
-      "bb2-sales"
+      "bb2-sales",
+      "bb2-sales-returns"
     ],
     "teaching": [
       {
         "lesson": "bb2-sales",
         "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-sales",
+        "anchor": "unit2-sales-evidence"
+      },
+      {
+        "lesson": "bb2-sales-returns",
+        "anchor": "returns-four-patterns"
       }
     ],
     "workedExamples": [
@@ -1789,6 +2130,10 @@
       {
         "lesson": "bb2-sales",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-sales-returns",
+        "anchor": "returns-partly-settled"
       }
     ],
     "explanationStatus": "complete",
@@ -1817,6 +2162,42 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-sales-returns-unit2-two-purposes",
+        "assessment": "bb2-sales-returns-check",
+        "objectiveIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "bb2-sales-returns-unit2-cash-refund",
+        "assessment": "bb2-sales-returns-check",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb2-sales-returns-unit2-net-purchases",
+        "assessment": "bb2-sales-returns-check",
+        "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb2-sales-returns-unit2-after-payment",
+        "assessment": "bb2-sales-returns-check",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb2-sales-returns-unit2-residual-refund",
+        "assessment": "bb2-sales-returns-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -1830,6 +2211,28 @@
       },
       {
         "id": "bb2-u2-review-11",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb-unit2-review-return-1",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "bb-unit2-review-return-2",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb-unit2-review-document-set-4",
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           2
@@ -1851,7 +2254,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {

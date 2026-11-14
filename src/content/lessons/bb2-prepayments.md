@@ -4,7 +4,7 @@
   "qualification": "boki-beginner",
   "title": "前払金・前受金と一部決済",
   "description": "前払金・前受金と一部決済を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
-  "order": 12,
+  "order": 14,
   "minutes": 65,
   "sample": false,
   "updated": "2026-10-28",

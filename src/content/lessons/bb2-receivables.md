@@ -4,7 +4,7 @@
   "qualification": "boki-beginner",
   "title": "売掛金・買掛金の発生と回収・支払い",
   "description": "売掛金・買掛金の発生と回収・支払いを、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
-  "order": 10,
+  "order": 12,
   "minutes": 65,
   "sample": false,
   "updated": "2026-10-28",
