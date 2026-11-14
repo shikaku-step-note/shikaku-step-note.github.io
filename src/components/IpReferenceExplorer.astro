@@ -17,8 +17,8 @@ const data = [
 
 <section data-reference-explorer hidden aria-labelledby="reference-explorer-title">
   <h2 id="reference-explorer-title">コピー先を変えて、参照先を追う</h2>
-  <p>C8の式を右や下へ写すと、どのセルを読むでしょうか。コピー先を選ぶ前に、動く参照を予想してください。</p>
-  <fieldset>
+  <p>セルC8の式を右や下へ写すと、どのセルを読むでしょうか。<span data-lesson-screen-only>コピー先を選ぶ前に、動く参照を予想してください。</span></p>
+  <fieldset data-lesson-screen-only>
     <legend>コピー先</legend>
     {choices.map((item, index) => (
       <label>
@@ -60,7 +60,7 @@ const data = [
       ))}
     </tbody>
   </table>
-  <p role="status">
+  <p role="status" data-lesson-screen-only>
     <strong data-reference-formula>
       {choices[0].cell} の式 {choices[0].formula}
     </strong>
@@ -69,6 +69,12 @@ const data = [
       {choices[0].result}（単価 {choices[0].price}、数量 {choices[0].quantity}）
     </span>
   </p>
+  <div class="lesson-print-only">
+    <h3>コピー先ごとの式と計算結果</h3>
+    <ul>
+      {choices.map((item) => <li><strong>{item.cell}</strong>　<code>{item.formula}</code>　{item.result}</li>)}
+    </ul>
+  </div>
 </section>
 
 <script>

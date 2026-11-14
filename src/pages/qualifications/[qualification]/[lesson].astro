@@ -4,6 +4,8 @@ import Layout from '../../../layouts/Layout.astro';
 import Icon from '../../../components/Icon.astro';
 import Share from '../../../components/Share.astro';
 import Assessment from '../../../components/Assessment.astro';
+import LessonPrintPractice from '../../../components/LessonPrintPractice.astro';
+import '../../../styles/lesson-print.css';
 import IpWorkbench from '../../../components/IpWorkbench.astro';
 import IpControlChart from '../../../components/IpControlChart.astro';
 import IpReferenceExplorer from '../../../components/IpReferenceExplorer.astro';
@@ -96,6 +98,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
   <div class="container lesson-layout page-section">
     <article data-current-lesson={d.stableId}>
       <header class="lesson-header">
+        <p class="lesson-print-only lesson-print-brand">資格ステップノート</p>
         <div class="lesson-kicker">
           <a class="tag" href={href(`qualifications/${q.id}/`)}>
             {q.name}
@@ -124,6 +127,10 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
           <button disabled aria-busy="true" class="bookmark-text" data-bookmark={d.stableId} aria-pressed="false" type="button">
             <Icon name="star" size={19} />
             <span>あとで復習</span>
+          </button>
+          <button class="button secondary" data-lesson-print hidden type="button">
+            <Icon name="download" size={18} />
+            PDFに保存
           </button>
           <span class="status-pill" data-status-label={d.stableId}>
             未学習
@@ -186,7 +193,8 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
               </li>
             ))}
           <li>
-            <a href="#practice">理解をたしかめる</a>
+            <a href="#practice" data-lesson-screen-only>理解をたしかめる</a>
+            <a href="#print-practice-heading" class="lesson-print-only">理解をたしかめる</a>
           </li>
         </ol>
       </nav>
@@ -291,8 +299,17 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
           </a>
         )}
       </nav>
+      <LessonPrintPractice
+        title={assessment?.title ?? '練習問題'}
+        questions={assessment?.questions ?? [{
+          id: d.stableId, prompt: d.question!, options: d.options!, answer: d.answer!,
+          explanation: d.explanation!, lesson: d.stableId, field: q.id,
+        }]}
+        materials={assessment?.materials}
+      />
       <section class="source-note">
         <h2>出典・教材について</h2>
+        <p class="lesson-print-only">公開ページ：<a href={canonical}>{canonical}</a></p>
         <p>
           文章・例題・図表は当サイトが作成した{['boki-beginner', 'cost-beginner'].includes(q.id) && d.archived ? '旧版の要点教材' : d.sample ? '入門用サンプル' : '独自教材'}
           です。公式問題の転載ではありません。資格概要の参照先：
@@ -378,3 +395,24 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
     height: auto;
   }
 </style>
+
+<script>
+  const printButton = document.querySelector<HTMLButtonElement>('[data-lesson-print]');
+  if (printButton && typeof window.print === 'function') {
+    printButton.hidden = false;
+    printButton.addEventListener('click', () => window.print());
+  }
+
+  // Older print engines do not expose the contents of closed details to print CSS.
+  const expandedForPrint = new Set<HTMLDetailsElement>();
+  window.addEventListener('beforeprint', () => {
+    for (const details of document.querySelectorAll<HTMLDetailsElement>('.lesson-content details:not([open])')) {
+      expandedForPrint.add(details);
+      details.open = true;
+    }
+  });
+  window.addEventListener('afterprint', () => {
+    for (const details of expandedForPrint) details.open = false;
+    expandedForPrint.clear();
+  });
+</script>

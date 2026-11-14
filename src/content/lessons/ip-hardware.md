@@ -61,7 +61,7 @@
 
 ## 作業用PCに接続された機器を見分ける
 
-<figure><img src="../../../images/it-passport/workstation-connections.webp" width="960" height="640" loading="lazy" decoding="async" alt="作業用パソコンにキーボードと外付けSSDがUSBで接続され、別のLANケーブルがスイッチへつながっている図"><figcaption>学習用の生成イラスト。キーボードと外付けSSDの線はUSB端子へ、ロック用の爪があるコネクタの線はLAN端子からスイッチへつながっています。実物のケーブルの色は製品ごとに異なります。</figcaption></figure>
+<figure><img src="../../../images/it-passport/workstation-connections.webp" width="960" height="640" decoding="async" alt="作業用パソコンにキーボードと外付けSSDがUSBで接続され、別のLANケーブルがスイッチへつながっている図"><figcaption>学習用の生成イラスト。キーボードと外付けSSDの線はUSB端子へ、ロック用の爪があるコネクタの線はLAN端子からスイッチへつながっています。実物のケーブルの色は製品ごとに異なります。</figcaption></figure>
 
 図でUSBの線をたどると、一方はキー操作を入力する機器、もう一方はデータを保存する機器に着きます。端子の規格が共通でも、接続先の役割は同じとは限りません。LAN端子の先は別の機器と通信するためのスイッチです。差し込み口の形、線の行き先、やり取りする情報を順に見ると、機器を分類できます。
 

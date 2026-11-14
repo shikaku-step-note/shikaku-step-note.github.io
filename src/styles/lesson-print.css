@@ -1,0 +1,282 @@
+.lesson-print-only {
+  display: none;
+}
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 16mm 17mm 18mm;
+
+    @bottom-center {
+      content: '資格ステップノート  ·  ' counter(page) ' / ' counter(pages);
+      font:
+        8pt 'BIZ UDPGothic',
+        'Hiragino Kaku Gothic ProN',
+        'Yu Gothic',
+        Meiryo,
+        sans-serif;
+      color: #465760;
+    }
+  }
+
+  :root:root {
+    color-scheme: light;
+    --navy: #173c59;
+    --ink: #202b31;
+    --teal: #07635f;
+    --muted: #465760;
+    --line: #aab9be;
+    --paper: #fff;
+    --background: #fff;
+    --surface: #fff;
+    --surface-soft: #fff;
+    --surface-note: #fff;
+    --mint: #fff;
+    --blue: #fff;
+    --blue-accent: #285779;
+    --blue-tint: #fff;
+    --amber: #67430c;
+    --amber-tint: #fff;
+    --shadow: none;
+  }
+
+  html,
+  body {
+    background: #fff;
+    color: var(--ink);
+  }
+
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .breadcrumbs,
+  .toast,
+  .lesson-sidebar,
+  .lesson-toolbar,
+  .lesson-pagination,
+  .lesson-complete,
+  .lesson-layout .saved-note,
+  .share-panel,
+  .lesson-layout #practice,
+  .lesson-layout .google-auto-placed,
+  .lesson-layout ins.adsbygoogle,
+  body > ins.adsbygoogle,
+  body > .google-auto-placed,
+  .lesson-layout [data-lesson-screen-only],
+  .lesson-layout .lesson-content [data-ip-controls] {
+    display: none !important;
+  }
+
+  .lesson-print-only,
+  .lesson-layout .mobile-toc {
+    display: block;
+  }
+
+  .container.lesson-layout {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    font-size: 10.5pt;
+    line-height: 1.65;
+  }
+
+  .lesson-layout .lesson-header {
+    margin-bottom: 5mm;
+    padding-bottom: 4mm;
+    border-bottom: 1.5pt solid var(--teal);
+    break-inside: avoid;
+  }
+
+  .lesson-layout .lesson-print-brand {
+    color: var(--teal);
+    font-size: 10pt;
+    font-weight: 700;
+  }
+
+  .lesson-layout .lesson-kicker {
+    margin-bottom: 2mm;
+    gap: 4mm;
+    font-size: 9pt;
+  }
+
+  .lesson-layout .lesson-kicker .tag {
+    padding: 0;
+    background: transparent;
+    color: var(--navy);
+  }
+
+  .lesson-layout h1 {
+    font-size: 19pt;
+    margin: 0 0 2.5mm;
+  }
+
+  .lesson-layout h2 {
+    font-size: 13pt;
+    margin: 5mm 0 2mm;
+  }
+
+  .lesson-layout h3,
+  .lesson-layout h4,
+  .lesson-layout summary {
+    font-size: 11pt;
+    font-weight: 700;
+    margin-bottom: 1.5mm;
+  }
+
+  .lesson-layout :is(h1, h2, h3, h4, summary, dt, caption) {
+    break-after: avoid;
+  }
+
+  .lesson-layout :is(p, li, dd) {
+    orphans: 2;
+    widows: 2;
+  }
+
+  .lesson-layout :is(.lead, .prose, .toc a) {
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .lesson-layout :is(p, ul, ol, dl, .prose p, .prose ul, .prose ol) {
+    margin-bottom: 2.5mm;
+  }
+
+  .lesson-layout :is(li, .prose li, .toc li) {
+    margin-bottom: 1mm;
+  }
+
+  .lesson-layout :is(.notice, .lesson-objectives, .lesson-glossary, .toc, .source-note) {
+    background: #fff;
+    border: 0.75pt solid var(--line);
+    padding: 2.5mm 3.5mm;
+    margin: 3mm 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .lesson-layout :is(.lesson-objectives, .lesson-glossary, .toc, .source-note) > h2:first-child {
+    margin-top: 0;
+  }
+
+  .lesson-layout .toc ol {
+    font-size: 9.5pt;
+  }
+
+  .lesson-layout .prose :is(blockquote, pre) {
+    background: #fff;
+    color: var(--ink);
+    border-inline-start: 1.5pt solid var(--line);
+    margin: 3mm 0;
+    padding: 2mm 3mm;
+  }
+
+  .lesson-layout .prose pre {
+    overflow: visible;
+    white-space: pre-wrap;
+  }
+
+  .lesson-layout .table-scroll {
+    overflow: visible;
+    margin: 3mm 0;
+    border: 0;
+  }
+
+  .lesson-layout table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block: 2.5mm;
+    font-size: 9pt;
+    line-height: 1.45;
+  }
+
+  .lesson-layout table thead {
+    display: table-header-group;
+  }
+
+  .lesson-layout table :is(th, td, tr:last-child td) {
+    background: #fff;
+    border: 0.5pt solid var(--line);
+    padding: 1.15mm 1.6mm;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .lesson-layout table:has(tr > :nth-child(8)) {
+    font-size: 8pt;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lesson-layout table:has(tr > :nth-child(8)) :is(th, td, tr:last-child td) {
+    padding-inline: 0.75mm;
+    overflow-wrap: normal;
+  }
+
+  .lesson-layout :is(tr, figure, .lesson-print-question) {
+    break-inside: avoid;
+  }
+
+  .lesson-layout figure {
+    margin: 3mm 0;
+  }
+
+  .lesson-layout .lesson-content :is(figure img, svg) {
+    max-width: 100%;
+    max-height: 92mm;
+    object-fit: contain;
+  }
+
+  .lesson-layout figcaption {
+    margin-top: 1mm;
+    color: var(--muted);
+    font-size: 9pt;
+  }
+
+  .lesson-layout details {
+    margin: 2mm 0;
+  }
+
+  .lesson-layout details::details-content {
+    content-visibility: visible;
+  }
+
+  .lesson-layout details summary {
+    display: block;
+    min-height: 0;
+  }
+
+  .lesson-layout :is(.lesson-print-practice, .lesson-print-solutions) {
+    break-before: page;
+  }
+
+  .lesson-layout .lesson-print-practice h2 {
+    margin-top: 0;
+    padding-bottom: 1.5mm;
+    border-bottom: 1pt solid var(--teal);
+  }
+
+  .lesson-print-question,
+  .lesson-print-practice td,
+  .lesson-print-practice th {
+    white-space: pre-line;
+  }
+
+  .lesson-print-question {
+    margin-block: 4mm;
+  }
+
+  .lesson-print-writing {
+    min-height: 9mm;
+    color: var(--muted);
+    border-bottom: 0.6pt solid var(--line);
+  }
+
+  .lesson-print-essay {
+    min-height: 30mm;
+  }
+
+  .lesson-print-journal td {
+    height: 7mm;
+  }
+}
