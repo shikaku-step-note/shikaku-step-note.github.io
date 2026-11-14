@@ -17,7 +17,14 @@ function solution(question: Question) {
 }
 ---
 
-<section class="lesson-print-only lesson-print-practice" aria-labelledby="print-practice-heading">
+<section
+  class:list={[
+    'lesson-print-only',
+    'lesson-print-practice',
+    { 'lesson-print-worksheet': questions.length > 1 },
+  ]}
+  aria-labelledby="print-practice-heading"
+>
   <h2 id="print-practice-heading">{title}</h2>
   <p>解答・解説は、この問題のあとにまとめています。</p>
   {materials?.map((material) => (

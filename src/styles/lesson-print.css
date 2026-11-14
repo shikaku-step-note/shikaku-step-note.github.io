@@ -246,12 +246,13 @@
     min-height: 0;
   }
 
-  .lesson-layout :is(.lesson-print-practice, .lesson-print-solutions) {
+  .lesson-layout .lesson-print-worksheet,
+  .lesson-layout .lesson-print-worksheet .lesson-print-solutions {
     break-before: page;
   }
 
   .lesson-layout .lesson-print-practice h2 {
-    margin-top: 0;
+    margin-top: 4mm;
     padding-bottom: 1.5mm;
     border-bottom: 1pt solid var(--teal);
   }
