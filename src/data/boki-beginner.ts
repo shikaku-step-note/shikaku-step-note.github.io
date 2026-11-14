@@ -81,7 +81,8 @@ export const beginnerReviewBank = Object.fromEntries(Object.entries(reviews).map
   key,[...questions,...((reviewAdditions as Record<string, Question[]>)[key] ?? []),
     ...(key === 'unit-1' ? beginnerUnit1DepthReview : []),
     ...(key === 'unit-2' ? [...(unit2Trade.review as Question[]), ...beginnerUnit2DepthReview] : []),
-    ...(key === 'unit-3' ? beginnerUnit3Review : [])],
+    ...(key === 'unit-3' ? beginnerUnit3Review : []),
+    ...(laterUnits[key.slice(5)]?.review ?? [])],
 ])) as Record<string, Question[]>;
 export const beginnerUnitReviewCount = Object.entries(beginnerReviewBank)
   .filter(([key])=>key.startsWith('unit-')).reduce((sum,[,questions])=>sum+questions.length,0);

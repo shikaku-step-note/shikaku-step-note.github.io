@@ -279,3 +279,19 @@ test('Unit 3 shared settlement separates advances, trade balances, card fees and
   assert.deepEqual(validateData(JSON.parse(JSON.stringify(data))).assessments[review.id],[previous]);
   assert.equal(compatibleAttempt(review,previous),false);
 });
+
+test('Units 4–6 attach the new shared materials and score the new original review questions',()=>{
+  for(const [unit,count,id,answer] of [
+    [4,19,'review-u4-loan',60000+40000-17000],
+    [5,18,'review-u5-book',95000+5000-2500],
+    [6,20,'review-u6-totals',182000+44000+24200+12000+8000+7000],
+  ] as const){
+    const review=assessments.find(a=>a.id==='boki-beginner-unit-'+unit+'-review')!;
+    assert.equal(review.version,beginnerLaterVersion);
+    assert.equal(review.questions.length,count);
+    assert.deepEqual(assessmentMaterialIssues(review),[]);
+    const question=review.questions.find(q=>q.id==='bb-full-'+id)!;
+    assert.ok(question.materialIds?.length);
+    assert.ok(isCorrect(question,String(answer)));
+  }
+});
