@@ -1060,6 +1060,10 @@
       {
         "lesson": "bb2-trade-case",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-ledger",
+        "anchor": "unit2-ledger-two-errors"
       }
     ],
     "explanationStatus": "complete",
@@ -1102,6 +1106,14 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-depth-ledger-duplicate",
+        "assessment": "bb2-ledger-check",
+        "objectiveIndices": [
+          0,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -1123,6 +1135,14 @@
         "id": "bb-unit2-review-document-set-3",
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb2-review-cutoff-supplier-ledger",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0,
           2
         ]
       }
@@ -1187,6 +1207,14 @@
       {
         "lesson": "bb2-trade-case",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-ledger",
+        "anchor": "unit2-ledger-two-errors"
+      },
+      {
+        "lesson": "bb2-trade-case",
+        "anchor": "unit2-trade-case-reconciliation"
       }
     ],
     "explanationStatus": "complete",
@@ -1229,6 +1257,14 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-depth-ledger-duplicate",
+        "assessment": "bb2-ledger-check",
+        "objectiveIndices": [
+          0,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -1250,6 +1286,14 @@
         "id": "bb-unit2-review-document-set-3",
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
+          2
+        ]
+      },
+      {
+        "id": "bb2-review-cutoff-supplier-ledger",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          1,
           2
         ]
       }
@@ -1314,6 +1358,10 @@
       {
         "lesson": "bb2-trade-case",
         "anchor": "worked-1"
+      },
+      {
+        "lesson": "bb2-evidence",
+        "anchor": "unit2-evidence-canceled-slip"
       }
     ],
     "explanationStatus": "complete",
@@ -1363,6 +1411,14 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb2-depth-evidence-void",
+        "assessment": "bb2-evidence-check",
+        "objectiveIndices": [
+          0,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -1391,6 +1447,13 @@
       },
       {
         "id": "bb-unit2-review-document-set-4",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb2-review-cutoff-date",
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           0
@@ -1465,6 +1528,10 @@
       {
         "lesson": "bb2-trade-case",
         "anchor": "worked-2"
+      },
+      {
+        "lesson": "bb2-evidence",
+        "anchor": "unit2-evidence-canceled-slip"
       }
     ],
     "explanationStatus": "complete",
@@ -1551,6 +1618,14 @@
           0,
           1
         ]
+      },
+      {
+        "id": "bb2-depth-evidence-void",
+        "assessment": "bb2-evidence-check",
+        "objectiveIndices": [
+          0,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -1596,6 +1671,14 @@
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb2-review-cutoff-vouchers",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          1,
+          2
         ]
       }
     ],
@@ -1671,6 +1754,10 @@
       {
         "lesson": "bb2-trade-case",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-cash",
+        "anchor": "unit2-cash-month-boundary"
       }
     ],
     "explanationStatus": "complete",
@@ -1762,6 +1849,15 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-depth-cash-cutoff",
+        "assessment": "bb2-cash-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -1814,6 +1910,14 @@
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "bb2-review-cutoff-bank",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
           1,
           2
         ]
@@ -1886,6 +1990,10 @@
       {
         "lesson": "bb2-cash",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-cash",
+        "anchor": "unit2-cash-month-boundary"
       }
     ],
     "explanationStatus": "complete",
@@ -1941,6 +2049,15 @@
         "assessment": "bb2-cash-check",
         "objectiveIndices": [
           1
+        ]
+      },
+      {
+        "id": "bb2-depth-cash-cutoff",
+        "assessment": "bb2-cash-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
         ]
       }
     ],
@@ -2068,6 +2185,10 @@
       {
         "lesson": "bb2-trade-case",
         "anchor": "worked-2"
+      },
+      {
+        "lesson": "bb2-sales",
+        "anchor": "unit2-sales-follow-documents"
       }
     ],
     "explanationStatus": "complete",
@@ -2145,6 +2266,14 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-depth-sales-freight",
+        "assessment": "bb2-sales-check",
+        "objectiveIndices": [
+          0,
+          1
+        ]
       }
     ],
     "assessments": [
@@ -2177,6 +2306,13 @@
           0,
           1,
           2
+        ]
+      },
+      {
+        "id": "bb2-review-cutoff-net-purchases",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          1
         ]
       }
     ],
@@ -2384,6 +2520,10 @@
       {
         "lesson": "bb2-sales-returns",
         "anchor": "returns-partly-settled"
+      },
+      {
+        "lesson": "bb2-sales-returns",
+        "anchor": "unit2-returns-reconciliation-lab"
       }
     ],
     "explanationStatus": "complete",
@@ -2448,6 +2588,14 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-depth-returns-buyer",
+        "assessment": "bb2-sales-returns-check",
+        "objectiveIndices": [
+          0,
+          1
+        ]
       }
     ],
     "assessments": [
@@ -2486,6 +2634,13 @@
         "assessment": "boki-beginner-unit-2-review",
         "objectiveIndices": [
           2
+        ]
+      },
+      {
+        "id": "bb2-review-cutoff-return",
+        "assessment": "boki-beginner-unit-2-review",
+        "objectiveIndices": [
+          0
         ]
       }
     ],

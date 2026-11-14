@@ -1,0 +1,403 @@
+{
+  "lessons": {
+    "bb2-ledger": [
+      {
+        "id": "bb2-depth-ledger-duplicate",
+        "lesson": "bb2-ledger",
+        "field": "basics",
+        "prompt": "仕入先元帳の合計は58,000円、総勘定元帳の買掛金残高は73,000円です。調査すると、総勘定元帳にだけ同じ15,000円の掛仕入れが二度転記されていました。訂正後の買掛金総額は何円か。",
+        "explanation": "73,000円から重複の15,000円を除き58,000円。すでに正しい仕入先元帳に追加で転記しません。資料番号と転記先を確認します。",
+        "objectives": [
+          0,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "58000"
+        ]
+      }
+    ],
+    "bb2-evidence": [
+      {
+        "id": "bb2-depth-evidence-void",
+        "lesson": "bb2-evidence",
+        "field": "basics",
+        "prompt": "同じ受領番号で現金受取り6,000円の旧伝票と、現金受取り4,000円の差替伝票がある。旧伝票に取消印があり、領収書は4,000円。集計する現金受取額はいくらか。",
+        "explanation": "取消印、番号、受領金額を照合します。旧伝票を除外し、差替伝票の4,000円を一度だけ集計します。",
+        "objectives": [
+          0,
+          2
+        ],
+        "options": [
+          "2,000円",
+          "4,000円",
+          "6,000円",
+          "10,000円"
+        ],
+        "answer": 1
+      }
+    ],
+    "bb2-cash": [
+      {
+        "id": "bb2-depth-cash-cutoff",
+        "lesson": "bb2-cash",
+        "field": "basics",
+        "prompt": "月初の現金22,000円、普通預金63,000円。月末に他店振出小切手14,000円で売掛金を回収して、その日は手元で保管した。翌月初に普通預金に預け入れた。ほかに取引がないとき、当月末の現金は何円か。",
+        "explanation": "手元保管中の他人振出小切手は現金です。22,000＋14,000＝36,000円。普通預金の増加は翌月です。",
+        "objectives": [
+          0,
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "36000"
+        ]
+      }
+    ],
+    "bb2-sales": [
+      {
+        "id": "bb2-depth-sales-freight",
+        "lesson": "bb2-sales",
+        "field": "basics",
+        "prompt": "商品34,000円を掛けで仕入れ、別の配送業者に引取運賃1,500円を現金で支払いました。商品と運賃を一つの仕訳にまとめて入力してください。",
+        "explanation": "引取運賃は仕入原価に含めるため仕入35,500円を借方にします。商品代の買掛金34,000円と運賃の現金1,500円を貸方にします。",
+        "objectives": [
+          0,
+          1
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "現金",
+            "普通預金",
+            "仕入",
+            "買掛金",
+            "売掛金",
+            "売上",
+            "支払手数料"
+          ],
+          "debits": [
+            {
+              "account": "仕入",
+              "amount": 35500
+            }
+          ],
+          "credits": [
+            {
+              "account": "買掛金",
+              "amount": 34000
+            },
+            {
+              "account": "現金",
+              "amount": 1500
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"仕入\",\"amount\":35500}],\"credits\":[{\"account\":\"買掛金\",\"amount\":34000},{\"account\":\"現金\",\"amount\":1500}]}"
+        ]
+      }
+    ],
+    "bb2-sales-returns": [
+      {
+        "id": "bb2-depth-returns-buyer",
+        "lesson": "bb2-sales-returns",
+        "field": "basics",
+        "prompt": "掛けで仕入れた商品の買掛金は一部決済後に6,800円残っている。9,300円分を返品して全額承認され、買掛金の残額を取り消し、余りはその場で現金で返金された。仕訳を入力してください。",
+        "explanation": "買掛金は残っている6,800円だけを減らせます。9,300−6,800＝2,500円は現金の増加。借方合計は仕入を取り消す貸方9,300円に一致します。",
+        "objectives": [
+          0,
+          1
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "現金",
+            "普通預金",
+            "仕入",
+            "買掛金",
+            "売掛金",
+            "売上",
+            "支払手数料"
+          ],
+          "debits": [
+            {
+              "account": "買掛金",
+              "amount": 6800
+            },
+            {
+              "account": "現金",
+              "amount": 2500
+            }
+          ],
+          "credits": [
+            {
+              "account": "仕入",
+              "amount": 9300
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"買掛金\",\"amount\":6800},{\"account\":\"現金\",\"amount\":2500}],\"credits\":[{\"account\":\"仕入\",\"amount\":9300}]}"
+        ]
+      }
+    ],
+    "bb2-trade-case": [
+      {
+        "id": "bb2-depth-trade-supplier",
+        "lesson": "bb2-trade-case",
+        "field": "basics",
+        "prompt": "月初の買掛金は甲社13,000円、乙社9,000円。甲社から商品26,000円を掛仕入れし、そのうち5,000円分を返品して掛代金を減額した。乙社へ普通預金で6,000円を支払った。月末の買掛金総額は何円か。",
+        "explanation": "甲社は13,000＋26,000−5,000＝34,000円。乙社は9,000−6,000＝3,000円。合計37,000円が総勘定元帳の買掛金残高です。",
+        "objectives": [
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "37000"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "id": "bb2-review-cutoff-date",
+      "lesson": "bb2-trade-case",
+      "field": "basics",
+      "prompt": "共通資料の25日、27日、翌月2日の処理として正しいものを選んでください。",
+      "explanation": "25日は発注だけで仕訳なし。27日に受領し仕入32,000円と買掛金32,000円を記録します。翌月2日の請求は既存の32,000円と返品5,000円の差を示す資料で、再び仕入れを起こしません。",
+      "objectives": [
+        0
+      ],
+      "options": [
+        "25日に仕入、27日と翌月2日は仕訳しない",
+        "27日に仕入、25日と翌月2日は仕訳しない",
+        "翌月2日に仕入、25日と27日は仕訳しない",
+        "27日と翌月2日にそれぞれ仕入"
+      ],
+      "answer": 1,
+      "targetObjectives": {
+        "bb2-evidence": [
+          0
+        ],
+        "bb2-sales": [
+          0
+        ]
+      },
+      "materialIds": [
+        "bb-unit2-supplier-cutoff"
+      ]
+    },
+    {
+      "id": "bb2-review-cutoff-vouchers",
+      "lesson": "bb2-evidence",
+      "field": "basics",
+      "objectives": [
+        1,
+        2
+      ],
+      "materialIds": [
+        "bb-unit2-supplier-cutoff"
+      ],
+      "prompt": "共通資料について三伝票式で記録します。当月の出金伝票の合計と、振替伝票の借方合計の組合せを選んでください。",
+      "options": [
+        "出金1,800円、振替46,000円",
+        "出金10,800円、振替37,000円",
+        "出金1,800円、振替73,000円",
+        "出金1,800円、振替32,000円"
+      ],
+      "answer": 0,
+      "explanation": "現金で払った引取運賃1,800円だけが出金伝票です。掛仕入れ32,000円、返品5,000円、普通預金からの支払い9,000円は、どれも現金勘定を使わない振替伝票です。振替の借方合計は46,000円。翌月の27,000円は当月に加えません。"
+    },
+    {
+      "id": "bb2-review-cutoff-return",
+      "lesson": "bb2-sales-returns",
+      "field": "basics",
+      "prompt": "共通資料の29日の返品について、仕訳を入力してください。",
+      "explanation": "朝日社に対する買掛金5,000円を減らすので借方買掛金、仕入を同額取り消すので貸方仕入。支払いや返金は発生していません。",
+      "objectives": [
+        0
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "普通預金",
+          "仕入",
+          "買掛金",
+          "売掛金",
+          "売上",
+          "支払手数料"
+        ],
+        "debits": [
+          {
+            "account": "買掛金",
+            "amount": 5000
+          }
+        ],
+        "credits": [
+          {
+            "account": "仕入",
+            "amount": 5000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"買掛金\",\"amount\":5000}],\"credits\":[{\"account\":\"仕入\",\"amount\":5000}]}"
+      ],
+      "targetObjectives": {
+        "bb2-trade-case": [
+          1
+        ]
+      },
+      "materialIds": [
+        "bb-unit2-supplier-cutoff"
+      ]
+    },
+    {
+      "id": "bb2-review-cutoff-net-purchases",
+      "lesson": "bb2-sales",
+      "field": "basics",
+      "prompt": "共通資料から当月の差引仕入額を求めてください。答えは円単位の数字です。",
+      "explanation": "当月受領の商品32,000円に、引取運賃1,800円を加え、当月承認された返品5,000円を引きます。32,000＋1,800−5,000＝28,800円です。翌月の請求と支払いはこの額を変えません。",
+      "objectives": [
+        1,
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "28800"
+      ],
+      "targetObjectives": {
+        "bb2-sales-returns": [
+          2
+        ]
+      },
+      "materialIds": [
+        "bb-unit2-supplier-cutoff"
+      ]
+    },
+    {
+      "id": "bb2-review-cutoff-supplier-ledger",
+      "lesson": "bb2-trade-case",
+      "field": "basics",
+      "prompt": "共通資料の30日の支払いを、仕入先元帳では夕日社に正しく記入しました。総勘定元帳には普通預金の貸方9,000円を転記したものの、買掛金の借方9,000円を転記し忘れました。どこがずれますか。",
+      "explanation": "朝日社は21,000＋32,000−5,000＝48,000円、夕日社は15,000−9,000＝6,000円。明細合計54,000円です。総勘定元帳では支払分を引いていないので63,000円です。支払仕訳と照合し、買掛金の借方だけを補います。",
+      "objectives": [
+        2
+      ],
+      "options": [
+        "仕入先元帳計63,000円、総勘定元帳54,000円",
+        "どちらも54,000円",
+        "どちらも63,000円",
+        "仕入先元帳計54,000円、総勘定元帳63,000円"
+      ],
+      "answer": 3,
+      "targetObjectives": {
+        "bb2-ledger": [
+          0,
+          1,
+          2
+        ]
+      },
+      "materialIds": [
+        "bb-unit2-supplier-cutoff"
+      ]
+    },
+    {
+      "id": "bb2-review-cutoff-bank",
+      "lesson": "bb2-cash",
+      "field": "basics",
+      "prompt": "共通資料の取引を正しく記録しました。当月末の普通預金は何円か。数字を入力してください。",
+      "explanation": "当月の普通預金を減らすのは30日の9,000円のみです。28日の運賃は現金支払い、朝日社への27,000円の支払いは翌月。55,000−9,000＝46,000円です。",
+      "objectives": [
+        0,
+        1,
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "46000"
+      ],
+      "targetObjectives": {
+        "bb2-trade-case": [
+          0
+        ]
+      },
+      "materialIds": [
+        "bb-unit2-supplier-cutoff"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "bb-unit2-supplier-cutoff",
+      "title": "若葉店の月末の仕入資料",
+      "paragraphs": [
+        "月初買掛金は朝日社21,000円、夕日社15,000円、現金30,000円、普通預金55,000円です。税と手数料は考えません。商品は受領時に記録し、引取運賃は仕入に含めます。資料にある取引だけを考えます。"
+      ],
+      "tables": [
+        {
+          "caption": "注文・受領・返品・請求・決済の資料",
+          "headers": [
+            "日付",
+            "資料の内容"
+          ],
+          "rows": [
+            [
+              "25日",
+              "朝日社へ商品32,000円を発注。引渡し・支払いなし。"
+            ],
+            [
+              "27日",
+              "朝日社から商品32,000円を受領（納品番号W27）、全額掛け。"
+            ],
+            [
+              "28日",
+              "配送会社にW27の引取運賃1,800円を現金払い。"
+            ],
+            [
+              "29日",
+              "W27のうち5,000円分を朝日社へ返品。朝日社も当日承認し買掛金から減額。"
+            ],
+            [
+              "30日",
+              "夕日社の月初買掛金のうち9,000円を普通預金から支払う。"
+            ],
+            [
+              "翌月2日",
+              "W27の差引額27,000円の請求書が朝日社から届く。"
+            ],
+            [
+              "翌月4日",
+              "朝日社へW27の差引額27,000円を普通預金から支払う。"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

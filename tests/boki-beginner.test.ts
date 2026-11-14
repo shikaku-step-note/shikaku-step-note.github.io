@@ -188,7 +188,7 @@ test('textbook practice is added to every chapter without changing the mock vers
   for(const id of beginnerLessonIds){
     const original = beginnerBank[id] ?? [];
     const definition = assessments.find(a=>a.id===id+'-check')!;
-    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : beginnerTextbookVersion,id);
+    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : beginnerTextbookVersion,id);
     assert.deepEqual(definition.questions.slice(0,original.length),original,id);
     assert.ok(definition.questions.length>original.length,id);
     if(original.length) assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);
@@ -237,5 +237,27 @@ test('Unit 1 shared repair-shop review checks cash, assets and profit independen
   data.assessments[review.id] = [previous];
   const restored = validateData(JSON.parse(JSON.stringify(data)));
   assert.deepEqual(restored.assessments[review.id],[previous]);
+  assert.equal(compatibleAttempt(review,previous),false);
+});
+
+test('Unit 2 cutoff documents reconcile supplier and bank balances without double-counting next month',()=>{
+  const review = assessments.find(a=>a.id==='boki-beginner-unit-2-review')!;
+  assert.equal(review.version,beginnerUnit2Version);
+  assert.deepEqual(assessmentMaterialIssues(review),[]);
+  const added = review.questions.filter(q=>q.id.startsWith('bb2-review-cutoff-'));
+  assert.equal(added.length,6);
+  const get=(id: string)=>added.find(q=>q.id==='bb2-review-cutoff-'+id)!;
+  assert.ok(isCorrect(get('net-purchases'),String(32000+1800-5000)));
+  assert.ok(isCorrect(get('bank'),String(55000-9000)));
+  const supplierTotal=21000+32000-5000+15000-9000;
+  const incompleteLedger=supplierTotal+9000;
+  assert.equal(get('supplier-ledger').options[get('supplier-ledger').answer],
+    '仕入先元帳計'+supplierTotal.toLocaleString('en-US')+'円、総勘定元帳'+incompleteLedger.toLocaleString('en-US')+'円');
+  assert.equal(get('vouchers').options[get('vouchers').answer],
+    '出金1,800円、振替'+(32000+5000+9000).toLocaleString('en-US')+'円');
+  const previous = newAttempt({...review,version:'bb-2026-unit2-v1',questions:review.questions.slice(0,-6)},'practice');
+  const data = emptyData();
+  data.assessments[review.id] = [previous];
+  assert.deepEqual(validateData(JSON.parse(JSON.stringify(data))).assessments[review.id],[previous]);
   assert.equal(compatibleAttempt(review,previous),false);
 });
