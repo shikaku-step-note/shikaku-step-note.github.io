@@ -208,10 +208,34 @@ test('textbook practice is added to every chapter without changing the mock vers
     }
   }
   const synthesis = assessments.find(a=>a.id==='bb2-foundations-case-check')!;
-  assert.deepEqual(synthesis.questions.filter(q=>q.input==='number').map(q=>Number(q.accepted![0])),[32000-7000-12000,42000-9000-500,(122000-38000)-(95000-30000)-10000]);
+  assert.deepEqual(synthesis.questions.filter(q=>q.input==='number').map(q=>Number(q.accepted![0])),[32000-7000-12000,42000-9000-500,(122000-38000)-(95000-30000)-10000,16000]);
   const lab = assessments.find(a=>a.id==='bb2-integration-check')!;
   const profit = lab.questions.find(q=>q.id==='bb2-integration-lab-profit')!;
   assert.equal(Number(profit.accepted?.[0]),(30000-10000+14000+10000-2000)-30000);
   const split = lab.questions.find(q=>q.id==='bb2-integration-lab-journal')!;
   assert.deepEqual(split.journal?.debits.map(row=>row.amount),[2000,3500-2000]);
+});
+
+test('Unit 1 shared repair-shop review checks cash, assets and profit independently and preserves former attempts',()=>{
+  const review = assessments.find(a=>a.id==='boki-beginner-unit-1-review')!;
+  assert.equal(review.version,beginnerUnit1Version);
+  assert.deepEqual(assessmentMaterialIssues(review),[]);
+  const added = review.questions.filter(q=>q.id.startsWith('bb1-review-repair-'));
+  assert.equal(added.length,6);
+  const cash = 31000+8000+5000-6000-3000;
+  const bank = 44000+10000-7000-600;
+  const receivables = 17000+33000-5000-10000;
+  const assets = cash+bank+receivables;
+  const ownerEquity = assets-(24000-7000);
+  const openingEquity = 31000+44000+17000-24000;
+  assert.equal(ownerEquity-openingEquity-8000+3000,33000-6000-600);
+  for(const [id,expected] of Object.entries({
+    assets, funds:cash+bank-31000-44000, profit:33000-6000-600,
+  })) assert.ok(isCorrect(added.find(q=>q.id==='bb1-review-repair-'+id)!,String(expected)),id);
+  const previous = newAttempt({...review,version:beginnerVersion,questions:review.questions.slice(0,-6)},'practice');
+  const data = emptyData();
+  data.assessments[review.id] = [previous];
+  const restored = validateData(JSON.parse(JSON.stringify(data)));
+  assert.deepEqual(restored.assessments[review.id],[previous]);
+  assert.equal(compatibleAttempt(review,previous),false);
 });

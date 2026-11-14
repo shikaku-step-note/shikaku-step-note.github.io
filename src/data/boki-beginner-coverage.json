@@ -8,7 +8,8 @@
     "before": "foundationの出資・借入例",
     "upgradeAction": "保持し分類練習を追加",
     "lessons": [
-      "bb2-business"
+      "bb2-business",
+      "bb2-foundations-case"
     ],
     "teaching": [
       {
@@ -22,6 +23,14 @@
       {
         "lesson": "bb2-business",
         "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-business",
+        "anchor": "unit1-business-checkpoints"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-existing-shop"
       }
     ],
     "workedExamples": [
@@ -36,6 +45,10 @@
       {
         "lesson": "bb2-business",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-error-clinic"
       }
     ],
     "explanationStatus": "complete",
@@ -113,6 +126,15 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb1-depth-business-equation",
+        "assessment": "bb2-business-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -137,6 +159,22 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb1-review-repair-assets",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "bb1-review-repair-profit",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -158,7 +196,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -170,7 +208,8 @@
     "before": "foundationの利益逆算例",
     "upgradeAction": "出資・引出しを除く損益の逆算を深める",
     "lessons": [
-      "bb2-profit"
+      "bb2-profit",
+      "bb2-foundations-case"
     ],
     "teaching": [
       {
@@ -184,6 +223,14 @@
       {
         "lesson": "bb2-profit",
         "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-profit",
+        "anchor": "unit1-profit-two-periods"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-existing-shop"
       }
     ],
     "workedExamples": [
@@ -198,6 +245,10 @@
       {
         "lesson": "bb2-profit",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-error-clinic"
       }
     ],
     "explanationStatus": "complete",
@@ -275,6 +326,14 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb1-depth-profit-equity",
+        "assessment": "bb2-profit-check",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -298,6 +357,31 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb1-review-repair-funds",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0,
+          1
+        ]
+      },
+      {
+        "id": "bb1-review-repair-profit",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "bb1-review-repair-error",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -319,7 +403,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -331,12 +415,21 @@
     "before": "journalに注文段階の短い記述",
     "upgradeAction": "取引・非取引の比較例を独立して追加",
     "lessons": [
-      "bb2-transaction"
+      "bb2-transaction",
+      "bb2-foundations-case"
     ],
     "teaching": [
       {
         "lesson": "bb2-transaction",
         "anchor": "objective-1"
+      },
+      {
+        "lesson": "bb2-transaction",
+        "anchor": "unit1-transaction-correct-classification"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-existing-shop"
       }
     ],
     "workedExamples": [
@@ -351,6 +444,10 @@
       {
         "lesson": "bb2-transaction",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-error-clinic"
       }
     ],
     "explanationStatus": "complete",
@@ -379,6 +476,15 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb1-depth-transaction-contract",
+        "assessment": "bb2-transaction-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -387,6 +493,21 @@
         "assessment": "boki-beginner-unit-1-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb1-review-repair-recognition",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb1-review-repair-split",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          1,
+          2
         ]
       }
     ],
@@ -405,7 +526,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -417,7 +538,8 @@
     "before": "journalの増減表",
     "upgradeAction": "結合関係・複合取引の適否を追加",
     "lessons": [
-      "bb2-transaction"
+      "bb2-transaction",
+      "bb2-foundations-case"
     ],
     "teaching": [
       {
@@ -427,6 +549,14 @@
       {
         "lesson": "bb2-transaction",
         "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-transaction",
+        "anchor": "unit1-transaction-correct-classification"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-existing-shop"
       }
     ],
     "workedExamples": [
@@ -441,6 +571,10 @@
       {
         "lesson": "bb2-transaction",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-error-clinic"
       }
     ],
     "explanationStatus": "complete",
@@ -497,6 +631,15 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb1-depth-transaction-contract",
+        "assessment": "bb2-transaction-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -520,6 +663,21 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb1-review-repair-recognition",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb1-review-repair-split",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -537,7 +695,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -549,12 +707,21 @@
     "before": "journalに概説",
     "upgradeAction": "勘定の形式と残高の左右を練習",
     "lessons": [
-      "bb2-journal"
+      "bb2-journal",
+      "bb2-foundations-case"
     ],
     "teaching": [
       {
         "lesson": "bb2-journal",
         "anchor": "objective-1"
+      },
+      {
+        "lesson": "bb2-journal",
+        "anchor": "unit1-journal-errors-decision"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-existing-shop"
       }
     ],
     "workedExamples": [
@@ -569,6 +736,10 @@
       {
         "lesson": "bb2-journal",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-error-clinic"
       }
     ],
     "explanationStatus": "complete",
@@ -597,6 +768,15 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb1-depth-journal-split",
+        "assessment": "bb2-journal-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -606,6 +786,30 @@
         "objectiveIndices": [
           0,
           1
+        ]
+      },
+      {
+        "id": "bb1-review-repair-split",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "bb1-review-repair-assets",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb1-review-repair-error",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          1,
+          2
         ]
       }
     ],
@@ -628,7 +832,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -640,7 +844,8 @@
     "before": "journalに単純・複合例",
     "upgradeAction": "条件の読み分け・仕訳全体の判断を追加",
     "lessons": [
-      "bb2-journal"
+      "bb2-journal",
+      "bb2-foundations-case"
     ],
     "teaching": [
       {
@@ -650,6 +855,14 @@
       {
         "lesson": "bb2-journal",
         "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-journal",
+        "anchor": "unit1-journal-errors-decision"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-existing-shop"
       }
     ],
     "workedExamples": [
@@ -664,6 +877,10 @@
       {
         "lesson": "bb2-journal",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-foundations-case",
+        "anchor": "unit1-case-error-clinic"
       }
     ],
     "explanationStatus": "complete",
@@ -720,6 +937,15 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb1-depth-journal-split",
+        "assessment": "bb2-journal-check",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
       }
     ],
     "assessments": [
@@ -744,6 +970,30 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb1-review-repair-split",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "id": "bb1-review-repair-assets",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          0
+        ]
+      },
+      {
+        "id": "bb1-review-repair-error",
+        "assessment": "boki-beginner-unit-1-review",
+        "objectiveIndices": [
+          1,
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -765,7 +1015,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {

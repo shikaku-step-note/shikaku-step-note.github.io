@@ -1,0 +1,387 @@
+{
+  "lessons": {
+    "bb2-business": [
+      {
+        "id": "bb1-depth-business-equation",
+        "lesson": "bb2-business",
+        "field": "basics",
+        "prompt": "月初の資産94,000円、負債37,000円。翌日、売掛金9,000円を預金で回収した後、借入金12,000円を預金から返した。利息はない。返済後の純資産は何円か。",
+        "explanation": "回収は資産同士の移動です。返済で資産と負債が同額減り、82,000−25,000＝57,000円。月初の94,000−37,000円とも一致します。",
+        "objectives": [
+          0,
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "57000"
+        ]
+      }
+    ],
+    "bb2-profit": [
+      {
+        "id": "bb1-depth-profit-equity",
+        "lesson": "bb2-profit",
+        "field": "basics",
+        "prompt": "月初純資産は73,000円、月末純資産は89,000円。その間に店主が元手を11,000円追加し、私用で現金2,000円を引き出した。ほかに直接の純資産増減はない。当月の利益は何円か。",
+        "explanation": "純資産は16,000円増加。出資11,000円を引き、持出し2,000円を足すと利益7,000円です。73,000＋11,000＋7,000−2,000＝89,000でも確認できます。",
+        "objectives": [
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "7000"
+        ]
+      }
+    ],
+    "bb2-transaction": [
+      {
+        "id": "bb1-depth-transaction-contract",
+        "lesson": "bb2-transaction",
+        "field": "basics",
+        "prompt": "備品25,000円を発注し、引渡し前に代金の一部4,000円を普通預金から支払った。4,000円の支払い時に起こることは何か。",
+        "explanation": "引渡し前なので備品はまだ増えません。支払済みの4,000円は前払金を増やし、普通預金を減らします。現金が出たという理由だけで費用にしません。",
+        "objectives": [
+          0,
+          1,
+          2
+        ],
+        "options": [
+          "発注額全額を費用にする",
+          "前払金が増え、普通預金が減る",
+          "備品25,000円が増え、普通預金4,000円だけが減る",
+          "金額が動いても発注中なので仕訳しない"
+        ],
+        "answer": 1
+      }
+    ],
+    "bb2-journal": [
+      {
+        "id": "bb1-depth-journal-split",
+        "lesson": "bb2-journal",
+        "field": "basics",
+        "prompt": "借入元金13,000円と利息800円を普通預金から一括で支払った。借方・貸方の科目と金額を入力してください。",
+        "explanation": "元金は負債の減少なので借方借入金13,000円、利息は費用の発生なので借方支払利息800円です。預金が13,800円減るので貸方は普通預金13,800円。数字の合計と科目の意味を分けて確かめます。",
+        "objectives": [
+          0,
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "現金",
+            "普通預金",
+            "借入金",
+            "支払利息",
+            "売上",
+            "売掛金",
+            "資本金"
+          ],
+          "debits": [
+            {
+              "account": "借入金",
+              "amount": 13000
+            },
+            {
+              "account": "支払利息",
+              "amount": 800
+            }
+          ],
+          "credits": [
+            {
+              "account": "普通預金",
+              "amount": 13800
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"借入金\",\"amount\":13000},{\"account\":\"支払利息\",\"amount\":800}],\"credits\":[{\"account\":\"普通預金\",\"amount\":13800}]}"
+        ]
+      }
+    ],
+    "bb2-foundations-case": [
+      {
+        "id": "bb1-depth-case-balanced-error",
+        "lesson": "bb2-foundations-case",
+        "field": "basics",
+        "prompt": "得意先から以前の売掛金16,000円を普通預金に回収したが、貸方を売上とした。ほかの仕訳は正しい。この誤記で当月利益は実際より何円大きくなるか。",
+        "explanation": "回収は売掛金から預金への振替です。売上は生じません。貸方を売上にすると収益が16,000円多くなり、費用は変わらないので利益も16,000円過大になります。",
+        "objectives": [
+          0,
+          1,
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "16000"
+        ]
+      }
+    ]
+  },
+  "review": [
+    {
+      "id": "bb1-review-repair-recognition",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "共通資料の5日と12日の処理の組合せとして正しいものを選んでください。",
+      "explanation": "5日は発注のみで仕訳なし。12日は前月の債権の回収なので、借方普通預金・貸方売掛金です。注文や入金という書類の名称だけでは処理を決められません。",
+      "objectives": [
+        0
+      ],
+      "options": [
+        "5日は備品を記録し、12日は売上を記録",
+        "5日は仕訳せず、12日は預金増加と売掛金減少を記録",
+        "5日は前払金を記録し、12日は売上を記録",
+        "5日も12日も仕訳しない"
+      ],
+      "answer": 1,
+      "targetObjectives": {
+        "bb2-transaction": [
+          0
+        ]
+      },
+      "materialIds": [
+        "bb-unit1-repair"
+      ]
+    },
+    {
+      "id": "bb1-review-repair-split",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "共通資料の9日について、仕訳の借方・貸方を入力してください。",
+      "explanation": "受領5,000円と未回収33,000−5,000＝28,000円が借方、完了した修理の売上33,000円が貸方です。受け取っていない部分も含め、完了時の売上を全額記録します。",
+      "objectives": [
+        0,
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "普通預金",
+          "借入金",
+          "支払利息",
+          "売上",
+          "売掛金",
+          "資本金"
+        ],
+        "debits": [
+          {
+            "account": "現金",
+            "amount": 5000
+          },
+          {
+            "account": "売掛金",
+            "amount": 28000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 33000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"現金\",\"amount\":5000},{\"account\":\"売掛金\",\"amount\":28000}],\"credits\":[{\"account\":\"売上\",\"amount\":33000}]}"
+      ],
+      "targetObjectives": {
+        "bb2-transaction": [
+          1,
+          2
+        ],
+        "bb2-journal": [
+          0,
+          1,
+          2
+        ]
+      },
+      "materialIds": [
+        "bb-unit1-repair"
+      ]
+    },
+    {
+      "id": "bb1-review-repair-assets",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "共通資料から、月末の資産合計を求めてください。答えは円単位の数字です。",
+      "explanation": "現金は31,000＋8,000＋5,000−6,000−3,000＝35,000円。普通預金は44,000＋10,000−7,600＝46,400円、売掛金は17,000＋28,000−10,000＝35,000円。資産は合計116,400円です。借入金17,000円は負債なので、資産合計には入れません。",
+      "objectives": [
+        1,
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "116400"
+      ],
+      "materialIds": [
+        "bb-unit1-repair"
+      ],
+      "targetObjectives": {
+        "bb2-business": [
+          0,
+          1
+        ],
+        "bb2-journal": [
+          0
+        ]
+      }
+    },
+    {
+      "id": "bb1-review-repair-funds",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "共通資料から、現金と普通預金を合わせた当月の純増額を求めてください。答えは円単位の数字です。",
+      "explanation": "月初は75,000円、月末は35,000＋46,400＝81,400円なので、6,400円の増加です。前月の売掛金の回収や元金返済も手元資金を動かします。当月利益26,400円とは差が出ます。",
+      "objectives": [
+        1
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "6400"
+      ],
+      "materialIds": [
+        "bb-unit1-repair"
+      ],
+      "targetObjectives": {
+        "bb2-profit": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bb1-review-repair-profit",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "共通資料から、月初と月末の純資産を照合して当月利益を求めてください。答えは円単位の数字です。",
+      "explanation": "月初純資産は31,000＋44,000＋17,000−24,000＝68,000円。月末は現金35,000円、預金46,400円、売掛金35,000円、借入金17,000円で純資産99,400円。99,400−68,000−8,000＋3,000＝26,400円です。33,000−6,000−600とも一致します。",
+      "objectives": [
+        1,
+        2
+      ],
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "26400"
+      ],
+      "targetObjectives": {
+        "bb2-business": [
+          1,
+          2
+        ],
+        "bb2-profit": [
+          0,
+          1,
+          2
+        ]
+      },
+      "materialIds": [
+        "bb-unit1-repair"
+      ]
+    },
+    {
+      "id": "bb1-review-repair-error",
+      "lesson": "bb2-foundations-case",
+      "field": "basics",
+      "prompt": "共通資料の21日を「借方 支払利息7,600／貸方 普通預金7,600」とした。月末残高を正しい帳簿と比べた結果を選んでください。",
+      "explanation": "預金の減少7,600円は正しく、貸借も一致します。ただし返済7,000円分の借入金が残り、費用が7,000円過大です。その分だけ利益は少なくなります。借入金の返済明細と照合します。",
+      "objectives": [
+        0,
+        1,
+        2
+      ],
+      "options": [
+        "預金が7,000円多く、利益も7,000円多い",
+        "貸借の合計に7,000円の差が出る",
+        "借入金は変わらず、利益だけ7,000円多い",
+        "借入金が7,000円多く、利益が7,000円少ない"
+      ],
+      "answer": 3,
+      "targetObjectives": {
+        "bb2-profit": [
+          1,
+          2
+        ],
+        "bb2-journal": [
+          1,
+          2
+        ]
+      },
+      "materialIds": [
+        "bb-unit1-repair"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "bb-unit1-repair",
+      "title": "修理店の月初残高と当月の資料",
+      "paragraphs": [
+        "円。月初残高は現金31,000、普通預金44,000、売掛金17,000、借入金24,000。消費税は考えません。店主個人への持出しはこの設例では資本金を減らします。"
+      ],
+      "tables": [
+        {
+          "caption": "引渡し、出資、回収と支払の記録",
+          "headers": [
+            "日",
+            "状況"
+          ],
+          "rows": [
+            [
+              "2日",
+              "店主が現金8,000円を追加出資。"
+            ],
+            [
+              "5日",
+              "来月納品予定の備品を注文。当日は受領も支払いもない。"
+            ],
+            [
+              "9日",
+              "修理を完了。総額33,000円のうち現金5,000円を受領し、残りは掛け。"
+            ],
+            [
+              "12日",
+              "前月の売掛金10,000円を普通預金で回収。"
+            ],
+            [
+              "16日",
+              "当月の電気代6,000円を現金払い。"
+            ],
+            [
+              "21日",
+              "借入元金7,000円と利息600円を普通預金から支払。"
+            ],
+            [
+              "27日",
+              "店主が私用のため店の現金3,000円を持ち出した。"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
