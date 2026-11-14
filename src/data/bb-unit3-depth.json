@@ -1,0 +1,429 @@
+{
+  "lessons": {
+    "bb2-receivables": [
+      {
+        "id": "bb3-lesson-ar",
+        "lesson": "bb2-receivables",
+        "prompt": "月初売掛金は24,000円。当月に掛けで35,000円を販売し、返品5,000円を売掛金から引き、34,000円を回収した。月末残高は何円か。",
+        "explanation": "月初に掛け販売を足し、返品と回収を引きます。24,000＋35,000−5,000−34,000＝20,000円。返品で売上も減りますが、回収時には売上を動かしません。",
+        "objectives": [
+          1
+        ],
+        "field": "basics",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "20000"
+        ]
+      }
+    ],
+    "bb2-credit": [
+      {
+        "id": "bb3-lesson-card",
+        "lesson": "bb2-credit",
+        "prompt": "商品48,000円をカードで販売した。決済手数料2.5％は販売時に計上する。販売日の仕訳を入力してください。",
+        "explanation": "手数料は48,000×0.025＝1,200円。決済会社から受け取る46,800円と並べて借方に記録します。貸方の売上は控除前の48,000円です。",
+        "objectives": [
+          0,
+          1
+        ],
+        "field": "basics",
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "現金",
+            "普通預金",
+            "買掛金",
+            "売掛金",
+            "売上",
+            "仕入",
+            "前払金",
+            "前受金",
+            "クレジット売掛金",
+            "支払手数料",
+            "未払金",
+            "未収入金",
+            "備品"
+          ],
+          "debits": [
+            {
+              "account": "クレジット売掛金",
+              "amount": 46800
+            },
+            {
+              "account": "支払手数料",
+              "amount": 1200
+            }
+          ],
+          "credits": [
+            {
+              "account": "売上",
+              "amount": 48000
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"クレジット売掛金\",\"amount\":46800},{\"account\":\"支払手数料\",\"amount\":1200}],\"credits\":[{\"account\":\"売上\",\"amount\":48000}]}"
+        ]
+      }
+    ],
+    "bb2-prepayments": [
+      {
+        "id": "bb3-lesson-advance",
+        "lesson": "bb2-prepayments",
+        "prompt": "商品27,000円を受領し、以前に支払った手付金8,000円を全額充当した。残額は掛けとして、仕訳を入力してください。",
+        "explanation": "受領した商品全体が仕入27,000円。貸方では先に払った8,000円を前払金から減らし、残り19,000円を買掛金に記録します。",
+        "objectives": [
+          1
+        ],
+        "field": "basics",
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "現金",
+            "普通預金",
+            "買掛金",
+            "売掛金",
+            "売上",
+            "仕入",
+            "前払金",
+            "前受金",
+            "クレジット売掛金",
+            "支払手数料",
+            "未払金",
+            "未収入金",
+            "備品"
+          ],
+          "debits": [
+            {
+              "account": "仕入",
+              "amount": 27000
+            }
+          ],
+          "credits": [
+            {
+              "account": "前払金",
+              "amount": 8000
+            },
+            {
+              "account": "買掛金",
+              "amount": 19000
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"仕入\",\"amount\":27000}],\"credits\":[{\"account\":\"前払金\",\"amount\":8000},{\"account\":\"買掛金\",\"amount\":19000}]}"
+        ]
+      }
+    ],
+    "bb2-other-claims": [
+      {
+        "id": "bb3-lesson-equipment",
+        "lesson": "bb2-other-claims",
+        "prompt": "店で使う備品56,000円を受領し、現金16,000円を支払った。残額は翌月払いとして、仕訳を入力してください。",
+        "explanation": "借方は備品56,000円。貸方は現金16,000円と未払金40,000円です。店で使う備品の代金なので、商品仕入れの買掛金とは区別します。",
+        "objectives": [
+          0
+        ],
+        "field": "basics",
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "現金",
+            "普通預金",
+            "買掛金",
+            "売掛金",
+            "売上",
+            "仕入",
+            "前払金",
+            "前受金",
+            "クレジット売掛金",
+            "支払手数料",
+            "未払金",
+            "未収入金",
+            "備品"
+          ],
+          "debits": [
+            {
+              "account": "備品",
+              "amount": 56000
+            }
+          ],
+          "credits": [
+            {
+              "account": "現金",
+              "amount": 16000
+            },
+            {
+              "account": "未払金",
+              "amount": 40000
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"備品\",\"amount\":56000}],\"credits\":[{\"account\":\"現金\",\"amount\":16000},{\"account\":\"未払金\",\"amount\":40000}]}"
+        ]
+      }
+    ]
+  },
+  "materials": [
+    {
+      "id": "bb3-settlement-docs",
+      "title": "つばき店の引渡し・決済資料",
+      "paragraphs": [
+        "月初の対象債権・債務はすべて0円。税は考えません。カード手数料は入金時に計上し、振込先や振込元は普通預金とします。"
+      ],
+      "tables": [
+        {
+          "caption": "引渡し・決済・入金明細",
+          "headers": [
+            "日",
+            "資料"
+          ],
+          "rows": [
+            [
+              "4日",
+              "仕入先へ商品注文の手付金9,000円を振り込む。"
+            ],
+            [
+              "6日",
+              "客から未引渡し商品の内金7,000円を振込で受け取る。"
+            ],
+            [
+              "11日",
+              "商品44,000円を受領し、手付金9,000円を全額充当。残りは掛け。"
+            ],
+            [
+              "13日",
+              "商品31,000円を渡し、内金7,000円を全額充当。残りは掛け。"
+            ],
+            [
+              "16日",
+              "カードで商品60,000円を販売。"
+            ],
+            [
+              "18日",
+              "営業用の備品48,000円を受領し、全額は後日支払う。"
+            ],
+            [
+              "20日",
+              "13日の商品掛代金から10,000円を振込で回収。"
+            ],
+            [
+              "23日",
+              "16日のカード販売のうち額面42,000円分を決済。手数料1,260円を控除して入金。"
+            ],
+            [
+              "26日",
+              "11日の買掛金のうち14,000円を振込みで支払う。"
+            ],
+            [
+              "28日",
+              "18日の備品代のうち12,000円を振込みで支払う。"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "review": [
+    {
+      "id": "bb3-review-delivery",
+      "lesson": "bb2-prepayments",
+      "prompt": "共通資料の13日の仕訳を入力してください。",
+      "explanation": "納品日に全額31,000円を売上とします。以前受け取った7,000円で前受金を解消し、残り24,000円を売掛金に記録します。",
+      "objectives": [
+        0,
+        1
+      ],
+      "field": "basics",
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "普通預金",
+          "買掛金",
+          "売掛金",
+          "売上",
+          "仕入",
+          "前払金",
+          "前受金",
+          "クレジット売掛金",
+          "支払手数料",
+          "未払金",
+          "未収入金",
+          "備品"
+        ],
+        "debits": [
+          {
+            "account": "前受金",
+            "amount": 7000
+          },
+          {
+            "account": "売掛金",
+            "amount": 24000
+          }
+        ],
+        "credits": [
+          {
+            "account": "売上",
+            "amount": 31000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"前受金\",\"amount\":7000},{\"account\":\"売掛金\",\"amount\":24000}],\"credits\":[{\"account\":\"売上\",\"amount\":31000}]}"
+      ],
+      "materialIds": [
+        "bb3-settlement-docs"
+      ]
+    },
+    {
+      "id": "bb3-review-customer",
+      "lesson": "bb2-receivables",
+      "prompt": "共通資料から、月末の売掛金（クレジット売掛金を除く）を求めてください。",
+      "explanation": "13日に31,000−7,000＝24,000円が発生。20日に10,000円を回収したので、月末は14,000円です。",
+      "objectives": [
+        0,
+        1
+      ],
+      "field": "basics",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "14000"
+      ],
+      "materialIds": [
+        "bb3-settlement-docs"
+      ]
+    },
+    {
+      "id": "bb3-review-card",
+      "lesson": "bb2-credit",
+      "prompt": "共通資料の23日の仕訳を入力してください。",
+      "explanation": "決済対象42,000円をクレジット売掛金から落とします。借方は実際の入金40,740円と、この日に計上する手数料1,260円に分けます。",
+      "objectives": [
+        0,
+        1,
+        2
+      ],
+      "field": "basics",
+      "options": [],
+      "answer": 0,
+      "input": "journal",
+      "journal": {
+        "accounts": [
+          "現金",
+          "普通預金",
+          "買掛金",
+          "売掛金",
+          "売上",
+          "仕入",
+          "前払金",
+          "前受金",
+          "クレジット売掛金",
+          "支払手数料",
+          "未払金",
+          "未収入金",
+          "備品"
+        ],
+        "debits": [
+          {
+            "account": "普通預金",
+            "amount": 40740
+          },
+          {
+            "account": "支払手数料",
+            "amount": 1260
+          }
+        ],
+        "credits": [
+          {
+            "account": "クレジット売掛金",
+            "amount": 42000
+          }
+        ]
+      },
+      "accepted": [
+        "{\"debits\":[{\"account\":\"普通預金\",\"amount\":40740},{\"account\":\"支払手数料\",\"amount\":1260}],\"credits\":[{\"account\":\"クレジット売掛金\",\"amount\":42000}]}"
+      ],
+      "materialIds": [
+        "bb3-settlement-docs"
+      ]
+    },
+    {
+      "id": "bb3-review-supplier",
+      "lesson": "bb2-receivables",
+      "prompt": "共通資料から、月末の買掛金を求めてください。",
+      "explanation": "11日の掛け部分は44,000−9,000＝35,000円。26日の支払い14,000円を引くと21,000円です。備品代は別の勘定で追います。",
+      "objectives": [
+        0,
+        1
+      ],
+      "field": "basics",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "21000"
+      ],
+      "materialIds": [
+        "bb3-settlement-docs"
+      ]
+    },
+    {
+      "id": "bb3-review-equipment",
+      "lesson": "bb2-other-claims",
+      "prompt": "共通資料から、月末の未払金を求めてください。",
+      "explanation": "備品代48,000円から28日の支払額12,000円を引きます。残り36,000円は、商品を仕入れたときの買掛金とは別の債務です。",
+      "objectives": [
+        0,
+        2
+      ],
+      "field": "basics",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "36000"
+      ],
+      "materialIds": [
+        "bb3-settlement-docs"
+      ]
+    },
+    {
+      "id": "bb3-review-card-remaining",
+      "lesson": "bb2-credit",
+      "prompt": "共通資料から、月末のクレジット売掛金を求めてください。",
+      "explanation": "16日に発生した60,000円から、23日の決済対象額42,000円を引いて18,000円。手数料控除後の入金だけを引くと、決済済みの手数料が残ります。",
+      "objectives": [
+        2
+      ],
+      "field": "basics",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "18000"
+      ],
+      "materialIds": [
+        "bb3-settlement-docs"
+      ]
+    }
+  ]
+}

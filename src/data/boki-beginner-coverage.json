@@ -2367,6 +2367,10 @@
       {
         "lesson": "bb2-receivables",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-receivables",
+        "anchor": "unit3-receivables-same-total"
       }
     ],
     "explanationStatus": "complete",
@@ -2423,6 +2427,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb3-lesson-ar",
+        "assessment": "bb2-receivables-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -2445,6 +2456,13 @@
         "assessment": "boki-beginner-unit-3-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb3-review-customer",
+        "assessment": "boki-beginner-unit-3-review",
+        "objectiveIndices": [
+          1
         ]
       }
     ],
@@ -2475,7 +2493,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -2699,6 +2717,10 @@
       {
         "lesson": "bb2-credit",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-credit",
+        "anchor": "unit3-credit-period-compare"
       }
     ],
     "explanationStatus": "complete",
@@ -2779,6 +2801,14 @@
           1,
           2
         ]
+      },
+      {
+        "id": "bb3-lesson-card",
+        "assessment": "bb2-credit-check",
+        "objectiveIndices": [
+          0,
+          1
+        ]
       }
     ],
     "assessments": [
@@ -2811,6 +2841,14 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb3-review-card",
+        "assessment": "boki-beginner-unit-3-review",
+        "objectiveIndices": [
+          0,
+          1
+        ]
       }
     ],
     "mockQuestions": [
@@ -2828,7 +2866,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -3038,6 +3076,14 @@
       {
         "lesson": "bb2-other-claims",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-other-claims",
+        "anchor": "unit3-other-claims-predict"
+      },
+      {
+        "lesson": "bb2-other-claims",
+        "anchor": "unit3-settlement-synthesis"
       }
     ],
     "explanationStatus": "complete",
@@ -3089,6 +3135,13 @@
           0,
           2
         ]
+      },
+      {
+        "id": "bb3-lesson-equipment",
+        "assessment": "bb2-other-claims-check",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "assessments": [
@@ -3111,6 +3164,14 @@
         "assessment": "boki-beginner-unit-3-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb3-review-equipment",
+        "assessment": "boki-beginner-unit-3-review",
+        "objectiveIndices": [
+          0,
+          2
         ]
       }
     ],
@@ -3137,7 +3198,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -3177,6 +3238,10 @@
       {
         "lesson": "bb2-prepayments",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-prepayments",
+        "anchor": "unit3-prepayments-predict"
       }
     ],
     "explanationStatus": "complete",
@@ -3256,6 +3321,13 @@
           1,
           2
         ]
+      },
+      {
+        "id": "bb3-lesson-advance",
+        "assessment": "bb2-prepayments-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -3287,6 +3359,13 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb3-review-delivery",
+        "assessment": "boki-beginner-unit-3-review",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "mockQuestions": [
@@ -3308,7 +3387,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6061,6 +6140,10 @@
       {
         "lesson": "bb2-receivables",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-receivables",
+        "anchor": "unit3-receivables-independent-reconcile"
       }
     ],
     "explanationStatus": "complete",
@@ -6096,6 +6179,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb3-lesson-ar",
+        "assessment": "bb2-receivables-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -6108,6 +6198,13 @@
       },
       {
         "id": "bb2-u3-review-02",
+        "assessment": "boki-beginner-unit-3-review",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb3-review-customer",
         "assessment": "boki-beginner-unit-3-review",
         "objectiveIndices": [
           1
@@ -6141,7 +6238,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {
@@ -6283,6 +6380,10 @@
       {
         "lesson": "bb2-receivables",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "bb2-receivables",
+        "anchor": "unit3-receivables-match-practice"
       }
     ],
     "explanationStatus": "complete",
@@ -6334,6 +6435,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb3-review-supplier",
+        "assessment": "boki-beginner-unit-3-review",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "mockQuestions": [
@@ -6363,7 +6471,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-10-28",
+    "verifiedOn": "2026-11-14",
     "remainingGap": null
   },
   {

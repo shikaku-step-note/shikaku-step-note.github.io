@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerUnit1Version, beginnerUnit2Version, beginnerWorkload } from '../src/data/boki-beginner';
+import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerTextbookVersion, beginnerUnit1Version, beginnerUnit2Version, beginnerUnit3Version, beginnerWorkload } from '../src/data/boki-beginner';
 import { bokiAssessments } from '../src/data/bookkeeping';
 import { gradeAttempt, newAttempt, practicePoints, remainingSeconds, compatibleAttempt, assessmentMaterialIssues, isCorrect, type Question } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -188,7 +188,7 @@ test('textbook practice is added to every chapter without changing the mock vers
   for(const id of beginnerLessonIds){
     const original = beginnerBank[id] ?? [];
     const definition = assessments.find(a=>a.id===id+'-check')!;
-    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : beginnerTextbookVersion,id);
+    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : ['bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims'].includes(id) ? beginnerUnit3Version : beginnerTextbookVersion,id);
     assert.deepEqual(definition.questions.slice(0,original.length),original,id);
     assert.ok(definition.questions.length>original.length,id);
     if(original.length) assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);
@@ -258,6 +258,24 @@ test('Unit 2 cutoff documents reconcile supplier and bank balances without doubl
   const previous = newAttempt({...review,version:'bb-2026-unit2-v1',questions:review.questions.slice(0,-6)},'practice');
   const data = emptyData();
   data.assessments[review.id] = [previous];
+  assert.deepEqual(validateData(JSON.parse(JSON.stringify(data))).assessments[review.id],[previous]);
+  assert.equal(compatibleAttempt(review,previous),false);
+});
+
+test('Unit 3 shared settlement separates advances, trade balances, card fees and equipment obligations',()=>{
+  const review=assessments.find(a=>a.id==='boki-beginner-unit-3-review')!;
+  assert.equal(review.version,beginnerUnit3Version);
+  assert.deepEqual(assessmentMaterialIssues(review),[]);
+  const added=review.questions.filter(q=>q.id.startsWith('bb3-review-'));
+  assert.equal(added.length,6);
+  for(const [suffix,expected] of Object.entries({
+    customer:31000-7000-10000,supplier:44000-9000-14000,equipment:48000-12000,'card-remaining':60000-42000,
+  })) assert.ok(isCorrect(added.find(q=>q.id==='bb3-review-'+suffix)!,String(expected)),suffix);
+  const card=added.find(q=>q.id==='bb3-review-card')!;
+  assert.deepEqual(card.journal?.debits.map(row=>row.amount),[42000-1260,1260]);
+  const previous=newAttempt({...review,version:beginnerVersion,questions:review.questions.slice(0,-6)},'practice');
+  const data=emptyData();
+  data.assessments[review.id]=[previous];
   assert.deepEqual(validateData(JSON.parse(JSON.stringify(data))).assessments[review.id],[previous]);
   assert.equal(compatibleAttempt(review,previous),false);
 });

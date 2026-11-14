@@ -1,4 +1,4 @@
-import { beginnerGroups, beginnerLessonQuestions, beginnerUnit1Version, beginnerUnit2Version, beginnerLessonVersion, beginnerVersion, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
+import { beginnerGroups, beginnerLessonQuestions, beginnerUnit1Version, beginnerUnit2Version, beginnerUnit3Version, beginnerLessonVersion, beginnerVersion, beginnerReviewBank, beginnerSources, beginnerReviewed, beginnerWorkload } from '../src/data/boki-beginner.ts';
 import coverage from '../src/data/boki-beginner-coverage.json' with {type:'json'};
 export function beginnerCurriculum(rows) {
   const workload=beginnerWorkload(rows);
@@ -6,7 +6,7 @@ export function beginnerCurriculum(rows) {
     '日商簿記初級 詳しい学習ツリー・スケジュール',
     '対象：簿記初級の全範囲。原価計算初級・1〜3級は別区分。',
     '適用：2026年度（2027年3月31日まで）。2027年4月施行の確定版とは区別。',
-    `公式資料確認日：${beginnerReviewed}／ユニット1 総合確認版：${beginnerUnit1Version}／ユニット2 総合確認版：${beginnerUnit2Version}／模試版：${beginnerVersion}`,
+    `公式資料確認日：${beginnerReviewed}／ユニット1 総合確認版：${beginnerUnit1Version}／ユニット2 総合確認版：${beginnerUnit2Version}／ユニット3 総合確認版：${beginnerUnit3Version}／模試版：${beginnerVersion}`,
     '標準：仕組みの説明→理由付き例題→独立練習→総合確認→40分模試。独自教材・公式の認定や合格保証はありません。',
     '前提：四則計算、紙と電卓。会計の予備知識は不要。',
     '', '学習時間の見積り（実測値・公式推奨時間ではありません）',
