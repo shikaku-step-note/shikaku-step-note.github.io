@@ -70,6 +70,9 @@ const workload = beginner
       <section class="course-section">
         <h2>無理なく進める学習案</h2>
         <p>{course.plan}</p>
+        {beginner && (
+          <p>受験日が決まったら、<a href={href('study-guides/boki-beginner-exam-day/')}>当日の持ち物と電卓の条件</a>も確認しておきましょう。</p>
+        )}
         {workload && (
           <div class="prose">
             <p>
