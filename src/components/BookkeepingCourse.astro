@@ -146,6 +146,12 @@ const workload = beginner
       <section class="course-section">
         <h2>総復習と模擬試験</h2>
         {beginner && (
+          <p>
+            <a href={href('study-guides/boki-beginner-past-questions/')}>公式サンプル問題の使い方と、過去問に頼らない復習法</a>
+            では、最初に解くときのメモの取り方と、模試へ進むまでの練習手順を紹介します。
+          </p>
+        )}
+        {beginner && (
           <p><a href={href('qualifications/boki-beginner/bb2-integration/#closing-lab-title')}>一か月の仕訳と残高を一つずつ追う</a>。仕訳の借方・貸方を予想し、現金と利益の変化を確かめてから総復習へ進みます。</p>
         )}
         <p>
