@@ -53,7 +53,7 @@ for (const file of htmlFiles) {
     .replace(/index\.html$/, '')}`;
   const pagePath = new URL(ownUrl).pathname;
   const advertisingExpected = !noindex &&
-    (pagePath === `${base}/` || pagePath.startsWith(`${base}/qualifications/`));
+    pagePath.startsWith(`${base}/qualifications/`);
   const adTags = [...html.matchAll(/<script\b[^>]*src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js[^>]*>/g)];
   if (adTags.length !== (advertisingExpected ? 1 : 0)) fail(file, 'unexpected or missing AdSense script');
   if (advertisingExpected && adTags.length === 1) {

@@ -115,15 +115,24 @@ $$<HTMLButtonElement>('[data-native-share]').forEach((button) => {
   }
 });
 let entries: Entry[] = [];
-const catalog = fetch(href('search-index.json'))
-  .then((r) => {
-    if (!r.ok) throw new Error('catalog');
-    return r.json() as Promise<Entry[]>;
-  })
-  .then((data) => {
-    entries = data;
-    return data;
-  });
+let catalog: Promise<Entry[]> | undefined;
+
+function loadCatalog() {
+  catalog ??= fetch(href('search-index.json'))
+    .then((r) => {
+      if (!r.ok) throw new Error('catalog');
+      return r.json() as Promise<Entry[]>;
+    })
+    .then((data) => {
+      entries = data;
+      return data;
+    })
+    .catch((error: unknown) => {
+      catalog = undefined;
+      throw error;
+    });
+  return catalog;
+}
 const normalize = (s: string) => s.normalize('NFKC').toLocaleLowerCase('ja').replace(/\s+/g, ' ').trim();
 function entryLink(entry: Entry, meta?: string) {
   const article = document.createElement('article');
@@ -156,7 +165,7 @@ if ($('[data-search-form]')) {
     }
     status.textContent = '教材を検索しています…';
     try {
-      const data = await catalog;
+      const data = await loadCatalog();
       if (version !== searchVersion) return;
       const tokens = query.split(' ');
       const matches = data.filter(
@@ -266,6 +275,7 @@ function renderProgress() {
   const allLessons = entries.filter((e) => e.kind === 'レッスン');
   const lessons = allLessons.filter((e) => !e.archived);
   $$('[data-course-progress]').forEach((el) => {
+    if (!entries.length && el.dataset.courseTotal !== undefined) return;
     const course = selectCourseLessons(
       lessons,
       el.dataset.courseProgress!,
@@ -410,7 +420,18 @@ async function confirmAction(description: string) {
   });
 }
 async function start() {
-  await Promise.all([storage.init(), catalog.catch(() => [])]);
+  const requiresCatalog = $(
+    '[data-course-progress]:not([data-course-total]), [data-course-bar], [data-course-start], [data-history-list]',
+  );
+  const loadProgressCatalog = () => loadCatalog().catch(() => []);
+  await Promise.all([storage.init(), requiresCatalog ? loadProgressCatalog() : undefined]);
+
+  // Static course totals are already available for first-time visitors.
+  const hasProgress = Object.values(storage.data.records).some((record) => record.status === 'completed');
+  const needsCardProgress = hasProgress && $('[data-course-total]');
+  const needsResumeLink = storage.data.lastLesson && $('[data-home-resume]');
+  if (!requiresCatalog && (needsCardProgress || needsResumeLink))
+    await loadProgressCatalog();
   renderProgress();
   if ($('[data-assessment]')) {
     const { setupAssessment } = await import('./assessment-ui');

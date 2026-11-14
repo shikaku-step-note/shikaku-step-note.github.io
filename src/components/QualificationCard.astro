@@ -28,7 +28,7 @@ const count = (await getCollection('lessons', (l) => l.data.qualification === q.
     <span>
       {qualificationLabel(q)}・{count}レッスン
     </span>
-    <span data-course-progress={q.id}>未学習</span>
+    <span data-course-progress={q.id} data-course-total={count}>0 / {count} レッスン学習済み</span>
   </div>
   <a class="card-link" href={href(`qualifications/${q.id}/`)}>
     学習ステップを見る <Icon name="arrow" size={19} />

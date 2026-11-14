@@ -53,11 +53,11 @@ if (breadcrumbs.length)
   });
 if (schema) graph.push(schema);
 const verification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
-// Load only on public course content. Personal records, runners, samples,
+// The homepage stays ad-free for a fast, stable first visit. Personal records, runners, samples,
 // legacy redirects and supporting/legal pages do not need the advertising tag.
 const showAdSense =
   !noindex &&
-  (Astro.url.pathname === href('') || Astro.url.pathname.startsWith(href('qualifications/')));
+  Astro.url.pathname.startsWith(href('qualifications/'));
 ---
 
 <!doctype html>
@@ -124,7 +124,7 @@ const showAdSense =
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href={href('')} aria-label="資格ステップノート ホーム">
-          <img src={href('logo.png')} width="44" height="44" alt="" />
+          <img src={href('logo-88.webp')} width="44" height="44" alt="" />
           <span>
             資格ステップノート<small>無料で学べる資格学習サイト</small>
           </span>
@@ -199,7 +199,7 @@ const showAdSense =
       <div class="container footer-grid">
         <div>
           <a class="brand" href={href('')}>
-            <img src={href('logo.png')} width="42" height="42" alt="" />
+            <img src={href('logo-88.webp')} width="42" height="42" loading="lazy" alt="" />
             <span>資格ステップノート</span>
           </a>
           <p>
