@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "予算と実績を同じ単位で比べ、売上差額を正しく読む",
   "description": "予算・実績の販売数量と売価から売上高を計算します。差額と達成率、単位や対象期間の違い、売上増と利益増の区別を練習します。",
-  "order": 23,
+  "order": 24,
   "unit": 5,
   "minutes": 65,
   "sample": false,

@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "一個売るごとの貢献利益から、月の営業利益を組み立てる",
   "description": "売上高から変動費を引く理由を、販売一個ごとの増分から学びます。貢献利益・貢献利益率・営業利益を計算し、売上総利益との違いも確かめます。",
-  "order": 19,
+  "order": 20,
   "unit": 4,
   "minutes": 70,
   "sample": false,

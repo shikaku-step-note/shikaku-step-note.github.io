@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "利益がゼロになる販売数量と売上高を、損益の式から求める",
   "description": "損益分岐点を固定費の回収として説明し、数量・売上高の両方で計算します。整数数量の切上げ、端数、貢献利益が正でない場合を区別します。",
-  "order": 20,
+  "order": 21,
   "unit": 4,
   "minutes": 75,
   "sample": false,

@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "数量が変わったときの費用を、変動費と固定費に分けて考える",
   "description": "変動費・固定費を総額と単位当たりで読み分けます。活動量に応じた費用の予測、直接費・間接費との違い、計算が成り立つ範囲を例題で確かめます。",
-  "order": 18,
+  "order": 19,
   "unit": 4,
   "minutes": 65,
   "sample": false,

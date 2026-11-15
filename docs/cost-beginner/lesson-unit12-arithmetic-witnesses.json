@@ -313,5 +313,15 @@
     "id": "cb2-classification-case-q05",
     "formula": "35*(2400-64000/50)-8000-9300",
     "value": 21900
+  },
+  {
+    "id": "cb2-cost-sheet-audit-q02",
+    "formula": "(18-3-2)*400",
+    "value": 5200
+  },
+  {
+    "id": "cb2-cost-sheet-audit-q03",
+    "formula": "19000+(2000+3000+10000)*90/(90+60)",
+    "value": 28000
   }
 ]

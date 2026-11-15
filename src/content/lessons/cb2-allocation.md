@@ -1,5 +1,5 @@
 ---
-{"stableId":"cb2-allocation","qualification":"cost-beginner","title":"共通費の配賦率を求め、製品別負担額を確かめる","description":"製造間接費の配賦率を、作業時間や面積などの指定された基準で求めます。原票で直課分を切り分け、共通費を配賦して製品別原価を検算します。","order":11,"minutes":80,"sample":false,"updated":"2026-11-15","unit":2,"syllabus":[1,3],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["配賦基準の総量から配賦率を求め単位を説明する","指定基準で製品別間接費を計算し直接費と合算する","基準変更や端数を含む配賦額を総額へ照合する"],"prerequisite":"直接費と間接費、労務費・経費の集計を確認してください。割り算と割合を使います。","keywords":["配賦基準","配賦率","基準総量","機械運転時間","製品別配賦額","直接労務費基準","端数調整","製造間接費","直課","製品別原価"],"glossary":[{"term":"配賦基準","definition":"共通原価を分けるために用いる作業時間や数量などの尺度"},{"term":"配賦率","definition":"配賦する原価総額を配賦基準総量で割った1単位当たりの負担額"},{"term":"基準総量","definition":"配賦対象全体の作業時間など配賦基準の数量合計"},{"term":"機械運転時間","definition":"製造設備を運転した時間で配賦基準として用いることがある量"},{"term":"製品別配賦額","definition":"間接費総額のうち指定基準により各製品へ割り当てた金額"},{"term":"直接労務費基準","definition":"製品別の直接労務費額の割合を用いて間接費を配賦する方法"},{"term":"端数調整","definition":"丸めによる差額を指定方法に従って調整し総額を一致させる処理"}]}
+{"stableId":"cb2-allocation","qualification":"cost-beginner","title":"製造間接費の配賦率と計算｜配賦基準と製品別原価","description":"製造間接費の配賦率と製品ごとの負担額を、作業時間や機械時間から求めます。直接作業の記録を訂正したとき、配賦額がどう変わるかも確かめます。","order":11,"minutes":92,"sample":false,"updated":"2026-11-15","unit":2,"syllabus":[1,3],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["配賦基準の総量から配賦率を求め単位を説明する","指定基準で製品別間接費を計算し直接費と合算する","基準変更や端数を含む配賦額を総額へ照合する"],"prerequisite":"直接費と間接費、労務費・経費の集計を確認してください。割り算と割合を使います。","keywords":["配賦基準","配賦率","基準総量","機械運転時間","製品別配賦額","直接労務費基準","端数調整","製造間接費","直課","製品別原価","製造間接費の配賦率","配賦率の求め方","製造間接費 配賦 計算"],"glossary":[{"term":"配賦基準","definition":"共通原価を分けるために用いる作業時間や数量などの尺度"},{"term":"配賦率","definition":"配賦する原価総額を配賦基準総量で割った1単位当たりの負担額"},{"term":"基準総量","definition":"配賦対象全体の作業時間など配賦基準の数量合計"},{"term":"機械運転時間","definition":"製造設備を運転した時間で配賦基準として用いることがある量"},{"term":"製品別配賦額","definition":"間接費総額のうち指定基準により各製品へ割り当てた金額"},{"term":"直接労務費基準","definition":"製品別の直接労務費額の割合を用いて間接費を配賦する方法"},{"term":"端数調整","definition":"丸めによる差額を指定方法に従って調整し総額を一致させる処理"}]}
 ---
 
 配賦とは、一つの製品だけに結び付けられない共通費を、決められた基準で各製品に分けることです。どの費用を分け、何を基準にするかによって、製品が負担する金額が決まります。まず原票で直接結び付く費用を見分け、共通費だけを集計しましょう。
@@ -163,6 +163,48 @@ AとB共通の工場費90,000円を考えます。作業時間はA30時間、B60
 直接作業がAで18時間、Bで12時間、消費賃率が1,500円/時間、製造間接費の配賦率が900円/直接作業時間と与えられたとします。Aの直接労務費は18×1,500＝27,000円です。同じ18時間を使っても、間接費配賦額には900円を掛けるため16,200円になります。Bも直接労務費18,000円と間接費配賦額10,800円に分かれます。
 
 二つの率はどちらも円/時間ですが、賃率は作業そのものの原価を求める率で、配賦率は共通費を各製品に配る率です。配賦総額が実際発生額と一致するかは資料の条件によります。この例から分かる配賦総額は27,000円で、工場の実際発生額は資料にありません。「実際共通費を全額配賦する」と条件にある場合に、その総額との一致を確認します。
+
+<span id="worked-allocation-time-correction"></span>
+
+### 例題　作業票の記入先を直し、配賦の内訳を点検する
+
+工場共通費29,400円を、AとBの直接作業時間で配賦します。作業票は分で記録され、集計表では時間当たりの配賦率を使います。最初の記録はAが210分、Bが150分。設備点検60分は工場の共通作業です。共通作業の費用は29,400円に含まれていますが、点検時間はAにもBにも直接対応しないので、配賦基準量には入りません。
+
+<figure id="allocation-time-correction">
+<figcaption>作業票の30分をBからAへ移したときの配賦表</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-label="訂正前後の時間と配賦額">
+
+| 集計する項目 | 訂正前 | 訂正後 |
+| --- | ---: | ---: |
+| Aの直接作業 | 210分（3.5時間） | 240分（4時間） |
+| Bの直接作業 | 150分（2.5時間） | 120分（2時間） |
+| 製品別の直接作業合計 | 6時間 | 6時間 |
+| Aの配賦額 | 17,150円 | 19,600円 |
+| Bの配賦額 | 12,250円 | 9,800円 |
+
+</div>
+</figure>
+
+作業票の案件番号を確認すると、Bとされた30分はAの加工でした。30分はBから引いてAへ加えます。分母の6時間も、配賦率の29,400÷6＝4,900円/時間も変わりません。ただしAの負担は4,900円/時間×0.5時間＝2,450円増え、Bは同じ額だけ減ります。訂正後の合計は19,600＋9,800＝29,400円です。
+
+共通作業60分まで分母に入れてしまうと、率は4,200円/時間。A・Bへ割り当てるのは6時間分の25,200円で、4,200円が残ります。元の29,400円を全額配賦する条件に反します。一方、製品間で30分を取り違えた場合には合計が残ることはありません。明細で検出できる誤りと、配賦合計だけで検出できる誤りを分けて確かめます。
+
+<section class="guided-lesson" id="guided-allocation" aria-labelledby="guided-allocation-title">
+<h3 id="guided-allocation-title">途中で確認　訂正した時間でBの配賦額を求める</h3>
+<p id="guided-allocation-prompt">共通費36,000円を直接作業時間でA・Bに配賦します。当初の作業票はA90分・B150分でしたが、Aのうち30分はBの加工でした。ほかに工場共通の点検は60分あります。訂正したBの配賦額はいくらですか。</p>
+<form data-guided-practice data-expected="27000" data-guided-hint="訂正でAとBの直接作業合計は変わりません。点検60分は分母にもBの時間にも含めません。" aria-labelledby="guided-allocation-title" aria-describedby="guided-allocation-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-allocation-input">答え（円）</label> <input id="guided-allocation-input" name="answer" aria-describedby="guided-allocation-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>訂正後はA60分、B180分です。合計240分に占めるBの割合は180÷240＝4分の3。36,000×4分の3＝27,000円です。</p>
+</details>
+</section>
 
 ## 端数と逆算を含む練習
 

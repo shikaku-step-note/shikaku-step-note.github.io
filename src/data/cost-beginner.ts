@@ -7,6 +7,7 @@ import unit3 from './cost-beginner-unit3-questions.json';
 import unit45 from './cost-beginner-unit45-questions.json';
 import reviews from './cost-beginner-reviews.json';
 import unitTwoReviewMaterial from './cost-beginner-unit2-material.json';
+import unitTwoDiagnosticMaterial from './cost-beginner-unit2-diagnostic-material.json';
 import mocks from './cost-beginner-mocks.json';
 import sources from '../../docs/cost-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
@@ -17,6 +18,8 @@ export const costUnitOneExpandedVersion = 'cost-2026-unit-1-v4';
 export const costUnitOneReviewVersion = 'cost-2026-unit-1-review-v5';
 export const costUnitOneAssessmentVersion = 'cost-2026-unit-1-v3';
 export const costUnitTwoAssessmentVersion = 'cost-2026-unit-2-v3';
+export const costUnitTwoReviewVersion = 'cost-2026-unit-2-review-v4';
+export const costSheetAuditVersion = 'cost-2026-cost-sheet-audit-v1';
 const revisedUnitVersions: Partial<Record<number, string>> = {
   1: costUnitOneAssessmentVersion,
   2: costUnitTwoAssessmentVersion,
@@ -79,7 +82,8 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
     lessonTitles:Object.fromEntries(allRows.map(lesson=>[lesson.data.stableId,lesson.data.title]))};
   const result:Assessment[]=rows.map(lesson=>({...base,id:`${lesson.data.stableId}-check`,
     title:`${lesson.data.title}：理解度チェック`,kind:'lesson',unit:lesson.data.unit,
-    version:addedUnitOneIds.has(lesson.data.stableId) ? costUnitOneExpandedVersion :
+    version:lesson.data.stableId === 'cb2-cost-sheet-audit' ? costSheetAuditVersion :
+      addedUnitOneIds.has(lesson.data.stableId) ? costUnitOneExpandedVersion :
       revisedUnitVersions[lesson.data.unit??0]??costVersion,
     questions:costBank[lesson.data.stableId]??[],
     instructions:'条件を読み、計算の途中や判断の理由も紙に書いて確かめます。理解度チェックの結果は、ページの学習済み状態とは別に保存します。'}));
@@ -111,8 +115,8 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
       questions:questions.filter((_,n)=>unitTerms.has(terms[n]!.term)),
       instructions:'用語の定義から選ぶ確認です。計算や条件の判断は、単元の総合確認でも確かめてください。'});
     result.push({...base,id:`cost-beginner-unit-${unit}-review`,title:`原価計算初級・${title} 総合確認`,kind:'review',unit,
-      version:unit===1?costUnitOneReviewVersion:revisedUnitVersions[unit]??costVersion,
-      materials:unit===1?[unitOneReviewMaterial,unitOneServiceMaterial]:unit===2?[unitTwoReviewMaterial]:undefined,
+      version:unit===1?costUnitOneReviewVersion:unit===2?costUnitTwoReviewVersion:costVersion,
+      materials:unit===1?[unitOneReviewMaterial,unitOneServiceMaterial]:unit===2?[unitTwoReviewMaterial,unitTwoDiagnosticMaterial]:undefined,
       questions:costReviewBank[`unit-${unit}`]??[],instructions:'レッスン末の問題とは別の条件で、考え方と計算の手順を確かめる問題です。解説から必要なレッスンへ戻れます。'});
   }
   result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',version:costUnitOneGlossaryVersion,questions,

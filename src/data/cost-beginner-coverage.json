@@ -447,25 +447,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-materials#objective-1"
+      "cb2-materials#objective-1",
+      "cb2-cost-sheet-audit#objective-1"
     ],
     "workedExamples": [
       "cb2-materials#worked-1",
-      "cb2-materials#worked-material-ledger"
+      "cb2-materials#worked-material-ledger",
+      "cb2-materials#worked-material-record-control",
+      "cb2-cost-sheet-audit#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-materials-q01",
       "cb2-materials-q02",
       "cb2-materials-q03",
       "cb2-materials-q04",
-      "cb2-materials-q13"
+      "cb2-materials-q13",
+      "cb2-cost-sheet-audit-q02"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r01",
-      "cb2-unit-2-r14"
+      "cb2-unit-2-r14",
+      "cb2-unit-2-r18"
     ],
     "lessons": [
-      "cb2-materials"
+      "cb2-materials",
+      "cb2-cost-sheet-audit"
     ]
   },
   {
@@ -563,11 +569,14 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-labor-expenses#objective-3"
+      "cb2-labor-expenses#objective-3",
+      "cb2-cost-sheet-audit#objective-1"
     ],
     "workedExamples": [
       "cb2-labor-expenses#worked-3",
-      "cb2-labor-expenses#worked-labor-expense-packet"
+      "cb2-labor-expenses#worked-labor-expense-packet",
+      "cb2-labor-expenses#worked-labor-expense-record-control",
+      "cb2-cost-sheet-audit#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-labor-expenses-q09",
@@ -575,14 +584,16 @@
       "cb2-labor-expenses-q11",
       "cb2-labor-expenses-q12",
       "cb2-traceability-q06",
-      "cb2-labor-expenses-q14"
+      "cb2-labor-expenses-q14",
+      "cb2-cost-sheet-audit-q01"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r06",
       "cb2-unit-1-r08"
     ],
     "lessons": [
-      "cb2-labor-expenses"
+      "cb2-labor-expenses",
+      "cb2-cost-sheet-audit"
     ]
   },
   {
@@ -722,22 +733,28 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-allocation#objective-3"
+      "cb2-allocation#objective-3",
+      "cb2-cost-sheet-audit#objective-2"
     ],
     "workedExamples": [
-      "cb2-allocation#worked-3"
+      "cb2-allocation#worked-3",
+      "cb2-allocation#worked-allocation-time-correction",
+      "cb2-cost-sheet-audit#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-allocation-q09",
       "cb2-allocation-q10",
       "cb2-allocation-q11",
-      "cb2-allocation-q12"
+      "cb2-allocation-q12",
+      "cb2-cost-sheet-audit-q04"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-2-r09"
+      "cb2-unit-2-r09",
+      "cb2-unit-2-r19"
     ],
     "lessons": [
-      "cb2-allocation"
+      "cb2-allocation",
+      "cb2-cost-sheet-audit"
     ]
   },
   {
@@ -759,26 +776,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-allocation#objective-2"
+      "cb2-allocation#objective-2",
+      "cb2-cost-sheet-audit#objective-2"
     ],
     "workedExamples": [
       "cb2-allocation#worked-2",
-      "cb2-allocation#allocation-source-evidence"
+      "cb2-allocation#allocation-source-evidence",
+      "cb2-cost-sheet-audit#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-allocation-q05",
       "cb2-allocation-q06",
       "cb2-allocation-q07",
-      "cb2-allocation-q08"
+      "cb2-allocation-q08",
+      "cb2-cost-sheet-audit-q03"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r08",
       "cb2-unit-3-r05",
-      "cb2-unit-2-r16"
+      "cb2-unit-2-r16",
+      "cb2-unit-2-r19"
     ],
     "lessons": [
       "cb2-allocation",
-      "cb2-finished"
+      "cb2-finished",
+      "cb2-cost-sheet-audit"
     ]
   },
   {
@@ -798,12 +820,14 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-cost-flow#objective-2",
-      "cb2-cost-flow#objective-3"
+      "cb2-cost-flow#objective-3",
+      "cb2-cost-sheet-audit#objective-3"
     ],
     "workedExamples": [
       "cb2-cost-flow#worked-2",
       "cb2-cost-flow#worked-3",
-      "cb2-cost-flow#monthly-cost-reconciliation"
+      "cb2-cost-flow#monthly-cost-reconciliation",
+      "cb2-cost-flow#worked-cost-flow-two-errors"
     ],
     "independentQuestionIds": [
       "cb2-cost-flow-q05",
@@ -812,15 +836,18 @@
       "cb2-cost-flow-q08",
       "cb2-cost-flow-q11",
       "cb2-cost-flow-q04",
-      "cb2-cost-flow-q14"
+      "cb2-cost-flow-q14",
+      "cb2-cost-sheet-audit-q06"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r11",
       "cb2-unit-2-r10",
-      "cb2-unit-2-r17"
+      "cb2-unit-2-r17",
+      "cb2-unit-2-r20"
     ],
     "lessons": [
-      "cb2-cost-flow"
+      "cb2-cost-flow",
+      "cb2-cost-sheet-audit"
     ]
   },
   {
