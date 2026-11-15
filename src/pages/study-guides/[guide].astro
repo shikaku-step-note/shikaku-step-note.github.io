@@ -8,17 +8,21 @@ export async function getStaticPaths() {
 }
 const { guide } = Astro.props;
 const { Content } = await render(guide);
-const { title, description, published, cover, lead } = guide.data;
+const { title, description, published, updated, cover, lead } = guide.data;
 const coverUrl = cover && new URL(href(cover.path), Astro.site).href;
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 ---
 <Layout title={title} description={description} socialType="article" socialImage={cover}
   breadcrumbs={[{ name: '勉強ガイド', path: 'study-guides/' }, { name: title, path: `study-guides/${guide.id}/` }]}
   schema={{ '@type': 'Article', headline: title, description, datePublished: published, inLanguage: 'ja',
+    ...(updated && { dateModified: updated }),
     ...(coverUrl && { image: coverUrl }), mainEntityOfPage: { '@id': canonical } }}>
   <article class:list={['container', 'page-section', 'prose', { 'guide-with-lead': lead }]}>
     <h1>{title}</h1>
-    <p class="muted">公開 <time datetime={published}>{published}</time></p>
+    <p class="muted">
+      公開 <time datetime={published}>{published}</time>
+      {updated && <> ／ 更新 <time datetime={updated}>{updated}</time></>}
+    </p>
     {lead && <p class="guide-lead">{lead}</p>}
     {cover && (
       <figure class="guide-cover">
@@ -38,6 +42,9 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     font-size: 1.02rem;
     font-weight: 700;
     margin-bottom: 0;
+  }
+  .prose :global(.table-scroll th[scope="row"]) {
+    white-space: normal;
   }
   .guide-cover {
     margin: 1.5rem 0;

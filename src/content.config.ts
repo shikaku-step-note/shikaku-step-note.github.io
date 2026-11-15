@@ -48,6 +48,7 @@ const studyGuides = defineCollection({
     description: z.string(),
     qualification: z.string().refine((id) => qualifications.some((q) => q.id === id)),
     published: z.iso.date(),
+    updated: z.iso.date().optional(),
     lead: z.string().min(1).optional(),
     keywords: z.array(z.string()),
     cover: z.object({
