@@ -80,6 +80,16 @@ const workload = beginner
       <section class="course-section">
         <h2>無理なく進める学習案</h2>
         <p>{course.plan}</p>
+        {cost && (
+          <nav class="prose" aria-labelledby="cost-practice-order">
+            <h3 id="cost-practice-order">総復習と模試へ進む順番</h3>
+            <ol>
+              <li><a href="#steps">各ユニットの例題・用語・総合確認</a>で計算の根拠を確かめる。</li>
+              <li><a href={href('qualifications/cost-beginner/tests/cost-beginner-review-all/')}>全範囲の総復習</a>で、当月の実績と翌月の計画から必要な資料を選ぶ。</li>
+              <li><a href="#cost-mock-practice">40分の模擬試験</a>で資料を読む順番と時間の使い方を確かめる。</li>
+            </ol>
+          </nav>
+        )}
         {beginner && (
           <p>
             <a href={href('study-guides/boki-beginner-exam-dates/')}>試験日と会場を探す方法</a>では、随時試験と統一試験日、申込先の違いを確認できます。
@@ -159,7 +169,7 @@ const workload = beginner
           </details>
         ))}
       </section>
-      <section class="course-section">
+      <section class="course-section" id={cost ? 'cost-mock-practice' : undefined}>
         <h2>総復習と模擬試験</h2>
         {beginner && (
           <p>
@@ -174,7 +184,7 @@ const workload = beginner
           {beginner
             ? 'ユニット総合確認はレッスン末尾とは別の独自問題です。総復習24問は新しい複合問題12問とユニット確認の再利用12問。用語は本文の定義から出題し、用語総復習では同じ問題を再利用します。40分模試2回には別の独自問題と月次の共通資料を使います。'
             : cost
-              ? 'ユニットの総合確認と全体の復習は、レッスン末の問題とは別の条件で解きます。用語総復習は各ユニットの用語問題を再利用します。模試は2回とも異なる独自問題で、資料の読み取りから製品・サービス別の利益まで確かめます。'
+              ? 'ユニットの総合確認と全範囲の総復習には独自の問題を使います。総復習の共通資料では、当月の原価・在庫・利益を集計し、翌月のCVPと当月の売上高差異を計算します。用語総復習では各ユニットの用語問題を再利用します。40分模試2回は、異なる問題と資料で練習できます。'
               : third
                 ? 'ユニット確認と総復習は、レッスン末とは異なる条件の独立問題です。用語総復習は各ユニットの用語問題を再利用します。60分模試2回は、科目と金額を入力する仕訳、帳簿、決算資料を使う別々の独自問題です。'
                 : 'ユニット総合確認と総復習はレッスンの問題を再利用します。用語確認は各レッスンの定義から出題します。模試は別の独自問題です。'}

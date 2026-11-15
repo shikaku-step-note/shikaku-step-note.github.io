@@ -291,11 +291,15 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
         ) : (
           <a
             href={
-              tax ? href(`qualifications/zeirishi/tests/${reviewId}/`) : href('progress/')
+              tax
+                ? href(`qualifications/zeirishi/tests/${reviewId}/`)
+                : q.id === 'cost-beginner' && !d.archived
+                  ? href('qualifications/cost-beginner/tests/cost-beginner-review-all/')
+                  : href('progress/')
             }
           >
             <small>学びを振り返る</small>
-            {deepUnit ? 'このユニットの総合確認へ' : tax ? 'この科目の総復習へ' : 'マイ学習を見る'}
+            {deepUnit ? 'このユニットの総合確認へ' : tax ? 'この科目の総復習へ' : q.id === 'cost-beginner' && !d.archived ? '全範囲の総復習へ' : 'マイ学習を見る'}
           </a>
         )}
       </nav>

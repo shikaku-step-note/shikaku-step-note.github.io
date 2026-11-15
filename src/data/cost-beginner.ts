@@ -8,6 +8,7 @@ import unitThreeReviewMaterial from './cost-beginner-unit3-material.json';
 import unit45 from './cost-beginner-unit45-questions.json';
 import unitFourReviewMaterial from './cost-beginner-unit4-material.json';
 import unitFiveReviewMaterial from './cost-beginner-unit5-material.json';
+import courseReviewMaterial from './cost-beginner-course-review-material.json';
 import reviews from './cost-beginner-reviews.json';
 import unitTwoReviewMaterial from './cost-beginner-unit2-material.json';
 import unitTwoDiagnosticMaterial from './cost-beginner-unit2-diagnostic-material.json';
@@ -28,6 +29,8 @@ export const costMonthlyProfitVersion = 'cost-2026-monthly-profit-v1';
 export const costUnitFourReviewVersion = 'cost-2026-unit-4-review-v3';
 export const costCvpPlanningVersion = 'cost-2026-cvp-planning-v1';
 export const costUnitFiveReviewVersion = 'cost-2026-unit-5-review-v3';
+export const costCourseReviewVersion = 'cost-2026-course-review-v3';
+export const costMockVersion = 'cost-2026-mock-v3';
 const unitReviewVersions: Partial<Record<number, string>> = {
   1: costUnitOneReviewVersion,
   2: costUnitTwoReviewVersion,
@@ -147,9 +150,10 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
   }
   result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',version:costUnitOneGlossaryVersion,questions,
     instructions:'ユニットの用語問題を再利用する総復習です。計算や適用力の確認とは分けて使います。'});
-  result.push({...base,id:'cost-beginner-review-all',title:'原価計算初級 総合復習',kind:'review',questions:costReviewBank.all??[],
-    instructions:'分野をまたいで条件を読み取り、方法を選ぶ練習です。誤った問題は、途中の計算や判断を確認してから解き直してください。'});
-  for(const form of ['a','b'] as const)result.push({...base,id:`cb2-mock-${form}`,title:`原価計算初級 40分総合模試・第${form==='a'?1:2}回`,kind:'mock',minutes:40,
+  result.push({...base,id:'cost-beginner-review-all',title:'原価計算初級 総合復習',kind:'review',version:costCourseReviewVersion,
+    questions:costReviewBank.all??[],materials:[courseReviewMaterial],
+    instructions:'前半で論点ごとの手順を確かめ、後半は工房の共通資料を使います。当月の原価・在庫・損益、翌月のCVP、当月の予算実績差異で使う数字を区別してください。提出後は解説から復習できます。'});
+  for(const form of ['a','b'] as const)result.push({...base,id:`cb2-mock-${form}`,title:`原価計算初級 40分総合模試・第${form==='a'?1:2}回`,kind:'mock',minutes:40,version:costMockVersion,
     questions:mocks.forms[form] as Question[],materials:mocks.materials[form],
     instructions:'紙と電卓を用意してください。全37小問の選択式、40分・独自100点です。第1群44点、第2群24点、第3群32点で、第3群は共通の資料と表を使います。各小問は正答した場合だけ配点を加算します。\n公式案内の40分・選択式と、公開サンプルの大問構成を参考にした独自問題です。実試験の固定小問数・小問別配点・部分点・難易度を示すものではありません。練習得点から公式の合否を判定しません。\n時間ありでは、画面やブラウザを閉じている間も期限が進みます。提出後に解説と関連レッスンで解き直せます。'});
   for(const id of costLegacyIds){

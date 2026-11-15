@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costCourseReviewVersion, costMockVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -82,7 +82,7 @@ test('two full cost mocks use current selection format and absolute 40-minute de
   const seen=new Set<string>();const taught=new Set(Object.values(costBank).flat().map(q=>q.prompt));
   for(const form of ['a','b']){
     const a=assessments.find(a=>a.id===`cb2-mock-${form}`)!;
-    assert.equal(a.version,costVersion);assert.equal(a.minutes,40);assert.equal(a.questions.length,37);
+    assert.equal(a.version,costMockVersion);assert.equal(a.minutes,40);assert.equal(a.questions.length,37);
     assert.deepEqual(assessmentMaterialIssues(a),[]);
     assert.deepEqual([...new Set(a.questions.map(q=>q.group))].map(g=>a.questions.filter(q=>q.group===g).reduce((s,q)=>s+(q.points??1),0)),[44,24,32]);
     for(const q of a.questions){assert.equal(q.input,undefined);assert.equal(q.options.length,4);const premise=JSON.stringify([q.prompt,q.materialIds]);assert.ok(!seen.has(premise));assert.ok(!taught.has(q.prompt));seen.add(premise);}
@@ -100,13 +100,13 @@ test('two full cost mocks use current selection format and absolute 40-minute de
 test('root review and mock numeric targets agree with independently expressed formulas',()=>{
   for(const w of [...reviewWitnesses,...Object.entries(mockWitnesses).map(([id,w])=>({id,expression:w.formula,expected:String(w.value)}))]){
     const expression=w.expression;
-    assert.match(expression,/^[\d.()+*/\s-]+$/);
+    assert.match(expression,/^[\d.()+*/\s-]+$|^Math\.ceil\([\d.()+*/\s-]+\)$/);
     const expected=Function(`"use strict";return (${expression});`)() as number;
     const q=allQuestions.get(w.id)!;assert.ok(q,w.id);
     assert.ok(Math.abs(numeric(q.options[q.answer]!)-expected)<1e-8,w.id);
   }
-  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneReviewVersion,costUnitTwoReviewVersion,costUnitThreeReviewVersion,costUnitFourReviewVersion,costUnitFiveReviewVersion].includes(a.version)).flatMap(a=>a.questions);
-  assert.equal(reviews.length,126);assert.equal(new Set(reviews.map(q=>q.id)).size,126);
+  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneReviewVersion,costUnitTwoReviewVersion,costUnitThreeReviewVersion,costUnitFourReviewVersion,costUnitFiveReviewVersion,costCourseReviewVersion].includes(a.version)).flatMap(a=>a.questions);
+  assert.equal(reviews.length,135);assert.equal(new Set(reviews.map(q=>q.id)).size,135);
 });
 
 test('mock inventory and profit vectors reconcile independently in both directions',()=>{
@@ -397,4 +397,61 @@ test('Unit 5 reconciles normalized sales records, signed variances and a separat
   assert.equal(restored.assessments[review.id]?.[0]?.score,14);
   assert.ok(compatibleAttempt(old,restored.assessments[review.id]![0]!));
   assert.ok(!compatibleAttempt(review,restored.assessments[review.id]![0]!));
+});
+
+test('course review reconciles current inventory and profit separately from CVP and budget variance',()=>{
+  const final=assessments.find(a=>a.id==='cost-beginner-review-all')!;
+  assert.equal(final.version,costCourseReviewVersion);
+  assert.equal(final.questions.length,31);
+  assert.deepEqual(assessmentMaterialIssues(final),[]);
+  const tasks=final.questions.slice(22);
+  assert.ok(tasks.every(q=>q.materialIds?.[0]==='cb2-course-monthly-workshop'));
+  const overhead=3000+2*1800+5400;
+  const material=(24-4)*500;
+  const manufacturingA=material+8*1800+3600+overhead*15/20;
+  const manufacturingB=18*500+6*1800+2200+overhead*5/20;
+  const completeA=4000+manufacturingA-6000;
+  const completeB=5000+manufacturingB-3000;
+  const costA=7000+completeA-8000, costB=4000+completeB-6000;
+  const profitA=52*1100-costA-4200-4000, profitB=20*1700-costB-1800-2000;
+  assert.equal(profitA,15000);assert.equal(profitB,5200);
+  assert.equal(profitA+profitB,20200);
+  assert.ok(isCorrect(tasks[0]!,String(material)));assert.ok(isCorrect(tasks[1]!,String(overhead/4)));
+  assert.match(tasks[2]!.options[tasks[2]!.answer]!,/35,000円.*34,000円/);
+  assert.match(tasks[3]!.options[tasks[3]!.answer]!,/15,000円.*5,200円.*20,200円/);
+  const firstThreshold=42000/(1250-750), secondThreshold=48000/(1400-800);
+  assert.equal(firstThreshold,84);assert.equal(secondThreshold,80);
+  assert.equal(firstThreshold*1250,105000);assert.equal(secondThreshold*1400,112000);
+  assert.match(tasks[4]!.options[tasks[4]!.answer]!,/84個から80個.*105,000円から112,000円/);
+  assert.equal((1250-750)*100-42000,8000);assert.equal((1400-800)*100-48000,12000);
+  assert.match(tasks[5]!.options[tasks[5]!.answer]!,/8,000円.*12,000円/);
+  const quantity=(52-50)*1200+(20-18)*1800;
+  const price=(1100-1200)*52+(1700-1800)*20;
+  assert.equal(quantity+price,52*1100+20*1700-50*1200-18*1800);
+  assert.ok(isCorrect(tasks[6]!,'＋６，０００'));assert.ok(isCorrect(tasks[7]!,'−７，２００'));
+  assert.ok(!isCorrect(tasks[7]!,String(-price)));
+  assert.match(tasks[8]!.options[tasks[8]!.answer]!,/1,200円.*20,200円.*費用予算/);
+  const old={...final,version:costVersion,questions:final.questions.slice(0,22),materials:undefined};
+  const oldRun=newAttempt(old,'practice',1000);
+  for(const question of old.questions)oldRun.answers[question.id]=question.answer;
+  const finished=gradeAttempt(old,oldRun,2000);
+  const stored=validateData({...emptyData(),assessments:{[old.id]:[finished]}}).assessments[old.id]![0]!;
+  assert.equal(stored.score,22);
+  assert.ok(compatibleAttempt(old,stored));assert.ok(!compatibleAttempt(final,stored));
+});
+
+test('revised mocks retain 40-minute format and protect older scores from changed questions',()=>{
+  const current=assessments.find(a=>a.id==='cb2-mock-a')!;
+  const old=newAttempt({...current,version:costVersion},'timed',1000);
+  assert.ok(!compatibleAttempt(current,old));
+  const priceChange=current.questions.find(q=>q.id==='cb2-mock-a-p04')!;
+  assert.equal(numeric(priceChange.options[priceChange.answer]!),334);
+  assert.ok(333*(1440-900)<180000);
+  assert.ok(334*(1440-900)>=180000);
+  for(const form of ['a','b']){
+    const mock=assessments.find(a=>a.id==='cb2-mock-'+form)!;
+    const concepts=mock.questions.filter(q=>/c(?:0[1-9]|1[0-3])$/.test(q.id));
+    const longest=concepts.filter(q=>q.options.every((o,index)=>index===q.answer||o.length<q.options[q.answer]!.length));
+    assert.ok(longest.length<=4);
+  }
 });

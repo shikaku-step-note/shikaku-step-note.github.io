@@ -467,7 +467,8 @@
     "unitReviewQuestionIds": [
       "cb2-unit-2-r01",
       "cb2-unit-2-r14",
-      "cb2-unit-2-r18"
+      "cb2-unit-2-r18",
+      "cb2-all-r23"
     ],
     "lessons": [
       "cb2-materials",
@@ -506,7 +507,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r13",
-      "cb2-unit-2-r14"
+      "cb2-unit-2-r14",
+      "cb2-all-r23"
     ],
     "lessons": [
       "cb2-materials"
@@ -635,7 +637,8 @@
     "unitReviewQuestionIds": [
       "cb2-unit-1-r09",
       "cb2-unit-2-r16",
-      "cb2-unit-1-r19"
+      "cb2-unit-1-r19",
+      "cb2-all-r24"
     ],
     "lessons": [
       "cb2-traceability",
@@ -675,7 +678,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r07",
-      "cb2-unit-2-r16"
+      "cb2-unit-2-r16",
+      "cb2-all-r24"
     ],
     "lessons": [
       "cb2-allocation"
@@ -750,7 +754,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r09",
-      "cb2-unit-2-r19"
+      "cb2-unit-2-r19",
+      "cb2-all-r24"
     ],
     "lessons": [
       "cb2-allocation",
@@ -883,7 +888,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r01",
-      "cb2-unit-3-r17"
+      "cb2-unit-3-r17",
+      "cb2-all-r25"
     ],
     "lessons": [
       "cb2-wip",
@@ -1034,7 +1040,9 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r04",
-      "cb2-unit-3-r17"
+      "cb2-unit-3-r17",
+      "cb2-all-r25",
+      "cb2-all-r26"
     ],
     "lessons": [
       "cb2-finished",
@@ -1077,7 +1085,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r08",
-      "cb2-unit-3-r19"
+      "cb2-unit-3-r19",
+      "cb2-all-r26"
     ],
     "lessons": [
       "cb2-pnl",
@@ -1104,25 +1113,32 @@
     "teachingAnchors": [
       "cb2-product-profit#objective-2",
       "cb2-monthly-profit-statement#objective-3",
-      "cb2-monthly-profit-statement#objective-2"
+      "cb2-monthly-profit-statement#objective-2",
+      "cb2-product-profit#objective-3"
     ],
     "workedExamples": [
       "cb2-product-profit#worked-1",
       "cb2-monthly-profit-statement#worked-3",
       "cb2-monthly-profit-statement#worked-2",
-      "cb2-product-profit#worked-product-profit-inventory-backsolve"
+      "cb2-product-profit#worked-product-profit-inventory-backsolve",
+      "cb2-product-profit#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-product-profit-q05",
       "cb2-product-profit-q06",
       "cb2-product-profit-q07",
       "cb2-product-profit-q08",
-      "cb2-monthly-profit-statement-q05"
+      "cb2-monthly-profit-statement-q05",
+      "cb2-product-profit-q09",
+      "cb2-product-profit-q10",
+      "cb2-product-profit-q11",
+      "cb2-product-profit-q12"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r11",
       "cb2-unit-3-r20",
-      "cb2-unit-3-r19"
+      "cb2-unit-3-r19",
+      "cb2-all-r26"
     ],
     "lessons": [
       "cb2-product-profit",
@@ -1150,13 +1166,19 @@
     ],
     "workedExamples": [
       "cb2-services#worked-1",
-      "cb2-services#worked-services-two-drivers-diagnostic"
+      "cb2-services#worked-services-two-drivers-diagnostic",
+      "cb2-services#worked-2",
+      "cb2-services#worked-3"
     ],
     "independentQuestionIds": [
       "cb2-services-q05",
       "cb2-services-q06",
       "cb2-services-q07",
-      "cb2-services-q08"
+      "cb2-services-q08",
+      "cb2-services-q09",
+      "cb2-services-q10",
+      "cb2-services-q11",
+      "cb2-services-q12"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r16",
@@ -1422,7 +1444,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r05",
-      "cb2-unit-4-r18"
+      "cb2-unit-4-r18",
+      "cb2-all-r28"
     ],
     "lessons": [
       "cb2-contribution",
@@ -1464,7 +1487,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r07",
-      "cb2-unit-4-r19"
+      "cb2-unit-4-r19",
+      "cb2-all-r27"
     ],
     "lessons": [
       "cb2-break-even",
@@ -1508,7 +1532,8 @@
     "unitReviewQuestionIds": [
       "cb2-unit-4-r08",
       "cb2-unit-4-r20",
-      "cb2-unit-4-r21"
+      "cb2-unit-4-r21",
+      "cb2-all-r27"
     ],
     "lessons": [
       "cb2-break-even",
@@ -1587,7 +1612,8 @@
     "unitReviewQuestionIds": [
       "cb2-unit-5-r13",
       "cb2-unit-5-r18",
-      "cb2-unit-5-r19"
+      "cb2-unit-5-r19",
+      "cb2-all-r30"
     ],
     "lessons": [
       "cb2-sales-variance"
@@ -1627,7 +1653,8 @@
     "unitReviewQuestionIds": [
       "cb2-unit-5-r04",
       "cb2-unit-5-r17",
-      "cb2-unit-5-r19"
+      "cb2-unit-5-r19",
+      "cb2-all-r29"
     ],
     "lessons": [
       "cb2-sales-variance"
@@ -1669,7 +1696,9 @@
       "cb2-unit-5-r16",
       "cb2-unit-5-r17",
       "cb2-unit-5-r18",
-      "cb2-unit-5-r19"
+      "cb2-unit-5-r19",
+      "cb2-all-r29",
+      "cb2-all-r30"
     ],
     "lessons": [
       "cb2-sales-variance",
@@ -1694,23 +1723,27 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-variance-cases#objective-3"
+      "cb2-variance-cases#objective-3",
+      "cb2-variance-cases#objective-2"
     ],
     "workedExamples": [
       "cb2-variance-cases#worked-3",
-      "cb2-variance-cases#worked-variance-new-and-discontinued-products"
+      "cb2-variance-cases#worked-variance-new-and-discontinued-products",
+      "cb2-variance-cases#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-variance-cases-q04",
       "cb2-variance-cases-q08",
       "cb2-variance-cases-q09",
       "cb2-variance-cases-q13",
-      "cb2-variance-cases-q14"
+      "cb2-variance-cases-q14",
+      "cb2-variance-cases-q05"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-5-r09",
       "cb2-unit-5-r03",
-      "cb2-unit-5-r20"
+      "cb2-unit-5-r20",
+      "cb2-all-r31"
     ],
     "lessons": [
       "cb2-variance-cases"
@@ -1764,7 +1797,16 @@
       "cb2-unit-5-r11",
       "cb2-unit-5-r12",
       "cb2-unit-5-r14",
-      "cb2-unit-5-r21"
+      "cb2-unit-5-r21",
+      "cb2-all-r23",
+      "cb2-all-r24",
+      "cb2-all-r25",
+      "cb2-all-r26",
+      "cb2-all-r27",
+      "cb2-all-r28",
+      "cb2-all-r29",
+      "cb2-all-r30",
+      "cb2-all-r31"
     ],
     "lessons": [
       "cb2-integration"
