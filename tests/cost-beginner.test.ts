@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitTwoAssessmentVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -95,8 +95,8 @@ test('root review and mock numeric targets agree with independently expressed fo
     const q=allQuestions.get(w.id)!;assert.ok(q,w.id);
     assert.ok(Math.abs(numeric(q.options[q.answer]!)-expected)<1e-8,w.id);
   }
-  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneAssessmentVersion].includes(a.version)).flatMap(a=>a.questions);
-  assert.equal(reviews.length,96);assert.equal(new Set(reviews.map(q=>q.id)).size,96);
+  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneAssessmentVersion,costUnitTwoAssessmentVersion].includes(a.version)).flatMap(a=>a.questions);
+  assert.equal(reviews.length,100);assert.equal(new Set(reviews.map(q=>q.id)).size,100);
 });
 
 test('mock inventory and profit vectors reconcile independently in both directions',()=>{
@@ -125,8 +125,8 @@ test('cost registries are deterministic and preserve other qualification version
 test('every numeric lesson key retains an independently recalculated regression reference',()=>{
   const numericQuestions=Object.values(costBank).flat().filter(q=>q.input==='number');
   const witnesses=[...unit12Witnesses,...unit3Witnesses,...unit45Witnesses];
-  assert.equal(numericQuestions.length,179);assert.equal(witnesses.length,179);
-  assert.equal(new Set(witnesses.map(w=>w.id)).size,179);
+  assert.equal(numericQuestions.length,183);assert.equal(witnesses.length,183);
+  assert.equal(new Set(witnesses.map(w=>w.id)).size,183);
   for(const q of numericQuestions){
     const w=witnesses.find(w=>w.id===q.id)!;assert.ok(w,q.id);
     assert.match(w.formula,/^[\d.()+*/\s,-]+$|^Math\.(ceil|abs)\([\d.()+*/\s-]+\)$/);
@@ -165,4 +165,34 @@ test('the five revised Unit 1 tests preserve historical scores and isolate the a
     assert.ok(isCorrect(last,last.accepted![0]!.replace(/\d/g,d=>String.fromCharCode(d.charCodeAt(0)+0xFEE0))));
     assert.ok(!isCorrect(last,''));
   }
+});
+
+test('Unit 2 shares one traceable case and keeps new scores separate from prior results',()=>{
+  const revised=assessments.filter(a=>a.version===costUnitTwoAssessmentVersion);
+  assert.equal(revised.length,5);
+  assert.ok(revised.every(a=>a.unit===2&&['lesson','review'].includes(a.kind)));
+  const review=revised.find(a=>a.kind==='review')!;
+  assert.equal(review.questions.length,17);
+  assert.deepEqual(assessmentMaterialIssues(review),[]);
+  const shared=review.questions.slice(13);
+  assert.deepEqual(shared.map(q=>q.materialIds),Array.from({length:4},()=>['cb2-unit2-monthly-case']));
+  const netP=40-4, quantity=20+70-5-netP-30-12;
+  const perHour=(12*400+4*1800+5000)/(9+11);
+  const costP=netP*400+9*(1800+perHour)+2150;
+  const costQ=30*400+11*(1800+perHour);
+  assert.equal(quantity,7);assert.equal(costP,40400);assert.equal(costQ,41150);
+  assert.equal(6000+costP+costQ-8550,79000);
+  assert.match(shared[0]!.options[shared[0]!.answer]!,/14,400円と7kg/);
+  assert.match(shared[1]!.options[shared[1]!.answer]!,/19,800円と7,200円/);
+  assert.equal(numeric(shared[2]!.options[shared[2]!.answer]!),costP);
+  assert.equal(shared[3]!.options[shared[3]!.answer],'借方 売上原価79,000円／貸方 製品79,000円');
+  const previous={...review,version:costVersion,questions:review.questions.slice(0,13)};
+  const attempt=newAttempt(previous,'practice',1000);
+  for(const q of previous.questions)attempt.answers[q.id]=q.answer;
+  const finished=gradeAttempt(previous,attempt,2000);
+  const restored=validateData({...emptyData(),assessments:{[review.id]:[finished]}}).assessments[review.id]![0]!;
+  assert.equal(restored.score,13);
+  assert.ok(compatibleAttempt(previous,restored));
+  assert.ok(!compatibleAttempt(review,restored));
+  for (const lesson of revised.filter(a=>a.kind==='lesson')) assert.equal(lesson.questions.length,14);
 });

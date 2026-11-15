@@ -243,5 +243,25 @@
     "id": "cb2-departments-q13",
     "formula": "120000 / 2 - 120000 * 45 / 100",
     "value": 6000
+  },
+  {
+    "id": "cb2-materials-q13",
+    "formula": "(32 - 3 + 8) * 550",
+    "value": 20350
+  },
+  {
+    "id": "cb2-labor-expenses-q13",
+    "formula": "(105 * 2400 + 45 * 1600) / 60",
+    "value": 5400
+  },
+  {
+    "id": "cb2-allocation-q13",
+    "formula": "14 * 750",
+    "value": 10500
+  },
+  {
+    "id": "cb2-cost-flow-q13",
+    "formula": "18000 + (21000 + 98000 - 24000) - 19000",
+    "value": 94000
   }
 ]
