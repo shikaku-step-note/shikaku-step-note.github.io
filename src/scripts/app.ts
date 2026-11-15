@@ -596,9 +596,11 @@ async function start() {
     }
   });
   // Enable record controls only after storage has loaded and all handlers are bound.
-  $$<HTMLButtonElement>('[data-start], [data-complete], [data-bookmark]').forEach((button) => {
-    button.disabled = false;
-    button.removeAttribute('aria-busy');
+  $$<HTMLButtonElement | HTMLInputElement>(
+    '[data-start], [data-complete], [data-bookmark], #export-progress, #import-file, #reset-progress',
+  ).forEach((control) => {
+    control.disabled = false;
+    control.removeAttribute('aria-busy');
   });
   document.documentElement.dataset.studyReady = 'true';
 }

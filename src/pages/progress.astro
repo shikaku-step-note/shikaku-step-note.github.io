@@ -153,14 +153,14 @@ const lessons = await getCollection('lessons', (l) => !l.data.archived);
         </p>
       </div>
       <div class="backup-actions">
-        <button class="button primary" id="export-progress" type="button">
+        <button class="button primary" id="export-progress" type="button" disabled aria-busy="true">
           <Icon name="download" size={18} />
           バックアップを書き出す
         </button>
         <label class="file-label" for="import-file">
           バックアップファイルを選ぶ（JSON・最大{STORAGE_LIMITS.backupBytes / 1024 / 1024}MB）
         </label>
-        <input type="file" id="import-file" accept=".json,application/json" />
+        <input type="file" id="import-file" accept=".json,application/json" disabled aria-busy="true" />
         <p id="import-info" role="status"></p>
         <fieldset class="import-mode">
           <legend>読み込み方法</legend>
@@ -186,7 +186,7 @@ const lessons = await getCollection('lessons', (l) => !l.data.archived);
         <h2>この端末の記録をリセット</h2>
         <p>学習状態・星・練習結果がすべて消えます。先にバックアップを書き出してください。</p>
       </div>
-      <button class="button danger" id="reset-progress" type="button">
+      <button class="button danger" id="reset-progress" type="button" disabled aria-busy="true">
         記録をリセット
       </button>
     </section>
