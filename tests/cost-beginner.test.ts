@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitTwoAssessmentVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -155,7 +155,10 @@ test('Unit 1 expansion gives new lessons separate records and preserves existing
   ]);
   assert.deepEqual(rows.map(row=>row.data.order),Array.from({length:26},(_,i)=>i+1));
   const updated=assessments.filter(a=>a.version===costUnitOneExpandedVersion);
-  assert.equal(updated.length,7);
+  assert.equal(updated.length,5);
+  const revisedGlossaries=assessments.filter(a=>a.version===costUnitOneGlossaryVersion);
+  assert.deepEqual(revisedGlossaries.map(a=>a.id),['cost-beginner-unit-1-glossary','cost-beginner-terms-all']);
+  for(const a of revisedGlossaries)assert.ok(a.questions.some(q=>q.prompt.includes('現場在庫の増減')&&q.options[q.answer]==='正味消費量'));
   for (const id of addedSteps){
     const a=updated.find(item=>item.id===id+'-check')!;
     assert.equal(a.questions.length,6);
@@ -211,4 +214,15 @@ test('Unit 2 shares one traceable case and keeps new scores separate from prior 
   assert.ok(compatibleAttempt(previous,restored));
   assert.ok(!compatibleAttempt(review,restored));
   for (const lesson of revised.filter(a=>a.kind==='lesson')) assert.equal(lesson.questions.length,14);
+});
+
+test('each Unit 1 lesson has two teaching figures and in-body feedback with a static solution',()=>{
+  const unitOne=rows.filter(row=>row.data.unit===1);
+  for(const {data,body} of unitOne){
+    const figures=[...body.matchAll(/<figure id="([^"]+)"/g)];
+    assert.ok(new Set(figures.map(figure=>figure[1])).size>=2,data.stableId);
+    assert.equal((body.match(/<form data-guided-practice/g)??[]).length,1,data.stableId);
+    assert.match(body,/<fieldset hidden>[\s\S]+?<p role="status" data-guided-feedback>/);
+    assert.match(body,/<details>\s*<summary>解答と考え方を読む<\/summary>\s*<p data-guided-solution>/);
+  }
 });

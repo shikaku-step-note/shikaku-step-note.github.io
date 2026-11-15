@@ -386,6 +386,35 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
 </Layout>
 
 <style>
+  .lesson-content :global(.guided-lesson) {
+    margin-block: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    background: var(--mint);
+  }
+  .lesson-content :global(.guided-lesson h3) {
+    margin-top: 0;
+  }
+  .lesson-content :global(.guided-number) {
+    width: min(100%, 10rem);
+    padding: 0.5rem;
+    font: inherit;
+    color: var(--ink);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 0.35rem;
+  }
+  .lesson-content :global(.guided-buttons) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+  .lesson-content :global([data-guided-feedback]:empty) {
+    margin: 0;
+  }
+
   .ip-lesson-content :global(figure) {
     margin-inline: 0;
   }
@@ -397,6 +426,8 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
 </style>
 
 <script>
+  import '../../../scripts/guided-lesson';
+
   const printButton = document.querySelector<HTMLButtonElement>('[data-lesson-print]');
   if (printButton && typeof window.print === 'function') {
     printButton.hidden = false;

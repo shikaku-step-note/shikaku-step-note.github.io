@@ -1,5 +1,5 @@
 ---
-{"stableId":"cb2-departments","qualification":"cost-beginner","title":"部門ごとの原価と利益を、担当する活動へ結び付ける","description":"製造・販売・管理などの部門と責任者の関係を学び、直接把握できる部門原価と共通費を集計します。部門別利益と全社利益を照合し、数値だけで責任を断定しない読み方を練習します。","order":5,"minutes":70,"sample":false,"updated":"2026-11-15","unit":1,"syllabus":[1],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["部門・活動・責任者の関係を原価情報の用途として説明する","部門固有の原価と共通原価を区別し部門別に集計する","部門別損益を全社損益へ照合し、比較の条件を説明する"],"prerequisite":"直接費・間接費、直課・配賦を確認してください。このレッスンの配賦割合は問題文で指定します。","keywords":["部門","責任者","部門別原価","部門共通費","部門別損益","予算","実績"],"glossary":[{"term":"部門","definition":"業務や責任のまとまりとして区分した企業内の組織単位"},{"term":"責任者","definition":"定められた部門や活動について業務を担当し管理する立場の人"},{"term":"部門別原価","definition":"部門ごとに把握・集計した原価"},{"term":"部門共通費","definition":"複数の部門の活動に共通して発生する原価"},{"term":"部門別損益","definition":"部門ごとに対応させた収益と費用の差額"},{"term":"予算","definition":"一定期間の収益や原価などについてあらかじめ定める計画"},{"term":"実績","definition":"対象期間に実際に生じた活動や金額の結果"}]}
+{"stableId":"cb2-departments","qualification":"cost-beginner","title":"部門ごとの原価と利益を、担当する活動へ結び付ける","description":"製造・販売・管理などの部門と責任者の関係を学び、直接把握できる部門原価と共通費を集計します。部門別利益と全社利益を照合し、数値だけで責任を断定しない読み方を練習します。","order":5,"minutes":80,"sample":false,"updated":"2026-11-15","unit":1,"syllabus":[1],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["部門・活動・責任者の関係を原価情報の用途として説明する","部門固有の原価と共通原価を区別し部門別に集計する","部門別損益を全社損益へ照合し、比較の条件を説明する"],"prerequisite":"直接費・間接費、直課・配賦を確認してください。このレッスンの配賦割合は問題文で指定します。","keywords":["部門","責任者","部門別原価","部門共通費","部門別損益","予算","実績"],"glossary":[{"term":"部門","definition":"業務や責任のまとまりとして区分した企業内の組織単位"},{"term":"責任者","definition":"定められた部門や活動について業務を担当し管理する立場の人"},{"term":"部門別原価","definition":"部門ごとに把握・集計した原価"},{"term":"部門共通費","definition":"複数の部門の活動に共通して発生する原価"},{"term":"部門別損益","definition":"部門ごとに対応させた収益と費用の差額"},{"term":"予算","definition":"一定期間の収益や原価などについてあらかじめ定める計画"},{"term":"実績","definition":"対象期間に実際に生じた活動や金額の結果"}]}
 ---
 
 **部門**は、企業内で仕事を分担するためのまとまりです。原価を部門別に集めると、どの活動に費用がかかったかを調べやすくなります。部門責任者は、その資料を使って、担当する活動の量や資源の使い方を確かめます。
@@ -131,6 +131,46 @@ Aの利益が下がった理由は、共通費の負担割合が変更された�
 <summary>条件を変えて確認する：割合は同じで家賃総額が20,000円増えたら</summary>
 <p>新しい家賃120,000円をAに60%、Bに40%で分けると、Aの負担は72,000円、Bは48,000円です。利益はAが88,000円、Bが72,000円。全社利益も160,000円に減ります。負担割合だけを変えた例題との違いは、企業が外部に負担する家賃の総額自体が増えたことです。改善の担当を判断するには、契約条件を決めた部門と変更の理由を調べます。</p>
 </details>
+
+## 部門利益の差を、三つの動きに分ける
+
+部門利益が下がった理由を調べるときは、最初に比較対象の売上と件数をそろえます。その後に、部門が実際に使った資源の量、仕入先の単価、共通費の割当てという順に内訳を見ます。原価が増えたことと、現場の使い方が悪くなったことの間には、確かめる条件があります。
+
+<figure id="department-cause-controls">
+<figcaption>図　同じ原価増加でも、照合先は変化した条件で決まる</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-label="数量、単価、配賦額を区別する部門報告の照合表">
+<table><thead><tr><th scope="col">変化</th><th scope="col">照合する記録</th><th scope="col">この資料から言えること</th></tr></thead>
+<tbody>
+<tr><th scope="row">作業1件当たりの使用量が増えた</th><td>作業票、件数、材料の出庫記録</td><td>工程や依頼内容を調べる。重い仕事が増えた可能性も残る</td></tr>
+<tr><th scope="row">仕入単価が上がった</th><td>請求書、契約単価</td><td>価格の影響。使用量が同じなら使用効率の悪化は読み取れない</td></tr>
+<tr><th scope="row">共通分の配賦額だけが増えた</th><td>配賦表と共通費総額</td><td>総額が同じなら部門間の負担の移動</td></tr>
+</tbody></table></div>
+</figure>
+
+### 例題　二つの報告で同じ部門利益になった理由を調べる
+
+基準となる月の利益は、売上100,000円から直接費55,000円と共通費負担15,000円を引いた30,000円です。12月の報告案Aは、直接費61,000円と共通費負担15,000円。報告案Bは、直接費55,000円と共通費負担21,000円です。売上は同じで、どちらも部門利益は24,000円になります。
+
+案Aで、材料の使用量も作業内容も同じで単価が上がっていたなら、確認先は仕入の契約資料です。外部へ支払う費用が6,000円増え、他部門の条件が変わらなければ全社利益も6,000円減ります。案Bで、共通費の全社総額が一定のまま割当てだけ変わったなら、他部門の負担が6,000円減ります。全社の費用も利益も変わりません。部門利益だけでは区別できない二つの経路を、作業票・契約・配賦表の順で見分けます。
+
+<section class="guided-lesson" id="guided-departments" aria-labelledby="guided-departments-title">
+<h3 id="guided-departments-title">途中で確認　部門利益の低下を全社利益と照合する</h3>
+<p id="guided-departments-prompt">A部門の利益が4,000円低下しました。売上、直接費、会社全体の共通費総額は同じで、共通費は全額配賦され、本部の配賦先の見直しでAの負担が4,000円増えました。実際に発生した費用は増えていません。全社利益はどうなりますか。</p>
+<form data-guided-practice data-expected="c" data-guided-hint="" aria-describedby="guided-departments-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label class="quiz-option"><input type="radio" name="guided" value="a" data-guided-hint="A部門だけを見るとそう見えます。共通費の全社総額が変わったかを確認してください。"> 4,000円減る</label>
+<label class="quiz-option"><input type="radio" name="guided" value="b" data-guided-hint="Aの負担増は他部門の負担減と打ち消し合います。会社全体への新しい収益はありません。"> 4,000円増える</label>
+<label class="quiz-option"><input type="radio" name="guided" value="c" data-guided-hint=""> 変わらない</label>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>Aの負担増4,000円に対応して、他部門の負担が4,000円減りました。全社の共通費総額は一定なので、売上と直接費が同じなら全社利益も変わりません。</p>
+</details>
+</section>
 
 ## 集計表を読み直す練習
 

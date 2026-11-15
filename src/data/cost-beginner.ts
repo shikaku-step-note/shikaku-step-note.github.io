@@ -11,6 +11,7 @@ import sources from '../../docs/cost-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
 export const costVersion = plan.version;
+export const costUnitOneGlossaryVersion = 'cost-2026-unit-1-glossary-v5';
 export const costUnitOneExpandedVersion = 'cost-2026-unit-1-v4';
 export const costUnitOneAssessmentVersion = 'cost-2026-unit-1-v3';
 export const costUnitTwoAssessmentVersion = 'cost-2026-unit-2-v3';
@@ -104,7 +105,7 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
     const unit=index+1;
     const unitTerms=new Set(rows.filter(lesson=>lesson.data.unit===unit).flatMap(lesson=>lesson.data.glossary.map(term=>term.term)));
     result.push({...base,id:`cost-beginner-unit-${unit}-glossary`,title:`原価計算初級・${title} 用語確認`,kind:'glossary',unit,
-      version:unit===1?costUnitOneExpandedVersion:costVersion,
+      version:unit===1?costUnitOneGlossaryVersion:costVersion,
       questions:questions.filter((_,n)=>unitTerms.has(terms[n]!.term)),
       instructions:'用語の定義から選ぶ確認です。計算や条件の判断は、単元の総合確認でも確かめてください。'});
     result.push({...base,id:`cost-beginner-unit-${unit}-review`,title:`原価計算初級・${title} 総合確認`,kind:'review',unit,
@@ -112,7 +113,7 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
       materials:unit===1?[unitOneReviewMaterial]:unit===2?[unitTwoReviewMaterial]:undefined,
       questions:costReviewBank[`unit-${unit}`]??[],instructions:'レッスン末の問題とは別の条件で、考え方と計算の手順を確かめる問題です。解説から必要なレッスンへ戻れます。'});
   }
-  result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',version:costUnitOneExpandedVersion,questions,
+  result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',version:costUnitOneGlossaryVersion,questions,
     instructions:'ユニットの用語問題を再利用する総復習です。計算や適用力の確認とは分けて使います。'});
   result.push({...base,id:'cost-beginner-review-all',title:'原価計算初級 総合復習',kind:'review',questions:costReviewBank.all??[],
     instructions:'分野をまたいで条件を読み取り、方法を選ぶ練習です。誤った問題は、途中の計算や判断を確認してから解き直してください。'});

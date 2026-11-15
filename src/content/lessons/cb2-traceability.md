@@ -1,5 +1,5 @@
 ---
-{"stableId":"cb2-traceability","qualification":"cost-beginner","title":"直接費と間接費は「どの対象へ結び付くか」で分ける","description":"直接費・間接費と材料費・労務費・経費を組み合わせて分類します。直課と配賦の違い、原価計算対象の変更、共通費の重複計上を具体例で確かめます。","order":4,"minutes":65,"sample":false,"updated":"2026-11-15","unit":1,"syllabus":[1],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["原価計算対象を指定して直接費と間接費を判断する","材料費・労務費・経費と直接費・間接費を組み合わせる","直課額と配賦額を区別し、製品別集計を総額に照合する"],"prerequisite":"材料費・労務費・経費と、製造原価・販売費及び一般管理費の区別を確認してください。","keywords":["直接費","間接費","直課","配賦","直接材料費","間接労務費","製造間接費"],"glossary":[{"term":"直接費","definition":"定めた原価計算対象に直接結び付けて把握できる原価"},{"term":"間接費","definition":"定めた原価計算対象への直接の把握が難しく、共通費などとして配賦する原価"},{"term":"直課","definition":"把握した直接費を対応する原価計算対象へそのまま集計すること"},{"term":"配賦","definition":"共通する原価を定めた基準で原価計算対象へ分けること"},{"term":"直接材料費","definition":"特定の製品等に直接結び付けて把握できる材料費"},{"term":"間接労務費","definition":"製造を支える監督作業など複数の製品等に共通する労務費"},{"term":"製造間接費","definition":"製造に関する間接材料費・間接労務費・間接経費を合わせた原価"}]}
+{"stableId":"cb2-traceability","qualification":"cost-beginner","title":"直接費と間接費は「どの対象へ結び付くか」で分ける","description":"直接費・間接費と材料費・労務費・経費を組み合わせて分類します。直課と配賦の違い、原価計算対象の変更、共通費の重複計上を具体例で確かめます。","order":4,"minutes":75,"sample":false,"updated":"2026-11-15","unit":1,"syllabus":[1],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["原価計算対象を指定して直接費と間接費を判断する","材料費・労務費・経費と直接費・間接費を組み合わせる","直課額と配賦額を区別し、製品別集計を総額に照合する"],"prerequisite":"材料費・労務費・経費と、製造原価・販売費及び一般管理費の区別を確認してください。","keywords":["直接費","間接費","直課","配賦","直接材料費","間接労務費","製造間接費"],"glossary":[{"term":"直接費","definition":"定めた原価計算対象に直接結び付けて把握できる原価"},{"term":"間接費","definition":"定めた原価計算対象への直接の把握が難しく、共通費などとして配賦する原価"},{"term":"直課","definition":"把握した直接費を対応する原価計算対象へそのまま集計すること"},{"term":"配賦","definition":"共通する原価を定めた基準で原価計算対象へ分けること"},{"term":"直接材料費","definition":"特定の製品等に直接結び付けて把握できる材料費"},{"term":"間接労務費","definition":"製造を支える監督作業など複数の製品等に共通する労務費"},{"term":"製造間接費","definition":"製造に関する間接材料費・間接労務費・間接経費を合わせた原価"}]}
 ---
 
 製品別の原価を求めるには、発生した原価をどの製品へ集計するかを決めます。製品ごとの使用記録などから金額を直接把握できる部分が直接費です。その製品へ金額を入れる処理を直課といいます。複数の製品に共通し、それぞれの金額を直接把握できない部分が間接費で、定めた基準に沿って負担額を配賦します。この区別は、集計する対象と、手元の資料で分かることの二つに基づきます。
@@ -173,6 +173,44 @@ Aの原価は21,200円、Bは19,800円、合計41,000円です。部品代19,000
   <summary>解答と判断の根拠を確認する</summary>
   <p>2項目とも、この店舗へ直接集計できます。修理A・Bが共用したという情報は、修理1件を対象にした場合の配賦に使うものです。店舗別に集計するときは、どの店舗が資源を使ったかが判断に必要で、この例では両項目とも一つの店舗に対応します。したがって、店舗全体の原価41,000円を求めるために、A・Bへの配賦をやり直す必要はありません。</p>
 </details>
+
+## 製品名の記載に加えて、負担額の根拠を探す
+
+原票に製品名があれば対象候補は分かりますが、その製品が消費した数量や金額まで確認できるかは別です。請求書が工場全体の額で、添付資料にA・Bの名前だけがあっても、それぞれが支払う正確な額は求められません。対象と金額が結び付く証拠を探し、分かる部分と残る部分を分けて集計します。
+
+<figure id="trace-source-strength">
+<figcaption>図　請求明細からどこまで直接集計できるか</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-label="原票で確認できる内容と直接集計の判断">
+<table><thead><tr><th scope="col">原票で確認できる内容</th><th scope="col">できる処理</th><th scope="col">次に調べること</th></tr></thead>
+<tbody>
+<tr><th scope="row">A専用と、その計量額</th><td>Aの分を直課</td><td>共通費の明細からその額を外す</td></tr>
+<tr><th scope="row">A・Bが使ったことだけ</th><td>個々の直接費は確定しない</td><td>製品別の使用記録または配賦条件を探す</td></tr>
+<tr><th scope="row">工場全体の額だけ</th><td>工場の額は確定、製品別の直課は未確定</td><td>対象の範囲を確認する</td></tr>
+</tbody></table></div>
+</figure>
+
+### 例題　後で使用明細が見つかった場合
+
+加工機の明細は28,000円です。最初の資料では、A専用の工程に使った8,000円を個別に計測できました。残り20,000円はA・Bの稼働を含みます。製品の名前は両方書いてありますが、それぞれの金額は確認できません。したがって、Aに直課できるのは8,000円。20,000円は分けずに共通分の欄へ置きます。
+
+追加の原票から、その20,000円にB専用工程の7,000円が含まれていたと判明しました。Bへの直課額が7,000円増え、残る共通分は13,000円になります。8,000＋7,000＋13,000＝28,000円です。7,000円が別の支払ではなく同じ請求書の内訳だと確かめることで、工場全体の原価を増やさずに正しい区分へ移せます。配賦率が示されていない段階で、13,000円を同額ずつ製品に計上する根拠はありません。
+
+<section class="guided-lesson" id="guided-traceability" aria-labelledby="guided-traceability-title">
+<h3 id="guided-traceability-title">途中で確認　専用分を外した後の共通分を求める</h3>
+<p id="guided-traceability-prompt">加工設備の請求は31,000円です。最初からA専用の9,000円が判明しており、残り22,000円にはA・Bの名前だけが記載されていました。後でその中にB専用の5,000円があると確認できました。未配賦の共通分はいくらですか。</p>
+<form data-guided-practice data-expected="17000" data-guided-hint="新しい5,000円は別の請求ではなく、先に共通分とした22,000円の一部です。元の31,000円に戻るかも確かめましょう。" aria-describedby="guided-traceability-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-traceability-input">答え（円）</label> <input id="guided-traceability-input" class="guided-number" type="text" inputmode="numeric" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>共通分は31,000−9,000−5,000＝17,000円。Aの9,000円、Bの5,000円、共通分17,000円を合計すると元の31,000円に戻ります。</p>
+</details>
+</section>
 
 ## 分類理由と集計の練習
 
