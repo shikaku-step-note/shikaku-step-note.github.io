@@ -5,17 +5,18 @@
 ユニット2の既存章の理解度：cost-2026-unit-2-v3／原価表の照合：cost-2026-cost-sheet-audit-v1／総合確認：cost-2026-unit-2-review-v4
 ユニット3の月次損益計算書：cost-2026-monthly-profit-v1／総合確認：cost-2026-unit-3-review-v3
 ユニット4のCVP営業計画：cost-2026-cvp-planning-v1／総合確認：cost-2026-unit-4-review-v3
+ユニット5の総合確認：cost-2026-unit-5-review-v3
 ユニット1の用語確認と用語総復習：cost-2026-unit-1-glossary-v5
 前提：割合と四則計算。会計の専門知識は必要なところで補い、紙と電卓を使います。
 
 学習時間の目安（当サイトの見積り。実測や公式の推奨時間ではありません）
-本文・例題・理解度チェック：2529分
-用語確認：157分／ユニット・全体の復習：238分
+本文・例題・理解度チェック：2577分
+用語確認：157分／ユニット・全体の復習：252分
 翌日と1週間後の復習：435分／模試2回：80分／模試の解き直し：120分
-合計：3559分（約60時間）
-1日30分・週5日：約24週間。苦手な単元の再学習に応じて延長します。
-1日60分・週5日：約12週間。苦手な単元の再学習に応じて延長します。
-1日90分・週5日：約8週間。苦手な単元の再学習に応じて延長します。
+合計：3621分（約61時間）
+1日30分・週5日：約25週間。苦手な単元の再学習に応じて延長します。
+1日60分・週5日：約13週間。苦手な単元の再学習に応じて延長します。
+1日90分・週5日：約9週間。苦手な単元の再学習に応じて延長します。
 
 学習ツリー（ユニットは当サイトの学習順です）
   ユニット1 原価の考え方と分類
@@ -239,7 +240,7 @@
     復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
     練習順：変動費と固定費 → 貢献利益と分岐点 → 目標利益と安全余裕（応用） → CVP表で値上げ案を比較 → 予約計画を使った総合確認。
   ユニット5 予算と実績から利益を確かめる
-    26. [cb2-budget] 予算と実績を同じ単位で比べ、売上差額を正しく読む／65分
+    26. [cb2-budget] 売上高の予算と実績の比較｜差額と達成率／77分
       目標：数量と単価から予算売上高・実際売上高を求める／同じ期間・単位の差額と達成率を計算する／売上の差とその原因・利益を区別して説明する
       前提：数量×単価の売上高計算、割合と百分率を復習してください。
       本文：/qualifications/cost-beginner/cb2-budget/
@@ -247,7 +248,7 @@
       用語：予算売上高・実際売上高・売上高差異・予算達成率・予算差額・対象期間・比較条件
       次：cb2-sales-variance
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    27. [cb2-sales-variance] 売上高の差を、数量と価格の二つの差異に分ける／85分
+    27. [cb2-sales-variance] 販売数量差異と販売価格差異の計算／97分
       目標：販売数量差異と販売価格差異を定義に沿って計算する／比較用売上高を使って二つの差異の合計を検算する／基準数量・単価と符号が異なる分析方式を区別する
       前提：予算・実績売上高と、実際−予算の差額計算を復習してください。
       本文：/qualifications/cost-beginner/cb2-sales-variance/
@@ -255,7 +256,7 @@
       用語：販売数量差異・販売価格差異・比較用売上高・予算単価・実際単価・差異の照合・交差項
       次：cb2-variance-cases
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    28. [cb2-variance-cases] 複数製品とサービスの売上差異を集め、増減の内容を説明する／85分
+    28. [cb2-variance-cases] 複数製品の売上高差異｜返品・新商品・集計／97分
       目標：複数製品の売上差異を製品ごとに分解して合計する／相殺された増減と単位の違いを説明する／サービスや返品条件の明示された売上を分析する
       前提：販売数量差異を予算単価、販売価格差異を実際数量で求める方法を復習してください。
       本文：/qualifications/cost-beginner/cb2-variance-cases/
@@ -263,7 +264,7 @@
       用語：製品別差異・差異の集計・相殺・平均販売単価・純販売数量・サービス単位・分析方式
       次：cb2-integration
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    29. [cb2-integration] 製品別損益・在庫・CVP・売上差異を、目的に合わせて使い分ける／95分
+    29. [cb2-integration] 原価計算初級の総合例題｜在庫・CVP・売上高差異／107分
       目標：二製品の直接費・配賦費と在庫から営業利益を計算する／在庫が変わる損益と在庫一定のCVPを区別して計画する／製品別の売上差異を集計し損益計算と照合する
       前提：直接費・間接費の集計、仕掛品・製品在庫、製品別損益、CVP、売上差異の各課を一通り終えてください。
       本文：/qualifications/cost-beginner/cb2-integration/
@@ -272,8 +273,9 @@
       次：cost-beginner-review-all
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
     [cost-beginner-unit-5-glossary] 用語確認
-    [cost-beginner-unit-5-review] 独自の総合確認 14問
+    [cost-beginner-unit-5-review] 独自の総合確認 21問
     復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
+    練習順：同じ期間・単位で予算と実績を比較 → 販売数量差異・販売価格差異を計算 → 返品や報告書の計算基準を検算 → 売上と利益を分けて説明 → 全範囲の復習と模試。
 
 総復習と模試
   [cost-beginner-terms-all] 用語総復習。ユニットの用語問題を再利用。
@@ -430,27 +432,27 @@
   [CB-C37] 公式2(2) 予算と実績の数量・単価・売上高を同じ期間・範囲で整理する
     本文：cb2-budget
     独立練習：cb2-budget-q01, cb2-budget-q02, cb2-budget-q07
-    関連する総合確認：cb2-unit-5-r01
+    関連する総合確認：cb2-unit-5-r01, cb2-unit-5-r15, cb2-unit-5-r16
   [CB-C38] 公式2(2) 指定する分解法で販売価格差異を計算する
     本文：cb2-sales-variance
     独立練習：cb2-sales-variance-q01, cb2-sales-variance-q02, cb2-sales-variance-q04, cb2-sales-variance-q05, cb2-sales-variance-q07
-    関連する総合確認：cb2-unit-5-r13
+    関連する総合確認：cb2-unit-5-r13, cb2-unit-5-r18, cb2-unit-5-r19
   [CB-C39] 公式2(2) 指定する分解法で販売数量差異を計算する
     本文：cb2-sales-variance
     独立練習：cb2-sales-variance-q01, cb2-sales-variance-q02, cb2-sales-variance-q04, cb2-sales-variance-q05, cb2-sales-variance-q07
-    関連する総合確認：cb2-unit-5-r04
+    関連する総合確認：cb2-unit-5-r04, cb2-unit-5-r17, cb2-unit-5-r19
   [CB-C40] 公式2(2) 価格差異と数量差異の和を総売上高差異へ照合する
     本文：cb2-sales-variance, cb2-variance-cases
     独立練習：cb2-sales-variance-q03, cb2-sales-variance-q06, cb2-sales-variance-q08, cb2-sales-variance-q12, cb2-sales-variance-q13
-    関連する総合確認：cb2-unit-5-r05
+    関連する総合確認：cb2-unit-5-r05, cb2-unit-5-r16, cb2-unit-5-r17, cb2-unit-5-r18, cb2-unit-5-r19
   [CB-C41] 公式2(2) 逆向きの価格・数量変化と有利/不利を読み、売上差と利益差を区別する
     本文：cb2-variance-cases
     独立練習：cb2-variance-cases-q04, cb2-variance-cases-q08, cb2-variance-cases-q09, cb2-variance-cases-q13, cb2-variance-cases-q14
-    関連する総合確認：cb2-unit-5-r09, cb2-unit-5-r03
+    関連する総合確認：cb2-unit-5-r09, cb2-unit-5-r03, cb2-unit-5-r20
   [CB-C42] 公式1〜3総合 原価分類・直課配賦・在庫・利益・CVP・売上差異を共通資料から必要な順に解く
     本文：cb2-integration
     独立練習：cb2-integration-q01, cb2-integration-q02, cb2-integration-q03, cb2-integration-q04, cb2-integration-q05, cb2-integration-q06, cb2-integration-q07, cb2-integration-q08, cb2-integration-q09, cb2-integration-q10, cb2-integration-q11, cb2-integration-q12, cb2-integration-q13, cb2-integration-q14
-    関連する総合確認：cb2-unit-5-r10, cb2-unit-5-r11, cb2-unit-5-r12, cb2-unit-5-r14
+    関連する総合確認：cb2-unit-5-r10, cb2-unit-5-r11, cb2-unit-5-r12, cb2-unit-5-r14, cb2-unit-5-r21
 
 確認する範囲と制約
   個別・総合原価計算の計算形態の違いや標準原価計算は公式範囲外。在庫は資料で与えた金額・明示した未完成分の原価を使う。

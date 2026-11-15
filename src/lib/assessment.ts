@@ -338,13 +338,14 @@ export function isCorrect(q: Question, value: number | string | undefined): bool
   if (typeof value !== 'string' || !value.trim()) return false;
   if (q.input === 'number' && q.strictNumber) {
     const numeric = value.normalize('NFKC').trim().replace(/−/g, '-');
-    if (!/^-?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/.test(numeric)) return false;
+    const validFormat = /^[+-]?(?:\d+|\d{1,3}(?:,\d{3})+)(?:\.\d+)?$/.test(numeric);
+    if (!validFormat || (!q.signed && numeric.startsWith('+'))) return false;
   }
   const actual = normalizeAnswer(value);
   return (q.accepted ?? []).some((answer) => {
     const expected = normalizeAnswer(answer);
     if (q.input !== 'number') return expected === actual;
-    const decimal = /^-?\d+(?:\.\d+)?$/;
+    const decimal = q.signed ? /^[+-]?\d+(?:\.\d+)?$/ : /^-?\d+(?:\.\d+)?$/;
     return (
       decimal.test(actual) &&
       decimal.test(expected) &&

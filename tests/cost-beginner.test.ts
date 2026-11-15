@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -105,8 +105,8 @@ test('root review and mock numeric targets agree with independently expressed fo
     const q=allQuestions.get(w.id)!;assert.ok(q,w.id);
     assert.ok(Math.abs(numeric(q.options[q.answer]!)-expected)<1e-8,w.id);
   }
-  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneReviewVersion,costUnitTwoReviewVersion,costUnitThreeReviewVersion,costUnitFourReviewVersion].includes(a.version)).flatMap(a=>a.questions);
-  assert.equal(reviews.length,119);assert.equal(new Set(reviews.map(q=>q.id)).size,119);
+  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneReviewVersion,costUnitTwoReviewVersion,costUnitThreeReviewVersion,costUnitFourReviewVersion,costUnitFiveReviewVersion].includes(a.version)).flatMap(a=>a.questions);
+  assert.equal(reviews.length,126);assert.equal(new Set(reviews.map(q=>q.id)).size,126);
 });
 
 test('mock inventory and profit vectors reconcile independently in both directions',()=>{
@@ -253,9 +253,8 @@ test('Unit 2 tests two distinct source-record cases and preserves reports from e
   for (const lesson of revised.filter(a=>a.kind==='lesson')) assert.equal(lesson.questions.length,14);
 });
 
-test('each Unit 1 through 4 lesson has two teaching figures and in-body feedback with a static solution',()=>{
-  const guides=rows.filter(row=>[1,2,3,4].includes(row.data.unit));
-  for(const {data,body} of guides){
+test('every cost accounting lesson has two teaching figures and in-body feedback with a static solution',()=>{
+  for(const {data,body} of rows){
     const figures=[...body.matchAll(/<figure id="([^"]+)"/g)];
     assert.ok(new Set(figures.map(figure=>figure[1])).size>=2,data.stableId);
     assert.equal((body.match(/<form data-guided-practice/g)??[]).length,1,data.stableId);
@@ -346,6 +345,56 @@ test('Unit 4 distinguishes fixed unit costs, a fixed variable cost ratio and rev
   assert.ok(restored.records['cb2-behavior']?.bookmarked);
   assert.ok(!restored.records['cb2-cvp-planning-case']);
   assert.equal(restored.assessments[review.id]?.[0]?.score,16);
+  assert.ok(compatibleAttempt(old,restored.assessments[review.id]![0]!));
+  assert.ok(!compatibleAttempt(review,restored.assessments[review.id]![0]!));
+});
+
+test('Unit 5 reconciles normalized sales records, signed variances and a separate applied profit case',()=>{
+  const review=assessments.find(a=>a.id==='cost-beginner-unit-5-review')!;
+  assert.equal(review.version,costUnitFiveReviewVersion);
+  assert.equal(review.questions.length,21);
+  assert.deepEqual(assessmentMaterialIssues(review),[]);
+  const fresh=review.questions.slice(14);
+  assert.equal(fresh.length,7);
+  assert.ok(fresh.every(q=>q.materialIds?.[0]==='cb2-unit5-sales-records'));
+  const aBudget=20*6, aActual=(25-3)*6, bActual=92, bPrice=119600/bActual;
+  const budget=aBudget*900+80*1500;
+  const actual=aActual*850+bActual*bPrice;
+  const bridge=aActual*900+bActual*1500;
+  const priceFirst=aBudget*850+80*bPrice;
+  assert.equal(aActual,132);assert.equal(bPrice,1300);
+  assert.equal(actual-budget,3800);
+  assert.equal(bridge-budget,28800);assert.equal(actual-bridge,-25000);
+  assert.equal(actual-priceFirst,25800);assert.equal(priceFirst-budget,-22000);
+  for(const [index,value] of [[1,actual-budget],[2,bridge-budget],[3,actual-bridge]] as const){
+    const q=fresh[index]!;
+    assert.ok(q.signed);assert.ok(isCorrect(q,String(value)));
+    assert.ok(!isCorrect(q,String(-value)));
+  }
+  assert.ok(isCorrect(fresh[1]!,'＋３，８００'));
+  assert.ok(isCorrect(fresh[2]!,'+28,800'));
+  assert.ok(isCorrect(fresh[3]!,'－２５，０００'));
+  assert.ok(!isCorrect(fresh[1]!,'+3,8,00'));
+  assert.ok(!isCorrect(fresh[1]!,'+-3800'));
+  assert.ok(!isCorrect({...fresh[1]!,signed:false},'+3800'));
+  assert.ok(!isCorrect(fresh[3]!,'25000'));
+  assert.match(fresh[4]!.options[fresh[4]!.answer]!,/価格を先に動かす/);
+  assert.match(fresh[5]!.options[fresh[5]!.answer]!,/400円下回った.*費用/);
+  const planned=(900-450)*aBudget+(1500-800)*80-50000;
+  const recorded=(850-470)*aActual+(bPrice-830)*bActual-52000;
+  assert.equal(planned,60000);assert.equal(recorded,41400);
+  assert.match(fresh[6]!.options[fresh[6]!.answer]!,/60,000円.*41,400円.*18,600円/);
+  const old={...review,version:costVersion,questions:review.questions.slice(0,14)};
+  const attempt=newAttempt(old,'practice',1000);
+  for(const q of old.questions)attempt.answers[q.id]=q.answer;
+  const result=gradeAttempt(old,attempt,2000);
+  const saved=emptyData();
+  saved.records['cb2-sales-variance']={status:'completed',bookmarked:true,attempts:1,updatedAt:'2026-11-15T00:00:00Z'};
+  saved.assessments[review.id]=[result];
+  const restored=validateData(JSON.parse(JSON.stringify(saved)));
+  assert.equal(restored.records['cb2-sales-variance']?.status,'completed');
+  assert.ok(restored.records['cb2-sales-variance']?.bookmarked);
+  assert.equal(restored.assessments[review.id]?.[0]?.score,14);
   assert.ok(compatibleAttempt(old,restored.assessments[review.id]![0]!));
   assert.ok(!compatibleAttempt(review,restored.assessments[review.id]![0]!));
 });

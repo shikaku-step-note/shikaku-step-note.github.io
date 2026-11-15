@@ -7,6 +7,7 @@ import unit3 from './cost-beginner-unit3-questions.json';
 import unitThreeReviewMaterial from './cost-beginner-unit3-material.json';
 import unit45 from './cost-beginner-unit45-questions.json';
 import unitFourReviewMaterial from './cost-beginner-unit4-material.json';
+import unitFiveReviewMaterial from './cost-beginner-unit5-material.json';
 import reviews from './cost-beginner-reviews.json';
 import unitTwoReviewMaterial from './cost-beginner-unit2-material.json';
 import unitTwoDiagnosticMaterial from './cost-beginner-unit2-diagnostic-material.json';
@@ -26,17 +27,20 @@ export const costUnitThreeReviewVersion = 'cost-2026-unit-3-review-v3';
 export const costMonthlyProfitVersion = 'cost-2026-monthly-profit-v1';
 export const costUnitFourReviewVersion = 'cost-2026-unit-4-review-v3';
 export const costCvpPlanningVersion = 'cost-2026-cvp-planning-v1';
+export const costUnitFiveReviewVersion = 'cost-2026-unit-5-review-v3';
 const unitReviewVersions: Partial<Record<number, string>> = {
   1: costUnitOneReviewVersion,
   2: costUnitTwoReviewVersion,
   3: costUnitThreeReviewVersion,
   4: costUnitFourReviewVersion,
+  5: costUnitFiveReviewVersion,
 };
 const unitReviewMaterials = {
   1: [unitOneReviewMaterial, unitOneServiceMaterial],
   2: [unitTwoReviewMaterial, unitTwoDiagnosticMaterial],
   3: [unitThreeReviewMaterial],
   4: [unitFourReviewMaterial],
+  5: [unitFiveReviewMaterial],
 } as Partial<Record<number, Assessment['materials']>>;
 const newLessonVersions: Record<string, string> = {
   'cb2-cost-sheet-audit': costSheetAuditVersion,

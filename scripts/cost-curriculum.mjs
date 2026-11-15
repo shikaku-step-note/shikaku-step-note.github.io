@@ -1,4 +1,4 @@
-import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
+import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
 import coverage from '../src/data/cost-beginner-coverage.json' with {type:'json'};
 
 export function costCurriculum(rows) {
@@ -11,6 +11,7 @@ export function costCurriculum(rows) {
     `ユニット2の既存章の理解度：${costUnitTwoAssessmentVersion}／原価表の照合：${costSheetAuditVersion}／総合確認：${costUnitTwoReviewVersion}`,
     `ユニット3の月次損益計算書：${costMonthlyProfitVersion}／総合確認：${costUnitThreeReviewVersion}`,
     `ユニット4のCVP営業計画：${costCvpPlanningVersion}／総合確認：${costUnitFourReviewVersion}`,
+    `ユニット5の総合確認：${costUnitFiveReviewVersion}`,
     `ユニット1の用語確認と用語総復習：${costUnitOneGlossaryVersion}`,
     '前提：割合と四則計算。会計の専門知識は必要なところで補い、紙と電卓を使います。',
     '', '学習時間の目安（当サイトの見積り。実測や公式の推奨時間ではありません）',
@@ -42,6 +43,7 @@ export function costCurriculum(rows) {
     if(unit===2)lines.push('    練習順：基本は材料の受払と作業時間の読み方 → 標準は直課・配賦と原価の振替 → 応用は原票で製品別原価表を復元し、在庫と売上原価の訂正へ。ユニット総合確認で別の資料を解く。');
     if(unit===3)lines.push('    練習順：仕掛品と製品在庫 → 段階利益 → 製品別・サービス別の集計 → 製品別月次損益計算書を完成 → 別の工房の総合確認。');
     if(unit===4)lines.push('    練習順：変動費と固定費 → 貢献利益と分岐点 → 目標利益と安全余裕（応用） → CVP表で値上げ案を比較 → 予約計画を使った総合確認。');
+    if(unit===5)lines.push('    練習順：同じ期間・単位で予算と実績を比較 → 販売数量差異・販売価格差異を計算 → 返品や報告書の計算基準を検算 → 売上と利益を分けて説明 → 全範囲の復習と模試。');
   }
   lines.push('', '総復習と模試',
     '  [cost-beginner-terms-all] 用語総復習。ユニットの用語問題を再利用。',
