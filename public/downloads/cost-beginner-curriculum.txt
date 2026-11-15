@@ -4,15 +4,16 @@
 教材・評価版：cost-2026-v2／ユニット1の既存章の理解度：cost-2026-unit-1-v3／ユニット1の追加章の理解度：cost-2026-unit-1-v4／総合確認：cost-2026-unit-1-review-v5
 ユニット2の既存章の理解度：cost-2026-unit-2-v3／原価表の照合：cost-2026-cost-sheet-audit-v1／総合確認：cost-2026-unit-2-review-v4
 ユニット3の月次損益計算書：cost-2026-monthly-profit-v1／総合確認：cost-2026-unit-3-review-v3
+ユニット4のCVP営業計画：cost-2026-cvp-planning-v1／総合確認：cost-2026-unit-4-review-v3
 ユニット1の用語確認と用語総復習：cost-2026-unit-1-glossary-v5
 前提：割合と四則計算。会計の専門知識は必要なところで補い、紙と電卓を使います。
 
 学習時間の目安（当サイトの見積り。実測や公式の推奨時間ではありません）
-本文・例題・理解度チェック：2377分
-用語確認：157分／ユニット・全体の復習：228分
-翌日と1週間後の復習：420分／模試2回：80分／模試の解き直し：120分
-合計：3382分（約57時間）
-1日30分・週5日：約23週間。苦手な単元の再学習に応じて延長します。
+本文・例題・理解度チェック：2529分
+用語確認：157分／ユニット・全体の復習：238分
+翌日と1週間後の復習：435分／模試2回：80分／模試の解き直し：120分
+合計：3559分（約60時間）
+1日30分・週5日：約24週間。苦手な単元の再学習に応じて延長します。
 1日60分・週5日：約12週間。苦手な単元の再学習に応じて延長します。
 1日90分・週5日：約8週間。苦手な単元の再学習に応じて延長します。
 
@@ -185,7 +186,7 @@
     復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
     練習順：仕掛品と製品在庫 → 段階利益 → 製品別・サービス別の集計 → 製品別月次損益計算書を完成 → 別の工房の総合確認。
   ユニット4 利益を計画する
-    20. [cb2-behavior] 数量が変わったときの費用を、変動費と固定費に分けて考える／65分
+    20. [cb2-behavior] 変動費と固定費の違い｜費用の計算と条件の変化／77分
       目標：活動量と費用の関係から変動費・固定費を区別する／総額と単位当たりの費用を数量に合わせて計算する／直接・間接の区分との違いと計算の前提を説明する
       前提：原価の分類と、製品別の損益計算を学んでから進めてください。
       本文：/qualifications/cost-beginner/cb2-behavior/
@@ -193,7 +194,7 @@
       用語：変動費・固定費・単位変動費・単位固定費・活動量・関連範囲・固変分解
       次：cb2-contribution
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    21. [cb2-contribution] 一個売るごとの貢献利益から、月の営業利益を組み立てる／70分
+    21. [cb2-contribution] 貢献利益と貢献利益率の求め方／82分
       目標：単位貢献利益と貢献利益総額を計算する／変動販売費を含む費用区分で営業利益を求める／貢献利益率と追加販売による利益の変化を説明する
       前提：変動費・固定費、売上総利益と営業利益の違いを復習してください。
       本文：/qualifications/cost-beginner/cb2-contribution/
@@ -201,7 +202,7 @@
       用語：貢献利益・単位貢献利益・貢献利益率・変動費率・営業利益・変動販売費・固定費回収
       次：cb2-break-even
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    22. [cb2-break-even] 利益がゼロになる販売数量と売上高を、損益の式から求める／75分
+    22. [cb2-break-even] 損益分岐点の求め方｜販売数量と売上高／87分
       目標：貢献利益と固定費が等しくなる損益分岐点を求める／数量と売上高の計算を使い分けて結果を検算する／整数制約と貢献利益が正でない場合を区別する
       前提：単位貢献利益、貢献利益率、営業利益の計算を復習してください。
       本文：/qualifications/cost-beginner/cb2-break-even/
@@ -209,7 +210,7 @@
       用語：損益分岐点・損益分岐点数量・損益分岐点売上高・黒字・赤字・非赤字数量・切上げ
       次：cb2-target-profit
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    23. [cb2-target-profit] 目標利益を得る数量・売価・費用を逆算し、計画を検算する／80分
+    23. [cb2-target-profit] 目標利益を達成する販売数量と必要売価／92分
       目標：目標営業利益を達成する販売数量・売上高を求める／数量を固定したときの必要売価や費用上限を逆算する／切上げた数量と計画の活動範囲を検算する
       前提：損益分岐点、単位貢献利益、貢献利益率の求め方を復習してください。
       本文：/qualifications/cost-beginner/cb2-target-profit/
@@ -217,19 +218,28 @@
       用語：目標営業利益・必要販売数量・目標売上高・必要売価・費用上限・計画条件・達成可能性
       次：cb2-safety-changes
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    24. [cb2-safety-changes] 販売の余裕と条件変更を、利益の式で比べる／80分
+    24. [cb2-safety-changes] 安全余裕率の計算｜売上の余裕と条件の変化／92分
       目標：実際売上高と損益分岐点の差から販売の余裕を説明する／売価・単位変動費・固定費の変更案を独立に計算する／売上変化と利益変化を区別して条件を照合する
       前提：損益分岐点と目標利益の計算を復習してください。
       本文：/qualifications/cost-beginner/cb2-safety-changes/
       理解度チェック：[cb2-safety-changes-check] 14問
       用語：安全余裕額・安全余裕率・条件変更・増分利益・追加固定費・感度の比較・販売構成
+      次：cb2-cvp-planning-case
+      翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
+    25. [cb2-cvp-planning-case] CVP分析の例題｜営業計画と値上げ後の損益／92分
+      目標：売価・販売数量と複数の費用明細から売上高と営業利益の表を作る／貢献利益率と単位貢献利益から販売数量・売上高の分岐点を求める／値上げ後の分岐点と営業利益を計算し、条件次第で結果が変わる理由を説明する
+      前提：変動費・固定費、貢献利益と損益分岐点を扱うユニット4の章を確認します。
+      本文：/qualifications/cost-beginner/cb2-cvp-planning-case/
+      理解度チェック：[cb2-cvp-planning-case-check] 6問
+      用語：本文の用語整理とユニットの用語確認へ
       次：cb2-budget
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
     [cost-beginner-unit-4-glossary] 用語確認
-    [cost-beginner-unit-4-review] 独自の総合確認 16問
+    [cost-beginner-unit-4-review] 独自の総合確認 21問
     復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。
+    練習順：変動費と固定費 → 貢献利益と分岐点 → 目標利益と安全余裕（応用） → CVP表で値上げ案を比較 → 予約計画を使った総合確認。
   ユニット5 予算と実績から利益を確かめる
-    25. [cb2-budget] 予算と実績を同じ単位で比べ、売上差額を正しく読む／65分
+    26. [cb2-budget] 予算と実績を同じ単位で比べ、売上差額を正しく読む／65分
       目標：数量と単価から予算売上高・実際売上高を求める／同じ期間・単位の差額と達成率を計算する／売上の差とその原因・利益を区別して説明する
       前提：数量×単価の売上高計算、割合と百分率を復習してください。
       本文：/qualifications/cost-beginner/cb2-budget/
@@ -237,7 +247,7 @@
       用語：予算売上高・実際売上高・売上高差異・予算達成率・予算差額・対象期間・比較条件
       次：cb2-sales-variance
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    26. [cb2-sales-variance] 売上高の差を、数量と価格の二つの差異に分ける／85分
+    27. [cb2-sales-variance] 売上高の差を、数量と価格の二つの差異に分ける／85分
       目標：販売数量差異と販売価格差異を定義に沿って計算する／比較用売上高を使って二つの差異の合計を検算する／基準数量・単価と符号が異なる分析方式を区別する
       前提：予算・実績売上高と、実際−予算の差額計算を復習してください。
       本文：/qualifications/cost-beginner/cb2-sales-variance/
@@ -245,7 +255,7 @@
       用語：販売数量差異・販売価格差異・比較用売上高・予算単価・実際単価・差異の照合・交差項
       次：cb2-variance-cases
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    27. [cb2-variance-cases] 複数製品とサービスの売上差異を集め、増減の内容を説明する／85分
+    28. [cb2-variance-cases] 複数製品とサービスの売上差異を集め、増減の内容を説明する／85分
       目標：複数製品の売上差異を製品ごとに分解して合計する／相殺された増減と単位の違いを説明する／サービスや返品条件の明示された売上を分析する
       前提：販売数量差異を予算単価、販売価格差異を実際数量で求める方法を復習してください。
       本文：/qualifications/cost-beginner/cb2-variance-cases/
@@ -253,7 +263,7 @@
       用語：製品別差異・差異の集計・相殺・平均販売単価・純販売数量・サービス単位・分析方式
       次：cb2-integration
       翌日：例題の条件と計算の理由を、解説を見ずに説明する。1週間後：誤った問題を解き直す。
-    28. [cb2-integration] 製品別損益・在庫・CVP・売上差異を、目的に合わせて使い分ける／95分
+    29. [cb2-integration] 製品別損益・在庫・CVP・売上差異を、目的に合わせて使い分ける／95分
       目標：二製品の直接費・配賦費と在庫から営業利益を計算する／在庫が変わる損益と在庫一定のCVPを区別して計画する／製品別の売上差異を集計し損益計算と照合する
       前提：直接費・間接費の集計、仕掛品・製品在庫、製品別損益、CVP、売上差異の各課を一通り終えてください。
       本文：/qualifications/cost-beginner/cb2-integration/
@@ -390,33 +400,33 @@
     独立練習：cb2-behavior-q02, cb2-behavior-q03, cb2-behavior-q04, cb2-behavior-q05, cb2-behavior-q06, cb2-behavior-q07, cb2-behavior-q10, cb2-behavior-q11, cb2-behavior-q13
     関連する総合確認：cb2-unit-4-r02, cb2-unit-4-r01
   [CB-C30] 公式2(1) 販売数量と販売単価から売上高を計算する
-    本文：cb2-contribution, cb2-budget
-    独立練習：cb2-budget-q01, cb2-budget-q02, cb2-budget-q07
-    関連する総合確認：cb2-unit-5-r01
+    本文：cb2-contribution, cb2-budget, cb2-cvp-planning-case
+    独立練習：cb2-budget-q01, cb2-budget-q02, cb2-budget-q07, cb2-cvp-planning-case-q01
+    関連する総合確認：cb2-unit-5-r01, cb2-unit-4-r17
   [CB-C31] 公式2(1) 単位変動費と活動量から変動費総額、各固定費から固定費総額を求める
-    本文：cb2-behavior, cb2-contribution
-    独立練習：cb2-behavior-q02, cb2-behavior-q03, cb2-behavior-q04, cb2-behavior-q05, cb2-behavior-q06, cb2-behavior-q07, cb2-behavior-q10, cb2-behavior-q11, cb2-behavior-q13
-    関連する総合確認：cb2-unit-4-r02
+    本文：cb2-behavior, cb2-contribution, cb2-cvp-planning-case
+    独立練習：cb2-behavior-q02, cb2-behavior-q03, cb2-behavior-q04, cb2-behavior-q05, cb2-behavior-q06, cb2-behavior-q07, cb2-behavior-q10, cb2-behavior-q11, cb2-behavior-q13, cb2-cvp-planning-case-q01
+    関連する総合確認：cb2-unit-4-r02, cb2-unit-4-r17
   [CB-C32] 公式2(1) 売上高−変動費による貢献利益を総額・1単位で求める
-    本文：cb2-contribution
-    独立練習：cb2-contribution-q01, cb2-contribution-q02, cb2-contribution-q09
-    関連する総合確認：cb2-unit-4-r04
+    本文：cb2-contribution, cb2-cvp-planning-case
+    独立練習：cb2-contribution-q01, cb2-contribution-q02, cb2-contribution-q09, cb2-cvp-planning-case-q02
+    関連する総合確認：cb2-unit-4-r04, cb2-unit-4-r18
   [CB-C33] 公式2(1) 変動費率・貢献利益率を計算し式の分母へ使い分ける
-    本文：cb2-contribution, cb2-break-even
-    独立練習：cb2-contribution-q06, cb2-contribution-q07, cb2-contribution-q08, cb2-contribution-q12, cb2-contribution-q13
-    関連する総合確認：cb2-unit-4-r16, cb2-unit-4-r08
+    本文：cb2-contribution, cb2-break-even, cb2-cvp-planning-case
+    独立練習：cb2-contribution-q06, cb2-contribution-q07, cb2-contribution-q08, cb2-contribution-q12, cb2-contribution-q13, cb2-cvp-planning-case-q03
+    関連する総合確認：cb2-unit-4-r16, cb2-unit-4-r08, cb2-unit-4-r18, cb2-unit-4-r19
   [CB-C34] 公式2(1) 貢献利益−固定費から営業利益を求め、利益式を検算する
-    本文：cb2-contribution
-    独立練習：cb2-contribution-q03, cb2-contribution-q04, cb2-contribution-q05, cb2-contribution-q10, cb2-contribution-q11, cb2-contribution-q14
-    関連する総合確認：cb2-unit-4-r05
+    本文：cb2-contribution, cb2-cvp-planning-case
+    独立練習：cb2-contribution-q03, cb2-contribution-q04, cb2-contribution-q05, cb2-contribution-q10, cb2-contribution-q11, cb2-contribution-q14, cb2-cvp-planning-case-q02
+    関連する総合確認：cb2-unit-4-r05, cb2-unit-4-r18
   [CB-C35] 公式2(1) 1単位貢献利益から損益分岐点販売数量を求める
-    本文：cb2-break-even
-    独立練習：cb2-break-even-q01, cb2-break-even-q04, cb2-break-even-q07, cb2-break-even-q12
-    関連する総合確認：cb2-unit-4-r07
+    本文：cb2-break-even, cb2-cvp-planning-case
+    独立練習：cb2-break-even-q01, cb2-break-even-q04, cb2-break-even-q07, cb2-break-even-q12, cb2-cvp-planning-case-q04
+    関連する総合確認：cb2-unit-4-r07, cb2-unit-4-r19
   [CB-C36] 公式2(1) 貢献利益率から損益分岐点売上高を求め、条件変更の影響を説明する
-    本文：cb2-break-even, cb2-safety-changes
-    独立練習：cb2-break-even-q02, cb2-break-even-q03, cb2-break-even-q10, cb2-break-even-q11, cb2-break-even-q14
-    関連する総合確認：cb2-unit-4-r08
+    本文：cb2-break-even, cb2-safety-changes, cb2-cvp-planning-case
+    独立練習：cb2-break-even-q02, cb2-break-even-q03, cb2-break-even-q10, cb2-break-even-q11, cb2-break-even-q14, cb2-cvp-planning-case-q05
+    関連する総合確認：cb2-unit-4-r08, cb2-unit-4-r20, cb2-unit-4-r21
   [CB-C37] 公式2(2) 予算と実績の数量・単価・売上高を同じ期間・範囲で整理する
     本文：cb2-budget
     独立練習：cb2-budget-q01, cb2-budget-q02, cb2-budget-q07

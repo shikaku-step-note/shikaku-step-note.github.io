@@ -2,18 +2,18 @@
 {
   "stableId": "cb2-target-profit",
   "qualification": "cost-beginner",
-  "title": "目標利益を得る数量・売価・費用を逆算し、計画を検算する",
-  "description": "固定費と目標利益を貢献利益でまかなう考え方から、必要数量・売上高・売価・費用の上限を導きます。端数と計画の前提も確認します。",
+  "title": "目標利益を達成する販売数量と必要売価",
+  "description": "目標利益に必要な数量・売価・費用上限を逆算します。売価に連動する手数料がある場合も、求めたい金額に合わせて式を立てます。",
   "order": 23,
   "unit": 4,
-  "minutes": 80,
+  "minutes": 92,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-10-28",
+  "updated": "2026-11-15",
   "objectives": [
     "目標営業利益を達成する販売数量・売上高を求める",
     "数量を固定したときの必要売価や費用上限を逆算する",
@@ -27,7 +27,8 @@
     "必要売価",
     "費用上限",
     "計画条件",
-    "達成可能性"
+    "達成可能性",
+    "目標利益の求め方"
   ],
   "glossary": [
     {
@@ -67,6 +68,21 @@
 以下は在庫の増減がなく、売価・単位変動費・固定費が一定のCVPモデルです。目標は営業利益で、税金・利息などは扱いません。計算上の必要値を求めることと、需要や設備の面で実行できるかを判断することは分けて考えます。
 
 <span id="objective-1"></span>
+
+月の費用と目標利益を、販売1件が負担する金額に直してみます。どの条件が与えられているかで、最後に求める数が変わります。
+
+<figure id="unit4-target-profit-model">
+<figcaption id="unit4-target-profit-model-caption">与えられた条件から式を選ぶ順番</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="unit4-target-profit-model-caption">
+
+| 分かっているもの | 求めるもの | 使う関係 |
+| --- | --- | --- |
+| 1件当たり貢献利益 | 必要販売数量 | 必要な貢献利益総額を1件当たりの額で割る |
+| 販売数量 | 必要な1件当たり貢献利益 | 必要な貢献利益総額を予定数量で割る |
+| 販売数量と単位変動費 | 必要売価 | 1件当たりに必要な貢献利益へ単位変動費を足す。売価連動費があれば条件を式にする |
+
+</div>
+</figure>
 
 ## 固定費に目標利益を足し、必要な貢献利益を求める
 
@@ -133,6 +149,47 @@
 固定費180,000円、単位貢献利益300円、目標利益240,000円なら必要数量は1,400個です。1,200個を超えると固定費が60,000円増える条件なら、固定費240,000円で計算し直して1,600個になります。1,400個販売では利益180,000円にしかならず、当初の目標を達成できません。
 
 数量が増えても売価や単位変動費が同じか、販売手数料などの変動販売費を含めたかも確認します。目標を達成するために必要な額を逆算した計算は、条件の変化をすでに織り込んだ予測とは限りません。問題の条件を一つずつ式へ対応させる作業が必要です。
+
+<span id="worked-target-profit-percentage-fee"></span>
+
+### 例題　売価に連動する手数料を含めて必要売価を求める
+
+月に120件の注文を受けます。1件当たりの材料などは700円、販売手数料は月の売上高の10％、固定費は月60,000円です。月の営業利益30,000円を目標にして、1円刻みで決められる最小の売価を求めます。この価格帯では販売数120件は変わらず、手数料率や他の費用にも変更はありません。
+
+固定費と目標利益をまかなうには、60,000＋30,000＝90,000円の貢献利益が必要です。120件で割ると1件750円。売価をp円とすると、手数料を引いて残るのは売価の90％です。そこから材料700円を引き、0.9×売価−700円が750円以上になるようにします。0.9×売価は1,450円以上、売価は理論上1,611.111…円以上です。
+
+<figure id="unit4-target-profit-comparison">
+<figcaption id="unit4-target-profit-comparison-caption">1円刻みの売価の前後で目標を検算</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="unit4-target-profit-comparison-caption">
+
+| 検算する売価 | 1件当たりの貢献利益 | 120件分の営業利益 |
+| --- | ---: | ---: |
+| 1,611円 | 749.9円 | 29,988円 |
+| 1,612円 | 750.8円 | 30,096円 |
+
+</div>
+</figure>
+
+したがって最小の売価は1,612円です。月の売上高193,440円から、月の手数料19,344円、材料84,000円、固定費60,000円を引いても30,096円になります。手数料は月の売上高に掛ける条件なので、途中の1件当たりの額は丸めません。
+
+手数料を現在の売価で円に換算して固定したまま逆算すると、値上げ後も同じ手数料だと誤って仮定することになります。売価が変わると手数料も変わる場合、売価の何割が残るかを先に式にします。この計算はCVPの利益式を使った発展練習です。
+
+<section class="guided-lesson" id="guided-target-profit" aria-labelledby="guided-target-profit-title">
+<h3 id="guided-target-profit-title">途中で確認　手数料率を考慮して必要売価を求める</h3>
+<p id="guided-target-profit-prompt">月100件の販売を予定しています。固定費45,000円、目標営業利益15,000円。1件当たりに材料等480円と、売上高の10％の手数料がかかります。1円刻みで設定する最小売価はいくらですか。</p>
+<form data-guided-practice data-expected="1200" data-guided-hint="必要な1件当たり貢献利益を求め、売価の90％から480円を引いた額と照合します。" aria-labelledby="guided-target-profit-title" aria-describedby="guided-target-profit-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-target-profit-input">答え（円）</label> <input id="guided-target-profit-input" name="answer" aria-describedby="guided-target-profit-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>必要な貢献利益は（45,000＋15,000）÷100＝600円/件です。売価の90％は600＋480＝1,080円必要なので、最小の売価は1,080÷0.9＝1,200円になります。</p>
+</details>
+</section>
 
 ## ガイドを外して計画を立てる練習
 

@@ -2,18 +2,18 @@
 {
   "stableId": "cb2-break-even",
   "qualification": "cost-beginner",
-  "title": "利益がゼロになる販売数量と売上高を、損益の式から求める",
-  "description": "損益分岐点を固定費の回収として説明し、数量・売上高の両方で計算します。整数数量の切上げ、端数、貢献利益が正でない場合を区別します。",
+  "title": "損益分岐点の求め方｜販売数量と売上高",
+  "description": "利益ゼロになる販売数量と売上高を計算します。貢献利益の額・割合を使い分け、理論上の値と実際に売れる整数の数量を照合します。",
   "order": 22,
   "unit": 4,
-  "minutes": 75,
+  "minutes": 87,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-10-28",
+  "updated": "2026-11-15",
   "objectives": [
     "貢献利益と固定費が等しくなる損益分岐点を求める",
     "数量と売上高の計算を使い分けて結果を検算する",
@@ -27,7 +27,8 @@
     "黒字",
     "赤字",
     "非赤字数量",
-    "切上げ"
+    "切上げ",
+    "損益分岐点の求め方"
   ],
   "glossary": [
     {
@@ -86,11 +87,18 @@
 
 390個では450×390−180,000＝−4,500円、410個では4,500円です。分岐点から10個ずれると、10個×450円だけ利益が変わります。分岐点を境に利益の符号が変わることまで確認すれば、単に割り算をしただけで終わりません。
 
+<figure id="unit4-break-even-model">
+<figcaption id="unit4-break-even-model-caption">損益分岐点と前後の数量で動く利益</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="unit4-break-even-model-caption">
+
 | 販売数量 | 売上高 | 貢献利益 | 営業利益 |
 | ---: | ---: | ---: | ---: |
 | 390個 | 468,000円 | 175,500円 | −4,500円 |
 | 400個 | 480,000円 | 180,000円 | 0円 |
 | 410個 | 492,000円 | 184,500円 | 4,500円 |
+
+</div>
+</figure>
 
 <span id="objective-2"></span>
 
@@ -141,6 +149,54 @@
 売上高は「売価×数量」、総費用は「単位変動費×数量＋固定費」です。数量0では売上高0円、総費用は固定費総額から始まります。売価が単位変動費より大きければ、数量を増やすほど二本の差が縮まり、交わった後は売上高が総費用を上回ります。
 
 この関係は表でも確認できます。グラフを見たときは、横軸が数量か売上高か、縦軸が何円かを読みます。固定費を示す高さ、変動費を加える傾き、売上高の傾きを区別すれば、なぜ固定費が増えると分岐点が上がるかも説明できます。率や金額だけでなく、関係を言葉にする練習もしておきましょう。
+
+<span id="worked-break-even-reconstruct-two-months"></span>
+
+## 応用例題：二か月の販売記録から損益分岐点を求める
+
+原価の明細が手元になく、販売数量と営業利益だけが分かることがあります。月が変わっても同じ固定費がかかり、売価と単位変動費が一定なら、二か月の利益の差から「一個売ると利益が何円増えるか」を求められます。その額を使って固定費を割り出せば、損益分岐点の計算に進めます。
+
+ある店では一種類の製品を1個1,200円で販売しています。月間販売数量が200〜400個の範囲では、月の固定費と単位変動費はいずれも一定とします。以下の営業利益には、当月分の変動費と固定費がすべて反映されています。
+
+**表：売価と費用条件が同じ二か月の販売記録**
+
+<figure id="unit4-break-even-comparison">
+<figcaption id="unit4-break-even-comparison-caption">実績から逆算した分岐点の照合</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="unit4-break-even-comparison-caption">
+
+| 記録 | 販売数量 | 売上高 | 営業利益 |
+| --- | ---: | ---: | ---: |
+| ある月 | 240個 | 288,000円 | −24,000円 |
+| 別の月 | 360個 | 432,000円 | 30,000円 |
+| 二か月の差 | ＋120個 | ＋144,000円 | ＋54,000円 |
+
+</div>
+</figure>
+
+**手順1　利益の差から単位貢献利益を求める。** 数量が120個増えると、営業利益は−24,000円から30,000円へ54,000円増えています。固定費は両月で同額なので、営業利益の差には固定費が残りません。営業利益の増加額54,000円を販売数量の増加分120個で割ると、単位貢献利益は450円です。また、売価1,200円と単位貢献利益450円の差から、単位変動費は750円と分かります。
+
+**手順2　どちらかの月で固定費を求める。** 240個の月の貢献利益は450×240＝108,000円です。ここから固定費を引くと営業利益−24,000円になるため、固定費は108,000−（−24,000）＝132,000円となります。赤字の月は、貢献利益が固定費に24,000円届かなかったということです。360個の月でも450×360−30,000＝132,000円と確かめられます。
+
+**手順3　答えを損益の式へ戻す。** 利益がちょうど0になる理論上の数量は132,000÷450＝293と3分の1個で、損益分岐点売上高は352,000円です。整数個でしか売れない条件では、293個の営業利益は−150円、294個では300円となり、赤字を出さない最小数量は294個です。このときの売上高352,800円は、理論上の分岐点売上高とは区別します。
+
+二か月の差を使える根拠は、数量以外の条件がそろっていることです。途中で売価が変わったり、販売量に合わせて追加の固定費が発生したりすると、54,000円の差にはその影響も含まれます。二か月分の数字だけで単位貢献利益を割り出す前に、費用と売価の前提を読み取ります。
+
+<section class="guided-lesson" id="guided-break-even" aria-labelledby="guided-break-even-title">
+<h3 id="guided-break-even-title">途中で確認　整数で赤字を避けられる数量を求める</h3>
+<p id="guided-break-even-prompt">1件の売価1,800円、単位変動費700円、月固定費135,000円です。価格と費用が変わらない範囲で、月の営業利益を0円以上にできる最小の販売件数は何件ですか。</p>
+<form data-guided-practice data-expected="123" data-guided-hint="分母は売価ではなく1件当たりの貢献利益です。端数が出たら前後の整数で利益を確かめます。" aria-labelledby="guided-break-even-title" aria-describedby="guided-break-even-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-break-even-input">答え（件）</label> <input id="guided-break-even-input" name="answer" aria-describedby="guided-break-even-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>1件1,100円の貢献利益で135,000円を回収します。122件だと800円の赤字、123件なら300円の黒字。最小123件です。</p>
+</details>
+</section>
 
 ## 自力練習：式を立ててから分岐点を検算する
 

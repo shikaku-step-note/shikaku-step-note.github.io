@@ -1185,10 +1185,12 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-behavior#objective-2"
+      "cb2-behavior#objective-2",
+      "cb2-behavior#objective-1"
     ],
     "workedExamples": [
-      "cb2-behavior#worked-2"
+      "cb2-behavior#worked-2",
+      "cb2-behavior#worked-behavior-contract-ranges"
     ],
     "independentQuestionIds": [
       "cb2-behavior-q02",
@@ -1227,22 +1229,27 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-budget#objective-1"
+      "cb2-budget#objective-1",
+      "cb2-cvp-planning-case#objective-1"
     ],
     "workedExamples": [
-      "cb2-budget#worked-1"
+      "cb2-budget#worked-1",
+      "cb2-cvp-planning-case#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-budget-q01",
       "cb2-budget-q02",
-      "cb2-budget-q07"
+      "cb2-budget-q07",
+      "cb2-cvp-planning-case-q01"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-5-r01"
+      "cb2-unit-5-r01",
+      "cb2-unit-4-r17"
     ],
     "lessons": [
       "cb2-contribution",
-      "cb2-budget"
+      "cb2-budget",
+      "cb2-cvp-planning-case"
     ]
   },
   {
@@ -1264,10 +1271,12 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-behavior#objective-2"
+      "cb2-behavior#objective-2",
+      "cb2-cvp-planning-case#objective-1"
     ],
     "workedExamples": [
-      "cb2-behavior#worked-1"
+      "cb2-behavior#worked-1",
+      "cb2-cvp-planning-case#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-behavior-q02",
@@ -1278,14 +1287,17 @@
       "cb2-behavior-q07",
       "cb2-behavior-q10",
       "cb2-behavior-q11",
-      "cb2-behavior-q13"
+      "cb2-behavior-q13",
+      "cb2-cvp-planning-case-q01"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-4-r02"
+      "cb2-unit-4-r02",
+      "cb2-unit-4-r17"
     ],
     "lessons": [
       "cb2-behavior",
-      "cb2-contribution"
+      "cb2-contribution",
+      "cb2-cvp-planning-case"
     ]
   },
   {
@@ -1306,21 +1318,26 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-contribution#objective-1"
+      "cb2-contribution#objective-1",
+      "cb2-cvp-planning-case#objective-1"
     ],
     "workedExamples": [
-      "cb2-contribution#worked-1"
+      "cb2-contribution#worked-1",
+      "cb2-cvp-planning-case#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-contribution-q01",
       "cb2-contribution-q02",
-      "cb2-contribution-q09"
+      "cb2-contribution-q09",
+      "cb2-cvp-planning-case-q02"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-4-r04"
+      "cb2-unit-4-r04",
+      "cb2-unit-4-r18"
     ],
     "lessons": [
-      "cb2-contribution"
+      "cb2-contribution",
+      "cb2-cvp-planning-case"
     ]
   },
   {
@@ -1342,25 +1359,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-contribution#objective-3"
+      "cb2-contribution#objective-3",
+      "cb2-cvp-planning-case#objective-2"
     ],
     "workedExamples": [
-      "cb2-contribution#worked-3"
+      "cb2-contribution#worked-3",
+      "cb2-cvp-planning-case#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-contribution-q06",
       "cb2-contribution-q07",
       "cb2-contribution-q08",
       "cb2-contribution-q12",
-      "cb2-contribution-q13"
+      "cb2-contribution-q13",
+      "cb2-cvp-planning-case-q03"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r16",
-      "cb2-unit-4-r08"
+      "cb2-unit-4-r08",
+      "cb2-unit-4-r18",
+      "cb2-unit-4-r19"
     ],
     "lessons": [
       "cb2-contribution",
-      "cb2-break-even"
+      "cb2-break-even",
+      "cb2-cvp-planning-case"
     ]
   },
   {
@@ -1381,10 +1404,12 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-contribution#objective-2"
+      "cb2-contribution#objective-2",
+      "cb2-cvp-planning-case#objective-1"
     ],
     "workedExamples": [
-      "cb2-contribution#worked-2"
+      "cb2-contribution#worked-2",
+      "cb2-cvp-planning-case#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-contribution-q03",
@@ -1392,13 +1417,16 @@
       "cb2-contribution-q05",
       "cb2-contribution-q10",
       "cb2-contribution-q11",
-      "cb2-contribution-q14"
+      "cb2-contribution-q14",
+      "cb2-cvp-planning-case-q02"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-4-r05"
+      "cb2-unit-4-r05",
+      "cb2-unit-4-r18"
     ],
     "lessons": [
-      "cb2-contribution"
+      "cb2-contribution",
+      "cb2-cvp-planning-case"
     ]
   },
   {
@@ -1419,22 +1447,28 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-break-even#objective-1"
+      "cb2-break-even#objective-1",
+      "cb2-cvp-planning-case#objective-2"
     ],
     "workedExamples": [
-      "cb2-break-even#worked-1"
+      "cb2-break-even#worked-1",
+      "cb2-break-even#worked-break-even-reconstruct-two-months",
+      "cb2-cvp-planning-case#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-break-even-q01",
       "cb2-break-even-q04",
       "cb2-break-even-q07",
-      "cb2-break-even-q12"
+      "cb2-break-even-q12",
+      "cb2-cvp-planning-case-q04"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-4-r07"
+      "cb2-unit-4-r07",
+      "cb2-unit-4-r19"
     ],
     "lessons": [
-      "cb2-break-even"
+      "cb2-break-even",
+      "cb2-cvp-planning-case"
     ]
   },
   {
@@ -1456,24 +1490,30 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-break-even#objective-2"
+      "cb2-break-even#objective-2",
+      "cb2-cvp-planning-case#objective-3"
     ],
     "workedExamples": [
-      "cb2-break-even#worked-2"
+      "cb2-break-even#worked-2",
+      "cb2-cvp-planning-case#worked-3"
     ],
     "independentQuestionIds": [
       "cb2-break-even-q02",
       "cb2-break-even-q03",
       "cb2-break-even-q10",
       "cb2-break-even-q11",
-      "cb2-break-even-q14"
+      "cb2-break-even-q14",
+      "cb2-cvp-planning-case-q05"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-4-r08"
+      "cb2-unit-4-r08",
+      "cb2-unit-4-r20",
+      "cb2-unit-4-r21"
     ],
     "lessons": [
       "cb2-break-even",
-      "cb2-safety-changes"
+      "cb2-safety-changes",
+      "cb2-cvp-planning-case"
     ]
   },
   {

@@ -418,5 +418,15 @@
     "id": "cb2-integration-q12",
     "formula": "437000+361000-420000-360000",
     "value": 18000
+  },
+  {
+    "id": "cb2-cvp-planning-case-q02",
+    "formula": "80*(3500-1000-250-250)-70000-50000",
+    "value": 40000
+  },
+  {
+    "id": "cb2-cvp-planning-case-q03",
+    "formula": "135000*2000/(2000-1100)",
+    "value": 300000
   }
 ]

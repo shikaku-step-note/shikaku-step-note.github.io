@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "売上高の差を、数量と価格の二つの差異に分ける",
   "description": "実際−予算を正負の基準とし、予算単価で数量差異、実際数量で価格差異を計算します。橋渡しの表から式を導き、合計が元の売上差に戻ることを確かめます。",
-  "order": 26,
+  "order": 27,
   "unit": 5,
   "minutes": 85,
   "sample": false,
