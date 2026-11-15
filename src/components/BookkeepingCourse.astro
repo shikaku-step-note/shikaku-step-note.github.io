@@ -181,6 +181,9 @@ const workload = beginner
       </section>
       <section class="course-section">
         <h2>次の学習へ</h2>
+        {beginner && (
+          <p>合格後の応募書類に迷ったら、<a href={href('study-guides/boki-beginner-resume/')}>履歴書の資格欄の書き方と記入例</a>をご覧ください。</p>
+        )}
         <p>
           {q.id === 'boki-1'
             ? '例題を解けた論点も、公式の出題区分表や会計基準の条件を確認し、組合せ問題・長い資料問題で復習しましょう。'
