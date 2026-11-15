@@ -228,5 +228,15 @@
     "id": "cb2-services-q13",
     "formula": "82000-40000*30/(30+20)",
     "value": 58000.0
+  },
+  {
+    "id": "cb2-monthly-profit-statement-q01",
+    "formula": "5000+21000+9000/3-3600",
+    "value": 25400
+  },
+  {
+    "id": "cb2-monthly-profit-statement-q03",
+    "formula": "50000-26000-3000-16000*50000/80000",
+    "value": 11000
   }
 ]

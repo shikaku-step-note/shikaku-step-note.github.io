@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "販売の余裕と条件変更を、利益の式で比べる",
   "description": "損益分岐点からの販売余裕を求め、売価・変動費・固定費が変わる案を一つずつ比較します。安全余裕の指標はCVP理解を助ける補足として扱います。",
-  "order": 23,
+  "order": 24,
   "unit": 4,
   "minutes": 80,
   "sample": false,

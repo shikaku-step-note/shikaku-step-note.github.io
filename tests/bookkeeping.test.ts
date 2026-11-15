@@ -33,10 +33,10 @@ const lessons = entries.filter(
 const tests = bokiAssessments(entries);
 const mock = tests.find((a) => a.id === 'boki-2-mock')!;
 test('five bookkeeping tracks have substantive lessons, distinct identifiers and honest source coverage', () => {
-  assert.equal(lessons.length, 133);
+  assert.equal(lessons.length, 134);
   assert.deepEqual(
     bokiCourses.map((c) => lessons.filter((l) => l.data.qualification === c.id).length),
-    [27, 27, 55, 10, 14],
+    [27, 28, 55, 10, 14],
   );
   assert.equal(new Set(entries.map((l) => l.data.stableId)).size, entries.length);
   for (const c of bokiCourses) {
@@ -62,7 +62,7 @@ test('five bookkeeping tracks have substantive lessons, distinct identifiers and
         l.body.replace(/\s/g, '').length >= (c.id.includes('beginner') ? 1200 : 2400),
         l.data.stableId,
       );
-      if (['bb2-foundations-case', 'bb2-sales-returns', 'bb2-trade-case', 'cb2-cost-sheet-audit'].includes(l.data.stableId)) assert.deepEqual(l.data.glossary, []);
+      if (['bb2-foundations-case', 'bb2-sales-returns', 'bb2-trade-case', 'cb2-cost-sheet-audit', 'cb2-monthly-profit-statement'].includes(l.data.stableId)) assert.deepEqual(l.data.glossary, []);
       else if (c.id === 'boki-beginner' || c.id === 'cost-beginner' || l.data.stableId.startsWith('b3x-'))
         assert.ok(l.data.glossary.length >= 6);
       else assert.equal(l.data.glossary.length, 4);
@@ -98,7 +98,7 @@ test('all lesson, glossary, review and mock questions are valid and link to thei
       }
     }
   }
-  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 141);
+  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 142);
   assert.equal(tests.filter((a) => a.kind === 'glossary').length, 27);
   assert.equal(tests.filter((a) => a.kind === 'review').length, 30);
 });

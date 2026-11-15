@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "複数製品とサービスの売上差異を集め、増減の内容を説明する",
   "description": "製品ごとに数量差異と価格差異を計算して合計します。相殺される差、個数と単価の違う商品、サービスの回数を扱い、原因と計算上の内訳を区別します。",
-  "order": 26,
+  "order": 27,
   "unit": 5,
   "minutes": 85,
   "sample": false,

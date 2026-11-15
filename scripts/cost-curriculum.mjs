@@ -1,4 +1,4 @@
-import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
+import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
 import coverage from '../src/data/cost-beginner-coverage.json' with {type:'json'};
 
 export function costCurriculum(rows) {
@@ -9,6 +9,7 @@ export function costCurriculum(rows) {
     `範囲：2018年度からの現行版。2026年度と、公表済み2027年度の案内でも変更なし。公式資料確認：${costReviewed}`,
     `教材・評価版：${costVersion}／ユニット1の既存章の理解度：${costUnitOneAssessmentVersion}／ユニット1の追加章の理解度：${costUnitOneExpandedVersion}／総合確認：${costUnitOneReviewVersion}`,
     `ユニット2の既存章の理解度：${costUnitTwoAssessmentVersion}／原価表の照合：${costSheetAuditVersion}／総合確認：${costUnitTwoReviewVersion}`,
+    `ユニット3の月次損益計算書：${costMonthlyProfitVersion}／総合確認：${costUnitThreeReviewVersion}`,
     `ユニット1の用語確認と用語総復習：${costUnitOneGlossaryVersion}`,
     '前提：割合と四則計算。会計の専門知識は必要なところで補い、紙と電卓を使います。',
     '', '学習時間の目安（当サイトの見積り。実測や公式の推奨時間ではありません）',
@@ -38,6 +39,7 @@ export function costCurriculum(rows) {
       '    復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。');
     if(unit===1)lines.push('    練習順：原価対象と材料消費 → 費目・直間・責任 → 収益との対応・二段階の利益 → 工房の複合問題と総合確認。');
     if(unit===2)lines.push('    練習順：基本は材料の受払と作業時間の読み方 → 標準は直課・配賦と原価の振替 → 応用は原票で製品別原価表を復元し、在庫と売上原価の訂正へ。ユニット総合確認で別の資料を解く。');
+    if(unit===3)lines.push('    練習順：仕掛品と製品在庫 → 段階利益 → 製品別・サービス別の集計 → 製品別月次損益計算書を完成 → 別の工房の総合確認。');
   }
   lines.push('', '総復習と模試',
     '  [cost-beginner-terms-all] 用語総復習。ユニットの用語問題を再利用。',

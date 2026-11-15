@@ -867,22 +867,27 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-wip#objective-1"
+      "cb2-wip#objective-1",
+      "cb2-monthly-profit-statement#objective-1"
     ],
     "workedExamples": [
-      "cb2-wip#worked-1"
+      "cb2-wip#worked-1",
+      "cb2-wip#worked-wip-completion-evidence"
     ],
     "independentQuestionIds": [
       "cb2-wip-q01",
       "cb2-wip-q02",
       "cb2-wip-q03",
-      "cb2-wip-q04"
+      "cb2-wip-q04",
+      "cb2-monthly-profit-statement-q01"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-3-r01"
+      "cb2-unit-3-r01",
+      "cb2-unit-3-r17"
     ],
     "lessons": [
-      "cb2-wip"
+      "cb2-wip",
+      "cb2-monthly-profit-statement"
     ]
   },
   {
@@ -978,7 +983,8 @@
       "cb2-finished#objective-2"
     ],
     "workedExamples": [
-      "cb2-finished#worked-2"
+      "cb2-finished#worked-2",
+      "cb2-finished#worked-finished-lot-reconciliation"
     ],
     "independentQuestionIds": [
       "cb2-finished-q05",
@@ -1012,23 +1018,28 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-finished#objective-1"
+      "cb2-finished#objective-1",
+      "cb2-monthly-profit-statement#objective-1"
     ],
     "workedExamples": [
-      "cb2-finished#worked-1"
+      "cb2-finished#worked-1",
+      "cb2-monthly-profit-statement#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-finished-q01",
       "cb2-finished-q02",
       "cb2-finished-q03",
-      "cb2-finished-q04"
+      "cb2-finished-q04",
+      "cb2-monthly-profit-statement-q02"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-3-r04"
+      "cb2-unit-3-r04",
+      "cb2-unit-3-r17"
     ],
     "lessons": [
       "cb2-finished",
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-monthly-profit-statement"
     ]
   },
   {
@@ -1049,22 +1060,28 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-pnl#objective-2"
+      "cb2-pnl#objective-2",
+      "cb2-monthly-profit-statement#objective-2"
     ],
     "workedExamples": [
-      "cb2-pnl#worked-2"
+      "cb2-pnl#worked-2",
+      "cb2-pnl#worked-profit-statement-two-adjustments",
+      "cb2-monthly-profit-statement#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-pnl-q05",
       "cb2-pnl-q06",
       "cb2-pnl-q07",
-      "cb2-pnl-q08"
+      "cb2-pnl-q08",
+      "cb2-monthly-profit-statement-q03"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-3-r08"
+      "cb2-unit-3-r08",
+      "cb2-unit-3-r19"
     ],
     "lessons": [
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-monthly-profit-statement"
     ]
   },
   {
@@ -1085,22 +1102,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-product-profit#objective-2"
+      "cb2-product-profit#objective-2",
+      "cb2-monthly-profit-statement#objective-3",
+      "cb2-monthly-profit-statement#objective-2"
     ],
     "workedExamples": [
-      "cb2-product-profit#worked-1"
+      "cb2-product-profit#worked-1",
+      "cb2-monthly-profit-statement#worked-3",
+      "cb2-monthly-profit-statement#worked-2",
+      "cb2-product-profit#worked-product-profit-inventory-backsolve"
     ],
     "independentQuestionIds": [
       "cb2-product-profit-q05",
       "cb2-product-profit-q06",
       "cb2-product-profit-q07",
-      "cb2-product-profit-q08"
+      "cb2-product-profit-q08",
+      "cb2-monthly-profit-statement-q05"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-3-r11"
+      "cb2-unit-3-r11",
+      "cb2-unit-3-r20",
+      "cb2-unit-3-r19"
     ],
     "lessons": [
-      "cb2-product-profit"
+      "cb2-product-profit",
+      "cb2-monthly-profit-statement"
     ]
   },
   {
@@ -1119,10 +1145,12 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-services#objective-2"
+      "cb2-services#objective-2",
+      "cb2-services#objective-3"
     ],
     "workedExamples": [
-      "cb2-services#worked-1"
+      "cb2-services#worked-1",
+      "cb2-services#worked-services-two-drivers-diagnostic"
     ],
     "independentQuestionIds": [
       "cb2-services-q05",
@@ -1131,7 +1159,10 @@
       "cb2-services-q08"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-3-r16"
+      "cb2-unit-3-r16",
+      "cb2-unit-3-r18",
+      "cb2-unit-3-r19",
+      "cb2-unit-3-r20"
     ],
     "lessons": [
       "cb2-services"

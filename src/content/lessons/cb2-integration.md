@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "製品別損益・在庫・CVP・売上差異を、目的に合わせて使い分ける",
   "description": "二製品の製造費と在庫から損益計算書を完成させ、別の計画条件でCVPと売上差異を解きます。何の原価・期間・数量かを整理し、異なる計算目的を混ぜずに検算します。",
-  "order": 27,
+  "order": 28,
   "unit": 5,
   "minutes": 95,
   "sample": false,

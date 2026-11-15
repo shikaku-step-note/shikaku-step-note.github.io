@@ -1,11 +1,11 @@
 ---
 {
-  "stableId":"cb2-pnl","qualification":"cost-beginner","title":"売上総利益と営業利益を、費用の役割から組み立てる",
-  "description":"売上高から何をどの段階で引くのかを、製造・販売・管理の活動から説明します。在庫を含む原価の流れ、費用の分類、利益率、損失や逆算を使って損益計算書を読み解きます。",
-  "order":16,"minutes":75,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-10-28",
+  "stableId":"cb2-pnl","qualification":"cost-beginner","title":"損益計算書の作り方｜売上総利益と営業利益",
+  "description":"売上原価と販管費をどの行で引くかを学びます。費用の集計先と期間を訂正し、売上総利益・営業利益がどう変わるかを確かめます。",
+  "order":16,"minutes":87,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-15",
   "objectives":["製造原価・売上原価・販売費及び一般管理費を活動と期間から区別する","売上高から売上総利益と営業利益の表を順に完成し、逆算する","利益の額と利益率、営業損失の意味を読み、二重控除や集計漏れを検算する"],
   "prerequisite":"仕掛品・製品の原価計算、材料費・労務費・経費の分類、割合の小数と百分率を確認してください。",
-  "keywords":["損益計算書","売上総利益","営業利益","販売費及び一般管理費","売上総利益率","営業損失"],
+  "keywords":["損益計算書","売上総利益","営業利益","販売費及び一般管理費","売上総利益率","営業損失","損益計算書の作り方"],
   "glossary":[
     {"term":"損益計算書","definition":"対象期間の収益と、それに対応する費用を並べて利益または損失を示す表。"},
     {"term":"売上高","definition":"対象期間に製品やサービスを販売して得た収益の金額。"},
@@ -32,12 +32,19 @@
 
 費目名だけで判断せず、どの活動で使われたかを読みます。同じ給料でも、工場で製品を作る担当者と本社で管理する担当者では集計先が違います。同じ減価償却費でも、工場機械か本社備品かによって区別します。直接費・間接費という分類だけでも、販管費かどうかは決まりません。
 
+<figure id="unit3-pnl-model">
+<figcaption id="unit3-pnl-model-caption">費用を原価にするか、販管費にするかの判断</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="unit3-pnl-model-caption">
+
 | 内容の例 | この課での集計先 | 利益へ反映する道筋 |
 | --- | --- | --- |
 | 製品に使った主要材料 | 製造原価 | 仕掛品・製品を経て販売分が売上原価になる |
 | 工場の共通の電力費 | 製造原価 | 製品へ配賦し、在庫と販売分へ分かれる |
 | 販売の広告費 | 販売費 | その期間の販管費として引く |
 | 本社管理担当者の給料 | 一般管理費 | その期間の販管費として引く |
+
+</div>
+</figure>
 
 製造原価へ含めた額を、販管費でもう一度引いてはいけません。たとえば工場の減価償却費が製品原価と売上原価へすでに含まれているなら、営業利益の計算で同じ費用をもう一度追加控除すると、二重になります。
 
@@ -116,6 +123,47 @@
 Aの売上総利益率は40％、営業利益率10％です。Bは45％、20％です。ただし、これだけでAの責任者の働きが悪いとは断定できません。店舗の規模、立地による家賃、販売する内容など、利益へ影響する条件が異なる可能性があります。表から確実に読める差と、その原因についての推測を分けます。
 
 製品別や部門別の表では共通費の配賦条件も比較へ影響します。次の課で、その条件を明示したうえで二製品の原価から利益まで計算します。ここでは、異なる段階の利益を同じ名前で比べないことを押さえてください。
+
+<span id="worked-profit-statement-two-adjustments"></span>
+
+### 例題　費用の組替えと期間の訂正を一つずつ反映する
+
+ある工房の当月の売上高は100,000円。集計途中の損益計算書では売上原価55,000円、販管費20,000円でした。販管費の明細には当月に完成・販売した製品だけに使った外注加工費5,000円と、翌月だけの広告費2,500円が含まれています。外注分は他の費用に二重に入っていません。広告費はこの練習では翌月の費用として扱い、他の修正はないものとします。
+
+<figure id="unit3-pnl-comparison">
+<figcaption id="unit3-pnl-comparison-caption">組替えと期間訂正が利益へ及ぼす違い</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="unit3-pnl-comparison-caption">
+
+| 確認する項目 | 集計途中 | 外注加工費の組替え後 | 広告費の期間も直した後 |
+| --- | ---: | ---: | ---: |
+| 売上原価 | 55,000円 | 60,000円 | 60,000円 |
+| 売上総利益 | 45,000円 | 40,000円 | 40,000円 |
+| 販管費 | 20,000円 | 15,000円 | 12,500円 |
+| 営業利益 | 25,000円 | 25,000円 | 27,500円 |
+
+</div>
+</figure>
+
+最初に、当月に売った製品に含めるべき外注加工費を販管費から売上原価へ移します。売上総利益は5,000円減りますが、差し引く費用の合計は55,000＋20,000＝75,000円から変わりません。したがって、この組替えだけなら営業利益は25,000円のままです。外注を使って作った製品の一部が残る条件なら、在庫への配分も確かめる必要があります。
+
+次に翌月の広告費2,500円を当月の販管費から外します。今度は当月に差し引く費用の合計が減り、営業利益が2,500円増えます。訂正前後の営業利益だけを見ると、外注加工費をどの行へ移したかは見えません。売上総利益の行と営業利益の行をそれぞれ確かめます。
+
+<section class="guided-lesson" id="guided-pnl" aria-labelledby="guided-pnl-title">
+<h3 id="guided-pnl-title">途中で確認　組替えと当月費用の訂正後の営業利益を出す</h3>
+<p id="guided-pnl-prompt">売上高100,000円、訂正前の売上原価60,000円、販管費18,000円です。販管費には、すべて当月に販売した製品の外注加工費3,000円と、翌月分の広告費2,000円が含まれていました。広告費は翌月に計上する条件で、他の訂正はありません。当月営業利益はいくらですか。</p>
+<form data-guided-practice data-expected="24000" data-guided-hint="外注加工費は売上原価に移すだけです。当月の費用合計を減らすのは翌月の広告費です。" aria-labelledby="guided-pnl-title" aria-describedby="guided-pnl-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-pnl-input">答え（円）</label> <input id="guided-pnl-input" name="answer" aria-describedby="guided-pnl-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>訂正後の売上原価は63,000円。販管費は18,000−3,000−2,000＝13,000円です。売上総利益37,000円から13,000円を引くと、営業利益は24,000円です。</p>
+</details>
+</section>
 
 ### 計算の前に費用の行を決める練習
 
