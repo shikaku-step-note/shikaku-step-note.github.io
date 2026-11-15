@@ -67,6 +67,16 @@ const workload = beginner
           <a href={href(`qualifications/${q.id}/tests/`)}>用語・総復習・模試を選ぶ</a>
         </div>
       </section>
+      {q.id === 'boki-1' && (
+        <section class="course-section" id="free-mock">
+          <h2>日商簿記1級の無料基礎模試</h2>
+          <p>前半・後半ともに90分です。基本論点を確認しながら、本試験に向けた時間配分を練習できます。設問の数、資料量、配点は当サイト独自の設定です。</p>
+          <ul>
+            <li><a href={href('qualifications/boki-1/tests/boki-1-mock-front/')}>前半の模試を始める（商業簿記・会計学）</a></li>
+            <li><a href={href('qualifications/boki-1/tests/boki-1-mock-back/')}>後半の模試を始める（工業簿記・原価計算）</a></li>
+          </ul>
+        </section>
+      )}
       <section class="course-section">
         <h2>無理なく進める学習案</h2>
         <p>{course.plan}</p>
