@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -95,8 +95,8 @@ test('root review and mock numeric targets agree with independently expressed fo
     const q=allQuestions.get(w.id)!;assert.ok(q,w.id);
     assert.ok(Math.abs(numeric(q.options[q.answer]!)-expected)<1e-8,w.id);
   }
-  const reviews=assessments.filter(a=>a.kind==='review'&&a.version===costVersion).flatMap(a=>a.questions);
-  assert.equal(reviews.length,94);assert.equal(new Set(reviews.map(q=>q.id)).size,94);
+  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneAssessmentVersion].includes(a.version)).flatMap(a=>a.questions);
+  assert.equal(reviews.length,96);assert.equal(new Set(reviews.map(q=>q.id)).size,96);
 });
 
 test('mock inventory and profit vectors reconcile independently in both directions',()=>{
@@ -125,8 +125,8 @@ test('cost registries are deterministic and preserve other qualification version
 test('every numeric lesson key retains an independently recalculated regression reference',()=>{
   const numericQuestions=Object.values(costBank).flat().filter(q=>q.input==='number');
   const witnesses=[...unit12Witnesses,...unit3Witnesses,...unit45Witnesses];
-  assert.equal(numericQuestions.length,175);assert.equal(witnesses.length,175);
-  assert.equal(new Set(witnesses.map(w=>w.id)).size,175);
+  assert.equal(numericQuestions.length,179);assert.equal(witnesses.length,179);
+  assert.equal(new Set(witnesses.map(w=>w.id)).size,179);
   for(const q of numericQuestions){
     const w=witnesses.find(w=>w.id===q.id)!;assert.ok(w,q.id);
     assert.match(w.formula,/^[\d.()+*/\s,-]+$|^Math\.(ceil|abs)\([\d.()+*/\s-]+\)$/);
@@ -141,4 +141,28 @@ test('glossary alternatives avoid aliases and overlapping broader/narrower terms
   const questions=assessments.find(a=>a.id==='cost-beginner-terms-all')!.questions;
   assert.equal(questions.length,147);
   for(const q of questions)for(const group of groups)if(group.includes(q.options[q.answer]!))assert.equal(q.options.filter(option=>group.includes(option)).length,1,q.id);
+});
+
+test('the five revised Unit 1 tests preserve historical scores and isolate the active version',()=>{
+  const revised=assessments.filter(a=>a.version===costUnitOneAssessmentVersion);
+  assert.equal(revised.length,5);
+  assert.ok(revised.every(a=>a.unit===1&&['lesson','review'].includes(a.kind)));
+  const current=revised.find(a=>a.kind==='review')!;
+  assert.equal(current.questions.length,15);
+  const oldDefinition={...current,version:costVersion,questions:current.questions.slice(0,13)};
+  const attempt=newAttempt(oldDefinition,'practice',1000);
+  for(const q of oldDefinition.questions)attempt.answers[q.id]=q.answer;
+  const graded=gradeAttempt(oldDefinition,attempt,2000);
+  const backup={...emptyData(),assessments:{[current.id]:[graded]}};
+  const restored=validateData(JSON.parse(JSON.stringify(backup))).assessments[current.id]![0]!;
+  assert.equal(restored.score,13);
+  assert.equal(restored.version,costVersion);
+  assert.ok(!compatibleAttempt(current,restored));
+  assert.ok(compatibleAttempt(oldDefinition,restored));
+  for(const a of revised.filter(a=>a.kind==='lesson')){
+    const last=a.questions.at(-1)!;
+    assert.equal(a.questions.length,13);
+    assert.ok(isCorrect(last,last.accepted![0]!.replace(/\d/g,d=>String.fromCharCode(d.charCodeAt(0)+0xFEE0))));
+    assert.ok(!isCorrect(last,''));
+  }
 });

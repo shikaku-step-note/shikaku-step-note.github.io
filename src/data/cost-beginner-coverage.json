@@ -56,7 +56,8 @@
       "cb2-purpose#objective-2"
     ],
     "workedExamples": [
-      "cb2-purpose#worked-2"
+      "cb2-purpose#worked-2",
+      "cb2-purpose#cost-timing-bridge"
     ],
     "independentQuestionIds": [
       "cb2-purpose-q05",
@@ -131,16 +132,19 @@
       "cb2-departments#objective-1"
     ],
     "workedExamples": [
-      "cb2-departments#worked-1"
+      "cb2-departments#worked-1",
+      "cb2-departments#responsibility-bridge"
     ],
     "independentQuestionIds": [
       "cb2-departments-q01",
       "cb2-departments-q02",
       "cb2-departments-q03",
-      "cb2-departments-q04"
+      "cb2-departments-q04",
+      "cb2-departments-q13"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-1-r10"
+      "cb2-unit-1-r10",
+      "cb2-unit-1-r15"
     ],
     "lessons": [
       "cb2-departments"
@@ -239,13 +243,15 @@
       "cb2-traceability#objective-1"
     ],
     "workedExamples": [
-      "cb2-traceability#worked-1"
+      "cb2-traceability#worked-1",
+      "cb2-traceability#worked-trace-documents"
     ],
     "independentQuestionIds": [
       "cb2-traceability-q01",
       "cb2-traceability-q02",
       "cb2-traceability-q03",
-      "cb2-traceability-q04"
+      "cb2-traceability-q04",
+      "cb2-traceability-q13"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-1-r07"
@@ -312,13 +318,15 @@
       "cb2-elements#objective-2"
     ],
     "workedExamples": [
-      "cb2-elements#worked-2"
+      "cb2-elements#worked-2",
+      "cb2-elements#worked-activity-profit"
     ],
     "independentQuestionIds": [
       "cb2-elements-q05",
       "cb2-elements-q06",
       "cb2-elements-q07",
-      "cb2-elements-q08"
+      "cb2-elements-q08",
+      "cb2-elements-q13"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-1-r05"
@@ -333,7 +341,8 @@
     "officialSection": "1(4)",
     "competency": "売上総利益と営業利益の算出範囲を区別する",
     "proposedLessons": [
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-purpose"
     ],
     "existingLessons": [
       "cb-inventory"
@@ -345,22 +354,27 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-pnl#objective-2"
+      "cb2-pnl#objective-2",
+      "cb2-purpose#cost-timing-bridge"
     ],
     "workedExamples": [
-      "cb2-pnl#worked-2"
+      "cb2-pnl#worked-2",
+      "cb2-purpose#cost-timing-bridge"
     ],
     "independentQuestionIds": [
       "cb2-pnl-q05",
       "cb2-pnl-q06",
       "cb2-pnl-q07",
-      "cb2-pnl-q08"
+      "cb2-pnl-q08",
+      "cb2-purpose-q13"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-3-r08"
+      "cb2-unit-3-r08",
+      "cb2-unit-1-r14"
     ],
     "lessons": [
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-purpose"
     ]
   },
   {

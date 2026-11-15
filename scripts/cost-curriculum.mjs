@@ -1,4 +1,4 @@
-import { costGroups, costVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
+import { costGroups, costVersion, costUnitOneAssessmentVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
 import coverage from '../src/data/cost-beginner-coverage.json' with {type:'json'};
 
 export function costCurriculum(rows) {
@@ -7,7 +7,7 @@ export function costCurriculum(rows) {
     '日商原価計算初級 学習ツリー・スケジュール',
     '対象：原価計算初級の現行公式範囲の全3領域。簿記初級・簿記1〜3級は別の試験区分。',
     `範囲：2018年度からの現行版。2026年度と、公表済み2027年度の案内でも変更なし。公式資料確認：${costReviewed}`,
-    `教材・評価版：${costVersion}`,
+    `教材・評価版：${costVersion}／ユニット1の理解度・総合確認：${costUnitOneAssessmentVersion}`,
     '前提：割合と四則計算。会計の専門知識は必要なところで補い、紙と電卓を使います。',
     '', '学習時間の目安（当サイトの見積り。実測や公式の推奨時間ではありません）',
     `本文・例題・理解度チェック：${workload.lessonMinutes}分`,

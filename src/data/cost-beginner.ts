@@ -8,6 +8,7 @@ import sources from '../../docs/cost-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
 export const costVersion = plan.version;
+export const costUnitOneAssessmentVersion = 'cost-2026-unit-1-v3';
 export const costReviewed = plan.reviewed;
 export const costSources = sources.sources;
 export const costGroups = plan.units.map(unit => unit.title);
@@ -65,6 +66,7 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
     lessonTitles:Object.fromEntries(allRows.map(lesson=>[lesson.data.stableId,lesson.data.title]))};
   const result:Assessment[]=rows.map(lesson=>({...base,id:`${lesson.data.stableId}-check`,
     title:`${lesson.data.title}：理解度チェック`,kind:'lesson',unit:lesson.data.unit,
+    version:lesson.data.unit===1?costUnitOneAssessmentVersion:costVersion,
     questions:costBank[lesson.data.stableId]??[],
     instructions:'条件を読み、計算の途中や判断の理由も紙に書いて確かめます。理解度チェックの結果は、ページの学習済み状態とは別に保存します。'}));
   const terms=[...new Map(rows.flatMap(lesson=>lesson.data.glossary.map(term=>[term.term,{...term,lesson:lesson.data.stableId}] as const))).values()];
@@ -87,6 +89,7 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
       questions:questions.filter((_,n)=>unitTerms.has(terms[n]!.term)),
       instructions:'用語の定義から選ぶ確認です。計算や条件の判断は、単元の総合確認でも確かめてください。'});
     result.push({...base,id:`cost-beginner-unit-${unit}-review`,title:`原価計算初級・${title} 総合確認`,kind:'review',unit,
+      version:unit===1?costUnitOneAssessmentVersion:costVersion,
       questions:costReviewBank[`unit-${unit}`]??[],instructions:'レッスン末の問題とは別の条件で、考え方と計算の手順を確かめる問題です。解説から必要なレッスンへ戻れます。'});
   }
   result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',questions,

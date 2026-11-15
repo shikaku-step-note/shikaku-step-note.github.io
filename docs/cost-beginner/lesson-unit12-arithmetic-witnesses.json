@@ -223,5 +223,25 @@
     "id": "cb2-cost-flow-q12",
     "formula": "130000-45000",
     "value": 85000
+  },
+  {
+    "id": "cb2-purpose-q13",
+    "formula": "50 * (1050 - 56000 / 80) - 6000",
+    "value": 11500
+  },
+  {
+    "id": "cb2-elements-q13",
+    "formula": "18000 + 0 * (12000 + 8000)",
+    "value": 18000
+  },
+  {
+    "id": "cb2-traceability-q13",
+    "formula": "24000 + 15000 * 12 / (12 + 8)",
+    "value": 33000
+  },
+  {
+    "id": "cb2-departments-q13",
+    "formula": "120000 / 2 - 120000 * 45 / 100",
+    "value": 6000
   }
 ]

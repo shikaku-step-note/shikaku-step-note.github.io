@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="424" viewBox="0 0 432 424">
+<rect width="432" height="424" rx="22" fill="#eef7f6"/>
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="16" y="16" width="400" height="104" rx="14" fill="#fff" stroke="#559794" stroke-width="2"/>
+<text x="216" y="47" fill="#142c45" font-size="23" font-weight="700">材料在庫</text>
+<text x="216" y="75" fill="#125650" font-size="19" font-weight="700">使用した分だけ製造へ</text>
+<text x="216" y="102" fill="#263949" font-size="17">未使用分は在庫に残る</text>
+<path d="M216 127v23m-7-8 7 8 7-8" fill="none" stroke="#12675d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="16" y="160" width="400" height="104" rx="14" fill="#fff" stroke="#559794" stroke-width="2"/>
+<text x="216" y="191" fill="#142c45" font-size="23" font-weight="700">製品在庫</text>
+<text x="216" y="219" fill="#125650" font-size="19" font-weight="700">販売した分だけ費用へ</text>
+<text x="216" y="246" fill="#263949" font-size="17">作っただけでは売上原価にならない</text>
+<path d="M216 271v23m-7-8 7 8 7-8" fill="none" stroke="#12675d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="16" y="304" width="400" height="104" rx="14" fill="#fff" stroke="#559794" stroke-width="2"/>
+<text x="216" y="335" fill="#142c45" font-size="23" font-weight="700">売上原価</text>
+<text x="216" y="363" fill="#125650" font-size="19" font-weight="700">売上高と対応させる</text>
+<text x="216" y="390" fill="#263949" font-size="17">売上高 − 売上原価 ＝ 売上総利益</text>
+</g>
+</svg>
