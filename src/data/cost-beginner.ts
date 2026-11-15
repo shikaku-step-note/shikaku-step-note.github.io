@@ -1,5 +1,7 @@
 import plan from './cost-beginner-plan.json';
 import unit12 from './cost-beginner-unit12-questions.json';
+import unitOneSteps from './cost-beginner-unit1-standalone-questions.json';
+import unitOneReviewMaterial from './cost-beginner-unit1-material.json';
 import unit3 from './cost-beginner-unit3-questions.json';
 import unit45 from './cost-beginner-unit45-questions.json';
 import reviews from './cost-beginner-reviews.json';
@@ -9,6 +11,7 @@ import sources from '../../docs/cost-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
 export const costVersion = plan.version;
+export const costUnitOneExpandedVersion = 'cost-2026-unit-1-v4';
 export const costUnitOneAssessmentVersion = 'cost-2026-unit-1-v3';
 export const costUnitTwoAssessmentVersion = 'cost-2026-unit-2-v3';
 const revisedUnitVersions: Partial<Record<number, string>> = {
@@ -20,7 +23,8 @@ export const costSources = sources.sources;
 export const costGroups = plan.units.map(unit => unit.title);
 export const costLessonIds = plan.units.flatMap(unit => unit.lessons);
 export const costLegacyIds = plan.legacyLessonIds;
-export const costBank = { ...unit12, ...unit3, ...unit45 } as Record<string, Question[]>;
+const addedUnitOneIds = new Set(Object.keys(unitOneSteps));
+export const costBank = { ...unit12, ...unitOneSteps, ...unit3, ...unit45 } as Record<string, Question[]>;
 export const costReviewBank = reviews as Record<string, Question[]>;
 export const costMockBank = mocks;
 export const costReviewCount = () => Object.entries(costReviewBank)
@@ -72,13 +76,21 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
     lessonTitles:Object.fromEntries(allRows.map(lesson=>[lesson.data.stableId,lesson.data.title]))};
   const result:Assessment[]=rows.map(lesson=>({...base,id:`${lesson.data.stableId}-check`,
     title:`${lesson.data.title}：理解度チェック`,kind:'lesson',unit:lesson.data.unit,
-    version:revisedUnitVersions[lesson.data.unit??0]??costVersion,
+    version:addedUnitOneIds.has(lesson.data.stableId) ? costUnitOneExpandedVersion :
+      revisedUnitVersions[lesson.data.unit??0]??costVersion,
     questions:costBank[lesson.data.stableId]??[],
     instructions:'条件を読み、計算の途中や判断の理由も紙に書いて確かめます。理解度チェックの結果は、ページの学習済み状態とは別に保存します。'}));
-  const terms=[...new Map(rows.flatMap(lesson=>lesson.data.glossary.map(term=>[term.term,{...term,lesson:lesson.data.stableId}] as const))).values()];
+  const glossary = (selection: Lesson[]) => new Map(selection.flatMap(lesson =>
+    lesson.data.glossary.map(term=>[term.term,{...term,lesson:lesson.data.stableId}] as const)));
+  // Preserve each existing term's answer positions for the other units.
+  const baseGlossary=glossary(rows.filter(lesson=>!addedUnitOneIds.has(lesson.data.stableId)));
+  const existingTerms=[...baseGlossary.values()];
+  const additionalTerms=[...glossary(rows.filter(lesson=>addedUnitOneIds.has(lesson.data.stableId))).values()]
+    .filter(term=>!baseGlossary.has(term.term));
+  const terms=[...existingTerms,...additionalTerms];
   const definition=(text:string)=>text.replace(/[。．.]+$/,'');
   const questions=terms.map((term,index):Question=>{
-    const alternatives=terms.filter(candidate=>candidate.term!==term.term &&
+    const alternatives=existingTerms.filter(candidate=>candidate.term!==term.term &&
       !overlappingTerms.some(group=>group.includes(term.term)&&group.includes(candidate.term)));
     const start=index%Math.max(1,alternatives.length-2);
     const wrong=alternatives.slice(start,start+3);
@@ -92,14 +104,15 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
     const unit=index+1;
     const unitTerms=new Set(rows.filter(lesson=>lesson.data.unit===unit).flatMap(lesson=>lesson.data.glossary.map(term=>term.term)));
     result.push({...base,id:`cost-beginner-unit-${unit}-glossary`,title:`原価計算初級・${title} 用語確認`,kind:'glossary',unit,
+      version:unit===1?costUnitOneExpandedVersion:costVersion,
       questions:questions.filter((_,n)=>unitTerms.has(terms[n]!.term)),
       instructions:'用語の定義から選ぶ確認です。計算や条件の判断は、単元の総合確認でも確かめてください。'});
     result.push({...base,id:`cost-beginner-unit-${unit}-review`,title:`原価計算初級・${title} 総合確認`,kind:'review',unit,
-      version:revisedUnitVersions[unit]??costVersion,
-      materials:unit===2?[unitTwoReviewMaterial]:undefined,
+      version:unit===1?costUnitOneExpandedVersion:revisedUnitVersions[unit]??costVersion,
+      materials:unit===1?[unitOneReviewMaterial]:unit===2?[unitTwoReviewMaterial]:undefined,
       questions:costReviewBank[`unit-${unit}`]??[],instructions:'レッスン末の問題とは別の条件で、考え方と計算の手順を確かめる問題です。解説から必要なレッスンへ戻れます。'});
   }
-  result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',questions,
+  result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',version:costUnitOneExpandedVersion,questions,
     instructions:'ユニットの用語問題を再利用する総復習です。計算や適用力の確認とは分けて使います。'});
   result.push({...base,id:'cost-beginner-review-all',title:'原価計算初級 総合復習',kind:'review',questions:costReviewBank.all??[],
     instructions:'分野をまたいで条件を読み取り、方法を選ぶ練習です。誤った問題は、途中の計算や判断を確認してから解き直してください。'});

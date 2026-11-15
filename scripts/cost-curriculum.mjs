@@ -1,4 +1,4 @@
-import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitTwoAssessmentVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
+import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitTwoAssessmentVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
 import coverage from '../src/data/cost-beginner-coverage.json' with {type:'json'};
 
 export function costCurriculum(rows) {
@@ -7,7 +7,7 @@ export function costCurriculum(rows) {
     '日商原価計算初級 学習ツリー・スケジュール',
     '対象：原価計算初級の現行公式範囲の全3領域。簿記初級・簿記1〜3級は別の試験区分。',
     `範囲：2018年度からの現行版。2026年度と、公表済み2027年度の案内でも変更なし。公式資料確認：${costReviewed}`,
-    `教材・評価版：${costVersion}／ユニット1の理解度・総合確認：${costUnitOneAssessmentVersion}／ユニット2の理解度・総合確認：${costUnitTwoAssessmentVersion}`,
+    `教材・評価版：${costVersion}／ユニット1の既存章の理解度：${costUnitOneAssessmentVersion}／ユニット1の新章・総合・用語確認：${costUnitOneExpandedVersion}／ユニット2の理解度・総合確認：${costUnitTwoAssessmentVersion}`,
     '前提：割合と四則計算。会計の専門知識は必要なところで補い、紙と電卓を使います。',
     '', '学習時間の目安（当サイトの見積り。実測や公式の推奨時間ではありません）',
     `本文・例題・理解度チェック：${workload.lessonMinutes}分`,
@@ -34,6 +34,7 @@ export function costCurriculum(rows) {
     lines.push(`    [cost-beginner-unit-${unit}-glossary] 用語確認`,
       `    [cost-beginner-unit-${unit}-review] 独自の総合確認 ${costReviewBank[`unit-${unit}`]?.length??0}問`,
       '    復習の節目：正答だけでなく、資料の読み方・計算の意味・検算を説明できるか確認。');
+    if(unit===1)lines.push('    練習順：原価対象と材料消費 → 費目・直間・責任 → 収益との対応・二段階の利益 → 工房の複合問題と総合確認。');
     if(unit===2)lines.push('    練習順：基本は材料の受払と作業時間の読み方 → 標準は直課・配賦と原価の振替 → 応用は工房の共通資料から月末残高と販売分の仕訳へ。');
   }
   lines.push('', '総復習と模試',

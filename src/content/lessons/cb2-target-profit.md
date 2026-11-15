@@ -4,7 +4,7 @@
   "qualification": "cost-beginner",
   "title": "目標利益を得る数量・売価・費用を逆算し、計画を検算する",
   "description": "固定費と目標利益を貢献利益でまかなう考え方から、必要数量・売上高・売価・費用の上限を導きます。端数と計画の前提も確認します。",
-  "order": 17,
+  "order": 21,
   "unit": 4,
   "minutes": 80,
   "sample": false,

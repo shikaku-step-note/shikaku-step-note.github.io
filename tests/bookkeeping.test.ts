@@ -33,10 +33,10 @@ const lessons = entries.filter(
 const tests = bokiAssessments(entries);
 const mock = tests.find((a) => a.id === 'boki-2-mock')!;
 test('five bookkeeping tracks have substantive lessons, distinct identifiers and honest source coverage', () => {
-  assert.equal(lessons.length, 128);
+  assert.equal(lessons.length, 132);
   assert.deepEqual(
     bokiCourses.map((c) => lessons.filter((l) => l.data.qualification === c.id).length),
-    [27, 22, 55, 10, 14],
+    [27, 26, 55, 10, 14],
   );
   assert.equal(new Set(entries.map((l) => l.data.stableId)).size, entries.length);
   for (const c of bokiCourses) {
@@ -98,7 +98,7 @@ test('all lesson, glossary, review and mock questions are valid and link to thei
       }
     }
   }
-  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 136);
+  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 140);
   assert.equal(tests.filter((a) => a.kind === 'glossary').length, 27);
   assert.equal(tests.filter((a) => a.kind === 'review').length, 30);
 });

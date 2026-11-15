@@ -40,7 +40,8 @@
     "competency": "購入・支出・消費・売上原価化の時点を区別する",
     "proposedLessons": [
       "cb2-purpose",
-      "cb2-cost-flow"
+      "cb2-cost-flow",
+      "cb2-material-use"
     ],
     "existingLessons": [
       "cb-classify",
@@ -53,24 +54,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-purpose#objective-2"
+      "cb2-purpose#objective-2",
+      "cb2-material-use#objective-1"
     ],
     "workedExamples": [
       "cb2-purpose#worked-2",
-      "cb2-purpose#cost-timing-bridge"
+      "cb2-purpose#cost-timing-bridge",
+      "cb2-material-use#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-purpose-q05",
       "cb2-purpose-q06",
       "cb2-purpose-q07",
-      "cb2-purpose-q08"
+      "cb2-purpose-q08",
+      "cb2-material-use-q01",
+      "cb2-material-use-q03",
+      "cb2-material-use-q06"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-1-r02"
+      "cb2-unit-1-r02",
+      "cb2-unit-1-r16"
     ],
     "lessons": [
       "cb2-purpose",
-      "cb2-cost-flow"
+      "cb2-cost-flow",
+      "cb2-material-use"
     ]
   },
   {
@@ -117,7 +125,8 @@
     "officialSection": "1(2)",
     "competency": "部門・活動の把握と責任者の管理対象を区別する",
     "proposedLessons": [
-      "cb2-departments"
+      "cb2-departments",
+      "cb2-classification-case"
     ],
     "existingLessons": [
       "cb-classify"
@@ -129,25 +138,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-departments#objective-1"
+      "cb2-departments#objective-1",
+      "cb2-classification-case#objective-3"
     ],
     "workedExamples": [
       "cb2-departments#worked-1",
-      "cb2-departments#responsibility-bridge"
+      "cb2-departments#responsibility-bridge",
+      "cb2-classification-case#worked-3"
     ],
     "independentQuestionIds": [
       "cb2-departments-q01",
       "cb2-departments-q02",
       "cb2-departments-q03",
       "cb2-departments-q04",
-      "cb2-departments-q13"
+      "cb2-departments-q13",
+      "cb2-classification-case-q05",
+      "cb2-classification-case-q06"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-1-r10",
-      "cb2-unit-1-r15"
+      "cb2-unit-1-r15",
+      "cb2-unit-1-r19"
     ],
     "lessons": [
-      "cb2-departments"
+      "cb2-departments",
+      "cb2-classification-case"
     ]
   },
   {
@@ -156,7 +171,8 @@
     "competency": "同じ製品・サービスの収益と原価を対応させる",
     "proposedLessons": [
       "cb2-departments",
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-matched-revenue"
     ],
     "existingLessons": [
       "cb-classify",
@@ -169,23 +185,30 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-departments#objective-3"
+      "cb2-departments#objective-3",
+      "cb2-matched-revenue#objective-2"
     ],
     "workedExamples": [
-      "cb2-departments#worked-3"
+      "cb2-departments#worked-3",
+      "cb2-matched-revenue#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-departments-q09",
       "cb2-departments-q10",
       "cb2-departments-q11",
-      "cb2-departments-q12"
+      "cb2-departments-q12",
+      "cb2-matched-revenue-q02",
+      "cb2-matched-revenue-q03",
+      "cb2-matched-revenue-q05"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-1-r13"
+      "cb2-unit-1-r13",
+      "cb2-unit-1-r17"
     ],
     "lessons": [
       "cb2-departments",
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-matched-revenue"
     ]
   },
   {
@@ -266,7 +289,8 @@
     "competency": "費目と直接・間接の二つの分類軸を組み合わせる",
     "proposedLessons": [
       "cb2-elements",
-      "cb2-traceability"
+      "cb2-traceability",
+      "cb2-classification-case"
     ],
     "existingLessons": [
       "cb-classify"
@@ -278,23 +302,29 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-traceability#objective-2"
+      "cb2-traceability#objective-2",
+      "cb2-classification-case#objective-1"
     ],
     "workedExamples": [
-      "cb2-traceability#worked-2"
+      "cb2-traceability#worked-2",
+      "cb2-classification-case#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-traceability-q05",
       "cb2-traceability-q06",
       "cb2-traceability-q07",
-      "cb2-traceability-q08"
+      "cb2-traceability-q08",
+      "cb2-classification-case-q01",
+      "cb2-classification-case-q02"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-1-r08"
+      "cb2-unit-1-r08",
+      "cb2-unit-1-r19"
     ],
     "lessons": [
       "cb2-elements",
-      "cb2-traceability"
+      "cb2-traceability",
+      "cb2-classification-case"
     ]
   },
   {
@@ -303,7 +333,8 @@
     "competency": "製造原価と販売費・一般管理費の目的を区別する",
     "proposedLessons": [
       "cb2-elements",
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-profit-boundary"
     ],
     "existingLessons": [
       "cb-classify"
@@ -315,25 +346,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-elements#objective-2"
+      "cb2-elements#objective-2",
+      "cb2-profit-boundary#objective-1"
     ],
     "workedExamples": [
       "cb2-elements#worked-2",
-      "cb2-elements#worked-activity-profit"
+      "cb2-elements#worked-activity-profit",
+      "cb2-profit-boundary#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-elements-q05",
       "cb2-elements-q06",
       "cb2-elements-q07",
       "cb2-elements-q08",
-      "cb2-elements-q13"
+      "cb2-elements-q13",
+      "cb2-profit-boundary-q01",
+      "cb2-profit-boundary-q02"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-1-r05"
+      "cb2-unit-1-r05",
+      "cb2-unit-1-r18"
     ],
     "lessons": [
       "cb2-elements",
-      "cb2-pnl"
+      "cb2-pnl",
+      "cb2-profit-boundary"
     ]
   },
   {
@@ -342,7 +379,8 @@
     "competency": "売上総利益と営業利益の算出範囲を区別する",
     "proposedLessons": [
       "cb2-pnl",
-      "cb2-purpose"
+      "cb2-purpose",
+      "cb2-profit-boundary"
     ],
     "existingLessons": [
       "cb-inventory"
@@ -355,26 +393,34 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-pnl#objective-2",
-      "cb2-purpose#cost-timing-bridge"
+      "cb2-purpose#cost-timing-bridge",
+      "cb2-profit-boundary#objective-2"
     ],
     "workedExamples": [
       "cb2-pnl#worked-2",
-      "cb2-purpose#cost-timing-bridge"
+      "cb2-purpose#cost-timing-bridge",
+      "cb2-profit-boundary#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-pnl-q05",
       "cb2-pnl-q06",
       "cb2-pnl-q07",
       "cb2-pnl-q08",
-      "cb2-purpose-q13"
+      "cb2-purpose-q13",
+      "cb2-profit-boundary-q03",
+      "cb2-profit-boundary-q04",
+      "cb2-profit-boundary-q05",
+      "cb2-profit-boundary-q06"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r08",
-      "cb2-unit-1-r14"
+      "cb2-unit-1-r14",
+      "cb2-unit-1-r18"
     ],
     "lessons": [
       "cb2-pnl",
-      "cb2-purpose"
+      "cb2-purpose",
+      "cb2-profit-boundary"
     ]
   },
   {
@@ -539,7 +585,8 @@
     "competency": "直接費を対象へ直課し、共通費との二重集計を防ぐ",
     "proposedLessons": [
       "cb2-traceability",
-      "cb2-allocation"
+      "cb2-allocation",
+      "cb2-classification-case"
     ],
     "existingLessons": [
       "cb-allocate"
@@ -551,26 +598,32 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-traceability#objective-3"
+      "cb2-traceability#objective-3",
+      "cb2-classification-case#objective-2"
     ],
     "workedExamples": [
       "cb2-traceability#worked-3",
-      "cb2-allocation#allocation-source-evidence"
+      "cb2-allocation#allocation-source-evidence",
+      "cb2-classification-case#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-traceability-q09",
       "cb2-traceability-q10",
       "cb2-traceability-q11",
       "cb2-traceability-q12",
-      "cb2-allocation-q14"
+      "cb2-allocation-q14",
+      "cb2-classification-case-q03",
+      "cb2-classification-case-q04"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-1-r09",
-      "cb2-unit-2-r16"
+      "cb2-unit-2-r16",
+      "cb2-unit-1-r19"
     ],
     "lessons": [
       "cb2-traceability",
-      "cb2-allocation"
+      "cb2-allocation",
+      "cb2-classification-case"
     ]
   },
   {

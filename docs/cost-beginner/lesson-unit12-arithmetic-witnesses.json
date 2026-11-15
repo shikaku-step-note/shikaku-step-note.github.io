@@ -263,5 +263,55 @@
     "id": "cb2-cost-flow-q13",
     "formula": "18000 + (21000 + 98000 - 24000) - 19000",
     "value": 94000
+  },
+  {
+    "id": "cb2-material-use-q03",
+    "formula": "34+51-7-(45-8)-14",
+    "value": 27
+  },
+  {
+    "id": "cb2-material-use-q04",
+    "formula": "49-(23+52-5-18-9)",
+    "value": 6
+  },
+  {
+    "id": "cb2-material-use-q05",
+    "formula": "11*420",
+    "value": 4620
+  },
+  {
+    "id": "cb2-matched-revenue-q02",
+    "formula": "19000+25500-11800-14200",
+    "value": 18500
+  },
+  {
+    "id": "cb2-matched-revenue-q03",
+    "formula": "42000-23200",
+    "value": 18800
+  },
+  {
+    "id": "cb2-matched-revenue-q06",
+    "formula": "68000-37500",
+    "value": 30500
+  },
+  {
+    "id": "cb2-profit-boundary-q02",
+    "formula": "12400+9700",
+    "value": 22100
+  },
+  {
+    "id": "cb2-profit-boundary-q03",
+    "formula": "56*(1150-49000/70)-5200-2300",
+    "value": 17700
+  },
+  {
+    "id": "cb2-classification-case-q03",
+    "formula": "15000+30000",
+    "value": 45000
+  },
+  {
+    "id": "cb2-classification-case-q05",
+    "formula": "35*(2400-64000/50)-8000-9300",
+    "value": 21900
   }
 ]
