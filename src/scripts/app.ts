@@ -168,11 +168,21 @@ if ($('[data-search-form]')) {
       const data = await loadCatalog();
       if (version !== searchVersion) return;
       const tokens = query.split(' ');
-      const matches = data.filter(
-        (e) =>
-          !e.archived &&
-          tokens.every((t) => normalize([e.title, e.description, ...e.keywords].join(' ')).includes(t)),
-      );
+      const matches = data
+        .filter((entry) => !entry.archived)
+        .map((entry) => {
+          const title = normalize(entry.title);
+          const text = normalize([entry.title, entry.description, ...entry.keywords].join(' '));
+          return {
+            entry,
+            matches: tokens.every((token) => text.includes(token)),
+            titleHits: tokens.filter((token) => title.includes(token)).length,
+            exactTitle: title === query,
+          };
+        })
+        .filter((match) => match.matches)
+        .sort((a, b) => Number(b.exactTitle) - Number(a.exactTitle) || b.titleHits - a.titleHits)
+        .map((match) => match.entry);
       status.textContent = `「${input.value.trim()}」の検索結果：${matches.length}件`;
       for (const entry of matches) results.append(entryLink(entry));
       if (!matches.length) {

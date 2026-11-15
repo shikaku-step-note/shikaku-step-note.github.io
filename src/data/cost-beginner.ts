@@ -2,6 +2,7 @@ import plan from './cost-beginner-plan.json';
 import unit12 from './cost-beginner-unit12-questions.json';
 import unitOneSteps from './cost-beginner-unit1-standalone-questions.json';
 import unitOneReviewMaterial from './cost-beginner-unit1-material.json';
+import unitOneServiceMaterial from './cost-beginner-unit1-service-material.json';
 import unit3 from './cost-beginner-unit3-questions.json';
 import unit45 from './cost-beginner-unit45-questions.json';
 import reviews from './cost-beginner-reviews.json';
@@ -13,6 +14,7 @@ import type { Assessment, Question } from '../lib/assessment';
 export const costVersion = plan.version;
 export const costUnitOneGlossaryVersion = 'cost-2026-unit-1-glossary-v5';
 export const costUnitOneExpandedVersion = 'cost-2026-unit-1-v4';
+export const costUnitOneReviewVersion = 'cost-2026-unit-1-review-v5';
 export const costUnitOneAssessmentVersion = 'cost-2026-unit-1-v3';
 export const costUnitTwoAssessmentVersion = 'cost-2026-unit-2-v3';
 const revisedUnitVersions: Partial<Record<number, string>> = {
@@ -109,8 +111,8 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
       questions:questions.filter((_,n)=>unitTerms.has(terms[n]!.term)),
       instructions:'用語の定義から選ぶ確認です。計算や条件の判断は、単元の総合確認でも確かめてください。'});
     result.push({...base,id:`cost-beginner-unit-${unit}-review`,title:`原価計算初級・${title} 総合確認`,kind:'review',unit,
-      version:unit===1?costUnitOneExpandedVersion:revisedUnitVersions[unit]??costVersion,
-      materials:unit===1?[unitOneReviewMaterial]:unit===2?[unitTwoReviewMaterial]:undefined,
+      version:unit===1?costUnitOneReviewVersion:revisedUnitVersions[unit]??costVersion,
+      materials:unit===1?[unitOneReviewMaterial,unitOneServiceMaterial]:unit===2?[unitTwoReviewMaterial]:undefined,
       questions:costReviewBank[`unit-${unit}`]??[],instructions:'レッスン末の問題とは別の条件で、考え方と計算の手順を確かめる問題です。解説から必要なレッスンへ戻れます。'});
   }
   result.push({...base,id:'cost-beginner-terms-all',title:'原価計算初級 用語総復習',kind:'glossary',version:costUnitOneGlossaryVersion,questions,

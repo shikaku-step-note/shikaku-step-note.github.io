@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -100,8 +100,8 @@ test('root review and mock numeric targets agree with independently expressed fo
     const q=allQuestions.get(w.id)!;assert.ok(q,w.id);
     assert.ok(Math.abs(numeric(q.options[q.answer]!)-expected)<1e-8,w.id);
   }
-  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneExpandedVersion,costUnitTwoAssessmentVersion].includes(a.version)).flatMap(a=>a.questions);
-  assert.equal(reviews.length,104);assert.equal(new Set(reviews.map(q=>q.id)).size,104);
+  const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneReviewVersion,costUnitTwoAssessmentVersion].includes(a.version)).flatMap(a=>a.questions);
+  assert.equal(reviews.length,107);assert.equal(new Set(reviews.map(q=>q.id)).size,107);
 });
 
 test('mock inventory and profit vectors reconcile independently in both directions',()=>{
@@ -155,7 +155,7 @@ test('Unit 1 expansion gives new lessons separate records and preserves existing
   ]);
   assert.deepEqual(rows.map(row=>row.data.order),Array.from({length:26},(_,i)=>i+1));
   const updated=assessments.filter(a=>a.version===costUnitOneExpandedVersion);
-  assert.equal(updated.length,5);
+  assert.equal(updated.length,4);
   const revisedGlossaries=assessments.filter(a=>a.version===costUnitOneGlossaryVersion);
   assert.deepEqual(revisedGlossaries.map(a=>a.id),['cost-beginner-unit-1-glossary','cost-beginner-terms-all']);
   for(const a of revisedGlossaries)assert.ok(a.questions.some(q=>q.prompt.includes('現場在庫の増減')&&q.options[q.answer]==='正味消費量'));
@@ -164,8 +164,21 @@ test('Unit 1 expansion gives new lessons separate records and preserves existing
     assert.equal(a.questions.length,6);
     for (const n of [0,1,2]) assert.equal(a.questions.filter(q=>q.objectives?.includes(n)).length,2);
   }
-  const review=updated.find(a=>a.kind==='review')!;
-  assert.equal(review.questions.length,19);
+  const review=assessments.find(a=>a.id==='cost-beginner-unit-1-review')!;
+  assert.equal(review.version,costUnitOneReviewVersion);
+  assert.equal(review.questions.length,22);
+  const previousExpanded={...review,version:costUnitOneExpandedVersion,questions:review.questions.slice(0,19)};
+  assert.ok(!compatibleAttempt(review,newAttempt(previousExpanded,'practice',500)));
+  const caseItems=review.questions.slice(19);
+  assert.equal(caseItems.length,3);
+  assert.ok(caseItems.every(q=>q.materialIds?.[0]==='cb2-unit1-repair-shop'));
+  const direct=(4200+2800)+(3+2)*1600;
+  const difference=18000+14000-direct-3600-2400;
+  assert.equal(direct,15000);
+  assert.equal(difference,11000);
+  assert.match(caseItems[0]!.options[caseItems[0]!.answer]!,/32,000円、直接費15,000円/);
+  assert.match(caseItems[1]!.options[caseItems[1]!.answer]!,/直接材料費、作業は直接労務費/);
+  assert.match(caseItems[2]!.options[caseItems[2]!.answer]!,/11,000円。.*確定しない/);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
   const previous={...review,version:costUnitOneAssessmentVersion,questions:review.questions.slice(0,15)};
   const attempt=newAttempt(previous,'practice',1000);

@@ -100,7 +100,8 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-labor-expenses#objective-1"
+      "cb2-labor-expenses#objective-1",
+      "cb2-purpose#objective-2"
     ],
     "workedExamples": [
       "cb2-labor-expenses#worked-1"
@@ -190,7 +191,9 @@
     ],
     "workedExamples": [
       "cb2-departments#worked-3",
-      "cb2-matched-revenue#worked-2"
+      "cb2-matched-revenue#worked-2",
+      "cb2-matched-revenue#worked-match-month-boundary",
+      "cb2-matched-revenue#worked-match-missing-job"
     ],
     "independentQuestionIds": [
       "cb2-departments-q09",
@@ -203,7 +206,9 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-1-r13",
-      "cb2-unit-1-r17"
+      "cb2-unit-1-r17",
+      "cb2-unit-1-r20",
+      "cb2-unit-1-r22"
     ],
     "lessons": [
       "cb2-departments",
@@ -319,7 +324,8 @@
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-1-r08",
-      "cb2-unit-1-r19"
+      "cb2-unit-1-r19",
+      "cb2-unit-1-r21"
     ],
     "lessons": [
       "cb2-elements",
