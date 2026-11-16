@@ -20,12 +20,19 @@
       { 'term': '多要素認証', 'definition': '知識・所持・生体等の異なる種類の認証要素を組み合わせる方式。' },
       { 'term': '最小権限', 'definition': '業務に必要な最小限の権限だけを与える原則。' },
     ],
+  "inlineGlossary": [
+    {"id": "phishing", "term": "フィッシング"},
+    {"id": "waf", "term": "WAF"},
+    {"id": "multi-factor-authentication", "term": "多要素認証"},
+    {"id": "least-privilege", "term": "最小権限"},
+    {"id": "edr", "term": "EDR", "definition": "Endpoint Detection and Responseの略です。パソコンなどの端末の動きを記録し、不審な動きの検知、調査や対応を支援します。"}
+  ],
 }
 ---
 
 ## 人を狙う攻撃とマルウェア
 
-フィッシングは偽のサイトや連絡等へ誘導し情報を盗む手口です。標的型攻撃は特定の組織等を狙い、実在の業務を装うこともあります。ランサムウェアは暗号化や窃取等を通じて金銭を要求します。ボットは遠隔操作等に利用される不正プログラムの一種です。ソーシャルエンジニアリングは人の心理や行動を利用します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-phishing">フィッシング</a>は偽のサイトや連絡等へ誘導し情報を盗む手口です。標的型攻撃は特定の組織等を狙い、実在の業務を装うこともあります。ランサムウェアは暗号化や窃取等を通じて金銭を要求します。ボットは遠隔操作等に利用される不正プログラムの一種です。ソーシャルエンジニアリングは人の心理や行動を利用します。
 
 ## Webと通信への攻撃
 
@@ -33,7 +40,7 @@ SQLインジェクションは入力等からSQLの解釈を不正に変える�
 
 ## 対策を重ねる
 
-パッチ適用、不要なサービス停止、最小権限、ネットワーク分離、多要素認証、ログ監視、復旧可能なバックアップ等を組み合わせます。ファイアウォールは通信制御、WAFはWebアプリへの攻撃対策、IDSは侵入検知、IPSは防御、EDRは端末での検知・対応を支えます。どの製品も単独で全ての攻撃を防げるわけではありません。
+パッチ適用、不要なサービス停止、<a class="lesson-term" data-lesson-term href="#lesson-term-least-privilege">最小権限</a>、ネットワーク分離、<a class="lesson-term" data-lesson-term href="#lesson-term-multi-factor-authentication">多要素認証</a>、ログ監視、復旧可能なバックアップ等を組み合わせます。ファイアウォールは通信制御、<a class="lesson-term" data-lesson-term href="#lesson-term-waf">WAF</a>はWebアプリへの攻撃対策、IDSは侵入検知、IPSは防御、<a class="lesson-term" data-lesson-term href="#lesson-term-edr">EDR</a>は端末での検知・対応を支えます。どの製品も単独で全ての攻撃を防げるわけではありません。
 
 ## 認証と権限
 

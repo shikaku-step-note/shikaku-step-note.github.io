@@ -20,6 +20,13 @@
       { 'term': 'AND', 'definition': '二つの条件がともに真のときだけ真となる論理演算。' },
       { 'term': 'XOR', 'definition': '二つの条件のうち一方だけが真のとき真となる排他的論理和。' },
     ],
+  "inlineGlossary": [
+    {"id": "bit", "term": "ビット"},
+    {"id": "byte", "term": "バイト"},
+    {"id": "and", "term": "AND"},
+    {"id": "xor", "term": "XOR"},
+    {"id": "floating-point", "term": "浮動小数点", "definition": "数値を有効桁と指数などで表す方式です。広い範囲の値を扱えますが、表現できる桁数が限られるため丸め誤差が生じます。"}
+  ],
 }
 ---
 
@@ -29,11 +36,11 @@
 
 ## ビットとバイト
 
-1ビットは0か1の2通り、nビットは2のn乗通りを表せます。1バイトは8ビットです。符号なし8ビット整数なら0〜255の256通りになります。ビット数と最大値は同じではありません。単位のkを1,000とするか、Ki等の2進接頭語を使うかは問題文の条件を確認します。固定小数点と浮動小数点は数の表現法で、浮動小数点にも丸め誤差が生じます。
+1<a class="lesson-term" data-lesson-term href="#lesson-term-bit">ビット</a>は0か1の2通り、nビットは2のn乗通りを表せます。1<a class="lesson-term" data-lesson-term href="#lesson-term-byte">バイト</a>は8ビットです。符号なし8ビット整数なら0〜255の256通りになります。ビット数と最大値は同じではありません。単位のkを1,000とするか、Ki等の2進接頭語を使うかは問題文の条件を確認します。固定小数点と<a class="lesson-term" data-lesson-term href="#lesson-term-floating-point">浮動小数点</a>は数の表現法で、浮動小数点にも丸め誤差が生じます。
 
 ## 集合と論理
 
-ANDは両方が真、ORはいずれかが真、NOTは真偽の反転、XORは一方だけ真のとき真です。集合の共通部分はAND、和集合はORに対応します。ド・モルガンの法則では「AかつBではない」は「Aでない、またはBでない」と等価です。
+<a class="lesson-term" data-lesson-term href="#lesson-term-and">AND</a>は両方が真、ORはいずれかが真、NOTは真偽の反転、<a class="lesson-term" data-lesson-term href="#lesson-term-xor">XOR</a>は一方だけ真のとき真です。集合の共通部分はAND、和集合はORに対応します。ド・モルガンの法則では「AかつBではない」は「Aでない、またはBでない」と等価です。
 
 | A   | B   | A AND B | A OR B | A XOR B |
 | --- | --- | ------- | ------ | ------- |

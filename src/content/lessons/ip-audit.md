@@ -26,12 +26,20 @@
       { 'term': '内部統制', 'definition': '組織の目的達成のため、承認や照合などを組み込んだ仕組み。' },
       { 'term': '監査証拠', 'definition': '監査上の判断の根拠となる文書や記録、観察等の情報。' },
     ],
+  "inlineGlossary": [
+    {"id": "systems-audit", "term": "システム監査"},
+    {"id": "segregation-of-duties", "term": "職務分離"},
+    {"id": "internal-control", "term": "内部統制"},
+    {"id": "audit-evidence", "term": "監査証拠"},
+    {"id": "it-general-controls", "term": "IT全般統制", "definition": "システムの開発、変更、運用、アクセス管理など、複数の業務に共通するITの管理の仕組みです。"},
+    {"id": "it-application-controls", "term": "IT業務処理統制", "definition": "入力の妥当性や処理結果の照合など、個々の業務処理を正しく行うための仕組みです。"}
+  ],
 }
 ---
 
 ## 第三者の視点から確かめる
 
-システム監査では情報システムに関するリスクや統制等を、独立した立場から証拠に基づいて評価し、改善につなげます。監査人が自分の設計・運用を無批判に自己評価しても、客観性は十分に保てません。監査の対象、目的、基準、範囲を決め、文書、記録、観察、ヒアリング等から証拠を集めます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-systems-audit">システム監査</a>では情報システムに関するリスクや統制等を、独立した立場から<a class="lesson-term" data-lesson-term href="#lesson-term-audit-evidence">証拠</a>に基づいて評価し、改善につなげます。監査人が自分の設計・運用を無批判に自己評価しても、客観性は十分に保てません。監査の対象、目的、基準、範囲を決め、文書、記録、観察、ヒアリング等から証拠を集めます。
 
 ## 指摘から改善まで
 
@@ -39,7 +47,7 @@
 
 ## 内部統制は組織の仕組み
 
-内部統制は業務の有効性・効率性、報告の信頼性、法令等の遵守、資産の保全などの目的に向けた組織的な仕組みです。承認、照合、記録、職務分離、アクセス制限等が含まれます。IT全般統制は開発・変更・運用・アクセス等の基盤、IT業務処理統制は入力・処理・出力等の個別業務に着目します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-internal-control">内部統制</a>は業務の有効性・効率性、報告の信頼性、法令等の遵守、資産の保全などの目的に向けた組織的な仕組みです。承認、照合、記録、<a class="lesson-term" data-lesson-term href="#lesson-term-segregation-of-duties">職務分離</a>、アクセス制限等が含まれます。<a class="lesson-term" data-lesson-term href="#lesson-term-it-general-controls">IT全般統制</a>は開発・変更・運用・アクセス等の基盤、<a class="lesson-term" data-lesson-term href="#lesson-term-it-application-controls">IT業務処理統制</a>は入力・処理・出力等の個別業務に着目します。
 
 ## 例：支払処理の職務分離
 

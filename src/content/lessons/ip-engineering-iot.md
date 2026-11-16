@@ -23,20 +23,29 @@
         'definition': 'データが発生する機器の近くで処理し遅延や通信量などを抑える構成。',
       },
     ],
+  "inlineGlossary": [
+    {"id": "cad", "term": "CAD"},
+    {"id": "mrp", "term": "MRP"},
+    {"id": "sensor", "term": "センサ"},
+    {"id": "edge-computing", "term": "エッジコンピューティング"},
+    {"id": "bom", "term": "BOM", "definition": "部品表（Bill of Materials）です。製品を構成する部品と、それぞれに必要な数量を示します。"},
+    {"id": "actuator", "term": "アクチュエータ", "definition": "制御信号を受け、モーターを回す、弁を開くといった物理的な動きに変える機器です。"},
+    {"id": "digital-twin", "term": "デジタルツイン", "definition": "現実の設備などに対応するデジタルモデルを作り、観測データを反映して監視や検証に用いる考え方です。"}
+  ],
 }
 ---
 
 ## 設計から製造までをつなぐ
 
-CADは設計をコンピュータで支援し、CAEは解析やシミュレーション、CAMは製造工程の支援に関係します。BOMは製品に必要な部品と構成を示します。MRPは生産計画や在庫から必要な資材の量と時期を求めます。JITは必要な物を必要な時に必要な量だけ供給する考え方で、在庫を減らす一方、供給途絶への備えも必要です。
+<a class="lesson-term" data-lesson-term href="#lesson-term-cad">CAD</a>は設計をコンピュータで支援し、CAEは解析やシミュレーション、CAMは製造工程の支援に関係します。<a class="lesson-term" data-lesson-term href="#lesson-term-bom">BOM</a>は製品に必要な部品と構成を示します。<a class="lesson-term" data-lesson-term href="#lesson-term-mrp">MRP</a>は生産計画や在庫から必要な資材の量と時期を求めます。JITは必要な物を必要な時に必要な量だけ供給する考え方で、在庫を減らす一方、供給途絶への備えも必要です。
 
 ## IoTは物と情報を結ぶ
 
-IoTではセンサが温度や位置などを計測し、通信でデータを運び、処理結果をアクチュエータなどの動作に結び付けます。組込みシステムは製品や機器の機能を実現するシステムです。締切までに処理する必要があるリアルタイム性や、電力・メモリの制約を考えます。すべての処理をクラウドへ送るのではなく、エッジで処理すれば遅延や送信量を抑えられる場合があります。
+IoTでは<a class="lesson-term" data-lesson-term href="#lesson-term-sensor">センサ</a>が温度や位置などを計測し、通信でデータを運び、処理結果を<a class="lesson-term" data-lesson-term href="#lesson-term-actuator">アクチュエータ</a>などの動作に結び付けます。組込みシステムは製品や機器の機能を実現するシステムです。締切までに処理する必要があるリアルタイム性や、電力・メモリの制約を考えます。すべての処理をクラウドへ送るのではなく、<a class="lesson-term" data-lesson-term href="#lesson-term-edge-computing">エッジ</a>で処理すれば遅延や送信量を抑えられる場合があります。
 
 ## 現実の設備とモデル
 
-デジタルツインは現実の設備等をデジタル空間のモデルと対応させ、監視や検証に使う考え方です。モデルと現実のずれがあれば予測もずれます。スマートファクトリでは設備のデータを連携し、品質や稼働の改善に役立てます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-digital-twin">デジタルツイン</a>は現実の設備等をデジタル空間のモデルと対応させ、監視や検証に使う考え方です。モデルと現実のずれがあれば予測もずれます。スマートファクトリでは設備のデータを連携し、品質や稼働の改善に役立てます。
 
 ## 例：温室の温度管理
 

@@ -20,20 +20,28 @@
       { 'term': 'TCP', 'definition': '順序制御や再送等により信頼性のある転送を提供するプロトコル。' },
       { 'term': 'TLS', 'definition': '通信の暗号化や相手の認証、改ざん検出等を支えるプロトコル。' },
     ],
+  "inlineGlossary": [
+    {"id": "dns", "term": "DNS"},
+    {"id": "dhcp", "term": "DHCP"},
+    {"id": "tcp", "term": "TCP"},
+    {"id": "tls", "term": "TLS"},
+    {"id": "udp", "term": "UDP", "definition": "User Datagram Protocolの略です。接続を確立せずにデータを送り、到達や順序はプロトコル自体では保証しません。"},
+    {"id": "nat", "term": "NAT", "definition": "Network Address Translationの略です。通信の途中でIPアドレスを変換し、内部ネットワークと外部の間の通信などに用います。"}
+  ],
 }
 ---
 
 ## 通信の約束を階層に分ける
 
-プロトコルは通信の手順や形式などの約束です。TCP/IPでは役割を階層に分け、IPで宛先等に基づく転送、TCPで順序や再送等を伴う通信を行います。UDPはTCPのような接続管理や再送等を提供しない方式で、用途側で必要な制御を考えます。ポート番号は同じ端末内のサービス等を識別するために使います。
+プロトコルは通信の手順や形式などの約束です。<a class="lesson-term" data-lesson-term href="#lesson-term-tcp">TCP</a>/IPでは役割を階層に分け、IPで宛先等に基づく転送、TCPで順序や再送等を伴う通信を行います。<a class="lesson-term" data-lesson-term href="#lesson-term-udp">UDP</a>はTCPのような接続管理や再送等を提供しない方式で、用途側で必要な制御を考えます。ポート番号は同じ端末内のサービス等を識別するために使います。
 
 ## アドレスとネットワーク
 
-IPv4は32ビット、IPv6は128ビットのアドレスを用います。サブネットマスクはIPv4のネットワーク部分等を示します。プライベートアドレスを外部通信へ対応させるNAT等の仕組みがあります。DHCPはIPアドレスなどの設定情報を配布します。DNSはドメイン名からアドレス等の情報を調べる仕組みです。IPアドレスだけから利用者本人を常に一意に特定できるとは限りません。
+IPv4は32ビット、IPv6は128ビットのアドレスを用います。サブネットマスクはIPv4のネットワーク部分等を示します。プライベートアドレスを外部通信へ対応させる<a class="lesson-term" data-lesson-term href="#lesson-term-nat">NAT</a>等の仕組みがあります。<a class="lesson-term" data-lesson-term href="#lesson-term-dhcp">DHCP</a>はIPアドレスなどの設定情報を配布します。<a class="lesson-term" data-lesson-term href="#lesson-term-dns">DNS</a>はドメイン名からアドレス等の情報を調べる仕組みです。IPアドレスだけから利用者本人を常に一意に特定できるとは限りません。
 
 ## Webとメール
 
-HTTPはWebのデータ転送、HTTPSはTLS等により通信を保護するWeb接続です。TLSは暗号化、相手の認証、改ざん検出等を支えますが、接続先の内容や商取引の安全性を保証しません。SMTPはメールの転送、POPやIMAPは受信・参照の方式に関係します。FTPはファイル転送の方式ですが、認証情報等をどう保護するかを確認します。
+HTTPはWebのデータ転送、HTTPSは<a class="lesson-term" data-lesson-term href="#lesson-term-tls">TLS</a>等により通信を保護するWeb接続です。TLSは暗号化、相手の認証、改ざん検出等を支えますが、接続先の内容や商取引の安全性を保証しません。SMTPはメールの転送、POPやIMAPは受信・参照の方式に関係します。FTPはファイル転送の方式ですが、認証情報等をどう保護するかを確認します。
 
 ## 例：URLを開くまで
 

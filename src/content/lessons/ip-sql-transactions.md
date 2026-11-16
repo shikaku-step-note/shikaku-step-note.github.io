@@ -20,12 +20,20 @@
       { 'term': 'ROLLBACK', 'definition': 'トランザクションの更新を取り消す操作。' },
       { 'term': 'デッドロック', 'definition': '複数の処理が互いの資源の解放を待ち、進まなくなる状態。' },
     ],
+  "inlineGlossary": [
+    {"id": "transaction", "term": "トランザクション"},
+    {"id": "commit", "term": "COMMIT"},
+    {"id": "rollback", "term": "ROLLBACK"},
+    {"id": "deadlock", "term": "デッドロック"},
+    {"id": "acid", "term": "ACID", "definition": "トランザクションを扱う際の四つの性質です。原子性・一貫性・独立性・永続性の英語表記の頭文字を取っています。"},
+    {"id": "projection", "term": "射影", "definition": "関係データベースの表から必要な列を取り出す操作です。条件に合う行を取り出す選択と区別します。"}
+  ],
 }
 ---
 
 ## 必要なデータを取り出す
 
-SQLではSELECTで列、FROMで対象、WHEREで条件を指定します。ORDER BYは並べ替え、GROUP BYはグループ化、HAVINGはグループに対する条件に使います。COUNT、SUM、AVGなどで集計します。NULLは値がない・不明等を表し、通常の等号でなくIS NULLなどで判定します。選択は行を絞り、射影は列を選び、結合は表を関連付けます。
+SQLではSELECTで列、FROMで対象、WHEREで条件を指定します。ORDER BYは並べ替え、GROUP BYはグループ化、HAVINGはグループに対する条件に使います。COUNT、SUM、AVGなどで集計します。NULLは値がない・不明等を表し、通常の等号でなくIS NULLなどで判定します。選択は行を絞り、<a class="lesson-term" data-lesson-term href="#lesson-term-projection">射影</a>は列を選び、結合は表を関連付けます。
 
 ## 例：在庫数を合計する
 
@@ -33,11 +41,11 @@ SQLではSELECTで列、FROMで対象、WHEREで条件を指定します。ORDER
 
 ## ひとまとまりの処理
 
-トランザクションは一体として扱う処理単位です。原子性は全部成功か全部取り消しか、一貫性は整合した状態を保つこと、独立性は同時実行の影響を制御すること、永続性は確定した結果を保持することです。これらをACIDと呼びます。COMMITは確定、ROLLBACKは取消しに使います。
+<a class="lesson-term" data-lesson-term href="#lesson-term-transaction">トランザクション</a>は一体として扱う処理単位です。原子性は全部成功か全部取り消しか、一貫性は整合した状態を保つこと、独立性は同時実行の影響を制御すること、永続性は確定した結果を保持することです。これらを<a class="lesson-term" data-lesson-term href="#lesson-term-acid">ACID</a>と呼びます。<a class="lesson-term" data-lesson-term href="#lesson-term-commit">COMMIT</a>は確定、<a class="lesson-term" data-lesson-term href="#lesson-term-rollback">ROLLBACK</a>は取消しに使います。
 
 ## 例：口座間の振替
 
-A口座から1,000円を引き、B口座へ1,000円を加える途中で故障した場合、片方だけの更新を残さないようにします。同時更新にはロック等を使いますが、互いの資源を待つデッドロックが起こる場合があります。ログ、バックアップ、復旧の方式も重要です。可用性を高める複製と、誤更新からの復旧を混同しないようにします。
+A口座から1,000円を引き、B口座へ1,000円を加える途中で故障した場合、片方だけの更新を残さないようにします。同時更新にはロック等を使いますが、互いの資源を待つ<a class="lesson-term" data-lesson-term href="#lesson-term-deadlock">デッドロック</a>が起こる場合があります。ログ、バックアップ、復旧の方式も重要です。可用性を高める複製と、誤更新からの復旧を混同しないようにします。
 
 ## まとめ
 

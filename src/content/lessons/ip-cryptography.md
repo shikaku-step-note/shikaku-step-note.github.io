@@ -23,20 +23,28 @@
       },
       { 'term': '認証局', 'definition': '公開鍵と主体の対応等を示す証明書を発行する機関。' },
     ],
+  "inlineGlossary": [
+    {"id": "symmetric-key-cryptography", "term": "共通鍵暗号"},
+    {"id": "public-key-cryptography", "term": "公開鍵暗号"},
+    {"id": "digital-signature", "term": "電子署名"},
+    {"id": "certificate-authority", "term": "認証局"},
+    {"id": "hash-function", "term": "ハッシュ関数", "definition": "データから一定の長さの値を計算する関数です。暗号学的なハッシュは、データが変わっていないかを確かめる用途などに使います。"},
+    {"id": "pki", "term": "PKI", "definition": "公開鍵基盤（Public Key Infrastructure）です。電子証明書の発行や失効の確認などを通じ、公開鍵を信頼して使うための仕組みです。"}
+  ],
 }
 ---
 
 ## 暗号は鍵と目的を分けて考える
 
-共通鍵暗号は暗号化と復号に同じ鍵を使い、多量のデータを効率的に処理する用途等に適します。鍵をどう安全に共有するかが課題です。公開鍵暗号では対になる公開鍵と秘密鍵を使います。受信者だけが読めるよう送るときは受信者の公開鍵で暗号化し、受信者が秘密鍵で復号します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-symmetric-key-cryptography">共通鍵暗号</a>は暗号化と復号に同じ鍵を使い、多量のデータを効率的に処理する用途等に適します。鍵をどう安全に共有するかが課題です。<a class="lesson-term" data-lesson-term href="#lesson-term-public-key-cryptography">公開鍵暗号</a>では対になる公開鍵と秘密鍵を使います。受信者だけが読めるよう送るときは受信者の公開鍵で暗号化し、受信者が秘密鍵で復号します。
 
 ## ハッシュは復号するための暗号ではない
 
-ハッシュ関数は入力から一定長の値を求めます。入力が変わると値も変わる性質等を利用し、改ざん検出などへ使います。原文を復元する仕組みではありません。パスワードの保存では、適切な専用関数やソルト等も必要で、単に速いハッシュを1回使えば十分とは限りません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-hash-function">ハッシュ関数</a>は入力から一定長の値を求めます。入力が変わると値も変わる性質等を利用し、改ざん検出などへ使います。原文を復元する仕組みではありません。パスワードの保存では、適切な専用関数やソルト等も必要で、単に速いハッシュを1回使えば十分とは限りません。
 
 ## 電子署名と公開鍵の確認
 
-電子署名では送信者の秘密鍵を用いた署名を、対応する公開鍵で検証します。送信者の確認や改ざん検出等を支えますが、本文を秘密にする暗号化とは目的が異なります。証明書は公開鍵と主体の対応などを認証局が示す仕組みです。期限、失効、信頼する認証局等も確認します。PKIはこのような公開鍵の利用を支える基盤です。
+<a class="lesson-term" data-lesson-term href="#lesson-term-digital-signature">電子署名</a>では送信者の秘密鍵を用いた署名を、対応する公開鍵で検証します。送信者の確認や改ざん検出等を支えますが、本文を秘密にする暗号化とは目的が異なります。証明書は公開鍵と主体の対応などを<a class="lesson-term" data-lesson-term href="#lesson-term-certificate-authority">認証局</a>が示す仕組みです。期限、失効、信頼する認証局等も確認します。<a class="lesson-term" data-lesson-term href="#lesson-term-pki">PKI</a>はこのような公開鍵の利用を支える基盤です。
 
 ## 例：契約書を安全に送る
 

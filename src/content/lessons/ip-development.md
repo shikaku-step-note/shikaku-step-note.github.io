@@ -20,6 +20,14 @@
       { 'term': '境界値分析', 'definition': '有効・無効の境界付近の値を選んで調べるテストの考え方。' },
       { 'term': '構成管理', 'definition': '成果物の版や変更の関係を管理し再現可能にする活動。' },
     ],
+  "inlineGlossary": [
+    {"id": "unit-test", "term": "単体テスト"},
+    {"id": "regression-test", "term": "回帰テスト"},
+    {"id": "boundary-value-analysis", "term": "境界値分析"},
+    {"id": "configuration-management", "term": "構成管理"},
+    {"id": "acceptance-test", "term": "受入テスト", "definition": "利用者などが、合意した受入条件をシステムが満たしているか確認するテストです。"},
+    {"id": "equivalence-partitioning", "term": "同値分割", "definition": "同じ処理結果になると見込める入力をグループに分け、各グループから代表値を選ぶテスト設計の手法です。"}
+  ],
 }
 ---
 
@@ -29,15 +37,15 @@
 
 ## テストごとの役割
 
-単体テストは個々の部品、結合テストは部品間の連携、システムテストは全体の要件への適合を確かめます。受入テストでは利用者等が受入条件を確認します。ブラックボックステストは入出力の仕様、ホワイトボックステストは内部構造に着目します。変更後に既存機能への影響を調べるのが回帰テストです。
+<a class="lesson-term" data-lesson-term href="#lesson-term-unit-test">単体テスト</a>は個々の部品、結合テストは部品間の連携、システムテストは全体の要件への適合を確かめます。<a class="lesson-term" data-lesson-term href="#lesson-term-acceptance-test">受入テスト</a>では利用者等が受入条件を確認します。ブラックボックステストは入出力の仕様、ホワイトボックステストは内部構造に着目します。変更後に既存機能への影響を調べるのが<a class="lesson-term" data-lesson-term href="#lesson-term-regression-test">回帰テスト</a>です。
 
 ## 例：入力できる年齢が18〜65の画面
 
-境界値分析なら17、18、65、66などを調べます。同値分割では有効範囲・低すぎる範囲・高すぎる範囲などの代表値を選びます。正常な値だけでなく空欄、文字、重複、権限外操作も検討します。テストが通っても、想定していない欠陥が一切ないとは証明できません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-boundary-value-analysis">境界値分析</a>なら17、18、65、66などを調べます。<a class="lesson-term" data-lesson-term href="#lesson-term-equivalence-partitioning">同値分割</a>では有効範囲・低すぎる範囲・高すぎる範囲などの代表値を選びます。正常な値だけでなく空欄、文字、重複、権限外操作も検討します。テストが通っても、想定していない欠陥が一切ないとは証明できません。
 
 ## 移行と保守
 
-一斉移行、段階移行、並行稼働には費用とリスクの違いがあります。データ変換の検証、バックアップ、切戻し条件、連絡体制を用意します。保守には不具合修正だけでなく、環境変化への適応、性能や機能の改善、将来の不具合を防ぐ対応などがあります。構成管理は版と変更を追跡し、どの状態を検証したかを明確にします。
+一斉移行、段階移行、並行稼働には費用とリスクの違いがあります。データ変換の検証、バックアップ、切戻し条件、連絡体制を用意します。保守には不具合修正だけでなく、環境変化への適応、性能や機能の改善、将来の不具合を防ぐ対応などがあります。<a class="lesson-term" data-lesson-term href="#lesson-term-configuration-management">構成管理</a>は版と変更を追跡し、どの状態を検証したかを明確にします。
 
 <span id="depth-development-requirements"></span>
 ## 要求をテストできる形にする

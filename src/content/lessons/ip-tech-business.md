@@ -26,20 +26,28 @@
       },
       { 'term': 'POS', 'definition': '販売時点の商品や数量等の情報を収集する仕組み。' },
     ],
+  "inlineGlossary": [
+    {"id": "poc", "term": "PoC"},
+    {"id": "technology-roadmap", "term": "技術ロードマップ"},
+    {"id": "open-innovation", "term": "オープンイノベーション"},
+    {"id": "pos", "term": "POS"},
+    {"id": "mot", "term": "MOT", "definition": "技術経営（Management of Technology）です。技術を育て、製品やサービスを通じて事業の成果につなげる考え方です。"},
+    {"id": "wms", "term": "WMS", "definition": "倉庫管理システム（Warehouse Management System）です。入出庫や在庫の場所と数量を管理します。"}
+  ],
 }
 ---
 
 ## 技術を事業の目的につなぐ
 
-技術戦略は、どの技術をいつ育て、何の価値へ結び付けるかを考える活動です。技術ロードマップは市場・製品・技術の関係を時間軸で整理します。研究開発（R&D）は不確実性を伴い、研究成果がすぐ売上になるとは限りません。PoCは限定した条件で実現可能性などを検証する取組で、本番運用の品質保証そのものではありません。
+技術戦略は、どの技術をいつ育て、何の価値へ結び付けるかを考える活動です。<a class="lesson-term" data-lesson-term href="#lesson-term-technology-roadmap">技術ロードマップ</a>は市場・製品・技術の関係を時間軸で整理します。研究開発（R&D）は不確実性を伴い、研究成果がすぐ売上になるとは限りません。<a class="lesson-term" data-lesson-term href="#lesson-term-poc">PoC</a>は限定した条件で実現可能性などを検証する取組で、本番運用の品質保証そのものではありません。
 
 ## 新しい技術をどう生かすか
 
-イノベーションには製品の改善、工程の変革、事業モデルの変更などがあります。オープンイノベーションは外部の知識や技術も活用します。MOTは技術を経営に結び付ける考え方です。特許の確保、他社権利の確認、標準化への参加、開発か調達かの選択も戦略に関係します。
+イノベーションには製品の改善、工程の変革、事業モデルの変更などがあります。<a class="lesson-term" data-lesson-term href="#lesson-term-open-innovation">オープンイノベーション</a>は外部の知識や技術も活用します。<a class="lesson-term" data-lesson-term href="#lesson-term-mot">MOT</a>は技術を経営に結び付ける考え方です。特許の確保、他社権利の確認、標準化への参加、開発か調達かの選択も戦略に関係します。
 
 ## 分野別の業務システム
 
-流通ではPOSが販売時点の情報を集め、物流ではWMSが倉庫管理を支援します。金融ではFinTechやキャッシュレス決済、保険ではInsurTechなど、ITと既存業務の組合せが見られます。公共分野では電子行政、医療では電子カルテなどが使われます。RPAは定型操作の自動化に役立ちますが、業務の例外や権限、誤った処理の大量実行を管理する必要があります。
+流通では<a class="lesson-term" data-lesson-term href="#lesson-term-pos">POS</a>が販売時点の情報を集め、物流では<a class="lesson-term" data-lesson-term href="#lesson-term-wms">WMS</a>が倉庫管理を支援します。金融ではFinTechやキャッシュレス決済、保険ではInsurTechなど、ITと既存業務の組合せが見られます。公共分野では電子行政、医療では電子カルテなどが使われます。RPAは定型操作の自動化に役立ちますが、業務の例外や権限、誤った処理の大量実行を管理する必要があります。
 
 ## 例：画像検査の導入
 

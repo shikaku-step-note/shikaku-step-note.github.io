@@ -20,6 +20,15 @@
       { 'term': 'TCO', 'definition': '導入から運用・保守などを含めた総保有コスト。' },
       { 'term': 'As-Is', 'definition': '分析や改革において把握する現状の姿。' },
     ],
+  "inlineGlossary": [
+    {"id": "bpr", "term": "BPR"},
+    {"id": "saas", "term": "SaaS"},
+    {"id": "tco", "term": "TCO"},
+    {"id": "as-is", "term": "As-Is"},
+    {"id": "to-be", "term": "To-Be", "definition": "業務やシステムが目指す姿です。現状を表すAs-Isと比べ、変えるべき点を明らかにします。"},
+    {"id": "bpm", "term": "BPM", "definition": "業務プロセス管理（Business Process Management）です。業務の流れを把握し、実施状況を測りながら改善を重ねます。"},
+    {"id": "on-premises", "term": "オンプレミス", "definition": "自組織が管理する設備にシステムを置いて運用する形です。"}
+  ],
 }
 ---
 
@@ -29,15 +38,15 @@
 
 ## 業務そのものを見直す
 
-As-Isは現状、To-Beは目指す姿です。BPRは業務の仕組みを抜本的に見直す取組、BPMは業務プロセスを継続的に管理・改善する取組です。ワークフローは申請・承認などの流れを支えます。BPOは業務の一部を外部へ委託する形です。システムだけ入れ替えて不要な承認が残れば、待ち時間は減りません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-as-is">As-Is</a>は現状、<a class="lesson-term" data-lesson-term href="#lesson-term-to-be">To-Be</a>は目指す姿です。<a class="lesson-term" data-lesson-term href="#lesson-term-bpr">BPR</a>は業務の仕組みを抜本的に見直す取組、<a class="lesson-term" data-lesson-term href="#lesson-term-bpm">BPM</a>は業務プロセスを継続的に管理・改善する取組です。ワークフローは申請・承認などの流れを支えます。BPOは業務の一部を外部へ委託する形です。システムだけ入れ替えて不要な承認が残れば、待ち時間は減りません。
 
 ## サービスとしてITを使う
 
-SaaSはアプリケーション、PaaSは開発・実行基盤、IaaSは仮想サーバ等の基盤を提供します。オンプレミスは自組織の設備で運用する形です。クラウドを使っても利用者の設定、権限、データ管理等の責任は残ります。APIは機能やデータを連携するための接点です。SOAはサービス単位で機能を組み合わせる考え方です。
+<a class="lesson-term" data-lesson-term href="#lesson-term-saas">SaaS</a>はアプリケーション、PaaSは開発・実行基盤、IaaSは仮想サーバ等の基盤を提供します。<a class="lesson-term" data-lesson-term href="#lesson-term-on-premises">オンプレミス</a>は自組織の設備で運用する形です。クラウドを使っても利用者の設定、権限、データ管理等の責任は残ります。APIは機能やデータを連携するための接点です。SOAはサービス単位で機能を組み合わせる考え方です。
 
 ## 導入後の活用と評価
 
-使い方の教育、ヘルプ、マニュアル、利用状況の測定を用意します。導入費用だけでなく運用・保守・移行を含めたTCOを比較し、業務時間や品質への効果を確認します。ITガバナンスでは、経営の意思とITの活動・責任を整合させます。
+使い方の教育、ヘルプ、マニュアル、利用状況の測定を用意します。導入費用だけでなく運用・保守・移行を含めた<a class="lesson-term" data-lesson-term href="#lesson-term-tco">TCO</a>を比較し、業務時間や品質への効果を確認します。ITガバナンスでは、経営の意思とITの活動・責任を整合させます。
 
 ## 例とまとめ
 
