@@ -46,9 +46,9 @@ test('grade3 shared tree has substantive teaching and applied review for every d
     rows.map((row) => row.data.stableId),
     boki3LessonIds,
   );
-  assert.equal(rows.length, 55);
+  assert.equal(rows.length, 58);
   const detailed = rows.filter((row) => !boki3RetainedIds.includes(row.data.stableId));
-  assert.equal(detailed.length, 47);
+  assert.equal(detailed.length, 50);
   for (const row of detailed) {
     const id = row.data.stableId;
     const body = row.body
@@ -78,10 +78,10 @@ test('grade3 shared tree has substantive teaching and applied review for every d
       );
     }
   }
-  assert.equal(Object.values(boki3Bank).flat().length, 635);
+  assert.equal(Object.values(boki3Bank).flat().length, 661);
   const reviewed = Object.values(boki3ReviewBank).flat();
-  assert.equal(reviewed.length, 148);
-  assert.equal(new Set(reviewed.map((q) => q.id)).size, 148);
+  assert.equal(reviewed.length, 157);
+  assert.equal(new Set(reviewed.map((q) => q.id)).size, 157);
   const lessonIds = new Set(
     Object.values(boki3Bank)
       .flat()
@@ -121,9 +121,9 @@ test('current scope maps real teaching anchors and practice; four future-only it
 
 test('all answer models are gradable and current lesson questions are uniquely registered', () => {
   const current = assessments.filter((a) => a.kind === 'lesson');
-  assert.equal(current.length, 55);
-  assert.equal(current.flatMap((a) => a.questions).length, 667);
-  assert.equal(new Set(current.flatMap((a) => a.questions.map((q) => q.id))).size, 667);
+  assert.equal(current.length, 58);
+  assert.equal(current.flatMap((a) => a.questions).length, 693);
+  assert.equal(new Set(current.flatMap((a) => a.questions.map((q) => q.id))).size, 693);
   for (const a of assessments) {
     assert.deepEqual(assessmentMaterialIssues(a), [], a.id);
     for (const q of a.questions) {
@@ -139,7 +139,7 @@ test('all answer models are gradable and current lesson questions are uniquely r
   }
 });
 
-test('retained eight completions and old results survive without completing the new47', () => {
+test('retained eight completions and old results survive without completing a detailed lesson', () => {
   const old = emptyData();
   for (const id of boki3RetainedIds)
     old.records[id] = {
@@ -167,7 +167,7 @@ test('retained eight completions and old results survive without completing the 
     })),
     'boki-3',
   );
-  assert.equal(current.length, 55);
+  assert.equal(current.length, 58);
   assert.equal(current.filter((row) => restored.records[row.id]?.status === 'completed').length, 8);
   assert.equal(
     current.filter((row) => row.id.startsWith('b3x-') && restored.records[row.id]?.status === 'completed')
@@ -374,5 +374,30 @@ test('reviewed glossary options distinguish general categories, aliases and the 
           term,
         );
     }
+  }
+});
+
+test('all grade 3 chapters have balanced figures, an independent guided check and inline definitions', () => {
+  for (const row of rows) {
+    const id = row.data.stableId;
+    assert.ok((row.body.match(/<figure(?:\s|>)/g) ?? []).length >= 2, id);
+    assert.match(row.body, /data-guided-practice/);
+    assert.match(row.body, /data-guided-solution/);
+    assert.ok(row.data.inlineGlossary.length >= 3, id);
+    for (const def of row.data.inlineGlossary) {
+      assert.ok(row.body.includes(`href="#lesson-term-${def.id}"`), id);
+    }
+    const checks = assessments.find((a) => a.id === `${id}-check`)!;
+    assert.ok(checks.questions.length, id);
+  }
+});
+
+test('extended unit reviews version changed items and leave other saved assessments compatible', () => {
+  for (const unit of [1, 2, 3, 4, 5, 6, 7]) {
+    const review = assessments.find((a) => a.id === `boki-3-unit-${unit}-review`)!;
+    const old = newAttempt({ ...review, version: boki3Version }, 'practice', 4000);
+    assert.equal(compatibleAttempt(review, old), ![5, 6].includes(unit));
+    const glossary = assessments.find((a) => a.id === `boki-3-unit-${unit}-glossary`)!;
+    assert.equal(glossary.version, boki3Version);
   }
 });

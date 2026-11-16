@@ -677,7 +677,7 @@
         "id": "b3x-mock-a-t01",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-reversal",
+        "lesson": "b3x-loan-year-boundary",
         "objectives": [
           2
         ],
@@ -698,7 +698,7 @@
         "id": "b3x-mock-a-t02",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-reversal",
+        "lesson": "b3x-loan-year-boundary",
         "objectives": [
           0,
           2
@@ -714,13 +714,13 @@
         "accepted": [
           "未払利息"
         ],
-        "explanation": "再振替は未払利息9,600／支払利息9,600。支払利息の相手科目は未払利息である。"
+        "explanation": "再振替は未払利息9,600／支払利息9,600。支払利息の相手科目は未払利息である。復習するときは利息が生じた月と実際に支払った日を分け、決算、再振替、支払いの順で勘定を作り直してください。"
       },
       {
         "id": "b3x-mock-a-t03",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-reversal",
+        "lesson": "b3x-loan-year-boundary",
         "objectives": [
           1
         ],
@@ -741,7 +741,7 @@
         "id": "b3x-mock-a-t04",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-expense-accrual",
+        "lesson": "b3x-loan-year-boundary",
         "objectives": [
           1
         ],
@@ -762,7 +762,7 @@
         "id": "b3x-mock-a-t05",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-reversal",
+        "lesson": "b3x-loan-year-boundary",
         "objectives": [
           1,
           2
@@ -784,7 +784,7 @@
         "id": "b3x-mock-a-t06",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-closing-books",
+        "lesson": "b3x-loan-year-boundary",
         "objectives": [
           0
         ],
@@ -799,13 +799,13 @@
         "accepted": [
           "損益"
         ],
-        "explanation": "費用を損益へ集める仕訳は損益26,400／支払利息26,400。摘要は損益である。"
+        "explanation": "費用を損益へ集める仕訳は損益26,400／支払利息26,400。摘要は損益である。復習するときは利息が生じた月と実際に支払った日を分け、決算、再振替、支払いの順で勘定を作り直してください。"
       },
       {
         "id": "b3x-mock-a-t07",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-depreciation",
+        "lesson": "b3x-asset-register-reconciliation",
         "objectives": [
           0
         ],
@@ -826,7 +826,7 @@
         "id": "b3x-mock-a-t08",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-depreciation",
+        "lesson": "b3x-asset-register-reconciliation",
         "objectives": [
           2
         ],
@@ -847,7 +847,7 @@
         "id": "b3x-mock-a-t09",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-depreciation",
+        "lesson": "b3x-asset-register-reconciliation",
         "objectives": [
           1
         ],
@@ -868,7 +868,7 @@
         "id": "b3x-mock-a-t10",
         "group": "第2問",
         "field": "commercial",
-        "lesson": "b3x-asset-sale",
+        "lesson": "b3x-asset-register-reconciliation",
         "objectives": [
           0,
           1
@@ -884,7 +884,7 @@
         "accepted": [
           "18000"
         ],
-        "explanation": "期首まで3年の累計432,000円と当期132,000円を引くと帳簿価額444,000円。代金462,000円との差18,000円が売却益。"
+        "explanation": "期首まで3年の累計432,000円と当期132,000円を引くと帳簿価額444,000円。代金462,000円との差18,000円が売却益。表へ戻り、取得原価、期首までの累計、当期の使用月数のうち、どの情報から解答欄を埋められるかを確かめましょう。"
       },
       {
         "id": "b3x-mock-a-f01",

@@ -7,7 +7,7 @@
   "order": 24,
   "minutes": 80,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -64,10 +64,10 @@
       "definition": "振り出した手形の相手先・金額・期日・決済等を記録する補助簿"
     }
   ]
-}
+,"inlineGlossary":[{"term":"約束手形","definition":"振出人が受取人に対し、記載された金額を定めた期日に支払うことを約束する証書","id":"term-1"},{"term":"受取手形","definition":"商品代金として受け取った約束手形などに基づく権利を記録する資産勘定","id":"term-2"},{"term":"支払手形","definition":"商品代金の支払のために振り出した約束手形などに基づく義務を記録する負債勘定","id":"term-3"},{"term":"振出人","definition":"約束手形を振り出し、記載された金額の支払を約束する側","id":"term-4"}]}
 ---
 
-同じ80,000円の商品を後払いで売っても、売掛金として代金を待つ場合と、約束手形を受け取る場合では、残る権利を別の勘定で管理します。金額が同じだから新しい売上が増えるのではなく、代金を受け取る形が変わることがあります。まず誰が支払を約束し、誰が受け取るのかを読みます。
+同じ80,000円の商品を後払いで売っても、売掛金として代金を待つ場合と、<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">約束手形</a>を受け取る場合では、残る権利を別の勘定で管理します。金額が同じだから新しい売上が増えるのではなく、代金を受け取る形が変わることがあります。まず誰が支払を約束し、誰が受け取るのかを読みます。
 
 この課は2026年度に適用される商品代金の約束手形を扱います。紙の手形に関する将来の範囲変更を、現在の仕訳へ混ぜません。消費税は考慮せず、手形の裏書譲渡や割引など上位級の処理へは広げません。手形を使ってお金を貸し借りした取引は、後の貸付金・借入金の課で区別します。
 
@@ -75,7 +75,7 @@
 
 ## 約束する側には義務、受け取る側には権利が残る
 
-約束手形の振出人は、定めた金額を期日に支払うことを約束する側です。商品を購入して代金の支払のために自店が振り出すと、支払手形という負債を記録します。受取人である売る側は、期日に代金を受け取る権利を受取手形という資産へ記録します。
+約束手形の<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">振出人</a>は、定めた金額を期日に支払うことを約束する側です。商品を購入して代金の支払のために自店が振り出すと、<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">支払手形</a>という負債を記録します。受取人である売る側は、期日に代金を受け取る権利を<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">受取手形</a>という資産へ記録します。
 
 受取手形は資産なので、受け取って増えると借方、決済により減ると貸方です。支払手形は負債なので、振り出して増えると貸方、決済して減ると借方です。どちらも同じ「手形」という言葉を含むため、科目名から借方・貸方を暗記するより、自社が売る側か買う側かを確認した方が判断しやすくなります。
 
@@ -109,12 +109,19 @@
 
 手形の期日に60,000円が普通預金へ入ったら、借方普通預金60,000円、貸方受取手形60,000円です。売掛金は既に手形受取時に減らしているので、期日の入金でも売掛金を減らすと誤ります。時点ごとの残高を表にして確認します。
 
+<figure id="b3x-bills-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-bills-comparison-caption">
+
 | 時点 | 売掛金残高 | 受取手形残高 | 今回の代金の預金化累計 |
 | --- | ---: | ---: | ---: |
 | 当初 | 90,000 | 0 | 0 |
 | 手形60,000円を受取り | 30,000 | 60,000 | 0 |
 | 残額30,000円を回収 | 0 | 60,000 | 30,000 |
 | 手形の期日に入金 | 0 | 0 | 90,000 |
+
+</div>
+<figcaption id="b3x-bills-comparison-caption">手形への切替と取引先別買掛金</figcaption>
+</figure>
 
 どの行でも、残る売掛金、残る手形、預金化した金額を合計すると90,000円です。同じ権利を二つの勘定へ重ねて残していないか、この表の横合計で確かめられます。
 
@@ -183,6 +190,36 @@
 解答：手形への振替は借方受取手形35,000円、貸方売掛金35,000円。月初手形の回収は借方普通預金20,000円、貸方受取手形20,000円。残額回収は借方普通預金25,000円、貸方売掛金25,000円です。月末売掛金ゼロ、受取手形35,000円、入金合計45,000円です。期首の二つの権利80,000円が、未決済35,000円と入金45,000円へ分かれたことでも検算できます。
 
 次の課では、同じく代金の権利や義務を管理する電子記録の取引を扱います。名称が変わっても、元の債権を振り替え、最後に決済するという段階を分けて読むことが基本になります。
+
+<section class="guided-lesson" aria-labelledby="b3x-bills-work-heading">
+<h2 id="b3x-bills-work-heading">手を動かして確かめる：手形で決済したあとの買掛金を求める</h2>
+<figure id="b3x-bills-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-bills-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">決済前の買掛金</th><td>97,000円</td></tr>
+<tr><th scope="row">振り出して交付した約束手形</th><td>60,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-bills-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>未決済の買掛金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="37000" data-guided-hint="約束手形に切り替えた部分だけ買掛金が減ります。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-bills-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-bills-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>97,000 − 60,000 ＝ 37,000円。買掛金は60,000円減り、支払手形は同額増えるため、この時点で負債合計は変わりません。</p>
+</details>
+</section>
 
 ## 公式資料
 

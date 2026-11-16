@@ -783,7 +783,8 @@
     "competency": "金銭貸借と利息",
     "requiredSkill": "元本・利率・期間から月割または指定日割を計算し、元利合計を記録する。",
     "lessons": [
-      "b3x-loans"
+      "b3x-loans",
+      "b3x-loan-year-boundary"
     ],
     "teachingAnchors": [
       {
@@ -796,6 +797,18 @@
       },
       {
         "lesson": "b3x-loans",
+        "anchor": "objective-3"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "objective-1"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
         "anchor": "objective-3"
       }
     ],
@@ -815,6 +828,18 @@
       {
         "lesson": "b3x-loans",
         "anchor": "worked-5"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "worked-1"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "worked-2"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "worked-3"
       }
     ],
     "independentQuestionIds": [
@@ -834,13 +859,25 @@
       "b3x-loans-q14",
       "b3x-loans-day-q1",
       "b3x-loans-day-q2",
-      "b3x-loans-day-q3"
+      "b3x-loans-day-q3",
+      "b3x-loan-year-boundary-q01",
+      "b3x-loan-year-boundary-q02",
+      "b3x-loan-year-boundary-q03",
+      "b3x-loan-year-boundary-q04",
+      "b3x-loan-year-boundary-q05",
+      "b3x-loan-year-boundary-q06",
+      "b3x-loan-year-boundary-q07",
+      "b3x-loan-year-boundary-q08",
+      "b3x-loan-year-boundary-q09"
     ],
     "unitReviewQuestionIds": [
       "b3x-u4-review-13",
       "b3x-u4-review-14",
       "b3x-u4-review-15",
-      "b3x-u4-day-review-01"
+      "b3x-u4-day-review-01",
+      "b3x-loan-year-boundary-review-01",
+      "b3x-loan-year-boundary-review-02",
+      "b3x-loan-year-boundary-review-03"
     ],
     "mockQuestionIds": [
       "b3x-mock-a-j08",
@@ -2099,7 +2136,8 @@
     "requiredSkill": "資産別の期首残高・取得・償却・売却を時系列で追い欠落額を逆算する。",
     "lessons": [
       "b3x-asset-acquisition",
-      "b3x-asset-sale"
+      "b3x-asset-sale",
+      "b3x-asset-register-reconciliation"
     ],
     "teachingAnchors": [
       {
@@ -2108,6 +2146,18 @@
       },
       {
         "lesson": "b3x-asset-sale",
+        "anchor": "objective-3"
+      },
+      {
+        "lesson": "b3x-asset-register-reconciliation",
+        "anchor": "objective-1"
+      },
+      {
+        "lesson": "b3x-asset-register-reconciliation",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "b3x-asset-register-reconciliation",
         "anchor": "objective-3"
       }
     ],
@@ -2119,6 +2169,18 @@
       {
         "lesson": "b3x-asset-sale",
         "anchor": "worked-3"
+      },
+      {
+        "lesson": "b3x-asset-register-reconciliation",
+        "anchor": "worked-1"
+      },
+      {
+        "lesson": "b3x-asset-register-reconciliation",
+        "anchor": "worked-2"
+      },
+      {
+        "lesson": "b3x-asset-register-reconciliation",
+        "anchor": "worked-3"
       }
     ],
     "independentQuestionIds": [
@@ -2127,11 +2189,22 @@
       "b3x-asset-acquisition-q11",
       "b3x-asset-acquisition-q12",
       "b3x-asset-sale-q09",
-      "b3x-asset-sale-q10"
+      "b3x-asset-sale-q10",
+      "b3x-asset-register-reconciliation-q01",
+      "b3x-asset-register-reconciliation-q02",
+      "b3x-asset-register-reconciliation-q03",
+      "b3x-asset-register-reconciliation-q04",
+      "b3x-asset-register-reconciliation-q05",
+      "b3x-asset-register-reconciliation-q06",
+      "b3x-asset-register-reconciliation-q07",
+      "b3x-asset-register-reconciliation-q08"
     ],
     "unitReviewQuestionIds": [
       "b3x-asset-acquisition-review-03",
-      "b3x-asset-sale-review-03"
+      "b3x-asset-sale-review-03",
+      "b3x-asset-register-reconciliation-review-01",
+      "b3x-asset-register-reconciliation-review-02",
+      "b3x-asset-register-reconciliation-review-03"
     ],
     "mockQuestionIds": [],
     "guidedCheckQuestionIds": [],
@@ -2692,7 +2765,8 @@
     "competency": "棚卸と売上原価",
     "requiredSkill": "期首・純仕入・期末をつなぎ仕入勘定または指定原価勘定で整理する。",
     "lessons": [
-      "b3x-closing-inventory"
+      "b3x-closing-inventory",
+      "b3x-inventory-period-reconciliation"
     ],
     "teachingAnchors": [
       {
@@ -2705,6 +2779,18 @@
       },
       {
         "lesson": "b3x-closing-inventory",
+        "anchor": "objective-3"
+      },
+      {
+        "lesson": "b3x-inventory-period-reconciliation",
+        "anchor": "objective-1"
+      },
+      {
+        "lesson": "b3x-inventory-period-reconciliation",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "b3x-inventory-period-reconciliation",
         "anchor": "objective-3"
       }
     ],
@@ -2728,6 +2814,18 @@
       {
         "lesson": "b3x-closing-inventory",
         "anchor": "worked-5"
+      },
+      {
+        "lesson": "b3x-inventory-period-reconciliation",
+        "anchor": "worked-1"
+      },
+      {
+        "lesson": "b3x-inventory-period-reconciliation",
+        "anchor": "worked-2"
+      },
+      {
+        "lesson": "b3x-inventory-period-reconciliation",
+        "anchor": "worked-3"
       }
     ],
     "independentQuestionIds": [
@@ -2742,12 +2840,24 @@
       "b3x-closing-inventory-q09",
       "b3x-closing-inventory-q10",
       "b3x-closing-inventory-q11",
-      "b3x-closing-inventory-q12"
+      "b3x-closing-inventory-q12",
+      "b3x-inventory-period-reconciliation-q01",
+      "b3x-inventory-period-reconciliation-q02",
+      "b3x-inventory-period-reconciliation-q03",
+      "b3x-inventory-period-reconciliation-q04",
+      "b3x-inventory-period-reconciliation-q05",
+      "b3x-inventory-period-reconciliation-q06",
+      "b3x-inventory-period-reconciliation-q07",
+      "b3x-inventory-period-reconciliation-q08",
+      "b3x-inventory-period-reconciliation-q09"
     ],
     "unitReviewQuestionIds": [
       "b3x-closing-inventory-r01",
       "b3x-closing-inventory-r02",
-      "b3x-closing-inventory-r03"
+      "b3x-closing-inventory-r03",
+      "b3x-inventory-period-reconciliation-review-01",
+      "b3x-inventory-period-reconciliation-review-02",
+      "b3x-inventory-period-reconciliation-review-03"
     ],
     "mockQuestionIds": [
       "b3x-mock-a-f06",
@@ -2987,7 +3097,8 @@
     "competency": "再振替と翌期精算",
     "requiredSkill": "前期末・翌期首・現金決済を連続記帳し当期損益への影響を説明する。",
     "lessons": [
-      "b3x-reversal"
+      "b3x-reversal",
+      "b3x-loan-year-boundary"
     ],
     "teachingAnchors": [
       {
@@ -3000,6 +3111,18 @@
       },
       {
         "lesson": "b3x-reversal",
+        "anchor": "objective-3"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "objective-1"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
         "anchor": "objective-3"
       }
     ],
@@ -3023,6 +3146,18 @@
       {
         "lesson": "b3x-reversal",
         "anchor": "worked-5"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "worked-1"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "worked-2"
+      },
+      {
+        "lesson": "b3x-loan-year-boundary",
+        "anchor": "worked-3"
       }
     ],
     "independentQuestionIds": [
@@ -3037,12 +3172,24 @@
       "b3x-reversal-q09",
       "b3x-reversal-q10",
       "b3x-reversal-q11",
-      "b3x-reversal-q12"
+      "b3x-reversal-q12",
+      "b3x-loan-year-boundary-q01",
+      "b3x-loan-year-boundary-q02",
+      "b3x-loan-year-boundary-q03",
+      "b3x-loan-year-boundary-q04",
+      "b3x-loan-year-boundary-q05",
+      "b3x-loan-year-boundary-q06",
+      "b3x-loan-year-boundary-q07",
+      "b3x-loan-year-boundary-q08",
+      "b3x-loan-year-boundary-q09"
     ],
     "unitReviewQuestionIds": [
       "b3x-reversal-r01",
       "b3x-reversal-r02",
-      "b3x-reversal-r03"
+      "b3x-reversal-r03",
+      "b3x-loan-year-boundary-review-01",
+      "b3x-loan-year-boundary-review-02",
+      "b3x-loan-year-boundary-review-03"
     ],
     "mockQuestionIds": [
       "b3x-mock-a-t01",

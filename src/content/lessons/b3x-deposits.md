@@ -7,7 +7,7 @@
   "order": 29,
   "minutes": 85,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -59,20 +59,34 @@
       "definition": "差入保証金等の残高を契約相手先や契約ごとに分けて記録すること"
     }
   ]
-}
+,"inlineGlossary":[{"term":"差入保証金","definition":"事務所等の賃借に伴い差し入れ、契約条件に基づく返還等の対象となる額を記録する資産勘定","id":"term-1"},{"term":"敷金","definition":"賃借に際して差し入れる金額の一例。この課では返還条件を明示して扱う","id":"term-2"},{"term":"支払家賃","definition":"事務所等の利用に対応する家賃を記録する費用勘定","id":"term-3"},{"term":"未払家賃","definition":"既に費用として発生しているが未払の家賃を記録する負債勘定","id":"term-6"}]}
 ---
 
 事務所の契約時に普通預金から90,000円を支払ったとします。その全額が今月の家賃とは限りません。内訳が返還対象の保証金60,000円と当月家賃30,000円なら、保証金は資産、家賃は費用に分けます。支払った場所や日付が同じでも、何のための金額かによって勘定が異なります。
 
-この課は、当店が保証金を差し入れる側の取引を扱います。返還対象となる額、契約終了時に控除する費用、既に記録済みの負債などは、各問題で条件を明示します。契約があれば必ず全額が戻る、敷金という名前なら全額費用とする、といった一般化はせず、資料に示された権利と費用を記録します。
+この課は、当店が保証金を差し入れる側の取引を扱います。返還対象となる額、契約終了時に控除する費用、既に記録済みの負債などは、各問題で条件を明示します。契約があれば必ず全額が戻る、<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">敷金</a>という名前なら全額費用とする、といった一般化はせず、資料に示された権利と費用を記録します。
 
 <span id="objective-1"></span>
 
 ## 支払総額を、返還対象と利用の対価へ分ける
 
-差入保証金は、差し入れた金額のうち契約条件に従い返還等の対象となる額を資産として管理する勘定です。この課の単純な例では、支払った時に資産が増え、返還・精算された時に資産が減ります。支払家賃は、事務所等を利用することに対応する費用です。保証金と同じ支払日に発生していても、全額を家賃へまとめません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">差入保証金</a>は、差し入れた金額のうち契約条件に従い返還等の対象となる額を資産として管理する勘定です。この課の単純な例では、支払った時に資産が増え、返還・精算された時に資産が減ります。<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">支払家賃</a>は、事務所等を利用することに対応する費用です。保証金と同じ支払日に発生していても、全額を家賃へまとめません。
 
 仲介等の手数料が別にある場合も、問題の指定に従って支払手数料等へ分けます。現金や預金の支払総額が貸方に一つあっても、借方には複数の性質の金額が並ぶことがあります。内訳表を先に作り、借方の合計が実際の支払額と一致するかを確認します。
+
+<figure id="b3x-deposits-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-deposits-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">給与の支給</th><td>従業員本人の負担分を給料から控除し、負債を記録する。</td></tr>
+<tr><th scope="row">納付まで</th><td>所得税と社会保険料などを区別して納付先・金額を管理する。</td></tr>
+<tr><th scope="row">納付</th><td>預り金を借方に記録し、支払いで減る預金を貸方に記録する。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-deposits-comparison-caption">給与控除後に預り金を納める流れ</figcaption>
+</figure>
 
 <span id="worked-1"></span>
 
@@ -124,7 +138,7 @@
 
 ### 例題4：同じ控除額でも、記録済みの未払金額は二度費用にしない
 
-差入保証金60,000円から、既に費用へ計上して未払家賃として残している10,000円と、未記録の清掃費5,000円を控除し、45,000円が返還されたとします。清掃費は支払手数料を使う指示です。
+差入保証金60,000円から、既に費用へ計上して<a class="lesson-term" data-lesson-term href="#lesson-term-term-6">未払家賃</a>として残している10,000円と、未記録の清掃費5,000円を控除し、45,000円が返還されたとします。清掃費は支払手数料を使う指示です。
 
 今度の借方は、普通預金45,000円、未払家賃10,000円、支払手数料5,000円です。貸方は差入保証金60,000円で同じです。家賃10,000円は以前に費用計上済みなので、今回は負債である未払家賃を減らします。例題3と同じ入金額であっても、借方の内訳は違います。
 
@@ -151,6 +165,36 @@
 解答：追加は借方差入保証金15,000円、貸方普通預金15,000円。Bの精算は借方普通預金66,000円、支払手数料4,000円、貸方差入保証金70,000円です。月末残高はA55,000円、Bゼロ、合計55,000円。総額でも110,000＋15,000−70,000＝55,000円と一致します。返還入金66,000円ではなく、精算した権利70,000円を元帳から減らします。
 
 このユニットのまとめでは、同じ「後で受け取る」「後で払う」金額であっても、商品代金、資金の貸借、前払い、未確定の入出金、保証金など、原因によって勘定が変わることを振り返ります。自社の権利・義務の内容と、今どの段階を処理しているかを説明できるか確認してください。
+
+<section class="guided-lesson" aria-labelledby="b3x-deposits-work-heading">
+<h2 id="b3x-deposits-work-heading">手を動かして確かめる：納付後に残る預り金を求める</h2>
+<figure id="b3x-deposits-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-deposits-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">所得税預り金の貸方残高</th><td>27,400円</td></tr>
+<tr><th scope="row">所得税の納付額</th><td>19,800円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-deposits-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>納付後の所得税預り金の貸方残高は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="7600" data-guided-hint="納付によって、会社が引き渡す義務が減ります。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-deposits-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-deposits-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>27,400 − 19,800 ＝ 7,600円。預り金を借方に19,800円記入し、納付に使った預金などを貸方に記入します。</p>
+</details>
+</section>
 
 ## 公式資料
 

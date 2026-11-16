@@ -1,8 +1,8 @@
 ---
-{"stableId":"b3x-payroll","qualification":"boki-3","title":"給料の総額・控除・手取額を分け、預り金を後で納付する","description":"所得税等と社会保険料の従業員負担額を預り金で処理し、会社負担の法定福利費、立替金の相殺、納付の仕訳を数値から追います。","order":13,"minutes":85,"sample":false,"updated":"2026-10-28","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["給料総額から従業員負担の控除と手取額を区別して計算する","給料支払いと所得税・社会保険料等の預り金納付を仕訳する","会社負担の法定福利費と従業員負担分を区別し、立替金相殺を含めて検算する"],"prerequisite":"b3x-expenses：費用と債務決済の違いを確認してください。控除額は各問題の指定値を使います。","keywords":["給料","手取額","所得税預り金","社会保険料預り金","法定福利費","従業員立替金","預り金"],"glossary":[{"term":"給料","definition":"従業員へ支給する労働の対価などを費用として記録する勘定"},{"term":"手取額","definition":"給料総額から税金や保険料、その他の指定控除を差し引いて実際に渡す金額"},{"term":"所得税預り金","definition":"従業員の給料等から差し引き、後で納付する所得税を記録する負債勘定"},{"term":"社会保険料預り金","definition":"従業員負担の社会保険料を差し引き、後で納付するまで記録する負債勘定"},{"term":"法定福利費","definition":"会社が負担する法令上の社会保険料などを記録する費用勘定"},{"term":"従業員立替金","definition":"会社が従業員の負担すべき金額を一時的に立て替えた際の債権を記録する勘定"},{"term":"預り金","definition":"他者のために一時的に受け入れ、返還や納付の義務がある金額を記録する負債勘定"}]}
+{"stableId":"b3x-payroll","qualification":"boki-3","title":"給料の総額・控除・手取額を分け、預り金を後で納付する","description":"所得税等と社会保険料の従業員負担額を預り金で処理し、会社負担の法定福利費、立替金の相殺、納付の仕訳を数値から追います。","order":13,"minutes":85,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["給料総額から従業員負担の控除と手取額を区別して計算する","給料支払いと所得税・社会保険料等の預り金納付を仕訳する","会社負担の法定福利費と従業員負担分を区別し、立替金相殺を含めて検算する"],"prerequisite":"b3x-expenses：費用と債務決済の違いを確認してください。控除額は各問題の指定値を使います。","keywords":["給料","手取額","所得税預り金","社会保険料預り金","法定福利費","従業員立替金","預り金"],"glossary":[{"term":"給料","definition":"従業員へ支給する労働の対価などを費用として記録する勘定"},{"term":"手取額","definition":"給料総額から税金や保険料、その他の指定控除を差し引いて実際に渡す金額"},{"term":"所得税預り金","definition":"従業員の給料等から差し引き、後で納付する所得税を記録する負債勘定"},{"term":"社会保険料預り金","definition":"従業員負担の社会保険料を差し引き、後で納付するまで記録する負債勘定"},{"term":"法定福利費","definition":"会社が負担する法令上の社会保険料などを記録する費用勘定"},{"term":"従業員立替金","definition":"会社が従業員の負担すべき金額を一時的に立て替えた際の債権を記録する勘定"},{"term":"預り金","definition":"他者のために一時的に受け入れ、返還や納付の義務がある金額を記録する負債勘定"}],"inlineGlossary":[{"term":"給料","definition":"従業員へ支給する労働の対価などを費用として記録する勘定","id":"term-1"},{"term":"手取額","definition":"給料総額から税金や保険料、その他の指定控除を差し引いて実際に渡す金額","id":"term-2"},{"term":"社会保険料預り金","definition":"従業員負担の社会保険料を差し引き、後で納付するまで記録する負債勘定","id":"term-4"},{"term":"預り金","definition":"他者のために一時的に受け入れ、返還や納付の義務がある金額を記録する負債勘定","id":"term-7"}]}
 ---
 
-給料の総額が250,000円でも、従業員へ振り込む金額が同額とは限りません。税金や社会保険料の従業員負担分を差し引き、会社が後で納付する場合があるためです。給料の仕訳では、会社の費用、従業員へ渡す手取額、会社が預かって納付する負債を分けます。控除した分には、会社が後で納付する義務が残ります。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">給料</a>の総額が250,000円でも、従業員へ振り込む金額が同額とは限りません。税金や社会保険料の従業員負担分を差し引き、会社が後で納付する場合があるためです。給料の仕訳では、会社の費用、従業員へ渡す<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">手取額</a>、会社が預かって納付する負債を分けます。控除した分には、会社が後で納付する義務が残ります。
 
 <span id="objective-1"></span>
 
@@ -12,7 +12,21 @@
 
 所得税や社会保険料の従業員負担額は、設問が示した金額を使います。計算例では税率や保険料率を推測せず、提示された控除額で記帳します。実際の率や条件は変わり得るため、与えられた控除額をそのまま用いて仕訳の仕組みを学びます。住民税等の控除が別に示されていれば、その負債も区別します。
 
-手取額は、総額−控除合計です。総額260,000円、所得税8,000円、社会保険料32,000円なら、控除40,000円、手取220,000円です。貸方は普通預金220,000円と預り金40,000円に分かれ、借方の給料260,000円に一致します。
+手取額は、総額−控除合計です。総額260,000円、所得税8,000円、社会保険料32,000円なら、控除40,000円、手取220,000円です。貸方は普通預金220,000円と<a class="lesson-term" data-lesson-term href="#lesson-term-term-7">預り金</a>40,000円に分かれ、借方の給料260,000円に一致します。
+
+<figure id="b3x-payroll-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-payroll-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">従業員の給料</th><td>給料総額が費用。本人負担分を引いた金額を振り込む。</td></tr>
+<tr><th scope="row">会社が一時的に預かる金額</th><td>本人負担の保険料と源泉所得税を、納付するまで負債として管理する。</td></tr>
+<tr><th scope="row">会社が負担する金額</th><td>会社自身の保険料を法定福利費として処理する。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-payroll-comparison-caption">給料と社会保険料を分ける</figcaption>
+</figure>
 
 <span id="worked-1"></span>
 
@@ -20,7 +34,7 @@
 
 従業員へ給料280,000円を支給します。所得税9,000円、社会保険料の従業員負担額35,000円を控除し、残額を普通預金から振り込みました。控除合計は44,000円、手取額は236,000円です。
 
-借方「給料280,000」、貸方「所得税預り金9,000・社会保険料預り金35,000・普通預金236,000」です。科目が単に預り金と指定されていれば、控除合計44,000円を預り金へ集約して答えます。この二つは科目指定の細かさが違うので、答案では問題の勘定科目一覧に合わせます。
+借方「給料280,000」、貸方「所得税預り金9,000・<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">社会保険料預り金</a>35,000・普通預金236,000」です。科目が単に預り金と指定されていれば、控除合計44,000円を預り金へ集約して答えます。この二つは科目指定の細かさが違うので、答案では問題の勘定科目一覧に合わせます。
 
 従業員が直接受け取る236,000円だけを給料費用にすると、44,000円分の労働対価を計上しないことになります。預り金を収益にすると、後で納付すべき義務が隠れます。給料総額＝手取額＋控除額という関係を、仕訳の貸借合計でも確認してください。
 
@@ -113,6 +127,38 @@ Aさんの給料総額は230,000円、所得税6,000円、社会保険料28,000�
 手取額は261,000円です。支給時は借方給料310,000／貸方所得税預り金10,000・社会保険料預り金39,000・普通預金261,000です。所得税納付は借方所得税預り金10,000／貸方普通預金10,000です。社会保険料納付は借方社会保険料預り金39,000・法定福利費42,000／貸方普通預金81,000となります。
 
 費用は給料310,000＋法定福利費42,000＝352,000円です。預金支出も261,000＋10,000＋81,000＝352,000円で、この設定では全額の決済が済んだため一致します。預り金が未納なら一致しないことを、残る負債から説明できます。
+
+<section class="guided-lesson" aria-labelledby="b3x-payroll-work-heading">
+<h2 id="b3x-payroll-work-heading">手を動かして確かめる：給料の手取額</h2>
+<figure id="b3x-payroll-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-payroll-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">給料の総額</th><td>242,000円</td></tr>
+<tr><th scope="row">従業員負担の社会保険料</th><td>31,000円</td></tr>
+<tr><th scope="row">源泉所得税</th><td>5,000円</td></tr>
+<tr><th scope="row">会社負担分の社会保険料</th><td>別払い33,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-payroll-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>普通預金から振り込む手取額はいくらですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="206000" data-guided-hint="本人負担の控除だけを給料総額から引きます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-payroll-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-payroll-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>242,000−31,000−5,000＝206,000円。会社負担33,000円は会社側の費用のため、この計算では差し引きません。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

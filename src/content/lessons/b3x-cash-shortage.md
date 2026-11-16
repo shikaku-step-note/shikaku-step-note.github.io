@@ -1,16 +1,30 @@
 ---
-{"stableId":"b3x-cash-shortage","qualification":"boki-3","title":"現金過不足を実際有高へ合わせ、原因を追って解消する","description":"実際の現金と帳簿残高の差を一時処理し、判明した支払漏れ・回収漏れ・記帳誤りを振り替え、決算時の未判明額を解消します。","order":9,"minutes":75,"sample":false,"updated":"2026-10-28","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["現金の実際有高と帳簿残高から過不足の借方・貸方を判断する","原因が判明した現金過不足を正しい勘定へ振り替える","決算時の未判明残高を雑損・雑益へ振り替え、処理の全体を検算する"],"prerequisite":"b3x-cash：現金の範囲と現金勘定の増減を確認してください。","keywords":["実際有高","帳簿残高","現金過不足","記帳漏れ","雑損","雑益"],"glossary":[{"term":"実際有高","definition":"現物を実際に数え、簿記上の分類に従って求めた現金の金額"},{"term":"帳簿残高","definition":"帳簿の記録から計算した勘定の残高"},{"term":"現金過不足","definition":"現金の実際有高と帳簿残高の差を、原因判明まで一時的に記録する勘定"},{"term":"記帳漏れ","definition":"実際には発生した取引を帳簿へ記録していないこと"},{"term":"雑損","definition":"現金不足の未判明額など、通常の主要科目に分けにくい損失を記録する勘定"},{"term":"雑益","definition":"現金超過の未判明額など、通常の主要科目に分けにくい利益を記録する勘定"}]}
+{"stableId":"b3x-cash-shortage","qualification":"boki-3","title":"現金過不足を実際有高へ合わせ、原因を追って解消する","description":"実際の現金と帳簿残高の差を一時処理し、判明した支払漏れ・回収漏れ・記帳誤りを振り替え、決算時の未判明額を解消します。","order":9,"minutes":75,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["現金の実際有高と帳簿残高から過不足の借方・貸方を判断する","原因が判明した現金過不足を正しい勘定へ振り替える","決算時の未判明残高を雑損・雑益へ振り替え、処理の全体を検算する"],"prerequisite":"b3x-cash：現金の範囲と現金勘定の増減を確認してください。","keywords":["実際有高","帳簿残高","現金過不足","記帳漏れ","雑損","雑益"],"glossary":[{"term":"実際有高","definition":"現物を実際に数え、簿記上の分類に従って求めた現金の金額"},{"term":"帳簿残高","definition":"帳簿の記録から計算した勘定の残高"},{"term":"現金過不足","definition":"現金の実際有高と帳簿残高の差を、原因判明まで一時的に記録する勘定"},{"term":"記帳漏れ","definition":"実際には発生した取引を帳簿へ記録していないこと"},{"term":"雑損","definition":"現金不足の未判明額など、通常の主要科目に分けにくい損失を記録する勘定"},{"term":"雑益","definition":"現金超過の未判明額など、通常の主要科目に分けにくい利益を記録する勘定"}],"inlineGlossary":[{"term":"実際有高","definition":"現物を実際に数え、簿記上の分類に従って求めた現金の金額","id":"term-1"},{"term":"帳簿残高","definition":"帳簿の記録から計算した勘定の残高","id":"term-2"},{"term":"現金過不足","definition":"現金の実際有高と帳簿残高の差を、原因判明まで一時的に記録する勘定","id":"term-3"},{"term":"雑損","definition":"現金不足の未判明額など、通常の主要科目に分けにくい損失を記録する勘定","id":"term-5"}]}
 ---
 
-現金を数えたら帳簿より3,000円少なかったとしても、すぐに「3,000円の損失」とは決められません。送料を払った記録が抜けているかもしれず、受取りや支払いの金額を書き間違えた可能性もあります。現金過不足では、まず現金を実際の金額に合わせ、原因が分かった分を正しい科目へ移す、という二段階で考えます。
+現金を数えたら帳簿より3,000円少なかったとしても、すぐに「3,000円の損失」とは決められません。送料を払った記録が抜けているかもしれず、受取りや支払いの金額を書き間違えた可能性もあります。<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">現金過不足</a>では、まず現金を実際の金額に合わせ、原因が分かった分を正しい科目へ移す、という二段階で考えます。
 
 <span id="objective-1"></span>
 
 ## 足りないときは現金を減らし、多いときは増やす
 
-現金の帳簿残高は、会社が持っているはずの金額を示します。現物を数えて得た実際有高がそれより小さければ、帳簿の現金を減らす必要があります。現金の減少は貸方なので、借方に現金過不足、貸方に現金を置きます。反対に実際有高の方が大きければ、借方現金、貸方現金過不足です。
+現金の<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">帳簿残高</a>は、会社が持っているはずの金額を示します。現物を数えて得た<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">実際有高</a>がそれより小さければ、帳簿の現金を減らす必要があります。現金の減少は貸方なので、借方に現金過不足、貸方に現金を置きます。反対に実際有高の方が大きければ、借方現金、貸方現金過不足です。
 
 「不足だから貸方」などと現金過不足だけの向きを覚えると、後の振替で迷います。最初に現金をどう直すかを決めてください。現金を減らした貸方の反対側が、現金過不足の借方になると追えば、理由が残ります。実際有高の集計では、他人振出小切手などの分類を先に確認する必要もあります。
+
+<figure id="b3x-cash-shortage-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-cash-shortage-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">差を発見した日</th><td>実際の現金に帳簿を合わせ、原因が分からない差を現金過不足に置く。</td></tr>
+<tr><th scope="row">原因が判明した日</th><td>現金過不足のうち、原因と対応する金額を費用などへ移す。</td></tr>
+<tr><th scope="row">決算日</th><td>なお残る借方残高は雑損、貸方残高は雑益に振り替える。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-cash-shortage-comparison-caption">現金の差が見つかってから整理するまで</figcaption>
+</figure>
 
 <span id="worked-1"></span>
 
@@ -50,7 +64,7 @@
 
 ## 決算では未判明部分を雑損または雑益へ振り替える
 
-調査しても原因が分からない差額を、現金過不足のまま翌期へ残さないようにします。決算時に借方残高が残る不足は、借方雑損、貸方現金過不足です。貸方残高が残る超過は、借方現金過不足、貸方雑益です。ここでも現金は動かしません。
+調査しても原因が分からない差額を、現金過不足のまま翌期へ残さないようにします。決算時に借方残高が残る不足は、借方<a class="lesson-term" data-lesson-term href="#lesson-term-term-5">雑損</a>、貸方現金過不足です。貸方残高が残る超過は、借方現金過不足、貸方雑益です。ここでも現金は動かしません。
 
 現金過不足の借方残高が3,000円でも、決算で新たに原因が判明することがあります。問題文が原因判明と未判明額の処理を一度に求めている場合は、判明分を正しい科目へ移し、残りだけを雑損・雑益にします。残高全額を先に雑損へ振り替えてから費用を追加すると、同じ損失を重ねてしまいます。
 
@@ -105,6 +119,37 @@ T字勘定へ発見時の5,000円を借方、原因判明の3,000円を貸方へ
 消耗品費の不足計上は4,300−3,400＝900円です。借方消耗品費900・通信費5,000／貸方現金過不足5,900とします。残る借方残高は7,200−5,900＝1,300円で、借方雑損1,300／貸方現金過不足1,300です。原因判明時の金額は、領収書の全額ではなく既記帳との差です。
 
 調査の問題では、資料を「正しい処理」「既にした処理」「今追加する処理」の順で書き出すと整理できます。二つの仕訳を同時に思い出そうとせず、現金過不足の左右に実際の数字を並べ、残高がゼロまで説明できるかを確かめましょう。
+
+<section class="guided-lesson" aria-labelledby="b3x-cash-shortage-work-heading">
+<h2 id="b3x-cash-shortage-work-heading">手を動かして確かめる：調べても残った不足</h2>
+<figure id="b3x-cash-shortage-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-cash-shortage-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">確認前の帳簿残高</th><td>68,000円</td></tr>
+<tr><th scope="row">実際に数えた現金</th><td>60,000円</td></tr>
+<tr><th scope="row">見つかった未記録の電気代の現金払い</th><td>5,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-cash-shortage-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>ほかに原因が見つからないとき、決算で記録する雑損は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="3000" data-guided-hint="現金の差のうち、理由が判明した分を先に費用へ移します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-cash-shortage-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-cash-shortage-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>差は8,000円。記録漏れの水道光熱費5,000円を現金過不足から振り替えると、残る3,000円が雑損です。実際有高へ合わせた現金をもう一度減らしません。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

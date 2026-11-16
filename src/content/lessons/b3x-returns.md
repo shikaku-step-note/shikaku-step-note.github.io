@@ -1,5 +1,5 @@
 ---
-{"stableId":"b3x-returns","qualification":"boki-3","title":"仕入返品・売上返品を元の取引と反対に記録する","description":"商品が戻る方向、原価と売価、掛け代金の減額と返金を区別し、返品を含む仕入帳・売上帳・債権債務の残高を検算します。","order":18,"minutes":80,"sample":false,"updated":"2026-10-28","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["仕入返品を元の仕入価額、売上返品を元の売価で記録する","未決済と決済済みの返品を区別して、買掛金・売掛金の減額や返金を仕訳する","返品後の純仕入・純売上と相手別残高を照合し、数量記録との関係を説明する"],"prerequisite":"b3x-purchases、b3x-sales：仕入・売上を記録する金額と、掛け取引の決済を確認してください。","keywords":["仕入返品","売上返品","純仕入高","純売上高","返金","返品単価","赤記"],"glossary":[{"term":"仕入返品","definition":"仕入れた商品を品違い等の理由により仕入先へ返すこと"},{"term":"売上返品","definition":"販売した商品が品違い等の理由により得意先から戻ること"},{"term":"純仕入高","definition":"仕入総額から仕入返品等を差し引いた正味の仕入額"},{"term":"純売上高","definition":"売上総額から売上返品等を差し引いた正味の売上額"},{"term":"返金","definition":"既に受け取った代金の全部または一部を相手へ返すこと"},{"term":"返品単価","definition":"返品する商品の元の取引に対応する単価"},{"term":"赤記","definition":"取消しや減額を区別して示すための記入方法の一つ"}]}
+{"stableId":"b3x-returns","qualification":"boki-3","title":"仕入返品・売上返品を元の取引と反対に記録する","description":"商品が戻る方向、原価と売価、掛け代金の減額と返金を区別し、返品を含む仕入帳・売上帳・債権債務の残高を検算します。","order":18,"minutes":80,"sample":false,"updated":"2026-11-16","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["仕入返品を元の仕入価額、売上返品を元の売価で記録する","未決済と決済済みの返品を区別して、買掛金・売掛金の減額や返金を仕訳する","返品後の純仕入・純売上と相手別残高を照合し、数量記録との関係を説明する"],"prerequisite":"b3x-purchases、b3x-sales：仕入・売上を記録する金額と、掛け取引の決済を確認してください。","keywords":["仕入返品","売上返品","純仕入高","純売上高","返金","返品単価","赤記"],"glossary":[{"term":"仕入返品","definition":"仕入れた商品を品違い等の理由により仕入先へ返すこと"},{"term":"売上返品","definition":"販売した商品が品違い等の理由により得意先から戻ること"},{"term":"純仕入高","definition":"仕入総額から仕入返品等を差し引いた正味の仕入額"},{"term":"純売上高","definition":"売上総額から売上返品等を差し引いた正味の売上額"},{"term":"返金","definition":"既に受け取った代金の全部または一部を相手へ返すこと"},{"term":"返品単価","definition":"返品する商品の元の取引に対応する単価"},{"term":"赤記","definition":"取消しや減額を区別して示すための記入方法の一つ"}],"inlineGlossary":[{"term":"仕入返品","definition":"仕入れた商品を品違い等の理由により仕入先へ返すこと","id":"term-1"},{"term":"売上返品","definition":"販売した商品が品違い等の理由により得意先から戻ること","id":"term-2"},{"term":"返金","definition":"既に受け取った代金の全部または一部を相手へ返すこと","id":"term-5"},{"term":"赤記","definition":"取消しや減額を区別して示すための記入方法の一つ","id":"term-7"}]}
 ---
 
 返品では、商品の移動と代金の決済状況を合わせて記録します。仕入れた商品を返せば、支払うべき代金が減ったり、払った代金が返ったりします。売った商品が戻れば、請求権を減らしたり、受取済み代金を返したりします。元の取引で何を記録したかを確かめ、その取消し部分を反対方向へ記録していきます。
@@ -12,6 +12,20 @@
 
 販売時は貸方売上なので、返品を受けたときは借方売上で減らします。掛け販売の未回収部分なら、貸方売掛金です。販売金額で売上と請求権を減らすため、商品の仕入原価をこの仕訳の金額には使いません。商品有高帳で原価の在庫を戻す処理とは、評価する金額が違います。
 
+<figure id="b3x-returns-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-returns-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">販売した会社の売上</th><td>当初の売価で取り消す。掛けなら回収予定額も減る。</td></tr>
+<tr><th scope="row">販売した会社の商品有高帳</th><td>返品された商品の数量を、払い出したときの原価で受け入れる。</td></tr>
+<tr><th scope="row">買った会社の仕入</th><td>返品した商品の仕入を取り消し、掛けなら買掛金を減らす。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-returns-comparison-caption">返品を受けて見直す記録</figcaption>
+</figure>
+
 <span id="worked-1"></span>
 
 ### 例題1：仕入れた数量の一部を返品する
@@ -20,15 +34,15 @@
 
 返品後の正味仕入は40,000−5,000＝35,000円、買掛金も35,000円です。商品数量70個×500円＝35,000円とつながります。返品時の借方を仕入にすると、商品を返したのに仕入額が増え、買掛金も減りません。元の記録と反対方向になっているかを確かめましょう。
 
-この商品を1個800円で売る予定であっても、仕入返品額は10×500円です。まだ販売していない商品の予定売価を使って、仕入先への債務を減らす額を8,000円とはしません。誰とのどの取引を取り消すかが単価選択の根拠です。
+この商品を1個800円で売る予定であっても、<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">仕入返品</a>額は10×500円です。まだ販売していない商品の予定売価を使って、仕入先への債務を減らす額を8,000円とはしません。誰とのどの取引を取り消すかが単価選択の根拠です。
 
 <span id="objective-2"></span>
 
 ## 代金を既に払った・受け取った場合は、現金等が戻る
 
-未決済の掛け仕入れを返品すると買掛金が減りますが、すでに現金払い済みなら、返金を受けた現金が増えます。借方現金、貸方仕入です。返金が後日になるなどの条件は、設問の指定科目に合わせます。返品前に買掛金が残っているかを確認してください。
+未決済の掛け仕入れを返品すると買掛金が減りますが、すでに現金払い済みなら、<a class="lesson-term" data-lesson-term href="#lesson-term-term-5">返金</a>を受けた現金が増えます。借方現金、貸方仕入です。返金が後日になるなどの条件は、設問の指定科目に合わせます。返品前に買掛金が残っているかを確認してください。
 
-売上返品でも、代金未回収なら売掛金の減少です。受取済みの代金をその場で現金返金したなら、借方売上、貸方現金です。相手に何を戻す必要があるかという債権債務の状態を、返品前の残高から判断します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">売上返品</a>でも、代金未回収なら売掛金の減少です。受取済みの代金をその場で現金返金したなら、借方売上、貸方現金です。相手に何を戻す必要があるかという債権債務の状態を、返品前の残高から判断します。
 
 <span id="worked-2"></span>
 
@@ -50,7 +64,7 @@
 
 ## 返品後の正味額を、帳簿と数量の両方で確認する
 
-仕入帳・売上帳では、返品を通常の購入・販売と区別して記録し、総額から返品額を差し引いて純額を求めます。返品の記入を仕入帳へ追加の仕入れとして足すと、数量も金額も反対に動きます。帳簿の様式に応じて、返品欄や赤記などの指示を確認してください。
+仕入帳・売上帳では、返品を通常の購入・販売と区別して記録し、総額から返品額を差し引いて純額を求めます。返品の記入を仕入帳へ追加の仕入れとして足すと、数量も金額も反対に動きます。帳簿の様式に応じて、返品欄や<a class="lesson-term" data-lesson-term href="#lesson-term-term-7">赤記</a>などの指示を確認してください。
 
 数量記録では、仕入返品は倉庫から商品が出る動きです。売上返品は販売した商品が倉庫へ戻る動きです。商品有高帳ではいずれも原価で記録するため、売上帳の返品金額と商品有高帳の戻入額が一致しないことがあります。その差は売価と原価の違いによるもので、直ちに誤記とは限りません。
 
@@ -109,6 +123,38 @@
 純仕入は（50−5）×800＝36,000円で、買掛金も36,000円です。純売上は（30−2）×1,200＝33,600円で、売掛金も33,600円です。数量は50−5−30＋2＝17個です。原価は17×800＝13,600円となります。
 
 仕入返品は借方買掛金4,000／貸方仕入4,000、売上返品は借方売上2,400／貸方売掛金2,400です。売上返品の売価2,400円と、戻った原価1,600円を区別します。最終的に販売が成立した28個の原価22,400円と残高13,600円を合計すると、正味仕入原価36,000円へ一致します。
+
+<section class="guided-lesson" aria-labelledby="b3x-returns-work-heading">
+<h2 id="b3x-returns-work-heading">手を動かして確かめる：返品後の売掛金</h2>
+<figure id="b3x-returns-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-returns-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">同じ得意先への掛け売上</th><td>96,000円</td></tr>
+<tr><th scope="row">返品した商品の販売時の売価</th><td>14,000円</td></tr>
+<tr><th scope="row">返品した商品の原価</th><td>10,000円</td></tr>
+<tr><th scope="row">回収</th><td>未実施</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-returns-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>返品後の売掛金はいくらですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="82000" data-guided-hint="売上を取り消す額は、販売時の売価です。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-returns-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-returns-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>96,000−14,000＝82,000円。売上の取消しは売価で行います。返された商品の原価10,000円は、有高帳などで扱う金額です。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

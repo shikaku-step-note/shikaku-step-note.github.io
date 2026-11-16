@@ -1,5 +1,5 @@
 ---
-{"stableId":"b3x-vouchers","qualification":"boki-3","title":"三伝票を作り、仕訳日計表から元帳へ集計する","description":"入金・出金・振替伝票の作成、一部現金取引の二つの分け方、伝票集計から仕訳日計表・元帳への記録を学びます。","order":6,"minutes":95,"sample":false,"updated":"2026-10-28","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["取引を入金・出金・振替の各伝票へ正しく分ける","一部現金取引を分割方式と全額掛け方式で表し、両方式の結果を照合する","複数伝票を科目別に集計して仕訳日計表を作り元帳残高へつなげる"],"prerequisite":"単純・複合仕訳と総勘定元帳への転記を先に学びます。現金と普通預金の違いも確認します。","keywords":["入金伝票","出金伝票","振替伝票","三伝票制","仕訳日計表","取引の分割","諸口","証ひょう"],"glossary":[{"term":"入金伝票","definition":"現金の受取りを記録する伝票"},{"term":"出金伝票","definition":"現金の支払いを記録する伝票"},{"term":"振替伝票","definition":"三伝票制で現金の入出金以外の取引を記録する伝票"},{"term":"三伝票制","definition":"入金・出金・振替の三種類の伝票を用いる方式"},{"term":"仕訳日計表","definition":"一日分の伝票等を科目別の借方・貸方へ集計した表"},{"term":"取引の分割","definition":"一部現金取引を現金部分とそれ以外の部分へ分けて記録する方法"},{"term":"諸口","definition":"摘要で相手科目が複数あることなどを示す表記"},{"term":"証ひょう","definition":"取引内容を裏付ける請求書・領収書などの資料"}]}
+{"stableId":"b3x-vouchers","qualification":"boki-3","title":"三伝票を作り、仕訳日計表から元帳へ集計する","description":"入金・出金・振替伝票の作成、一部現金取引の二つの分け方、伝票集計から仕訳日計表・元帳への記録を学びます。","order":6,"minutes":95,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["取引を入金・出金・振替の各伝票へ正しく分ける","一部現金取引を分割方式と全額掛け方式で表し、両方式の結果を照合する","複数伝票を科目別に集計して仕訳日計表を作り元帳残高へつなげる"],"prerequisite":"単純・複合仕訳と総勘定元帳への転記を先に学びます。現金と普通預金の違いも確認します。","keywords":["入金伝票","出金伝票","振替伝票","三伝票制","仕訳日計表","取引の分割","諸口","証ひょう"],"glossary":[{"term":"入金伝票","definition":"現金の受取りを記録する伝票"},{"term":"出金伝票","definition":"現金の支払いを記録する伝票"},{"term":"振替伝票","definition":"三伝票制で現金の入出金以外の取引を記録する伝票"},{"term":"三伝票制","definition":"入金・出金・振替の三種類の伝票を用いる方式"},{"term":"仕訳日計表","definition":"一日分の伝票等を科目別の借方・貸方へ集計した表"},{"term":"取引の分割","definition":"一部現金取引を現金部分とそれ以外の部分へ分けて記録する方法"},{"term":"諸口","definition":"摘要で相手科目が複数あることなどを示す表記"},{"term":"証ひょう","definition":"取引内容を裏付ける請求書・領収書などの資料"}],"inlineGlossary":[{"term":"入金伝票","definition":"現金の受取りを記録する伝票","id":"term-1"},{"term":"出金伝票","definition":"現金の支払いを記録する伝票","id":"term-2"},{"term":"振替伝票","definition":"三伝票制で現金の入出金以外の取引を記録する伝票","id":"term-3"},{"term":"三伝票制","definition":"入金・出金・振替の三種類の伝票を用いる方式","id":"term-4"}]}
 ---
 
 店に届く領収書や請求書は、形も取引の内容もさまざまです。その内容を社内の決まった書式へ写して記録する方法の一つが伝票制です。ここでは入金・出金・振替の三種類を使います。一つの仕訳をどの伝票で表すかを考えながら、書式の使い方を学んでいきます。
@@ -8,11 +8,11 @@
 
 ## 三種類の伝票は、会社の現金が動くかで選ぶ
 
-入金伝票には現金が増える取引、出金伝票には現金が減る取引を記録します。振替伝票には、現金の増減を伴わない取引を借方・貸方の形で記入します。「振替」という名前でも、口座間の振込だけを記録する書類ではありません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">入金伝票</a>には現金が増える取引、<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">出金伝票</a>には現金が減る取引を記録します。<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">振替伝票</a>には、現金の増減を伴わない取引を借方・貸方の形で記入します。「振替」という名前でも、口座間の振込だけを記録する書類ではありません。
 
 現金売上50,000円なら入金伝票で、通常は相手科目の売上と50,000円を記します。現金で通信費4,000円を払ったなら、出金伝票に通信費と4,000円です。預金から家賃30,000円を払った場合は、出金伝票ではなく振替伝票で支払家賃30,000／普通預金30,000を記録します。
 
-銀行の預金から払う取引も日常語では「出金」と呼びますが、この三伝票制の出金伝票は現金の支払いを対象とします。問題の条件に別の定義がなければ、会社の現金か預金かを分けて読みます。書式にすでに現金側が印刷されている場合もあるので、空欄へ重ねて現金を記入しないようにします。
+銀行の預金から払う取引も日常語では「出金」と呼びますが、この<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">三伝票制</a>の出金伝票は現金の支払いを対象とします。問題の条件に別の定義がなければ、会社の現金か預金かを分けて読みます。書式にすでに現金側が印刷されている場合もあるので、空欄へ重ねて現金を記入しないようにします。
 
 <span id="worked-1"></span>
 
@@ -20,12 +20,19 @@
 
 ①商品を現金で24,000円販売した。②現金で旅費交通費3,000円を払った。③商品18,000円を掛けで仕入れた。④普通預金から現金10,000円を引き出した。税は考慮しません。先に全体の仕訳を書いて判断します。
 
+<figure id="b3x-vouchers-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-vouchers-comparison-caption">
+
 | 取引 | 仕訳 | 使う伝票と記入内容 |
 | --- | --- | --- |
 | ① | 現金24,000／売上24,000 | 入金：売上24,000 |
 | ② | 旅費交通費3,000／現金3,000 | 出金：旅費交通費3,000 |
 | ③ | 仕入18,000／買掛金18,000 | 振替：仕入18,000／買掛金18,000 |
 | ④ | 現金10,000／普通預金10,000 | 入金：普通預金10,000 |
+
+</div>
+<figcaption id="b3x-vouchers-comparison-caption">現金が動いた部分に応じて、入金・出金・振替伝票を選びます。</figcaption>
+</figure>
 
 ④では預金口座から現金へ形が変わっただけで、収益は生じていません。入金伝票だから相手科目を常に売上にする、という選び方はできません。また③の掛仕入れは支払義務が増えるものの、その時点で現金は動いていないので振替伝票です。
 
@@ -125,6 +132,37 @@
 現金の借方は50,000円、貸方は23,000円です。その他の借方は買掛金20,000・旅費交通費3,000・備品45,000・給料12,000で、借方合計130,000円。貸方は現金23,000・売掛金36,000・売上14,000・未払金45,000・普通預金12,000で、合計130,000円です。現金増加27,000円と日計表総額130,000円は、別の情報なので混同しないようにします。
 
 伝票ごとに取引番号を付け、一つの取引を二枚へ分けた場合も同じ元取引に戻れるようにしておくと、集計漏れと二重集計を区別できます。
+
+<section class="guided-lesson" aria-labelledby="b3x-vouchers-work-heading">
+<h2 id="b3x-vouchers-work-heading">手を動かして確かめる：現金を受け取った伝票</h2>
+<figure id="b3x-vouchers-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-vouchers-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">商品の売上高</th><td>53,000円</td></tr>
+<tr><th scope="row">当日受け取った現金</th><td>19,000円</td></tr>
+<tr><th scope="row">残り</th><td>掛け。取引を分割する方式</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-vouchers-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>入金伝票に記入する金額は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="19000" data-guided-hint="取引のうち、実際に現金が入った部分で入金伝票を作ります。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-vouchers-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-vouchers-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>入金伝票は19,000円、振替伝票に対応する掛けの売上は34,000円。帳簿で両方を合計すると売上53,000円になります。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

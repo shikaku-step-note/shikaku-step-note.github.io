@@ -1,7 +1,7 @@
 {
   "qualification": "boki-3",
   "version": "boki3-2026-v2",
-  "reviewed": "2026-10-28",
+  "reviewed": "2026-11-16",
   "applicability": "2026年度（2027年3月31日まで）。2022年度版区分表、2026年4月1日施行法令等。公表済み2027年度改定は別。",
   "units": [
     {
@@ -60,6 +60,7 @@
         "b3x-asset-acquisition",
         "b3x-depreciation",
         "b3x-asset-sale",
+        "b3x-asset-register-reconciliation",
         "b3x-supplies",
         "b3x-capital",
         "b3x-dividends",
@@ -72,10 +73,12 @@
       "title": "決算整理と期間の対応",
       "lessons": [
         "b3x-closing-inventory",
+        "b3x-inventory-period-reconciliation",
         "b3x-bad-debt",
         "b3x-expense-accrual",
         "b3x-revenue-accrual",
         "b3x-reversal",
+        "b3x-loan-year-boundary",
         "b3-accrual",
         "b3x-closing-adjustments",
         "b3-adjustments"

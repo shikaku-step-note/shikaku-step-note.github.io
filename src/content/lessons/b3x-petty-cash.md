@@ -1,8 +1,8 @@
 ---
-{"stableId":"b3x-petty-cash","qualification":"boki-3","title":"小口現金を定額で管理し、報告と補給の時点を区別する","description":"定額資金前渡制の設定、用度係の支払い、会計係への報告、補給を区別し、小口現金出納帳と各時点の仕訳を練習します。","order":10,"minutes":75,"sample":false,"updated":"2026-10-28","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["定額資金前渡制の設定と小口現金の増減を説明する","支払報告と補給の時点に合わせて経費・小口現金を仕訳する","小口現金出納帳の費目別合計、残金、補給額を検算する"],"prerequisite":"b3x-cash：現金の増減と費用の借方計上を確認してください。預金からの補給は本文で説明します。","keywords":["小口現金","定額資金前渡制","用度係","会計係","小口現金出納帳","補給","支払報告"],"glossary":[{"term":"小口現金","definition":"日常の少額支払いに備えて担当者へ前渡ししておく現金を記録する勘定"},{"term":"定額資金前渡制","definition":"一定額を前渡しし、使用額を補給して所定の手元資金へ戻す管理方法"},{"term":"用度係","definition":"小口現金を管理し、少額の支払いとその記録・報告を行う担当者"},{"term":"会計係","definition":"報告などを基に会社の仕訳を行い、資金の補給を手配する担当者"},{"term":"小口現金出納帳","definition":"小口現金の受入れ、費目別支払い、残高を記録する補助簿"},{"term":"補給","definition":"使用した小口現金などを追加して、所定の資金額へ戻すこと"},{"term":"支払報告","definition":"小口現金担当者が会計係へ支払いの内容と金額を伝えること"}]}
+{"stableId":"b3x-petty-cash","qualification":"boki-3","title":"小口現金を定額で管理し、報告と補給の時点を区別する","description":"定額資金前渡制の設定、用度係の支払い、会計係への報告、補給を区別し、小口現金出納帳と各時点の仕訳を練習します。","order":10,"minutes":75,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["定額資金前渡制の設定と小口現金の増減を説明する","支払報告と補給の時点に合わせて経費・小口現金を仕訳する","小口現金出納帳の費目別合計、残金、補給額を検算する"],"prerequisite":"b3x-cash：現金の増減と費用の借方計上を確認してください。預金からの補給は本文で説明します。","keywords":["小口現金","定額資金前渡制","用度係","会計係","小口現金出納帳","補給","支払報告"],"glossary":[{"term":"小口現金","definition":"日常の少額支払いに備えて担当者へ前渡ししておく現金を記録する勘定"},{"term":"定額資金前渡制","definition":"一定額を前渡しし、使用額を補給して所定の手元資金へ戻す管理方法"},{"term":"用度係","definition":"小口現金を管理し、少額の支払いとその記録・報告を行う担当者"},{"term":"会計係","definition":"報告などを基に会社の仕訳を行い、資金の補給を手配する担当者"},{"term":"小口現金出納帳","definition":"小口現金の受入れ、費目別支払い、残高を記録する補助簿"},{"term":"補給","definition":"使用した小口現金などを追加して、所定の資金額へ戻すこと"},{"term":"支払報告","definition":"小口現金担当者が会計係へ支払いの内容と金額を伝えること"}],"inlineGlossary":[{"term":"小口現金","definition":"日常の少額支払いに備えて担当者へ前渡ししておく現金を記録する勘定","id":"term-1"},{"term":"定額資金前渡制","definition":"一定額を前渡しし、使用額を補給して所定の手元資金へ戻す管理方法","id":"term-2"},{"term":"会計係","definition":"報告などを基に会社の仕訳を行い、資金の補給を手配する担当者","id":"term-4"},{"term":"補給","definition":"使用した小口現金などを追加して、所定の資金額へ戻すこと","id":"term-6"}]}
 ---
 
-切手代や近距離の交通費を払うたびに会計係から現金を受け取ると、少額支払いの処理が煩雑になります。そこで一定の現金を担当者へ渡し、担当者が支払いをまとめて報告する仕組みを使います。小口現金の問題では、担当者が払った日、会計係が報告を受けた日、資金を補給した日を分けて追うと、仕訳の時点がはっきりします。
+切手代や近距離の交通費を払うたびに<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">会計係</a>から現金を受け取ると、少額支払いの処理が煩雑になります。そこで一定の現金を担当者へ渡し、担当者が支払いをまとめて報告する仕組みを使います。<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">小口現金</a>の問題では、担当者が払った日、会計係が報告を受けた日、資金を<a class="lesson-term" data-lesson-term href="#lesson-term-term-6">補給</a>した日を分けて追うと、仕訳の時点がはっきりします。
 
 <span id="objective-1"></span>
 
@@ -10,7 +10,7 @@
 
 小口現金を設定しても、その時点では会社全体の費用は発生しません。現金または当座預金などから、日常の少額支払い用に資金を移した段階だからです。借方小口現金、貸方現金や当座預金などとします。小切手を振り出して渡した場合の貸方は当座預金です。
 
-定額資金前渡制では、例えば30,000円と定めた手元資金を担当者へ渡し、使った額を後で補給します。支払い後には担当者の現物残金が減り、支出の証拠と合わせて元の定額へつながります。補給することで再び30,000円へ戻ります。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">定額資金前渡制</a>では、例えば30,000円と定めた手元資金を担当者へ渡し、使った額を後で補給します。支払い後には担当者の現物残金が減り、支出の証拠と合わせて元の定額へつながります。補給することで再び30,000円へ戻ります。
 
 <span id="worked-1"></span>
 
@@ -64,6 +64,9 @@
 
 定額25,000円で、当週の記録は次のとおりです。他の増減はありません。
 
+<figure id="b3x-petty-cash-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-petty-cash-comparison-caption">
+
 | 日付 | 内容 | 支払額 | 費目 |
 | --- | --- | ---: | --- |
 | 6日 | 郵送料 | 1,100円 | 通信費 |
@@ -71,6 +74,10 @@
 | 8日 | 事務用消耗品 | 3,600円 | 消耗品費 |
 | 9日 | 宅配便送料 | 1,300円 | 通信費 |
 | 10日 | バス代 | 900円 | 旅費交通費 |
+
+</div>
+<figcaption id="b3x-petty-cash-comparison-caption">報告書の費目と支払額を集め、補給額と照合します。</figcaption>
+</figure>
 
 通信費は1,100＋1,300＝2,400円、旅費交通費は2,400＋900＝3,300円、消耗品費は3,600円です。支払合計は9,300円で、現物残金は25,000−9,300＝15,700円です。補給額9,300円を受け取ると、15,700＋9,300＝25,000円へ戻ります。
 
@@ -119,6 +126,37 @@
 支払総額は1,700＋4,800＋2,900＝9,400円です。報告時は借方通信費1,700・旅費交通費4,800・消耗品費2,900／貸方小口現金9,400です。小口現金の残高は36,000−9,400＝26,600円です。翌日は借方小口現金9,400／貸方普通預金9,400となり、36,000円へ戻ります。
 
 最後に、報告日の借方経費合計と小口現金の貸方額が一致すること、翌日の補給額が同じ9,400円であることを照合します。費用の分類、報告時点、資金の出所を順に確かめれば、取引を一つの定型仕訳へ押し込めずに処理できます。
+
+<section class="guided-lesson" aria-labelledby="b3x-petty-cash-work-heading">
+<h2 id="b3x-petty-cash-work-heading">手を動かして確かめる：定額へ戻す補給</h2>
+<figure id="b3x-petty-cash-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-petty-cash-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">週の初めの小口現金</th><td>25,000円</td></tr>
+<tr><th scope="row">精算報告の消耗品費</th><td>6,300円</td></tr>
+<tr><th scope="row">精算報告の旅費交通費</th><td>4,500円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-petty-cash-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>補給後に25,000円へ戻すには、いくら渡しますか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="10800" data-guided-hint="実際に支払った金額を合計します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-petty-cash-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-petty-cash-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>6,300＋4,500＝10,800円を補給。報告後の小口現金14,200円に足すと25,000円です。補給そのものは追加の費用ではありません。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

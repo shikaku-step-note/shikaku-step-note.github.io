@@ -1,16 +1,30 @@
 ---
-{"stableId":"b3x-sales","qualification":"boki-3","title":"三分法の売上と売掛金を記録し、売価と原価を分ける","description":"現金販売、掛け販売、一部回収、前受金充当を売価で記録し、売上帳と得意先別売掛金の関係、利益と回収額の違いを学びます。","order":16,"minutes":80,"sample":false,"updated":"2026-10-28","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["三分法の商品販売を売価で記録し、販売時の売上と仕入原価を区別する","現金・掛け・一部即時回収・前受金充当を含む販売と回収を仕訳する","売上帳と売掛金元帳を照合し、販売額・回収額・利益の関係を説明する"],"prerequisite":"b3x-purchases：三分法、原価での仕入記録、掛けの発生と決済を確認してください。","keywords":["売上","売価","原価","売掛金","掛け売上げ","売上帳","売掛金元帳","前受金"],"glossary":[{"term":"売上","definition":"商品販売等による収益を記録する勘定"},{"term":"売価","definition":"商品を販売する際の価格"},{"term":"原価","definition":"商品を取得するためにかかった金額など、対象のために負担した価額"},{"term":"売掛金","definition":"通常の商品売買等で掛け販売をした際の代金請求権を記録する資産勘定"},{"term":"掛け売上げ","definition":"代金を後日受け取る約束で商品を販売すること"},{"term":"売上帳","definition":"商品の販売やその返品などの明細を日付順に記録する補助簿"},{"term":"売掛金元帳","definition":"得意先ごとに売掛金の発生・回収・残高を記録する補助簿"},{"term":"前受金","definition":"商品等を引き渡す前に代金の一部などを受け取った際の負債勘定"}]}
+{"stableId":"b3x-sales","qualification":"boki-3","title":"三分法の売上と売掛金を記録し、売価と原価を分ける","description":"現金販売、掛け販売、一部回収、前受金充当を売価で記録し、売上帳と得意先別売掛金の関係、利益と回収額の違いを学びます。","order":16,"minutes":80,"sample":false,"updated":"2026-11-16","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["三分法の商品販売を売価で記録し、販売時の売上と仕入原価を区別する","現金・掛け・一部即時回収・前受金充当を含む販売と回収を仕訳する","売上帳と売掛金元帳を照合し、販売額・回収額・利益の関係を説明する"],"prerequisite":"b3x-purchases：三分法、原価での仕入記録、掛けの発生と決済を確認してください。","keywords":["売上","売価","原価","売掛金","掛け売上げ","売上帳","売掛金元帳","前受金"],"glossary":[{"term":"売上","definition":"商品販売等による収益を記録する勘定"},{"term":"売価","definition":"商品を販売する際の価格"},{"term":"原価","definition":"商品を取得するためにかかった金額など、対象のために負担した価額"},{"term":"売掛金","definition":"通常の商品売買等で掛け販売をした際の代金請求権を記録する資産勘定"},{"term":"掛け売上げ","definition":"代金を後日受け取る約束で商品を販売すること"},{"term":"売上帳","definition":"商品の販売やその返品などの明細を日付順に記録する補助簿"},{"term":"売掛金元帳","definition":"得意先ごとに売掛金の発生・回収・残高を記録する補助簿"},{"term":"前受金","definition":"商品等を引き渡す前に代金の一部などを受け取った際の負債勘定"}],"inlineGlossary":[{"term":"売上","definition":"商品販売等による収益を記録する勘定","id":"term-1"},{"term":"売価","definition":"商品を販売する際の価格","id":"term-2"},{"term":"原価","definition":"商品を取得するためにかかった金額など、対象のために負担した価額","id":"term-3"},{"term":"売掛金","definition":"通常の商品売買等で掛け販売をした際の代金請求権を記録する資産勘定","id":"term-4"}]}
 ---
 
-原価700円の商品を1,000円で売ったとき、売上は利益300円ではなく売価1,000円です。三分法では、商品購入を仕入、販売を売上として別々に記録します。販売のたびに仕入を減らすのではなく、期末商品の原価を使った決算整理で売上原価を求めます。まず売価と原価、販売と代金回収を明確に分けましょう。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">原価</a>700円の商品を1,000円で売ったとき、<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">売上</a>は利益300円ではなく<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">売価</a>1,000円です。三分法では、商品購入を仕入、販売を売上として別々に記録します。販売のたびに仕入を減らすのではなく、期末商品の原価を使った決算整理で売上原価を求めます。まず売価と原価、販売と代金回収を明確に分けましょう。
 
 <span id="objective-1"></span>
 
 ## 売上は売った代金の総額で記録する
 
-販売用商品を現金で売ると、借方現金、貸方売上です。掛けで売るなら借方売掛金、貸方売上です。決済方法で借方は変わりますが、同じ販売価格の商品なら売上額は変わりません。売上を記録する金額は数量×売価です。
+販売用商品を現金で売ると、借方現金、貸方売上です。掛けで売るなら借方<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">売掛金</a>、貸方売上です。決済方法で借方は変わりますが、同じ販売価格の商品なら売上額は変わりません。売上を記録する金額は数量×売価です。
 
 原価の資料が併記されていても、三分法の販売時仕訳にその原価を混ぜません。「利益を売上にする」「売価から仕入を直接減らす」といった処理にすると、売上規模と原価を区別して把握できなくなります。利益は収益と対応する費用との差額として求めます。
+
+<figure id="b3x-sales-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-sales-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">売上帳</th><td>販売単価を使い、売上高を計算する。現金販売と掛け販売の両方を記録する。</td></tr>
+<tr><th scope="row">商品有高帳</th><td>原価で払い出しを記録し、在庫の数量と原価を追う。</td></tr>
+<tr><th scope="row">売掛金元帳</th><td>売価のうち後から回収する額を得意先ごとに追う。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-sales-comparison-caption">販売に伴う記録で使う二つの単価</figcaption>
+</figure>
 
 <span id="worked-1"></span>
 
@@ -111,6 +125,38 @@ C社残高は30,000＋70,000−62,000＝38,000円、D社残高は44,000＋56,000
 引渡時に残る掛け部分は96,000−12,000−34,000＝50,000円です。借方前受金12,000・普通預金34,000・売掛金50,000／貸方売上96,000です。回収時は借方現金30,000／貸方売掛金30,000で、売掛金20,000円が残ります。
 
 既受取12,000円、引渡時受取34,000円、後日回収30,000円、未回収20,000円の合計96,000円が売上全額へ一致します。いつ受け取った金額かを分けて考えると、前受金と売掛金を同じ資産だと思い込むことなく、販売と決済の流れを説明できます。
+
+<section class="guided-lesson" aria-labelledby="b3x-sales-work-heading">
+<h2 id="b3x-sales-work-heading">手を動かして確かめる：三分法の売掛金</h2>
+<figure id="b3x-sales-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-sales-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">売価合計</th><td>146,000円</td></tr>
+<tr><th scope="row">販売時の現金受取</th><td>56,000円</td></tr>
+<tr><th scope="row">商品の原価</th><td>81,000円</td></tr>
+<tr><th scope="row">残額</th><td>掛け</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-sales-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>販売時に借方へ記入する売掛金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="90000" data-guided-hint="売掛金は売価の未回収分です。商品の原価はこの計算に混ぜません。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-sales-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-sales-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>146,000−56,000＝90,000円。現金56,000円と売掛金90,000円を借方、売上146,000円を貸方に置き、原価は設例の三分法では別に処理します。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

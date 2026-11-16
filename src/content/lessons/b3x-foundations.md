@@ -1,5 +1,5 @@
 ---
-{"stableId":"b3x-foundations","qualification":"boki-3","title":"会社の財産と利益を、二つの表で捉える","description":"会社と株主を分けて資産・負債・純資産を整理し、取引による変化から貸借対照表と損益計算書の関係を学びます。","order":1,"minutes":75,"sample":false,"updated":"2026-10-28","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["会社の立場から五つの勘定分類と取引の有無を判断する","資産・負債・純資産の関係を使って財政状態を計算する","収益と費用から利益を求め、出資・配当と区別して純資産につなげる"],"prerequisite":"四則計算だけを使います。簿記用語を初めて学ぶ人は、このレッスンから始めてください。","keywords":["資産","負債","純資産","収益","費用","貸借対照表","損益計算書","取引"],"glossary":[{"term":"資産","definition":"会社が保有する現金や商品、代金を受け取る権利など"},{"term":"負債","definition":"会社が将来代金の支払いなどを行う義務"},{"term":"純資産","definition":"資産総額から負債総額を引いた会社の持分に当たる額"},{"term":"収益","definition":"商品販売などによって生じる、利益を増やす要因"},{"term":"費用","definition":"収益を得る活動などで生じる、利益を減らす要因"},{"term":"貸借対照表","definition":"ある時点の資産・負債・純資産を示す表"},{"term":"損益計算書","definition":"ある期間の収益・費用と利益または損失を示す表"},{"term":"取引","definition":"簿記で記録する、会社の資産・負債・純資産等の増減を伴う出来事"}]}
+{"stableId":"b3x-foundations","qualification":"boki-3","title":"会社の財産と利益を、二つの表で捉える","description":"会社と株主を分けて資産・負債・純資産を整理し、取引による変化から貸借対照表と損益計算書の関係を学びます。","order":1,"minutes":75,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["会社の立場から五つの勘定分類と取引の有無を判断する","資産・負債・純資産の関係を使って財政状態を計算する","収益と費用から利益を求め、出資・配当と区別して純資産につなげる"],"prerequisite":"四則計算だけを使います。簿記用語を初めて学ぶ人は、このレッスンから始めてください。","keywords":["資産","負債","純資産","収益","費用","貸借対照表","損益計算書","取引"],"glossary":[{"term":"資産","definition":"会社が保有する現金や商品、代金を受け取る権利など"},{"term":"負債","definition":"会社が将来代金の支払いなどを行う義務"},{"term":"純資産","definition":"資産総額から負債総額を引いた会社の持分に当たる額"},{"term":"収益","definition":"商品販売などによって生じる、利益を増やす要因"},{"term":"費用","definition":"収益を得る活動などで生じる、利益を減らす要因"},{"term":"貸借対照表","definition":"ある時点の資産・負債・純資産を示す表"},{"term":"損益計算書","definition":"ある期間の収益・費用と利益または損失を示す表"},{"term":"取引","definition":"簿記で記録する、会社の資産・負債・純資産等の増減を伴う出来事"}],"inlineGlossary":[{"term":"資産","definition":"会社が保有する現金や商品、代金を受け取る権利など","id":"term-1"},{"term":"負債","definition":"会社が将来代金の支払いなどを行う義務","id":"term-2"},{"term":"純資産","definition":"資産総額から負債総額を引いた会社の持分に当たる額","id":"term-3"},{"term":"収益","definition":"商品販売などによって生じる、利益を増やす要因","id":"term-4"}]}
 ---
 
 雑貨を販売する小さな株式会社を開くとします。口座にお金が入ったとき、その全額を「もうけ」と考えてよいでしょうか。株主から出資を受けたお金や銀行から借りたお金も口座へ入りますが、商品を売って得た成績とは性質が違います。簿記は、金額に加えて、そのお金や権利がどう生まれたかを記録する仕組みです。
@@ -10,11 +10,14 @@
 
 会社の帳簿では、会社の財産と株主個人の財布を分けます。株主が個人用の服を自分のお金で買っただけなら、会社の現金も義務も変わりません。会社が店で使う机を買った場合は、会社の現金が減り、机という財産が増えます。登場人物が同じでも、誰の財産が動いたかを先に確かめます。
 
-会社が持っている現金、預金、商品、建物などは資産です。現物がなくても、商品を売った代金を後日受け取る権利である売掛金は資産になります。一方、商品の代金を後日支払う買掛金や銀行への借入金は負債です。物を持っているかどうかだけで区別せず、会社にとっての権利か義務かを読んでください。
+会社が持っている現金、預金、商品、建物などは<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">資産</a>です。現物がなくても、商品を売った代金を後日受け取る権利である売掛金は資産になります。一方、商品の代金を後日支払う買掛金や銀行への借入金は<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">負債</a>です。物を持っているかどうかだけで区別せず、会社にとっての権利か義務かを読んでください。
 
-純資産は、資産から負債を引いた残りです。3級で主に扱うのは、株主が払い込んだ資本金や、会社の利益が積み重なった繰越利益剰余金などです。「純資産」という名前の一つの現金袋があるわけではありません。現金が土地や備品に変わっていても、資産全体と負債との差として純資産を求められます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">純資産</a>は、資産から負債を引いた残りです。3級で主に扱うのは、株主が払い込んだ資本金や、会社の利益が積み重なった繰越利益剰余金などです。「純資産」という名前の一つの現金袋があるわけではありません。現金が土地や備品に変わっていても、資産全体と負債との差として純資産を求められます。
 
-収益と費用は、一定期間の成績を測るための分類です。商品の販売による売上は収益、店の家賃や従業員の給料は費用の例です。ただし、お金が入ることと収益、お金が出ることと費用は一対一には対応しません。売上代金をまだ受け取っていなくても収益になる場面があり、借入金の返済では現金が減っても元本部分を費用にはしません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">収益</a>と費用は、一定期間の成績を測るための分類です。商品の販売による売上は収益、店の家賃や従業員の給料は費用の例です。ただし、お金が入ることと収益、お金が出ることと費用は一対一には対応しません。売上代金をまだ受け取っていなくても収益になる場面があり、借入金の返済では現金が減っても元本部分を費用にはしません。
+
+<figure id="b3x-foundations-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-foundations-comparison-caption">
 
 | 分類 | 会社にとって何を表すか | この課程で使う例 |
 | --- | --- | --- |
@@ -23,6 +26,10 @@
 | 純資産 | 資産から負債を引いた持分 | 資本金、繰越利益剰余金 |
 | 収益 | 期間の利益を増やす要因 | 売上、受取利息 |
 | 費用 | 期間の利益を減らす要因 | 給料、支払家賃 |
+
+</div>
+<figcaption id="b3x-foundations-comparison-caption">会社が持つ財産、返す義務、利益に関わる五つの分類を、具体的な科目で比べます。</figcaption>
+</figure>
 
 「売掛金と売上は両方とも販売に関係するのに、なぜ分類が違うのか」と感じるかもしれません。売掛金は、今後いくら受け取れるかという期末の状態を表します。売上は、この期間にいくら販売したかという活動の成績です。同じ取引を異なる面から記録するので、両方が登場します。
 
@@ -109,6 +116,37 @@
 解答は、期首純資産550,000円、当期純損失50,000円、期末純資産560,000円です。550,000−50,000＋70,000−10,000＝560,000円となります。純資産は10,000円増えていますが、事業の成績は50,000円の損失です。「増えたか減ったか」の結論だけでなく、何の増減かを説明できるようにします。
 
 ここまでの計算を、次のレッスンでは借方・貸方という共通の書き方に置き換えます。五つの分類を暗記しただけで進まず、預金が増える四つの場面、出資・借入・売上・売掛金回収を、自分の言葉で区別してから仕訳へ進んでください。
+
+<section class="guided-lesson" aria-labelledby="b3x-foundations-work-heading">
+<h2 id="b3x-foundations-work-heading">手を動かして確かめる：取引後の純資産</h2>
+<figure id="b3x-foundations-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-foundations-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">取引前の資産</th><td>310,000円</td></tr>
+<tr><th scope="row">取引前の負債</th><td>110,000円</td></tr>
+<tr><th scope="row">現金で受け取った新規の借入れ</th><td>40,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-foundations-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>取引直後の純資産は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="200000" data-guided-hint="借りた現金と、返す義務の両方が増えます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-foundations-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-foundations-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>資産は350,000円、負債は150,000円です。差は200,000円。借入れだけでは資産と負債が同じ額だけ増え、持分は増えません。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

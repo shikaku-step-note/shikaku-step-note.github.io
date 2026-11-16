@@ -942,17 +942,17 @@
 日商簿記3級 学習ツリー・スケジュール
 公式区分：日商簿記3級・商業簿記。簿記初級・2級・1級・原価計算初級は別コース。
 適用：2026年度に適用する2022年度版。2027年3月31日まで。2026年4月1日施行法令等。
-公式資料確認：2026-10-28／教材・評価版：boki3-2026-v2
+公式資料確認：2026-11-16／教材・評価版：boki3-2026-v2
 前提：専門知識は必要な箇所から補う。割合と四則計算、紙と電卓を使う。
 7ユニットは当サイトの学習順で、公式の小区分や級ではない。
 
 学習量と複数のペース（独自の見積り。公式推奨や実測ではない）
-本文・例題・理解度確認：4580分
-用語確認：299分／独立した単元・総合復習：528分
-翌日・1週間後の復習：1100分／模試2回：120分／模試の解き直し：180分
-合計目安：6807分（約114時間）
-1日30分・週5日：約46週間。苦手な単元の再学習や休みを別に確保する。
-1日60分・週5日：約23週間。苦手な単元の再学習や休みを別に確保する。
+本文・例題・理解度確認：4850分
+用語確認：299分／独立した単元・総合復習：555分
+翌日・1週間後の復習：1160分／模試2回：120分／模試の解き直し：180分
+合計目安：7164分（約120時間）
+1日30分・週5日：約48週間。苦手な単元の再学習や休みを別に確保する。
+1日60分・週5日：約24週間。苦手な単元の再学習や休みを別に確保する。
 1日90分・週5日：約16週間。苦手な単元の再学習や休みを別に確保する。
 模試の60分は一度に確保する。日々の時間が短い場合も、試験前には中断せず解く日を設ける。
 
@@ -1236,9 +1236,17 @@
       本文：/qualifications/boki-3/b3x-asset-sale/
       理解度確認：[b3x-asset-sale-check] 12問／評価版boki3-2026-v2
       用語：固定資産売却益・固定資産売却損・売却時帳簿価額・未収入金・期中売却・当期使用分
+      次：b3x-asset-register-reconciliation
+      復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
+    34. [b3x-asset-register-reconciliation] 固定資産台帳の空欄を埋める｜月割・累計額・売却損益／90分
+      目標：月割の範囲を定めて、台帳の取得月・原価・累計額を互いに逆算する／同じ当期償却額を直接法・間接法の勘定に記し、期末の帳簿価額を照合する／仮の期中売却を台帳の一行へ反映し、売却損益・残った資産・当期費用を別々に検算する
+      前提：固定資産の取得、定額法による減価償却、固定資産の期中売却を学んでから進みます。月を数える条件は本文で確認します。
+      本文：/qualifications/boki-3/b3x-asset-register-reconciliation/
+      理解度確認：[b3x-asset-register-reconciliation-check] 8問／評価版boki3-2026-application-v1
+      用語：固定資産台帳・月割計算・期首減価償却累計額・帳簿価額・直接法・間接法・固定資産売却損益
       次：b3x-supplies
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    34. [b3x-supplies] 消耗品と貯蔵品を、使った分・残った分へ分ける／80分
+    35. [b3x-supplies] 消耗品と貯蔵品を、使った分・残った分へ分ける／80分
       目標：期首・購入・期末から消耗品の使用額を求める／費用記録法と資産記録法の整理仕訳を作る／未使用切手・収入印紙の貯蔵品振替と表示を説明する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-supplies/
@@ -1246,7 +1254,7 @@
       用語：消耗品・消耗品費・貯蔵品・使用額・未使用額・費用記録法・資産記録法
       次：b3x-capital
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    35. [b3x-capital] 設立・増資を記録し、出資と利益を区別する／80分
+    36. [b3x-capital] 設立・増資を記録し、出資と利益を区別する／80分
       目標：株式の払込額を計算して設立仕訳を作る／増資と借入・売上の入金を区別して記録する／資本金と繰越利益剰余金の期末残高を説明する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-capital/
@@ -1254,7 +1262,7 @@
       用語：資本金・株主・払込額・増資・繰越利益剰余金・純資産・資本取引
       次：b3x-dividends
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    36. [b3x-dividends] 配当の決議・支払いと利益準備金を記録する／85分
+    37. [b3x-dividends] 配当の決議・支払いと利益準備金を記録する／85分
       目標：配当と利益準備金の指定額から決議仕訳を作る／決議と支払いを分けて未払配当金残高を求める／利益・配当・積立を純資産の内訳と合計へつなぐ
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-dividends/
@@ -1262,7 +1270,7 @@
       用語：配当・未払配当金・利益準備金・配当決議・利益処分・当期純利益
       次：b3x-corporate-tax
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    37. [b3x-corporate-tax] 法人税等を中間納付・決算・確定納付へつなぐ／105分
+    38. [b3x-corporate-tax] 法人税等を中間納付・決算・確定納付へつなぐ／105分
       目標：当期の税負担額と仮払・未払の役割を区別する／指定条件の整理後利益から税額と決算仕訳を作る／前期分納付と当期分を分けて残高と当期純利益を照合する／当期の固定資産税の納付を租税公課で記録し、法人税等と税抜方式の消費税納付から区別する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-corporate-tax/
@@ -1270,7 +1278,7 @@
       用語：法人税等・仮払法人税等・未払法人税等・中間納付・税引前当期純利益・確定納付
       次：b3x-consumption-tax
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    38. [b3x-consumption-tax] 消費税の税抜方式を、取引・返品・決算で使う／90分
+    39. [b3x-consumption-tax] 消費税の税抜方式を、取引・返品・決算で使う／90分
       目標：税込額と税抜額から本体・税額・総額を計算する／仕入・売上・返品・備品取得の税抜仕訳を作る／未記帳等を反映して仮受・仮払と未払額を整理する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-consumption-tax/
@@ -1278,7 +1286,7 @@
       用語：税抜方式・税込額・税抜額・仮払消費税・仮受消費税・未払消費税
       次：b3-assets
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    39. [b3-assets] 固定資産の取得・減価償却・売却をつなげる／35分
+    40. [b3-assets] 固定資産の取得・減価償却・売却をつなげる／35分
       目標：購入代金に付随費用を加える／定額法で使用期間へ費用を配分する／月割りをするときは使用月数を数える
       前提：このユニットの技能別レッスンと練習を終えてから、内容の整理に使います。
       本文：/qualifications/boki-3/b3-assets/
@@ -1287,18 +1295,26 @@
       次：b3x-closing-inventory
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
     [boki-3-unit-5-glossary] 用語確認 52問
-    [boki-3-unit-5-review] 別条件の単元総合確認 26問
+    [boki-3-unit-5-review] 別条件の単元総合確認 29問
     節目：残高、仕訳額、費用・収益の期間を説明できるか確かめ、誤答のあるレッスンへ戻る。
   ユニット6 決算整理と期間の対応
-    40. [b3x-closing-inventory] 商品棚卸から売上原価を確定し、勘定へ反映する／90分
+    41. [b3x-closing-inventory] 商品棚卸から売上原価を確定し、勘定へ反映する／90分
       目標：数量と原価の資料から期末商品と当期の売上原価を求める／三分法の期首・期末振替を仕訳し、仕入勘定の整理後残高を算定する／返品・未処理仕入を反映した資料で原価と利益を照合する
       前提：三分法、仕入・売上返品、先入先出法・移動平均法、貸借と元帳の計算を学んでおきます。
       本文：/qualifications/boki-3/b3x-closing-inventory/
       理解度確認：[b3x-closing-inventory-check] 12問／評価版boki3-2026-v2
       用語：期首商品棚卸高・当期純仕入高・期末商品棚卸高・売上原価・繰越商品・三分法・実地棚卸・売上総利益
+      次：b3x-inventory-period-reconciliation
+      復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
+    42. [b3x-inventory-period-reconciliation] 決算をまたぐ商品と売上｜期末棚卸高の誤りを二期で検算する／100分
+      目標：期末商品の評価額と翌期の期首残高をつなぎ、棚卸の差が二期の利益へ及ぼす影響を計算する／納品記録・仕入帳・棚卸表を同じ期間へそろえて、未記帳仕入と棚卸の修正を仕訳と数値に反映する／引渡しと返品の記録から当期の売上・売上原価・売掛金を修正し、二期を合算した金額でも検算する
+      前提：「商品棚卸から売上原価を確定し、勘定へ反映する」と仕入・売上返品のレッスンで、三分法の仕訳を学んでおきます。
+      本文：/qualifications/boki-3/b3x-inventory-period-reconciliation/
+      理解度確認：[b3x-inventory-period-reconciliation-check] 9問／評価版boki3-2026-application-v1
+      用語：締め日・実地棚卸・期末商品棚卸高・期首商品棚卸高・純売上高・売上原価
       次：b3x-bad-debt
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    41. [b3x-bad-debt] 貸倒れの発生と、期末の貸倒引当金を分けて処理する／95分
+    43. [b3x-bad-debt] 貸倒れの発生と、期末の貸倒引当金を分けて処理する／95分
       目標：実際の貸倒れを発生年度と利用できる引当金残高に応じて記録する／期末の対象債権を修正して必要引当金と繰入・戻入を計算する／貸倒処理後の回収と決算表示を、元の売上や債権と区別して記録する
       前提：掛取引、受取手形、電子記録債権、訂正仕訳、整理前と整理後の残高の違いを学んでおきます。
       本文：/qualifications/boki-3/b3x-bad-debt/
@@ -1306,7 +1322,7 @@
       用語：貸倒れ・貸倒損失・貸倒引当金・差額補充法・貸倒引当金繰入・貸倒引当金戻入・償却債権取立益・貸倒実績率
       次：b3x-expense-accrual
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    42. [b3x-expense-accrual] 前払費用・未払費用を、日付と対応期間から求める／95分
+    44. [b3x-expense-accrual] 前払費用・未払費用を、日付と対応期間から求める／95分
       目標：支払期間と当期の対応期間を図にして前払費用を計算する／未払費用を元本・利率・月数等から求めて仕訳する／複数契約や変更額を反映し、整理後費用と資産負債を照合する
       前提：収益と費用、貸借、日常の家賃や利息、元帳の残高を計算できることを前提とします。
       本文：/qualifications/boki-3/b3x-expense-accrual/
@@ -1314,7 +1330,7 @@
       用語：前払費用・未払費用・費用の見越し・費用の繰延べ・月割計算・決算整理・支払利息・前払金
       次：b3x-revenue-accrual
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    43. [b3x-revenue-accrual] 前受収益・未収収益を、入金と発生の違いから計算する／95分
+    45. [b3x-revenue-accrual] 前受収益・未収収益を、入金と発生の違いから計算する／95分
       目標：受取済み収益のうち翌期へ対応する前受収益を計算して仕訳する／当期に発生した未収収益を利率や月数から求める／前受金・売掛金と経過勘定を区別し、当期収益と期末残高を照合する
       前提：費用の前払・未払、掛取引、貸付金と利息、勘定の増減を理解してから進みます。
       本文：/qualifications/boki-3/b3x-revenue-accrual/
@@ -1322,15 +1338,23 @@
       用語：前受収益・未収収益・収益の繰延べ・収益の見越し・受取利息・前受金・未収利息・前受家賃
       次：b3x-reversal
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    44. [b3x-reversal] 再振替から決済までを追い、二つの期の損益をそろえる／100分
+    46. [b3x-reversal] 再振替から決済までを追い、二つの期の損益をそろえる／100分
       目標：前期末の四つの経過勘定について再振替仕訳を作る／期首再振替と現金決済を組み合わせて当期対応額を計算する／経過勘定と費用収益の元帳を前期末から翌期首まで完成する
       前提：前払・未払費用と前受・未収収益を、期間から計算し仕訳できることが必要です。
       本文：/qualifications/boki-3/b3x-reversal/
       理解度確認：[b3x-reversal-check] 12問／評価版boki3-2026-v2
       用語：再振替仕訳・開始記入・経過勘定・前期繰越・次期繰越・損益振替・当期対応額・期首
+      次：b3x-loan-year-boundary
+      復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
+    47. [b3x-loan-year-boundary] 借入金・貸付金の利息を決算で分ける｜未払・未収と返済の仕訳／80分
+      目標：利息の対象となる元金・月数を区間ごとに求め、決算日までの額を計算する／借り手・貸し手それぞれの決算整理、翌期首の再振替、決済の仕訳を書く／二つの借入れや一部返済があっても、残る元金・利息の期間配分・銀行の入出金を照合する
+      前提：貸付金・借入金と年利率、費用・収益の見越し、再振替仕訳を先に学びます。
+      本文：/qualifications/boki-3/b3x-loan-year-boundary/
+      理解度確認：[b3x-loan-year-boundary-check] 9問／評価版boki3-2026-application-v1
+      用語：元金・未払利息・未収利息・再振替仕訳
       次：b3-accrual
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    45. [b3-accrual] 前払・未払・未収・前受を期間で判断する／35分
+    48. [b3-accrual] 前払・未払・未収・前受を期間で判断する／35分
       目標：支払った日と、費用が対応する期間を分ける／まだ払っていない当期分を費用へ加える／収益についても当期分と翌期分を分ける
       前提：このユニットの技能別レッスンと練習を終えてから、内容の整理に使います。
       本文：/qualifications/boki-3/b3-accrual/
@@ -1338,7 +1362,7 @@
       用語：前払費用・未払費用・未収収益・前受収益
       次：b3x-closing-adjustments
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    46. [b3x-closing-adjustments] 貯蔵品・月次処理・未処理事項を、決算残高へまとめる／105分
+    49. [b3x-closing-adjustments] 貯蔵品・月次処理・未処理事項を、決算残高へまとめる／105分
       目標：消耗品や切手印紙の未使用分を、期中の記帳方式に応じて整理する／月次に計上した額と最終的な必要残高を比較して調整する／未処理・訂正・期末整理を順序立てて処理し、科目別の最終残高を検算する
       前提：棚卸、引当金、減価償却、経過勘定と再振替、試算表の作成を学んでおきます。
       本文：/qualifications/boki-3/b3x-closing-adjustments/
@@ -1346,7 +1370,7 @@
       用語：貯蔵品・消耗品費・月次決算・決算整理前残高・決算整理後残高・未処理事項・残高管理・見積額
       次：b3-adjustments
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    47. [b3-adjustments] 商品棚卸・貸倒引当金・税金と純資産の整理／35分
+    50. [b3-adjustments] 商品棚卸・貸倒引当金・税金と純資産の整理／35分
       目標：売上原価を求めるため商品を棚卸しする／回収できない見込みを貸倒引当金にする／実際に貸倒れたときの処理
       前提：このユニットの技能別レッスンと練習を終えてから、内容の整理に使います。
       本文：/qualifications/boki-3/b3-adjustments/
@@ -1355,10 +1379,10 @@
       次：b3x-adjusted-trial
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
     [boki-3-unit-6-glossary] 用語確認 50問
-    [boki-3-unit-6-review] 別条件の単元総合確認 18問
+    [boki-3-unit-6-review] 別条件の単元総合確認 24問
     節目：残高、仕訳額、費用・収益の期間を説明できるか確かめ、誤答のあるレッスンへ戻る。
   ユニット7 決算書と帳簿の締切・総合演習
-    48. [b3x-adjusted-trial] 決算整理後残高試算表を、仕訳と勘定から作る／100分
+    51. [b3x-adjusted-trial] 決算整理後残高試算表を、仕訳と勘定から作る／100分
       目標：整理前残高と整理仕訳を同じ勘定へ集める／複数の整理を反映した全科目の残高を作る／貸借一致と利益・純資産の関係から誤りを点検する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-adjusted-trial/
@@ -1366,7 +1390,7 @@
       用語：整理前残高試算表・整理後残高試算表・転記・差引残高・控除勘定・整理仕訳
       次：b3x-worksheet
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    49. [b3x-worksheet] 8桁精算表を横計算・縦計算・利益の照合で完成する／105分
+    52. [b3x-worksheet] 8桁精算表を横計算・縦計算・利益の照合で完成する／105分
       目標：試算表と修正欄から各行の整理後残高を作る／8桁精算表を全行完成させ表示先を区別する／利益・損失の記入位置と列の不一致を点検する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-worksheet/
@@ -1374,7 +1398,7 @@
       用語：精算表・8桁精算表・修正記入欄・損益計算書欄・貸借対照表欄・逆転記
       次：b3x-profit-loss
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    50. [b3x-profit-loss] 勘定式損益計算書を、整理後の収益と費用から作る／100分
+    53. [b3x-profit-loss] 勘定式損益計算書を、整理後の収益と費用から作る／100分
       目標：整理前後を区別して純売上高と売上原価を求める／整理後勘定を費用・収益へ分けて勘定式損益計算書を完成する／整理漏れや現金収支との混同を利益への影響から点検する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-profit-loss/
@@ -1382,7 +1406,7 @@
       用語：損益計算書・売上総利益・税引前当期純利益・勘定式・当期純損失・当期費用
       次：b3x-balance-sheet
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    51. [b3x-balance-sheet] 貸借対照表を控除表示・経過勘定・当期利益で完成する／100分
+    54. [b3x-balance-sheet] 貸借対照表を控除表示・経過勘定・当期利益で完成する／100分
       目標：控除勘定と経過勘定を適切な区分へ表示する／整理後資料と当期利益から貸借対照表全体を作る／締切前後と利益の整合を使って不一致を点検する
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-balance-sheet/
@@ -1390,7 +1414,7 @@
       用語：貸借対照表・資産純額・取得原価表示・控除表示・決算日・締切前残高・締切後残高
       次：b3x-closing-books
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    52. [b3x-closing-books] 収益費用を締め、損益を利益剰余金と翌期帳簿へつなぐ／120分
+    55. [b3x-closing-books] 収益費用を締め、損益を利益剰余金と翌期帳簿へつなぐ／120分
       目標：収益・費用勘定を損益勘定へ振り替える／当期損益を利益剰余金へ移して締切後試算表を作る／仕訳帳・総勘定元帳・補助簿を締め、資産・負債・純資産を翌期へ繰り越して開始記入を行う
       前提：仕訳・転記・試算表と、直前のレッスンで扱う取引を復習してください。
       本文：/qualifications/boki-3/b3x-closing-books/
@@ -1398,7 +1422,7 @@
       用語：損益勘定・決算振替・帳簿の締切・次期繰越・前期繰越・締切後試算表・開始記入
       次：b3-statements
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    53. [b3-statements] 精算表から損益計算書・貸借対照表と帳簿の締切へ／35分
+    56. [b3-statements] 精算表から損益計算書・貸借対照表と帳簿の締切へ／35分
       目標：決算整理前の残高を、決算後の残高へ直す／例題：保険料と減価償却を反映する／損益計算書で当期純利益を求める
       前提：このユニットの技能別レッスンと練習を終えてから、内容の整理に使います。
       本文：/qualifications/boki-3/b3-statements/
@@ -1406,7 +1430,7 @@
       用語：精算表・決算整理後残高試算表・当期純利益・繰越利益剰余金
       次：b3x-closing-case-a
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    54. [b3x-closing-case-a] 総合演習1：整理仕訳から精算表・決算書・翌期へつなぐ／150分
+    57. [b3x-closing-case-a] 総合演習1：整理仕訳から精算表・決算書・翌期へつなぐ／150分
       目標：依存関係を読み、未記帳修正と複数の決算整理を順に実行する／全科目を8桁精算表へ移し、費用・収益と資産・負債・純資産へ振り分ける／決算書・締切り・翌期再振替のつながりを、黒字と赤字の両方で検算する
       前提：決算整理、整理後試算表、精算表、勘定式の損益計算書・貸借対照表、英米式の締切りと再振替を復習してください。
       本文：/qualifications/boki-3/b3x-closing-case-a/
@@ -1414,7 +1438,7 @@
       用語：整理の依存関係・精算表の修正欄・当期純損失・未払給料・未収手数料・前受手数料
       次：b3x-closing-case-b
       復習：翌日は例題を見ずに仕訳・計算の理由を説明。1週間後は誤答と別条件の問題を解く。
-    55. [b3x-closing-case-b] 総合演習B：日向株式会社の訂正・税金精算から決算書を完成させる／160分
+    58. [b3x-closing-case-b] 総合演習B：日向株式会社の訂正・税金精算から決算書を完成させる／160分
       目標：修正前試算表と資料から、既処理・未記帳・分類修正を見分けて必要な仕訳を作る／商品の原価、貸倒引当金、償却、期間配分と税金を相互の依存関係に従って整理する／整理後残高から損益計算書と貸借対照表を作り、利益の締切りと純資産の増加を検算する
       前提：b3x-worksheet、b3x-profit-loss、b3x-balance-sheet、b3x-closing-booksと、各決算整理レッスンの練習を終えてから取り組んでください。
       本文：/qualifications/boki-3/b3x-closing-case-b/
@@ -1526,10 +1550,10 @@
     単元確認：b3x-u4-review-02, b3x-u4-review-03
   [b3c-16] 第二4ア 金銭貸借と利息
     技能：元本・利率・期間から月割または指定日割を計算し、元利合計を記録する。
-    本文：b3x-loans#objective-1, b3x-loans#objective-2, b3x-loans#objective-3
-    例題：b3x-loans#worked-1, b3x-loans#worked-2, b3x-loans#worked-3, b3x-loans#worked-5
-    理解度確認：b3x-loans-q01, b3x-loans-q02, b3x-loans-q03, b3x-loans-q04, b3x-loans-q05, b3x-loans-q06, b3x-loans-q07, b3x-loans-q08, b3x-loans-q09, b3x-loans-q10, b3x-loans-q11, b3x-loans-q12, b3x-loans-q13, b3x-loans-q14, b3x-loans-day-q1, b3x-loans-day-q2, b3x-loans-day-q3
-    単元確認：b3x-u4-review-13, b3x-u4-review-14, b3x-u4-review-15, b3x-u4-day-review-01
+    本文：b3x-loans#objective-1, b3x-loans#objective-2, b3x-loans#objective-3, b3x-loan-year-boundary#objective-1, b3x-loan-year-boundary#objective-2, b3x-loan-year-boundary#objective-3
+    例題：b3x-loans#worked-1, b3x-loans#worked-2, b3x-loans#worked-3, b3x-loans#worked-5, b3x-loan-year-boundary#worked-1, b3x-loan-year-boundary#worked-2, b3x-loan-year-boundary#worked-3
+    理解度確認：b3x-loans-q01, b3x-loans-q02, b3x-loans-q03, b3x-loans-q04, b3x-loans-q05, b3x-loans-q06, b3x-loans-q07, b3x-loans-q08, b3x-loans-q09, b3x-loans-q10, b3x-loans-q11, b3x-loans-q12, b3x-loans-q13, b3x-loans-q14, b3x-loans-day-q1, b3x-loans-day-q2, b3x-loans-day-q3, b3x-loan-year-boundary-q01, b3x-loan-year-boundary-q02, b3x-loan-year-boundary-q03, b3x-loan-year-boundary-q04, b3x-loan-year-boundary-q05, b3x-loan-year-boundary-q06, b3x-loan-year-boundary-q07, b3x-loan-year-boundary-q08, b3x-loan-year-boundary-q09
+    単元確認：b3x-u4-review-13, b3x-u4-review-14, b3x-u4-review-15, b3x-u4-day-review-01, b3x-loan-year-boundary-review-01, b3x-loan-year-boundary-review-02, b3x-loan-year-boundary-review-03
   [b3c-17] 第二4イ 商品以外の代金債権債務
     技能：未収入金・未払金を売掛金・買掛金や経過勘定と区別する。
     本文：b3x-receivables#objective-1, b3x-asset-acquisition#objective-1
@@ -1652,10 +1676,10 @@
     単元確認：b3x-asset-sale-review-01, b3x-asset-sale-review-02, b3x-asset-sale-review-03
   [b3c-37] 第二12ク 固定資産台帳
     技能：資産別の期首残高・取得・償却・売却を時系列で追い欠落額を逆算する。
-    本文：b3x-asset-acquisition#objective-3, b3x-asset-sale#objective-3
-    例題：b3x-asset-acquisition#worked-3, b3x-asset-sale#worked-3
-    理解度確認：b3x-asset-acquisition-q09, b3x-asset-acquisition-q10, b3x-asset-acquisition-q11, b3x-asset-acquisition-q12, b3x-asset-sale-q09, b3x-asset-sale-q10
-    単元確認：b3x-asset-acquisition-review-03, b3x-asset-sale-review-03
+    本文：b3x-asset-acquisition#objective-3, b3x-asset-sale#objective-3, b3x-asset-register-reconciliation#objective-1, b3x-asset-register-reconciliation#objective-2, b3x-asset-register-reconciliation#objective-3
+    例題：b3x-asset-acquisition#worked-3, b3x-asset-sale#worked-3, b3x-asset-register-reconciliation#worked-1, b3x-asset-register-reconciliation#worked-2, b3x-asset-register-reconciliation#worked-3
+    理解度確認：b3x-asset-acquisition-q09, b3x-asset-acquisition-q10, b3x-asset-acquisition-q11, b3x-asset-acquisition-q12, b3x-asset-sale-q09, b3x-asset-sale-q10, b3x-asset-register-reconciliation-q01, b3x-asset-register-reconciliation-q02, b3x-asset-register-reconciliation-q03, b3x-asset-register-reconciliation-q04, b3x-asset-register-reconciliation-q05, b3x-asset-register-reconciliation-q06, b3x-asset-register-reconciliation-q07, b3x-asset-register-reconciliation-q08
+    単元確認：b3x-asset-acquisition-review-03, b3x-asset-sale-review-03, b3x-asset-register-reconciliation-review-01, b3x-asset-register-reconciliation-review-02, b3x-asset-register-reconciliation-review-03
   [b3c-38] 第二20 日常の収益と費用
     技能：手数料・家賃地代・広告・交通通信・消耗品等を内容から選び期中処理する。
     本文：b3x-expenses#objective-1, b3x-expenses#objective-2, b3x-expenses#objective-3
@@ -1712,10 +1736,10 @@
     単元確認：b3x-bank-closing-review-1, b3x-bank-closing-review-2
   [b3c-47] 第三3 棚卸と売上原価
     技能：期首・純仕入・期末をつなぎ仕入勘定または指定原価勘定で整理する。
-    本文：b3x-closing-inventory#objective-1, b3x-closing-inventory#objective-2, b3x-closing-inventory#objective-3
-    例題：b3x-closing-inventory#worked-1, b3x-closing-inventory#worked-2, b3x-closing-inventory#worked-3, b3x-closing-inventory#worked-4, b3x-closing-inventory#worked-5
-    理解度確認：b3x-closing-inventory-q01, b3x-closing-inventory-q02, b3x-closing-inventory-q03, b3x-closing-inventory-q04, b3x-closing-inventory-q05, b3x-closing-inventory-q06, b3x-closing-inventory-q07, b3x-closing-inventory-q08, b3x-closing-inventory-q09, b3x-closing-inventory-q10, b3x-closing-inventory-q11, b3x-closing-inventory-q12
-    単元確認：b3x-closing-inventory-r01, b3x-closing-inventory-r02, b3x-closing-inventory-r03
+    本文：b3x-closing-inventory#objective-1, b3x-closing-inventory#objective-2, b3x-closing-inventory#objective-3, b3x-inventory-period-reconciliation#objective-1, b3x-inventory-period-reconciliation#objective-2, b3x-inventory-period-reconciliation#objective-3
+    例題：b3x-closing-inventory#worked-1, b3x-closing-inventory#worked-2, b3x-closing-inventory#worked-3, b3x-closing-inventory#worked-4, b3x-closing-inventory#worked-5, b3x-inventory-period-reconciliation#worked-1, b3x-inventory-period-reconciliation#worked-2, b3x-inventory-period-reconciliation#worked-3
+    理解度確認：b3x-closing-inventory-q01, b3x-closing-inventory-q02, b3x-closing-inventory-q03, b3x-closing-inventory-q04, b3x-closing-inventory-q05, b3x-closing-inventory-q06, b3x-closing-inventory-q07, b3x-closing-inventory-q08, b3x-closing-inventory-q09, b3x-closing-inventory-q10, b3x-closing-inventory-q11, b3x-closing-inventory-q12, b3x-inventory-period-reconciliation-q01, b3x-inventory-period-reconciliation-q02, b3x-inventory-period-reconciliation-q03, b3x-inventory-period-reconciliation-q04, b3x-inventory-period-reconciliation-q05, b3x-inventory-period-reconciliation-q06, b3x-inventory-period-reconciliation-q07, b3x-inventory-period-reconciliation-q08, b3x-inventory-period-reconciliation-q09
+    単元確認：b3x-closing-inventory-r01, b3x-closing-inventory-r02, b3x-closing-inventory-r03, b3x-inventory-period-reconciliation-review-01, b3x-inventory-period-reconciliation-review-02, b3x-inventory-period-reconciliation-review-03
   [b3c-48] 第三3 貯蔵品の棚卸
     技能：購入時費用と資産の二方式、切手印紙等未使用分の整理を行う。
     本文：b3x-supplies#objective-1, b3x-supplies#objective-2, b3x-supplies#objective-3, b3x-closing-adjustments#objective-1
@@ -1736,10 +1760,10 @@
     単元確認：b3x-revenue-accrual-r01, b3x-revenue-accrual-r02, b3x-revenue-accrual-r03
   [b3c-51] 第三3 再振替と翌期精算
     技能：前期末・翌期首・現金決済を連続記帳し当期損益への影響を説明する。
-    本文：b3x-reversal#objective-1, b3x-reversal#objective-2, b3x-reversal#objective-3
-    例題：b3x-reversal#worked-1, b3x-reversal#worked-2, b3x-reversal#worked-3, b3x-reversal#worked-4, b3x-reversal#worked-5
-    理解度確認：b3x-reversal-q01, b3x-reversal-q02, b3x-reversal-q03, b3x-reversal-q04, b3x-reversal-q05, b3x-reversal-q06, b3x-reversal-q07, b3x-reversal-q08, b3x-reversal-q09, b3x-reversal-q10, b3x-reversal-q11, b3x-reversal-q12
-    単元確認：b3x-reversal-r01, b3x-reversal-r02, b3x-reversal-r03
+    本文：b3x-reversal#objective-1, b3x-reversal#objective-2, b3x-reversal#objective-3, b3x-loan-year-boundary#objective-1, b3x-loan-year-boundary#objective-2, b3x-loan-year-boundary#objective-3
+    例題：b3x-reversal#worked-1, b3x-reversal#worked-2, b3x-reversal#worked-3, b3x-reversal#worked-4, b3x-reversal#worked-5, b3x-loan-year-boundary#worked-1, b3x-loan-year-boundary#worked-2, b3x-loan-year-boundary#worked-3
+    理解度確認：b3x-reversal-q01, b3x-reversal-q02, b3x-reversal-q03, b3x-reversal-q04, b3x-reversal-q05, b3x-reversal-q06, b3x-reversal-q07, b3x-reversal-q08, b3x-reversal-q09, b3x-reversal-q10, b3x-reversal-q11, b3x-reversal-q12, b3x-loan-year-boundary-q01, b3x-loan-year-boundary-q02, b3x-loan-year-boundary-q03, b3x-loan-year-boundary-q04, b3x-loan-year-boundary-q05, b3x-loan-year-boundary-q06, b3x-loan-year-boundary-q07, b3x-loan-year-boundary-q08, b3x-loan-year-boundary-q09
+    単元確認：b3x-reversal-r01, b3x-reversal-r02, b3x-reversal-r03, b3x-loan-year-boundary-review-01, b3x-loan-year-boundary-review-02, b3x-loan-year-boundary-review-03
   [b3c-52] 第三3※ 月次決算の基礎
     技能：年次と月次の対象期間を読み分け、指示された月次配分と期末調整を行う。
     本文：b3x-closing-adjustments#objective-2
@@ -1806,32 +1830,32 @@
 仕訳は全科目と全金額が正しいときに配点。練習得点から公式の合否を予測しない。公式案内の3題以内・60分・70%以上とは区別する。
 2027年4月1日からの改定（販売時原価振替、除却・廃棄、簡易定率法、紙決済削除、45・25・30点）は公表済みだが、現行課程と別。2027年度対応済みとはしない。
 用語の総復習は単元問題を再利用。レッスン・単元・総合復習・模試は別IDの問題。多技能に対応する問題は範囲表の複数行に再掲する。
-既存の8ページは現在の学習順にある要点整理。完了記録は維持し、新しい詳細レッスンの完了は別IDで記録する。変更した理解度確認は評価版を分けて過去結果を保持する。
+既存の8ページは現在の学習順にある要点整理。完了記録は維持し、新しい詳細レッスンの完了は別IDで記録する。学習済みの印とテストの得点はそれぞれ記録する。
 外部専門家による監修と、受験者による難易度・所要時間の試行は未実施。
 学習記録はこのブラウザ内。端末間の自動同期なし。データ消去に備え、進捗画面でバックアップを出力する。
 
 公式資料・適用と確認日
   [b3-exam] 日商簿記3級：試験科目・注意事項／current
     https://www.kentei.ne.jp/bookkeeping/class3/exam
-    商業簿記、3題以内、60分、70%以上。年度4月1日施行法令。手数料や開催日を教材へ固定しない。／確認2026-10-28
+    商業簿記、3題以内、60分、70%以上。年度4月1日施行法令。手数料や開催日を教材へ固定しない。／確認2026-11-16
   [b3-level] 日商簿記3級：求める水準／current
     https://www.kentei.ne.jp/bookkeeping/class3
     小規模企業の活動に基づく基本商業簿記。工業簿記・2級・1級を同一コースへ含めない。／確認2026-10-28
   [b3-scope-index] 簿記：出題区分表と適用年度／2026 and 2027 distinctly
     https://www.kentei.ne.jp/bookkeeping/exam-list
-    2026年度は2022年度版、2027年度は確定新版。勘定科目表は出題範囲そのものではない。／確認2026-10-28
+    2026年度は2022年度版、2027年度は確定新版。勘定科目表は出題範囲そのものではない。／確認2026-11-16
   [b3-scope2026] 商業簿記・会計学：2022年度施行、2026年度適用区分表／2026-04-01..2027-03-31
     https://www.kentei.ne.jp/wp/wp-content/uploads/2024/12/shogyouboki_kubun.pdf
-    4ページの3級列を配置を保って確認。2級列の銀行勘定調整表・未決算・棚卸減耗などを3級と誤認しない。／確認2026-10-28
+    4ページの3級列を配置を保って確認。2級列の銀行勘定調整表・未決算・棚卸減耗などを3級と誤認しない。／確認2026-11-16
   [b3-scope2027] 商業簿記・会計学：2027年度適用区分表【確定版】／2027-04-01..2028-03-31
     https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027kubunhyo_fixed.pdf
-    暫定版ではなく2026年7月31日確定版。2026年度の科目や問題へ混在させない。／確認2026-10-28
+    暫定版ではなく2026年7月31日確定版。2026年度の科目や問題へ混在させない。／確認2026-11-16
   [b3-changes2027] 2027年度区分改定の説明書【確定版】／from 2027-04-01
     https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027_kaitei_shushi_fixed.pdf
-    紙手形・小切手削除、販売時の原価振替、除却廃棄、簡易な定率法。3級はリースのオンバランス処理を要求しない。／確認2026-10-28
+    紙手形・小切手削除、販売時の原価振替、除却廃棄、簡易な定率法。3級はリースのオンバランス処理を要求しない。／確認2026-11-16
   [b3-points2027] 2027年度以降の日商簿記3級試験問題の配点／from 2027-04-01
     https://www.kentei.ne.jp/51504
-    第1問45、第2問25、第3問30、計100、70以上。2027年3月31日までは従来配点。本資料自体は従来の数値を明記していない。／確認2026-10-28
+    第1問45、第2問25、第3問30、計100、70以上。2027年3月31日までは従来配点。本資料自体は従来の数値を明記していない。／確認2026-11-16
   [b3-accounts2026] 商業簿記標準・許容勘定科目表：2022年度施行／through 2027-03-31
     https://www.kentei.ne.jp/wp/wp-content/uploads/2021/12/2022_kamoku.pdf
     標準・許容表は補助資料であり設問指定が優先。勘定科目表掲載だけで出題対象と推定しない。／確認2026-10-28
@@ -1843,7 +1867,7 @@
     仕訳科目プルダウン、数値・科目名入力、問題間移動、期限で終了。ネット・統一は範囲と水準と合格基準が共通。／確認2026-10-28
   [b3-samples] 3級サンプル問題一覧／samples published 2024..2026
     https://www.kentei.ne.jp/bookkeeping/sample/sample_3
-    著作権JCCI、無断転載・無断営利利用を禁止。構成の確認に限定し、数値だけ置換する模作を行わない。／確認2026-10-28
+    著作権JCCI、無断転載・無断営利利用を禁止。構成の確認に限定し、数値だけ置換する模作を行わない。／確認2026-11-16
   [b3-sample2026-journal] 第1問サンプル5：問題／2026 format reference only
     https://www.kentei.ne.jp/wp/wp-content/uploads/2026/04/3級_第1問_サンプル5_問題.pdf
     15取引。複合仕訳を含み、科目選択と金額を借貸両側へ記入。／確認2026-10-28
@@ -1874,6 +1898,9 @@
   [b3-sample-taxcapital] 第2問(1)サンプル1：問題／2026 format reference only
     https://www.kentei.ne.jp/wp/wp-content/uploads/2025/03/3Q_21_sample1_question.pdf
     配当・利益準備金・法人税計上・損益と利益剰余金の勘定記入。／確認2026-10-28
+  [b3-cbt-format] 日商簿記検定2級・3級ネット試験の方式／current
+    https://www.kentei.ne.jp/33013
+    選択式と入力式、3級は60分・商業簿記3題以内。／確認2026-11-16
 
 
 ====================

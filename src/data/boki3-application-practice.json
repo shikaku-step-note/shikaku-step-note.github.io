@@ -1,0 +1,710 @@
+{
+  "lessons": {
+    "b3x-asset-register-reconciliation": [
+      {
+        "id": "b3x-asset-register-reconciliation-q01",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "3月決算の会社が、前期の月初から定額法で備品を償却する。取得原価288,000円、耐用年数6年、残存価額0円、当期首までの累計額32,000円。取得月から前期末までの使用月数は何か月か。",
+        "input": "number",
+        "accepted": [
+          "8"
+        ],
+        "options": [],
+        "answer": 0,
+        "explanation": "288,000÷6÷12＝4,000円が一か月分。32,000÷4,000＝8か月。",
+        "objectives": [
+          0
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-q02",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "3月決算の会社で、前期の月初に使い始めた備品の当期首までの償却は11か月分だった。取得月を含めて数える。使い始めた月はどれか。",
+        "options": [
+          "4月",
+          "5月",
+          "6月",
+          "7月"
+        ],
+        "answer": 1,
+        "explanation": "5月から翌年3月までを両端とも含めると11か月。4月なら12か月になる。",
+        "objectives": [
+          0
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-q03",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "3月決算の当期8月1日に使用を始めた備品を、残存価額0円・耐用年数4年の定額法で月割償却する。当期償却費が48,000円だった。取得原価はいくらか。",
+        "input": "number",
+        "accepted": [
+          "288000"
+        ],
+        "options": [],
+        "answer": 0,
+        "explanation": "8月〜3月は8か月。年額は48,000×12÷8＝72,000円なので、取得原価は72,000×4＝288,000円。",
+        "objectives": [
+          0
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-q04",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "直接法で処理する。期首の備品勘定の借方残高305,000円。当期に160,000円で備品を取得し、売却はなく、当期償却費は92,000円だった。期末の備品勘定残高はいくらか。",
+        "input": "number",
+        "accepted": [
+          "373000"
+        ],
+        "options": [],
+        "answer": 0,
+        "explanation": "直接法では当期償却費を備品勘定から直接引く。305,000＋160,000−92,000＝373,000円。",
+        "objectives": [
+          1
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-q05",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "同じ資産について直接法・間接法を比較する。期末の取得原価は570,000円、間接法で計算した期末累計額は198,000円。他の条件は同じとする。正しい記述はどれか。",
+        "options": [
+          "直接法の備品残高は570,000円で、当期費用は間接法と同じ",
+          "直接法の備品残高は372,000円で、当期費用は間接法と同じ",
+          "直接法の備品残高は198,000円で、当期費用は間接法より多い",
+          "直接法の備品残高は372,000円で、当期費用は間接法より少ない"
+        ],
+        "answer": 1,
+        "explanation": "570,000−198,000＝372,000円。記帳する勘定は異なっても、当期に費用とする償却額は同じ。",
+        "objectives": [
+          1
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-q06",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "4月1日が期首の会社で、前期以前から保有している備品（取得原価192,000円、耐用年数4年、残存価額0円、当期首の累計額52,000円）を、当期11月末に100,000円で売却した。定額法・月割、売却月も償却する。固定資産売却損はいくらか。",
+        "input": "number",
+        "accepted": [
+          "8000"
+        ],
+        "options": [],
+        "answer": 0,
+        "explanation": "当期の4〜11月は8か月なので、192,000÷4÷12×8＝32,000円を償却する。売却時帳簿価額は192,000−52,000−32,000＝108,000円。代金100,000円との差8,000円が損。",
+        "objectives": [
+          2
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-q07",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "3月決算で月割の定額法を用いる。旧備品の取得原価216,000円、耐用年数6年、残存価額0円、期首累計額57,000円。9月末に旧備品を売却し、当期11月1日に新備品120,000円（耐用年数5年、残存価額0円）を取得した。売却・取得の月を含める。両備品の当期償却費の合計はいくらか。",
+        "input": "number",
+        "accepted": [
+          "28000"
+        ],
+        "options": [],
+        "answer": 0,
+        "explanation": "旧備品は216,000÷6÷12×6＝18,000円、新備品は120,000÷5÷12×5＝10,000円。売却済みでも使用中に発生した18,000円は当期費用に含む。",
+        "objectives": [
+          2
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-q08",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "間接法で資産を売却する。売却時までの当期償却は計上済み。備品の取得原価300,000円、売却時までの累計額140,000円、代金175,000円が普通預金に入った。売却仕訳の正しい貸方の組合せはどれか。",
+        "options": [
+          "備品160,000円、固定資産売却益15,000円",
+          "備品300,000円、固定資産売却益15,000円",
+          "備品300,000円、減価償却累計額140,000円",
+          "備品160,000円、固定資産売却損15,000円"
+        ],
+        "answer": 1,
+        "explanation": "帳簿価額160,000円と代金175,000円との差は売却益15,000円。間接法では備品から取得原価300,000円を引き、累計額140,000円を借方に記入して取り消す。",
+        "objectives": [
+          2
+        ]
+      }
+    ],
+    "b3x-inventory-period-reconciliation": [
+      {
+        "id": "b3x-inventory-period-reconciliation-q01",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "X1期末の商品のうち、1個620円の自社商品7個を棚卸表へ載せ忘れました。訂正前の期末商品棚卸高は28,520円です。正しい額を円で答えてください。",
+        "explanation": "7個×620円＝4,340円を加え、28,520＋4,340＝32,860円です。この額はそのまま次期の期首商品になります。",
+        "objectives": [
+          0
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "32860"
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q02",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "前期末から引き継いだ期首商品28,520円に4,340円の不足があると分かりました。当期の純仕入高97,200円、期末商品31,000円、純売上高144,900円は正しいものとします。当期の正しい売上総利益を円で答えてください。",
+        "explanation": "正しい期首商品は32,860円。売上原価は32,860＋97,200−31,000＝99,060円です。純売上高144,900円との差は45,840円になります。",
+        "objectives": [
+          0
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "45840"
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q03",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "X1期の期末商品棚卸高だけが6,800円多く、そのままX2期首へ引き継ぎました。X1期首とX2期末、両期の仕入れと売上に誤りはありません。訂正したときの売上総利益の組合せはどれですか。",
+        "explanation": "X1期末商品を減らすとX1期の売上原価が増えます。同じ商品をX2期首から減らすとX2期の売上原価が減るため、利益の動きは逆になります。",
+        "objectives": [
+          0
+        ],
+        "options": [
+          "X1期が6,800円増え、X2期が6,800円増える",
+          "X1期が6,800円減り、X2期が6,800円増える",
+          "X1期が6,800円増え、X2期が6,800円減る",
+          "X1期とX2期がともに6,800円減る"
+        ],
+        "answer": 1
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q04",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "年内に掛けで受け取った商品8,640円の仕入れが当期の帳簿にありません。実地棚卸高には含まれています。三分法で仕入れの未記帳分だけを訂正してください。",
+        "explanation": "掛けで買った仕入を借方に、あとで支払う買掛金を貸方に記録します。棚卸高には受取済みの商品があるので、8,640円を棚卸集計に加え直さない条件です。",
+        "objectives": [
+          1
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "繰越商品",
+            "仕入",
+            "買掛金",
+            "売上",
+            "売掛金",
+            "売上原価"
+          ],
+          "debits": [
+            {
+              "account": "仕入",
+              "amount": 8640
+            }
+          ],
+          "credits": [
+            {
+              "account": "買掛金",
+              "amount": 8640
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"仕入\",\"amount\":8640}],\"credits\":[{\"account\":\"買掛金\",\"amount\":8640}]}"
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q05",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "期首商品22,000円、仕入残高93,000円、期末棚卸高29,400円です。仕入残高と期末棚卸高の両方に当期末までに掛けで受け取り保管した商品4,200円が含まれていません。残りの資料は正しいとします。訂正した当期の売上原価を円で答えてください。",
+        "explanation": "純仕入高は97,200円、期末棚卸高は33,600円。22,000＋97,200−33,600＝85,600円です。仕入と棚卸をともに4,200円増やしたので、売上原価は訂正前と一致します。",
+        "objectives": [
+          1
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "85600"
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q06",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "当期の仕入帳に、翌期初に初めて引き渡される掛け仕入れ10,000円を記入していました。期末棚卸高にはその商品が含まれていません。問題は引渡日に記録する条件です。当期に必要な修正はどれですか。",
+        "explanation": "まだ引き渡されていないので、当期に入力した借方仕入・貸方買掛金を反対の仕訳で取り消します。棚卸高はもともと対象の商品を含めていません。",
+        "objectives": [
+          1
+        ],
+        "options": [
+          "仕入高と期末棚卸高をともに10,000円増やす",
+          "期末棚卸高からだけ10,000円引く",
+          "仕入高を10,000円減らし、期末棚卸高は集計済みの額を使う",
+          "仕入高と期末棚卸高をともに10,000円減らす"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q07",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "三分法の当期の掛け売上から、未回収の7,200円分の商品が締め日までに返品されました。商品の受取りを完了し、取引先と返品にも合意しています。売上返品の仕訳単独を記入してください。",
+        "explanation": "掛け販売を取り消すので借方売上、貸方売掛金です。期末の原価は別に棚卸の資料で確認します。",
+        "objectives": [
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "繰越商品",
+            "仕入",
+            "買掛金",
+            "売上",
+            "売掛金",
+            "売上原価"
+          ],
+          "debits": [
+            {
+              "account": "売上",
+              "amount": 7200
+            }
+          ],
+          "credits": [
+            {
+              "account": "売掛金",
+              "amount": 7200
+            }
+          ]
+        },
+        "accepted": [
+          "{\"debits\":[{\"account\":\"売上\",\"amount\":7200}],\"credits\":[{\"account\":\"売掛金\",\"amount\":7200}]}"
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q08",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "当期末までに引き渡した掛け販売13,400円と、当期に販売して当期内に返品を受け付けた掛け売上の取消し4,100円が、いずれも翌期の帳簿に記録されています。他に修正はなく、当期の販売代金はすべて未回収です。当期の売掛金残高の増加額は何円ですか。",
+        "explanation": "当期の掛け売上13,400円で売掛金が増え、当期の返品4,100円で減ります。増加額は差の9,300円です。",
+        "objectives": [
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "9300"
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-q09",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "当期の期首商品24,000円、純仕入91,000円、整理前の期末棚卸高26,000円、売上高160,000円です。当期末に渡した掛け売上12,200円と、当期の掛け販売に対して受け取った返品3,600円が未記帳です。引渡し済みの品は棚卸高に含まれていません。返品の現品だけ、原価1,200円が棚卸高から漏れていました。正しい当期の売上総利益を円で答えてください。",
+        "explanation": "純売上高は160,000＋12,200−3,600＝168,600円。期末商品は26,000＋1,200＝27,200円、売上原価は24,000＋91,000−27,200＝87,800円です。差は80,800円です。",
+        "objectives": [
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "80800"
+        ]
+      }
+    ],
+    "b3x-loan-year-boundary": [
+      {
+        "id": "b3x-loan-year-boundary-q01",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          0
+        ],
+        "prompt": "決算日は12月31日。10月1日に192,000円を年利率5%で借り入れ、元利は翌3月末に支払う。月割りで計算すると、決算日に計上する未払利息はいくらですか。",
+        "explanation": "決算までに経過したのは10・11・12月の3か月です。192,000円×5%×3÷12＝2,400円。翌1〜3月分は決算日の先にあるため、当期の費用に含めません。",
+        "input": "number",
+        "options": [],
+        "answer": 0,
+        "accepted": [
+          "2400"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-q02",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          0,
+          1
+        ],
+        "prompt": "12月決算。9月1日に300,000円を年利率3%で借りた。元金と全期間分の利息は翌2月末に普通預金から支払う。月割りで計算し、決算日の仕訳をしてください。",
+        "explanation": "9〜12月の4か月分は300,000円×3%×4÷12＝3,000円。支払利息という当期の費用を借方に記録し、まだ払っていない利息を未払利息として貸方に記録します。",
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "支払利息",
+            "未払利息",
+            "普通預金",
+            "借入金",
+            "前払利息",
+            "受取利息"
+          ],
+          "debits": [
+            {
+              "account": "支払利息",
+              "amount": 3000
+            }
+          ],
+          "credits": [
+            {
+              "account": "未払利息",
+              "amount": 3000
+            }
+          ]
+        },
+        "options": [],
+        "answer": 0,
+        "accepted": [
+          "{\"debits\":[{\"account\":\"支払利息\",\"amount\":3000}],\"credits\":[{\"account\":\"未払利息\",\"amount\":3000}]}"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-q03",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          1
+        ],
+        "prompt": "貸し手の決算で、利息1,650円について「未収利息／受取利息」と記帳した。翌期首に再振替を行う。貸し手の期首仕訳をしてください。",
+        "explanation": "決算時の仕訳を翌期の帳簿で逆にします。貸方の未収利息は前期から繰り越した資産を消し、借方の受取利息は将来入金時に総額を収益として記録したときに、前期分を差し引く働きをします。",
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "受取利息",
+            "未収利息",
+            "普通預金",
+            "貸付金",
+            "未払利息",
+            "前受利息"
+          ],
+          "debits": [
+            {
+              "account": "受取利息",
+              "amount": 1650
+            }
+          ],
+          "credits": [
+            {
+              "account": "未収利息",
+              "amount": 1650
+            }
+          ]
+        },
+        "options": [],
+        "answer": 0,
+        "accepted": [
+          "{\"debits\":[{\"account\":\"受取利息\",\"amount\":1650}],\"credits\":[{\"account\":\"未収利息\",\"amount\":1650}]}"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-q04",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          0,
+          2
+        ],
+        "prompt": "12月決算。9月1日に360,000円を年利率5%で借り、11月1日に元金90,000円だけを返した。利息は全期間分を翌2月末にまとめて払う。月割りで計算すると、決算日に計上する未払利息はいくらですか。",
+        "explanation": "9・10月は返済前なので360,000円×5%×2÷12＝3,000円。11・12月は返済後の270,000円×5%×2÷12＝2,250円。決算日の未払利息は合計5,250円です。",
+        "input": "number",
+        "options": [],
+        "answer": 0,
+        "accepted": [
+          "5250"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-q05",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          1,
+          2
+        ],
+        "prompt": "借り手は前期末の未払利息2,700円を翌期首に再振替していない。元金150,000円と、前期分を含む利息の合計4,500円を普通預金から支払った。支払日の仕訳をしてください。",
+        "explanation": "前期分2,700円は未払利息の残高にあるため借方に記入して減らします。今期の支払利息は4,500−2,700＝1,800円。借入金も借方から減らし、普通預金の支払額は150,000＋4,500＝154,500円です。",
+        "input": "journal",
+        "journal": {
+          "accounts": [
+            "借入金",
+            "未払利息",
+            "支払利息",
+            "普通預金",
+            "受取利息",
+            "前払利息",
+            "貸付金"
+          ],
+          "debits": [
+            {
+              "account": "借入金",
+              "amount": 150000
+            },
+            {
+              "account": "未払利息",
+              "amount": 2700
+            },
+            {
+              "account": "支払利息",
+              "amount": 1800
+            }
+          ],
+          "credits": [
+            {
+              "account": "普通預金",
+              "amount": 154500
+            }
+          ]
+        },
+        "options": [],
+        "answer": 0,
+        "accepted": [
+          "{\"debits\":[{\"account\":\"借入金\",\"amount\":150000},{\"account\":\"未払利息\",\"amount\":2700},{\"account\":\"支払利息\",\"amount\":1800}],\"credits\":[{\"account\":\"普通預金\",\"amount\":154500}]}"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-q06",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          0,
+          2
+        ],
+        "prompt": "12月決算。甲は10月1日に400,000円を年利率3%で借り、12月1日に元金100,000円だけを返した。乙は12月1日に240,000円を年利率6%で借りた。甲は翌1月末、乙は翌2月末に残元金と契約全期間の利息をそれぞれ払う。月割りとし、翌期の支払利息はいくらですか。",
+        "explanation": "翌期分は、甲が300,000円×3%×1÷12＝750円、乙が240,000円×6%×2÷12＝2,400円。翌期の支払利息は3,150円です。銀行では前期分も決済しますが、費用は翌期に属する月で求めます。",
+        "input": "number",
+        "options": [],
+        "answer": 0,
+        "accepted": [
+          "3150"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-q07",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          0,
+          2
+        ],
+        "prompt": "12月決算。11月1日に160,000円を年利率6%で、12月1日に別途240,000円を年利率2%で借りた。どちらも翌1月末に元利を全額支払う。途中返済や利息の前払いはない。月割りで計算し、翌1月末の普通預金の引落総額はいくらですか。",
+        "explanation": "1件目の全利息は160,000円×6%×3÷12＝2,400円、2件目は240,000円×2%×2÷12＝800円。前期分も含めた利息3,200円を元金400,000円に加えると403,200円です。",
+        "input": "number",
+        "options": [],
+        "answer": 0,
+        "accepted": [
+          "403200"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-q08",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          1,
+          2
+        ],
+        "prompt": "借り手が利息を先払いし、全額を支払利息とした。決算日に、翌期に属する先払い分だけを振り替える。仕訳の向きはどれですか。",
+        "explanation": "翌期の資金利用に対応する権利として前払利息を借方に記入します。貸方は支払利息で、すでに全額記録した当期費用から翌期分だけを減らします。",
+        "options": [
+          "支払利息を借方、前払利息を貸方",
+          "未払利息を借方、支払利息を貸方",
+          "前払利息を借方、支払利息を貸方",
+          "支払利息を借方、未払利息を貸方"
+        ],
+        "answer": 2
+      },
+      {
+        "id": "b3x-loan-year-boundary-q09",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "objectives": [
+          1,
+          2
+        ],
+        "prompt": "貸し手が決算で未収利息2,200円を記録し、翌期首に再振替した。翌期、元金80,000円と利息3,500円が普通預金へ入った。翌期に残る受取利息の額と、普通預金入金額の組み合わせとして正しいものを選んでください。",
+        "explanation": "再振替で当期の受取利息に借方2,200円、入金時に貸方3,500円が入ります。差し引くと当期収益は1,300円。口座への入金は元金80,000円と利息3,500円の合計83,500円です。",
+        "options": [
+          "受取利息3,500円、普通預金83,500円",
+          "受取利息1,300円、普通預金83,500円",
+          "受取利息1,300円、普通預金81,300円",
+          "受取利息2,200円、普通預金83,500円"
+        ],
+        "answer": 1
+      }
+    ]
+  },
+  "unitReviews": {
+    "unit-5": [
+      {
+        "id": "b3x-asset-register-reconciliation-review-01",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "3月決算の会社が、当期9月1日に420,000円で備品を取得し、同日から使い始めました。定額法、残存価額0円、取得月を含む月割とし、当期償却費は35,000円です。台帳から抜けている耐用年数は何年ですか。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "7"
+        ],
+        "explanation": "9月から翌年3月までは7か月です。月額は35,000÷7＝5,000円、一年分は5,000×12＝60,000円。残存価額が0円なので、420,000÷60,000＝7年です。",
+        "objectives": [
+          0
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-review-02",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "期末まで保有した全備品の取得原価は820,000円、台帳で資産ごとに確かめた期末減価償却累計額の合計は275,000円です。直接法の帳簿では、決算整理をした後も備品勘定に575,000円が残りました。取得・売却と期首残高に誤りはなく、当期償却の仕訳だけに一件の記入漏れがあったとします。漏れていた減価償却費はいくらですか。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "30000"
+        ],
+        "explanation": "台帳から求める正しい期末帳簿価額は820,000−275,000＝545,000円です。直接法の備品勘定に575,000円が残ったので、30,000円の減額が記録されていません。借方に減価償却費、貸方に備品を各30,000円記入すると一致します。",
+        "objectives": [
+          1
+        ]
+      },
+      {
+        "id": "b3x-asset-register-reconciliation-review-03",
+        "lesson": "b3x-asset-register-reconciliation",
+        "field": "commercial",
+        "prompt": "当期は4月から翌年3月まで。期首から保有する備品の取得原価は240,000円、耐用年数は5年、期首の償却累計額は72,000円です。定額法、残存価額0円、売却月を含める月割です。この備品を9月末に153,000円で売却する場合、期末まで保有し続ける場合に比べて、当期の税引前当期純利益はいくら増えますか。この二つの場合で他の収益・費用は変わらないものとします。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "33000"
+        ],
+        "explanation": "月額は240,000÷5÷12＝4,000円。売却までの当期償却費は24,000円、帳簿価額は240,000−72,000−24,000＝144,000円なので、売却益は9,000円です。保有を続けた場合の償却費48,000円に比べ、売却の場合は24,000円少なく、さらに売却益が9,000円生じます。利益の増加額は33,000円です。",
+        "objectives": [
+          2
+        ]
+      }
+    ],
+    "unit-6": [
+      {
+        "id": "b3x-loan-year-boundary-review-01",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "prompt": "12月決算の店はX1年12月1日に480,000円を年利率3%で貸し付けました。X2年2月1日に元金180,000円だけを回収し、3月末に残る元金と貸付期間すべての利息を普通預金で受け取りました。利息は月割で、元金を一部回収した月は回収後の元金で計算します。3月末の入金額と、X2年の受取利息の組合せはどれですか。",
+        "options": [
+          "入金302,700円、受取利息2,700円",
+          "入金303,900円、受取利息3,900円",
+          "入金303,900円、受取利息2,700円",
+          "入金483,900円、受取利息2,700円"
+        ],
+        "answer": 2,
+        "explanation": "X1年12月の利息は1,200円。X2年は1月が1,200円、2月・3月が残る元金300,000円に対し750円ずつなので、受取利息は2,700円です。入金額に含めるのは元金の残り300,000円と両期の利息3,900円で、合計303,900円になります。",
+        "objectives": [
+          2
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-review-02",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "prompt": "12月決算の店はX1年9月1日に360,000円を年利率5%で借り、X2年2月末に元利369,000円を普通預金から支払いました。利息は月割で、前期決算時の仕訳は正しく、X2年期首には再振替をしていません。返済時に借入金360,000円と支払利息9,000円を借方、普通預金369,000円を貸方へ記入してしまいました。返済後に必要な訂正仕訳はどれですか。",
+        "options": [
+          "借方・支払利息6,000円／貸方・未払利息6,000円",
+          "借方・未払利息6,000円／貸方・支払利息6,000円",
+          "借方・未払利息3,000円／貸方・支払利息3,000円",
+          "借方・普通預金6,000円／貸方・支払利息6,000円"
+        ],
+        "answer": 1,
+        "explanation": "月額は360,000×5%÷12＝1,500円。前期の9〜12月に生じた6,000円が未払利息に残っています。これを借方に記入して消し、貸方の支払利息で前期分を除くと、当期費用は1・2月分の3,000円になります。引落額と元金の記録はすでに合っています。",
+        "objectives": [
+          1
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-review-01",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "前期末に3,200円分の商品が棚卸表から漏れていました。今期の当初試算では期首商品16,800円、純仕入124,000円、期末商品25,000円、売上高184,700円です。今期の仕入れ、期末商品、売上高には誤りがありません。今期の正しい売上総利益はいくらですか。",
+        "explanation": "期首商品は20,000円。売上原価20,000＋124,000−25,000＝119,000円を売上高184,700円から引くと65,700円です。",
+        "objectives": [
+          0
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "65700"
+        ]
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-review-02",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "決算を締める前に当期中の掛け仕入れ3,800円の記入漏れに気づきました。その品は期末棚卸表にすでに載っています。売上の計上額に誤りはありません。この修正による当期の売上総利益の動きはどれですか。",
+        "explanation": "仕入高だけ増えるため売上原価は3,800円増え、売上総利益は同額減ります。棚卸を直す理由はありません。",
+        "objectives": [
+          1
+        ],
+        "options": [
+          "3,800円減る",
+          "3,800円増える",
+          "正しい棚卸評価額と同額だけ増える",
+          "どちらの資料にも同額加えるので変わらない"
+        ],
+        "answer": 0
+      },
+      {
+        "id": "b3x-inventory-period-reconciliation-review-03",
+        "lesson": "b3x-inventory-period-reconciliation",
+        "field": "commercial",
+        "prompt": "当期中に渡した掛け販売10,500円と、当期の掛け販売に対して受け取った返品2,200円を、ともに翌期へ誤って記帳していました。期末棚卸から引渡し分は除かれていますが、取得原価600円の返品商品だけ数え漏れました。訂正により当期売上総利益はいくら増えますか。",
+        "explanation": "純売上が10,500−2,200＝8,300円増え、期末商品を600円増やすので売上原価は600円減ります。合わせて利益は8,900円増えます。",
+        "objectives": [
+          2
+        ],
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "accepted": [
+          "8900"
+        ]
+      },
+      {
+        "id": "b3x-loan-year-boundary-review-03",
+        "lesson": "b3x-loan-year-boundary",
+        "field": "commercial",
+        "prompt": "12月決算の会社は11月1日に450,000円を年利4％で借り、翌年2月末に全額を返済します。利息は月割で、支払いは満期の一度だけです。12月31日、決算整理後の未払利息の貸方残高は何円ですか。",
+        "input": "number",
+        "unit": "円",
+        "answer": 3000,
+        "accepted": ["3000"],
+        "explanation": "利息の年額は450,000 × 4％ ＝ 18,000円です。決算日までの11月と12月の2か月分は18,000 × 2 ÷ 12 ＝ 3,000円。利息はすでに生じていて支払っていないため、支払利息の借方と未払利息の貸方に記入します。翌年1月と2月の分は当期に含めません。",
+        "objectives": [
+          0
+        ]
+      }
+    ]
+  }
+}

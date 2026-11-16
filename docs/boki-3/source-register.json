@@ -1,6 +1,6 @@
 {
   "qualification": "boki-3",
-  "verified": "2026-10-28",
+  "verified": "2026-11-16",
   "authority": "日本商工会議所",
   "sources": [
     {
@@ -8,7 +8,7 @@
       "title": "日商簿記3級：試験科目・注意事項",
       "url": "https://www.kentei.ne.jp/bookkeeping/class3/exam",
       "applicability": "current",
-      "verified": "2026-10-28",
+      "verified": "2026-11-16",
       "published": null,
       "notes": "商業簿記、3題以内、60分、70%以上。年度4月1日施行法令。手数料や開催日を教材へ固定しない。"
     },
@@ -26,7 +26,7 @@
       "title": "簿記：出題区分表と適用年度",
       "url": "https://www.kentei.ne.jp/bookkeeping/exam-list",
       "applicability": "2026 and 2027 distinctly",
-      "verified": "2026-10-28",
+      "verified": "2026-11-16",
       "published": "2026-07-31",
       "notes": "2026年度は2022年度版、2027年度は確定新版。勘定科目表は出題範囲そのものではない。"
     },
@@ -35,7 +35,7 @@
       "title": "商業簿記・会計学：2022年度施行、2026年度適用区分表",
       "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2024/12/shogyouboki_kubun.pdf",
       "applicability": "2026-04-01..2027-03-31",
-      "verified": "2026-10-28",
+      "verified": "2026-11-16",
       "published": "2021-12-10",
       "notes": "4ページの3級列を配置を保って確認。2級列の銀行勘定調整表・未決算・棚卸減耗などを3級と誤認しない。"
     },
@@ -44,7 +44,7 @@
       "title": "商業簿記・会計学：2027年度適用区分表【確定版】",
       "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027kubunhyo_fixed.pdf",
       "applicability": "2027-04-01..2028-03-31",
-      "verified": "2026-10-28",
+      "verified": "2026-11-16",
       "published": "2026-07-31",
       "notes": "暫定版ではなく2026年7月31日確定版。2026年度の科目や問題へ混在させない。"
     },
@@ -53,7 +53,7 @@
       "title": "2027年度区分改定の説明書【確定版】",
       "url": "https://www.kentei.ne.jp/wp/wp-content/uploads/2014/10/2027_kaitei_shushi_fixed.pdf",
       "applicability": "from 2027-04-01",
-      "verified": "2026-10-28",
+      "verified": "2026-11-16",
       "published": "2026-07-31",
       "notes": "紙手形・小切手削除、販売時の原価振替、除却廃棄、簡易な定率法。3級はリースのオンバランス処理を要求しない。"
     },
@@ -62,7 +62,7 @@
       "title": "2027年度以降の日商簿記3級試験問題の配点",
       "url": "https://www.kentei.ne.jp/51504",
       "applicability": "from 2027-04-01",
-      "verified": "2026-10-28",
+      "verified": "2026-11-16",
       "published": "2026-09-25",
       "notes": "第1問45、第2問25、第3問30、計100、70以上。2027年3月31日までは従来配点。本資料自体は従来の数値を明記していない。"
     },
@@ -98,7 +98,7 @@
       "title": "3級サンプル問題一覧",
       "url": "https://www.kentei.ne.jp/bookkeeping/sample/sample_3",
       "applicability": "samples published 2024..2026",
-      "verified": "2026-10-28",
+      "verified": "2026-11-16",
       "published": null,
       "notes": "著作権JCCI、無断転載・無断営利利用を禁止。構成の確認に限定し、数値だけ置換する模作を行わない。"
     },
@@ -191,6 +191,15 @@
       "verified": "2026-10-28",
       "published": null,
       "notes": "配当・利益準備金・法人税計上・損益と利益剰余金の勘定記入。"
+    },
+    {
+      "id": "b3-cbt-format",
+      "title": "日商簿記検定2級・3級ネット試験の方式",
+      "url": "https://www.kentei.ne.jp/33013",
+      "applicability": "current",
+      "verified": "2026-11-16",
+      "published": null,
+      "notes": "選択式と入力式、3級は60分・商業簿記3題以内。"
     }
   ],
   "policy": "Original paraphrases and tasks only; do not reproduce sample text, figures, layouts or answer sheets."

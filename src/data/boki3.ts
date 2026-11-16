@@ -13,6 +13,7 @@ import capstoneAReviews from './boki3-capstone-a-reviews.json';
 import capstoneBReviews from './boki3-capstone-b-reviews.json';
 import cumulative from './boki3-cumulative.json';
 import mocks from './boki3-mocks.json';
+import applicationPractice from './boki3-application-practice.json';
 import sourceRegister from '../../docs/boki-3/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
@@ -29,6 +30,7 @@ export const boki3Bank = {
   ...assetsReporting,
   ...capstoneA,
   ...capstoneB,
+  ...applicationPractice.lessons,
 } as Record<string, Question[]>;
 export const boki3ReviewBank: Record<string, Question[]> = {};
 for (const bank of [
@@ -38,6 +40,7 @@ for (const bank of [
   assetsReportingReviews,
   capstoneAReviews,
   capstoneBReviews,
+  applicationPractice.unitReviews,
 ]) {
   for (const [key, questions] of Object.entries(bank as Record<string, Question[]>)) {
     (boki3ReviewBank[key] ??= []).push(...questions);
@@ -178,8 +181,9 @@ export function boki3Assessments(
       title: `${row.data.title}：理解度チェック`,
       kind: 'lesson',
       unit: row.data.unit,
-      version:
-        retained && !['b3-credit', 'b3-inventory'].includes(row.data.stableId)
+      version: Object.hasOwn(applicationPractice.lessons, row.data.stableId)
+        ? 'boki3-2026-application-v1'
+        : retained && !['b3-credit', 'b3-inventory'].includes(row.data.stableId)
           ? 'boki-2026-v1'
           : boki3Version,
       questions,
@@ -262,6 +266,9 @@ export function boki3Assessments(
       title: `簿記3級・${title} 総合確認`,
       kind: 'review',
       unit,
+      version: Object.hasOwn(applicationPractice.unitReviews, `unit-${unit}`)
+        ? 'boki3-2026-application-v1'
+        : boki3Version,
       questions: boki3ReviewBank[`unit-${unit}`] ?? [],
       instructions:
         'レッスン末とは別に作成した問題です。異なる条件から科目と手順を選び、計算過程も解説と照合してください。',

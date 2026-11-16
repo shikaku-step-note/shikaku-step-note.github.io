@@ -4,10 +4,10 @@
   "qualification": "boki-3",
   "title": "設立・増資を記録し、出資と利益を区別する",
   "description": "株式の払込額を計算して設立仕訳を作る。増資と借入・売上の入金を区別して記録する。具体例の計算過程と独立演習から、判断の理由まで学びます。",
-  "order": 35,
+  "order": 36,
   "minutes": 80,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 5,
   "subject": "commercial",
   "syllabus": [
@@ -59,12 +59,12 @@
       "definition": "この課では出資の払込み等、営業の収益費用と区別して純資産へ記録する取引。"
     }
   ]
-}
+,"inlineGlossary":[{"term":"資本金","definition":"この課では株式発行の払込額のうち全額資本金と指定された額を記録する純資産勘定。","id":"term-1"},{"term":"株主","definition":"株式会社の株式を保有している出資者。","id":"term-2"},{"term":"払込額","definition":"株式の取得に対して出資者が会社へ払い込む金額。","id":"term-3"},{"term":"純資産","definition":"資産総額から負債総額を差し引いた部分。","id":"term-6"}]}
 ---
 
-会社が営業を始めるため、株主からお金の払込みを受けました。このお金は売上でしょうか。それとも返済すべき借入金でしょうか。会社と株主を別の主体として考えると、商品の販売による収益でも、借入契約による債務でもなく、株主の出資として純資産へ記録すると分かります。
+会社が営業を始めるため、<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">株主</a>からお金の払込みを受けました。このお金は売上でしょうか。それとも返済すべき借入金でしょうか。会社と株主を別の主体として考えると、商品の販売による収益でも、借入契約による債務でもなく、株主の出資として<a class="lesson-term" data-lesson-term href="#lesson-term-term-6">純資産</a>へ記録すると分かります。
 
-この課では株式会社の設立と増資を、払込額を全額資本金とする指定で扱います。会社法上の資本金・資本準備金の配分計算や組織再編は扱いません。設例の株数と一株当たり払込額は独自の条件です。会社の財産と株主個人の財産を分け、仕訳、勘定残高、貸借対照表の関係を追っていきます。
+この課では株式会社の設立と増資を、<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">払込額</a>を全額<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">資本金</a>とする指定で扱います。会社法上の資本金・資本準備金の配分計算や組織再編は扱いません。設例の株数と一株当たり払込額は独自の条件です。会社の財産と株主個人の財産を分け、仕訳、勘定残高、貸借対照表の関係を追っていきます。
 
 <span id="objective-1"></span>
 ## 出資は、会社から見た資産と純資産を増やす
@@ -132,12 +132,19 @@
 
 利益や借入金の情報が一緒に与えられていても、資本金の増減に含めるものを選びます。売上や利益の金額を資本金の差額へ足してしまうと、資本取引を抜き出せていません。問題の文章へ「出資」「借入」「営業成果」と印を付けると整理できます。
 
+<figure id="b3x-capital-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-capital-comparison-caption">
+
 | 資金が増える理由 | 借方の例 | 貸方の例 | 利益への直接の影響 |
 | --- | --- | --- | --- |
 | 株主からの払込み | 普通預金 | 資本金 | ない |
 | 銀行からの借入れ | 普通預金 | 借入金 | ない |
 | 商品の現金販売 | 現金 | 売上 | 収益が増える |
 | 売掛金の回収 | 普通預金 | 売掛金 | 回収時に収益を再計上しない |
+
+</div>
+<figcaption id="b3x-capital-comparison-caption">株式発行による預金と資本金の増加</figcaption>
+</figure>
 
 ### 自力演習：同じ預金への入金を、三つの理由へ分ける
 
@@ -162,6 +169,36 @@
 株式100株を一株5,000円で発行すると、株数は100株、払込総額は500,000円です。株数という単位の情報を、そのまま資本金の金額欄へ記入しません。既存200株に100株を追加したという資料なら、発行済株数は300株になりますが、資本金の当期増加は新たな払込額500,000円です。過去の株式の発行単価が異なる場合、300株に今回の単価を掛けるだけで期末資本金を計算することもできません。
 
 期末資本金を求めるためには期首残高と今回の増加額を使い、今回の払込額を求めるためには今回の株数と払込単価を使います。答案の空欄が株数なのか、当期払込額なのか、期末残高なのかを見分けてから、必要な資料を選びましょう。
+
+<section class="guided-lesson" aria-labelledby="b3x-capital-work-heading">
+<h2 id="b3x-capital-work-heading">手を動かして確かめる：増資後の資本金を求める</h2>
+<figure id="b3x-capital-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-capital-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">従来の資本金</th><td>720,000円</td></tr>
+<tr><th scope="row">新株の払込額</th><td>280,000円（全額を資本金へ）</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-capital-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>払込み後の資本金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="1000000" data-guided-hint="払込みの相手は売上ではなく資本金です。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-capital-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-capital-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>720,000 ＋ 280,000 ＝ 1,000,000円。借方の預金と貸方の資本金をそれぞれ280,000円増やします。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

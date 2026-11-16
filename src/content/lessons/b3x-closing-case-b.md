@@ -1,16 +1,19 @@
 ---
-{"stableId":"b3x-closing-case-b","qualification":"boki-3","title":"総合演習B：日向株式会社の訂正・税金精算から決算書を完成させる","description":"未記帳手数料、商品、貸倒見積り、備品、未使用消耗品、保険料、消費税と法人税等を一つの資料で整理し、勘定式の決算書と利益振替まで解きます。","order":55,"minutes":160,"sample":false,"updated":"2026-10-28","unit":7,"syllabus":[3],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["修正前試算表と資料から、既処理・未記帳・分類修正を見分けて必要な仕訳を作る","商品の原価、貸倒引当金、償却、期間配分と税金を相互の依存関係に従って整理する","整理後残高から損益計算書と貸借対照表を作り、利益の締切りと純資産の増加を検算する"],"prerequisite":"b3x-worksheet、b3x-profit-loss、b3x-balance-sheet、b3x-closing-booksと、各決算整理レッスンの練習を終えてから取り組んでください。","keywords":["修正前残高試算表","整理後残高","税引前当期純利益","当期純利益","未払消費税","未払法人税等","損益勘定","繰越利益剰余金"],"glossary":[{"term":"修正前残高試算表","definition":"誤記修正や決算整理を反映する前の各勘定残高を集めた試算表"},{"term":"整理後残高","definition":"必要な修正・決算整理仕訳を反映した後の勘定残高"},{"term":"税引前当期純利益","definition":"当期の法人税等を費用へ差し引く前の利益"},{"term":"当期純利益","definition":"当期の収益から対応する費用を差し引いた最終的な利益"},{"term":"未払消費税","definition":"消費税の精算等により、今後納付する税額を記録する負債勘定"},{"term":"未払法人税等","definition":"当期法人税等のうち、まだ納付していない額を記録する負債勘定"},{"term":"損益勘定","definition":"収益・費用を締め切って当期の損益を集計するための勘定"},{"term":"繰越利益剰余金","definition":"利益の累積とその配当等による増減を記録する純資産の勘定"}]}
+{"stableId":"b3x-closing-case-b","qualification":"boki-3","title":"総合演習B：日向株式会社の訂正・税金精算から決算書を完成させる","description":"未記帳手数料、商品、貸倒見積り、備品、未使用消耗品、保険料、消費税と法人税等を一つの資料で整理し、勘定式の決算書と利益振替まで解きます。","order":58,"minutes":160,"sample":false,"updated":"2026-11-16","unit":7,"syllabus":[3],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["修正前試算表と資料から、既処理・未記帳・分類修正を見分けて必要な仕訳を作る","商品の原価、貸倒引当金、償却、期間配分と税金を相互の依存関係に従って整理する","整理後残高から損益計算書と貸借対照表を作り、利益の締切りと純資産の増加を検算する"],"prerequisite":"b3x-worksheet、b3x-profit-loss、b3x-balance-sheet、b3x-closing-booksと、各決算整理レッスンの練習を終えてから取り組んでください。","keywords":["修正前残高試算表","整理後残高","税引前当期純利益","当期純利益","未払消費税","未払法人税等","損益勘定","繰越利益剰余金"],"glossary":[{"term":"修正前残高試算表","definition":"誤記修正や決算整理を反映する前の各勘定残高を集めた試算表"},{"term":"整理後残高","definition":"必要な修正・決算整理仕訳を反映した後の勘定残高"},{"term":"税引前当期純利益","definition":"当期の法人税等を費用へ差し引く前の利益"},{"term":"当期純利益","definition":"当期の収益から対応する費用を差し引いた最終的な利益"},{"term":"未払消費税","definition":"消費税の精算等により、今後納付する税額を記録する負債勘定"},{"term":"未払法人税等","definition":"当期法人税等のうち、まだ納付していない額を記録する負債勘定"},{"term":"損益勘定","definition":"収益・費用を締め切って当期の損益を集計するための勘定"},{"term":"繰越利益剰余金","definition":"利益の累積とその配当等による増減を記録する純資産の勘定"}],"inlineGlossary":[{"term":"修正前残高試算表","definition":"誤記修正や決算整理を反映する前の各勘定残高を集めた試算表","id":"term-1"},{"term":"整理後残高","definition":"必要な修正・決算整理仕訳を反映した後の勘定残高","id":"term-2"},{"term":"当期純利益","definition":"当期の収益から対応する費用を差し引いた最終的な利益","id":"term-4"},{"term":"繰越利益剰余金","definition":"利益の累積とその配当等による増減を記録する純資産の勘定","id":"term-8"}]}
 ---
 
-修正前試算表は左右が一致していても、決算書をそのまま作れるとは限りません。未記帳の手数料や、売れずに残った商品、翌期分の保険料などを反映していないからです。この総合演習では日向株式会社の一期間を、証ひょうの確認から整理後残高、損益計算書、貸借対照表、利益の振替まで続けて解きます。
+修正前試算表は左右が一致していても、決算書をそのまま作れるとは限りません。未記帳の手数料や、売れずに残った商品、翌期分の保険料などを反映していないからです。この総合演習では日向株式会社の一期間を、証ひょうの確認から<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">整理後残高</a>、損益計算書、貸借対照表、利益の振替まで続けて解きます。
 
-先に資料だけを読んで整理仕訳を書き、当期純利益と資産合計を求めてください。解説を見るときは、答えの数字だけでなく、どの残高へ何を足し引きしたかを照合します。税金の金額や見積率は問題内の指定値です。税額の申告計算や実際の税率の推測は行いません。
+先に資料だけを読んで整理仕訳を書き、<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">当期純利益</a>と資産合計を求めてください。解説を見るときは、答えの数字だけでなく、どの残高へ何を足し引きしたかを照合します。税金の金額や見積率は問題内の指定値です。税額の申告計算や実際の税率の推測は行いません。
 
 ## 問題資料：修正前の残高と、決算で分かった事項
 
-日向株式会社の会計期間はX1年1月1日から12月31日です。次の修正前残高試算表と資料1〜10から、仕訳、整理後残高試算表、勘定式の損益計算書・貸借対照表を作り、当期純利益を繰越利益剰余金へ振り替えます。配当や資本金の変動はありません。
+日向株式会社の会計期間はX1年1月1日から12月31日です。次の<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">修正前残高試算表</a>と資料1〜10から、仕訳、整理後残高試算表、勘定式の損益計算書・貸借対照表を作り、当期純利益を<a class="lesson-term" data-lesson-term href="#lesson-term-term-8">繰越利益剰余金</a>へ振り替えます。配当や資本金の変動はありません。
 
 個々の整理仕訳では消費税の追加計算をせず、消費税の精算は資料9の仮勘定残高だけを用いる設問条件です。手数料を非課税と説明する条件ではなく、各資料に示した記帳額で解くための計算上の指定です。端数の処理は不要です。
+
+<figure id="b3x-closing-case-b-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-closing-case-b-comparison-caption">
 
 | 勘定科目 | 借方残高（円） | 貸方残高（円） |
 | --- | ---: | ---: |
@@ -42,6 +45,10 @@
 | 売上 | — | 3,200,000 |
 | 受取手数料 | — | 40,000 |
 | 合計 | 5,775,000 | 5,775,000 |
+
+</div>
+<figcaption id="b3x-closing-case-b-comparison-caption">引当金の繰入額と貸借対照表の控除額</figcaption>
+</figure>
 
 1. 現金過不足の借方3,000円は、現金を実際有高へ合わせる処理が済んでいます。そのうち通信費2,000円の支払漏れと判明し、残り1,000円は決算まで不明でした。
 2. 普通預金から引き落とされた当期の銀行手数料1,000円が未記帳でした。
@@ -241,6 +248,37 @@
 税引前利益から未払税額57,000円を引くと233,000円になってしまい、既払18,000円分の税負担を費用から落とします。税金をいくら負担したか、今後いくら払うかという二つの答えを区別できれば、主問題の法人税等162,000円と未払132,000円の違いも説明できます。
 
 最後は、答えた表を一度隠し、主問題の資料から当期純利益549,040円と資産合計2,931,040円へ再びたどってください。数字が違った場合は、税金の費用と負債、引当金の必要額と補充額、期首利益剰余金と期末残高という組合せから探すと、原因を絞れます。
+
+<section class="guided-lesson" aria-labelledby="b3x-closing-case-b-work-heading">
+<h2 id="b3x-closing-case-b-work-heading">手を動かして確かめる：控除表示する純額を照合する</h2>
+<figure id="b3x-closing-case-b-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-closing-case-b-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">売掛金</th><td>213,000円</td></tr>
+<tr><th scope="row">売掛金に対する整理前の貸倒引当金</th><td>2,600円</td></tr>
+<tr><th scope="row">決算後の必要額</th><td>売掛金残高の2％</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-closing-case-b-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>貸倒引当金を控除した売掛金の額は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="208740" data-guided-hint="貸借対照表では、繰入額ではなく決算後の貸倒引当金を控除します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-closing-case-b-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-closing-case-b-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>決算後の引当金は213,000 × 2％ ＝ 4,260円。表示する純額は213,000 − 4,260 ＝ 208,740円です。仕訳の繰入額は別に求める1,660円です。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

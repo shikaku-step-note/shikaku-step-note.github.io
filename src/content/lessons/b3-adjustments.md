@@ -4,10 +4,10 @@
   "qualification": "boki-3",
   "title": "商品棚卸・貸倒引当金・税金と純資産の整理",
   "description": "商品棚卸、貸倒引当金、税金、純資産、貯蔵品の基本関係を整理します。個別の決算整理を学んだ後に、仕訳と残高を振り返るまとめです。",
-  "order": 47,
+  "order": 50,
   "minutes": 35,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 6,
   "syllabus": [
     6
@@ -44,7 +44,7 @@
       "definition": "法令に基づいて利益から積み立てる準備金"
     }
   ]
-}
+,"inlineGlossary":[{"term":"貸倒引当金","definition":"債権の回収不能に備えて見積もる額を記録する評価勘定","id":"term-1"},{"term":"差額補充法","definition":"必要な引当金残高と既存残高との差額を繰り入れる方法","id":"term-2"},{"term":"仮受消費税","definition":"税抜方式で売上等に係る消費税額を記録する負債勘定","id":"term-3"},{"term":"利益準備金","definition":"法令に基づいて利益から積み立てる準備金","id":"term-4"}]}
 ---
 
 ## 売上原価を求めるため商品を棚卸しする
@@ -55,9 +55,9 @@
 
 ## 回収できない見込みを貸倒引当金にする
 
-期末売掛金100,000円に対して、2%の貸倒れを見積もる条件を考えます。必要な貸倒引当金残高は100,000×0.02＝2,000円です。整理前の貸倒引当金が貸方に700円残っているなら、新たに繰り入れる額は2,000−700＝1,300円です。
+期末売掛金100,000円に対して、2%の貸倒れを見積もる条件を考えます。必要な<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">貸倒引当金</a>残高は100,000×0.02＝2,000円です。整理前の貸倒引当金が貸方に700円残っているなら、新たに繰り入れる額は2,000−700＝1,300円です。
 
-借方「貸倒引当金繰入1,300」、貸方「貸倒引当金1,300」とします。必要残高2,000円をそのまま追加すると、貸方残高が2,700円になり、見積りを超えてしまいます。必要残高と当期繰入額を別々に計算するのが差額補充法の要点です。
+借方「貸倒引当金繰入1,300」、貸方「貸倒引当金1,300」とします。必要残高2,000円をそのまま追加すると、貸方残高が2,700円になり、見積りを超えてしまいます。必要残高と当期繰入額を別々に計算するのが<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">差額補充法</a>の要点です。
 
 既存残高が必要額より多い条件なら、超過分の戻入れを検討します。仕訳の向きを機械的に繰入れへ固定せず、整理前後の残高を確かめましょう。貸倒引当金を売掛金自体と混ぜず、債権を評価するための控除項目として捉えます。
 
@@ -69,7 +69,7 @@
 
 ## 税抜方式の消費税を精算する
 
-税抜方式では、商品売上などに係る税額を仮受消費税、仕入などに係る税額を仮払消費税で記録します。期末に仮受消費税30,000円、仮払消費税22,000円で、ほかの調整がない単純な条件なら、差額8,000円が未払消費税です。
+税抜方式では、商品売上などに係る税額を<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">仮受消費税</a>、仕入などに係る税額を仮払消費税で記録します。期末に仮受消費税30,000円、仮払消費税22,000円で、ほかの調整がない単純な条件なら、差額8,000円が未払消費税です。
 
 借方「仮受消費税30,000」、貸方「仮払消費税22,000・未払消費税8,000」とします。仮受と仮払を両方取り崩してから、納付する義務を残す処理です。仮受消費税だけを税金の費用にするわけではありません。実務では課税区分などの条件がありますが、学習例では指定された税額と精算条件を使います。
 
@@ -79,7 +79,7 @@
 
 株主が出資し資本金が増える取引は、売上による収益の発生と区別します。期中に当期純利益が生じたら、決算で損益勘定から繰越利益剰余金へ振り替えます。利益を計上することと、配当の支払いを行うことも別の取引です。
 
-配当10,000円、利益準備金積立1,000円が指定された場合、借方「繰越利益剰余金11,000」、貸方「未払配当金10,000・利益準備金1,000」と記録します。配当は通常、当期の費用ではなく利益剰余金の処分です。支払時には未払配当金を取り崩します。準備金の積立額の詳しい算定は、上位級の条件と区別して学びます。
+配当10,000円、<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">利益準備金</a>積立1,000円が指定された場合、借方「繰越利益剰余金11,000」、貸方「未払配当金10,000・利益準備金1,000」と記録します。配当は通常、当期の費用ではなく利益剰余金の処分です。支払時には未払配当金を取り崩します。準備金の積立額の詳しい算定は、上位級の条件と区別して学びます。
 
 ## 整理前後の残高を比較する
 
@@ -102,3 +102,49 @@
 ## 税金の確定と納付を分ける
 
 法人税等の当期負担額40,000円を確定した時点で、中間納付15,000円が仮払法人税等にあるなら、差25,000円を未払法人税等とします。後日に25,000円を納付するときは未払法人税等を減らし、当期負担をもう一度計上しません。税率からの申告額計算は、この単純な仕訳例の範囲外です。表示された40,000円を条件として使う学習例と、実際の税務計算を区別してください。
+
+<figure id="b3-adjustments-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3-adjustments-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">現物と帳簿の差</th><td>現金や商品を数え、何が実際にあるかを確かめる。</td></tr>
+<tr><th scope="row">期末をまたぐ費用や収益</th><td>支払・受取と対象期間を分け、当期分を明らかにする。</td></tr>
+<tr><th scope="row">決算書の残高</th><td>決算整理仕訳を元の残高に重ねて、整理後の金額を出す。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3-adjustments-comparison-caption">資料から決算整理を始める順序</figcaption>
+</figure>
+
+<section class="guided-lesson" aria-labelledby="b3-adjustments-work-heading">
+<h2 id="b3-adjustments-work-heading">手を動かして確かめる：二つの整理事項を反映した費用合計を求める</h2>
+<figure id="b3-adjustments-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3-adjustments-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">整理前の費用合計</th><td>155,000円</td></tr>
+<tr><th scope="row">計上が必要な未払費用</th><td>12,000円</td></tr>
+<tr><th scope="row">費用から振り替える前払分</th><td>7,000円</td></tr>
+<tr><th scope="row">他の整理</th><td>なし</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3-adjustments-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>整理後の費用合計は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="160000" data-guided-hint="整理事項を一つずつ、費用が増える方向か減る方向かで考えます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3-adjustments-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3-adjustments-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>155,000 ＋ 12,000 − 7,000 ＝ 160,000円。未払分は当期の費用を追加し、前払分は翌期の費用を資産に移します。</p>
+</details>
+</section>

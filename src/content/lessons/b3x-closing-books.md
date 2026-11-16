@@ -4,10 +4,10 @@
   "qualification": "boki-3",
   "title": "収益費用を締め、損益を利益剰余金と翌期帳簿へつなぐ",
   "description": "収益・費用勘定を損益勘定へ振り替える。当期損益を利益剰余金へ移して締切後試算表を作る。具体例の計算過程と独立演習から、判断の理由まで学びます。",
-  "order": 52,
+  "order": 55,
   "minutes": 120,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 7,
   "subject": "commercial",
   "syllabus": [
@@ -60,12 +60,12 @@
       "definition": "新しい年度の帳簿に前期末残高を引き継ぐ記入。"
     }
   ]
-}
+,"inlineGlossary":[{"term":"損益勘定","definition":"収益と費用を集めて当期の利益又は損失を求める決算集計用勘定。","id":"term-1"},{"term":"帳簿の締切","definition":"当期の勘定を区切り、損益の振替と残高の繰越を行う作業。","id":"term-3"},{"term":"次期繰越","definition":"当期の勘定を締める際に残高を反対側へ記入して次期への持越額を示す記入。","id":"term-4"},{"term":"開始記入","definition":"新しい年度の帳簿に前期末残高を引き継ぐ記入。","id":"term-7"}]}
 ---
 
-一年間の費用・収益を計算し、財務諸表を作った後も、帳簿には各勘定の残高があります。次の年度では収益と費用を新しくゼロから集計し、資産・負債・純資産は期末残高を引き継ぐ必要があります。帳簿の締切は、そのために当期の記録を区切る作業です。
+一年間の費用・収益を計算し、財務諸表を作った後も、帳簿には各勘定の残高があります。次の年度では収益と費用を新しくゼロから集計し、資産・負債・純資産は期末残高を引き継ぐ必要があります。<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">帳簿の締切</a>は、そのために当期の記録を区切る作業です。
 
-この課では損益勘定へ収益と費用を集め、その差額を繰越利益剰余金へ移し、資産・負債・純資産の次期繰越と翌期開始記入を行います。決算整理、精算表、財務諸表、締切を一つの動作と考えず、何がどの時点で残っているかを確かめながら進めます。
+この課では<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">損益勘定</a>へ収益と費用を集め、その差額を繰越利益剰余金へ移し、資産・負債・純資産の<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">次期繰越</a>と翌期<a class="lesson-term" data-lesson-term href="#lesson-term-term-7">開始記入</a>を行います。決算整理、精算表、財務諸表、締切を一つの動作と考えず、何がどの時点で残っているかを確かめながら進めます。
 
 <span id="objective-1"></span>
 ## 収益と費用の残高を、損益勘定へ移してゼロにする
@@ -85,6 +85,9 @@
 
 答案の行数が足りないときに複数の振替仕訳へ分ける指定なら、例えば仕入・給料・家賃の計356,000円と、償却費・法人税等の計20,000円に分けられます。合計376,000円が損益の借方へ移り、各費用勘定がゼロになる結果は同じです。設問が一つの科目の締切を求める場合には、その科目だけを振り替えます。
 
+<figure id="b3x-closing-books-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-closing-books-comparison-caption">
+
 | 損益勘定の借方 | 金額 | 損益勘定の貸方 | 金額 |
 | --- | ---: | --- | ---: |
 | 仕入 | 240,000円 | 売上 | 400,000円 |
@@ -93,6 +96,10 @@
 | 減価償却費 | 12,000円 |  |  |
 | 法人税等 | 8,000円 |  |  |
 | 利益振替前合計 | 376,000円 | 利益振替前合計 | 402,000円 |
+
+</div>
+<figcaption id="b3x-closing-books-comparison-caption">損益勘定から純資産への振替</figcaption>
+</figure>
 
 損益勘定の左右は、損益計算書で費用を借方、収益を貸方に並べる関係と対応しています。各収益・費用勘定では反対側へ記入し、損益勘定では本来の収益・費用の側へ集めます。この対応が見えると、振替仕訳の向きを一つずつ暗記せずに作れます。
 
@@ -201,6 +208,36 @@
 各帳簿は指定様式に従って当期の合計を記入し、二重線で期間を区切ります。翌期の帳簿には、現金118,000円と売掛金25,000円を借方、買掛金18,000円と純資産各残高を貸方の前期繰越として引き継ぎます。得意先・仕入先別の内訳も引き継ぎますが、当期の販売や仕入れを新しい年度の取引として写し直しません。
 
 仕訳帳は新年度の取引記録を始めます。元帳の開始記入のために、前年の①〜⑦をもう一度仕訳するわけではありません。開始記入と開始仕訳等の扱いに様式指定がある問題では、その指示に従い、同じ残高を二重に転記しないよう確認します。翌期に売掛金25,000円を現金回収したら、現金25,000／売掛金25,000です。前年の売上を再び増やさず、残っていた権利を消す取引だと説明できます。
+
+<section class="guided-lesson" aria-labelledby="b3x-closing-books-work-heading">
+<h2 id="b3x-closing-books-work-heading">手を動かして確かめる：損益勘定を締め切る</h2>
+<figure id="b3x-closing-books-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-closing-books-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">損益勘定の貸方に集めた収益</th><td>630,000円</td></tr>
+<tr><th scope="row">借方に集めた費用</th><td>557,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-closing-books-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>損益勘定から繰越利益剰余金に振り替える利益はいくらですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="73000" data-guided-hint="収益合計と費用合計の差を出します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-closing-books-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-closing-books-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>630,000 − 557,000 ＝ 73,000円。損益73,000円を借方へ、利益を増やす繰越利益剰余金73,000円を貸方へ置きます。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

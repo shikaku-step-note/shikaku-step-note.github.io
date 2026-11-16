@@ -1,5 +1,5 @@
 ---
-{"stableId":"b3x-closing-inventory","qualification":"boki-3","title":"商品棚卸から売上原価を確定し、勘定へ反映する","description":"期首商品・当期純仕入・期末商品をつなぎ、仕入勘定で売上原価を求める決算整理と、売上原価勘定を使う指定の違いを練習します。","order":40,"minutes":90,"sample":false,"updated":"2026-10-28","unit":6,"syllabus":[3],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["数量と原価の資料から期末商品と当期の売上原価を求める","三分法の期首・期末振替を仕訳し、仕入勘定の整理後残高を算定する","返品・未処理仕入を反映した資料で原価と利益を照合する"],"prerequisite":"三分法、仕入・売上返品、先入先出法・移動平均法、貸借と元帳の計算を学んでおきます。","keywords":["期首商品棚卸高","当期純仕入高","期末商品棚卸高","売上原価","繰越商品","三分法","実地棚卸","売上総利益"],"glossary":[{"term":"期首商品棚卸高","definition":"前期から当期へ引き継いだ商品の原価"},{"term":"当期純仕入高","definition":"当期仕入から返品等の減額を反映した仕入原価"},{"term":"期末商品棚卸高","definition":"期末に残る商品の原価"},{"term":"売上原価","definition":"当期に販売した商品に対応する原価"},{"term":"繰越商品","definition":"三分法で期首または期末の商品原価を記録する資産勘定"},{"term":"三分法","definition":"商品の売買取引を仕入・売上・繰越商品の勘定で処理する方法"},{"term":"実地棚卸","definition":"実際にある商品の数量等を確認する作業"},{"term":"売上総利益","definition":"売上高から対応する売上原価を引いた利益"}]}
+{"stableId":"b3x-closing-inventory","qualification":"boki-3","title":"商品棚卸から売上原価を確定し、勘定へ反映する","description":"期首商品・当期純仕入・期末商品をつなぎ、仕入勘定で売上原価を求める決算整理と、売上原価勘定を使う指定の違いを練習します。","order":41,"minutes":90,"sample":false,"updated":"2026-11-16","unit":6,"syllabus":[3],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["数量と原価の資料から期末商品と当期の売上原価を求める","三分法の期首・期末振替を仕訳し、仕入勘定の整理後残高を算定する","返品・未処理仕入を反映した資料で原価と利益を照合する"],"prerequisite":"三分法、仕入・売上返品、先入先出法・移動平均法、貸借と元帳の計算を学んでおきます。","keywords":["期首商品棚卸高","当期純仕入高","期末商品棚卸高","売上原価","繰越商品","三分法","実地棚卸","売上総利益"],"glossary":[{"term":"期首商品棚卸高","definition":"前期から当期へ引き継いだ商品の原価"},{"term":"当期純仕入高","definition":"当期仕入から返品等の減額を反映した仕入原価"},{"term":"期末商品棚卸高","definition":"期末に残る商品の原価"},{"term":"売上原価","definition":"当期に販売した商品に対応する原価"},{"term":"繰越商品","definition":"三分法で期首または期末の商品原価を記録する資産勘定"},{"term":"三分法","definition":"商品の売買取引を仕入・売上・繰越商品の勘定で処理する方法"},{"term":"実地棚卸","definition":"実際にある商品の数量等を確認する作業"},{"term":"売上総利益","definition":"売上高から対応する売上原価を引いた利益"}],"inlineGlossary":[{"term":"期首商品棚卸高","definition":"前期から当期へ引き継いだ商品の原価","id":"term-1"},{"term":"当期純仕入高","definition":"当期仕入から返品等の減額を反映した仕入原価","id":"term-2"},{"term":"期末商品棚卸高","definition":"期末に残る商品の原価","id":"term-3"},{"term":"売上原価","definition":"当期に販売した商品に対応する原価","id":"term-4"}]}
 ---
 
 一年間に仕入れた商品が、すべてその年に売れたとは限りません。前の年から残った商品も今年販売でき、今年買った商品も一部は来年へ持ち越されます。決算では、当期の仕入額をそのまま費用とせず、販売した商品に対応する原価へ直します。これが商品棚卸の整理の役割です。
@@ -8,7 +8,7 @@
 
 ## 販売できた商品の原価を、売れた分と残った分へ分ける
 
-当期に販売できる商品は、期首にあった分と当期に仕入れた分の合計です。ここから期末に残った分を除けば、売れた分の原価になります。基本式は「売上原価＝期首商品棚卸高＋当期純仕入高−期末商品棚卸高」です。棚卸数量と金額に差異がなく、ほかの特殊な処理がない問題では、この関係から計算を始めます。
+当期に販売できる商品は、期首にあった分と当期に仕入れた分の合計です。ここから期末に残った分を除けば、売れた分の原価になります。基本式は「<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">売上原価</a>＝<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">期首商品棚卸高</a>＋<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">当期純仕入高</a>−<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">期末商品棚卸高</a>」です。棚卸数量と金額に差異がなく、ほかの特殊な処理がない問題では、この関係から計算を始めます。
 
 期末商品は販売価格ではなく原価で測ります。商品を300円で売る予定でも、取得原価が180円なら、残った一個に原則として180円を使う条件です。先入先出法や移動平均法が指定されるときは、その方法で期末原価を算定します。売価と原価の区別は、商品有高帳で学んだものと同じです。
 
@@ -20,11 +20,18 @@
 
 原価の式で計算すると、期首20,000円＋仕入80,000円−期末26,000円＝売上原価74,000円です。数量から求めても185個×400円＝74,000円で一致します。売上高は185個×700円＝129,500円、売上総利益は129,500−74,000＝55,500円です。
 
+<figure id="b3x-closing-inventory-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-closing-inventory-comparison-caption">
+
 | 原価の行方 | 数量 | 単価 | 金額 |
 | --- | ---: | ---: | ---: |
 | 期首＋当期仕入 | 250個 | 400円 | 100,000円 |
 | 当期販売 | 185個 | 400円 | 74,000円 |
 | 期末在庫 | 65個 | 400円 | 26,000円 |
+
+</div>
+<figcaption id="b3x-closing-inventory-comparison-caption">期首・純仕入・期末から売上原価へ</figcaption>
+</figure>
 
 74,000＋26,000＝100,000円という検算は、集めた原価が販売分と在庫に分かれたことを示します。期末商品を売価700円で評価すると45,500円になり、売れなかった商品の原価を過大に残して利益も誤ります。
 
@@ -125,6 +132,37 @@
 先に純仕入を390,000−15,000＋20,000＝395,000円へ直します。次に仕入45,000／繰越商品45,000、繰越商品70,000／仕入70,000を記録します。売上原価は370,000円、売上総利益は620,000−370,000＝250,000円です。繰越商品70,000円が資産へ残り、原価370,000円だけが損益へ移ることを説明してください。
 
 本レッスンは3級の棚卸整理を対象とします。商品評価損や棚卸減耗の独立した会計処理を、この原価式へ根拠なく加えないようにします。資料の値が数量なのか、原価なのか、販売価格なのかを確かめ、与えられた条件の範囲で完成させましょう。
+
+<section class="guided-lesson" aria-labelledby="b3x-closing-inventory-work-heading">
+<h2 id="b3x-closing-inventory-work-heading">手を動かして確かめる：棚卸額から売上原価を計算する</h2>
+<figure id="b3x-closing-inventory-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-closing-inventory-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">期首商品棚卸高</th><td>26,000円</td></tr>
+<tr><th scope="row">当期の純仕入高</th><td>145,000円</td></tr>
+<tr><th scope="row">期末商品棚卸高</th><td>37,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-closing-inventory-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>売上原価は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="134000" data-guided-hint="販売できた商品の原価から売れ残った商品の原価を除きます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-closing-inventory-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-closing-inventory-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>26,000 ＋ 145,000 − 37,000 ＝ 134,000円。期末の37,000円は繰越商品として翌期へ持ち越します。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

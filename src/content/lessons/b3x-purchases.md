@@ -1,8 +1,8 @@
 ---
-{"stableId":"b3x-purchases","qualification":"boki-3","title":"三分法で商品の仕入れを記録し、買掛金と仕入帳をつなぐ","description":"販売用の商品を取得したときの仕入勘定、現金・掛け・一部支払い、取引先別買掛金、仕入帳の記入と数量・金額の検算を学びます。","order":15,"minutes":80,"sample":false,"updated":"2026-10-28","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["販売用商品の購入を三分法で記録し、備品取得や経費支払いと区別する","現金・掛け・一部即時払いによる仕入れと買掛金決済を仕訳する","仕入帳と取引先別買掛金残高を集計し、仕入額と支払額の違いを説明する"],"prerequisite":"b3x-journal、b3x-bank：資産・負債の増減と、一つの取引で貸方が複数になる仕訳を確認してください。","keywords":["三分法","仕入","買掛金","掛け仕入れ","仕入帳","買掛金元帳","仕入単価"],"glossary":[{"term":"三分法","definition":"商品売買を主に仕入・売上・繰越商品の三つの勘定を用いて記録する方法"},{"term":"仕入","definition":"三分法で販売用商品の当期購入額などを記録する勘定"},{"term":"買掛金","definition":"通常の商品売買等で掛けによる仕入れをした際の支払義務を記録する負債勘定"},{"term":"掛け仕入れ","definition":"代金を後日支払う約束で商品を仕入れること"},{"term":"仕入帳","definition":"商品の仕入れやその返品などの明細を日付順に記録する補助簿"},{"term":"買掛金元帳","definition":"仕入先ごとに買掛金の発生・決済・残高を記録する補助簿"},{"term":"仕入単価","definition":"商品1単位の仕入価額を計算するための単価"}]}
+{"stableId":"b3x-purchases","qualification":"boki-3","title":"三分法で商品の仕入れを記録し、買掛金と仕入帳をつなぐ","description":"販売用の商品を取得したときの仕入勘定、現金・掛け・一部支払い、取引先別買掛金、仕入帳の記入と数量・金額の検算を学びます。","order":15,"minutes":80,"sample":false,"updated":"2026-11-16","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["販売用商品の購入を三分法で記録し、備品取得や経費支払いと区別する","現金・掛け・一部即時払いによる仕入れと買掛金決済を仕訳する","仕入帳と取引先別買掛金残高を集計し、仕入額と支払額の違いを説明する"],"prerequisite":"b3x-journal、b3x-bank：資産・負債の増減と、一つの取引で貸方が複数になる仕訳を確認してください。","keywords":["三分法","仕入","買掛金","掛け仕入れ","仕入帳","買掛金元帳","仕入単価"],"glossary":[{"term":"三分法","definition":"商品売買を主に仕入・売上・繰越商品の三つの勘定を用いて記録する方法"},{"term":"仕入","definition":"三分法で販売用商品の当期購入額などを記録する勘定"},{"term":"買掛金","definition":"通常の商品売買等で掛けによる仕入れをした際の支払義務を記録する負債勘定"},{"term":"掛け仕入れ","definition":"代金を後日支払う約束で商品を仕入れること"},{"term":"仕入帳","definition":"商品の仕入れやその返品などの明細を日付順に記録する補助簿"},{"term":"買掛金元帳","definition":"仕入先ごとに買掛金の発生・決済・残高を記録する補助簿"},{"term":"仕入単価","definition":"商品1単位の仕入価額を計算するための単価"}],"inlineGlossary":[{"term":"三分法","definition":"商品売買を主に仕入・売上・繰越商品の三つの勘定を用いて記録する方法","id":"term-1"},{"term":"仕入","definition":"三分法で販売用商品の当期購入額などを記録する勘定","id":"term-2"},{"term":"買掛金","definition":"通常の商品売買等で掛けによる仕入れをした際の支払義務を記録する負債勘定","id":"term-3"},{"term":"仕入単価","definition":"商品1単位の仕入価額を計算するための単価","id":"term-7"}]}
 ---
 
-販売用の商品を買ったとき、仕入代金をいつ払うかによって現金や買掛金の動きは変わります。しかし、取得した商品が同じなら、仕入額は支払日の違いだけでは変わりません。三分法では、まず当期の商品購入を仕入へ集め、売れた分の原価と残った商品との区分は決算整理で行います。
+販売用の商品を買ったとき、<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">仕入</a>代金をいつ払うかによって現金や<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">買掛金</a>の動きは変わります。しかし、取得した商品が同じなら、仕入額は支払日の違いだけでは変わりません。<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">三分法</a>では、まず当期の商品購入を仕入へ集め、売れた分の原価と残った商品との区分は決算整理で行います。
 
 <span id="objective-1"></span>
 
@@ -12,13 +12,27 @@
 
 三分法の「仕入」は当期に買い入れた商品代金等を記録する科目です。購入の時点で全部売れたという意味ではありません。期末に残っている商品の原価を繰越商品へ整理し、売上に対応する原価を求めます。購入と支払い、購入と販売、購入と費用の期間配分を分けることが、この方法を理解する出発点です。
 
+<figure id="b3x-purchases-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-purchases-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">総勘定元帳</th><td>仕入と、現金・買掛金などの決済手段を仕訳から転記する。</td></tr>
+<tr><th scope="row">仕入帳</th><td>仕入れた商品の金額を品名や相手先とともに記録する。</td></tr>
+<tr><th scope="row">買掛金元帳</th><td>後払いの部分を仕入先別に記録する。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-purchases-comparison-caption">一つの仕入取引を三つの記録から見る</figcaption>
+</figure>
+
 <span id="worked-1"></span>
 
 ### 例題1：販売用商品を現金で仕入れる
 
 文具店が販売用のノート60冊を1冊240円で購入し、代金を現金で支払いました。消費税は考慮せず、付随費用もありません。仕入額は60×240＝14,400円です。借方「仕入14,400」、貸方「現金14,400」とします。
 
-このノートの予定売価が1冊400円であっても、仕入額を60×400円にはしません。購入取引で記録するのは取得した商品の原価です。販売した際には売価で売上を記録し、その差から利益を考えます。仕入単価と売価を、単に単価という一つの数字にまとめないようにしましょう。
+このノートの予定売価が1冊400円であっても、仕入額を60×400円にはしません。購入取引で記録するのは取得した商品の原価です。販売した際には売価で売上を記録し、その差から利益を考えます。<a class="lesson-term" data-lesson-term href="#lesson-term-term-7">仕入単価</a>と売価を、単に単価という一つの数字にまとめないようにしましょう。
 
 同じ店が事務作業用の長期使用の机を14,400円で買い、問題が備品と指定しているなら、借方は備品です。販売用という条件がある例題と、使用目的が違います。現金支払いという共通点だけで仕入にしないことが大切です。
 
@@ -110,6 +124,37 @@ Aは24,000円、Bは27,000円で仕入総額51,000円です。借方仕入51,000
 商品代金は80×900＝72,000円です。受取時は借方仕入72,000／貸方前払金12,000・買掛金60,000です。支払時は借方買掛金45,000／貸方普通預金45,000です。買掛金は60,000−45,000＝15,000円残ります。
 
 全体を見れば、既払の前払金12,000円、当月支払45,000円、未払15,000円の合計が72,000円となります。仕入原価全額を記録しながら、代金の支払状況を別に表せています。商品返品と付随費用を加える場合も、この基本のつながりを維持して考えます。
+
+<section class="guided-lesson" aria-labelledby="b3x-purchases-work-heading">
+<h2 id="b3x-purchases-work-heading">手を動かして確かめる：仕入帳から掛けの額を読む</h2>
+<figure id="b3x-purchases-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-purchases-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">仕入れた商品の金額</th><td>105,000円</td></tr>
+<tr><th scope="row">当日に支払った現金</th><td>25,000円</td></tr>
+<tr><th scope="row">残り</th><td>仕入先への掛け</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-purchases-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>買掛金元帳に増加として記録する額はいくらですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="80000" data-guided-hint="商品そのものの仕入高と、後から払う額を区別します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-purchases-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-purchases-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>仕入帳は全額105,000円。買掛金元帳では105,000−25,000＝80,000円を仕入先別に記録します。現金分は買掛金として残りません。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

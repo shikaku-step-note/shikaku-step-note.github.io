@@ -1,5 +1,5 @@
 ---
-{"stableId":"b3x-corrections","qualification":"boki-3","title":"誤った仕訳をほどき、正しい残高へ直す","description":"科目違い、金額違い、記帳漏れ、二重記帳を、誤記の取消しと正しい仕訳の差から直します。証ひょうと修正後残高まで照合します。","order":5,"minutes":85,"sample":false,"updated":"2026-10-28","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["誤った仕訳の取消しと正しい仕訳を組み合わせて訂正仕訳を作る","科目・金額・借貸逆・記帳漏れ・二重記帳に応じた修正を行う","元資料と修正後の残高を照合し、訂正による二重計上を防ぐ"],"prerequisite":"仕訳と元帳の転記、試算表の合計と残高を学んでから取り組みます。","keywords":["訂正仕訳","逆仕訳","記帳漏れ","二重記帳","証ひょう","相殺","修正前残高","修正後残高"],"glossary":[{"term":"訂正仕訳","definition":"誤った記録を正しい記録の状態へ直すために追加する仕訳"},{"term":"逆仕訳","definition":"元の仕訳の借方と貸方を入れ替えた仕訳"},{"term":"記帳漏れ","definition":"記録すべき取引の全部または一部が未記録であること"},{"term":"二重記帳","definition":"同じ取引を二度記録してしまうこと"},{"term":"証ひょう","definition":"帳簿へ記録する取引内容を裏付ける請求書や領収書等"},{"term":"相殺","definition":"同じ勘定の借方と貸方の同額を差し引いてまとめること"},{"term":"修正前残高","definition":"訂正等を反映する直前の帳簿残高"},{"term":"修正後残高","definition":"必要な訂正等を反映したあとの帳簿残高"}]}
+{"stableId":"b3x-corrections","qualification":"boki-3","title":"誤った仕訳をほどき、正しい残高へ直す","description":"科目違い、金額違い、記帳漏れ、二重記帳を、誤記の取消しと正しい仕訳の差から直します。証ひょうと修正後残高まで照合します。","order":5,"minutes":85,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["誤った仕訳の取消しと正しい仕訳を組み合わせて訂正仕訳を作る","科目・金額・借貸逆・記帳漏れ・二重記帳に応じた修正を行う","元資料と修正後の残高を照合し、訂正による二重計上を防ぐ"],"prerequisite":"仕訳と元帳の転記、試算表の合計と残高を学んでから取り組みます。","keywords":["訂正仕訳","逆仕訳","記帳漏れ","二重記帳","証ひょう","相殺","修正前残高","修正後残高"],"glossary":[{"term":"訂正仕訳","definition":"誤った記録を正しい記録の状態へ直すために追加する仕訳"},{"term":"逆仕訳","definition":"元の仕訳の借方と貸方を入れ替えた仕訳"},{"term":"記帳漏れ","definition":"記録すべき取引の全部または一部が未記録であること"},{"term":"二重記帳","definition":"同じ取引を二度記録してしまうこと"},{"term":"証ひょう","definition":"帳簿へ記録する取引内容を裏付ける請求書や領収書等"},{"term":"相殺","definition":"同じ勘定の借方と貸方の同額を差し引いてまとめること"},{"term":"修正前残高","definition":"訂正等を反映する直前の帳簿残高"},{"term":"修正後残高","definition":"必要な訂正等を反映したあとの帳簿残高"}],"inlineGlossary":[{"term":"訂正仕訳","definition":"誤った記録を正しい記録の状態へ直すために追加する仕訳","id":"term-1"},{"term":"逆仕訳","definition":"元の仕訳の借方と貸方を入れ替えた仕訳","id":"term-2"},{"term":"記帳漏れ","definition":"記録すべき取引の全部または一部が未記録であること","id":"term-3"},{"term":"相殺","definition":"同じ勘定の借方と貸方の同額を差し引いてまとめること","id":"term-6"}]}
 ---
 
 通信費を払ったのに別の費用科目へ入れていたと分かったとき、元の取引をもう一度最初から記帳してよいでしょうか。現金の支払いまで正しく記録されていれば、再び現金を減らすと誤りが増えます。訂正では「本来の取引」だけでなく、「すでに何が帳簿へ入っているか」を調べます。
@@ -8,7 +8,7 @@
 
 ## 正しい仕訳から、すでにある記録を差し引く
 
-訂正仕訳を作る基本手順は、誤った仕訳をそのまま書き出し、その逆仕訳を作り、正しい仕訳を並べ、同じ科目の借貸を相殺することです。「正しい状態＝現在の誤った状態＋訂正」という関係を満たす追加記録を求めています。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">訂正仕訳</a>を作る基本手順は、誤った仕訳をそのまま書き出し、その<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">逆仕訳</a>を作り、正しい仕訳を並べ、同じ科目の借貸を<a class="lesson-term" data-lesson-term href="#lesson-term-term-6">相殺</a>することです。「正しい状態＝現在の誤った状態＋訂正」という関係を満たす追加記録を求めています。
 
 元の仕訳を帳簿から消す方法だけを考えると、どこを直したか分からなくなります。学習問題では、誤記の記録がすでに帳簿に存在する条件で、追加すべき訂正仕訳を求めることが多くあります。実際に求められているのが正しい当初仕訳なのか、訂正仕訳なのか、整理後残高なのかを最初に読み分けます。
 
@@ -18,11 +18,18 @@
 
 通信費8,400円を現金で支払ったのに、借方を消耗品費としていました。誤記は「消耗品費8,400／現金8,400」、正解は「通信費8,400／現金8,400」です。逆仕訳と正しい仕訳を二段に並べます。
 
+<figure id="b3x-corrections-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-corrections-comparison-caption">
+
 | 作業 | 借方 | 貸方 |
 | --- | --- | --- |
 | 誤記を取り消す | 現金8,400 | 消耗品費8,400 |
 | 本来の取引を入れる | 通信費8,400 | 現金8,400 |
 | 同じ現金を相殺した訂正 | 通信費8,400 | 消耗品費8,400 |
+
+</div>
+<figcaption id="b3x-corrections-comparison-caption">誤った記録・取消し・正しい記録を段階ごとに比較します。</figcaption>
+</figure>
 
 現金は借方と貸方に同じ8,400円があるので相殺されます。最終の訂正仕訳では現金を動かしません。誤った消耗品費を減らし、本来の通信費へ移すだけです。もし訂正として通信費8,400／現金8,400を追加すると、現金の支払いが計16,800円記録されてしまいます。
 
@@ -66,7 +73,7 @@
 
 ## 記帳漏れと二重記帳では、必要な追加が違う
 
-まだ一度も記録していない取引なら、本来の仕訳をそのまま追加します。これが記帳漏れの基本です。一方、同じ取引を借貸とも二回記録したなら、余分な一回の逆仕訳を入れます。いずれも現在の帳簿に何回入っているかを確かめないと、正しく直せません。
+まだ一度も記録していない取引なら、本来の仕訳をそのまま追加します。これが<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">記帳漏れ</a>の基本です。一方、同じ取引を借貸とも二回記録したなら、余分な一回の逆仕訳を入れます。いずれも現在の帳簿に何回入っているかを確かめないと、正しく直せません。
 
 たとえば普通預金への売掛金回収32,000円が記帳漏れなら、普通預金32,000／売掛金32,000です。同じ回収を二重記帳していた場合は、売掛金32,000／普通預金32,000となります。文中に同じ科目と金額があっても、訂正の向きは反対です。
 
@@ -108,6 +115,37 @@
 ①は広告宣伝費4,800／通信費4,800です。現金の減少はすでに正しく記録されています。②は買掛金27,000／仕入27,000です。多く計上された仕入と買掛金を63,000−36,000＝27,000円ずつ減らします。逆仕訳と正解を並べて同じ結果になるか、自分で確かめましょう。
 
 修正の根拠となる金額へ印を付けるときは、「実際の額」「記帳した額」「追加すべき差額」と名前を添えます。たとえば実際12,000円、記帳21,000円なら差額9,000円です。数字だけを並べるより、どの二つを比べたかを残すと、別の科目も誤っている複合問題へ応用できます。
+
+<section class="guided-lesson" aria-labelledby="b3x-corrections-work-heading">
+<h2 id="b3x-corrections-work-heading">手を動かして確かめる：訂正前の貸方と差額</h2>
+<figure id="b3x-corrections-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-corrections-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">給料を普通預金で支払った額</th><td>29,000円</td></tr>
+<tr><th scope="row">入力済みの処理</th><td>借方給料92,000円／貸方普通預金92,000円</td></tr>
+<tr><th scope="row">条件</th><td>差額だけで訂正する</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-corrections-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>訂正仕訳の借方に記入する普通預金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="63000" data-guided-hint="普通預金をいくら余計に減らしていたかを求めます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-corrections-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-corrections-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>92,000−29,000＝63,000円です。借方普通預金63,000円、貸方給料63,000円として、誤って減らした預金と増やした給料を戻します。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

@@ -1,16 +1,19 @@
 ---
-{"stableId":"b3x-journal","qualification":"boki-3","title":"取引を借方・貸方へ分け、複合仕訳まで書く","description":"取引の変化から借貸を決め、現金と掛けを併用する取引や複数費用の仕訳を作ります。全科目・全金額を記録して検算します。","order":2,"minutes":85,"sample":false,"updated":"2026-10-28","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["取引の増減を勘定の分類と結び付けて借方・貸方を選ぶ","複数の科目を含む取引の仕訳を両側の金額まで完成する","貸借一致と取引後の残高から仕訳の誤りを見つける"],"prerequisite":"「会社の財産と利益を、二つの表で捉える」で、五つの分類と出資・借入・収益の違いを確認しておきます。","keywords":["借方","貸方","仕訳","勘定科目","単純仕訳","複合仕訳","貸借平均の原理","取引の8要素"],"glossary":[{"term":"借方","definition":"仕訳や勘定の左側を表す呼び名"},{"term":"貸方","definition":"仕訳や勘定の右側を表す呼び名"},{"term":"仕訳","definition":"一つの取引を借方と貸方の勘定科目・金額へ分解した記録"},{"term":"勘定科目","definition":"取引による増減を性質別に記録する項目の名前"},{"term":"単純仕訳","definition":"借方と貸方に一つずつの勘定科目を使う仕訳"},{"term":"複合仕訳","definition":"借方または貸方に二つ以上の勘定科目を使う仕訳"},{"term":"貸借平均の原理","definition":"正しく記録した取引の借方金額と貸方金額の合計が一致する関係"},{"term":"取引の8要素","definition":"資産・負債・純資産の増減および収益の発生・費用の発生という基本的な変動"}]}
+{"stableId":"b3x-journal","qualification":"boki-3","title":"取引を借方・貸方へ分け、複合仕訳まで書く","description":"取引の変化から借貸を決め、現金と掛けを併用する取引や複数費用の仕訳を作ります。全科目・全金額を記録して検算します。","order":2,"minutes":85,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["取引の増減を勘定の分類と結び付けて借方・貸方を選ぶ","複数の科目を含む取引の仕訳を両側の金額まで完成する","貸借一致と取引後の残高から仕訳の誤りを見つける"],"prerequisite":"「会社の財産と利益を、二つの表で捉える」で、五つの分類と出資・借入・収益の違いを確認しておきます。","keywords":["借方","貸方","仕訳","勘定科目","単純仕訳","複合仕訳","貸借平均の原理","取引の8要素"],"glossary":[{"term":"借方","definition":"仕訳や勘定の左側を表す呼び名"},{"term":"貸方","definition":"仕訳や勘定の右側を表す呼び名"},{"term":"仕訳","definition":"一つの取引を借方と貸方の勘定科目・金額へ分解した記録"},{"term":"勘定科目","definition":"取引による増減を性質別に記録する項目の名前"},{"term":"単純仕訳","definition":"借方と貸方に一つずつの勘定科目を使う仕訳"},{"term":"複合仕訳","definition":"借方または貸方に二つ以上の勘定科目を使う仕訳"},{"term":"貸借平均の原理","definition":"正しく記録した取引の借方金額と貸方金額の合計が一致する関係"},{"term":"取引の8要素","definition":"資産・負債・純資産の増減および収益の発生・費用の発生という基本的な変動"}],"inlineGlossary":[{"term":"借方","definition":"仕訳や勘定の左側を表す呼び名","id":"term-1"},{"term":"貸方","definition":"仕訳や勘定の右側を表す呼び名","id":"term-2"},{"term":"仕訳","definition":"一つの取引を借方と貸方の勘定科目・金額へ分解した記録","id":"term-3"},{"term":"勘定科目","definition":"取引による増減を性質別に記録する項目の名前","id":"term-4"}]}
 ---
 
-会社が備品を買うと、備品は増え、支払った預金は減ります。この二つを一つの記録にまとめるのが仕訳です。借方と貸方という言葉には、ここでは借金をする側・貸す側という日常語の意味を当てはめません。左側と右側の名前として使い、取引の変化を一定の規則で振り分けます。
+会社が備品を買うと、備品は増え、支払った預金は減ります。この二つを一つの記録にまとめるのが<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">仕訳</a>です。<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">借方</a>と<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">貸方</a>という言葉には、ここでは借金をする側・貸す側という日常語の意味を当てはめません。左側と右側の名前として使い、取引の変化を一定の規則で振り分けます。
 
 <span id="objective-1"></span>
 
 ## 科目名を選ぶ前に、何が増減したかを言葉にする
 
-仕訳は、①会社の立場を決める、②増減したものを挙げる、③勘定科目へ置き換える、④その分類と増減から左右を決める、⑤金額を記入する、という順で作ります。問題文の「受け取った」「払った」という動詞だけで左右を選ぶと、負債や収益を含む取引で混乱しやすくなります。
+仕訳は、①会社の立場を決める、②増減したものを挙げる、③<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">勘定科目</a>へ置き換える、④その分類と増減から左右を決める、⑤金額を記入する、という順で作ります。問題文の「受け取った」「払った」という動詞だけで左右を選ぶと、負債や収益を含む取引で混乱しやすくなります。
 
 資産の増加と費用の発生は借方へ、資産の減少は貸方へ記録します。負債と純資産は増加が貸方、減少が借方です。収益の発生は貸方です。まずこの基本形を使い、収益の取消しなどは元の記録の逆として考えます。
+
+<figure id="b3x-journal-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-journal-comparison-caption">
 
 | 分類 | 借方へ置く変化 | 貸方へ置く変化 |
 | --- | --- | --- |
@@ -19,6 +22,10 @@
 | 純資産 | 減少 | 増加 |
 | 収益 | 取消しなどの減少 | 発生 |
 | 費用 | 発生 | 取消しなどの減少 |
+
+</div>
+<figcaption id="b3x-journal-comparison-caption">五つの分類ごとに、増減を記入する側を見分けます。</figcaption>
+</figure>
 
 収益・費用の欄にある「取消し」は、取引の8要素の新しい種類を増やすという意味ではありません。日常の仕訳では、すでに記録した販売や費用を戻す必要もあるため、実際の記録上の方向を示しています。分類と通常の発生方向を知っていれば、返品や訂正の向きもたどれます。
 
@@ -116,6 +123,37 @@
 金額欄に単位やカンマを書くかどうかは、答案の指定に従います。記入前に下書きで左右の合計を求め、科目と金額を一組ずつ確定させると、正しい計算を違う行へ入れる誤りも防げます。
 
 次のレッスンでは、仕訳した金額を科目別の勘定へ転記します。借方・貸方の位置は変わらず、今度は「日付順の一取引」から「一つの科目の増減」へ並べ直すことになります。
+
+<section class="guided-lesson" aria-labelledby="b3x-journal-work-heading">
+<h2 id="b3x-journal-work-heading">手を動かして確かめる：複合仕訳の貸方</h2>
+<figure id="b3x-journal-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-journal-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">備品の購入代金</th><td>98,000円</td></tr>
+<tr><th scope="row">当日に普通預金から支払った額</th><td>36,000円</td></tr>
+<tr><th scope="row">残額</th><td>翌月払い</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-journal-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>この購入時に貸方へ記入する未払金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="62000" data-guided-hint="備品の増加と同じ合計額を、普通預金と未払金に分けます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-journal-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-journal-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>借方の備品は98,000円。貸方の普通預金36,000円を引いた62,000円が未払金です。二つの貸方を足して借方に一致するか確かめます。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

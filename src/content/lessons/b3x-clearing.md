@@ -7,7 +7,7 @@
   "order": 28,
   "minutes": 85,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -59,7 +59,7 @@
       "definition": "同じ勘定の合計額を、誰に対する権利・義務かによって分けた残高"
     }
   ]
-}
+,"inlineGlossary":[{"term":"仮払金","definition":"支出はしたが最終的な使途や金額等が未確定の段階で一時的に記録する資産勘定","id":"term-1"},{"term":"仮受金","definition":"入金はあったが内容等が未確定の段階で一時的に記録する負債勘定","id":"term-2"},{"term":"立替金","definition":"本来は他者が負担する額を一時的に払っており、その精算を受ける権利","id":"term-3"},{"term":"預り金","definition":"他者等へ渡す額を一時的に預かっており、その支払又は返還等を行う義務","id":"term-4"}]}
 ---
 
 出張する従業員に現金30,000円を渡しても、その日に30,000円の交通費が確定したとは限りません。実際の支出が少なければ返金され、多ければ追加で支払うことがあります。また、銀行へ入金があっても、何の代金か分からないときに、すぐ売上と決めることはできません。
@@ -70,11 +70,14 @@
 
 ## まず、誰の負担か、何が確定していないかを読む
 
-仮払金は、出張資金の前渡しなど、支出は行ったが最終的な内容や額をまだ確定できない段階で使います。後に精算書を受け取り、実際の費用や返金額へ分けます。支払時の借方をすべて費用にすると、使わずに戻る金額まで費用として残ることがあります。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">仮払金</a>は、出張資金の前渡しなど、支出は行ったが最終的な内容や額をまだ確定できない段階で使います。後に精算書を受け取り、実際の費用や返金額へ分けます。支払時の借方をすべて費用にすると、使わずに戻る金額まで費用として残ることがあります。
 
-仮受金は、入金はあったが内容等が分からない場合に一時的に使います。入金の借方は普通預金などで確定していても、貸方が売上か、売掛金の回収か、前受金かはまだ分からないことがあります。内容が判明した後に、本来の勘定へ振り替えます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">仮受金</a>は、入金はあったが内容等が分からない場合に一時的に使います。入金の借方は普通預金などで確定していても、貸方が売上か、売掛金の回収か、前受金かはまだ分からないことがあります。内容が判明した後に、本来の勘定へ振り替えます。
 
-立替金は、他者が負担すべき額を当店が一時的に払った場合の権利です。従業員個人が負担するものを、会社がいったん代わりに払ったと明示された条件なら、会社の費用とは区別します。預り金は、会社が他者へ渡すため等に一時的に預かった額です。会社の収益として自由に使える額とは分けて管理します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">立替金</a>は、他者が負担すべき額を当店が一時的に払った場合の権利です。従業員個人が負担するものを、会社がいったん代わりに払ったと明示された条件なら、会社の費用とは区別します。<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">預り金</a>は、会社が他者へ渡すため等に一時的に預かった額です。会社の収益として自由に使える額とは分けて管理します。
+
+<figure id="b3x-clearing-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-clearing-comparison-caption">
 
 | 判断の手掛かり | この課で使う勘定 | 後の処理 |
 | --- | --- | --- |
@@ -82,6 +85,10 @@
 | 入金したが内容等が不明 | 仮受金 | 原因が判明した勘定へ振り替える |
 | 他者の負担分を当店が一時的に支払う | 立替金 | 本人等から回収する |
 | 他者等へ渡す額を当店が一時的に預かる | 預り金 | 指定先への納付・返還等で消す |
+
+</div>
+<figcaption id="b3x-clearing-comparison-caption">仮払いから精算までの科目の動き</figcaption>
+</figure>
 
 仮払金と立替金は、どちらも借方に増える資産ですが、使う理由が違います。後でお金が戻るかどうかだけで分類するのではなく、会社の費用を精算するためか、他者の負担分を立て替えたのかを確認します。
 
@@ -144,6 +151,37 @@
 後日、預かった15,000円を指定先へ普通預金から納付したら、借方所得税預り金3,000円、社会保険料預り金12,000円、貸方普通預金15,000円です。給与費用は最初に100,000円を記録済みなので、納付時に同じ15,000円を給料へ重ねません。
 
 会社自身が負担する社会保険料が別にある条件では、それは預かった従業員分とは区別します。会社負担の費用を記録する必要があるか、既に記録済みかを問題文で確認してください。この例の15,000円は、あくまで給与から控除した額の精算です。
+
+<section class="guided-lesson" aria-labelledby="b3x-clearing-work-heading">
+<h2 id="b3x-clearing-work-heading">手を動かして確かめる：仮払金を精算する</h2>
+<figure id="b3x-clearing-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-clearing-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">社員への仮払い</th><td>32,000円</td></tr>
+<tr><th scope="row">確認した旅費</th><td>26,400円</td></tr>
+<tr><th scope="row">残額</th><td>現金で返却</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-clearing-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>会社が受け取る現金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="5600" data-guided-hint="仮払金を全額取り崩し、旅費との差を現金で受け取ります。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-clearing-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-clearing-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>32,000 − 26,400 ＝ 5,600円。借方は旅費26,400円と現金5,600円、貸方は仮払金32,000円です。</p>
+</details>
+</section>
 
 ## 残高をまとめる前に、誰の未精算分かを分ける
 

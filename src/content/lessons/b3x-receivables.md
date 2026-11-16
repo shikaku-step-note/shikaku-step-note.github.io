@@ -7,7 +7,7 @@
   "order": 22,
   "minutes": 80,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -64,10 +64,10 @@
       "definition": "固定資産の購入など、通常の商品仕入以外の取引から生じる未払額"
     }
   ]
-}
+,"inlineGlossary":[{"term":"売掛金","definition":"商品等を通常の営業で掛け販売した代金のうち、後日回収する権利","id":"term-1"},{"term":"買掛金","definition":"商品等を通常の営業で掛け仕入れた代金のうち、後日支払う義務","id":"term-2"},{"term":"回収","definition":"売掛金などの債権について代金を受け取り、権利を減らすこと","id":"term-5"},{"term":"未収入金","definition":"固定資産の売却など、通常の商品売上以外の取引から生じる未回収額","id":"term-7"}]}
 ---
 
-商品を掛けで販売した翌月に代金が銀行へ振り込まれると、預金は増えます。その入金をもう一度売上にすると、同じ商品を二度売った記録になります。代金を受け取る権利が発生した時と、その権利を回収した時を分けて考えると、この重複を防げます。
+商品を掛けで販売した翌月に代金が銀行へ振り込まれると、預金は増えます。その入金をもう一度売上にすると、同じ商品を二度売った記録になります。代金を受け取る権利が発生した時と、その権利を<a class="lesson-term" data-lesson-term href="#lesson-term-term-5">回収</a>した時を分けて考えると、この重複を防げます。
 
 ここでは普通の商品売買を三分法で記帳し、消費税は考慮しません。相手先別の帳簿を読みながら、月初残高から月末残高までを実際に計算します。後で手形や電子記録へ決済方法が変わっても、まず商品取引から生じた権利や義務を押さえる点は同じです。
 
@@ -75,17 +75,24 @@
 
 ## まだ受け取っていない理由、まだ払っていない理由を読む
 
-掛け販売では、商品を引き渡して売上を計上し、代金を後日受け取ります。売掛金は、その商品代金を受け取る権利を表す資産です。現金を受け取っていなくても、商品を販売したという収益の発生は記録します。仕訳の借方は売掛金、貸方は売上です。
+掛け販売では、商品を引き渡して売上を計上し、代金を後日受け取ります。<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">売掛金</a>は、その商品代金を受け取る権利を表す資産です。現金を受け取っていなくても、商品を販売したという収益の発生は記録します。仕訳の借方は売掛金、貸方は売上です。
 
-掛け仕入れは買う側から考えます。商品を受け取った時点で仕入を記録し、代金を後で払う義務を買掛金という負債で表します。借方が仕入、貸方が買掛金です。販売側の売掛金と購入側の買掛金は、互いの立場を反対にした商品代金の記録になります。
+掛け仕入れは買う側から考えます。商品を受け取った時点で仕入を記録し、代金を後で払う義務を<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">買掛金</a>という負債で表します。借方が仕入、貸方が買掛金です。販売側の売掛金と購入側の買掛金は、互いの立場を反対にした商品代金の記録になります。
 
-「後で受け取る」「後で払う」という言葉だけで勘定を決めると、固定資産や資金の貸借を取り違えます。自社で使っていた備品を売却して後日代金を受け取るなら、通常の商品売買ではないため未収入金を使います。備品を購入して代金を後払いにする場合は未払金です。お金そのものを貸した場合の貸付金、借りた場合の借入金も、商品代金とは区別します。
+「後で受け取る」「後で払う」という言葉だけで勘定を決めると、固定資産や資金の貸借を取り違えます。自社で使っていた備品を売却して後日代金を受け取るなら、通常の商品売買ではないため<a class="lesson-term" data-lesson-term href="#lesson-term-term-7">未収入金</a>を使います。備品を購入して代金を後払いにする場合は未払金です。お金そのものを貸した場合の貸付金、借りた場合の借入金も、商品代金とは区別します。
+
+<figure id="b3x-receivables-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-receivables-comparison-caption">
 
 | 原因となった取引 | 後で受け取る権利 | 後で払う義務 |
 | --- | --- | --- |
 | 通常の商品売買 | 売掛金 | 買掛金 |
 | 自社で使用する備品の売買 | 未収入金 | 未払金 |
 | お金の貸し借り | 貸付金 | 借入金 |
+
+</div>
+<figcaption id="b3x-receivables-comparison-caption">取引先ごとの売掛金と買掛金の照合</figcaption>
+</figure>
 
 表の行は取引の原因、列は自社の立場です。まずどの行かを選び、その後に受取側か支払側かを決めます。勘定を選び終えたら、資産や負債が増えるのか減るのかを考え、借方・貸方へ配置してください。
 
@@ -175,6 +182,36 @@
 解答：甲は20,000＋45,000−40,000＝25,000円、乙は32,000＋38,000−50,000−2,000＝18,000円です。合計43,000円。全体でも月初52,000＋掛け売上83,000−回収90,000−返品2,000＝43,000円です。返品仕訳は借方売上2,000円、貸方売掛金2,000円となります。乙から現金を受け取った処理は既に回収として記録し、返品時にもう一度現金を動かしません。
 
 回収予定額を調べるときは相手先別の帳簿、決算の総残高を調べるときは総勘定元帳という使い分けができます。次は、商品を受け取った顧客と、実際に代金を精算するカード会社等が異なる取引を扱います。
+
+<section class="guided-lesson" aria-labelledby="b3x-receivables-work-heading">
+<h2 id="b3x-receivables-work-heading">手を動かして確かめる：相殺後の売掛金を求める</h2>
+<figure id="b3x-receivables-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-receivables-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">相殺前の売掛金</th><td>84,000円</td></tr>
+<tr><th scope="row">相殺した買掛金</th><td>26,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-receivables-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>取引先に今後請求できる金額は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="58000" data-guided-hint="同じ金額だけ、債権も債務も減ります。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-receivables-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-receivables-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>84,000 − 26,000 ＝ 58,000円。売掛金は資産なので減少を貸方に置き、買掛金は負債なので減少を借方に置きます。</p>
+</details>
+</section>
 
 ## 公式資料
 

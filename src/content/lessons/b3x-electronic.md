@@ -7,7 +7,7 @@
   "order": 25,
   "minutes": 80,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -59,12 +59,12 @@
       "definition": "まだ入出金等によって決済されていない債権債務の相手先・期日・金額等の一覧"
     }
   ]
-}
+,"inlineGlossary":[{"term":"電子記録債権","definition":"電子的な記録によって発生した金銭債権を記録する資産勘定","id":"term-1"},{"term":"電子記録債務","definition":"電子的な記録によって発生した金銭債務を記録する負債勘定","id":"term-2"},{"term":"発生記録","definition":"電子記録債権・債務を発生させるための記録","id":"term-3"},{"term":"未決済明細","definition":"まだ入出金等によって決済されていない債権債務の相手先・期日・金額等の一覧","id":"term-7"}]}
 ---
 
 商品を掛けで販売して生じた権利を、電子的な記録による債権へ切り替えることがあります。電子記録になったから売上がもう一度増えるわけではありません。何の代金を、どの勘定から、どの勘定へ移すのかを順に考えます。
 
-この課では商品代金に関する電子記録債権・電子記録債務の発生と決済を扱います。記録が成立した、または必要な発生記録の手続きを行ったと問題で指定された時点で処理します。単に請求書を電子メールで送ったことだけを理由に、すべての売掛金を電子記録債権へ変えるという意味ではありません。
+この課では商品代金に関する<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">電子記録債権</a>・<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">電子記録債務</a>の発生と決済を扱います。記録が成立した、または必要な<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">発生記録</a>の手続きを行ったと問題で指定された時点で処理します。単に請求書を電子メールで送ったことだけを理由に、すべての売掛金を電子記録債権へ変えるという意味ではありません。
 
 <span id="objective-1"></span>
 
@@ -102,11 +102,18 @@
 
 残る買掛金は150,000−30,000−80,000＝40,000円です。電子記録債務80,000円と合わせた未払額は120,000円で、当初代金150,000円から既払30,000円を除いた額と一致します。振替80,000円を「もう支払った金額」と読んで、未払額を40,000円だけとしないようにします。
 
+<figure id="b3x-electronic-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-electronic-comparison-caption">
+
 | 段階 | 買掛金 | 電子記録債務 | この代金の既払額 |
 | --- | ---: | ---: | ---: |
 | 掛け仕入直後 | 150,000 | 0 | 0 |
 | 普通預金で一部支払後 | 120,000 | 0 | 30,000 |
 | 電子記録へ一部振替後 | 40,000 | 80,000 | 30,000 |
+
+</div>
+<figcaption id="b3x-electronic-comparison-caption">電子記録と売掛金の対応</figcaption>
+</figure>
 
 各行で未払額と既払額の合計は150,000円です。この表は、実際の支払と負債の振替が違うことを示しています。期日に電子記録債務80,000円が当座預金から引き落とされたら、借方電子記録債務80,000円、貸方当座預金80,000円とします。普通預金か当座預金かも、資料の指定に合わせます。
 
@@ -136,7 +143,7 @@
 
 ### 金額が同じ二件の入金を重複させない
 
-D社とE社から各30,000円の電子記録債権があり、当月にはD社分だけが入金されたとします。銀行明細の入金30,000円を、D社分とE社分の両方の決済として記録すると、債権60,000円を減らしてしまいます。未決済明細にはE社30,000円が残るはずです。
+D社とE社から各30,000円の電子記録債権があり、当月にはD社分だけが入金されたとします。銀行明細の入金30,000円を、D社分とE社分の両方の決済として記録すると、債権60,000円を減らしてしまいます。<a class="lesson-term" data-lesson-term href="#lesson-term-term-7">未決済明細</a>にはE社30,000円が残るはずです。
 
 日付、記録番号、相手先、金額を組み合わせて確認します。試算表の借方・貸方が一致しても、誤った相手先を消した仕訳そのものが借貸一致していれば、誤りを見つけられない場合があります。帳簿合計の検算と、個々の明細の確認を組み合わせてください。
 
@@ -171,6 +178,36 @@ D社とE社から各30,000円の電子記録債権があり、当月にはD社�
 解答：振替は借方買掛金70,000円、貸方電子記録債務70,000円。買掛金の支払は借方買掛金20,000円、貸方普通預金20,000円。期日の決済は借方電子記録債務80,000円、貸方当座預金80,000円です。月末買掛金は120,000−70,000−20,000＝30,000円、電子記録債務は50,000＋70,000−80,000＝40,000円です。
 
 月初の負債合計170,000円から、実際に支払った100,000円を引くと70,000円になります。月末の二勘定30,000＋40,000＝70,000円と一致します。次は商品代金の決済から離れ、お金そのものを貸し借りした取引へ進みます。手形を使った場合も、何の取引から生じた権利・義務かを先に読むことが大切です。
+
+<section class="guided-lesson" aria-labelledby="b3x-electronic-work-heading">
+<h2 id="b3x-electronic-work-heading">手を動かして確かめる：記録が済んだ債権を切り替える</h2>
+<figure id="b3x-electronic-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-electronic-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">売掛金</th><td>96,000円</td></tr>
+<tr><th scope="row">電子記録債権の発生記録額</th><td>72,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-electronic-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>記録後も残る売掛金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="24000" data-guided-hint="発生記録の対象にならなかった部分を求めます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-electronic-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-electronic-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>96,000 − 72,000 ＝ 24,000円。電子記録債権72,000円が借方に増え、売掛金72,000円が貸方に減ります。</p>
+</details>
+</section>
 
 ## 公式資料
 

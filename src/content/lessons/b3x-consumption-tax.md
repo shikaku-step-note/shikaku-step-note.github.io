@@ -4,10 +4,10 @@
   "qualification": "boki-3",
   "title": "消費税の税抜方式を、取引・返品・決算で使う",
   "description": "税込額と税抜額から本体・税額・総額を計算する。仕入・売上・返品・備品取得の税抜仕訳を作る。具体例の計算過程と独立演習から、判断の理由まで学びます。",
-  "order": 38,
+  "order": 39,
   "minutes": 90,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 5,
   "subject": "commercial",
   "syllabus": [
@@ -54,19 +54,19 @@
       "definition": "この課の単純条件で仮受・仮払を整理した後の未納付差額を記録する負債勘定。"
     }
   ]
-}
+,"inlineGlossary":[{"term":"税抜方式","definition":"本体額と消費税額を区分し、税額を仮払消費税・仮受消費税等で記録する方法。","id":"term-1"},{"term":"税込額","definition":"本体の税抜金額と指定条件による消費税額を合わせた総額。","id":"term-2"},{"term":"仮払消費税","definition":"税抜方式で仕入れ等の取引に対応する支払側税額を記録する勘定。","id":"term-4"},{"term":"仮受消費税","definition":"税抜方式で販売等の取引に対応する受取側税額を記録する勘定。","id":"term-5"}]}
 ---
 
-税抜100,000円の商品を、指定税率10％で掛け販売すると、相手へ請求する総額は110,000円です。売上へ110,000円を記録するか、本体100,000円と税額10,000円を分けるかは記帳方法によります。この課では、3級で必要な税抜方式を使い、取引の本体、税額、決済総額を別々に追います。
+税抜100,000円の商品を、指定税率10％で掛け販売すると、相手へ請求する総額は110,000円です。売上へ110,000円を記録するか、本体100,000円と税額10,000円を分けるかは記帳方法によります。この課では、3級で必要な<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">税抜方式</a>を使い、取引の本体、税額、決済総額を別々に追います。
 
 すべて独自の設例で、指定した10％だけを使います。端数、非課税・免税取引、控除制限、簡易課税、実際の申告計算はない条件です。すべての商品・支出の実際の税率が同じだという説明ではありません。実務の納付額はこの単純な差引きだけでは決まらない場合があるため、ここでは条件付きの記帳技能に集中します。
 
 <span id="objective-1"></span>
 ## 税抜額・税額・税込額の三つをそろえる
 
-税抜方式では、本体額を仕入や売上へ、仕入れ等に伴う税額を仮払消費税へ、販売に伴う税額を仮受消費税へ分けて記録します。一方、現金・預金・売掛金・買掛金には、実際に支払う又は受け取る税込の総額を使います。
+税抜方式では、本体額を仕入や売上へ、仕入れ等に伴う税額を<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">仮払消費税</a>へ、販売に伴う税額を<a class="lesson-term" data-lesson-term href="#lesson-term-term-5">仮受消費税</a>へ分けて記録します。一方、現金・預金・売掛金・買掛金には、実際に支払う又は受け取る税込の総額を使います。
 
-税抜価格が80,000円で指定税率10％なら、税額8,000円、税込額88,000円。税込額が88,000円と分かっているなら、税抜額は88,000÷1.10＝80,000円、税額は差額8,000円です。税込額88,000円へ10％を掛けた8,800円を税額にすると、基礎の金額が違います。
+税抜価格が80,000円で指定税率10％なら、税額8,000円、<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">税込額</a>88,000円。税込額が88,000円と分かっているなら、税抜額は88,000÷1.10＝80,000円、税額は差額8,000円です。税込額88,000円へ10％を掛けた8,800円を税額にすると、基礎の金額が違います。
 
 計算したら、税抜額＋税額＝税込額へ戻して確認します。次に、売掛金や買掛金の欄へ税込額、売上や仕入へ税抜額を置きます。掛け取引でも仮受・仮払を使います。「受け取った」「支払った」という科目名から、現金決済まで記録しないと考えないでください。
 
@@ -131,6 +131,9 @@
 
 同様に、税込仕入44,000円を仕入44,000円だけで誤記し、仮払消費税が抜けているなら、税抜40,000円、税額4,000円へ分け直します。借方「仮払消費税4,000」、貸方「仕入4,000」で訂正し、買掛金又は現金の税込44,000円は、正しく記録されていれば動かしません。
 
+<figure id="b3x-consumption-tax-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-consumption-tax-comparison-caption">
+
 | 確認する金額 | 含める内容 | よくある混同 |
 | --- | --- | --- |
 | 売上・仕入 | 税抜本体 | 税込総額のままにする |
@@ -138,6 +141,10 @@
 | 仮受消費税 | 販売税額から返品取消し等を引いた残高 | 収益と混ぜる |
 | 仮払消費税 | 仕入等税額から返品取消し等を引いた残高 | 現金払いの場合だけ計上する |
 | 未払消費税 | 指定条件で求めた未納付差額 | そのまま法人税等費用にする |
+
+</div>
+<figcaption id="b3x-consumption-tax-comparison-caption">税抜記帳から決算時の差引額への対応</figcaption>
+</figure>
 
 ### 自力演習：二つの取引から決算までたどる
 
@@ -156,6 +163,37 @@
 税込110,000円の掛け販売を、本体売上100,000円と仮受消費税10,000円へ正しく分けてある場合、後日の入金110,000円は借方「普通預金110,000」、貸方「売掛金110,000」です。入金額に含まれる税額の情報は販売時に記録済みなので、回収日に仮受消費税を10,000円増やすと税額を二重に数えます。
 
 仕入先への掛け代金支払いでも同じです。取引発生時の税額区分と、その後の債権・債務の消込みを別々に追えば、現金が動くたびに税額を分け直す誤りを防げます。
+
+<section class="guided-lesson" aria-labelledby="b3x-consumption-tax-work-heading">
+<h2 id="b3x-consumption-tax-work-heading">手を動かして確かめる：税抜方式の未払消費税を求める</h2>
+<figure id="b3x-consumption-tax-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-consumption-tax-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">仮受消費税</th><td>62,000円</td></tr>
+<tr><th scope="row">仮払消費税</th><td>38,500円</td></tr>
+<tr><th scope="row">ほかの調整</th><td>なし</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-consumption-tax-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>差引きの未払消費税は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="23500" data-guided-hint="売上時の仮受額から仕入れ時などの仮払額を控除します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-consumption-tax-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-consumption-tax-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>62,000 − 38,500 ＝ 23,500円。借方で仮受消費税を、貸方で仮払消費税を取り崩すと、貸方に未払消費税23,500円が残ります。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

@@ -1,16 +1,30 @@
 ---
-{"stableId":"b3x-incidental","qualification":"boki-3","title":"仕入諸掛と発送費を分け、立替払いと代金回収を記録する","description":"自社負担の引取運賃を取得原価へ加え、販売の発送費、取引先負担運賃の立替・相殺を分けます。負担者と支払者の二つの条件で判断します。","order":17,"minutes":85,"sample":false,"updated":"2026-10-28","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["自社負担の仕入諸掛を商品取得原価へ含め、販売側の発送費と区別する","自社負担と取引先負担の運賃を、支払者・決済方法に従って仕訳する","立替金と買掛金・売掛金の相殺を記録し、正味の決済額を検算する"],"prerequisite":"b3x-purchases、b3x-sales：三分法と買掛金・売掛金の発生・決済を確認してください。","keywords":["仕入諸掛","引取運賃","取得原価","発送費","立替金","相殺","負担者"],"glossary":[{"term":"仕入諸掛","definition":"商品の仕入れに付随する運賃などの費用"},{"term":"引取運賃","definition":"仕入商品を引き取るための運送費用"},{"term":"取得原価","definition":"資産の購入代価に、取得に直接必要な付随費用等を加えた価額"},{"term":"発送費","definition":"販売した商品の発送にかかる自社負担費用などを記録する勘定"},{"term":"立替金","definition":"他者の負担すべき金額を一時的に支払い、後で回収する債権を記録する勘定"},{"term":"相殺","definition":"互いにある債権・債務の対応部分を差し引いて決済すること"},{"term":"負担者","definition":"契約などに基づき、その費用を最終的に負う者"}]}
+{"stableId":"b3x-incidental","qualification":"boki-3","title":"仕入諸掛と発送費を分け、立替払いと代金回収を記録する","description":"自社負担の引取運賃を取得原価へ加え、販売の発送費、取引先負担運賃の立替・相殺を分けます。負担者と支払者の二つの条件で判断します。","order":17,"minutes":85,"sample":false,"updated":"2026-11-16","unit":3,"syllabus":[2],"scopeLabel":"2026年度適用範囲","subject":"commercial","objectives":["自社負担の仕入諸掛を商品取得原価へ含め、販売側の発送費と区別する","自社負担と取引先負担の運賃を、支払者・決済方法に従って仕訳する","立替金と買掛金・売掛金の相殺を記録し、正味の決済額を検算する"],"prerequisite":"b3x-purchases、b3x-sales：三分法と買掛金・売掛金の発生・決済を確認してください。","keywords":["仕入諸掛","引取運賃","取得原価","発送費","立替金","相殺","負担者"],"glossary":[{"term":"仕入諸掛","definition":"商品の仕入れに付随する運賃などの費用"},{"term":"引取運賃","definition":"仕入商品を引き取るための運送費用"},{"term":"取得原価","definition":"資産の購入代価に、取得に直接必要な付随費用等を加えた価額"},{"term":"発送費","definition":"販売した商品の発送にかかる自社負担費用などを記録する勘定"},{"term":"立替金","definition":"他者の負担すべき金額を一時的に支払い、後で回収する債権を記録する勘定"},{"term":"相殺","definition":"互いにある債権・債務の対応部分を差し引いて決済すること"},{"term":"負担者","definition":"契約などに基づき、その費用を最終的に負う者"}],"inlineGlossary":[{"term":"引取運賃","definition":"仕入商品を引き取るための運送費用","id":"term-2"},{"term":"取得原価","definition":"資産の購入代価に、取得に直接必要な付随費用等を加えた価額","id":"term-3"},{"term":"発送費","definition":"販売した商品の発送にかかる自社負担費用などを記録する勘定","id":"term-4"},{"term":"立替金","definition":"他者の負担すべき金額を一時的に支払い、後で回収する債権を記録する勘定","id":"term-5"}]}
 ---
 
-運送会社へ2,000円を払ったという情報だけでは、仕訳の借方は決まりません。仕入商品を運ぶ自社負担の費用なら仕入原価に含めます。販売商品の自社負担発送費なら費用として分けます。相手が負担する運賃を一時的に払ったなら、後で回収する立替金です。「何の運送か」と「誰の負担か」を読み分けることが中心になります。
+運送会社へ2,000円を払ったという情報だけでは、仕訳の借方は決まりません。仕入商品を運ぶ自社負担の費用なら仕入原価に含めます。販売商品の自社負担<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">発送費</a>なら費用として分けます。相手が負担する運賃を一時的に払ったなら、後で回収する<a class="lesson-term" data-lesson-term href="#lesson-term-term-5">立替金</a>です。「何の運送か」と「誰の負担か」を読み分けることが中心になります。
 
 <span id="objective-1"></span>
 
 ## 商品を取得するための自社負担額は仕入原価に含める
 
-販売用商品を使える場所へ運ぶための引取運賃など、自社が負担する取得付随費用は、基本的に商品取得原価へ加えます。三分法なら仕入の借方へ記録します。商品代金を掛けにし、引取運賃だけを現金で払った場合、借方仕入に両方の額を集め、貸方は買掛金と現金へ分けます。
+販売用商品を使える場所へ運ぶための<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">引取運賃</a>など、自社が負担する取得付随費用は、基本的に商品<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">取得原価</a>へ加えます。三分法なら仕入の借方へ記録します。商品代金を掛けにし、引取運賃だけを現金で払った場合、借方仕入に両方の額を集め、貸方は買掛金と現金へ分けます。
 
 取得原価は、商品代金と自社負担の取得付随費用を合わせた金額です。仕入代金に運賃等を加えることで、その商品を取得するために実際に負担した額を表せます。一方、取引先の負担分をこちらが立て替えただけなら、自社の商品取得原価には加えません。後で回収する請求権として残ります。
+
+<figure id="b3x-incidental-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-incidental-comparison-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">判断の手掛かり</th></tr></thead>
+<tbody>
+<tr><th scope="row">商品を引き取るために当社が負担</th><td>仕入原価に含める。</td></tr>
+<tr><th scope="row">販売先へ送るために当社が負担</th><td>発送費などの販売費として扱う。</td></tr>
+<tr><th scope="row">相手が負担し、当社が先払い</th><td>後日精算する金額を立替金等として区別する。</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-incidental-comparison-caption">運賃を誰が負担するかで記録を分ける</figcaption>
+</figure>
 
 <span id="worked-1"></span>
 
@@ -111,6 +125,37 @@ A社への買掛金50,000円とA社負担立替金2,000円なら、相殺後支�
 仕入原価は80×900＋2,400＝74,400円、取得単価は930円です。売上は50×1,400＝70,000円、請求総額は売掛金70,000＋立替金1,500＝71,500円です。販売した50個の原価は商品有高帳で50×930＝46,500円と把握できますが、三分法の販売時仕訳で仕入を減らしません。
 
 仕入時の運賃2,400円は自社の商品原価、発送時の1,500円は得意先への立替債権です。同じ運賃という語でも処理が異なります。自分の解答に「負担者は誰か」「何の原価か」という短い理由を付けると、科目を選ぶ根拠がはっきりします。
+
+<section class="guided-lesson" aria-labelledby="b3x-incidental-work-heading">
+<h2 id="b3x-incidental-work-heading">手を動かして確かめる：仕入先負担の運賃</h2>
+<figure id="b3x-incidental-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-incidental-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">商品の掛け仕入</th><td>71,000円</td></tr>
+<tr><th scope="row">当社が負担する引取運賃</th><td>2,600円</td></tr>
+<tr><th scope="row">当社が立替え、仕入先へ請求する運賃</th><td>1,400円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-incidental-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>借方の仕入に含める金額を答えてください。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="73600" data-guided-hint="商品の仕入れに伴う当社の負担だけを取得原価に入れます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-incidental-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-incidental-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>71,000＋2,600＝73,600円。仕入先負担の1,400円は、あとで精算する立替分として区別します。運送業者に払った合計4,000円を全額仕入へ含めません。</p>
+</details>
+</section>
 
 ## 公式の参照資料
 

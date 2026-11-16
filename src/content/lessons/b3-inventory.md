@@ -7,7 +7,7 @@
   "order": 21,
   "minutes": 35,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 3,
   "syllabus": [
     2
@@ -44,14 +44,14 @@
       "definition": "商品の数量・単価・金額の受入れと払出しを記録する補助簿"
     }
   ]
-}
+,"inlineGlossary":[{"term":"三分法","definition":"商品売買を仕入・売上・繰越商品に分けて記録する方法","id":"term-1"},{"term":"先入先出法","definition":"先に受け入れた商品から先に払い出したと仮定する原価計算方法","id":"term-2"},{"term":"移動平均法","definition":"商品を受け入れるたびに平均単価を計算し直す方法","id":"term-3"},{"term":"商品有高帳","definition":"商品の数量・単価・金額の受入れと払出しを記録する補助簿","id":"term-4"}]}
 ---
 
 ## 販売価格と仕入原価を分ける
 
-商品を仕入れる値段と、顧客へ売る値段は通常異なります。三分法では、仕入れたときに仕入勘定、売ったときに売上勘定を使います。販売時に原価を毎回同時記録する方式とは異なり、期末に繰越商品と仕入勘定を用いて売上原価を計算します。
+商品を仕入れる値段と、顧客へ売る値段は通常異なります。<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">三分法</a>では、仕入れたときに仕入勘定、売ったときに売上勘定を使います。販売時に原価を毎回同時記録する方式とは異なり、期末に繰越商品と仕入勘定を用いて売上原価を計算します。
 
-商品を現金30,000円で仕入れると、借方「仕入30,000」、貸方「現金30,000」です。その商品の一部を代金20,000円で掛け販売すると、借方「売掛金20,000」、貸方「売上20,000」です。この20,000円は販売価格です。仕入帳や商品有高帳で使う原価と混同しないようにします。
+商品を現金30,000円で仕入れると、借方「仕入30,000」、貸方「現金30,000」です。その商品の一部を代金20,000円で掛け販売すると、借方「売掛金20,000」、貸方「売上20,000」です。この20,000円は販売価格です。仕入帳や<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">商品有高帳</a>で使う原価と混同しないようにします。
 
 掛け仕入れた商品5,000円を返品した場合は、借方「買掛金5,000」、貸方「仕入5,000」です。掛け売上の返品3,000円なら、借方「売上3,000」、貸方「売掛金3,000」です。どちらも元の取引を取り消す向きになります。
 
@@ -63,9 +63,12 @@
 
 ## 先入先出法の例題
 
-先入先出法は、先に受け入れたものから払出したと仮定します。12個の払出原価は、月初分10個×100円と、次の仕入分2個×120円を合わせた1,240円です。月末に残るのは、後から仕入れた分のうち8個なので、8個×120円＝960円です。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">先入先出法</a>は、先に受け入れたものから払出したと仮定します。12個の払出原価は、月初分10個×100円と、次の仕入分2個×120円を合わせた1,240円です。月末に残るのは、後から仕入れた分のうち8個なので、8個×120円＝960円です。
 
 払出原価1,240円と月末原価960円を足すと、利用できた原価2,200円に一致します。数量も12個＋8個＝20個です。この二つを別々に検算すると、数量の数え違いと金額の計算違いを調べやすくなります。
+
+<figure id="b3-inventory-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3-inventory-comparison-caption">
 
 | 区分 | 数量と単価 | 原価 |
 | --- | --- | ---: |
@@ -73,9 +76,13 @@
 | 払出しの当月仕入分 | 2個×120円 | 240円 |
 | 月末残高 | 8個×120円 | 960円 |
 
+</div>
+<figcaption id="b3-inventory-comparison-caption">同じ数量でも、どの単価を払出しに使うかで原価が変わります。</figcaption>
+</figure>
+
 ## 移動平均法の例題
 
-同じ仕入の条件で、20個そろった後に12個売った場合を移動平均法で考えます。受入れ後の平均単価は2,200円÷20個＝110円です。払出原価は12個×110円＝1,320円、月末原価は8個×110円＝880円です。
+同じ仕入の条件で、20個そろった後に12個売った場合を<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">移動平均法</a>で考えます。受入れ後の平均単価は2,200円÷20個＝110円です。払出原価は12個×110円＝1,320円、月末原価は8個×110円＝880円です。
 
 先入先出法と比べると、払出原価が80円多く、月末原価が80円少なくなりました。売った数量や商品の総原価が変わったわけではなく、どの原価を売れた分に対応させたかが違います。問題の方法を読み違えると、数量が合っていても金額がずれます。
 
@@ -104,3 +111,35 @@
 不良品5,000円を仕入先へ返品し、未払の買掛金を減らすなら、買掛金5,000円／仕入5,000円です。仕入返品なのに売上を減らしてはいけません。得意先からの売上返品なら、売上と売掛金など、販売側の勘定を調整します。同じ「返品」でも、自分が買った側か売った側かを明記してください。
 
 決算の売上原価計算では、返品を調整した純仕入を使います。元の仕入180,000円から返品5,000円を差し引いた175,000円を使う条件なら、さらに同じ5,000円を売上原価から引く必要はありません。調整済みかどうかを、試算表と追加資料の記載から確かめましょう。
+
+<section class="guided-lesson" aria-labelledby="b3-inventory-work-heading">
+<h2 id="b3-inventory-work-heading">手を動かして確かめる：同じ売上で原価の差を確認</h2>
+<figure id="b3-inventory-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3-inventory-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">月初</th><td>6個×100円</td></tr>
+<tr><th scope="row">仕入</th><td>6個×140円</td></tr>
+<tr><th scope="row">販売</th><td>7個</td></tr>
+<tr><th scope="row">比較</th><td>先入先出法と仕入直後の移動平均法</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3-inventory-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>移動平均法の払出原価は先入先出法より何円多いですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="100" data-guided-hint="両方で、同じ7個を払い出します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3-inventory-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3-inventory-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>先入先出法は6×100＋1×140＝740円。移動平均法は単価120円×7＝840円。後者が100円多くなります。販売数量を変えずに比べます。</p>
+</details>
+</section>

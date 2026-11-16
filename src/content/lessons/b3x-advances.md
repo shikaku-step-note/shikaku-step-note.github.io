@@ -7,7 +7,7 @@
   "order": 27,
   "minutes": 85,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -59,18 +59,18 @@
       "definition": "取消し等の指定条件に従い、先に受け取った又は支払った代金を返すこと"
     }
   ]
-}
+,"inlineGlossary":[{"term":"前払金","definition":"商品等の受渡し前に代金の一部などを先に支払った額を記録する資産勘定","id":"term-1"},{"term":"手付金","definition":"契約時などに代金の一部として先に支払う金額。この課では代金へ充当する条件","id":"term-3"},{"term":"充当","definition":"既に支払った又は受け取った額を、対象となる代金の精算に用いること","id":"term-5"},{"term":"受渡し","definition":"この課では、商品を引き渡し又は受け取って売上・仕入を記録する時点","id":"term-6"}]}
 ---
 
-商品を注文してから届くまでに、代金の一部を先に払うことがあります。この支払を、商品が届いた後の代金と同じように仕入へ記録すると、まだ受け取っていない商品の仕入が増えてしまいます。商品の受渡しと、お金が動く時点を分けて確認します。
+商品を注文してから届くまでに、代金の一部を先に払うことがあります。この支払を、商品が届いた後の代金と同じように仕入へ記録すると、まだ受け取っていない商品の仕入が増えてしまいます。商品の<a class="lesson-term" data-lesson-term href="#lesson-term-term-6">受渡し</a>と、お金が動く時点を分けて確認します。
 
-代金を受け取る販売側でも、受注時の入金がそのまますべて売上になるとは限りません。ここでは商品を受け渡した時点で売上・仕入を記録し、その前の手付金は代金へ充当する条件を用います。契約の法律上の解除条件や違約金を推測するのではなく、問題に示された商品代金の流れを記帳します。
+代金を受け取る販売側でも、受注時の入金がそのまますべて売上になるとは限りません。ここでは商品を受け渡した時点で売上・仕入を記録し、その前の<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">手付金</a>は代金へ<a class="lesson-term" data-lesson-term href="#lesson-term-term-5">充当</a>する条件を用います。契約の法律上の解除条件や違約金を推測するのではなく、問題に示された商品代金の流れを記帳します。
 
 <span id="objective-1"></span>
 
 ## 商品がまだなら、先に動いた代金を残しておく
 
-買う側が商品代金の一部を先に払ったときは、前払金という資産を記録します。既に代金を負担しており、その額を商品受取りの精算に使える状態だからです。現金等が減る一方で、前払金が増えます。まだ商品を受け取っていない条件なら、この時点で仕入を記録しません。
+買う側が商品代金の一部を先に払ったときは、<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">前払金</a>という資産を記録します。既に代金を負担しており、その額を商品受取りの精算に使える状態だからです。現金等が減る一方で、前払金が増えます。まだ商品を受け取っていない条件なら、この時点で仕入を記録しません。
 
 売る側が先に受け取った代金は、前受金という負債で管理します。入金はあっても、商品を引き渡すなどの取引を今後行う必要があるためです。前受金は借入金と同じ取引ではありませんが、将来の義務として貸方に増える点は共通します。商品の引渡し時に、この前受金を取り崩して売上代金へ対応させます。
 
@@ -104,12 +104,19 @@
 
 「残額は掛け」という文章で、80,000円から今回の現金20,000円だけを引いた60,000円を売掛金にすると、前受金25,000円を無視しています。商品の総額、前受済み額、今回の現金、未回収額を一行ずつ書き、足して80,000円になるか確かめます。
 
+<figure id="b3x-advances-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-advances-comparison-caption">
+
 | 代金の内訳 | 金額 | 引渡し時の扱い |
 | --- | ---: | --- |
 | 先に受け取った分 | 25,000 | 前受金を借方で取り崩す |
 | 今回受け取った現金 | 20,000 | 現金を借方で増やす |
 | まだ受け取っていない分 | 35,000 | 売掛金を借方で増やす |
 | 商品代金の合計 | 80,000 | 売上を貸方へ記録する |
+
+</div>
+<figcaption id="b3x-advances-comparison-caption">手付金の受け渡しと売上の認識時点</figcaption>
+</figure>
 
 <span id="objective-3"></span>
 
@@ -170,6 +177,37 @@ Aの前払金は20,000＋12,000−25,000＝7,000円です。Bの前払金は15,0
 自力練習：当店は月初に前受金16,000円を持っています。当月に手付金24,000円を普通預金で受け取り、商品54,000円を引き渡しました。この代金に前受金40,000円全額を充当し、残りを掛けにします。その後、売掛金のうち10,000円を現金で回収しました。各仕訳と、最後に残る前受金・売掛金を求めてください。
 
 解答：手付金受取りは普通預金24,000円／前受金24,000円です。引渡しは前受金40,000円・売掛金14,000円／売上54,000円。回収は現金10,000円／売掛金10,000円です。最後の前受金はゼロ、売掛金は4,000円になります。先に受け取った額、当月の売上、当月の回収を別々に書くと、商品代金を二重計上せずに残高へつなげられます。
+
+<section class="guided-lesson" aria-labelledby="b3x-advances-work-heading">
+<h2 id="b3x-advances-work-heading">手を動かして確かめる：手付金を受け取った販売の残額を求める</h2>
+<figure id="b3x-advances-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-advances-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">受け取った手付金</th><td>25,000円</td></tr>
+<tr><th scope="row">商品引渡時の売価</th><td>92,000円</td></tr>
+<tr><th scope="row">残額</th><td>掛け</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-advances-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>引渡日に借方へ記入する売掛金は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="67000" data-guided-hint="前受金を取り崩したあと、まだ回収していない金額を出します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-advances-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-advances-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>92,000 − 25,000 ＝ 67,000円。借方は前受金25,000円と売掛金67,000円、貸方は売上92,000円です。</p>
+</details>
+</section>
 
 ## 公式資料
 

@@ -1,16 +1,19 @@
 ---
-{"stableId":"b3x-reversal","qualification":"boki-3","title":"再振替から決済までを追い、二つの期の損益をそろえる","description":"前払・未払・前受・未収の期首再振替と、後日の支払・受取を時系列で追います。勘定記入と翌期損益の検算も行います。","order":44,"minutes":100,"sample":false,"updated":"2026-10-28","unit":6,"syllabus":[3],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["前期末の四つの経過勘定について再振替仕訳を作る","期首再振替と現金決済を組み合わせて当期対応額を計算する","経過勘定と費用収益の元帳を前期末から翌期首まで完成する"],"prerequisite":"前払・未払費用と前受・未収収益を、期間から計算し仕訳できることが必要です。","keywords":["再振替仕訳","開始記入","経過勘定","前期繰越","次期繰越","損益振替","当期対応額","期首"],"glossary":[{"term":"再振替仕訳","definition":"前期末の経過勘定の整理仕訳を、翌期首に逆に記録する仕訳"},{"term":"開始記入","definition":"前期から引き継いだ資産負債等の残高を当期の勘定へ記入すること"},{"term":"経過勘定","definition":"期間配分のために用いる前払・未払・前受・未収の各勘定"},{"term":"前期繰越","definition":"前の会計期間の末から当期へ引き継ぐ残高"},{"term":"次期繰越","definition":"当期末の残高を次の期間へ引き継ぐための締切記入"},{"term":"損益振替","definition":"収益と費用の残高を損益勘定へ移す処理"},{"term":"当期対応額","definition":"収益や費用のうち当期のサービス等へ割り当てる額"},{"term":"期首","definition":"新しい会計期間の最初の時点"}]}
+{"stableId":"b3x-reversal","qualification":"boki-3","title":"再振替から決済までを追い、二つの期の損益をそろえる","description":"前払・未払・前受・未収の期首再振替と、後日の支払・受取を時系列で追います。勘定記入と翌期損益の検算も行います。","order":46,"minutes":100,"sample":false,"updated":"2026-11-16","unit":6,"syllabus":[3],"scopeLabel":"日商簿記3級・2026年度適用範囲","subject":"commercial","objectives":["前期末の四つの経過勘定について再振替仕訳を作る","期首再振替と現金決済を組み合わせて当期対応額を計算する","経過勘定と費用収益の元帳を前期末から翌期首まで完成する"],"prerequisite":"前払・未払費用と前受・未収収益を、期間から計算し仕訳できることが必要です。","keywords":["再振替仕訳","開始記入","経過勘定","前期繰越","次期繰越","損益振替","当期対応額","期首"],"glossary":[{"term":"再振替仕訳","definition":"前期末の経過勘定の整理仕訳を、翌期首に逆に記録する仕訳"},{"term":"開始記入","definition":"前期から引き継いだ資産負債等の残高を当期の勘定へ記入すること"},{"term":"経過勘定","definition":"期間配分のために用いる前払・未払・前受・未収の各勘定"},{"term":"前期繰越","definition":"前の会計期間の末から当期へ引き継ぐ残高"},{"term":"次期繰越","definition":"当期末の残高を次の期間へ引き継ぐための締切記入"},{"term":"損益振替","definition":"収益と費用の残高を損益勘定へ移す処理"},{"term":"当期対応額","definition":"収益や費用のうち当期のサービス等へ割り当てる額"},{"term":"期首","definition":"新しい会計期間の最初の時点"}],"inlineGlossary":[{"term":"開始記入","definition":"前期から引き継いだ資産負債等の残高を当期の勘定へ記入すること","id":"term-2"},{"term":"経過勘定","definition":"期間配分のために用いる前払・未払・前受・未収の各勘定","id":"term-3"},{"term":"前期繰越","definition":"前の会計期間の末から当期へ引き継ぐ残高","id":"term-4"},{"term":"期首","definition":"新しい会計期間の最初の時点","id":"term-8"}]}
 ---
 
-前期末に計上した未払利息を、翌期に実際に支払うとき、支払総額をそのまま当期費用としてよいでしょうか。総額には前期分が入っているかもしれません。再振替は、期末で切り分けた額を翌期首に戻し、期中の通常の記帳と組み合わせて当期分を求める方法です。式だけで覚えると向きが複雑なので、一つの契約を日付順にたどります。
+前期末に計上した未払利息を、翌期に実際に支払うとき、支払総額をそのまま当期費用としてよいでしょうか。総額には前期分が入っているかもしれません。再振替は、期末で切り分けた額を翌<a class="lesson-term" data-lesson-term href="#lesson-term-term-8">期首</a>に戻し、期中の通常の記帳と組み合わせて当期分を求める方法です。式だけで覚えると向きが複雑なので、一つの契約を日付順にたどります。
 
 <span id="objective-1"></span>
 
 ## 残高の繰越と、再振替は別の記入
 
-前期末に未払利息という負債があれば、当期首へその残高を繰り越します。これが開始記入です。そのうえで再振替をする指示なら、未払利息を借方、支払利息を貸方へ記録していったん負債を消します。開始記入だけで自動的に再振替されたわけではありません。
+前期末に未払利息という負債があれば、当期首へその残高を繰り越します。これが<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">開始記入</a>です。そのうえで再振替をする指示なら、未払利息を借方、支払利息を貸方へ記録していったん負債を消します。開始記入だけで自動的に再振替されたわけではありません。
 
 前期末の仕訳を逆にするという規則は四種類に共通です。前払費用は当期費用へ戻し、未払費用は当期費用の貸方へ戻します。前受収益は当期収益へ戻し、未収収益は当期収益の借方へ戻します。どの科目でも現金の受払いを伴わない点も確認してください。
+
+<figure id="b3x-reversal-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-reversal-comparison-caption">
 
 | 前期末の整理 | 翌期首の再振替 |
 | --- | --- |
@@ -18,6 +21,10 @@
 | 支払利息／未払利息 | 未払利息／支払利息 |
 | 受取家賃／前受家賃 | 前受家賃／受取家賃 |
 | 未収利息／受取利息 | 受取利息／未収利息 |
+
+</div>
+<figcaption id="b3x-reversal-comparison-caption">前期末・当期首・支払日の支払利息</figcaption>
+</figure>
 
 再振替は、前期の費用収益が誤りだったから取り消す訂正ではありません。前期は前期で正しく区切っており、その次の期を通常の取引記帳につなぐ手続です。問題が再振替を行わない方式を指定するなら、別の精算方法を使います。指定の方式を途中で混ぜないことが重要です。
 
@@ -74,7 +81,7 @@
 
 ## 前期末から翌期首まで、勘定のつながりを読む
 
-再振替を含む勘定記入問題では、前期繰越、決算整理、損益振替、次期繰越、翌期開始が一つの資料へ現れます。まず対象期間を区切り、資産負債の勘定か収益費用の勘定かを確認します。費用収益は損益へ振り替えて締め切り、経過勘定の残高は翌期へ繰り越します。
+再振替を含む勘定記入問題では、<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">前期繰越</a>、決算整理、損益振替、次期繰越、翌期開始が一つの資料へ現れます。まず対象期間を区切り、資産負債の勘定か収益費用の勘定かを確認します。費用収益は損益へ振り替えて締め切り、<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">経過勘定</a>の残高は翌期へ繰り越します。
 
 <span id="worked-4"></span>
 
@@ -123,6 +130,37 @@
 期首再振替のあと、一時的に費用が貸方、収益が借方へ記入されても、その行だけで取引の成績を決めません。期中の支払・受取と期末の見越し繰延べをすべて加え、対象期間に対応する額を求めます。日付の範囲が一年間なのか数か月間なのかも、勘定の見出しから確認してください。
 
 途中の空欄を求めた後は、勘定の左右の締切合計を計算します。利益や費用の額が正しくても、摘要や繰越の側が逆なら、翌期の開始に正しい残高を渡せません。
+
+<section class="guided-lesson" aria-labelledby="b3x-reversal-work-heading">
+<h2 id="b3x-reversal-work-heading">手を動かして確かめる：再振替後に当期費用を照合する</h2>
+<figure id="b3x-reversal-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-reversal-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">前期末に計上した未払利息</th><td>7,200円</td></tr>
+<tr><th scope="row">当期首に再振替</th><td>実施済み</td></tr>
+<tr><th scope="row">当期の支払額</th><td>12,000円（全額を支払利息に記入）</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-reversal-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>この取引で当期の支払利息に残る金額は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="4800" data-guided-hint="再振替で支払利息に付いた貸方額と、支払時の借方額を比べます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-reversal-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-reversal-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>12,000 − 7,200 ＝ 4,800円です。再振替は前期に帰属した分を当期の費用から差し引く役割を果たします。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

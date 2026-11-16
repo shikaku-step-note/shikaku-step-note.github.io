@@ -7,7 +7,7 @@
   "order": 32,
   "minutes": 85,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 5,
   "subject": "commercial",
   "syllabus": [
@@ -64,12 +64,12 @@
       "definition": "この課では固定資産の取得原価から減価償却累計額を差し引いた額。"
     }
   ]
-}
+,"inlineGlossary":[{"term":"減価償却","definition":"固定資産の取得原価を使用する期間へ配分する処理。","id":"term-1"},{"term":"定額法","definition":"取得原価から残存価額を引いた額を耐用年数で均等に配分する方法。","id":"term-2"},{"term":"残存価額","definition":"使用を終える時点に残ると見積もった価額。","id":"term-3"},{"term":"耐用年数","definition":"その資産を使用すると見積もる期間。","id":"term-4"}]}
 ---
 
-数年間使う配達用の車を購入したとき、会社は購入日に代金を支払っていても、その車を使って収益を得るのは購入年度だけではありません。減価償却では取得原価を使用する各期へ分け、各期の収益とそのための費用を対応させます。毎年の中古価格を調べ直す計算ではなく、取得原価の期間配分を学ぶ課です。
+数年間使う配達用の車を購入したとき、会社は購入日に代金を支払っていても、その車を使って収益を得るのは購入年度だけではありません。<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">減価償却</a>では取得原価を使用する各期へ分け、各期の収益とそのための費用を対応させます。毎年の中古価格を調べ直す計算ではなく、取得原価の期間配分を学ぶ課です。
 
-この課は2026年度の3級範囲に合わせ、定額法と間接法で扱います。残存価額、耐用年数、使用開始日、月割りの指示は設例の条件です。実際の税務上の償却率や、2027年度に加わる定率法を混ぜて使わないでください。消費税は考慮しません。
+この課は2026年度の3級範囲に合わせ、<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">定額法</a>と間接法で扱います。<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">残存価額</a>、<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">耐用年数</a>、使用開始日、月割りの指示は設例の条件です。実際の税務上の償却率や、2027年度に加わる定率法を混ぜて使わないでください。消費税は考慮しません。
 
 <span id="objective-1"></span>
 ## 取得原価から、毎年負担する額を求める
@@ -95,6 +95,9 @@
 
 取得原価600,000円の車両について、前期末までに累計240,000円がある状態で、当期に120,000円を償却すると、当期費用は120,000円、期末累計額は360,000円、期末帳簿価額は240,000円です。費用に累計360,000円をそのまま記入すると、過去の240,000円を当期にも重ねて費用にしてしまいます。
 
+<figure id="b3x-depreciation-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-depreciation-comparison-caption">
+
 | 項目 | 計算・読み方 | 上の車両の金額 |
 | --- | --- | ---: |
 | 取得原価 | 台帳にある購入時の原価 | 600,000円 |
@@ -102,6 +105,10 @@
 | 当期の償却費 | 当期に新しく配分する額 | 120,000円 |
 | 期末累計額 | 期首累計額＋当期償却費 | 360,000円 |
 | 期末帳簿価額 | 取得原価−期末累計額 | 240,000円 |
+
+</div>
+<figcaption id="b3x-depreciation-comparison-caption">定額法の年額と使用月数</figcaption>
+</figure>
 
 <span id="objective-2"></span>
 ## 月割りは、年額を求めた後で使用月数に直す
@@ -164,6 +171,38 @@ Aの当期償却費は360,000÷6＝60,000円。Bの年額は240,000÷4＝60,000�
 ### 帳簿価額と売れる金額は、別の資料で分かる
 
 償却計算の結果が帳簿価額300,000円でも、同日に実際に売れる金額が300,000円になるとは限りません。帳簿価額は取得原価の未配分額、売却代金は相手と決めた取引額だからです。売却額の見積りが問題にない場合、償却計算だけから売価を推測してはいけません。売却代金が与えられたら、その時点までの償却を反映した帳簿価額と比較し、売却損益を判断します。二つの金額の意味を分けることが、次の課の準備になります。
+
+<section class="guided-lesson" aria-labelledby="b3x-depreciation-work-heading">
+<h2 id="b3x-depreciation-work-heading">手を動かして確かめる：初年度の定額法の金額を求める</h2>
+<figure id="b3x-depreciation-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-depreciation-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">備品の取得原価</th><td>300,000円</td></tr>
+<tr><th scope="row">残存価額</th><td>0円</td></tr>
+<tr><th scope="row">耐用年数</th><td>5年</td></tr>
+<tr><th scope="row">当期の使用</th><td>7か月（月割）</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-depreciation-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>初年度の減価償却費は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="35000" data-guided-hint="まず1年あたりの減価償却費を計算します。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-depreciation-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-depreciation-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>300,000 ÷ 5 ＝ 60,000円が年額です。60,000 × 7 ÷ 12 ＝ 35,000円が初年度の費用になります。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

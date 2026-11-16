@@ -4,10 +4,10 @@
   "qualification": "boki-3",
   "title": "決算整理後残高試算表を、仕訳と勘定から作る",
   "description": "整理前残高と整理仕訳を同じ勘定へ集める。複数の整理を反映した全科目の残高を作る。具体例の計算過程と独立演習から、判断の理由まで学びます。",
-  "order": 48,
+  "order": 51,
   "minutes": 100,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 7,
   "subject": "commercial",
   "syllabus": [
@@ -55,10 +55,10 @@
       "definition": "期末の資産・負債・費用・収益を適切にするための調整を記録する仕訳。"
     }
   ]
-}
+,"inlineGlossary":[{"term":"整理前残高試算表","definition":"決算整理等を反映する前の各勘定の差引残高を並べた表。","id":"term-1"},{"term":"整理後残高試算表","definition":"決算整理等を転記した後の各勘定の差引残高を並べた表。","id":"term-2"},{"term":"転記","definition":"仕訳の借方・貸方を対応する各勘定へ記入すること。","id":"term-3"},{"term":"整理仕訳","definition":"期末の資産・負債・費用・収益を適切にするための調整を記録する仕訳。","id":"term-6"}]}
 ---
 
-決算整理前試算表は、日々の記帳を集めた途中段階の残高です。未払費用や減価償却、期末商品の振替などがまだ反映されていれば、そのまま財務諸表へ移せません。整理仕訳を各勘定へ転記し、その後の残高を並べたものが決算整理後残高試算表です。この課では、仕訳を別々に解くだけで終わらず、同じ勘定に複数の整理が及ぶ場合も含めて最後まで集計します。
+決算整理前試算表は、日々の記帳を集めた途中段階の残高です。未払費用や減価償却、期末商品の振替などがまだ反映されていれば、そのまま財務諸表へ移せません。<a class="lesson-term" data-lesson-term href="#lesson-term-term-6">整理仕訳</a>を各勘定へ<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">転記</a>し、その後の残高を並べたものが決算<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">整理後残高試算表</a>です。この課では、仕訳を別々に解くだけで終わらず、同じ勘定に複数の整理が及ぶ場合も含めて最後まで集計します。
 
 単位はすべて円。消費税と法人税等はない独自設例で、商品は三分法、棚卸減耗や評価損はありません。精算表や貸借対照表へ進む前に、整理後の勘定残高を作れるようにします。
 
@@ -83,7 +83,10 @@
 <span id="objective-2"></span>
 ## 一つの資料から整理仕訳と整理後残高を作る
 
-次の独自資料を使います。販売業の決算整理前残高試算表です。空欄は残高なしを表します。借方合計と貸方合計はともに1,394,000円です。最初に自分で縦合計を確かめ、これから追加する整理とは別にチェックしてください。
+次の独自資料を使います。販売業の決算<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">整理前残高試算表</a>です。空欄は残高なしを表します。借方合計と貸方合計はともに1,394,000円です。最初に自分で縦合計を確かめ、これから追加する整理とは別にチェックしてください。
+
+<figure id="b3x-adjusted-trial-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-adjusted-trial-comparison-caption">
 
 | 勘定科目 | 整理前借方 | 整理前貸方 |
 | --- | ---: | ---: |
@@ -102,6 +105,10 @@
 | 売上 | — | 680,000 |
 | 減価償却累計額 | — | 60,000 |
 | 合計 | 1,394,000 | 1,394,000 |
+
+</div>
+<figcaption id="b3x-adjusted-trial-comparison-caption">整理前・整理記入・整理後の照合</figcaption>
+</figure>
 
 整理条件は、期末商品90,000円、売上原価は仕入勘定で算定、売掛金残高の2％の貸倒引当金を新たに設定、備品の当期減価償却48,000円、保険料の翌期分6,000円、給料の当期未払8,000円、借入金の当期未払利息12,000円です。貸倒引当金の整理前残高はありません。
 
@@ -178,6 +185,37 @@
 ### 合計試算表と残高試算表の違いも確認する
 
 この課で作ったのは差引後の残高を並べる表です。例えば借方記入合計150,000円、貸方記入合計40,000円の資産勘定なら、残高試算表に入るのは借方110,000円です。両側の記入合計をそのまま並べる合計試算表とは金額が違います。設問の表題と列見出しを読み、勘定の合計を求めるのか差引残高を求めるのかを先に判断します。
+
+<section class="guided-lesson" aria-labelledby="b3x-adjusted-trial-work-heading">
+<h2 id="b3x-adjusted-trial-work-heading">手を動かして確かめる：整理記入後の利息残高を求める</h2>
+<figure id="b3x-adjusted-trial-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-adjusted-trial-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">支払利息の整理前借方残高</th><td>28,000円</td></tr>
+<tr><th scope="row">当期の未払いで追加する額</th><td>6,300円</td></tr>
+<tr><th scope="row">翌期分として除く額</th><td>2,100円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-adjusted-trial-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>整理後残高試算表の支払利息は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="32200" data-guided-hint="支払利息の借方への記入を足し、貸方への記入を引きます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-adjusted-trial-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-adjusted-trial-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>28,000 ＋ 6,300 − 2,100 ＝ 32,200円。未払費用と前払費用は別の科目の行へ記入します。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

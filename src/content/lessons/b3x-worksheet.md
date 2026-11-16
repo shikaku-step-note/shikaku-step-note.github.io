@@ -4,10 +4,10 @@
   "qualification": "boki-3",
   "title": "8桁精算表を横計算・縦計算・利益の照合で完成する",
   "description": "試算表と修正欄から各行の整理後残高を作る。8桁精算表を全行完成させ表示先を区別する。具体例の計算過程と独立演習から、判断の理由まで学びます。",
-  "order": 49,
+  "order": 52,
   "minutes": 105,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 7,
   "subject": "commercial",
   "syllabus": [
@@ -55,17 +55,17 @@
       "definition": "この課では転記すべき借方・貸方と逆の側へ金額を記入する誤り。"
     }
   ]
-}
+,"inlineGlossary":[{"term":"精算表","definition":"試算表、決算整理、損益と貸借の各項目をつなぐ決算作業用の表。","id":"term-1"},{"term":"8桁精算表","definition":"試算表・修正記入・損益計算書・貸借対照表にそれぞれ借方貸方がある精算表。","id":"term-2"},{"term":"損益計算書欄","definition":"精算表で整理後の費用・収益を集計し利益又は損失を求める欄。","id":"term-4"},{"term":"貸借対照表欄","definition":"精算表で整理後の資産・負債・純資産等を集計する欄。","id":"term-5"}]}
 ---
 
-精算表は、試算表の残高、決算整理、損益計算、貸借対照表の項目を一つの表でつなぐ作業用の表です。帳簿そのものや公表する決算書と同じものではありません。この課では8桁精算表を使い、各行を横に追う計算と、各列を縦に集計する計算を組み合わせて完成させます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">精算表</a>は、試算表の残高、決算整理、損益計算、貸借対照表の項目を一つの表でつなぐ作業用の表です。帳簿そのものや公表する決算書と同じものではありません。この課では<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">8桁精算表</a>を使い、各行を横に追う計算と、各列を縦に集計する計算を組み合わせて完成させます。
 
 「8桁」は数字が八桁という意味ではなく、試算表・修正記入・損益計算書・貸借対照表に、それぞれ借方と貸方の二列がある構成を指します。横長の表は必要に応じてスクロールして確認し、手元では四つの小さい表へ分けて練習してもかまいません。
 
 <span id="objective-1"></span>
 ## 一つの行を、試算表から右へ追う
 
-試算表欄には整理前残高を、修正記入欄には決算整理仕訳の借方・貸方を記入します。両者を合算・差引きした整理後残高を、費用・収益なら損益計算書欄へ、資産・負債・純資産なら貸借対照表欄へ移します。8桁精算表には独立した整理後試算表欄がないので、下書きで各行の整理後残高を確定させると安全です。
+試算表欄には整理前残高を、修正記入欄には決算整理仕訳の借方・貸方を記入します。両者を合算・差引きした整理後残高を、費用・収益なら<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">損益計算書欄</a>へ、資産・負債・純資産なら<a class="lesson-term" data-lesson-term href="#lesson-term-term-5">貸借対照表欄</a>へ移します。8桁精算表には独立した整理後試算表欄がないので、下書きで各行の整理後残高を確定させると安全です。
 
 費用の支払保険料12,000円から翌期分3,000円を外す場合、修正記入欄の貸方へ3,000円、損益計算書欄の借方へ9,000円です。同時に新しい前払保険料の行を作り、修正記入欄の借方へ3,000円、貸借対照表欄の借方へ3,000円を置きます。一つの整理仕訳が、二行へ分かれて転記されます。
 
@@ -94,6 +94,9 @@
 
 償却30,000円は借方費用・貸方累計額、前払3,000円は借方資産・貸方費用、未払5,000円は借方費用・貸方負債、引当金800円は借方繰入・貸方引当金です。修正記入欄の合計は128,800円ずつになります。
 
+<figure id="b3x-worksheet-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-worksheet-comparison-caption">
+
 | 科目 | 試算借 | 試算貸 | 修正借 | 修正貸 | 損益借 | 損益貸 | 貸借借 | 貸借貸 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 現金預金 | 200,000 | — | — | — | — | — | 200,000 | — |
@@ -117,6 +120,10 @@
 | 利益記入前合計 | 812,000 | 812,000 | 128,800 | 128,800 | 364,800 | 370,000 | 483,000 | 477,800 |
 | 当期純利益 | — | — | — | — | 5,200 | — | — | 5,200 |
 | 最終合計 | 812,000 | 812,000 | 128,800 | 128,800 | 370,000 | 370,000 | 483,000 | 483,000 |
+
+</div>
+<figcaption id="b3x-worksheet-comparison-caption">精算表で当期純利益を両欄へ記入する関係</figcaption>
+</figure>
 
 引当金と累計額は、この精算表では貸借対照表欄の貸方へ置き、対応する資産の借方と別々に残します。公表用の貸借対照表で資産から控除する表示と区別してください。この表の貸借欄借方合計483,000円は、控除後の資産合計422,200円とは違います。差60,800円は累計額60,000円と引当金800円です。
 
@@ -159,6 +166,36 @@
 ### 空欄を埋めるときは、その列の役割も答える
 
 例えば「備品」の貸借借方欄に150,000円と答えるだけでなく、取得原価を間接法で保っているためその額、と説明します。「減価償却累計額」の60,000円は、期首30,000円と当期30,000円の合計です。一つの表に当期額と累計額が混在するので、金額の意味を確かめてから入力してください。表の端に同じ科目名があるという理由だけで、修正列の30,000円をそのまま右端へ写さないことが大切です。
+
+<section class="guided-lesson" aria-labelledby="b3x-worksheet-work-heading">
+<h2 id="b3x-worksheet-work-heading">手を動かして確かめる：精算表の当期純利益を求める</h2>
+<figure id="b3x-worksheet-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-worksheet-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">損益計算書欄の収益合計</th><td>540,000円</td></tr>
+<tr><th scope="row">損益計算書欄の費用合計</th><td>473,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-worksheet-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>精算表の損益計算書欄に記入する当期純利益は何円ですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="67000" data-guided-hint="貸方の収益と借方の費用を比べます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-worksheet-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-worksheet-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>540,000 − 473,000 ＝ 67,000円。損益計算書欄では差額67,000円を借方へ、貸借対照表欄では利益を貸方へ入れると左右がそろいます。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 

@@ -4,10 +4,10 @@
   "qualification": "boki-3",
   "title": "法人税等を中間納付・決算・確定納付へつなぐ",
   "description": "当期の税負担額と仮払・未払の役割を区別する。指定条件の整理後利益から税額と決算仕訳を作る。具体例の計算過程と独立演習から、判断の理由まで学びます。",
-  "order": 37,
+  "order": 38,
   "minutes": 105,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated": "2026-11-16",
   "unit": 5,
   "subject": "commercial",
   "syllabus": [
@@ -55,10 +55,10 @@
       "definition": "この課では決算で未払とした法人税等の残額を後に納付する段階。"
     }
   ]
-}
+,"inlineGlossary":[{"term":"法人税等","definition":"この課では法人税・住民税・事業税等の当期負担として設問が指定した額を計上する費用勘定。","id":"term-1"},{"term":"仮払法人税等","definition":"この課では当期分の中間納付額を決算確定まで記録する資産勘定。","id":"term-2"},{"term":"未払法人税等","definition":"当期負担額のうち未納付の確定額を記録する負債勘定。","id":"term-3"},{"term":"中間納付","definition":"この課では当期税額確定前に当期分として行う税金の納付。","id":"term-4"}]}
 ---
 
-法人税等の問題では、「当期の費用はいくらか」と「これから払う額はいくらか」を分けます。既に中間納付をしていれば、当期負担額の全額をもう一度支払うわけではありません。反対に、当期に払った額だけを費用とすると、決算時点で未払いとなっている当期負担分が抜けることがあります。
+<a class="lesson-term" data-lesson-term href="#lesson-term-term-1">法人税等</a>の問題では、「当期の費用はいくらか」と「これから払う額はいくらか」を分けます。既に<a class="lesson-term" data-lesson-term href="#lesson-term-term-4">中間納付</a>をしていれば、当期負担額の全額をもう一度支払うわけではありません。反対に、当期に払った額だけを費用とすると、決算時点で未払いとなっている当期負担分が抜けることがあります。
 
 この課は、設例で与えられた法人税・住民税・事業税等をまとめて法人税等勘定へ記録する3級の練習です。税額や計算用の率は問題の指定条件を使います。実際の申告所得の計算、損金算入、繰延税金、会社別の税率判断は扱いません。実在企業の税額をこの簡略計算から推定しないでください。
 
@@ -67,7 +67,7 @@
 
 法人税等は当期に対応する税負担を費用として計上する科目です。決算で当期の税額が120,000円と分かったら、当期費用として必要なのは120,000円です。そのうち40,000円を既に中間納付していれば、追加で支払う予定額は80,000円です。
 
-法人税等120,000円、仮払法人税等40,000円、未払法人税等80,000円を区別します。法人税等は費用、仮払法人税等はこの課で中間納付時に使う資産、未払法人税等は決算で確定した未納付分の負債です。科目名が似ているので、先に「費用」「先払い」「未払い」と役割を書き添えると混同を防げます。
+法人税等120,000円、<a class="lesson-term" data-lesson-term href="#lesson-term-term-2">仮払法人税等</a>40,000円、<a class="lesson-term" data-lesson-term href="#lesson-term-term-3">未払法人税等</a>80,000円を区別します。法人税等は費用、仮払法人税等はこの課で中間納付時に使う資産、未払法人税等は決算で確定した未納付分の負債です。科目名が似ているので、先に「費用」「先払い」「未払い」と役割を書き添えると混同を防げます。
 
 既に納付した額がある場合、その時点で仮払法人税等として記録したかも確かめます。試算表に仮払法人税等があるなら、決算で当期費用へ充当する必要があります。現金を払っているから当期費用へ既に入っている、と自動的に判断しないことが大切です。
 
@@ -128,11 +128,18 @@
 
 法人税等の費用が当期負担額と一致するか、当期分中間納付の仮払残高が適切に消えているか、未払額が今後の納付予定額と一致するかを別々に確認します。この課の設例では中間納付額が当期税額を上回る場合の還付処理は扱わず、いずれも追加納付額が正になる条件です。
 
+<figure id="b3x-corporate-tax-comparison">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-corporate-tax-comparison-caption">
+
 | 段階 | 借方 | 貸方 | 損益への影響 |
 | --- | --- | --- | --- |
 | 当期分の中間納付 | 仮払法人税等 | 普通預金 | この仕訳だけでは費用なし |
 | 決算で当期税額確定 | 法人税等 | 仮払法人税等・未払法人税等 | 当期費用を計上 |
 | 翌期に前期残額納付 | 未払法人税等 | 普通預金 | 同じ税額を再び費用にしない |
+
+</div>
+<figcaption id="b3x-corporate-tax-comparison-caption">中間納付・確定・納付の科目</figcaption>
+</figure>
 
 ### 自力演習：利益と貸借対照表を同じ条件で作る
 
@@ -179,6 +186,36 @@
 例えば税抜方式で未払消費税12,000円を計上済みなら、納付は未払消費税12,000／普通預金12,000です。租税公課12,000円を追加する取引とは区別します。税金という共通語や出金額だけで科目を決めず、納付書の内容と元帳の残高を照合してください。
 
 自分で確かめるなら、未記帳の当期固定資産税19,000円を現金で納める仕訳を作ります。租税公課19,000／現金19,000となり、借貸は各19,000円です。既に未払額を費用とともに記録していた、という別条件があれば、納付時はその負債を減らします。設例にない既計上額を勝手に想定せず、何が記録済みかを先に確かめる習慣を付けましょう。
+
+<section class="guided-lesson" aria-labelledby="b3x-corporate-tax-work-heading">
+<h2 id="b3x-corporate-tax-work-heading">手を動かして確かめる：確定税額から未払分を求める</h2>
+<figure id="b3x-corporate-tax-work-data">
+<div class="table-scroll" tabindex="0" role="region" aria-labelledby="b3x-corporate-tax-work-data-caption">
+<table>
+<thead><tr><th scope="col">確認する項目</th><th scope="col">金額・条件</th></tr></thead>
+<tbody>
+<tr><th scope="row">確定した法人税等</th><td>215,000円</td></tr>
+<tr><th scope="row">中間納付を記録した仮払法人税等</th><td>86,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption id="b3x-corporate-tax-work-data-caption">金額を求めるための資料</figcaption>
+</figure>
+<p>未払法人税等はいくらですか。</p>
+<form data-lesson-screen-only data-guided-practice data-expected="129000" data-guided-hint="確定税額のうち、納付済みの部分を除きます。">
+<fieldset hidden>
+<legend>計算結果を入力</legend>
+<label for="b3x-corporate-tax-work-answer">答え（円）</label>
+<input class="guided-number" type="text" id="b3x-corporate-tax-work-answer" inputmode="numeric" autocomplete="off">
+<button type="submit">答えを確かめる</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>途中の計算と記入を確認</summary>
+<p data-guided-solution>215,000 − 86,000 ＝ 129,000円。費用は確定額215,000円で、仮払いの86,000円を取り崩し、差額を未払法人税等に計上します。</p>
+</details>
+</section>
 
 ## 公式資料と確認日
 
