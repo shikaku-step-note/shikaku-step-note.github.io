@@ -3,8 +3,8 @@
   "stableId": "bb2-assets", "qualification": "boki-beginner",
   "title": "固定資産の取得額を決め、土地の売却損益を計算する",
   "description": "商品と固定資産を用途で区別し、購入代金と付随費用から取得額を計算します。現金購入、後払い、土地の売却を仕訳と残高の両方で確かめます。",
-  "order": 20, "minutes": 80, "sample": false, "unit": 5, "subject": "basics", "syllabus": [2],
-  "scopeLabel": "2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）", "updated": "2026-11-12",
+  "order": 20, "minutes": 85, "sample": false, "unit": 5, "subject": "basics", "syllabus": [2],
+  "scopeLabel": "2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）", "updated":"2026-11-16",
   "objectives": ["使用目的と付随費用から固定資産の取得額を判断する", "固定資産の現金購入・後払い・支払いを仕訳する", "土地の帳簿価額と売却代金を比較して売却損益を記録する"],
   "prerequisite": "資産の増減、未払金と買掛金の区別、未収入金の使い方を復習してください。",
   "keywords": ["有形固定資産", "取得原価", "付随費用", "土地", "未払金", "未収入金", "固定資産売却益"],
@@ -17,13 +17,18 @@
     {"term":"固定資産売却損","definition":"固定資産の売却代金が、その資産の帳簿価額を下回るときの差額を記録する費用。"},
     {"term":"未払金","definition":"備品の購入代金など、通常の商品仕入れ以外の取引で後日支払う義務を記録する負債。"},
     {"term":"未収入金","definition":"土地の売却代金など、通常の商品販売以外の取引で後日受け取る権利を記録する資産。"}
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-f0eb638c2f", "term": "固定資産売却損"}, {"id": "glossary-5eba7b091c", "term": "固定資産売却益"}, {"id": "glossary-b9cdfd1040", "term": "有形固定資産"}, {"id": "glossary-ae54aecaed", "term": "取得原価"}, {"id": "glossary-ccb457e72b", "term": "帳簿価額"}]
 }
 ---
 
-**有形固定資産**は、建物や備品など、事業のために継続して使う形のある資産です。店で使う机を購入すれば、まだ何年か使える机という資産が増えます。同じ机を販売するために仕入れた場合は、商品売買として記録します。科目を選ぶ手掛かりは、物の名前や価格に加えて、事業でどのように使うかです。
+店で何度も使う機械や机を買うと、代金を支払った後も、店には仕事に使える物が残ります。事業で続けて使う形のある財産を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-b9cdfd1040">有形固定資産</a>**といい、机や工具などを記録する科目には「備品」があります。同じ机でも、客に売るために買ったなら、商品です。物の名前や金額に加え、店が自分で使うのか、売るために持つのかを確かめると、記録先を判断できます。
 
-資産を取得したときは、使える状態にするために必要だった額を**取得原価**として記録します。代金を分けて払っても取得原価は変わらず、その時点で払っていない分は未払金に残ります。土地を売ったときは、受取総額と、帳簿から消す土地の金額を比べます。この章の取引では消費税を考慮しません。
+備品を使える状態にするためにかかった金額が**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ae54aecaed">取得原価</a>**です。購入代金のほか、その備品を届けてもらう運送料や、使い始めるために必要な据付費があれば、備品の取得原価に含めます。代金をあとで支払う取引でも、備品を受け取って使える状態になれば取得を記録します。その時点で残っている後払いの義務は、備品とは別に「未払金」に記録します。
+
+土地を売るときは、代金を受け取る取引と、土地を店の帳簿から取り除く取引を一緒に記録します。帳簿に載っていた土地の金額を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ccb457e72b">帳簿価額</a>**と呼び、ここでは売った土地の帳簿価額と売却代金を比べます。差額は、代金の受け取り方にかかわらず、土地を売ったことで生じた利益または損失です。
+
+この章の取引では消費税を考慮しません。
 
 <span id="unit5-assets-method"></span>
 
@@ -31,9 +36,9 @@
 
 仕訳の前に、資料が示しているのが取得、支払い、売却のどれかを確認します。取得原価の計算に入れるのは、物の代金と取得に必要な支出です。未払金の額を求めるときは、いつ誰にいくら支払ったかを確認します。使用開始後の通常の修理は、元の状態を保つための支出として修繕費に分けます。
 
-土地を売るときは、資料から受取方法と売却した部分を読み分けます。まず売った部分の帳簿価額を特定し、次に受取額の全体を求めます。受取額が帳簿価額より多ければ固定資産売却益、少なければ固定資産売却損です。受取額が同じであれば、すぐに受け取るか後で受け取るかが変わっても、売却損益は変わりません。
+土地を売るときは、資料から受取方法と売却した部分を読み分けます。まず売った部分の帳簿価額を特定し、次に受取額の全体を求めます。受取額が帳簿価額より多ければ<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-5eba7b091c">固定資産売却益</a>、少なければ<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f0eb638c2f">固定資産売却損</a>です。受取額が同じであれば、すぐに受け取るか後で受け取るかが変わっても、売却損益は変わりません。
 
-<figure><svg viewBox="0 0 340 151" width="340" height="151" role="img" aria-label="取得日：備品を計上。支払日：残った義務を減らす。売却日：帳簿価額と受取総額を比較。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none"><rect x="5" y="5" width="330" height="33" rx="5"/><rect x="5" y="58" width="330" height="33" rx="5"/><rect x="5" y="111" width="330" height="33" rx="5"/><path d="M170 39v16m-4-5 4 5 4-5m-4 42v16m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="170" y="26">取得日：備品を計上</text><text x="170" y="79">支払日：残った義務を減らす</text><text x="170" y="132">売却日：帳簿価額と受取総額を比較</text></g></svg><figcaption>取得、現金や預金での決済、売却では、帳簿で確かめるものが変わります。日付と目的を対応させます。</figcaption></figure>
+<figure id="bb2-assets-aid-1"><svg viewBox="0 0 340 151" width="340" height="151" role="img" aria-label="取得日：備品を計上。支払日：残った義務を減らす。売却日：帳簿価額と受取総額を比較。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none"><rect x="5" y="5" width="330" height="33" rx="5"/><rect x="5" y="58" width="330" height="33" rx="5"/><rect x="5" y="111" width="330" height="33" rx="5"/><path d="M170 39v16m-4-5 4 5 4-5m-4 42v16m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="170" y="26">取得日：備品を計上</text><text x="170" y="79">支払日：残った義務を減らす</text><text x="170" y="132">売却日：帳簿価額と受取総額を比較</text></g></svg><figcaption>取得、現金や預金での決済、売却では、帳簿で確かめるものが変わります。日付と目的を対応させます。</figcaption></figure>
 
 <span id="objective-1"></span>
 
@@ -154,7 +159,7 @@
 
 ## 領収書と引渡書から、固定資産の金額を決める
 
-<figure><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="購入と据付 160,000円、資産の増加、使用後の修理 6,000円" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">購入と据付 160,000円</text><text x="175" y="75">資産の増加</text><text x="175" y="121">使用後の修理 6,000円</text></g></svg><figcaption>購入と据付 160,000円 → 資産の増加 → 使用後の修理 6,000円</figcaption></figure>
+<figure id="bb2-assets-aid-2"><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="購入と据付 160,000円、資産の増加、使用後の修理 6,000円" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">購入と据付 160,000円</text><text x="175" y="75">資産の増加</text><text x="175" y="121">使用後の修理 6,000円</text></g></svg><figcaption>購入と据付 160,000円 → 資産の増加 → 使用後の修理 6,000円</figcaption></figure>
 
 店の作業台を買います。請求書には本体138,000円、受取時の運送7,000円、引渡し前の据付15,000円が記載されています。注文時に代金のうち24,000円を現金で支払い、引渡日に残額を翌月払いとします。ここでは注文時に前払金で記録済みです。
 
@@ -201,3 +206,39 @@
 ### 公式資料と適用範囲
 
 [日本商工会議所「簿記初級 出題範囲・内容」](https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf)の期中取引・固定資産と使用勘定科目を参照しました。2026年10月28日に確認した適用範囲に基づく独自の解説・例題です。2027年度以後の改定内容を、この課の条件に混在させていません。
+
+<span id="monthly-thread-acquisition"></span>
+
+## 月次まで追う例　備品を使える状態にするまでの支出
+
+この章から、架空のみずき修理店の6月の取引を追います。店では修理に加え、部品を商品として販売しています。6月2日に店で使う工具を購入し、工具代35,000円、運送料4,000円、使い始めるための組立費1,000円を普通預金から支払いました。この例で消費税を分ける取引は、後の章で明示する商品の仕入れと売上だけです。
+
+| 支出 | 工具を使えるようにするまでに必要か | 記録 |
+| --- | --- | ---: |
+| 工具代 | 工具そのものの代金 | 35,000円 |
+| 運送料 | 店に工具を運び込むために必要 | 4,000円 |
+| 組立費 | 購入した工具を使える状態にするために必要 | 1,000円 |
+
+35,000＋4,000＋1,000＝40,000円が取得原価です。仕事に使う工具を手に入れたため、備品が40,000円増え、預けていたお金が40,000円減りました。そのため仕訳は、借方「備品」40,000円、貸方「普通預金」40,000円です。運送料を別の科目にすると、工具を使える状態にするために必要だった金額が、備品の記録から抜けてしまいます。
+
+**自分で確かめる。** 店が6月2日に工具を使い始め、40,000円のうち15,000円だけ普通預金から支払い、残りを来月払う契約だった場合、備品と未払金はいくらですか。別の設例で、帳簿価額75,000円の土地を70,000円で売り、代金は来月受け取るときはどう記録しますか。
+
+**解答。** 工具の取得原価は40,000円です。借方に備品40,000円、貸方に普通預金15,000円と未払金25,000円を置きます。貸方の合計を確かめると、支払いを済ませた部分と残った義務を合わせて40,000円です。土地の設例では、土地75,000円を貸方で減らし、受取る権利を借方の未収入金70,000円にします。売却代金が帳簿価額を5,000円下回るので、借方に固定資産売却損5,000円を加えます。土地の取引は別の設例であり、みずき修理店の月次集計には含めません。
+
+<section class="guided-lesson" id="bb2-assets-first-use-practice" aria-labelledby="bb2-assets-first-use-practice-title">
+<h3 id="bb2-assets-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-assets-first-use-practice-prompt">仕事で使う機器の本体が98,000円、運賃4,600円、使えるようにする設置費2,400円です。翌月の通常の修理5,000円を別に払いました。取得原価は何円ですか。</p>
+<form data-guided-practice data-expected="105000" data-guided-hint="いつ、その支出が必要だったかを確認します。" aria-labelledby="bb2-assets-first-use-practice-title" aria-describedby="bb2-assets-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-assets-first-use-practice-input">答え（円）</label>
+<input id="bb2-assets-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>98,000＋4,600＋2,400＝105,000円です。使用開始に必要な運賃と設置は含め、使用後の通常の修理は費用に分けます。</p>
+</details>
+</section>

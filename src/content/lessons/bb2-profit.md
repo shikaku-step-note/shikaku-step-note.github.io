@@ -1,8 +1,12 @@
 ---
-{"stableId":"bb2-profit","qualification":"boki-beginner","title":"収益・費用から利益を求め、現金の増減と区別する","description":"売上、家賃、利息などの収益・費用を集計し、利益を求めます。掛売り、借入れ、出資、元金返済を比較し、損益計算書と貸借対照表のつながりを計算で確かめます。","order":2,"minutes":100,"sample":false,"updated":"2026-11-14","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・基礎概念と財務諸表の関係","subject":"basics","objectives":["収益と費用を分類して利益または損失を求める","入出金を伴う取引と損益の発生を区別する","出資・引出しを除いて純資産の増減から損益を求める"],"prerequisite":"前の「店の財産を資産・負債・純資産に分ける」で資産＝負債＋純資産を確認してください。","keywords":["収益","費用","利益","損失","損益計算書","現金増減"],"glossary":[{"term":"収益","definition":"売上や受取手数料など、企業の活動から生じて利益を増やす要因"},{"term":"費用","definition":"給料や支払家賃など、収益を得る活動に伴って利益を減らす要因"},{"term":"当期純利益","definition":"対象期間の収益が費用を上回るときの差額"},{"term":"当期純損失","definition":"対象期間の費用が収益を上回るときの差額"},{"term":"損益計算書","definition":"ある期間の収益、費用、損益を示す表"},{"term":"受取手数料","definition":"仲介などの役務の対価として得る収益を記録する勘定"},{"term":"支払利息","definition":"金銭の借入れに伴う利息の費用を記録する勘定"}]}
+{"stableId":"bb2-profit","qualification":"boki-beginner","title":"収益・費用から利益を求め、現金の増減と区別する","description":"売上、家賃、利息などの収益・費用を集計し、利益を求めます。掛売り、借入れ、出資、元金返済を比較し、損益計算書と貸借対照表のつながりを計算で確かめます。","order":2,"minutes":105,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・基礎概念と財務諸表の関係","subject":"basics","objectives":["収益と費用を分類して利益または損失を求める","入出金を伴う取引と損益の発生を区別する","出資・引出しを除いて純資産の増減から損益を求める"],"prerequisite":"前の「店の財産を資産・負債・純資産に分ける」で資産＝負債＋純資産を確認してください。","keywords":["収益","費用","利益","損失","損益計算書","現金増減"],"glossary":[{"term":"収益","definition":"売上や受取手数料など、企業の活動から生じて利益を増やす要因"},{"term":"費用","definition":"給料や支払家賃など、収益を得る活動に伴って利益を減らす要因"},{"term":"当期純利益","definition":"対象期間の収益が費用を上回るときの差額"},{"term":"当期純損失","definition":"対象期間の費用が収益を上回るときの差額"},{"term":"損益計算書","definition":"ある期間の収益、費用、損益を示す表"},{"term":"受取手数料","definition":"仲介などの役務の対価として得る収益を記録する勘定"},{"term":"支払利息","definition":"金銭の借入れに伴う利息の費用を記録する勘定"}],
+  "inlineGlossary": [{"id": "glossary-9d72a53460", "term": "受取手数料"}, {"id": "glossary-71c50f7fc9", "term": "損益計算書"}, {"id": "glossary-833a4944f5", "term": "支払利息"}, {"id": "glossary-8dd4eef508", "term": "収益"}, {"id": "glossary-014f66a7e6", "term": "費用"}]
+}
 ---
 
-損益計算書は、一定期間に生じた収益と費用を集計し、その差額を利益または損失として示す表です。代金を受け取る日と収益が生じる日がずれることがあるため、利益は現金の増減から直接求められません。たとえば、仕事を完了して代金を翌月に受け取る場合、完了した月に収益が生じます。借入元金の返済で現金が減る場合は負債の減少です。この二つを見分けるには、お金が動いた理由と、何月の収益・費用かを確認します。
+店が一か月にどれだけの利益を得たかを知るには、その月に商品を売ったり仕事を終えたりして得た金額を集めます。この金額が**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-8dd4eef508">収益</a>**です。同じ月の商売に使った人件費や家賃などは**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-014f66a7e6">費用</a>**に当たります。収益から費用を引いた差が**利益**で、費用のほうが大きければ差は**損失**になります。一か月分の収益・費用・利益をまとめる表を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-71c50f7fc9">損益計算書</a>**といいます。
+
+商品を渡した月と代金が入る月が異なると、売上を記録する月と、現金や預金が増える月も分かれます。この章では、商品を渡した日や仕事を終えた日、その月に使ったものを資料で確かめてから、現金の増減と損益を別々に計算します。
 
 ### 基礎の例：同じ週の二つの答えを出す
 
@@ -16,15 +20,15 @@
 
 今週の利益は12,000−3,000＝9,000円です。現金は10,000−3,000＝7,000円増えました。修理代は受け取る権利として残り、借りた10,000円には返す義務が残ります。
 
-<figure><svg viewBox="0 0 338 145" width="338" height="145" role="img" aria-label="修理代1万2千円は利益を求める側へ入り、借入れ1万円は現金を求める側へ入る。家賃3千円は両方で減少。結果は利益9千円、現金増加7千円。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="4" y="6" width="158" height="129" rx="5"/><rect x="176" y="6" width="158" height="129" rx="5"/><path d="M4 35h158m14 0h158M13 104h139m33 0h139"/></g><g fill="currentColor" font-size="13"><text x="14" y="25">損益の計算</text><text x="186" y="25">現金増減の計算</text><text x="14" y="56">修理代 ＋12,000円</text><text x="14" y="83">家賃 −3,000円</text><text x="14" y="124">利益 9,000円</text><text x="186" y="56">借入れ ＋10,000円</text><text x="186" y="83">家賃 −3,000円</text><text x="186" y="124">増加 7,000円</text></g></svg><figcaption>家賃が両方の欄に入ります。請求書と借入れの入金記録が、それぞれどちらの欄に入るかを確認してください。</figcaption></figure>
+<figure id="bb2-profit-aid-1"><svg viewBox="0 0 338 145" width="338" height="145" role="img" aria-label="修理代1万2千円は利益を求める側へ入り、借入れ1万円は現金を求める側へ入る。家賃3千円は両方で減少。結果は利益9千円、現金増加7千円。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="4" y="6" width="158" height="129" rx="5"/><rect x="176" y="6" width="158" height="129" rx="5"/><path d="M4 35h158m14 0h158M13 104h139m33 0h139"/></g><g fill="currentColor" font-size="13"><text x="14" y="25">損益の計算</text><text x="186" y="25">現金増減の計算</text><text x="14" y="56">修理代 ＋12,000円</text><text x="14" y="83">家賃 −3,000円</text><text x="14" y="124">利益 9,000円</text><text x="186" y="56">借入れ ＋10,000円</text><text x="186" y="83">家賃 −3,000円</text><text x="186" y="124">増加 7,000円</text></g></svg><figcaption>家賃が両方の欄に入ります。請求書と借入れの入金記録が、それぞれどちらの欄に入るかを確認してください。</figcaption></figure>
 
 <span id="objective-1"></span>
 
 ## 収益と費用を同じ期間で集める
 
-通常の商品を販売して得る売上は収益です。店が仲介などのサービスを行って受け取る受取手数料、貸したお金に対して得る受取利息も収益に含まれます。店が借入れで資金を受け取ったときは、同時に返済義務が生じるため、売上や受取手数料に含めません。
+通常の商品を販売して得る売上は収益です。店が仲介などのサービスを行って受け取る<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-9d72a53460">受取手数料</a>、貸したお金に対して得る受取利息も収益に含まれます。店が借入れで資金を受け取ったときは、同時に返済義務が生じるため、売上や受取手数料に含めません。
 
-費用には、給料、支払家賃、通信費、水道光熱費、広告宣伝費などがあります。ただし、支払額を何でも費用とするわけではありません。借入元金の返済では負債が減り、資産として扱う備品の購入では現金が備品へ入れ替わります。借入れの利息は、元金とは別に支払利息という費用にします。
+費用には、給料、支払家賃、通信費、水道光熱費、広告宣伝費などがあります。ただし、支払額を何でも費用とするわけではありません。借入元金の返済では負債が減り、資産として扱う備品の購入では現金が備品へ入れ替わります。借入れの利息は、元金とは別に<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-833a4944f5">支払利息</a>という費用にします。
 
 ある月の収益が費用を上回れば、その差額が利益です。費用が収益を上回れば、その差額が損失になります。費用180,000円、収益150,000円の場合は30,000円の損失です。「利益はマイナス30,000円」と計算できても、表や選択肢で「損失の額」を尋ねられたら30,000円を選びます。数字に加え、利益・損失の別まで確かめてください。
 
@@ -134,7 +138,7 @@
 | 借入元金と利息を支払い | −22,000円 | 費用2,000円 | 0 |
 | 元入れと生活費の引出し | ＋25,000円 | なし | ＋25,000円 |
 
-<figure><svg viewBox="0 0 344 174" width="344" height="174" role="img" aria-label="6月は利益38千円、現金純増48千円、純資産増加63千円。三つの数値の大きさが異なる。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><text x="10" y="20" fill="currentColor">利益 38</text><rect x="10" y="29" width="171" height="16" rx="3" fill="#0f6373"/><text x="10" y="70" fill="currentColor">現金純増 48</text><rect x="10" y="79" width="216" height="16" rx="3" fill="#34628b"/><text x="10" y="120" fill="currentColor">純資産の増加 63</text><rect x="10" y="129" width="283.5" height="16" rx="3" fill="#0f6373"/><text x="10" y="169" fill="currentColor" font-size="12">単位：千円</text></g></svg><figcaption>同じ6月でも、集計する取引が違うため棒の長さが異なります。純資産の増加63千円に含まれる事業主との取引を表から探してください。</figcaption></figure>
+<figure id="bb2-profit-aid-2"><svg viewBox="0 0 344 174" width="344" height="174" role="img" aria-label="6月は利益38千円、現金純増48千円、純資産増加63千円。三つの数値の大きさが異なる。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><text x="10" y="20" fill="currentColor">利益 38</text><rect x="10" y="29" width="171" height="16" rx="3" fill="#0f6373"/><text x="10" y="70" fill="currentColor">現金純増 48</text><rect x="10" y="79" width="216" height="16" rx="3" fill="#34628b"/><text x="10" y="120" fill="currentColor">純資産の増加 63</text><rect x="10" y="129" width="283.5" height="16" rx="3" fill="#0f6373"/><text x="10" y="169" fill="currentColor" font-size="12">単位：千円</text></g></svg><figcaption>同じ6月でも、集計する取引が違うため棒の長さが異なります。純資産の増加63千円に含まれる事業主との取引を表から探してください。</figcaption></figure>
 
 当月の利益は120,000−55,000−25,000−2,000＝38,000円です。現金は70,000−25,000−22,000＋25,000＝48,000円増えました。利益と元入れ・引出しを合わせると、月末純資産は400,000＋38,000＋25,000＝463,000円です。右端の「直接の純資産増減」は、損益を経由しない事業主との取引だけを示しています。
 
@@ -168,7 +172,7 @@
 
 次に4月末の貸借対照表を作ります。現金は80,000＋30,000−20,000−19,000−5,000＝66,000円、売掛金は30,000＋52,000−30,000＝52,000円。資産の合計は118,000円です。借入金は40,000−18,000＝22,000円なので、純資産は118,000−22,000＝96,000円です。純資産は、月初70,000円＋利益31,000円＋元入れ10,000円−引出し15,000円でも96,000円になります。
 
-<figure><svg viewBox="0 0 348 144" width="348" height="144" role="img" aria-label="純資産は月初7万円から利益3万1千円を足し、元入れと引出しの純減5千円を引いて月末9万6千円。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none" stroke-width="2"><path d="M88 82h36m-6-5 6 5-6 5 M224 82h32m-6-5 6 5-6 5"/></g><g text-anchor="middle" font-size="13" fill="currentColor"><text x="45" y="49">月初</text><text x="45" y="81">70,000円</text><text x="174" y="27">利益 ＋31,000円</text><text x="174" y="62">元入れ ＋10,000円</text><text x="174" y="103">引出し −15,000円</text><text x="300" y="49">月末</text><text x="300" y="81">96,000円</text><text x="174" y="134">資産118,000円 − 負債22,000円 ＝ 96,000円</text></g></svg><figcaption>純資産の増加額26,000円には、利益31,000円と店主との取引による純減5,000円が含まれます。最後の式は、同じ額を資産と負債から確かめたものです。</figcaption></figure>
+<figure id="bb2-profit-aid-3"><svg viewBox="0 0 348 144" width="348" height="144" role="img" aria-label="純資産は月初7万円から利益3万1千円を足し、元入れと引出しの純減5千円を引いて月末9万6千円。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none" stroke-width="2"><path d="M88 82h36m-6-5 6 5-6 5 M224 82h32m-6-5 6 5-6 5"/></g><g text-anchor="middle" font-size="13" fill="currentColor"><text x="45" y="49">月初</text><text x="45" y="81">70,000円</text><text x="174" y="27">利益 ＋31,000円</text><text x="174" y="62">元入れ ＋10,000円</text><text x="174" y="103">引出し −15,000円</text><text x="300" y="49">月末</text><text x="300" y="81">96,000円</text><text x="174" y="134">資産118,000円 − 負債22,000円 ＝ 96,000円</text></g></svg><figcaption>純資産の増加額26,000円には、利益31,000円と店主との取引による純減5,000円が含まれます。最後の式は、同じ額を資産と負債から確かめたものです。</figcaption></figure>
 
 ### 条件が変わったら：仕事の完了日が翌月になった
 
@@ -207,6 +211,42 @@
 </details>
 
 試験で「この月の利益」を聞かれたら、最初にどの月に収益と費用が発生したかを確認します。「月末残高」なら月初からの変化を追います。二つを検算で結ぶときは、当月利益以外に純資産を変える元入れや引出しの有無も確かめます。
+
+<span id="unit1-profit-timing-bridge"></span>
+
+## 「今月分」を集めるときは、入金の通知と仕事の記録を照らす
+
+入金の通知に日付と金額があっても、それだけでその月の収益とは判断できません。先月に済んだ仕事の代金か、今月に済んだ仕事の代金かによって、収益を記録する月が異なります。銀行から借りたお金であれば、増えた預金とともに返済義務が残ります。こうして入金の理由まで読むと、現金が増えた理由と利益の増減を別々に説明できます。以下の設例では、示した金額以外の収益や費用はなく、消費税も考えません。
+
+### 例題：先月の回収が今月の入金に含まれている
+
+今月、印刷店は仕事を二件終えました。一件目は36,000円を普通預金で受け取り、二件目22,000円の代金は来月受け取ります。預金には、先月の仕事の代金18,000円と、銀行から借りた50,000円も入っています。今月使用した材料代21,000円と今月の店の家賃12,000円は、いずれも預金から支払いました。
+
+今月の仕事による収益は36,000＋22,000＝58,000円、費用は21,000＋12,000＝33,000円です。利益は25,000円になります。一方、預金は36,000＋18,000＋50,000－21,000－12,000＝71,000円増えました。今月の売上22,000円は未入金ですが、利益の計算には入ります。先月の売上18,000円と借入れ50,000円は預金を増やし、今月の収益には加えません。差額46,000円は、今月の預金を増やした68,000円から、未入金の売上22,000円を引いて確かめられます。
+
+### 自分で確かめる：費用の支払いだけが翌月に延びた
+
+例題の材料は今月の仕事にすべて使い、21,000円は来月払うことになったとします。今月の利益と預金の増加額を求めてください。支払いが延びたときに変わる数字はどちらでしょうか。
+
+<details><summary>解答と考え方</summary><p>利益は25,000円のままです。材料を今月の仕事に使ったという条件が変わっていないので、今月の費用には21,000円を含めます。今月は預金から21,000円が出ないため、預金の増加額は71,000＋21,000＝92,000円です。まだ支払っていない材料代は義務として残ります。</p></details>
+
+<section class="guided-lesson" id="bb2-profit-first-use-practice" aria-labelledby="bb2-profit-first-use-practice-title">
+<h3 id="bb2-profit-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-profit-first-use-practice-prompt">仕事Aの代金35,000円は当月の完成日に受け取り、仕事Bの代金26,000円は当月中に仕事を終えて翌月に受け取ります。当月の材料費と家賃は27,000円です。先月の売上の回収9,000円と借入れの入金20,000円もありました。消費税とその他の損益は考えません。当月の利益は何円ですか。</p>
+<form data-guided-practice data-expected="34000" data-guided-hint="資金が入った取引を一律に足す前に、仕事が終わった月を確かめます。" aria-labelledby="bb2-profit-first-use-practice-title" aria-describedby="bb2-profit-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-profit-first-use-practice-input">答え（円）</label>
+<input id="bb2-profit-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>当月終えた仕事による収益は35,000＋26,000＝61,000円です。材料費と家賃27,000円を引くと34,000円。先月の回収と借入れは当月の収益に入りません。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

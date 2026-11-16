@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-expenses","qualification":"boki-beginner","title":"収益・費用を分類し、消耗品と事業の税金を記録する",
   "description":"売上以外の収益、営業に使う費用、消耗品の支払い時処理を学びます。固定資産税・印紙税と個人の所得税を区別し、未払固定資産税の支払いで費用を二重計上しないよう練習します。",
-  "order": 23,"minutes":85,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
+  "order": 23,"minutes":90,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
   "objectives":["収益・費用と資産・負債の増減を区別して科目を選ぶ","消耗品を支払い時に消耗品費で処理する","固定資産税・印紙税と未払固定資産税の支払いを区別する"],
   "prerequisite":"仕訳の基本、未払金、資本金で処理する事業主個人の支払いを復習してください。",
   "keywords":["収益","費用","消耗品費","租税公課","固定資産税","印紙税","未払固定資産税"],
@@ -15,23 +15,28 @@
     {"term":"印紙税","definition":"一定の文書に関する税。この課では問題に示された事業用文書の印紙税額を租税公課として処理する。"},
     {"term":"未払固定資産税","definition":"すでに費用として記録した固定資産税のうち、未払いの額を記録する負債。支払い時にこの負債を減らす。"},
     {"term":"費用の二重計上","definition":"すでに記録した同じ費用を支払い時などに再び費用とし、費用合計を過大にする誤り。"}
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-f8e8d525fe", "term": "未払固定資産税"}, {"id": "glossary-42ba622af6", "term": "固定資産税"}, {"id": "glossary-37c3c0cf31", "term": "消耗品費"}, {"id": "glossary-fb961b1389", "term": "租税公課"}, {"id": "glossary-5946adfed4", "term": "印紙税"}]
 }
 ---
 
-**収益**は商品の販売やサービスの提供などで利益を増やす項目、**費用**は事業に必要な負担として利益を減らす項目です。支払いや入金を見たときは、まずその原因を確かめます。以前に計上した代金を受け取るだけなら債権が減り、前に記録した未払額を支払えば債務が減ります。どちらも、同じ収益や費用をもう一度記録する場面ではありません。
+店が1か月の商売でいくらもうけたかを調べるときは、その月の**収益**から、その月の**費用**を差し引きます。収益には商品の販売による売上などがあり、費用には商品の販売や仕事をするために負担した金額が入ります。たとえば、店で使った電気の料金は水道光熱費です。店がお金を受け取ったか、支払ったかを見た後で、どの月に何のために生じた負担なのかを確かめます。
 
-費用として記録する場合は、何を利用したかを科目名に結び付けます。事業用の電気料金は水道光熱費、通信回線は通信費です。消耗品は、現行の初級の出題範囲に従い、支払時に消耗品費とします。税金の支払いは、事業の負担か事業主個人の負担かを先に判定します。消費税の税抜方式は後の章で扱います。
+前に販売した商品の代金を受け取れば、まだ受け取っていなかった権利である売掛金が減ります。同じ販売を再び収益にする必要はありません。前月に記録した買掛金を支払う場合も、後払いの義務が減り、支払いだけで当月の費用が増えることはありません。店主個人のための支払いは、前の章と同様に事業の費用から分けます。
+
+このコースでいう**消耗品**は、店で使う文房具など、使用に伴って消費する物です。簿記初級の指定された扱いでは、代金を支払ったときに「<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-37c3c0cf31">消耗品費</a>」で記録します。税金を記録するときは、事業が負担する税か、事業主個人が負担する税かを先に読みます。
+
+店の通信回線の料金は通信費というように、何を利用したかに応じて科目を選びます。消費税を本体価格と分けて扱う税抜方式は、後の章で学びます。
 
 <span id="unit5-expenses-method"></span>
 
 ## 負担した日と支払った日を、資料ごとに照らし合わせる
 
-固定資産税を未払額ごと計上する問題では、計上日に租税公課と未払固定資産税を記録します。後日同じ分を納付したときは、以前に計上した義務を消します。複数回の納付がある場合は、通知の金額から今回までの支払額を引くと未払いの残りが分かります。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-42ba622af6">固定資産税</a>を未払額ごと計上する問題では、計上日に<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-fb961b1389">租税公課</a>と<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f8e8d525fe">未払固定資産税</a>を記録します。後日同じ分を納付したときは、以前に計上した義務を消します。複数回の納付がある場合は、通知の金額から今回までの支払額を引くと未払いの残りが分かります。
 
 まだ計上していない事業用の固定資産税をその場で支払った場合は、問題の条件に沿って支払時に租税公課を計上します。個人の所得税を事業資金から支払う設例は資本金の減少として扱います。先に記録したものと同じか、誰にかかった税かの二点を決めてから、借方の科目を選びます。
 
-<figure><svg viewBox="0 0 340 151" width="340" height="151" role="img" aria-label="計上日：費用と未払額を増やす。納付日：未払額と預金を減らす。月末：未払額の残りを読み取る。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none"><rect x="5" y="5" width="330" height="33" rx="5"/><rect x="5" y="58" width="330" height="33" rx="5"/><rect x="5" y="111" width="330" height="33" rx="5"/><path d="M170 39v16m-4-5 4 5 4-5m-4 42v16m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="170" y="26">計上日：費用と未払額を増やす</text><text x="170" y="79">納付日：未払額と預金を減らす</text><text x="170" y="132">月末：未払額の残りを読み取る</text></g></svg><figcaption>未払計上をした固定資産税の記録です。計上日に費用が生じ、納付日には残っていた負債が減ります。</figcaption></figure>
+<figure id="bb2-expenses-aid-1"><svg viewBox="0 0 340 151" width="340" height="151" role="img" aria-label="計上日：費用と未払額を増やす。納付日：未払額と預金を減らす。月末：未払額の残りを読み取る。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none"><rect x="5" y="5" width="330" height="33" rx="5"/><rect x="5" y="58" width="330" height="33" rx="5"/><rect x="5" y="111" width="330" height="33" rx="5"/><path d="M170 39v16m-4-5 4 5 4-5m-4 42v16m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="170" y="26">計上日：費用と未払額を増やす</text><text x="170" y="79">納付日：未払額と預金を減らす</text><text x="170" y="132">月末：未払額の残りを読み取る</text></g></svg><figcaption>未払計上をした固定資産税の記録です。計上日に費用が生じ、納付日には残っていた負債が減ります。</figcaption></figure>
 
 <span id="objective-1"></span>
 
@@ -86,7 +91,7 @@
 
 ## 税金は対象と、すでに記録済みかどうかを確かめる
 
-事業用の固定資産税や事業用文書の印紙税は、この課の設例では租税公課で処理します。事業主個人の所得税は前課のとおり資本金の減少です。同じ税という名称でも、事業の負担か個人の負担かで記録先が変わります。
+事業用の固定資産税や事業用文書の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-5946adfed4">印紙税</a>は、この課の設例では租税公課で処理します。事業主個人の所得税は前課のとおり資本金の減少です。同じ税という名称でも、事業の負担か個人の負担かで記録先が変わります。
 
 固定資産税について「当月の費用として記録し、未払固定資産税とする」と金額が与えられる場合は、借方「租税公課」、貸方「未払固定資産税」です。ここでは資料で指定された費用額を記録します。通知書の年額から勝手に月割り額を算定したり、初級の範囲を越える決算整理の方法を追加したりしません。
 
@@ -176,7 +181,7 @@
 
 ## 通知書と領収書を照合して、費用を一度だけ記録する
 
-<figure><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="通知 36,000円、支払 12,000円、未払 24,000円" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">通知 36,000円</text><text x="175" y="75">支払 12,000円</text><text x="175" y="121">未払 24,000円</text></g></svg><figcaption>通知 36,000円 → 支払 12,000円 → 未払 24,000円</figcaption></figure>
+<figure id="bb2-expenses-aid-2"><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="通知 36,000円、支払 12,000円、未払 24,000円" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">通知 36,000円</text><text x="175" y="75">支払 12,000円</text><text x="175" y="121">未払 24,000円</text></g></svg><figcaption>通知 36,000円 → 支払 12,000円 → 未払 24,000円</figcaption></figure>
 
 店舗宛ての固定資産税の通知36,000円を受け取り、未払額を帳簿に記録するよう指示されました。後日、同じ税のうち12,000円を普通預金から納付しました。さらに、事業用の文房具2,400円と、事業の契約に必要な印紙1,200円を現金で支払いました。文房具は簿記初級の範囲に沿い、支払い時に消耗品費で処理します。
 
@@ -215,3 +220,39 @@
 ### 公式資料と適用範囲
 
 [日本商工会議所「簿記初級 出題範囲・内容」](https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf)の収益・費用、税金、使用勘定科目を2026年10月28日に確認しました。支払い時の消耗品費処理と、初級の期中取引・月次集計に絞った独自教材です。個別の税額計算や年末の見越し・繰延べは扱いません。
+
+<span id="monthly-thread-expenses"></span>
+
+## 月次まで追う例　支払いの内容と負担が生じた月
+
+みずき修理店の6月の資料には、次の支払いが載っています。6月14日の買掛金10,000円は月初から残っていた分です。6月19日の消耗品と、6月22日の電気代は6月分で、どちらも他の月には計上していません。
+
+| 支払い | 何が減ったか | 6月に費用となるもの |
+| --- | --- | --- |
+| 以前の買掛金 10,000円 | 普通預金、後払いの義務 | なし |
+| 消耗品 3,000円 | 現金 | 消耗品費 3,000円 |
+| 6月分の電気代 5,000円 | 普通預金 | 水道光熱費 5,000円 |
+
+支出は合計18,000円ですが、この三件が6月の費用を増やすのは8,000円です。6月14日の仕訳は借方「買掛金」、貸方「普通預金」です。買掛金が減ったことを記録するので、支払った金額をもう一度「仕入」に入れる必要はありません。この8,000円は三件から求めた額で、後で集計する店の費用全体には商品の原価や減価償却費も含まれます。
+
+**自分で確かめる。** 6月22日に支払った5,000円が、5月末に費用と未払金をすでに記録した5月分だった場合、この三件が6月の費用を増やす金額はいくらですか。6月22日の仕訳も答えてください。
+
+**解答。** 当月費用は消耗品費の3,000円です。6月22日には、5月末から残っていた支払いの義務が減ります。借方「未払金」5,000円、貸方「普通預金」5,000円と記録します。支出は条件を変える前と同じ18,000円で、費用が生じた月だけが変わります。以降の月次例では電気代を6月分として集計します。
+
+<section class="guided-lesson" id="bb2-expenses-first-use-practice" aria-labelledby="bb2-expenses-first-use-practice-title">
+<h3 id="bb2-expenses-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-expenses-first-use-practice-prompt">今月払った13,000円のうち、9,000円の固定資産税は前月に費用として記録済みです。残りは今月買って使う消耗品代です。この二件で増える今月の費用は何円ですか。</p>
+<form data-guided-practice data-expected="4000" data-guided-hint="支払った日と、費用として記録した日を区別します。" aria-labelledby="bb2-expenses-first-use-practice-title" aria-describedby="bb2-expenses-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-expenses-first-use-practice-input">答え（円）</label>
+<input id="bb2-expenses-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>今月の費用は消耗品代4,000円です。前月に計上済みの税金9,000円を払うと、当月は未払固定資産税が減ります。</p>
+</details>
+</section>

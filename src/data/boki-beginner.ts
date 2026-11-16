@@ -17,11 +17,16 @@ import unit56 from './boki-beginner-unit56-questions.json';
 import mocks from './boki-beginner-mocks.json';
 import reviews from './boki-beginner-reviews.json';
 import reviewAdditions from './boki-beginner-review-additions.json';
+import readerPractice from './bb-reader-practice.json';
 import sources from '../../docs/boki-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
 export const beginnerVersion = 'bb-2026-v2';
-export const beginnerReviewed = '2026-11-14';
+export const beginnerReviewed = '2026-11-16';
+export const beginnerMockVersion = 'bb-2026-mock-v3';
+export const beginnerReaderReviewVersion = 'bb-2026-reader-review-v1';
+export const beginnerOpeningVersion = 'bb-2026-opening-v1';
+const beginnerNewLessons = readerPractice.newLessons as Record<string, Question[]>;
 export const beginnerGroups = [
   '財産・損益・複式簿記の原理', '帳簿・証ひょうと日々の売買',
   '代金の受払いと決済の時点', '貸借・一時処理・手形と電子記録',
@@ -33,7 +38,7 @@ export const beginnerLessonIds = [
   'bb2-sales-returns', 'bb2-trade-case', 'bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims',
   'bb2-loans', 'bb2-temporary', 'bb2-custody', 'bb2-bills',
   'bb2-assets', 'bb2-depreciation', 'bb2-capital', 'bb2-expenses',
-  'bb2-vat', 'bb2-trial-balance', 'bb2-monthly', 'bb2-integration',
+  'bb2-vat', 'bb2-trial-balance', 'bb2-monthly', 'bb2-integration', 'bb2-opening-balances',
 ];
 export const beginnerLegacyIds = ['bb-foundation', 'bb-journal', 'bb-transactions', 'bb-monthly'];
 export const beginnerSources = sources.sources;
@@ -65,9 +70,10 @@ const beginnerUnit2DepthReview = unit2Depth.review.map((question): Question => (
 }));
 const beginnerUnit2Bank = { ...unit2Sales, ...unit2Trade.lessons } as Record<string, Question[]>;
 export const beginnerLessonVersion = (id: string) =>
-  beginnerLaterLessons[id]?.length ? beginnerLaterVersion : beginnerUnit3Lessons[id]?.length ? beginnerUnit3Version : beginnerUnit2DepthLessons[id]?.length ? beginnerUnit2Version : beginnerUnit1Bank[id]?.length ? beginnerUnit1Version : beginnerTextbookBank[id]?.length ? beginnerTextbookVersion : beginnerVersion;
+  beginnerNewLessons[id]?.length ? beginnerOpeningVersion : beginnerLaterLessons[id]?.length ? beginnerLaterVersion : beginnerUnit3Lessons[id]?.length ? beginnerUnit3Version : beginnerUnit2DepthLessons[id]?.length ? beginnerUnit2Version : beginnerUnit1Bank[id]?.length ? beginnerUnit1Version : beginnerTextbookBank[id]?.length ? beginnerTextbookVersion : beginnerVersion;
 export const beginnerLessonQuestions = (id: string) => [
   ...(beginnerBank[id] ?? []),
+  ...(beginnerNewLessons[id] ?? []),
   ...(beginnerTextbookBank[id] ?? []),
   ...(beginnerUnit1Bank[id] ?? []),
   ...((unit1Depth.lessons as Record<string, Question[]>)[id] ?? []),
@@ -82,7 +88,8 @@ export const beginnerReviewBank = Object.fromEntries(Object.entries(reviews).map
     ...(key === 'unit-1' ? beginnerUnit1DepthReview : []),
     ...(key === 'unit-2' ? [...(unit2Trade.review as Question[]), ...beginnerUnit2DepthReview] : []),
     ...(key === 'unit-3' ? beginnerUnit3Review : []),
-    ...(laterUnits[key.slice(5)]?.review ?? [])],
+    ...(laterUnits[key.slice(5)]?.review ?? []),
+    ...((readerPractice.reviews as Record<string, Question[]>)[key] ?? [])],
 ])) as Record<string, Question[]>;
 export const beginnerUnitReviewCount = Object.entries(beginnerReviewBank)
   .filter(([key])=>key.startsWith('unit-')).reduce((sum,[,questions])=>sum+questions.length,0);
@@ -149,7 +156,7 @@ export function beginnerAssessments(
     result.push({ ...base,id:`boki-beginner-unit-${unit}-glossary`,title:`簿記初級・ユニット${unit} 用語確認`,kind:'glossary',unit,
       questions:termQuestions.filter((_,n)=>unitTerms.has(terms[n]!.term)),
       instructions:'本文の用語定義から作る確認問題です。同じ用語は重複を除き、各用語の説明を解説で比較できます。応用力はユニット確認で別に確かめます。' });
-    result.push({ ...base,id:`boki-beginner-unit-${unit}-review`,title:`簿記初級・${group} 総合確認`,kind:'review',unit, version: unit === 1 ? beginnerUnit1Version : unit === 2 ? beginnerUnit2Version : unit === 3 ? beginnerUnit3Version : laterUnits[unit] ? beginnerLaterVersion : beginnerVersion,
+    result.push({ ...base,id:`boki-beginner-unit-${unit}-review`,title:`簿記初級・${group} 総合確認`,kind:'review',unit, version: beginnerReaderReviewVersion,
       ...(unit === 1 && { materials: unit1Depth.materials }),
       ...(unit === 2 && { materials: [...unit2Trade.materials, ...unit2Depth.materials] }),
       ...(unit === 3 && { materials: unit3Depth.materials }),
@@ -162,7 +169,7 @@ export function beginnerAssessments(
   result.push({ ...base,id:'boki-beginner-review-all',title:'簿記初級 科目横断の総復習',kind:'review',
     questions:beginnerReviewBank.all ?? [],instructions:'新しい複合問題12問と、ユニット確認から再利用する12問の計24問です。再利用分は独立した新作として数えていません。模試とは別の問題です。' });
   for (const form of ['a','b'] as const) result.push({ ...base,id:`bb2-mock-${form}`,
-    title:`簿記初級 40分総合模試・第${form==='a'?1:2}回`,kind:'mock',minutes:40,
+    title:`簿記初級 40分総合模試・第${form==='a'?1:2}回`,kind:'mock',minutes:40,version:beginnerMockVersion,
     questions:mocks.forms[form] as Question[],materials:mocks.materials[form],
     instructions:'2026年度適用範囲・独自作成の模試です。紙と電卓を用意してください。第1群10問×3点、第2群10問×4点、第3群10問×3点の計100点です。第3群は共通の月初残高と取引資料から計算します。\n公式の40分・100点満点・合格基準70点と、公開サンプルの3大問30・40・30点を参考に構成しています。実試験に固定された小問数・各配点・部分点を確認したものではありません。各小問は独自の全か無か採点で、練習得点を表示します。70点を得ても本試験の合格を予測しません。資料量・難易度・所要時間は著者の設計で、受験者による試行・難易度校正は未実施です。\n時間ありでは開始後に閉じても期限は進みます。問題の解説は提出後に確認できます。第1回と第2回は異なる独自問題です。' });
   // Keep old lesson-check URLs and records available without counting them as current work.

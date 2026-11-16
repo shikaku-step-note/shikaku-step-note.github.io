@@ -1,8 +1,12 @@
 ---
-{"stableId":"bb2-sales","qualification":"boki-beginner","title":"三分法で仕入・売上・返品を記録する","description":"三分法の仕入・売上・繰越商品を区別し、現金・掛け・複合決済を仕訳します。仕入諸掛、販売時の発送費、返品前後の債権債務、記録を二重にしない考え方を練習します。","order":9,"minutes":112,"sample":false,"updated":"2026-11-14","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・商品の三分法、仕入返品・売上返品","subject":"basics","objectives":["三分法の各勘定の役割を理解して現金・掛売買を仕訳する","仕入諸掛と発送費を指定された負担条件から記録する","返品を元の取引の取消しとして処理し未決済残高を求める"],"prerequisite":"仕訳、現金と預金、売掛金と買掛金を確認してください。このレッスンでは消費税を考慮しない条件で練習します。","keywords":["三分法","仕入","売上","繰越商品","仕入諸掛","返品"],"glossary":[{"term":"三分法","definition":"商品売買を仕入、売上、繰越商品の三つの勘定で記録する方法"},{"term":"仕入","definition":"三分法で期中の商品購入を記録する勘定"},{"term":"売上","definition":"通常の商品販売による収益を記録する勘定"},{"term":"繰越商品","definition":"保有する商品の繰越額を記録する資産の勘定"},{"term":"仕入諸掛","definition":"商品の仕入れに伴い、運送費などとして追加で発生する費用"},{"term":"発送費","definition":"商品の販売に伴い当店が負担する発送等の費用を記録する勘定"},{"term":"仕入返品","definition":"仕入れた商品を返し、元の仕入取引を取り消すこと"},{"term":"売上返品","definition":"販売した商品が返され、元の売上取引を取り消すこと"}]}
+{"stableId":"bb2-sales","qualification":"boki-beginner","title":"三分法で仕入・売上・返品を記録する","description":"三分法の仕入・売上・繰越商品を区別し、現金・掛け・複合決済を仕訳します。仕入諸掛、販売時の発送費、返品前後の債権債務、記録を二重にしない考え方を練習します。","order":9,"minutes":117,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・商品の三分法、仕入返品・売上返品","subject":"basics","objectives":["三分法の各勘定の役割を理解して現金・掛売買を仕訳する","仕入諸掛と発送費を指定された負担条件から記録する","返品を元の取引の取消しとして処理し未決済残高を求める"],"prerequisite":"前の章で仕訳と現金・預金の違いを確かめてください。掛け、売掛金、買掛金は本文で扱います。練習では消費税を考慮しません。","keywords":["三分法","仕入","売上","繰越商品","仕入諸掛","返品"],"glossary":[{"term":"三分法","definition":"商品売買を仕入、売上、繰越商品の三つの勘定で記録する方法"},{"term":"仕入","definition":"三分法で期中の商品購入を記録する勘定"},{"term":"売上","definition":"通常の商品販売による収益を記録する勘定"},{"term":"繰越商品","definition":"保有する商品の繰越額を記録する資産の勘定"},{"term":"仕入諸掛","definition":"商品の仕入れに伴い、運送費などとして追加で発生する費用"},{"term":"発送費","definition":"商品の販売に伴い当店が負担する発送等の費用を記録する勘定"},{"term":"仕入返品","definition":"仕入れた商品を返し、元の仕入取引を取り消すこと"},{"term":"売上返品","definition":"販売した商品が返され、元の売上取引を取り消すこと"}],
+  "inlineGlossary": [{"id": "glossary-f723c1f87f", "term": "仕入諸掛"}, {"id": "glossary-7bd0dc29bb", "term": "仕入返品"}, {"id": "glossary-23153eb6ff", "term": "売上返品"}, {"id": "glossary-73246008a4", "term": "繰越商品"}, {"id": "glossary-05ff730a73", "term": "三分法"}]
+}
 ---
 
-三分法では、期中の商品購入を仕入、販売を売上で記録し、商品の繰越額には繰越商品という資産の勘定を使います。仕入れた日に代金を払う場合も、後日払う場合も、まず商品売買が成立した内容を記録します。支払いや回収を後から行うとき、仕入・売上を二回記録しないことが基本です。
+店が販売するために買う品物を商品と呼びます。商品を受け取るのと同時に払う取引もあれば、商品だけ先に受け取り、約束した日に代金を払う取引もあります。後者のように決済を後日にする取引が掛けです。商品を売った側がまだ受け取っていない代金は売掛金、仕入れた側がまだ払っていない代金は買掛金という勘定に記録します。ここでいう決済は、残っている代金を受け払って権利や義務を消すことです。
+
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-05ff730a73">三分法</a>では、商品を買った金額、売った金額、残って次の期間に持ち越す商品を、それぞれ仕入・売上・<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-73246008a4">繰越商品</a>の勘定で扱います。仕入か売上かは、品物がどちらへ動いたかで決まります。現金で払ったか掛けにしたかは、相手となる勘定を決める条件です。
 
 <span id="objective-1"></span>
 
@@ -41,7 +45,7 @@
 
 ## 運送料は、仕入れか販売か、誰の負担かを読む
 
-商品の仕入れに直接伴い、当店が負担する運送料などは、仕入諸掛として仕入に含める条件で扱います。商品代金と運送料を違う相手へ違う方法で払う場合でも、仕入の金額には当店負担の付随額を反映します。
+商品の仕入れに直接伴い、当店が負担する運送料などは、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f723c1f87f">仕入諸掛</a>として仕入に含める条件で扱います。商品代金と運送料を違う相手へ違う方法で払う場合でも、仕入の金額には当店負担の付随額を反映します。
 
 一方、販売した商品を得意先へ送るため当店が負担する送料は、発送費など問題の指定科目へ記録します。仕入時の送料と、販売時の送料を、どちらも「送料」という言葉だけで同じ科目へまとめないようにします。
 
@@ -79,11 +83,11 @@
 
 販売側の別例として、商品120,000円を掛けで売り、販売価格10,000円分が返品され、売掛金から差し引きました。その後70,000円を現金回収しました。返品は売上10,000／売掛金10,000、回収は現金70,000／売掛金70,000です。差引売上は110,000円、売掛金残高は40,000円です。
 
-売上返品10,000円を仕入の戻りとして記録すると、売上は過大のまま残ります。売買のどちら側の店として記録するかを読み、元の仕訳へ戻ることが必要です。返品と入金が同時に出ても、入金70,000円が売上を増やすわけではありません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-23153eb6ff">売上返品</a>10,000円を仕入の戻りとして記録すると、売上は過大のまま残ります。売買のどちら側の店として記録するかを読み、元の仕訳へ戻ることが必要です。返品と入金が同時に出ても、入金70,000円が売上を増やすわけではありません。
 
 ## 請求額から逆算して、返品と決済の漏れを見付ける
 
-月初の買掛金が26,000円、当月の掛仕入が64,000円、仕入返品が4,000円、月末買掛金が31,000円だったとします。当月に払った額は、26,000＋64,000−4,000−31,000＝55,000円です。まず返品後に支払うべき額86,000円を求め、残っている31,000円を引くと説明できます。
+月初の買掛金が26,000円、当月の掛仕入が64,000円、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-7bd0dc29bb">仕入返品</a>が4,000円、月末買掛金が31,000円だったとします。当月に払った額は、26,000＋64,000−4,000−31,000＝55,000円です。まず返品後に支払うべき額86,000円を求め、残っている31,000円を引くと説明できます。
 
 この逆算で返品を足すと、実際に支払う必要がなくなった部分をさらに増やしてしまいます。仕入返品は買掛金を減らす借方の記録だったことへ戻って考えます。月初残高を忘れると、前月から残っていた支払いを漏らすため、買掛金の貸方の増加と借方の減少を表にすると確認しやすくなります。
 
@@ -119,7 +123,7 @@
 | 返品の確認書 | −12,000 | −12,000 | 返品分の商品代を取り消す |
 | 振込明細 | 0 | −20,000 | 以前の支払義務を減らす |
 
-<figure><svg viewBox="0 0 344 184" width="344" height="184" role="img" aria-label="仕入勘定は64＋4−12＝56千円、買掛金は64−12−20＝32千円。運賃と支払いは片方ずつに影響する。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="8" y="10" width="328" height="60" rx="3" fill="#e4f3f0"/><text x="22" y="33" fill="#143750" font-weight="700">仕入勘定</text><text x="22" y="56" fill="#143750">商品64 ＋ 運賃4 − 返品12 ＝ 56</text><rect x="8" y="80" width="328" height="60" rx="3" fill="#e8eff7"/><text x="22" y="103" fill="#143750" font-weight="700">買掛金</text><text x="22" y="126" fill="#143750">商品64 − 返品12 − 支払20 ＝ 32</text><text x="10" y="172" fill="currentColor" font-size="12">単位：千円</text></g></svg><figcaption>同じ請求書を起点に、仕入勘定と買掛金を別々に追います。両方に影響する金額は商品代と返品です。</figcaption></figure>
+<figure id="bb2-sales-aid-1"><svg viewBox="0 0 344 184" width="344" height="184" role="img" aria-label="仕入勘定は64＋4−12＝56千円、買掛金は64−12−20＝32千円。運賃と支払いは片方ずつに影響する。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="8" y="10" width="328" height="60" rx="3" fill="#e4f3f0"/><text x="22" y="33" fill="#143750" font-weight="700">仕入勘定</text><text x="22" y="56" fill="#143750">商品64 ＋ 運賃4 − 返品12 ＝ 56</text><rect x="8" y="80" width="328" height="60" rx="3" fill="#e8eff7"/><text x="22" y="103" fill="#143750" font-weight="700">買掛金</text><text x="22" y="126" fill="#143750">商品64 − 返品12 − 支払20 ＝ 32</text><text x="10" y="172" fill="currentColor" font-size="12">単位：千円</text></g></svg><figcaption>同じ請求書を起点に、仕入勘定と買掛金を別々に追います。両方に影響する金額は商品代と返品です。</figcaption></figure>
 
 仕入勘定に残る額は64,000＋4,000−12,000＝56,000円です。買掛金は64,000−12,000−20,000＝32,000円です。差24,000円は、仕入にだけ含まれる運賃4,000円と、買掛金だけを減らす支払20,000円から説明できます。返品時の仕訳は借方が買掛金12,000円、貸方が仕入12,000円です。返金されない運賃まで返品の仕訳へ入れると、配送業者への現金払いと一致しません。
 
@@ -170,7 +174,7 @@
 
 まず納品書の37,000円を売上に使います。その場で受け取った12,000円を引くと、あとでもらう額は25,000円です。20日の振込は同じ販売分の回収なので、16,000円で売掛金を減らします。受取済み12,000＋16,000＝28,000円、未回収9,000円、合計37,000円になり、納品書の販売額に戻ります。売上を振込額だけで記録すると、9,000円の未回収分を帳簿から漏らしてしまいます。
 
-<figure><svg viewBox="0 0 338 114" width="338" height="114" style="display:block;max-width:100%;height:auto" role="img" aria-label="売上37,000円は販売日に入金12,000円、後日回収16,000円、未回収9,000円の合計"><g fill="currentColor" fill-opacity=".12" stroke="currentColor"><rect x="12" y="34" width="96" height="27"/><rect x="108" y="34" width="128" height="27" fill-opacity=".22"/><rect x="236" y="34" width="72" height="27" fill-opacity=".04"/></g><g fill="currentColor" font-size="12"><text x="12" y="21">売上37,000円</text><text x="22" y="51">12,000</text><text x="118" y="51">16,000</text><text x="244" y="51">9,000</text><text x="13" y="82">販売日に入金</text><text x="109" y="82">後日回収</text><text x="237" y="82">未回収</text><text x="13" y="103">単位：円</text></g></svg><figcaption>納品書の売上額を、受け取った額とあとで受け取る額に分けて検算します。</figcaption></figure>
+<figure id="bb2-sales-aid-2"><svg viewBox="0 0 338 114" width="338" height="114" style="display:block;max-width:100%;height:auto" role="img" aria-label="売上37,000円は販売日に入金12,000円、後日回収16,000円、未回収9,000円の合計"><g fill="currentColor" fill-opacity=".12" stroke="currentColor"><rect x="12" y="34" width="96" height="27"/><rect x="108" y="34" width="128" height="27" fill-opacity=".22"/><rect x="236" y="34" width="72" height="27" fill-opacity=".04"/></g><g fill="currentColor" font-size="12"><text x="12" y="21">売上37,000円</text><text x="22" y="51">12,000</text><text x="118" y="51">16,000</text><text x="244" y="51">9,000</text><text x="13" y="82">販売日に入金</text><text x="109" y="82">後日回収</text><text x="237" y="82">未回収</text><text x="13" y="103">単位：円</text></g></svg><figcaption>納品書の売上額を、受け取った額とあとで受け取る額に分けて検算します。</figcaption></figure>
 
 <span id="unit2-sales-guided-freight"></span>
 
@@ -189,6 +193,30 @@
 商品65,000円を受け取り、25,000円を普通預金で払い、残額を掛けとしました。当店負担の引取り運賃4,000円も当日に現金で支払っています。別の日に一部の商品を84,000円で掛け販売し、後日31,000円を普通預金で回収しました。返品はありません。この一連の仕訳と、仕入・売上・買掛金・売掛金の差引額を求めてください。
 
 <details><summary>仕訳、残高、別の式での検算を見る</summary><p>購入は借方 仕入69,000円、貸方 普通預金25,000円・現金4,000円・買掛金40,000円です。販売は借方 売掛金84,000円、貸方 売上84,000円。回収は借方 普通預金31,000円、貸方 売掛金31,000円です。仕入69,000円、売上84,000円、買掛金40,000円、売掛金53,000円です。支払い済み29,000円と未払い40,000円を足すと仕入69,000円、回収済み31,000円と未回収53,000円を足すと売上84,000円へ戻ります。</p></details>
+
+<span id="bb2-sales-first-use-worked"></span>
+
+## 納品書と受領記録から、商品代と掛代金を分ける
+
+納品書が商品24,000円、領収書がその場で払った6,000円を示しているとします。仕入は商品の全額24,000円です。支払いは二つに分かれ、現金が6,000円減り、買掛金が18,000円増えます。翌週に残りを払うと、買掛金と現金が18,000円減ります。翌週は新しい商品を受け取っていないので、仕入を追加しません。
+
+<section class="guided-lesson" id="bb2-sales-first-use-practice" aria-labelledby="bb2-sales-first-use-practice-title">
+<h3 id="bb2-sales-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-sales-first-use-practice-prompt">商品39,800円を受け取り、現金11,500円を支払い、残額は翌月払いにしました。増える買掛金は何円ですか。</p>
+<form data-guided-practice data-expected="28300" data-guided-hint="まず商品代の全額を書き、次に支払った分を引きます。" aria-labelledby="bb2-sales-first-use-practice-title" aria-describedby="bb2-sales-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-sales-first-use-practice-input">答え（円）</label>
+<input id="bb2-sales-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>39,800−11,500＝28,300円です。商品の仕入は39,800円全額。その場の支払額を引いた分だけ、まだ支払う義務が残ります。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

@@ -1,14 +1,18 @@
 ---
-{"stableId":"bb2-cash","qualification":"boki-beginner","title":"現金・小切手・預金を区別して記録する","description":"現金、他人振出小切手、当店振出小切手、普通預金、当座預金、定期預金を取引から区別します。預入れ・引出し・振込・小切手の決済を、一連の仕訳と残高で確かめます。","order":8,"minutes":95,"sample":false,"updated":"2026-11-14","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・現金、当座預金、その他の預貯金","subject":"basics","objectives":["現金と他人振出小切手を、預金や当店振出小切手と区別する","現金・普通預金・当座預金・定期預金の振替を仕訳する","複数の入出金から科目別残高を求め、二重計上を見付ける"],"prerequisite":"仕訳と伝票を確認してください。資産の増加は借方、減少は貸方です。紙の小切手は2026年度の現行範囲として扱います。","keywords":["現金","他人振出小切手","当店振出小切手","普通預金","当座預金","定期預金"],"glossary":[{"term":"現金","definition":"通貨や他人振出小切手などを記録する資産の勘定"},{"term":"普通預金","definition":"普通預金口座の入出金と残高を記録する資産の勘定"},{"term":"当座預金","definition":"当座預金口座への預入れや小切手振出し等による増減を記録する資産の勘定"},{"term":"定期預金","definition":"一定期間を定めて預け入れた預金を記録する資産の勘定"},{"term":"他人振出小切手","definition":"取引先など他者が振り出し、当店が受け取った小切手"},{"term":"当店振出小切手","definition":"当店が銀行に支払いを指図して振り出した小切手"},{"term":"預入れ","definition":"現金などを銀行口座へ入れ、預金として記録する取引"},{"term":"振込","definition":"銀行口座から別の口座へ資金を移す決済方法"}]}
+{"stableId":"bb2-cash","qualification":"boki-beginner","title":"現金・小切手・預金を区別して記録する","description":"現金、他人振出小切手、当店振出小切手、普通預金、当座預金、定期預金を取引から区別します。預入れ・引出し・振込・小切手の決済を、一連の仕訳と残高で確かめます。","order":8,"minutes":100,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・現金、当座預金、その他の預貯金","subject":"basics","objectives":["現金と他人振出小切手を、預金や当店振出小切手と区別する","現金・普通預金・当座預金・定期預金の振替を仕訳する","複数の入出金から科目別残高を求め、二重計上を見付ける"],"prerequisite":"仕訳と伝票を確認してください。資産の増加は借方、減少は貸方です。紙の小切手は2026年度の現行範囲として扱います。","keywords":["現金","他人振出小切手","当店振出小切手","普通預金","当座預金","定期預金"],"glossary":[{"term":"現金","definition":"通貨や他人振出小切手などを記録する資産の勘定"},{"term":"普通預金","definition":"普通預金口座の入出金と残高を記録する資産の勘定"},{"term":"当座預金","definition":"当座預金口座への預入れや小切手振出し等による増減を記録する資産の勘定"},{"term":"定期預金","definition":"一定期間を定めて預け入れた預金を記録する資産の勘定"},{"term":"他人振出小切手","definition":"取引先など他者が振り出し、当店が受け取った小切手"},{"term":"当店振出小切手","definition":"当店が銀行に支払いを指図して振り出した小切手"},{"term":"預入れ","definition":"現金などを銀行口座へ入れ、預金として記録する取引"},{"term":"振込","definition":"銀行口座から別の口座へ資金を移す決済方法"}],
+  "inlineGlossary": [{"id": "glossary-d2f3354cb6", "term": "他人振出小切手"}, {"id": "glossary-ecf87fae64", "term": "当店振出小切手"}, {"id": "glossary-c86d62a856", "term": "定期預金"}, {"id": "glossary-3653c3cbe6", "term": "当座預金"}, {"id": "glossary-c60e8be203", "term": "普通預金"}]
+}
 ---
 
-現金と預金はどちらも資産ですが、別の勘定に記録します。店の財布にある通貨、銀行口座へ入れた預金、受け取って保管中の他人振出小切手を分けて読むと、仕訳と伝票がつながります。現行の2026年度範囲では紙の小切手も扱うため、誰が振り出したかを必ず確認してください。
+現金勘定に記録するのは、店が手元に持つ紙幣・硬貨などです。お金を口座へ預けたときは、銀行に対して払い戻しを受けられる権利に形を変えるので、預金の勘定に記録します。どちらも店が持つ資産ですが、現金を預けただけでは売上も利益も増えません。同じ金額が現金から<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-c60e8be203">普通預金</a>へ移っています。
+
+現行の試験範囲でいう小切手は、振出人が銀行に対し、示した金額の支払いを指図する書類です。取引先が振り出した小切手を受け取り、まだ預けていなければ現金として扱います。一方、店が自分の口座から払うため小切手を振り出した場合、減るのは<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-3653c3cbe6">当座預金</a>です。小切手という名前だけで科目を決めず、誰の口座から払うかを先に確かめます。
 
 <span id="objective-1"></span>
 
 ## 現金として記録するものを確かめる
 
-現金勘定には、紙幣や硬貨などの通貨に加え、受け取った他人振出小切手などを記録します。たとえば得意先が振り出した小切手で売掛金を回収し、それを店で保管している場合、借方現金、貸方売掛金です。小切手を受け取る時点で当店の当座預金が増えるわけではありません。
+現金勘定には、紙幣や硬貨などの通貨に加え、受け取った<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d2f3354cb6">他人振出小切手</a>などを記録します。たとえば得意先が振り出した小切手で売掛金を回収し、それを店で保管している場合、借方現金、貸方売掛金です。小切手を受け取る時点で当店の当座預金が増えるわけではありません。
 
 当店が小切手を振り出して支払う場合は、当座預金が減少します。取引先へ渡す小切手に現金という勘定を使わない点が、他人振出小切手の受取りと異なります。問題で「同店振出」「当店振出」といった表現が出たら、誰の小切手かを読み直してください。
 
@@ -35,7 +39,7 @@
 
 ## 預金の種類と振替の向きを区別する
 
-普通預金、当座預金、定期預金は、いずれも資産です。銀行という相手が共通でも、口座の種類を同じ勘定へまとめてしまうと、どこにいくらあるか分からなくなります。問題に示された口座名をそのまま確かめて使います。
+普通預金、当座預金、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-c86d62a856">定期預金</a>は、いずれも資産です。銀行という相手が共通でも、口座の種類を同じ勘定へまとめてしまうと、どこにいくらあるか分からなくなります。問題に示された口座名をそのまま確かめて使います。
 
 現金を普通預金へ預け入れれば、借方普通預金、貸方現金です。普通預金から現金を引き出せば、その逆になります。普通預金から定期預金へ移す場合は、借方定期預金、貸方普通預金です。資産同士の入替えなので、この振替だけで収益や費用は発生しません。
 
@@ -71,7 +75,7 @@
 
 ### 例題3：小切手と振込を含む残高を照合する
 
-月初現金は60,000円、当座預金は160,000円、普通預金は90,000円です。当月の取引は次の五つだけです。①他人振出小切手20,000円で売掛金を回収し手元保管、②当店振出小切手45,000円で買掛金を支払、③現金30,000円を普通預金へ預入れ、④普通預金から通信費6,000円を支払、⑤手元の①の小切手20,000円を当座預金へ預入れました。
+月初現金は60,000円、当座預金は160,000円、普通預金は90,000円です。当月の取引は次の五つだけです。①他人振出小切手20,000円で売掛金を回収し手元保管、②<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ecf87fae64">当店振出小切手</a>45,000円で買掛金を支払、③現金30,000円を普通預金へ預入れ、④普通預金から通信費6,000円を支払、⑤手元の①の小切手20,000円を当座預金へ預入れました。
 
 現金は60,000＋20,000−30,000−20,000＝30,000円です。当座預金は160,000−45,000＋20,000＝135,000円、普通預金は90,000＋30,000−6,000＝114,000円です。三科目の合計は279,000円となります。
 
@@ -120,7 +124,7 @@
 | 8日：支払い | 70,000 | 82,000 | 40,000 | 192,000 |
 | 11日：引出し | 80,000 | 82,000 | 30,000 | 192,000 |
 
-<figure><svg viewBox="0 0 344 175" width="344" height="175" role="img" aria-label="他人振出小切手は受取時に現金、預入れ時に現金を当座預金へ移す。当店振出小切手で支払うと当座預金が減る。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="10" y="6" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="23" fill="#143750" font-weight="700">4日　他人振出小切手を受け取る</text><text x="22" y="40" fill="#143750" font-size="12">売掛金22,000円が現金へ</text><path d="M172 49v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="69" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="86" fill="#143750" font-weight="700">6日　受け取った小切手を預ける</text><text x="22" y="103" fill="#143750" font-size="12">現金22,000円が当座預金へ</text><path d="M172 112v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="132" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="149" fill="#143750" font-weight="700">8日　当店振出小切手で支払う</text><text x="22" y="166" fill="#143750" font-size="12">当座預金30,000円で買掛金を決済</text></g></svg><figcaption>同じ小切手の受取りと預入れを二度の売掛金回収として数えると、金額が重複します。22,000円が移る経路をたどります。</figcaption></figure>
+<figure id="bb2-cash-aid-1"><svg viewBox="0 0 344 175" width="344" height="175" role="img" aria-label="他人振出小切手は受取時に現金、預入れ時に現金を当座預金へ移す。当店振出小切手で支払うと当座預金が減る。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="10" y="6" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="23" fill="#143750" font-weight="700">4日　他人振出小切手を受け取る</text><text x="22" y="40" fill="#143750" font-size="12">売掛金22,000円が現金へ</text><path d="M172 49v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="69" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="86" fill="#143750" font-weight="700">6日　受け取った小切手を預ける</text><text x="22" y="103" fill="#143750" font-size="12">現金22,000円が当座預金へ</text><path d="M172 112v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="132" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="149" fill="#143750" font-weight="700">8日　当店振出小切手で支払う</text><text x="22" y="166" fill="#143750" font-size="12">当座預金30,000円で買掛金を決済</text></g></svg><figcaption>同じ小切手の受取りと預入れを二度の売掛金回収として数えると、金額が重複します。22,000円が移る経路をたどります。</figcaption></figure>
 
 4日の借方は現金22,000円、貸方は売掛金22,000円です。6日は借方が当座預金、貸方が現金で、売掛金は動きません。8日の借方は買掛金30,000円、貸方は当座預金30,000円です。11日は現金が増える分だけ普通預金が減ります。合計は200,000＋回収22,000−支払30,000＝192,000円と、口座別の計算を使わずに照合できます。
 
@@ -145,7 +149,7 @@
 | 月末 | 定期預金20,000 | 普通預金20,000 | 同じ店の口座間で資金を移動 |
 | 翌月2日 | 普通預金18,000 | 現金18,000 | 手元の小切手を銀行口座へ移動 |
 
-<figure><svg viewBox="0 0 342 118" width="342" height="118" role="img" aria-label="回収した小切手18,000円は29日から当月末まで現金勘定にあり、翌月2日に普通預金へ移る。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="5" y="6" width="332" height="36" rx="4"/><path d="M171 43v20m-5-5 5 5 5-5"/><rect x="5" y="65" width="332" height="44" rx="4"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="171" y="29">当月末：小切手18,000円は現金に含む</text><text x="171" y="85">翌月2日：普通預金へ18,000円</text><text x="171" y="103">その分を現金から減らす</text></g></svg><figcaption>月末で帳簿を区切ります。当月と翌月を合計した結果が同じでも、各月の科目別残高は違います。</figcaption></figure>
+<figure id="bb2-cash-aid-2"><svg viewBox="0 0 342 118" width="342" height="118" role="img" aria-label="回収した小切手18,000円は29日から当月末まで現金勘定にあり、翌月2日に普通預金へ移る。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="5" y="6" width="332" height="36" rx="4"/><path d="M171 43v20m-5-5 5 5 5-5"/><rect x="5" y="65" width="332" height="44" rx="4"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="171" y="29">当月末：小切手18,000円は現金に含む</text><text x="171" y="85">翌月2日：普通預金へ18,000円</text><text x="171" y="103">その分を現金から減らす</text></g></svg><figcaption>月末で帳簿を区切ります。当月と翌月を合計した結果が同じでも、各月の科目別残高は違います。</figcaption></figure>
 
 当月末の現金は46,000円、普通預金は50,000円、当座預金は36,000円、定期預金は20,000円です。合計は152,000円。月初合計146,000円から、店の外との受払いで18,000円増え、12,000円減りました。口座間の振替20,000円は資金の置き場を変えるだけです。
 
@@ -156,6 +160,30 @@
 月初の現金19,000円、普通預金42,000円。27日に他人振出小切手9,000円を売掛金の回収で受け取り、30日に普通預金へ預けました。記録係が30日の預入れを翌月に記録した場合、当月末の正しい残高と帳簿の残高はどう違うでしょうか。
 
 <details><summary>現金と預金を別々に照合する</summary><p>正しくは現金19,000＋9,000−9,000＝19,000円、普通預金42,000＋9,000＝51,000円です。誤った当月帳簿は現金28,000円、普通預金42,000円。どちらも合計70,000円です。30日付の預入れ資料を確認し、当月に普通預金9,000／現金9,000を記録します。翌月に記録した同じ預入れを確認し、二重計上を防ぎます。</p></details>
+
+<span id="bb2-cash-first-use-worked"></span>
+
+## 現金を預ける日は、もう一度受け取った日ではない
+
+掛代金8,400円を取引先の振出小切手で回収した日には、現金が8,400円増え、売掛金が同額減ります。翌日にその小切手を普通預金に預け入れたら、普通預金が増え、現金が減ります。初日で売掛金はなくなっているので、翌日にもう一度減らすと回収額が二重になります。月末が初日と翌日の間なら、まだ普通預金には入っていません。
+
+<section class="guided-lesson" id="bb2-cash-first-use-practice" aria-labelledby="bb2-cash-first-use-practice-title">
+<h3 id="bb2-cash-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-cash-first-use-practice-prompt">手元現金が19,000円ある店が、取引先の小切手7,800円を受け取りました。手元の紙幣・硬貨から5,000円を普通預金へ預け、小切手は保管しています。現金残高は何円ですか。</p>
+<form data-guided-practice data-expected="21800" data-guided-hint="どの金額を預け、どの金額がまだ手元にあるか確かめます。" aria-labelledby="bb2-cash-first-use-practice-title" aria-describedby="bb2-cash-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-cash-first-use-practice-input">答え（円）</label>
+<input id="bb2-cash-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>19,000＋7,800−5,000＝21,800円です。受け取った小切手は現金に含まれ、口座へ移した5,000円は現金残高から外します。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

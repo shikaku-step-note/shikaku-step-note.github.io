@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-capital","qualification":"boki-beginner","title":"追加元入・引出と事業主の所得税を資本金で記録する",
   "description":"事業と事業主個人を分けて、追加元入、生活費の引出、所得税の支払いを処理します。資本金の増減と当月利益を混同せず、月次残高から元入額を逆算する練習をします。",
-  "order": 22,"minutes":80,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-12",
+  "order": 22,"minutes":85,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
   "objectives":["追加元入と事業の収益を区別して仕訳する","引出と事業主個人の所得税を資本金の減少として処理する","元入・引出の資料から資本金の残高と追加元入額を計算する"],
   "prerequisite":"資産・負債・純資産と、収益・費用の違い、資本金の貸方増加を復習してください。",
   "keywords":["資本金","追加元入","引出","所得税","純資産","事業と個人の区別"],
@@ -14,13 +14,16 @@
     {"term":"純資産","definition":"資産総額から負債総額を引いた差額。資本金や事業活動による損益との関係を確認して読む。"},
     {"term":"元入額と収益の違い","definition":"元入は事業主から事業への拠出で、収益は事業活動による成果を表すため、同じ入金でも区別する。"},
     {"term":"資本金の月次増減","definition":"この課の条件で、資本金の当月の動きとして追加元入から個人目的の引出を差し引いた額。月末残高は月初資本金にこの増減額を加えて求める"}
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-98e0e7f9f5", "term": "事業主個人の所得税"}, {"id": "glossary-f0061d92a4", "term": "追加元入"}, {"id": "glossary-62c156bd6b", "term": "純資産"}, {"id": "glossary-0c3e7528a0", "term": "資本金"}, {"id": "glossary-b1d59f7b93", "term": "引出"}]
 }
 ---
 
-**資本金**は、この章の個人事業の設例で、事業主が事業に投じた元手を記録する勘定です。事業主が私費を事業に入れると、事業の資産と資本金が増えます。これを追加元入れと呼びます。事業のお金を家計のために持ち出せば、事業の資産と資本金が減ります。事業の利益を求める際には、こうした事業主との資金のやり取りを分けます。
+個人で商売を始めるとき、店主が自分のお金を事業に入れることがあります。このお金は、商品を売ったり、仕事を引き受けたりして得た代金とは出どころが違います。簿記初級で扱う個人事業の設例では、このように事業主が入れた元手を「<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-0c3e7528a0">資本金</a>」で記録します。開業した後で元手を追加するのが**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f0061d92a4">追加元入れ</a>**です。店主が事業用のお金を私用のために持ち出すことを**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-b1d59f7b93">引出し</a>**といい、ここでは資本金を減らして記録します。
 
-同じ預金の入金でも、商品を売った対価なら収益、事業主からの元入れなら資本金、銀行から借りた資金なら負債です。入金の相手だけでは決めず、何のために入ったのかを明細や問題文で確かめます。2026年度の初級範囲に沿い、個人企業の追加元入れと引出しを扱います。
+入出金を見ただけでは、どの科目を使うかは決められません。店主が資金を追加すれば資本金が増え、販売して代金を受け取れば売上や売掛金の回収に関わり、銀行から借りれば返済義務が増えます。お金の出どころと、何のために受け渡したかを読んでから、事業の利益に含めるかを判断します。
+
+ここでは、現行の2026年度範囲に沿って個人企業の追加元入れと引出しを扱います。
 
 <span id="unit5-capital-method"></span>
 
@@ -30,13 +33,13 @@
 
 事業用口座から支払った費用を見分けるときは、誰の負担かを読みます。個人の所得税や生活費を事業の資金から払えば、事業主の引出しです。事業のための家賃や従業員の給料なら事業の費用です。どちらも預金は減りますが、資本金と当月損益のどちらに影響するかが異なります。
 
-<figure><svg viewBox="0 0 340 151" width="340" height="151" role="img" aria-label="月初の資本金。＋ 追加元入れ　− 引出し。月末の資本金（利益振替前）。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none"><rect x="5" y="5" width="330" height="33" rx="5"/><rect x="5" y="58" width="330" height="33" rx="5"/><rect x="5" y="111" width="330" height="33" rx="5"/><path d="M170 39v16m-4-5 4 5 4-5m-4 42v16m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="170" y="26">月初の資本金</text><text x="170" y="79">＋ 追加元入れ　− 引出し</text><text x="170" y="132">月末の資本金（利益振替前）</text></g></svg><figcaption>月末と月初の差は純増減です。追加元入額を逆算するときは、その差に引出額を足し戻します。</figcaption></figure>
+<figure id="bb2-capital-aid-1"><svg viewBox="0 0 340 151" width="340" height="151" role="img" aria-label="月初の資本金。＋ 追加元入れ　− 引出し。月末の資本金（利益振替前）。" style="display:block;width:100%;max-width:34rem;height:auto"><g stroke="currentColor" fill="none"><rect x="5" y="5" width="330" height="33" rx="5"/><rect x="5" y="58" width="330" height="33" rx="5"/><rect x="5" y="111" width="330" height="33" rx="5"/><path d="M170 39v16m-4-5 4 5 4-5m-4 42v16m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="170" y="26">月初の資本金</text><text x="170" y="79">＋ 追加元入れ　− 引出し</text><text x="170" y="132">月末の資本金（利益振替前）</text></g></svg><figcaption>月末と月初の差は純増減です。追加元入額を逆算するときは、その差に引出額を足し戻します。</figcaption></figure>
 
 <span id="objective-1"></span>
 
 ## 事業主からの追加元入は、資本金を増やす
 
-事業主が個人の現金を事業へ入れた場合、事業から見ると現金が増え、純資産である資本金が増えます。資産の増加は借方、純資産の増加は貸方なので、借方「現金」、貸方「資本金」です。資金が普通預金に入金された場合は、借方を普通預金とします。
+事業主が個人の現金を事業へ入れた場合、事業から見ると現金が増え、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-62c156bd6b">純資産</a>である資本金が増えます。資産の増加は借方、純資産の増加は貸方なので、借方「現金」、貸方「資本金」です。資金が普通預金に入金された場合は、借方を普通預金とします。
 
 売上との区別には、何に対する入金かを使います。顧客へ商品を販売した対価なら売上、事業主による元手の拠出なら資本金です。売掛金の回収なら、以前記録した債権の減少です。入金という共通点だけでまとめず、取引の原因を先に判断します。
 
@@ -67,7 +70,7 @@
 
 店で働く従業員への給料は事業の費用です。一方、事業主が自分の生活費として取り出した額を、従業員と同じ給料勘定で処理することはできません。問題に「事業主個人の」「家計の」「生活費として」とあれば、支出目的の判断に使います。
 
-事業主個人の所得税を事業用の預金から支払う場合も、事業の租税公課にはしません。この課では資本金の減少です。これに対し、事業用の土地・建物に係る固定資産税などは、事業の租税公課として扱う設例があります。「税金だからすべて同じ科目」とまとめないことが大切です。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-98e0e7f9f5">事業主個人の所得税</a>を事業用の預金から支払う場合も、事業の租税公課にはしません。この課では資本金の減少です。これに対し、事業用の土地・建物に係る固定資産税などは、事業の租税公課として扱う設例があります。「税金だからすべて同じ科目」とまとめないことが大切です。
 
 <span id="worked-2"></span>
 
@@ -146,7 +149,7 @@
 
 ## 入出金明細を、元手・売上・費用に分ける
 
-<figure><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="追加元入 ＋70,000円、個人支払 −22,000円、資本金の増加 ＋48,000円" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">追加元入 ＋70,000円</text><text x="175" y="75">個人支払 −22,000円</text><text x="175" y="121">資本金の増加 ＋48,000円</text></g></svg><figcaption>追加元入 ＋70,000円 → 個人支払 −22,000円 → 資本金の増加 ＋48,000円</figcaption></figure>
+<figure id="bb2-capital-aid-2"><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="追加元入 ＋70,000円、個人支払 −22,000円、資本金の増加 ＋48,000円" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">追加元入 ＋70,000円</text><text x="175" y="75">個人支払 −22,000円</text><text x="175" y="121">資本金の増加 ＋48,000円</text></g></svg><figcaption>追加元入 ＋70,000円 → 個人支払 −22,000円 → 資本金の増加 ＋48,000円</figcaption></figure>
 
 個人商店の月初資本金は420,000円です。当月は事業主から70,000円の追加元入、生活費13,000円の引出、事業口座から個人の所得税9,000円の支払いがありました。同じ口座に商品売上56,000円が入り、事業用の通信費8,000円を支払いました。いずれも普通預金でやり取りし、税抜・税込の区別は考えない設例です。
 
@@ -186,3 +189,38 @@
 ### 公式資料と適用範囲
 
 [日本商工会議所「簿記初級 出題範囲・内容」](https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf)の純資産・税金・使用勘定科目を2026年10月28日に確認しました。追加元入・引出を資本金で処理する初級の独自設例であり、所得税の申告方法や個別の税務判断を案内する教材ではありません。
+
+<span id="monthly-thread-capital"></span>
+
+## 月次まで追う例　元手の変化と利益を分ける
+
+みずき修理店の6月初めの資本金は208,000円です。6月3日に店主が手持ちの資金から6,000円を事業の普通預金口座へ入れ、6月4日に店の金庫から家計のために4,000円を持ち出しました。
+
+| 日 | 起きたこと | 借方 | 貸方 |
+| --- | --- | --- | --- |
+| 6月3日 | 事業主が事業に元手を加えた | 普通預金 6,000円 | 資本金 6,000円 |
+| 6月4日 | 事業用の現金を家計へ移した | 資本金 4,000円 | 現金 4,000円 |
+
+資本金の6月末残高は208,000＋6,000−4,000＝210,000円です。6,000円の入金は、店が商品を販売した代金ではありません。4,000円の出金も、店が仕事のために負担した費用ではありません。そのため、売上と費用の比較から求める6月の利益には、どちらも入りません。入出金後の財産は変わるので、純資産の増減を確かめるときには、この2,000円の元手の純増を利益と分けて考えます。
+
+**自分で確かめる。** 6月の末に「資本金」の残高が215,000円だったとします。家計への引出しが4,000円で、それ以外の資本金の動きが元入れだけなら、実際の追加元入れは何円ですか。
+
+**解答。** 215,000−208,000＝7,000円は、元入れから引出しを差し引いた後の増加額です。引き出した4,000円を戻して、追加元入れは7,000＋4,000＝11,000円と求めます。208,000＋11,000−4,000＝215,000円になることを確かめます。以降の月次例では元の条件の6,000円を使います。
+
+<section class="guided-lesson" id="bb2-capital-first-use-practice" aria-labelledby="bb2-capital-first-use-practice-title">
+<h3 id="bb2-capital-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-capital-first-use-practice-prompt">月初の資本金は160,000円、月末は168,500円でした。当月に私用で4,200円を引き出し、それ以外は追加元入だけです。追加元入はいくらですか。</p>
+<form data-guided-practice data-expected="12700" data-guided-hint="月末と月初の差は、元入と引出しを両方反映した純増です。" aria-labelledby="bb2-capital-first-use-practice-title" aria-describedby="bb2-capital-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-capital-first-use-practice-input">答え（円）</label>
+<input id="bb2-capital-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>資本金は8,500円増えました。途中の引出し4,200円を戻すと、追加で入れた金額は12,700円です。</p>
+</details>
+</section>

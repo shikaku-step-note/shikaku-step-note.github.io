@@ -5,9 +5,9 @@
   "title": "受取手形・支払手形と電子記録債権・債務",
   "description": "受取手形・支払手形と電子記録債権・債務を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
   "order": 19,
-  "minutes": 86,
+  "minutes": 91,
   "sample": false,
-  "updated": "2026-11-14",
+  "updated":"2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -58,12 +58,14 @@
       "term": "債権の振替",
       "definition": "同じ受取権利について決済方法などが変わったとき、旧勘定を減らし新勘定へ移す記録。"
     }
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-71e4fe279e", "term": "電子記録債務"}, {"id": "glossary-4ff16752df", "term": "電子記録債権"}, {"id": "glossary-f5484d43aa", "term": "受取手形"}, {"id": "glossary-060b68b58f", "term": "支払手形"}, {"id": "glossary-de48f11a6d", "term": "振出し"}]
 }
 ---
 
+約束手形は、一定の期日に一定の金額を支払う約束を書面にしたものです。払う側が手形を作って相手に渡すことを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-de48f11a6d">振出し</a>といいます。紙を受け取った側には期日に代金を受け取る権利が生じるので、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f5484d43aa">受取手形</a>は資産です。振り出した側には支払う義務が残り、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-060b68b58f">支払手形</a>という負債に記録します。店の視点が変わると、同じ約束でも記録する勘定が変わります。
 
-**受取手形**は手形を受け取った側の資産、**支払手形**は振り出した側の負債です。電子記録に基づく権利は電子記録債権、義務は電子記録債務として区別します。売掛金や買掛金がこの形に切り替わる日と、実際に預金が動く日を分けて記録します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-4ff16752df">電子記録債権</a>・債務では、支払いの権利や義務を紙ではなく電子記録で管理します。授業の設例で売掛金の一部を電子記録債権へ切り替えたら、元の売掛金をその分だけ減らします。まだ代金が預金口座へ入っていないため、資産の内容が変わった段階です。紙の手形を扱う設例は2027年3月31日までの現行範囲です。
 
 現行の簿記初級公式範囲には、手形の振出し・受入れ・支払いと電子記録債権・債務が含まれています。このページは2027年3月31日までの適用範囲を対象とし、将来の改定を現行範囲へ先取りしません。手形の割引・裏書・不渡り、電子記録債権の譲渡や特別な保証処理は扱いません。消費税、利息、手数料も考えないものとします。
 
@@ -112,7 +114,7 @@
 
 ### 電子記録でも資産・負債の入替えを考える
 
-電子記録債権は資産、電子記録債務は負債です。既存の売掛金を電子記録債権へ切り替えたことが確認できた場合は、電子記録債権／売掛金です。買掛金を電子記録債務へ切り替える場合は、買掛金／電子記録債務です。
+電子記録債権は資産、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-71e4fe279e">電子記録債務</a>は負債です。既存の売掛金を電子記録債権へ切り替えたことが確認できた場合は、電子記録債権／売掛金です。買掛金を電子記録債務へ切り替える場合は、買掛金／電子記録債務です。
 
 単に「電子記録を請求した」と書かれただけで、必ず権利・義務が発生済みとは限りません。この教材の仕訳問題では「発生記録が行われた」「切替えが成立した」と明示します。実務上の手続の詳細を推測せず、発生・振替・決済のどの事実が与えられているかを確認してください。
 
@@ -178,7 +180,7 @@
 
 得意先に商品120,000円を掛けで販売しました。その後、売掛金のうち70,000円について電子記録債権が発生し、20,000円は得意先振出しの約束手形で受け取りました。月末までに電子記録債権70,000円は普通預金に入金されましたが、手形の満期は翌月です。消費税は考えません。
 
-<figure><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="掛代金、権利の振替、入金の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">掛代金</text><text x="168" y="39">権利の振替</text><text x="285" y="39">入金</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>同じ権利を売掛金と電子記録債権の両方に残さないようにします。</figcaption></figure>
+<figure id="bb2-bills-aid-1"><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="掛代金、権利の振替、入金の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">掛代金</text><text x="168" y="39">権利の振替</text><text x="285" y="39">入金</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>同じ権利を売掛金と電子記録債権の両方に残さないようにします。</figcaption></figure>
 
 ### 証ひょうから仕訳へ
 
@@ -222,7 +224,7 @@
 
 切替時は借方 買掛金95,000円、貸方 支払手形40,000円と電子記録債務55,000円です。この時点の義務の合計は117,000円で変わりません。電子記録分の決済時は借方 電子記録債務55,000円、貸方 普通預金55,000円。残る買掛金22,000円と手形40,000円を足すと62,000円で、117,000円から支払済み55,000円を引いても同額です。
 
-<figure><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="買掛金117,000円、合計117,000円、合計62,000円。決済方法の切替では合計が変わらず、実際に支払うと未決済額が減ります。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">買掛金117,000円</text><text x="319" y="17" font-size="11" text-anchor="end">切替前</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">合計117,000円</text><text x="319" y="64" font-size="11" text-anchor="end">内訳だけ変わる</text><rect x="14" y="71" width="240.0" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">合計62,000円</text><text x="319" y="111" font-size="11" text-anchor="end">電子記録分55,000円を支払う</text><rect x="14" y="118" width="127.2" height="10" rx="2" fill-opacity="0.12" stroke="currentColor"/></g></svg><figcaption>決済方法の切替では合計が変わらず、実際に支払うと未決済額が減ります。</figcaption></figure>
+<figure id="bb2-bills-aid-2"><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="買掛金117,000円、合計117,000円、合計62,000円。決済方法の切替では合計が変わらず、実際に支払うと未決済額が減ります。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">買掛金117,000円</text><text x="319" y="17" font-size="11" text-anchor="end">切替前</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">合計117,000円</text><text x="319" y="64" font-size="11" text-anchor="end">内訳だけ変わる</text><rect x="14" y="71" width="240.0" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">合計62,000円</text><text x="319" y="111" font-size="11" text-anchor="end">電子記録分55,000円を支払う</text><rect x="14" y="118" width="127.2" height="10" rx="2" fill-opacity="0.12" stroke="currentColor"/></g></svg><figcaption>決済方法の切替では合計が変わらず、実際に支払うと未決済額が減ります。</figcaption></figure>
 
 ### 条件を読み直し、結果を予想する
 
@@ -235,6 +237,30 @@
 売掛金104,000円のうち、44,000円を先方振出しの手形で受け取り、37,000円を電子記録債権へ振り替えました。その後、手形の満期に44,000円が普通預金に入り、電子記録分は未決済です。切替時と満期時の仕訳、取引全体の未回収額を求めてください。
 
 <details><summary>仕訳と検算を確かめる</summary><p>切替時は借方 受取手形44,000円・電子記録債権37,000円、貸方 売掛金81,000円です。満期日は借方 普通預金44,000円、貸方 受取手形44,000円。売掛金104,000−81,000＝23,000円と電子記録債権37,000円が残り、未回収額は60,000円です。販売額104,000円から今回の入金44,000円を引く方法でも確かめられます。</p></details>
+
+<span id="bb2-bills-first-use-worked"></span>
+
+## 支払いの約束が変わった日と、資金が動く日を読む
+
+42,000円の売掛金のうち30,000円を電子記録債権へ切り替えました。切替日に売掛金は12,000円となり、電子記録債権が30,000円増えます。店がまだ受け取っていない代金の合計は42,000円のままです。翌月に電子記録債権の30,000円を普通預金で回収したら、電子記録債権が消えます。同じ回収で売掛金まで減らすと、権利を二度消してしまいます。
+
+<section class="guided-lesson" id="bb2-bills-first-use-practice" aria-labelledby="bb2-bills-first-use-practice-title">
+<h3 id="bb2-bills-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-bills-first-use-practice-prompt">売掛金53,000円のうち34,000円が電子記録債権に変わりました。後日、この電子記録債権34,000円の全額を入金で受け取りました。ほかに動きはありません。残る売掛金は何円ですか。</p>
+<form data-guided-practice data-expected="19000" data-guided-hint="どの勘定にある受取の権利を回収したか確かめます。" aria-labelledby="bb2-bills-first-use-practice-title" aria-describedby="bb2-bills-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-bills-first-use-practice-input">答え（円）</label>
+<input id="bb2-bills-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>切替日に53,000−34,000＝19,000円となります。後日の入金は電子記録債権を消す処理なので、売掛金19,000円には影響しません。</p>
+</details>
+</section>
 
 ## 参照した公式範囲
 

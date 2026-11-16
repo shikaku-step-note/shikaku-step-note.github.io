@@ -1,8 +1,12 @@
 ---
-{"stableId":"bb2-business","qualification":"boki-beginner","title":"店の財産を資産・負債・純資産に分ける","description":"現金、売掛金、商品、借入金を分類し、貸借対照表の等式を具体的な取引から確かめます。出資と借入れ、店と個人の財産を区別し、金額を逆算する練習まで進みます。","order":1,"minutes":95,"sample":false,"updated":"2026-11-14","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・簿記の基本原理","subject":"basics","objectives":["店の財産と返済義務を資産・負債・純資産に分類する","貸借対照表の等式から金額を求める","出資・借入れ・財産の入替えが等式へ与える影響を説明する"],"prerequisite":"四則計算を使います。簿記の前提知識は不要です。紙に左右二つの欄を作って進めてください。","keywords":["資産","負債","純資産","資本金","貸借対照表","会計主体"],"glossary":[{"term":"資産","definition":"現金や商品、代金を受け取る権利など、企業が持つ経済的な資源"},{"term":"負債","definition":"借入金や買掛金など、企業が将来支払う義務"},{"term":"純資産","definition":"資産の総額から負債の総額を差し引いた額"},{"term":"資本金","definition":"このコースの個人企業の例で、事業主の元入れや引出しを記録する純資産の勘定"},{"term":"貸借対照表","definition":"ある時点の資産、負債、純資産を示す表"},{"term":"売掛金","definition":"通常の商品販売で生じた、代金を後日受け取る権利"},{"term":"買掛金","definition":"通常の商品仕入で生じた、代金を後日支払う義務"}]}
+{"stableId":"bb2-business","qualification":"boki-beginner","title":"店の財産を資産・負債・純資産に分ける","description":"現金、売掛金、商品、借入金を分類し、貸借対照表の等式を具体的な取引から確かめます。出資と借入れ、店と個人の財産を区別し、金額を逆算する練習まで進みます。","order":1,"minutes":100,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・簿記の基本原理","subject":"basics","objectives":["店の財産と返済義務を資産・負債・純資産に分類する","貸借対照表の等式から金額を求める","出資・借入れ・財産の入替えが等式へ与える影響を説明する"],"prerequisite":"四則計算を使います。簿記の前提知識は不要です。紙に左右二つの欄を作って進めてください。","keywords":["資産","負債","純資産","資本金","貸借対照表","会計主体"],"glossary":[{"term":"資産","definition":"現金や商品、代金を受け取る権利など、企業が持つ経済的な資源"},{"term":"負債","definition":"借入金や買掛金など、企業が将来支払う義務"},{"term":"純資産","definition":"資産の総額から負債の総額を差し引いた額"},{"term":"資本金","definition":"このコースの個人企業の例で、事業主の元入れや引出しを記録する純資産の勘定"},{"term":"貸借対照表","definition":"ある時点の資産、負債、純資産を示す表"},{"term":"売掛金","definition":"通常の商品販売で生じた、代金を後日受け取る権利"},{"term":"買掛金","definition":"通常の商品仕入で生じた、代金を後日支払う義務"}],
+  "inlineGlossary": [{"id": "glossary-f85ba0dd90", "term": "貸借対照表"}, {"id": "glossary-da848a2092", "term": "売掛金"}, {"id": "glossary-62c156bd6b", "term": "純資産"}, {"id": "glossary-1a072ce5bc", "term": "買掛金"}, {"id": "glossary-0c3e7528a0", "term": "資本金"}]
+}
 ---
 
-貸借対照表は、ある時点で事業が持つ資産と、その資産をどのように調達したかを示す表です。現金に加え、商品代金を後で受け取る権利も資産に含まれます。これに対し、仕入代金を後で支払う義務は負債です。資産から負債を差し引くと、事業の持分にあたる純資産が求められます。集計に入るのは事業に属する財産と義務なので、店主個人の現金や借金は分けて考えます。
+事業に使う現金や商品は、お店が保有する財産です。商品を渡していて代金がまだ入っていないときも、店には後でお金を受け取る権利があります。簿記では、こうした財産と権利を**資産**と呼びます。一方、借りたお金や受け取った商品の代金を将来支払う義務が**負債**です。誰の財産や義務かが曖昧なときは、店と店主の家計のどちらに属するかを先に確かめます。
+
+資産がいくらあっても、将来支払うべき額が大きければ、返済後に手元に残る価値は小さくなります。資産の総額から負債の総額を差し引いた額を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-62c156bd6b">純資産</a>**といいます。ある日の資産を左側に、負債と純資産を右側にまとめた表が**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f85ba0dd90">貸借対照表</a>**です。右側の二つを足すと、もとの資産の総額に戻ります。
 
 ### 基礎の例：閉店時のメモを三つの欄へ移す
 
@@ -10,7 +14,7 @@
 
 紙幣18,000円は店が使える財産、未回収の7,000円は店が受け取る権利です。どちらも店の**資産**なので、合計25,000円を左側に書きます。仕入先への10,000円は、店が支払う義務である**負債**として右側に書きます。残る15,000円も右側に書きます。これが**純資産**です。家計用の5,000円を入れると、店の財産を数えるという前提から外れます。
 
-<figure><svg viewBox="0 0 338 149" width="338" height="149" role="img" aria-label="左側は現金1万8千円と受取る権利7千円で資産2万5千円。右側は負債1万円と純資産1万5千円。家計の現金は表の外。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="4" y="6" width="158" height="105" rx="5"/><rect x="176" y="6" width="158" height="105" rx="5"/><path d="M4 35h158m14 0h158"/></g><g fill="currentColor" font-size="13"><text x="14" y="25">左　資産 25,000円</text><text x="186" y="25">右　合計 25,000円</text><text x="14" y="57">現金 18,000円</text><text x="14" y="82">売掛金 7,000円</text><text x="186" y="57">負債 10,000円</text><text x="186" y="82">純資産 15,000円</text><text x="6" y="137">家計の現金 5,000円は表の外</text></g></svg><figcaption>未回収の7,000円を左側に、まだ支払っていない10,000円を右側に置きます。右側の純資産15,000円は、別の紙幣を足した額ではなく、差額です。</figcaption></figure>
+<figure id="bb2-business-aid-1"><svg viewBox="0 0 338 149" width="338" height="149" role="img" aria-label="左側は現金1万8千円と受取る権利7千円で資産2万5千円。右側は負債1万円と純資産1万5千円。家計の現金は表の外。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="4" y="6" width="158" height="105" rx="5"/><rect x="176" y="6" width="158" height="105" rx="5"/><path d="M4 35h158m14 0h158"/></g><g fill="currentColor" font-size="13"><text x="14" y="25">左　資産 25,000円</text><text x="186" y="25">右　合計 25,000円</text><text x="14" y="57">現金 18,000円</text><text x="14" y="82">売掛金 7,000円</text><text x="186" y="57">負債 10,000円</text><text x="186" y="82">純資産 15,000円</text><text x="6" y="137">家計の現金 5,000円は表の外</text></g></svg><figcaption>未回収の7,000円を左側に、まだ支払っていない10,000円を右側に置きます。右側の純資産15,000円は、別の紙幣を足した額ではなく、差額です。</figcaption></figure>
 
 <span id="objective-1"></span>
 
@@ -18,11 +22,11 @@
 
 個人が営む文具店でも、簿記の記録では店と事業主の家計を分けます。事業主が自宅で保管している生活費まで店の現金に含めると、営業で増えた財産と個人の財産を区別できなくなるためです。問題に「当店の現金」「店主の家計費」と書かれていたら、誰の立場で記録するかを確かめます。
 
-資産は、企業が持つ現金、預金、販売用の商品、業務に使う備品などです。形がある物だけに限りません。商品を渡し、代金を翌月もらう約束なら、店には代金を受け取る権利があります。この権利を売掛金と呼び、資産に分類します。銀行に預けた普通預金も、必要に応じて銀行から払い戻しを受ける権利なので資産です。
+資産は、企業が持つ現金、預金、販売用の商品、業務に使う備品などです。形がある物だけに限りません。商品を渡し、代金を翌月もらう約束なら、店には代金を受け取る権利があります。この権利を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-da848a2092">売掛金</a>と呼び、資産に分類します。銀行に預けた普通預金も、必要に応じて銀行から払い戻しを受ける権利なので資産です。
 
-負債は、企業が将来支払う義務です。銀行から借りた借入金のほか、商品を受け取り、代金を翌月支払う買掛金も含まれます。借入金と買掛金はどちらも負債ですが、前者は金銭の借入れ、後者は通常の商品仕入という発生原因が違います。この区別が、後の仕訳で勘定科目を選ぶ根拠になります。
+負債は、企業が将来支払う義務です。銀行から借りた借入金のほか、商品を受け取り、代金を翌月支払う<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-1a072ce5bc">買掛金</a>も含まれます。借入金と買掛金はどちらも負債ですが、前者は金銭の借入れ、後者は通常の商品仕入という発生原因が違います。この区別が、後の仕訳で勘定科目を選ぶ根拠になります。
 
-純資産は、資産から負債を引いた部分です。このコースの個人企業の例では、事業主が店へ入れた元手を資本金で記録します。資本金は現金の別名ではありません。事業主の元手が備品や商品に変わっても、財産を調達した関係は残ります。純資産の額と、手元に残る現金の額はそれぞれ計算してください。
+純資産は、資産から負債を引いた部分です。このコースの個人企業の例では、事業主が店へ入れた元手を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-0c3e7528a0">資本金</a>で記録します。資本金は現金の別名ではありません。事業主の元手が備品や商品に変わっても、財産を調達した関係は残ります。純資産の額と、手元に残る現金の額はそれぞれ計算してください。
 
 | 状況 | 店の記録での分類 | 判断の理由 |
 | --- | --- | --- |
@@ -127,7 +131,7 @@
 | 借入れ直後 | 200,000 | 0 | 200,000 | 50,000 | 150,000 |
 | 備品の購入後 | 165,000 | 35,000 | 200,000 | 50,000 | 150,000 |
 
-<figure><svg viewBox="0 0 344 146" width="344" height="146" role="img" aria-label="資産200千円と負債・純資産200千円の比較。資産は現金165と備品35、反対側は負債50と純資産150。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><g fill="currentColor"><text x="10" y="22" >資産：現金165 ＋ 備品35</text><text x="10" y="87" >負債50 ＋ 純資産150</text></g><rect x="10" y="34" width="264" height="22" rx="3" fill="#0f6373"/><rect x="274" y="34" width="56" height="22" rx="3" fill="#34628b"/><rect x="10" y="99" width="80" height="22" rx="3" fill="#34628b"/><rect x="90" y="99" width="240" height="22" rx="3" fill="#0f6373"/><text x="10" y="140" fill="currentColor" font-size="12">単位：千円</text></g></svg><figcaption>棒の全長は左右で同じです。備品を買った後も資産合計が減らないことを、現金と備品の内訳から確かめます。</figcaption></figure>
+<figure id="bb2-business-aid-2"><svg viewBox="0 0 344 146" width="344" height="146" role="img" aria-label="資産200千円と負債・純資産200千円の比較。資産は現金165と備品35、反対側は負債50と純資産150。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><g fill="currentColor"><text x="10" y="22" >資産：現金165 ＋ 備品35</text><text x="10" y="87" >負債50 ＋ 純資産150</text></g><rect x="10" y="34" width="264" height="22" rx="3" fill="#0f6373"/><rect x="274" y="34" width="56" height="22" rx="3" fill="#34628b"/><rect x="10" y="99" width="80" height="22" rx="3" fill="#34628b"/><rect x="90" y="99" width="240" height="22" rx="3" fill="#0f6373"/><text x="10" y="140" fill="currentColor" font-size="12">単位：千円</text></g></svg><figcaption>棒の全長は左右で同じです。備品を買った後も資産合計が減らないことを、現金と備品の内訳から確かめます。</figcaption></figure>
 
 元入れで増えた現金には返済義務がありません。借入れで増えた現金には同額の返済義務が付くので、純資産は増えません。備品購入では現金35,000円が備品に姿を変えます。店の財産の合計は200,000円のままです。自宅の生活費30,000円はこの店の計算から外します。
 
@@ -156,7 +160,7 @@
 
 朝日店は同じ預金120,000円を持ち、商品50,000円、売掛金30,000円も同じです。ただし、銀行の借入金がなく、買掛金40,000円だけが残っています。資産200,000円から負債40,000円を引くと、純資産は160,000円です。二店の資産が同じでも、返済義務の違いによって純資産が60,000円違います。
 
-<figure><svg viewBox="0 0 344 148" width="344" height="148" role="img" aria-label="二店とも資産20万円。青葉店は負債10万円と純資産10万円。朝日店は負債4万円と純資産16万円。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="currentColor" font-size="13"><text x="10" y="18">青葉店　負債10万円 ＋ 純資産10万円</text><text x="10" y="76">朝日店　負債4万円 ＋ 純資産16万円</text><text x="10" y="133">二つの棒の全長：それぞれ資産20万円</text></g><g><rect x="10" y="28" width="155" height="22" rx="3" fill="#34628b"/><rect x="165" y="28" width="155" height="22" rx="3" fill="#0f6373"/><rect x="10" y="86" width="62" height="22" rx="3" fill="#34628b"/><rect x="72" y="86" width="248" height="22" rx="3" fill="#0f6373"/></g><path d="M10 116h310m-310-4v8m310-8v8" stroke="currentColor" fill="none"/></svg><figcaption>棒の全長は同じです。青葉店と朝日店で負債と純資産の境目がどちらへ動くか、数値と照らし合わせます。</figcaption></figure>
+<figure id="bb2-business-aid-3"><svg viewBox="0 0 344 148" width="344" height="148" role="img" aria-label="二店とも資産20万円。青葉店は負債10万円と純資産10万円。朝日店は負債4万円と純資産16万円。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="currentColor" font-size="13"><text x="10" y="18">青葉店　負債10万円 ＋ 純資産10万円</text><text x="10" y="76">朝日店　負債4万円 ＋ 純資産16万円</text><text x="10" y="133">二つの棒の全長：それぞれ資産20万円</text></g><g><rect x="10" y="28" width="155" height="22" rx="3" fill="#34628b"/><rect x="165" y="28" width="155" height="22" rx="3" fill="#0f6373"/><rect x="10" y="86" width="62" height="22" rx="3" fill="#34628b"/><rect x="72" y="86" width="248" height="22" rx="3" fill="#0f6373"/></g><path d="M10 116h310m-310-4v8m310-8v8" stroke="currentColor" fill="none"/></svg><figcaption>棒の全長は同じです。青葉店と朝日店で負債と純資産の境目がどちらへ動くか、数値と照らし合わせます。</figcaption></figure>
 
 ### 条件が変わったら：預かったお金と、負債の返済
 
@@ -193,6 +197,44 @@
 </details>
 
 資料を読む順番は、①店に属するか、②受取る権利か支払う義務か、③問われた時点で残っているか、④左右の合計と元の資料を照合、です。純資産は計算で求めるので、分類の誤りがあるままでも左右の合計だけなら一致することがあります。
+
+<span id="unit1-business-two-snapshots"></span>
+
+## 月末の財産を、資産の中身と返済義務の両方から読む
+
+貸借対照表を読むときは、表が作られた日を先に確かめます。表の数字は、その日の記録を集めて作ったものです。同じ日の表でも、左側から読むと財産が現金・商品・権利などのどの形にあるかが分かり、右側から読むと、そのうちいくらを返済に充てる必要があるかが分かります。純資産は右側に書く金額なので、左側に並んだ財産に加えると、すでに数えた価値を重ねて数えることになります。
+
+### 例題：店主が私用の現金の一部を店へ移した
+
+月末の文具店には、現金28,000円、普通預金40,000円、商品47,000円、まだ受け取っていない販売代金25,000円があります。仕入先へは34,000円、銀行へは46,000円を今後支払います。店主の自宅に保管されている現金16,000円は、まだ店に入れていません。
+
+先に店の財産と権利を足すと、資産は28,000＋40,000＋47,000＋25,000＝140,000円です。支払義務は34,000＋46,000＝80,000円なので、純資産は60,000円になります。貸借対照表の右側は80,000＋60,000＝140,000円。自宅の現金は、この時点ではどちらの側にも入りません。
+
+店主が後日、自宅の現金16,000円を開業後の追加の元手として店へ渡すと、店の現金が16,000円増えます。返済義務は生じないため、負債は80,000円のままです。新しい資産156,000円から80,000円を引くと、純資産は76,000円です。元手が増えた影響を確かめるには、資産だけでなく負債が変わったかを確認します。
+
+### 自分で確かめる：同じ額の現金が別の理由で増えた
+
+最初の月末表に戻ります。店主が現金を渡す代わりに、銀行から16,000円を借りて現金を受け取りました。資産と負債、純資産はそれぞれいくらでしょうか。追加の元手の場合と同じ額になる項目を一つ挙げてください。
+
+<details><summary>解答と考え方</summary><p>資産は156,000円、負債は96,000円、純資産は60,000円です。現金の増加は同じなので、資産は追加の元手の場合と同じ156,000円になります。銀行から受け取った金額は後で返す義務を伴うため、右側で増えるのは負債です。96,000＋60,000＝156,000で、左右を確かめられます。</p></details>
+
+<section class="guided-lesson" id="bb2-business-first-use-practice" aria-labelledby="bb2-business-first-use-practice-title">
+<h3 id="bb2-business-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-business-first-use-practice-prompt">資産126,000円、負債51,000円の店が、すでに記録済みの借入元金6,000円を普通預金から返し、続いて店主から8,000円の追加の元手を現金で受け取りました。利息・手数料はありません。取引後の純資産は何円ですか。</p>
+<form data-guided-practice data-expected="83000" data-guided-hint="元金を返すと減るのは財産と返済義務の両方です。追加の元手は返済する必要があるかを確かめましょう。" aria-labelledby="bb2-business-first-use-practice-title" aria-describedby="bb2-business-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-business-first-use-practice-input">答え（円）</label>
+<input id="bb2-business-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>元金の返済で普通預金と借入金が同額減るため、純資産は変わりません。追加の元手8,000円で純資産が増え、126,000－51,000＋8,000＝83,000円になります。取引後の資産128,000円から負債45,000円を引いても同じ額です。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

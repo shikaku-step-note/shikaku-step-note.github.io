@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerUnit1Version, beginnerUnit2Version, beginnerUnit3Version, beginnerLaterVersion, beginnerWorkload } from '../src/data/boki-beginner';
+import { beginnerAssessments, beginnerBank, beginnerLessonIds, beginnerLegacyIds, beginnerVersion, beginnerUnit1Version, beginnerUnit2Version, beginnerUnit3Version, beginnerLaterVersion, beginnerMockVersion, beginnerReaderReviewVersion, beginnerOpeningVersion, beginnerWorkload } from '../src/data/boki-beginner';
 import { bokiAssessments } from '../src/data/bookkeeping';
 import { gradeAttempt, newAttempt, practicePoints, remainingSeconds, compatibleAttempt, assessmentMaterialIssues, isCorrect, type Question } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -27,12 +27,24 @@ test('all current scope is mapped to detailed teaching and independently assesse
   for(const row of rows){
     const id=row.data.stableId;
     assert.equal(row.data.objectives.length,3,id);
+    if (id==='bb2-opening-balances') {
+      const quiz=assessments.find(a=>a.id===id+'-check')!;
+      const review=assessments.find(a=>a.id==='boki-beginner-unit-6-review')!;
+      for(let i=0;i<3;i++){
+        assert.ok(row.body.includes('id="objective-'+(i+1)+'"'));
+        assert.ok(row.body.includes('id="worked-'+(i+1)+'"'));
+        assert.ok(quiz.questions.some(q=>q.objectives?.includes(i)));
+        assert.ok(review.questions.some(q=>q.lesson===id&&q.objectives?.includes(i)));
+      }
+      assert.equal(row.data.inlineGlossary.length,4);
+      continue;
+    }
     if (id==='bb2-foundations-case') {
-      assert.ok(row.body.includes('<figure>') && row.body.includes('別の店の資料で自分で解く'));
+      assert.ok(row.body.includes('<figure') && row.body.includes('別の店の資料で自分で解く'));
       continue;
     }
     if (id === 'bb2-sales-returns' || id === 'bb2-trade-case') {
-      assert.ok(row.body.includes('<figure>'), id);
+      assert.ok(row.body.includes('<figure'), id);
       const check = assessments.find(a => a.id === id + '-check')!;
       const review = assessments.find(a => a.id === 'boki-beginner-unit-2-review')!;
       for (let i = 0; i < row.data.objectives.length; i++) {
@@ -94,7 +106,8 @@ test('two complete independent mock forms retain 40-minute absolute deadlines an
   const seen=new Set<string>();
   for(const id of ['bb2-mock-a','bb2-mock-b']){
     const a=assessments.find(a=>a.id===id)!;
-    assert.equal(a.version,beginnerVersion);assert.equal(a.minutes,40);assert.equal(a.questions.length,30);
+    assert.equal(a.version,beginnerMockVersion);assert.equal(a.minutes,40);
+    assert.equal(compatibleAttempt(a,newAttempt({...a,version:beginnerVersion},'timed')),false);assert.equal(a.questions.length,30);
     assert.deepEqual(assessmentMaterialIssues(a),[]);
     for(const q of a.questions){assert.ok(!seen.has(q.prompt));assert.ok(!lessonPrompts.has(q.prompt));seen.add(q.prompt);assert.equal(q.input,undefined);}
     assert.deepEqual([...new Set(a.questions.map(q=>q.group))].map(group=>a.questions.filter(q=>q.group===group).reduce((s,q)=>s+(q.points??1),0)),[30,40,30]);
@@ -128,7 +141,26 @@ test('mock monthly answer vectors agree with recomputed double-entry ledgers and
       ?[balances['現金'],balances['普通預金'],balances['売掛金'],-balances['買掛金']!,capital,-balances['仮受消費税']!-balances['仮払消費税']!,balances['備品']!+balances['減価償却累計額']!,assets,liabilities,-profit]
       :[balances['売掛金'],-balances['電子記録債務']!,balances['現金'],-balances['固定資産売却益']!,balances['未収入金'],balances['普通預金'],assets,liabilities,-balances['仮受消費税']!-balances['仮払消費税']!,profit];
     const a=assessments.find(a=>a.id===`bb2-mock-${form}`)!;
-    a.questions.slice(20).forEach((q,i)=>assert.ok(q.options[q.answer]!.startsWith(Number(expected[i]).toLocaleString('en-US')+'円'),q.id));
+    const amount=(value:number)=>value.toLocaleString('en-US');
+    const groups=data.events as [string,Record<string,number>,Record<string,number>][];
+    const debit=(key:string)=>Math.max(data.opening[key as keyof typeof data.opening] ?? 0,0)+groups.reduce((s,[,dr])=>s+(dr[key]??0),0);
+    const credit=(key:string)=>Math.max(-(data.opening[key as keyof typeof data.opening] ?? 0),0)+groups.reduce((s,[,,cr])=>s+(cr[key]??0),0);
+    a.questions.slice(20).forEach((q,i)=>{
+      const option=q.options[q.answer]!;
+      if (form==='a' && i===0) {
+        assert.equal(option,[amount(balances['現金']!),amount(debit('現金')),amount(credit('現金')),'—'].join('｜'));
+      } else if (form==='a' && i===5) {
+        assert.equal(option,'未払固定資産税'+amount(-balances['未払固定資産税']!)+'円、消費税の差額'+amount(expected[i]!)+'円');
+      } else if (form==='b' && i===1) {
+        assert.equal(option,'買掛金 '+[debit('買掛金'),credit('買掛金'),-balances['買掛金']!].map(amount).join('・')+'／電子記録債務 '+amount(expected[i]!));
+      } else if (form==='b' && i===2) {
+        assert.equal(option,'月末'+amount(expected[i]!)+'円、'+amount(data.opening['現金']-balances['現金']!)+'円の減少');
+      } else if (form==='b' && i===9) {
+        assert.equal(option,'利益'+amount(profit)+'円。誤記すると利益が6,000円少なくなるが、試算表の左右の合計は一致する');
+      } else {
+        assert.ok(option.startsWith(amount(expected[i]!)+'円'),q.id);
+      }
+    });
   }
 });
 
@@ -182,13 +214,13 @@ test('reviewed glossary questions distinguish overlapping categories and monthly
   for(const q of terms){assert.equal(new Set(q.options).size,4,q.id);assert.ok(!q.prompt.includes('。。'),q.id);}
 });
 
-test('textbook practice is added to every chapter without changing the mock versions',()=>{
+test('textbook lesson practice retains its original assessment identities',()=>{
   const unique = new Set(Object.values(beginnerBank).flat().map(q=>q.id));
   const prompts = new Set(Object.values(beginnerBank).flat().map(q=>q.prompt));
   for(const id of beginnerLessonIds){
     const original = beginnerBank[id] ?? [];
     const definition = assessments.find(a=>a.id===id+'-check')!;
-    assert.equal(definition.version,beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : ['bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims'].includes(id) ? beginnerUnit3Version : beginnerLaterVersion,id);
+    assert.equal(definition.version,id==='bb2-opening-balances' ? beginnerOpeningVersion : beginnerLessonIds.indexOf(id)<5 ? beginnerUnit1Version : ['bb2-ledger', 'bb2-evidence', 'bb2-cash', 'bb2-sales', 'bb2-sales-returns', 'bb2-trade-case'].includes(id) ? beginnerUnit2Version : ['bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims'].includes(id) ? beginnerUnit3Version : beginnerLaterVersion,id);
     assert.deepEqual(definition.questions.slice(0,original.length),original,id);
     assert.ok(definition.questions.length>original.length,id);
     if(original.length) assert.equal(compatibleAttempt(definition,newAttempt({...definition,version:beginnerVersion,questions:original},'practice')),false,id);
@@ -218,7 +250,7 @@ test('textbook practice is added to every chapter without changing the mock vers
 
 test('Unit 1 shared repair-shop review checks cash, assets and profit independently and preserves former attempts',()=>{
   const review = assessments.find(a=>a.id==='boki-beginner-unit-1-review')!;
-  assert.equal(review.version,beginnerUnit1Version);
+  assert.equal(review.version,beginnerReaderReviewVersion);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
   const added = review.questions.filter(q=>q.id.startsWith('bb1-review-repair-'));
   assert.equal(added.length,6);
@@ -242,7 +274,7 @@ test('Unit 1 shared repair-shop review checks cash, assets and profit independen
 
 test('Unit 2 cutoff documents reconcile supplier and bank balances without double-counting next month',()=>{
   const review = assessments.find(a=>a.id==='boki-beginner-unit-2-review')!;
-  assert.equal(review.version,beginnerUnit2Version);
+  assert.equal(review.version,beginnerReaderReviewVersion);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
   const added = review.questions.filter(q=>q.id.startsWith('bb2-review-cutoff-'));
   assert.equal(added.length,6);
@@ -264,7 +296,7 @@ test('Unit 2 cutoff documents reconcile supplier and bank balances without doubl
 
 test('Unit 3 shared settlement separates advances, trade balances, card fees and equipment obligations',()=>{
   const review=assessments.find(a=>a.id==='boki-beginner-unit-3-review')!;
-  assert.equal(review.version,beginnerUnit3Version);
+  assert.equal(review.version,beginnerReaderReviewVersion);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
   const added=review.questions.filter(q=>q.id.startsWith('bb3-review-'));
   assert.equal(added.length,6);
@@ -287,11 +319,32 @@ test('Units 4–6 attach the new shared materials and score the new original rev
     [6,20,'review-u6-totals',182000+44000+24200+12000+8000+7000],
   ] as const){
     const review=assessments.find(a=>a.id==='boki-beginner-unit-'+unit+'-review')!;
-    assert.equal(review.version,beginnerLaterVersion);
-    assert.equal(review.questions.length,count);
+    assert.equal(review.version,beginnerReaderReviewVersion);
+    assert.equal(review.questions.length,count+(unit===6 ? 4 : 1));
     assert.deepEqual(assessmentMaterialIssues(review),[]);
     const question=review.questions.find(q=>q.id==='bb-full-'+id)!;
     assert.ok(question.materialIds?.length);
     assert.ok(isCorrect(question,String(answer)));
+  }
+});
+
+test('new unit cases match independent arithmetic and older results stay as stored',()=>{
+  const expected=[141000-39000-76000-12000+4000,10000+31000-4000-12600,37500*(1-0.02)+12400,211000-11100-3250,105000+46000-29500-5200,3200+3900-650-1900-2100];
+  const oldVersions=[beginnerUnit1Version,beginnerUnit2Version,beginnerUnit3Version,beginnerLaterVersion,beginnerLaterVersion,beginnerLaterVersion];
+  for(const [index,value] of expected.entries()){
+    const unit=index+1;
+    const review=assessments.find(a=>a.id==='boki-beginner-unit-'+unit+'-review')!;
+    const q=review.questions.find(q=>q.id==='bb2-reader-review-'+unit)!;
+    assert.ok(isCorrect(q,String(value)),q.id);
+    assert.equal(isCorrect(q,String(value+1)),false,q.id);
+    const prior=newAttempt({...review,version:oldVersions[index]!,questions:review.questions.filter(q=>!q.id.startsWith('bb2-reader-'))},'practice');
+    const state=emptyData();
+    state.assessments[review.id]=[prior];
+    assert.deepEqual(validateData(JSON.parse(JSON.stringify(state))).assessments[review.id],[prior]);
+    assert.equal(compatibleAttempt(review,prior),false);
+  }
+  const latest=assessments.find(a=>a.id==='boki-beginner-unit-6-review')!;
+  for(const [key,expected] of [['turnover',165000-127500],['settlement',33000+42500-2000-38500],['cutoff',18000+9400+11600]] as const){
+    assert.ok(isCorrect(latest.questions.find(q=>q.id==='bb2-reader-month-'+key)!,String(expected)),key);
   }
 });

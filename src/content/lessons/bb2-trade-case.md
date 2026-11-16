@@ -1,10 +1,14 @@
 ---
-{"stableId":"bb2-trade-case","qualification":"boki-beginner","title":"証ひょうから元帳までつなぐ売買の総合演習","description":"納品書、返品連絡、入金記録から仕訳と伝票を作り、得意先元帳と仕入先元帳を照合する日商簿記初級ユニット2の総合演習です。","order":11,"minutes":105,"sample":false,"updated":"2026-11-14","unit":2,"syllabus":[1,2],"scopeLabel":"2026年度適用範囲・帳簿、証ひょう、商品売買、現金預金の総合演習","subject":"basics","objectives":["資料を突き合わせて重複を除き、記録する日と伝票を決める","仕入・売上・返品・決済を仕訳し、必要な勘定へ転記する","取引先ごとの残高と総勘定元帳を照合し、誤りの場所を見付ける"],"prerequisite":"仕訳帳と元帳、証ひょうと伝票、現金と預金、三分法と返品の各レッスンを確認してください。","keywords":["簿記初級 総合問題","証ひょう 仕訳","得意先元帳 売掛金","仕入先元帳 買掛金","仕訳帳 総勘定元帳 転記"],"glossary":[]}
+{"stableId":"bb2-trade-case","qualification":"boki-beginner","title":"証ひょうから元帳までつなぐ売買の総合演習","description":"納品書、返品連絡、入金記録から仕訳と伝票を作り、得意先元帳と仕入先元帳を照合する日商簿記初級ユニット2の総合演習です。","order":11,"minutes":110,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1,2],"scopeLabel":"2026年度適用範囲・帳簿、証ひょう、商品売買、現金預金の総合演習","subject":"basics","objectives":["資料を突き合わせて重複を除き、記録する日と伝票を決める","仕入・売上・返品・決済を仕訳し、必要な勘定へ転記する","取引先ごとの残高と総勘定元帳を照合し、誤りの場所を見付ける"],"prerequisite":"仕訳帳と元帳、証ひょうと伝票、現金と預金、三分法と返品の各レッスンを確認してください。","keywords":["簿記初級 総合問題","証ひょう 仕訳","得意先元帳 売掛金","仕入先元帳 買掛金","仕訳帳 総勘定元帳 転記"],"glossary":[],
+  "inlineGlossary": [{"id": "glossary-7521a51e1f", "term": "証ひょう", "definition": "取引の日付・金額・内容の根拠を確かめる書類です。"}, {"id": "glossary-da848a2092", "term": "売掛金", "definition": "商品を売った代金を後日受け取る権利を記録する資産の勘定です。"}, {"id": "glossary-1a072ce5bc", "term": "買掛金", "definition": "仕入れた商品代金を後日支払う義務を記録する負債の勘定です。"}, {"id": "glossary-445fdce417", "term": "仕訳", "definition": "取引の内容を借方と貸方に分けて記録することです。"}]
+}
 ---
 
-売買の記録を確かめるには、証ひょうの照合から伝票、仕訳、元帳の順にたどります。納品書と請求書が同じ販売を示していれば、商品の引渡しによる売上は一回だけ記録します。返品や代金の決済は別の日に起きるため、そのつど売掛金や買掛金を増減させます。最後に取引先別の残高を総勘定元帳と突き合わせると、どの記録を調べ直すべきか判断しやすくなります。
+この章では、商品を引き渡した日から代金を受け取る日まで、同じ一件を帳簿の中で追います。掛けは代金を後日決済する取引です。店が商品を渡した段階では得意先から代金を受け取る権利が残り、その額を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-da848a2092">売掛金</a>に記録します。返送された商品があれば売上を取り消す部分を調べ、代金を受け取れば売掛金を減らします。売上そのものが生じるのは引渡しの日です。
 
-金額はすべて円です。消費税と手数料は考えず、商品は引渡し時に記録します。月初の現金は30,000円、普通預金は50,000円。売掛金・買掛金の月初残高はありません。売買は三分法を使い、期中は仕入と売上を別々に記録します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-7521a51e1f">証ひょう</a>は取引を確かめる資料、伝票は取引を帳簿に移すための記録です。伝票をもとに<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-445fdce417">仕訳</a>の左右と金額を確かめたら、同じ向きで総勘定元帳の各科目へ転記します。元帳で分かる売掛金の総額と、得意先ごとの内訳を並べれば、どの請求に振込を当てたかまで確かめられます。
+
+金額はすべて円です。消費税と手数料は考えず、商品は引渡し時に記録します。月初の現金は30,000円、普通預金は50,000円。売掛金・<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-1a072ce5bc">買掛金</a>の月初残高はありません。売買は三分法を使い、期中は仕入と売上を別々に記録します。
 
 <span id="objective-1"></span>
 
@@ -22,7 +26,7 @@
 | 18日 | 普通預金への入金明細 | そら店から13,000円の入金 |
 | 20日 | 普通預金からの振込明細 | みどり商会へ15,000円を振込 |
 
-<figure><svg viewBox="0 0 338 142" width="338" height="142" role="img" aria-label="そら店の納品時に売掛金が28,000円発生し、返品で21,000円となり、振込回収で8,000円になる。途中の請求は残高を変えない。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="#e4f3f0"><rect x="5" y="4" width="328" height="37" rx="4"/><rect x="5" y="53" width="328" height="37" rx="4"/><rect x="5" y="102" width="328" height="37" rx="4"/></g><g fill="#143750" font-size="15" font-weight="700"><text x="18" y="28">6日　納品・一部入金　売掛金28,000円</text><text x="18" y="77">8日　返品の受入れ　売掛金21,000円</text><text x="18" y="126">18日　振込で回収　売掛金8,000円</text></g><path d="M169 41v12m-4-5 4 5 4-5m-4 42v12m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>請求書は8日までに発生した残額を伝える資料です。12日の請求だけでは売掛金は動きません。</figcaption></figure>
+<figure id="bb2-trade-case-aid-1"><svg viewBox="0 0 338 142" width="338" height="142" role="img" aria-label="そら店の納品時に売掛金が28,000円発生し、返品で21,000円となり、振込回収で8,000円になる。途中の請求は残高を変えない。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="#e4f3f0"><rect x="5" y="4" width="328" height="37" rx="4"/><rect x="5" y="53" width="328" height="37" rx="4"/><rect x="5" y="102" width="328" height="37" rx="4"/></g><g fill="#143750" font-size="15" font-weight="700"><text x="18" y="28">6日　納品・一部入金　売掛金28,000円</text><text x="18" y="77">8日　返品の受入れ　売掛金21,000円</text><text x="18" y="126">18日　振込で回収　売掛金8,000円</text></g><path d="M169 41v12m-4-5 4 5 4-5m-4 42v12m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>請求書は8日までに発生した残額を伝える資料です。12日の請求だけでは売掛金は動きません。</figcaption></figure>
 
 <span id="worked-1"></span>
 
@@ -96,7 +100,7 @@
 
 売掛金の総勘定元帳は37,000＋32,000−5,000−12,000−8,000＝44,000円です。得意先別の残高33,000＋11,000＝44,000円とも一致します。16日の振込回収は振替伝票、22日の現金回収は入金伝票です。どちらも売掛金を減らしますが、伝票を選ぶときは相手先より先に、どの資産が増えたかを確かめます。
 
-<figure><svg viewBox="0 0 342 122" width="342" height="122" role="img" aria-label="16日の南店からの回収を北店へ記入すると、北店は33,000円から21,000円に、南店は11,000円から23,000円に変わる。二社の合計はいずれも44,000円。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="6" y="5" width="330" height="47" rx="4"/><rect x="6" y="60" width="330" height="46" rx="4"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="171" y="25">正しい明細：北33,000 ＋ 南11,000</text><text x="171" y="43">合計44,000円</text><text x="171" y="80">誤った明細：北21,000 ＋ 南23,000</text><text x="171" y="98">合計44,000円</text></g></svg><figcaption>合計が同じでも、北店に12,000円少なく、南店に12,000円多く請求するおそれがあります。振込人を記録に戻って確かめます。</figcaption></figure>
+<figure id="bb2-trade-case-aid-2"><svg viewBox="0 0 342 122" width="342" height="122" role="img" aria-label="16日の南店からの回収を北店へ記入すると、北店は33,000円から21,000円に、南店は11,000円から23,000円に変わる。二社の合計はいずれも44,000円。" style="display:block;width:100%;max-width:34rem;height:auto"><g fill="none" stroke="currentColor"><rect x="6" y="5" width="330" height="47" rx="4"/><rect x="6" y="60" width="330" height="46" rx="4"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="171" y="25">正しい明細：北33,000 ＋ 南11,000</text><text x="171" y="43">合計44,000円</text><text x="171" y="80">誤った明細：北21,000 ＋ 南23,000</text><text x="171" y="98">合計44,000円</text></g></svg><figcaption>合計が同じでも、北店に12,000円少なく、南店に12,000円多く請求するおそれがあります。振込人を記録に戻って確かめます。</figcaption></figure>
 
 <details><summary>予測して答え合わせ：南店の回収を北店へ書いたら、どこを直す？</summary><p>総勘定元帳には正しく貸方売掛金12,000円を記録済みとします。どの帳簿のどの行を直すか、先に考えてください。</p><p>得意先元帳だけを直します。北店に書いた減少12,000円を取り消し、南店の16日の欄に移します。総勘定元帳に改めて回収を起こすと、売掛金をもう一度減らしてしまいます。取引番号、振込人、入金額を順に照合すると、訂正先を絞れます。</p></details>
 
@@ -105,6 +109,30 @@
 月初の売掛金は西店25,000円、東店16,000円。買掛金はこはく商会18,000円です。4日に西店へ掛けで28,000円を販売し、6日に西店から4,000円分の返品を受け入れました。8日に東店から10,000円を普通預金で回収し、10日にこはく商会へ現金7,000円を支払いました。仕訳、伝票の種類、三社の残高を紙に書き、どの組合せを一つの合計にできるか確認してください。
 
 <details><summary>四つの仕訳と元帳の照合を見る</summary><p>4日は売掛金28,000／売上28,000で振替。6日は売上4,000／売掛金4,000で振替。8日は普通預金10,000／売掛金10,000で振替。10日は買掛金7,000／現金7,000で出金です。</p><p>西店は25,000＋28,000−4,000＝49,000円。東店は16,000−10,000＝6,000円。売掛金55,000円は、この二社の合計です。こはく商会の11,000円は支払う義務なので、別の買掛金勘定に残します。売掛金から差し引いて44,000円にまとめると、請求額と支払額を追えなくなります。</p></details>
+
+<span id="bb2-trade-case-first-use-worked"></span>
+
+## 振込名と請求番号を両方たどる
+
+取引先Aに17,000円、取引先Bに12,000円の請求があり、Bの振込6,000円をAに当ててしまったとします。売掛金総額はどちらに当てても23,000円になります。正しい内訳はAが17,000円、Bが6,000円です。総額で見つからない原因は、受取金額が正しく、どの相手の権利を消したかだけが違うことにあります。請求番号と銀行明細の振込人を照合し、誤った得意先別の記録を戻します。
+
+<section class="guided-lesson" id="bb2-trade-case-first-use-practice" aria-labelledby="bb2-trade-case-first-use-practice-title">
+<h3 id="bb2-trade-case-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-trade-case-first-use-practice-prompt">得意先Aに20,000円、Bに14,000円が残っています。Bの請求に対する9,000円の振込を確認しました。正しいBの残高は何円ですか。</p>
+<form data-guided-practice data-expected="5000" data-guided-hint="振込で減るのは、振込の対象となった請求先の残高です。" aria-labelledby="bb2-trade-case-first-use-practice-title" aria-describedby="bb2-trade-case-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-trade-case-first-use-practice-input">答え（円）</label>
+<input id="bb2-trade-case-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>Bの未回収分は14,000−9,000＝5,000円です。Aは20,000円のままなので、全体は25,000円になります。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

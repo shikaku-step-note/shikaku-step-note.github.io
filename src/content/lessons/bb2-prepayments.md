@@ -5,9 +5,9 @@
   "title": "前払金・前受金と一部決済",
   "description": "前払金・前受金と一部決済を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
   "order": 14,
-  "minutes": 85,
+  "minutes": 90,
   "sample": false,
-  "updated": "2026-11-14",
+  "updated":"2026-11-16",
   "unit": 3,
   "syllabus": [
     2
@@ -53,11 +53,14 @@
       "term": "未充当残高",
       "definition": "先に授受した代金のうち、まだ商品の受渡しに対応させていない額。"
     }
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-cf4013bebb", "term": "未充当残高"}, {"id": "glossary-d67c6a4961", "term": "前受金"}, {"id": "glossary-42b1db7b39", "term": "前払金"}, {"id": "glossary-6a6c7ab603", "term": "残代金"}, {"id": "glossary-d8c217124f", "term": "充当"}]
 }
 ---
 
-商品を受け取る前に代金の一部を支払うと、買い手には、支払った分を後で商品代金に充てる権利が生じます。この権利を記録する資産の勘定が**前払金**です。一方、代金を先に受け取った売り手には、商品を引き渡す義務が残ります。その義務は、負債の勘定である**前受金**に記録します。
+代金を先に払うと、買い手は現金を手放しますが、その分を後で商品代に使えるようになります。この権利を表す資産の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-42b1db7b39">前払金</a>です。先にお金を受け取った売り手には、約束した商品をあとで渡す義務が残ります。この義務は負債の勘定である<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d67c6a4961">前受金</a>に記録します。
+
+すでに渡したお金を代金の一部として使うことを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d8c217124f">充当</a>といいます。商品を何回かに分けて受け取る条件なら、どの回に前払い分をいくら使うかを確かめます。受け取った分の代金に充てた額だけ前払金を減らし、次の受渡しに使える分は資産として残します。
 
 このページは商品の仕入・販売に伴う代金の前渡し・前受けを扱います。家賃や保険料を期間に配分する前払費用、収益・費用の決算整理とは別の内容です。消費税や解約による違約金は考えず、前に受け渡した金額は最終の商品代金へ全額充当できる契約とします。
 
@@ -84,12 +87,12 @@
 
 2日の仕訳は前払金30,000円／普通預金30,000円です。商品はまだ受け取っていないので、仕入は記録しません。12日は仕入100,000円／前払金30,000円、買掛金70,000円です。仕入は受け取った商品の総額で計上し、すでに払った権利30,000円を取り崩します。
 
-残代金は100,000−30,000＝70,000円です。充当額と残代金の合計30,000＋70,000が仕入100,000円に一致します。12日の時点では新たな預金支出がないので、普通預金を再度減らしません。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-6a6c7ab603">残代金</a>は100,000−30,000＝70,000円です。充当額と残代金の合計30,000＋70,000が仕入100,000円に一致します。12日の時点では新たな預金支出がないので、普通預金を再度減らしません。
 
 後日、買掛金70,000円を普通預金から支払うなら、買掛金70,000円／普通預金70,000円です。三つの仕訳を通じて、預金の支出合計は100,000円、仕入は100,000円、前払金と買掛金の残高はともに0円となります。
 
 <span id="objective-2"></span>
-<figure><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="仕入100,000円のうち30,000円は支払い済みの前払金、70,000円は未払いの買掛金。納品日の普通預金は動かない。" style="display:block;max-width:100%;height:auto"><g fill="currentColor" font-size="14"><text x="10" y="22">納品日に記録する仕入　100,000円</text><rect x="10" y="35" width="96" height="22" rx="2" fill-opacity=".38"/><rect x="106" y="35" width="224" height="22" rx="2" fill-opacity=".72"/><text x="10" y="80">前払金 30,000円</text><text x="10" y="99" font-size="12">支払い済み</text><text x="151" y="80">買掛金 70,000円</text><text x="151" y="99" font-size="12">これから支払う</text><text x="10" y="130">納品日には普通預金が動かない</text></g></svg><figcaption>例題1の金額です。仕入は棒全体の100,000円。すでに払った部分と、まだ払っていない部分を足すと、仕入の金額に戻ります。</figcaption></figure>
+<figure id="bb2-prepayments-aid-1"><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="仕入100,000円のうち30,000円は支払い済みの前払金、70,000円は未払いの買掛金。納品日の普通預金は動かない。" style="display:block;max-width:100%;height:auto"><g fill="currentColor" font-size="14"><text x="10" y="22">納品日に記録する仕入　100,000円</text><rect x="10" y="35" width="96" height="22" rx="2" fill-opacity=".38"/><rect x="106" y="35" width="224" height="22" rx="2" fill-opacity=".72"/><text x="10" y="80">前払金 30,000円</text><text x="10" y="99" font-size="12">支払い済み</text><text x="151" y="80">買掛金 70,000円</text><text x="151" y="99" font-size="12">これから支払う</text><text x="10" y="130">納品日には普通預金が動かない</text></g></svg><figcaption>例題1の金額です。仕入は棒全体の100,000円。すでに払った部分と、まだ払っていない部分を足すと、仕入の金額に戻ります。</figcaption></figure>
 
 ## 充当する額と新たに決済する額を分ける
 
@@ -170,7 +173,7 @@
 
 「いつ商品を受け渡したか」「どの額を先に授受したか」「今回いくら充当するか」を順に整理します。内金の時点で仕入・売上を計上せず、受渡し時には総額を記録し、先の内金と当日の決済を区別しましょう。
 
-資産・負債の向きは[最初の整理](#objective-1)、残代金の三分割は[例題2](#worked-2)、未充当残高は[例題3](#worked-3)へ戻ります。商品以外を後払いで買う場合は、次の[未収入金・未払金](/qualifications/boki-beginner/bb2-other-claims/)で科目を使い分けます。
+資産・負債の向きは[最初の整理](#objective-1)、残代金の三分割は[例題2](#worked-2)、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-cf4013bebb">未充当残高</a>は[例題3](#worked-3)へ戻ります。商品以外を後払いで買う場合は、次の[未収入金・未払金](/qualifications/boki-beginner/bb2-other-claims/)で科目を使い分けます。
 
 <span id="textbook-prepayments"></span>
 
@@ -178,7 +181,7 @@
 
 商品90,000円を注文し、手付金40,000円を普通預金から支払いました。先に商品36,000円分を受け取り、手付金のうち25,000円をこの納品に充当し、差額は掛けとします。残りの商品は注文を取り消し、未充当の手付金全額が普通預金に返りました。消費税は考えません。
 
-<figure><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="前払い、分納、返金の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">前払い</text><text x="168" y="39">分納</text><text x="285" y="39">返金</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>商品へ充当した額と返金された額を別々に追います。</figcaption></figure>
+<figure id="bb2-prepayments-aid-2"><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="前払い、分納、返金の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">前払い</text><text x="168" y="39">分納</text><text x="285" y="39">返金</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>商品へ充当した額と返金された額を別々に追います。</figcaption></figure>
 
 ### 証ひょうから仕訳へ
 
@@ -223,6 +226,30 @@
 売掛金の月初残高は0円とします。今月の売上、売掛金と前受金の月末残高、普通預金の純増加額を求めてください。注文Aの引渡日、返金日、注文Bの入金日について、それぞれ仕訳も書いてください。
 
 <details><summary>仕訳と残高の照合を見る</summary><p>注文Aの引渡日は借方「前受金20,000円、普通預金18,000円、売掛金38,000円」、貸方「売上76,000円」です。売掛金は76,000−20,000−18,000＝38,000円。注文Aの返金は借方「前受金12,000円」、貸方「普通預金12,000円」です。返金は未引渡し分の内金を戻すので、売上76,000円を減らしません。注文Bは借方「普通預金28,000円」、貸方「前受金28,000円」です。</p><p>月末の前受金は32,000−20,000−12,000＋28,000＝28,000円。普通預金は18,000−12,000＋28,000＝34,000円の純増です。引渡し分76,000円の内訳は、充当20,000円、当日の入金18,000円、掛け38,000円です。この三つを足せば、注文Bの内金や注文Aの返金を売上に混ぜていないことを確かめられます。</p></details>
+
+<span id="bb2-prepayments-first-use-worked"></span>
+
+## 一部を受け取った日に、権利のうち使った額だけを減らす
+
+18,000円を前払いし、最初に30,000円分の商品を受け取りました。そのうち10,000円だけを前払金から充当する条件なら、仕入は30,000円、前払金の減少は10,000円です。残り20,000円を後で払う約束なら買掛金が増えます。次回の代金に使える前払金8,000円は残るので、前払金の全額を消す仕訳にしてはいけません。
+
+<section class="guided-lesson" id="bb2-prepayments-first-use-practice" aria-labelledby="bb2-prepayments-first-use-practice-title">
+<h3 id="bb2-prepayments-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-prepayments-first-use-practice-prompt">前払金16,000円のうち、今回の納品に9,500円を充てました。費用負担や返金はありません。次回に使える前払金は何円ですか。</p>
+<form data-guided-practice data-expected="6500" data-guided-hint="全額を払った日と、そのうち何円使った日かを分けて考えます。" aria-labelledby="bb2-prepayments-first-use-practice-title" aria-describedby="bb2-prepayments-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-prepayments-first-use-practice-input">答え（円）</label>
+<input id="bb2-prepayments-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>16,000−9,500＝6,500円です。今回は9,500円分の権利を使い、残りの権利は次回の納品まで残ります。</p>
+</details>
+</section>
 
 ## 参照した公式範囲
 

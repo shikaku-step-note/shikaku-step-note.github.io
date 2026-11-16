@@ -1,8 +1,12 @@
 ---
-{"stableId":"bb2-transaction","qualification":"boki-beginner","title":"簿記上の取引を見分け、8要素の動きを読む","description":"契約・注文と記録すべき取引を区別し、資産・負債・純資産・収益・費用の変化を8要素で整理します。現金取引、掛取引、損失、複合取引の理由を説明する練習を行います。","order":3,"minutes":94,"sample":false,"updated":"2026-11-13","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・取引の意義、種類、8要素","subject":"basics","objectives":["簿記上の取引と、まだ記録しない出来事を区別する","取引を借方4要素・貸方4要素の組合せに分解する","複合取引でも借方と貸方の金額が一致する理由を説明する"],"prerequisite":"資産・負債・純資産の分類と、収益・費用の意味を確認してください。借方・貸方という名前はこのレッスンで導入します。","keywords":["取引","8要素","借方","貸方","複合取引","貸借平均"],"glossary":[{"term":"簿記上の取引","definition":"資産、負債、純資産などに変化を生じさせ、金額で記録する出来事"},{"term":"借方","definition":"仕訳や勘定で用いる左側の名称"},{"term":"貸方","definition":"仕訳や勘定で用いる右側の名称"},{"term":"取引の8要素","definition":"資産・負債・純資産の増減と、収益の発生・費用の発生を借貸に分けた8つの要素"},{"term":"単純取引","definition":"借方と貸方がそれぞれ一つの勘定で構成される取引"},{"term":"複合取引","definition":"借方または貸方に複数の勘定を用いる取引"},{"term":"貸借平均の原理","definition":"取引を正しく複式で記録すると借方合計と貸方合計が一致する性質"}]}
+{"stableId":"bb2-transaction","qualification":"boki-beginner","title":"簿記上の取引を見分け、8要素の動きを読む","description":"契約・注文と記録すべき取引を区別し、資産・負債・純資産・収益・費用の変化を8要素で整理します。現金取引、掛取引、損失、複合取引の理由を説明する練習を行います。","order":3,"minutes":99,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・取引の意義、種類、8要素","subject":"basics","objectives":["簿記上の取引と、まだ記録しない出来事を区別する","取引を借方4要素・貸方4要素の組合せに分解する","複合取引でも借方と貸方の金額が一致する理由を説明する"],"prerequisite":"資産・負債・純資産の分類と、収益・費用の意味を確認してください。借方・貸方という名前はこのレッスンで導入します。","keywords":["取引","8要素","借方","貸方","複合取引","貸借平均"],"glossary":[{"term":"簿記上の取引","definition":"資産、負債、純資産などに変化を生じさせ、金額で記録する出来事"},{"term":"借方","definition":"仕訳や勘定で用いる左側の名称"},{"term":"貸方","definition":"仕訳や勘定で用いる右側の名称"},{"term":"取引の8要素","definition":"資産・負債・純資産の増減と、収益の発生・費用の発生を借貸に分けた8つの要素"},{"term":"単純取引","definition":"借方と貸方がそれぞれ一つの勘定で構成される取引"},{"term":"複合取引","definition":"借方または貸方に複数の勘定を用いる取引"},{"term":"貸借平均の原理","definition":"取引を正しく複式で記録すると借方合計と貸方合計が一致する性質"}],
+  "inlineGlossary": [{"id": "glossary-82a8936555", "term": "取引の8要素"}, {"id": "glossary-209e5a2c69", "term": "簿記上の取引"}, {"id": "glossary-d91c6282f4", "term": "複合取引"}, {"id": "glossary-f581cd4dd8", "term": "借方"}, {"id": "glossary-f022a82ad0", "term": "貸方"}]
+}
 ---
 
-簿記上の取引とは、資産・負債・純資産を変化させ、その内容を金額で記録できる出来事です。収益や費用の発生も、利益を通じて純資産に関わります。記録の時点を決めるには、注文、商品の受渡し、代金の決済を分け、それぞれの日に何が増減したかを確認します。
+商品を注文すると、いつ、何を受け取る予定かが決まります。その時点で商品も代金も動かず、帳簿に記録する変化がまだ生じていなければ、この章の設例では注文を記録しません。商品が届いて代金を後で払う義務が生じたときには、金額を帳簿に書きます。こうして財産や支払義務などが変わり、その変化を金額で記録する出来事を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-209e5a2c69">簿記上の取引</a>**と呼びます。利益を増減させる収益や費用が生じたときも記録の対象です。
+
+一つの取引は、帳簿の左側と右側に分けて記入します。左側を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f581cd4dd8">借方</a>**、右側を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f022a82ad0">貸方</a>**といいます。この二つは記入欄の名前です。先に何が増え、何が減ったかを言葉で確かめてから、次の節で学ぶ決まりに沿って左右を決めます。
 
 <span id="objective-1"></span>
 
@@ -48,7 +52,7 @@
 
 簿記では、左を借方、右を貸方と呼びます。「借りたから借方」「貸したから貸方」という日常語による判断には使いません。銀行からお金を借りた場合、借入金は負債が増えるので貸方です。借方・貸方は、記録する側を表す名称として覚えてください。
 
-取引の8要素は、次のように左右へ分かれます。資産・負債・純資産には増加と減少があり、これで6要素です。さらに費用の発生と収益の発生を加えて8要素とします。収益や費用の取消しは、発生を記録した側と反対に記録します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-82a8936555">取引の8要素</a>は、次のように左右へ分かれます。資産・負債・純資産には増加と減少があり、これで6要素です。さらに費用の発生と収益の発生を加えて8要素とします。収益や費用の取消しは、発生を記録した側と反対に記録します。
 
 | 借方に置く4要素 | 貸方に置く4要素 |
 | --- | --- |
@@ -59,7 +63,7 @@
 
 現金で備品を買えば、借方の「資産の増加」と貸方の「資産の減少」が結び付きます。借入金を現金で返せば、借方の「負債の減少」と貸方の「資産の減少」です。家賃を現金で払えば、借方の「費用の発生」と貸方の「資産の減少」になります。同じ出金でも借方の内容が異なります。
 
-資産が増えるとき、同額の負債が減るだけという組合せは、単独の二要素としては成立しません。資産の増加も負債の減少も借方に属し、貸方に対応する要素がないためです。実際の複合取引では両方が同時に借方へ現れる場合がありますが、そのときは別の貸方要素が必要です。「組合せがない」とは、他の変化がない二要素だけの比較だと理解してください。
+資産が増えるとき、同額の負債が減るだけという組合せは、単独の二要素としては成立しません。資産の増加も負債の減少も借方に属し、貸方に対応する要素がないためです。実際の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d91c6282f4">複合取引</a>では両方が同時に借方へ現れる場合がありますが、そのときは別の貸方要素が必要です。「組合せがない」とは、他の変化がない二要素だけの比較だと理解してください。
 
 <span id="worked-2"></span>
 
@@ -136,7 +140,7 @@
 | 5日 | 現金15,000円と残り30,000円を受け取る権利が増えた | 資産の増加2件 | 収益の発生45,000円 |
 | 20日 | 現金が30,000円増え、受け取る権利を使い切った | 資産の増加30,000円 | 資産の減少30,000円 |
 
-<figure><svg viewBox="0 0 344 175" width="344" height="175" role="img" aria-label="3日の注文は記録なし。5日の引渡しで売上45千円、現金15千円、売掛金30千円。20日の回収では現金と売掛金だけが動く。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="10" y="6" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="23" fill="#143750" font-weight="700">3日　注文を受け付ける</text><text x="22" y="40" fill="#143750" font-size="12">この条件では、記録する財産や義務の変化なし</text><path d="M172 49v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="69" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="86" fill="#143750" font-weight="700">5日　商品を渡す</text><text x="22" y="103" fill="#143750" font-size="12">現金＋15,000円、売掛金＋30,000円、売上45,000円</text><path d="M172 112v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="132" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="149" fill="#143750" font-weight="700">20日　残りを回収する</text><text x="22" y="166" fill="#143750" font-size="12">現金＋30,000円、売掛金−30,000円</text></g></svg><figcaption>5日の売掛金は20日の回収で消えます。売上を記録した日を一つ指せるか確認してください。</figcaption></figure>
+<figure id="bb2-transaction-aid-1"><svg viewBox="0 0 344 175" width="344" height="175" role="img" aria-label="3日の注文は記録なし。5日の引渡しで売上45千円、現金15千円、売掛金30千円。20日の回収では現金と売掛金だけが動く。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="10" y="6" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="23" fill="#143750" font-weight="700">3日　注文を受け付ける</text><text x="22" y="40" fill="#143750" font-size="12">この条件では、記録する財産や義務の変化なし</text><path d="M172 49v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="69" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="86" fill="#143750" font-weight="700">5日　商品を渡す</text><text x="22" y="103" fill="#143750" font-size="12">現金＋15,000円、売掛金＋30,000円、売上45,000円</text><path d="M172 112v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="132" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="149" fill="#143750" font-weight="700">20日　残りを回収する</text><text x="22" y="166" fill="#143750" font-size="12">現金＋30,000円、売掛金−30,000円</text></g></svg><figcaption>5日の売掛金は20日の回収で消えます。売上を記録した日を一つ指せるか確認してください。</figcaption></figure>
 
 5日の借方は「現金15,000円」と「売掛金30,000円」です。代金を二つの方法で受け取るので、資産の増加が二つ並びます。貸方は「売上45,000円」です。20日に売上をもう一度記録すると、注文45,000円から75,000円の売上が生じたことになります。20日は、5日に計上した売掛金が現金へ変わる日です。
 
@@ -178,7 +182,7 @@
 
 費用が増えれば、同じ収益でも残る純資産は減ります。費用を右辺から左辺へ移した式では、費用の発生は資産の増加と同じ側に並びます。資産・負債の減少も、増加と反対側に置けば同じ関係を保てます。こう考えると、8要素の表は言葉の暗記ではなく、変化の関係を確かめる道具になります。この式は金額の関係を説明するためのもので、勘定科目を選ぶときは取引の中身を先に読みます。
 
-<figure><svg viewBox="0 0 340 170" width="340" height="170" style="display:block;max-width:100%;height:auto" role="img" aria-label="借方の資産増加2万円と費用発生1万円が、貸方の負債増加3万円に対応する図"><g fill="currentColor" font-size="14"><text x="16" y="23">借方　合計30,000円</text><text x="16" y="69">貸方　合計30,000円</text><text x="22" y="45">資産増加　20,000円</text><text x="214" y="45" font-size="12">費用　10,000円</text><text x="22" y="93">負債増加　30,000円</text><text x="16" y="131">受け取る物と発生した費用を足すと</text><text x="16" y="151">後で支払う額に一致します</text></g><g fill="currentColor" fill-opacity=".12" stroke="currentColor"><rect x="16" y="28" width="192" height="25"/><rect x="208" y="28" width="96" height="25"/><rect x="16" y="76" width="288" height="25"/></g></svg><figcaption>備品20,000円と当月の家賃10,000円を同時に後払いにした例。二つの借方要素を足すと、貸方の二つの支払義務の合計に一致します。</figcaption></figure>
+<figure id="bb2-transaction-aid-2"><svg viewBox="0 0 340 170" width="340" height="170" style="display:block;max-width:100%;height:auto" role="img" aria-label="借方の資産増加2万円と費用発生1万円が、貸方の負債増加3万円に対応する図"><g fill="currentColor" font-size="14"><text x="16" y="23">借方　合計30,000円</text><text x="16" y="69">貸方　合計30,000円</text><text x="22" y="45">資産増加　20,000円</text><text x="214" y="45" font-size="12">費用　10,000円</text><text x="22" y="93">負債増加　30,000円</text><text x="16" y="131">受け取る物と発生した費用を足すと</text><text x="16" y="151">後で支払う額に一致します</text></g><g fill="currentColor" fill-opacity=".12" stroke="currentColor"><rect x="16" y="28" width="192" height="25"/><rect x="208" y="28" width="96" height="25"/><rect x="16" y="76" width="288" height="25"/></g></svg><figcaption>備品20,000円と当月の家賃10,000円を同時に後払いにした例。二つの借方要素を足すと、貸方の二つの支払義務の合計に一致します。</figcaption></figure>
 
 例えば、備品20,000円と当月分家賃10,000円がいずれも未払いの取引では、資産が20,000円増え、負債が30,000円増え、費用が10,000円発生します。右辺は30,000−10,000＝20,000円で左辺と一致します。仕訳を作るときは借方の備品と支払家賃を分け、貸方は各義務に適する科目を問題の条件から選びます。「借方に二つあるから貸方にも同じ数だけ必要」という制約はありません。
 
@@ -209,6 +213,42 @@
 最後に、別の日の入金を考えます。振込45,000円のうち、商品を渡す前に受け取った代金が12,000円、前月売上の回収が33,000円です。当日の売上と、貸方の二つの科目を、先に自分で決めてください。
 
 <details><summary>まだ売上になっていない入金を確かめる</summary><p>当日の売上は0円です。借方は普通預金45,000円。貸方は前受金12,000円と売掛金33,000円です。12,000円はまだ商品を渡す義務が残っているため前受金で、33,000円は以前に記録した売掛金をなくすための金額です。45,000円を売上とすると、どちらの入金も時点を誤ります。</p></details>
+
+<span id="unit1-transaction-advance-boundary"></span>
+
+## 発注時に代金の一部を払ったら、支払った日も調べる
+
+「注文した日には記録しない」という判断は、商品を受け取らず、代金にも動きがない設例に当てはまります。注文と同時に代金の一部を渡した場合には、支払った分を後で商品代に充てる権利が店に残ります。この権利を記録する資産の科目が**前払金**です。商品を受け取るまでは、何を注文したかに加えて、店がその日に払った額と、その額で得た権利を読み取ります。
+
+### 例題：注文・商品の受取り・残代金の支払いを分ける
+
+6日に商品54,000円を注文し、代金に充てる8,000円を現金で先に払いました。10日に商品を受け取って8,000円を代金に充て、残りを後日払うことにしました。24日に残額を普通預金から支払います。消費税は考えません。
+
+6日には前払金8,000円が増え、現金8,000円が減ります。資産の増加を借方、資産の減少を貸方に置くと、左右が8,000円ずつになります。10日に記録する仕入は54,000円です。代金のうち、前払金として記録していた8,000円の権利を使い、残る46,000円が買掛金になります。仕入という費用の発生を借方、前払金という資産の減少と買掛金という負債の増加を貸方に置きます。貸方は8,000＋46,000＝54,000円です。24日には負債の買掛金と資産の普通預金がそれぞれ46,000円減ります。商品を受け取ったときの仕入は、支払いで繰り返して記録しません。
+
+### 自分で確かめる：同じ注文書でも、現金の動きがない
+
+注文書には同じ54,000円が記載されていますが、6日は注文しただけで、代金は払いませんでした。10日に商品を受け取り、全額を後日払います。6日と10日について、記録の要否、借方・貸方に置く要素、金額を言葉で説明してください。
+
+<details><summary>解答と考え方</summary><p>6日には財産や義務などの記録対象となる変化がなく、この設例では記入しません。10日の借方は費用の発生54,000円、貸方は負債の増加54,000円です。前払金の記録がないので、10日に取り崩す前払金もありません。二つの設例を分ける手掛かりは、注文書に金額があることより、注文日に実際に何が動いたかです。</p></details>
+
+<section class="guided-lesson" id="bb2-transaction-first-use-practice" aria-labelledby="bb2-transaction-first-use-practice-title">
+<h3 id="bb2-transaction-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-transaction-first-use-practice-prompt">商品48,000円を注文し、代金の一部6,000円を現金で先に払いました。今月届いた商品の代金は27,000円分だけです。先払いの全額を今月届いた商品に充て、残りを後日払います。消費税を考えないとき、今月の受取りによって増えた買掛金は何円ですか。</p>
+<form data-guided-practice data-expected="21000" data-guided-hint="注文書の全額と、今月受け取った商品の代金を分けて考えます。" aria-labelledby="bb2-transaction-first-use-practice-title" aria-describedby="bb2-transaction-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-transaction-first-use-practice-input">答え（円）</label>
+<input id="bb2-transaction-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>今月の受取りで記録する仕入は27,000円です。そのうち6,000円は、すでに払って前払金に記録していた額で充てます。新たに後払いする義務は27,000－6,000＝21,000円です。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

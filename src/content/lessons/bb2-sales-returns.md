@@ -1,8 +1,12 @@
 ---
-{"stableId":"bb2-sales-returns","qualification":"boki-beginner","title":"仕入返品・売上返品を掛代金と現金に分ける","description":"買手と売手を見分け、買掛金・売掛金の減額と現金返金の仕訳、部分決済後の残高を練習します。","order":10,"minutes":75,"sample":false,"updated":"2026-11-14","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・仕入返品と売上返品","subject":"basics","objectives":["買手と売手の現金・掛けの返品を仕訳できる","一部決済後の返品を掛代金の減額と返金に分けられる","返品と送料を区別して差引額と残高を検算できる"],"prerequisite":"三分法の仕入・売上と現金・掛けの区別を確認してください。","keywords":["仕入返品","売上返品","仕入戻し","売上戻り","現金返金","買掛金","売掛金"],"glossary":[]}
+{"stableId":"bb2-sales-returns","qualification":"boki-beginner","title":"仕入返品・売上返品を掛代金と現金に分ける","description":"買手と売手を見分け、買掛金・売掛金の減額と現金返金の仕訳、部分決済後の残高を練習します。","order":10,"minutes":80,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・仕入返品と売上返品","subject":"basics","objectives":["買手と売手の現金・掛けの返品を仕訳できる","一部決済後の返品を掛代金の減額と返金に分けられる","返品と送料を区別して差引額と残高を検算できる"],"prerequisite":"三分法の仕入・売上と現金・掛けの区別を確認してください。","keywords":["仕入返品","売上返品","仕入戻し","売上戻り","現金返金","買掛金","売掛金"],"glossary":[],
+  "inlineGlossary": [{"id": "glossary-da848a2092", "term": "売掛金", "definition": "商品を売った代金を後日受け取る権利を記録する資産の勘定です。"}, {"id": "glossary-1a072ce5bc", "term": "買掛金", "definition": "仕入れた商品代金を後日支払う義務を記録する負債の勘定です。"}, {"id": "glossary-445fdce417", "term": "仕訳", "definition": "取引の内容を借方と貸方に分けて記録することです。"}]
+}
 ---
 
-売った店に商品が戻ると、最初に記録した売上の一部を取り消します。買った店が商品を返せば、最初の仕入の一部を取り消します。もう一方の科目を決めるには、「返品額をどこから戻すか」を調べます。掛代金を減額する場合と、すでにやり取りした現金を返す場合では、相手勘定が変わります。以下の設例では三分法を使い、消費税を考えません。
+返品とは、いったん売買した商品を売り手へ戻し、その商品に当たる売買の記録を取り消すことです。売り手は売上を、買い手は仕入を減らします。たとえば売り手が売上を記録したときは貸方でしたから、その売上を減らす返品の日には借方に書きます。
+
+返品で相手に何を返すかは、代金を受け取ったかで変わります。掛けで売ってまだ回収していない場合、買い手が払う代金を減らせば現金を返す必要はありません。売り手の帳簿では、代金を受け取る権利である<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-da848a2092">売掛金</a>が減ります。すでに受け取った代金を返す場合は、その日に実際に返す現金などが減ります。
 
 <span id="returns-four-patterns"></span>
 
@@ -10,9 +14,9 @@
 
 1. 自店は商品を買った側か、売った側かを読みます。
 2. 仕入・売上のどちらを取り消すかを決めます。仕入の取消しは貸方、売上の取消しは借方です。
-3. 返品手続きで何が戻るかを確かめます。掛代金の減額なら買掛金・売掛金、現金の返金なら現金が相手勘定です。
+3. 返品手続きで何が戻るかを確かめます。掛代金の減額なら<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-1a072ce5bc">買掛金</a>・売掛金、現金の返金なら現金が相手勘定です。
 
-<figure><svg viewBox="0 0 340 176" width="340" height="176" style="display:block;max-width:100%;height:auto" role="img" aria-label="買手は仕入を貸方に取り消し、借方は掛けなら買掛金、返金なら現金。売手は売上を借方に取り消し、貸方は掛けなら売掛金、返金なら現金。"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="10" y="10" width="320" height="68" rx="8"/><rect x="10" y="92" width="320" height="68" rx="8"/></g><g fill="currentColor" font-size="14"><text x="23" y="32" font-weight="bold">買った店　貸方は仕入</text><text x="23" y="54">借方　掛代金の減額なら買掛金</text><text x="23" y="71">　　　現金で返金を受けたら現金</text><text x="23" y="114" font-weight="bold">売った店　借方は売上</text><text x="23" y="136">貸方　掛代金の減額なら売掛金</text><text x="23" y="153">　　　現金で返金したら現金</text></g></svg><figcaption>まず仕入・売上の取消しを決め、掛代金の減額か返金かを確認します。</figcaption></figure>
+<figure id="bb2-sales-returns-aid-1"><svg viewBox="0 0 340 176" width="340" height="176" style="display:block;max-width:100%;height:auto" role="img" aria-label="買手は仕入を貸方に取り消し、借方は掛けなら買掛金、返金なら現金。売手は売上を借方に取り消し、貸方は掛けなら売掛金、返金なら現金。"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="10" y="10" width="320" height="68" rx="8"/><rect x="10" y="92" width="320" height="68" rx="8"/></g><g fill="currentColor" font-size="14"><text x="23" y="32" font-weight="bold">買った店　貸方は仕入</text><text x="23" y="54">借方　掛代金の減額なら買掛金</text><text x="23" y="71">　　　現金で返金を受けたら現金</text><text x="23" y="114" font-weight="bold">売った店　借方は売上</text><text x="23" y="136">貸方　掛代金の減額なら売掛金</text><text x="23" y="153">　　　現金で返金したら現金</text></g></svg><figcaption>まず仕入・売上の取消しを決め、掛代金の減額か返金かを確認します。</figcaption></figure>
 
 | 自店の立場 | 返品額の扱い | 借方 | 貸方 |
 | --- | --- | --- | --- |
@@ -61,7 +65,7 @@
 
 ## 基本から標準へ：返品の資料を元の納品と照合する
 
-返品通知には「商品の本数」や「代金から差し引く額」が書かれます。返品の書類だけで仕訳の向きや金額を決めにくいときは、元の納品書と、その後の決済を示す資料を一枚ずつ確認します。以下は消費税を考えない設例です。
+返品通知には「商品の本数」や「代金から差し引く額」が書かれます。返品の書類だけで<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-445fdce417">仕訳</a>の向きや金額を決めにくいときは、元の納品書と、その後の決済を示す資料を一枚ずつ確認します。以下は消費税を考えない設例です。
 
 ### 基本：買い手が払った代金を返してもらう
 
@@ -104,6 +108,40 @@
 1個4,500円の商品を12個仕入れ、代金のうち42,000円を現金で払い、残額は掛けとしました。引取り運賃3,000円は当店負担で現金払い済みです。商品4個を返品し、仕入先は残っていた買掛金をすべて減額したうえで、残りを普通預金に返しました。引取り運賃は返りません。返品時の仕訳、仕入の差引額、買掛金残高を求めてください。
 
 <details><summary>解き方と二通りの検算を見る</summary><p>商品代は12×4,500＝54,000円で、未払いは54,000−42,000＝12,000円です。返品額は4×4,500＝18,000円、買掛金の減額は12,000円、返金は6,000円です。借方は買掛金12,000円と普通預金6,000円、貸方は仕入18,000円。仕入の差引額は54,000＋3,000−18,000＝39,000円、買掛金は0円です。残った8個の商品代36,000円に運賃3,000円を足す方法でも、現金支出42,000＋3,000から返金6,000円を引く方法でも39,000円へ戻ります。</p></details>
+
+<span id="bb2-sales-returns-first-use-worked"></span>
+
+## 返品額が未回収額を超える場合を読む
+
+30,000円の掛け販売のうち25,000円をすでに回収していれば、未回収額は5,000円です。8,000円の商品を返品され、未回収額を全て取り消して残りを現金で返す条件なら、売上は8,000円減ります。売掛金を減らせるのは5,000円までで、残り3,000円は現金の返金です。返品後に売掛金が負の額になったら、回収した額まで売掛金から引いていないか確認します。
+
+<figure id="bb2-returns-remaining-invoice">
+<figcaption id="bb2-returns-remaining-invoice-caption">売り手から見る、30,000円の掛売上と返品</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="bb2-returns-remaining-invoice-caption">
+<table>
+<thead><tr><th scope="col">出来事</th><th scope="col">売掛金の増減</th><th scope="col">残る売掛金</th><th scope="col">現金の増減</th></tr></thead>
+<tbody><tr><th scope="row">商品を渡す</th><td>30,000円増</td><td>30,000円</td><td>動かない</td></tr><tr><th scope="row">先に代金を受け取る</th><td>25,000円減</td><td>5,000円</td><td>25,000円増</td></tr><tr><th scope="row">8,000円の返品を受ける</th><td>5,000円減</td><td>0円</td><td>3,000円減</td></tr></tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="bb2-sales-returns-first-use-practice" aria-labelledby="bb2-sales-returns-first-use-practice-title">
+<h3 id="bb2-sales-returns-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-sales-returns-first-use-practice-prompt">24,000円の売上のうち21,000円を回収済みです。7,800円の返品があり、未回収額から先に差し引き、残りを現金で返します。返金額は何円ですか。</p>
+<form data-guided-practice data-expected="4800" data-guided-hint="まだ受け取っていない額と、返す必要がある額を分けます。" aria-labelledby="bb2-sales-returns-first-use-practice-title" aria-describedby="bb2-sales-returns-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-sales-returns-first-use-practice-input">答え（円）</label>
+<input id="bb2-sales-returns-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>未回収額は24,000−21,000＝3,000円です。その分を売掛金から減らしても、7,800−3,000＝4,800円が残るので現金で返します。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

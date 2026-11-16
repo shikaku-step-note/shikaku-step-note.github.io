@@ -1,0 +1,247 @@
+{
+  "lessonId": "bb2-opening-balances",
+  "whySeparate": "既存のbb2-trial-balanceとbb2-integrationは主に一か月の作業。前後の試算表と締め日を横断し、同じ開始日の累計差と時点残高を読み分け、左右が合う組織的な月違いを診断する独立技能。",
+  "prerequisites": [
+    "bb2-trial-balance",
+    "bb2-monthly",
+    "bb2-integration"
+  ],
+  "anchors": [
+    "objective-1",
+    "worked-1",
+    "objective-2",
+    "worked-2",
+    "objective-3",
+    "worked-3",
+    "opening-months-flow",
+    "opening-bank-comparison",
+    "opening-cutoff-guided",
+    "opening-independent"
+  ],
+  "source": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf#page=3",
+  "method": "同一年度内の月次資料を比較する教材上の独立応用。前月の負債・資産は繰り越す。損益科目は設例が指定する二つの年度内累計を使う。年度末の手続なし。",
+  "examples": [
+    {
+      "where": "worked-1",
+      "answers": {
+        "augustOpeningReceivables": 30000,
+        "augustReceipts": 24000,
+        "augustClosingReceivables": 58000,
+        "debitWithOpening": 82000,
+        "netChange": 28000
+      }
+    },
+    {
+      "where": "worked-2",
+      "answers": {
+        "julyTrialEach": 280000,
+        "augustTrialEach": 365000,
+        "augustTransactionsEach": 144000,
+        "augustSales": 63000,
+        "augustCumulativeSales": 143000,
+        "augustClosingBank": 105000,
+        "bankNetChange": 3000,
+        "augustClosingPayable": 42000
+      }
+    },
+    {
+      "where": "worked-3",
+      "answers": {
+        "overstatement": 8000,
+        "falseAugustTrialEach": 373000,
+        "correctAugustReceivable": 58000,
+        "correctSeptemberOpeningReceivable": 58000,
+        "openingOmissionDifferences": 30000,
+        "falseClosingWhenOpeningOmitted": 28000
+      }
+    },
+    {
+      "where": "opening-cutoff-guided",
+      "answers": {
+        "changedCutoffSeptemberOpeningReceivable": 66000
+      }
+    },
+    {
+      "where": "opening-independent",
+      "answers": {
+        "juneClosingReceivable": 48000,
+        "juneClosingBank": 58000,
+        "juneSales": 51000,
+        "juneCumulativeSales": 141000,
+        "falseJuneClosingAndJulyOpeningReceivable": 57000
+      }
+    }
+  ],
+  "questionOutline": [
+    {
+      "id": "bb2-opening-balances-assessed-receivable",
+      "kind": "number",
+      "answer": 35000,
+      "example": "5月末売掛金12,000円。6月掛売上32,000円を引渡し、売掛金9,000円を回収。7月引渡しを予定する6,000円の請求書もある。7月1日の売掛金の開始額を求める。",
+      "explanation": "前月の12,000円と当月の32,000円から回収9,000円を引く。7月の引渡し分は6月に含まない。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-month-sales",
+      "kind": "number",
+      "answer": 40000,
+      "example": "5月末累計売上65,000円。6月の掛売上32,000円、現金売上8,000円、既存売掛金の回収9,000円。6月だけの売上を求める。",
+      "explanation": "32,000＋8,000。過去分の回収9,000円は重ねて売上にしない。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-bank",
+      "kind": "number",
+      "answer": 77000,
+      "example": "5月末普通預金70,000円。6月に売掛金9,000円が振り込まれ、手数料2,000円を普通預金から支払った。6月末の普通預金を求める。",
+      "explanation": "70,000＋9,000−2,000＝77,000。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-cumulative",
+      "kind": "number",
+      "answer": 105000,
+      "example": "4月から5月末までの売上累計65,000円。6月に掛け32,000円、現金8,000円で販売。4月から6月末の累計を求める。",
+      "explanation": "65,000＋32,000＋8,000＝105,000。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-cutoff",
+      "kind": "number",
+      "answer": 6000,
+      "example": "引渡し日に売上を計上する条件で、7月に引き渡した6,000円を請求日の6月に売掛金と売上へ仕訳した。6月末の売掛金の過大額を求める。",
+      "explanation": "6,000円全額が次月分。両側に同額を追加するため、貸借合計の差では発見できない。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-movement",
+      "kind": "number",
+      "answer": 51000,
+      "example": "6月に掛売上32,000円、現金売上8,000円、既存売掛金の回収9,000円、手数料2,000円を普通預金から支払い。観察する範囲は6月の仕訳だけ。借方の合計を求める。",
+      "explanation": "月初残高を含めず、32,000＋8,000＋9,000＋2,000＝51,000。四つの金額には売上以外の移動や費用も含まれる。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-omission",
+      "kind": "number",
+      "answer": 20000,
+      "example": "前月末の買掛金は貸方20,000円でしたが、当月初の表では空欄でした。当月の掛け仕入34,000円と支払い27,000円は正しく記録されています。他に増減はありません。この繰越漏れで、月末の買掛金はいくら少なく表示されますか。",
+      "explanation": "正しくは20,000＋34,000−27,000＝27,000円、繰越漏れ後は0＋34,000−27,000＝7,000円。違いは月初の額と同じ20,000円です。"
+    }
+  ],
+  "questions": [
+    {
+      "id": "bb2-opening-balances-assessed-receivable",
+      "lesson": "bb2-opening-balances",
+      "field": "basics",
+      "objectives": [
+        0
+      ],
+      "prompt": "5月末売掛金12,000円。6月掛売上32,000円を引渡し、売掛金9,000円を回収。7月引渡しを予定する6,000円の請求書もある。7月1日の売掛金の開始額を求める。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "35000"
+      ],
+      "explanation": "前月の12,000円と当月の32,000円から回収9,000円を引く。7月の引渡し分は6月に含まない。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-month-sales",
+      "lesson": "bb2-opening-balances",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "5月末累計売上65,000円。6月の掛売上32,000円、現金売上8,000円、既存売掛金の回収9,000円。6月だけの売上を求める。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "40000"
+      ],
+      "explanation": "32,000＋8,000。過去分の回収9,000円は重ねて売上にしない。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-bank",
+      "lesson": "bb2-opening-balances",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "5月末普通預金70,000円。6月に売掛金9,000円が振り込まれ、手数料2,000円を普通預金から支払った。6月末の普通預金を求める。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "77000"
+      ],
+      "explanation": "70,000＋9,000−2,000＝77,000。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-cumulative",
+      "lesson": "bb2-opening-balances",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "4月から5月末までの売上累計65,000円。6月に掛け32,000円、現金8,000円で販売。4月から6月末の累計を求める。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "105000"
+      ],
+      "explanation": "65,000＋32,000＋8,000＝105,000。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-cutoff",
+      "lesson": "bb2-opening-balances",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "引渡し日に売上を計上する条件で、7月に引き渡した6,000円を請求日の6月に売掛金と売上へ仕訳した。6月末の売掛金の過大額を求める。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "6000"
+      ],
+      "explanation": "6,000円全額が次月分。両側に同額を追加するため、貸借合計の差では発見できない。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-movement",
+      "lesson": "bb2-opening-balances",
+      "field": "basics",
+      "objectives": [
+        1
+      ],
+      "prompt": "6月に掛売上32,000円、現金売上8,000円、既存売掛金の回収9,000円、手数料2,000円を普通預金から支払い。観察する範囲は6月の仕訳だけ。借方の合計を求める。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "51000"
+      ],
+      "explanation": "月初残高を含めず、32,000＋8,000＋9,000＋2,000＝51,000。四つの金額には売上以外の移動や費用も含まれる。"
+    },
+    {
+      "id": "bb2-opening-balances-assessed-omission",
+      "lesson": "bb2-opening-balances",
+      "field": "basics",
+      "objectives": [
+        2
+      ],
+      "prompt": "前月末の買掛金は貸方20,000円でしたが、当月初の表では空欄でした。当月の掛け仕入34,000円と支払い27,000円は正しく記録されています。他に増減はありません。この繰越漏れで、月末の買掛金はいくら少なく表示されますか。",
+      "options": [],
+      "answer": 0,
+      "input": "number",
+      "strictNumber": true,
+      "accepted": [
+        "20000"
+      ],
+      "explanation": "正しくは20,000＋34,000−27,000＝27,000円、繰越漏れ後は0＋34,000−27,000＝7,000円。違いは月初の額と同じ20,000円です。"
+    }
+  ]
+}

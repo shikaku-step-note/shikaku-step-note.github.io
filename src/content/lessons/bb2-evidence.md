@@ -1,8 +1,12 @@
 ---
-{"stableId":"bb2-evidence","qualification":"boki-beginner","title":"証ひょうを読み、3種類の伝票を集計する","description":"請求書・領収書・納品書から取引日、内容、金額、決済方法を読みます。入金・出金・振替伝票を区別し、現金を含む複合取引、伝票集計、二重計上の防止まで練習します。","order":7,"minutes":100,"sample":false,"updated":"2026-11-14","unit":2,"syllabus":[1],"scopeLabel":"2026年度適用範囲・証ひょう、3伝票、集計・管理","subject":"basics","objectives":["複数の証ひょうから取引の内容・金額・支払状況を読み取る","現金の入出金に基づき入金・出金・振替伝票を選ぶ","複数伝票を科目別に集計し重複と漏れを防ぐ"],"prerequisite":"仕訳と転記を確認してください。「現金」と「普通預金」は別の勘定です。伝票の分類でもこの区別を使います。","keywords":["証ひょう","領収書","請求書","入金伝票","出金伝票","振替伝票"],"glossary":[{"term":"証ひょう","definition":"領収書や請求書など、取引が起きた内容や金額を裏付ける資料"},{"term":"入金伝票","definition":"現金の入金を記録する伝票"},{"term":"出金伝票","definition":"現金の出金を記録する伝票"},{"term":"振替伝票","definition":"現金の入出金を伴わない取引を記録する伝票"},{"term":"納品書","definition":"納品に際して、商品の名称や数量などの引渡内容を相手先へ知らせる書類"},{"term":"請求書","definition":"代金の請求内容、金額、支払条件などを示す資料"},{"term":"領収書","definition":"代金を受け取った事実を示す資料"},{"term":"伝票集計","definition":"複数の伝票にある借貸の金額を科目別などにまとめる作業"}]}
+{"stableId":"bb2-evidence","qualification":"boki-beginner","title":"証ひょうを読み、3種類の伝票を集計する","description":"請求書・領収書・納品書から取引日、内容、金額、決済方法を読みます。入金・出金・振替伝票を区別し、現金を含む複合取引、伝票集計、二重計上の防止まで練習します。","order":7,"minutes":105,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1],"scopeLabel":"2026年度適用範囲・証ひょう、3伝票、集計・管理","subject":"basics","objectives":["複数の証ひょうから取引の内容・金額・支払状況を読み取る","現金の入出金に基づき入金・出金・振替伝票を選ぶ","複数伝票を科目別に集計し重複と漏れを防ぐ"],"prerequisite":"仕訳と転記を確認してください。「現金」と「普通預金」は別の勘定です。伝票の分類でもこの区別を使います。","keywords":["証ひょう","領収書","請求書","入金伝票","出金伝票","振替伝票"],"glossary":[{"term":"証ひょう","definition":"領収書や請求書など、取引が起きた内容や金額を裏付ける資料"},{"term":"入金伝票","definition":"現金の入金を記録する伝票"},{"term":"出金伝票","definition":"現金の出金を記録する伝票"},{"term":"振替伝票","definition":"現金の入出金を伴わない取引を記録する伝票"},{"term":"納品書","definition":"納品に際して、商品の名称や数量などの引渡内容を相手先へ知らせる書類"},{"term":"請求書","definition":"代金の請求内容、金額、支払条件などを示す資料"},{"term":"領収書","definition":"代金を受け取った事実を示す資料"},{"term":"伝票集計","definition":"複数の伝票にある借貸の金額を科目別などにまとめる作業"}],
+  "inlineGlossary": [{"id": "glossary-196a58c454", "term": "入金伝票"}, {"id": "glossary-7806573239", "term": "出金伝票"}, {"id": "glossary-aaeae32b10", "term": "振替伝票"}, {"id": "glossary-7521a51e1f", "term": "証ひょう"}, {"id": "glossary-5ef332090a", "term": "納品書"}]
+}
 ---
 
-証ひょうとは、取引が行われた日や金額を確認するための書類です。納品書で商品の受渡しを、領収書や振込明細で代金の決済を確かめます。請求書で確認できるのは請求額であり、その書類だけでは支払いの有無まで分かりません。証ひょうを照合して取引の内容を確かめたうえで、現金勘定の増減に応じて入金・出金・振替の伝票を選びます。
+商品を受け取った日と代金を払った日は、同じとは限りません。<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-5ef332090a">納品書</a>は何をいつ受け渡したかを示し、領収書は相手がお金を受け取ったことを示します。このように、日付や金額、取引の内容を確かめる手掛かりになる書類を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-7521a51e1f">証ひょう</a>と呼びます。請求書に支払期限が書いてあっても、その日までに実際に払ったかどうかは、入出金記録などで別に確かめます。
+
+伝票は、証ひょうで確認した取引を帳簿へ移すための記録です。三伝票式では、現金勘定が増える取引に<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-196a58c454">入金伝票</a>、減る取引に<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-7806573239">出金伝票</a>を使います。現金勘定が動かないときは<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-aaeae32b10">振替伝票</a>です。口座にお金が入る場合に動くのは普通預金などの勘定なので、日常の言い方で「入金」と呼んでも入金伝票になるとは限りません。
 
 <span id="objective-1"></span>
 
@@ -36,7 +40,7 @@
 
 三伝票制では、入金伝票と出金伝票に書く時点で、現金をどちら側に書くか決まっています。たとえば売掛金を紙幣で回収した場合、入金伝票が借方の現金を示すので、伝票には相手となる貸方の売掛金と金額を記入します。相手科目が売掛金でも、普通預金へ振り込まれた場合は現金勘定が動きません。その場合は振替伝票を使い、借方の普通預金と貸方の売掛金の両方を記入します。まず決済方法を読み、次に書く欄を決めます。
 
-<figure><svg viewBox="0 0 330 172" width="330" height="172" role="img" aria-label="同じ売掛金6,000円の回収。紙幣なら入金伝票で記入欄は売掛金6,000円。振込なら振替伝票で借方普通預金、貸方売掛金、各6,000円。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="4" y="5" width="322" height="75" rx="5"/><rect x="4" y="89" width="322" height="75" rx="5"/></g><g fill="currentColor" font-size="14"><text x="15" y="25" font-weight="700">紙幣で回収　入金伝票</text><text x="15" y="47">相手科目：売掛金　6,000円</text><text x="15" y="67">伝票の種類から借方の現金が決まる</text><text x="15" y="109" font-weight="700">銀行振込で回収　振替伝票</text><text x="15" y="131">借方：普通預金　6,000円</text><text x="15" y="151">貸方：売掛金　　6,000円</text></g></svg><figcaption>同じ額の売掛金回収でも、受け取ったものによって伝票の種類と記入欄が変わります。</figcaption></figure>
+<figure id="bb2-evidence-aid-1"><svg viewBox="0 0 330 172" width="330" height="172" role="img" aria-label="同じ売掛金6,000円の回収。紙幣なら入金伝票で記入欄は売掛金6,000円。振込なら振替伝票で借方普通預金、貸方売掛金、各6,000円。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="4" y="5" width="322" height="75" rx="5"/><rect x="4" y="89" width="322" height="75" rx="5"/></g><g fill="currentColor" font-size="14"><text x="15" y="25" font-weight="700">紙幣で回収　入金伝票</text><text x="15" y="47">相手科目：売掛金　6,000円</text><text x="15" y="67">伝票の種類から借方の現金が決まる</text><text x="15" y="109" font-weight="700">銀行振込で回収　振替伝票</text><text x="15" y="131">借方：普通預金　6,000円</text><text x="15" y="151">貸方：売掛金　　6,000円</text></g></svg><figcaption>同じ額の売掛金回収でも、受け取ったものによって伝票の種類と記入欄が変わります。</figcaption></figure>
 
 <span id="objective-2"></span>
 
@@ -127,7 +131,7 @@
 | 5日・領収書 | 14,000円減る | 出金 | 買掛金14,000円／現金14,000円 |
 | 9日・振込明細 | 動かない | 振替 | 買掛金8,000円／普通預金8,000円 |
 
-<figure><svg viewBox="0 0 344 175" width="344" height="175" role="img" aria-label="2日は請求書から振替伝票、5日は現金の領収書から出金伝票、9日は預金の振込明細から振替伝票を起こす。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="10" y="6" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="23" fill="#143750" font-weight="700">2日　商品と請求書</text><text x="22" y="40" fill="#143750" font-size="12">現金は動かない → 振替伝票</text><path d="M172 49v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="69" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="86" fill="#143750" font-weight="700">5日　現金支払の領収書</text><text x="22" y="103" fill="#143750" font-size="12">現金が減る → 出金伝票</text><path d="M172 112v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="132" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="149" fill="#143750" font-weight="700">9日　普通預金の振込明細</text><text x="22" y="166" fill="#143750" font-size="12">現金は動かない → 振替伝票</text></g></svg><figcaption>2日と9日で、買掛金が増えるか減るかは異なります。どちらも現金が動かないため、同じ種類の伝票を選びます。</figcaption></figure>
+<figure id="bb2-evidence-aid-2"><svg viewBox="0 0 344 175" width="344" height="175" role="img" aria-label="2日は請求書から振替伝票、5日は現金の領収書から出金伝票、9日は預金の振込明細から振替伝票を起こす。" style="display:block;width:100%;max-width:34rem;height:auto"><g font-size="15"><rect x="10" y="6" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="23" fill="#143750" font-weight="700">2日　商品と請求書</text><text x="22" y="40" fill="#143750" font-size="12">現金は動かない → 振替伝票</text><path d="M172 49v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="69" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="86" fill="#143750" font-weight="700">5日　現金支払の領収書</text><text x="22" y="103" fill="#143750" font-size="12">現金が減る → 出金伝票</text><path d="M172 112v17m-5-5 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10" y="132" width="324" height="42" rx="3" fill="#e4f3f0"/><text x="22" y="149" fill="#143750" font-weight="700">9日　普通預金の振込明細</text><text x="22" y="166" fill="#143750" font-size="12">現金は動かない → 振替伝票</text></g></svg><figcaption>2日と9日で、買掛金が増えるか減るかは異なります。どちらも現金が動かないため、同じ種類の伝票を選びます。</figcaption></figure>
 
 買掛金は40,000−14,000−8,000＝18,000円です。9日の支払いを出金伝票にして現金を8,000円減らすと、買掛金の合計は正しくても金庫の現金と普通預金の内訳がずれます。
 
@@ -166,7 +170,7 @@
 
 商品30,000円を仕入れ、現金8,000円をその場で払い、残り22,000円を掛けとしました。科目ごとに合算した結果は、借方「仕入30,000円」、貸方「現金8,000円・買掛金22,000円」です。三伝票制では現金支払いと掛けの部分を伝票に分けます。二つの方法を見比べ、設問でどちらを指定するかを確かめます。
 
-<figure><svg viewBox="0 0 350 156" width="350" height="156" role="img" aria-label="実際の決済別に分けると出金伝票は仕入8,000円で振替伝票は仕入と買掛金各22,000円。全額を掛けと仮定する方法では振替伝票で両科目30,000円、その後に出金伝票で買掛金8,000円を減らす。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="5" y="5" width="340" height="66" rx="5"/><rect x="5" y="82" width="340" height="66" rx="5"/></g><g fill="currentColor" font-size="14"><text x="15" y="26" font-weight="700">決済別に分ける方法</text><text x="15" y="46">出金：仕入 8,000円</text><text x="15" y="63">振替：仕入／買掛金 22,000円</text><text x="15" y="103" font-weight="700">全額を掛けとみなす方法</text><text x="15" y="123">振替：仕入／買掛金 30,000円</text><text x="15" y="140">出金：買掛金 8,000円</text></g></svg><figcaption>どちらも集計後の仕入は30,000円、現金の減少は8,000円、買掛金の増加は22,000円です。買掛金の純増は同じでも、決済別では貸方22,000円、全額を掛けとみなす方法では貸方30,000円・借方8,000円です。合計欄と残高欄を区別して、問題の指定どおりに集計します。</figcaption></figure>
+<figure id="bb2-evidence-aid-3"><svg viewBox="0 0 350 156" width="350" height="156" role="img" aria-label="実際の決済別に分けると出金伝票は仕入8,000円で振替伝票は仕入と買掛金各22,000円。全額を掛けと仮定する方法では振替伝票で両科目30,000円、その後に出金伝票で買掛金8,000円を減らす。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="5" y="5" width="340" height="66" rx="5"/><rect x="5" y="82" width="340" height="66" rx="5"/></g><g fill="currentColor" font-size="14"><text x="15" y="26" font-weight="700">決済別に分ける方法</text><text x="15" y="46">出金：仕入 8,000円</text><text x="15" y="63">振替：仕入／買掛金 22,000円</text><text x="15" y="103" font-weight="700">全額を掛けとみなす方法</text><text x="15" y="123">振替：仕入／買掛金 30,000円</text><text x="15" y="140">出金：買掛金 8,000円</text></g></svg><figcaption>どちらも集計後の仕入は30,000円、現金の減少は8,000円、買掛金の増加は22,000円です。買掛金の純増は同じでも、決済別では貸方22,000円、全額を掛けとみなす方法では貸方30,000円・借方8,000円です。合計欄と残高欄を区別して、問題の指定どおりに集計します。</figcaption></figure>
 
 決済別に分ける方法の振替22,000円と、全額掛け方式の出金「買掛金8,000円」を組み合わせると、仕入は22,000円しか記録されず、買掛金も14,000円しか増えません。現金8,000円だけは正しいので、現金実査だけではこの誤りを見落とします。仕入の合計が請求額、買掛金の増加が未払いの金額とそれぞれ一致するかまで確かめます。
 
@@ -195,6 +199,30 @@
 入-22と振-09を両方集計すると何が多くなるかを予想してください。その後、有効な行だけで金庫の現金と売掛金の残高を求めます。金庫の現金が実際に25,000円だったとき、どこから調べ直すかも考えます。
 
 <details><summary>集計と、誤った集計との違いを見る</summary><p>有効な現金入金は6,000円、出金は4,000円です。金庫の現金は23,000＋6,000−4,000＝25,000円となり、実際の金額と一致します。売掛金の回収は現金6,000円と普通預金5,000円の計11,000円、掛売上は9,000円です。売掛金残高は18,000＋9,000−11,000＝16,000円です。</p><p>取消し済みの入-22も数えると、現金は30,000円に増え、売掛金残高は11,000円に減ります。5,000円の差が両方に出るので、入-22の状態と差替え先の振-09を照合します。今回の5,000円は回収であり、売上に含めません。</p></details>
+
+<span id="bb2-evidence-first-use-worked"></span>
+
+## 書類が三枚あっても、記録する売上は一回
+
+納品書と請求書に同じ取引番号があり、どちらも8日に引き渡した12,000円の商品を示しているとします。請求書が10日に作られても、販売を示す二枚の資料なので、売上は8日の一回です。12日に銀行明細で振込を確認したら、その日に預金が増え、受け取る権利が減ります。販売と回収は内容が異なるため、日付を分けて記録します。
+
+<section class="guided-lesson" id="bb2-evidence-first-use-practice" aria-labelledby="bb2-evidence-first-use-practice-title">
+<h3 id="bb2-evidence-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-evidence-first-use-practice-prompt">納品書と請求書がいずれも同じ15,500円の販売を示し、翌日に全額が普通預金へ入金されました。売上に記録する額は合計何円ですか。</p>
+<form data-guided-practice data-expected="15500" data-guided-hint="書類の数と、販売が成立した回数を分けます。" aria-labelledby="bb2-evidence-first-use-practice-title" aria-describedby="bb2-evidence-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-evidence-first-use-practice-input">答え（円）</label>
+<input id="bb2-evidence-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>販売は一回なので売上は15,500円です。二枚の書類を別々の販売として数えず、翌日の15,500円の入金は売掛金の回収として扱います。</p>
+</details>
+</section>
 
 ## 出典・適用範囲
 

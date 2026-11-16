@@ -5,9 +5,9 @@
   "title": "クレジット売掛金と決済手数料",
   "description": "クレジット売掛金と決済手数料を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
   "order": 13,
-  "minutes": 85,
+  "minutes": 90,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated":"2026-11-16",
   "unit": 3,
   "syllabus": [
     2
@@ -53,11 +53,14 @@
       "term": "総額での記録",
       "definition": "売上と費用を差し引かず、それぞれの金額を別の勘定へ記録すること。"
     }
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-09d27c67d9", "term": "クレジット売掛金"}, {"id": "glossary-c3684ad975", "term": "差引入金額"}, {"id": "glossary-252b7ce2cb", "term": "支払手数料"}, {"id": "glossary-2508a0fefe", "term": "決済手数料"}, {"id": "glossary-9551bf8f59", "term": "料率"}]
 }
 ---
 
-クレジット売掛金は、カードで販売した代金を決済事業者から受け取る権利を表す資産の勘定です。商品の売上は、手数料を差し引く前の販売額で記録します。手数料は決済サービスを利用するための費用なので、売上とは別に扱います。手数料を記録する時点は問題の条件で確認し、販売から入金まで同じ費用を二度数えないようにします。
+カードで商品を売った店は、品物を渡した日には代金を受け取っていなくても、決済事業者から後日支払いを受ける権利を持ちます。この権利を記録する資産の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-09d27c67d9">クレジット売掛金</a>です。普通の掛け販売では取引先から代金を回収します。カード決済では決済事業者との間で精算するので、相手を区別できるように勘定を分けます。
+
+手数料は、その決済の仕組みを使うために店が負担する費用です。販売額と口座の入金額に差があっても、商品の販売額自体が変わるわけではありません。手数料を販売の日に記録する条件と、精算の日に記録する条件では、入金時に消すクレジット売掛金の額が変わるので、どちらの条件かを先に読みます。
 
 ここでは販売店側の記録を扱い、購入者の分割払いの利息などは扱いません。金額は消費税を考えず、手数料以外の控除はないものとします。手数料をいつ記録するかは例題ごとに指定します。販売時に確定する場合と、入金時に認識する指定の場合を混同しないでください。
 
@@ -78,7 +81,7 @@
 <span id="worked-1"></span>
 ### 例題1：販売時に手数料を記録する
 
-商品80,000円をクレジットカードで販売しました。決済手数料は販売代金の3％で、販売時に費用として記録します。後日、差引額の全額が普通預金へ入金されます。
+商品80,000円をクレジットカードで販売しました。<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-2508a0fefe">決済手数料</a>は販売代金の3％で、販売時に費用として記録します。後日、差引額の全額が普通預金へ入金されます。
 
 手数料は80,000×0.03＝2,400円、受取権利は80,000−2,400＝77,600円です。
 
@@ -98,7 +101,7 @@
 
 販売時は借方クレジット売掛金120,000円、貸方売上120,000円です。この時点では手数料の仕訳をしません。入金時に、手数料120,000×0.025＝3,000円、実入金120,000−3,000＝117,000円を計算します。
 
-入金時の借方は普通預金117,000円と支払手数料3,000円、貸方はクレジット売掛金120,000円です。預金の増加は117,000円ですが、権利の消滅額は120,000円です。差額3,000円は決済サービスの費用です。もとの債権120,000円は全額消滅しています。
+入金時の借方は普通預金117,000円と<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-252b7ce2cb">支払手数料</a>3,000円、貸方はクレジット売掛金120,000円です。預金の増加は117,000円ですが、権利の消滅額は120,000円です。差額3,000円は決済サービスの費用です。もとの債権120,000円は全額消滅しています。
 
 貸方クレジット売掛金を117,000円にすると、3,000円の権利が不自然に残ります。権利の全額を消し、受け取った預金と負担した費用に分けると、借方・貸方とも120,000円で一致します。
 
@@ -107,7 +110,7 @@
 
 3％は3を掛けるという意味ではなく、3÷100＝0.03を掛けるという意味です。2.5％なら0.025です。手数料の基準が「販売代金の何％」なのか、「一定額」なのかも区別してください。月額固定費や別の振込手数料が書かれていないなら、独自に追加しません。
 
-端数が出る条件では、四捨五入・切捨てなどの指示に従います。この教材の例題と理解度チェックでは、指定がなければ計算結果が円単位で割り切れる金額を使っています。実務の決済契約では計算単位や端数処理が異なるため、ここで使った料率を一般的な契約条件だと考えないでください。
+端数が出る条件では、四捨五入・切捨てなどの指示に従います。この教材の例題と理解度チェックでは、指定がなければ計算結果が円単位で割り切れる金額を使っています。実務の決済契約では計算単位や端数処理が異なるため、ここで使った<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-9551bf8f59">料率</a>を一般的な契約条件だと考えないでください。
 
 売上総額、手数料、入金額を同じ行にメモすると検算しやすくなります。「売上総額＝手数料＋入金額」です。ただし返品や別の控除がある問いでは、その額も別に考慮します。この式は手数料以外の増減がないという条件で成り立ちます。
 
@@ -178,7 +181,7 @@
 
 カードで5日に商品32,000円、18日に商品48,000円を販売しました。契約では手数料は3％で、販売時に費用を計上します。25日の入金明細に記載された対象は5日分だけです。消費税は考えません。
 
-<figure><svg viewBox="0 0 340 124" width="340" height="124" role="img" aria-label="32,000円の売上のうち31,040円が入金され、960円が手数料" style="display:block;max-width:100%;height:auto"><text x="16" y="23" fill="currentColor" font-size="14">5日分の売上 32,000円</text><rect x="16" y="35" width="308" height="26" rx="3" fill="none" stroke="currentColor"/><rect x="17" y="36" width="298" height="24" rx="2" fill="currentColor" opacity=".35"/><path d="M319 61v12l-22 17" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="16" y="54" fill="currentColor" font-size="13" dx="7">入金 31,040円</text><text x="211" y="107" fill="currentColor" font-size="13">手数料 960円</text></svg><figcaption>売上と入金との差は手数料です。この明細には18日分の売上は含まれていません。</figcaption></figure>
+<figure id="bb2-credit-aid-1"><svg viewBox="0 0 340 124" width="340" height="124" role="img" aria-label="32,000円の売上のうち31,040円が入金され、960円が手数料" style="display:block;max-width:100%;height:auto"><text x="16" y="23" fill="currentColor" font-size="14">5日分の売上 32,000円</text><rect x="16" y="35" width="308" height="26" rx="3" fill="none" stroke="currentColor"/><rect x="17" y="36" width="298" height="24" rx="2" fill="currentColor" opacity=".35"/><path d="M319 61v12l-22 17" fill="none" stroke="currentColor" stroke-width="1.5"/><text x="16" y="54" fill="currentColor" font-size="13" dx="7">入金 31,040円</text><text x="211" y="107" fill="currentColor" font-size="13">手数料 960円</text></svg><figcaption>売上と入金との差は手数料です。この明細には18日分の売上は含まれていません。</figcaption></figure>
 
 ### 証ひょうから仕訳へ
 
@@ -216,7 +219,7 @@
 
 3月24日の貸方は、どちらも売上85,000円です。売上は商品を渡した月に記録するためです。販売時に費用を記録する指定なら、3月末に残る権利は差引額の81,600円で、費用3,400円は3月の記録です。入金時に費用を記録する指定なら、3月末の帳簿には85,000円の権利が残り、4月の入金時に費用が生じます。4月にはどちらも普通預金81,600円が増え、対象の債権は0円になります。二度目の費用計上を防ぐには、販売日の借方に支払手数料があったか確認します。
 
-<figure><svg viewBox="0 0 340 172" width="340" height="172" role="img" aria-label="3月末のカード債権は販売時費用なら81,600円、入金時費用なら85,000円。4月の入金はどちらも81,600円。" style="display:block;max-width:100%;height:auto"><g fill="currentColor" stroke="currentColor"><rect x="13" y="30" width="250" height="18" fill-opacity=".24"/><rect x="13" y="77" width="260" height="18" fill-opacity=".24"/><path d="M263 25v81" stroke-dasharray="3 4" fill="none"/></g><g fill="currentColor" font-size="13"><text x="13" y="21">3月末　販売時費用：81,600円</text><text x="13" y="68">3月末　入金時費用：85,000円</text><text x="13" y="126">破線の位置：4月の差引入金81,600円</text><text x="13" y="151">入金時費用の3月末残高との差は3,400円</text></g></svg><figcaption>3月末の帳簿残高を比べます。支払手数料の記録を3月と4月どちらに置くかで、差引入金と残高の関係が変わります。</figcaption></figure>
+<figure id="bb2-credit-aid-2"><svg viewBox="0 0 340 172" width="340" height="172" role="img" aria-label="3月末のカード債権は販売時費用なら81,600円、入金時費用なら85,000円。4月の入金はどちらも81,600円。" style="display:block;max-width:100%;height:auto"><g fill="currentColor" stroke="currentColor"><rect x="13" y="30" width="250" height="18" fill-opacity=".24"/><rect x="13" y="77" width="260" height="18" fill-opacity=".24"/><path d="M263 25v81" stroke-dasharray="3 4" fill="none"/></g><g fill="currentColor" font-size="13"><text x="13" y="21">3月末　販売時費用：81,600円</text><text x="13" y="68">3月末　入金時費用：85,000円</text><text x="13" y="126">破線の位置：4月の差引入金81,600円</text><text x="13" y="151">入金時費用の3月末残高との差は3,400円</text></g></svg><figcaption>3月末の帳簿残高を比べます。支払手数料の記録を3月と4月どちらに置くかで、差引入金と残高の関係が変わります。</figcaption></figure>
 
 <span id="unit3-credit-batch-lab"></span>
 
@@ -233,6 +236,30 @@
 販売台帳にはD06 44,000円とD21 56,000円があります。月末の入金明細に載るのはD21だけで、その手数料率は3％です。D06は翌月入金で、手数料は入金時に費用処理する指定です。月末入金の仕訳、当月の売上額、その入金後のクレジット売掛金残高を答えてください。
 
 <details><summary>解き方と二つの合計を確認する</summary><p>今回の手数料は56,000×0.03＝1,680円、預金への入金は54,320円です。借方は普通預金54,320円と支払手数料1,680円、貸方はクレジット売掛金56,000円。販売が二件あるため当月売上は100,000円です。債権残高は未入金のD06の44,000円です。54,320＋1,680＝56,000円で消し込む額、56,000＋44,000＝100,000円で販売台帳の総額を確認できます。</p></details>
+
+<span id="bb2-credit-first-use-worked"></span>
+
+## 店が売った額と、事業者が振り込む額を区別する
+
+カード販売32,000円の手数料が3％のとき、手数料は960円で<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-c3684ad975">差引入金額</a>は31,040円です。入金時に手数料を記録する条件なら、販売日にクレジット売掛金32,000円、入金日に普通預金31,040円と手数料960円を記録して全額の債権を消します。販売日に手数料をすでに記録した条件では、債権を差引額で記録済みなので入金時に手数料をもう一度書きません。
+
+<section class="guided-lesson" id="bb2-credit-first-use-practice" aria-labelledby="bb2-credit-first-use-practice-title">
+<h3 id="bb2-credit-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-credit-first-use-practice-prompt">販売額45,000円、手数料率4％。精算時に手数料を差し引いて振り込むとき、普通預金へ入る額は何円ですか。</p>
+<form data-guided-practice data-expected="43200" data-guided-hint="割合を使う対象はカード販売の全額です。" aria-labelledby="bb2-credit-first-use-practice-title" aria-describedby="bb2-credit-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-credit-first-use-practice-input">答え（円）</label>
+<input id="bb2-credit-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>手数料は45,000×0.04＝1,800円です。45,000−1,800＝43,200円が入金されます。売上に記録した45,000円はそのままです。</p>
+</details>
+</section>
 
 ## 参照した公式範囲
 

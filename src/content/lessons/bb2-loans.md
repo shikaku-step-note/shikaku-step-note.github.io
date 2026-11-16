@@ -5,9 +5,9 @@
   "title": "貸付金・借入金と元金・利息の区別",
   "description": "貸付金・借入金と元金・利息の区別を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
   "order": 16,
-  "minutes": 84,
+  "minutes": 89,
   "sample": false,
-  "updated": "2026-11-14",
+  "updated":"2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -58,12 +58,14 @@
       "term": "支払利息",
       "definition": "金銭を借り入れるなどして負担した利息を記録する費用勘定。"
     }
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-100f0489c2", "term": "受取利息"}, {"id": "glossary-833a4944f5", "term": "支払利息"}, {"id": "glossary-ade6218a28", "term": "借入金"}, {"id": "glossary-3641887bac", "term": "貸付金"}, {"id": "glossary-77aad903f0", "term": "元金"}]
 }
 ---
 
+お金を借りると、借り手の預金が増えると同時に、将来その金額を返す義務が生じます。この義務を記録する負債の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ade6218a28">借入金</a>です。貸した側から見ると、同じ金額を後で受け取る権利が生じるので、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-3641887bac">貸付金</a>という資産になります。返済によって減るこの基の金額を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-77aad903f0">元金</a>と呼びます。
 
-**元金**は、貸したり借りたりした金額のうち、まだ返済されていない部分です。貸し手には回収する権利があるため貸付金、借り手には支払う義務があるため借入金として記録します。利息はお金を使った期間に対応する対価です。普通預金の入出金額から元金と利息を分けると、返済後に残る権利や義務を正しく求められます。
+利息は、お金を借りて使えることへの対価です。借りる側では<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-833a4944f5">支払利息</a>という費用、貸す側では<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-100f0489c2">受取利息</a>という収益に当たります。年利は一年間に元金の何％を利息とするかを示す割合です。月割りを指定された場合は、元金と年利に、対象の月数を12で割った割合を掛けます。
 
 このレッスンでは、金銭の貸借が成立し、元金と利息を問題文の指定どおり授受する取引を扱います。消費税、利息の税金、保証料、遅延損害金、割引現在価値は考えません。利率は教材上の仮定です。月数や日数の数え方は各例題の条件に従い、金融商品の契約一般へ広げないでください。
 
@@ -178,7 +180,7 @@
 
 9月1日に600,000円を年利6％で借り、普通預金に入れました。11月1日に2か月分の利息と元金200,000円を支払いました。12月1日に残りの元金と、その後1か月分の利息を支払います。契約では月割りとし、手数料はありません。
 
-<figure><svg viewBox="0 0 340 132" width="340" height="132" role="img" aria-label="9月から11月まで元金60万円が2か月、11月から12月まで元金40万円が1か月" style="display:block;max-width:100%;height:auto"><path d="M22 68h295m0 0-8-5m8 5-8 5" stroke="currentColor" stroke-width="2" fill="none"/><g fill="currentColor" font-size="12" text-anchor="middle"><text x="31" y="91">9月1日</text><text x="214" y="91">11月1日</text><text x="306" y="91">12月1日</text><text x="121" y="52">60万円で2か月</text><text x="260" y="52">40万円で1か月</text><text x="214" y="117">20万円を返済</text></g><g fill="currentColor"><circle cx="31" cy="68" r="4"/><circle cx="214" cy="68" r="4"/><circle cx="306" cy="68" r="4"/></g></svg><figcaption>11月の返済までは60万円、その後の1か月は40万円に年利を掛けます。期間ごとに元金を確認します。</figcaption></figure>
+<figure id="bb2-loans-aid-1"><svg viewBox="0 0 340 132" width="340" height="132" role="img" aria-label="9月から11月まで元金60万円が2か月、11月から12月まで元金40万円が1か月" style="display:block;max-width:100%;height:auto"><path d="M22 68h295m0 0-8-5m8 5-8 5" stroke="currentColor" stroke-width="2" fill="none"/><g fill="currentColor" font-size="12" text-anchor="middle"><text x="31" y="91">9月1日</text><text x="214" y="91">11月1日</text><text x="306" y="91">12月1日</text><text x="121" y="52">60万円で2か月</text><text x="260" y="52">40万円で1か月</text><text x="214" y="117">20万円を返済</text></g><g fill="currentColor"><circle cx="31" cy="68" r="4"/><circle cx="214" cy="68" r="4"/><circle cx="306" cy="68" r="4"/></g></svg><figcaption>11月の返済までは60万円、その後の1か月は40万円に年利を掛けます。期間ごとに元金を確認します。</figcaption></figure>
 
 ### 証ひょうから仕訳へ
 
@@ -220,7 +222,7 @@
 
 7月1日の利息は360,000×0.08×3÷12＝7,200円です。借方 普通預金97,200円、貸方 貸付金90,000円と受取利息7,200円。10月1日の利息は270,000×0.08×3÷12＝5,400円です。借方 普通預金275,400円、貸方 貸付金270,000円と受取利息5,400円。入金合計372,600円から貸付元金360,000円を引くと、利息の合計12,600円に一致します。
 
-<figure><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="元金360,000円、270,000円、完済。貸付元金を基準に、前半と後半の利息を別々に計算します。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">元金360,000円</text><text x="319" y="17" font-size="11" text-anchor="end">4月の貸付</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">270,000円</text><text x="319" y="64" font-size="11" text-anchor="end">7月に元金90,000円を回収</text><rect x="14" y="71" width="180.0" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">完済</text><text x="319" y="111" font-size="11" text-anchor="end">10月に残額回収</text><line x1="14" y1="117" x2="14" y2="129" stroke="currentColor" stroke-width="2"/></g></svg><figcaption>貸付元金を基準に、前半と後半の利息を別々に計算します。</figcaption></figure>
+<figure id="bb2-loans-aid-2"><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="元金360,000円、270,000円、完済。貸付元金を基準に、前半と後半の利息を別々に計算します。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">元金360,000円</text><text x="319" y="17" font-size="11" text-anchor="end">4月の貸付</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">270,000円</text><text x="319" y="64" font-size="11" text-anchor="end">7月に元金90,000円を回収</text><rect x="14" y="71" width="180.0" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">完済</text><text x="319" y="111" font-size="11" text-anchor="end">10月に残額回収</text><line x1="14" y1="117" x2="14" y2="129" stroke="currentColor" stroke-width="2"/></g></svg><figcaption>貸付元金を基準に、前半と後半の利息を別々に計算します。</figcaption></figure>
 
 ### 条件を読み直し、結果を予想する
 
@@ -233,6 +235,30 @@
 借入元金450,000円、年利6％、月割りで、借入れから3か月後の支払総額は96,750円でした。その日に利息と元金の一部を払い、さらに2か月後に残った元金と利息を払います。2回目の仕訳を求めてください。
 
 <details><summary>仕訳と検算を確かめる</summary><p>最初の利息は450,000×0.06×3÷12＝6,750円なので、元金の返済は90,000円です。残元金360,000円に対する2か月分の利息は3,600円です。借方 借入金360,000円と支払利息3,600円、貸方 普通預金363,600円。2回の元金合計450,000円で借入金の残高は0円です。</p></details>
+
+<span id="bb2-loans-first-use-worked"></span>
+
+## 返済日を境に、利息を計算する元金を変える
+
+60,000円を年利6％で借り、3か月後に20,000円を返し、その3か月後に残りを返します。各返済日には、その日までの利息も支払います。月割りなら前半の利息は60,000×0.06×3÷12＝900円、後半は40,000×0.06×3÷12＝600円です。最後の支払い40,600円のうち、40,000円は負債の減少、600円は利息です。見ている期間の始めに残る元金を確認すると、返済後の期間に元の60,000円を使う誤りを防げます。
+
+<section class="guided-lesson" id="bb2-loans-first-use-practice" aria-labelledby="bb2-loans-first-use-practice-title">
+<h3 id="bb2-loans-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-loans-first-use-practice-prompt">元金96,000円のうち24,000円を返した直後から、年利5％で4か月分を月割りします。残った元金にかかる利息は何円ですか。</p>
+<form data-guided-practice data-expected="1200" data-guided-hint="返済額を引いた後の元金に、年利と期間の割合を掛けます。" aria-labelledby="bb2-loans-first-use-practice-title" aria-describedby="bb2-loans-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-loans-first-use-practice-input">答え（円）</label>
+<input id="bb2-loans-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>残った元金は72,000円です。72,000×0.05×4÷12＝1,200円なので、利息は1,200円です。</p>
+</details>
+</section>
 
 ## 参照した公式範囲
 

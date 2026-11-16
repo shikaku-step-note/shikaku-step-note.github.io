@@ -5,9 +5,9 @@
   "title": "立替金・預り金と給与支給の仕訳",
   "description": "立替金・預り金と給与支給の仕訳を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
   "order": 18,
-  "minutes": 85,
+  "minutes": 90,
   "sample": false,
-  "updated": "2026-11-14",
+  "updated":"2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -58,12 +58,14 @@
       "term": "納付",
       "definition": "預かった税金などを、定められた納付先へ支払うこと。"
     }
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-d4734a5c09", "term": "源泉徴収"}, {"id": "glossary-46333fafd4", "term": "給与総額"}, {"id": "glossary-98b2097ca6", "term": "手取額"}, {"id": "glossary-f701487efb", "term": "立替金"}, {"id": "glossary-aaf87e1841", "term": "預り金"}]
 }
 ---
 
+店が従業員本人の負担する代金を先に払った場合、店には支払った分を従業員から受け取る権利が残ります。これを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f701487efb">立替金</a>に記録します。反対に、従業員の給与から引いた税金などを店があとで納める場合、店には預かった額を納付する義務が残ります。この義務を記録するのが<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-aaf87e1841">預り金</a>です。
 
-**立替金**は、他の人が負担すべきお金を店が一時的に払い、あとで受け取る権利です。**預り金**は、他の人のお金を一時的に受け取り、あとで渡す義務です。誰が最終的に負担し、店から誰へ支払うのかを確認すると、資産と負債を区別できます。
+給与の総額は、従業員の仕事に対し店が負担する金額です。税金やすでに立て替えた分を差し引いても、給与そのものが減るわけではありません。<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-98b2097ca6">手取額</a>は控除後に本人へ支払う金額を指します。給与支給日の仕訳では、何が費用で、何を預かり、何を回収したかを分け、最後に預金から出る金額を求めます。
 
 給与の仕訳では、会社の費用となる総額と、従業員へ実際に支払う手取額が違うことがあります。このレッスンでは税額や控除額を問題文で明示し、現行の税率・税額表から算出する練習はしません。社会保険の会社負担額や税額計算などを、与えられていない条件から追加しないでください。
 
@@ -95,12 +97,12 @@
 <span id="objective-2"></span>
 ## 給与の費用額は控除前の総額で記録する
 
-控除分も会社が支給する給与総額の一部です。従業員が負担する税金を会社が一時的に預かり、後で納付するため、預り金として記録します。給料の借方総額を、預り金の増加と、実際の現金・預金支出へ分けます。
+控除分も会社が支給する<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-46333fafd4">給与総額</a>の一部です。従業員が負担する税金を会社が一時的に預かり、後で納付するため、預り金として記録します。給料の借方総額を、預り金の増加と、実際の現金・預金支出へ分けます。
 
 <span id="worked-2"></span>
 ### 例題2：所得税を控除して給与を振り込む
 
-当月の給与総額200,000円を支給します。所得税8,000円を源泉徴収し、残額を普通預金から従業員へ振り込みました。他の控除や会社負担分はありません。この8,000円は問題で与えた金額で、税額表から計算したものではありません。
+当月の給与総額200,000円を支給します。所得税8,000円を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d4734a5c09">源泉徴収</a>し、残額を普通預金から従業員へ振り込みました。他の控除や会社負担分はありません。この8,000円は問題で与えた金額で、税額表から計算したものではありません。
 
 従業員への支払額は200,000−8,000＝192,000円です。仕訳は給料200,000円／預り金8,000円、普通預金192,000円です。給料は総額200,000円、預り金は納付すべき税金8,000円、普通預金は実際に支払った192,000円となります。
 
@@ -178,7 +180,7 @@
 
 従業員が負担する費用7,500円を店が普通預金から立て替えました。給与総額は200,000円です。給与支給時に立替金のうち5,000円を回収し、源泉所得税4,800円を預かって残りを普通預金から振り込みます。その後、預り金のうち3,500円を納付します。
 
-<figure><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="立替、給与控除、納付の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">立替</text><text x="168" y="39">給与控除</text><text x="285" y="39">納付</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>明細の控除項目を、回収と一時保管に分けます。</figcaption></figure>
+<figure id="bb2-custody-aid-1"><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="立替、給与控除、納付の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">立替</text><text x="168" y="39">給与控除</text><text x="285" y="39">納付</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>明細の控除項目を、回収と一時保管に分けます。</figcaption></figure>
 
 ### 証ひょうから仕訳へ
 
@@ -222,7 +224,7 @@
 
 振込額は182,000−7,000−5,400＝169,600円です。借方 給料182,000円、貸方 立替金7,000円、預り金5,400円、普通預金169,600円。納付時は借方 預り金4,500円、貸方 普通預金4,500円です。前月からの預り金を含めた残りは2,100＋5,400−4,500＝3,000円。納付は店の給料や租税公課を増やしません。
 
-<figure><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="給料総額182,000円、預金振込169,600円、控除12,400円。最後の控除額には、資産の回収と負債の増加が含まれます。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">給料総額182,000円</text><text x="319" y="17" font-size="11" text-anchor="end">振込額と控除の合計</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">預金振込169,600円</text><text x="319" y="64" font-size="11" text-anchor="end">店から従業員へ</text><rect x="14" y="71" width="223.6" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">控除12,400円</text><text x="319" y="111" font-size="11" text-anchor="end">立替回収7,000円・源泉税5,400円</text><rect x="14" y="118" width="16.4" height="10" rx="2" fill-opacity="0.12" stroke="currentColor"/></g></svg><figcaption>最後の控除額には、資産の回収と負債の増加が含まれます。</figcaption></figure>
+<figure id="bb2-custody-aid-2"><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="給料総額182,000円、預金振込169,600円、控除12,400円。最後の控除額には、資産の回収と負債の増加が含まれます。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">給料総額182,000円</text><text x="319" y="17" font-size="11" text-anchor="end">振込額と控除の合計</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">預金振込169,600円</text><text x="319" y="64" font-size="11" text-anchor="end">店から従業員へ</text><rect x="14" y="71" width="223.6" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">控除12,400円</text><text x="319" y="111" font-size="11" text-anchor="end">立替回収7,000円・源泉税5,400円</text><rect x="14" y="118" width="16.4" height="10" rx="2" fill-opacity="0.12" stroke="currentColor"/></g></svg><figcaption>最後の控除額には、資産の回収と負債の増加が含まれます。</figcaption></figure>
 
 ### 条件を読み直し、結果を予想する
 
@@ -235,6 +237,30 @@
 給与総額216,000円、普通預金から振り込んだ手取額205,100円、給与から回収した立替金4,800円です。これ以外の控除は源泉所得税だけです。給与支給時の仕訳と、預かった額3,000円を翌日納付した後に残る預り金を求めてください。期首の預り金はありません。
 
 <details><summary>仕訳と検算を確かめる</summary><p>預かった税額は216,000−205,100−4,800＝6,100円です。借方 給料216,000円、貸方 普通預金205,100円、立替金4,800円、預り金6,100円です。翌日の納付は借方 預り金3,000円、貸方 普通預金3,000円。残る義務は6,100−3,000＝3,100円です。</p></details>
+
+<span id="bb2-custody-first-use-worked"></span>
+
+## 給与の控除を、預りと回収に分ける
+
+給与総額160,000円から税金7,000円と以前の立替金4,500円を引くと、振込額は148,500円です。借方には給料160,000円、貸方には預り金7,000円、立替金4,500円、普通預金148,500円を記録します。納付時に減るのは預り金なので、納付時に新たな給料は計上しません。
+
+<section class="guided-lesson" id="bb2-custody-first-use-practice" aria-labelledby="bb2-custody-first-use-practice-title">
+<h3 id="bb2-custody-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-custody-first-use-practice-prompt">給与総額184,000円から、税金8,200円と立替分3,400円を引いて振り込みます。手取額は何円ですか。</p>
+<form data-guided-practice data-expected="172400" data-guided-hint="振込額は給料から、預かる額と回収する額を引いて求めます。" aria-labelledby="bb2-custody-first-use-practice-title" aria-describedby="bb2-custody-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-custody-first-use-practice-input">答え（円）</label>
+<input id="bb2-custody-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>184,000−8,200−3,400＝172,400円です。税金はあとで納付する義務、立替分はすでにある資産の減少なので、どちらも給料総額そのものは変えません。</p>
+</details>
+</section>
 
 ## 参照した公式範囲
 

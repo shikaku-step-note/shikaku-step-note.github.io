@@ -5,9 +5,9 @@
   "title": "仮払金・仮受金の内容判明と精算",
   "description": "仮払金・仮受金の内容判明と精算を、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
   "order": 17,
-  "minutes": 86,
+  "minutes": 91,
   "sample": false,
-  "updated": "2026-11-14",
+  "updated":"2026-11-16",
   "unit": 4,
   "syllabus": [
     2
@@ -58,12 +58,14 @@
       "term": "追加支払額",
       "definition": "仮に渡した額では足りなかったため、精算時に追加で支払う金額。"
     }
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-ad7cf90527", "term": "追加支払額"}, {"id": "glossary-11ae4a07fa", "term": "仮受金"}, {"id": "glossary-2ec4e742ea", "term": "仮払金"}, {"id": "glossary-4bcacf97bc", "term": "概算額"}, {"id": "glossary-733d4cc8f4", "term": "返却額"}]
 }
 ---
 
+出張前に店から従業員へお金を渡すと、その日に現金は減ります。ただし、交通費などにいくら使ったかは、帰って領収書を見るまで分からないことがあります。使う理由や金額が確定するまで支払いを一時的に記録する資産の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-2ec4e742ea">仮払金</a>です。残ったお金を店が返してもらう場合も、この金額からいくら使ったかを先に確かめます。
 
-**仮払金**は支払いの使途や確定額が分かるまで使う資産の勘定です。反対に、**仮受金**は受け取ったお金の内容が分かるまで使う負債の勘定です。入出金はその日に記録し、内容が分かった日に必要な部分だけを本来の勘定へ移します。
+一方、普通預金に入った金額は分かっても、何の代金か確認できないことがあります。内容が分かるまで受取額を一時的に記録する負債の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-11ae4a07fa">仮受金</a>です。理由が判明した日に行うのは、既に記録した入出金の分類を確定する作業です。その日に新たな返金や追加払いがあったときは、そこで初めて現金も動きます。
 
 仮勘定は、分からない内容を推測して売上や費用へ記録しないための科目です。ただし、内容が分かった後もそのままにする科目ではありません。ここでは現金・普通預金の実際の授受を伴う例を使い、消費税、源泉徴収、特別な出張日当規程などは考えません。
 
@@ -88,7 +90,7 @@
 
 自店は出張する従業員に、旅費の概算として現金30,000円を渡しました。帰社後、旅費交通費が24,600円と確定し、残った5,400円が現金で返されました。仮払時点では費用額は未確定でした。
 
-概算渡しの仕訳は仮払金30,000円／現金30,000円です。精算では旅費交通費24,600円、現金5,400円／仮払金30,000円とします。確定した費用と現金返却額の合計24,600＋5,400＝30,000円が、もとの仮払金と対応します。
+概算渡しの仕訳は仮払金30,000円／現金30,000円です。精算では旅費交通費24,600円、現金5,400円／仮払金30,000円とします。確定した費用と現金<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-733d4cc8f4">返却額</a>の合計24,600＋5,400＝30,000円が、もとの仮払金と対応します。
 
 返却された現金5,400円を受取利息や売上にしてはいけません。自店が渡した資金の未使用分が戻っただけで、新たな収益ではありません。精算後の仮払金は0円、現金の純減額は30,000−5,400＝24,600円で、費用額と一致します。
 
@@ -119,7 +121,7 @@
 <span id="objective-3"></span>
 ## 不足分の追加払いと複数使途の精算
 
-実際に使った額が概算渡しより多い場合は、仮払金を取り崩すだけでは費用額に足りません。会社が不足分を追加で支払うなら、差額を現金・預金の減少として貸方に加えます。費用の合計は「仮払金取崩額＋追加支払額」です。
+実際に使った額が概算渡しより多い場合は、仮払金を取り崩すだけでは費用額に足りません。会社が不足分を追加で支払うなら、差額を現金・預金の減少として貸方に加えます。費用の合計は「仮払金取崩額＋<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ad7cf90527">追加支払額</a>」です。
 
 <span id="worked-3"></span>
 ### 例題3：旅費と通信費を確定し、不足額を支払う
@@ -180,7 +182,7 @@
 
 出張前に従業員へ現金40,000円を概算で渡しました。月末に領収書を確認し、旅費交通費28,400円、通信費1,600円と確定しました。従業員は同日に残金のうち3,000円を返し、残額は翌月に現金で返すことになりました。未返金分は返金まで仮払金で追うものとします。
 
-<figure><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="概算渡し、使途確定、返金の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">概算渡し</text><text x="168" y="39">使途確定</text><text x="285" y="39">返金</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>精算の対象が分かる日と、残金が戻る日を読み分けます。</figcaption></figure>
+<figure id="bb2-temporary-aid-1"><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="概算渡し、使途確定、返金の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">概算渡し</text><text x="168" y="39">使途確定</text><text x="285" y="39">返金</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>精算の対象が分かる日と、残金が戻る日を読み分けます。</figcaption></figure>
 
 ### 証ひょうから仕訳へ
 
@@ -223,7 +225,7 @@
 
 最初は借方 普通預金94,000円、貸方 仮受金94,000円です。翌日は借方 仮受金70,000円、貸方 売掛金42,000円と前受金28,000円です。42,000円は回収した権利の減少、28,000円は引渡義務の増加です。未確定の24,000円を仮受金に残します。
 
-<figure><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="仮受金94,000円、24,000円、10,000円。内容が分かった額と返金した額だけ仮受金を減らし、未確定分を残します。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">仮受金94,000円</text><text x="319" y="17" font-size="11" text-anchor="end">入金時</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">24,000円</text><text x="319" y="64" font-size="11" text-anchor="end">70,000円の内容が判明</text><rect x="14" y="71" width="61.3" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">10,000円</text><text x="319" y="111" font-size="11" text-anchor="end">誤送金14,000円を返金</text><rect x="14" y="118" width="25.5" height="10" rx="2" fill-opacity="0.12" stroke="currentColor"/></g></svg><figcaption>内容が分かった額と返金した額だけ仮受金を減らし、未確定分を残します。</figcaption></figure>
+<figure id="bb2-temporary-aid-2"><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="仮受金94,000円、24,000円、10,000円。内容が分かった額と返金した額だけ仮受金を減らし、未確定分を残します。" style="display:block;max-width:100%;height:auto"><g fill="currentColor"><text x="14" y="17" font-size="13">仮受金94,000円</text><text x="319" y="17" font-size="11" text-anchor="end">入金時</text><rect x="14" y="24" width="240.0" height="10" rx="2" fill-opacity="0.37" stroke="currentColor"/><text x="14" y="64" font-size="13">24,000円</text><text x="319" y="64" font-size="11" text-anchor="end">70,000円の内容が判明</text><rect x="14" y="71" width="61.3" height="10" rx="2" fill-opacity="0.24" stroke="currentColor"/><text x="14" y="111" font-size="13">10,000円</text><text x="319" y="111" font-size="11" text-anchor="end">誤送金14,000円を返金</text><rect x="14" y="118" width="25.5" height="10" rx="2" fill-opacity="0.12" stroke="currentColor"/></g></svg><figcaption>内容が分かった額と返金した額だけ仮受金を減らし、未確定分を残します。</figcaption></figure>
 
 ### 条件を読み直し、結果を予想する
 
@@ -233,9 +235,33 @@
 
 ### 自力演習
 
-出張の概算額35,000円を従業員に現金で渡しました。帰着後、交通費26,500円と通信費2,300円の領収書を受け取り、残金のうち4,000円が現金で返りました。未返金分は後日返す取り決めです。精算の仕訳と仮払金残高を求めてください。
+出張の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-4bcacf97bc">概算額</a>35,000円を従業員に現金で渡しました。帰着後、交通費26,500円と通信費2,300円の領収書を受け取り、残金のうち4,000円が現金で返りました。未返金分は後日返す取り決めです。精算の仕訳と仮払金残高を求めてください。
 
 <details><summary>仕訳と検算を確かめる</summary><p>使途が確定した28,800円と返金4,000円、計32,800円の仮払金を減らします。借方は旅費交通費26,500円、通信費2,300円、現金4,000円。貸方は仮払金32,800円です。35,000−32,800＝2,200円を返金まで仮払金に残します。</p></details>
+
+<span id="bb2-temporary-first-use-worked"></span>
+
+## 判明した額が一部なら、残りを仮勘定に残す
+
+明細で不明入金25,000円を見つけ、そのうち18,000円が売掛金の回収だったと確認しました。普通預金は入金日に既に増えています。判明日には仮受金を18,000円減らし、売掛金を同額減らします。残り7,000円は理由が分かるまで仮受金です。全額を売掛金と結び付けると、未確認の入金で別の債権を消すおそれがあります。
+
+<section class="guided-lesson" id="bb2-temporary-first-use-practice" aria-labelledby="bb2-temporary-first-use-practice-title">
+<h3 id="bb2-temporary-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-temporary-first-use-practice-prompt">仮払金19,000円のうち、旅費12,400円であったことが分かりました。この日はまだ余りの返金がありません。残る仮払金は何円ですか。</p>
+<form data-guided-practice data-expected="6600" data-guided-hint="理由が分かった分と、まだ現金を受け取っていない分を分けます。" aria-labelledby="bb2-temporary-first-use-practice-title" aria-describedby="bb2-temporary-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-temporary-first-use-practice-input">答え（円）</label>
+<input id="bb2-temporary-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>19,000−12,400＝6,600円です。旅費に移した分だけ仮払金が減り、返金を受けるまでは残りを仮払金に置きます。</p>
+</details>
+</section>
 
 ## 参照した公式範囲
 

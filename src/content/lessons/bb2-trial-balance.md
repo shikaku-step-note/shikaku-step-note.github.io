@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-trial-balance","qualification":"boki-beginner","title":"合計・残高・合計残高試算表を作って照合する",
   "description":"勘定の借方・貸方の合計から残高を求め、三種類の試算表へ記入します。一か月の取引から作る一貫した資料で、転記、貸借一致、誤りの発見範囲まで練習します。",
-  "order": 25,"minutes":80,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-14",
+  "order": 25,"minutes":85,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
   "objectives":["勘定の借方合計・貸方合計から残高の金額と側を判断する","三種類の試算表を同じ資料から作成する","貸借一致で見つかる誤りと見つからない誤りを区別する"],
   "prerequisite":"仕訳から総勘定元帳への転記と、資産・負債・純資産・収益・費用の勘定記入法則を復習してください。",
   "keywords":["合計試算表","残高試算表","合計残高試算表","貸借平均","借方残高","貸方残高"],
@@ -14,11 +14,14 @@
     {"term":"貸方残高","definition":"ある勘定の貸方合計が借方合計を上回るとき、その差額が貸方に残っている状態。"},
     {"term":"貸借平均の原理","definition":"各取引を同額の借方と貸方で記録するため、全勘定を正しく集計すれば左右の合計が一致する原理。"},
     {"term":"転記漏れ","definition":"仕訳の金額を対応する元帳へ移す際、一部または全部を記入し忘れること。"}
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-c977a964aa", "term": "合計残高試算表"}, {"id": "glossary-d847544c52", "term": "合計試算表"}, {"id": "glossary-b6de5349eb", "term": "残高試算表"}, {"id": "glossary-6e92b18d3c", "term": "借方残高"}, {"id": "glossary-bfed7bdad2", "term": "貸方残高"}]
 }
 ---
 
-**試算表**は、総勘定元帳に分かれている各勘定を一つの表に並べたものです。勘定ごとの借方・貸方の合計を一覧にすると、その期間の記録が左右で同額か確かめられます。これに対して、月末に残った現金や買掛金を知るには、勘定ごとに借方と貸方の差を求めます。合計と差のどちらを使うかは、試算表の種類や設問の目的によって決まります。
+取引を帳簿に記録すると、現金や売掛金など、科目ごとに記入が集まります。そのままでは、別々のページにある記録をまとめて確かめるのに手間がかかります。そこで、元帳の各科目について、左側の借方と右側の貸方の金額を一か所に並べます。この一覧が**試算表**です。一件の仕訳を借方・貸方に同じ金額で記録したなら、科目別に集め直しても、全科目の借方と貸方の合計は同じになるはずです。
+
+科目の左右に書いた金額のすべてを集めたものが**合計**で、一方から他方を差し引いた後に残る額が**残高**です。元帳に借方120,000円と貸方30,000円があれば、合計はそれぞれの額を示し、残高は借方90,000円と示します。<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d847544c52">合計試算表</a>は左右の合計、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-b6de5349eb">残高試算表</a>は差を取った残高、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-c977a964aa">合計残高試算表</a>はその両方を並べます。月初残高を左右の合計に含めるかは、資料や設問で示された表の作り方に従います。
 
 <span id="objective-1"></span>
 
@@ -36,7 +39,7 @@
 
 現金の借方合計200,000円・貸方合計100,000円、売掛金の借方合計70,000円・貸方合計50,000円、買掛金の借方合計20,000円・貸方合計30,000円という資料があります。
 
-現金は200,000−100,000＝100,000円の借方残高です。売掛金は70,000−50,000＝20,000円の借方残高です。買掛金は30,000−20,000＝10,000円の貸方残高です。いずれも大きい側から小さい側を引き、残高は大きい側へ記入します。
+現金は200,000−100,000＝100,000円の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-6e92b18d3c">借方残高</a>です。売掛金は70,000−50,000＝20,000円の借方残高です。買掛金は30,000−20,000＝10,000円の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-bfed7bdad2">貸方残高</a>です。いずれも大きい側から小さい側を引き、残高は大きい側へ記入します。
 
 「借方から貸方を引いてマイナスなら反対側」という方法でも計算はできますが、解答欄へ負の金額をそのまま入れないでください。試算表では通常、借方残高欄か貸方残高欄へ正の額を記入します。左右が同額なら残高は0円で、合計欄には動きが残っていても残高欄には金額が残りません。
 
@@ -156,7 +159,7 @@
 
 ## 同じ元帳を三種類の試算表に組み替える
 
-<figure><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="元帳の左右を合計、勘定ごとに差を計算、残高を左右へ配置" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">元帳の左右を合計</text><text x="175" y="75">勘定ごとに差を計算</text><text x="175" y="121">残高を左右へ配置</text></g></svg><figcaption>元帳の左右を合計 → 勘定ごとに差を計算 → 残高を左右へ配置</figcaption></figure>
+<figure id="bb2-trial-balance-aid-1"><svg viewBox="0 0 350 140" width="350" height="140" role="img" aria-label="元帳の左右を合計、勘定ごとに差を計算、残高を左右へ配置" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="12" y="8" width="326" height="32" rx="5"/><rect x="12" y="54" width="326" height="32" rx="5"/><rect x="12" y="100" width="326" height="32" rx="5"/><path d="M175 40v14m-4-5 4 5 4-5m-4 37v14m-4-5 4 5 4-5"/></g><g fill="currentColor" text-anchor="middle" font-size="16"><text x="175" y="29">元帳の左右を合計</text><text x="175" y="75">勘定ごとに差を計算</text><text x="175" y="121">残高を左右へ配置</text></g></svg><figcaption>元帳の左右を合計 → 勘定ごとに差を計算 → 残高を左右へ配置</figcaption></figure>
 
 月初は現金20,000円、普通預金30,000円、資本金50,000円です。当月は現金仕入8,000円、掛売上14,000円、売掛金の普通預金への回収5,000円、通信費の現金払い2,000円がありました。月初を含む合計を求める条件です。
 
@@ -185,7 +188,7 @@
 
 たとえば売掛金勘定の借方合計が70,000円で貸方合計が25,000円なら、借方残高は45,000円です。合計試算表では70,000円と25,000円の両方を載せます。一方、残高試算表は、差額45,000円を借方に一つだけ載せます。両方の列を載せる合計残高試算表でも、合計欄と残高欄を足し合わせる必要はありません。
 
-<figure><svg viewBox="0 0 340 132" width="340" height="132" role="img" aria-label="売掛金の借方合計70,000円、貸方合計25,000円を差し引くと、借方残高45,000円。残高の貸方欄は空欄。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="6" y="7" width="328" height="113" rx="5"/><path d="M6 37h328M6 77h328M170 7v113"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="86" y="29">借方</text><text x="246" y="29">貸方</text><text x="86" y="62">合計 70,000円</text><text x="246" y="62">合計 25,000円</text><text x="86" y="103">残高 45,000円</text><text x="246" y="103">残高なし</text></g></svg><figcaption>合計は元帳の左右から取り、残高はその差を大きい側へ置きます。この例では、貸方合計が25,000円でも貸方残高はありません。</figcaption></figure>
+<figure id="bb2-trial-balance-aid-2"><svg viewBox="0 0 340 132" width="340" height="132" role="img" aria-label="売掛金の借方合計70,000円、貸方合計25,000円を差し引くと、借方残高45,000円。残高の貸方欄は空欄。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="6" y="7" width="328" height="113" rx="5"/><path d="M6 37h328M6 77h328M170 7v113"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="86" y="29">借方</text><text x="246" y="29">貸方</text><text x="86" y="62">合計 70,000円</text><text x="246" y="62">合計 25,000円</text><text x="86" y="103">残高 45,000円</text><text x="246" y="103">残高なし</text></g></svg><figcaption>合計は元帳の左右から取り、残高はその差を大きい側へ置きます。この例では、貸方合計が25,000円でも貸方残高はありません。</figcaption></figure>
 
 ### 差額が同じ二つの誤りを見分ける
 
@@ -203,3 +206,39 @@
 ### 公式資料と適用範囲
 
 [日本商工会議所「簿記初級 出題範囲・内容」](https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf)の月次集計、勘定、貸借平均の原理を2026年10月28日に確認しました。例題の取引・表は独自作成です。決算整理後試算表や締切仕訳を作る課ではありません。
+
+<span id="monthly-thread-trial-balance"></span>
+
+## 月次まで追う例　一つの口座から三つの表を作る
+
+みずき修理店の普通預金を元帳に集めます。問題に「月初残高を含めて借方・貸方を合計する」とあるため、6月初めにあった120,000円を借方に置きます。6月の入金は店主からの元入れ6,000円と以前の売掛金の回収20,000円です。出金は工具代40,000円、以前の買掛金の支払い10,000円、電気代5,000円でした。
+
+| 元帳で調べる量 | 計算 | 普通預金の欄に書く額 |
+| --- | --- | ---: |
+| 借方合計 | 120,000＋6,000＋20,000 | 146,000円 |
+| 貸方合計 | 40,000＋10,000＋5,000 | 55,000円 |
+| 借方残高 | 146,000−55,000 | 91,000円 |
+
+合計の表には146,000円と55,000円を、残高の表には借方91,000円を使います。146,000円を月内の入金と考えると、もともとあった120,000円まで新たな入金に数えてしまいます。月内の動きだけを求めるなら、入金26,000円と出金55,000円を比べ、預金が29,000円減ったと読みます。月初120,000円から29,000円減った結果も、月末の91,000円と一致します。
+
+**自分で確かめる。** 誤って6月14日の貸方「普通預金」10,000円を借方へ写したとします。ほかの科目の転記は正しい場合、この科目の誤った借方残高はいくらですか。また、試算表全体の借方は貸方をいくら上回りますか。
+
+**解答。** 誤記で借方が10,000円増えて156,000円になり、貸方が10,000円減って45,000円になります。誤った借方残高は111,000円です。両側を10,000円ずつ反対方向へ変えているため、試算表全体では借方が20,000円多くなります。貸借に差が出たら、差額と同額だけでなく、その半額に当たる取引も確認候補になります。ただし、差額だけで原因を断定せず、元の仕訳と突き合わせます。
+
+<section class="guided-lesson" id="bb2-trial-balance-first-use-practice" aria-labelledby="bb2-trial-balance-first-use-practice-title">
+<h3 id="bb2-trial-balance-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-trial-balance-first-use-practice-prompt">8,400円の貸方転記を誤って借方へ入れました。他の記帳が正しい場合、借方合計と貸方合計の差は何円ですか。</p>
+<form data-guided-practice data-expected="16800" data-guided-hint="片側に足すだけでなく、もう一方からも同じ金額がなくなっています。" aria-labelledby="bb2-trial-balance-first-use-practice-title" aria-describedby="bb2-trial-balance-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-trial-balance-first-use-practice-input">答え（円）</label>
+<input id="bb2-trial-balance-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>借方が8,400円増え、本来ある貸方が8,400円減るため、差は16,800円です。</p>
+</details>
+</section>

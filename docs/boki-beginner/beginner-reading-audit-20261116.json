@@ -1,0 +1,853 @@
+{
+  "bb2-ledger": {
+    "file": "src/content/lessons/bb2-ledger.md",
+    "beforeStructuralChars": 11647,
+    "afterStructuralChars": 13758,
+    "figures": [
+      "bb2-ledger-aid-1",
+      "bb2-ledger-aid-2",
+      "bb2-ledger-aid-3"
+    ],
+    "guided": "bb2-ledger-first-use-practice",
+    "newTeaching": [
+      "bb2-ledger-first-use-worked"
+    ],
+    "terms": [
+      "仕入先元帳",
+      "得意先元帳",
+      "総勘定元帳",
+      "借方残高",
+      "貸方残高"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 13680,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-ledger-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-evidence": {
+    "file": "src/content/lessons/bb2-evidence.md",
+    "beforeStructuralChars": 11654,
+    "afterStructuralChars": 13730,
+    "figures": [
+      "bb2-evidence-aid-1",
+      "bb2-evidence-aid-2",
+      "bb2-evidence-aid-3"
+    ],
+    "guided": "bb2-evidence-first-use-practice",
+    "newTeaching": [
+      "bb2-evidence-first-use-worked"
+    ],
+    "terms": [
+      "入金伝票",
+      "出金伝票",
+      "振替伝票",
+      "証ひょう",
+      "納品書"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 13730,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-evidence-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-cash": {
+    "file": "src/content/lessons/bb2-cash.md",
+    "beforeStructuralChars": 9492,
+    "afterStructuralChars": 11549,
+    "figures": [
+      "bb2-cash-aid-1",
+      "bb2-cash-aid-2"
+    ],
+    "guided": "bb2-cash-first-use-practice",
+    "newTeaching": [
+      "bb2-cash-first-use-worked"
+    ],
+    "terms": [
+      "他人振出小切手",
+      "当店振出小切手",
+      "定期預金",
+      "当座預金",
+      "普通預金"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11549,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-cash-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-sales": {
+    "file": "src/content/lessons/bb2-sales.md",
+    "beforeStructuralChars": 10718,
+    "afterStructuralChars": 12757,
+    "figures": [
+      "bb2-sales-aid-1",
+      "bb2-sales-aid-2"
+    ],
+    "guided": "bb2-sales-first-use-practice",
+    "newTeaching": [
+      "bb2-sales-first-use-worked"
+    ],
+    "terms": [
+      "仕入諸掛",
+      "仕入返品",
+      "売上返品",
+      "繰越商品",
+      "三分法"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 12757,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-sales-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-sales-returns": {
+    "file": "src/content/lessons/bb2-sales-returns.md",
+    "beforeStructuralChars": 5711,
+    "afterStructuralChars": 8289,
+    "figures": [
+      "bb2-sales-returns-aid-1",
+      "bb2-returns-remaining-invoice"
+    ],
+    "guided": "bb2-sales-returns-first-use-practice",
+    "newTeaching": [
+      "bb2-sales-returns-first-use-worked"
+    ],
+    "terms": [
+      "売掛金",
+      "買掛金",
+      "仕訳"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 8289,
+    "teachingObjectives": [],
+    "benchmarkAnchors": [
+      "bb2-sales-returns-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-trade-case": {
+    "file": "src/content/lessons/bb2-trade-case.md",
+    "beforeStructuralChars": 6419,
+    "afterStructuralChars": 8416,
+    "figures": [
+      "bb2-trade-case-aid-1",
+      "bb2-trade-case-aid-2"
+    ],
+    "guided": "bb2-trade-case-first-use-practice",
+    "newTeaching": [
+      "bb2-trade-case-first-use-worked"
+    ],
+    "terms": [
+      "証ひょう",
+      "売掛金",
+      "買掛金",
+      "仕訳"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 8416,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-trade-case-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-receivables": {
+    "file": "src/content/lessons/bb2-receivables.md",
+    "beforeStructuralChars": 10119,
+    "afterStructuralChars": 12191,
+    "figures": [
+      "bb2-receivables-aid-1",
+      "bb2-receivables-aid-2"
+    ],
+    "guided": "bb2-receivables-first-use-practice",
+    "newTeaching": [
+      "bb2-receivables-first-use-worked"
+    ],
+    "terms": [
+      "売掛金元帳",
+      "買掛金元帳",
+      "売掛金",
+      "買掛金",
+      "回収"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 12191,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-receivables-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-credit": {
+    "file": "src/content/lessons/bb2-credit.md",
+    "beforeStructuralChars": 9609,
+    "afterStructuralChars": 11640,
+    "figures": [
+      "bb2-credit-aid-1",
+      "bb2-credit-aid-2"
+    ],
+    "guided": "bb2-credit-first-use-practice",
+    "newTeaching": [
+      "bb2-credit-first-use-worked"
+    ],
+    "terms": [
+      "クレジット売掛金",
+      "差引入金額",
+      "支払手数料",
+      "決済手数料",
+      "料率"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11640,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-credit-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-prepayments": {
+    "file": "src/content/lessons/bb2-prepayments.md",
+    "beforeStructuralChars": 9287,
+    "afterStructuralChars": 11331,
+    "figures": [
+      "bb2-prepayments-aid-1",
+      "bb2-prepayments-aid-2"
+    ],
+    "guided": "bb2-prepayments-first-use-practice",
+    "newTeaching": [
+      "bb2-prepayments-first-use-worked"
+    ],
+    "terms": [
+      "未充当残高",
+      "前受金",
+      "前払金",
+      "残代金",
+      "充当"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11331,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-prepayments-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-other-claims": {
+    "file": "src/content/lessons/bb2-other-claims.md",
+    "beforeStructuralChars": 12561,
+    "afterStructuralChars": 14615,
+    "figures": [
+      "bb2-other-claims-aid-1",
+      "bb2-other-claims-aid-2",
+      "bb2-other-claims-aid-3"
+    ],
+    "guided": "bb2-other-claims-first-use-practice",
+    "newTeaching": [
+      "bb2-other-claims-first-use-worked"
+    ],
+    "terms": [
+      "固定資産売却損",
+      "固定資産売却益",
+      "付随費用",
+      "帳簿価額",
+      "未収入金"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 14615,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-other-claims-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-loans": {
+    "file": "src/content/lessons/bb2-loans.md",
+    "beforeStructuralChars": 9140,
+    "afterStructuralChars": 11163,
+    "figures": [
+      "bb2-loans-aid-1",
+      "bb2-loans-aid-2"
+    ],
+    "guided": "bb2-loans-first-use-practice",
+    "newTeaching": [
+      "bb2-loans-first-use-worked"
+    ],
+    "terms": [
+      "受取利息",
+      "支払利息",
+      "借入金",
+      "貸付金",
+      "元金"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11163,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-loans-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-temporary": {
+    "file": "src/content/lessons/bb2-temporary.md",
+    "beforeStructuralChars": 8965,
+    "afterStructuralChars": 11063,
+    "figures": [
+      "bb2-temporary-aid-1",
+      "bb2-temporary-aid-2"
+    ],
+    "guided": "bb2-temporary-first-use-practice",
+    "newTeaching": [
+      "bb2-temporary-first-use-worked"
+    ],
+    "terms": [
+      "追加支払額",
+      "仮受金",
+      "仮払金",
+      "概算額",
+      "返却額"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11063,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-temporary-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-custody": {
+    "file": "src/content/lessons/bb2-custody.md",
+    "beforeStructuralChars": 9027,
+    "afterStructuralChars": 11065,
+    "figures": [
+      "bb2-custody-aid-1",
+      "bb2-custody-aid-2"
+    ],
+    "guided": "bb2-custody-first-use-practice",
+    "newTeaching": [
+      "bb2-custody-first-use-worked"
+    ],
+    "terms": [
+      "源泉徴収",
+      "給与総額",
+      "手取額",
+      "立替金",
+      "預り金"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11065,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-custody-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-bills": {
+    "file": "src/content/lessons/bb2-bills.md",
+    "beforeStructuralChars": 9274,
+    "afterStructuralChars": 11371,
+    "figures": [
+      "bb2-bills-aid-1",
+      "bb2-bills-aid-2"
+    ],
+    "guided": "bb2-bills-first-use-practice",
+    "newTeaching": [
+      "bb2-bills-first-use-worked"
+    ],
+    "terms": [
+      "電子記録債務",
+      "電子記録債権",
+      "受取手形",
+      "支払手形",
+      "振出し"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11388,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "bb2-bills-first-use-worked"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-assets": {
+    "file": "src/content/lessons/bb2-assets.md",
+    "beforeStructuralChars": 9586,
+    "afterStructuralChars": 12533,
+    "figures": [
+      "bb2-assets-aid-1",
+      "bb2-assets-aid-2"
+    ],
+    "guided": "bb2-assets-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "固定資産売却損",
+      "固定資産売却益",
+      "有形固定資産",
+      "取得原価",
+      "帳簿価額"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 12412,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-acquisition"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-depreciation": {
+    "file": "src/content/lessons/bb2-depreciation.md",
+    "beforeStructuralChars": 9244,
+    "afterStructuralChars": 12112,
+    "figures": [
+      "bb2-depreciation-aid-1",
+      "bb2-depreciation-aid-2"
+    ],
+    "guided": "bb2-depreciation-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "減価償却累計額",
+      "減価償却費",
+      "帳簿価額",
+      "減価償却",
+      "見積額"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 12040,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-depreciation"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-capital": {
+    "file": "src/content/lessons/bb2-capital.md",
+    "beforeStructuralChars": 9089,
+    "afterStructuralChars": 11696,
+    "figures": [
+      "bb2-capital-aid-1",
+      "bb2-capital-aid-2"
+    ],
+    "guided": "bb2-capital-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "事業主個人の所得税",
+      "追加元入",
+      "純資産",
+      "資本金",
+      "引出"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11620,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-capital"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-expenses": {
+    "file": "src/content/lessons/bb2-expenses.md",
+    "beforeStructuralChars": 10732,
+    "afterStructuralChars": 13454,
+    "figures": [
+      "bb2-expenses-aid-1",
+      "bb2-expenses-aid-2"
+    ],
+    "guided": "bb2-expenses-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "未払固定資産税",
+      "固定資産税",
+      "消耗品費",
+      "租税公課",
+      "印紙税"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 13382,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-expenses"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-vat": {
+    "file": "src/content/lessons/bb2-vat.md",
+    "beforeStructuralChars": 8296,
+    "afterStructuralChars": 11562,
+    "figures": [
+      "bb2-vat-aid-1",
+      "bb2-vat-purchase-and-sales"
+    ],
+    "guided": "bb2-vat-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "仮受消費税",
+      "仮払消費税",
+      "税抜方式",
+      "税抜額",
+      "税込額"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11562,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-tax"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-trial-balance": {
+    "file": "src/content/lessons/bb2-trial-balance.md",
+    "beforeStructuralChars": 8760,
+    "afterStructuralChars": 11596,
+    "figures": [
+      "bb2-trial-balance-aid-1",
+      "bb2-trial-balance-aid-2"
+    ],
+    "guided": "bb2-trial-balance-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "合計残高試算表",
+      "合計試算表",
+      "残高試算表",
+      "借方残高",
+      "貸方残高"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11596,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-trial-balance"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-monthly": {
+    "file": "src/content/lessons/bb2-monthly.md",
+    "beforeStructuralChars": 8854,
+    "afterStructuralChars": 11720,
+    "figures": [
+      "bb2-monthly-aid-1",
+      "bb2-monthly-aid-2"
+    ],
+    "guided": "bb2-monthly-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "売掛金回収額",
+      "商品残高",
+      "当月損益",
+      "負債総額",
+      "資産総額"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11720,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-readings"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-integration": {
+    "file": "src/content/lessons/bb2-integration.md",
+    "beforeStructuralChars": 9571,
+    "afterStructuralChars": 13763,
+    "figures": [
+      "bb2-integration-aid-1",
+      "bb2-integration-monthly-reading"
+    ],
+    "guided": "bb2-integration-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "正味仕入高",
+      "正味売上高",
+      "残高の照合"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 13763,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "monthly-thread-integration"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-business": {
+    "file": "src/content/lessons/bb2-business.md",
+    "beforeStructuralChars": 11633,
+    "afterStructuralChars": 14681,
+    "figures": [
+      "bb2-business-aid-1",
+      "bb2-business-aid-2",
+      "bb2-business-aid-3"
+    ],
+    "guided": "bb2-business-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "貸借対照表",
+      "売掛金",
+      "純資産",
+      "買掛金",
+      "資本金"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 14681,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-profit": {
+    "file": "src/content/lessons/bb2-profit.md",
+    "beforeStructuralChars": 12445,
+    "afterStructuralChars": 15344,
+    "figures": [
+      "bb2-profit-aid-1",
+      "bb2-profit-aid-2",
+      "bb2-profit-aid-3"
+    ],
+    "guided": "bb2-profit-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "受取手数料",
+      "損益計算書",
+      "支払利息",
+      "収益",
+      "費用"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 15344,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-transaction": {
+    "file": "src/content/lessons/bb2-transaction.md",
+    "beforeStructuralChars": 11680,
+    "afterStructuralChars": 14683,
+    "figures": [
+      "bb2-transaction-aid-1",
+      "bb2-transaction-aid-2"
+    ],
+    "guided": "bb2-transaction-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "取引の8要素",
+      "簿記上の取引",
+      "複合取引",
+      "借方",
+      "貸方"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 14683,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-journal": {
+    "file": "src/content/lessons/bb2-journal.md",
+    "beforeStructuralChars": 11799,
+    "afterStructuralChars": 14728,
+    "figures": [
+      "bb2-journal-aid-1",
+      "bb2-journal-aid-2",
+      "bb2-journal-aid-3"
+    ],
+    "guided": "bb2-journal-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "借方合計",
+      "勘定科目",
+      "貸方合計",
+      "仕訳",
+      "転記"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 14728,
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-foundations-case": {
+    "file": "src/content/lessons/bb2-foundations-case.md",
+    "beforeStructuralChars": 7733,
+    "afterStructuralChars": 11003,
+    "figures": [
+      "bb2-foundations-case-aid-1",
+      "bb2-foundations-case-aid-2"
+    ],
+    "guided": "bb2-foundations-case-first-use-practice",
+    "newTeaching": [],
+    "terms": [
+      "証ひょう",
+      "売掛金",
+      "純資産",
+      "仕訳"
+    ],
+    "source": "2026年度適用の商工会議所区分表。章の既存の公式参照先と問題を維持。",
+    "currentStructuralChars": 11003,
+    "teachingObjectives": [],
+    "benchmarkAnchors": [],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。"
+  },
+  "bb2-opening-balances": {
+    "file": "src/content/lessons/bb2-opening-balances.md",
+    "currentStructuralChars": 8845,
+    "figures": [
+      "opening-months-flow",
+      "opening-bank-comparison"
+    ],
+    "teachingObjectives": [
+      "objective-1",
+      "objective-2",
+      "objective-3"
+    ],
+    "benchmarkAnchors": [
+      "opening-months-flow",
+      "opening-bank-comparison",
+      "opening-cutoff-guided",
+      "opening-guided-prompt",
+      "opening-guided-title",
+      "opening-guided-amount",
+      "opening-independent"
+    ],
+    "sourceRead": "本文、例題、条件変更、解答を前後の文脈と照合。既存の評価問題は維持。",
+    "interactionReview": "別担当者が案内と静的解説を照合し、入力用の期待値を独立に再計算。",
+    "guided": "opening-cutoff-guided",
+    "terms": [
+      "前月繰越額",
+      "当月取引額",
+      "累計額",
+      "締め日"
+    ]
+  }
+}

@@ -5716,7 +5716,8 @@
     "before": "定義のみ",
     "upgradeAction": "複数の勘定・取引から合計表を作る",
     "lessons": [
-      "bb2-trial-balance"
+      "bb2-trial-balance",
+      "bb2-opening-balances"
     ],
     "teaching": [
       {
@@ -5726,6 +5727,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "objective-2"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "objective-1"
       }
     ],
     "workedExamples": [
@@ -5744,6 +5749,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "unit6-trial-balance-reconcile"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "worked-1"
       }
     ],
     "explanationStatus": "complete",
@@ -5807,6 +5816,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-opening-balances-assessed-receivable",
+        "assessment": "bb2-opening-balances-check",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "assessments": [
@@ -5837,12 +5853,27 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-reader-month-turnover",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "mockQuestions": [
       {
         "id": "bb2-mock-a-c10",
         "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-a-m01",
+        "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-b-m02",
+        "assessment": "bb2-mock-b"
       }
     ],
     "reviewMethod": "公式範囲・使用勘定と実際の教材をAIが照合し、作成と別担当のレビューを実施。外部専門家監修・受験者試行ではありません。",
@@ -5854,7 +5885,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-16",
     "remainingGap": null
   },
   {
@@ -5866,7 +5897,8 @@
     "before": "定義と残高例",
     "upgradeAction": "借残・貸残、逆勘定の減価償却累計額に注意",
     "lessons": [
-      "bb2-trial-balance"
+      "bb2-trial-balance",
+      "bb2-opening-balances"
     ],
     "teaching": [
       {
@@ -5876,6 +5908,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "objective-2"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "objective-1"
       }
     ],
     "workedExamples": [
@@ -5894,6 +5930,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "unit6-trial-balance-reconcile"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "worked-1"
       }
     ],
     "explanationStatus": "complete",
@@ -5964,6 +6004,13 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb2-opening-balances-assessed-receivable",
+        "assessment": "bb2-opening-balances-check",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "assessments": [
@@ -5994,12 +6041,27 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb2-reader-month-turnover",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          0
+        ]
       }
     ],
     "mockQuestions": [
       {
         "id": "bb2-mock-a-c10",
         "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-a-m01",
+        "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-b-m02",
+        "assessment": "bb2-mock-b"
       }
     ],
     "reviewMethod": "公式範囲・使用勘定と実際の教材をAIが照合し、作成と別担当のレビューを実施。外部専門家監修・受験者試行ではありません。",
@@ -6011,7 +6073,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-16",
     "remainingGap": null
   },
   {
@@ -6023,11 +6085,16 @@
     "before": "定義のみ",
     "upgradeAction": "4つの金額欄を埋める一体資料",
     "lessons": [
-      "bb2-trial-balance"
+      "bb2-trial-balance",
+      "bb2-opening-balances"
     ],
     "teaching": [
       {
         "lesson": "bb2-trial-balance",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "bb2-opening-balances",
         "anchor": "objective-2"
       }
     ],
@@ -6047,6 +6114,10 @@
       {
         "lesson": "bb2-trial-balance",
         "anchor": "unit6-trial-balance-reconcile"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "worked-2"
       }
     ],
     "explanationStatus": "complete",
@@ -6082,6 +6153,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-opening-balances-assessed-month-sales",
+        "assessment": "bb2-opening-balances-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -6098,12 +6176,27 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-reader-month-settlement",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "mockQuestions": [
       {
         "id": "bb2-mock-a-c10",
         "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-a-m01",
+        "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-b-m02",
+        "assessment": "bb2-mock-b"
       }
     ],
     "reviewMethod": "公式範囲・使用勘定と実際の教材をAIが照合し、作成と別担当のレビューを実施。外部専門家監修・受験者試行ではありません。",
@@ -6115,7 +6208,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-16",
     "remainingGap": null
   },
   {
@@ -6127,12 +6220,17 @@
     "before": "monthlyに計算例",
     "upgradeAction": "取引からの再構成と合計欄の前提を明記",
     "lessons": [
-      "bb2-monthly"
+      "bb2-monthly",
+      "bb2-opening-balances"
     ],
     "teaching": [
       {
         "lesson": "bb2-monthly",
         "anchor": "objective-1"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "objective-2"
       }
     ],
     "workedExamples": [
@@ -6151,6 +6249,10 @@
       {
         "lesson": "bb2-monthly",
         "anchor": "unit6-monthly-bank"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "worked-2"
       }
     ],
     "explanationStatus": "complete",
@@ -6200,6 +6302,13 @@
         "objectiveIndices": [
           0
         ]
+      },
+      {
+        "id": "bb2-opening-balances-assessed-month-sales",
+        "assessment": "bb2-opening-balances-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -6208,6 +6317,13 @@
         "assessment": "boki-beginner-unit-6-review",
         "objectiveIndices": [
           0
+        ]
+      },
+      {
+        "id": "bb2-reader-month-settlement",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          1
         ]
       }
     ],
@@ -6239,6 +6355,14 @@
       {
         "id": "bb2-mock-b-m08",
         "assessment": "bb2-mock-b"
+      },
+      {
+        "id": "bb2-mock-a-m01",
+        "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-b-m03",
+        "assessment": "bb2-mock-b"
       }
     ],
     "reviewMethod": "公式範囲・使用勘定と実際の教材をAIが照合し、作成と別担当のレビューを実施。外部専門家監修・受験者試行ではありません。",
@@ -6250,7 +6374,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-16",
     "remainingGap": null
   },
   {
@@ -6397,11 +6521,16 @@
     "before": "monthlyに逆算例",
     "upgradeAction": "返品・前月繰越を含む条件整理",
     "lessons": [
-      "bb2-receivables"
+      "bb2-receivables",
+      "bb2-opening-balances"
     ],
     "teaching": [
       {
         "lesson": "bb2-receivables",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "bb2-opening-balances",
         "anchor": "objective-2"
       }
     ],
@@ -6421,6 +6550,10 @@
       {
         "lesson": "bb2-receivables",
         "anchor": "unit3-receivables-independent-reconcile"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "worked-2"
       }
     ],
     "explanationStatus": "complete",
@@ -6463,6 +6596,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-opening-balances-assessed-month-sales",
+        "assessment": "bb2-opening-balances-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -6483,6 +6623,13 @@
       {
         "id": "bb3-review-customer",
         "assessment": "boki-beginner-unit-3-review",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb2-reader-month-settlement",
+        "assessment": "boki-beginner-unit-6-review",
         "objectiveIndices": [
           1
         ]
@@ -6515,7 +6662,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-16",
     "remainingGap": null
   },
   {
@@ -6740,6 +6887,10 @@
       },
       {
         "id": "bb2-mock-b-m01",
+        "assessment": "bb2-mock-b"
+      },
+      {
+        "id": "bb2-mock-b-m02",
         "assessment": "bb2-mock-b"
       }
     ],
@@ -7169,11 +7320,16 @@
     "before": "monthlyに小規模例",
     "upgradeAction": "他収益、返品、資料条件を含む総合処理",
     "lessons": [
-      "bb2-integration"
+      "bb2-integration",
+      "bb2-opening-balances"
     ],
     "teaching": [
       {
         "lesson": "bb2-integration",
+        "anchor": "objective-2"
+      },
+      {
+        "lesson": "bb2-opening-balances",
         "anchor": "objective-2"
       }
     ],
@@ -7193,6 +7349,10 @@
       {
         "lesson": "bb2-integration",
         "anchor": "unit6-integration-wrong-account"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "worked-2"
       }
     ],
     "explanationStatus": "complete",
@@ -7235,6 +7395,13 @@
         "objectiveIndices": [
           1
         ]
+      },
+      {
+        "id": "bb2-opening-balances-assessed-month-sales",
+        "assessment": "bb2-opening-balances-check",
+        "objectiveIndices": [
+          1
+        ]
       }
     ],
     "assessments": [
@@ -7255,6 +7422,13 @@
       },
       {
         "id": "bb-full-review-u6-profit",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          1
+        ]
+      },
+      {
+        "id": "bb2-reader-month-settlement",
         "assessment": "boki-beginner-unit-6-review",
         "objectiveIndices": [
           1
@@ -7280,7 +7454,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-16",
     "remainingGap": null
   },
   {
@@ -7292,11 +7466,16 @@
     "before": "monthlyに説明",
     "upgradeAction": "全体漏れ・科目誤り・片側誤りを比較",
     "lessons": [
-      "bb2-integration"
+      "bb2-integration",
+      "bb2-opening-balances"
     ],
     "teaching": [
       {
         "lesson": "bb2-integration",
+        "anchor": "objective-3"
+      },
+      {
+        "lesson": "bb2-opening-balances",
         "anchor": "objective-3"
       }
     ],
@@ -7316,6 +7495,10 @@
       {
         "lesson": "bb2-integration",
         "anchor": "unit6-integration-wrong-account"
+      },
+      {
+        "lesson": "bb2-opening-balances",
+        "anchor": "worked-3"
       }
     ],
     "explanationStatus": "complete",
@@ -7344,6 +7527,13 @@
         "objectiveIndices": [
           2
         ]
+      },
+      {
+        "id": "bb2-opening-balances-assessed-cutoff",
+        "assessment": "bb2-opening-balances-check",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "assessments": [
@@ -7361,6 +7551,13 @@
           1,
           2
         ]
+      },
+      {
+        "id": "bb2-reader-month-cutoff",
+        "assessment": "boki-beginner-unit-6-review",
+        "objectiveIndices": [
+          2
+        ]
       }
     ],
     "mockQuestions": [
@@ -7370,6 +7567,14 @@
       },
       {
         "id": "bb2-mock-b-m10",
+        "assessment": "bb2-mock-b"
+      },
+      {
+        "id": "bb2-mock-a-c04",
+        "assessment": "bb2-mock-a"
+      },
+      {
+        "id": "bb2-mock-b-c02",
         "assessment": "bb2-mock-b"
       }
     ],
@@ -7382,7 +7587,7 @@
       "review-independent-review.md",
       "review-additions-independent-review.md"
     ],
-    "verifiedOn": "2026-11-14",
+    "verifiedOn": "2026-11-16",
     "remainingGap": null
   }
 ]

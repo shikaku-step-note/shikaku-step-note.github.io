@@ -1,0 +1,265 @@
+{
+  "reviews": {
+    "unit-1": [
+      {
+        "id": "bb2-reader-review-1",
+        "lesson": "bb2-foundations-case",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "18000"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "月初の純資産は76,000円です。月末の資産は141,000円、負債は39,000円。事業主は当月に12,000円を元入し、4,000円を引き出しました。ほかの純資産の直接増減はありません。当月利益を円で求めてください。",
+        "explanation": "月末の純資産は141,000−39,000＝102,000円。月初との差26,000円には元入12,000円と引出4,000円が含まれます。26,000−12,000＋4,000＝18,000円が当月利益です。"
+      }
+    ],
+    "unit-2": [
+      {
+        "id": "bb2-reader-review-2",
+        "lesson": "bb2-trade-case",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "24400"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "月初に得意先の売掛金が10,000円残っています。今月は同じ得意先へ31,000円分を掛けで引き渡し、同じ納品番号で請求書を発行しました。そのうち4,000円の返品を受け、普通預金で12,600円を回収しました。消費税は考えません。月末売掛金は何円ですか。",
+        "explanation": "10,000＋31,000−4,000−12,600＝24,400円です。請求書と納品書は同じ販売を示すため、請求書の発行による増加はありません。"
+      }
+    ],
+    "unit-3": [
+      {
+        "id": "bb2-reader-review-3",
+        "lesson": "bb2-credit",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "49150"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "カード販売37,500円の手数料率は2％です。その手数料は販売日に計上済みで、全額を翌月に決済します。別に商品売掛金12,400円も同じ銀行口座へ全額振り込まれました。この二件の合計入金額は何円ですか。",
+        "explanation": "カードの手数料は750円なので、カード分は37,500−750＝36,750円です。商品売掛金12,400円を足すと49,150円。翌月の入金で販売済みの売上や手数料をもう一度計上しません。"
+      }
+    ],
+    "unit-4": [
+      {
+        "id": "bb2-reader-review-4",
+        "lesson": "bb2-custody",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "196650"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "給料総額は211,000円です。所得税の預り額11,100円を差し引き、以前の立替金4,750円のうち3,250円を今回の給料から回収し、残りを振り込みます。差し引く項目はこれだけです。振込額は何円ですか。",
+        "explanation": "211,000−11,100−3,250＝196,650円です。今回は立替金のうち3,250円だけを回収し、立替金の残り1,500円は資産として残ります。"
+      }
+    ],
+    "unit-5": [
+      {
+        "id": "bb2-reader-review-5",
+        "lesson": "bb2-depreciation",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "116300"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "月初の備品取得原価は105,000円、減価償却累計額は29,500円です。当月に46,000円の備品を追加し、新旧合わせて当月の見積減価償却費5,200円を計上しました。売却などはありません。月末の備品全体の帳簿価額は何円ですか。",
+        "explanation": "取得原価の合計は105,000＋46,000＝151,000円、累計額は29,500＋5,200＝34,700円です。月末帳簿価額は151,000−34,700＝116,300円です。"
+      }
+    ],
+    "unit-6": [
+      {
+        "id": "bb2-reader-review-6",
+        "lesson": "bb2-monthly",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "2450"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "税抜方式とします。月初の仮受消費税は3,200円、仮払消費税は1,900円です。当月の売上に対応する消費税は3,900円、仕入れに対応する消費税は2,100円、売上返品で取り消す消費税は650円です。この間に税額を振り替えません。月末の仮受と仮払の差はいくらですか。",
+        "explanation": "仮受は3,200＋3,900−650＝6,450円。仮払は1,900＋2,100＝4,000円です。差は6,450−4,000＝2,450円。月末を問うので月初の金額も入れます。"
+      },
+      {
+        "id": "bb2-reader-month-turnover",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "37500"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "同じ4月1日から集計した売上の累計額は、6月末が127,500円、7月末が165,000円でした。7月だけの売上は何円ですか。",
+        "explanation": "二つとも4月1日から数えているため、7月末の累計から6月末の累計を引きます。165,000−127,500＝37,500円です。",
+        "objectives": [
+          0
+        ]
+      },
+      {
+        "id": "bb2-reader-month-settlement",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "35000"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "6月末の買掛金は33,000円です。7月に掛けで仕入れた商品は42,500円、7月に返した商品は2,000円。7月末に残る買掛金は38,500円でした。他に変動がなければ、7月に支払った買掛金は何円ですか。",
+        "explanation": "6月末の買掛金は7月初めへ引き継ぎます。33,000＋42,500−2,000−38,500＝35,000円。返品は支払いとは別に債務を減らします。",
+        "objectives": [
+          1
+        ]
+      },
+      {
+        "id": "bb2-reader-month-cutoff",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "input": "number",
+        "accepted": [
+          "39000"
+        ],
+        "options": [],
+        "answer": 0,
+        "prompt": "8月末集計に空欄があります。帳簿には8月27日引渡しの18,000円と、8月31日引渡しの9,400円を記入済みです。検査で、9月1日に請求書を作った11,600円の販売も、納品書によると8月31日に引き渡していたことが分かりました。消費税は考えません。正しい8月の売上合計は何円ですか。",
+        "explanation": "引渡しがいずれも8月中なので、18,000＋9,400＋11,600＝39,000円です。請求書を作った日が9月でも、8月に完了した引渡しの売上です。",
+        "objectives": [
+          2
+        ]
+      }
+    ]
+  },
+  "newLessons": {
+    "bb2-opening-balances": [
+      {
+        "id": "bb2-opening-balances-assessed-receivable",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "objectives": [
+          0
+        ],
+        "prompt": "5月末売掛金12,000円。6月掛売上32,000円を引渡し、売掛金9,000円を回収。7月引渡しを予定する6,000円の請求書もある。7月1日の売掛金の開始額を求める。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "35000"
+        ],
+        "explanation": "前月の12,000円と当月の32,000円から回収9,000円を引く。7月の引渡し分は6月に含まない。"
+      },
+      {
+        "id": "bb2-opening-balances-assessed-month-sales",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "objectives": [
+          1
+        ],
+        "prompt": "5月末累計売上65,000円。6月の掛売上32,000円、現金売上8,000円、既存売掛金の回収9,000円。6月だけの売上を求める。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "40000"
+        ],
+        "explanation": "32,000＋8,000。過去分の回収9,000円は重ねて売上にしない。"
+      },
+      {
+        "id": "bb2-opening-balances-assessed-bank",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "objectives": [
+          1
+        ],
+        "prompt": "5月末普通預金70,000円。6月に売掛金9,000円が振り込まれ、手数料2,000円を普通預金から支払った。6月末の普通預金を求める。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "77000"
+        ],
+        "explanation": "70,000＋9,000−2,000＝77,000。"
+      },
+      {
+        "id": "bb2-opening-balances-assessed-cumulative",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "objectives": [
+          1
+        ],
+        "prompt": "4月から5月末までの売上累計65,000円。6月に掛け32,000円、現金8,000円で販売。4月から6月末の累計を求める。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "105000"
+        ],
+        "explanation": "65,000＋32,000＋8,000＝105,000。"
+      },
+      {
+        "id": "bb2-opening-balances-assessed-cutoff",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "objectives": [
+          2
+        ],
+        "prompt": "引渡し日に売上を計上する条件で、7月に引き渡した6,000円を請求日の6月に売掛金と売上へ仕訳した。6月末の売掛金の過大額を求める。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "6000"
+        ],
+        "explanation": "6,000円全額が次月分。両側に同額を追加するため、貸借合計の差では発見できない。"
+      },
+      {
+        "id": "bb2-opening-balances-assessed-movement",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "objectives": [
+          1
+        ],
+        "prompt": "6月に掛売上32,000円、現金売上8,000円、既存売掛金の回収9,000円、手数料2,000円を普通預金から支払い。観察する範囲は6月の仕訳だけ。借方の合計を求める。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "51000"
+        ],
+        "explanation": "月初残高を含めず、32,000＋8,000＋9,000＋2,000＝51,000。四つの金額には売上以外の移動や費用も含まれる。"
+      },
+      {
+        "id": "bb2-opening-balances-assessed-omission",
+        "lesson": "bb2-opening-balances",
+        "field": "basics",
+        "objectives": [
+          2
+        ],
+        "prompt": "前月末の買掛金は貸方20,000円でしたが、当月初の表では空欄でした。当月の掛け仕入34,000円と支払い27,000円は正しく記録されています。他に増減はありません。この繰越漏れで、月末の買掛金はいくら少なく表示されますか。",
+        "options": [],
+        "answer": 0,
+        "input": "number",
+        "strictNumber": true,
+        "accepted": [
+          "20000"
+        ],
+        "explanation": "正しくは20,000＋34,000−27,000＝27,000円、繰越漏れ後は0＋34,000−27,000＝7,000円。違いは月初の額と同じ20,000円です。"
+      }
+    ]
+  }
+}

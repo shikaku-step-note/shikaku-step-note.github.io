@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-vat","qualification":"boki-beginner","title":"税抜方式で消費税を分け、仮払・仮受残高を読む",
   "description":"与えられた税率から税抜額・消費税額・税込額を区別し、仕入・売上・返品を税抜方式で記録します。仮払消費税と仮受消費税の差額を読み、損益や現金残高へ混ぜない練習をします。",
-  "order": 24,"minutes":75,"sample":false,"unit":6,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-14",
+  "order": 24,"minutes":80,"sample":false,"unit":6,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
   "objectives":["指定税率から税抜額・消費税額・税込額を計算する","税抜方式で仕入・売上とそれぞれの返品を仕訳する","仮受・仮払消費税の残高から指定条件で未払税額を読み取る"],
   "prerequisite":"商品の三分法、返品、売掛金・買掛金と、費用・収益の増減を復習してください。",
   "keywords":["税抜方式","仮払消費税","仮受消費税","税込額","税抜額","未払の税額"],
@@ -14,11 +14,14 @@
     {"term":"仮受消費税","definition":"税抜方式で売上などに伴い受け取った消費税を記録する勘定。増加は貸方、返品による取消しは借方。"},
     {"term":"消費税の差額読取","definition":"この課の単純化した条件では、仮受消費税残高から仮払消費税残高を引き、納付前の差額を計算すること。"},
     {"term":"返品に伴う税額取消し","definition":"返品した本体額に対応する消費税額も、元の取引と逆側へ記録して減らすこと。"}
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-480ae50a6a", "term": "仮受消費税"}, {"id": "glossary-81569a3d6d", "term": "仮払消費税"}, {"id": "glossary-18a45a46fc", "term": "税抜方式"}, {"id": "glossary-277fe948bb", "term": "税抜額"}, {"id": "glossary-faef0f9fd5", "term": "税込額"}]
 }
 ---
 
-税抜方式では、受け払いの総額を、本体の代金と消費税額に分けて記録します。たとえば掛けで商品を売ったとき、相手に請求する売掛金には税額も含まれます。その全額を売上に入れると本体の代金が分からなくなるため、税額は仮受消費税へ分けます。掛けで仕入れた場合も、買掛金の全額に対し、仕入の本体額と仮払消費税を分ければ、何をいくら買ったかと、相手への支払額の両方を帳簿から読めます。
+商品を買う人が支払う金額には、商品の代金と消費税が含まれる場合があります。たとえば、本体価格1,000円と税額100円を合わせて請求すると、相手から受け取る金額は1,100円です。このうち商品を売ったことで店の売上に入るのは、本体価格の1,000円です。請求する総額と、本体だけで測る売上高を両方知るため、本体額と税額を別々に記録します。この記録方法を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-18a45a46fc">税抜方式</a>**といいます。
+
+販売時に客へ請求した税額は「<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-480ae50a6a">仮受消費税</a>」、仕入先へ支払う税額は「<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-81569a3d6d">仮払消費税</a>」に記録します。掛け取引では請求と入出金の日が違っても、売掛金・買掛金は本体額と税額を合わせた金額です。販売側の税額と仕入側の税額を分けておけば、設問が指定する条件に沿って、あとで両者の差を求められます。この章の税率・控除・端数処理は、すべて練習問題の条件に従います。
 
 税額の端数が出ない金額を使い、返品以外の税額調整、免税・簡易課税、控除制限などはないものとします。実務上の申告税額を計算する教材ではなく、初級の税抜方式と月次残高の読取りを練習するための条件です。
 
@@ -26,7 +29,7 @@
 
 ## 本体額・税額・合計額を先に並べる
 
-税抜額が50,000円、指定税率が10％なら、消費税額は50,000×0.10＝5,000円、税込額は55,000円です。掛け取引の債権・債務や、現金・預金の増減には、実際に受け取る・支払う総額55,000円を使います。一方、売上や仕入の金額は本体の50,000円です。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-277fe948bb">税抜額</a>が50,000円、指定税率が10％なら、消費税額は50,000×0.10＝5,000円、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-faef0f9fd5">税込額</a>は55,000円です。掛け取引の債権・債務や、現金・預金の増減には、実際に受け取る・支払う総額55,000円を使います。一方、売上や仕入の金額は本体の50,000円です。
 
 税込額が先に与えられた場合は、税込額を1.10で割って税抜額を求めます。例えば税込88,000円なら、税抜額は88,000÷1.10＝80,000円、消費税額は88,000−80,000＝8,000円です。88,000円に10％を掛けた8,800円は、本体80,000円の税額とは異なります。
 
@@ -133,7 +136,7 @@
 
 ## 返品を含む取引から、仮受と仮払の残高を照合する
 
-<figure><svg viewBox="0 0 350 123" width="350" height="123" role="img" aria-label="税込77,000円のうち、売上に記録する本体は70,000円、仮受消費税は7,000円です。" style="max-width:100%;height:auto"><rect x="17" y="38" width="287.27272727272725" height="28" fill="currentColor" fill-opacity=".2"/><rect x="304.27272727272725" y="38" width="28.727272727272748" height="28" fill="currentColor" fill-opacity=".55"/><rect x="17" y="38" width="316" height="28" stroke="currentColor" fill="none"/><path d="M304.27272727272725 38v28 M318.6363636363636 66v24H333" stroke="currentColor" fill="none"/><g fill="currentColor" font-size="15"><text x="17" y="24">税込77,000円</text><text x="17" y="94">本体70,000円</text><text x="333" y="113" text-anchor="end">税7,000円</text></g></svg><figcaption>税込77,000円のうち、売上に記録する本体は70,000円、仮受消費税は7,000円です。</figcaption></figure>
+<figure id="bb2-vat-aid-1"><svg viewBox="0 0 350 123" width="350" height="123" role="img" aria-label="税込77,000円のうち、売上に記録する本体は70,000円、仮受消費税は7,000円です。" style="max-width:100%;height:auto"><rect x="17" y="38" width="287.27272727272725" height="28" fill="currentColor" fill-opacity=".2"/><rect x="304.27272727272725" y="38" width="28.727272727272748" height="28" fill="currentColor" fill-opacity=".55"/><rect x="17" y="38" width="316" height="28" stroke="currentColor" fill="none"/><path d="M304.27272727272725 38v28 M318.6363636363636 66v24H333" stroke="currentColor" fill="none"/><g fill="currentColor" font-size="15"><text x="17" y="24">税込77,000円</text><text x="17" y="94">本体70,000円</text><text x="333" y="113" text-anchor="end">税7,000円</text></g></svg><figcaption>税込77,000円のうち、売上に記録する本体は70,000円、仮受消費税は7,000円です。</figcaption></figure>
 
 以下では消費税率10％を問題の条件として与えます。端数は出ず、全取引に同じ率を用います。税率や申告方法を判断する問題ではありません。税込77,000円の掛け売上なら、本体77,000÷1.1＝70,000円、税額7,000円です。売掛金は税込額なので77,000円、売上は本体額なので70,000円です。
 
@@ -177,3 +180,48 @@
 ### 公式資料と適用範囲
 
 [日本商工会議所「簿記初級 出題範囲・内容」](https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30bokishokyu.pdf)の消費税、月次の未払税額、使用勘定科目を2026年10月28日に確認しました。原則や税額調整を網羅する税務教材ではなく、与えられた条件で初級の税抜方式を理解する独自教材です。
+
+<span id="monthly-thread-tax"></span>
+
+## 月次まで追う例　商品代と税額を別々に集める
+
+みずき修理店は6月5日、部品を本体24,000円、税額2,400円で掛け仕入れし、6月9日、その部品をすべて本体60,000円、税額6,000円で掛け販売しました。この二件だけ消費税を分け、月初の仮払・仮受残高はなく、例題の仕入分は全額差し引けるものとします。6月末までに、この二件の代金はどちらも決済していません。
+
+| 日 | 本体を記録する科目 | 税額を記録する科目 | 相手との債権・債務 |
+| --- | --- | --- | --- |
+| 6月5日 | 借方 仕入 24,000円 | 借方 仮払消費税 2,400円 | 貸方 買掛金 26,400円 |
+| 6月9日 | 貸方 売上 60,000円 | 貸方 仮受消費税 6,000円 | 借方 売掛金 66,000円 |
+
+売買の帳簿では、当月の売上60,000円と仕入24,000円を使います。税額の差を読む設問なら、仮受6,000円から仮払2,400円を差し引き、この例題の差引額3,600円を求めます。ここで行ったのは数値の読取りです。6月末までに納付や税勘定の振替を行う指示はないので、練習用の試算表には仮受6,000円と仮払2,400円を別々に残します。
+
+**自分で確かめる。** 販売した部品のうち本体8,000円分と税額800円分が返品され、代金は売掛金から差し引くことになった場合、返品の仕訳と税の差引額はいくらですか。この設問では、税額の変化だけを追い、戻った部品の在庫や原価の集計は求めません。
+
+**解答。** 元の販売で増えた売上と仮受消費税を取り消すため、借方「売上」8,000円と「仮受消費税」800円、貸方「売掛金」8,800円です。仮受は5,200円となり、仮払2,400円は変わらないので、差引額は2,800円です。売掛金の減少額8,800円に対し、税の差引額が減るのは800円だと確認します。返品は練習用です。以下の月次例では元の条件を使います。
+
+<figure id="bb2-vat-purchase-and-sales">
+<figcaption id="bb2-vat-purchase-and-sales-caption">税込額と帳簿に分ける内訳（税率10％とする学習例）</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="bb2-vat-purchase-and-sales-caption">
+<table>
+<thead><tr><th scope="col">取引</th><th scope="col">代金本体</th><th scope="col">消費税の勘定</th><th scope="col">債権・債務</th></tr></thead>
+<tbody><tr><th scope="row">掛け仕入れ</th><td>仕入12,000円</td><td>仮払消費税1,200円</td><td>買掛金13,200円</td></tr><tr><th scope="row">掛け売上</th><td>売上18,000円</td><td>仮受消費税1,800円</td><td>売掛金19,800円</td></tr></tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="bb2-vat-first-use-practice" aria-labelledby="bb2-vat-first-use-practice-title">
+<h3 id="bb2-vat-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-vat-first-use-practice-prompt">仮受消費税は7,800円でした。売上返品に対応する税額1,300円を取り消し、仮払消費税は4,100円です。差引額は何円ですか。</p>
+<form data-guided-practice data-expected="2400" data-guided-hint="先に返品の税額を仮受から取り消します。" aria-labelledby="bb2-vat-first-use-practice-title" aria-describedby="bb2-vat-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-vat-first-use-practice-input">答え（円）</label>
+<input id="bb2-vat-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>仮受から返品の税額を引くと6,500円です。仮払4,100円との差は2,400円。税抜方式では、この差を商品の売上や利益に混ぜません。</p>
+</details>
+</section>

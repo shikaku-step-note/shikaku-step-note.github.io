@@ -5,9 +5,9 @@
   "title": "売掛金・買掛金の発生と回収・支払い",
   "description": "売掛金・買掛金の発生と回収・支払いを、取引の読み取り、仕訳、残高の検算から学びます。具体例と独自問題で処理の理由まで確認できます。",
   "order": 12,
-  "minutes": 85,
+  "minutes": 90,
   "sample": false,
-  "updated": "2026-10-28",
+  "updated":"2026-11-16",
   "unit": 3,
   "syllabus": [
     2
@@ -58,11 +58,14 @@
       "term": "買掛金元帳",
       "definition": "仕入先ごとに買掛金の発生・支払い・残高などを記録する補助元帳。"
     }
-  ]
+  ],
+  "inlineGlossary": [{"id": "glossary-ce3c1d35ba", "term": "売掛金元帳"}, {"id": "glossary-4cff260853", "term": "買掛金元帳"}, {"id": "glossary-da848a2092", "term": "売掛金"}, {"id": "glossary-1a072ce5bc", "term": "買掛金"}, {"id": "glossary-bdef6a24e6", "term": "回収"}]
 }
 ---
 
-商品の販売と代金の受取りが別の日になるときは、その間の「受け取る権利」を売掛金で記録します。商品を仕入れ、代金を後日支払う場合は、支払う義務を買掛金に記録します。お金が動く日だけを記録すると、まだ回収していない売上や、まだ支払っていない仕入が帳簿から消えてしまいます。
+納品と代金の受取りの間に時間が空くと、店は代金をまだ持っていなくても、代金を求める権利を持っています。この権利を債権といい、商品の販売で生じた債権は<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-da848a2092">売掛金</a>に記録します。一方、商品を受け取った後で代金を支払う店には債務、つまりお金を払う義務が残ります。商品の仕入で生じた債務の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-1a072ce5bc">買掛金</a>です。
+
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-bdef6a24e6">回収</a>するとは、相手から代金を受け取って債権を減らすことです。買掛金を支払えば、今度は債務が減ります。この章では、まず発生した代金を全額記録し、返品や決済があったときに、どれだけ減ったかを別の日付で追います。
 
 このレッスンの金額は、特に断りがなければ消費税の処理を考えないものとします。商品売買は三分法で記録します。問題に税抜方式などの指示がある場合は、その条件を優先してください。
 
@@ -134,7 +137,7 @@
 <span id="objective-3"></span>
 ## 相手先ごとの記録を総額と照合する
 
-売掛金元帳では得意先別、買掛金元帳では仕入先別に発生と決済を記録します。総勘定元帳の売掛金は自店全体の残高です。得意先別残高を合計した金額が、総勘定元帳の売掛金残高と合うかを確かめます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ce3c1d35ba">売掛金元帳</a>では得意先別、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-4cff260853">買掛金元帳</a>では仕入先別に発生と決済を記録します。総勘定元帳の売掛金は自店全体の残高です。得意先別残高を合計した金額が、総勘定元帳の売掛金残高と合うかを確かめます。
 
 月末に得意先Aの残高が36,000円、Bが25,000円、Cが18,000円なら合計は79,000円です。総勘定元帳が84,000円なら差額5,000円があります。差額を雑費にして帳尻を合わせず、転記の漏れや金額の誤りを調べます。例えばAからの回収5,000円が補助元帳にだけ記録され、総勘定元帳へ転記されていなければ、この差が生じます。
 
@@ -187,7 +190,7 @@
 
 6月の期首に、青木店の売掛金が18,000円、森店の売掛金が12,000円残っていました。6日に青木店へ24,000円を掛けで販売し、8日に森店へ36,000円を掛けで販売しました。11日に森店から6,000円分が返品され、20日に青木店から25,000円、森店から20,000円が普通預金に入りました。消費税は考えません。
 
-<figure><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="掛売上、返品、回収の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">掛売上</text><text x="168" y="39">返品</text><text x="285" y="39">回収</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>売掛金の残高を得意先ごとに計算してから合計します。</figcaption></figure>
+<figure id="bb2-receivables-aid-1"><svg viewBox="0 0 336 68" width="336" height="68" role="img" aria-label="掛売上、返品、回収の順に処理する図" style="display:block;max-width:100%;height:auto"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="2" y="8" width="98" height="52" rx="7"/><rect x="119" y="8" width="98" height="52" rx="7"/><rect x="236" y="8" width="98" height="52" rx="7"/></g><g fill="currentColor" text-anchor="middle" font-size="13"><text x="51" y="39">掛売上</text><text x="168" y="39">返品</text><text x="285" y="39">回収</text></g><path d="M102 34h14m-5-4 5 4-5 4m108-4h14m-5-4 5 4-5 4" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>売掛金の残高を得意先ごとに計算してから合計します。</figcaption></figure>
 
 ### 証ひょうから仕訳へ
 
@@ -227,7 +230,7 @@
 | 谷口店 | 13,000円 | 12,000円 | 1,000円 | 13,000円 |
 | 合計 | 71,000円 | 32,000円 | 39,000円 | 39,000円 |
 
-<figure><svg viewBox="0 0 340 162" width="340" height="162" role="img" aria-label="正しい売掛金は宮田店38,000円、谷口店1,000円。誤記では宮田店26,000円、谷口店13,000円。合計はどちらも39,000円。" style="display:block;max-width:100%;height:auto"><g fill="currentColor" font-size="14"><text x="13" y="22">正しい相手先別残高</text><text x="13" y="66">宮田店38,000円・谷口店1,000円</text><text x="13" y="98">全額を宮田店から回収したと誤記</text><text x="13" y="142">宮田店26,000円・谷口店13,000円</text></g><g fill="currentColor" stroke="currentColor"><rect x="13" y="30" width="266" height="17" fill-opacity=".33"/><rect x="279" y="30" width="7" height="17" fill-opacity=".08"/><rect x="13" y="106" width="182" height="17" fill-opacity=".33"/><rect x="195" y="106" width="91" height="17" fill-opacity=".08"/></g></svg><figcaption>棒の全体はどちらも39,000円です。境目の位置が違い、取引先ごとの請求額がずれています。</figcaption></figure>
+<figure id="bb2-receivables-aid-2"><svg viewBox="0 0 340 162" width="340" height="162" role="img" aria-label="正しい売掛金は宮田店38,000円、谷口店1,000円。誤記では宮田店26,000円、谷口店13,000円。合計はどちらも39,000円。" style="display:block;max-width:100%;height:auto"><g fill="currentColor" font-size="14"><text x="13" y="22">正しい相手先別残高</text><text x="13" y="66">宮田店38,000円・谷口店1,000円</text><text x="13" y="98">全額を宮田店から回収したと誤記</text><text x="13" y="142">宮田店26,000円・谷口店13,000円</text></g><g fill="currentColor" stroke="currentColor"><rect x="13" y="30" width="266" height="17" fill-opacity=".33"/><rect x="279" y="30" width="7" height="17" fill-opacity=".08"/><rect x="13" y="106" width="182" height="17" fill-opacity=".33"/><rect x="195" y="106" width="91" height="17" fill-opacity=".08"/></g></svg><figcaption>棒の全体はどちらも39,000円です。境目の位置が違い、取引先ごとの請求額がずれています。</figcaption></figure>
 
 全額を宮田店へ記帳しても、普通預金と売掛金の増減の合計は合います。宮田店の残高を12,000円減らしすぎ、谷口店の残高を12,000円減らし忘れたためです。修正では、宮田店の元帳の残高を12,000円戻し、谷口店の元帳を12,000円減らします。この例で総勘定元帳の売掛金と普通預金は正しいため、銀行の入金はもう一度記録しません。残高を足した後、相手先名と明細番号も照合します。
 
@@ -250,6 +253,30 @@
 月の初めに青木店への売掛金25,000円、井上店への売掛金47,000円がありました。青木店に商品15,000円を掛けで販売し、井上店から商品8,000円分の返品を受けました。その後、普通預金に31,000円の入金があり、明細には「青木店5,000円、井上店26,000円」とあります。担当者は青木店に13,000円、井上店に18,000円と記録しました。返品は井上店の元帳に正しく記録されています。正しい相手先別残高を求め、何を直すか説明してください。
 
 <details><summary>残高、差額、訂正する場所を確かめる</summary><p>青木店は25,000＋15,000−5,000＝35,000円、井上店は47,000−8,000−26,000＝13,000円です。記帳済みの相手先別残高は27,000円と21,000円なので、青木店に8,000円を戻し、井上店から8,000円を減らします。どちらの合計も48,000円です。普通預金の入金31,000円は正しいため、総勘定元帳の普通預金と売掛金に同じ入金を追加しません。二店の期首72,000円に掛売上15,000円を足し、返品8,000円と回収31,000円を引いても48,000円になります。</p></details>
+
+<span id="bb2-receivables-first-use-worked"></span>
+
+## 残高から当月の回収額を逆算する
+
+売掛金は月初9,000円に当月の掛け販売24,000円を加え、売上返品4,000円を差し引くと29,000円になるはずです。月末の残高が17,000円で、他に増減がなければ、差の12,000円が回収額です。返品は売掛金を減らしますが、現金が入ったことにはなりません。いったん返品を別に取り除くと、当月の入金のうち回収による額が残ります。
+
+<section class="guided-lesson" id="bb2-receivables-first-use-practice" aria-labelledby="bb2-receivables-first-use-practice-title">
+<h3 id="bb2-receivables-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-receivables-first-use-practice-prompt">月初売掛金18,000円、当月掛け売上27,000円、掛けの返品3,500円、月末売掛金24,000円です。他に増減がなければ回収額は何円ですか。</p>
+<form data-guided-practice data-expected="17500" data-guided-hint="返品額と入金額を、売掛金が減る別々の理由として扱います。" aria-labelledby="bb2-receivables-first-use-practice-title" aria-describedby="bb2-receivables-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-receivables-first-use-practice-input">答え（円）</label>
+<input id="bb2-receivables-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>18,000＋27,000−3,500−24,000＝17,500円です。返品3,500円は売掛金の減少ですが代金の回収ではありません。</p>
+</details>
+</section>
 
 ## 参照した公式範囲
 
