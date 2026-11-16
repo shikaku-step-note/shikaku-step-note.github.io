@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '会計・財務と損益分岐点',
   'description': '財務三表の役割を区別する。利益と損益分岐点を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 3,
+  'order': 4,
   'minutes': 105,
   'sample': false,
   'updated': '2026-11-16',

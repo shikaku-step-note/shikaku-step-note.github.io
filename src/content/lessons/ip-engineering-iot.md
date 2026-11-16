@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '生産・設計とIoTシステム',
   'description': '設計と生産を支えるシステムを区別する。IoTの計測・通信・制御を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 11,
+  'order': 13,
   'minutes': 95,
   'sample': false,
   'updated': '2026-11-16',

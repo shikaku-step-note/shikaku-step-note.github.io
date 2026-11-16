@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'オフィスツールとOSS',
   'description': '表計算の参照と集計を説明する。OSSの利用条件と保守を確認する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 29,
+  'order': 34,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

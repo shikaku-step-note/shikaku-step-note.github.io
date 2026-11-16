@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '技術戦略とビジネスシステム',
   'description': '技術ロードマップと研究開発を説明する。事業に合うシステムの役割を選ぶ。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 10,
+  'order': 12,
   'minutes': 90,
   'sample': false,
   'updated': '2026-11-16',

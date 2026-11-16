@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'システム化計画・要件定義・調達',
   'description': '業務要件と非機能要件を整理する。RFIとRFPを使い分ける。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 14,
+  'order': 16,
   'minutes': 105,
   'sample': false,
   'updated': '2026-11-16',

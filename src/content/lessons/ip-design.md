@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '情報デザインと使いやすい画面',
   'description': '情報の構造と見た目の役割を説明する。アクセシビリティと誤操作防止を考える。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 32,
+  'order': 38,
   'minutes': 60,
   'sample': false,
   'updated': '2026-11-16',

@@ -14,11 +14,15 @@ import lessonTransfer from './ip-lesson-transfer.json';
 import strategyDepth from './ip-depth-strategy.json';
 import managementDepth from './ip-depth-management.json';
 import technologyDepth from './ip-depth-technology.json';
+import applications from './ip-application-practice.json';
 import type { Assessment, Field, Question } from '../lib/assessment';
 export const ipVersion = '2026-10-v1';
 export const ipReviewed = '2026-11-16';
 export const ipUnitReviewVersion = '2026-11-unit-review-v2';
-export const ipMockVersions = ['2026-11-mock-01-v2', '2026-11-mock-02-v3'] as const;
+export const ipMockVersions = ['2026-11-mock-01-v3', '2026-11-mock-02-v4'] as const;
+export const ipApplicationVersion = '2026-11-application-v1';
+const applicationLessons = applications.lesson as Record<string, Question[]>;
+const applicationReviews = applications.unitReview as Record<string, Question[]>;
 export const syllabusItems = [
   '経営・組織論',
   '業務分析・データ利活用',
@@ -170,10 +174,24 @@ export const ipSources = [
     verified: '2026-11-12',
   },
   {
+    id: 'cbt-restart',
+    title: 'IPA：2027年1月以降のCBT実施予定',
+    url: 'https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html',
+    version: '2026年11月5日掲載・CBTの一時休止と再開予定',
+    verified: ipReviewed,
+  },
+  {
     id: 'future-draft',
     title: 'IPA：新試験制度のシラバス案',
     url: 'https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260630.html',
     version: '2027年度向けITパスポート案Ver.0.1。現行の適用版とは区別',
+    verified: ipReviewed,
+  },
+  {
+    id: 'future-samples',
+    title: 'IPA：新試験制度のサンプル問題',
+    url: 'https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260622.html',
+    version: 'ITパスポートは2026年8月31日掲載・今後の制度のサンプル',
     verified: ipReviewed,
   },
 ];
@@ -235,6 +253,7 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
         ...(ipDepthBank[l.data.stableId] ?? []),
         ...(ipTextbookBank[l.data.stableId] ?? []),
         ...(ipLessonTransfer[l.data.stableId] ?? []),
+        ...(applicationLessons[l.data.stableId] ?? []),
       ],
       l.data.unit,
     ),
@@ -245,6 +264,8 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
       assessment.questions = ipReleaseQuestions;
       assessment.materials = ipReleaseMaterials;
       assessment.version = ipReleaseDecisionVersion;
+    } else if (applicationLessons[lessonId]?.length) {
+      assessment.version = ipApplicationVersion;
     } else if (ipLessonTransfer[lessonId]?.length) {
       assessment.version = ipLessonTransferVersion;
     } else if (ipTextbookBank[lessonId]?.length) {
@@ -289,16 +310,24 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
       };
     });
     const review = members.flatMap((l) => questionBank[l.data.stableId]?.review ?? []);
-    result.push(make(`ip-unit-${u.id}-glossary`, `${u.name}：用語確認テスト`, 'glossary', questions, u.id));
-    const transfer = unitTransferBank[u.id] ?? [];
+    const withNewTerms = members.some((l) => applicationLessons[l.data.stableId]?.length && !questionBank[l.data.stableId] && l.data.glossary.length > 0);
     result.push({
-      ...make(`ip-unit-${u.id}-review`, `${u.name}：ユニット総合確認`, 'review', [...review, ...transfer], u.id),
-      version: transfer.length ? ipUnitReviewVersion : ipVersion,
+      ...make(`ip-unit-${u.id}-glossary`, `${u.name}：用語確認テスト`, 'glossary', questions, u.id),
+      version: withNewTerms ? ipApplicationVersion : ipVersion,
+    });
+    const transfer = unitTransferBank[u.id] ?? [];
+    const application = (applicationReviews[u.id] ?? []).filter((q) => members.some((l) => l.data.stableId === q.lesson));
+    result.push({
+      ...make(`ip-unit-${u.id}-review`, `${u.name}：ユニット総合確認`, 'review', [...review, ...transfer, ...application], u.id),
+      version: application.length ? ipApplicationVersion : transfer.length ? ipUnitReviewVersion : ipVersion,
     });
     glossaries.push(...questions);
     reviews.push(...review);
   }
-  result.push(make('ip-glossary-all', 'ITパスポート：用語の総復習', 'glossary', glossaries));
+  result.push({
+    ...make('ip-glossary-all', 'ITパスポート：用語の総復習', 'glossary', glossaries),
+    version: result.some((a) => a.kind === 'glossary' && a.version === ipApplicationVersion) ? ipApplicationVersion : ipVersion,
+  });
   result.push({ ...make('ip-applied-review', 'ITパスポート：23ユニットの入力式総復習', 'review', appliedReview as Question[]), version: '2026-11-applied-review-v1' });
   result.push(make('ip-review-all', 'ITパスポート：3分野の総復習', 'review', reviews));
   result.push({

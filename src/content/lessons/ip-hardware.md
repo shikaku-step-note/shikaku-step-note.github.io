@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'ハードウェアと用途に合う選択',
   'description': '機器の用途と制約を説明する。接続・保守・環境への配慮を考える。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 31,
+  'order': 37,
   'minutes': 55,
   'sample': false,
   'updated': '2026-11-16',

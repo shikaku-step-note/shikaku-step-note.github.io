@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '情報セキュリティとリスク管理',
   'description': '機密性・完全性・可用性を説明する。リスク対応と事故対応を考える。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 38,
+  'order': 44,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

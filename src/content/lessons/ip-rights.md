@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '知的財産権とソフトウェアの利用',
   'description': '保護対象に合う権利を選ぶ。利用許諾と著作権を区別する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 5,
+  'order': 7,
   'minutes': 85,
   'sample': false,
   'updated': '2026-11-16',

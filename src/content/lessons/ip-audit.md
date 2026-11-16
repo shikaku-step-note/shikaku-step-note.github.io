@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'システム監査と内部統制',
   'description': '監査の独立性と証拠を説明する。内部統制の目的と限界を理解する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 20,
+  'order': 23,
   'minutes': 55,
   'sample': false,
   'updated': '2026-11-16',

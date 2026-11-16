@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'SQLとトランザクション',
   'description': '検索・集計の基本を読む。同時更新と復旧の必要性を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 35,
+  'order': 41,
   'minutes': 75,
   'sample': false,
   'updated': '2026-11-16',

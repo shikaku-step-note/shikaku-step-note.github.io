@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '情報・労働・取引の法律と倫理',
   'description': '身近な行動と関連する法律を結び付ける。個人情報の目的と第三者提供を考える。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 6,
+  'order': 8,
   'minutes': 105,
   'sample': false,
   'updated': '2026-11-16',

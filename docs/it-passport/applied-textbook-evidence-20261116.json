@@ -1,0 +1,2373 @@
+{
+  "release": "2026-11-16",
+  "source": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+  "officialCount": 63,
+  "countsByUnit": {
+    "1": {
+      "before": 4,
+      "after": 6
+    },
+    "2": {
+      "before": 3,
+      "after": 3
+    },
+    "3": {
+      "before": 2,
+      "after": 2
+    },
+    "4": {
+      "before": 1,
+      "after": 1
+    },
+    "5": {
+      "before": 2,
+      "after": 2
+    },
+    "6": {
+      "before": 1,
+      "after": 1
+    },
+    "7": {
+      "before": 1,
+      "after": 1
+    },
+    "8": {
+      "before": 1,
+      "after": 1
+    },
+    "9": {
+      "before": 1,
+      "after": 1
+    },
+    "10": {
+      "before": 2,
+      "after": 3
+    },
+    "11": {
+      "before": 1,
+      "after": 1
+    },
+    "12": {
+      "before": 1,
+      "after": 1
+    },
+    "13": {
+      "before": 3,
+      "after": 4
+    },
+    "14": {
+      "before": 2,
+      "after": 3
+    },
+    "15": {
+      "before": 1,
+      "after": 1
+    },
+    "16": {
+      "before": 1,
+      "after": 1
+    },
+    "17": {
+      "before": 3,
+      "after": 4
+    },
+    "18": {
+      "before": 1,
+      "after": 1
+    },
+    "19": {
+      "before": 1,
+      "after": 1
+    },
+    "20": {
+      "before": 1,
+      "after": 1
+    },
+    "21": {
+      "before": 2,
+      "after": 2
+    },
+    "22": {
+      "before": 2,
+      "after": 2
+    },
+    "23": {
+      "before": 4,
+      "after": 4
+    }
+  },
+  "priorEvidence": [
+    "strategy-objective-audit.md",
+    "management-release-audit.md",
+    "technology-chapter-audit.md"
+  ],
+  "newEvidenceColumns": [
+    "anchor",
+    "skill",
+    "teachingWorkedAndVariation",
+    "freshPractice"
+  ],
+  "itemToLessons": {
+    "1": [
+      "ip-organization"
+    ],
+    "2": [
+      "ip-analysis",
+      "ip-source-bias-decision",
+      "ip-reading-business-data",
+      "ip-inventory-decisions",
+      "ip-release-decision"
+    ],
+    "3": [
+      "ip-finance",
+      "ip-reading-business-data"
+    ],
+    "4": [
+      "ip-rights"
+    ],
+    "5": [
+      "ip-law-ethics"
+    ],
+    "6": [
+      "ip-law-ethics"
+    ],
+    "7": [
+      "ip-law-ethics"
+    ],
+    "8": [
+      "ip-standards"
+    ],
+    "9": [
+      "ip-strategy"
+    ],
+    "10": [
+      "ip-marketing"
+    ],
+    "11": [
+      "ip-strategy"
+    ],
+    "12": [
+      "ip-marketing"
+    ],
+    "13": [
+      "ip-tech-business"
+    ],
+    "14": [
+      "ip-tech-business"
+    ],
+    "15": [
+      "ip-engineering-iot"
+    ],
+    "16": [
+      "ip-ecommerce"
+    ],
+    "17": [
+      "ip-engineering-iot"
+    ],
+    "18": [
+      "ip-system-strategy"
+    ],
+    "19": [
+      "ip-system-strategy"
+    ],
+    "20": [
+      "ip-system-strategy"
+    ],
+    "21": [
+      "ip-system-strategy"
+    ],
+    "22": [
+      "ip-procurement"
+    ],
+    "23": [
+      "ip-procurement",
+      "ip-release-decision"
+    ],
+    "24": [
+      "ip-procurement"
+    ],
+    "25": [
+      "ip-development",
+      "ip-release-decision"
+    ],
+    "26": [
+      "ip-agile"
+    ],
+    "27": [
+      "ip-project",
+      "ip-reading-project-plans",
+      "ip-resource-planning"
+    ],
+    "28": [
+      "ip-services",
+      "ip-release-decision"
+    ],
+    "29": [
+      "ip-services"
+    ],
+    "30": [
+      "ip-services"
+    ],
+    "31": [
+      "ip-audit"
+    ],
+    "32": [
+      "ip-audit"
+    ],
+    "33": [
+      "ip-binary"
+    ],
+    "34": [
+      "ip-statistics",
+      "ip-regression-residuals"
+    ],
+    "35": [
+      "ip-ai-data"
+    ],
+    "36": [
+      "ip-algorithms"
+    ],
+    "37": [
+      "ip-algorithms",
+      "ip-function-trace"
+    ],
+    "38": [
+      "ip-languages"
+    ],
+    "39": [
+      "ip-languages"
+    ],
+    "40": [
+      "ip-computer"
+    ],
+    "41": [
+      "ip-computer"
+    ],
+    "42": [
+      "ip-computer"
+    ],
+    "43": [
+      "ip-architecture"
+    ],
+    "44": [
+      "ip-architecture"
+    ],
+    "45": [
+      "ip-os-files"
+    ],
+    "46": [
+      "ip-os-files"
+    ],
+    "47": [
+      "ip-office-oss",
+      "ip-reading-spreadsheets",
+      "ip-spreadsheet-lookups"
+    ],
+    "48": [
+      "ip-office-oss"
+    ],
+    "49": [
+      "ip-hardware"
+    ],
+    "50": [
+      "ip-design"
+    ],
+    "51": [
+      "ip-design"
+    ],
+    "52": [
+      "ip-media"
+    ],
+    "53": [
+      "ip-media"
+    ],
+    "54": [
+      "ip-database"
+    ],
+    "55": [
+      "ip-database"
+    ],
+    "56": [
+      "ip-sql-transactions"
+    ],
+    "57": [
+      "ip-sql-transactions"
+    ],
+    "58": [
+      "ip-network"
+    ],
+    "59": [
+      "ip-protocols"
+    ],
+    "60": [
+      "ip-protocols"
+    ],
+    "61": [
+      "ip-security-risk"
+    ],
+    "62": [
+      "ip-security-risk"
+    ],
+    "63": [
+      "ip-security-controls",
+      "ip-cryptography",
+      "ip-release-decision"
+    ]
+  },
+  "lessons": {
+    "ip-organization": {
+      "step": 1,
+      "unit": 1,
+      "title": "企業活動と組織・PDCA",
+      "officialTopics": [
+        1
+      ],
+      "minutes": 90,
+      "beforeChars": 10041,
+      "afterChars": 10041,
+      "sections": [
+        "企業は何のために情報を使うのか",
+        "組織と人を動かす仕組み",
+        "改善と事業継続を分けて考える",
+        "例：問い合わせへの回答を早くする",
+        "まとめ",
+        "ケース：出荷の判断を誰に任せるか",
+        "組織図は「誰の専門性か」と「誰が決めるか」で読む",
+        "人材の育成は、身につけたい能力から選ぶ",
+        "改善と継続は、異なる問いに答える",
+        "情報を使った変革か、作業の置換か",
+        "自分で考える",
+        "権限を置く場所で、業務の速さと責任が変わる",
+        "二つの組織図から、決める人を探す",
+        "改善の数字と事業継続の判断を分ける",
+        "短い周期で判断する仕事と、改善結果を検証する仕事",
+        "経営資源を配置し、数字で育成の成果を確かめる",
+        "例題：研修が生産能力に結び付いたか",
+        "責任と意思決定を切り分ける",
+        "責任の置き場を変え、混雑時の仕事を組み直す",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "経営資源と組織の役割を説明する",
+        "PDCAとBCPを業務に当てはめる"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-organization-existing-visual",
+        "ip-organization-worked-decision"
+      ],
+      "guidedAnswer": "2",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-organization-check"
+    },
+    "ip-analysis": {
+      "step": 2,
+      "unit": 1,
+      "title": "業務分析とデータの可視化",
+      "officialTopics": [
+        2
+      ],
+      "minutes": 105,
+      "beforeChars": 12384,
+      "afterChars": 12480,
+      "sections": [
+        "問いを決めてからデータを集める",
+        "図は目的に合わせて選ぶ",
+        "例：苦情100件を分類する",
+        "相関をそのまま原因にしない",
+        "まとめ",
+        "ケース：問い合わせの増加をデータから調べる",
+        "集計の前に、データをそろえる",
+        "パレート図で調べる順番を決める",
+        "見せ方と比較条件を疑う",
+        "数理モデルは条件を明示して使う",
+        "原因候補を分け、次に確かめることを決める",
+        "自分で考える",
+        "ばらつき、標本の偏り、改善効果を切り分ける",
+        "管理限界を越えたとき、製品の合否と工程の異常を分ける",
+        "前後比較と比較実験では、答えられる問いが違う",
+        "手で確かめる検定の考え方",
+        "件数の違う工程を比較する",
+        "調査の対象を決め、データの偏りを見つける",
+        "例題：全体の割合を計算する",
+        "割合と工程図を合わせて調べる",
+        "割合の変化を、各種類の変化と構成の変化に分ける",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "分析の目的に合う図を選ぶ",
+        "相関と因果を区別する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-analysis-existing-visual",
+        "ip-analysis-figure-2",
+        "ip-analysis-figure-3",
+        "ip-analysis-worked-decision"
+      ],
+      "guidedAnswer": "2",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-analysis-check"
+    },
+    "ip-source-bias-decision": {
+      "step": 3,
+      "unit": 1,
+      "title": "標本抽出とバイアス：調査の偏りを見抜く",
+      "officialTopics": [
+        2
+      ],
+      "minutes": 65,
+      "beforeChars": 0,
+      "afterChars": 9438,
+      "sections": [
+        "誰について知りたいかで、使う名簿が決まる",
+        "全部を調べるか、一部を選ぶか",
+        "回収率の差と測り方の差を別々に調べる",
+        "例題　回答者の割合を全員へ広げられるか",
+        "全体で差が出たら、比較する条件をそろえる",
+        "図を選ぶ前に、読み取る値を決める",
+        "意見を集め、検証する問いに整理する",
+        "独力で判断する"
+      ],
+      "objectives": [
+        "母集団と抽出枠を定め、目的と資料に合う標本の選び方を識別する",
+        "抽出・回答・測定の各段階で偏りを見つけ、比較条件の違いを確かめる",
+        "判断したいことに合う可視化を選び、案を出す工程と根拠を確かめる工程を区別する"
+      ],
+      "teachingEvidence": [
+        [
+          "ip-source-bias-decision-objective-1",
+          "名簿と抽出条件を決めて四つの方法を比べる",
+          "全店から抽出する例、調査対象を狭める失敗",
+          "新設の章末問題1〜3"
+        ],
+        [
+          "ip-source-bias-decision-objective-2",
+          "回答と測定の段階を分け、条件別の数字を比べる",
+          "回収率、交絡の表、無回答による偏りが残る条件",
+          "途中入力50、章末問題4〜6・9"
+        ],
+        [
+          "ip-source-bias-decision-objective-3",
+          "集計図を目的で選び、意見の整理から再調査へつなげる",
+          "ヒートマップ、親和図法、提案件数と根拠の区別",
+          "章末問題6〜9、ユニット総合確認"
+        ]
+      ],
+      "figures": [
+        "ip-source-bias-sampling-methods",
+        "ip-source-bias-response-flow",
+        "ip-source-bias-confounding",
+        "ip-source-bias-heatmap"
+      ],
+      "guidedAnswer": "50",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-source-bias-decision-check"
+    },
+    "ip-finance": {
+      "step": 4,
+      "unit": 1,
+      "title": "会計・財務と損益分岐点",
+      "officialTopics": [
+        3
+      ],
+      "minutes": 105,
+      "beforeChars": 10417,
+      "afterChars": 10417,
+      "sections": [
+        "財務三表は何を示すのか",
+        "費用を固定費と変動費に分ける",
+        "例：小さな教材店",
+        "投資を比べる指標",
+        "まとめ",
+        "売上が増えても現金が足りないのはなぜか",
+        "先に1個当たりの限界利益を求める",
+        "自分で確かめる",
+        "財務指標で「利益」「資金」「効率」を分けて読む",
+        "消費税とインボイスの役割",
+        "売上と利益、手元資金を一つの事例で追う",
+        "掛売りを入れると利益と現金はいつ動くか",
+        "売上構成が変わると損益分岐点も変わる",
+        "取引から利益、現金、財政状態を順に読む",
+        "例題：初期費用を運用の改善で回収する",
+        "短期の支払に使える資産を確認する",
+        "回収の早さと、今月払える金額を別の表で見る",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "財務三表の役割を区別する",
+        "利益と損益分岐点を計算する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-finance-existing-visual",
+        "ip-finance-figure-2",
+        "ip-finance-worked-decision"
+      ],
+      "guidedAnswer": "7",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-finance-check"
+    },
+    "ip-reading-business-data": {
+      "step": 5,
+      "unit": 1,
+      "title": "経営データの読解演習：改善案を数字で選ぶ",
+      "officialTopics": [
+        2,
+        3
+      ],
+      "minutes": 45,
+      "beforeChars": 5549,
+      "afterChars": 5653,
+      "sections": [
+        "比較の分母を決める",
+        "改善したときの利益を求める",
+        "集計の内訳が変わった場合を考える",
+        "自分で判断してみる",
+        "解き直すときの確認",
+        "同じ条件にそろえた効果予測から改善案を選ぶ",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "比較すべき母数を自分で決める",
+        "利益の増減を求め、改善案の条件を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-reading-business-data-existing-visual",
+        "ip-reading-business-data-worked-decision"
+      ],
+      "guidedAnswer": "2000",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-reading-business-data-check"
+    },
+    "ip-inventory-decisions": {
+      "step": 6,
+      "unit": 1,
+      "title": "在庫管理と発注方式：欠品を防ぐ数量を決める",
+      "officialTopics": [
+        2
+      ],
+      "minutes": 75,
+      "beforeChars": 0,
+      "afterChars": 11600,
+      "sections": [
+        "在庫表を読むときに区別する三つの数量",
+        "例題　発注残があっても間に合わない場合を見つける",
+        "定量発注方式　決まった量を、必要になった時点で頼む",
+        "例題　発注点と発注量を別々に読む",
+        "例題　一度に頼む量を増やしたときの費用を比べる",
+        "定期発注方式　決まった時点で、足りない量を頼む",
+        "例題　次の見直しで頼んだ品物が届くまでをまかなう",
+        "需要が予測と違う場合を考え、費用と欠品を比較する",
+        "例題　平均費用を小さくする案と、欠品を許さない場合の案",
+        "自分で解く　新しい発注表を読み、先に満たす条件を決める",
+        "入荷が一日遅れた場合を判定する",
+        "発注周期を変え、今日の数量を決める",
+        "二つの発注案を費用と制約から比べる",
+        "部品が複数あるときは、それぞれの到着期限から逆算する",
+        "要点をつなぎ直す",
+        "公式資料"
+      ],
+      "objectives": [
+        "手元にある数量、入荷を待つ数量、引き当てた数量を区別し、入荷前の欠品を判定する",
+        "定量発注と定期発注について、発注する時点と数量を資料から判断する",
+        "需要が変わる複数の場合を枝に分け、欠品の制約と期待費用から発注案を選ぶ"
+      ],
+      "teachingEvidence": [
+        [
+          "ip-inventory-decisions-inputs",
+          "手元、引当、入荷予定を各数量に分ける",
+          "入荷が1日遅れたときの不足、残数と使える個数",
+          "独立の欠品確認、章末問題"
+        ],
+        [
+          "ip-inventory-decisions-fixed",
+          "発注点と固定ロットを分け、費用を比較する",
+          "固定・定期の違い、在庫と発注の費用、単位",
+          "条件変更例と章末問題"
+        ],
+        [
+          "ip-inventory-decisions-periodic",
+          "次の発注が届くまでの需要から発注量を求める",
+          "調達期間と発注間隔、発注量の下限0",
+          "独立問題、総合確認18個"
+        ],
+        [
+          "ip-inventory-decisions-choices",
+          "確率ごとの結果と欠品制約を分ける",
+          "デシジョンツリーの期待費用と、最悪時の欠品",
+          "途中入力3900、独立問題、模試"
+        ],
+        [
+          "ip-inventory-decisions-material-schedule",
+          "部品別に初めて不足する週と発注期限を求める",
+          "AとBで違うリードタイム、初期在庫が変わる例",
+          "章末の別の生産予定、最遅1週目"
+        ]
+      ],
+      "figures": [
+        "ip-inventory-decisions-timeline",
+        "ip-inventory-decisions-period",
+        "ip-inventory-decisions-policy",
+        "ip-inventory-decisions-tree",
+        "ip-inventory-decisions-materials-figure"
+      ],
+      "guidedAnswer": "3900",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-inventory-decisions-check"
+    },
+    "ip-rights": {
+      "step": 7,
+      "unit": 2,
+      "title": "知的財産権とソフトウェアの利用",
+      "officialTopics": [
+        4
+      ],
+      "minutes": 85,
+      "beforeChars": 8471,
+      "afterChars": 8471,
+      "sections": [
+        "アイデアと表現を区別する",
+        "ライセンスは使い方の条件",
+        "例：社内資料へ画像を載せる",
+        "まとめ",
+        "製品公開前に、守るものと借りるものを仕分ける",
+        "画像とコードは利用の段階ごとに確認する",
+        "料金、利用権、秘密管理は別の話",
+        "一つの製品に関わる権利を対象ごとに見分ける",
+        "仕組み、外観、名前、説明文を別々に見る",
+        "社内で買ったソフトを取引先に使わせられるか",
+        "営業秘密と公開された技術を見分ける",
+        "一つの製品から、守りたい対象を取り出す",
+        "例題：自社で買った資料を研修へ転用する",
+        "利用目的から権利と条件を選び直す",
+        "公開する物ごとに権利と許諾の範囲を確かめる",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "保護対象に合う権利を選ぶ",
+        "利用許諾と著作権を区別する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-rights-existing-visual",
+        "ip-rights-worked-decision"
+      ],
+      "guidedAnswer": "2",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-rights-check"
+    },
+    "ip-law-ethics": {
+      "step": 8,
+      "unit": 2,
+      "title": "情報・労働・取引の法律と倫理",
+      "officialTopics": [
+        5,
+        6,
+        7
+      ],
+      "minutes": 105,
+      "beforeChars": 12283,
+      "afterChars": 12283,
+      "sections": [
+        "安全な利用を支える法律",
+        "個人情報は目的と管理をセットで考える",
+        "雇用と委託の違い",
+        "取引・消費者保護と情報倫理",
+        "例とまとめ",
+        "個人情報を渡す前に、目的と相手の役割を確認する",
+        "雇用・派遣・請負を現場の指示から区別する",
+        "法律の名前から、守ろうとする対象を読む",
+        "誰がどの権限で情報を扱うか、契約名から離れて判断する",
+        "人の属性、アクセス権限、情報の利用目的を順に確認する",
+        "成果の要求と、労働者への作業指示を分ける",
+        "同じWebサービスでも、場面ごとに適用を確認する",
+        "海外の利用者への提供を考えるとき",
+        "公開請求と内部の通報、委託先の処理を区別する",
+        "法令の対象と社内で取る措置を結び付ける",
+        "例題：指示と成果物の確認を分ける",
+        "規制を探す順序を法務メモで練習する",
+        "セキュリティ法規を、行為と関係者から読み分ける",
+        "委託する仕事の目的から、渡す情報と権限を決める",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "身近な行動と関連する法律を結び付ける",
+        "個人情報の目的と第三者提供を考える"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-law-ethics-existing-visual",
+        "ip-law-ethics-worked-decision"
+      ],
+      "guidedAnswer": "2",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-law-ethics-check"
+    },
+    "ip-standards": {
+      "step": 9,
+      "unit": 2,
+      "title": "標準化と互換性",
+      "officialTopics": [
+        8
+      ],
+      "minutes": 80,
+      "beforeChars": 7397,
+      "afterChars": 7397,
+      "sections": [
+        "標準が必要な理由",
+        "標準の作られ方",
+        "識別と交換のルール",
+        "例：二つの会社で在庫を連携する",
+        "まとめ",
+        "同じCSVなのに連携が失敗する理由",
+        "標準の作り方と、認証の対象を区別する",
+        "国や地域をまたいでも意味が通る設計にする",
+        "接続できる条件を、規格と受入試験に落とし込む",
+        "共通規格があっても、互換性を確認する",
+        "規格の策定と、適合性を評価する活動を区別する",
+        "規格をそろえ、実際につながる条件を確かめる",
+        "例題：基準に適合した証拠を読む",
+        "互換性の試験項目を決める",
+        "データを開ける条件と、意味が一致する条件をそろえる",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "公的標準と事実上の標準を区別する",
+        "標準化の効果と限界を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-standards-existing-visual",
+        "ip-standards-worked-decision"
+      ],
+      "guidedAnswer": "1",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-standards-check"
+    },
+    "ip-strategy": {
+      "step": 10,
+      "unit": 3,
+      "title": "経営戦略と目標・評価",
+      "officialTopics": [
+        9,
+        11
+      ],
+      "minutes": 105,
+      "beforeChars": 9579,
+      "afterChars": 9579,
+      "sections": [
+        "環境と自社を分けて分析する",
+        "事業の成長と資源配分",
+        "目標を測れる形にする",
+        "例：予約サービスを改善する",
+        "まとめ",
+        "成長市場でも投資を決める前に何を見るか",
+        "成長性、資源、目標を別々に評価して投資を選ぶ",
+        "外部の変化を、自社の能力と組み合わせて読む",
+        "成長率とシェアの位置から、資金の使い方を考える",
+        "目標と中間指標を、一つの因果の流れで設計する",
+        "成長の方向を選び、施策の効果を切り分ける",
+        "例題：目標から施策を選ぶ",
+        "二つの施策を資料から選ぶ",
+        "分析手法を資料に合わせて選ぶ",
+        "売上目標と途中の指標を、同じ図で結ぶ",
+        "施策が違っても、目標から成果まで同じ手順で追う",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "戦略分析の軸を使い分ける",
+        "KGIとKPIを結び付ける"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-strategy-existing-visual",
+        "ip-strategy-figure-2",
+        "ip-strategy-worked-decision"
+      ],
+      "guidedAnswer": "1500",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-strategy-check"
+    },
+    "ip-marketing": {
+      "step": 11,
+      "unit": 3,
+      "title": "マーケティングと経営管理システム",
+      "officialTopics": [
+        10,
+        12
+      ],
+      "minutes": 95,
+      "beforeChars": 9205,
+      "afterChars": 9205,
+      "sections": [
+        "顧客を理解し、届け方を決める",
+        "データで関係を継続する",
+        "全社と供給網の情報をつなぐ",
+        "例：欠品の多い店舗",
+        "まとめ",
+        "顧客像を施策と測定までつなぐ",
+        "価格と販促を選び、販売後のデータで確かめる",
+        "商品を買う人の条件が変わると、最適な施策も変わる",
+        "購入回数の多さだけで顧客の次の行動を決めない",
+        "似た症状を、情報を使う範囲から診断する",
+        "販売経路を比較し、顧客の情報を運用に使う",
+        "例題：売れた後のデータをどう使うか",
+        "購入件数と利益の両方を比較する",
+        "仕事の知識を、文書と実践で引き継ぐ",
+        "広告の反応を売上と費用につないで施策を選ぶ",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "STPと4Pを使って施策を整理する",
+        "ERP・SCM・CRMの役割を区別する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-marketing-existing-visual",
+        "ip-marketing-figure-2",
+        "ip-marketing-worked-decision"
+      ],
+      "guidedAnswer": "3200",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-marketing-check"
+    },
+    "ip-tech-business": {
+      "step": 12,
+      "unit": 4,
+      "title": "技術戦略とビジネスシステム",
+      "officialTopics": [
+        13,
+        14
+      ],
+      "minutes": 90,
+      "beforeChars": 8396,
+      "afterChars": 8396,
+      "sections": [
+        "技術を事業の目的につなぐ",
+        "新しい技術をどう生かすか",
+        "分野別の業務システム",
+        "例：画像検査の導入",
+        "まとめ",
+        "研究成果を商品化する判断",
+        "実証で確かめることと、事業で成立する条件を分ける",
+        "技術の成熟と、利用者に届ける仕組みを同じ計画に載せる",
+        "自社で開発する範囲と、外部と協力する範囲を決める",
+        "部門ごとに同じ住所を入力する問題を解く",
+        "実験の成功から事業化までの条件を順に確認する",
+        "例題：開発形態を選ぶ",
+        "候補を選ぶため、検証から導入へ条件を引き継ぐ",
+        "社会の事業を支えるシステムの役割を区別する",
+        "試作を通過した技術に、次の条件を追加して判断する",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "技術ロードマップと研究開発を説明する",
+        "事業に合うシステムの役割を選ぶ"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-tech-business-existing-visual",
+        "ip-tech-business-worked-decision"
+      ],
+      "guidedAnswer": "1",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-tech-business-check"
+    },
+    "ip-engineering-iot": {
+      "step": 13,
+      "unit": 5,
+      "title": "生産・設計とIoTシステム",
+      "officialTopics": [
+        15,
+        17
+      ],
+      "minutes": 95,
+      "beforeChars": 9171,
+      "afterChars": 9171,
+      "sections": [
+        "設計から製造までをつなぐ",
+        "IoTは物と情報を結ぶ",
+        "現実の設備とモデル",
+        "例：温室の温度管理",
+        "まとめ",
+        "設計データが現場の制御になるまで",
+        "設計値と実測値をつなぎ、止まる条件を考える",
+        "設計、製造、検査で扱う情報を見分ける",
+        "IoTの通信が止まっても安全を保つ",
+        "工場が作れる量と、納期に間に合う量を見積もる",
+        "設計、製造、在庫の判断を同じ製品でつなぐ",
+        "例題：部品表から手配量を求める",
+        "異常時に誰がどの装置を動かすか考える",
+        "生産に使える部品を数え、必要な手配量を決める",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "設計と生産を支えるシステムを区別する",
+        "IoTの計測・通信・制御を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-engineering-iot-existing-visual",
+        "ip-engineering-iot-figure-2",
+        "ip-engineering-iot-figure-3",
+        "ip-engineering-iot-worked-decision"
+      ],
+      "guidedAnswer": "35",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-engineering-iot-check"
+    },
+    "ip-ecommerce": {
+      "step": 14,
+      "unit": 5,
+      "title": "eビジネスとデジタルサービス",
+      "officialTopics": [
+        16
+      ],
+      "minutes": 85,
+      "beforeChars": 7203,
+      "afterChars": 7203,
+      "sections": [
+        "誰と誰が取引するか",
+        "収益の仕組みを比較する",
+        "広告と購入の指標",
+        "例：広告の効果を確認する",
+        "まとめ",
+        "注文、決済、出荷を分けて記録する",
+        "注文から入金までの状態と責任を追う",
+        "販売の場、支払の受付、商品の引渡しを分ける",
+        "便利な本人確認と、必要以上に集めない設計を両立する",
+        "注文、支払、引渡しの記録を照合する",
+        "例題：注文履歴に現れた例外を扱う",
+        "複数の取引で注文番号と返金をたどる",
+        "注文、入金、返金の状態を別々に確かめる",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "取引の組合せと事業モデルを区別する",
+        "電子商取引の指標を計算する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-ecommerce-existing-visual",
+        "ip-ecommerce-worked-decision"
+      ],
+      "guidedAnswer": "2",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-ecommerce-check"
+    },
+    "ip-system-strategy": {
+      "step": 15,
+      "unit": 6,
+      "title": "情報システム戦略と業務プロセス",
+      "officialTopics": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "minutes": 105,
+      "beforeChars": 8698,
+      "afterChars": 8698,
+      "sections": [
+        "経営とシステムの方向を合わせる",
+        "業務そのものを見直す",
+        "サービスとしてITを使う",
+        "導入後の活用と評価",
+        "例とまとめ",
+        "業務の目的からシステムの役割を決める",
+        "受付から記録までを描き、システム化の価値を測る",
+        "見えている症状から、変えるべき業務を探す",
+        "正本を決めてから、使いやすい接点を追加する",
+        "導入効果を測るとき、使わなかった人も分母に入れる",
+        "事業の目標を測れる業務変更へ落とす",
+        "例題：作業の流れから待ち時間を見つける",
+        "改善前後を同じ期間と単位で比較する",
+        "サービスを選ぶときは管理範囲を比べる",
+        "部門の提案を、共通の目標から比べる",
+        "使える人、使った人、解決できた人を順に数える",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "全体最適と業務改革を説明する",
+        "クラウド等の利用形態を比較する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-system-strategy-existing-visual",
+        "ip-system-strategy-worked-decision"
+      ],
+      "guidedAnswer": "30",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-system-strategy-check"
+    },
+    "ip-procurement": {
+      "step": 16,
+      "unit": 7,
+      "title": "システム化計画・要件定義・調達",
+      "officialTopics": [
+        22,
+        23,
+        24
+      ],
+      "minutes": 105,
+      "beforeChars": 8957,
+      "afterChars": 8957,
+      "sections": [
+        "実現したいことを先に決める",
+        "要件を具体化する",
+        "調達の流れ",
+        "例：予約システムの要件",
+        "まとめ",
+        "要求を受入条件に変える",
+        "三つの資料を照合し、提案の良し悪しを決める",
+        "現状メモを、測れる要求と制約に変える",
+        "初期費用が安い提案をそのまま採用しない",
+        "総合演習：開館時の混雑対策を、要求書・見積り・試験記録から決める",
+        "導入計画から切替え、受入れ、契約終了まで考える",
+        "例題：要件を試験できる条件に変える",
+        "見積りの対象をそろえて費用を比較する",
+        "調達条件を、比較できる記録と契約へ落とす",
+        "利用者の要求と測定条件をそろえる",
+        "要件を満たす条件を先にそろえ、提案費用を比べる",
+        "自分で判断する"
+      ],
+      "objectives": [
+        "業務要件と非機能要件を整理する",
+        "RFIとRFPを使い分ける"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-procurement-existing-visual",
+        "ip-procurement-worked-decision"
+      ],
+      "guidedAnswer": "71",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-procurement-check"
+    },
+    "ip-development": {
+      "step": 17,
+      "unit": 8,
+      "title": "システム開発とテスト・移行",
+      "officialTopics": [
+        25
+      ],
+      "minutes": 60,
+      "beforeChars": 10924,
+      "afterChars": 10924,
+      "sections": [
+        "要件から実装へ進む",
+        "テストごとの役割",
+        "例：入力できる年齢が18〜65の画面",
+        "移行と保守",
+        "要求をテストできる形にする",
+        "「動く」の中身を四つに分ける",
+        "故障の範囲に合わせてテストを選ぶ",
+        "実績を評価して受入れと移行を決める",
+        "規模、工数、期間を分けて見積もる",
+        "自分で解く：現地発券機の連携",
+        "まとめ",
+        "要求から受入まで、同じ条件を追う",
+        "教科書演習：要件、設計、テストを一つの表で照合する",
+        "例題：同じ不具合を異なる視点で調べる",
+        "例題：平均値だけで負荷テストを合格にしない",
+        "運用開始後の変更を保守で扱う",
+        "移行件数が合っても、受入れ前に照合する",
+        "自分で解く：移行した翌日の食い違い"
+      ],
+      "objectives": [
+        "開発工程とテストの目的を区別する",
+        "安全な移行と保守を計画する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-development-test-scope",
+        "ip-development-requirement-acceptance",
+        "ip-development-worked-evidence"
+      ],
+      "guidedAnswer": "b",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-development-check"
+    },
+    "ip-agile": {
+      "step": 18,
+      "unit": 9,
+      "title": "開発プロセス・アジャイルとDevOps",
+      "officialTopics": [
+        26
+      ],
+      "minutes": 55,
+      "beforeChars": 9752,
+      "afterChars": 9752,
+      "sections": [
+        "開発の進め方を選ぶ",
+        "スクラムの基本",
+        "開発と運用をつなぐ",
+        "例：予約画面を小さく改善する",
+        "何がまだ分からないかで開発モデルを選ぶ",
+        "同じ仕事を流れと役割の両方から設計する",
+        "スプリントの結果を次の判断に使う",
+        "手順の合意と、組織の改善を見分ける",
+        "レビューの改善を、組織の成熟度で捉える",
+        "自分で解く：二つの不確実性を切り分ける",
+        "まとめ",
+        "短い反復で、完成品ではなく証拠を増やす",
+        "教科書演習：不確実性を読んで、進め方を組み立てる",
+        "一つの要求を三つの見方で表す",
+        "例題：動く画面を見せた後、何を変えるか",
+        "分からないことに合う確かめ方を選ぶ",
+        "自分で解く：改善対象はモデルか、運用か"
+      ],
+      "objectives": [
+        "ウォーターフォールと反復開発を比較する",
+        "アジャイルの役割と継続的な改善を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-agile-scrum-feedback",
+        "ip-agile-worked-evidence"
+      ],
+      "guidedAnswer": "c",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-agile-check"
+    },
+    "ip-project": {
+      "step": 19,
+      "unit": 10,
+      "title": "プロジェクト管理とクリティカルパス",
+      "officialTopics": [
+        27
+      ],
+      "minutes": 65,
+      "beforeChars": 11113,
+      "afterChars": 11113,
+      "sections": [
+        "プロジェクトの特徴",
+        "依存関係と最短期間",
+        "例：並行作業の期間",
+        "変更とリスクを管理する",
+        "開始前に、何を終えたら成功かを決める",
+        "二つの経路で、何日まで待てるかを計算する",
+        "矢印に日数を書く図も同じ順序で読む",
+        "変更と進捗を、関係者が判断できる形で伝える",
+        "公開後の仕事を引き継ぎ、プロジェクトを終える",
+        "自分で解く：短縮案に効果があるか",
+        "まとめ",
+        "作業表を完成予定日に変える",
+        "合流点では遅い方を待つ",
+        "計画との差を二つの軸で読む",
+        "自分で確かめる",
+        "教科書演習：合流点の締切から作業の余裕を逆算する",
+        "条件変更：作業を短くしても公開が早まらない場合",
+        "担当が重なったら、追加された順序を工程に戻す",
+        "自分で解く：何を報告すると判断できるか"
+      ],
+      "objectives": [
+        "WBSとスケジュールを関連付ける",
+        "制約とリスクを踏まえて計画する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-project-parallel-paths",
+        "ip-project-gantt-float",
+        "ip-project-worked-evidence"
+      ],
+      "guidedAnswer": "8",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-project-check"
+    },
+    "ip-reading-project-plans": {
+      "step": 20,
+      "unit": 10,
+      "title": "工程計画の読解演習：期限までに終わる案を選ぶ",
+      "officialTopics": [
+        27
+      ],
+      "minutes": 50,
+      "beforeChars": 4751,
+      "afterChars": 4858,
+      "sections": [
+        "日数の足し方は作業のつながりで決まる",
+        "最短日数と余裕を求める",
+        "工期を縮めたら最長経路を計算し直す",
+        "短縮費用まで比べる",
+        "共通作業の短縮は、通過する経路に効く",
+        "新しい条件で解く",
+        "解き直すときの確認"
+      ],
+      "objectives": [
+        "前進計算と後退計算を行う",
+        "複数の短縮案を比較し、短縮後の経路を確かめる"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-reading-project-plans-project-paths",
+        "ip-reading-project-plans-worked-evidence"
+      ],
+      "guidedAnswer": "9",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-reading-project-plans-check"
+    },
+    "ip-resource-planning": {
+      "step": 21,
+      "unit": 10,
+      "title": "工程表と人員配置：同じ担当者の作業が重なるとき",
+      "officialTopics": [
+        27
+      ],
+      "minutes": 80,
+      "beforeChars": 0,
+      "afterChars": 5918,
+      "sections": [
+        "工程表にある並行作業を、人員の条件で見直す",
+        "先に終える仕事と担当者の空きの両方を読む",
+        "応援を頼む日は、必要な技能と費用で決める",
+        "見積りと実績の差を、判断できる形で報告する",
+        "総合演習　希望する期限と実際の費用から案を選ぶ",
+        "参考資料"
+      ],
+      "objectives": [
+        "先行作業と担当者の空きの両方を使って各作業の開始日を決める",
+        "応援の条件、費用、期限を照合して実行可能な案を選ぶ",
+        "進捗報告とリスク対策を、判断期限と費用・品質への影響まで具体化する"
+      ],
+      "teachingEvidence": [
+        [
+          "resource-feasibility",
+          "先行作業と担当者の空きから最早日を求める",
+          "担当者を共有する3日と2日の作業、並行の条件",
+          "章末問題1〜2・8、模試A"
+        ],
+        [
+          "resource-alternatives",
+          "応援者の技能、稼働日、費用から案を選ぶ",
+          "2日・3日・4日開始、料金上限の違い、統合演習",
+          "途中入力3、章末問題3〜5、模試B"
+        ],
+        [
+          "resource-risk-report",
+          "基準計画から差を報告し、期限を明らかにする",
+          "応援確定の期限と軽減、品質の受入れ条件",
+          "章末問題6〜7、ユニット総合確認"
+        ]
+      ],
+      "figures": [
+        "ip-resource-planning-requirements",
+        "ip-resource-planning-schedule",
+        "ip-resource-planning-decisions"
+      ],
+      "guidedAnswer": "3",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-resource-planning-check"
+    },
+    "ip-services": {
+      "step": 22,
+      "unit": 11,
+      "title": "ITサービスと設備・障害対応",
+      "officialTopics": [
+        28,
+        29,
+        30
+      ],
+      "minutes": 65,
+      "beforeChars": 10208,
+      "afterChars": 10208,
+      "sections": [
+        "サービスを継続して届ける",
+        "障害の復旧と原因の除去",
+        "設備と運用の安全",
+        "例：予約システムが停止した",
+        "SLAの目標と、実測する指標を分ける",
+        "一つのサービスを計画から改善まで追う",
+        "問い合わせから復旧、恒久対応まで担当をつなぐ",
+        "障害の規模から、設備対策と継続策を選ぶ",
+        "自分で解く：合意、復旧、変更を分ける",
+        "まとめ",
+        "停止した窓口を戻す仕事と、再発を減らす仕事",
+        "教科書演習：サービスの申込みから復旧までを記録で追う",
+        "枠組みと合意文書を使い分ける",
+        "例題：月次報告の数値から改善を選ぶ",
+        "例題：停電対策と業務継続を時間軸で見る",
+        "設備の省エネルギー効果を測る",
+        "同じ時間帯に二つの障害が起きたときの集計",
+        "自分で解く：どの仕組みで何を減らすか"
+      ],
+      "objectives": [
+        "インシデントと問題を区別する",
+        "SLAと継続的改善を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-services-service-desk-routing",
+        "ip-services-power-continuity",
+        "ip-services-worked-evidence"
+      ],
+      "guidedAnswer": "22",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-services-check"
+    },
+    "ip-audit": {
+      "step": 23,
+      "unit": 12,
+      "title": "システム監査と内部統制",
+      "officialTopics": [
+        31,
+        32
+      ],
+      "minutes": 55,
+      "beforeChars": 9688,
+      "afterChars": 9688,
+      "sections": [
+        "第三者の視点から確かめる",
+        "指摘から改善まで",
+        "内部統制は組織の仕組み",
+        "例：支払処理の職務分離",
+        "統制を動かす人と、独立して確かめる人",
+        "記録を組み合わせて、何が言えるかを判断する",
+        "監査で示せる結論と、改善を助言する範囲",
+        "自分で解く：例外が見つかった後に何をするか",
+        "まとめ",
+        "統制は設計と運用の両方を見る",
+        "教科書演習：規程・記録・面談から監査の結論を組み立てる",
+        "例題：例外を見つけた後に何を言えるか",
+        "監査の名称は主な目的から選ぶ",
+        "承認の前後関係と、記録がそろっているかを確かめる",
+        "自分で解く：方針、実行、点検の責任を分ける"
+      ],
+      "objectives": [
+        "監査の独立性と証拠を説明する",
+        "内部統制の目的と限界を理解する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-audit-audit-records",
+        "ip-audit-audit-evidence-chain",
+        "ip-audit-worked-evidence"
+      ],
+      "guidedAnswer": "b",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-audit-check"
+    },
+    "ip-binary": {
+      "step": 24,
+      "unit": 13,
+      "title": "2進数・集合と論理演算",
+      "officialTopics": [
+        33
+      ],
+      "minutes": 70,
+      "beforeChars": 7154,
+      "afterChars": 7154,
+      "sections": [
+        "2進数の位取り",
+        "ビットとバイト",
+        "集合と論理",
+        "例とまとめ",
+        "ビットを読む順番と、表せる範囲",
+        "位の重みで10進数に直す",
+        "真偽を組み合わせる",
+        "自分で確かめる",
+        "固定されたビット幅で計算する",
+        "条件を変更すると、どの行が増えるか",
+        "受信した8桁を数値と条件に読み分ける",
+        "位取りから基数変換を組み立てる",
+        "借り、桁あふれ、符号の違いを別々に判断する",
+        "条件文を集合へ置き換える"
+      ],
+      "objectives": [
+        "位取りと情報量を計算する",
+        "集合・論理演算を具体例で使う"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-binary-figure-1",
+        "ip-binary-figure-2"
+      ],
+      "guidedAnswer": "8",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-binary-check"
+    },
+    "ip-statistics": {
+      "step": 25,
+      "unit": 13,
+      "title": "確率・統計とデータの読み方",
+      "officialTopics": [
+        34
+      ],
+      "minutes": 75,
+      "beforeChars": 10624,
+      "afterChars": 10721,
+      "sections": [
+        "一つの数値だけで判断しない",
+        "例：対応時間を要約する",
+        "確率と期待値",
+        "データから結論へ進むとき",
+        "まとめ",
+        "分布の形と、確率の条件を読む",
+        "抽出のしかたから確率の式を決める",
+        "代表値と分布を別々に読む",
+        "グラフと制約を使って判断する",
+        "推定・検定・回帰が答える問いを分ける",
+        "変化率と合計を単位で確認する",
+        "同じ平均でも、標準偏差を実際に求めて比べる",
+        "仮定の下で珍しさを数え、判断の意味を確認する",
+        "小さな誤差が、比較結果を入れ替えるかを見る",
+        "調査の設計から、数字で言える範囲を決める",
+        "母集団と標本を決めてから選ぶ",
+        "全体の平均を求め直す",
+        "代表値とばらつきをセットで読む",
+        "回帰と最適化で結論の根拠を分ける"
+      ],
+      "objectives": [
+        "代表値と散らばりを説明する",
+        "確率・期待値を計算する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-statistics-figure-1",
+        "ip-statistics-figure-2",
+        "ip-statistics-figure-3"
+      ],
+      "guidedAnswer": "25",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-statistics-check"
+    },
+    "ip-regression-residuals": {
+      "step": 26,
+      "unit": 13,
+      "title": "回帰分析の読み方：予測値・残差・最小二乗法",
+      "officialTopics": [
+        34
+      ],
+      "minutes": 90,
+      "beforeChars": 0,
+      "afterChars": 6177,
+      "sections": [
+        "回帰分析では、何から何を予測するかを決める",
+        "切片と傾きを単位で読む",
+        "予測との差を計算し、当てはまりを比べる",
+        "予測式を作った日と、これから使う日を分ける",
+        "総合演習　式が当たった理由と採用条件を説明する",
+        "参考資料"
+      ],
+      "objectives": [
+        "説明変数・目的変数と単位から回帰直線の予測を読む",
+        "残差と二乗和で同じ実測データに対する予測式を比較する",
+        "観測範囲や作業条件から予測を使える場面と追加調査を判断する"
+      ],
+      "teachingEvidence": [
+        [
+          "regression-reading",
+          "式の単位から切片、傾き、予測を読む",
+          "8件と30分、0件の切片と実際の準備",
+          "章末問題1・4・8"
+        ],
+        [
+          "regression-fit",
+          "残差の符号と二乗和で式を比べる",
+          "2式と3点、6分²と50分²、打消しと外れ値",
+          "途中入力3、章末問題2〜3・5、両模試"
+        ],
+        [
+          "regression-conditions",
+          "観測範囲、条件、新しい計測を押さえる",
+          "臨時窓口と催し、別事例で25分²と65分²の比較",
+          "章末問題6〜7、ユニット総合確認"
+        ]
+      ],
+      "figures": [
+        "ip-regression-residuals-scatter",
+        "ip-regression-residuals-model-comparison",
+        "ip-regression-residuals-new-days"
+      ],
+      "guidedAnswer": "3",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-regression-residuals-check"
+    },
+    "ip-ai-data": {
+      "step": 27,
+      "unit": 13,
+      "title": "情報理論・AIと生成AIの活用",
+      "officialTopics": [
+        35
+      ],
+      "minutes": 75,
+      "beforeChars": 10488,
+      "afterChars": 12567,
+      "sections": [
+        "情報を表現し、誤りを検出する",
+        "データからモデルを作る",
+        "評価の目的を考える",
+        "生成AIと人の確認",
+        "例とまとめ",
+        "学習、評価、利用を分ける",
+        "連続した測定値をビット列にする",
+        "分類の成績を見逃しと誤警報に分ける",
+        "生成結果と参照元を照合する",
+        "文字の対応表と、推論の前提を確認する",
+        "仕組みを選ぶときは、規則とデータのどちらがそろっているかを見る",
+        "ニューラルネットワークの学習と出力を順に追う",
+        "画像・時系列・生成で、モデルの役割を見分ける",
+        "測定と学習の設計を、誤りの種類から選ぶ",
+        "時間の細かさと値の細かさを決める",
+        "画像の分割単位を決める",
+        "同じ正解率でも導入判断が違う",
+        "推論と生成結果を、前提や出典まで確認する",
+        "「すべて」と「少なくとも一つ」で、必要な証拠が変わる",
+        "例題　社内規則から導く結論と、記録から見込む傾向",
+        "自力で確認　締切を過ぎた予約から規則を検証する"
+      ],
+      "objectives": [
+        "データとAIの学習・評価を区別する",
+        "生成AIの限界と安全な利用を説明する",
+        "文の条件を論理式で表し、規則の反例と未確認を区別する"
+      ],
+      "teachingEvidence": "本文の補講と独立設問を追加。分野別の既存監査も参照。",
+      "figures": [
+        "ip-ai-data-figure-1",
+        "ip-ai-data-figure-2",
+        "ip-ai-data-figure-3",
+        "ip-ai-data-predicate-records"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-ai-data-check"
+    },
+    "ip-algorithms": {
+      "step": 28,
+      "unit": 14,
+      "title": "データ構造とアルゴリズム",
+      "officialTopics": [
+        36,
+        37
+      ],
+      "minutes": 70,
+      "beforeChars": 9942,
+      "afterChars": 10045,
+      "sections": [
+        "処理を手順にする",
+        "例：合計を求める",
+        "データの持ち方",
+        "探索と整列",
+        "まとめ",
+        "途中の状態を書いて処理を追う",
+        "反復が終わったときの変数の意味を決める",
+        "データが整列しているときだけ探索範囲を半分にする",
+        "整列と併合を途中状態まで追う",
+        "木にしたときの親子と番号の違いを読む",
+        "途中の状態を書いて、処理を最後まで追う",
+        "配列を走査し、途中の値が表す意味を言う",
+        "探索に使う順序を先に確認する",
+        "データの入出順と探索効率を分ける",
+        "同じ値のときの規則まで追う",
+        "反復の中で、最初に当てはまる分岐を追う",
+        "注文ごとの条件と、全体の集計を分けて書く",
+        "条件だけを変えて、結果が変わる行を選ぶ",
+        "間違った分岐の順序を、テストデータで見つける"
+      ],
+      "objectives": [
+        "順次・分岐・反復を追跡する",
+        "探索とデータ構造を使い分ける"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-algorithms-figure-1",
+        "ip-algorithms-figure-2",
+        "ip-algorithms-branch-trace"
+      ],
+      "guidedAnswer": "4",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-algorithms-check"
+    },
+    "ip-function-trace": {
+      "step": 29,
+      "unit": 14,
+      "title": "擬似言語の関数を読む：引数・戻り値と処理の追い方",
+      "officialTopics": [
+        37
+      ],
+      "minutes": 70,
+      "beforeChars": 0,
+      "afterChars": 7664,
+      "sections": [
+        "関数の定義に書かれた処理を、呼び出したときに実行する",
+        "例題1　引数の並びと呼出し元の式を照合する",
+        "呼出しごとに変数を記録してから、戻り値を合算する",
+        "例題2　2台の新規点検と4台の再点検を合算する",
+        "戻る値と、画面に表示する値は別の場所で決まる",
+        "例題3　関数の中からもう一つの関数を使う",
+        "条件が切り替わる値で、正しい行を通るか確かめる",
+        "自力で確認　途中の表示と戻り値を二回分記録する",
+        "出典"
+      ],
+      "objectives": [
+        "関数の定義と呼出しを見分け、渡す値と戻る値を対応させる",
+        "分岐、境界値、呼出しごとの変数を表に記録して、複数の戻り値から最終結果を求める",
+        "returnで終わる処理と表示を区別し、戻り値の誤りを見つけるための入力を選ぶ"
+      ],
+      "teachingEvidence": [
+        [
+          "objective-1",
+          "定義、呼出し、引数、戻り値を対応させる",
+          "型と処理を確認し、呼出し元まで値を戻す",
+          "章末問題・客観式模試"
+        ],
+        [
+          "objective-2",
+          "境界値と呼出しごとの変数を追う",
+          "呼出しごとに別行で記録し、結果を集計する",
+          "途中入力340、別の計算例、ユニット総合確認"
+        ],
+        [
+          "objective-3",
+          "表示と戻り値を区別し、反例用の入力を選ぶ",
+          "returnで終わる流れと境界前後、別の条件",
+          "章末の境界判断、模試"
+        ]
+      ],
+      "figures": [
+        "ip-function-call-flow",
+        "ip-function-pricing-trace",
+        "ip-function-nested-trace"
+      ],
+      "guidedAnswer": "340",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-function-trace-check"
+    },
+    "ip-languages": {
+      "step": 30,
+      "unit": 14,
+      "title": "プログラム言語・Webとデータ表現",
+      "officialTopics": [
+        38,
+        39
+      ],
+      "minutes": 60,
+      "beforeChars": 6954,
+      "afterChars": 9243,
+      "sections": [
+        "プログラムの実行まで",
+        "オブジェクト指向と再利用",
+        "Webで役割を分ける",
+        "例：学習サイトの問題画面",
+        "まとめ",
+        "文書の構造、見た目、操作を分ける",
+        "表示・意味・動作をそれぞれ直す",
+        "変換の成功と実行結果を分ける",
+        "文書、データ、処理を役割で分ける",
+        "構文が合うことと業務上正しいことを分ける",
+        "画面を見て役割を判断する",
+        "翻訳の成功から結果の正しさを推測しない",
+        "読み手が追える名前と構造にそろえ、計算を再利用する",
+        "例題　送料の計算を見積画面と請求処理で使う",
+        "自力で確認　ライブラリを呼ぶ前に、入口の約束を確認する"
+      ],
+      "objectives": [
+        "言語の役割を区別する",
+        "HTML・CSS・JSON等の用途を説明する"
+      ],
+      "teachingEvidence": "本文の補講と独立設問を追加。分野別の既存監査も参照。",
+      "figures": [
+        "ip-languages-figure-1",
+        "ip-languages-figure-2",
+        "ip-languages-reuse-boundaries"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-languages-check"
+    },
+    "ip-computer": {
+      "step": 31,
+      "unit": 15,
+      "title": "CPU・メモリ・入出力",
+      "officialTopics": [
+        40,
+        41,
+        42
+      ],
+      "minutes": 65,
+      "beforeChars": 7057,
+      "afterChars": 7057,
+      "sections": [
+        "コンピュータの基本要素",
+        "速さは一つの数字だけで決まらない",
+        "記憶装置の階層",
+        "入出力と接続",
+        "まとめ",
+        "命令とデータがどこにあるかを追う",
+        "処理が止まる場所をCPU・メモリ・入出力から探す",
+        "転送速度と端末の性能を切り分ける",
+        "読み込みと計算を分け、時間を使う場所を探す",
+        "1クロックと1命令を混同しない",
+        "時間の内訳から、機器変更後を見積もる",
+        "メモリの階層と保持条件を結び付ける",
+        "インタフェースの単位をそろえてボトルネックを見つける"
+      ],
+      "objectives": [
+        "主要装置の役割と記憶階層を説明する",
+        "単純な処理時間を計算する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-computer-figure-1",
+        "ip-computer-figure-2"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-computer-check"
+    },
+    "ip-architecture": {
+      "step": 32,
+      "unit": 16,
+      "title": "システム構成と信頼性・性能",
+      "officialTopics": [
+        43,
+        44
+      ],
+      "minutes": 70,
+      "beforeChars": 7975,
+      "afterChars": 7975,
+      "sections": [
+        "処理をどこで行うか",
+        "継続と処理能力を支える構成",
+        "稼働率を計算する",
+        "例と性能の見方",
+        "まとめ",
+        "どの部品が止まるとサービスも止まるか",
+        "直列と冗長を、停止条件から見分ける",
+        "速さ・処理量・復旧を別々に測る",
+        "サービスが止まる条件を先に書く",
+        "直列と並列の式を条件から組み立てる",
+        "稼働率を改善する二つの方法を比較する",
+        "仕事を分担する方式と配置を区別する",
+        "処理件数と一件の待ちを分けて測る"
+      ],
+      "objectives": [
+        "冗長化と負荷分散を区別する",
+        "稼働率と性能指標を計算する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-architecture-figure-1",
+        "ip-architecture-figure-2",
+        "ip-architecture-figure-3"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-architecture-check"
+    },
+    "ip-os-files": {
+      "step": 33,
+      "unit": 17,
+      "title": "OSとファイルシステム",
+      "officialTopics": [
+        45,
+        46
+      ],
+      "minutes": 60,
+      "beforeChars": 7263,
+      "afterChars": 7263,
+      "sections": [
+        "OSは資源を管理する",
+        "主記憶を使う仕組み",
+        "ファイルとディレクトリ",
+        "例：資料の共同利用",
+        "まとめ",
+        "保存、共有、復元を分けて考える",
+        "同じファイル名でも到達先が違う理由",
+        "利用者の権限と資源の不足を切り分ける",
+        "OSが分ける作業場所と、ファイルが置かれる場所",
+        "実行中の処理と保存済みファイルを区別する",
+        "メモリが足りないときの症状をつなげる",
+        "相対パスを一段ずつ移動して確認する",
+        "アクセスできない原因を切り分ける"
+      ],
+      "objectives": [
+        "OSの資源管理を説明する",
+        "ファイルの経路と権限を扱う"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-os-files-figure-1",
+        "ip-os-files-figure-2"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-os-files-check"
+    },
+    "ip-office-oss": {
+      "step": 34,
+      "unit": 17,
+      "title": "オフィスツールとOSS",
+      "officialTopics": [
+        47,
+        48
+      ],
+      "minutes": 65,
+      "beforeChars": 7000,
+      "afterChars": 7000,
+      "sections": [
+        "情報を整理して伝える道具",
+        "表計算の参照",
+        "集計と条件",
+        "OSSを安全に利用する",
+        "例とまとめ",
+        "同じ式をコピーしたときの参照を追う",
+        "コピーした式がどのセルを参照するか予測する",
+        "ソフトウェアを配る条件まで調べる",
+        "表計算のセルを読み、ソフトウェアの使い方を判断する",
+        "参照を移動量で読む",
+        "集計に含める行を明確にする",
+        "図と文書の機能を用途から選ぶ",
+        "ソフトを使う行為と再配布を分ける"
+      ],
+      "objectives": [
+        "表計算の参照と集計を説明する",
+        "OSSの利用条件と保守を確認する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-office-oss-figure-1",
+        "ip-office-oss-figure-2"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-office-oss-check"
+    },
+    "ip-reading-spreadsheets": {
+      "step": 35,
+      "unit": 17,
+      "title": "表計算の読解演習：数式を写して検算する",
+      "officialTopics": [
+        47
+      ],
+      "minutes": 50,
+      "beforeChars": 6112,
+      "afterChars": 6214,
+      "sections": [
+        "コピーで何が動くかを一つずつ考える",
+        "縦横に同じ式を配る",
+        "条件の列と合計する列を見分ける",
+        "自分で確かめる",
+        "条件を一つずつ確かめてから、必要な行だけを合計する",
+        "判定式を作り、どの行でも同じ基準を使う",
+        "コピー先と、条件を変えた際の集計を予測する",
+        "別の表で、正しい合計と誤りの原因を求める",
+        "解き直すときの確認"
+      ],
+      "objectives": [
+        "数式を横・縦にコピーした結果を説明する",
+        "条件付き集計の対象を読み、誤った参照を検算で見つける"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-reading-spreadsheets-figure-1",
+        "ip-spreadsheets-logical-input"
+      ],
+      "guidedAnswer": "1700",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-reading-spreadsheets-check"
+    },
+    "ip-spreadsheet-lookups": {
+      "step": 36,
+      "unit": 17,
+      "title": "表計算の表引き：垂直照合と水平照合を使い分ける",
+      "officialTopics": [
+        47
+      ],
+      "minutes": 85,
+      "beforeChars": 0,
+      "afterChars": 7233,
+      "sections": [
+        "表引きで決めるのは、対象の行や列と取り出す項目です",
+        "商品コードを見つけ、同じ行から料金を取り出す",
+        "数量から単価を決めるときは、区切りを超えたかを見る",
+        "表が横向きなら、対象列を決めた後に下へ進む",
+        "行と列が分かっているときは「表引き」を使う",
+        "別シートへ参照を伸ばし、結果から条件に合う件数を数える",
+        "総合演習　式を写す前に間違いを見つける",
+        "参考資料"
+      ],
+      "objectives": [
+        "基準の並ぶ向きと結果の位置から垂直照合・水平照合を選ぶ",
+        "識別用のコードと数値区分を区別し、一致方式を決める",
+        "別シートの照合式と条件付個数を、境界と例外を含めて検算する"
+      ],
+      "teachingEvidence": [
+        [
+          "lookup-exact",
+          "コードを完全一致で見つけ、範囲内の戻す位置を求める",
+          "C9:E11で行と列を区別、重複時の最初の行",
+          "章末問題2〜3・8"
+        ],
+        [
+          "lookup-band",
+          "昇順の区切りによる近似一致と境界を判定する",
+          "注文数11、12、19の比較",
+          "途中入力360、章末問題1・7、模試A"
+        ],
+        [
+          "lookup-horizontal",
+          "上端で照合して同じ列の結果を読む",
+          "表の横置きと、一致条件0と1の使い分け",
+          "章末問題4、模試B、ユニット総合確認"
+        ],
+        [
+          "lookup-summary-count",
+          "別シートに式を向け、コピーと条件付き件数を検算する",
+          "固定範囲、400円未満の件数、独立の工具貸出",
+          "章末問題5〜6・9"
+        ]
+      ],
+      "figures": [
+        "ip-spreadsheet-lookups-codes",
+        "ip-spreadsheet-lookups-rates",
+        "ip-spreadsheet-lookups-horizontal",
+        "ip-spreadsheet-lookups-records"
+      ],
+      "guidedAnswer": "360",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-spreadsheet-lookups-check"
+    },
+    "ip-hardware": {
+      "step": 37,
+      "unit": 18,
+      "title": "ハードウェアと用途に合う選択",
+      "officialTopics": [
+        49
+      ],
+      "minutes": 55,
+      "beforeChars": 7244,
+      "afterChars": 7244,
+      "sections": [
+        "用途によって構成が変わる",
+        "入出力装置を比較する",
+        "導入後の運用も考える",
+        "例：倉庫で使う端末",
+        "まとめ",
+        "入出力機器を、欲しいデータから選ぶ",
+        "機器の形状、信号、役割を順に確認する",
+        "作業用PCに接続された機器を見分ける",
+        "どの向きに情報が動くかを見る",
+        "機器をデータの行き先と現場の条件で選ぶ",
+        "紙から何を読みたいかで装置を選ぶ",
+        "端末の表示と出力の条件を確認する",
+        "同じ形の端子でも機能を確かめる",
+        "保存の容量と耐障害性を区別する"
+      ],
+      "objectives": [
+        "機器の用途と制約を説明する",
+        "接続・保守・環境への配慮を考える"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-hardware-figure-1",
+        "ip-hardware-figure-2",
+        "ip-hardware-figure-3"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-hardware-check"
+    },
+    "ip-design": {
+      "step": 38,
+      "unit": 19,
+      "title": "情報デザインと使いやすい画面",
+      "officialTopics": [
+        50,
+        51
+      ],
+      "minutes": 60,
+      "beforeChars": 6319,
+      "afterChars": 6319,
+      "sections": [
+        "情報を見つけ、理解し、使えるようにする",
+        "人とシステムの接点",
+        "多様な利用者へ配慮する",
+        "例：記録の削除画面",
+        "まとめ",
+        "誤りの場所と直し方が分かる画面にする",
+        "申込画面を、入力して直せる順に設計する",
+        "同じ情報でも、探したい目的で並べ方を変える",
+        "申込画面を、情報を探す順と誤りを直す順から設計する",
+        "利用者の目的に合う情報の順序を選ぶ",
+        "操作できるかと、使いやすいかを確かめる",
+        "試作品で観察し、原因に合わせて直す",
+        "機器と利用環境を一緒に考える"
+      ],
+      "objectives": [
+        "情報の構造と見た目の役割を説明する",
+        "アクセシビリティと誤操作防止を考える"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-design-figure-1",
+        "ip-design-figure-2"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-design-check"
+    },
+    "ip-media": {
+      "step": 39,
+      "unit": 20,
+      "title": "画像・音声・動画と圧縮",
+      "officialTopics": [
+        52,
+        53
+      ],
+      "minutes": 65,
+      "beforeChars": 6878,
+      "afterChars": 6878,
+      "sections": [
+        "連続する情報を数値にする",
+        "例：音声と画像の容量",
+        "形式を使い分ける",
+        "圧縮と応用",
+        "まとめ",
+        "単位と圧縮条件をそろえて容量を計算する",
+        "データ量を「1回分 × 回数」で求める",
+        "復元の必要性から形式と圧縮を選ぶ",
+        "画像と音声の量を見積もり、使い道に合う形式を選ぶ",
+        "画像の寸法と色の細かさから計算する",
+        "時間、回数、チャネル数を順に掛ける",
+        "原版を残すか、配信時の小ささを優先するか決める",
+        "見られる人と場面を考えて配信する"
+      ],
+      "objectives": [
+        "デジタル化と容量を計算する",
+        "メディア形式と圧縮の違いを説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-media-figure-1",
+        "ip-media-figure-2"
+      ],
+      "guidedAnswer": "4",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-media-check"
+    },
+    "ip-database": {
+      "step": 40,
+      "unit": 21,
+      "title": "データベースの設計と正規化",
+      "officialTopics": [
+        54,
+        55
+      ],
+      "minutes": 65,
+      "beforeChars": 7409,
+      "afterChars": 7409,
+      "sections": [
+        "データを共有して管理する",
+        "識別と関連を決める",
+        "例：顧客と注文を分ける",
+        "正規化と検索",
+        "まとめ",
+        "注文データから、何を一度だけ保存するか考える",
+        "注文の行が何を一意に表すか決める",
+        "対応関係を保存する表を決める",
+        "一行が何を表すかを決め、変更しても壊れない表を作る",
+        "一意になる値と、対応を示す値を区別する",
+        "更新で一部だけ古くなる理由を追う",
+        "多対多の対応を一つの欄へ押し込まない",
+        "表を結合する前に行数の変化を予想する"
+      ],
+      "objectives": [
+        "主キーと外部キーの役割を説明する",
+        "重複による更新の不整合を防ぐ"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-database-figure-1",
+        "ip-database-figure-2",
+        "ip-database-figure-3"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-database-check"
+    },
+    "ip-sql-transactions": {
+      "step": 41,
+      "unit": 21,
+      "title": "SQLとトランザクション",
+      "officialTopics": [
+        56,
+        57
+      ],
+      "minutes": 75,
+      "beforeChars": 8226,
+      "afterChars": 8226,
+      "sections": [
+        "必要なデータを取り出す",
+        "例：在庫数を合計する",
+        "ひとまとまりの処理",
+        "例：口座間の振替",
+        "まとめ",
+        "抽出、集計、更新の境界を追う",
+        "行の絞込みとグループの絞込みを区別する",
+        "一緒に終えるべき処理をひとまとまりにする",
+        "行、グループ、取引のどれを処理しているかを見る",
+        "絞る対象を一段ずつ確かめる",
+        "件数を求めるときに欠けた値を確認する",
+        "変更をひとまとまりとして扱う",
+        "同時実行時に一件ずつの正しさを考える",
+        "集計結果を、小さな表から手で再現する"
+      ],
+      "objectives": [
+        "検索・集計の基本を読む",
+        "同時更新と復旧の必要性を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-sql-transactions-figure-1",
+        "ip-sql-transactions-figure-2"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-sql-transactions-check"
+    },
+    "ip-network": {
+      "step": 42,
+      "unit": 22,
+      "title": "LAN・無線とネットワーク構成",
+      "officialTopics": [
+        58
+      ],
+      "minutes": 65,
+      "beforeChars": 10042,
+      "afterChars": 10042,
+      "sections": [
+        "ネットワークの範囲と機器",
+        "有線と無線",
+        "速さを計算する",
+        "運用と分離",
+        "まとめ",
+        "転送する相手と、経路の範囲を見分ける",
+        "端末から外のネットワークまでを区切って調べる",
+        "回線の速度と待ちを分けて見積もる",
+        "IoTの回線を距離・電力・量から選ぶ",
+        "LANを分ける理由と、機器が選ぶ宛先を考える",
+        "配線できない場所で、無線の使い方を選ぶ",
+        "同じネットワークの内側と外側を、通信経路に沿って調べる",
+        "同じLANで届くことと、LANの外へ届くこと",
+        "無線でつながることと、十分な速度で届くこと",
+        "ビット毎秒と遅延を別々に見積もる",
+        "用途の異なる機器を同じ範囲へ置かない",
+        "同じアドレス範囲かどうかを、先頭の共通部分で判断する"
+      ],
+      "objectives": [
+        "通信機器と接続範囲を区別する",
+        "帯域と転送時間を計算する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-network-figure-1",
+        "ip-network-figure-2",
+        "ip-network-figure-3",
+        "ip-network-figure-4"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-network-check"
+    },
+    "ip-protocols": {
+      "step": 43,
+      "unit": 22,
+      "title": "TCP/IP・名前解決とインターネット",
+      "officialTopics": [
+        59,
+        60
+      ],
+      "minutes": 65,
+      "beforeChars": 9429,
+      "afterChars": 9429,
+      "sections": [
+        "通信の約束を階層に分ける",
+        "アドレスとネットワーク",
+        "Webとメール",
+        "例：URLを開くまで",
+        "まとめ",
+        "名前を引き、接続し、要求を送る",
+        "ブラウザでページを開くまでの通信を追う",
+        "送るものと優先する性質から方式を選ぶ",
+        "層をたどると、正常な区間を切り分けられる",
+        "移動先の接続と契約の条件を読む",
+        "接続、名前解決、認証を別々の成功条件として読む",
+        "端末の設定と名前の問い合わせを分ける",
+        "転送の性質とアプリの役割を切り分ける",
+        "送るメールと受け取ったメールを分ける",
+        "携帯通信の切替えと契約を区別する"
+      ],
+      "objectives": [
+        "代表的なプロトコルの役割を説明する",
+        "アドレスと名前の関係を理解する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-protocols-figure-1",
+        "ip-protocols-figure-2",
+        "ip-protocols-figure-3"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-protocols-check"
+    },
+    "ip-security-risk": {
+      "step": 44,
+      "unit": 23,
+      "title": "情報セキュリティとリスク管理",
+      "officialTopics": [
+        61,
+        62
+      ],
+      "minutes": 65,
+      "beforeChars": 7039,
+      "afterChars": 7039,
+      "sections": [
+        "守る対象と性質",
+        "脅威と脆弱性を分ける",
+        "組織で継続して管理する",
+        "例：誤送信に気付いたら",
+        "まとめ",
+        "資産、困ること、対策をつなげる",
+        "資産への影響から優先順位を付ける",
+        "対応を選び、残るリスクを引き受ける人を決める",
+        "失うと困るものを決め、対策後に何が残るかを考える",
+        "CIAを被害の違いから理解する",
+        "脅威、弱点、影響を一文ずつ書く",
+        "リスク対応の種類と限界を判断する",
+        "管理を見直す条件を決める"
+      ],
+      "objectives": [
+        "機密性・完全性・可用性を説明する",
+        "リスク対応と事故対応を考える"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-security-risk-figure-1",
+        "ip-security-risk-figure-2"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-security-risk-check"
+    },
+    "ip-security-controls": {
+      "step": 45,
+      "unit": 23,
+      "title": "攻撃の手口と多層防御",
+      "officialTopics": [
+        63
+      ],
+      "minutes": 70,
+      "beforeChars": 7619,
+      "afterChars": 7619,
+      "sections": [
+        "人を狙う攻撃とマルウェア",
+        "Webと通信への攻撃",
+        "対策を重ねる",
+        "認証と権限",
+        "例とまとめ",
+        "予防、検知、復旧の役割を組み合わせる",
+        "予防・検知・復旧を別々に組み立てる",
+        "確認したい性質に対策を結び付ける",
+        "予防、検知、復旧を、守りたい業務に割り当てる",
+        "認証と認可を順に考える",
+        "異常に気付き、事実を確認する",
+        "復旧の目標を記録時点と時間に分ける",
+        "変更できる場所と復元する場所を分ける",
+        "店舗の端末紛失と通信障害に、違う層の備えを選ぶ"
+      ],
+      "objectives": [
+        "代表的な攻撃と対策を対応させる",
+        "予防・検知・復旧を組み合わせる"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-security-controls-figure-1",
+        "ip-security-controls-figure-2"
+      ],
+      "guidedAnswer": "10",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-security-controls-check"
+    },
+    "ip-cryptography": {
+      "step": 46,
+      "unit": 23,
+      "title": "暗号・電子署名と証明書",
+      "officialTopics": [
+        63
+      ],
+      "minutes": 65,
+      "beforeChars": 7939,
+      "afterChars": 7939,
+      "sections": [
+        "暗号は鍵と目的を分けて考える",
+        "ハッシュは復号するための暗号ではない",
+        "電子署名と公開鍵の確認",
+        "例：契約書を安全に送る",
+        "まとめ",
+        "暗号化と署名では、守る目的が異なる",
+        "書類を誰の鍵で扱うか整理する",
+        "検証できる内容と証明書の範囲を確かめる",
+        "秘密にする、改変を確かめる、送信者を確かめる",
+        "共通鍵と公開鍵の使い分け",
+        "ハッシュと署名が示すものを分ける",
+        "証明書は何を結び付けるか",
+        "目的を組み合わせる順序を言葉にする",
+        "本人拒否と他人受入を別々に数える"
+      ],
+      "objectives": [
+        "共通鍵と公開鍵を区別する",
+        "署名と証明書の役割を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-cryptography-figure-1",
+        "ip-cryptography-figure-2",
+        "ip-cryptography-figure-3"
+      ],
+      "guidedAnswer": "correct",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-cryptography-check"
+    },
+    "ip-release-decision": {
+      "step": 47,
+      "unit": 23,
+      "title": "3分野の総合読解：受入条件と試験記録から導入を判断する",
+      "officialTopics": [
+        2,
+        23,
+        25,
+        28,
+        63
+      ],
+      "minutes": 75,
+      "beforeChars": 5250,
+      "afterChars": 5250,
+      "sections": [
+        "条件文を「対象・物差し・境界」に分ける",
+        "例題1　境界に一致する記録を判定する",
+        "集計表と復旧記録を、要件文の同じ行に戻す",
+        "例題2　平均を満たしていても、未達の条件を説明する",
+        "データがない場合と、要件自体が変わる場合",
+        "例題3　導入先を変えるときは、残る条件も確認する",
+        "自力で確認　拠点を増やした後に測る範囲"
+      ],
+      "objectives": [
+        "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+        "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+        "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+      ],
+      "teachingEvidence": "前版の本文・例題・設問を継承。分野別の既存監査を参照。",
+      "figures": [
+        "ip-release-rules",
+        "ip-release-evidence"
+      ],
+      "guidedAnswer": "hold",
+      "fallback": "同じレッスン内の details に全解答を掲載。",
+      "questionIds": "ip-release-decision-check"
+    }
+  }
+}

@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '暗号・電子署名と証明書',
   'description': '共通鍵と公開鍵を区別する。署名と証明書の役割を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 40,
+  'order': 46,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'ITサービスと設備・障害対応',
   'description': 'インシデントと問題を区別する。SLAと継続的改善を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 19,
+  'order': 22,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

@@ -5,7 +5,7 @@
   "title": "表計算の読解演習：数式を写して検算する",
   "description": "相対・絶対・複合参照の移動を図で追い、条件付き集計と売上の計算を検算します。",
   "unit": 17,
-  "order": 30,
+  "order": 35,
   "minutes": 50,
   "syllabus": [
     47
@@ -113,6 +113,9 @@ D7：=合計(D2:D6)
 たとえば基準の参照を `E2` と書いた場合、D3では判定が `C3>=E3` へ変わります。2行目で正解しても、3行目以降は同じ基準で判定できません。表示された集計額だけでは、参照先を取り違えた箇所が分かりづらいので、D3や末尾のD6にコピーされた式を開き、問題で指定された基準セルを読んでいるか確かめます。
 
 同じ表でF1を「南」、E2を900へ変えると、4行目の1,300円と6行目の900円が集計され、合計は2,200円です。条件を「900円を超える」へ変えると6行目が外れ、1,300円になります。「以上」と「超える」の違いを検算するときは、基準と同じ金額の行から確かめると早く見つけられます。
+
+単価表などから条件に応じた値を取り出す方法は、[表引き・垂直照合・水平照合](/qualifications/it-passport/ip-spreadsheet-lookups/)へ進んで確認できます。
+
 
 <section class="guided-lesson" id="guided-ip-spreadsheets-logical" aria-labelledby="guided-ip-spreadsheets-logical-title">
 <h3 id="guided-ip-spreadsheets-logical-title">途中で確認　条件の境目で集計がどう変わるか</h3>

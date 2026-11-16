@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'データ構造とアルゴリズム',
   'description': '順次・分岐・反復を追跡する。探索とデータ構造を使い分ける。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 24,
+  'order': 28,
   'minutes': 70,
   'sample': false,
   'updated': '2026-11-16',
@@ -34,6 +34,8 @@
 ## 処理を手順にする
 
 アルゴリズムは問題を解くための手順です。順次は上から順に実行、分岐は条件に応じた選択、反復は条件を満たす間などの繰返しです。フローチャートや擬似言語で表し、変数の値を追跡する<a class="lesson-term" data-lesson-term href="#lesson-term-trace">トレース</a>で動作を確認します。<a class="lesson-term" data-lesson-term href="#lesson-term-assignment">代入</a>は値の更新で、数学の等式とは役割が違います。
+
+変数を更新する手順をつかんだら、[関数の呼出しを追う章](/qualifications/it-passport/ip-function-trace/)で、値が別の処理へ渡り、計算結果が戻る流れを扱います。
 
 ## 例：合計を求める
 

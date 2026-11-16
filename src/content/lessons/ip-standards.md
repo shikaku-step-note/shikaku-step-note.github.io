@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '標準化と互換性',
   'description': '公的標準と事実上の標準を区別する。標準化の効果と限界を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 7,
+  'order': 9,
   'minutes': 80,
   'sample': false,
   'updated': '2026-11-16',

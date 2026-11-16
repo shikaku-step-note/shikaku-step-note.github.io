@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'システム開発とテスト・移行',
   'description': '開発工程とテストの目的を区別する。安全な移行と保守を計画する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 15,
+  'order': 17,
   'minutes': 60,
   'sample': false,
   'updated': '2026-11-16',

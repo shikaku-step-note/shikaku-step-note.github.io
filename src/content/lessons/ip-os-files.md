@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'OSとファイルシステム',
   'description': 'OSの資源管理を説明する。ファイルの経路と権限を扱う。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 28,
+  'order': 33,
   'minutes': 60,
   'sample': false,
   'updated': '2026-11-16',

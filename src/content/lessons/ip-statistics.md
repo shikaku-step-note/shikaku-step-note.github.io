@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '確率・統計とデータの読み方',
   'description': '代表値と散らばりを説明する。確率・期待値を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 22,
+  'order': 25,
   'minutes': 75,
   'sample': false,
   'updated': '2026-11-16',
@@ -161,6 +161,9 @@ IPA Ver.6.5の項目34は、確率と統計の基本的な考え方を対象と�
 </details>
 
 **復習の目安**　母集団、分母、分布、比較条件を確認し、代表値が表す範囲を説明できます。
+
+予測値と実測値の差で二つのモデルを比較する手順は、[回帰分析の読み方](/qualifications/it-passport/ip-regression-residuals/)で練習できます。
+
 
 <section class="guided-lesson" id="guided-ip-statistics" aria-labelledby="ip-statistics-guided-title">
 <h3 id="ip-statistics-guided-title">途中で確認　条件で絞った母数</h3>

@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '開発プロセス・アジャイルとDevOps',
   'description': 'ウォーターフォールと反復開発を比較する。アジャイルの役割と継続的な改善を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 16,
+  'order': 18,
   'minutes': 55,
   'sample': false,
   'updated': '2026-11-16',

@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'LAN・無線とネットワーク構成',
   'description': '通信機器と接続範囲を区別する。帯域と転送時間を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 36,
+  'order': 42,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

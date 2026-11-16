@@ -4,7 +4,7 @@
   "qualification": "it-passport",
   "title": "3分野の総合読解：受入条件と試験記録から導入を判断する",
   "description": "要件文、拠点別の集計、復旧試験の記録を突き合わせ、平均で隠れる未達や、条件の変更で変わる判定を根拠から説明します。",
-  "order": 41,
+  "order": 47,
   "unit": 23,
   "minutes": 75,
   "sample": false,

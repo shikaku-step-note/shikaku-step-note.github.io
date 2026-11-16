@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'マーケティングと経営管理システム',
   'description': 'STPと4Pを使って施策を整理する。ERP・SCM・CRMの役割を区別する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 9,
+  'order': 11,
   'minutes': 95,
   'sample': false,
   'updated': '2026-11-16',

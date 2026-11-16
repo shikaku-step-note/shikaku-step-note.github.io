@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '画像・音声・動画と圧縮',
   'description': 'デジタル化と容量を計算する。メディア形式と圧縮の違いを説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 33,
+  'order': 39,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
 import assert from 'node:assert/strict';
-import { ipAssessments, questionBank, ipVersion, ipDepthBank, ipTextbookBank, ipTextbookVersion, ipLessonTransfer, ipLessonTransferVersion, ipMockVersions, ipUnitReviewVersion } from '../src/data/it-passport';
+import { ipAssessments, questionBank, ipVersion, ipDepthBank, ipTextbookBank, ipTextbookVersion, ipLessonTransfer, ipLessonTransferVersion, ipMockVersions, ipUnitReviewVersion, ipApplicationVersion } from '../src/data/it-passport';
 import { isCorrect, assessmentMaterialIssues, compatibleAttempt, newAttempt } from '../src/lib/assessment';
 
 test('all current lesson checks gain input practice without changing legacy mock records', () => {
@@ -55,7 +55,7 @@ test('the two mock forms use separate versioned banks in the official task forma
 test('mock 2 numerical keys agree with independent calculations', () => {
   const mock = ipAssessments([]).find((a) => a.id === 'ip-mock-02')!;
   const examples: [string, string][] = [
-    ['120\u4ef6\u306e\u5185\u8a33', String(Math.ceil((120 * .6 - 48) / 30) + 1)],
+    ['原料は5日ごと', String((5 + 3) * 6 + 9 - 24 - 7) + '個'],
     ['135,000\u5186', ((1200 - 750) * 400 - 135000).toLocaleString('en-US') + '\u5186'],
     ['\u6d41\u52d5\u8cc7\u7523180\u4e07', String(180 / 120 * 100) + '\uff05'],
     ['B\u306f8\u65e5', String(4 + Math.max(8, 6) + 3) + '\u65e5'],
@@ -125,10 +125,11 @@ test('each upgraded lesson has fresh graded practice and retains the prior quest
     const textbook = ipTextbookBank[lesson]!;
     assert.ok(textbook?.length, lesson);
     const transfer = ipLessonTransfer[lesson] ?? [];
-    const old = { ...assessment, version: '2026-11-depth-v1', questions: assessment.questions.slice(0, -(textbook.length + transfer.length)) };
-    assert.equal(assessment.version, transfer.length ? ipLessonTransferVersion : ipTextbookVersion);
+    const applicationCount = assessment.version === ipApplicationVersion ? 1 : 0;
+    const old = { ...assessment, version: '2026-11-depth-v1', questions: assessment.questions.slice(0, -(textbook.length + transfer.length + applicationCount)) };
+    assert.equal(assessment.version, applicationCount ? ipApplicationVersion : transfer.length ? ipLessonTransferVersion : ipTextbookVersion);
     if (transfer.length) {
-      const oldTextbook = { ...assessment, version: ipTextbookVersion, questions: assessment.questions.slice(0, -transfer.length) };
+      const oldTextbook = { ...assessment, version: ipTextbookVersion, questions: assessment.questions.slice(0, -(transfer.length + applicationCount)) };
       assert.equal(compatibleAttempt(assessment, newAttempt(oldTextbook, 'practice')), false);
     }
     assert.deepEqual(old.questions.slice(0, 3), questionBank[lesson]!.lesson);
@@ -203,5 +204,57 @@ test('new mock and lesson numerics agree with independent reasoning', () => {
     const q = ipLessonTransfer['ip-' + slug]!.find((q) => q.input === 'number')!;
     assert.ok(isCorrect(q, String(value)));
     assert.ok(!isCorrect(q, String(value + 1)));
+  }
+});
+
+test('new IT Passport lessons extend the existing route and only reversion affected practice', () => {
+  const additions = {
+    'ip-source-bias-decision': ['ip-analysis', 1, 9],
+    'ip-inventory-decisions': ['ip-reading-business-data', 1, 10],
+    'ip-resource-planning': ['ip-reading-project-plans', 10, 8],
+    'ip-regression-residuals': ['ip-statistics', 13, 8],
+    'ip-function-trace': ['ip-algorithms', 14, 10],
+    'ip-spreadsheet-lookups': ['ip-reading-spreadsheets', 17, 9],
+  } as const;
+  const existing = [...Object.keys(questionBank), 'ip-reading-business-data', 'ip-reading-project-plans', 'ip-reading-spreadsheets', 'ip-release-decision'];
+  const chapters = [...new Set([...existing, ...Object.keys(additions)])].map((id) => {
+    const raw = readFileSync(new URL('../src/content/lessons/' + id + '.md', import.meta.url), 'utf8');
+    return { data: parse(raw.split('---')[1]!), raw };
+  }).sort((a, b) => a.data.order - b.data.order);
+  assert.deepEqual(chapters.map((chapter) => chapter.data.order), Array.from({ length: 47 }, (_, i) => i + 1));
+  const fixture = ipAssessments(chapters);
+  for (const [id, [previous, unit, size]] of Object.entries(additions)) {
+    const index = chapters.findIndex((chapter) => chapter.data.stableId === id);
+    assert.equal(chapters[index - 1]!.data.stableId, previous, id);
+    const { data, raw } = chapters[index]!;
+    assert.equal(data.unit, unit);
+    assert.ok(raw.match(/<figure\b/g)!.length >= 2);
+    assert.ok(raw.includes('data-guided-practice') && raw.includes('data-guided-solution'));
+    const assessment = fixture.find((a) => a.id === id + '-check')!;
+    assert.equal(assessment.version, ipApplicationVersion);
+    assert.equal(assessment.questions.length, size);
+    assert.ok(assessment.questions.every((q) => q.lesson === id));
+    for (const question of assessment.questions) {
+      const key = question.input ? question.accepted![0] : question.answer;
+      assert.ok(isCorrect(question, key), question.id);
+      assert.equal(isCorrect(question, ''), false, question.id);
+    }
+  }
+  for (const unit of [1, 10, 13, 14, 17]) {
+    const review = fixture.find((a) => a.id === 'ip-unit-' + unit + '-review')!;
+    assert.equal(review.version, ipApplicationVersion);
+    assert.equal(review.questions.filter((q) => q.id.includes('-application-')).length, unit === 1 ? 2 : 1);
+    assert.equal(compatibleAttempt(review, newAttempt({ ...review, version: ipUnitReviewVersion }, 'practice')), false);
+    assert.equal(fixture.find((a) => a.id === 'ip-unit-' + unit + '-glossary')!.version, ipApplicationVersion);
+  }
+  assert.equal(fixture.find((a) => a.id === 'ip-glossary-all')!.version, ipApplicationVersion);
+  assert.equal(fixture.find((a) => a.id === 'ip-unit-2-review')!.version, ipUnitReviewVersion);
+  assert.equal(fixture.find((a) => a.id === 'ip-unit-2-glossary')!.version, ipVersion);
+  const residual = fixture.find((a) => a.id === 'ip-regression-residuals-check')!.questions[1]!;
+  assert.ok(isCorrect(residual, '−５') && !isCorrect(residual, '5'));
+  const oldVersions = ['2026-11-mock-01-v2', '2026-11-mock-02-v3'];
+  for (const [index, mock] of fixture.filter((a) => a.kind === 'mock').entries()) {
+    assert.equal(mock.questions.filter((q) => q.id.includes('-application-')).length, 6);
+    assert.equal(compatibleAttempt(mock, newAttempt({ ...mock, version: oldVersions[index]! }, 'timed')), false);
   }
 });

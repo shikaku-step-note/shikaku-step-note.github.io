@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'プロジェクト管理とクリティカルパス',
   'description': 'WBSとスケジュールを関連付ける。制約とリスクを踏まえて計画する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 17,
+  'order': 19,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

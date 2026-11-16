@@ -5,7 +5,7 @@
   "title": "工程計画の読解演習：期限までに終わる案を選ぶ",
   "description": "依存関係を読み、各作業の開始と終了、余裕、短縮後の経路を求めて期限内の計画を選びます。",
   "unit": 10,
-  "order": 18,
+  "order": 20,
   "minutes": 50,
   "syllabus": [
     27
@@ -102,6 +102,8 @@
 </table>
 </div>
 </figure>
+
+担当者が二つの作業を同時に進められない場合は、[工程表と人員配置](/qualifications/it-passport/ip-resource-planning/)で、先行作業と人員の両方から開始日を決めます。
 
 <section class="guided-lesson" id="guided-ip-reading-project-plans" aria-labelledby="guided-ip-reading-project-plans-title">
 <h3 id="guided-ip-reading-project-plans-title">途中で確認　共通作業を短縮した後の完了日</h3>

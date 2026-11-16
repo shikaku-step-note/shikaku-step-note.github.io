@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'CPU・メモリ・入出力',
   'description': '主要装置の役割と記憶階層を説明する。単純な処理時間を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 26,
+  'order': 31,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

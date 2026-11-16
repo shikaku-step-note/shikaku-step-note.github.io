@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '攻撃の手口と多層防御',
   'description': '代表的な攻撃と対策を対応させる。予防・検知・復旧を組み合わせる。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 39,
+  'order': 45,
   'minutes': 70,
   'sample': false,
   'updated': '2026-11-16',

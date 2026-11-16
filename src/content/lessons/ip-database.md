@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'データベースの設計と正規化',
   'description': '主キーと外部キーの役割を説明する。重複による更新の不整合を防ぐ。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 34,
+  'order': 40,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

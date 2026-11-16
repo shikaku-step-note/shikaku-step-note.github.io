@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '経営戦略と目標・評価',
   'description': '戦略分析の軸を使い分ける。KGIとKPIを結び付ける。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 8,
+  'order': 10,
   'minutes': 105,
   'sample': false,
   'updated': '2026-11-16',

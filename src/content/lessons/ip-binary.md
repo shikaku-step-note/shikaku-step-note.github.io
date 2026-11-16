@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '2進数・集合と論理演算',
   'description': '位取りと情報量を計算する。集合・論理演算を具体例で使う。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 21,
+  'order': 24,
   'minutes': 70,
   'sample': false,
   'updated': '2026-11-16',

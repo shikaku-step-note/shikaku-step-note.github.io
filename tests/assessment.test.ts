@@ -22,7 +22,7 @@ test('mismatched question records cannot be reinterpreted or scored', () => {
   assert.throws(() => gradeAttempt(mock, b));
 });
 test('current curriculum covers all 63 official items and all 23 units, with valid original banks', () => {
-  assert.equal(lessons.length, 41);
+  assert.equal(lessons.length, 47);
   assert.equal(syllabusItems.length, 63);
   assert.equal(new Set(lessons.map((l) => l.data.unit)).size, 23);
   assert.deepEqual(
@@ -73,7 +73,7 @@ test('original question arithmetic matches independent reference calculations', 
     ['単価2,000円', `${240000 / (2000 - 1200)}個`],
     ['期末時点の資産', `${900 - 350}万円`],
     ['広告費72,000円', `${72000 / 120}円`],
-    ['A3日後にB5日', `${3 + Math.max(5, 2) + 1}日`],
+    ['同じ担当者がBを4日', `${1 + 4 + 2 + 1}日目`],
     ['2進数11010', `${parseInt('11010', 2)}`],
     ['符号なし6ビット', `${2 ** 6 - 1}`],
     ['MTBF=198', `${(198 / (198 + 2)) * 100}%`],

@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': '情報システム戦略と業務プロセス',
   'description': '全体最適と業務改革を説明する。クラウド等の利用形態を比較する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 13,
+  'order': 15,
   'minutes': 105,
   'sample': false,
   'updated': '2026-11-16',

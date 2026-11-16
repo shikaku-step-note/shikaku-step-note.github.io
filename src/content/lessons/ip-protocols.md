@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'TCP/IP・名前解決とインターネット',
   'description': '代表的なプロトコルの役割を説明する。アドレスと名前の関係を理解する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 37,
+  'order': 43,
   'minutes': 65,
   'sample': false,
   'updated': '2026-11-16',

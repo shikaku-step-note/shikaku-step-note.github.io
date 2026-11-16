@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'eビジネスとデジタルサービス',
   'description': '取引の組合せと事業モデルを区別する。電子商取引の指標を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 12,
+  'order': 14,
   'minutes': 85,
   'sample': false,
   'updated': '2026-11-16',

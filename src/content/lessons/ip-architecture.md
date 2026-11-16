@@ -4,7 +4,7 @@
   'qualification': 'it-passport',
   'title': 'システム構成と信頼性・性能',
   'description': '冗長化と負荷分散を区別する。稼働率と性能指標を計算する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
-  'order': 27,
+  'order': 32,
   'minutes': 70,
   'sample': false,
   'updated': '2026-11-16',
