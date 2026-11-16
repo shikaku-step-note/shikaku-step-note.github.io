@@ -21,6 +21,11 @@ const lessons = defineCollection({
       objectives: z.array(z.string()).default([]),
       prerequisite: z.string().optional(),
       glossary: z.array(z.object({ term: z.string(), definition: z.string() })).default([]),
+      inlineGlossary: z.array(z.object({
+        id: z.string().regex(/^[a-z0-9-]+$/),
+        term: z.string().min(1),
+        definition: z.string().min(1).optional(),
+      })).default([]),
       updated: z.string(),
       keywords: z.array(z.string()),
       question: z.string().optional(),

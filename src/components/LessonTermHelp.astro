@@ -1,0 +1,115 @@
+<div id="lesson-term-preview" class="lesson-term-preview" data-term-preview popover="manual" role="dialog" aria-labelledby="lesson-term-preview-title">
+  <div class="lesson-term-preview-header">
+    <strong id="lesson-term-preview-title" data-term-title></strong>
+    <button type="button" class="lesson-term-close" data-term-close aria-label="用語の説明を閉じる">×</button>
+  </div>
+  <p data-term-definition></p>
+  <button type="button" class="lesson-term-pin" data-term-pin>右側に固定</button>
+</div>
+
+<script>
+  import '../scripts/lesson-terms';
+</script>
+
+<style is:global>
+  .lesson-content .lesson-term {
+    color: var(--teal);
+    text-decoration: underline dotted;
+    text-underline-offset: 0.21em;
+    cursor: help;
+  }
+
+  .lesson-content .lesson-term:hover,
+  .lesson-content .lesson-term:focus-visible {
+    text-decoration-style: solid;
+  }
+
+  .lesson-glossary dt[id^='lesson-term-'] {
+    scroll-margin-block-start: 1.5rem;
+  }
+
+  .lesson-glossary dt[id^='lesson-term-']:target {
+    outline: 2px solid var(--teal);
+    outline-offset: 0.2rem;
+  }
+
+  .lesson-term-preview {
+    display: none;
+    position: fixed;
+    inset: auto;
+    z-index: 2;
+    margin: 0;
+    box-sizing: border-box;
+    width: 20rem;
+    overflow: auto;
+    padding: 0.65rem 0.85rem 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: 0.7rem;
+    background: var(--surface);
+    color: var(--ink);
+    box-shadow: 0 8px 24px rgb(5 26 40 / 0.21);
+    font-size: 0.9rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+
+  .lesson-term-preview:popover-open { display: block; }
+  .lesson-term-preview p { margin: 0.2rem 0 0; }
+
+  .lesson-term-preview-header, .lesson-terms-panel header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .lesson-term-close, .lesson-term-pin {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--teal);
+    border-radius: 0.35rem;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+    min-block-size: 2rem;
+    cursor: pointer;
+  }
+
+  .lesson-term-close {
+    min-inline-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .lesson-term-pin, .lesson-terms-panel { display: none; }
+
+  .lesson-term-pin:disabled {
+    cursor: default;
+    color: var(--muted);
+  }
+
+  @media (min-width: 70rem) {
+    .lesson-term-pin { display: inline-block; margin-block-start: 0.6rem; }
+
+    .lesson-terms-panel:not([hidden]) {
+      display: block;
+      background: var(--surface);
+      color: var(--ink);
+      padding: 0.85rem;
+      border: 1px solid var(--line);
+      border-radius: 0.7rem;
+      margin-block-end: 1rem;
+      max-block-size: min(38vh, 19rem);
+      overflow: auto;
+      font-size: 0.85rem;
+      overflow-wrap: anywhere;
+    }
+
+    .lesson-terms-panel h2 { font-size: 0.9rem; margin: 0 0 0.4rem; }
+    .lesson-terms-panel article { border-block-start: 1px solid var(--line); padding-block: 0.5rem; }
+    .lesson-terms-panel article p { margin: 0.15rem 0 0; line-height: 1.65; }
+  }
+
+  @media print {
+    .lesson-term-preview:popover-open { display: none; }
+    .lesson-content .lesson-term { color: inherit; text-decoration: none; }
+  }
+</style>

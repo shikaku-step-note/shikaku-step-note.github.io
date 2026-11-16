@@ -6,6 +6,7 @@ import Share from '../../../components/Share.astro';
 import Assessment from '../../../components/Assessment.astro';
 import LessonPrintPractice from '../../../components/LessonPrintPractice.astro';
 import '../../../styles/lesson-print.css';
+import LessonTermHelp from '../../../components/LessonTermHelp.astro';
 import IpWorkbench from '../../../components/IpWorkbench.astro';
 import IpControlChart from '../../../components/IpControlChart.astro';
 import IpReferenceExplorer from '../../../components/IpReferenceExplorer.astro';
@@ -64,6 +65,18 @@ const courseSources = takken
     ? zeirishiSources.filter((s) => zeirishiOutline.find((r) => r.id === d.stableId)?.sources.includes(s.id))
     : [];
 const unit = units.find((u) => u.id === d.unit);
+const inlineTerms = new Map(d.inlineGlossary.map((entry) => [entry.term, entry]));
+const glossary = d.glossary.map((entry) => ({ ...entry, id: inlineTerms.get(entry.term)?.id }));
+for (const entry of d.inlineGlossary) {
+  const existing = glossary.find((word) => word.term === entry.term);
+  if (existing) {
+    if (entry.definition) existing.definition = entry.definition;
+  } else if (entry.definition) {
+    glossary.push({ term: entry.term, definition: entry.definition, id: entry.id });
+  } else {
+    throw new Error('Missing inline glossary definition for ' + d.stableId + ': ' + entry.term);
+  }
+}
 const glossaryId = deepUnit?.assessments.find((a) => a.kind === 'glossary')?.id ?? `${testPrefix}-unit-${d.unit}-glossary`;
 const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `${testPrefix}-unit-${d.unit}-review`;
 ---
@@ -205,13 +218,14 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
         {q.id === 'it-passport' && d.stableId === 'ip-reading-spreadsheets' && <IpReferenceExplorer />}
         {q.id === 'it-passport' && ['ip-finance', 'ip-project', 'ip-binary'].includes(d.stableId) && <IpWorkbench lesson={d.stableId} />}
       </div>
-      {d.glossary.length > 0 && (
+      {d.inlineGlossary.length > 0 && <LessonTermHelp />}
+      {glossary.length > 0 && (
         <section class="prose lesson-glossary">
           <h2>このレッスンの用語</h2>
           <dl>
-            {d.glossary.map((g) => (
+            {glossary.map((g) => (
               <>
-                <dt>
+                <dt id={g.id ? "lesson-term-" + g.id : undefined} tabindex={g.id ? -1 : undefined}>
                   <strong>{g.term}</strong>
                 </dt>
                 <dd>{g.definition}</dd>
@@ -365,6 +379,21 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
       <Share title={`${d.title}｜${q.name}`} url={canonical} />
     </article>
     <aside class="lesson-sidebar">
+      {d.inlineGlossary.length > 0 && (
+        <section class="lesson-terms-panel" data-term-panel hidden aria-labelledby="lesson-terms-panel-title">
+          <h2 id="lesson-terms-panel-title">固定した用語</h2>
+          <div data-term-cards></div>
+          <template>
+            <article>
+              <header>
+                <strong data-pin-label></strong>
+                <button type="button" class="lesson-term-close">×</button>
+              </header>
+              <p data-pin-definition></p>
+            </article>
+          </template>
+        </section>
+      )}
       <nav class="toc" aria-label="レッスンの目次">
         <h2>このレッスンの目次</h2>
         <ol>
