@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costCourseReviewVersion, costMockVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costCourseReviewVersion, costMockVersion, costApplicationVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -21,11 +21,13 @@ const entries=readdirSync('src/content/lessons').filter(n=>n.endsWith('.md')).ma
 const rows=entries.filter(l=>l.data.qualification==='cost-beginner'&&!l.data.archived).sort((a,b)=>a.data.order-b.data.order);
 const assessments=bokiAssessments(entries).filter(a=>a.qualification==='cost-beginner');
 const addedSteps=['cb2-material-use','cb2-matched-revenue','cb2-profit-boundary','cb2-classification-case'];
+const applicationSteps=['cb2-department-cost-route','cb2-inventory-cutoff','cb2-mix-planning','cb2-sales-ledger-reconciliation'];
+
 const allQuestions=new Map(assessments.flatMap(a=>a.questions.map(q=>[q.id,q] as const)));
 const numeric=(s:string)=>Number(s.replaceAll(',','').replace('−','-').replace(/[^\d.+-]/g,''));
 
 test('cost scope has detailed teaching, worked methods and independent objective-specific review',()=>{
-  assert.deepEqual(rows.map(l=>l.data.stableId),costLessonIds);assert.equal(rows.length,29);assert.equal(scope.length,42);
+  assert.deepEqual(rows.map(l=>l.data.stableId),costLessonIds);assert.equal(rows.length,33);assert.equal(scope.length,42);
   for(const row of rows){
     const id=row.data.stableId;
     const teaching=row.body.split(/###? 公式資料/)[0]!.replace(/\r\n/g,'\n').replace(/^#{1,6}[^\n]*$/gm,'').replace(/<[^>]*>/g,'').replace(/\[[^\]]*\]\([^)]*\)/g,'').replace(/\s/g,'');
@@ -39,6 +41,9 @@ test('cost scope has detailed teaching, worked methods and independent objective
       assert.match(row.body,/用語を確認するときは/);
     } else if(['cb2-monthly-profit-statement','cb2-cvp-planning-case'].includes(id)) {
       assert.match(row.body,/用語の復習では/);
+    } else if(applicationSteps.includes(id)) {
+      assert.equal(row.data.glossary.length,0);
+      assert.ok(row.data.inlineGlossary.length>=4);
     } else assert.ok(row.data.glossary.length>=6);
     const review=assessments.find(a=>a.id===`cost-beginner-unit-${row.data.unit}-review`)!;
     for(let i=0;i<3;i++){
@@ -65,7 +70,7 @@ test('cost old completions/bookmarks/history survive import without completing n
   old.assessments[legacy.id]=[historical];
   const saved=validateData(JSON.parse(JSON.stringify(old)));
   const current=selectCourseLessons(entries.map(l=>({id:l.data.stableId,qualification:l.data.qualification,archived:l.data.archived})),'cost-beginner');
-  assert.equal(current.length,29);assert.equal(current.filter(l=>saved.records[l.id]?.status==='completed').length,0);
+  assert.equal(current.length,33);assert.equal(current.filter(l=>saved.records[l.id]?.status==='completed').length,0);
   assert.equal(Object.values(saved.records).filter(r=>r.bookmarked).length,4);
   assert.ok(!compatibleAttempt(legacy,historical));
   assert.equal(legacy.version,'cost-legacy-2026-v2');
@@ -106,7 +111,7 @@ test('root review and mock numeric targets agree with independently expressed fo
     assert.ok(Math.abs(numeric(q.options[q.answer]!)-expected)<1e-8,w.id);
   }
   const reviews=assessments.filter(a=>a.kind==='review'&&[costVersion,costUnitOneReviewVersion,costUnitTwoReviewVersion,costUnitThreeReviewVersion,costUnitFourReviewVersion,costUnitFiveReviewVersion,costCourseReviewVersion].includes(a.version)).flatMap(a=>a.questions);
-  assert.equal(reviews.length,135);assert.equal(new Set(reviews.map(q=>q.id)).size,135);
+  assert.equal(reviews.length,147);assert.equal(new Set(reviews.map(q=>q.id)).size,147);
 });
 
 test('mock inventory and profit vectors reconcile independently in both directions',()=>{
@@ -128,12 +133,12 @@ test('mock inventory and profit vectors reconcile independently in both directio
 
 test('cost registries are deterministic and preserve other qualification versions',()=>{
   assert.deepEqual(bokiAssessments([...entries].reverse()),bokiAssessments(entries));
-  assert.equal(assessments.length,48);
+  assert.equal(assessments.length,52);
   assert.ok(bokiAssessments(entries).filter(a=>!['boki-beginner','cost-beginner','boki-3'].includes(a.qualification)).every(a=>a.version==='boki-2026-v1'));
 });
 
 test('every numeric lesson key retains an independently recalculated regression reference',()=>{
-  const numericQuestions=Object.values(costBank).flat().filter(q=>q.input==='number');
+  const numericQuestions=Object.values(costBank).flat().filter(q=>q.input==='number'&&!applicationSteps.includes(q.lesson));
   const witnesses=[...unit12Witnesses,...unit3Witnesses,...unit45Witnesses];
   assert.equal(numericQuestions.length,199);assert.equal(witnesses.length,199);
   assert.equal(new Set(witnesses.map(w=>w.id)).size,199);
@@ -158,7 +163,7 @@ test('Unit 1 expansion gives new lessons separate records and preserves existing
     'cb2-purpose','cb2-material-use','cb2-elements','cb2-traceability','cb2-departments',
     'cb2-matched-revenue','cb2-profit-boundary','cb2-classification-case',
   ]);
-  assert.deepEqual(rows.map(row=>row.data.order),Array.from({length:29},(_,i)=>i+1));
+  assert.deepEqual(rows.map(row=>row.data.order),Array.from({length:33},(_,i)=>i+1));
   const updated=assessments.filter(a=>a.version===costUnitOneExpandedVersion);
   assert.equal(updated.length,4);
   const revisedGlossaries=assessments.filter(a=>a.version===costUnitOneGlossaryVersion);
@@ -210,7 +215,7 @@ test('Unit 2 tests two distinct source-record cases and preserves reports from e
   assert.ok(revised.every(a=>a.unit===2&&a.kind==='lesson'));
   const review=assessments.find(a=>a.id==='cost-beginner-unit-2-review')!;
   assert.equal(review.version,costUnitTwoReviewVersion);
-  assert.equal(review.questions.length,20);
+  assert.equal(review.questions.length,23);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
   const shared=review.questions.slice(13,17);
   assert.deepEqual(shared.map(q=>q.materialIds),Array.from({length:4},()=>['cb2-unit2-monthly-case']));
@@ -224,7 +229,7 @@ test('Unit 2 tests two distinct source-record cases and preserves reports from e
   assert.match(shared[1]!.options[shared[1]!.answer]!,/19,800円と7,200円/);
   assert.equal(numeric(shared[2]!.options[shared[2]!.answer]!),costP);
   assert.equal(shared[3]!.options[shared[3]!.answer],'借方 売上原価79,000円／貸方 製品79,000円');
-  const current=review.questions.slice(17);
+  const current=review.questions.slice(17,20);
   assert.deepEqual(current.map(q=>q.materialIds),Array.from({length:3},()=>['cb2-unit2-metal-shop']));
   const netMaterials=(24-4)*600;
   const rate=(5*600+2400+8600)/8;
@@ -257,9 +262,9 @@ test('every cost accounting lesson has two teaching figures and in-body feedback
   for(const {data,body} of rows){
     const figures=[...body.matchAll(/<figure id="([^"]+)"/g)];
     assert.ok(new Set(figures.map(figure=>figure[1])).size>=2,data.stableId);
-    assert.equal((body.match(/<form data-guided-practice/g)??[]).length,1,data.stableId);
+    assert.equal((body.match(/<form data-guided-practice/g)??[]).length,data.stableId==='cb2-department-cost-route'?2:1,data.stableId);
     assert.match(body,/<fieldset hidden>[\s\S]+?<p role="status" data-guided-feedback>/);
-    assert.match(body,/<details>\s*<summary>解答と考え方を読む<\/summary>\s*<p data-guided-solution>/);
+    assert.match(body,/<details>\s*<summary>[^<]+<\/summary>\s*<p data-guided-solution>/);
   }
 });
 
@@ -267,9 +272,9 @@ test('Unit 3 preserves earlier records and assesses period profit from a fresh m
   const id='cb2-monthly-profit-statement';
   const review=assessments.find(a=>a.id==='cost-beginner-unit-3-review')!;
   assert.equal(review.version,costUnitThreeReviewVersion);
-  assert.equal(review.questions.length,20);
+  assert.equal(review.questions.length,23);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
-  const current=review.questions.slice(16);
+  const current=review.questions.slice(16,20);
   assert.ok(current.every(q=>q.materialIds?.[0]==='cb2-unit3-workshop-monthly'));
   const finished=9000+51000-12000;
   const costOfGoods=6000+finished-14000;
@@ -308,9 +313,9 @@ test('Unit 3 preserves earlier records and assesses period profit from a fresh m
 test('Unit 4 distinguishes fixed unit costs, a fixed variable cost ratio and revised demand',()=>{
   const review=assessments.find(a=>a.id==='cost-beginner-unit-4-review')!;
   assert.equal(review.version,costUnitFourReviewVersion);
-  assert.equal(review.questions.length,21);
+  assert.equal(review.questions.length,24);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
-  const fresh=review.questions.slice(16);
+  const fresh=review.questions.slice(16,21);
   assert.equal(fresh.length,5);
   assert.ok(fresh.every(q=>q.materialIds?.[0]==='cb2-unit4-photo-bookings'));
   const fixed=60000+84000,unitVariable=500+200+100;
@@ -352,9 +357,9 @@ test('Unit 4 distinguishes fixed unit costs, a fixed variable cost ratio and rev
 test('Unit 5 reconciles normalized sales records, signed variances and a separate applied profit case',()=>{
   const review=assessments.find(a=>a.id==='cost-beginner-unit-5-review')!;
   assert.equal(review.version,costUnitFiveReviewVersion);
-  assert.equal(review.questions.length,21);
+  assert.equal(review.questions.length,24);
   assert.deepEqual(assessmentMaterialIssues(review),[]);
-  const fresh=review.questions.slice(14);
+  const fresh=review.questions.slice(14,21);
   assert.equal(fresh.length,7);
   assert.ok(fresh.every(q=>q.materialIds?.[0]==='cb2-unit5-sales-records'));
   const aBudget=20*6, aActual=(25-3)*6, bActual=92, bPrice=119600/bActual;
@@ -453,5 +458,62 @@ test('revised mocks retain 40-minute format and protect older scores from change
     const concepts=mock.questions.filter(q=>/c(?:0[1-9]|1[0-3])$/.test(q.id));
     const longest=concepts.filter(q=>q.options.every((o,index)=>index===q.answer||o.length<q.options[q.answer]!.length));
     assert.ok(longest.length<=4);
+  }
+});
+
+test('new application chapters keep original record IDs and use independently calculated keys',()=>{
+  const checked:Record<string,number>={
+    'cb2-department-cost-route-q01':63000*(35+40)/(35+40+15),
+    'cb2-department-cost-route-q04':44000*10/40+32000*15/20,
+    'cb2-department-cost-route-q06':(42000+500*18+1400*10)*(50-32)/50,
+    'cb2-department-cost-route-q08':260000-(140000-12000*2/3)-(40000+12000),
+    'cb2-department-cost-route-q10':7000*(.8-.3),
+    'cb2-cutoff-q1':13000+42000-9000,
+    'cb2-cutoff-q2':18000+46000-21000,
+    'cb2-cutoff-q5':26000-17500,
+    'cb2-cutoff-q7':9500-6200,
+    'cb2-mix-planning-q01':3*(900-540)+2*(1500-750),
+    'cb2-mix-planning-q03':Math.ceil(124000/1600),
+    'cb2-mix-planning-q04':Math.floor(Math.min(152/2,188/3)),
+    'cb2-mix-planning-q06':84000-Math.min(142/2,75)*(2*200+750),
+    'cb2-mix-planning-q07':Math.ceil((94600+9000)/1400),
+    'cb2-mix-planning-q10':100*(300+1500)/(1000+3000),
+    'cb2-sales-ledger-reconciliation-q01':45+22-6,
+    'cb2-sales-ledger-reconciliation-q02':34*1850+(21-3)*1790-2180,
+    'cb2-sales-ledger-reconciliation-q03':66313-57*1180,
+    'cb2-sales-ledger-reconciliation-q06':7200,
+    'cb2-sales-ledger-reconciliation-q07':2*(1410-1280),
+    'cb2-sales-ledger-reconciliation-q09':17*980+(8-2)*910-490-26*1000,
+  };
+  const newNumerics=applicationSteps.flatMap(id=>costBank[id]!).filter(q=>q.input==='number');
+  assert.deepEqual(newNumerics.map(q=>q.id).sort(),Object.keys(checked).sort());
+  for(const q of newNumerics){
+    assert.ok(isCorrect(q,String(checked[q.id])),q.id);
+    assert.ok(!isCorrect(q,String(checked[q.id]!+1)),q.id);
+  }
+  const former=['cost-2026-unit-2-review-v4','cost-2026-unit-3-review-v3','cost-2026-unit-4-review-v3','cost-2026-unit-5-review-v3'];
+  for(const [index,id] of applicationSteps.entries()){
+    const unit=index+2;
+    const lesson=assessments.find(a=>a.id===id+'-check')!;
+    assert.equal(lesson.version,costApplicationVersion);
+    const review=assessments.find(a=>a.id==='cost-beginner-unit-'+unit+'-review')!;
+    assert.ok(review.questions.slice(-3).every(q=>q.lesson===id));
+    const previous={...review,version:former[index]!,questions:review.questions.slice(0,-3)};
+    const attempt=newAttempt(previous,'practice',1000);
+    const saved=validateData({...emptyData(),assessments:{[review.id]:[attempt]}});
+    assert.deepEqual(saved.assessments[review.id],[attempt]);
+    assert.ok(!compatibleAttempt(review,attempt));
+  }
+  assert.ok(isCorrect(allQuestions.get('cb2-sales-ledger-reconciliation-q03')!,'−９４７'));
+  assert.ok(!isCorrect(allQuestions.get('cb2-sales-ledger-reconciliation-q03')!,'９４７'));
+  for(const form of ['a','b']){
+    const mock=assessments.find(a=>a.id==='cb2-mock-'+form)!;
+    assert.equal(mock.questions.filter(q=>q.id.includes('-application-')).length,2);
+    assert.ok(!compatibleAttempt(mock,newAttempt({...mock,version:'cost-2026-mock-v3'},'timed')));
+  }
+  for(const {data,body} of rows){
+    const terms: { id: string; definition: string }[]=Array.isArray(data.inlineGlossary)?data.inlineGlossary:[];
+    assert.ok(terms.length>=3,data.stableId);
+    assert.ok(terms.every(term=>term.definition && body.includes('href="#lesson-term-'+term.id+'"')),data.stableId);
   }
 });

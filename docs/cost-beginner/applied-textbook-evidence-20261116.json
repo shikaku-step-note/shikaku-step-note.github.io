@@ -1,0 +1,1521 @@
+{
+  "verified": "2026-11-16",
+  "officialScope": "https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30genkashokyu.pdf",
+  "officialSubsections": 9,
+  "derivedCompetencies": 42,
+  "units": {
+    "1": {
+      "before": 8,
+      "after": 8
+    },
+    "2": {
+      "before": 5,
+      "after": 6
+    },
+    "3": {
+      "before": 6,
+      "after": 7
+    },
+    "4": {
+      "before": 6,
+      "after": 7
+    },
+    "5": {
+      "before": 4,
+      "after": 5
+    }
+  },
+  "lessons": {
+    "cb2-purpose": {
+      "step": 1,
+      "unit": 1,
+      "title": "原価とは何か｜資源を使った量と金額",
+      "objectives": [
+        "目的・活動・資源の関係から原価の対象を説明する",
+        "購入・支払い・消費を区別して資源の消費額を計算する",
+        "総原価と単位当たり原価を求め、収益との比較条件を確かめる"
+      ],
+      "terms": [
+        {
+          "id": "cost-object",
+          "term": "原価計算対象",
+          "definition": "どの製品・役務・仕事について金額を知るかを示す集計の対象。"
+        },
+        {
+          "id": "resource-used",
+          "term": "資源の消費量",
+          "definition": "材料や作業時間など、目的のために実際に使った量。"
+        },
+        {
+          "id": "purchase-cost",
+          "term": "購入額",
+          "definition": "買った量を購入単価で金額にしたもの。使った分と倉庫に残る分を含み得ます。"
+        }
+      ],
+      "figures": [
+        "purpose-activity-resource",
+        "cost-timing"
+      ],
+      "guideAnswers": [
+        "7000"
+      ],
+      "beforeProseChars": 9337,
+      "afterProseChars": 9733,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-purpose-check"
+    },
+    "cb2-material-use": {
+      "step": 2,
+      "unit": 1,
+      "title": "材料費の求め方｜購入・払出し・返却",
+      "objectives": [
+        "注文・受入れ・支払い・消費を別の事実として読み取る",
+        "払出しと製造現場からの返却から正味消費量・月末残高を求める",
+        "同じ単価で消費分と残存分を金額に直し、現物と記録の不一致を判断する"
+      ],
+      "terms": [
+        {
+          "id": "issue",
+          "term": "払出し",
+          "definition": "材料を倉庫から製造などの使用先へ出すこと。"
+        },
+        {
+          "id": "supplier-return",
+          "term": "仕入先への返品",
+          "definition": "仕入先に購入品を返し、受入れや仕入れの記録を調整すること。"
+        },
+        {
+          "id": "warehouse-return",
+          "term": "倉庫への返却",
+          "definition": "現場で使わなかった材料を社内の倉庫へ戻すこと。"
+        }
+      ],
+      "figures": [
+        "material-use-movement",
+        "material-use-custody"
+      ],
+      "guideAnswers": [
+        "25"
+      ],
+      "beforeProseChars": 9443,
+      "afterProseChars": 9827,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-material-use-check"
+    },
+    "cb2-elements": {
+      "step": 3,
+      "unit": 1,
+      "title": "材料費・労務費・経費の見分け方",
+      "objectives": [
+        "消費した資源の形態から材料費・労務費・経費を分類する",
+        "製造原価と販売費及び一般管理費を活動の目的から区別する",
+        "分類表の小計を照合して製造原価と期間の費用を集計する"
+      ],
+      "terms": [
+        {
+          "id": "material-cost",
+          "term": "材料費",
+          "definition": "製造のために消費した材料の金額。"
+        },
+        {
+          "id": "labor-cost",
+          "term": "労務費",
+          "definition": "製造に用いた人の作業にかかる金額。"
+        },
+        {
+          "id": "factory-expense",
+          "term": "経費",
+          "definition": "製造原価のうち、材料費や労務費に含まれない金額。"
+        }
+      ],
+      "figures": [
+        "activity-routing",
+        "elements-source-audit"
+      ],
+      "guideAnswers": [
+        "b"
+      ],
+      "beforeProseChars": 11161,
+      "afterProseChars": 11536,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-elements-check"
+    },
+    "cb2-traceability": {
+      "step": 4,
+      "unit": 1,
+      "title": "直接費と間接費の違い｜直課と配賦",
+      "objectives": [
+        "原価計算対象を指定して直接費と間接費を判断する",
+        "材料費・労務費・経費と直接費・間接費を組み合わせる",
+        "直課額と配賦額を区別し、製品別集計を総額に照合する"
+      ],
+      "terms": [
+        {
+          "id": "direct-cost",
+          "term": "直接費",
+          "definition": "ある製品や仕事にいくらかかったかを明細から把握できる原価。"
+        },
+        {
+          "id": "indirect-cost",
+          "term": "間接費",
+          "definition": "いくつかの製品・仕事に共通し、対象ごとの額を直接測れない原価。"
+        },
+        {
+          "id": "allocation",
+          "term": "配賦",
+          "definition": "複数の対象に共通する原価を、作業時間などの基準に沿って分ける処理。"
+        }
+      ],
+      "figures": [
+        "trace-evidence-map",
+        "trace-source-strength"
+      ],
+      "guideAnswers": [
+        "17000"
+      ],
+      "beforeProseChars": 10441,
+      "afterProseChars": 10812,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-traceability-check"
+    },
+    "cb2-departments": {
+      "step": 5,
+      "unit": 1,
+      "title": "部門別原価の読み方｜固有費・共通費と責任の範囲",
+      "objectives": [
+        "部門・活動・責任者の関係を原価情報の用途として説明する",
+        "部門固有の原価と共通原価を区別し部門別に集計する",
+        "部門別損益を全社損益へ照合し、比較の条件を説明する"
+      ],
+      "terms": [
+        {
+          "id": "department",
+          "term": "部門",
+          "definition": "仕事と担当の範囲をそろえて集計するための、組織内のまとまり。"
+        },
+        {
+          "id": "department-specific",
+          "term": "部門の固有費",
+          "definition": "どの部門でいくら使ったか、資料から直接把握できる金額。"
+        },
+        {
+          "id": "shared-cost",
+          "term": "共通費",
+          "definition": "複数の部門などが共同で使い、負担の内訳を基準で決める費用。"
+        }
+      ],
+      "figures": [
+        "cost-responsibility",
+        "department-cause-controls"
+      ],
+      "guideAnswers": [
+        "c"
+      ],
+      "beforeProseChars": 9138,
+      "afterProseChars": 9526,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-departments-check"
+    },
+    "cb2-matched-revenue": {
+      "step": 6,
+      "unit": 1,
+      "title": "サービスの売上と原価｜完了日と案件番号で対応させる",
+      "objectives": [
+        "売上と原価を同じ期間の完了案件に対応させる",
+        "案件ごとに追跡できる原価から差額を求め、平均値の用途を判断する",
+        "共通費を引く前後で差額の意味がどう変わるかを説明する"
+      ],
+      "terms": [
+        {
+          "id": "case-id",
+          "term": "案件番号",
+          "definition": "完了や売上、作業記録が同じ仕事を指すかを確認するための番号。"
+        },
+        {
+          "id": "completion",
+          "term": "完了済みの仕事",
+          "definition": "資料の完了条件を満たした役務。設例では完了した時点を使って売上と原価を対応させます。"
+        },
+        {
+          "id": "margin-rate",
+          "term": "利益率",
+          "definition": "利益が売上高に占める割合。どの段階の利益かを区別して計算します。"
+        }
+      ],
+      "figures": [
+        "match-evidence-table",
+        "match-month-ledger"
+      ],
+      "guideAnswers": [
+        "12000"
+      ],
+      "beforeProseChars": 8981,
+      "afterProseChars": 9356,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-matched-revenue-check"
+    },
+    "cb2-profit-boundary": {
+      "step": 7,
+      "unit": 1,
+      "title": "製造原価と販管費の違い｜売上総利益と営業利益",
+      "objectives": [
+        "同じ費目を使途で製造原価・販売費・一般管理費に分ける",
+        "販売分に対応する売上原価と売上総利益・営業利益を求める",
+        "売れ残りや費用の使途が変わると、どの利益がなぜ変わるかを説明する"
+      ],
+      "terms": [
+        {
+          "id": "manufacturing-cost",
+          "term": "製造原価",
+          "definition": "製品を作るために使った材料、作業、その他の製造資源の金額。"
+        },
+        {
+          "id": "sga",
+          "term": "販売費及び一般管理費",
+          "definition": "販売活動や企業全体の管理にかかる費用。販管費ともいいます。"
+        },
+        {
+          "id": "operating-profit",
+          "term": "営業利益",
+          "definition": "売上高から売上原価と販売費及び一般管理費を引いて求める、本業の利益。"
+        }
+      ],
+      "figures": [
+        "profit-statement-bridge",
+        "profit-boundary-sold-share"
+      ],
+      "guideAnswers": [
+        "b"
+      ],
+      "beforeProseChars": 10505,
+      "afterProseChars": 10892,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-profit-boundary-check"
+    },
+    "cb2-classification-case": {
+      "step": 8,
+      "unit": 1,
+      "title": "原価の分類を例題で練習｜製造原価・販売費・在庫",
+      "objectives": [
+        "費用を活動の目的・費目・原価計算対象の順に分類する",
+        "専用費と共通費を切り分け、元の明細と製品別集計を照合する",
+        "販売分の原価から利益を求め、集計先の変化と担当者の判断を区別する"
+      ],
+      "terms": [
+        {
+          "id": "expense-purpose",
+          "term": "用途",
+          "definition": "支払や資源の消費が、製造・販売・管理のどの活動に使われたか。"
+        },
+        {
+          "id": "direct-charge",
+          "term": "直課",
+          "definition": "対象が資料で特定できる原価を、その対象の欄へ直接加える計算。"
+        },
+        {
+          "id": "finished-inventory",
+          "term": "月末製品",
+          "definition": "月末までに完成し、まだ販売していない製品と、そこに残る原価。"
+        }
+      ],
+      "figures": [
+        "classify-route",
+        "classify-correction-flow"
+      ],
+      "guideAnswers": [
+        "c"
+      ],
+      "beforeProseChars": 8791,
+      "afterProseChars": 9170,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-classification-case-check"
+    },
+    "cb2-materials": {
+      "step": 9,
+      "unit": 2,
+      "title": "材料消費額の計算｜材料元帳・払出し・返却",
+      "objectives": [
+        "材料の数量のつながりから消費量と月末残高を求める",
+        "指定された単価を用いて材料消費額と残存額を計算する",
+        "材料消費額を製品別の直接材料費と共通の間接材料費へ集計する"
+      ],
+      "terms": [
+        {
+          "id": "materials-ledger",
+          "term": "材料元帳",
+          "definition": "材料の種類別に受入れ、払出し、返却、残高などを記録する補助簿。"
+        },
+        {
+          "id": "consumption-price",
+          "term": "消費単価",
+          "definition": "消費した量を金額に直すときに使う、一単位当たりの材料価格。"
+        },
+        {
+          "id": "net-issues",
+          "term": "正味の払出量",
+          "definition": "現場へ払い出した量から、現場から倉庫に戻した量を引いたもの。"
+        }
+      ],
+      "figures": [
+        "material-movement-map",
+        "material-record-reconciliation"
+      ],
+      "guideAnswers": [
+        "12"
+      ],
+      "beforeProseChars": 12064,
+      "afterProseChars": 12440,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-materials-check"
+    },
+    "cb2-labor-expenses": {
+      "step": 10,
+      "unit": 2,
+      "title": "労務費と経費の計算｜消費賃率と当月の製造費",
+      "objectives": [
+        "時間と時間当たり原価から製造労務費を計算する",
+        "製品別作業と共通作業を分け直接労務費・間接労務費へ集計する",
+        "当月の製造経費を消費期間と対象の条件から求める"
+      ],
+      "terms": [
+        {
+          "id": "pay-rate",
+          "term": "消費賃率",
+          "definition": "使った作業時間を金額に直すときに使う、一時間など所定の単位当たりの賃金。"
+        },
+        {
+          "id": "direct-hours",
+          "term": "直接作業時間",
+          "definition": "どの製品・仕事に使ったか、作業記録などから対応させられる時間。"
+        },
+        {
+          "id": "indirect-labor",
+          "term": "間接労務費",
+          "definition": "工場の共通作業など、個々の製品へ直接対応させられない製造の労務費。"
+        }
+      ],
+      "figures": [
+        "labor-document-map",
+        "labor-expense-meter-reconciliation"
+      ],
+      "guideAnswers": [
+        "7250"
+      ],
+      "beforeProseChars": 12625,
+      "afterProseChars": 12998,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-labor-expenses-check"
+    },
+    "cb2-allocation": {
+      "step": 11,
+      "unit": 2,
+      "title": "製造間接費の配賦率と計算｜配賦基準と製品別原価",
+      "objectives": [
+        "配賦基準の総量から配賦率を求め単位を説明する",
+        "指定基準で製品別間接費を計算し直接費と合算する",
+        "基準変更や端数を含む配賦額を総額へ照合する"
+      ],
+      "terms": [
+        {
+          "id": "overhead",
+          "term": "製造間接費",
+          "definition": "複数の製品に共通して発生し、製品ごとの金額を直接つかめない製造費用。"
+        },
+        {
+          "id": "allocation-base",
+          "term": "配賦基準",
+          "definition": "共通の原価を製品などへ分けるのに使う量や金額。問題の指定を優先します。"
+        },
+        {
+          "id": "allocation-rate",
+          "term": "配賦率",
+          "definition": "配賦する金額を基準の総量で割った値。時間基準なら一時間当たりの負担額です。"
+        }
+      ],
+      "figures": [
+        "allocation-evidence-figure",
+        "allocation-time-correction"
+      ],
+      "guideAnswers": [
+        "27000"
+      ],
+      "beforeProseChars": 10208,
+      "afterProseChars": 10663,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-allocation-check"
+    },
+    "cb2-department-cost-route": {
+      "step": 12,
+      "unit": 2,
+      "title": "共通費を部門から製品へ配賦する｜工場と販売部門の家賃",
+      "objectives": [
+        "共通の請求額を用途と使用面積から部門へ分け、製造間接費と販管費に整理する",
+        "部門ごとに指定された時間を使い、製品別の負担額と完成品の単位原価を求める",
+        "使用面積の訂正で変わる製品原価、販売分、在庫、営業利益を順に検算する"
+      ],
+      "terms": [
+        {
+          "id": "department-common",
+          "term": "部門共通費",
+          "definition": "複数の部門の活動に共通してかかる費用。負担の根拠となる面積などの資料から、部門別の金額に分けます。"
+        },
+        {
+          "id": "department-specific",
+          "term": "部門固有費",
+          "definition": "請求書や作業記録を見て、どの部門で生じたかを金額まで確かめられる費用。部門の中で複数の製品に共通することもあります。"
+        },
+        {
+          "id": "manufacturing-overhead",
+          "term": "製造間接費",
+          "definition": "製造にかかった費用のうち、特定の製品に直接結び付けられないもの。指定された基準で製品に配賦します。"
+        },
+        {
+          "id": "selling-admin",
+          "term": "販売費および一般管理費",
+          "definition": "販売活動や会社全体の管理活動にかかる費用。製造原価の集計とは分け、営業利益を求める段階で売上総利益から引きます。"
+        },
+        {
+          "id": "allocation-base",
+          "term": "配賦基準",
+          "definition": "共通する費用を分けるための尺度。この章では、使用面積、機械の運転時間、担当者の作業時間を使い分けます。"
+        },
+        {
+          "id": "unit-cost",
+          "term": "単位原価",
+          "definition": "製品一個当たりの原価。ここでは、同じ条件で完成した製品の原価を完成数量で割って求めます。"
+        }
+      ],
+      "figures": [
+        "cb2-department-cost-route-usage",
+        "cb2-department-cost-route-split",
+        "cb2-department-cost-route-flow",
+        "cb2-department-cost-route-product",
+        "cb2-department-cost-route-sold",
+        "cb2-department-cost-route-correction"
+      ],
+      "guideAnswers": [
+        "40000",
+        "38400"
+      ],
+      "beforeProseChars": 0,
+      "afterProseChars": 14049,
+      "origin": "新設章",
+      "lessonAssessment": "cb2-department-cost-route-check",
+      "skillEvidence": [
+        {
+          "objective": 1,
+          "skill": "製造部門用と販売部門用に分ける家賃",
+          "teachingAnchor": "objective-1",
+          "workedAnchor": "worked-1",
+          "lessonQuestionIds": [
+            "cb2-department-cost-route-q01",
+            "cb2-department-cost-route-q02",
+            "cb2-department-cost-route-q03"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u2-application-department-1"
+          ]
+        },
+        {
+          "objective": 2,
+          "skill": "異なる時間基準で製品別配賦",
+          "teachingAnchor": "objective-2",
+          "workedAnchor": "worked-2",
+          "lessonQuestionIds": [
+            "cb2-department-cost-route-q04",
+            "cb2-department-cost-route-q05",
+            "cb2-department-cost-route-q06",
+            "cb2-department-cost-route-q07"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u2-application-department-2"
+          ]
+        },
+        {
+          "objective": 3,
+          "skill": "訂正後の配賦・原価と利益の検算",
+          "teachingAnchor": "objective-3",
+          "workedAnchor": "worked-3",
+          "lessonQuestionIds": [
+            "cb2-department-cost-route-q08",
+            "cb2-department-cost-route-q09",
+            "cb2-department-cost-route-q10"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u2-application-department-3"
+          ]
+        }
+      ]
+    },
+    "cb2-cost-flow": {
+      "step": 13,
+      "unit": 2,
+      "title": "原価の流れと仕訳｜仕掛品・製品・売上原価",
+      "objectives": [
+        "製造に関する勘定と借方・貸方の基本的な動きを説明する",
+        "材料消費・製造原価投入・完成・販売に伴う原価の移動を記録する",
+        "仕掛品・製品・売上原価の金額を照合し二重費用化を避ける"
+      ],
+      "terms": [
+        {
+          "id": "debit",
+          "term": "借方",
+          "definition": "仕訳の左側。勘定の種類と、金額が増えたか減ったかで書く側を決めます。"
+        },
+        {
+          "id": "credit",
+          "term": "貸方",
+          "definition": "仕訳の右側。原価が別の資産へ移る場合、移動元の減少を記録する側です。"
+        },
+        {
+          "id": "transfer",
+          "term": "振替",
+          "definition": "一つの勘定で記録していた金額を、別の勘定へ移して記録すること。"
+        }
+      ],
+      "figures": [
+        "monthly-cost-ledger",
+        "cost-flow-two-errors"
+      ],
+      "guideAnswers": [
+        "23500"
+      ],
+      "beforeProseChars": 10153,
+      "afterProseChars": 10520,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-cost-flow-check"
+    },
+    "cb2-cost-sheet-audit": {
+      "step": 14,
+      "unit": 2,
+      "title": "製品別原価計算表の作り方｜原票の照合と誤りの訂正",
+      "objectives": [
+        "原票を読み、製品別の直接費・工場共通費・製造外の費用を整理する",
+        "製品別原価表を復元し、合計では見えない分類や配賦の誤りを説明する",
+        "訂正後の製品別原価を販売分と在庫に分け、売上原価への影響を照合する"
+      ],
+      "terms": [
+        {
+          "id": "cost-sheet",
+          "term": "製品別原価計算表",
+          "definition": "製品ごとに直接費と配賦した製造間接費を並べ、原価を集める表。"
+        },
+        {
+          "id": "source-record",
+          "term": "原票",
+          "definition": "材料を使った量、担当者の作業時間など、集計前の事実を記録した資料。"
+        },
+        {
+          "id": "reconciliation",
+          "term": "照合",
+          "definition": "同じ取引を表す資料を、製品名、日付、量、金額などで突き合わせること。"
+        }
+      ],
+      "figures": [
+        "cost-sheet-records",
+        "cost-sheet-reconstruction"
+      ],
+      "guideAnswers": [
+        "37200"
+      ],
+      "beforeProseChars": 5933,
+      "afterProseChars": 6293,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-cost-sheet-audit-check"
+    },
+    "cb2-wip": {
+      "step": 15,
+      "unit": 3,
+      "title": "月末仕掛品と完成原価の計算",
+      "objectives": [
+        "仕掛品の月初・当月投入・完成・月末の関係から完成品原価を求める",
+        "未完成の製品に直接追跡できる原価と指定配賦額を集めて月末仕掛品を評価する",
+        "不明な投入額や残高を逆算し、翌月の引継ぎと二方向の検算を行う"
+      ],
+      "terms": [
+        {
+          "id": "open-wip",
+          "term": "月初仕掛品",
+          "definition": "月初にまだ完成していない仕事と、前月までにその仕事へ集めた原価。"
+        },
+        {
+          "id": "close-wip",
+          "term": "月末仕掛品",
+          "definition": "月末までに完成しなかった仕事と、完成品へ移さず残す原価。"
+        },
+        {
+          "id": "finished-cost",
+          "term": "完成原価",
+          "definition": "その月に仕掛品から製品へ移った仕事の原価。前月までに集めた額も含み得ます。"
+        }
+      ],
+      "figures": [
+        "unit3-wip-model",
+        "unit3-wip-comparison"
+      ],
+      "guideAnswers": [
+        "47500"
+      ],
+      "beforeProseChars": 7587,
+      "afterProseChars": 7970,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-wip-check"
+    },
+    "cb2-finished": {
+      "step": 16,
+      "unit": 3,
+      "title": "月末製品原価と売上原価の計算",
+      "objectives": [
+        "月初製品・当月完成原価・月末製品から売上原価を求める",
+        "完成数量・販売数量・単位原価を区別して製品在庫を評価する",
+        "数量と原価の未知数を逆算し、仕掛品から売上原価まで一貫して検算する"
+      ],
+      "terms": [
+        {
+          "id": "opening-products",
+          "term": "月初製品",
+          "definition": "月初に完成済みで、まだ販売していない製品とその原価。"
+        },
+        {
+          "id": "closing-products",
+          "term": "月末製品",
+          "definition": "月末に完成済みで、まだ販売していない製品とその原価。"
+        },
+        {
+          "id": "cogs",
+          "term": "売上原価",
+          "definition": "当月の売上に対応して、その月に費用となった製品などの原価。"
+        }
+      ],
+      "figures": [
+        "unit3-finished-model",
+        "unit3-finished-comparison"
+      ],
+      "guideAnswers": [
+        "30200"
+      ],
+      "beforeProseChars": 7727,
+      "afterProseChars": 8107,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-finished-check"
+    },
+    "cb2-pnl": {
+      "step": 17,
+      "unit": 3,
+      "title": "損益計算書の作り方｜売上総利益と営業利益",
+      "objectives": [
+        "製造原価・売上原価・販売費及び一般管理費を活動と期間から区別する",
+        "売上高から売上総利益と営業利益の表を順に完成し、逆算する",
+        "利益の額と利益率、営業損失の意味を読み、二重控除や集計漏れを検算する"
+      ],
+      "terms": [
+        {
+          "id": "pnl",
+          "term": "損益計算書",
+          "definition": "ある期間の収益と費用をまとめ、利益または損失を示す表。"
+        },
+        {
+          "id": "gross-profit",
+          "term": "売上総利益",
+          "definition": "売上高から、売れたものの売上原価を引いた金額。"
+        },
+        {
+          "id": "operating-profit",
+          "term": "営業利益",
+          "definition": "本業の利益。売上総利益から販売費及び一般管理費を引いた金額。"
+        }
+      ],
+      "figures": [
+        "unit3-pnl-model",
+        "unit3-pnl-comparison"
+      ],
+      "guideAnswers": [
+        "24000"
+      ],
+      "beforeProseChars": 7125,
+      "afterProseChars": 7473,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-pnl-check"
+    },
+    "cb2-product-profit": {
+      "step": 18,
+      "unit": 3,
+      "title": "製品別利益の計算｜配賦と営業利益の逆算",
+      "objectives": [
+        "二製品の直接費・配賦費から製造原価と単位原価を組み立てる",
+        "数量と在庫条件を使い、製品別の売上原価・売上総利益・営業利益を計算する",
+        "配賦基準と直接把握できる費用を区別し、全体との一致と利益比較の条件を説明する"
+      ],
+      "terms": [
+        {
+          "id": "product-profit",
+          "term": "製品別営業利益",
+          "definition": "製品ごとの売上総利益から、その製品に対応する販管費を差し引いた金額。"
+        },
+        {
+          "id": "shared-sga",
+          "term": "共通販管費",
+          "definition": "複数の製品の販売・管理にかかり、一つの製品へ直接結び付けられない費用。"
+        },
+        {
+          "id": "revenue-share",
+          "term": "売上高比",
+          "definition": "製品売上が合計売上に占める割合。問題に指定があれば配賦の基準に使います。"
+        }
+      ],
+      "figures": [
+        "unit3-product-profit-model",
+        "unit3-product-profit-comparison"
+      ],
+      "guideAnswers": [
+        "14000"
+      ],
+      "beforeProseChars": 8165,
+      "afterProseChars": 8548,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-product-profit-check"
+    },
+    "cb2-services": {
+      "step": 19,
+      "unit": 3,
+      "title": "サービス別の利益計算｜修理・役務・小売",
+      "objectives": [
+        "顧客・作業・案件など原価を計算する単位を決め、直接費と共通費を整理する",
+        "サービス別の作業時間・消費額・配賦条件から原価と利益を計算する",
+        "完了と未完了の指定条件や小売の在庫を区別し、サービスの違いに応じた原価の流れを説明する"
+      ],
+      "terms": [
+        {
+          "id": "service-cost",
+          "term": "サービス別原価",
+          "definition": "修理の種類など、あるサービスに対応する資源の消費の金額。"
+        },
+        {
+          "id": "service-time",
+          "term": "作業時間",
+          "definition": "サービスを実施するために要した時間。共通費を配賦する基準にも使えます。"
+        },
+        {
+          "id": "unfinished-service",
+          "term": "未完了案件",
+          "definition": "月末などの区切り時点で、完了の条件をまだ満たさない仕事。"
+        }
+      ],
+      "figures": [
+        "unit3-services-model",
+        "unit3-services-comparison"
+      ],
+      "guideAnswers": [
+        "28000"
+      ],
+      "beforeProseChars": 8354,
+      "afterProseChars": 8735,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-services-check"
+    },
+    "cb2-monthly-profit-statement": {
+      "step": 20,
+      "unit": 3,
+      "title": "製品別月次損益計算書｜在庫から営業利益まで",
+      "objectives": [
+        "二製品への製造間接費を集計し、仕掛品と製品を順に調整する",
+        "別の基準で販管費を配賦し、製品別損益表と合計を照合する",
+        "月末残高の訂正が完成原価・売上原価と利益にどう波及するか検算する"
+      ],
+      "terms": [
+        {
+          "id": "current-production",
+          "term": "当月製造費用",
+          "definition": "その月に製造用に消費した直接費と製造間接費の金額。"
+        },
+        {
+          "id": "finished-cost",
+          "term": "完成原価",
+          "definition": "当月に完成して製品へ移る原価。月初仕掛品と月末仕掛品を考慮します。"
+        },
+        {
+          "id": "cogs",
+          "term": "売上原価",
+          "definition": "当月に販売した製品などに対応する原価。"
+        }
+      ],
+      "figures": [
+        "monthly-profit-packet",
+        "monthly-profit-worksheet",
+        "monthly-profit-correction"
+      ],
+      "guideAnswers": [
+        "69500"
+      ],
+      "beforeProseChars": 6049,
+      "afterProseChars": 6496,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-monthly-profit-statement-check"
+    },
+    "cb2-inventory-cutoff": {
+      "step": 21,
+      "unit": 3,
+      "title": "月をまたぐ在庫原価：仕掛品・製品・売上原価を照合する",
+      "objectives": [
+        "仕掛品と製品を別々に繰り越し、二か月の完成原価と売上原価を求める",
+        "完成日の訂正で移る金額と、その月の費用に残る金額を区別する",
+        "販売月の訂正を売上・売上原価・利益に反映し、原票を使って検算する"
+      ],
+      "terms": [
+        {
+          "id": "period-carryover",
+          "term": "繰越額",
+          "definition": "月末に残った資産を翌月の初めに引き継ぐ金額。この章では仕掛品と完成済み製品を分けて引き継ぎます。"
+        },
+        {
+          "id": "finished-cost",
+          "term": "完成原価",
+          "definition": "その月に完成して、仕掛品から製品へ移した原価の合計。前月までに作りかけにかかった額を含むこともあります。"
+        },
+        {
+          "id": "matched-cogs",
+          "term": "売上原価",
+          "definition": "その月の売上に対応する製品の原価。完成した時点の在庫の振替とは別に、販売した分を費用にします。"
+        },
+        {
+          "id": "period-cutoff",
+          "term": "締め日",
+          "definition": "その月の記録に含める仕事や販売を区切る日。資料の入力日よりも、完了や販売がいつ起きたかを、この章の条件に従って確認します。"
+        }
+      ],
+      "figures": [
+        "cb2-inventory-cutoff-baseline",
+        "cb2-inventory-cutoff-transfer",
+        "cb2-inventory-cutoff-sale-change",
+        "cost-cutoff-missing-cost-figure"
+      ],
+      "guideAnswers": [
+        "7000"
+      ],
+      "beforeProseChars": 0,
+      "afterProseChars": 8386,
+      "origin": "新設章",
+      "lessonAssessment": "cb2-inventory-cutoff-check",
+      "skillEvidence": [
+        {
+          "objective": 1,
+          "skill": "二か月の原価表から完成・販売を計算",
+          "teachingAnchor": "objective-1",
+          "workedAnchor": "worked-1",
+          "lessonQuestionIds": [
+            "cb2-cutoff-q1",
+            "cb2-cutoff-q2",
+            "cb2-cutoff-q3"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u3-application-inventory-1"
+          ]
+        },
+        {
+          "objective": 2,
+          "skill": "完成日の訂正で仕掛品と製品の内訳を変更",
+          "teachingAnchor": "objective-2",
+          "workedAnchor": "worked-2",
+          "lessonQuestionIds": [
+            "cb2-cutoff-q4",
+            "cb2-cutoff-q7",
+            "cb2-cutoff-q8"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u3-application-inventory-2"
+          ]
+        },
+        {
+          "objective": 3,
+          "skill": "販売日の訂正で売上と原価をともに移す",
+          "teachingAnchor": "objective-3",
+          "workedAnchor": "worked-3",
+          "lessonQuestionIds": [
+            "cb2-cutoff-q5",
+            "cb2-cutoff-q6",
+            "cb2-cutoff-q7"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u3-application-inventory-3"
+          ],
+          "variation": "材料費を使った月がずれた場合は、完成・販売の両方の証ひょうを確かめる。#cost-cutoff-missing-cost"
+        }
+      ]
+    },
+    "cb2-behavior": {
+      "step": 22,
+      "unit": 4,
+      "title": "変動費と固定費の違い｜費用の計算と条件の変化",
+      "objectives": [
+        "活動量と費用の関係から変動費・固定費を区別する",
+        "総額と単位当たりの費用を数量に合わせて計算する",
+        "直接・間接の区分との違いと計算の前提を説明する"
+      ],
+      "terms": [
+        {
+          "id": "variable-cost",
+          "term": "変動費",
+          "definition": "対象期間・範囲の中で、活動量に応じて増減すると見込む費用。"
+        },
+        {
+          "id": "fixed-cost",
+          "term": "固定費",
+          "definition": "対象期間・範囲の中で、活動量が変わっても総額が変わらないと見込む費用。"
+        },
+        {
+          "id": "activity",
+          "term": "活動量",
+          "definition": "費用との関係を調べるための数量。製造数・販売数・作業時間などを使います。"
+        }
+      ],
+      "figures": [
+        "unit4-behavior-model",
+        "unit4-behavior-comparison"
+      ],
+      "guideAnswers": [
+        "184000"
+      ],
+      "beforeProseChars": 8000,
+      "afterProseChars": 8371,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-behavior-check"
+    },
+    "cb2-contribution": {
+      "step": 23,
+      "unit": 4,
+      "title": "貢献利益と貢献利益率の求め方",
+      "objectives": [
+        "単位貢献利益と貢献利益総額を計算する",
+        "変動販売費を含む費用区分で営業利益を求める",
+        "貢献利益率と追加販売による利益の変化を説明する"
+      ],
+      "terms": [
+        {
+          "id": "contribution",
+          "term": "貢献利益",
+          "definition": "売上高から、販売数量などとともに増減する変動費を差し引いた金額。"
+        },
+        {
+          "id": "contribution-rate",
+          "term": "貢献利益率",
+          "definition": "売上高のうち、変動費を差し引いた後に残る貢献利益の割合。"
+        },
+        {
+          "id": "fixed-cost",
+          "term": "固定費",
+          "definition": "想定した期間と活動量の範囲で一定とする費用。貢献利益から引くと営業利益になります。"
+        }
+      ],
+      "figures": [
+        "unit4-contribution-model",
+        "unit4-contribution-comparison"
+      ],
+      "guideAnswers": [
+        "205000"
+      ],
+      "beforeProseChars": 7917,
+      "afterProseChars": 8295,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-contribution-check"
+    },
+    "cb2-break-even": {
+      "step": 24,
+      "unit": 4,
+      "title": "損益分岐点の求め方｜販売数量と売上高",
+      "objectives": [
+        "貢献利益と固定費が等しくなる損益分岐点を求める",
+        "数量と売上高の計算を使い分けて結果を検算する",
+        "整数制約と貢献利益が正でない場合を区別する"
+      ],
+      "terms": [
+        {
+          "id": "break-even",
+          "term": "損益分岐点",
+          "definition": "想定した価格と費用の下で、売上高と総費用が等しくなる販売量・売上高。"
+        },
+        {
+          "id": "unit-contribution",
+          "term": "一個当たり貢献利益",
+          "definition": "一個の売価から一個当たりの変動費を引いた金額。"
+        },
+        {
+          "id": "minimum-units",
+          "term": "最小販売数量",
+          "definition": "所定の条件を満たす最も小さい整数の販売数。必要数の理論値に端数があれば切り上げます。"
+        }
+      ],
+      "figures": [
+        "unit4-break-even-model",
+        "unit4-break-even-comparison"
+      ],
+      "guideAnswers": [
+        "123"
+      ],
+      "beforeProseChars": 7380,
+      "afterProseChars": 7753,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-break-even-check"
+    },
+    "cb2-target-profit": {
+      "step": 25,
+      "unit": 4,
+      "title": "目標利益を達成する販売数量と必要売価",
+      "objectives": [
+        "目標営業利益を達成する販売数量・売上高を求める",
+        "数量を固定したときの必要売価や費用上限を逆算する",
+        "切上げた数量と計画の活動範囲を検算する"
+      ],
+      "terms": [
+        {
+          "id": "target-profit",
+          "term": "目標利益",
+          "definition": "計画で得ようとする営業利益の金額。"
+        },
+        {
+          "id": "required-contribution",
+          "term": "必要な貢献利益",
+          "definition": "営業利益の目標を達成するために、固定費と目標利益を合わせて回収すべき額。"
+        },
+        {
+          "id": "required-price",
+          "term": "必要売価",
+          "definition": "予定数量と費用の条件の下で、所定の利益を得るために必要な一個当たりの売値。"
+        }
+      ],
+      "figures": [
+        "unit4-target-profit-model",
+        "unit4-target-profit-comparison"
+      ],
+      "guideAnswers": [
+        "1200"
+      ],
+      "beforeProseChars": 7384,
+      "afterProseChars": 7766,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-target-profit-check"
+    },
+    "cb2-safety-changes": {
+      "step": 26,
+      "unit": 4,
+      "title": "安全余裕率の計算｜売上の余裕と条件の変化",
+      "objectives": [
+        "実際売上高と損益分岐点の差から販売の余裕を説明する",
+        "売価・単位変動費・固定費の変更案を独立に計算する",
+        "売上変化と利益変化を区別して条件を照合する"
+      ],
+      "terms": [
+        {
+          "id": "safety-margin",
+          "term": "安全余裕額",
+          "definition": "見込みや実際の売上高から損益分岐点売上高を差し引いた金額。"
+        },
+        {
+          "id": "safety-rate",
+          "term": "安全余裕率",
+          "definition": "安全余裕額が見込みまたは実際の売上高に占める割合。"
+        },
+        {
+          "id": "increment",
+          "term": "増分",
+          "definition": "ある案に切り替えたときに、比較の出発点から動く金額。"
+        }
+      ],
+      "figures": [
+        "unit4-safety-changes-model",
+        "unit4-safety-changes-comparison"
+      ],
+      "guideAnswers": [
+        "30000"
+      ],
+      "beforeProseChars": 8005,
+      "afterProseChars": 8378,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-safety-changes-check"
+    },
+    "cb2-cvp-planning-case": {
+      "step": 27,
+      "unit": 4,
+      "title": "CVP分析の例題｜営業計画と値上げ後の損益",
+      "objectives": [
+        "売価・販売数量と複数の費用明細から売上高と営業利益の表を作る",
+        "貢献利益率と単位貢献利益から販売数量・売上高の分岐点を求める",
+        "値上げ後の分岐点と営業利益を計算し、条件次第で結果が変わる理由を説明する"
+      ],
+      "terms": [
+        {
+          "id": "cvp",
+          "term": "CVP分析",
+          "definition": "売価、単位当たりの変動費、売上数量、固定費と利益の関係を確かめる分析。"
+        },
+        {
+          "id": "forecast-sales",
+          "term": "見込み売上高",
+          "definition": "計画した販売数量と売価などを使って見積もった売上高。"
+        },
+        {
+          "id": "break-even",
+          "term": "損益分岐点",
+          "definition": "与えられた単価と費用で、営業利益がゼロとなる売上の水準。"
+        }
+      ],
+      "figures": [
+        "cvp-planning-packet",
+        "cvp-planning-worksheet",
+        "cvp-planning-price"
+      ],
+      "guideAnswers": [
+        "78"
+      ],
+      "beforeProseChars": 6520,
+      "afterProseChars": 6950,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-cvp-planning-case-check"
+    },
+    "cb2-mix-planning": {
+      "step": 28,
+      "unit": 4,
+      "title": "複数商品の損益分岐点｜販売構成と必要な販売数",
+      "objectives": [
+        "販売構成を数量と売上高に分け、全体の貢献利益率を計算する",
+        "販売一組を単位として、理論上の損益分岐点と実行できる最小販売数を求める",
+        "販売上限や商品構成の変化を反映し、営業利益を再計算する"
+      ],
+      "terms": [
+        {
+          "id": "sales-mix",
+          "term": "販売構成",
+          "definition": "複数の商品の販売数量や売上高の内訳。この章では、どちらの割合かを明示します。"
+        },
+        {
+          "id": "unit-contribution",
+          "term": "単位貢献利益",
+          "definition": "販売単価から一個当たりの変動費を引いた金額。固定費の回収や営業利益に充てます。"
+        },
+        {
+          "id": "mix-contribution-rate",
+          "term": "全体の貢献利益率",
+          "definition": "各商品の貢献利益を合計し、売上高の合計で割った割合。商品の売上高の内訳により変わります。"
+        },
+        {
+          "id": "sales-bundle",
+          "term": "販売一組",
+          "definition": "商品の個数の割合を保つために置く計算上の単位。この章の最初の例ではA2個・B1個です。"
+        },
+        {
+          "id": "break-even",
+          "term": "損益分岐点",
+          "definition": "売上高から費用を引いた営業利益がちょうど0となる売上規模。商品を整数で売る場合の最小数量と異なることがあります。"
+        }
+      ],
+      "figures": [
+        "mix-planning-unit-economics",
+        "mix-planning-capacity",
+        "mix-planning-break-even"
+      ],
+      "guideAnswers": [
+        "2000"
+      ],
+      "beforeProseChars": 0,
+      "afterProseChars": 7347,
+      "origin": "新設章",
+      "lessonAssessment": "cb2-mix-planning-check",
+      "skillEvidence": [
+        {
+          "objective": 1,
+          "skill": "数量構成と売上高構成を分ける",
+          "teachingAnchor": "objective-1",
+          "workedAnchor": "worked-1",
+          "lessonQuestionIds": [
+            "cb2-mix-planning-q01",
+            "cb2-mix-planning-q02",
+            "cb2-mix-planning-q10"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u4-application-mix-1"
+          ]
+        },
+        {
+          "objective": 2,
+          "skill": "一組の貢献利益と理論値・最小組数を比較",
+          "teachingAnchor": "objective-2",
+          "workedAnchor": "worked-2",
+          "lessonQuestionIds": [
+            "cb2-mix-planning-q03",
+            "cb2-mix-planning-q05",
+            "cb2-mix-planning-q07"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u4-application-mix-2"
+          ]
+        },
+        {
+          "objective": 3,
+          "skill": "数量上限で実行できる案を判断",
+          "teachingAnchor": "objective-3",
+          "workedAnchor": "worked-3",
+          "lessonQuestionIds": [
+            "cb2-mix-planning-q04",
+            "cb2-mix-planning-q06",
+            "cb2-mix-planning-q08",
+            "cb2-mix-planning-q09"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u4-application-mix-3"
+          ]
+        }
+      ]
+    },
+    "cb2-budget": {
+      "step": 29,
+      "unit": 5,
+      "title": "売上高の予算と実績の比較｜差額と達成率",
+      "objectives": [
+        "数量と単価から予算売上高・実際売上高を求める",
+        "同じ期間・単位の差額と達成率を計算する",
+        "売上の差とその原因・利益を区別して説明する"
+      ],
+      "terms": [
+        {
+          "id": "sales-budget",
+          "term": "予算売上高",
+          "definition": "予算で予定した数量と単価などから求めた売上高。"
+        },
+        {
+          "id": "actual-sales",
+          "term": "実際売上高",
+          "definition": "同じ期間の取引記録から集計した売上高。"
+        },
+        {
+          "id": "budget-attainment",
+          "term": "達成率",
+          "definition": "予算に対する実績の割合。予算を分母にするので、予算がゼロなら通常この率を作れません。"
+        }
+      ],
+      "figures": [
+        "unit5-budget-model",
+        "unit5-budget-comparison"
+      ],
+      "guideAnswers": [
+        "8000"
+      ],
+      "beforeProseChars": 7520,
+      "afterProseChars": 7900,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-budget-check"
+    },
+    "cb2-sales-variance": {
+      "step": 30,
+      "unit": 5,
+      "title": "販売数量差異と販売価格差異の計算",
+      "objectives": [
+        "販売数量差異と販売価格差異を定義に沿って計算する",
+        "比較用売上高を使って二つの差異の合計を検算する",
+        "基準数量・単価と符号が異なる分析方式を区別する"
+      ],
+      "terms": [
+        {
+          "id": "quantity-variance",
+          "term": "販売数量差異",
+          "definition": "予算単価を基準に、数量の実績と予算の差から求める売上高差異。"
+        },
+        {
+          "id": "price-variance",
+          "term": "販売価格差異",
+          "definition": "実際数量を基準に、実際単価と予算単価の差から求める売上高差異。"
+        },
+        {
+          "id": "intermediate",
+          "term": "中間の売上高",
+          "definition": "数量だけを実績に替え、予算単価を掛けた売上高。二つの差を分ける基準になります。"
+        }
+      ],
+      "figures": [
+        "unit5-sales-variance-model",
+        "sales-variance-bridge-diagram",
+        "unit5-sales-variance-comparison"
+      ],
+      "guideAnswers": [
+        "10800"
+      ],
+      "beforeProseChars": 8641,
+      "afterProseChars": 9027,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-sales-variance-check"
+    },
+    "cb2-variance-cases": {
+      "step": 31,
+      "unit": 5,
+      "title": "複数製品の売上高差異｜返品・新商品・集計",
+      "objectives": [
+        "複数製品の売上差異を製品ごとに分解して合計する",
+        "相殺された増減と単位の違いを説明する",
+        "サービスや返品条件の明示された売上を分析する"
+      ],
+      "terms": [
+        {
+          "id": "sales-mix",
+          "term": "販売構成",
+          "definition": "全体の販売数量などの中に、各製品が占める割合。"
+        },
+        {
+          "id": "net-quantity",
+          "term": "正味販売数量",
+          "definition": "販売数量から返品など、販売を取り消した数量を差し引いた数量。"
+        },
+        {
+          "id": "aggregate-price",
+          "term": "全体の平均単価",
+          "definition": "複数の商品を含む売上高を総販売数で割った値。商品の組合せにも左右されます。"
+        }
+      ],
+      "figures": [
+        "unit5-variance-cases-model",
+        "unit5-variance-cases-comparison"
+      ],
+      "guideAnswers": [
+        "3000"
+      ],
+      "beforeProseChars": 7825,
+      "afterProseChars": 8275,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-variance-cases-check"
+    },
+    "cb2-sales-ledger-reconciliation": {
+      "step": 32,
+      "unit": 5,
+      "title": "販売明細から売上高差異を求める｜値引き・返品と実際単価",
+      "objectives": [
+        "単価の異なる販売、返品、金額だけの値引きを明細から拾い、純販売数量と実際売上高を集計する",
+        "実際売上高と純販売数量から実際単価を読み、端数を丸めずに数量差異と価格差異を求める",
+        "合計が一致しても内訳に誤りが残ることを説明し、数量の根拠と差異の両方を検算する"
+      ],
+      "terms": [
+        {
+          "id": "net-quantity",
+          "term": "純販売数量",
+          "definition": "この章では、対象期間の販売数量から、問題の指示に従って同じ期間へ反映する返品数量を差し引いた数。"
+        },
+        {
+          "id": "net-sales",
+          "term": "純売上高",
+          "definition": "ここでは対象製品の販売金額から、指定された返品と値引きを差し引いた税抜売上高。送料をどう扱うかは資料の集計条件によります。"
+        },
+        {
+          "id": "price-only-credit",
+          "term": "金額だけの値引き",
+          "definition": "商品は返されず、請求する金額だけを減らす調整。問題の前提に従って売上高から引き、数量は動かしません。"
+        },
+        {
+          "id": "weighted-price",
+          "term": "実際平均単価",
+          "definition": "純売上高を純販売数量で割った値。販売条件の違い、返品、値引きが反映されるため、各明細に書かれた単価の単純平均とは異なります。"
+        },
+        {
+          "id": "budget-price-bridge",
+          "term": "比較用売上高",
+          "definition": "この章で、実際の純販売数量を予算単価で評価した金額。予算から数量だけを変えた金額で、実際の売上ではありません。"
+        }
+      ],
+      "figures": [
+        "sales-ledger-register",
+        "sales-ledger-bridge"
+      ],
+      "guideAnswers": [
+        "8210"
+      ],
+      "beforeProseChars": 0,
+      "afterProseChars": 7422,
+      "origin": "新設章",
+      "lessonAssessment": "cb2-sales-ledger-reconciliation-check",
+      "skillEvidence": [
+        {
+          "objective": 1,
+          "skill": "数量と金額の列で明細を整理",
+          "teachingAnchor": "objective-1",
+          "workedAnchor": "worked-1",
+          "lessonQuestionIds": [
+            "cb2-sales-ledger-reconciliation-q01",
+            "cb2-sales-ledger-reconciliation-q02",
+            "cb2-sales-ledger-reconciliation-q07",
+            "cb2-sales-ledger-reconciliation-q08"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u5-application-ledger-qty"
+          ]
+        },
+        {
+          "objective": 2,
+          "skill": "丸めずに中間の売上高を使って分ける",
+          "teachingAnchor": "objective-2",
+          "workedAnchor": "worked-2",
+          "lessonQuestionIds": [
+            "cb2-sales-ledger-reconciliation-q03",
+            "cb2-sales-ledger-reconciliation-q06"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u5-application-ledger-price"
+          ]
+        },
+        {
+          "objective": 3,
+          "skill": "同じ合計でも明細の転記から検算",
+          "teachingAnchor": "objective-3",
+          "workedAnchor": "worked-3",
+          "lessonQuestionIds": [
+            "cb2-sales-ledger-reconciliation-q04",
+            "cb2-sales-ledger-reconciliation-q05",
+            "cb2-sales-ledger-reconciliation-q09"
+          ],
+          "reviewQuestionIds": [
+            "cb2-u5-application-sales-ledger"
+          ]
+        }
+      ]
+    },
+    "cb2-integration": {
+      "step": 33,
+      "unit": 5,
+      "title": "原価計算初級の総合例題｜在庫・CVP・売上高差異",
+      "objectives": [
+        "二製品の直接費・配賦費と在庫から営業利益を計算する",
+        "在庫が変わる損益と在庫一定のCVPを区別して計画する",
+        "製品別の売上差異を集計し損益計算と照合する"
+      ],
+      "terms": [
+        {
+          "id": "finished-ledger",
+          "term": "在庫原価",
+          "definition": "売上原価にはせず、未完成または未販売のものに残して引き継ぐ金額。"
+        },
+        {
+          "id": "cost-of-production",
+          "term": "製品別原価",
+          "definition": "製品に直接集めた原価と、共通の製造間接費の配賦額を合わせた金額。"
+        },
+        {
+          "id": "revenue-variance",
+          "term": "売上高差異",
+          "definition": "比較対象の期間について、実際売上高から予算売上高を引いた金額。"
+        }
+      ],
+      "figures": [
+        "unit5-integration-model",
+        "unit5-integration-comparison"
+      ],
+      "guideAnswers": [
+        "21000"
+      ],
+      "beforeProseChars": 10417,
+      "afterProseChars": 10829,
+      "origin": "既存の説明と例題を維持して本文冒頭に用語と資料のつながりを補足",
+      "lessonAssessment": "cb2-integration-check"
+    }
+  },
+  "previousAudit": [
+    "course-release-audit.md",
+    "peer-coverage.md",
+    "lesson-unit12-arithmetic-witnesses.json",
+    "lesson-unit3-arithmetic-witnesses.json",
+    "lesson-unit45-arithmetic-witnesses.json"
+  ]
+}

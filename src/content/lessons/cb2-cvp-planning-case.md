@@ -1,6 +1,10 @@
 ---
-{"stableId":"cb2-cvp-planning-case","qualification":"cost-beginner","title":"CVP分析の例題｜営業計画と値上げ後の損益","description":"営業計画の資料から変動費・固定費、貢献利益、損益分岐点を計算します。値上げと販売見込みを分けて、利益が改善する条件を表で比べます。","order":25,"minutes":92,"sample":false,"unit":4,"subject":"cost","syllabus":[2],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-15","objectives":["売価・販売数量と複数の費用明細から売上高と営業利益の表を作る","貢献利益率と単位貢献利益から販売数量・売上高の分岐点を求める","値上げ後の分岐点と営業利益を計算し、条件次第で結果が変わる理由を説明する"],"prerequisite":"変動費・固定費、貢献利益と損益分岐点を扱うユニット4の章を確認します。","keywords":["CVP分析の例題","CVP分析の計算","CVP計算表","値上げ 損益分岐点","価格変更と営業利益"],"glossary":[]}
+{"stableId":"cb2-cvp-planning-case","qualification":"cost-beginner","title":"CVP分析の例題｜営業計画と値上げ後の損益","description":"営業計画の資料から変動費・固定費、貢献利益、損益分岐点を計算します。値上げと販売見込みを分けて、利益が改善する条件を表で比べます。","order":27,"minutes":92,"sample":false,"unit":4,"subject":"cost","syllabus":[2],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-16","objectives":["売価・販売数量と複数の費用明細から売上高と営業利益の表を作る","貢献利益率と単位貢献利益から販売数量・売上高の分岐点を求める","値上げ後の分岐点と営業利益を計算し、条件次第で結果が変わる理由を説明する"],"prerequisite":"変動費・固定費、貢献利益と損益分岐点を扱うユニット4の章を確認します。","keywords":["CVP分析の例題","CVP分析の計算","CVP計算表","値上げ 損益分岐点","価格変更と営業利益"],"glossary":[],"inlineGlossary":[{"id":"cvp","term":"CVP分析","definition":"売価、単位当たりの変動費、売上数量、固定費と利益の関係を確かめる分析。"},{"id":"forecast-sales","term":"見込み売上高","definition":"計画した販売数量と売価などを使って見積もった売上高。"},{"id":"break-even","term":"損益分岐点","definition":"与えられた単価と費用で、営業利益がゼロとなる売上の水準。"}]}
 ---
+
+<span id="first-reading"></span>
+
+料金や参加者数を変えたときの利益は、<a class="lesson-term" data-lesson-term href="#lesson-term-cvp">CVP分析</a>で確かめられます。計画した人数から<a class="lesson-term" data-lesson-term href="#lesson-term-forecast-sales">見込み売上高</a>を求め、料金と費用の条件から<a class="lesson-term" data-lesson-term href="#lesson-term-break-even">損益分岐点</a>を別に計算します。計画値と分岐点の差を比べれば、値上げ後に予想した人数で固定費を回収できるか判断できます。
 
 CVP分析では、売上高と変動費を販売量に応じて見積もり、固定費を回収できる数量と、実際の販売計画で残る利益を求めます。損益分岐点が下がっても、見込んだ数量を売れなければ、計画の営業利益が増えるとは限りません。分岐点と販売見込みを分けて計算し、最後に同じ表で比べましょう。
 
@@ -139,6 +143,8 @@ CVP分析では、売上高と変動費を販売量に応じて見積もり、�
 </section>
 
 用語の復習では、1件当たりの**貢献利益**と、売上高に占める**貢献利益率**を区別します。**固定費**を回収した後に残る金額が営業利益です。[ユニットの総合確認](../tests/cost-beginner-unit-4-review/)では、新しい資料から分岐点と値上げ後の利益を確かめます。
+
+異なる商品を組み合わせて売るときは、[複数商品の損益分岐点](../cb2-mix-planning/)で組合せと販売上限も照合します。
 
 ## 公式資料
 

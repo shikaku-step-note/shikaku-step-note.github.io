@@ -33,10 +33,10 @@ const lessons = entries.filter(
 const tests = bokiAssessments(entries);
 const mock = tests.find((a) => a.id === 'boki-2-mock')!;
 test('five bookkeeping tracks have substantive lessons, distinct identifiers and honest source coverage', () => {
-  assert.equal(lessons.length, 136);
+  assert.equal(lessons.length, 140);
   assert.deepEqual(
     bokiCourses.map((c) => lessons.filter((l) => l.data.qualification === c.id).length),
-    [28, 29, 55, 10, 14],
+    [28, 33, 55, 10, 14],
   );
   assert.equal(new Set(entries.map((l) => l.data.stableId)).size, entries.length);
   for (const c of bokiCourses) {
@@ -68,7 +68,7 @@ test('five bookkeeping tracks have substantive lessons, distinct identifiers and
           l.data.inlineGlossary.map((term: { id: string }) => term.id),
           ['opening-carry', 'monthly-transactions', 'cumulative-total', 'cutoff-date'],
         );
-      } else if (['bb2-foundations-case', 'bb2-sales-returns', 'bb2-trade-case', 'cb2-cost-sheet-audit', 'cb2-monthly-profit-statement', 'cb2-cvp-planning-case'].includes(l.data.stableId)) assert.deepEqual(l.data.glossary, []);
+      } else if (['bb2-foundations-case', 'bb2-sales-returns', 'bb2-trade-case', 'cb2-cost-sheet-audit', 'cb2-monthly-profit-statement', 'cb2-cvp-planning-case', 'cb2-department-cost-route', 'cb2-inventory-cutoff', 'cb2-mix-planning', 'cb2-sales-ledger-reconciliation'].includes(l.data.stableId)) assert.deepEqual(l.data.glossary, []);
       else if (c.id === 'boki-beginner' || c.id === 'cost-beginner' || l.data.stableId.startsWith('b3x-'))
         assert.ok(l.data.glossary.length >= 6);
       else assert.equal(l.data.glossary.length, 4);
@@ -104,7 +104,7 @@ test('all lesson, glossary, review and mock questions are valid and link to thei
       }
     }
   }
-  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 144);
+  assert.equal(tests.filter((a) => a.kind === 'lesson').length, 148);
   assert.equal(tests.filter((a) => a.kind === 'glossary').length, 27);
   assert.equal(tests.filter((a) => a.kind === 'review').length, 30);
 });

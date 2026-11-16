@@ -1,7 +1,7 @@
 {
   "qualification": "日商原価計算初級",
   "qualificationId": "cost-beginner",
-  "verifiedOn": "2026-11-15",
+  "verifiedOn": "2026-11-16",
   "reviewMethod": "日本商工会議所の公式案内本文と出題範囲PDFを照合。公開サンプル全6ページを読み、第3問の表はPDFを画像化して空欄を数えた。AIによる資料確認であり、外部専門家監修ではない。",
   "scopeDecision": "原価計算初級という一つの公式試験区分の全範囲。簿記初級、簿記1〜3級、架空の原価計算中級・上級を含めない。サイトのユニットは学習順序であり公式級ではない。",
   "currentApplicability": {
@@ -52,14 +52,14 @@
     "teachingBoundary": "月末仕掛品は公式範囲。与えられた評価額、追跡できる未完成品原価、原価の保存関係で扱う。完成品換算量・先入先出法・工程別総合原価計算・標準原価差異を必須範囲として追加しない。売上高の価格・数量差異は明記された初級範囲なので除外しない。"
   },
   "sources": [
-    {"id":"S01","title":"原価計算初級 趣旨・内容","url":"https://www.kentei.ne.jp/bookkeeping/ca/effect","publisher":"日本商工会議所","verifiedOn":"2026-11-15","applicability":"現行案内","checked":"能力、受験資格、40分、100点中70点、認定会場ネット試験。金額・日程の更新負担を避け、教材では不要な受験料を複製しない。"},
-    {"id":"S02","title":"原価計算初級 出題範囲・内容","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30genkashokyu.pdf","publisher":"日本商工会議所","verifiedOn":"2026-11-15","applicability":"2018年度からの範囲・2026年度および2027年度も変更なし","checked":"全1ページの3領域・9小区分。原価の目的/活動/資源、消費、部門と責任、費目、直接間接、損益、CVP、売上差異、直課配賦、仕掛品製品在庫、製品/サービス別損益。"},
-    {"id":"S03","title":"原価計算初級 サンプル問題","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2018/03/SAMPLE_ca2018.pdf","publisher":"日本商工会議所","verifiedOn":"2026-11-15","applicability":"2018年公開サンプル・現在の固定仕様とは区別","checked":"全6ページの出題構造、44/24/32点、13概念+1仕訳、6CVP、原価明細8空欄と損益表9空欄。現行案内と入力形式の時点差を照合。","reuse":"著作権は日本商工会議所。無断転載・無断営利利用禁止の明示あり。資料・文面・選択肢・数値を教材に転載せず独自作成する。"},
-    {"id":"S04","title":"日商簿記検定試験（2級・3級・簿記初級・原価計算初級）ネット試験について","url":"https://www.kentei.ne.jp/33013","publisher":"日本商工会議所","publishedOn":"2026-04-01","verifiedOn":"2026-11-15","applicability":"現行ネット試験案内","checked":"2(2)で原価計算初級は選択式40分と明示。2・3級の5題/3題を初級に転用しない。会場の紙/筆記具・電卓、時間終了、採点基準非公開。"},
-    {"id":"S05","title":"原価計算初級 上位級とのつながり","url":"https://www.kentei.ne.jp/bookkeeping/ca/point_ca","publisher":"日本商工会議所","verifiedOn":"2026-11-15","applicability":"公式の内容・除外説明","checked":"製造業だけでなく飲食/小売を含むサービス、製品/サービス別利益重視、売上高差異の位置付け、個別/総合の計算形態の違いと標準原価計算を範囲に含めない。"},
-    {"id":"S06","title":"簿記 出題区分表（2026年度および2027年度確定案内）","url":"https://www.kentei.ne.jp/bookkeeping/exam-list","publisher":"日本商工会議所","publishedOn":"2026-07-31","verifiedOn":"2026-11-15","applicability":"2026年度〜2027年度の境界","checked":"(1)※5は2018年度からの原価計算初級範囲を示し2027年度も変更なし。(2)※4は2026年度も変更なし。両方が同じ原価計算初級PDFへリンクする。"},
-    {"id":"S07","title":"原価計算初級 Q&A","url":"https://www.kentei.ne.jp/bookkeeping/ca/qa","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"概念・受験条件の補足。古い運用記述は最新案内を優先","checked":"簿記未学習でも学べる、自宅受験不可、上位の原価計算中級/上級を設ける予定はなく簿記1・2級へ接続。時間到達で終了。2020年予定など古い文面が残るため現在の形式はS04を優先。"},
+    {"id":"S01","title":"原価計算初級 趣旨・内容","url":"https://www.kentei.ne.jp/bookkeeping/ca/effect","publisher":"日本商工会議所","verifiedOn":"2026-11-16","applicability":"現行案内","checked":"能力、受験資格、40分、100点中70点、認定会場ネット試験。金額・日程の更新負担を避け、教材では不要な受験料を複製しない。"},
+    {"id":"S02","title":"原価計算初級 出題範囲・内容","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2018/01/h30genkashokyu.pdf","publisher":"日本商工会議所","verifiedOn":"2026-11-16","applicability":"2018年度からの範囲・2026年度および2027年度も変更なし","checked":"全1ページの3領域・9小区分。原価の目的/活動/資源、消費、部門と責任、費目、直接間接、損益、CVP、売上差異、直課配賦、仕掛品製品在庫、製品/サービス別損益。"},
+    {"id":"S03","title":"原価計算初級 サンプル問題","url":"https://www.kentei.ne.jp/wp/wp-content/uploads/2018/03/SAMPLE_ca2018.pdf","publisher":"日本商工会議所","verifiedOn":"2026-11-16","applicability":"2018年公開サンプル・現在の固定仕様とは区別","checked":"全6ページの出題構造、44/24/32点、13概念+1仕訳、6CVP、原価明細8空欄と損益表9空欄。現行案内と入力形式の時点差を照合。","reuse":"著作権は日本商工会議所。無断転載・無断営利利用禁止の明示あり。資料・文面・選択肢・数値を教材に転載せず独自作成する。"},
+    {"id":"S04","title":"日商簿記検定試験（2級・3級・簿記初級・原価計算初級）ネット試験について","url":"https://www.kentei.ne.jp/33013","publisher":"日本商工会議所","publishedOn":"2026-04-01","verifiedOn":"2026-11-16","applicability":"現行ネット試験案内","checked":"2(2)で原価計算初級は選択式40分と明示。2・3級の5題/3題を初級に転用しない。会場の紙/筆記具・電卓、時間終了、採点基準非公開。"},
+    {"id":"S05","title":"原価計算初級 上位級とのつながり","url":"https://www.kentei.ne.jp/bookkeeping/ca/point_ca","publisher":"日本商工会議所","verifiedOn":"2026-11-16","applicability":"公式の内容・除外説明","checked":"製造業だけでなく飲食/小売を含むサービス、製品/サービス別利益重視、売上高差異の位置付け、個別/総合の計算形態の違いと標準原価計算を範囲に含めない。"},
+    {"id":"S06","title":"簿記 出題区分表（2026年度および2027年度確定案内）","url":"https://www.kentei.ne.jp/bookkeeping/exam-list","publisher":"日本商工会議所","publishedOn":"2026-07-31","verifiedOn":"2026-11-16","applicability":"2026年度〜2027年度の境界","checked":"(1)※5は2018年度からの原価計算初級範囲を示し2027年度も変更なし。(2)※4は2026年度も変更なし。両方が同じ原価計算初級PDFへリンクする。"},
+    {"id":"S07","title":"原価計算初級 Q&A","url":"https://www.kentei.ne.jp/bookkeeping/ca/qa","publisher":"日本商工会議所","verifiedOn":"2026-11-16","applicability":"概念・受験条件の補足。古い運用記述は最新案内を優先","checked":"簿記未学習でも学べる、自宅受験不可、上位の原価計算中級/上級を設ける予定はなく簿記1・2級へ接続。時間到達で終了。2020年予定など古い文面が残るため現在の形式はS04を優先。"},
     {"id":"S08","title":"原価計算初級 ネット試験（操作体験版）","url":"https://www.kentei.ne.jp/bookkeeping/ca/exercise","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"体験版の注意事項のみ","checked":"操作体験用に問題数を限定し実試験の内容・出題数と異なる旨を確認。古いWindows用実行ファイルはダウンロード/実行していない。"},
-    {"id":"S09","title":"原価計算初級 サンプル問題案内","url":"https://www.kentei.ne.jp/bookkeeping/ca/sample","publisher":"日本商工会議所","verifiedOn":"2026-10-28","applicability":"公開サンプルへの公式リンク","checked":"S03が現行の公式掲載ページから直接リンクされていることを確認。"}
+    {"id":"S09","title":"原価計算初級 サンプル問題案内","url":"https://www.kentei.ne.jp/bookkeeping/ca/sample","publisher":"日本商工会議所","verifiedOn":"2026-11-16","applicability":"公開サンプルへの公式リンク","checked":"S03が現行の公式掲載ページから直接リンクされていることを確認。"}
   ]
 }

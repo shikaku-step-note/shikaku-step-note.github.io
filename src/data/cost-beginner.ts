@@ -13,6 +13,7 @@ import reviews from './cost-beginner-reviews.json';
 import unitTwoReviewMaterial from './cost-beginner-unit2-material.json';
 import unitTwoDiagnosticMaterial from './cost-beginner-unit2-diagnostic-material.json';
 import mocks from './cost-beginner-mocks.json';
+import applications from './cost-application-practice.json';
 import sources from '../../docs/cost-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
@@ -22,15 +23,16 @@ export const costUnitOneExpandedVersion = 'cost-2026-unit-1-v4';
 export const costUnitOneReviewVersion = 'cost-2026-unit-1-review-v5';
 export const costUnitOneAssessmentVersion = 'cost-2026-unit-1-v3';
 export const costUnitTwoAssessmentVersion = 'cost-2026-unit-2-v3';
-export const costUnitTwoReviewVersion = 'cost-2026-unit-2-review-v4';
+export const costUnitTwoReviewVersion = 'cost-2026-unit-2-review-v5';
 export const costSheetAuditVersion = 'cost-2026-cost-sheet-audit-v1';
-export const costUnitThreeReviewVersion = 'cost-2026-unit-3-review-v3';
+export const costUnitThreeReviewVersion = 'cost-2026-unit-3-review-v4';
 export const costMonthlyProfitVersion = 'cost-2026-monthly-profit-v1';
-export const costUnitFourReviewVersion = 'cost-2026-unit-4-review-v3';
+export const costUnitFourReviewVersion = 'cost-2026-unit-4-review-v4';
 export const costCvpPlanningVersion = 'cost-2026-cvp-planning-v1';
-export const costUnitFiveReviewVersion = 'cost-2026-unit-5-review-v3';
+export const costUnitFiveReviewVersion = 'cost-2026-unit-5-review-v4';
 export const costCourseReviewVersion = 'cost-2026-course-review-v3';
-export const costMockVersion = 'cost-2026-mock-v3';
+export const costMockVersion = 'cost-2026-mock-v4';
+export const costApplicationVersion = 'cost-2026-application-v1';
 const unitReviewVersions: Partial<Record<number, string>> = {
   1: costUnitOneReviewVersion,
   2: costUnitTwoReviewVersion,
@@ -60,8 +62,12 @@ export const costGroups = plan.units.map(unit => unit.title);
 export const costLessonIds = plan.units.flatMap(unit => unit.lessons);
 export const costLegacyIds = plan.legacyLessonIds;
 const addedUnitOneIds = new Set(Object.keys(unitOneSteps));
-export const costBank = { ...unit12, ...unitOneSteps, ...unit3, ...unit45 } as Record<string, Question[]>;
-export const costReviewBank = reviews as Record<string, Question[]>;
+const applicationLessons = applications.lessons as Record<string, Question[]>;
+const applicationReviews = applications.unitReviews as Record<string, Question[]>;
+export const costBank = { ...unit12, ...unitOneSteps, ...unit3, ...unit45, ...applicationLessons } as Record<string, Question[]>;
+export const costReviewBank: Record<string, Question[]> = Object.fromEntries(
+  Object.entries(reviews as Record<string, Question[]>).map(([key, bank]) => [key, [...bank, ...(applicationReviews[key] ?? [])]]),
+);
 export const costMockBank = mocks;
 export const costReviewCount = () => Object.entries(costReviewBank)
   .filter(([key])=>key.startsWith('unit-')).reduce((sum,[,questions])=>sum+questions.length,0);
@@ -112,7 +118,7 @@ export function costAssessments(lessons: Lesson[], legacyBank: Record<string,Que
     lessonTitles:Object.fromEntries(allRows.map(lesson=>[lesson.data.stableId,lesson.data.title]))};
   const result:Assessment[]=rows.map(lesson=>({...base,id:`${lesson.data.stableId}-check`,
     title:`${lesson.data.title}：理解度チェック`,kind:'lesson',unit:lesson.data.unit,
-    version:newLessonVersions[lesson.data.stableId] ?? (addedUnitOneIds.has(lesson.data.stableId)
+    version:applicationLessons[lesson.data.stableId] ? costApplicationVersion : newLessonVersions[lesson.data.stableId] ?? (addedUnitOneIds.has(lesson.data.stableId)
       ? costUnitOneExpandedVersion : revisedUnitVersions[lesson.data.unit??0] ?? costVersion),
     questions:costBank[lesson.data.stableId]??[],
     instructions:'条件を読み、計算の途中や判断の理由も紙に書いて確かめます。理解度チェックの結果は、ページの学習済み状態とは別に保存します。'}));

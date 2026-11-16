@@ -353,12 +353,14 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-elements#objective-2",
-      "cb2-profit-boundary#objective-1"
+      "cb2-profit-boundary#objective-1",
+      "cb2-department-cost-route#objective-1"
     ],
     "workedExamples": [
       "cb2-elements#worked-2",
       "cb2-elements#worked-activity-profit",
-      "cb2-profit-boundary#worked-1"
+      "cb2-profit-boundary#worked-1",
+      "cb2-department-cost-route#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-elements-q05",
@@ -367,16 +369,19 @@
       "cb2-elements-q08",
       "cb2-elements-q13",
       "cb2-profit-boundary-q01",
-      "cb2-profit-boundary-q02"
+      "cb2-profit-boundary-q02",
+      "cb2-department-cost-route-q03"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-1-r05",
-      "cb2-unit-1-r18"
+      "cb2-unit-1-r18",
+      "cb2-u2-application-department-1"
     ],
     "lessons": [
       "cb2-elements",
       "cb2-pnl",
-      "cb2-profit-boundary"
+      "cb2-profit-boundary",
+      "cb2-department-cost-route"
     ]
   },
   {
@@ -663,26 +668,31 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-allocation#objective-1"
+      "cb2-allocation#objective-1",
+      "cb2-department-cost-route#objective-2"
     ],
     "workedExamples": [
       "cb2-allocation#worked-1",
-      "cb2-allocation#allocation-source-evidence"
+      "cb2-allocation#allocation-source-evidence",
+      "cb2-department-cost-route#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-allocation-q01",
       "cb2-allocation-q02",
       "cb2-allocation-q03",
       "cb2-allocation-q04",
-      "cb2-allocation-q13"
+      "cb2-allocation-q13",
+      "cb2-department-cost-route-q04"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r07",
       "cb2-unit-2-r16",
-      "cb2-all-r24"
+      "cb2-all-r24",
+      "cb2-u2-application-department-2"
     ],
     "lessons": [
-      "cb2-allocation"
+      "cb2-allocation",
+      "cb2-department-cost-route"
     ]
   },
   {
@@ -702,22 +712,27 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-allocation#objective-1"
+      "cb2-allocation#objective-1",
+      "cb2-department-cost-route#objective-2"
     ],
     "workedExamples": [
-      "cb2-allocation#worked-1"
+      "cb2-allocation#worked-1",
+      "cb2-department-cost-route#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-allocation-q01",
       "cb2-allocation-q02",
       "cb2-allocation-q03",
-      "cb2-allocation-q04"
+      "cb2-allocation-q04",
+      "cb2-department-cost-route-q04"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-2-r07"
+      "cb2-unit-2-r07",
+      "cb2-u2-application-department-2"
     ],
     "lessons": [
-      "cb2-allocation"
+      "cb2-allocation",
+      "cb2-department-cost-route"
     ]
   },
   {
@@ -738,28 +753,33 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-allocation#objective-3",
-      "cb2-cost-sheet-audit#objective-2"
+      "cb2-cost-sheet-audit#objective-2",
+      "cb2-department-cost-route#objective-2"
     ],
     "workedExamples": [
       "cb2-allocation#worked-3",
       "cb2-allocation#worked-allocation-time-correction",
-      "cb2-cost-sheet-audit#worked-2"
+      "cb2-cost-sheet-audit#worked-2",
+      "cb2-department-cost-route#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-allocation-q09",
       "cb2-allocation-q10",
       "cb2-allocation-q11",
       "cb2-allocation-q12",
-      "cb2-cost-sheet-audit-q04"
+      "cb2-cost-sheet-audit-q04",
+      "cb2-department-cost-route-q06"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r09",
       "cb2-unit-2-r19",
-      "cb2-all-r24"
+      "cb2-all-r24",
+      "cb2-u2-application-department-2"
     ],
     "lessons": [
       "cb2-allocation",
-      "cb2-cost-sheet-audit"
+      "cb2-cost-sheet-audit",
+      "cb2-department-cost-route"
     ]
   },
   {
@@ -782,30 +802,35 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-allocation#objective-2",
-      "cb2-cost-sheet-audit#objective-2"
+      "cb2-cost-sheet-audit#objective-2",
+      "cb2-department-cost-route#objective-2"
     ],
     "workedExamples": [
       "cb2-allocation#worked-2",
       "cb2-allocation#allocation-source-evidence",
-      "cb2-cost-sheet-audit#worked-2"
+      "cb2-cost-sheet-audit#worked-2",
+      "cb2-department-cost-route#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-allocation-q05",
       "cb2-allocation-q06",
       "cb2-allocation-q07",
       "cb2-allocation-q08",
-      "cb2-cost-sheet-audit-q03"
+      "cb2-cost-sheet-audit-q03",
+      "cb2-department-cost-route-q06"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-2-r08",
       "cb2-unit-3-r05",
       "cb2-unit-2-r16",
-      "cb2-unit-2-r19"
+      "cb2-unit-2-r19",
+      "cb2-u2-application-department-2"
     ],
     "lessons": [
       "cb2-allocation",
       "cb2-finished",
-      "cb2-cost-sheet-audit"
+      "cb2-cost-sheet-audit",
+      "cb2-department-cost-route"
     ]
   },
   {
@@ -873,27 +898,32 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-wip#objective-1",
-      "cb2-monthly-profit-statement#objective-1"
+      "cb2-monthly-profit-statement#objective-1",
+      "cb2-inventory-cutoff#objective-1"
     ],
     "workedExamples": [
       "cb2-wip#worked-1",
-      "cb2-wip#worked-wip-completion-evidence"
+      "cb2-wip#worked-wip-completion-evidence",
+      "cb2-inventory-cutoff#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-wip-q01",
       "cb2-wip-q02",
       "cb2-wip-q03",
       "cb2-wip-q04",
-      "cb2-monthly-profit-statement-q01"
+      "cb2-monthly-profit-statement-q01",
+      "cb2-cutoff-q1"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r01",
       "cb2-unit-3-r17",
-      "cb2-all-r25"
+      "cb2-all-r25",
+      "cb2-u3-application-inventory-1"
     ],
     "lessons": [
       "cb2-wip",
-      "cb2-monthly-profit-statement"
+      "cb2-monthly-profit-statement",
+      "cb2-inventory-cutoff"
     ]
   },
   {
@@ -986,23 +1016,28 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-finished#objective-2"
+      "cb2-finished#objective-2",
+      "cb2-inventory-cutoff#objective-2"
     ],
     "workedExamples": [
       "cb2-finished#worked-2",
-      "cb2-finished#worked-finished-lot-reconciliation"
+      "cb2-finished#worked-finished-lot-reconciliation",
+      "cb2-inventory-cutoff#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-finished-q05",
       "cb2-finished-q06",
       "cb2-finished-q07",
-      "cb2-finished-q08"
+      "cb2-finished-q08",
+      "cb2-cutoff-q4"
     ],
     "unitReviewQuestionIds": [
-      "cb2-unit-3-r05"
+      "cb2-unit-3-r05",
+      "cb2-u3-application-inventory-2"
     ],
     "lessons": [
-      "cb2-finished"
+      "cb2-finished",
+      "cb2-inventory-cutoff"
     ]
   },
   {
@@ -1025,29 +1060,34 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-finished#objective-1",
-      "cb2-monthly-profit-statement#objective-1"
+      "cb2-monthly-profit-statement#objective-1",
+      "cb2-inventory-cutoff#objective-1"
     ],
     "workedExamples": [
       "cb2-finished#worked-1",
-      "cb2-monthly-profit-statement#worked-1"
+      "cb2-monthly-profit-statement#worked-1",
+      "cb2-inventory-cutoff#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-finished-q01",
       "cb2-finished-q02",
       "cb2-finished-q03",
       "cb2-finished-q04",
-      "cb2-monthly-profit-statement-q02"
+      "cb2-monthly-profit-statement-q02",
+      "cb2-cutoff-q2"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r04",
       "cb2-unit-3-r17",
       "cb2-all-r25",
-      "cb2-all-r26"
+      "cb2-all-r26",
+      "cb2-u3-application-inventory-1"
     ],
     "lessons": [
       "cb2-finished",
       "cb2-pnl",
-      "cb2-monthly-profit-statement"
+      "cb2-monthly-profit-statement",
+      "cb2-inventory-cutoff"
     ]
   },
   {
@@ -1069,28 +1109,33 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-pnl#objective-2",
-      "cb2-monthly-profit-statement#objective-2"
+      "cb2-monthly-profit-statement#objective-2",
+      "cb2-inventory-cutoff#objective-3"
     ],
     "workedExamples": [
       "cb2-pnl#worked-2",
       "cb2-pnl#worked-profit-statement-two-adjustments",
-      "cb2-monthly-profit-statement#worked-2"
+      "cb2-monthly-profit-statement#worked-2",
+      "cb2-inventory-cutoff#worked-3"
     ],
     "independentQuestionIds": [
       "cb2-pnl-q05",
       "cb2-pnl-q06",
       "cb2-pnl-q07",
       "cb2-pnl-q08",
-      "cb2-monthly-profit-statement-q03"
+      "cb2-monthly-profit-statement-q03",
+      "cb2-cutoff-q5"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-3-r08",
       "cb2-unit-3-r19",
-      "cb2-all-r26"
+      "cb2-all-r26",
+      "cb2-u3-application-inventory-3"
     ],
     "lessons": [
       "cb2-pnl",
-      "cb2-monthly-profit-statement"
+      "cb2-monthly-profit-statement",
+      "cb2-inventory-cutoff"
     ]
   },
   {
@@ -1341,25 +1386,30 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-contribution#objective-1",
-      "cb2-cvp-planning-case#objective-1"
+      "cb2-cvp-planning-case#objective-1",
+      "cb2-mix-planning#objective-1"
     ],
     "workedExamples": [
       "cb2-contribution#worked-1",
-      "cb2-cvp-planning-case#worked-1"
+      "cb2-cvp-planning-case#worked-1",
+      "cb2-mix-planning#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-contribution-q01",
       "cb2-contribution-q02",
       "cb2-contribution-q09",
-      "cb2-cvp-planning-case-q02"
+      "cb2-cvp-planning-case-q02",
+      "cb2-mix-planning-q01"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r04",
-      "cb2-unit-4-r18"
+      "cb2-unit-4-r18",
+      "cb2-u4-application-mix-1"
     ],
     "lessons": [
       "cb2-contribution",
-      "cb2-cvp-planning-case"
+      "cb2-cvp-planning-case",
+      "cb2-mix-planning"
     ]
   },
   {
@@ -1382,11 +1432,13 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-contribution#objective-3",
-      "cb2-cvp-planning-case#objective-2"
+      "cb2-cvp-planning-case#objective-2",
+      "cb2-mix-planning#objective-1"
     ],
     "workedExamples": [
       "cb2-contribution#worked-3",
-      "cb2-cvp-planning-case#worked-2"
+      "cb2-cvp-planning-case#worked-2",
+      "cb2-mix-planning#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-contribution-q06",
@@ -1394,18 +1446,21 @@
       "cb2-contribution-q08",
       "cb2-contribution-q12",
       "cb2-contribution-q13",
-      "cb2-cvp-planning-case-q03"
+      "cb2-cvp-planning-case-q03",
+      "cb2-mix-planning-q02"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r16",
       "cb2-unit-4-r08",
       "cb2-unit-4-r18",
-      "cb2-unit-4-r19"
+      "cb2-unit-4-r19",
+      "cb2-u4-application-mix-1"
     ],
     "lessons": [
       "cb2-contribution",
       "cb2-break-even",
-      "cb2-cvp-planning-case"
+      "cb2-cvp-planning-case",
+      "cb2-mix-planning"
     ]
   },
   {
@@ -1427,11 +1482,13 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-contribution#objective-2",
-      "cb2-cvp-planning-case#objective-1"
+      "cb2-cvp-planning-case#objective-1",
+      "cb2-mix-planning#objective-3"
     ],
     "workedExamples": [
       "cb2-contribution#worked-2",
-      "cb2-cvp-planning-case#worked-1"
+      "cb2-cvp-planning-case#worked-1",
+      "cb2-mix-planning#worked-3"
     ],
     "independentQuestionIds": [
       "cb2-contribution-q03",
@@ -1440,16 +1497,19 @@
       "cb2-contribution-q10",
       "cb2-contribution-q11",
       "cb2-contribution-q14",
-      "cb2-cvp-planning-case-q02"
+      "cb2-cvp-planning-case-q02",
+      "cb2-mix-planning-q06"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r05",
       "cb2-unit-4-r18",
-      "cb2-all-r28"
+      "cb2-all-r28",
+      "cb2-u4-application-mix-3"
     ],
     "lessons": [
       "cb2-contribution",
-      "cb2-cvp-planning-case"
+      "cb2-cvp-planning-case",
+      "cb2-mix-planning"
     ]
   },
   {
@@ -1471,28 +1531,33 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-break-even#objective-1",
-      "cb2-cvp-planning-case#objective-2"
+      "cb2-cvp-planning-case#objective-2",
+      "cb2-mix-planning#objective-2"
     ],
     "workedExamples": [
       "cb2-break-even#worked-1",
       "cb2-break-even#worked-break-even-reconstruct-two-months",
-      "cb2-cvp-planning-case#worked-2"
+      "cb2-cvp-planning-case#worked-2",
+      "cb2-mix-planning#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-break-even-q01",
       "cb2-break-even-q04",
       "cb2-break-even-q07",
       "cb2-break-even-q12",
-      "cb2-cvp-planning-case-q04"
+      "cb2-cvp-planning-case-q04",
+      "cb2-mix-planning-q03"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r07",
       "cb2-unit-4-r19",
-      "cb2-all-r27"
+      "cb2-all-r27",
+      "cb2-u4-application-mix-2"
     ],
     "lessons": [
       "cb2-break-even",
-      "cb2-cvp-planning-case"
+      "cb2-cvp-planning-case",
+      "cb2-mix-planning"
     ]
   },
   {
@@ -1515,11 +1580,13 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-break-even#objective-2",
-      "cb2-cvp-planning-case#objective-3"
+      "cb2-cvp-planning-case#objective-3",
+      "cb2-mix-planning#objective-2"
     ],
     "workedExamples": [
       "cb2-break-even#worked-2",
-      "cb2-cvp-planning-case#worked-3"
+      "cb2-cvp-planning-case#worked-3",
+      "cb2-mix-planning#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-break-even-q02",
@@ -1527,18 +1594,21 @@
       "cb2-break-even-q10",
       "cb2-break-even-q11",
       "cb2-break-even-q14",
-      "cb2-cvp-planning-case-q05"
+      "cb2-cvp-planning-case-q05",
+      "cb2-mix-planning-q05"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-4-r08",
       "cb2-unit-4-r20",
       "cb2-unit-4-r21",
-      "cb2-all-r27"
+      "cb2-all-r27",
+      "cb2-u4-application-mix-2"
     ],
     "lessons": [
       "cb2-break-even",
       "cb2-safety-changes",
-      "cb2-cvp-planning-case"
+      "cb2-cvp-planning-case",
+      "cb2-mix-planning"
     ]
   },
   {
@@ -1558,24 +1628,29 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-budget#objective-1"
+      "cb2-budget#objective-1",
+      "cb2-sales-ledger-reconciliation#objective-1"
     ],
     "workedExamples": [
       "cb2-budget#worked-1",
-      "cb2-budget#worked-budget-elapsed-period"
+      "cb2-budget#worked-budget-elapsed-period",
+      "cb2-sales-ledger-reconciliation#worked-1"
     ],
     "independentQuestionIds": [
       "cb2-budget-q01",
       "cb2-budget-q02",
-      "cb2-budget-q07"
+      "cb2-budget-q07",
+      "cb2-sales-ledger-reconciliation-q02"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-5-r01",
       "cb2-unit-5-r15",
-      "cb2-unit-5-r16"
+      "cb2-unit-5-r16",
+      "cb2-u5-application-ledger-qty"
     ],
     "lessons": [
-      "cb2-budget"
+      "cb2-budget",
+      "cb2-sales-ledger-reconciliation"
     ]
   },
   {
@@ -1596,27 +1671,32 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-sales-variance#objective-1"
+      "cb2-sales-variance#objective-1",
+      "cb2-sales-ledger-reconciliation#objective-2"
     ],
     "workedExamples": [
       "cb2-sales-variance#worked-1",
-      "cb2-sales-variance#worked-sales-variance-recover-record"
+      "cb2-sales-variance#worked-sales-variance-recover-record",
+      "cb2-sales-ledger-reconciliation#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-sales-variance-q01",
       "cb2-sales-variance-q02",
       "cb2-sales-variance-q04",
       "cb2-sales-variance-q05",
-      "cb2-sales-variance-q07"
+      "cb2-sales-variance-q07",
+      "cb2-sales-ledger-reconciliation-q03"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-5-r13",
       "cb2-unit-5-r18",
       "cb2-unit-5-r19",
-      "cb2-all-r30"
+      "cb2-all-r30",
+      "cb2-u5-application-ledger-price"
     ],
     "lessons": [
-      "cb2-sales-variance"
+      "cb2-sales-variance",
+      "cb2-sales-ledger-reconciliation"
     ]
   },
   {
@@ -1637,27 +1717,32 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-sales-variance#objective-1"
+      "cb2-sales-variance#objective-1",
+      "cb2-sales-ledger-reconciliation#objective-2"
     ],
     "workedExamples": [
       "cb2-sales-variance#worked-1",
-      "cb2-sales-variance#worked-sales-variance-recover-record"
+      "cb2-sales-variance#worked-sales-variance-recover-record",
+      "cb2-sales-ledger-reconciliation#worked-2"
     ],
     "independentQuestionIds": [
       "cb2-sales-variance-q01",
       "cb2-sales-variance-q02",
       "cb2-sales-variance-q04",
       "cb2-sales-variance-q05",
-      "cb2-sales-variance-q07"
+      "cb2-sales-variance-q07",
+      "cb2-sales-ledger-reconciliation-q06"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-5-r04",
       "cb2-unit-5-r17",
       "cb2-unit-5-r19",
-      "cb2-all-r29"
+      "cb2-all-r29",
+      "cb2-u5-application-sales-ledger"
     ],
     "lessons": [
-      "cb2-sales-variance"
+      "cb2-sales-variance",
+      "cb2-sales-ledger-reconciliation"
     ]
   },
   {
@@ -1678,18 +1763,21 @@
     ],
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
-      "cb2-sales-variance#objective-2"
+      "cb2-sales-variance#objective-2",
+      "cb2-sales-ledger-reconciliation#objective-3"
     ],
     "workedExamples": [
       "cb2-sales-variance#worked-2",
-      "cb2-sales-variance#worked-sales-variance-recover-record"
+      "cb2-sales-variance#worked-sales-variance-recover-record",
+      "cb2-sales-ledger-reconciliation#worked-3"
     ],
     "independentQuestionIds": [
       "cb2-sales-variance-q03",
       "cb2-sales-variance-q06",
       "cb2-sales-variance-q08",
       "cb2-sales-variance-q12",
-      "cb2-sales-variance-q13"
+      "cb2-sales-variance-q13",
+      "cb2-sales-ledger-reconciliation-q09"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-5-r05",
@@ -1698,11 +1786,13 @@
       "cb2-unit-5-r18",
       "cb2-unit-5-r19",
       "cb2-all-r29",
-      "cb2-all-r30"
+      "cb2-all-r30",
+      "cb2-u5-application-sales-ledger"
     ],
     "lessons": [
       "cb2-sales-variance",
-      "cb2-variance-cases"
+      "cb2-variance-cases",
+      "cb2-sales-ledger-reconciliation"
     ]
   },
   {
@@ -1724,12 +1814,14 @@
     "evidenceStatus": "implemented-and-independently-reviewed",
     "teachingAnchors": [
       "cb2-variance-cases#objective-3",
-      "cb2-variance-cases#objective-2"
+      "cb2-variance-cases#objective-2",
+      "cb2-sales-ledger-reconciliation#objective-3"
     ],
     "workedExamples": [
       "cb2-variance-cases#worked-3",
       "cb2-variance-cases#worked-variance-new-and-discontinued-products",
-      "cb2-variance-cases#worked-2"
+      "cb2-variance-cases#worked-2",
+      "cb2-sales-ledger-reconciliation#worked-3"
     ],
     "independentQuestionIds": [
       "cb2-variance-cases-q04",
@@ -1737,16 +1829,19 @@
       "cb2-variance-cases-q09",
       "cb2-variance-cases-q13",
       "cb2-variance-cases-q14",
-      "cb2-variance-cases-q05"
+      "cb2-variance-cases-q05",
+      "cb2-sales-ledger-reconciliation-q04"
     ],
     "unitReviewQuestionIds": [
       "cb2-unit-5-r09",
       "cb2-unit-5-r03",
       "cb2-unit-5-r20",
-      "cb2-all-r31"
+      "cb2-all-r31",
+      "cb2-u5-application-sales-ledger"
     ],
     "lessons": [
-      "cb2-variance-cases"
+      "cb2-variance-cases",
+      "cb2-sales-ledger-reconciliation"
     ]
   },
   {

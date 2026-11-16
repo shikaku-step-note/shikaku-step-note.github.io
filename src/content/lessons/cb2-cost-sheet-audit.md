@@ -1,6 +1,10 @@
 ---
-{"stableId":"cb2-cost-sheet-audit","qualification":"cost-beginner","title":"製品別原価計算表の作り方｜原票の照合と誤りの訂正","description":"材料の払出票・作業票・外注明細から製品別原価計算表を作り直す原価計算初級の例題。合計が合っていても残る配賦の誤りを見つけ、在庫と売上原価を訂正します。","order":13,"minutes":85,"sample":false,"updated":"2026-11-15","unit":2,"syllabus":[1,3],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["原票を読み、製品別の直接費・工場共通費・製造外の費用を整理する","製品別原価表を復元し、合計では見えない分類や配賦の誤りを説明する","訂正後の製品別原価を販売分と在庫に分け、売上原価への影響を照合する"],"prerequisite":"材料消費額、消費賃率、配賦率、仕掛品・製品・売上原価の振替を扱うユニット2の前4章を読みます。","keywords":["製品別原価計算表","原価計算表の作り方","製品別原価の例題","原価明細表","配賦の誤り","原価の検算"],"glossary":[]}
+{"stableId":"cb2-cost-sheet-audit","qualification":"cost-beginner","title":"製品別原価計算表の作り方｜原票の照合と誤りの訂正","description":"材料の払出票・作業票・外注明細から製品別原価計算表を作り直す原価計算初級の例題。合計が合っていても残る配賦の誤りを見つけ、在庫と売上原価を訂正します。","order":14,"minutes":85,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1,3],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["原票を読み、製品別の直接費・工場共通費・製造外の費用を整理する","製品別原価表を復元し、合計では見えない分類や配賦の誤りを説明する","訂正後の製品別原価を販売分と在庫に分け、売上原価への影響を照合する"],"prerequisite":"材料消費額、消費賃率、配賦率、仕掛品・製品・売上原価の振替を扱うユニット2の前4章を読みます。","keywords":["製品別原価計算表","原価計算表の作り方","製品別原価の例題","原価明細表","配賦の誤り","原価の検算"],"glossary":[],"inlineGlossary":[{"id":"cost-sheet","term":"製品別原価計算表","definition":"製品ごとに直接費と配賦した製造間接費を並べ、原価を集める表。"},{"id":"source-record","term":"原票","definition":"材料を使った量、担当者の作業時間など、集計前の事実を記録した資料。"},{"id":"reconciliation","term":"照合","definition":"同じ取引を表す資料を、製品名、日付、量、金額などで突き合わせること。"}]}
 ---
+
+<span id="first-reading"></span>
+
+製品ごとの金額を算出するときは、出庫票や作業日報などの<a class="lesson-term" data-lesson-term href="#lesson-term-source-record">原票</a>を出発点にします。明細を<a class="lesson-term" data-lesson-term href="#lesson-term-cost-sheet">製品別原価計算表</a>に集めた後は、資料の製品名や数量と互いに<a class="lesson-term" data-lesson-term href="#lesson-term-reconciliation">照合</a>します。合計が同じでも、二つの製品の欄を取り違えている場合があります。
 
 原価計算表を確かめるには、製品別の欄を原票までさかのぼります。工場全体の原価が合っていても、Aに付けるべき金額がBに入っていれば、各製品の原価は誤っています。さらに、販売した割合が異なると、その誤りは売上原価と在庫の金額にも及びます。
 
