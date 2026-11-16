@@ -7,7 +7,7 @@
   'order': 6,
   'minutes': 105,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 2,
   'syllabus': [5, 6, 7],
   'objectives': ['身近な行動と関連する法律を結び付ける', '個人情報の目的と第三者提供を考える'],
@@ -76,7 +76,7 @@
 
 会員IDを別の番号に変えても、社内に対応表が残り、容易に照合できるなら、誰の情報か追える可能性があります。『名前を消した』だけで法令上の匿名加工情報になったとは判断できません。対応表を誰が持つか、元の情報へ戻せるか、提供先に渡す項目は何かを事例から拾います。アクセス制限のある社内サービスでは、技術的に画面が開くことと、利用を認められていることも区別します。同僚の認証情報を不正に使ってログインする行為は不正アクセス禁止法違反に該当するおそれがあります。必要なアクセスは管理者が認めた本人用の権限で行います。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="利用目的、参加案内を発送する。受領者の役割、発送だけを受託する。共有する範囲、宛名と発送先に絞る"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">利用目的</text><text x="200" y="43">参加案内を発送する</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">受領者の役割</text><text x="200" y="106">発送だけを受託する</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">共有する範囲</text><text x="200" y="169">宛名と発送先に絞る</text></g></svg><figcaption>データの扱いは、利用目的、役割、共有する項目の順に絞り込みます。</figcaption></figure>
+<figure id="ip-law-ethics-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="利用目的、参加案内を発送する。受領者の役割、発送だけを受託する。共有する範囲、宛名と発送先に絞る"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">利用目的</text><text x="200" y="43">参加案内を発送する</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">受領者の役割</text><text x="200" y="106">発送だけを受託する</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">共有する範囲</text><text x="200" y="169">宛名と発送先に絞る</text></g></svg><figcaption>データの扱いは、利用目的、役割、共有する項目の順に絞り込みます。</figcaption></figure>
 
 ### 成果の要求と、労働者への作業指示を分ける
 
@@ -150,3 +150,52 @@ EUの利用者に向けて専用の画面でサービスを提供する場合、
 サイバーセキュリティ基本法では、国などの責務、政策を進める枠組み、関係者の連携を押さえます。例えば事業者間で障害時の連絡手順を整える話と、他人の認証情報を無断で利用した行為の話では、問われる制度が違います。広告メールの送信に関する規制は、原則として事前同意を確認する考え方や、例外、表示義務、受信拒否への対応などが論点です。試験では法令名だけでなく、何を規制し、誰のどの行為を確認するかを読みます。
 
 出典： [国家サイバー統括室の関係法令](https://www.cyber.go.jp/law/lawlink.html)、[消費者庁の特定電子メール法案内](https://www.caa.go.jp/policies/policy/consumer_transaction/specifed_email/)（2026年11月12日確認）。
+
+<span id="ip-law-ethics-decision-section"></span>
+
+## 委託する仕事の目的から、渡す情報と権限を決める
+
+顧客情報の処理を社外へ委託するときは、誰が何の目的で使うのかをまず確かめます。委託する仕事を定めたら、情報の項目、閲覧する人、処理を終えた後の扱いを、その仕事から一つずつ決めます。一つのシステムを同じ事業者が扱う場合でも、受け付ける仕事と結果を点検する仕事では参照する項目が異なります。
+
+<figure id="ip-law-ethics-worked-decision">
+<figcaption id="ip-law-ethics-worked-decision-caption">相談窓口で確認したい情報の範囲（架空例）</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-law-ethics-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">処理</th><th scope="col">用途</th><th scope="col">確認する範囲</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">相談の受付</th><td>相談者が困っている点を記録</td><td>連絡先、相談内容、受付時刻</td></tr>
+    <tr><th scope="row">応対の品質点検</th><td>案内に必要な説明があったか確かめる</td><td>確認に必要な応対の抜粋</td></tr>
+    <tr><th scope="row">部署別の月次集計</th><td>説明漏れが多い部署を確かめる</td><td>部署、件数、漏れの分類</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+例えば、相談者に連絡を返す担当者は連絡先を使います。点検の担当者が調べるのは、案内の途中に返金条件の説明があったかどうかです。資料を渡す前に、相談者の名前・電話番号・住所を取り除いた抜粋で点検できるかを確認します。相談記録の利用目的に点検を含められるか、委託先に許す閲覧や再利用をどう制約するかも検討します。仕事を終えた後にも他の用途で記録を使える契約になっていないか、返却や消去を確認する方法まで決めてから運用に移します。実際の委託管理は[個人情報保護委員会のガイドライン](https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/)を確認します。
+
+<section class="guided-lesson" id="ip-law-ethics-guided-transfer" aria-labelledby="ip-law-ethics-guided-transfer-title">
+<h3 id="ip-law-ethics-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-law-ethics-guided-transfer-prompt">点検は、返金条件の説明が応対のどこにあったか確かめるだけです。委託先から全相談記録を複製してほしいと言われたとき、何を提案しますか。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="説明の有無を確かめるには応対内容が要ります。相談者に連絡する仕事は担当しません。" aria-labelledby="ip-law-ethics-guided-transfer-title" aria-describedby="ip-law-ethics-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-law-ethics-guided-transfer-1"><input type="radio" id="ip-law-ethics-guided-transfer-1" name="answer" value="1"> 応対の頻度も分かるよう、全期間の原本をまとめて渡す</label><br>
+<label for="ip-law-ethics-guided-transfer-2"><input type="radio" id="ip-law-ethics-guided-transfer-2" name="answer" value="2"> 点検に必要な応対部分に絞り、氏名や連絡先を外して目的と権限も確認する</label><br>
+<label for="ip-law-ethics-guided-transfer-3"><input type="radio" id="ip-law-ethics-guided-transfer-3" name="answer" value="3"> 部門ごとの総件数だけを渡し、説明漏れの有無を判定してもらう</label><br>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>応対の中で確認に必要な部分を残し、点検に不要な氏名や連絡先は外します。総件数だけでは返金条件を実際に説明したかは判断できません。委託する作業に合わせて閲覧する人と利用目的を確認します。</p>
+</details>
+</section>
+
+<span id="ip-law-ethics-decision-independent"></span>
+
+### 自分で判断する
+
+点検が終わった後、委託先が抜粋を別の研修に保存して使いたいと言います。次に何を確認しますか。
+
+<details><summary>考え方と答えを確認する</summary><p>点検を終えた記録の保管や再利用が契約の範囲に入るかを確認します。研修は当初の仕事とは別の目的です。個人を推測できる内容が残っていないかを含め、利用目的と契約条件が確認できるまでは流用を保留します。</p></details>

@@ -7,7 +7,7 @@
   'order': 8,
   'minutes': 105,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 3,
   'syllabus': [9, 11],
   'objectives': ['戦略分析の軸を使い分ける', 'KGIとKPIを結び付ける'],
@@ -63,13 +63,13 @@ PPMで売上が大きいだけで花形とは判断できません。市場成�
 
 技術が強みでも、優位性が続くとは限りません。顧客が解凍後の品質に価値を感じるか（価値）、競合が同じ品質を出せるか（希少性）、追いつくのが難しいか（模倣困難性）、自社で製造・販売に活用できるか（組織）をVRIOで確かめます。装置を買えば他社もすぐ同じ品質を出せる場合と、長年の製造データと熟練者の調整が必要な場合では評価が変わります。技術そのものは同じでも、利益に結びつける販売体制がなければ活用しにくくなります。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="外部環境を読む、需要は伸びるが運賃も上がる。自社の優位を確かめる、技術の価値・希少性・模倣・組織。投資案を選び検証する、近隣販売から指標を測る"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">外部環境を読む</text><text x="200" y="43">需要は伸びるが運賃も上がる</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">自社の優位を確かめる</text><text x="200" y="106">技術の価値・希少性・模倣・組織</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">投資案を選び検証する</text><text x="200" y="169">近隣販売から指標を測る</text></g></svg><figcaption>市場の好材料は、資源と実行体制を確認してから投資判断につなげます。</figcaption></figure>
+<figure id="ip-strategy-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="外部環境を読む、需要は伸びるが運賃も上がる。自社の優位を確かめる、技術の価値・希少性・模倣・組織。投資案を選び検証する、近隣販売から指標を測る"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">外部環境を読む</text><text x="200" y="43">需要は伸びるが運賃も上がる</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">自社の優位を確かめる</text><text x="200" y="106">技術の価値・希少性・模倣・組織</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">投資案を選び検証する</text><text x="200" y="169">近隣販売から指標を測る</text></g></svg><figcaption>市場の好材料は、資源と実行体制を確認してから投資判断につなげます。</figcaption></figure>
 
 ### 成長率とシェアの位置から、資金の使い方を考える
 
 PPMは、市場成長率と相対的な市場シェアで事業の位置を捉え、資源配分を考える方法です。例として成長率10％を境にし、相対シェアを『自社のシェア÷最大の競合のシェア』で求めます。市場成長率15％、自社10％、最大競合25％の新商品は相対シェア0.4で、成長率が高く相対シェアが低い問題児です。既存商品が市場成長率3％、自社36％、最大競合24％なら相対シェア1.5で、市場の伸びは小さく相対シェアが高い金のなる木に相当します。金のなる木の余剰資金を新商品へ回す案を比べますが、低シェア事業ならすべて投資するという意味ではありません。
 
-<figure><svg viewBox="0 0 400 250" width="400" height="250" style="max-width:100%;height:auto" role="img" aria-label="PPMの四象限。縦は市場成長率、横は相対シェアで、左ほど高い。成長率15パーセント、相対シェア0.4の新商品は右上の問題児。成長率3パーセント、相対シェア1.5の既存商品は左下の金のなる木"><rect x="58" y="35" width="310" height="170" fill="currentColor" fill-opacity=".05" stroke="currentColor"/><path d="M213 35v170M58 120h310" stroke="currentColor" opacity=".65"/><g fill="currentColor" font-size="15" text-anchor="middle"><text x="213" y="22">市場成長率 高</text><text x="135" y="64">花形</text><text x="290" y="64">問題児</text><text x="290" y="94">● 新商品</text><text x="135" y="148">金のなる木</text><text x="135" y="178">● 既存商品</text><text x="290" y="148">負け犬</text><text x="213" y="227">市場成長率 低</text><text x="94" y="247">相対シェア 高</text><text x="326" y="247">相対シェア 低</text></g></svg><figcaption>例の二事業の位置を示したPPMの概念図です。成長率と相対シェアをそれぞれの基準で判断します。点は正確な目盛り上の位置を示すものではありません。</figcaption></figure>
+<figure id="ip-strategy-figure-2"><svg viewBox="0 0 400 250" width="400" height="250" style="max-width:100%;height:auto" role="img" aria-label="PPMの四象限。縦は市場成長率、横は相対シェアで、左ほど高い。成長率15パーセント、相対シェア0.4の新商品は右上の問題児。成長率3パーセント、相対シェア1.5の既存商品は左下の金のなる木"><rect x="58" y="35" width="310" height="170" fill="currentColor" fill-opacity=".05" stroke="currentColor"/><path d="M213 35v170M58 120h310" stroke="currentColor" opacity=".65"/><g fill="currentColor" font-size="15" text-anchor="middle"><text x="213" y="22">市場成長率 高</text><text x="135" y="64">花形</text><text x="290" y="64">問題児</text><text x="290" y="94">● 新商品</text><text x="135" y="148">金のなる木</text><text x="135" y="178">● 既存商品</text><text x="290" y="148">負け犬</text><text x="213" y="227">市場成長率 低</text><text x="94" y="247">相対シェア 高</text><text x="326" y="247">相対シェア 低</text></g></svg><figcaption>例の二事業の位置を示したPPMの概念図です。成長率と相対シェアをそれぞれの基準で判断します。点は正確な目盛り上の位置を示すものではありません。</figcaption></figure>
 
 成長の方向はアンゾフの枠組みで整理できます。現在の地域で今の商品をもっと売るのは市場浸透、他県へ同じ商品を売るのは市場開拓、今の顧客に新しい商品を売るのは製品開発です。商品も市場も新しければ多角化です。顧客との関係も製造のノウハウも新たに必要になる場合、試験販売で前提を確かめてから拡大します。
 
@@ -128,3 +128,51 @@ BSCでは財務、顧客、内部業務プロセス、学習と成長の視点�
 | 月の契約 | 10件 | 15件 | 15件 |
 
 目標の契約数がKGI、途中の改善を測る比率や件数がKPIです。問い合わせが増えたのに契約が増えないときは、見積り率や契約率に想定とのずれがないか調べます。
+
+<span id="ip-strategy-decision-section"></span>
+
+## 施策が違っても、目標から成果まで同じ手順で追う
+
+目標を数値にする場合、KGIは最終的に得たい成果を測り、KPIはその成果に至る途中を測ります。登録数や取扱件数が増えても、利益を目標にするなら、登録後の購入や一件当たりの費用まで追います。二つの施策を同時に変えると、全体として成果が変わったことは分かっても、それぞれの効果は分かりにくくなります。同じ顧客条件で片方だけを変えた比較を用意すると、次に広げる施策を選ぶ根拠になります。
+
+<figure id="ip-strategy-worked-decision">
+<figcaption id="ip-strategy-worked-decision-caption">有料契約の獲得施策を評価する</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-strategy-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">集計</th><th scope="col">案内A</th><th scope="col">案内B</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">案内を見た人</th><td>1,000人</td><td>1,000人</td></tr>
+    <tr><th scope="row">試用登録</th><td>120件</td><td>150件</td></tr>
+    <tr><th scope="row">有料契約</th><td>36件</td><td>30件</td></tr>
+    <tr><th scope="row">案内にかかった費用</th><td>36,000円</td><td>60,000円</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+登録数で比較するとBが上ですが、最終目標を有料契約の増加と置くなら、Aは36件、Bは30件です。契約1件当たりの案内費用も、Aは36,000÷36＝1,000円、Bは60,000÷30＝2,000円です。実際の利益で比べるには契約から得る利益も必要です。特典を増やすBと案内文を変えるAを組み合わせる場合は、元の案内を残した小規模な比較も行い、どの変更が契約数に結びついたかを確かめます。
+
+<section class="guided-lesson" id="ip-strategy-guided-transfer" aria-labelledby="ip-strategy-guided-transfer-title">
+<h3 id="ip-strategy-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-strategy-guided-transfer-prompt">Bで有料契約が40件に増え、案内費用60,000円が同じでした。契約1件当たりの費用は何円ですか。</p>
+<form data-guided-practice data-expected="1500" data-guided-hint="有料契約を獲得する目標です。試用登録数や案内を見た人数では割りません。" aria-labelledby="ip-strategy-guided-transfer-title" aria-describedby="ip-strategy-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-strategy-guided-transfer-input">答え（円）</label> <input id="ip-strategy-guided-transfer-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>案内費用60,000円を有料契約40件で割るので1,500円です。Aの1,000円と比較するなら、費用に入れた範囲もそろえます。</p>
+</details>
+</section>
+
+<span id="ip-strategy-decision-independent"></span>
+
+### 自分で判断する
+
+割引と申込み画面の短縮を同じ日に行い、有料契約が30件から45件に増えました。来月に一方の施策だけを続けるなら、どの資料を追加しますか。
+
+<details><summary>考え方と答えを確認する</summary><p>二つを同時に変えた前後の数字からは、どちらが有料契約の増加をもたらしたかは判断できません。利用者条件と期間をそろえ、割引だけを変える群と画面だけを変える群を用意します。契約数に加え、割引費用と契約から得る額も記録します。</p></details>

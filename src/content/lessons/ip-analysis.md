@@ -7,7 +7,7 @@
   'order': 2,
   'minutes': 105,
   'sample': false,
-  'updated': '2026-11-15',
+  'updated': '2026-11-16',
   'unit': 1,
   'syllabus': [2],
   'objectives': ['分析の目的に合う図を選ぶ', '相関と因果を区別する'],
@@ -67,7 +67,7 @@
 
 架空の問い合わせ150件を、配送の遅れ60件、商品違い45件、案内不足30件、その他15件に分けました。棒を件数の多い順に並べ、累積割合を重ねます。最初の分類は60÷150＝40％、上位二つは105÷150＝70％、上位三つは135÷150＝90％です。「原因を二種類だけ調べられる」という制約なら、件数の多い二つで全体の七割を観察できます。
 
-<figure><svg viewBox="0 0 360 155" width="360" height="155" role="img" aria-label="問い合わせ150件のパレート図。配送60件、商品違い45件、案内不足30件、その他15件。累積は40、70、90、100パーセント。" style="max-width:100%;height:auto">
+<figure id="ip-analysis-existing-visual"><svg viewBox="0 0 360 155" width="360" height="155" role="img" aria-label="問い合わせ150件のパレート図。配送60件、商品違い45件、案内不足30件、その他15件。累積は40、70、90、100パーセント。" style="max-width:100%;height:auto">
 <g fill="currentColor" fill-opacity=".22"><rect x="42" y="43" width="40" height="72"/><rect x="118" y="61" width="40" height="54"/><rect x="194" y="79" width="40" height="36"/><rect x="270" y="97" width="40" height="18"/></g>
 <path d="M34 22V115H323" fill="none" stroke="currentColor"/><path d="M62 79L138 52L214 34L290 25" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
 <g fill="currentColor" text-anchor="middle" font-size="12"><text x="62" y="132">配送</text><text x="138" y="132">商品</text><text x="214" y="132">案内</text><text x="290" y="132">その他</text><text x="62" y="72">40%</text><text x="138" y="46">70%</text><text x="214" y="28">90%</text><text x="290" y="19">100%</text><text x="62" y="109">60</text><text x="138" y="109">45</text><text x="214" y="109">30</text><text x="290" y="109">15</text></g></svg><figcaption>架空の問い合わせ。棒内の数値は件数、破線のラベルは累積割合です。</figcaption></figure>
@@ -100,7 +100,7 @@
 
 飲料を詰める工場では、2時間ごとに抜き取った小グループの平均を管理図に記録します。過去の安定時に基づく中心線は500 mL、上方管理限界は502 mL、下方管理限界は498 mLとします。図の5回目は503 mLです。過去と同じばらつきでは起きにくい変化なので、機械調整や測定器の変更を調べます。個々の製品の仕様が495〜505 mLでも、工程に変化が起きた可能性は残ります。抜き取り平均の管理限界と、製品一個に適用する仕様を入れ替えると、答えを誤ります。
 
-<figure><svg viewBox="0 0 422 190" width="422" height="190" style="max-width:100%;height:auto" role="img" aria-label="1から5回の平均は500、501、499、500、503ミリリットル。5回目だけ上方管理限界502を越える"><g fill="currentColor" font-size="13"><text x="6" y="47">502</text><text x="6" y="87">500</text><text x="6" y="127">498</text><text x="24" y="18">mL</text><text x="310" y="47">上方管理限界</text><text x="310" y="87">中心線</text><text x="310" y="127">下方管理限界</text><text x="64" y="155">1</text><text x="118" y="155">2</text><text x="172" y="155">3</text><text x="226" y="155">4</text><text x="280" y="155">5</text><text x="160" y="180">抜取の回</text></g><path d="M36 42h270m-270 40h270m-270 40h270" stroke="currentColor" stroke-dasharray="4 4" opacity=".65"/><path d="M68 82L122 62L176 102L230 82L284 22" fill="none" stroke="currentColor" stroke-width="2"/><g fill="currentColor"><circle cx="68" cy="82" r="4"/><circle cx="122" cy="62" r="4"/><circle cx="176" cy="102" r="4"/><circle cx="230" cy="82" r="4"/><circle cx="284" cy="22" r="6"/></g></svg><figcaption>抜取の平均を時系列で見る管理図。5回目の平均が過去の工程変動から設定した上方管理限界を超えています。</figcaption></figure>
+<figure id="ip-analysis-figure-2"><svg viewBox="0 0 422 190" width="422" height="190" style="max-width:100%;height:auto" role="img" aria-label="1から5回の平均は500、501、499、500、503ミリリットル。5回目だけ上方管理限界502を越える"><g fill="currentColor" font-size="13"><text x="6" y="47">502</text><text x="6" y="87">500</text><text x="6" y="127">498</text><text x="24" y="18">mL</text><text x="310" y="47">上方管理限界</text><text x="310" y="87">中心線</text><text x="310" y="127">下方管理限界</text><text x="64" y="155">1</text><text x="118" y="155">2</text><text x="172" y="155">3</text><text x="226" y="155">4</text><text x="280" y="155">5</text><text x="160" y="180">抜取の回</text></g><path d="M36 42h270m-270 40h270m-270 40h270" stroke="currentColor" stroke-dasharray="4 4" opacity=".65"/><path d="M68 82L122 62L176 102L230 82L284 22" fill="none" stroke="currentColor" stroke-width="2"/><g fill="currentColor"><circle cx="68" cy="82" r="4"/><circle cx="122" cy="62" r="4"/><circle cx="176" cy="102" r="4"/><circle cx="230" cy="82" r="4"/><circle cx="284" cy="22" r="6"/></g></svg><figcaption>抜取の平均を時系列で見る管理図。5回目の平均が過去の工程変動から設定した上方管理限界を超えています。</figcaption></figure>
 
 調査では原料切替時刻と機械の設定を確認します。限界内でも同じ側に連続して偏るなど、ランダムな変動として説明しにくい並びは調べる価値があります。管理図は「いつ工程の変化を調べるか」に向きます。どの量の製品が最も多いかを一時点で知りたいなら、測定値を区間に分けて頻度を数えるヒストグラムを使います。
 
@@ -158,4 +158,53 @@
 
 改善前は全体の差戻しが30件、改善後は28件でした。件数が減っていても、受付が600件から400件に減っていれば率は5％から7％へ悪化しています。次に受付、書類の分類、審査、通知を図にして、どの工程の差戻しが増えたかを調べます。時間帯や店舗ごとの構成が変わるなら、比較対象をそろえて計算します。毎回の標本数が同じか、割合を用いるのか平均値を用いるのかによって管理図の選び方も変わります。
 
-<figure><svg viewBox="0 0 328 160" width="328" height="160" style="max-width:100%;height:auto" role="img" aria-label="差戻し率は改善前5パーセント、改善後7パーセント。差戻し件数は30件から28件に減った。"><g fill="none" stroke="currentColor"><path d="M44 10v111h262"/><path d="M44 23h262m-262 49h262" stroke-dasharray="4 3" opacity=".5"/></g><g fill="currentColor" fill-opacity=".25" stroke="currentColor"><rect x="91" y="60" width="50" height="61"/><rect x="207" y="35" width="50" height="86"/></g><g fill="currentColor" font-size="13"><text x="12" y="28">8％</text><text x="12" y="76">4％</text><text x="14" y="125">0</text><text x="105" y="53">5％</text><text x="220" y="28">7％</text><text x="92" y="144">改善前</text><text x="207" y="144">改善後</text></g></svg><figcaption>件数が30件から28件に減っても、分母を使って比較すると差戻し率は上がっています。</figcaption></figure>
+<figure id="ip-analysis-figure-3"><svg viewBox="0 0 328 160" width="328" height="160" style="max-width:100%;height:auto" role="img" aria-label="差戻し率は改善前5パーセント、改善後7パーセント。差戻し件数は30件から28件に減った。"><g fill="none" stroke="currentColor"><path d="M44 10v111h262"/><path d="M44 23h262m-262 49h262" stroke-dasharray="4 3" opacity=".5"/></g><g fill="currentColor" fill-opacity=".25" stroke="currentColor"><rect x="91" y="60" width="50" height="61"/><rect x="207" y="35" width="50" height="86"/></g><g fill="currentColor" font-size="13"><text x="12" y="28">8％</text><text x="12" y="76">4％</text><text x="14" y="125">0</text><text x="105" y="53">5％</text><text x="220" y="28">7％</text><text x="92" y="144">改善前</text><text x="207" y="144">改善後</text></g></svg><figcaption>件数が30件から28件に減っても、分母を使って比較すると差戻し率は上がっています。</figcaption></figure>
+
+<span id="ip-analysis-decision-section"></span>
+
+## 割合の変化を、各種類の変化と構成の変化に分ける
+
+前後の集計で全体の率が変わったら、まず測定期間、分母、欠測の扱いをそろえます。条件をそろえても、全体に占める仕事の種類が変わると、各種類の率が動いた向きと全体の率が動いた向きが異なる場合があります。種類ごとの率を求めた後、同じ種類構成にそろえた集計を補助的に行うと、現場の改善と仕事構成の変化を区別できます。実際の全体の率は負荷の把握に、同じ構成での率は前後比較に使うので、資料には両方の意味を明記します。
+
+<figure id="ip-analysis-worked-decision">
+<figcaption id="ip-analysis-worked-decision-caption">処理した注文と誤りの数</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-analysis-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">注文の種類</th><th scope="col">前月</th><th scope="col">今月</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">通常</th><td>300件のうち6件</td><td>100件のうち1件</td></tr>
+    <tr><th scope="row">特注</th><td>100件のうち10件</td><td>300件のうち24件</td></tr>
+    <tr><th scope="row">全体</th><td>400件のうち16件</td><td>400件のうち25件</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+通常注文は2％から1％、特注は10％から8％に下がっています。一方、全体は4％から6.25％に上昇しました。率の高い特注が4分の1から4分の3へ増えたためです。前月と同じ構成にそろえると、今月の率は通常1％×0.75＋特注8％×0.25＝2.75％。前月の4％より低くなります。ただし、この計算だけで施策による改善と断定するには、担当や設備など他の条件が変わっていないかの確認が残ります。
+
+<section class="guided-lesson" id="ip-analysis-guided-transfer" aria-labelledby="ip-analysis-guided-transfer-title">
+<h3 id="ip-analysis-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-analysis-guided-transfer-prompt">今月の通常1％、特注8％が続くとします。通常と特注が同じ件数なら、率はどれですか。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="今回は二種類の件数が同じです。前月や今月の実際の件数で重みを付けません。" aria-labelledby="ip-analysis-guided-transfer-title" aria-describedby="ip-analysis-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-analysis-guided-transfer-1"><input type="radio" id="ip-analysis-guided-transfer-1" name="answer" value="1"> 2.75％</label><br>
+<label for="ip-analysis-guided-transfer-2"><input type="radio" id="ip-analysis-guided-transfer-2" name="answer" value="2"> 4.5％</label><br>
+<label for="ip-analysis-guided-transfer-3"><input type="radio" id="ip-analysis-guided-transfer-3" name="answer" value="3"> 6.25％</label><br>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>1％と8％を半分ずつ加えるので4.5％です。2.75％は前月の構成、6.25％は今月の実績の構成で計算した値です。</p>
+</details>
+</section>
+
+<span id="ip-analysis-decision-independent"></span>
+
+### 自分で判断する
+
+A窓口は受付100件中5件の苦情、B窓口は受付200件中6件の苦情でした。Bの受付件数に取下げになった70件が含まれ、Aの受付件数では同じ扱いの件を初めから除いています。どちらの数字を直し、何を比較すべきでしょうか。
+
+<details><summary>考え方と答えを確認する</summary><p>両窓口の分母を取下げを除いた対象に合わせます。取下げ案件の苦情が分子に含まれないと確認できれば、Bの率は6÷130≒4.62％、Aは5％です。苦情が取下げ案件にもあるなら、分子を先に照合してから計算します。集計対象が違うままの6÷200は揃えた比較に使えません。</p></details>

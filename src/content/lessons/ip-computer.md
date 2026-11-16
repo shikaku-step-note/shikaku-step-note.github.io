@@ -7,7 +7,7 @@
   'order': 26,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 15,
   'syllabus': [40, 41, 42],
   'objectives': ['主要装置の役割と記憶階層を説明する', '単純な処理時間を計算する'],
@@ -63,7 +63,7 @@ USB、HDMI、Bluetoothなどは接続の用途や仕様が異なります。コ�
 
 写真100枚の処理で、画像1枚をSSDから読むのに4 ms、CPUで変換するのに6 ms、結果を書き出すのに2 msかかるとします。3工程を重ねず1枚ずつ終えるなら1枚12 ms、100枚で1,200 msです。CPUだけを倍速にしても6 msが3 msになるだけで、全体は900 msです。速くできる部分と変わらない部分を分けてから、全体の改善を見積もります。工程を重ねて進める機械なら、問題の条件が変わるため同じ足し算をそのまま使えません。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="SSDから読込：4 ms、主記憶上の画像をCPUで変換：6 ms、SSDへ書出し：2 ms、直列の合計：1枚12 ms"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">SSDから読込：4 ms</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">主記憶上の画像をCPUで変換：6 ms</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">SSDへ書出し：2 ms</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">直列の合計：1枚12 ms</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>CPUを変更しても入出力時間はそのままです。合計を作る工程を先に書き出します。</figcaption></figure>
+<figure id="ip-computer-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="SSDから読込：4 ms、主記憶上の画像をCPUで変換：6 ms、SSDへ書出し：2 ms、直列の合計：1枚12 ms"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">SSDから読込：4 ms</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">主記憶上の画像をCPUで変換：6 ms</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">SSDへ書出し：2 ms</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">直列の合計：1枚12 ms</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>CPUを変更しても入出力時間はそのままです。合計を作る工程を先に書き出します。</figcaption></figure>
 
 CPUは命令を実行し、主記憶は実行中の命令やデータを保持します。キャッシュは頻繁に使うデータをCPUの近くに置く小さく速い領域です。同じデータを繰り返し読む場面では、主記憶へ毎回アクセスするより待ちを減らせます。逆に、長いデータを一度ずつ読むだけなら、同じキャッシュ領域を再利用しにくくなります。計算中だけ保持する主記憶と、電源を切った後も残すSSDなどの補助記憶は、性能と役割を別々に見ます。
 
@@ -77,7 +77,7 @@ CPUは命令を実行し、主記憶は実行中の命令やデータを保持�
 
 画像を加工する作業に10秒かかりました。CPUの周波数が2倍の機種なら5秒になるでしょうか。ファイルを読み出す時間と計算する時間を別に測るところから考えます。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="取り込む、入力装置から主記憶へ。計算する、CPUが命令とデータを読む。途中結果、主記憶に展開・キャッシュ。保存する、補助記憶へ書き戻す"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">取り込む</text><text x="126" y="29" fill="currentColor" font-size="14">入力装置から主記憶へ</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">計算する</text><text x="126" y="83" fill="currentColor" font-size="14">CPUが命令とデータを読む</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">途中結果</text><text x="126" y="137" fill="currentColor" font-size="14">主記憶に展開・キャッシュ</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">保存する</text><text x="126" y="191" fill="currentColor" font-size="14">補助記憶へ書き戻す</text></svg><figcaption>処理には計算以外に入出力もあります。どこに時間がかかるかを順に確認します。</figcaption></figure>
+<figure id="ip-computer-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="取り込む、入力装置から主記憶へ。計算する、CPUが命令とデータを読む。途中結果、主記憶に展開・キャッシュ。保存する、補助記憶へ書き戻す"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">取り込む</text><text x="126" y="29" fill="currentColor" font-size="14">入力装置から主記憶へ</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">計算する</text><text x="126" y="83" fill="currentColor" font-size="14">CPUが命令とデータを読む</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">途中結果</text><text x="126" y="137" fill="currentColor" font-size="14">主記憶に展開・キャッシュ</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">保存する</text><text x="126" y="191" fill="currentColor" font-size="14">補助記憶へ書き戻す</text></svg><figcaption>処理には計算以外に入出力もあります。どこに時間がかかるかを順に確認します。</figcaption></figure>
 
 <span id="computer-textbook-skill-1"></span>
 
@@ -112,3 +112,22 @@ USBの理論上の帯域が十分でも、保存先の装置が遅いと全体�
 </details>
 
 **復習の目安**　周波数、メモリ階層、転送単位と処理全体の時間を結び付けて説明できます。
+
+<section class="guided-lesson" id="guided-ip-computer" aria-labelledby="ip-computer-guided-title">
+<h3 id="ip-computer-guided-title">途中で確認　キャッシュの役割</h3>
+<p id="ip-computer-guided-prompt">同じ集計を2回実行すると、2回目だけ同じデータの読込みが速くなりました。CPUの周波数も処理の手順も同じです。最初に着目する説明はどれですか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="変わったのは2回目の読込みです。同じデータをどこから取得したかに着目します。" aria-labelledby="ip-computer-guided-title" aria-describedby="ip-computer-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-computer-guided-answer" value="choice-2"> CPUの命令の種類が、実行のたびに切り替わった</label>
+<label><input type="radio" name="ip-computer-guided-answer" value="correct"> データの一部が、より近く高速な記憶領域に残っていた</label>
+<label><input type="radio" name="ip-computer-guided-answer" value="choice-1"> 2回目だけ記憶容量の上限が増えた</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>直前に使ったデータがキャッシュに残っていれば、遠い領域から取り直さずに済みます。記憶容量や命令の種類まで変わったと判断するには、別の根拠が必要です。</p>
+</details>
+</section>

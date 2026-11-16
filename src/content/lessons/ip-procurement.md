@@ -7,7 +7,7 @@
   'order': 14,
   'minutes': 105,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 7,
   'syllabus': [22, 23, 24],
   'objectives': ['業務要件と非機能要件を整理する', 'RFIとRFPを使い分ける'],
@@ -71,7 +71,7 @@
 
 システム化計画では、予約機能を先行し、保守契約は後で範囲を分ける、紙受付を一定期間残すなど、対象範囲、体制、費用、リスクを決めます。業務要件を定義するときは、誰が使い、どんなデータを入力し、誰が承認するかを現状調査から洗い出します。予約を取消せる期限、代理予約の扱い、通信障害時の窓口のように、通常ケース以外で運用を続けられるかも考えます。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="現状メモの問題、昼に並ぶ・予約が重なる。提案依頼書の要件、同時利用時も重複を確定できない。受入試験の観測、同じ枠へ同時に二件送る"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">現状メモの問題</text><text x="200" y="43">昼に並ぶ・予約が重なる</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">提案依頼書の要件</text><text x="200" y="106">同時利用時も重複を確定できない</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">受入試験の観測</text><text x="200" y="169">同じ枠へ同時に二件送る</text></g></svg><figcaption>現状メモを課題の記述で止めず、提案依頼と受入の判定につなげます。</figcaption></figure>
+<figure id="ip-procurement-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="現状メモの問題、昼に並ぶ・予約が重なる。提案依頼書の要件、同時利用時も重複を確定できない。受入試験の観測、同じ枠へ同時に二件送る"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">現状メモの問題</text><text x="200" y="43">昼に並ぶ・予約が重なる</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">提案依頼書の要件</text><text x="200" y="106">同時利用時も重複を確定できない</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">受入試験の観測</text><text x="200" y="169">同じ枠へ同時に二件送る</text></g></svg><figcaption>現状メモを課題の記述で止めず、提案依頼と受入の判定につなげます。</figcaption></figure>
 
 ### 初期費用が安い提案をそのまま採用しない
 
@@ -142,3 +142,51 @@ AIを使う分析サービスを調達するときは、利用者が提供する
 担当者は「月末にもスムーズに締め処理したい」と話しました。調査の結果、月末は明細が最大8万件で、集計結果を18時までに確認する必要があると分かりました。機能要件は対象月の明細を集計し、明細と合計を確認できることです。非機能要件には、例えば明細8万件の集計が所定の環境で30分以内に終わることを入れます。実データには欠損や重複があるかを調べ、エラーの扱いも合意します。
 
 利用者が対象の部門を追加したら、明細件数、締め時刻、試験に使うデータ、移行期間に影響が出るかを比較します。追加の機能に合意しただけで、試験条件を古いままにすると、新しい負荷での性能を確かめられません。
+
+<span id="ip-procurement-decision-section"></span>
+
+## 要件を満たす条件を先にそろえ、提案費用を比べる
+
+提案を比べるときは、見積りに書かれた金額の前に、すべての案が同じ要件を満たす状態になっているかを確認します。必要な機能が追加契約になっていれば、その費用も同じ期間に加えます。書類で要件と見積りをそろえたら、受入試験で提出物や動作を確認できるかも見ます。価格の安さだけで決めると、導入後に必須機能の追加や移行のやり直しが発生しやすくなります。
+
+<figure id="ip-procurement-worked-decision">
+<figcaption id="ip-procurement-worked-decision-caption">保存期間が5年という必須要件に対する提案（万円）</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-procurement-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">項目</th><th scope="col">提案A</th><th scope="col">提案B</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">導入費</th><td>25</td><td>35</td></tr>
+    <tr><th scope="row">1年当たりの運用費</th><td>10</td><td>9</td></tr>
+    <tr><th scope="row">保存要件を満たす追加費</th><td>初年度に16</td><td>基本料金に含む</td></tr>
+    <tr><th scope="row">保存期間の確認方法</th><td>追加契約の設定を受入試験で確認</td><td>標準設定を受入試験で確認</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+3年間の比較ではAが25＋10×3＋16＝71万円、Bが35＋9×3＝62万円です。保存に必要な追加費用16万円をAから外すと55万円となり、結論が逆転しますが、その場合は5年の保存という必須条件を満たしていません。要件自体を変更する場合は、依頼側で理由と影響を記録し、全ての案へ同じ変更を適用してから比較し直します。
+
+<section class="guided-lesson" id="ip-procurement-guided-transfer" aria-labelledby="ip-procurement-guided-transfer-title">
+<h3 id="ip-procurement-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-procurement-guided-transfer-prompt">3年でなく4年の費用を比べます。ほかは同じ条件のとき、安い方の費用は何万円ですか。</p>
+<form data-guided-practice data-expected="71" data-guided-hint="双方の年額を4倍します。Aの一回だけの追加費用も忘れずに加えます。" aria-labelledby="ip-procurement-guided-transfer-title" aria-describedby="ip-procurement-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-procurement-guided-transfer-input">答え（万円）</label> <input id="ip-procurement-guided-transfer-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>Aは25＋10×4＋16＝81万円です。Bは35＋9×4＝71万円なので、Bが安くなります。</p>
+</details>
+</section>
+
+<span id="ip-procurement-decision-independent"></span>
+
+### 自分で判断する
+
+提案Cは4年の費用が68万円ですが、受入時に検索はできても、契約終了時に記録を一括して取り出せるかの記述がありません。一括取得が必須の場合、価格比較をどう進めますか。
+
+<details><summary>考え方と答えを確認する</summary><p>一括取得を受入条件に入れ、形式、件数、実施方法を確認します。Cに機能や作業を含む見積りを求め、取得の条件を満たせることを試験した案同士で費用を比較します。必要な費用が不明な状態では68万円から結論を出せません。</p></details>

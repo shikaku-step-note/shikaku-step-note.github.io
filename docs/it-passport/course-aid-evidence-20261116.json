@@ -1,0 +1,2256 @@
+{
+  "syllabus": {
+    "id": "syllabus",
+    "title": "IPA：ITパスポート試験 シラバス Ver.6.5",
+    "url": "https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf",
+    "version": "2026年1月版・現行範囲",
+    "verified": "2026-11-16"
+  },
+  "status": "Mapping for 63 numbered syllabus entries. Illustrative terms are not a count of separately validated test objectives. See the three field audits for instructional and assessment evidence.",
+  "fieldAudits": [
+    "strategy-objective-audit.md",
+    "management-release-audit.md",
+    "technology-chapter-audit.md"
+  ],
+  "counts": {
+    "lessons": 41,
+    "units": 23,
+    "numberedItems": 63,
+    "figures": 103,
+    "guidedPractice": 41,
+    "minutes": 3030
+  },
+  "itemToLessons": {
+    "1": [
+      "ip-organization"
+    ],
+    "2": [
+      "ip-analysis",
+      "ip-reading-business-data",
+      "ip-release-decision"
+    ],
+    "3": [
+      "ip-finance",
+      "ip-reading-business-data"
+    ],
+    "4": [
+      "ip-rights"
+    ],
+    "5": [
+      "ip-law-ethics"
+    ],
+    "6": [
+      "ip-law-ethics"
+    ],
+    "7": [
+      "ip-law-ethics"
+    ],
+    "8": [
+      "ip-standards"
+    ],
+    "9": [
+      "ip-strategy"
+    ],
+    "10": [
+      "ip-marketing"
+    ],
+    "11": [
+      "ip-strategy"
+    ],
+    "12": [
+      "ip-marketing"
+    ],
+    "13": [
+      "ip-tech-business"
+    ],
+    "14": [
+      "ip-tech-business"
+    ],
+    "15": [
+      "ip-engineering-iot"
+    ],
+    "16": [
+      "ip-ecommerce"
+    ],
+    "17": [
+      "ip-engineering-iot"
+    ],
+    "18": [
+      "ip-system-strategy"
+    ],
+    "19": [
+      "ip-system-strategy"
+    ],
+    "20": [
+      "ip-system-strategy"
+    ],
+    "21": [
+      "ip-system-strategy"
+    ],
+    "22": [
+      "ip-procurement"
+    ],
+    "23": [
+      "ip-procurement",
+      "ip-release-decision"
+    ],
+    "24": [
+      "ip-procurement"
+    ],
+    "25": [
+      "ip-development",
+      "ip-release-decision"
+    ],
+    "26": [
+      "ip-agile"
+    ],
+    "27": [
+      "ip-project",
+      "ip-reading-project-plans"
+    ],
+    "28": [
+      "ip-services",
+      "ip-release-decision"
+    ],
+    "29": [
+      "ip-services"
+    ],
+    "30": [
+      "ip-services"
+    ],
+    "31": [
+      "ip-audit"
+    ],
+    "32": [
+      "ip-audit"
+    ],
+    "33": [
+      "ip-binary"
+    ],
+    "34": [
+      "ip-statistics"
+    ],
+    "35": [
+      "ip-ai-data"
+    ],
+    "36": [
+      "ip-algorithms"
+    ],
+    "37": [
+      "ip-algorithms"
+    ],
+    "38": [
+      "ip-languages"
+    ],
+    "39": [
+      "ip-languages"
+    ],
+    "40": [
+      "ip-computer"
+    ],
+    "41": [
+      "ip-computer"
+    ],
+    "42": [
+      "ip-computer"
+    ],
+    "43": [
+      "ip-architecture"
+    ],
+    "44": [
+      "ip-architecture"
+    ],
+    "45": [
+      "ip-os-files"
+    ],
+    "46": [
+      "ip-os-files"
+    ],
+    "47": [
+      "ip-office-oss",
+      "ip-reading-spreadsheets"
+    ],
+    "48": [
+      "ip-office-oss"
+    ],
+    "49": [
+      "ip-hardware"
+    ],
+    "50": [
+      "ip-design"
+    ],
+    "51": [
+      "ip-design"
+    ],
+    "52": [
+      "ip-media"
+    ],
+    "53": [
+      "ip-media"
+    ],
+    "54": [
+      "ip-database"
+    ],
+    "55": [
+      "ip-database"
+    ],
+    "56": [
+      "ip-sql-transactions"
+    ],
+    "57": [
+      "ip-sql-transactions"
+    ],
+    "58": [
+      "ip-network"
+    ],
+    "59": [
+      "ip-protocols"
+    ],
+    "60": [
+      "ip-protocols"
+    ],
+    "61": [
+      "ip-security-risk"
+    ],
+    "62": [
+      "ip-security-risk"
+    ],
+    "63": [
+      "ip-security-controls",
+      "ip-cryptography",
+      "ip-release-decision"
+    ]
+  },
+  "lessons": [
+    {
+      "id": "ip-organization",
+      "step": 1,
+      "unit": 1,
+      "minutes": 90,
+      "title": "企業活動と組織・PDCA",
+      "syllabusItems": [
+        1
+      ],
+      "objectives": [
+        "経営資源と組織の役割を説明する",
+        "PDCAとBCPを業務に当てはめる"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-organization-existing-visual",
+          "type": "diagram",
+          "caption": "地域責任者と商品責任者の指示は同じ担当者に届きます。稼働時間と優先順位が競合する場合の決定手続を設けます。"
+        },
+        {
+          "anchor": "ip-organization-worked-decision",
+          "type": "table",
+          "caption": "問い合わせ受付で判断する人"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-organization-guided-transfer-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-organization-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-analysis",
+      "step": 2,
+      "unit": 1,
+      "minutes": 105,
+      "title": "業務分析とデータの可視化",
+      "syllabusItems": [
+        2
+      ],
+      "objectives": [
+        "分析の目的に合う図を選ぶ",
+        "相関と因果を区別する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-analysis-existing-visual",
+          "type": "diagram",
+          "caption": "架空の問い合わせ。棒内の数値は件数、破線のラベルは累積割合です。"
+        },
+        {
+          "anchor": "ip-analysis-figure-2",
+          "type": "diagram",
+          "caption": "抜取の平均を時系列で見る管理図。5回目の平均が過去の工程変動から設定した上方管理限界を超えています。"
+        },
+        {
+          "anchor": "ip-analysis-figure-3",
+          "type": "diagram",
+          "caption": "件数が30件から28件に減っても、分母を使って比較すると差戻し率は上がっています。"
+        },
+        {
+          "anchor": "ip-analysis-worked-decision",
+          "type": "table",
+          "caption": "処理した注文と誤りの数"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-analysis-guided-transfer-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-analysis-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-finance",
+      "step": 3,
+      "unit": 1,
+      "minutes": 105,
+      "title": "会計・財務と損益分岐点",
+      "syllabusItems": [
+        3
+      ],
+      "objectives": [
+        "財務三表の役割を区別する",
+        "利益と損益分岐点を計算する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-finance-existing-visual",
+          "type": "diagram",
+          "caption": "販売したときに計上した売掛金は、翌月の回収で現金に変わります。売上を二重には計上しません。"
+        },
+        {
+          "anchor": "ip-finance-figure-2",
+          "type": "diagram",
+          "caption": "長さ1目盛り当たりの金額をそろえて比較しています。月初現金と入金だけでは支払の全額に届きません。"
+        },
+        {
+          "anchor": "ip-finance-worked-decision",
+          "type": "table",
+          "caption": "現金で支払う設備案（万円）"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-finance-guided-transfer-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-finance-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-reading-business-data",
+      "step": 4,
+      "unit": 1,
+      "minutes": 45,
+      "title": "経営データの読解演習：改善案を数字で選ぶ",
+      "syllabusItems": [
+        2,
+        3
+      ],
+      "objectives": [
+        "比較すべき母数を自分で決める",
+        "利益の増減を求め、改善案の条件を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-reading-business-data-existing-visual",
+          "type": "diagram",
+          "caption": "注文1件当たりの率を同じ尺度で比べます。表の件数順位と図の率順位が異なる点に注目してください。"
+        },
+        {
+          "anchor": "ip-reading-business-data-worked-decision",
+          "type": "table",
+          "caption": "翌月の改善案を比べるための二つの資料"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-reading-business-data-guided-transfer-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-reading-business-data-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-rights",
+      "step": 5,
+      "unit": 2,
+      "minutes": 85,
+      "title": "知的財産権とソフトウェアの利用",
+      "syllabusItems": [
+        4
+      ],
+      "objectives": [
+        "保護対象に合う権利を選ぶ",
+        "利用許諾と著作権を区別する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-rights-existing-visual",
+          "type": "diagram",
+          "caption": "一つの製品でも、保護したい対象を選ぶと参照する制度が変わります。"
+        },
+        {
+          "anchor": "ip-rights-worked-decision",
+          "type": "table",
+          "caption": "社内向け研修資料を公開する前の確認票"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-rights-guided-transfer-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-rights-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-law-ethics",
+      "step": 6,
+      "unit": 2,
+      "minutes": 105,
+      "title": "情報・労働・取引の法律と倫理",
+      "syllabusItems": [
+        5,
+        6,
+        7
+      ],
+      "objectives": [
+        "身近な行動と関連する法律を結び付ける",
+        "個人情報の目的と第三者提供を考える"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-law-ethics-existing-visual",
+          "type": "diagram",
+          "caption": "データの扱いは、利用目的、役割、共有する項目の順に絞り込みます。"
+        },
+        {
+          "anchor": "ip-law-ethics-worked-decision",
+          "type": "table",
+          "caption": "相談窓口で確認したい情報の範囲（架空例）"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-law-ethics-guided-transfer-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-law-ethics-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-standards",
+      "step": 7,
+      "unit": 2,
+      "minutes": 80,
+      "title": "標準化と互換性",
+      "syllabusItems": [
+        8
+      ],
+      "objectives": [
+        "公的標準と事実上の標準を区別する",
+        "標準化の効果と限界を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-standards-existing-visual",
+          "type": "diagram",
+          "caption": "CSVの合意は書式、値の意味、異常時の振舞いまで行い、両者で同じ例を試します。"
+        },
+        {
+          "anchor": "ip-standards-worked-decision",
+          "type": "table",
+          "caption": "二つのシステムで照合するデータ"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-standards-guided-transfer-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-standards-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-strategy",
+      "step": 8,
+      "unit": 3,
+      "minutes": 105,
+      "title": "経営戦略と目標・評価",
+      "syllabusItems": [
+        9,
+        11
+      ],
+      "objectives": [
+        "戦略分析の軸を使い分ける",
+        "KGIとKPIを結び付ける"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-strategy-existing-visual",
+          "type": "diagram",
+          "caption": "市場の好材料は、資源と実行体制を確認してから投資判断につなげます。"
+        },
+        {
+          "anchor": "ip-strategy-figure-2",
+          "type": "diagram",
+          "caption": "例の二事業の位置を示したPPMの概念図です。成長率と相対シェアをそれぞれの基準で判断します。点は正確な目盛り上の位置を示すものではありません。"
+        },
+        {
+          "anchor": "ip-strategy-worked-decision",
+          "type": "table",
+          "caption": "有料契約の獲得施策を評価する"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-strategy-guided-transfer-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-strategy-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-marketing",
+      "step": 9,
+      "unit": 3,
+      "minutes": 95,
+      "title": "マーケティングと経営管理システム",
+      "syllabusItems": [
+        10,
+        12
+      ],
+      "objectives": [
+        "STPと4Pを使って施策を整理する",
+        "ERP・SCM・CRMの役割を区別する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-marketing-existing-visual",
+          "type": "diagram",
+          "caption": "顧客層を決めた後、その人に何を価値として伝えるかを決めます。"
+        },
+        {
+          "anchor": "ip-marketing-figure-2",
+          "type": "diagram",
+          "caption": "同じ販売施策でも、どの段階に課題があるかで比較する分母が変わります。"
+        },
+        {
+          "anchor": "ip-marketing-worked-decision",
+          "type": "table",
+          "caption": "同じ商品の広告を二つの経路で比較する"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-marketing-guided-transfer-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-marketing-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-tech-business",
+      "step": 10,
+      "unit": 4,
+      "minutes": 90,
+      "title": "技術戦略とビジネスシステム",
+      "syllabusItems": [
+        13,
+        14
+      ],
+      "objectives": [
+        "技術ロードマップと研究開発を説明する",
+        "事業に合うシステムの役割を選ぶ"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-tech-business-existing-visual",
+          "type": "diagram",
+          "caption": "画像検査を事業化するには、実験で測る条件から、現場で維持できる条件へと確かめる範囲を広げます。"
+        },
+        {
+          "anchor": "ip-tech-business-worked-decision",
+          "type": "table",
+          "caption": "遠隔点検の試験に置いた判断条件"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-tech-business-guided-transfer-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-tech-business-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-engineering-iot",
+      "step": 11,
+      "unit": 5,
+      "minutes": 95,
+      "title": "生産・設計とIoTシステム",
+      "syllabusItems": [
+        15,
+        17
+      ],
+      "objectives": [
+        "設計と生産を支えるシステムを区別する",
+        "IoTの計測・通信・制御を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-engineering-iot-existing-visual",
+          "type": "diagram",
+          "caption": "通信断でも必要な停止の判断は、装置側で行えるようにします。"
+        },
+        {
+          "anchor": "ip-engineering-iot-figure-2",
+          "type": "diagram",
+          "caption": "現場の制御と遠隔監視を分けると、通信が切れたときに残る機能を判断できます。"
+        },
+        {
+          "anchor": "ip-engineering-iot-figure-3",
+          "type": "diagram",
+          "caption": "実線は現場で完結する経路、破線は遠隔集計へ記録を送る経路です。破線の経路が止まったときに影響する処理を確かめます。"
+        },
+        {
+          "anchor": "ip-engineering-iot-worked-decision",
+          "type": "table",
+          "caption": "組立日までに使える部品Pを確認する"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-engineering-iot-guided-transfer-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-engineering-iot-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-ecommerce",
+      "step": 12,
+      "unit": 5,
+      "minutes": 85,
+      "title": "eビジネスとデジタルサービス",
+      "syllabusItems": [
+        16
+      ],
+      "objectives": [
+        "取引の組合せと事業モデルを区別する",
+        "電子商取引の指標を計算する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-ecommerce-existing-visual",
+          "type": "diagram",
+          "caption": "受注、決済、出荷は独立して記録し、注文番号で関係付けます。"
+        },
+        {
+          "anchor": "ip-ecommerce-worked-decision",
+          "type": "table",
+          "caption": "同じ注文について照合する三つの記録"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-ecommerce-guided-transfer-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-ecommerce-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-system-strategy",
+      "step": 13,
+      "unit": 6,
+      "minutes": 105,
+      "title": "情報システム戦略と業務プロセス",
+      "syllabusItems": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "objectives": [
+        "全体最適と業務改革を説明する",
+        "クラウド等の利用形態を比較する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-system-strategy-existing-visual",
+          "type": "diagram",
+          "caption": "紙から台帳への転記をなくしても、在庫確認に時間がかかるなら全体の待ちは残ります。"
+        },
+        {
+          "anchor": "ip-system-strategy-worked-decision",
+          "type": "table",
+          "caption": "オンライン申請の試行で記録した人数"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-system-strategy-guided-transfer-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-system-strategy-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-procurement",
+      "step": 14,
+      "unit": 7,
+      "minutes": 105,
+      "title": "システム化計画・要件定義・調達",
+      "syllabusItems": [
+        22,
+        23,
+        24
+      ],
+      "objectives": [
+        "業務要件と非機能要件を整理する",
+        "RFIとRFPを使い分ける"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-procurement-existing-visual",
+          "type": "diagram",
+          "caption": "現状メモを課題の記述で止めず、提案依頼と受入の判定につなげます。"
+        },
+        {
+          "anchor": "ip-procurement-worked-decision",
+          "type": "table",
+          "caption": "保存期間が5年という必須要件に対する提案（万円）"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-procurement-guided-transfer-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-procurement-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-development",
+      "step": 15,
+      "unit": 8,
+      "minutes": 60,
+      "title": "システム開発とテスト・移行",
+      "syllabusItems": [
+        25
+      ],
+      "objectives": [
+        "開発工程とテストの目的を区別する",
+        "安全な移行と保守を計画する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-development-test-scope",
+          "type": "diagram",
+          "caption": "同じ予約取消でも、判定部品、部品間の連携、利用現場の業務では、それぞれ確認する範囲が異なります。"
+        },
+        {
+          "anchor": "ip-development-requirement-acceptance",
+          "type": "diagram",
+          "caption": "承認した要求を、受入時に検証できる条件に落とし込みます。"
+        },
+        {
+          "anchor": "ip-development-worked-evidence",
+          "type": "table",
+          "caption": "受入れ判定に必要な照合"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-development-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-development-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-agile",
+      "step": 16,
+      "unit": 9,
+      "minutes": 55,
+      "title": "開発プロセス・アジャイルとDevOps",
+      "syllabusItems": [
+        26
+      ],
+      "objectives": [
+        "ウォーターフォールと反復開発を比較する",
+        "アジャイルの役割と継続的な改善を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-agile-scrum-feedback",
+          "type": "diagram",
+          "caption": "成果を見て次に作るものを調整し、作業の進め方を振り返って次の反復に生かします。"
+        },
+        {
+          "anchor": "ip-agile-worked-evidence",
+          "type": "table",
+          "caption": "判断ごとに、結果から分かる範囲を確かめる"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-agile-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-agile-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-project",
+      "step": 17,
+      "unit": 10,
+      "minutes": 65,
+      "title": "プロジェクト管理とクリティカルパス",
+      "syllabusItems": [
+        27
+      ],
+      "objectives": [
+        "WBSとスケジュールを関連付ける",
+        "制約とリスクを踏まえて計画する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-project-parallel-paths",
+          "type": "diagram",
+          "caption": "Aの後でBとCが分かれます。EはBとDの完了を待って始めます。長い方の経路が全体の最短日数を決めます。"
+        },
+        {
+          "anchor": "ip-project-gantt-float",
+          "type": "diagram",
+          "caption": "各行は最早開始で描いています。Cの実線の終端は5日目、点線の終端は7日目。Cを2日ずらしてもDを7日目に開始できます。Eの点線は9日目までです。"
+        },
+        {
+          "anchor": "ip-project-worked-evidence",
+          "type": "table",
+          "caption": "作業順で後続作業の待ち時間が変わる"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-project-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-project-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-reading-project-plans",
+      "step": 18,
+      "unit": 10,
+      "minutes": 50,
+      "title": "工程計画の読解演習：期限までに終わる案を選ぶ",
+      "syllabusItems": [
+        27
+      ],
+      "objectives": [
+        "前進計算と後退計算を行う",
+        "複数の短縮案を比較し、短縮後の経路を確かめる"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-reading-project-plans-project-paths",
+          "type": "diagram",
+          "caption": "合流点Eは、台帳Cと画面確認Dの両方を待ちます。下側だけを先に終えてもEは始まりません。"
+        },
+        {
+          "anchor": "ip-reading-project-plans-worked-evidence",
+          "type": "table",
+          "caption": "短縮した作業を通る経路に日数を反映"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-reading-project-plans-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-reading-project-plans-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-services",
+      "step": 19,
+      "unit": 11,
+      "minutes": 65,
+      "title": "ITサービスと設備・障害対応",
+      "syllabusItems": [
+        28,
+        29,
+        30
+      ],
+      "objectives": [
+        "インシデントと問題を区別する",
+        "SLAと継続的改善を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-services-service-desk-routing",
+          "type": "diagram",
+          "caption": "サービスデスクは最初の窓口です。障害時の復旧と根本原因の調査は別の目的で進め、必要なら並行します。"
+        },
+        {
+          "anchor": "ip-services-power-continuity",
+          "type": "diagram",
+          "caption": "UPSは停電直後の空白を埋め、発電装置は準備後に負荷を担います。図で時間の重なりを確認してください。UPSが4分で切れ、発電装置が6分後から使える条件では、2分の空白が生じます。"
+        },
+        {
+          "anchor": "ip-services-worked-evidence",
+          "type": "table",
+          "caption": "障害記録の重なりを先に整える"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-services-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-services-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-audit",
+      "step": 20,
+      "unit": 12,
+      "minutes": 55,
+      "title": "システム監査と内部統制",
+      "syllabusItems": [
+        31,
+        32
+      ],
+      "objectives": [
+        "監査の独立性と証拠を説明する",
+        "内部統制の目的と限界を理解する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-audit-audit-records",
+          "type": "diagram",
+          "caption": "変更票だけで実際の操作は分かりません。操作履歴と権限情報を照合し、手順が運用されたかを確かめます。"
+        },
+        {
+          "anchor": "ip-audit-audit-evidence-chain",
+          "type": "diagram",
+          "caption": "規程と取引を同じ基準で比較します。規程だけ、またはログだけで結論を出さず、面談や再実施で分からない部分を補います。"
+        },
+        {
+          "anchor": "ip-audit-worked-evidence",
+          "type": "table",
+          "caption": "時刻の逆転と証拠不足は、次に調べることが違う"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-audit-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-audit-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-binary",
+      "step": 21,
+      "unit": 13,
+      "minutes": 70,
+      "title": "2進数・集合と論理演算",
+      "syllabusItems": [
+        33
+      ],
+      "objectives": [
+        "位取りと情報量を計算する",
+        "集合・論理演算を具体例で使う"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-binary-figure-1",
+          "type": "diagram",
+          "caption": "同じ桁数のまま計算する問題では、10進数に戻して表現範囲と比べます。"
+        },
+        {
+          "anchor": "ip-binary-figure-2",
+          "type": "diagram",
+          "caption": "ビット列の意味は、桁数と数値の表現方式を先に確かめてから求めます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-binary-guided-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-binary-check",
+      "competencies": [
+        {
+          "skill": "位取りから基数変換を組み立てる",
+          "teachingAnchor": "binary-textbook-skill-1",
+          "practice": [
+            "ip-binary-textbook-1"
+          ]
+        },
+        {
+          "skill": "借り、桁あふれ、符号の違いを別々に判断する",
+          "teachingAnchor": "binary-textbook-skill-2",
+          "practice": [
+            "ip-binary-textbook-3"
+          ]
+        },
+        {
+          "skill": "条件文を集合へ置き換える",
+          "teachingAnchor": "binary-textbook-skill-3",
+          "practice": [
+            "ip-binary-textbook-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-statistics",
+      "step": 22,
+      "unit": 13,
+      "minutes": 75,
+      "title": "確率・統計とデータの読み方",
+      "syllabusItems": [
+        34
+      ],
+      "objectives": [
+        "代表値と散らばりを説明する",
+        "確率・期待値を計算する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-statistics-figure-1",
+          "type": "diagram",
+          "caption": "正常を引くたび、残りの総数と正常件数が1件減ります。"
+        },
+        {
+          "anchor": "ip-statistics-figure-2",
+          "type": "diagram",
+          "caption": "5分幅の区間で待ち時間の度数を表しています。中央の3区間は0件です。"
+        },
+        {
+          "anchor": "ip-statistics-figure-3",
+          "type": "diagram",
+          "caption": "同じ数字でも、測り方と比べる集団が異なると結論は変わります。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-statistics-guided-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-statistics-check",
+      "competencies": [
+        {
+          "skill": "母集団と標本を決めてから選ぶ",
+          "teachingAnchor": "statistics-textbook-skill-1",
+          "practice": [
+            "ip-statistics-textbook-2"
+          ]
+        },
+        {
+          "skill": "全体の平均を求め直す",
+          "teachingAnchor": "statistics-textbook-skill-2",
+          "practice": [
+            "ip-statistics-textbook-1"
+          ]
+        },
+        {
+          "skill": "代表値とばらつきをセットで読む",
+          "teachingAnchor": "statistics-textbook-skill-3",
+          "practice": [
+            "ip-statistics-transfer-3"
+          ]
+        },
+        {
+          "skill": "回帰と最適化で結論の根拠を分ける",
+          "teachingAnchor": "statistics-textbook-skill-4",
+          "practice": [
+            "ip-statistics-textbook-3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-ai-data",
+      "step": 23,
+      "unit": 13,
+      "minutes": 75,
+      "title": "情報理論・AIと生成AIの活用",
+      "syllabusItems": [
+        35
+      ],
+      "objectives": [
+        "データとAIの学習・評価を区別する",
+        "生成AIの限界と安全な利用を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-ai-data-figure-1",
+          "type": "diagram",
+          "caption": "標本化の間隔と量子化の細かさは、それぞれ時間と値の分解能に影響します。"
+        },
+        {
+          "anchor": "ip-ai-data-figure-2",
+          "type": "diagram",
+          "caption": "学習時は正解とのずれから重みを調整します。運用時に1枚を分類する処理とは分けて考えます。"
+        },
+        {
+          "anchor": "ip-ai-data-figure-3",
+          "type": "diagram",
+          "caption": "機器で取得した記録が評価と運用までつながる過程。精度の数字だけで途中の設計を飛ばさないようにします。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-ai-data-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-ai-data-check",
+      "competencies": [
+        {
+          "skill": "時間の細かさと値の細かさを決める",
+          "teachingAnchor": "ai-data-textbook-skill-1",
+          "practice": [
+            "ip-ai-data-textbook-1"
+          ]
+        },
+        {
+          "skill": "画像の分割単位を決める",
+          "teachingAnchor": "ai-data-textbook-skill-2",
+          "practice": [
+            "ip-ai-data-textbook-3"
+          ]
+        },
+        {
+          "skill": "同じ正解率でも導入判断が違う",
+          "teachingAnchor": "ai-data-textbook-skill-3",
+          "practice": [
+            "ip-ai-data-textbook-2"
+          ]
+        },
+        {
+          "skill": "推論と生成結果を、前提や出典まで確認する",
+          "teachingAnchor": "ai-data-textbook-skill-4",
+          "practice": [
+            "ip-ai-data-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-algorithms",
+      "step": 24,
+      "unit": 14,
+      "minutes": 70,
+      "title": "データ構造とアルゴリズム",
+      "syllabusItems": [
+        36,
+        37
+      ],
+      "objectives": [
+        "順次・分岐・反復を追跡する",
+        "探索とデータ構造を使い分ける"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-algorithms-figure-1",
+          "type": "diagram",
+          "caption": "反復ごとの状態を追うと、初期化の位置と条件の境目を一緒に確かめられます。"
+        },
+        {
+          "anchor": "ip-algorithms-figure-2",
+          "type": "diagram",
+          "caption": "疑似言語の追跡では、条件が真の行と偽の行を分けて書きます。"
+        },
+        {
+          "anchor": "ip-algorithms-branch-trace",
+          "type": "table",
+          "caption": "注文を一行ずつ読んだ直後の累計"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-algorithms-branch-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-algorithms-check",
+      "competencies": [
+        {
+          "skill": "配列を走査し、途中の値が表す意味を言う",
+          "teachingAnchor": "algorithms-textbook-skill-1",
+          "practice": [
+            "ip-algorithms-textbook-1"
+          ]
+        },
+        {
+          "skill": "探索に使う順序を先に確認する",
+          "teachingAnchor": "algorithms-textbook-skill-2",
+          "practice": [
+            "ip-algorithms-textbook-2"
+          ]
+        },
+        {
+          "skill": "データの入出順と探索効率を分ける",
+          "teachingAnchor": "algorithms-textbook-skill-3",
+          "practice": [
+            "ip-algorithms-textbook-3"
+          ]
+        },
+        {
+          "skill": "同じ値のときの規則まで追う",
+          "teachingAnchor": "algorithms-textbook-skill-4",
+          "practice": [
+            "ip-algorithms-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-languages",
+      "step": 25,
+      "unit": 14,
+      "minutes": 60,
+      "title": "プログラム言語・Webとデータ表現",
+      "syllabusItems": [
+        38,
+        39
+      ],
+      "objectives": [
+        "言語の役割を区別する",
+        "HTML・CSS・JSON等の用途を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-languages-figure-1",
+          "type": "diagram",
+          "caption": "同じ入力欄でも、意味・見た目・反応・受付の要件はそれぞれ変更先が異なります。"
+        },
+        {
+          "anchor": "ip-languages-figure-2",
+          "type": "diagram",
+          "caption": "文書の構造、表示、処理、交換は別々に変更できるようにします。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-languages-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-languages-check",
+      "competencies": [
+        {
+          "skill": "構文が合うことと業務上正しいことを分ける",
+          "teachingAnchor": "languages-textbook-skill-1",
+          "practice": [
+            "ip-languages-textbook-1"
+          ]
+        },
+        {
+          "skill": "画面を見て役割を判断する",
+          "teachingAnchor": "languages-textbook-skill-2",
+          "practice": [
+            "ip-languages-transfer-2"
+          ]
+        },
+        {
+          "skill": "翻訳の成功から結果の正しさを推測しない",
+          "teachingAnchor": "languages-textbook-skill-3",
+          "practice": [
+            "ip-languages-textbook-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-computer",
+      "step": 26,
+      "unit": 15,
+      "minutes": 65,
+      "title": "CPU・メモリ・入出力",
+      "syllabusItems": [
+        40,
+        41,
+        42
+      ],
+      "objectives": [
+        "主要装置の役割と記憶階層を説明する",
+        "単純な処理時間を計算する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-computer-figure-1",
+          "type": "diagram",
+          "caption": "CPUを変更しても入出力時間はそのままです。合計を作る工程を先に書き出します。"
+        },
+        {
+          "anchor": "ip-computer-figure-2",
+          "type": "diagram",
+          "caption": "処理には計算以外に入出力もあります。どこに時間がかかるかを順に確認します。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-computer-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-computer-check",
+      "competencies": [
+        {
+          "skill": "1クロックと1命令を混同しない",
+          "teachingAnchor": "computer-textbook-skill-1",
+          "practice": [
+            "ip-computer-textbook-2"
+          ]
+        },
+        {
+          "skill": "時間の内訳から、機器変更後を見積もる",
+          "teachingAnchor": "computer-textbook-skill-2",
+          "practice": [
+            "ip-computer-textbook-1"
+          ]
+        },
+        {
+          "skill": "メモリの階層と保持条件を結び付ける",
+          "teachingAnchor": "computer-textbook-skill-3",
+          "practice": [
+            "ip-computer-textbook-3"
+          ]
+        },
+        {
+          "skill": "インタフェースの単位をそろえてボトルネックを見つける",
+          "teachingAnchor": "computer-textbook-skill-4",
+          "practice": [
+            "ip-computer-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-architecture",
+      "step": 27,
+      "unit": 16,
+      "minutes": 70,
+      "title": "システム構成と信頼性・性能",
+      "syllabusItems": [
+        43,
+        44
+      ],
+      "objectives": [
+        "冗長化と負荷分散を区別する",
+        "稼働率と性能指標を計算する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-architecture-figure-1",
+          "type": "diagram",
+          "caption": "AとBの間は直列、Bの内部は冗長です。同じ電源などの共通原因があれば、独立の仮定を見直します。"
+        },
+        {
+          "anchor": "ip-architecture-figure-2",
+          "type": "diagram",
+          "caption": "受付には入力Aが必要です。記録はB1、B2のどちらかが動いていれば続けられます。"
+        },
+        {
+          "anchor": "ip-architecture-figure-3",
+          "type": "diagram",
+          "caption": "冗長部分と単独部分のうち、どこが止まればサービス全体が止まるかを書きます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-architecture-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-architecture-check",
+      "competencies": [
+        {
+          "skill": "直列と並列の式を条件から組み立てる",
+          "teachingAnchor": "architecture-textbook-skill-1",
+          "practice": [
+            "ip-architecture-textbook-1"
+          ]
+        },
+        {
+          "skill": "稼働率を改善する二つの方法を比較する",
+          "teachingAnchor": "architecture-textbook-skill-2",
+          "practice": [
+            "ip-architecture-textbook-2"
+          ]
+        },
+        {
+          "skill": "仕事を分担する方式と配置を区別する",
+          "teachingAnchor": "architecture-textbook-skill-3",
+          "practice": [
+            "ip-architecture-textbook-3"
+          ]
+        },
+        {
+          "skill": "処理件数と一件の待ちを分けて測る",
+          "teachingAnchor": "architecture-textbook-skill-4",
+          "practice": [
+            "ip-architecture-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-os-files",
+      "step": 28,
+      "unit": 17,
+      "minutes": 60,
+      "title": "OSとファイルシステム",
+      "syllabusItems": [
+        45,
+        46
+      ],
+      "objectives": [
+        "OSの資源管理を説明する",
+        "ファイルの経路と権限を扱う"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-os-files-figure-1",
+          "type": "diagram",
+          "caption": "相対パスは現在位置とセットで読みます。別の場所で実行する場合は到達先を引き直します。"
+        },
+        {
+          "anchor": "ip-os-files-figure-2",
+          "type": "diagram",
+          "caption": "OSは資源へのアクセスを調整します。症状に合わせて対象を切り分けます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-os-files-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-os-files-check",
+      "competencies": [
+        {
+          "skill": "実行中の処理と保存済みファイルを区別する",
+          "teachingAnchor": "os-files-textbook-skill-1",
+          "practice": [
+            "ip-os-files-transfer-1"
+          ]
+        },
+        {
+          "skill": "メモリが足りないときの症状をつなげる",
+          "teachingAnchor": "os-files-textbook-skill-2",
+          "practice": [
+            "ip-os-files-textbook-2"
+          ]
+        },
+        {
+          "skill": "相対パスを一段ずつ移動して確認する",
+          "teachingAnchor": "os-files-textbook-skill-3",
+          "practice": [
+            "ip-os-files-textbook-1"
+          ]
+        },
+        {
+          "skill": "アクセスできない原因を切り分ける",
+          "teachingAnchor": "os-files-textbook-skill-4",
+          "practice": [
+            "ip-os-files-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-office-oss",
+      "step": 29,
+      "unit": 17,
+      "minutes": 65,
+      "title": "オフィスツールとOSS",
+      "syllabusItems": [
+        47,
+        48
+      ],
+      "objectives": [
+        "表計算の参照と集計を説明する",
+        "OSSの利用条件と保守を確認する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-office-oss-figure-1",
+          "type": "diagram",
+          "caption": "変更したい参照と固定したい参照を、コピーする方向ごとに確認します。"
+        },
+        {
+          "anchor": "ip-office-oss-figure-2",
+          "type": "diagram",
+          "caption": "表計算の検証では、コピー先の式を読む方法と、実際の値で戻し算する方法を使えます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-office-oss-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-office-oss-check",
+      "competencies": [
+        {
+          "skill": "参照を移動量で読む",
+          "teachingAnchor": "office-oss-textbook-skill-1",
+          "practice": [
+            "ip-office-oss-textbook-1"
+          ]
+        },
+        {
+          "skill": "集計に含める行を明確にする",
+          "teachingAnchor": "office-oss-textbook-skill-2",
+          "practice": [
+            "ip-office-oss-transfer-2"
+          ]
+        },
+        {
+          "skill": "図と文書の機能を用途から選ぶ",
+          "teachingAnchor": "office-oss-textbook-skill-3",
+          "practice": [
+            "ip-office-oss-transfer-3"
+          ]
+        },
+        {
+          "skill": "ソフトを使う行為と再配布を分ける",
+          "teachingAnchor": "office-oss-textbook-skill-4",
+          "practice": [
+            "ip-office-oss-textbook-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-reading-spreadsheets",
+      "step": 30,
+      "unit": 17,
+      "minutes": 50,
+      "title": "表計算の読解演習：数式を写して検算する",
+      "syllabusItems": [
+        47
+      ],
+      "objectives": [
+        "数式を横・縦にコピーした結果を説明する",
+        "条件付き集計の対象を読み、誤った参照を検算で見つける"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-reading-spreadsheets-figure-1",
+          "type": "diagram",
+          "caption": "売上を求めるとき、数量の列は販売日ごとに動き、単価のB列は同じ行にとどまります。"
+        },
+        {
+          "anchor": "ip-spreadsheets-logical-input",
+          "type": "table",
+          "caption": "注文表と、条件を満たす行の金額"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "guided-ip-spreadsheets-logical-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-reading-spreadsheets-check",
+      "competencies": []
+    },
+    {
+      "id": "ip-hardware",
+      "step": 31,
+      "unit": 18,
+      "minutes": 55,
+      "title": "ハードウェアと用途に合う選択",
+      "syllabusItems": [
+        49
+      ],
+      "objectives": [
+        "機器の用途と制約を説明する",
+        "接続・保守・環境への配慮を考える"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-hardware-figure-1",
+          "type": "diagram",
+          "caption": "接続先の形が一致しても、必要な信号が通るかを別に確認します。"
+        },
+        {
+          "anchor": "ip-hardware-figure-2",
+          "type": "diagram",
+          "caption": "学習用の生成イラスト。キーボードと外付けSSDの線はUSB端子へ、ロック用の爪があるコネクタの線はLAN端子からスイッチへつながっています。実物のケーブルの色は製品ごとに異なります。"
+        },
+        {
+          "anchor": "ip-hardware-figure-3",
+          "type": "diagram",
+          "caption": "目的のデータを得られるかを先に確かめると、似た見た目の装置を区別できます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-hardware-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-hardware-check",
+      "competencies": [
+        {
+          "skill": "紙から何を読みたいかで装置を選ぶ",
+          "teachingAnchor": "hardware-textbook-skill-1",
+          "practice": [
+            "ip-hardware-textbook-1"
+          ]
+        },
+        {
+          "skill": "端末の表示と出力の条件を確認する",
+          "teachingAnchor": "hardware-textbook-skill-2",
+          "practice": [
+            "ip-hardware-transfer-2"
+          ]
+        },
+        {
+          "skill": "同じ形の端子でも機能を確かめる",
+          "teachingAnchor": "hardware-textbook-skill-3",
+          "practice": [
+            "ip-hardware-textbook-3"
+          ]
+        },
+        {
+          "skill": "保存の容量と耐障害性を区別する",
+          "teachingAnchor": "hardware-textbook-skill-4",
+          "practice": [
+            "ip-hardware-textbook-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-design",
+      "step": 32,
+      "unit": 19,
+      "minutes": 60,
+      "title": "情報デザインと使いやすい画面",
+      "syllabusItems": [
+        50,
+        51
+      ],
+      "objectives": [
+        "情報の構造と見た目の役割を説明する",
+        "アクセシビリティと誤操作防止を考える"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-design-figure-1",
+          "type": "diagram",
+          "caption": "入力順と、問題が見つかったときに戻る先を一緒に設計します。"
+        },
+        {
+          "anchor": "ip-design-figure-2",
+          "type": "diagram",
+          "caption": "元の入力値を残し、誤りがある欄の近くに直す条件を書きます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-design-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-design-check",
+      "competencies": [
+        {
+          "skill": "利用者の目的に合う情報の順序を選ぶ",
+          "teachingAnchor": "design-textbook-skill-1",
+          "practice": [
+            "ip-design-textbook-1"
+          ]
+        },
+        {
+          "skill": "操作できるかと、使いやすいかを確かめる",
+          "teachingAnchor": "design-textbook-skill-2",
+          "practice": [
+            "ip-design-textbook-2"
+          ]
+        },
+        {
+          "skill": "試作品で観察し、原因に合わせて直す",
+          "teachingAnchor": "design-textbook-skill-3",
+          "practice": [
+            "ip-design-transfer-3"
+          ]
+        },
+        {
+          "skill": "機器と利用環境を一緒に考える",
+          "teachingAnchor": "design-textbook-skill-4",
+          "practice": [
+            "ip-design-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-media",
+      "step": 33,
+      "unit": 20,
+      "minutes": 65,
+      "title": "画像・音声・動画と圧縮",
+      "syllabusItems": [
+        52,
+        53
+      ],
+      "objectives": [
+        "デジタル化と容量を計算する",
+        "メディア形式と圧縮の違いを説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-media-figure-1",
+          "type": "diagram",
+          "caption": "最初から単位を書くと、チャネル数とビットからバイトへの換算を忘れにくくなります。"
+        },
+        {
+          "anchor": "ip-media-figure-2",
+          "type": "diagram",
+          "caption": "無圧縮のデータ量は「個数×1個の情報量」を軸に計算できます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-media-guided-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-media-check",
+      "competencies": [
+        {
+          "skill": "画像の寸法と色の細かさから計算する",
+          "teachingAnchor": "media-textbook-skill-1",
+          "practice": [
+            "ip-media-textbook-1"
+          ]
+        },
+        {
+          "skill": "時間、回数、チャネル数を順に掛ける",
+          "teachingAnchor": "media-textbook-skill-2",
+          "practice": [
+            "ip-media-textbook-2"
+          ]
+        },
+        {
+          "skill": "原版を残すか、配信時の小ささを優先するか決める",
+          "teachingAnchor": "media-textbook-skill-3",
+          "practice": [
+            "ip-media-textbook-3"
+          ]
+        },
+        {
+          "skill": "見られる人と場面を考えて配信する",
+          "teachingAnchor": "media-textbook-skill-4",
+          "practice": [
+            "ip-media-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-database",
+      "step": 34,
+      "unit": 21,
+      "minutes": 65,
+      "title": "データベースの設計と正規化",
+      "syllabusItems": [
+        54,
+        55
+      ],
+      "objectives": [
+        "主キーと外部キーの役割を説明する",
+        "重複による更新の不整合を防ぐ"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-database-figure-1",
+          "type": "diagram",
+          "caption": "注文表の顧客IDが顧客表の行を参照します。注文IDは注文自体を識別します。"
+        },
+        {
+          "anchor": "ip-database-figure-2",
+          "type": "diagram",
+          "caption": "明細から顧客情報までの道を追うと、どの番号が一意で、どの番号が参照に使われるか分かります。"
+        },
+        {
+          "anchor": "ip-database-figure-3",
+          "type": "diagram",
+          "caption": "申込表は受講者と講座のIDを参照します。名前や最新の定価を申込の行ごとに複製しません。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-database-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-database-check",
+      "competencies": [
+        {
+          "skill": "一意になる値と、対応を示す値を区別する",
+          "teachingAnchor": "database-textbook-skill-1",
+          "practice": [
+            "ip-database-textbook-1"
+          ]
+        },
+        {
+          "skill": "更新で一部だけ古くなる理由を追う",
+          "teachingAnchor": "database-textbook-skill-2",
+          "practice": [
+            "ip-database-textbook-2"
+          ]
+        },
+        {
+          "skill": "多対多の対応を一つの欄へ押し込まない",
+          "teachingAnchor": "database-textbook-skill-3",
+          "practice": [
+            "ip-database-transfer-3"
+          ]
+        },
+        {
+          "skill": "表を結合する前に行数の変化を予想する",
+          "teachingAnchor": "database-textbook-skill-4",
+          "practice": [
+            "ip-database-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-sql-transactions",
+      "step": 35,
+      "unit": 21,
+      "minutes": 75,
+      "title": "SQLとトランザクション",
+      "syllabusItems": [
+        56,
+        57
+      ],
+      "objectives": [
+        "検索・集計の基本を読む",
+        "同時更新と復旧の必要性を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-sql-transactions-figure-1",
+          "type": "diagram",
+          "caption": "条件の対象が元の行か、集計後のグループかを確認します。"
+        },
+        {
+          "anchor": "ip-sql-transactions-figure-2",
+          "type": "diagram",
+          "caption": "集計前の行条件と、集計後のグループ条件を別に考えます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-sql-transactions-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-sql-transactions-check",
+      "competencies": [
+        {
+          "skill": "絞る対象を一段ずつ確かめる",
+          "teachingAnchor": "sql-transactions-textbook-skill-1",
+          "practice": [
+            "ip-sql-transactions-textbook-1"
+          ]
+        },
+        {
+          "skill": "件数を求めるときに欠けた値を確認する",
+          "teachingAnchor": "sql-transactions-textbook-skill-2",
+          "practice": [
+            "ip-sql-transactions-textbook-2"
+          ]
+        },
+        {
+          "skill": "変更をひとまとまりとして扱う",
+          "teachingAnchor": "sql-transactions-textbook-skill-3",
+          "practice": [
+            "ip-sql-transactions-textbook-3"
+          ]
+        },
+        {
+          "skill": "同時実行時に一件ずつの正しさを考える",
+          "teachingAnchor": "sql-transactions-textbook-skill-4",
+          "practice": [
+            "ip-sql-transactions-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-network",
+      "step": 36,
+      "unit": 22,
+      "minutes": 65,
+      "title": "LAN・無線とネットワーク構成",
+      "syllabusItems": [
+        58
+      ],
+      "objectives": [
+        "通信機器と接続範囲を区別する",
+        "帯域と転送時間を計算する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-network-figure-1",
+          "type": "diagram",
+          "caption": "スイッチはLAN内の転送、ルータは異なるIPネットワークへの中継を担います。"
+        },
+        {
+          "anchor": "ip-network-figure-2",
+          "type": "diagram",
+          "caption": "同じLANの通信が通るなら、別ネットワークへ進む段階で何が追加になるかを追います。"
+        },
+        {
+          "anchor": "ip-network-figure-3",
+          "type": "diagram",
+          "caption": "同じLANと別ネットワークでは、経路に必要な働きが異なります。"
+        },
+        {
+          "anchor": "ip-network-figure-4",
+          "type": "diagram",
+          "caption": "LAN内の接続と、ルータから先の接続を別々に確認します。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-network-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-network-check",
+      "competencies": [
+        {
+          "skill": "同じLANで届くことと、LANの外へ届くこと",
+          "teachingAnchor": "network-textbook-skill-1",
+          "practice": [
+            "ip-network-textbook-2"
+          ]
+        },
+        {
+          "skill": "無線でつながることと、十分な速度で届くこと",
+          "teachingAnchor": "network-textbook-skill-2",
+          "practice": [
+            "ip-network-transfer-2"
+          ]
+        },
+        {
+          "skill": "ビット毎秒と遅延を別々に見積もる",
+          "teachingAnchor": "network-textbook-skill-3",
+          "practice": [
+            "ip-network-textbook-1"
+          ]
+        },
+        {
+          "skill": "用途の異なる機器を同じ範囲へ置かない",
+          "teachingAnchor": "network-textbook-skill-4",
+          "practice": [
+            "ip-network-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-protocols",
+      "step": 37,
+      "unit": 22,
+      "minutes": 65,
+      "title": "TCP/IP・名前解決とインターネット",
+      "syllabusItems": [
+        59,
+        60
+      ],
+      "objectives": [
+        "代表的なプロトコルの役割を説明する",
+        "アドレスと名前の関係を理解する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-protocols-figure-1",
+          "type": "diagram",
+          "caption": "端末側の設定、名前解決、通信の保護、Webの内容交換を分けて追います。"
+        },
+        {
+          "anchor": "ip-protocols-figure-2",
+          "type": "diagram",
+          "caption": "同じWeb接続を上位からたどると、サービスの処理と通信経路の働きを切り分けられます。"
+        },
+        {
+          "anchor": "ip-protocols-figure-3",
+          "type": "diagram",
+          "caption": "画面でサービスを開けない場合、どの段階まで成功したかを確かめます。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-protocols-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-protocols-check",
+      "competencies": [
+        {
+          "skill": "端末の設定と名前の問い合わせを分ける",
+          "teachingAnchor": "protocols-textbook-skill-1",
+          "practice": [
+            "ip-protocols-textbook-1"
+          ]
+        },
+        {
+          "skill": "転送の性質とアプリの役割を切り分ける",
+          "teachingAnchor": "protocols-textbook-skill-2",
+          "practice": [
+            "ip-protocols-textbook-3"
+          ]
+        },
+        {
+          "skill": "送るメールと受け取ったメールを分ける",
+          "teachingAnchor": "protocols-textbook-skill-3",
+          "practice": [
+            "ip-protocols-transfer-3"
+          ]
+        },
+        {
+          "skill": "携帯通信の切替えと契約を区別する",
+          "teachingAnchor": "protocols-textbook-skill-4",
+          "practice": [
+            "ip-protocols-textbook-2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-security-risk",
+      "step": 38,
+      "unit": 23,
+      "minutes": 65,
+      "title": "情報セキュリティとリスク管理",
+      "syllabusItems": [
+        61,
+        62
+      ],
+      "objectives": [
+        "機密性・完全性・可用性を説明する",
+        "リスク対応と事故対応を考える"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-security-risk-figure-1",
+          "type": "diagram",
+          "caption": "対策を入れた後も、残った影響と起こりやすさを評価します。"
+        },
+        {
+          "anchor": "ip-security-risk-figure-2",
+          "type": "diagram",
+          "caption": "影響を整理し、対策後のリスクも担当者と点検します。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-security-risk-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-security-risk-check",
+      "competencies": [
+        {
+          "skill": "CIAを被害の違いから理解する",
+          "teachingAnchor": "security-risk-textbook-skill-1",
+          "practice": [
+            "ip-security-risk-textbook-1"
+          ]
+        },
+        {
+          "skill": "脅威、弱点、影響を一文ずつ書く",
+          "teachingAnchor": "security-risk-textbook-skill-2",
+          "practice": [
+            "ip-security-risk-transfer-2"
+          ]
+        },
+        {
+          "skill": "リスク対応の種類と限界を判断する",
+          "teachingAnchor": "security-risk-textbook-skill-3",
+          "practice": [
+            "ip-security-risk-textbook-2"
+          ]
+        },
+        {
+          "skill": "管理を見直す条件を決める",
+          "teachingAnchor": "security-risk-textbook-skill-4",
+          "practice": [
+            "ip-security-risk-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-security-controls",
+      "step": 39,
+      "unit": 23,
+      "minutes": 70,
+      "title": "攻撃の手口と多層防御",
+      "syllabusItems": [
+        63
+      ],
+      "objectives": [
+        "代表的な攻撃と対策を対応させる",
+        "予防・検知・復旧を組み合わせる"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-security-controls-figure-1",
+          "type": "diagram",
+          "caption": "どの対策が先に効き、失敗したとき何が残るかを確認します。"
+        },
+        {
+          "anchor": "ip-security-controls-figure-2",
+          "type": "diagram",
+          "caption": "一つの対策だけで、全ての事故や被害を止められるとは限りません。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-security-controls-guided-title",
+        "input": "number",
+        "staticSolution": true
+      },
+      "assessment": "ip-security-controls-check",
+      "competencies": [
+        {
+          "skill": "認証と認可を順に考える",
+          "teachingAnchor": "security-controls-textbook-skill-1",
+          "practice": [
+            "ip-security-controls-textbook-2",
+            "ip-security-controls-textbook-3"
+          ]
+        },
+        {
+          "skill": "異常に気付き、事実を確認する",
+          "teachingAnchor": "security-controls-textbook-skill-2",
+          "practice": [
+            "ip-security-controls-transfer-2"
+          ]
+        },
+        {
+          "skill": "復旧の目標を記録時点と時間に分ける",
+          "teachingAnchor": "security-controls-textbook-skill-3",
+          "practice": [
+            "ip-security-controls-textbook-1"
+          ]
+        },
+        {
+          "skill": "変更できる場所と復元する場所を分ける",
+          "teachingAnchor": "security-controls-textbook-skill-4",
+          "practice": [
+            "ip-security-controls-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-cryptography",
+      "step": 40,
+      "unit": 23,
+      "minutes": 65,
+      "title": "暗号・電子署名と証明書",
+      "syllabusItems": [
+        63
+      ],
+      "objectives": [
+        "共通鍵と公開鍵を区別する",
+        "署名と証明書の役割を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-cryptography-figure-1",
+          "type": "diagram",
+          "caption": "署名は相手と改変の確認に使います。文書を秘密にする仕組みとは異なります。"
+        },
+        {
+          "anchor": "ip-cryptography-figure-2",
+          "type": "diagram",
+          "caption": "暗号化と署名は別の目的を満たします。図の上下は役割の対応であり、処理の実行順を規定するものではありません。"
+        },
+        {
+          "anchor": "ip-cryptography-figure-3",
+          "type": "diagram",
+          "caption": "暗号化は受信者の鍵、署名は署名者の鍵を起点に考えます。どちらも公開鍵の持ち主を確認します。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-cryptography-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-cryptography-check",
+      "competencies": [
+        {
+          "skill": "共通鍵と公開鍵の使い分け",
+          "teachingAnchor": "cryptography-textbook-skill-1",
+          "practice": [
+            "ip-cryptography-textbook-1"
+          ]
+        },
+        {
+          "skill": "ハッシュと署名が示すものを分ける",
+          "teachingAnchor": "cryptography-textbook-skill-2",
+          "practice": [
+            "ip-cryptography-textbook-2",
+            "ip-cryptography-textbook-3"
+          ]
+        },
+        {
+          "skill": "証明書は何を結び付けるか",
+          "teachingAnchor": "cryptography-textbook-skill-3",
+          "practice": [
+            "ip-cryptography-transfer-3"
+          ]
+        },
+        {
+          "skill": "目的を組み合わせる順序を言葉にする",
+          "teachingAnchor": "cryptography-textbook-skill-4",
+          "practice": [
+            "ip-cryptography-transfer-4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ip-release-decision",
+      "step": 41,
+      "unit": 23,
+      "minutes": 75,
+      "title": "3分野の総合読解：受入条件と試験記録から導入を判断する",
+      "syllabusItems": [
+        2,
+        23,
+        25,
+        28,
+        63
+      ],
+      "objectives": [
+        "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+        "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+        "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+      ],
+      "figures": [
+        {
+          "anchor": "ip-release-rules",
+          "type": "table",
+          "caption": "条件文を読む順番。対象を先に決めると、全体の率を各拠点へ流用する誤りを防げます。"
+        },
+        {
+          "anchor": "ip-release-evidence",
+          "type": "table",
+          "caption": "記録と条件の照合。全体の行は参考値で、拠点ごとの条件には上の二行を使います。"
+        }
+      ],
+      "guidedPractice": {
+        "anchor": "ip-release-guided-title",
+        "input": "choice",
+        "staticSolution": true
+      },
+      "assessment": "ip-release-decision-check",
+      "competencies": []
+    }
+  ]
+}

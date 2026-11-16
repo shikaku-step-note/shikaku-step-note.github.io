@@ -23,11 +23,13 @@
   ],
   "glossary": [],
   "sample": false,
-  "updated": "2026-11-12"
+  "updated": "2026-11-16"
 }
 ---
 
 ## 日数の足し方は作業のつながりで決まる
+
+工期は、作業にかかる日数と、どの作業の完了を待つかで決まります。並行できる作業を分け、複数の経路が合流する地点では、最後に終わる前提作業を特定します。
 
 施設の予約システムを更新します。調査の後に画面と台帳を別々に作り、両方が終わってから接続を確認します。人員と機器は作業同士で取り合わず、始められる作業はすぐ始められるとします。開始時点を0日とし、4日間の作業を開始すると時点4で終わる数え方を使います。
 
@@ -39,7 +41,7 @@
 | D 画面確認 | 3 | B |
 | E 接続確認 | 2 | C、D |
 
-<figure><svg viewBox="0 0 340 133" width="340" height="133" role="img" aria-label="AからBとCへ分岐し、Bの後にD。CとDがEに合流。B側が7日、C側が6日。" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M60 65L101 32l-7 2m7-2-4 7m-37 26 41 35-7-2m7 2-4-7m58-61h30l-5-4m5 4-5 4m58-4 36 33-7-2m7 2-4-7m-115 42 119-35-7 0m7 0-5 5"/></g><g fill="currentColor" font-size="15" text-anchor="middle"><text x="37" y="72">A 3日</text><text x="129" y="38">B 4日</text><text x="129" y="106">C 6日</text><text x="214" y="38">D 3日</text><text x="307" y="72">E 2日</text></g></svg><figcaption>合流点Eは、台帳Cと画面確認Dの両方を待ちます。下側だけを先に終えてもEは始まりません。</figcaption></figure>
+<figure id="ip-reading-project-plans-project-paths"><svg viewBox="0 0 340 133" width="340" height="133" role="img" aria-label="AからBとCへ分岐し、Bの後にD。CとDがEに合流。B側が7日、C側が6日。" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M60 65L101 32l-7 2m7-2-4 7m-37 26 41 35-7-2m7 2-4-7m58-61h30l-5-4m5 4-5 4m58-4 36 33-7-2m7 2-4-7m-115 42 119-35-7 0m7 0-5 5"/></g><g fill="currentColor" font-size="15" text-anchor="middle"><text x="37" y="72">A 3日</text><text x="129" y="38">B 4日</text><text x="129" y="106">C 6日</text><text x="214" y="38">D 3日</text><text x="307" y="72">E 2日</text></g></svg><figcaption>合流点Eは、台帳Cと画面確認Dの両方を待ちます。下側だけを先に終えてもEは始まりません。</figcaption></figure>
 
 ## 最短日数と余裕を求める
 
@@ -70,6 +72,47 @@
 ### 短縮費用まで比べる
 
 別の案件では、同時に進む二つの経路が14日と12日で、期限は11日です。前者は1日につき2万円で最大4日、後者は1日につき3万円で最大2日短縮できます。作業を短縮しても、ほかの経路の日数や品質は変わらないとします。期限に間に合わせるには、前者を最低3日、後者を最低1日短縮します。費用は3×2万円＋1×3万円＝9万円です。いずれの経路も必要日数を超えて短縮すれば費用だけが増えるので、これが最小です。作業を両経路で共有する場合は、一つの短縮が両方に効くことがあるので、経路別に費用を足す前に依存関係を見直します。
+
+<span id="ip-reading-project-plans-new-worked-example"></span>
+
+### 共通作業の短縮は、通過する経路に効く
+
+一つの作業を複数の経路が通ると、その作業の短縮は、通過する経路のすべてに影響します。費用は作業そのものにかかるので、経路がいくつあっても、その作業の短縮分は一度だけ数えます。案の比較では、変更した日数をすべての経路に反映し、最長経路と費用の両方を確かめます。
+
+例えば、共通の準備Aが3日、その後に分かれるBが6日、Cが5日、最後の共通の確認Dが2日だとします。全体は最長のA–B–Dで11日です。期限を時点9に設定した場合、Aを2日短縮できるなら、B側は9日、C側は8日になります。Bだけを2日短縮しても、C側が10日残るため、期限には間に合いません。
+
+<figure id="ip-reading-project-plans-worked-evidence">
+<figcaption id="ip-reading-project-plans-worked-evidence-caption">短縮した作業を通る経路に日数を反映</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-reading-project-plans-worked-evidence-caption">
+<table>
+  <thead>
+    <tr><th scope="col">案</th><th scope="col">経路の日数と期限</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">変更なし</th><td>B側は3＋6＋2＝11日、C側は3＋5＋2＝10日。</td></tr>
+    <tr><th scope="row">共通のAを2日短縮</th><td>B側9日、C側8日。どちらも期限の9日以内。</td></tr>
+    <tr><th scope="row">Bだけを2日短縮</th><td>B側9日、C側10日。C側を待つため期限を超える。</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="guided-ip-reading-project-plans" aria-labelledby="guided-ip-reading-project-plans-title">
+<h3 id="guided-ip-reading-project-plans-title">途中で確認　共通作業を短縮した後の完了日</h3>
+<p id="guided-ip-reading-project-plans-prompt">共通の準備は4日、並行作業は上の経路に5日、下の経路に6日、共通の最終確認は2日です。準備を2日、下の経路だけをさらに2日短縮すると、全体は何日になりますか。</p>
+<form data-guided-practice data-expected="9" data-guided-hint="準備を両方の経路で2日に置き換えます。下だけが短くなっても、上が合流を待たせることがあります。" aria-labelledby="guided-ip-reading-project-plans-title" aria-describedby="guided-ip-reading-project-plans-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-ip-reading-project-plans-input">答え（日）</label> <input id="guided-ip-reading-project-plans-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>短縮後の準備は2日。上の経路は2＋5＋2＝9日、下の経路は2＋4＋2＝8日です。合流では両方の完了を待つため、上の経路が決める9日で終わります。</p>
+</details>
+</section>
 
 ## 新しい条件で解く
 

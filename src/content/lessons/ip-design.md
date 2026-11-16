@@ -7,7 +7,7 @@
   'order': 32,
   'minutes': 60,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 19,
   'syllabus': [50, 51],
   'objectives': ['情報の構造と見た目の役割を説明する', 'アクセシビリティと誤操作防止を考える'],
@@ -63,7 +63,7 @@ UIはボタンや入力等の接点、UXは利用を通じた体験です。GUI�
 
 講習申込で、希望日を1日だけ選び、必要な配慮を複数選べるようにします。希望日はラジオボタンで選択数を1つにし、配慮はチェックボックスで複数選択できるようにします。選択肢が多ければ一覧や検索も検討します。色だけで必須項目を示すと、配色を区別しにくい人には伝わりません。「必須」と表示して項目名に結び付けます。入力後に誤りが見つかったら、どの項目をどう直すかを伝え、他の入力を保持するとやり直しが減ります。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="希望日：候補から1日選択、配慮：必要なものを複数選択、確認：入力内容と変更先を表示、誤りがあれば該当項目へ戻る"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">希望日：候補から1日選択</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">配慮：必要なものを複数選択</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">確認：入力内容と変更先を表示</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">誤りがあれば該当項目へ戻る</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>入力順と、問題が見つかったときに戻る先を一緒に設計します。</figcaption></figure>
+<figure id="ip-design-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="希望日：候補から1日選択、配慮：必要なものを複数選択、確認：入力内容と変更先を表示、誤りがあれば該当項目へ戻る"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">希望日：候補から1日選択</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">配慮：必要なものを複数選択</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">確認：入力内容と変更先を表示</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">誤りがあれば該当項目へ戻る</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>入力順と、問題が見つかったときに戻る先を一緒に設計します。</figcaption></figure>
 
 ## 同じ情報でも、探したい目的で並べ方を変える
 
@@ -77,7 +77,7 @@ UIはボタンや入力等の接点、UXは利用を通じた体験です。GUI�
 
 市の催しを予約する画面を考えます。利用者は日時と場所を見て選び、人数を入力して予約を確定します。利用者が何を先に知り、どこで迷い、何を確かめてから戻れる必要があるかを整理します。
 
-<figure><svg viewBox="0 0 340 197" width="340" height="197" style="max-width:100%;height:auto" role="img" aria-label="予約画面の例。上から催し名、日時、参加人数、具体的な入力エラー、修正可能な入力値、確認ボタンの順。"><rect x="14" y="9" width="310" height="179" rx="9" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><g fill="currentColor" font-size="15"><text x="31" y="37" font-weight="bold">図書館見学を予約</text><text x="31" y="62">日時　6月8日 14:00</text><text x="31" y="90">参加人数（1〜4人）</text><text x="31" y="119">5　　人数は4人までです</text><text x="31" y="161">入力内容を確認する</text></g><rect x="25" y="98" width="25" height="29" fill="none" stroke="currentColor"/><rect x="25" y="140" width="183" height="31" rx="5" fill="none" stroke="currentColor"/></svg><figcaption>元の入力値を残し、誤りがある欄の近くに直す条件を書きます。</figcaption></figure>
+<figure id="ip-design-figure-2"><svg viewBox="0 0 340 197" width="340" height="197" style="max-width:100%;height:auto" role="img" aria-label="予約画面の例。上から催し名、日時、参加人数、具体的な入力エラー、修正可能な入力値、確認ボタンの順。"><rect x="14" y="9" width="310" height="179" rx="9" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><g fill="currentColor" font-size="15"><text x="31" y="37" font-weight="bold">図書館見学を予約</text><text x="31" y="62">日時　6月8日 14:00</text><text x="31" y="90">参加人数（1〜4人）</text><text x="31" y="119">5　　人数は4人までです</text><text x="31" y="161">入力内容を確認する</text></g><rect x="25" y="98" width="25" height="29" fill="none" stroke="currentColor"/><rect x="25" y="140" width="183" height="31" rx="5" fill="none" stroke="currentColor"/></svg><figcaption>元の入力値を残し、誤りがある欄の近くに直す条件を書きます。</figcaption></figure>
 
 <span id="design-textbook-skill-1"></span>
 
@@ -112,3 +112,22 @@ UIはボタンや入力等の接点、UXは利用を通じた体験です。GUI�
 </details>
 
 **復習の目安**　情報の整理、操作、エラー回復、利用者を使った評価を目的別に設計できます。
+
+<section class="guided-lesson" id="guided-ip-design" aria-labelledby="ip-design-guided-title">
+<h3 id="ip-design-guided-title">途中で確認　入力エラーからの戻り方</h3>
+<p id="ip-design-guided-prompt">画面の下に「入力に誤りがあります」とだけ表示され、利用者がどの欄を直すか分かりません。修正のために入れる情報はどれでしょうか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="利用者がやり直すとき、どの欄の何を変えるか分かる情報を選びます。" aria-labelledby="ip-design-guided-title" aria-describedby="ip-design-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-design-guided-answer" value="correct"> 該当する欄の名前と、受け付ける入力の例を示す</label>
+<label><input type="radio" name="ip-design-guided-answer" value="choice-1"> 画面全体を赤くし、該当する欄は示さない</label>
+<label><input type="radio" name="ip-design-guided-answer" value="choice-2"> 送信した内容を消し、エラーの原因を確認させない</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>欄と入力例が分かれば、利用者は誤りの場所と修正方法をつかめます。他の入力を維持すれば修正箇所も限定できます。色は補助として使い、文字でも伝えます。</p>
+</details>
+</section>

@@ -7,7 +7,7 @@
   'order': 7,
   'minutes': 80,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 2,
   'syllabus': [8],
   'objectives': ['公的標準と事実上の標準を区別する', '標準化の効果と限界を説明する'],
@@ -75,7 +75,7 @@ ISO 9001は品質マネジメントシステム、ISO/IEC 27001は情報セキ�
 
 受入では『伝票00027を文字列のまま保存する』『ゼロ個と未回答を区別する』『不正な日付を取り込まず理由を返す』のように、見れば合否が分かる入力と期待結果を用意します。標準を採用することと、互いの実装が実際につながることは確認項目が違います。新しい項目を追加するときは、旧版の受信側が未知の項目を無視できるか、版を見分けて拒否するかも決めます。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="入れ物を合意、文字コードと区切り文字。項目の意味を合意、日付、単位、文字列、空欄。同じ例で受入試験、00027を5桁のまま保存"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">入れ物を合意</text><text x="200" y="43">文字コードと区切り文字</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">項目の意味を合意</text><text x="200" y="106">日付、単位、文字列、空欄</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">同じ例で受入試験</text><text x="200" y="169">00027を5桁のまま保存</text></g></svg><figcaption>CSVの合意は書式、値の意味、異常時の振舞いまで行い、両者で同じ例を試します。</figcaption></figure>
+<figure id="ip-standards-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="入れ物を合意、文字コードと区切り文字。項目の意味を合意、日付、単位、文字列、空欄。同じ例で受入試験、00027を5桁のまま保存"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">入れ物を合意</text><text x="200" y="43">文字コードと区切り文字</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">項目の意味を合意</text><text x="200" y="106">日付、単位、文字列、空欄</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">同じ例で受入試験</text><text x="200" y="169">00027を5桁のまま保存</text></g></svg><figcaption>CSVの合意は書式、値の意味、異常時の振舞いまで行い、両者で同じ例を試します。</figcaption></figure>
 
 ### 規格の策定と、適合性を評価する活動を区別する
 
@@ -106,3 +106,52 @@ ISO 9001は品質マネジメントシステム、ISO/IEC 27001は情報セキ�
 ### 互換性の試験項目を決める
 
 商品番号をバーコードで共有する業務では、番号が同じでも、紙の汚れや印字の小ささで読めないことがあります。規格で定めるデータの表現と、実際の環境で読めるかを分けて試験します。昼の店舗で読めても、倉庫の暗さや低温で同じ結果になるとは限りません。通常の品だけでなく、包装の形状やラベルの状態が異なる品を選び、読み取れない場合の手入力と二重確認の手順も決めます。
+
+<span id="ip-standards-decision-section"></span>
+
+## データを開ける条件と、意味が一致する条件をそろえる
+
+連携で使う規格は、記号の表し方やデータの並べ方をそろえるための約束です。それだけで同じ日付や同じ金額を表すとは限りません。取込試験では、見た目の形式、項目の定義、業務で照合する値の順に分けます。値の意味が一致しないときは変換規則に変換後の期待値を書き、境界条件を含む試験データを用意します。
+
+<figure id="ip-standards-worked-decision">
+<figcaption id="ip-standards-worked-decision-caption">二つのシステムで照合するデータ</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-standards-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">項目</th><th scope="col">送信元</th><th scope="col">受信側の期待</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">商品コード</th><td>0012のような4文字</td><td>先頭の0を含む4文字</td></tr>
+    <tr><th scope="row">金額</th><td>整数。単位は円</td><td>受信側も円で表示</td></tr>
+    <tr><th scope="row">処理時刻</th><td>UTCの23時30分</td><td>日本時間の翌日8時30分として集計</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+ファイルを読み込めても、商品コード0012を数値12に変換すると、文字列の0012を使う台帳と結びつきません。時刻も、UTCの23時30分は日本時間で翌日の8時30分です。前日分の売上に集計されるなら、形式の読み込みを通過しても業務上の期待値は満たしていません。値が一致しない場所を調べるには、取込件数だけでなく、コードの表示、日付をまたぐ記録、同じ商品の売上集計を順に確認します。
+
+<section class="guided-lesson" id="ip-standards-guided-transfer" aria-labelledby="ip-standards-guided-transfer-title">
+<h3 id="ip-standards-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-standards-guided-transfer-prompt">商品コード0012を数値に変えて、台帳の0012を検索したところ見つかりませんでした。どの試験をやり直しますか。</p>
+<form data-guided-practice data-expected="1" data-guided-hint="今回の差はコードにあります。ファイルが開くことと、正しい商品に結び付くことを区別します。" aria-labelledby="ip-standards-guided-transfer-title" aria-describedby="ip-standards-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-standards-guided-transfer-1"><input type="radio" id="ip-standards-guided-transfer-1" name="answer" value="1"> 先頭の0を含むコードをそのまま照合する試験</label><br>
+<label for="ip-standards-guided-transfer-2"><input type="radio" id="ip-standards-guided-transfer-2" name="answer" value="2"> ファイルが開くかだけを見る試験</label><br>
+<label for="ip-standards-guided-transfer-3"><input type="radio" id="ip-standards-guided-transfer-3" name="answer" value="3"> 請求の通貨を円にする試験</label><br>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>コードを記号として扱い、先頭の0を含む0012が台帳の0012と一致することを確認します。通貨の単位は別の試験です。</p>
+</details>
+</section>
+
+<span id="ip-standards-decision-independent"></span>
+
+### 自分で判断する
+
+送信元は金額「1250」を円として出します。受信側は同じ数字を千円として扱います。100件すべてを読み込めているとき、試験表に何を追加しますか。
+
+<details><summary>考え方と答えを確認する</summary><p>受信側で1250円になるという期待値を追加します。現在の解釈では1250千円＝125万円です。件数一致は欠損を見つける試験であり、金額の単位が一致したことは別の記録で確かめます。</p></details>

@@ -7,7 +7,7 @@
   'order': 29,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 17,
   'syllabus': [47, 48],
   'objectives': ['表計算の参照と集計を説明する', 'OSSの利用条件と保守を確認する'],
@@ -60,7 +60,7 @@ OSSを採用する場合は、ソフトを使うこと、社内で変更する�
 
 B列は件数、E1は単価です。C2に `=B2*$E$1` を書き、C3へコピーします。相対参照B2の行は1つ下のB3に変わり、絶対参照$E$1は変わりません。B2が4、B3が7、E1が300なら、結果は1,200と2,100です。単価の参照を `E1` にしたまま下へコピーすると、2行目の計算はE2を読み、同じ単価を使えなくなります。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="C2：B2 × $E$1、1行下へ式をコピー、C3：B3 × $E$1、件数だけ変わり、単価は同じ"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">C2：B2 × $E$1</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">1行下へ式をコピー</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">C3：B3 × $E$1</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">件数だけ変わり、単価は同じ</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>変更したい参照と固定したい参照を、コピーする方向ごとに確認します。</figcaption></figure>
+<figure id="ip-office-oss-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="C2：B2 × $E$1、1行下へ式をコピー、C3：B3 × $E$1、件数だけ変わり、単価は同じ"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">C2：B2 × $E$1</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">1行下へ式をコピー</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">C3：B3 × $E$1</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">件数だけ変わり、単価は同じ</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>変更したい参照と固定したい参照を、コピーする方向ごとに確認します。</figcaption></figure>
 
 単価を上の行に複数並べ、下へのコピーでは行を固定し、横へのコピーでは列を動かすなら `E$1` を使います。行の見出しを左に並べ、横へコピーする際に列を固定するなら `$B2` です。上下左右へのコピーを1セルだけ試して、変えるべき部分が動いているか確かめます。
 
@@ -74,7 +74,7 @@ B列は件数、E1は単価です。C2に `=B2*$E$1` を書き、C3へコピー�
 
 商品ごとに異なる数量と、全商品で同じ値引率を使う表を作ります。式をコピーするときは、どの値が商品に応じて移動し、どの値が固定されるかを先に整理します。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="行が動く、商品ごとの数量・単価。セルを固定、共通の値引率を絶対参照。範囲を点検、集計対象と例外を照合。配布を点検、ライセンスの条件を確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">行が動く</text><text x="126" y="29" fill="currentColor" font-size="14">商品ごとの数量・単価</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">セルを固定</text><text x="126" y="83" fill="currentColor" font-size="14">共通の値引率を絶対参照</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">範囲を点検</text><text x="126" y="137" fill="currentColor" font-size="14">集計対象と例外を照合</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">配布を点検</text><text x="126" y="191" fill="currentColor" font-size="14">ライセンスの条件を確認</text></svg><figcaption>表計算の検証では、コピー先の式を読む方法と、実際の値で戻し算する方法を使えます。</figcaption></figure>
+<figure id="ip-office-oss-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="行が動く、商品ごとの数量・単価。セルを固定、共通の値引率を絶対参照。範囲を点検、集計対象と例外を照合。配布を点検、ライセンスの条件を確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">行が動く</text><text x="126" y="29" fill="currentColor" font-size="14">商品ごとの数量・単価</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">セルを固定</text><text x="126" y="83" fill="currentColor" font-size="14">共通の値引率を絶対参照</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">範囲を点検</text><text x="126" y="137" fill="currentColor" font-size="14">集計対象と例外を照合</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">配布を点検</text><text x="126" y="191" fill="currentColor" font-size="14">ライセンスの条件を確認</text></svg><figcaption>表計算の検証では、コピー先の式を読む方法と、実際の値で戻し算する方法を使えます。</figcaption></figure>
 
 <span id="office-oss-textbook-skill-1"></span>
 
@@ -109,3 +109,22 @@ OSSはソースを参照・利用・改変・再配布できる条件がライ�
 </details>
 
 **復習の目安**　混合参照と集計条件を読み、再配布の前に必要な条件を確認できます。
+
+<section class="guided-lesson" id="guided-ip-office-oss" aria-labelledby="ip-office-oss-guided-title">
+<h3 id="ip-office-oss-guided-title">途中で確認　どのセルだけを固定するか</h3>
+<p id="ip-office-oss-guided-prompt">B2:B6には数量があり、D1にはすべてに適用する単価があります。C2の式をC6へコピーします。数量が行とともに移動し、単価を固定する式を選んでください。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="下へコピーするときも、数量の行だけを動かします。" aria-labelledby="ip-office-oss-guided-title" aria-describedby="ip-office-oss-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-office-oss-guided-answer" value="choice-1"> =$B$2*D1</label>
+<label><input type="radio" name="ip-office-oss-guided-answer" value="choice-2"> =B2*D1</label>
+<label><input type="radio" name="ip-office-oss-guided-answer" value="correct"> =B2*$D$1</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>=B2*$D$1なら、下に4行コピーした式は=B6*$D$1です。単価に使うD1が動かず、数量は6行目の値を使います。上下の式を一つずつ照合すると、固定する対象を確認できます。</p>
+</details>
+</section>

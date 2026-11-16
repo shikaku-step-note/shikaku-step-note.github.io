@@ -7,7 +7,7 @@
   'order': 38,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 23,
   'syllabus': [61, 62],
   'objectives': ['機密性・完全性・可用性を説明する', 'リスク対応と事故対応を考える'],
@@ -57,7 +57,7 @@
 
 申込サービスが保管する連絡先、申込内容、運用画面を洗い出します。連絡先が第三者に見られるのは機密性、申込内容が意図せず変更されるのは完全性、締切までに申込できないのは可用性の問題です。資産を単に「サーバ一式」と記録すると、どの業務上の影響を減らしたいのか分かりにくくなります。例えば締切時刻の停止は、深夜の保守停止と同じ1時間でも影響が違います。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="資産：申込記録と受付サービス、脅威・弱点：何が起こり得るか、評価：起こりやすさと影響、対応後：残るリスクを再評価"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">資産：申込記録と受付サービス</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">脅威・弱点：何が起こり得るか</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">評価：起こりやすさと影響</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">対応後：残るリスクを再評価</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>対策を入れた後も、残った影響と起こりやすさを評価します。</figcaption></figure>
+<figure id="ip-security-risk-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="資産：申込記録と受付サービス、脅威・弱点：何が起こり得るか、評価：起こりやすさと影響、対応後：残るリスクを再評価"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">資産：申込記録と受付サービス</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">脅威・弱点：何が起こり得るか</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">評価：起こりやすさと影響</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">対応後：残るリスクを再評価</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>対策を入れた後も、残った影響と起こりやすさを評価します。</figcaption></figure>
 
 ## 対応を選び、残るリスクを引き受ける人を決める
 
@@ -71,7 +71,7 @@
 
 商店が予約表、売上集計、公開チラシを管理しています。公開前の予約表が他人に見えると困ります。公開チラシは誰が見てもよいものの、営業日が勝手に書き換わると業務に影響します。情報の価値と起きる被害を具体的に記録します。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="資産、何を誰が使うか。影響、漏えい・改変・停止を想定。対処、回避・低減・共有・受容。残余、責任者が見直しを判断"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">資産</text><text x="126" y="29" fill="currentColor" font-size="14">何を誰が使うか</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">影響</text><text x="126" y="83" fill="currentColor" font-size="14">漏えい・改変・停止を想定</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">対処</text><text x="126" y="137" fill="currentColor" font-size="14">回避・低減・共有・受容</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">残余</text><text x="126" y="191" fill="currentColor" font-size="14">責任者が見直しを判断</text></svg><figcaption>影響を整理し、対策後のリスクも担当者と点検します。</figcaption></figure>
+<figure id="ip-security-risk-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="資産、何を誰が使うか。影響、漏えい・改変・停止を想定。対処、回避・低減・共有・受容。残余、責任者が見直しを判断"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">資産</text><text x="126" y="29" fill="currentColor" font-size="14">何を誰が使うか</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">影響</text><text x="126" y="83" fill="currentColor" font-size="14">漏えい・改変・停止を想定</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">対処</text><text x="126" y="137" fill="currentColor" font-size="14">回避・低減・共有・受容</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">残余</text><text x="126" y="191" fill="currentColor" font-size="14">責任者が見直しを判断</text></svg><figcaption>影響を整理し、対策後のリスクも担当者と点検します。</figcaption></figure>
 
 <span id="security-risk-textbook-skill-1"></span>
 
@@ -106,3 +106,22 @@
 </details>
 
 **復習の目安**　業務への影響からリスクの優先順位を付け、対策後に残る影響と担当者を説明できます。
+
+<section class="guided-lesson" id="guided-ip-security-risk" aria-labelledby="ip-security-risk-guided-title">
+<h3 id="ip-security-risk-guided-title">途中で確認　退職後に残る権限</h3>
+<p id="ip-security-risk-guided-prompt">人事台帳には退職済みと記録された人が、業務システムでは利用可能な状態でした。アクセス権を管理するため、どの確認を組み合わせますか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="利用があったかより、現在も使う必要があるかを確かめます。" aria-labelledby="ip-security-risk-guided-title" aria-describedby="ip-security-risk-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-security-risk-guided-answer" value="choice-1"> 暗号化を有効にして、有効な権限の一覧は確認しない</label>
+<label><input type="radio" name="ip-security-risk-guided-answer" value="choice-2"> 監視記録を確認し、アクセスがなかった人には権限を残し続ける</label>
+<label><input type="radio" name="ip-security-risk-guided-answer" value="correct"> 在籍・職務の記録を有効な権限の一覧と照合し、不要な権限を取り消す</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>業務上の必要性と実際に残る権限を突き合わせ、不要なら解除します。過去にアクセスしていなくても、有効な権限が残る事実は変わりません。</p>
+</details>
+</section>

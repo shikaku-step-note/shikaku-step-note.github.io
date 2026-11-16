@@ -7,7 +7,7 @@
   'order': 5,
   'minutes': 85,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 2,
   'syllabus': [4],
   'objectives': ['保護対象に合う権利を選ぶ', '利用許諾と著作権を区別する'],
@@ -73,7 +73,7 @@
 
 外観を守りたいなら意匠、顧客が商品やサービスの出所を見分ける目印なら商標を検討します。自社で撮った写真や自社で書いた説明文は、創作的な表現であれば著作権の対象となり得ます。説明書を読んで同じ仕組みを独立して作れるかは、著作権だけでは決まりません。特許などの権利が別に関わることがあるためです。出願・登録が必要な制度と、登録手続によらず創作により権利が生じる著作権を分けて覚えます。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="制御方法や部品の形状、特許・実用新案の対象を確認。製品の外観や目印、意匠・商標の目的を確認。写真や文章、著作権と許諾条件を確認"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">制御方法や部品の形状</text><text x="200" y="43">特許・実用新案の対象を確認</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">製品の外観や目印</text><text x="200" y="106">意匠・商標の目的を確認</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">写真や文章</text><text x="200" y="169">著作権と許諾条件を確認</text></g></svg><figcaption>一つの製品でも、保護したい対象を選ぶと参照する制度が変わります。</figcaption></figure>
+<figure id="ip-rights-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="制御方法や部品の形状、特許・実用新案の対象を確認。製品の外観や目印、意匠・商標の目的を確認。写真や文章、著作権と許諾条件を確認"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">制御方法や部品の形状</text><text x="200" y="43">特許・実用新案の対象を確認</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">製品の外観や目印</text><text x="200" y="106">意匠・商標の目的を確認</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">写真や文章</text><text x="200" y="169">著作権と許諾条件を確認</text></g></svg><figcaption>一つの製品でも、保護したい対象を選ぶと参照する制度が変わります。</figcaption></figure>
 
 ### 社内で買ったソフトを取引先に使わせられるか
 
@@ -115,3 +115,52 @@
 ### 利用目的から権利と条件を選び直す
 
 社内で購入した画像を宣伝に転用する案では、購入した素材のライセンスに広告利用と改変が含まれるかを見ます。実際の画像には撮影者の著作権に加え、写った人物や第三者の商標など別の論点もあり得ます。反対に、競合の装置と同じ性能を目指す場合は、機能の説明を読めることと、特許で保護された技術を自由に実施できることは同じではありません。何を利用し、誰に見せ、どこで配布するかを明確にします。
+
+<span id="ip-rights-decision-section"></span>
+
+## 公開する物ごとに権利と許諾の範囲を確かめる
+
+一つの作品やシステムを公開する場合でも、そこに含まれるものを取り出して確認します。名前や標章、外観、技術の仕組み、文章や画像には、保護の対象や条件が異なる制度があります。既に手元にある素材を他人が使える場所へ出すときは、その素材の利用条件に戻り、使う人、加工の有無、公開先を照合します。許可の文言を判断の根拠にすることで、購入代金を払ったという事実から、別の利用形態の権限まで推測する誤りを防げます。
+
+<figure id="ip-rights-worked-decision">
+<figcaption id="ip-rights-worked-decision-caption">社内向け研修資料を公開する前の確認票</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-rights-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">構成物</th><th scope="col">確認した条件</th><th scope="col">公開前にすること</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">社員が作った説明文</th><td>社外公開は別途承認を要する社内規程</td><td>公開承認を得る</td></tr>
+    <tr><th scope="row">購入した写真</th><td>社内研修での利用だけ許諾済み</td><td>公開許諾を確認するか差し替える</td></tr>
+    <tr><th scope="row">他社製品のロゴ</th><td>標章の利用規程に掲載用途の条件がある</td><td>用途と表示の仕方を照合する</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+例えば、社内研修の資料を、取引先が自由にダウンロードできる共有場所へ移すと、利用者と公開先が変わります。写真を小さく貼り直しても、社外公開の条件を満たしたことにはなりません。公開用に作った自作図へ写真を差し替え、元の版は社内向けとして分けて保管します。資料全体について社内承認が得られても、購入した写真について販売元の許諾が別に必要かは、利用条件と照らし合わせます。
+
+<section class="guided-lesson" id="ip-rights-guided-transfer" aria-labelledby="ip-rights-guided-transfer-title">
+<h3 id="ip-rights-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-rights-guided-transfer-prompt">写真の条件が「公開ページへの掲載可、加工不可」に変わりました。公開版で写真の一部を切り取る編集が必要です。何を先に確認しますか。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="利用条件では、掲載先に関する許可と加工に関する許可を別に読みます。" aria-labelledby="ip-rights-guided-transfer-title" aria-describedby="ip-rights-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-rights-guided-transfer-1"><input type="radio" id="ip-rights-guided-transfer-1" name="answer" value="1"> 購入済みなので加工して公開する</label><br>
+<label for="ip-rights-guided-transfer-2"><input type="radio" id="ip-rights-guided-transfer-2" name="answer" value="2"> 切り取りの許諾を確認するか、条件を満たす素材に交換する</label><br>
+<label for="ip-rights-guided-transfer-3"><input type="radio" id="ip-rights-guided-transfer-3" name="answer" value="3"> 掲載できると書いてあれば加工もできる</label><br>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>公開ページへの掲載が認められても、加工の条件は残ります。切り取りを認める追加の許諾を得るか、使い方に合う素材へ変更します。</p>
+</details>
+</section>
+
+<span id="ip-rights-decision-independent"></span>
+
+### 自分で判断する
+
+社外公開を許諾された説明図を、別の製品の広告に転用します。許諾書には「研修会の公開ページで掲載可」とあります。文言と今回の使い方のどこが異なりますか。
+
+<details><summary>考え方と答えを確認する</summary><p>今回の用途は別製品の広告です。「研修会の公開ページ」は公開されるという点が同じでも、指定の目的と異なります。別製品の広告への転用が含まれるかを権利者に確認するか、広告で使える素材に替えます。</p></details>

@@ -7,7 +7,7 @@
   'order': 28,
   'minutes': 60,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 17,
   'syllabus': [45, 46],
   'objectives': ['OSの資源管理を説明する', 'ファイルの経路と権限を扱う'],
@@ -60,7 +60,7 @@ OSの管理対象とファイル操作の意味を理解し、権限と復旧を
 
 フォルダ `/study/week1` にいるとき、`../data/a.csv` は「親の `/study` に上がってから `data/a.csv` へ」を表します。到達先は `/study/data/a.csv` です。現在位置を `/study/week1/notes` に変えて同じ相対パスを使うと、今度は `/study/week1/data/a.csv` を参照します。パスの先頭から所在が決まる絶対パスなら現在位置に影響されません。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="現在位置：/study/week1、.. で親へ：/study、data へ移動：/study/data、a.csv を開く：/study/data/a.csv"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">現在位置：/study/week1</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">.. で親へ：/study</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">data へ移動：/study/data</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">a.csv を開く：/study/data/a.csv</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>相対パスは現在位置とセットで読みます。別の場所で実行する場合は到達先を引き直します。</figcaption></figure>
+<figure id="ip-os-files-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="現在位置：/study/week1、.. で親へ：/study、data へ移動：/study/data、a.csv を開く：/study/data/a.csv"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">現在位置：/study/week1</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">.. で親へ：/study</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">data へ移動：/study/data</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">a.csv を開く：/study/data/a.csv</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>相対パスは現在位置とセットで読みます。別の場所で実行する場合は到達先を引き直します。</figcaption></figure>
 
 ## 利用者の権限と資源の不足を切り分ける
 
@@ -74,7 +74,7 @@ OSの管理対象とファイル操作の意味を理解し、権限と復旧を
 
 店舗のPCで、ある利用者は共有フォルダを読めますが書き込めません。別の利用者は一時的に処理が重くなると訴えています。OSが管理する権限、処理、主記憶、保存先を分けて考えます。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="実行、OSが仕事の切替えを管理。記憶、主記憶と仮想記憶を管理。保存、ファイル名から保存先へ。権限、許可された操作だけ実行"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">実行</text><text x="126" y="29" fill="currentColor" font-size="14">OSが仕事の切替えを管理</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">記憶</text><text x="126" y="83" fill="currentColor" font-size="14">主記憶と仮想記憶を管理</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">保存</text><text x="126" y="137" fill="currentColor" font-size="14">ファイル名から保存先へ</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">権限</text><text x="126" y="191" fill="currentColor" font-size="14">許可された操作だけ実行</text></svg><figcaption>OSは資源へのアクセスを調整します。症状に合わせて対象を切り分けます。</figcaption></figure>
+<figure id="ip-os-files-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="実行、OSが仕事の切替えを管理。記憶、主記憶と仮想記憶を管理。保存、ファイル名から保存先へ。権限、許可された操作だけ実行"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">実行</text><text x="126" y="29" fill="currentColor" font-size="14">OSが仕事の切替えを管理</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">記憶</text><text x="126" y="83" fill="currentColor" font-size="14">主記憶と仮想記憶を管理</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">保存</text><text x="126" y="137" fill="currentColor" font-size="14">ファイル名から保存先へ</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">権限</text><text x="126" y="191" fill="currentColor" font-size="14">許可された操作だけ実行</text></svg><figcaption>OSは資源へのアクセスを調整します。症状に合わせて対象を切り分けます。</figcaption></figure>
 
 <span id="os-files-textbook-skill-1"></span>
 
@@ -109,3 +109,22 @@ OSはプログラムに仮想的なアドレス空間を用意し、実際の主
 </details>
 
 **復習の目安**　パスをたどり、処理遅延、容量、権限のどれを調べるか判断できます。
+
+<section class="guided-lesson" id="guided-ip-os-files" aria-labelledby="ip-os-files-guided-title">
+<h3 id="ip-os-files-guided-title">途中で確認　同じ名前の見分け方</h3>
+<p id="ip-os-files-guided-prompt">部署Aと部署Bに、それぞれ report.csv があります。部署Aの処理で別の部署のファイルを誤って読まないために、どの情報を確認しますか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="名前が同じという条件から、フォルダまで同じとは言えません。" aria-labelledby="ip-os-files-guided-title" aria-describedby="ip-os-files-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-os-files-guided-answer" value="choice-2"> 最後に更新された方を、部署に関係なく読み込む</label>
+<label><input type="radio" name="ip-os-files-guided-answer" value="correct"> ファイル名に加え、どのフォルダからたどるかを確認する</label>
+<label><input type="radio" name="ip-os-files-guided-answer" value="choice-1"> 拡張子が同じなら、開いたファイルの内容は同じとみなす</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>ファイルを特定するには、保存場所を含むパスを確認します。相対パスなら基準になるフォルダも手順に含めます。更新日時による選択は、「部署Aのファイルを読む」という条件とは別の条件です。</p>
+</details>
+</section>

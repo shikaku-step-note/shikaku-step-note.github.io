@@ -7,7 +7,7 @@
   'order': 37,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 22,
   'syllabus': [59, 60],
   'objectives': ['代表的なプロトコルの役割を説明する', 'アドレスと名前の関係を理解する'],
@@ -57,7 +57,7 @@ HTTPSはTLSを用い、証明書を適切に検証した接続では相手の確
 
 新しい端末をLANに接続し、名前で社内Webページを開きます。DHCPを利用する構成なら、端末はIPアドレスなどの設定を受け取ります。DNSはWebサイト名を接続先のIPアドレスに対応づけます。その接続先と通信を始め、HTTPSならTLSで通信相手の確認や保護を行った上で、HTTPの要求・応答をやり取りします。IPアドレスで到達できるのに名前から接続先が分からないなら、最初にDNS側の問題を切り分けます。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="DHCP：端末のネットワーク設定、DNS：サイト名から接続先を取得、TLS：通信相手を確認し保護、HTTP：ページを要求し応答を受ける"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">DHCP：端末のネットワーク設定</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">DNS：サイト名から接続先を取得</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">TLS：通信相手を確認し保護</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">HTTP：ページを要求し応答を受ける</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>端末側の設定、名前解決、通信の保護、Webの内容交換を分けて追います。</figcaption></figure>
+<figure id="ip-protocols-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="DHCP：端末のネットワーク設定、DNS：サイト名から接続先を取得、TLS：通信相手を確認し保護、HTTP：ページを要求し応答を受ける"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">DHCP：端末のネットワーク設定</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">DNS：サイト名から接続先を取得</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">TLS：通信相手を確認し保護</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">HTTP：ページを要求し応答を受ける</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>端末側の設定、名前解決、通信の保護、Webの内容交換を分けて追います。</figcaption></figure>
 
 ## 送るものと優先する性質から方式を選ぶ
 
@@ -71,7 +71,7 @@ Web画面を開くとき、アプリケーションのHTTP要求はトランス�
 
 OSI基本参照モデルでは、信号を伝える物理層、同じ区間でフレームを運ぶデータリンク層、ネットワーク間を扱うネットワーク層、端点間の通信を扱うトランスポート層、対話を管理するセション層、データ表現を扱うプレゼンテーション層、アプリケーションに機能を提供するアプリケーション層の七つに分けます。TCP/IPの四層モデルでは、下の物理・データリンクに当たる働きをネットワークインタフェース層に、上のセション・表現・サービスに当たる働きをアプリケーション層にまとめて考えることが多く、対応は機能の概略です。実際の通信方式が必ず七つの独立した処理に分かれて実装されるわけではありません。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="Webの要求と応答：アプリケーション、端点間の通信：トランスポート、別ネットワークへ運ぶ：IP、目の前の通信区間：LAN"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">Webの要求と応答：アプリケーション</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">端点間の通信：トランスポート</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">別ネットワークへ運ぶ：IP</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">目の前の通信区間：LAN</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じWeb接続を上位からたどると、サービスの処理と通信経路の働きを切り分けられます。</figcaption></figure>
+<figure id="ip-protocols-figure-2"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="Webの要求と応答：アプリケーション、端点間の通信：トランスポート、別ネットワークへ運ぶ：IP、目の前の通信区間：LAN"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">Webの要求と応答：アプリケーション</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">端点間の通信：トランスポート</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">別ネットワークへ運ぶ：IP</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">目の前の通信区間：LAN</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じWeb接続を上位からたどると、サービスの処理と通信経路の働きを切り分けられます。</figcaption></figure>
 
 複数の機器で記録時刻を比較したい場合、NTPで時刻を合わせれば、時計のずれによる並びの誤りを減らせます。FTPはファイル転送のためのプロトコルです。保護が必要なデータでは、サービスの通信が暗号化される構成かを確認します。メールではMIMEにより添付などのデータの種類や表現を扱えます。多数の利用者に同報する場合、宛先を互いに知らせる必要があるかを考えます。CCは受信者から見え、BCCは通常、他の受信者にその宛先を表示しません。
 
@@ -87,7 +87,7 @@ OSI基本参照モデルでは、信号を伝える物理層、同じ区間で�
 
 社内で新しい端末を使い始めます。無線に接続できたこと、サービス名から接続先を調べられたこと、サーバに届いたこと、サービスにログインできたことはそれぞれ別の確認です。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="設定、DHCPなどで端末を設定。名前、DNSで接続先を調べる。通信、接続し相手の証明書を確認。利用、HTTP応答と操作権限を確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">設定</text><text x="126" y="29" fill="currentColor" font-size="14">DHCPなどで端末を設定</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">名前</text><text x="126" y="83" fill="currentColor" font-size="14">DNSで接続先を調べる</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">通信</text><text x="126" y="137" fill="currentColor" font-size="14">接続し相手の証明書を確認</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">利用</text><text x="126" y="191" fill="currentColor" font-size="14">HTTP応答と操作権限を確認</text></svg><figcaption>画面でサービスを開けない場合、どの段階まで成功したかを確かめます。</figcaption></figure>
+<figure id="ip-protocols-figure-3"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="設定、DHCPなどで端末を設定。名前、DNSで接続先を調べる。通信、接続し相手の証明書を確認。利用、HTTP応答と操作権限を確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">設定</text><text x="126" y="29" fill="currentColor" font-size="14">DHCPなどで端末を設定</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">名前</text><text x="126" y="83" fill="currentColor" font-size="14">DNSで接続先を調べる</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">通信</text><text x="126" y="137" fill="currentColor" font-size="14">接続し相手の証明書を確認</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">利用</text><text x="126" y="191" fill="currentColor" font-size="14">HTTP応答と操作権限を確認</text></svg><figcaption>画面でサービスを開けない場合、どの段階まで成功したかを確かめます。</figcaption></figure>
 
 <span id="protocols-textbook-skill-1"></span>
 
@@ -122,3 +122,22 @@ IPは別のネットワークへパケットを届ける役割を担います。
 </details>
 
 **復習の目安**　通信の各段階とプロトコルを対応させ、成功した部分と追加で調べる部分を説明できます。
+
+<section class="guided-lesson" id="guided-ip-protocols" aria-labelledby="ip-protocols-guided-title">
+<h3 id="ip-protocols-guided-title">途中で確認　名前の解決と通信の保護</h3>
+<p id="ip-protocols-guided-prompt">ブラウザがサーバの名前から接続先のIPアドレスを得た後、Web通信の内容を保護します。二つの役割の組合せはどれですか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="接続先を知る作業と、接続後のデータを保護する作業を分けます。" aria-labelledby="ip-protocols-guided-title" aria-describedby="ip-protocols-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-protocols-guided-answer" value="correct"> 名前から接続先を調べるのがDNS、Web通信を保護するのがHTTPS</label>
+<label><input type="radio" name="ip-protocols-guided-answer" value="choice-1"> 名前から接続先を調べるのがHTTPS、Web通信を保護するのがDNS</label>
+<label><input type="radio" name="ip-protocols-guided-answer" value="choice-2"> どちらも同じ役割で、名前が分かれば通信の保護も済む</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>DNSで名前に対応するIPアドレスを調べます。HTTPSはTLSを使い、Web通信の暗号化などを行います。接続先のIPアドレスを知るだけでは、送るデータの保護はできません。</p>
+</details>
+</section>

@@ -7,7 +7,7 @@
   'order': 15,
   'minutes': 60,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 8,
   'syllabus': [25],
   'objectives': ['開発工程とテストの目的を区別する', '安全な移行と保守を計画する'],
@@ -25,7 +25,7 @@
 
 ## 要件から実装へ進む
 
-システム開発では要件定義、設計、実装、テスト、移行、運用・保守を関連付けます。外部設計では利用者から見た画面や入出力、内部設計では処理やデータの構造を具体化します。レビューは成果物を他者と点検する活動で、実行前にも不整合を見つけられます。
+システム開発では要件定義、設計、実装、テスト、移行、運用・保守を関連付けます。外部設計では利用者から見た画面や入出力、内部設計では処理やデータの構造を具体化します。実装では、設計した処理をプログラムに記述します。この作業がコーディングです。レビューは成果物を他者と点検する活動で、実行前にも不整合を見つけられます。
 
 ## テストごとの役割
 
@@ -58,7 +58,7 @@
 <span id="depth-development-test"></span>
 ## 故障の範囲に合わせてテストを選ぶ
 
-<figure><svg viewBox="0 0 330 210" width="330" height="210" style="display:block;max-width:100%;height:auto" role="img" aria-label="テストの観察範囲。単体は判定部品、結合は画面と判定と台帳の連携、受入れは受付業務全体"><rect x="5" y="5" width="320" height="199" rx="12" fill="currentColor" fill-opacity=".05" stroke="currentColor" stroke-dasharray="5 4"/><text x="17" y="30" fill="currentColor" font-size="14">受入れ：職員が受付業務を完了できるか</text><rect x="17" y="50" width="296" height="131" rx="9" fill="none" stroke="currentColor"/><text x="28" y="75" fill="currentColor" font-size="14">結合：画面・判定・台帳がつながるか</text><g text-anchor="middle" font-size="14" fill="currentColor"><text x="54" y="127">画面</text><text x="165" y="127">判定</text><text x="275" y="127">台帳</text><text x="165" y="157">単体：締切条件</text></g><rect x="105" y="90" width="120" height="77" rx="6" fill="currentColor" fill-opacity=".09" stroke="currentColor"/><path d="M71 122h25m-7-5 7 5-7 5m143-5h25m-7-5 7 5-7 5" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>同じ予約取消でも、判定部品、部品間の連携、利用現場の業務では、それぞれ確認する範囲が異なります。</figcaption></figure>
+<figure id="ip-development-test-scope"><svg viewBox="0 0 330 210" width="330" height="210" style="display:block;max-width:100%;height:auto" role="img" aria-label="テストの観察範囲。単体は判定部品、結合は画面と判定と台帳の連携、受入れは受付業務全体"><rect x="5" y="5" width="320" height="199" rx="12" fill="currentColor" fill-opacity=".05" stroke="currentColor" stroke-dasharray="5 4"/><text x="17" y="30" fill="currentColor" font-size="14">受入れ：職員が受付業務を完了できるか</text><rect x="17" y="50" width="296" height="131" rx="9" fill="none" stroke="currentColor"/><text x="28" y="75" fill="currentColor" font-size="14">結合：画面・判定・台帳がつながるか</text><g text-anchor="middle" font-size="14" fill="currentColor"><text x="54" y="127">画面</text><text x="165" y="127">判定</text><text x="275" y="127">台帳</text><text x="165" y="157">単体：締切条件</text></g><rect x="105" y="90" width="120" height="77" rx="6" fill="currentColor" fill-opacity=".09" stroke="currentColor"/><path d="M71 122h25m-7-5 7 5-7 5m143-5h25m-7-5 7 5-7 5" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>同じ予約取消でも、判定部品、部品間の連携、利用現場の業務では、それぞれ確認する範囲が異なります。</figcaption></figure>
 
 締切を「当日17:00より前」とします。16:59は受付、17:00と17:01は拒否です。単体テストで時刻の条件を確認できても、取消処理と台帳更新が別部品なら、両方が連携して空き枠を正しく戻すかは結合テストで確かめます。システム全体のテストでは、接続数や応答時間などの要件も測ります。利用部門は受入れテストで、利用者が取消を完了し、職員が実際の手順で空き枠を再案内できるかを確認します。実装者のテストが全て通っていても、実際の業務に必要な手順が要件から漏れていれば、受入れで見つかります。
 
@@ -75,7 +75,7 @@
 <span id="depth-development-estimate"></span>
 ## 規模、工数、期間を分けて見積もる
 
-前の講習サイトが100機能ポイント、実績80人日だったとします。機能ポイントは入力・出力など利用者から見える機能を基に規模を表す指標です。同じ生産性を仮定すると、125機能ポイントの新システムは 80 ÷ 100 × 125 ＝ 100人日です。ここでの生産性は 100 ÷ 80 ＝ 1.25機能ポイント／人日なので、125 ÷ 1.25 でも100人日と確かめられます。
+前の講習サイトが100機能ポイント、実績80人日だったとします。ファンクションポイント（機能ポイント）は、入力・出力など利用者から見える機能を基に規模を表す指標です。この規模を使って見積もる方法をファンクションポイント法と呼びます。同じ生産性を仮定すると、125機能ポイントの新システムは 80 ÷ 100 × 125 ＝ 100人日です。ここでの生産性は 100 ÷ 80 ＝ 1.25機能ポイント／人日なので、125 ÷ 1.25 でも100人日と確かめられます。
 
 2人なら常に50日で終わるとは限りません。担当者を増やしても、要件合意や受入れを前倒しできない場合があります。また、外部の台帳との接続に不慣れなら、過去と同じ生産性の前提を見直します。過去の類似案件と比較して違いを補正するのが類推見積りです。チーム内で作業の大きさを基準作業と比べる相対見積りは、実績で換算根拠を作るまで、点数だけから納期を確定できません。
 
@@ -100,7 +100,7 @@
 
 新しい予約ルールを入れるとき、変更箇所だけが動いても取消処理が壊れることがあります。以前正常だった操作も選び直し、変更で劣化していないか回帰テストで確かめます。運用引継ぎでは利用手順と障害時の連絡先、復旧方法を残します。
 
-<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="要求と受入確認, 要求, 予約できる, 実装, 予約処理, 受入, 利用部門で確認"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">要求</text><text x="68" y="51">予約できる</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">実装</text><text x="211" y="51">予約処理</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">受入</text><text x="354" y="51">利用部門で確認</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>承認した要求を、受入時に検証できる条件に落とし込みます。</figcaption></figure>
+<figure id="ip-development-requirement-acceptance"><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="要求と受入確認, 要求, 予約できる, 実装, 予約処理, 受入, 利用部門で確認"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">要求</text><text x="68" y="51">予約できる</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">実装</text><text x="211" y="51">予約処理</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">受入</text><text x="354" y="51">利用部門で確認</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>承認した要求を、受入時に検証できる条件に落とし込みます。</figcaption></figure>
 
 <details><summary>機能が一つずつ正常なら、連携も正常？</summary><p>機能間のデータ形式や呼出し順は別に確認します。連携を見る試験が結合テストです。</p></details>
 
@@ -140,6 +140,51 @@
 開設後、外部サービスが通知に使うデータ形式を変更し、旧形式では結果が届かなくなりました。通知仕様に合わせて変換を直し、変更する部品の動作だけでなく、予約確定や取消しの従来の流れも回帰テストで確認します。この仕事は新システムの受入れではなく、稼働中の機能を使い続けるための保守です。変更後の障害に備えて、導入前の状態と判断条件も記録します。
 
 <span id="textbook-development-migration"></span>
+
+<span id="ip-development-new-worked-example"></span>
+
+### 移行件数が合っても、受入れ前に照合する
+
+移行の確認では、件数と対応関係の両方を調べます。件数が合うと、全体として同じ数だけ記録されていることが分かります。個々の記録を確かめるには、予約番号など、1件を特定できるキーを使い、旧環境と新環境で日時や状態を比較します。
+
+例えば、旧環境の予約番号が A101、A102、A103、新環境が A101、A102、A102 だとします。どちらも3件ですが、A103が欠け、A102が重複しています。まず予約番号の違いを調べます。次に、予約番号がそろった状態でも、予約日や有効・取消しの状態が変わっていないかを確認します。予約番号が一致しても、取消し済みの予約を有効と取り込めば、当日の受付に影響が出るためです。
+
+受入れを判断するときは、要件に基づく合格条件に戻ります。異常があれば移行記録と変換手順を照合し、修正して再試験します。旧環境へ戻す条件や、その間の更新をどう記録するかも、切替えの前に決めておきます。
+
+<figure id="ip-development-worked-evidence">
+<figcaption id="ip-development-worked-evidence-caption">受入れ判定に必要な照合</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-development-worked-evidence-caption">
+<table>
+  <thead>
+    <tr><th scope="col">調べるもの</th><th scope="col">見つけられること</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">旧・新の件数</th><td>件数の増減を検出できる。欠落と重複が相殺されると件数は一致する。</td></tr>
+    <tr><th scope="row">予約番号の集合と重複</th><td>移行元にしかない番号と、移行先で複数回現れる番号を分けて探す。</td></tr>
+    <tr><th scope="row">番号ごとの日時・状態</th><td>件数と番号が一致した後に、予約日や取消し状態の変換を確かめる。</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="guided-ip-development" aria-labelledby="guided-ip-development-title">
+<h3 id="guided-ip-development-title">途中で確認　件数も番号も合った後の照合</h3>
+<p id="guided-ip-development-prompt">旧環境と新環境で予約件数と予約番号が一致し、番号の重複もありません。新環境では取消し済みの数件が有効になっていると疑われます。受入れ判断の前に何を調べますか。</p>
+<form data-guided-practice data-expected="b" data-guided-hint="" aria-labelledby="guided-ip-development-title" aria-describedby="guided-ip-development-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label class="quiz-option"><input type="radio" name="answer" value="a" data-guided-hint="予約の欠落がなくても、一件ずつの状態は変わることがあります。"> 全件数をもう一度数える。</label>
+<label class="quiz-option"><input type="radio" name="answer" value="b" data-guided-hint=""> 同じ予約番号ごとに、移行前後の状態を照合する。</label>
+<label class="quiz-option"><input type="radio" name="answer" value="c" data-guided-hint="応答時間は非機能要件の確認に使います。今回は予約の状態を調べます。"> 画面を開く時間だけを測る。</label>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>予約番号で旧環境と新環境を対応付け、同じ予約の状態を比較します。件数や番号だけでは状態の変換結果が分かりません。差があれば、変換規則を修正し、取消し済みと有効の両方を再試験します。</p>
+</details>
+</section>
 
 ### 自分で解く：移行した翌日の食い違い
 

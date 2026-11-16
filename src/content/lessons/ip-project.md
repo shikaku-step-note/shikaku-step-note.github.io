@@ -7,7 +7,7 @@
   'order': 17,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 10,
   'syllabus': [27],
   'objectives': ['WBSとスケジュールを関連付ける', '制約とリスクを踏まえて計画する'],
@@ -40,7 +40,7 @@
 
 ## 変更とリスクを管理する
 
-リスクは起きるか不確かな事象、課題は既に発生した問題として区別します。リスクの影響と発生可能性を見積もり、回避・低減・移転・受容などを選びます。変更時はスコープ、費用、納期、品質への影響を評価し承認します。EVMでは計画価値PV、出来高EV、実コストACを比較し、単に予算を使っていないことを順調と誤認しないようにします。
+リスクは起きるか不確かな事象、課題は既に発生した問題として区別します。リスクの影響と発生可能性を見積もり、回避・軽減（低減）・転嫁（移転）・受容などを選びます。変更時はスコープ、費用、納期、品質への影響を評価し承認します。EVMでは計画価値PV、出来高EV、実コストACを比較し、単に予算を使っていないことを順調と誤認しないようにします。
 
 <span id="depth-project-plan"></span>
 ## 開始前に、何を終えたら成功かを決める
@@ -52,7 +52,7 @@ WBSでは、例えば「受付を切り替える」という成果を、移行�
 <span id="depth-project-network"></span>
 ## 二つの経路で、何日まで待てるかを計算する
 
-<figure><svg viewBox="0 0 340 180" width="340" height="180" style="display:block;max-width:100%;height:auto" role="img" aria-label="開始からAに4日。Aの後の上経路はBに8日、下経路はCに5日とDに2日。両経路の後にEを3日"><g stroke="currentColor" stroke-width="2" fill="none"><path d="M10 90h39m-7-5 7 5-7 5M109 90h8V39h22m-7-5 7 5-7 5M109 90h8v50h22m-7-5 7 5-7 5M200 39h50v51h18m-7-5 7 5-7 5M199 140h17m-7-5 7 5-7 5M277 140h13v-25m-5 7 5-7 5 7"/><g fill="currentColor" fill-opacity=".08"><rect x="49" y="67" width="60" height="46" rx="5"/><rect x="139" y="16" width="61" height="46" rx="5"/><rect x="139" y="117" width="60" height="46" rx="5"/><rect x="217" y="117" width="60" height="46" rx="5"/><rect x="269" y="67" width="60" height="46" rx="5"/></g></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="79" y="96">A：4日</text><text x="169" y="45">B：8日</text><text x="169" y="146">C：5日</text><text x="247" y="146">D：2日</text><text x="299" y="96">E：3日</text></g></svg><figcaption>Aの後でBとCが分かれます。EはBとDの完了を待って始めます。長い方の経路が全体の最短日数を決めます。</figcaption></figure>
+<figure id="ip-project-parallel-paths"><svg viewBox="0 0 340 180" width="340" height="180" style="display:block;max-width:100%;height:auto" role="img" aria-label="開始からAに4日。Aの後の上経路はBに8日、下経路はCに5日とDに2日。両経路の後にEを3日"><g stroke="currentColor" stroke-width="2" fill="none"><path d="M10 90h39m-7-5 7 5-7 5M109 90h8V39h22m-7-5 7 5-7 5M109 90h8v50h22m-7-5 7 5-7 5M200 39h50v51h18m-7-5 7 5-7 5M199 140h17m-7-5 7 5-7 5M277 140h13v-25m-5 7 5-7 5 7"/><g fill="currentColor" fill-opacity=".08"><rect x="49" y="67" width="60" height="46" rx="5"/><rect x="139" y="16" width="61" height="46" rx="5"/><rect x="139" y="117" width="60" height="46" rx="5"/><rect x="217" y="117" width="60" height="46" rx="5"/><rect x="269" y="67" width="60" height="46" rx="5"/></g></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="79" y="96">A：4日</text><text x="169" y="45">B：8日</text><text x="169" y="146">C：5日</text><text x="247" y="146">D：2日</text><text x="299" y="96">E：3日</text></g></svg><figcaption>Aの後でBとCが分かれます。EはBとDの完了を待って始めます。長い方の経路が全体の最短日数を決めます。</figcaption></figure>
 
 開始時点を0日とします。Aの完了は4日、Bの完了は12日です。もう一方はCが9日、続くDが11日に終わります。Eの開始は遅い方の12日、完了は15日です。A→B→Eがクリティカルパスです。遅らせられる日数は、合流点で比較すると求められます。Eを12日に始めるにはDは12日までに終わればよく、Dの最も遅い開始は12−2＝10日です。Dの最も早い開始は9日なので、余裕は1日です。Cを1日遅く始めても合流には間に合います。CとDを各1日ずつ遅らせると同じ経路に計2日の遅れが生じ、全体は1日遅れます。
 
@@ -64,6 +64,8 @@ Cが5日から7日に延びた場合、下の経路はA4＋C7＋D2＋E3＝16日�
 
 <span id="depth-project-control"></span>
 ## 変更と進捗を、関係者が判断できる形で伝える
+
+成果に影響を与える人や、成果から影響を受ける人をステークホルダと呼びます。プロジェクトのコミュニケーション管理では、誰が、何を、いつ知れば判断できるかを決めます。例えば費用の変更は承認者へ早く届け、受付手順の変更は窓口が訓練に使える時期に伝えます。同じ変更でも、読む人ごとに必要な情報が異なります。
 
 切替えの2週間前に、予約画面へ多言語案内を追加する要望が来たとします。口頭で引き受けると、翻訳、確認、研修、費用への影響が見えません。PMは変更の目的と優先度を記録し、依存作業と品質基準への影響を見積もり、決裁できる関係者に選択肢を示します。承認されれば、スコープ、日程、試験、周知先を更新します。定例報告では「80％進行」とだけ書かず、完了した成果、計画との差、原因、対応担当、期限、決裁が要る事項を分けて伝えます。
 
@@ -135,7 +137,7 @@ Aが2日、その後のBが6日、Cが3日、両方を待つDが1日なら、完
 | E | 0 | 5 | 5 |
 | F | 9 | 9 | 0 |
 
-<figure><svg viewBox="0 0 328 214" width="328" height="214" role="img" aria-label="作業AからFまでのガントチャート。Cは2日、Eは5日の余裕がある。" style="max-width:100%;height:auto"><g fill="currentColor" font-size="12" text-anchor="middle"><text x="39" y="19">0</text><path d="M39 25v150" stroke="currentColor" opacity=".15"/><text x="65" y="19">1</text><path d="M65 25v150" stroke="currentColor" opacity=".15"/><text x="91" y="19">2</text><path d="M91 25v150" stroke="currentColor" opacity=".15"/><text x="117" y="19">3</text><path d="M117 25v150" stroke="currentColor" opacity=".15"/><text x="143" y="19">4</text><path d="M143 25v150" stroke="currentColor" opacity=".15"/><text x="169" y="19">5</text><path d="M169 25v150" stroke="currentColor" opacity=".15"/><text x="195" y="19">6</text><path d="M195 25v150" stroke="currentColor" opacity=".15"/><text x="221" y="19">7</text><path d="M221 25v150" stroke="currentColor" opacity=".15"/><text x="247" y="19">8</text><path d="M247 25v150" stroke="currentColor" opacity=".15"/><text x="273" y="19">9</text><path d="M273 25v150" stroke="currentColor" opacity=".15"/><text x="299" y="19">10</text><path d="M299 25v150" stroke="currentColor" opacity=".15"/><text x="20" y="42">A</text><rect x="39" y="30" width="52" height="16" rx="2" opacity=".72"/><text x="20" y="67">B</text><rect x="91" y="55" width="130" height="16" rx="2" opacity=".72"/><text x="20" y="92">C</text><rect x="91" y="80" width="78" height="16" rx="2" opacity=".72"/><rect x="169" y="80" width="52" height="16" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="20" y="117">D</text><rect x="221" y="105" width="52" height="16" rx="2" opacity=".72"/><text x="20" y="142">E</text><rect x="39" y="130" width="104" height="16" rx="2" opacity=".72"/><rect x="143" y="130" width="130" height="16" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="20" y="167">F</text><rect x="273" y="155" width="26" height="16" rx="2" opacity=".72"/><text x="168" y="201">開始からの日数（点線は作業の余裕）</text></g></svg><figcaption>各行は最早開始で描いています。Cの実線の終端は5日目、点線の終端は7日目。Cを2日ずらしてもDを7日目に開始できます。Eの点線は9日目までです。</figcaption></figure>
+<figure id="ip-project-gantt-float"><svg viewBox="0 0 328 214" width="328" height="214" role="img" aria-label="作業AからFまでのガントチャート。Cは2日、Eは5日の余裕がある。" style="max-width:100%;height:auto"><g fill="currentColor" font-size="12" text-anchor="middle"><text x="39" y="19">0</text><path d="M39 25v150" stroke="currentColor" opacity=".15"/><text x="65" y="19">1</text><path d="M65 25v150" stroke="currentColor" opacity=".15"/><text x="91" y="19">2</text><path d="M91 25v150" stroke="currentColor" opacity=".15"/><text x="117" y="19">3</text><path d="M117 25v150" stroke="currentColor" opacity=".15"/><text x="143" y="19">4</text><path d="M143 25v150" stroke="currentColor" opacity=".15"/><text x="169" y="19">5</text><path d="M169 25v150" stroke="currentColor" opacity=".15"/><text x="195" y="19">6</text><path d="M195 25v150" stroke="currentColor" opacity=".15"/><text x="221" y="19">7</text><path d="M221 25v150" stroke="currentColor" opacity=".15"/><text x="247" y="19">8</text><path d="M247 25v150" stroke="currentColor" opacity=".15"/><text x="273" y="19">9</text><path d="M273 25v150" stroke="currentColor" opacity=".15"/><text x="299" y="19">10</text><path d="M299 25v150" stroke="currentColor" opacity=".15"/><text x="20" y="42">A</text><rect x="39" y="30" width="52" height="16" rx="2" opacity=".72"/><text x="20" y="67">B</text><rect x="91" y="55" width="130" height="16" rx="2" opacity=".72"/><text x="20" y="92">C</text><rect x="91" y="80" width="78" height="16" rx="2" opacity=".72"/><rect x="169" y="80" width="52" height="16" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="20" y="117">D</text><rect x="221" y="105" width="52" height="16" rx="2" opacity=".72"/><text x="20" y="142">E</text><rect x="39" y="130" width="104" height="16" rx="2" opacity=".72"/><rect x="143" y="130" width="130" height="16" fill="none" stroke="currentColor" stroke-dasharray="4 3"/><text x="20" y="167">F</text><rect x="273" y="155" width="26" height="16" rx="2" opacity=".72"/><text x="168" y="201">開始からの日数（点線は作業の余裕）</text></g></svg><figcaption>各行は最早開始で描いています。Cの実線の終端は5日目、点線の終端は7日目。Cを2日ずらしてもDを7日目に開始できます。Eの点線は9日目までです。</figcaption></figure>
 
 <details><summary>合流点の見方を確かめる：Cが2日遅れたら公開日はどうなるか</summary><p>Cは当初の5日目から7日目の完了に変わります。DはもともとBの終了を待って7日目に開始するので、全体の公開日は10日目のままです。次にCをもう1日遅らせるとどうなるか、表で追ってみましょう。</p></details>
 
@@ -148,6 +150,46 @@ Bを3日短縮して2日にすると、Bは4日目、Cは5日目に完了しま�
 次に同じ人がBとCを担当する条件を加えます。元の5日・3日で分割できないなら、BとCの合計8日がAの後に必要で、両方の完了は10日目、公開は13日目です。依存関係だけから得た10日を、そのまま人員の制約がある計画の納期には使えません。担当変更で並行化できるか、研修・引継ぎの時間がかかるかも進捗報告に含めます。
 
 <span id="textbook-project-report"></span>
+
+<span id="ip-project-new-worked-example"></span>
+
+### 担当が重なったら、追加された順序を工程に戻す
+
+工程表で並行できるのは、必要な人員や設備を確保できる場合です。同じ担当者が二つの作業を受け持つときは、両方を同時に開始できません。どちらを先に行うかで、その後の作業を待たせる時間が変わるため、各案で後続作業まで計算し直します。
+
+例えば、準備2日後にAを3日、Bを4日行います。Aの後には別の担当者がCを2日行い、BとCがそろってから最終確認に1日かかります。AとBを同じ担当者が行う場合、Aを先にすると時点5にAが終わり、同時にBとCが始まります。Bは時点9、Cは時点7で終わるため、最終確認は時点9から10です。Bを先にすると時点6にBが終わり、時点9にA、時点11にCが終わるので、最終確認は時点12までかかります。
+
+<figure id="ip-project-worked-evidence">
+<figcaption id="ip-project-worked-evidence-caption">作業順で後続作業の待ち時間が変わる</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-project-worked-evidence-caption">
+<table>
+  <thead>
+    <tr><th scope="col">AとBの順序</th><th scope="col">最終確認の開始・終了</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">Aの後にB</th><td>時点5からBとCを並行。Bが時点9までかかり、確認は9→10。</td></tr>
+    <tr><th scope="row">Bの後にA</th><td>CはAの終了を時点9まで待つ。確認は11→12。</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="guided-ip-project" aria-labelledby="guided-ip-project-title">
+<h3 id="guided-ip-project-title">途中で確認　担当の制約を入れて工期を求める</h3>
+<p id="guided-ip-project-prompt">準備は1日。準備後にAが2日、Bが3日で、A・Bを同じ担当者が同時には行えません。Aの後に別の担当者がCを4日行います。BとCが終わったら、最終確認を1日行います。Aを先にしたとき、全体は何日ですか。</p>
+<form data-guided-practice data-expected="8" data-guided-hint="Aの後にBとCを並行できます。最終確認はBとCのうち遅い方の終了を待ちます。" aria-labelledby="guided-ip-project-title" aria-describedby="guided-ip-project-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-ip-project-input">答え（日）</label> <input id="guided-ip-project-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>準備は時点1まで、Aは時点1から3までです。その後BとCを同時に始め、Bは時点6、Cは時点7に終わります。両方が終わった時点7から最終確認1日を加え、全体は8日です。</p>
+</details>
+</section>
 
 ### 自分で解く：何を報告すると判断できるか
 

@@ -7,7 +7,7 @@
   'order': 9,
   'minutes': 95,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 3,
   'syllabus': [10, 12],
   'objectives': ['STPと4Pを使って施策を整理する', 'ERP・SCM・CRMの役割を区別する'],
@@ -54,7 +54,7 @@ A案は500人中30人、B案は400人中32人が注文したとします。注�
 
 売場の相談履歴を使って次の案内を選ぶならCRM、営業担当者の商談段階を管理するならSFA、材料の調達から受取までの在庫・納期を整えるならSCMです。販売と会計を基幹データでつなぐERPと、一部の仕事を改善する仕組みは導入目的が異なります。
 
-<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="弁当店のSTP, 分ける, 利用場面, 選ぶ, 夕方の通勤者, 位置付け, 待たずに受取"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">分ける</text><text x="68" y="51">利用場面</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">選ぶ</text><text x="211" y="51">夕方の通勤者</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">位置付け</text><text x="354" y="51">待たずに受取</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>顧客層を決めた後、その人に何を価値として伝えるかを決めます。</figcaption></figure>
+<figure id="ip-marketing-existing-visual"><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="弁当店のSTP, 分ける, 利用場面, 選ぶ, 夕方の通勤者, 位置付け, 待たずに受取"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">分ける</text><text x="68" y="51">利用場面</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">選ぶ</text><text x="211" y="51">夕方の通勤者</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">位置付け</text><text x="354" y="51">待たずに受取</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>顧客層を決めた後、その人に何を価値として伝えるかを決めます。</figcaption></figure>
 
 <details><summary>注文が32件と30件なら、率も2ポイント差？</summary><p>分母を確認します。この例は32÷400と30÷500なので、差は2ポイントですが、件数差からは求まりません。</p></details>
 
@@ -68,7 +68,7 @@ A案は500人中30人、B案は400人中32人が注文したとします。注�
 
 当日納品を位置付けに選ぶなら、広告に『当日』と書く前に、注文の締切、受け取れるファイルの種類、仕事を受けられる量をそろえます。リスティング広告は特定の語で検索する人へ届きますが、今必要としていない人へ認知を広げる目的なら、異なる媒体と組み合わせます。広告の表示回数が増えたことは認知施策を評価する材料でも、購入が増えたことまでは示しません。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="広告を見る、表示数に対するクリック率。サービスを調べる、訪問に対する成約率。継続して利用する、初回購入に対する再購入率"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">広告を見る</text><text x="200" y="43">表示数に対するクリック率</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">サービスを調べる</text><text x="200" y="106">訪問に対する成約率</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">継続して利用する</text><text x="200" y="169">初回購入に対する再購入率</text></g></svg><figcaption>同じ販売施策でも、どの段階に課題があるかで比較する分母が変わります。</figcaption></figure>
+<figure id="ip-marketing-figure-2"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="広告を見る、表示数に対するクリック率。サービスを調べる、訪問に対する成約率。継続して利用する、初回購入に対する再購入率"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">広告を見る</text><text x="200" y="43">表示数に対するクリック率</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">サービスを調べる</text><text x="200" y="106">訪問に対する成約率</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">継続して利用する</text><text x="200" y="169">初回購入に対する再購入率</text></g></svg><figcaption>同じ販売施策でも、どの段階に課題があるかで比較する分母が変わります。</figcaption></figure>
 
 ### 購入回数の多さだけで顧客の次の行動を決めない
 
@@ -126,3 +126,51 @@ A案は500人中30人、B案は400人中32人が注文したとします。注�
 | 新人が実地で判断できるようになった | 文書の知識を使って身につけた | 内面化 |
 
 点検の台帳をERPに移しても、判断の手掛かりは自動で共有されません。確認表や事例を整備し、実地訓練と組み合わせます。
+
+<span id="ip-marketing-decision-section"></span>
+
+## 広告の反応を売上と費用につないで施策を選ぶ
+
+広告の数字は、見た人、商品説明に進んだ人、購入した人という順で比べます。どこで人が減ったかによって、直す場所が変わります。閲覧数を目標にする段階では広告文を見直し、広告を見た人が購入まで進むことを目標にする段階では注文の手順や条件も確認します。費用まで含めて比べる場合は、購入一件当たりに残る額を、購入数に掛けてから広告費を引きます。
+
+<figure id="ip-marketing-worked-decision">
+<figcaption id="ip-marketing-worked-decision-caption">同じ商品の広告を二つの経路で比較する</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-marketing-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">記録</th><th scope="col">経路A</th><th scope="col">経路B</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">広告の表示</th><td>2,000回</td><td>2,000回</td></tr>
+    <tr><th scope="row">クリック</th><td>120件</td><td>80件</td></tr>
+    <tr><th scope="row">購入（返品を除く）</th><td>12件</td><td>16件</td></tr>
+    <tr><th scope="row">広告費</th><td>5,000円</td><td>8,000円</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+表示を分母にしたクリック率はAが6％、Bが4％。クリックを分母にした購入率はAが10％、Bが20％です。同じ商品で、購入一件につき他の費用を引いた後に900円残るとします。広告費を引いた額は、Aが12×900−5,000＝5,800円、Bが16×900−8,000＝6,400円。クリック数が目的ならA、今回の条件で広告費まで引いた額ならBです。経路ごとに利用者の層が異なる場合は、その違いも結果に含まれます。
+
+<section class="guided-lesson" id="ip-marketing-guided-transfer" aria-labelledby="ip-marketing-guided-transfer-title">
+<h3 id="ip-marketing-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-marketing-guided-transfer-prompt">経路Bで、商品一件から広告費を引く前に残る金額が、返品後の手数料の事情で700円になりました。Bの16件に対して広告費8,000円も引くと、残る金額は何円ですか。</p>
+<form data-guided-practice data-expected="3200" data-guided-hint="広告を押した人の数より、この例で利益を生む購入件数を使います。" aria-labelledby="ip-marketing-guided-transfer-title" aria-describedby="ip-marketing-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-marketing-guided-transfer-input">答え（円）</label> <input id="ip-marketing-guided-transfer-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>16件×700円−8,000円＝3,200円です。条件を変える前の6,400円をそのまま使うと、手数料が増えたことを見落とします。</p>
+</details>
+</section>
+
+<span id="ip-marketing-decision-independent"></span>
+
+### 自分で判断する
+
+広告の表示は1万回で変わらず、クリックは400件から500件に、購入は80件から75件になりました。どこを追加で調べますか。
+
+<details><summary>考え方と答えを確認する</summary><p>表示を分母とするクリック率は4％から5％に上がり、クリックを分母とする購入率は20％から15％に下がっています。購入までに変わった条件を調べます。例えば広告文が実際の商品条件を正しく示すか、送料や購入手順に変更がないかを、対象者の違いと合わせて点検します。</p></details>

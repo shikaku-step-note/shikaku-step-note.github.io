@@ -7,7 +7,7 @@
   'order': 36,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 22,
   'syllabus': [58],
   'objectives': ['通信機器と接続範囲を区別する', '帯域と転送時間を計算する'],
@@ -51,7 +51,7 @@ LANは建物や組織内などのネットワーク、WANは広域の拠点等�
 
 転送時間はデータ量を回線の単位にそろえて求めます。30 MBを12 Mbit/sで送るなら、1バイト8ビットとして240÷12＝20秒です。実際には制御情報、再送、混雑によって時間が増え得ます。実効速度が与えられているならそれを使い、最大速度と混同しません。
 
-<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="LAN内とネットワーク間の中継, 端末, 送信元, スイッチ, LAN内, ルータ, 別の網へ"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">端末</text><text x="68" y="51">送信元</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">スイッチ</text><text x="211" y="51">LAN内</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">ルータ</text><text x="354" y="51">別の網へ</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>スイッチはLAN内の転送、ルータは異なるIPネットワークへの中継を担います。</figcaption></figure>
+<figure id="ip-network-figure-1"><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="LAN内とネットワーク間の中継, 端末, 送信元, スイッチ, LAN内, ルータ, 別の網へ"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">端末</text><text x="68" y="51">送信元</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">スイッチ</text><text x="211" y="51">LAN内</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">ルータ</text><text x="354" y="51">別の網へ</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>スイッチはLAN内の転送、ルータは異なるIPネットワークへの中継を担います。</figcaption></figure>
 
 <details><summary>12 Mbit/s の回線で毎秒12 MB送れる？</summary><p>ビットとバイトが違います。余分な通信を無視しても12÷8＝1.5 MB/sです。</p></details>
 
@@ -59,7 +59,7 @@ LANは建物や組織内などのネットワーク、WANは広域の拠点等�
 
 同じLANのファイル共有には接続でき、社外サイトには接続できないとします。端末からLAN上の相手までの通信はできているため、まず社外との境界や名前解決を調べます。スイッチはLAN内の機器を結び、ルータは異なるIPネットワーク間の経路を受け持ちます。無線LANのアクセスポイントは端末を無線でLANに接続します。家庭用機器ではこれらが一体になっていても、どの働きが必要かは別々に考えます。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="端末 → 無線アクセスポイント、LAN内の通信 → スイッチ、別ネットワークへ → ルータ、相手側のネットワークへ"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">端末 → 無線アクセスポイント</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">LAN内の通信 → スイッチ</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">別ネットワークへ → ルータ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">相手側のネットワークへ</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じLANの通信が通るなら、別ネットワークへ進む段階で何が追加になるかを追います。</figcaption></figure>
+<figure id="ip-network-figure-2"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="端末 → 無線アクセスポイント、LAN内の通信 → スイッチ、別ネットワークへ → ルータ、相手側のネットワークへ"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">端末 → 無線アクセスポイント</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">LAN内の通信 → スイッチ</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">別ネットワークへ → ルータ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">相手側のネットワークへ</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じLANの通信が通るなら、別ネットワークへ進む段階で何が追加になるかを追います。</figcaption></figure>
 
 ## 回線の速度と待ちを分けて見積もる
 
@@ -77,7 +77,7 @@ LANは建物や組織内などのネットワーク、WANは広域の拠点等�
 
 端末が別ネットワークへの通信を直接渡せないとき、既定の中継先として設定するのがデフォルトゲートウェイです。職員の端末が職員用の共有装置に接続できる一方で、社外への通信ができない場合、端末のゲートウェイ設定や中継先での通信可否を切り分けます。来客が職員用共有装置を利用できないのは、この事務所の方針どおりであれば故障ではありません。先に期待される範囲を確かめます。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="職員PC：同じ職員用LANへ接続、同一LAN内はスイッチが転送、社外宛ては既定の中継先へ、ルータが別ネットワークへ転送"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">職員PC：同じ職員用LANへ接続</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">同一LAN内はスイッチが転送</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">社外宛ては既定の中継先へ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">ルータが別ネットワークへ転送</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じLANと別ネットワークでは、経路に必要な働きが異なります。</figcaption></figure>
+<figure id="ip-network-figure-3"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="職員PC：同じ職員用LANへ接続、同一LAN内はスイッチが転送、社外宛ては既定の中継先へ、ルータが別ネットワークへ転送"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">職員PC：同じ職員用LANへ接続</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">同一LAN内はスイッチが転送</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">社外宛ては既定の中継先へ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">ルータが別ネットワークへ転送</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じLANと別ネットワークでは、経路に必要な働きが異なります。</figcaption></figure>
 
 ## 配線できない場所で、無線の使い方を選ぶ
 
@@ -91,7 +91,7 @@ LANは建物や組織内などのネットワーク、WANは広域の拠点等�
 
 倉庫の端末から社内プリンタには印刷できるのに、外部の発注先へつながりません。端末、同じLAN、別のネットワーク、接続先という順に、確認できた事実を分けて調べます。
 
-<figure><svg viewBox="0 0 340 155" width="340" height="155" style="max-width:100%;height:auto" role="img" aria-label="倉庫内の端末とプリンタはLANのスイッチに接続し、他のネットワークへはルータを通る。"><g stroke="currentColor" fill="none" stroke-width="1.6"><rect x="5" y="4" width="205" height="145" rx="8" stroke-dasharray="5 3"/><rect x="16" y="43" width="78" height="34" rx="5"/><rect x="16" y="99" width="78" height="34" rx="5"/><rect x="115" y="68" width="79" height="35" rx="5"/><rect x="225" y="68" width="93" height="35" rx="5"/><path d="M95 60h10v25h10m-20 31h10V85m90 0h30m93 0h19"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="92" y="26">同じLAN</text><text x="55" y="65">端末</text><text x="55" y="121">プリンタ</text><text x="154" y="90">スイッチ</text><text x="271" y="90">ルータ</text><text x="270" y="129">別のネットワークへ</text></g></svg><figcaption>LAN内の接続と、ルータから先の接続を別々に確認します。</figcaption></figure>
+<figure id="ip-network-figure-4"><svg viewBox="0 0 340 155" width="340" height="155" style="max-width:100%;height:auto" role="img" aria-label="倉庫内の端末とプリンタはLANのスイッチに接続し、他のネットワークへはルータを通る。"><g stroke="currentColor" fill="none" stroke-width="1.6"><rect x="5" y="4" width="205" height="145" rx="8" stroke-dasharray="5 3"/><rect x="16" y="43" width="78" height="34" rx="5"/><rect x="16" y="99" width="78" height="34" rx="5"/><rect x="115" y="68" width="79" height="35" rx="5"/><rect x="225" y="68" width="93" height="35" rx="5"/><path d="M95 60h10v25h10m-20 31h10V85m90 0h30m93 0h19"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="92" y="26">同じLAN</text><text x="55" y="65">端末</text><text x="55" y="121">プリンタ</text><text x="154" y="90">スイッチ</text><text x="271" y="90">ルータ</text><text x="270" y="129">別のネットワークへ</text></g></svg><figcaption>LAN内の接続と、ルータから先の接続を別々に確認します。</figcaption></figure>
 
 <span id="network-textbook-skill-1"></span>
 
@@ -142,3 +142,22 @@ IPアドレスはネットワークを表す部分と、その中で機器を区
 **解答**　142は128〜191に入るので170です。126は64〜127、198は192〜255に入ります。別の範囲へ通信する場合は、別のネットワークへ届ける経路を使います。
 
 </details>
+
+<section class="guided-lesson" id="guided-ip-network" aria-labelledby="ip-network-guided-title">
+<h3 id="ip-network-guided-title">途中で確認　宛先までの受渡し</h3>
+<p id="ip-network-guided-prompt">別のネットワーク上のサーバへデータを送ります。途中のルータが流す方向を判断するとき、何を手掛かりにするでしょうか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="ネットワークをまたぐ経路の判断に使う住所を考えます。" aria-labelledby="ip-network-guided-title" aria-describedby="ip-network-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-network-guided-answer" value="choice-1"> ファイル名の拡張子と、画面の色を照合する</label>
+<label><input type="radio" name="ip-network-guided-answer" value="choice-2"> 送信者のメールアドレスを、受信者のフォルダ名と照合する</label>
+<label><input type="radio" name="ip-network-guided-answer" value="correct"> 宛先IPアドレスと、経路を示す情報を照合する</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>ルータは宛先IPアドレスと経路情報から、次に渡す方向を決めます。ファイル名やメールアドレスはアプリケーションのデータで、IPの経路を決める住所とは役割が違います。</p>
+</details>
+</section>

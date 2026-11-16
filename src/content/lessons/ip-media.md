@@ -7,7 +7,7 @@
   'order': 33,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 20,
   'syllabus': [52, 53],
   'objectives': ['デジタル化と容量を計算する', 'メディア形式と圧縮の違いを説明する'],
@@ -57,7 +57,7 @@
 
 非圧縮の音声を、48,000回/秒、1回につき1チャネル16ビット、ステレオ2チャネルで5秒記録します。1秒当たりは48,000×16×2＝1,536,000ビット。5秒で7,680,000ビット、8で割って960,000バイトです。ファイルの付加情報は無視しています。片方のチャネルだけなら同条件で半分です。「48,000回」を両チャネルの合計としてもう一度解釈したり、ビットをバイトと読んだりすると計算がずれます。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="1秒で標本を48,000回記録、1回：16ビット × 2チャネル、5秒：7,680,000ビット、8ビット/バイト → 960,000バイト"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">1秒で標本を48,000回記録</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">1回：16ビット × 2チャネル</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">5秒：7,680,000ビット</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">8ビット/バイト → 960,000バイト</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>最初から単位を書くと、チャネル数とビットからバイトへの換算を忘れにくくなります。</figcaption></figure>
+<figure id="ip-media-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="1秒で標本を48,000回記録、1回：16ビット × 2チャネル、5秒：7,680,000ビット、8ビット/バイト → 960,000バイト"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">1秒で標本を48,000回記録</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">1回：16ビット × 2チャネル</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">5秒：7,680,000ビット</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">8ビット/バイト → 960,000バイト</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>最初から単位を書くと、チャネル数とビットからバイトへの換算を忘れにくくなります。</figcaption></figure>
 
 ## 復元の必要性から形式と圧縮を選ぶ
 
@@ -71,7 +71,7 @@
 
 講義を公開するため、静止画の資料と音声を用意します。保管したいのは修正できる原版で、配信するのはスマートフォンで見やすい版です。用途が違えば必要なデータ量と許せる変化も異なります。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="個数、画素数または標本数。1個の量、色深度・量子化ビット数。付加要素、チャネル数・時間・枚数。単位、8で割りバイトへ換算"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">個数</text><text x="126" y="29" fill="currentColor" font-size="14">画素数または標本数</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">1個の量</text><text x="126" y="83" fill="currentColor" font-size="14">色深度・量子化ビット数</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">付加要素</text><text x="126" y="137" fill="currentColor" font-size="14">チャネル数・時間・枚数</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">単位</text><text x="126" y="191" fill="currentColor" font-size="14">8で割りバイトへ換算</text></svg><figcaption>無圧縮のデータ量は「個数×1個の情報量」を軸に計算できます。</figcaption></figure>
+<figure id="ip-media-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="個数、画素数または標本数。1個の量、色深度・量子化ビット数。付加要素、チャネル数・時間・枚数。単位、8で割りバイトへ換算"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">個数</text><text x="126" y="29" fill="currentColor" font-size="14">画素数または標本数</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">1個の量</text><text x="126" y="83" fill="currentColor" font-size="14">色深度・量子化ビット数</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">付加要素</text><text x="126" y="137" fill="currentColor" font-size="14">チャネル数・時間・枚数</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">単位</text><text x="126" y="191" fill="currentColor" font-size="14">8で割りバイトへ換算</text></svg><figcaption>無圧縮のデータ量は「個数×1個の情報量」を軸に計算できます。</figcaption></figure>
 
 <span id="media-textbook-skill-1"></span>
 
@@ -106,3 +106,21 @@
 </details>
 
 **復習の目安**　画素、標本、時間、ビット、バイトを対応させ、形式の選択理由を説明できます。
+
+<section class="guided-lesson" id="guided-ip-media" aria-labelledby="ip-media-guided-title">
+<h3 id="ip-media-guided-title">途中で確認　画素数とデータ量</h3>
+<p id="ip-media-guided-prompt">色を表すビット数が同じで、圧縮も行いません。横640、縦360画素の画像を、横1,280、縦720画素にすると、画素データの量は何倍ですか。数字で答えてください。</p>
+<form data-guided-practice data-expected="4" data-guided-hint="横が2倍、縦も2倍です。1画素当たりのビット数は変わりません。" aria-labelledby="ip-media-guided-title" aria-describedby="ip-media-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label for="ip-media-guided-answer">答え（数字）</label>
+<input type="text" inputmode="numeric" id="ip-media-guided-answer" autocomplete="off">
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>画素数は横×縦です。それぞれが2倍になるので2×2＝4倍になり、未圧縮の画素データも4倍です。ヘッダーや圧縮後のファイル容量は、この条件には含めていません。</p>
+</details>
+</section>

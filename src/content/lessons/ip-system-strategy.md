@@ -7,7 +7,7 @@
   'order': 13,
   'minutes': 105,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 6,
   'syllabus': [18, 19, 20, 21],
   'objectives': ['全体最適と業務改革を説明する', 'クラウド等の利用形態を比較する'],
@@ -63,7 +63,7 @@ SaaSはアプリケーション、PaaSは開発・実行基盤、IaaSは仮想�
 
 既存の転記を自動化するならRPAも候補ですが、受付内容を一か所に記録して再入力をなくせるなら、仕事そのものを見直せます。業務プロセスを抜本的に組み替えるBPRと、業務を可視化して測定・改善し続けるBPMは、その規模や活動の続き方に着目して区別します。入力を自動化しただけで、在庫確認の待ちがなくなるとは限りません。修理受付から担当確定まで、どの区間を短くしたいかを先に決めます。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="受付する、修理依頼を一度だけ登録。部品を確認する、品番で正本の在庫を参照。担当と訪問日を確定、受付から確定までを測定"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">受付する</text><text x="200" y="43">修理依頼を一度だけ登録</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">部品を確認する</text><text x="200" y="106">品番で正本の在庫を参照</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">担当と訪問日を確定</text><text x="200" y="169">受付から確定までを測定</text></g></svg><figcaption>紙から台帳への転記をなくしても、在庫確認に時間がかかるなら全体の待ちは残ります。</figcaption></figure>
+<figure id="ip-system-strategy-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="受付する、修理依頼を一度だけ登録。部品を確認する、品番で正本の在庫を参照。担当と訪問日を確定、受付から確定までを測定"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">受付する</text><text x="200" y="43">修理依頼を一度だけ登録</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">部品を確認する</text><text x="200" y="106">品番で正本の在庫を参照</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">担当と訪問日を確定</text><text x="200" y="169">受付から確定までを測定</text></g></svg><figcaption>紙から台帳への転記をなくしても、在庫確認に時間がかかるなら全体の待ちは残ります。</figcaption></figure>
 
 ### 正本を決めてから、使いやすい接点を追加する
 
@@ -131,3 +131,50 @@ SaaSを選ぶ場合は、導入の速さだけでなく、必要な役割分け�
 | 残り6件は入力時の選択ミス | 画面の変更や確認手順で選択を正しくできるか |
 
 採用の判断には、データ移行や混雑時の運用、停止時の代替も含めます。導入後は同じ定義で取り違えを数え、原因別に目標の達成を確認します。
+
+<span id="ip-system-strategy-decision-section"></span>
+
+## 使える人、使った人、解決できた人を順に数える
+
+システム化の効果は、何を目的に導入したかで測り方が変わります。手続をオンラインへ移すなら、導入対象の人数、利用した人数、手続を最後まで終えた人数を記録します。割合を出すときは、何に対する値かが分かるように分母を添えます。利用率が低ければ案内や使える条件を確認し、利用率が高いのに完了率が低ければ、入力や受付の工程を見直すという順序です。
+
+<figure id="ip-system-strategy-worked-decision">
+<figcaption id="ip-system-strategy-worked-decision-caption">オンライン申請の試行で記録した人数</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-system-strategy-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">工程</th><th scope="col">人数</th><th scope="col">見たいこと</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">オンライン申請の対象</th><td>500人</td><td>利用率の分母</td></tr>
+    <tr><th scope="row">オンライン申請を開始</th><td>150人</td><td>対象から実際に進んだ人数</td></tr>
+    <tr><th scope="row">オンラインで手続を完了</th><td>120人</td><td>開始者のうち最後まで進んだ人数</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+開始者を対象で割ると150÷500＝30％です。開始者のうち完了した割合は120÷150＝80％、対象のうちオンラインで完了した割合は120÷500＝24％となります。80％を全員の完了率と読むと、オンラインを使っていない350人が消えます。また、完了していない30人の中にも、紙で手続を終えた人がいるかもしれません。全体の窓口負荷を評価するときは、紙とオンラインを重複なく数えます。
+
+<section class="guided-lesson" id="ip-system-strategy-guided-transfer" aria-labelledby="ip-system-strategy-guided-transfer-title">
+<h3 id="ip-system-strategy-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-system-strategy-guided-transfer-prompt">改善後も対象500人は同じで、開始は200人、オンライン完了は150人です。対象者のうちオンラインで完了した割合は何％ですか。</p>
+<form data-guided-practice data-expected="30" data-guided-hint="求めるのは「対象者のうち」です。開始者を分母にする計算とは意味が異なります。" aria-labelledby="ip-system-strategy-guided-transfer-title" aria-describedby="ip-system-strategy-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-system-strategy-guided-transfer-input">答え（％）</label> <input id="ip-system-strategy-guided-transfer-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>150÷500×100＝30％です。150÷200＝75％は、開始した人の完了率です。</p>
+</details>
+</section>
+
+<span id="ip-system-strategy-decision-independent"></span>
+
+### 自分で判断する
+
+別拠点では対象200人、開始160人、完了80人でした。案内を広める仕事と、入力途中で止まる原因を探す仕事のどちらを先に調べると考えますか。
+
+<details><summary>考え方と答えを確認する</summary><p>開始は160÷200＝80％、開始後の完了は80÷160＝50％です。開始した人の半数が完了していないので、最初は入力や手続途中で止まる条件を確かめます。どこで止まるかは、工程別の離脱記録や問い合わせを見て判断します。</p></details>

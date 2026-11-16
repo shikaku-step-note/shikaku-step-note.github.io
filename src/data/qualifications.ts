@@ -136,7 +136,7 @@ export const qualifications: Qualification[] = [
     icon: 'computer',
     intro: 'ITの「なんとなく」を、わかるに変える。',
     description:
-      '現行シラバスVer.6.5の3分野・23分類を、図解と例題で学びます。途中式を追う例題、条件を変えた章末演習、3分野の読解演習、各100問の模擬試験2回で力を確かめます。',
+      '現行シラバスVer.6.5の3分野・23分類を、図解と例題で学びます。途中式を追う例題、各ユニットの応用問題、3分野をつなぐ総合読解、100問・120分の模試2回で学べます。',
     audience: [
       'ITの用語を基礎から理解したい方',
       '仕事でITを使う機会が増えた方',
@@ -148,7 +148,7 @@ export const qualifications: Qualification[] = [
     groups: ['企業とITの関係を知る', '仕事を進める仕組みを知る', '技術と安全の基本を知る'],
     official: 'https://www.ipa.go.jp/shiken/kubun/ip.html',
     officialName: 'IPA：ITパスポート試験',
-    reviewed: '2026-11-12',
+    reviewed: '2026-11-16',
     scope:
       '現行シラバスVer.6.5の63項目に対応する学習コースです。公式の級分けはなく、ストラテジ・マネジメント・テクノロジの3分野を順に学びます。用語例の全件解説や出題予測を保証するものではありません。',
   },

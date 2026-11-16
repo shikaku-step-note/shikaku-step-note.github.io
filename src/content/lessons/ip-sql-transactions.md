@@ -7,7 +7,7 @@
   'order': 35,
   'minutes': 75,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 21,
   'syllabus': [56, 57],
   'objectives': ['検索・集計の基本を読む', '同時更新と復旧の必要性を説明する'],
@@ -65,7 +65,7 @@ GROUP BY shop
 HAVING SUM(amount) >= 100;
 ```
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="WHERE：金額50円以上の行だけ、GROUP BY：店ごとに分ける、SUM：Aは200円、Bは90円、HAVING：100円以上のAだけ残す"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">WHERE：金額50円以上の行だけ</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">GROUP BY：店ごとに分ける</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">SUM：Aは200円、Bは90円</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">HAVING：100円以上のAだけ残す</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>条件の対象が元の行か、集計後のグループかを確認します。</figcaption></figure>
+<figure id="ip-sql-transactions-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="WHERE：金額50円以上の行だけ、GROUP BY：店ごとに分ける、SUM：Aは200円、Bは90円、HAVING：100円以上のAだけ残す"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">WHERE：金額50円以上の行だけ</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">GROUP BY：店ごとに分ける</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">SUM：Aは200円、Bは90円</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">HAVING：100円以上のAだけ残す</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>条件の対象が元の行か、集計後のグループかを確認します。</figcaption></figure>
 
 ## 一緒に終えるべき処理をひとまとまりにする
 
@@ -79,7 +79,7 @@ HAVING SUM(amount) >= 100;
 
 店舗の売上から、返品を除いた売上合計が多い店舗を抽出します。同じシステムでは在庫を減らして申込みを登録します。前者は集計の順序、後者は変更をまとめる範囲に注意します。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="結合、対応する行を組み合わせる。WHERE、個々の行を先に絞る。GROUP BY、同じ店舗をまとめる。HAVING、合計などで組を絞る"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">結合</text><text x="126" y="29" fill="currentColor" font-size="14">対応する行を組み合わせる</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">WHERE</text><text x="126" y="83" fill="currentColor" font-size="14">個々の行を先に絞る</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">GROUP BY</text><text x="126" y="137" fill="currentColor" font-size="14">同じ店舗をまとめる</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">HAVING</text><text x="126" y="191" fill="currentColor" font-size="14">合計などで組を絞る</text></svg><figcaption>集計前の行条件と、集計後のグループ条件を別に考えます。</figcaption></figure>
+<figure id="ip-sql-transactions-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="結合、対応する行を組み合わせる。WHERE、個々の行を先に絞る。GROUP BY、同じ店舗をまとめる。HAVING、合計などで組を絞る"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">結合</text><text x="126" y="29" fill="currentColor" font-size="14">対応する行を組み合わせる</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">WHERE</text><text x="126" y="83" fill="currentColor" font-size="14">個々の行を先に絞る</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">GROUP BY</text><text x="126" y="137" fill="currentColor" font-size="14">同じ店舗をまとめる</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">HAVING</text><text x="126" y="191" fill="currentColor" font-size="14">合計などで組を絞る</text></svg><figcaption>集計前の行条件と、集計後のグループ条件を別に考えます。</figcaption></figure>
 
 <span id="sql-transactions-textbook-skill-1"></span>
 
@@ -150,3 +150,22 @@ HAVING SUM(o.amount) >= 600;
 **解答**　取消を除いて570円となり、600円以上という条件を満たしません。東店の結果行は出ません。
 
 </details>
+
+<section class="guided-lesson" id="guided-ip-sql-transactions" aria-labelledby="ip-sql-transactions-guided-title">
+<h3 id="ip-sql-transactions-guided-title">途中で確認　更新を分けると残る矛盾</h3>
+<p id="ip-sql-transactions-guided-prompt">口座Aから口座Bへ300円移します。Aの減額は成功しましたが、Bの増額は保存できませんでした。送金処理を一つの取引として扱う場合、どんな結果にしますか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="この取引の目的は、二つの残高の合計を変えずに金額を移すことです。" aria-labelledby="ip-sql-transactions-guided-title" aria-describedby="ip-sql-transactions-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-sql-transactions-guided-answer" value="choice-1"> Aの減額だけを確定し、Bは次の取引で調整する</label>
+<label><input type="radio" name="ip-sql-transactions-guided-answer" value="choice-2"> Bの増額を取り消し、Aの減額を保つ</label>
+<label><input type="radio" name="ip-sql-transactions-guided-answer" value="correct"> Aの減額を取り消し、どちらの残高も送金前の状態を保つ</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>片方だけが確定すると合計残高が300円減ります。二つの更新を一つにまとめ、途中で失敗したら取り消すことで、送金前の整合した状態を保ちます。</p>
+</details>
+</section>

@@ -7,7 +7,7 @@
   'order': 3,
   'minutes': 105,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 1,
   'syllabus': [3],
   'objectives': ['財務三表の役割を区別する', '利益と損益分岐点を計算する'],
@@ -93,7 +93,7 @@ ROIは投資に対する利益などの割合で、問題文で定義された�
 
 現金の流れを別に追うと、月末は30＋5−12−6＝17万円です。営業利益が正でも、当月の営業による現金は13万円減っています。15万円は売掛金という資産に変わったので、貸借対照表を見ると、現金17万円と売掛金15万円が残ります。翌月に掛代金を全額回収すると現金は32万円になりますが、翌月の売上を再び15万円増やす取引ではありません。損益と現金を混同すると、利益があるのに支払えない状況を見落とします。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="当月の販売額20万円、現金5万円と売掛金15万円。当月末、営業利益2万円・現金17万円。翌月の回収、現金15万円増・売掛金15万円減"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">当月の販売額20万円</text><text x="200" y="43">現金5万円と売掛金15万円</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">当月末</text><text x="200" y="106">営業利益2万円・現金17万円</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">翌月の回収</text><text x="200" y="169">現金15万円増・売掛金15万円減</text></g></svg><figcaption>販売したときに計上した売掛金は、翌月の回収で現金に変わります。売上を二重には計上しません。</figcaption></figure>
+<figure id="ip-finance-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="当月の販売額20万円、現金5万円と売掛金15万円。当月末、営業利益2万円・現金17万円。翌月の回収、現金15万円増・売掛金15万円減"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">当月の販売額20万円</text><text x="200" y="43">現金5万円と売掛金15万円</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">当月末</text><text x="200" y="106">営業利益2万円・現金17万円</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">翌月の回収</text><text x="200" y="169">現金15万円増・売掛金15万円減</text></g></svg><figcaption>販売したときに計上した売掛金は、翌月の回収で現金に変わります。売上を二重には計上しません。</figcaption></figure>
 
 ### 売上構成が変わると損益分岐点も変わる
 
@@ -127,4 +127,52 @@ A商品は売価800円、1個当たり変動費500円で、限界利益は300円
 
 売上が増えても現金不足が起きるときは、売掛金の回収と買掛金の支払時期を月ごとに整理します。来月の月初現金が40万円、入金30万円、給与と仕入の支払が90万円なら、月末現金の見込みは40＋30－90＝−20万円です。赤字を表示する現金残高はそのままでは維持できないため、実際には支払日より前に資金調達、入金時期の交渉、支払計画の変更などを検討します。黒字かどうかは損益計算書で確認する別の問いです。
 
-<figure><svg viewBox="0 0 350 166" width="350" height="166" style="max-width:100%;height:auto" role="img" aria-label="現金40万円と入金30万円の合計70万円に対し、支払は90万円。差額は20万円。"><g fill="currentColor" font-size="14"><text x="12" y="27">支払に使える額</text><text x="12" y="99">支払う額</text><text x="137" y="151">差額20万円</text></g><g stroke="currentColor"><rect x="12" y="38" width="120" height="28" fill="currentColor" fill-opacity=".23"/><rect x="132" y="38" width="90" height="28" fill="currentColor" fill-opacity=".08"/><rect x="12" y="109" width="270" height="24" fill="none"/><path d="M222 73v29m60-29v29m-60-16h60" fill="none" stroke-dasharray="3 2"/></g><g fill="currentColor" font-size="13"><text x="27" y="56">現金40万円</text><text x="143" y="56">入金30万円</text><text x="23" y="125">支払90万円</text></g></svg><figcaption>長さ1目盛り当たりの金額をそろえて比較しています。月初現金と入金だけでは支払の全額に届きません。</figcaption></figure>
+<figure id="ip-finance-figure-2"><svg viewBox="0 0 350 166" width="350" height="166" style="max-width:100%;height:auto" role="img" aria-label="現金40万円と入金30万円の合計70万円に対し、支払は90万円。差額は20万円。"><g fill="currentColor" font-size="14"><text x="12" y="27">支払に使える額</text><text x="12" y="99">支払う額</text><text x="137" y="151">差額20万円</text></g><g stroke="currentColor"><rect x="12" y="38" width="120" height="28" fill="currentColor" fill-opacity=".23"/><rect x="132" y="38" width="90" height="28" fill="currentColor" fill-opacity=".08"/><rect x="12" y="109" width="270" height="24" fill="none"/><path d="M222 73v29m60-29v29m-60-16h60" fill="none" stroke-dasharray="3 2"/></g><g fill="currentColor" font-size="13"><text x="27" y="56">現金40万円</text><text x="143" y="56">入金30万円</text><text x="23" y="125">支払90万円</text></g></svg><figcaption>長さ1目盛り当たりの金額をそろえて比較しています。月初現金と入金だけでは支払の全額に届きません。</figcaption></figure>
+
+<span id="ip-finance-decision-section"></span>
+
+## 回収の早さと、今月払える金額を別の表で見る
+
+回収期間は、最初に支払った金額が、その後の現金の増加で何年で戻るかを見る指標です。毎年の増加額が一定であると仮定したときは、初期支出を、追加の維持費を差し引いた年当たりの現金増加額で割ります。導入時に払えるかを判断するには、入金を受け取る前の現金も時点ごとに追います。回収が早い案でも、導入直後に支払資金が不足することがあり、資金の用意という別の条件が加わります。
+
+<figure id="ip-finance-worked-decision">
+<figcaption id="ip-finance-worked-decision-caption">現金で支払う設備案（万円）</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-finance-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">項目</th><th scope="col">設備A</th><th scope="col">設備B</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">導入時に支払う金額</th><td>45</td><td>65</td></tr>
+    <tr><th scope="row">年当たりの支出削減</th><td>11.5</td><td>22</td></tr>
+    <tr><th scope="row">年当たりの追加維持費</th><td>3.5</td><td>5</td></tr>
+    <tr><th scope="row">年当たりの現金増加</th><td>8</td><td>17</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+単純回収期間はAが45÷8＝5.625年、Bが65÷17で約3.82年です。ここで手元資金60万円から、導入前に支払う10万円を確保します。Aを買った直後は60−10−45＝5万円が残り、Bは60−10−65＝マイナス15万円です。Aの一年後にはその5万円に年の増加8万円が加わります。Bの年末の増加17万円を最初から手元資金に入れると、現金の不足を見落とすため、支払う時期を明記して計算します。
+
+<section class="guided-lesson" id="ip-finance-guided-transfer" aria-labelledby="ip-finance-guided-transfer-title">
+<h3 id="ip-finance-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-finance-guided-transfer-prompt">Bの導入日に8万円を支払わず翌年へ繰り延べられました。それ以外の条件はそのままです。導入日にまだ不足する現金は何万円ですか。</p>
+<form data-guided-practice data-expected="7" data-guided-hint="導入前の支払10万円は残ります。初年度末に増える現金を、導入日の残高には入れません。" aria-labelledby="ip-finance-guided-transfer-title" aria-describedby="ip-finance-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-finance-guided-transfer-input">答え（万円）</label> <input id="ip-finance-guided-transfer-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>導入日の設備支払は65−8＝57万円です。導入に使える現金は60−10＝50万円なので、57−50＝7万円が不足します。</p>
+</details>
+</section>
+
+<span id="ip-finance-decision-independent"></span>
+
+### 自分で判断する
+
+初期支出32万円、年間の削減額12万円、追加維持費4万円の案があります。3年目の末だけ点検に8万円を追加で支払います。4年目の末に、現金支出を回収できていますか。税と利息は考えません。
+
+<details><summary>考え方と答えを確認する</summary><p>通常の年は現金が12−4＝8万円増えます。3年目は点検で8万円を払うため増えません。4年間の増加は8＋8＋0＋8＝24万円で、初期支出32万円に8万円届きません。途中の臨時支出がある場合は初期支出を通常の年額で割るだけでは判断できません。</p></details>

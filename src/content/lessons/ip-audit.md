@@ -7,7 +7,7 @@
   'order': 20,
   'minutes': 55,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 12,
   'syllabus': [31, 32],
   'objectives': ['監査の独立性と証拠を説明する', '内部統制の目的と限界を理解する'],
@@ -57,7 +57,7 @@ ITガバナンスでは、取締役会などが関係者の要請を踏まえ、
 <span id="depth-audit-evidence"></span>
 ## 記録を組み合わせて、何が言えるかを判断する
 
-<figure><svg viewBox="0 0 340 179" width="340" height="179" style="display:block;max-width:100%;height:auto" role="img" aria-label="監査で変更票、システム履歴、権限設定を照合し、申請から承認と反映までの関係を確認する"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="9" y="10" width="99" height="52" rx="6"/><rect x="120" y="10" width="99" height="52" rx="6"/><rect x="231" y="10" width="99" height="52" rx="6"/><rect x="62" y="104" width="215" height="60" rx="6"/></g><g text-anchor="middle" fill="currentColor" font-size="14"><text x="58" y="41">変更票</text><text x="169" y="41">操作履歴</text><text x="280" y="41">権限設定</text><text x="170" y="129">変更番号・担当・時刻を照合</text><text x="170" y="150">承認が反映より前かを見る</text></g><path d="M59 62v21h111v20m-5-6 5 6 5-6m-5-35v21m110-21v21H170" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>変更票だけで実際の操作は分かりません。操作履歴と権限情報を照合し、手順が運用されたかを確かめます。</figcaption></figure>
+<figure id="ip-audit-audit-records"><svg viewBox="0 0 340 179" width="340" height="179" style="display:block;max-width:100%;height:auto" role="img" aria-label="監査で変更票、システム履歴、権限設定を照合し、申請から承認と反映までの関係を確認する"><g fill="currentColor" fill-opacity=".08" stroke="currentColor"><rect x="9" y="10" width="99" height="52" rx="6"/><rect x="120" y="10" width="99" height="52" rx="6"/><rect x="231" y="10" width="99" height="52" rx="6"/><rect x="62" y="104" width="215" height="60" rx="6"/></g><g text-anchor="middle" fill="currentColor" font-size="14"><text x="58" y="41">変更票</text><text x="169" y="41">操作履歴</text><text x="280" y="41">権限設定</text><text x="170" y="129">変更番号・担当・時刻を照合</text><text x="170" y="150">承認が反映より前かを見る</text></g><path d="M59 62v21h111v20m-5-6 5 6 5-6m-5-35v21m110-21v21H170" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>変更票だけで実際の操作は分かりません。操作履歴と権限情報を照合し、手順が運用されたかを確かめます。</figcaption></figure>
 
 監査計画では「重要な支払先の無承認変更がないか」など、影響の大きいリスクから対象、期間、評価基準と調査方法を定めます。予備調査では業務の流れや利用システムを確認します。本調査では操作履歴、申請票、権限一覧などから証拠を集め、説明と事実が一致するかを評価します。閲覧した範囲と判断の根拠は監査調書に記録します。監査報告では発見事項と影響を伝え、改善を提案し、フォローアップでは改善が運用された証拠を確かめます。
 
@@ -111,7 +111,7 @@ ITガバナンスでは、取締役会などが関係者の要請を踏まえ、
 | 面談 | 例外の経緯や追加資料の手掛かり | 説明どおり実際に操作されたか |
 | 手順の再実施 | 同一利用者による承認が技術的に可能か | 過去の取引でその操作が行われたか |
 
-<figure><svg viewBox="0 0 340 146" width="340" height="146" role="img" aria-label="規程で基準を確認し、ログと取引記録を照合する。面談と再実施で足りない証拠を補い、事実と評価を報告する。" style="max-width:100%;height:auto"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="8" y="12" width="132" height="40" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="74" y="37">規程で基準を確認</text><rect x="200" y="12" width="132" height="40" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="266" y="37">ログと取引を照合</text><rect x="104" y="94" width="132" height="40" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="170" y="119">根拠の範囲で報告</text></g><path d="M74 52v22h96m96-22v22h-96v20m-5-6 5 6 5-6" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>規程と取引を同じ基準で比較します。規程だけ、またはログだけで結論を出さず、面談や再実施で分からない部分を補います。</figcaption></figure>
+<figure id="ip-audit-audit-evidence-chain"><svg viewBox="0 0 340 146" width="340" height="146" role="img" aria-label="規程で基準を確認し、ログと取引記録を照合する。面談と再実施で足りない証拠を補い、事実と評価を報告する。" style="max-width:100%;height:auto"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="8" y="12" width="132" height="40" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="74" y="37">規程で基準を確認</text><rect x="200" y="12" width="132" height="40" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="266" y="37">ログと取引を照合</text><rect x="104" y="94" width="132" height="40" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="170" y="119">根拠の範囲で報告</text></g><path d="M74 52v22h96m96-22v22h-96v20m-5-6 5 6 5-6" stroke="currentColor" stroke-width="2" fill="none"/></svg><figcaption>規程と取引を同じ基準で比較します。規程だけ、またはログだけで結論を出さず、面談や再実施で分からない部分を補います。</figcaption></figure>
 
 <span id="textbook-audit-sampling"></span>
 
@@ -128,6 +128,48 @@ ITガバナンスでは、取締役会などが関係者の要請を踏まえ、
 支払い記録の事例でも、財務諸表の適正性を検討するなら会計監査、購買手続の効率やルールの遵守を中心に調べるなら業務監査、機密性やアクセス管理などを中心に見るなら情報セキュリティ監査、システムの開発・運用やIT統制のリスク対応を検証するならシステム監査が近くなります。複数の監査が同じログを使うことがあります。設問では資料の種類だけで決めず、何について結論を求められているかを確認します。
 
 <span id="textbook-audit-governance"></span>
+
+<span id="ip-audit-new-worked-example"></span>
+
+### 承認の前後関係と、記録がそろっているかを確かめる
+
+内部統制が実際に働いたかを調べるときは、規程に定められた条件を、取引や承認の記録と照合します。事前承認が条件なら、承認記録が存在することに加え、処理の時刻より前に承認したことを確認します。記録に欠けがあるときは、資料の保存範囲や、照合に必要な識別子がそろっているかを調べます。
+
+例えば、支払先の変更規程では承認後に反映すると定めています。変更票X18の承認が10:18、同じX18の反映が10:06で、時刻が共通の基準で記録されていれば、反映が承認より先です。別の変更票X19で承認欄が空欄でも、承認がなかったかは直ちには判断できません。承認の記録が別の台帳にあるか、そもそも取得した資料に欠落がないかを調べます。
+
+<figure id="ip-audit-worked-evidence">
+<figcaption id="ip-audit-worked-evidence-caption">時刻の逆転と証拠不足は、次に調べることが違う</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-audit-worked-evidence-caption">
+<table>
+  <thead>
+    <tr><th scope="col">観察できたこと</th><th scope="col">現時点で判断できること</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">X18：承認10:18、反映10:06</th><td>同じ変更番号と時刻基準を確認済みなので、当該変更は反映が先。</td></tr>
+    <tr><th scope="row">X19：承認欄が空欄</th><td>手元の票では承認を確認できない。別台帳と記録の完全性を照合する。</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="guided-ip-audit" aria-labelledby="guided-ip-audit-title">
+<h3 id="guided-ip-audit-title">途中で確認　追加の証拠を選ぶ</h3>
+<p id="guided-ip-audit-prompt">異動日に旧権限を削除する規程があります。月末の権限一覧には旧権限がなく、人事記録には異動日があります。この人の旧権限が規程どおり異動日に削除されたかを判断するには何を調べますか。</p>
+<form data-guided-practice data-expected="b" data-guided-hint="" aria-labelledby="guided-ip-audit-title" aria-describedby="guided-ip-audit-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label class="quiz-option"><input type="radio" name="answer" value="a" data-guided-hint="月末までに削除されたことと、異動日当日に削除されたことを分けて考えます。"> 月末の一覧から、異動日に削除されたと判断する。</label>
+<label class="quiz-option"><input type="radio" name="answer" value="b" data-guided-hint=""> 権限変更の履歴を調べ、対象者・権限・削除時刻を照合する。</label>
+<label class="quiz-option"><input type="radio" name="answer" value="c" data-guided-hint="適用される規程は基準を示します。実際の削除日を判断するには運用記録が要ります。"> 規程の版番号を調べるだけで判断する。</label>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>権限変更の履歴から、対象者と旧権限に対応する削除時刻を調べ、異動日と比較します。月末の一覧は月末時点の状態を示すため、削除した日は特定できません。履歴の保存範囲も確認します。</p>
+</details>
+</section>
 
 ### 自分で解く：方針、実行、点検の責任を分ける
 

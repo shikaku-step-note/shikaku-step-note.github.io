@@ -22,7 +22,7 @@ test('mismatched question records cannot be reinterpreted or scored', () => {
   assert.throws(() => gradeAttempt(mock, b));
 });
 test('current curriculum covers all 63 official items and all 23 units, with valid original banks', () => {
-  assert.equal(lessons.length, 40);
+  assert.equal(lessons.length, 41);
   assert.equal(syllabusItems.length, 63);
   assert.equal(new Set(lessons.map((l) => l.data.unit)).size, 23);
   assert.deepEqual(
@@ -47,7 +47,7 @@ test('current curriculum covers all 63 official items and all 23 units, with val
     assert.equal(new Set(a.questions.map((q) => q.id)).size, a.questions.length);
     for (const q of a.questions) {
       if (q.input === 'number' || q.input === 'text') {
-        assert.ok(a.kind === 'lesson' || a.id === 'ip-applied-review');
+        assert.ok(a.kind === 'lesson' || a.id === 'ip-applied-review' || (a.kind === 'review' && a.unit !== undefined));
         assert.ok(q.accepted?.length && q.explanation.length > 8 && ids.has(q.lesson));
         continue;
       }
@@ -77,7 +77,7 @@ test('original question arithmetic matches independent reference calculations', 
     ['2進数11010', `${parseInt('11010', 2)}`],
     ['符号なし6ビット', `${2 ** 6 - 1}`],
     ['MTBF=198', `${(198 / (198 + 2)) * 100}%`],
-    ['各稼働率0.95の独立', `${Number((1 - (1 - 0.95) ** 2).toFixed(4))}`],
+    ['サーバの稼働率はそれぞれ0.90', ((1 - (1 - 0.90) ** 2) * 0.98).toFixed(4)],
     ['200×150画素', `${(200 * 150 * 24) / 8}`],
     ['16,000 Hz', `${(16000 * 8 * 5) / 8}`],
     ['30MBを実効', `${(30 * 8) / 20}秒`],

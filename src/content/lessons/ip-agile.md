@@ -7,7 +7,7 @@
   'order': 16,
   'minutes': 55,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 9,
   'syllabus': [26],
   'objectives': ['ウォーターフォールと反復開発を比較する', 'アジャイルの役割と継続的な改善を説明する'],
@@ -39,7 +39,7 @@
 
 ## 開発と運用をつなぐ
 
-DevOpsは開発と運用の連携を強め、価値を継続的に届けるための文化・実践です。CIは変更を頻繁に統合して自動ビルドやテスト等で確認する取組です。CDは継続的なデリバリー等を意味し、承認や公開の方法は運用で定めます。自動化しても権限管理、失敗時の復旧、監視は必要です。
+DevOpsは開発と運用の連携を強め、価値を継続的に届けるための文化・実践です。CI（継続的インテグレーション）は、変更を頻繁に統合し、自動ビルドやテストなどで確認する取組です。CDは継続的なデリバリー等を意味し、承認や公開の方法は運用で定めます。自動化しても権限管理、失敗時の復旧、監視は必要です。
 
 ## 例：予約画面を小さく改善する
 
@@ -60,7 +60,7 @@ DevOpsは開発と運用の連携を強め、価値を継続的に届けるた�
 <span id="depth-agile-scrum"></span>
 ## スプリントの結果を次の判断に使う
 
-<figure><svg viewBox="0 0 335 218" width="335" height="218" style="display:block;max-width:100%;height:auto" role="img" aria-label="スプリントで利用者の価値を点検する流れ。要望の順序を決めて、利用できる成果を作る。成果への反応はレビュー、仕事の進め方はレトロスペクティブで扱う"><g font-size="13" fill="currentColor" text-anchor="middle"><rect x="12" y="12" width="137" height="46" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="80" y="40">要望の順序を決める</text><rect x="185" y="12" width="137" height="46" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="253" y="40">使える成果を作る</text><rect x="12" y="102" width="137" height="82" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="80" y="131">成果への反応</text><text x="80" y="158">レビュー</text><rect x="185" y="102" width="137" height="82" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="253" y="131">仕事の進め方</text><text x="253" y="158">レトロスペクティブ</text></g><path d="M149 35h34m-6-5 6 5-6 5m77 18v21H81v21m-5-6 5 6 5-6m168-15v21m-5-6 5 6 5-6" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>成果を見て次に作るものを調整し、作業の進め方を振り返って次の反復に生かします。</figcaption></figure>
+<figure id="ip-agile-scrum-feedback"><svg viewBox="0 0 335 218" width="335" height="218" style="display:block;max-width:100%;height:auto" role="img" aria-label="スプリントで利用者の価値を点検する流れ。要望の順序を決めて、利用できる成果を作る。成果への反応はレビュー、仕事の進め方はレトロスペクティブで扱う"><g font-size="13" fill="currentColor" text-anchor="middle"><rect x="12" y="12" width="137" height="46" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="80" y="40">要望の順序を決める</text><rect x="185" y="12" width="137" height="46" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="253" y="40">使える成果を作る</text><rect x="12" y="102" width="137" height="82" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="80" y="131">成果への反応</text><text x="80" y="158">レビュー</text><rect x="185" y="102" width="137" height="82" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="253" y="131">仕事の進め方</text><text x="253" y="158">レトロスペクティブ</text></g><path d="M149 35h34m-6-5 6 5-6 5m77 18v21H81v21m-5-6 5 6 5-6m168-15v21m-5-6 5 6 5-6" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>成果を見て次に作るものを調整し、作業の進め方を振り返って次の反復に生かします。</figcaption></figure>
 
 プロダクトオーナーは、利用者に届ける価値を考えてプロダクトバックログを順序付けます。開発者はスプリントで選んだ項目と実行計画をスプリントバックログに持ちます。スクラムマスターはチームがスクラムを理解して使い、進め方を改善できるように支援します。スプリントレビューでは成果と利用者・関係者の反応を見て次を考えます。スプリントレトロスペクティブでは、成果を作る過程の問題を取り上げます。
 
@@ -144,6 +144,51 @@ XPでは、テストを先に書き、最小限の実装で通し、動作を保
 実装では、失敗するテストを先に置き、条件を満たすコードを書いてから振る舞いを保って構造を整えると、テスト駆動開発とリファクタリングの違いが見えます。二人で同じ実装を進めて相互に確認するペアプログラミングは、人による作業方法です。CIは変更の統合と自動確認の仕組みであり、二人で作るかどうかとは別に使えます。XPはこれらの実践を含むアジャイル手法の一つです。
 
 <span id="textbook-agile-mlops"></span>
+
+<span id="ip-agile-new-worked-example"></span>
+
+### 分からないことに合う確かめ方を選ぶ
+
+開発の進め方を変える前に、どの判断に材料が足りないか確認します。使いやすい画面を決めたい場合は、利用者に案を試してもらうと、迷いやすい箇所が見えてきます。技術的な危険が大きい場合は、その条件を再現して測定する方が、方式を採用できるか判断しやすくなります。
+
+例えば、倉庫の入荷画面で入力欄の順序が決まりません。候補の画面を作り、同じ伝票をそれぞれに登録してもらえば、操作の迷いや入力漏れを比較できます。条件を変え、課題が「繁忙時にも通信が間に合うか」になった場合は、同時に送る端末数を増やして応答を測ります。画面の反応が好評でも、それだけで混雑時の性能は分かりません。
+
+スクラムで作業している場合、成果を試した関係者の意見はスプリントレビューで次の仕事の優先順に生かします。テスト環境の準備でチームが毎回待つようなら、スプリントレトロスペクティブで作業の進め方を見直します。
+
+<figure id="ip-agile-worked-evidence">
+<figcaption id="ip-agile-worked-evidence-caption">判断ごとに、結果から分かる範囲を確かめる</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-agile-worked-evidence-caption">
+<table>
+  <thead>
+    <tr><th scope="col">判断材料が足りない点</th><th scope="col">手がかりと、次に決めること</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">入力欄の順序</th><td>操作を観察し、入力漏れが少ない案を選ぶ。</td></tr>
+    <tr><th scope="row">繁忙時の性能</th><td>同時利用を再現して応答を測り、方式を採用できるか決める。</td></tr>
+    <tr><th scope="row">反復ごとの環境待ち</th><td>準備にかかった時間を振り返り、次の反復で準備手順を変える。</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="guided-ip-agile" aria-labelledby="guided-ip-agile-title">
+<h3 id="guided-ip-agile-title">途中で確認　どの証拠があれば採用を判断できるか</h3>
+<p id="guided-ip-agile-prompt">点検端末の試作画面は好評でした。手袋を着けた現場で読み取りが安定するかはまだ分かりません。本番方式を決める前に何を確かめますか。</p>
+<form data-guided-practice data-expected="c" data-guided-hint="" aria-labelledby="guided-ip-agile-title" aria-describedby="guided-ip-agile-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label class="quiz-option"><input type="radio" name="answer" value="a" data-guided-hint="画面の使い勝手と機器の読み取り性能は、異なる条件で確かめます。"> 試作画面の好評だけを根拠に、方式を確定する。</label>
+<label class="quiz-option"><input type="radio" name="answer" value="b" data-guided-hint="作業の進め方が変わっても、現場での読み取り性能はまだ分かりません。"> 開発チームの朝会を減らせば採用する。</label>
+<label class="quiz-option"><input type="radio" name="answer" value="c" data-guided-hint=""> 現場と同じ条件で読み取りを繰り返し、採用条件と比べる。</label>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>現場に近い手袋・端末・作業環境で試し、読み取り成功率や再試行を測ります。試作画面への反応は画面設計の材料です。機器の採用は、動作条件の証拠を得てから判断します。</p>
+</details>
+</section>
 
 ### 自分で解く：改善対象はモデルか、運用か
 

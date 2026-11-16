@@ -7,7 +7,7 @@
   'order': 39,
   'minutes': 70,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 23,
   'syllabus': [63],
   'objectives': ['代表的な攻撃と対策を対応させる', '予防・検知・復旧を組み合わせる'],
@@ -57,7 +57,7 @@ SQLインジェクションは入力等からSQLの解釈を不正に変える�
 
 共同作業用フォルダを運用します。本人確認に多要素認証を入れ、担当業務に必要な権限だけを付与します。これで被害の機会や範囲を小さくできますが、正規の利用者による誤削除までは防ぎきれません。変更記録を残して管理者に通知し、異常に早く気づけるようにします。復旧用の複製は日常利用のアカウントから書き換えられないように管理し、実際に戻せるか試します。予防が漏れたときに、次に働く仕組みを示せることが多層防御の利点です。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="予防：本人確認と最小権限、検知：変更記録と通知、初動：被害範囲を切り分ける、復旧：保護した複製から戻す"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">予防：本人確認と最小権限</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">検知：変更記録と通知</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">初動：被害範囲を切り分ける</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">復旧：保護した複製から戻す</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>どの対策が先に効き、失敗したとき何が残るかを確認します。</figcaption></figure>
+<figure id="ip-security-controls-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="予防：本人確認と最小権限、検知：変更記録と通知、初動：被害範囲を切り分ける、復旧：保護した複製から戻す"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">予防：本人確認と最小権限</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">検知：変更記録と通知</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">初動：被害範囲を切り分ける</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">復旧：保護した複製から戻す</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>どの対策が先に効き、失敗したとき何が残るかを確認します。</figcaption></figure>
 
 ## 確認したい性質に対策を結び付ける
 
@@ -71,7 +71,7 @@ SQLインジェクションは入力等からSQLの解釈を不正に変える�
 
 小売店では、売上を閲覧する係と返金を確定する係が違います。利用できる時間も確保したいので、権限だけでなく異常に気付く仕組みと復元方法をそろえます。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="入る前、本人確認・端末の更新。入った後、必要な操作だけを許可。異常時、記録を確認し担当へ連絡。復旧、別の保管先から復元"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">入る前</text><text x="126" y="29" fill="currentColor" font-size="14">本人確認・端末の更新</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">入った後</text><text x="126" y="83" fill="currentColor" font-size="14">必要な操作だけを許可</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">異常時</text><text x="126" y="137" fill="currentColor" font-size="14">記録を確認し担当へ連絡</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">復旧</text><text x="126" y="191" fill="currentColor" font-size="14">別の保管先から復元</text></svg><figcaption>一つの対策だけで、全ての事故や被害を止められるとは限りません。</figcaption></figure>
+<figure id="ip-security-controls-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="入る前、本人確認・端末の更新。入った後、必要な操作だけを許可。異常時、記録を確認し担当へ連絡。復旧、別の保管先から復元"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">入る前</text><text x="126" y="29" fill="currentColor" font-size="14">本人確認・端末の更新</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">入った後</text><text x="126" y="83" fill="currentColor" font-size="14">必要な操作だけを許可</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">異常時</text><text x="126" y="137" fill="currentColor" font-size="14">記録を確認し担当へ連絡</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">復旧</text><text x="126" y="191" fill="currentColor" font-size="14">別の保管先から復元</text></svg><figcaption>一つの対策だけで、全ての事故や被害を止められるとは限りません。</figcaption></figure>
 
 <span id="security-controls-textbook-skill-1"></span>
 
@@ -124,3 +124,21 @@ IoTの冷蔵庫では、ネットワークの停止中でも現場で異常を�
 **解答**　現場装置または同じ現場にある制御側に、測定値から通知する判断を残します。クラウドの画面だけでは、回線が使えない間に通知が届きません。
 
 </details>
+
+<section class="guided-lesson" id="guided-ip-security-controls" aria-labelledby="ip-security-controls-guided-title">
+<h3 id="ip-security-controls-guided-title">途中で確認　復元した記録の時点</h3>
+<p id="ip-security-controls-guided-prompt">15:00にサービスが停止して15:40に再開しました。復元できたデータは14:50の状態です。停止前の更新が失われうる長さを、分の数字で答えてください。</p>
+<form data-guided-practice data-expected="10" data-guided-hint="再開時刻ではなく、停止時刻と復元できたデータの時点を比べます。" aria-labelledby="ip-security-controls-guided-title" aria-describedby="ip-security-controls-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label for="ip-security-controls-guided-answer">答え（数字）</label>
+<input type="text" inputmode="numeric" id="ip-security-controls-guided-answer" autocomplete="off">
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>15:00と14:50の差は10分です。この10分を復旧時点の目標と照らします。再開にかかった40分は、復旧時間の目標を確認するための値です。</p>
+</details>
+</section>

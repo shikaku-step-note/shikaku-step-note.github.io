@@ -8,12 +8,17 @@ import mock02 from './ip-mock-02.json';
 import applied from './ip-applied.json';
 import appliedReview from './ip-applied-review.json';
 import { ipCaseMaterials, ipCaseQuestions } from './ip-integrated-cases';
+import { ipReleaseDecisionId, ipReleaseDecisionVersion, ipReleaseMaterials, ipReleaseQuestions } from './ip-release-decision';
+import unitTransfer from './ip-unit-transfer.json';
+import lessonTransfer from './ip-lesson-transfer.json';
 import strategyDepth from './ip-depth-strategy.json';
 import managementDepth from './ip-depth-management.json';
 import technologyDepth from './ip-depth-technology.json';
 import type { Assessment, Field, Question } from '../lib/assessment';
 export const ipVersion = '2026-10-v1';
-export const ipReviewed = '2026-10-25';
+export const ipReviewed = '2026-11-16';
+export const ipUnitReviewVersion = '2026-11-unit-review-v2';
+export const ipMockVersions = ['2026-11-mock-01-v2', '2026-11-mock-02-v3'] as const;
 export const syllabusItems = [
   '経営・組織論',
   '業務分析・データ利活用',
@@ -120,21 +125,21 @@ export const ipSources = [
     title: 'IPA：ITパスポート試験 シラバス Ver.6.5',
     url: 'https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf',
     version: '2026年1月版・現行範囲',
-    verified: '2026-11-12',
+    verified: ipReviewed,
   },
   {
     id: 'requirements',
     title: 'IPA：試験要綱 Ver.5.6',
     url: 'https://www.ipa.go.jp/shiken/syllabus/rcu1hd00000141gq-att/youkou_ver5_6.pdf',
     version: '2026年7月掲載・試験方式と評価',
-    verified: '2026-11-12',
+    verified: ipReviewed,
   },
   {
     id: 'overview',
     title: 'IPA：ITパスポート試験の対象者像・試験形式',
     url: 'https://www.ipa.go.jp/shiken/kubun/ip.html',
     version: '現行試験',
-    verified: '2026-11-12',
+    verified: ipReviewed,
   },
   {
     id: 'changes',
@@ -169,11 +174,14 @@ export const ipSources = [
     title: 'IPA：新試験制度のシラバス案',
     url: 'https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260630.html',
     version: '2027年度向けITパスポート案Ver.0.1。現行の適用版とは区別',
-    verified: '2026-11-12',
+    verified: ipReviewed,
   },
 ];
 export const ipSource = (id: string) => ipSources.find((s) => s.id === id)!;
 const appliedBank = applied as Record<string, Question[]>;
+export const ipLessonTransfer = lessonTransfer as Record<string, Question[]>;
+export const ipLessonTransferVersion = '2026-11-textbook-v2';
+const unitTransferBank = unitTransfer as Record<string, Question[]>;
 export const ipDepthBank = { ...strategyDepth, ...managementDepth, ...technologyDepth } as Record<string, Question[]>;
 export const ipTextbookBank = {
   ...strategyTextbook,
@@ -221,13 +229,25 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
       `${l.data.stableId}-check`,
       `${l.data.title}：理解度チェック`,
       'lesson',
-      [...(questionBank[l.data.stableId]?.lesson ?? []), ...(appliedBank[l.data.stableId] ?? []), ...(ipDepthBank[l.data.stableId] ?? []), ...(ipTextbookBank[l.data.stableId] ?? [])],
+      [
+        ...(questionBank[l.data.stableId]?.lesson ?? []),
+        ...(appliedBank[l.data.stableId] ?? []),
+        ...(ipDepthBank[l.data.stableId] ?? []),
+        ...(ipTextbookBank[l.data.stableId] ?? []),
+        ...(ipLessonTransfer[l.data.stableId] ?? []),
+      ],
       l.data.unit,
     ),
   );
   for (const assessment of result) {
     const lessonId = assessment.id.slice(0, -'-check'.length);
-    if (ipTextbookBank[lessonId]?.length) {
+    if (lessonId === ipReleaseDecisionId) {
+      assessment.questions = ipReleaseQuestions;
+      assessment.materials = ipReleaseMaterials;
+      assessment.version = ipReleaseDecisionVersion;
+    } else if (ipLessonTransfer[lessonId]?.length) {
+      assessment.version = ipLessonTransferVersion;
+    } else if (ipTextbookBank[lessonId]?.length) {
       assessment.version = ipTextbookVersion;
     } else if (ipDepthBank[lessonId]?.length) {
       assessment.version = '2026-11-depth-v1';
@@ -270,7 +290,11 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
     });
     const review = members.flatMap((l) => questionBank[l.data.stableId]?.review ?? []);
     result.push(make(`ip-unit-${u.id}-glossary`, `${u.name}：用語確認テスト`, 'glossary', questions, u.id));
-    result.push(make(`ip-unit-${u.id}-review`, `${u.name}：ユニット総合確認`, 'review', review, u.id));
+    const transfer = unitTransferBank[u.id] ?? [];
+    result.push({
+      ...make(`ip-unit-${u.id}-review`, `${u.name}：ユニット総合確認`, 'review', [...review, ...transfer], u.id),
+      version: transfer.length ? ipUnitReviewVersion : ipVersion,
+    });
     glossaries.push(...questions);
     reviews.push(...review);
   }
@@ -283,8 +307,8 @@ export function ipAssessments(lessons: LessonLike[]): Assessment[] {
     version: '2026-11-cases-v1',
   });
   result.push(
-    make('ip-mock-01', 'ITパスポート：120分・100問の模擬試験', 'mock', mockQuestions, undefined, 120),
-    { ...make('ip-mock-02', 'ITパスポート：120分・100問の模擬試験 第2回', 'mock', mock02 as Question[], undefined, 120), version: '2026-11-mock-02-v2' },
+    { ...make('ip-mock-01', 'ITパスポート：120分・100問の模擬試験', 'mock', mockQuestions, undefined, 120), version: ipMockVersions[0] },
+    { ...make('ip-mock-02', 'ITパスポート：120分・100問の模擬試験 第2回', 'mock', mock02 as Question[], undefined, 120), version: ipMockVersions[1] },
   );
   return result;
 }

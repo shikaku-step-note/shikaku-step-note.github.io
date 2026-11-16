@@ -295,11 +295,13 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
                 ? href(`qualifications/zeirishi/tests/${reviewId}/`)
                 : q.id === 'cost-beginner' && !d.archived
                   ? href('qualifications/cost-beginner/tests/cost-beginner-review-all/')
-                  : href('progress/')
+                  : d.stableId === 'ip-release-decision'
+                    ? href('qualifications/it-passport/tests/ip-integrated-cases/')
+                    : href('progress/')
             }
           >
             <small>学びを振り返る</small>
-            {deepUnit ? 'このユニットの総合確認へ' : tax ? 'この科目の総復習へ' : q.id === 'cost-beginner' && !d.archived ? '全範囲の総復習へ' : 'マイ学習を見る'}
+            {deepUnit ? 'このユニットの総合確認へ' : tax ? 'この科目の総復習へ' : q.id === 'cost-beginner' && !d.archived ? '全範囲の総復習へ' : d.stableId === 'ip-release-decision' ? '3分野のケース演習へ' : 'マイ学習を見る'}
           </a>
         )}
       </nav>

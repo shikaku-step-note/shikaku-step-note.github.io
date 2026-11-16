@@ -7,7 +7,7 @@
   'order': 31,
   'minutes': 55,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 18,
   'syllabus': [49],
   'objectives': ['機器の用途と制約を説明する', '接続・保守・環境への配慮を考える'],
@@ -57,11 +57,11 @@
 
 ノートPCから会議室の画面へ資料を出したいとします。画面の信号を受ける端子がHDMIで、PC側の形状がUSB Type-Cでも、単に形を合わせるケーブルでは足りない場合があります。PC側がその端子から映像を出せるか、変換器が必要な信号を扱えるか、画面側で入力先が選ばれているかを順に確認します。同じ外観のType-Cでも、全端子が同じ転送速度や映像出力に対応するとは限りません。仕様書を読むときは「端子形状」「信号や規格」「用途や給電」の欄を混同しないようにします。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="映らない：画面とPCを切り分ける、画面：入力端子と入力選択を確認、PC：端子から映像出力できるか確認、ケーブル：伝える信号と変換を確認"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">映らない：画面とPCを切り分ける</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">画面：入力端子と入力選択を確認</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">PC：端子から映像出力できるか確認</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">ケーブル：伝える信号と変換を確認</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>接続先の形が一致しても、必要な信号が通るかを別に確認します。</figcaption></figure>
+<figure id="ip-hardware-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="映らない：画面とPCを切り分ける、画面：入力端子と入力選択を確認、PC：端子から映像出力できるか確認、ケーブル：伝える信号と変換を確認"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">映らない：画面とPCを切り分ける</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">画面：入力端子と入力選択を確認</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">PC：端子から映像出力できるか確認</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">ケーブル：伝える信号と変換を確認</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>接続先の形が一致しても、必要な信号が通るかを別に確認します。</figcaption></figure>
 
 ## 作業用PCに接続された機器を見分ける
 
-<figure><img src="../../../images/it-passport/workstation-connections.webp" width="960" height="640" decoding="async" alt="作業用パソコンにキーボードと外付けSSDがUSBで接続され、別のLANケーブルがスイッチへつながっている図"><figcaption>学習用の生成イラスト。キーボードと外付けSSDの線はUSB端子へ、ロック用の爪があるコネクタの線はLAN端子からスイッチへつながっています。実物のケーブルの色は製品ごとに異なります。</figcaption></figure>
+<figure id="ip-hardware-figure-2"><img src="../../../images/it-passport/workstation-connections.webp" width="960" height="640" decoding="async" alt="作業用パソコンにキーボードと外付けSSDがUSBで接続され、別のLANケーブルがスイッチへつながっている図"><figcaption>学習用の生成イラスト。キーボードと外付けSSDの線はUSB端子へ、ロック用の爪があるコネクタの線はLAN端子からスイッチへつながっています。実物のケーブルの色は製品ごとに異なります。</figcaption></figure>
 
 図でUSBの線をたどると、一方はキー操作を入力する機器、もう一方はデータを保存する機器に着きます。端子の規格が共通でも、接続先の役割は同じとは限りません。LAN端子の先は別の機器と通信するためのスイッチです。差し込み口の形、線の行き先、やり取りする情報を順に見ると、機器を分類できます。
 
@@ -75,7 +75,7 @@
 
 受付の業務には、紙の番号を読み取る、番号札を印刷する、記録を外部に保存するという三つの仕事があります。装置の名前を覚えるだけでなく、情報がどの向きに動き、何が出力されるかを確認します。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="紙→データ、画像・文字・識別番号を区別。画面→紙、文字・用紙・速度を比べる。本体→媒体、容量と保存期間を比べる。接続、形・信号・仕様を別々に確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">紙→データ</text><text x="126" y="29" fill="currentColor" font-size="14">画像・文字・識別番号を区別</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">画面→紙</text><text x="126" y="83" fill="currentColor" font-size="14">文字・用紙・速度を比べる</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">本体→媒体</text><text x="126" y="137" fill="currentColor" font-size="14">容量と保存期間を比べる</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">接続</text><text x="126" y="191" fill="currentColor" font-size="14">形・信号・仕様を別々に確認</text></svg><figcaption>目的のデータを得られるかを先に確かめると、似た見た目の装置を区別できます。</figcaption></figure>
+<figure id="ip-hardware-figure-3"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="紙→データ、画像・文字・識別番号を区別。画面→紙、文字・用紙・速度を比べる。本体→媒体、容量と保存期間を比べる。接続、形・信号・仕様を別々に確認"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">紙→データ</text><text x="126" y="29" fill="currentColor" font-size="14">画像・文字・識別番号を区別</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">画面→紙</text><text x="126" y="83" fill="currentColor" font-size="14">文字・用紙・速度を比べる</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">本体→媒体</text><text x="126" y="137" fill="currentColor" font-size="14">容量と保存期間を比べる</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">接続</text><text x="126" y="191" fill="currentColor" font-size="14">形・信号・仕様を別々に確認</text></svg><figcaption>目的のデータを得られるかを先に確かめると、似た見た目の装置を区別できます。</figcaption></figure>
 
 <span id="hardware-textbook-skill-1"></span>
 
@@ -110,3 +110,22 @@ PCと外付け装置をつなぐときは、形状、信号、速度、必要電
 </details>
 
 **復習の目安**　入力・出力・保存の目的を説明し、装置の仕様と接続条件を使って選択できます。
+
+<section class="guided-lesson" id="guided-ip-hardware" aria-labelledby="ip-hardware-guided-title">
+<h3 id="ip-hardware-guided-title">途中で確認　測る役割と動かす役割</h3>
+<p id="ip-hardware-guided-prompt">倉庫が暑くなると自動で換気する機器があります。温度が設定値を超えた場合の信号の流れはどれですか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="値を受け取る部分、判断する部分、物を動かす部分の順に並べます。" aria-labelledby="ip-hardware-guided-title" aria-describedby="ip-hardware-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-hardware-guided-answer" value="choice-2"> ファンが動き始めてから、設定値を入力として測る</label>
+<label><input type="radio" name="ip-hardware-guided-answer" value="correct"> 温度を測り、制御装置が設定値と比べ、ファンを動かす</label>
+<label><input type="radio" name="ip-hardware-guided-answer" value="choice-1"> ファンが温度を測り、温度センサーが風量を変える</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>温度センサーが入力値を渡し、制御装置が設定値との関係を判断し、駆動するファンが出力を変えます。設定値は比較の基準で、センサーが測った倉庫の温度とは別です。</p>
+</details>
+</section>

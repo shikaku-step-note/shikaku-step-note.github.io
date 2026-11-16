@@ -7,7 +7,7 @@
   'order': 21,
   'minutes': 70,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 13,
   'syllabus': [33],
   'objectives': ['位取りと情報量を計算する', '集合・論理演算を具体例で使う'],
@@ -72,7 +72,7 @@ ANDは両方が真、ORはいずれかが真、NOTは真偽の反転、XORは一
 
 4ビットの−3は、+3の `0011` を反転して1を加えた `1101` です。5と足すと、`0101 + 1101` の下位4ビットは `0010` になります。上の桁に1が出ても、2の補数で読んだ答え2は範囲内です。一方、`0111 + 0011` は7＋3＝10を計算しますが、残る `1010` は−6と読めます。符号付きの4ビットで10を表せないためです。数学上の和と表現された結果を別々に確認します。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="4ビット・2の補数を使う、重みは −8、4、2、1、0111 ＋ 0011 → 下位4桁 1010、本来の答え10は範囲外"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">4ビット・2の補数を使う</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">重みは −8、4、2、1</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">0111 ＋ 0011 → 下位4桁 1010</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">本来の答え10は範囲外</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じ桁数のまま計算する問題では、10進数に戻して表現範囲と比べます。</figcaption></figure>
+<figure id="ip-binary-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="4ビット・2の補数を使う、重みは −8、4、2、1、0111 ＋ 0011 → 下位4桁 1010、本来の答え10は範囲外"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">4ビット・2の補数を使う</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">重みは −8、4、2、1</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">0111 ＋ 0011 → 下位4桁 1010</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">本来の答え10は範囲外</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じ桁数のまま計算する問題では、10進数に戻して表現範囲と比べます。</figcaption></figure>
 
 ## 条件を変更すると、どの行が増えるか
 
@@ -84,7 +84,7 @@ ANDは両方が真、ORはいずれかが真、NOTは真偽の反転、XORは一
 
 倉庫の端末から8桁のビット列 `11100110` が届きました。同じ並びでも、整数を入れた欄と、複数の状態を個別の桁で記録した欄では読み方が変わります。どちらもまず、どの桁にどんな意味が決められているかを確認します。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="仕様、8桁・符号ありかを確認。重み、右端1から順に2倍。計算、符号ありなら先頭だけ負。検算、表現範囲と別の読み方"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">仕様</text><text x="126" y="29" fill="currentColor" font-size="14">8桁・符号ありかを確認</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">重み</text><text x="126" y="83" fill="currentColor" font-size="14">右端1から順に2倍</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">計算</text><text x="126" y="137" fill="currentColor" font-size="14">符号ありなら先頭だけ負</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">検算</text><text x="126" y="191" fill="currentColor" font-size="14">表現範囲と別の読み方</text></svg><figcaption>ビット列の意味は、桁数と数値の表現方式を先に確かめてから求めます。</figcaption></figure>
+<figure id="ip-binary-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="仕様、8桁・符号ありかを確認。重み、右端1から順に2倍。計算、符号ありなら先頭だけ負。検算、表現範囲と別の読み方"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">仕様</text><text x="126" y="29" fill="currentColor" font-size="14">8桁・符号ありかを確認</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">重み</text><text x="126" y="83" fill="currentColor" font-size="14">右端1から順に2倍</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">計算</text><text x="126" y="137" fill="currentColor" font-size="14">符号ありなら先頭だけ負</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">検算</text><text x="126" y="191" fill="currentColor" font-size="14">表現範囲と別の読み方</text></svg><figcaption>ビット列の意味は、桁数と数値の表現方式を先に確かめてから求めます。</figcaption></figure>
 
 <span id="binary-textbook-skill-1"></span>
 
@@ -113,3 +113,21 @@ ANDは両方が真、ORはいずれかが真、NOTは真偽の反転、XORは一
 </details>
 
 **復習の目安**　桁数・符号・基数を見分け、変換と桁あふれの有無を別々に確認できます。
+
+<section class="guided-lesson" id="guided-ip-binary" aria-labelledby="ip-binary-guided-title">
+<h3 id="ip-binary-guided-title">途中で確認　マスクで残るビット</h3>
+<p id="ip-binary-guided-prompt">4ビットの値1011に、マスク1100とのANDを適用します。得られた4ビットの値を、10進数で答えてください。</p>
+<form data-guided-practice data-expected="8" data-guided-hint="ANDでは、対応する二つのビットが共に1のときだけ、その桁が1になります。" aria-labelledby="ip-binary-guided-title" aria-describedby="ip-binary-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label for="ip-binary-guided-answer">答え（数字）</label>
+<input type="text" inputmode="numeric" id="ip-binary-guided-answer" autocomplete="off">
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>左端だけが共に1なので、結果は1000です。4ビットの重みは左から8、4、2、1ですから、10進数では8です。マスクの1は元の桁を残す位置を示します。</p>
+</details>
+</section>

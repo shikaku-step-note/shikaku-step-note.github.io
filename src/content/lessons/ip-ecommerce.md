@@ -7,7 +7,7 @@
   'order': 12,
   'minutes': 85,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 5,
   'syllabus': [16],
   'objectives': ['取引の組合せと事業モデルを区別する', '電子商取引の指標を計算する'],
@@ -63,7 +63,7 @@ BtoBは企業間、BtoCは企業と消費者、CtoCは消費者同士の取引�
 
 ある客が商品をカートに入れ、支払画面へ移ります。ここで注文番号が発行されても、決済が確定したとは限りません。決済事業者からの結果と注文番号を対応付け、成功を確認した注文だけを出荷へ回すと、未決済品を発送する誤りを減らせます。通信が途切れて購入者が再操作した場合、以前の決済が成立しているか確認してから再処理します。画面の表示だけを信じ、注文を作り直すと、二重に請求するおそれがあります。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="注文を受け付ける、注文番号を決済情報へ渡す。決済結果を確認する、成功と失敗を分けて記録。成功した注文を出荷する、後で返金・照合できるようにする"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">注文を受け付ける</text><text x="200" y="43">注文番号を決済情報へ渡す</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">決済結果を確認する</text><text x="200" y="106">成功と失敗を分けて記録</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">成功した注文を出荷する</text><text x="200" y="169">後で返金・照合できるようにする</text></g></svg><figcaption>受注、決済、出荷は独立して記録し、注文番号で関係付けます。</figcaption></figure>
+<figure id="ip-ecommerce-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="注文を受け付ける、注文番号を決済情報へ渡す。決済結果を確認する、成功と失敗を分けて記録。成功した注文を出荷する、後で返金・照合できるようにする"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">注文を受け付ける</text><text x="200" y="43">注文番号を決済情報へ渡す</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">決済結果を確認する</text><text x="200" y="106">成功と失敗を分けて記録</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">成功した注文を出荷する</text><text x="200" y="169">後で返金・照合できるようにする</text></g></svg><figcaption>受注、決済、出荷は独立して記録し、注文番号で関係付けます。</figcaption></figure>
 
 ### 便利な本人確認と、必要以上に集めない設計を両立する
 
@@ -96,3 +96,52 @@ BtoBは企業間、BtoCは企業と消費者、CtoCは消費者同士の取引�
 ### 複数の取引で注文番号と返金をたどる
 
 同じ金額4,000円の注文KとLがあり、Kだけが後日返品されました。決済明細に4,000円の返金があっても金額だけではどちらの注文か特定できません。決済識別番号をもとに元の注文へ戻り、Kの売上と返金を対応させます。未入金、手数料、返金は別の理由で差が生まれるので、それぞれの記録の列を用意します。
+
+<span id="ip-ecommerce-decision-section"></span>
+
+## 注文、入金、返金の状態を別々に確かめる
+
+ECでは、注文を受け付けた記録、支払処理の記録、発送の記録が別々に更新されます。注文番号を手掛かりに記録を照合し、どの部署が次の行動を取るかを決めます。ネットワークが一時的に途切れたり、担当者の処理が遅れたりすると、画面に出る状態が現実の処理より遅れることがあります。再処理する前に、最終的に確定している記録を確認すると、二重請求・二重返金の手直しを減らせます。
+
+<figure id="ip-ecommerce-worked-decision">
+<figcaption id="ip-ecommerce-worked-decision-caption">同じ注文について照合する三つの記録</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-ecommerce-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">記録</th><th scope="col">状態</th><th scope="col">確認したいこと</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">注文管理</th><td>利用者が取消しを申請</td><td>取消しを承認したか</td></tr>
+    <tr><th scope="row">決済</th><td>返金の受付番号あり・完了は未確定</td><td>元の番号で返金の結果を照会</td></tr>
+    <tr><th scope="row">出荷</th><td>倉庫で未出荷</td><td>発送を保留できるか</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+この注文は、倉庫からまだ出ていないため発送を止められる一方、受付番号があるだけでは返金済みと確定できません。決済の受付番号を使って処理結果を確かめます。利用者に知らせるときは、取消しと返金の進み方を区別し、返金結果が確認できる時期を案内します。同じ注文で決済を繰り返すと返金の受付が二件になるおそれがあるため、受付がある場合は結果の照会を先にします。
+
+<section class="guided-lesson" id="ip-ecommerce-guided-transfer" aria-labelledby="ip-ecommerce-guided-transfer-title">
+<h3 id="ip-ecommerce-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-ecommerce-guided-transfer-prompt">利用者から「返金がまだ見えない」と連絡がありました。表の条件では、最初に何をしますか。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="発送と返金は異なる記録です。返金依頼には状態を調べられる番号があります。" aria-labelledby="ip-ecommerce-guided-transfer-title" aria-describedby="ip-ecommerce-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-ecommerce-guided-transfer-1"><input type="radio" id="ip-ecommerce-guided-transfer-1" name="answer" value="1"> 同じ金額をすぐもう一度返金する</label><br>
+<label for="ip-ecommerce-guided-transfer-2"><input type="radio" id="ip-ecommerce-guided-transfer-2" name="answer" value="2"> 決済の受付番号を使い、既に依頼した返金の処理結果を確認する</label><br>
+<label for="ip-ecommerce-guided-transfer-3"><input type="radio" id="ip-ecommerce-guided-transfer-3" name="answer" value="3"> 倉庫が未出荷なので、返金は完了したと案内する</label><br>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>決済の受付番号を照合して、処理中か完了なのかを確認します。受付が既にあるので、確認前に再処理すると二重の返金につながるおそれがあります。</p>
+</details>
+</section>
+
+<span id="ip-ecommerce-decision-independent"></span>
+
+### 自分で判断する
+
+倉庫記録は一件が出荷済みですが、決済には同じ注文番号で二件の受付があり、一方だけ入金が確定しています。注文数を集計するときと、実際の入金を修正するときに見る記録はどれですか。
+
+<details><summary>考え方と答えを確認する</summary><p>注文数の集計は注文管理に戻り、一つの注文番号が一件として登録されているか確認します。入金の修正は決済に戻り、確定済みと保留の受付を照合してから処理します。受付が二件あっても、注文と入金が二件と決まるわけではありません。</p></details>

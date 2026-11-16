@@ -7,7 +7,7 @@
   'order': 34,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 21,
   'syllabus': [54, 55],
   'objectives': ['主キーと外部キーの役割を説明する', '重複による更新の不整合を防ぐ'],
@@ -60,7 +60,7 @@
 
 注文に複数商品を持たせるなら注文と商品を明細表で結びます。明細番号を注文ごとに付けるなら、注文IDと明細番号を組にして行を識別する方法があります。どの属性がどの対象の事実かを決め、登録・更新・削除のとき何が壊れないかを検討します。
 
-<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="顧客と注文をIDで結ぶ, 顧客表, 顧客ID C07, 注文表, 注文ID O21, 参照, 顧客ID C07"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">顧客表</text><text x="68" y="51">顧客ID C07</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">注文表</text><text x="211" y="51">注文ID O21</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">参照</text><text x="354" y="51">顧客ID C07</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>注文表の顧客IDが顧客表の行を参照します。注文IDは注文自体を識別します。</figcaption></figure>
+<figure id="ip-database-figure-1"><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="顧客と注文をIDで結ぶ, 顧客表, 顧客ID C07, 注文表, 注文ID O21, 参照, 顧客ID C07"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">顧客表</text><text x="68" y="51">顧客ID C07</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">注文表</text><text x="211" y="51">注文ID O21</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">参照</text><text x="354" y="51">顧客ID C07</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>注文表の顧客IDが顧客表の行を参照します。注文IDは注文自体を識別します。</figcaption></figure>
 
 <details><summary>注文表の顧客IDが重複したら、必ず設計ミス？</summary><p>一人が何度も注文する設計なら重複して構いません。顧客表で一意であることと区別します。</p></details>
 
@@ -70,7 +70,7 @@
 
 注文表には注文番号・顧客番号・注文日を置き、明細表には注文番号・明細番号・商品番号・数量を置きます。顧客名を全明細に繰り返すと、改名時に更新漏れが起こります。顧客表に顧客番号と現行の顧客名をまとめ、注文から顧客番号で参照します。ただし法的・業務的に注文時の宛名を保存する要件があるなら、現行顧客名とは違う事実として注文時の宛名を保存します。正規化の目的は同じ事実の不整合を減らすことで、過去と現在を同じ値にすることではありません。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="明細：(注文番号, 明細番号)、注文番号で注文表を参照、注文表：注文番号 → 顧客番号、顧客番号で顧客表の1行を参照"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">明細：(注文番号, 明細番号)</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">注文番号で注文表を参照</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">注文表：注文番号 → 顧客番号</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">顧客番号で顧客表の1行を参照</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>明細から顧客情報までの道を追うと、どの番号が一意で、どの番号が参照に使われるか分かります。</figcaption></figure>
+<figure id="ip-database-figure-2"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="明細：(注文番号, 明細番号)、注文番号で注文表を参照、注文表：注文番号 → 顧客番号、顧客番号で顧客表の1行を参照"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">明細：(注文番号, 明細番号)</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">注文番号で注文表を参照</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">注文表：注文番号 → 顧客番号</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">顧客番号で顧客表の1行を参照</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>明細から顧客情報までの道を追うと、どの番号が一意で、どの番号が参照に使われるか分かります。</figcaption></figure>
 
 ## 対応関係を保存する表を決める
 
@@ -82,7 +82,7 @@
 
 講座の受講記録には、受講者、講座、申込日、料金があります。最初に「誰がどの講座に申し込んだ一件」という一行の意味を決めます。氏名や講座名をすべての行へ複製すると、変更時に古い情報が残ることがあります。
 
-<figure><svg viewBox="0 0 344 168" width="344" height="168" style="max-width:100%;height:auto" role="img" aria-label="受講者表の受講者IDと講座表の講座IDを、申込表の二つの外部キーが参照する図。"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="8" width="120" height="44" rx="5"/><rect x="219" y="8" width="120" height="44" rx="5"/><rect x="88" y="92" width="168" height="67" rx="5"/><path d="M124 92L66 54m3 9-3-9 9 1M220 92l57-38m-9 1 9-1-3 9"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="65" y="27">受講者表</text><text x="65" y="44">受講者ID</text><text x="278" y="27">講座表</text><text x="278" y="44">講座ID</text><text x="172" y="114">申込表</text><text x="172" y="133">受講者ID・講座ID</text><text x="172" y="151">申込日・申込時料金</text></g></svg><figcaption>申込表は受講者と講座のIDを参照します。名前や最新の定価を申込の行ごとに複製しません。</figcaption></figure>
+<figure id="ip-database-figure-3"><svg viewBox="0 0 344 168" width="344" height="168" style="max-width:100%;height:auto" role="img" aria-label="受講者表の受講者IDと講座表の講座IDを、申込表の二つの外部キーが参照する図。"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="8" width="120" height="44" rx="5"/><rect x="219" y="8" width="120" height="44" rx="5"/><rect x="88" y="92" width="168" height="67" rx="5"/><path d="M124 92L66 54m3 9-3-9 9 1M220 92l57-38m-9 1 9-1-3 9"/></g><g fill="currentColor" text-anchor="middle" font-size="14"><text x="65" y="27">受講者表</text><text x="65" y="44">受講者ID</text><text x="278" y="27">講座表</text><text x="278" y="44">講座ID</text><text x="172" y="114">申込表</text><text x="172" y="133">受講者ID・講座ID</text><text x="172" y="151">申込日・申込時料金</text></g></svg><figcaption>申込表は受講者と講座のIDを参照します。名前や最新の定価を申込の行ごとに複製しません。</figcaption></figure>
 
 <span id="database-textbook-skill-1"></span>
 
@@ -117,3 +117,22 @@
 </details>
 
 **復習の目安**　主キー・外部キーを一行の意味から選び、多対多、変更履歴、結合で何が起きるか説明できます。
+
+<section class="guided-lesson" id="guided-ip-database" aria-labelledby="ip-database-guided-title">
+<h3 id="ip-database-guided-title">途中で確認　行を一つに特定する組</h3>
+<p id="ip-database-guided-prompt">在庫表には一つの商品が複数の倉庫に載ります。一つの倉庫にも複数の商品があり、倉庫内では同じ商品を1行にまとめます。在庫の1行を特定するキーはどれですか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="その値だけを使って、別の行が同じ値にならないかを考えてください。" aria-labelledby="ip-database-guided-title" aria-describedby="ip-database-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-database-guided-answer" value="choice-2"> 倉庫番号だけ</label>
+<label><input type="radio" name="ip-database-guided-answer" value="correct"> 商品番号と倉庫番号の組</label>
+<label><input type="radio" name="ip-database-guided-answer" value="choice-1"> 商品番号だけ</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>商品番号だけでは別倉庫の行が重なり、倉庫番号だけでは別商品の行が重なります。倉庫内では同じ商品が1行なので、両方の組で1行を特定できます。</p>
+</details>
+</section>

@@ -24,7 +24,7 @@
   ],
   "glossary": [],
   "sample": false,
-  "updated": "2026-11-12"
+  "updated": "2026-11-16"
 }
 ---
 
@@ -40,7 +40,7 @@
 
 東は取違い件数が最大ですが、率は西が最大です。取違いの発生件数を最も多く減らせる店を選ぶなら、対策の効果と注文数が別途必要です。同じ資料から答えが二つ出たように見えるのは、問いが違うためです。
 
-<figure><svg viewBox="0 0 340 145" width="340" height="145" role="img" aria-label="取違い率の横棒図。東3％、西5％、南2％。同じ尺度で西の棒が最も長い。" style="max-width:100%;height:auto"><g fill="currentColor" font-size="14"><text x="12" y="35">東</text><text x="12" y="74">西</text><text x="12" y="113">南</text><rect x="42" y="18" width="138" height="21" rx="3" opacity=".45"/><rect x="42" y="57" width="230" height="21" rx="3" opacity=".75"/><rect x="42" y="96" width="92" height="21" rx="3" opacity=".45"/><text x="190" y="35">3％</text><text x="282" y="74">5％</text><text x="144" y="113">2％</text></g><path d="M42 12v110" stroke="currentColor"/></svg><figcaption>注文1件当たりの率を同じ尺度で比べます。表の件数順位と図の率順位が異なる点に注目してください。</figcaption></figure>
+<figure id="ip-reading-business-data-existing-visual"><svg viewBox="0 0 340 145" width="340" height="145" role="img" aria-label="取違い率の横棒図。東3％、西5％、南2％。同じ尺度で西の棒が最も長い。" style="max-width:100%;height:auto"><g fill="currentColor" font-size="14"><text x="12" y="35">東</text><text x="12" y="74">西</text><text x="12" y="113">南</text><rect x="42" y="18" width="138" height="21" rx="3" opacity=".45"/><rect x="42" y="57" width="230" height="21" rx="3" opacity=".75"/><rect x="42" y="96" width="92" height="21" rx="3" opacity=".45"/><text x="190" y="35">3％</text><text x="282" y="74">5％</text><text x="144" y="113">2％</text></g><path d="M42 12v110" stroke="currentColor"/></svg><figcaption>注文1件当たりの率を同じ尺度で比べます。表の件数順位と図の率順位が異なる点に注目してください。</figcaption></figure>
 
 全店の取違い率は、3％・5％・2％の平均ではありません。全店で36件、注文は1,200件なので、36÷1,200＝3％です。店ごとの率を平均すると各店を同じ重みで扱います。注文ごとの率を求めるときは各注文を同じ重みで扱うため、件数から計算します。
 
@@ -70,3 +70,53 @@
 ## 解き直すときの確認
 
 件数と率のどちらを使うかを目的から決め、条件が同じかを確かめます。率を件数に戻してから金額へ換算し、最後に増える費用も引きます。
+
+<span id="ip-reading-business-data-decision-section"></span>
+
+## 同じ条件にそろえた効果予測から改善案を選ぶ
+
+業務改善の案を選ぶときは、状況を示す件数表と、費用を示す見積書を一度分けて読みます。最初に「どの注文を次月の対象と考えるか」を決め、その件数に対策前後の率の差を掛けて、防げる件数を求めます。次に、防げる一件当たりの費用を掛け、追加の運用費を引きます。予測の結果が基準をわずかに上回る場合は、件数や効果が少し変わったらどうなるかを照合し、導入後に記録する数字を決めておきます。
+
+<figure id="ip-reading-business-data-worked-decision">
+<figcaption id="ip-reading-business-data-worked-decision-caption">翌月の改善案を比べるための二つの資料</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-reading-business-data-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">資料と項目</th><th scope="col">案Aで対策する注文</th><th scope="col">案Bで対策する注文</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">注文予測</th><td>通常400件</td><td>特注200件</td></tr>
+    <tr><th scope="row">取違い率の見込み</th><td>4％から2％</td><td>12％から7％</td></tr>
+    <tr><th scope="row">取違い一件の費用</th><td>1,200円</td><td>1,800円</td></tr>
+    <tr><th scope="row">対策の月額費用</th><td>6,000円</td><td>15,000円</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+Aの対象は通常注文なので、防げる件数は400×(0.04−0.02)＝8件。利益改善は8×1,200−6,000＝3,600円です。Bの対象は特注で、防げる件数は200×(0.12−0.07)＝10件。利益改善は10×1,800−15,000＝3,000円です。取違いを多く防ぐ目的ではB、ここにある費用で翌月の利益を最大にする目的ではAになります。
+
+Aの予測が外れた場合も考えます。通常注文が300件に下がると、率の差が同じでも減るのは6件で、利益改善は1,200円です。Aの対策費を回収するには6,000÷1,200＝5件分の削減が必要なので、率の2ポイント差が続く条件では通常250件が境目です。導入後は、通常と特注を分けて注文数と取違い数を記録し、予測より注文が少なかったのか、率が下がらなかったのかを切り分けます。
+
+<section class="guided-lesson" id="ip-reading-business-data-guided-transfer" aria-labelledby="ip-reading-business-data-guided-transfer-title">
+<h3 id="ip-reading-business-data-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-reading-business-data-guided-transfer-prompt">Bの運用費が16,000円に増え、次月の注文、率、一件の費用は表のままです。月の利益改善は何円ですか。</p>
+<form data-guided-practice data-expected="2000" data-guided-hint="特注は200件です。12％に7％を掛けず、減る幅を先に求めます。" aria-labelledby="ip-reading-business-data-guided-transfer-title" aria-describedby="ip-reading-business-data-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-reading-business-data-guided-transfer-input">答え（円）</label> <input id="ip-reading-business-data-guided-transfer-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>200×(0.12−0.07)＝10件、10×1,800＝18,000円の削減です。月の運用費16,000円を差し引くと利益改善は2,000円になります。</p>
+</details>
+</section>
+
+<span id="ip-reading-business-data-decision-independent"></span>
+
+### 自分で判断する
+
+Aで通常注文を350件と見込み、対策前の率が4％、対策後の率が3％になりそうです。費用条件は表のままです。予測の平均件数を途中で丸めず、利益の増減と、判断の確かさを説明してください。
+
+<details><summary>考え方と答えを確認する</summary><p>率の差は1パーセントポイントなので、平均では350×0.01＝3.5件の取違いを防ぐ見込みです。3.5×1,200−6,000＝マイナス1,800円。平均の予測では3.5件をそのまま用い、実際の記録は一件ずつ数えます。今回は費用上の改善を見込めないので、対策費を下げられるか、率が下がる根拠が確かなのかを確認します。</p></details>

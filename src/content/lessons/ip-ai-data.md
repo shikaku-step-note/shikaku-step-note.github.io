@@ -7,7 +7,7 @@
   'order': 23,
   'minutes': 75,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 13,
   'syllabus': [35],
   'objectives': ['データとAIの学習・評価を区別する', '生成AIの限界と安全な利用を説明する'],
@@ -60,7 +60,7 @@
 
 温度計で1秒に2回、連続して変わる温度を読み取ります。測る時点を決める工程が標本化、各時点の値を有限個の段階に丸める工程が量子化、段階にビット列を対応させる工程が符号化です。温度を16段階で表すなら4ビットで足ります。2⁴＝16通りあり、3ビットの8通りでは区別できないからです。測定を1秒に4回にすると1秒当たりの記録点は倍になりますが、各点の段階数は変わりません。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="連続的に変わる温度、標本化：測る時点を決める、量子化：各値を16段階へ、符号化：各段階を4ビットで表す"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">連続的に変わる温度</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">標本化：測る時点を決める</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">量子化：各値を16段階へ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">符号化：各段階を4ビットで表す</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>標本化の間隔と量子化の細かさは、それぞれ時間と値の分解能に影響します。</figcaption></figure>
+<figure id="ip-ai-data-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="連続的に変わる温度、標本化：測る時点を決める、量子化：各値を16段階へ、符号化：各段階を4ビットで表す"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">連続的に変わる温度</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">標本化：測る時点を決める</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">量子化：各値を16段階へ</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">符号化：各段階を4ビットで表す</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>標本化の間隔と量子化の細かさは、それぞれ時間と値の分解能に影響します。</figcaption></figure>
 
 ## 分類の成績を見逃しと誤警報に分ける
 
@@ -90,7 +90,7 @@
 
 出力を正解ラベルと比べて、ずれを表す損失を計算します。誤差逆伝播は、出力側から入力に近い層へと戻りながら、各重みを少し変えたときに損失がどう変わるかを求めます。その情報を使う更新処理が重みを調整します。学習用画像の損失だけ下がり、別の画像で判定が悪くなるなら、過学習を疑います。学習を長く続ける前に、評価データを見て、学習用と評価用が混ざっていないか、現場の条件を含んでいるかを確認します。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="画像を入力し、層ごとに値を変換、予測を正解ラベルと比べて損失を求める、誤差逆伝播で重みと損失の関係を計算、重みを更新し、別のデータでも評価"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">画像を入力し、層ごとに値を変換</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">予測を正解ラベルと比べて損失を求める</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">誤差逆伝播で重みと損失の関係を計算</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">重みを更新し、別のデータでも評価</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>学習時は正解とのずれから重みを調整します。運用時に1枚を分類する処理とは分けて考えます。</figcaption></figure>
+<figure id="ip-ai-data-figure-2"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="画像を入力し、層ごとに値を変換、予測を正解ラベルと比べて損失を求める、誤差逆伝播で重みと損失の関係を計算、重みを更新し、別のデータでも評価"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">画像を入力し、層ごとに値を変換</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">予測を正解ラベルと比べて損失を求める</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">誤差逆伝播で重みと損失の関係を計算</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">重みを更新し、別のデータでも評価</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>学習時は正解とのずれから重みを調整します。運用時に1枚を分類する処理とは分けて考えます。</figcaption></figure>
 
 ## 画像・時系列・生成で、モデルの役割を見分ける
 
@@ -106,7 +106,7 @@
 
 工場で部品の傷を見つける仕組みを考えます。測定値や画像は記録した時点で一部の情報が失われます。AIの成績も、何を記録し、どの現場で試したかに左右されます。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="取得、間隔と段階数を決める。分割、学習用と独立評価用を分ける。評価、見逃しと誤警報を集計。運用、人による確認と見直し"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">取得</text><text x="126" y="29" fill="currentColor" font-size="14">間隔と段階数を決める</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">分割</text><text x="126" y="83" fill="currentColor" font-size="14">学習用と独立評価用を分ける</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">評価</text><text x="126" y="137" fill="currentColor" font-size="14">見逃しと誤警報を集計</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">運用</text><text x="126" y="191" fill="currentColor" font-size="14">人による確認と見直し</text></svg><figcaption>機器で取得した記録が評価と運用までつながる過程。精度の数字だけで途中の設計を飛ばさないようにします。</figcaption></figure>
+<figure id="ip-ai-data-figure-3"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="取得、間隔と段階数を決める。分割、学習用と独立評価用を分ける。評価、見逃しと誤警報を集計。運用、人による確認と見直し"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">取得</text><text x="126" y="29" fill="currentColor" font-size="14">間隔と段階数を決める</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">分割</text><text x="126" y="83" fill="currentColor" font-size="14">学習用と独立評価用を分ける</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">評価</text><text x="126" y="137" fill="currentColor" font-size="14">見逃しと誤警報を集計</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">運用</text><text x="126" y="191" fill="currentColor" font-size="14">人による確認と見直し</text></svg><figcaption>機器で取得した記録が評価と運用までつながる過程。精度の数字だけで途中の設計を飛ばさないようにします。</figcaption></figure>
 
 <span id="ai-data-textbook-skill-1"></span>
 
@@ -141,3 +141,22 @@
 </details>
 
 **復習の目安**　取得条件、評価用データ、分母の異なる評価指標を組み合わせて、導入の判断材料を説明できます。
+
+<section class="guided-lesson" id="guided-ip-ai-data" aria-labelledby="ip-ai-data-guided-title">
+<h3 id="ip-ai-data-guided-title">途中で確認　全体の正解と見逃し</h3>
+<p id="ip-ai-data-guided-prompt">点検画像が1,000枚あり、異常が写っているのは10枚です。全てを正常と答えるモデルの正解率は99％です。異常を見つける目的に照らして、次に確認すべきなのはどれですか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="異常画像に対する判断を確認してください。正常画像を当てても、異常検出の実績は増えません。" aria-labelledby="ip-ai-data-guided-title" aria-describedby="ip-ai-data-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-ai-data-guided-answer" value="choice-1"> 全画像の正解率を小数第2位まで出す</label>
+<label><input type="radio" name="ip-ai-data-guided-answer" value="choice-2"> 正常画像の枚数だけを増やす</label>
+<label><input type="radio" name="ip-ai-data-guided-answer" value="correct"> 異常10枚のうち何枚を検出できたか</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>異常10枚のうち検出できたのは0枚です。正常の枚数が多いため全体の正解率は高く見えます。異常を検出する目的には、異常を見逃した件数も必要です。</p>
+</details>
+</section>

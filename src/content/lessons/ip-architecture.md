@@ -7,7 +7,7 @@
   'order': 27,
   'minutes': 70,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 16,
   'syllabus': [43, 44],
   'objectives': ['冗長化と負荷分散を区別する', '稼働率と性能指標を計算する'],
@@ -57,9 +57,9 @@ MTBFを198時間、MTTRを2時間と置けば、単純モデルの稼働率は19
 
 受付サービスは入力用Aと記録用Bがともに動かなければ使えず、稼働率がAは0.98、Bは0.95です。故障が独立すると仮定すれば、両方が動く確率を掛けて0.98×0.95＝0.931、93.1％です。Bを同じ性能の2台で冗長化し、どちらか1台で記録できるなら、Bが止まるのは2台とも止まるときです。B全体の稼働率は1−(1−0.95)²＝0.9975。Aが直列に残るので全体は0.98×0.9975＝0.97755です。Bだけ改善しても、全体がA単体の0.98を超えないことを確認できます。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="受付が使える：Aと記録系Bが稼働、Aの稼働率：0.98、Bは2台のどちらかが動けばよい、全体＝0.98 × (1−0.05²)"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">受付が使える：Aと記録系Bが稼働</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">Aの稼働率：0.98</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">Bは2台のどちらかが動けばよい</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">全体＝0.98 × (1−0.05²)</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>AとBの間は直列、Bの内部は冗長です。同じ電源などの共通原因があれば、独立の仮定を見直します。</figcaption></figure>
+<figure id="ip-architecture-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="受付が使える：Aと記録系Bが稼働、Aの稼働率：0.98、Bは2台のどちらかが動けばよい、全体＝0.98 × (1−0.05²)"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">受付が使える：Aと記録系Bが稼働</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">Aの稼働率：0.98</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">Bは2台のどちらかが動けばよい</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">全体＝0.98 × (1−0.05²)</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>AとBの間は直列、Bの内部は冗長です。同じ電源などの共通原因があれば、独立の仮定を見直します。</figcaption></figure>
 
-<figure><svg viewBox="0 0 360 160" width="360" height="160" style="max-width:100%;height:auto" role="img" aria-label="入力Aの後に記録B1とB2が並列につながり、どちらかの記録装置の稼働で受付が完了する"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M18 80h35m60 0h30V40h33m-33 40v40h33m67-80h42v40h42m-84 40h42V80m34-5 8 5-8 5"/><rect x="53" y="59" width="60" height="42" rx="6"/><rect x="176" y="19" width="67" height="42" rx="6"/><rect x="176" y="99" width="67" height="42" rx="6"/></g><g fill="currentColor" font-size="14" text-anchor="middle"><text x="83" y="86">入力A</text><text x="210" y="46">記録B1</text><text x="210" y="126">記録B2</text></g></svg><figcaption>受付には入力Aが必要です。記録はB1、B2のどちらかが動いていれば続けられます。</figcaption></figure>
+<figure id="ip-architecture-figure-2"><svg viewBox="0 0 360 160" width="360" height="160" style="max-width:100%;height:auto" role="img" aria-label="入力Aの後に記録B1とB2が並列につながり、どちらかの記録装置の稼働で受付が完了する"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M18 80h35m60 0h30V40h33m-33 40v40h33m67-80h42v40h42m-84 40h42V80m34-5 8 5-8 5"/><rect x="53" y="59" width="60" height="42" rx="6"/><rect x="176" y="19" width="67" height="42" rx="6"/><rect x="176" y="99" width="67" height="42" rx="6"/></g><g fill="currentColor" font-size="14" text-anchor="middle"><text x="83" y="86">入力A</text><text x="210" y="46">記録B1</text><text x="210" y="126">記録B2</text></g></svg><figcaption>受付には入力Aが必要です。記録はB1、B2のどちらかが動いていれば続けられます。</figcaption></figure>
 
 ## 速さ・処理量・復旧を別々に測る
 
@@ -73,7 +73,7 @@ MTBFを198時間、MTTRを2時間と置けば、単純モデルの稼働率は19
 
 注文を受けるWeb処理が2台あり、どちらか一方で処理できます。後ろに在庫を記録する装置が1台あります。この構成では、Web処理の台数だけを増やしても在庫装置の停止は防げません。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="動作条件、Webのどちらかと在庫。Web、両方停止すると利用不可。在庫、単独停止でも利用不可。検算、全体は在庫単独を超えない"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">動作条件</text><text x="126" y="29" fill="currentColor" font-size="14">Webのどちらかと在庫</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">Web</text><text x="126" y="83" fill="currentColor" font-size="14">両方停止すると利用不可</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">在庫</text><text x="126" y="137" fill="currentColor" font-size="14">単独停止でも利用不可</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">検算</text><text x="126" y="191" fill="currentColor" font-size="14">全体は在庫単独を超えない</text></svg><figcaption>冗長部分と単独部分のうち、どこが止まればサービス全体が止まるかを書きます。</figcaption></figure>
+<figure id="ip-architecture-figure-3"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="動作条件、Webのどちらかと在庫。Web、両方停止すると利用不可。在庫、単独停止でも利用不可。検算、全体は在庫単独を超えない"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">動作条件</text><text x="126" y="29" fill="currentColor" font-size="14">Webのどちらかと在庫</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">Web</text><text x="126" y="83" fill="currentColor" font-size="14">両方停止すると利用不可</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">在庫</text><text x="126" y="137" fill="currentColor" font-size="14">単独停止でも利用不可</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">検算</text><text x="126" y="191" fill="currentColor" font-size="14">全体は在庫単独を超えない</text></svg><figcaption>冗長部分と単独部分のうち、どこが止まればサービス全体が止まるかを書きます。</figcaption></figure>
 
 <span id="architecture-textbook-skill-1"></span>
 
@@ -108,3 +108,22 @@ MTBFを198時間、MTTRを2時間と置けば、単純モデルの稼働率は19
 </details>
 
 **復習の目安**　要求に合う分担を選び、並列と直列の式を動作条件から導けます。
+
+<section class="guided-lesson" id="guided-ip-architecture" aria-labelledby="ip-architecture-guided-title">
+<h3 id="ip-architecture-guided-title">途中で確認　共通部分の停止を含める</h3>
+<p id="ip-architecture-guided-prompt">サーバAかBのどちらかが動けばサービスを継続できます。ただし、どちらも同じ入口装置を通ります。サーバ2台は稼働中で、入口装置だけが停止した場合の判定はどれですか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="利用者からサーバまで、通らなければならない部分を探してください。" aria-labelledby="ip-architecture-guided-title" aria-describedby="ip-architecture-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-architecture-guided-answer" value="correct"> 利用者からはアクセスできず、サービスは停止する</label>
+<label><input type="radio" name="ip-architecture-guided-answer" value="choice-1"> サーバが2台動いているので、サービスは維持される</label>
+<label><input type="radio" name="ip-architecture-guided-answer" value="choice-2"> 入口装置はサーバの組合せに関係しないので、片方ずつ利用できる</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>AとBは並列で互いを補えますが、入口装置が共通で必要です。経路全体で見ると、入口が止まれば両サーバに到達できません。冗長化の対象を選ぶときに、共通部分を確認します。</p>
+</details>
+</section>

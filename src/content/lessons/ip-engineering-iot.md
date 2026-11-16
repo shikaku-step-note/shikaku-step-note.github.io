@@ -7,7 +7,7 @@
   'order': 11,
   'minutes': 95,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 5,
   'syllabus': [15, 17],
   'objectives': ['設計と生産を支えるシステムを区別する', 'IoTの計測・通信・制御を説明する'],
@@ -54,7 +54,7 @@ IoTではセンサが温度や位置などを計測し、通信でデータを�
 
 入力のセンサー、処理、出力のアクチュエータという区別を使うと、故障点を推定できます。表示は上昇しているのに冷却ファンが動かないなら、測定、判定、出力のどこが止まったかをログと実測で切り分けます。
 
-<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="センサーから装置制御まで, 入力, 温度測定, 判定, 装置側, 出力, 冷却・停止"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">入力</text><text x="68" y="51">温度測定</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">判定</text><text x="211" y="51">装置側</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">出力</text><text x="354" y="51">冷却・停止</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>通信断でも必要な停止の判断は、装置側で行えるようにします。</figcaption></figure>
+<figure id="ip-engineering-iot-existing-visual"><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="センサーから装置制御まで, 入力, 温度測定, 判定, 装置側, 出力, 冷却・停止"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">入力</text><text x="68" y="51">温度測定</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">判定</text><text x="211" y="51">装置側</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">出力</text><text x="354" y="51">冷却・停止</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>通信断でも必要な停止の判断は、装置側で行えるようにします。</figcaption></figure>
 
 <details><summary>通信断でも危険温度で停止させるには？</summary><p>停止判断を装置側で行える設計にします。クラウドへの送信成功を停止の条件にしません。</p></details>
 
@@ -72,7 +72,7 @@ IoTではセンサが温度や位置などを計測し、通信でデータを�
 
 倉庫の冷蔵庫に温度センサーを設置します。測定値をネットワークで送り、監視画面で長期の変化を分析するのがIoT活用の一例です。現場の組込み装置は、温度が上がったときに冷却を始めるなど、機器の中で特定の機能を担います。センサーは状態を測り、制御装置が条件を判断し、冷却装置などのアクチュエータが物理的な動作をします。端末とサーバの間が途切れたとき、サーバで判断する構成だけでは冷却を始められません。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="センサーが温度を測る、現場の制御装置に値を渡す。現場の制御装置が判断、通信断でも冷却を切替える。サーバは記録を受け取る、履歴を分析し担当者へ知らせる"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">センサーが温度を測る</text><text x="200" y="43">現場の制御装置に値を渡す</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">現場の制御装置が判断</text><text x="200" y="106">通信断でも冷却を切替える</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">サーバは記録を受け取る</text><text x="200" y="169">履歴を分析し担当者へ知らせる</text></g></svg><figcaption>現場の制御と遠隔監視を分けると、通信が切れたときに残る機能を判断できます。</figcaption></figure>
+<figure id="ip-engineering-iot-figure-2"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="センサーが温度を測る、現場の制御装置に値を渡す。現場の制御装置が判断、通信断でも冷却を切替える。サーバは記録を受け取る、履歴を分析し担当者へ知らせる"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">センサーが温度を測る</text><text x="200" y="43">現場の制御装置に値を渡す</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">現場の制御装置が判断</text><text x="200" y="106">通信断でも冷却を切替える</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">サーバは記録を受け取る</text><text x="200" y="169">履歴を分析し担当者へ知らせる</text></g></svg><figcaption>現場の制御と遠隔監視を分けると、通信が切れたときに残る機能を判断できます。</figcaption></figure>
 
 現場で安全を確保しながら、ネットワークへ再接続したときに欠けた測定値を補うよう設計できます。例えば冷却を8℃以上で開始し、6℃以下で止めるとします。一つの境界値だけで切り替える場合と異なり、7.9℃と8.1℃を細かく行き来しても頻繁に切り替わりません。なお、センサーが故障し値が読めないケースは通信断と別です。最後に読めた値を信じ続けず、異常表示や安全側の運用を決めておきます。
 
@@ -110,4 +110,51 @@ IoTではセンサが温度や位置などを計測し、通信でデータを�
 
 配送倉庫では、商品をRFIDのタグで識別し、重量センサーで荷の重さを測り、ゲートの開閉装置を制御する例が考えられます。RFIDで荷の識別ができても、重さが上限内かは別の測定です。現場の制御装置が重さを受け取り、上限超過ならゲートを閉じたままにします。記録を遠隔で集計する設備は、上限を判定する機能の代わりにはなりません。
 
-<figure><svg viewBox="0 0 330 210" width="330" height="210" style="max-width:100%;height:auto" role="img" aria-label="重量センサーが重量を制御装置に渡し、制御装置がゲートを動かす。遠隔集計は現場で発生した記録を受け取る。"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="10" y="12" width="310" height="114" rx="12"/><path d="M37 76h84m-7-4 7 4-7 4m65-4h82m-7-4 7 4-7 4"/><path d="M165 89v65m-4-7 4 7 4-7" stroke-dasharray="5 4"/><rect x="106" y="158" width="118" height="34" rx="5"/></g><g fill="currentColor" font-size="13" text-anchor="middle"><text x="165" y="34">倉庫内</text><text x="59" y="65">重量センサー</text><text x="161" y="65">制御装置</text><text x="263" y="65">ゲート</text><text x="165" y="180">遠隔集計</text><text x="244" y="146">記録の送信</text></g></svg><figcaption>実線は現場で完結する経路、破線は遠隔集計へ記録を送る経路です。破線の経路が止まったときに影響する処理を確かめます。</figcaption></figure>
+<figure id="ip-engineering-iot-figure-3"><svg viewBox="0 0 330 210" width="330" height="210" style="max-width:100%;height:auto" role="img" aria-label="重量センサーが重量を制御装置に渡し、制御装置がゲートを動かす。遠隔集計は現場で発生した記録を受け取る。"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="10" y="12" width="310" height="114" rx="12"/><path d="M37 76h84m-7-4 7 4-7 4m65-4h82m-7-4 7 4-7 4"/><path d="M165 89v65m-4-7 4 7 4-7" stroke-dasharray="5 4"/><rect x="106" y="158" width="118" height="34" rx="5"/></g><g fill="currentColor" font-size="13" text-anchor="middle"><text x="165" y="34">倉庫内</text><text x="59" y="65">重量センサー</text><text x="161" y="65">制御装置</text><text x="263" y="65">ゲート</text><text x="165" y="180">遠隔集計</text><text x="244" y="146">記録の送信</text></g></svg><figcaption>実線は現場で完結する経路、破線は遠隔集計へ記録を送る経路です。破線の経路が止まったときに影響する処理を確かめます。</figcaption></figure>
+
+<span id="ip-engineering-iot-decision-section"></span>
+
+## 生産に使える部品を数え、必要な手配量を決める
+
+部品表は製品一つを作るのに必要な部品の数を表します。製造計画から組立に必要な総数を求め、倉庫の記録から使用できる在庫と期日までに届く分を引くのが基本です。総在庫には検査待ちや他の注文に予約した分が含まれることがあります。実際に作れる数を知りたいときは、品目の数と利用できる状態を別に確かめます。IoTでセンサの状態を在庫表へ伝える場合も、確認していない記録に自動で合格を付けないよう、誰が認めた状態かを残しておきます。
+
+<figure id="ip-engineering-iot-worked-decision">
+<figcaption id="ip-engineering-iot-worked-decision-caption">組立日までに使える部品Pを確認する</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-engineering-iot-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">記録</th><th scope="col">数量</th><th scope="col">今回使えるか</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">棚にある部品P</th><td>90個</td><td>うち検査待ち15個を除く</td></tr>
+    <tr><th scope="row">合格品のうち既に予約済み</th><td>20個</td><td>今回には使わない</td></tr>
+    <tr><th scope="row">新規入荷</th><td>10個</td><td>組立日前に検査完了予定</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+製品30台に部品Pが3個ずつ要るなら、必要数は30×3＝90個です。倉庫に90個あっても、使えるのは90−15−20＝55個。組立前に受け入れる10個を加えると65個です。手配量は90−65＝25個になります。入荷が遅れそうなら、10個を含む予定と、届くまで使えない状況とを分けて判断します。
+
+<section class="guided-lesson" id="ip-engineering-iot-guided-transfer" aria-labelledby="ip-engineering-iot-guided-transfer-title">
+<h3 id="ip-engineering-iot-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-engineering-iot-guided-transfer-prompt">新規入荷の10個が組立日に間に合わなくなりました。ほかの条件は同じとして、間に合わせる追加手配は何個ですか。</p>
+<form data-guided-practice data-expected="35" data-guided-hint="遅れた10個を使える在庫へ入れず、棚から検査待ちと予約済みも差し引きます。" aria-labelledby="ip-engineering-iot-guided-transfer-title" aria-describedby="ip-engineering-iot-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-engineering-iot-guided-transfer-input">答え（個）</label> <input id="ip-engineering-iot-guided-transfer-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>使える部品は90−15−20＝55個で、必要な90個との差は35個です。</p>
+</details>
+</section>
+
+<span id="ip-engineering-iot-decision-independent"></span>
+
+### 自分で判断する
+
+1台に部品Qが2個要る製品を20台作ります。合格在庫34個のうち別注文が4個を使い、明日入荷予定の8個は組立の翌日に検査が終わります。明日の組立に間に合わせる追加数を求めてください。
+
+<details><summary>考え方と答えを確認する</summary><p>必要数は20×2＝40個。明日使えるのは34−4＝30個です。検査終了が組立日の翌日なので入荷予定の8個は使える在庫に加えず、40−30＝10個の追加が必要です。</p></details>

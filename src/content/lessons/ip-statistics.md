@@ -7,7 +7,7 @@
   'order': 22,
   'minutes': 75,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 13,
   'syllabus': [34],
   'objectives': ['代表値と散らばりを説明する', '確率・期待値を計算する'],
@@ -62,7 +62,7 @@
 
 5人から司会と記録を1人ずつ選ぶと、順に5×4＝20通りです。役割を区別せず委員を2人選ぶなら、同じ組が二重に数えられているので20÷2＝10組です。候補の並びを入れ替えて同じ結果なら、並べた通り数をそのまま使えません。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="求めたい：誤りが少なくとも1件、補集合：正常を2件続けて引く、1件目 7/10 → 2件目 6/9、1 − (7/10 × 6/9) = 8/15"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">求めたい：誤りが少なくとも1件</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">補集合：正常を2件続けて引く</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">1件目 7/10 → 2件目 6/9</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">1 − (7/10 × 6/9) = 8/15</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>正常を引くたび、残りの総数と正常件数が1件減ります。</figcaption></figure>
+<figure id="ip-statistics-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="求めたい：誤りが少なくとも1件、補集合：正常を2件続けて引く、1件目 7/10 → 2件目 6/9、1 − (7/10 × 6/9) = 8/15"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">求めたい：誤りが少なくとも1件</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">補集合：正常を2件続けて引く</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">1件目 7/10 → 2件目 6/9</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">1 − (7/10 × 6/9) = 8/15</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>正常を引くたび、残りの総数と正常件数が1件減ります。</figcaption></figure>
 
 ## 代表値と分布を別々に読む
 
@@ -72,7 +72,7 @@
 
 待ち時間2、2、3、3、20分を5分幅で分けると、0分以上5分未満に4件、20分以上25分未満に1件が入ります。途中の区間は0件ですが、軸上ではその幅を残します。0件の区間を詰めると、20分が他の値から離れていることを読み取りにくくなります。
 
-<figure><svg viewBox="0 0 360 195" width="360" height="195" style="max-width:100%;height:auto" role="img" aria-label="待ち時間の度数。0分以上5分未満に4件、5分以上20分未満は0件、20分以上25分未満に1件"><g fill="currentColor" fill-opacity=".2" stroke="currentColor"><rect x="38" y="38" width="56" height="100"/><rect x="262" y="113" width="56" height="25"/></g><path d="M38 27v111h280M33 38h5m-5 75h5m56 25v5m56-5v5m56-5v5m56-5v5m56-5v5" fill="none" stroke="currentColor"/><g fill="currentColor" font-size="13"><text x="4" y="23">件数</text><text x="18" y="43">4</text><text x="18" y="118">1</text><text x="18" y="143">0</text><text x="34" y="158">0</text><text x="90" y="158">5</text><text x="142" y="158">10</text><text x="198" y="158">15</text><text x="254" y="158">20</text><text x="310" y="158">25</text><text x="119" y="181">待ち時間（分）</text></g></svg><figcaption>5分幅の区間で待ち時間の度数を表しています。中央の3区間は0件です。</figcaption></figure>
+<figure id="ip-statistics-figure-2"><svg viewBox="0 0 360 195" width="360" height="195" style="max-width:100%;height:auto" role="img" aria-label="待ち時間の度数。0分以上5分未満に4件、5分以上20分未満は0件、20分以上25分未満に1件"><g fill="currentColor" fill-opacity=".2" stroke="currentColor"><rect x="38" y="38" width="56" height="100"/><rect x="262" y="113" width="56" height="25"/></g><path d="M38 27v111h280M33 38h5m-5 75h5m56 25v5m56-5v5m56-5v5m56-5v5m56-5v5" fill="none" stroke="currentColor"/><g fill="currentColor" font-size="13"><text x="4" y="23">件数</text><text x="18" y="43">4</text><text x="18" y="118">1</text><text x="18" y="143">0</text><text x="34" y="158">0</text><text x="90" y="158">5</text><text x="142" y="158">10</text><text x="198" y="158">15</text><text x="254" y="158">20</text><text x="310" y="158">25</text><text x="119" y="181">待ち時間（分）</text></g></svg><figcaption>5分幅の区間で待ち時間の度数を表しています。中央の3区間は0件です。</figcaption></figure>
 
 ## グラフと制約を使って判断する
 
@@ -118,7 +118,7 @@ IPA Ver.6.5の項目34は、確率と統計の基本的な考え方を対象と�
 
 受付を改善した月、全体の平均待ち時間は短くなりました。ただし午前と午後で利用件数の構成が変わっています。数字を出す前に、何を比べれば改善の影響を説明できるかを決めます。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="問い、何を変えた効果か。集める、期間・客層・測り方を統一。まとめる、件数を分母にして計算。判断、平均と分布、偏りを点検"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">問い</text><text x="126" y="29" fill="currentColor" font-size="14">何を変えた効果か</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">集める</text><text x="126" y="83" fill="currentColor" font-size="14">期間・客層・測り方を統一</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">まとめる</text><text x="126" y="137" fill="currentColor" font-size="14">件数を分母にして計算</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">判断</text><text x="126" y="191" fill="currentColor" font-size="14">平均と分布、偏りを点検</text></svg><figcaption>同じ数字でも、測り方と比べる集団が異なると結論は変わります。</figcaption></figure>
+<figure id="ip-statistics-figure-3"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="問い、何を変えた効果か。集める、期間・客層・測り方を統一。まとめる、件数を分母にして計算。判断、平均と分布、偏りを点検"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">問い</text><text x="126" y="29" fill="currentColor" font-size="14">何を変えた効果か</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">集める</text><text x="126" y="83" fill="currentColor" font-size="14">期間・客層・測り方を統一</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">まとめる</text><text x="126" y="137" fill="currentColor" font-size="14">件数を分母にして計算</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">判断</text><text x="126" y="191" fill="currentColor" font-size="14">平均と分布、偏りを点検</text></svg><figcaption>同じ数字でも、測り方と比べる集団が異なると結論は変わります。</figcaption></figure>
 
 <span id="statistics-textbook-skill-1"></span>
 
@@ -153,3 +153,21 @@ IPA Ver.6.5の項目34は、確率と統計の基本的な考え方を対象と�
 </details>
 
 **復習の目安**　母集団、分母、分布、比較条件を確認し、代表値が表す範囲を説明できます。
+
+<section class="guided-lesson" id="guided-ip-statistics" aria-labelledby="ip-statistics-guided-title">
+<h3 id="ip-statistics-guided-title">途中で確認　条件で絞った母数</h3>
+<p id="ip-statistics-guided-prompt">申込者100人のうち、40人がオンラインで申し込みました。オンライン申込者のうち10人が日時を変更しました。オンライン申込者に限った日時変更の割合を、％の数字で答えてください。</p>
+<form data-guided-practice data-expected="25" data-guided-hint="分母は全申込者ではなく、質問で対象にした申込方法の人数です。" aria-labelledby="ip-statistics-guided-title" aria-describedby="ip-statistics-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label for="ip-statistics-guided-answer">答え（数字）</label>
+<input type="text" inputmode="numeric" id="ip-statistics-guided-answer" autocomplete="off">
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>10÷40×100＝25％です。10÷100＝10％は、全申込者のうちオンラインで申し込み、かつ日時を変えた人の割合です。どの集団を分母にしたかを書けば、二つの答えの違いが分かります。</p>
+</details>
+</section>

@@ -1,5 +1,5 @@
 ---
-import { units, fieldNames, ipSource, ipAssessments } from '../data/it-passport';
+import { units, fieldNames, ipSource, ipAssessments, ipReviewed } from '../data/it-passport';
 import type { CollectionEntry } from 'astro:content';
 import { href } from '../lib/site';
 import Icon from './Icon.astro';
@@ -36,7 +36,7 @@ const assessments = ipAssessments(lessons);
       <div class="notice compact">
         <strong>適用範囲：現行シラバス Ver.6.5</strong>
         <p>
-          2026年11月12日にIPAの現行シラバスと試験形式を再確認しました。2027年度の新試験制度への移行が予定され、シラバス案も公開されています。このコースは現行のVer.6.5に対応し、将来の案への対応をうたうものではありません。受験時は必ず公式の適用範囲を再確認してください。
+          IPAの現行シラバスと試験形式の確認日：<time datetime={ipReviewed}>{ipReviewed}</time>。2027年度の新試験制度への移行が予定され、シラバス案も公開されています。このコースは現行のVer.6.5に対応し、将来の案への対応をうたうものではありません。受験時は必ず公式の適用範囲を再確認してください。
           <a href={href('study-guides/it-passport-2027-transition/')}>2027年の試験再開と新シラバス、今の参考書の使い方</a>も参考にしてください。
         </p>
         <a href={ipSource('changes').url}>IPA：制度見直しの案内</a>
@@ -69,7 +69,7 @@ const assessments = ipAssessments(lessons);
         </li>
         <li>
           <strong>第4段階：復習と本番時間での演習</strong>
-          <p>用語と3分野の総復習を終えたら、資料を読むケース演習で知識を組み合わせます。最後に120分模試を受け、間違えた分野へ戻ります。通しで解く前に、<a href={href('study-guides/it-passport-exam-timing/')}>本番120分の時間配分</a>も決めておきましょう。</p>
+          <p>用語と3分野の総復習を終えたら、資料を読むケース演習で知識を組み合わせます。最後の総合読解で、複数の資料から一つの判断を組み立てます。その後は120分模試を受け、間違えた分野へ戻ります。通しで解く前に、<a href={href('study-guides/it-passport-exam-timing/')}>本番120分の時間配分</a>も決めておきましょう。</p>
         </li>
       </ol>
       <a class="button secondary" href={href('downloads/it-passport-curriculum.txt')} download>
@@ -145,7 +145,7 @@ const assessments = ipAssessments(lessons);
     </section>
     <section class="course-section" id="exams">
       <h2>総復習と模擬試験</h2>
-      <p>ユニットの復習問題を再度解く総復習、23ユニットの入力式総復習、独立した100問の模試2回を用意しています。</p>
+      <p>ユニットの総合確認では、学んだ内容を組み合わせる独自の問題にも取り組みます。章末では、<a href={href('qualifications/it-passport/ip-release-decision/')}>3分野の総合読解</a>へ進み、導入条件と試験記録の見方を確認します。続いて、入力式総復習、資料付きケース演習、独立した100問の模試2回で練習できます。</p>
       <div class="assessment-links">
         {assessments
           .filter((a) => !a.unit && a.kind !== 'lesson')
@@ -167,10 +167,6 @@ const assessments = ipAssessments(lessons);
       <p>
         間違えた理由を自分の言葉で説明し、関連するレッスンを読み直しましょう。IPAの公開問題で形式に慣れ、公式シラバスの用語例も確認してください。模試は全問各1点の練習で、IRTによる公式評価点や合否の再現ではありません。
         <a href={href('study-guides/it-passport-passing-score/')}>本試験の合格基準と、結果レポートの読み方</a>も確認できます。
-      </p>
-      <p>
-        旧ITパスポートの入門サンプルとその記録は保管しています。新しい{lessons.length}
-        レッスンは別の識別子を使い、旧サンプルの完了を引き継ぎません。
       </p>
     </section>
     <Share
@@ -194,7 +190,7 @@ const assessments = ipAssessments(lessons);
         CBT方式・四肢択一100問・120分。総合評価点600/1,000以上、かつ3分野すべての評価点が各300/1,000以上が公式の基準です。正答率との単純な換算はできません。
       </p>
       <a href={ipSource('requirements').url}>IPA 試験要綱Ver.5.6</a>
-      <p class="muted">確認日：2026-10-25</p>
+      <p class="muted">確認日：<time datetime={ipReviewed}>{ipReviewed}</time></p>
     </section>
     <section class="sidebar-box">
       <h2>始める前に</h2>

@@ -7,7 +7,7 @@
   'order': 25,
   'minutes': 60,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 14,
   'syllabus': [38, 39],
   'objectives': ['言語の役割を区別する', 'HTML・CSS・JSON等の用途を説明する'],
@@ -66,7 +66,7 @@ XMLの要素で情報を構造化する場合と、SQLでデータベースの�
 
 申込ページで、見出しが普通の文章に見え、人数に0を入れても確認に進めるとします。見出しやラベルの意味はHTMLの要素で表現し、見出しの大きさや配置はCSSで決めます。入力値に応じてその場で案内を切り替えるのはJavaScriptの典型的な仕事です。申込をサーバに送るサービスなら、ブラウザでの案内に加えて、受け付け側でも人数を検証します。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="HTML：項目の意味と文書構造、CSS：配置、配色、文字サイズ、JavaScript：入力に応じた案内、受け付け側：業務規則を再検証"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">HTML：項目の意味と文書構造</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">CSS：配置、配色、文字サイズ</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">JavaScript：入力に応じた案内</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">受け付け側：業務規則を再検証</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じ入力欄でも、意味・見た目・反応・受付の要件はそれぞれ変更先が異なります。</figcaption></figure>
+<figure id="ip-languages-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="HTML：項目の意味と文書構造、CSS：配置、配色、文字サイズ、JavaScript：入力に応じた案内、受け付け側：業務規則を再検証"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">HTML：項目の意味と文書構造</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">CSS：配置、配色、文字サイズ</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">JavaScript：入力に応じた案内</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">受け付け側：業務規則を再検証</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>同じ入力欄でも、意味・見た目・反応・受付の要件はそれぞれ変更先が異なります。</figcaption></figure>
 
 XMLでは `<申込><人数>3</人数></申込>` のように項目名を付けたデータを受け渡せます。開始タグと終了タグが対応し、内側を閉じてから外側を閉じていれば、構造を読み取れます。それだけで人数が1以上であることは確認できません。件数の検索や行の更新を扱うSQL、画面を表すHTML、取引先にデータを渡すXMLは、どの段階で何をするかを分けて考えます。
 
@@ -80,7 +80,7 @@ XMLでは `<申込><人数>3</人数></申込>` のように項目名を付け�
 
 商品の一覧を別の部署へ渡し、利用者にはブラウザで見せます。どこを直すべきかは、変えたいのが情報の意味、見た目、動作、データ交換の約束のどれかで決まります。
 
-<figure><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="構造、HTMLで見出し・入力を表す。見た目、CSSで読みやすく整える。操作、プログラムで入力を処理。交換、構造化データの仕様を共有"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">構造</text><text x="126" y="29" fill="currentColor" font-size="14">HTMLで見出し・入力を表す</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">見た目</text><text x="126" y="83" fill="currentColor" font-size="14">CSSで読みやすく整える</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">操作</text><text x="126" y="137" fill="currentColor" font-size="14">プログラムで入力を処理</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">交換</text><text x="126" y="191" fill="currentColor" font-size="14">構造化データの仕様を共有</text></svg><figcaption>文書の構造、表示、処理、交換は別々に変更できるようにします。</figcaption></figure>
+<figure id="ip-languages-figure-2"><svg viewBox="0 0 340 228" width="340" height="228" style="max-width:100%;height:auto" role="img" aria-label="構造、HTMLで見出し・入力を表す。見た目、CSSで読みやすく整える。操作、プログラムで入力を処理。交換、構造化データの仕様を共有"><rect x="4" y="4" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="29" fill="currentColor" font-size="14">構造</text><text x="126" y="29" fill="currentColor" font-size="14">HTMLで見出し・入力を表す</text><path d="M170 46v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="58" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="83" fill="currentColor" font-size="14">見た目</text><text x="126" y="83" fill="currentColor" font-size="14">CSSで読みやすく整える</text><path d="M170 100v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="112" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="137" fill="currentColor" font-size="14">操作</text><text x="126" y="137" fill="currentColor" font-size="14">プログラムで入力を処理</text><path d="M170 154v10m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/><rect x="4" y="166" width="332" height="40" rx="5" fill="currentColor" fill-opacity=".06" stroke="currentColor"/><text x="16" y="191" fill="currentColor" font-size="14">交換</text><text x="126" y="191" fill="currentColor" font-size="14">構造化データの仕様を共有</text></svg><figcaption>文書の構造、表示、処理、交換は別々に変更できるようにします。</figcaption></figure>
 
 <span id="languages-textbook-skill-1"></span>
 
@@ -109,3 +109,22 @@ XMLでは `<申込><人数>3</人数></申込>` のように項目名を付け�
 </details>
 
 **復習の目安**　画面とデータの問題を分け、構文・実行・業務規則のどこを確認するか説明できます。
+
+<section class="guided-lesson" id="guided-ip-languages" aria-labelledby="ip-languages-guided-title">
+<h3 id="ip-languages-guided-title">途中で確認　型の異なる値を渡す境界</h3>
+<p id="ip-languages-guided-prompt">数量を整数として受け取る処理に、画面から文字列「12」が渡されました。入力が整数として解釈できるという条件は、どこで確認するとよいでしょうか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="画面にどう表示されるかと、処理に渡す値の型を分けて考えます。" aria-labelledby="ip-languages-guided-title" aria-describedby="ip-languages-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-languages-guided-answer" value="correct"> 画面から受け取った直後に、規則を確認して整数として変換する</label>
+<label><input type="radio" name="ip-languages-guided-answer" value="choice-1"> 表示が数字なので、文字列のまま数量の足し算をする</label>
+<label><input type="radio" name="ip-languages-guided-answer" value="choice-2"> 同じプログラムを別のOSで動かせば、整数として扱える</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>入力の規則を確認してから、処理に必要な整数へ変換します。「12」と「3」の文字をつないで「123」になる処理と、整数12＋3＝15は意味が異なります。</p>
+</details>
+</section>

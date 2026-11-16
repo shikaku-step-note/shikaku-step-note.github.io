@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { units, syllabusItems, ipAssessments, ipSources, fieldNames } from '../src/data/it-passport.ts';
+import { units, syllabusItems, ipAssessments, ipSources, ipReviewed, fieldNames } from '../src/data/it-passport.ts';
 const lessons = readdirSync('src/content/lessons')
   .filter((n) => n.startsWith('ip-') && n.endsWith('.md'))
   .map((n) => ({ data: parse(readFileSync(`src/content/lessons/${n}`, 'utf8').split('---')[1]) }))
@@ -10,13 +10,13 @@ const total = lessons.reduce((n, l) => n + l.data.minutes, 0);
 const lines = [
   '資格ステップノート ITパスポート 学習ツリー・推奨スケジュール',
   '対象：現行シラバスVer.6.5（2026年1月）／試験要綱Ver.5.6',
-  'シラバス・試験形式の再確認日：2026-11-12',
+  `シラバス・試験形式の再確認日：${ipReviewed}`,
   '公式の級分け：ITパスポート内に複数の級はありません。',
   'ユニット・学習ステージは当サイト独自の区切りです。',
   '',
   `本文・例題の目安合計：${lessons.reduce((n, l) => n + l.data.minutes, 0)}分。テスト・復習・公開問題の時間は別。`,
   `目安：本文・例題＋模試240分で、1日30分・週5日なら約${Math.ceil((total + 240) / 150)}週、1日60分・週5日なら約${Math.ceil((total + 240) / 300)}週。別に復習・解き直しの時間を確保。`,
-  '順序：ストラテジ → マネジメント → テクノロジ → 入力式総復習 → 資料を読むケース演習 → 模試2回。翌日・1週間後に誤答を解き直す。',
+  '順序：ストラテジ → マネジメント → テクノロジ → 3分野の総合読解 → 入力式総復習 → 資料を読むケース演習 → 模試2回。翌日・1週間後に誤答を解き直す。',
   '例題の途中式を確認し、条件を変えた練習を解く。経営データ・工程計画・表計算の読解演習は、前提レッスンに続けて学ぶ。各ユニットの終了時に用語・総合確認を実施。',
   '',
   'ITパスポート（単一の公式試験区分）',
@@ -33,7 +33,7 @@ for (const field of ['strategy', 'management', 'technology']) {
         `│  │  │  前提：${d.prerequisite}`,
         `│  │  │  公式対応：${d.syllabus.map((n) => `${n}.${syllabusItems[n - 1]}`).join('／')}`,
         `│  │  │  理解度チェック：${tests.find((test) => test.id === d.stableId + '-check').questions.length}問 [${d.stableId}-check]`,
-        `│  │  │  次：${lessons.find((x) => x.data.order === d.order + 1)?.data.title ?? '用語の総復習→3分野の総復習→模試'}`,
+        `│  │  │  次：${lessons.find((x) => x.data.order === d.order + 1)?.data.title ?? '入力式総復習→資料付きケース演習→模試'}`,
       );
     }
     for (const a of tests.filter((a) => a.unit === unit.id && a.kind !== 'lesson'))
@@ -42,7 +42,7 @@ for (const field of ['strategy', 'management', 'technology']) {
 }
 for (const a of tests.filter((a) => !a.unit && a.kind !== 'lesson'))
   lines.push(
-    `└─ ${a.title} ${a.questions.length}問 [${a.id}] ${a.minutes ? '120分／時間なしも選択可' : '時間制限なし'}`,
+    `└─ ${a.title} ${a.questions.length}問 [${a.id}] ${a.minutes ? '120分／時間なしも選択可' : '時間制限なし'}／版 ${a.version}`,
   );
 lines.push('', '公式項目と対応レッスン');
 syllabusItems.forEach((name, i) => {
@@ -58,7 +58,7 @@ lines.push(
   '本試験100問のうち92問が評価対象、IRT採点。公式基準は総合600/1000かつ各分野300/1000以上。',
   '当サイトの模試は35/20/45問、全100問を各1点で採点。IRT評価点・公式の合否には換算できません。',
   '問題の版は各テストに表示します。独自作成で公式問題の転載ではありません。',
-  '用語総復習・3分野総復習はユニットの問題を再利用。入力式総復習23問は別問題。模試は各100問、別々の独自問題で2回分。',
+  '用語総復習・3分野総復習はユニットの問題を再利用。各ユニットの総合確認には新しい応用問題1問を追加。入力式総復習23問は独立した問題。模試は各100問、別々の独自問題で2回分。',
   'レッスンの完了とテスト結果は別に記録。旧サンプルの完了は新教材へ加算しません。',
   '記録は利用中のブラウザのみ。バックアップを推奨。',
   '',

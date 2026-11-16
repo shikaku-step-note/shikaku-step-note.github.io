@@ -7,7 +7,7 @@
   'order': 40,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 23,
   'syllabus': [63],
   'objectives': ['共通鍵と公開鍵を区別する', '署名と証明書の役割を説明する'],
@@ -54,7 +54,7 @@
 
 ハッシュは入力から一定長の値を求め、変更の検出などに利用します。暗号文を元に戻す復号のように原文を求める用途ではありません。配布元と同じ場所にある照合値も書き換えられる場合には、値が一致しただけで配布元を確認できません。証明書や信頼できる別経路など、比較対象を信頼できる条件が必要です。
 
-<figure><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="署名と検証の鍵, 署名者, 秘密鍵, 送付, 文書と署名, 検証者, 署名者の公開鍵"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">署名者</text><text x="68" y="51">秘密鍵</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">送付</text><text x="211" y="51">文書と署名</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">検証者</text><text x="354" y="51">署名者の公開鍵</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>署名は相手と改変の確認に使います。文書を秘密にする仕組みとは異なります。</figcaption></figure>
+<figure id="ip-cryptography-figure-1"><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="署名と検証の鍵, 署名者, 秘密鍵, 送付, 文書と署名, 検証者, 署名者の公開鍵"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">署名者</text><text x="68" y="51">秘密鍵</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">送付</text><text x="211" y="51">文書と署名</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">検証者</text><text x="354" y="51">署名者の公開鍵</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>署名は相手と改変の確認に使います。文書を秘密にする仕組みとは異なります。</figcaption></figure>
 
 <details><summary>送信者の公開鍵を使えば、受信者だけが文書を読める？</summary><p>受信者だけに読ませる典型的な公開鍵暗号では、受信者の公開鍵で暗号化します。署名の検証に使う鍵と分けます。</p></details>
 
@@ -62,7 +62,7 @@
 
 送信者Aが見積書を作り、受取人Bだけに読ませ、BがAの作成を確認できるようにします。典型的な公開鍵暗号で機密性を確保するときはBの公開鍵を使い、復号にはBの秘密鍵を使います。署名を作るのはAの秘密鍵、署名を確かめるのはAの公開鍵です。暗号化では「読める人を限るので受取人」、署名では「誰の作成か確かめるので送信者」と、目的から鍵の持ち主を決めます。
 
-<figure><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="機密性：受取人Bの公開鍵で暗号化、受取人Bの秘密鍵で復号、真正性の確認：送信者Aの秘密鍵で署名、送信者Aの公開鍵で署名を検証"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">機密性：受取人Bの公開鍵で暗号化</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">受取人Bの秘密鍵で復号</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">真正性の確認：送信者Aの秘密鍵で署名</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">送信者Aの公開鍵で署名を検証</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>暗号化と署名は別の目的を満たします。図の上下は役割の対応であり、処理の実行順を規定するものではありません。</figcaption></figure>
+<figure id="ip-cryptography-figure-2"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="機密性：受取人Bの公開鍵で暗号化、受取人Bの秘密鍵で復号、真正性の確認：送信者Aの秘密鍵で署名、送信者Aの公開鍵で署名を検証"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">機密性：受取人Bの公開鍵で暗号化</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">受取人Bの秘密鍵で復号</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">真正性の確認：送信者Aの秘密鍵で署名</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">送信者Aの公開鍵で署名を検証</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>暗号化と署名は別の目的を満たします。図の上下は役割の対応であり、処理の実行順を規定するものではありません。</figcaption></figure>
 
 ## 検証できる内容と証明書の範囲を確かめる
 
@@ -76,7 +76,7 @@
 
 A社からB社へ注文書を送ります。途中の人に読まれたくありません。B社では内容が書き換えられていないことと、注文書がA社のものかを確かめたいとします。目的ごとに、何が分かるかを整理します。
 
-<figure><svg viewBox="0 0 340 154" width="340" height="154" style="max-width:100%;height:auto" role="img" aria-label="秘密にする場合はBの公開鍵で暗号化しBの秘密鍵で復号する。署名を確かめる場合はAが秘密鍵で署名し受信側がAの公開鍵で検証する。"><g fill="none" stroke="currentColor"><rect x="5" y="6" width="330" height="63" rx="5"/><rect x="5" y="81" width="330" height="63" rx="5"/></g><g fill="currentColor" font-size="14"><text x="17" y="27">秘密にする</text><text x="17" y="51">Bの公開鍵で暗号化 → Bの秘密鍵で復号</text><text x="17" y="103">署名を確かめる</text><text x="17" y="127">Aの秘密鍵で署名 → Aの公開鍵で検証</text></g></svg><figcaption>暗号化は受信者の鍵、署名は署名者の鍵を起点に考えます。どちらも公開鍵の持ち主を確認します。</figcaption></figure>
+<figure id="ip-cryptography-figure-3"><svg viewBox="0 0 340 154" width="340" height="154" style="max-width:100%;height:auto" role="img" aria-label="秘密にする場合はBの公開鍵で暗号化しBの秘密鍵で復号する。署名を確かめる場合はAが秘密鍵で署名し受信側がAの公開鍵で検証する。"><g fill="none" stroke="currentColor"><rect x="5" y="6" width="330" height="63" rx="5"/><rect x="5" y="81" width="330" height="63" rx="5"/></g><g fill="currentColor" font-size="14"><text x="17" y="27">秘密にする</text><text x="17" y="51">Bの公開鍵で暗号化 → Bの秘密鍵で復号</text><text x="17" y="103">署名を確かめる</text><text x="17" y="127">Aの秘密鍵で署名 → Aの公開鍵で検証</text></g></svg><figcaption>暗号化は受信者の鍵、署名は署名者の鍵を起点に考えます。どちらも公開鍵の持ち主を確認します。</figcaption></figure>
 
 <span id="cryptography-textbook-skill-1"></span>
 
@@ -129,3 +129,22 @@ A社からB社へ注文書を送ります。途中の人に読まれたくあり
 **解答**　FRRは3÷100＝3％、FARは1÷500＝0.2％です。試行全体600回を分母にしてはいけません。
 
 </details>
+
+<section class="guided-lesson" id="guided-ip-cryptography" aria-labelledby="ip-cryptography-guided-title">
+<h3 id="ip-cryptography-guided-title">途中で確認　電子署名で確認すること</h3>
+<p id="ip-cryptography-guided-prompt">公開鍵の持ち主を事前に確認したうえで、その公開鍵で配布ファイルの電子署名を検証しました。検証の目的はどれでしょうか。</p>
+<form data-guided-practice data-expected="correct" data-guided-hint="署名の検証と、データを読まれないようにする暗号化の役割を区別します。" aria-labelledby="ip-cryptography-guided-title" aria-describedby="ip-cryptography-guided-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>自分の答えを入力する</legend>
+<label><input type="radio" name="ip-cryptography-guided-answer" value="correct"> 対応する秘密鍵で署名されたことと、署名が対象にしたデータの変更有無を確かめる</label>
+<label><input type="radio" name="ip-cryptography-guided-answer" value="choice-1"> 誰がファイルを閲覧したかを、署名だけで全て調べる</label>
+<label><input type="radio" name="ip-cryptography-guided-answer" value="choice-2"> ファイルを読めないようにし、受け手以外へ隠す</label>
+<button type="submit" class="button secondary">答えを確かめる</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details><summary>答えと確認方法を読む</summary>
+<p data-guided-solution>公開鍵で署名が検証できれば、対応する秘密鍵による署名であることと、署名が対象にしたデータが変わっていないことを確認できます。署名だけで閲覧者の記録や内容の秘匿は得られません。</p>
+</details>
+</section>

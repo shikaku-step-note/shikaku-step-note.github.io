@@ -7,7 +7,7 @@
   'order': 19,
   'minutes': 65,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 11,
   'syllabus': [28, 29, 30],
   'objectives': ['インシデントと問題を区別する', 'SLAと継続的改善を説明する'],
@@ -49,7 +49,7 @@
 
 時間で測る別の合意では、予定提供時間を6,000分、事前合意した計画停止120分を分母から除外し、残った時間内の障害停止を30分とします。測定対象は5,880分、稼働は5,850分です。可用性は5,850÷5,880×100で約99.49％です。丸め前で99.5％以上という合意なら未達です。最初に全体から計画停止を引いた後、障害停止だけを引きます。計画停止を二度引く、あるいは判定前に丸めて目標値に合わせると誤ります。SLMではこうした定義に沿って実績を測定・報告し、改善を話し合います。
 
-ITILはサービス管理の考え方や実践を整理した枠組みです。サービスマネジメントシステムは、組織がサービスの計画、移行、提供、改善を継続して管理する体制です。例えば、繁忙期の需要を予測し、人員や処理能力を調整し、サービスカタログで提供範囲と依頼方法を伝えます。結果を測って改善し、次の計画に戻すというPDCAを回すと、指標が悪化したままの理由を調べられます。
+ITILはサービス管理の考え方や実践を整理した枠組みです。サービスマネジメントシステムは、組織がサービスの計画、移行、提供、改善を継続して管理する体制です。繁忙期の需要を予測し、人員や処理能力を調整するのは需要管理の例です。例えば、毎月初日に予約が集中するなら、時刻別の申込み件数を確かめ、混雑しない時間帯にも予約枠を追加して待ち時間を測ります。サービスカタログでは利用者に提供範囲と依頼方法を伝えます。結果を測って改善し、次の計画に戻すというPDCAを回すと、指標が悪化したままの理由を調べられます。
 
 <span id="depth-services-lifecycle"></span>
 ## 一つのサービスを計画から改善まで追う
@@ -61,7 +61,7 @@ ITILはサービス管理の考え方や実践を整理した枠組みです。�
 <span id="depth-services-routing"></span>
 ## 問い合わせから復旧、恒久対応まで担当をつなぐ
 
-<figure><svg viewBox="0 0 340 193" width="340" height="193" style="display:block;max-width:100%;height:auto" role="img" aria-label="サービスデスクが受付を分類。通常の依頼はサービス要求管理へ、障害はインシデント管理で復旧へ。反復する障害は問題管理で原因を調べる"><g stroke="currentColor" fill="none" stroke-width="2"><path d="M170 50v22H80v23m-5-6 5 6 5-6m85-17h90v23m-5-6 5 6 5-6m-5 37v22m-5-6 5 6 5-6"/><g fill="currentColor" fill-opacity=".08"><rect x="87" y="12" width="166" height="38" rx="6"/><rect x="12" y="95" width="137" height="38" rx="6"/><rect x="190" y="95" width="137" height="38" rx="6"/><rect x="190" y="155" width="137" height="30" rx="6"/></g></g><g text-anchor="middle" fill="currentColor" font-size="13"><text x="170" y="36">窓口で記録・分類する</text><text x="80" y="119">定型依頼：受付・実施</text><text x="260" y="119">障害：影響抑制と復旧</text><text x="260" y="175">繰返し：原因と対策</text></g></svg><figcaption>サービスデスクは最初の窓口です。障害時の復旧と根本原因の調査は別の目的で進め、必要なら並行します。</figcaption></figure>
+<figure id="ip-services-service-desk-routing"><svg viewBox="0 0 340 193" width="340" height="193" style="display:block;max-width:100%;height:auto" role="img" aria-label="サービスデスクが受付を分類。通常の依頼はサービス要求管理へ、障害はインシデント管理で復旧へ。反復する障害は問題管理で原因を調べる"><g stroke="currentColor" fill="none" stroke-width="2"><path d="M170 50v22H80v23m-5-6 5 6 5-6m85-17h90v23m-5-6 5 6 5-6m-5 37v22m-5-6 5 6 5-6"/><g fill="currentColor" fill-opacity=".08"><rect x="87" y="12" width="166" height="38" rx="6"/><rect x="12" y="95" width="137" height="38" rx="6"/><rect x="190" y="95" width="137" height="38" rx="6"/><rect x="190" y="155" width="137" height="30" rx="6"/></g></g><g text-anchor="middle" fill="currentColor" font-size="13"><text x="170" y="36">窓口で記録・分類する</text><text x="80" y="119">定型依頼：受付・実施</text><text x="260" y="119">障害：影響抑制と復旧</text><text x="260" y="175">繰返し：原因と対策</text></g></svg><figcaption>サービスデスクは最初の窓口です。障害時の復旧と根本原因の調査は別の目的で進め、必要なら並行します。</figcaption></figure>
 
 「手続き方法を教えてほしい」は定型のサービス要求です。サービスデスクで依頼を記録し、FAQを案内し、対応結果を残します。「窓口に誰も接続できない」はインシデントです。優先度は影響と緊急度を見て決め、窓口で対応しきれない場合は専門担当へエスカレーションします。個別の問い合わせをどこへ渡すか迷わせない単一の窓口がSPOCです。FAQやチャットボットで解けない案件も、有人担当に引き継げるようにします。AIOpsで監視通知をまとめる場合も、重複候補の通知が一つにまとまったことだけでは原因を確認できません。
 
@@ -133,7 +133,7 @@ ITILはサービス管理の考え方や実践を整理した枠組みです。�
 
 停電直後の8分はUPSで支え、発電装置は実負荷を担えるまで4分かかる想定です。この条件なら4分の空白をUPSで埋められます。保守で発電装置が起動できない日は、8分を超えて持たないため、早めに安全停止を判断します。サージ防護は落雷などの一時的な過電圧から設備を守りますが、停電中に電力を供給しません。温度、消費電力、機器の配置を見直して冷却の効率を上げるのは、IT設備そのものの環境負荷を下げるGreen of ITの例です。
 
-<figure><svg viewBox="0 0 320 112" width="320" height="112" role="img" aria-label="UPSは停電直後から8分まで使え、発電装置は4分後から負荷を担える。4分から8分は両者の時間が重なる。" style="max-width:100%;height:auto"><g fill="currentColor" font-size="12"><text x="10" y="37">UPS</text><text x="10" y="65">発電</text><rect x="64" y="24" width="180" height="16" rx="3" opacity=".7"/><path d="M154 58h150m-7-4 7 4-7 4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M64 75h180m-180-4v8m90-8v8m90-8v8" stroke="currentColor"/><text x="64" y="95" text-anchor="middle">0分</text><text x="154" y="95" text-anchor="middle">4分</text><text x="244" y="95" text-anchor="middle">8分</text></g></svg><figcaption>UPSは停電直後の空白を埋め、発電装置は準備後に負荷を担います。図で時間の重なりを確認してください。UPSが4分で切れ、発電装置が6分後から使える条件では、2分の空白が生じます。</figcaption></figure>
+<figure id="ip-services-power-continuity"><svg viewBox="0 0 320 112" width="320" height="112" role="img" aria-label="UPSは停電直後から8分まで使え、発電装置は4分後から負荷を担える。4分から8分は両者の時間が重なる。" style="max-width:100%;height:auto"><g fill="currentColor" font-size="12"><text x="10" y="37">UPS</text><text x="10" y="65">発電</text><rect x="64" y="24" width="180" height="16" rx="3" opacity=".7"/><path d="M154 58h150m-7-4 7 4-7 4" fill="none" stroke="currentColor" stroke-width="3"/><path d="M64 75h180m-180-4v8m90-8v8m90-8v8" stroke="currentColor"/><text x="64" y="95" text-anchor="middle">0分</text><text x="154" y="95" text-anchor="middle">4分</text><text x="244" y="95" text-anchor="middle">8分</text></g></svg><figcaption>UPSは停電直後の空白を埋め、発電装置は準備後に負荷を担います。図で時間の重なりを確認してください。UPSが4分で切れ、発電装置が6分後から使える条件では、2分の空白が生じます。</figcaption></figure>
 
 <span id="textbook-services-green"></span>
 
@@ -142,6 +142,47 @@ ITILはサービス管理の考え方や実践を整理した枠組みです。�
 冷却設定の変更で月の電力使用量が900kWhから810kWhになったとします。同時期に稼働台数も10台から8台へ減っていれば、90kWhの減少を冷却設定だけの効果と考えるのは早計です。台数と負荷が近い期間で比較し、機器の温度や故障の記録も確認します。単純に温度の設定値を上げるだけでは、サービスを維持できるか分かりません。
 
 <span id="textbook-services-continuity"></span>
+
+<span id="ip-services-new-worked-example"></span>
+
+### 同じ時間帯に二つの障害が起きたときの集計
+
+稼働率を一つのサービスで測る場合、実際に使えなかった時間帯を集計します。複数の障害記録が重なるときは、サービスの停止時間として同じ時刻を二度数えません。SLAで測定から外すと決めた時間帯も確認し、測定対象の時間と停止の分を同じ範囲にそろえます。
+
+例えば、測定対象が平日の9:00から17:00で、当日は9:40〜9:55と9:50〜10:05に、二つの原因による停止が記録されていたとします。このサービスは9:40から10:05まで連続して使えません。停止は15＋15＝30分と数えると、重なった9:50〜9:55の5分を二度数えます。一続きの25分で集計するのが適切です。測定対象が480分なら、利用できた時間は455分で、稼働率は455÷480×100≒94.79％になります。
+
+<figure id="ip-services-worked-evidence">
+<figcaption id="ip-services-worked-evidence-caption">障害記録の重なりを先に整える</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-services-worked-evidence-caption">
+<table>
+  <thead>
+    <tr><th scope="col">時間帯</th><th scope="col">停止時間への集計</th></tr>
+  </thead>
+  <tbody>
+    <tr><th scope="row">9:40〜9:50</th><td>障害Aだけで停止した10分を数える。</td></tr>
+    <tr><th scope="row">9:50〜9:55</th><td>AとBが重なる5分を一度だけ数える。</td></tr>
+    <tr><th scope="row">9:55〜10:05</th><td>障害Bだけで停止した10分を数える。合計は25分。</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+<section class="guided-lesson" id="guided-ip-services" aria-labelledby="guided-ip-services-title">
+<h3 id="guided-ip-services-title">途中で確認　測定に入る停止時間を求める</h3>
+<p id="guided-ip-services-prompt">対象サービスが13:10〜13:25と13:20〜13:32に停止しました。この時間帯の全部が同じ日の測定対象に含まれます。この二件によるサービス停止時間は何分ですか。</p>
+<form data-guided-practice data-expected="22" data-guided-hint="13:20〜13:25はどちらの記録にもあります。同じサービスが止まった分としては一度だけ数えます。" aria-labelledby="guided-ip-services-title" aria-describedby="guided-ip-services-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-ip-services-input">答え（分）</label> <input id="guided-ip-services-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>二つの記録による停止は13:10から13:32まで続きます。13:20〜13:25の5分が重なるので、15＋12−5＝22分です。原因を調べるためには二つの記録を残し、停止時間の集計では重複を除きます。</p>
+</details>
+</section>
 
 ### 自分で解く：どの仕組みで何を減らすか
 

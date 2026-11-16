@@ -7,7 +7,7 @@
   'order': 1,
   'minutes': 90,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 1,
   'syllabus': [1],
   'objectives': ['経営資源と組織の役割を説明する', 'PDCAとBCPを業務に当てはめる'],
@@ -90,7 +90,7 @@ PDCAは計画・実行・評価・改善を循環させます。OODAは観察・
 
 地域別の運営を保ちながら、期間限定の新商品を全社で出す案も考えます。担当者が地域責任者と商品プロジェクトの責任者の両方から指示を受ける形はマトリックス組織です。地域の繁忙期と発売準備が重なると、同じ人の時間を双方が押さえてしまいます。事前に、担当者の時間配分を誰が承認するか、優先順位に異論が出たとき誰が判断するかを決めます。単に二人の責任者がいるという特徴を覚えるだけでは、組織の問題を解けません。
 
-<figure><svg viewBox="0 0 400 188" width="400" height="188" style="max-width:100%;height:auto" role="img" aria-label="地域責任者と商品責任者は同じ担当者に指示する。指示がぶつかる場合、事前に決めた手続に従う"><g fill="currentColor" text-anchor="middle" font-size="15"><rect x="12" y="8" width="170" height="52" rx="6" fill-opacity=".08" stroke="currentColor"/><rect x="218" y="8" width="170" height="52" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="97" y="30" font-weight="bold">地域責任者</text><text x="97" y="48">設置日を守る</text><text x="303" y="30" font-weight="bold">商品責任者</text><text x="303" y="48">発売前の試験を終える</text><rect x="102" y="103" width="196" height="38" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="200" y="128" font-weight="bold">同じ担当者</text><text x="200" y="177">競合時は事前に決めた手続で判断</text></g><path d="M97 60v17l83 24m-11 0 11 0-7-7m130-34v17l-83 24m11 0-11 0 7-7m-27 48v15m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>地域責任者と商品責任者の指示は同じ担当者に届きます。稼働時間と優先順位が競合する場合の決定手続を設けます。</figcaption></figure>
+<figure id="ip-organization-existing-visual"><svg viewBox="0 0 400 188" width="400" height="188" style="max-width:100%;height:auto" role="img" aria-label="地域責任者と商品責任者は同じ担当者に指示する。指示がぶつかる場合、事前に決めた手続に従う"><g fill="currentColor" text-anchor="middle" font-size="15"><rect x="12" y="8" width="170" height="52" rx="6" fill-opacity=".08" stroke="currentColor"/><rect x="218" y="8" width="170" height="52" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="97" y="30" font-weight="bold">地域責任者</text><text x="97" y="48">設置日を守る</text><text x="303" y="30" font-weight="bold">商品責任者</text><text x="303" y="48">発売前の試験を終える</text><rect x="102" y="103" width="196" height="38" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="200" y="128" font-weight="bold">同じ担当者</text><text x="200" y="177">競合時は事前に決めた手続で判断</text></g><path d="M97 60v17l83 24m-11 0 11 0-7-7m130-34v17l-83 24m11 0-11 0 7-7m-27 48v15m-4-4 4 4 4-4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>地域責任者と商品責任者の指示は同じ担当者に届きます。稼働時間と優先順位が競合する場合の決定手続を設けます。</figcaption></figure>
 
 ### 改善の数字と事業継続の判断を分ける
 
@@ -135,3 +135,52 @@ PDCAは計画・実行・評価・改善を循環させます。OODAは観察・
 ### 責任と意思決定を切り分ける
 
 災害対応の計画では、全業務を一斉に元に戻すことを前提にしません。受付の停止で被害が増える業務を先に復旧し、給与や請求など締め日までに再開すればよい業務と優先順位を分けます。計画には責任者、代替手段、必要な記録を入れます。訓練で担当者が連絡できなければ、名簿の更新、代行者の指定、再訓練へ進みます。このように継続計画を運用・改善する活動がBCMです。
+
+<span id="ip-organization-decision-section"></span>
+
+## 責任の置き場を変え、混雑時の仕事を組み直す
+
+組織図を使って改善を考えるときは、仕事の種類ごとに「日々の処理をする人」「例外を決める人」「結果を見直す人」をたどります。専門部署に全ての判断を集めると品質をそろえやすくなりますが、簡単な判断にも待ち行列ができます。繰返し起きる処理は境界の条件を決めて窓口へ移し、条件から外れる案件を専門部署に送ると、判断の速さと責任の両方を点検できます。処理件数だけを指標にすると、未解決の案件を処理済みにしてしまうため、再受付や誤処理も合わせて記録します。
+
+<figure id="ip-organization-worked-decision">
+<figcaption id="ip-organization-worked-decision-caption">問い合わせ受付で判断する人</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-organization-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">案件</th><th scope="col">条件</th><th scope="col">判断を任せる先</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">配送先変更</th><td>発送前、本人確認済み、変更先は規程内</td><td>窓口担当</td></tr>
+    <tr><th scope="row">本人確認が一致しない</th><td>なりすましの疑いがあり情報を確定できない</td><td>専門担当</td></tr>
+    <tr><th scope="row">緊急時に受付が停止</th><td>通常の受付と記録手段を使えない</td><td>継続計画で定めた責任者</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+例えば、本人確認済みの配送先変更まで専門担当へ送ると、発送が先に進むことがあります。窓口で完了できる条件を明示し、処理後には発送記録と突き合わせます。翌月に平均回答時間が8分から5分に短縮しても、再受付率が3％から9％に上がったなら、原因の一つは窓口へ移した判断の範囲にあります。再受付になった案件を種類別に見れば、教育が必要か、そもそも窓口で決める範囲を直すかを判断できます。
+
+<section class="guided-lesson" id="ip-organization-guided-transfer" aria-labelledby="ip-organization-guided-transfer-title">
+<h3 id="ip-organization-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-organization-guided-transfer-prompt">本人確認が一致せず、商品はまだ発送されていません。表の役割分担に従うと、次にする判断はどれですか。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="発送前だけでは窓口処理の条件がそろいません。本人確認と受付停止の有無を別に見ます。" aria-labelledby="ip-organization-guided-transfer-title" aria-describedby="ip-organization-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-organization-guided-transfer-1"><input type="radio" id="ip-organization-guided-transfer-1" name="answer" value="1"> 窓口が配送先を変更する</label><br>
+<label for="ip-organization-guided-transfer-2"><input type="radio" id="ip-organization-guided-transfer-2" name="answer" value="2"> 変更を確定せず、専門担当へ回す</label><br>
+<label for="ip-organization-guided-transfer-3"><input type="radio" id="ip-organization-guided-transfer-3" name="answer" value="3"> 受付停止時の継続責任者が全員分を処理する</label><br>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>窓口処理には本人確認済みという条件があります。この案件は専門担当へ回します。受付は動いているため、停止時の手順を発動する条件にも該当しません。</p>
+</details>
+</section>
+
+<span id="ip-organization-decision-independent"></span>
+
+### 自分で判断する
+
+返品を自動承認する試行で、1日当たりの完了が80件から100件になりました。同じ期間の再受付は4件から15件です。どの記録を確認してから続行を判断しますか。
+
+<details><summary>考え方と答えを確認する</summary><p>試行前後の再受付率は4÷80＝5％、15÷100＝15％です。完了件数は25％増えていますが、再受付が増えた条件を先に調べます。承認条件、本人確認、返金済みかどうかなど、再受付の理由別に記録を分ければ、自動化の対象を修正する場所が見つかります。</p></details>

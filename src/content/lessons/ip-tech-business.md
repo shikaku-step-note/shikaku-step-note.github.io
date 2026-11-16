@@ -7,7 +7,7 @@
   'order': 10,
   'minutes': 90,
   'sample': false,
-  'updated': '2026-11-12',
+  'updated': '2026-11-16',
   'unit': 4,
   'syllabus': [13, 14],
   'objectives': ['技術ロードマップと研究開発を説明する', '事業に合うシステムの役割を選ぶ'],
@@ -69,7 +69,7 @@
 
 技術ロードマップには、例えば『照明方式の実証』『連続運転』『現場への試験設置』『保守体制を含む発売』の順と判定条件を置きます。発売予定だけを書いた日程表では、技術課題が残ったままでも日付だけが来てしまいます。PoC（概念実証）で二つの照明を比較するなら、正しく判定できる割合のほか、見逃しと誤検知の負担も確認します。基準を先に決め、見逃しを減らすために誤検知が増えたときに、目視確認の負荷を許容できるか考えます。
 
-<figure><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="概念実証、反射しても欠陥を見分けられるか。現場で試作を評価、搬送速度と昼夜条件で再現するか。導入後の運用を設計、校正、交換部品、窓口を用意"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">概念実証</text><text x="200" y="43">反射しても欠陥を見分けられるか</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">現場で試作を評価</text><text x="200" y="106">搬送速度と昼夜条件で再現するか</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">導入後の運用を設計</text><text x="200" y="169">校正、交換部品、窓口を用意</text></g></svg><figcaption>画像検査を事業化するには、実験で測る条件から、現場で維持できる条件へと確かめる範囲を広げます。</figcaption></figure>
+<figure id="ip-tech-business-existing-visual"><svg viewBox="0 0 400 189" width="400" height="189" style="max-width:100%;height:auto" role="img" aria-label="概念実証、反射しても欠陥を見分けられるか。現場で試作を評価、搬送速度と昼夜条件で再現するか。導入後の運用を設計、校正、交換部品、窓口を用意"><g fill="currentColor" text-anchor="middle" font-size="16"><rect x="13" y="4" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="24" font-weight="bold">概念実証</text><text x="200" y="43">反射しても欠陥を見分けられるか</text><path d="M200 53v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="67" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="87" font-weight="bold">現場で試作を評価</text><text x="200" y="106">搬送速度と昼夜条件で再現するか</text><path d="M200 116v9m-4-5 4 5 4-5" fill="none" stroke="currentColor" stroke-width="2"/><rect x="13" y="130" width="374" height="49" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><text x="200" y="150" font-weight="bold">導入後の運用を設計</text><text x="200" y="169">校正、交換部品、窓口を用意</text></g></svg><figcaption>画像検査を事業化するには、実験で測る条件から、現場で維持できる条件へと確かめる範囲を広げます。</figcaption></figure>
 
 ### 自社で開発する範囲と、外部と協力する範囲を決める
 
@@ -118,3 +118,52 @@
 バスの現在位置を地図に表示するサービスを考えます。位置を送る車載機器は情報の収集を担当し、位置と路線を地図に重ねるサービスが案内に使われます。位置データを地図上で管理・分析するのがGISの利用例です。到着時刻の予測や運行管理は、情報通信を交通に活用するITSの例にもなります。何を扱う技術かを問われたら、地理情報の処理を説明しているのか、交通全体の課題を説明しているのかに注目します。
 
 別の例で、行政サービスの申請を電子化しても、紙で申請した人の進捗が別台帳に残ると問い合わせ対応が難しくなります。窓口受付と電子受付に共通の申請番号を使い、審査状況を同じ仕組みで扱います。利用者に通知する情報と、審査担当者だけが見られる情報も分けます。
+
+<span id="ip-tech-business-decision-section"></span>
+
+## 試作を通過した技術に、次の条件を追加して判断する
+
+技術を事業にするときは、原理の確認、実際の環境での検証、利用者へ届け続ける計画の順に条件を増やします。実証で目的は果たせたか、現場で使える条件はそろったか、運用の費用と担当を決められたかを分けると、どこまで確かめれば次の投資に進めるかが明確になります。技術ロードマップには時期だけでなく、次の段階に進める判断の根拠も載せます。
+
+<figure id="ip-tech-business-worked-decision">
+<figcaption id="ip-tech-business-worked-decision-caption">遠隔点検の試験に置いた判断条件</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-tech-business-worked-decision-caption">
+<table>
+  <thead><tr><th scope="col">段階</th><th scope="col">先に確認すること</th><th scope="col">例で得た結果</th></tr></thead>
+  <tbody>
+    <tr><th scope="row">試作</th><td>異常を見つけ、担当に通知する</td><td>室内の試験で通知できた</td></tr>
+    <tr><th scope="row">実証</th><td>実際の現場で、所定の時間内に通知する</td><td>正常時は達成したが、通信断の結果は未確認</td></tr>
+    <tr><th scope="row">運用移行</th><td>保守の担当、更新、費用を決める</td><td>担当の候補はあるが、費用と支援時間は未確定</td></tr>
+  </tbody>
+</table>
+</div>
+</figure>
+
+室内で通知に成功しても、通信が途切れた現場で異常を見逃す可能性が残ります。実証では通信が途切れる条件を追加し、復帰後に遅れて通知できるか、現場には代替の連絡手段があるかを確認します。その後、どの異常を誰が確認し、保守に費用がいくら掛かるかを決めます。保守に強い外部事業者へ一部を委ねる場合も、通知の手順と情報を渡す範囲を先に合意してから契約へ進みます。
+
+<section class="guided-lesson" id="ip-tech-business-guided-transfer" aria-labelledby="ip-tech-business-guided-transfer-title">
+<h3 id="ip-tech-business-guided-transfer-title">条件を変えて確かめる</h3>
+<p id="ip-tech-business-guided-transfer-prompt">実際の現場で通信が正常なときだけ通知できました。来週に確認すべきことはどれですか。</p>
+<form data-guided-practice data-expected="1" data-guided-hint="実証の条件は正常時だけではありません。表で結論が確定していない箇所を探します。" aria-labelledby="ip-tech-business-guided-transfer-title" aria-describedby="ip-tech-business-guided-transfer-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="ip-tech-business-guided-transfer-1"><input type="radio" id="ip-tech-business-guided-transfer-1" name="answer" value="1"> 通信が切れて復帰する条件で通知の扱いを確認する</label><br>
+<label for="ip-tech-business-guided-transfer-2"><input type="radio" id="ip-tech-business-guided-transfer-2" name="answer" value="2"> 試作の担当を先に全員解散する</label><br>
+<label for="ip-tech-business-guided-transfer-3"><input type="radio" id="ip-tech-business-guided-transfer-3" name="answer" value="3"> 既に正常時を確認したので全拠点へ展開する</label><br>
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>通信が途切れる状況で、通知が遅れるか、失われるか、別手段が使えるかを確かめます。検証結果をそろえて展開範囲を決めます。</p>
+</details>
+</section>
+
+<span id="ip-tech-business-decision-independent"></span>
+
+### 自分で判断する
+
+第三者の試験装置を使えば検証は半年早まりますが、保守契約がないため翌年は使えません。装置自体の機能は適合しているとします。何を確認してから事業計画へ進みますか。
+
+<details><summary>考え方と答えを確認する</summary><p>保守と更新を誰が担い、翌年も調達できるかを確認します。その装置がない場合の代替案も計画に入れます。機能の合格は、継続して利用者へサービスを届けられるという確認とは別です。</p></details>
