@@ -110,6 +110,11 @@ const workload = beginner
           </p>
           <p>受験日が決まったら、<a href={href('study-guides/boki-beginner-exam-day/')}>当日の持ち物と電卓の条件</a>も確認しておきましょう。</p>
         )}
+        {(cost || q.id === 'boki-2') && (
+          <p>
+            工業簿記で手が止まったら、<a href={href('study-guides/cost-beginner-before-boki-2/')}>原価計算初級と簿記2級、どちらの教材で復習するか</a>を、配賦と仕掛品の例で確かめられます。
+          </p>
+        )}
         {workload && (
           <div class="prose">
             <p>
