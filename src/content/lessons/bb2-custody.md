@@ -7,7 +7,7 @@
   "order": 18,
   "minutes": 90,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 4,
   "syllabus": [
     2
@@ -63,11 +63,11 @@
 }
 ---
 
-店が従業員本人の負担する代金を先に払った場合、店には支払った分を従業員から受け取る権利が残ります。これを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f701487efb">立替金</a>に記録します。反対に、従業員の給与から引いた税金などを店があとで納める場合、店には預かった額を納付する義務が残ります。この義務を記録するのが<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-aaf87e1841">預り金</a>です。
+従業員本人が負担する代金を店が代わりに払うと、店はそのお金を後で従業員から受け取れます。この権利が、資産の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f701487efb">立替金</a>です。店の負担分と本人の負担分が同じ領収書にあるときは、店が負担する分を費用にし、本人から返してもらう分を立替金に記録します。
 
-給与の総額は、従業員の仕事に対し店が負担する金額です。税金やすでに立て替えた分を差し引いても、給与そのものが減るわけではありません。<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-98b2097ca6">手取額</a>は控除後に本人へ支払う金額を指します。給与支給日の仕訳では、何が費用で、何を預かり、何を回収したかを分け、最後に預金から出る金額を求めます。
+給与の支払いでは、店が税金などを給与から差し引き、後で納付することがあります。差し引いた税金について店に残るのは、本人に代わって納付する義務です。この義務は負債の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-aaf87e1841">預り金</a>に記録します。後で納付した分だけ、預り金の残高が減ります。
 
-給与の仕訳では、会社の費用となる総額と、従業員へ実際に支払う手取額が違うことがあります。このレッスンでは税額や控除額を問題文で明示し、現行の税率・税額表から算出する練習はしません。社会保険の会社負担額や税額計算などを、与えられていない条件から追加しないでください。
+店が仕事の対価として負担する給与の総額から、税金や立替分などを差し引いて本人に渡す額が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-98b2097ca6">手取額</a>です。給与の仕訳では、総額を費用とし、差し引いた額を理由ごとに分けたあと、手取額を普通預金の減少として記録します。ここでは、税や控除の金額は例題で与えます。税率や税額表から求める練習は扱いません。
 
 <span id="objective-1"></span>
 ## 他者負担の支払いは回収する権利になる
@@ -116,6 +116,23 @@
 
 給与から控除する対象が複数ある場合も、問題で指定された科目と区分に従います。ここで扱う例は所得税の預り額と立替金回収に限り、社会保険料の本人負担と会社負担の計算などは加えません。
 
+### 給与明細と納付記録で、二種類の控除を分ける
+
+店の給与明細に「総支給額158,000円、所得税4,800円、立替分の回収3,200円」とあります。給与の前から立替金が9,000円、同じ種類の税金を預かった預り金が6,000円残っていました。給与を普通預金から振り込み、その翌日に、預かった税金のうち6,000円を納付します。
+
+| 給与明細で確認する金額 | 帳簿に記録する内容 | 金額 |
+| --- | --- | ---: |
+| 総支給額 | 借方・給料 | 158,000円 |
+| 所得税 | 貸方・預り金が増える | 4,800円 |
+| 立替分の回収 | 貸方・立替金が減る | 3,200円 |
+| 差引振込額 | 貸方・普通預金が減る | 150,000円 |
+
+二つの控除は、どちらも従業員への振込額を減らします。ただし、税金の4,800円は後で納めるために預かった金額です。立替分の3,200円は、以前に代払いした額を取り戻したものです。給与支給後の預り金は10,800円、立替金は5,800円となります。翌日の納付は、借方「預り金6,000円」、貸方「普通預金6,000円」です。納付後に残る預り金は4,800円です。
+
+控除を合計し、8,000円すべてを預り金に記録すると、振込額は150,000円で合います。納付を終えた後、預り金と立替金の残高は正しい処理と比べてどう変わるでしょうか。
+
+<details><summary>振込額が一致していても残るずれを確かめる</summary><p>預り金は6,000＋8,000−6,000＝8,000円で、本来の4,800円より3,200円多くなります。立替金は9,000円のままなので、本来の5,800円より同じく3,200円多く残ります。給与明細の控除理由を見れば、どちらを減らす取引か確かめられます。</p></details>
+
 <span id="objective-3"></span>
 ## 立替金を給与から回収する場合
 
@@ -137,6 +154,24 @@
 立替金20,000円のうち今月の給与から12,000円だけ回収したなら、立替金の貸方は12,000円で、残高8,000円が残ります。残額も回収済みと考えて全額20,000円を取り崩すと、未回収の権利が帳簿から消えます。
 
 預り金も、給与で発生した額と納付した額の差が残ります。月初預り金6,000円、当月の給与控除8,000円、納付10,000円なら、月末残高は6,000＋8,000−10,000＝4,000円です。納付額10,000円の全額が当月給与からの控除分とは限りません。月初からの持越額も含めて計算します。
+
+<section class="guided-lesson" id="bb2-custody-first-use-practice" aria-labelledby="bb2-custody-first-use-practice-title">
+<h3 id="bb2-custody-first-use-practice-title">控除額を使って振込額を求める</h3>
+<p id="bb2-custody-first-use-practice-prompt">給与総額184,000円から、税金8,200円と立替分3,400円を引いて振り込みます。手取額は何円ですか。</p>
+<form data-guided-practice data-expected="172400" data-guided-hint="振込額は給料から、預かる額と回収する額を引いて求めます。" aria-labelledby="bb2-custody-first-use-practice-title" aria-describedby="bb2-custody-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-custody-first-use-practice-input">答え（円）</label>
+<input id="bb2-custody-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>184,000−8,200−3,400＝172,400円です。税金はあとで納付する義務、立替分はすでにある資産の減少なので、どちらも給料総額そのものは変えません。</p>
+</details>
+</section>
 
 ## 自力演習：費用と手取額を別々に答える
 
@@ -243,24 +278,6 @@
 ## 給与の控除を、預りと回収に分ける
 
 給与総額160,000円から税金7,000円と以前の立替金4,500円を引くと、振込額は148,500円です。借方には給料160,000円、貸方には預り金7,000円、立替金4,500円、普通預金148,500円を記録します。納付時に減るのは預り金なので、納付時に新たな給料は計上しません。
-
-<section class="guided-lesson" id="bb2-custody-first-use-practice" aria-labelledby="bb2-custody-first-use-practice-title">
-<h3 id="bb2-custody-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-custody-first-use-practice-prompt">給与総額184,000円から、税金8,200円と立替分3,400円を引いて振り込みます。手取額は何円ですか。</p>
-<form data-guided-practice data-expected="172400" data-guided-hint="振込額は給料から、預かる額と回収する額を引いて求めます。" aria-labelledby="bb2-custody-first-use-practice-title" aria-describedby="bb2-custody-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-custody-first-use-practice-input">答え（円）</label>
-<input id="bb2-custody-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>184,000−8,200−3,400＝172,400円です。税金はあとで納付する義務、立替分はすでにある資産の減少なので、どちらも給料総額そのものは変えません。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

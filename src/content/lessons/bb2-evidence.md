@@ -1,5 +1,5 @@
 ---
-{"stableId":"bb2-evidence","qualification":"boki-beginner","title":"証ひょうを読み、3種類の伝票を集計する","description":"請求書・領収書・納品書から取引日、内容、金額、決済方法を読みます。入金・出金・振替伝票を区別し、現金を含む複合取引、伝票集計、二重計上の防止まで練習します。","order":7,"minutes":105,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1],"scopeLabel":"2026年度適用範囲・証ひょう、3伝票、集計・管理","subject":"basics","objectives":["複数の証ひょうから取引の内容・金額・支払状況を読み取る","現金の入出金に基づき入金・出金・振替伝票を選ぶ","複数伝票を科目別に集計し重複と漏れを防ぐ"],"prerequisite":"仕訳と転記を確認してください。「現金」と「普通預金」は別の勘定です。伝票の分類でもこの区別を使います。","keywords":["証ひょう","領収書","請求書","入金伝票","出金伝票","振替伝票"],"glossary":[{"term":"証ひょう","definition":"領収書や請求書など、取引が起きた内容や金額を裏付ける資料"},{"term":"入金伝票","definition":"現金の入金を記録する伝票"},{"term":"出金伝票","definition":"現金の出金を記録する伝票"},{"term":"振替伝票","definition":"現金の入出金を伴わない取引を記録する伝票"},{"term":"納品書","definition":"納品に際して、商品の名称や数量などの引渡内容を相手先へ知らせる書類"},{"term":"請求書","definition":"代金の請求内容、金額、支払条件などを示す資料"},{"term":"領収書","definition":"代金を受け取った事実を示す資料"},{"term":"伝票集計","definition":"複数の伝票にある借貸の金額を科目別などにまとめる作業"}],
+{"stableId":"bb2-evidence","qualification":"boki-beginner","title":"証ひょうを読み、3種類の伝票を集計する","description":"請求書・領収書・納品書から取引日、内容、金額、決済方法を読みます。入金・出金・振替伝票を区別し、現金を含む複合取引、伝票集計、二重計上の防止まで練習します。","order":7,"minutes":105,"sample":false,"updated":"2026-11-18","unit":2,"syllabus":[1],"scopeLabel":"2026年度適用範囲・証ひょう、3伝票、集計・管理","subject":"basics","objectives":["複数の証ひょうから取引の内容・金額・支払状況を読み取る","現金の入出金に基づき入金・出金・振替伝票を選ぶ","複数伝票を科目別に集計し重複と漏れを防ぐ"],"prerequisite":"仕訳と転記を確認してください。「現金」と「普通預金」は別の勘定です。伝票の分類でもこの区別を使います。","keywords":["証ひょう","領収書","請求書","入金伝票","出金伝票","振替伝票"],"glossary":[{"term":"証ひょう","definition":"領収書や請求書など、取引が起きた内容や金額を裏付ける資料"},{"term":"入金伝票","definition":"現金の入金を記録する伝票"},{"term":"出金伝票","definition":"現金の出金を記録する伝票"},{"term":"振替伝票","definition":"現金の入出金を伴わない取引を記録する伝票"},{"term":"納品書","definition":"納品に際して、商品の名称や数量などの引渡内容を相手先へ知らせる書類"},{"term":"請求書","definition":"代金の請求内容、金額、支払条件などを示す資料"},{"term":"領収書","definition":"代金を受け取った事実を示す資料"},{"term":"伝票集計","definition":"複数の伝票にある借貸の金額を科目別などにまとめる作業"}],
   "inlineGlossary": [{"id": "glossary-196a58c454", "term": "入金伝票"}, {"id": "glossary-7806573239", "term": "出金伝票"}, {"id": "glossary-aaeae32b10", "term": "振替伝票"}, {"id": "glossary-7521a51e1f", "term": "証ひょう"}, {"id": "glossary-5ef332090a", "term": "納品書"}]
 }
 ---
@@ -36,11 +36,39 @@
 
 納品書と請求書の両方を見つけたからといって、仕入15,000円を二回計上すると合計30,000円になってしまいます。両資料の相手先、内容、金額、対応する伝票番号を照合し、一つの仕入の根拠としてまとめて扱います。紙でも電子資料でも、同じ取引を示す関係を追えることが大切です。
 
+納品書と請求書を照合するときは、合計金額のほかに取引番号、品名や数量、相手先も見ます。たとえば同じ得意先へ同じ金額の商品を二日にわたって納めると、金額が同じでも引渡しは二件です。反対に、一枚の請求書に二件の納品をまとめることもあります。先に納品ごとに記録し、後から請求の内訳と対応させると、金額の一致だけで別の取引を混ぜずに済みます。
+
 ### 店の現金に注目する理由
 
 三伝票制では、入金伝票と出金伝票に書く時点で、現金をどちら側に書くか決まっています。たとえば売掛金を紙幣で回収した場合、入金伝票が借方の現金を示すので、伝票には相手となる貸方の売掛金と金額を記入します。相手科目が売掛金でも、普通預金へ振り込まれた場合は現金勘定が動きません。その場合は振替伝票を使い、借方の普通預金と貸方の売掛金の両方を記入します。まず決済方法を読み、次に書く欄を決めます。
 
 <figure id="bb2-evidence-aid-1"><svg viewBox="0 0 330 172" width="330" height="172" role="img" aria-label="同じ売掛金6,000円の回収。紙幣なら入金伝票で記入欄は売掛金6,000円。振込なら振替伝票で借方普通預金、貸方売掛金、各6,000円。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="4" y="5" width="322" height="75" rx="5"/><rect x="4" y="89" width="322" height="75" rx="5"/></g><g fill="currentColor" font-size="14"><text x="15" y="25" font-weight="700">紙幣で回収　入金伝票</text><text x="15" y="47">相手科目：売掛金　6,000円</text><text x="15" y="67">伝票の種類から借方の現金が決まる</text><text x="15" y="109" font-weight="700">銀行振込で回収　振替伝票</text><text x="15" y="131">借方：普通預金　6,000円</text><text x="15" y="151">貸方：売掛金　　6,000円</text></g></svg><figcaption>同じ額の売掛金回収でも、受け取ったものによって伝票の種類と記入欄が変わります。</figcaption></figure>
+
+<span id="bb2-evidence-first-use-worked"></span>
+
+<figure id="bb2-evidence-evidence-trace"><svg viewBox="0 0 354 193" width="354" height="193" role="img" aria-label="納品書　8日に商品を引き渡した、販売が成立し、12,000円の売上を記録。。請求書　10日に同じ取引を請求した、納品書の番号と12,000円の内訳を確認。。銀行明細　12日に代金が入った、普通預金が増え、売掛金が12,000円減る。" style="display:block;width:100%;max-width:22.125rem;height:auto"><rect x="4" y="4" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="24" font-size="15" font-weight="600" fill="currentColor">納品書　8日に商品を引き渡した</text><text x="17" y="43" font-size="14" fill="currentColor">販売が成立し、12,000円の売上を記録。</text><path d="M177 56v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="72" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="92" font-size="15" font-weight="600" fill="currentColor">請求書　10日に同じ取引を請求した</text><text x="17" y="111" font-size="14" fill="currentColor">納品書の番号と12,000円の内訳を確認。</text><path d="M177 124v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="140" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="160" font-size="15" font-weight="600" fill="currentColor">銀行明細　12日に代金が入った</text><text x="17" y="179" font-size="14" fill="currentColor">普通預金が増え、売掛金が12,000円減る。</text></svg><figcaption>8日の販売と12日の回収では、変わるものが違います。10日の請求書を8日の取引に対応付けます。</figcaption></figure>
+
+## 書類が三枚あっても、記録する売上は一回
+
+納品書と請求書に同じ取引番号があり、どちらも8日に引き渡した12,000円の商品を示しているとします。請求書が10日に作られても、販売を示す二枚の資料なので、売上は8日の一回です。12日に銀行明細で振込を確認したら、その日に預金が増え、受け取る権利が減ります。販売と回収は内容が異なるため、日付を分けて記録します。
+
+<section class="guided-lesson" id="bb2-evidence-first-use-practice" aria-labelledby="bb2-evidence-first-use-practice-title">
+<h3 id="bb2-evidence-first-use-practice-title">途中で確認　同じ売上を示す二枚の書類を見分ける</h3>
+<p id="bb2-evidence-first-use-practice-prompt">納品書と請求書がいずれも同じ15,500円の販売を示し、翌日に全額が普通預金へ入金されました。売上に記録する額は合計何円ですか。</p>
+<form data-guided-practice data-expected="15500" data-guided-hint="書類の数と、販売が成立した回数を分けます。" aria-labelledby="bb2-evidence-first-use-practice-title" aria-describedby="bb2-evidence-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-evidence-first-use-practice-input">答え（円）</label>
+<input id="bb2-evidence-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>販売は一回なので売上は15,500円です。二枚の書類を別々の販売として数えず、翌日の15,500円の入金は売掛金の回収として扱います。</p>
+</details>
+</section>
 
 <span id="objective-2"></span>
 
@@ -199,30 +227,6 @@
 入-22と振-09を両方集計すると何が多くなるかを予想してください。その後、有効な行だけで金庫の現金と売掛金の残高を求めます。金庫の現金が実際に25,000円だったとき、どこから調べ直すかも考えます。
 
 <details><summary>集計と、誤った集計との違いを見る</summary><p>有効な現金入金は6,000円、出金は4,000円です。金庫の現金は23,000＋6,000−4,000＝25,000円となり、実際の金額と一致します。売掛金の回収は現金6,000円と普通預金5,000円の計11,000円、掛売上は9,000円です。売掛金残高は18,000＋9,000−11,000＝16,000円です。</p><p>取消し済みの入-22も数えると、現金は30,000円に増え、売掛金残高は11,000円に減ります。5,000円の差が両方に出るので、入-22の状態と差替え先の振-09を照合します。今回の5,000円は回収であり、売上に含めません。</p></details>
-
-<span id="bb2-evidence-first-use-worked"></span>
-
-## 書類が三枚あっても、記録する売上は一回
-
-納品書と請求書に同じ取引番号があり、どちらも8日に引き渡した12,000円の商品を示しているとします。請求書が10日に作られても、販売を示す二枚の資料なので、売上は8日の一回です。12日に銀行明細で振込を確認したら、その日に預金が増え、受け取る権利が減ります。販売と回収は内容が異なるため、日付を分けて記録します。
-
-<section class="guided-lesson" id="bb2-evidence-first-use-practice" aria-labelledby="bb2-evidence-first-use-practice-title">
-<h3 id="bb2-evidence-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-evidence-first-use-practice-prompt">納品書と請求書がいずれも同じ15,500円の販売を示し、翌日に全額が普通預金へ入金されました。売上に記録する額は合計何円ですか。</p>
-<form data-guided-practice data-expected="15500" data-guided-hint="書類の数と、販売が成立した回数を分けます。" aria-labelledby="bb2-evidence-first-use-practice-title" aria-describedby="bb2-evidence-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-evidence-first-use-practice-input">答え（円）</label>
-<input id="bb2-evidence-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>販売は一回なので売上は15,500円です。二枚の書類を別々の販売として数えず、翌日の15,500円の入金は売掛金の回収として扱います。</p>
-</details>
-</section>
 
 ## 出典・適用範囲
 

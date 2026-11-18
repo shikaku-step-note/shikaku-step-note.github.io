@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-vat","qualification":"boki-beginner","title":"税抜方式で消費税を分け、仮払・仮受残高を読む",
   "description":"与えられた税率から税抜額・消費税額・税込額を区別し、仕入・売上・返品を税抜方式で記録します。仮払消費税と仮受消費税の差額を読み、損益や現金残高へ混ぜない練習をします。",
-  "order": 24,"minutes":80,"sample":false,"unit":6,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
+  "order": 24,"minutes":80,"sample":false,"unit":6,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-18",
   "objectives":["指定税率から税抜額・消費税額・税込額を計算する","税抜方式で仕入・売上とそれぞれの返品を仕訳する","仮受・仮払消費税の残高から指定条件で未払税額を読み取る"],
   "prerequisite":"商品の三分法、返品、売掛金・買掛金と、費用・収益の増減を復習してください。",
   "keywords":["税抜方式","仮払消費税","仮受消費税","税込額","税抜額","未払の税額"],
@@ -24,6 +24,20 @@
 販売時に客へ請求した税額は「<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-480ae50a6a">仮受消費税</a>」、仕入先へ支払う税額は「<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-81569a3d6d">仮払消費税</a>」に記録します。掛け取引では請求と入出金の日が違っても、売掛金・買掛金は本体額と税額を合わせた金額です。販売側の税額と仕入側の税額を分けておけば、設問が指定する条件に沿って、あとで両者の差を求められます。この章の税率・控除・端数処理は、すべて練習問題の条件に従います。
 
 税額の端数が出ない金額を使い、返品以外の税額調整、免税・簡易課税、控除制限などはないものとします。実務上の申告税額を計算する教材ではなく、初級の税抜方式と月次残高の読取りを練習するための条件です。
+
+## 請求額を残したまま、本体と税額を分ける
+
+本体12,000円の商品を掛けで販売します。税率は練習上10％とし、税額は1,200円です。客に請求する13,200円を、売掛金の借方に記録します。その右側には、なぜ13,200円を請求できるかを、本体と税に分けて示します。
+
+| 取引 | 売掛金の変化 | 売上の変化 | 仮受消費税の変化 |
+| --- | ---: | ---: | ---: |
+| 掛けで販売 | 13,200円増 | 12,000円増 | 1,200円増 |
+| 本体3,000円分を返品 | 3,300円減 | 3,000円減 | 300円減 |
+| 返品を反映した額 | 9,900円 | 9,000円 | 900円 |
+
+返品で取り消すのは、商品の本体額だけではありません。客が支払うはずだった税額300円も請求から外すため、売掛金は3,300円減ります。そこで返品時は借方に売上3,000円と仮受消費税300円、貸方に売掛金3,300円を入れます。
+
+返品後に9,900円を銀行振込で受け取った場合は、普通預金が増え、売掛金が消えます。ここでは新しく商品を販売していないため、売上や仮受消費税を再度記録しません。販売・返品・回収のうち、税額を動かすのはどの取引かを分けて確認してください。
 
 <span id="objective-1"></span>
 
@@ -123,6 +137,35 @@
 
 この照合は、全取引が同じ指定税率で端数差もないという条件によります。税率や計算単位が異なる資料では、内訳ごとの条件を先に確かめて集計します。
 
+売上の取消しが税額の差引きにどう関わるかを、別の金額で確認します。
+
+<section class="guided-lesson" id="bb2-vat-first-use-practice" aria-labelledby="bb2-vat-first-use-practice-title">
+<h3 id="bb2-vat-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-vat-first-use-practice-prompt">仮受消費税は7,800円でした。売上返品に対応する税額1,300円を取り消し、仮払消費税は4,100円です。差引額は何円ですか。</p>
+<form data-guided-practice data-expected="2400" data-guided-hint="先に返品の税額を仮受から取り消します。" aria-labelledby="bb2-vat-first-use-practice-title" aria-describedby="bb2-vat-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-vat-first-use-practice-input">答え（円）</label>
+<input id="bb2-vat-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>仮受から返品の税額を引くと6,500円です。仮払4,100円との差は2,400円。税抜方式では、この差を商品の売上や利益に混ぜません。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+本体80,000円の掛け仕入から本体15,000円を返品しました。同じ月に本体100,000円の商品を返品なしで販売しました。税率10％で、他の取引と月初残高がなければ、仮払消費税の残高と仮受との差はいくらですか。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>仕入時の仮払8,000円から返品の1,500円を引き、残高は6,500円です。仮受は10,000円なので、仮受の方が3,500円多くなります。仕入返品は仮受を減らす取引ではありません。</p>
+</details>
+
 ## 自分で解く：税額の分離から残高読取りまで
 
 1. 税抜45,000円の商品を現金で仕入れた。指定税率10％の仕訳をする。
@@ -207,21 +250,3 @@
 </table>
 </div>
 </figure>
-
-<section class="guided-lesson" id="bb2-vat-first-use-practice" aria-labelledby="bb2-vat-first-use-practice-title">
-<h3 id="bb2-vat-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-vat-first-use-practice-prompt">仮受消費税は7,800円でした。売上返品に対応する税額1,300円を取り消し、仮払消費税は4,100円です。差引額は何円ですか。</p>
-<form data-guided-practice data-expected="2400" data-guided-hint="先に返品の税額を仮受から取り消します。" aria-labelledby="bb2-vat-first-use-practice-title" aria-describedby="bb2-vat-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-vat-first-use-practice-input">答え（円）</label>
-<input id="bb2-vat-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>仮受から返品の税額を引くと6,500円です。仮払4,100円との差は2,400円。税抜方式では、この差を商品の売上や利益に混ぜません。</p>
-</details>
-</section>

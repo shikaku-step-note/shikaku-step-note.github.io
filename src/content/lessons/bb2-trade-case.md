@@ -1,5 +1,5 @@
 ---
-{"stableId":"bb2-trade-case","qualification":"boki-beginner","title":"証ひょうから元帳までつなぐ売買の総合演習","description":"納品書、返品連絡、入金記録から仕訳と伝票を作り、得意先元帳と仕入先元帳を照合する日商簿記初級ユニット2の総合演習です。","order":11,"minutes":110,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1,2],"scopeLabel":"2026年度適用範囲・帳簿、証ひょう、商品売買、現金預金の総合演習","subject":"basics","objectives":["資料を突き合わせて重複を除き、記録する日と伝票を決める","仕入・売上・返品・決済を仕訳し、必要な勘定へ転記する","取引先ごとの残高と総勘定元帳を照合し、誤りの場所を見付ける"],"prerequisite":"仕訳帳と元帳、証ひょうと伝票、現金と預金、三分法と返品の各レッスンを確認してください。","keywords":["簿記初級 総合問題","証ひょう 仕訳","得意先元帳 売掛金","仕入先元帳 買掛金","仕訳帳 総勘定元帳 転記"],"glossary":[],
+{"stableId":"bb2-trade-case","qualification":"boki-beginner","title":"証ひょうから元帳までつなぐ売買の総合演習","description":"納品書、返品連絡、入金記録から仕訳と伝票を作り、得意先元帳と仕入先元帳を照合する日商簿記初級ユニット2の総合演習です。","order":11,"minutes":110,"sample":false,"updated":"2026-11-18","unit":2,"syllabus":[1,2],"scopeLabel":"2026年度適用範囲・帳簿、証ひょう、商品売買、現金預金の総合演習","subject":"basics","objectives":["資料を突き合わせて重複を除き、記録する日と伝票を決める","仕入・売上・返品・決済を仕訳し、必要な勘定へ転記する","取引先ごとの残高と総勘定元帳を照合し、誤りの場所を見付ける"],"prerequisite":"仕訳帳と元帳、証ひょうと伝票、現金と預金、三分法と返品の各レッスンを確認してください。","keywords":["簿記初級 総合問題","証ひょう 仕訳","得意先元帳 売掛金","仕入先元帳 買掛金","仕訳帳 総勘定元帳 転記"],"glossary":[],
   "inlineGlossary": [{"id": "glossary-7521a51e1f", "term": "証ひょう", "definition": "取引の日付・金額・内容の根拠を確かめる書類です。"}, {"id": "glossary-da848a2092", "term": "売掛金", "definition": "商品を売った代金を後日受け取る権利を記録する資産の勘定です。"}, {"id": "glossary-1a072ce5bc", "term": "買掛金", "definition": "仕入れた商品代金を後日支払う義務を記録する負債の勘定です。"}, {"id": "glossary-445fdce417", "term": "仕訳", "definition": "取引の内容を借方と貸方に分けて記録することです。"}]
 }
 ---
@@ -33,6 +33,23 @@
 納品書R23と現金受領控えは、6日の同じ販売を別の面から示しています。納品書が示す販売額は36,000円、入金控えが示す回収済み額は8,000円。差額28,000円が売掛金です。12日の請求額は28,000−7,000＝21,000円。既に記録した販売と返品の差額なので、新しい売上にしません。18日には、請求した額のうち13,000円を回収しました。請求と入金を分けて読むと、どの日に売掛金を減らすかが決まります。
 
 <span id="objective-2"></span>
+
+6日の納品書、8日の返品受入票、12日の請求書には、いずれもR23の番号が含まれます。先の二枚は商品が動いたときの記録です。12日の請求書には、その売買と返品を反映した後の残額が書かれています。伝票へ進む前に、「商品を渡した」「返品を受けた」「残額を知らせた」を日付ごとに分けると、同じ売上を記録し直さずに済みます。
+
+<figure id="bb2-trade-case-r23-trace">
+<div class="table-scroll" role="region" tabindex="0" aria-label="R23の書類と売掛金の動き">
+<table>
+<thead><tr><th scope="col">日にちと書類</th><th scope="col">この書類で確かめること</th><th scope="col">記入後の売掛金</th></tr></thead>
+<tbody>
+<tr><th scope="row">6日　納品書・現金受領控え</th><td>売上36,000円のうち8,000円を受取</td><td>28,000円</td></tr>
+<tr><th scope="row">8日　返品受入票</th><td>返品の7,000円を売掛金から減額</td><td>21,000円</td></tr>
+<tr><th scope="row">12日　請求書</th><td>返品後の残額21,000円を通知</td><td>21,000円</td></tr>
+<tr><th scope="row">18日　銀行明細</th><td>13,000円を回収</td><td>8,000円</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption>右欄を上から追うと、請求書の日に残高が変わらないことが分かります。掛けの残高が実際に変わった行だけを、次の仕訳表で確かめます。</figcaption>
+</figure>
 
 ## 仕訳を作り、三伝票式で現金の動きを区別する
 
@@ -72,6 +89,30 @@
 
 売上の差引額は36,000−7,000＝29,000円、仕入の差引額は24,000−4,000＝20,000円です。差額9,000円をそのまま利益とはみなしません。期中の差引仕入の中にはまだ売れていない商品が含まれることがあり、利益の計算には売上原価などの追加情報が必要です。
 
+<span id="bb2-trade-case-first-use-worked"></span>
+
+## 振込名と請求番号を両方たどる
+
+取引先Aに17,000円、取引先Bに12,000円の請求があり、Bの振込6,000円をAに当ててしまったとします。売掛金総額はどちらに当てても23,000円になります。正しい内訳はAが17,000円、Bが6,000円です。総額で見つからない原因は、受取金額が正しく、どの相手の権利を消したかだけが違うことにあります。請求番号と銀行明細の振込人を照合し、誤った得意先別の記録を戻します。
+
+<section class="guided-lesson" id="bb2-trade-case-first-use-practice" aria-labelledby="bb2-trade-case-first-use-practice-title">
+<h3 id="bb2-trade-case-first-use-practice-title">途中で確認　振込先の請求を確かめて売掛金を減らす</h3>
+<p id="bb2-trade-case-first-use-practice-prompt">得意先Aに20,000円、Bに14,000円が残っています。Bの請求に対する9,000円の振込を確認しました。正しいBの残高は何円ですか。</p>
+<form data-guided-practice data-expected="5000" data-guided-hint="振込で減るのは、振込の対象となった請求先の残高です。" aria-labelledby="bb2-trade-case-first-use-practice-title" aria-describedby="bb2-trade-case-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-trade-case-first-use-practice-input">答え（円）</label>
+<input id="bb2-trade-case-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>Bの未回収分は14,000−9,000＝5,000円です。Aは20,000円のままなので、全体は25,000円になります。</p>
+</details>
+</section>
+
 ## 別の資料で自分で解く
 
 月初は現金21,000円、普通預金33,000円、売掛金・買掛金はありません。2日に商品19,000円を掛けで仕入れ、5日に28,000円で販売しました。販売代金のうち4,000円は現金で受け取り、残りは掛けです。7日に得意先から3,000円分の返品を受けて売掛金を減らしました。8日に仕入先へ2,000円分を返品し買掛金を減らしました。10日に請求書を送付し、16日に普通預金へ11,000円入金され、22日に普通預金から仕入先へ6,000円を振り込みました。6件の仕訳を作り、上の四勘定の月末残高を求めてください。
@@ -109,30 +150,6 @@
 月初の売掛金は西店25,000円、東店16,000円。買掛金はこはく商会18,000円です。4日に西店へ掛けで28,000円を販売し、6日に西店から4,000円分の返品を受け入れました。8日に東店から10,000円を普通預金で回収し、10日にこはく商会へ現金7,000円を支払いました。仕訳、伝票の種類、三社の残高を紙に書き、どの組合せを一つの合計にできるか確認してください。
 
 <details><summary>四つの仕訳と元帳の照合を見る</summary><p>4日は売掛金28,000／売上28,000で振替。6日は売上4,000／売掛金4,000で振替。8日は普通預金10,000／売掛金10,000で振替。10日は買掛金7,000／現金7,000で出金です。</p><p>西店は25,000＋28,000−4,000＝49,000円。東店は16,000−10,000＝6,000円。売掛金55,000円は、この二社の合計です。こはく商会の11,000円は支払う義務なので、別の買掛金勘定に残します。売掛金から差し引いて44,000円にまとめると、請求額と支払額を追えなくなります。</p></details>
-
-<span id="bb2-trade-case-first-use-worked"></span>
-
-## 振込名と請求番号を両方たどる
-
-取引先Aに17,000円、取引先Bに12,000円の請求があり、Bの振込6,000円をAに当ててしまったとします。売掛金総額はどちらに当てても23,000円になります。正しい内訳はAが17,000円、Bが6,000円です。総額で見つからない原因は、受取金額が正しく、どの相手の権利を消したかだけが違うことにあります。請求番号と銀行明細の振込人を照合し、誤った得意先別の記録を戻します。
-
-<section class="guided-lesson" id="bb2-trade-case-first-use-practice" aria-labelledby="bb2-trade-case-first-use-practice-title">
-<h3 id="bb2-trade-case-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-trade-case-first-use-practice-prompt">得意先Aに20,000円、Bに14,000円が残っています。Bの請求に対する9,000円の振込を確認しました。正しいBの残高は何円ですか。</p>
-<form data-guided-practice data-expected="5000" data-guided-hint="振込で減るのは、振込の対象となった請求先の残高です。" aria-labelledby="bb2-trade-case-first-use-practice-title" aria-describedby="bb2-trade-case-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-trade-case-first-use-practice-input">答え（円）</label>
-<input id="bb2-trade-case-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>Bの未回収分は14,000−9,000＝5,000円です。Aは20,000円のままなので、全体は25,000円になります。</p>
-</details>
-</section>
 
 ## 出典・適用範囲
 

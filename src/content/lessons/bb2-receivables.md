@@ -7,7 +7,7 @@
   "order": 12,
   "minutes": 90,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 3,
   "syllabus": [
     2
@@ -63,11 +63,11 @@
 }
 ---
 
-納品と代金の受取りの間に時間が空くと、店は代金をまだ持っていなくても、代金を求める権利を持っています。この権利を債権といい、商品の販売で生じた債権は<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-da848a2092">売掛金</a>に記録します。一方、商品を受け取った後で代金を支払う店には債務、つまりお金を払う義務が残ります。商品の仕入で生じた債務の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-1a072ce5bc">買掛金</a>です。
+商品を引き渡してから代金を受け取る約束で販売することを、掛けで売る、または掛売りといいます。販売した店には、商品を渡した日に代金を受け取る権利が生じます。まだ受け取っていないこの代金が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-da848a2092">売掛金</a>です。代金を求める権利を債権と呼び、売掛金は店の資産に含めます。
 
-<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-bdef6a24e6">回収</a>するとは、相手から代金を受け取って債権を減らすことです。買掛金を支払えば、今度は債務が減ります。この章では、まず発生した代金を全額記録し、返品や決済があったときに、どれだけ減ったかを別の日付で追います。
+同じ取引を商品を受け取った店から見ると、後で代金を支払う義務が残ります。支払う義務は債務と呼び、商品を仕入れたときに生じた債務は<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-1a072ce5bc">買掛金</a>という負債に記録します。仕訳の問題では、まずどちらの店の帳簿をつけているかを確かめると、売掛金と買掛金を選び分けられます。
 
-このレッスンの金額は、特に断りがなければ消費税の処理を考えないものとします。商品売買は三分法で記録します。問題に税抜方式などの指示がある場合は、その条件を優先してください。
+代金を受け取って売掛金を減らすことを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-bdef6a24e6">回収</a>といいます。商品が動く日、返品で請求額が変わる日、現金や預金が動く日を取引ごとに分けると、相手からあといくら受け取るか、あるいはいくら支払うかが分かります。以下の例では三分法を使い、消費税の処理は省きます。解答の際は、設問に示された記帳方法と税の条件を確認してください。
 
 <span id="objective-1"></span>
 ## 商品の受渡しと代金の決済を分ける
@@ -134,6 +134,25 @@
 
 月末残高69,000円をそのまま回収額にしないでください。残高はまだ受け取っていない金額です。また、返品12,000円を回収額へ混ぜると、実際の入金額を多く見積もります。返品は商品販売の取消し、回収は代金の受取りという違いがあります。
 
+### 売掛金の貸方に集まる三種類の減少
+
+売掛金の元帳では、代金を受け取った場合も、返品の代金を取り消した場合も、売掛金の減少を貸方に書きます。そこで回収額を調べるときは、同じ行に書かれた相手勘定を見ます。たとえば貸方の売掛金に対応する借方が普通預金なら、振込による回収です。借方が売上なら、未回収の販売分を返品で取り消しています。
+
+掛代金を電子記録で支払う約束に切り替える場合も、元の売掛金は減ります。その分は、電子記録債権という別の勘定に記録します。電子記録債権は、受け取る権利を電子記録で管理する場合の資産です。この段階では代金をまだ受け取っていないので、借方は電子記録債権になります。受取額を数える際には、預金明細に入金があるかを確かめます。
+
+| 元帳に付ける摘要 | 借方の相手勘定 | 貸方の売掛金 | 代金の回収額に含める額 |
+| --- | --- | ---: | ---: |
+| 得意先からの振込 | 普通預金 | 18,000円 | 18,000円 |
+| 未回収の販売分の返品 | 売上 | 4,000円 | 0円 |
+| 電子記録への切替 | 電子記録債権 | 12,000円 | 0円 |
+| 上の三件の計 | | 34,000円 | 18,000円 |
+
+元帳の貸方合計34,000円から、返品4,000円と切替12,000円を引けば、振込による回収額18,000円に戻ります。貸方の動きがすべて回収と分かっている資料であれば、貸方合計をそのまま回収額に使えます。上の資料のように別の減少が含まれるときは、摘要か相手勘定で内訳を調べます。
+
+月初の売掛金は24,000円、当月の掛売上は46,000円、返品は5,000円、電子記録への切替は13,000円、月末の売掛金は30,000円です。他に増減がなければ、当月の回収額はいくらでしょうか。
+
+<details><summary>回収した金額を確かめる</summary><p>回収額は24,000＋46,000−5,000−13,000−30,000＝22,000円です。売掛金の減少合計40,000円をそのまま回収額にすると、返品と切替の18,000円まで含まれます。</p></details>
+
 <span id="objective-3"></span>
 ## 相手先ごとの記録を総額と照合する
 
@@ -148,6 +167,24 @@
 請求書や納品書では、商品、金額、取引日、決済条件を確認します。預金の入金明細では、相手先と対象となる請求を照合します。通帳に入金があったという事実だけでは、新たな売上か売掛金回収かは決まりません。対象の販売がすでに記録されているかを確かめる必要があります。
 
 問題文が「先月販売した商品の代金が入金された」と書いているなら、今月の売上に追加するのではなく、先月から持ち越した売掛金を減らします。月をまたぐ取引でも、発生と決済を分ける原則は変わりません。
+
+<section class="guided-lesson" id="bb2-receivables-first-use-practice" aria-labelledby="bb2-receivables-first-use-practice-title">
+<h3 id="bb2-receivables-first-use-practice-title">月末残高から回収した代金を逆算する</h3>
+<p id="bb2-receivables-first-use-practice-prompt">月初売掛金18,000円、当月掛け売上27,000円、掛けの返品3,500円、月末売掛金24,000円です。他に増減がなければ回収額は何円ですか。</p>
+<form data-guided-practice data-expected="17500" data-guided-hint="返品額と入金額を、売掛金が減る別々の理由として扱います。" aria-labelledby="bb2-receivables-first-use-practice-title" aria-describedby="bb2-receivables-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-receivables-first-use-practice-input">答え（円）</label>
+<input id="bb2-receivables-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>18,000＋27,000−3,500−24,000＝17,500円です。返品3,500円は売掛金の減少ですが代金の回収ではありません。</p>
+</details>
+</section>
 
 ## 自分で仕訳と残高をつなぐ
 
@@ -259,24 +296,6 @@
 ## 残高から当月の回収額を逆算する
 
 売掛金は月初9,000円に当月の掛け販売24,000円を加え、売上返品4,000円を差し引くと29,000円になるはずです。月末の残高が17,000円で、他に増減がなければ、差の12,000円が回収額です。返品は売掛金を減らしますが、現金が入ったことにはなりません。いったん返品を別に取り除くと、当月の入金のうち回収による額が残ります。
-
-<section class="guided-lesson" id="bb2-receivables-first-use-practice" aria-labelledby="bb2-receivables-first-use-practice-title">
-<h3 id="bb2-receivables-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-receivables-first-use-practice-prompt">月初売掛金18,000円、当月掛け売上27,000円、掛けの返品3,500円、月末売掛金24,000円です。他に増減がなければ回収額は何円ですか。</p>
-<form data-guided-practice data-expected="17500" data-guided-hint="返品額と入金額を、売掛金が減る別々の理由として扱います。" aria-labelledby="bb2-receivables-first-use-practice-title" aria-describedby="bb2-receivables-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-receivables-first-use-practice-input">答え（円）</label>
-<input id="bb2-receivables-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>18,000＋27,000−3,500−24,000＝17,500円です。返品3,500円は売掛金の減少ですが代金の回収ではありません。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

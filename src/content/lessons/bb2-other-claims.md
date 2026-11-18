@@ -7,7 +7,7 @@
   "order": 15,
   "minutes": 120,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 3,
   "syllabus": [
     2
@@ -63,11 +63,11 @@
 }
 ---
 
-代金を後日受け取る権利を債権、後日支払う義務を債務といいます。どちらも、受払いの日だけで勘定が決まるわけではありません。販売用の商品を売って代金が残ったら売掛金、店が仕事に使っていた土地を売って代金が残ったら<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-69ca9f6220">未収入金</a>です。代金を受け取る権利という点は同じですが、何の取引から生じたかが違います。
+代金を後日受け取る権利を債権、後日支払う義務を債務といいます。どちらの勘定を使うかは、その代金が何の取引から生じたかで決まります。販売用の商品を売り、代金を後日受け取る約束なら売掛金です。店で使っていた土地を売って代金が残ったときは、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-69ca9f6220">未収入金</a>に記録します。
 
-土地の売却で得た利益を計算するには、売値から<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ccb457e72b">帳簿価額</a>を引きます。帳簿価額は、売る直前に土地の勘定に記録されている金額です。売却代金が未収なら、帳簿から土地を消す一方で、その代金を受け取る権利が新たに増えます。
+支払う側でも、販売用の商品を仕入れて残った代金は買掛金、自店で使う机などを購入して残った代金は未払金です。たとえば事務用の机は、店が仕事のために長く使う物なので備品に記録します。机を販売する店が売るために買えば、仕入に記録します。同じ物であっても、店がどのように使うかで勘定が変わります。
 
-簿記初級の現行公式範囲では、有形固定資産の売却は土地だけが対象です。このページの売却例も土地に限定します。備品を後払いで取得する処理は扱いますが、備品の売却時の減価償却計算はここへ持ち込みません。消費税、土地の評価替え、借入利息、特別な契約条件は考えないものとします。
+この章では、受渡しの日にどの債権・債務が生じ、代金の受払いでどれが減るかを追います。土地の例で使う<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ccb457e72b">帳簿価額</a>は、売る直前に土地の勘定に記録されていた金額です。売却の仕訳に必要な差額は、土地の例の手前で確認します。簿記初級の固定資産の売却問題は土地が対象です。例題では消費税や土地の評価替えを考えません。
 
 <span id="objective-1"></span>
 ## 「何の代金か」で勘定科目を決める
@@ -95,6 +95,19 @@
 翌月に残額40,000円を普通預金から支払うと、未払金40,000円／普通預金40,000円です。ここで再び備品を借方にすると、同じ机を二回取得した記録になってしまいます。備品は購入時に全額記録済みなので、支払日に減らすのは未払金です。
 
 この机を自店で使わず、転売する商品の一つとして仕入れたという条件なら、借方は仕入、未払部分は買掛金です。受取りと支払いの順番が同じでも、用途によって使う科目が変わります。
+
+### 購入明細の用途から、支払う額を振り分ける
+
+文具店に、販売用の椅子と事務所用の椅子が同じ日に届きました。いずれも椅子ですが、納品書の用途欄を見ると、どの勘定に記録するかが分かります。二件は納品日に記録し、後日、同じ仕入先へあわせて52,000円を振り込みます。
+
+| 納品書の品名と用途 | 納品日に記録する借方 | 納品日に残った支払義務 | 振込明細にある支払額 |
+| --- | --- | --- | ---: |
+| 椅子・販売用 32,000円 | 仕入32,000円 | 買掛金32,000円 | 32,000円 |
+| 椅子・事務所用 28,000円 | 備品28,000円 | 未払金28,000円 | 20,000円 |
+
+普通預金から52,000円が出たので、貸方は普通預金52,000円です。借方に書く金額を知るには、振込額を納品書の行へ戻して読みます。販売用の分は買掛金32,000円、事務所用の分は未払金20,000円が減ります。残る8,000円は事務所用なので、未払金の残高です。仕入32,000円と備品28,000円は、どちらも納品日に記録しています。
+
+<details><summary>確認　振込額52,000円をすべて買掛金から引いた場合</summary><p>買掛金の元の残高は32,000円なので、52,000円を借方に書くと、20,000円の借方残高が出ます。未払金28,000円もそのまま残ります。二つの帳簿を差し引けば8,000円になるため、合計だけでは誤りに気づけません。納品書と振込明細で勘定ごとの残高を確かめます。</p></details>
 
 <span id="objective-2"></span>
 <figure id="bb2-other-claims-aid-1"><svg viewBox="0 0 338 142" width="338" height="142" role="img" aria-label="未決済の代金は何を売買したかで分類する。販売用商品なら受取りは売掛金、支払いは買掛金。自店用の土地や備品なら受取りは未収入金、支払いは未払金。" style="display:block;max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="5" y="10" width="328" height="117" rx="6"/><path d="M5 43h328M5 82h328M117 10v117M216 10v117"/></g><g fill="currentColor" font-size="13" text-anchor="middle"><text x="61" y="32">代金の対象</text><text x="166" y="32">これから受取</text><text x="272" y="32">これから支払</text><text x="61" y="67">販売用の商品</text><text x="166" y="67">売掛金</text><text x="272" y="67">買掛金</text><text x="61" y="106">自店用の資産</text><text x="166" y="106">未収入金</text><text x="272" y="106">未払金</text></g></svg><figcaption>先に対象の行を選び、次に受け取る側か支払う側かで列を選びます。この図は代金の区分を示します。土地の売却損益は、下の例題で別に計算します。</figcaption></figure>
@@ -141,6 +154,24 @@
 土地を400,000円で購入し、取得に直接必要な仲介手数料20,000円も取得原価へ含めるという条件なら、土地の取得原価は420,000円です。売主への代金400,000円が後払いで、仲介手数料20,000円だけ現金払いなら、土地420,000円／未払金400,000円、現金20,000円です。
 
 土地の増加額420,000円と未払金400,000円は一致しません。手数料20,000円はすでに別に支払っているからです。借方の資産総額を求める計算と、未決済の義務だけを求める計算を分けます。付随費用を取得原価へ含める条件を読み、何でも支払手数料へ入れる処理を避けましょう。
+
+<section class="guided-lesson" id="bb2-other-claims-first-use-practice" aria-labelledby="bb2-other-claims-first-use-practice-title">
+<h3 id="bb2-other-claims-first-use-practice-title">後払いで売った土地の売却益を求める</h3>
+<p id="bb2-other-claims-first-use-practice-prompt">帳簿価額74,000円の土地を91,000円で売り、代金は翌月に受け取ります。土地売却益は何円ですか。</p>
+<form data-guided-practice data-expected="17000" data-guided-hint="代金の全額を利益にせず、土地として帳簿にある額を引きます。" aria-labelledby="bb2-other-claims-first-use-practice-title" aria-describedby="bb2-other-claims-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-other-claims-first-use-practice-input">答え（円）</label>
+<input id="bb2-other-claims-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>91,000−74,000＝17,000円です。未収入金は91,000円、帳簿から消す土地は74,000円で、その差が固定資産売却益になります。</p>
+</details>
+</section>
 
 ## 自力演習：商品と備品を同じ日に購入する
 
@@ -288,24 +319,6 @@
 ## 一枚の入金明細に、前の売上と土地の代金が並ぶ場合
 
 商品を掛けで売った代金11,000円と、土地の未収代金69,000円が、同じ普通預金へ振り込まれました。この日に増える普通預金は80,000円です。勘定別に見ると売掛金が11,000円、未収入金が69,000円減ります。もとの取引を記録していれば、入金日に売上や土地の利益を重ねて記録しません。
-
-<section class="guided-lesson" id="bb2-other-claims-first-use-practice" aria-labelledby="bb2-other-claims-first-use-practice-title">
-<h3 id="bb2-other-claims-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-other-claims-first-use-practice-prompt">帳簿価額74,000円の土地を91,000円で売り、代金は翌月に受け取ります。土地売却益は何円ですか。</p>
-<form data-guided-practice data-expected="17000" data-guided-hint="代金の全額を利益にせず、土地として帳簿にある額を引きます。" aria-labelledby="bb2-other-claims-first-use-practice-title" aria-describedby="bb2-other-claims-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-other-claims-first-use-practice-input">答え（円）</label>
-<input id="bb2-other-claims-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>91,000−74,000＝17,000円です。未収入金は91,000円、帳簿から消す土地は74,000円で、その差が固定資産売却益になります。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

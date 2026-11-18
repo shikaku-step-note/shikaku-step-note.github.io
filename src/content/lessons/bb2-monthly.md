@@ -1,8 +1,8 @@
 ---
 {
   "stableId":"bb2-monthly","qualification":"boki-beginner","title":"月次残高から資産・回収額・当月損益を読み取る",
-  "description":"月初・増加・減少・月末の関係から現金残高や売掛金回収額を逆算します。商品残高を考慮する条件、資産の控除、当月利益と現金増減の違いを一つずつ確かめます。",
-  "order": 26,"minutes":90,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
+  "description":"試算表と元帳から売掛金の回収額を計算します。返品や電子記録債権への切替えを取り除き、現金・資産の残高と当月の損益の読み方も学びます。",
+  "order": 26,"minutes":90,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-18",
   "objectives":["現金・預金・債権債務の残高と当月の回収・支払額を計算する","商品残高と原価の指定条件を使って当月損益を求める","資産総額・負債総額を適切な科目と控除額から読み取る"],
   "prerequisite":"合計・残高試算表、売掛金・買掛金、減価償却、追加元入・引出、税抜方式を復習してください。",
   "keywords":["月次集計","現金純増加額","売掛金回収額","買掛金残高","商品残高","資産総額","当月損益"],
@@ -23,6 +23,19 @@
 **月次集計**は、一か月の帳簿をまとめて、月の終わりに何が残り、その一か月に何が起きたかを読む作業です。月末の現金や、あとで受け取る代金など、ある時点で残っている額を**残高**といいます。一方、回収額は、すでに販売していた商品などの代金を、その月の間に実際に受け取った額です。同じ売掛金の資料でも、「月末に残った額」と「月内に受け取った額」では、必要な数字が違います。
 
 例えば、月初に受け取り待ちの代金が10,000円あり、その月に掛け販売で5,000円分が新しく発生し、7,000円を受け取ったとします。月末の売掛金は10,000＋5,000−7,000＝8,000円です。回収額に当たるのは7,000円で、月初と月末の差2,000円ではありません。間に掛け販売があるので、月初から月末への変化には、増加と減少の両方が反映されています。
+
+## 売掛金の貸方合計から、実際の入金だけを取り出す
+
+売掛金の貸方には、受け取る権利が減った取引が集まります。得意先から入金があったときのほか、販売した商品が返品されたときや、請求権を電子記録債権に切り替えたときも、売掛金は減ります。したがって、貸方合計を回収額として使えるのは、すべての減少が入金によるという条件があるときです。
+
+| 元帳と相手側の記録 | 売掛金の減少 | 現金・預金による回収に含めるか |
+| --- | ---: | --- |
+| 普通預金の入金明細 | 15,000円 | 含める |
+| 売上返品の連絡票 | 3,000円 | 含めない。請求が取り消された |
+| 電子記録債権への切替記録 | 8,000円 | 含めない。請求権の記録先が変わった |
+| 合計 | 26,000円 | 回収額は15,000円 |
+
+月初の売掛金が30,000円、当月の掛売上が40,000円なら、月末は30,000＋40,000−26,000＝44,000円です。反対に、月末44,000円と当月の掛売上を使って逆算した26,000円は、売掛金の減少総額です。返金を伴わない返品3,000円と切替え8,000円を除いて、初めて預金で受け取った15,000円が分かります。設問に「返品等はない」とあれば、その条件の下では、貸方の減少と回収が一致します。
 
 <span id="objective-1"></span>
 
@@ -121,6 +134,35 @@
 
 資料にクレジット売掛金がある場合、通常の売掛金だけを集めて資産の債権残高を終えないようにします。例えば売掛金40,000円とクレジット売掛金25,000円があれば、その二つの債権合計は65,000円です。ただし、通常の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-91a944c675">売掛金回収額</a>だけを問われる式へ、カード会社からの入金25,000円を混ぜません。合計を求める設問と、個別勘定の動きを求める設問を読み分けます。
 
+売掛金を減らす取引のうち、入金に対応する分を求めてみましょう。
+
+<section class="guided-lesson" id="bb2-monthly-first-use-practice" aria-labelledby="bb2-monthly-first-use-practice-title">
+<h3 id="bb2-monthly-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-monthly-first-use-practice-prompt">月初売掛金21,000円。当月の掛売上39,600円、掛代金を減らした返品600円、月末売掛金23,000円です。ほかに増減がなければ回収はいくらですか。</p>
+<form data-guided-practice data-expected="37000" data-guided-hint="月初から販売と返品を反映し、月末に残った額を除きます。" aria-labelledby="bb2-monthly-first-use-practice-title" aria-describedby="bb2-monthly-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-monthly-first-use-practice-input">答え（円）</label>
+<input id="bb2-monthly-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>21,000＋39,600−600−23,000＝37,000円です。返品の600円は権利が減った額ですが、現金や預金の回収には入りません。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+月初売掛金28,000円、当月の掛売上37,000円でした。月末売掛金は30,000円です。売上返品2,000円と電子記録債権への切替え6,000円があり、その他の減少は普通預金への入金でした。回収額を答えてください。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>売掛金の貸方合計は28,000＋37,000−30,000＝35,000円です。返品と切替えを取り除くと、普通預金に入ったのは35,000−2,000−6,000＝27,000円です。</p>
+</details>
+
 ## 自分で解く：未知の金額を一つずつ戻す
 
 1. 月初現金70,000円、当月入金160,000円、月末現金95,000円から、当月出金額を求める。
@@ -200,21 +242,3 @@
 **自分で確かめる。** 同じ条件で、売掛金の月末残高だけが69,000円だったら、6月の回収額はいくらですか。返品、値引き、回収以外の売掛金の減少はないものとします。
 
 **解答。** 月初20,000円と掛代金66,000円を合わせると、回収前には86,000円ありました。そのうち69,000円が月末まで未回収なので、回収額は86,000−69,000＝17,000円です。20,000＋66,000−17,000＝69,000円と式を戻して確認します。返品があれば回収と返品の両方が売掛金を減らすため、この差だけで回収額を決めることはできません。次の総合例では元の回収額20,000円を使います。
-
-<section class="guided-lesson" id="bb2-monthly-first-use-practice" aria-labelledby="bb2-monthly-first-use-practice-title">
-<h3 id="bb2-monthly-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-monthly-first-use-practice-prompt">月初売掛金21,000円。当月の掛売上39,600円、掛代金を減らした返品600円、月末売掛金23,000円です。ほかに増減がなければ回収はいくらですか。</p>
-<form data-guided-practice data-expected="37000" data-guided-hint="月初から販売と返品を反映し、月末に残った額を除きます。" aria-labelledby="bb2-monthly-first-use-practice-title" aria-describedby="bb2-monthly-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-monthly-first-use-practice-input">答え（円）</label>
-<input id="bb2-monthly-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>21,000＋39,600−600−23,000＝37,000円です。返品の600円は権利が減った額ですが、現金や預金の回収には入りません。</p>
-</details>
-</section>

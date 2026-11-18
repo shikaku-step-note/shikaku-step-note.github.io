@@ -4,7 +4,7 @@
   "title": "固定資産の取得額を決め、土地の売却損益を計算する",
   "description": "商品と固定資産を用途で区別し、購入代金と付随費用から取得額を計算します。現金購入、後払い、土地の売却を仕訳と残高の両方で確かめます。",
   "order": 20, "minutes": 85, "sample": false, "unit": 5, "subject": "basics", "syllabus": [2],
-  "scopeLabel": "2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）", "updated":"2026-11-16",
+  "scopeLabel": "2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）", "updated":"2026-11-18",
   "objectives": ["使用目的と付随費用から固定資産の取得額を判断する", "固定資産の現金購入・後払い・支払いを仕訳する", "土地の帳簿価額と売却代金を比較して売却損益を記録する"],
   "prerequisite": "資産の増減、未払金と買掛金の区別、未収入金の使い方を復習してください。",
   "keywords": ["有形固定資産", "取得原価", "付随費用", "土地", "未払金", "未収入金", "固定資産売却益"],
@@ -29,6 +29,19 @@
 土地を売るときは、代金を受け取る取引と、土地を店の帳簿から取り除く取引を一緒に記録します。帳簿に載っていた土地の金額を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ccb457e72b">帳簿価額</a>**と呼び、ここでは売った土地の帳簿価額と売却代金を比べます。差額は、代金の受け取り方にかかわらず、土地を売ったことで生じた利益または損失です。
 
 この章の取引では消費税を考慮しません。
+
+## 同じ代金でも、資産の使い道で記録先が変わる
+
+机を扱う店が、同じ型の机を一台ずつ二つの目的で買ったとします。どちらも本体50,000円で、店への配送料はまだ考えません。
+
+| どの机か | 購入後にすること | 取得時の借方 |
+| --- | --- | --- |
+| 売場に並べる机 | 客に売る | 仕入 50,000円 |
+| 店の事務室に置く机 | 店で使い続ける | 備品 50,000円 |
+
+右の欄が違うのは、店が手に入れたものの働きが違うからです。売場用の机は販売する商品として仕入れます。事務室用の机は、これから仕事に使う財産として帳簿に残します。見積書の商品名だけで判断できないときは、発注書の用途欄や納品先を確かめましょう。事務室用の机に配送料2,000円と、使える状態にするための組立料3,000円がかかったなら、引渡し時の備品の取得原価は55,000円です。翌月に壊れた引出しを直すための3,000円は、購入時の組立料とは目的が違い、通常の修繕費として分けます。
+
+土地を売るときに帳簿から外すのも、こうして取引ごとに記録してきた金額です。たとえば、総額200,000円で買った土地のうち、購入時の資料で帳簿価額を70,000円と特定できる区画を65,000円で売ったなら、損失は5,000円です。売却後も持っている区画の帳簿価額130,000円は残ります。面積で配分する指示がなければ、敷地全体の金額を面積で割って帳簿価額を作らず、売った区画に対応する資料を使います。
 
 <span id="unit5-assets-method"></span>
 
@@ -138,6 +151,35 @@
 
 取得前に資産の代金を先払いした設例では、以前の支払いも照合します。例えば備品150,000円の受取り時に、すでに記録した前払金50,000円を充当し、残額100,000円を未払金とする指示なら、借方「備品150,000」、貸方「前払金50,000／未払金100,000」です。以前の支払いを今回の現金支出へ再び入れず、取得額と残る義務を分ける考え方を確かめられます。
 
+次は、領収書の各行を取得原価に足すかどうかを決めてみます。
+
+<section class="guided-lesson" id="bb2-assets-first-use-practice" aria-labelledby="bb2-assets-first-use-practice-title">
+<h3 id="bb2-assets-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-assets-first-use-practice-prompt">仕事で使う機器の本体が98,000円、運賃4,600円、使えるようにする設置費2,400円です。翌月の通常の修理5,000円を別に払いました。取得原価は何円ですか。</p>
+<form data-guided-practice data-expected="105000" data-guided-hint="いつ、その支出が必要だったかを確認します。" aria-labelledby="bb2-assets-first-use-practice-title" aria-describedby="bb2-assets-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-assets-first-use-practice-input">答え（円）</label>
+<input id="bb2-assets-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>98,000＋4,600＋2,400＝105,000円です。使用開始に必要な運賃と設置は含め、使用後の通常の修理は費用に分けます。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+本体95,000円の複合機を購入し、運送費5,000円は現金、残りは翌月払いとしました。使用開始後に通常の修理8,000円を現金で支払いました。取得時の備品と未払金の金額、修理時の借方科目を答えてください。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>取得原価は100,000円で、取得時は借方の備品100,000円、貸方の現金5,000円と未払金95,000円です。翌月に取得代を決済すると未払金だけが減ります。使用開始後の通常の修理は借方の修繕費8,000円、貸方の現金8,000円です。</p>
+</details>
+
 ## 自分で解く：取得から支払い、土地売却まで
 
 1・2は連続した取引、3・4はそれぞれ独立した取引として仕訳してください。まず答えを見ずに、資産・負債・収益・費用の区分を書き、その後で金額を計算します。
@@ -224,21 +266,3 @@
 **自分で確かめる。** 店が6月2日に工具を使い始め、40,000円のうち15,000円だけ普通預金から支払い、残りを来月払う契約だった場合、備品と未払金はいくらですか。別の設例で、帳簿価額75,000円の土地を70,000円で売り、代金は来月受け取るときはどう記録しますか。
 
 **解答。** 工具の取得原価は40,000円です。借方に備品40,000円、貸方に普通預金15,000円と未払金25,000円を置きます。貸方の合計を確かめると、支払いを済ませた部分と残った義務を合わせて40,000円です。土地の設例では、土地75,000円を貸方で減らし、受取る権利を借方の未収入金70,000円にします。売却代金が帳簿価額を5,000円下回るので、借方に固定資産売却損5,000円を加えます。土地の取引は別の設例であり、みずき修理店の月次集計には含めません。
-
-<section class="guided-lesson" id="bb2-assets-first-use-practice" aria-labelledby="bb2-assets-first-use-practice-title">
-<h3 id="bb2-assets-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-assets-first-use-practice-prompt">仕事で使う機器の本体が98,000円、運賃4,600円、使えるようにする設置費2,400円です。翌月の通常の修理5,000円を別に払いました。取得原価は何円ですか。</p>
-<form data-guided-practice data-expected="105000" data-guided-hint="いつ、その支出が必要だったかを確認します。" aria-labelledby="bb2-assets-first-use-practice-title" aria-describedby="bb2-assets-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-assets-first-use-practice-input">答え（円）</label>
-<input id="bb2-assets-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>98,000＋4,600＋2,400＝105,000円です。使用開始に必要な運賃と設置は含め、使用後の通常の修理は費用に分けます。</p>
-</details>
-</section>

@@ -7,7 +7,7 @@
   "order": 16,
   "minutes": 89,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 4,
   "syllabus": [
     2
@@ -63,11 +63,11 @@
 }
 ---
 
-お金を借りると、借り手の預金が増えると同時に、将来その金額を返す義務が生じます。この義務を記録する負債の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ade6218a28">借入金</a>です。貸した側から見ると、同じ金額を後で受け取る権利が生じるので、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-3641887bac">貸付金</a>という資産になります。返済によって減るこの基の金額を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-77aad903f0">元金</a>と呼びます。
+お金を借りると、預金が増え、受け取ったお金を返す義務が生じます。返さなければならない金額を記録するのが、負債の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ade6218a28">借入金</a>です。貸した側では、預金が減り、後から返してもらう権利が生じます。その権利は、資産の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-3641887bac">貸付金</a>に記録します。実際に貸し借りしたお金を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-77aad903f0">元金</a>と呼びます。元金を返済した分だけ、借入金と貸付金の残高は減ります。
 
-利息は、お金を借りて使えることへの対価です。借りる側では<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-833a4944f5">支払利息</a>という費用、貸す側では<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-100f0489c2">受取利息</a>という収益に当たります。年利は一年間に元金の何％を利息とするかを示す割合です。月割りを指定された場合は、元金と年利に、対象の月数を12で割った割合を掛けます。
+返済の際には、元金に利息が加わることがあります。利息は、借り手がお金を利用したことに対して払う金額です。借りた店には<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-833a4944f5">支払利息</a>という費用、貸した店には<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-100f0489c2">受取利息</a>という収益になります。返済額を元金と利息に分けると、預金の動きだけでなく、返済後にあといくら残っているかも確かめられます。
 
-このレッスンでは、金銭の貸借が成立し、元金と利息を問題文の指定どおり授受する取引を扱います。消費税、利息の税金、保証料、遅延損害金、割引現在価値は考えません。利率は教材上の仮定です。月数や日数の数え方は各例題の条件に従い、金融商品の契約一般へ広げないでください。
+年利は、元金に対する一年分の利息の割合です。実際に借りた期間が一年より短ければ、設問に書かれた月数や日数を使って、その期間分を求めます。以下では、利息の税金、保証料、遅延損害金を省き、各例題で示す単純な計算条件を使います。
 
 <span id="objective-1"></span>
 ## 元金は資産・負債、利息は収益・費用に分ける
@@ -120,6 +120,22 @@
 
 元利合計だけが示され、元金が分かっているなら差額が利息です。他の費用がない条件で元金80,000円、返済額81,200円なら、利息は1,200円です。「借入金は80,000円減り、支払利息は1,200円増える」と説明してから仕訳へ進むと、全額を一つの科目へ入れる誤りを防げます。
 
+### 借入れが二度あるときは、元金を期間ごとに読む
+
+5月1日に300,000円を借り、7月1日に同じ条件で120,000円を追加で借りました。年利は6％です。9月1日に元金を全額返済し、その日までの利息も支払います。ここでは日割りをせず、丸ごとの月数で計算します。追加の借入れをした7月1日から、利息の計算に使う元金が変わります。
+
+| 利息がかかる期間 | その期間の元金 | 月数 | 利息の計算 |
+| --- | ---: | ---: | ---: |
+| 5月1日から7月1日まで | 300,000円 | 2 | 300,000×0.06×2÷12＝3,000円 |
+| 7月1日から9月1日まで | 420,000円 | 2 | 420,000×0.06×2÷12＝4,200円 |
+| 9月1日に支払う利息 | | | 7,200円 |
+
+二度の借入れは、どちらも借方「普通預金」、貸方「借入金」です。9月1日は、借方に借入金420,000円と支払利息7,200円を書き、貸方に普通預金427,200円を書きます。利息を検算するときは、最初に借りた300,000円に4か月、追加の120,000円に2か月を掛ける方法も使えます。6,000円と1,200円を合わせて7,200円になり、同じ結果を確かめられます。
+
+7月1日の追加借入れを8月1日に延ばし、返済日と年利はそのままにします。利息はいくら減るでしょうか。
+
+<details><summary>追加分に利息がかかる月数を確かめる</summary><p>最初の300,000円を借りた期間は4か月のままです。追加の120,000円は2か月から1か月に短くなるので、120,000×0.06÷12＝600円だけ利息が減ります。利息は6,600円、返済総額は426,600円です。</p></details>
+
 <span id="objective-3"></span>
 ## 一部返済後の利息は残った元金に対して計算する
 
@@ -165,6 +181,24 @@
 
 貸付期間が短くても、利率が年利で与えられたら年の割合へ直します。例えば120,000円、年利6％、一か月なら、120,000×0.06÷12＝600円です。元利合計120,600円と、利息だけ600円のどちらを求める問いか、最後に確認してください。式が正しくても、利息を問われて元利合計を答えると求められた金額になりません。解答の欄の単位と対象まで照合することが、試験での計算確認になります。
 
+
+<section class="guided-lesson" id="bb2-loans-first-use-practice" aria-labelledby="bb2-loans-first-use-practice-title">
+<h3 id="bb2-loans-first-use-practice-title">元金を一部返した後の利息を求める</h3>
+<p id="bb2-loans-first-use-practice-prompt">元金96,000円のうち24,000円を返した直後から、年利5％で4か月分を月割りします。残った元金にかかる利息は何円ですか。</p>
+<form data-guided-practice data-expected="1200" data-guided-hint="返済額を引いた後の元金に、年利と期間の割合を掛けます。" aria-labelledby="bb2-loans-first-use-practice-title" aria-describedby="bb2-loans-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-loans-first-use-practice-input">答え（円）</label>
+<input id="bb2-loans-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>残った元金は72,000円です。72,000×0.05×4÷12＝1,200円なので、利息は1,200円です。</p>
+</details>
+</section>
 
 ## 自力演習：元利合計から仕訳を作る
 
@@ -241,24 +275,6 @@
 ## 返済日を境に、利息を計算する元金を変える
 
 60,000円を年利6％で借り、3か月後に20,000円を返し、その3か月後に残りを返します。各返済日には、その日までの利息も支払います。月割りなら前半の利息は60,000×0.06×3÷12＝900円、後半は40,000×0.06×3÷12＝600円です。最後の支払い40,600円のうち、40,000円は負債の減少、600円は利息です。見ている期間の始めに残る元金を確認すると、返済後の期間に元の60,000円を使う誤りを防げます。
-
-<section class="guided-lesson" id="bb2-loans-first-use-practice" aria-labelledby="bb2-loans-first-use-practice-title">
-<h3 id="bb2-loans-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-loans-first-use-practice-prompt">元金96,000円のうち24,000円を返した直後から、年利5％で4か月分を月割りします。残った元金にかかる利息は何円ですか。</p>
-<form data-guided-practice data-expected="1200" data-guided-hint="返済額を引いた後の元金に、年利と期間の割合を掛けます。" aria-labelledby="bb2-loans-first-use-practice-title" aria-describedby="bb2-loans-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-loans-first-use-practice-input">答え（円）</label>
-<input id="bb2-loans-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>残った元金は72,000円です。72,000×0.05×4÷12＝1,200円なので、利息は1,200円です。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

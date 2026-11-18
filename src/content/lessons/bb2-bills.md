@@ -7,7 +7,7 @@
   "order": 19,
   "minutes": 91,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 4,
   "syllabus": [
     2
@@ -63,11 +63,11 @@
 }
 ---
 
-約束手形は、一定の期日に一定の金額を支払う約束を書面にしたものです。払う側が手形を作って相手に渡すことを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-de48f11a6d">振出し</a>といいます。紙を受け取った側には期日に代金を受け取る権利が生じるので、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f5484d43aa">受取手形</a>は資産です。振り出した側には支払う義務が残り、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-060b68b58f">支払手形</a>という負債に記録します。店の視点が変わると、同じ約束でも記録する勘定が変わります。
+約束手形とは、決めた期日に一定の額を支払うと約束した書面です。支払う側が手形を作って相手に渡すことを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-de48f11a6d">振出し</a>といいます。手形を受け取った店は、決めた期日に代金を受け取る権利を、資産の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-f5484d43aa">受取手形</a>に記録します。手形を振り出した店は、支払う義務を負債の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-060b68b58f">支払手形</a>に記録します。
 
-<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-4ff16752df">電子記録債権</a>・債務では、支払いの権利や義務を紙ではなく電子記録で管理します。授業の設例で売掛金の一部を電子記録債権へ切り替えたら、元の売掛金をその分だけ減らします。まだ代金が預金口座へ入っていないため、資産の内容が変わった段階です。紙の手形を扱う設例は2027年3月31日までの現行範囲です。
+代金を受け取る権利や支払う義務を電子記録で管理する場合には、受け取る側が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-4ff16752df">電子記録債権</a>、支払う側が電子記録債務を使います。すでに売掛金に記録した代金を電子記録へ切り替えたときは、切り替えた額を売掛金から電子記録債権へ移します。普通預金が増えるのは、代金が実際に口座へ入った日です。この二つの日を分けると、未回収の権利がいくら残っているかを追えます。
 
-現行の簿記初級公式範囲には、手形の振出し・受入れ・支払いと電子記録債権・債務が含まれています。このページは2027年3月31日までの適用範囲を対象とし、将来の改定を現行範囲へ先取りしません。手形の割引・裏書・不渡り、電子記録債権の譲渡や特別な保証処理は扱いません。消費税、利息、手数料も考えないものとします。
+紙の手形の例は、2027年3月31日までの出題範囲を対象とします。2027年4月1日以降の範囲では電子記録債権・電子記録債務を学びます。以下では、振出し・受取り・支払いと電子記録への切替を扱い、手形の割引、裏書、不渡り、消費税、手数料は省きます。
 
 <span id="objective-1"></span>
 ## 約束手形を受け取る側と振り出す側を区別する
@@ -129,6 +129,22 @@
 
 切替時の借方を仕入100,000円にすると、仕入が重複して買掛金が減りません。決済時に買掛金100,000円を借方にすると、すでに切り替えた債務とは別の科目を減らし、電子記録債務が残ります。前の仕訳から残高を引き継いで確認しましょう。
 
+### 電子記録の通知日と、口座の入金日を照合する
+
+取引先に対する売掛金が80,000円あります。3日に、このうち50,000円を電子記録債権へ切り替えたとの通知が届き、残り30,000円は普通の掛代金として残ります。20日に掛代金30,000円、翌月5日に電子記録の50,000円が、それぞれ普通預金へ振り込まれます。
+
+| 受け取った資料 | その資料から分かること | 売掛金の残高 | 電子記録債権の残高 | その日の入金 |
+| --- | --- | ---: | ---: | ---: |
+| 3日・電子記録の発生通知 | 50,000円の受取方法が変わった | 30,000円 | 50,000円 | 0円 |
+| 20日・掛代金の振込明細 | 残りの掛代金を受け取った | 0円 | 50,000円 | 30,000円 |
+| 翌月5日・決済の入金明細 | 電子記録で管理した代金を受け取った | 0円 | 0円 | 50,000円 |
+
+3日は借方「電子記録債権50,000円」、貸方「売掛金50,000円」です。20日は借方「普通預金30,000円」、貸方「売掛金30,000円」。翌月の入金は、貸方を電子記録債権50,000円にします。切替の日と入金の日に、同じ売掛金50,000円を二度減らさないように、各行で減る勘定がどれかを確かめます。三つの日付の入金を足すと80,000円となり、元の売掛金の額に戻ります。
+
+3日に「普通預金50,000円／売掛金50,000円」と記録した場合、20日の掛代金受取後にはどの勘定がいくらずれるでしょうか。
+
+<details><summary>通知だけの日と入金の日を区別する</summary><p>20日までに普通預金へ入ったのは掛代金30,000円です。3日にも入金を記録すると普通預金が50,000円多くなり、実際には残っている電子記録債権50,000円が帳簿から抜けます。売掛金はどちらの仕訳でも減るので、売掛金の残高だけを見ても間違いは分かりません。</p></details>
+
 <span id="objective-3"></span>
 ## 決済方法の違う権利・義務を重複なく集計する
 
@@ -165,6 +181,24 @@
 
 受取手形と支払手形の両方に残高がある場合は、勝手に差額へまとめません。受取手形70,000円と支払手形40,000円なら、資産70,000円と負債40,000円です。相手先や満期が別である可能性もあり、教材の指示なしに支払手形を受取手形から差し引く処理はしません。電子記録債権と電子記録債務も同様に、各勘定の残高を確認してから資産合計・負債合計へ集計します。
 
+
+<section class="guided-lesson" id="bb2-bills-first-use-practice" aria-labelledby="bb2-bills-first-use-practice-title">
+<h3 id="bb2-bills-first-use-practice-title">電子記録へ切り替えた後の売掛金を求める</h3>
+<p id="bb2-bills-first-use-practice-prompt">売掛金53,000円のうち34,000円が電子記録債権に変わりました。後日、この電子記録債権34,000円の全額を入金で受け取りました。ほかに動きはありません。残る売掛金は何円ですか。</p>
+<form data-guided-practice data-expected="19000" data-guided-hint="どの勘定にある受取の権利を回収したか確かめます。" aria-labelledby="bb2-bills-first-use-practice-title" aria-describedby="bb2-bills-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-bills-first-use-practice-input">答え（円）</label>
+<input id="bb2-bills-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>切替日に53,000−34,000＝19,000円となります。後日の入金は電子記録債権を消す処理なので、売掛金19,000円には影響しません。</p>
+</details>
+</section>
 
 ## 自力演習と答えの確認
 
@@ -243,24 +277,6 @@
 ## 支払いの約束が変わった日と、資金が動く日を読む
 
 42,000円の売掛金のうち30,000円を電子記録債権へ切り替えました。切替日に売掛金は12,000円となり、電子記録債権が30,000円増えます。店がまだ受け取っていない代金の合計は42,000円のままです。翌月に電子記録債権の30,000円を普通預金で回収したら、電子記録債権が消えます。同じ回収で売掛金まで減らすと、権利を二度消してしまいます。
-
-<section class="guided-lesson" id="bb2-bills-first-use-practice" aria-labelledby="bb2-bills-first-use-practice-title">
-<h3 id="bb2-bills-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-bills-first-use-practice-prompt">売掛金53,000円のうち34,000円が電子記録債権に変わりました。後日、この電子記録債権34,000円の全額を入金で受け取りました。ほかに動きはありません。残る売掛金は何円ですか。</p>
-<form data-guided-practice data-expected="19000" data-guided-hint="どの勘定にある受取の権利を回収したか確かめます。" aria-labelledby="bb2-bills-first-use-practice-title" aria-describedby="bb2-bills-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-bills-first-use-practice-input">答え（円）</label>
-<input id="bb2-bills-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>切替日に53,000−34,000＝19,000円となります。後日の入金は電子記録債権を消す処理なので、売掛金19,000円には影響しません。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

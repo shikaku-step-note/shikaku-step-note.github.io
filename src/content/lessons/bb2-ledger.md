@@ -1,12 +1,12 @@
 ---
-{"stableId":"bb2-ledger","qualification":"boki-beginner","title":"仕訳帳から総勘定元帳へ転記し、残高を確かめる","description":"日付順の仕訳と勘定別の記録を、一続きの取引から作ります。借方・貸方を保って転記し、借方残高と貸方残高、補助簿との突合せ、重複・漏れの調べ方を練習します。","order":6,"minutes":105,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1],"scopeLabel":"2026年度適用範囲・主要簿と補助簿","subject":"basics","objectives":["仕訳帳と総勘定元帳の役割を区別して同じ取引を追う","仕訳と同じ側へ転記し、勘定の合計と残高を求める","補助簿の内訳合計と元帳を突き合わせて誤りを調べる"],"prerequisite":"前の仕訳レッスンで、単純仕訳と複合仕訳を紙に書けることを確認してください。","keywords":["仕訳帳","総勘定元帳","転記","借方残高","貸方残高","補助簿"],"glossary":[{"term":"主要簿","definition":"簿記の中心となる仕訳帳と総勘定元帳"},{"term":"仕訳帳","definition":"取引を発生した日付の順に仕訳で記録する帳簿"},{"term":"総勘定元帳","definition":"すべての取引を勘定科目ごとに分類して記録する帳簿"},{"term":"借方残高","definition":"勘定の借方合計が貸方合計を上回る場合の差額"},{"term":"貸方残高","definition":"勘定の貸方合計が借方合計を上回る場合の差額"},{"term":"補助簿","definition":"主要簿を補い、相手先や取引種類などの内訳を詳しく記録する帳簿の総称。得意先元帳や仕入先元帳などを含む"},{"term":"得意先元帳","definition":"売掛金などを得意先別に記録して内訳を管理する補助簿"},{"term":"仕入先元帳","definition":"買掛金などを仕入先別に記録して内訳を管理する補助簿"}],
+{"stableId":"bb2-ledger","qualification":"boki-beginner","title":"仕訳帳から総勘定元帳へ転記し、残高を確かめる","description":"日付順の仕訳と勘定別の記録を、一続きの取引から作ります。借方・貸方を保って転記し、借方残高と貸方残高、補助簿との突合せ、重複・漏れの調べ方を練習します。","order":6,"minutes":105,"sample":false,"updated":"2026-11-18","unit":2,"syllabus":[1],"scopeLabel":"2026年度適用範囲・主要簿と補助簿","subject":"basics","objectives":["仕訳帳と総勘定元帳の役割を区別して同じ取引を追う","仕訳と同じ側へ転記し、勘定の合計と残高を求める","補助簿の内訳合計と元帳を突き合わせて誤りを調べる"],"prerequisite":"前の仕訳レッスンで、単純仕訳と複合仕訳を紙に書けることを確認してください。","keywords":["仕訳帳","総勘定元帳","転記","借方残高","貸方残高","補助簿"],"glossary":[{"term":"主要簿","definition":"簿記の中心となる仕訳帳と総勘定元帳"},{"term":"仕訳帳","definition":"取引を発生した日付の順に仕訳で記録する帳簿"},{"term":"総勘定元帳","definition":"すべての取引を勘定科目ごとに分類して記録する帳簿"},{"term":"借方残高","definition":"勘定の借方合計が貸方合計を上回る場合の差額"},{"term":"貸方残高","definition":"勘定の貸方合計が借方合計を上回る場合の差額"},{"term":"補助簿","definition":"主要簿を補い、相手先や取引種類などの内訳を詳しく記録する帳簿の総称。得意先元帳や仕入先元帳などを含む"},{"term":"得意先元帳","definition":"売掛金などを得意先別に記録して内訳を管理する補助簿"},{"term":"仕入先元帳","definition":"買掛金などを仕入先別に記録して内訳を管理する補助簿"}],
   "inlineGlossary": [{"id": "glossary-1cb5d8eac9", "term": "仕入先元帳"}, {"id": "glossary-7a8bdb615d", "term": "得意先元帳"}, {"id": "glossary-66286e1222", "term": "総勘定元帳"}, {"id": "glossary-6e92b18d3c", "term": "借方残高"}, {"id": "glossary-bfed7bdad2", "term": "貸方残高"}]
 }
 ---
 
 一つの取引を「いつ起きたか」と「何がいくら残ったか」の両方から調べるには、同じ記録を二つの並べ方で読めるようにします。日付順に仕訳を並べた帳簿が仕訳帳です。仕訳を勘定科目ごとに集めた帳簿を<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-66286e1222">総勘定元帳</a>といいます。「元帳に転記する」とは、取引をもう一度発生させることではなく、仕訳帳にある日付・金額・左右を該当する科目の欄へ写すことです。
 
-残高は、ある時点でその科目に残っている金額を指します。現金がいくらあるかを知りたいときは、元帳の月初現金に当月の受取額を足し、支払額を引きます。得意先別の補助簿では、同じ売掛金を誰から回収するかまで確かめられます。会社全体の残高と相手先別の内訳は、同じ未回収額を別の切り口で示す記録です。
+残高は、ある時点でその科目に残っている金額を指します。現金がいくらあるかを知りたいときは、元帳の月初現金に当月の受取額を足し、支払額を引きます。商品を売ってまだ受け取っていない代金は、売掛金という科目で記録します。元帳の売掛金勘定に店全体の未回収額が載り、相手先ごとに明細を分けた補助簿で誰からいくら回収するかを確かめられます。
 
 <span id="objective-1"></span>
 
@@ -14,7 +14,7 @@
 
 仕訳帳と総勘定元帳を合わせて主要簿といいます。次に、仕訳帳の左右をどのように元帳へ引き継ぐかを確かめます。
 
-仕訳帳で借方に記録した科目は、その勘定の借方へ、貸方に記録した科目は、その勘定の貸方へ転記します。帳簿を移すときに左右を逆転させません。総勘定元帳では相手科目を摘要に書く場合がありますが、その相手科目の名前を見て記入側を変えないよう注意します。
+仕訳帳で借方に記録した科目は、その勘定の借方へ、貸方に記録した科目は、その勘定の貸方へ転記します。帳簿を移すときに左右を逆転させません。帳簿の摘要は、取引の内容や仕訳の相手科目などを書き添える欄です。元帳の摘要に相手科目を書く形式でも、記入する側は、いま転記している科目が仕訳のどちら側にあったかで決めます。
 
 勘定を左右二つに分けた簡略な形式はT字勘定と呼ばれます。横棒の上に勘定名を書き、左に借方、右に貸方を記入します。実際の帳簿の形式には違いがありますが、初級では左右・金額・勘定の関係を紙で追う練習に使えます。
 
@@ -40,6 +40,8 @@
 
 勘定の摘要に「資本金」と書かれていても、それは現金が増えた理由です。資本金が通常貸方に記録されることを理由に、現金勘定でも貸方へ書くと逆になります。元の仕訳の「現金がどちら側にあるか」を確かめてください。
 
+<figure id="bb2-ledger-evidence-trace"><svg viewBox="0 0 354 193" width="354" height="193" role="img" aria-label="仕訳帳　5日　備品を現金で購入、借方：備品40,000 ／ 貸方：現金40,000。現金勘定　貸方へ40,000円、相手科目は備品。現金の記入側は貸方。。備品勘定　借方へ40,000円、相手科目は現金。備品の記入側は借方。" style="display:block;width:100%;max-width:22.125rem;height:auto"><rect x="4" y="4" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="24" font-size="15" font-weight="600" fill="currentColor">仕訳帳　5日　備品を現金で購入</text><text x="17" y="43" font-size="14" fill="currentColor">借方：備品40,000 ／ 貸方：現金40,000</text><path d="M177 56v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="72" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="92" font-size="15" font-weight="600" fill="currentColor">現金勘定　貸方へ40,000円</text><text x="17" y="111" font-size="14" fill="currentColor">相手科目は備品。現金の記入側は貸方。</text><path d="M177 124v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="140" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="160" font-size="15" font-weight="600" fill="currentColor">備品勘定　借方へ40,000円</text><text x="17" y="179" font-size="14" fill="currentColor">相手科目は現金。備品の記入側は借方。</text></svg><figcaption>5日の仕訳の左右をそれぞれの元帳へ写します。現金の元帳の相手欄に「備品」とあっても、転記するのは仕訳の現金と同じ貸方です。</figcaption></figure>
+
 ### 先に「何を知りたいか」を決めてから帳簿を開く
 
 閉店後に「今日、何を支払ったか」と聞かれたら、今日の仕訳を順に読みます。「レジにはいくら残っているか」と聞かれたら、現金勘定に集めた入金と出金を読みます。「どの得意先がまだ払っていないか」まで知るには、売掛金を相手先別に分けた補助簿が要ります。この三つの問いを一枚の帳簿で解こうとすると、どの行を足すべきか迷います。
@@ -55,6 +57,8 @@
 通常、現金や売掛金のような資産は借方残高、買掛金や借入金のような負債は貸方残高となります。たとえば現金の借方合計210,000円、貸方合計40,000円なら、借方残高170,000円です。借方・貸方を足した250,000円を残高にしないようにします。
 
 負債の残高は、貸方に増加、借方に減少が集まるため、貸方合計から借方合計を引きます。買掛金の貸方合計90,000円、借方合計35,000円なら、貸方残高55,000円です。同じ「残高を求める」でも、機械的にいつも借方から貸方を引くと負債を負の数で表してしまいます。大きい側と通常の勘定の性質を確認してください。
+
+代金を後で払う約束で、販売用の商品を買うことを「掛けで仕入れる」といいます。次の例では商品を買った全額を仕入勘定に記録し、そのうちまだ支払っていない額を、支払義務を表す買掛金に記録します。すぐに払った分は現金勘定です。転記で迷ったら、仕訳から写したい科目を一つ選び、その科目の金額と左右を指で追ってみます。三分法という商品売買の記録方法は、後の章で詳しく扱います。
 
 <span id="worked-2"></span>
 
@@ -80,6 +84,30 @@
 
 現金の月初残高80,000円、当月入金120,000円、当月出金90,000円なら月末残高110,000円です。借方合計が月初繰越を含む200,000円と書かれた別形式なら、200,000−90,000＝110,000円です。二つの表現は同じ状態です。80,000円をもう一度足すと190,000円という誤答になります。
 
+<span id="bb2-ledger-first-use-worked"></span>
+
+## 月初の額が入った元帳を読む
+
+月初の金額は、その月の新しい受取りではありません。ただし月末の残高を出すときは出発点として必要です。現金の元帳の借方に前月繰越12,000円と当月の受取り9,000円、貸方に当月の支払い7,500円があるとします。当月の入出金だけなら1,500円増えました。月末に残る現金は、12,000＋1,500＝13,500円です。設問が「当月の受取額」を問う場合は9,000円を答えます。期間の合計に前月繰越を混ぜると、別の数字になります。
+
+<section class="guided-lesson" id="bb2-ledger-first-use-practice" aria-labelledby="bb2-ledger-first-use-practice-title">
+<h3 id="bb2-ledger-first-use-practice-title">途中で確認　元帳の前月繰越から現金残高を求める</h3>
+<p id="bb2-ledger-first-use-practice-prompt">前月繰越18,000円、当月受取5,500円、当月支払11,000円のとき、月末の現金は何円ですか。</p>
+<form data-guided-practice data-expected="12500" data-guided-hint="月初残高を使うのは月末に残った額を求めるときです。" aria-labelledby="bb2-ledger-first-use-practice-title" aria-describedby="bb2-ledger-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-ledger-first-use-practice-input">答え（円）</label>
+<input id="bb2-ledger-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>18,000＋5,500−11,000＝12,500円です。当月だけでは5,500円減っていますが、月末の残高には繰り越した18,000円も含まれます。</p>
+</details>
+</section>
+
 <span id="objective-3"></span>
 
 ## 元帳の合計と、相手先別の内訳を突き合わせる
@@ -87,6 +115,19 @@
 総勘定元帳には、店全体の売掛金や買掛金を記録します。誰にいくら請求し、誰へいくら払うかを詳しく知るためには、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-7a8bdb615d">得意先元帳</a>や<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-1cb5d8eac9">仕入先元帳</a>といった補助簿を使います。主要簿の合計と補助簿の内訳合計が一致すれば、記録の照合に役立ちます。
 
 たとえば売掛金合計が90,000円でも、得意先Aの50,000円、Bの40,000円という内訳が分かれば、請求や回収を相手ごとに管理できます。総勘定元帳は合っていても、Aの入金をBへ誤って割り当てれば、相手先別の残高が違ってしまいます。合計一致だけで十分と考えないことが大切です。
+
+### 内訳を知りたいときに使う補助簿
+
+補助簿には、個別の科目や種類について、主要簿では分からない細かい内容を記録します。売掛金の内訳を得意先ごとに確かめる得意先元帳は、その一例です。現金の受払いを追う現金出納帳、販売した商品や金額を追う売上帳など、知りたいことによって参照する補助簿は変わります。
+
+| 確かめたいこと | 使う帳簿の一例 | 合わせて見る記録 |
+| --- | --- | --- |
+| いつ、いくらの現金を受け払ったか | 現金出納帳 | 元帳の現金勘定 |
+| 何をいくらで販売したか | 売上帳 | 販売時の仕訳や納品書 |
+| 得意先ごとの未回収額はいくらか | 得意先元帳 | 元帳の売掛金勘定と振込明細 |
+| 仕入先ごとの未払額はいくらか | 仕入先元帳 | 元帳の買掛金勘定と支払記録 |
+
+たとえば売上帳のある日の販売額が28,000円でも、28,000円すべてが未回収とは限りません。その場で受け取った額が10,000円なら、この販売で得意先元帳に新たに残るのは18,000円です。販売額を確認する帳簿と掛代金だけを確認する帳簿では、集める金額の範囲が違います。
 
 <span id="worked-3"></span>
 
@@ -201,30 +242,6 @@ A社の月末残高は30,000＋40,000−45,000＝25,000円、B社は20,000＋25,
 どの帳簿へ何を書き足すかを予想します。15日の回収について、仕訳帳、売掛金と普通預金の元帳、得意先元帳の四つを順に照合してください。「総勘定元帳を内訳合計に合わせる」だけで十分かも考えます。
 
 <details><summary>記録を直す順序と、金額が合う理由を見る</summary><p>普通預金は記入済みです。売掛金の元帳だけに15日の貸方11,000円を転記し、残高を70,000−11,000＝59,000円にします。次に得意先元帳でC社の誤った回収を取り消し、D社の回収に付け替えます。C社36,000円、D社23,000円となり、合計は59,000円です。</p><p>もとの得意先元帳も25,000＋34,000＝59,000円でした。したがって、総勘定元帳の総額を59,000円に直すだけでは、相手先別の誤りが残ります。最後に入金明細で相手先を照合すれば、C社への請求漏れとD社への過剰な請求の両方を防げます。仕訳そのものを追加すると普通預金まで二重に増えるので、まだ転記していない帳簿だけ直します。</p></details>
-
-<span id="bb2-ledger-first-use-worked"></span>
-
-## 月初の額が入った元帳を読む
-
-月初の金額は、その月の新しい受取りではありません。ただし月末の残高を出すときは出発点として必要です。現金の元帳の借方に前月繰越12,000円と当月の受取り9,000円、貸方に当月の支払い7,500円があるとします。当月の入出金だけなら1,500円増えました。月末に残る現金は、12,000＋1,500＝13,500円です。設問が「当月の受取額」を問う場合は9,000円を答えます。期間の合計に前月繰越を混ぜると、別の数字になります。
-
-<section class="guided-lesson" id="bb2-ledger-first-use-practice" aria-labelledby="bb2-ledger-first-use-practice-title">
-<h3 id="bb2-ledger-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-ledger-first-use-practice-prompt">前月繰越18,000円、当月受取5,500円、当月支払11,000円のとき、月末の現金は何円ですか。</p>
-<form data-guided-practice data-expected="12500" data-guided-hint="月初残高を使うのは月末に残った額を求めるときです。" aria-labelledby="bb2-ledger-first-use-practice-title" aria-describedby="bb2-ledger-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-ledger-first-use-practice-input">答え（円）</label>
-<input id="bb2-ledger-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>18,000＋5,500−11,000＝12,500円です。当月だけでは5,500円減っていますが、月末の残高には繰り越した18,000円も含まれます。</p>
-</details>
-</section>
 
 ## 出典・適用範囲
 

@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-depreciation", "qualification":"boki-beginner", "title":"見積額を毎月計上し、減価償却後の資産を読む",
   "description":"減価償却費と減価償却累計額の役割を区別し、毎月の見積額を使って仕訳します。取得原価、累計額、帳簿価額の関係と、現金支出・費用・利益の違いまで練習します。",
-  "order": 21,"minutes":85,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
+  "order": 21,"minutes":85,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-18",
   "objectives":["固定資産の購入代金と毎月の減価償却費を区別する","見積額に基づく毎月の減価償却を仕訳する","取得原価・減価償却累計額・帳簿価額と利益の関係を計算する"],
   "prerequisite":"固定資産の取得原価、費用の借方記入、資産の増減を復習してください。",
   "keywords":["減価償却費","減価償却累計額","見積額","帳簿価額","月次","間接法"],
@@ -24,6 +24,20 @@
 毎月計上する分を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-505c862ff9">減価償却費</a>**、それまでの償却額を足し合わせた金額を**<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-9ee2218cd2">減価償却累計額</a>**といいます。累計額は、これまでに取得原価のうちいくらを費用にしたかを示します。備品そのものの取得原価を帳簿に残し、そこから累計額を差し引けば、まだ費用にしていない金額が分かります。簿記初級では、問題で示された毎月の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ff0a0df124">見積額</a>と、どの月から計上するかという条件を使います。
 
 取得原価から月末時点の累計額を差し引いた残りが、月末の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ccb457e72b">帳簿価額</a>です。
+
+## 同じ備品でも、どの月の費用かで金額の読み方が変わる
+
+取得原価48,000円、毎月の償却見積額2,000円の備品を、5月から償却する例です。購入記録にある48,000円は、備品を手に入れたときの額なので、次の表のどの行でも同じです。
+
+| 見る時点 | その月の減価償却費 | その時点の減価償却累計額 | 月末の帳簿価額 |
+| --- | ---: | ---: | ---: |
+| 5月末、1回目の計上後 | 2,000円 | 2,000円 | 46,000円 |
+| 6月末、2回目の計上後 | 2,000円 | 4,000円 | 44,000円 |
+| 7月末、3回目の計上後 | 2,000円 | 6,000円 | 42,000円 |
+
+6月の利益を求めるとき、費用に入れるのは6月の2,000円です。6月末に備品が帳簿上いくら残っているかを問われたら、取得原価から6月末までの4,000円を引きます。翌月も2,000円を計上しますが、それを6月末の計算に先取りすることはありません。仕訳はその月の2,000円を借方の減価償却費、貸方の減価償却累計額に入れます。表の金額が2,000円ずつ変わるのは、その仕訳が一か月に一回ずつ加わるためです。
+
+設問が「翌月から計上」としている場合は、5月末の累計が0円になり、6月末で初めて2,000円になります。先に何月が1回目かを決めてから表を埋めると、一回多く差し引く誤りを防げます。
 
 <span id="unit5-depreciation-method"></span>
 
@@ -137,6 +151,35 @@
 
 同様に、月末累計額が25,000円でも、月初累計額が示されなければ当月費用を一意に求められない場合があります。分かる額を整理し、足りない情報を根拠なく補わないことも、残高問題の確認手順です。
 
+例題と同じように、累計額を求める日を先に確かめてから入力してください。
+
+<section class="guided-lesson" id="bb2-depreciation-first-use-practice" aria-labelledby="bb2-depreciation-first-use-practice-title">
+<h3 id="bb2-depreciation-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-depreciation-first-use-practice-prompt">取得原価88,000円、前月末の減価償却累計額23,000円です。今月と翌月に各2,000円を計上した後の帳簿価額は何円ですか。</p>
+<form data-guided-practice data-expected="61000" data-guided-hint="帳簿価額を求める日までの累計額を引きます。" aria-labelledby="bb2-depreciation-first-use-practice-title" aria-describedby="bb2-depreciation-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-depreciation-first-use-practice-input">答え（円）</label>
+<input id="bb2-depreciation-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>累計額は23,000＋2,000＋2,000＝27,000円なので、88,000−27,000＝61,000円です。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+取得原価36,000円の備品を今月から、取得原価24,000円の備品を翌月から償却します。指定された月額は前者が1,500円、後者が1,000円です。今月の費用と、翌月末の二つの帳簿価額の合計を求めてください。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>今月の減価償却費は前者の1,500円だけです。翌月末までの前者の累計は3,000円、後者は1,000円。したがって帳簿価額の合計は33,000＋23,000＝56,000円です。</p>
+</details>
+
 ## 自分で解く：仕訳から月次集計まで
 
 1. 当月分の減価償却費4,500円が未計上です。間接法で仕訳してください。
@@ -214,21 +257,3 @@ Bの計上開始が6月なら、5月はAだけの7,500円、6月は両方の11,5
 **自分で確かめる。** 新しい工具の使用開始が7月になり、問題で新しい工具の償却は7月からと指定されたら、6月の費用、6月末の累計額、帳簿価額の合計はいくらですか。工具の購入日は同じです。
 
 **解答。** 6月分の減価償却費は、以前から使っている備品の2,000円です。6月末の累計額は12,000＋2,000＝14,000円で、帳簿価額は100,000−14,000＝86,000円です。工具を買った事実は変わらないため、取得原価の40,000円は備品に残ります。変わるのは当月の費用と、そこから増える累計額です。この変更は練習用です。以降の月次集計では表の元の条件を使います。
-
-<section class="guided-lesson" id="bb2-depreciation-first-use-practice" aria-labelledby="bb2-depreciation-first-use-practice-title">
-<h3 id="bb2-depreciation-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-depreciation-first-use-practice-prompt">取得原価88,000円、前月末の減価償却累計額23,000円です。今月と翌月に各2,000円を計上した後の帳簿価額は何円ですか。</p>
-<form data-guided-practice data-expected="61000" data-guided-hint="帳簿価額を求める日までの累計額を引きます。" aria-labelledby="bb2-depreciation-first-use-practice-title" aria-describedby="bb2-depreciation-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-depreciation-first-use-practice-input">答え（円）</label>
-<input id="bb2-depreciation-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>累計額は23,000＋2,000＋2,000＝27,000円なので、88,000−27,000＝61,000円です。</p>
-</details>
-</section>

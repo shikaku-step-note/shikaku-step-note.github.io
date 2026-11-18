@@ -1,5 +1,5 @@
 ---
-{"stableId":"bb2-journal","qualification":"boki-beginner","title":"仕訳を組み立て、複合取引と誤りを確かめる","description":"取引内容から勘定科目、分類、増減、借貸、金額を順に決めます。出資・借入れ・掛売買・部分決済を使い、貸借一致だけでは分からない科目誤りまで確認します。","order":4,"minutes":112,"sample":false,"updated":"2026-11-16","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・勘定記入法則、仕訳、貸借平均","subject":"basics","objectives":["取引内容から勘定科目・増減・借貸を決めて仕訳する","複合取引の金額を配分して左右の合計を合わせる","貸借一致と内容の正しさを別々に検査する"],"prerequisite":"前の取引のレッスンで、借方4要素と貸方4要素を確認してください。ここから仕訳を紙に書いて練習します。","keywords":["仕訳","勘定科目","複合仕訳","貸借一致","返品","返済"],"glossary":[{"term":"仕訳","definition":"取引を勘定科目と金額に分解し、借方と貸方に記録すること"},{"term":"勘定科目","definition":"現金や借入金など、取引を分類して記録するための名称"},{"term":"借方合計","definition":"一つの仕訳や集計表にある借方の金額を合算した額"},{"term":"貸方合計","definition":"一つの仕訳や集計表にある貸方の金額を合算した額"},{"term":"複合仕訳","definition":"借方または貸方に複数の勘定科目を用いる仕訳"},{"term":"転記","definition":"仕訳を勘定別の総勘定元帳に移して記録すること"},{"term":"二重計上","definition":"一つの取引を重複して記録する誤り"}],
+{"stableId":"bb2-journal","qualification":"boki-beginner","title":"仕訳を組み立て、複合取引と誤りを確かめる","description":"取引内容から勘定科目、分類、増減、借貸、金額を順に決めます。出資・借入れ・掛売買・部分決済を使い、貸借一致だけでは分からない科目誤りまで確認します。","order":4,"minutes":112,"sample":false,"updated":"2026-11-18","unit":1,"syllabus":[1],"scopeLabel":"2026年度適用範囲・勘定記入法則、仕訳、貸借平均","subject":"basics","objectives":["取引内容から勘定科目・増減・借貸を決めて仕訳する","複合取引の金額を配分して左右の合計を合わせる","貸借一致と内容の正しさを別々に検査する"],"prerequisite":"前の取引のレッスンで、借方4要素と貸方4要素を確認してください。ここから仕訳を紙に書いて練習します。","keywords":["仕訳","勘定科目","複合仕訳","貸借一致","返品","返済"],"glossary":[{"term":"仕訳","definition":"取引を勘定科目と金額に分解し、借方と貸方に記録すること"},{"term":"勘定科目","definition":"現金や借入金など、取引を分類して記録するための名称"},{"term":"借方合計","definition":"一つの仕訳や集計表にある借方の金額を合算した額"},{"term":"貸方合計","definition":"一つの仕訳や集計表にある貸方の金額を合算した額"},{"term":"複合仕訳","definition":"借方または貸方に複数の勘定科目を用いる仕訳"},{"term":"転記","definition":"仕訳を勘定別の総勘定元帳に移して記録すること"},{"term":"二重計上","definition":"一つの取引を重複して記録する誤り"}],
   "inlineGlossary": [{"id": "glossary-4505f9d334", "term": "借方合計"}, {"id": "glossary-df712a949a", "term": "勘定科目"}, {"id": "glossary-7a5d80c2e4", "term": "貸方合計"}, {"id": "glossary-445fdce417", "term": "仕訳"}, {"id": "glossary-90fc5fe300", "term": "転記"}]
 }
 ---
@@ -25,6 +25,10 @@
 | 純資産 | 貸方 | 借方 |
 | 費用 | 借方 | 貸方 |
 | 収益 | 貸方 | 借方 |
+
+科目を決める前に左右だけを当てはめると、入金があったときに借方は書けても、貸方に何を書くかで迷います。たとえば30,000円を現金で借りた場合、手元の現金が増えるのと同時に、返さなければならない額も増えます。現金は資産なので増加を借方に、借入金は負債なので増加を貸方に書きます。どちらも増加ですが、科目の分類が違うため、記入する側が分かれます。
+
+<figure id="bb2-journal-evidence-trace"><svg viewBox="0 0 354 193" width="354" height="193" role="img" aria-label="証拠　現金で30,000円を借り入れた、現金を受け取り、後で返す義務を負う。変化　資産と負債が同時に増える、現金　30,000円増 ／ 借入金　30,000円増。記入　科目の分類から左右を決める、借方：現金30,000円 ／ 貸方：借入金30,000円" style="display:block;width:100%;max-width:22.125rem;height:auto"><rect x="4" y="4" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="24" font-size="15" font-weight="600" fill="currentColor">証拠　現金で30,000円を借り入れた</text><text x="17" y="43" font-size="14" fill="currentColor">現金を受け取り、後で返す義務を負う</text><path d="M177 56v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="72" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="92" font-size="15" font-weight="600" fill="currentColor">変化　資産と負債が同時に増える</text><text x="17" y="111" font-size="14" fill="currentColor">現金　30,000円増 ／ 借入金　30,000円増</text><path d="M177 124v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="140" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="160" font-size="15" font-weight="600" fill="currentColor">記入　科目の分類から左右を決める</text><text x="17" y="179" font-size="14" fill="currentColor">借方：現金30,000円 ／ 貸方：借入金30,000円</text></svg><figcaption>最後の段で、資産の増加と負債の増加が別々の側に入っていることを確かめます。</figcaption></figure>
 
 <span id="worked-1"></span>
 
@@ -110,6 +114,42 @@
 もう一つ、売掛金の回収を現金で受ける場合と、普通預金への振込で受ける場合も分けます。借方は現金または普通預金、貸方はどちらも売掛金です。相手勘定を共通にしたまま、決済方法に応じて資産の科目が変わります。「入金」という言葉だけで、すべて現金として記録しないでください。
 
 こうした比較は、科目の一覧を覚えた後の確認に使えます。一つの条件を変えたとき、仕訳のどこだけが変わり、どこは変わらないかを説明します。問題の文を全部暗記するのではなく、用途、相手、時点、決済方法といった条件が、勘定の選択にどう関係するかを確かめるためです。
+
+<span id="unit1-journal-receipt-origin"></span>
+
+## 同じ入金額でも、相手側の科目は入金の理由から決める
+
+取引を読んで最初に分かる情報が「普通預金に入った」なら、普通預金の増加を借方に書けます。貸方の科目を決めるには、入金の理由が必要です。以前に商品を渡し、その代金が今回入った場合には、後で代金を受け取る権利である売掛金が消えます。今回その場で商品を渡して代金を受け取った場合には、その日に売上が生じます。同じ額が入ったことを起点に、貸方に置くものだけを比べると、判断の根拠がはっきりします。
+
+### 例題：振込一件のうち、先月の回収と当日の売上を分ける
+
+取引先から普通預金に46,000円の振込みがありました。添付の明細には、先月の売掛金の回収28,000円と、本日引き渡した商品の代金18,000円が記載されています。消費税は考えず、先月の売上はすでに記録したものとします。
+
+普通預金46,000円は、今日増えた資産なので借方です。先月分28,000円については、今日の入金で売掛金という資産が減るため、貸方に売掛金28,000円を書きます。本日分18,000円は収益の発生なので、貸方の売上18,000円です。貸方は28,000＋18,000＝46,000円となり、借方の入金額と合います。ただし、「売上46,000円」とまとめても左右は一致します。その誤りを見つけるためには振込明細を見直し、今月と先月の売上を二重に数えていないかを確かめます。
+
+<section class="guided-lesson" id="bb2-journal-first-use-practice" aria-labelledby="bb2-journal-first-use-practice-title">
+<h3 id="bb2-journal-first-use-practice-title">途中で確認　振込明細から貸方の売上を求める</h3>
+<p id="bb2-journal-first-use-practice-prompt">普通預金に67,500円が振り込まれました。明細では28,500円が先月記録した売掛金の回収で、残りは当日引き渡した商品の代金です。消費税は考えません。貸方「売上」の金額は何円ですか。</p>
+<form data-guided-practice data-expected="39000" data-guided-hint="当日の入金額の全てが収益になるかどうかを、二つの代金の発生日から確かめます。" aria-labelledby="bb2-journal-first-use-practice-title" aria-describedby="bb2-journal-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-journal-first-use-practice-input">答え（円）</label>
+<input id="bb2-journal-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>普通預金67,500円は資産の増加なので借方です。貸方は、先月の売掛金の減少28,500円と当日の売上39,000円（67,500－28,500）に分かれます。貸方の合計は入金額に一致します。</p>
+</details>
+</section>
+
+### 自分で確かめる：二件の意味を取り違えた記録を直す
+
+同じ振込額46,000円について、実際の明細は「本日売上28,000円、先月の売掛金回収18,000円」でした。上の仕訳をそのまま転記すると、売上と売掛金は正しい金額からいくらずれますか。
+
+<details><summary>解答と考え方</summary><p>借方は普通預金46,000円のままです。正しい貸方は売上28,000円と売掛金18,000円なので、上の記録では今月の売上が10,000円少なく、減らした売掛金は10,000円多くなります。左右が46,000円ずつ一致していても、証ひょうに示された内訳を取り違えることがあります。元の明細で対象となる月と金額を照合すると誤りを直せます。</p></details>
 
 ## 独立練習：科目・左右・金額を全部書く
 
@@ -200,42 +240,6 @@
 | 現金売上37,000円は記録済みで、回収18,000円を正しい科目で二重に記録 | 回収の仕訳一件分を逆にして取り消す | 一件分を貸方で減額 |
 
 現金の実際の増加と帳簿の差だけでは、どの日の記録が問題か分かりません。領収書・受領書と仕訳帳を対応させ、同じ資料が一度ずつ記録されているかを見ます。正しい記録が何行あるかで処理が変わるため、仕訳を追加する前に、漏れか分類違いか二重記録かを特定してください。
-
-<span id="unit1-journal-receipt-origin"></span>
-
-## 同じ入金額でも、相手側の科目は入金の理由から決める
-
-取引を読んで最初に分かる情報が「普通預金に入った」なら、普通預金の増加を借方に書けます。貸方の科目を決めるには、入金の理由が必要です。以前に商品を渡し、その代金が今回入った場合には、後で代金を受け取る権利である売掛金が消えます。今回その場で商品を渡して代金を受け取った場合には、その日に売上が生じます。同じ額が入ったことを起点に、貸方に置くものだけを比べると、判断の根拠がはっきりします。
-
-### 例題：振込一件のうち、先月の回収と当日の売上を分ける
-
-取引先から普通預金に46,000円の振込みがありました。添付の明細には、先月の売掛金の回収28,000円と、本日引き渡した商品の代金18,000円が記載されています。消費税は考えず、先月の売上はすでに記録したものとします。
-
-普通預金46,000円は、今日増えた資産なので借方です。先月分28,000円については、今日の入金で売掛金という資産が減るため、貸方に売掛金28,000円を書きます。本日分18,000円は収益の発生なので、貸方の売上18,000円です。貸方は28,000＋18,000＝46,000円となり、借方の入金額と合います。ただし、「売上46,000円」とまとめても左右は一致します。その誤りを見つけるためには振込明細を見直し、今月と先月の売上を二重に数えていないかを確かめます。
-
-### 自分で確かめる：二件の意味を取り違えた記録を直す
-
-同じ振込額46,000円について、実際の明細は「本日売上28,000円、先月の売掛金回収18,000円」でした。上の仕訳をそのまま転記すると、売上と売掛金は正しい金額からいくらずれますか。
-
-<details><summary>解答と考え方</summary><p>借方は普通預金46,000円のままです。正しい貸方は売上28,000円と売掛金18,000円なので、上の記録では今月の売上が10,000円少なく、減らした売掛金は10,000円多くなります。左右が46,000円ずつ一致していても、証ひょうに示された内訳を取り違えることがあります。元の明細で対象となる月と金額を照合すると誤りを直せます。</p></details>
-
-<section class="guided-lesson" id="bb2-journal-first-use-practice" aria-labelledby="bb2-journal-first-use-practice-title">
-<h3 id="bb2-journal-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-journal-first-use-practice-prompt">普通預金に67,500円が振り込まれました。明細では28,500円が先月記録した売掛金の回収で、残りは当日引き渡した商品の代金です。消費税は考えません。貸方「売上」の金額は何円ですか。</p>
-<form data-guided-practice data-expected="39000" data-guided-hint="当日の入金額の全てが収益になるかどうかを、二つの代金の発生日から確かめます。" aria-labelledby="bb2-journal-first-use-practice-title" aria-describedby="bb2-journal-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-journal-first-use-practice-input">答え（円）</label>
-<input id="bb2-journal-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>普通預金67,500円は資産の増加なので借方です。貸方は、先月の売掛金の減少28,500円と当日の売上39,000円（67,500－28,500）に分かれます。貸方の合計は入金額に一致します。</p>
-</details>
-</section>
 
 ## 出典・適用範囲
 

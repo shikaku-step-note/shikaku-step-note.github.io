@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-expenses","qualification":"boki-beginner","title":"収益・費用を分類し、消耗品と事業の税金を記録する",
   "description":"売上以外の収益、営業に使う費用、消耗品の支払い時処理を学びます。固定資産税・印紙税と個人の所得税を区別し、未払固定資産税の支払いで費用を二重計上しないよう練習します。",
-  "order": 23,"minutes":90,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
+  "order": 23,"minutes":90,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-18",
   "objectives":["収益・費用と資産・負債の増減を区別して科目を選ぶ","消耗品を支払い時に消耗品費で処理する","固定資産税・印紙税と未払固定資産税の支払いを区別する"],
   "prerequisite":"仕訳の基本、未払金、資本金で処理する事業主個人の支払いを復習してください。",
   "keywords":["収益","費用","消耗品費","租税公課","固定資産税","印紙税","未払固定資産税"],
@@ -27,6 +27,19 @@
 このコースでいう**消耗品**は、店で使う文房具など、使用に伴って消費する物です。簿記初級の指定された扱いでは、代金を支払ったときに「<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-37c3c0cf31">消耗品費</a>」で記録します。税金を記録するときは、事業が負担する税か、事業主個人が負担する税かを先に読みます。
 
 店の通信回線の料金は通信費というように、何を利用したかに応じて科目を選びます。消費税を本体価格と分けて扱う税抜方式は、後の章で学びます。
+
+## 同じ領収書を、支払いと費用の二重計上に使わない
+
+前月に店の固定資産税18,000円を納税通知書で確認し、費用と未払いを記録した例を考えます。当月の領収書に同じ税額18,000円があれば、通知書の番号と対象を照合します。同じ税を払ったことが確認できれば、当月は残っていた義務を消します。
+
+| 記録時点 | 手がかりになる資料 | 借方 | 貸方 |
+| --- | --- | --- | --- |
+| 前月、税額を計上したとき | 店の資産に関する納税通知書 | 租税公課 18,000円 | 未払固定資産税 18,000円 |
+| 当月、その税を払い終えたとき | 同じ通知番号の領収書 | 未払固定資産税 18,000円 | 現金 18,000円 |
+
+費用が生じたのは前月で、現金が減るのは当月です。当月も租税公課に記録すると、二か月の費用が36,000円となり、さらに未払固定資産税が18,000円残ったままになります。貸借を同額で記録しているので、試算表の左右が一致していても、この誤りは見つかりません。通知番号と未払固定資産税の残高まで確かめる理由はここにあります。
+
+領収書が事業主個人の所得税のものだった場合は、同じ額でも上の仕訳を使いません。この教材の個人事業の設例で事業用の現金から払ったなら、資本金の減少として扱います。税の名称、事業と個人の区別、計上済みかどうかの順で見れば、出金一件から判断できる範囲がはっきりします。
 
 <span id="unit5-expenses-method"></span>
 
@@ -166,6 +179,35 @@
 
 この照合で、既知の少額費用と未精算の概算額を区別できているか確認します。仮払金まで雑費とすれば費用が5,000円過大になります。受取地代と支払地代を差額14,000円の費用だけにまとめた場合は、損益の差額が合っても収益・費用それぞれの総額が過小になります。
 
+支払額のうち、すでに費用に計上した分を見分けられるか確かめます。
+
+<section class="guided-lesson" id="bb2-expenses-first-use-practice" aria-labelledby="bb2-expenses-first-use-practice-title">
+<h3 id="bb2-expenses-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-expenses-first-use-practice-prompt">今月払った13,000円のうち、9,000円の固定資産税は前月に費用として記録済みです。残りは今月買って使う消耗品代です。この二件で増える今月の費用は何円ですか。</p>
+<form data-guided-practice data-expected="4000" data-guided-hint="支払った日と、費用として記録した日を区別します。" aria-labelledby="bb2-expenses-first-use-practice-title" aria-describedby="bb2-expenses-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-expenses-first-use-practice-input">答え（円）</label>
+<input id="bb2-expenses-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>今月の費用は消耗品代4,000円です。前月に計上済みの税金9,000円を払うと、当月は未払固定資産税が減ります。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+前月に計上した固定資産税が24,000円あり、今月にそのうち10,000円を支払いました。同じ日に6,000円の印紙税を事業用の現金から支払いました。二件による当月費用と、残っている未払固定資産税を答えてください。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>当月の費用は印紙税6,000円です。固定資産税の支払い10,000円は計上済みの義務を減らすだけなので、未払固定資産税は24,000−10,000＝14,000円残ります。</p>
+</details>
+
 ## 自分で解く：科目を選び、月末の未払いを確かめる
 
 1. 当月の通信利用料5,000円を現金で支払った。
@@ -238,21 +280,3 @@
 **自分で確かめる。** 6月22日に支払った5,000円が、5月末に費用と未払金をすでに記録した5月分だった場合、この三件が6月の費用を増やす金額はいくらですか。6月22日の仕訳も答えてください。
 
 **解答。** 当月費用は消耗品費の3,000円です。6月22日には、5月末から残っていた支払いの義務が減ります。借方「未払金」5,000円、貸方「普通預金」5,000円と記録します。支出は条件を変える前と同じ18,000円で、費用が生じた月だけが変わります。以降の月次例では電気代を6月分として集計します。
-
-<section class="guided-lesson" id="bb2-expenses-first-use-practice" aria-labelledby="bb2-expenses-first-use-practice-title">
-<h3 id="bb2-expenses-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-expenses-first-use-practice-prompt">今月払った13,000円のうち、9,000円の固定資産税は前月に費用として記録済みです。残りは今月買って使う消耗品代です。この二件で増える今月の費用は何円ですか。</p>
-<form data-guided-practice data-expected="4000" data-guided-hint="支払った日と、費用として記録した日を区別します。" aria-labelledby="bb2-expenses-first-use-practice-title" aria-describedby="bb2-expenses-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-expenses-first-use-practice-input">答え（円）</label>
-<input id="bb2-expenses-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>今月の費用は消耗品代4,000円です。前月に計上済みの税金9,000円を払うと、当月は未払固定資産税が減ります。</p>
-</details>
-</section>

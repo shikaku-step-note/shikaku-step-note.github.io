@@ -22,8 +22,8 @@ import sources from '../../docs/boki-beginner/source-register.json';
 import type { Assessment, Question } from '../lib/assessment';
 
 export const beginnerVersion = 'bb-2026-v2';
-export const beginnerReviewed = '2026-11-16';
-export const beginnerMockVersion = 'bb-2026-mock-v3';
+export const beginnerReviewed = '2026-11-18';
+export const beginnerMockVersion = 'bb-2026-mock-v4';
 export const beginnerReaderReviewVersion = 'bb-2026-reader-review-v1';
 export const beginnerOpeningVersion = 'bb-2026-opening-v1';
 const beginnerNewLessons = readerPractice.newLessons as Record<string, Question[]>;
@@ -38,7 +38,7 @@ export const beginnerLessonIds = [
   'bb2-sales-returns', 'bb2-trade-case', 'bb2-receivables', 'bb2-credit', 'bb2-prepayments', 'bb2-other-claims',
   'bb2-loans', 'bb2-temporary', 'bb2-custody', 'bb2-bills',
   'bb2-assets', 'bb2-depreciation', 'bb2-capital', 'bb2-expenses',
-  'bb2-vat', 'bb2-trial-balance', 'bb2-monthly', 'bb2-integration', 'bb2-opening-balances',
+  'bb2-vat', 'bb2-trial-balance', 'bb2-monthly', 'bb2-opening-balances', 'bb2-integration',
 ];
 export const beginnerLegacyIds = ['bb-foundation', 'bb-journal', 'bb-transactions', 'bb-monthly'];
 export const beginnerSources = sources.sources;
@@ -127,7 +127,10 @@ export function beginnerAssessments(
     version: beginnerLessonVersion(l.data.stableId),
     questions: beginnerLessonQuestions(l.data.stableId),
     instructions: '独自に作成した理解度チェックです。問題ごとの解説で考え方を確かめてください。学習済みの印とは別に結果を保存します。' }));
-  const terms = [...new Map(rows.flatMap(l => l.data.glossary.map(g => [g.term,{...g,lesson:l.data.stableId}] as const))).values()];
+  // Term-question IDs are positional. Keep the original insertion order after moving the lesson.
+  const termRows = [...rows.filter(l => l.data.stableId !== 'bb2-opening-balances'),
+    ...rows.filter(l => l.data.stableId === 'bb2-opening-balances')];
+  const terms = [...new Map(termRows.flatMap(l => l.data.glossary.map(g => [g.term,{...g,lesson:l.data.stableId}] as const))).values()];
   // Avoid category/subtype or expense-name/account-name alternatives that also fit a definition.
   const overlapping: Record<string,string[]> = {
     '補助簿':['得意先元帳','仕入先元帳'], '回収':['決済'], '決済手数料':['支払手数料'],

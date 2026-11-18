@@ -1,8 +1,8 @@
 ---
 {
   "stableId":"bb2-trial-balance","qualification":"boki-beginner","title":"合計・残高・合計残高試算表を作って照合する",
-  "description":"勘定の借方・貸方の合計から残高を求め、三種類の試算表へ記入します。一か月の取引から作る一貫した資料で、転記、貸借一致、誤りの発見範囲まで練習します。",
-  "order": 25,"minutes":85,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
+  "description":"合計試算表・残高試算表・合計残高試算表の違いを、同じ元帳から作って学びます。残高がゼロでも合計に出る理由や、貸借の一致では見つからない誤りも確かめます。",
+  "order": 25,"minutes":85,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-18",
   "objectives":["勘定の借方合計・貸方合計から残高の金額と側を判断する","三種類の試算表を同じ資料から作成する","貸借一致で見つかる誤りと見つからない誤りを区別する"],
   "prerequisite":"仕訳から総勘定元帳への転記と、資産・負債・純資産・収益・費用の勘定記入法則を復習してください。",
   "keywords":["合計試算表","残高試算表","合計残高試算表","貸借平均","借方残高","貸方残高"],
@@ -22,6 +22,20 @@
 取引を帳簿に記録すると、現金や売掛金など、科目ごとに記入が集まります。そのままでは、別々のページにある記録をまとめて確かめるのに手間がかかります。そこで、元帳の各科目について、左側の借方と右側の貸方の金額を一か所に並べます。この一覧が**試算表**です。一件の仕訳を借方・貸方に同じ金額で記録したなら、科目別に集め直しても、全科目の借方と貸方の合計は同じになるはずです。
 
 科目の左右に書いた金額のすべてを集めたものが**合計**で、一方から他方を差し引いた後に残る額が**残高**です。元帳に借方120,000円と貸方30,000円があれば、合計はそれぞれの額を示し、残高は借方90,000円と示します。<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d847544c52">合計試算表</a>は左右の合計、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-b6de5349eb">残高試算表</a>は差を取った残高、<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-c977a964aa">合計残高試算表</a>はその両方を並べます。月初残高を左右の合計に含めるかは、資料や設問で示された表の作り方に従います。
+
+## 元帳の合計は両側に、差だけを残高欄に写す
+
+同じ月の元帳から、現金、買掛金、仮払金を一行ずつ取り出した例です。他にも勘定があるため、この三行だけで試算表全体の合計は作りません。中央の二列は元帳に記入された額をそのまま集計し、外側の二列は差額を大きい側に書きます。
+
+| 借方残高 | 借方合計 | 勘定科目 | 貸方合計 | 貸方残高 |
+| ---: | ---: | --- | ---: | ---: |
+| 5,000円 | 12,000円 | 現金 | 7,000円 | — |
+| — | 3,000円 | 買掛金 | 8,000円 | 5,000円 |
+| — | 2,000円 | 仮払金 | 2,000円 | — |
+
+現金と買掛金は差額が同じ5,000円でも、残高の側が異なります。現金は借方12,000円の方が大きく、買掛金は貸方8,000円の方が大きいためです。残高の欄にはマイナスの数を置かず、差が残る側に正の金額を置きます。仮払金の残高は0円ですが、左右に2,000円の記入があったという情報は合計欄に残ります。残高だけを示す表からは分からない取引の動きです。
+
+この表を残高試算表へ写すなら、現金と買掛金は外側にある額を使います。合計試算表にするなら、三つとも中央の二列から写します。0円欄の記号は資料の指示に合わせ、合計欄で2,000円を落とさないようにしましょう。
 
 <span id="objective-1"></span>
 
@@ -146,6 +160,35 @@
 
 一方、借方・貸方の合計がともに45,000円なら残高0円です。合計欄の取引は消さず、残高欄を0円として区別します。
 
+片側に入れるはずの金額を反対側に入れた場合を、合計の左右に分けて追いましょう。
+
+<section class="guided-lesson" id="bb2-trial-balance-first-use-practice" aria-labelledby="bb2-trial-balance-first-use-practice-title">
+<h3 id="bb2-trial-balance-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-trial-balance-first-use-practice-prompt">8,400円の貸方転記を誤って借方へ入れました。他の記帳が正しい場合、借方合計と貸方合計の差は何円ですか。</p>
+<form data-guided-practice data-expected="16800" data-guided-hint="片側に足すだけでなく、もう一方からも同じ金額がなくなっています。" aria-labelledby="bb2-trial-balance-first-use-practice-title" aria-describedby="bb2-trial-balance-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-trial-balance-first-use-practice-input">答え（円）</label>
+<input id="bb2-trial-balance-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>借方が8,400円増え、本来ある貸方が8,400円減るため、差は16,800円です。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+買掛金に借方・貸方各7,500円の記入があります。さらに貸方2,000円を記入し、ほかの記入はありません。合計残高試算表のどの三つの欄に金額を入れますか。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>借方合計7,500円、貸方合計9,500円、貸方残高2,000円です。もとの残高がゼロでも、合計欄に過去の7,500円ずつの動きが残ります。この貸方残高は、取引先へまだ支払っていない買掛金を表します。</p>
+</details>
+
 ## 自分で解く：形式を変えて同じ残高を読む
 
 1. 普通預金の借方合計260,000円、貸方合計185,000円の残高を、金額と側で答える。
@@ -224,21 +267,3 @@
 **自分で確かめる。** 誤って6月14日の貸方「普通預金」10,000円を借方へ写したとします。ほかの科目の転記は正しい場合、この科目の誤った借方残高はいくらですか。また、試算表全体の借方は貸方をいくら上回りますか。
 
 **解答。** 誤記で借方が10,000円増えて156,000円になり、貸方が10,000円減って45,000円になります。誤った借方残高は111,000円です。両側を10,000円ずつ反対方向へ変えているため、試算表全体では借方が20,000円多くなります。貸借に差が出たら、差額と同額だけでなく、その半額に当たる取引も確認候補になります。ただし、差額だけで原因を断定せず、元の仕訳と突き合わせます。
-
-<section class="guided-lesson" id="bb2-trial-balance-first-use-practice" aria-labelledby="bb2-trial-balance-first-use-practice-title">
-<h3 id="bb2-trial-balance-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-trial-balance-first-use-practice-prompt">8,400円の貸方転記を誤って借方へ入れました。他の記帳が正しい場合、借方合計と貸方合計の差は何円ですか。</p>
-<form data-guided-practice data-expected="16800" data-guided-hint="片側に足すだけでなく、もう一方からも同じ金額がなくなっています。" aria-labelledby="bb2-trial-balance-first-use-practice-title" aria-describedby="bb2-trial-balance-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-trial-balance-first-use-practice-input">答え（円）</label>
-<input id="bb2-trial-balance-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>借方が8,400円増え、本来ある貸方が8,400円減るため、差は16,800円です。</p>
-</details>
-</section>

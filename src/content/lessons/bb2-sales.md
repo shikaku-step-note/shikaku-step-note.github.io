@@ -1,5 +1,5 @@
 ---
-{"stableId":"bb2-sales","qualification":"boki-beginner","title":"三分法で仕入・売上・返品を記録する","description":"三分法の仕入・売上・繰越商品を区別し、現金・掛け・複合決済を仕訳します。仕入諸掛、販売時の発送費、返品前後の債権債務、記録を二重にしない考え方を練習します。","order":9,"minutes":117,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・商品の三分法、仕入返品・売上返品","subject":"basics","objectives":["三分法の各勘定の役割を理解して現金・掛売買を仕訳する","仕入諸掛と発送費を指定された負担条件から記録する","返品を元の取引の取消しとして処理し未決済残高を求める"],"prerequisite":"前の章で仕訳と現金・預金の違いを確かめてください。掛け、売掛金、買掛金は本文で扱います。練習では消費税を考慮しません。","keywords":["三分法","仕入","売上","繰越商品","仕入諸掛","返品"],"glossary":[{"term":"三分法","definition":"商品売買を仕入、売上、繰越商品の三つの勘定で記録する方法"},{"term":"仕入","definition":"三分法で期中の商品購入を記録する勘定"},{"term":"売上","definition":"通常の商品販売による収益を記録する勘定"},{"term":"繰越商品","definition":"保有する商品の繰越額を記録する資産の勘定"},{"term":"仕入諸掛","definition":"商品の仕入れに伴い、運送費などとして追加で発生する費用"},{"term":"発送費","definition":"商品の販売に伴い当店が負担する発送等の費用を記録する勘定"},{"term":"仕入返品","definition":"仕入れた商品を返し、元の仕入取引を取り消すこと"},{"term":"売上返品","definition":"販売した商品が返され、元の売上取引を取り消すこと"}],
+{"stableId":"bb2-sales","qualification":"boki-beginner","title":"三分法で仕入・売上・返品を記録する","description":"三分法の仕入・売上・繰越商品を区別し、現金・掛け・複合決済を仕訳します。仕入諸掛、販売時の発送費、返品前後の債権債務、記録を二重にしない考え方を練習します。","order":9,"minutes":117,"sample":false,"updated":"2026-11-18","unit":2,"syllabus":[2],"scopeLabel":"2026年度適用範囲・商品の三分法、仕入返品・売上返品","subject":"basics","objectives":["三分法の各勘定の役割を理解して現金・掛売買を仕訳する","仕入諸掛と発送費を指定された負担条件から記録する","返品を元の取引の取消しとして処理し未決済残高を求める"],"prerequisite":"前の章で仕訳と現金・預金の違いを確かめてください。掛け、売掛金、買掛金は本文で扱います。練習では消費税を考慮しません。","keywords":["三分法","仕入","売上","繰越商品","仕入諸掛","返品"],"glossary":[{"term":"三分法","definition":"商品売買を仕入、売上、繰越商品の三つの勘定で記録する方法"},{"term":"仕入","definition":"三分法で期中の商品購入を記録する勘定"},{"term":"売上","definition":"通常の商品販売による収益を記録する勘定"},{"term":"繰越商品","definition":"保有する商品の繰越額を記録する資産の勘定"},{"term":"仕入諸掛","definition":"商品の仕入れに伴い、運送費などとして追加で発生する費用"},{"term":"発送費","definition":"商品の販売に伴い当店が負担する発送等の費用を記録する勘定"},{"term":"仕入返品","definition":"仕入れた商品を返し、元の仕入取引を取り消すこと"},{"term":"売上返品","definition":"販売した商品が返され、元の売上取引を取り消すこと"}],
   "inlineGlossary": [{"id": "glossary-f723c1f87f", "term": "仕入諸掛"}, {"id": "glossary-7bd0dc29bb", "term": "仕入返品"}, {"id": "glossary-23153eb6ff", "term": "売上返品"}, {"id": "glossary-73246008a4", "term": "繰越商品"}, {"id": "glossary-05ff730a73", "term": "三分法"}]
 }
 ---
@@ -41,6 +41,32 @@
 
 似た金額が出ても、買う立場と売る立場で勘定が変わります。残額を計算した後は、借貸合計が総額80,000円に一致するかを確認します。現金20,000円だけを記録すると、商品の全体と未決済部分が帳簿に残りません。
 
+<span id="bb2-sales-first-use-worked"></span>
+
+<figure id="bb2-sales-evidence-trace"><svg viewBox="0 0 354 193" width="354" height="193" role="img" aria-label="納品書　商品の代金24,000円、受け取った全額を借方「仕入」に書く。。領収書　現金で6,000円を支払い、その日に出たお金を貸方「現金」に書く。。残り18,000円は翌週支払う、まだ払っていない額を貸方「買掛金」に書く。" style="display:block;width:100%;max-width:22.125rem;height:auto"><rect x="4" y="4" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="24" font-size="15" font-weight="600" fill="currentColor">納品書　商品の代金24,000円</text><text x="17" y="43" font-size="14" fill="currentColor">受け取った全額を借方「仕入」に書く。</text><path d="M177 56v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="72" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="92" font-size="15" font-weight="600" fill="currentColor">領収書　現金で6,000円を支払い</text><text x="17" y="111" font-size="14" fill="currentColor">その日に出たお金を貸方「現金」に書く。</text><path d="M177 124v12m-5 -5 5 5 5 -5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="4" y="140" width="346" height="49" rx="6" fill="none" stroke="currentColor"/><text x="17" y="160" font-size="15" font-weight="600" fill="currentColor">残り18,000円は翌週支払う</text><text x="17" y="179" font-size="14" fill="currentColor">まだ払っていない額を貸方「買掛金」に書く。</text></svg><figcaption>納品書の金額が仕入の出発点です。現金で払った額と買掛金を足し、納品書の全額24,000円に戻るか確かめます。</figcaption></figure>
+
+## 納品書と受領記録から、商品代と掛代金を分ける
+
+納品書が商品24,000円、領収書がその場で払った6,000円を示しているとします。仕入は商品の全額24,000円です。支払いは二つに分かれ、現金が6,000円減り、買掛金が18,000円増えます。翌週に残りを払うと、買掛金と現金が18,000円減ります。翌週は新しい商品を受け取っていないので、仕入を追加しません。
+
+<section class="guided-lesson" id="bb2-sales-first-use-practice" aria-labelledby="bb2-sales-first-use-practice-title">
+<h3 id="bb2-sales-first-use-practice-title">途中で確認　商品代金のうち後払いになる額を求める</h3>
+<p id="bb2-sales-first-use-practice-prompt">商品39,800円を受け取り、現金11,500円を支払い、残額は翌月払いにしました。増える買掛金は何円ですか。</p>
+<form data-guided-practice data-expected="28300" data-guided-hint="まず商品代の全額を書き、次に支払った分を引きます。" aria-labelledby="bb2-sales-first-use-practice-title" aria-describedby="bb2-sales-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-sales-first-use-practice-input">答え（円）</label>
+<input id="bb2-sales-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>39,800−11,500＝28,300円です。商品の仕入は39,800円全額。その場の支払額を引いた分だけ、まだ支払う義務が残ります。</p>
+</details>
+</section>
+
 <span id="objective-2"></span>
 
 ## 運送料は、仕入れか販売か、誰の負担かを読む
@@ -50,6 +76,8 @@
 一方、販売した商品を得意先へ送るため当店が負担する送料は、発送費など問題の指定科目へ記録します。仕入時の送料と、販売時の送料を、どちらも「送料」という言葉だけで同じ科目へまとめないようにします。
 
 相手負担の運送料を一時的に立て替える条件では、当店の費用とは別です。立替金等の扱いは債権債務のレッスンでも学びます。このレッスンの例題は当店負担と明示しているので、その条件で解いてください。運送料の負担者が変われば、仕訳も変わります。
+
+たとえば店が販売用の商品を40,000円で仕入れ、入荷に必要な運賃2,000円を負担した場合、その商品を仕入れるためにかかった額は42,000円です。一方、店が売った商品を客へ送るために負担した運賃2,000円は発送費に当たります。同じ運送会社への支払いでも、商品を入荷するための支出か、購入した客へ届けるための支出かによって、使う科目が変わります。
 
 <span id="worked-2"></span>
 
@@ -193,30 +221,6 @@
 商品65,000円を受け取り、25,000円を普通預金で払い、残額を掛けとしました。当店負担の引取り運賃4,000円も当日に現金で支払っています。別の日に一部の商品を84,000円で掛け販売し、後日31,000円を普通預金で回収しました。返品はありません。この一連の仕訳と、仕入・売上・買掛金・売掛金の差引額を求めてください。
 
 <details><summary>仕訳、残高、別の式での検算を見る</summary><p>購入は借方 仕入69,000円、貸方 普通預金25,000円・現金4,000円・買掛金40,000円です。販売は借方 売掛金84,000円、貸方 売上84,000円。回収は借方 普通預金31,000円、貸方 売掛金31,000円です。仕入69,000円、売上84,000円、買掛金40,000円、売掛金53,000円です。支払い済み29,000円と未払い40,000円を足すと仕入69,000円、回収済み31,000円と未回収53,000円を足すと売上84,000円へ戻ります。</p></details>
-
-<span id="bb2-sales-first-use-worked"></span>
-
-## 納品書と受領記録から、商品代と掛代金を分ける
-
-納品書が商品24,000円、領収書がその場で払った6,000円を示しているとします。仕入は商品の全額24,000円です。支払いは二つに分かれ、現金が6,000円減り、買掛金が18,000円増えます。翌週に残りを払うと、買掛金と現金が18,000円減ります。翌週は新しい商品を受け取っていないので、仕入を追加しません。
-
-<section class="guided-lesson" id="bb2-sales-first-use-practice" aria-labelledby="bb2-sales-first-use-practice-title">
-<h3 id="bb2-sales-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-sales-first-use-practice-prompt">商品39,800円を受け取り、現金11,500円を支払い、残額は翌月払いにしました。増える買掛金は何円ですか。</p>
-<form data-guided-practice data-expected="28300" data-guided-hint="まず商品代の全額を書き、次に支払った分を引きます。" aria-labelledby="bb2-sales-first-use-practice-title" aria-describedby="bb2-sales-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-sales-first-use-practice-input">答え（円）</label>
-<input id="bb2-sales-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>39,800−11,500＝28,300円です。商品の仕入は39,800円全額。その場の支払額を引いた分だけ、まだ支払う義務が残ります。</p>
-</details>
-</section>
 
 ## 出典・適用範囲
 

@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-capital","qualification":"boki-beginner","title":"追加元入・引出と事業主の所得税を資本金で記録する",
   "description":"事業と事業主個人を分けて、追加元入、生活費の引出、所得税の支払いを処理します。資本金の増減と当月利益を混同せず、月次残高から元入額を逆算する練習をします。",
-  "order": 22,"minutes":85,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
+  "order": 22,"minutes":85,"sample":false,"unit":5,"subject":"basics","syllabus":[2],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-18",
   "objectives":["追加元入と事業の収益を区別して仕訳する","引出と事業主個人の所得税を資本金の減少として処理する","元入・引出の資料から資本金の残高と追加元入額を計算する"],
   "prerequisite":"資産・負債・純資産と、収益・費用の違い、資本金の貸方増加を復習してください。",
   "keywords":["資本金","追加元入","引出","所得税","純資産","事業と個人の区別"],
@@ -24,6 +24,20 @@
 入出金を見ただけでは、どの科目を使うかは決められません。店主が資金を追加すれば資本金が増え、販売して代金を受け取れば売上や売掛金の回収に関わり、銀行から借りれば返済義務が増えます。お金の出どころと、何のために受け渡したかを読んでから、事業の利益に含めるかを判断します。
 
 ここでは、現行の2026年度範囲に沿って個人企業の追加元入れと引出しを扱います。
+
+## 入金の相手と目的から、資本金を増やす取引を見分ける
+
+預金口座に30,000円ずつ三件の入金があったとします。入金額だけを並べるとどれも同じに見えますが、振込名義と元の資料を照合すると、預金の増加と対になる変化を区別できます。
+
+| 振込元と資料 | 預金のほかに変わるもの | 貸方 |
+| --- | --- | --- |
+| 事業主。事業用の元手を追加した記録 | 事業の元手が増える | 資本金 |
+| 得意先。前月に掛けで販売した請求書 | 受取待ちだった権利が減る | 売掛金 |
+| 銀行。返済の約束を記した借入契約書 | 返済義務が増える | 借入金 |
+
+三件で預金は90,000円増えます。このうち資本金を増やすのは一件目だけで、当月の収益はいずれにも発生しません。二件目については前月に売上を記録してあるため、今月は代金を回収したことだけを記録します。
+
+その後、事業主が私用に12,000円を引き出したなら、追加元入れとの相殺後、資本金は18,000円の純増です。この差は元手の動きを表します。入金があったから利益が出たとは判断せず、利益は別途、当月の収益から当月の費用を差し引いて求めます。
 
 <span id="unit5-capital-method"></span>
 
@@ -133,6 +147,35 @@
 
 追加元入と引出が同じ月にあっても、両方の事実を残します。現金80,000円を元入し、その後現金30,000円を生活費に引き出したなら、資本金の貸方に80,000円、借方に30,000円を記録します。資本金の純増加は50,000円ですが、追加元入額そのものは80,000円です。最初から差額50,000円だけを元入額と答えると、引出しの事実が見えなくなります。純増加額と、増加側の取引総額を分けてください。
 
+今度は記録の順を逆にして、月末の残高から追加元入れの金額を求めます。
+
+<section class="guided-lesson" id="bb2-capital-first-use-practice" aria-labelledby="bb2-capital-first-use-practice-title">
+<h3 id="bb2-capital-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-capital-first-use-practice-prompt">月初の資本金は160,000円、月末は168,500円でした。当月に私用で4,200円を引き出し、それ以外は追加元入だけです。追加元入はいくらですか。</p>
+<form data-guided-practice data-expected="12700" data-guided-hint="月末と月初の差は、元入と引出しを両方反映した純増です。" aria-labelledby="bb2-capital-first-use-practice-title" aria-describedby="bb2-capital-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-capital-first-use-practice-input">答え（円）</label>
+<input id="bb2-capital-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>資本金は8,500円増えました。途中の引出し4,200円を戻すと、追加で入れた金額は12,700円です。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+当月の追加元入れが40,000円、家計のための引出しが16,000円です。月末の資本金が194,000円だったとき、月初の資本金を求めてください。ほかに資本金を増減させた取引はありません。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>資本金は40,000−16,000＝24,000円の純増です。したがって月初は194,000−24,000＝170,000円です。売上や費用はこの計算に加えません。</p>
+</details>
+
 ## 自分で解く：目的を示してから仕訳する
 
 1. 事業主が個人の現金90,000円を事業へ追加元入した。
@@ -206,21 +249,3 @@
 **自分で確かめる。** 6月の末に「資本金」の残高が215,000円だったとします。家計への引出しが4,000円で、それ以外の資本金の動きが元入れだけなら、実際の追加元入れは何円ですか。
 
 **解答。** 215,000−208,000＝7,000円は、元入れから引出しを差し引いた後の増加額です。引き出した4,000円を戻して、追加元入れは7,000＋4,000＝11,000円と求めます。208,000＋11,000−4,000＝215,000円になることを確かめます。以降の月次例では元の条件の6,000円を使います。
-
-<section class="guided-lesson" id="bb2-capital-first-use-practice" aria-labelledby="bb2-capital-first-use-practice-title">
-<h3 id="bb2-capital-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-capital-first-use-practice-prompt">月初の資本金は160,000円、月末は168,500円でした。当月に私用で4,200円を引き出し、それ以外は追加元入だけです。追加元入はいくらですか。</p>
-<form data-guided-practice data-expected="12700" data-guided-hint="月末と月初の差は、元入と引出しを両方反映した純増です。" aria-labelledby="bb2-capital-first-use-practice-title" aria-describedby="bb2-capital-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-capital-first-use-practice-input">答え（円）</label>
-<input id="bb2-capital-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>資本金は8,500円増えました。途中の引出し4,200円を戻すと、追加で入れた金額は12,700円です。</p>
-</details>
-</section>

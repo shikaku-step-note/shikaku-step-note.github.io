@@ -7,7 +7,7 @@
   "order": 13,
   "minutes": 90,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 3,
   "syllabus": [
     2
@@ -58,11 +58,11 @@
 }
 ---
 
-カードで商品を売った店は、品物を渡した日には代金を受け取っていなくても、決済事業者から後日支払いを受ける権利を持ちます。この権利を記録する資産の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-09d27c67d9">クレジット売掛金</a>です。普通の掛け販売では取引先から代金を回収します。カード決済では決済事業者との間で精算するので、相手を区別できるように勘定を分けます。
+カードで支払われた商品を店が引き渡すと、その日の売上が立ちます。代金は、後日カード決済の事業者から振り込まれます。売上を記録した日から振込日までの間、事業者に対して代金を受け取る権利を表す勘定が、資産の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-09d27c67d9">クレジット売掛金</a>です。請求先である決済事業者が分かれば、得意先へ直接請求する通常の売掛金とも区別できます。
 
-手数料は、その決済の仕組みを使うために店が負担する費用です。販売額と口座の入金額に差があっても、商品の販売額自体が変わるわけではありません。手数料を販売の日に記録する条件と、精算の日に記録する条件では、入金時に消すクレジット売掛金の額が変わるので、どちらの条件かを先に読みます。
+決済事業者が振込額から差し引く手数料は、店がサービスを利用するために負担する費用です。たとえば商品を20,000円で売り、手数料600円が差し引かれると、預金に入るのは19,400円です。販売額20,000円は商品の代金、19,400円は実際に受け取る金額なので、それぞれの欄に記録します。
 
-ここでは販売店側の記録を扱い、購入者の分割払いの利息などは扱いません。金額は消費税を考えず、手数料以外の控除はないものとします。手数料をいつ記録するかは例題ごとに指定します。販売時に確定する場合と、入金時に認識する指定の場合を混同しないでください。
+手数料を販売時に記録するか入金時に記録するかは、例題ごとの指定に従います。この時点の違いが、振込まで帳簿に残るクレジット売掛金の額に表れます。以下では販売店の帳簿を使い、消費税や手数料以外の控除は省きます。
 
 <span id="objective-1"></span>
 ## 代金の請求先と費用の発生を読む
@@ -105,6 +105,23 @@
 
 貸方クレジット売掛金を117,000円にすると、3,000円の権利が不自然に残ります。権利の全額を消し、受け取った預金と負担した費用に分けると、借方・貸方とも120,000円で一致します。
 
+### 入金日が翌月になると、どの勘定に差が残るか
+
+6月28日に60,000円の商品をカードで販売し、手数料1,800円を差し引いた58,200円が7月10日に振り込まれます。月末をまたぐ場合は、同じ取引でも6月30日の帳簿にどの金額が残るかを先に確かめます。
+
+| 確認する金額 | 販売時に費用を計上する指定 | 入金時に費用を計上する指定 |
+| --- | ---: | ---: |
+| 6月の売上 | 60,000円 | 60,000円 |
+| 6月の支払手数料 | 1,800円 | 0円 |
+| 6月末のクレジット売掛金 | 58,200円 | 60,000円 |
+| 7月10日の預金への入金 | 58,200円 | 58,200円 |
+| 7月10日にクレジット売掛金から減らす額 | 58,200円 | 60,000円 |
+| 7月の支払手数料 | 0円 | 1,800円 |
+
+販売時に費用を記録する指定では、6月末の債権に手数料控除後の金額が残ります。入金時に記録する指定では、6月末には販売代金の全額が債権に残るため、7月の借方で普通預金58,200円と支払手数料1,800円に分けます。貸方へ記録する60,000円は、二つを合わせた金額です。どちらも7月10日の仕訳後に債権の残高は0円となります。
+
+<details><summary>確認　振込明細の58,200円だけを貸方に書くとどうなるか</summary><p>入金時に手数料を記録する指定なら、入金前の債権は60,000円です。貸方を58,200円にすると、振込が済んだ後も1,800円の債権が残ります。費用となった1,800円を普通預金58,200円とともに借方に書き、債権の全額60,000円を貸方に記録します。</p></details>
+
 <span id="objective-2"></span>
 ## パーセントと計算対象を確認する
 
@@ -141,6 +158,24 @@
 同じ販売日・同じ金額でも、手数料を入金時に処理する指定なら、18日の販売分は総額70,000円のまま残ります。未入金分の手数料はまだ帳簿に記録していません。この違いは記録時点によるものであり、将来受け取る予定の現金と、現時点の帳簿残高を区別する必要があります。
 
 問題を解くときは、まず採用する処理を一つに決めます。販売時だけ控除後で記録し、残高計算だけ総額に戻すような混用はしません。金額を追う表には「総額で記録」または「手数料控除後で記録」と書き添えると、計算の基準を保てます。
+
+<section class="guided-lesson" id="bb2-credit-first-use-practice" aria-labelledby="bb2-credit-first-use-practice-title">
+<h3 id="bb2-credit-first-use-practice-title">手数料を差し引いた入金額を求める</h3>
+<p id="bb2-credit-first-use-practice-prompt">販売額45,000円、手数料率4％。精算時に手数料を差し引いて振り込むとき、普通預金へ入る額は何円ですか。</p>
+<form data-guided-practice data-expected="43200" data-guided-hint="割合を使う対象はカード販売の全額です。" aria-labelledby="bb2-credit-first-use-practice-title" aria-describedby="bb2-credit-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-credit-first-use-practice-input">答え（円）</label>
+<input id="bb2-credit-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>手数料は45,000×0.04＝1,800円です。45,000−1,800＝43,200円が入金されます。売上に記録した45,000円はそのままです。</p>
+</details>
+</section>
 
 ## 手を動かして確認する
 
@@ -242,24 +277,6 @@
 ## 店が売った額と、事業者が振り込む額を区別する
 
 カード販売32,000円の手数料が3％のとき、手数料は960円で<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-c3684ad975">差引入金額</a>は31,040円です。入金時に手数料を記録する条件なら、販売日にクレジット売掛金32,000円、入金日に普通預金31,040円と手数料960円を記録して全額の債権を消します。販売日に手数料をすでに記録した条件では、債権を差引額で記録済みなので入金時に手数料をもう一度書きません。
-
-<section class="guided-lesson" id="bb2-credit-first-use-practice" aria-labelledby="bb2-credit-first-use-practice-title">
-<h3 id="bb2-credit-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-credit-first-use-practice-prompt">販売額45,000円、手数料率4％。精算時に手数料を差し引いて振り込むとき、普通預金へ入る額は何円ですか。</p>
-<form data-guided-practice data-expected="43200" data-guided-hint="割合を使う対象はカード販売の全額です。" aria-labelledby="bb2-credit-first-use-practice-title" aria-describedby="bb2-credit-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-credit-first-use-practice-input">答え（円）</label>
-<input id="bb2-credit-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>手数料は45,000×0.04＝1,800円です。45,000−1,800＝43,200円が入金されます。売上に記録した45,000円はそのままです。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

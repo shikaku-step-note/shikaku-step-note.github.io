@@ -7,7 +7,7 @@
   "order": 17,
   "minutes": 91,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 4,
   "syllabus": [
     2
@@ -63,11 +63,11 @@
 }
 ---
 
-出張前に店から従業員へお金を渡すと、その日に現金は減ります。ただし、交通費などにいくら使ったかは、帰って領収書を見るまで分からないことがあります。使う理由や金額が確定するまで支払いを一時的に記録する資産の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-2ec4e742ea">仮払金</a>です。残ったお金を店が返してもらう場合も、この金額からいくら使ったかを先に確かめます。
+支払いは済んでも、費用の内訳が後で分かることがあります。出張前に交通費の概算を渡した場合、現金は渡した日に減ります。実際に使った額が分かるまでは、精算の対象となる支払額を資産の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-2ec4e742ea">仮払金</a>に記録しておきます。精算とは、領収書や返金の記録をもとに、何に使い、いくら残ったかを確定することです。
 
-一方、普通預金に入った金額は分かっても、何の代金か確認できないことがあります。内容が分かるまで受取額を一時的に記録する負債の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-11ae4a07fa">仮受金</a>です。理由が判明した日に行うのは、既に記録した入出金の分類を確定する作業です。その日に新たな返金や追加払いがあったときは、そこで初めて現金も動きます。
+預金の明細に入金があっても、何の代金かが分からないことがあります。その入金を一時的に記録する負債の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-11ae4a07fa">仮受金</a>です。相手や内容を確認したら、分かった額だけ、売掛金の回収など実際の取引に合う記録へ直します。入金は最初の日に記録しているので、預金をもう一度増やす必要はありません。
 
-仮勘定は、分からない内容を推測して売上や費用へ記録しないための科目です。ただし、内容が分かった後もそのままにする科目ではありません。ここでは現金・普通預金の実際の授受を伴う例を使い、消費税、源泉徴収、特別な出張日当規程などは考えません。
+出張費の確認日と残金の返金日がずれる場合も、同じ順に考えます。領収書が届いた日に費用が確定し、お金が戻った日に現金が増えます。以下の例では消費税、源泉徴収、出張日当は扱いません。
 
 <span id="objective-1"></span>
 ## 「まだ分からないこと」を特定する
@@ -95,6 +95,22 @@
 返却された現金5,400円を受取利息や売上にしてはいけません。自店が渡した資金の未使用分が戻っただけで、新たな収益ではありません。精算後の仮払金は0円、現金の純減額は30,000−5,400＝24,600円で、費用額と一致します。
 
 旅費交通費を30,000円で記録し、さらに精算時に24,600円を費用とすると、合計54,600円になってしまいます。概算と確定の二段階を分け、最終的に費用として残るのは実際に使った額だけと確かめましょう。
+
+### 領収書と返金の記録が、別の日に届いたときの残高
+
+10日に、出張をする従業員へ現金26,000円を渡しました。13日に交通費18,400円と通信費1,600円の領収書を受け取り、費用が確定しました。残りの現金6,000円は14日に返してもらいます。13日に分かったのは使い道です。現金を受け取るのは、翌日の14日になります。
+
+| 日と確認した資料 | 借方 | 貸方 | その日の記録後に残る仮払金 |
+| --- | --- | --- | ---: |
+| 10日・出金記録 | 仮払金26,000円 | 現金26,000円 | 26,000円 |
+| 13日・領収書 | 旅費交通費18,400円、通信費1,600円 | 仮払金20,000円 | 6,000円 |
+| 14日・返金の受取記録 | 現金6,000円 | 仮払金6,000円 | 0円 |
+
+13日の時点では、費用に充てた20,000円だけ仮払金を減らします。残高6,000円が意味するのは、従業員からこれから返してもらう現金です。14日の受取記録を見て現金を増やし、仮払金の最後の6,000円を消します。店から出た現金は差引き20,000円で、確定した費用の合計と一致します。
+
+13日に「領収書を確認した」と聞き、費用と同時に返金も記録した場合を考えます。現金と仮払金の残高は、実際とどのようにずれるでしょうか。
+
+<details><summary>現金を記録する日を確かめる</summary><p>13日の現金を6,000円多く、仮払金を6,000円少なく記録したことになります。領収書は費用の根拠であり、現金が戻った証ひょうは14日の受取記録です。13日の終わりに仮払金6,000円が残るのが正しい状態です。</p></details>
 
 <span id="objective-2"></span>
 ## 内容判明は過去の入出金の分類を確定させる
@@ -139,6 +155,24 @@
 概算30,000円を渡し、そのうち18,000円分の使途だけが旅費と判明し、残る12,000円は未精算という条件なら、旅費交通費18,000円／仮払金18,000円だけを記録します。未精算残高は12,000円です。現金返却の事実が書かれていないのに、現金12,000円を増やしてはいけません。
 
 月末の仮払金残高には、未精算の内容が対応します。未精算という理由があれば残ります。ただし、残高の相手先、渡した日、未確定の内容を確認し、内容が判明したら振り替えます。仮勘定の残高と、その残高が必要な理由を一組として確認しましょう。
+
+<section class="guided-lesson" id="bb2-temporary-first-use-practice" aria-labelledby="bb2-temporary-first-use-practice-title">
+<h3 id="bb2-temporary-first-use-practice-title">旅費が判明した後に残る仮払金を求める</h3>
+<p id="bb2-temporary-first-use-practice-prompt">仮払金19,000円のうち、旅費12,400円であったことが分かりました。この日はまだ余りの返金がありません。残る仮払金は何円ですか。</p>
+<form data-guided-practice data-expected="6600" data-guided-hint="理由が分かった分と、まだ現金を受け取っていない分を分けます。" aria-labelledby="bb2-temporary-first-use-practice-title" aria-describedby="bb2-temporary-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-temporary-first-use-practice-input">答え（円）</label>
+<input id="bb2-temporary-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>19,000−12,400＝6,600円です。旅費に移した分だけ仮払金が減り、返金を受けるまでは残りを仮払金に置きます。</p>
+</details>
+</section>
 
 ## 自力演習：二つの仮勘定を別々に追う
 
@@ -244,24 +278,6 @@
 ## 判明した額が一部なら、残りを仮勘定に残す
 
 明細で不明入金25,000円を見つけ、そのうち18,000円が売掛金の回収だったと確認しました。普通預金は入金日に既に増えています。判明日には仮受金を18,000円減らし、売掛金を同額減らします。残り7,000円は理由が分かるまで仮受金です。全額を売掛金と結び付けると、未確認の入金で別の債権を消すおそれがあります。
-
-<section class="guided-lesson" id="bb2-temporary-first-use-practice" aria-labelledby="bb2-temporary-first-use-practice-title">
-<h3 id="bb2-temporary-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-temporary-first-use-practice-prompt">仮払金19,000円のうち、旅費12,400円であったことが分かりました。この日はまだ余りの返金がありません。残る仮払金は何円ですか。</p>
-<form data-guided-practice data-expected="6600" data-guided-hint="理由が分かった分と、まだ現金を受け取っていない分を分けます。" aria-labelledby="bb2-temporary-first-use-practice-title" aria-describedby="bb2-temporary-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-temporary-first-use-practice-input">答え（円）</label>
-<input id="bb2-temporary-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>19,000−12,400＝6,600円です。旅費に移した分だけ仮払金が減り、返金を受けるまでは残りを仮払金に置きます。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

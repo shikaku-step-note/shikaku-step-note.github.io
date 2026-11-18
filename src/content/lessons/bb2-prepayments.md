@@ -7,7 +7,7 @@
   "order": 14,
   "minutes": 90,
   "sample": false,
-  "updated":"2026-11-16",
+  "updated":"2026-11-18",
   "unit": 3,
   "syllabus": [
     2
@@ -58,11 +58,11 @@
 }
 ---
 
-代金を先に払うと、買い手は現金を手放しますが、その分を後で商品代に使えるようになります。この権利を表す資産の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-42b1db7b39">前払金</a>です。先にお金を受け取った売り手には、約束した商品をあとで渡す義務が残ります。この義務は負債の勘定である<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d67c6a4961">前受金</a>に記録します。
+商品の注文時に内金を払うと、買い手は、渡したお金を受渡しの日に商品代へ充てる権利を持ちます。その権利を記録する資産の勘定が<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-42b1db7b39">前払金</a>です。同じ内金を受け取った売り手には、受け取った分について商品を引き渡す義務が残ります。売り手は、この義務を負債の<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d67c6a4961">前受金</a>に記録します。
 
-すでに渡したお金を代金の一部として使うことを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d8c217124f">充当</a>といいます。商品を何回かに分けて受け取る条件なら、どの回に前払い分をいくら使うかを確かめます。受け取った分の代金に充てた額だけ前払金を減らし、次の受渡しに使える分は資産として残します。
+受渡しの日に、先に渡した金額をその回の商品代の一部として使うことを<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-d8c217124f">充当</a>といいます。たとえば10,000円を先に払い、最初の納品分に4,000円を充てる取り決めなら、残りの6,000円は次の納品分に使えます。帳簿でも、使った4,000円だけ前払金を減らします。売り手の前受金も、同じ額だけ義務を果たしたとして減らします。
 
-このページは商品の仕入・販売に伴う代金の前渡し・前受けを扱います。家賃や保険料を期間に配分する前払費用、収益・費用の決算整理とは別の内容です。消費税や解約による違約金は考えず、前に受け渡した金額は最終の商品代金へ全額充当できる契約とします。
+以下では、商品の代金に充てる内金を扱います。前払いの家賃や保険料をどの期間の費用にするかは、期間の配分に関する別の処理です。計算では消費税と違約金を省き、内金は最終の商品代金に全額充てられるものとします。
 
 <span id="objective-1"></span>
 ## 先にお金が動いた時点では商品を受け渡していない
@@ -90,6 +90,21 @@
 <a class="lesson-term" data-lesson-term href="#lesson-term-glossary-6a6c7ab603">残代金</a>は100,000−30,000＝70,000円です。充当額と残代金の合計30,000＋70,000が仕入100,000円に一致します。12日の時点では新たな預金支出がないので、普通預金を再度減らしません。
 
 後日、買掛金70,000円を普通預金から支払うなら、買掛金70,000円／普通預金70,000円です。三つの仕訳を通じて、預金の支出合計は100,000円、仕入は100,000円、前払金と買掛金の残高はともに0円となります。
+
+### 買い手の前払金と売り手の前受金を同じ伝票で照合する
+
+買い手の井田店は、商品64,000円の注文時に売り手の菅原店へ16,000円を振り込みました。受渡しの日に商品の全額を記録し、16,000円は内金から充当、18,000円はその場で振込、30,000円は後日振込とします。費用や返品はないものとします。
+
+| 日と確認する金額 | 買い手・井田店 | 売り手・菅原店 |
+| --- | --- | --- |
+| 注文日に動いた16,000円 | 前払金が増え、普通預金が減る | 普通預金が増え、前受金が増える |
+| 受渡し日に充てた16,000円 | 前払金を減らす | 前受金を減らす |
+| 受渡し日に振り込んだ18,000円 | 普通預金を減らす | 普通預金を増やす |
+| 受渡し日に残った30,000円 | 買掛金を増やす | 売掛金を増やす |
+
+受渡し日の井田店は、借方に仕入64,000円を書き、貸方へ前払金16,000円・普通預金18,000円・買掛金30,000円を記録します。菅原店では、借方へ前受金16,000円・普通預金18,000円・売掛金30,000円を記録し、貸方を売上64,000円とします。商品代に充てた額と、その日に預金が動いた額は、同じ取引でも別々の欄に現れます。
+
+<details><summary>確認　受渡し日に18,000円の振込がなかった場合</summary><p>受渡し後に支払う額が18,000円増え、井田店の買掛金と菅原店の売掛金はともに48,000円になります。内金の充当額16,000円は同じです。16,000＋48,000＝64,000円と照合すると、預金が動かなくても商品の総額を記録できていることが分かります。</p></details>
 
 <span id="objective-2"></span>
 <figure id="bb2-prepayments-aid-1"><svg viewBox="0 0 340 144" width="340" height="144" role="img" aria-label="仕入100,000円のうち30,000円は支払い済みの前払金、70,000円は未払いの買掛金。納品日の普通預金は動かない。" style="display:block;max-width:100%;height:auto"><g fill="currentColor" font-size="14"><text x="10" y="22">納品日に記録する仕入　100,000円</text><rect x="10" y="35" width="96" height="22" rx="2" fill-opacity=".38"/><rect x="106" y="35" width="224" height="22" rx="2" fill-opacity=".72"/><text x="10" y="80">前払金 30,000円</text><text x="10" y="99" font-size="12">支払い済み</text><text x="151" y="80">買掛金 70,000円</text><text x="151" y="99" font-size="12">これから支払う</text><text x="10" y="130">納品日には普通預金が動かない</text></g></svg><figcaption>例題1の金額です。仕入は棒全体の100,000円。すでに払った部分と、まだ払っていない部分を足すと、仕入の金額に戻ります。</figcaption></figure>
@@ -138,6 +153,24 @@
 商品を受け渡す前に注文が取り消され、内金の全額をそのまま返す条件なら、もとの前払金・前受金を反対側へ記録して取り崩します。例えば前払金25,000円が普通預金へ全額返金されたら、普通預金25,000円／前払金25,000円です。新たな売上や受取利息は生じません。
 
 販売店が受け取っていた前受金25,000円を現金で全額返すなら、前受金25,000円／現金25,000円です。商品をまだ引き渡していないので、売上返品とは区別します。取消手数料や違約金がある場合は別の条件が必要ですが、この例題では考えません。
+
+<section class="guided-lesson" id="bb2-prepayments-first-use-practice" aria-labelledby="bb2-prepayments-first-use-practice-title">
+<h3 id="bb2-prepayments-first-use-practice-title">今回の納品に使わなかった前払金を求める</h3>
+<p id="bb2-prepayments-first-use-practice-prompt">前払金16,000円のうち、今回の納品に9,500円を充てました。費用負担や返金はありません。次回に使える前払金は何円ですか。</p>
+<form data-guided-practice data-expected="6500" data-guided-hint="全額を払った日と、そのうち何円使った日かを分けて考えます。" aria-labelledby="bb2-prepayments-first-use-practice-title" aria-describedby="bb2-prepayments-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-prepayments-first-use-practice-input">答え（円）</label>
+<input id="bb2-prepayments-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>16,000−9,500＝6,500円です。今回は9,500円分の権利を使い、残りの権利は次回の納品まで残ります。</p>
+</details>
+</section>
 
 ## 仕訳を自分で組み立てる
 
@@ -232,24 +265,6 @@
 ## 一部を受け取った日に、権利のうち使った額だけを減らす
 
 18,000円を前払いし、最初に30,000円分の商品を受け取りました。そのうち10,000円だけを前払金から充当する条件なら、仕入は30,000円、前払金の減少は10,000円です。残り20,000円を後で払う約束なら買掛金が増えます。次回の代金に使える前払金8,000円は残るので、前払金の全額を消す仕訳にしてはいけません。
-
-<section class="guided-lesson" id="bb2-prepayments-first-use-practice" aria-labelledby="bb2-prepayments-first-use-practice-title">
-<h3 id="bb2-prepayments-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-prepayments-first-use-practice-prompt">前払金16,000円のうち、今回の納品に9,500円を充てました。費用負担や返金はありません。次回に使える前払金は何円ですか。</p>
-<form data-guided-practice data-expected="6500" data-guided-hint="全額を払った日と、そのうち何円使った日かを分けて考えます。" aria-labelledby="bb2-prepayments-first-use-practice-title" aria-describedby="bb2-prepayments-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-prepayments-first-use-practice-input">答え（円）</label>
-<input id="bb2-prepayments-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>16,000−9,500＝6,500円です。今回は9,500円分の権利を使い、残りの権利は次回の納品まで残ります。</p>
-</details>
-</section>
 
 ## 参照した公式範囲
 

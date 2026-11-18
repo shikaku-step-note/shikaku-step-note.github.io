@@ -2,7 +2,7 @@
 {
   "stableId":"bb2-integration","qualification":"boki-beginner","title":"月次総合演習で取引・試算表・損益をつなぐ",
   "description":"一か月の一貫した取引資料から、仕訳、月末残高、試算表、当月損益を作ります。商品原価の条件を明示し、元入・引出・減価償却を含む集計と、貸借一致でも残る誤りを診断します。",
-  "order": 27,"minutes":100,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-16",
+  "order": 28,"minutes":100,"sample":false,"unit":6,"subject":"basics","syllabus":[3],"scopeLabel":"2026年度適用範囲に基づく独自教材（2027年3月31日までの範囲）","updated":"2026-11-18",
   "objectives":["一貫した月初残高と当月取引から月末試算表を作成する","元入・引出・元本返済と収益費用を分けて月次損益を求める","誤りの原因を診断し、残高と損益への影響を説明する"],
   "prerequisite":"初級コースの期中取引と、三種類の試算表、月次残高の読取りまでを学んでから取り組んでください。",
   "keywords":["月次総合演習","残高試算表","貸借一致","誤りの診断","当月損益","元入と引出"],
@@ -22,9 +22,23 @@
 
 月初の残高は、前の月の取引が終わった時点で残っていた財産や支払義務を、次の月に引き継いだ金額です。そこに当月の取引を加えると、月末に残っているものが分かります。たとえば、前月から受け取り待ちだった代金を当月に振込で受け取った場合、普通預金が増え、代金を請求できる権利である売掛金が減ります。この処理で月末の二つの残高は変わりますが、以前の売上を当月の売上として記録することはありません。
 
-総合演習では、まず月初残高と取引を区別して科目別に記録し、月末に残る金額を残高試算表へ集めます。その後、当月の収益と費用を選んで利益を求めます。店主から入った元手や家計への持出しも、月末に店に残る財産には影響します。利益を確かめる段階では、こうした元手の変化を、商売で生じた利益と分けて読みます。
+[前月からの残高の引継ぎ](../bb2-opening-balances/)を使い、まず月初残高と取引を区別して科目別に記録し、月末に残る金額を残高試算表へ集めます。その後、当月の収益と費用を選んで利益を求めます。店主から入った元手や家計への持出しも、月末に店に残る財産には影響します。利益を確かめる段階では、こうした元手の変化を、商売で生じた利益と分けて読みます。
 
 金額はすべて円です。消費税は考慮しません。月初・月末の商品残高はいずれも0円で、当月の正味仕入商品はすべて当月に販売されています。したがって、この演習では<a class="lesson-term" data-lesson-term href="#lesson-term-glossary-ff31449d1f">正味仕入高</a>を当月の商品原価として使えます。ほかの在庫条件の問題に、この関係を無条件で当てはめないでください。年末の締切仕訳や決算整理は行いません。
+
+## 一件の仕訳を、月末の表と当月の利益の両方から確かめる
+
+月初の普通預金60,000円、売掛金12,000円、借入金20,000円を引き継ぎ、ほかに資産・負債はないとします。月初の資産と負債の差は52,000円です。当月に起きた三件を、貸借の記録と利益への影響の双方から整理します。
+
+| 当月の証ひょう | 借方と貸方 | 普通預金の増減 | 利益への影響 |
+| --- | --- | ---: | ---: |
+| 前月の売掛金12,000円が入金 | 普通預金／売掛金 各12,000円 | ＋12,000円 | 0円 |
+| 借入元本5,000円と利息500円を振込 | 借入金5,000円・支払利息500円／普通預金5,500円 | −5,500円 | −500円 |
+| 店主が事業資金10,000円を追加 | 普通預金／資本金 各10,000円 | ＋10,000円 | 0円 |
+
+入出金の列を使うと、月末の普通預金は76,500円になります。売掛金は0円、借入金は15,000円なので、月末の資産と負債の差は61,500円です。月初の52,000円から増えた9,500円には元入れ10,000円が含まれています。これを除くと、この三件による利益への影響は−500円です。支払利息だけが当月の費用という右端の判断と一致します。
+
+もし元本5,000円まで支払利息に入れたら、普通預金の残高も借方と貸方の合計も変わりません。ところが借入金は20,000円のまま残り、費用が5,000円多くなります。返済明細にある元本の消込みと、帳簿に残った借入金を照合すれば、現金・預金の残高だけでは見つからない誤りを確かめられます。
 
 <span id="objective-1"></span>
 
@@ -147,6 +161,35 @@
 
 計算が遅いときは、金額を一つずつ頭で覚えず、取引番号を各勘定の明細へ添えます。売掛金には4・5・7、買掛金には2・6・8というように番号を残せば、漏れや重複を探しやすくなります。途中の数字を消し続けるより、訂正の理由が追える書き方を練習してください。
 
+まず月末残高だけを求め、次に解説で利益への影響と照らし合わせます。
+
+<section class="guided-lesson" id="bb2-integration-first-use-practice" aria-labelledby="bb2-integration-first-use-practice-title">
+<h3 id="bb2-integration-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
+<p id="bb2-integration-first-use-practice-prompt">普通預金の月初残高は62,000円です。売掛金22,400円を回収し、買掛金13,300円と当月の振込手数料700円を預金から払いました。月末の普通預金残高は何円ですか。</p>
+<form data-guided-practice data-expected="70400" data-guided-hint="預金残高を求めるなら、当月の利益に入るかどうかにかかわらず入出金を反映します。" aria-labelledby="bb2-integration-first-use-practice-title" aria-describedby="bb2-integration-first-use-practice-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="bb2-integration-first-use-practice-input">答え（円）</label>
+<input id="bb2-integration-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>62,000＋22,400−13,300−700＝70,400円です。売掛金の回収と買掛金の支払いは今月の利益に算入せず、振込手数料だけを今月の費用に記録します。</p>
+</details>
+</section>
+
+### 条件を変えて確かめる
+
+前段の例で、500円の利息を予定どおり支払わず、当月に負担する利息として未払いで記録する条件に変えます。普通預金の月末残高、資産と負債の差、当月の利益への影響はどう変わりますか。
+
+<details>
+<summary>解答と計算の順を確認する</summary>
+<p>元本5,000円だけを振り込むので、預金の月末残高は77,000円です。負債は借入金15,000円と未払分500円、計15,500円。差は61,500円のままです。支払日は変わっても当月の利息の負担は500円なので、当月の利益への影響も−500円のままです。</p>
+</details>
+
 ## 自分で解く：条件が変わったら、影響する項目だけを変える
 
 上の正しい15取引の資料を基準に、次の変更をそれぞれ独立して考えます。
@@ -268,21 +311,3 @@
 </table>
 </div>
 </figure>
-
-<section class="guided-lesson" id="bb2-integration-first-use-practice" aria-labelledby="bb2-integration-first-use-practice-title">
-<h3 id="bb2-integration-first-use-practice-title">途中で確認　資料から求める金額を決める</h3>
-<p id="bb2-integration-first-use-practice-prompt">普通預金の月初残高は62,000円です。売掛金22,400円を回収し、買掛金13,300円と当月の振込手数料700円を預金から払いました。月末の普通預金残高は何円ですか。</p>
-<form data-guided-practice data-expected="70400" data-guided-hint="預金残高を求めるなら、当月の利益に入るかどうかにかかわらず入出金を反映します。" aria-labelledby="bb2-integration-first-use-practice-title" aria-describedby="bb2-integration-first-use-practice-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="bb2-integration-first-use-practice-input">答え（円）</label>
-<input id="bb2-integration-first-use-practice-input" name="answer" type="text" inputmode="numeric" class="guided-number" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>62,000＋22,400−13,300−700＝70,400円です。売掛金の回収と買掛金の支払いは今月の利益に算入せず、振込手数料だけを今月の費用に記録します。</p>
-</details>
-</section>
