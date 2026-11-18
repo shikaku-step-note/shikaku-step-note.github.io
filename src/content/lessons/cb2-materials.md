@@ -1,12 +1,12 @@
 ---
-{"stableId":"cb2-materials","qualification":"cost-beginner","title":"材料消費額の計算｜材料元帳・払出し・返却","description":"材料元帳と払出票を照合して、材料の消費量・消費額・月末残高を求めます。未使用返却と製品間の付け替えの違いも、数字を使って確かめます。","order":9,"minutes":92,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["材料の数量のつながりから消費量と月末残高を求める","指定された単価を用いて材料消費額と残存額を計算する","材料消費額を製品別の直接材料費と共通の間接材料費へ集計する"],"prerequisite":"購入と消費の違い、直接費と間接費の分類を確認してください。単価と数量の掛け算を使います。","keywords":["受入数量","払出数量","材料消費額","材料元帳","月初材料","月末材料","消費単価","払出票","材料消費額の計算","材料元帳の読み方","材料消費額 計算"],"glossary":[{"term":"受入数量","definition":"対象期間に倉庫等へ受け入れた材料の数量"},{"term":"払出数量","definition":"倉庫等から製造などへ払い出した材料の数量"},{"term":"材料消費額","definition":"製造等で消費した材料の数量を所定の単価で評価した金額"},{"term":"材料元帳","definition":"材料の種類ごとに受入れ・払出し・残高などを記録する帳簿"},{"term":"月初材料","definition":"対象月の初めに残っていた未消費の材料"},{"term":"月末材料","definition":"対象月の終わりに残っている未消費の材料"},{"term":"消費単価","definition":"材料等の消費量を金額に換算するために用いる1単位当たりの金額"}],"inlineGlossary":[{"id":"materials-ledger","term":"材料元帳","definition":"材料の種類別に受入れ、払出し、返却、残高などを記録する補助簿。"},{"id":"consumption-price","term":"消費単価","definition":"消費した量を金額に直すときに使う、一単位当たりの材料価格。"},{"id":"net-issues","term":"正味の払出量","definition":"現場へ払い出した量から、現場から倉庫に戻した量を引いたもの。"}]}
+{"stableId":"cb2-materials","qualification":"cost-beginner","title":"材料消費額の計算｜材料元帳・払出し・返却","description":"材料元帳と払出票を照合して、材料の消費量・消費額・月末残高を求めます。未使用返却と製品間の付け替えの違いも、数字を使って確かめます。","order":9,"minutes":92,"sample":false,"updated":"2026-11-18","unit":2,"syllabus":[1],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["材料の数量のつながりから消費量と月末残高を求める","指定された単価を用いて材料消費額と残存額を計算する","材料消費額を製品別の直接材料費と共通の間接材料費へ集計する"],"prerequisite":"購入と消費の違い、直接費と間接費の分類を確認してください。単価と数量の掛け算を使います。","keywords":["受入数量","払出数量","材料消費額","材料元帳","月初材料","月末材料","消費単価","払出票","材料消費額の計算","材料元帳の読み方","材料消費額 計算"],"glossary":[{"term":"受入数量","definition":"対象期間に倉庫等へ受け入れた材料の数量"},{"term":"払出数量","definition":"倉庫等から製造などへ払い出した材料の数量"},{"term":"材料消費額","definition":"製造等で消費した材料の数量を所定の単価で評価した金額"},{"term":"材料元帳","definition":"材料の種類ごとに受入れ・払出し・残高などを記録する帳簿"},{"term":"月初材料","definition":"対象月の初めに残っていた未消費の材料"},{"term":"月末材料","definition":"対象月の終わりに残っている未消費の材料"},{"term":"消費単価","definition":"材料等の消費量を金額に換算するために用いる1単位当たりの金額"}],"inlineGlossary":[{"id":"materials-ledger","term":"材料元帳","definition":"材料の種類別に受入れ、払出し、返却、残高などを記録する補助簿。"},{"id":"consumption-price","term":"消費単価","definition":"消費した量を金額に直すときに使う、一単位当たりの材料価格。"},{"id":"net-issues","term":"正味の払出量","definition":"現場へ払い出した量から、現場から倉庫に戻した量を引いたもの。"}]}
 ---
 
 <span id="first-reading"></span>
 
-ある材料を使った量は、請求書の購入量だけからは決まりません。<a class="lesson-term" data-lesson-term href="#lesson-term-materials-ledger">材料元帳</a>で受入れと倉庫からの払出しを追い、現場から戻った分を差し引いて<a class="lesson-term" data-lesson-term href="#lesson-term-net-issues">正味の払出量</a>を求めます。使った量に資料が指定する<a class="lesson-term" data-lesson-term href="#lesson-term-consumption-price">消費単価</a>を掛けて、製造のために消費した金額を求めます。
+材料費を計算するには、製造に使った量と、その量を金額へ換算する単価が必要です。月の初めにあった量、入荷した量、倉庫から出した量、戻った量は、材料ごとの記録である<a class="lesson-term" data-lesson-term href="#lesson-term-materials-ledger">材料元帳</a>で確かめます。
 
-材料費は、製造などで使った材料を金額に直した原価です。計算には、消費した数量と、その消費分に当てる単価が必要になります。まず、材料元帳で月初から月末までの数量をたどり、受け入れた量と使った量を区別します。次に、問題で指定された単価で消費額と残高を計算し、製品ごとに分かる金額を対応する原価へ集計します。
+倉庫から出した量から、使わずに倉庫へ戻した量を差し引くと、<a class="lesson-term" data-lesson-term href="#lesson-term-net-issues">正味の払出量</a>になります。現場に未使用の材料が翌月へ残る場合は、その増減も消費量に反映します。次に、資料が指定する<a class="lesson-term" data-lesson-term href="#lesson-term-consumption-price">消費単価</a>を掛けて消費額を求め、製品の使用分と工場共通の使用分へ集計します。
 
 原価の対象や直接費・間接費の判断を先に確認したい場合は、[原価の考え方](../cb2-purpose/)と[直接費・間接費の区別](../cb2-traceability/)を参照してください。
 
@@ -179,6 +179,23 @@
 
 倉庫の月末残高は現物と同じ16kgで、16×450＝7,200円です。利用可能額36,000円は、消費28,800円と月末残高7,200円に分かれます。倉庫の数量が一致したかと、使用先ごとの金額を証拠から説明できるかの両方を確かめて、照合を終えます。
 
+<section class="guided-lesson" id="guided-materials" aria-labelledby="guided-materials-title">
+<h3 id="guided-materials-title">途中で確認　返却と付け替えを区別する</h3>
+<p id="guided-materials-prompt">月初12kg、当月入庫48kgです。Aに22kgを出し、未使用の4kgが倉庫に戻りました。Bへ出した30kgのうち2kgは工場共通の使用に付け替えます。Bと共通への払出分はすべて使用済みです。ほかに出入りはありません。倉庫の月末残高は何kgですか。</p>
+<form data-guided-practice data-expected="12" data-guided-hint="共通への付け替えでは材料が倉庫へ戻りません。在庫に戻るのは未使用で返却した分です。" aria-labelledby="guided-materials-title" aria-describedby="guided-materials-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-materials-input">答え（kg）</label> <input id="guided-materials-input" name="answer" aria-describedby="guided-materials-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>在庫は12＋48−22＋4−30＝12kg。Bから共通への付け替えは、倉庫を出た30kgの使い道を変更するだけです。</p>
+</details>
+</section>
+
 ### 不明なのが購入量のときも、同じ関係式を使う
 
 月初、受入れ、消費、月末の四つの関係を理解すると、どこが空欄でも逆に求められます。式を新しく覚えるより、「入ってきた総量と行き先の総量が等しい」と考えてください。特に購入量を問う問題では、消費量と月末残高の合計から、月初にすでにあった分を引きます。
@@ -204,22 +221,26 @@
 
 たとえば、当月受入済みの材料が100kg、来月受入予定が20kgで、予定分の代金も当月払いという資料なら、当月の受入数量は100kgです。120kgへ足すと、まだない材料を当月使えることにしてしまいます。資料が「当月購入」とだけ書くときは、各設問の受入条件に従います。このコースの例では数量の関係を明確にするため、受入れと他の増減の有無を示しています。
 
-<section class="guided-lesson" id="guided-materials" aria-labelledby="guided-materials-title">
-<h3 id="guided-materials-title">途中で確認　返却と付け替えを区別する</h3>
-<p id="guided-materials-prompt">月初12kg、当月入庫48kgです。Aに22kgを出し、未使用の4kgが倉庫に戻りました。Bへ出した30kgのうち2kgは工場共通の使用に付け替えます。Bと共通への払出分はすべて使用済みです。ほかに出入りはありません。倉庫の月末残高は何kgですか。</p>
-<form data-guided-practice data-expected="12" data-guided-hint="共通への付け替えでは材料が倉庫へ戻りません。在庫に戻るのは未使用で返却した分です。" aria-labelledby="guided-materials-title" aria-describedby="guided-materials-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="guided-materials-input">答え（kg）</label> <input id="guided-materials-input" name="answer" aria-describedby="guided-materials-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
+<span id="worked-transfer"></span>
+
+### 例題　仕入先に返品した後の平均単価で、消費額を確かめる
+
+月初に15kgを1kg当たり200円で持っていました。当月は同じ材料を25kg、1kg当たり340円で仕入れ、そのうち5kgを仕入先へ返品しました。返品分の取得額は仕入時の単価で取り消し、残った材料の金額の合計を数量の合計で割った平均単価を使うとします。
+
+| 平均単価を出すための資料 | 数量 | 金額 |
+| --- | ---: | ---: |
+| 月初の残り | 15kg | 3,000円 |
+| 仕入先に戻さなかった当月分 | 20kg | 6,800円 |
+| 合計 | 35kg | 9,800円 |
+
+平均単価は9,800円÷35kg＝280円/kgです。現場へ20kg出し、使わなかった3kgが倉庫へ戻ったとき、現場の月初・月末に未使用分がなければ消費量は17kgです。倉庫への返却は現場への払出しを取り消すので、仕入単価340円で改めて購入したことにはなりません。消費額は17kg×280円＝4,760円、月末の残り18kgは5,040円で、二つの合計は9,800円に戻ります。
+
+仕入先へ返品した量が10kgだった場合、平均単価はいくらになりますか。17kgを消費したときの金額も求めてください。
+
 <details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>在庫は12＋48−22＋4−30＝12kg。Bから共通への付け替えは、倉庫を出た30kgの使い道を変更するだけです。</p>
+<summary>平均単価と消費額の計算を読む</summary>
+<p>仕入分は15kg×340円＝5,100円、月初と合わせて30kgで8,100円です。平均単価は270円になり、同じ17kgを消費した場合の消費額は4,590円、残る13kgの金額は3,510円です。</p>
 </details>
-</section>
 
 ## 数量の式から、自分で金額へ進む
 

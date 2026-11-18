@@ -6,14 +6,14 @@
   "description": "利益ゼロになる販売数量と売上高を計算します。貢献利益の額・割合を使い分け、理論上の値と実際に売れる整数の数量を照合します。",
   "order": 24,
   "unit": 4,
-  "minutes": 87,
+  "minutes": 92,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "objectives": [
     "貢献利益と固定費が等しくなる損益分岐点を求める",
     "数量と売上高の計算を使い分けて結果を検算する",
@@ -82,11 +82,9 @@
 
 <span id="first-reading"></span>
 
-売るたびに変動費を回収した後、固定費に充てられる<a class="lesson-term" data-lesson-term href="#lesson-term-unit-contribution">一個当たり貢献利益</a>が残ります。その合計が固定費と同じになる水準が<a class="lesson-term" data-lesson-term href="#lesson-term-break-even">損益分岐点</a>です。理論上の数量に端数があり、実際には一個ずつしか売れない場合は、赤字にならない<a class="lesson-term" data-lesson-term href="#lesson-term-minimum-units">最小販売数量</a>を別に求めます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-break-even">損益分岐点</a>は、売上が変動費と固定費をちょうどまかない、営業利益が0円になる販売水準です。一個売るごとに受け取る売価から、その一個の変動費を差し引いた金額が<a class="lesson-term" data-lesson-term href="#lesson-term-unit-contribution">一個当たり貢献利益</a>です。固定費をその金額で割れば、固定費を回収するのに何個分が必要か分かります。
 
-営業利益は「一個当たりの貢献利益×販売数量−固定費」で求めました。この式で利益を0にすると、売上高がすべての費用をちょうどまかなう数量が求まります。これが損益分岐点です。固定費を何個分の貢献利益で回収できるか、と読めば、計算式を丸暗記せずに使えます。
-
-対象期間は月単位、単価と固定費は一定、生産と販売の数量は同じで在庫の増減はないものとします。また、ここで黒字というときは営業利益が正、赤字でないというときは営業利益が0以上です。この二つは、整数で売る場合の答えが異なることがあります。
+製品を整数の個数でしか売れないときは、計算で求めた数量と、赤字を避けられる<a class="lesson-term" data-lesson-term href="#lesson-term-minimum-units">最小販売数量</a>を分けます。分岐点が端数なら、前後の二つの整数を利益の式に入れてください。そうすると、少ないほうでは固定費が残り、多いほうでは回収できるかを確認できます。以下の基本例では単価と固定費は月内で一定、在庫の増減はなく、赤字でないとは営業利益が0円以上であることを指します。
 
 <span id="objective-1"></span>
 
@@ -203,6 +201,68 @@
 **手順3　答えを損益の式へ戻す。** 利益がちょうど0になる理論上の数量は132,000÷450＝293と3分の1個で、損益分岐点売上高は352,000円です。整数個でしか売れない条件では、293個の営業利益は−150円、294個では300円となり、赤字を出さない最小数量は294個です。このときの売上高352,800円は、理論上の分岐点売上高とは区別します。
 
 二か月の差を使える根拠は、数量以外の条件がそろっていることです。途中で売価が変わったり、販売量に合わせて追加の固定費が発生したりすると、54,000円の差にはその影響も含まれます。二か月分の数字だけで単位貢献利益を割り出す前に、費用と売価の前提を読み取ります。
+
+<span id="break-even-transfer-case"></span>
+
+## 固定費の契約が変わる場合は、答えの数量を条件に戻す
+
+品物を一個売ると売価1,100円から単位変動費650円を回収でき、一個450円が残ります。月500個までは固定費240,000円、501個以上の月は追加契約が必要で330,000円です。どちらでも一個当たり450円の貢献利益は同じです。
+
+<figure id="break-even-transfer-worksheet">
+<figcaption id="break-even-transfer-worksheet-caption">分岐点を出したときに使った固定費が、答えの数量でも適用されるか確認します。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="break-even-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">条件</th><th scope="col">固定費÷450円</th><th scope="col">求めた数量を当てはめた結果</th></tr></thead>
+<tbody>
+<tr><th scope="row">月500個まで</th><td>約533.33個</td><td>500個を超えるので、この契約の分岐点にできない</td></tr>
+<tr><th scope="row">月501個以上</th><td>約733.33個</td><td>501個以上なので、この契約で使用できる</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+月500個までの範囲では、最も多い500個を売っても450円×500個−240,000円＝−15,000円です。整数の最小販売数量は、もう一つの契約を使う734個。733個なら営業損失150円、734個なら営業利益300円になります。「小さいほうの固定費で割る」と533.33個が出ますが、その数量は小さい固定費で営業できる範囲に入りません。
+
+<figure id="break-even-capacity-graph">
+<svg viewBox="0 0 440 260" width="440" height="260" style="max-width:100%;height:auto" role="img" aria-labelledby="break-even-capacity-title break-even-capacity-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="break-even-capacity-title">契約が切り替わるときの販売数量と営業利益</title>
+<desc id="break-even-capacity-desc">500個では損失15,000円。501個で契約が切り替わると損失104,550円に増え、そこから販売数が増えるにつれ赤字が減ります。利益がゼロになる線と交わるのは733個と734個の間です。</desc>
+<g fill="none" stroke="currentColor" stroke-width="1">
+<path d="M62 45V226H402"/>
+<path d="M62 113H402" stroke-dasharray="4 3" opacity=".62"/>
+<path d="M142 55V226" stroke-dasharray="2 4" opacity=".65"/>
+<path d="M142 128V218" stroke-dasharray="3 4" opacity=".55"/>
+</g>
+<g fill="none" stroke="var(--teal, currentColor)" stroke-width="3.5" stroke-linecap="round">
+<path d="M62 173L142 128"/>
+<path d="M143 218L382 83"/>
+</g>
+<g fill="currentColor">
+<circle cx="142" cy="128" r="4"/>
+<circle cx="143" cy="218" r="4"/>
+<circle cx="329" cy="113" r="4"/>
+</g>
+<g fill="currentColor" font-size="15" font-family="sans-serif">
+<text x="16" y="22">営業利益</text>
+<text x="51" y="118" text-anchor="end">0円</text>
+<text x="106" y="46">契約の切替</text>
+<text x="158" y="144">500個の利益</text>
+<text x="160" y="210">501個の利益</text>
+<text x="335" y="132">分岐点</text>
+<text x="57" y="246">400</text>
+<text x="128" y="246">500</text>
+<text x="382" y="246" text-anchor="middle">800個</text>
+</g>
+</svg>
+<figcaption>販売数量と営業利益の関係（400〜800個）。縦の点線は契約の境目です。追加の固定費がかかると、利益の線は501個で下がります。そこから一個ずつ増やし、利益0円の線を越える最初の整数が734個です。</figcaption>
+</figure>
+
+もし設備の都合で月700個までしか売れないなら、分岐点の計算が合っていても、この条件で赤字を避けられますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>避けられません。501個以上の契約となる範囲で最多の700個を売っても、450円×700個−330,000円＝−15,000円です。分岐点が求められることと、その数量を実際に売れることは別の判断です。</p>
+</details>
 
 <section class="guided-lesson" id="guided-break-even" aria-labelledby="guided-break-even-title">
 <h3 id="guided-break-even-title">途中で確認　整数で赤字を避けられる数量を求める</h3>

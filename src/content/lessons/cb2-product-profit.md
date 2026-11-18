@@ -2,7 +2,7 @@
 {
   "stableId":"cb2-product-profit","qualification":"cost-beginner","title":"製品別利益の計算｜配賦と営業利益の逆算",
   "description":"製品ごとの売上、売上原価、販管費を集計します。配賦基準で利益が変わる理由と、営業利益から売上原価・在庫を逆算する方法を学びます。",
-  "order":18,"minutes":102,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-16",
+  "order":18,"minutes":107,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-18",
   "objectives":["二製品の直接費・配賦費から製造原価と単位原価を組み立てる","数量と在庫条件を使い、製品別の売上原価・売上総利益・営業利益を計算する","配賦基準と直接把握できる費用を区別し、全体との一致と利益比較の条件を説明する"],
   "prerequisite":"直課と配賦、仕掛品・製品の原価の流れ、売上総利益と営業利益を求める課を終えてください。",
   "keywords":["製品別損益","原価明細","共通販管費","配賦基準","製品別営業利益","検算","製品別利益の計算"],
@@ -37,11 +37,9 @@
 
 <span id="first-reading"></span>
 
-製品ごとに販売した分の原価を売上から引き、販売や管理の費用も対応させると<a class="lesson-term" data-lesson-term href="#lesson-term-product-profit">製品別営業利益</a>が求まります。その製品のために使った額を先に集めてから、<a class="lesson-term" data-lesson-term href="#lesson-term-shared-sga">共通販管費</a>を問題の基準で分けます。<a class="lesson-term" data-lesson-term href="#lesson-term-revenue-share">売上高比</a>が指定されているなら、製品ごとの売上を合計売上で割って負担割合を決めます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-product-profit">製品別営業利益</a>を求めるには、製品ごとの売上高と、その製品に対応する原価や販売・管理費を集めます。材料の払出額や担当者の作業時間から製品を特定できれば、その製品に直接集められます。複数製品のために使った製造費については、問題が指定する割合で配賦します。売れた品の分は売上原価、残った品の分は在庫となるので、製品原価を集め終えたら完成数と販売数を確かめます。
 
-二つの製品を同じ工場で作ると、材料や作業は製品ごとに記録できても、共通の機械や場所の費用が残ります。また、製造した分がすべて販売されるとは限りません。製品ごとの利益を求めるには、直課・配賦・在庫・販売という段階を、一つの資料の中で順につなぐ必要があります。
-
-最初から空欄を上から埋めるより、求める利益までの道筋を作りましょう。材料と労務の計算、間接費の配賦、完成品の単位原価、売上原価、売上総利益、販管費、営業利益の順です。完成していない製品がある場合は、単位原価を出す前に仕掛品の条件も反映します。
+販売・管理の費用も、特定の製品に対応する額を先に集めます。残った<a class="lesson-term" data-lesson-term href="#lesson-term-shared-sga">共通販管費</a>を<a class="lesson-term" data-lesson-term href="#lesson-term-revenue-share">売上高比</a>で配賦するなら、製品別の売上高が全体の何割かを計算し、その割合で負担させます。配った販管費はこの章の条件では当月に全額を差し引きます。原価の一部が在庫に残る製造費との違いにも注意しましょう。
 
 <span id="objective-1"></span>
 
@@ -193,6 +191,36 @@ Aの売上総利益70,000円、B25,000円、各製品に直接対応する販管
 製品別の販管費を出すときに初めて共通販管費の配賦比を使います。全体の売上原価を復元する段階では、共通販管費の総額が分かれば十分です。逆算後は、販売可能原価240,000円が売上原価159,000円と月末製品原価81,000円に分かれ、製品別営業利益の合計も資料の64,000円に戻ることを確かめます。
 
 月初製品と当月完成品で単位原価が異なる問題では、販売した製品にいくらの原価を割り当てるかで数量への逆算も変わります。その場合は、指定された評価方法と追加資料を確認してから数量を求めます。
+
+<span id="product-profit-transfer-case"></span>
+
+## 製造間接費の配り方が、当月の全体利益にも影響する場合
+
+製品Aは当月完成分をすべて販売し、Bは同じ単位原価の当月完成分の半分を販売しました。月初・月末仕掛品と月初製品はなく、他の金額は同じとします。共通製造費24,000円の配賦方法を比べると、製品ごとに配った額のうち当月に売上原価へ移る部分が変わります。
+
+<figure id="product-profit-transfer-worksheet">
+<figcaption id="product-profit-transfer-worksheet-caption">製造費の合計は両案で等しく、今月の販売分と翌月以降に持ち越す分の内訳が変わります。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="product-profit-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">共通製造費の動き</th><th scope="col">配賦案1</th><th scope="col">配賦案2</th></tr></thead>
+<tbody>
+<tr><th scope="row">製品Aへ配賦した額（全額販売）</th><td>12,000円</td><td>18,000円</td></tr>
+<tr><th scope="row">製品Bへ配賦した額（半分を販売）</th><td>12,000円</td><td>6,000円</td></tr>
+<tr><th scope="row">その月の売上原価に含める額</th><td>18,000円</td><td>21,000円</td></tr>
+<tr><th scope="row">月末製品に残す額</th><td>6,000円</td><td>3,000円</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+案2では、全額売れたAへ移る額が6,000円増えます。Bは配賦が6,000円減りますが、売れたのは半分なので、当月の売上原価が減るのは3,000円です。差し引き、売上原価は3,000円増え、工場全体の当月営業利益も3,000円減ります。全額を当月の費用とする共通販管費を製品別に配り直した場合には、このような製品在庫への影響はありません。
+
+Bも全量が当月に販売されていた場合、配り方を変えると工場全体の当月営業利益は変わりますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>工場全体では、どちらの案でも24,000円の全額が当月の売上原価へ移ります。売上と他の費用が同じなので、工場全体の当月営業利益は変わりません。ただし、製品別の利益の内訳は変わります。</p>
+</details>
 
 <section class="guided-lesson" id="guided-product-profit" aria-labelledby="guided-product-profit-title">
 <h3 id="guided-product-profit-title">途中で確認　営業利益から月末製品の額まで逆算する</h3>

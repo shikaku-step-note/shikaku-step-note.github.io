@@ -6,14 +6,14 @@
   "description": "目標利益に必要な数量・売価・費用上限を逆算します。売価に連動する手数料がある場合も、求めたい金額に合わせて式を立てます。",
   "order": 25,
   "unit": 4,
-  "minutes": 92,
+  "minutes": 97,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "objectives": [
     "目標営業利益を達成する販売数量・売上高を求める",
     "数量を固定したときの必要売価や費用上限を逆算する",
@@ -82,11 +82,9 @@
 
 <span id="first-reading"></span>
 
-固定費を回収しただけでは利益は残りません。計画した<a class="lesson-term" data-lesson-term href="#lesson-term-target-profit">目標利益</a>を得るには、固定費とその利益を足した<a class="lesson-term" data-lesson-term href="#lesson-term-required-contribution">必要な貢献利益</a>を売上から残す必要があります。数量を動かせない場合は、一個当たりでいくら残すかを先に計算し、変動費を加えて<a class="lesson-term" data-lesson-term href="#lesson-term-required-price">必要売価</a>を求めます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-target-profit">目標利益</a>を得るには、販売で得た貢献利益から固定費を負担した後も、目標の額が残っていなければなりません。そのため<a class="lesson-term" data-lesson-term href="#lesson-term-required-contribution">必要な貢献利益</a>は、固定費と目標利益を合わせた金額になります。分岐点を求める場合は目標利益が0円なので、固定費だけを回収できる数量を出します。
 
-損益分岐点では固定費を回収して利益が0になりました。目標利益も得たい場合は、固定費に加え、その利益分の貢献利益が必要です。式に新しい暗記項目を足すより、「固定費をまかなった後にいくら残すか」を考えると、数量・売価・費用の逆算に使えます。
-
-以下は在庫の増減がなく、売価・単位変動費・固定費が一定のCVPモデルです。目標は営業利益で、税金・利息などは扱いません。計算上の必要値を求めることと、需要や設備の面で実行できるかを判断することは分けて考えます。
+何を変更できるかによって、逆算の最後の段階は変わります。販売数量を増やせるなら、一個当たりの貢献利益で必要な総額を割ります。数量が決まっているなら、まず一個当たりいくらを残す必要があるかを求め、変動費もまかなえる<a class="lesson-term" data-lesson-term href="#lesson-term-required-price">必要売価</a>を決めます。以下は在庫が増減しない月の営業利益の計画です。価格に応じて手数料が変わる場合は、手数料の条件も同じ式に入れます。
 
 <span id="objective-1"></span>
 
@@ -196,6 +194,36 @@
 したがって最小の売価は1,612円です。月の売上高193,440円から、月の手数料19,344円、材料84,000円、固定費60,000円を引いても30,096円になります。手数料は月の売上高に掛ける条件なので、途中の1件当たりの額は丸めません。
 
 手数料を現在の売価で円に換算して固定したまま逆算すると、値上げ後も同じ手数料だと誤って仮定することになります。売価が変わると手数料も変わる場合、売価の何割が残るかを先に式にします。この計算はCVPの利益式を使った発展練習です。
+
+<span id="target-profit-transfer-case"></span>
+
+## 売価に連動する費用を引くと、整数の必要売価が変わる
+
+月80件の販売を見込んでいます。月の固定費54,000円を負担し、営業利益18,000円を得たいとします。一件当たりの材料費は370円、販売手数料は売価の20％です。手数料と途中の計算は丸めず、売価だけを一円刻みで設定する設例です。
+
+<figure id="target-profit-transfer-worksheet">
+<figcaption id="target-profit-transfer-worksheet-caption">売価を一円上げても、固定費や利益に回せる額が一円丸ごと増えるわけではありません。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="target-profit-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">手順</th><th scope="col">求める内容</th></tr></thead>
+<tbody>
+<tr><th scope="row">月の額を出す</th><td>固定費54,000円＋目標利益18,000円＝72,000円</td></tr>
+<tr><th scope="row">一件当たりへ直す</th><td>72,000円÷80件＝900円</td></tr>
+<tr><th scope="row">材料費と手数料を反映</th><td>売価の80％から370円を引き、900円以上にする</td></tr>
+<tr><th scope="row">一円刻みの候補を確認</th><td>（900＋370）÷0.8＝1,587.5円なので、候補は1,588円</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+1,588円を代入すると、一件の貢献利益は900.4円です。八十件で72,032円となり、固定費を引いても18,032円が残ります。1,587円では一件899.6円、月の営業利益17,968円となり、目標を下回ります。最後に前後の売価を代入すると、1,588円で足りることに加えて、それより安くすると足りないことも確かめられます。
+
+手数料が売価に比例せず、一件200円で一定なら、同じ目標に必要な最小売価はいくらですか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>一件当たり900円を残したうえで、材料費370円と手数料200円を回収するので、必要売価は1,470円です。手数料が一件いくらかと、売価の何％かでは、売価の求め方が異なります。</p>
+</details>
 
 <section class="guided-lesson" id="guided-target-profit" aria-labelledby="guided-target-profit-title">
 <h3 id="guided-target-profit-title">途中で確認　手数料率を考慮して必要売価を求める</h3>

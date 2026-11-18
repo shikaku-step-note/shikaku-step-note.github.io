@@ -1,14 +1,12 @@
 ---
-{"stableId":"cb2-cvp-planning-case","qualification":"cost-beginner","title":"CVP分析の例題｜営業計画と値上げ後の損益","description":"営業計画の資料から変動費・固定費、貢献利益、損益分岐点を計算します。値上げと販売見込みを分けて、利益が改善する条件を表で比べます。","order":27,"minutes":92,"sample":false,"unit":4,"subject":"cost","syllabus":[2],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-16","objectives":["売価・販売数量と複数の費用明細から売上高と営業利益の表を作る","貢献利益率と単位貢献利益から販売数量・売上高の分岐点を求める","値上げ後の分岐点と営業利益を計算し、条件次第で結果が変わる理由を説明する"],"prerequisite":"変動費・固定費、貢献利益と損益分岐点を扱うユニット4の章を確認します。","keywords":["CVP分析の例題","CVP分析の計算","CVP計算表","値上げ 損益分岐点","価格変更と営業利益"],"glossary":[],"inlineGlossary":[{"id":"cvp","term":"CVP分析","definition":"売価、単位当たりの変動費、売上数量、固定費と利益の関係を確かめる分析。"},{"id":"forecast-sales","term":"見込み売上高","definition":"計画した販売数量と売価などを使って見積もった売上高。"},{"id":"break-even","term":"損益分岐点","definition":"与えられた単価と費用で、営業利益がゼロとなる売上の水準。"}]}
+{"stableId":"cb2-cvp-planning-case","qualification":"cost-beginner","title":"CVP分析の例題｜営業計画と値上げ後の損益","description":"営業計画の資料から変動費・固定費、貢献利益、損益分岐点を計算します。値上げと販売見込みを分けて、利益が改善する条件を表で比べます。","order":27,"minutes":97,"sample":false,"unit":4,"subject":"cost","syllabus":[2],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-18","objectives":["売価・販売数量と複数の費用明細から売上高と営業利益の表を作る","貢献利益率と単位貢献利益から販売数量・売上高の分岐点を求める","値上げ後の分岐点と営業利益を計算し、条件次第で結果が変わる理由を説明する"],"prerequisite":"変動費・固定費、貢献利益と損益分岐点を扱うユニット4の章を確認します。","keywords":["CVP分析の例題","CVP分析の計算","CVP計算表","値上げ 損益分岐点","価格変更と営業利益"],"glossary":[],"inlineGlossary":[{"id":"cvp","term":"CVP分析","definition":"売価、単位当たりの変動費、売上数量、固定費と利益の関係を確かめる分析。"},{"id":"forecast-sales","term":"見込み売上高","definition":"計画した販売数量と売価などを使って見積もった売上高。"},{"id":"break-even","term":"損益分岐点","definition":"与えられた単価と費用で、営業利益がゼロとなる売上の水準。"}]}
 ---
 
 <span id="first-reading"></span>
 
-料金や参加者数を変えたときの利益は、<a class="lesson-term" data-lesson-term href="#lesson-term-cvp">CVP分析</a>で確かめられます。計画した人数から<a class="lesson-term" data-lesson-term href="#lesson-term-forecast-sales">見込み売上高</a>を求め、料金と費用の条件から<a class="lesson-term" data-lesson-term href="#lesson-term-break-even">損益分岐点</a>を別に計算します。計画値と分岐点の差を比べれば、値上げ後に予想した人数で固定費を回収できるか判断できます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-cvp">CVP分析</a>では、販売数量を変えると売上と変動費がいくら増減し、固定費を負担した後にどれだけ利益が残るかを調べます。予定した人数に一件の料金を掛けた<a class="lesson-term" data-lesson-term href="#lesson-term-forecast-sales">見込み売上高</a>は、実際に販売できると考えた金額です。これとは別に、貢献利益で固定費を回収できる<a class="lesson-term" data-lesson-term href="#lesson-term-break-even">損益分岐点</a>を計算します。
 
-CVP分析では、売上高と変動費を販売量に応じて見積もり、固定費を回収できる数量と、実際の販売計画で残る利益を求めます。損益分岐点が下がっても、見込んだ数量を売れなければ、計画の営業利益が増えるとは限りません。分岐点と販売見込みを分けて計算し、最後に同じ表で比べましょう。
-
-この章では、体験講座の料金表、申込見込み、費用の明細から、一か月のCVP表を組み立てます。図表の「1人当たり」と「月額」を区別できるよう、先に[変動費と固定費](../cb2-behavior/)と[貢献利益](../cb2-contribution/)を確認してください。
+値上げする案では、一件当たりに残る額が増えても、予定どおり売れない場合があります。そこで、まず利益が0円になる人数を求め、次に見込み人数を利益の式へ入れます。さらに現在と同じ利益を目指すなら、固定費に現在の利益を足して必要な人数を逆算します。ここでは体験講座の料金表や月額費用を使います。[変動費と固定費](../cb2-behavior/)と[貢献利益](../cb2-contribution/)を踏まえ、一人当たりと一か月当たりを区別して読みます。
 
 <span id="objective-1"></span>
 
@@ -124,6 +122,34 @@ CVP分析では、売上高と変動費を販売量に応じて見積もり、�
 <p>参加料金2,800円、150人の売上高は420,000円です。変動費率48％なら、貢献利益は420,000×52％＝218,400円。固定費156,000円を引いた利益は62,400円で、現行の78,000円に届きません。1人当たりの変動費1,200円で固定した案では84,000円だったので、人数と料金が同じでも契約の違いで優劣が逆転します。</p>
 </details>
 
+<span id="cvp-planning-case-transfer-case"></span>
+
+## 黒字になる人数と、現在の利益を維持する人数を分ける
+
+体験講座の現行の料金は一人2,500円、受講者は月75人です。値上げ案は一人2,900円で、申込見込みは55人。どちらの案も一人当たりの材料費は1,100円ですが、値上げ案は予約管理費が増え、月固定費が72,000円から78,000円になります。ほかに変更はありません。
+
+<figure id="cvp-planning-case-transfer-worksheet">
+<figcaption id="cvp-planning-case-transfer-worksheet-caption">値上げ案の分岐点は低くなりますが、見込んだ人数も減るため、この計画では従来の利益を下回ります。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="cvp-planning-case-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">比べる項目</th><th scope="col">現行</th><th scope="col">値上げ案</th></tr></thead>
+<tbody>
+<tr><th scope="row">一人当たり貢献利益</th><td>1,400円</td><td>1,800円</td></tr>
+<tr><th scope="row">赤字を避けられる最小人数</th><td>52人</td><td>44人</td></tr>
+<tr><th scope="row">見込人数で得られる営業利益</th><td>75×1,400−72,000＝33,000円</td><td>55×1,800−78,000＝21,000円</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+55人は分岐点を超えているため、値上げ案でも黒字です。現行の33,000円を確保するには、固定費78,000円も含めて111,000円の貢献利益が必要です。一人1,800円で割ると約61.67人。人数は整数なので、少なくとも62人が必要です。61人なら営業利益31,800円、62人なら33,600円となります。
+
+値上げ案で55人は確保できるものの、教室には月60人までしか入れない場合、価格や費用を変えずに現行の利益を維持できますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>維持できません。六十人が申し込んでも1,800円×60人−78,000円＝30,000円で、33,000円に届きません。価格を変える案の実行前には、見込み人数だけでなく、目標を満たす人数と受け入れ上限も比べます。</p>
+</details>
 
 <section class="guided-lesson" id="guided-cvp-planning-case" aria-labelledby="guided-cvp-planning-case-title">
 <h3 id="guided-cvp-planning-case-title">途中で確認　新料金で現行利益を確保する最小件数を出す</h3>

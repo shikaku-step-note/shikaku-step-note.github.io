@@ -6,14 +6,14 @@
   "description": "売上高から変動費を引いて貢献利益を求め、売上高に占める割合を計算します。同じ売上でも販売経路で変動費が変わる場合の読み方も学びます。",
   "order": 23,
   "unit": 4,
-  "minutes": 82,
+  "minutes": 87,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "objectives": [
     "単位貢献利益と貢献利益総額を計算する",
     "変動販売費を含む費用区分で営業利益を求める",
@@ -82,11 +82,9 @@
 
 <span id="first-reading"></span>
 
-代金を受け取っても、その全部が利益になるわけではありません。売上から、販売するほど生じる費用を引いた<a class="lesson-term" data-lesson-term href="#lesson-term-contribution">貢献利益</a>が、<a class="lesson-term" data-lesson-term href="#lesson-term-fixed-cost">固定費</a>の回収と利益に回る金額です。それを売上高の割合で示した<a class="lesson-term" data-lesson-term href="#lesson-term-contribution-rate">貢献利益率</a>は、同じ条件で売上が変わったときの利益を見積もるのに使えます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-contribution">貢献利益</a>は、売上高から販売数量に応じて発生する変動費を引いた金額です。売るたびに生じる材料費や販売手数料をまず回収し、残った金額を、家賃などの<a class="lesson-term" data-lesson-term href="#lesson-term-fixed-cost">固定費</a>の負担に充てます。貢献利益が固定費を上回れば、その差が営業利益です。
 
-一個1,000円で売れても、その1,000円全部が利益になるわけではありません。売るたびに材料や販売手数料が発生すれば、まずそれらをまかなう必要があります。売上高から数量に応じる変動費を引いた残りが、家賃などの固定費の負担と、営業利益に使える金額です。これを貢献利益と呼びます。
-
-この課では一種類の製品または同じ条件のサービスを想定し、生産数量と販売数量は一致して在庫が変わらないものとします。売価、単位変動費、固定費総額は対象月の活動範囲で一定です。固定製造費を在庫へ繰り延べる場合の損益とは、前提を区別してください。
+一個当たりの額は、同じ条件で販売を一個増やすと固定費の回収にいくら回るかを示します。一方、<a class="lesson-term" data-lesson-term href="#lesson-term-contribution-rate">貢献利益率</a>は、売上高のうち貢献利益が占める割合です。売価や手数料が違う販売経路を合わせるときは、経路ごとに貢献利益を計算し、合計した貢献利益を合計売上高で割ります。この章の一種類の製品を使う設例では生産と販売の数量は同じで、在庫は増減せず、単価や固定費は指定の範囲で一定とします。
 
 <span id="objective-1"></span>
 
@@ -211,6 +209,34 @@ CVPでは単位変動費を900＋100＝1,000円にまとめます。単位貢献
 訂正後の変動費を集めると、製造費は500個×500円＝250,000円、窓口の包装費は250個×40円＝10,000円、通販の発送・手数料は250個×（80＋120）円＝50,000円です。売上高から変動費310,000円と固定費174,000円を引くと、営業利益16,000円へ戻ります。
 
 窓口は売上高の46％、通販は30％が貢献利益になります。二つの率を同じ重みで平均できるのは、二つの売上高が等しい場合です。訂正前に46％と30％を単純平均すると38％ですが、窓口だけで300,000円の売上があるため、全体の率は39.6％でした。最初に経路別の貢献利益を金額で合計し、その額を全体の売上高で割ると、経路や売価が違う資料でも分母を取り違えずに済みます。
+
+<span id="contribution-transfer-case"></span>
+
+## 手数料を引いた後で経路ごとの割合を計算する
+
+ある店では、同じ商品を店頭と通販で販売しています。一個当たりの材料費は両方とも700円。店頭の売価は1,500円で手数料はなく、通販の売価は1,800円で、その10％が決済手数料になります。他に販売数に応じて増減する費用はありません。
+
+<figure id="contribution-transfer-worksheet">
+<figcaption id="contribution-transfer-worksheet-caption">同じ売上高でも、売る個数と手数料が違えば、固定費の回収に回る額は異なります。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="contribution-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">販売経路</th><th scope="col">売上の計算</th><th scope="col">変動費の計算</th><th scope="col">貢献利益</th></tr></thead>
+<tbody>
+<tr><th scope="row">店頭60個</th><td>1,500円×60個＝90,000円</td><td>700円×60個＝42,000円</td><td>48,000円</td></tr>
+<tr><th scope="row">通販50個</th><td>1,800円×50個＝90,000円</td><td>880円×50個＝44,000円</td><td>46,000円</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+通販では、売価から手数料180円と材料費700円を引いて一個920円。店頭の一個800円より大きくなりますが、この月は店頭のほうが十個多く売れたので、経路別の貢献利益は店頭のほうが2,000円多く残りました。二経路を合わせた貢献利益率は、94,000円÷180,000円で約52.2％です。
+
+販売予定のうち、一個分だけを店頭から通販に切り替えます。他の条件が同じなら、貢献利益はいくら増えますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>通販の一個当たり貢献利益920円から、店頭の800円を引いた120円が増加額です。経路別の貢献利益総額をそのまま引き算せず、一個ずつ入れ替える条件に合わせて単位当たりで比べます。</p>
+</details>
 
 <section class="guided-lesson" id="guided-contribution" aria-labelledby="guided-contribution-title">
 <h3 id="guided-contribution-title">途中で確認　販売経路ごとの貢献利益を合わせる</h3>

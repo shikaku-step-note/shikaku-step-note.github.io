@@ -6,14 +6,14 @@
   "description": "損益分岐点から売上の余裕額と安全余裕率を求めます。売上の合計が変わらなくても変動費の条件や販売内訳で余裕が変わる場合を学びます。",
   "order": 26,
   "unit": 4,
-  "minutes": 92,
+  "minutes": 97,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "objectives": [
     "実際売上高と損益分岐点の差から販売の余裕を説明する",
     "売価・単位変動費・固定費の変更案を独立に計算する",
@@ -82,11 +82,9 @@
 
 <span id="first-reading"></span>
 
-今の見込み売上から、利益がゼロになる売上までにいくら差があるかを<a class="lesson-term" data-lesson-term href="#lesson-term-safety-margin">安全余裕額</a>で示します。売上に占める余裕の割合が<a class="lesson-term" data-lesson-term href="#lesson-term-safety-rate">安全余裕率</a>です。値下げや広告を考えるときは、以前の条件との差を<a class="lesson-term" data-lesson-term href="#lesson-term-increment">増分</a>として組み立てます。計算の途中で比較の出発点を変えないよう注意します。
+<a class="lesson-term" data-lesson-term href="#lesson-term-safety-margin">安全余裕額</a>は、見込んだ売上高から、営業利益が0円になる損益分岐点売上高を引いた差です。見込みどおりに売れるなら、いくら売上が減ると固定費をまかなえなくなるかを読めます。その余裕額が見込売上高の何割かを示すのが<a class="lesson-term" data-lesson-term href="#lesson-term-safety-rate">安全余裕率</a>です。
 
-今月黒字でも、売上が少し減れば赤字になる店と、大きく減っても固定費を回収できる店では、計画の余裕が異なります。この課では、損益分岐点までの距離を使って、その違いを計算します。また、値下げ、材料単価の変更、広告費の追加などが利益にどう影響するかを、同じ式へ戻して比較します。
-
-安全余裕額・安全余裕率という名称は、公式出題範囲の独立した項目名として挙げられているものではありません。ここでは、公式範囲にあるCVP分析と損益分岐点の理解を深める補助的な練習として扱います。指標の暗記を増やすことより、計算結果を解釈できることが目的です。
+値下げや広告を考えると、売れ行きの見込みだけでなく、一件当たりに残る額や固定費も変わることがあります。前の条件から変わった額を<a class="lesson-term" data-lesson-term href="#lesson-term-increment">増分</a>として確認し、それぞれの案で分岐点と見込み売上を求め直します。安全余裕額・安全余裕率は公式出題範囲に独立した項目名として示されていません。この章では、公式範囲の損益分岐点を使って、売上の変化が利益にどう響くかを考えます。
 
 <span id="objective-1"></span>
 
@@ -166,6 +164,35 @@
 変動費率40％のサービスと、単位変動費400円のサービスでは、値上げ後の計算が異なります。前者は売価が上がれば一回当たり変動費も増える条件です。後者は一回当たり費用が一定なので、値上げ分がすべて単位貢献利益へ加わります。問題の「一定」が何に掛かるかを読みます。
 
 売価1,000円から1,200円、数量100回、固定費30,000円とします。変動費率40％を維持するなら利益は1,200×100×0.6−30,000＝42,000円です。単位変動費400円を維持するなら（1,200−400）×100−30,000＝50,000円です。8,000円の違いは、値上げ後の変動費が480円か400円かの違いから生じます。
+
+<span id="safety-changes-transfer-case"></span>
+
+## 安全余裕率が同じでも、売上の減少が利益に及ぼす金額は違う
+
+二つの案は、いずれも月400,000円の売上を見込んでいます。案Aは貢献利益率40％で固定費128,000円。案Bは設備を使うため固定費192,000円ですが、変動費を抑えられて貢献利益率60％です。以下の販売範囲では、各案の貢献利益率と固定費を一定とします。
+
+<figure id="safety-changes-transfer-worksheet">
+<figcaption id="safety-changes-transfer-worksheet-caption">売上の余裕は両案とも80,000円・20％ですが、売上が同じだけ減ったときの利益の減り方が異なります。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="safety-changes-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">比較する金額</th><th scope="col">案A</th><th scope="col">案B</th></tr></thead>
+<tbody>
+<tr><th scope="row">損益分岐点売上高</th><td>320,000円</td><td>320,000円</td></tr>
+<tr><th scope="row">見込売上高400,000円での営業利益</th><td>32,000円</td><td>48,000円</td></tr>
+<tr><th scope="row">売上が350,000円の場合の営業利益</th><td>12,000円</td><td>18,000円</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+売上が50,000円下がると、案Aの貢献利益は20,000円、案Bは30,000円減ります。固定費が変わらないので、それぞれの営業利益も同じ金額だけ減ります。売上が320,000円まで下がると利益がゼロになる点は共通です。売上がその前後で1円動くときの営業利益の増減は、案Aでは0.4円、案Bでは0.6円です。
+
+売上が300,000円まで減った場合、営業損失が大きいのはどちらでしょうか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>案Aは300,000×40％−128,000＝−8,000円、案Bは300,000×60％−192,000＝−12,000円です。分岐点を下回ったため、貢献利益率が高い案Bのほうが4,000円多く損失を出します。</p>
+</details>
 
 <section class="guided-lesson" id="guided-safety-changes" aria-labelledby="guided-safety-changes-title">
 <h3 id="guided-safety-changes-title">途中で確認　固定費を見直した後の安全余裕額を求める</h3>

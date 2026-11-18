@@ -1,4 +1,4 @@
-import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costCourseReviewVersion, costApplicationVersion, costMockVersion, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
+import { costGroups, costVersion, costUnitOneAssessmentVersion, costUnitOneExpandedVersion, costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costCourseReviewVersion, costApplicationVersion, costMockVersions, costReviewed, costBank, costReviewBank, costSources, costWorkload } from '../src/data/cost-beginner.ts';
 import coverage from '../src/data/cost-beginner-coverage.json' with {type:'json'};
 
 export function costCurriculum(rows) {
@@ -49,7 +49,7 @@ export function costCurriculum(rows) {
   lines.push('', '総復習と模試',
     '  [cost-beginner-terms-all] 用語総復習。ユニットの用語問題を再利用。',
     `  [cost-beginner-review-all] 独自問題 ${costReviewBank.all?.length??0}問。個別確認22問、共通資料9問（原価・在庫・損益、CVP、売上高差異）／${costCourseReviewVersion}`,
-    `  模試2回の版：${costMockVersion}`,
+    `  模試の版：第1回 ${costMockVersions.a}／第2回 ${costMockVersions.b}`,
     '  [cb2-mock-a] 第1回：選択式37小問・40分・独自100点 → 翌日に解説と関連レッスンで解き直す',
     '  苦手な単元の総合確認へ戻り、条件の判断と計算を再確認する',
     '  [cb2-mock-b] 第2回：異なる条件と資料の選択式37小問・40分・独自100点 → 時間配分と誤答を確認',

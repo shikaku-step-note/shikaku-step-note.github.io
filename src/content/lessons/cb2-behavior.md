@@ -6,14 +6,14 @@
   "description": "費用を変動費と固定費に分け、販売数量から総額を計算します。契約の料金が変わる数量をまたぐときは、使える範囲と新しい条件を確かめます。",
   "order": 22,
   "unit": 4,
-  "minutes": 77,
+  "minutes": 82,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "objectives": [
     "活動量と費用の関係から変動費・固定費を区別する",
     "総額と単位当たりの費用を数量に合わせて計算する",
@@ -82,11 +82,9 @@
 
 <span id="first-reading"></span>
 
-数量を増やしたとき、材料のように使うほど総額が増えるものは<a class="lesson-term" data-lesson-term href="#lesson-term-variable-cost">変動費</a>、同じ範囲では家賃のように総額が変わらないものは<a class="lesson-term" data-lesson-term href="#lesson-term-fixed-cost">固定費</a>と扱います。ここで変化の目安とする販売数や稼働時間が<a class="lesson-term" data-lesson-term href="#lesson-term-activity">活動量</a>です。料金表に基本額と使用分の両方があるときは、分けて変化を読みます。
+販売する個数や稼働時間が変わると、費用の総額も変わります。この変化の基準にする数量や時間が<a class="lesson-term" data-lesson-term href="#lesson-term-activity">活動量</a>です。材料費のように、使う量に応じて総額が増減する部分は<a class="lesson-term" data-lesson-term href="#lesson-term-variable-cost">変動費</a>と呼びます。一定の数量の範囲で総額が変わらない部分は<a class="lesson-term" data-lesson-term href="#lesson-term-fixed-cost">固定費</a>です。たとえば月額が決まっている家賃は、その契約で場所を借りられる間は、注文数が少し変わっても同じ額を見込みます。
 
-注文が増えた月には材料を多く使います。一方、店舗の月額家賃は、注文が少し増えても同じ金額かもしれません。翌月の利益を予測するとき、今月の費用をすべて同じ割合で増やすと、家賃まで数量に比例させてしまいます。数量に応じて何が増え、何がそのまま残るのかを区別する必要があります。
-
-ここでは、一定の期間と活動範囲を決めてから費用の動きを考えます。以下の金額は特記のない限り月額で、税金・消費税は考えません。実際の契約を推測するのでなく、問題で与えられた条件からモデルを作る練習です。
+費用の総額を求めるときは、対象とする月を決め、数量に応じて増える金額と、その月にかかる一定額を分けます。ただし、契約で数量の上限が決まっている場合は、その上限を超えると別の月額が適用されることがあります。計算する前に、数量と料金のどの組合せが当てはまるかを読み取ってください。この章では条件として与えられた月額を使い、税金は扱いません。
 
 <span id="objective-1"></span>
 
@@ -173,6 +171,35 @@
 月800〜1,200個なら既存設備で製造できても、1,201個以上では追加設備の賃借料が必要になるかもしれません。その場合、固定費が永遠に一定というモデルは使えません。問題が与えた関連範囲の内側で計算し、範囲を越える数量を求めたら、追加条件を確認します。
 
 同様に、材料を大量購入したときだけ単価が下がる契約では、すべての数量に同じ単位変動費を使うとは限りません。初級の比例モデルは、条件を整理して利益の関係を見るためのものです。計算結果を解釈するときにも「この単価と固定費が維持される範囲」という前提を添えます。
+
+<span id="behavior-transfer-case"></span>
+
+## 契約の境目では、増えた一個に何がかかるかを分けて読む
+
+工房が使う加工設備は基本契約で月500個まで処理でき、基本料は月54,000円です。501個以上の月は設備の追加契約料18,000円がかかります。材料費は契約の区分にかかわらず一個140円とします。
+
+<figure id="behavior-transfer-worksheet">
+<figcaption id="behavior-transfer-worksheet-caption">500個までは一個につき140円ずつ増え、501個に達する月は材料費に加えて月額も増えます。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="behavior-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">月の生産数</th><th scope="col">材料費</th><th scope="col">設備の固定費</th><th scope="col">総費用</th></tr></thead>
+<tbody>
+<tr><th scope="row">430個</th><td>60,200円</td><td>54,000円</td><td>114,200円</td></tr>
+<tr><th scope="row">500個</th><td>70,000円</td><td>54,000円</td><td>124,000円</td></tr>
+<tr><th scope="row">501個</th><td>70,140円</td><td>72,000円</td><td>142,140円</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+500個から501個へ一個増やしたとき、材料費の増加は140円です。その月は追加設備が必要になるので、総費用の増加は140＋18,000＝18,140円となります。契約料の18,000円は、501個に掛ける単価でも、超えた部分だけに掛ける単価でもありません。どの数量の範囲に入った月が支払うのかを確かめます。
+
+そのまま翌月が600個になった場合、前月501個と比べて総費用はいくら増えますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>追加設備料は両月とも18,000円なので、変わるのは99個分の材料費だけです。140円×99個＝13,860円増え、600個の総費用は156,000円となります。</p>
+</details>
 
 <section class="guided-lesson" id="guided-behavior" aria-labelledby="guided-behavior-title">
 <h3 id="guided-behavior-title">途中で確認　条件をまたぐ数量で総費用を求める</h3>

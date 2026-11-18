@@ -2,7 +2,7 @@
 {
   "stableId":"cb2-finished","qualification":"cost-beginner","title":"月末製品原価と売上原価の計算",
   "description":"完成品の原価を販売分と月末在庫に分けます。月初と当月完成で単価が違うときは、販売明細のロットを照合して売上原価を求めます。",
-  "order":16,"minutes":87,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-16",
+  "order":16,"minutes":92,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-18",
   "objectives":["月初製品・当月完成原価・月末製品から売上原価を求める","完成数量・販売数量・単位原価を区別して製品在庫を評価する","数量と原価の未知数を逆算し、仕掛品から売上原価まで一貫して検算する"],
   "prerequisite":"前の仕掛品の課で、月初＋当月追加＝完成振替＋月末の関係を復習してください。",
   "keywords":["製品在庫","売上原価","単位原価","完成数量","販売数量","月末製品原価","月末製品原価の求め方"],
@@ -37,11 +37,9 @@
 
 <span id="first-reading"></span>
 
-月初にすでに完成していて売れていない<a class="lesson-term" data-lesson-term href="#lesson-term-opening-products">月初製品</a>に、その月に完成した分を加えます。このうち、月末にも残っている<a class="lesson-term" data-lesson-term href="#lesson-term-closing-products">月末製品</a>は翌月へ引き継ぎます。この月に売れたものへ移った原価が<a class="lesson-term" data-lesson-term href="#lesson-term-cogs">売上原価</a>です。販売した数量を完成数量と読み替えず、製品に残るものの記録から確かめます。
+<a class="lesson-term" data-lesson-term href="#lesson-term-cogs">売上原価</a>は、その月に売れた製品に対応する原価です。売れた品を特定するには、まず月の初めから倉庫にあった<a class="lesson-term" data-lesson-term href="#lesson-term-opening-products">月初製品</a>と、当月に製造を終えた品を合わせます。そこから売れた品を除いた残りが<a class="lesson-term" data-lesson-term href="#lesson-term-closing-products">月末製品</a>です。売れずに残った製品の原価は、その月の売上からは差し引きません。
 
-製造が終わった製品にも、売れたものと倉庫に残るものがあります。今月作った分の原価をそのまま今月の売上から引くと、倉庫に残って翌月の売上を支える製品まで、今月の費用に含めてしまいます。販売に対応する原価を求めるため、完成した後にも原価を分ける段階が必要です。
-
-前の課で求めた当月製品製造原価は、製品の段階では当月の増加になります。製造工程から見れば出ていく原価、製品置場から見れば入ってくる原価です。新しく別の費用が発生したのではなく、同じ原価を次の集計先へ引き継いでいます。
+前の章で求めた完成原価は、製造工程の側では作りかけから出ていく原価であり、製品置場の側では入ってくる原価です。製造と製品の両方の帳簿に現れても、同じ製品の原価なので二重に加えません。倉庫に残る個数と販売済みの個数を区別し、一個当たりの原価が異なるときは、どの組から売れたかまで確かめます。
 
 <span id="objective-1"></span>
 
@@ -182,6 +180,34 @@
 在庫として残る原価は、その時点の売上原価から外れます。したがって製造費用をすべて当月の費用にする計算とは、利益が違うことがあります。ただし、在庫額が増えたという事実だけで、会社が豊かになった、販売が順調だったとは判断できません。
 
 製品を多く作っても売れなければ、材料購入や賃金支払いの資金が製品の形で残ることがあります。損益の計算では適切な原価を期間へ対応させ、経営上の判断では販売状況や資金など別の情報も確認します。初級の問題でも、与えられた計算結果を超えて原因を決めつけないことが大切です。
+
+<span id="finished-transfer-case"></span>
+
+## 同じ個数を売っても、どの組を出したかで原価は変わる
+
+同じ品物を生産時期の組ごとに管理しています。次の倉庫記録では、月初から持っていた品と当月完成の品で一個当たりの原価が違います。販売した組と個数は出荷票で特定でき、他に製品の増減はありません。
+
+<figure id="finished-transfer-worksheet">
+<figcaption id="finished-transfer-worksheet-caption">出荷票の番号から、売れた品の単位原価と倉庫に残る品の単位原価を照合します。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="finished-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">製品の組</th><th scope="col">販売可能数・単価</th><th scope="col">出荷票の数量</th><th scope="col">月末の数量</th></tr></thead>
+<tbody>
+<tr><th scope="row">前月完成</th><td>12個・700円/個</td><td>10個</td><td>2個</td></tr>
+<tr><th scope="row">当月完成</th><td>24個・900円/個</td><td>15個</td><td>9個</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+販売したのは計25個で、売上原価は700円×10個＋900円×15個＝20,500円です。倉庫に残る11個は700円×2個＋900円×9個＝9,500円。両者の合計30,000円は、用意した36個の原価と一致します。この検算は、単位原価が異なる二組を別々に扱ったときに意味があります。
+
+後日、出荷票に前月完成と書かれた10個のうち一個が、当月完成の組だったと判明しました。25個という販売数量が同じでも、売上原価はどう変わりますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>売れた組は前月完成9個、当月完成16個になります。700円の品を一個減らし、900円の品を一個増やすので、売上原価は200円増えて20,700円です。用意した原価総額30,000円に変化はなく、月末製品は9,300円に減ります。</p>
+</details>
 
 <section class="guided-lesson" id="guided-finished" aria-labelledby="guided-finished-title">
 <h3 id="guided-finished-title">途中で確認　販売明細からロット別の売上原価を求める</h3>

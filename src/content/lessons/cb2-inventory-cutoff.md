@@ -5,9 +5,9 @@
   "title": "月をまたぐ在庫原価：仕掛品・製品・売上原価を照合する",
   "description": "原価計算初級の月末在庫を翌月の月初につなぎ、完成原価・売上原価・営業利益への影響を、二か月の表と入力式演習で確かめます。",
   "order": 21,
-  "minutes": 90,
+  "minutes": 95,
   "sample": false,
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "unit": 3,
   "objectives": [
     "仕掛品と製品を別々に繰り越し、二か月の完成原価と売上原価を求める",
@@ -102,6 +102,34 @@
 <figure id="cb2-inventory-cutoff-sale-change"><div class="table-scroll" tabindex="0" role="region" aria-labelledby="cb2-inventory-cutoff-sale-change-caption"><table><thead><tr><th scope="col">項目</th><th scope="col">6月 当初 → 訂正</th><th scope="col">7月 当初 → 訂正</th></tr></thead><tbody><tr><th scope="row">売上高</th><td>220,000 → 233,000</td><td>295,000 → 282,000</td></tr><tr><th scope="row">月末製品</th><td>50,000 → 42,000</td><td>40,000 → 40,000</td></tr><tr><th scope="row">売上原価</th><td>120,000 → 128,000</td><td>190,000 → 182,000</td></tr><tr><th scope="row">売上総利益</th><td>100,000 → 105,000</td><td>105,000 → 100,000</td></tr><tr><th scope="row">営業利益</th><td>66,000 → 71,000</td><td>65,000 → 60,000</td></tr></tbody></table></div><figcaption id="cb2-inventory-cutoff-sale-change-caption">当初資料から販売日だけを訂正した場合。完成日の訂正はここでは行いません。</figcaption></figure>
 
 二か月分の営業利益を足すと、どちらの集計でも131,000円です。同じ二か月内で移したため、合計は変わりません。それでも6月と7月を別々に評価する資料では訂正が必要です。金額が一致するかに加え、完了票と引渡票が指す日付まで調べると、何を動かすべきか判断できます。
+
+<span id="inventory-cutoff-transfer-case"></span>
+
+## 締め日の訂正では、どの記録が一日ずれたかを特定する
+
+月末と翌月初の境にある注文Nの原価は23,000円、売上は31,000円です。実際には今月末に完成したものの、注文台帳へ記入したのは翌月初。さらに、販売記録の照合には取引先への引渡票を使うという条件です。二通の証ひょうを別々に確かめます。
+
+<figure id="inventory-cutoff-transfer-worksheet">
+<figcaption id="inventory-cutoff-transfer-worksheet-caption">同じ注文でも、どの証ひょうの日付を訂正したかで、月末在庫と損益への影響が違います。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="inventory-cutoff-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">確認した証ひょう</th><th scope="col">今月末の原価</th><th scope="col">今月の損益</th></tr></thead>
+<tbody>
+<tr><th scope="row">完了票のみ今月末、引渡票は翌月初</th><td>仕掛品から製品へ23,000円を移す</td><td>変化なし</td></tr>
+<tr><th scope="row">完了票も引渡票も今月末</th><td>製品に移った23,000円が売上原価になる</td><td>売上31,000円と対応原価23,000円を計上</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+完了票を直しただけなら、原価の置き場所が仕掛品から製品へ変わります。製品になっても引き渡していないので、今月の売上原価には入りません。引渡票まで今月末なら、売上と対応する原価を今月に移します。この場合は売上総利益が8,000円増え、他の売上・費用が同じなら営業利益も8,000円増えます。翌月へ行くはずだった同額を移したので、二か月分を合わせた利益は同じです。
+
+完了日だけを訂正したとき、翌月初に引き継ぐ仕掛品と製品のそれぞれはどう変わりますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>翌月初の仕掛品は23,000円減り、製品は23,000円増えます。二つの合計は変わりません。翌月に販売を記録するときは、引き継いだ製品から該当する原価を取り出します。</p>
+</details>
 
 <section class="guided-lesson" id="guided-cb2-inventory-cutoff" aria-labelledby="cb2-inventory-cutoff-guided-title">
 <h2 id="cb2-inventory-cutoff-guided-title">途中で確認　売上と原価を同じ月へ移す</h2>

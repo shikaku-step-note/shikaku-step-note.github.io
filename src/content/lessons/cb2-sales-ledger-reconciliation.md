@@ -6,14 +6,14 @@
   "description": "単価の異なる販売、返品、値引きを数量欄と金額欄で分け、実際売上高と純販売数量を求めます。丸めずに販売数量差異と販売価格差異を計算し、明細に戻って検算します。",
   "order": 32,
   "unit": 5,
-  "minutes": 80,
+  "minutes": 85,
   "sample": false,
   "subject": "cost",
   "syllabus": [
     2
   ],
   "scopeLabel": "原価計算初級の現行出題範囲2(2)を用いた独自の応用教材",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "objectives": [
     "単価の異なる販売、返品、金額だけの値引きを明細から拾い、純販売数量と実際売上高を集計する",
     "実際売上高と純販売数量から実際単価を読み、端数を丸めずに数量差異と価格差異を求める",
@@ -135,23 +135,6 @@
 
 反対に、通常販売分を1個さらに返品するなら、純販売数量が1個減り、実際売上高は1,280円減ります。この章の基準では数量差異が1,250円小さくなり、価格差異は残る30円だけ小さくなります。返品額全体を価格差異に入れると、返った個数を予算単価で評価し直す作業が抜けます。
 
-<section class="guided-lesson" id="guided-sales-ledger-reconciliation" aria-labelledby="guided-sales-ledger-reconciliation-title">
-<h2 id="guided-sales-ledger-reconciliation-title">途中で確認　返品が2個少なかったら</h2>
-<p id="guided-sales-ledger-reconciliation-prompt">例題1で、通常販売の返品が5個ではなく3個だったとします。事後値引きは例題1と同額です。販売価格差異は何円の不利差異になりますか。不利差異の金額を正の数字で答えてください。</p>
-<form data-guided-practice data-expected="8210" data-guided-hint="返品が2個減るので、実際売上高は2×1,280円、比較用売上高は2×1,250円増えます。" aria-labelledby="guided-sales-ledger-reconciliation-title" aria-describedby="guided-sales-ledger-reconciliation-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>解答を入力</legend>
-<label for="guided-sales-ledger-reconciliation-input">答え（円）</label> <input id="guided-sales-ledger-reconciliation-input" name="answer" aria-describedby="guided-sales-ledger-reconciliation-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>純販売数量は100個、実際売上高は114,230＋2×1,280＝116,790円です。比較用売上高は100×1,250＝125,000円。116,790−125,000＝−8,210円なので、8,210円の不利差異になります。</p>
-</details>
-</section>
-
 <span id="objective-3"></span>
 <span id="worked-3"></span>
 
@@ -173,6 +156,48 @@
 誤った71個で比較用売上高を作ると、数量差異は2,700円小さくなり、価格差異は同じ額だけ大きくなります。同じ比較用売上高を片方で足し、もう片方で引くので、売上高差異の合計からはこの誤りを発見できません。
 
 そこで、予算売上高と実際売上高の差で全体を照合することに加え、数量は出荷票と返品票、金額は請求明細と返金・値引きの記録へ戻って確認します。純販売数量が0の場合、実際売上高を0で割れないので平均単価は出せません。対象期間・製品・売上金額が確かめられるなら、比較用売上高から実際売上高への金額差自体は求められます。その差を、1個当たりいくら値下げしたという説明に使うことはできません。
+
+## 一つの返品を、数量の記録と金額の明細の両方に反映する
+
+会場では48個を1個1,000円、通販では36個を1個1,100円で販売しました。通販のうち4個は当月の販売分の返品で、代金4,400円を取り消します。別に会場で売った分に値引きが1,600円あり、商品の返却はありません。予算は90個を1個1,000円です。
+
+| 当月の明細 | 数量の増減（個） | 売上高の増減（円） |
+| --- | ---: | ---: |
+| 会場の販売 | ＋48 | ＋48,000 |
+| 通販の販売 | ＋36 | ＋39,600 |
+| 通販の返品 | −4 | −4,400 |
+| 会場販売の値引き | 0 | −1,600 |
+| 正味の合計 | 80 | 81,600 |
+
+予算売上高90,000円を、実績の80個を予算単価で売った80,000円へ置き換えると、数量差異は−10,000円です。そこから明細で確かめた81,600円までは＋1,600円なので、これが価格差異です。値引きの行は数量を動かしませんが、実際売上高を減らすため価格差異には影響します。
+
+もし返品の金額だけを引き、数量欄に−4個を入れ忘れたら、実際売上高は同じ81,600円でも、中間の売上高は84,000円となります。数量差異−6,000円と価格差異−2,400円の和も−8,400円です。合計の検算だけでは誤りを見つけられないので、取消伝票の個数と販売明細の数量欄も照合します。
+
+### 値引きの時期が変わったときの差を確かめる
+
+この設例では、返品は当月に反映し、1,600円の値引きは翌月に確定して翌月の明細に載るものとします。当月の価格差異はいくらでしょうか。
+
+<details>
+<summary>解答と考え方を読む</summary>
+<p>数量は80個のままで、中間の売上高は80,000円です。当月の実際売上高は83,200円となるため、価格差異は＋3,200円になります。値引きの対象月を変えても、当月の返品数量は変わりません。</p>
+</details>
+
+<section class="guided-lesson" id="guided-sales-ledger-reconciliation" aria-labelledby="guided-sales-ledger-reconciliation-title">
+<h2 id="guided-sales-ledger-reconciliation-title">返品数を直した後の価格差異を求める</h2>
+<p id="guided-sales-ledger-reconciliation-prompt">例題1で、通常販売の返品が5個ではなく3個だったとします。事後値引きは例題1と同額です。販売価格差異は何円の不利差異になりますか。不利差異の金額を正の数字で答えてください。</p>
+<form data-guided-practice data-expected="8210" data-guided-hint="返品が2個減るので、実際売上高は2×1,280円、比較用売上高は2×1,250円増えます。" aria-labelledby="guided-sales-ledger-reconciliation-title" aria-describedby="guided-sales-ledger-reconciliation-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>解答を入力</legend>
+<label for="guided-sales-ledger-reconciliation-input">答え（円）</label> <input id="guided-sales-ledger-reconciliation-input" name="answer" aria-describedby="guided-sales-ledger-reconciliation-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>純販売数量は100個、実際売上高は114,230＋2×1,280＝116,790円です。比較用売上高は100×1,250＝125,000円。116,790−125,000＝−8,210円なので、8,210円の不利差異になります。</p>
+</details>
+</section>
 
 ## 自分で解く　会場と通販の販売明細を照合する
 

@@ -1,14 +1,12 @@
 ---
-{"stableId":"cb2-monthly-profit-statement","qualification":"cost-beginner","title":"製品別月次損益計算書｜在庫から営業利益まで","description":"二製品の月初・月末仕掛品と製品在庫を照合し、当月の売上原価、販管費、営業利益を計算します。空欄のある月次損益計算書を完成させ、在庫を訂正した効果も確かめます。","order":20,"minutes":92,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-16","objectives":["二製品への製造間接費を集計し、仕掛品と製品を順に調整する","別の基準で販管費を配賦し、製品別損益表と合計を照合する","月末残高の訂正が完成原価・売上原価と利益にどう波及するか検算する"],"prerequisite":"ユニット2の配賦と原価の振替、ユニット3の仕掛品・製品原価・損益計算の章を確認します。","keywords":["製品別月次損益計算書","製品別損益計算書の作り方","月次損益計算書 原価計算初級","月末在庫 営業利益","原価計算初級 損益計算書 例題"],"glossary":[],"inlineGlossary":[{"id":"current-production","term":"当月製造費用","definition":"その月に製造用に消費した直接費と製造間接費の金額。"},{"id":"finished-cost","term":"完成原価","definition":"当月に完成して製品へ移る原価。月初仕掛品と月末仕掛品を考慮します。"},{"id":"cogs","term":"売上原価","definition":"当月に販売した製品などに対応する原価。"}]}
+{"stableId":"cb2-monthly-profit-statement","qualification":"cost-beginner","title":"製品別月次損益計算書｜在庫から営業利益まで","description":"二製品の月初・月末仕掛品と製品在庫を照合し、当月の売上原価、販管費、営業利益を計算します。空欄のある月次損益計算書を完成させ、在庫を訂正した効果も確かめます。","order":20,"minutes":97,"sample":false,"unit":3,"subject":"cost","syllabus":[3],"scopeLabel":"原価計算初級の現行出題範囲に基づく独自教材。2026年度・2027年度とも範囲変更なし。","updated":"2026-11-18","objectives":["二製品への製造間接費を集計し、仕掛品と製品を順に調整する","別の基準で販管費を配賦し、製品別損益表と合計を照合する","月末残高の訂正が完成原価・売上原価と利益にどう波及するか検算する"],"prerequisite":"ユニット2の配賦と原価の振替、ユニット3の仕掛品・製品原価・損益計算の章を確認します。","keywords":["製品別月次損益計算書","製品別損益計算書の作り方","月次損益計算書 原価計算初級","月末在庫 営業利益","原価計算初級 損益計算書 例題"],"glossary":[],"inlineGlossary":[{"id":"current-production","term":"当月製造費用","definition":"その月に製造用に消費した直接費と製造間接費の金額。"},{"id":"finished-cost","term":"完成原価","definition":"当月に完成して製品へ移る原価。月初仕掛品と月末仕掛品を考慮します。"},{"id":"cogs","term":"売上原価","definition":"当月に販売した製品などに対応する原価。"}]}
 ---
 
 <span id="first-reading"></span>
 
-原価表から月次の損益を作るときは、<a class="lesson-term" data-lesson-term href="#lesson-term-current-production">当月製造費用</a>、<a class="lesson-term" data-lesson-term href="#lesson-term-finished-cost">完成原価</a>、<a class="lesson-term" data-lesson-term href="#lesson-term-cogs">売上原価</a>を順に計算します。第一の金額は今月の消費、第二は今月に完成した品、第三は今月に売れた品に対応します。違いは在庫に残った金額から生まれるので、仕掛品と製品はそれぞれ別に調べます。
+一か月の製品別損益を出すには、まず、その月の製造に使った<a class="lesson-term" data-lesson-term href="#lesson-term-current-production">当月製造費用</a>を製品ごとに集めます。月初からの作りかけを加え、月末に作りかけで残る仕掛品を除くと、今月完成した品の<a class="lesson-term" data-lesson-term href="#lesson-term-finished-cost">完成原価</a>になります。そこへ月初の製品を加え、月末に売れずに残る製品を除けば、販売した品に対応する<a class="lesson-term" data-lesson-term href="#lesson-term-cogs">売上原価</a>を求められます。
 
-製品別の月次損益計算書を作るときは、製造にかかった金額を仕掛品と製品の二つの段階で調整します。その後、売上高から売上原価を引いて売上総利益を求め、販売費及び一般管理費（販管費）を引きます。作った量と売った量が違う月は、当月の製造費をそのまま売上高から引くと、月末に残った在庫の分まで費用に含めてしまいます。
-
-この章では、AとBの製造記録、在庫の評価表、売上と販管費の明細から製品別に月次の表を組み立てます。仕掛品と製品の残高を別々に確認し、個別の列を足した値が工場全体の値と一致するか確かめましょう。
+売上高から売上原価を引いた後で、当月の販売費及び一般管理費（販管費）を差し引きます。ここでは製品AとBの原価・在庫・売上を別々に読み、行ごとの計算を組み立てます。最後に、製品別の列を足した結果を工場全体の資料から計算した金額と見比べてください。
 
 <span id="objective-1"></span>
 
@@ -117,6 +115,36 @@ Aの月末仕掛品を再点検すると12,000円でした。当月製造費用�
 </figure>
 
 製品Aの利益が増えて見えても、売上が増えたわけではありません。この例で変わったのは、原価のうち在庫に残す額です。逆に、月末製品の評価額も変わるという条件であれば、売上原価への影響は仕掛品の訂正だけでは決まりません。変わった残高と変わらない残高を明確にして、二本の在庫の式に戻ります。
+
+<span id="monthly-profit-statement-transfer-case"></span>
+
+## 売上原価の計算が合っても、在庫の分類は別に照合する
+
+当月の製造費用は80,000円、月初の仕掛品は10,000円、月初の製品は20,000円でした。月末に未完成だった原価9,000円の一組を、完成済みの製品として記録していました。まだ販売されていないため、作業票の状態に合わせて月末の在庫の区分だけを訂正します。
+
+<figure id="monthly-profit-statement-transfer-worksheet">
+<figcaption id="monthly-profit-statement-transfer-worksheet-caption">完成原価と月末製品が同額ずつ減ります。売上原価の一致だけでは、二列の分類誤りは見つかりません。</figcaption>
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="monthly-profit-statement-transfer-worksheet-caption">
+<table>
+<thead><tr><th scope="col">月次集計の行</th><th scope="col">訂正前</th><th scope="col">訂正後</th></tr></thead>
+<tbody>
+<tr><th scope="row">月末仕掛品</th><td>15,000円</td><td>24,000円</td></tr>
+<tr><th scope="row">完成原価</th><td>75,000円</td><td>66,000円</td></tr>
+<tr><th scope="row">月末製品</th><td>33,000円</td><td>24,000円</td></tr>
+<tr><th scope="row">売上原価</th><td>62,000円</td><td>62,000円</td></tr>
+</tbody>
+</table>
+</div>
+</figure>
+
+訂正後の完成原価は10,000＋80,000−24,000＝66,000円です。売上原価は20,000＋66,000−24,000＝62,000円で、訂正前と同じでした。原価9,000円は今月末も在庫に残るため、製品と仕掛品の内訳だけが変わります。売上高と販管費が同じなら営業利益も変わりません。月末在庫の合計48,000円は両方で一致するので、各製品の作業票・完了票と個別に照合する必要があります。
+
+この9,000円を訂正の際に月末仕掛品へ足したものの、月末製品から外し忘れた場合、売上原価はどうなりますか。
+
+<details>
+<summary>考え方と答えを確認する</summary>
+<p>完成原価は66,000円ですが、月末製品を33,000円のまま使うと、20,000＋66,000−33,000＝53,000円になります。販売されていない同じ一組が二つの在庫に入っているため、正しい売上原価62,000円より9,000円少なく出ます。</p>
+</details>
 
 <section class="guided-lesson" id="guided-monthly-profit-statement" aria-labelledby="guided-monthly-profit-statement-title">
 <h3 id="guided-monthly-profit-statement-title">途中で確認　仕掛品と製品の訂正を別々に反映する</h3>

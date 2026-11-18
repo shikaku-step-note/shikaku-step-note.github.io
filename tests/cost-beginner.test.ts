@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { bokiAssessments } from '../src/data/bookkeeping';
-import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costCourseReviewVersion, costMockVersion, costApplicationVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
+import { costBank, costLessonIds, costLegacyIds, costUnitOneAssessmentVersion, costUnitOneExpandedVersion,costUnitOneReviewVersion, costUnitOneGlossaryVersion, costUnitTwoAssessmentVersion, costUnitTwoReviewVersion, costSheetAuditVersion, costUnitThreeReviewVersion, costMonthlyProfitVersion, costUnitFourReviewVersion, costCvpPlanningVersion, costUnitFiveReviewVersion, costCourseReviewVersion, costMockVersions, costApplicationVersion, costVersion, costWorkload } from '../src/data/cost-beginner';
 import scope from '../src/data/cost-beginner-coverage.json';
 import { assessmentMaterialIssues, newAttempt, gradeAttempt, practicePoints, remainingSeconds, compatibleAttempt, isCorrect } from '../src/lib/assessment';
 import { emptyData, validateData, mergeData } from '../src/lib/storage';
@@ -85,9 +85,9 @@ test('cost old completions/bookmarks/history survive import without completing n
 
 test('two full cost mocks use current selection format and absolute 40-minute deadlines',()=>{
   const seen=new Set<string>();const taught=new Set(Object.values(costBank).flat().map(q=>q.prompt));
-  for(const form of ['a','b']){
+  for(const form of ['a','b'] as const){
     const a=assessments.find(a=>a.id===`cb2-mock-${form}`)!;
-    assert.equal(a.version,costMockVersion);assert.equal(a.minutes,40);assert.equal(a.questions.length,37);
+    assert.equal(a.version,costMockVersions[form]);assert.equal(a.minutes,40);assert.equal(a.questions.length,37);
     assert.deepEqual(assessmentMaterialIssues(a),[]);
     assert.deepEqual([...new Set(a.questions.map(q=>q.group))].map(g=>a.questions.filter(q=>q.group===g).reduce((s,q)=>s+(q.points??1),0)),[44,24,32]);
     for(const q of a.questions){assert.equal(q.input,undefined);assert.equal(q.options.length,4);const premise=JSON.stringify([q.prompt,q.materialIds]);assert.ok(!seen.has(premise));assert.ok(!taught.has(q.prompt));seen.add(premise);}
@@ -116,7 +116,9 @@ test('root review and mock numeric targets agree with independently expressed fo
 
 test('mock inventory and profit vectors reconcile independently in both directions',()=>{
   for(const [form,data] of Object.entries({
-    a:{direct:[282000,198000],overhead:120000,hours:[300,200],bw:[30000,20000],ew:[40000,30000],bf:[50000,20000],ef:[34000,16000],sales:[600*900,500*700],sga:24000+16000+50000},
+    a:{direct:[300*600+180*500+12000,200*600+140*500+8000],overhead:120000,hours:[300,200],
+       bw:[0,0],ew:[0,0],bf:[0,0],ef:[(354-300)*1000,(410-350)*600],
+       sales:[300*1800,350*1000],sold:[300,350],completed:[354,410],sga:24000+16000+50000},
     b:{direct:[(20000+130000-30000)+400*200+10000,(15000+100000-10000)+200*175+5000],overhead:180000,hours:[400,200],bw:[25000,25000],ew:[45000,20000],bf:[45000,45000],ef:[35000,15000],sales:[600000,400000],sga:1000000*.02+180000},
   })){
     const manufacturing=data.direct.map((d,i)=>d+data.overhead*data.hours[i]!/data.hours.reduce((s,h)=>s+h,0));
@@ -124,7 +126,12 @@ test('mock inventory and profit vectors reconcile independently in both directio
     const cogs=finished.map((f,i)=>data.bf[i]!+f-data.ef[i]!);
     const gross=data.sales.map((s,i)=>s-cogs[i]!);
     const profit=gross.reduce((s,g)=>s+g,0)-data.sga;
-    assert.equal(profit,form==='a'?200000:240000);
+    assert.equal(profit,form==='a'?290000:240000);
+    if ('sold' in data && data.sold && data.completed) {
+      const { sold, completed } = data;
+      assert.deepEqual(cogs, sold.map((count,i)=>finished[i]!/completed[i]!*count));
+      assert.deepEqual(cogs,[300000,210000]);
+    }
     assert.equal(profit,data.sales.reduce((s,n)=>s+n,0)-manufacturing.reduce((s,n)=>s+n,0)-data.sga+data.ew.reduce((s,n)=>s+n,0)-data.bw.reduce((s,n)=>s+n,0)+data.ef.reduce((s,n)=>s+n,0)-data.bf.reduce((s,n)=>s+n,0));
     const a=assessments.find(a=>a.id===`cb2-mock-${form}`)!;
     const last=a.questions.at(-1)!;assert.equal(numeric(last.options[last.answer]!),profit);
@@ -262,9 +269,21 @@ test('every cost accounting lesson has two teaching figures and in-body feedback
   for(const {data,body} of rows){
     const figures=[...body.matchAll(/<figure id="([^"]+)"/g)];
     assert.ok(new Set(figures.map(figure=>figure[1])).size>=2,data.stableId);
-    assert.equal((body.match(/<form data-guided-practice/g)??[]).length,data.stableId==='cb2-department-cost-route'?2:1,data.stableId);
-    assert.match(body,/<fieldset hidden>[\s\S]+?<p role="status" data-guided-feedback>/);
-    assert.match(body,/<details>\s*<summary>[^<]+<\/summary>\s*<p data-guided-solution>/);
+    const guides=[...body.matchAll(/<section\b[^>]*class="guided-lesson"[^>]*>[\s\S]*?<\/section>/g)]
+      .map(match=>match[0]).filter(section=>section.includes('<form data-guided-practice'));
+    assert.ok(guides.length>=1,data.stableId);
+    assert.equal(guides.length,(body.match(/<form data-guided-practice/g)??[]).length,data.stableId);
+    for(const guide of guides){
+      assert.match(guide,/<fieldset hidden>[\s\S]+?<p role="status" data-guided-feedback>/);
+      assert.match(guide,/<details>\s*<summary>[^<]+<\/summary>\s*<p data-guided-solution>/);
+    }
+    if(data.stableId==='cb2-integration'){
+      const physical=guides.find(guide=>guide.includes('id="guided-integration-physical"'));
+      assert.ok(physical,'physical production and sales quantities need their own guided exercise');
+      const unitCost=52000/80;
+      assert.ok(physical.includes('data-expected="'+((80-75)*unitCost)+'"'));
+      assert.ok(body.indexOf(physical)<body.indexOf('id="practice-integration-physical-records"'));
+    }
   }
 });
 
@@ -449,6 +468,11 @@ test('revised mocks retain 40-minute format and protect older scores from change
   const current=assessments.find(a=>a.id==='cb2-mock-a')!;
   const old=newAttempt({...current,version:costVersion},'timed',1000);
   assert.ok(!compatibleAttempt(current,old));
+  const previousFormA=newAttempt({...current,version:'cost-2026-mock-v4'},'timed',1000);
+  assert.ok(!compatibleAttempt(current,previousFormA));
+  const formB=assessments.find(a=>a.id==='cb2-mock-b')!;
+  const previousFormB=newAttempt({...formB,version:'cost-2026-mock-v4'},'timed',1000);
+  assert.ok(compatibleAttempt(formB,previousFormB));
   const priceChange=current.questions.find(q=>q.id==='cb2-mock-a-p04')!;
   assert.equal(numeric(priceChange.options[priceChange.answer]!),334);
   assert.ok(333*(1440-900)<180000);

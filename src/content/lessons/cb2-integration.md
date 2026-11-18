@@ -3,10 +3,10 @@
   "stableId": "cb2-integration",
   "qualification": "cost-beginner",
   "title": "原価計算初級の総合例題｜在庫・CVP・売上高差異",
-  "description": "在庫を含む当月の損益、翌月のCVP、売上高の予算実績差異を資料から使い分けます。売上が増えても利益が減る場合を数字で確かめます。",
+  "description": "材料の消費量と作業時間から製品別原価を求め、完成数と販売数から月末在庫と営業利益を計算します。別の資料でCVPと売上高差異も練習できます。",
   "order": 33,
   "unit": 5,
-  "minutes": 107,
+  "minutes": 122,
   "sample": false,
   "subject": "cost",
   "syllabus": [
@@ -14,7 +14,7 @@
     3
   ],
   "scopeLabel": "原価計算初級の現行出題範囲に基づく独自教材",
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "objectives": [
     "二製品の直接費・配賦費と在庫から営業利益を計算する",
     "在庫が変わる損益と在庫一定のCVPを区別して計画する",
@@ -85,9 +85,9 @@
 
 <span id="first-reading"></span>
 
-製造に使った金額は製品名ごとにまとめて<a class="lesson-term" data-lesson-term href="#lesson-term-cost-of-production">製品別原価</a>を求め、未完成と未販売の分は<a class="lesson-term" data-lesson-term href="#lesson-term-finished-ledger">在庫原価</a>として引き継ぎます。販売に対応した分で当月の利益を出した後、計画した売上と実績の差を<a class="lesson-term" data-lesson-term href="#lesson-term-revenue-variance">売上高差異</a>で説明します。翌月の利益を試算するときは、当月の実績計算で使った数量や費用と混ぜず、設例が指定する前提を使います。
+製品別の利益を求めるときは、まず材料と作業の記録を製品ごとに集めて<a class="lesson-term" data-lesson-term href="#lesson-term-cost-of-production">製品別原価</a>を計算します。その月に完成していないものと、完成しても売れなかったものにかかった額は、翌月へ引き継ぐ<a class="lesson-term" data-lesson-term href="#lesson-term-finished-ledger">在庫原価</a>です。販売した数量に対応する原価を売上高から引き、販売と管理の費用を引くと、当月の営業利益が分かります。
 
-試験形式のまとまった資料では、材料費、作業時間、仕掛品、製品在庫、売上高が一つの表に並びます。必要なのは、目に入った数字をすべて同じ式へ入れることではありません。まず何を求める問題かを決め、原価を製品へ集める作業、期間の費用へ移す作業、将来の数量を計画する作業を区別します。
+利益を計画する問いでは、翌月の予定数量や、数量が変わると動く費用を使います。その後に予定と実績を比較する問いがあれば、<a class="lesson-term" data-lesson-term href="#lesson-term-revenue-variance">売上高差異</a>を数量と価格の影響に分けます。同じ表に数字が並んでいても、当月実績の集計、翌月の計画、予算との比較では期間と条件が違うため、どの問いに答えるかを確認してから値を選びます。
 
 この課の前半では、二製品A・Bの当月実績から製品別の損益を作ります。その後のCVPは「翌月は在庫を変えない」という別の計画条件です。実績の在庫が変わった月と、在庫一定で単位変動費を使う月を同じものとして照合しないよう、対象期間と条件を明示します。
 
@@ -170,6 +170,23 @@ Aの売上総利益は480,000−350,000＝130,000円。販売費等は直接分3
 
 もし前半のように製品在庫が動く月なら、製造費用の一部が在庫へ残ったり、以前の在庫原価が売上原価に加わったりします。その月の利益を、在庫条件のない単純なCVP式と無条件に一致させてはいけません。何を一定とした比較なのかを確かめることが先です。
 
+<section class="guided-lesson" id="guided-integration" aria-labelledby="guided-integration-title">
+<h3 id="guided-integration-title">在庫が増減しない条件で、実績の営業利益を求める</h3>
+<p id="guided-integration-prompt">同じ製品の計画は60個・売価2,400円、単位変動費1,200円、固定費40,000円でした。実績は62個・売価2,500円、単位変動費1,500円、固定費41,000円です。この練習では在庫は両方とも増減しません。実績の営業利益はいくらですか。</p>
+<form data-guided-practice data-expected="21000" data-guided-hint="実績の売上高から実績の変動費と固定費を引きます。売上の予算差を利益にそのまま加えません。" aria-labelledby="guided-integration-title" aria-describedby="guided-integration-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-integration-input">答え（円）</label> <input id="guided-integration-input" name="answer" aria-describedby="guided-integration-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>実績の貢献利益は（2,500−1,500）×62＝62,000円。固定費41,000円を引いた営業利益は21,000円です。予算では32,000円なので、売上が11,000円増えても利益は11,000円減っています。</p>
+</details>
+</section>
+
 <span id="objective-3"></span>
 
 ## 売上の予算実績差異は、損益の売上高へ照合する
@@ -242,6 +259,87 @@ Aの数量差異は（400−380）×1,250＝＋25,000円、価格差異は（1,2
 
 第三に損益と差異の照合です。製品別営業利益の合計は全体営業利益へ、数量差異と価格差異の合計は実際売上高−予算売上高へ戻します。同じ結果を別の経路から計算するので、元の計算をそのまま見直すだけより誤りを探しやすくなります。
 
+<span id="worked-integration-physical-records"></span>
+
+## 消費記録から在庫と利益までつなげる別の工場の例
+
+この工場では二つの製品を作っています。月初に仕掛品も完成品もなく、当月の製造はすべて完了しました。月末に仕掛品はありませんが、完成品には売れ残りがあります。材料の単価は1m当たり200円、直接作業の賃率は1時間当たり600円です。製造間接費40,000円は、二つの製品の機械使用時間で分けます。
+
+| 原価を集めるために見る記録 | 製品A | 製品B |
+| --- | ---: | ---: |
+| 出庫記録の材料消費量（m） | 120 | 90 |
+| 作業票の直接作業時間（時間） | 40 | 30 |
+| 設備記録の機械使用時間（時間） | 60 | 40 |
+| 完成記録の数量（個） | 120 | 80 |
+| 出荷票で確認した販売数（個） | 100 | 70 |
+| 販売単価（円） | 1,100 | 1,300 |
+| 製品別に集計済みの販管費（円） | 12,000 | 10,000 |
+
+### 記録を円に直し、完成品一個の原価を出す
+
+材料と作業には製品名が付いています。そのため、消費量に材料単価を掛けた額と、直接作業時間に賃率を掛けた額を、製品へ直接集められます。製造間接費だけは、指定された機械使用時間を使って分けます。直接作業時間は労務費に使った数字なので、間接費の配賦には入れません。機械は合わせて100時間使われており、1時間当たりの配賦率は40,000円÷100時間＝400円です。
+
+Aの材料費、労務費、配賦額は24,000円ずつで、製造原価は72,000円です。Bは材料費18,000円、労務費18,000円、配賦額16,000円で、製造原価は52,000円になります。仕掛品による月をまたぐ調整がないので、この金額が当月の完成原価です。完成品一個当たりでは、Aは72,000÷120＝600円、Bは52,000÷80＝650円になります。原価を分ける相手は完成した製品すべてなので、この計算には完成数を使います。
+
+### 販売分と残りを分け、帳票の合計で確かめる
+
+| 照合する金額（円） | 製品A | 製品B |
+| --- | ---: | ---: |
+| 当月の完成原価 | 72,000 | 52,000 |
+| 売上原価 | 60,000 | 45,500 |
+| 月末製品原価 | 12,000 | 6,500 |
+| 売上高 | 110,000 | 91,000 |
+| 売上総利益 | 50,000 | 45,500 |
+| 営業利益 | 38,000 | 35,500 |
+
+Aの完成品120個を販売100個と在庫20個に分け、両方に600円を掛けます。合計の72,000円が完成原価と一致するので、倉庫の分まで当月の費用にしていないと確かめられます。Bも、完成80個から販売70個と在庫10個を分けます。販売した分の原価45,500円を売上高91,000円から差し引くと、売上総利益は45,500円です。その後、販管費10,000円を引くと営業利益は35,500円。二つの製品を合わせると73,500円になります。
+
+<section class="guided-lesson" id="guided-integration-physical" aria-labelledby="guided-integration-physical-title">
+<h3 id="guided-integration-physical-title">製品Bの販売数だけを変えて、残る原価を求める</h3>
+<p id="guided-integration-physical-prompt">製品Bが当月に75個売れたとします。製造記録と単価は上の例と同じです。Bの月末製品原価はいくらでしょうか。</p>
+<form data-guided-practice data-expected="3250" data-guided-hint="完成した数量と売れた数量の差へ、完成品一個当たりの原価を掛けます。" aria-labelledby="guided-integration-physical-title" aria-describedby="guided-integration-physical-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>月末製品原価を答える</legend>
+<label>金額（円） <input name="amount" inputmode="numeric" autocomplete="off"></label>
+<button class="button secondary" type="submit">答えを確認</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>完成80個−販売75個＝5個が残ります。1個650円なので、月末製品原価は3,250円です。販売分の売上原価48,750円と足すと、完成原価52,000円に戻ります。</p>
+</details>
+</section>
+
+<details>
+<summary>営業利益まで求め、別の方法でも検算する</summary>
+<p>販管費が変わらなければ、Bの売上高は75個×1,300円＝97,500円、売上総利益は48,750円で、営業利益は38,750円です。追加で販売した5個について、1個当たりの売上1,300円から売上原価650円を引いた650円が増えると考えても、利益の増加は3,250円になります。</p>
+</details>
+
+<span id="practice-integration-physical-records"></span>
+
+## 完成数と販売数が異なる月を、別の資料で集計する
+
+製品Xと製品Yの二種類を作る工場です。材料の単価は1kg当たり180円、直接作業の賃率は1時間当たり500円です。当月の製造間接費24,000円は設備使用時間を基準に分けます。月初に製品在庫はなく、仕掛品は月初にも月末にもありません。販管費は工場全体で12,000円です。
+
+| 当月の記録 | 製品X | 製品Y |
+| --- | ---: | ---: |
+| 材料を使った量（kg） | 100 | 50 |
+| 直接作業時間（時間） | 30 | 20 |
+| 設備使用時間（時間） | 80 | 40 |
+| 完成数量（個） | 70 | 45 |
+| 販売数量（個） | 65 | 35 |
+| 販売単価（円） | 1,000 | 950 |
+
+製品ごとの月末製品原価と、工場全体の営業利益を求めてください。売上原価を、売った数量から直接求める方法と、完成原価から月末製品原価を差し引く方法の両方で確かめましょう。
+
+<details>
+<summary>解答と二つの検算を読む</summary>
+<p>設備使用時間は合わせて120時間なので、配賦率は24,000÷120＝200円です。製品Xの完成原価は材料18,000円、直接労務15,000円、配賦16,000円を足した49,000円。製品Yは9,000円、10,000円、8,000円を足した27,000円です。</p>
+<p>完成品一個当たりではXが700円、Yが600円です。月末に残るのはXが5個で3,500円、Yが10個で6,000円。売上原価は、販売した65個と35個にそれぞれの原価を掛けて45,500＋21,000＝66,500円です。二つの完成原価76,000円から月末製品原価9,500円を引いても同じです。</p>
+<p>売上高は65,000＋33,250＝98,250円です。売上原価66,500円を差し引くと売上総利益は31,750円。販管費12,000円を引くと、工場全体の営業利益は19,750円です。在庫原価と売上原価の和が完成原価と一致すれば、原価の振り分けはそろっています。販売数を同じように転記し間違えると、売上原価と在庫原価の和が一致することもあります。販売数量そのものは、元の出荷票と照合します。</p>
+</details>
+
 ## 独力で解くための短い総合課題
 
 次は一製品の別条件です。月初仕掛品12,000円、当月製造費用240,000円、月末仕掛品20,000円、月初製品30,000円、月末製品18,000円、実際売上高360,000円、販売費等40,000円です。売上原価と営業利益を、自分で二段階の原価計算から求めてください。
@@ -271,23 +369,6 @@ CVPの設問では、直接費か間接費かより、変動費か固定費か�
 二段階で計算した売上原価244,000円と一致します。製品別の完成・販売の流れを理解した後なら、合計在庫の増減でも全体原価を確かめられます。ただし、当月製造費用に含まれていない費用を途中へ勝手に入れたり、販売費を仕掛品へ含めたりしないよう、同じ集計範囲の金額で照合します。
 
 営業利益76,000円に販売費等40,000円、売上原価244,000円を足すと売上高360,000円へ戻ります。利益から逆に費用を足して収益へ戻す検算は、原価の合計が合っていても販売費を引き忘れた誤りを見つけられます。
-
-<section class="guided-lesson" id="guided-integration" aria-labelledby="guided-integration-title">
-<h3 id="guided-integration-title">途中で確認　売上が増えた月の営業利益を費用から確かめる</h3>
-<p id="guided-integration-prompt">同じ製品の計画は60個・売価2,400円、単位変動費1,200円、固定費40,000円でした。実績は62個・売価2,500円、単位変動費1,500円、固定費41,000円です。この練習では在庫は両方とも増減しません。実績の営業利益はいくらですか。</p>
-<form data-guided-practice data-expected="21000" data-guided-hint="実績の売上高から実績の変動費と固定費を引きます。売上の予算差を利益にそのまま加えません。" aria-labelledby="guided-integration-title" aria-describedby="guided-integration-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="guided-integration-input">答え（円）</label> <input id="guided-integration-input" name="answer" aria-describedby="guided-integration-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
-<details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>実績の貢献利益は（2,500−1,500）×62＝62,000円。固定費41,000円を引いた営業利益は21,000円です。予算では32,000円なので、売上が11,000円増えても利益は11,000円減っています。</p>
-</details>
-</section>
 
 ## 下の演習で、自分の判断を再現できるようにする
 

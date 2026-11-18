@@ -1,12 +1,12 @@
 ---
-{"stableId":"cb2-cost-flow","qualification":"cost-beginner","title":"原価の流れと仕訳｜仕掛品・製品・売上原価","description":"材料を使ってから製品を販売するまでの原価の流れを、仕掛品・製品・売上原価の仕訳で追います。完成と販売の記録を照合し、月末残高を訂正します。","order":13,"minutes":92,"sample":false,"updated":"2026-11-16","unit":2,"syllabus":[1,3],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["製造に関する勘定と借方・貸方の基本的な動きを説明する","材料消費・製造原価投入・完成・販売に伴う原価の移動を記録する","仕掛品・製品・売上原価の金額を照合し二重費用化を避ける"],"prerequisite":"材料費・労務費・経費と直課・配賦を確認してください。簿記未経験でも読めるよう、借方・貸方から説明します。","keywords":["勘定","借方","貸方","仕訳","仕掛品","製品","売上原価","原価の流れ","売上原価 仕訳","完成振替","売上原価の仕訳","仕掛品 製品 売上原価"],"glossary":[{"term":"勘定","definition":"資産や費用などの種類ごとに金額の増減を記録する区分"},{"term":"借方","definition":"仕訳や勘定記録の左側を表す名称"},{"term":"貸方","definition":"仕訳や勘定記録の右側を表す名称"},{"term":"仕訳","definition":"取引の金額を借方と貸方の勘定に分けて記録する手続き"},{"term":"仕掛品","definition":"製造に着手しているがまだ完成していない製品に対応する原価を記録する資産"},{"term":"製品","definition":"完成しているがまだ販売していない製品に対応する原価を記録する資産"},{"term":"売上原価","definition":"販売した製品等に対応する原価を記録する費用"}],"inlineGlossary":[{"id":"debit","term":"借方","definition":"仕訳の左側。勘定の種類と、金額が増えたか減ったかで書く側を決めます。"},{"id":"credit","term":"貸方","definition":"仕訳の右側。原価が別の資産へ移る場合、移動元の減少を記録する側です。"},{"id":"transfer","term":"振替","definition":"一つの勘定で記録していた金額を、別の勘定へ移して記録すること。"}]}
+{"stableId":"cb2-cost-flow","qualification":"cost-beginner","title":"原価の流れと仕訳｜仕掛品・製品・売上原価","description":"材料を使ってから製品を販売するまでの原価の流れを、仕掛品・製品・売上原価の仕訳で追います。完成と販売の記録を照合し、月末残高を訂正します。","order":13,"minutes":92,"sample":false,"updated":"2026-11-18","unit":2,"syllabus":[1,3],"scopeLabel":"原価計算初級・現行の公式出題範囲","subject":"cost","objectives":["製造に関する勘定と借方・貸方の基本的な動きを説明する","材料消費・製造原価投入・完成・販売に伴う原価の移動を記録する","仕掛品・製品・売上原価の金額を照合し二重費用化を避ける"],"prerequisite":"材料費・労務費・経費と直課・配賦を確認してください。簿記未経験でも読めるよう、借方・貸方から説明します。","keywords":["勘定","借方","貸方","仕訳","仕掛品","製品","売上原価","原価の流れ","売上原価 仕訳","完成振替","売上原価の仕訳","仕掛品 製品 売上原価"],"glossary":[{"term":"勘定","definition":"資産や費用などの種類ごとに金額の増減を記録する区分"},{"term":"借方","definition":"仕訳や勘定記録の左側を表す名称"},{"term":"貸方","definition":"仕訳や勘定記録の右側を表す名称"},{"term":"仕訳","definition":"取引の金額を借方と貸方の勘定に分けて記録する手続き"},{"term":"仕掛品","definition":"製造に着手しているがまだ完成していない製品に対応する原価を記録する資産"},{"term":"製品","definition":"完成しているがまだ販売していない製品に対応する原価を記録する資産"},{"term":"売上原価","definition":"販売した製品等に対応する原価を記録する費用"}],"inlineGlossary":[{"id":"debit","term":"借方","definition":"仕訳の左側。勘定の種類と、金額が増えたか減ったかで書く側を決めます。"},{"id":"credit","term":"貸方","definition":"仕訳の右側。原価が別の資産へ移る場合、移動元の減少を記録する側です。"},{"id":"transfer","term":"振替","definition":"一つの勘定で記録していた金額を、別の勘定へ移して記録すること。"}]}
 ---
 
 <span id="first-reading"></span>
 
-工場で原価が移動したら、移動先の勘定に増加、移動元に減少を記録します。この章の在庫の移動では、増えた額を左の<a class="lesson-term" data-lesson-term href="#lesson-term-debit">借方</a>、減った額を右の<a class="lesson-term" data-lesson-term href="#lesson-term-credit">貸方</a>に書きます。完成や販売に合わせて記録する勘定が変わることを<a class="lesson-term" data-lesson-term href="#lesson-term-transfer">振替</a>といいます。仕訳を書く前に、何がどこからどこへ動いたか言葉にします。
+材料を使い始めた製品の原価は、未完成の間は仕掛品に集めます。完成した時点で製品に移し、売れたときに販売分を売上原価へ移します。このように、同じ額の記録先を移すことを<a class="lesson-term" data-lesson-term href="#lesson-term-transfer">振替</a>といいます。
 
-製造に使う原価は、材料、仕掛品、製品を経て、販売したときに売上原価へ移ります。仕掛品は製造途中にあるもの、製品は完成したものです。今どの段階にあるかを確認すると、原価を移す先の勘定を選べます。
+振替を仕訳で表すときは、増える在庫の勘定や売上原価を左の<a class="lesson-term" data-lesson-term href="#lesson-term-debit">借方</a>に、移動元で減る在庫の勘定を右の<a class="lesson-term" data-lesson-term href="#lesson-term-credit">貸方</a>に書きます。たとえば完成原価を製品に移すと、製品が増え、仕掛品が同額だけ減ります。先に原価の移動を言葉にすれば、移動元と移動先を逆にしにくくなります。
 
 仕訳で記録するのは、どの勘定からどの勘定へ、いくら移ったかです。製品の完成や販売の時点で原価をもう一度加えると、同じ金額を二重に集計してしまいます。この章では、先に数量や原価の記録を整理し、仕訳と残高表が同じ流れを表していることを確かめます。
 
@@ -111,6 +111,23 @@
 
 同じように、完成原価と販売価格を取り違えても左右だけを合わせることはできてしまいます。仕訳を点検するときは、最初に取引の段階を言葉で確かめ、次に増える勘定と減る勘定、最後に金額を見ます。仕訳の形を覚える練習と、何が増減したか説明する練習を一緒に進めましょう。
 
+<section class="guided-lesson" id="guided-cost-flow" aria-labelledby="guided-cost-flow-title">
+<h3 id="guided-cost-flow-title">途中で確認　完成と販売を訂正し、製品残高へつなぐ</h3>
+<p id="guided-cost-flow-prompt">訂正前の月末製品残高は26,000円です。その中には、実際には月末未完成だった4,800円を完成と記録した分が含まれています。また、当月販売分の原価2,300円が二重に製品残高から引かれていました。訂正後の月末製品残高はいくらですか。</p>
+<form data-guided-practice data-expected="23500" data-guided-hint="未完成分は製品から仕掛品へ戻します。販売の二重記録を取り消すと、その原価は製品へ一度戻ります。" aria-labelledby="guided-cost-flow-title" aria-describedby="guided-cost-flow-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>練習の答え</legend>
+<label for="guided-cost-flow-input">答え（円）</label> <input id="guided-cost-flow-input" name="answer" aria-describedby="guided-cost-flow-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
+<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>解答と考え方を読む</summary>
+<p data-guided-solution>26,000−4,800＋2,300＝23,500円です。仕掛品は4,800円増え、売上原価は2,300円減ります。</p>
+</details>
+</section>
+
 <span id="monthly-cost-reconciliation"></span>
 
 ## 月次資料をつなぎ、原価の移動を検算する
@@ -179,22 +196,24 @@
 
 どちらの表でも、月初仕掛品12,000円、月初製品9,000円、当月製造費60,000円の合計81,000円は保たれます。合計検算を終えたら、完成・販売の記録を順に点検し、原価が当月のどこに残るかを決めます。
 
-<section class="guided-lesson" id="guided-cost-flow" aria-labelledby="guided-cost-flow-title">
-<h3 id="guided-cost-flow-title">途中で確認　完成と販売を訂正し、製品残高へつなぐ</h3>
-<p id="guided-cost-flow-prompt">訂正前の月末製品残高は26,000円です。その中には、実際には月末未完成だった4,800円を完成と記録した分が含まれています。また、当月販売分の原価2,300円が二重に製品残高から引かれていました。訂正後の月末製品残高はいくらですか。</p>
-<form data-guided-practice data-expected="23500" data-guided-hint="未完成分は製品から仕掛品へ戻します。販売の二重記録を取り消すと、その原価は製品へ一度戻ります。" aria-labelledby="guided-cost-flow-title" aria-describedby="guided-cost-flow-prompt" data-lesson-screen-only>
-<fieldset hidden>
-<legend>練習の答え</legend>
-<label for="guided-cost-flow-input">答え（円）</label> <input id="guided-cost-flow-input" name="answer" aria-describedby="guided-cost-flow-prompt" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off">
-<div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div>
-</fieldset>
-<p role="status" data-guided-feedback></p>
-</form>
+<span id="worked-transfer"></span>
+
+### 例題　仕掛品と製品の合計は同じなのに、完成への振替が足りない
+
+月初の仕掛品は15,000円、当月に製造へ投入した額は70,000円です。月末の仕掛品は現場の記録で21,000円と確認できたので、完成した分は15,000＋70,000−21,000＝64,000円です。ところが帳簿では59,000円だけ仕掛品から製品へ移していました。月初製品は8,000円、販売済みの原価56,000円は正しく振り替えてあるとします。
+
+| 月末の勘定 | 帳簿にある額 | 正しい額 | 確かめること |
+| --- | ---: | ---: | --- |
+| 仕掛品 | 26,000円 | 21,000円 | すでに完成した5,000円が残っている |
+| 製品 | 11,000円 | 16,000円 | 受け取るべき5,000円が足りない |
+| 合計 | 37,000円 | 37,000円 | 合計だけでは振替の漏れは分からない |
+
+訂正の仕訳は借方「製品」5,000円、貸方「仕掛品」5,000円です。工場が使った原価を増やす処理ではなく、完成した分の記録先を直す処理です。続けて製品の欄を8,000＋64,000−56,000＝16,000円と確かめれば、完成記録と販売記録を別々に照合できます。
+
 <details>
-<summary>解答と考え方を読む</summary>
-<p data-guided-solution>26,000−4,800＋2,300＝23,500円です。仕掛品は4,800円増え、売上原価は2,300円減ります。</p>
+<summary>完成への振替が5,000円多すぎた場合</summary>
+<p>製品に過大計上された5,000円を仕掛品へ戻します。借方は「仕掛品」、貸方は「製品」です。原価の移動元が逆なので、仕訳の左右も逆になります。</p>
 </details>
-</section>
 
 ## 原価の移動を、自分の言葉と仕訳で確認する
 
