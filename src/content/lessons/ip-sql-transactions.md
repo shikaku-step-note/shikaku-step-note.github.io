@@ -5,9 +5,9 @@
   'title': 'SQLとトランザクション',
   'description': '検索・集計の基本を読む。同時更新と復旧の必要性を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 41,
-  'minutes': 75,
+  'minutes': 83,
   'sample': false,
-  'updated': '2026-11-16',
+  'updated': '2026-11-20',
   'unit': 21,
   'syllabus': [56, 57],
   'objectives': ['検索・集計の基本を読む', '同時更新と復旧の必要性を説明する'],
@@ -33,7 +33,9 @@
 
 ## 必要なデータを取り出す
 
-SQLではSELECTで列、FROMで対象、WHEREで条件を指定します。ORDER BYは並べ替え、GROUP BYはグループ化、HAVINGはグループに対する条件に使います。COUNT、SUM、AVGなどで集計します。NULLは値がない・不明等を表し、通常の等号でなくIS NULLなどで判定します。選択は行を絞り、<a class="lesson-term" data-lesson-term href="#lesson-term-projection">射影</a>は列を選び、結合は表を関連付けます。
+表に保存した情報から、必要な行や列を指定して取り出すためにSQLを使います。SELECTは結果へ出す列、FROMは使う表、WHEREは残す行の条件です。表示順が必要ならORDER BYで明示します。指定していない結果の行順へ依存しないようにします。
+
+行を絞る操作が選択、列を絞る操作が<a class="lesson-term" data-lesson-term href="#lesson-term-projection">射影</a>、関連する値で表同士を組み合わせる操作が結合です。店舗など同じ項目でまとめて合計するにはGROUP BY、集計後の値への条件にはHAVINGを使います。どの段階の何を絞るかを分けると、式から結果の表を作れます。
 
 ## 例：在庫数を合計する
 
@@ -60,6 +62,55 @@ SQLの各句の対象と、更新を一体として扱う理由を説明でき�
 在庫の移動で倉庫Aを減らしてからBを増やす途中に障害が起きると、片方だけ変われば総量がずれます。両更新を一つのトランザクションとし、成功時にコミット、失敗時にロールバックします。他の処理との見え方や、確定後に結果が残ることも別の性質として考えます。
 
 <details><summary>倉庫Aを減らした時点で確定してよい？</summary><p>移動全体が一つの処理なら、AとBの変更を両方成功させてから確定します。</p></details>
+
+<span id="ip-sql-transactions-source-reasoning"></span>
+
+## 同じ売上表を、行と集計後の条件へ順に通す
+
+集計では、まず材料として残す行を選び、その後でグループの合計を計算します。WHEREは元の行、HAVINGは集計したグループへの条件です。取消を除いた店舗別売上が1,000円以上の店を求めます。
+
+| 店舗 | 状態 | 売上（円） | WHEREで残るか |
+| --- | --- | ---: | --- |
+| 東 | 確定 | 600 | 残る |
+| 東 | 確定 | 500 | 残る |
+| 東 | 取消 | 900 | 除く |
+| 西 | 確定 | 800 | 残る |
+
+<figure id="ip-sql-transactions-query-stages">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 268" width="360" height="268" style="max-width:100%;height:auto" role="img" aria-labelledby="ip-sql-transactions-query-title ip-sql-transactions-query-description">
+<title id="ip-sql-transactions-query-title">行の選択と店舗別集計の順序</title>
+<desc id="ip-sql-transactions-query-description">4行から取消を除くと3行。店舗別に足すと東1100円、西800円の2行。合計1000円以上に絞ると東1100円の1行が残る。</desc>
+<g fill="none" stroke="currentColor" stroke-width="1.5">
+<rect x="20" y="10" width="320" height="46" rx="6"/><path d="M180 56V77"/>
+<rect x="20" y="77" width="320" height="46" rx="6"/><path d="M180 123V144"/>
+<rect x="20" y="144" width="320" height="46" rx="6"/><path d="M180 190V211"/>
+<rect x="20" y="211" width="320" height="46" rx="6"/>
+</g>
+<g fill="currentColor" font-family="sans-serif" font-size="17" text-anchor="middle">
+<text x="180" y="39">元の売上記録　4行</text>
+<text x="180" y="106">WHERE　取消を除くと3行</text>
+<text x="180" y="173">GROUP BY　東1100・西800</text>
+<text x="180" y="240">HAVING　東1100だけを残す</text>
+</g>
+</svg>
+<figcaption>処理の対象が一行の値から店舗の合計へ変わります。各段階を終えたときの表を作ってから、次の条件を適用します。</figcaption>
+</figure>
+
+<pre><code>SELECT 店舗, SUM(売上) AS 合計
+FROM 売上記録
+WHERE 状態 = '確定'
+GROUP BY 店舗
+HAVING SUM(売上) &gt;= 1000</code></pre>
+
+取消900円を除いて集めると東は1,100円、西は800円なので、結果は東だけです。WHEREに売上1,000円以上と書くと、600円と500円の行まで消えてしまいます。集計前に行を消す条件と、グループの合計を比べる条件を区別します。
+
+欠けた値NULLがあるときは件数の意味も確認します。COUNT(*)は残った行の数、COUNT(売上)は売上がNULLでない行の数です。売上未確認の一行を0円と扱うと、分かっている金額と欠けている情報の違いが失われます。
+
+**状態を変える。** 東店の500円が取消へ変わると、結果に出る店舗はありますか。
+
+<details><summary>解答と各段階を読む</summary>
+<p>東は600円、西は800円です。どちらも1,000円以上ではないので0行になります。東の取消900円と500円はWHEREで除かれ、HAVINGで足し直されることはありません。</p>
+</details>
 
 ## 行の絞込みとグループの絞込みを区別する
 

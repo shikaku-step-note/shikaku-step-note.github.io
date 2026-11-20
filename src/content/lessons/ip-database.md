@@ -5,9 +5,9 @@
   'title': 'データベースの設計と正規化',
   'description': '主キーと外部キーの役割を説明する。重複による更新の不整合を防ぐ。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 40,
-  'minutes': 65,
+  'minutes': 73,
   'sample': false,
-  'updated': '2026-11-16',
+  'updated': '2026-11-20',
   'unit': 21,
   'syllabus': [54, 55],
   'objectives': ['主キーと外部キーの役割を説明する', '重複による更新の不整合を防ぐ'],
@@ -36,7 +36,9 @@
 
 ## データを共有して管理する
 
-データベースは目的に沿って整理したデータの集まり、<a class="lesson-term" data-lesson-term href="#lesson-term-dbms">DBMS</a>はその定義、検索、更新、制御等を担うソフトウェアです。関係データベースは表（関係）を基本に扱います。行はレコード、列は属性です。NoSQLには文書型、キー・バリュー型等があり、用途や整合性の要件を比較します。
+複数の利用者が同じ情報を使うときは、情報を探せる形へ整理し、変更結果を一貫して管理する必要があります。目的に沿って整理したデータの集まりがデータベースです。表の構造を定め、検索、更新、同時利用の制御などを行うソフトウェアが<a class="lesson-term" data-lesson-term href="#lesson-term-dbms">DBMS</a>です。
+
+関係データベースでは、同じ種類の対象を表へまとめます。一行は一件の記録でレコードとも呼び、列は項目や属性です。顧客表なら、一行が一人の顧客、顧客番号や氏名が列に当たります。一行が何かを決めてから、重複しない識別情報や表同士の関連を考えます。NoSQLには文書型、キー・バリュー型などがあり、データと整合性の要件で選びます。
 
 ## 識別と関連を決める
 
@@ -71,6 +73,28 @@
 <figure id="ip-database-figure-1"><svg viewBox="0 0 422 74" width="422" height="74" style="max-width:100%;height:auto" role="img" aria-label="顧客と注文をIDで結ぶ, 顧客表, 顧客ID C07, 注文表, 注文ID O21, 参照, 顧客ID C07"><g fill="currentColor" text-anchor="middle" font-size="13"><rect x="4" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="68" y="32">顧客表</text><text x="68" y="51">顧客ID C07</text><rect x="147" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="211" y="32">注文表</text><text x="211" y="51">注文ID O21</text><rect x="290" y="10" width="128" height="54" rx="6" fill="currentColor" fill-opacity=".08" stroke="currentColor" /><text x="354" y="32">参照</text><text x="354" y="51">顧客ID C07</text></g><path d="M134 37h11m-4-4 4 4-4 4m136-4h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2"/></svg><figcaption>注文表の顧客IDが顧客表の行を参照します。注文IDは注文自体を識別します。</figcaption></figure>
 
 <details><summary>注文表の顧客IDが重複したら、必ず設計ミス？</summary><p>一人が何度も注文する設計なら重複して構いません。顧客表で一意であることと区別します。</p></details>
+
+<span id="ip-database-source-reasoning"></span>
+
+## 注文の番号だけでは、明細の一行を特定できない理由
+
+一つの注文に複数の商品が入る場合、注文全体と注文の明細では一行の意味が違います。注文番号は注文を特定できますが、明細表では同じ番号が繰り返されます。
+
+| 注文番号 | 明細番号 | 商品コード | 数量 |
+| --- | ---: | --- | ---: |
+| R21 | 1 | P04 | 2 |
+| R21 | 2 | P08 | 1 |
+| R22 | 1 | P04 | 3 |
+
+R21に二行あるので、注文番号だけは明細表の主キーにできません。明細番号1も二つの注文で重なります。この設計では、注文番号と明細番号の組が一行を識別します。同じ商品を別々の条件で注文できるなら、注文番号と商品コードの組も必ず一意とは限りません。
+
+商品名は商品表へ置き、明細に商品コードを持たせれば、商品名の訂正は商品表で行えます。ただし販売時の単価を履歴として残す要件があれば、その値は明細に保存します。現在の商品表の単価を過去の注文へそのまま結合すると、昔の金額まで変わるためです。
+
+**明細を追加する。** R21の3行目にP04を特別単価で載せました。主キー設計は使えますか。単価はどこへ記録しますか。
+
+<details><summary>解答と一行の意味を読む</summary>
+<p>明細番号3を付ければ、R21と3の組で識別できます。販売単価はその明細に保存します。商品コードが同じでも、明細番号と販売条件が違う行を持てます。</p>
+</details>
 
 ## 注文の行が何を一意に表すか決める
 

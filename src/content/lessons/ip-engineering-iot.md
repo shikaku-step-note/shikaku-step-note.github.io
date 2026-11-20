@@ -5,9 +5,9 @@
   'title': '生産・設計とIoTシステム',
   'description': '設計と生産を支えるシステムを区別する。IoTの計測・通信・制御を説明する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 13,
-  'minutes': 95,
+  'minutes': 105,
   'sample': false,
-  'updated': '2026-11-16',
+  'updated': '2026-11-20',
   'unit': 5,
   'syllabus': [15, 17],
   'objectives': ['設計と生産を支えるシステムを区別する', 'IoTの計測・通信・制御を説明する'],
@@ -37,7 +37,11 @@
 
 ## 設計から製造までをつなぐ
 
-<a class="lesson-term" data-lesson-term href="#lesson-term-cad">CAD</a>は設計をコンピュータで支援し、CAEは解析やシミュレーション、CAMは製造工程の支援に関係します。<a class="lesson-term" data-lesson-term href="#lesson-term-bom">BOM</a>は製品に必要な部品と構成を示します。<a class="lesson-term" data-lesson-term href="#lesson-term-mrp">MRP</a>は生産計画や在庫から必要な資材の量と時期を求めます。JITは必要な物を必要な時に必要な量だけ供給する考え方で、在庫を減らす一方、供給途絶への備えも必要です。
+製品を作るときは、形を決め、設計どおりに機能するかを確かめ、製造の方法へ落とし込みます。この一連の作業をコンピュータで支える仕組みが、エンジニアリングシステムです。<a class="lesson-term" data-lesson-term href="#lesson-term-cad">CAD</a>は図面や立体モデルなどの設計を支援します。CAEはその設計について強度、熱、流れなどを解析・シミュレーションし、CAMは製造用の加工データなどを作る側に関わります。同じ製品に使われても、支援する段階が異なります。
+
+設計した製品を実際に作るには、どの部品を何個ずつ使うかという構成も必要です。この一覧が<a class="lesson-term" data-lesson-term href="#lesson-term-bom">BOM</a>です。製品一台にねじを4本使うなら、100台には400本が必要と分かります。ただし、400本すべてを追加注文するとは限りません。手元の在庫や、すでに注文した分を確認するからです。
+
+生産計画と部品の構成、在庫、調達にかかる時間を組み合わせ、資材を必要な量・時期にそろえる計画が<a class="lesson-term" data-lesson-term href="#lesson-term-mrp">MRP</a>です。JITは、必要な物を必要な時に必要な量だけ供給する考え方です。在庫を減らすほど、入荷が遅れた場合の影響を受けやすくなるので、数量だけでなく供給の時期と途絶時の対応も考えます。
 
 ## IoTは物と情報を結ぶ
 
@@ -47,13 +51,46 @@ IoTでは<a class="lesson-term" data-lesson-term href="#lesson-term-sensor">セ�
 
 <a class="lesson-term" data-lesson-term href="#lesson-term-digital-twin">デジタルツイン</a>は現実の設備等をデジタル空間のモデルと対応させ、監視や検証に使う考え方です。モデルと現実のずれがあれば予測もずれます。スマートファクトリでは設備のデータを連携し、品質や稼働の改善に役立てます。
 
+<span id="ip-engineering-iot-source-reasoning"></span>
+
+## 同じ部品でも、使える日が違えば手配量が変わる
+
+製品一台に部品を2個使う生産を考えます。今週金曜の始業までに80台分の部品が必要です。現在の在庫と、すでに注文した分を次のように確認しました。安全在庫やほかの需要は、この例では考えません。
+
+<figure id="ip-engineering-iot-source-table">
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-engineering-iot-source-caption">
+<table>
+<caption id="ip-engineering-iot-source-caption">同じ部品でも、使える日が違えば手配量が変わる</caption>
+<thead><tr><th scope="col">部品の記録</th><th scope="col">数量</th><th scope="col">金曜までの生産へ使えるか</th></tr></thead>
+<tbody>
+<tr><th scope="row">今回必要な量</th><td>80台×2個＝160個</td><td>必要数の基準にする</td></tr>
+<tr><th scope="row">今ある在庫</th><td>50個</td><td>使える</td></tr>
+<tr><th scope="row">発注済み、木曜到着</th><td>40個</td><td>使える</td></tr>
+<tr><th scope="row">発注済み、翌週月曜到着</th><td>30個</td><td>今回は間に合わない</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption>元の記録と判断の根拠を、同じ行で照合します。</figcaption>
+</figure>
+
+発注済みの量は合計70個ありますが、金曜の生産へ使えるのは木曜着の40個です。在庫50個を合わせて90個なので、金曜までにそろえる不足は160−90＝70個になります。翌週到着分まで引いて40個と答えると、生産に必要な日に30個足りなくなります。
+
+MRPでは、製品の必要数を部品の構成へ展開した後、在庫と入荷予定を時期ごとに照合します。調達期間が分かれば、届いてほしい日から逆算して発注日も決めます。部品構成が同じでも、生産日と入荷日が変わると計画の答えは変わります。
+
+<span id="ip-engineering-iot-source-practice"></span>
+
+### 別の条件で判断する
+
+翌週月曜に届く予定の30個を金曜の始業前へ前倒しできました。追加で金曜までにそろえる必要のある量はいくつでしょうか。
+
+<details>
+<summary>考え方と答えを確かめる</summary>
+<p>使用可能な在庫と入荷は50＋40＋30＝120個なので、160−120＝40個です。必要数は変わらず、入荷時期が変わった分だけ不足が減ります。</p>
+</details>
+
 ## 例：温室の温度管理
 
 温度センサ→通信装置→判定処理→換気扇という流れを考えます。センサは測る装置、換気扇を動かす装置はアクチュエータです。通信が切れても危険な高温にならないよう、現地の制御と警報、手動操作を用意します。便利さに加え、認証情報の初期設定、更新、物理的な安全も設計します。
-
-## まとめ
-
-設計・解析・製造の役割と、計測・通信・処理・制御の流れを分けると、略語を業務の場面へ結び付けられます。
 
 ## 設計データが現場の制御になるまで
 
@@ -167,3 +204,7 @@ IoTでは<a class="lesson-term" data-lesson-term href="#lesson-term-sensor">セ�
 1台に部品Qが2個要る製品を20台作ります。合格在庫34個のうち別注文が4個を使い、明日入荷予定の8個は組立の翌日に検査が終わります。明日の組立に間に合わせる追加数を求めてください。
 
 <details><summary>考え方と答えを確認する</summary><p>必要数は20×2＝40個。明日使えるのは34−4＝30個です。検査終了が組立日の翌日なので入荷予定の8個は使える在庫に加えず、40−30＝10個の追加が必要です。</p></details>
+
+## まとめ
+
+設計・解析・製造の役割と、計測・通信・処理・制御の流れを分けると、略語を業務の場面へ結び付けられます。

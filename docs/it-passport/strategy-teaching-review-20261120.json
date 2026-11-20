@@ -1,0 +1,439 @@
+{
+  "verified": "2026-11-20",
+  "scope": "ストラテジ系7ユニット・16章",
+  "benchmark": "https://inuboki.com/nyuumon/nyuumon-text6/",
+  "review": "既存の情報と出題範囲を基礎に、定義を概念と利用目的から説明し、資料の値から判断へ進むよう推敲。数値は独自の設例。",
+  "chapterCountDecision": "既存章の目的・前提・応用の配置を照合した。追加したケースは、それぞれの中心手法の条件変更・資料読取りとして既存章内で指導し、独立した新技能の重複ページは増やしていない。",
+  "lessons": [
+    {
+      "id": "ip-analysis",
+      "unit": 1,
+      "title": "業務分析とデータの可視化",
+      "objectives": [
+        "分析の目的に合う図を選ぶ",
+        "相関と因果を区別する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-analysis-source-reasoning",
+      "sourceTableAnchor": "ip-analysis-source-table",
+      "freshTaskAnchor": "ip-analysis-source-practice",
+      "figures": [
+        "ip-analysis-source-table",
+        "ip-analysis-existing-visual",
+        "ip-analysis-figure-2",
+        "ip-analysis-figure-3",
+        "ip-analysis-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 105,
+      "minutesAfter": 115
+    },
+    {
+      "id": "ip-finance",
+      "unit": 1,
+      "title": "会計・財務と損益分岐点",
+      "objectives": [
+        "財務三表の役割を区別する",
+        "利益と損益分岐点を計算する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-finance-source-reasoning",
+      "sourceTableAnchor": "ip-finance-source-table",
+      "freshTaskAnchor": "ip-finance-source-practice",
+      "figures": [
+        "ip-finance-source-table",
+        "ip-finance-existing-visual",
+        "ip-finance-figure-2",
+        "ip-finance-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 105,
+      "minutesAfter": 115
+    },
+    {
+      "id": "ip-inventory-decisions",
+      "unit": 1,
+      "title": "在庫管理と発注方式：欠品を防ぐ数量を決める",
+      "objectives": [
+        "手元にある数量、入荷を待つ数量、引き当てた数量を区別し、入荷前の欠品を判定する",
+        "定量発注と定期発注について、発注する時点と数量を資料から判断する",
+        "需要が変わる複数の場合を枝に分け、欠品の制約と期待費用から発注案を選ぶ"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-inventory-decisions-source-reasoning",
+      "sourceTableAnchor": "ip-inventory-decisions-source-table",
+      "freshTaskAnchor": "ip-inventory-decisions-source-practice",
+      "figures": [
+        "ip-inventory-decisions-timeline",
+        "ip-inventory-decisions-period",
+        "ip-inventory-decisions-policy",
+        "ip-inventory-decisions-tree",
+        "ip-inventory-decisions-source-table",
+        "ip-inventory-decisions-materials-figure"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 75,
+      "minutesAfter": 85
+    },
+    {
+      "id": "ip-organization",
+      "unit": 1,
+      "title": "企業活動と組織・PDCA",
+      "objectives": [
+        "経営資源と組織の役割を説明する",
+        "PDCAとBCPを業務に当てはめる"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-organization-source-reasoning",
+      "sourceTableAnchor": "ip-organization-source-table",
+      "freshTaskAnchor": "ip-organization-source-practice",
+      "figures": [
+        "ip-organization-source-table",
+        "ip-organization-existing-visual",
+        "ip-organization-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 90,
+      "minutesAfter": 100
+    },
+    {
+      "id": "ip-reading-business-data",
+      "unit": 1,
+      "title": "経営データの読解演習：改善案を数字で選ぶ",
+      "objectives": [
+        "比較すべき母数を自分で決める",
+        "利益の増減を求め、改善案の条件を説明する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-reading-business-data-source-reasoning",
+      "sourceTableAnchor": "ip-reading-business-data-source-table",
+      "freshTaskAnchor": "ip-reading-business-data-source-practice",
+      "figures": [
+        "ip-reading-business-data-existing-visual",
+        "ip-reading-business-data-source-table",
+        "ip-reading-business-data-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 45,
+      "minutesAfter": 55
+    },
+    {
+      "id": "ip-source-bias-decision",
+      "unit": 1,
+      "title": "標本抽出とバイアス：調査の偏りを見抜く",
+      "objectives": [
+        "母集団と抽出枠を定め、目的と資料に合う標本の選び方を識別する",
+        "抽出・回答・測定の各段階で偏りを見つけ、比較条件の違いを確かめる",
+        "判断したいことに合う可視化を選び、案を出す工程と根拠を確かめる工程を区別する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-source-bias-decision-source-reasoning",
+      "sourceTableAnchor": "ip-source-bias-decision-source-table",
+      "freshTaskAnchor": "ip-source-bias-decision-source-practice",
+      "figures": [
+        "ip-source-bias-sampling-methods",
+        "ip-source-bias-response-flow",
+        "ip-source-bias-confounding",
+        "ip-source-bias-heatmap",
+        "ip-source-bias-decision-source-table"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 65,
+      "minutesAfter": 75
+    },
+    {
+      "id": "ip-law-ethics",
+      "unit": 2,
+      "title": "情報・労働・取引の法律と倫理",
+      "objectives": [
+        "身近な行動と関連する法律を結び付ける",
+        "個人情報の目的と第三者提供を考える"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-law-ethics-source-reasoning",
+      "sourceTableAnchor": "ip-law-ethics-source-table",
+      "freshTaskAnchor": "ip-law-ethics-source-practice",
+      "figures": [
+        "ip-law-ethics-source-table",
+        "ip-law-ethics-existing-visual",
+        "ip-law-ethics-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 105,
+      "minutesAfter": 115
+    },
+    {
+      "id": "ip-rights",
+      "unit": 2,
+      "title": "知的財産権とソフトウェアの利用",
+      "objectives": [
+        "保護対象に合う権利を選ぶ",
+        "利用許諾と著作権を区別する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-rights-source-reasoning",
+      "sourceTableAnchor": "ip-rights-source-table",
+      "freshTaskAnchor": "ip-rights-source-practice",
+      "figures": [
+        "ip-rights-source-table",
+        "ip-rights-existing-visual",
+        "ip-rights-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 85,
+      "minutesAfter": 95
+    },
+    {
+      "id": "ip-standards",
+      "unit": 2,
+      "title": "標準化と互換性",
+      "objectives": [
+        "公的標準と事実上の標準を区別する",
+        "標準化の効果と限界を説明する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-standards-source-reasoning",
+      "sourceTableAnchor": "ip-standards-source-table",
+      "freshTaskAnchor": "ip-standards-source-practice",
+      "figures": [
+        "ip-standards-source-table",
+        "ip-standards-existing-visual",
+        "ip-standards-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 80,
+      "minutesAfter": 90
+    },
+    {
+      "id": "ip-marketing",
+      "unit": 3,
+      "title": "マーケティングと経営管理システム",
+      "objectives": [
+        "STPと4Pを使って施策を整理する",
+        "ERP・SCM・CRMの役割を区別する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-marketing-source-reasoning",
+      "sourceTableAnchor": "ip-marketing-source-table",
+      "freshTaskAnchor": "ip-marketing-source-practice",
+      "figures": [
+        "ip-marketing-source-table",
+        "ip-marketing-existing-visual",
+        "ip-marketing-figure-2",
+        "ip-marketing-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 95,
+      "minutesAfter": 105
+    },
+    {
+      "id": "ip-strategy",
+      "unit": 3,
+      "title": "経営戦略と目標・評価",
+      "objectives": [
+        "戦略分析の軸を使い分ける",
+        "KGIとKPIを結び付ける"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-strategy-source-reasoning",
+      "sourceTableAnchor": "ip-strategy-source-table",
+      "freshTaskAnchor": "ip-strategy-source-practice",
+      "figures": [
+        "ip-strategy-source-table",
+        "ip-strategy-existing-visual",
+        "ip-strategy-figure-2",
+        "ip-strategy-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 105,
+      "minutesAfter": 115
+    },
+    {
+      "id": "ip-tech-business",
+      "unit": 4,
+      "title": "技術戦略とビジネスシステム",
+      "objectives": [
+        "技術ロードマップと研究開発を説明する",
+        "事業に合うシステムの役割を選ぶ"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-tech-business-source-reasoning",
+      "sourceTableAnchor": "ip-tech-business-source-table",
+      "freshTaskAnchor": "ip-tech-business-source-practice",
+      "figures": [
+        "ip-tech-business-source-table",
+        "ip-tech-business-existing-visual",
+        "ip-tech-business-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 90,
+      "minutesAfter": 100
+    },
+    {
+      "id": "ip-ecommerce",
+      "unit": 5,
+      "title": "eビジネスとデジタルサービス",
+      "objectives": [
+        "取引の組合せと事業モデルを区別する",
+        "電子商取引の指標を計算する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-ecommerce-source-reasoning",
+      "sourceTableAnchor": "ip-ecommerce-source-table",
+      "freshTaskAnchor": "ip-ecommerce-source-practice",
+      "figures": [
+        "ip-ecommerce-source-table",
+        "ip-ecommerce-existing-visual",
+        "ip-ecommerce-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 85,
+      "minutesAfter": 95
+    },
+    {
+      "id": "ip-engineering-iot",
+      "unit": 5,
+      "title": "生産・設計とIoTシステム",
+      "objectives": [
+        "設計と生産を支えるシステムを区別する",
+        "IoTの計測・通信・制御を説明する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-engineering-iot-source-reasoning",
+      "sourceTableAnchor": "ip-engineering-iot-source-table",
+      "freshTaskAnchor": "ip-engineering-iot-source-practice",
+      "figures": [
+        "ip-engineering-iot-source-table",
+        "ip-engineering-iot-existing-visual",
+        "ip-engineering-iot-figure-2",
+        "ip-engineering-iot-figure-3",
+        "ip-engineering-iot-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 95,
+      "minutesAfter": 105
+    },
+    {
+      "id": "ip-system-strategy",
+      "unit": 6,
+      "title": "情報システム戦略と業務プロセス",
+      "objectives": [
+        "全体最適と業務改革を説明する",
+        "クラウド等の利用形態を比較する"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-system-strategy-source-reasoning",
+      "sourceTableAnchor": "ip-system-strategy-source-table",
+      "freshTaskAnchor": "ip-system-strategy-source-practice",
+      "figures": [
+        "ip-system-strategy-source-table",
+        "ip-system-strategy-existing-visual",
+        "ip-system-strategy-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 105,
+      "minutesAfter": 115
+    },
+    {
+      "id": "ip-procurement",
+      "unit": 7,
+      "title": "システム化計画・要件定義・調達",
+      "objectives": [
+        "業務要件と非機能要件を整理する",
+        "RFIとRFPを使い分ける"
+      ],
+      "firstUseReview": "概念の意味、条件、計算・判断のつながりを読み直し、必要な前提を本文に記載",
+      "sourceTeachingAnchor": "ip-procurement-source-reasoning",
+      "sourceTableAnchor": "ip-procurement-source-table",
+      "freshTaskAnchor": "ip-procurement-source-practice",
+      "figures": [
+        "ip-procurement-source-table",
+        "ip-procurement-existing-visual",
+        "ip-procurement-worked-decision"
+      ],
+      "guidedFormPreserved": true,
+      "minutesBefore": 105,
+      "minutesAfter": 115
+    }
+  ],
+  "arithmeticWitnesses": {
+    "analysis": {
+      "cases": [
+        20000,
+        50000,
+        20000
+      ],
+      "netEffects": [
+        2000,
+        2000
+      ]
+    },
+    "finance": {
+      "profit": 20,
+      "cash": 25,
+      "assets": 65,
+      "liabilities": 15,
+      "equity": 50,
+      "partialCash": 45
+    },
+    "inventory": {
+      "beforeReceipt": 2,
+      "lateGap": 2,
+      "largerOpening": 2
+    },
+    "marketing": {
+      "rates": [
+        80,
+        72
+      ],
+      "changedRateDifference": 7.000000000000001
+    },
+    "procurement": {
+      "a": 152,
+      "b": 140
+    },
+    "reading": {
+      "firstRate": 2.6,
+      "secondRate": 3.2
+    },
+    "sourceBias": {
+      "response": [
+        0.5,
+        0.9
+      ],
+      "observed": 0.3181818181818182,
+      "weighted": 0.33999999999999997
+    },
+    "strategy": {
+      "relativeShare": [
+        0.5,
+        2,
+        1.25
+      ]
+    },
+    "systemStrategy": {
+      "before": 16,
+      "afterA": 16,
+      "afterB": 10,
+      "reductionRate": 37.5
+    },
+    "techBusiness": {
+      "throughput": 1.25,
+      "arrivals": 2
+    },
+    "engineering": {
+      "gross": 160,
+      "need": 70,
+      "afterMove": 40
+    },
+    "ecommerce": {
+      "ctr": 2,
+      "cvr": 5,
+      "cpa": 600,
+      "netCpa": 750,
+      "netValue": 800,
+      "variantCpa": 667,
+      "variantValue": 2400
+    }
+  }
+}

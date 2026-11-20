@@ -1,0 +1,4219 @@
+{
+  "reviewed": "2026-11-20",
+  "scope": "IPA syllabus Ver.6.5",
+  "officialItems": 63,
+  "interpretation": "Numbered-item and chapter evidence. An item link or exercise count alone does not establish exhaustive mastery of every illustrative term.",
+  "curriculumDecision": "Retain 47 distinct chapters across 23 learning units. The existing method and source-reading chapters provide prerequisite and transfer steps. This revision deepens their explanatory body and worked evidence.",
+  "lessonCount": {
+    "before": 47,
+    "after": 47
+  },
+  "minutes": {
+    "before": 3495,
+    "after": 3917
+  },
+  "unitCounts": {
+    "1": 6,
+    "2": 3,
+    "3": 2,
+    "4": 1,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 3,
+    "11": 1,
+    "12": 1,
+    "13": 4,
+    "14": 3,
+    "15": 1,
+    "16": 1,
+    "17": 4,
+    "18": 1,
+    "19": 1,
+    "20": 1,
+    "21": 2,
+    "22": 2,
+    "23": 4
+  },
+  "items": [
+    {
+      "item": 1,
+      "lessons": [
+        {
+          "id": "ip-organization",
+          "assessment": "ip-organization-check",
+          "objectives": [
+            "経営資源と組織の役割を説明する",
+            "PDCAとBCPを業務に当てはめる"
+          ],
+          "newTeaching": [
+            "ip-organization-source-table",
+            "ip-organization-source-caption",
+            "ip-organization-source-practice"
+          ],
+          "newSections": [
+            "目標、担当、評価記録を一つの表でつなぐ",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 2,
+      "lessons": [
+        {
+          "id": "ip-analysis",
+          "assessment": "ip-analysis-check",
+          "objectives": [
+            "分析の目的に合う図を選ぶ",
+            "相関と因果を区別する"
+          ],
+          "newTeaching": [
+            "ip-analysis-source-reasoning",
+            "ip-analysis-source-table",
+            "ip-analysis-source-caption",
+            "ip-analysis-source-practice"
+          ],
+          "newSections": [
+            "数が多い原因と、損失が大きい原因を比べる",
+            "別の条件で判断する"
+          ]
+        },
+        {
+          "id": "ip-source-bias-decision",
+          "assessment": "ip-source-bias-decision-check",
+          "objectives": [
+            "母集団と抽出枠を定め、目的と資料に合う標本の選び方を識別する",
+            "抽出・回答・測定の各段階で偏りを見つけ、比較条件の違いを確かめる",
+            "判断したいことに合う可視化を選び、案を出す工程と根拠を確かめる工程を区別する"
+          ],
+          "newTeaching": [
+            "ip-source-bias-decision-source-reasoning",
+            "ip-source-bias-decision-source-table",
+            "ip-source-bias-decision-source-caption",
+            "ip-source-bias-decision-source-practice"
+          ],
+          "newSections": [
+            "依頼対象者と回答者の構成を並べ、結果の届く範囲を確かめる",
+            "別の条件で判断する"
+          ]
+        },
+        {
+          "id": "ip-reading-business-data",
+          "assessment": "ip-reading-business-data-check",
+          "objectives": [
+            "比較すべき母数を自分で決める",
+            "利益の増減を求め、改善案の条件を説明する"
+          ],
+          "newTeaching": [
+            "ip-reading-business-data-source-reasoning",
+            "ip-reading-business-data-source-table",
+            "ip-reading-business-data-source-caption",
+            "ip-reading-business-data-source-practice"
+          ],
+          "newSections": [
+            "一店舗ずつ求めた率から、全体の件数へ戻る",
+            "別の条件で判断する"
+          ]
+        },
+        {
+          "id": "ip-inventory-decisions",
+          "assessment": "ip-inventory-decisions-check",
+          "objectives": [
+            "手元にある数量、入荷を待つ数量、引き当てた数量を区別し、入荷前の欠品を判定する",
+            "定量発注と定期発注について、発注する時点と数量を資料から判断する",
+            "需要が変わる複数の場合を枝に分け、欠品の制約と期待費用から発注案を選ぶ"
+          ],
+          "newTeaching": [
+            "ip-inventory-decisions-source-reasoning",
+            "ip-inventory-decisions-source-table",
+            "ip-inventory-decisions-source-caption",
+            "ip-inventory-decisions-source-practice"
+          ],
+          "newSections": [
+            "予定どおりの入荷と、遅れた入荷を日ごとに追う",
+            "別の条件で判断する"
+          ]
+        },
+        {
+          "id": "ip-release-decision",
+          "assessment": "ip-release-decision-check",
+          "objectives": [
+            "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+            "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+            "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+          ],
+          "newTeaching": [
+            "ip-release-decision-source-reasoning"
+          ],
+          "newSections": [
+            "集計率と復旧目標を、一件ずつの判定へ戻す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 3,
+      "lessons": [
+        {
+          "id": "ip-finance",
+          "assessment": "ip-finance-check",
+          "objectives": [
+            "財務三表の役割を区別する",
+            "利益と損益分岐点を計算する"
+          ],
+          "newTeaching": [
+            "ip-finance-source-reasoning",
+            "ip-finance-source-table",
+            "ip-finance-source-caption",
+            "ip-finance-source-practice"
+          ],
+          "newSections": [
+            "売上、利益、現金残高を同じ月の記録から区別する",
+            "別の条件で判断する"
+          ]
+        },
+        {
+          "id": "ip-reading-business-data",
+          "assessment": "ip-reading-business-data-check",
+          "objectives": [
+            "比較すべき母数を自分で決める",
+            "利益の増減を求め、改善案の条件を説明する"
+          ],
+          "newTeaching": [
+            "ip-reading-business-data-source-reasoning",
+            "ip-reading-business-data-source-table",
+            "ip-reading-business-data-source-caption",
+            "ip-reading-business-data-source-practice"
+          ],
+          "newSections": [
+            "一店舗ずつ求めた率から、全体の件数へ戻る",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 4,
+      "lessons": [
+        {
+          "id": "ip-rights",
+          "assessment": "ip-rights-check",
+          "objectives": [
+            "保護対象に合う権利を選ぶ",
+            "利用許諾と著作権を区別する"
+          ],
+          "newTeaching": [
+            "ip-rights-source-reasoning",
+            "ip-rights-source-table",
+            "ip-rights-source-caption",
+            "ip-rights-source-practice"
+          ],
+          "newSections": [
+            "公開する成果物と、利用条件を一つずつ対応させる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 5,
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "assessment": "ip-law-ethics-check",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "newTeaching": [
+            "ip-law-ethics-source-reasoning",
+            "ip-law-ethics-source-table",
+            "ip-law-ethics-source-caption",
+            "ip-law-ethics-source-practice"
+          ],
+          "newSections": [
+            "提供する項目を、委託する仕事の範囲に合わせる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 6,
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "assessment": "ip-law-ethics-check",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "newTeaching": [
+            "ip-law-ethics-source-reasoning",
+            "ip-law-ethics-source-table",
+            "ip-law-ethics-source-caption",
+            "ip-law-ethics-source-practice"
+          ],
+          "newSections": [
+            "提供する項目を、委託する仕事の範囲に合わせる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 7,
+      "lessons": [
+        {
+          "id": "ip-law-ethics",
+          "assessment": "ip-law-ethics-check",
+          "objectives": [
+            "身近な行動と関連する法律を結び付ける",
+            "個人情報の目的と第三者提供を考える"
+          ],
+          "newTeaching": [
+            "ip-law-ethics-source-reasoning",
+            "ip-law-ethics-source-table",
+            "ip-law-ethics-source-caption",
+            "ip-law-ethics-source-practice"
+          ],
+          "newSections": [
+            "提供する項目を、委託する仕事の範囲に合わせる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 8,
+      "lessons": [
+        {
+          "id": "ip-standards",
+          "assessment": "ip-standards-check",
+          "objectives": [
+            "公的標準と事実上の標準を区別する",
+            "標準化の効果と限界を説明する"
+          ],
+          "newTeaching": [
+            "ip-standards-source-reasoning",
+            "ip-standards-source-table",
+            "ip-standards-source-caption",
+            "ip-standards-source-practice"
+          ],
+          "newSections": [
+            "読めたデータが、同じ意味として使えるか確かめる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 9,
+      "lessons": [
+        {
+          "id": "ip-strategy",
+          "assessment": "ip-strategy-check",
+          "objectives": [
+            "戦略分析の軸を使い分ける",
+            "KGIとKPIを結び付ける"
+          ],
+          "newTeaching": [
+            "ip-strategy-source-reasoning",
+            "ip-strategy-source-table",
+            "ip-strategy-source-caption",
+            "ip-strategy-source-practice"
+          ],
+          "newSections": [
+            "同じ市場の資料から、相対的な位置と実行条件を読む",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 10,
+      "lessons": [
+        {
+          "id": "ip-marketing",
+          "assessment": "ip-marketing-check",
+          "objectives": [
+            "STPと4Pを使って施策を整理する",
+            "ERP・SCM・CRMの役割を区別する"
+          ],
+          "newTeaching": [
+            "ip-marketing-source-reasoning",
+            "ip-marketing-source-table",
+            "ip-marketing-source-caption",
+            "ip-marketing-source-practice"
+          ],
+          "newSections": [
+            "顧客の価値から、施策と評価指標を選ぶ",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 11,
+      "lessons": [
+        {
+          "id": "ip-strategy",
+          "assessment": "ip-strategy-check",
+          "objectives": [
+            "戦略分析の軸を使い分ける",
+            "KGIとKPIを結び付ける"
+          ],
+          "newTeaching": [
+            "ip-strategy-source-reasoning",
+            "ip-strategy-source-table",
+            "ip-strategy-source-caption",
+            "ip-strategy-source-practice"
+          ],
+          "newSections": [
+            "同じ市場の資料から、相対的な位置と実行条件を読む",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 12,
+      "lessons": [
+        {
+          "id": "ip-marketing",
+          "assessment": "ip-marketing-check",
+          "objectives": [
+            "STPと4Pを使って施策を整理する",
+            "ERP・SCM・CRMの役割を区別する"
+          ],
+          "newTeaching": [
+            "ip-marketing-source-reasoning",
+            "ip-marketing-source-table",
+            "ip-marketing-source-caption",
+            "ip-marketing-source-practice"
+          ],
+          "newSections": [
+            "顧客の価値から、施策と評価指標を選ぶ",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 13,
+      "lessons": [
+        {
+          "id": "ip-tech-business",
+          "assessment": "ip-tech-business-check",
+          "objectives": [
+            "技術ロードマップと研究開発を説明する",
+            "事業に合うシステムの役割を選ぶ"
+          ],
+          "newTeaching": [
+            "ip-tech-business-source-reasoning",
+            "ip-tech-business-source-table",
+            "ip-tech-business-source-caption",
+            "ip-tech-business-source-practice"
+          ],
+          "newSections": [
+            "実証で分かったことを、導入判断の条件へ結び付ける",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 14,
+      "lessons": [
+        {
+          "id": "ip-tech-business",
+          "assessment": "ip-tech-business-check",
+          "objectives": [
+            "技術ロードマップと研究開発を説明する",
+            "事業に合うシステムの役割を選ぶ"
+          ],
+          "newTeaching": [
+            "ip-tech-business-source-reasoning",
+            "ip-tech-business-source-table",
+            "ip-tech-business-source-caption",
+            "ip-tech-business-source-practice"
+          ],
+          "newSections": [
+            "実証で分かったことを、導入判断の条件へ結び付ける",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 15,
+      "lessons": [
+        {
+          "id": "ip-engineering-iot",
+          "assessment": "ip-engineering-iot-check",
+          "objectives": [
+            "設計と生産を支えるシステムを区別する",
+            "IoTの計測・通信・制御を説明する"
+          ],
+          "newTeaching": [
+            "ip-engineering-iot-source-reasoning",
+            "ip-engineering-iot-source-table",
+            "ip-engineering-iot-source-caption",
+            "ip-engineering-iot-source-practice"
+          ],
+          "newSections": [
+            "同じ部品でも、使える日が違えば手配量が変わる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 16,
+      "lessons": [
+        {
+          "id": "ip-ecommerce",
+          "assessment": "ip-ecommerce-check",
+          "objectives": [
+            "取引の組合せと事業モデルを区別する",
+            "電子商取引の指標を計算する"
+          ],
+          "newTeaching": [
+            "ip-ecommerce-source-reasoning",
+            "ip-ecommerce-source-table",
+            "ip-ecommerce-source-caption",
+            "ip-ecommerce-source-practice"
+          ],
+          "newSections": [
+            "広告から購入までの各段階で、分母をそろえる",
+            "返金件数が違う広告を比べる"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 17,
+      "lessons": [
+        {
+          "id": "ip-engineering-iot",
+          "assessment": "ip-engineering-iot-check",
+          "objectives": [
+            "設計と生産を支えるシステムを区別する",
+            "IoTの計測・通信・制御を説明する"
+          ],
+          "newTeaching": [
+            "ip-engineering-iot-source-reasoning",
+            "ip-engineering-iot-source-table",
+            "ip-engineering-iot-source-caption",
+            "ip-engineering-iot-source-practice"
+          ],
+          "newSections": [
+            "同じ部品でも、使える日が違えば手配量が変わる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 18,
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "assessment": "ip-system-strategy-check",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "newTeaching": [
+            "ip-system-strategy-source-reasoning",
+            "ip-system-strategy-source-table",
+            "ip-system-strategy-source-caption",
+            "ip-system-strategy-source-practice"
+          ],
+          "newSections": [
+            "部署の処理時間を足し、業務全体の改善を測る",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 19,
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "assessment": "ip-system-strategy-check",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "newTeaching": [
+            "ip-system-strategy-source-reasoning",
+            "ip-system-strategy-source-table",
+            "ip-system-strategy-source-caption",
+            "ip-system-strategy-source-practice"
+          ],
+          "newSections": [
+            "部署の処理時間を足し、業務全体の改善を測る",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 20,
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "assessment": "ip-system-strategy-check",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "newTeaching": [
+            "ip-system-strategy-source-reasoning",
+            "ip-system-strategy-source-table",
+            "ip-system-strategy-source-caption",
+            "ip-system-strategy-source-practice"
+          ],
+          "newSections": [
+            "部署の処理時間を足し、業務全体の改善を測る",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 21,
+      "lessons": [
+        {
+          "id": "ip-system-strategy",
+          "assessment": "ip-system-strategy-check",
+          "objectives": [
+            "全体最適と業務改革を説明する",
+            "クラウド等の利用形態を比較する"
+          ],
+          "newTeaching": [
+            "ip-system-strategy-source-reasoning",
+            "ip-system-strategy-source-table",
+            "ip-system-strategy-source-caption",
+            "ip-system-strategy-source-practice"
+          ],
+          "newSections": [
+            "部署の処理時間を足し、業務全体の改善を測る",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 22,
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "assessment": "ip-procurement-check",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "newTeaching": [
+            "ip-procurement-source-reasoning",
+            "ip-procurement-source-table",
+            "ip-procurement-source-caption",
+            "ip-procurement-source-practice"
+          ],
+          "newSections": [
+            "要件から測定条件へ進み、提案を同じ基準で比べる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 23,
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "assessment": "ip-procurement-check",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "newTeaching": [
+            "ip-procurement-source-reasoning",
+            "ip-procurement-source-table",
+            "ip-procurement-source-caption",
+            "ip-procurement-source-practice"
+          ],
+          "newSections": [
+            "要件から測定条件へ進み、提案を同じ基準で比べる",
+            "別の条件で判断する"
+          ]
+        },
+        {
+          "id": "ip-release-decision",
+          "assessment": "ip-release-decision-check",
+          "objectives": [
+            "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+            "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+            "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+          ],
+          "newTeaching": [
+            "ip-release-decision-source-reasoning"
+          ],
+          "newSections": [
+            "集計率と復旧目標を、一件ずつの判定へ戻す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 24,
+      "lessons": [
+        {
+          "id": "ip-procurement",
+          "assessment": "ip-procurement-check",
+          "objectives": [
+            "業務要件と非機能要件を整理する",
+            "RFIとRFPを使い分ける"
+          ],
+          "newTeaching": [
+            "ip-procurement-source-reasoning",
+            "ip-procurement-source-table",
+            "ip-procurement-source-caption",
+            "ip-procurement-source-practice"
+          ],
+          "newSections": [
+            "要件から測定条件へ進み、提案を同じ基準で比べる",
+            "別の条件で判断する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 25,
+      "lessons": [
+        {
+          "id": "ip-development",
+          "assessment": "ip-development-check",
+          "objectives": [
+            "開発工程とテストの目的を区別する",
+            "安全な移行と保守を計画する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "同じ予約条件を、設計とテスト結果までたどる",
+            "変更した要件から、追加すべきテストを考える"
+          ]
+        },
+        {
+          "id": "ip-release-decision",
+          "assessment": "ip-release-decision-check",
+          "objectives": [
+            "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+            "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+            "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+          ],
+          "newTeaching": [
+            "ip-release-decision-source-reasoning"
+          ],
+          "newSections": [
+            "集計率と復旧目標を、一件ずつの判定へ戻す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 26,
+      "lessons": [
+        {
+          "id": "ip-agile",
+          "assessment": "ip-agile-check",
+          "objectives": [
+            "ウォーターフォールと反復開発を比較する",
+            "アジャイルの役割と継続的な改善を説明する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "一回の反復で、成果の検討と進め方の振返りを分ける",
+            "自動化が成功しても、まだ決められないこと"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 27,
+      "lessons": [
+        {
+          "id": "ip-project",
+          "assessment": "ip-project-check",
+          "objectives": [
+            "WBSとスケジュールを関連付ける",
+            "制約とリスクを踏まえて計画する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer",
+            "project-transfer-network",
+            "project-transfer-network-title",
+            "project-transfer-network-desc",
+            "guided-management-shortening",
+            "guided-management-shortening-title",
+            "guided-management-shortening-prompt"
+          ],
+          "newSections": [
+            "合流する仕事は、長いほうが終わるまで始められない",
+            "短縮した後で、どの経路が工期を決めるか"
+          ]
+        },
+        {
+          "id": "ip-reading-project-plans",
+          "assessment": "ip-reading-project-plans-check",
+          "objectives": [
+            "前進計算と後退計算を行う",
+            "複数の短縮案を比較し、短縮後の経路を確かめる"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "同じ余裕を、別々の作業で二重に使わない",
+            "追加された遅れから、終了日を求める"
+          ]
+        },
+        {
+          "id": "ip-resource-planning",
+          "assessment": "ip-resource-planning-check",
+          "objectives": [
+            "先行作業と担当者の空きの両方を使って各作業の開始日を決める",
+            "応援の条件、費用、期限を照合して実行可能な案を選ぶ",
+            "進捗報告とリスク対策を、判断期限と費用・品質への影響まで具体化する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "応援の到着を待つ間に、誰が何を進められるかを読む",
+            "応援の条件が一つ変わった場合"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 28,
+      "lessons": [
+        {
+          "id": "ip-services",
+          "assessment": "ip-services-check",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "停止の記録を、同じ時間軸へ重ねてから集計する",
+            "SLAで除外する時間がある場合"
+          ]
+        },
+        {
+          "id": "ip-release-decision",
+          "assessment": "ip-release-decision-check",
+          "objectives": [
+            "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+            "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+            "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+          ],
+          "newTeaching": [
+            "ip-release-decision-source-reasoning"
+          ],
+          "newSections": [
+            "集計率と復旧目標を、一件ずつの判定へ戻す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 29,
+      "lessons": [
+        {
+          "id": "ip-services",
+          "assessment": "ip-services-check",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "停止の記録を、同じ時間軸へ重ねてから集計する",
+            "SLAで除外する時間がある場合"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 30,
+      "lessons": [
+        {
+          "id": "ip-services",
+          "assessment": "ip-services-check",
+          "objectives": [
+            "インシデントと問題を区別する",
+            "SLAと継続的改善を説明する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "停止の記録を、同じ時間軸へ重ねてから集計する",
+            "SLAで除外する時間がある場合"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 31,
+      "lessons": [
+        {
+          "id": "ip-audit",
+          "assessment": "ip-audit-check",
+          "objectives": [
+            "監査の独立性と証拠を説明する",
+            "内部統制の目的と限界を理解する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "規程と操作ログを、同じ申請番号でつなぐ",
+            "承認者の欄が埋まっていても足りない証拠"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 32,
+      "lessons": [
+        {
+          "id": "ip-audit",
+          "assessment": "ip-audit-check",
+          "objectives": [
+            "監査の独立性と証拠を説明する",
+            "内部統制の目的と限界を理解する"
+          ],
+          "newTeaching": [
+            "worked-management-transfer"
+          ],
+          "newSections": [
+            "規程と操作ログを、同じ申請番号でつなぐ",
+            "承認者の欄が埋まっていても足りない証拠"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 33,
+      "lessons": [
+        {
+          "id": "ip-binary",
+          "assessment": "ip-binary-check",
+          "objectives": [
+            "位取りと情報量を計算する",
+            "集合・論理演算を具体例で使う"
+          ],
+          "newTeaching": [
+            "ip-binary-source-reasoning"
+          ],
+          "newSections": [
+            "符号のない値と、各桁に割り当てた意味を区別する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 34,
+      "lessons": [
+        {
+          "id": "ip-statistics",
+          "assessment": "ip-statistics-check",
+          "objectives": [
+            "代表値と散らばりを説明する",
+            "確率・期待値を計算する"
+          ],
+          "newTeaching": [
+            "ip-statistics-source-reasoning"
+          ],
+          "newSections": [
+            "割合の変化を、同じ集団の内訳へ戻って確かめる"
+          ]
+        },
+        {
+          "id": "ip-regression-residuals",
+          "assessment": "ip-regression-residuals-check",
+          "objectives": [
+            "説明変数・目的変数と単位から回帰直線の予測を読む",
+            "残差と二乗和で同じ実測データに対する予測式を比較する",
+            "観測範囲や作業条件から予測を使える場面と追加調査を判断する"
+          ],
+          "newTeaching": [
+            "ip-regression-residuals-source-reasoning"
+          ],
+          "newSections": [
+            "誤差の符号と大きさを、同じ観測で比べる"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 35,
+      "lessons": [
+        {
+          "id": "ip-ai-data",
+          "assessment": "ip-ai-data-check",
+          "objectives": [
+            "データとAIの学習・評価を区別する",
+            "生成AIの限界と安全な利用を説明する",
+            "文の条件を論理式で表し、規則の反例と未確認を区別する"
+          ],
+          "newTeaching": [
+            "ip-ai-data-source-reasoning"
+          ],
+          "newSections": [
+            "分類結果の四つの欄から、改善すべき誤りを選ぶ"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 36,
+      "lessons": [
+        {
+          "id": "ip-algorithms",
+          "assessment": "ip-algorithms-check",
+          "objectives": [
+            "順次・分岐・反復を追跡する",
+            "探索とデータ構造を使い分ける"
+          ],
+          "newTeaching": [
+            "ip-algorithms-source-reasoning",
+            "ip-algorithms-branch-trace-figure"
+          ],
+          "newSections": [
+            "前の値を保存してから、二つの値を入れ替える"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 37,
+      "lessons": [
+        {
+          "id": "ip-algorithms",
+          "assessment": "ip-algorithms-check",
+          "objectives": [
+            "順次・分岐・反復を追跡する",
+            "探索とデータ構造を使い分ける"
+          ],
+          "newTeaching": [
+            "ip-algorithms-source-reasoning",
+            "ip-algorithms-branch-trace-figure"
+          ],
+          "newSections": [
+            "前の値を保存してから、二つの値を入れ替える"
+          ]
+        },
+        {
+          "id": "ip-function-trace",
+          "assessment": "ip-function-trace-check",
+          "objectives": [
+            "関数の定義と呼出しを見分け、渡す値と戻る値を対応させる",
+            "分岐、境界値、呼出しごとの変数を表に記録して、複数の戻り値から最終結果を求める",
+            "returnで終わる処理と表示を区別し、戻り値の誤りを見つけるための入力を選ぶ"
+          ],
+          "newTeaching": [
+            "ip-function-trace-source-reasoning"
+          ],
+          "newSections": [
+            "戻り値を受け取る場所まで、呼出しを追う"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 38,
+      "lessons": [
+        {
+          "id": "ip-languages",
+          "assessment": "ip-languages-check",
+          "objectives": [
+            "言語の役割を区別する",
+            "HTML・CSS・JSON等の用途を説明する"
+          ],
+          "newTeaching": [
+            "ip-languages-source-reasoning"
+          ],
+          "newSections": [
+            "同じ見た目の値を、文字と数値に分けて処理する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 39,
+      "lessons": [
+        {
+          "id": "ip-languages",
+          "assessment": "ip-languages-check",
+          "objectives": [
+            "言語の役割を区別する",
+            "HTML・CSS・JSON等の用途を説明する"
+          ],
+          "newTeaching": [
+            "ip-languages-source-reasoning"
+          ],
+          "newSections": [
+            "同じ見た目の値を、文字と数値に分けて処理する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 40,
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "assessment": "ip-computer-check",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "newTeaching": [
+            "ip-computer-source-reasoning"
+          ],
+          "newSections": [
+            "工程表から、全体を速くする場所を選ぶ"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 41,
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "assessment": "ip-computer-check",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "newTeaching": [
+            "ip-computer-source-reasoning"
+          ],
+          "newSections": [
+            "工程表から、全体を速くする場所を選ぶ"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 42,
+      "lessons": [
+        {
+          "id": "ip-computer",
+          "assessment": "ip-computer-check",
+          "objectives": [
+            "主要装置の役割と記憶階層を説明する",
+            "単純な処理時間を計算する"
+          ],
+          "newTeaching": [
+            "ip-computer-source-reasoning"
+          ],
+          "newSections": [
+            "工程表から、全体を速くする場所を選ぶ"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 43,
+      "lessons": [
+        {
+          "id": "ip-architecture",
+          "assessment": "ip-architecture-check",
+          "objectives": [
+            "冗長化と負荷分散を区別する",
+            "稼働率と性能指標を計算する"
+          ],
+          "newTeaching": [
+            "ip-architecture-source-reasoning",
+            "ip-architecture-shared-entry",
+            "ip-architecture-shared-entry-title",
+            "ip-architecture-shared-entry-description"
+          ],
+          "newSections": [
+            "共通の入口を含めて、冗長化の効果を求める"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 44,
+      "lessons": [
+        {
+          "id": "ip-architecture",
+          "assessment": "ip-architecture-check",
+          "objectives": [
+            "冗長化と負荷分散を区別する",
+            "稼働率と性能指標を計算する"
+          ],
+          "newTeaching": [
+            "ip-architecture-source-reasoning",
+            "ip-architecture-shared-entry",
+            "ip-architecture-shared-entry-title",
+            "ip-architecture-shared-entry-description"
+          ],
+          "newSections": [
+            "共通の入口を含めて、冗長化の効果を求める"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 45,
+      "lessons": [
+        {
+          "id": "ip-os-files",
+          "assessment": "ip-os-files-check",
+          "objectives": [
+            "OSの資源管理を説明する",
+            "ファイルの経路と権限を扱う"
+          ],
+          "newTeaching": [
+            "ip-os-files-source-reasoning"
+          ],
+          "newSections": [
+            "基準のフォルダと権限を分けて、開けない理由を調べる"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 46,
+      "lessons": [
+        {
+          "id": "ip-os-files",
+          "assessment": "ip-os-files-check",
+          "objectives": [
+            "OSの資源管理を説明する",
+            "ファイルの経路と権限を扱う"
+          ],
+          "newTeaching": [
+            "ip-os-files-source-reasoning"
+          ],
+          "newSections": [
+            "基準のフォルダと権限を分けて、開けない理由を調べる"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 47,
+      "lessons": [
+        {
+          "id": "ip-office-oss",
+          "assessment": "ip-office-oss-check",
+          "objectives": [
+            "表計算の参照と集計を説明する",
+            "OSSの利用条件と保守を確認する"
+          ],
+          "newTeaching": [
+            "ip-office-oss-source-reasoning"
+          ],
+          "newSections": [
+            "縦と横へ式を配る前に、固定する方向を決める"
+          ]
+        },
+        {
+          "id": "ip-reading-spreadsheets",
+          "assessment": "ip-reading-spreadsheets-check",
+          "objectives": [
+            "数式を横・縦にコピーした結果を説明する",
+            "条件付き集計の対象を読み、誤った参照を検算で見つける"
+          ],
+          "newTeaching": [
+            "ip-reading-spreadsheets-source-reasoning"
+          ],
+          "newSections": [
+            "判定列を別に作り、除外した理由を確かめる"
+          ]
+        },
+        {
+          "id": "ip-spreadsheet-lookups",
+          "assessment": "ip-spreadsheet-lookups-check",
+          "objectives": [
+            "基準の並ぶ向きと結果の位置から垂直照合・水平照合を選ぶ",
+            "識別用のコードと数値区分を区別し、一致方式を決める",
+            "別シートの照合式と条件付個数を、境界と例外を含めて検算する"
+          ],
+          "newTeaching": [
+            "ip-spreadsheet-lookups-source-reasoning"
+          ],
+          "newSections": [
+            "向きが変わっても、検索する軸と返す項目を保つ"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 48,
+      "lessons": [
+        {
+          "id": "ip-office-oss",
+          "assessment": "ip-office-oss-check",
+          "objectives": [
+            "表計算の参照と集計を説明する",
+            "OSSの利用条件と保守を確認する"
+          ],
+          "newTeaching": [
+            "ip-office-oss-source-reasoning"
+          ],
+          "newSections": [
+            "縦と横へ式を配る前に、固定する方向を決める"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 49,
+      "lessons": [
+        {
+          "id": "ip-hardware",
+          "assessment": "ip-hardware-check",
+          "objectives": [
+            "機器の用途と制約を説明する",
+            "接続・保守・環境への配慮を考える"
+          ],
+          "newTeaching": [
+            "ip-hardware-source-reasoning"
+          ],
+          "newSections": [
+            "測定、判断、動作をつなぎ、現場で必要な装置を選ぶ"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 50,
+      "lessons": [
+        {
+          "id": "ip-design",
+          "assessment": "ip-design-check",
+          "objectives": [
+            "情報の構造と見た目の役割を説明する",
+            "アクセシビリティと誤操作防止を考える"
+          ],
+          "newTeaching": [
+            "ip-design-source-reasoning"
+          ],
+          "newSections": [
+            "画面の記録から、利用者が止まった箇所を改善する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 51,
+      "lessons": [
+        {
+          "id": "ip-design",
+          "assessment": "ip-design-check",
+          "objectives": [
+            "情報の構造と見た目の役割を説明する",
+            "アクセシビリティと誤操作防止を考える"
+          ],
+          "newTeaching": [
+            "ip-design-source-reasoning"
+          ],
+          "newSections": [
+            "画面の記録から、利用者が止まった箇所を改善する"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 52,
+      "lessons": [
+        {
+          "id": "ip-media",
+          "assessment": "ip-media-check",
+          "objectives": [
+            "デジタル化と容量を計算する",
+            "メディア形式と圧縮の違いを説明する"
+          ],
+          "newTeaching": [
+            "ip-media-source-reasoning"
+          ],
+          "newSections": [
+            "録音時間とチャンネルを、ビットとバイトへ順に直す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 53,
+      "lessons": [
+        {
+          "id": "ip-media",
+          "assessment": "ip-media-check",
+          "objectives": [
+            "デジタル化と容量を計算する",
+            "メディア形式と圧縮の違いを説明する"
+          ],
+          "newTeaching": [
+            "ip-media-source-reasoning"
+          ],
+          "newSections": [
+            "録音時間とチャンネルを、ビットとバイトへ順に直す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 54,
+      "lessons": [
+        {
+          "id": "ip-database",
+          "assessment": "ip-database-check",
+          "objectives": [
+            "主キーと外部キーの役割を説明する",
+            "重複による更新の不整合を防ぐ"
+          ],
+          "newTeaching": [
+            "ip-database-source-reasoning"
+          ],
+          "newSections": [
+            "注文の番号だけでは、明細の一行を特定できない理由"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 55,
+      "lessons": [
+        {
+          "id": "ip-database",
+          "assessment": "ip-database-check",
+          "objectives": [
+            "主キーと外部キーの役割を説明する",
+            "重複による更新の不整合を防ぐ"
+          ],
+          "newTeaching": [
+            "ip-database-source-reasoning"
+          ],
+          "newSections": [
+            "注文の番号だけでは、明細の一行を特定できない理由"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 56,
+      "lessons": [
+        {
+          "id": "ip-sql-transactions",
+          "assessment": "ip-sql-transactions-check",
+          "objectives": [
+            "検索・集計の基本を読む",
+            "同時更新と復旧の必要性を説明する"
+          ],
+          "newTeaching": [
+            "ip-sql-transactions-source-reasoning",
+            "ip-sql-transactions-query-stages",
+            "ip-sql-transactions-query-title",
+            "ip-sql-transactions-query-description"
+          ],
+          "newSections": [
+            "同じ売上表を、行と集計後の条件へ順に通す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 57,
+      "lessons": [
+        {
+          "id": "ip-sql-transactions",
+          "assessment": "ip-sql-transactions-check",
+          "objectives": [
+            "検索・集計の基本を読む",
+            "同時更新と復旧の必要性を説明する"
+          ],
+          "newTeaching": [
+            "ip-sql-transactions-source-reasoning",
+            "ip-sql-transactions-query-stages",
+            "ip-sql-transactions-query-title",
+            "ip-sql-transactions-query-description"
+          ],
+          "newSections": [
+            "同じ売上表を、行と集計後の条件へ順に通す"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 58,
+      "lessons": [
+        {
+          "id": "ip-network",
+          "assessment": "ip-network-check",
+          "objectives": [
+            "通信機器と接続範囲を区別する",
+            "帯域と転送時間を計算する"
+          ],
+          "newTeaching": [
+            "ip-network-source-reasoning"
+          ],
+          "newSections": [
+            "転送と往復の待ち時間を別々に見積もる"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 59,
+      "lessons": [
+        {
+          "id": "ip-protocols",
+          "assessment": "ip-protocols-check",
+          "objectives": [
+            "代表的なプロトコルの役割を説明する",
+            "アドレスと名前の関係を理解する"
+          ],
+          "newTeaching": [
+            "ip-protocols-source-reasoning"
+          ],
+          "newSections": [
+            "接続の記録を、設定から名前、要求までたどる"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 60,
+      "lessons": [
+        {
+          "id": "ip-protocols",
+          "assessment": "ip-protocols-check",
+          "objectives": [
+            "代表的なプロトコルの役割を説明する",
+            "アドレスと名前の関係を理解する"
+          ],
+          "newTeaching": [
+            "ip-protocols-source-reasoning"
+          ],
+          "newSections": [
+            "接続の記録を、設定から名前、要求までたどる"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 61,
+      "lessons": [
+        {
+          "id": "ip-security-risk",
+          "assessment": "ip-security-risk-check",
+          "objectives": [
+            "機密性・完全性・可用性を説明する",
+            "リスク対応と事故対応を考える"
+          ],
+          "newTeaching": [
+            "ip-security-risk-source-reasoning"
+          ],
+          "newSections": [
+            "漏えい、改変、停止を、業務への影響で分ける"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 62,
+      "lessons": [
+        {
+          "id": "ip-security-risk",
+          "assessment": "ip-security-risk-check",
+          "objectives": [
+            "機密性・完全性・可用性を説明する",
+            "リスク対応と事故対応を考える"
+          ],
+          "newTeaching": [
+            "ip-security-risk-source-reasoning"
+          ],
+          "newSections": [
+            "漏えい、改変、停止を、業務への影響で分ける"
+          ]
+        }
+      ]
+    },
+    {
+      "item": 63,
+      "lessons": [
+        {
+          "id": "ip-security-controls",
+          "assessment": "ip-security-controls-check",
+          "objectives": [
+            "代表的な攻撃と対策を対応させる",
+            "予防・検知・復旧を組み合わせる"
+          ],
+          "newTeaching": [
+            "ip-security-controls-source-reasoning"
+          ],
+          "newSections": [
+            "予防策が破られた後も、停止と流出を広げない"
+          ]
+        },
+        {
+          "id": "ip-cryptography",
+          "assessment": "ip-cryptography-check",
+          "objectives": [
+            "共通鍵と公開鍵を区別する",
+            "署名と証明書の役割を説明する"
+          ],
+          "newTeaching": [
+            "ip-cryptography-source-reasoning"
+          ],
+          "newSections": [
+            "暗号化する相手と、署名した相手を別々に追う"
+          ]
+        },
+        {
+          "id": "ip-release-decision",
+          "assessment": "ip-release-decision-check",
+          "objectives": [
+            "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+            "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+            "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+          ],
+          "newTeaching": [
+            "ip-release-decision-source-reasoning"
+          ],
+          "newSections": [
+            "集計率と復旧目標を、一件ずつの判定へ戻す"
+          ]
+        }
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ip-organization",
+      "unit": 1,
+      "order": 1,
+      "title": "企業活動と組織・PDCA",
+      "objectives": [
+        "経営資源と組織の役割を説明する",
+        "PDCAとBCPを業務に当てはめる"
+      ],
+      "officialItems": [
+        1
+      ],
+      "retainedExplicitAnchors": [
+        "depth-organization",
+        "ip-organization-existing-visual",
+        "governance-and-ooda",
+        "textbook-organization",
+        "textbook-organization-transfer",
+        "ip-organization-decision-section",
+        "ip-organization-worked-decision",
+        "ip-organization-worked-decision-caption",
+        "ip-organization-guided-transfer",
+        "ip-organization-guided-transfer-title",
+        "ip-organization-guided-transfer-prompt",
+        "ip-organization-guided-transfer-1",
+        "ip-organization-guided-transfer-2",
+        "ip-organization-guided-transfer-3",
+        "ip-organization-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-organization-source-table",
+        "ip-organization-source-caption",
+        "ip-organization-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "目標、担当、評価記録を一つの表でつなぐ",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-organization-source-table",
+        "ip-organization-existing-visual",
+        "ip-organization-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-organization-guided-transfer",
+          "expected": "2",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 90,
+        "after": 100
+      },
+      "previousLessonAssessment": "ip-organization-check"
+    },
+    {
+      "id": "ip-analysis",
+      "unit": 1,
+      "order": 2,
+      "title": "業務分析とデータの可視化",
+      "objectives": [
+        "分析の目的に合う図を選ぶ",
+        "相関と因果を区別する"
+      ],
+      "officialItems": [
+        2
+      ],
+      "retainedExplicitAnchors": [
+        "ip-analysis-existing-visual",
+        "depth-analysis",
+        "ip-analysis-figure-2",
+        "hypothesis-experiment",
+        "process-variation-case",
+        "textbook-analysis",
+        "textbook-analysis-transfer",
+        "ip-analysis-figure-3",
+        "ip-analysis-decision-section",
+        "ip-analysis-worked-decision",
+        "ip-analysis-worked-decision-caption",
+        "ip-analysis-guided-transfer",
+        "ip-analysis-guided-transfer-title",
+        "ip-analysis-guided-transfer-prompt",
+        "ip-analysis-guided-transfer-1",
+        "ip-analysis-guided-transfer-2",
+        "ip-analysis-guided-transfer-3",
+        "ip-analysis-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-analysis-source-reasoning",
+        "ip-analysis-source-table",
+        "ip-analysis-source-caption",
+        "ip-analysis-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "数が多い原因と、損失が大きい原因を比べる",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-analysis-source-table",
+        "ip-analysis-existing-visual",
+        "ip-analysis-figure-2",
+        "ip-analysis-figure-3",
+        "ip-analysis-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-analysis-guided-transfer",
+          "expected": "2",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 105,
+        "after": 115
+      },
+      "previousLessonAssessment": "ip-analysis-check"
+    },
+    {
+      "id": "ip-source-bias-decision",
+      "unit": 1,
+      "order": 3,
+      "title": "標本抽出とバイアス：調査の偏りを見抜く",
+      "objectives": [
+        "母集団と抽出枠を定め、目的と資料に合う標本の選び方を識別する",
+        "抽出・回答・測定の各段階で偏りを見つけ、比較条件の違いを確かめる",
+        "判断したいことに合う可視化を選び、案を出す工程と根拠を確かめる工程を区別する"
+      ],
+      "officialItems": [
+        2
+      ],
+      "retainedExplicitAnchors": [
+        "ip-source-bias-decision-objective-1",
+        "ip-source-bias-sampling-methods",
+        "ip-source-bias-sampling-caption",
+        "ip-source-bias-decision-objective-2",
+        "ip-source-bias-response-flow",
+        "ip-source-bias-response-caption",
+        "ip-source-bias-guided",
+        "ip-source-bias-guided-title",
+        "ip-source-bias-guided-prompt",
+        "ip-source-bias-guided-input",
+        "ip-source-bias-confounding",
+        "ip-source-bias-confounding-caption",
+        "ip-source-bias-decision-objective-3",
+        "ip-source-bias-heatmap",
+        "ip-source-bias-heatmap-title",
+        "ip-source-bias-heatmap-description"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-source-bias-decision-source-reasoning",
+        "ip-source-bias-decision-source-table",
+        "ip-source-bias-decision-source-caption",
+        "ip-source-bias-decision-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "依頼対象者と回答者の構成を並べ、結果の届く範囲を確かめる",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-source-bias-sampling-methods",
+        "ip-source-bias-response-flow",
+        "ip-source-bias-confounding",
+        "ip-source-bias-heatmap",
+        "ip-source-bias-decision-source-table"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-source-bias-guided",
+          "expected": "50",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 75
+      },
+      "previousLessonAssessment": "ip-source-bias-decision-check"
+    },
+    {
+      "id": "ip-finance",
+      "unit": 1,
+      "order": 4,
+      "title": "会計・財務と損益分岐点",
+      "objectives": [
+        "財務三表の役割を区別する",
+        "利益と損益分岐点を計算する"
+      ],
+      "officialItems": [
+        3
+      ],
+      "retainedExplicitAnchors": [
+        "depth-finance",
+        "ip-finance-existing-visual",
+        "textbook-finance",
+        "textbook-finance-transfer",
+        "ip-finance-figure-2",
+        "ip-finance-decision-section",
+        "ip-finance-worked-decision",
+        "ip-finance-worked-decision-caption",
+        "ip-finance-guided-transfer",
+        "ip-finance-guided-transfer-title",
+        "ip-finance-guided-transfer-prompt",
+        "ip-finance-guided-transfer-input",
+        "ip-finance-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-finance-source-reasoning",
+        "ip-finance-source-table",
+        "ip-finance-source-caption",
+        "ip-finance-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "売上、利益、現金残高を同じ月の記録から区別する",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-finance-source-table",
+        "ip-finance-existing-visual",
+        "ip-finance-figure-2",
+        "ip-finance-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-finance-guided-transfer",
+          "expected": "7",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 105,
+        "after": 115
+      },
+      "previousLessonAssessment": "ip-finance-check"
+    },
+    {
+      "id": "ip-reading-business-data",
+      "unit": 1,
+      "order": 5,
+      "title": "経営データの読解演習：改善案を数字で選ぶ",
+      "objectives": [
+        "比較すべき母数を自分で決める",
+        "利益の増減を求め、改善案の条件を説明する"
+      ],
+      "officialItems": [
+        2,
+        3
+      ],
+      "retainedExplicitAnchors": [
+        "ip-reading-business-data-existing-visual",
+        "ip-reading-business-data-decision-section",
+        "ip-reading-business-data-worked-decision",
+        "ip-reading-business-data-worked-decision-caption",
+        "ip-reading-business-data-guided-transfer",
+        "ip-reading-business-data-guided-transfer-title",
+        "ip-reading-business-data-guided-transfer-prompt",
+        "ip-reading-business-data-guided-transfer-input",
+        "ip-reading-business-data-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-reading-business-data-source-reasoning",
+        "ip-reading-business-data-source-table",
+        "ip-reading-business-data-source-caption",
+        "ip-reading-business-data-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "一店舗ずつ求めた率から、全体の件数へ戻る",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-reading-business-data-existing-visual",
+        "ip-reading-business-data-source-table",
+        "ip-reading-business-data-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-reading-business-data-guided-transfer",
+          "expected": "2000",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 45,
+        "after": 55
+      },
+      "previousLessonAssessment": "ip-reading-business-data-check"
+    },
+    {
+      "id": "ip-inventory-decisions",
+      "unit": 1,
+      "order": 6,
+      "title": "在庫管理と発注方式：欠品を防ぐ数量を決める",
+      "objectives": [
+        "手元にある数量、入荷を待つ数量、引き当てた数量を区別し、入荷前の欠品を判定する",
+        "定量発注と定期発注について、発注する時点と数量を資料から判断する",
+        "需要が変わる複数の場合を枝に分け、欠品の制約と期待費用から発注案を選ぶ"
+      ],
+      "officialItems": [
+        2
+      ],
+      "retainedExplicitAnchors": [
+        "ip-inventory-decisions-inputs",
+        "ip-inventory-decisions-timeline",
+        "ip-inventory-decisions-timeline-caption",
+        "ip-inventory-decisions-fixed",
+        "ip-inventory-decisions-periodic",
+        "ip-inventory-decisions-period",
+        "ip-inventory-decisions-period-caption",
+        "ip-inventory-decisions-policy",
+        "ip-inventory-decisions-policy-caption",
+        "ip-inventory-decisions-choices",
+        "ip-inventory-decisions-tree",
+        "ip-inventory-decisions-tree-title",
+        "ip-inventory-decisions-tree-desc",
+        "ip-inventory-decisions-guided",
+        "guided-ip-inventory-decisions-title",
+        "ip-inventory-decisions-guided-prompt",
+        "ip-inventory-decisions-guided-input",
+        "ip-inventory-decisions-independent-stockout",
+        "ip-inventory-decisions-independent-periodic",
+        "ip-inventory-decisions-independent-cost",
+        "ip-inventory-decisions-material-schedule",
+        "ip-inventory-decisions-materials-figure",
+        "ip-inventory-decisions-materials-caption"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-inventory-decisions-source-reasoning",
+        "ip-inventory-decisions-source-table",
+        "ip-inventory-decisions-source-caption",
+        "ip-inventory-decisions-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "予定どおりの入荷と、遅れた入荷を日ごとに追う",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-inventory-decisions-timeline",
+        "ip-inventory-decisions-period",
+        "ip-inventory-decisions-policy",
+        "ip-inventory-decisions-tree",
+        "ip-inventory-decisions-source-table",
+        "ip-inventory-decisions-materials-figure"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-inventory-decisions-guided",
+          "expected": "3900",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 75,
+        "after": 85
+      },
+      "previousLessonAssessment": "ip-inventory-decisions-check"
+    },
+    {
+      "id": "ip-rights",
+      "unit": 2,
+      "order": 7,
+      "title": "知的財産権とソフトウェアの利用",
+      "objectives": [
+        "保護対象に合う権利を選ぶ",
+        "利用許諾と著作権を区別する"
+      ],
+      "officialItems": [
+        4
+      ],
+      "retainedExplicitAnchors": [
+        "depth-rights",
+        "ip-rights-existing-visual",
+        "trade-secret-case",
+        "textbook-rights",
+        "textbook-rights-transfer",
+        "ip-rights-decision-section",
+        "ip-rights-worked-decision",
+        "ip-rights-worked-decision-caption",
+        "ip-rights-guided-transfer",
+        "ip-rights-guided-transfer-title",
+        "ip-rights-guided-transfer-prompt",
+        "ip-rights-guided-transfer-1",
+        "ip-rights-guided-transfer-2",
+        "ip-rights-guided-transfer-3",
+        "ip-rights-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-rights-source-reasoning",
+        "ip-rights-source-table",
+        "ip-rights-source-caption",
+        "ip-rights-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "公開する成果物と、利用条件を一つずつ対応させる",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-rights-source-table",
+        "ip-rights-existing-visual",
+        "ip-rights-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-rights-guided-transfer",
+          "expected": "2",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 85,
+        "after": 95
+      },
+      "previousLessonAssessment": "ip-rights-check"
+    },
+    {
+      "id": "ip-law-ethics",
+      "unit": 2,
+      "order": 8,
+      "title": "情報・労働・取引の法律と倫理",
+      "objectives": [
+        "身近な行動と関連する法律を結び付ける",
+        "個人情報の目的と第三者提供を考える"
+      ],
+      "officialItems": [
+        5,
+        6,
+        7
+      ],
+      "retainedExplicitAnchors": [
+        "depth-law-ethics",
+        "ip-law-ethics-existing-visual",
+        "legal-scope-cases",
+        "oversight-records-and-disposal",
+        "textbook-law-ethics",
+        "textbook-law-ethics-transfer",
+        "textbook-law-ethics-security",
+        "ip-law-ethics-decision-section",
+        "ip-law-ethics-worked-decision",
+        "ip-law-ethics-worked-decision-caption",
+        "ip-law-ethics-guided-transfer",
+        "ip-law-ethics-guided-transfer-title",
+        "ip-law-ethics-guided-transfer-prompt",
+        "ip-law-ethics-guided-transfer-1",
+        "ip-law-ethics-guided-transfer-2",
+        "ip-law-ethics-guided-transfer-3",
+        "ip-law-ethics-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-law-ethics-source-reasoning",
+        "ip-law-ethics-source-table",
+        "ip-law-ethics-source-caption",
+        "ip-law-ethics-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "提供する項目を、委託する仕事の範囲に合わせる",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-law-ethics-source-table",
+        "ip-law-ethics-existing-visual",
+        "ip-law-ethics-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-law-ethics-guided-transfer",
+          "expected": "2",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 105,
+        "after": 115
+      },
+      "previousLessonAssessment": "ip-law-ethics-check"
+    },
+    {
+      "id": "ip-standards",
+      "unit": 2,
+      "order": 9,
+      "title": "標準化と互換性",
+      "objectives": [
+        "公的標準と事実上の標準を区別する",
+        "標準化の効果と限界を説明する"
+      ],
+      "officialItems": [
+        8
+      ],
+      "retainedExplicitAnchors": [
+        "depth-standards",
+        "ip-standards-existing-visual",
+        "textbook-standards",
+        "textbook-standards-transfer",
+        "ip-standards-decision-section",
+        "ip-standards-worked-decision",
+        "ip-standards-worked-decision-caption",
+        "ip-standards-guided-transfer",
+        "ip-standards-guided-transfer-title",
+        "ip-standards-guided-transfer-prompt",
+        "ip-standards-guided-transfer-1",
+        "ip-standards-guided-transfer-2",
+        "ip-standards-guided-transfer-3",
+        "ip-standards-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-standards-source-reasoning",
+        "ip-standards-source-table",
+        "ip-standards-source-caption",
+        "ip-standards-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "読めたデータが、同じ意味として使えるか確かめる",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-standards-source-table",
+        "ip-standards-existing-visual",
+        "ip-standards-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-standards-guided-transfer",
+          "expected": "1",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 80,
+        "after": 90
+      },
+      "previousLessonAssessment": "ip-standards-check"
+    },
+    {
+      "id": "ip-strategy",
+      "unit": 3,
+      "order": 10,
+      "title": "経営戦略と目標・評価",
+      "objectives": [
+        "戦略分析の軸を使い分ける",
+        "KGIとKPIを結び付ける"
+      ],
+      "officialItems": [
+        9,
+        11
+      ],
+      "retainedExplicitAnchors": [
+        "depth-strategy",
+        "ip-strategy-existing-visual",
+        "ip-strategy-figure-2",
+        "textbook-strategy",
+        "textbook-strategy-transfer",
+        "textbook-strategy-method",
+        "textbook-strategy-kpi-case",
+        "ip-strategy-decision-section",
+        "ip-strategy-worked-decision",
+        "ip-strategy-worked-decision-caption",
+        "ip-strategy-guided-transfer",
+        "ip-strategy-guided-transfer-title",
+        "ip-strategy-guided-transfer-prompt",
+        "ip-strategy-guided-transfer-input",
+        "ip-strategy-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-strategy-source-reasoning",
+        "ip-strategy-source-table",
+        "ip-strategy-source-caption",
+        "ip-strategy-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "同じ市場の資料から、相対的な位置と実行条件を読む",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-strategy-source-table",
+        "ip-strategy-existing-visual",
+        "ip-strategy-figure-2",
+        "ip-strategy-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-strategy-guided-transfer",
+          "expected": "1500",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 105,
+        "after": 115
+      },
+      "previousLessonAssessment": "ip-strategy-check"
+    },
+    {
+      "id": "ip-marketing",
+      "unit": 3,
+      "order": 11,
+      "title": "マーケティングと経営管理システム",
+      "objectives": [
+        "STPと4Pを使って施策を整理する",
+        "ERP・SCM・CRMの役割を区別する"
+      ],
+      "officialItems": [
+        10,
+        12
+      ],
+      "retainedExplicitAnchors": [
+        "ip-marketing-existing-visual",
+        "depth-marketing",
+        "ip-marketing-figure-2",
+        "systems-worked-diagnosis",
+        "textbook-marketing",
+        "textbook-marketing-transfer",
+        "textbook-marketing-knowledge",
+        "ip-marketing-decision-section",
+        "ip-marketing-worked-decision",
+        "ip-marketing-worked-decision-caption",
+        "ip-marketing-guided-transfer",
+        "ip-marketing-guided-transfer-title",
+        "ip-marketing-guided-transfer-prompt",
+        "ip-marketing-guided-transfer-input",
+        "ip-marketing-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-marketing-source-reasoning",
+        "ip-marketing-source-table",
+        "ip-marketing-source-caption",
+        "ip-marketing-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "顧客の価値から、施策と評価指標を選ぶ",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-marketing-source-table",
+        "ip-marketing-existing-visual",
+        "ip-marketing-figure-2",
+        "ip-marketing-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-marketing-guided-transfer",
+          "expected": "3200",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 95,
+        "after": 105
+      },
+      "previousLessonAssessment": "ip-marketing-check"
+    },
+    {
+      "id": "ip-tech-business",
+      "unit": 4,
+      "order": 12,
+      "title": "技術戦略とビジネスシステム",
+      "objectives": [
+        "技術ロードマップと研究開発を説明する",
+        "事業に合うシステムの役割を選ぶ"
+      ],
+      "officialItems": [
+        13,
+        14
+      ],
+      "retainedExplicitAnchors": [
+        "depth-tech-business",
+        "ip-tech-business-existing-visual",
+        "public-system-application",
+        "textbook-tech-business",
+        "textbook-tech-business-transfer",
+        "textbook-tech-business-systems",
+        "ip-tech-business-decision-section",
+        "ip-tech-business-worked-decision",
+        "ip-tech-business-worked-decision-caption",
+        "ip-tech-business-guided-transfer",
+        "ip-tech-business-guided-transfer-title",
+        "ip-tech-business-guided-transfer-prompt",
+        "ip-tech-business-guided-transfer-1",
+        "ip-tech-business-guided-transfer-2",
+        "ip-tech-business-guided-transfer-3",
+        "ip-tech-business-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-tech-business-source-reasoning",
+        "ip-tech-business-source-table",
+        "ip-tech-business-source-caption",
+        "ip-tech-business-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "実証で分かったことを、導入判断の条件へ結び付ける",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-tech-business-source-table",
+        "ip-tech-business-existing-visual",
+        "ip-tech-business-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-tech-business-guided-transfer",
+          "expected": "1",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 90,
+        "after": 100
+      },
+      "previousLessonAssessment": "ip-tech-business-check"
+    },
+    {
+      "id": "ip-engineering-iot",
+      "unit": 5,
+      "order": 13,
+      "title": "生産・設計とIoTシステム",
+      "objectives": [
+        "設計と生産を支えるシステムを区別する",
+        "IoTの計測・通信・制御を説明する"
+      ],
+      "officialItems": [
+        15,
+        17
+      ],
+      "retainedExplicitAnchors": [
+        "ip-engineering-iot-existing-visual",
+        "depth-engineering-iot",
+        "ip-engineering-iot-figure-2",
+        "manufacturing-worked-plan",
+        "textbook-engineering-iot",
+        "textbook-engineering-iot-transfer",
+        "ip-engineering-iot-figure-3",
+        "ip-engineering-iot-decision-section",
+        "ip-engineering-iot-worked-decision",
+        "ip-engineering-iot-worked-decision-caption",
+        "ip-engineering-iot-guided-transfer",
+        "ip-engineering-iot-guided-transfer-title",
+        "ip-engineering-iot-guided-transfer-prompt",
+        "ip-engineering-iot-guided-transfer-input",
+        "ip-engineering-iot-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-engineering-iot-source-reasoning",
+        "ip-engineering-iot-source-table",
+        "ip-engineering-iot-source-caption",
+        "ip-engineering-iot-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "同じ部品でも、使える日が違えば手配量が変わる",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-engineering-iot-source-table",
+        "ip-engineering-iot-existing-visual",
+        "ip-engineering-iot-figure-2",
+        "ip-engineering-iot-figure-3",
+        "ip-engineering-iot-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-engineering-iot-guided-transfer",
+          "expected": "35",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 95,
+        "after": 105
+      },
+      "previousLessonAssessment": "ip-engineering-iot-check"
+    },
+    {
+      "id": "ip-ecommerce",
+      "unit": 5,
+      "order": 14,
+      "title": "eビジネスとデジタルサービス",
+      "objectives": [
+        "取引の組合せと事業モデルを区別する",
+        "電子商取引の指標を計算する"
+      ],
+      "officialItems": [
+        16
+      ],
+      "retainedExplicitAnchors": [
+        "depth-ecommerce",
+        "ip-ecommerce-existing-visual",
+        "textbook-ecommerce",
+        "textbook-ecommerce-transfer",
+        "ip-ecommerce-decision-section",
+        "ip-ecommerce-worked-decision",
+        "ip-ecommerce-worked-decision-caption",
+        "ip-ecommerce-guided-transfer",
+        "ip-ecommerce-guided-transfer-title",
+        "ip-ecommerce-guided-transfer-prompt",
+        "ip-ecommerce-guided-transfer-1",
+        "ip-ecommerce-guided-transfer-2",
+        "ip-ecommerce-guided-transfer-3",
+        "ip-ecommerce-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-ecommerce-source-reasoning",
+        "ip-ecommerce-source-table",
+        "ip-ecommerce-source-caption",
+        "ip-ecommerce-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "広告から購入までの各段階で、分母をそろえる",
+        "返金件数が違う広告を比べる"
+      ],
+      "visuals": [
+        "ip-ecommerce-source-table",
+        "ip-ecommerce-existing-visual",
+        "ip-ecommerce-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-ecommerce-guided-transfer",
+          "expected": "2",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 85,
+        "after": 95
+      },
+      "previousLessonAssessment": "ip-ecommerce-check"
+    },
+    {
+      "id": "ip-system-strategy",
+      "unit": 6,
+      "order": 15,
+      "title": "情報システム戦略と業務プロセス",
+      "objectives": [
+        "全体最適と業務改革を説明する",
+        "クラウド等の利用形態を比較する"
+      ],
+      "officialItems": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "retainedExplicitAnchors": [
+        "depth-system-strategy",
+        "ip-system-strategy-existing-visual",
+        "adoption-measure-case",
+        "textbook-system-strategy",
+        "textbook-system-strategy-transfer",
+        "textbook-system-strategy-provider",
+        "textbook-system-strategy-choice",
+        "ip-system-strategy-decision-section",
+        "ip-system-strategy-worked-decision",
+        "ip-system-strategy-worked-decision-caption",
+        "ip-system-strategy-guided-transfer",
+        "ip-system-strategy-guided-transfer-title",
+        "ip-system-strategy-guided-transfer-prompt",
+        "ip-system-strategy-guided-transfer-input",
+        "ip-system-strategy-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-system-strategy-source-reasoning",
+        "ip-system-strategy-source-table",
+        "ip-system-strategy-source-caption",
+        "ip-system-strategy-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "部署の処理時間を足し、業務全体の改善を測る",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-system-strategy-source-table",
+        "ip-system-strategy-existing-visual",
+        "ip-system-strategy-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-system-strategy-guided-transfer",
+          "expected": "30",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 105,
+        "after": 115
+      },
+      "previousLessonAssessment": "ip-system-strategy-check"
+    },
+    {
+      "id": "ip-procurement",
+      "unit": 7,
+      "order": 16,
+      "title": "システム化計画・要件定義・調達",
+      "objectives": [
+        "業務要件と非機能要件を整理する",
+        "RFIとRFPを使い分ける"
+      ],
+      "officialItems": [
+        22,
+        23,
+        24
+      ],
+      "retainedExplicitAnchors": [
+        "depth-procurement",
+        "ip-procurement-existing-visual",
+        "procurement-document-case",
+        "textbook-procurement",
+        "textbook-procurement-transfer",
+        "textbook-procurement-contract",
+        "textbook-procurement-requirements",
+        "ip-procurement-decision-section",
+        "ip-procurement-worked-decision",
+        "ip-procurement-worked-decision-caption",
+        "ip-procurement-guided-transfer",
+        "ip-procurement-guided-transfer-title",
+        "ip-procurement-guided-transfer-prompt",
+        "ip-procurement-guided-transfer-input",
+        "ip-procurement-decision-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-procurement-source-reasoning",
+        "ip-procurement-source-table",
+        "ip-procurement-source-caption",
+        "ip-procurement-source-practice"
+      ],
+      "additionalTeachingSections": [
+        "要件から測定条件へ進み、提案を同じ基準で比べる",
+        "別の条件で判断する"
+      ],
+      "visuals": [
+        "ip-procurement-source-table",
+        "ip-procurement-existing-visual",
+        "ip-procurement-worked-decision"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "ip-procurement-guided-transfer",
+          "expected": "71",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 105,
+        "after": 115
+      },
+      "previousLessonAssessment": "ip-procurement-check"
+    },
+    {
+      "id": "ip-development",
+      "unit": 8,
+      "order": 17,
+      "title": "システム開発とテスト・移行",
+      "objectives": [
+        "開発工程とテストの目的を区別する",
+        "安全な移行と保守を計画する"
+      ],
+      "officialItems": [
+        25
+      ],
+      "retainedExplicitAnchors": [
+        "depth-development-requirements",
+        "depth-development-quality",
+        "depth-development-test",
+        "ip-development-test-scope",
+        "depth-development-estimate",
+        "depth-development-practice",
+        "ip-development-requirement-acceptance",
+        "textbook-development",
+        "textbook-development-testing",
+        "textbook-development-load",
+        "textbook-development-maintenance",
+        "textbook-development-migration",
+        "ip-development-new-worked-example",
+        "ip-development-worked-evidence",
+        "ip-development-worked-evidence-caption",
+        "guided-ip-development",
+        "guided-ip-development-title",
+        "guided-ip-development-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "worked-management-transfer"
+      ],
+      "additionalTeachingSections": [
+        "同じ予約条件を、設計とテスト結果までたどる",
+        "変更した要件から、追加すべきテストを考える"
+      ],
+      "visuals": [
+        "ip-development-test-scope",
+        "ip-development-requirement-acceptance",
+        "ip-development-worked-evidence"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-development",
+          "expected": "b",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 60,
+        "after": 70
+      },
+      "previousLessonAssessment": "ip-development-check"
+    },
+    {
+      "id": "ip-agile",
+      "unit": 9,
+      "order": 18,
+      "title": "開発プロセス・アジャイルとDevOps",
+      "objectives": [
+        "ウォーターフォールと反復開発を比較する",
+        "アジャイルの役割と継続的な改善を説明する"
+      ],
+      "officialItems": [
+        26
+      ],
+      "retainedExplicitAnchors": [
+        "depth-agile-models",
+        "depth-agile-design",
+        "depth-agile-scrum",
+        "ip-agile-scrum-feedback",
+        "depth-agile-process",
+        "depth-agile-maturity",
+        "depth-agile-practice",
+        "textbook-agile",
+        "textbook-agile-modeling",
+        "textbook-agile-scrum",
+        "textbook-agile-mlops",
+        "ip-agile-new-worked-example",
+        "ip-agile-worked-evidence",
+        "ip-agile-worked-evidence-caption",
+        "guided-ip-agile",
+        "guided-ip-agile-title",
+        "guided-ip-agile-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "worked-management-transfer"
+      ],
+      "additionalTeachingSections": [
+        "一回の反復で、成果の検討と進め方の振返りを分ける",
+        "自動化が成功しても、まだ決められないこと"
+      ],
+      "visuals": [
+        "ip-agile-scrum-feedback",
+        "ip-agile-worked-evidence"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-agile",
+          "expected": "c",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 55,
+        "after": 65
+      },
+      "previousLessonAssessment": "ip-agile-check"
+    },
+    {
+      "id": "ip-project",
+      "unit": 10,
+      "order": 19,
+      "title": "プロジェクト管理とクリティカルパス",
+      "objectives": [
+        "WBSとスケジュールを関連付ける",
+        "制約とリスクを踏まえて計画する"
+      ],
+      "officialItems": [
+        27
+      ],
+      "retainedExplicitAnchors": [
+        "depth-project-plan",
+        "depth-project-network",
+        "ip-project-parallel-paths",
+        "depth-project-control",
+        "depth-project-close",
+        "depth-project-practice",
+        "textbook-project",
+        "ip-project-gantt-float",
+        "textbook-project-resources",
+        "textbook-project-report",
+        "ip-project-new-worked-example",
+        "ip-project-worked-evidence",
+        "ip-project-worked-evidence-caption",
+        "guided-ip-project",
+        "guided-ip-project-title",
+        "guided-ip-project-prompt",
+        "guided-ip-project-input"
+      ],
+      "additionalTeachingAnchors": [
+        "worked-management-transfer",
+        "project-transfer-network",
+        "project-transfer-network-title",
+        "project-transfer-network-desc",
+        "guided-management-shortening",
+        "guided-management-shortening-title",
+        "guided-management-shortening-prompt"
+      ],
+      "additionalTeachingSections": [
+        "合流する仕事は、長いほうが終わるまで始められない",
+        "短縮した後で、どの経路が工期を決めるか"
+      ],
+      "visuals": [
+        "ip-project-parallel-paths",
+        "project-transfer-network",
+        "ip-project-gantt-float",
+        "ip-project-worked-evidence"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-management-shortening",
+          "expected": "7",
+          "feedback": true,
+          "staticSolution": true
+        },
+        {
+          "anchor": "guided-ip-project",
+          "expected": "8",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 75
+      },
+      "previousLessonAssessment": "ip-project-check"
+    },
+    {
+      "id": "ip-reading-project-plans",
+      "unit": 10,
+      "order": 20,
+      "title": "工程計画の読解演習：期限までに終わる案を選ぶ",
+      "objectives": [
+        "前進計算と後退計算を行う",
+        "複数の短縮案を比較し、短縮後の経路を確かめる"
+      ],
+      "officialItems": [
+        27
+      ],
+      "retainedExplicitAnchors": [
+        "ip-reading-project-plans-project-paths",
+        "ip-reading-project-plans-new-worked-example",
+        "ip-reading-project-plans-worked-evidence",
+        "ip-reading-project-plans-worked-evidence-caption",
+        "guided-ip-reading-project-plans",
+        "guided-ip-reading-project-plans-title",
+        "guided-ip-reading-project-plans-prompt",
+        "guided-ip-reading-project-plans-input"
+      ],
+      "additionalTeachingAnchors": [
+        "worked-management-transfer"
+      ],
+      "additionalTeachingSections": [
+        "同じ余裕を、別々の作業で二重に使わない",
+        "追加された遅れから、終了日を求める"
+      ],
+      "visuals": [
+        "ip-reading-project-plans-project-paths",
+        "ip-reading-project-plans-worked-evidence"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-reading-project-plans",
+          "expected": "9",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 50,
+        "after": 60
+      },
+      "previousLessonAssessment": "ip-reading-project-plans-check"
+    },
+    {
+      "id": "ip-resource-planning",
+      "unit": 10,
+      "order": 21,
+      "title": "工程表と人員配置：同じ担当者の作業が重なるとき",
+      "objectives": [
+        "先行作業と担当者の空きの両方を使って各作業の開始日を決める",
+        "応援の条件、費用、期限を照合して実行可能な案を選ぶ",
+        "進捗報告とリスク対策を、判断期限と費用・品質への影響まで具体化する"
+      ],
+      "officialItems": [
+        27
+      ],
+      "retainedExplicitAnchors": [
+        "resource-feasibility",
+        "ip-resource-planning-requirements",
+        "ip-resource-planning-requirements-caption",
+        "ip-resource-planning-schedule",
+        "ip-resource-planning-schedule-caption",
+        "resource-alternatives",
+        "ip-resource-planning-decisions",
+        "ip-resource-planning-decisions-caption",
+        "resource-risk-report",
+        "guided-ip-resource-planning",
+        "ip-resource-planning-guided-title",
+        "ip-resource-planning-guided-prompt",
+        "ip-resource-planning-guided-answer"
+      ],
+      "additionalTeachingAnchors": [
+        "worked-management-transfer"
+      ],
+      "additionalTeachingSections": [
+        "応援の到着を待つ間に、誰が何を進められるかを読む",
+        "応援の条件が一つ変わった場合"
+      ],
+      "visuals": [
+        "ip-resource-planning-requirements",
+        "ip-resource-planning-schedule",
+        "ip-resource-planning-decisions"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-resource-planning",
+          "expected": "3",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 80,
+        "after": 90
+      },
+      "previousLessonAssessment": "ip-resource-planning-check"
+    },
+    {
+      "id": "ip-services",
+      "unit": 11,
+      "order": 22,
+      "title": "ITサービスと設備・障害対応",
+      "objectives": [
+        "インシデントと問題を区別する",
+        "SLAと継続的改善を説明する"
+      ],
+      "officialItems": [
+        28,
+        29,
+        30
+      ],
+      "retainedExplicitAnchors": [
+        "depth-services-measures",
+        "depth-services-lifecycle",
+        "depth-services-routing",
+        "ip-services-service-desk-routing",
+        "depth-services-facilities",
+        "depth-services-practice",
+        "textbook-services",
+        "textbook-services-itil",
+        "textbook-services-report",
+        "textbook-services-power",
+        "ip-services-power-continuity",
+        "textbook-services-green",
+        "textbook-services-continuity",
+        "ip-services-new-worked-example",
+        "ip-services-worked-evidence",
+        "ip-services-worked-evidence-caption",
+        "guided-ip-services",
+        "guided-ip-services-title",
+        "guided-ip-services-prompt",
+        "guided-ip-services-input"
+      ],
+      "additionalTeachingAnchors": [
+        "worked-management-transfer"
+      ],
+      "additionalTeachingSections": [
+        "停止の記録を、同じ時間軸へ重ねてから集計する",
+        "SLAで除外する時間がある場合"
+      ],
+      "visuals": [
+        "ip-services-service-desk-routing",
+        "ip-services-power-continuity",
+        "ip-services-worked-evidence"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-services",
+          "expected": "22",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 75
+      },
+      "previousLessonAssessment": "ip-services-check"
+    },
+    {
+      "id": "ip-audit",
+      "unit": 12,
+      "order": 23,
+      "title": "システム監査と内部統制",
+      "objectives": [
+        "監査の独立性と証拠を説明する",
+        "内部統制の目的と限界を理解する"
+      ],
+      "officialItems": [
+        31,
+        32
+      ],
+      "retainedExplicitAnchors": [
+        "depth-audit-roles",
+        "depth-audit-evidence",
+        "ip-audit-audit-records",
+        "depth-audit-assurance",
+        "depth-audit-practice",
+        "textbook-audit",
+        "ip-audit-audit-evidence-chain",
+        "textbook-audit-sampling",
+        "textbook-audit-scope",
+        "textbook-audit-governance",
+        "ip-audit-new-worked-example",
+        "ip-audit-worked-evidence",
+        "ip-audit-worked-evidence-caption",
+        "guided-ip-audit",
+        "guided-ip-audit-title",
+        "guided-ip-audit-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "worked-management-transfer"
+      ],
+      "additionalTeachingSections": [
+        "規程と操作ログを、同じ申請番号でつなぐ",
+        "承認者の欄が埋まっていても足りない証拠"
+      ],
+      "visuals": [
+        "ip-audit-audit-records",
+        "ip-audit-audit-evidence-chain",
+        "ip-audit-worked-evidence"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-audit",
+          "expected": "b",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 55,
+        "after": 65
+      },
+      "previousLessonAssessment": "ip-audit-check"
+    },
+    {
+      "id": "ip-binary",
+      "unit": 13,
+      "order": 24,
+      "title": "2進数・集合と論理演算",
+      "objectives": [
+        "位取りと情報量を計算する",
+        "集合・論理演算を具体例で使う"
+      ],
+      "officialItems": [
+        33
+      ],
+      "retainedExplicitAnchors": [
+        "ip-binary-figure-1",
+        "textbook-binary",
+        "ip-binary-figure-2",
+        "binary-textbook-skill-1",
+        "binary-textbook-skill-2",
+        "binary-textbook-skill-3",
+        "guided-ip-binary",
+        "ip-binary-guided-title",
+        "ip-binary-guided-prompt",
+        "ip-binary-guided-answer"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-binary-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "符号のない値と、各桁に割り当てた意味を区別する"
+      ],
+      "visuals": [
+        "ip-binary-figure-1",
+        "ip-binary-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-binary",
+          "expected": "8",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 70,
+        "after": 78
+      },
+      "previousLessonAssessment": "ip-binary-check"
+    },
+    {
+      "id": "ip-statistics",
+      "unit": 13,
+      "order": 25,
+      "title": "確率・統計とデータの読み方",
+      "objectives": [
+        "代表値と散らばりを説明する",
+        "確率・期待値を計算する"
+      ],
+      "officialItems": [
+        34
+      ],
+      "retainedExplicitAnchors": [
+        "ip-statistics-figure-1",
+        "ip-statistics-figure-2",
+        "textbook-statistics",
+        "ip-statistics-figure-3",
+        "statistics-textbook-skill-1",
+        "statistics-textbook-skill-2",
+        "statistics-textbook-skill-3",
+        "statistics-textbook-skill-4",
+        "guided-ip-statistics",
+        "ip-statistics-guided-title",
+        "ip-statistics-guided-prompt",
+        "ip-statistics-guided-answer"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-statistics-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "割合の変化を、同じ集団の内訳へ戻って確かめる"
+      ],
+      "visuals": [
+        "ip-statistics-figure-1",
+        "ip-statistics-figure-2",
+        "ip-statistics-figure-3"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-statistics",
+          "expected": "25",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 75,
+        "after": 83
+      },
+      "previousLessonAssessment": "ip-statistics-check"
+    },
+    {
+      "id": "ip-regression-residuals",
+      "unit": 13,
+      "order": 26,
+      "title": "回帰分析の読み方：予測値・残差・最小二乗法",
+      "objectives": [
+        "説明変数・目的変数と単位から回帰直線の予測を読む",
+        "残差と二乗和で同じ実測データに対する予測式を比較する",
+        "観測範囲や作業条件から予測を使える場面と追加調査を判断する"
+      ],
+      "officialItems": [
+        34
+      ],
+      "retainedExplicitAnchors": [
+        "regression-reading",
+        "ip-regression-residuals-scatter",
+        "regression-fit",
+        "ip-regression-residuals-model-comparison",
+        "ip-regression-residuals-model-comparison-caption",
+        "regression-conditions",
+        "ip-regression-residuals-new-days",
+        "ip-regression-residuals-new-days-caption",
+        "guided-ip-regression-residuals",
+        "ip-regression-residuals-guided-title",
+        "ip-regression-residuals-guided-prompt",
+        "ip-regression-residuals-guided-answer"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-regression-residuals-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "誤差の符号と大きさを、同じ観測で比べる"
+      ],
+      "visuals": [
+        "ip-regression-residuals-scatter",
+        "ip-regression-residuals-model-comparison",
+        "ip-regression-residuals-new-days"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-regression-residuals",
+          "expected": "3",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 90,
+        "after": 98
+      },
+      "previousLessonAssessment": "ip-regression-residuals-check"
+    },
+    {
+      "id": "ip-ai-data",
+      "unit": 13,
+      "order": 27,
+      "title": "情報理論・AIと生成AIの活用",
+      "objectives": [
+        "データとAIの学習・評価を区別する",
+        "生成AIの限界と安全な利用を説明する",
+        "文の条件を論理式で表し、規則の反例と未確認を区別する"
+      ],
+      "officialItems": [
+        35
+      ],
+      "retainedExplicitAnchors": [
+        "ip-ai-data-figure-1",
+        "ip-ai-data-figure-2",
+        "textbook-ai-data",
+        "ip-ai-data-figure-3",
+        "ai-data-textbook-skill-1",
+        "ai-data-textbook-skill-2",
+        "ai-data-textbook-skill-3",
+        "ai-data-textbook-skill-4",
+        "ip-ai-data-predicate-reasoning",
+        "ip-ai-data-predicate-records",
+        "ip-ai-data-predicate-caption",
+        "guided-ip-ai-data",
+        "ip-ai-data-guided-title",
+        "ip-ai-data-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-ai-data-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "分類結果の四つの欄から、改善すべき誤りを選ぶ"
+      ],
+      "visuals": [
+        "ip-ai-data-figure-1",
+        "ip-ai-data-figure-2",
+        "ip-ai-data-figure-3",
+        "ip-ai-data-predicate-records"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-ai-data",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 75,
+        "after": 83
+      },
+      "previousLessonAssessment": "ip-ai-data-check"
+    },
+    {
+      "id": "ip-algorithms",
+      "unit": 14,
+      "order": 28,
+      "title": "データ構造とアルゴリズム",
+      "objectives": [
+        "順次・分岐・反復を追跡する",
+        "探索とデータ構造を使い分ける"
+      ],
+      "officialItems": [
+        36,
+        37
+      ],
+      "retainedExplicitAnchors": [
+        "ip-algorithms-figure-1",
+        "textbook-algorithms",
+        "ip-algorithms-figure-2",
+        "algorithms-textbook-skill-1",
+        "algorithms-textbook-skill-2",
+        "algorithms-textbook-skill-3",
+        "algorithms-textbook-skill-4",
+        "ip-algorithms-branch-trace",
+        "ip-algorithms-branch-trace-caption",
+        "guided-ip-algorithms-branch",
+        "guided-ip-algorithms-branch-title",
+        "guided-ip-algorithms-branch-prompt",
+        "guided-ip-algorithms-branch-input"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-algorithms-source-reasoning",
+        "ip-algorithms-branch-trace-figure"
+      ],
+      "additionalTeachingSections": [
+        "前の値を保存してから、二つの値を入れ替える"
+      ],
+      "visuals": [
+        "ip-algorithms-figure-1",
+        "ip-algorithms-figure-2",
+        "ip-algorithms-branch-trace-figure"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-algorithms-branch",
+          "expected": "4",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 70,
+        "after": 78
+      },
+      "previousLessonAssessment": "ip-algorithms-check"
+    },
+    {
+      "id": "ip-function-trace",
+      "unit": 14,
+      "order": 29,
+      "title": "擬似言語の関数を読む：引数・戻り値と処理の追い方",
+      "objectives": [
+        "関数の定義と呼出しを見分け、渡す値と戻る値を対応させる",
+        "分岐、境界値、呼出しごとの変数を表に記録して、複数の戻り値から最終結果を求める",
+        "returnで終わる処理と表示を区別し、戻り値の誤りを見つけるための入力を選ぶ"
+      ],
+      "officialItems": [
+        37
+      ],
+      "retainedExplicitAnchors": [
+        "objective-1",
+        "ip-function-call-flow",
+        "ip-function-call-flow-caption",
+        "worked-1",
+        "objective-2",
+        "worked-2",
+        "ip-function-pricing-trace",
+        "ip-function-pricing-trace-caption",
+        "objective-3",
+        "worked-3",
+        "ip-function-nested-trace",
+        "ip-function-nested-trace-caption",
+        "guided-ip-function-trace",
+        "ip-function-guided-title",
+        "ip-function-guided-prompt",
+        "ip-function-guided-answer",
+        "ip-function-trace-independent"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-function-trace-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "戻り値を受け取る場所まで、呼出しを追う"
+      ],
+      "visuals": [
+        "ip-function-call-flow",
+        "ip-function-pricing-trace",
+        "ip-function-nested-trace"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-function-trace",
+          "expected": "340",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 70,
+        "after": 78
+      },
+      "previousLessonAssessment": "ip-function-trace-check"
+    },
+    {
+      "id": "ip-languages",
+      "unit": 14,
+      "order": 30,
+      "title": "プログラム言語・Webとデータ表現",
+      "objectives": [
+        "言語の役割を区別する",
+        "HTML・CSS・JSON等の用途を説明する"
+      ],
+      "officialItems": [
+        38,
+        39
+      ],
+      "retainedExplicitAnchors": [
+        "ip-languages-figure-1",
+        "textbook-languages",
+        "ip-languages-figure-2",
+        "languages-textbook-skill-1",
+        "languages-textbook-skill-2",
+        "languages-textbook-skill-3",
+        "ip-languages-reuse-contract",
+        "ip-languages-reuse-boundaries",
+        "ip-languages-reuse-caption",
+        "guided-ip-languages",
+        "ip-languages-guided-title",
+        "ip-languages-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-languages-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "同じ見た目の値を、文字と数値に分けて処理する"
+      ],
+      "visuals": [
+        "ip-languages-figure-1",
+        "ip-languages-figure-2",
+        "ip-languages-reuse-boundaries"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-languages",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 60,
+        "after": 68
+      },
+      "previousLessonAssessment": "ip-languages-check"
+    },
+    {
+      "id": "ip-computer",
+      "unit": 15,
+      "order": 31,
+      "title": "CPU・メモリ・入出力",
+      "objectives": [
+        "主要装置の役割と記憶階層を説明する",
+        "単純な処理時間を計算する"
+      ],
+      "officialItems": [
+        40,
+        41,
+        42
+      ],
+      "retainedExplicitAnchors": [
+        "ip-computer-figure-1",
+        "textbook-computer",
+        "ip-computer-figure-2",
+        "computer-textbook-skill-1",
+        "computer-textbook-skill-2",
+        "computer-textbook-skill-3",
+        "computer-textbook-skill-4",
+        "guided-ip-computer",
+        "ip-computer-guided-title",
+        "ip-computer-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-computer-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "工程表から、全体を速くする場所を選ぶ"
+      ],
+      "visuals": [
+        "ip-computer-figure-1",
+        "ip-computer-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-computer",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-computer-check"
+    },
+    {
+      "id": "ip-architecture",
+      "unit": 16,
+      "order": 32,
+      "title": "システム構成と信頼性・性能",
+      "objectives": [
+        "冗長化と負荷分散を区別する",
+        "稼働率と性能指標を計算する"
+      ],
+      "officialItems": [
+        43,
+        44
+      ],
+      "retainedExplicitAnchors": [
+        "ip-architecture-figure-1",
+        "ip-architecture-figure-2",
+        "textbook-architecture",
+        "ip-architecture-figure-3",
+        "architecture-textbook-skill-1",
+        "architecture-textbook-skill-2",
+        "architecture-textbook-skill-3",
+        "architecture-textbook-skill-4",
+        "guided-ip-architecture",
+        "ip-architecture-guided-title",
+        "ip-architecture-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-architecture-source-reasoning",
+        "ip-architecture-shared-entry",
+        "ip-architecture-shared-entry-title",
+        "ip-architecture-shared-entry-description"
+      ],
+      "additionalTeachingSections": [
+        "共通の入口を含めて、冗長化の効果を求める"
+      ],
+      "visuals": [
+        "ip-architecture-shared-entry",
+        "ip-architecture-figure-1",
+        "ip-architecture-figure-2",
+        "ip-architecture-figure-3"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-architecture",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 70,
+        "after": 78
+      },
+      "previousLessonAssessment": "ip-architecture-check"
+    },
+    {
+      "id": "ip-os-files",
+      "unit": 17,
+      "order": 33,
+      "title": "OSとファイルシステム",
+      "objectives": [
+        "OSの資源管理を説明する",
+        "ファイルの経路と権限を扱う"
+      ],
+      "officialItems": [
+        45,
+        46
+      ],
+      "retainedExplicitAnchors": [
+        "ip-os-files-figure-1",
+        "textbook-os-files",
+        "ip-os-files-figure-2",
+        "os-files-textbook-skill-1",
+        "os-files-textbook-skill-2",
+        "os-files-textbook-skill-3",
+        "os-files-textbook-skill-4",
+        "guided-ip-os-files",
+        "ip-os-files-guided-title",
+        "ip-os-files-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-os-files-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "基準のフォルダと権限を分けて、開けない理由を調べる"
+      ],
+      "visuals": [
+        "ip-os-files-figure-1",
+        "ip-os-files-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-os-files",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 60,
+        "after": 68
+      },
+      "previousLessonAssessment": "ip-os-files-check"
+    },
+    {
+      "id": "ip-office-oss",
+      "unit": 17,
+      "order": 34,
+      "title": "オフィスツールとOSS",
+      "objectives": [
+        "表計算の参照と集計を説明する",
+        "OSSの利用条件と保守を確認する"
+      ],
+      "officialItems": [
+        47,
+        48
+      ],
+      "retainedExplicitAnchors": [
+        "ip-office-oss-figure-1",
+        "textbook-office-oss",
+        "ip-office-oss-figure-2",
+        "office-oss-textbook-skill-1",
+        "office-oss-textbook-skill-2",
+        "office-oss-textbook-skill-3",
+        "office-oss-textbook-skill-4",
+        "guided-ip-office-oss",
+        "ip-office-oss-guided-title",
+        "ip-office-oss-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-office-oss-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "縦と横へ式を配る前に、固定する方向を決める"
+      ],
+      "visuals": [
+        "ip-office-oss-figure-1",
+        "ip-office-oss-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-office-oss",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-office-oss-check"
+    },
+    {
+      "id": "ip-reading-spreadsheets",
+      "unit": 17,
+      "order": 35,
+      "title": "表計算の読解演習：数式を写して検算する",
+      "objectives": [
+        "数式を横・縦にコピーした結果を説明する",
+        "条件付き集計の対象を読み、誤った参照を検算で見つける"
+      ],
+      "officialItems": [
+        47
+      ],
+      "retainedExplicitAnchors": [
+        "ip-reading-spreadsheets-figure-1",
+        "ip-reading-spreadsheets-logical-total",
+        "ip-spreadsheets-logical-input",
+        "ip-spreadsheets-logical-input-caption",
+        "guided-ip-spreadsheets-logical",
+        "guided-ip-spreadsheets-logical-title",
+        "guided-ip-spreadsheets-logical-prompt",
+        "guided-ip-spreadsheets-logical-input"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-reading-spreadsheets-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "判定列を別に作り、除外した理由を確かめる"
+      ],
+      "visuals": [
+        "ip-reading-spreadsheets-figure-1",
+        "ip-spreadsheets-logical-input"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-spreadsheets-logical",
+          "expected": "1700",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 50,
+        "after": 58
+      },
+      "previousLessonAssessment": "ip-reading-spreadsheets-check"
+    },
+    {
+      "id": "ip-spreadsheet-lookups",
+      "unit": 17,
+      "order": 36,
+      "title": "表計算の表引き：垂直照合と水平照合を使い分ける",
+      "objectives": [
+        "基準の並ぶ向きと結果の位置から垂直照合・水平照合を選ぶ",
+        "識別用のコードと数値区分を区別し、一致方式を決める",
+        "別シートの照合式と条件付個数を、境界と例外を含めて検算する"
+      ],
+      "officialItems": [
+        47
+      ],
+      "retainedExplicitAnchors": [
+        "lookup-exact",
+        "ip-spreadsheet-lookups-codes",
+        "ip-spreadsheet-lookups-codes-caption",
+        "lookup-band",
+        "ip-spreadsheet-lookups-rates",
+        "ip-spreadsheet-lookups-rates-caption",
+        "lookup-horizontal",
+        "ip-spreadsheet-lookups-horizontal",
+        "ip-spreadsheet-lookups-horizontal-caption",
+        "lookup-summary-count",
+        "ip-spreadsheet-lookups-records",
+        "ip-spreadsheet-lookups-records-caption",
+        "guided-ip-spreadsheet-lookups",
+        "ip-spreadsheet-lookups-guided-title",
+        "ip-spreadsheet-lookups-guided-prompt",
+        "ip-spreadsheet-lookups-guided-answer"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-spreadsheet-lookups-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "向きが変わっても、検索する軸と返す項目を保つ"
+      ],
+      "visuals": [
+        "ip-spreadsheet-lookups-codes",
+        "ip-spreadsheet-lookups-rates",
+        "ip-spreadsheet-lookups-horizontal",
+        "ip-spreadsheet-lookups-records"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-spreadsheet-lookups",
+          "expected": "360",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 85,
+        "after": 93
+      },
+      "previousLessonAssessment": "ip-spreadsheet-lookups-check"
+    },
+    {
+      "id": "ip-hardware",
+      "unit": 18,
+      "order": 37,
+      "title": "ハードウェアと用途に合う選択",
+      "objectives": [
+        "機器の用途と制約を説明する",
+        "接続・保守・環境への配慮を考える"
+      ],
+      "officialItems": [
+        49
+      ],
+      "retainedExplicitAnchors": [
+        "ip-hardware-figure-1",
+        "ip-hardware-figure-2",
+        "textbook-hardware",
+        "ip-hardware-figure-3",
+        "hardware-textbook-skill-1",
+        "hardware-textbook-skill-2",
+        "hardware-textbook-skill-3",
+        "hardware-textbook-skill-4",
+        "guided-ip-hardware",
+        "ip-hardware-guided-title",
+        "ip-hardware-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-hardware-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "測定、判断、動作をつなぎ、現場で必要な装置を選ぶ"
+      ],
+      "visuals": [
+        "ip-hardware-figure-1",
+        "ip-hardware-figure-2",
+        "ip-hardware-figure-3"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-hardware",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 55,
+        "after": 63
+      },
+      "previousLessonAssessment": "ip-hardware-check"
+    },
+    {
+      "id": "ip-design",
+      "unit": 19,
+      "order": 38,
+      "title": "情報デザインと使いやすい画面",
+      "objectives": [
+        "情報の構造と見た目の役割を説明する",
+        "アクセシビリティと誤操作防止を考える"
+      ],
+      "officialItems": [
+        50,
+        51
+      ],
+      "retainedExplicitAnchors": [
+        "ip-design-figure-1",
+        "textbook-design",
+        "ip-design-figure-2",
+        "design-textbook-skill-1",
+        "design-textbook-skill-2",
+        "design-textbook-skill-3",
+        "design-textbook-skill-4",
+        "guided-ip-design",
+        "ip-design-guided-title",
+        "ip-design-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-design-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "画面の記録から、利用者が止まった箇所を改善する"
+      ],
+      "visuals": [
+        "ip-design-figure-1",
+        "ip-design-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-design",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 60,
+        "after": 68
+      },
+      "previousLessonAssessment": "ip-design-check"
+    },
+    {
+      "id": "ip-media",
+      "unit": 20,
+      "order": 39,
+      "title": "画像・音声・動画と圧縮",
+      "objectives": [
+        "デジタル化と容量を計算する",
+        "メディア形式と圧縮の違いを説明する"
+      ],
+      "officialItems": [
+        52,
+        53
+      ],
+      "retainedExplicitAnchors": [
+        "ip-media-figure-1",
+        "textbook-media",
+        "ip-media-figure-2",
+        "media-textbook-skill-1",
+        "media-textbook-skill-2",
+        "media-textbook-skill-3",
+        "media-textbook-skill-4",
+        "guided-ip-media",
+        "ip-media-guided-title",
+        "ip-media-guided-prompt",
+        "ip-media-guided-answer"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-media-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "録音時間とチャンネルを、ビットとバイトへ順に直す"
+      ],
+      "visuals": [
+        "ip-media-figure-1",
+        "ip-media-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-media",
+          "expected": "4",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-media-check"
+    },
+    {
+      "id": "ip-database",
+      "unit": 21,
+      "order": 40,
+      "title": "データベースの設計と正規化",
+      "objectives": [
+        "主キーと外部キーの役割を説明する",
+        "重複による更新の不整合を防ぐ"
+      ],
+      "officialItems": [
+        54,
+        55
+      ],
+      "retainedExplicitAnchors": [
+        "ip-database-figure-1",
+        "ip-database-figure-2",
+        "textbook-database",
+        "ip-database-figure-3",
+        "database-textbook-skill-1",
+        "database-textbook-skill-2",
+        "database-textbook-skill-3",
+        "database-textbook-skill-4",
+        "guided-ip-database",
+        "ip-database-guided-title",
+        "ip-database-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-database-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "注文の番号だけでは、明細の一行を特定できない理由"
+      ],
+      "visuals": [
+        "ip-database-figure-1",
+        "ip-database-figure-2",
+        "ip-database-figure-3"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-database",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-database-check"
+    },
+    {
+      "id": "ip-sql-transactions",
+      "unit": 21,
+      "order": 41,
+      "title": "SQLとトランザクション",
+      "objectives": [
+        "検索・集計の基本を読む",
+        "同時更新と復旧の必要性を説明する"
+      ],
+      "officialItems": [
+        56,
+        57
+      ],
+      "retainedExplicitAnchors": [
+        "ip-sql-transactions-figure-1",
+        "textbook-sql-transactions",
+        "ip-sql-transactions-figure-2",
+        "sql-transactions-textbook-skill-1",
+        "sql-transactions-textbook-skill-2",
+        "sql-transactions-textbook-skill-3",
+        "sql-transactions-textbook-skill-4",
+        "textbook-sql-join-case",
+        "guided-ip-sql-transactions",
+        "ip-sql-transactions-guided-title",
+        "ip-sql-transactions-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-sql-transactions-source-reasoning",
+        "ip-sql-transactions-query-stages",
+        "ip-sql-transactions-query-title",
+        "ip-sql-transactions-query-description"
+      ],
+      "additionalTeachingSections": [
+        "同じ売上表を、行と集計後の条件へ順に通す"
+      ],
+      "visuals": [
+        "ip-sql-transactions-query-stages",
+        "ip-sql-transactions-figure-1",
+        "ip-sql-transactions-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-sql-transactions",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 75,
+        "after": 83
+      },
+      "previousLessonAssessment": "ip-sql-transactions-check"
+    },
+    {
+      "id": "ip-network",
+      "unit": 22,
+      "order": 42,
+      "title": "LAN・無線とネットワーク構成",
+      "objectives": [
+        "通信機器と接続範囲を区別する",
+        "帯域と転送時間を計算する"
+      ],
+      "officialItems": [
+        58
+      ],
+      "retainedExplicitAnchors": [
+        "ip-network-figure-1",
+        "ip-network-figure-2",
+        "ip-network-figure-3",
+        "textbook-network",
+        "ip-network-figure-4",
+        "network-textbook-skill-1",
+        "network-textbook-skill-2",
+        "network-textbook-skill-3",
+        "network-textbook-skill-4",
+        "textbook-network-prefix",
+        "guided-ip-network",
+        "ip-network-guided-title",
+        "ip-network-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-network-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "転送と往復の待ち時間を別々に見積もる"
+      ],
+      "visuals": [
+        "ip-network-figure-1",
+        "ip-network-figure-2",
+        "ip-network-figure-3",
+        "ip-network-figure-4"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-network",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-network-check"
+    },
+    {
+      "id": "ip-protocols",
+      "unit": 22,
+      "order": 43,
+      "title": "TCP/IP・名前解決とインターネット",
+      "objectives": [
+        "代表的なプロトコルの役割を説明する",
+        "アドレスと名前の関係を理解する"
+      ],
+      "officialItems": [
+        59,
+        60
+      ],
+      "retainedExplicitAnchors": [
+        "ip-protocols-figure-1",
+        "ip-protocols-figure-2",
+        "textbook-protocols",
+        "ip-protocols-figure-3",
+        "protocols-textbook-skill-1",
+        "protocols-textbook-skill-2",
+        "protocols-textbook-skill-3",
+        "protocols-textbook-skill-4",
+        "guided-ip-protocols",
+        "ip-protocols-guided-title",
+        "ip-protocols-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-protocols-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "接続の記録を、設定から名前、要求までたどる"
+      ],
+      "visuals": [
+        "ip-protocols-figure-1",
+        "ip-protocols-figure-2",
+        "ip-protocols-figure-3"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-protocols",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-protocols-check"
+    },
+    {
+      "id": "ip-security-risk",
+      "unit": 23,
+      "order": 44,
+      "title": "情報セキュリティとリスク管理",
+      "objectives": [
+        "機密性・完全性・可用性を説明する",
+        "リスク対応と事故対応を考える"
+      ],
+      "officialItems": [
+        61,
+        62
+      ],
+      "retainedExplicitAnchors": [
+        "ip-security-risk-figure-1",
+        "textbook-security-risk",
+        "ip-security-risk-figure-2",
+        "security-risk-textbook-skill-1",
+        "security-risk-textbook-skill-2",
+        "security-risk-textbook-skill-3",
+        "security-risk-textbook-skill-4",
+        "guided-ip-security-risk",
+        "ip-security-risk-guided-title",
+        "ip-security-risk-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-security-risk-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "漏えい、改変、停止を、業務への影響で分ける"
+      ],
+      "visuals": [
+        "ip-security-risk-figure-1",
+        "ip-security-risk-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-security-risk",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-security-risk-check"
+    },
+    {
+      "id": "ip-security-controls",
+      "unit": 23,
+      "order": 45,
+      "title": "攻撃の手口と多層防御",
+      "objectives": [
+        "代表的な攻撃と対策を対応させる",
+        "予防・検知・復旧を組み合わせる"
+      ],
+      "officialItems": [
+        63
+      ],
+      "retainedExplicitAnchors": [
+        "ip-security-controls-figure-1",
+        "textbook-security-controls",
+        "ip-security-controls-figure-2",
+        "security-controls-textbook-skill-1",
+        "security-controls-textbook-skill-2",
+        "security-controls-textbook-skill-3",
+        "security-controls-textbook-skill-4",
+        "textbook-controls-layered",
+        "guided-ip-security-controls",
+        "ip-security-controls-guided-title",
+        "ip-security-controls-guided-prompt",
+        "ip-security-controls-guided-answer"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-security-controls-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "予防策が破られた後も、停止と流出を広げない"
+      ],
+      "visuals": [
+        "ip-security-controls-figure-1",
+        "ip-security-controls-figure-2"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-security-controls",
+          "expected": "10",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 70,
+        "after": 78
+      },
+      "previousLessonAssessment": "ip-security-controls-check"
+    },
+    {
+      "id": "ip-cryptography",
+      "unit": 23,
+      "order": 46,
+      "title": "暗号・電子署名と証明書",
+      "objectives": [
+        "共通鍵と公開鍵を区別する",
+        "署名と証明書の役割を説明する"
+      ],
+      "officialItems": [
+        63
+      ],
+      "retainedExplicitAnchors": [
+        "ip-cryptography-figure-1",
+        "ip-cryptography-figure-2",
+        "textbook-cryptography",
+        "ip-cryptography-figure-3",
+        "cryptography-textbook-skill-1",
+        "cryptography-textbook-skill-2",
+        "cryptography-textbook-skill-3",
+        "cryptography-textbook-skill-4",
+        "textbook-crypto-biometric",
+        "guided-ip-cryptography",
+        "ip-cryptography-guided-title",
+        "ip-cryptography-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-cryptography-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "暗号化する相手と、署名した相手を別々に追う"
+      ],
+      "visuals": [
+        "ip-cryptography-figure-1",
+        "ip-cryptography-figure-2",
+        "ip-cryptography-figure-3"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-cryptography",
+          "expected": "correct",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 65,
+        "after": 73
+      },
+      "previousLessonAssessment": "ip-cryptography-check"
+    },
+    {
+      "id": "ip-release-decision",
+      "unit": 23,
+      "order": 47,
+      "title": "3分野の総合読解：受入条件と試験記録から導入を判断する",
+      "objectives": [
+        "要件文から、判定対象・測り方・合格となる境界を抜き出す",
+        "拠点別の率と全体の率、復旧時間と復元時点を区別して判定する",
+        "資料が欠けている場合や対象範囲が変わる場合に、導入判断と次の確認を説明する"
+      ],
+      "officialItems": [
+        2,
+        23,
+        25,
+        28,
+        63
+      ],
+      "retainedExplicitAnchors": [
+        "objective-1",
+        "ip-release-rules",
+        "ip-release-rules-caption",
+        "worked-1",
+        "objective-2",
+        "worked-2",
+        "ip-release-evidence",
+        "ip-release-evidence-caption",
+        "objective-3",
+        "worked-3",
+        "guided-ip-release-decision",
+        "ip-release-guided-title",
+        "ip-release-guided-prompt"
+      ],
+      "additionalTeachingAnchors": [
+        "ip-release-decision-source-reasoning"
+      ],
+      "additionalTeachingSections": [
+        "集計率と復旧目標を、一件ずつの判定へ戻す"
+      ],
+      "visuals": [
+        "ip-release-rules",
+        "ip-release-evidence"
+      ],
+      "guidedActivities": [
+        {
+          "anchor": "guided-ip-release-decision",
+          "expected": "hold",
+          "feedback": true,
+          "staticSolution": true
+        }
+      ],
+      "minutes": {
+        "before": 75,
+        "after": 83
+      },
+      "previousLessonAssessment": "ip-release-decision-check"
+    }
+  ]
+}

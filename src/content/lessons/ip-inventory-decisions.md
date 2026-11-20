@@ -6,7 +6,7 @@
   "description": "定量発注と定期発注の違いを、入荷までの日数と在庫の表から学びます。需要が変わる場合の発注量や、デシジョンツリーを使った費用の比較も練習します。",
   "unit": 1,
   "order": 6,
-  "minutes": 75,
+  "minutes": 85,
   "syllabus": [
     2
   ],
@@ -44,7 +44,7 @@
     }
   ],
   "sample": false,
-  "updated": "2026-11-16",
+  "updated": "2026-11-20",
   "inlineGlossary": [
     {
       "id": "inventory-reservation",
@@ -223,6 +223,43 @@
 <p data-guided-solution>2,400×0.5＋5,400×0.5＝1,200＋2,700＝3,900円です。速い便は3,400円なので、平均の費用で比べても速い便が500円低くなります。</p>
 </details>
 </section>
+
+<span id="ip-inventory-decisions-source-reasoning"></span>
+
+## 予定どおりの入荷と、遅れた入荷を日ごとに追う
+
+発注残を含めた数量が十分でも、使いたい日より後に届くなら欠品の可能性があります。この例では、初めに自由に使える材料が18個あり、毎日4個使います。追加の12個は5営業日目の始業時に到着予定です。使えなかった数量は未対応として記録し、入荷後に渡します。
+
+<figure id="ip-inventory-decisions-source-table">
+<div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-inventory-decisions-source-caption">
+<table>
+<caption id="ip-inventory-decisions-source-caption">予定どおりの入荷と、遅れた入荷を日ごとに追う</caption>
+<thead><tr><th scope="col">時点</th><th scope="col">通常どおり到着</th><th scope="col">一営業日遅れて到着</th></tr></thead>
+<tbody>
+<tr><th scope="row">4営業日目の終業時</th><td>18−16＝2個残る</td><td>同じく2個残る</td></tr>
+<tr><th scope="row">5営業日目の使用前</th><td>2＋12＝14個使える</td><td>2個だけ使える</td></tr>
+<tr><th scope="row">5営業日目の終業時</th><td>10個残る</td><td>2個を渡せず未対応にする</td></tr>
+<tr><th scope="row">6営業日目の始業時</th><td>10個を引き継ぐ</td><td>12個から未対応の2個を渡し、10個残る</td></tr>
+</tbody>
+</table>
+</div>
+<figcaption>元の記録と判断の根拠を、同じ行で照合します。</figcaption>
+</figure>
+
+6日目の朝には、どちらも手元に10個あります。それでも、遅れた場合は5日目に2個を渡せていません。月末残高だけで運用を評価すると、この一時的な欠品を見落とします。顧客への納期を守ることが目的なら、入荷と消費の順番を追う必要があります。
+
+発注数量を増やす案を比べるときも、増えた品物が届く日を確かめます。6日目に追加で届く数量を増やしても、5日目に使う2個は埋められません。入荷日を早める、初めの在庫を増やす、使用日を調整するといった案は、時点の不足に対する選択肢です。
+
+<span id="ip-inventory-decisions-source-practice"></span>
+
+### 別の条件で判断する
+
+入荷は6日目の朝のまま、初めの自由に使える在庫を22個へ増やすと、5日目に欠品は起きるでしょうか。
+
+<details>
+<summary>考え方と答えを確かめる</summary>
+<p>5日間の必要数は4×5＝20個なので、5日目の終わりに2個残り、欠品は起きません。初めの在庫と、入荷までの必要数を同じ期間で比べます。</p>
+</details>
 
 ## 自分で解く　新しい発注表を読み、先に満たす条件を決める
 

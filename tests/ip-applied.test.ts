@@ -40,6 +40,8 @@ test('the two mock forms use separate versioned banks in the official task forma
   assert.deepEqual(forms.map((form) => form.version), [...ipMockVersions]);
   assert.equal(compatibleAttempt(forms[0]!, newAttempt({ ...forms[0]!, version: ipVersion }, 'timed')), false);
   assert.equal(compatibleAttempt(forms[1]!, newAttempt({ ...forms[1]!, version: '2026-11-mock-02-v2' }, 'timed')), false);
+  assert.equal(compatibleAttempt(forms[0]!, newAttempt({ ...forms[0]!, version: '2026-11-mock-01-v3' }, 'timed')), false);
+  assert.equal(compatibleAttempt(forms[1]!, newAttempt({ ...forms[1]!, version: '2026-11-mock-02-v4' }, 'timed')), true);
   const all = forms.flatMap((a) => a.questions);
   assert.equal(new Set(all.map((q) => q.id)).size, 200);
   assert.equal(new Set(all.map((q) => q.prompt)).size, 200);
@@ -68,6 +70,40 @@ test('mock 2 numerical keys agree with independent calculations', () => {
     assert.ok(q, snippet);
     assert.equal(q.options[q.answer], expected, q.id);
   }
+});
+
+test('revised first mock derives rates, expectations, queue order and SQL totals from source values', () => {
+  const form = ipAssessments([]).find(a => a.id === 'ip-mock-01')!;
+  const answer = (suffix: number) => {
+    const q = form.questions.find(q => q.id === 'ip-mock-01-q-' + suffix)!;
+    return q.options[q.answer];
+  };
+  const ads = [{ impressions: 20000, clicks: 600 }, { impressions: 80000, clicks: 800 }];
+  const clicks = ads.reduce((sum, row) => sum + row.clicks, 0);
+  const impressions = ads.reduce((sum, row) => sum + row.impressions, 0);
+  assert.equal(answer(28), (clicks / impressions * 100).toFixed(1) + '％');
+  const scenarios = [{ net: 1000, p: .25 }, { net: 200, p: .50 }, { net: -200, p: .25 }];
+  const expected = scenarios.reduce((sum, row) => sum + row.net * row.p, 0);
+  assert.equal(answer(60), expected + '円');
+  const matrix = { actualPositive: 45, truePositive: 36, falsePositive: 24, total: 200 };
+  assert.equal(answer(64), matrix.truePositive / matrix.actualPositive * 100 + '％');
+  assert.notEqual(answer(64), matrix.truePositive / (matrix.truePositive + matrix.falsePositive) * 100 + '％');
+  const queue = ['A', 'B'];
+  queue.shift();
+  queue.push('C', 'D');
+  queue.shift();
+  queue.push('E');
+  assert.equal(answer(66), queue.splice(0, 2).join('、'));
+  const orders: [string, string, number][] = [
+    ['東', '確定', 1200], ['東', '取消', 2400], ['東', '確定', 800],
+    ['西', '確定', 900], ['西', '確定', 700], ['西', '取消', 500],
+  ];
+  const sales = new Map<string, number>();
+  for (const [branch, , value] of orders.filter(row => row[1] === '確定')) {
+    sales.set(branch, (sales.get(branch) ?? 0) + value);
+  }
+  const total = (branch: string) => sales.get(branch)!.toLocaleString('en-US') + '円';
+  assert.equal(answer(89), '東' + total('東') + '、西' + total('西'));
 });
 
 test('fresh cumulative review spans the units and uses validated inputs', () => {
@@ -257,4 +293,27 @@ test('new IT Passport lessons extend the existing route and only reversion affec
     assert.equal(mock.questions.filter((q) => q.id.includes('-application-')).length, 6);
     assert.equal(compatibleAttempt(mock, newAttempt({ ...mock, version: oldVersions[index]! }, 'timed')), false);
   }
+});
+
+
+test('management worked cases retain explicit numeric and static evidence', () => {
+  const project = readFileSync('src/content/lessons/ip-project.md', 'utf8');
+  const match = project.match(/<section[^>]*id="guided-management-shortening"[^>]*>[\s\S]*?<\/section>/);
+  assert.ok(match, 'guided shortening task');
+  const originalDuration = Math.max(2 + 4 + 2, 2 + 3 + 2);
+  const afterShortening = Math.max(2 + 2 + 2, 2 + 3 + 2);
+  assert.equal(originalDuration, 8);
+  assert.equal(afterShortening, 7);
+  assert.ok(match[0].includes('data-expected="' + afterShortening + '"'));
+  assert.ok(match[0].includes('data-guided-solution'));
+  assert.ok(project.includes('id="project-transfer-network"'));
+
+  const services = readFileSync('src/content/lessons/ip-services.md', 'utf8');
+  const stopped = (20 + 20) - 5;
+  const available = 480 - stopped;
+  assert.equal(stopped, 35);
+  assert.equal((available / 480 * 100).toFixed(2), '92.71');
+  assert.equal((available / (480 - 10) * 100).toFixed(2), '94.68');
+  assert.ok(services.includes('約92.71％'));
+  assert.ok(services.includes('約94.68％'));
 });

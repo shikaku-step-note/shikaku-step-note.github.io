@@ -5,9 +5,9 @@
   'title': '情報セキュリティとリスク管理',
   'description': '機密性・完全性・可用性を説明する。リスク対応と事故対応を考える。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 44,
-  'minutes': 65,
+  'minutes': 73,
   'sample': false,
-  'updated': '2026-11-16',
+  'updated': '2026-11-20',
   'unit': 23,
   'syllabus': [61, 62],
   'objectives': ['機密性・完全性・可用性を説明する', 'リスク対応と事故対応を考える'],
@@ -33,7 +33,9 @@
 
 ## 守る対象と性質
 
-<a class="lesson-term" data-lesson-term href="#lesson-term-confidentiality">機密性</a>は認められた者だけが情報を使えること、<a class="lesson-term" data-lesson-term href="#lesson-term-integrity">完全性</a>は情報の正確さや改ざんされていないこと、<a class="lesson-term" data-lesson-term href="#lesson-term-availability">可用性</a>は必要なときに使えることです。認証、責任追跡、否認防止等の観点もあります。秘密の漏えいだけが事故ではなく、データの改変やシステム停止も影響します。
+情報セキュリティでは、必要な情報を認められた人が正しく使い続けられる状態を守ります。認められた者だけが使える性質が<a class="lesson-term" data-lesson-term href="#lesson-term-confidentiality">機密性</a>、正確で不正な変更などを受けていない性質が<a class="lesson-term" data-lesson-term href="#lesson-term-integrity">完全性</a>、必要なときに使える性質が<a class="lesson-term" data-lesson-term href="#lesson-term-availability">可用性</a>です。
+
+顧客名簿の漏えいは機密性、注文数の無断変更は完全性、システム停止は可用性に関わります。同じ事故が複数へ影響する場合もあるため、情報と業務、その業務ができなくなる原因を先に洗い出します。誰が操作したか追えることなども、業務に応じた確認の観点になります。
 
 ## 脅威と脆弱性を分ける
 
@@ -66,6 +68,28 @@
 申込サービスが保管する連絡先、申込内容、運用画面を洗い出します。連絡先が第三者に見られるのは機密性、申込内容が意図せず変更されるのは完全性、締切までに申込できないのは可用性の問題です。資産を単に「サーバ一式」と記録すると、どの業務上の影響を減らしたいのか分かりにくくなります。例えば締切時刻の停止は、深夜の保守停止と同じ1時間でも影響が違います。
 
 <figure id="ip-security-risk-figure-1"><svg viewBox="0 0 360 220" width="360" height="220" style="max-width:100%;height:auto" role="img" aria-label="資産：申込記録と受付サービス、脅威・弱点：何が起こり得るか、評価：起こりやすさと影響、対応後：残るリスクを再評価"><g fill="currentColor" font-size="14" text-anchor="middle"><rect x="35" y="8" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="28">資産：申込記録と受付サービス</text><rect x="35" y="60" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="80">脅威・弱点：何が起こり得るか</text><rect x="35" y="112" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="132">評価：起こりやすさと影響</text><rect x="35" y="164" width="290" height="31" rx="6" fill-opacity=".08" stroke="currentColor"/><text x="180" y="184">対応後：残るリスクを再評価</text></g><g fill="none" stroke="currentColor" stroke-width="2"><path d="M180 41v14m-4-4 4 4 4-4"/><path d="M180 93v14m-4-4 4 4 4-4"/><path d="M180 145v14m-4-4 4 4 4-4"/></g></svg><figcaption>対策を入れた後も、残った影響と起こりやすさを評価します。</figcaption></figure>
+
+<span id="ip-security-risk-source-reasoning"></span>
+
+## 漏えい、改変、停止を、業務への影響で分ける
+
+対策は困る出来事と結び付けて選びます。暗号化を強くしても、必要な記録の復元や、不要な権限による変更まで自動的に防ぐことはできません。受注台帳で起きる出来事を整理します。
+
+| 出来事 | 業務への影響 | 主に失われる性質 | 確認する対策 |
+| --- | --- | --- | --- |
+| 関係のない部署へ公開 | 顧客情報を見られる | 機密性 | 公開先と閲覧権限 |
+| 注文数を無断で上書き | 誤った個数を発送 | 完全性 | 更新権限、変更履歴との照合 |
+| 台帳が壊れ一日開けない | 発送の確認が止まる | 可用性 | 復元用保存と再開手順 |
+
+一つの事故が複数の性質へ影響することもあります。暗号化によって記録を使えなくする攻撃は可用性を損ない、内容も窃取されれば機密性も損ないます。この分類は必要な対策を取りこぼさず考えるために使います。
+
+実施後は、誰がどの記録で効果を確認するかを決めます。権限を申請制にしたなら、申請済みかに加え、職務変更後も残っていないかを点検します。対策後の影響を受け入れる判断は業務の責任者に戻します。
+
+**別の事故を考える。** 台帳は開けますが配送先が無断変更されていました。失われた性質と確認する証拠を答えてください。
+
+<details><summary>解答と影響の根拠を読む</summary>
+<p>主に完全性が損なわれています。元の注文書、変更履歴、操作アカウントと時刻を照合します。開けたことは内容が正しいことの証拠にはなりません。</p>
+</details>
 
 ## 対応を選び、残るリスクを引き受ける人を決める
 

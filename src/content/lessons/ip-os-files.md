@@ -5,9 +5,9 @@
   'title': 'OSとファイルシステム',
   'description': 'OSの資源管理を説明する。ファイルの経路と権限を扱う。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 33,
-  'minutes': 60,
+  'minutes': 68,
   'sample': false,
-  'updated': '2026-11-16',
+  'updated': '2026-11-20',
   'unit': 17,
   'syllabus': [45, 46],
   'objectives': ['OSの資源管理を説明する', 'ファイルの経路と権限を扱う'],
@@ -36,7 +36,9 @@
 
 ## OSは資源を管理する
 
-<a class="lesson-term" data-lesson-term href="#lesson-term-os">OS</a>はCPU、メモリ、ファイル、入出力などを管理し、アプリケーションの実行環境を提供します。<a class="lesson-term" data-lesson-term href="#lesson-term-process">プロセス</a>は実行中のプログラムの単位、<a class="lesson-term" data-lesson-term href="#lesson-term-thread">スレッド</a>はその中の処理の流れの単位です。マルチタスクは複数の処理を切り替えたり並行させたりして進めます。スケジューリングでCPUの利用順序を調整します。
+アプリケーションが印刷や保存を行うとき、そのつど機器の細部を直接制御する代わりに、<a class="lesson-term" data-lesson-term href="#lesson-term-os">OS</a>の機能を使います。OSはCPU、主記憶、保存装置、入出力などを管理し、複数のアプリケーションが資源を使う順序や範囲を調整する基本ソフトウェアです。
+
+実行中のプログラムを管理する単位が<a class="lesson-term" data-lesson-term href="#lesson-term-process">プロセス</a>、その中で動く処理の流れの単位が<a class="lesson-term" data-lesson-term href="#lesson-term-thread">スレッド</a>です。一つのCPUでも、実行する処理を短い時間で切り替えれば、複数の仕事を進められます。処理を並行して進めるのがマルチタスクで、どの処理にいつCPUを使わせるかを決める作業をスケジューリングと呼びます。
 
 ## 主記憶を使う仕組み
 
@@ -63,6 +65,28 @@ OSの管理対象とファイル操作の意味を理解し、権限と復旧を
 同じディスクの別フォルダにコピーすれば誤削除の一部には備えられますが、ディスク故障には一緒に失われます。別媒体や別の場所に復元できる複製を置き、実際に復元できるかを試します。同期は変更を伝える仕組みなので、誤削除まで同期される構成では世代管理などを別に考えます。
 
 <details><summary>ファイル名を .pdf に変えればPDFに変換される？</summary><p>名前だけ変わり、内部形式は変わりません。変換には対応した処理が必要です。</p></details>
+
+<span id="ip-os-files-source-reasoning"></span>
+
+## 基準のフォルダと権限を分けて、開けない理由を調べる
+
+ファイルを開くには、保存場所までの道順と、利用者に許可された操作の両方が必要です。場所を表す道順がパスです。相対パスは基準となるフォルダから移動を始めるため、同じ指定でも基準次第で到達先が変わります。
+
+| 基準フォルダ | 相対パス | 到達先 |
+| --- | --- | --- |
+| /work/east | ../shared/list.csv | /work/shared/list.csv |
+| /work/west | ../shared/list.csv | /work/shared/list.csv |
+| /work/east/monthly | ../shared/list.csv | /work/east/shared/list.csv |
+
+二つの点は親フォルダへ一段戻る指定です。三行目は/work/eastへ戻るため、最初の二行と一致しません。拡張子が同じcsvでも、置かれた場所は別です。
+
+場所が正しくても、読む権限がなければ開けません。読むことだけを許可した設定なら、表示できても保存で拒否されます。場所を誤ったか、許可された操作を超えたかを、失敗した段階から分けます。
+
+**パスを直す。** /work/east/monthlyを基準に、/work/shared/list.csvを参照する相対パスを書いてください。
+
+<details><summary>解答と移動を読む</summary>
+<p>../../shared/list.csvです。一回目で/work/east、二回目で/workへ戻り、shared/list.csvへ進みます。正しい場所に届くことと、読む権限があることは別に確認します。</p>
+</details>
 
 ## 同じファイル名でも到達先が違う理由
 

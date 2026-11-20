@@ -3,11 +3,11 @@
   'stableId': 'ip-project',
   'qualification': 'it-passport',
   'title': 'プロジェクト管理とクリティカルパス',
-  'description': 'WBSとスケジュールを関連付ける。制約とリスクを踏まえて計画する。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
+  'description': 'クリティカルパスと余裕の求め方を、先行作業と開始・終了時点の表から学びます。工程を短縮した後の再計算、WBS、変更とリスクの管理も練習します。',
   'order': 19,
-  'minutes': 65,
+  'minutes': 75,
   'sample': false,
-  'updated': '2026-11-16',
+  'updated': '2026-11-20',
   'unit': 10,
   'syllabus': [27],
   'objectives': ['WBSとスケジュールを関連付ける', '制約とリスクを踏まえて計画する'],
@@ -36,7 +36,11 @@
 
 ## プロジェクトの特徴
 
-プロジェクトは固有の成果を生むための期限のある取組です。<a class="lesson-term" data-lesson-term href="#lesson-term-scope">スコープ</a>、期間、コスト、品質などの制約を調整します。<a class="lesson-term" data-lesson-term href="#lesson-term-wbs">WBS</a>は作業や成果物を管理可能な単位に分解したものです。作業の担当、<a class="lesson-term" data-lesson-term href="#lesson-term-dependency">依存関係</a>、見積りを定め、<a class="lesson-term" data-lesson-term href="#lesson-term-gantt-chart">ガントチャート</a>などで予定と実績を見える形にします。
+プロジェクトは、目標とする成果を得るために、始まりと終わりを設けて行う活動です。新しい予約システムを導入し、利用部門へ引き渡す仕事が一例です。公開後に毎日の予約を受け付ける運用とは、終える条件が異なります。
+
+計画では、どこまでを成果として作るかを決め、そのための仕事を細かく分けます。成果と作業のまとまりを段階的に分けた構成がWBSです。WBSを作ると、抜けや重複を確認し、担当、必要な時間、費用を見積もる単位をそろえられます。ただし、一覧にしただけでは作業の前後関係や開始日は決まりません。次に、どの仕事の完了を待つ必要があるかを工程表へ表します。
+
+品質、費用、納期は互いに影響します。期限を早めるために応援を増やすと費用が増える場合があり、試験を省けば品質に影響します。変更の判断では、何を変え、どの条件を守るかを関係者と確認します。
 
 ## 依存関係と最短期間
 
@@ -86,6 +90,61 @@ Cが5日から7日に延びた場合、下の経路はA4＋C7＋D2＋E3＝16日�
 
 今回、事前リハーサルで台帳変換の問題が見つかり、切替えを遅らせずに済んだなら、その条件と手順を記録します。次の担当者が再現できるように、どのデータで確認し、誰が修正し、どの時点で切替えを判断したかを残します。公開直後に受付時間が半分になるとは限りません。導入効果を測る担当と時期も引き継ぎ、成果物の受入れと運用中の効果測定を区別します。
 
+<span id="worked-management-transfer"></span>
+
+## 合流する仕事は、長いほうが終わるまで始められない
+
+受付端末を導入する作業を、時点0から計画します。「3日目が開始」などの暦日の数え方と混ぜず、開始から何日経過したかで時点を表します。Aが終わるとBとCを並行でき、DはBとCの両方の完了後に始められるとします。
+
+<figure id="project-transfer-network">
+<svg viewBox="0 0 360 180" width="360" height="180" style="max-width:100%;height:auto" role="img" aria-labelledby="project-transfer-network-title project-transfer-network-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="project-transfer-network-title">Aの後にBとCへ分かれ、両方を待ってDへ進む</title>
+<desc id="project-transfer-network-desc">Aは二日。上の経路はB四日、下の経路はC三日。Dは二日かかり、上の経路の完了を待つため全体は八日です。</desc>
+<g fill="none" stroke="currentColor" stroke-width="2">
+<path d="M67 86L121 45H219L276 86M67 94L121 135H219L276 94"/>
+<path d="M112 42L121 45L117 54M112 132L121 135L117 144M267 79L276 86L266 88M268 96L276 94L273 104"/>
+</g>
+<g fill="currentColor" font-size="16" text-anchor="middle">
+<text x="34" y="88">A 2日</text>
+<text x="169" y="33">B 4日</text>
+<text x="169" y="161">C 3日</text>
+<text x="315" y="88">D 2日</text>
+</g>
+</svg>
+<figcaption>上の経路は8日、下は7日です。Dの前で両方の成果がそろう必要があるため、全体は長いほうの8日になります。</figcaption>
+</figure>
+
+| 作業 | 所要日数 | 先に完了する仕事 | 最も早い開始→終了 |
+| --- | ---: | --- | --- |
+| A | 2 | なし | 0→2 |
+| B | 4 | A | 2→6 |
+| C | 3 | A | 2→5 |
+| D | 2 | B・C | 6→8 |
+
+Dを始める時点は、前の作業の終了時点の大きいほうです。Cが時点5で終わっても、Bが時点6まで続くので、Dは6からになります。A→B→Dは8日、A→C→Dは7日で、工期を決める経路は前者です。これがクリティカルパスです。
+
+終了時点8から逆にたどると、Dは6までに開始する必要があります。Bは2、Cは3までに開始すればDの開始に間に合います。Cの最早開始2と最遅開始3の差1日が、この計画でCにある余裕です。Cの終了を一日遅らせても、ほかの条件が同じなら工期は変わりません。
+
+### 短縮した後で、どの経路が工期を決めるか
+
+<section class="guided-lesson" id="guided-management-shortening" aria-labelledby="guided-management-shortening-title">
+<h3 id="guided-management-shortening-title">Bを短くした後の工期を入力する</h3>
+<p id="guided-management-shortening-prompt">Bだけを4日から2日へ短縮しました。ほかの作業と依存関係は変わりません。変更後の全体の工期は何日でしょうか。</p>
+<form data-guided-practice data-expected="7" data-guided-hint="Bを通る経路とCを通る経路をそれぞれ計算し、両方が終わる時点を使います。" aria-labelledby="guided-management-shortening-title" aria-describedby="guided-management-shortening-prompt" data-lesson-screen-only>
+<fieldset hidden>
+<legend>全体の工期を答える</legend>
+<label>工期（日） <input inputmode="numeric" autocomplete="off" name="duration"></label>
+<button type="submit" class="button secondary">答えを確認</button>
+<button type="reset" class="button secondary">やり直す</button>
+</fieldset>
+<p role="status" data-guided-feedback></p>
+</form>
+<details>
+<summary>経路を計算し直す</summary>
+<p data-guided-solution>A→B→Dは2＋2＋2＝6日ですが、A→C→Dは2＋3＋2＝7日です。短縮後はC側の完了を待つので、全体は7日になり、一日の短縮です。クリティカルパスが入れ替わる場合もあるため、変更した後の経路をすべて確かめます。</p>
+</details>
+</section>
+
 <span id="depth-project-practice"></span>
 ### 自分で解く：短縮案に効果があるか
 
@@ -95,9 +154,6 @@ Cが5日から7日に延びた場合、下の経路はA4＋C7＋D2＋E3＝16日�
 
 出典：[IPA ITパスポート試験シラバス Ver.6.5、項目27（p.30）](https://www.ipa.go.jp/shiken/syllabus/omgdg50000005kn1-att/syllabus_ip_ver6_5.pdf#page=34)
 
-## まとめ
-
-作業の分解と順序、実績の評価、変更の合意をつなげます。期間を縮める前に、全体を制約している経路を確かめましょう。
 
 ## 作業表を完成予定日に変える
 
@@ -204,3 +260,7 @@ Bを3日短縮して2日にすると、Bは4日目、Cは5日目に完了しま�
 Cの開始が3日遅れました。他の作業は当初のままで、人員の兼務はありません。いつ公開できる見込みで、責任者には何を示しますか。
 
 **解き方。** Cは5日目開始、8日目完了なので、DはB完了の7日目では開始できません。Dの完了は10日目、公開判定完了は11日目です。Cの余裕2日を超えた1日が全体の遅れです。「Cが3日遅れた」という事実に加えて、予定と見込みの差、原因、他作業への影響、短縮や公開日の変更などの選択肢と、判断が必要な日を伝えます。
+
+## まとめ
+
+作業の分解と順序、実績の評価、変更の合意をつなげます。期間を縮める前に、全体を制約している経路を確かめましょう。

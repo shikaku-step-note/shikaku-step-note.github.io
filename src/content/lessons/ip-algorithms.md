@@ -5,9 +5,9 @@
   'title': 'データ構造とアルゴリズム',
   'description': '順次・分岐・反復を追跡する。探索とデータ構造を使い分ける。具体例と理解度チェックで学ぶITパスポートの無料レッスンです。',
   'order': 28,
-  'minutes': 70,
+  'minutes': 78,
   'sample': false,
-  'updated': '2026-11-16',
+  'updated': '2026-11-20',
   'unit': 14,
   'syllabus': [36, 37],
   'objectives': ['順次・分岐・反復を追跡する', '探索とデータ構造を使い分ける'],
@@ -33,13 +33,37 @@
 
 ## 処理を手順にする
 
-アルゴリズムは問題を解くための手順です。順次は上から順に実行、分岐は条件に応じた選択、反復は条件を満たす間などの繰返しです。フローチャートや擬似言語で表し、変数の値を追跡する<a class="lesson-term" data-lesson-term href="#lesson-term-trace">トレース</a>で動作を確認します。<a class="lesson-term" data-lesson-term href="#lesson-term-assignment">代入</a>は値の更新で、数学の等式とは役割が違います。
+ある入力から目的の結果を得るため、実行する操作とその順番を決めたものがアルゴリズムです。上から一つずつ実行する順次、条件で進み方を変える分岐、同じ操作を繰り返す反復へ分けると、途中の値も確かめられます。図形と矢印で順番を表すのがフローチャート、命令の形で表すのが擬似言語です。
+
+途中の値は、名前を付けた保存場所である変数へ置きます。<a class="lesson-term" data-lesson-term href="#lesson-term-assignment">代入</a>は右辺を計算し、その時点の結果を左の変数へ保存する操作です。変数の値を命令ごとに書く<a class="lesson-term" data-lesson-term href="#lesson-term-trace">トレース</a>を行うと、どの条件でどの値が変わったかを追えます。
 
 変数を更新する手順をつかんだら、[関数の呼出しを追う章](/qualifications/it-passport/ip-function-trace/)で、値が別の処理へ渡り、計算結果が戻る流れを扱います。
 
 ## 例：合計を求める
 
 合計sを0とし、配列[3,1,4]の要素を順に加えると、sは0→3→4→8と変わります。繰返し開始前の初期値を忘れると正しい結果になりません。<a class="lesson-term" data-lesson-term href="#lesson-term-index-position">添字</a>が0始まりか1始まりか、範囲の終端を含むか、空の配列をどう扱うかも確認します。
+
+<span id="ip-algorithms-source-reasoning"></span>
+
+## 前の値を保存してから、二つの値を入れ替える
+
+代入では、その時点の右辺を計算してから左辺を書き換えます。a＝4、b＝9の状態で、値を交換するつもりで二つの代入を書いた例を追います。
+
+| 実行した命令 | a | b | 元のa＝4の場所 |
+| --- | ---: | ---: | --- |
+| 初期状態 | 4 | 9 | a |
+| a ← b | 9 | 9 | 失われた |
+| b ← a | 9 | 9 | 取り戻せない |
+
+二行目を実行するとき、aはすでに9です。そこで、aを書き換える前に別の変数tへ保存します。t ← a、a ← b、b ← tの順なら、a＝9、b＝4になります。tは途中で値を退避させる場所で、代入を同時に行っているわけではありません。
+
+配列の隣り合う要素を入れ替える整列でも同じ判断が必要です。右辺が「最初の値」か「直前に更新された値」かを、命令ごとに確かめてください。
+
+**自分で追う。** a＝6、b＝2から、t ← a、a ← a＋b、b ← t−bを実行します。最後のaとbを求めてください。
+
+<details><summary>解答と代入直前の値を読む</summary>
+<p>t＝6を保存し、次にa＝6＋2＝8とします。最後の式はt＝6と、まだ2のbを使うのでb＝4です。aが8に変わっても、保存済みのtは6のままです。</p>
+</details>
 
 ## データの持ち方
 
@@ -154,7 +178,7 @@ endwhile
 
 添字は1から始まり、明細数を5とします。表の右側の2列には、その行の処理を終えたときの値を書きます。取消件数が増えるのは4行目だけです。
 
-<figure id="ip-algorithms-branch-trace" aria-labelledby="ip-algorithms-branch-trace-caption">
+<figure id="ip-algorithms-branch-trace-figure" aria-labelledby="ip-algorithms-branch-trace-caption">
 <div class="table-scroll" role="region" tabindex="0" aria-labelledby="ip-algorithms-branch-trace-caption">
 <table>
   <caption id="ip-algorithms-branch-trace-caption">注文を一行ずつ読んだ直後の累計</caption>
