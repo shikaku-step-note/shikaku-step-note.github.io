@@ -3,12 +3,12 @@
   "stableId": "tk-disclosure",
   "qualification": "takken",
   "title": "35条の重要事項説明と電子交付",
-  "description": "契約前に説明する理由を述べるために、制度の条件と独自の事例を解説します。説明者・相手方・記名を区別する練習と、解説付きの理解度チェックに取り組めます。",
-  "order": 17,
-  "minutes": 35,
+  "description": "35条の重要事項説明を、物件情報・金銭・解除条件の意味、取引類型、宅建士の役割、電子交付から詳しく学びます。",
+  "order": 23,
+  "minutes": 70,
   "sample": false,
   "archived": false,
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "unit": 3,
   "syllabus": [
     7
@@ -20,7 +20,7 @@
     "説明者・相手方・記名を区別する",
     "取引類型別の項目を確かめる"
   ],
-  "prerequisite": "前のレッスン「媒介契約・指定流通機構・業務報告」を学んでから進むことをおすすめします。",
+  "prerequisite": "既習のレッスン「媒介契約・指定流通機構・業務報告」を学んでから進むことをおすすめします。",
   "glossary": [
     {
       "term": "重要事項説明",
@@ -28,7 +28,7 @@
     },
     {
       "term": "35条書面",
-      "definition": "重要事項を記載し記名した宅建士の書面"
+      "definition": "法定の重要事項を記載し、宅建士が記名する書面"
     },
     {
       "term": "IT重説",
@@ -39,13 +39,29 @@
     "重要事項説明",
     "35条書面",
     "IT重説"
+  ],
+  "inlineGlossary": [
+    {
+      "id": "tk-25fe27d6da",
+      "term": "重要事項説明"
+    },
+    {
+      "id": "tk-ba4ad33b13",
+      "term": "35条書面"
+    },
+    {
+      "id": "tk-cc856c51b8",
+      "term": "IT重説"
+    }
   ]
 }
 ---
 
 ## 重要事項説明は、契約するか判断するための手続です
 
-買主が契約した後で、土地に大きな利用制限があると知っても、判断の機会を失ってしまいます。宅建業法35条は、契約成立前に法定の重要事項を示すことを求めています。重要事項説明と、契約成立後の37条書面を、同じ時期に行う一つの事務と考えないでください。
+<a class="lesson-term" data-lesson-term href="#lesson-term-tk-25fe27d6da">重要事項説明</a>は、買主や借主が契約するかどうかを判断するため、法定の重要な情報を契約成立前に伝える手続です。宅建業法35条は、利用制限や権利関係、取引条件を、契約によって拘束される前に確かめられるようにしています。重要事項説明と、契約成立後の37条書面を、同じ時期に行う一つの事務と考えないでください。
+
+重要事項説明は、取得又は賃借する物件と取引条件について、買主・借主が契約前に判断するための法定手続です。登記は権利関係、法令上の制限は使い方、施設は生活や事業の利用条件を示します。どれも同じ「物件情報」ですが、確かめる資料と判断への影響は異なるので、情報の種類を先に分けて学びます。
 
 宅建業者は、宅建士をして、所定の事項を記載した書面を交付して説明させることが基本です。書面への宅建士の記名、説明する者の資格、相手方、交付と説明の時点をそれぞれ確認します。相手が一般の買主である場合、書面を渡すだけで口頭等の説明がすべて不要になるわけではありません。
 
@@ -103,4 +119,50 @@
 
 相手方の承諾等を得て法定の電磁的方法で書面に代わる提供を行う場合でも、情報を適切に受け取れ、保存・確認できることなどの条件が必要です。電子メールを送ったという事実だけで、すべての要件を満たしたとは判断しません。
 
-映像・音声を使うIT重説でも、双方向のやり取り、説明資料の確認、宅建士証の視認など、運用上必要な条件を確かめます。録画を一方的に送ることと、法定の説明を実施することは同じではありません。復習では、契約前、宅建士、証の提示、物件類型別の事項、適切な提供方法という順序で、一つの事例を説明してください。
+映像・音声を使う<a class="lesson-term" data-lesson-term href="#lesson-term-tk-cc856c51b8">IT重説</a>でも、双方向のやり取り、説明資料の確認、宅建士証の視認など、運用上必要な条件を確かめます。録画を一方的に送ることと、法定の説明を実施することは同じではありません。復習では、契約前、宅建士、証の提示、物件類型別の事項、適切な提供方法という順序で、一つの事例を説明してください。
+
+<span id="tk-disclosure-information-groups"></span>
+## 書面の項目は、何を判断する情報かで整理する
+
+登記された抵当権があるなら、その権利の種類と内容を伝えます。法令上の制限があるなら、希望する利用が可能かを判断するため概要を説明します。設備が未整備なら、整備の見通しや特別の負担も確認します。書面の一欄を「あり」とするだけで終わらず、その情報が取引の判断へどう関係するかをつなげてください。
+
+金銭については、代金・交換差金・借賃以外に受け渡す金銭の額と目的が35条の項目です。契約解除や損害賠償予定等、手付金等の保全、支払金・預り金の保全、金銭貸借のあっせんと不成立時の措置、契約不適合責任の履行を支える措置も確認します。「いくら払うか」だけでなく、契約から離れるときや返還が必要なときの条件も判断材料になるためです。
+<figure id="tk-disclosure-purpose-map"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-disclosure-purpose-map-caption"><table><caption id="tk-disclosure-purpose-map-caption">資料にある事実から、説明すべき判断材料へ進む</caption><thead><tr><th scope="col">資料の事実</th><th scope="col">説明する情報</th><th scope="col">購入・利用の判断</th></tr></thead><tbody><tr><th scope="row">登記に銀行の抵当権がある</th><td>登記された権利の種類・内容</td><td>どの権利が存在し、契約時にどう扱うかを確認</td></tr><tr><th scope="row">上下水道が未整備</th><td>整備状況、見通し、特別の負担</td><td>利用開始と追加費用を検討</td></tr><tr><th scope="row">未完成の分譲建物</th><td>完成時の形状・構造等</td><td>図面等を基に完成後の物件を判断</td></tr><tr><th scope="row">代金に充当する金銭を引渡し前に受領</th><td>手付金等の保全措置の概要</td><td>返還債務の保護を確認</td></tr></tbody></table></div></figure>
+
+<figure id="tk-disclosure-contract-axis"><figcaption>契約前の判断材料と、成立後の契約内容をつなぐ</figcaption><svg viewBox="0 0 328 200" width="328" height="200" role="img" aria-label="契約前に35条の交付と説明、次に契約成立、成立後に37条書面、最後に代金引渡し登記の実際の履行を確認する順序" style="max-width:100%;height:auto"><g fill="none" stroke="currentColor"><rect x="10" y="10" width="308" height="36" rx="4"/><path d="M164 46v20l-5-7m5 7 5-7"/><rect x="10" y="70" width="308" height="30" rx="4"/><path d="M164 100v20l-5-7m5 7 5-7"/><rect x="10" y="124" width="308" height="30" rx="4"/></g><g fill="currentColor" font-size="14" text-anchor="middle"><text x="164" y="33">契約前　35条の交付と説明</text><text x="164" y="91">契約が成立</text><text x="164" y="145">成立後　37条書面を交付</text><text x="164" y="184">その後の実際の履行は別に確認</text></g></svg><p>35条を先に行うのは、契約するか判断する機会を守るためです。37条は成立した内容を明確にし、その後の履行を確認する資料になります。</p></figure>
+
+
+### 例題1　業者間の売買
+
+A社が自ら売主として、宅建業者B社へ売ります。B社が宅建業者なので、35条では宅建士による説明を省く特則があります。それでも法定事項を記載した書面を交付し、その書面には宅建士をして記名させます。「説明が不要」という効果を、書面も資格者の記名も不要へ広げないことがポイントです。
+
+### 例題2　私道の負担を、建物賃貸へ変える
+
+土地の売買では私道に関する負担の事項を説明します。これに対し35条1項3号は、建物の貸借を除いてこの事項を定めています。建物賃貸でも実際の通行条件を確認することは重要ですが、法定の項目比較を問う問題では、同じ3号の義務をそのまま当てはめません。取引の種類を変えると、比較表の対象も変わります。
+
+### 例題3　融資の不成立への備え
+
+業者が提携ローンをあっせんし、その融資が認められないときは一定期限まで解除できるという例です。35条では金銭貸借のあっせん内容と不成立時の措置を説明します。契約が成立すれば、あっせんに関する定めがある場合の不成立時の措置は37条書面でも確認します。一つの事項が契約前と後の両段階で関係する例です。
+<figure id="tk-disclosure-vs-contract-items"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-disclosure-vs-contract-items-caption"><table><caption id="tk-disclosure-vs-contract-items-caption">35条と37条の違いを、具体的な項目で確認する</caption><thead><tr><th scope="col">項目・条件</th><th scope="col">35条で確かめること</th><th scope="col">37条で確かめること</th></tr></thead><tbody><tr><th scope="row">登記された権利・法令制限</th><td>契約前の説明事項</td><td>それと同じ一覧を一律に写す制度ではない</td></tr><tr><th scope="row">移転登記申請の時期（売買等）</th><td>35条の登記事項と混同しない</td><td>法定の記載事項</td></tr><tr><th scope="row">代金以外の金銭</th><td>額と授受の目的を説明</td><td>定めがあれば、額・授受の時期・目的を記載</td></tr><tr><th scope="row">天災等による損害の負担</th><td>この条項自体は35条の法定項目と同じにしない</td><td>定めがあれば内容を記載</td></tr></tbody></table></div></figure>
+
+## 電子交付と説明の方法を別々に点検する
+
+電子交付は書面の情報を所定の電磁的方法で提供すること、IT重説は映像と音声を使って説明する方法です。紙の書面を先に渡してIT重説をすることも、電子書面を使い対面で説明することも考えられるため、二つを一つの制度名として覚えないようにします。
+
+電子提供では、提供方法を示して承諾を得ること、出力できること、後で改変がないことを確認できる措置などを確かめます。IT重説では、相手が資料と宅建士証を確認でき、双方向で質問・回答できる状態を保ちます。通信が途切れて相手の理解確認ができないときは、そのまま録画を流し続ければ手続が完了するわけではありません。
+<section class="guided-lesson" id="guided-tk-disclosure" aria-labelledby="guided-tk-disclosure-title">
+<h3 id="guided-tk-disclosure-title">途中で確認</h3><p id="guided-tk-disclosure-prompt">次のうち35条の説明相手が宅建業者のときにも必要なものは何個ですか。「法定書面の交付」「その書面への宅建士の記名」「宅建士による重要事項の説明」。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="説明を省ける特則の効果と、書面交付の義務を分けます。" aria-labelledby="guided-tk-disclosure-title" aria-describedby="guided-tk-disclosure-prompt" data-lesson-screen-only>
+<fieldset hidden><legend>練習の答え</legend><label for="guided-tk-disclosure-input">必要なものの個数</label> <input id="guided-tk-disclosure-input" name="answer" class="guided-number" type="text" inputmode="numeric" maxlength="18" autocomplete="off"><div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div></fieldset><p role="status" data-guided-feedback></p></form>
+<details><summary>解答と考え方を読む</summary><p data-guided-solution>必要なのは書面交付と宅建士の記名の2個です。法定の説明を要しない特則があっても、書面まで不要にはなりません。</p></details></section>
+
+## 独立演習　書面を渡した後なら何でもよいか
+
+一般の買主へ<a class="lesson-term" data-lesson-term href="#lesson-term-tk-ba4ad33b13">35条書面</a>を渡し、その翌日に契約を結び、さらに翌日に初めて宅建士が説明しました。書面の交付が契約前なので適法、という説明を点検してください。
+
+<details><summary>解答と理由</summary><p>一般の買主に対する法定の説明は、契約が成立するまでに行う必要があります。交付した時期だけでなく、資格者が説明した時期も確認します。後から説明すれば最初から契約前の判断機会を与えたことになる、とはいえません。</p></details>
+
+
+## 根拠を確認する
+
+この章の法令基準日は2026年4月1日、参照資料の確認日は2026年11月21日です。[宅地建物取引業法35条](https://laws.e-gov.go.jp/law/327AC1000000176)と[国土交通省「解釈・運用の考え方」2026年4月1日版](https://www.mlit.go.jp/totikensangyo/const/content/001881261.pdf)を参照しています。[2026年4月1日以降の重要事項説明の様式例](https://www.mlit.go.jp/totikensangyo/const/content/001895540.pdf)は、物件類型に応じた記載事項を照合する資料です。

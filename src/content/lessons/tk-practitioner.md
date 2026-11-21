@@ -3,12 +3,12 @@
   "stableId": "tk-practitioner",
   "qualification": "takken",
   "title": "宅建士の登録・取引士証・専任性",
-  "description": "試験合格と登録と証の交付を分けるために、制度の条件と独自の事例を解説します。専任宅建士の人数を求める練習と、解説付きの理解度チェックに取り組めます。",
-  "order": 13,
-  "minutes": 35,
+  "description": "資格登録・宅建士証・登録移転・専任宅建士の人数を、手続の条件と計算例から詳しく学びます。",
+  "order": 19,
+  "minutes": 65,
   "sample": false,
   "archived": false,
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "unit": 3,
   "syllabus": [
     7
@@ -20,7 +20,7 @@
     "専任宅建士の人数を求める",
     "届出の対象を確認する"
   ],
-  "prerequisite": "前のレッスン「宅建業の範囲・免許・欠格事由」を学んでから進むことをおすすめします。",
+  "prerequisite": "既習のレッスン「宅建業の範囲・免許・欠格事由」を学んでから進むことをおすすめします。",
   "glossary": [
     {
       "term": "宅地建物取引士証",
@@ -39,13 +39,29 @@
     "宅地建物取引士証",
     "資格登録",
     "専任の宅建士"
+  ],
+  "inlineGlossary": [
+    {
+      "id": "tk-abcfd0c22f",
+      "term": "宅地建物取引士証"
+    },
+    {
+      "id": "tk-b8fc3a5baa",
+      "term": "専任の宅建士"
+    },
+    {
+      "id": "tk-d337fd672c",
+      "term": "資格登録"
+    }
   ]
 }
 ---
 
 ## 試験合格と、宅建士としての業務は段階が違います
 
-宅地建物取引士資格試験に合格しただけで、直ちに宅建士証を持つ人と同じ業務ができるわけではありません。試験合格、資格登録、宅地建物取引士証の交付を分けます。重要事項の説明など宅建士が行う法定業務には、有効な宅建士証が必要です。
+宅地建物取引士の法定業務へ進むには、試験合格、<a class="lesson-term" data-lesson-term href="#lesson-term-tk-d337fd672c">資格登録</a>、<a class="lesson-term" data-lesson-term href="#lesson-term-tk-abcfd0c22f">宅地建物取引士証</a>の交付という段階を確認します。それぞれが証明する事実と要件は異なります。重要事項の説明など宅建士が行う法定業務には、有効な宅建士証が必要です。
+
+資格登録は、合格者等の氏名や住所などを都道府県の登録簿に記録する手続です。宅建士証は、その登録を受けた人へ交付される有効期間のある証明書で、法定の宅建士業務をする際に必要になります。会社の免許、個人の登録、証の期限をそれぞれ確認することで、「合格者が何人いるか」だけでは人員体制を判断できない理由が分かります。
 
 登録には、欠格事由に該当しないことに加え、宅建業の実務経験2年以上、又は登録実務講習の修了など法定の要件があります。試験の受験資格と、合格後の登録要件を混ぜないでください。この学習サイトの修了記録は、実務経験や法定講習の修了を証明するものではありません。
 
@@ -75,7 +91,7 @@
 
 ## 事務所の専任宅建士は、5人に1人以上です
 
-宅建業者は、事務所ごとに宅建業の業務に従事する者の数の5分の1以上となる数の、成年者である専任の宅建士を置く必要があります。端数を切り捨てないことが計算の要点です。従事者数へ誰を含むかは、業務の実態と法令上の扱いを確認します。
+宅建業者は、事務所ごとに宅建業の業務に従事する者の数の5分の1以上となる数の、成年者である<a class="lesson-term" data-lesson-term href="#lesson-term-tk-b8fc3a5baa">専任の宅建士</a>を置く必要があります。端数を切り捨てないことが計算の要点です。従事者数へ誰を含むかは、業務の実態と法令上の扱いを確認します。
 
 ある事務所の宅建業従事者が11人なら、11÷5＝2.2です。必要人数は整数で2.2人以上なので、少なくとも3人です。10人なら2人で足ります。ここでは、必要人数の計算対象となる従事者がそれぞれ11人、10人と確定している条件を置いています。
 
@@ -103,3 +119,39 @@
 宅建士には、公正かつ誠実に法定業務を行う義務、信用を傷つける行為をしない義務、知識及び能力の維持向上に努める義務などがあります。会社が取引を受けたからといって、個人が行う重要事項説明等の責任がなくなるわけではありません。
 
 違反等に対しては、指示、事務禁止、登録消除など、個人の資格に関する処分が問題になります。事業者への業務停止・免許取消しとは名称も対象も違います。復習では、一人の人物について「試験・登録・宅建士証・勤務先・専任性」の五つを並べ、どこが問題となっているかを示してください。
+
+<span id="tk-practitioner-registration-route"></span>
+## 登録と証の手続を、一人の異動に沿って読む
+
+登録には原則として有効期間の定めがなく、宅建士証には5年の有効期間があります。証を更新しなかったことと、登録が消除されたことは別の出来事です。登録事項が変われば、証がまだ有効でも遅滞なく変更の登録を申請します。
+
+県外への登録移転は、その県の宅建業者の事務所で業務に従事し、又は従事しようとする場合に申請できる制度です。自宅だけを県外へ移して勤務先を変えない人は、住所の変更登録を行います。勤務先を移す場合でも、登録移転は法律上「申請することができる」手続なので、異動したら必ず移転が義務だとは読みません。事務禁止期間が終わっていないときには移転の制限があります。
+<figure id="tk-practitioner-change-map"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-practitioner-change-map-caption"><table><caption id="tk-practitioner-change-map-caption">住所・勤務先・証の期限は、別の手続へつながる</caption><thead><tr><th scope="col">変わる事実</th><th scope="col">必要な検討</th><th scope="col">確認する意味</th></tr></thead><tbody><tr><th scope="row">住所だけが県外へ移る</th><td>遅滞なく変更登録</td><td>県外勤務の条件がなければ登録移転と同じにならない</td></tr><tr><th scope="row">他県の宅建業者の事務所へ勤務する</th><td>変更登録と、希望する場合の登録移転</td><td>移転申請は現在の登録知事を経由する</td></tr><tr><th scope="row">有効期間中に登録移転する</th><td>移転先の証の交付も申請</td><td>新しい証の期間は元の証の残存期間</td></tr></tbody></table></div></figure>
+
+### 例題1　合格から半年で交付を受ける
+
+Aは実務等の要件を満たして登録を受け、試験合格から半年後に初めて宅建士証の交付を受けます。合格した日から1年以内の交付に当たるため、交付の申請前6か月以内の法定講習の受講には例外が適用されます。登録に必要な実務経験等まで免除されるという意味ではありません。講習名と、それがどの手続の要件かを対応させてください。
+
+### 例題2　県外へ移転し、証の期限が2年残る
+
+Bは登録移転と同時に移転先の宅建士証の交付も申請します。移転前の証が今後2年間有効なら、新しい証もその残る2年間を有効期間とします。通常の交付の5年を機械的に付け直すと、登録を移すたびに証の期限を延ばせることになってしまいます。ここでは期限を引き継ぐという仕組みです。
+
+### 例題3　二つの事務所の必要人数
+
+本店の算定対象従事者が22人、支店が8人と確定している会社では、本店22÷5＝4.4より5人、支店8÷5＝1.6より2人が必要です。会社全体では7人です。先に30÷5＝6人として配属すると、どちらかの事務所が不足するため、事務所別に切り上げてから足します。
+<figure id="tk-practitioner-proof-handling"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-practitioner-proof-handling-caption"><table><caption id="tk-practitioner-proof-handling-caption">証を手放す理由によって、その後の扱いが変わる</caption><thead><tr><th scope="col">原因</th><th scope="col">手続</th><th scope="col">その後の意味</th></tr></thead><tbody><tr><th scope="row">登録消除・証の効力喪失</th><td>交付した知事へ速やかに返納</td><td>その証を使って法定業務を続けられない</td></tr><tr><th scope="row">事務禁止の処分</th><td>交付した知事へ速やかに提出</td><td>禁止期間が満了し返還請求があれば返還される</td></tr><tr><th scope="row">紛失後、再交付を受けてから元の証を発見</th><td>発見した元の証の返納を確認</td><td>同じ人が二枚の証を使い分ける状態を残さない</td></tr></tbody></table></div></figure><section class="guided-lesson" id="guided-tk-practitioner" aria-labelledby="guided-tk-practitioner-title">
+<h3 id="guided-tk-practitioner-title">途中で確認</h3><p id="guided-tk-practitioner-prompt">算定対象の従事者が本店17人、支店6人と確定しています。各事務所の必要数を満たす専任宅建士は合計最低何人ですか。</p>
+<form data-guided-practice data-expected="6" data-guided-hint="本店と支店を別々に5で割り、各結果の端数を切り上げます。" aria-labelledby="guided-tk-practitioner-title" aria-describedby="guided-tk-practitioner-prompt" data-lesson-screen-only>
+<fieldset hidden><legend>練習の答え</legend><label for="guided-tk-practitioner-input">必要人数（人）</label> <input id="guided-tk-practitioner-input" name="answer" class="guided-number" type="text" inputmode="numeric" maxlength="18" autocomplete="off"><div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div></fieldset><p role="status" data-guided-feedback></p></form>
+<details><summary>解答と考え方を読む</summary><p data-guided-solution>本店は17÷5＝3.4より4人、支店は6÷5＝1.2より2人です。合計6人です。23÷5を先に切り上げた5人では、各事務所の必要数を満たせません。</p></details></section>
+
+## 自分で確かめる
+
+資格登録のあるCの宅建士証が昨日で失効しました。会社には他にも宅建士がいますが、今日C自身が重要事項説明をしてよいでしょうか。
+
+<details><summary>解答と理由</summary><p>Cは有効な宅建士証を持つ状態に戻るまで、法定の重要事項説明を行えません。会社に別の宅建士がいることは、Cの証の失効を補う事実にはなりません。説明を担当する個人の資格を確かめます。またCを専任宅建士の必要人数へ数えることにも問題が生じるため、会社の体制を別に点検します。</p></details>
+
+
+## 根拠を確認する
+
+この章の法令基準日は2026年4月1日、参照資料の確認日は2026年11月21日です。[宅地建物取引業法18〜22条の3・31条の3](https://laws.e-gov.go.jp/law/327AC1000000176)と[国土交通省「解釈・運用の考え方」2026年4月1日版](https://www.mlit.go.jp/totikensangyo/const/content/001881261.pdf)を参照しています。

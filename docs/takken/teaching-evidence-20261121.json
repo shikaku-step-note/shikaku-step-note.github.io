@@ -1,0 +1,3354 @@
+{
+  "reviewed": "2026-11-21",
+  "lawReference": "2026-04-01",
+  "baselineCommit": "feba6433bc701fcf55b6be09087ca315682ea16b",
+  "beforeLessons": 34,
+  "afterLessons": 58,
+  "newLessons": [
+    "tk-capacity-followup",
+    "tk-shared-land",
+    "tk-joint-guarantee",
+    "tk-services-tort",
+    "tk-land-lease",
+    "tk-building-lease",
+    "tk-cooling",
+    "tk-advance-payments",
+    "tk-reward-cases",
+    "tk-housing-warranty",
+    "tk-planning-permissions",
+    "tk-building-use",
+    "tk-height-control",
+    "tk-area-exclusions",
+    "tk-fill-control",
+    "tk-forest-nature",
+    "tk-landscape-culture",
+    "tk-land-regulation-case",
+    "tk-acquisition-tax",
+    "tk-home-sale-tax",
+    "tk-replacement-gain",
+    "tk-home-sale-loss",
+    "tk-housing-finance",
+    "tk-statistics-reading"
+  ],
+  "units": {
+    "1": {
+      "before": 4,
+      "after": 5
+    },
+    "2": {
+      "before": 7,
+      "after": 12
+    },
+    "3": {
+      "before": 10,
+      "after": 14
+    },
+    "4": {
+      "before": 4,
+      "after": 8
+    },
+    "5": {
+      "before": 3,
+      "after": 7
+    },
+    "6": {
+      "before": 3,
+      "after": 7
+    },
+    "7": {
+      "before": 1,
+      "after": 3
+    },
+    "8": {
+      "before": 2,
+      "after": 2
+    }
+  },
+  "officialFields": {
+    "1": [
+      "tk-land",
+      "tk-structure"
+    ],
+    "2": [
+      "tk-contract",
+      "tk-capacity-followup",
+      "tk-intent",
+      "tk-agency",
+      "tk-prescription",
+      "tk-title",
+      "tk-shared-land",
+      "tk-mortgage",
+      "tk-performance",
+      "tk-joint-guarantee",
+      "tk-remedies",
+      "tk-services-tort",
+      "tk-lease",
+      "tk-land-lease",
+      "tk-building-lease",
+      "tk-inheritance",
+      "tk-condo"
+    ],
+    "3": [
+      "tk-planning",
+      "tk-planning-permissions",
+      "tk-development",
+      "tk-building",
+      "tk-building-use",
+      "tk-density",
+      "tk-height-control",
+      "tk-area-exclusions",
+      "tk-farmland",
+      "tk-landcontrol",
+      "tk-readjustment",
+      "tk-fill-control",
+      "tk-forest-nature",
+      "tk-landscape-culture",
+      "tk-land-regulation-case"
+    ],
+    "4": [
+      "tk-tax",
+      "tk-acquisition-tax",
+      "tk-transfer-tax",
+      "tk-home-sale-tax",
+      "tk-replacement-gain",
+      "tk-home-sale-loss"
+    ],
+    "5": [
+      "tk-supply",
+      "tk-housing-finance",
+      "tk-statistics-reading"
+    ],
+    "6": [
+      "tk-valuation"
+    ],
+    "7": [
+      "tk-license",
+      "tk-practitioner",
+      "tk-office",
+      "tk-guarantee",
+      "tk-brokerage",
+      "tk-disclosure",
+      "tk-document",
+      "tk-protection",
+      "tk-cooling",
+      "tk-advance-payments",
+      "tk-reward",
+      "tk-reward-cases",
+      "tk-conduct",
+      "tk-housing-warranty"
+    ]
+  },
+  "teachingMinutes": 5510,
+  "figures": 125,
+  "guidedActivities": 58,
+  "scoredLessonQuestions": 382,
+  "records": [
+    {
+      "id": "tk-contract",
+      "order": 1,
+      "unit": 1,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "契約成立と書面の役割を分ける",
+        "無効と取消しを区別する",
+        "未成年者の取引を条件から判断する"
+      ],
+      "prerequisite": "特別な前提知識は不要です。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 2722,
+      "bodyCharactersAfter": 5151,
+      "minutes": 95,
+      "teachingHeadings": [
+        "売買は、申込みと承諾が合ったときに成立します",
+        "合意した内容と、その後に履行する義務を分けて読む",
+        "書面が効力の条件となる契約もある",
+        "自分の行為を判断できることが出発点です",
+        "無効と取消しでは、効力の扱いが違います",
+        "未成年者の土地購入を順に判断する",
+        "同じ購入でも、同意の範囲が違う例を比較します",
+        "成年後見制度では、保護の種類を読みます",
+        "「理解できるか」と「単独で確定させられるか」を使い分ける",
+        "三つ目の例で、例外の根拠を確かめる",
+        "自分で判断する",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-contract-stages",
+        "tk-contract-capacity-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-contract"
+      ],
+      "guidedExpected": [
+        "1"
+      ],
+      "scoredQuestions": [
+        "tk-contract-q-01",
+        "tk-contract-q-02",
+        "tk-contract-q-03",
+        "tk-contract-q-04",
+        "tk-contract-depth-01",
+        "tk-contract-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-capacity-followup",
+      "order": 2,
+      "unit": 1,
+      "officialDomain": 2,
+      "decision": "add",
+      "objectives": [
+        "取消権者と追認できる時点を確かめる",
+        "催告の相手による法的効果の違いを説明する",
+        "取消し後の現存利益と期間制限を事例から判断する"
+      ],
+      "prerequisite": "直前の関連章の基本を使います。本文でも判断に必要な部分を振り返ります。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3325,
+      "minutes": 100,
+      "teachingHeadings": [
+        "取り消せる契約は、その後の意思表示で効力が確定する",
+        "追認できる状態になったかを先に読む",
+        "一部を支払った事実から判断する",
+        "催告は、誰に返答を求めたかで効果が変わる",
+        "無権代理の催告と比べる",
+        "取り消した後は、残っている利益を確認する",
+        "期間は何を起点に数えるか",
+        "自分で解く",
+        "復習の手順",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-capacity-followup-flow",
+        "tk-capacity-followup-demand-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-capacity-followup"
+      ],
+      "guidedExpected": [
+        "2"
+      ],
+      "scoredQuestions": [
+        "tk-capacity-followup-01",
+        "tk-capacity-followup-02",
+        "tk-capacity-followup-03",
+        "tk-capacity-followup-04",
+        "tk-capacity-followup-05"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-intent",
+      "order": 3,
+      "unit": 1,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "本人同士と第三者との関係を分ける",
+        "善意・無過失の要件を読み分ける",
+        "意思表示の瑕疵を事例に当てはめる"
+      ],
+      "prerequisite": "前のレッスン「契約の成立・意思能力・制限行為能力」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 2562,
+      "bodyCharactersAfter": 4790,
+      "minutes": 100,
+      "teachingHeadings": [
+        "意思表示は、本人同士と第三者を分けて読みます",
+        "事情を知らない人を、どの要件で保護するか",
+        "基本例　仮装の土地売買から転売された場合",
+        "相手と通じた架空の売買は無効です",
+        "勘違いには、重要性と認識の条件があります",
+        "詐欺では、誰がだましたかを確かめます",
+        "第三者の善意を、どの事情について調べるか",
+        "強迫を詐欺と同じ条件で処理しない",
+        "錯誤では、何を間違え、どの程度重要だったかを示す",
+        "応用例　第三者がだました場合と、第三者が脅した場合",
+        "独立問題　誰の事情を調べればよいか",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-intent-third-party-table",
+        "tk-intent-cancel-route"
+      ],
+      "guidedAnchors": [
+        "guided-tk-intent"
+      ],
+      "guidedExpected": [
+        "2"
+      ],
+      "scoredQuestions": [
+        "tk-intent-q-01",
+        "tk-intent-q-02",
+        "tk-intent-q-03",
+        "tk-intent-q-04",
+        "tk-intent-depth-01",
+        "tk-intent-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-agency",
+      "order": 4,
+      "unit": 1,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "代理の効果が帰属する人を示す",
+        "無権代理の追認と取消しを区別する",
+        "表見代理の要件を確かめる"
+      ],
+      "prerequisite": "前のレッスン「虚偽表示・錯誤・詐欺・強迫」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 2607,
+      "bodyCharactersAfter": 4931,
+      "minutes": 110,
+      "teachingHeadings": [
+        "代理人が契約しても、効果は本人へ帰属します",
+        "代理権の範囲と、本人のためにする表示を確かめる",
+        "基本例　代理人が未成年者の場合",
+        "復代理人は、最初の代理人の代理で終わらない",
+        "契約相手になることと、両側を代理すること",
+        "代理権がない契約は、本人の追認を待ちます",
+        "追認前の二つの行動を、時間の順で比較します",
+        "表見代理は、外観だけで必ず成立する制度ではありません",
+        "無権代理では、本人の返答と相手方の行動を時系列に置く",
+        "条件変更　外観の種類を特定する",
+        "独立問題　追認前の取消し",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-agency-authority-flow",
+        "tk-agency-inaction-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-agency"
+      ],
+      "guidedExpected": [
+        "2"
+      ],
+      "scoredQuestions": [
+        "tk-agency-q-01",
+        "tk-agency-q-02",
+        "tk-agency-q-03",
+        "tk-agency-q-04",
+        "tk-agency-depth-01",
+        "tk-agency-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-prescription",
+      "order": 5,
+      "unit": 1,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "取得時効と消滅時効を分ける",
+        "起算点から期間を判断する",
+        "完成猶予と更新を区別する"
+      ],
+      "prerequisite": "前のレッスン「代理権・無権代理・表見代理」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 2576,
+      "bodyCharactersAfter": 5626,
+      "minutes": 100,
+      "teachingHeadings": [
+        "時効では「何を、いつから」を先に決めます",
+        "期間を覚える前に、どの権利を判断するかを決める",
+        "基本例　所有の意思と占有開始時の認識",
+        "土地の取得時効は、占有の性質を調べます",
+        "債権の消滅時効は、二つの起算点を確認します",
+        "完成猶予と更新は、期間への作用が違います",
+        "催告があった例を、期間の線で整理します",
+        "時系列を書いて、条件を一つずつ変えます",
+        "完成猶予は、過ぎた時間を消す制度ではない",
+        "条件変更　債務者が一部を支払った場合",
+        "独立問題　起算点を二つ置く",
+        "ユニット総合演習　効力と期間を、資料から順に決める",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-prescription-route",
+        "tk-prescription-events",
+        "tk-unit-1-source-sheet"
+      ],
+      "guidedAnchors": [
+        "guided-tk-prescription"
+      ],
+      "guidedExpected": [
+        "6"
+      ],
+      "scoredQuestions": [
+        "tk-prescription-q-01",
+        "tk-prescription-q-02",
+        "tk-prescription-q-03",
+        "tk-prescription-q-04",
+        "tk-prescription-depth-01",
+        "tk-prescription-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-title",
+      "order": 6,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "当事者間の変動と対抗要件を分ける",
+        "二重譲渡の基本を説明する",
+        "共有と登記の読み方を確かめる"
+      ],
+      "prerequisite": "前のレッスン「取得時効・消滅時効と期間の数え方」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil",
+        "registration"
+      ],
+      "bodyCharactersBefore": 2573,
+      "bodyCharactersAfter": 4769,
+      "minutes": 105,
+      "teachingHeadings": [
+        "所有権が移ることと、第三者へ主張できること",
+        "「第三者」は、売買当事者以外の全員という意味ではない",
+        "基本例　契約順と登記順が違う場合",
+        "二重譲渡では、登記の先後が問題になります",
+        "登記に書かれていれば、必ず真実とは限りません",
+        "共有物は、行為の種類と持分を確認します",
+        "共有の多数決は、人数の多さだけでは決まりません",
+        "登記記録は、表示と権利に分けて読みます",
+        "原因が違うと、第三者保護の考え方も変わる",
+        "応用例　取消し又は解除の前後を置く",
+        "独立問題　単なる悪意をどう読むか",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-title-comparison",
+        "tk-title-source-table"
+      ],
+      "guidedAnchors": [],
+      "guidedExpected": [
+        "1"
+      ],
+      "scoredQuestions": [
+        "tk-title-q-01",
+        "tk-title-q-02",
+        "tk-title-q-03",
+        "tk-title-q-04",
+        "tk-title-depth-01",
+        "tk-title-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-shared-land",
+      "order": 7,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "add",
+      "objectives": [
+        "共有物の行為を分類し持分による決定方法を選ぶ",
+        "共有解消と持分処分の違いを説明する",
+        "通行・隣地使用・越境した枝の処理を条件から判断する"
+      ],
+      "prerequisite": "直前の関連章の基本を使います。本文でも判断に必要な部分を振り返ります。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3527,
+      "minutes": 120,
+      "teachingHeadings": [
+        "共有は、一つの物を割合で共同所有する仕組み",
+        "何人の賛成かを数える前に、行為を分類する",
+        "基本例　人数が多い側が負ける場合",
+        "条件変更　短い期間の貸付け",
+        "共有を解消したい場合は、持分を譲る方法と分割を求める方法がある",
+        "相隣関係は、隣り合う土地の利用を調整する",
+        "応用例　分割して袋地が生じた場合",
+        "越境した枝は、切る前に条件を読む",
+        "独立問題　同じ50％でも決められるか",
+        "復習",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-shared-land-flow",
+        "tk-shared-land-votes"
+      ],
+      "guidedAnchors": [
+        "guided-tk-shared-land"
+      ],
+      "guidedExpected": [
+        "50"
+      ],
+      "scoredQuestions": [
+        "tk-shared-land-01",
+        "tk-shared-land-02",
+        "tk-shared-land-03",
+        "tk-shared-land-04",
+        "tk-shared-land-05"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-mortgage",
+      "order": 8,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "担保の役割と順位を説明する",
+        "配当の基本計算をする",
+        "抵当権と根抵当権の違いを述べる"
+      ],
+      "prerequisite": "前のレッスン「所有権・共有・登記と第三者」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 2551,
+      "bodyCharactersAfter": 4849,
+      "minutes": 110,
+      "teachingHeadings": [
+        "抵当権は、不動産を使い続けながら担保にします",
+        "債務を負う人と、担保だけを提供する人を分ける",
+        "基本例　後順位へ回る残額を求める",
+        "優先順位から配当を計算します",
+        "何が担保に含まれるかを確認します",
+        "売却代金などに及ぶ場合は、物上代位を検討します",
+        "法定地上権は、設定時と競売後を比べます",
+        "元本と極度額を、同じ残高表へ書きません",
+        "根抵当権は、継続取引のための枠です",
+        "建物と土地の所有者を、設定時と競売後に比較する",
+        "物上代位は、物の代わりに受け取る金銭を追う",
+        "独立問題　極度額と残高",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-mortgage-distribution-route",
+        "tk-mortgage-time-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-mortgage"
+      ],
+      "guidedExpected": [
+        "700"
+      ],
+      "scoredQuestions": [
+        "tk-mortgage-q-01",
+        "tk-mortgage-q-02",
+        "tk-mortgage-q-03",
+        "tk-mortgage-q-04",
+        "tk-mortgage-depth-01",
+        "tk-mortgage-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-performance",
+      "order": 9,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "弁済で債権が消える条件を確かめる",
+        "相殺の差額を計算する",
+        "保証と債権譲渡の要件を区別する"
+      ],
+      "prerequisite": "前のレッスン「抵当権・根抵当権・担保物権」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 2583,
+      "bodyCharactersAfter": 4834,
+      "minutes": 110,
+      "teachingHeadings": [
+        "弁済は、誰に何を渡すかまで確認します",
+        "支払先を間違えた場合に、債務は消えるか",
+        "基本例と条件変更　支払期日を読み落とさない",
+        "相殺は、向きの反対の債権を差し引きます",
+        "債権譲渡では、債務者の同意が常に必要なわけではありません",
+        "連帯債務と保証は、人が複数いる理由が違います",
+        "債権が移っても、債務者が二重払いしないように考えます",
+        "個人根保証は、極度額と対象を確認します",
+        "債権譲渡は、債務者への通知と第三者への対抗を分ける",
+        "応用例　知らずに元の債権者へ支払った場合",
+        "独立問題　通知した人を読む",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-performance-setoff-flow",
+        "tk-performance-assignment-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-performance"
+      ],
+      "guidedExpected": [
+        "110"
+      ],
+      "scoredQuestions": [
+        "tk-performance-q-01",
+        "tk-performance-q-02",
+        "tk-performance-q-03",
+        "tk-performance-q-04",
+        "tk-performance-depth-01",
+        "tk-performance-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-joint-guarantee",
+      "order": 10,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "add",
+      "objectives": [
+        "連帯債務の外部への責任と内部の負担を計算する",
+        "保証と連帯保証で使える抗弁を区別する",
+        "個人根保証の極度額と法定方式を確認する"
+      ],
+      "prerequisite": "直前の関連章の基本を使います。本文でも判断に必要な部分を振り返ります。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3187,
+      "minutes": 120,
+      "teachingHeadings": [
+        "請求できる額と、最終的に負担する額を分ける",
+        "連帯債務者の一人が払うと、二重に回収しない",
+        "条件変更　相対的な効力と、全体へ作用する事由",
+        "保証では、主たる債務と保証債務の二つがある",
+        "基本例　まず借主に請求してほしいと言えるか",
+        "応用例　連帯保証人への請求",
+        "個人根保証では、将来どこまで増えるかを先に制限する",
+        "独立問題　同じ書面でも、足りない条件は何か",
+        "復習",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-joint-guarantee-flow",
+        "tk-joint-guarantee-defense-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-joint-guarantee"
+      ],
+      "guidedExpected": [
+        "600"
+      ],
+      "scoredQuestions": [
+        "tk-joint-guarantee-01",
+        "tk-joint-guarantee-02",
+        "tk-joint-guarantee-03",
+        "tk-joint-guarantee-04",
+        "tk-joint-guarantee-05",
+        "tk-joint-guarantee-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-remedies",
+      "order": 11,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "解除と損害賠償の要件を分ける",
+        "契約不適合の救済を選ぶ",
+        "不法行為と契約責任を区別する"
+      ],
+      "prerequisite": "前のレッスン「弁済・相殺・債権譲渡・保証」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 2576,
+      "bodyCharactersAfter": 5188,
+      "minutes": 115,
+      "teachingHeadings": [
+        "約束どおりに履行されないときは、救済を選びます",
+        "履行、賠償、解除は、それぞれの要件から判断する",
+        "基本例　引渡しが遅れている場合",
+        "解除は、催告をする場合と不要な場合を分けます",
+        "契約不適合では、何を約束したかを確認します",
+        "手付解除は、債務不履行による解除とは違います",
+        "修補できる不具合と、履行できない場合を比べます",
+        "不法行為では、契約の相手以外も問題になります",
+        "契約不適合では、不具合の存在から救済へ橋を架ける",
+        "条件変更　修補できる雨漏りと、修補できない場合",
+        "手付解除では、相手方が履行に着手したかを見る",
+        "独立問題　通知だけで期限の検討は終わるか",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-remedies-remedy-map",
+        "tk-remedies-document-route"
+      ],
+      "guidedAnchors": [
+        "guided-tk-remedies"
+      ],
+      "guidedExpected": [
+        "240"
+      ],
+      "scoredQuestions": [
+        "tk-remedies-q-01",
+        "tk-remedies-q-02",
+        "tk-remedies-q-03",
+        "tk-remedies-q-04",
+        "tk-remedies-depth-01",
+        "tk-remedies-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-services-tort",
+      "order": 12,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "add",
+      "objectives": [
+        "請負と委任で約束する義務と報酬を区別する",
+        "仕事の途中の終了と契約不適合を事例へ当てはめる",
+        "契約外の被害者に対する不法行為や工作物責任を判断する"
+      ],
+      "prerequisite": "直前の関連章の基本を使います。本文でも判断に必要な部分を振り返ります。",
+      "sources": [
+        "civil"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3596,
+      "minutes": 120,
+      "teachingHeadings": [
+        "何を引き受けたかによって、義務の内容が変わる",
+        "請負は、完成した仕事の結果に報酬を対応させる",
+        "基本例　途中まで完成した部分に独立の利益がある",
+        "条件変更　注文者が完成前にやめたい場合",
+        "委任では、結果と注意義務を分ける",
+        "委任の解除と、損害賠償が必要な場面",
+        "契約がない被害者には、不法行為の根拠を確かめる",
+        "応用例　建物の外壁が落ちた場合",
+        "不法行為の時効は、起算点と被害の種類を確認する",
+        "独立問題　先に関係を描く",
+        "復習",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-services-tort-comparison",
+        "tk-services-tort-workflow"
+      ],
+      "guidedAnchors": [
+        "guided-tk-services-tort"
+      ],
+      "guidedExpected": [
+        "45"
+      ],
+      "scoredQuestions": [
+        "tk-services-tort-01",
+        "tk-services-tort-02",
+        "tk-services-tort-03",
+        "tk-services-tort-04",
+        "tk-services-tort-05",
+        "tk-services-tort-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-lease",
+      "order": 13,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "民法と借地借家法の適用を分ける",
+        "普通と定期の契約を比較する",
+        "更新と対抗要件を説明する"
+      ],
+      "prerequisite": "前のレッスン「債務不履行・解除・契約不適合と不法行為」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil",
+        "lease"
+      ],
+      "bodyCharactersBefore": 2703,
+      "bodyCharactersAfter": 5310,
+      "minutes": 110,
+      "teachingHeadings": [
+        "土地を借りる目的によって、使う法律が変わります",
+        "何を借り、何のために使うかを一文にする",
+        "基本例　所有者が変わっても借り続けられるか",
+        "普通借地は、存続期間と更新を順に読みます",
+        "定期借地は、種類ごとの方式が重要です",
+        "普通借家では、更新拒絶の条件を確認します",
+        "定期建物賃貸借は、契約と事前説明を分けます",
+        "借地と借家で、第三者への主張の根拠が違います",
+        "賃料・修繕・敷金を契約終了までつなげます",
+        "使用中の負担と、返還時の精算をつなぐ",
+        "条件変更　敷金から控除できる費用を選ぶ",
+        "譲渡と転貸は、借主の交替か、下に契約を重ねるか",
+        "独立問題　敷金があれば支払を止められるか",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-lease-purpose-table",
+        "tk-lease-deposit-flow"
+      ],
+      "guidedAnchors": [
+        "guided-tk-lease"
+      ],
+      "guidedExpected": [
+        "14"
+      ],
+      "scoredQuestions": [
+        "tk-lease-q-01",
+        "tk-lease-q-02",
+        "tk-lease-q-03",
+        "tk-lease-q-04",
+        "tk-lease-depth-01",
+        "tk-lease-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-land-lease",
+      "order": 14,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "add",
+      "objectives": [
+        "普通借地の期間・更新・再築の効果を時系列から判断する",
+        "借地権の対抗と建物譲渡時の承諾・許可を区別する",
+        "定期借地等の種類を用途・期間・方式から選ぶ"
+      ],
+      "prerequisite": "直前の関連章の基本を使います。本文でも判断に必要な部分を振り返ります。",
+      "sources": [
+        "lease"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3722,
+      "minutes": 125,
+      "teachingHeadings": [
+        "土地の上に自分の建物を持つ権利を考える",
+        "普通借地は、最初と更新後で法定の期間が違う",
+        "基本例　建物が残る状態で更新を求める",
+        "再築では、更新の前か後かを先に決める",
+        "条件変更　もとの満了日より長くなる場合",
+        "借地権を第三者へ主張するために、建物の登記を確認する",
+        "応用例　建物を第三者へ売りたい場合",
+        "建物買取請求は、終了の原因を確かめる",
+        "定期の借地は、期間だけでなく特約と方式を読む",
+        "独立問題　事業者が借りる住宅の用地",
+        "復習",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-land-lease-timeline",
+        "tk-land-lease-rebuild-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-land-lease"
+      ],
+      "guidedExpected": [
+        "60"
+      ],
+      "scoredQuestions": [
+        "tk-land-lease-01",
+        "tk-land-lease-02",
+        "tk-land-lease-03",
+        "tk-land-lease-04",
+        "tk-land-lease-05",
+        "tk-land-lease-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-building-lease",
+      "order": 15,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "add",
+      "objectives": [
+        "普通借家の期間と貸主の更新拒絶・解約を判断する",
+        "定期借家の契約方式・事前説明・終了通知を区別する",
+        "居住用の中途解約や賃料・造作の条件を事例で確かめる"
+      ],
+      "prerequisite": "直前の関連章の基本を使います。本文でも判断に必要な部分を振り返ります。",
+      "sources": [
+        "lease"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3909,
+      "minutes": 120,
+      "teachingHeadings": [
+        "普通借家と定期借家では、満了の意味が違う",
+        "普通借家で貸主が終わらせたい場合",
+        "基本例　更新後に「期間の定めなし」となった場合",
+        "定期借家は、契約前・契約時・終了前を別々に見る",
+        "宅建業法の重要事項説明とは、説明する立場が違う",
+        "条件変更　終了通知が遅れた場合",
+        "一定の居住用定期借家には、借主からの中途解約の特則がある",
+        "応用例　同じ転勤でも床面積を読む",
+        "賃料の改定と、造作の買取も契約条件を読む",
+        "独立問題　満了通知で事前説明を代えられるか",
+        "復習",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-building-lease-ordinary-flow",
+        "tk-building-lease-three-times"
+      ],
+      "guidedAnchors": [
+        "guided-tk-building-lease"
+      ],
+      "guidedExpected": [
+        "6"
+      ],
+      "scoredQuestions": [
+        "tk-building-lease-01",
+        "tk-building-lease-02",
+        "tk-building-lease-03",
+        "tk-building-lease-04",
+        "tk-building-lease-05",
+        "tk-building-lease-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-inheritance",
+      "order": 16,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "法定相続分を計算する",
+        "承認・放棄の期限を確認する",
+        "遺言と遺留分の役割を分ける"
+      ],
+      "prerequisite": "前のレッスン「賃貸借・借地権・借家権」を学んでから進むことをおすすめします。",
+      "sources": [
+        "civil",
+        "registration"
+      ],
+      "bodyCharactersBefore": 2565,
+      "bodyCharactersAfter": 4938,
+      "minutes": 120,
+      "teachingHeadings": [
+        "相続人と相続分を別々に決めます",
+        "親族図から、先順位の人がいるかを確認する",
+        "基本例　子が先に死亡していた場合",
+        "配偶者と一緒に相続する人で、割合が変わります",
+        "承認と放棄には、判断する期間があります",
+        "遺言は、方式と効力を確かめます",
+        "遺留分は、兄弟姉妹には認められません",
+        "相続人の組合せを変えて、割合を計算します",
+        "相続した土地の登記も確認します",
+        "生前贈与や貢献があるときは、計算の対象を確かめる",
+        "配偶者居住権は、住む利益と所有権を分ける",
+        "独立問題　放棄と遺産分割を区別する",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-inheritance-order",
+        "tk-inheritance-special-benefit-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-inheritance"
+      ],
+      "guidedExpected": [
+        "1000"
+      ],
+      "scoredQuestions": [
+        "tk-inheritance-q-01",
+        "tk-inheritance-q-02",
+        "tk-inheritance-q-03",
+        "tk-inheritance-q-04",
+        "tk-inheritance-depth-01",
+        "tk-inheritance-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-condo",
+      "order": 17,
+      "unit": 2,
+      "officialDomain": 2,
+      "decision": "deepen",
+      "objectives": [
+        "専有部分と共用部分を分ける",
+        "改正後の定足数と多数決の母数を計算する",
+        "建替えと規約変更を区別する"
+      ],
+      "prerequisite": "前のレッスン「相続・遺言・遺留分と登記」を学んでから進むことをおすすめします。",
+      "sources": [
+        "condo",
+        "condo-reform"
+      ],
+      "bodyCharactersBefore": 2707,
+      "bodyCharactersAfter": 6278,
+      "minutes": 120,
+      "teachingHeadings": [
+        "マンションは、専有部分と共用部分を分けます",
+        "共用部分は、保存、管理、変更を分ける",
+        "基本例　人の数と議決権が違う場合",
+        "2026年4月1日から、多数決の母数に注意が必要です",
+        "人数と議決権の二つを確かめます",
+        "共用部分の変更と管理を区別します",
+        "建替えと規約変更を、同じ母数で計算しません",
+        "出席者を変えると、規約変更の賛成数も変わります",
+        "招集手続の開始日が、経過措置に関わります",
+        "招集通知は、誰が、いつ、何を知らせるか",
+        "条件変更　共用部分の変更の3分の2を使えるか",
+        "義務違反への対応は、決議だけで実力行使しない",
+        "独立問題　人数だけでは可決できない",
+        "ユニット総合演習　権利の種類に合わせて資料を読む",
+        "根拠となる条文"
+      ],
+      "visuals": [
+        "tk-condo-decision-route",
+        "tk-condo-two-meetings",
+        "tk-unit-2-source-sheet"
+      ],
+      "guidedAnchors": [
+        "guided-tk-condo"
+      ],
+      "guidedExpected": [
+        "60"
+      ],
+      "scoredQuestions": [
+        "tk-condo-q-01",
+        "tk-condo-q-02",
+        "tk-condo-q-03",
+        "tk-condo-q-04",
+        "tk-condo-depth-01",
+        "tk-condo-depth-02"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-license",
+      "order": 18,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "宅建業に当たる取引を選ぶ",
+        "知事免許と大臣免許を判断する",
+        "免許の効力と更新を確認する"
+      ],
+      "prerequisite": "既習のレッスン「区分所有・管理規約・2026年改正の決議」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business"
+      ],
+      "bodyCharactersBefore": 2569,
+      "bodyCharactersAfter": 6784,
+      "minutes": 65,
+      "teachingHeadings": [
+        "自ら貸すことと、貸借を仲介することは違います",
+        "宅地は、登記の地目だけでは決まりません",
+        "免許権者は、取引する場所でなく事務所で判断します",
+        "更新の申請と、処分が間に合わない場合",
+        "事務所の範囲を確認してから免許を選びます",
+        "欠格事由は、人・原因・期間を読み分けます",
+        "事務所を増やす例と、取引地域を広げる例",
+        "欠格事由を、原因ごとの期間と対象者へ分ける",
+        "免許がなくなった後の既存取引と、適用除外",
+        "免許後も、変更と廃業の手続があります",
+        "取引の種類から、免許が必要な事業を絞る",
+        "例題1　遠い県の物件を扱う",
+        "例題2　新しい営業拠点を置く",
+        "例題3　個人事業者が死亡した",
+        "欠格事由では、判決・刑・法人の関係を読み取る",
+        "自分で確かめる",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-license-role-grid",
+        "tk-license-notification-grid"
+      ],
+      "guidedAnchors": [
+        "guided-tk-license"
+      ],
+      "guidedExpected": [
+        "2"
+      ],
+      "scoredQuestions": [
+        "tk-license-q-01",
+        "tk-license-q-02",
+        "tk-license-q-03",
+        "tk-license-q-04",
+        "tk-license-business-202611-01",
+        "tk-license-business-202611-02",
+        "tk-license-business-202611-03",
+        "tk-license-business-202611-04",
+        "tk-license-business-202611-05",
+        "tk-license-business-202611-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-practitioner",
+      "order": 19,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "試験合格と登録と証の交付を分ける",
+        "専任宅建士の人数を求める",
+        "届出の対象を確認する"
+      ],
+      "prerequisite": "既習のレッスン「宅建業の範囲・免許・欠格事由」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business",
+        "entry"
+      ],
+      "bodyCharactersBefore": 2627,
+      "bodyCharactersAfter": 4494,
+      "minutes": 65,
+      "teachingHeadings": [
+        "試験合格と、宅建士としての業務は段階が違います",
+        "登録先と勤務先の免許権者を分けます",
+        "宅建士証の有効期間と提示義務",
+        "事務所の専任宅建士は、5人に1人以上です",
+        "専任性は、名前の登録だけでは足りません",
+        "必要人数の端数を、切上げる理由を確かめます",
+        "宅建士の義務と処分を確認します",
+        "登録と証の手続を、一人の異動に沿って読む",
+        "例題1　合格から半年で交付を受ける",
+        "例題2　県外へ移転し、証の期限が2年残る",
+        "例題3　二つの事務所の必要人数",
+        "自分で確かめる",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-practitioner-change-map",
+        "tk-practitioner-proof-handling"
+      ],
+      "guidedAnchors": [
+        "guided-tk-practitioner"
+      ],
+      "guidedExpected": [
+        "6"
+      ],
+      "scoredQuestions": [
+        "tk-practitioner-q-01",
+        "tk-practitioner-q-02",
+        "tk-practitioner-q-03",
+        "tk-practitioner-q-04",
+        "tk-practitioner-business-202611-01",
+        "tk-practitioner-business-202611-02",
+        "tk-practitioner-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-office",
+      "order": 20,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "事務所と案内所の義務を分ける",
+        "従業者証明書と名簿を区別する",
+        "帳簿・標識の目的を説明する"
+      ],
+      "prerequisite": "既習のレッスン「宅建士の登録・取引士証・専任性」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business"
+      ],
+      "bodyCharactersBefore": 2600,
+      "bodyCharactersAfter": 4340,
+      "minutes": 60,
+      "teachingHeadings": [
+        "事務所と案内所では、必要な義務が違います",
+        "案内所等の届出は、営業前に行います",
+        "標識は、誰が営業しているかを示します",
+        "従業者証明書は、宅建士以外にも関係します",
+        "従業者名簿と取引帳簿を分けます",
+        "電子的な管理でも、記載・保存の条件を満たします",
+        "帳簿と名簿では、誰の何を確かめるかが違います",
+        "義務を場所ごとに整理して復習します",
+        "場所の義務を、行為ごとに比較する",
+        "例題1　最初は展示、後から申込み受付",
+        "例題2　宅建士証を携帯する営業担当",
+        "例題3　取引相手が帳簿の閲覧を求めた",
+        "独立演習　義務を一つずつ確認する",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-office-location-matrix",
+        "tk-office-retention-axis"
+      ],
+      "guidedAnchors": [
+        "guided-tk-office"
+      ],
+      "guidedExpected": [
+        "10"
+      ],
+      "scoredQuestions": [
+        "tk-office-q-01",
+        "tk-office-q-02",
+        "tk-office-q-03",
+        "tk-office-q-04",
+        "tk-office-business-202611-01",
+        "tk-office-business-202611-02",
+        "tk-office-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-guarantee",
+      "order": 21,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "二つの制度を比較する",
+        "本店と支店の必要額を計算する",
+        "還付後の補充を説明する"
+      ],
+      "prerequisite": "既習のレッスン「事務所・案内所・帳簿と従業者」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business"
+      ],
+      "bodyCharactersBefore": 2588,
+      "bodyCharactersAfter": 5486,
+      "minutes": 70,
+      "teachingHeadings": [
+        "取引相手の損害に備える、二つの制度があります",
+        "本店と支店を分けて金額を計算します",
+        "営業開始前には、供託と届出が必要です",
+        "有価証券は、額面のまま数えない場合があります",
+        "還付は、宅建業の取引から生じる債権が対象です",
+        "支店追加と還付の例で、必要な資金の行先を分けます",
+        "退会や廃業で、自由に全額を戻せるわけではありません",
+        "納付先と、債権者が受けられる額を分ける",
+        "例題1　証券を組み合わせて供託する",
+        "例題2　新設支店の営業開始を決める",
+        "例題3　還付後に届く二つの通知",
+        "社員の納付後に、協会が行う手続もある",
+        "本店移転は、金銭だけか証券を含むかで分岐する",
+        "自分で確かめる",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-guarantee-routes",
+        "tk-guarantee-deadlines"
+      ],
+      "guidedAnchors": [
+        "guided-tk-guarantee"
+      ],
+      "guidedExpected": [
+        "280"
+      ],
+      "scoredQuestions": [
+        "tk-guarantee-q-01",
+        "tk-guarantee-q-02",
+        "tk-guarantee-q-03",
+        "tk-guarantee-q-04",
+        "tk-guarantee-business-202611-01",
+        "tk-guarantee-business-202611-02",
+        "tk-guarantee-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-brokerage",
+      "order": 22,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "三つの媒介契約を比較する",
+        "登録と報告の期間を数える",
+        "売主への説明と書面を確かめる"
+      ],
+      "prerequisite": "既習のレッスン「営業保証金・保証協会と還付」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business",
+        "conduct"
+      ],
+      "bodyCharactersBefore": 2516,
+      "bodyCharactersAfter": 4711,
+      "minutes": 65,
+      "teachingHeadings": [
+        "媒介契約は、売主と宅建業者の依頼関係です",
+        "三つの種類は、重ねて依頼できるかで比較します",
+        "指定流通機構への登録と、売主への報告",
+        "書面には、依頼の条件を明らかにします",
+        "建物状況調査と、購入申込みの報告",
+        "登録期限と報告頻度を、別の予定表へ記入します",
+        "売買の相手を決める権限とは別です",
+        "媒介の依頼と、成立した売買を二段階で捉える",
+        "例題1　他社へ頼めないが、自分で探した人には売りたい",
+        "例題2　五か月の専任契約と、自動更新",
+        "例題3　購入申込みが定期報告の翌日に届く",
+        "物件の調査と販売活動をつなぐ",
+        "自分で確かめる",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-brokerage-two-contracts",
+        "tk-brokerage-time-grid"
+      ],
+      "guidedAnchors": [
+        "guided-tk-brokerage"
+      ],
+      "guidedExpected": [
+        "2"
+      ],
+      "scoredQuestions": [
+        "tk-brokerage-q-01",
+        "tk-brokerage-q-02",
+        "tk-brokerage-q-03",
+        "tk-brokerage-q-04",
+        "tk-brokerage-business-202611-01",
+        "tk-brokerage-business-202611-02",
+        "tk-brokerage-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-disclosure",
+      "order": 23,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "契約前に説明する理由を述べる",
+        "説明者・相手方・記名を区別する",
+        "取引類型別の項目を確かめる"
+      ],
+      "prerequisite": "既習のレッスン「媒介契約・指定流通機構・業務報告」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business",
+        "it-explanation"
+      ],
+      "bodyCharactersBefore": 2559,
+      "bodyCharactersAfter": 5055,
+      "minutes": 70,
+      "teachingHeadings": [
+        "重要事項説明は、契約するか判断するための手続です",
+        "宅建士証は、請求がなくても提示します",
+        "登記・法令制限・施設の情報を読みます",
+        "水害・土砂災害など、指定と図面の位置を確認します",
+        "売買と賃貸で、すべて同じ項目にはなりません",
+        "相手が宅建業者の場合の特則を読みます",
+        "同じ物件でも、相手方の属性を変えて比較します",
+        "電子交付とIT重説は、それぞれ要件があります",
+        "書面の項目は、何を判断する情報かで整理する",
+        "例題1　業者間の売買",
+        "例題2　私道の負担を、建物賃貸へ変える",
+        "例題3　融資の不成立への備え",
+        "電子交付と説明の方法を別々に点検する",
+        "独立演習　書面を渡した後なら何でもよいか",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-disclosure-purpose-map",
+        "tk-disclosure-contract-axis",
+        "tk-disclosure-vs-contract-items"
+      ],
+      "guidedAnchors": [
+        "guided-tk-disclosure"
+      ],
+      "guidedExpected": [
+        "2"
+      ],
+      "scoredQuestions": [
+        "tk-disclosure-q-01",
+        "tk-disclosure-q-02",
+        "tk-disclosure-q-03",
+        "tk-disclosure-q-04",
+        "tk-disclosure-business-202611-01",
+        "tk-disclosure-business-202611-02",
+        "tk-disclosure-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-document",
+      "order": 24,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "35条書面と37条書面を比較する",
+        "交付相手と時期を判断する",
+        "必須事項と定めがある事項を分ける"
+      ],
+      "prerequisite": "既習のレッスン「35条の重要事項説明と電子交付」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business",
+        "civil"
+      ],
+      "bodyCharactersBefore": 2554,
+      "bodyCharactersAfter": 4663,
+      "minutes": 65,
+      "teachingHeadings": [
+        "37条書面は、成立した契約内容を明らかにします",
+        "宅建士の記名と、説明義務を分けます",
+        "必ず記載する事項と、定めがある場合の事項",
+        "代金・引渡し・登記を時系列にします",
+        "危険負担は、誰の責任でもない滅失等の問題です",
+        "書面の交付先を、契約当事者の図から確認します",
+        "解除や違約金の条項を読めるようにします",
+        "契約書の欄は、当事者・物件・給付へ分けて読む",
+        "例題1　売主も買主も宅建業者",
+        "例題2　合意した公租公課の精算",
+        "例題3　融資条項を省いた書面",
+        "履行の問題を、書面の形式だけで片付けない",
+        "自分で確かめる",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-document-party-flow",
+        "tk-document-cash-timeline"
+      ],
+      "guidedAnchors": [
+        "guided-tk-document"
+      ],
+      "guidedExpected": [
+        "4000"
+      ],
+      "scoredQuestions": [
+        "tk-document-q-01",
+        "tk-document-q-02",
+        "tk-document-q-03",
+        "tk-document-q-04",
+        "tk-document-business-202611-01",
+        "tk-document-business-202611-02",
+        "tk-document-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-protection",
+      "order": 25,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "適用される当事者関係を見分ける",
+        "手付解除と損害賠償上限を計算する",
+        "保全措置の金額を判断する"
+      ],
+      "prerequisite": "既習のレッスン「37条書面・契約条項・履行の順序」を学んでから進むことをおすすめします。",
+      "sources": [
+        "business"
+      ],
+      "bodyCharactersBefore": 2688,
+      "bodyCharactersAfter": 5125,
+      "minutes": 75,
+      "teachingHeadings": [
+        "8種制限は、売主と買主の立場から確認します",
+        "他人の物を売る契約と、クーリングオフ",
+        "20％という数字でも、規制の対象が違います",
+        "契約不適合責任の免責を自由には定められません",
+        "保全措置は、割合と金額の両方を判定します",
+        "保全措置の境界を、同じ代金で比較します",
+        "割賦販売は、解除と登記の保護もあります",
+        "八つの規制を、保護する場面から整理する",
+        "例題1　損害賠償予定と違約金を足す",
+        "例題2　不利な特約が無効になった後",
+        "例題3　割賦払いの30％ちょうどを超える",
+        "他人物売買と停止条件を丁寧に読む",
+        "独立演習　契約の名前を変えた場合",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-protection-eight-map",
+        "tk-protection-money-ledger"
+      ],
+      "guidedAnchors": [
+        "guided-tk-protection"
+      ],
+      "guidedExpected": [
+        "80"
+      ],
+      "scoredQuestions": [
+        "tk-protection-q-01",
+        "tk-protection-q-02",
+        "tk-protection-q-03",
+        "tk-protection-q-04",
+        "tk-protection-business-202611-01",
+        "tk-protection-business-202611-02",
+        "tk-protection-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-cooling",
+      "order": 26,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "add",
+      "objectives": [
+        "申込みと契約の場所から適用対象を判断する",
+        "法定告知と8日間、引渡し・全額支払の条件を判断する",
+        "撤回の方法・効力と手付解除の違いを説明する"
+      ],
+      "prerequisite": "「自ら売主の8種制限」で、売主業者・買主非業者の売買と手付解除を確認してから学びます。",
+      "sources": [
+        "business"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3586,
+      "minutes": 80,
+      "teachingHeadings": [
+        "クーリングオフは、申込みを考え直す機会を守る制度です",
+        "売主・申込み場所・失効条件の順に調べる",
+        "事務所等に当たるかは、法律上の場所で判断する",
+        "8日間は、法定の告知を受けた日から確認する",
+        "引渡しと代金全部の支払は、両方そろうかを調べる",
+        "三つの例で、結論を変える条件を確かめる",
+        "例題1　喫茶店で申込み、翌日に事務所で契約",
+        "例題2　事務所で申込み、旅行先で契約",
+        "例題3　引渡し済みだが残代金がある",
+        "自分で解く　場所と履行を組み合わせる",
+        "まとめ",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-cooling-place-matrix",
+        "tk-cooling-stage-drawing",
+        "tk-cooling-calendar"
+      ],
+      "guidedAnchors": [
+        "guided-tk-cooling"
+      ],
+      "guidedExpected": [
+        "17"
+      ],
+      "scoredQuestions": [
+        "tk-cooling-business-202611-01",
+        "tk-cooling-business-202611-02",
+        "tk-cooling-business-202611-03",
+        "tk-cooling-business-202611-04",
+        "tk-cooling-business-202611-05",
+        "tk-cooling-business-202611-06",
+        "tk-cooling-business-202611-07"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-advance-payments",
+      "order": 27,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "add",
+      "objectives": [
+        "契約時の完成状態と保全対象の金銭を区別する",
+        "累計額・割合・1,000万円の条件を独立に計算する",
+        "保証・保険・保管の違いと支払拒絶を説明する"
+      ],
+      "prerequisite": "「自ら売主の8種制限」で手付の20％上限と買主保護の適用関係を確認してから進みます。",
+      "sources": [
+        "business"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3273,
+      "minutes": 85,
+      "teachingHeadings": [
+        "保全措置は、引渡し前に払う金銭の返還を守ります",
+        "完成前後は、売買契約時を基準にする",
+        "今回の金額と、すでに払った金額を足す",
+        "三つの例で、超えた条件を特定する",
+        "例題1　未完成の5％ちょうどと、その後の中間金",
+        "例題2　割合は低いが1,000万円を超える",
+        "例題3　契約後の完成で率を変えない",
+        "保証・保険・保管を、返還の仕組みで区別する",
+        "自分で解く　「手付」と「手付金等」を区別する",
+        "まとめ",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-advance-threshold-grid",
+        "tk-advance-running-bars",
+        "tk-advance-running-ledger"
+      ],
+      "guidedAnchors": [
+        "guided-tk-advance"
+      ],
+      "guidedExpected": [
+        "120"
+      ],
+      "scoredQuestions": [
+        "tk-advance-payments-business-202611-01",
+        "tk-advance-payments-business-202611-02",
+        "tk-advance-payments-business-202611-03",
+        "tk-advance-payments-business-202611-04",
+        "tk-advance-payments-business-202611-05",
+        "tk-advance-payments-business-202611-06",
+        "tk-advance-payments-business-202611-07"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-reward",
+      "order": 28,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "通常の売買媒介の上限を計算する",
+        "賃貸の報酬と承諾を区別する",
+        "特例の説明と合意を確かめる"
+      ],
+      "prerequisite": "売買・貸借と媒介・代理の違い、代金と代金へ充当する金銭の区別を確認してから学びます。四則計算と割合を使います。",
+      "sources": [
+        "business",
+        "reward"
+      ],
+      "bodyCharactersBefore": 2632,
+      "bodyCharactersAfter": 4973,
+      "minutes": 70,
+      "teachingHeadings": [
+        "報酬は、売買価格そのものとは別の取引費用です",
+        "売買媒介は、金額の区分ごとに計算します",
+        "代理と媒介、交換の計算を区別します",
+        "賃貸媒介は、双方の合計と一方の上限を見ます",
+        "税抜価格を確定してから、報酬へ税を加えます",
+        "800万円以下の特例は、事前の説明と合意を確認します",
+        "速算式は、価格帯ごとの合計を短くしたもの",
+        "例題1　300万円を速算式で計算する",
+        "例題2　土地と税込建物を合計する",
+        "例題3　居住用賃貸の片側と合計",
+        "免税業者の報酬を、課税業者の式から区別する",
+        "自分で確かめる",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-reward-rate-trace",
+        "tk-reward-cap-check"
+      ],
+      "guidedAnchors": [
+        "guided-tk-reward"
+      ],
+      "guidedExpected": [
+        "660000"
+      ],
+      "scoredQuestions": [
+        "tk-reward-q-01",
+        "tk-reward-q-02",
+        "tk-reward-q-03",
+        "tk-reward-q-04",
+        "tk-reward-business-202611-01",
+        "tk-reward-business-202611-02",
+        "tk-reward-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-reward-cases",
+      "order": 29,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "add",
+      "objectives": [
+        "代理・交換・権利金に応じて計算の基礎と上限を選ぶ",
+        "低廉な空家等と長期の空家等の特例を区別する",
+        "片側上限・双方合計・承諾と合意を併せて点検する"
+      ],
+      "prerequisite": "「媒介・代理の報酬計算」で課税業者の区分計算、売買代金の税抜額、賃貸の片側と合計を確認してから学びます。",
+      "sources": [
+        "business",
+        "reward"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3420,
+      "minutes": 85,
+      "teachingHeadings": [
+        "複合計算では、料率より先に取引の条件を選びます",
+        "代理は、受領先を増やしても合計上限を増やせません",
+        "例題1　通常売買の代理で双方から受領",
+        "例題2　交換差金で計算しない",
+        "例題3　店舗の返還されない権利金",
+        "800万円以下の売買特例は、価格を基準にする",
+        "長期の空家等の貸借は、利用状態と借主側の上限を確認する",
+        "条件を変える　借主の承諾と代理",
+        "自分で解く　特例を二重に重ねない",
+        "まとめ",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-reward-cases-method-map",
+        "tk-reward-cases-vacant-cap"
+      ],
+      "guidedAnchors": [
+        "guided-tk-reward-cases"
+      ],
+      "guidedExpected": [
+        "1380000"
+      ],
+      "scoredQuestions": [
+        "tk-reward-cases-business-202611-01",
+        "tk-reward-cases-business-202611-02",
+        "tk-reward-cases-business-202611-03",
+        "tk-reward-cases-business-202611-04",
+        "tk-reward-cases-business-202611-05",
+        "tk-reward-cases-business-202611-06",
+        "tk-reward-cases-business-202611-07"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-conduct",
+      "order": 30,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "deepen",
+      "objectives": [
+        "広告開始と契約締結の時期を区別する",
+        "禁止される勧誘を判断する",
+        "新築住宅の資力確保を説明する"
+      ],
+      "prerequisite": "媒介・代理の報酬計算と契約前後の情報提供を確認してから学びます。新築住宅の詳しい責任と資力確保は、次の専用レッスンへ進みます。",
+      "sources": [
+        "business",
+        "housing-warranty"
+      ],
+      "bodyCharactersBefore": 2558,
+      "bodyCharactersAfter": 5087,
+      "minutes": 70,
+      "teachingHeadings": [
+        "広告を始める時期と、契約できる時期を分けます",
+        "誇大広告と、取引態様の表示",
+        "おとり広告は、広告する物件の実態から判断する",
+        "重要な事実を隠し、威迫してはいけません",
+        "監督処分と、刑事上の罰則は別の制度です",
+        "新築住宅の責任と、通常の営業保証を比較します",
+        "新築住宅は、責任と資力確保をつなげます",
+        "広告と契約は、別の行為として判定する",
+        "例題1　許可後だが、面積を大きく表示",
+        "例題2　注文時の取引態様",
+        "例題3　県外業者の違反",
+        "勧誘の発言は、顧客の判断へどう働くかを読む",
+        "独立演習　保証金を納めていれば足りるか",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-conduct-stage-grid",
+        "tk-conduct-supervision-grid"
+      ],
+      "guidedAnchors": [
+        "guided-tk-conduct"
+      ],
+      "guidedExpected": [
+        "12"
+      ],
+      "scoredQuestions": [
+        "tk-conduct-q-01",
+        "tk-conduct-q-02",
+        "tk-conduct-q-03",
+        "tk-conduct-q-04",
+        "tk-conduct-business-202611-01",
+        "tk-conduct-business-202611-02",
+        "tk-conduct-business-202611-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-housing-warranty",
+      "order": 31,
+      "unit": 3,
+      "officialDomain": 7,
+      "decision": "add",
+      "objectives": [
+        "新築住宅と10年責任の対象部分・起算点を判断する",
+        "住宅瑕疵担保履行法の対象者と供託・保険を説明する",
+        "基準日の届出、引渡実績ゼロ、他の保証制度との違いを判断する"
+      ],
+      "prerequisite": "「広告・禁止行為・監督」と「自ら売主の8種制限」の契約不適合責任を確認してから進みます。",
+      "sources": [
+        "business",
+        "housing",
+        "housing-warranty"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4005,
+      "minutes": 80,
+      "teachingHeadings": [
+        "10年の責任と、その責任を果たす資金を分けて理解します",
+        "新築かどうかは、未居住と完成からの期間を併せて判断する",
+        "住宅の全不具合が、一律に同じ10年責任ではない",
+        "供託と保険は、引渡し後の責任履行を支える",
+        "例題1　完成後1年をまたいで引き渡す",
+        "例題2　保険に入ったが、対象年に引渡しゼロ",
+        "例題3　売主・買主・媒介を入れ替える",
+        "3月31日の基準日と、届出の周期を確認する",
+        "自分で解く　契約の種類と保証を結び付ける",
+        "根拠を確認する"
+      ],
+      "visuals": [
+        "tk-housing-warranty-newness",
+        "tk-housing-warranty-house-parts",
+        "tk-housing-warranty-three-securities"
+      ],
+      "guidedAnchors": [
+        "guided-tk-housing-warranty"
+      ],
+      "guidedExpected": [
+        "21"
+      ],
+      "scoredQuestions": [
+        "tk-housing-warranty-business-202611-01",
+        "tk-housing-warranty-business-202611-02",
+        "tk-housing-warranty-business-202611-03",
+        "tk-housing-warranty-business-202611-04",
+        "tk-housing-warranty-business-202611-05",
+        "tk-housing-warranty-business-202611-06",
+        "tk-housing-warranty-business-202611-07"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-planning",
+      "order": 32,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "deepen",
+      "objectives": [
+        "区域区分と用途地域を分ける",
+        "都市計画の決定と制限をつなげる",
+        "地区計画と施設を説明する"
+      ],
+      "prerequisite": "前のレッスン「広告・禁止行為・監督と住宅瑕疵担保履行」を学んでから進むことをおすすめします。",
+      "sources": [
+        "planning"
+      ],
+      "bodyCharactersBefore": 2597,
+      "bodyCharactersAfter": 5499,
+      "minutes": 85,
+      "teachingHeadings": [
+        "都市計画は、個々の敷地を超えて土地利用を調整します",
+        "市街化区域と市街化調整区域を区別します",
+        "用途地域は、主に建築物の用途を整えます",
+        "13種類は、保護する環境と許す用途を結び付けて読みます",
+        "基本例　区域区分と用途地域を同時に読む",
+        "条件変更　用途地域が指定されていない土地",
+        "組合せ例　用途は適合しても、計画施設にかかる敷地",
+        "指定する主体と、計画を決定する主体",
+        "地域地区は、用途地域だけではありません",
+        "都市計画施設の区域内では、建築に制限があります",
+        "建てたい用途から、必要な情報を逆にたどります",
+        "地区計画では、届出と条例を調べます",
+        "自分で確かめる"
+      ],
+      "visuals": [
+        "tk-planning-layers",
+        "tk-planning-dossier"
+      ],
+      "guidedAnchors": [
+        "guided-tk-planning"
+      ],
+      "guidedExpected": [
+        "3"
+      ],
+      "scoredQuestions": [
+        "tk-planning-q-01",
+        "tk-planning-q-02",
+        "tk-planning-q-03",
+        "tk-planning-q-04",
+        "tk-planning-depth-01",
+        "tk-planning-depth-02",
+        "tk-planning-depth-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-planning-permissions",
+      "order": 33,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "53条と65条を事業段階と行為から選ぶ",
+        "54条の許可基準を条件ごとに照合する",
+        "地区計画の届出と法定例外を判断する"
+      ],
+      "prerequisite": "「都市計画区域・区域区分・用途地域」で、指定の重なりを学んでから進みます。",
+      "sources": [
+        "planning"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3820,
+      "minutes": 90,
+      "teachingHeadings": [
+        "計画を守る制限は、工事の進み方で変わります",
+        "53条は、施設等の区域内での建築を扱います",
+        "65条は、事業の障害となる行為を広く扱います",
+        "三つの例で、条件が変わる場所を確かめます",
+        "基本例　計画道路の区域で、小さな木造住宅を建てる",
+        "条件変更　地階を一つ加える",
+        "段階変更　事業認可等の告示後に、工作物を設置する",
+        "地区計画の届出は、区域と行為の要件を読みます",
+        "届出の例を、許可の例へ置き換えない",
+        "自分で資料を読み、根拠を選びます",
+        "参照した公式資料"
+      ],
+      "visuals": [
+        "tk-planning-permissions-stages",
+        "tk-planning-permissions-case-ledger"
+      ],
+      "guidedAnchors": [
+        "guided-tk-planning-permissions"
+      ],
+      "guidedExpected": [
+        "30"
+      ],
+      "scoredQuestions": [
+        "tk-planning-permissions-depth-01",
+        "tk-planning-permissions-depth-02",
+        "tk-planning-permissions-depth-03",
+        "tk-planning-permissions-depth-04",
+        "tk-planning-permissions-depth-05",
+        "tk-planning-permissions-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-development",
+      "order": 34,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "deepen",
+      "objectives": [
+        "開発行為の定義を事例に当てる",
+        "区域別に許可を検討する",
+        "完了公告前後の制限を区別する"
+      ],
+      "prerequisite": "前のレッスン「都市計画区域・区域区分・用途地域」を学んでから進むことをおすすめします。",
+      "sources": [
+        "planning",
+        "development"
+      ],
+      "bodyCharactersBefore": 2631,
+      "bodyCharactersAfter": 6086,
+      "minutes": 110,
+      "teachingHeadings": [
+        "開発行為は、土地の区画形質の変更です",
+        "区域と規模によって、許可の要否が変わります",
+        "数字の前に、区域と例外を確定する",
+        "技術基準と、立地の基準を区別します",
+        "完了公告の前後で、建築の制限が変わります",
+        "技術的に造れることと、その場所で造れること",
+        "完了検査、検査済証、公告を日付で区切る",
+        "許可後の変更・承継・廃止も手続が必要です",
+        "面積だけを変える場合と、区域を変える場合",
+        "他の許可は、別に確認します",
+        "解く手順を自分で使う"
+      ],
+      "visuals": [
+        "tk-development-thresholds",
+        "tk-development-timeline"
+      ],
+      "guidedAnchors": [
+        "guided-tk-development"
+      ],
+      "guidedExpected": [
+        "3050"
+      ],
+      "scoredQuestions": [
+        "tk-development-q-01",
+        "tk-development-q-02",
+        "tk-development-q-03",
+        "tk-development-q-04",
+        "tk-development-depth-01",
+        "tk-development-depth-02",
+        "tk-development-depth-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-building",
+      "order": 35,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "deepen",
+      "objectives": [
+        "確認と検査の段階を分ける",
+        "道路と接道の条件を読む",
+        "用途制限と防火制限を比較する"
+      ],
+      "prerequisite": "前のレッスン「開発行為・開発許可と工事後の制限」を学んでから進むことをおすすめします。",
+      "sources": [
+        "building"
+      ],
+      "bodyCharactersBefore": 2505,
+      "bodyCharactersAfter": 5756,
+      "minutes": 105,
+      "teachingHeadings": [
+        "建築確認は、工事の前に計画の適法性を確かめます",
+        "確認済証と検査済証は、段階が違います",
+        "階数・延べ面積・場所から、確認の対象を選びます",
+        "基本例　区域外の二階建て木造住宅",
+        "条件変更　平屋200平方メートルと201平方メートル",
+        "増築の10平方メートル例外は、防火指定と工事の種類を確かめる",
+        "敷地は、原則として道路に2メートル以上接します",
+        "2項道路の後退は、道路の中心線等から考えます",
+        "道路の中心、現在の端、みなし境界を描き分ける",
+        "用途制限は、建物の使い方から判断します",
+        "道路の幅と、敷地の接し方を別々に測ります",
+        "防火地域では、構造と規模を確かめます",
+        "自分で判断する"
+      ],
+      "visuals": [
+        "tk-building-scope-matrix",
+        "tk-building-setback-diagram"
+      ],
+      "guidedAnchors": [
+        "guided-tk-building"
+      ],
+      "guidedExpected": [
+        "5"
+      ],
+      "scoredQuestions": [
+        "tk-building-q-01",
+        "tk-building-q-02",
+        "tk-building-q-03",
+        "tk-building-q-04",
+        "tk-building-depth-01",
+        "tk-building-depth-02",
+        "tk-building-depth-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-building-use",
+      "order": 36,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "用途制限の建物種別と面積条件を照合する",
+        "用途・面積比率・防火で境界の扱いを分ける",
+        "既存不適格と建築協定の効力を説明する"
+      ],
+      "prerequisite": "「都市計画区域・区域区分・用途地域」と「建築確認・道路・用途と防火」の基本を学んでから進みます。",
+      "sources": [
+        "building"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4208,
+      "minutes": 105,
+      "teachingHeadings": [
+        "建物の用途と、防火の性能を別々に調べます",
+        "似た名前の用途でも、法律の区分が違います",
+        "基本例と条件変更で、面積を読みます",
+        "基本例　小さな兼用住宅",
+        "条件変更　店が小さくても、住宅全体との割合が変わる",
+        "別の用途　工業専用地域で住宅を建てる",
+        "複数の地域へまたがる場合は、規定ごとに対象が違います",
+        "防火性能は、材料の名前だけで決めません",
+        "防火の境界を読む例",
+        "既存不適格と、建築協定を理解する",
+        "自分で判定する",
+        "参照した公式資料"
+      ],
+      "visuals": [
+        "tk-building-use-reading",
+        "tk-building-use-crossing"
+      ],
+      "guidedAnchors": [
+        "guided-tk-building-use"
+      ],
+      "guidedExpected": [
+        "45"
+      ],
+      "scoredQuestions": [
+        "tk-building-use-depth-01",
+        "tk-building-use-depth-02",
+        "tk-building-use-depth-03",
+        "tk-building-use-depth-04",
+        "tk-building-use-depth-05",
+        "tk-building-use-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-density",
+      "order": 37,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "deepen",
+      "objectives": [
+        "二つの面積比率を計算する",
+        "道路幅員による上限を比較する",
+        "複数地域と緩和の条件を読む"
+      ],
+      "prerequisite": "前のレッスン「建築確認・道路・用途と防火」を学んでから進むことをおすすめします。",
+      "sources": [
+        "building",
+        "density"
+      ],
+      "bodyCharactersBefore": 2568,
+      "bodyCharactersAfter": 5664,
+      "minutes": 125,
+      "teachingHeadings": [
+        "建ぺい率は、敷地を建物が覆う割合です",
+        "容積率は、延べ面積と敷地面積の比です",
+        "基本例　平面と各階を分けて二つの上限を出す",
+        "前面道路が狭いと、容積率がさらに制限されます",
+        "複数の地域にまたがる場合は、面積で加重します",
+        "角地や耐火建築物の緩和は、条件を確認します",
+        "高さの制限は、面積の計算とは別です",
+        "敷地が減ると、二つの上限を計算し直します",
+        "面積問題は、計算に入れる範囲を先に決めます",
+        "道路制限を地域ごとに確定してから加重する",
+        "後退と角地加算が同時にある問題",
+        "除外面積を読むときは、何の計算から除くかを書く",
+        "高さや形の制限を、面積の後で重ねる",
+        "自分で解く"
+      ],
+      "visuals": [
+        "tk-density-three-areas",
+        "tk-density-calculation-ledger"
+      ],
+      "guidedAnchors": [
+        "guided-tk-density"
+      ],
+      "guidedExpected": [
+        "400"
+      ],
+      "scoredQuestions": [
+        "tk-density-q-01",
+        "tk-density-q-02",
+        "tk-density-q-03",
+        "tk-density-q-04",
+        "tk-density-depth-01",
+        "tk-density-depth-02",
+        "tk-density-depth-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-height-control",
+      "order": 38,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "絶対高さと外壁後退の対象地域・指定値を判断する",
+        "道路・北側の斜線の距離と勾配を用いて上限を比較する",
+        "隣地斜線と日影規制の対象・時点・区域を区別する"
+      ],
+      "prerequisite": "「建ぺい率・容積率・高さと面積計算」で、敷地と建物の面積を区別し、「建築確認・道路・用途と防火」で道路境界を学んでから進みます。",
+      "sources": [
+        "building"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4377,
+      "minutes": 115,
+      "teachingHeadings": [
+        "面積の上限を満たしても、建物の形は別に制限されます",
+        "絶対高さと外壁の後退は、都市計画の指定を確認します",
+        "道路斜線は、道路の反対側からの距離を使います",
+        "基本例　勾配を距離へ掛ける",
+        "条件変更　建物を2m後退させる",
+        "北側斜線は、真北方向と基準高さを使います",
+        "二つの高さの上限を比較する",
+        "隣地斜線は、北側だけを対象にする制度とは異なります",
+        "日影規制は、冬至の影が続く時間を確認します",
+        "自分で、上限が変わる理由を説明します",
+        "参照した公式資料"
+      ],
+      "visuals": [
+        "tk-height-control-measurement",
+        "tk-height-control-road-trace",
+        "tk-height-control-binding-limit"
+      ],
+      "guidedAnchors": [
+        "guided-tk-height-control"
+      ],
+      "guidedExpected": [
+        "10"
+      ],
+      "scoredQuestions": [
+        "tk-height-control-depth-01",
+        "tk-height-control-depth-02",
+        "tk-height-control-depth-03",
+        "tk-height-control-depth-04",
+        "tk-height-control-depth-05",
+        "tk-height-control-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-area-exclusions",
+      "order": 39,
+      "unit": 4,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "床面積と容積率へ算入する面積を区別する",
+        "車庫・地階等の用途条件と上限を照合する",
+        "重複しない複数部分の除外を集計して検算する"
+      ],
+      "prerequisite": "「建ぺい率・容積率・高さと面積計算」で、延べ面積と容積率の基本計算を学んでから進みます。",
+      "sources": [
+        "building",
+        "structure"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4269,
+      "minutes": 110,
+      "teachingHeadings": [
+        "床面積と、容積率へ算入する床面積を分けます",
+        "自動車車庫等は、床の合計の5分の1を限度にします",
+        "基本例　実際の車庫が上限より小さい",
+        "条件変更　車庫を120㎡へ広げる",
+        "同じ敷地に建物が二つある場合",
+        "地階の住宅等は、位置と用途と3分の1の上限を確認します",
+        "全て住宅の、条件を固定した例",
+        "共用廊下・階段と昇降路は、対象部分を特定します",
+        "設備等の部分にも、それぞれ異なる上限があります",
+        "複数の除外は、同じ面積を二度引かずに集計します",
+        "自分で資料を読む",
+        "参照した公式資料"
+      ],
+      "visuals": [
+        "tk-area-exclusions-garage-ledger",
+        "tk-area-exclusions-cap-table"
+      ],
+      "guidedAnchors": [
+        "guided-tk-area-exclusions"
+      ],
+      "guidedExpected": [
+        "480"
+      ],
+      "scoredQuestions": [
+        "tk-area-exclusions-depth-01",
+        "tk-area-exclusions-depth-02",
+        "tk-area-exclusions-depth-03",
+        "tk-area-exclusions-depth-04",
+        "tk-area-exclusions-depth-05",
+        "tk-area-exclusions-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-farmland",
+      "order": 40,
+      "unit": 5,
+      "officialDomain": 3,
+      "decision": "deepen",
+      "objectives": [
+        "権利移動と転用を分ける",
+        "許可と届出の区別をする",
+        "違反取引の効力を説明する"
+      ],
+      "prerequisite": "前のレッスン「建ぺい率・容積率・高さと面積計算」を学んでから進むことをおすすめします。",
+      "sources": [
+        "farmland"
+      ],
+      "bodyCharactersBefore": 2643,
+      "bodyCharactersAfter": 5957,
+      "minutes": 105,
+      "teachingHeadings": [
+        "農地として使うか、別の用途へ変えるかを分けます",
+        "3条は、農地のまま権利を移す場面です",
+        "4条は、自分の農地を自分で転用する場面です",
+        "5条は、転用する目的で権利を移す場面です",
+        "基本例　同じ畑を、何のために取得するか",
+        "市街化区域の特例は、転用の届出です",
+        "相続など、許可を要しない取得にも別の届出があります",
+        "農地のまま使う取得では、耕作できる体制を審査する",
+        "転用では、農地の場所と実行可能な計画を審査する",
+        "市街化区域へ場所だけを変える",
+        "相続と一時転用で、時点を読み分ける",
+        "許可のない取引は、効力にも関わります",
+        "売主が同じでも、買主の利用目的で条文が変わります",
+        "一時的な転用や施設の設置も確認します",
+        "自分で判断する"
+      ],
+      "visuals": [
+        "tk-farmland-decision-matrix",
+        "tk-farmland-procedure-path"
+      ],
+      "guidedAnchors": [
+        "guided-tk-farmland"
+      ],
+      "guidedExpected": [
+        "5"
+      ],
+      "scoredQuestions": [
+        "tk-farmland-q-01",
+        "tk-farmland-q-02",
+        "tk-farmland-q-03",
+        "tk-farmland-q-04",
+        "tk-farmland-depth-01",
+        "tk-farmland-depth-02",
+        "tk-farmland-depth-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-landcontrol",
+      "order": 41,
+      "unit": 5,
+      "officialDomain": 3,
+      "decision": "deepen",
+      "objectives": [
+        "一団の土地の面積を判定する",
+        "事後届出の当事者と期限を確かめる",
+        "規制区域と届出を区別する"
+      ],
+      "prerequisite": "前のレッスン「農地法の3条・4条・5条と転用」を学んでから進むことをおすすめします。",
+      "sources": [
+        "national"
+      ],
+      "bodyCharactersBefore": 2657,
+      "bodyCharactersAfter": 5778,
+      "minutes": 105,
+      "teachingHeadings": [
+        "大規模な土地取引は、利用目的を届け出ます",
+        "面積の基準は、区域によって三段階です",
+        "一団の土地は、契約を分けても合計します",
+        "基本例　一つの契約で基準ちょうどの土地を買う",
+        "条件変更　同じ面積を調整区域で取得する",
+        "組合せ例　別々の売主から一体利用のために買う",
+        "届け出るのは、原則として権利取得者です",
+        "売買以外の有償の権利移動も検討します",
+        "事後届出と、契約の有効性を分けます",
+        "指定区域では、手続を行う前後が変わる",
+        "対価と当事者にも、届出対象を変える条件がある",
+        "合計面積と、各契約の期限を区別します",
+        "土地利用の制限は、この届出だけではありません",
+        "自分で判断する"
+      ],
+      "visuals": [
+        "tk-landcontrol-purchase-ledger",
+        "tk-landcontrol-timing-map"
+      ],
+      "guidedAnchors": [
+        "guided-tk-landcontrol"
+      ],
+      "guidedExpected": [
+        "2150"
+      ],
+      "scoredQuestions": [
+        "tk-landcontrol-q-01",
+        "tk-landcontrol-q-02",
+        "tk-landcontrol-q-03",
+        "tk-landcontrol-q-04",
+        "tk-landcontrol-depth-01",
+        "tk-landcontrol-depth-02",
+        "tk-landcontrol-depth-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-readjustment",
+      "order": 42,
+      "unit": 5,
+      "officialDomain": 3,
+      "decision": "deepen",
+      "objectives": [
+        "仮換地と換地を区別する",
+        "盛土規制の対象と手続を確認する",
+        "特別な土地利用規制の調べ方を示す"
+      ],
+      "prerequisite": "前のレッスン「国土利用計画法・土地取引と地域の規制」を学んでから進むことをおすすめします。",
+      "sources": [
+        "readjustment",
+        "embankment"
+      ],
+      "bodyCharactersBefore": 2699,
+      "bodyCharactersAfter": 5600,
+      "minutes": 100,
+      "teachingHeadings": [
+        "区画整理は、土地の配置と公共施設を整えます",
+        "仮換地は、換地処分前の使用収益を調整します",
+        "指定日と使用収益開始日を、別の欄に書く",
+        "仮換地を売るという説明から、登記の対象をたどる",
+        "換地処分と減歩を、面積だけで損得判断しません",
+        "減歩の計算と、価値の調整を分ける",
+        "認可の公告後の建築は、事業の妨げになるかを考える",
+        "施行地区内の建築には、事業保護の制限があります",
+        "盛土規制は、土地の用途にかかわらず確認します",
+        "工事後にも、土地の安全管理が関係します",
+        "旧土地と新しい区画を、同じものとして記入しません",
+        "その他の土地利用法令も、対象を特定して調べます",
+        "自分で判断する"
+      ],
+      "visuals": [
+        "tk-readjustment-phase-map",
+        "tk-readjustment-calculation"
+      ],
+      "guidedAnchors": [
+        "guided-tk-readjustment"
+      ],
+      "guidedExpected": [
+        "15"
+      ],
+      "scoredQuestions": [
+        "tk-readjustment-q-01",
+        "tk-readjustment-q-02",
+        "tk-readjustment-q-03",
+        "tk-readjustment-q-04",
+        "tk-readjustment-depth-01",
+        "tk-readjustment-depth-02",
+        "tk-readjustment-depth-03"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-fill-control",
+      "order": 43,
+      "unit": 5,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "区域と規模・適用除外から許可か届出かを選ぶ",
+        "着手前・工事中・完了時の義務とみなし制度を説明する",
+        "区域指定時の工事と土地保全の主語を判断する"
+      ],
+      "prerequisite": "「開発行為・開発許可と工事後の制限」「土地区画整理・盛土規制・その他の制限」の基本を先に学びます。",
+      "sources": [
+        "embankment",
+        "fill-order",
+        "fill-rule"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4776,
+      "minutes": 120,
+      "teachingHeadings": [
+        "盛土規制は、土を動かした後の災害を防ぎます",
+        "宅地造成等工事規制区域では、一定の工事を許可制にします",
+        "規模の表に当たっても、適用除外を点検します",
+        "特定盛土等規制区域では、大規模なものを許可、それ以外を届出で捉えます",
+        "三つの事例で、測る値と必要な手続をつなぎます",
+        "基本例　同じ工事を二つの区域へ移す",
+        "条件変更　崖を2.5mに高くする",
+        "境界と除外　高さだけで対象を決めない",
+        "許可前、工事中、完了後にそれぞれ義務があります",
+        "指定のときに工事中だった場合と、安全管理の主語",
+        "自分で説明する",
+        "参照した公式資料"
+      ],
+      "visuals": [
+        "tk-fill-control-shape-table",
+        "tk-fill-control-regime-compare",
+        "tk-fill-control-procedure"
+      ],
+      "guidedAnchors": [
+        "guided-tk-fill-control"
+      ],
+      "guidedExpected": [
+        "21"
+      ],
+      "scoredQuestions": [
+        "tk-fill-control-depth-01",
+        "tk-fill-control-depth-02",
+        "tk-fill-control-depth-03",
+        "tk-fill-control-depth-04",
+        "tk-fill-control-depth-05",
+        "tk-fill-control-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-forest-nature",
+      "order": 44,
+      "unit": 5,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "森林の指定と目的・面積から林地開発許可を判断する",
+        "伐採と所有者取得の届出の時点を区別する",
+        "自然公園の区域別の許可・届出と他法令の重なりを説明する"
+      ],
+      "prerequisite": "「盛土規制法の区域・規模・許可と工事中の手続」で、区域と行為を分ける手順を確認してから進みます。",
+      "sources": [
+        "forest-land",
+        "forest-felling",
+        "forest-owner",
+        "natural-parks"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4416,
+      "minutes": 110,
+      "teachingHeadings": [
+        "森林と自然公園では、保護する目的から手続を選びます",
+        "地域森林計画と保安林を分けます",
+        "林地開発許可は、目的と面積の境界を読みます",
+        "基本例　0.8haの一般造成",
+        "条件変更　同じ0.8haを太陽光発電設備へ",
+        "指定変更　保安林だった場合",
+        "伐採の届出と、所有者となった届出は別の制度です",
+        "自然公園では、区域の種類を先に確定します",
+        "建築確認とは別に、自然公園の手続を確認する",
+        "自分で、三つの行為を整理します",
+        "参照した公式資料"
+      ],
+      "visuals": [
+        "tk-forest-nature-decision-map",
+        "tk-forest-nature-purpose-cases"
+      ],
+      "guidedAnchors": [
+        "guided-tk-forest-nature"
+      ],
+      "guidedExpected": [
+        "5000"
+      ],
+      "scoredQuestions": [
+        "tk-forest-nature-depth-01",
+        "tk-forest-nature-depth-02",
+        "tk-forest-nature-depth-03",
+        "tk-forest-nature-depth-04",
+        "tk-forest-nature-depth-05",
+        "tk-forest-nature-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-landscape-culture",
+      "order": 45,
+      "unit": 5,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "景観計画区域の届出と着手制限を判断する",
+        "周知の埋蔵文化財包蔵地の掘削手続を説明する",
+        "公拡法の届出・協議を国土法の事後届出と区別する"
+      ],
+      "prerequisite": "「国土利用計画法・土地取引と地域の規制」で、取得者と契約日の事後届出を学んでから比較します。",
+      "sources": [
+        "landscape-law",
+        "cultural-properties",
+        "public-land"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4494,
+      "minutes": 115,
+      "teachingHeadings": [
+        "売る、建てる、掘るという行為ごとに、守る目的が違います",
+        "景観計画区域では、対象行為を事前に届け出ます",
+        "基本例　外壁の色を変える計画",
+        "条件変更　受理から10日後に着工する",
+        "周知の埋蔵文化財包蔵地では、掘削前の手続を確認します",
+        "二つの手続がある例で、長い準備期間を確保する",
+        "公拡法の届出は、譲渡しようとする所有者が行います",
+        "買取りの協議と、第三者へ譲れる時点を追います",
+        "自分で予定表を点検します",
+        "参照した公式資料"
+      ],
+      "visuals": [
+        "tk-landscape-culture-action-map",
+        "tk-landscape-culture-notification-ledger"
+      ],
+      "guidedAnchors": [
+        "guided-tk-landscape-culture"
+      ],
+      "guidedExpected": [
+        "60"
+      ],
+      "scoredQuestions": [
+        "tk-landscape-culture-depth-01",
+        "tk-landscape-culture-depth-02",
+        "tk-landscape-culture-depth-03",
+        "tk-landscape-culture-depth-04",
+        "tk-landscape-culture-depth-05",
+        "tk-landscape-culture-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-land-regulation-case",
+      "order": 46,
+      "unit": 5,
+      "officialDomain": 3,
+      "decision": "add",
+      "objectives": [
+        "取得・転用・造成・建築に関わる手続を資料から選ぶ",
+        "後退・道路制限・面積加重を組み合わせて検算する",
+        "計画の内容と着手時期・他法令の手続を同時に点検する"
+      ],
+      "prerequisite": "ユニット4・5の各章を先に学びます。特に、開発許可、建築面積、農地法、国土法、盛土規制の判断手順を確認してから取り組みます。",
+      "sources": [
+        "planning",
+        "building",
+        "farmland",
+        "national",
+        "embankment"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 5352,
+      "minutes": 125,
+      "teachingHeadings": [
+        "一つの計画を、取得・造成・建築の順に読み解きます",
+        "結論を五つの欄へ分けます",
+        "例題1　畑を二人から取得し、住宅地を造成します",
+        "資料",
+        "取得と転用の手続を選ぶ",
+        "造成の許可と、重なる計画の届出を読む",
+        "条件を変えて、規定を選び直す",
+        "例題2　道路後退後の敷地で、二つの面積上限を求めます",
+        "資料を図と計算へ移す",
+        "計算の意味から検算する",
+        "同じ面積の床を積む場合を点検する",
+        "例題3　用途地域の境界と、工事の段階を同時に読みます",
+        "独立問題で、自分の判断を確かめます",
+        "問題A",
+        "問題B",
+        "問題C",
+        "公式資料へ戻って確認する箇所"
+      ],
+      "visuals": [
+        "tk-land-regulation-case-reading-ledger",
+        "tk-land-regulation-case-area-ledger"
+      ],
+      "guidedAnchors": [
+        "guided-tk-land-regulation-case"
+      ],
+      "guidedExpected": [
+        "408"
+      ],
+      "scoredQuestions": [
+        "tk-land-regulation-case-depth-01",
+        "tk-land-regulation-case-depth-02",
+        "tk-land-regulation-case-depth-03",
+        "tk-land-regulation-case-depth-04",
+        "tk-land-regulation-case-depth-05",
+        "tk-land-regulation-case-depth-06"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-tax",
+      "order": 47,
+      "unit": 6,
+      "officialDomain": 4,
+      "decision": "deepen",
+      "objectives": [
+        "国税と地方税を区別する",
+        "固定資産税の住宅用地特例を計算する",
+        "税率と課税標準を分ける"
+      ],
+      "prerequisite": "前のレッスン「土地区画整理・盛土規制・その他の制限」を学んでから進むことをおすすめします。",
+      "sources": [
+        "tax-local",
+        "tax-stamp",
+        "tax-registration",
+        "tax-local-law"
+      ],
+      "bodyCharactersBefore": 2752,
+      "bodyCharactersAfter": 5647,
+      "minutes": 80,
+      "teachingHeadings": [
+        "取得・保有・契約のどの場面の税かを分けます",
+        "不動産取得税は、登記の有無だけで決まりません",
+        "固定資産税は、1月1日の所有者を確認します",
+        "住宅用地の特例は、土地の課税標準を軽くします",
+        "登録免許税は、登記の種類ごとに計算します",
+        "売買代金・評価額・課税標準を三列に分けます",
+        "印紙税は、課税文書の内容から判断します",
+        "税額を求める前に、課税される対象をそろえる",
+        "基本例　土地の価格から課税標準へ進む",
+        "標準例　200㎡を超える敷地を分ける",
+        "条件変更　売却しても基準日の納税義務は残る",
+        "登記原因と文書の形で、使う表を変える",
+        "自分で確かめる　同じ相続で三つの税を判断する",
+        "この章の確認"
+      ],
+      "visuals": [
+        "tk-tax-price-stages",
+        "tk-tax-document-border"
+      ],
+      "guidedAnchors": [
+        "guided-tk-tax"
+      ],
+      "guidedExpected": [
+        "56000"
+      ],
+      "scoredQuestions": [
+        "tk-tax-q-01",
+        "tk-tax-q-02",
+        "tk-tax-q-03",
+        "tk-tax-q-04",
+        "tk-tax-deep-1",
+        "tk-tax-deep-2",
+        "tk-tax-deep-3",
+        "tk-tax-deep-4"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-acquisition-tax",
+      "order": 48,
+      "unit": 6,
+      "officialDomain": 4,
+      "decision": "add",
+      "objectives": [
+        "住宅の取得日と面積・用途の条件を対応させる",
+        "価格控除と税額減額を分けて計算する",
+        "土地と家屋の税額を別々に確かめる"
+      ],
+      "prerequisite": "「不動産の取得・保有・契約にかかる税」で、課税標準と税率、税目の違いを学びます。",
+      "sources": [
+        "tax-local-law",
+        "tax-acquisition",
+        "tax-acquisition-summary"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 4450,
+      "minutes": 75,
+      "teachingHeadings": [
+        "住宅取得の軽減は、対象と日付を確かめてから計算する",
+        "取得日と家屋の条件を一組にする",
+        "基本例　住宅の控除を、税率より先に使う",
+        "標準例　面積の一つの条件が変わる場合",
+        "応用例　土地と住宅で差し引く段階を分ける",
+        "住宅用土地の減額を、自分で求める",
+        "計算例1　床面積2倍が200㎡に届かない場合",
+        "計算例2　200㎡の上限に達する場合",
+        "計算例3　4万5,000円の方が大きい場合",
+        "登記・相続・贈与を同じ条件として扱わない",
+        "自分で解く　条件を確認する順序から説明する",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-acquisition-conditions",
+        "tk-acquisition-two-routes",
+        "tk-acquisition-land-reduction"
+      ],
+      "guidedAnchors": [
+        "guided-tk-acquisition"
+      ],
+      "guidedExpected": [
+        "24"
+      ],
+      "scoredQuestions": [
+        "tk-acquisition-tax-deep-1",
+        "tk-acquisition-tax-deep-2",
+        "tk-acquisition-tax-deep-3",
+        "tk-acquisition-tax-deep-4",
+        "tk-acquisition-tax-deep-5",
+        "tk-acquisition-tax-deep-6"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-transfer-tax",
+      "order": 49,
+      "unit": 6,
+      "officialDomain": 4,
+      "decision": "deepen",
+      "objectives": [
+        "譲渡所得を段階的に計算する",
+        "1月1日現在の所有期間を判定する",
+        "特別控除の適用条件を読む"
+      ],
+      "prerequisite": "前のレッスン「不動産の取得・保有・契約にかかる税」を学んでから進むことをおすすめします。",
+      "sources": [
+        "tax-gain",
+        "tax-home",
+        "tax-long",
+        "tax-short"
+      ],
+      "bodyCharactersBefore": 2640,
+      "bodyCharactersAfter": 5006,
+      "minutes": 85,
+      "teachingHeadings": [
+        "売却代金と、課税される利益は違います",
+        "取得費と譲渡費用を分けて集計します",
+        "長期か短期かは、売った年の1月1日で判定します",
+        "税率は、所得税と住民税を分けます",
+        "マイホームの3,000万円控除は、利益から差し引きます",
+        "同じ利益でも、売却年で判定が変わる例を解きます",
+        "税の学習は、基準日と実際の取引日を分けます",
+        "収入から税額まで、数字の段階を追う",
+        "基本例　費用を分類してから引く",
+        "標準例　5年の判定日と相続の引継ぎ",
+        "応用例　復興特別所得税を最後に重ねる",
+        "自分で解く　概算取得費の意味を説明する",
+        "復習するときの順序"
+      ],
+      "visuals": [
+        "tk-transfer-tax-stages",
+        "tk-transfer-tax-date-comparison"
+      ],
+      "guidedAnchors": [
+        "guided-tk-transfer-tax"
+      ],
+      "guidedExpected": [
+        "1860"
+      ],
+      "scoredQuestions": [
+        "tk-transfer-tax-q-01",
+        "tk-transfer-tax-q-02",
+        "tk-transfer-tax-q-03",
+        "tk-transfer-tax-q-04",
+        "tk-transfer-tax-deep-1",
+        "tk-transfer-tax-deep-2",
+        "tk-transfer-tax-deep-3",
+        "tk-transfer-tax-deep-4"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-home-sale-tax",
+      "order": 50,
+      "unit": 6,
+      "officialDomain": 4,
+      "decision": "add",
+      "objectives": [
+        "3,000万円控除の対象と期限を判定する",
+        "10年超軽減税率を段階別に計算する",
+        "買換えと控除の働きと併用関係を区別する"
+      ],
+      "prerequisite": "「譲渡所得・所有期間・住宅の特例」で、収入・所得・課税所得と長期短期を分けます。",
+      "sources": [
+        "tax-home",
+        "tax-home-reduced",
+        "tax-home-shared",
+        "tax-replacement"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3330,
+      "minutes": 90,
+      "teachingHeadings": [
+        "マイホームの特例は、金額を引く前に条件を読む",
+        "3,000万円控除の対象を確かめる",
+        "基本例　短期でも控除を検討できる",
+        "標準例　転居日から期限を作る",
+        "10年超の軽減税率は、控除後の所得へ適用する",
+        "応用例　6,000万円の境目で二つに分ける",
+        "買換えの繰延べは、将来の取得費にもつながる",
+        "自分で解く　共有者を一人ずつ判定する",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-home-sale-selection",
+        "tk-home-sale-brackets"
+      ],
+      "guidedAnchors": [
+        "guided-tk-home-sale"
+      ],
+      "guidedExpected": [
+        "900"
+      ],
+      "scoredQuestions": [
+        "tk-home-sale-tax-deep-1",
+        "tk-home-sale-tax-deep-2",
+        "tk-home-sale-tax-deep-3",
+        "tk-home-sale-tax-deep-4",
+        "tk-home-sale-tax-deep-5",
+        "tk-home-sale-tax-deep-6"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-replacement-gain",
+      "order": 51,
+      "unit": 6,
+      "officialDomain": 4,
+      "decision": "add",
+      "objectives": [
+        "旧居と新居の面積・期間・性能等の要件を対応させる",
+        "買換え額の大小に応じた当年の所得を求める",
+        "新居へ引き継ぐ取得価額と繰延べ益を照合する"
+      ],
+      "prerequisite": "「マイホーム売却の特例」と「譲渡所得」で、所得の段階と特例の働きを学びます。",
+      "sources": [
+        "tax-replacement",
+        "tax-under-replacement",
+        "tax-replacement-basis"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3434,
+      "minutes": 95,
+      "teachingHeadings": [
+        "買換えの特例は、売却益を次の資産へつなぐ",
+        "売る側と買う側の条件を別の列に置く",
+        "基本例　売却年を起点に取得と入居を並べる",
+        "住宅の種類による条件も確認する",
+        "買換え額が売却額以上なら、取得価額を引き継ぐ",
+        "買換え額が少ない場合は、当年の課税部分も求める",
+        "自分で解く　面積の条件だけ変えて比較する",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-replacement-gain-conditions",
+        "tk-replacement-gain-allocation"
+      ],
+      "guidedAnchors": [
+        "guided-tk-replacement-gain"
+      ],
+      "guidedExpected": [
+        "1200"
+      ],
+      "scoredQuestions": [
+        "tk-replacement-gain-deep-1",
+        "tk-replacement-gain-deep-2",
+        "tk-replacement-gain-deep-3",
+        "tk-replacement-gain-deep-4",
+        "tk-replacement-gain-deep-5",
+        "tk-replacement-gain-deep-6"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-home-sale-loss",
+      "order": 52,
+      "unit": 6,
+      "officialDomain": 4,
+      "decision": "add",
+      "objectives": [
+        "売却損とローン残高を別に計算する",
+        "買換えと旧居ローンの二制度の条件を比較する",
+        "通算限度と翌年以後の繰越控除を条件から求める"
+      ],
+      "prerequisite": "「譲渡所得」と「自宅の買換え」を学び、収入・取得費・譲渡費用とローン債務を区別します。",
+      "sources": [
+        "tax-loss-replacement",
+        "tax-loss-loan"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 3107,
+      "minutes": 85,
+      "teachingHeadings": [
+        "売却損は、ローンの残りと別に計算する",
+        "買換えを伴う制度では、新居の条件も読む",
+        "基本例　当年と翌年へ損失を分ける",
+        "旧居のローンが残る制度では、通算の上限を求める",
+        "標準例　売却損の全額が上限内とは限らない",
+        "応用例　返済残高が変わると、同じ損失でも対象が変わる",
+        "所得制限と申告を、損益通算と繰越控除に分ける",
+        "自分で解く　制度を選ぶために足りない資料を答える",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-home-loss-two-schemes",
+        "tk-home-loss-loan-limit"
+      ],
+      "guidedAnchors": [
+        "guided-tk-home-loss"
+      ],
+      "guidedExpected": [
+        "450"
+      ],
+      "scoredQuestions": [
+        "tk-home-sale-loss-deep-1",
+        "tk-home-sale-loss-deep-2",
+        "tk-home-sale-loss-deep-3",
+        "tk-home-sale-loss-deep-4",
+        "tk-home-sale-loss-deep-5",
+        "tk-home-sale-loss-deep-6"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-valuation",
+      "order": 53,
+      "unit": 6,
+      "officialDomain": 6,
+      "decision": "deepen",
+      "objectives": [
+        "公示価格と取引価格を分ける",
+        "三つの鑑定評価手法を説明する",
+        "収益還元の単純例を計算する"
+      ],
+      "prerequisite": "前のレッスン「譲渡所得・所有期間・住宅の特例」を学んでから進むことをおすすめします。",
+      "sources": [
+        "valuation",
+        "appraisal",
+        "appraisal-methods"
+      ],
+      "bodyCharactersBefore": 2590,
+      "bodyCharactersAfter": 5414,
+      "minutes": 90,
+      "teachingHeadings": [
+        "公示価格と、実際の売買価格を区別します",
+        "土地上に建物があっても、更地としての価格を考えます",
+        "鑑定評価の三方式は、見る根拠が違います",
+        "取引事例は、事情と時点をそろえます",
+        "収益還元では、収入と純収益を区別します",
+        "還元利回りを、価格へ戻して確認します",
+        "実際の鑑定は、長期の変化も検討します",
+        "価格は、何を評価するかを決めてから比べる",
+        "基本例　使った期間による減価を確かめる",
+        "標準例　安く売られた事情を戻してから比較する",
+        "応用例　利回りと価格の関係を逆算する",
+        "DCF法は、受け取る時期をそろえてから足す",
+        "自分で解く　合算する前に単位をそろえる",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-valuation-evidence-map",
+        "tk-valuation-adjustment-trace"
+      ],
+      "guidedAnchors": [
+        "guided-tk-valuation"
+      ],
+      "guidedExpected": [
+        "8000"
+      ],
+      "scoredQuestions": [
+        "tk-valuation-q-01",
+        "tk-valuation-q-02",
+        "tk-valuation-q-03",
+        "tk-valuation-q-04",
+        "tk-valuation-deep-1",
+        "tk-valuation-deep-2",
+        "tk-valuation-deep-3",
+        "tk-valuation-deep-4"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-supply",
+      "order": 54,
+      "unit": 7,
+      "officialDomain": 5,
+      "decision": "deepen",
+      "objectives": [
+        "買取型証券化の流れを説明する",
+        "広告の表示単位を計算する",
+        "統計の対象と基準時点を読む"
+      ],
+      "prerequisite": "前のレッスン「地価公示・鑑定評価と価格の計算」を学んでから進むことをおすすめします。",
+      "sources": [
+        "jhf",
+        "display",
+        "statistics",
+        "statistics-business",
+        "jhf-flow"
+      ],
+      "bodyCharactersBefore": 2599,
+      "bodyCharactersAfter": 4846,
+      "minutes": 75,
+      "teachingHeadings": [
+        "住宅の需給は、融資・広告・統計を分けて学びます",
+        "買取型では、民間金融機関のローン債権を使います",
+        "広告の徒歩分数は、道路距離を80メートルで割ります",
+        "面積や新築の表示にも条件があります",
+        "統計は、対象期間と調査対象を先に読みます",
+        "増減率は、前年を分母にします",
+        "徒歩時間と、統計の丸め方を混ぜません",
+        "毎年の更新では、法令と統計を別々に確認します",
+        "広告では、表示した条件を再現できるか確かめる",
+        "基本例　80mの境目を読む",
+        "標準例　地図の二つの距離を使い分ける",
+        "使える、完成した、住んだという状態を区別する",
+        "応用例　表示の二条件を入れ替えた資料を比べる",
+        "自分で解く　畳数の表示を面積へ戻す",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-supply-distance-evidence",
+        "tk-supply-new-build-two-conditions"
+      ],
+      "guidedAnchors": [
+        "guided-tk-supply"
+      ],
+      "guidedExpected": [
+        "13"
+      ],
+      "scoredQuestions": [
+        "tk-supply-q-01",
+        "tk-supply-q-02",
+        "tk-supply-q-03",
+        "tk-supply-q-04",
+        "tk-supply-deep-1",
+        "tk-supply-deep-2",
+        "tk-supply-deep-3",
+        "tk-supply-deep-4"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-housing-finance",
+      "order": 55,
+      "unit": 7,
+      "officialDomain": 5,
+      "decision": "add",
+      "objectives": [
+        "買取型の融資・債権・返済の流れを説明する",
+        "保証型と買取型の役割の違いを資料から識別する",
+        "機構の業務と個別融資の条件を区別する"
+      ],
+      "prerequisite": "「住宅の需給・広告・統計」で住宅金融の目的を確認し、「弁済・相殺・債権譲渡」で債権の意味を学びます。",
+      "sources": [
+        "jhf",
+        "jhf-flow",
+        "jhf-guarantee"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 2994,
+      "minutes": 65,
+      "teachingHeadings": [
+        "住宅金融支援機構は、民間の住宅ローンを支える",
+        "買取型では、債権の移転と返済窓口を分ける",
+        "基本例　同じ銀行へ返済する理由",
+        "標準例　発行代金と毎月の返済を混同しない",
+        "保証型では、機構がすべての債権を買うとは限らない",
+        "応用例　資料の言葉から方式を識別する",
+        "直接融資などの業務も、対象を確かめて整理する",
+        "自分で解く　役割の誤りを直す",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-finance-claim-flow",
+        "tk-finance-two-models"
+      ],
+      "guidedAnchors": [
+        "guided-tk-finance"
+      ],
+      "guidedExpected": [
+        "1880"
+      ],
+      "scoredQuestions": [
+        "tk-housing-finance-deep-1",
+        "tk-housing-finance-deep-2",
+        "tk-housing-finance-deep-3",
+        "tk-housing-finance-deep-4",
+        "tk-housing-finance-deep-5",
+        "tk-housing-finance-deep-6"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-statistics-reading",
+      "order": 56,
+      "unit": 7,
+      "officialDomain": 5,
+      "decision": "add",
+      "objectives": [
+        "統計の対象・期間・単位と比較相手を読み取る",
+        "増減率と内訳の合計を計算して点検する",
+        "平均と個別の数値からいえる範囲を判断する"
+      ],
+      "prerequisite": "「住宅の需給・広告・統計」と「地価公示・鑑定評価」を学び、割合を前年などの基準値で求めます。",
+      "sources": [
+        "statistics",
+        "statistics-fiscal",
+        "statistics-business",
+        "appraisal"
+      ],
+      "bodyCharactersBefore": 0,
+      "bodyCharactersAfter": 2946,
+      "minutes": 75,
+      "teachingHeadings": [
+        "統計は、何をいつ数えた値かを確認する",
+        "年と年度、フローとストックを分ける",
+        "基本例　比較する相手を変えると答えが変わる",
+        "標準例　内訳と合計を対応させる",
+        "最新の公表値と、試験年度の資料を読み分ける",
+        "応用例　平均の増減から一つの土地を断定しない",
+        "自分で解く　同月比と前月比は矛盾するか",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-statistics-metadata",
+        "tk-statistics-official-periods"
+      ],
+      "guidedAnchors": [
+        "guided-tk-statistics"
+      ],
+      "guidedExpected": [
+        "10"
+      ],
+      "scoredQuestions": [
+        "tk-statistics-reading-deep-1",
+        "tk-statistics-reading-deep-2",
+        "tk-statistics-reading-deep-3",
+        "tk-statistics-reading-deep-4",
+        "tk-statistics-reading-deep-5",
+        "tk-statistics-reading-deep-6"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-land",
+      "order": 57,
+      "unit": 8,
+      "officialDomain": 1,
+      "decision": "deepen",
+      "objectives": [
+        "地形からリスクの手掛かりを得る",
+        "資料の限界を説明する",
+        "地積・地目と現況を区別する"
+      ],
+      "prerequisite": "前のレッスン「住宅金融支援機構・表示規約・統計の読み方」を学んでから進むことをおすすめします。",
+      "sources": [
+        "land",
+        "landform"
+      ],
+      "bodyCharactersBefore": 2558,
+      "bodyCharactersAfter": 5150,
+      "minutes": 80,
+      "teachingHeadings": [
+        "地形は、土地ができた過程の手掛かりです",
+        "自然堤防と後背湿地を比べます",
+        "液状化は、揺れと地盤の条件で考えます",
+        "盛土と切土は、土地を平らにする方法が違います",
+        "ハザードマップは、想定と更新時点を読みます",
+        "地図の情報と、現地の調査を役割で分けます",
+        "地積・地目と、現況を照合します",
+        "地形は、土地ができた過程と水の動きを表す",
+        "砂か粘土かに加えて、水と締まり具合を考える",
+        "基本例　液状化の条件を組み合わせる",
+        "標準例　谷を埋めた造成の断面を読む",
+        "応用例　地図に色がない理由を一つに決めない",
+        "面積の差は、契約で何を精算するかに戻る",
+        "自分で解く　資料が示す事実と推測を分ける",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-land-origin-evidence",
+        "tk-land-cut-fill-section"
+      ],
+      "guidedAnchors": [
+        "guided-tk-land"
+      ],
+      "guidedExpected": [
+        "54"
+      ],
+      "scoredQuestions": [
+        "tk-land-q-01",
+        "tk-land-q-02",
+        "tk-land-q-03",
+        "tk-land-q-04",
+        "tk-land-deep-1",
+        "tk-land-deep-2",
+        "tk-land-deep-3",
+        "tk-land-deep-4"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    },
+    {
+      "id": "tk-structure",
+      "order": 58,
+      "unit": 8,
+      "officialDomain": 1,
+      "decision": "deepen",
+      "objectives": [
+        "主な構造の荷重の支え方を説明する",
+        "材料の弱点と対策を対応させる",
+        "面積と性能表示を読み分ける"
+      ],
+      "prerequisite": "前のレッスン「地形・地盤・災害と土地の見方」を学んでから進むことをおすすめします。",
+      "sources": [
+        "building",
+        "structure",
+        "wood-durability",
+        "housing"
+      ],
+      "bodyCharactersBefore": 2543,
+      "bodyCharactersAfter": 5402,
+      "minutes": 85,
+      "teachingHeadings": [
+        "建物は、力の伝わり方と材料の性質を合わせて考えます",
+        "木造軸組は、柱と梁に水平力への備えを加えます",
+        "鉄骨造は、部材だけでなく接合部も重要です",
+        "鉄筋コンクリートは、材料の得意な力を組み合わせます",
+        "ひび割れは、原因と影響を分けて見ます",
+        "基礎は、建物の力を地盤へ伝えます",
+        "面積の測定基準をそろえて単価を比較します",
+        "面積の測り方と、性能の表示を区別します",
+        "建物は、力が地盤へ伝わる経路を読む",
+        "基本例　木造の接合と配置を確認する",
+        "標準例　鉄骨の細長さと火熱を分ける",
+        "鉄筋コンクリートは、部材のどちらに力が働くかを見る",
+        "応用例　かぶりの測る位置を変えない",
+        "面積と性能表示を、同じ「広さ」「安全」の一語にまとめない",
+        "自分で解く　建物と地盤の説明をつなげる",
+        "この章のまとめ"
+      ],
+      "visuals": [
+        "tk-structure-force-path",
+        "tk-structure-rc-beam"
+      ],
+      "guidedAnchors": [
+        "guided-tk-structure"
+      ],
+      "guidedExpected": [
+        "45"
+      ],
+      "scoredQuestions": [
+        "tk-structure-q-01",
+        "tk-structure-q-02",
+        "tk-structure-q-03",
+        "tk-structure-q-04",
+        "tk-structure-deep-1",
+        "tk-structure-deep-2",
+        "tk-structure-deep-3",
+        "tk-structure-deep-4"
+      ],
+      "oldAnchorsPreserved": true,
+      "beginnerAndJapaneseReview": "First-use meanings, cause-to-effect links, conditions and subjects reviewed by original author; peer legal and numerical findings recorded separately. No external expert supervision."
+    }
+  ],
+  "limitations": [
+    "Seven statutory fields do not constitute an enumerated official subcompetency syllabus. The course skill inventory is editorial and mapped to primary rules and recent official questions.",
+    "Regional ordinances, all case-law developments, every Article34 development exception, every permitted-use combination and every form field have not been independently assessed.",
+    "Mocks use original tasks and verified format. Human difficulty calibration and external expert supervision have not been performed."
+  ]
+}

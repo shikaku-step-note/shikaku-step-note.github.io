@@ -1,0 +1,816 @@
+{
+  "reviewed": "2026-11-21",
+  "lawCutoff": "2026-04-01",
+  "beforeLessons": 10,
+  "afterLessons": 14,
+  "sources": [
+    {
+      "title": "e-Gov 宅地建物取引業法",
+      "url": "https://laws.e-gov.go.jp/law/327AC1000000176",
+      "retrievedVia": "official lawdata XML API; MainProvision only",
+      "applies": "2026-04-01 reference; article conditions compared with MLIT applicable interpretation",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "国土交通省 宅建業法解釈・運用の考え方",
+      "url": "https://www.mlit.go.jp/totikensangyo/const/content/001881261.pdf",
+      "applies": "explicitly effective2026-04-01; sections31条の3,35条,37条の2,41条,46条",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "国土交通省 重要事項説明の様式例",
+      "url": "https://www.mlit.go.jp/totikensangyo/const/content/001895540.pdf",
+      "applies": "2026-04-01 onward",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "国土交通省 報酬告示",
+      "url": "https://www.mlit.go.jp/totikensangyo/const/content/001750229.pdf",
+      "applies": "2024-07-01 amendment still linked as current; paragraphsII–XI",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "RETIO 令和7年度問題と正解番号",
+      "url": "https://www.retio.or.jp/wp-content/uploads/2025/12/R7_question_answer.pdf",
+      "applies": "demand analysis only, especiallyQ26–45; currentlaw verifiedseparately; questions not reproduced",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "国土交通省 新築住宅Q&A",
+      "url": "https://www.mlit.go.jp/jutakukentiku/jutaku-kentiku.files/kashitanpocorner/rikouhou/qanda2.html",
+      "applies": "contract timing, statutorynewness, coveredparts",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "国土交通省 基準日届出様式案内",
+      "url": "https://www.mlit.go.jp/jutakukentiku/jutaku-kentiku.files/kashitanpocorner/jigyousya/obligation_download.html",
+      "applies": "zero-unitreport andpreceding10years",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "東京都2026年3月31日基準日案内",
+      "url": "https://www.juutakuseisaku.metro.tokyo.lg.jp/documents/d/juutakuseisaku/kashitanpo_20260305-pdf",
+      "applies": "annualMarch31,threeweeks,50days,newhomecontracttiming",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "e-Gov 宅地建物取引業法施行規則",
+      "url": "https://laws.e-gov.go.jp/law/332M50004000012",
+      "retrievedVia": "officiallawdataXML API",
+      "applies": "15条の5の2,17条の2,18・19条:場所、保存期間・起算点、事前届出;3条更新90–30日前",
+      "verified": "2026-11-21"
+    },
+    {
+      "title": "e-Gov 刑法27条",
+      "url": "https://laws.e-gov.go.jp/law/140AC0000000045",
+      "verified": "2026-11-21",
+      "applies": "刑の全部の執行猶予の満了の基本例;宅建業法5条との区別"
+    }
+  ],
+  "metadataCorrections": [
+    {
+      "id": "tk-disclosure",
+      "glossaryTerm": "35条書面",
+      "definition": "法定の重要事項を記載し、宅建士が記名する書面"
+    },
+    {
+      "id": "tk-cooling",
+      "glossaryTerm": "申込みの撤回",
+      "definition": "既に行った買受けの申込みを法定の条件で取りやめること"
+    }
+  ],
+  "factualCorrections": [
+    {
+      "id": "tk-guarantee",
+      "change": "new association branch additionalcontribution paid within2weeks afterestablishment; distinguish own-deposit beforebusiness",
+      "source": "law64条の9(2),25(5),26"
+    },
+    {
+      "id": "tk-conduct",
+      "change": "newness judged at salecontract, deliverymayfollowafter1year",
+      "source": "MLITQ&A2-5"
+    },
+    {
+      "id": "tk-guarantee",
+      "change": "After explicit Article64-7(3) check, clarify member contribution is monetary while association deposit may use qualifying securities; independent final review caught overly restrictive draft wording.",
+      "source": "law64条の7第3項準用25条第3項"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "tk-license",
+      "retainedBodyCharacters": 2656,
+      "afterBodyCharacters": 8971,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-license-renewal",
+        "tk-license-disqualification-conditions",
+        "tk-license-transaction-map",
+        "tk-license-role-grid",
+        "tk-license-role-grid-caption",
+        "tk-license-notification-grid",
+        "tk-license-notification-grid-caption",
+        "guided-tk-license",
+        "guided-tk-license-title",
+        "guided-tk-license-prompt",
+        "guided-tk-license-input"
+      ],
+      "objectives": [
+        "宅建業に当たる取引を選ぶ",
+        "知事免許と大臣免許を判断する",
+        "免許の効力と更新を確認する"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-license",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-license-business-202611-01",
+        "tk-license-business-202611-02",
+        "tk-license-business-202611-03",
+        "tk-license-business-202611-04",
+        "tk-license-business-202611-05",
+        "tk-license-business-202611-06"
+      ]
+    },
+    {
+      "id": "tk-practitioner",
+      "retainedBodyCharacters": 2723,
+      "afterBodyCharacters": 6623,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-practitioner-registration-route",
+        "tk-practitioner-change-map",
+        "tk-practitioner-change-map-caption",
+        "tk-practitioner-proof-handling",
+        "tk-practitioner-proof-handling-caption",
+        "guided-tk-practitioner",
+        "guided-tk-practitioner-title",
+        "guided-tk-practitioner-prompt",
+        "guided-tk-practitioner-input"
+      ],
+      "objectives": [
+        "試験合格と登録と証の交付を分ける",
+        "専任宅建士の人数を求める",
+        "届出の対象を確認する"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-practitioner",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-practitioner-business-202611-01",
+        "tk-practitioner-business-202611-02",
+        "tk-practitioner-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-office",
+      "retainedBodyCharacters": 2699,
+      "afterBodyCharacters": 6383,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-office-duty-comparison",
+        "tk-office-location-matrix",
+        "tk-office-location-matrix-caption",
+        "tk-office-retention-axis",
+        "tk-office-retention-axis-caption",
+        "guided-tk-office",
+        "guided-tk-office-title",
+        "guided-tk-office-prompt",
+        "guided-tk-office-input"
+      ],
+      "objectives": [
+        "事務所と案内所の義務を分ける",
+        "従業者証明書と名簿を区別する",
+        "帳簿・標識の目的を説明する"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-office",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-office-business-202611-01",
+        "tk-office-business-202611-02",
+        "tk-office-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-guarantee",
+      "retainedBodyCharacters": 2684,
+      "afterBodyCharacters": 7654,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-guarantee-money-route",
+        "tk-guarantee-routes",
+        "tk-guarantee-routes-caption",
+        "tk-guarantee-deadlines",
+        "tk-guarantee-deadlines-caption",
+        "tk-guarantee-association-cycle",
+        "guided-tk-guarantee",
+        "guided-tk-guarantee-title",
+        "guided-tk-guarantee-prompt",
+        "guided-tk-guarantee-input"
+      ],
+      "objectives": [
+        "二つの制度を比較する",
+        "本店と支店の必要額を計算する",
+        "還付後の補充を説明する"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-guarantee",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-guarantee-business-202611-01",
+        "tk-guarantee-business-202611-02",
+        "tk-guarantee-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-brokerage",
+      "retainedBodyCharacters": 2622,
+      "afterBodyCharacters": 6851,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-brokerage-contract-record",
+        "tk-brokerage-two-contracts",
+        "tk-brokerage-two-contracts-caption",
+        "tk-brokerage-time-grid",
+        "tk-brokerage-time-grid-caption",
+        "guided-tk-brokerage",
+        "guided-tk-brokerage-title",
+        "guided-tk-brokerage-prompt",
+        "guided-tk-brokerage-input"
+      ],
+      "objectives": [
+        "三つの媒介契約を比較する",
+        "登録と報告の期間を数える",
+        "売主への説明と書面を確かめる"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-brokerage",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-brokerage-business-202611-01",
+        "tk-brokerage-business-202611-02",
+        "tk-brokerage-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-disclosure",
+      "retainedBodyCharacters": 2663,
+      "afterBodyCharacters": 7982,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-disclosure-information-groups",
+        "tk-disclosure-purpose-map",
+        "tk-disclosure-purpose-map-caption",
+        "tk-disclosure-contract-axis",
+        "tk-disclosure-vs-contract-items",
+        "tk-disclosure-vs-contract-items-caption",
+        "guided-tk-disclosure",
+        "guided-tk-disclosure-title",
+        "guided-tk-disclosure-prompt",
+        "guided-tk-disclosure-input"
+      ],
+      "objectives": [
+        "契約前に説明する理由を述べる",
+        "説明者・相手方・記名を区別する",
+        "取引類型別の項目を確かめる"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 3,
+      "guidedActivity": {
+        "anchor": "guided-tk-disclosure",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-disclosure-business-202611-01",
+        "tk-disclosure-business-202611-02",
+        "tk-disclosure-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-document",
+      "retainedBodyCharacters": 2655,
+      "afterBodyCharacters": 6737,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-document-contract-sequence",
+        "tk-document-party-flow",
+        "tk-document-party-flow-caption",
+        "tk-document-cash-timeline",
+        "tk-document-cash-timeline-caption",
+        "guided-tk-document",
+        "guided-tk-document-title",
+        "guided-tk-document-prompt",
+        "guided-tk-document-input"
+      ],
+      "objectives": [
+        "35条書面と37条書面を比較する",
+        "交付相手と時期を判断する",
+        "必須事項と定めがある事項を分ける"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-document",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-document-business-202611-01",
+        "tk-document-business-202611-02",
+        "tk-document-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-protection",
+      "retainedBodyCharacters": 2775,
+      "afterBodyCharacters": 7449,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-protection-eight-rules",
+        "tk-protection-eight-map",
+        "tk-protection-eight-map-caption",
+        "tk-protection-money-ledger",
+        "tk-protection-money-ledger-caption",
+        "guided-tk-protection",
+        "guided-tk-protection-title",
+        "guided-tk-protection-prompt",
+        "guided-tk-protection-input"
+      ],
+      "objectives": [
+        "適用される当事者関係を見分ける",
+        "手付解除と損害賠償上限を計算する",
+        "保全措置の金額を判断する"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-protection",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-protection-business-202611-01",
+        "tk-protection-business-202611-02",
+        "tk-protection-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-reward",
+      "retainedBodyCharacters": 2723,
+      "afterBodyCharacters": 7106,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-reward-bracket-reasoning",
+        "tk-reward-rate-trace",
+        "tk-reward-rate-trace-caption",
+        "tk-reward-cap-check",
+        "tk-reward-cap-check-caption",
+        "guided-tk-reward",
+        "guided-tk-reward-title",
+        "guided-tk-reward-prompt",
+        "guided-tk-reward-input"
+      ],
+      "objectives": [
+        "通常の売買媒介の上限を計算する",
+        "賃貸の報酬と承諾を区別する",
+        "特例の説明と合意を確かめる"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-reward",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-reward-business-202611-01",
+        "tk-reward-business-202611-02",
+        "tk-reward-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-conduct",
+      "retainedBodyCharacters": 2651,
+      "afterBodyCharacters": 7252,
+      "beforeAnchors": [],
+      "newAnchors": [
+        "tk-conduct-bait-advertising",
+        "tk-conduct-permission-stage",
+        "tk-conduct-stage-grid",
+        "tk-conduct-stage-grid-caption",
+        "tk-conduct-supervision-grid",
+        "tk-conduct-supervision-grid-caption",
+        "guided-tk-conduct",
+        "guided-tk-conduct-title",
+        "guided-tk-conduct-prompt",
+        "guided-tk-conduct-input"
+      ],
+      "objectives": [
+        "広告開始と契約締結の時期を区別する",
+        "禁止される勧誘を判断する",
+        "新築住宅の資力確保を説明する"
+      ],
+      "decision": "deepen in place; retain prior explanations and cases",
+      "japaneseReview": "definition before first substantive use; subject/time/condition connections; worked reasoning and neighboring paragraphs reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-conduct",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-conduct-business-202611-01",
+        "tk-conduct-business-202611-02",
+        "tk-conduct-business-202611-03"
+      ]
+    },
+    {
+      "id": "tk-cooling",
+      "decision": "add distinct application step",
+      "insertAfter": "tk-protection",
+      "objectives": [
+        "申込みと契約の場所から適用対象を判断する",
+        "法定告知と8日間、引渡し・全額支払の条件を判断する",
+        "撤回の方法・効力と手付解除の違いを説明する"
+      ],
+      "afterBodyCharacters": 6397,
+      "newAnchors": [
+        "tk-cooling-decision-procedure",
+        "tk-cooling-place-matrix",
+        "tk-cooling-place-matrix-caption",
+        "tk-cooling-stage-drawing",
+        "tk-cooling-notice-timeline",
+        "tk-cooling-calendar",
+        "tk-cooling-calendar-caption",
+        "tk-cooling-worked-cases",
+        "guided-tk-cooling",
+        "guided-tk-cooling-title",
+        "guided-tk-cooling-prompt",
+        "guided-tk-cooling-input"
+      ],
+      "japaneseReview": "definition to mechanism to procedure, complete cases, changed conditions and fresh independent task reviewed",
+      "figures": 3,
+      "guidedActivity": {
+        "anchor": "guided-tk-cooling",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-cooling-business-202611-01",
+        "tk-cooling-business-202611-02",
+        "tk-cooling-business-202611-03",
+        "tk-cooling-business-202611-04",
+        "tk-cooling-business-202611-05",
+        "tk-cooling-business-202611-06",
+        "tk-cooling-business-202611-07"
+      ]
+    },
+    {
+      "id": "tk-advance-payments",
+      "decision": "add distinct application step",
+      "insertAfter": "tk-cooling",
+      "objectives": [
+        "契約時の完成状態と保全対象の金銭を区別する",
+        "累計額・割合・1,000万円の条件を独立に計算する",
+        "保証・保険・保管の違いと支払拒絶を説明する"
+      ],
+      "afterBodyCharacters": 6195,
+      "newAnchors": [
+        "tk-advance-contract-status",
+        "tk-advance-threshold-grid",
+        "tk-advance-threshold-grid-caption",
+        "tk-advance-running-bars",
+        "tk-advance-worked-cases",
+        "tk-advance-running-ledger",
+        "tk-advance-running-ledger-caption",
+        "guided-tk-advance",
+        "guided-tk-advance-title",
+        "guided-tk-advance-prompt",
+        "guided-tk-advance-input"
+      ],
+      "japaneseReview": "definition to mechanism to procedure, complete cases, changed conditions and fresh independent task reviewed",
+      "figures": 3,
+      "guidedActivity": {
+        "anchor": "guided-tk-advance",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-advance-payments-business-202611-01",
+        "tk-advance-payments-business-202611-02",
+        "tk-advance-payments-business-202611-03",
+        "tk-advance-payments-business-202611-04",
+        "tk-advance-payments-business-202611-05",
+        "tk-advance-payments-business-202611-06",
+        "tk-advance-payments-business-202611-07"
+      ]
+    },
+    {
+      "id": "tk-reward-cases",
+      "decision": "add distinct application step",
+      "insertAfter": "tk-reward",
+      "objectives": [
+        "代理・交換・権利金に応じて計算の基礎と上限を選ぶ",
+        "低廉な空家等と長期の空家等の特例を区別する",
+        "片側上限・双方合計・承諾と合意を併せて点検する"
+      ],
+      "afterBodyCharacters": 5624,
+      "newAnchors": [
+        "tk-reward-cases-method-choice",
+        "tk-reward-cases-method-map",
+        "tk-reward-cases-method-map-caption",
+        "tk-reward-cases-low-price",
+        "tk-reward-cases-vacant-rental",
+        "tk-reward-cases-vacant-cap",
+        "tk-reward-cases-vacant-cap-caption",
+        "guided-tk-reward-cases",
+        "guided-tk-reward-cases-title",
+        "guided-tk-reward-cases-prompt",
+        "guided-tk-reward-cases-input"
+      ],
+      "japaneseReview": "definition to mechanism to procedure, complete cases, changed conditions and fresh independent task reviewed",
+      "figures": 2,
+      "guidedActivity": {
+        "anchor": "guided-tk-reward-cases",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-reward-cases-business-202611-01",
+        "tk-reward-cases-business-202611-02",
+        "tk-reward-cases-business-202611-03",
+        "tk-reward-cases-business-202611-04",
+        "tk-reward-cases-business-202611-05",
+        "tk-reward-cases-business-202611-06",
+        "tk-reward-cases-business-202611-07"
+      ]
+    },
+    {
+      "id": "tk-housing-warranty",
+      "decision": "add distinct application step",
+      "insertAfter": "tk-conduct",
+      "objectives": [
+        "新築住宅と10年責任の対象部分・起算点を判断する",
+        "住宅瑕疵担保履行法の対象者と供託・保険を説明する",
+        "基準日の届出、引渡実績ゼロ、他の保証制度との違いを判断する"
+      ],
+      "afterBodyCharacters": 6912,
+      "newAnchors": [
+        "tk-housing-warranty-target",
+        "tk-housing-warranty-newness",
+        "tk-housing-warranty-newness-caption",
+        "tk-housing-warranty-house-parts",
+        "tk-housing-warranty-security",
+        "tk-housing-warranty-three-securities",
+        "tk-housing-warranty-three-securities-caption",
+        "tk-housing-warranty-report",
+        "guided-tk-housing-warranty",
+        "guided-tk-housing-warranty-title",
+        "guided-tk-housing-warranty-prompt",
+        "guided-tk-housing-warranty-input"
+      ],
+      "japaneseReview": "definition to mechanism to procedure, complete cases, changed conditions and fresh independent task reviewed",
+      "figures": 3,
+      "guidedActivity": {
+        "anchor": "guided-tk-housing-warranty",
+        "feedback": "numeric expected answer, hint on wrong input, static full reasoning in details",
+        "persistence": "inline formative practice, separate from saved lesson assessment"
+      },
+      "illustrativeTermsIndividuallyTested": false,
+      "retainedLearningSteps": "Original concepts and examples remain. New applied chapters each require a separate decision procedure and fresh task.",
+      "questionIds": [
+        "tk-housing-warranty-business-202611-01",
+        "tk-housing-warranty-business-202611-02",
+        "tk-housing-warranty-business-202611-03",
+        "tk-housing-warranty-business-202611-04",
+        "tk-housing-warranty-business-202611-05",
+        "tk-housing-warranty-business-202611-06",
+        "tk-housing-warranty-business-202611-07"
+      ]
+    }
+  ],
+  "independentArithmeticWitnesses": [
+    {
+      "anchor": "guided-tk-license",
+      "recomputed": 2,
+      "authoredExpected": 2.0,
+      "method": "distinct prefectures Tokyo and Chiba",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-practitioner",
+      "recomputed": 6,
+      "authoredExpected": 6.0,
+      "method": "ceil17/5 + ceil6/5",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-office",
+      "recomputed": 10,
+      "authoredExpected": 10.0,
+      "method": "statutory pre-opening deadline; law50(2) and implementingrule",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-guarantee",
+      "recomputed": 280.0,
+      "authoredExpected": 280.0,
+      "method": "requireddeposit minus separately valued securities,万円",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-brokerage",
+      "recomputed": 2,
+      "authoredExpected": 2.0,
+      "method": "dedicated vs exclusivelydedicated registration period difference",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-disclosure",
+      "recomputed": 2,
+      "authoredExpected": 2.0,
+      "method": "required document delivery + practitioner name; explanation waived forprofessionalbuyer",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-document",
+      "recomputed": 4000,
+      "authoredExpected": 4000.0,
+      "method": "saleprice minus allpaidadvances,万円",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-protection",
+      "recomputed": 80.0,
+      "authoredExpected": 80.0,
+      "method": "combined penalties minus20%price,万円",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-reward",
+      "recomputed": 660000.0,
+      "authoredExpected": 660000.0,
+      "method": "ordinary one-side taxed commission,JPY",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-conduct",
+      "recomputed": 12,
+      "authoredExpected": 12.0,
+      "method": "statutory1year maximum expressed inmonths",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-cooling",
+      "recomputed": 17,
+      "authoredExpected": 17.0,
+      "method": "notice date is day1; add7calendardays",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-advance",
+      "recomputed": 120.0,
+      "authoredExpected": 120.0,
+      "method": "5%ceiling minus cumulative priorpayment,万円",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-reward-cases",
+      "recomputed": 1380000.0,
+      "authoredExpected": 1380000.0,
+      "method": "two-timesordinary cap minus counterparty receipt,JPY",
+      "result": "match"
+    },
+    {
+      "anchor": "guided-tk-housing-warranty",
+      "recomputed": 21,
+      "authoredExpected": 21.0,
+      "method": "3weeks =21days; official2026April1–21 period",
+      "result": "match"
+    }
+  ],
+  "reviewedOriginalChecks": 40,
+  "mockReviews": {
+    "existingFormAField7": 20,
+    "proposedARewrites": 6,
+    "newFormBField7": 20,
+    "notes": "B41 require tax-exclusive base; B43 specify existinghome; other field7 keys support legal conditions"
+  },
+  "remainingLimits": [
+    "The chapter set does not independently assess every statutory proviso, every implementing-form field, every penalty amount or every judgment.",
+    "No external professional supervision or empirical candidate-difficulty calibration.",
+    "Local ordinance/admin forms and real transactions require competent authority guidance."
+  ],
+  "firstUseAuditRepairs": {
+    "tk-guarantee": [
+      "債権",
+      "供託",
+      "供託所",
+      "社員",
+      "認証",
+      "還付",
+      "還付充当金"
+    ],
+    "tk-advance-payments": [
+      "連帯保証",
+      "寄託",
+      "質権",
+      "担保"
+    ],
+    "tk-protection": [
+      "停止条件"
+    ],
+    "tk-document": [
+      "租税公課"
+    ],
+    "tk-housing-warranty": [
+      "瑕疵",
+      "資力確保"
+    ]
+  },
+  "depthReviewAdditions": [
+    "tk-license: full major law5categories, entity-role andhearingperiod logic, law76existingtransactioncompletion, law77–78exceptions",
+    "tk-guarantee: member/associationtimeline, pre-membershipclaims, reserve andspecialcontribution"
+  ],
+  "checks": {
+    "duplicateIDs": 0,
+    "figures": 32,
+    "guidedActivities": 14,
+    "newQuestions": 61,
+    "independentUnitReview": 10,
+    "newLessons": 4,
+    "retainedLessonsDeepened": 10,
+    "allExistingObjectivesRetained": true
+  },
+  "curriculumDecision": "Unit3 retained10 substantive corechapters andadded4independent applicationsteps. Prior text preserved, weakfirst-useconnections repaired, premature reviewparagraphs moved to actualchapterend. Original lecture-only format augmentedwith diagrams,sourcecomparisons,3workedcases,guidedinput andfreshtask.",
+  "finalValidation": {
+    "date": "2026-11-21",
+    "lessons": 14,
+    "newOutlineRows": 4,
+    "uniqueNewScoredQuestions": 61,
+    "duplicateHtmlIDs": 0,
+    "objectiveGlossaryConsistency": "passed",
+    "semanticTablesAndStaticPractice": "passed",
+    "independentGuideWitnesses": 14,
+    "bodyCharacters": 98136,
+    "newTables": 28,
+    "newSvgDiagrams": 4
+  }
+}

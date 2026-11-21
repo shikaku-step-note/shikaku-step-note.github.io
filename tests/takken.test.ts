@@ -20,8 +20,10 @@ const course = lessons.filter((l) => l.data.qualification === 'takken');
 const assessments = takkenAssessments(lessons);
 const general = assessments.find((a) => a.id === 'takken-mock-general')!;
 const exempt = assessments.find((a) => a.id === 'takken-mock-exempt')!;
-test('34 substantive lessons cover the seven official domains, with stable identifiers and honest subtopic notes', () => {
-  assert.equal(course.length, 34);
+test('the expanded textbook preserves original lessons and covers the seven official domains', () => {
+  assert.equal(course.length, 58);
+  assert.equal(takkenOutline.length, course.length);
+  assert.deepEqual(takkenOutline.map((r) => r.order), Array.from({ length: course.length }, (_, i) => i + 1));
   assert.deepEqual([...new Set(takkenOutline.map((r) => r.domain))].sort(), [1, 2, 3, 4, 5, 6, 7]);
   assert.deepEqual([...new Set(takkenOutline.map((r) => r.unit))].sort(), [1, 2, 3, 4, 5, 6, 7, 8]);
   assert.equal(new Set(lessons.map((l) => l.data.stableId)).size, lessons.length);
@@ -40,16 +42,25 @@ test('34 substantive lessons cover the seven official domains, with stable ident
     assert.deepEqual(l.data.glossary, r.glossary, `${r.id}: glossary source consistency`);
     assert.deepEqual(l.data.objectives, r.objectives, `${r.id}: objective source consistency`);
     assert.equal(l.data.objectives.length, 3);
+    assert.ok((l.body.match(/<figure\b/g) ?? []).length >= 2, `${r.id}: teaching visuals`);
+    assert.ok(l.body.includes('data-guided-practice'), `${r.id}: guided practice`);
+    assert.ok(l.body.includes('data-guided-solution'), `${r.id}: static solution`);
+    assert.ok(l.data.inlineGlossary?.length, `${r.id}: same-page terminology`);
+    for (const term of l.data.inlineGlossary) {
+      assert.ok(l.data.glossary.some((g: { term: string }) => g.term === term.term), `${r.id}: definition`);
+      assert.ok(l.body.includes(`href="#lesson-term-${term.id}"`), `${r.id}: term anchor`);
+    }
     assert.ok(takkenCoverageNotes[r.id]?.length, r.id);
     assert.ok(
       r.sources.every((id) => takkenSources.some((s) => s.id === id)),
       r.id,
     );
   }
-  assert.ok(takkenSources.every((s) => s.verified === '2026-10-25' && /^https:\/\//.test(s.url)));
+  assert.ok(takkenSources.every((s) => /^2026-\d{2}-\d{2}$/.test(s.verified) && /^https:\/\//.test(s.url)));
+  assert.equal(takkenSources.find((s) => s.id === 'housing')?.title, 'e-Gov：住宅の品質確保の促進等に関する法律');
 });
 test('registries remain isolated and every new choice and explanation links to its own lesson', () => {
-  assert.equal(assessments.length, 54);
+  assert.equal(assessments.length, course.length + 16 + 2 + 4);
   assert.equal(ipAssessments(lessons).filter((a) => a.kind === 'lesson').length, lessons.filter((l) => l.data.qualification === 'it-passport' && l.data.unit).length);
   assert.equal(
     bokiAssessments(lessons).filter(
@@ -66,10 +77,15 @@ test('registries remain isolated and every new choice and explanation links to i
     assert.ok(a.questions.length > 0 && a.questions.length <= 500, a.id);
     assert.equal(new Set(a.questions.map((q) => q.id)).size, a.questions.length, a.id);
     for (const q of a.questions) {
-      assert.equal(q.options.length, 4);
-      assert.equal(new Set(q.options).size, 4);
-      assert.ok(q.answer >= 0 && q.answer < 4);
-      assert.ok(q.explanation.includes(q.options[q.answer]!), q.id);
+      if (q.input === 'number') {
+        assert.ok(q.accepted?.length, q.id);
+        assert.equal(q.strictNumber, true);
+      } else {
+        assert.equal(q.options.length, 4, q.id);
+        assert.equal(new Set(q.options).size, 4, q.id);
+        assert.ok(q.answer >= 0 && q.answer < 4);
+        assert.ok(q.explanation.includes(q.options[q.answer]!), q.id);
+      }
       assert.ok(
         course.some((l) => l.data.stableId === q.lesson),
         q.id,
@@ -79,11 +95,11 @@ test('registries remain isolated and every new choice and explanation links to i
   }
   assert.equal(
     assessments.filter((a) => a.kind === 'lesson').reduce((n, a) => n + a.questions.length, 0),
-    136,
+    382,
   );
-  assert.equal(assessments.find((a) => a.id === 'takken-glossary-all')!.questions.length, 102);
+  assert.equal(assessments.find((a) => a.id === 'takken-glossary-all')!.questions.length, course.length * 3);
 });
-test('both mock formats have exact timing and distribution, original question bank and explicit sharing', () => {
+test('two independent mock forms have full general and exemption formats', () => {
   assert.equal(general.questions.length, 50);
   assert.equal(general.minutes, 120);
   assert.equal(exempt.questions.length, 45);
@@ -105,7 +121,16 @@ test('both mock formats have exact timing and distribution, original question ba
   assert.ok(general.questions.every((q) => !prompts.has(q.prompt)));
   assert.ok(exempt.instructions?.includes('共有'));
   assert.ok(general.instructions?.includes('合否判定は行いません'));
-  for (const a of [general, exempt]) {
+  const general02 = assessments.find((a) => a.id === 'takken-mock-general-02')!;
+  const exempt02 = assessments.find((a) => a.id === 'takken-mock-exempt-02')!;
+  assert.equal(general02.questions.length, 50);
+  assert.equal(general02.minutes, 120);
+  assert.equal(exempt02.questions.length, 45);
+  assert.equal(exempt02.minutes, 110);
+  assert.equal(new Set([...general.questions, ...general02.questions].map((q) => q.id)).size, 100);
+  assert.equal(new Set([...general.questions, ...general02.questions].map((q) => q.prompt)).size, 100);
+  assert.ok(exempt02.questions.every((q) => !['1', '5'].includes(q.field) && general02.questions.some((g) => g.id === q.id)));
+  for (const a of [general, exempt, general02, exempt02]) {
     const start = Date.UTC(2026, 9, 25, 8);
     const attempt = newAttempt(a, 'timed', start);
     for (const q of a.questions) attempt.answers[q.id] = q.answer;
@@ -153,7 +178,7 @@ test('new and historical records round-trip, merge, persist, and reject incompat
   assert.equal(imported.records['ip-organization']!.status, 'completed');
   assert.equal(imported.records['future-retained']!.status, 'completed');
   assert.ok(compatibleAttempt(general, attempt));
-  assert.equal(compatibleAttempt({ ...general, version: 'takken-2026-v2' }, attempt), false);
+  assert.equal(compatibleAttempt({ ...general, version: 'takken-2026-v1' }, attempt), false);
   assert.deepEqual(
     takkenAssessments(
       lessons.map((l) => ({ ...l, data: { ...l.data, title: l.data.title + '（改題）' } })),
@@ -173,6 +198,30 @@ test('new and historical records round-trip, merge, persist, and reject incompat
   invalid.assessments[general.id]![0]!.total = 501;
   assert.throws(() => validateData(invalid));
   assert.throws(() => validateData({ app: 'other', version: 4 }));
+});
+
+test('saved numeric unit practice accepts ordinary Japanese input and rejects wrong units and partial amounts', () => {
+  const review = assessments.find((a) => a.id === 'takken-unit-6-review')!;
+  const attempt = newAttempt(review, 'practice', Date.UTC(2026, 10, 21, 8));
+  attempt.answers[review.questions[0]!.id] = '７０，０００';
+  attempt.answers[review.questions[1]!.id] = '320';
+  attempt.answers[review.questions[2]!.id] = '13,000';
+  assert.equal(gradeAttempt(review, attempt).score, 3);
+  const invalid = structuredClone(attempt);
+  invalid.answers[review.questions[0]!.id] = '70000円';
+  invalid.answers[review.questions[1]!.id] = '';
+  invalid.answers[review.questions[2]!.id] = '1,30';
+  assert.equal(gradeAttempt(review, invalid).score, 0);
+  const data = emptyData();
+  data.assessments[review.id] = [attempt];
+  const restored = validateData(JSON.parse(JSON.stringify(data)));
+  assert.deepEqual(restored.assessments[review.id]![0]!.answers, attempt.answers);
+  const old = newAttempt({ ...general, version: 'takken-2026-v1' }, 'timed', Date.UTC(2026, 9, 25, 8));
+  old.answers[general.questions[0]!.id] = 1;
+  data.assessments[general.id] = [old];
+  const historical = validateData(JSON.parse(JSON.stringify(data)));
+  assert.deepEqual(historical.assessments[general.id], [old]);
+  assert.equal(compatibleAttempt(general, historical.assessments[general.id]![0]!), false);
 });
 test('independent arithmetic checks agree with each selected correct answer', () => {
   const find = (lesson: string, index: number) =>

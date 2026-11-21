@@ -59,7 +59,7 @@ export const qualifications: Qualification[] = [
     icon: 'book',
     intro: '取引の条件を読み、法律の理由をたどる。',
     description:
-      '2026年度の公式範囲を参照した34レッスン。民法・宅建業法・法令上の制限・税などを、事例と理解度チェックで学びます。一般・5問免除形式の模試にも取り組めます。',
+      '2026年度の七つの公式分野を、基礎の説明から条件の変わる応用例まで学ぶコースです。図解・入力式練習・独立した模試2回で確認し、一般と5問免除の形式を選べます。',
     audience: [
       '不動産や法律を初めて学ぶ方',
       '条文の条件を事例に当てはめたい方',
@@ -80,7 +80,7 @@ export const qualifications: Qualification[] = [
     ],
     official: 'https://www.retio.or.jp/exam/exam_detail/',
     officialName: '不動産適正取引推進機構：宅建試験の概要',
-    reviewed: '2026-10-25',
+    reviewed: '2026-11-21',
     scope:
       '2026年度・2026年4月1日施行法令を参照。公式の級分けはなく、一般と登録講習修了者の一部免除という受験方式があります。学習ユニットは当サイト独自です。主要論点を扱い、全判例・例外の網羅は保証しません。',
   },
@@ -214,7 +214,7 @@ const displayOrder = [
 qualifications.sort((a, b) => displayOrder.indexOf(a.id) - displayOrder.indexOf(b.id));
 export const qualificationById = (id: string) => qualifications.find((q) => q.id === id)!;
 export const qualificationLabel = (q: Qualification) =>
-  ['boki-beginner', 'cost-beginner', 'boki-3'].includes(q.id)
+    ['boki-beginner', 'cost-beginner', 'boki-3', 'takken'].includes(q.id)
     ? '詳しい試験学習コース'
     : q.status === 'course'
       ? '基礎コース'

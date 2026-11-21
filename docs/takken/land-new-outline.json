@@ -1,0 +1,254 @@
+[
+  {
+    "id": "tk-planning-permissions",
+    "unit": 4,
+    "domain": 3,
+    "title": "都市計画施設・地区計画と建築の許可・届出",
+    "objectives": [
+      "53条と65条を事業段階と行為から選ぶ",
+      "54条の許可基準を条件ごとに照合する",
+      "地区計画の届出と法定例外を判断する"
+    ],
+    "glossary": [
+      {
+        "term": "都市計画施設",
+        "definition": "都市計画に定められた道路や公園等の都市施設"
+      },
+      {
+        "term": "事業地",
+        "definition": "認可等を受けた都市計画事業の対象となる土地の範囲"
+      },
+      {
+        "term": "地区整備計画",
+        "definition": "地区計画で定める地区施設や建築物等に関する具体的な計画"
+      }
+    ],
+    "sources": [
+      "planning"
+    ],
+    "order": 501,
+    "insertAfter": "tk-planning"
+  },
+  {
+    "id": "tk-building-use",
+    "unit": 4,
+    "domain": 3,
+    "title": "用途制限・防火の境界と建築協定の読み方",
+    "objectives": [
+      "用途制限の建物種別と面積条件を照合する",
+      "用途・面積比率・防火で境界の扱いを分ける",
+      "既存不適格と建築協定の効力を説明する"
+    ],
+    "glossary": [
+      {
+        "term": "兼用住宅",
+        "definition": "住宅の用途と店舗等の他の用途を併せ持つ建物"
+      },
+      {
+        "term": "既存不適格",
+        "definition": "建築時は適法だった建物が法改正等で現行規定に適合しなくなった状態"
+      },
+      {
+        "term": "建築協定",
+        "definition": "土地所有者等が建築の基準を合意し法定の認可等を受ける制度"
+      }
+    ],
+    "sources": [
+      "building"
+    ],
+    "order": 502,
+    "insertAfter": "tk-building"
+  },
+  {
+    "id": "tk-fill-control",
+    "unit": 5,
+    "domain": 3,
+    "title": "盛土規制法の区域・規模・許可と工事中の手続",
+    "objectives": [
+      "区域と規模・適用除外から許可か届出かを選ぶ",
+      "着手前・工事中・完了時の義務とみなし制度を説明する",
+      "区域指定時の工事と土地保全の主語を判断する"
+    ],
+    "glossary": [
+      {
+        "term": "切土",
+        "definition": "地面を削り土地の高さや形を変える行為"
+      },
+      {
+        "term": "土石の堆積",
+        "definition": "一時的に土や石を積み重ねる法定の行為"
+      },
+      {
+        "term": "中間検査",
+        "definition": "一定規模・工程の工事について施工途中の適合性を確認する検査"
+      }
+    ],
+    "sources": [
+      "embankment",
+      "fill-order",
+      "fill-rule"
+    ],
+    "order": 503,
+    "insertAfter": "tk-readjustment"
+  },
+  {
+    "id": "tk-forest-nature",
+    "unit": 5,
+    "domain": 3,
+    "title": "森林法・自然公園法の区域と取得・伐採・開発",
+    "objectives": [
+      "森林の指定と目的・面積から林地開発許可を判断する",
+      "伐採と所有者取得の届出の時点を区別する",
+      "自然公園の区域別の許可・届出と他法令の重なりを説明する"
+    ],
+    "glossary": [
+      {
+        "term": "地域森林計画",
+        "definition": "都道府県が森林の整備・保全等の方針を定める計画"
+      },
+      {
+        "term": "保安林",
+        "definition": "水源涵養や土砂災害防止などの公益目的のために指定される森林"
+      },
+      {
+        "term": "特別地域",
+        "definition": "自然公園の風致を維持するため法に基づき指定される地域"
+      }
+    ],
+    "sources": [
+      "forest-land",
+      "forest-felling",
+      "forest-owner",
+      "natural-parks"
+    ],
+    "order": 504,
+    "insertAfter": "tk-fill-control"
+  },
+  {
+    "id": "tk-landscape-culture",
+    "unit": 5,
+    "domain": 3,
+    "title": "景観・埋蔵文化財・公有地の届出と着手時期",
+    "objectives": [
+      "景観計画区域の届出と着手制限を判断する",
+      "周知の埋蔵文化財包蔵地の掘削手続を説明する",
+      "公拡法の届出・協議を国土法の事後届出と区別する"
+    ],
+    "glossary": [
+      {
+        "term": "景観行政団体",
+        "definition": "景観法に基づく事務を処理する地方公共団体"
+      },
+      {
+        "term": "周知の埋蔵文化財包蔵地",
+        "definition": "文化財が地中に存在すると知られている土地"
+      },
+      {
+        "term": "先買い",
+        "definition": "第三者への譲渡に先立って公共団体等の買取りの機会を確保する仕組み"
+      }
+    ],
+    "sources": [
+      "landscape-law",
+      "cultural-properties",
+      "public-land"
+    ],
+    "order": 505,
+    "insertAfter": "tk-forest-nature"
+  },
+  {
+    "id": "tk-land-regulation-case",
+    "unit": 5,
+    "domain": 3,
+    "title": "法令上の制限の総合演習：取得・造成・建築をつなぐ",
+    "objectives": [
+      "取得・転用・造成・建築に関わる手続を資料から選ぶ",
+      "後退・道路制限・面積加重を組み合わせて検算する",
+      "計画の内容と着手時期・他法令の手続を同時に点検する"
+    ],
+    "glossary": [
+      {
+        "term": "適用除外",
+        "definition": "対象となる行為等でも法定条件により規定の適用から外れること"
+      },
+      {
+        "term": "有効敷地面積",
+        "definition": "道路後退等を反映し建築の面積計算へ用いる敷地の面積"
+      },
+      {
+        "term": "当てはめ",
+        "definition": "資料の事実を法令の条件と対応させ結論を導くこと"
+      }
+    ],
+    "sources": [
+      "planning",
+      "building",
+      "farmland",
+      "national",
+      "embankment"
+    ],
+    "order": 506,
+    "insertAfter": "tk-landscape-culture"
+  },
+  {
+    "id": "tk-height-control",
+    "unit": 4,
+    "domain": 3,
+    "title": "外壁後退・高さ・斜線・日影の制限を図で読む",
+    "objectives": [
+      "絶対高さと外壁後退の対象地域・指定値を判断する",
+      "道路・北側の斜線の距離と勾配を用いて上限を比較する",
+      "隣地斜線と日影規制の対象・時点・区域を区別する"
+    ],
+    "glossary": [
+      {
+        "term": "斜線制限",
+        "definition": "道路等の境界からの距離に応じて建物各部分の高さを制限する仕組み"
+      },
+      {
+        "term": "真北方向",
+        "definition": "磁石の北等とは区別して用いる地理上の北の方向"
+      },
+      {
+        "term": "真太陽時",
+        "definition": "太陽の実際の動きに基づいて表す時刻"
+      }
+    ],
+    "sources": [
+      "building"
+    ],
+    "order": 507,
+    "insertAfter": "tk-density"
+  },
+  {
+    "id": "tk-area-exclusions",
+    "unit": 4,
+    "domain": 3,
+    "title": "容積率の算入除外：車庫・地階・共用部分を計算する",
+    "objectives": [
+      "床面積と容積率へ算入する面積を区別する",
+      "車庫・地階等の用途条件と上限を照合する",
+      "重複しない複数部分の除外を集計して検算する"
+    ],
+    "glossary": [
+      {
+        "term": "算入除外",
+        "definition": "特定の面積計算で法定の対象部分を数えない扱い"
+      },
+      {
+        "term": "昇降路",
+        "definition": "昇降機のかご等を上下に移動させるための空間"
+      },
+      {
+        "term": "防災備蓄倉庫",
+        "definition": "専ら防災のための物資を備蓄する倉庫の法定の部分"
+      }
+    ],
+    "sources": [
+      "building",
+      "structure"
+    ],
+    "order": 508,
+    "insertAfter": "tk-height-control"
+  }
+]

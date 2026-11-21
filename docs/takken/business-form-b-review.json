@@ -1,0 +1,53 @@
+{
+  "reviewed": "2026-11-21",
+  "scope": "FormB field7 only",
+  "count": 20,
+  "lawCutoff": "2026-04-01",
+  "legalKeyErrorsFound": [],
+  "changesRequested": [
+    {
+      "id": "tk-mock-b-41",
+      "finding": "explicit tax-exclusive saleprice needed to fix commissionbase ambiguity"
+    },
+    {
+      "id": "tk-mock-b-43",
+      "finding": "specify existinghome forclear contrast with specialnew-homewarranty"
+    }
+  ],
+  "checks": [
+    "16/5 ceiling =4",
+    "1000+500*2=2000万円",
+    "association branch2weeksafter establishment",
+    "専属専任5daysregistration/weeklyreport",
+    "35professionalbuyer retains document/practitionername",
+    "Oct6day1→Oct13day8, written dispatch",
+    "200+200=400万円 exceeds6000*5%=300万円",
+    "2000万円 ordinaryone-side72.6万円 with tax-exclusivebase",
+    "12万円×0.55=6.6万円 residentialborrower",
+    "1yearadverse nonconformitynotice clause restricted bylaw40",
+    "newhomeresponsibility andfinancialsecurity differ"
+  ],
+  "questionHashes": {
+    "tk-mock-b-26": "2ef7a3b74c32bc14c14f3bdb98c6bd66f55224f703cbaf2b448966af5f28cc7c",
+    "tk-mock-b-27": "3a987f211f277f99d2668eb913139febbc43b835da8665c15de970afa5e39264",
+    "tk-mock-b-28": "107c4f41da0eb8509e8c613f83ccf9df5bbc36eb11ed7b69e4c4cf5d441e0574",
+    "tk-mock-b-29": "d84749d27df54d9061f231cf0ec95abdd69d6eca846a3004b3fe257ecb321121",
+    "tk-mock-b-30": "84c289ca251d896dc335e115245707b009f8e82e0263a2f614014146312c942a",
+    "tk-mock-b-31": "053872b7a7e6c3edf7b7f1e348b10d0e73e4c9d6539a5fc7b0a30fe30c79524e",
+    "tk-mock-b-32": "7c40d8d6eefc5392bb97af38c4fc81bb0262ee6bee8d1a82ae4822c827f968cb",
+    "tk-mock-b-33": "c14bf4d579679d3901816383b0bfe06381a7f4801f553b4a7e55652503db97dd",
+    "tk-mock-b-34": "7db14c8bdcfdd88a5dcb5c594b6d1d3305f5903b2c6bde4c0548af0614f12606",
+    "tk-mock-b-35": "299be4ff8b244b0503f6299c1a6110a77e852fb29ad824f257a1a05d23b29b30",
+    "tk-mock-b-36": "d61a54c42d275238d4200ae778e2992f78373beb543b4da0a7c0874cae801ed8",
+    "tk-mock-b-37": "0ce5b1e2de45814dbea8eac4de8e9f122da2c5d763f7dede2e699de96ec5ea2e",
+    "tk-mock-b-38": "2f11a59fe89297ce7570e765d2e58d36c60d9ac23fc87e83f6c4215d07fe77da",
+    "tk-mock-b-39": "3f6c63a8261eda070575da001539e93908ff5b68cd3038399352c3c45c786312",
+    "tk-mock-b-40": "77307271b76cd71b0c07ba2e94cba38132b80d43f423b837d6d2b8f4b573ccec",
+    "tk-mock-b-41": "d83f18951f9576b39e351bb6b786c8176a2e924722114ac15bc5224605168b50",
+    "tk-mock-b-42": "b71ddd1e7485e4116ca5e95d917f0e990d3209ff4d4ae67ef895fde184b6a808",
+    "tk-mock-b-43": "4c5f45cc8b704726ee9a18ff02c6a1711d6a30aa34d497eb4fcb9fa661f8c60b",
+    "tk-mock-b-44": "aa23e86a70aeedf82baeeeafe9195918aa1a488e4280e1d47aa62a0c1d607283",
+    "tk-mock-b-45": "d72ab3298f273ac8f496fb1ae18d0eefa9d31cadbea4bb98e58c4ffe81a57ae3"
+  },
+  "limitation": "Independent AI review; no outsideprofessionalreview or empiricdifficulty calibration."
+}

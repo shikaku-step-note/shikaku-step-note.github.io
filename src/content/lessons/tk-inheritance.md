@@ -4,11 +4,11 @@
   "qualification": "takken",
   "title": "相続・遺言・遺留分と登記",
   "description": "法定相続分を計算するために、制度の条件と独自の事例を解説します。承認・放棄の期限を確認する練習と、解説付きの理解度チェックに取り組めます。",
-  "order": 10,
-  "minutes": 35,
+  "order": 16,
+  "minutes": 120,
   "sample": false,
   "archived": false,
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "unit": 2,
   "syllabus": [
     2
@@ -39,15 +39,47 @@
     "代襲相続",
     "遺留分",
     "相続放棄"
+  ],
+  "inlineGlossary": [
+    {
+      "id": "tk-f97f6a35e4",
+      "term": "代襲相続"
+    },
+    {
+      "id": "tk-c5a54340be",
+      "term": "相続放棄"
+    },
+    {
+      "id": "tk-6924c494b0",
+      "term": "遺留分"
+    }
   ]
 }
 ---
 
 ## 相続人と相続分を別々に決めます
 
-相続は死亡によって開始します。最初に、誰が相続人となるかを確かめ、その後で割合を計算します。配偶者は常に相続人となり、配偶者以外の血族相続人は、子、直系尊属、兄弟姉妹の順で判断します。子と親と兄弟姉妹が、常に同時に同じ順位で相続するわけではありません。
+相続は、人が亡くなったときに、その人の財産に属する権利や義務を一定の人が承継する制度です。亡くなった人を被相続人、承継する人を相続人と呼びます。土地や預金だけでなく、原則として借金も対象になるため、まず相続人を確定し、その後で法定相続分、承認・放棄、遺言による修正を順に考えます。
 
 ここでいう配偶者には、婚姻の届出をした法律上の配偶者を想定します。内縁関係の人を、当然に法定相続人へ加えることはできません。遺言、特別縁故者など別の制度による扱いは、法定相続の問題と分けて確認します。
+
+<span id="tk-inheritance-family"></span>
+
+## 親族図から、先順位の人がいるかを確認する
+
+直系尊属は父母、祖父母など自分より上の世代へ直接つながる親族、直系卑属は子、孫など下の世代へ直接つながる親族です。兄弟姉妹は同じ親から分かれるため、直系の親族とは区別します。相続では、子などの第一順位がいれば、原則として父母や兄弟姉妹は同時に相続人となりません。
+
+子が先に死亡している場合等には、その子である孫が、先に死亡した子の立場を引き継ぐ<a class="lesson-term" data-lesson-term href="#lesson-term-tk-f97f6a35e4">代襲相続</a>が問題になります。相続欠格や廃除も代襲の原因となりますが、<a class="lesson-term" data-lesson-term href="#lesson-term-tk-c5a54340be">相続放棄</a>は同じに扱いません。放棄した子の下へ当然に孫を代わりに入れると、相続人を決める最初の段階で誤ります。
+
+<figure id="tk-inheritance-order"><svg viewBox="0 0 320 208" width="320" height="208" role="img" aria-label="配偶者以外の血族相続人を探す順序" style="max-width:100%;height:auto"><rect x="12" y="5" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="24" text-anchor="middle" fill="currentColor" font-size="12">子・代襲する直系卑属</text><text x="160" y="42" text-anchor="middle" fill="currentColor" font-size="12">第一順位がいればここで確定</text><path d="M160 52v15m-5-5 5 5 5-5" fill="none" stroke="currentColor"/><rect x="12" y="72" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="91" text-anchor="middle" fill="currentColor" font-size="12">直系尊属</text><text x="160" y="109" text-anchor="middle" fill="currentColor" font-size="12">上の順位がいないとき、近い世代から</text><path d="M160 119v15m-5-5 5 5 5-5" fill="none" stroke="currentColor"/><rect x="12" y="139" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="158" text-anchor="middle" fill="currentColor" font-size="12">兄弟姉妹・その代襲者</text><text x="160" y="176" text-anchor="middle" fill="currentColor" font-size="12">上の順位がいないとき</text></svg><figcaption>配偶者以外の血族相続人を探す順序。法律上の配偶者は各順位とともに相続人となります。放棄の効果を反映してから次の順位を検討します。</figcaption></figure>
+
+### 基本例　子が先に死亡していた場合
+
+被相続人の配偶者をA、子をB・Cとし、Cは相続開始前に亡くなり、Cの子D・Eがいるとします。他に事情はありません。Aは2分の1、Bは4分の1、Cの系統全体は4分の1です。D・Eはその4分の1を等しく分け、それぞれ8分の1となります。A・B・D・Eを人数で4等分する計算では、親の系統の持分を反映できません。
+
+もしCが生存して相続放棄をしたという条件へ変えるなら、D・Eが放棄だけを理由に代襲することはありません。死亡前の親族図をそのまま使わず、代襲の原因と放棄の有無を書き添えてから割合を計算します。
+
+
 
 ## 配偶者と一緒に相続する人で、割合が変わります
 
@@ -81,7 +113,7 @@
 
 ## 遺留分は、兄弟姉妹には認められません
 
-遺留分は、兄弟姉妹以外の一定の相続人に保障される割合です。遺言によって一人へ財産が集中した場合などに問題になります。遺留分を侵害された場合の請求は、現在の民法では金銭の支払いを求める仕組みです。土地の共有持分が自動的に戻ると決めないでください。
+<a class="lesson-term" data-lesson-term href="#lesson-term-tk-6924c494b0">遺留分</a>は、兄弟姉妹以外の一定の相続人に保障される割合です。遺言によって一人へ財産が集中した場合などに問題になります。遺留分を侵害された場合の請求は、現在の民法では金銭の支払いを求める仕組みです。土地の共有持分が自動的に戻ると決めないでください。
 
 遺留分の全体の割合は、直系尊属のみが相続人の場合は3分の1、それ以外は2分の1です。配偶者と子2人の例で各人の個別的遺留分を考えるなら、全体の2分の1に法定相続分を掛けます。配偶者は4分の1、各子は8分の1です。法定相続分そのものと同じ割合ではありません。
 
@@ -101,3 +133,38 @@
 共同相続人が相続により権利を取得した場合、法定相続分を超える部分を第三者へ対抗するには、登記などの対抗要件が問題になります。遺産分割協議が済んだことと、外部に権利を主張するための手続が済んだことは同じではありません。
 
 相続登記の申請義務については、相続で所有権を取得したことを知った日などの起算点と、原則3年の期限を確認します。施行前の相続への経過措置、遺産分割後の追加の義務、相続人申告登記の位置付けもあります。実際の手続は法務局の最新案内に従い、この例題だけで個別の相続税や権利関係を判断しないでください。
+
+<span id="tk-inheritance-adjustment"></span>
+
+## 生前贈与や貢献があるときは、計算の対象を確かめる
+
+特別受益は、一定の遺贈や、生計の資本としての贈与など、共同相続人が特別に受けた利益です。相続分の計算では、その利益を計算上持ち戻す取扱いが問題になります。持戻しは、贈与された土地を必ず現物で返させることと同じではありません。持戻し免除の意思表示等がある場合は、その条件も読みます。
+
+配偶者Aと子B・Cが相続し、死亡時の積極財産が6,000万円、Bに生計の資本として2,000万円の特別受益があり、他に債務や修正事情はないとします。持戻しをする単純化した例では、計算の基礎は8,000万円です。Aは4,000万円、子の各割合は2,000万円で、Bは既に2,000万円を受けているためこの計算上の取得は0円、Cは2,000万円です。死亡時財産6,000万円の分け方が、4,000＋0＋2,000と一致することを検算します。
+
+寄与分は、被相続人の事業への労務、療養看護などによって財産の維持又は増加に特別に寄与した共同相続人について、衡平を図る制度です。普通の扶養や親族としての交流があれば、どんな場合でも一定額を加える仕組みではありません。寄与分を考慮する条件や額が与えられた問題では、計算の基礎から控除して法定相続分を求め、その寄与者の取得へ加えるという流れを確認します。
+
+<figure id="tk-inheritance-special-benefit-table"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-inheritance-special-benefit-table-caption"><table><caption id="tk-inheritance-special-benefit-table-caption">特別受益の計算は、計算基礎と現に分ける財産を分ける</caption><thead><tr><th scope="col">段階</th><th scope="col">金額</th><th scope="col">何を表すか</th></tr></thead><tbody><tr><th scope="row">死亡時の財産</th><td>6,000万円</td><td>今から分ける対象</td></tr><tr><th scope="row">Bの特別受益を加算</th><td>＋2,000万円</td><td>持戻し後の計算基礎8,000万円</td></tr><tr><th scope="row">Aの相続分</th><td>4,000万円</td><td>8,000×1/2</td></tr><tr><th scope="row">Bの相続分から受益を控除</th><td>0円</td><td>8,000×1/4−2,000</td></tr><tr><th scope="row">Cの相続分</th><td>2,000万円</td><td>8,000×1/4</td></tr></tbody></table></div><figcaption>持戻し免除、債務、遺言等を置かない計算例です。合計は死亡時財産6,000万円になります。</figcaption></figure>
+
+### 配偶者居住権は、住む利益と所有権を分ける
+
+配偶者が相続開始時に被相続人の所有する建物に住んでいた場合などには、遺産分割や遺贈等によって配偶者居住権を取得する制度があります。これは、建物の所有権を取得する人とは別に、配偶者がその建物を使用収益する権利を持つ仕組みです。相続開始時の居住という事実だけで、全ての場合に終身の権利が当然に生じるわけではありません。
+
+一方、配偶者短期居住権は、相続開始後の生活の急変を避けるための一定期間の保護です。長期の配偶者居住権と成立の根拠や存続期間を区別します。誰が建物を所有し、誰がどの根拠で住み続けるかを示すと、所有権と居住する権利を混同せずに読めます。
+
+<section class="guided-lesson" id="guided-tk-inheritance" aria-labelledby="guided-tk-inheritance-title">
+<h3 id="guided-tk-inheritance-title">途中で確認　条件を読み取って答える</h3>
+<p id="guided-tk-inheritance-prompt">遺産8,000万円、相続人は配偶者Aと子B、先に死亡した子Cの子D・Eです。代襲以外の事情はありません。法定相続分でDが取得する額を万円単位で答えてください。</p>
+<form data-guided-practice data-expected="1000" data-guided-hint="先に子の系統ごとの取り分を決め、その系統の中で代襲者へ分けます。" aria-labelledby="guided-tk-inheritance-title" aria-describedby="guided-tk-inheritance-prompt" data-lesson-screen-only>
+<fieldset hidden><legend>本文の考え方を使う練習</legend><label for="guided-tk-inheritance-input">答え（万円）</label> <input id="guided-tk-inheritance-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off"><div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div></fieldset><p role="status" data-guided-feedback></p></form>
+<details><summary>解答と考え方を読む</summary><p data-guided-solution>1,000万円です。配偶者Aが4,000万円、子の系統全体が4,000万円です。Bの系統2,000万円、Cの系統2,000万円に分け、Cを代襲するD・Eはそれぞれ1,000万円です。全員の人数で等分しません。</p></details></section>
+
+### 独立問題　放棄と遺産分割を区別する
+
+Aの相続人Bが、兄弟との遺産分割協議で預金も土地も受け取らないことに合意しました。家庭裁判所へ相続放棄の申述はしていません。Bが「何も受け取らないのだから借金の債権者にも責任はない」と主張した場合、どの点を確かめる必要がありますか。
+
+<details><summary>解説を読む</summary><p>遺産分割で取得を0とすることと、家庭裁判所への申述による相続放棄は別の手続です。家族内の財産の分け方だけで、債権者に対する相続債務の責任が当然に消えるとはいえません。相続人の地位、法定の放棄の有無、債権者との関係を分けます。</p></details>
+
+## 根拠となる条文
+
+[民法887〜904条の2・915〜939条・960〜1024条・1028〜1048条](https://laws.e-gov.go.jp/law/129AC0000000089)。法令の基準日は2026年4月1日、本文の確認日は2026年11月21日です。

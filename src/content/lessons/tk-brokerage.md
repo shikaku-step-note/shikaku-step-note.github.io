@@ -3,12 +3,12 @@
   "stableId": "tk-brokerage",
   "qualification": "takken",
   "title": "媒介契約・指定流通機構・業務報告",
-  "description": "三つの媒介契約を比較するために、制度の条件と独自の事例を解説します。登録と報告の期間を数える練習と、解説付きの理解度チェックに取り組めます。",
-  "order": 16,
-  "minutes": 35,
+  "description": "一般・専任・専属専任媒介の違い、登録期限、活動報告、申込み報告、媒介契約書面を詳しく学びます。",
+  "order": 22,
+  "minutes": 65,
   "sample": false,
   "archived": false,
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "unit": 3,
   "syllabus": [
     7
@@ -20,7 +20,7 @@
     "登録と報告の期間を数える",
     "売主への説明と書面を確かめる"
   ],
-  "prerequisite": "前のレッスン「営業保証金・保証協会と還付」を学んでから進むことをおすすめします。",
+  "prerequisite": "既習のレッスン「営業保証金・保証協会と還付」を学んでから進むことをおすすめします。",
   "glossary": [
     {
       "term": "専任媒介契約",
@@ -39,6 +39,20 @@
     "専任媒介契約",
     "専属専任媒介契約",
     "指定流通機構"
+  ],
+  "inlineGlossary": [
+    {
+      "id": "tk-43cbeea4e4",
+      "term": "専属専任媒介契約"
+    },
+    {
+      "id": "tk-1fe4651104",
+      "term": "専任媒介契約"
+    },
+    {
+      "id": "tk-318caf63e9",
+      "term": "指定流通機構"
+    }
   ]
 }
 ---
@@ -47,11 +61,13 @@
 
 土地を売る人が宅建業者へ買主探しを頼む契約が、売買の媒介契約です。その後に売主と買主が結ぶ売買契約とは、当事者も目的も違います。媒介契約が成立しても、まだ物件の売買自体が成立したとは限りません。
 
+媒介の依頼者は、買主を探す活動を業者へ依頼します。専任性が強い契約では、売主は他の業者へ重ねて依頼する自由を制限されるため、その業者の活動を確認できる報告と情報流通の義務が重要になります。<a class="lesson-term" data-lesson-term href="#lesson-term-tk-318caf63e9">指定流通機構</a>は物件情報を他業者とも共有する仕組みであり、売主への活動報告とは相手方も役割も異なります。
+
 宅建業法34条の2は、宅地又は建物の売買・交換の媒介契約について、書面の交付等を定めています。賃貸の仲介にも、すべて同じ条文の規制がそのまま及ぶと考えないでください。実務で賃貸仲介の契約書を使うことと、法定義務の対象は分けて読みます。
 
 ## 三つの種類は、重ねて依頼できるかで比較します
 
-一般媒介契約では、他の業者へ重ねて依頼することができます。専任媒介契約では、他の業者へ重ねて依頼することが禁じられます。専属専任媒介契約では、さらに、売主が自分で見つけた相手と直接契約することも制限されます。
+一般媒介契約では、他の業者へ重ねて依頼することができます。<a class="lesson-term" data-lesson-term href="#lesson-term-tk-1fe4651104">専任媒介契約</a>では、他の業者へ重ねて依頼することが禁じられます。<a class="lesson-term" data-lesson-term href="#lesson-term-tk-43cbeea4e4">専属専任媒介契約</a>では、さらに、売主が自分で見つけた相手と直接契約することも制限されます。
 
 Aが専任媒介契約をB社と結び、知人Cを自分で見つけた例では、自己発見取引と、他の宅建業者への依頼を区別します。専任媒介だから自分で見つけた相手とも絶対に契約できない、という説明は専属専任との混同です。実際の契約で費用償還等が問題になる場合は、約款や事情も確認します。
 
@@ -102,4 +118,48 @@ Aが専任媒介契約をB社と結び、知人Cを自分で見つけた例で�
 
 売主が提示した条件に対し、買主候補が値下げを求めた例では、業者がその情報を伝え、売主が判断する関係を整理してください。報酬を早く得たいという業者側の事情を、売主の承諾と置き換えることはできません。
 
+
+<span id="tk-brokerage-contract-record"></span>
+## 媒介の依頼と、成立した売買を二段階で捉える
+
+依頼者Aと業者Bの媒介契約書面は、Bがどの条件で買主探しをするかを明らかにします。後日Aと買主Cとの売買が成立すると、その売買について37条書面の義務が生じます。書面名の「契約」という共通点だけで、交付する時点と相手方を一つにしないようにします。
+
+売買・交換の媒介契約について法34条の2の書面を作成するときは、宅建業者が記名押印して依頼者へ交付します。35条・37条の宅建士の記名と、ここでの業者の記名押印は対象が異なります。法定の条件を満たした電磁的方法なら、承諾と所定の代替措置を確認します。書面制度ごとに署名する人と方式を確かめる必要があります。
+<figure id="tk-brokerage-two-contracts"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-brokerage-two-contracts-caption"><table><caption id="tk-brokerage-two-contracts-caption">二つの契約の当事者と、提供する情報</caption><thead><tr><th scope="col">段階</th><th scope="col">当事者・交付先</th><th scope="col">業者が伝える内容</th></tr></thead><tbody><tr><th scope="row">媒介を依頼する</th><td>依頼者Aと業者B。書面はAへ</td><td>物件、希望価額、媒介種類、報酬、期間等</td></tr><tr><th scope="row">買主候補Cが申し込む</th><td>Bから依頼者Aへ報告</td><td>申込みがあった事実を遅滞なく報告</td></tr><tr><th scope="row">AとCの売買が成立</th><td>37条書面はAとCへ</td><td>成立した売買の内容、必要な記載事項</td></tr></tbody></table></div></figure>
+
+### 例題1　他社へ頼めないが、自分で探した人には売りたい
+
+AがB社とのみ売却活動を進めつつ、自分の知人Cへ直接売る可能性を残すなら、専任媒介と専属専任媒介の違いが重要になります。専任媒介は他業者への重複依頼を制限し、自己発見取引まで禁止する類型ではありません。専属専任なら自己発見取引も制限されるので、名前に「専任」が共通するだけで同じ結論にできません。
+
+### 例題2　五か月の専任契約と、自動更新
+
+AとBが専任媒介の有効期間を5か月と書いても、法定上限により3か月として扱います。満了時の更新も依頼者の申出によるもので、業者の判断だけで自動的に更新する扱いにはできません。これに対して一般媒介の有効期間には、法34条の2の専任媒介と同じ3か月の法定上限をそのまま適用しません。
+
+### 例題3　購入申込みが定期報告の翌日に届く
+
+専任媒介で2週間に1回の報告を予定していても、報告の翌日に具体的な購入申込みがあれば、その申込みを遅滞なく依頼者へ伝えます。定期報告は活動状況の共有、申込み報告は売主に取引の判断をしてもらうための連絡です。後者を次回定期報告まで当然に保留することはできません。
+<figure id="tk-brokerage-time-grid"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-brokerage-time-grid-caption"><table><caption id="tk-brokerage-time-grid-caption">登録・定期報告・申込み報告を、三つの時計で読む</caption><thead><tr><th scope="col">義務</th><th scope="col">専任</th><th scope="col">専属専任</th></tr></thead><tbody><tr><th scope="row">指定流通機構への登録</th><td>契約締結日から7日以内（業者の休業日を除く）</td><td>5日以内（業者の休業日を除く）</td></tr><tr><th scope="row">定期の業務処理状況報告</th><td>2週間に1回以上</td><td>1週間に1回以上</td></tr><tr><th scope="row">購入等の申込みがあった報告</th><td>申込みがあれば遅滞なく</td><td>申込みがあれば遅滞なく</td></tr><tr><th scope="row">成約後の指定流通機構への通知</th><td>遅滞なく</td><td>遅滞なく</td></tr></tbody></table></div></figure>
+
+## 物件の調査と販売活動をつなぐ
+
+既存建物では、建物状況調査を実施する者のあっせんに関する事項を媒介契約書面へ記載します。あっせんをするなら、調査の対象や依頼方法を説明し、実際の調査結果は後の重要事項説明等につなげます。建物状況調査は、見えない箇所を含め全欠陥がないと保証する検査ではありません。何を調べた結果かが明確な情報として扱います。
+
+指定流通機構へ登録した場合は、登録を証する書面を依頼者へ遅滞なく引き渡します。登録したという業者の口頭説明だけで情報提供がすべて終わるわけではありません。成約後の通知や、取引状況を適切に登録する義務も含め、依頼者と他業者が実際の状況を把握できる状態を保ちます。
+<section class="guided-lesson" id="guided-tk-brokerage" aria-labelledby="guided-tk-brokerage-title">
+<h3 id="guided-tk-brokerage-title">途中で確認</h3><p id="guided-tk-brokerage-prompt">専任媒介の登録期限は7日以内、専属専任は5日以内です。数える対象となる日の上限の差は何日ですか。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="定期報告の週数を使わず、登録期限の日数を比較します。" aria-labelledby="guided-tk-brokerage-title" aria-describedby="guided-tk-brokerage-prompt" data-lesson-screen-only>
+<fieldset hidden><legend>練習の答え</legend><label for="guided-tk-brokerage-input">差（日）</label> <input id="guided-tk-brokerage-input" name="answer" class="guided-number" type="text" inputmode="numeric" maxlength="18" autocomplete="off"><div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div></fieldset><p role="status" data-guided-feedback></p></form>
+<details><summary>解答と考え方を読む</summary><p data-guided-solution>7－5＝2日です。どちらも登録期間の計算では業者の休業日を除きます。報告頻度の2週間と1週間は別の義務です。</p></details></section>
+
+## 自分で確かめる
+
+買主探索の依頼を受けただけの業者が、売主の承諾なく値引きした価格で売買を成立させたと説明しています。専任媒介であれば、この意思表示を当然にできるでしょうか。
+
+<details><summary>解答と理由</summary><p>専任媒介は他業者への重複依頼を制限する契約です。売主の代わりに売買の意思表示をする代理権が当然に生じるわけではありません。代理として契約をするなら、その権限の有無と範囲を別に確かめます。媒介契約の種類と、民法上の代理権を結び付けすぎないことが大切です。</p></details>
+
+
 復習では、一般・専任・専属専任の表を閉じて、他業者への依頼、自己発見、登録期限、報告頻度、有効期間を説明します。数字に迷ったら、依頼を専属化する分だけ、情報提供や報告の義務が手厚くなる関係を確かめてください。
+
+## 根拠を確認する
+
+この章の法令基準日は2026年4月1日、参照資料の確認日は2026年11月21日です。[宅地建物取引業法34条の2](https://laws.e-gov.go.jp/law/327AC1000000176)と[国土交通省「解釈・運用の考え方」2026年4月1日版](https://www.mlit.go.jp/totikensangyo/const/content/001881261.pdf)を参照しています。[標準媒介契約約款の現行資料](https://www.mlit.go.jp/totikensangyo/const/1_6_bt_000266.html)も参照できます。

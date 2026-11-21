@@ -4,11 +4,11 @@
   "qualification": "takken",
   "title": "取得時効・消滅時効と期間の数え方",
   "description": "取得時効と消滅時効を分けるために、制度の条件と独自の事例を解説します。起算点から期間を判断する練習と、解説付きの理解度チェックに取り組めます。",
-  "order": 4,
-  "minutes": 35,
+  "order": 5,
+  "minutes": 100,
   "sample": false,
   "archived": false,
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "unit": 1,
   "syllabus": [
     2
@@ -39,15 +39,45 @@
     "取得時効",
     "消滅時効",
     "援用"
+  ],
+  "inlineGlossary": [
+    {
+      "id": "tk-087b09f74f",
+      "term": "取得時効"
+    },
+    {
+      "id": "tk-62e489e5f9",
+      "term": "消滅時効"
+    },
+    {
+      "id": "tk-fa56d63b71",
+      "term": "援用"
+    }
   ]
 }
 ---
 
 ## 時効では「何を、いつから」を先に決めます
 
-時効には、一定の条件で権利を取得する取得時効と、一定期間の不行使などにより権利が消滅する消滅時効があります。土地を長く占有した場面と、貸金の返還を長く請求しなかった場面では、同じ年数の表を使えません。まず対象となる権利と、どの時効が問題かを確かめます。
+時効は、一定の状態が一定期間続いたときに、権利の取得又は消滅という効果を認める制度です。他人の土地を所有者として占有してきた人の<a class="lesson-term" data-lesson-term href="#lesson-term-tk-087b09f74f">取得時効</a>と、請求できる債権を長く行使しなかった場合の<a class="lesson-term" data-lesson-term href="#lesson-term-tk-62e489e5f9">消滅時効</a>では、期間を数える前提が違います。期間を数え始める時点を起算点といいます。まず権利の種類と起算点を決め、その途中で起きた請求や承認を順に当てはめます。
 
-期間が経過しただけで、裁判所が当然に時効を理由として判断するわけではありません。時効の利益を受ける人などによる援用が問題になります。一方、時効の利益をあらかじめ放棄することはできません。時効完成前に「永久に時効を主張しません」と契約すれば制度を自由に排除できる、という理解はしないでください。
+期間が経過しただけで、裁判所が当然に時効を理由として判断するわけではありません。時効の利益を受ける人などによる<a class="lesson-term" data-lesson-term href="#lesson-term-tk-fa56d63b71">援用</a>が問題になります。一方、時効の利益をあらかじめ放棄することはできません。時効完成前に「永久に時効を主張しません」と契約すれば制度を自由に排除できる、という理解はしないでください。
+
+<span id="tk-prescription-method"></span>
+
+## 期間を覚える前に、どの権利を判断するかを決める
+
+取得時効の問題では、占有とは物を事実上支配する状態をいい、その占有が所有の意思をもってされていたかが重要になります。賃借人が借りた土地を使っていることは、長年の使用という外形があっても、当然に所有の意思をもつ占有にはなりません。借りているという原因と、後からどのように占有の性質が変わったかを調べる必要があります。
+
+債権の消滅時効では、権利を行使できる時と、それを債権者が知った時を区別します。支払期日が来ているか、停止条件が成就しているかなど、請求の可能性を確認してから期間を数えます。人の生命・身体の侵害に関する債権や、不法行為の損害賠償などには特則があるため、民法166条の5年・10年をすべての請求へ使わないようにします。
+
+<figure id="tk-prescription-route"><svg viewBox="0 0 320 208" width="320" height="208" role="img" aria-label="時効の問題を解く順序" style="max-width:100%;height:auto"><rect x="12" y="5" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="24" text-anchor="middle" fill="currentColor" font-size="12">権利と起算点</text><text x="160" y="42" text-anchor="middle" fill="currentColor" font-size="12">取得か、債権の消滅か</text><path d="M160 52v15m-5-5 5 5 5-5" fill="none" stroke="currentColor"/><rect x="12" y="72" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="91" text-anchor="middle" fill="currentColor" font-size="12">期間途中の出来事</text><text x="160" y="109" text-anchor="middle" fill="currentColor" font-size="12">請求・裁判・承認等を置く</text><path d="M160 119v15m-5-5 5 5 5-5" fill="none" stroke="currentColor"/><rect x="12" y="139" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="158" text-anchor="middle" fill="currentColor" font-size="12">完成と援用</text><text x="160" y="176" text-anchor="middle" fill="currentColor" font-size="12">利益を受ける人の主張を確認</text></svg><figcaption>時効の問題を解く順序。年数の計算だけで結論を出さず、援用や第三者との関係まで確認します。</figcaption></figure>
+
+### 基本例　所有の意思と占有開始時の認識
+
+Aが他人の土地を、所有の意思をもって平穏かつ公然に占有しているとします。占有開始時に善意で過失もないという条件なら、10年の取得時効を検討できます。この追加条件がないときは20年の要件を検討します。途中で他人の土地だと知ったという事情は、占有開始時の善意・無過失という判断と区別します。起算点の認識と、途中の認識を同じ時点の事実として読まないことが必要です。
+
+
 
 ## 土地の取得時効は、占有の性質を調べます
 
@@ -97,3 +127,51 @@ Aが自分の土地だと信じ、そう信じたことに過失なく、平穏�
 復習では、占有開始、返済期限、認識、催告、裁判上の請求、承認を別々の点として書きます。それぞれに「起算点」「完成猶予」「更新」と役割を添えてください。年数を暗記しただけの場合と違い、どの出来事が結論を変えたかを説明できます。
 
 2020年の債権法改正前から続く法律関係には経過措置もあります。この教材の通常例は、特に断らない限り現行民法が適用される契約を前提とします。古い過去問を使うときは、その問題が前提とする法令時点も確かめてください。
+
+<span id="tk-prescription-two-clocks"></span>
+
+## 完成猶予は、過ぎた時間を消す制度ではない
+
+催告による完成猶予は、催告時から6か月を経過するまで時効を完成させない仕組みです。すでに進行した年数をゼロに戻す更新とは違い、それまでの経過を保ったまま、完成を一時的に待たせます。請求書を繰り返し送れば新しい5年間が始まり続けるという理解にはなりません。
+
+例えば、通常の5年の消滅時効が完成する予定日の2か月前に、債権者が支払を求める催告をしたとします。他の事情がなければ、催告から6か月が経過するまでは完成しません。その間にもう一度催告しても、催告による猶予を繰り返して延ばす効力はありません。裁判上の請求等へ進んだ場合は、今度はその制度による完成猶予や更新の要件を確かめます。
+
+<figure id="tk-prescription-events"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-prescription-events-caption"><table><caption id="tk-prescription-events-caption">期間途中の出来事がどこへ作用するか</caption><thead><tr><th scope="col">出来事</th><th scope="col">時間への作用</th><th scope="col">見落としやすい条件</th></tr></thead><tbody><tr><th scope="row">催告</th><td>催告から6か月間は完成しない</td><td>猶予中の再度の催告では重ねて延ばせない</td></tr><tr><th scope="row">権利の承認</th><td>その時から新たな進行を始める</td><td>債務の存在を認めた事実かを読む</td></tr><tr><th scope="row">裁判上の請求</th><td>手続中等の完成猶予と、確定した権利の更新を検討</td><td>取下げ・却下と、確定判決等を区別する</td></tr></tbody></table></div><figcaption>催告、承認、裁判の語を見つけたら、どの効果の根拠に使うかを説明します。</figcaption></figure>
+
+### 条件変更　債務者が一部を支払った場合
+
+完成前に債務者が債務の存在を認め、利息や元本の一部を支払う例では、権利の承認による更新が問題になります。債権者が一方的に請求した前の例とは、行為をした人とその意味が違います。支払がその債務を認めるものかを確認し、更新が認められるならその時から新たな期間を考えます。
+
+また、時効が完成していても、裁判所が必ず職権で時効を適用するという仕組みではありません。時効によって利益を受ける当事者等が、時効の利益を受ける旨を主張する援用を確認します。完成前の時効利益の放棄と、完成後の承認等の扱いも、同じ「約束」の言葉だけで処理できません。
+
+<section class="guided-lesson" id="guided-tk-prescription" aria-labelledby="guided-tk-prescription-title">
+<h3 id="guided-tk-prescription-title">途中で確認　条件を読み取って答える</h3>
+<p id="guided-tk-prescription-prompt">催告が行われ、その催告による完成猶予だけが問題となっています。再度の催告による延長はありません。最初の催告から、何か月を経過するまでは時効が完成しないとされますか。</p>
+<form data-guided-practice data-expected="6" data-guided-hint="催告による完成猶予と承認による更新を区別します。" aria-labelledby="guided-tk-prescription-title" aria-describedby="guided-tk-prescription-prompt" data-lesson-screen-only>
+<fieldset hidden><legend>本文の考え方を使う練習</legend><label for="guided-tk-prescription-input">答え（か月）</label> <input id="guided-tk-prescription-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off"><div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div></fieldset><p role="status" data-guided-feedback></p></form>
+<details><summary>解答と考え方を読む</summary><p data-guided-solution>6か月です。催告は完成を一時的に猶予する制度です。新たな5年間へ更新する制度と区別し、猶予中の再催告で6か月を繰り返し足さないようにします。</p></details></section>
+
+### 独立問題　起算点を二つ置く
+
+AはBに対する債権を2026年5月1日から行使でき、同日に行使できることを知っていました。通常の債権で特則はなく、完成猶予・更新もありません。5年の期間と10年の期間は、どの時点から考えますか。
+
+<details><summary>解説を読む</summary><p>この条件では、客観的に行使できる時と、行使できることを知った時が同じです。そのため、民法166条の二つの期間は同じ時点を出発点として、それぞれ5年と10年の経過を検討します。いずれかの期間が先に満了するなら、その規定による消滅時効が問題になります。実際の日付の満了は初日不算入等の期間計算も踏まえます。「常に10年待つ」とはしません。</p></details>
+
+<span id="tk-unit-1-cumulative"></span>
+
+## ユニット総合演習　効力と期間を、資料から順に決める
+
+一つの資料に年齢、相手の認識、通知、支払などが並ぶときは、先に判断の順序を作ります。誰が契約したか、行為時にどの問題があったか、その後に追認等で状態が変わったかを確定し、最後に現在どの権利を行使するかを調べます。時効の期間を数え始める前に、何の請求権が残っているかを確認するためです。
+
+次の資料A〜Dは別々の取引です。各資料の結論を一文で示し、決め手となる事実を一つ挙げてください。正答だけでなく、どの制度を選んだかも自分の言葉で説明します。
+
+<figure id="tk-unit-1-source-sheet"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-unit-1-source-sheet-caption"><table><caption id="tk-unit-1-source-sheet-caption">独立した四つの取引を読み、使う制度を選ぶ</caption><thead><tr><th scope="col">資料</th><th scope="col">行為時とその後の事実</th><th scope="col">問われていること</th></tr></thead><tbody><tr><th scope="row">A</th><td>17歳で同意なく購入。成人後、取消権を知って異議をとどめず代金を一部履行</td><td>未成年を理由とする取消しがなお可能か</td></tr><tr><th scope="row">B</th><td>第三者にだまされ売却。相手方は詐欺を知り得ず、本人も相手方をだました人とは通じていない</td><td>詐欺による取消しの要件を満たすか</td></tr><tr><th scope="row">C</th><td>無権代理。相手方は無権限を知らないが確認に過失。本人は未追認で表見代理なし</td><td>相手方の115条の取消しを過失だけで否定できるか</td></tr><tr><th scope="row">D</th><td>通常債権が2021年に行使可能となり同時に認識。完成前の2024年に債務者が権利を承認</td><td>当初の期間経過だけで現在の完成を判断できるか</td></tr></tbody></table></div><figcaption>資料間の人物や契約は共通ではありません。根拠を選んでから、各資料の条件だけを使います。</figcaption></figure>
+
+<details><summary>四つの解答と、選ぶ根拠を確認する</summary><p>Aは、追認できる時以後の異議をとどめない一部履行から法定追認を検討します。法定追認が成立すれば、その取消原因による取消しはできなくなります。</p><p>Bは第三者詐欺なので、相手方が知り又は知ることができたという条件を確認し、この資料では満たしていません。</p><p>Cは115条の取消しであり、契約時に無権限を知らなかった条件の下で、過失だけを理由に一律に否定しません。117条の責任の条件とは分けます。</p><p>Dは権利の承認による更新を反映し、2024年の承認時から新たな進行を検討します。当初の2021年だけを起点とした計算では、途中の法的な作用を落としています。</p></details>
+
+自己点検では、Aは追認できる時点、Bは相手方の認識、Cは取消しと無権代理人への請求の違い、Dは猶予と更新の違いを挙げられたかを確認します。説明できなかった箇所は、結論を覚え直す前に、その制度の本文へ戻ってください。得点を保存する確認には、学習ツリーのユニット総合確認を使えます。
+
+
+## 根拠となる条文
+
+[民法144〜166条](https://laws.e-gov.go.jp/law/129AC0000000089)。法令の基準日は2026年4月1日、本文の確認日は2026年11月21日です。

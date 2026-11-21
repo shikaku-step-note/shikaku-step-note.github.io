@@ -1,0 +1,188 @@
+[
+  {
+    "id": "tk-acquisition-tax",
+    "title": "住宅取得の軽減と税額表の使い方",
+    "unit": 6,
+    "domain": 4,
+    "order": 700,
+    "objectives": [
+      "住宅の取得日と面積・用途の条件を対応させる",
+      "価格控除と税額減額を分けて計算する",
+      "土地と家屋の税額を別々に確かめる"
+    ],
+    "glossary": [
+      {
+        "term": "価格控除",
+        "definition": "税額を計算する前に、対象となる価格から差し引く額"
+      },
+      {
+        "term": "税額減額",
+        "definition": "税率を掛けて算出した税額から差し引く額"
+      },
+      {
+        "term": "取得日",
+        "definition": "不動産の取得に適用する法令や特例の時点を決める日"
+      }
+    ],
+    "sources": [
+      "tax-local-law",
+      "tax-local"
+    ],
+    "insertAfter": "tk-tax"
+  },
+  {
+    "id": "tk-home-sale-tax",
+    "title": "マイホーム売却の特例を条件から選ぶ",
+    "unit": 6,
+    "domain": 4,
+    "order": 701,
+    "objectives": [
+      "3,000万円控除の対象と期限を判定する",
+      "10年超軽減税率を段階別に計算する",
+      "買換えと控除の働きと併用関係を区別する"
+    ],
+    "glossary": [
+      {
+        "term": "特別控除",
+        "definition": "要件を満たす場合に所得から差し引く額"
+      },
+      {
+        "term": "課税の繰延べ",
+        "definition": "一定の利益への課税を将来の資産の譲渡等へ移す仕組み"
+      },
+      {
+        "term": "課税長期譲渡所得",
+        "definition": "長期譲渡所得から適用できる特別控除を引いた税率計算の基礎"
+      }
+    ],
+    "sources": [
+      "tax-home",
+      "tax-gain"
+    ],
+    "insertAfter": "tk-transfer-tax"
+  },
+  {
+    "id": "tk-housing-finance",
+    "title": "住宅金融支援機構と証券化の資金の流れ",
+    "unit": 7,
+    "domain": 5,
+    "order": 702,
+    "objectives": [
+      "買取型の融資・債権・返済の流れを説明する",
+      "保証型と買取型の役割の違いを資料から識別する",
+      "機構の業務と個別融資の条件を区別する"
+    ],
+    "glossary": [
+      {
+        "term": "ローン債権",
+        "definition": "住宅ローン契約に基づき元金や利息の返済を受け取る権利"
+      },
+      {
+        "term": "証券化",
+        "definition": "債権等から生じる資金を裏付けとする証券で資金を調達する仕組み"
+      },
+      {
+        "term": "管理回収",
+        "definition": "債権の返済を受け取り、管理する業務"
+      }
+    ],
+    "sources": [
+      "jhf",
+      "jhf-flow"
+    ],
+    "insertAfter": "tk-supply"
+  },
+  {
+    "id": "tk-statistics-reading",
+    "title": "住宅着工・業者数・地価統計の読み方",
+    "unit": 7,
+    "domain": 5,
+    "order": 703,
+    "objectives": [
+      "統計の対象・期間・単位と比較相手を読み取る",
+      "増減率と内訳の合計を計算して点検する",
+      "平均と個別の数値からいえる範囲を判断する"
+    ],
+    "glossary": [
+      {
+        "term": "フロー",
+        "definition": "一定の期間に新たに生じた量"
+      },
+      {
+        "term": "ストック",
+        "definition": "ある時点で存在する量"
+      },
+      {
+        "term": "増減率",
+        "definition": "基準となる値に対して増減した量の割合"
+      }
+    ],
+    "sources": [
+      "statistics",
+      "statistics-business"
+    ],
+    "insertAfter": "tk-housing-finance"
+  },
+  {
+    "id": "tk-replacement-gain",
+    "title": "自宅の買換えの要件・当年課税・取得価額",
+    "unit": 6,
+    "domain": 4,
+    "order": 704,
+    "objectives": [
+      "旧居と新居の面積・期間・性能等の要件を対応させる",
+      "買換え額の大小に応じた当年の所得を求める",
+      "新居へ引き継ぐ取得価額と繰延べ益を照合する"
+    ],
+    "glossary": [
+      {
+        "term": "買換資産",
+        "definition": "特例において旧居の譲渡に対応して取得する新しい居住用財産"
+      },
+      {
+        "term": "課税繰延べ益",
+        "definition": "将来の譲渡等へ課税の時期を移した利益"
+      },
+      {
+        "term": "必要経費の按分",
+        "definition": "一定の基準の割合で費用を各部分へ配分すること"
+      }
+    ],
+    "sources": [
+      "tax-home",
+      "tax-gain"
+    ],
+    "insertAfter": "tk-home-sale-tax"
+  },
+  {
+    "id": "tk-home-sale-loss",
+    "title": "自宅売却の損失・ローン残高・繰越控除",
+    "unit": 6,
+    "domain": 4,
+    "order": 705,
+    "objectives": [
+      "売却損とローン残高を別に計算する",
+      "買換えと旧居ローンの二制度の条件を比較する",
+      "通算限度と翌年以後の繰越控除を条件から求める"
+    ],
+    "glossary": [
+      {
+        "term": "譲渡損失",
+        "definition": "譲渡収入から取得費と譲渡費用を引いた結果がマイナスとなる損失"
+      },
+      {
+        "term": "損益通算",
+        "definition": "法令の条件に従い一定の損失を他の所得と差し引くこと"
+      },
+      {
+        "term": "繰越控除",
+        "definition": "控除しきれない損失を所定の期間の後の年の所得から差し引く仕組み"
+      }
+    ],
+    "sources": [
+      "tax-gain",
+      "tax-home"
+    ],
+    "insertAfter": "tk-replacement-gain"
+  }
+]

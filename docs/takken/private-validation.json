@@ -1,0 +1,53 @@
+{
+  "reviewed": "2026-11-21",
+  "before": 11,
+  "after": 17,
+  "new": 6,
+  "supplementalQuestions": 56,
+  "sourceVerification": {
+    "civil": {
+      "revision": "129AC0000000089_20260401_506AC0000000033",
+      "api": "https://laws.e-gov.go.jp/api/2/law_data/129AC0000000089_20260401_506AC0000000033",
+      "enforced": "2026-04-01",
+      "currentArticlesCompared": 175,
+      "differences": []
+    },
+    "lease": {
+      "revision": "403AC0000000090_20230614_505AC0000000053",
+      "api": "https://laws.e-gov.go.jp/api/2/law_data/403AC0000000090_20230614_505AC0000000053"
+    },
+    "condo": {
+      "revision": "337AC0000000069_20260401_507AC0000000047",
+      "api": "https://laws.e-gov.go.jp/api/2/law_data/337AC0000000069_20260401_507AC0000000047",
+      "additional": "https://www.mlit.go.jp/jutakukentiku/house/content/002028748.pdf"
+    }
+  },
+  "guides": [
+    "responsive-table",
+    "accessibility"
+  ],
+  "independentExpectedWitnesses": {
+    "tk-contract": 1,
+    "tk-capacity-followup": 2,
+    "tk-intent": 2,
+    "tk-agency": 2,
+    "tk-prescription": 6,
+    "tk-title": 1,
+    "tk-mortgage": 700,
+    "tk-performance": 110,
+    "tk-remedies": 240,
+    "tk-lease": 14,
+    "tk-inheritance": 1000.0,
+    "tk-condo": 60.0,
+    "tk-shared-land": 50.0,
+    "tk-joint-guarantee": 600.0,
+    "tk-services-tort": 45.0,
+    "tk-land-lease": 60,
+    "tk-building-lease": 6
+  },
+  "languageChecks": {
+    "substantiveReview": "全17章の導入、主要な論理の接続、条件変更、解説を通読。未定義の新出語を本文へ補足した。",
+    "automatedNaturalJapaneseLint": "実行したがSudachiPyが未導入のため実行不能。自然さの自動判定は主張しない。",
+    "proofreading": "誤字、助詞、敬体、単位と主語の整合を文脈で確認。"
+  }
+}

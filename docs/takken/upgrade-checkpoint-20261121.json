@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-21",
+  "mode": "UPGRADE",
+  "qualification": "takken",
+  "base": "feba6433bc701fcf55b6be09087ca315682ea16b",
+  "baselineLessons": 34,
+  "officialScope": "RETIO candidate guide 2026, seven statutory domains; law reference 2026-04-01",
+  "decisions": {
+    "private": "11 existing plus six distinct foundation/application chapters",
+    "business": "10 existing plus four separate buyer protection/commission/warranty chapters",
+    "land": "7 existing plus eight distinct permitting/building/other-law/integrated chapters",
+    "taxAndOther": "6 existing plus six acquisition, home-sale, replacement, loss, finance and statistics chapters"
+  },
+  "assessmentDecision": "Preserve original form A after factual audit and add independent 50-question form B. Derive 45-question exemption view of each form; disclose shared45 within each pair.",
+  "release": { "lessons": 58, "newLessons": 24, "figures": 125, "guidedActivities": 58, "inlineTermLinks": 158, "lessonQuestions": 382, "unitReviewQuestions": 34, "independentMockForms": 2 },
+  "checks": { "typeErrors": 0, "fullTestsPassed": 106, "indexNowTestsPassed": 3, "scopedTestsPassed": 6, "builtPages": 1194, "sitemapURLs": 407, "mobileLessonsVerified": 58, "browserPersistenceAndBackup": "passed", "textResize200Percent": "passed after constraining guided answer input" },
+  "nextAction": "Commit and publish through the existing Pages workflow, monitor build/deploy/IndexNow and verify live routes. Store the final observed result in work/takken-live-verification-20261121.json.",
+  "blockers": []
+}

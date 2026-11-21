@@ -1,0 +1,1620 @@
+[
+  {
+    "id": "tk-contract",
+    "decision": "deepen",
+    "anchors": [
+      "tk-contract-agreement",
+      "tk-contract-stages",
+      "tk-contract-capacity-compare",
+      "tk-contract-capacity-table",
+      "tk-contract-capacity-table-caption",
+      "guided-tk-contract",
+      "guided-tk-contract-title",
+      "guided-tk-contract-prompt",
+      "guided-tk-contract-input"
+    ],
+    "source": "[民法3条の2・5条・9条・13条・17条・522条・528条・555条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "契約成立と書面の役割を分ける",
+        "teachingSections": [
+          "売買は、申込みと承諾が合ったときに成立します",
+          "合意した内容と、その後に履行する義務を分けて読む",
+          "自分の行為を判断できることが出発点です",
+          "無効と取消しでは、効力の扱いが違います",
+          "未成年者の土地購入を順に判断する",
+          "同じ購入でも、同意の範囲が違う例を比較します",
+          "成年後見制度では、保護の種類を読みます",
+          "「理解できるか」と「単独で確定させられるか」を使い分ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-contract-check",
+        "guided": "guided-tk-contract",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "無効と取消しを区別する",
+        "teachingSections": [
+          "売買は、申込みと承諾が合ったときに成立します",
+          "合意した内容と、その後に履行する義務を分けて読む",
+          "自分の行為を判断できることが出発点です",
+          "無効と取消しでは、効力の扱いが違います",
+          "未成年者の土地購入を順に判断する",
+          "同じ購入でも、同意の範囲が違う例を比較します",
+          "成年後見制度では、保護の種類を読みます",
+          "「理解できるか」と「単独で確定させられるか」を使い分ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-contract-check",
+        "guided": "guided-tk-contract",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "未成年者の取引を条件から判断する",
+        "teachingSections": [
+          "売買は、申込みと承諾が合ったときに成立します",
+          "合意した内容と、その後に履行する義務を分けて読む",
+          "自分の行為を判断できることが出発点です",
+          "無効と取消しでは、効力の扱いが違います",
+          "未成年者の土地購入を順に判断する",
+          "同じ購入でも、同意の範囲が違う例を比較します",
+          "成年後見制度では、保護の種類を読みます",
+          "「理解できるか」と「単独で確定させられるか」を使い分ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-contract-check",
+        "guided": "guided-tk-contract",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-contract-stages",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-contract-capacity-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-contract",
+      "expected": "1",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-capacity-followup",
+    "decision": "add",
+    "after": "tk-contract",
+    "anchors": [
+      "tk-capacity-followup-timeline",
+      "tk-capacity-followup-flow",
+      "tk-capacity-followup-demand",
+      "tk-capacity-followup-demand-table",
+      "tk-capacity-followup-demand-table-caption",
+      "guided-tk-capacity-followup",
+      "guided-tk-capacity-followup-title",
+      "guided-tk-capacity-followup-prompt",
+      "guided-tk-capacity-followup-input",
+      "tk-capacity-followup-restoration"
+    ],
+    "source": "[民法20条・113〜126条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "JapaneseReview": "定義、仕組み、基本例、条件変更、独立問題と解答を一続きの説明として通読",
+    "objectives": [
+      {
+        "objective": "取消権者と追認できる時点を確かめる",
+        "teachingSections": [
+          "取り消せる契約は、その後の意思表示で効力が確定する",
+          "追認できる状態になったかを先に読む",
+          "催告は、誰に返答を求めたかで効果が変わる",
+          "取り消した後は、残っている利益を確認する",
+          "期間は何を起点に数えるか",
+          "復習の手順",
+          "根拠となる条文"
+        ],
+        "practice": "tk-capacity-followup-check",
+        "guided": "guided-tk-capacity-followup",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "催告の相手による法的効果の違いを説明する",
+        "teachingSections": [
+          "取り消せる契約は、その後の意思表示で効力が確定する",
+          "追認できる状態になったかを先に読む",
+          "催告は、誰に返答を求めたかで効果が変わる",
+          "取り消した後は、残っている利益を確認する",
+          "期間は何を起点に数えるか",
+          "復習の手順",
+          "根拠となる条文"
+        ],
+        "practice": "tk-capacity-followup-check",
+        "guided": "guided-tk-capacity-followup",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "取消し後の現存利益と期間制限を事例から判断する",
+        "teachingSections": [
+          "取り消せる契約は、その後の意思表示で効力が確定する",
+          "追認できる状態になったかを先に読む",
+          "催告は、誰に返答を求めたかで効果が変わる",
+          "取り消した後は、残っている利益を確認する",
+          "期間は何を起点に数えるか",
+          "復習の手順",
+          "根拠となる条文"
+        ],
+        "practice": "tk-capacity-followup-check",
+        "guided": "guided-tk-capacity-followup",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-capacity-followup-flow",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-capacity-followup-demand-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-capacity-followup",
+      "expected": "2",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-intent",
+    "decision": "deepen",
+    "anchors": [
+      "tk-intent-requirements",
+      "tk-intent-third-party-table",
+      "tk-intent-third-party-table-caption",
+      "tk-intent-reasoning",
+      "tk-intent-cancel-route",
+      "guided-tk-intent",
+      "guided-tk-intent-title",
+      "guided-tk-intent-prompt",
+      "guided-tk-intent-input"
+    ],
+    "source": "[民法93〜96条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "本人同士と第三者との関係を分ける",
+        "teachingSections": [
+          "意思表示は、本人同士と第三者を分けて読みます",
+          "事情を知らない人を、どの要件で保護するか",
+          "相手と通じた架空の売買は無効です",
+          "勘違いには、重要性と認識の条件があります",
+          "詐欺では、誰がだましたかを確かめます",
+          "第三者の善意を、どの事情について調べるか",
+          "強迫を詐欺と同じ条件で処理しない",
+          "錯誤では、何を間違え、どの程度重要だったかを示す",
+          "根拠となる条文"
+        ],
+        "practice": "tk-intent-check",
+        "guided": "guided-tk-intent",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "善意・無過失の要件を読み分ける",
+        "teachingSections": [
+          "意思表示は、本人同士と第三者を分けて読みます",
+          "事情を知らない人を、どの要件で保護するか",
+          "相手と通じた架空の売買は無効です",
+          "勘違いには、重要性と認識の条件があります",
+          "詐欺では、誰がだましたかを確かめます",
+          "第三者の善意を、どの事情について調べるか",
+          "強迫を詐欺と同じ条件で処理しない",
+          "錯誤では、何を間違え、どの程度重要だったかを示す",
+          "根拠となる条文"
+        ],
+        "practice": "tk-intent-check",
+        "guided": "guided-tk-intent",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "意思表示の瑕疵を事例に当てはめる",
+        "teachingSections": [
+          "意思表示は、本人同士と第三者を分けて読みます",
+          "事情を知らない人を、どの要件で保護するか",
+          "相手と通じた架空の売買は無効です",
+          "勘違いには、重要性と認識の条件があります",
+          "詐欺では、誰がだましたかを確かめます",
+          "第三者の善意を、どの事情について調べるか",
+          "強迫を詐欺と同じ条件で処理しない",
+          "錯誤では、何を間違え、どの程度重要だったかを示す",
+          "根拠となる条文"
+        ],
+        "practice": "tk-intent-check",
+        "guided": "guided-tk-intent",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-intent-third-party-table",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-intent-cancel-route",
+        "job": "concept/decision-sequence"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-intent",
+      "expected": "2",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-agency",
+    "decision": "deepen",
+    "anchors": [
+      "tk-agency-roles",
+      "tk-agency-authority-flow",
+      "tk-agency-third-party-remedies",
+      "tk-agency-inaction-table",
+      "tk-agency-inaction-table-caption",
+      "guided-tk-agency",
+      "guided-tk-agency-title",
+      "guided-tk-agency-prompt",
+      "guided-tk-agency-input"
+    ],
+    "source": "[民法99〜117条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "代理の効果が帰属する人を示す",
+        "teachingSections": [
+          "代理人が契約しても、効果は本人へ帰属します",
+          "代理権の範囲と、本人のためにする表示を確かめる",
+          "契約相手になることと、両側を代理すること",
+          "代理権がない契約は、本人の追認を待ちます",
+          "追認前の二つの行動を、時間の順で比較します",
+          "表見代理は、外観だけで必ず成立する制度ではありません",
+          "無権代理では、本人の返答と相手方の行動を時系列に置く",
+          "根拠となる条文"
+        ],
+        "practice": "tk-agency-check",
+        "guided": "guided-tk-agency",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "無権代理の追認と取消しを区別する",
+        "teachingSections": [
+          "代理人が契約しても、効果は本人へ帰属します",
+          "代理権の範囲と、本人のためにする表示を確かめる",
+          "契約相手になることと、両側を代理すること",
+          "代理権がない契約は、本人の追認を待ちます",
+          "追認前の二つの行動を、時間の順で比較します",
+          "表見代理は、外観だけで必ず成立する制度ではありません",
+          "無権代理では、本人の返答と相手方の行動を時系列に置く",
+          "根拠となる条文"
+        ],
+        "practice": "tk-agency-check",
+        "guided": "guided-tk-agency",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "表見代理の要件を確かめる",
+        "teachingSections": [
+          "代理人が契約しても、効果は本人へ帰属します",
+          "代理権の範囲と、本人のためにする表示を確かめる",
+          "契約相手になることと、両側を代理すること",
+          "代理権がない契約は、本人の追認を待ちます",
+          "追認前の二つの行動を、時間の順で比較します",
+          "表見代理は、外観だけで必ず成立する制度ではありません",
+          "無権代理では、本人の返答と相手方の行動を時系列に置く",
+          "根拠となる条文"
+        ],
+        "practice": "tk-agency-check",
+        "guided": "guided-tk-agency",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-agency-authority-flow",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-agency-inaction-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-agency",
+      "expected": "2",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-prescription",
+    "decision": "deepen",
+    "anchors": [
+      "tk-prescription-method",
+      "tk-prescription-route",
+      "tk-prescription-two-clocks",
+      "tk-prescription-events",
+      "tk-prescription-events-caption",
+      "guided-tk-prescription",
+      "guided-tk-prescription-title",
+      "guided-tk-prescription-prompt",
+      "guided-tk-prescription-input",
+      "tk-unit-1-cumulative",
+      "tk-unit-1-source-sheet",
+      "tk-unit-1-source-sheet-caption"
+    ],
+    "source": "[民法144〜166条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "取得時効と消滅時効を分ける",
+        "teachingSections": [
+          "時効では「何を、いつから」を先に決めます",
+          "期間を覚える前に、どの権利を判断するかを決める",
+          "土地の取得時効は、占有の性質を調べます",
+          "債権の消滅時効は、二つの起算点を確認します",
+          "完成猶予と更新は、期間への作用が違います",
+          "催告があった例を、期間の線で整理します",
+          "時系列を書いて、条件を一つずつ変えます",
+          "完成猶予は、過ぎた時間を消す制度ではない",
+          "ユニット総合演習　効力と期間を、資料から順に決める",
+          "根拠となる条文"
+        ],
+        "practice": "tk-prescription-check",
+        "guided": "guided-tk-prescription",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "起算点から期間を判断する",
+        "teachingSections": [
+          "時効では「何を、いつから」を先に決めます",
+          "期間を覚える前に、どの権利を判断するかを決める",
+          "土地の取得時効は、占有の性質を調べます",
+          "債権の消滅時効は、二つの起算点を確認します",
+          "完成猶予と更新は、期間への作用が違います",
+          "催告があった例を、期間の線で整理します",
+          "時系列を書いて、条件を一つずつ変えます",
+          "完成猶予は、過ぎた時間を消す制度ではない",
+          "ユニット総合演習　効力と期間を、資料から順に決める",
+          "根拠となる条文"
+        ],
+        "practice": "tk-prescription-check",
+        "guided": "guided-tk-prescription",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "完成猶予と更新を区別する",
+        "teachingSections": [
+          "時効では「何を、いつから」を先に決めます",
+          "期間を覚える前に、どの権利を判断するかを決める",
+          "土地の取得時効は、占有の性質を調べます",
+          "債権の消滅時効は、二つの起算点を確認します",
+          "完成猶予と更新は、期間への作用が違います",
+          "催告があった例を、期間の線で整理します",
+          "時系列を書いて、条件を一つずつ変えます",
+          "完成猶予は、過ぎた時間を消す制度ではない",
+          "ユニット総合演習　効力と期間を、資料から順に決める",
+          "根拠となる条文"
+        ],
+        "practice": "tk-prescription-check",
+        "guided": "guided-tk-prescription",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-prescription-route",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-prescription-events",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-unit-1-source-sheet",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-prescription",
+      "expected": "6",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。",
+    "unitCheckpoint": {
+      "anchor": "tk-unit-1-cumulative",
+      "skills": [
+        "能力と法定追認",
+        "第三者詐欺",
+        "無権代理の取消し",
+        "時効更新"
+      ],
+      "source": "tk-unit-1-source-sheet",
+      "feedback": "4取引を別々に根拠へ照合する静的な解説"
+    }
+  },
+  {
+    "id": "tk-title",
+    "decision": "deepen",
+    "anchors": [
+      "tk-title-parties",
+      "tk-title-comparison",
+      "tk-title-timing",
+      "tk-title-source-table",
+      "tk-title-source-table-caption",
+      "guided-tk-title",
+      "guided-tk-title-title",
+      "guided-tk-title-prompt",
+      "guided-tk-title-input"
+    ],
+    "source": "[民法176・177・94・96・545条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "当事者間の変動と対抗要件を分ける",
+        "teachingSections": [
+          "所有権が移ることと、第三者へ主張できること",
+          "「第三者」は、売買当事者以外の全員という意味ではない",
+          "二重譲渡では、登記の先後が問題になります",
+          "登記に書かれていれば、必ず真実とは限りません",
+          "共有物は、行為の種類と持分を確認します",
+          "共有の多数決は、人数の多さだけでは決まりません",
+          "登記記録は、表示と権利に分けて読みます",
+          "原因が違うと、第三者保護の考え方も変わる",
+          "根拠となる条文"
+        ],
+        "practice": "tk-title-check",
+        "guided": "guided-tk-title",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "二重譲渡の基本を説明する",
+        "teachingSections": [
+          "所有権が移ることと、第三者へ主張できること",
+          "「第三者」は、売買当事者以外の全員という意味ではない",
+          "二重譲渡では、登記の先後が問題になります",
+          "登記に書かれていれば、必ず真実とは限りません",
+          "共有物は、行為の種類と持分を確認します",
+          "共有の多数決は、人数の多さだけでは決まりません",
+          "登記記録は、表示と権利に分けて読みます",
+          "原因が違うと、第三者保護の考え方も変わる",
+          "根拠となる条文"
+        ],
+        "practice": "tk-title-check",
+        "guided": "guided-tk-title",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "共有と登記の読み方を確かめる",
+        "teachingSections": [
+          "所有権が移ることと、第三者へ主張できること",
+          "「第三者」は、売買当事者以外の全員という意味ではない",
+          "二重譲渡では、登記の先後が問題になります",
+          "登記に書かれていれば、必ず真実とは限りません",
+          "共有物は、行為の種類と持分を確認します",
+          "共有の多数決は、人数の多さだけでは決まりません",
+          "登記記録は、表示と権利に分けて読みます",
+          "原因が違うと、第三者保護の考え方も変わる",
+          "根拠となる条文"
+        ],
+        "practice": "tk-title-check",
+        "guided": "guided-tk-title",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-title-comparison",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-title-source-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-title",
+      "expected": "1",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-mortgage",
+    "decision": "deepen",
+    "anchors": [
+      "tk-mortgage-parties",
+      "tk-mortgage-distribution-route",
+      "tk-mortgage-advanced",
+      "tk-mortgage-time-table",
+      "tk-mortgage-time-table-caption",
+      "guided-tk-mortgage",
+      "guided-tk-mortgage-title",
+      "guided-tk-mortgage-prompt",
+      "guided-tk-mortgage-input"
+    ],
+    "source": "[民法304・369〜398条の22](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "担保の役割と順位を説明する",
+        "teachingSections": [
+          "抵当権は、不動産を使い続けながら担保にします",
+          "債務を負う人と、担保だけを提供する人を分ける",
+          "優先順位から配当を計算します",
+          "何が担保に含まれるかを確認します",
+          "売却代金などに及ぶ場合は、物上代位を検討します",
+          "法定地上権は、設定時と競売後を比べます",
+          "元本と極度額を、同じ残高表へ書きません",
+          "根抵当権は、継続取引のための枠です",
+          "建物と土地の所有者を、設定時と競売後に比較する",
+          "根拠となる条文"
+        ],
+        "practice": "tk-mortgage-check",
+        "guided": "guided-tk-mortgage",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "配当の基本計算をする",
+        "teachingSections": [
+          "抵当権は、不動産を使い続けながら担保にします",
+          "債務を負う人と、担保だけを提供する人を分ける",
+          "優先順位から配当を計算します",
+          "何が担保に含まれるかを確認します",
+          "売却代金などに及ぶ場合は、物上代位を検討します",
+          "法定地上権は、設定時と競売後を比べます",
+          "元本と極度額を、同じ残高表へ書きません",
+          "根抵当権は、継続取引のための枠です",
+          "建物と土地の所有者を、設定時と競売後に比較する",
+          "根拠となる条文"
+        ],
+        "practice": "tk-mortgage-check",
+        "guided": "guided-tk-mortgage",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "抵当権と根抵当権の違いを述べる",
+        "teachingSections": [
+          "抵当権は、不動産を使い続けながら担保にします",
+          "債務を負う人と、担保だけを提供する人を分ける",
+          "優先順位から配当を計算します",
+          "何が担保に含まれるかを確認します",
+          "売却代金などに及ぶ場合は、物上代位を検討します",
+          "法定地上権は、設定時と競売後を比べます",
+          "元本と極度額を、同じ残高表へ書きません",
+          "根抵当権は、継続取引のための枠です",
+          "建物と土地の所有者を、設定時と競売後に比較する",
+          "根拠となる条文"
+        ],
+        "practice": "tk-mortgage-check",
+        "guided": "guided-tk-mortgage",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-mortgage-distribution-route",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-mortgage-time-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-mortgage",
+      "expected": "700",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-performance",
+    "decision": "deepen",
+    "anchors": [
+      "tk-performance-payee",
+      "tk-performance-setoff-flow",
+      "tk-performance-assignment",
+      "tk-performance-assignment-table",
+      "tk-performance-assignment-table-caption",
+      "guided-tk-performance",
+      "guided-tk-performance-title",
+      "guided-tk-performance-prompt",
+      "guided-tk-performance-input"
+    ],
+    "source": "[民法466〜508条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "弁済で債権が消える条件を確かめる",
+        "teachingSections": [
+          "弁済は、誰に何を渡すかまで確認します",
+          "支払先を間違えた場合に、債務は消えるか",
+          "相殺は、向きの反対の債権を差し引きます",
+          "債権譲渡では、債務者の同意が常に必要なわけではありません",
+          "連帯債務と保証は、人が複数いる理由が違います",
+          "債権が移っても、債務者が二重払いしないように考えます",
+          "個人根保証は、極度額と対象を確認します",
+          "債権譲渡は、債務者への通知と第三者への対抗を分ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-performance-check",
+        "guided": "guided-tk-performance",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "相殺の差額を計算する",
+        "teachingSections": [
+          "弁済は、誰に何を渡すかまで確認します",
+          "支払先を間違えた場合に、債務は消えるか",
+          "相殺は、向きの反対の債権を差し引きます",
+          "債権譲渡では、債務者の同意が常に必要なわけではありません",
+          "連帯債務と保証は、人が複数いる理由が違います",
+          "債権が移っても、債務者が二重払いしないように考えます",
+          "個人根保証は、極度額と対象を確認します",
+          "債権譲渡は、債務者への通知と第三者への対抗を分ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-performance-check",
+        "guided": "guided-tk-performance",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "保証と債権譲渡の要件を区別する",
+        "teachingSections": [
+          "弁済は、誰に何を渡すかまで確認します",
+          "支払先を間違えた場合に、債務は消えるか",
+          "相殺は、向きの反対の債権を差し引きます",
+          "債権譲渡では、債務者の同意が常に必要なわけではありません",
+          "連帯債務と保証は、人が複数いる理由が違います",
+          "債権が移っても、債務者が二重払いしないように考えます",
+          "個人根保証は、極度額と対象を確認します",
+          "債権譲渡は、債務者への通知と第三者への対抗を分ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-performance-check",
+        "guided": "guided-tk-performance",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-performance-setoff-flow",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-performance-assignment-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-performance",
+      "expected": "110",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-remedies",
+    "decision": "deepen",
+    "anchors": [
+      "tk-remedies-remedy-choice",
+      "tk-remedies-remedy-map",
+      "tk-remedies-remedy-map-caption",
+      "tk-remedies-nonconformity",
+      "tk-remedies-document-route",
+      "guided-tk-remedies",
+      "guided-tk-remedies-title",
+      "guided-tk-remedies-prompt",
+      "guided-tk-remedies-input"
+    ],
+    "source": "[民法415・533・541〜545・557・562〜567条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "解除と損害賠償の要件を分ける",
+        "teachingSections": [
+          "約束どおりに履行されないときは、救済を選びます",
+          "履行、賠償、解除は、それぞれの要件から判断する",
+          "解除は、催告をする場合と不要な場合を分けます",
+          "契約不適合では、何を約束したかを確認します",
+          "手付解除は、債務不履行による解除とは違います",
+          "修補できる不具合と、履行できない場合を比べます",
+          "不法行為では、契約の相手以外も問題になります",
+          "契約不適合では、不具合の存在から救済へ橋を架ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-remedies-check",
+        "guided": "guided-tk-remedies",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "契約不適合の救済を選ぶ",
+        "teachingSections": [
+          "約束どおりに履行されないときは、救済を選びます",
+          "履行、賠償、解除は、それぞれの要件から判断する",
+          "解除は、催告をする場合と不要な場合を分けます",
+          "契約不適合では、何を約束したかを確認します",
+          "手付解除は、債務不履行による解除とは違います",
+          "修補できる不具合と、履行できない場合を比べます",
+          "不法行為では、契約の相手以外も問題になります",
+          "契約不適合では、不具合の存在から救済へ橋を架ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-remedies-check",
+        "guided": "guided-tk-remedies",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "不法行為と契約責任を区別する",
+        "teachingSections": [
+          "約束どおりに履行されないときは、救済を選びます",
+          "履行、賠償、解除は、それぞれの要件から判断する",
+          "解除は、催告をする場合と不要な場合を分けます",
+          "契約不適合では、何を約束したかを確認します",
+          "手付解除は、債務不履行による解除とは違います",
+          "修補できる不具合と、履行できない場合を比べます",
+          "不法行為では、契約の相手以外も問題になります",
+          "契約不適合では、不具合の存在から救済へ橋を架ける",
+          "根拠となる条文"
+        ],
+        "practice": "tk-remedies-check",
+        "guided": "guided-tk-remedies",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-remedies-remedy-map",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-remedies-document-route",
+        "job": "concept/decision-sequence"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-remedies",
+      "expected": "240",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-lease",
+    "decision": "deepen",
+    "anchors": [
+      "tk-lease-foundation",
+      "tk-lease-purpose-table",
+      "tk-lease-purpose-table-caption",
+      "tk-lease-cashflow",
+      "tk-lease-deposit-flow",
+      "guided-tk-lease",
+      "guided-tk-lease-title",
+      "guided-tk-lease-prompt",
+      "guided-tk-lease-input"
+    ],
+    "source": "[民法601〜622条の2](https://laws.e-gov.go.jp/law/129AC0000000089)、[借地借家法2・10・31条](https://laws.e-gov.go.jp/law/403AC0000000090)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "民法と借地借家法の適用を分ける",
+        "teachingSections": [
+          "土地を借りる目的によって、使う法律が変わります",
+          "何を借り、何のために使うかを一文にする",
+          "普通借地は、存続期間と更新を順に読みます",
+          "定期借地は、種類ごとの方式が重要です",
+          "普通借家では、更新拒絶の条件を確認します",
+          "定期建物賃貸借は、契約と事前説明を分けます",
+          "借地と借家で、第三者への主張の根拠が違います",
+          "賃料・修繕・敷金を契約終了までつなげます",
+          "使用中の負担と、返還時の精算をつなぐ",
+          "根拠となる条文"
+        ],
+        "practice": "tk-lease-check",
+        "guided": "guided-tk-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "普通と定期の契約を比較する",
+        "teachingSections": [
+          "土地を借りる目的によって、使う法律が変わります",
+          "何を借り、何のために使うかを一文にする",
+          "普通借地は、存続期間と更新を順に読みます",
+          "定期借地は、種類ごとの方式が重要です",
+          "普通借家では、更新拒絶の条件を確認します",
+          "定期建物賃貸借は、契約と事前説明を分けます",
+          "借地と借家で、第三者への主張の根拠が違います",
+          "賃料・修繕・敷金を契約終了までつなげます",
+          "使用中の負担と、返還時の精算をつなぐ",
+          "根拠となる条文"
+        ],
+        "practice": "tk-lease-check",
+        "guided": "guided-tk-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "更新と対抗要件を説明する",
+        "teachingSections": [
+          "土地を借りる目的によって、使う法律が変わります",
+          "何を借り、何のために使うかを一文にする",
+          "普通借地は、存続期間と更新を順に読みます",
+          "定期借地は、種類ごとの方式が重要です",
+          "普通借家では、更新拒絶の条件を確認します",
+          "定期建物賃貸借は、契約と事前説明を分けます",
+          "借地と借家で、第三者への主張の根拠が違います",
+          "賃料・修繕・敷金を契約終了までつなげます",
+          "使用中の負担と、返還時の精算をつなぐ",
+          "根拠となる条文"
+        ],
+        "practice": "tk-lease-check",
+        "guided": "guided-tk-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-lease-purpose-table",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-lease-deposit-flow",
+        "job": "concept/decision-sequence"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-lease",
+      "expected": "14",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-inheritance",
+    "decision": "deepen",
+    "anchors": [
+      "tk-inheritance-family",
+      "tk-inheritance-order",
+      "tk-inheritance-adjustment",
+      "tk-inheritance-special-benefit-table",
+      "tk-inheritance-special-benefit-table-caption",
+      "guided-tk-inheritance",
+      "guided-tk-inheritance-title",
+      "guided-tk-inheritance-prompt",
+      "guided-tk-inheritance-input"
+    ],
+    "source": "[民法887〜904条の2・915〜939条・960〜1024条・1028〜1048条](https://laws.e-gov.go.jp/law/129AC0000000089)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "法定相続分を計算する",
+        "teachingSections": [
+          "相続人と相続分を別々に決めます",
+          "親族図から、先順位の人がいるかを確認する",
+          "配偶者と一緒に相続する人で、割合が変わります",
+          "承認と放棄には、判断する期間があります",
+          "遺言は、方式と効力を確かめます",
+          "遺留分は、兄弟姉妹には認められません",
+          "相続人の組合せを変えて、割合を計算します",
+          "相続した土地の登記も確認します",
+          "生前贈与や貢献があるときは、計算の対象を確かめる",
+          "根拠となる条文"
+        ],
+        "practice": "tk-inheritance-check",
+        "guided": "guided-tk-inheritance",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "承認・放棄の期限を確認する",
+        "teachingSections": [
+          "相続人と相続分を別々に決めます",
+          "親族図から、先順位の人がいるかを確認する",
+          "配偶者と一緒に相続する人で、割合が変わります",
+          "承認と放棄には、判断する期間があります",
+          "遺言は、方式と効力を確かめます",
+          "遺留分は、兄弟姉妹には認められません",
+          "相続人の組合せを変えて、割合を計算します",
+          "相続した土地の登記も確認します",
+          "生前贈与や貢献があるときは、計算の対象を確かめる",
+          "根拠となる条文"
+        ],
+        "practice": "tk-inheritance-check",
+        "guided": "guided-tk-inheritance",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "遺言と遺留分の役割を分ける",
+        "teachingSections": [
+          "相続人と相続分を別々に決めます",
+          "親族図から、先順位の人がいるかを確認する",
+          "配偶者と一緒に相続する人で、割合が変わります",
+          "承認と放棄には、判断する期間があります",
+          "遺言は、方式と効力を確かめます",
+          "遺留分は、兄弟姉妹には認められません",
+          "相続人の組合せを変えて、割合を計算します",
+          "相続した土地の登記も確認します",
+          "生前贈与や貢献があるときは、計算の対象を確かめる",
+          "根拠となる条文"
+        ],
+        "practice": "tk-inheritance-check",
+        "guided": "guided-tk-inheritance",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-inheritance-order",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-inheritance-special-benefit-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-inheritance",
+      "expected": "1000",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-condo",
+    "decision": "deepen",
+    "anchors": [
+      "tk-condo-management",
+      "tk-condo-decision-route",
+      "tk-condo-notice-review",
+      "tk-condo-two-meetings",
+      "tk-condo-two-meetings-caption",
+      "guided-tk-condo",
+      "guided-tk-condo-title",
+      "guided-tk-condo-prompt",
+      "guided-tk-condo-input",
+      "tk-unit-2-cumulative",
+      "tk-unit-2-source-sheet",
+      "tk-unit-2-source-sheet-caption"
+    ],
+    "source": "[区分所有法17・18・25・26・31・34〜40・57〜62条](https://laws.e-gov.go.jp/law/337AC0000000069_20260401_507AC0000000047)、[国土交通省・法務省の改正法説明資料20〜24頁](https://www.mlit.go.jp/jutakukentiku/house/content/002028748.pdf)",
+    "retained": "original headings, useful examples, objectives and glossary preserved",
+    "JapaneseReview": "冒頭の概念定義、条件から効果までのつながり、具体例の主語と時点を通読して修正",
+    "objectives": [
+      {
+        "objective": "専有部分と共用部分を分ける",
+        "teachingSections": [
+          "マンションは、専有部分と共用部分を分けます",
+          "共用部分は、保存、管理、変更を分ける",
+          "2026年4月1日から、多数決の母数に注意が必要です",
+          "人数と議決権の二つを確かめます",
+          "共用部分の変更と管理を区別します",
+          "建替えと規約変更を、同じ母数で計算しません",
+          "出席者を変えると、規約変更の賛成数も変わります",
+          "招集手続の開始日が、経過措置に関わります",
+          "招集通知は、誰が、いつ、何を知らせるか",
+          "ユニット総合演習　権利の種類に合わせて資料を読む",
+          "根拠となる条文"
+        ],
+        "practice": "tk-condo-check",
+        "guided": "guided-tk-condo",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "改正後の定足数と多数決の母数を計算する",
+        "teachingSections": [
+          "マンションは、専有部分と共用部分を分けます",
+          "共用部分は、保存、管理、変更を分ける",
+          "2026年4月1日から、多数決の母数に注意が必要です",
+          "人数と議決権の二つを確かめます",
+          "共用部分の変更と管理を区別します",
+          "建替えと規約変更を、同じ母数で計算しません",
+          "出席者を変えると、規約変更の賛成数も変わります",
+          "招集手続の開始日が、経過措置に関わります",
+          "招集通知は、誰が、いつ、何を知らせるか",
+          "ユニット総合演習　権利の種類に合わせて資料を読む",
+          "根拠となる条文"
+        ],
+        "practice": "tk-condo-check",
+        "guided": "guided-tk-condo",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "建替えと規約変更を区別する",
+        "teachingSections": [
+          "マンションは、専有部分と共用部分を分けます",
+          "共用部分は、保存、管理、変更を分ける",
+          "2026年4月1日から、多数決の母数に注意が必要です",
+          "人数と議決権の二つを確かめます",
+          "共用部分の変更と管理を区別します",
+          "建替えと規約変更を、同じ母数で計算しません",
+          "出席者を変えると、規約変更の賛成数も変わります",
+          "招集手続の開始日が、経過措置に関わります",
+          "招集通知は、誰が、いつ、何を知らせるか",
+          "ユニット総合演習　権利の種類に合わせて資料を読む",
+          "根拠となる条文"
+        ],
+        "practice": "tk-condo-check",
+        "guided": "guided-tk-condo",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-condo-decision-route",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-condo-two-meetings",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-unit-2-source-sheet",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-condo",
+      "expected": "60",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。",
+    "unitCheckpoint": {
+      "anchor": "tk-unit-2-cumulative",
+      "skills": [
+        "共有の持分決定",
+        "借家の対抗",
+        "規約変更の母数",
+        "抵当権配当"
+      ],
+      "source": "tk-unit-2-source-sheet",
+      "feedback": "制度を選び直す4問の静的な解説"
+    }
+  },
+  {
+    "id": "tk-shared-land",
+    "decision": "add",
+    "after": "tk-title",
+    "anchors": [
+      "tk-shared-land-action",
+      "tk-shared-land-flow",
+      "tk-shared-land-votes",
+      "tk-shared-land-votes-caption",
+      "tk-shared-land-partition",
+      "guided-tk-shared-land",
+      "guided-tk-shared-land-title",
+      "guided-tk-shared-land-prompt",
+      "guided-tk-shared-land-input",
+      "tk-shared-land-neighbors"
+    ],
+    "source": "[民法209〜213・233・249〜258・280・281条](https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033)",
+    "JapaneseReview": "定義、仕組み、基本例、条件変更、独立問題と解答を一続きの説明として通読",
+    "objectives": [
+      {
+        "objective": "共有物の行為を分類し持分による決定方法を選ぶ",
+        "teachingSections": [
+          "共有は、一つの物を割合で共同所有する仕組み",
+          "何人の賛成かを数える前に、行為を分類する",
+          "共有を解消したい場合は、持分を譲る方法と分割を求める方法がある",
+          "相隣関係は、隣り合う土地の利用を調整する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-shared-land-check",
+        "guided": "guided-tk-shared-land",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "共有解消と持分処分の違いを説明する",
+        "teachingSections": [
+          "共有は、一つの物を割合で共同所有する仕組み",
+          "何人の賛成かを数える前に、行為を分類する",
+          "共有を解消したい場合は、持分を譲る方法と分割を求める方法がある",
+          "相隣関係は、隣り合う土地の利用を調整する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-shared-land-check",
+        "guided": "guided-tk-shared-land",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "通行・隣地使用・越境した枝の処理を条件から判断する",
+        "teachingSections": [
+          "共有は、一つの物を割合で共同所有する仕組み",
+          "何人の賛成かを数える前に、行為を分類する",
+          "共有を解消したい場合は、持分を譲る方法と分割を求める方法がある",
+          "相隣関係は、隣り合う土地の利用を調整する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-shared-land-check",
+        "guided": "guided-tk-shared-land",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-shared-land-flow",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-shared-land-votes",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-shared-land",
+      "expected": "50",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-joint-guarantee",
+    "decision": "add",
+    "after": "tk-performance",
+    "anchors": [
+      "tk-joint-guarantee-external",
+      "tk-joint-guarantee-flow",
+      "tk-joint-guarantee-surety",
+      "tk-joint-guarantee-defense-table",
+      "tk-joint-guarantee-defense-table-caption",
+      "guided-tk-joint-guarantee",
+      "guided-tk-joint-guarantee-title",
+      "guided-tk-joint-guarantee-prompt",
+      "guided-tk-joint-guarantee-input",
+      "tk-joint-guarantee-cap"
+    ],
+    "source": "[民法436〜465条の10](https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033)",
+    "JapaneseReview": "定義、仕組み、基本例、条件変更、独立問題と解答を一続きの説明として通読",
+    "objectives": [
+      {
+        "objective": "連帯債務の外部への責任と内部の負担を計算する",
+        "teachingSections": [
+          "請求できる額と、最終的に負担する額を分ける",
+          "連帯債務者の一人が払うと、二重に回収しない",
+          "保証では、主たる債務と保証債務の二つがある",
+          "個人根保証では、将来どこまで増えるかを先に制限する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-joint-guarantee-check",
+        "guided": "guided-tk-joint-guarantee",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "保証と連帯保証で使える抗弁を区別する",
+        "teachingSections": [
+          "請求できる額と、最終的に負担する額を分ける",
+          "連帯債務者の一人が払うと、二重に回収しない",
+          "保証では、主たる債務と保証債務の二つがある",
+          "個人根保証では、将来どこまで増えるかを先に制限する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-joint-guarantee-check",
+        "guided": "guided-tk-joint-guarantee",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "個人根保証の極度額と法定方式を確認する",
+        "teachingSections": [
+          "請求できる額と、最終的に負担する額を分ける",
+          "連帯債務者の一人が払うと、二重に回収しない",
+          "保証では、主たる債務と保証債務の二つがある",
+          "個人根保証では、将来どこまで増えるかを先に制限する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-joint-guarantee-check",
+        "guided": "guided-tk-joint-guarantee",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-joint-guarantee-flow",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-joint-guarantee-defense-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-joint-guarantee",
+      "expected": "600",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-services-tort",
+    "decision": "add",
+    "after": "tk-remedies",
+    "anchors": [
+      "tk-services-tort-contract-map",
+      "tk-services-tort-comparison",
+      "tk-services-tort-comparison-caption",
+      "guided-tk-services-tort",
+      "guided-tk-services-tort-title",
+      "guided-tk-services-tort-prompt",
+      "guided-tk-services-tort-input",
+      "tk-services-tort-mandate",
+      "tk-services-tort-third-person",
+      "tk-services-tort-workflow"
+    ],
+    "source": "[民法632〜656・709〜724条の2](https://laws.e-gov.go.jp/law/129AC0000000089_20260401_506AC0000000033)",
+    "JapaneseReview": "定義、仕組み、基本例、条件変更、独立問題と解答を一続きの説明として通読",
+    "objectives": [
+      {
+        "objective": "請負と委任で約束する義務と報酬を区別する",
+        "teachingSections": [
+          "何を引き受けたかによって、義務の内容が変わる",
+          "請負は、完成した仕事の結果に報酬を対応させる",
+          "委任では、結果と注意義務を分ける",
+          "契約がない被害者には、不法行為の根拠を確かめる",
+          "不法行為の時効は、起算点と被害の種類を確認する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-services-tort-check",
+        "guided": "guided-tk-services-tort",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "仕事の途中の終了と契約不適合を事例へ当てはめる",
+        "teachingSections": [
+          "何を引き受けたかによって、義務の内容が変わる",
+          "請負は、完成した仕事の結果に報酬を対応させる",
+          "委任では、結果と注意義務を分ける",
+          "契約がない被害者には、不法行為の根拠を確かめる",
+          "不法行為の時効は、起算点と被害の種類を確認する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-services-tort-check",
+        "guided": "guided-tk-services-tort",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "契約外の被害者に対する不法行為や工作物責任を判断する",
+        "teachingSections": [
+          "何を引き受けたかによって、義務の内容が変わる",
+          "請負は、完成した仕事の結果に報酬を対応させる",
+          "委任では、結果と注意義務を分ける",
+          "契約がない被害者には、不法行為の根拠を確かめる",
+          "不法行為の時効は、起算点と被害の種類を確認する",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-services-tort-check",
+        "guided": "guided-tk-services-tort",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-services-tort-comparison",
+        "job": "worked-conditions/comparison"
+      },
+      {
+        "anchor": "tk-services-tort-workflow",
+        "job": "concept/decision-sequence"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-services-tort",
+      "expected": "45",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-land-lease",
+    "decision": "add",
+    "after": "tk-lease",
+    "anchors": [
+      "tk-land-lease-period",
+      "tk-land-lease-timeline",
+      "tk-land-lease-rebuilding",
+      "tk-land-lease-rebuild-table",
+      "tk-land-lease-rebuild-table-caption",
+      "guided-tk-land-lease",
+      "guided-tk-land-lease-title",
+      "guided-tk-land-lease-prompt",
+      "guided-tk-land-lease-input",
+      "tk-land-lease-third-party",
+      "tk-land-lease-fixed"
+    ],
+    "source": "[借地借家法2〜25条](https://laws.e-gov.go.jp/law/403AC0000000090_20230614_505AC0000000053)",
+    "JapaneseReview": "定義、仕組み、基本例、条件変更、独立問題と解答を一続きの説明として通読",
+    "objectives": [
+      {
+        "objective": "普通借地の期間・更新・再築の効果を時系列から判断する",
+        "teachingSections": [
+          "土地の上に自分の建物を持つ権利を考える",
+          "普通借地は、最初と更新後で法定の期間が違う",
+          "再築では、更新の前か後かを先に決める",
+          "借地権を第三者へ主張するために、建物の登記を確認する",
+          "建物買取請求は、終了の原因を確かめる",
+          "定期の借地は、期間だけでなく特約と方式を読む",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-land-lease-check",
+        "guided": "guided-tk-land-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "借地権の対抗と建物譲渡時の承諾・許可を区別する",
+        "teachingSections": [
+          "土地の上に自分の建物を持つ権利を考える",
+          "普通借地は、最初と更新後で法定の期間が違う",
+          "再築では、更新の前か後かを先に決める",
+          "借地権を第三者へ主張するために、建物の登記を確認する",
+          "建物買取請求は、終了の原因を確かめる",
+          "定期の借地は、期間だけでなく特約と方式を読む",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-land-lease-check",
+        "guided": "guided-tk-land-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "定期借地等の種類を用途・期間・方式から選ぶ",
+        "teachingSections": [
+          "土地の上に自分の建物を持つ権利を考える",
+          "普通借地は、最初と更新後で法定の期間が違う",
+          "再築では、更新の前か後かを先に決める",
+          "借地権を第三者へ主張するために、建物の登記を確認する",
+          "建物買取請求は、終了の原因を確かめる",
+          "定期の借地は、期間だけでなく特約と方式を読む",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-land-lease-check",
+        "guided": "guided-tk-land-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-land-lease-timeline",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-land-lease-rebuild-table",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-land-lease",
+      "expected": "60",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  },
+  {
+    "id": "tk-building-lease",
+    "decision": "add",
+    "after": "tk-land-lease",
+    "anchors": [
+      "tk-building-lease-ordinary",
+      "tk-building-lease-ordinary-flow",
+      "tk-building-lease-fixed-process",
+      "tk-building-lease-explanation-roles",
+      "tk-building-lease-three-times",
+      "tk-building-lease-three-times-caption",
+      "guided-tk-building-lease",
+      "guided-tk-building-lease-title",
+      "guided-tk-building-lease-prompt",
+      "guided-tk-building-lease-input",
+      "tk-building-lease-midterm"
+    ],
+    "source": "[借地借家法26〜40条](https://laws.e-gov.go.jp/law/403AC0000000090_20230614_505AC0000000053)",
+    "JapaneseReview": "定義、仕組み、基本例、条件変更、独立問題と解答を一続きの説明として通読",
+    "objectives": [
+      {
+        "objective": "普通借家の期間と貸主の更新拒絶・解約を判断する",
+        "teachingSections": [
+          "普通借家と定期借家では、満了の意味が違う",
+          "普通借家で貸主が終わらせたい場合",
+          "定期借家は、契約前・契約時・終了前を別々に見る",
+          "一定の居住用定期借家には、借主からの中途解約の特則がある",
+          "賃料の改定と、造作の買取も契約条件を読む",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-building-lease-check",
+        "guided": "guided-tk-building-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "定期借家の契約方式・事前説明・終了通知を区別する",
+        "teachingSections": [
+          "普通借家と定期借家では、満了の意味が違う",
+          "普通借家で貸主が終わらせたい場合",
+          "定期借家は、契約前・契約時・終了前を別々に見る",
+          "一定の居住用定期借家には、借主からの中途解約の特則がある",
+          "賃料の改定と、造作の買取も契約条件を読む",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-building-lease-check",
+        "guided": "guided-tk-building-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      },
+      {
+        "objective": "居住用の中途解約や賃料・造作の条件を事例で確かめる",
+        "teachingSections": [
+          "普通借家と定期借家では、満了の意味が違う",
+          "普通借家で貸主が終わらせたい場合",
+          "定期借家は、契約前・契約時・終了前を別々に見る",
+          "一定の居住用定期借家には、借主からの中途解約の特則がある",
+          "賃料の改定と、造作の買取も契約条件を読む",
+          "復習",
+          "根拠となる条文"
+        ],
+        "practice": "tk-building-lease-check",
+        "guided": "guided-tk-building-lease",
+        "independentTask": "章末の「独立問題」又は「自分で判断する」及び解説",
+        "evidenceLevel": "teaching-and-original-practice-reviewed"
+      }
+    ],
+    "visuals": [
+      {
+        "anchor": "tk-building-lease-ordinary-flow",
+        "job": "concept/decision-sequence"
+      },
+      {
+        "anchor": "tk-building-lease-three-times",
+        "job": "worked-conditions/comparison"
+      }
+    ],
+    "guidedInput": {
+      "anchor": "guided-tk-building-lease",
+      "expected": "6",
+      "feedback": "shared numeric answer feedback; wrong or blank input retains work; static solution available",
+      "fallback": "same-page details with data-guided-solution text"
+    },
+    "lawDate": "2026-04-01",
+    "reviewed": "2026-11-21",
+    "depthReview": "元の有用な本文を保持し、概念の定義、適用理由、変化する条件、途中判断と検算を本文へ追加。新章は独立した判断手順と練習を持ち、旧章の分量を減らす移動なし。",
+    "limitations": "外部専門家による監修、実受験者の難度較正は未実施。裁判例の全類型や個別事件への法的判断を保証しない。"
+  }
+]

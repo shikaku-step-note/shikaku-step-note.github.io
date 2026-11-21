@@ -1,10 +1,16 @@
 import outline from './takken-outline.json';
 import bank from './takken-questions.json';
 import mock from './takken-mock.json';
+import mock02 from './takken-mock-02.json';
+import privateQuestions from './takken-private-questions.json';
+import businessQuestions from './takken-business-questions.json';
+import landQuestions from './takken-land-questions.json';
+import otherQuestions from './takken-other-questions.json';
+import reviewQuestions from './takken-unit-review.json';
 import sources from './takken-sources.json';
 import type { Assessment, Question } from '../lib/assessment';
-export const takkenReviewed = '2026-10-25';
-export const takkenVersion = 'takken-2026-v1';
+export const takkenReviewed = '2026-11-21';
+export const takkenVersion = 'takken-2026-v2';
 export const takkenSources = sources;
 export const takkenOutline = outline;
 export const takkenDomains: Record<string, string> = {
@@ -27,15 +33,15 @@ export const takkenUnits = [
   '土地と建物の性質',
 ];
 export const takkenSchedule = [
-  ['1〜2週', 'ユニット1：契約・意思表示・代理・時効。人物と時系列を書き、翌日に同じ例を説明します。'],
-  ['3〜6週', 'ユニット2：物権・債権・借地借家・相続・区分所有。週1日は以前の問題へ戻ります。'],
-  ['7〜10週', 'ユニット3：免許から広告・監督まで。金額・日数・当事者を表で比較します。'],
-  ['11〜13週', 'ユニット4・5：都市計画・建築・土地利用。許可と届出、面積の計算を解き直します。'],
-  ['14〜15週', 'ユニット6〜8：税・価格・需給・土地建物。統計の対象期間と法令基準日を確認します。'],
-  ['16週', '累積用語と総復習。模試は120分又は110分を別に確保し、翌日に誤答の条件を書き直します。'],
+  ['基礎の導入', 'ユニット1：契約・意思表示・代理・時効。意味を説明し、人物と時系列を描いてから条件の変わる例へ進みます。'],
+  ['権利の標準適用から応用', 'ユニット2：物権・債権・借地借家・相続・区分所有。共有・多数当事者と各契約を分けて学び、違う資料でも理由を説明します。'],
+  ['取引実務の適用', 'ユニット3：免許・説明書面・売主規制・報酬。クーリング・オフの期間、受領累計、当事者双方の上限を別の事例で確認します。'],
+  ['区域と手続の総合判断', 'ユニット4・5：都市計画・建築・土地利用。各手続の条件と順序を学び、最後に一つの敷地の資料で組み合わせます。'],
+  ['税・価格・資料の応用', 'ユニット6〜8：税の計算段階、特例の条件、価格評価、金融・広告・統計、土地建物。単位と対象を変えた資料も読みます。'],
+  ['累積復習と独立した模試2回', '各ユニット後に用語と新しい総合問題へ進み、翌日と1週間後に解き直します。全分野復習後、一般120分又は免除110分の第1回、弱点復習、第2回の順で取り組みます。'],
 ];
 export const takkenLimitations =
-  '七つの公式分野を34レッスンに整理した独自教材です。主要な制度と代表的な適用例を扱いますが、判例・個別法令の全例外や全手続を網羅するものではありません。対応表の「概説・追加学習」を確認し、公式資料や公開問題で学習を補ってください。';
+  '七つの公式分野を、基礎の説明、条件を変えた例題、資料の読解、独立した確認問題へつなげる独自教材です。法令基準日は2026年4月1日です。地域の条例、個別事案の判断、判例・手続の追加確認が必要な範囲は対応表に示します。';
 type Lesson = { data: { qualification: string; stableId: string; title: string; archived?: boolean } };
 export function takkenAssessments(lessons: Lesson[]): Assessment[] {
   const rows = outline.filter((r) =>
@@ -48,7 +54,10 @@ export function takkenAssessments(lessons: Lesson[]): Assessment[] {
     fieldNames: takkenDomains,
     lessonTitles: Object.fromEntries(rows.map((r) => [r.id, r.title])),
   };
-  const entries = bank as Record<string, Question[]>;
+  const supplements = { ...privateQuestions, ...businessQuestions, ...landQuestions, ...otherQuestions } as Record<string, Question[]>;
+  const original = bank as Record<string, Question[]>;
+  const entries = Object.fromEntries(rows.map((r) => [r.id, [...(original[r.id] ?? []), ...(supplements[r.id] ?? [])]]));
+  const reviews = reviewQuestions as Record<string, Question[]>;
   const result: Assessment[] = rows.map((r) => ({
     ...base,
     id: `${r.id}-check`,
@@ -59,7 +68,7 @@ export function takkenAssessments(lessons: Lesson[]): Assessment[] {
   }));
   for (let unit = 1; unit <= takkenUnits.length; unit++) {
     const members = rows.filter((r) => r.unit === unit);
-    const allTerms = rows.flatMap((r) => r.glossary);
+    const allTerms = [...new Map(members.flatMap((r) => r.glossary).map((term) => [term.term, term])).values()];
     const questions: Question[] = members.flatMap((r) =>
       r.glossary.map((g, i) => {
         const alternatives = allTerms
@@ -73,7 +82,7 @@ export function takkenAssessments(lessons: Lesson[]): Assessment[] {
         [options[0], options[answer]] = [options[answer]!, options[0]!];
         return {
           id: `${r.id}-term-${i + 1}`,
-          prompt: `「${g.definition}」に当てはまる用語はどれですか。`,
+          prompt: `「${r.title}」で学んだ「${g.definition}」に当てはまる用語はどれですか。`,
           options,
           answer,
           lesson: r.id,
@@ -96,7 +105,8 @@ export function takkenAssessments(lessons: Lesson[]): Assessment[] {
       title: `ユニット${unit} ${takkenUnits[unit - 1]}：総合確認`,
       kind: 'review',
       unit,
-      questions: members.flatMap((r) => entries[r.id] ?? []),
+      questions: reviews[String(unit)] ?? [],
+      instructions: '本文の例題・理解度チェックと別の問題です。入力欄の単位を確かめて解答し、条件から判断した理由も説明してください。数値入力は学習用の追加練習です。',
     });
   }
   result.push({
@@ -111,14 +121,15 @@ export function takkenAssessments(lessons: Lesson[]): Assessment[] {
     id: 'takken-review-all',
     title: '宅建士：全分野の総復習',
     kind: 'review',
-    questions: rows.flatMap((r) => entries[r.id] ?? []),
+    questions: Object.values(reviews).flat(),
+    instructions: '各ユニットの総合確認を混ぜて再利用します。初見問題としての得点とは区別し、時間を空けて解き直してください。',
   });
   const instructions =
-    '2026年4月1日施行法令を前提とする独自の四肢択一問題です。各問1点、誤答・未解答は0点。公式の難易度・出題内容を再現するものではありません。2026年度の合格基準は確認日時点で未公表であり、合否判定は行いません。科目配分は公開問題を参照した学習用の構成で、将来の出題配分を保証しません。紙にメモし、電卓は使わず取り組んでください。';
+    '2026年4月1日施行法令を前提とする独自の四肢択一問題です。各問1点、誤答・未解答は0点。2026年度の合格基準は2026年11月21日の確認時点で未公表のため、合否判定は行いません。公開問題を参照した分野配分で、実際の受験者による難度の調整は未実施です。紙にメモし、電卓・参考書は使わず取り組んでください。';
   result.push({
     ...base,
     id: 'takken-mock-general',
-    title: '宅建士：一般受験形式の模試',
+    title: '宅建士：第1回 一般受験形式の模試',
     kind: 'mock',
     minutes: 120,
     questions: mock as Question[],
@@ -127,13 +138,31 @@ export function takkenAssessments(lessons: Lesson[]): Assessment[] {
   result.push({
     ...base,
     id: 'takken-mock-exempt',
-    title: '宅建士：5問免除形式の模試',
+    title: '宅建士：第1回 5問免除形式の模試',
     kind: 'mock',
     minutes: 110,
     questions: (mock as Question[]).filter((q) => !['1', '5'].includes(q.field)),
     instructions:
       instructions +
-      '\n一般形式と45問を共有します。別の問題セットではありません。登録講習を修了した適格者向けの公式方式を参照し、土地建物・需給の5問を除いています。このサイトの受講で免除資格は得られません。',
+      '\n第1回一般形式と45問を共有します。登録講習修了者の方式を参照し、土地建物・需給の5問を除いています。免除を受けるには公式の適格条件を満たす必要があります。',
+  });
+  result.push({
+    ...base,
+    id: 'takken-mock-general-02',
+    title: '宅建士：第2回 一般受験形式の模試',
+    kind: 'mock',
+    minutes: 120,
+    questions: mock02 as Question[],
+    instructions: instructions + '\n第1回とは別の独自50問です。',
+  });
+  result.push({
+    ...base,
+    id: 'takken-mock-exempt-02',
+    title: '宅建士：第2回 5問免除形式の模試',
+    kind: 'mock',
+    minutes: 110,
+    questions: (mock02 as Question[]).filter((q) => !['1', '5'].includes(q.field)),
+    instructions: instructions + '\n第2回一般形式と45問を共有します。第1回とは別の問題です。免除を受けるには公式の適格条件を満たす必要があります。',
   });
   return result;
 }

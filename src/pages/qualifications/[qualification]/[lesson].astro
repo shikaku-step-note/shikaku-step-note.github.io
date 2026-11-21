@@ -14,7 +14,7 @@ import BokiClosingLab from '../../../components/BokiClosingLab.astro';
 import { ipSource, units } from '../../../data/it-passport';
 import { allAssessments } from '../../../data/assessments';
 import { bokiCourse } from '../../../data/bookkeeping';
-import { takkenOutline, takkenSources } from '../../../data/takken';
+import { takkenOutline, takkenSources, takkenReviewed } from '../../../data/takken';
 import { zeirishiOutline, zeirishiSources, zeirishiSubject } from '../../../data/zeirishi';
 import { zeirishiDeepLesson, zeirishiDeepUnit } from '../../../data/zeirishi-expanded';
 import { zeirishiLessonOrder } from '../../../data/zeirishi-learning-path';
@@ -211,7 +211,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
           </li>
         </ol>
       </nav>
-      <div class:list={['prose', 'lesson-content', { 'ip-lesson-content': q.id === 'it-passport' }]}>
+      <div class:list={['prose', 'lesson-content', { 'ip-lesson-content': q.id === 'it-passport', 'takken-lesson-content': takken }]}>
         <Content />
         {q.id === 'boki-beginner' && d.stableId === 'bb2-integration' && <BokiClosingLab />}
         {q.id === 'it-passport' && d.stableId === 'ip-analysis' && <IpControlChart />}
@@ -354,7 +354,7 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
             <p>
               {tax
                 ? '第76回の法令基準日：2026年4月3日。対象年分・事業年度・例の仮定を確認してください。個別の税務・会計の助言ではありません。'
-                : '法令基準日：2026年4月1日。資料確認日：2026年10月25日。個別取引・税務・建築の助言ではありません。'}
+                : `法令基準日：2026年4月1日。試験案内確認日：${takkenReviewed}。各出典の確認日はリンク先の一覧で確認できます。`}
             </p>
             <ul>
               {(deepLesson?.references ?? courseSources).map((s) => (
@@ -431,8 +431,15 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
   .lesson-content :global(.guided-lesson h3) {
     margin-top: 0;
   }
-  .lesson-content :global(.guided-number) {
+  .takken-lesson-content :global([data-guided-practice] label) {
+    display: block;
+    min-inline-size: 0;
+  }
+  .lesson-content :global(.guided-number),
+  .takken-lesson-content :global([data-guided-practice] input) {
     width: min(100%, 10rem);
+    max-inline-size: 100%;
+    box-sizing: border-box;
     padding: 0.5rem;
     font: inherit;
     color: var(--ink);
@@ -450,7 +457,8 @@ const reviewId = deepUnit?.assessments.find((a) => a.kind === 'review')?.id ?? `
     margin: 0;
   }
 
-  .ip-lesson-content :global(figure) {
+  .ip-lesson-content :global(figure),
+  .takken-lesson-content :global(figure) {
     margin-inline: 0;
   }
   .ip-lesson-content :global(figure > img) {

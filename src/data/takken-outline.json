@@ -29,6 +29,35 @@
     "order": 1
   },
   {
+    "id": "tk-capacity-followup",
+    "title": "取消し・追認・催告と原状回復を時系列で判断する",
+    "unit": 1,
+    "domain": 2,
+    "order": 2,
+    "objectives": [
+      "取消権者と追認できる時点を確かめる",
+      "催告の相手による法的効果の違いを説明する",
+      "取消し後の現存利益と期間制限を事例から判断する"
+    ],
+    "glossary": [
+      {
+        "term": "催告",
+        "definition": "一定期間内に返答や履行などを求める通知"
+      },
+      {
+        "term": "法定追認",
+        "definition": "法定の事実があると追認したものと扱う制度"
+      },
+      {
+        "term": "現存利益",
+        "definition": "その行為で得た利益のうち現に残っている利益"
+      }
+    ],
+    "sources": [
+      "civil"
+    ]
+  },
+  {
     "id": "tk-intent",
     "unit": 1,
     "domain": 2,
@@ -55,7 +84,7 @@
     "sources": [
       "civil"
     ],
-    "order": 2
+    "order": 3
   },
   {
     "id": "tk-agency",
@@ -84,7 +113,7 @@
     "sources": [
       "civil"
     ],
-    "order": 3
+    "order": 4
   },
   {
     "id": "tk-prescription",
@@ -113,7 +142,7 @@
     "sources": [
       "civil"
     ],
-    "order": 4
+    "order": 5
   },
   {
     "id": "tk-title",
@@ -143,7 +172,36 @@
       "civil",
       "registration"
     ],
-    "order": 5
+    "order": 6
+  },
+  {
+    "id": "tk-shared-land",
+    "title": "共有物の管理・分割と相隣関係を判断する",
+    "unit": 2,
+    "domain": 2,
+    "order": 7,
+    "objectives": [
+      "共有物の行為を分類し持分による決定方法を選ぶ",
+      "共有解消と持分処分の違いを説明する",
+      "通行・隣地使用・越境した枝の処理を条件から判断する"
+    ],
+    "glossary": [
+      {
+        "term": "持分",
+        "definition": "共有物について各共有者が持つ割合的な権利"
+      },
+      {
+        "term": "保存行為",
+        "definition": "物や権利の現状を維持して損傷等を防ぐ行為"
+      },
+      {
+        "term": "地役権",
+        "definition": "他人の土地を自己の土地の便益のために利用する権利"
+      }
+    ],
+    "sources": [
+      "civil"
+    ]
   },
   {
     "id": "tk-mortgage",
@@ -172,7 +230,7 @@
     "sources": [
       "civil"
     ],
-    "order": 6
+    "order": 8
   },
   {
     "id": "tk-performance",
@@ -201,7 +259,36 @@
     "sources": [
       "civil"
     ],
-    "order": 7
+    "order": 9
+  },
+  {
+    "id": "tk-joint-guarantee",
+    "title": "連帯債務・保証・個人根保証の請求と負担を分ける",
+    "unit": 2,
+    "domain": 2,
+    "order": 10,
+    "objectives": [
+      "連帯債務の外部への責任と内部の負担を計算する",
+      "保証と連帯保証で使える抗弁を区別する",
+      "個人根保証の極度額と法定方式を確認する"
+    ],
+    "glossary": [
+      {
+        "term": "連帯債務",
+        "definition": "複数の債務者がそれぞれ債務全体について履行責任を負う関係"
+      },
+      {
+        "term": "求償",
+        "definition": "他人の負担分などを立て替えた者が精算を求めること"
+      },
+      {
+        "term": "極度額",
+        "definition": "根保証等で責任を負う範囲の上限として定める金額"
+      }
+    ],
+    "sources": [
+      "civil"
+    ]
   },
   {
     "id": "tk-remedies",
@@ -230,7 +317,36 @@
     "sources": [
       "civil"
     ],
-    "order": 8
+    "order": 11
+  },
+  {
+    "id": "tk-services-tort",
+    "title": "請負・委任と不法行為を、義務の根拠から読み分ける",
+    "unit": 2,
+    "domain": 2,
+    "order": 12,
+    "objectives": [
+      "請負と委任で約束する義務と報酬を区別する",
+      "仕事の途中の終了と契約不適合を事例へ当てはめる",
+      "契約外の被害者に対する不法行為や工作物責任を判断する"
+    ],
+    "glossary": [
+      {
+        "term": "請負",
+        "definition": "仕事を完成することとその結果への報酬を約束する契約"
+      },
+      {
+        "term": "善管注意義務",
+        "definition": "その立場や業務に通常求められる注意を尽くす義務"
+      },
+      {
+        "term": "工作物責任",
+        "definition": "土地の工作物の設置又は保存の瑕疵から生じた損害に関する責任"
+      }
+    ],
+    "sources": [
+      "civil"
+    ]
   },
   {
     "id": "tk-lease",
@@ -260,7 +376,65 @@
       "civil",
       "lease"
     ],
-    "order": 9
+    "order": 13
+  },
+  {
+    "id": "tk-land-lease",
+    "title": "普通借地・再築・定期借地を時系列と契約方式で読む",
+    "unit": 2,
+    "domain": 2,
+    "order": 14,
+    "objectives": [
+      "普通借地の期間・更新・再築の効果を時系列から判断する",
+      "借地権の対抗と建物譲渡時の承諾・許可を区別する",
+      "定期借地等の種類を用途・期間・方式から選ぶ"
+    ],
+    "glossary": [
+      {
+        "term": "借地権",
+        "definition": "建物の所有を目的とする地上権又は土地の賃借権"
+      },
+      {
+        "term": "建物買取請求権",
+        "definition": "一定の要件で借地上の建物等を時価で買い取るよう求める権利"
+      },
+      {
+        "term": "再築",
+        "definition": "滅失又は取壊しの後に新たに建物を築造すること"
+      }
+    ],
+    "sources": [
+      "lease"
+    ]
+  },
+  {
+    "id": "tk-building-lease",
+    "title": "普通借家・定期借家の更新、説明、終了通知を読み分ける",
+    "unit": 2,
+    "domain": 2,
+    "order": 15,
+    "objectives": [
+      "普通借家の期間と貸主の更新拒絶・解約を判断する",
+      "定期借家の契約方式・事前説明・終了通知を区別する",
+      "居住用の中途解約や賃料・造作の条件を事例で確かめる"
+    ],
+    "glossary": [
+      {
+        "term": "正当事由",
+        "definition": "貸主と借主の必要性等を総合して更新拒絶や解約の正当性を判断する要件"
+      },
+      {
+        "term": "定期建物賃貸借",
+        "definition": "所定の契約方式と事前説明等によって更新がない旨を定める建物賃貸借"
+      },
+      {
+        "term": "造作",
+        "definition": "借主が付加した建具等のうち建物の使用に客観的な便益を与える設備等"
+      }
+    ],
+    "sources": [
+      "lease"
+    ]
   },
   {
     "id": "tk-inheritance",
@@ -290,7 +464,7 @@
       "civil",
       "registration"
     ],
-    "order": 10
+    "order": 16
   },
   {
     "id": "tk-condo",
@@ -320,7 +494,7 @@
       "condo",
       "condo-reform"
     ],
-    "order": 11
+    "order": 17
   },
   {
     "id": "tk-license",
@@ -349,7 +523,7 @@
     "sources": [
       "business"
     ],
-    "order": 12
+    "order": 18
   },
   {
     "id": "tk-practitioner",
@@ -379,7 +553,7 @@
       "business",
       "entry"
     ],
-    "order": 13
+    "order": 19
   },
   {
     "id": "tk-office",
@@ -408,7 +582,7 @@
     "sources": [
       "business"
     ],
-    "order": 14
+    "order": 20
   },
   {
     "id": "tk-guarantee",
@@ -437,7 +611,7 @@
     "sources": [
       "business"
     ],
-    "order": 15
+    "order": 21
   },
   {
     "id": "tk-brokerage",
@@ -467,7 +641,7 @@
       "business",
       "conduct"
     ],
-    "order": 16
+    "order": 22
   },
   {
     "id": "tk-disclosure",
@@ -486,7 +660,7 @@
       },
       {
         "term": "35条書面",
-        "definition": "重要事項を記載し記名した宅建士の書面"
+        "definition": "法定の重要事項を記載し、宅建士が記名する書面"
       },
       {
         "term": "IT重説",
@@ -497,7 +671,7 @@
       "business",
       "it-explanation"
     ],
-    "order": 17
+    "order": 23
   },
   {
     "id": "tk-document",
@@ -527,7 +701,7 @@
       "business",
       "civil"
     ],
-    "order": 18
+    "order": 24
   },
   {
     "id": "tk-protection",
@@ -556,7 +730,65 @@
     "sources": [
       "business"
     ],
-    "order": 19
+    "order": 25
+  },
+  {
+    "id": "tk-cooling",
+    "title": "宅建のクーリングオフ：場所・8日間・解除の順序",
+    "unit": 3,
+    "domain": 7,
+    "order": 26,
+    "objectives": [
+      "申込みと契約の場所から適用対象を判断する",
+      "法定告知と8日間、引渡し・全額支払の条件を判断する",
+      "撤回の方法・効力と手付解除の違いを説明する"
+    ],
+    "glossary": [
+      {
+        "term": "申込みの撤回",
+        "definition": "既に行った買受けの申込みを法定の条件で取りやめること"
+      },
+      {
+        "term": "発信時の効力",
+        "definition": "撤回等の書面を発した時点で法律上の効果が生じること"
+      },
+      {
+        "term": "事務所等",
+        "definition": "クーリングオフの適用から除かれる事務所や省令で定める場所"
+      }
+    ],
+    "sources": [
+      "business"
+    ]
+  },
+  {
+    "id": "tk-advance-payments",
+    "title": "手付金等の保全措置：累計・完成前後・境界の計算",
+    "unit": 3,
+    "domain": 7,
+    "order": 27,
+    "objectives": [
+      "契約時の完成状態と保全対象の金銭を区別する",
+      "累計額・割合・1,000万円の条件を独立に計算する",
+      "保証・保険・保管の違いと支払拒絶を説明する"
+    ],
+    "glossary": [
+      {
+        "term": "手付金等",
+        "definition": "契約締結日以後、引渡し前に支払われ代金に充当される金銭"
+      },
+      {
+        "term": "累計受領額",
+        "definition": "今回受領しようとする額に既に受領した対象額を加えた額"
+      },
+      {
+        "term": "指定保管機関",
+        "definition": "完成物件の手付金等について法定の保管措置を行う指定機関"
+      }
+    ],
+    "sources": [
+      "business"
+    ]
   },
   {
     "id": "tk-reward",
@@ -586,7 +818,37 @@
       "business",
       "reward"
     ],
-    "order": 20
+    "order": 28
+  },
+  {
+    "id": "tk-reward-cases",
+    "title": "仲介手数料の複合計算：代理・交換・権利金・空家特例",
+    "unit": 3,
+    "domain": 7,
+    "order": 29,
+    "objectives": [
+      "代理・交換・権利金に応じて計算の基礎と上限を選ぶ",
+      "低廉な空家等と長期の空家等の特例を区別する",
+      "片側上限・双方合計・承諾と合意を併せて点検する"
+    ],
+    "glossary": [
+      {
+        "term": "権利金",
+        "definition": "権利設定の対価として支払われ返還されない金銭"
+      },
+      {
+        "term": "長期の空家等",
+        "definition": "現に長期間利用されていないか、将来にわたり利用見込みがない宅地又は建物"
+      },
+      {
+        "term": "合計上限",
+        "definition": "依頼者と相手方など複数から受ける報酬を合わせた受領限度"
+      }
+    ],
+    "sources": [
+      "business",
+      "reward"
+    ]
   },
   {
     "id": "tk-conduct",
@@ -616,7 +878,38 @@
       "business",
       "housing-warranty"
     ],
-    "order": 21
+    "order": 30
+  },
+  {
+    "id": "tk-housing-warranty",
+    "title": "新築住宅の10年責任と資力確保：対象・保険・供託・届出",
+    "unit": 3,
+    "domain": 7,
+    "order": 31,
+    "objectives": [
+      "新築住宅と10年責任の対象部分・起算点を判断する",
+      "住宅瑕疵担保履行法の対象者と供託・保険を説明する",
+      "基準日の届出、引渡実績ゼロ、他の保証制度との違いを判断する"
+    ],
+    "glossary": [
+      {
+        "term": "瑕疵",
+        "definition": "この章では、法が対象とする住宅の性能等の不具合"
+      },
+      {
+        "term": "構造耐力上主要な部分",
+        "definition": "基礎・柱・耐力壁等、住宅を支える法定の主要部分"
+      },
+      {
+        "term": "住宅販売瑕疵担保責任保険",
+        "definition": "売主業者の新築住宅に関する法定責任の履行を支える所定の保険"
+      }
+    ],
+    "sources": [
+      "business",
+      "housing",
+      "housing-warranty"
+    ]
   },
   {
     "id": "tk-planning",
@@ -645,7 +938,36 @@
     "sources": [
       "planning"
     ],
-    "order": 22
+    "order": 32
+  },
+  {
+    "id": "tk-planning-permissions",
+    "unit": 4,
+    "domain": 3,
+    "title": "都市計画施設・地区計画と建築の許可・届出",
+    "objectives": [
+      "53条と65条を事業段階と行為から選ぶ",
+      "54条の許可基準を条件ごとに照合する",
+      "地区計画の届出と法定例外を判断する"
+    ],
+    "glossary": [
+      {
+        "term": "都市計画施設",
+        "definition": "都市計画に定められた道路や公園等の都市施設"
+      },
+      {
+        "term": "事業地",
+        "definition": "認可等を受けた都市計画事業の対象となる土地の範囲"
+      },
+      {
+        "term": "地区整備計画",
+        "definition": "地区計画で定める地区施設や建築物等に関する具体的な計画"
+      }
+    ],
+    "sources": [
+      "planning"
+    ],
+    "order": 33
   },
   {
     "id": "tk-development",
@@ -675,7 +997,7 @@
       "planning",
       "development"
     ],
-    "order": 23
+    "order": 34
   },
   {
     "id": "tk-building",
@@ -704,7 +1026,36 @@
     "sources": [
       "building"
     ],
-    "order": 24
+    "order": 35
+  },
+  {
+    "id": "tk-building-use",
+    "unit": 4,
+    "domain": 3,
+    "title": "用途制限・防火の境界と建築協定の読み方",
+    "objectives": [
+      "用途制限の建物種別と面積条件を照合する",
+      "用途・面積比率・防火で境界の扱いを分ける",
+      "既存不適格と建築協定の効力を説明する"
+    ],
+    "glossary": [
+      {
+        "term": "兼用住宅",
+        "definition": "住宅の用途と店舗等の他の用途を併せ持つ建物"
+      },
+      {
+        "term": "既存不適格",
+        "definition": "建築時は適法だった建物が法改正等で現行規定に適合しなくなった状態"
+      },
+      {
+        "term": "建築協定",
+        "definition": "土地所有者等が建築の基準を合意し法定の認可等を受ける制度"
+      }
+    ],
+    "sources": [
+      "building"
+    ],
+    "order": 36
   },
   {
     "id": "tk-density",
@@ -734,7 +1085,66 @@
       "building",
       "density"
     ],
-    "order": 25
+    "order": 37
+  },
+  {
+    "id": "tk-height-control",
+    "unit": 4,
+    "domain": 3,
+    "title": "外壁後退・高さ・斜線・日影の制限を図で読む",
+    "objectives": [
+      "絶対高さと外壁後退の対象地域・指定値を判断する",
+      "道路・北側の斜線の距離と勾配を用いて上限を比較する",
+      "隣地斜線と日影規制の対象・時点・区域を区別する"
+    ],
+    "glossary": [
+      {
+        "term": "斜線制限",
+        "definition": "道路等の境界からの距離に応じて建物各部分の高さを制限する仕組み"
+      },
+      {
+        "term": "真北方向",
+        "definition": "磁石の北等とは区別して用いる地理上の北の方向"
+      },
+      {
+        "term": "真太陽時",
+        "definition": "太陽の実際の動きに基づいて表す時刻"
+      }
+    ],
+    "sources": [
+      "building"
+    ],
+    "order": 38
+  },
+  {
+    "id": "tk-area-exclusions",
+    "unit": 4,
+    "domain": 3,
+    "title": "容積率の算入除外：車庫・地階・共用部分を計算する",
+    "objectives": [
+      "床面積と容積率へ算入する面積を区別する",
+      "車庫・地階等の用途条件と上限を照合する",
+      "重複しない複数部分の除外を集計して検算する"
+    ],
+    "glossary": [
+      {
+        "term": "算入除外",
+        "definition": "特定の面積計算で法定の対象部分を数えない扱い"
+      },
+      {
+        "term": "昇降路",
+        "definition": "昇降機のかご等を上下に移動させるための空間"
+      },
+      {
+        "term": "防災備蓄倉庫",
+        "definition": "専ら防災のための物資を備蓄する倉庫の法定の部分"
+      }
+    ],
+    "sources": [
+      "building",
+      "structure"
+    ],
+    "order": 39
   },
   {
     "id": "tk-farmland",
@@ -763,7 +1173,7 @@
     "sources": [
       "farmland"
     ],
-    "order": 26
+    "order": 40
   },
   {
     "id": "tk-landcontrol",
@@ -792,7 +1202,7 @@
     "sources": [
       "national"
     ],
-    "order": 27
+    "order": 41
   },
   {
     "id": "tk-readjustment",
@@ -822,7 +1232,134 @@
       "readjustment",
       "embankment"
     ],
-    "order": 28
+    "order": 42
+  },
+  {
+    "id": "tk-fill-control",
+    "unit": 5,
+    "domain": 3,
+    "title": "盛土規制法の区域・規模・許可と工事中の手続",
+    "objectives": [
+      "区域と規模・適用除外から許可か届出かを選ぶ",
+      "着手前・工事中・完了時の義務とみなし制度を説明する",
+      "区域指定時の工事と土地保全の主語を判断する"
+    ],
+    "glossary": [
+      {
+        "term": "切土",
+        "definition": "地面を削り土地の高さや形を変える行為"
+      },
+      {
+        "term": "土石の堆積",
+        "definition": "一時的に土や石を積み重ねる法定の行為"
+      },
+      {
+        "term": "中間検査",
+        "definition": "一定規模・工程の工事について施工途中の適合性を確認する検査"
+      }
+    ],
+    "sources": [
+      "embankment",
+      "fill-order",
+      "fill-rule"
+    ],
+    "order": 43
+  },
+  {
+    "id": "tk-forest-nature",
+    "unit": 5,
+    "domain": 3,
+    "title": "森林法・自然公園法の区域と取得・伐採・開発",
+    "objectives": [
+      "森林の指定と目的・面積から林地開発許可を判断する",
+      "伐採と所有者取得の届出の時点を区別する",
+      "自然公園の区域別の許可・届出と他法令の重なりを説明する"
+    ],
+    "glossary": [
+      {
+        "term": "地域森林計画",
+        "definition": "都道府県が森林の整備・保全等の方針を定める計画"
+      },
+      {
+        "term": "保安林",
+        "definition": "水源涵養や土砂災害防止などの公益目的のために指定される森林"
+      },
+      {
+        "term": "特別地域",
+        "definition": "自然公園の風致を維持するため法に基づき指定される地域"
+      }
+    ],
+    "sources": [
+      "forest-land",
+      "forest-felling",
+      "forest-owner",
+      "natural-parks"
+    ],
+    "order": 44
+  },
+  {
+    "id": "tk-landscape-culture",
+    "unit": 5,
+    "domain": 3,
+    "title": "景観・埋蔵文化財・公有地の届出と着手時期",
+    "objectives": [
+      "景観計画区域の届出と着手制限を判断する",
+      "周知の埋蔵文化財包蔵地の掘削手続を説明する",
+      "公拡法の届出・協議を国土法の事後届出と区別する"
+    ],
+    "glossary": [
+      {
+        "term": "景観行政団体",
+        "definition": "景観法に基づく事務を処理する地方公共団体"
+      },
+      {
+        "term": "周知の埋蔵文化財包蔵地",
+        "definition": "文化財が地中に存在すると知られている土地"
+      },
+      {
+        "term": "先買い",
+        "definition": "第三者への譲渡に先立って公共団体等の買取りの機会を確保する仕組み"
+      }
+    ],
+    "sources": [
+      "landscape-law",
+      "cultural-properties",
+      "public-land"
+    ],
+    "order": 45
+  },
+  {
+    "id": "tk-land-regulation-case",
+    "unit": 5,
+    "domain": 3,
+    "title": "法令上の制限の総合演習：取得・造成・建築をつなぐ",
+    "objectives": [
+      "取得・転用・造成・建築に関わる手続を資料から選ぶ",
+      "後退・道路制限・面積加重を組み合わせて検算する",
+      "計画の内容と着手時期・他法令の手続を同時に点検する"
+    ],
+    "glossary": [
+      {
+        "term": "適用除外",
+        "definition": "対象となる行為等でも法定条件により規定の適用から外れること"
+      },
+      {
+        "term": "有効敷地面積",
+        "definition": "道路後退等を反映し建築の面積計算へ用いる敷地の面積"
+      },
+      {
+        "term": "当てはめ",
+        "definition": "資料の事実を法令の条件と対応させ結論を導くこと"
+      }
+    ],
+    "sources": [
+      "planning",
+      "building",
+      "farmland",
+      "national",
+      "embankment"
+    ],
+    "order": 46
   },
   {
     "id": "tk-tax",
@@ -854,7 +1391,38 @@
       "tax-registration",
       "tax-local-law"
     ],
-    "order": 29
+    "order": 47
+  },
+  {
+    "id": "tk-acquisition-tax",
+    "title": "住宅取得の軽減と税額表の使い方",
+    "unit": 6,
+    "domain": 4,
+    "order": 48,
+    "objectives": [
+      "住宅の取得日と面積・用途の条件を対応させる",
+      "価格控除と税額減額を分けて計算する",
+      "土地と家屋の税額を別々に確かめる"
+    ],
+    "glossary": [
+      {
+        "term": "価格控除",
+        "definition": "税額を計算する前に、対象となる価格から差し引く額"
+      },
+      {
+        "term": "税額減額",
+        "definition": "税率を掛けて算出した税額から差し引く額"
+      },
+      {
+        "term": "取得日",
+        "definition": "不動産の取得に適用する法令や特例の時点を決める日"
+      }
+    ],
+    "sources": [
+      "tax-local-law",
+      "tax-acquisition",
+      "tax-acquisition-summary"
+    ]
   },
   {
     "id": "tk-transfer-tax",
@@ -886,7 +1454,100 @@
       "tax-long",
       "tax-short"
     ],
-    "order": 30
+    "order": 49
+  },
+  {
+    "id": "tk-home-sale-tax",
+    "title": "マイホーム売却の特例を条件から選ぶ",
+    "unit": 6,
+    "domain": 4,
+    "order": 50,
+    "objectives": [
+      "3,000万円控除の対象と期限を判定する",
+      "10年超軽減税率を段階別に計算する",
+      "買換えと控除の働きと併用関係を区別する"
+    ],
+    "glossary": [
+      {
+        "term": "特別控除",
+        "definition": "要件を満たす場合に所得から差し引く額"
+      },
+      {
+        "term": "課税の繰延べ",
+        "definition": "一定の利益への課税を将来の資産の譲渡等へ移す仕組み"
+      },
+      {
+        "term": "課税長期譲渡所得",
+        "definition": "長期譲渡所得から適用できる特別控除を引いた税率計算の基礎"
+      }
+    ],
+    "sources": [
+      "tax-home",
+      "tax-home-reduced",
+      "tax-home-shared",
+      "tax-replacement"
+    ]
+  },
+  {
+    "id": "tk-replacement-gain",
+    "title": "自宅の買換えの要件・当年課税・取得価額",
+    "unit": 6,
+    "domain": 4,
+    "order": 51,
+    "objectives": [
+      "旧居と新居の面積・期間・性能等の要件を対応させる",
+      "買換え額の大小に応じた当年の所得を求める",
+      "新居へ引き継ぐ取得価額と繰延べ益を照合する"
+    ],
+    "glossary": [
+      {
+        "term": "買換資産",
+        "definition": "特例において旧居の譲渡に対応して取得する新しい居住用財産"
+      },
+      {
+        "term": "課税繰延べ益",
+        "definition": "将来の譲渡等へ課税の時期を移した利益"
+      },
+      {
+        "term": "必要経費の按分",
+        "definition": "一定の基準の割合で費用を各部分へ配分すること"
+      }
+    ],
+    "sources": [
+      "tax-replacement",
+      "tax-under-replacement",
+      "tax-replacement-basis"
+    ]
+  },
+  {
+    "id": "tk-home-sale-loss",
+    "title": "自宅売却の損失・ローン残高・繰越控除",
+    "unit": 6,
+    "domain": 4,
+    "order": 52,
+    "objectives": [
+      "売却損とローン残高を別に計算する",
+      "買換えと旧居ローンの二制度の条件を比較する",
+      "通算限度と翌年以後の繰越控除を条件から求める"
+    ],
+    "glossary": [
+      {
+        "term": "譲渡損失",
+        "definition": "譲渡収入から取得費と譲渡費用を引いた結果がマイナスとなる損失"
+      },
+      {
+        "term": "損益通算",
+        "definition": "法令の条件に従い一定の損失を他の所得と差し引くこと"
+      },
+      {
+        "term": "繰越控除",
+        "definition": "控除しきれない損失を所定の期間の後の年の所得から差し引く仕組み"
+      }
+    ],
+    "sources": [
+      "tax-loss-replacement",
+      "tax-loss-loan"
+    ]
   },
   {
     "id": "tk-valuation",
@@ -914,9 +1575,10 @@
     ],
     "sources": [
       "valuation",
-      "appraisal"
+      "appraisal",
+      "appraisal-methods"
     ],
-    "order": 31
+    "order": 53
   },
   {
     "id": "tk-supply",
@@ -949,7 +1611,70 @@
       "statistics-business",
       "jhf-flow"
     ],
-    "order": 32
+    "order": 54
+  },
+  {
+    "id": "tk-housing-finance",
+    "title": "住宅金融支援機構と証券化の資金の流れ",
+    "unit": 7,
+    "domain": 5,
+    "order": 55,
+    "objectives": [
+      "買取型の融資・債権・返済の流れを説明する",
+      "保証型と買取型の役割の違いを資料から識別する",
+      "機構の業務と個別融資の条件を区別する"
+    ],
+    "glossary": [
+      {
+        "term": "ローン債権",
+        "definition": "住宅ローン契約に基づき元金や利息の返済を受け取る権利"
+      },
+      {
+        "term": "証券化",
+        "definition": "債権等から生じる資金を裏付けとする証券で資金を調達する仕組み"
+      },
+      {
+        "term": "管理回収",
+        "definition": "債権の返済を受け取り、管理する業務"
+      }
+    ],
+    "sources": [
+      "jhf",
+      "jhf-flow",
+      "jhf-guarantee"
+    ]
+  },
+  {
+    "id": "tk-statistics-reading",
+    "title": "住宅着工・業者数・地価統計の読み方",
+    "unit": 7,
+    "domain": 5,
+    "order": 56,
+    "objectives": [
+      "統計の対象・期間・単位と比較相手を読み取る",
+      "増減率と内訳の合計を計算して点検する",
+      "平均と個別の数値からいえる範囲を判断する"
+    ],
+    "glossary": [
+      {
+        "term": "フロー",
+        "definition": "一定の期間に新たに生じた量"
+      },
+      {
+        "term": "ストック",
+        "definition": "ある時点で存在する量"
+      },
+      {
+        "term": "増減率",
+        "definition": "基準となる値に対して増減した量の割合"
+      }
+    ],
+    "sources": [
+      "statistics",
+      "statistics-fiscal",
+      "statistics-business",
+      "appraisal"
+    ]
   },
   {
     "id": "tk-land",
@@ -977,9 +1702,9 @@
     ],
     "sources": [
       "land",
-      "registration"
+      "landform"
     ],
-    "order": 33
+    "order": 57
   },
   {
     "id": "tk-structure",
@@ -1007,8 +1732,10 @@
     ],
     "sources": [
       "building",
-      "structure"
+      "structure",
+      "wood-durability",
+      "housing"
     ],
-    "order": 34
+    "order": 58
   }
 ]

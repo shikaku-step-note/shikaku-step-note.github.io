@@ -1,0 +1,74 @@
+{
+  "reviewed": "2026-11-21",
+  "basis": "2026-04-01施行版。民法の依拠175条は現行API1とexact API2の一致を確認。追加する209〜213条、252条、632〜656条、724条の2等もexact API2を直接確認。",
+  "formA": {
+    "field2Items": 14,
+    "incorrectKeysFound": [],
+    "recommendedReplacement": {
+      "id": "tk-mock-03",
+      "field": "2",
+      "lesson": "tk-agency",
+      "prompt": "代理権のないBが、Aの代理人として4月2日にCと建物売買をしました。Cは契約時に無権限と知らず、Aが追認しない間の4月3日に民法115条により適法に契約を取り消しました。その後、Aが4月5日に追認すると通知しました。正しいものはどれか。",
+      "options": [
+        "Cに確認の過失があれば、知らなかった場合でも115条による取消しは常に無効である",
+        "Aが追認すると述べれば、Cの取消しが先でも契約時へ必ず復活する",
+        "Cの取消しが先に有効に行われているので、後の追認で契約を復活させることはできない",
+        "本人の追認と相手方の取消しは、先後にかかわらず常に本人の追認が優先する"
+      ],
+      "answer": 2,
+      "explanation": "Cの取消しが先に有効に行われているので、後の追認で契約を復活させることはできない。契約時に無権限と知らなかったCは、本人の追認前に115条の取消しを検討できます。この例では4月3日に適法な取消しが済んでおり、その後の追認で取り消された契約を戻すことはできません。Cの過失だけで115条の取消しを一律に否定せず、117条の無権代理人責任の要件と区別します。"
+    }
+  },
+  "formB": {
+    "field2Items": 14,
+    "incorrectKeysFound": [],
+    "confirmedCalculations": {
+      "04": "2022+5=2027 < 2020+10=2030",
+      "06": "1650-1100=550、900-550=350",
+      "10": "9000×1/2×1/2×1/2=1125",
+      "11": "60/2=30、各過半数は31人・31議決権",
+      "12": "1/2+1/6=2/3"
+    },
+    "wordingSuggestions": [
+      {
+        "id": "tk-mock-b-01",
+        "change": "冒頭を「意思能力のある17歳のAが」にすると、意思能力欠如との競合を明示的に避けられる。"
+      },
+      {
+        "id": "tk-mock-b-07",
+        "change": "解説の「成立条件」は「効力の条件」とする。極度額のない契約が効力を生じないことを正確に表す。"
+      },
+      {
+        "id": "tk-mock-b-11",
+        "change": "解説を「出席した区分所有者と出席議決権をそれぞれ母数に、各過半数を確認します」とし、通常決議に法律上常に一律の定足数があるとの読みを避ける。設問の定足数充足という前提自体は問題ない。"
+      }
+    ],
+    "lessonRemapping": {
+      "tk-joint-obligations": "tk-joint-guarantee",
+      "tk-coownership-neighbors": "tk-shared-land",
+      "tk-contract-types": "tk-services-tort"
+    },
+    "teachingAnchors": {
+      "01": "tk-contract#tk-contract-capacity-compare",
+      "02": "tk-intent#tk-intent-reasoning",
+      "03": "tk-agency#tk-agency-third-party-remedies",
+      "04": "tk-prescription#tk-prescription-two-clocks",
+      "05": "tk-title#tk-title-parties",
+      "06": "tk-mortgage#tk-mortgage-parties",
+      "07": "tk-joint-guarantee#tk-joint-guarantee-cap",
+      "08": "tk-remedies#tk-remedies-nonconformity",
+      "09": "tk-building-lease#tk-building-lease-fixed-process",
+      "10": "tk-inheritance#tk-inheritance-family",
+      "11": "tk-condo#tk-condo-management",
+      "12": "tk-shared-land#tk-shared-land-action",
+      "13": "tk-services-tort#tk-services-tort-contract-map",
+      "14": "tk-land-lease#tk-land-lease-period"
+    }
+  },
+  "existingLessonBank": {
+    "reviewedItems": 44,
+    "incorrectKeysFound": [],
+    "note": "既存の四肢択一の正答、民法の前提、計算値を本文と照合。各選択肢の誤りの理由を再読した。追加問題は別JSONに56問。"
+  },
+  "reviewLimit": "AIによる資料照合と独立再計算。外部専門家の監修や実受験者による難度較正は実施していない。"
+}

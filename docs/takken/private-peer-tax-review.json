@@ -1,0 +1,103 @@
+{
+  "reviewed": "2026-11-21",
+  "scope": [
+    "tk-tax",
+    "tk-acquisition-tax",
+    "tk-transfer-tax",
+    "tk-home-sale-tax",
+    "tk-valuation",
+    "takken-mock-02 field4/6",
+    "tk-replacement-gain",
+    "tk-home-sale-loss"
+  ],
+  "independentWitnesses": {
+    "fixedTaxGuide": 56000.0,
+    "acquisitionGuide": 24.0,
+    "transferGuide": 1860,
+    "homeGuide": 900,
+    "valuationGuide": 7999.999999999999,
+    "homeBracket": 1055.75,
+    "DCF": 10000.0,
+    "mockB23": 466.66666666666663,
+    "mockB24": 500,
+    "mockB25": 11000.0
+  },
+  "sources": [
+    {
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7191.htm",
+      "claim": "2026土地売買移転の1.5％、相続0.4％、評価額の意味"
+    },
+    {
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7108.htm",
+      "claim": "印紙の軽減期限2027-03-31、1000万円境界5000円/1万円"
+    },
+    {
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3305.htm",
+      "claim": "10年超・6000万円区分・3千万円控除との併用"
+    },
+    {
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3308.htm",
+      "claim": "共有者ごと最高3千万円、家屋持分のない敷地共有者の違い"
+    },
+    {
+      "url": "https://www.tax.metro.tokyo.lg.jp/shitsumon/real_estate/f",
+      "claim": "2026取得の40㎡、中古住宅控除の新築時期別額、住宅用土地減額の導出式"
+    },
+    {
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3355.htm",
+      "claim": "買換え期限・1億円・床面積50㎡以上と土地500㎡以下、取得入居期限等"
+    }
+  ],
+  "findingsReportedToLead": [
+    {
+      "lesson": "tk-acquisition-tax",
+      "issue": "最終例1985年新築なのに控除900万円という具体的な年と仮定値の不一致",
+      "requestedFix": "1985-07新築450万円控除なら（1000−450）×3％＝16.5万円にする等、実表と整合させる"
+    },
+    {
+      "lesson": "tk-acquisition-tax",
+      "issue": "住宅用土地の減額を与える例だけで、実際の高い方の額の選択・200㎡上限等の導出が未教授",
+      "requestedFix": "Q14の式と適用条件を説明し独自計算例を加える"
+    },
+    {
+      "lesson": "tk-home-sale-tax",
+      "issue": "買換えの上限・面積・取得入居期限を確認とするだけで、具体的条件の学習が不足",
+      "requestedFix": "NTA3355の確認済み条件を明示し条件を変えた適否を教える"
+    },
+    {
+      "lesson": "tk-tax",
+      "issue": "課税標準の定義が初出からかなり後に置かれる",
+      "requestedFix": "初出の段落で税率を掛ける基礎金額と説明する"
+    }
+  ],
+  "status": "当初の指摘はリードへ報告し、修正と2章追加を確認。新2章・12問の再計算と国税庁の要件照合で重大な誤りなし。",
+  "limits": "対象外の個別特例や実申告の適否、受験者成績との相関は評価していない。",
+  "secondReview": {
+    "reviewed": "2026-11-21",
+    "lessons": [
+      "tk-replacement-gain",
+      "tk-home-sale-loss"
+    ],
+    "sources": [
+      "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3355.htm",
+      "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3358.htm",
+      "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3362.htm",
+      "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3370.htm",
+      "https://www.nta.go.jp/taxes/shiraberu/taxanswer/joto/3390.htm"
+    ],
+    "newQuestions": 12,
+    "incorrectKeysFound": [],
+    "materialErrorsFound": [],
+    "recalculated": {
+      "gainHighPurchaseBasis": 3200,
+      "gainPartialCurrent": 900.0,
+      "gainPartialNewBasis": 1800.0,
+      "gainGuided": 1200.0,
+      "lossCurrentAndCarry": 400,
+      "lossLoanLimit": 400,
+      "lossGuided": 450
+    },
+    "timing": "2026年基準の適用要件と2028年以後の未使用住宅の立地条件を区別。数値計算は全要件を満たす限定条件。",
+    "income": "3390は当年通算に所得要件なし、繰越控除の3000万円超の年の除外を別に確認。3370の500㎡超部分・新居年末ローンの繰越制限も確認。"
+  }
+}

@@ -1,17 +1,21 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
-import { takkenOutline, takkenDomains, takkenSources, takkenLimitations } from '../../../data/takken';
+import { takkenOutline, takkenDomains, takkenSources, takkenLimitations, takkenAssessments, takkenReviewed } from '../../../data/takken';
 import { takkenCoverageNotes } from '../../../data/takken-coverage';
 import { href } from '../../../lib/site';
 const lessons = (await getCollection('lessons', (l) => l.data.qualification === 'takken')).sort(
   (a, b) => a.data.order - b.data.order,
 );
+const tests = takkenAssessments(lessons);
+const checks = tests.filter((a) => a.kind === 'lesson');
+const checkCount = checks.reduce((total, a) => total + a.questions.length, 0);
+const reviewCount = tests.filter((a) => a.kind === 'review' && a.unit).reduce((total, a) => total + a.questions.length, 0);
 ---
 
 <Layout
-  title="宅建士の公式範囲との対応表・出典・追加学習"
-  description="2026年度宅建試験の七つの公式分野と34レッスン、例題、理解度チェックの対応を示します。参照版、法令基準日、概説・追加学習が必要な項目も確認できます。"
+  title="宅建士の公式範囲と教材・例題・練習の対応表"
+  description={`2026年度宅建試験の七つの公式分野と${lessons.length}レッスン、図解・例題・${checkCount}問の理解度チェックの対応。法令基準日、出典、確認済みの範囲と追加確認を示します。`}
   breadcrumbs={[
     { name: '資格一覧', path: 'qualifications/' },
     { name: '宅建士', path: 'qualifications/takken/' },
@@ -21,7 +25,7 @@ const lessons = (await getCollection('lessons', (l) => l.data.qualification === 
   <article class="container prose wide-prose page-section">
     <h1>宅建士の対応表と公式資料</h1>
     <p>
-      対象：2026年度宅地建物取引士資格試験。法令基準日：2026年4月1日。資料確認日：2026年10月25日。2027年度の未公表情報を、現行の適用範囲と混同しません。
+      対象は2026年度宅地建物取引士資格試験、法令基準日は2026年4月1日です。試験案内の確認日は<time datetime={takkenReviewed}>{takkenReviewed}</time>。個々の出典の確認日と適用版は下の一覧に示します。2027年度の試験案内が公表された際は、その条件を別に確認します。
     </p>
     <p>{takkenLimitations}</p>
     <p>
@@ -59,7 +63,7 @@ const lessons = (await getCollection('lessons', (l) => l.data.qualification === 
     </dl>
     <h2>各レッスンで説明・適用・練習する範囲</h2>
     <p>
-      各ページには制度の説明、条件を明示した独自例、条件を変えた比較例、4問の理解度チェックがあります。用語は各3語を確認し、ユニットの用語テストに反映します。以下に扱う下位論点と、概説又は追加学習が必要な事項を示します。
+      {lessons.length}章で、意味と仕組み、判断手順、標準例、条件が変わる例を本文で学びます。各章には複数の注釈付き図表と途中の練習があり、その後に別の理解度チェックへ進みます。ユニット総合確認では新しい資料を使い、全分野復習・模試へつなげます。以下に実際の学習目標と、追加で確認が必要な範囲を示します。
     </p>
     <div
       class="coverage-table"
@@ -94,8 +98,8 @@ const lessons = (await getCollection('lessons', (l) => l.data.qualification === 
                 </ul>
               </td>
               <td>
-                <p>本文の独自例・比較例</p>
-                <p>理解度4問・用語3語</p>
+                <p>本文の図解・独自例・条件変更・途中練習</p>
+                <p>理解度{checks.find((a) => a.id === `${l.data.stableId}-check`)?.questions.length ?? 0}問・用語{l.data.glossary.length}語</p>
                 <a href={href(`qualifications/takken/tests/takken-unit-${l.data.unit}-review/`)}>
                   ユニット確認
                 </a>
@@ -108,17 +112,17 @@ const lessons = (await getCollection('lessons', (l) => l.data.qualification === 
     </div>
     <h2>問題と採点の制約</h2>
     <p>
-      理解度チェック136問と模試50問は当サイトの独自問題です。用語確認は本文の定義から生成し、ユニット確認と総復習は理解度チェックを再利用します。一般形式の模試は50問・120分、免除形式は45問・110分で、両形式は45問を共有します。
+      理解度チェック{checkCount}問、別条件のユニット総合確認{reviewCount}問、独立した模試2回を用意しています。用語確認は本文の定義から生成し、全分野総復習はユニット総合確認を混ぜて再利用します。模試は各回とも一般50問・120分、5問免除45問・110分で、同じ回の二形式は45問を共有します。第1回と第2回の問題は別です。
     </p>
     <p>
-      各問1点、誤答・未解答は0点として練習得点を表示します。分野配分は公開問題を参照した学習用構成で、権利14・制限8・税2・価格1・宅建業法20・需給3・土地建物2問です。将来の配分や公式の難易度を保証しません。2026年度の合格基準は確認日現在未公表のため、予想基準や合否判定は表示しません。
+      各問1点、誤答・未解答は0点として練習得点を表示します。模試の分野配分は公開問題を参照し、権利14・制限8・税2・価格1・宅建業法20・需給3・土地建物2問です。実際の受験者による難度調整は未実施です。2026年度の合格基準は{takkenReviewed}時点で未公表のため、予想基準や合否判定は表示しません。数値入力の確認問題は、四肢択一の本試験に備えるための追加練習です。
     </p>
     <p>
       時間ありモードは開始時の期限を保存します。閉じた間も進み、期限後に再訪すると保存済み解答で終了します。端末時計の変更やブラウザデータ消去による影響は防げません。時間制限なしでも練習できます。
     </p>
     <h2>公式資料・版・確認日</h2>
     <p>
-      e-Govの法令本文は、APIの時点指定で2026年4月1日版を取得し、関連条文を確認しています。リンクは取得した施行版を示します。法令全条文の逐条解説や専門家による適法性保証を行った記録ではありません。資料の公表日・施行日と、当サイトの確認日は区別します。
+      e-Govの施行版や、適用日を示す国・自治体の案内により、関係する条文と条件を確認しています。民法・借地借家法・区分所有法は対象の施行版を取得し、現行本文との関係も照合しました。地方の条例、個別判例の全展開、物件別の全手続・様式は追加確認が必要です。法令・資料の公表日、施行日、当サイトが確認した日はそれぞれ区別しています。
     </p>
     <ul>
       {takkenSources.map((s) => (

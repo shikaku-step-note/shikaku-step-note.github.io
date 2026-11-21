@@ -1,0 +1,1517 @@
+{
+  "reviewed": "2026-11-21",
+  "legalReference": "2026-04-01",
+  "mode": "UPGRADE units4-5 as part of whole course",
+  "beforeLessons": 7,
+  "afterLessons": 15,
+  "newLessons": [
+    "tk-planning-permissions",
+    "tk-building-use",
+    "tk-fill-control",
+    "tk-forest-nature",
+    "tk-landscape-culture",
+    "tk-land-regulation-case",
+    "tk-height-control",
+    "tk-area-exclusions"
+  ],
+  "questionCount": 69,
+  "visualCount": 32,
+  "guidedCount": 15,
+  "records": [
+    {
+      "lesson": "tk-planning",
+      "action": "deepen",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-planning/",
+      "objectives": [
+        {
+          "outcome": "区域区分と用途地域を分ける",
+          "teachingAndWorkedAnchors": [
+            "tk-planning-designation-reading",
+            "tk-planning-layers",
+            "tk-planning-dossier"
+          ],
+          "freshPractice": [
+            "tk-planning-depth-01",
+            "tk-planning-depth-02",
+            "tk-planning-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "都市計画の決定と制限をつなげる",
+          "teachingAndWorkedAnchors": [
+            "tk-planning-designation-reading",
+            "tk-planning-layers",
+            "tk-planning-dossier"
+          ],
+          "freshPractice": [
+            "tk-planning-depth-01",
+            "tk-planning-depth-02",
+            "tk-planning-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "地区計画と施設を説明する",
+          "teachingAndWorkedAnchors": [
+            "tk-planning-designation-reading",
+            "tk-planning-layers",
+            "tk-planning-dossier"
+          ],
+          "freshPractice": [
+            "tk-planning-depth-01",
+            "tk-planning-depth-02",
+            "tk-planning-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": {
+        "sha256": "2b6f3ca5e5262189781676cb5b594f21cdb297947e98c13268659d534341f3ca",
+        "headings": [
+          "## 都市計画は、個々の敷地を超えて土地利用を調整します",
+          "## 市街化区域と市街化調整区域を区別します",
+          "## 用途地域は、主に建築物の用途を整えます",
+          "## 地域地区は、用途地域だけではありません",
+          "## 都市計画施設の区域内では、建築に制限があります",
+          "## 建てたい用途から、必要な情報を逆にたどります",
+          "## 地区計画では、届出と条例を調べます"
+        ],
+        "explicitAnchors": [],
+        "beforeMinutes": 35,
+        "review": "Original substantive paragraphs retained. Obsolete overview-only scope sentence in tk-readjustment replaced with links through the current learning sequence."
+      },
+      "afterMinutes": 85,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-planning-layers",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-planning-dossier",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-planning",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "区域、方針、用途を範囲から細部へ進め、13地域の目的を先に教えてから物件資料へ適用。指定主体と決定主体も文中で区別。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": [
+        "tk-planning-permissions"
+      ]
+    },
+    {
+      "lesson": "tk-development",
+      "action": "deepen",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-development/",
+      "objectives": [
+        {
+          "outcome": "開発行為の定義を事例に当てる",
+          "teachingAndWorkedAnchors": [
+            "tk-development-area-cases",
+            "tk-development-thresholds",
+            "tk-development-stage-cases",
+            "tk-development-timeline"
+          ],
+          "freshPractice": [
+            "tk-development-depth-01",
+            "tk-development-depth-02",
+            "tk-development-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "区域別に許可を検討する",
+          "teachingAndWorkedAnchors": [
+            "tk-development-area-cases",
+            "tk-development-thresholds",
+            "tk-development-stage-cases",
+            "tk-development-timeline"
+          ],
+          "freshPractice": [
+            "tk-development-depth-01",
+            "tk-development-depth-02",
+            "tk-development-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "完了公告前後の制限を区別する",
+          "teachingAndWorkedAnchors": [
+            "tk-development-area-cases",
+            "tk-development-thresholds",
+            "tk-development-stage-cases",
+            "tk-development-timeline"
+          ],
+          "freshPractice": [
+            "tk-development-depth-01",
+            "tk-development-depth-02",
+            "tk-development-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": {
+        "sha256": "c38267c075124539cf9c567490efb80e0defc15891b4fb22982b8497e30bdc84",
+        "headings": [
+          "## 開発行為は、土地の区画形質の変更です",
+          "## 区域と規模によって、許可の要否が変わります",
+          "## 技術基準と、立地の基準を区別します",
+          "## 完了公告の前後で、建築の制限が変わります",
+          "## 許可後の変更・承継・廃止も手続が必要です",
+          "## 面積だけを変える場合と、区域を変える場合",
+          "## 他の許可は、別に確認します"
+        ],
+        "explicitAnchors": [],
+        "beforeMinutes": 35,
+        "review": "Original substantive paragraphs retained. Obsolete overview-only scope sentence in tk-readjustment replaced with links through the current learning sequence."
+      },
+      "afterMinutes": 110,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-development-thresholds",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-development-timeline",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-development",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "区画形質と工作物を先に定義し、区域・規模・例外から33条/34条、公告前後の順へ接続。例外を示す事実まで答案へ残す。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-building",
+      "action": "deepen",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-building/",
+      "objectives": [
+        {
+          "outcome": "確認と検査の段階を分ける",
+          "teachingAndWorkedAnchors": [
+            "tk-building-2025-scope",
+            "tk-building-scope-matrix",
+            "tk-building-road-worked",
+            "tk-building-setback-diagram"
+          ],
+          "freshPractice": [
+            "tk-building-depth-01",
+            "tk-building-depth-02",
+            "tk-building-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "道路と接道の条件を読む",
+          "teachingAndWorkedAnchors": [
+            "tk-building-2025-scope",
+            "tk-building-scope-matrix",
+            "tk-building-road-worked",
+            "tk-building-setback-diagram"
+          ],
+          "freshPractice": [
+            "tk-building-depth-01",
+            "tk-building-depth-02",
+            "tk-building-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "用途制限と防火制限を比較する",
+          "teachingAndWorkedAnchors": [
+            "tk-building-2025-scope",
+            "tk-building-scope-matrix",
+            "tk-building-road-worked",
+            "tk-building-setback-diagram"
+          ],
+          "freshPractice": [
+            "tk-building-depth-01",
+            "tk-building-depth-02",
+            "tk-building-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": {
+        "sha256": "23691596c15f75d5732b675f35219f2211e185981a4ffd5f0148888abfe664d2",
+        "headings": [
+          "## 建築確認は、工事の前に計画の適法性を確かめます",
+          "## 確認済証と検査済証は、段階が違います",
+          "## 敷地は、原則として道路に2メートル以上接します",
+          "## 2項道路の後退は、道路の中心線等から考えます",
+          "## 用途制限は、建物の使い方から判断します",
+          "## 道路の幅と、敷地の接し方を別々に測ります",
+          "## 防火地域では、構造と規模を確かめます"
+        ],
+        "explicitAnchors": [],
+        "beforeMinutes": 35,
+        "review": "Original substantive paragraphs retained. Obsolete overview-only scope sentence in tk-readjustment replaced with links through the current learning sequence."
+      },
+      "afterMinutes": 105,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-building-scope-matrix",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-building-setback-diagram",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-building",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "建築主、単体/集団、計画/完成を先に説明。2025年の階数・面積を表へ移し、道路幅、接道、後退の長さと面積を区別。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": [
+        "tk-building-use",
+        "tk-height-control"
+      ]
+    },
+    {
+      "lesson": "tk-density",
+      "action": "deepen",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-density/",
+      "objectives": [
+        {
+          "outcome": "二つの面積比率を計算する",
+          "teachingAndWorkedAnchors": [
+            "tk-density-worked-reading",
+            "tk-density-three-areas",
+            "tk-density-integrated-calculation",
+            "tk-density-calculation-ledger"
+          ],
+          "freshPractice": [
+            "tk-density-depth-01",
+            "tk-density-depth-02",
+            "tk-density-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "道路幅員による上限を比較する",
+          "teachingAndWorkedAnchors": [
+            "tk-density-worked-reading",
+            "tk-density-three-areas",
+            "tk-density-integrated-calculation",
+            "tk-density-calculation-ledger"
+          ],
+          "freshPractice": [
+            "tk-density-depth-01",
+            "tk-density-depth-02",
+            "tk-density-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "複数地域と緩和の条件を読む",
+          "teachingAndWorkedAnchors": [
+            "tk-density-worked-reading",
+            "tk-density-three-areas",
+            "tk-density-integrated-calculation",
+            "tk-density-calculation-ledger"
+          ],
+          "freshPractice": [
+            "tk-density-depth-01",
+            "tk-density-depth-02",
+            "tk-density-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": {
+        "sha256": "6f32fec3bba78214f04f12c3b82c07eff87a7a031749662ee7d4239bf1e7f6ef",
+        "headings": [
+          "## 建ぺい率は、敷地を建物が覆う割合です",
+          "## 容積率は、延べ面積と敷地面積の比です",
+          "## 前面道路が狭いと、容積率がさらに制限されます",
+          "## 複数の地域にまたがる場合は、面積で加重します",
+          "## 角地や耐火建築物の緩和は、条件を確認します",
+          "## 高さの制限は、面積の計算とは別です",
+          "## 敷地が減ると、二つの上限を計算し直します",
+          "## 面積問題は、計算に入れる範囲を先に決めます"
+        ],
+        "explicitAnchors": [],
+        "beforeMinutes": 35,
+        "review": "Original substantive paragraphs retained. Obsolete overview-only scope sentence in tk-readjustment replaced with links through the current learning sequence."
+      },
+      "afterMinutes": 125,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-density-three-areas",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-density-calculation-ledger",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-density",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "平面と床の合計を図で分け、倍率と単位を示してから、道路、加重、後退・加算へ進める。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": [
+        "tk-height-control",
+        "tk-area-exclusions",
+        "tk-land-regulation-case"
+      ]
+    },
+    {
+      "lesson": "tk-farmland",
+      "action": "deepen",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-farmland/",
+      "objectives": [
+        {
+          "outcome": "権利移動と転用を分ける",
+          "teachingAndWorkedAnchors": [
+            "tk-farmland-two-decisions",
+            "tk-farmland-decision-matrix",
+            "tk-farmland-permission-criteria",
+            "tk-farmland-exception-cases",
+            "tk-farmland-procedure-path"
+          ],
+          "freshPractice": [
+            "tk-farmland-depth-01",
+            "tk-farmland-depth-02",
+            "tk-farmland-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "許可と届出の区別をする",
+          "teachingAndWorkedAnchors": [
+            "tk-farmland-two-decisions",
+            "tk-farmland-decision-matrix",
+            "tk-farmland-permission-criteria",
+            "tk-farmland-exception-cases",
+            "tk-farmland-procedure-path"
+          ],
+          "freshPractice": [
+            "tk-farmland-depth-01",
+            "tk-farmland-depth-02",
+            "tk-farmland-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "違反取引の効力を説明する",
+          "teachingAndWorkedAnchors": [
+            "tk-farmland-two-decisions",
+            "tk-farmland-decision-matrix",
+            "tk-farmland-permission-criteria",
+            "tk-farmland-exception-cases",
+            "tk-farmland-procedure-path"
+          ],
+          "freshPractice": [
+            "tk-farmland-depth-01",
+            "tk-farmland-depth-02",
+            "tk-farmland-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": {
+        "sha256": "1bef077ae3f0165f890eea8eb9b9a5edcdbcd35f3bb8a8c38ce4a79fbefe473f",
+        "headings": [
+          "## 農地として使うか、別の用途へ変えるかを分けます",
+          "## 3条は、農地のまま権利を移す場面です",
+          "## 4条は、自分の農地を自分で転用する場面です",
+          "## 5条は、転用する目的で権利を移す場面です",
+          "## 市街化区域の特例は、転用の届出です",
+          "## 相続など、許可を要しない取得にも別の届出があります",
+          "## 許可のない取引は、効力にも関わります",
+          "## 売主が同じでも、買主の利用目的で条文が変わります",
+          "## 一時的な転用や施設の設置も確認します"
+        ],
+        "explicitAnchors": [],
+        "beforeMinutes": 35,
+        "review": "Original substantive paragraphs retained. Obsolete overview-only scope sentence in tk-readjustment replaced with links through the current learning sequence."
+      },
+      "afterMinutes": 105,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-farmland-decision-matrix",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-farmland-procedure-path",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-farmland",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "農地、耕作、権利移動、転用を先に定義。主体と目的を一つずつ変え、3/4/5条、位置と取得原因の例外へ進める。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-landcontrol",
+      "action": "deepen",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-landcontrol/",
+      "objectives": [
+        {
+          "outcome": "一団の土地の面積を判定する",
+          "teachingAndWorkedAnchors": [
+            "tk-landcontrol-contract-ledger",
+            "tk-landcontrol-purchase-ledger",
+            "tk-landcontrol-special-regimes",
+            "tk-landcontrol-timing-map"
+          ],
+          "freshPractice": [
+            "tk-landcontrol-depth-01",
+            "tk-landcontrol-depth-02",
+            "tk-landcontrol-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "事後届出の当事者と期限を確かめる",
+          "teachingAndWorkedAnchors": [
+            "tk-landcontrol-contract-ledger",
+            "tk-landcontrol-purchase-ledger",
+            "tk-landcontrol-special-regimes",
+            "tk-landcontrol-timing-map"
+          ],
+          "freshPractice": [
+            "tk-landcontrol-depth-01",
+            "tk-landcontrol-depth-02",
+            "tk-landcontrol-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "規制区域と届出を区別する",
+          "teachingAndWorkedAnchors": [
+            "tk-landcontrol-contract-ledger",
+            "tk-landcontrol-purchase-ledger",
+            "tk-landcontrol-special-regimes",
+            "tk-landcontrol-timing-map"
+          ],
+          "freshPractice": [
+            "tk-landcontrol-depth-01",
+            "tk-landcontrol-depth-02",
+            "tk-landcontrol-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": {
+        "sha256": "3662010091d4ab68550bd31710f175141331e722b00c4d252fb55086a47a5ede",
+        "headings": [
+          "## 大規模な土地取引は、利用目的を届け出ます",
+          "## 面積の基準は、区域によって三段階です",
+          "## 一団の土地は、契約を分けても合計します",
+          "## 届け出るのは、原則として権利取得者です",
+          "## 売買以外の有償の権利移動も検討します",
+          "## 事後届出と、契約の有効性を分けます",
+          "## 合計面積と、各契約の期限を区別します",
+          "## 土地利用の制限は、この届出だけではありません"
+        ],
+        "explicitAnchors": [],
+        "beforeMinutes": 35,
+        "review": "Original substantive paragraphs retained. Obsolete overview-only scope sentence in tk-readjustment replaced with links through the current learning sequence."
+      },
+      "afterMinutes": 105,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-landcontrol-purchase-ledger",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-landcontrol-timing-map",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-landcontrol",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "制度の目的と対象契約の要素を先に教え、一体利用の合算と各契約の期限を別欄へ置く。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-readjustment",
+      "action": "deepen",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-readjustment/",
+      "objectives": [
+        {
+          "outcome": "仮換地と換地を区別する",
+          "teachingAndWorkedAnchors": [
+            "tk-readjustment-rights-timeline",
+            "tk-readjustment-phase-map",
+            "tk-readjustment-area-value",
+            "tk-readjustment-calculation"
+          ],
+          "freshPractice": [
+            "tk-readjustment-depth-01",
+            "tk-readjustment-depth-02",
+            "tk-readjustment-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "盛土規制の対象と手続を確認する",
+          "teachingAndWorkedAnchors": [
+            "tk-readjustment-rights-timeline",
+            "tk-readjustment-phase-map",
+            "tk-readjustment-area-value",
+            "tk-readjustment-calculation"
+          ],
+          "freshPractice": [
+            "tk-readjustment-depth-01",
+            "tk-readjustment-depth-02",
+            "tk-readjustment-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "特別な土地利用規制の調べ方を示す",
+          "teachingAndWorkedAnchors": [
+            "tk-readjustment-rights-timeline",
+            "tk-readjustment-phase-map",
+            "tk-readjustment-area-value",
+            "tk-readjustment-calculation"
+          ],
+          "freshPractice": [
+            "tk-readjustment-depth-01",
+            "tk-readjustment-depth-02",
+            "tk-readjustment-depth-03"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": {
+        "sha256": "205dc3dcaf3efeedb9cf5538f8d7dc5ab2ce102f91635ad7aa3514e1599800a5",
+        "headings": [
+          "## 区画整理は、土地の配置と公共施設を整えます",
+          "## 仮換地は、換地処分前の使用収益を調整します",
+          "## 換地処分と減歩を、面積だけで損得判断しません",
+          "## 施行地区内の建築には、事業保護の制限があります",
+          "## 盛土規制は、土地の用途にかかわらず確認します",
+          "## 工事後にも、土地の安全管理が関係します",
+          "## 旧土地と新しい区画を、同じものとして記入しません",
+          "## その他の土地利用法令も、対象を特定して調べます"
+        ],
+        "explicitAnchors": [],
+        "beforeMinutes": 35,
+        "review": "Original substantive paragraphs retained. Obsolete overview-only scope sentence in tk-readjustment replaced with links through the current learning sequence."
+      },
+      "afterMinutes": 100,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-readjustment-phase-map",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-readjustment-calculation",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-readjustment",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "従前地・換地・仮換地、使用収益を先に説明し、所有権の最終効果と使用場所の変化を日付で区別。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": [
+        "tk-fill-control",
+        "tk-forest-nature",
+        "tk-landscape-culture",
+        "tk-land-regulation-case"
+      ]
+    },
+    {
+      "lesson": "tk-planning-permissions",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-planning-permissions/",
+      "objectives": [
+        {
+          "outcome": "53条と65条を事業段階と行為から選ぶ",
+          "teachingAndWorkedAnchors": [
+            "tk-planning-permissions-rule",
+            "tk-planning-permissions-stages",
+            "tk-planning-permissions-case-ledger"
+          ],
+          "freshPractice": [
+            "tk-planning-permissions-depth-01",
+            "tk-planning-permissions-depth-02",
+            "tk-planning-permissions-depth-03",
+            "tk-planning-permissions-depth-04",
+            "tk-planning-permissions-depth-05",
+            "tk-planning-permissions-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "54条の許可基準を条件ごとに照合する",
+          "teachingAndWorkedAnchors": [
+            "tk-planning-permissions-rule",
+            "tk-planning-permissions-stages",
+            "tk-planning-permissions-case-ledger"
+          ],
+          "freshPractice": [
+            "tk-planning-permissions-depth-01",
+            "tk-planning-permissions-depth-02",
+            "tk-planning-permissions-depth-03",
+            "tk-planning-permissions-depth-04",
+            "tk-planning-permissions-depth-05",
+            "tk-planning-permissions-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "地区計画の届出と法定例外を判断する",
+          "teachingAndWorkedAnchors": [
+            "tk-planning-permissions-rule",
+            "tk-planning-permissions-stages",
+            "tk-planning-permissions-case-ledger"
+          ],
+          "freshPractice": [
+            "tk-planning-permissions-depth-01",
+            "tk-planning-permissions-depth-02",
+            "tk-planning-permissions-depth-03",
+            "tk-planning-permissions-depth-04",
+            "tk-planning-permissions-depth-05",
+            "tk-planning-permissions-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 90,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-planning-permissions-stages",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-planning-permissions-case-ledger",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-planning-permissions",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "施設・事業地の意味と告示の役割を説明後、53/54/65条を条件と効果へつなぐ。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-building-use",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-building-use/",
+      "objectives": [
+        {
+          "outcome": "用途制限の建物種別と面積条件を照合する",
+          "teachingAndWorkedAnchors": [
+            "tk-building-use-purpose",
+            "tk-building-use-reading",
+            "tk-building-use-boundary",
+            "tk-building-use-crossing"
+          ],
+          "freshPractice": [
+            "tk-building-use-depth-01",
+            "tk-building-use-depth-02",
+            "tk-building-use-depth-03",
+            "tk-building-use-depth-04",
+            "tk-building-use-depth-05",
+            "tk-building-use-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "用途・面積比率・防火で境界の扱いを分ける",
+          "teachingAndWorkedAnchors": [
+            "tk-building-use-purpose",
+            "tk-building-use-reading",
+            "tk-building-use-boundary",
+            "tk-building-use-crossing"
+          ],
+          "freshPractice": [
+            "tk-building-use-depth-01",
+            "tk-building-use-depth-02",
+            "tk-building-use-depth-03",
+            "tk-building-use-depth-04",
+            "tk-building-use-depth-05",
+            "tk-building-use-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "既存不適格と建築協定の効力を説明する",
+          "teachingAndWorkedAnchors": [
+            "tk-building-use-purpose",
+            "tk-building-use-reading",
+            "tk-building-use-boundary",
+            "tk-building-use-crossing"
+          ],
+          "freshPractice": [
+            "tk-building-use-depth-01",
+            "tk-building-use-depth-02",
+            "tk-building-use-depth-03",
+            "tk-building-use-depth-04",
+            "tk-building-use-depth-05",
+            "tk-building-use-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 105,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-building-use-reading",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-building-use-crossing",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-building-use",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "用途、用途部分の面積、防火性能を別の対象として説明。兼用住宅は絶対値と割合を同じ例で比較。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-fill-control",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-fill-control/",
+      "objectives": [
+        {
+          "outcome": "区域と規模・適用除外から許可か届出かを選ぶ",
+          "teachingAndWorkedAnchors": [
+            "tk-fill-control-thresholds",
+            "tk-fill-control-shape-table",
+            "tk-fill-control-region-change",
+            "tk-fill-control-regime-compare",
+            "tk-fill-control-procedure"
+          ],
+          "freshPractice": [
+            "tk-fill-control-depth-01",
+            "tk-fill-control-depth-02",
+            "tk-fill-control-depth-03",
+            "tk-fill-control-depth-04",
+            "tk-fill-control-depth-05",
+            "tk-fill-control-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "着手前・工事中・完了時の義務とみなし制度を説明する",
+          "teachingAndWorkedAnchors": [
+            "tk-fill-control-thresholds",
+            "tk-fill-control-shape-table",
+            "tk-fill-control-region-change",
+            "tk-fill-control-regime-compare",
+            "tk-fill-control-procedure"
+          ],
+          "freshPractice": [
+            "tk-fill-control-depth-01",
+            "tk-fill-control-depth-02",
+            "tk-fill-control-depth-03",
+            "tk-fill-control-depth-04",
+            "tk-fill-control-depth-05",
+            "tk-fill-control-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "区域指定時の工事と土地保全の主語を判断する",
+          "teachingAndWorkedAnchors": [
+            "tk-fill-control-thresholds",
+            "tk-fill-control-shape-table",
+            "tk-fill-control-region-change",
+            "tk-fill-control-regime-compare",
+            "tk-fill-control-procedure"
+          ],
+          "freshPractice": [
+            "tk-fill-control-depth-01",
+            "tk-fill-control-depth-02",
+            "tk-fill-control-depth-03",
+            "tk-fill-control-depth-04",
+            "tk-fill-control-depth-05",
+            "tk-fill-control-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 120,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-fill-control-shape-table",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-fill-control-regime-compare",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-fill-control-procedure",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-fill-control",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "盛土・切土・一時堆積を定義し、対象の規模、除外、区域、手続の時点へ進める。所有者等と工事主の主語を区別。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-forest-nature",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-forest-nature/",
+      "objectives": [
+        {
+          "outcome": "森林の指定と目的・面積から林地開発許可を判断する",
+          "teachingAndWorkedAnchors": [
+            "tk-forest-nature-classification",
+            "tk-forest-nature-decision-map",
+            "tk-forest-nature-purpose-cases",
+            "tk-forest-nature-parks"
+          ],
+          "freshPractice": [
+            "tk-forest-nature-depth-01",
+            "tk-forest-nature-depth-02",
+            "tk-forest-nature-depth-03",
+            "tk-forest-nature-depth-04",
+            "tk-forest-nature-depth-05",
+            "tk-forest-nature-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "伐採と所有者取得の届出の時点を区別する",
+          "teachingAndWorkedAnchors": [
+            "tk-forest-nature-classification",
+            "tk-forest-nature-decision-map",
+            "tk-forest-nature-purpose-cases",
+            "tk-forest-nature-parks"
+          ],
+          "freshPractice": [
+            "tk-forest-nature-depth-01",
+            "tk-forest-nature-depth-02",
+            "tk-forest-nature-depth-03",
+            "tk-forest-nature-depth-04",
+            "tk-forest-nature-depth-05",
+            "tk-forest-nature-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "自然公園の区域別の許可・届出と他法令の重なりを説明する",
+          "teachingAndWorkedAnchors": [
+            "tk-forest-nature-classification",
+            "tk-forest-nature-decision-map",
+            "tk-forest-nature-purpose-cases",
+            "tk-forest-nature-parks"
+          ],
+          "freshPractice": [
+            "tk-forest-nature-depth-01",
+            "tk-forest-nature-depth-02",
+            "tk-forest-nature-depth-03",
+            "tk-forest-nature-depth-04",
+            "tk-forest-nature-depth-05",
+            "tk-forest-nature-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 110,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-forest-nature-decision-map",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-forest-nature-purpose-cases",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-forest-nature",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "森林の機能から各制度の目的へ進め、指定と行為を別々に確定。一般と太陽光、保安林、自然公園を変化条件として整理。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-landscape-culture",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-landscape-culture/",
+      "objectives": [
+        {
+          "outcome": "景観計画区域の届出と着手制限を判断する",
+          "teachingAndWorkedAnchors": [
+            "tk-landscape-culture-landscape",
+            "tk-landscape-culture-action-map",
+            "tk-landscape-culture-buried",
+            "tk-landscape-culture-public-land",
+            "tk-landscape-culture-notification-ledger"
+          ],
+          "freshPractice": [
+            "tk-landscape-culture-depth-01",
+            "tk-landscape-culture-depth-02",
+            "tk-landscape-culture-depth-03",
+            "tk-landscape-culture-depth-04",
+            "tk-landscape-culture-depth-05",
+            "tk-landscape-culture-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "周知の埋蔵文化財包蔵地の掘削手続を説明する",
+          "teachingAndWorkedAnchors": [
+            "tk-landscape-culture-landscape",
+            "tk-landscape-culture-action-map",
+            "tk-landscape-culture-buried",
+            "tk-landscape-culture-public-land",
+            "tk-landscape-culture-notification-ledger"
+          ],
+          "freshPractice": [
+            "tk-landscape-culture-depth-01",
+            "tk-landscape-culture-depth-02",
+            "tk-landscape-culture-depth-03",
+            "tk-landscape-culture-depth-04",
+            "tk-landscape-culture-depth-05",
+            "tk-landscape-culture-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "公拡法の届出・協議を国土法の事後届出と区別する",
+          "teachingAndWorkedAnchors": [
+            "tk-landscape-culture-landscape",
+            "tk-landscape-culture-action-map",
+            "tk-landscape-culture-buried",
+            "tk-landscape-culture-public-land",
+            "tk-landscape-culture-notification-ledger"
+          ],
+          "freshPractice": [
+            "tk-landscape-culture-depth-01",
+            "tk-landscape-culture-depth-02",
+            "tk-landscape-culture-depth-03",
+            "tk-landscape-culture-depth-04",
+            "tk-landscape-culture-depth-05",
+            "tk-landscape-culture-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 115,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-landscape-culture-action-map",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-landscape-culture-notification-ledger",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-landscape-culture",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "売る・建てる・掘るを主語と時間へつなぎ、提出した事実と着手・譲渡できる時点を区別。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-land-regulation-case",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-land-regulation-case/",
+      "objectives": [
+        {
+          "outcome": "取得・転用・造成・建築に関わる手続を資料から選ぶ",
+          "teachingAndWorkedAnchors": [
+            "tk-land-regulation-case-method",
+            "tk-land-regulation-case-reading-ledger",
+            "tk-land-regulation-case-farm-development",
+            "tk-land-regulation-case-area",
+            "tk-land-regulation-case-area-ledger",
+            "tk-land-regulation-case-mixed"
+          ],
+          "freshPractice": [
+            "tk-land-regulation-case-depth-01",
+            "tk-land-regulation-case-depth-02",
+            "tk-land-regulation-case-depth-03",
+            "tk-land-regulation-case-depth-04",
+            "tk-land-regulation-case-depth-05",
+            "tk-land-regulation-case-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "後退・道路制限・面積加重を組み合わせて検算する",
+          "teachingAndWorkedAnchors": [
+            "tk-land-regulation-case-method",
+            "tk-land-regulation-case-reading-ledger",
+            "tk-land-regulation-case-farm-development",
+            "tk-land-regulation-case-area",
+            "tk-land-regulation-case-area-ledger",
+            "tk-land-regulation-case-mixed"
+          ],
+          "freshPractice": [
+            "tk-land-regulation-case-depth-01",
+            "tk-land-regulation-case-depth-02",
+            "tk-land-regulation-case-depth-03",
+            "tk-land-regulation-case-depth-04",
+            "tk-land-regulation-case-depth-05",
+            "tk-land-regulation-case-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "計画の内容と着手時期・他法令の手続を同時に点検する",
+          "teachingAndWorkedAnchors": [
+            "tk-land-regulation-case-method",
+            "tk-land-regulation-case-reading-ledger",
+            "tk-land-regulation-case-farm-development",
+            "tk-land-regulation-case-area",
+            "tk-land-regulation-case-area-ledger",
+            "tk-land-regulation-case-mixed"
+          ],
+          "freshPractice": [
+            "tk-land-regulation-case-depth-01",
+            "tk-land-regulation-case-depth-02",
+            "tk-land-regulation-case-depth-03",
+            "tk-land-regulation-case-depth-04",
+            "tk-land-regulation-case-depth-05",
+            "tk-land-regulation-case-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 125,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-land-regulation-case-reading-ledger",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-land-regulation-case-area-ledger",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-land-regulation-case",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "複数規制を組み合わせる一般手順を先に教え、同じ資料の数字を法令別に使い分ける理由を逐次説明。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-height-control",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-height-control/",
+      "objectives": [
+        {
+          "outcome": "絶対高さと外壁後退の対象地域・指定値を判断する",
+          "teachingAndWorkedAnchors": [
+            "tk-height-control-absolute",
+            "tk-height-control-measurement",
+            "tk-height-control-road",
+            "tk-height-control-road-trace",
+            "tk-height-control-north",
+            "tk-height-control-binding-limit",
+            "tk-height-control-shadow"
+          ],
+          "freshPractice": [
+            "tk-height-control-depth-01",
+            "tk-height-control-depth-02",
+            "tk-height-control-depth-03",
+            "tk-height-control-depth-04",
+            "tk-height-control-depth-05",
+            "tk-height-control-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "道路・北側の斜線の距離と勾配を用いて上限を比較する",
+          "teachingAndWorkedAnchors": [
+            "tk-height-control-absolute",
+            "tk-height-control-measurement",
+            "tk-height-control-road",
+            "tk-height-control-road-trace",
+            "tk-height-control-north",
+            "tk-height-control-binding-limit",
+            "tk-height-control-shadow"
+          ],
+          "freshPractice": [
+            "tk-height-control-depth-01",
+            "tk-height-control-depth-02",
+            "tk-height-control-depth-03",
+            "tk-height-control-depth-04",
+            "tk-height-control-depth-05",
+            "tk-height-control-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "隣地斜線と日影規制の対象・時点・区域を区別する",
+          "teachingAndWorkedAnchors": [
+            "tk-height-control-absolute",
+            "tk-height-control-measurement",
+            "tk-height-control-road",
+            "tk-height-control-road-trace",
+            "tk-height-control-north",
+            "tk-height-control-binding-limit",
+            "tk-height-control-shadow"
+          ],
+          "freshPractice": [
+            "tk-height-control-depth-01",
+            "tk-height-control-depth-02",
+            "tk-height-control-depth-03",
+            "tk-height-control-depth-04",
+            "tk-height-control-depth-05",
+            "tk-height-control-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 115,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-height-control-measurement",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-height-control-road-trace",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-height-control-binding-limit",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-height-control",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "面積と形の違いから距離の起点・方向・勾配を説明。斜線の結果を別の絶対高さと照合。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    },
+    {
+      "lesson": "tk-area-exclusions",
+      "action": "add",
+      "url": "https://shikaku-step-note.github.io/qualifications/takken/tk-area-exclusions/",
+      "objectives": [
+        {
+          "outcome": "床面積と容積率へ算入する面積を区別する",
+          "teachingAndWorkedAnchors": [
+            "tk-area-exclusions-garage",
+            "tk-area-exclusions-garage-ledger",
+            "tk-area-exclusions-basement",
+            "tk-area-exclusions-other",
+            "tk-area-exclusions-cap-table"
+          ],
+          "freshPractice": [
+            "tk-area-exclusions-depth-01",
+            "tk-area-exclusions-depth-02",
+            "tk-area-exclusions-depth-03",
+            "tk-area-exclusions-depth-04",
+            "tk-area-exclusions-depth-05",
+            "tk-area-exclusions-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "車庫・地階等の用途条件と上限を照合する",
+          "teachingAndWorkedAnchors": [
+            "tk-area-exclusions-garage",
+            "tk-area-exclusions-garage-ledger",
+            "tk-area-exclusions-basement",
+            "tk-area-exclusions-other",
+            "tk-area-exclusions-cap-table"
+          ],
+          "freshPractice": [
+            "tk-area-exclusions-depth-01",
+            "tk-area-exclusions-depth-02",
+            "tk-area-exclusions-depth-03",
+            "tk-area-exclusions-depth-04",
+            "tk-area-exclusions-depth-05",
+            "tk-area-exclusions-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        },
+        {
+          "outcome": "重複しない複数部分の除外を集計して検算する",
+          "teachingAndWorkedAnchors": [
+            "tk-area-exclusions-garage",
+            "tk-area-exclusions-garage-ledger",
+            "tk-area-exclusions-basement",
+            "tk-area-exclusions-other",
+            "tk-area-exclusions-cap-table"
+          ],
+          "freshPractice": [
+            "tk-area-exclusions-depth-01",
+            "tk-area-exclusions-depth-02",
+            "tk-area-exclusions-depth-03",
+            "tk-area-exclusions-depth-04",
+            "tk-area-exclusions-depth-05",
+            "tk-area-exclusions-depth-06"
+          ],
+          "solutions": "In question explanations and same-page independent tasks; guided solution remains in static HTML."
+        }
+      ],
+      "baseline": null,
+      "afterMinutes": 110,
+      "teachingVisuals": [
+        {
+          "anchor": "tk-area-exclusions-garage-ledger",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        },
+        {
+          "anchor": "tk-area-exclusions-cap-table",
+          "job": "Expose source facts, compare consequential conditions, or trace an intermediate decision. Caption and adjacent prose explain the reading."
+        }
+      ],
+      "guided": [
+        {
+          "anchor": "guided-tk-area-exclusions",
+          "input": "Labeled integer input, full-width normalization inherited from shared controller",
+          "feedback": "Shared guided hint, polite status, reset",
+          "fallback": "Same section contains static details and data-guided-solution"
+        }
+      ],
+      "japaneseReview": "物理的な床の合計、用途部分、除外上限、実際に引く面積を順に確定。次の除外へ残高をそのまま分母にしない理由を説明。",
+      "verificationDate": "2026-11-21",
+      "followOnTeaching": []
+    }
+  ],
+  "independentArithmeticWitnesses": [
+    {
+      "skill": "setback-symmetric",
+      "calculation": "(2 - 3 / 2) * 12",
+      "result": 6
+    },
+    {
+      "skill": "setback-river",
+      "calculation": "(4 - 3) * 12",
+      "result": 12
+    },
+    {
+      "skill": "weighted-BCR",
+      "calculation": "80*.5 + 120*.8",
+      "result": 136
+    },
+    {
+      "skill": "weighted-FAR-5m",
+      "calculation": "120*min(2,5*.4)+180*min(3,5*.6)",
+      "result": 780
+    },
+    {
+      "skill": "weighted-FAR-4m",
+      "calculation": "120*min(2,4*.4)+180*min(3,4*.6)",
+      "result": 624
+    },
+    {
+      "skill": "capstone-setback",
+      "calculation": "260-(2-3/2)*10",
+      "result": 255
+    },
+    {
+      "skill": "capstone-building",
+      "calculation": "255*.6",
+      "result": 153
+    },
+    {
+      "skill": "capstone-FAR",
+      "calculation": "255*min(2,4*.4)",
+      "result": 408
+    },
+    {
+      "skill": "capstone-mixed-BCR",
+      "calculation": "90*.5+150*.8",
+      "result": 165
+    },
+    {
+      "skill": "capstone-mixed-FAR",
+      "calculation": "90*min(2,4*.4)+150*min(3,4*.6)",
+      "result": 504
+    },
+    {
+      "skill": "reduction",
+      "calculation": "(320-272)/320*100",
+      "result": 15
+    },
+    {
+      "skill": "road-setback-height",
+      "calculation": "(4+2+2)*1.25",
+      "result": 10
+    },
+    {
+      "skill": "north-height",
+      "calculation": "4*1.25+5",
+      "result": 10
+    },
+    {
+      "skill": "garage-floor",
+      "calculation": "500-min(120,500/5)",
+      "result": 400
+    },
+    {
+      "skill": "basement-floor",
+      "calculation": "360-min(150,360/3)",
+      "result": 240
+    },
+    {
+      "skill": "combined-equipment",
+      "calculation": "600-min(150,600/5)-min(20,600/50)-min(10,600/100)",
+      "result": 462
+    },
+    {
+      "skill": "independent-equipment",
+      "calculation": "750-min(100,750/5)-min(25,750/50)",
+      "result": 635
+    }
+  ],
+  "mockReview": "land-mock-review.json",
+  "sourceRegister": "land-sources.json",
+  "limitations": [
+    "AI review, no external legal expert supervision or human candidate difficulty calibration.",
+    "Regional ordinances and actual plot-specific administrative judgments need the competent authority.",
+    "All 34条 location categories, every zoning-use combination, all forest/park exceptions, every special height-relaxation technique, and every other individual land statute are not independently assessed by this release. Existing numbered official-domain mapping must not be presented as proof of exhaustive statutory coverage.",
+    "Public legal XML APIs were used to read definitions and procedures; the legal-reference date is separated from later MLIT notices. Cultural law API retrieval failed; Culture Agency current guidance and the publicly supplied related-article PDF supplied the stated93条 rule."
+  ],
+  "languageReview": {
+    "method": "Separate sentence-continuity and proofreading pass using japanese-textbook-editing, natural-japanese, humanizer, proofread-ja. Facts and numerical conditions rechecked after edits.",
+    "automatedLint": "Attempted natural-japanese lint on tk-height-control. Unavailable because SudachiPy is absent. Manual context review completed; no grammar score is claimed.",
+    "benchmark": [
+      {
+        "url": "https://inuboki.com/nyuumon/nyuumon-text1/",
+        "observed": "Defines the subject, explains its purpose, then connects the same idea to a visible representation. Original prose uses first-use definitions before rule application."
+      },
+      {
+        "url": "https://inuboki.com/nyuumon/nyuumon-text2/",
+        "observed": "Makes a distinction explicit before checking consequences in contrasted cases. Original legal examples change one consequential fact at a time."
+      },
+      {
+        "url": "https://e-takken.tv/?download_id=58720&sdm_process_download=1",
+        "observed": "Read freely downloadable2026法令制限図表集. Organizes system, rule/exception and paired comparisons. Used only as pedagogy/structure benchmark; all prose, data, diagrams and exercises here are original, and legal facts independently checked against government sources."
+      },
+      {
+        "url": "https://www.ksknet.co.jp/NIKKEN/guidance/housing/road/mailmagazine/takken_260819_689.aspx",
+        "observed": "Freely readable development-permission question demonstrates switching decisions using area/purpose/location conditions. No question or answer is reproduced."
+      }
+    ]
+  },
+  "newChapterDecision": [
+    {
+      "lesson": "tk-planning-permissions",
+      "reason": "Plan stage, project stage and district notification require independent decisions and exceptions before development/building."
+    },
+    {
+      "lesson": "tk-building-use",
+      "reason": "Use legality and fire boundary rules use different objects from area calculations; they need their own worked practice."
+    },
+    {
+      "lesson": "tk-fill-control",
+      "reason": "Fill rules have distinct regional thresholds, exclusions, timelines and legal roles; original combined chapter introduced only the system."
+    },
+    {
+      "lesson": "tk-forest-nature",
+      "reason": "Forest designation, felling/development/acquisition and natural-park overlap add independent permission/notification decisions."
+    },
+    {
+      "lesson": "tk-landscape-culture",
+      "reason": "Landscape, buried-cultural-property and public preemption require distinct legal actors and notification time origins."
+    },
+    {
+      "lesson": "tk-land-regulation-case",
+      "reason": "An independent cumulative dossier is needed before an unfamiliar multi-law exam task."
+    },
+    {
+      "lesson": "tk-height-control",
+      "reason": "Height, setbacks, slope and shadow are methods distinct from area ratios; the former chapter only named them."
+    },
+    {
+      "lesson": "tk-area-exclusions",
+      "reason": "Floor-area exclusions require classifying actual parts, selecting denominators and caps, and avoiding double deductions."
+    }
+  ],
+  "sourceAccessNotes": "e-Gov law pages have no readable lines in web rendering. The official /api/1/lawdata XML was retrieved for urban planning, building, agriculture, national land, readjustment, fill, building order, fill order/rule, forest, natural park, landscape and public-land laws. April1 references and primary explanatory notices were kept separate from later updates. No source-protected diagrams or examination questions were copied."
+}

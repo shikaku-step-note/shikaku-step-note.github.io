@@ -4,11 +4,11 @@
   "qualification": "takken",
   "title": "虚偽表示・錯誤・詐欺・強迫",
   "description": "本人同士と第三者との関係を分けるために、制度の条件と独自の事例を解説します。善意・無過失の要件を読み分ける練習と、解説付きの理解度チェックに取り組めます。",
-  "order": 2,
-  "minutes": 35,
+  "order": 3,
+  "minutes": 100,
   "sample": false,
   "archived": false,
-  "updated": "2026-10-25",
+  "updated": "2026-11-21",
   "unit": 1,
   "syllabus": [
     2
@@ -39,19 +39,51 @@
     "通謀虚偽表示",
     "錯誤",
     "善意"
+  ],
+  "inlineGlossary": [
+    {
+      "id": "tk-10ed067c50",
+      "term": "通謀虚偽表示"
+    },
+    {
+      "id": "tk-d0ef08b973",
+      "term": "錯誤"
+    },
+    {
+      "id": "tk-021c6d618a",
+      "term": "善意"
+    }
   ]
 }
 ---
 
 ## 意思表示は、本人同士と第三者を分けて読みます
 
-土地の売買について、売主と買主の間では取消しや無効を主張できても、その後に土地を取得した第三者には主張できない場合があります。取引の安全を保護するため、法律が第三者の認識などを条件として定めているからです。人物が増えたら、先にA、B、Cの関係図を書いてください。
+意思表示は、契約を申し込む、承諾するなど、自分の意思を外へ示す行為です。その表示が内心と食い違う場合や、勘違い・だまされたこと・脅されたことに基づく場合には、どの制度によって効力を判断するかが問題になります。最初に当事者間の効力を決め、その後で新しく権利を得た第三者との関係を調べます。
 
-ここでいう善意は、道徳的に親切なことではありません。法律上問題になっている事情を知らないことです。悪意は、その事情を知っていることをいいます。無過失は、知らなかったことについて注意義務違反がないことです。「善意」と「善意で、かつ、無過失」では必要な条件が違います。
+ここでいう<a class="lesson-term" data-lesson-term href="#lesson-term-tk-021c6d618a">善意</a>は、道徳的に親切なことではありません。法律上問題になっている事情を知らないことです。悪意は、その事情を知っていることをいいます。無過失は、知らなかったことについて注意義務違反がないことです。「善意」と「善意で、かつ、無過失」では必要な条件が違います。
+
+<span id="tk-intent-requirements"></span>
+
+## 事情を知らない人を、どの要件で保護するか
+
+法律でいう「善意」は、問題となる事実を知らないことです。例えば、売買が当事者の示し合わせた仮装だと知らないことと、売主が詐欺を受けたと知らないことでは、知らない対象が違います。「無過失」は、注意を尽くしても知らなかったという別の要件です。善意という一語に無過失まで含めて読むと、法律が異なる保護条件を置いている意味が消えてしまいます。
+
+虚偽表示では、本人と相手方が示し合わせて外観を作っています。その外観を信じて独立の利害関係を持った善意の第三者を保護するため、当事者は無効をその第三者へ対抗できないとされます。<a class="lesson-term" data-lesson-term href="#lesson-term-tk-d0ef08b973">錯誤</a>の取消しや詐欺の取消しでは、善意に加えて無過失という条件を確認します。第三者が保護されるかは、制度名を決めてから要件を一つずつ照合してください。
+
+<figure id="tk-intent-third-party-table"><div class="table-scroll" role="region" tabindex="0" aria-labelledby="tk-intent-third-party-table-caption"><table><caption id="tk-intent-third-party-table-caption">第三者に求められる認識の条件を比べる</caption><thead><tr><th scope="col">当事者間の原因</th><th scope="col">当事者間の基本効果</th><th scope="col">取消し等の前に利害関係を得た第三者</th></tr></thead><tbody><tr><th scope="row">通謀虚偽表示</th><td>無効</td><td>善意の第三者に無効を対抗できない</td></tr><tr><th scope="row">重要な錯誤</th><td>要件を満たせば取消し</td><td>善意・無過失の第三者に取消しを対抗できない</td></tr><tr><th scope="row">詐欺</th><td>要件を満たせば取消し</td><td>善意・無過失の第三者に取消しを対抗できない</td></tr><tr><th scope="row">強迫</th><td>取消し</td><td>詐欺と同じ第三者保護規定は置かれていない</td></tr></tbody></table></div><figcaption>無効・取消しの原因と、第三者の取得時点を先に特定します。取消し後に取得した第三者との対抗関係は、登記の問題を別に検討します。</figcaption></figure>
+
+### 基本例　仮装の土地売買から転売された場合
+
+AとBが示し合わせて、土地を売ったように見せ、B名義の登記をしました。BがCへ転売し、Cは仮装であることを知らずに買ったとします。AB間の仮装売買は無効ですが、Cは外観を前提に独立した権利を取得する第三者に当たります。Aは、Cの不注意を主張するだけで当然に土地を取り戻せるとはいえません。民法94条2項の保護要件は善意だからです。
+
+一方、Cが仮装を知っていた場合には、同項の善意の要件を欠きます。Aが作った外観を見たことと、その外観が真実だと信じたことは別の事実です。問題文の「知っていた」の目的語を確認すると、結論を変える条件が見つかります。
+
+
 
 ## 相手と通じた架空の売買は無効です
 
-AとBが、本当は売るつもりも買うつもりもないのに、Aの土地をBに売ったように見せかけたとします。相手方と通じて行う真意でない意思表示を、通謀虚偽表示といいます。AとBの間の売買は無効です。
+AとBが、本当は売るつもりも買うつもりもないのに、Aの土地をBに売ったように見せかけたとします。相手方と通じて行う真意でない意思表示を、<a class="lesson-term" data-lesson-term href="#lesson-term-tk-10ed067c50">通謀虚偽表示</a>といいます。AとBの間の売買は無効です。
 
 ところがBが、その売買を本当のものと信じたCに土地を売った場合は、第三者保護の問題が生じます。民法94条2項は、虚偽表示による無効を善意の第三者に対抗できないと定めています。この規定では、条文上「無過失」までは要求していません。錯誤や詐欺の規定と、条件を入れ替えて覚えないようにします。
 
@@ -98,3 +130,36 @@ AとBの架空売買を信じたCを保護する例では、Cが何を知らな�
 強迫による意思表示は取り消すことができます。第三者による強迫について、第三者詐欺と同様に相手方の悪意等を必須条件とする規定はありません。また、詐欺取消しで善意無過失の第三者を保護する民法96条3項は、強迫を対象としていません。
 
 復習では、事例を一つ変えて説明してください。架空売買のCが悪意だったらどうなるか、勘違いをAが相手へ表示していなかったらどうか、だましたのがBでなくCなら何を追加確認するか、という順です。原因、当事者間の効力、第三者の条件を分けて説明できれば、条文の言葉と具体例がつながります。
+
+<span id="tk-intent-reasoning"></span>
+
+## 錯誤では、何を間違え、どの程度重要だったかを示す
+
+錯誤は、表示の意味を取り違える場合と、契約の基礎に置いた事情を誤って認識する場合に分けて整理できます。後者では、その事情を法律行為の基礎としたことが表示されていたかを確認します。心の中だけで期待していた事情が実現しなかったというだけで、直ちに取消しになる制度ではありません。
+
+例えば、Aが甲土地の地番を取り違え、別の土地を買う表示をした場合、表示に対応する意思を欠く錯誤を検討します。その間違いが、契約の目的や取引上の社会通念に照らして重要かが次の判断です。さらにAに重大な過失があるときは原則として取消しが制限されますが、相手が錯誤を知っていた場合等の例外があります。一つの要件で答えを決めず、取消しを認める条件と、その制限を順に読みます。
+
+<figure id="tk-intent-cancel-route"><svg viewBox="0 0 320 208" width="320" height="208" role="img" aria-label="錯誤を判断する順序" style="max-width:100%;height:auto"><rect x="12" y="5" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="24" text-anchor="middle" fill="currentColor" font-size="12">間違えた対象を特定</text><text x="160" y="42" text-anchor="middle" fill="currentColor" font-size="12">表示の意味か、基礎事情か</text><path d="M160 52v15m-5-5 5 5 5-5" fill="none" stroke="currentColor"/><rect x="12" y="72" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="91" text-anchor="middle" fill="currentColor" font-size="12">重要性と基礎事情の表示</text><text x="160" y="109" text-anchor="middle" fill="currentColor" font-size="12">契約判断への影響を確認</text><path d="M160 119v15m-5-5 5 5 5-5" fill="none" stroke="currentColor"/><rect x="12" y="139" width="296" height="47" rx="5" fill="none" stroke="currentColor"/><text x="160" y="158" text-anchor="middle" fill="currentColor" font-size="12">重大な過失と例外を確認</text><text x="160" y="176" text-anchor="middle" fill="currentColor" font-size="12">第三者がいればその要件へ</text></svg><figcaption>錯誤を判断する順序。本人の思い違いを見つけた後も、法律上の条件を満たすかを順に判断します。</figcaption></figure>
+
+### 応用例　第三者がだました場合と、第三者が脅した場合
+
+AがBへ土地を売る際、Bとは別人のCがAをだましたとします。この第三者詐欺では、相手方Bが詐欺の事実を知り、又は知ることができたことが、Aの取消しの条件になります。Bが知らず、知ることもできなかったという事実を置くと、詐欺による取消しの結論が変わります。
+
+これに対し、CがAを脅してBとの売買をさせた場合、第三者による強迫について、Bが知っていた又は知ることができたという同じ条件は置かれていません。取引の外側にCがいる点が似ていても、詐欺と強迫で条文の要件が異なるためです。A・B・Cを図示した後で、だました人なのか脅した人なのかを文章で書き添えると整理できます。
+
+<section class="guided-lesson" id="guided-tk-intent" aria-labelledby="guided-tk-intent-title">
+<h3 id="guided-tk-intent-title">途中で確認　条件を読み取って答える</h3>
+<p id="guided-tk-intent-prompt">次のうち、取消し等の前に利害関係を得た第三者の保護に「善意・無過失」を要求するのは何件ですか。①通謀虚偽表示の無効。②重要な錯誤の取消し。③詐欺の取消し。</p>
+<form data-guided-practice data-expected="2" data-guided-hint="問題の各条件を本文の要件に当てはめ、順に判断してください。" aria-labelledby="guided-tk-intent-title" aria-describedby="guided-tk-intent-prompt" data-lesson-screen-only>
+<fieldset hidden><legend>本文の考え方を使う練習</legend><label for="guided-tk-intent-input">答え（件）</label> <input id="guided-tk-intent-input" name="answer" class="guided-number" type="text" inputmode="numeric" enterkeyhint="done" maxlength="18" autocomplete="off"><div class="guided-buttons"><button type="submit" class="button primary">答えを確かめる</button><button type="reset" class="button secondary">やり直す</button></div></fieldset><p role="status" data-guided-feedback></p></form>
+<details><summary>解答と考え方を読む</summary><p data-guided-solution>2件です。②錯誤と③詐欺は善意・無過失を確認します。①虚偽表示は善意が条件です。同じ「知らなかった」という記述でも、無過失という追加要件が必要かを区別します。</p></details></section>
+
+### 独立問題　誰の事情を調べればよいか
+
+AはCからだまされてBへ建物を売りました。Bはその詐欺を知らず、通常の確認をしても知り得ませんでした。AがBとの契約を取り消すために、民法96条2項で必要な条件は満たされていますか。
+
+<details><summary>解説を読む</summary><p>第三者Cによる詐欺なので、相手方Bが詐欺を知り、又は知ることができたかを判断します。この条件では、Bはいずれにも当たりません。Aがだまされたという事実だけでは同項の要件を満たせません。Bから取得する第三者を保護する96条3項の問題とも区別してください。この問題のBは、Aが直接契約した相手方です。</p></details>
+
+## 根拠となる条文
+
+[民法93〜96条](https://laws.e-gov.go.jp/law/129AC0000000089)。法令の基準日は2026年4月1日、本文の確認日は2026年11月21日です。

@@ -1,0 +1,122 @@
+{
+  "lawCutoff": "2026-04-01",
+  "reviewed": "2026-11-21",
+  "reviewedExistingField7": 20,
+  "clearKeyErrors": [],
+  "proposedReplacements": [
+    {
+      "question": {
+        "id": "tk-mock-30",
+        "prompt": "大臣免許のA社が、東京都内の法定の案内所で購入申込みの受付を開始する。案内所の従事者は12人と確定し、必要な専任宅建士・届出の規定が適用される。適切な記述はどれか。",
+        "options": [
+          "少なくとも1人の専任宅建士を置き、開始10日前までに免許権者と東京都知事への届出を確認する",
+          "12人の5分の1以上の3人を専任宅建士とし、開始後10日以内に大臣だけへ届け出る",
+          "専任宅建士を1人置けば、大臣免許業者の案内所では所在地知事への届出は不要である",
+          "届出は開始10日前までに行うが、専任宅建士は会社本店にだけいれば足りる"
+        ],
+        "answer": 0,
+        "explanation": "正解は「少なくとも1人の専任宅建士を置き、開始10日前までに免許権者と東京都知事への届出を確認する」です。法定の案内所等では少なくとも1人を設置する規定と、開始10日前までの届出を確認します。事務所の5分の1をそのまま当てはめず、大臣免許であっても所在地を管轄する知事への届出を省きません。",
+        "lesson": "tk-office",
+        "field": "7"
+      },
+      "reasonForRevision": "Replace obvious unrelated distractors with conditions that change the legal conclusion; preserve original answer position and question ID.",
+      "source": "宅建業法31条の3・50条2項、施行規則15条の5の2等",
+      "reviewed": "2026-11-21"
+    },
+    {
+      "question": {
+        "id": "tk-mock-34",
+        "prompt": "売主AがB社と専任媒介契約を5か月の期間で締結した。自己発見取引を禁止する特約はない。B社の対応について適切なのはどれか。",
+        "options": [
+          "有効期間は3か月とされ、指定流通機構への登録は休業日を除き7日以内、業務報告は2週間に1回以上とする",
+          "署名した5か月がそのまま有効となり、登録は休業日を除き5日以内、報告は2週間に1回以上とする",
+          "有効期間を3か月とすれば、定期報告の翌日に届いた購入申込みを次回報告まで保留してよい",
+          "他業者への依頼が禁止されるので、Aが自分で見つけた買主との取引も当然に禁止される"
+        ],
+        "answer": 0,
+        "explanation": "正解は「有効期間は3か月とされ、指定流通機構への登録は休業日を除き7日以内、業務報告は2週間に1回以上とする」です。専任媒介の3か月上限、7日登録、2週間報告を各義務に対応させます。具体的な申込みは遅滞なく報告し、自己発見取引を禁じる専属専任との違いも確認します。",
+        "lesson": "tk-brokerage",
+        "field": "7"
+      },
+      "reasonForRevision": "Replace obvious unrelated distractors with conditions that change the legal conclusion; preserve original answer position and question ID.",
+      "source": "宅建業法34条の2第3〜10項、施行規則15条の10",
+      "reviewed": "2026-11-21"
+    },
+    {
+      "question": {
+        "id": "tk-mock-36",
+        "prompt": "宅建業者Aが自ら売主となり、宅建業者Bへ土地を売る。35条の取扱いについて適切な記述はどれか。",
+        "options": [
+          "Bが専門業者なので、35条書面は契約成立後に37条書面と併せて交付すれば足りる",
+          "Bへ35条書面を交付する必要はあるが、宅建士の説明を省く場合は記名も不要である",
+          "業者間でも説明者は専任宅建士に限られ、Bが求めない限り宅建士証の提示を省ける",
+          "宅建士による説明を要しない特則があるが、法定書面の交付とその書面への宅建士の記名は必要である"
+        ],
+        "answer": 3,
+        "explanation": "正解は「宅建士による説明を要しない特則があるが、法定書面の交付とその書面への宅建士の記名は必要である」です。法35条6項の説明省略と、書面の交付を区別します。交付書面の宅建士の記名は7項でも確認します。一般の重要事項説明をする宅建士が常に専任でなければならないという条件も付け加えません。",
+        "lesson": "tk-disclosure",
+        "field": "7"
+      },
+      "reasonForRevision": "Replace obvious unrelated distractors with conditions that change the legal conclusion; preserve original answer position and question ID.",
+      "source": "宅建業法35条6・7項",
+      "reviewed": "2026-11-21"
+    },
+    {
+      "question": {
+        "id": "tk-mock-39",
+        "prompt": "業者Aが非業者Bへ自ら売主として代金6,400万円の未完成住宅を売る契約をした。その後工事が完成したが、引渡し前で、既受領180万円に今回160万円を加える。登記等の適用除外はなく、所定の保全は未実施である。適切なのはどれか。",
+        "options": [
+          "受領日に完成しているので、10％の640万円以下なら今回分を無保全で受領できる",
+          "契約時の未完成を基準とし、累計340万円は5％の320万円を超えるので、今回の受領前に所定の保全が必要である",
+          "今回の160万円だけは5％以下なので、既受領額を足さずに保全不要とする",
+          "累計340万円は1,000万円以下であるため、割合にかかわらず保全不要である"
+        ],
+        "answer": 1,
+        "explanation": "正解は「契約時の未完成を基準とし、累計340万円は5％の320万円を超えるので、今回の受領前に所定の保全が必要である」です。工事完了の有無は契約時に判断し、受領済みと今回の額を合計します。6,400万円×5％＝320万円で、累計340万円はこれを20万円超えます。保全対象をその差額だけに限定する判断もしません。",
+        "lesson": "tk-advance-payments",
+        "field": "7"
+      },
+      "reasonForRevision": "Replace obvious unrelated distractors with conditions that change the legal conclusion; preserve original answer position and question ID.",
+      "source": "宅建業法41条、MLIT解釈2026年4月1日版41条1項関係",
+      "reviewed": "2026-11-21"
+    },
+    {
+      "question": {
+        "id": "tk-mock-42",
+        "prompt": "課税業者が、長期の空家等に当たる居住用建物（月額借賃10万円）の貸借を媒介する。借主の依頼を受けるに当たり0.55か月分を超える報酬への承諾はなく、貸主側で特例の費用勘案・事前説明と合意等を満たす。税込報酬の上限の組合せとして適切なのはどれか。",
+        "options": [
+          "借主22万円以内、双方合計22万円以内",
+          "借主11万円以内、双方合計11万円以内",
+          "借主5万5,000円以内、双方合計11万円以内",
+          "借主5万5,000円以内、双方合計22万円以内"
+        ],
+        "answer": 3,
+        "explanation": "正解は「借主5万5,000円以内、双方合計22万円以内」です。長期空家等の媒介特例では双方合計10万円×2.2＝22万円以内です。一方、居住用で所定の承諾がない借主側は10万円×0.55＝5万5,000円以内という条件を守ります。合計の特例と借主側の限度を同時に確認します。",
+        "lesson": "tk-reward-cases",
+        "field": "7"
+      },
+      "reasonForRevision": "Replace obvious unrelated distractors with conditions that change the legal conclusion; preserve original answer position and question ID.",
+      "source": "報酬告示第九、MLIT2026解釈46条関係",
+      "reviewed": "2026-11-21"
+    },
+    {
+      "question": {
+        "id": "tk-mock-44",
+        "prompt": "宅建業者Aは、工事完了から11か月で未居住の住宅を非業者Bへ売る契約をし、完成から13か月で引き渡した。Aの対応について適切なのはどれか。",
+        "options": [
+          "引渡しが完成後1年を超えたので、契約時期に関係なく新築の法定責任の対象外とする",
+          "契約時の新築条件と引渡し起算の法定責任を確認し、所定の供託又は保険等の資力確保を別に行う",
+          "本店の営業保証金1,000万円を供託してあれば、住宅の資力確保義務も満たしたものとする",
+          "売買契約で2年の特約を書けば、新築住宅の特定部分の10年責任を常に2年へ短縮できる"
+        ],
+        "answer": 1,
+        "explanation": "正解は「契約時の新築条件と引渡し起算の法定責任を確認し、所定の供託又は保険等の資力確保を別に行う」です。国土交通省Q&A2-5では、工事完了から1年以内に売買契約をしていれば、引渡しがその1年を超えても対象となる場合を示しています。新築の判断時点と、引渡しからの責任期間を分け、営業保証金とは別の資力確保を確認します。",
+        "lesson": "tk-housing-warranty",
+        "field": "7"
+      },
+      "reasonForRevision": "Replace obvious unrelated distractors with conditions that change the legal conclusion; preserve original answer position and question ID.",
+      "source": "住宅品質確保法2・95条、住宅瑕疵担保履行法11条等、MLITQ&A2-5",
+      "reviewed": "2026-11-21"
+    }
+  ]
+}

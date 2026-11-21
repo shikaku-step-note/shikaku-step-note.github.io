@@ -1,0 +1,50 @@
+{
+  "reviewed": "2026-11-21",
+  "mock": "takken-mock-02",
+  "status": "eight field3 items independently read, conditional keys correct; two decision duplicates replaced to improve form independence",
+  "arithmeticWitnesses": {
+    "tk-mock-b-17": {
+      "calculation": "2 - 3 / 2",
+      "result": 0.5
+    },
+    "tk-mock-b-18": {
+      "calculation": "300 * min(2, 4 * 0.4)",
+      "result": 480
+    }
+  },
+  "replacements": [
+    {
+      "id": "tk-mock-b-16",
+      "field": "3",
+      "lesson": "tk-development",
+      "prompt": "開発許可を受けた住宅地の工事が完了し、7月8日に検査済証を受けました。工事完了の公告は7月12日です。公告前の建築に関する法定例外や許可権者の特別な判断はありません。7月10日に予定住宅の建築を始める計画について、適切な判断はどれですか。",
+      "options": [
+        "検査済証があれば、公告前の建築制限は既に終わっている",
+        "公告前なので、37条の原則的な建築制限を確認する",
+        "予定住宅と同じ用途なら、公告前の制限は適用されない",
+        "7月10日は工事完了後なので、42条の予定建築物の制限だけを調べる"
+      ],
+      "answer": 1,
+      "explanation": "公告前なので、37条の原則的な建築制限を確認する。検査済証交付と完了公告は異なる段階です。7月10日は公告日の7月12日より前で、例外もないため、予定建築物であることだけを理由に自由に着手できるとはいえません。"
+    },
+    {
+      "id": "tk-mock-b-19",
+      "field": "3",
+      "lesson": "tk-farmland",
+      "prompt": "Aが農地を相続し、後日、自分で駐車場へ転用する計画を立てました。市街化区域の届出特例等はありません。相続時と後日の転用を分けた説明として適切なのはどれですか。",
+      "options": [
+        "相続時は3条許可を要しないので、後日の自己転用にも手続はない",
+        "相続と自己転用を一つにまとめ、転用目的の売買と同じ5条だけを調べる",
+        "相続時は3条許可の例外と取得後届出を確認し、自己転用は原則4条許可を検討する",
+        "自己転用の計画を立てた時点で、相続時へさかのぼって3条の売買取得とする"
+      ],
+      "answer": 2,
+      "explanation": "相続時は3条許可の例外と取得後届出を確認し、自己転用は原則4条許可を検討する。相続という取得原因と、その後に所有者自身が用途を変える行為は別です。後の行為には権利移動がないため、5条の転用目的の権利移動とは区別します。"
+    }
+  ],
+  "sources": [
+    "https://laws.e-gov.go.jp/law/343AC0000000100",
+    "https://laws.e-gov.go.jp/law/327AC0000000229"
+  ],
+  "limitations": "AI review, no external expert calibration. Topic breadth does not establish human exam difficulty equivalence."
+}
